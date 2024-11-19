@@ -1,0 +1,630 @@
+Dalam matematika dan ilmu komputer, algoritma adalah rangkaian terbatas dari instruksi-instruksi yang rumit, biasanya digunakan untuk menyelesaikan atau menjalankan suatu kelompok masalah komputasi tertentu. Algoritma digunakan sebagai spesifikasi untuk melakukan perhitungan dan pemrosesan data. Algoritma yang lebih mutakhir dapat melakukan deduksi otomatis (disebut sebagai penalaran otomatis) dan menggunakan tes matematis dan logis untuk mengarahkan eksekusi kode melalui berbagai rute (disebut sebagai pengambilan keputusan otomatis). Penggunaan karakteristik manusia sebagai deskriptor mesin secara metaforis telah dipraktekkan oleh Alan Turing dengan terminologi seperti "memory", "search" dan "stimulus".
+Sebaliknya, heuristika adalah pendekatan untuk pemecahan masalah komputasi yang mungkin tidak sepenuhnya terspesifikasi atau tidak menjamin hasil yang benar atau optimal, terutama dalam ranah masalah komputasi yang mana tidak ada hasil yang benar atau optimal yang terdefinisi dengan baik.
+Sebagai metode yang efektif, algoritma dapat diekspresikan dalam jumlah ruang dan waktu yang terbatas, dan dalam bahasa formal yang terdefinisi dengan baik untuk menghitung suatu fungsi. Dimulai dari tataran awal dan input awal (bisa jadi kosong), instruksi-instruksi yang ada menggambarkan sebuah komputasi yang, ketika dieksekusi, berjalan melalui sejumlah tataran dengan jumlah terhingga yang terdefinisi dengan baik, yang pada akhirnya menghasilkan "output" dan berakhir pada tataran final akhir. Transisi dari satu tataran ke tataran berikutnya tidak selalu bersifat menentukan; beberapa algoritma, yang dikenal sebagai algoritma acak, menggabungkan input acak.
+
+
+== Sejarah ==
+Konsep algoritma telah ada sejak zaman prasejarah. Algoritma aritmatika, seperti algoritma divisi, digunakan oleh matematikawan Babilonia kuno sekitar tahun 2500 SM dan matematikawan Mesir sekitar tahun 1550 SM. Matematikawan Yunani kemudian juga menggunakan algoritma pada 240 SM sebagaimana yang terdapat pada Tapis Eratosthenes untuk menemukan bilangan prima, dan Algoritma Euklides untuk menemukan pembagi persekutuan terbesar dari dua bilangan. Matematikawan Arab seperti al-Kindi pada abad ke-9 menggunakan algoritma kriptografi untuk pemecahan kode, berdasarkan analisis frekuensi.
+Kata algoritma berasal dari nama matematikawan Persia abad ke-9, Muḥammad bin Mūsā al-Khwārizmī, yang nisbah-nya (yang mengidentifikasikannya sebagai seseorang yang berasal dari Khwarezmia) dilatinkan sebagai Algoritmi (bahasa Persia yang diarabkan: الخوارزمی sekitar: 780-850). Namanya bermakna 'yang berasal dari (daerah) Khwarezmia', sebuah daerah yang dulunya merupakan bagian dari Iran Raya dan sekarang sebagai bagian dari Uzbekistan. Sekitar tahun 825, Al-Khwarizmi menulis sebuah risalah berbahasa Arab tentang sistem angka Hindu-Arab, yang diterjemahkan ke dalam bahasa Latin selama abad ke-12. Naskah ini dimulai dengan frasa Dixit Algorizmi ('Maka berkatalah Al-Khwarizmi'), di mana "Algorizmi" di sini adalah Latinisasi penerjemah akan nama Al-Khwarizmi. Bukunya yang bernama Aljabar menjadi salah satu buku matematikawan yang paling banyak dibaca di Eropa pada abad pertengahan. Dalam bahasa Latin abad pertengahan, kata algorismus, yang merupakan pengadaptasian dari namanya, menjadi kata yang bermakna "sistem bilangan desimal". Pada abad ke-15, di bawah pengaruh kata Yunani ἀριθμός (arithmos), 'angka' (lih. 'aritmatika'), kata Latin-nya diubah menjadi algorithmus. Dalam bahasa Inggris, kata algorithm pertama kali digunakan pada sekitar tahun 1230 dan kemudian oleh Chaucer pada 1391. Bahasa Inggris mengadopsi istilah tersebut dari bahasa Prancis, akan tetapi baru pada abad ke-19 lah kata "algorithm" mulai memiliki makna seperti sekarang yang ada dalam bahasa Inggris modern.
+Matematika India pada awalnya sebagian besar berbentuk algoritmik. Algoritma yang mewakili tradisi matematika India berkisar dari Śhulba Sūtrā dari beberapa abad sebelum masehi hingga teks-teks abad pertengahan dari Sekolah Kerala akan Astronomi dan Matematika.
+Pemakaian awal lainnya dari kata ini berasal dari tahun 1240, dalam sebuah manual berjudul Carmen de Algorismo yang disusun oleh Alexandre de Villedieu. Yang kalimatnya diawali dengan:
+
+Haec algorismus ars praesens dicitur, in qua / Talibus Indorum fruimur bis quinque figuris.
+yang bermakna:
+
+Algorisme adalah ilmu yang saat ini kita gunakan untuk menghitung dengan angka-angka India, yang jumlahnya ada dua kali lima (sepuluh).
+Puisi ini panjangnya beberapa ratus baris dan merangkum ilmu menghitung dengan angka-angka yang diadopsi dari India.
+Formalisasi parsial dari konsep algoritma modern dimulai dengan upaya untuk memecahkan Entscheidungsproblem (masalah pengambilan keputusan) yang diajukan oleh David Hilbert pada tahun 1928. Formalisasi selanjutnya dibingkai sebagai upaya untuk mendefinisikan "kalkulabilitas efektif" atau "metode efektif". Formalisasi tersebut termasuk fungsi rekursif Gödel-Herbrand-Kleene pada tahun 1930, 1934 dan 1935, kalkulus lambda Alonzo Church pada tahun 1936, Formulasi 1 Emil Post pada tahun 1936, dan mesin Turing-nya Alan Turing pada tahun 1936-37 dan 1939.
+
+
+== Definisi informal ==
+
+Definisi informalnya bisa berarti "sekumpulan aturan yang secara tepat menentukan seurutan operasi".
+
+yang mengikutkan semua program komputer, termasuk program yang tidak melakukan perhitungan numerik.
+Secara umum, sebuah program hanyalah sebuah algoritma jika ia akan berhenti nantinya.
+
+Sebuah contoh prototipikal dari suatu algoritma adalah algoritma Euclid untuk menentukan bilangan pembagi terbesar dari dua integer; sebagai contohnya (ada contoh yang lain) dijelaskan dengan diagram alur di atas dan sebagai contoh di bagian lanjut.
+(Boolos & Jeffrey 1974, 1999) memberikan sebuah makna informal dari kata algoritma dalam persamaan berikut:
+
+Tidak ada manusia yang dapat menulis begitu cepat, atau begitu lama, atau begitu kecil ("kecil, dan lebih kecil tanpa batas ... anda mungkin mencoba menulis di atas molekul, atom, elektron") untuk mencatat semua anggota dari kumpulan bilangan tak terbatas dengan menuliskan namanya, bergantian, dalam suatu notasi.
+Tapi manusia bisa melakukan sesuatu yang sama bergunanya, pada kasus kumpulan bilangan tak terbatas: Mereka dapat memberikan instruksi jelas untuk menentukan anggota ke-n dari set, untuk n terbatas acak.
+Instruksi tersebut diberikan secara eksplisit, dalam bentuk yang dapat diikuti oleh mesin penghitung, atau oleh manusia yang mampu melakukan hanya operasi-operasi dasar dengan simbol-simbol.
+
+Suatu "bilangan tak-terbatas" adalah bilangan yang elemen-elemenya bisa berkorespondensi satu-ke-satu dengan integer.
+Maka, Boolos dan Jeffrey mengatakan bahwa sebuah algoritma berarti instruksi bagi sebuah proses yang "membuat" keluaran integer dari sebuah "masukan" acak integer yang, secara teori, bisa sangat besar.
+Maka sebuah algoritma dapat berupa persamaan aljabar seperti y = m + n -- dua variabel masukan m dan n yang menghasikan keluaran y.
+Tapi berbagai penulis yang mencoba mendefinisikan persamaan tersebut mengatakan bahwa kata algoritma mengandung lebih dari itu, sesuatu yang kurang lebih (untuk contoh penjumlahan):
+
+Instruksi rinci dan tepat (dalam bahasa yang dipahami oleh "komputer") untuk proses yang cepat, efisien, "baik" yang menentukan "pergerakan" dari "komputer" (mesin atau manusia, dibekali dengan informasi dan kemampuan internal yang dibutuhkan) untuk menemukan, dekode, dan kemudian mengolah masukan integer/simbol m dan n, simbol + dan = ... dan "secara efektif" menghasilkan, dalam waktu yang "masuk akal", keluaran integer y pada tempat dan format tertentu.
+Konsep dari algoritma juga digunakan untuk mendefinisikan notasi dari desidabilitas.
+Notasi tersebut adalah pusat untuk menjelaskan bagaimana sistem formal berasal dari sejumlah kecil aksioma dan aturan.
+Dalam logika, waktu dari sebuah algoritma untuk selesai tidak dapat dihitung, karena tidak berelasi dengan dimensi fisik kita.
+Dari ketidakpastian tersebut, yang mengkarakteristikan pekerjaan yang sedang berjalan, timbulah ketidak-tersediannya definisi algoritma yang sesuai dengan konkret (pada tingkat tertentu) dan penggunaan secara abstrak dari istilah tersebut.
+
+
+== Formalisasi ==
+Algoritma sangat penting bagi cara komputer mengolah data.
+Banyak program komputer mengandung algoritma memberikan rincian pada instruksi khusus yang komputer harus lakukan (dengan urutan tertentu) untuk menjalankan pekerjaan tertentu, seperti menghitung gaji karyawan atau mencetak kartu rapor siswa.
+Maka, sebuah algoritma bisa dianggap sebagai urutan operasi yang bisa disimulasikan oleh sebuah sistem Turing-lengkap.
+Penulis yang mendukung tesis ini termasuk Minsky (1967), Savage (1987), dan Gurevich (2000):
+
+Minsky: "Tapi kita juga menjaga, dengan Turing ... bahwa setiap prosedur yang "secara alami" disebut efektif, bisa dinyatakan oleh mesin (sederhana).
+Walaupun tampaknya ekstrem, alasan tersebut ... sukar disanggah".
+
+Gurevich: "... argumen informal Turing untuk menyokong tesis ini membenarkan tesis yang lebih kuat: setiap algoritma bisa disimulasikan oleh sebuah mesin Turing ... menurut Savage [1987], sebuah algoritma adalah sebuah proses penghitungan yang ditentukan oleh sebuah mesin Turing".
+
+Biasanya, bila sebuah algoritma dihubungkan dengan pengolahan informasi, data dibaca dari sumber masukan, ditulis ke perangkat keluaran, dan/atau disimpan untuk pengolahan selanjutnya.
+Data simpanan dianggap sebagai bagian dari keadaan internal dari entitas yang melakukan algoritma.
+Pada praktiknya, keadaan tersebut disimpan pada satu atau lebih struktur data.
+Untuk beberapa proses komputasi, algoritma harus ditentukan secara teliti: dijabarkan dengan cara ia bakal berlaku untuk semua kemungkinan yang dapat timbul.
+Yaitu, setiap langkah tambahan harus secara sistematis dihadapi, kasus-per-kasus;
+Kriteria bagi setiap kasus harus jelas (dan bisa dihitung).
+Karena sebuah algoritma adalah kumpulan dari langkah-langkah yang tepat, urutan dari komputasi selalu penting bagi berfungsinya algoritma.
+Instruksi biasanya diasumsikan terdaftar secara eksplisit, dan dijelaskan dimulai "dari atas" dan terus "ke bawah", sebuah gambaran yang dijelaskan secara formal oleh alur kontrol
+Sejauh ini, diskusi tentang formalisasi algoritma telah mengasumsikan premis dari pemrograman imperatif.
+Hal ini merupakan konsepsi umum, yang mencoba menjelaskan sebuah pekerjaan dalam makna diskrit dan "mekanis".
+Keunikan dari konsepsi formalisasi algoritma adalah operasi penetapan, mengatur nilai dari sebuah variabel.
+Ia berasal dari intuisi "ingatan" sebagai kertas buram.
+Contoh operasi penetapan tersebut ada di bawah.
+Untuk konsepsi yang lain dari apa yang membentuk sebuah algoritma lihat pemrograman fungsional dan pemrograman logika.
+
+
+=== Menggambarkan algoritma ===
+Algoritma dapat digambarkan dengan banyak notasi, termasuk bahasa alamiah, pseudokode, diagram alur, bagan drakon, bahasa pemrograman atau tabel kontrol (diproses oleh penerjemah).
+Ekspresi bahasa alamiah terhadap algoritma condong lebih banyak dan rancu, dan jarang digunakan untuk algoritma yang kompleks dan teknis.
+Pseudokode, diagram alur, bagan drakon, dan tabel kontrol adalah cara yang terstruktur untuk menggambarkan algoritma yang mencegah banyaknya kerancuan pada pernyataan-pernyataan bahasa alamiah.
+Bahasa pemrograman ditujukan untuk mengekspresikan algoritma dalam sebuah bentuk yang dapat dieksekusi oleh komputer, tetapi sering kali digunakan sebagai suatu cara untuk menentukan atau mendokumentasikan algoritma.
+Ada banyak macam kemungkinan representasi dan seseorang dapat mengekspresikan sebuah program mesin Turing sebagai urutan dari tabel-tabel mesin (lihat lebih lanjut di mesin kondisi-terbatas, tabel transisi kondisi dan tabel kontrol), sebagai diagram alur dan bagan drakon (lihat lebih lanjut di diagram kondisi), atau sebagai bentuk kode mesin atau kode assembly dasar yang dikenal "kumpulan lipat empat" (lihat lebih lanjut di mesin Turing).
+Representasi dari algoritma dapat dikelompokan ke dalam tiga tingkatan dari deskripsi mesin Turing:
+
+1 Deskripsi tingkat-tinggi
+"... ditujukan untuk menjelaskan algoritma, menghiraukan rincian implementasi. Pada tingkat ini kita tidak perlu menyebutkan bagaimana mesin mengatur perangkat pita atau kepala pita rekam."
+2 Deskripsi implementasi
+"... digunakan untuk menjelaskan cara mesin Turing menggunakan kepalanya dan cara menyimpan data. Pada tingkat ini kita tidak memberikan secara rinci kondisi atau fungsi transisi."
+3 Deskripsi formal
+Lebih rinci, "tingkat paling rendah", menjelaskan "tabel kondisi" dari mesin Turing.
+Sebagai contoh dari algoritma sederhana "Penjumlahan m+n" dijelaskan dalam tiga tingkatan tersebut lihat contoh algoritma.
+
+
+== Implementasi ==
+Kebanyakan algoritma ditujukan untuk diimplementasikan sebagai program komputer.
+Namun, algoritma juga diimplementasikan dengan tujuan lain, seperti dalam jaringan saraf biologis (sebagai contohnya, otak manusia yang mengimplementasikan aritmetika atau sebuah serangga yang melihat makanan), dalam sirkuit elektris, atau dalam sebuah perangkat mekanis.
+
+
+== Algoritma komputer ==
+
+Dalam sistem komputer, sebuah algoritma pada dasarnya adalah instansi dari logika ditulis dalam perangkat lunak oleh pengembang perangkat lunak supaya efektif untuk komputer yang "ditargetkan" untuk mesin tertentu untuk menghasilkan keluaran dari masukan yang diberikan (kemungkinan nul).
+Program yang "elegan" (padat), program yang "baik" (cepat): Pernyataan dari "sederhana dan elegan" muncul secara informal dalam buku Knuth dan dalam Chaitin:
+
+Knuth: "... kita menginginkan algoritma yang baik dalam definisi estetika sederhana. Salah satu kriterianya ... adalah waktu yang dibutuhkan untuk berjalannya algoritma ... Kriteria yang lain adalah adaptasi dari algoritma ke komputer, kesederhanaan dan elegan, dll"
+Chaitin: "... sebuah program adalah 'elegan, maksud saya adalah ia merupakan program terkecil untuk menghasilkan keluaran."
+Chaitin membuka definisinya dengan: "Saya akan perlihatkan bahwa anda tidak dapat membuktikan sebuah program adalah 'elegan'"—bukti tersebut akan menyelesaikan permasalahan perhentian (ibid).
+Algoritma terhadap fungsi yang dapat dihitung oleh algoritma: Untuk sebuah fungsi bisa ada beberapa algoritma.
+Hal ini benar, bahkan tanpa mengembangkan kumpulan instruksi yang ada bagi programmer.
+Rogers mengamati bahwa "Sangat ... penting untuk membedakan antara pengertian algoritma, misalnya prosedur dan pernyataan fungsi yang dihitung oleh algoritma, misalnya pemetaan hasil dari prosedur.
+Fungsi yang sama bisa memiliki beberapa algoritma berbeda".
+
+Sayangnya ada pertukaran antara kebaikan (kecepatan) dan elegan (kepadatan) -- sebuah program yang elegan bisa melakukan lebih banyak langkah untuk menyelesaikan sebuah komputasi daripada yang kurang elegan.
+Sebuah contoh yang menggunakan algoritma Euclid bisa dilihat di bawah.
+Komputer (dan komputor), model dari komputasi: Sebuah komputer (atau manusia "komputor"
+
+)
+adalah tipe terbatas dari mesin, sebuah "perangkat mekanis deterministik diskrit"
+
+yang secara buta mengikuti instruksinya.
+Model primitif dari Melzak dan Lambek
+
+mereduksi pemikiran tersebut menjadi empat elemen: (i) diskrit, lokasi yang bisa dibedakan,
+(ii) diskrit, penghitung yang tak bisa dibedakan
+
+(iii) sebuah agen, dan
+(iv) sebuah daftar instruksi yang efektif relatif terhadap kemampuan dari agen.
+
+Minsky menjelaskan variasi yang lebih sesuai dari model "abacus"-nya Lambek dalam "Basis Komputabilitas Paling Sederhana".
+
+Mesin Minsky memproses secara berurutan lewat lima (atau enam tergantung bagaimana seseorang menghitungnya) instruksi kecuali baik sebuah kondisi IF-THEN GOTO atau GOTO tak bersyarat mengubah alur program keluar dari urutan.
+Selain HALT, mesin Minsky mengikutkan tiga operasi penetapan (penggantian, substitusi):
+
+ZERO (misalnya, isi dari lokasi diganti oleh 0: L ← 0), SUCCESSOR (misalnya, L ← L+1), dan DECREMENT (misalnya, L ← L-1).
+
+Jarang seorang programer harus menulis "kode" dengan kumpulan instruksi terbatas.
+Tapi Minsky memperlihatkan (sebagaimana Melzak dan Lambek) bahwa mesinnya adalah Turing komplet dengan hanya empat tipe instruksi utama: GOTO kondisional, GOTO tak bersyarat, penetapan/penggantian/substitusi, dan HALT.
+
+Simulasi dari sebuah algoritma: bahasa komputer (komputor): Knuth menganjurkan pembaca bahwa "cara terbaik untuk belajar algoritma dalah mencobanya ... langsung ambil pulpen dan kertas dan bekerja lewat contoh".
+
+Lalu bagaimana dengan simulasi atau eksekusi yang sebenarnya?
+Programmer harus menerjemahkan algoritma ke dalam bahasa yang mana simulator/komputer/komputor dapat mengeksekusi secara efektif.
+Stone memberikan contoh dari hal ini: saat menghitung akar dari persamaan kuadrat si komputor harus tahu bagaimana mendapatkan akar kuadrat.
+Jika tidak maka supaya algoritma dapat efektif ia harus menyediakan sejumlah aturan untuk mengekstrak akar kuadrat.
+
+Hal ini berarti programer harus tahu sebuah "bahasa" yang efektif relatif terhadap target pada agen komputasi (komputer/komputor).
+Lalu model apa yang seharusnya digunakan untuk simulasi?
+Van Emde Boas mengamati "bahkan bila kita mendasari teori kompleksitas dengan mesin abstrak bukannya mesin kongkrit, kesembarangan dari pemilihan model masih tetap ada.
+Pada titik itulah mulainya pemikiran simulasi".
+
+Bila kecepatan yang dihitung, jumlah instruksi berpengaruh.
+Sebagai contohnya, subprogram dalam algoritma Euclid untuk menghitung sisa akan berjalan lebih cepat jika programmer memiliki instruksi "modulus" (sisa pembagian) bukannya dengan pengurangan (atau lebih parah: hanya "penurunan").
+Pemrograman terstruktur, struktur kanonikal: Menurut Tesis Church-Turing setiap algoritma bisa dihitung dengan sebuah model yang dikenal Turing komplet, dan menurut demonstrasi Minsky kekomplitan Turing membutuhkan hanya empat tipe instruksi—GOTO bersyarat, GOTO tak bersyarat, penetapan, HALT.
+Kemeny dan Kurtz mengamati bahwa saat penggunaan GOTO tak bersyarat yang "tak disiplin" dan IF-THEN GOTO bersyarat bisa menghasilkan "kode spageti" seorang programer bisa menulis program terstruktur menggunakan instruksi tersebut;
+di lain sisi "juga memungkinkan, dan tidak begitu sulit, untuk menulis sebuah program terstruktur yang buruk dalam sebuah bahasa terstruktur".
+
+Tausworthe menambahkan tiga struktur kanon Bohm-Jacopini:
+
+SEQUENCE, IF-THEN-ELSE, dan WHILE-DO, dengan dua lagi: DO-WHILE dan CASE.
+
+Keuntungan dari program terstruktur adalah ia cocok dengan pembuktian kebenaran menggunakan induksi matematika.
+
+Simbol diagram alur: Pembantu grafik yang disebut diagram alur memberikan suatu cara untuk menjelaskan dan mendokumentasikan sebuah algoritma (dan program komputer).
+Seperti alur program dari mesin Minsky, sebuah diagram alur selalu mulai dari atas dan terus ke bawah.
+Simbol utamanya hanya 4: arah panah memperlihatkan alur program, segi empat (SEQUENCE, GOTO), wajik (IF-THEN-ELSE), dan titik (OR).
+Struktur kanonikal Bohm-Jacopini dibuat dari bentuk-bentuk primitif tersebut.
+Sub-struktur bisa "bersarang" dalam segi empat hanya jika jalan keluar tunggal terjadi pada super-struktur.
+Simbol dan penggunaannya untuk membangun struktur kanonikal diperlihatkan dalam diagram.
+
+
+== Contoh ==
+
+
+=== Contoh Algoritma ===
+
+Salah satu dari algoritma sederhana adalah menemukan bilangan terbesar dalam sebuah deretan angka (tak berurut).
+Solusinya membutuhkan pemeriksaan setiap angka dalam deret, tetapi hanya sekali.
+Dari hal ini munculah algoritma sederhana, yang bisa dinyatakan dalam kalimat bahasa deskripsi tingkat-tinggi, sebagai:
+Deskripsi tingkat-tinggi:
+
+Jika tidak ada angka dalam deret makan tidak ada bilangan terbesar.
+Asumsikan item pertama dalam deret adalah yang terbesar.
+Untuk setiap sisa angka dalam deret, jika angka tersebut besar dari angka terbesar sekarang, anggap angka tersebut menjadi yang terbesar dalam deret.
+Bila tidak ada lagi angka yang tersisa pada deret untuk diperiksa, anggap angka terbesar sekarang menjadi angka yang terbesar dalam deret.
+Deskripsi (Quasi-)formal:
+Ditulis dalam kalimat yang lebih dekat dengan bahasa tingkat-tinggi dari program komputer, berikut ini adalah kode formal dari algoritma dalam pseudokode atau kode pijin:
+
+
+=== Algoritma Euclid ===
+
+Algoritma Euclid muncul sebagai Proposisi II dalam Book VII ("Elementary Number Theory") dari Elements.
+
+Euclid mengajukan permasalahan: "Ambil dua angka bukan prima, untuk mencari bilangan pembagi terbesar".
+Dia menentukan "Sebuah angka [merupakan] besaran yang terdiri dari unit-unit": angka penghitung, integer positif kecuali 0.
+Dan "mengukur" adalah menempatkan ukuran panjang terkecil s dengan tepat (q kali) di antara ukuran terpanjang l sampai sisa r lebih kecil dari panjang terkecil s.
+
+Dalam dunia modern, sisa r = l - q*s, q sebagai hasil bagi, atau sisa r adalah "modulus", bagian sisa-integer yang tersisa setelah pembagian.
+
+Supaya metode Euclid berhasil, panjang awalnya harus memenuhi dua kebutuhan:
+(i) panjangnya tidak 0, DAN
+(ii) hasil pengurangan harus "lebih", sebuah pengujian harus menjamin bahwa bilangan terkecil dari dua angka adalah hasil pengurangan dari yang terbesar (cara lain, keduanya bisa sama sehingga pengurangan menghasilkan 0).
+Pembuktian asli Euclid mengikutkan kebutuhan yang ketiga: kedua panjang bukanlah bilangan prima.
+Euclid menentukan hal ini supaya dia bisa membentuk sebuah bukti reductio ad absurdum bahwa dua pembagi dua angka adalah yang terbesar.
+
+Walau algoritma Nicomachus sama dengan Euclid, bila kedua bilangan prima maka menghasilkan angka "1" untuk bilangan pembagi terbesar.
+Jadi untuk lebih jelasnya algoritma berikut adalah algoritma Nicomachus.
+
+
+==== Contoh ====
+
+
+==== Bahasa komputer untuk algoritma Euclid ====
+Hanya beberapa tipe instruksi yang dibutuhkan untuk mengeksekusi algoritma—beberapa tes logika (GOTO bersyarat), GOTO tak bersyarat, penetapan (penggantian), dan pengurangan.
+
+Sebuah lokasi disimbolkan dengan huruf besar, misalnya, S, A, dll.
+Kuantitas beragam (angka) dalam sebuah lokasi ditulis dengan huruf kecil dan (biasanya) dihubungkan dengan nama lokasi. Sebagai contohnya, lokasi L pada awal bisa mengandung angka l = 3009.
+
+
+==== Program yang kurang elegan (inelegan) untuk algoritma Euclid ====
+
+Algoritma berikut disebut sebagai versi Euclid dan Nichomachus 4-langkah-nya Knuth, tetapi bukannya menggunakan pembagi untuk menentukan sisa ia menggunakan pengurangan berturut-turut dari panjang terkecil s dari sisa panjang r sampai r kurang dari s.
+Deskripsi tingkat-tinggi, diperlihatkan dengan tulisan tebal, diadaptasi dari Knuth 1973:2-4:
+INPUT:
+
+1 [Kedalam dua lokasi L dan S taruh angka l dan s yang merepresentasikan kedua panjang]:
+ INPUT L, S
+2 [Inisialisasi R: buat supaya sisa panjang r sama dengan panjang awal l]
+ R ← L
+
+E0: [Pastikan r ≥ s.]
+
+3 [Pastikan angka terkecil dari kedua angka ada dalam S dan yang terbesar di R]:
+  IF R > S THEN
+    isi dari L adalah angka terbesar jadi lewati langkah 4, 5 dan 6:
+    GOTO step 6
+  ELSE
+    tukar isi R dan S.
+4 L ← R (langkah pertama ini berlebih, tetapi berguna untuk diskusi nanti).
+5 R ← S
+6 S ← L
+
+ E1: [Cari sisa]: Sampai sisa panjang r di R kurang dari panjang terkecil s pada S, kurangi angka s dalam S berulang kali dari sisa panjang r dalam R.
+
+7 IF S > R THEN
+   selesai mengukur jadi
+   GOTO 10
+ ELSE
+   ukur lagi,
+8 R ← R - S
+9 [Pengulangan-sisa]:
+   GOTO 7.
+
+E2: [Apakah sisa 0?]: APAKAH (i) pengukuran terakhir adalah sama dan sisa di R adalah 0 program dapat berhenti, ATAU (ii) algoritma harus terus jalan: hasil pengukuran meninggalkan sisa di R kurang dari angka pengukuran dalam S.
+
+10 IF R = 0 THEN
+   selesai jadi
+   GOTO langkah 15
+ ELSE
+   lanjut ke langkah 11,
+
+E3: [Interchange s dan r]: Sulitnya algoritma Euclid. Menggunakan sisa r untuk mengukur angka terkecil sebelumnya s:; L sebagai lokasi sementara.
+
+11 L ← S
+12 R ← S
+13 S ← L
+14 [Ulang proses pengukuran]:
+   GOTO 7
+
+OUTPUT:
+
+15 [Selesai. S berisi faktor persekutuan terbesar]:
+   PRINT S
+
+DONE:
+
+16 HALT, END, STOP.
+
+
+==== Program elegan untuk algoritma Euclid ====
+Versi algoritma Euclid berikut hanya membutuhkan 6 instruksi inti untuk melakukan 13 langkah pada solusi "inelegan"; parahnya, "inelegan" membutuhkan tipe instruksi lebih banyak.
+Diagram alur dari "elegan" bisa dilihat pada bagian atas artikel ini.
+Dalam bahasa Basic (tak terstruktur) langkahnya diberi nomor, dan instruksi LET [] = [] adalah instruksi penetapan disimbolkan dengan ←.
+
+  5 REM Algoritma Euclid untuk faktor persekuturan terbesar
+  6 PRINT "Masukan dua integer besar dari 0"
+  10 INPUT A,B
+  20 IF B=0 THEN GOTO 80
+  30 IF A > B THEN GOTO 60
+  40 LET B=B-A
+  50 GOTO 20
+  60 LET A=A-B
+  70 GOTO 20
+  80 PRINT A
+  90 END
+
+Bagaimana cara kerja "Elegan": Sebagai pengganti "pengulangan Euclid" luar, "Elegan" mengulang antara dua pengulangan, pengulangan A > B yang menghitung A ← A - B, dan pengualang B ≤ A yang menghitung B ← B - A.
+Hal ini bekerja karena, saat yang dikurang M lebih kecil pengurang S ( Selisih = pengurang - yang_di_kurang ), yang_dikurang bisa menjadi s (panjang pengukuran yang baru) dan pengurang bisa menjadi r yang baru (panjang yang akan diukur);
+dengan kata lain "arti" dari pengurangan dibalik.
+
+
+=== Menguji algoritma Euclid ===
+Apakah algoritma berjalan seperti yang penulis inginkan?
+Beberapa kasus uji cukup menentukan fungsi inti.
+Sumber pertama
+
+menggunakan 3009 dan 884.
+Knuth menyarankan 40902, 24140.
+Kasus menarik lainnya yaitu dua angka relatif prima 14157 dan 5950.
+Tapi kasus pengecualian harus teridentifikasi dan diuji.
+Apakah "inelegan" berjalan benar saat R > S, S > R, R = S?
+Sama juga dengan "Elegan": B > A, A > B, A = B?
+(Semuanya benar).
+Apa yang terjadi bila salah satu bilangan nol, atau keduanya nol?
+("Inelegan" terus berjalan pada kedua kasus; "elegan" terus berjalan saat A = 0.)
+Apa yang terjadi bila angka negatif dimasukan?
+Angka desimal?
+Bila angka masukan, misalnya domain dari fungsi yang dihitung oleh algoritma/program, mengikutkan hanya integer positif termasuk 0, maka kegagalan pada nol mengindikasikan bahwa algoritma (dan program instansiasinya) adalah sebuah fungsi parsial bukannya fungsi total.
+Kesalahan yang terkenal karena eksepsi adalah kegagalan roket Ariane V.
+Bukti dari kebenaran program menggunakan induksi matematika: Knuth mendemonstrasikan penggunaan induksi matematika untuk versi "pengembangan" dari algoritma Euclid, dan dia mengajukan "metode umum yang digunakan untuk membuktikan validitas dari setiap algoritma."
+
+Tausworthe mengajukan bahwa sebuah pengukuran dari kompleksitas dari sebuah program adalah panjang dari pembuktian kebenarannya.
+
+
+=== Menghitung dan meningkatkan algoritma Euclid ===
+Elegan (kepadatan) lawan kebaikan (kecepatan): Dengan hanya 6 instruksi dasar, "Elegan" adalah jelas pemenang dibandingkan dengan instruksi "inelegan" dengan 13 instruksi.
+Namun, "inelegan" lebih cepat (ia sampai pada HALT dengan langkah lebih sedikit).
+Analisis algoritma
+
+mengindikasikan kenapa hal tersebut terjadi: "Elegan" melakukan pengujian kondisi dua kali disetiap pengulangan pengurangan, sementara "inelegan" hanya sekali.
+Bila algoritma (biasanya) membutuhkan banyak pengulangan, secara rata-rata lebih banyak waktu yang terbuang saat melakukan tes "B = 0?" yang hanya diperlukan saat sisa sudah dihitung.
+Bisakah algoritma ditingkatkan?: Bila programmer sudah menilai sebuah program "cocok" dan "efektif"—yaitu, ia menghitung fungsi yang ditujukan oleh penulisnya—maka pertanyaannya menjadi, bisakah ditingkatkan?
+Kepadatan dari "inelegan" bisa ditingkatkan dengan menghilangkan 5 langkah.
+Tapi Chaitin membuktikan bahwa memadatkan algoritma tidak bisa diotomatiskan dengan algoritma generalisasi;
+
+tapi, ia bisa dilakukan secara heuristik, misalnya dengan pencarian menyeluruh (contohnya bisa ditemukan di Berang sibuk), coba dan gagal, kecerdasan, kedalaman, penggunaan penalaran induktif, dll.
+Bisa diamati bahwa langkah 4, 5, dan 6 diulang pada langkah 11, 12, dan 13.
+Pembandingan dengan "Elegan" menyediakan petunjuk langkah-langkah tersebut dengan langkah 2 dan 3 dapat dihilangkan.
+Hal ini mereduksi jumlah instruksi dasar dari 13 menjadi 8, yang membuatnya "lebih elegan" dari "Elegan" dengan 9 langkah.
+Kecepatan "Elegan" bisa ditingkatkan dengan memindahkan tes B=0? keluar dari pengulangan.
+Perubahan ini memerlukan penambahan 3 instruksi (B=0?, A=0?, GOTO).
+Sekarang "Elegant" menghitung contoh-angka lebih cepat;
+untuk setiap angka pada A, B dan R, S hal ini selalu merupakan kasus yang membutuhkan analisis yang mendalam.
+
+
+== Analisis Algoritma ==
+
+Sangat penting untuk mengetahui berapa banyak sumber tertentu (seperti waktu dan tempat penyimpanan) secara teoretis diperlukan untuk sebuah algoritma.
+Metode-metode telah dikembangkan untuk analisis algoritma untuk mendapatkan jawaban kuantitatif (estimasi);
+sebagai contohnya, algoritma pengurutan di atas memerlukan waktu O(n), menggunakan notasi O besar dengan n sebagai panjang deret (yang akan diurut).
+Setiap saat algoritma hanya perlu mengingat dua nilai: nilai terbesar yang ditemukan, dan posisinya sekarang dideretan input.
+Oleh karena itu dikatakan memiliki kebutuhan ruang O(1), jika ruang yang dibutuhkan untuk menyimpan angka masukan tidak dihitung, atau O(n) jika dihitung.
+Algoritma berbeda mungkin menyelesaikan pekerjaan yang sama dengan kumpulan instruksi yang berbeda dengan waktu, ruang, atau 'usaha' lebih sedikit atau banyak dari yang lain.
+Sebagai contohnya, algoritma pencairan binari biasanya mengungguli pencarian berderet secara paksa bila digunakan untuk tabel pencarian pada deret terurut.
+
+
+=== Formal lawan empiris ===
+
+Analisis dan kajian algoritma adalah bidang dari ilmu komputer, dan biasanya dilakukan secara abstrak tanpa menggunakan bahasa pemrograman tertentu atau implementasi.
+Dalam artian, analisis algoritma mirip dengan bidang matematika lainnya yang mana fokus pada properti yang mendasari algoritma dan bukan pada implementasi tertentu.
+Biasanya pseudokode digunakan pada analisis karena merupakan representasi paling umum dan sederhana.
+Namun, pada akhirnya, kebanyakan algoritma diimplementasikan di perangkat keras / lunak tertentu dan efisiensi algoritmik mereka akhirnya diuji menggunakan kode yang sebenarnya.
+Untuk solusi dari sebuah masalah, efisiensi dari algoritma tertentu mungkin tidak terlalu berpengaruh (kecuali n sangat besar) tetapi bagi algoritma yang dirancang untuk kecepatan interaktif, komersial, atau penggunaan ilmiah jangka panjang ia bisa saja kritikal.
+Meningkatkan n dari kecil ke n yang besar biasanya menunjukan ketak efisienan algoritma yang tidak berbahaya.
+Pengujian empiris berguna karena bisa membuka interaksi tak terduga yang mempengaruhi performa.
+Benchmark bisa digunakan untuk membandingkan potensi kenaikan sebelum/sesudah algoritma setelah optimisasi program dilakukan.
+
+
+==== Efisiensi eksekusi ====
+
+Untuk menggambarkan kemungkinan potensi peningkatan bahkan pada algoritma yang sudah teruji, inovasi terbaru, berkaitan dengan algoritma FFT (banyak digunakan di bidang pemrosesan gambar), bisa menurunkan waktu pemrosesan dengan faktor sampai 1.000 untuk aplikasi seperti pencitraan medis.
+
+Secara umum, peningkatan kecepatan bergantung pada properti khusus dari permasalahan, yang mana sangat umum pada aplikasi praktis.
+
+Percepatan dengan tingkat seperti itu membolehkan perangkat komputasi yang sering menggunakan pemrosesan gambar (seperti kamera digital dan peralatan medis) menghabiskan daya yang lebih sedikit.
+
+
+== Klasifikasi ==
+Salah satu cara mengklasifikasikan algoritma yaitu dengan cara implementasi.
+
+Rekursi atau iterasi
+Sebuah algoritma rekursi yaitu algoritma yang memanggil dirinya sendiri berulang kali sampai kondisi tertentu tercapai, ini merupakan metode umum bagi pemrograman fungsional. Algoritma iteratif menggunakan konstruksi berulang seperti pengulangan dan terkadang struktur data tambahan seperti tumpukan untuk menyelesaikan permasalahan. Beberapa permasalahan secara alami cocok dengan satu implementasi atau lainnya. Sebagai contoh, Menara Hanoi dikenal dengan implementasi rekursif. Setiap versi rekursif memiliki kesamaan (tapi bisa lebih atau kurang kompleks) dengan versi iteratif, dan sebaliknya.
+Logical
+Sebuah algoritma bisa dilihat sebagai logika deduksi terkontrol. Pernyataan ini diekspresikan sebagai: Algoritma = logika + kontrol. Komponen logika mengekspresikan aksioma yang bisa digunakan dalam komputasi dan komponen kontrol menentukan cara deduksi digunakan pada aksioma. Ini merupakan dasar dari paradigma pemrograman logika. Dalam bahasa pemrograman logika murni komponen kontrol adalah tetap dan algoritma ditentukan dengan memberikan hanya komponen logikanya. Daya tarik dari pendekatan ini adalah semantik elegan: sebuah perubahan dalam aksioma memiliki perubahan dalam algoritma.
+Serial, paralel atau terdistribusi
+Algoritma biasanya dibicarakan dengan asumsi bahwa komputer menjalankan satu instruksi algoritma setiap waktu. Komputer tersebut terkadang disebut dengan komputer serial. Rancangan algoritma untuk lingkungan tersebut disebut dengan algoritma serial, terbalik dengan algoritma paralel atau algoritma terdistribusi. Algoritma paralel memanfaatkan arsitektur komputer yang mana beberapa prosesor bisa mengerjakan masalah pada waktu yang sama, selain itu algoritma terdistribusi memanfaatkan banyak mesin yang terhubung dengan jaringan. Algoritma paralel atau terdistribusi membagi permasalahan menjadi banyak sub-masalah simetris atau asimetris dan mengumpulkan hasilnya kembali. Konsumsi sumber pada algoritma tersebut tidak hanya perputaran prosesor disetiap prosesor tetapi juga daya komunikasi antara prosesor. Algoritma pengurutan bisa diparalelkan secara efisien, tetapi biaya komunikasinya sangat mahal. Algoritma iteratif secara umum bisa diparalelkan. Beberapa permasalahan tidak ada algoritma paralelnya, dan disebut dengan permasalahan serial lahiriah.
+Deterministik atau non-deterministik
+Algoritma deterministik menyelesaikan masalah dengan keputusan yang tepat disetiap langkah dari algoritma sedangkan algoritma non-deterministik menyelesaikan masalah lewat penerkaan walaupun penerkaan biasanya lebih akurat dengan menggunakan heuristik.
+Tepat atau perkiraan
+Bila banyak algoritma sampai pada solusi yang tepat, algoritma perkiraan mencari sebuah perkiraan yang terdekat dengan solusi benarnya. Perkiraan bisa menggunakan baik strategi deterministik atau acak. Algoritma seperti itu memiliki nilai guna untuk banyak permasalahan sulit.
+Algoritma quantum
+Berjalan di model realistik dari komputasi quantum. Istilah ini biasanya digunakan untuk algoritma yang tampak pada dasarnya quantum, atau menggunakan beberapa fitur penting komputasi quantum seperti superposisi quantum atau belitan quantum.
+
+
+== Paradigma secara rancangan ==
+Cara lain mengklasifikasikan algoritma adalah dengan metodologi rancangannya atau paradigma.
+Ada sejumlah paradigma, tiap-tiapnya berbeda dari yang lain.
+Lebih lanjut, setiap kategori tersebut mengikutkan banyak tipe algoritma yang berbeda.
+Beberapa paradigma umum termasuk:
+
+Pencarian paksa atau pencarian mendalam
+Ini merupakan metode naif mencoba setiap kemungkinan solusi untuk melihat yang terbaik.
+Membagi dan menaklukan (Divide and conqueror)
+Algoritma bagi dan takluk secara berulang mereduksi instansi jumlah masalah menjadi satu atau lebih kecil instasi masalah yang sama (biasanya secara rekursif) sampai instansi cukup kecil diselesaikan dengan mudah. Salah satu contoh bagi dan takluk adalah pengurutan gabung. Pengurutan dapat dilakukan disetiap segmen data setelah membagi data menjadi segmen-segmen dan urutan seluruh data bisa didapat pada fase takluk dengan menggabungkan segmen-segmen. Variasi sederhana dari bagi-dan-takluk disebut algoritma kurang dan takluk, yang menyelesaikan sub-masalah yang sama dan menggunakan solusi dari sub-masalah tersebut untuk menyelesaikan masalah yang lebih besar. Bagi dan takluk membagi permasalahan menjadi banyak sub-masalah dan sehingga tahap takluk lebih kompleks daripada algoritma kurang-dan-taklukan. Sebuah contoh dari algoritma kurang-dan-taklukan adalah algoritma pencarian binari.
+Pencarian dan enumerasi
+Banyak masalah (seperti bermain catur) bisa dimodelkan sebagai masalah dalam grafik. Sebuah algoritma eksplorasi grafik menentukan aturan-aturan untuk bergerak disekitar grafik dan berguna bagi masalah tersebut. Kategori ini juga mengikutkan algoritma pencarian, enumerasi batas dan cabang dan backtracking.
+Algoritma pengacakan
+Algoritma ini membuat pilihan secara acak (atau pseudo-acak). Ia sangat berguna untuk menemukan solusi perkiraan untuk masalah dimana solusi yang pasti tidak praktis (lihat metode heuristik di bawah). Untuk beberapa masalah, diketahui bahwa perkiraan tercepat harus mengikutkan beberapa pengacakan. Apakah algoritma pengacakan dengan kompleksitas waktu polinomial bisa menjadi algoritma tercepat untuk beberapa masalah masih menjadi pertanyaan terbukan yang dikenal sebagai Masalah P versus NP. Ada dua kelas besar dari algoritma ini:
+Algoritma Monte Carlo mengembalikan jawaban yang benar dengan probabilitas-tinggi. Misalnya, RP adalah sub-klas dari algoritma ini yang berjalan dalam waktu polinomial)
+Algoritma Las Vegas selalu mengembalikan jawaban yang benar, tetapi waktu prosesnya adalah hanya terikat secara probabilistik, misalnya ZPP.
+Reduksi
+Teknik ini menyelesaikan masalah sulit dengan mengubahnya menjadi permasalahan yang lebih diketahui yang mana kita (berharap) memiliki algoritma asimptotikal optimal. Tujuannya yaitu untuk menemukan sebuah algoritma reduksi yang kompleksitasnya tidak didominasi oleh algoritma hasil reduksi. Sebagai contoh, algoritma seleksi untuk menemukan rata-rata dalam daftar tak terurut mengikutkan mengurutkan daftar (bagian yang paling mahal) dan menarik elemen paling tengah dalam daftar terurut (bagian yang paling mudah). Teknik ini juga diketahui dengan ubah dan taklukan.
+
+
+=== Permasalahan optimisasi ===
+Pemrograman Linear
+Saat mencari solusi optimal terhadap sebuah fungsi linear yang terikat persamaan linear dan ketidaksamaan konstrain, batasan dari permasalahan bisa digunakan secara langsung untuk menghasilkan solusi optimal. Ada algoritma yang dapat memecahkan setiap permasalahan dalam kategori ini, seperti algoritma simpleks yang terkenal. Permasalahan yang dapat diselesaikan dengan pemrograman linear termasuk permasalahan alur maksimum untuk grafik terarah). Jika sebuah masalah sebagai tambahan membutuhkan satu atau lebih jawaban haruslah integer maka ia diklasifikan dalam pemrograman integer. Algoritma pemrograman linear dapat menyelesaikan masalah seperti itu jika dapat dibuktikan bahwa semua batasan untuk nilai integer adalah tidak benar, yaitu solusi memenuhi batasan tersebut. Pada kasus umum, algoritma yang dikhususkan atau algoritma yang menemukan solusi perkiraan digunakan, bergantung pada kesulitan dari permasalahan.
+Pemrograman dinamis
+Bila sebuah masalah memperlihatkan substruktur optimal, artinya solusi optimal terhadap sebuah masalah bisa direkonstruksi dari solusi optimal ke sub-masalah, dan submasalah tumpang-tindih, artinya sub-masalah yang sama digunakan untuk menyelesaikan banyak instasi masalah berbeda, pendekatan tercepat disebut pemrograman dinamis menghindari penghitungan solusi yang telah dikomputasi. Sebagai contoh, algoritma Floyd-Warshall, jalan terpendek ke tujuan dari sebuah vertex dalam grafik berbobot bisa ditemukan dengan menggunakan jalan terpendek ke tujuan dari semua simpul yang berdekatan. Pemrograman dinamis dan memoisasi berpadanan. Perbedaan utama antara pemrograman dinamis dan bagi-dan-taklukan adalah submasalah kurang lebih independen dalam bagi-dan-taklukan, sementara submasalah tumpang tindik dalam pemrograman dinamis. Perbedaaan antara pemrograman dinamis dan rekursi langsung adalah dalam 'caching' atau memoisasi dari pemanggialan rekursif. Saat submasalah independen dan tidak ada pengulangan, memoisasi tidak membantu sama sekali; makanya pemrograman dinamis bukalanh solusi untuk semua permasalahan kompleks. Dengan menggunakan memoisasi atau tabel dari submasalah yang telah diselesaikan, pemrograman dinamis mereduksi eksponensial dari banyak permasalahan menjadi kompleksitas polinomial.
+Metode rakus
+Sebuah algoritma rakus mirip dengan algoritma pemrograman dinamis, tetapi perbedaannya adalah solusi dari submasalah tidak harus diketahui pada setiap tahap; melainkan pilihan yang "rakus" bisa dibuat dengan melihat apa yang terbaik untuk saat tersebut. Metode rakus mengembangkan solusi dengan kemungkinan keputusan yang terbaik (bukan dengan keputusan yang ada) pada tahap algoritmis berdasarkan optimasi lokal yang ada sekarang dan keputusan yang terbaik (bukan semua kemungkinan keputusan) yang dibuat pada langkah sebelumnya. Algoritma ini tidak terlalu mendalam, dan tidak memberikan jawaban yang akurat terhadap banyak permasalahan. Tapi bila ia bekerja, ia menjadi metode yang paling cepat. Algoritma rakus paling terkenal adalah menemukan rentang pohon minimal seperti pada Pohon Huffman, Kruskal, Prim, Sollin.
+Metode heuristik
+Dalam masalah optimisasi, algoritma heuristik bisa digunakan untuk menemukan suatu solusi yang terdekat dengan solusi optimal jika seandainya menemukan solusi optimal tidak praktis. Algoritma ini bekerja dengan mendekati sedikit demi sedikit ke solusi optimal saat ia berjalan. Secara prinsipnya, jika dijalankan tanpa batas waktu, ia akan menemukan solusi optimal. Kebaikan mereka adalah mereka dapat menemukan suatu solusi sangat dekat dengan solusi optimal dalam waktu yang relatif sangat pendek. Algoritma tersebut termasuk pencarian lokal, pencarian tabu, simulasi pelunakan, dan algoritma genetik. Beberapa dari mereka, seperti simuasi pelunakan, adalah algoritma non-deterministik sementara yang lainnya, seperti pencarian tabu, adalah deterministik. Saat batas dari galat dari solusi non-optimal diketahui, algoritma kemudia dikategorikan sebagai algoritma pendekatan.
+
+
+=== Berdasarkan bidang kajian ===
+
+Setiap bidang sains memiliki permasalahannya sendiri dan membutuhkan algoritma yang efisien. Masalah yang berkaitan di satu bidang terkadang dipelajari bersama. Beberapa contoh yaitu algoritma pencarian, algoritma penggabungan, algoritma numerik, algoritma grafik, algoritma deret, algoritma komputasi geometri, algoritma kombinatorial, algoritmas medis, mesin belajar, kriptografi, algoritma kompresi data dan teknik penguraian.
+Terkadang bidang-bidang tersebut saling tumpang tindih, dan perkembangan algoritma di satu bidang bisa meningkatkan bidang lainnya yang terkadang tidak berkaitan. Sebagai contohnya, pemrograman dinamis ditemukan untuk optimisasi konsumsi sumber daya dalam industri, tetapi sekarang digunakan untuk menyelesaikan sejumlah besar permasalahan dalam banyak bidang.
+
+
+=== Berdasarkan kompleksitas ===
+
+Algoritma bisa diklasifikasikan berdasarkan jumlah waktu yang dibutuhkan untuk selesai dibandingkan dengan ukuran inputnya. Ada berbagai varietas: beberapa algoritma selesai dalam waktu linear relatif terhadap ukuran input, beberapa selesai dalam jumlah waktu yang eksponensial atau lebih buruh, dan beberapa berhenti. Sebagai tambahan, beberapa masalah bisa memiliki berbagai algoritma dengan kompleksitas yang berbeda, sementara permasalahan yang lain bisa saja tidak memiliki algoritma atau tidak diketahui algoritmanya yang efisien. Ada juga pemetaan dari beberapa algoritma terhadap permasalahan lain. Karena itu, lebih cocok untuk mengklasifikasikan permasalahan itu sendiri bukannya algoritma menjadi kelas-kelas yang sama berdasarkan kompleksitas dari kemungkinan algoritma terbaik baginya.
+Burgin (2005, p. 24) menggunakan definisi algoritma secara umum yang melonggarkan kebutuhan bersama yang keluaran dari algoritma yang menjalankan sebuah fungsi harus ditentukan setelah sejumlah langkah. Dia mendefinisikan kelas super-rekursif dari algoritma sebagai "sebuah kelas algoritma yang mana memungkinkan untuk menghitung fungsi yang tidak bisa dihitung oleh mesin Turing manapun" (Burgin 2005, p. 107). Hal ini berkaitan dekat dengan kajian dari metode hiperkomputasi.
+
+
+=== Berdasarkan tipe evaluatif ===
+
+Untuk menjaga keseimbangan saat mengintegrasikan mesin ke dalam masyarakat, seseorang bisa mengklasifikasikan algoritma berdasarkan tipe dari evaluasi yang mereka lakukan.
+Sejumlah filsuf telah berhipotesis bahwa masyarakat diuntungkan dari keragaman evaluatif seperti mereka diuntungkan keragaman jender dan tipe darah (misalnya, Dean 2012, Sober & Wilson 1998) Hertzke & McConkey 1998, dan Bellah 1985).
+Teknologi dapat mengancam ekosistem moral tersebut seperi spesies invasif jika ia mengganggu campuran keragaman.
+Wallach & Allen (2008) mengklasifikasikan algoritma pembuat-keputusan menjadi tiga tipe evaluatif: Algoritma bottom-up membuat penilaian tidak terprediksi bagi pemrogram (misalnya, perangkat lunak yang berevolusi).
+Yang lainnya (top-down) dibagi menjadi deontologikal (yang dapat bergantung pada implementasi aturan pemrograman) lawan consequensialis (yang mengandalkan pada memaksimalkan perkiraan pemrograman).
+Sebagai contohnya, sebuah kalkulator standar termasuk deontologikal, sementara mesin pembelajaran untuk perdagangan saham termasuk consequensialis.
+Santos-Lang mengganti nama deontologikal dan consequensialis menjadi kelas "institusional" dan "negosiator" dengan tujuan untuk menghindari implikasi bahwa semua teori-teori etika deontologikal dan consequensialis bisa diimplementasikan sebagai algoritma, dan membagi kelas bottom-up menjadi "pengganggu" (algoritma yang tidak terprediksi karena menggunakan generator pengacakan) lawan "relasional" (algoritma yang tidak terprediksi karena efek jaringan).
+Seorang mutator dalam komputasi evolusioner bisa menjadi contoh dari pengganggu, sementara kelas 3 atau 4 dari otomata sellular adalah contoh dari mesin relasional.
+Santos-Lang mencatat bahwa algoritma terkadang memiliki subkomponen dari tipe lainnya.
+Sebagai contohnya, negosiator perdagangan saham bisa mengimplementasikan sebuah algoritma genetik, dan memiliki mutator pengganggu, dan mutator bisa memiliki subkomponen institusional dan relasional, semua komputasi adalah relasional pada tingkat di jajaran kimiawi (Santos-Lang 2014).
+
+
+== Algoritma berkelanjutan ==
+Kata sifat "berkelanjutan" bila diterapkan pada kata "algoritma" bisa berarti:
+
+Sebuah algoritma beroperasi pada data yang merepresentasikan kuantitas yang berkelanjutan, walaupun data tersebut direpresentasikan oleh pendekatan diskrit—seperti algoritma yang dipelajari dalam analisis numerik; atau
+Sebuah algoritma dalam bentuk dari persamaan diferensial yang beroperasi secara berkelanjutan terhadap data, berjalan dalam sebuah komputer analog.
+
+
+== Isu legalitas ==
+Lihat pula: Paten perangkat lunak untuk pendahuluan umum dari paten pada perangkat lunak, termasuk algoritma untuk diimplementasikan pada komputer.
+Algoritma biasanya tidak dipatenkan. Di Amerika Serikat, sebuah klaim yang terdiri hanya dari manipulasi sederhana dari konsep abstrak, angka, atau sinyal tidak berarti suatu "process" (SPTO 2006), dan oleh karena itu algoritma tidak bisa dipatenkan (sebagaimana dalam Gottschalk v. Benson).
+Namun, penerapan praktis dari algoritma terkadang dipatenkan.
+Sebagai contohnya, dalam Diamond v. Diehr, aplikasi dari algoritma umpan-balik sederhana untuk membantu dalam menyembuhkan karet sintetis dianggap dapat dipatenkan.
+Mematenkan perangkat lunak sangat kontroversial, dan ada paten yang mengikutkan algoritma yang sangat dikritisi, terutama algoritma kompresi data, seperti Format Grafiknya Unisys.
+Sebagai tambahan, beberapa algoritma kriptografi memiliki batasan ekspor (lihat ekspor dari kriptografi).
+
+
+== Etimologi ==
+Kata "Algoritma", atau "Algorisma" pada versi penulisan lain, datang dari nama al-Khwarizmi. dieja dalam Arab klasik sebagai Al-Khwarithmi. Al-khwarizmi (bahasa Persia: خوارزمي, 780-850) adalah matematikawan, ahli astronomi, ahli geografi dari Persia dan sarjana House of Wisdom di Baghdad, yang arti namanya "penduduk asli Khwarezm", sebuah kota yang merupakan bagian dari Wilayah Iran pada masanya dan sekarang Uzbekistan.
+
+Sekitar tahun 825, dia menulis risalah dalam bahasa Arab, yang diterjemahkan dalam Latin pada abad ke-12 dengan judul Algoritmi de numero Indorum.
+Judul ini artinya "Algoritmi pada bilangan India", di mana "Algoritmi" adalah pelatinan penerjemah dari nama Al-Khwarizmi.
+
+Al-Khwarizmi dulunya adalah matematikawan yang paling banyak dibaca di Eropa pada akhir Abad Pertengahan, pada umum lewat bukunya yang lain, Aljabar.
+
+Pada akhir abad pertengahan, algorismus, perubahan dari namanya, berarti "sistem bilangan desimal" yang masih merupakan arti dari kata Inggris modern algorism.
+Pada abad ke-17 Prancis kata tersebut berubah, tetapi tidak maknanya, menjadi algorithme.
+Inggris mengadopsi Prancis setelahnya, tetapi tidak pada akhir abad ke-19 lah "Algorithm" mengambil makna dari kata Inggris masa sekarang.
+
+Etimologi alternatif mengklaim asal mulanya dari istilah algebra (aljabar) dari makna abad pertengahan "aritmetika Arab" dan arithmos istilah Yunani untuk angka (yang secara harfiah berarti "bilangan Arab" atau "perhitungan Arab").
+Karya algoritma Al-Kharizmi bukan berbentuk seperti pada masa modern sekarang tetapi sebagai tipe dari pengulangan kalkulus (disini disebutkan bahwa karya fundamentalnya yang dikenal sebagai algebra pada awalnya berjudul "Buku Ringkasan tentang Kalkulasi dengan Penyempurnaan dan Pengimbangan" menjelaskan tipe-tipe dari pengulangan perhitungan dan persamaan kuadrat).
+Dalam makna tersebut, algoritima dikenal di Eropa jauh sebelum Al-Kharizmi.
+Algoritma paling tua yang dikenal sekarang adalah Algoritma Euklid (lihat juga Pengembangan algoritma Euklid).
+Sebelum ditemukan istilah algorithm orang Yunani menyebutnya anthyphairesis secara harfiah berarti anti-substraksi atau substraksi timbal-balik (untuk bacaan lebih lanjut disini dan ini Diarsipkan 2013-11-03 di Wayback Machine..
+Algoritma dikenal oleh orang Yunani berabad sebelum
+
+Euclid.
+Bukannya kata algebra orang Yunani menggunakan istilah arithmetica(ἀριθμητική, yaitu dalam karya Diophantus yang dikenal "bapak dari Aljabar" - lihat juga artikel Wikipedia persamaan Diophantine dan Eudoxos).
+
+
+== Sejarah: Perkembangan dari kata "algoritma" ==
+
+
+=== Asal mula ===
+Bukti terawal tentang algoritma ditemukan dalam matematika Babilonia di Mesopotamia kuno (saat ini merupakan bagian dari Irak). Sebuah tablet tanah liat Sumeria yang ditemukan di Shuruppak dekat Baghdad dan berasal dari sekitar tahun 2500 SM menjelaskan algoritma divisi yang paling awal. Selama dinasti Hammurabi sekitar 1800-1600 SM, tablet tanah liat Babilonia menjabarkan algoritma untuk rumus-rumus komputasi. Algoritma juga digunakan dalam astronomi Babilonia. Tablet tanah liat Babilonia menguraikan dan menggunakan prosedur algoritmik untuk menghitung waktu dan tempat peristiwa astronomi yang signifikan.
+Algoritma untuk aritmatika juga ditemukan dalam matematika Mesir kuno, yang terdapat pada Papirus Matematika Rhind yang berasar dari sekitar tahun 1550 SM. Algoritma kemudian digunakan dalam matematika Helenistik kuno. Dua contohnya adalah Tapis Eratosthenes, yang dijelaskan dalam Pengenalan Aritmatika oleh Nicomachus,:Ch 9.2 dan Algoritma Euklides, yang pertama kali dipaparkan dalam Euclid's Elements (sekitar 300 SM).:Ch 9.1
+
+
+=== Simbol diskrit dan yang dapat dibedakan ===
+Penanda-penghitung: Untuk mencatat hewan gembalaan, kumpulan biji dan uang mereka orang dahulu menggunakan penghitung: akumulasi batu atau tanda yang ditoreh pada tongkat, atau membuat simbol diskrit di kerang.
+Sampai orang Babilonia dan Mesir menggunakan tanda dan simbol, pada akhirnya bilangan Roma dan abakus berkembang (Dilson, p. 16-41).
+Penanda penghitung muncul dalam sistem bilangan operan aritmetika digunakan dalam mesin Turing dan komputasi mesin Post-Turing.
+
+
+=== Manipulasi simbol sebagai "penampung" bilangan: aljabar ===
+Karya dari Geometer Yunani kuno (algoritma Euklid), matematikawan India Brahmagupta, dan matematikawan Persia Al-Khwarizmi (yang darinya isitlah "algorism" dan "algoritma" diturunkan), dan matematikawan Eropa Barat memuncak dalam notasi Leibniz dari rasiosinator kalkulus (sekitar 1680-an):
+
+Abad yang baik dan setengah lebih maju dari masanya, Leibniz mengajukan logika aljabar, sebuah aljabar yang akan menentukan aturan-aturan untuk memanipulasi konsep logika dengan cara yang aljabar biasa menentukan aturan untuk manipulasi angka.
+
+
+=== Rancangan mekanis dengan tingkat diskrit ===
+Jam: Bolter memuji penemuan jam gaya-berat sebagai "Kunci penemuan dari Eropa pada Abad Pertengahan", khususnya pada ambang pelarian
+
+yang menyediakan kita dengan tik dan tak dari jam mekanis.
+"Mesin otomatis yang akurat"
+
+mengarah langsung pada "otomata mekanis" dimulai pada abad ke-13 dan terakhir pada "mesin komputasi" -- motor berbeda dan motor analitik dari Charles Babbage dan bangsawan Ada Lovelace, pertengahan abad ke-19.
+
+Lovelace dikreditkan sebagai yang pertama menciptakan algoritma yang ditujukan untuk diproses di komputer—motor analitis Babbage, perangkat pertama yang dianggap komputer Turing-sempurna sebenarnya bukan hanya sebuah kalkulator—dan terkadang dikenal "programmer pertama dalam sejarah", walaupun implementasi penuh dari perangkat Babbage kedua tidak terealisasi sampai beberapa dekade setelah masanya.
+Mesin logika 1870 - Stanley Jevons "sempoa logika" dan "mesin logika": Masalah teknisnya adalah untuk mereduksi persamaan boolean bila ditampilkan dalam sebuah bentuk yang pada masa sekarang dikenal sebagai pemetaan Karnaugh.
+Jevons (1880) pertama menjelaskan "sempoa" sederhana dari "potongan kayu dilengkapi dengan penyemat, dibuat supaya bagian atau kelas kombinasi logika manapun dapat dipilih secara mekanis ... Baru-baru ini Saya telah mereduksi sistem menjadi bentuk yang secara sempurna mekanis, dan membuatnya mewujudkan keseluruhan proses inferensi tak langsung dalam apa yang disebut sebuah Mesin Logika"
+Mesinnya dilengkapi dengan "beberapa tangkai kayu yang bisa dipindahkan" dan "di bawah ada 21 kunci seperti pada piano [dll] ...".
+Dengan mesin ini dia dapat menganalis sebuah "silogisme atau argumen logika sederhana apapun".
+
+Mesin tenun Jacquard, kartu berlobangnya Hollerith, telegraf dan telepon -- penyiaran elektromekanis: Bell dan Newell (1971) mengindikasikan bahwa mesin tenun Jacquard (1801), pelopor dari kartu Hollerith (kartu berlobang, 1887), dan "teknologi alih telepon" adalah akar dari sebuah pohon yang mengarah pada perkembangan dari komputer pertama.
+
+Pada pertengahan abad ke-19 telegraf, pelopor dari telepon, digunakan diseluruh dunia, pengkodean diskrit dan pembedaan huruf sebagai "titik dan strip".
+Pada akhir abad ke-19 pita telegraf (sekitar 1870-an) digunakan, sebagaimana juga kartu Hollerith pada sensus Amerika 1890.
+Kemudian muncullah teleprinter (sekitar 1910-an) dengan kerta-berlobang menggunakan kode Baudot di pita.
+Jaringan alih-telepon dari penyiaran elektromekanis (ditemukan 1835) adalah karya dair George Stibitz (1937), penemu dari perangkat penghitungan digital.
+Saat bekerja di laboratorium Bell, dia mengamati "beratnya" penggunaan kalkulator mekanis dengan geligi.
+"Dia pulang ke rumah pada suatu malam 1937 berniat untuk menguji idenya ... Saat mengatik selesai, Stibitz telah membangun perangkat hitung digital".
+
+Davis (2000) mengamati pentingnya penyiaran elektromekanis (dengan "keadaan binari"-nya buka dan tutup):
+
+Hanya dengan perkembangan, dimulai sejak 1930-an, dari kalkulator elektromekanis menggunakan penggantian elektris, sehingga mesin yang dibuat memiliki ruang lingkup yang dibayangkan Babbage."
+
+
+=== Matematika selama abad 19 sampai pertengahan abad 20 ===
+Simbol dan aturan: Dengan cepat berkembangnya matematika dari George Boole (1847, 1854), Gottlob Frege (1897), dan Giuseppe Peano (1888-1889) mereduksi aritmetika menjadi serangkaian simbol dimanipulasi oleh aturan-aturan. The Principles of arithmetic, presented by a new method-nya Peano (1888) adalah "usaha pertama mengaksiomakan matematika dalam sebuah bahasa simbolik".
+
+Tapi Heijenoort memberi pujian pada Frege (1879): Frege "merupakan karya tulis paling penting mengenai logika. ... yang mana kita lihat sebuah "'bahasa formula', yaitu sebuah lingua characterica, sebuah bahasa ditulis dengan simbol-simbol khusus, "untuk berpikir murni", yaiut, bebas dari hiasan retorikal ... dibangun dari simbol-simbol tertentu yang dimanipulasi menurut aturan-aturan terbatas".
+
+Karya dari Frege lebih lanjut disederhanakan dan diperkuat oleh Alfred North Whitehead dan Bertrand Russell dalam Principia Mathematical (1910-1913).
+Paradoks: Pada masa yang sama sejumlah paradoks yang mengganggu muncul dalam literatur, pada khususnya paradoks Burali-Forti (1987), paradoks Russell (1902-03), dan Paradoks Richard.
+
+Hasilnya mengarah ke makalah Kurt Godel (1931) -- dia secara khusus merujuk paradoks pembohong—yang mereduksi aturan dari rekursi pada angka.
+Penghitungan Efektif: Dalam usaha untuk menyelesaikan permasalahan keputusan yang didefinisikan oleh Hilbert tahun 1928, matematikawan pertama mendefinisikan apa arti dari "metode efektif" atau "kalkulasi efektif" (misalnya, sebuah kalkulasi yang akan sukses).
+Dalam waktu yang cepat hal berikut muncul: kalkulus-λ oleh Alonzo Church, Stephen Kleene, dan J.B. Rosser
+
+definisi dari "rekursi umum" yang benar-benar diasah dari karya Godel berdasarkan saran dari Jacquard Herbrand (cf. kuliah Godel di Princeton tahun 1934) dan penyederhaan selanjutnya oleh Kleene.
+
+Church membuktikan
+
+bahwa permasalahan keputusan tidak terpecahkan, definisi Emil Post tentang penghitungan efektif yaitu sebagai pekerja yang tanpa berpikir mengikuti suatu daftar instruksi untuk bergerak ke kiri atau kanan lewat sederetan ruangan dan bersamaan dengan itu bisa menandai atau menghapus kertas atau mengamati kertas dan membuat pilihan ya-tidak tentang instruksi selanjutnya.
+
+Pembuktian Alan Turing bahwa permasalahan keputusan tidak terpecahkan dengan menggunakan "sebuah mesin [otomatis]"-nya
+
+dengan efek yang mirip dengan "formulasi"-nya Post, definisi J. Barkley Rosser tentang "metode efektif" dalam makna "sebuah mesin".
+
+Proposal S. C. Kleene dari pelopor "Tesis Church" yang disebutnya "Thesis I",
+
+dan beberapa tahun kemudian Kleene menamakan tesisnya "Tesis Church"
+
+dan mengajukan "Tesis Turing".
+
+
+=== Emil Post (1936) dan Alan Turing (1936-37, 1939) ===
+Berikut adalah kebetulan yang luar biasa dari dua orang yang tidak saling mengenal tetapi mendeskripsikan sebuah proses orang-sebagai-komputer mengerjakan perhitungan—dan mereka menghasilkan definisi yang mirip.
+Emil Post (1936) mendeskripsikan aksi dari sebuah "komputer" (manusia) sebagai berikut:
+
+"... dua konsep ikut serta: yaitu sebuah simbol ruang dimana pekerjaan yang mengarah dari masalah ke jawaban dilakukan, dan sekumpulan arahan yang baku dan tidak bisa diubah.
+Simbol ruangnya yaitu
+
+"sederetan dua arah tak terbatas dari ruang atau kotak... penyelesai masalah atau pekerja harus berjalan dan bekerja di simbol ruang ini, dengan bisanya [si pekerja] masuk, dan beroperasi dengan satu kotak dalam satu waktu... sebuah kotak memiliki dua kemungkinan kondisi, yaitu, kosong atau belum ditandai, dan dengan adanya tanda tunggal disana, katakanlah garis vertikal.
+"Satu kotak dibiarkan dan disebut sebagai titik awal. ...sebuah masalah tertentu diberikan dalam bentuk simbolik dengan sejumlah kotak terbatas [yaitu, INPUT] ditandai dengan coretan. Begitu juga jawabannya [yaitu, OUTPUT] diberikan dalam bentuk simbolik dari suatu konfigurasi dari kotak-kotak yang ditandai....
+"Sekumpulan arahan bisa digunakan untuk permasalahan umum menentukan proses determistik saat diterapkan pada setiap masalah tertentu. Proses ini hanya berhenti bila datang arahan dengan tipe (C ) [yaitu, STOP]". Lihat lebih lanjut pada mesin post-Turing  Karya Alan Turing mendahului karya dari Stibitz (1937); tidak diketahui apakah Stibitz mengetahui karya Turing. Biografinya Turing percaya bahwa Turing menggunakan model seperti-mesin-ketik diturunkan dari ketertarikannya pada masa muda: "Alan memiliki impian menemukan mesin ketik pada saat muda; Ibu Turing memiliki sebuah mesin ketik; dan dia mungkin memulainya dengan menanyakan pada dirinya sendiri apa maksudnya dengan menyebut sebuah mesin ketik dengan 'mekanikal'". Dengan lazimnya kode Morse dan telegraf, mesin pita telegraf, dan mesin-ketik jarak jauh pada waktu itu kita bisa menyimpulkan bahwa semua itu memberikan pengaruh.
+Turing—model dari komputasinya sekarang dikenal dengan mesin Turing—memulai, sebagaimana Post, dengan analisis dari komputer manusia yang ia sederhanakan menjadi sekumpulan gerakan dasar sederhana dan "keadaan pikiran".
+Tapi dia terus maju selangkah ke depan dan membuat sebuah mesin sebagai model dari komputasi angka.
+
+"Menghitung biasanya dilakukan dengan menulis simbol tertentu di atas kertas. Misalkan kertas tersebut dibagi menjadi segi empat seperti buku aritmetika anak-anak.... Saya asumsikan bahwa komputasi dilakukan pada kertas satu dimensi, yaitu, di pita yang dibagi dalam persegi. Juga misalkan bahwa jumlah simbol yang akan dicetak terbatas....
+"Perilaku dari komputer disetiap waktu ditentukan oleh simbol yang diobservasinya, dan "keadaan pikiran"-nya pada waktu tersebut. Juga bisa diasumsikan bahwa ada batas B sebagai jumlah simbol atau persegi yang mana komputer dapat amati dalam satu waktu. Jika ia ingin mengamati lebih, ia harus menggunakan pengamatan beriringan. Kita juga memisalkan bahwa jumlah keadaan pikiran yang diperlukan disini adalah terbatas...
+"Mari kita bayangkan bahwa operasi yang dilakukan oleh komputer akan dipecah menjadi 'operasi-operasi sederhana' yang sangat mendasar sehingga tidak mudah membayangkannya untuk dibagi lebih jauh."
+Reduksi Turing menghasilkan hal berikut:
+
+"Operasi sederhana haruslah mengikutkan:
+"(a) Perubahan dari simbol pada salah satu persegi yang sedang diamati
+"(b) Perubahan dari salah satu persegi diamati terhadap persegi lainnya di antara L persegi dari salah satu yang sebelumnya diamati.
+"Bisa saja beberapa dari perubahan tersebut menyebabkan perubahan keadaan pikiran. Operasi tunggal paling umum oleh karena itu harus diambil jadi salah satu hal berikut:
+
+"(A) Suatu kemungkinan perubahan (a) dari simbol bersamaan dengan suatu perubahan dari keadaan pikiran.
+"(B) Suatu kemungknian perubahan (b) dari persegi yang diamati, bersama dengan kemungkinan perubahan dari keadaan pikiran"
+"Kita sekarang mungkin sudah bisa membentuk sebuah mesin untuk melakukan pekerjaan dari komputer tersebut."
+Beberapa tahun kemudian, Turing mengembangkan analisisnya (tesis, secara definisi) dengan ekspresi kuat berikut:
+
+"Sebuah fungsi dikatakan "bisa dihitung secara efektif" jika nilainya bisa ditemukan dengan proses yang murni mekanis.
+Walau sangat mudah menangkap ide ini, namun ia membutuhkan beberapa definisi matematikan terbatas yang bisa diekspresikan . . . [dia mendiskusikan sejarah dari definisi seperti di atas dengan menghormati Godel, Herbrand, Kleen, Church, Turing dan Post] ... Kita mungkin gunakan pernyataan tersebut secara harfiah, memahami murni dengan proses mekanis yang mana dapat dilakukan oleh sebuah mesin. Memungkinkan untuk memberikan deskripsi matematis, dalam beberapa bentuk normal, dari struktur mesin tersebut. Perkembangan dari ide ini mengarah pada definisi penulis dari sebuah fungsi yang dapat dihitung, dan untuk mengidentifikasi komputibilitas † dengan penghitungan yang efektif . . . .
+
+"† Kita boleh menggunakan ekspresi "fungsi hitung" untuk mengartikan sebuah fungsi yang dapat dihitung oleh sebuah mesin, dan kita biarkan "secara efektif dapat dihitung" mengacu pada ide intuitif tanpa definisi tertentu dengan salah satu dari definisi tersebut".
+
+
+=== J. B. Rosser (1939) dan S. C. Kleene (1943) ===
+J. Barkley Rosser mendefinisikan 'metode [matematis] efektif' dengan cara berikut (kemiringan ditambahkan):
+
+"'Metode efektif' disebut sebagai metode yang spesial yang mana setiap langkahnya secara tepat ditentukan dan pasti menghasilkan jawaban dalam sejumlah langkah yang terbatas. Dengan pengertian khusus ini, tiga definisi berbeda telah diajukan sampai sekarang. [catatan kakinya #5; lihat diskusinya di bawah]. Yang paling sederhana (karena Post dan Turing) menyatakan intinya bahwa sebuah metode efektif menyelesaikan sekumpulan permasalahan hanya ada jika seseorang bisa membuat sebuah mesin yang akan menyelesaikan setiap masalah dari sekumpulan masalah tanpa campur tangan manusia kecuali memasukan pertanyaan dan (nantinya) membaca jawabannya. Ketiga definisi tersebut sama, jadi tidak masalah yang mana yang digunakan. Lebih lanjut, fakta bahwa ketiganya sama adalah argumen yang sangat kuat untuk kebenaran dari salah satunya." (Rosser 1939:225-6)
+Catatan kaki Rosser #5 merujuk karya dari (1) Church dan Kleene dan definisi dari definabiliti-λ, secara khusus Church menggunakannya dalam An Unsolvable Problem of Elementary Number Theory-nya (1936);
+(2) Herbrand dan Godel dan penggunaan rekursi mereka terutama Godel menggunakannya dalam makalah terkenalnya On Formally Undecidable Propositions of Principia Mathematica and Related Systems I (1931);
+dan (3) Post (1936) dan Turing (1936-7) dalam model mekanisme komputasi mereka.
+Stephen C. Kleene didefinisikan sebagai "Thesis I"-nya yang terkenal yang dikenal sebagai tesis Church-Turing.
+Tapi dia melakukan hal tersebut dalam konteks berikut (penebalan dari aslinya):
+
+"12. Teori-teori algoritma... Dalam menyiapkan sebuah teori algoritma yang komplet, apa yang kita lakukan adalah mendeskripsikan sebuah prosedur, yang dapat dilakukan untuk setiap kumpulan nilai dari variabel-variabel tunggal, yang mana prosedur berhenti dan dengan cara tersebut dari hasilnya kita bisa membaca sebuah jawaban tertentu, "ya" atau tidak", untuk pertanyaan "apakah nilai predikat benar?"" (Kleene 1943:273)
+
+
+=== Sejarah setelah 1950 ===
+Sejumlah usaha telah diarahkan untuk memperbaiki lebih lanjut definisi dari "algoritma", dan aktivitas tersebut masih terus berjalan karena isu-isu yang mengelilinginya, terutama, fondasi matematika (khususnya tesis Church-Turing) dan filsafat pikiran (khususnya argumen menyangkut kecerdasan buatan).
+Lebih lanjut, lihat karakterisasi algoritma.
+
+
+== Lihat juga ==
+
+
+== Referensi ==
+
+
+== Bacaan lanjutan ==
+
+
+== Pranala luar ==
+
+(Indonesia) Pengertian Algoritma
+(Inggris) Hazewinkel, Michiel, ed. (2001) [1994], "Algorithm", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4 
+Algorithms di Curlie (dari DMOZ)
+(Inggris) Weisstein, Eric W. "Algorithm". MathWorld. 
+(Inggris) Dictionary of Algorithms and Data Structures—National Institute of Standards and Technology
+(Inggris) Algorithms and Data Structures by Dr Nikolai Bezroukov

@@ -1,0 +1,251 @@
+A CPU (angol: Central Processing Unit – központi feldolgozóegység) más néven processzor ill. mikroprocesszor, a számítógép „agya”, azon egysége, amely az utasítások értelmezését és végrehajtását vezérli, félvezetős kivitelezésű, összetett elektronikus áramkör. Magyarra többféleképpen fordítják, így pl. a központi végrehajtó egység, központi feldolgozó egység, központi feldolgozó processzor, vagy egyszerűen processzor kifejezések is elterjedtek. Míg a processzor fogalma már korábban ismert volt, a mikroprocesszor megjelenését csak a félvezetős technológia és az integrált áramkörök kifejlesztése tette lehetővé, az 1970-es évek elején.
+A processzor alatt általában mikroprocesszort értünk, régebben a processzor sok különálló áramkör volt, ám a mikroprocesszorral sikerült a legfontosabb komponenseket egyetlen szilíciumlapkára integrálni.
+A mikroprocesszor egy vagy több szilícium kristályra integrált, néhány ezertől több milliárd számú tranzisztort tartalmazó integrált áramkör, amelyben további részegységek különíthetők el, rendelkezik az adatok ki- és beviteléhez szükséges sínrendszerrel, és rendelkezik egy utasításkészlettel, amelynek utasításait képes végrehajtani. A bemeneti eszközök segítségével kódolt információkat feldolgozza, majd az eredményt a kimeneti eszközök felé továbbítja, melyek ezeket az adatokat információvá alakítják vissza. A világ első mikroprocesszorát (TMS 1000) az amerikai Texas Instruments fejlesztette ki 1971-ben, ezt követte az Intel 4004-es processzora, majd további cégek gyártmányai.
+
+
+== A processzorok története ==
+A korai számítógépeket, például az ENIAC-ot, át kellett huzalozni, amikor egy új feladatot akartak rajtuk futtatni – ezeket a gépeket tehát „rögzített programú” gépeknek nevezhetjük. A „CPU” kifejezés meghatározása szoftver ill. számítógépprogram végrehajtását végző eszköz, ezért a legkorábbi CPU-nak, elkülönített központi végrehajtóegységnek nevezhető eszközök a tárolt programú számítógépek elérkezésével jelentek meg.
+A tárolt program elve már szerepelt a J. Presper Eckert és John William Mauchly terveiben az ENIAC számítógéphez, de azt kezdetben kihagyták a gépből, hogy hamarabb üzembe helyezhessék. Még az ENIAC elkészülte előtt Neumann János publikálta „First Draft of a Report on the EDVAC” című cikkét, amelyben leírta a tárolt programú számítógépek tervezési elveit, azaz a Neumann-elveket. Az EDVAC gép 1949 augusztusában el is készült. Az EDVAC különböző típusú adatokkal tudott műveleteket végezni, és a programját egy belső számítógépi memóriából olvasta, nem pedig fizikailag huzalozott hardverből kapta, így az könnyen és gyorsan változtatható volt, ellentétben az ENIAC-kal. Az első tárolt programú gép mégsem az ENIAC volt, hanem a „Manchester Small-Scale Experimental Machine” (manchesteri kisméretű kísérleti gép), egy kis prototípus, amely már tárolt programmal rendelkezett és első programját 1948. június 21-én futtatta, valamint a Manchester Mark 1, amely 1949. június 16-17-én működött először.
+A korai számítógépek mind egyedi tervezésűek voltak, ezért azok CPU-i az egyedi konstrukciók részeiként, különböző céllal és felépítéssel készültek, a szabványos felépítésnek és szerkezeti elemeknek nyoma sem volt. A szabványosítás a tranzisztoros nagyszámítógépek és miniszámítógépek megjelenésével kezdődött, és még jobban felgyorsult az integrált áramkörök megjelenésével és elterjedésével. Az integrált áramkör egyre összetettebb kialakítások tervezését tette lehetővé és a gyártás rövidesen elérkezett a nanométeres méretekhez. A szabványosítás és miniatürizálás lehetővé tette a digitális eszközök elterjedését az élet minden területén, meghaladva a dedikált célorientált számítógépek alkalmazási területét. A modern mikroprocesszorok jelen vannak szinte minden olyan eszközben, amiben elektronika található, legyen az autó, háztartási gép, mobiltelefon, játék, levelezőlap vagy matrica.
+A tranzisztoros számítógépek megjelenésük után rövid idővel kiszorították az elektroncsöves számítógépeket. Az 1960-as években az IBM feltalálta a mikroprogramozást, ami lehetővé tette különböző processzorok egyszerű gyártását, akár ugyanazzal a hardverfelépítéssel. Ez a módszer széles körben elterjedt és a mai napig alkalmazzák. Az első integrált áramkörökkel felépített processzorok rakéták fedélzeti számítógépeiben és űrhajók vezérlőrendszereiben jelentek meg (pl. az Apollo Guidance Computer). Az integrált áramkörök elemsűrűségének növekedése tette lehetővé a mikroprocesszorok megjelenését, ami egy olyan eszköz, amely egyetlen fizikai csipben magában foglalja a vezérlőegységet, az aritmetikai-logikai számítóegységet (gyakran többet is), a belső memóriát (regiszterek) és sínrendszert, valamint a külvilággal kapcsolatot tartó be- és kimeneti egységeket. A mikrovezérlők még több egységet tartalmaznak a tokon belül, ezek szinte önálló számítógépeknek tekinthetők.
+Az első mikroprocesszor a Texas Instruments által 1971. szeptember 17-én bemutatott, a TMS 1000 sorozatba tartozó TMS1802NC jelű processzor volt. Röviddel ezután, 1971. november 15-én jelent meg az Intel cég Intel 4004 jelű processzora. Mindkettő 4 bites szóhosszúságú eszköz volt, azonban a Texas csipje maszkprogramozott memóriát (beépített alkalmazást) és ki-/bemeneti csatornákat is tartalmazott.
+Később több sikeres 8 bites sorozat jelent meg több gyártó részéről (Intel 8008, 8080, 8085, Zilog Z80, Motorola 6800, MOS Technology 6502).
+A 8 bites mikroprocesszorok már az 1970-es évek elején megjelentek. A további fejlődés is a szóhossz növelésének irányába mutatott: 1973-ban megjelent az első 16 bites processzor (National Semiconductor IMP-16), de az 1970-es években a mikroprocesszorok túlnyomó többségének szóhossza 8 bites maradt.
+Az 1970-es évek vége felé jelentek meg nagyobb számban a 16 bites szóhosszúságú processzorok: 1978: Intel 8086, 1979: Motorola 68000.
+A 80-as évektől kezdve tovább nőtt a szóhossz: 1980-ban megjelent az AT&T Bell Labs BELLMAC-32A processzora, ez volt az első 32 bites processzor, ezután egyre több 32 bites eszköz jelent meg, így a Motorola sikeres m68k processzorcsaládja, a DEC, Sun és Intel is megjelentet 32 bites processzorokat. Az 1980-as évek közepétől kezdenek megjelenni az eleinte szintén 32 bites RISC elvű processzorok, pl. a Sun (SPARC), MIPS, Hewlett-Packard (PA-RISC), AMD (29k) és ARM architektúrák, de az Intel és a Motorola is gyártott RISC-alapú processzorokat. A szóhossz növekedése mellett megfigyelhető a komplexitás növekedése: a többcsipes eszközöket egyetlen áramkörbe integrált eszközök váltják fel, és a processzorok egyre több tranzisztort tartalmaznak, így az 1980-as évek közepén már elérték a (több-)százezres, az évtized végére pedig már a milliós nagyságrendet is. Ezzel együtt a processzorok órajele is folyamatosan nőtt.
+Az x86-64 a x86-os architektúra 64 bites leszármazottja. Az x86-64 utasításkészlet támogatja Intel x86-os architektúráját, ezt az Advanced Micro Devices (AMD) tervezte, majd átnevezte AMD64-re. Ezt az architektúrát az Intel lemásolta és Intel 64-nek nevezte el (régebben Yamhill, Clackamas Technológia, CT, IA-32e és EM64T neveken volt ismert). Ez vezetett a hétköznapi nyelvben az x86-64 vagy x64 elnevezések használatához, mint gyártó-független fogalmakhoz, amikor a két közel azonos kivitelezésű architektúrára hivatkozunk.
+
+
+== A processzor főbb részei ==
+
+ALU: (Arithmetic and Logical Unit  – Aritmetikai és Logikai Egység). A processzor alapvető alkotórésze, ami alapvető matematikai és logikai műveleteket hajt végre. Sebessége növelhető egy koprocesszor (FPU, Floating Point Unit, lebegőpontos műveleteket végző egység) beépítésével. Az FPU korábban külön részegység volt, manapság a processzorok mindegyike beépítve tartalmazza.
+AGU: (Address Generation Unit) - a címszámító egység, feladata a programutasításokban található címek leképezése a főtár fizikai címeire és a tárolóvédelmi hibák felismerése.
+CU: (Control Unit  a.m. vezérlőegység vagy vezérlőáramkör). Ez szervezi, ütemezi a processzor egész munkáját. Például lehívja a memóriából a soron következő utasítást, értelmezi és végrehajtatja azt, majd meghatározza a következő utasítás címét.
+Regiszter (Register): A regiszter a processzorba beépített nagyon gyors elérésű, kis méretű memória. A regiszterek addig (ideiglenesen) tárolják az információkat, utasításokat, amíg a processzor dolgozik velük. A mai gépekben 32/64 bit méretű regiszterek vannak. A processzor adatbuszai mindig akkorák, amekkora a regiszterének a mérete, így egyszerre tudja az adatot betölteni ide. Például egy 32 bites regisztert egy 32 bites busz kapcsol össze a RAM-mal. A regiszterek között nem csak adattároló elemek vannak (bár végső soron mindegyik az), hanem a processzor működéséhez elengedhetetlenül szükséges számlálók, és jelzők is. Ilyen például :
+utasításszámláló, (PC=program counter, IP=instruction pointer) ami mindig a következő végrehajtandó utasítás címét,
+utasításregiszter (IR=instruction register), mely a memóriából kiolvasott utasítást tárolja. E kód alapján határozza meg a vezérlőegység az elvégzendő műveletet
+flagregiszter, amely a processzor működése közben létrejött állapotok jelzőit (igaz, vagy hamis),
+veremmutató (SP = Stack Pointer) ,
+és az akkumulátor, (AC) amely pedig a logikai és aritmetikai műveletek egyik operandusát, majd az utasítás végrehajtása után az eredményt tartalmazza.
+Buszvezérlő: A regisztert és más adattárolókat összekötő buszrendszert irányítja. A busz továbbítja az adatokat.
+Cache: A modern processzorok fontos része a cache (gyorsítótár). A cache a processzorba, vagy a processzor környezetébe integrált memória, ami a viszonylag lassú rendszermemória-elérést hivatott kiváltani azoknak a programrészeknek és adatoknak előzetes beolvasásával, amikre a végrehajtásnak közvetlenül szüksége lehet. A mai PC processzorok általában két gyorsítótárat használnak, egy kisebb (és gyorsabb) első szintű (L1) és egy nagyobb másodszintű (L2) cache-t. A gyorsítótár mérete ma már megabyte-os nagyságrendű.
+
+
+== A processzor működése ==
+1. Az utasítás beolvasása a memóriából a processzorba: A memória címtárolójából, az AR-ból (address register - címregiszter) kerül át a processzor címtárolójába az IP-be (instruction pointer). Ezek után a memória adattároló regiszteréből, a DR-ből (data register - adatregiszter) kerülnek át az adatok a processzor adattárolójába, az IR (instruction register)-be.
+2. A beolvasott utasítás dekódolása, elemzése: Az ALU az utasítás kódját értelmezi, melyből kiderül milyen műveletet kell elvégeznie, és hogy mennyi adatot kell beolvasni még ahhoz, hogy meghatározhatóak legyenek az operandusok, amelyeken a műveleteket végzi.
+3. A művelet végrehajtása, mely eredménye az LR3 segédregiszterbe kerül.
+4. Eredmény tárolása: az LR3 segédregiszterből egy másik regiszterbe, vagy a DR-en keresztül a memóriacímre kerül.
+5. A következő utasítás címének meghatározása: A szekvenciális program esetében az IP értékének megnövelésével jut el az ALU a következő utasítás címéhez. Ellenkező esetben egy regiszter tartalmazza a következő utasítás címét, melyet a processzor az IP-be ír.
+
+
+== Az óra és az órajel ==
+Az óra az egész számítógép működéséhez szükséges ütemet biztosítja. Az óra magában foglal egy kvarckristályt, ami az órajel előállításához szükséges rezgés stabilitását adja. Sebességét Hertzben (vagy megahertzben) mérjük. Az órajel-generátor néhány száz MHz-es rezgést ad, ezért a processzor órajelének előállításához egy beállítható szorzót alkalmaznak, hogy többféle sebességű processzort is a rendszerbe lehessen építeni.
+A processzor részegységei (itt a legalapvetőbb műveleteket végző részegységekre kell gondolni, tehát nem egy olyan nagy egységre, mint például az ALU.), az órajel ütemére végzik feladataikat; amikor egy részegység megkapja az órajelet egy elektronikus jel formájában, akkor elvégzi a soron következő műveletet, amikor megkapja a következő jelet, akkor a következő műveletet végzi el. Egy másodperc alatt egy mai processzor egysége több milliószor kap jelet. Az órajel sebességének így ahhoz az időhöz kell alkalmazkodnia, amennyi időbe telik egy részegységnek a rá kijelölt művelet elvégzése (különben akkor jönne a következő művelet, amikor az előző még feldolgozás alatt van, és ez érthetően problémákat okozna). Ez lényegében azt eredményezheti, hogy a processzor egységeinek a leglassúbb elem miatt kell várakozniuk. Ezt persze különféle megoldásokkal orvosolják.
+Ám a műveletet nem szabad összetéveszteni az utasítással, ezek bonyolultsága miatt egy utasítás végrehajtása több órajelciklust is igénybe vehet. Az is lassító tényező, hogy a processzor az adatokat lassabban kapja, mint ahogy fel tudná dolgozni őket, ilyenkor pedig várakoznia kell.
+Gépi ciklusnak nevezzük azt az időt, amely alatt a számítógép egy gépi műveletet végre tud hajtani. Egy gépi ciklus általában több órajelütemből áll, az egyes utasítások végrehajtásához szükséges gépi ciklusok száma utasításonként más és más lehet.
+
+
+== A processzor utasításkészlete ==
+A processzor által ismert műveletek és utasítások összességét értjük a processzor utasításkészlete alatt. Legelőször a RISC (Reduced Instructions Set Computer) utasításkészletet használták, ez leegyszerűsített, rövid utasításokat tartalmazott. Elsődlegesnek tekintette a sebességet, és az egyszerűséget. Később a CISC-et (Complex Instructions Set Computer) alkalmazták, ez már több, hosszabb utasítást tartalmazott, ám a túl sok, bonyolult utasítás nem bizonyult célravezetőnek, ezért visszatértek a RISC-hez. Ma már persze rengeteg utasításkészlet van, melyben keverednek a RISC, és a CISC irányelvei (Pentium, Pentium MMX, SSE 3/4, 3D now!).
+
+
+== A processzor tokozása ==
+
+Tokozáson a processzor külső burkát, érintkezőinek kialakítását értjük.
+Három elterjedt fajtája van:
+
+LGA-tokozás: az előző kialakításokkal szemben a tűsor az alaplapon helyezkedik el, míg a processzoron csak úgynevezett érintőpadok találhatóak.
+PGA-tokozás: itt a csatlakozók a négyzet alakú tok alján helyezkednek el. Ezen belül is lehet:
+CPGA, azaz kerámiatok, vagy
+PPGA műanyag tok.
+SECC-tokozás: a tok inkább egy kazettára hasonlít, az érintkezők (tűk) az alján vannak.
+
+
+== A processzor hűtése ==
+
+A mai processzorok olyan magas frekvencián dolgoznak, hogy egyszerűen elolvadnának az elektromos áram hőhatása miatt, ezért ezt kell hűtőrendszerrel orvosolni. Több fajtája létezik:
+
+Léghűtéses: A processzorra egy hűtőbordát szerelnek, ami elvonja a hőt, erre pedig egy hűtő-ventilátort, ami hűti a hűtőbordát. Ezt nevezik aktív hűtésnek, passzív hűtésnek nevezik azt a fajta hűtést, ha a ventilátort elhagyják a rendszerből. A hűtőborda és a processzor közé szinte mindig hűtőpasztát tesznek, a jobb hőátadás érdekében. Ez általában alumínium hűtőpaszta.
+Vízhűtéses: Csövekben hűtőfolyadékot cirkuláltatnak, és ezt kötik rá a hűteni kívánt alkatrészre. Teljesen halk, emellett igen hatékony, ám kiépítése bonyolult és drága.
+Egyéb hűtési fajták is léteznek, de ezek nem olyan elterjedtek, például:
+
+Peltier hűtés: a processzorra egy ún. Peltier-elemet raknak, és erre kerül rá egy további hűtő egység. Az elem lényege, hogy a töltés áramlása mellett hőáram alakul ki, amelynek következtében az elem egyik oldaláról a másikra vezeti a hőt → az egyik oldala hideg, míg a másik oldala forró lesz.
+Hidrogénes hűtés
+Hőcsöves hűtés
+Folyékony nitrogénes hűtés
+A processzorgyártók különféle módszereket vezettek be arra, hogy ha a CPU nincs terhelés alatt, órajeléből visszavegyen, kisebb teljesítményen dolgozzon, és ezáltal kevesebb hőt termeljen. Ilyen megoldás az AMD Cool'n'Quiet és az Intel SpeedStep technológiája is. Ezeket az eljárásokat főleg hordozható számítógépekben használják.
+
+
+== Processzorgyártók, mai processzortípusok ==
+
+Az asztali PC-k piacán manapság két nagy processzorgyártó vetekszik egymással, az Intel és az AMD. Az Intel a nagyobb, belőle vált ki az AMD. Mind a két processzorgyártónak nagy részesedése van a videókártyák piacán is. A mobil eszközök processzorainak piacán több gyártó versenyez: a TSMC, Samsung, STMicroelectronics és mások, mindegyik főleg ARM alapú processzorokat gyárt erre a piaci szegmensre. Ugyanitt az Intel is szerepel, kis részesedéssel, az Intel Atom processzorokkal.
+A szerverprocesszorok terén az Intel, IBM, Oracle cégek jelentősek, és világméretben Kína is ide sorolható, a Loongson processzorok szerver-verziói miatt, amelyek fejlettebb verzióit szintén a STMicroelectronics gyártja. 2020-tól az Apple is saját, ARM SoC-okat gyárt Apple M néven.
+
+
+== A processzorok kronológiája ==
+
+
+=== 1960-as, 1970-es évek ===
+1964. április 7. – az IBM bejelenti a System/360 számítógéprendszer-családot, ezen belül a Model 30, 40, 50, 60, 62 és 70 jelű gépeket. Jellemzőik: 2-es komplemens bináris aritmetika, 8 bites bájt, 32 bites gépi szó, EBCDIC karakterkészlet, lebegőpontos számformátum, 16-32 db. 32 bites regiszter, min. 4 kB memória. A CPU mikrokódolt, tranzisztoros-nyomtatott áramkörös különálló egység.
+1967 – A Texas Instruments feltalálja a kézi elektronikus kalkulátort.
+1970. június – Central Air Data Computer MP944 csipkészlet: 20 bites, többcsipes integrált katonai repülésvezérlő rendszer, amelyet korai vadászrepülőgépekben használtak, esélyes a világ első CPU-ja címre, de ennek a megítélése nem egyértelmű.
+1970. június 30. – Megjelenik az IBM System/370 számítógépcsalád: 128 bites lebegőpontos aritmetika, 32 bites címzés. A CPU mikrocsipekből áll, több nyomtatott áramköri panelen.
+1971 – A Texas Instruments feltalálja az egycsipes mikroszámítógépet.
+1971. szeptember – megjelenik a Texas Instruments TMS 1000: 4 bites egycsipes mikrokontroller, a világ első egycsipes számítógépe, ezeket a csipeket kalkulátorokban alkalmazták.
+1971. november 15. – megjelenik a 4004-es, az Intel első 4 bites processzora.
+1972 – Elkészül az Intel 4040 (az Intel 4004 utódja) – 4 bites processzor, BCD utasításokkal.
+1972. április 1. – megjelenik az Intel 8008, világ első 8 bites mikroprocesszora. Tranzisztorszáma: 3500.
+1972 – Rockwell PPS-4: 4 bites PMOS technológiájú CPU, az Intel 4004 konkurense.
+1973 eleje – Az első többcsipes 16 bites mikroprocesszor megjelenése: a National Semiconductor IMP-16 jelű terméke. (5 csip, 4 bites regiszterek és ALU, CROM)
+1973. szeptember 4. – A Texas Instruments a világon elsőként, szabadalmat kap az egycsipes mikroprocesszorra, Gary Boone találmányára.
+1974. április 1. – Megjelenik az Intel 8080, az első valóban használható 8 bites CPU. Tranzisztorszáma: 4500.
+1974 közepe – A Motorola 8 bites CPU-ja, az MC6800. Tranzisztorainak száma 4100.
+1975. január – A National Semiconductor bemutatja első egycsipes 16 bites mikroprocesszorát, a PACE-t, – ez az első ilyen típusú mikroprocesszor, ami üzleti forgalomba került. Ezt később ennek NMOS változata követte, a INS8900.
+1975 – Az IBM System/4 Pi számítógépcsalád megjelenése – ez a sorozat a System/360 folytatása, hibatűrő, sugárzásvédett, többprocesszoros, 32- vagy 16 bites rendszerek, harci repülőgépeken, bombázókban és az űrsiklókban szerepeltek.
+1975 – Az AMD elindítja Am2900-as csipsorozatát, ezek első példánya az Am2901: 4 bites bitszelet-technikát használó ALU
+1975 – A Fairchild Semiconductor bemutatja F8 jelű 8 bites CPU-ját, melyet játékgépekben, szintetizátorokban használnak majd
+1975. szeptember – a MOS Technology bemutatja 6502 számú 8 bites CPU-ját, amely az Apple I és Apple II processzora. Az eszköz 3510 tranzisztort tartalmaz.
+1976. június – Megjelenik a Texas Instruments TMS9900 – az egyik első valódi 16 bites mikroprocesszor.
+1976 – RCA 1802, avagy CDP 1802 – az RCA által fejlesztett 8 bites CMOS mikroprocesszor, a Voyager, Viking, Galileo űrszondák processzora.
+1976. július – Megjelenik a Zilog Z80 processzor, a világ egyik legelterjedtebb 8 bites processzora.
+1977 – Az Intel kibocsátja a 8085 8 bites mikroprocesszorát (ebbe a családba tartozik a Sojourner marsjáró 80C85 processzora is).
+1977 – Az AT&T Bell Laboratories bemutatja a BELLMAC-8 mikroprocesszort: ez egy 8 bites, 16 bites címzéssel rendelkező processzor, 5 mikronos CMOS technológiával készült.
+1978. június 8. – A 16 bites Intel 8086 megjelenése
+1979 – Megjelenik a Motorola 68000, az első 16/32 bites CISC processzor, az Amiga, Apple, Atari és Macintosh gépek processzora.
+1979 – Zilog Z8000: 16 bites processzor, nem Z80-kompatibilis, 8-, 16- és 64 bites regisztereket használhat.
+1979. június 1. – Az Intel 8088 16 bites processzor, az első IBM PC-k processzora.
+
+
+=== 1980-as évek ===
+1980 – A MOS Technology befejezi a 6510 CPU fejlesztését – ez a Commodore 64 számítógépek CPU-ja.
+1980 nyara – elkészül az IBM 801 processzor prototípusa: az első RISC processzor.
+1980 – AT&T Bell Labs BELLMAC-32A – az első egycsipes, teljesen 32 bites CPU.
+1980 – David Patterson a kaliforniai Berkeley Egyetemen elindítja a RISC projektet, amely a RISC I és RISC II processzorokhoz vezetett 1981-ben. Tőle ered a RISC kifejezés.
+1980 – Az Intel bejelenti a 8087-es lebegőpontos koprocesszort. Ez a 8086, 8088, 80186 és 80188 processzorokkal működik együtt, teljesítménye kb. 50 000 FLOPS.
+1981. január 1. – Az Intel iAPX 432 bemutatása: az Intel első 32 bites objektumorientált processzora.
+1981 – Elkészül az IBM ROMP (Research (Office Products Division) Micro Processor) processzora: ez egy 10 MHz órajelű 32 bites RISC processzor, később az IBM RT/PC gépeiben és lézerprinterekben használták.
+1982 – Az Intel 80186 bemutatása
+1982 – Megjelenik a 32 bites, egycsipes Hewlett-Packard FOCUS CPU
+1982 – Motorola 68008: a Motorola 8/16/32 bites mikroprocesszora, a Motorola 68000 egy változata, 8 bites külső adatbusszal. A Sinclair QL személyi számítógépben volt ilyen.
+1982. február 1. – Az Intel 80286 bemutatása
+1982. február – Az AMD licencszerződést köt az Intellel 8086 és 8088 processzorok gyártására.
+1982 – Az AMD Am286 processzorokat is gyárt, az Intel licencszerződés keretében.
+1983 – Az Acorn Computers Ltd. megkezdi az ARM architektúra tervezését. A cél egy egyszerű 32 bites RISC processzor kifejlesztése.
+1984 – Elkészül a Western Design Center (WDC) 16 bites mikroprocesszora, a WDC 65816 ill. WDC 65802 – teljesen kompatibilis a MOS Technology 6502-vel, a 65802 még tokozásban is megegyezik vele. Ezek a processzorok az Apple IIGS gépekbe kerültek. A SNES játékkonzol Ricoh 5A22 CPU-ja egy módosított WDC 65C816.
+1984 – Az INMOS angol mikroelektronikai cég megjelenteti az első transputereket. Ezek párhuzamos működésre szánt mikrokontroller-szerű processzorok, 16, 32 és 64 bites változatok készültek belőlük.
+1985 – A Hitachi által tervezett 68HC000 bemutatása – ez a Motorola 68000 CMOS változata.
+1985 – DEC MicroVAX 78032 – VAX utasításkészletű processzor, amit a DEC VAX gépeiben használtak.
+1985 – SUN SPARC (Scalable Processor Architecture) – a Sun Microsystems által tervezett RISC jellegű processzor-architektúra, a Sun workstationokban való használatra.
+1985 – R2000, a MIPS Computer Systems MIPS (Microprocessor without Interlocked Pipeline Stages) architektúrájú 32 bites RISC mikroprocesszora
+1985. április 26. – Elkészül az ARM1, az Acorn első működő ARM processzora.
+1985. október 17. – Megjelenik az i386DX, az x86-os processzorcsalád első 32 bites tagja.
+1986 – az Intel felmondja a licencszerződést az AMD-vel, és elutasítja az i386 architektúra átadását. Ld. 1991.
+1986 – Elkészül az Acorn ARM2, a világ talán legegyszerűbb, használható 32 bites mikroprocesszora.
+1986 – Z80000 a Zilog 32 bites processzora.
+1986 – A Hewlett-Packard elkészíti az első PA-RISC architektúrájú processzorát, a 6 csipből álló TS1-et.
+1987 – Az AMD kifejleszti a Sonyval a CMOS technológiát
+1987 – A HP elkészíti PA-RISC processzorainak CMOS verzióit, a 8 MHz-es CS1-et és az NMOS technológiájú, gyorsabb NS1-et.
+1987 – Az AT&T CRISP (C-language Reduced Instruction Set Processor) processzora.
+1988 – MIPS R3000
+1988. április 5. – Az Intel bemutatja az i960 (alias 80960) architektúrát, ami egy Berkeley RISC-en alapuló 32 bites processzor-architektúra.
+1988. április – A Motorola 88000 (röviden m88k) család: a Motorola saját fejlesztésű Harvard architektúrájú RISC processzor-tervezete. Első elkészült tagja a 88100; 32 bites RISC processzor, órajele 33 MHz.
+1988 – Elkészül az AMD 29000, másképp 29K, az AMD első RISC alapú 32 bites mikroprocesszora, a 29000-es sorozat első tagja. A Berkeley RISC designra épül, hasonlóan a SUN SPARC és az Intel i960 architektúrához.
+1989 – PA-7000, a Hewlett-Packard PA-RISC architektúráján alapuló 32 bites processzor.
+1989. február 27. – Intel i860 avagy 80860 – az Intel első szuperskalár processzora, RISC 32/64 architektúra.
+1989. július – Intel i960CA az i960 architektúra első tiszta RISC megvalósítása, egycsipes szuperskalár RISC implementáció.
+1989 – Elkészül az Acorn ARM3 (a csipben 4k adat- és utasítás-gyorsítótár is van), valamint az ARM2as, az ARM statikus verziója.
+1989 – Az Intel 80486 bemutatása
+
+
+=== 1990-es évek ===
+1990 – Az IBM POWER1 architektúra bemutatása – az IBM RS/6000 gépek processzora, 32 bites, többcsipes, kétutas szuperskalár RISC CPU, a modellek órajele (20-)25-62.5 MHz között lehet.
+1990. november – Megalakul az ARM Ltd., az ARM processzorok fejlesztése elválik az Acorn Computers Ltd.-től.
+1991 – Elkészül az ARM6, az Apple és ARM Ltd. közös fejlesztése (ARM4 és ARM5 nem készült, a számozást 6-tól folytatták).
+1991. március – Az AMD bemutatja az Am386 mikroprocesszor-családot, ami az AMD saját i386 klónja; ezzel megtöri az Intel monopóliumát.
+1991 – MIPS R4000 – a MIPS első 64 bites mikroprocesszora.
+1991 – Az Apple, IBM és Motorola – az AIM szövetség – elkezdik a PowerPC 600-as processzorcsalád tervezését.
+1992. február 25. – A DEC Alpha 21064 processzorának bejelentése - 64 bites RISC architektúra. Ez volt a legnagyobb teljesítményű processzor 1993-ig, az IBM POWER2 megjelenéséig.
+1992. október – Elkészülnek az első PowerPC 601 processzor prototípusok.
+1992. október 12. – Az AT&T bejelenti az ATT 92010 – más néven Hobbit – processzort. Ez egy 32 bites, 20–30 MHz órajelű processzor volt, 3 kB-os utasítás-előolvasó tárral (instruction prefetch buffer) és 32 elemű utasítás-gyorsítótárral rendelkezett, regiszterei nem voltak, állítólag 37 VAX MIPS teljesítményre volt képes. Az AT&T CRISP architektúra megvalósítása, nyelvspecifikus, C nyelvű programok futtatására volt optimalizálva.
+1992 – A Hitachi megkezdi SuperH RISC processzorcsaládjának fejlesztését, aminek az első tagjai az SH1 és SH2 processzorok, melyeket beágyazott rendszerekbe szánnak (1994,).
+1993. március 22. – Az Intel Pentium bemutatása: 32 bites processzor.
+1993. április – Az AMD Am486 mikroprocesszor-család megjelenése.
+1993 – Az IBM POWER2 (eredetileg RIOS2 nevű) processzorok kibocsátása: 55 - 71.5 MHz, javított POWER1 felépítés, 8 csipes.
+1993. ősz – Az IBM-nél elkészül a PowerPC 601 (IBM PPC601, a Motorolánál MPC601 néven), a 32 bites alap PowerPC utasításkészletű processzorok első generációja. 50 - 80 MHz közötti órajelet használ, RS/6000 workstation ('93) és Power Macintosh gépekben ('94) alkalmazzák.
+1994 – Az AT&T 92020 Hobbit processzora, a 92010 továbbfejlesztése, 6 kB-os utasítástárral. Az AT&T korai PDA-jában, az EO Communicator-ban működött.
+1994 – MIPS R8000 – a MIPS első szuperskalár mikroprocesszora.
+1994 – ARM Ltd., ARM7 processzor (ARMv3, ARMv4T, 0-60 MHz, 8KB cache lehet)
+1994 – A PowerPC 603 és PowerPC 604 megjelenése: a 603 az első teljes 32 bites PowerPC architektúra implementáció; a 604: szuperskalár, 6 fokozatú futószalag, órajele 100 - 180 MHz.
+1994 – Az IBM kísérleti PowerPC 615 processzora: 32/64 bites PowerPC és 32 bites x86 utasításokat is képes volt végrehajtani, akár vegyesen is.
+1995 – A DEC licencelt ARM6 technológián alapuló StrongARM projektjének első eredménye az SA-110 ARMv4 architektúrájú processzor. Fogyasztása 233 MHz órajelnél 1 watt.
+1995 – A NEC VR4300 egy MIPS R4300i-n alapuló 64 bites RISC mikroprocesszor, MIPS I, MIPS II, MIPS III  (lefelé kompatibilis, 32- és 64 bites) utasításkészlettel, a Nintendo 64 játékkonzol processzora.
+1995 – PowerPC 602 – a Motorola és IBM játékkonzolokba szánt, redukált PowerPC 603, órajel: 50 - 80 MHz.
+1995 – Az IBM kibocsátja a Cobra vagy A10 processzort AS/400 rendszerekben – egycsipes processzor, 50-77 MHz órajellel.
+1995 – Megjelenik a Sun 64 bites UltraSPARC processzora, SIMD multimédiás utasításokkal; órajele 143–200 MHz, támogatja a többprocesszoros rendszerekben való alkalmazást is
+1995 – Az Intel Pentium Pro bemutatása
+1996. január – SGI, MIPS Technologies (MTI) R10000, kódnevén „T5” – MIPS IV utasításkészletű 64 bites mikroprocesszor, szuperszámítógépekben való használatra. 175 és 195 MHz-es verziói jelentek meg 1996-ban.
+1996 – ARM Ltd., ARM8 processzor (ARMv4. 0-72 MHz, 8KB cache, 5 fokozatú futószalag)
+1996 – Az AMD K5 processzor bemutatása.
+1996 – Az IBM P2SC (POWER2 Super Chip) bemutatása, a POWER2 utódja, annak egycsipes megvalósítása, órajele 135 MHz. Az IBM Deep Blue számítógép, amely 1997-ben legyőzte Garri Kaszparovot, 30 db P2SC processzort tartalmazott.
+1996 – PowerPC 603q - egy független PowerPC 603 kompatibilis processzor, a Quantum Effect Devices (QED) gyártmánya.
+1996 – Az IBM nagy teljesítményű, többcsipes 4-utas SMP egysége: Muskie, A25 vagy A30, AS/400 gépekbe. Órajel: 125–154 MHz.
+1997 – Bemutatják az AMD K6 processzort (Intel Pentium II ekvivalens, szuperskalár, órajel 166–300 MHz).
+1997 vége – ARM Ltd., ARM9 processzor (ARMv4T, ARMv5TE, 0–200 MHz, dual cache, TDMI)
+1997 – Az IBM RS64 vagy Apache processzora: 64 bites PowerPC RISC processzor, RS/6000 és AS/400 gépekben szerepel, ismert még PowerPC 625 és A35 néven.
+1997 – SGI: megjelent az R10000: MIPS IV architektúrájú 64 bites processzor, 150 és 250 MHz-es verziók.
+1997 – Sun picoJava I és picoJava II – a Sun Java- azaz nyelvspecifikus processzorai, amelyek közvetlenül hajtják végre a Java bytekódot.
+1997 – Az Intel Pentium II bemutatása.
+1998. február 5. – Az IBM a világon elsőként demonstrál egy kísérleti CMOS mikroprocesszort, amely 1000 MHz fölötti órajellel működik. Ekkoriban az általános órajel 300 MHz alatt jár.
+1998. október – ARM Ltd., ARM10 processzor (ARMv5TE, 300MHz-1.2GHz, dual cache, 6 fokozatú futószalag)
+1998 – IBM RS64-II vagy Northstar (262 MHz).
+1998. október 5. – Az IBM POWER3 processzora: 32/64 bites PowerPC utasításkészletet, valamint POWER2 alternatív utasításkészletet megvalósító architektúra. (Órajel: 200–450 MHz)
+1998 novembere, SGI: R12000 (MIPS IV), 270, 300 és 360 MHz-es órajelen.
+1998 – Az Intel Celeron bemutatása.
+1999. június 23. – Az AMD K7, azaz az AMD Athlon – hetedik generációs x86 típusú processzor bemutatása.
+1999 – IBM RS64-III vagy Pulsar (450 MHz).
+1999 – Az Intel Pentium III bemutatása.
+
+
+=== 2000-től ===
+2000 – Az AMD az Athlon XP és Duron processzorokkal jelent meg ebben az évben. Az IBM két különböző architektúrájú processzort jelentetett meg: az RS64-IV, más néven Sstar, processzort (ez egy többszálú futtatást támogató processzor, órajele 600 MHz, később 750 MHz), a z900 64 bites, az IBM zSeries sorozat szervereibe való processzort. Megjelent még a Fujitsu SPARC64 IV és az Intel ekkor még 32 bites Pentium 4-es processzorának első szériája.
+2000. január 19. – a Transmeta cég bejelenti új processzorcsaládját, melynek kódneve Crusoe. Ez egy az Intel x86 architektúrával kompatibilis, kis fogyasztású, 128 bites VLIW végrehajtású processzor. Első modellje a 700 MHz-es TM3120 volt.
+2000. augusztus 23. – Intel XScale: ARM architektúrán alapuló 32 bites RISC mikroprocesszor.
+2000. október – a Transmeta kibocsátja a 600 MHz-es Crusoe processzort (VLIW - nagyon hosszú utasításszót használó, alacsony fogyasztású processzor, hatékonyan képes emulálni egyéb processzorokat).
+2000. november 20. – Megjelenik az Intel híres Pentium 4-es processzora (ekkor 32 bites, CISC, 1,5 GHz órajellel).
+2001 – Az IBM POWER4 processzora: 64 bites PowerPC architektúra, többmagos processzor: két magot tartalmaz egy házban. Eredetileg 1,1 és 1,3 GHz órajellel működik, egy továbbfejlesztett POWER4+ modell elérte az 1,9 GHz-et is.
+2001 közepén az Intel kibocsátotta új Itanium sorozatának első tagját, a Merced kódnevű processzort. Az Itanium architektúra 64 bites VLIW, eredetileg az Intel és HP által közösen fejlesztett EPIC-ből (explicitly parallel instruction computing) származó felépítés, a Merced ennek az első megvalósítása. Ezt a családot nagyteljesítményű szerverekbe szánták, képes emulálni az x86 utasításokat is. Kezdetben teljesítménye a középkategóriás RISC processzorokéhoz járt közel.
+2001 júliusában megjelenik az SGI MIPS R14000-es (500 MHz-es RISC) processzora: 64 bites architektúra, amely lefelé kompatibilis az előző MIPS modellek 32 bites architektúrájával.
+2001. október 9. – Az AMD bemutatja Athlon XP és MP processzorait.
+2001. december – Elkészülnek a Fujitsu SPARC64 V processzorának első példányai. Ez egy négyszeres kibocsátású szuperskalár, sorrenden kívüli végrehajtású processzor, a 64 bites SPARC V9 architektúrát valósítja meg, órajele 1,1-től 1,35 GHz-ig terjed. A Fujitsu PRIMEPOWER szervereibe építették.
+2002 – Megjelenik az Intel Itanium 2 processzora. A 2002-es első változat kódneve McKinley, amelyet az Intel a Hewlett-Packard-dal közösen fejlesztett ki, nagyteljesítményű szerverekben történő felhasználás céljaira. A 64 bites, az Intel Itanium utasításkészlet-architektúrát implementáló processzor 180 nm-es technológiával készült, 221 millió tranzisztorából csak 25 millió alkotta a logikát. Változatai 900 és 1000 MHz-es órajelekkel jelentek meg.
+2003. március 12-én megjelent az Intel Pentium M sorozat első tagja, a Banias kódnevű modell.
+2003 júliusában: Megjelenik az IBM PowerPC 970 processzora, elsőként az Apple Power Mac G5 modellben. Ez egy ötödik generációs PowerPC processzor, 64 bites, de visszafelé kompatibilis a 32 bites PowerPC architektúrával. Órajele 1,6-től 2,0 GHz-ig terjed.
+2003. szeptember 23. – az AMD kibocsátja az Athlon 64-et, nyolcadik generációs AMD64-architektúrájú mikroprocesszorát.
+2004 – A Transmeta 1,6 GHz-es Efficeon 256 bites, második generációs VLIW processzora.
+2004. február 2-án az Intel bejelentette az első Prescott-maggal szerelt Pentium 4 processzorait, ezzel a Pentium is bekerült a 64 bites processzorok közé.
+2005. november 14. – Megjelenik a Sun Niagara kódnevű processzora, másként az UltraSPARC T1: egy alacsony fogyasztású szerverprocesszor, 4, 6 és 8-magos kiépítésben készül, órajele 1,0-tól 1,4 GHz-ig terjed.
+2006 – Megjelennek az IBM, Sony és Toshiba együttműködésben készülő Cell processzor első példányai.
+2007 – Az Intel Core 2 Duo 2,5 GHz.
+2007 – A Sun Niagara 2 avagy UltraSPARC T2 processzora: 4, 6 és 8-magos kiépítésben készül, 64 szálat futtat párhuzamosan, órajele 1,2-tól 1,6 GHz-ig terjed minden szálon. Minden magja külön FPU-t tartalmaz.
+2008 – Az AMD Opteron Dual-Core 8222 2 GHz Socket F processzor.
+2010 – Az Oracle Corporation (korábban Sun Microsystems) SPARC T3 processzora, másként UltraSPARC T3: 8 vagy 16 magos processzor, órajele 1,67 GHz, maximum 512 szálat futtat.
+2010. július 22. – Az IBM kibocsátja a z196 processzort: 4 magos nagyszámítógépekbe szánt szerverprocesszor, CISC, órajele 3,8-tól 5,2 GHz-ig terjedhet.
+
+
+== Jegyzetek ==
+
+
+== Források ==
+Dr. Kovács Tivadar, Dr. Kovácsné Cohner Judit, Ozsváth Miklós, G. Nagy János: Mit kell tudni?: a PC-ről az OKJ és ECDL vizsgákhoz: a PC-k hardver, szoftver és üzemeltetési kérdéseiről: számítástechnikai alapismeretek, Windows 95, Office 97 szoftverek, adatbáziskezelés, elektronikai levelezés, 2002, ComputerBooks, ISBN 963-618-189-6, Ismertető
+Sikos László: PC hardver kézikönyv 2007, BBS-INFO Kiadó, ISBN 978-963-9425-15-6, Ismertető
+Mike Meyer: PC hardver és karbantartása, 2004, PANEM KFT., ISBN 963-545-382-5, Ismertető Archiválva 2007. szeptember 28-i dátummal a Wayback Machine-ben
+Simon Gyula: Számítástechnika 9. osztálynak, 2000, Pedellus Novitas Kft., ISBN 963 9216 17 8, Ismertető
+Simon Gyula: Számítástechnika 8. osztálynak, 1999, Pedellus Novitas Kft., ISBN 963 9216 04 6
+
+
+== További információk ==
+
+
+== Kapcsolódó szócikkek ==
+Mikroprocesszorok listája

@@ -1,0 +1,2423 @@
+Theoria numerorum, vel arithmetica sublimior, est pars mathematicae, quae de numeris naturalibus tractat. Notiones maximi momenti sunt numeri primi et compositi, congruentia, aequationes polynomiales.
+
+
+== Principia ==
+
+
+=== Numeri primi et factores ===
+Numeri naturales sunt 0, 1, 2, 3 . . . , inter quos, 0 et 1 exceptis, omnes sunt aut numeri primi aut numeri compositi. Numerus est primus cuius divisores (positivi) sunt numerus ipse, unus, et nullus alius. Numerus est compositus si alius numerus positivus eum dividit. Exempli gratia, 6 est numerus compositus, quod 
+  
+    
+      
+        6
+        =
+        2
+        ×
+        3
+      
+    
+    {\displaystyle 6=2\times 3}
+  
+. Numerus qui dividit aut metitur alium numerum est factor huius numeri; 2 et 3, ergo, sunt factores 6.
+Theorema fundamentale arithmeticae dicit omnem numerum naturalem maiorem quam unum esse productum numerorum primorum, et hunc productum unicum esse: numquam sunt duae copiae factorum eiusdem numeri quae inter se differant. Hoc est, si N est numerus quidam maior uno, est copia finitis numerorum primorum, 
+  
+    
+      
+        {
+        
+          p
+          
+            1
+          
+        
+        ,
+        
+          p
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          p
+          
+            n
+          
+        
+        }
+        (
+        n
+        ≥
+        1
+        )
+        ,
+        
+          p
+          
+            1
+          
+        
+        
+          p
+          
+            2
+          
+        
+        .
+        .
+        .
+        
+          p
+          
+            n
+          
+        
+        =
+        N
+      
+    
+    {\displaystyle \{p_{1},p_{2},...,p_{n}\}(n\geq 1),p_{1}p_{2}...p_{n}=N}
+  
+, et, si sit alia copia numerorum primorum 
+  
+    
+      
+        {
+        
+          q
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        
+          q
+          
+            m
+          
+        
+        }
+        ,
+        
+          q
+          
+            1
+          
+        
+        
+          q
+          
+            2
+          
+        
+        .
+        .
+        .
+        
+          q
+          
+            m
+          
+        
+        =
+        N
+      
+    
+    {\displaystyle \{q_{1},...q_{m}\},q_{1}q_{2}...q_{m}=N}
+  
+, tum 
+  
+    
+      
+        m
+        =
+        n
+      
+    
+    {\displaystyle m=n}
+  
+ et omnis 
+  
+    
+      
+        
+          p
+          
+            i
+          
+        
+      
+    
+    {\displaystyle p_{i}}
+  
+ aequat uni 
+  
+    
+      
+        
+          q
+          
+            j
+          
+        
+      
+    
+    {\displaystyle q_{j}}
+  
+.
+
+Series primorum est infinita. Hoc theorema Euclides probavit, libro nono Elementorum, propositione vigesima. Nam si non est series infinita, sint 
+  
+    
+      
+        {
+        
+          p
+          
+            1
+          
+        
+        ,
+        
+          p
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        
+          p
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{p_{1},p_{2},...p_{n}\}}
+  
+ omnes numeri primi. Sit N = productum omnium horum primorum. Nunc numerum N + 1 nullus primus dividit (quod omnis pi N dividit). Sed, per hypothesin, N + 1 ipse non est numerus primus (quod non est elementum copiae pi). Debet ergo factorem quendam primum habere, qui non potest esse inter illos pi. Copia finita igitur non potest omnes numeros primos comprehendere.
+Nescimus, autem, ubi sint primi, aut quot primi sint minor numero quodam (generaliter). Theorema de numeris primis dicit
+
+  
+    
+      
+        #
+        {
+        n
+        u
+        m
+        e
+        r
+        i
+        
+        p
+        r
+        i
+        m
+        i
+        ≤
+        x
+        }
+        ≈
+        
+          ∫
+          
+            2
+          
+          
+            x
+          
+        
+        
+          
+            1
+            
+              log
+              ⁡
+              t
+            
+          
+        
+        d
+        t
+      
+    
+    {\displaystyle \#\lbrace numeri\quad primi\leq x\rbrace \approx \int _{2}^{x}{\frac {1}{\log t}}dt}
+  
+
+Hoc theorema demonstraverunt Hadamard et de la Vallée Poussin anno 1896. Hypothesis Riemanniana, si vera est, permittat melius aestimare distributionem numerorum primorum. Theoria analytica numerorum de talibus quaestionibus tractat: haec pars theoriae numerorum arte analytica et functionibus continuis utitur.
+Si m et n sunt numeri naturales, aut habent factorem communem (qui dividit ambo numeros) aut nullum talem factorem habent. Si nullum factorem communem habent praeter 1, dicimus numeri sunt primi inter se. Sed si unum aut plures factores communes habent, unus horum factorem maximum est. Euclides algorithmum invenit ad maximum communem factorem (MCF) calculandum. Sint M, N numeri quorum MCF calculandus est, et sit 
+  
+    
+      
+        M
+        >
+        N
+        >
+        0
+      
+    
+    {\displaystyle M>N>0}
+  
+. (Si M = N, tum MCF(M, N) = M.) Divide M per N: 
+  
+    
+      
+        M
+        =
+        
+          q
+          
+            1
+          
+        
+        N
+        +
+        
+          r
+          
+            1
+          
+        
+      
+    
+    {\displaystyle M=q_{1}N+r_{1}}
+  
+, ubi r1 est residuus minimus positivus, 
+  
+    
+      
+        0
+        ≤
+        
+          r
+          
+            1
+          
+        
+        <
+        N
+      
+    
+    {\displaystyle 0\leq r_{1}<N}
+  
+. Tum divide N per r1: 
+  
+    
+      
+        N
+        =
+        
+          q
+          
+            2
+          
+        
+        
+          r
+          
+            1
+          
+        
+        +
+        
+          r
+          
+            2
+          
+        
+        ,
+        0
+        ≤
+        
+          r
+          
+            2
+          
+        
+        <
+        
+          r
+          
+            1
+          
+        
+      
+    
+    {\displaystyle N=q_{2}r_{1}+r_{2},0\leq r_{2}<r_{1}}
+  
+. Fac iterum usque ad residuum zerum invenis:
+
+  
+    
+      
+        M
+        =
+        
+          q
+          
+            1
+          
+        
+        N
+        +
+        
+          r
+          
+            1
+          
+        
+      
+    
+    {\displaystyle M=q_{1}N+r_{1}}
+  
+
+  
+    
+      
+        N
+        =
+        
+          q
+          
+            2
+          
+        
+        
+          r
+          
+            1
+          
+        
+        +
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle N=q_{2}r_{1}+r_{2}}
+  
+
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        =
+        
+          q
+          
+            3
+          
+        
+        
+          r
+          
+            2
+          
+        
+        +
+        
+          r
+          
+            3
+          
+        
+      
+    
+    {\displaystyle r_{1}=q_{3}r_{2}+r_{3}}
+  
+
+. . .
+
+  
+    
+      
+        
+          r
+          
+            n
+            −
+            2
+          
+        
+        =
+        
+          q
+          
+            n
+          
+        
+        
+          r
+          
+            n
+            −
+            1
+          
+        
+        +
+        
+          r
+          
+            n
+          
+        
+      
+    
+    {\displaystyle r_{n-2}=q_{n}r_{n-1}+r_{n}}
+  
+
+  
+    
+      
+        
+          r
+          
+            n
+            −
+            1
+          
+        
+        =
+        
+          q
+          
+            n
+            +
+            1
+          
+        
+        
+          r
+          
+            n
+          
+        
+        +
+        0
+      
+    
+    {\displaystyle r_{n-1}=q_{n+1}r_{n}+0}
+  
+
+Ultimus residuus qui non est zerum, rn, est MCF(M, N).
+Exempli gratia, pone M = 253, N = 69. Deinde:
+
+253 = 3 × 69 + 46, q1 = 3, r1 = 46
+69 = 1 × 46 + 23, q2 = 1, r2 = 23
+46 = 2 × 23 + 0, q3 = 2
+Ergo MCF(235, 69) = 23.
+
+
+=== Congruentia ===
+Si numerus m dividit differentiam numerorum a, b (hoc est, |a − b| = km, k > 0), dicimus numeros a, b congrui secundum modulum m, 
+  
+    
+      
+        a
+        ≡
+        b
+        (
+        
+        mod
+        
+        
+        m
+        )
+      
+    
+    {\displaystyle a\equiv b(\mod m)}
+  
+. Exempli gratia, 
+  
+    
+      
+        7
+        ≡
+        4
+        
+          (
+          
+            
+            mod
+            
+            
+            3
+          
+          )
+        
+      
+    
+    {\displaystyle 7\equiv 4\left(\mod 3\right)}
+  
+, sed 7 et 4 non congruuntur secundum modulum 5 quod 5 non dividit 7−4.
+Congruentia secundum modulum quendam est relatio aequivalentiae; hoc est relatio reflexiva (omnis numerus 
+  
+    
+      
+        a
+        ≡
+        a
+      
+    
+    {\displaystyle a\equiv a}
+  
+), symmetrica (si 
+  
+    
+      
+        a
+        ≡
+        b
+      
+    
+    {\displaystyle a\equiv b}
+  
+, tum 
+  
+    
+      
+        b
+        ≡
+        a
+      
+    
+    {\displaystyle b\equiv a}
+  
+), et transitiva (si 
+  
+    
+      
+        a
+        ≡
+        b
+      
+    
+    {\displaystyle a\equiv b}
+  
+ et 
+  
+    
+      
+        b
+        ≡
+        c
+      
+    
+    {\displaystyle b\equiv c}
+  
+, tum 
+  
+    
+      
+        a
+        ≡
+        c
+      
+    
+    {\displaystyle a\equiv c}
+  
+), ut faciliter videtur. Et operationes inter numeros congruentes similes sunt operationibus inter aequationes:
+
+si 
+  
+    
+      
+        a
+        ≡
+        b
+        
+          (
+          
+            
+            mod
+            
+            
+            m
+          
+          )
+        
+        ,
+        a
+        ,
+        b
+        ,
+        c
+        ,
+        n
+        ∈
+        
+          Z
+        
+        (
+        n
+        >
+        0
+        )
+      
+    
+    {\displaystyle a\equiv b\left(\mod m\right),a,b,c,n\in \mathbb {Z} (n>0)}
+  
+, tum
+
+  
+    
+      
+        a
+        +
+        c
+        ≡
+        b
+        +
+        c
+      
+    
+    {\displaystyle a+c\equiv b+c}
+  
+
+  
+    
+      
+        a
+        ×
+        c
+        ≡
+        b
+        ×
+        c
+      
+    
+    {\displaystyle a\times c\equiv b\times c}
+  
+
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        ≡
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a^{n}\equiv b^{n}}
+  
+
+Exemplum:
+
+quia 
+  
+    
+      
+        9
+        ≡
+        14
+        
+          (
+          
+            
+            mod
+            
+            
+            5
+          
+          )
+        
+      
+    
+    {\displaystyle 9\equiv 14\left(\mod 5\right)}
+  
+,
+scimus 
+  
+    
+      
+        9
+        +
+        3
+        ≡
+        14
+        +
+        3
+        ,
+        12
+        ≡
+        17
+      
+    
+    {\displaystyle 9+3\equiv 14+3,12\equiv 17}
+  
+
+et 
+  
+    
+      
+        9
+        ×
+        2
+        ≡
+        14
+        ×
+        2
+        ,
+        18
+        ≡
+        28
+      
+    
+    {\displaystyle 9\times 2\equiv 14\times 2,18\equiv 28}
+  
+
+et 
+  
+    
+      
+        
+          9
+          
+            2
+          
+        
+        ≡
+        
+          14
+          
+            2
+          
+        
+        ,
+        81
+        ≡
+        196
+      
+    
+    {\displaystyle 9^{2}\equiv 14^{2},81\equiv 196}
+  
+, semper secundum modulum 5.
+His regulis demonstratis, possumus aequationes solvere, sicut 
+  
+    
+      
+        2
+        x
+        ≡
+        3
+        
+          (
+          
+            
+            mod
+            
+            
+            5
+          
+          )
+        
+      
+    
+    {\displaystyle 2x\equiv 3\left(\mod 5\right)}
+  
+: quia 
+  
+    
+      
+        3
+        ≡
+        8
+      
+    
+    {\displaystyle 3\equiv 8}
+  
+, ergo 
+  
+    
+      
+        2
+        x
+        ≡
+        8
+      
+    
+    {\displaystyle 2x\equiv 8}
+  
+, ergo 
+  
+    
+      
+        x
+        ≡
+        4
+      
+    
+    {\displaystyle x\equiv 4}
+  
+. Solutiones sunt 4, 9, 14, 19, ... et omnes numeri his congruentes secundum modulum 5.
+Sed si 
+  
+    
+      
+        a
+        b
+        ≡
+        a
+        c
+        (
+        
+        mod
+        
+        
+        m
+        )
+      
+    
+    {\displaystyle ab\equiv ac(\mod m)}
+  
+ et a dividit m, non necesse est b et c congruere (mod m). Exempli gratia, 
+  
+    
+      
+        2
+        ×
+        7
+        ≡
+        2
+        ×
+        10
+        (
+        
+        mod
+        
+        
+        6
+        )
+      
+    
+    {\displaystyle 2\times 7\equiv 2\times 10(\mod 6)}
+  
+, sed 
+  
+    
+      
+        7
+        ≠
+        10
+        (
+        
+        mod
+        
+        
+        6
+        )
+      
+    
+    {\displaystyle 7\neq 10(\mod 6)}
+  
+. Hoc est, secundum modulum m, sunt numeri qui nullum numerum inversum habent. In exemplo, non potest dividere per 2, quod 2 est factor moduli. Haec regula similis est regulae arithmeticae ordinariae: non potest divdere par zerum. (Sed, secundum modulum 6, possumus dividere per 5, quod 5 est primus ad modulum.) Breviter, integri secundum modulum m sunt anellus sed non sunt corpus nisi modulus sit primus.
+
+Theorema parvum Fermatium est hoc: sit a integer quislibet et sit p primus qui non dividit a. Est numerus t sicut at est congruus 1, secundum modulum p, et t dividit (p − 1). Praeterea, si t dividit s, deinde as quoque congruus est 1, tum a(p−1) est congruus 1, et ap est congruus ipsi a secundum modulum p. Exempli gratia, si a = 8, p = 3, 82 = 64 est congruus 1, et 2 dividit (3−1). Aut, si a = 8, p = 73, 83 = 512 qui est congruus 1, et 3 dividit (73−1) = 72. 
+
+Eulerus hoc theorema demonstravit, et theorema generalius quoque: si modulus m et numerus a sunt primi inter se (nullum factorem communem habent), 
+  
+    
+      
+        
+          a
+          
+            ϕ
+            (
+            m
+            )
+          
+        
+        ≡
+        1
+        (
+        
+        mod
+        
+        
+        m
+        )
+      
+    
+    {\displaystyle a^{\phi (m)}\equiv 1(\mod m)}
+  
+. Functio φ est functio Euleri, quae dicit quot numeri, minores quam m, sint ad m primi; si autem m est primus, omnes numeri minores sunt primi ad m ; tum φ(m) = m − 1. Exempli gratia: φ(7) = 6, φ(8) = 4 quod numeri 1, 3, 5, 7 sunt primi ad 8, φ(12) = 4. Et 54 = 625, qui congruus est 1 secundum modulum 8 et secundum modulum 12.
+Congruentia gradus primi 
+  
+    
+      
+        a
+        x
+        ≡
+        b
+        (
+        
+        mod
+        
+        
+        m
+        )
+      
+    
+    {\displaystyle ax\equiv b(\mod m)}
+  
+ solutionem habet si MCF(a, m) dividit b. Nam
+
+  
+    
+      
+        a
+        x
+        ≡
+        b
+        (
+        
+        mod
+        
+        
+        m
+        )
+      
+    
+    {\displaystyle ax\equiv b(\mod m)}
+  
+ significat
+
+  
+    
+      
+        a
+        x
+        −
+        b
+        ≡
+        0
+      
+    
+    {\displaystyle ax-b\equiv 0}
+  
+, aut
+
+  
+    
+      
+        a
+        x
+        −
+        b
+        =
+        m
+        y
+      
+    
+    {\displaystyle ax-b=my}
+  
+
+Si d = MCF(a, m) dividit b, possumus scribere
+
+  
+    
+      
+        
+          
+            a
+            d
+          
+        
+        x
+        −
+        
+          
+            m
+            d
+          
+        
+        y
+        =
+        
+          
+            b
+            d
+          
+        
+      
+    
+    {\displaystyle {\frac {a}{d}}x-{\frac {m}{d}}y={\frac {b}{d}}}
+  
+, hoc est
+
+  
+    
+      
+        
+          
+            a
+            d
+          
+        
+        x
+        ≡
+        
+          
+            b
+            d
+          
+        
+        (
+        
+        mod
+        
+        
+        
+          m
+          d
+        
+        )
+      
+    
+    {\displaystyle {\frac {a}{d}}x\equiv {\frac {b}{d}}(\mod {\frac {m}{d}})}
+  
+, vel
+
+  
+    
+      
+        A
+        x
+        ≡
+        B
+        (
+        
+        mod
+        
+        
+        M
+        )
+      
+    
+    {\displaystyle Ax\equiv B(\mod M)}
+  
+, ubi A, M inter se sunt primi.
+Haec congruentia (aut, haec aequatio) solutionem habet quam invenimus methodo simili algorithmo Euclidis supra descripto. Si x'  est solutio, tum x'  + m/d, x'  + 2m/d, x'  + 3m/d, etc. sunt solutiones congruentiae primae, secundum modulum m.
+Exempli:
+
+  
+    
+      
+        15
+        x
+        ≡
+        9
+        (
+        
+        mod
+        
+        
+        12
+        )
+      
+    
+    {\displaystyle 15x\equiv 9(\mod 12)}
+  
+
+MCF(15, 12) = 3, tum habemus 
+  
+    
+      
+        5
+        x
+        ≡
+        3
+        (
+        
+        mod
+        
+        
+        4
+        )
+      
+    
+    {\displaystyle 5x\equiv 3(\mod 4)}
+  
+, vel
+
+  
+    
+      
+        x
+        ≡
+        3
+        (
+        
+        mod
+        
+        
+        4
+        )
+      
+    
+    {\displaystyle x\equiv 3(\mod 4)}
+  
+, hoc est
+
+  
+    
+      
+        x
+        ≡
+        3
+        ,
+        7
+        ,
+        10
+        (
+        
+        mod
+        
+        
+        12
+        )
+      
+    
+    {\displaystyle x\equiv 3,7,10(\mod 12)}
+  
+
+Verificatio: 15×3 = 45 = 12×3 + 9. 15×7 = 105 = 12×8 + 9. 15×10 = 150 = 12×12 + 9.
+Sed congruentia 
+  
+    
+      
+        20
+        x
+        ≡
+        7
+        (
+        
+        mod
+        
+        
+        15
+        )
+      
+    
+    {\displaystyle 20x\equiv 7(\mod 15)}
+  
+ nullam solutionem habet, quod MCF(20, 15) = 5 et 5 non dividit 7.
+Possumus systema congruentiarum solvere. Exempli gratia, si 
+  
+    
+      
+        x
+        ≡
+        3
+        (
+        
+        mod
+        
+        
+        5
+        )
+      
+    
+    {\displaystyle x\equiv 3(\mod 5)}
+  
+ et simul 
+  
+    
+      
+        x
+        ≡
+        4
+        (
+        
+        mod
+        
+        
+        7
+        )
+      
+    
+    {\displaystyle x\equiv 4(\mod 7)}
+  
+, invenimus x = 18, quod 18 = 5×3 + 3 et 18 = 2×7 + 4. Omnes numeri congrui 18 secundum modulum 35 (qui est 5×7) sunt solutiones.
+Congruentiae 
+  
+    
+      
+        
+          
+          ″
+        
+        
+          x
+          ″
+        
+        
+          ≡
+          ″
+        
+        
+          a
+          ″
+        
+        (
+        
+        mod
+        
+        
+        m
+        )
+      
+    
+    {\displaystyle ''x''\equiv ''a''(\mod m)}
+  
+ et 
+  
+    
+      
+        
+          
+          ″
+        
+        
+          x
+          ″
+        
+        
+          ≡
+          ″
+        
+        
+          b
+          ″
+        
+        (
+        
+        mod
+        
+        
+        n
+        )
+      
+    
+    {\displaystyle ''x''\equiv ''b''(\mod n)}
+  
+ solutionem habent quando 
+  
+    
+      
+        
+          
+          ″
+        
+        
+          a
+          ″
+        
+        ≡
+        b
+        (
+        
+        mod
+        
+        
+        M
+        C
+        F
+        (
+        m
+        ,
+        n
+        )
+        )
+      
+    
+    {\displaystyle ''a''\equiv b(\mod MCF(m,n))}
+  
+. Sit d = MCF(m, n). Deinde
+
+  
+    
+      
+        x
+        =
+        a
+        +
+        m
+        y
+      
+    
+    {\displaystyle x=a+my}
+  
+ (prima congruentia)
+
+  
+    
+      
+        a
+        +
+        m
+        y
+        ≡
+        b
+        (
+        
+        mod
+        
+        
+        n
+        )
+      
+    
+    {\displaystyle a+my\equiv b(\mod n)}
+  
+ (altera congruentia)
+hoc est, 
+  
+    
+      
+        m
+        y
+        ≡
+        b
+        −
+        a
+        (
+        
+        mod
+        
+        
+        n
+        )
+      
+    
+    {\displaystyle my\equiv b-a(\mod n)}
+  
+
+quae congruentia solutionem habet si d dividit (b − a):
+
+  
+    
+      
+        
+          
+            m
+            d
+          
+        
+        y
+        ≡
+        
+          
+            
+              (
+              b
+              −
+              a
+              )
+            
+            d
+          
+        
+        (
+        
+        mod
+        
+        
+        
+          n
+          d
+        
+        )
+      
+    
+    {\displaystyle {\frac {m}{d}}y\equiv {\frac {(b-a)}{d}}(\mod {\frac {n}{d}})}
+  
+
+Si 'y'  est solutio aliquis, omnes solutiones y sunt congrui illi y'  secundum modulum n/d. Hoc est, y = y'  + z(n/d). Sed x = a + my. Scimus ergo
+
+  
+    
+      
+        x
+        
+          =
+          ″
+        
+        
+          a
+          ″
+        
+        
+          +
+          ″
+        
+        
+          m
+          ″
+        
+        
+          (
+          ″
+        
+        
+          y
+          ‴
+        
+        
+          +
+          ″
+        
+        
+          z
+          ″
+        
+        
+          
+            n
+            d
+          
+        
+        )
+      
+    
+    {\displaystyle x=''a''+''m''(''y'''+''z''{\frac {n}{d}})}
+  
+, hoc est
+
+  
+    
+      
+        x
+        =
+        
+          (
+          ″
+        
+        
+          a
+          ″
+        
+        
+          +
+          ″
+        
+        m
+        
+          y
+          ‴
+        
+        )
+        
+          +
+          ″
+        
+        
+          z
+          ″
+        
+        
+          
+            
+              m
+              n
+            
+            d
+          
+        
+      
+    
+    {\displaystyle x=(''a''+''my''')+''z''{\frac {mn}{d}}}
+  
+
+Et mn/d est minimus communis dividuus numerorum m, n. Scimus ergo solutionem esse congruam x'  secundum modulum MCD(m, n).
+
+Theorema sinicum de residuis tractat de talibus congruentiis. Hoc theorema est:
+
+Sit 
+  
+    
+      
+        x
+        ≡
+        
+          a
+          
+            i
+          
+        
+        (
+        
+        mod
+        
+        
+        
+          m
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle x\equiv a_{i}(\mod m_{i})}
+  
+ systema congruentiarum (i = 1, 2, ... n), et sint moduli mi primi inter se. Systema solutionem unicam habet. Sit M = productus omnium mi, et sint bi numeri qui faciant
+
+  
+    
+      
+        
+          b
+          
+            i
+          
+        
+        ≡
+        
+          
+            M
+            
+              m
+              
+                i
+              
+            
+          
+        
+        (
+        
+        mod
+        
+        
+        
+          m
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle b_{i}\equiv {\frac {M}{m_{i}}}(\mod m_{i})}
+  
+. Deinde, solutio systematis est
+
+  
+    
+      
+        x
+        ≡
+        
+          a
+          
+            1
+          
+        
+        
+          b
+          
+            1
+          
+        
+        
+          
+            M
+            
+              m
+              
+                1
+              
+            
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          b
+          
+            n
+          
+        
+        
+          
+            M
+            
+              m
+              
+                n
+              
+            
+          
+        
+        (
+        
+        mod
+        
+        
+        M
+        )
+      
+    
+    {\displaystyle x\equiv a_{1}b_{1}{\frac {M}{m_{1}}}+...+a_{n}b_{n}{\frac {M}{m_{n}}}(\mod M)}
+  
+
+Theorema dicitur "sinicum" quod mathematicus sinicus Sun Tsu eum scivit fere saeculum tertio.
+
+
+=== Aequationes polynomiales "Diophanti" dictae ===
+Aequationes polynomiales quarum coefficientes sunt integri et solutio quoque debet esse integer dicuntur aequationes Diophanti vel aequationes diophantinae. Nomen habent de Diophanto mathematico claro Alexandriae, qui tales aequationes studuit.
+Exemplum est, qui sunt integri a, b, c ut a2 + b2 = c2? Hi sunt numeri trini Pythagorae qui magnitudines laterum trianguli recti esse possunt. Solutiones sunt (3, 4, 5), (5, 12, 13), et numerus infinitus aliorum.
+Petrus de Fermat dicit non esse numeri a, b, c pro quibus an + bn = cn, nisi n = 2; hoc dicitur Theorema Ultimum Fermatianum, quamquam Fermat ipse eum numquam demonstravit.
+
+
+== Historia ==
+
+Secundum Gauss,
+
+Pertinet ad Arithmeticam Sublimiorem ea, quae Euclides in Elementis libro vii sqq. elegantia et rigore apud veteres consuetis tradidit: attamen ad primia initia huius scientiae limitantur. Diophanti opus celebre, quod totum problematis indeterminatis dicatum est, multas quaestiones continet. . . . Hic liber ideo magis epocham in historia Matheseos constituere videtur, quod prima artis characteristicae et Algebrae vestigia sistit, quam quod Arithmeticam Sublimiorem inventis novis auxerit. Longe plurima recentioribus debentur, inter quos pauci quidem sed immortalis gloriae viri P. de Fermat, L. Euler, L. Lagrange, A. M. Legendre (ut paucos alios prateream) introitum ad penetralia huius divinae scientiae aperuerunt, quantisque divitiis abundent patefecerunt.
+Gauss anno 1801 scripsit. Postea plures mathematici theoriam numerorum coluerunt.
+Anno 1995, Andrew Wiles theorema ultimum Fermatianum probavit. Haec demonstratio, quamquam longa et difficilima, conexiones facit inter theoriam numerorum et geometriam, analysin, et algebram.
+
+
+=== Graeci ===
+Mathematici Graeci de theoria numerorum pluria sciverunt. Euclides, saeculo secundo a.C.n., numeros primos et factores in Elementis studuit. Nicomachus Gerasianus, Neoplatonicus, Introductionem Arithmeticae scripsit, circa annum 100 p.C.n.; duo libros huius operis habemus. Diophantus, qui sicut Euclides Alexandriam habitavit, et fere anno 250 floruit, tractatum De Arithmetica tredecim librorum scripsit; sex primi iam exstant. Diophantus symbola invenit ad quantitates variabiles repraesentandas: 
+  
+    
+      
+        
+          Δ
+          
+            Υ
+          
+        
+      
+    
+    {\displaystyle \Delta ^{\Upsilon }}
+  
+ significat quadratum aut secundam potestatem quantitatis cuiusdam (e verbo graeco δύναμις, potestas), 
+  
+    
+      
+        
+          
+            K
+          
+          
+            Υ
+          
+        
+      
+    
+    {\displaystyle \mathrm {K} ^{\Upsilon }}
+  
+ cubum significat (e κύβος), et cetera. Aequationes polynomiales quarum omnes coefficientes sint numeri integri (vel rationales) solvit. Non autem demonstravit viam generalem ad tales aequationes solvandas, sed exempla varia proponit et solvit.
+
+
+=== Romani ===
+Mathematici Romani numeris saepissime utebantur, sed theoriam quam minime coluerunt. Dicit Cicero,
+
+In summo apud illos (sc. Graecos) honore geometria fuit, itaque nihil mathematicis inlustrius; at nos metiendi ratiocinandique utilitate huius artis terminavimus modum. (Tusc. Disp. 1.5)
+Primus liber de arithmetica, non parvi momenti, lingua latina scriptus, qui iam exstat est liber Arithmetica Boethii. Est traductio libri Nicomachi.
+
+
+=== Medium Aevum ===
+
+Quod arithmetica, geometria, astronomia erant inter artes liberales, viri docti hoc aevo de rebus mathematicis studuerunt. Arabes libros graecos in lingua arabica vertebant, et, praecipue in Hispania, tales libri deinde latine vertebantur ut omnes possint legere. Libri Algorismi de Additione et Subtractione et de Computando, saeculo nono scripti, saeculo duodecimo latine apparuerunt et mathematicos Europae de numeris arabicis docuerunt.
+
+Leonardus Pisanus, Fibonacci dictus (ca. 1180-1250), theoriam numerorum coluit. Liber Abaci, inter annos 1200 et 1228 scriptus, numeros arabicos explicat; alios libros quoque scripsit.
+Iordanus Nemorarius, fortasse idem vir quam Iordanus de Saxonia qui anno 1237 mortuus est, librum Arithmeticam scripsit in quo litteris utitur ad numeros quoslibet nominandos, ut nunc facimus.
+Fortasse maximus mathematicus aevi medii, Nicolaus Oresmius (ca. 1320-1382), paene nihil scripsit de theoria numerorum.
+
+
+=== Renascentia ===
+
+Iohannes Regiomontanus (1436-1476) saeculo quinto decimo tabularium typographicum Norimbergae instituit, ubi libros rerum mathematicarum imprimeret. Problemata de triangulis et quadratis, hoc est de aequationibus gradus secundi, resolvit, sed quia anno quadragensimo aetatis mortuus est, non multa fecit.
+Lucus Paciolus (1445-1514) librum scripsit anno 1487 cuius titulus est Summa de arithmetica, geometrica, proportioni, et proportionalita (in lingua italica), qui liber primus de theoria numerorum in Europa impressus est.
+In Germania, Michaelus Stifel (ca. 1487-1567) librum de Arithmetica Integra anno 1544 divulgavit, librum magni momenti, quod Stifel notationibus + et − usus est praeter p et m modo Italico. Hoc est, ubi mathematici Italici m3 scribebant, Stifel −3 scribebat, ut nunc facimus.
+Mathematici Italici methodum invenerunt ad aequationes gradus tertii solvandas; Scipio del Ferro (ca. 1465-1526) et Nicolas Fontanus (ca. 1500-1557), "Tartaglia" dictus (hoc est, "balbutor"), primi hoc poterant. Hieronymus Cardanus (1501-1576) methodum generaliorem descripsit in libro de Arte Magna anno 1545 edito. Deinde Ludovicus Ferrari (1522-1565) aequationes gradus quarti solvit. Difficile autem erat quod nullus iam de numeris imaginariis scivit.
+Franciscus Vieta (1540-1603) primus erat qui quantitates variabiles a quantitatibus constantibus vel parametris distinguabat: litteras vocales ponebat ad variabiles nominandos, litteras consonantas ad constantes nominandos. Semper expressiones et methodos generales colitur.
+
+
+=== Aetas Fermatiana ===
+
+Renatus Cartesius (1596-1650) algebram cum geometria coniunxit; sed quamquam aequationes quadraticas et cubicas resolvit, de theoria numerorum minime studuit.
+Petrus Fermatius (1601-1665) autem librum de Arithmetica Diophanti perlegit et quam maxime theoriam numerorum coluit. Multa dixit de numeris, sed sine demonstrationibus. Libri eius de geometria et analysi tractaverunt, sicut Ad locos planos et solidos isagoge et editio libri Apollonii Pergaei de locis planis; omnia quae dicebat de numeris erant in epistulis. Sed etiamsi demonstrationes non scripsit, saepissime habuit, ut videtur, quia plures coniectures eius verae sunt. Una coniectura autem non vera est: Fermat dicit omnem numerum integrum formae 22n + 1 primum esse. Tales numeri nunc appellantur "numeri Fermatiani"; quattuor primi numeri primi sunt sed quintus non est, quod 225 = 641 × 6700417, ut demonstravit Eulerus.
+Tria theoremata iam nunc ex nomine Fermat cognovimus. Theorema parvum Fermatianum dicit: si p sit primus et a primus ad p, deinde ap−1 esse congruum 1 secundum modulum p. Theorema duorum quadratorum dicit omnem numerum integrum formae 4n + 1 esse summam duorum quadratorum (ut, e.g., 5 = 1 + 4, aut 13 = 4 + 9). Theorema Ultimum Fermatianum dicit non potest esse numeros integros x, y, z, ut n > 2 et 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        +
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          z
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x^{n}+y^{n}=z^{n}}
+  
+. Non possibile esse Fermat ipsum demonstrationem scire, sed recte coniectavit, ut nunc scimus.
+Marinus Mersennus (1588-1648) erat amicus Fermatii, Cartesi, et plurium aliorum mathematicorum suae aetatis. Aliquae parva demonstravit de numeris primis. Numeri Mersenniani sunt numeri primi formae 2p−1 (p quoque primus), ut 3, 7, 31, 127. Non omnes numeri 2p−1 sunt primi: 29−1 = 511 = 7 × 73. Numerus N = 2p−1(2p−1) est numerus perfectus si 2p−1 est primus Mersenni.
+
+
+=== Aetas Eulerana ===
+Inter annos fere 1650 et 1750, paene nihil novi de theoria numerorum fit. 
+Mathematici huius aetatis analysin algebrae praeposuerunt. Leonhardus Euler (1707-1783) instrumenta et methodos ex analysi ad algebram applicavit; est ergo pater theoriae analyticae numerorum. Theoremata plura, quae constetit Fermat, demonstrare conabatur.
+Seriebus infinitis saepius usus est. Hoc est exemplum. Possumus partitionem facere numeri cuiuslibet n, quae est copia integrorum non negativorum quorum summa est n. Sit p(n) = numerus talium partitionum; deinde p(2) = 2, quod 2 = 0 + 2 et 1 + 1; p(3) = 3: 0 + 3, 1 + 2, 1 + 1 + 1; p(4) = 5: 0 + 4, 1 + 3, 2 + 2, 1 + 1 + 2, 1 + 1 + 1 + 1; et cetera. (Et p(0) = 1, 0 + 0.) Perdifficile est scire p(n) si n est magnus. Euler definit functionem generatricem F alius functionis f:
+
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        f
+        (
+        n
+        )
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle F(x)=\sum _{n=0}^{\infty }f(n)x^{n}}
+  
+
+Deinde demonstravit:
+
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        p
+        (
+        n
+        )
+        
+          x
+          
+            n
+          
+        
+        =
+        
+          ∏
+          
+            m
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              1
+              −
+              
+                x
+                
+                  m
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{n=0}^{\infty }p(n)x^{n}=\prod _{m=1}^{\infty }{\frac {1}{1-x^{m}}}}
+  
+
+Nunc potest analysi complexorum numerorum uti ad approximationem functionis inveniendam.
+Iosephus Ludovicus Lagrange (1736-1813) theoremata illius Fermat demonstravit, quae Euler nequit. Unum est theorema quattuor quadratorum, quod dicit omnem numerum integrum summam esse quattuor quadratorum (qui possunt esse zerum). Tractavit etiam de formis quadraticis, quae sunt polynomiales gradus secondi duorum variabilium, ut ax2 + 2bxy + cy2. Tales formae similes sunt matricibus:
+
+  
+    
+      
+        
+          
+          ″
+        
+        a
+        
+          x
+          
+            ″
+            
+              2
+            
+          
+        
+        +
+        
+          2
+          ″
+        
+        b
+        x
+        
+          y
+          ″
+        
+        
+          +
+          ″
+        
+        c
+        
+          y
+          
+            ″
+            
+              2
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    
+                    ″
+                  
+                  
+                    x
+                    ″
+                  
+                
+                
+                  
+                    
+                    ″
+                  
+                  
+                    y
+                    ″
+                  
+                
+              
+            
+            )
+          
+        
+        
+          
+            (
+            
+              
+                
+                  
+                    
+                    ″
+                  
+                  
+                    a
+                    ″
+                  
+                
+                
+                  
+                    
+                    ″
+                  
+                  
+                    b
+                    ″
+                  
+                
+              
+              
+                
+                  
+                    
+                    ″
+                  
+                  
+                    b
+                    ″
+                  
+                
+                
+                  
+                    
+                    ″
+                  
+                  
+                    c
+                    ″
+                  
+                
+              
+            
+            )
+          
+        
+        
+          
+            (
+            
+              
+                
+                  
+                    
+                    ″
+                  
+                  
+                    x
+                    ″
+                  
+                
+              
+              
+                
+                  
+                    
+                    ″
+                  
+                  
+                    y
+                    ″
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle ''ax''^{2}+2''bxy''+''cy''^{2}={\begin{pmatrix}''x''&''y''\end{pmatrix}}{\begin{pmatrix}''a''&''b''\\''b''&''c''\end{pmatrix}}{\begin{pmatrix}''x''\\''y''\end{pmatrix}}}
+  
+
+Et determinans matricis est determinans vel discriminans formae, ac − b2.
+Hadrianus Maria Legendre (1752-1833) legem reciprocitatis quadraticae demonstravit. Dicimus numerum quendam a esse residuum quadraticum alius numeri b si a sit congruus quadrato secundum modulum b. Signum Legendre hanc notionem explicat:
+
+  
+    
+      
+        
+          (
+          
+            
+              a
+              b
+            
+          
+          )
+        
+        =
+        
+          
+            {
+            
+              
+                
+                  1
+                  ,
+                  
+                    si ''a'' est residuum
+                  
+                
+              
+              
+                
+                  −
+                  1
+                  ,
+                  
+                    si ''a'' non est residuum
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \left({\frac {a}{b}}\right)={\begin{cases}1,{\text{si ''a'' est residuum}}\\-1,{\text{si ''a'' non est residuum}}\end{cases}}}
+  
+
+Haec est lex: Sint p, q numeri primi impares. Dein 
+
+  
+    
+      
+        
+          (
+          
+            
+              p
+              q
+            
+          
+          )
+        
+        
+          (
+          
+            
+              q
+              p
+            
+          
+          )
+        
+        =
+        (
+        −
+        1
+        
+          )
+          
+            (
+            1
+            
+              /
+            
+            4
+            )
+            (
+            p
+            −
+            1
+            )
+            (
+            q
+            −
+            1
+            )
+          
+        
+      
+    
+    {\displaystyle \left({\frac {p}{q}}\right)\left({\frac {q}{p}}\right)=(-1)^{(1/4)(p-1)(q-1)}}
+  
+
+Exempli gratia, sit p = 5, q = 7. Dein (5/7) = −1, quod non est solutio congruentiae 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        ≡
+        5
+        (
+        m
+        o
+        d
+        7
+        )
+      
+    
+    {\displaystyle x^{2}\equiv 5(mod7)}
+  
+. Et (7/5) = −1. Et (1/4)(5−1)(7−1) = 6; tum (−1)6 = (−1)×(−1) = 1.
+
+
+=== Aetas Gaussiana ===
+Disquisitiones Arithmeticae Caroli Friderici Gauss (1777-1855) est liber magni momenti anno 1802 scriptus. Hic liber de congruentiis, de residuis quadraticis, et de formis quadraticis tractat. Hi sunt partes libri:
+
+De numerorum congruentia in genere
+De congruentiis primi gradus
+De residuis potestatum
+De congruentiis secundi gradus
+De formis aequationibusque indeterminatis secundi gradus
+Variae applicationes disquisitionum praecedentium
+De aequationibus, circuli sectiones definientibus
+Iohannes Petrus Gustavus Lejeune Dirichlet (1805-1853) Gauss secutus est. Theorema eius clarissimum tractat de primis inter series arithmeticas. Sit a, a + m, a + 2m, ... a + im, ... series, a < m, a et m primi inter se. Dein inter numeros huius seriei, quantitas primorum est infinita. Aliae series quoque studuit, quas nunc nominamus series Dirichletianae, quae sunt series infinitae huius formae:
+
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              a
+              
+                n
+              
+            
+            
+              n
+              
+                s
+              
+            
+          
+        
+      
+    
+    {\displaystyle F(x)=\sum _{n=1}^{\infty }{\frac {a_{n}}{n^{s}}}}
+  
+
+Una talis series magni momenti est functio zeta Riemanniana.
+Evariste Galois (1811-1832) algebram catervarum et corporum invenit. Quamquam Gauss in ultima sectione Disquisitionum aequationes axn = b modo operationibus rationalis et radicum extrationibus utens solvit, Galois aequationes polynomiales generales solvere conatus est. Relationem invenit inter catervam radicium aequationis et solutionem eiusdem aequationis. Nunc corpus finitum nominatur "Corpus Galois"; exemplum est corpus integrorum secundum modulum primum.
+
+
+=== Aetas recens ===
+Hodie theoria numerorum est pars algebrae quae methodis ab analysi, geometria, topologia quoque utitur. Hoc plane videtur e demonstrationis theorematis ultimi Fermatiani ab Andrea Wiles.
+
+Bernardus Riemann (1826-1866) hanc functionem studuit:
+
+  
+    
+      
+        ζ
+        (
+        s
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              n
+              
+                s
+              
+            
+          
+        
+        =
+        1
+        +
+        
+          
+            1
+            
+              2
+              
+                s
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              3
+              
+                s
+              
+            
+          
+        
+        +
+        …
+      
+    
+    {\displaystyle \zeta (s)=\sum _{n=1}^{\infty }{\frac {1}{n^{s}}}=1+{\frac {1}{2^{s}}}+{\frac {1}{3^{s}}}+\dots }
+  
+
+Series &zeta(s) coit ad limem et valorem habet si s > 1 aut si s est numerus complexus cuius pars realis maior est quam 1. Est series Dirichletiana.
+Iam Euler hanc functionem scivit, qui demonstravit:
+
+  
+    
+      
+        ζ
+        (
+        s
+        )
+        =
+        
+          ∏
+          
+            p
+          
+        
+        (
+        1
+        −
+        
+          p
+          
+            −
+            s
+          
+        
+        
+          )
+          
+            −
+            1
+          
+        
+        ,
+        p
+        
+           primus
+        
+        ,
+        s
+        
+           realis
+        
+        >
+        1
+      
+    
+    {\displaystyle \zeta (s)=\prod _{p}(1-p^{-s})^{-1},p{\text{ primus}},s{\text{ realis}}>1}
+  
+
+Hoc est quasi interpretatio analytica theorematis fundamentalis arithmeticae.
+Riemann eandem functionem, variable s inter numeros complexos accepto, studuit. Nunc ergo nomen eius est functio zeta Riemanniana. Hypothesis Riemanniana est coniectura omnes zeros huius functionis quae sunt numeri complexi, s = σ + τi, partem realem habere σ = 1/2. Si verum sit, deinde pluria sciamus de distributione numerorum primorum inter alios integros.
+Anno 1900, Congressus Internationalis Mathematicorum Lutetiae convenit. David Hilbert (1862-1943) orationem habuit in qua viginti-tria problemata saeculi novi posuit. Quattuor horum problematum de theoria numerorum tractant.
+Octavum problema rogat de numeris primis: est Hypothesis Riemanniana vera annon? Quid de Coniectura Goldbachiana, quae dicit omnem numerum parem esse summam duorum quadratorum? Nescimus.
+Nonum problema vult legem reciprocitatis quadraticae generalem in quolibet corpore invenire. Mathematicus Aemilius Artin (1898-1962) magnam partem huius problematis ab anno 1924 resolvit.
+Decimum problema rogat utrum algorithmus exstet quo sciamus si aequatio quaelibit Diophanti solutionem habeat. Non exstat, ut demonstraverunt Martinus Davis, Yuri Matiyasevich, et Iulia Robinson.
+Undecimum problema tractat de formis quadraticis in quolibet corpore. Helmut Haase notionem principalem anno 1921 invenit: duae formae sunt aequivalentes in corpore quodam si sunt aequivalentes in omnibus corporibus quae hoc corpus complent.
+Fortasse problema clarissimum theoriae numerorum est theorema ultimum Fermatianum (quamquam nullum locum habet apud Hilbert). Circa 360 annos postquam Fermat eum in margine libri scripsit, Andreas Wiles (n. 1953) demonstrationem mirabilem fecit, sed theoria numerorum nondum perfecta est; mathematici hodie iam laborant.
+
+
+== Notae ==
+
+
+== Bibliographia ==
+Aigner, Martin, et Günter M. Ziegler. 2001. Proofs from THE BOOK, editio altera. Berolini: Springer.
+Anglin, W. S., et J. Lambek. 1995. The Heritage of Thales. Novi Eboraci: Springer.
+Berlinghoff, William P., et Fernando Q. Gouvêa. 2002 Math Through the Ages. Farmingtoniae: Oxton House.
+Boyer, Carl B. 1968. A History of Mathematics. Novi Eboraci: Wiley.
+Dickson, Leonard E. 1919-1923. History of the Theory of Numbers, tres tomi. Vasingtoniae: Carnegie Institution.
+Edwards, Harold M. 1977. Fermat's Last Theorem: A Genetic Introduction to Algebraic Number Theory. Novi Eboraci: Springer.
+Edwards, Harold M. 2008. Higher Arithmetic: An Algorithmic Introduction to Number Theory. Providentiae: American Mathematical Society.
+Gauss, Carl Friederich. 1801. Disquisitiones Arithmeticae. Lipsiae: Fleischer. Retractatus Hildesheim: Olms-Wiedmann, 2006, cum introductione a Norbert Schappacher scripta.
+Gouvêa, Fernando Q. 1997. P-adic Numbers: An Introduction. Novi Eboraci: Springer.
+Granville, Andrew. 2008. "Analytic Number Theory," in Princeton Companion to Mathematics, ed. Timothy Gowers, June Barrow-Green, et Imre Leader, 332–48. Princeton.
+Hardy, G. H., et E. M. Wright. 1979. An Introduction to the Theory of Numbers, editio quinta. Oxoniae: Clarendon Press.
+Mozzochi, C. J. 2000. The Fermat Diary. Providentiae: American Mathematical Society.
+Newman, Donald J. 1997. Analytic Number Theory. Novi Eboaci: Springer.
+Ore, Oystein. 1948. Number Theory and Its History. Novi Eboraci: McGraw-Hill.
+Ribenboim, Paolo. 1999. Fermat's Last Theorem for Amateurs. Novi Eboraci: Springer.
+Ribenboim, Paolo. 2000. My Numbers, My Friends. Novi Eboraci: Springer.
+Scharlau, Winfried, et Hans Opolka, trans. Walter K. Bühler, Gary Cornell. 1985. From Fermat to Minkowski: Lectures on the Theory of Numbers and Its Historical Development. Novi Eboraci: Springer.
+Thomas, Ivor, ed. et trans. 1993 Greek Mathematical Works. Cantabrigiae Massachusettae: Loeb Classical Library 335, 362; editio prima 1941.
+Weiss, Edwin. 1976 Algebraic Number Theory, editio altera. Novi Eboraci: Chelsea.
+Wiles, Andrew. 1995. "Modular Elliptic Curves and Fermat's Last Theorem." Annals of Mathematics 141: 443–551.
+
+
+== Nexus externi ==
+Articuli recentiores de theoria numerorum, apud arxiv.org.
+"Cours de théorie des nombres," notationes a Michel Waldschmidt scriptae,[nexus deficit] apud people.math.jussieu.fr.
+"Introduzione alla Teoria Analitica dei Numeri, liber ab Alessandro Zaccagnini scriptus.
+"Number Theory Web," index mathematicorum et paginarum de theoria numerorum," apud www.numbertheory.org.
+Elementare Zahlentheorie, notationes ab Herbert Möller scriptae.

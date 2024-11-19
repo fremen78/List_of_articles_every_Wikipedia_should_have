@@ -1,0 +1,78 @@
+Alqoritm və ya alqorifm — verilmiş məsələni həll etmək üçün ilkin verilənlərlə icra olunan hesabi və hər hansı məsələnin həlli üçün məntiqi əməliyyatların sonlu sayda ardıcıllığıdır.
+Latınca qayda-qanun deməkdir. Alqoritm 783 – 850-ci illərdə Xarəzmdə (indiki Özbəkistanda şəhər) yaşamış IX əsrin məşhur fars riyaziyyatçısı Məhəmməd İbn Musa əl-Xarəzminin (yəni Xarəzm Musa oğlu Məhəmmədin) adının latın hərflərilə olan "alqoritmi" yazılışıyla bağlıdır. Əl-Xarəzminin yazdığı traktatın XII əsrdə latın dilinə tərcümə olunması sayəsində avropalılar mövqeli say sistemi ilə tanış olmuş, onluq say sistemini və onun hesab qaydalarını alqoritm adlandırmışlar.
+Ümumiyyətlə, alqoritm-verilmiş məsələnin həlli üçün lazım olan əməliyyatları müəyyən edən və onların hansı ardıcıllıqla yerinə yetirilməsini göstərən formal yazılışdır.
+Hesablama maşınlarının əsas fərqləndirici xüsusiyyətlərindən biri də onun proqramla idarə olunmasıdır. Yəni, istər sadə, istərsə də mürəkkəb məsələni maşının həll etməsi üçün proqram tərtib edilməlidir.
+
+
+== Alqoritmin xassələri ==
+Məsələnin maşında həlli üçün tərtib edilən alqoritm bir çox şərtləri ödəməlidir. Bu şərtlərə alqoritmin xassələri deyilir. Həmin xassələr aşağıdakılardır:
+
+Diskretlilik xassəsi. Hər bir alqoritm məsələnin həll prosesini sadə addımların yerinə yetirilməsi ardıcıllığı şəklində ifadə edir və hər bir addımın yerinə yetirilməsi üçün sonlu zaman fasiləsi tələb olunur, yəni başlanğıc verilənlərlə icra olunan hesabi və məntiqi əməliyyatların yerinə yetirilməsi və nəticənin alınması zamana görə diskret yerinə yetirilir.
+Müəyyənlik xassəsi. Hər bir alqoritm dəqiq, birqiymətli olmalıdır. Bu xassəyə əsasən alqoritm yerinə yetirildikdə istifadəçinin və onun istifadə etdiyi kompüterdən asılı olmayaraq eyni nəticə əldə edilməlidir.
+Kütləvilik xassəsi. Müəyyən sinif məsələnin həlli üçün qurulmuş alqoritm bu sinfə aid olan yalnız başlanğıc qiymətləri ilə fərqlənən bütün məsələlərin həllini təmin etməlidir. Məsələn, ax2 + bx + c = 0 kvadrat tənliyi üçün qurulmuş alqoritm a, b, c – nin ixtiyari qiymətləri üçün məsələni həll edir.
+Nəticəlilik və sonluluq xassəsi. Alqoritm sonlu sayda addımdan sonra başa çatmalı və verilmiş məsələnin həlli tapılmalıdır.
+Riyaziyyatda və informatikada məsələnin həllinin alqoritmi yerinə yetirilibsə, məsələ qismən həll edilmiş sayılır.
+
+
+== Alqoritmin təsvir üsulları ==
+Mətn şəkildə
+blok-sxem;
+Cədvəl;
+Proqram
+Alqoritmin adi dildə təsviri. Bu zaman əməliyyatlar, icra olunacaq hərəkətlərin nəqli şəkildə ardıcıl sadalanması kimi verilir.
+Alqoritmin blok-sxem təsviri. Mürəkkəb alqoritmlərin təsviri zamanı blok-sxemlərdən istifadə olunması daha geniş yayılmışdır, çünki bu halda alqoritmin blok-sxem şəklində təsviri daha əyani olur. Bu zaman, adətən alqoritmin bir addımına bir blok uyğun olur. Lakin bir blokda bir neçə eyni tipli mərhələ və ya bir mərhələ bir neçə blokda təsvir oluna bilər. Bloklar standart işarələr şəklində ifadə olunur və bir-birləri ilə şaquli və ya üfüqi xətlərlə birləşdirilir.
+Alqoritm ayrı-ayrı ədədlərlə yox, verilmiş hər hansı obyektlərlə Proqramlaşdırmanın əsas obyekti dəyişəndir.
+Proqramlaşdırmada məsələni alqoritmləşdirməkdən qabaq aşağıdakı addımlar yerinə yetirilməlidir:
+1. Məsələnin riyazi qoyuluşu:
+1.1. ilkin verilənlərin sadalanması;
+1.2. nəticələrin sadalanması;
+1.3. İlkin verilənlərin məhdudiyyət şərtləri.
+2. Riyazi model: nəticələri almaq üçün lazım olan bütün qayda və qanunlar
+3. riyazi modelin optimal istifadə olunması.
+
+
+== Kompilyasiya və interpretasiya ==
+Translyasiyanın iki qaydası var: interpretasiya və kompilyasiya. İnterpretasiya – şifahi tərcüməyə oxşayır. Giriş proqramının hər bir təlimatı tərcümə olununur və yerinə yetirilir. Bu qaydada təkrar təlimatlar hər dəfə kodlaşdırılır. Kompilyasiya isə yazılı tərcüməyə bənzəyir. Proqram yerinə yetirilməzdən qabaq proqramın bütün tərcüməsi yığılır.
+İnterpretasiya böyük çevikliyə malik olmaqla asan realizə olunur. Kompilyasiya isə daha effektif proqram yaradır.
+Proqramçı isə proqramlaşdırma dillərini bilməklə, qarşıya qoyulan məsələnin kompüterdə həllini həyata keçirmək üçün proqram yazır və onu kompüterdə yerinə yetirir.
+Proqramlaşmanın bütün dilləri verilənlərin aşağıda göstərilən tipləri ilə işləməyə imkan verilir:
+
+Tam ədədlər;
+Məntiqi ədədlər;
+Həqiqi ədədlər;
+Simvollar;
+Mətn tipli ədədlər;
+Birtipli verilənlər cədvəli;
+Fayllar.
+Kompüterin alqoritmi başa düşməsi üçün proqramlaşdırma dillərindən istifadə edilir. Məsələ həll edərkən əvvəlcə yerinə yetiriləcək əməliyyatların alqoritmi tərtib edilir, daha sonra bu əməliyyatlar hər-hansı alqoritm (proqramlaşdırma) dilində əmrlər şəklində yazılır. Tərtib olunmuş proqram xüsusi əlavələr (translyator proqramlar) vasitəsilə yerinə yetirilir və ya maşın koduna çevrilir.
+
+
+== Alqoritmin tipləri ==
+EHM-də müxtəlif tipli məsələləri həll edərkən əsasən üç tipli alqoritmlərdən istifadə olunur: xətti (düz), budaqlanan və dövri.
+
+Xətti alqoritmlər sadə hesablama prosesini ifadə edən bir neçə ardıcıl əməliyyatlardan ibarət olur və onlar yazıldığı ardıcıllıqla da icra olunur.
+Budaqlanan alqoritmlərin tərkibində bir və ya bir neçə məntiq mərhələsi olur. Bu mərhələdə müəyyən kəmiyyətlərin hər hansı bir şərti ödəyib-ödəmədiyi yoxlanılır və ona uyğun olaraq sonrakı gedişin istiqaməti seçilir. Yəni nəzərdə tutulan şərt ödənilirsə, bir istiqamətə, həmin şərt ödənilmirsə, başqa istiqamətə doğru hərəkət edilir. Beləliklə, alqoritmdə budaqlanma baş verir.
+Dövrü alqoritm – Alqoritmin hər hansı mərhələsi təkrar-təkrar yerinə yetirilirsə belə alqoritm dövru alqoritm adlanır.
+
+
+== Hesablanan və qismən rekursiv a. Klini-Çerç tezisi və onun əhəmiyyəti ==
+Alqoritmik problemlərdə ümumiliyi pozmadan həmişə arqumentləri mənfi, olmayan tam qiymətlər alan funksiyanın mənfi olmayan tam qiymətlərinin tapılmasından söhbət gedir. Ümumiliyi pozmadan bunu həmişə qəbul etmək olar. Qiyməti müəyyən alqoritm vasitəsilə tapılan funksiyalara hesablanan funksiyalar deyilir. Bu tərif intuitivdir. Dəqiq riyazi deyil. Çünki burada alqoritm anlayışından istifadə olunur. Arqumentlərinin heç də hamısında təyin olunmayan funksiyalar, yəni arqumentlərinin müəyyən hissəsində təyin olunmuş funksiyalara qismən funksiyalar deyilir. Qiyməti hər hansı alqoritmin tətbiqi ilə tapıla bilən qismən funksiyalara hesablanan qismən funksiyalar deyilir. Bu vaxta qədər məlum bütün hesablanan qismən funksiyalar məlum olmuşdur ki, qismən rekursiv funksiyalardır. Rekursiv funksiyaların isə ciddi riyazi tərifi var. Bundan sonra biz funksiya dedikdə ilkin verilənlər üzərində müəyyən əməllər ardıcıllığı, yığımı başa düşəcəyik. Deməli, bizə məlum olan alqoritmin hər birinə biz müəyyən funksiya kimi baxa bilərik. Klini belə bir tezisi irəli sürmüşdür ki, alqoritmik hesablanan qismən funksiyalar sinfi ilə qismən rekursiv funksiyalar sinfi üst-üstə düşür. Qeyd edək ki, hesablanan qismən funksiyaların tərifi intuitiv olduğu halda qismən rekursiv funksiyaların tərifi dəqiq riyazi şəkildə verilir. Klinidən bir qədər əvvəl Çerç belə bir tezis vermişdir ki, hər yerdə təyin olunmuş hesablanan qismən funksiyalar sinfi ilə qismən rekursiv funksiyalar sinfi eynidir. Bu iki tezis birləşdirilib Klini-Çerç tezisi adı ilə verilir. Tezisin əhəmiyyəti ondan ibarətdir ki, hər hansı problemi əks etdirən funksiyaların rekursiv funksiyalar tərifini ödədiyini bilsək onun həll alqoritminin olduğu birbaşa aydındır. Lakin o, problemi əks etdirən funksiya rekursiv funksiya tərifini ödəmədikdə deyirik ki, Klini-Çerç tezisinə görə həmin məsələnin həll alqoritmi yoxdur. Beləliklə, rekursiv funksiya anlayışını verməliyik. Onun tərifini və xassələrini göstərməklə, alqoritmin tərifini dəqiqləşdirmək olar. Alqoritmin tərifini dəqiqiləşdirmək üçün yuxarıdakı birinci yanaşmadır.
+
+
+== Alqoritmin tərifinin dəqiqləşməsi üçün yanaşmalar ==
+İkinci yanaşma Türinq-Post maşını nəzəriyyəsidir. Türinq-Post bir-birindən asılı olmayaraq elə nəzəri hesablama aparatı yaratmışlar ki, orada funksiyaların qiymətlərini hesablamaq mümkündür. Məlum olmuşdur ki, bu vaxta kimi məlum alqoritmlərin hamısını Türinq-Post maşınında yerinə yetirmək mümkündür. Beləliklə, hər hansı problemi Türinq-Post maşınında həll etmək olursa, deməli, onun həll alqoritmi var. Bu da bir daha Klini-Çerç tezisinə inam yaradır.
+Alqoritmin tərifinin dəqiqləşməsi üçün üçüncü yanaşma "Normal-Markov alqoritmi" nəzəriyyəsidir. Bu nəzəriyyəyə görə baxılan problemin ilkin verilənləri sözlər şəklində yazılır. Söz dedikdə müəyyən sonlu simvollar yığımı başa düşülür. Bu nəzəriyyəyə görə hər bir əməliyyat sözlər üzərində əməliyyata gətirilir. Yenə də bu vaxta qədər məlum alqoritmlərin hamısı Normal-Markov alqoritmi vasitəsilə yerinə yetirilə bilir. Deməli, Normal-Markov alqoritmi nəzəriyyəsi də alqoritmin tərifinin dəqiqləşməsidir və Normal-Markov alqoritmi ilə yerinə yetirilən hesablanan funksiya rekursiv funksiyadır. Beləliklə, bu yanaşmaların üçünün də müəyyən mənada ekvivalent olduğu aydın olur.
+
+
+== Ədəbiyyat ==
+Информатика и информационные технологии : учеб. пособие для студентов / Ю.Д.Романова [и др.] ; под ред.Ю.Д.Романовой М. : Эксмо, 2008
+С.Д. Шапорев. Информатика. Теоретический курс и практические занятия : учеб.для студентов вузов / С.Д.Шапорев СПб. : БХВ-Петербург, 2008
+В.А. Острейковский Информатика : учеб.для студентов вузов М. : Высш. шк., 2007
+С.В.Симонович Общая информатика : [универс.курс] СПб. : Питер, 2007
+А.Н.Степанов Информатика : Учеб.пособие для студентов вузов / СПб.: Питер, 2007
+С.Е.Столяр, А.А.Владыкин М Информатика : представление данных и алгоритмы /: БИНОМ. Лаб. знаний
+Г. А.Сырецкий Информатика: фундам.курс : учеб.для студентов вузов : Т.2. Информационные технологии и системы / СПб.: БХВ-Петербург, 2007
+М.Сухарев Turbo Pascal 7.0: теория и практика программирования / СПб. : Наука и техника, 2007
+
+
+== İstinadlar ==

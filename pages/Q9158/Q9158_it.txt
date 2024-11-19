@@ -1,0 +1,290 @@
+La posta elettronica, detta anche email o e-mail (dall'inglese electronic mail) è un metodo per scambiarsi messaggi tramite una rete di computer.
+
+Ideato nel 1971 da Ray Tomlinson e originariamente implementato su ARPANET come trasferimento di file, negli anni ottanta e novanta sono stati creati diversi protocolli concorrenti per l'invio e la ricezione della posta elettronica. Su Internet i protocolli usati sono principalmente SMTP, POP e IMAP.
+In origine i messaggi di posta elettronica erano costituiti solamente da testo, tuttavia è possibile trasferire immagini digitali o altri contenuti multimediali come allegati.
+
+
+== Descrizione ==
+
+
+=== Modello di servizio ===
+Scopo del servizio di posta elettronica è il trasferimento di messaggi da un utente a un altro attraverso un sistema di comunicazione dati che coinvolge i client agli estremi (attraverso opportuni software di posta elettronica) e dei server di posta attivi presso i rispettivi fornitori del servizio come nodi di raccolta/smistamento dei messaggi interni alla rete.
+Ciascun utente può possedere una o più caselle di posta elettronica, sulle quali riceve messaggi che vengono conservati. Quando lo desidera, l'utente può consultare il contenuto della sua casella, organizzarlo e inviare messaggi a uno o più utenti.
+L'accesso alla casella di posta elettronica è normalmente controllato da una password o da altre forme di autenticazione.
+La modalità di accesso al servizio è quindi asincrona, ovvero per la trasmissione di un messaggio non è necessario che mittente e destinatario siano contemporaneamente attivi o collegati.
+La consegna al destinatario dei messaggi inviati non è garantita. Nel caso un server SMTP non riesca a consegnare un messaggio ricevuto, tenta normalmente di inviare una notifica al mittente per avvisarlo della mancata consegna, ma anche questa notifica è a sua volta un messaggio di posta elettronica (generato automaticamente dal server), e quindi la sua consegna non è garantita (se il problema è relativo all'apparecchio usato dal mittente non sarà possibile effettuarla).
+Il mittente può anche richiedere una conferma di consegna o di lettura dei messaggi inviati, però il destinatario è normalmente in grado di decidere se vuole inviare o meno tale conferma. Il significato della conferma di lettura può essere ambiguo, in quanto aver visualizzato un messaggio per pochi secondi in un client non significa averlo letto, compreso o averne condiviso il contenuto.
+
+
+=== Indirizzi di posta elettronica ===
+A ciascuna casella sono associati uno o più indirizzi di posta elettronica necessari per identificare il destinatario. Questi hanno la forma nomeutente@dominio, dove nomeutente è un nome scelto dall'utente o dall'amministratore del server, che identifica in maniera univoca un utente (o un gruppo di utenti), e dominio è un nome DNS.
+L'indirizzo di posta elettronica può contenere qualsiasi carattere alfabetico e numerico (escluse le vocali accentate) e alcuni simboli come il trattino basso (_) e il punto (.). Molto spesso può tornare utile agli utenti usufruire dei servizi di reindirizzamento, usati per inoltrare automaticamente tutti i messaggi che arrivano su una casella di posta elettronica verso un'altra di loro scelta, in modo che al momento della consultazione non si debba accedere a tutte le caselle di posta elettronica di cui si è in possesso ma sia sufficiente controllarne una.
+Esempio di indirizzo elettronico: testesempio.com
+
+
+=== Architettura del sistema di posta elettronica ===
+
+i client (detti in gergo MUA, Mail User Agent), usati per accedere a una casella di posta elettronica e per inviare messaggi;
+i server, che svolgono due funzioni fondamentali:
+immagazzinare i messaggi per uno o più utenti nella rispettiva casella di posta o mailbox (detti in gergo MS, Message Store);
+ricevere i messaggi in arrivo e in partenza e smistarli (detti in gergo MTA, mail transfer agent).
+I protocolli tipicamente impiegati per lo scambio di messaggi di posta elettronica sono il SMTP, usato per l'invio, la ricezione e l'inoltro dei messaggi tra server, il POP e l'IMAP, usati per la ricezione e consultazione dei messaggi da parte degli utenti.
+I client richiedono la configurazione dei server da contattare, e sono quindi adatti principalmente a computer usati regolarmente. È anche molto diffusa la possibilità di consultare una casella di posta elettronica attraverso il web (Webmail).
+POP3s, SMTPs, IMAPs (e HTTPs) sono le versioni cifrate dei comuni protocolli di posta elettronica. Vari servizi di gestione della posta offrono la possibilità di una connessione cifrata con il protocollo Secure Sockets Layer (SSL, superato da TLS), inserendo nel programma client (es. Outlook Express) un parametro di posta in arrivo/posta in uscita (es. pops.[provider].it e smtps.[provider].it) oppure scegliendo una porta predefinita e spuntando le opzioni per la connessione SSL e l'autenticazione sicura.
+
+
+== Messaggi di posta elettronica ==
+Un messaggio di posta elettronica è costituito da una busta (envelope) e dal contenuto (content) dello stesso. La busta contiene le informazioni necessarie per trasmettere e consegnare il messaggio, mentre il contenuto comprende l'oggetto destinato al ricevente.
+Il contenuto è composto da due parti: una sezione di intestazione (header section) e un corpo (body) del messaggio.
+
+
+=== Busta ===
+Nel protocollo SMTP la busta contiene l'indirizzo del mittente e quello dei destinatari del messaggio. Nonostante alcune informazioni possano coincidere con quelle riportate tra le intestazioni del messaggio, la busta contiene ulteriori informazioni tra cui l'indirizzo di ritorno. Il protocollo Sender Policy Framework usa la busta per l'autenticazione del mittente.
+
+
+=== Intestazioni ===
+Le intestazioni sono informazioni di servizio che servono a controllare l'invio del messaggio, o a tener traccia delle manipolazioni che subisce. Ciascuna intestazione è costituita da una riga di testo, con un nome seguito dal carattere ':' e dal corrispondente valore.
+Alcune di queste vengono definite direttamente dall'utente. Tra le principali si possono citare:
+
+Oggetto: dovrebbe contenere una breve descrizione dell'oggetto del messaggio. È considerata buona educazione usare questo campo per aiutare il destinatario a capire il contenuto del messaggio.
+Da: contiene l'indirizzo di posta elettronica del mittente.
+A: contiene gli indirizzi di posta elettronica dei destinatari principali.
+Cc: contiene gli indirizzi di posta elettronica dei destinatari in copia conoscenza.
+Ccn: contiene gli indirizzi di posta elettronica dei destinatari in copia conoscenza nascosta, ovvero destinatari che riceveranno il messaggio ma il cui indirizzo non apparirà tra i destinatari. Questa è in realtà una pseudo-intestazione, in quanto è visibile solo al mittente del messaggio, e per definizione non viene riportata nei messaggi inviati ai destinatari.
+Rispondi a: contiene l'indirizzo di posta elettronica al quale devono essere inviate le eventuali risposte al messaggio, se diverso da quello del mittente.
+Data: contiene la data e l'ora in cui il messaggio è stato scritto.
+Nota: è considerata cattiva educazione anche la pratica di inviare messaggi a un grande numero di destinatari e, in maniera particolare, se contengono allegati in formato proprietario che non tutti i destinatari potrebbero essere in grado di leggere, come Microsoft Word. Qualora si dovesse inviare un messaggio a un certo numero di destinatari (≥2) dei quali non si è certi che intendano rendere noto agli altri destinatari il proprio indirizzo elettronico (ciò che accade normalmente), è considerato netiquette inviare a sé stessi il messaggio (porre il proprio indirizzo come destinatario) e inserire in ccn (copia conoscenza nascosta) gli altri destinatari. Infatti i destinatari-ccn non si vedono reciprocamente.
+
+
+=== Intestazioni di servizio ===
+Altre intestazioni vengono aggiunte dai programmi che manipolano il messaggio.
+La più importante è Ricevuti:, che viene aggiunta da ciascun server SMTP che manipola il messaggio, indicando da quale indirizzo IP il messaggio è stato ricevuto, a che ora, e altre informazioni utili a tracciarne il percorso.
+Altre intestazioni segnalano ad esempio che il messaggio è stato valutato da qualche tipo di filtro automatico antivirus o antispam, e la valutazione espressa dal filtro.
+Il Message-ID: (Identificativo del messaggio) è un codice costruito dal client su cui il messaggio è stato composto, che dovrebbe permettere di identificare univocamente un messaggio.
+
+
+=== Corpo e allegati ===
+
+Il corpo del messaggio è composto dal contenuto informativo che il mittente vuol comunicare ai destinatari.
+Esso era originalmente composto di testo semplice. In seguito è stata introdotta la possibilità di inserire dei file in un messaggio di posta elettronica (allegati), ad esempio per inviare immagini o documenti. Per fare questo il client di posta del mittente usa la codifica MIME (o la più desueta UUencode).
+Gli allegati vengono usati anche per comporre un messaggio di posta elettronica in formato HTML, generalmente per ottenere una più gradevole visualizzazione dello stesso. Questa pratica non è molto apprezzata dai puristi di Internet, in quanto aumenta notevolmente la dimensione dei messaggi e, inoltre, non tutti i client per la posta elettronica sono in grado di interpretare l'HTML.
+Dato che la banda del canale (Internet) e la dimensione della casella di posta elettronica (sul server) non sono illimitate, è considerata cattiva educazione inviare messaggi di grosse dimensioni. Secondo la netiquette un messaggio di posta elettronica dovrebbe rimanere al di sotto di 50-100 kB. Per ridurre le dimensioni di un messaggio contenente allegati di grosse dimensioni, si possono inviare semplicemente gli URI degli allegati, rendendo questi ultimi reperibili in altro modo, ad esempio via FTP o HTTP. Inoltre, molti server impongono limiti massimi alla dimensione del messaggio da trasmettere, che devono essere presi in considerazione se si inviano messaggi di grosse dimensioni.
+
+
+== Interrelazione derivante dalla gestione dei campi del messaggio di posta ==
+La creazione di un messaggio di posta elettronica implica la creazione di una relazione in base al tipo di comunicazione che il mittente intende stabilire con i destinatari, che il mittente iscrive nel messaggio nei campi A: CC: CCN:.
+Se tutto è molto semplice quando il destinatario è unico, la faccenda si complica quando il messaggio viene indirizzato a più destinatari. In questo caso il mittente definisce rapporti di relazione tra i destinatari nel loro insieme e tra i destinatari inseriti nei campi specifici e il messaggio di posta elettronica, sebbene possa non esserne consapevole.
+È da ritenersi regola consolidata che gli utenti inseriti nei campi A: e CC: abbiano la possibilità di comunicare tra loro alla pari in merito al messaggio di posta elettronica, rivestendo lo stesso ruolo rispetto a esso. Questo significa che i destinatari nel campo A: devono «lavorare» il messaggio, quindi rispondere se è richiesto o concesso, potendosi rivolgere agli altri componenti del gruppo. Quelli del campo CC: devono essere a conoscenza del contenuto del messaggio e possono commentarlo tra loro e intervenire se lo ritengono opportuno, pur non essendo tenuti a farlo. Altri utenti eventualmente inseriti in CCN:, non vedendo il proprio indirizzo di posta nei campi A: o CC:, intendono correttamente il proprio ruolo di destinatario nascosto se comunicano in merito al messaggio soltanto con il mittente. Diversamente, finiscono per «venire allo scoperto» rendendo palese che hanno ricevuto copia del messaggio, svelandolo il «segreto» del mittente e ponendolo in una condizione che può essere imbarazzante.
+
+
+=== Tipi di relazione ===
+Il rapporto che il mittente crea con i destinatari è del tipo «da uno verso molti», in merito ai campi A: e CC:, ed è un rapporto del tipo «da uno a uno» nei confronti degli utenti nei campi CCN:, ciascuno dei quali non vede gli altri destinatari nascosti. Questo implica che il mittente crea inoltre dei rapporti del tipo «da molti verso molti» tra i destinatari inseriti nel campo A: e i destinatari del campo CC:. Tali relazioni sono paragonabili a quelle che crea l'insegnante con una classe di allievi: alle domande poste dall'insegnante alla classe, gli allievi normalmente rispondono alla presenza dei loro compagni di classe che sono quindi al corrente del loro intervento e del suo contenuto, come i destinatari dei campi A: e CC: che possono o devono rispondere almeno a tutti gli indirizzi dell'insieme a cui appartengono. Sviluppando l'esempio proposto, il campo CC: potrebbe contenere l'indirizzo di posta elettronica del preside dell'istituto, ponendo come esempio il caso di rapporti disciplinari che devono essere sottoposti alla sua attenzione. Il destinatario CCN: può essere inteso come chi origlia senza essere visibile agli altri, per scelta dell'insegnante, e la cui esistenza non va palesata ad altri.
+Il mittente del messaggio, che crea relazioni tra i destinatari distinguendoli in gruppi, deve operare le sue scelte con attenzione allorquando assegna i destinatari all'uno o all'altro campo del messaggio di posta elettronica. Chi deduce di aver ricevuto il messaggio tramite l'uso del campo CCN:, non riscontrando il proprio indirizzo nei campi del messaggio, ne trae le opportune conseguenze, contattando, riguardo alla circostanza e al contenuto del messaggio, se necessario, soltanto il mittente. Immaginiamo ad esempio che n impiegati devono essere redarguiti per essere incorsi nelle stesse mancanze nei confronti del datore di lavoro. È evidente che in questo caso è palesemente illegittimo, oltre che pregiudizievole nei confronti dell'impiegato, inserire gli indirizzi di posta elettronica in modo che essi siano visibili ad altri, poiché è inammissibile che ciascuno sappia chi altri al suo pari ha infranto delle regole contrattuali. Occorre quindi inserire tutti gli indirizzi dei dipendenti del nostro esempio nel campo CCN:.
+Nulla vieta che la segreteria del capo del personale inserisca nel campo della copia per conoscenza lo stesso direttore del personale, o che il messaggio venga inviato usando il campo A: al funzionario che deve avviare l'iter per contestare l'addebito ai dipendenti, o infine che il mittente inserisca il proprio indirizzo nel campo CCN: per ricevere e conservare una copia del messaggio come destinatario, per avere una prova che la transazione è avvenuta correttamente, indipendentemente dall'avere o meno una copia nella posta inviata. In conclusione, il messaggio di posta elettronica viene definito dal mittente e che il comportamento dei singoli destinatari deve essere coerente con il campo nel quale l'indirizzo è stato inserito. Qualora il campo A: non sia stato popolato di indirizzi, in detto campo di default, compare la dicitura Undisclosed-Recipient.
+In alcune organizzazioni può essere posta attenzione all'ordine dei destinatari e delle persone elencate in copia, non necessariamente alfabetico.Fra i destinatari può essere chiesto di inserire solamente chi è coinvolto per competenza e ha azioni assegnate, e tutti gli altri per conoscenza, piuttosto che un responsabile il quale dovrebbe attribuire una certa attività ai suoi collaboratori.L'ordine può seguire tre criteri (o loro combinazioni):
+
+ordine alfabetico (per cognome);
+importanza dell'attività del destinatario (primo e ultimo destinatario), o che sia a conoscenza;
+posizione nell'organigramma aziendale. Esempio: prima dirigenti in ordine alfabetico, quadri in ordine alfabetico, poi impiegati in ordine alfabetico.
+Rispetto a una matrice di assegnazione responsabilità, nel campo destinatario si inserisce chi è responsabile e (dopo) chi esegue l'attività, nel campo CC chi controlla, seguito da chi deve essere semplicemente informato senza svolgere alcuna attività.
+
+
+=== Visibilità dei destinatari ===
+Gli indirizzi dei destinatari principali (A:) e di quelli in copia conoscenza (Cc:) sono ugualmente visibili a tutti i destinatari.
+La scelta di mettere un destinatario in uno dei due campi è legata al ruolo che le persone hanno riguardo all'argomento del messaggio. Ad esempio, se un messaggio richiede di eseguire un compito, si intende che si chiede a chi è il destinatario principale (A:) di eseguirlo, mentre i destinatari in copia conoscenza (Cc:) vengono informati che questa richiesta è stata fatta, ma non ci si aspetta che siano loro a eseguire il compito.
+Gli indirizzi dei destinatari in copia conoscenza nascosta (Ccn:) non appaiono nel messaggio consegnato ai destinatari. Questo consente di fatto di far sapere a terzi che cosa si sta dicendo e a chi senza che i destinatari «ufficiali» ne siano a conoscenza. «Mettere in CC» o «in CCN» è locuzione diffusa negli ambienti lavorativi e nei gruppi sociali organizzati.
+Quando la posta elettronica viene usata per diffondere messaggi a molte persone che non si conoscono tra loro (ad esempio comunicati pubblici, annunci, messaggi spiritosi più o meno utili), il fatto che ciascun destinatario possa sapere chi sono gli altri destinatari e i loro indirizzi non è in generale opportuno, per ragioni di privacy e di sicurezza. In particolare, se si invia un messaggio a un gran numero di persone che non necessariamente si conoscono tra di loro, costoro non necessariamente saranno d'accordo che il loro indirizzo, e il fatto che hanno ricevuto quel messaggio, sia reso noto a estranei. Inoltre, molti worm si propagano tramite posta elettronica, e usano gli indirizzi presenti nei messaggi per diffondersi. Inviare un messaggio con gli indirizzi dei destinatari in chiaro significa quindi esporre tutti i destinatari a un ulteriore rischio di contagio se uno di loro viene contagiato. Per ovviare a questo problema, è consigliabile adoperare in questi casi il Ccn:, oppure una lista di diffusione.
+
+
+=== Pubblicità e deducibilità degli indirizzi ===
+Quanto detto per i campi A: e CC: ripropone un modo di procedere tipico delle liste d'invio, nelle quali tutti comunicano con tutti. Le mailing list, però, dovrebbero essere organizzate offrendo un unico indirizzo di riferimento valido per tutti, dal quale il moderatore provvede all'invio della copia di ciascun messaggio a ciascuno degli iscritti. È quindi altamente consigliabile non riprodurre in chiaro tutti gli indirizzi iscritti nella lista d'invio, ma inserire, per ricevere le risposte, soltanto l'indirizzo della mailing list che altro non è che il contenitore degli indirizzi di tutti gli utenti iscritti, e offre il vantaggio di non rendere pubblici gli indirizzi degli iscritti esponendoli al rischio di essere contattati da altri senza controllo, senza riservatezza rispetto al loro indirizzo di posta elettronica, senza alcun legame con il tema della lista d'invio sottoscritta, giacché, se sono visibili gli indirizzi, ciascun membro potrebbe contattarne un altro direttamente e per qualsivoglia altro motivo. Un'alternativa valida è inserire tutti i destinatari nel campo nascosto CCN:.
+Quando gli indirizzi di posta elettronica non sono pseudonimi o nomi di fantasia, ma rispondono a convenzioni con regola fissa, essi sono facilmente deducibili dall'applicazione della regola e quindi se garantiscono la raggiungibilità dei membri appartenenti a gruppi omogenei di persone, è anche vero che sono da ritenersi potenzialmente già «pubblici», anche se non sono stati diffusi via posta elettronica. Detto in altri termini: se, per garantire la raggiungibilità di tutto il personale in azienda, un dipendente può contattare un proprio collega soltanto conoscendo il di lui nome e cognome e applicando la convenzione aziendale per la creazione di indirizzi di posta elettronica (ad esempio nome_cognome@azienda.it, nome.cognome@azienda.it, iniziale_nome.cognome@azienda.it) si è già rinunciato alla riservatezza degli indirizzi di posta elettronica, pur non essendo stati questi ultimi diffusi con l'invio di un messaggio di posta elettronica.
+
+
+== Funzionamento dei client ==
+I client di posta elettronica sono programmi che permettono di operare sul contenuto di una o più caselle di posta. La stragrande maggioranza dei client presenta all'incirca le stesse caratteristiche principali, differenziandosi per presentazione grafica e per funzionalità avanzate.
+Il client di posta elettronica è tradizionalmente un programma eseguito sul calcolatore dell'utente, ma è molto diffusa anche la possibilità di usare le stesse funzionalità sotto forma di applicazione web (vedi webmail).
+La funzione principale è visualizzare una lista dei messaggi presenti nella casella, in cui per ogni messaggio si vedono solo alcune intestazioni, come l'oggetto, la data, il mittente, e talvolta le prime righe di testo del corpo del messaggio.
+Le operazioni possibili su un messaggio sono tipicamente:
+
+Leggere il corpo del messaggio.
+Rispondi: rispondi al messaggio, ovvero componi un nuovo messaggio destinato al mittente, che spesso comprende il testo del messaggio ricevuto (per citazione). Il messaggio di risposta ha lo stesso subject del messaggio a cui risponde, preceduto dalla sigla "Re:" ("R:" su alcuni client fuori standard) per indicare che si tratta della risposta.
+Rispondi a tutti: rispondi al messaggio, indirizzando però la risposta al mittente e a tutti gli altri destinatari.
+Inoltra: invia il testo di un messaggio di posta elettronica ricevuto ad altri indirizzi. Il messaggio ha lo stesso subject del messaggio inoltrato, preceduto dalla sigla "Fw:".
+Cancella: elimina il messaggio senza farne nulla.
+Esiste inoltre naturalmente la funzione per comporre e inviare un nuovo messaggio.
+Per ottenere una casella di posta elettronica è possibile seguire diverse strade:
+
+gli Internet service provider forniscono normalmente caselle di posta elettronica ai propri clienti, a complemento di servizi di connettività o anche gratuitamente. Talvolta queste caselle di posta elettronica hanno delle limitazioni, in particolare spesso la casella è accessibile tramite protocolli standard come POP o IMAP solo quando si è collegati a Internet attraverso l'ISP che la fornisce, e solo tramite webmail altrimenti.
+molte organizzazioni forniscono caselle di posta elettronica ai propri collaboratori. È però necessario accertarsi di quali siano le condizioni d'uso di questa casella, soprattutto per quanto riguarda l'uso per fini personali. Inoltre spesso con l'interruzione del rapporto si perde la casella. Pertanto, è consigliabile adoperare queste caselle solamente per fini lavorativi o analoghi.
+numerosi siti che offrono gratuitamente uno o più indirizzi di posta elettronica. Questi offrono sempre un accesso alla posta elettronica tramite web, e talvolta solo quello.
+alcuni Internet service provider forniscono un servizio di posta elettronica a pagamento, con garanzie sulla qualità del servizio (disponibilità, servizi antivirus e antispam, dimensione della casella) e con la possibilità di avere un proprio dominio DNS.
+se si dispone di una connessione Internet permanente con un indirizzo IP pubblico e delle competenze necessarie, è possibile installare e gestire in proprio un server di posta elettronica. Questo richiede normalmente l'uso di un servizio di DNS dinamico per rendere il proprio dominio sempre accessibile.
+La sincronizzazione del client con l'indirizzo di posta elettronica può essere:
+
+Pulling, il client si connette a intervalli regolari (possono essere definiti dall'utente) al server dell'indirizzo di posta elettronica che durante gli intervalli mette in un vassoio "pull" i messaggi elettronici intercorsi nel frattempo, tale vassoio viene esaminato dal client di posta durante queste connessioni cicliche.
+Push, il client si connette al server dell'indirizzo di posta e rimane connesso e a ogni nuovo messaggio il server lo invia al client.
+
+
+=== Visualizzazione per conversazione ===
+I client consentono solitamente d'impostare la visualizzazione dei messaggi in due modalità:
+
+normale (è stata la prima e unica modalità sino alla diffusione degli strumenti social);
+per conversazione (thread).
+Nel primo caso i messaggi sono visualizzati singolarmente, uno distinto dall'altro. Nel secondo caso i singoli messaggi relativi allo stesso oggetto sono visualizzati insieme, uno sotto l'altro in ordine cronologico discendente, raggruppati in un unico "messaggio contenitore", in stile conversazioni o chat. Il criterio di raggruppamento è un oggetto specifico cioè un argomento (a volte anche uno spazio in più o in meno tra le lettere del testo che descrive l'oggetto generano un altro thread).
+
+
+=== Etichette e categorie ===
+Due funzionalità diffuse sono quelle relative alle etichette e alle categorie. Le etichette sono dei tag che consentono di classificare i messaggi in modo da individuarli efficacemente. Le categorie hanno la stessa finalità ma solitamente raggruppano i messaggi attraverso una cartella oppure una scheda. Questo perché, a differenza delle categorie, un messaggio può essere etichettato con due o più cartellini (il messaggio originale non viene ovviamente moltiplicato, rimane solo uno).
+
+
+=== Altri strumenti ===
+I messaggi di posta elettronica possono essere inviati e/o ricevuti anche usando soluzioni diverse dai classici client di posta o dalla webmail. Un qualsiasi applicativo software può prevedere la possibilità di usare i soliti protocolli per gestire le mail direttamente nell'ambiente (anche in maniera trasparente per gli utenti). Il vantaggio è che non occorre ricorrere a un client e i messaggi rimangono archiviati all'interno del sistema. In pratica, non bisogna impiegare un altro strumento per inviare il documento generato dall'applicazione o per riceverne uno che comunque dovrà poi essere archiviato (o citato come riferimento) nell'applicazione. Ad esempio, i sistemi gestionali di tipo Erp o di qualsiasi altro tipo funzionale hanno la possibilità di configurare indirizzi POP/IMAP per ricevere le informazioni prescelte o indirizzi SMTP per inviarle, in maniera automatica o tramite intervento dell'utente.
+
+
+=== Estensioni dei nomi di file ===
+Alla ricezione dei messaggi di posta elettronica, le applicazioni client di posta salvano i messaggi nei file del sistema operativo nel file system. Alcuni client salvano i singoli messaggi come file separati, mentre altri impiegano vari formati di database, spesso proprietari, per l'archiviazione collettiva. Uno standard storico di archiviazione è il formato mbox. Il formato specifico usato è spesso indicato da speciali estensioni del nome file:
+
+eml
+Usato da molti client di posta elettronica tra cui Novell GroupWise, Microsoft Outlook Express, Lotus Notes, Windows Mail, Mozilla Thunderbird e Postbox. I file contengono il contenuto dell'e-mail come testo normale in formato MIME, contenente l'intestazione e il corpo dell'e-mail, inclusi gli allegati in uno o più di diversi formati.
+emlx
+Usato da Apple Mail.
+msg
+Usato da Microsoft Office Outlook e OfficeLogic Groupware.
+mbx
+Usato da Opera Mail, KMail e Apple Mail in base al formato mbox.
+Alcune applicazioni (come Apple Mail) lasciano gli allegati codificati nei messaggi per la ricerca salvando anche copie separate degli allegati. Altri separano gli allegati dai messaggi e li salvano in una directory specifica.
+
+
+=== Schema URI mailto ===
+Lo schema URI definisce lo schema mailto: per gli indirizzi di posta elettronica SMTP. Sebbene il suo uso non sia strettamente definito, gli URL di questo modulo sono destinati a essere usati per aprire la finestra del nuovo messaggio del client di posta dell'utente quando l'URL è attivato, con l'indirizzo definito dall'URL nel campo A:.  Molti client supportano anche i parametri della stringa di query per gli altri campi di posta elettronica, come la riga dell'oggetto o i destinatari in copia per conoscenza.
+
+
+== Abusi ==
+Il principale uso improprio della posta elettronica è lo spam, l'invio massiccio a molti utenti di messaggi indesiderati, in genere di natura pubblicitaria-commerciale. Secondo alcune fonti, l'incidenza di questi messaggi raggiungerebbe i due terzi del traffico totale di posta elettronica.
+Un altro fenomeno negativo è costituito dalle catene di sant'Antonio, messaggi che contengono informazioni allarmanti, promesse di facili guadagni o vere e proprie bufale, e invitano a inoltrare il messaggio ai propri conoscenti, finendo talvolta per circolare per mesi o per anni.
+Esiste inoltre la possibilità di falsificare il nome e l'indirizzo del mittente visualizzati nel programma client del destinatario, inducendo l'utente a ritenere attendibile un messaggio del tutto falso. Questa vulnerabilità viene usata per costruire vere e proprie truffe o scherzi che si basano sulla fiducia che la maggior parte degli utenti erroneamente ripone nel «mittente» di un messaggio di posta elettronica. Anche i worm che si replicano per posta elettronica usano questo meccanismo, allo scopo di indurre gli utenti a provare interesse o a prestare fiducia in un messaggio, in modo che lo aprano ed eventualmente installino allegati infetti.
+
+
+=== Attacchi hacker ===
+Le email possono essere vittima di alcuni attacchi hacker:
+
+
+==== Spoofing e phishing ====
+In un caso di spoofing di e-mail, un criminale informatico invia a un utente un'e-mail fingendo di essere qualcuno che l'utente conosce. Risulta molto difficile da risalire al suo vero mittente.
+Viene usato dai criminali informatici per ingannare gli utenti e ottenere informazioni sensibili come conti bancari o numeri di previdenza sociale.
+
+
+==== Domain squatting ====
+Il Domain Squatting consiste nel registrare, vendere o usare un nome di dominio con l'intento di trarre profitto dal marchio di qualcun altro. Pertanto le aziende o i loro clienti possono essere vittime di attacchi di Domain Squatting.
+
+
+==== Spear phishing ====
+Mentre le campagne di phishing regolari perseguono un gran numero di obiettivi a rendimento relativamente basso, lo spear phishing mira a obiettivi specifici usando messaggi di posta elettronica appositamente creati per la vittima designata. Per questi attacchi gli hacker usano servizi come WinZip, Box, Dropbox, OneDrive o Google Drive.
+
+
+==== File dannosi ====
+Quando un contenuto dannoso nell'allegato e-mail raggiunge l'utente potrebbe infettare l'intero sistema del computer (o lo smartphone o il tablet) e la rete.
+
+
+==== Ransomware ====
+Una volta che qualcuno viene infettato via mail deve essere pagato un riscatto per tutti i dati crittografati.
+
+
+==== Configurazioni errate ====
+Una configurazione errata nel servizio di posta elettronica può causare l'invio di posta elettronica senza autenticazione.
+Ad esempio un hacker si connette al servizio di posta elettronica di una vittima senza autenticazione e inviare un'e-mail ai suoi contatti memorizzati nella rubrica.
+
+
+==== Exploit Kit ====
+Software in grado di realizzare attacchi informatici di tipo web-based con l’obiettivo di distribuire malware o altre componenti malevole anche attraverso le email.
+
+
+==== Attacchi BEC (Business Email Compromise) ====
+Una forma particolare di phishing che sfrutta sofisticate tecniche di ingegneria sociale per ottenere l'accesso a informazioni personali o riservate, e specificamente informazioni di rilevante valore economico e commerciale. In genere un attacco prende di mira ruoli specifici dei dipendenti all'interno di un'organizzazione inviando una o più e-mail di spoofing che rappresentano in modo fraudolento un collega senior (CEO o simile) o un cliente fidato. Conosciuto anche come "Whaling".
+
+
+==== Email Injection ====
+L'Email Injection è una vulnerabilità di sicurezza che può verificarsi nelle applicazioni di posta elettronica. È l'equivalente e-mail dell'HTTP Header Injection. Come gli attacchi SQL injection, questa vulnerabilità appartiene a una classe generale di vulnerabilità che si verifica quando un linguaggio di programmazione è incorporato in un altro.
+
+
+== Privacy per la posta elettronica ==
+
+
+=== Trattamento degli indirizzi ===
+Per vari motivi, gli indirizzi di posta elettronica sono spesso accessibili su internet:
+
+chi riceve un messaggio di posta elettronica conosce gli indirizzi del mittente e di tutti i destinatari in chiaro (A: e Cc:). Se la mail viene inoltrata, spesso questi indirizzi sono visibili anche a chi la riceve in questo modo.
+molte mailing list possiedono un archivio pubblico accessibile via web, in cui è possibile reperire gli indirizzi di chi ha mandato un messaggio alla mailing list. Un fenomeno analogo avviene con Usenet.
+talvolta si pubblica il proprio indirizzo di posta elettronica sulle pagine del proprio sito web (tipicamente nella home page o nella pagina contatti).
+Tutti questi indirizzi sono a rischio di essere raccolti con strumenti automatici per creare indirizzari usati per inviare spam.
+Se si protesta con le società che hanno inviato i messaggi di posta elettronica pubblicitari spesso ci si vede rispondere che il proprio indirizzo era stato reperito su Internet e per questo si considerava a tutti gli effetti di dominio pubblico, e che non ci sarebbe dunque nessuna violazione della privacy.
+
+
+==== Intervento del Garante (Italia) ====
+Il Garante della privacy italiano afferma che la posta elettronica deve avere la stessa tutela di quella ordinaria. Anche se la rete consente una vasta conoscibilità degli indirizzi di posta elettronica, è considerato illegale l'uso di questi dati personali per scopi diversi da quelli per cui sono presenti online (compreso l'invio di messaggi a scopo commerciale, pubblicitario...). È quindi obbligatorio, per non violare la privacy degli utenti, accertarsi del loro consenso prima di usare il loro indirizzo di posta elettronica per qualsiasi scopo.
+
+
+=== Privacy per la posta elettronica sul posto di lavoro (Italia) ===
+Quanto segue vale unicamente per la legislazione italiana.
+Il problema riguarda da una parte il fatto che il datore di lavoro desidera che gli strumenti che mette a disposizione (come Internet e la posta elettronica) vengano usati solo per scopi prettamente lavorativi, e dall'altro la legittima tutela dei dati personali del dipendente. L'autorità Garante ha stabilito che il datore di lavoro può controllare i messaggi di posta elettronica del personale esclusivamente in rari casi. Sono state definite le norme per l'uso della posta elettronica sul luogo di lavoro; spetta infatti allo stesso datore di lavoro il compito di fissare i modi consentiti all'interno dell'azienda per l'uso di Internet e dei messaggi di posta elettronica e soprattutto sulla possibilità che vengano effettuati dei controlli. Quindi, in definitiva la soluzione più efficace è l'adozione da parte dell'azienda di un regolamento interno, coinvolgendo anche i sindacati.
+Si verificano problemi anche quando un addetto è assente e il superiore presume che al suo indirizzo siano stati inviati messaggi di lavoro a cui è necessario accedere per il funzionamento dell'azienda. Queste situazioni possono essere prevenute creando caselle di posta associate a particolari uffici o persone oltre a quelle individuali, e usando queste caselle per le attività lavorative che possono essere gestite da più persone.
+In base all'art. 616 del codice penale, ancora vigente (2020), è punito con la reclusione fino a un anno o con la multa da 30 euro a 516 euro chiunque prenda cognizione del contenuto di una corrispondenza a lui non diretta. Per "corrispondenza" si intende quella epistolare, telegrafica o telefonica, informatica o telematica ovvero effettuata con ogni altra forma di comunicazione a distanza. Lo Statuto dei Lavoratori vieta sia la discriminazione sia lo svolgimento di indagini sulle opinioni politiche, sindacali o religiose del lavoratore (art. 8). 
+Ammettere la legittimità del controllo sulla corrispondenza privata (ancorché elettronica) del dipendente equivarrebbe di fatto inevitabilmente a legittimare un'indagine su questo tipo di opinioni (scambiate tramite e-mail), oppure costringere il lavoratore a limitare la libertà di manifestare il proprio pensiero per difendere la privacy dall'ingerenza del datore di lavoro.
+
+
+=== Privacy delle comunicazioni ===
+Un altro aspetto problematico è il trattamento del contenuto di un messaggio che si è ricevuto. Come norma generale, ciascun messaggio è da considerarsi destinato alle persone a cui è indirizzato, e quindi non sarebbe legittimo inoltrarlo o comunque farlo leggere ad altri. Alla pari di qualsiasi altro scambio di informazioni di tipo postale o telefonico, peraltro, la tutela della segretezza è limitata al trasferimento fra il mittente e il destinatario, ma quest'ultimo è libero di usare il messaggio come crede, assumendosene naturalmente tutte le responsabilità di fronte al mittente e alla legge.
+
+
+== Posta elettronica certificata ==
+
+La Posta elettronica certificata è un servizio di posta elettronica erogato nel solo Stato italiano che permette di ottenere la garanzia legale del ricevimento del messaggio da parte del destinatario e della integrità del messaggio ricevuto. Non prevede invece la segretezza del contenuto del messaggio o la certificazione del mittente, e pone parecchi problemi nell'uso con soggetti esteri. 
+In Italia l'invio di un messaggio di posta elettronica certificato, nelle forme stabilite dalla normativa vigente (in particolare il D.P.R. n. 68/2005 e il D. Lgs. n. 82/2005 Codice dell'amministrazione digitale), è equiparato a tutti gli effetti di legge alla spedizione di una raccomandata cartacea con avviso di ricevimento. Ai fini della legge, il messaggio si considera consegnato al destinatario quando è accessibile nella sua casella di posta. Dal 29 novembre 2011 tutte le aziende devono disporre e comunicare alla Camera di Commercio il proprio indirizzo di Posta Elettronica Certificata.
+Il meccanismo consiste nel fatto che il gestore di posta elettronica certificata, nel momento in cui prende a carico il messaggio di posta elettronica del mittente, invia a esso una ricevuta di accettazione, che certifica l'avvenuto invio. Nel momento invece in cui il gestore deposita il messaggio nella casella del destinatario, invia al mittente una ricevuta di consegna che certifica l'avvenuta ricezione. Sia la ricevuta di accettazione sia la ricevuta di consegna sono in formato elettronico, e a esse è apposta la firma digitale del gestore.
+Se il gestore di posta elettronica certificata del mittente è diverso dal gestore del destinatario, si ha un passaggio ulteriore: il gestore del destinatario, nel momento in cui riceve la mail dal gestore del mittente, emette una ricevuta di presa a carico, in formato elettronico, a cui appone la propria firma digitale. Se il gestore di posta elettronica non è in grado di depositare la mail nella casella del destinatario, invia una ricevuta di mancata consegna. I gestori di posta certificata hanno l'obbligo di non accettare le mail contenenti virus.
+I gestori di posta elettronica certificata sono soggetti privati che devono possedere una pluralità di requisiti stabiliti dalla legge (devono, per esempio, possedere gli stessi requisiti di onorabilità previsti per l'attività bancaria, e avere un capitale sociale non inferiore a 1 milione di euro), e possono operare solo se sono autorizzati dal CNIPA, il Centro Nazionale per l'Informatica nella Pubblica Amministrazione.
+Le pubbliche amministrazioni possono essere gestori di posta elettronica certificata, ma in tal caso gli indirizzi rilasciati hanno validità solo limitatamente agli scambi di mail fra il titolare dell'indirizzo e l'Amministrazione che lo ha rilasciato.
+
+
+== Email HTML ==
+
+L'email HTML è l'uso di un sottoinsieme di HTML per fornire funzionalità di formattazione e markup semantico nelle email che non sono disponibili con testo normale. Il testo è disposto per adattarsi alla larghezza della finestra di visualizzazione, invece di spezzare uniformemente ogni riga a 78 caratteri (definito in RFC 5322 , che era necessario sui terminali più vecchi). Consente l'inclusione in linea di immagini, tabelle, diagrammi o formule matematiche come immagini, che sono altrimenti difficili da trasmettere (tipicamente usando l'arte ASCII).
+La maggior parte dei client di posta elettronica supportano la posta elettronica HTML e molti lo usano per impostazione predefinita. Molti di questi client includono sia un editor GUI per la composizione di messaggi di posta elettronica HTML sia un motore di rendering per la visualizzazione di messaggi di posta elettronica HTML ricevuti.
+La struttura va fatta con il tag TABLE e la formattazione con il tag in linea STYLE poiché non è possibile usare i CSS.
+Inoltre è possibile inserire nel layout di una email HTML dei video attraverso l'apposito tag.
+Molti permettono di aprire l'email HTML ricevuta nel browser attraverso un link, in caso la visualizzazione sul programma di posta sia scarsa.
+
+
+=== Vulnerabilità ===
+L'HTML consente di visualizzare un collegamento come testo arbitrario, in modo che, anziché visualizzare l'URL completo, un collegamento possa mostrarne solo una parte o semplicemente un nome di destinazione intuitivo. Questo può essere usato negli attacchi di phishing, in cui gli utenti sono indotti a credere che un collegamento punti al sito Web di una fonte autorevole (come una banca), visitandolo e rivelando involontariamente dettagli personali (come i numeri di conto bancario) a un truffatore.
+Se un'email contiene bug (contenuto in linea da un server esterno, come un'immagine), il server può avvisare una terza parte che l'email è stata aperta. Questo è un potenziale rischio per la privacy, poiché rivela che un indirizzo email è reale (in modo che possa essere preso di mira in futuro) e rivela quando il messaggio è stato letto. Per questo motivo, tutti i moderni client di posta elettronica più diffusi (a partire dall'anno 2019) non caricano immagini esterne fino a quando non vengono richieste dall'utente.
+
+
+== Testo arricchito ==
+Il testo arricchito è una specifica formattazione per la posta elettronica definito da IETF nell'RFC 1896 e associato al tipo MIME text/enriched  definito nell'RFC 1563. È "inteso a facilitare la più ampia interazione di testo semplice e complesso (carattere, stile, dimensione, colore, interspazio, simboli, ecc.) su tante varietà di piattaforme hardware e software". Esempio:
+
+
+== Note ==
+
+
+== Voci correlate ==
+
+
+== Altri progetti ==
+
+ Wikiquote contiene citazioni sulla posta elettronica
+ Wikizionario contiene il lemma di dizionario «posta elettronica»
+ Wikimedia Commons contiene immagini o altri file sulla posta elettronica
+
+
+== Collegamenti esterni ==
+
+ E-Mail, su Treccani.it – Enciclopedie on line, Istituto dell'Enciclopedia Italiana. 
+ E-Mail, su Vocabolario Treccani, Istituto dell'Enciclopedia Italiana. 
+ e-mail, su sapere.it, De Agostini. 
+(EN) e-mail, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Opere riguardanti E-Mail, su Open Library, Internet Archive. 
+(EN) Message Headers, su IANA, 29 settembre 2023. URL consultato il 12 novembre 2023.
+(EN) Patrick B. Pexton, Reader Meter: Who really invented e-mail?, su The Washington Post, 24 febbraio 2012. URL consultato il 12 novembre 2023.
+(EN) Tom Van Vleck, The History of Electronic Mail, su multicians.org, 8 novembre 2023. URL consultato il 12 novembre 2023.

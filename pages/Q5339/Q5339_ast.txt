@@ -1,0 +1,916 @@
+El transistor ye un dispositivu electrónicu semiconductor utilizáu p'apurrir una señal de salida en respuesta a una señal d'entrada.Cumple funciones d'amplificador, oscilador, conmutador o rectificador. El términu «transistor» ye la contraición n'inglés de transfer resistor («resistor de tresferencia»). Anguaño atópense práuticamente en tolos aparatos electrónicos d'usu diariu: radios, televisiones, reproductores d'audiu y video, reloj de cuarzu, ordenadores, llámpares fluorescentes, tomógrafo, teléfonos móviles, ente otros.
+
+
+== Historia ==
+
+El transistor bipolar foi inventáu nos Llaboratorios Bell d'Estaos Xuníos n'avientu de 1947 por John Bardeen, Walter Houser Brattain y William Bradford Shockley, quien fueron gallardoniaos col Premiu Nobel de Física en 1956. Foi'l sustitutu de la válvula termoiónica de tres electrodos, o triodu.
+El transistor d'efeutu campu foi patentáu primero que'l transistor BJT (en 1930), pero nun se disponía de la teunoloxía necesaria pa fabricalos masivamente. 
+Ye por ello que de primeres s'usaron transistores bipolares y depués los denominaos transistores d'efeutu de campu (FET). Nos postreros, la corriente ente'l surtidor o fonte (source) y el drenaxe (drain) controlar por aciu el campu llétrico establecíu na canal. A lo último, apaeció'l MOSFET (transistor FET de tipu Metal-Óxidu-Semiconductor). Los MOSFET dexaron un diseñu desaxeradamente compactu, necesariu pa los circuitos altamente integraos (CI).
+Güei la mayoría de los circuitos construyir con teunoloxía CMOS. La teunoloxía CMOS (Complementary MOS ó MOS Complementariu) ye un diseñu con dos distintos MOSFET (MOSFET de canal n y p), que se complementen mutuamente y peracaben bien poca corriente nun funcionamientu ensin carga.
+El transistor consta d'un sustratu (usualmente siliciu) y trés partes dopadas artificialmente (contaminaes con materiales específicos en cantidaes específiques) que formen dos uniones bipolares, l'emisor qu'emite Portador de carga portadores, el colector que los recibe o gueta y la tercera, que ta entrepolada ente les dos primeres, modula el pasu de dichos portadores (base). A diferencia de les válvules, el transistor ye un dispositivu controláu por corriente y del que se llogra corriente amplificada. Nel diseñu de circuitos a los transistores considérase-yos un elementu activu, a diferencia de los resistores, condensadores y inductores que son elementos pasivos. El so funcionamientu namái puede esplicase por aciu mecánica cuántica.
+De manera simplificada, la corriente que circula pol colector ye función amplificada de la que s'inyecta nel emisor, pero'l transistor namái gradúa la corriente que circula al traviés de sigo mesmu, si dende una fonte de corriente continua aliméntase la base por que circule la carga pol colector, según el tipu de circuitu que s'utilice. El factor d'amplificación o ganancia llográu ente corriente de colector y corriente de base, denominar Beta del transistor. Otros parámetros a tener en cuenta y que son particulares de cada tipu de transistor son: Tensiones de rotura de Colector Emisor, de Base Emisor, de Colector Base, Potencia Máxima, disipación de calor, frecuencia de trabayu, y delles tables onde se grafican los distintos parámetros tales como corriente de base, tensión Colector Emisor, tensión Base Emisor, corriente d'Emisor, etc. Los trés tipos d'esquemes(configuraciones) básicos pa usu analóxicu de los transistores son emisor común, colector común y base común.
+Modelos posteriores al transistor descritu, el transistor bipolar (transistores FET, MOSFET, JFET, CMOS, VMOS, etc.) nun utilicen la corriente que s'inyecta nel terminal de base pa modular la corriente d'emisor o colector, sinón la tensión presente nel terminal de puerta o rexa de control (graduador) y gradúa la conductancia de la canal ente los terminales de Fonte y Drenaxe. Cuando la conductancia ye nula y la canal alcuéntrase esgañáu, por efeutu de la tensión aplicao ente Compuerta y Fonte, ye'l campu llétrico presente na canal el responsable d'impulsar los electrones dende la fonte al drenaxe. D'esta miente, la corriente de salida na carga coneutada al Drenaxe (D) va ser función amplificada de la Tensión presente ente la Compuerta (Gate) y Fonte (Source). El so funcionamientu ye análogu al del triodu, cola salvedá que nel triodu los equivalentes a Compuerta, Drenador y Fonte son Rexa (o Alluna Control), Placa y Cátodu.
+Los transistores d'efeutu de campu son los que dexaron la integración a gran escala disponible anguaño; pa tener una idea averada pueden fabricase dellos cientos de miles de transistores interconectaos, por centímetru cuadráu y en delles capes superpuestes.
+
+
+== Tipos de transistor ==
+
+
+=== Transistor de contautu puntual ===
+Llamáu tamién «transistor de punta de contautu», foi'l primer transistor capaz de llograr ganancia, inventáu en 1947 por John Bardeen y Walter Brattain. Consta d'una base de xermaniu, semiconductor aquel día meyor conocíu que la combinación cobre-óxidu de cobre, sobre la que se sofiten, bien xuntes, dos puntes metáliques que constitúin l'emisor y el colector. La corriente de base ye capaz de modular la resistencia que se ve» nel colector, d'ende'l nome de transfer resistor. Basar n'efeutos de superficie, pocu conocíos nel so día. Ye malo de fabricar (les puntes afaíense a mano), fráxil (un golpe podía mover les puntes) y ruidosu. Sicasí convivió col transistor d'unión (W. Shockley, 1948) por cuenta del so mayor anchu de banda. Na actualidá sumió.
+
+
+=== Transistor d'unión bipolar ===
+
+El transistor d'unión bipolar (o BJT, poles sos sigles del inglés bipolar junction transistor) fabrícase sobre un monocristal de material semiconductor como'l xermaniu, el siliciu o'l arseniuro de galio, que les sos cualidaes son entemedies ente les d'un conductor llétricu y les d'un aislante. Sobre'l sustratu de cristal contaminar en forma bien controlada tres zones socesives, N-P-N o P-N-P, dando llugar a dos uniones PN.
+Les zones N (nes qu'abonden portadores de carga Negativa) llógrense contaminando'l sustratu con átomos d'elementos donantes d'electrones, como'l arsénicu o'l fósforu; ente que les zones P (onde se xeneren portadores de carga Positiva o «buecos») llógrense contaminando con átomos aceptadores d'electrones, como'l indiu, el aluminiu o'l galio.
+El trés zones contaminaes, dan como resultáu transistores PNP o NPN, onde la lletra entemedia siempres correspuende a la rexón de la base, y les otres dos al emisor y al colector que, magar son del mesmu tipu y de signu contrariu a la base, tienen distinta contaminación ente elles (polo xeneral, l'emisor ta muncho más contamináu que'l colector).
+El mecanismu que representa'l comportamientu semiconductor va depender de diches contaminaciones, de la xeometría acomuñada y del tipu de teunoloxía de contaminación (espardimientu gaseosu, epitaxial, etc.) y del comportamientu cuánticu de la unión.
+
+
+=== Transistor d'efeutu de campu ===
+El transistor d'efeutu de campu d'unión (JFET), foi'l primer transistor d'efeutu de campu na práutica. Formar una barra de material semiconductor de siliciu de tipu N o P. Nos terminales de la barra establez un contautu óhmico, tenemos asina un transistor d'efeutu de campu tipu N de la forma más básica. Si espublícense dos rexones P nuna barra de material N y conéctense externamente ente sigo, va producise una puerta. A unu d'estos contactos llamarémos-y surtidor y al otru drenador. Aplicando tensión positiva ente'l drenador y el surtidor y coneutando la puerta al surtidor, vamos establecer una corriente, a la que vamos llamar corriente de drenador con polarización cero. Con un potencial negativu de puerta al que llamamos tensión de estrangulamiento, cesa la conducción na canal.
+El transistor d'efeutu de campu, o FET poles sos sigles n'inglés, que controla la corriente en función d'una tensión; tienen alta impedancia d'entrada.
+
+Transistor d'efeutu de campu d'unión, JFET, construyíu por aciu una unión PN.
+Transistor d'efeutu de campu de compuerta aisllada, IGFET, nel que la compuerta aisllar de la canal por aciu un dieléctricu.
+Transistor d'efeutu de campu MOS, MOSFET, onde MOS significa Metal-Óxidu-Semiconductor, nesti casu la compuerta ye metálica y ta dixebrada de la canal semiconductor por una capa d'óxidu.
+
+
+=== Fototransistor ===
+
+Los fototransistores son sensibles a la radiación electromagnético en frecuencies cercanes a la de la lluz visible; por cuenta de esto'l so fluxu de corriente puede ser reguláu per mediu de la lluz incidente. Un fototransistor ye, n'esencia, lo mesmo qu'un transistor normal, namái que puede trabayar de 2 maneres distintes:
+
+Como un transistor normal cola corriente de base (IB) (manera común);
+Como fototransistor, cuando la lluz qu'incide nesti elementu fai les vegaes de corriente de base. (IP) (manera de llume).
+
+
+== Transistores y electrónica de potencia ==
+Col desenvolvimientu teunolóxicu y evolución de la electrónica, la capacidá de los dispositivos semiconductores pa soportar cada vegada mayores niveles de tensión y corriente dexó'l so usu n'aplicaciones de potencia. Ye según anguaño los transistores son emplegaos en conversores estáticos de potencia, controles pa motores y llaves d'alta potencia (principalmente inversores), anque'l so principal usu ta basáu na amplificación de corriente dientro d'un circuitu zarráu.
+
+
+== Construcción ==
+
+
+=== Material semiconductor ===
+
+Los primeres BJT facer a partir de xermaniu (Gue). Siliciu (Si) los tipos anguaño predominen pero ciertes versiones de microondes avanzáu y d'altu rendimientu agora empleguen el semiconductor compuestu de arseniuro de galio de material (GaAs) y el siliciu-germanio aleación de semiconductores (SiGe). Individual material del elementu semiconductor (Gue y Si) descríbese como elemental.
+
+
+== El transistor bipolar como amplificador ==
+El comportamientu del transistor puede vese como dos diodos (Modelu de Ebers-Moll), unu ente base y emisor, polarizáu en direutu y otru diodu ente base y colector, polarizáu n'inversu. Esto quier dicir qu'ente base y emisor vamos tener una tensión igual a la tensión direuto d'un diodu, ye dicir 0,6 a 0,8 V pa un transistor de siliciu y unos 0,4 pal xermaniu.
+Lo interesante del dispositivu ye que nel colector vamos tener una corriente proporcional a la corriente de base:
+IC = β IB, esto ye, ganancia de corriente cuando β>1. Pa transistores normales de señal, β varia ente 100 y 300.
+Entós, esisten tres configuraciones pal amplificador:
+
+
+=== Emisor común ===
+
+La señal aplicar a la base del transistor y estrayer pol colector. L'emisor coneutar a les mases tantu de la señal d'entrada como a la de salida. Nesta configuración tiense ganancia tantu de tensión como de corriente.
+En casu de tener resistencia d'emisor, RY > 50 Ω, y pa frecuencies baxes, la ganancia en tensión avérase abondo bien pola siguiente espresión:
+
+  
+    
+      
+        
+          G
+          
+            V
+          
+        
+        =
+        −
+        
+          
+            
+              R
+              
+                C
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle G_{V}=-{\frac {R_{C}}{R_{Y}}}}
+  
+ ; y la impedancia de salida, por RC
+Como la base ta coneutada al emisor por un diodu en direutu, ente ellos podemos suponer una tensión constante, Vg. Tamién vamos suponer que β ye constante. Entós tenemos que la tensión d'emisor ye: 
+  
+    
+      
+        
+          V
+          
+            Y
+          
+        
+        =
+        
+          V
+          
+            B
+          
+        
+        −
+        
+          V
+          
+            g
+          
+        
+      
+    
+    {\displaystyle V_{Y}=V_{B}-V_{g}}
+  
+
+Y la corriente d'emisor: 
+  
+    
+      
+        
+          I
+          
+            Y
+          
+        
+        =
+        
+          
+            
+              V
+              
+                Y
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                V
+                
+                  B
+                
+              
+              −
+              
+                V
+                
+                  g
+                
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle I_{Y}={\frac {V_{Y}}{R_{Y}}}={\frac {V_{B}-V_{g}}{R_{Y}}}}
+  
+.
+La corriente d'emisor ye igual a la de colector más la de base: 
+  
+    
+      
+        
+          I
+          
+            Y
+          
+        
+        =
+        
+          I
+          
+            C
+          
+        
+        +
+        
+          I
+          
+            B
+          
+        
+        =
+        
+          I
+          
+            B
+          
+        
+        (
+        β
+        +
+        1
+        )
+        =
+        
+          I
+          
+            C
+          
+        
+        (
+        1
+        +
+        
+          
+            1
+            β
+          
+        
+        )
+      
+    
+    {\displaystyle I_{Y}=I_{C}+I_{B}=I_{B}(\beta +1)=I_{C}(1+{\frac {1}{\beta }})}
+  
+. Estenando 
+  
+    
+      
+        
+          I
+          
+            C
+          
+        
+        =
+        
+          
+            
+              I
+              
+                Y
+              
+            
+            
+              1
+              +
+              
+                
+                  1
+                  β
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle I_{C}={\frac {I_{Y}}{1+{\frac {1}{\beta }}}}}
+  
+
+La tensión de salida, que ye la de colector calcúlase como: 
+  
+    
+      
+        
+          V
+          
+            C
+          
+        
+        =
+        V
+        c
+        c
+        −
+        
+          I
+          
+            C
+          
+        
+        
+          R
+          
+            C
+          
+        
+        =
+        V
+        c
+        c
+        −
+        
+          R
+          
+            C
+          
+        
+        
+          
+            
+              I
+              
+                Y
+              
+            
+            
+              1
+              +
+              
+                
+                  1
+                  β
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle V_{C}=Vcc-I_{C}R_{C}=Vcc-R_{C}{\frac {I_{Y}}{1+{\frac {1}{\beta }}}}}
+  
+
+Como β >> 1, puede averase: 
+  
+    
+      
+        1
+        +
+        
+          
+            1
+            β
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle 1+{\frac {1}{\beta }}=1}
+  
+ y, entós, 
+  
+    
+      
+        
+          V
+          
+            C
+          
+        
+        =
+        V
+        c
+        c
+        −
+        
+          R
+          
+            C
+          
+        
+        
+          I
+          
+            Y
+          
+        
+        =
+        V
+        c
+        c
+        −
+        
+          R
+          
+            C
+          
+        
+        
+          
+            
+              
+                V
+                
+                  B
+                
+              
+              −
+              
+                V
+                
+                  g
+                
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle V_{C}=Vcc-R_{C}I_{Y}=Vcc-R_{C}{\frac {V_{B}-V_{g}}{R_{Y}}}}
+  
+
+Que podemos escribir como 
+  
+    
+      
+        
+          V
+          
+            C
+          
+        
+        =
+        (
+        V
+        c
+        c
+        +
+        
+          R
+          
+            C
+          
+        
+        
+          
+            
+              V
+              
+                g
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+        )
+        −
+        
+          R
+          
+            C
+          
+        
+        
+          
+            
+              V
+              
+                B
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle V_{C}=(Vcc+R_{C}{\frac {V_{g}}{R_{Y}}})-R_{C}{\frac {V_{B}}{R_{Y}}}}
+  
+
+Vemos que la parte 
+  
+    
+      
+        (
+        V
+        c
+        c
+        +
+        
+          R
+          
+            C
+          
+        
+        
+          
+            
+              V
+              
+                g
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle (Vcc+R_{C}{\frac {V_{g}}{R_{Y}}})}
+  
+ ye constante (nun depende de la señal d'entrada), y la parte 
+  
+    
+      
+        −
+        
+          V
+          
+            B
+          
+        
+        
+          
+            
+              R
+              
+                C
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle -V_{B}{\frac {R_{C}}{R_{Y}}}}
+  
+ danos la señal de salida. El signu negativu indica que la señal de salida ta desfasada 180° al respective de la d'entrada.
+Finalmente, la ganancia queda: 
+  
+    
+      
+        
+          G
+          
+            V
+          
+        
+        =
+        
+          
+            
+              V
+              
+                C
+              
+            
+            
+              V
+              
+                B
+              
+            
+          
+        
+        =
+        −
+        
+          
+            
+              R
+              
+                C
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle G_{V}={\frac {V_{C}}{V_{B}}}=-{\frac {R_{C}}{R_{Y}}}}
+  
+
+La corriente d'entrada, 
+  
+    
+      
+        
+          I
+          
+            B
+          
+        
+        =
+        
+          
+            
+              I
+              
+                Y
+              
+            
+            
+              1
+              +
+              β
+            
+          
+        
+      
+    
+    {\displaystyle I_{B}={\frac {I_{Y}}{1+\beta }}}
+  
+, qu'averamos por 
+  
+    
+      
+        
+          I
+          
+            B
+          
+        
+        =
+        
+          
+            
+              I
+              
+                Y
+              
+            
+            β
+          
+        
+        =
+        
+          
+            
+              V
+              
+                Y
+              
+            
+            
+              
+                R
+                
+                  Y
+                
+              
+              β
+            
+          
+        
+        =
+        
+          
+            
+              
+                V
+                
+                  B
+                
+              
+              −
+              
+                V
+                
+                  g
+                
+              
+            
+            
+              
+                R
+                
+                  Y
+                
+              
+              β
+            
+          
+        
+      
+    
+    {\displaystyle I_{B}={\frac {I_{Y}}{\beta }}={\frac {V_{Y}}{R_{Y}\beta }}={\frac {V_{B}-V_{g}}{R_{Y}\beta }}}
+  
+.
+Suponiendo que VB>>Vg, podemos escribir:
+  
+    
+      
+        
+          I
+          
+            B
+          
+        
+        =
+        
+          
+            
+              V
+              
+                B
+              
+            
+            
+              
+                R
+                
+                  Y
+                
+              
+              β
+            
+          
+        
+      
+    
+    {\displaystyle I_{B}={\frac {V_{B}}{R_{Y}\beta }}}
+  
+
+y la impedancia d'entrada: 
+  
+    
+      
+        
+          Z
+          
+            i
+            n
+          
+        
+        =
+        
+          
+            
+              V
+              
+                B
+              
+            
+            
+              I
+              
+                B
+              
+            
+          
+        
+        =
+        
+          
+            
+              V
+              
+                B
+              
+            
+            
+              
+                V
+                
+                  B
+                
+              
+              
+                
+                  R
+                  
+                    Y
+                  
+                
+                β
+              
+            
+          
+        
+        =
+        
+          R
+          
+            Y
+          
+        
+        β
+      
+    
+    {\displaystyle Z_{in}={\frac {V_{B}}{I_{B}}}={\frac {V_{B}}{\frac {V_{B}}{R_{Y}\beta }}}=R_{Y}\beta }
+  
+
+Pa tener en cuenta la influencia de frecuencia tienen d'utilizase modelos de transistor más ellaboraos. Ye bien frecuente usar el modelu en pi.
+
+
+=== Base común ===
+
+La señal aplicar al emisor del transistor y estrayer pol colector. La base coneutar a les mases tantu de la señal d'entrada como a la de salida. Nesta configuración tiense ganancia namái de tensión. La impedancia d'entrada ye baxa y la ganancia de corriente daqué menor qu'unu, por cuenta de que parte de la corriente d'emisor sale pola base. Si añadimos una resistencia d'emisor, que puede ser la mesma impedancia de salida de la fonte de señal, un analís similar al realizáu nel casu d'emisor común, danos la ganancia averada siguiente: 
+  
+    
+      
+        
+          G
+          
+            V
+          
+        
+        =
+        
+          
+            
+              R
+              
+                C
+              
+            
+            
+              R
+              
+                Y
+              
+            
+          
+        
+      
+    
+    {\displaystyle G_{V}={\frac {R_{C}}{R_{Y}}}}
+  
+.
+La base común suelse utilizar p'afaer fontes de señal de baxa impedancia de salida como, por casu, micrófonos dinámicos.
+
+
+=== Colector común ===
+
+La señal aplicar a la base del transistor y estrayer pol emisor. El colector coneutar a les mases tantu de la señal d'entrada como a la de salida. Nesta configuración tiense ganancia de corriente, pero non de tensión que ye llixeramente inferior a la unidá. La impedancia d'entrada ye alta, aproximao β+1 vegaes la impedancia de carga. Amás, la impedancia de salida ye baxa, aproximao β vegaes menor que la de la fonte de señal.
+
+
+== El transistor bipolar frente a la válvula termoiónica ==
+Antes de l'apaición del transistor los inxenieros utilizaben elementos activos llamaos válvules termoiónicas. Les válvules tienen carauterístiques llétriques similares a la de los transistores d'efeutu campu (FET): la corriente que los traviesa depende de la tensión nel borne de comandu, llamáu rejilla. Les razones poles que'l transistor reemplazó a la válvula termoiónica son delles:
+
+Les válvules precisen tensiones bien altes, del orde de les centenes de voltios, que son peligroses pal ser humanu.
+Les válvules peracaben muncha enerxía, lo que les vuelve particularmente pocu preseos pal usu con bateríes.
+Probablemente, unu de los problemes más importantes fuera'l pesu. El xasis necesariu p'agospiar les válvules y el tresformadores riquíos pal so funcionamientu sumaben un pesu importante, que diba dende dellos quilos a decenes de quilos.
+El tiempu mediu ente falles de les válvules termoiónicas ye bien curtiu comparáu col de los transistores, sobremanera pola mor del calor xeneráu.
+Les válvules presenten una cierta demoranza n'empezar a funcionar, yá que precisen tar calientes pa establecer la conducción.
+El transistor ye intrínsecamente insensible al efeutu microfónico, bien frecuente nes válvules.
+Los transistores son más pequeños que les válvules, inclusive que los nuvistores. Anque esiste unanimidá sobre esti puntu, convien faer una salvedá: nel casu de dispositivos de potencia, estos tienen de llevar un disipador, de cuenta que'l tamañu que s'hai de considerar ye'l del dispositivu (válvula o transistor) más el del disipador. Como les válvules pueden funcionar a temperatures más elevaes, la eficiencia del disipador ye mayor nelles que nos transistores, colo que basta un disipador muncho más pequeñu.
+Los transistores trabayen con impedancias baxes, esto ye con tensiones amenorgaes y corrientes altes; ente que les válvules presenten impedancias elevaes y polo tanto trabayen con altes tensiones y pequeñes corrientes.
+Finalmente, el costu de los transistores non solamente yera bien inferior, sinón que cuntaba cola promesa de que siguiría baxando (como de fechu asocedió) con abonda investigación y desenvolvimientu.
+Como exemplu de toos estos inconvenientes puede citase al primer ordenador dixital, llamada ENIAC. Yera un equipu que pesaba más de trenta tonelaes y consumía 200 quilovatios, suficientes p'alimentar una pequeña ciudá. Tenía alredor de 18 000 válvules, de les cualos dalgunes quemar acaldía, precisando una loxística y una organización importantes.
+Cuando'l transistor bipolar foi inventáu en 1947, foi consideráu una revolución. Pequeñu, rápido, fiable, poco costosu, sobriu nes sos necesidaes d'enerxía, reemplazó progresivamente a la válvula termoiónica mientres la década de 1950, pero non del tou. N'efeutu, mientres los años 1960, dellos fabricantes siguieron utilizando válvules termoiónicas n'equipos de radiu de gama alta, como Collins y Drake; depués el transistor movió a la válvula de los tresmisores pero non del tou de los amplificadores de radiofrecuencia. Otros fabricantes, d'equipu d'audiu esta vegada, como Fender, siguieron utilizando válvules n'amplificadores d'audiu pa guitarres. Les razones de la sobrevivencia de les válvules termoiónicas son delles:
+
+El transistor nun tien les carauterístiques de linealidad a alta potencia de la válvula termoiónica, polo que nun pudo reemplazala nos amplificadores de tresmisión de radio profesionales y de radioaficionaos sinón hasta dellos años dempués.[ensin referencies]
+Los harmónicos introducíos pola non linealidad de les válvules resulten prestoses al escuchu humanu (vease psicoacústica), polo que son preferíos polos audiófilos.
+El transistor ye bien sensible a los efeutos electromagnéticos de les esplosiones nucleares, polo que se siguieron utilizando válvules termoiónicas en dellos sistemes de control-comandu d'aviones caza de fabricación soviética.[ensin referencies]
+Les válvules son capaces de remanar potencies bien grandes, impensables pa los transistores nos sos empiezos; sicasí al traviés de los años desenvolviéronse etapes de potencia con múltiples transistores en paralelu capaces de consiguilo.
+
+
+== Cultura popular ==
+Cuestionóse l'orixe del transistor, por ser una parte esencial pa la creación de cualquier artefautu teunolóxicu. Ello ye que na cultura popular, créese que s'utilizó Inxeniería inversa en teunoloxía alienígena pa llograr desenvolvelo. El Incidente ovni de Roswell causó conmoción nos años 40, y popularmente, créese que los llaboratorios AT&T utilizaron restos de naves estraterrestres pa desenvolver un aparatu como'l transistor.
+
+
+== Ver tamién ==
+Semiconductor
+Transistor d'aleación
+Transistor d'unión bipolar
+Transistor IGBT
+Thin-filme transistor
+Transistor uniunión
+Historia del transistor
+Quiteron
+
+
+== Referencies ==
+
+
+== Enllaces esternos ==
+ Wikimedia Commons acueye conteníu multimedia sobre Transistor.
+Transistores Vs. Válvules p'aplicaciones n'audiu d'alta fidelidá Archiváu 2010-09-16 en Wayback Machine, Oscar Bonello, fundador de la compañía Solidyne y miembru d'Audiu Engineering Society (AES), propón una interpretación posible sobre la rivalidá ente entusiastes d'una o otra teunoloxía.
+Como funcionen realmente los transistores (enllaz rotu disponible n'Internet Archive; ver l'historial y la última versión). Versión orixinal n'Inglés
+Símbolos de transistores

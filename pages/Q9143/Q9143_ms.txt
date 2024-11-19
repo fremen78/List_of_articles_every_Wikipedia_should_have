@@ -1,0 +1,98 @@
+Bahasa pengaturcaraan atau bahasa kompulasi ialah teknik komunikasi piawai untuk menjelaskan arahan kepada komputer. Ia merupakan satu set peraturan sintaktik (syntactic) dan semantik (semantic) yang digunakan untuk menghasilkan sebuah atur cara komputer. Bahasa pengaturcaraan membenarkan pengaturcara (Programmer) membutir atau memberi spesifikasi terperinci perkara-perkara berikut:-
+
+data yang diperlu diproses oleh komputer
+bagaimana data disimpan atau dihantar
+apa yang perlu dilakukan dalam pelbagai keadaan secara lebih mendalam (algoritma)
+
+
+== Pengenalan ==
+Fungsi utama bahasa pengaturcaraan ialah untuk membenarkan juruaturcara menyampaikan hasratnya bagi proses perkomputeran, dengan lebih mudah berbanding dengan apa yang mereka boleh lakukan dengan bahasa tahap rendah atau kod mesin. Disebabkan tujuan ini, bahasa pengaturcaraan secara amnya direkabentuk untuk menggunakan sintaks tahap tinggi, yang lebih mudah difahami oleh juruaturcara. bahasa pengaturcaraan adalah peralatan yang penting bagi membantu jurutera perisian menulis aturcara (program) yang lebih baik dengan lebih cepat.
+Pemahaman terhadap bahasa pengaturcaraan adalah penting bagi mereka yang mendalami bidang sains komputer. Ini adalah kerana sebarang bentuk proses pengkomputeran dilakukan dengan bahasa komputer.
+Dalam beberapa dekad kebelakangan ini, kebanyakan bahasa komputer telah diperkenalkan, bersilih-ganti, dan telah diubahsuai atau digabungkan. Walaupun terdapat beberapa percubaan untuk menghasilkan hanya satu bahasa pengaturcaraan universal yang boleh diguna untuk pelbagai tujuan, namun kebanyakan percubaan ini telah gagal. Beberapa bahasa pengaturcaraan lain masih diperlu kerana
+
+penggunaannya yang berbeza dari segi penghasilan perisian perniagaan, sains, serta hobi.
+Sesetengah bahasa pengaturcaraan tidak sesuai digunakan oleh pengguna baru, dan memerlukan kepakaran.
+Juruaturcara mempunyai citarasa tersendiri
+masa larian mungkin berbeza bagi aturcara yang *dilarikan pada pengawal mikro, dengan aturcara yang dilarikan pada Superkomputer.
+*"dilarikan" di sini bermaksud melancarkan aturcara
+Terdapat pelbagai bahasa dengan fungsi khusus dan digunakan untuk situasi tertentu:
+
+PHP ialah bahasa pengskripan yang digunakan dalam pembangunan web
+Perl lebih sesuai untuk memanipulasi perkataan
+Bahasa C lebih luas penggunaan dalam pembangunan Sistem Pengoperasian dan Penyusun
+Bahasa pengaturcaraan membolehkan atur cara komputer kurang bergantung pada mesin atau persekitaran tertentu sahaja. Ini kerana bahasa pengaturcaraaan ditukar menjadi kod mesin untuk mesin tertentu, dan bukan dilarikan secara terus oleh mesin. Ini merupakan tujuan utama penghasilan bahasa pengaturcaraan Fortran, (salah satu daripada bahasa pengaturcaraan yang pertama), iaitu ketidak-bergantungan terhadap mesin.
+Terdapat 2 mekanisme yang digunakan untuk menterjemah sesuatu aturcara, yang ditulis dalam bahasa pengaturcaraan, kepada kod mesin tertentu pada komputer:
+
+Mekanisme kompilasi
+Mekanisme penterjemah
+
+
+=== Mekanisme kompilasi ===
+Mekanisme terjemahan yang menterjemah teks aturcara secara keseluruhan dan kemudian melarikan format dalamannya. Aturcara Pengkompil menerima teks aturcara (dikenali sebagai kod sumber) sebagai data input, dan membekalkan kod objek sebagai output. Kod Objek yang dihasilkan adalah kod mesin yang boleh dilarikan secara terus oleh CPU komputer, atau kod yang padan dengan spesifikasi Mesin Maya(Virtual Machine).
+
+
+=== Mekanisme pentafsir ===
+Mekanisme terjemahan yang menterjemah kod atur cara pada masa-jalanan (runtime), di mana setiap langkah yang ditafsir dilarikan terus. Penghasilan aturcara dengan cara ini biasanya dilarikan lebih lambat berbanding aturcara yang dikompil. Walau bagaimanapun, ia lebih fleksibel kerana boleh berinteraksi dengan persekitaran jalanan. Untuk maklumat lanjut, lihat bahasa tafsiran. Bahasa pengaturcaraan yang menggunakan cara ini dikenali sebagai bahasa skrip.
+Kebanyakan bahasa pengaturcaraan boleh diterjemah dengan kedua-dua cara, tetapi kebanyakannya lebih sesuai untuk salah satu cara.
+
+
+== Ciri-ciri bahasa pengaturcaraan ==
+Setiap bahasa pengaturcaraan boleh digambarkan sebagai satu set spesifikasi yang formal dengan sintaks, perbendaharaan kata, dan maksud. Spesifikasi ini termasuk:
+
+Data dan struktur data
+Arahan dan Aliran Kawalan (Control Flow)
+Mekanisme rujukan dan penggunaan semula
+Falsafah reka bentuk
+Kebanyakan bahasa yang diguna secara meluas (atau yang telah diguna dalam tempoh yang lama), mempunyai badan piawaian yang sering bermesyuarat untuk mencipta dan menerbit bahasa tersebut dengan definisi formal, dan membincangkan tentang mengembangkan atau menambah definisi yang sedia ada.
+
+
+=== Data dan struktur data ===
+Di dalam sebuah komputer digital yang moden, data disimpan dalam bentuk binari (keadaan pasang-tutup - on-off state). Data biasanya mewakili maklumat dalam dunia nyata seperti nama, akaun bank, dan pengukuran. Maka, data tahap rendah diatur oleh Bahasa Pengaturcaraan kepada konsep tahap tiggi tersebut.
+Sistem tertentu di mana data diatur di dalam sebuah atur cara, ialah sistem jenis (type system) bagi sesebuah bahasa pengaturcaraan. Reka bentuk dan pemahaman tentang sistem jenis dipanggil Teori Jenis. Bahasa Pengaturcaraan boleh diklasifikasikan sebagai jenis statik (statically typed), dan jenis dinamik (dynamically typed).
+Bahasa Jenis Statik boleh dipecahkan lagi kepada bahasa dengan jenis manifestasi (di mana jenis bagi setiap pembolehubah (variable) dan penakrifan fungsi (function declaration) ditakrif secara tepat), dan Bahasa Jenis Rujukan (type-infered).
+Biasanya Bahasa Jenis Rujukan dan Bahasa Jenis Dinamik dipanggil Jenis Pasif (latently typed).
+Bagi Bahasa Jenis Statik, selalunya terdapat Jenis yang bertakrif(pre-defined type), bagi setiap data (contohnya nombor dalam lingkungan tertentu, serta rentetan aksara-strings of letters), dan pembolehubah hanya mengandungi satu Jenis yang tetap, dan hanya membenarkan operasi tertentu saja (yakni, nombor tidak boleh bertukar menjadi nama, dan sebaliknya). Contoh Bahasa Jenis Statik ialah bahasa pengaturcaraan C, C++, dan Java.
+Bahasa Jenis Dinamik menganggap semua lokasi data serupa. Oleh itu, operasi yang tidak dibenarkan (seperti melakukan proses tambahan dengan nama, atau menyusun nombor mengikut huruf) tidak akan menghasilkan ralat sehingga masa larian. Contoh Bahasa Jenis Dinamik ialah Lisp, JavaScript, Tcl, dan Prolog.
+Bahasa Jenis Rujukan menganggap kesemua data tidak mempunyai jenis, tetapi melakukan analisis mendalam tentang bagaimana aturcara mengguna data, bagi menentukan operasi mudah yang perlu dilaksanakan terhadap data. Dengan ini, ia boleh mengenali tentang jenis pembolehubah pada masa kompil. Bahasa Jenis Rujukan lebih fleksibel untuk digunakan, dan menghasilkan aturcara yang lebih berkesan. Walau bagaimanapun, keupayaan ini adalah sukar untuk disertakan di dalam Bahasa Pengaturcaraan biasa. Oleh itu Bahasa Pengaturcaraan jenis ini agak sedikit. Contoh Bahasa Jenis Rujukan adalah MUMPS, dan ML.
+
+Kebanyakan Bahasa menyediakan cara untuk menghimpun Struktur Data yang kompleks daripada Jenis yang sedia ada dan mengkaitkan nama kepada Gabungan Jenis yang baru ini (dengan penggunaan Array, Senarai, Longgokan, Fail).
+Bahasa Pengaturcaraan Berorientasikan Objek membenarkan Juruaturcara menakrifkan Jenis Data yang dipanggil Objek. Objek mempunyai fungsi dan pembolehubahnya tersendiri(dipanggil method, dan attribut). Sebuah aturcara yang mengandungi objek membenarkan objek bekerja secara bebas tetapi berinteraksi dengan aturcara-aturcara bawahan (sub-programs). Interaksi tersebut boleh direkabentuk, pada masa pengkodan, untuk mensimulasi interaksi objek nyata. Fungsi ini amat berguna dan intuitif(intuitive). Aturcara seperti Python dan Ruby telah berkembang sebagai Bahasa Berorientasikan Objek. Bahasa ini amat mudah dipelajari dan digunakan, dan semakin popular di kalangan para juruaturcara professional, di samping ia terbuka kepada pengguna bukan professional.
+Selain daripada bila dan bagaimana perhubungan antara ekspresi dan Jenis ditentukan, terdapat juga persoalan Jenis apa yang Bahasa tersebut takrifkan, dan Jenis apa yang ia tentukan sebagai nilai ekspresi(expressed values), dan sebagai nilai bernama (denoted values). Bahasa Pengaturcaraan tahap rendah, seperti C, biasanya membenarkan aturcara menamakan lokasi memori, kawasan memori, dan pembolehubah statik masa kompil(compile-time contants), disamping membenarkan ekspresi mengembalikan nilai yang boleh dimuat di dalam daftar mesin. Bahasa ANSI C mengembangkan ciri-ciri ini, dan membenarkan ekspresi mengembalikan nilai struct juga.
+Bahasa Fungsi (Functional Language) biasanya membenarkan pembolehubah menamakan nilai proses masa larian secara terus. Bahasa yang menggunakan pungutan sampah (garbage collection) adalah bebas untuk membenarkan data struktur sebagai nilai expresi, atau nilai bernama.
+
+
+=== Arahan dan aliran kawalan ===
+Setelah data dispesifikasikan, mesin kemudiannya diarahkan cara melakukan operasi pada data. Ungkapan mudah boleh dispesifikasikan mengguna katakunci, atau mengguna stuktur tatabahasa yang jelas. Setiap Bahasa mengambil unit-unit daripada ungkapan dan menggabungkan mereka menggunakan sistem aturan. Bergantung dengan Bahasa, cara yang berbeza digunakan untuk menyusun ungkapan mudah kepada kumpulan. Ini membenarkan pengguna untuk menulis aturcara yang berupaya untuk menerima bermacam-macam input, dan tidak hanya tertakluk pada nilai yang terhad. Tambahan lagi, selain arahan untuk memanipulasi data, arahan lain yang biasa digunakan dalam Bahasa Pengaturcaraan adalah arahan untuk Aliran Kawalan (cawangan, takrifan case, loop, jejakbalik, fungsi komposisi) .
+
+
+=== Mekanisme rujukan dan guna semula ===
+Idea di sebalik Rujukan (reference), ialah perlunya sesuatu cara untuk menetapkan muatan storan (storage space) secara tidak langsung. Cara yang biasa digunakan ialah menerusi pembolehubah bernama. Bergantung dengan Bahasa, rujukan mungkin berupa penunjuk (pointer) kepada muatan storan lain, yang disimpan dalam bentuk pembolehubah (atau satu kumpulan pembolehubah). Serupa dengan cara penamaan storan (menggunakan penunjuk), ialah cara untuk menamakan satu kumpulan arahan. Kebanyakan Bahasa Pengaturcaraan menggunakan panggilan Makro, panggilan prosedur, atau panggilan fungsi, sebagai ungkapan yang mengguna nama tersebut. Penggunaan nama simbolik dengan cara ini membolehkan aturcara menjadi lebih fleksibel, selain membolehkan penggunaan semula aturcara (reusability). Rujukan tidak langsung kepada aturcara yang ada, atau bahagian data sedia ada, membenarkan kebanyakan Bahasa Pengaturcaraan Berorientasikan Aplikasi untuk menyatukan operasi biasa seolah-olah ia termasuk di dalam Bahasa Pengaturcaraan.
+
+
+== Falsafah rekabentuk ==
+Sempena tujuan yang disebut di atas, setiap Bahasa Pengaturcaraan telah dibangunkan menggunakan rekabentuk khas atau falsafah. Beberapa aspek ditekankan seperti, cara Bahasa menggunakan Stuktur Data, atau dengan notasi khas apakah yang menggalakkan cara penyelesaian tertentu atau menyampaikan strukturnya.
+Disebabkan Bahasa Pengaturcaraan adalah Bahasa tak tulen/artifisial, ia memerlukan disiplin yang tegas, untuk menspesifikasikan secara tepat operasi yang dikehendaki. Bahasa Pengaturcaraan tidak lari daripada ralat, bagaimanapun beban untuk mengenali dan menggunakan perbendaharaan kata khas dikurangkan dengan penggunaan pesanan bantuan yang dijanakan oleh Bahasa Pengaturcaraan. Terdapat beberapa Bahasa Pengaturcaraan yang memberi kebebasan yang lebih tinggi dengan membenarkan ubahsuaian-diri, di mana aturcara menulis semula bahagian dalamannya untuk menangani kes baru. Biasanya, hanya Bahasa Mesin, dan ahli daripada Keluarga Lisp yang menyediakan kemampuan tersebut. Beberapa Bahasa Pengaturcaraan seperti MUMPS dan Perl membenarkan pengubahsuaian terhadap Struktur Data yang mengandungi serpihan aturcara, dan menyediakan cara untuk memindahkan kawalan aturcara kepada Struktur Data. Bahasa yang menyokong Pautan Dinamik dan pemuatan, seperti C, C++ dan Java, berupaya meniru sifat ubahsuaian-diri, dengan memasukkan pengkompil kecil atau memanggil pengkompil dan memautkan kod objek yang terhasil. Penterjemahan kod dengan mengkompilnya semula dalam masa nyata dipanggil Pengkompilasi Semula Dinamik. Emulator dan Mesin Maya mengeksploit teknik ini bagi mendapat prestasi yang lebih.
+
+
+== Sejarah bahasa pengaturcaraan ==
+Pembangunan Bahasa Pengaturcaraan mengikut perkembangan proses fizikal dan elektronik yang diguna dalam komputer hari ini.
+Charles Babbage terkenal sebagai perekabentuk mesin ala-komputer yang pertama, di mana beberapa aturcara telah ditulis padanya, oleh Ada Lovelace.
+Alan Turing mengguna konstruktur teori Mesin Turing yang berfungsi secara prinsip seperti komputer moden, berdasarkan aturcara tahap rendah yang diinput.
+Dalam 1940an, komputer berkuasa elektrik moden yang pertama telah dicipta, dan memerlukan Juruaturcara mengawal mesin secara manual(dengan tangan). Beberapa keperluan untuk pengiraan ketenteraan, telah menjadi kuasa penolak dalam pembangunan komputer. Ini termasuk enkripsi, dekripsi, pengiraan pelancaran, dan pengiraan jumlah nombor yang besar dalam pembangunan bom atom. Pada masa itu, bentuk komputer amat besar, lambat, dan mahal. Kemajuan teknologi elektronik selepas perang telah mendorong pembinaan komputer elektronik yang lebih praktikal. Pada masa itu, Konrad Zuse memberi gambaran tentang penggunaan Bahasa Pengaturcaraan seperti pada hari ini.
+Penemuan seterusnya dalam teknologi elektronik (transistor, litar bersepadu, dan cip), telah mendorong pembangunan komputer yang lebih diharap, dan berguna. Pembangunan ini selari dengan pembangunan beberapa variasi Bahasa Komputer yang dilarikan di atasnya. Apabila Komputer lebih mudah didapati dan diguna, lebih ramai pengguna menggunakan komputer. Ledakan pembangunan ini seterusnya menyebabkan kemunculan Internet, lebih mudah mendapatkan Komputer Peribadi, serta meningkatkan penggunaan Bahasa Pengaturcaraan Komputer, seperti Python, Visual Basic, dan sebagainya.
+
+
+== 5 Contoh bahasa pengaturcaraan ==
+Bahasa Pengaturcaraan Serba Guna
+Bahasa Pengaturcaraan Fungsi
+Bahasa Pengaturcaraan Berstruktur
+Bahasa Pengaturcaraan Berorientasikan Objek
+Bahasa Pengaturcaraan Logik
+
+
+== Lihat juga ==
+Bahasa komputer
+Glosari pengaturcaraan
+Senarai bahasa pengaturcaraan
+Hello world
+Assalamualaikum dunia

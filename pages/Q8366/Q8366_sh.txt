@@ -1,0 +1,231 @@
+Algoritam je opis za rešavanje nekog problema. Reč dolazi iz prezimena persijskog matematičara Al Horezmija. Algoritam je bio izraz koji opisuje način računanja decimalnim brojevima uvedenim oko 1600. godine u Evropi. Algoritmičarima su se ranije zvali oni matematičari koji ne operišu simbolima množina predstavljenim na abakusu, nego jednim (indijskim ili arapskim) sistemom znakova za brojeve (od 16. veka raširenim u Evropi).
+U novije vreme, algoritam je pojam koji se gotovo isključivo vezuje za informatiku i, mada ne postoji jedinstvena opšteprihvaćena definicija, podrazumeva se da je u pitanju nekako opisana procedura za obavljanje posla. U tu svrhu se definišu algoritamski jezici. To su formalizovani jezici kojima se relativno lako opisuju postupci rešavanja problema predstavljenih algoritmom, takvi su naprimer programski jezici Algol, Fortran i Kobol.
+U matematičkoj logici je algoritam generalizovan pojam i odnosi se na postupak za postupno pretvaranje nizova znakova.
+
+
+== O nastanku ==
+
+Algoritam je u matematiku uveo iranski matematičar Muhamed Al Horezmi. Napisao je knjigu Al Horezmi o indijskoj veštini računanja gde u islamsku matematiku uvodi indijske cifre i decimalni brojni sistem. Ova knjiga biva kasnije prevedena na latinski kao Algoritmi de numero indorum. Od lošeg latinskog prevoda njegovog prezimena i potiče reč algoritam, i dugo je označavala postupak za račun sa decimalnim brojnim sistemom (i indijskim odnosno, kako se kasnije pričalo, arapskim ciframa).
+
+
+== Definicija algoritma ==
+Algoritam je konačna i precizno definisana procedura, niz dobro definisanih pravila, kojom se ulazne vrednosti transformišu u izlazne, ili se opisuje izvršavanje nekog postupka.
+Danas se reč algoritam često vezuje za pojam računarstva mada uopšteno algoritam možemo smatrati kao uputstvo kako rešiti neki zadatak ili problem. Tako se i uputstvo za slanje čoveka na Mesec i uputstvo za pravljenje ruske salate sastoji od niza koraka, postupaka, koje treba uraditi i koji vode ispunjenju cilja ili rešavanju problema. Uputstvo može sadržati korake koji se ponavljaju više puta ili korake kada treba doneti neku odluku, na osnovu nekog kriterijuma. Dobro uputstvo predviđa i postupak kada nisu svi uslovi ispunjeni npr. prva posada za slanje na Mesec izgorela pri testiranju, ili nema krompira u frižideru a počeli smo da spremamo žumance za majonez. Korektno izvršavanje svakog koraka ne rešava zadatak ako je algoritam bio pogrešan.
+Različiti algoritmi mogu rešiti isti problem različitim nizom postupaka uz manje ili više napora, za kraće ili duže vreme. Obzirom da je rezultat isti, algoritmi se mogu porediti po svojoj efikasnosti, brzini ili kompleksnosti.
+
+
+== Primeri algoritma ==
+Primer algoritma iz svakodnevnog života je kuvanje čaja. Svaki korak pripremanja čaja mora biti izvršen pravilno kako bi se moglo preći na sledeći i u konačnom vremenu dobili skuvan čaj.
+Algoritam kuvanja čaja glasi:
+
+Uzeti lonče i sipati vodu.
+Uključiti ringlu.
+Sačekati dok voda ne proključa.
+Kad voda proključa, skinuti lonče i isključiti ringlu.
+Staviti kesicu čaja u lonče.
+Po želji, dodati kašiku šećera, mleko ili limun.
+Sipati čaj u šolju.
+Iz ovog jednostavnog primera može se videti postupnost i konačnost algoritma. Naime, nema previše koristi od algoritma koji se nikada ne završava ili algoritma čije se naredbe izvode nepredvidljivo ili im je rezultat nepredvidljiv.
+Primer kompleksnijeg algoritma je Euklidov algoritam za određivanje najvećeg zajedničkog delioca:
+
+Podeliti broj a brojem b pri čemu se dobija količnik c i ostatak r
+Broj a uzima vrednost broja b
+Broj b uzima vrednost r
+Ponavljati sve dok ostatak r ne bude jednak 0. Najveći zajednički delilac je trenutna vrednost broja a
+
+
+== Istorija ==
+Prvi algoritam koji se može smatrati procedurom čija je namena račun na automatskoj mašini je napisala Ejda Bajron 1842. godine. U pitanju je algoritam za račun Bernulijevih brojeva na analitičkoj mašini Čarlsa Bebidža. Ta mašina nikad nije proradila, ali je njen algoritam ostavio dubok trag. Danas se to priznaje kao prvi računarski algoritam, a Ejda Bajron, ledi Lavlejs, je priznata kao prvi programer u istoriji. U njenu čast je i jedan od najkompleksnijih programskih jezika dobio naziv Ada.
+Značajan napredak u formalizaciji uvođenja algoritma u matematiku i logiku je učinio Alan Tjuring u svojim radovima definisanjem Tjuringove mašine. To je primitivan automat, misaona tvorevina, ali poseduje mogućnost izvođenja nekoliko operacija koje su dovoljne za izvođenje skoro svih algoritama. Čerč-Tjuringova teza tvrdi da se svaki algoritam koji je dobro definisan može izvršiti na takvoj mašini. Tako se, i pored jednostavnosti ove mašine, začela teorija konačnih automata kao nova oblast. Istraživanjem se došlo i do teorijskih problema: Tjuringov problem zaustavljanja, NP-težak problem, NP-potpun problem i tako dalje.
+
+
+== Osobine ==
+Algoritmi poseduju sledeće osobine:
+
+diskretnost — u odvojenim koracima se izvršavaju diskretne operacije algoritma koji vode ka konačnom cilju;
+rezultativnost — označava sposobnost algoritma da posle konačnog broja koraka daje izlazne podatke;
+determinisanost — za iste ulazne podatke algoritam uvek generiše iste vrednosti na izlazima i
+masovnost — algoritam je primenljiv na veći broj ulaznih vrednosti.
+
+
+== Elementi ==
+Rešenje bilo kog problema koji se može rešiti pomoću računara, se može izraziti kao superpozicija sledećih struktura: sekvence, selekcije i iteracije.
+Sekvenca je uređen niz instrukcija gde se po izvršenju i-te instrukcije, može preći na i+1 instrukciju, zatim na i+2 instrukciju i tako dalje.
+Selekcija omogućava izbor jednog toka kojim će se nastaviti izvršavanje instrukcija. Izbor toka vrši se proverom uslova koji je definisan kao logički izraz (predikat).
+Razlikuje se sledeći tipovi selekcija:
+
+IF uslov THEN operacija (ako je uslov ispunjen tada izvrši operaciju)
+IF uslov THEN operacija1 ELSE operacija2 (ako je uslov ispunjen, tada izvrši operaciju 1, u suprotnom izvrši operaciju 2)
+CASE uslov OF
+vrednost1: operacija1
+vrednost2: operacija2
+...
+ELSE operacijan (ako uslov ima vrednost1 izvrši operaciju1, ako uslov ima vrednost2, izvrši operaciju2... u suprotnom izvrši operacijun)
+Iteracija omogućava ponavljanje operacija tela operacije potreban broj puta. Broj ponavljanja se kontroliše uslovom u formi predikata. Razlikuju se sledeći tipovi iteracije:
+
+iteracije sa izlaskom na vrhu
+WHILE uslov DO operacija (sve dok je uslov ispunjem, radi operaciju)
+FOR početak TO kraj DO operacija (od početne vrednosti do krajnje vrednosti, radi operaciju)
+iteracije na izlasku na dnu
+REPEAT operacija UNTIL uslov (ponavljaj operaciju sve dok se ne ispuni uslov)
+iteracije sa izlaskom u sredini (slabo sintaksno podržane, imaju uglavnom teorijski značaj)
+
+
+== Formalizacija ==
+Algoritam je ključni pojam u računarskoj obradi podataka jer je računarski program izvestan algoritam koji računaru objašnjava koje korake (naredbe) i kojim redosledom treba da obavlja. Tako se algoritmom može smatrati bilo koji niz instrukcija koja se može uraditi na Tjuring-kompletnoj mašini.
+Tipično, kada se uz algoritam vezuje pojam obrade podataka, podrazumeva se da se podatak prvo učita preko ulazne jedinice a ispisuje se na izlaznu jedinicu ili čuva za kasniju upotrebu. Sačuvani podaci se smatraju delom unutrašnjeg stanja sistema.
+Za svaki računarski posao algoritam mora biti jasno definisan; naveden na način koji podrazumeva sve moguće situacije koje se mogu pojaviti. Znači, svaki uslovni korak se mora sistematično obraditi, slučaj po slučaj; uslov za svaki slučaj mora biti jasan i izračunljiv.
+Pošto je algoritam jasan niz preciznih koraka, redosled izračunavanja je uvek kritičan za funkcionisanje algoritma. Pretpostavlja se da su instrukcije navedene jasno, da počinju od vrha i da teku do dna. Ova ideja se formalno opisuje kontrolom toka.
+Kod ovakve formalizacije se unapred uzimaju pretpostavke o imperativnom programiranju. Ovo je najuobičajeniji koncept u programiranju i opisuje postupke na mehanički način. Jedinstveno za ovaj koncept je operacija dodeljivanja, što je davanje vrednosti promenljivoj. Ovo proizilazi iz intuitivnog poimanja memorije kao privremenog skladištenja odnosno pamćenja. Niže u tekstu se može naći primer ovakvog dodeljivanja.
+Postoje i drugačiji koncepti u izgradnji algoritma, pogledati funkcionalno programiranje i logičko programiranje.
+
+
+== Klasifikacija algoritama ==
+Postoji više načina za razvrstavanje algoritama, a metodologija klasifikacije je tema mnogih rasprava.
+
+
+=== Podela prema paradigmi programiranja ===
+Jedan način razvrstavanja je po metodologiji projektovanja ili primenjenom obrascu. Postoji izvestan broj različitih obrazaca kako se pristupa realizaciji algoritama. Dalje, svaka od navedenih kategorija sadrži više različitih tipova algoritama. Neki uobičajeno korišćeni obrasci su:
+
+Podeli pa vladaj algoritmi smanjuju stepen složenosti problema podelom na dva ili više manjih problema od iste vrste (obično rekurzivno), dok od problema ne ostane toliko mali deo da se može jednostavno rešiti.
+Dinamičko programiranje. Kada problem pokazuje optimalnu podstrukturu, u smislu da se optimalno rešenje problema može konstruisati iz optimalnog rešenja potproblema, i preklapanjem potproblema, što znači da se isti potproblem koristi za rešavanje više različitih primera problema, možemo rešiti brzo koristeći dinamičko programiranje, pristup koji izbegava ponovno izračunavanje rešenja koja su već izračunata. Na primer, najkraći put do cilja iz čvora težinskog grafa može biti nađen koristeći najkraći put do cilja od svih obližnjih čvorova.
+Pohlepni algoritam. Algoritam lakomosti je sličan dinamičkom programiranju, ali je razlika u tome što rešenja potproblema ne moraju biti poznata u svakom trenutku. Stoga, pri traženju rešenja je moguće napraviti i 'lakom' izbor onoga što izgleda najbolje u tom trenutku.
+Linearno programiranje. Problem se rešava korišćenjem linearnog programiranja kada postoji više linearnih nejednačina a zadatak je naći maksimum (ili minimum) po nekom kriterijumu. Mnogi realni problemi (kao što je maksimiziranje protoka u usmerenom grafu) mogu biti iskazani na ovaj način, a onda rešeni nekim 'generičkim' algoritmom, kao što je Simpleks algoritam.
+Pretraga i numeracija. Mnogi problemi (kao što je igranje šaha) mogu biti modelovani kao problemi grafa. Algoritam pretraživanja grafa daje pravila kretanja kroz graf i koristan je baš za ovakve probleme. Ova kategorija obuhvata i algoritme pretraživanja i povratka kroz stablo odlučivanja (bektreking).
+Heuristički algoritmi i algoritmi slučajnosti ne odgovaraju u potpunosti strogoj definiciji algoritma
+Algoritmi slučajnosti prave u nekim situacijama slučajan (ili pseudo slučajan) izbor; za neke probleme se stvarno može dokazati da se do najbržeg rešenja može doći samo uvođenjem izvesnog stepena slučajnosti.
+Genetički algoritam pokušava da nađe rešenje problema imitirajući biološki evolucioni proces, koji u nizu slučajnih mutacija daje uzastopne generacije 'rešenja'. Tako računar simulira razmnožavanje i 'preživljavanje najprilagođenijih'. U genetičko programiranje je ovaj pristup proširen na algoritme.
+Heuristički algoritmi su takvi algoritmi čija je osnovna namena nalaženje optimalnog rešenja, u stvari približnog rešenja, jer vreme ili memorijski prostor za izvršavanje algoritma za nalaženje tačnog najboljeg rešenja nije praktično moguće. Primer algoritama koji su ovakvog tipa su za lokalno pretraživanje, tabu pretraživanje ili algoritam simuliranog otpuštanja, vrsta heurističkog algoritma slučajnosti koji varira rešenje problema u slučajnim iznosima. Naziv simulacija otpuštanja aludira na metalurški proces suprotan kaljenju kada se metal greje pa sporo hladi radi otklanjanja defekta u materijalu. Namera slučajnog variranja je traženje što bližeg rešenja opštem optimalnom rešenju, a ne jednostavno lokalno optimalno rešenje. Ideja je da se amplituda slučajne veličine smanjuje kako se približavamo rešenju.
+
+
+=== Podela prema implementaciji ===
+Drugi način razvrstavanja je po implementaciji. Rekurzivni algoritam je takav algoritam koji poziva (referencira) sam sebe uzastopno dok se neki uslov ne ispuni, što je metoda primenjena kod funkcionalnog programiranja. Algoritmi se obično razmatraju uz pretpostavku da u jednom trenutku izvršavaju jednu instrukciju jednog algoritma. Takvi računari se ponekad zovu serijski računari. Algoritmi osmišljeni za takvo okruženje se zovu serijski ili sekvencijalni algoritami, nasuprot paralelnim i distribuiranim algoritmima. Paralelni algoritmi prednosti računarske arhitekture kod koje više procesora u istom trenu rešava isti problem, dok se kod distribuiranih algoritama koristi više računara povezanih u računarsku mrežu. Paralelni ili distribuirani algoritmi dele problem u više simetrični ili asimetričnih potproblema i kasnije sastavljaju rezulata. Za ove algoritme je pored procesorskih ciklusa je važna brzina komunikacije između procesora.
+
+
+=== Podela prema oblastima rada ===
+Svako polje nauke ima svoje probleme i potrebne su joj efikasni algoritmi. Srodni problemi se često proučavaju zajedno. Neki primeri su algoritmi za pretragu, sortiranje, spajanje, numeričku analizu, grafove, stringove, računarsku geometriju, kombinatoriku, mašinsko učenje, kriptografiju, kompresiju podataka i tehnike parsiranja.
+Oblasti imaju težnju da se preklapaju jedni sa drugima, a napredak algoritma u jednom polju može da unapredi algoritme u drugim, ponekad totalno nesrodnim, oblastima. Na primer, dinamičko programiranje je prvobitno namenjeno za optimizaciju potrošnju resursa u industriji, ali se danas koristi u rešavanje širokog polja problema u mnogim poljima.
+
+
+=== Podela prema složenosti ===
+U teoriji složenosti, što nije isto što i teorija izračunljivosti, se izučava problematika složenosti, kompleksnosti, algoritma, u smislu zauzimanja resursa, a to su prostor (količina zauzete memorije) i vreme (količina potrošenog vremena procesora). Složenost je funkcija veličine ulaznih podataka. Algoritmi se prave za rešenje opšteg problema, bez obzira na veličinu ulaza, ali sa druge strane razne ulazne veličine izazivaju da programi troše razne količine resursa.
+Vremenska složenost algoritma se iskazuje kao broj elementarnih koraka za obavljanje algoritma, što je zavisno od veličine ulaza, a koja može biti izražena u bitovima ili nekim sličnim merilom. Ako kažemo da je algoritam (A) uređivanja niza od n elemenata problem vremenske složenosti n², znači da dvostruko veći broj elemenata zahteva četiri puta više vremena za uređivanje. Ako je, pak drugi algoritam (B) malo pažljivije napisan i brži je dvostruko, on će raditi dvostruko brže za bilo koju veličinu niza. Međutim, ako se programer namuči i osmisli suštinski drugačiji algoritam (C) za uređivanje, on stvarno može biti reda složenosti n·log(n). Algoritmi (A) i (B) su iste složenosti, jer se u notaciji sa velikim O obeležavaju sa O(n²), a u govoru se zovu 'algoritmi kvadratne složenosti', dok je algoritam (C) 'algoritam složenosti n·log(n)'. Zaključak: algoritam (C) je najbolji sa stanovišta korišćenja vremena za velike setove ulaznih podataka.
+Prostorna složenost se na isti način odnosi na funkciju zavisnosti zauzimanja memorijskog prostora u zavisnosti od veličine ulaza. Dešava se da je pronalaženje algoritma manje vremenske složenosti vezano sa povećanjem prostorne složenosti. Obično se algoritmi dele na one logaritamske složenosti, linearne, kvadratne i uopšteno polinomijalne složenosti, kao i one najzahtevnije, eksponencijalne složenosti.
+
+
+=== Podela prema izračunljivosti ===
+Algortime je moguće klasifikovati i prema izračunljivosti. Ovo se obično radi tako što se razmatraju klase algoritama što omogućava smanjenje vremenskih i memorijskih resursa koji se koriste u izračunavanju. Na primer, klasa rekurzivnih algoritama uključuje algoritme za sve funkcije koje se mogu izračunati pomoću Tjurnigove mašine.
+
+
+== Dokaz ispravnosti ==
+Dokaz ispravnosti, korektnosti, algoritma je teoretski matematički postupak dokaza teoreme predikatskim računom. Algoritam se izražava logičkim izrazima, definiše se invarijanta - izraz čija vrednost ostaje nepromenjena sve vreme rada algoritma - i dokazuje da izraz koji je važio pre početka važi i po završetku obrade. Potpun dokaz ispravnosti podrazumeva još i dokaz da će se algoritam završiti u konačnom vremenu, međutim to ume biti komplikovanije od prvog dela.
+Ovakav, teoretski dokaz ispravnosti je kompleksna procedura.
+
+
+== Primer računarskog algoritma ==
+
+Ovde je naveden jedan od najjednostavnijih algoritama i analizirani u koracima od predstavljanja problema, analize problema, definisanja algoritma i analize ispravnosti.
+
+
+=== Iskaz problema ===
+Prvo se problem iskazuje prirodnim jezikom, na razumljiv i nedvosmislen način:
+
+Naći najveći broj u datom, neuređenom nizu brojeva.
+
+
+=== Razrada ===
+Rešenje zahteva ispitivanje svakog broja iz niza, ali svega jednom. Iz ovoga sledi jednostavan predlog algoritma izražen prirodnim jezikom:
+
+Pogledaj svaki element u nizu. Ako je veći od bilo kog do sada viđenog, zabeleži ga.
+Poslednji zabeležen broj je najveći u nizu kada se postupak završi.
+
+
+=== Dijagrami ===
+Uobičajen način pristupanja kreiranju algoritma je crtanjem dijagrama. Postoji više vrsta dijagrama.
+Najpopularniji i najrasprostranjeniji je standardni dijagram toka kada se tok prati po pravcu kretanja strelica (slika levo). U pravougaonike se upisuju kratki opisi operacija i poslova, a u rombove i izdužene šestougaonika uslovi za grananje.
+Popularizacija strukturnog programiranja je dovelo do uvođenja novih, strukturnih dijagrama toka (slika desno). Ceo dijagram je u obliku niza spojenih pravougaonika. Oni, međutim, nisu široko prihvaćeni od programera.
+Ovde je algoritam prikazan u oba oblika. Desni dijagram izgleda manji i kompaktniji, ali je levi ipak pregledniji. Međutim, standardni dijagram omogućuje da se kontrola iz bilo koje tačke prenese u proizvoljnu tačku, pa i u unutrašnjost petlje. Tako se ruši strukturiranost programa i predstavlja uvod u „špageti programiranje“, što je osnovni pokazatelj lošeg programiranja.
+Vizuelizacija programskog toka i toka podataka su izuzetno korisni za razvoj i razradu algoritma. Objektno orijentisano programiranje je uvelo nove pojmove i forme i u analizu i u projektovanje, a više vrsta dijagrama se koristi u procesu koji se naziva unifikovano modelovanje za koje je razvijen i standardizovan UML (Objedinjeni jezik za modelovanje).
+
+
+=== Pseudokod algoritma ===
+Zapis ovog algoritma je niže dat u obliku pseudokoda koji je više formalan od prirodnog jezika ili grafičkih dijagrama, a pored prirodnog ima i elemente simboličkog, veštačkog, jezika:
+
+Algoritam NajvećiBroj
+  Input: Ne-prazan niz brojeva L.
+  Output: najveći broj u nizu L.
+
+  najveći ← -∞
+  for each broj in niz L, do
+    if broj > najveći, then
+      najveći ← broj
+  return najveći
+
+gde je ispis ključnih reči na engleskom pitanje dogovora. Moguće ih je napisati i na srpskom, ali se u računarskim krugovima celog sveta koristi engleski kao lingua franca informatičkog doba.
+
+
+==== Objašnjenje pseudokoda ====
+Na početku se opisuje prostor (memorijske lokacije) neophodne za rad. Sem ulaznih i izlaznih lokacija, ovde se definiše i opisuje privremeni prostor koji predstavlja unutrašnje stanje. Konkretno, ovde reči Input i Output označavaju prostor koji zauzimaju brojevi, a posebno se rečju Input naglašava da je to ulazni podatak te da je poznat u vreme početka rada algoritma, a rečju Output da će tu biti smešten izlazni podatak i da će on biti poznat tek po završetku rada algoritma.
+U drugom delu sledi ključni deo algoritma koji se često u kolokvijalnom razgovoru zove algoritmom. On se sastoji od nabrajanja konstrukcija koje opisuju tok izvršavanja i uz primenu konvencija o predstavljanju operacija nad podacima. U našem primeru imamo:
+
+"for each — in — do" je konstrukcija koja znači "za svaki — od — uradi" i predstavlja način za opis iteracije, višestrukog ponavljanja.
+"if — then je način označavanja selekcije, pitalice. Izvestan niz instrukcija će se izvršiti uslovno, u zavisnosti od kriterijuma.
+"←" je skraćenica za "dodeljuje se". Na primer, sa "najveći ← broj", znači da je najveći naziv za memorijski prostor u koji će biti iskopirana vrednost iz memorijskog prostora koji smo nazvali broj.
+"return" završava algoritam i iza sebe ostavlja vrednost (u memorijskom prostoru kome je dat naziv najveći) kao izlaz.
+
+
+=== Analiza ispravnosti ===
+Detaljna analiza ispravnosti algoritma bi podrazumevala razmatranje svih, čak i skoro nemogućih situacija, što u ovom slučaju znači analiza rada algoritma u situaciji kada je
+
+dat prazan niz brojeva,
+u niz upisana i neka vrednost koja nije broj
+Počinje se razmatranjem problema domena. To je oblast vrednosti koje može uzeti broj. Memorijski prostor promenljive najveći ne sme biti manji od veličine prostora za svaki broj iz niza L. Da se desilo sabiranje dva broja morala bi biti razmotrena situacija ako bi zbir izlazio van domena što bi izazvalo prekoračenje opsega. Ova vrsta provere je obavezna u svakoj analizi algoritma.
+Sledeći obavezni korak je provera početne vrednosti, inicijalizacije. Ovo se odnosi na definisanje početnog unutrašnjeg stanja sistema. Teorijski početno stanje mora biti poznato, a praktično to znači sve promenljive moraju biti inicijalizovane. U našem slučaju to znači da memorijska lokacija sa nazivom najveći na početku izvršavanja ovog algoritma mora imati neku vrednost. Međutim, prva naredba najveći ← -∞ predstavlja veliki problem jer bi -∞ trebalo da izlazi van domena bilo kog ograničenog memorijskog prostora. Ovde se u implementaciji ovog algoritma pristupa izvesnom prilagođavanju realnim ograničenjima programskog jezika ili na drugi način zaobilazi doslovna implementacija beskonačnosti. Ovo pokazuje kako se naizgled potpuno ispravni i dobri algoritmi iz teoretskih remek-dela pretvaraju u programersku noćnu moru.
+Formalna, matematička, analiza korektnosti bi značila postavljanje teoreme sa predikatskim formulama i dokaz o konačnosti izvršavanja algoritma. Veoma su retke situacije u kojima se to radi.
+
+
+=== Analiza složenosti ===
+Većina programera želi da zna koliko određenih resursa (vreme i prostor su najčešći slučaj) zauzima algoritam koji trenutno implementiraju. Razvijene su mnoge metode za analizu algoritma koje daju neku vrstu kvantitativnog odgovora. Na primer, algoritam iznad je vremenske kompleksnosti O(n), gde se ovakav oblik obeležavanja naziva notacija sa velikim O, a n je veličina niza. Sve vreme rada algoritam pamti samo jednu vrednost, najveću vrednost do sada. Stoga ovaj algoritam ima prostornu kompleksnost O(1). Treba primetiti da se veličina ulaza, prethodno datih podataka, ne računa kao prostor korišćen od algoritma.
+
+
+== Algoritam sa pravnog stanovišta ==
+Algoritmi sami po sebi obično nisu podložni patentiranju. U Sjedinjenim Američkim Državama se zahtev/postupak koji se sastoji isključivo od prostih manipulacija apstraktnih koncepata, brojeva ili signala ne smatra „procesom“ (USPTO 2006) zbog čega algoritmi ne podležu patentiranju (primer Gottschalk_v._Benson). Međutim, praktične primene algorimata u nekim slučajevima jesu podložne patentiranju. Na primer, u slučaju Diamond v. Diehr, za primenu jednostavnog algoritma za korišćenje povratne sprege kao ispomoći pri „lečenju“ sintetičke gume je odlučeno da jeste podložna patentu. Patentiranje softvera je veoma kontroverzno a neki patentni koji uključuju algoritme su žestoko kritikovani, naročito oni koji se tiču algoritama za kompresiju podataka, kao što je naprimer patent nad Lempel-Zev-Velč (Lempel-Zev-Welch, LZW) algoritmom kompanije Unisys.
+Takođe, u nekim nadležnostima postoje ograničenja koja se tiču izvoza određenih klasa računarskih algoritama (naprimer, ograničenja izvoza kriptografije).
+
+
+== Poznati primeri ==
+Euklidov algoritam: računski postupak za iznalaženje najvećeg zajedničkog delioca dva broja i, uopšteno, dva polinoma.
+Gausov algoritam: metod za postupno razrešavanje sistema linearnih jednačina putem redukcije broja nepoznatih kao i broja jednačina.
+
+
+== Povezano ==
+Spisak algoritama
+Vremenska osa algoritama
+Najpoznatiji algoritmi
+Numerički algoritmi
+Grafički algoritmi
+
+
+== Reference ==
+
+
+== Literatura ==
+Algorithms + Data Structures = Programs, Niklaus Wirth - Prva knjiga strukturiranog programiranja
+The Art of Computer Programming, Donald Knuth - Računarska biblija
+Introduction to Algorithms, Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest - Dobra knjiga za učenje o algoritmima
+The Design and Analysis of Computer Algorithms, Alfred V. Aho, John E. Hopcroft, Jeffrey D. Ullman - Izuzetna knjiga, popularna među profesionalcima
+Algorithms, Robert Sedgewick, Jednostavnija, ali novija knjiga od Ahove
+Programski jezici i metode programiranja, Jozo Dujmović - Domaća, retka, ali vredna knjiga
+Ivetić, Dragan (2004). Strukturirani pristup programiranju/Inženjering, algoritmi i programski jezici. ISBN 86-7991-139-9. 
+
+
+== Vanjske veze ==
+
+Primeri programa iz knjige Priručnik o algoritmima i strukturama podataka Gaston H. Gonnet i Ricardo Baeza-Yates. Slobodan izvorni kod mnogih algoritama.
+Listing algoritama za računarsko programiranje
+Sve o algoritmima i još ponečemu na dmoz.org
+"Algogeeks" Google Group Arhivirano 2008-07-25 na Wayback Machine-u - Diskusione grupe o algoritmima i programiranju na Guglu
+Članci o nekim algoritmima Arhivirano 2008-01-02 na Wayback Machine-u
+elitesecurity::forumi Arhivirano 2005-08-19 na Wayback Machine-u O algoritmima i programiranju na najpoznatijem domaćem portalu
+Definicija algoritma
+Klasifikacija algoritama

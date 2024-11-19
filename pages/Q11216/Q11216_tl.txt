@@ -1,0 +1,551 @@
+Ang Numerikal na analisis (Ingles: Numerical analysis) ang pag-aaral ng mga algoritmo na gumagamit ng numerikal na aproksimasyon(salungat sa pangkalahatang simbolikong komputasyon) para sa mga problema ng analisis na matematikal(gaya ng tinatangi mula sa diskretong matematika). Ang isa sa pinakalumang mga kasulatang pang-matematika ang tabletang Babilonian mula sa Koleksiyong Babilonian ng Yale na YBC 7289 na nagbibigay ng seksahesimal na aproksimasyong numerikal ng 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ na haba ng diagonal sa isang kwadradong unit. Ang kakayahang makwenta ang mga gilid ng isang tatsulok ay labis na mahalaga, halimbawa sa pagkakarpentero at pagtatayo ng gusali. Ang numerikal na analisis ay nagpapatuloy ng mahabang tradisyong ito ng mga praktikal na kalkulasyong matematikal. Tulad ng aproksimasyong Babilonian ng 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+, ang modernong numerikal na analisis ay hindi naghahangad ng mga eksaktong sagot dahil ang mga eksaktong sagot ay kadalasang imposible na makamit sa pagsasanay. Bagkus, ang karamihan ng numerikal na analisis ay umuukol sa pagkakamit ng mga aproksimadong o pagtatantiyang mga solusyon habang nagpapanatili ng makatwirang mga hangganan ng mga pagkakamali. Ang numerikal na analisis ay natural na nakakahanap ng mga aplikasyon sa lahat ng mga larangan ng inhinyerya at sa mga agham pisikal ngunit sa ika-21 siglo, ang mga agham ng buhay at kahit mga sining ay gumamit ng mga elemento ng mga komputasyong siyentipiko. Ang mga ordinaryong ekwasyong diperensiyal ay lumilitaw sa paggalaw ng mga katawang pang-langit tulad ng mga planeta, bituin at galaksiya. Ang matematikal na optimisasyon ay nangyayari sa pangangasiwa ng portfolio. Ang numerikal na alhebrang linyar ay mahalaga sa analisis ng datos. Ang mga stokasting ekwasyong diperensiyal at mga kadenang Markov ay mahalaga sa paggaya sa mga buhay na selula para sa medisina at biolohiya. Bago ang pagdating ng mga modernong kompyuter, ang mga pamamaraang numerikal ay kadalasang nakasalalay sa interpolasyon ng kamay sa malaking nakalimbag na mga tabla. Simula gitna nang ika-20 siglo, ang mga kompyuter ang bagkus na kumukwenta ng mga kinakailang punsiyon. Ang parehong mga pormulang interpolasyon na ito ay gayunpaman patuloy na ginagamit bilang bahagi ng mga algoritmong sopwer para sa paglutas ng mga ekwasyong diperensiyal. 
+
+
+== Pangkalahatang introduksiyon ==
+Ang kabuuang layunin ng layunin ng numerikal na analisis ang pagdidisenyo at analisis ng mga pamamaraan upang magbigay ng mga tinantiya ngunit mga tiyak na solusyon sa mga mahihirap na problema na ang karamihan ay iminumngkahi ng sumusunod. 
+
+Ang mas mataas na mga pamamaraang numerikal ay mahalaga sa paggawa ng numerikal na paghula ng panahon(weather prediction) na magagagawa.
+Ang pagkukwenta na trahektorya ng sasakyang pangkalawakan ay nangangailangan ng tiyak na solusyon ng isang sistema ng mga ordinaryong ekwasyong diperensiyal.
+Ang mga kompanya ng sasakyan ay maaaring magpabuti ng kaligtasan ng pagkabangga ng kanilang sasakyan gamit ang mga simulasyon ng kompyuter ng mga pagbangga ng kotse.
+Ang mga pondong hedge(pribadong mga pundo ng pamumuhunan) ay gumagamit ng mga kasangkapan mula sa lahat ng mga larangan ng numerikal na analisis upang kwentahin ang halaga ng mga stock at deribatibo nang mas tiyak kesa sa ibang mga kalahok ng pamilihan.
+Ang mga kompanya ng eroplano ay gumagamit ng sopistikadong mga algortimo ng matematikal na optimisasyon upang pagpasyahan ang mga presyo ng tiket, eroplano at mga pagtatakda ng mga tripulante nito at mga pangangailangang petrolyo.
+Ang mga kompanya ng kasiguruhan ay gumagamit ng mga programang numerikal para sa analisis ng aktuwaryo.
+
+
+=== Mga pamamarang direkta at paulit ulit ===
+
+Ang mga pamamaraang direkta ay kumukwenta ng solusyon sa isang problema sa isang may hangganan mga hakbang. Ang mga pamamaraang ito ay magbibigay ng tiyak na sagot kung ang ito ay isinagawa sa walang hangganang aritmetikong tiyak. Ang mga halimbawa ay kinabibilangan ng eliminasyong Gaussian na algoritmong QR na pamamaraang paktorisasyon sa paglutas ng mga sistema ng ekwasyong linyar at ang paraang simplex ng pagpoprogramang linyar. Sa kasanayan, ang may hangganang presisyon ang ginagamit at ang resulta ay isang aproksimasyon ng totoong solusyon(kung ipagpapalagay ang pagiging matatag). 
+Salungat sa mga pamamaraang direkta, ang paraang paulit ulit ay hindi inaasahang magwawakas sa isang bilang ng mga hakbang. Sa pagsisimula sa isang simulang paghula, ang mga paraang paulit ulit ay bumubuo ng sunod sunod na mga aproksimasyon na nagtatagpo sa eksaktong solusyon lamang sa hangganan. Ang pagsubok ng pagtatagpo ay tinutukoy upang mapagpasyahan kapag ang isang sapat na tiyak na solusyon ay(inaasahang) natagpuan. Kahit sa paggamit ng aritmetikang presisyon, ang mga pamamaraang ito ay hindi aabot sa solusyon sa loob ng isang may hangganang bilang ng mga hakbang(sa pangkalahatan). Ang mga halimbawa ay kinabibilangan ng paraang Newton, ang paraang biseksiyon at ang iterasyong Jacobi. Sa komputasyonal na alhebrang matriks, ang mga pamamaraang paulit ulit ay pangkalahatang kinakailangan para sa mga malalaking problema. Ang mga pamamaraang paulit ulit ay mas karaniwan kesa sa mga pamamaraang direkta sa numerikal na analisis. Ang ilang mga pamamaraan ay direkta sa prinsipyo ngunit karaniwang ginagamit na parang ang mga ito ay hindi, e.g. GMRES at ang paraang konhugatong gradient. Para sa mga pamamaraang ito, ang bilang ng mga hakbang na kailangan upang makamit ang eksaktong solusyon ay labis na malaki na ang aproksimasyon ay tinatanggap sa parehong paraan para sa paraang paulit ulit.
+
+
+=== Diskretisasyon ===
+Sa karagdagan, ang mga tuloy tuloy na problema ay dapat minsang palitan ng isang diskretong problema na ang solusyon ay alam upang matantiya ang sa problemang tuloy tuloy. Ang prosesong ito ay tinatawag na diskretisasyon. Halimbawa, ang solusyon ng mga ekwasyong diperensiyal ay isang punsiyon. Ang punsiyong ito ay dapat ikatawan ng isang may hangganang halaga ng mga datos, halimbawa ng halaga nito sa isang may hangganang bilang ng mga punto sa sakop nito kahit pa ang sakop na ito ay isang continuum. 
+
+
+== Paglikha at paglaganp ng mga pagkakamali ==
+Ang pag-aaral ng mga pagkakamali ay bumubuo sa isang mahalagang bahagi ng numerikal na analisis. May ilang mga paraan kung saan ang pagkakamali ay maipakikilala sa solusyon ng problema. 
+
+
+=== Pag-iikot ===
+Ang mga pagkakamaling pag-ikot ay lumilitaw dahil imposibleng ikatawan ang lahat ng mga real na bilang ng eksakto sa isang makina na may hangganang memorya(na ang lahat ng mga praktikal na dihital na kompyuter ay ito). 
+
+
+=== Trunkasyon at pagkakamaling diskretisasyon ===
+Ang mga pagkakamaling trunkasyon ay nagagawa kapag ang paraang paulit ulit ay huminto o ang pamamaraang matematikal at ang tinatantiyang solusyon ay iba sa eksaktong solusyon. Gayundin, ang diskretisasyon ay pumupukaw ng isang pagkakamaling diskretisasyon dahil ang solusyon ng mga problemang diskreto ay hindi umaayon sa solusyon ng problemang tuloy tuloy. Halimbawa, sa paguulit ng sa sidebar upang kwentahin ang solusyon ng 
+  
+    
+      
+        
+          
+          ″
+        
+        3
+        
+          x
+          
+            3
+          
+        
+        +
+        4
+        =
+        
+          28
+          ″
+        
+      
+    
+    {\displaystyle ''3x^{3}+4=28''}
+  
+ pagkatapos ng mga 10 pag-ulit, tayo ay magbibigay konklusyon na ang ugat ay tinatayang 1.99 (halimbawa). Kaya meron tayong pagkakamaling trunkasyon ng 0.01. Kapag ang pagkakamali ay nalikha, ito ay pangkalahatang lumalaganap sa kalkulasyon. Halimbawa, ating binigyang pansin na ang operasyong + sa isang kalkulador o kompyuter ay hindi eksakto. Sumusunod na ang isang kalkulasyon ng uring a+b+c+d+e ay mas hindi eksakto. Ano ang ibig sabihin kapag ating sasabihin na ang pagkakamaling trunkasyon ay nalikha kapag tinatantiya natin ang isang pamamaraang matematika? Alam natin na upang integraduhin ang isang punisyon ng eksakto ay nangangailangan na hanapin ng isa ang suma ng mga walang hangganang trapezoid. Ngunit numerikal na mahahanap ng isa ang suma ng tanging may hangganang mga trapezoid at kaya ang aproksimasyon ng pamamaraang matematikal. Gayundin, upang ideperensiyado ang isang punsiyon, ang elementong diperensiyal ay lumalapit sa sero ngunit numerikal lamang nating mapipili ang isang may hangganang halaga ng elementong diperensiyal. 
+
+
+=== Numerikal na pagiging matatag at mga mahusay na itinanghal na problema ===
+Ang numerikal na pagiging matatag ay isang mahalagang nosyon sa numerikal na analisis. Ang isang algoritmo ay tinatawag na numerikal na matatag kung ang pagkakamali, ano pa ang sanhi nito ay hindi lumalago na labis na mas malaki habang isinasagawa ang kalkulasyon. Ito ay nangyayari kung ang problema ay mahusay na nakakondisyon na ngangahulugang ang solusyon ay nagbabago lamang sa isang maliit na halaga kung ang datos ng problema ay nabago ng isang maliit na halaga. Salungat dito, kung ang isang problema ay masamang nakakondisyon, kung gayon, ang anumang maliit na pagkakamali sa datos ay lalago na isang malaking pagkakamali. Ang parehong problemang orihinal at algoritmong ginagamnit upang lutasin ang problem ay maaaring mahusay na nakondisyon at/o masamang nakakondisyon at ang anumang kondisyon ay posible. Kaya ang algoritmo na lumulutas ng isang mahusay na nakondisyon na problema ay maaaring numerikal na matatag o numerikal na hindi matatag. Ang isang sining ng numerikal na analisis ay humanap ng isang matatag na algoritmo para sa paglutas ng mahusay na nakatanghal na problemang matematika. Halimbawa, ang pagkukwenta ng kwadradong ugat ng 2(na mga 1.41421) ay isang mahusay na nakatanghal na problema. Maraming mga algoritmo ay lumulutas ng problemang ito sa pamamagitan ng pagsisimula sa isang inisyal na aproksimasyong x1 hanggang 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ halimbawa ang x1=1.4 at pagkatapos ay kukwentahin ang mga pinabuting paghulang x2, x3, etc.. Ang isang gayong paraan ang sikat na paraang Babilonian na ibinigay ng xk+1 = xk/2 + 1/xk. Ang isang pag-ulit nating tatawaging Paraang X ay ibinigay ng  xk + 1 = (xk2−2)2 + xk. Ating nakwenta ang ilang mga pag-uulit ng bawat skema sa tablang anyo sa baba na may mga inisyal na paghulang x1 = 1.4 atnd x1 = 1.42.
+
+Pagmasdan na ang paraang Babilonian ay nagtatagpo ng mabilis kahit hindi isasaalang alang ang inisyal na hula samantalang ang Paraang X ay nagtatapos ng labis na mabalag na may inisyal na hulang 1.4 at lumilihis para sa inisyal na hulang 1.42. Kaya ang paraang Babilonian ay numerikal na matatag samantalang ang Paraang X ay numerikal na hindi matatag. 
+
+Ang numerikal na pagiging matatag ay naapektuhan ng bilang ng mga mahahalang digit na pinagpapatuloy ng makina, kung ating gagamitin ang isang makina na tumutuloy sa unang apat na mga digit na puntong lumulutang, ang isang mabuting halimbawa sa pagkawala ng kahalagahan ng dalawang magkatumbas ng mga punsiyong ito ay
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        x
+        
+          (
+          
+            
+              
+                x
+                +
+                1
+              
+            
+            −
+            
+              
+                x
+              
+            
+          
+          )
+        
+        
+           and 
+        
+        g
+        (
+        x
+        )
+        =
+        
+          
+            x
+            
+              
+                
+                  x
+                  +
+                  1
+                
+              
+              +
+              
+                
+                  x
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)=x\left({\sqrt {x+1}}-{\sqrt {x}}\right){\text{ and }}g(x)={\frac {x}{{\sqrt {x+1}}+{\sqrt {x}}}}.}
+  
+
+Kung ating ihahambing ang mga resulta ng
+
+  
+    
+      
+        f
+        (
+        500
+        )
+        =
+        500
+        (
+        
+          
+            501
+          
+        
+        −
+        
+          
+            500
+          
+        
+        )
+        =
+        500
+        (
+        22.3830
+        −
+        22.3607
+        )
+        =
+        500
+        (
+        0.0223
+        )
+        =
+        11.1500
+      
+    
+    {\displaystyle f(500)=500({\sqrt {501}}-{\sqrt {500}})=500(22.3830-22.3607)=500(0.0223)=11.1500}
+  
+
+and
+
+  
+    
+      
+        
+          
+            
+              
+                g
+                (
+                500
+                )
+              
+              
+                
+                =
+                
+                  
+                    500
+                    
+                      
+                        
+                          501
+                        
+                      
+                      +
+                      
+                        
+                          500
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    500
+                    
+                      22.3830
+                      +
+                      22.3607
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    500
+                    44.7437
+                  
+                
+                =
+                11.1748
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}g(500)&={\frac {500}{{\sqrt {501}}+{\sqrt {500}}}}\\&={\frac {500}{22.3830+22.3607}}\\&={\frac {500}{44.7437}}=11.1748\end{alignedat}}}
+  
+
+Sa pamamagitan ng pagtingin sa dalawang nasa itaas na mga resulta, ating matatanto na ang kawalan ng kahalaghan na tinatawag ring subtraktibong kanselasyon ay may malaking epekto sa mga resulta bagaman ang mga punsiyon ay magkatumbas. Upang ipakita ang mga ito ay magkatumbas, simpleng kailangan nating magsimula sa f(x) at magwakas sa (x) at kaya ay
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                x
+                (
+                
+                  
+                    x
+                    +
+                    1
+                  
+                
+                −
+                
+                  
+                    x
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                =
+                x
+                (
+                
+                  
+                    x
+                    +
+                    1
+                  
+                
+                −
+                
+                  
+                    x
+                  
+                
+                )
+                
+                  
+                    
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                      )
+                    
+                    
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                      )
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    
+                      (
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      
+                        )
+                        
+                          2
+                        
+                      
+                      −
+                      (
+                      
+                        
+                          x
+                        
+                      
+                      
+                        )
+                        
+                          2
+                        
+                      
+                      )
+                    
+                    
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                      )
+                    
+                  
+                
+              
+              
+                =
+                
+                  
+                    x
+                    
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                      )
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{4}f(x)&=x({\sqrt {x+1}}-{\sqrt {x}})\\&=x({\sqrt {x+1}}-{\sqrt {x}}){\frac {({\sqrt {x+1}}+{\sqrt {x}})}{({\sqrt {x+1}}+{\sqrt {x}})}}\\&=x{\frac {(({\sqrt {x+1}})^{2}-({\sqrt {x}})^{2})}{({\sqrt {x+1}}+{\sqrt {x}})}}&={\frac {x}{({\sqrt {x+1}}+{\sqrt {x}})}}\end{alignedat}}}
+  
+
+Ang tunay na halaga para sa resulta ay 11.174755..., na eksaktong g(500) = 11.1748 pagkatapos ng pag-iikot ng resulta sa 4 na digit na desimal.
+Ngayon guni gunihin na ang maraming mga termino tulad ng mga punisyong ito ay ginagamit sa programa. Ang pagkakamali ay tataas habang ang isa ay nagpapatuloy sa programa malibang ang isa ay gumagamit na angkop na pormula ng dalawang mga punsiyon sa bawat panahon na tinatasa ng isa ang f(x), o g(x). Ang pagpipilian ay nakasalalay sa paridad ng  x.
+
+
+== Mga sakop ng pag-aaral ==
+Ang larangan ng numerikal na analisis ay hinahati sa iba't ibang mga disiplina ayon sa problema na nilulutas. 
+
+
+=== Pagkukwenta ng mga halaga ng mga punsiyon ===
+
+Ang isa sa pinakasimpleng mga problema ang pagtatasa ng isang punsiyon sa isang ibinigay na punto. Ang pinaka direktang pakikitungo ng pagpapasok lamang ng bilang sa pormula ay minsang hindi napakaigi. Para sa mga polinomial, ang isang mas mabuting pakikitungo ang paggamnit ng skemang Horner dahil ito ay nagpapaliit ng kinakailangang bilang ng mga multiplikasyon at adisyon. Sa pangkalahatan, mahalagang tantiyahin at kontrolin ang mga pagkakamaling pag-iikot na lumilitaw mula sa paggamit ng aritmetikong puntong lumulutang. 
+
+
+=== Interpolasyon, ekstrapolasyon at regresyon ===
+Ang interpolasyon ay lumulutas ng sumusunod na problema: sa ibinigay na halaga ng isang hindi alam na punsiyon sa isang bilang ng mga punto, anong halaga na meron ang punsiyon sa ibang mga punto sa pagitan ng mga ibinigay na punto? 
+Ang ekstrapolasyon ay labis na katulad ng interpolasyon maliban sa ngayon ay nais nating mahanap ang halaga ng hindi alam na punsiyon sa punto na nasa labas ng mga ibinigay na punto. 
+Ang regresyong analisis ay katulad din nito ngunit ito ay nagsasaalang alang na ang datos ay hindi tiyak. Sa ibinigay na ilang mga punto at isang sukat ng halaga ng isang punsiyon sa mga puntong ito(na may pagkakamali), nais nating matukoy ang hindi alam na punsiyon. Ang paraang mababang mga kwadrado ay isang sikat na paraan upang makamit ito. 
+
+
+=== Paglutas ng mga ekwasyon at mga sistema ng ekwasyon ===
+Ang isa pang pundamental na problema ang pagkukwenta ng solusyon ng isang ibinigay na ekwasyon. Ang dalawang mga kaso ay karaniwang itinatangi depende sa kung ang ekwasyon ay linyar o hindi. Halimbawa, ang ekwasyong 
+  
+    
+      
+        2
+        x
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x+5=3}
+  
+ ay linyar samantalang ang ekwasyong 
+  
+    
+      
+        2
+        
+          x
+          
+            2
+          
+        
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x^{2}+5=3}
+  
+ ay hindi. Ang labis na pagsisikap ay inilagay sa pagpapaunlad ng mga paraan para sa paglutas ng mga sistema ng ekwasyong linyar. Ang pamantayang mga direkang pamamaraan na gumagamit ng ilang dekomposisyong matriks ang eliminasyong Gaussian, dekomposisyong Cholesky para sa simetrikong matriks(o matriks na hermitian) at positibo-depinidong matriks at dekomposisyong QR para sa mga matriks na hindi kwadrado. Ang mga paraang paulit ulit gaya ng paraang Jacobi, paraaang Gauss-Seidel, sunod sunod na labis na relaksasyon at paraang konhugatong gradient ay karaniwang ninanais para sa mga malalaking sistema. Ang algoritmo ng paghahanap ng ugat ay ginagamit upang lutasin ang mga ekwasyong hindi linyar(ang mga ito ay pinangalang ganito dahil ang isang ugat ng isang punsiyon ay isang argumento kung saan ang punsiyon ay nagbibigay ng sero). Kung ang punsiyon ay diperensiyable at ang deribatibo ay alam, kung gayon ang paraang Newton ay isang sikat na pagpipilian. Ang linyarisasyon ay isa pang paraan sa paglutas ng mga ekwasyong hindi linyar. 
+
+
+=== Paglutas ng eigenhalaga o mga problemang singular na halaga ===
+Ang ilang mga mahahalagang problema ay maaaring ihayag sa mga termino ng mga dekomposisyong eigenhalaga o mga dekomposiyong singular na halaga. Halimbawa, ang algoritmong kompresyon ng larawan  ay batay sa dekomposisyong singular na halaga. Ang tumutugong kasangkapan sa estadistika ay tinatawag na analisis ng pangunahing bahagi. 
+
+
+=== Optimisasyon ===
+
+Ang mga problema ng optimisasyon ay nagtatanong para sa punto kung saan ang isang ibinigay na punsiyon ay na-maksima(o na-minima). Kadalasan, ang punto ay sumasapat rin sa ilang mga pagtatakda. Ang larangan ng optimisasyon ay karagdagang hinahati sa ilang mga pang-ilalim na larangan depende sa anyo ng obhektibong punsiyon at pagtatakda. Halimbawa, ang pagpoprogramang linyar ay nakikitungo sa kaso na ang parehong obhektibong punsiyon at ang mga pagtatakda ay linyar. Ang isang sikat na paraan sa pagpoprogramang linyar ang paraang simplex. Ang paraan ng mga pamparaming Lagrange ay maaaring gamitin upang paliitin ang mga problemang optimisasyon ng may mga pagtatakda sa mga problemang optimisasyong walang pagtatakda. 
+
+
+=== Pagtatasa ng mga integral ===
+Ang integrasyong numerikal na sa ilang mga instansiya ay kilala rin bilang numerikal na kwadratura ay nagtatanong ng halaga ng depinidong integral. Ang mga sikat na pamamaraan ay gumagamit ng isa sa mga pormulang Newton-Cotes(tulad ng gitnang puntong patakaran o patakaran ni Simpson) o kwadraturang Gaussian. Ang mga paraang ito ay umaasa sa stratehiyang "hatiin at sakupin" kung saan ang integral sa isang relatibong hanay ay hinahati sa mga integral sa mga mas maliit na mga hanay. Sa mas mataas na mga dimensiyon kung  saan ang mga pamamaraang ito ay nagiging prohibitibong mahal ayon sa pagsisikap na komputasyonal, maaaring gamitin ng isa ang paraang Monte Carlo o mga paraang quasi-Monte Carlo.
+
+
+=== Mga ekwasyong diperensiyal ===
+Ang numerikal na analisis ay umuukol din sa pagkukwenta(sa paraang pagtatantiya) ng solusyon ng mga ekwasyong diperensiyal na parehong mga ordinaryong ewkasyong diperensiyal at mga ekwasyong parsiyal na diperensiyal. Ang mga ekwasyong parsiyal na diperensiyal ay nilulutas sa pamamagitan ng unang pagdidiskreto ng ekwasyon na nagdadala dito sa isang may hangganang dimensiyonal na subespasyo. Ito ay maaaring gawin ng isang paraang may hangganang elemento, may hangganang diperensiya o partikular sa inhinyerya ang paraang may hangganan bolyum. Ang teoretikal na pangangatwiran ng mga pamamaraang ito ay kadalasang kinasasangkutan ng mga teorema mula sa analisis na punsiyonal. Ito ay nagpapaliit ng problem sa solusyon ng isang ekwasyong alhebraiko.
+
+
+== Mga sanggunian ==

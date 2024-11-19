@@ -1,0 +1,61 @@
+Un systema de operation o systema operative (SO) es le systema de programmarios que provide al functiones essential pro le operation de un computator. Generalmente, le systema operative se refere a plure differente typos de programmas que functiona insimul.
+Normalmente le systemas operative provide:
+
+un nucleo, que provide le functiones basic del gerentia de memoria e de processos;
+un interfacie inter machinario e programmario, assi que un singule programma pote functionar in computatores con plure typos de machinarios;
+un bibliotheca de modulos canonic pro operationes general e frequente, assi que le programmas de application non debe «reinventar le rota»;
+e un interfacie utente, que provide le infrastructura basic de interaction inter le systema operative e le usator.
+Il ha plure typos diverse de systemas operative. Systemas operative pro computatores personal include AmigaOS, Mac OS X, e Microsoft Windows; iste systemas son plen de bibliothecas expansive e interfacies simple pro promover le disvellopamento programmari e le facilitate pro usatores final. Pro servitores, le systema principal es Unix (implimentate per BSD, Linux, Solaris, et cetera); systemas pro servitores usualmente ha bibliothecas e interfacies minimal, usante solmente un minimo del ressurces. Pro telephonos mobile, le principal systemas operative son Android, iOS, e Symbian; iste systemas operative balancia ressurces minimal contra lor pauc dimensiones. In omne caso, iste categorias non son stricte.
+
+
+== Historia ==
+Originalmente, devisas electronic esseva create pro provider solmente un function, como un calculator. Ben que le prime devisa qui pote esser considerate un computator general, le Zuse Z3, es create in maio de 1941, il non habeva nulle systema de operation; cata programma esseva create de novo, e iste programma esseva le sol function que le computator pote facer usque un nove programma esseva cargate physicamente al computator.
+Bibliothecas de functiones commun esseva create per le prime programmatores pro reducer le tempore usate in programmation. Duo computatores in le anno 1948, ENIAC e le Manchester Small-Scale Experimental Machine, habeva bibliothecas commun.
+Le prime programma qui pote esser nominate un systema de operation esseva GM-NAA I/O, un projecto per General Motors e North American Aviation. Solmente usate in circa 40 installationes, iste systema de operation automaticamente initia un processo pendente quando un processo ha finite, e provideva un pauc functiones general pro interfacer con le hardware.
+
+
+== Nucleo ==
+Articulo principe: Nucleo
+Le nucleo es le fundation de un systema de operation. Al minimo, un nucleo minimal debe poter gerer un processator central a operar processos, manipular le memoria de accesso aleatori pro mover software e datos, e provider un interfacie in le qual processos pote usar iste ressources. Un nucleo pote haber plure altere functiones: gener peripheros (a vices con le adjuta de un pauc pecietta de software nominate un controlator), portar messages inter processos, etc. 
+Un micronucleo es un typo de nucleo qui ha un pauc centro de codice, e qui delega le majoritate de operationes del systema al altere programmas e bibliothecas; versiones moderne Microsoft Windows es un micronucleo. Un nucleo monolithic es un nucleo qui incorpora tote le servicios del systema in le mesme memoria del nucleo. Le adjectivo monolitic es usate specialmente quando le nucleo incorpora altere functiones del systema de operation, como le interfacie usator. Linux es un nucleo monolithic.
+Le majoritate de systemas de operation ha ni tote ni nulle del servicios in commun con le nucleo, e iste nucleos pote esser nominate un nucleo hybrida pro notar que le nucleo es ni puramente monolithic ni puramente un micronucleo. Pro exemplo, es rar hodie que un nucleo monolithic provide un interfacie usator, aun qui esseva facite assi in Windows 95.
+
+
+=== Processos ===
+Le systema de operation provide un interfacie inter un programma e le hardware, pro que un application pote facer actiones. Iste interfacie etiam assecura que le programma sol pote facer interactiones programmate in le systema de operation. In nucleos multiprocesso, cata application es ponite in un processo, qui defini le ressources e memoria disponibile al application del processo.
+Plure systemas de operation usa processos non solmente pro le programmas del usator, sed etiam pro codice como controlatores.
+
+
+=== Interruptiones ===
+Interruptiones ha un rolo central in le systemas de operation. Con interrumptiones, un pecia de hardware dedicate pote pausar le execution del programma currente, reserver le receptaculos del registros, e saltar a un specific processo pro facer un action in responsa. In systemas de operation moderne, interrumptiones es maneate per le systemas de operation.
+Il ha duo typos principe de interrumption. Un interrumption hardware indica que un pecia de hardware ha un signalo pro le computator; le majoritate de systemas de operation reserva le receptaculo del interrumption pro le controllator del hardware qui mandava le interrumption. Un interrumption software indica un signallo del processo al systema de operation - pro exemplo, pro acceder al hardware, o pro mandar un message al systema de operation pro que un altere processo pote leger. Iste interrumptiones es nominate appello al systema; un nucleo pote haber cento de appellos al systema que illo ascolta.
+
+
+=== Maneamento de memoria ===
+Un nucleo de un systema de operation ha a manear tote le memoria operative del systema. Illo debe assecurar que nulle programma pote intervenir con le memoria de altere programmas, e que cata programma ha bastante.
+Le prime systemas de operation usava un maneamento cooperative, sed iste modello de maneamento esseva abandonate rapidemente; il es troppo facile que un error in un programma pote causar le uso de troppo de memoria. (Le violation intentional del allocation de memoria esseva e es ja usate per plure viruses. Ergo, le majoritate del systemas de operation usa alcun forma de protection de memoria.
+Systemas de operation moderne pote usar memoria virtual, in le qual alcun parte de un disco dur o altere reservo es usate pro reservar le contentos de un area de memoria.
+
+
+== Interfacie con le hardware ==
+Un computator ha plure ressources physic qui pote esser usate pro le varie programmas. Per provider un interfacie commun, le systema de operation facilita le disvellopamento del programma pro prevenir cata disveloppator que pro saper cata detalio technic de cata typo de hardware qui pote esser usate per un usator final.
+Hodie, il es rar que un systema de operation pote esser create pro solmente un typo de hardware. Pro operar con plure typos de hardware, le majoritate de usatores incorpora programmas breve denominate controllatores. Como le systema de operation provide un interfacie simple al programmator, le controllator provide un interfacie simple al systema de operation. Generalmente, un controllator pote interfacer con un singule typo de hardware.
+
+
+=== Systema de files ===
+Un systema primari facite per le systema de operation es le organisation e le accesso al files. Un file pote representar un programma, un archivo de datos, o aun un function (specialmente in systemas basate super Unix e su Hierarchia de Systema de Files). Un systema de files manipula tote le files de un systema como un base de datos. Systemas de files moderne usualmente manipula directorios in un structura de arbore.
+Le prime systemas de operation solmente supportava un typo de disco; usualmente, iste esseva un disco dur, o un typo de disquette super un systema de operation de disco. Iste prime systemas de file assi habeva limitationes notabile in su velocitate de accesso, e assi illo esseva create pro supportar solmente un systema de operation. Systemas de files moderne, como NTFS e ext3, es usate per plure systemas de operation.
+
+
+== Interfacie de usator ==
+
+Casi cata computator personal, e plure computatores servitor, es maneate per un usator human. Iste computatores require un interfacie usator. (Si un computator non interage directemente con un usator human, un computator pote abstiner se de haber alcun interfacie usator, sed illo debe ja haber alcun interfacie definite pro su 'usator'.)
+Le prime interfacies usator qui non esseva datos crude esseva interfacies textual, basate in le interfacies dactylographic del prime computatores; un usator dactyla su commandos, e le systema de operation responde con le resultato. Aun hodie, tote del tres principal systemas de operation (Linux, Mac OS X, e Microsoft Windows) ha interfacies textual. Le interfacie textual assi es le base de un interfacies de rete, con le qual on pote manear un computator con un connexion remote.
+Interfacies graphic, popularisate per le Macintosh original e le systema de operation Microsoft Windows, provide un organisation de datos in un forma plus legible. Ben que le interfacies graphic se cambia e se meliora rapidemente, le metaphora principal de un interfacie graphic es nominate "wimp" - qui representa le ideas de fenestras (ab (anglese) window), icones, menus, e punctator.
+
+
+== Ligamines externe ==
+(anglese) OSDev - sito pro illos qui crea systemas de operation como un hobby; ha plure informationes technic e simple.
+
+
+== Referentias ==

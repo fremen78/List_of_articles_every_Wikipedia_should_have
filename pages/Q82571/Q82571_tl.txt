@@ -1,0 +1,2550 @@
+Ang linear algebra (Kastila: álgebra lineal) ang sangay ng matematika na umuukol sa may hangganan o mabibilang na walang hangganang dimensiyonal na mga espasyong bektor gayundin ang mga pagma-mapang linyar sa pagitan ng mga gayong espasyo. Ang gayong imbestigasyon ay inisyal na nauudyukan ng isang mga sistema ng ekwasyong linyar sa ilang mga hindi alam. Ang gayong mga ekwasyon ay likas na kinakatawan gamit ang pormalismo ng mga matriks at mga bektor. Ang linear algebra ay sentral sa parehong puro at nilalapat na matematika. Halimbaw, ang abstraktong alhebra ay lumilitaw sa pagpapagaan ng mga aksiyoma ng isang espasyong bektor na tumutungo sa isang bilang ng mga paglalahat. Ang analisis na punsiyonal ay nag-aaral ng bersiyong walang hangganang dimensiyon ng teorya ng mga espasyong bektor. Kasama ng kalkulo, ang linear algebra ay tumutulong sa solusyon ng mga sistemang linyar ng mga ekwasyong diperensiyal. Ang mga pamamaraan mula sa linear algebra ay ginagamit rin sa heometriyang analitiko, inhinyerya, pisika, mga agham natural, agham pangkompyuter at mga agham panlipunan(partikular na ang ekonomika). Dahil ang linear algebra ay isang mahusay na pinaunlad na teorya, ang mga modelong matematikal na hindi linyar ay minsang tinatantiya ng mga modelong linyar.
+
+
+== Sakop ng pag-aaral ==
+
+
+=== Mga espasyong bektor ===
+Ang pangunahing mga istraktura ng linear algebra ay mga espasyong bektor. Ang isang espasyong bektor sa ibabaw ng isang field na F ay isang pangkat na  V kasama ng dalawang mga operasyong binaryo. Ang mga elemento ng V ay tinatawag na mga bektor at ang mga elemento ng  F ay tinatawag na mga skalar. Ang unang operasyon na adisyong bektor ay kumukuha ng anumang dalawang mga bektor na  v and w at naglalabas ng isang ikatlong bektor na v + w. Ang ikalawang operasyon ay kumukha ng anumang sklar na  a at anumang bektor na  v at naglalabas ng isang bagong bektor na  vector av. Sa pananaw ng unang halimbawa kung saan ang multiplikasyon ay ginagawa sa muling pag-iiskala ng bektor na  v ng isang skalar na  a, ang multiplikasyon ay tinatawag na multiplikasyong iskalar ng v ng a. Ang mga operasyon ng adisyon at multiplikasyon sa isang espasyong bektor ay sumasapat sa sumusunod na mga axioma. In the list below, let u, v and w be arbitrary vectors in V, and a and b scalars in F. 
+
+Ang mga elemento ng isang pangkalahatang espasyong bektor na V ay maaaring mga obhekto ng anumang kalikasan, halimbawa mga punsiyon, mga polinomial, mga bektor o mga matriks. Ang alhebrang linayr ay umuukol sa mga katangian na karaniwan sa lahat ng mga espasyong bektor.
+
+
+=== Mga transpormasyong linyar ===
+Gayundin gaya ng sa teoriya ng ibang mga istrakturang alhebraiko, ang linear algebra ay nag-aaral ng mga pagmamapa sa pagitan ng mga espasyong bektor na nag-iingat ng istrakturang espasyong bektor. Sa ibinigay na dalawang mga espasyong bektor na V at W sa ibabaw ng isang field na F, ang isang transpormasyong linyar(na tinatawag ring mapang linyar, pagmamapang linyar o operador na linyar) ay isang mapang  
+
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\to W}
+  
+
+na umaangkop sa multiplikasyon adisyon at multiplikasyong skalar:
+
+  
+    
+      
+        T
+        (
+        u
+        +
+        v
+        )
+        =
+        T
+        (
+        u
+        )
+        +
+        T
+        (
+        v
+        )
+        ,
+        
+        T
+        (
+        a
+        v
+        )
+        =
+        a
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(u+v)=T(u)+T(v),\quad T(av)=aT(v)}
+  
+
+para sa anumang mga bektor na  u,v ∈ V at isang skalara na  a ∈ F.  Kapag ang isang bihektibong pagmamapang linyar ay umiiral sa pagitan ng dalawang mga espasyong bektor(na ang bawat bektor mula sa unang espasyo ay nauugnay sa eksaktong isa sa ikalawa), ating sasabihing ang dalawang mga espasyo ay isomorpiko. Dahil ang isomopismo ay nag-iingat ng istrakturang linyar, ang dalawang mga espasyong bektor na isomorpiko ay likas na pareho mula sa pananaw ng alhebrang linya. Ang isang mahalagang tanong sa linear algebra ay kung ang isang pagmamapag ay isang isomorpismo o hindi at ang tanong na ito ay maaaring masagot sa pamamagitan ng pagtingin kung ang determinante ay sero. Kung ang isang pagmamapa ay hindi isang isorpismo, ang linear algebra ay interesado sa paghahanap ng mga saklaw(range)(o larawan) at ang pangkat ng mga elemento na namamapa sa sero na tinatawag na kernel ng pagmamapa. 
+
+
+=== Mga subespasyo, span, at basehan ===
+Muli, sa analogo sa mga teoriya ng ibang mga obhektong alhebraiko, ang linear algebra ay interesado sa mga pang-ilalim na pangkat (subset) ng mga espasyong bektor na mga mismong espasyong bektor. Ang mga pang-ilalim na pangkat na ito ay tinatawag na mga subespasyong linyar. Halimbawa, ang range at kernel ng isang pagmamapang linyar ay parehong mga subespasyo at kaya ay kadalasang tinatawag na espasyong range at ang espasyong null. Ang mga ito ay mga mahalagang halimbawa ng mga subespasyo. Ang isa pang mahalagang paraan ng pagbuo ng isang subespasyo ay ang pagkuha ng kombinasyong linyar ng isang pangkat ng mga bektor na v1, v2, …, vk:
+
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            k
+          
+        
+        
+          v
+          
+            k
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle a_{1}v_{1}+a_{2}v_{2}+\cdots +a_{k}v_{k},\,}
+  
+
+kung saan ang a1, a2, …, ak ay mga skalar. Ang pangkat ng lahat ng mga kombinasyong linyar ng mga bektor na v1, v2, …, vk ay tinatawag na span nba linyar na bumubuo ng isang subespasyo. Ang isang kombinasyong linyar ng anumang sistema ng mga bektor na may lahat na mga koepisyenteng sero ang bektor na sero ng V. Kung ito ang tanging paraan upang ihayag ang bektor na sero bilang isang kombinasyong linyar ng v1, v2, …, vk kung gayon ang mga bektor na ito ay independiyenteng linyar. Sa ibinigay na pangkat ng mga bektor na nagii-span sa isang espasyo, kung ang anumang bektor na 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ ay isang kombinasyong linyar ng ibang mga bektor(at kaya ang pangkat ay hindi independiyenteng linyar), kung gayon ang span ay mananatiling pareho kung ating aalisin ang 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ mula sa pangkat. Kaya ang isang pangkat ng mga independiyenteng linyar na bektor ay paulit ulit sa kahulugang ang isang pang-ilalim na pangkat na independiyenteng linyar ay magii-span sa parehong subespasyo. Kaya, tayo ay interesado sa isang independiyenteng linyar na pangkat ng mga bektor na nagii-span sa isang espasyong bektor na V na ating tatawaging basehan(basis) ng V. Ang anumang pangkat ng mga bektor na nagii-span ng V ay naglalaman ng isang basehan at ang anumang independiyenteng linyar na pangkat ng mga bektor na V ay maaari ring palawigin sa isang basehan. Lumalabas na kapag tinanggap natin ang aksiyoma ng isang pagpipilian, ang bawat espasyong bektor ay may isang basehan. Gayumpaman, ang basehang ito ay maaaring hindi natural at hindi maitatayo. Halimbawa, may umiiral na isang basehan para sa mga real na bilang na itinuturing bilang espasyong bektor sa ibabaw ng mga bilang na rasyonal ngunit walang hayagang basehan na naitayo. Ang anumang dalawang mga basehan ng isang espasyong bektor na V ay may parehong kardinalidad na tinatawag na dimensiyon ng V. Ang dimensiyon ng isang espasyong bektor ay isang mahusay na inilalarawan ng teoremang diemnsiyon para sa mga espasyong bektor. Kung ang isang basehan ng V ay may may-hangganang bilang ng mga elemento, ang V ay tinatawag na may hangganan dimensiyonal na espasyong bektor. Kung ang V ay isang may hangganang dimensiyonal at ang U ay isang subespasyo ng V, kung gayon ang dim U ≤ dim V. Kung ang U1 at U2 ay mga subespasyo ng V, kung gayon
+
+  
+    
+      
+        dim
+        ⁡
+        (
+        
+          U
+          
+            1
+          
+        
+        +
+        
+          U
+          
+            2
+          
+        
+        )
+        =
+        dim
+        ⁡
+        
+          U
+          
+            1
+          
+        
+        +
+        dim
+        ⁡
+        
+          U
+          
+            2
+          
+        
+        −
+        dim
+        ⁡
+        (
+        
+          U
+          
+            1
+          
+        
+        ∩
+        
+          U
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \dim(U_{1}+U_{2})=\dim U_{1}+\dim U_{2}-\dim(U_{1}\cap U_{2})}
+  
+. Kadalasan ang isa ay naglilimita ng pagsasaalang alang sa mga may hangganang dimensiyonal na espasyong bektor. Ang isang pundamental na teorema ng alhebrang linyar ay nagsasaad na ang lahat ng mga espasyong bektor ng parehong dimensiyon ay isomorpiko na nagbibigay ng isang madaling paraan ng paglalarawan ng isomorpismo.
+
+
+=== Mga bektor bilang n-mga tuple: teoriyang matriks ===
+
+Ang isang partikular basehan {v1, v2, …, vn} ng V ay pumapayag sa isa na magtayo ng isang sistemang koordinado sa V: ang bektor na may mga koordinadong (a1, a2, …, an) ang kombinasyong linyar na 
+
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+        .
+        
+      
+    
+    {\displaystyle a_{1}v_{1}+a_{2}v_{2}+\cdots +a_{n}v_{n}.\,}
+  
+
+Ang kondisyon na ang v1, v2, …, vn ay nagii-span ng V ay gumagarantiya na ang bawat bektor na  v ay maaaring takdaan ng mga koordinador samantalang ang independiyensiyang linyar ng  v1, v2, …, vn ay sumisiguro na ang mga koordinadong ito ay walang katulad(i.e. may isa lamang kombinasyong linyar ng basehang mga bektor na katumbas ng v). Sa paraang ito, kapag ang basehan ng isang espasyong bektor na V sa ibabaw ng F ay napili, ang V ay maaaring matukoy ng koordinadong n-espasyong Fn. Sa ilalim ng pagtukoy na ito, ang adisyon at multiplikasyong skalar ng mga bektor na V ay tumutugon sa adisyon at multiplikasyong skalar ng mga koordinadong bektor nito sa  Fn. Sa karagdagan, kung ang V at W ay isang n-dimensiyonal at ang m-dimensiyonal na espasyong bektor sa ibabaw ng  F, at ang isang basehan ng V at isang basehan ng W ay ipinirme, kung gayon, ang anumang transpormasyong linyar na T: V → W ay maaaring ikodigo ng  m × n matriks na A na may mga entrada sa field na F na tinatawag na matriks ng T sa respeto ng dalawang mga basehang ito. Ang dalawang mga matriks na nagkokodigo ng parehong transpormasyong linyar sa iba ibang mga basehan ay tinatawag na pareho. Ang teoriyang matriks ay nagpapalit ng pag-aaral ng mga transpormasyong linyar na inilalarawan ng aksiyomatiko, ng pag-aaral ng mga matriks na mga obhektong konkreto. Ang pangunahing pamamaraang ito ay nagtatangi ng linear algebra mula sa mga teoriya ng ibang mga istrakturang alhebraiko na hindi karaniwang mapaparametrisa ng konkreto. May isang mahalagang distinksiyon sa pagitan ng koordinadong n-espasyong Rn at isang pangkalahatang may hangganang dimensiyonal na espasyong bektor na V. Bagaman ang  Rn ay may isang pamantayang basehang  {e1, e2, …, en}, ang isang espasyong bektor na V ay karaniwang hindi pinagkakalooban ng gayong basehan at maraming mga iba't ibang basehan ay umiiral(bagaman ang mga ito ay lahat binubuo ng parehong bilang ng mga elemento na katumbas ng dimensiyon ng V). Ang isang pangunahing aplikasyon ng teoriyang matriks ang pagkukwenta ng mga determinante na isang sentral na konsepto sa linear algebra. Bagaman ang mga determinante ay maaaring ilarawan sa isang paraang malaya sa basehan, ang mga ito ay karaniwang ipinakikilala sa pamamagitan ng isang spesipikong representasyon ng pagmamapa. Ang halaga ng determinante ay hindi nakasalalay sa spesipikong basehan. Lumalabas na ang isang pagmamapa ay inbertible lamang kung at tanging kung ang determinante ay hindi sero. Kung ang determinante ay sero, kung gayon ang espasyongnull ay hindi trivial. Ang mga deteminante ay ibang mga aplikasyon kabilang ang isang sistematikong paraan ng pagtingin kung ang isang pangkat ng mga bektor ay independiyenteng linyar(ating isinulat ang mga bektor bilang mga column ng isang matriks at kung ang determinante ng matriks na ito ay sero, ang mga bektor ay dependiyenteng linyar). Ang mga determinante ay maaari ring magamit upang lutasin ang mga sitema ng mga ekwasyong linyar ngunit sa mga tunay na aplikasyon, ang eliminasyong Gaussian ay isang mas mabilis na paraan.
+
+
+=== Mga eigenhalaga at mga eigenbektor ===
+Sa pangkalahatan, ang aksiyon ng isang transpormasyong linyar ay mahirap na maunawaan at kaya upang magkaroon ng mabuting pagkaunawa sa mga transpormasyong linyar, ang mga bektor na na relatibong nakapirme ng transpormasyong ito ay binibigyan ng isang espesyal na atensiyon. Upang gawin itong mas konkreto, hayaang ang 
+  
+    
+      
+        T
+        :
+        V
+        →
+        V
+      
+    
+    {\displaystyle T:V\to V}
+  
+ na maging anumang transpormasyong linyar. Tayo ay lalong interesado sa mga hindi-serong bektor na 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ upang ang 
+  
+    
+      
+        T
+        v
+        =
+        λ
+        v
+      
+    
+    {\displaystyle Tv=\lambda v}
+  
+ kung saan ang  
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ ay isang skalara sa baseng field ng espasyong bektor. Ang mga bektor na ito ay tinatawag na mga eigenbektor at ang tumutugong mga skalar ay tinatawag na mga eigenhalaga. Upang mahanap ang eigenbektor o isang eigenhalaga, ating sasabihing ang 
+
+  
+    
+      
+        T
+        v
+        −
+        λ
+        v
+        =
+        (
+        T
+        −
+        λ
+        
+          Id
+        
+        )
+        v
+        =
+        0
+        ,
+      
+    
+    {\displaystyle Tv-\lambda v=(T-\lambda {\text{Id}})v=0,}
+  
+
+kung saan ang 
+  
+    
+      
+        
+          Id
+        
+      
+    
+    {\displaystyle {\text{Id}}}
+  
+ ang matriks na identidad. Para magkaroon mga solusyong hindi trivial sa ekwasyong ito, 
+  
+    
+      
+        det
+        (
+        T
+        −
+        λ
+        
+          Id
+        
+        )
+        =
+        0
+      
+    
+    {\displaystyle \det(T-\lambda {\text{Id}})=0}
+  
+
+Ang determinante ay isang polinomial at kaya ang mga eigenhalaga ay hindi ginagarantiyang umiiral kung ang field ay R. Kaya kadalasan ay gumagawa tayo sa isang alhebraikong saradong field gaya ng mga bilang na kompleks kapag nakikitungo sa mga eigenbektor at eigenhalaga upang ang eigenhalaga ay palaging umiiral. Partikular na maganda kung binigyan ng isang transpormasyong 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ na kumukuha ng isang espasyong bektor na 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ sa sarili nito, makakahanap tayo ng isang basehang madalaing nating makwenta ang aksiyon ng transpormasyon ng anumang bektor:
+kung ang 
+  
+    
+      
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          v
+          
+            n
+          
+        
+      
+    
+    {\displaystyle v_{1},v_{2},\ldots ,v_{n}}
+  
+ ay mga independiyenteng linyar na mga eigenbektor ng isang pagmamapa ng n-dimensiyonal mga espasyong 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ na may(hindi kinakailangang natatangi) mga eigenhalaga na 
+  
+    
+      
+        
+          λ
+          
+            1
+          
+        
+        ,
+        
+          λ
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          λ
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \lambda _{1},\lambda _{2},\ldots ,\lambda _{n}}
+  
+, and if 
+  
+    
+      
+        v
+        =
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+      
+    
+    {\displaystyle v=a_{1}v_{1}+\cdots +a_{n}v_{n}}
+  
+,
+kung gayon, 
+
+  
+    
+      
+        T
+        (
+        v
+        )
+        =
+        T
+        (
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        )
+        +
+        ⋯
+        +
+        T
+        (
+        
+          a
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+        )
+        =
+        
+          a
+          
+            1
+          
+        
+        T
+        (
+        
+          v
+          
+            1
+          
+        
+        )
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        T
+        (
+        
+          v
+          
+            n
+          
+        
+        )
+        =
+        
+          a
+          
+            1
+          
+        
+        
+          λ
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          λ
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle T(v)=T(a_{1}v_{1})+\cdots +T(a_{n}v_{n})=a_{1}T(v_{1})+\cdots +a_{n}T(v_{n})=a_{1}\lambda _{1}v_{1}+\cdots +a_{n}\lambda _{n}v_{n}.}
+  
+
+Ang gayong transpormasyon ay tinatawag na diagonalisableng matriks dahil sa eigenbasehan, ang transpormasyon ay kinakatawan ng isang matriks na diagonal. Dahil ang mga operasyong tulad ng multiplikasyong matriks, inbersiyong matriks at pagkukwenta ng determinante ay simple sa mga matriks na diagonal, ang mga pagkukwentang kinasasangkutan ng mga matiks ay mas simple kung ating madadala ang matriks sa isang anyong diagonal. Hindi lahat ng mga matriks ay diagonalisable(kahit sa ibabaw ng alhebraikong saradong field) ngunit ang mga matriks na diagonalisable ay bumubuo sa isang siksik na pang-ilalim na pangkat ng mga matriks.
+
+
+=== Mga espasyong panloob na produkto ===
+Bukod sa mga basikong konseptong ito, ang linear algebra ay nag-aaral rin ng mga espasyong bektor na may karagdagang istraktura gaya ng panloob na produkto. Ang panloob na produkto ay isang halimbawa ng isang anyong bilinyar at ito ay nagbibigay sa espasyong bektor ng isang istrakturang heometriko sa pamamagitan ng pagpapayag para sa depinisyon ng haba at mga anggulo. Sa pormal na paglalarawan, ang isang panloob na produkto ay isang mapang 
+
+  
+    
+      
+        ⟨
+        ⋅
+        ,
+        ⋅
+        ⟩
+        :
+        V
+        ×
+        V
+        →
+        
+          F
+        
+      
+    
+    {\displaystyle \langle \cdot ,\cdot \rangle :V\times V\rightarrow \mathbf {F} }
+  
+
+na sumasapat sa sumusunod na mga aksiyoma para sa lahat ng mga bektor na  
+  
+    
+      
+        u
+        ,
+        v
+        ,
+        w
+        ∈
+        V
+      
+    
+    {\displaystyle u,v,w\in V}
+  
+ at lahat ng mga skalar na
+  
+    
+      
+        a
+        ∈
+        
+          F
+        
+      
+    
+    {\displaystyle a\in \mathbf {F} }
+  
+:
+
+Simetriyang konhugato:
+
+  
+    
+      
+        ⟨
+        u
+        ,
+        v
+        ⟩
+        =
+        
+          
+            
+              ⟨
+              v
+              ,
+              u
+              ⟩
+            
+            ¯
+          
+        
+        .
+      
+    
+    {\displaystyle \langle u,v\rangle ={\overline {\langle v,u\rangle }}.}
+  
+
+Pansinin na sa R, ito ay simetric. 
+
+Linyaridad sa unang argumento:
+
+  
+    
+      
+        ⟨
+        a
+        u
+        ,
+        v
+        ⟩
+        =
+        a
+        ⟨
+        u
+        ,
+        v
+        ⟩
+        .
+      
+    
+    {\displaystyle \langle au,v\rangle =a\langle u,v\rangle .}
+  
+
+  
+    
+      
+        ⟨
+        u
+        +
+        v
+        ,
+        w
+        ⟩
+        =
+        ⟨
+        u
+        ,
+        w
+        ⟩
+        +
+        ⟨
+        v
+        ,
+        w
+        ⟩
+        .
+      
+    
+    {\displaystyle \langle u+v,w\rangle =\langle u,w\rangle +\langle v,w\rangle .}
+  
+
+positbong pagiging depinido:
+
+  
+    
+      
+        ⟨
+        v
+        ,
+        v
+        ⟩
+        ≥
+        0
+      
+    
+    {\displaystyle \langle v,v\rangle \geq 0}
+  
+ na may ekwalidad lamang para sa  
+  
+    
+      
+        v
+        =
+        0.
+      
+    
+    {\displaystyle v=0.}
+  
+
+Ating pwedeng ilarawan ang haba ng isang bektor na 
+  
+    
+      
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle v\in V}
+  
+ ng 
+  
+    
+      
+        
+          |
+        
+        
+          |
+        
+        v
+        
+          |
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        ⟨
+        v
+        ,
+        v
+        ⟩
+      
+    
+    {\displaystyle ||v||^{2}=\langle v,v\rangle }
+  
+ at ating mapapatunayan ang inekwalidad na Cauchy-Schwarts: 
+
+  
+    
+      
+        
+          |
+        
+        ⟨
+        u
+        ,
+        v
+        ⟩
+        
+          |
+        
+        ≤
+        
+          |
+        
+        
+          |
+        
+        u
+        
+          |
+        
+        
+          |
+        
+        ⋅
+        
+          |
+        
+        
+          |
+        
+        v
+        
+          |
+        
+        
+          |
+        
+        .
+      
+    
+    {\displaystyle |\langle u,v\rangle |\leq ||u||\cdot ||v||.}
+  
+
+Sa partikular, ang kantidad ay
+
+  
+    
+      
+        
+          
+            
+              
+                |
+              
+              ⟨
+              u
+              ,
+              v
+              ⟩
+              
+                |
+              
+            
+            
+              
+                |
+              
+              
+                |
+              
+              u
+              
+                |
+              
+              
+                |
+              
+              ⋅
+              
+                |
+              
+              
+                |
+              
+              v
+              
+                |
+              
+              
+                |
+              
+            
+          
+        
+        ≤
+        1
+        ,
+      
+    
+    {\displaystyle {\frac {|\langle u,v\rangle |}{||u||\cdot ||v||}}\leq 1,}
+  
+
+at kaya ay maaari nating tawagin ang kantidad na ito na cosine ng anggulo sa pagitan ng mga bektor.
+Ang dalawang mga bektor ay ortogonal kung ang  
+  
+    
+      
+        ⟨
+        u
+        ,
+        v
+        ⟩
+        =
+        0
+      
+    
+    {\displaystyle \langle u,v\rangle =0}
+  
+. Ang isang basehang ortogonal ay isang basehan kung saan ang lahat ng mga basehang bektor ay may habang 1 at ortogonal sa bawat isa. Sa ibinigay na anumang may hangganang dimensiyonal na espasyong bektor, ang basehang ortonormal ay maaaring matagpuan sa pamamagitan ng paraang Gram-Schmnidt. Ang mga basehang ortonormal ay partikular na magandang pakitunguhan dahil kung ang 
+  
+    
+      
+        v
+        =
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+      
+    
+    {\displaystyle v=a_{1}v_{1}+\cdots +a_{n}v_{n}}
+  
+, then 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+        =
+        ⟨
+        v
+        ,
+        
+          v
+          
+            i
+          
+        
+        ⟩
+      
+    
+    {\displaystyle a_{i}=\langle v,v_{i}\rangle }
+  
+.
+Ang panloob na produkto ay tumutulong sa konstruksiyon ng maraming mga magagamit na mga konsepto. Halimbawa, sa ibinigay na tranpormang 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+, maaari nating ilarawan ang konhugatong Hermitian na 
+  
+    
+      
+        
+          T
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle T^{*}}
+  
+ bilang transpormasyong linyar na sumasapat sa 
+
+  
+    
+      
+        ⟨
+        T
+        u
+        ,
+        v
+        ⟩
+        =
+        ⟨
+        u
+        ,
+        
+          T
+          
+            ∗
+          
+        
+        v
+        ⟩
+        .
+      
+    
+    {\displaystyle \langle Tu,v\rangle =\langle u,T^{*}v\rangle .}
+  
+
+Kung ang T ay sumasapat sa 
+  
+    
+      
+        T
+        
+          T
+          
+            ∗
+          
+        
+        =
+        
+          T
+          
+            ∗
+          
+        
+        T
+      
+    
+    {\displaystyle TT^{*}=T^{*}T}
+  
+, ating tatawagin ang T na normal. Lumalabas na ang mga matriks na normal ay tumpak na mga matriks na may sistemang ortonormal ng mga eigenbektor na nagii-span ng V.
+
+
+== Ilang pangunahing magagamit na mga teorema ==
+Ang isang matriks ay inbertible o hindi singular kung at tanging kung ang mapang linyar ay na kinakatawan ng matriks ay isang isomorpismo.
+Ang anumang espasyong bektor sa ibabaw ng field na F ng dimensiyong n ay isomorpiko sa  Fn bilang isang espasyong bektor sa ibabaw ng F.
+Korolaryo: Ang anumang dalawang mga espasyong bektor sa ibabaw ng  F ng parehong may hangganang dimensiyon ay isomorpiko sa bawat isa.
+Ang isang mapang linyar ay isomorpismo kung at tanging kung ang determinante ay hindi sero.
+
+
+== Mga aplikasyon ==
+
+
+=== Solusyon ng mga sistemang linyar ===
+
+Ang linear algebra ay nagbibigay ng pormal na kapaligiran para sa kombinasyong linyar ng mga ekwasyong ginagamit sa paraang Gaussian. Ipagpalagay na ang layuni ay hanapin at ilarawan ang (mga)solusyon, kung anuman ng sumusunod na sistema ng mga ekwasyong linyar:
+
+  
+    
+      
+        
+          
+            
+              
+                2
+                x
+              
+              
+              
+                
+                +
+                
+              
+              
+              
+                y
+              
+              
+              
+                
+                −
+                
+              
+              
+              
+                z
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                8
+              
+              
+                
+                
+                (
+                
+                  L
+                  
+                    1
+                  
+                
+                )
+              
+            
+            
+              
+                −
+                3
+                x
+              
+              
+              
+                
+                −
+                
+              
+              
+              
+                y
+              
+              
+              
+                
+                +
+                
+              
+              
+              
+                2
+                z
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                −
+                11
+              
+              
+                
+                
+                (
+                
+                  L
+                  
+                    2
+                  
+                
+                )
+              
+            
+            
+              
+                −
+                2
+                x
+              
+              
+              
+                
+                +
+                
+              
+              
+              
+                y
+              
+              
+              
+                
+                +
+                
+              
+              
+              
+                2
+                z
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                −
+                3
+              
+              
+                
+                
+                (
+                
+                  L
+                  
+                    3
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{7}2x&&\;+\;&&y&&\;-\;&&z&&\;=\;&&8&\qquad (L_{1})\\-3x&&\;-\;&&y&&\;+\;&&2z&&\;=\;&&-11&\qquad (L_{2})\\-2x&&\;+\;&&y&&\;+\;&&2z&&\;=\;&&-3&\qquad (L_{3})\end{alignedat}}}
+  
+
+Ang eliminasyong Gaussian ay: alisin ang x mula sa lahat ng mga ekwasyon sa baba ng 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L_{1}}
+  
+ at pagkatapos ay alisin ang y mula sa lahat ng mga ekwasyon sa baba ng 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L_{2}}
+  
+. Ito ay maglalagay sa sistema sa anyong tatsulok. Pagkatapos, gamit ang pabalik na paghalili, ang bawat hindi alam ay maaaring malutas. Halimbawa, ang x ay tinanggal mula sa 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L_{2}}
+  
+ sa pamamagitan ng pagdaragdag ng 
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    3
+                    2
+                  
+                
+              
+            
+          
+        
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}{\frac {3}{2}}\end{matrix}}L_{1}}
+  
+ sa 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L_{2}}
+  
+. Ang x ay tinanggal naman mula sa 
+  
+    
+      
+        
+          L
+          
+            3
+          
+        
+      
+    
+    {\displaystyle L_{3}}
+  
+ sa pamamagitan ng pagdaragdag ng 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L_{1}}
+  
+ sa 
+  
+    
+      
+        
+          L
+          
+            3
+          
+        
+      
+    
+    {\displaystyle L_{3}}
+  
+. Formally:
+
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        +
+        
+          
+            3
+            2
+          
+        
+        
+          L
+          
+            1
+          
+        
+        →
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L_{2}+{\frac {3}{2}}L_{1}\rightarrow L_{2}}
+  
+
+  
+    
+      
+        
+          L
+          
+            3
+          
+        
+        +
+        
+          L
+          
+            1
+          
+        
+        →
+        
+          L
+          
+            3
+          
+        
+      
+    
+    {\displaystyle L_{3}+L_{1}\rightarrow L_{3}}
+  
+
+Ang resulta ay:
+
+  
+    
+      
+        
+          
+            
+              
+                2
+                x
+              
+              
+              
+                
+                +
+              
+              
+              
+                y
+              
+              
+              
+                
+                −
+              
+              
+              
+                
+                z
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                8
+              
+              
+            
+            
+              
+              
+              
+              
+              
+                
+                  
+                    1
+                    2
+                  
+                
+                y
+              
+              
+              
+                
+                +
+              
+              
+              
+                
+                
+                  
+                    1
+                    2
+                  
+                
+                z
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                1
+              
+              
+            
+            
+              
+              
+              
+              
+              
+                2
+                y
+              
+              
+              
+                
+                +
+              
+              
+              
+                
+                z
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                5
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{7}2x&&\;+&&y&&\;-&&\;z&&\;=\;&&8&\\&&&&{\frac {1}{2}}y&&\;+&&\;{\frac {1}{2}}z&&\;=\;&&1&\\&&&&2y&&\;+&&\;z&&\;=\;&&5&\end{alignedat}}}
+  
+
+Ngayon, ang y ay tinanggal mula sa  
+  
+    
+      
+        
+          L
+          
+            3
+          
+        
+      
+    
+    {\displaystyle L_{3}}
+  
+ sa pamamagitan ng pagdaragdag ng 
+  
+    
+      
+        −
+        4
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle -4L_{2}}
+  
+ sa 
+  
+    
+      
+        
+          L
+          
+            3
+          
+        
+      
+    
+    {\displaystyle L_{3}}
+  
+:
+
+  
+    
+      
+        
+          L
+          
+            3
+          
+        
+        +
+        −
+        4
+        
+          L
+          
+            2
+          
+        
+        →
+        
+          L
+          
+            3
+          
+        
+      
+    
+    {\displaystyle L_{3}+-4L_{2}\rightarrow L_{3}}
+  
+
+Ang resulta ay:
+
+  
+    
+      
+        
+          
+            
+              
+                2
+                x
+              
+              
+              
+                
+                +
+              
+              
+              
+                y
+                
+              
+              
+              
+                −
+              
+              
+              
+                
+                z
+                
+              
+              
+              
+                =
+                
+              
+              
+              
+                8
+              
+              
+            
+            
+              
+              
+              
+              
+              
+                
+                  
+                    1
+                    2
+                  
+                
+                y
+                
+              
+              
+              
+                +
+              
+              
+              
+                
+                
+                  
+                    1
+                    2
+                  
+                
+                z
+                
+              
+              
+              
+                =
+                
+              
+              
+              
+                1
+              
+              
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                −
+                z
+                
+              
+              
+              
+                
+                =
+                
+              
+              
+              
+                1
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{7}2x&&\;+&&y\;&&-&&\;z\;&&=\;&&8&\\&&&&{\frac {1}{2}}y\;&&+&&\;{\frac {1}{2}}z\;&&=\;&&1&\\&&&&&&&&\;-z\;&&\;=\;&&1&\end{alignedat}}}
+  
+
+Ang resultang ito ay isang sistema ng mga ekwasyong linyar sa anyong tatsulok at kaya ang unang bahagi ng algoritmo ay kompleto na. Ang huling bahagi na pabalik na paghalili ay binubuo ng paglutas ng mga alam sa kaayusang baliktad. Kaya maaaring makita na 
+
+  
+    
+      
+        z
+        =
+        −
+        1
+        
+        (
+        
+          L
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle z=-1\quad (L_{3})}
+  
+
+Pagkatapos, ang 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ ay maaaring ihalili sa 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L_{2}}
+  
+ na malulutas naman upang makamit ang 
+
+  
+    
+      
+        y
+        =
+        3
+        
+        (
+        
+          L
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle y=3\quad (L_{2})}
+  
+
+Sumunod, ang z at y ay maaaring ihalili sa 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L_{1}}
+  
+ na malulutas naman upang makamit ang 
+
+  
+    
+      
+        x
+        =
+        2
+        
+        (
+        
+          L
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle x=2\quad (L_{1})}
+  
+
+Ang sistema ay nalutas na.
+Ating magagawa sa pangkalahatan na isulat ang anumang sistema ng mga ekwasyong linyar bilang isang ekwasyong matriks na:
+
+  
+    
+      
+        A
+        x
+        =
+        b
+        .
+      
+    
+    {\displaystyle Ax=b.}
+  
+
+Ang solusyon ng sistemang ito ay: una, ating hahanapin ang isang partikular na solusyong 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+ ng ekwasyong ito gamit ang eliminasyong Gaussian. Pagkatapos, ating kukwentahin ang mga solusyon ng 
+  
+    
+      
+        A
+        x
+        =
+        0
+      
+    
+    {\displaystyle Ax=0}
+  
+ na ang ibig sabihin ay hahanapin natin ang espasyong null na 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ ng A.
+Ang pangkat na solusyon ng ekwasyong ito ay ibinigay ng 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        +
+        N
+        =
+        {
+        
+          x
+          
+            0
+          
+        
+        +
+        n
+        :
+        n
+        ∈
+        N
+        }
+      
+    
+    {\displaystyle x_{0}+N=\{x_{0}+n:n\in N\}}
+  
+.
+Kung ang bilang ng mga bariabulo ay katumbas ng bilang ng mga ekwasyon, kung gayon ating mailalarawan kapag ang sistema ay may walang katulad na solusyon:
+dahil ang N ay trivial kung at tanging kung ang 
+  
+    
+      
+        det
+        A
+        ≠
+        0
+      
+    
+    {\displaystyle \det A\neq 0}
+  
+, ang ekwasyon ay may walang katulad na solusyon kung at tanging kung ang  
+  
+    
+      
+        det
+        A
+        ≠
+        0
+      
+    
+    {\displaystyle \det A\neq 0}
+  
+.
+
+
+=== Mahusay na kasyang linyang mababang mga kwadrado ===
+Ang paraang mababang mga kwadrado ay ginagamit upang tukuyin ang pinakamahusay na linyang nagkakasya sa isang pangkat ng mga datos. Ang linyang ito ay magpapaliit ng suman ng mga kwadrado ng mga residual. 
+
+
+=== Pagpapalawig na seryeng Fourier ===
+Ang mga seryeng Fourier ay representasyon ng isang punsiyong 
+  
+    
+      
+        f
+        :
+        [
+        −
+        π
+        ,
+        π
+        ]
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f:[-\pi ,\pi ]\to \mathbf {R} }
+  
+ bilang isang seryeng trigonometrikong:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            
+              a
+              
+                0
+              
+            
+            2
+          
+        
+        +
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+        [
+        
+          a
+          
+            n
+          
+        
+        cos
+        ⁡
+        (
+        n
+        x
+        )
+        +
+        
+          b
+          
+            n
+          
+        
+        sin
+        ⁡
+        (
+        n
+        x
+        )
+        ]
+        .
+      
+    
+    {\displaystyle f(x)={\frac {a_{0}}{2}}+\sum _{n=1}^{\infty }\,[a_{n}\cos(nx)+b_{n}\sin(nx)].}
+  
+
+Ang pagpapalawig na seryeng ito ay labis na magagamit sa paglutas ng mga ekwasyong parsiyal diperensiyal. Sa artikulong ito, hindi tayo uukol sa mga isyu ng pagtatagpo. Maganda na sabihing ang lahat ng mga tuloy tuloy na punsiyon ay may nagtatagpong pagpapalawig na seryeng Fourier at ang sapat na magandang mga hindi tuloy tuloy na punsiyon ay may isang seryeng Fourier na nagtatagpo sa halaga ng punsiyon sa karamihan ng mga punto. Ang espasyo ng lahat ng mga punsiyon ay maaaring ikatawan ng isang seryeng Fourier ay bumubuo sa isang espasyong bektor. Sa karagdagan, ang espasyong ito ay isa ring espasyong panloob na produkto na may panloob na produktong  
+
+  
+    
+      
+        ⟨
+        f
+        ,
+        g
+        ⟩
+        =
+        
+          
+            1
+            π
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        f
+        (
+        x
+        )
+        g
+        (
+        x
+        )
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle \langle f,g\rangle ={\frac {1}{\pi }}\int _{-\pi }^{\pi }f(x)g(x)\,dx.}
+  
+
+Ang mga punsiyong 
+  
+    
+      
+        
+          g
+          
+            n
+          
+        
+        (
+        x
+        )
+        =
+        sin
+        ⁡
+        (
+        n
+        x
+        )
+      
+    
+    {\displaystyle g_{n}(x)=\sin(nx)}
+  
+ for 
+  
+    
+      
+        n
+        >
+        0
+      
+    
+    {\displaystyle n>0}
+  
+ at 
+  
+    
+      
+        
+          h
+          
+            n
+          
+        
+        (
+        x
+        )
+        =
+        cos
+        ⁡
+        (
+        n
+        x
+        )
+      
+    
+    {\displaystyle h_{n}(x)=\cos(nx)}
+  
+ para sa 
+  
+    
+      
+        n
+        ≥
+        0
+      
+    
+    {\displaystyle n\geq 0}
+  
+ ay isang basehang ortonormal para sa espasyo ng mapapalawig ng Fourier na mga punsiyo. Kaya maaari nating gamitin ang mga kasangkapan ng linear algebra upang mahanap ang pagpapalawig ng anumang punsiyon sa espasyong ito sa mga termino ng mga basehang punsiyong ito. Halimbawa, upang mahanap ang koepisyenteng 
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle a_{k}}
+  
+, ating kukunin ang panloob na produkto sa 
+  
+    
+      
+        
+          h
+          
+            k
+          
+        
+      
+    
+    {\displaystyle h_{k}}
+  
+:
+
+  
+    
+      
+        ⟨
+        f
+        ,
+        
+          h
+          
+            k
+          
+        
+        ⟩
+        =
+        
+          
+            
+              a
+              
+                0
+              
+            
+            2
+          
+        
+        ⟨
+        
+          h
+          
+            0
+          
+        
+        ,
+        
+          h
+          
+            k
+          
+        
+        ⟩
+        +
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+        [
+        
+          a
+          
+            n
+          
+        
+        ⟨
+        
+          h
+          
+            n
+          
+        
+        ,
+        
+          h
+          
+            k
+          
+        
+        ⟩
+        +
+        
+          b
+          
+            n
+          
+        
+        ⟨
+         
+        
+          g
+          
+            n
+          
+        
+        ,
+        
+          h
+          
+            k
+          
+        
+        ⟩
+        ]
+        ,
+      
+    
+    {\displaystyle \langle f,h_{k}\rangle ={\frac {a_{0}}{2}}\langle h_{0},h_{k}\rangle +\sum _{n=1}^{\infty }\,[a_{n}\langle h_{n},h_{k}\rangle +b_{n}\langle \ g_{n},h_{k}\rangle ],}
+  
+
+at sa pamamagitan ng ortonormalidad, ang 
+  
+    
+      
+        ⟨
+        f
+        ,
+        
+          h
+          
+            k
+          
+        
+        ⟩
+        =
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle \langle f,h_{k}\rangle =a_{k}}
+  
+; na ang ibig sabihin ay 
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+        =
+        
+          
+            1
+            π
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        f
+        (
+        x
+        )
+        cos
+        ⁡
+        (
+        k
+        x
+        )
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle a_{k}={\frac {1}{\pi }}\int _{-\pi }^{\pi }f(x)\cos(kx)\,dx.}
+  
+
+
+=== Mekanikang quantum ===
+Ang mekanikang quantum ay mataas na napukaw ng mga nosyon ng linear algebra. Sa mekanikang quantum, ang pisikal na estado ng isang partikulo ay kinakatawan ng isang bektor at mga mapagmamasdan(obersvables) gaya ng momentum, enerhiya at angular na momentum ay kinakatawan ng mga operador na linyar sa saligang espasyong bektor. Sa mas konkreto, ang punsiyong alon ng isang partikulo ay naglalarawan ng estadong pisikal at nasa espasyong bektor L2 (ang mga punsiyong 
+  
+    
+      
+        ϕ
+        :
+        
+          
+            R
+          
+          
+            3
+          
+        
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle \phi :\mathbf {R} ^{3}\to \mathbf {C} }
+  
+ upang ang
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          |
+        
+        ϕ
+        
+          
+            |
+          
+          
+            2
+          
+        
+        
+        d
+        x
+        
+        d
+        y
+        
+        d
+        z
+      
+    
+    {\displaystyle \int _{-\infty }^{\infty }\int _{-\infty }^{\infty }\int _{-\infty }^{\infty }|\phi |^{2}\,dx\,dy\,dz}
+  
+ ay may hangganan), at nag-ito ay nag-eebolb ayon sa ekwasyong Schrödinger. Ang enerhiya ay kinakatawan bilang operador na  
+  
+    
+      
+        H
+        =
+        −
+        
+          
+            
+              ℏ
+              
+                2
+              
+            
+            
+              2
+              m
+            
+          
+        
+        
+          ∇
+          
+            2
+          
+        
+        +
+        V
+        (
+        x
+        ,
+        y
+        ,
+        z
+        )
+      
+    
+    {\displaystyle H=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(x,y,z)}
+  
+ kung saan ang V ang enerhiyang potensiyal. Ang H ay kilala rin bilang operador na Hamiltonian. Ang mga eigenhalaga ng H ay kumakatawan sa mga posibleng enerhiya na mapagmamasdan. Sa ibinigay na isang partikulo sa isang estadong 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+, ating mapapalawig ang  
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ sa isang kombinasyong linyar ng mga eigenhalaga ng H. Ang bawat ng H sa bawat eigenestado ay tumutukoy sa probabilidad ng pagsukat ng tumutugon eigenhalaga at ang mga pwersa ng pagsukat ay pumupwera sa partikulo na kumuha ng eigenestado(pagkagiba ng alongpunsiyon).
+
+
+== Mga sanggunian ==

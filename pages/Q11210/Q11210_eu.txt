@@ -1,0 +1,1104 @@
+Koordenatu sistema N dimentsioko espazio bateko puntu bakoitzari koordenatu (zenbaki) N-kote bat esleitzeko bilduma da. Horrela, erreferentziatzat hartutako puntu edo ardatz finkoekiko posizioa zehazteko erabiltzen diren N koordenatuek N dimentsioko espazioan edozein objektu era bakarrean kokatzen dute. Koordenatu sistema ondo definituta egoteko, beraz, N dimentsioko espazioan erreferentzia gisa finkatzen diren koordenatu-jatorria (O letraz adierazten dena) eta, gehienez, N koordenatu-ardatza behar dira. Azken horiek objetu bat koordenatu-jatorritik zein distantziatara dagoen zehazteko erabiltzen diren ardatz irudikariak dira. Hau da, horrelako ardatz bakoitzak koordenatu bat zehazten du eta era ordenatuan N koordenatuek objektua era bakarrean espazioan kokatzen dute.  Koordenatuen ordena esanguratsua da eta, normalean, koordenatuak N-tupla baten bidez adierazten dira. 
+Koordenatu sistema mota ugari daude eta aztertu nahi den fenomenoaren arabera bat edo beste aukeratzen da. N dimentsioko espazioan erabilitako koordenatu sistema guztiak baliokideak dira, hau da, N dimentsioko koordenatu sistemen artean erlazio zehatzak daude eta sistema batetik bestera pasa daiteke. Hala eta guztiz ere, aztergai den fenomenoaren arabera, kalkulu analitikoak errazten direlako, sistema bat edo beste lehenesten da. 
+Geometria analitikoa arduratzen da koordenatu-sistema batean aljebra eta analisi matematikoaren oinarrizko teknikak aplikatuz, lerro eta forma geometrikoen ikerketa egiten duen.
+Koordenatu sistemak, gertaera fisikoak neurtzeko gai den behatzailea eta gertaerak noiz jasotzen diren neurtzeko erlojuarekin batera, erreferentzia sistema osatzen du. Erreferentzia sistema baten bidez objektuen posizioa, bektore baten osagaiak edo higidura deskribatu eta analitikoki aztertzen dira.      
+
+
+== Koordenatu sistema ezagunenak ==
+
+
+=== Koordenatu sistema kartesiarrak ===
+Artikulu nagusia: «koordenatu kartesiar»
+Koordenatu sistema kartesiarra da sinpleena, espazio euklidearretan gehien erabiltzen dena. René Descartes (1596-1650) filosofo eta matematikaria izan zen koordenatu sistema hau publikatzen lehena, eta horregatik, “Renatus Cartesius”, bere izen latindarra erabili zen sistema hau izandatzeko. N=2 dimentsioko espazio euklidearrerako definitu bazituen ere, orokortuz, N dimentsioko espazio euklidearretan defini daiteke.
+N dimentsioko espazio euklidearreko ardatz koordenatuak jatorritik pasatuz elkarrekiko elkarzutak diren lerro zuzenak dira. N koordenatu ardatzek elkar ebakitzen duten puntua (O) koordenatu sistemaren jatorria da, eta espazioko puntu bakoitzari dagozkion koordenatuak jatorritik punturako distantzien proiekzio ortogonalen luzerak
+  
+    
+      
+        (
+        
+          x
+          
+            i
+          
+        
+        ∈
+        
+          R
+        
+        )
+      
+    
+    {\displaystyle (x_{i}\in \mathbb {R} )}
+  
+ dira. Koordenatu ardatz bakoitzak koordenatu-jatorriak zehazten dituen alde positiboa eta negatiboa ditu, eta beraz, proiekzio ortogonala ardatzaren zein aldetan dagoenaren arabera, koordenatuak positiboak zein negatiboak izan daitezke.
+Hortaz, N dimentsioko espazio batean puntu baten posizioa koordenatu kartesiarren bidez zehaztuta hurrengoa litzateke:  
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            N
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},x_{2},...,x_{N})}
+  
+.
+Kordenatu kartesiarrak erabiliz, espazioko P puntu bat jatorriarekiko duen distantzia 
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}}
+  
+ eta bektorea 
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}}
+  
+ adieraziz ere, modu bakarrean zehaz daiteke:
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+        =
+        r
+        =
+        
+          
+            
+              ∑
+              
+                k
+                =
+                1
+              
+              
+                N
+              
+            
+            
+              x
+              
+                k
+              
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}=r={\sqrt {\sum _{k=1}^{N}x_{k}^{2}}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+        =
+        
+          
+            ∑
+            
+              k
+              =
+              1
+            
+            
+              N
+            
+          
+          
+            x
+            
+              k
+            
+          
+          
+            
+              
+                
+                  u
+                  
+                    k
+                  
+                
+                ^
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}=\textstyle \sum _{k=1}^{N}x_{k}{\hat {u_{k}}}\displaystyle }
+  
+
+non 
+  
+    
+      
+        
+          
+            
+              
+                u
+                
+                  k
+                
+              
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {u_{k}}}}
+  
+ k koordenatu ardatzaren norabidearen bektore unitario den.
+
+
+==== Koordenatu sistema kartesiar linealak (N=1) ====
+
+Dimentsio bakarreko espazio euklidearreko —hots, zuzen baterako— koordenatu sistema kartesiarra zehazteko koordenatu ardatz bakarra behar da. Ardatz horren gainean koordenatu jatorria dago, O, eta honek ardatzaren noranzkoa zehazten du, alde negatiboa eta positiboa bereiztuz. Normalean eta zuzena horizontalean kokatuta badago, ezkerreko partea negatiboa da eta eskuineko partea positiboa. Espazioko puntu bakoitzari dagokion koordenatua jatorritik punturako distantzia da.
+Dimentsio bakarreko sistema kartesiarreko ardatzari zuzen erreala deitzen zaio. Zenbaki erreal bakoitzak era bakarreko kokapena du lerroan, koordenatua. Alderantziz, zuzenaren puntu bakoitzaren koordenatua zenbaki gisa interpreta daiteke jarraibide ordenatu batean, hala nola zenbaki erreal gisa.
+Hortaz, dimentsio bakarreko espazio batean puntu baten posizioa koordenatu kartesiarren bidez zehaztutapuntua bera litzateke:  
+  
+    
+      
+        x
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle x\in \mathbb {R} }
+  
+.
+
+Kordenatu kartesiarrak erabiliz, espazioko P puntu bat jatorriarekiko duen distantzia 
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}}
+  
+ eta bektorea 
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}}
+  
+ adieraziz ere, modu bakarrean zehaz daiteke:
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+        =
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+          
+        
+        =
+        
+          |
+        
+        x
+        
+          |
+        
+      
+    
+    {\displaystyle {\overline {OP}}=r={\sqrt {x^{2}}}=|x|}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+        =
+        
+          x
+          
+            
+              
+                u
+                ^
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}=\textstyle x{\hat {u}}\displaystyle }
+  
+non 
+  
+    
+      
+        
+          
+            
+              u
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {u}}}
+  
+ koordenatu ardatzaren norabidearen bektore unitario den.
+
+
+==== Koordenatu sistema kartesiarrak planoan (N=2) ====
+
+Bi dimentsioko espazio euklidearreko -hots, plano euklidearreko- koordenatu sistema kartesiar bat zehazteko elkarzutak diren bi zuzen erabiltzen dira. Horrela koordenatu-sistema ortogonala lortzen da. Ardatz horizontala izendatzeko OX ardatza erabiltzen da, eta ardatz bertikala izendatzeko OY ardatza. Zuzen horiek sistemaren koordenatu ardatzak dira eta elkar ebakitzen duten puntua, berriz, koordenatu jatorria.  
+Orokorrean, OX ardatzeko jatorritik eskuineranzko distantziak positibotzat hartzen dira, eta ezkerreranzkoak negatibotzat. OY ardatzeko jatorritik goranzko distantziak positibotzat hartzen dira, eta negatibotzat jatorritik beheranzkoak.
+Espazioko puntu bakoitzari dagozkion koordenatuak, koordenatu jatorritik punturako distantziaren proiektzio ortogonalen luzerak dira. OX ardatzarekiko koordenatuari abzisa deritzo eta  OY ardatzerainoko distantzia adierazten du. Normalean 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ ikurraz adierazten da. Aldiz, OY ardatzarekiko koordenatuari ordenatu deritzo eta OX ardatzerainoko distantzia da; normalena 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ ikurraz adierazten da. Planoko puntu baten posizioa koordenatu kartesiarren bidez zehaztuta hurrengoa litzateke: 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+.
+Kordenatu kartesiarrak erabiliz, planoko P
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ puntu bat jatorriarekiko duen distantzia 
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}}
+  
+ eta bektorea 
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}}
+  
+ adieraziz ere, modu bakarrean zehaz daiteke: 
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+        =
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}=r={\sqrt {x^{2}+y^{2}}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+        =
+        
+          x
+          
+            
+              
+                i
+                ^
+              
+            
+          
+          +
+          y
+          
+            
+              
+                j
+                ^
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}=\textstyle x{\hat {i}}+y{\hat {j}}\displaystyle }
+  
+non 
+  
+    
+      
+        
+          
+            
+              i
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {i}}}
+  
+ eta 
+  
+    
+      
+        
+          
+            
+              j
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {j}}}
+  
+, hurrenez-hurren OX eta OY koordenatu ardatzen norabidearen bektore unitarioak diren.
+
+
+==== Koordenatu sistema kartesiarrak espazioan (N=3) ====
+
+Hiru dimentsioko espazio euklidearreko -hots, espazioko- koordenatu sistema kartesiarra zehazteko elkarzutak diren hiru zuzen erabiltzen dira. Horretarako, hirugarren ardatz bat baliatzen da (OZ ardatza), beste bi ardatzekiko perpendikularrean kokatua; puntuaren posizioa, orduan, hiru koordenatu bidez adierazten da 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        ,
+        z
+        )
+      
+    
+    {\displaystyle (x,y,z)}
+  
+.
+Koordenatu kartesiarrak erabiliz, espazioko P=
+  
+    
+      
+        (
+        x
+        ,
+        y
+        ,
+        z
+        )
+      
+    
+    {\displaystyle (x,y,z)}
+  
+ puntu bat jatorriarekiko duen distantzia 
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}}
+  
+ eta bektorea 
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}}
+  
+ adieraziz ere, modu bakarrean zehaz daiteke:
+  
+    
+      
+        
+          
+            
+              O
+              P
+            
+            ¯
+          
+        
+        =
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+            +
+            
+              z
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\overline {OP}}=r={\sqrt {x^{2}+y^{2}+z^{2}}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                O
+                P
+              
+              →
+            
+          
+        
+        =
+        
+          x
+          
+            
+              
+                i
+                ^
+              
+            
+          
+          +
+          y
+          
+            
+              
+                j
+                ^
+              
+            
+          
+          +
+          z
+          
+            
+              
+                k
+                ^
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle {\vec {OP}}=\textstyle x{\hat {i}}+y{\hat {j}}+z{\hat {k}}\displaystyle }
+  
+non 
+  
+    
+      
+        
+          
+            
+              i
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {i}}}
+  
+, 
+  
+    
+      
+        
+          
+            
+              j
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {j}}}
+  
+ eta 
+  
+    
+      
+        
+          
+            
+              k
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {k}}}
+  
+,  hurrenez-hurren OX, OY eta OZ koordenatu ardatzen norabidearen bektore unitarioak diren.
+
+
+=== Koordenatu sistema polarrak ===
+Koordenatu sistema polarrak N=2 dimentsioko espazioan, hots planoan, definitzen dira eta simetria zentrala duten sistemekin erabiltzeko egokiak dira. Sistemaren erdiko puntua koordenatu-jatorria da eta polo esaten zaio. Bertatik ardatz koordenatua (polo-ardatza) igarotzen da eta sistema kartesiarreko OX ardatzaren baliokidea da. Kasu honetan, planoko puntu baten koordenatuak polorainoko 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ distantzia eta polo-ardatzarekin osatzen duen 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ angelua dira. Koordenatu erradial edo erradio bektorea deitzen zaio r distantziari (
+  
+    
+      
+        r
+        ≥
+        0
+      
+    
+    {\displaystyle r\geq 0}
+  
+) eta koordenatu polarra edo angelu polarra  
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ koordenatuari, zeinak balioak 
+  
+    
+      
+        [
+        0
+        ,
+        2
+        π
+        )
+      
+    
+    {\displaystyle [0,2\pi )}
+  
+ (edo baliokidea dena 
+  
+    
+      
+        (
+        −
+        π
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle (-\pi ,\pi ]}
+  
+) tartean hartzen dituen.
+Hortaz, koordenatu polarrak bi dimentsiotako plano batean puntu bat distantzia eta angelu banarekin definitzen dituen koordenatu sistema da. Koordenatu polarrak 
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle (r,\theta )}
+  
+, tuplarekin adierazten dira.
+Polo puntuaren kasua berezia da, izan ere ez du adiera bakarra sistema honetan. Koordenatu erradiala nulua (
+  
+    
+      
+        r
+        =
+        0
+      
+    
+    {\displaystyle r=0}
+  
+) da, baina koordenatu polarrak edozein balio har dezake. Konbenioz, eta adiera bakarra izan dezan, koordenatu polar nulua hartzen da (
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ =0°). Horrela, polo hurrengo eran adierazten da: 
+  
+    
+      
+        O
+        =
+        (
+        0
+        ,
+        
+          0
+          
+            ∘
+          
+        
+        )
+      
+    
+    {\displaystyle O=(0,0^{\circ })}
+  
+.
+
+
+==== Koordenatu sistema polarren hedatzea N=3 dimentsioan ====
+Koordenatu sistema polarrak planorako definitzen badira ere, baditu ezagunak diren bi hedatze 3 dimentsioko espazioetarako: koordenatu sistema zilindrikoak eta koordenatu sistema esferikoak.
+
+
+====== Koordenatu sistema zilindrikoak ======
+
+Koordenatu sistema zilindrikoak N=3 dimentsiorako koordenatu sistema polarren hedadura dira. Polo-ardatza izateaz gain, puntu batek espazioan izango duen altuera zehazteko OZ ardatza erabiltzen da, hiru dimetsioko koordenatu kartesiarretan bezala.
+Hortaz, espazioko puntu bat zehazteko, bi dimentsioko koordenatu polarrak, 
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle (r,\theta )}
+  
+, eta puntuak koordenatu horiek dauden plano horretarainoko 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ distantzia ematen dituzten zenbakietako bakoitza dira koordenatu zilindrikoak. Puntua, horrela, hiru koordenatu bidez adierazten da 
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        ,
+        z
+        )
+      
+    
+    {\displaystyle (r,\theta ,z)}
+  
+.
+Zilindrikoa izena lehenengo koordenatua konstantetzat hartuz, eta beste bi koordenatuak balio guztietatik pasaraztean sortzen den gainazaletik dator, hain zuzen ere zilindro-gainazal bat sortzen delako.
+
+
+====== Koordenatu sistema esferikoak ======
+Koordenatu sistema zilindrikoak N=3 dimentsiorako koordenatu sistema polarren hedadura dira. Kasu honetan bigarren koordenatu-ardatz bat izan beharrean, puntu bat espazioan kokatzeko hirugarren koordenatua angelu bat da eta honek, lehen koordenatuarekin batera, puntua espazioaren ze altuera planotan dagoen zehazten du. Hortaz, espazioan puntu bat zehazteko erabiltzen diren koordenatu esferikoak bi dimentsioko koordenatu polarrak 
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        )
+      
+    
+    {\displaystyle (r,\theta )}
+  
+ eta 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ angelua dira: 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ koordenatuak polo-jatorritik punturako distantzia adierazten du (
+  
+    
+      
+        r
+        ≥
+        0
+      
+    
+    {\displaystyle r\geq 0}
+  
+); 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ koordenatuak OXY planoko angelua zehazten du, hau da, puntua OXY planoan non kokatzen den (OX ardatzetik 
+  
+    
+      
+        0
+        ≤
+        θ
+        <
+        2
+        π
+      
+    
+    {\displaystyle 0\leq \theta <2\pi }
+  
+); eta 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ koordenatuak, berriz, OXZ planoko angelua zehazten du (OZ ardatzetik 
+  
+    
+      
+        0
+        ≤
+        ϕ
+        ≤
+        π
+      
+    
+    {\displaystyle 0\leq \phi \leq \pi }
+  
+). Espazioko puntu baten posizioa koordenatu esferikoen bidez zehaztuta hurrengoa litzateke:  
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        ,
+        ϕ
+        )
+      
+    
+    {\displaystyle (r,\theta ,\phi )}
+  
+.
+
+
+=== Koordenatu sistema ortogonalak ===
+Sistema erabilienak dira eta koordenatu-ardatzak elkarzutak dituzten koordenatu sistemak dira. Hau da, puntu bakoitzean ardatz koordenatuak elkarren perpendikularrak da eta gainera ardatz koordenatu guztiak bat ez ezik hartuz, puntu bakoitzeko gainazal koordenatuak lortzen dira.
+Adibidez, aurretik aipatutako hiru dimentsioko espazioetako koordenatu sistemak ortogonalak dira: koordenatu sistema kartesiarrak espazioan, koordenatu sistema zilindrikoak eta koordenatu sistema esferikoak. Hauetan eratzen diren gaizal koordenatuak bi dimentsioko objektu geometrikoak dira, batzuetan lauak (planoak) eta besteetan kurbadunak (zilindroak, zirkunferentziak, esferak…).
+
+Ardatz perpendikularrik ez duen koordenatu-sistemak existitzen dira eta koordenatu lapran izena deritze .
+
+
+=== Koordenatu sistema geografikoak ===
+Artikulu nagusia: «Koordenatu geografikoen sistema»
+Koordenatu-sistema geografiko batek hiru dimentsioko gainazal esferiko bat erabiltzen du lurreko kokapenak zehazteko. Lurraren azala erlieberik gabeko elipsoide baten gisa hartuz, Koordenatu geografikoak edozein puntuk duen kokapen horizontala adierazteko erabiltzen den koordenatu-parea. Normalean, Greenwich meridianoa eta ekuatorea hartzen dira erreferentzi gisa, eta puntuaren latitudearen eta longitudearen koordenatuen bitartez zehazten da kokapena.
+
+
+=== Koordenatu sistema astronomikoak ===
+Astroen posizio zehatza adierazteko metodoetako edozein; hartutako erreferentziaren arabera aldatzen da metodoa. Besteak beste, koordenatu-sistema horizontala, ekuatoriala, ekliptikoa eta galaktikoa dira ezagunenak. Koordenatu astronomikoek, beraz, astro batek zeru-esferan duen posizioa zehazten dute.
+
+
+== Orientazioan oinarritutako koordenatuak ==
+Geometrian eta zinematikan, koordenatu-sistemak erabiltzen dira puntuen posizioa (lineala) eta ardatz, plano eta gorputz zurrunen posizio angeluarra deskribatzeko. Azken kasu horretan, bigarren koordenatu-sistema baten orientazioa (normalean "lokala" esaten zaiona), nodoan finkatua, lehenengoan oinarrituta definitzen da (normalean "globala" edo "mundukoa"). Adibidez, gorputz zurrun baten orientazioa orientazio-matrize baten bidez adieraz daiteke, hiru zutabeetan hiru puntuko koordenatu kartesiarrak dituena. Puntu hauek sistema lokalaren ardatzen orientazioa definitzeko erabiltzen dira; ardatz horiekin lerrokatutako hiru bektore unitateren puntak dira.
+
+
+== Sistema geografikoak ==
+Lurra, oro har, espazio geometriko arruntenetako bat da, kokapenaren neurketa zehatza eskatzen duena, eta, beraz, sistemak koordinatzen dituena. Garai helenistikoko grekoetatik abiatuz, hainbat koordenatu-sistema garatu dira aurreko motetan oinarrituta, besteak beste: 
+
+Koordenatu geografikoen sistema, latitudearen eta longitudearen koordenatu esferikoak.
+Koordenatu-sistema proiektatuak, milaka koordenatu-sistema kartesiar barne, bakoitza mapa-proiekzio batean oinarrituta, munduaren edo eskualde baten azalera planetarioa sortzeko.
+Koordenatu geozentrikoen sistema, Lurra objektu gisa modelatzen duen hiru dimentsioko koordenatu kartesikoen sistema, sateliteen orbitak modelatzeko gehien erabiltzen dena, Posizionamendu Sistema Globala eta satelite bidezko beste nabigazio sistema batzuk barne.
+
+
+== Erreferentziak ==
+
+
+== Bibliografia ==
+https://www.aristasur.com/contenido/sistema-de-coordenadas-geograficas-longitud-y-latitud
+
+
+== Ikus, gainera ==
+Erreferentzia-sistema
+
+
+== Kanpo estekak ==

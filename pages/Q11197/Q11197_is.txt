@@ -1,0 +1,266 @@
+Logri (einnig nefndur lógariþmi, lógaritmi, sjaldnar lygri) fyrir ákveðna tölu x er það veldi sem þarf að hefja grunntölu lografallsins a í til að fá upprunalega töluna út. Lografallið er andhverfa veldisfallsins með jákvæðan veldisstofn a sem uppfyllir eftirfarandi aljöfnu:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          a
+          
+            x
+          
+        
+        )
+        =
+        x
+        ,
+      
+    
+    {\displaystyle \log _{a}(a^{x})=x,}
+  
+
+Sem dæmi má nefna að logri tölunnar 1000 með grunntölu 10 er 3, þar sem 10³ = 10 × 10 × 10 = 1000:
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        1000
+        )
+        =
+        3
+        ,
+      
+    
+    {\displaystyle \log _{10}(1000)=3,}
+  
+
+Aðferðin við að finna logra, með grunn a, tölunnar x er jafngilt því að finna hvert veldi tölunnar a þarf að vera til að fá út x.
+Náttúrlegur logri, táknað með ln, er reiknaður með grunntölunni e en tugalogri (venjulegur lygri), með grunntölunni 10.
+
+
+== Aljöfnur logra ==
+Til eru mikilvægar aljöfnur sem tengja logra saman:
+
+
+=== Margfeldi, kvóti, veldi og rót ===
+Logri af margfeldi er jafn summu logra þeirra talna sem eru margfaldaðar saman, logri kvóta er jafn mismuni logra deilistofns kvótans og logra deili kvótans, logri af n-ta veldi tölu er n margfaldað með logra tölunnar sjálfrar og logri n-tu rótar tölu er logri tölunnar deilt með n, eftirfarandi gildir fyrir allar tegundir lografalla.
+
+
+=== Umreikningur milli grunntalna ===
+Ef reikna skal lografall af x með grunntöluna k logk(x) yfir á grunntöluna b nægir að deila í það með logk(x):
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{k}(x)}{\log _{k}(b)}}.\,}
+  
+
+Þar sem reiknivélar reikna oftast logra með grunntölu 10 eða e getur verið hentugt að snara þeim yfir á grunntölu b að eigin vali, en það er gert með:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{10}(x)}{\log _{10}(b)}}={\frac {\log _{e}(x)}{\log _{e}(b)}}.\,}
+  
+
+
+== Eiginleikar lograns ==
+Aðeins er hægt að taka logra af jákvæðri tölu því grunnur lograns er alltaf jákvæð tala og sama í hvaða veldi þú setur jákvæða tölu, aldrei er hægt að fá neikvæða tölu út.
+Áður en tölvur komu til var logri með grunntölu a reiknaður með því að leggja saman óendanlegar raðir með ákveðinni nákvæmni. Þetta gerði reikning með logra afskaplega langann og leiðinlegan svo brugðið var á það ráð að búa til langar töflur sem innihéldu útreiknuð gildi fyrir algengustu grunntölurnar. Vegna reiknireglna 1 og 3 hér að ofan þurfti aðeins að reikna þannig töflur upp að fyrsta tugi. Tökum dæmi: til að reikna út log(123) var það skrifað sem 
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        1
+        ,
+        23
+        ⋅
+        100
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        1
+        ,
+        23
+        )
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        100
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        1.23
+        )
+        +
+        2
+      
+    
+    {\displaystyle \log _{10}(1,23\cdot 100)=\log _{10}(1,23)+\log _{10}(100)=\log _{10}(1.23)+2}
+  
+
+þar sem log10(100) = 2 og því þurfti aðeins að leita eftir log10(1.23) í töflunni. 
+
+
+== Lograkvarðar ==
+Bel-kvarði (algengasta eining desíbel)
+Birtustig
+Richterskvarði

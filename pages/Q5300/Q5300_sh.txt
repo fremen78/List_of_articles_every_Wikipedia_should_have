@@ -1,0 +1,84 @@
+Centralna procesorska jedinica (skr. CPJ, CPU) je skup elektronskih kola unutar računara na kojima se izvršavaju instrukcije računarskog programa putem izvođenja osnovnih aritmetičkih, logičkih, kontrolnih i ulazno/izlaznih (I/O) operacija specifikovanih instrukcijama. Računarska industrija je koristila termin „centralna procesorska jedinica” još od ranih 1960-ih. Tradicionalno, termin „CPU” se odnosi na procesor, specifičnije na njegovu procesorsku jedinicu i kontrolnu jedinicu (CU), pri čemu se pravi razlika između tih sržnih elemenata računara i spoljašnjih komponenti kao što su glavna memorija i I/O elektronska kola.
+Procesor (u računarstvu) je izvršna jedinica — prima i izvršava instrukcije pročitane iz odgovarajuće memorije. Kada se kaže samo „procesor“ najčešće se misli na centralni procesor (engl. central processing unit — CPU, centralna procesorska jedinica), ali postoje i procesori specijalnih namena kao što su procesori signala, razni grafički procesori, itd. Sam po sebi procesor ne čini računar, ali je jedan od najvažnijih delova svakog računara.
+Forma, dizajn, i implementacija centralnih procesorskih jedinica su se promenili tokom njihove istorije, ali njihov fundamentalni operativni mod je ostao skoro nepromenjen. Glavne CPU komponente su aritmetičko-logička jedinica (ALU) koja vrši aritmetičke i logičke operacije, procesorski registri koji snabdevaju operandima ALU i čuvaju rezultate ALU operacija, i kontrolna jedinica koja orkestrira preuzimanje (iz memorije) i izvršava instrukcije usmeravajući koordinisane operacije ALU, registara i drugih komponenti.
+Većina modernih procesora su mikroprocesori, što znači da su sadržani na jediničnom integralnom kolu (IC) ili čipu. Jedan čip koji sadrži CPU može isto tako da sadrži memoriju, periferne interfejse, i druge komponente računara; takvi integrisani uređaji se različito nazivaju mikrokontrolerima ili sistemima na čipu (SoC). Neki računari primenjuju višejezgarni procesor, koji je jednostavan čip sastavljen od dva ili više procesora zvanih „jezgra”; u tom kontekstu, može se govoriti o takvim pojedinačnim čipovima kao „utičnicama”. Redni procesori ili vektorski procesori imaju višestruke procesore koji paralelno deluju, pri čemu se ni jedan ne smatra centralnim. Postoji i koncept virtualnih procesora koju su vid primene dinamički agregiranih računarskih resursa.
+
+
+== Istorija ==
+Prvi procesori su bili mehanički i praktično nisu bili zaseban deo računara (npr. kakve je projektovao Čarls Bebidž) zatim elektromehanički (relejni) pa na bazi elektronskih vakuumskih cevi i bili su jako veliki. Do značajnog smanjenja dimenzija i povećanja performansi došlo je upotrebom tranzistora (miniprocesori) i u drugoj polovini 20. veka integralnih kola (mikroprocesori).
+
+Rani računari kao što je ENIAC su morali da se fizički izmene da bi obavljali različite zadatke, te su stoga te mašine nazivane „računarima sa fiksnim programom”. Pošto je termin „CPU” generalno definisan kao uređaj za izvršavanje softvera (računarskog programa), najraniji uređaji koji se s pravom mogu nazivati procesorskim su bili računari sa sačuvanim programom.
+Ideja računara sa sačuvanim programom je već bila prisutna u Džon Presper Ekeretovom i Džon Vilijam Moklijevom dizajnu ENIAC računara, ali je inicijalno bila izostavljena da bi se ranije završila izgradnja. Dana 30. juna 1945, pre nego što je ENIAC bio napravljen, matematičar Džon fon Nojman je distribuirao rad pod naslovom Prvi nacrt izveštaja o EDVAC-u. To je bio pregled kompjutera sa uskladištenim programom koji bi se eventualno završio u avgustu 1949. godine. EDVAC je bio dizajniran da izvršava određeni broj uputstava (ili operacija) različitih tipova. Značajno je da je trebalo da programi napisani za EDVAC budu uskladišteni u računarskoj memoriji velike brzine umesto da budu specifikovani fizičkim ožičavanjem računara. Time je prevaziđeno ozbiljno ograničenje ENIAC-a, što je bilo znatno vreme i napor koji su bili potrebni za rekonfiguraciju računara za obavljanje novog zadatka. Sa fon Nojmanovim dizajnom, program koji je EDVAC izvršavao se mogao promeniti jednostavnom promenom sadržaja memorije. EDVAC, međutim, nije bio prvi računar sa sačuvanim programom; Mančesterska eksperimentalna mašina malih razmera, mali prototip računara sa sačuvanim programom, izvršio je svoj prvi program 21. juna 1948, a Mančester Mark 1 je izvršio svoj prvi program tokom noći 16–17. juna 1949.
+Dizajn ranih procesora je bio prilagođen da budu korišćeni kao deo većeg i ponekad osobenog računara. Međutim, ovaj metod dizajniranja prilagođenih procesora za određenu aplikaciju je u velikoj meri ustupio mesto razvoju višenamenskih procesora proizvedenih u velikim količinama. Sa takvom standardizacijom se počelo u eri diskretnih tranzistorskih mejnfrejmova i miniračunara, a trend je znatno ubrzan popularizacijom integrisanih kola (IC). Ona su omogućila dizajniranje i proizvodnju sve kompleksnijih procesora sa zadovoljavajućom tolerancijama reda veličine nanometra. Minijaturizacija i standardizacija procesora su uvećali prisustvo digitalnih uređaja u modernom životu daleko izvan ograničene primene namenskih računarskih mašina. Moderni mikroprocesori se javljaju u elektronskim uređajima u opsegu od automobila do mobilnih telefona, a ponekad čak i u igračkama.
+Dok se fon Nojmanu najčešće pripisuju zasluge za dizajn računara sa uskladištenim programom zbog njegovog dizajna EDVAC-a, i taj dizajn je postao poznat kao Fon Nojmanova arhitektura, drugi su pre njega, poput Konrada Cuza, predložili i sproveli slične ideje. Takozvana Harvardska arhitektura računara Harvard Mark I, koji je završen ranije od EDVAC-a, isto tako je koristila dizajn sa sačuvani programom putem bušene papirne trake umesto električne memorije. Ključna razlika između fon Nojmanove i Harvardske arhitekture je da kasnija razdvaja skladištenje i tretman procesorskih instrukcija i podataka, dok ranija koristi isti memorijski prostor za oba. Većina modernih procesora imaju prevashodno fon Nojmanov dizajn, mada se procesori sa Harvarskim dizajnom isto tako sreću, posebno kod ugrađenih aplikacija; na primer, Atmel AVR mikrokontroleri imaju procesore sa Harvardskom arhitekturom.
+Releji i elektronske cevi (termionske cevi) su bili u širokoj upotrebi kao prekidački elementi; za rad računara su neophodne hiljade ili desetine hiljada prekidačkih elemenata. Sveukupna brzina sistema je zavisna od brzine prekidača. Cevni računari poput EDVAC-a su u proseku radili oko osam sati bez kvarova, dok su se relejski računari poput (sporijeg, ali ranijeg) Harvarda Mark I veoma retko kvarili. Na kraju su, procesori bazirani na cevima postali dominantni, jer su značajne prednosti u pogledu brzine uopšteno nadmašile probleme pouzdanosti. Većina ovih ranih sinhronih procesora je radila sa niskom radnom frekvencijom u poređenju sa savremenim mikroelektronskim dizajnom. Satne frekvencije signala u rasponu od 100 kHz do 4 MHz su bile veoma česte u to vreme, ograničene u velikoj meri brzinom prekidačkih uređaja sa kojima su računari bili izgrađeni.
+
+
+=== Tranzistorski procesori ===
+
+Kompleksnost dizajna procesora se povećala, jer su razne tehnologije omogućile izgradnju sve manjih i sve pouzdanijih elektronskih uređaja. Prvo takvo poboljšanje došlo je sa napretkom tranzistora. Tranzistorisani procesori tokom 1950-ih i 1960-ih više nisu morali da se prave od glomaznih, nepouzdanih i krhkih prekidača poput vakuumskih cevi i releja. Sa tim poboljšanjem izgrađeni su kompleksniji i pouzdaniji procesori na jednoj ili nekoliko štampanih ploča koji su sadržali diskretne (individualne) komponente.
+Godine 1964, IBM je uveo svoju IBM System/360 računarsku arhitekturu koja je koristila seriju računara sposobnu da izvršava iste programe sa različitim brzinama i performansama. To je bilo značajno u to vreme kad je većina elektronskih računara bila međusobno inkompatibilna, čak i oni koje je izradio isti proizvođač. Da bi se omogućilo ovo poboljšanje, IBM je koristio koncept mikroprograma (često nazivanih „mikrokod”), koji su još uvek u širokoj upotrebi u modernim procesorima. System/360 arhitektura je bila toliko popularna da je decenijama dominirala tržište mejnfrejm računara i ostavila nasleđe koje se još uvek nastavlja putem sličnih modernih računara, kao što je IBM zSeries. Godine 1965, Didžital ekvipment korporejšon (DEC) je uvela još jedan uticajni računar namenjen naučnim i istraživačkim tržištima, PDP-8.
+
+Računari bazirani na tranzistorima su imali nekoliko distinktnih prednosti u odnosu na svoje prethodnike. Osim što su bili znatno pouzdaniji i imali nižu potrošnju energije, tranzistori su isto tako omogućavali procesorima da rade sa znatno većim brzinama zbog njihovog kratkog prekidačkog vremena u poređenju sa cevima ili relejima. S povećanom pouzdanošću i dramatično povećanom brzinom prekidačkih elemenata (koji su bili skoro ekskluzivno tranzistorski do tog vremena), brzine procesorskih satova od desetina megaherca su sa lakoćom ostvarene tokom tog perioda. Pored toga, dok su diskretni tranzistori i IC procesori bili u velikoj upotrebi, novi dizajni visokih performansi kao što su SIMD (engl. Single Instruction Multiple Data) vektorski procesori su počeli da se javljaju. Ovi rani eksperimentalni dizajni kasnije su doveli do ere specijalizovanih superračunara kao što su oni koje su napravili Krej i Fudžicu.
+
+
+== Organizacija procesora ==
+Centralni procesori obično sadrže:
+
+Upravljačku jedinicu (engl. control unit), koja upravlja radom ostalih komponenti, konkretno operacione jedinice. U ranim danima računarstva se funkcionalnost upravljačke jedinice mahom realizovala hardverski (ožičena realizacija), dok se danas tipično koristi mikroprogramska realizacija, gde se rad procesora, uključujući i njegov skup instrukcija, implementira kroz mikroprogram.
+Operacionu jedinicu (engl. execution unit), koja tipično sadrži:
+Aritmetičko-logičku jedinicu (engl. ALU - Arithmetic logic unit), koja vrši aritmetičke i logičke operacije.
+Registre, koji služe za privremeno skladištenje podataka pri izvršavanju programa (registri opšte namene), kao i za čuvanje informacija o trenutnom stanju programa koji se izvršava (programski brojač, pokazivač steka, prihvatni registar instrukcije, programska statusna reč i dr.)
+Podsistem za vezivanje sa memorijom i periferijama
+Moderniji procesori imaju i jedinice za rad sa brojevima u pokretnom zarezu, brzu internu memoriju itd. Super-skalarni procesori imaju i po više operacionih jedinica. što im omogućava da izvršavaju nekoliko instrukcija istovremeno (kada one nisu međusobno zavisne).
+
+
+== Podela procesora ==
+Po tome koliko instrukcija i sa koliko podataka rade u jednom „koraku“:
+Ovu podelu je 1972. godine predložio Majkl Dž. Flin, i po njemu se ona naziva „Flinova taksonomija“.
+
+jednu instrukciju sa jednim podatkom (tzv. skalarni procesori, engl. SISD — Single Instruction Single Data). Podvarijanta (super-skalarni) mogu da u toku izvršavanja odrede koje parove instrukcija i podataka mogu da izvrše u isto vreme i to i učine.
+jednu instrukciju izvršavaju na više podataka odjednom (tzv. vektorski procesori, engl. SIMD — Single Instruction Multiple Data)
+izvršavaju više nezavisnih instrukcija, svaku na svojim podacima (engl. MIMD — Multiple Instruction Multiple Data)
+izvršavaju više nezavisnih instrukcija, svaku na jednom, zajedničkom, podatku(engl. MISD — Multiple Instruction Single Data)
+Iako se SIMD nekada koristio uglavnom na vektorskim superračunarima poput onih koje je 70-ih godina 20. veka popularisao Cray, potreba za obradom multimedijalnih podataka je dovela do dodavanja SIMD instrukcija u arhitekturu procesora opšte namene, trend koji je izrodio tehnologije kao što su PowerPC-jev AltiVec, Intel-ovi MMX, SSE, SSE2, SSE3 i SSE4, AMD-ov 3DNow!, SPARC-ov VIS, Sun-ov MAJC, PA-RISC-ov MAX i MIPS-ovi MDMX i MIPS-3D.
+Flinova taksonomija danas nije od značaja kao praktična podela, jer moderni računarski sistemi često potpadaju u nekoliko (pa čak i sve četiri!) kategorije ove taksonomije. Ilustrativan primer bi bio neki dual Pentium 4 Xeon sistem je u osnovi x86 SISD arhitektura sa SIMD proširenjima (MMX, SSE, SSE2...), radi simetrično multiprocesiranje na dva odvojena mikroprocesora (MIMD), a svaki od njih sadrži jezgro sa pajplajn arhitekturom koja se može shvatiti kao MISD (jer svaki korak u pajplajnu operiše nad istim podatkom — instrukcijom koja se izvršava).
+Po arhitekturi i skupu instrukcija se dele i na:
+
+Procesore sa kompleksnim skupom instrukcija, u kojima se svaka kompleksna instrukcija interno prevodi u niz mikrokod instrukcija (engl. CISC — Complex Instruction Set Computer). Ovakav skup instrukcija je obično „ugodniji“ za programiranje, ali generalno rezultuje manjom brzinom izvršavanja. Svakako značajan primer CISC arhitekture je Intelova (i AMD-ova) 80x86 familija, a ovakav dizajn su koristili i CDC 6600, System/360, VAX, PDP-11 i Motorola 68000.
+Procesore sa redukovanim skupom instrukcija, u kojima se instrukcije ne prevode već su direktno podržane (engl. Reduced Instruction Set Computer). Ovakav skup instrukcija je obično „nezgodniji“ za programiranje ali generalno rezultuje većom brzinom izvršavanja. Povećanje veličine radne memorije, kao i razvoj kompajlera su doveli do toga da je danas RISC opšteprihvaćena filozofija u dizajnu mikroprocesora. Čak i moderni Intelovi i AMD-ovi procesori, iako programeru izgledaju kao CISC mašine, interno razbijaju CISC instrukcije u nizove internih RISC instrukcija (mikrooperacija) koje se zatim izvršavaju na superskalarnom jezgru.
+Podela na RISC i CISC je opšteprihvaćena ali postoje i neke manje zvanične podvarijante i kombinacije:
+
+Procesore sa jako redukovanim skupom instrukcija (engl. ERISC — Extremely Reduced Instruction Set Computer).
+Procesore sa „proširenim“ redukovanim skupom instrukcija, u kojima se većina instrukcija ne prevodi već su direktno podržane ali sadrže i kompleksne instrukcije (engl. ERISC — Extended Reduced Instruction Set Computer). Ovakav skup instrukcija je i ugodan za programiranje i rezultuje većom brzinom izvršavanja ali sam procesor postaje značajno kompleksniji. Napomena: ova kategorizacija nije potpuno zvanična. Jedno vreme su poboljšane verzije CISC procesora bile približene RISC arhitekturi i bile klasifikovane kao „ERISC“.
+Ostale podele
+
+po širini adresne magistrale, magistrale podataka, itd. (recimo, 4004 je 4-bitni procesor, Z80 8-bitni, MC68000 16-bitni itd.)
+po tehnologiji izrade i stepenu integracije (za mikroprocesore)
+po tome da li imaju zasebne magistrale za programsku memoriju i memoriju za podatke (pogledajte harvardsku arhitekturu) ili koriste jednu (pogledajte fon Nojmanovu arhitekturu)
+
+
+== Proizvođači mikroprocesora ==
+Postoji veći broj proizvođača mikroprocesora, a među njima se ističu: AMD, Intel, Motorola, IBM, Transmeta, Qualcomm.
+
+
+== Povezano ==
+Keš centralne procesorske jedinice
+Istorija računara u SFRJ
+
+
+== Reference ==
+
+
+== Literatura ==
+Patterson, David A.; Hennessy, John L.; Larus, James R. (1999). Computer Organization and Design: the Hardware/Software Interface (2. ed., 3rd print. izd.). San Francisco: Kaufmann. str. 751. ISBN 978-1-55860-428-5. 
+Regan, Gerard. A Brief History of Computing. str. 66. ISBN 978-1-84800-083-4. 
+Kuck, David (1978). Computers and Computations, Vol 1. John Wiley & Sons, Inc.. str. 12. ISBN 978-0-471-02716-4. 
+
+
+== Spoljašnje veze ==
+
+AMD (en)
+Intel (en)
+Nvidia (en)
+25 Microchips that shook the world

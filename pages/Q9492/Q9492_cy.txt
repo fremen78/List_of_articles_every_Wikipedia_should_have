@@ -1,0 +1,894 @@
+Tebygolrwydd yw'r dull o fesur y posiblirwydd o rywbeth i ddigwydd. Er enghraift, mae'r posiblirwydd fod yr haul am godi fory'r bore'n eithaf uchel a byddai mathemategwr yn mesur hyn drwy ganran fel 99.99%. Ar y llaw arall, mae'r posibilrwydd o daflu ceiniog a'r 'gynffon' (neu'r 'pen') yn glanio ar ei hwyneb yn 50% neu'n 50-50. Mae 'tebygolrwydd', felly yn mesur pa mor debygol yw hi fod cynnig yn wir. Tebygolrwydd digwyddiad yw rhif rhwng 0 ac 1, lle, yn fras, mae 0 yn nodi amhosibilrwydd y digwyddiad ac 1 yn nodi sicrwydd.
+Defnyddir tebygolrwydd yn aml i fesur neu i ateb gosodiad sy'n cael ei wneud ble mae'r ateb yn ansicr. Fel arfer, mae'r gosodiad yn cael ei roi yn y dull hwn: "Pa bryd ma'n debyg o ddigwydd?" neu "Pa mor bendant ydym ei fod am ddigwydd?" Ac mae'r ateb yn cael ei roi mewn rhif, rhwng 0 ac 1 - gyda 0 yn golygu "dim o gwbwl", .5 yn golygu un allan o ddau (neu 50-50) ac 1 yn golygu "yn bendant".
+Mae cwmnïau yswiriant yn defnyddio rhaglenni rhifiadol ar gyfer dadansoddi actiwaraidd. Tad gwyddoniaeth actiwaraidd bydeang oedd William Morgan (1750 - 1833) o Ben-y-bont ar Ogwr, Sir Forgannwg  ac un o golofnau mawr The Equitable Life Assurance Society a'r Scottish Widows. Bu farw yn Stamford Hill, Llundain ar 4 Mai 1833 a chladdwyd ef yn Hornsey. Yn 2020 cyhoeddwyd cyfrol am William Morgan yng nghyfres Gwyddonwyr Cymru Gwasg Prifysgol Cymru gan Nicola Bruton Bennetts, gor-gor-gor-wyres William Morgan. Cyhoeddodd Nicola Bruton Bennetts erthygl am William Morgan (perthynas pell iddi) yn Y Bywgraffiadur Cymreig.
+Felly, po uchaf yw'r tebygolrwydd i rywbeth ddigwydd, y mwyaf pendant ydym y gwnaiff ddigwydd.
+Ffurfiolwyd y cysyniadau hyn o fewn gwirebau mathemategol yn yr hyn a elwir yn 'ddamcaniaeth tebygolrwydd' a gwirebau tebygolrwydd (probability axioms) a chânt eu defnyddio'n helaeth o fewn y meysydd astudio: mathemateg, ystadegau, cyllid, arian, gamblo, gwyddoniaeth (yn enwedig Ffiseg), gwyddoniaeth gyfrifiadurol, roboteg ac athroniaeth. Fe'u defnyddir er mwyn cyfrifo amlder y digwyddiad neu i ddisgrifio mecaneg gwaelodol system cymhleth, arbennig.
+
+
+== Tebygolrwydd amodol ==
+Tebygolrwydd amodol (neu conditional probability) yw lle y bydd ymddygiad targed yn digwydd o dan amgylchiadau penodol. Mae'n cael ei gyfrifo drwy fesur: cyfrannedd achlysuron ymddygiad a oedd wedi eu rhagflaenu gan ragflaenydd newidiol, a chyfrannedd achlysuron ymddygiad problemus a oedd wedi eu dilyn gan ganlyniad penodol. Mae tebygolrwydd amodol yn amredeg rhwng 0 a 1; po agosed at 1.0 yw'r tebygolrwydd amodol, y cryfaf yw'r berthynas rhwng yr ymddygiad targed a'r canlyniad.
+
+
+== Tebygolrwydd gwrthdro ==
+O fewn damcaniaeth tebygolrwydd, a'i chymhwysiad, mae theorem Bayes yn nodi pa mor berthnasol yw'r tebygolrwydd (neu'r 'odds') 
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+      
+    
+    {\displaystyle A_{1}}
+  
+ i'r digwyddiad ei hun 
+  
+    
+      
+        
+          A
+          
+            2
+          
+        
+      
+    
+    {\displaystyle A_{2}}
+  
+ cyn ac wedi digwyddiad 
+  
+    
+      
+        
+          A
+          
+            2
+          
+        
+      
+    
+    {\displaystyle A_{2}}
+  
+.
+Mae'r berthynas rhwng 
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+      
+    
+    {\displaystyle A_{1}}
+  
+ i ddigwyddiad 
+  
+    
+      
+        
+          A
+          
+            2
+          
+        
+      
+    
+    {\displaystyle A_{2}}
+  
+ yn syml - sef y gyfranedd o debygolrwydd y ddau ddigwyddiad.
+
+
+=== Crynodeb ===
+
+
+== Dehongliadau ==
+Wrth ddelio ag arbrofion sydd ar hap ac wedi'u diffinio'n dda mewn lleoliad damcaniaethol (fel taflu darn arian), gellir disgrifio tebygolrwyddau yn rhifiadol yn ôl nifer y canlyniadau a ddymunir, wedi'u rhannu â chyfanswm yr holl ganlyniadau. Er enghraifft, bydd taflu darn arian ddwywaith yn esgor ar ganlyniadau "pen-pen", "pen-gynffon", "pen-cynffon" a "chynffon-cynffon". Y tebygolrwydd o gael canlyniad "pen-pen" yw 1 allan o 4 canlyniad, neu, mewn termau rhifiadol, 1/4, 0.25 neu 25%. Fodd bynnag, o ran ei gymhwyso'n ymarferol, mae dau brif gategori cystadleuol o ddehongliadau tebygolrwydd, y mae gan eu hymlynwyr farn wahanol am natur sylfaenol tebygolrwydd:
+
+Mae gwrthrychwyr yn aseinio rhifau i ddisgrifio rhywfaint o sefyllfa wrthrychol neu ffisegol. Y fersiwn fwyaf poblogaidd o debygolrwydd gwrthrychol yw tebygolrwydd mynych (frequentist probability), sy'n honni bod tebygolrwydd digwyddiad ar hap yn dynodi amlder cymharol canlyniad arbrawf pan ailadroddir yr arbrawf am gyfnod amhenodol. Mae'r dehongliad hwn yn ystyried tebygolrwydd fel amlder cymharol "yn y tymor hir" o ganlyniadau. Addasiad o hyn yw tebygolrwydd tueddiad (propensity probability), sy'n dehongli tebygolrwydd fel tueddiad arbrawf i esgor ar ganlyniad penodol, hyd yn oed os yw'n cael ei wneud unwaith yn unig.
+Mae goddrychwyr yn aseinio rhifau fesul tebygolrwydd goddrychol, hynny yw, fel gradd o gredu. Dehonglwyd graddfa'r gred hon fel "y pris y byddech chi'n prynu neu'n gwerthu bet sy'n talu 1 uned o rywbeth os yw E, 0 os nad E." Y fersiwn fwyaf poblogaidd o debygolrwydd goddrychol yw tebygolrwydd Price-Bayesaidd, sy'n cynnwys gwybodaeth arbenigol gadarn, yn ogystal â data arbrofol i gynhyrchu'r tebygolrwydd. Cynrychiolir y wybodaeth arbenigol gan ddosbarthiad o debygolrwydd blaenorol (goddrychol). Yn ôl theorem cytundeb Aumann, bydd asiantau Price-Bayesaidd y mae eu credoau blaenorol yn debyg yn arwain at ôl-gredo tebyg.
+
+
+== Geirdarddiad ==
+Yn ôl Geiriadur Prifysgol Cymru (gol: Andrew Hawke) Huw Lewys, yn 1595, a ddefnyddiodd y gair 'tebygol' yn gyntaf, a hynny yn ei lyfr Perl Mewn Adfyd. O'r gair hwn y deilliodd 'tebygolrwydd', ac fe'i cofnodwyd yn 1722 yn Llawysgrif Llansteffan.
+
+
+== Hanes ==
+Mae'r astudiaeth wyddonol o debygolrwydd yn ddatblygiad modern o fewn mathemateg.  Bu diddordeb mawr yn y pwnc (ee gamblo) ac mewn  siawns, ond cododd yr union ddisgrifiadau a diffiniadau mathemategol llawer diweddarach. Mae yna resymau dros ddatblygiad araf tebygolrwydd: tra bod gemau siawns wedi darparu'r ysgogiad ar gyfer astudiaeth fathemategol o debygolrwydd, mae llawer o ofergoelion gamblwyr yn parhau.
+Yn ôl Richard Jeffrey, "Cyn canol yr 17g, roedd y term Lladin am 'tebygol' (probabilis) yn golygu ei fod yn gymeradwy. Gweithred neu farn debygol oedd un y byddai pobl synhwyrol yn ymgymryd â hi neu'n ei dal, o dan yr amgylchiadau." Fodd bynnag, mewn cyd-destunau cyfreithiol yn arbennig, gallai 'probable' hefyd fod yn berthnasol i gynigion yr oedd tystiolaeth dda ar eu cyfer.
+
+Dangosodd y polymath Eidalaidd Gerolamo Cardano, yn yr 16g, effeithiolrwydd diffinio yr <i>ods</i> (siawns) fel cymhareb canlyniadau ffafriol i anffafriol (sy'n awgrymu bod tebygolrwydd digwyddiad yn cael ei roi gan gymhareb y canlyniadau ffafriol â chyfanswm y canlyniadau posibl) . Ar wahân i'r gwaith elfennol gan Cardano, mae'r cysyniadau am debygolrwydd yn dyddio i ohebiaeth Pierre de Fermat a Blaise Pascal (1654). Rhoddodd Christiaan Huygens (1657) y driniaeth wyddonol gynharaf y gwyddys amdani i'r pwnc. Roedd Ars Conjectandi Jakob Bernoulli (a gyhoeddwyd ar ôl ei farwolaeth yn 1713) ac Athrawiaeth Cyfleoedd Abraham de Moivre (1718) yn trin y pwnc fel cangen o fathemateg. Gweler Eginiad Tebygolrwydd Ian Hacking a The Science of Conjecture James Franklin am hanesion datblygiad cynnar y cysyniad o debygolrwydd mathemategol.
+Gellir olrhain theori gwallau yn ôl i Opera Miscellanea Roger Cotes (ar ôl ei farwolaeth, 1722), ond cymhwysodd nodyn a baratowyd gan Thomas Simpson ym 1755 (argraffwyd 1756) y theori. Mae ailargraffiad (1757) y cofiant hwn yn nodi'r gwirebau ac yn dweud fod gwallau cadarnhaol a negyddol yr un mor debygol, a bod rhai terfanau aseiniadwy yn diffinio ystod yr holl wallau. Mae Simpson hefyd yn trafod gwallau parhaus ac yn disgrifio cromlin tebygolrwydd.
+Deilliodd y ddwy ddeddf a ddiffiniodd gwallau o fewn tebygolrwydd gan Pierre-Simon Laplace. Cyhoeddwyd y ddeddf gyntaf ym 1774, a nododd y gellid mynegi amlder gwall fel ffwythiant esbonyddol o faint rhifiadol y gwall—. Cynigiwyd yr ail ddeddf gwall ym 1778 gan Laplace, a nododd fod amlder y gwall yn ffwythiant esbonyddol sgwâr y gwall. Gelwir ail ddeddf gwall yn "ddosbarthiad arferol" neu'n "gyfraith Gauss". "Mae'n anodd yn hanesyddol priodoli'r ddeddf honno i Gauss, nad oedd wedi gwneud y darganfyddiad hwn cyn ei fod yn ddwy oed."
+Cyflwynodd Daniel Bernoulli (1778) yr egwyddor o gynnyrch mwyaf tebygolrwydd system o wallau cydamserol.
+
+Datblygodd Adrien-Marie Legendre (1805) y dull o nifer lleiaf o sgwariau, a'i gyflwyno yn ei méthodau Nouvelles pour la détermination des orbites des comètes (Dulliau Newydd ar Gyfer Pennu Cylchred Comedau). Heb wybod am gyfraniad Legendre, fe wnaeth awdur Gwyddelig-Americanaidd, Robert Adrain, golygydd "The Analyst" (1808), ddiddwytho deddf cyfleuster gwall am y tro cyntaf, sef
+
+  
+    
+      
+        ϕ
+        (
+        x
+        )
+        =
+        c
+        
+          e
+          
+            −
+            
+              h
+              
+                2
+              
+            
+            
+              x
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \phi (x)=ce^{-h^{2}x^{2}},}
+  
+
+lle mae 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ yn gyson sy'n dibynnu ar gywirdeb arsylwi, ac mae 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ yn ffactor graddfa sy'n sicrhau bod yr arwynebedd o dan y gromlin yn hafal i 1. Rhoddodd ddau brawf, gyda'r ail yr un peth yn y bôn ag un John Herschel (1850).Rhoddodd Gauss y prawf cyntaf yr ymddengys iddo gael ei adnabod yn Ewrop (y trydydd ar ôl Adrain's) ym 1809. Rhoddwyd profion pellach gan Laplace (1810, 1812), Gauss (1823), James Ivory (1825, 1826), Hagen (1837), Friedrich Bessel (1838), WF Donkin (1844, 1856), a Morgan Crofton (1870) . Cyfranwyr eraill oedd Ellis (1844), De Morgan (1864), Glaisher (1872), a Giovanni Schiaparelli (1875).  MaeFformiwla Peters (1856) ar gyfer r (sef gwall tebygol un arsylwad) yn hysbys iawn.
+Yn yr 19g roedd awduron y theori gyffredinol yn cynnwys Laplace, Sylvestre Lacroix (1816), Littrow (1833), Adolphe Quetelet (1853), Richard Dedekind (1860), Helmert (1872), Hermann Laurent (1873), Liagre, Didion a Karl Pearson. Aeth  Augustus De Morgan a George Boole ati i wella esboniad y theori.
+Ym 1906, cyflwynodd Andrey Markov y syniad a elwir heddiw'n "gadwyni Markov", a chwaraeodd ran bwysig mewn theori prosesau stocastig a'i chymwysiadau. Datblygwyd theori fodern tebygolrwydd yn seiliedig ar y theori mesur gan Andrey Kolmogorov ym 1931.
+Ar yr ochr geometrig, roedd cyfranwyr The Educational Times yn ddylanwadol (Miller, Crofton, McColl, Wolstenholme, Watson, ac Artemas Martin). Gweler geometreg integrol am ragor o wybodaeth.
+
+
+== Theori ==
+Fel damcaniaethau eraill, mae damcaniaeth tebygolrwydd yn gynrychiolaeth o'i chysyniadau mewn termau ffurfiol - hynny yw, mewn termau y gellir eu hystyried ar wahân i'w hystyr. Mae'r termau ffurfiol hyn yn cael eu trin gan reolau mathemateg a rhesymeg, ac mae unrhyw ganlyniadau yn cael eu dehongli neu eu cyfieithu yn ôl i barth y broblem.
+Cafwyd o leiaf ddau ymgais llwyddiannus i ffurfioli tebygolrwydd, sef yr hyn a luniodd Kolmogorov a Cox. Wrth lunio Kolmogorov (gweler hefyd gofod tebygolrwydd), dehonglir setiau fel digwyddiadau a thebygolrwydd fel mesur ar ddosbarth o setiau. Yn theorem Cox, cymerir tebygolrwydd fel cysefin (hy, na chaiff ei ddadansoddi ymhellach), ac mae'r pwyslais ar lunio aseiniad cyson o werthoedd tebygolrwydd i gynigion (propositions). Yn y ddau achos, mae deddfau tebygolrwydd yr un fath, heblaw am fanylion technegol.
+Mae yna ddulliau eraill ar gyfer cloriannu ansicrwydd, fel theori Dempster-Shafer neu theori posibilrwydd, ond yn y bôn mae'r rheini'n wahanol ac nid ydynt yn gydnaws â deddfau tebygolrwydd.
+
+
+== Cymhwysidau ==
+Defnyddir theori tebygolrwydd o fewn bywyd pob dydd wrth asesu a modelu risg. Mae'r diwydiant yswiriant a'r marchnadoedd economaidd yn defnyddio'r wyddor actiwaraidd i bennu prisiau a gwneud penderfyniadau masnachu. Mae llywodraethau'n defnyddio dulliau tebygolrwydd mewn rheoleiddio amgylcheddol, dadansoddi hawl a rheoleiddio ariannol.
+Tad gwyddoniaeth actiwaraidd fodern oedd William Morgan (1750 - 1833) o Ben-y-bont ar Ogwr, Sir Forgannwg  ac un o golofnau mawr The Equitable Life Assurance Society a'r Scottish Widows.
+Enghraifft o'r defnydd o theori tebygolrwydd wrth fasnachu ecwiti yw effaith tebygolrwydd unrhyw wrthdaro eang yn y Dwyrain Canol ar brisiau olew, sy'n cael effeithiau cryfach yn yr economi gyfan. Gall barn masnachwr nwyddau bod rhyfel yn fwy tebygol i anfon prisiau nwyddau hynny i fyny neu i lawr, ac mae'n arwydd o fasnachwyr eraill o'r farn honno. Yn unol â hynny, nid yw'r tebygolrwyddau'n cael eu hasesu'n annibynnol nac o reidrwydd yn rhesymol. Daeth theori cyllid ymddygiadol i'r amlwg i ddisgrifio effaith meddwl grŵp o'r fath ar brisio, ar bolisi, ac ar heddwch a gwrthdaro.
+Yn ogystal ag asesiad ariannol, gellir defnyddio tebygolrwydd i ddadansoddi tueddiadau mewn newid hinsawdd (ee y risg o gael llanw uwch na'r cyffredin), mewn bioleg (ee lledaeniad afiechyd) yn ogystal ag ecoleg (ee, sgwariau Punnett biolegol). Yn yr un modd â chyllid, gellir defnyddio asesiad risg fel offeryn ystadegol i gyfrifo'r tebygolrwydd y bydd digwyddiadau annymunol yn digwydd, a gall gynorthwyo gyda gweithredu protocolau i osgoi dod ar draws amgylchiadau o'r fath. Defnyddir tebygolrwydd i ddylunio gemau siawns fel y gall casinos wneud elw gwarantedig, ond eto i dalu allan i chwaraewyr yn ddigon aml fel ag i annog parhau i chwarae.
+Cymhwysiad arwyddocaol arall o theori tebygolrwydd ym mywyd beunyddiol yw dibynadwyedd. Mae llawer o gynnyrch fel automobiles ac electroneg yn defnyddio theori dibynadwyedd wrth ddylunio cynnyrch i leihau'r tebygolrwydd o fethu. Gall tebygolrwydd methiant ddylanwadu ar benderfyniadau gwneuthurwr ar warant eu cynnyrch.
+
+
+== Triniaeth fathemategol ==
+Ystyriwch arbrawf a all gynhyrchu nifer o ganlyniadau. Gelwir y casgliad o'r holl ganlyniadau posibl yn ofod sampl yr arbrawf, a ddynodir weithiau fel 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  
+ . Mae set pŵer y gofod sampl yn cael ei ffurfio trwy ystyried pob casgliad gwahanol o ganlyniadau posibl. Er enghraifft, gall rholio deis roi chwe chanlyniad posib. Mae un casgliad o ganlyniadau posib yn rhoi odrif ar y deis. Felly, mae'r is-set {1,3,5} yn elfen o set bŵer y gofod sampl o daflu'r deis. Gelwir y casgliadau hyn yn "ddigwyddiadau". Yn yr achos hwn, {1,3,5} yw'r digwyddiad lle mae'r deis yn disgyn ar odrif.
+Mae tebygolrwydd yn ffordd o neilltuo gwerth rhwng sero ac un i bob digwyddiad, gyda'r gofyniad bod y digwyddiad yn cynnwys yr holl ganlyniadau posibl (yn ein enghraifft ni, y digwyddiad {1,2,3,4,5,6}) yn cael gwerth o un. I fod yn debygolrwydd, rhaid i aseiniad gwerthoedd fodloni'r gofyniad ar gyfer unrhyw gasgliad o ddigwyddiadau sy'n annibynnol ar ei gilydd (digwyddiadau heb unrhyw ganlyniadau cyffredin, fel y digwyddiadau {1,6}, {3}, a {2,4}), rhoddir y tebygolrwydd y bydd o leiaf un o'r digwyddiadau'n digwydd yn ôl swm tebygolrwydd yr holl ddigwyddiadau unigol.
+Ysgrifennir tebygolrwydd digwyddiad A fel 
+  
+    
+      
+        P
+        (
+        A
+        )
+      
+    
+    {\displaystyle P(A)}
+  
+, 
+  
+    
+      
+        p
+        (
+        A
+        )
+      
+    
+    {\displaystyle p(A)}
+  
+, neu 
+  
+    
+      
+        
+          Pr
+        
+        (
+        A
+        )
+      
+    
+    {\displaystyle {\text{Pr}}(A)}
+  
+. Gall y diffiniad mathemategol hwn o debygolrwydd ymestyn i ofodau sampl anfeidrol, a hyd yn oed gofodau sampl anadferadwy, gan ddefnyddio'r cysyniad o fesur.
+Y gwrthwyneb  i ddigwyddiad A yw'r digwyddiad [nid A] (hynny yw, digwyddiad lle nad yw A ddim yn digwydd), a ddynodir yn aml fel 
+  
+    
+      
+        
+          A
+          ′
+        
+        ,
+        
+          A
+          
+            c
+          
+        
+      
+    
+    {\displaystyle A',A^{c}}
+  
+, 
+  
+    
+      
+        
+          
+            A
+            ¯
+          
+        
+        ,
+        
+          A
+          
+            ∁
+          
+        
+        ,
+        ¬
+        A
+      
+    
+    {\displaystyle {\overline {A}},A^{\complement },\neg A}
+  
+, neu 
+  
+    
+      
+        
+          ∼
+        
+        A
+      
+    
+    {\displaystyle {\sim }A}
+  
+; rhoddir ei debygolrwydd gan P(nid A) = 1 − P(A). Er enghraifft, y siawns o beidio â rholio chwech ar ddeis chwe ochr yw 1 – (y siawns o rholio 6) 
+  
+    
+      
+        =
+        1
+        −
+        
+          
+            
+              1
+              6
+            
+          
+        
+        =
+        
+          
+            
+              5
+              6
+            
+          
+        
+      
+    
+    {\displaystyle =1-{\tfrac {1}{6}}={\tfrac {5}{6}}}
+  
+.
+Os bydd dau ddigwyddiad A a B yn digwydd ar un perfformiad mewn arbrawf, gelwir hyn yn groestorriad neu'n gyd-debygolrwydd o A a B, a ddynodir fel 
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+      
+    
+    {\displaystyle P(A\cap B)}
+  
+ .
+
+
+=== Digwyddiadau annibynnol ===
+Os yw dau ddigwyddiad, A a B yn annibynnol yna'r tebygolrwydd ar y cyd yw
+
+  
+    
+      
+        P
+        (
+        A
+        
+          
+             and 
+          
+        
+        B
+        )
+        =
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+        .
+      
+    
+    {\displaystyle P(A{\mbox{ and }}B)=P(A\cap B)=P(A)P(B).}
+  
+
+Er enghraifft, os yw dau ddarn o arian yn cael eu taflu, yna mae'r siawns y bydd y ddau yn bennau yn 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+        ×
+        
+          
+            
+              1
+              2
+            
+          
+        
+        =
+        
+          
+            
+              1
+              4
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{2}}\times {\tfrac {1}{2}}={\tfrac {1}{4}}}
+  
+.
+
+
+=== Digwyddiadau sy'n annibynnol ar ei gilydd ===
+Os gall naill ai digwyddiad A neu ddigwyddiad B ddigwydd ond byth y ddau ar yr un pryd, yna fe'u gelwir yn ddigwyddiadau sy'n annibynnol ar ei gilydd (''mutually exclusive'').
+Os yw dau ddigwyddiad yn annibynnol ar ei gilydd, yna dynodir y tebygolrwydd y bydd y ddau yn digwydd fel 
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+      
+    
+    {\displaystyle P(A\cap B)}
+  
+ a
+
+  
+    
+      
+        P
+        (
+        A
+        
+          
+             and 
+          
+        
+        B
+        )
+        =
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        0
+      
+    
+    {\displaystyle P(A{\mbox{ and }}B)=P(A\cap B)=0}
+  
+
+Os yw dau ddigwyddiad yn annibynnol ar ei gilydd, yna dynodir y tebygolrwydd y bydd y naill neu'r llall yn digwydd 
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+      
+    
+    {\displaystyle P(A\cup B)}
+  
+ a
+
+  
+    
+      
+        P
+        (
+        A
+        
+          
+             or 
+          
+        
+        B
+        )
+        =
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        −
+        0
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+      
+    
+    {\displaystyle P(A{\mbox{ or }}B)=P(A\cup B)=P(A)+P(B)-P(A\cap B)=P(A)+P(B)-0=P(A)+P(B)}
+  
+
+Er enghraifft, y siawns o rolio 1 neu 2 ar ddeis chwe ochr yw 
+  
+    
+      
+        P
+        (
+        1
+        
+          
+             or 
+          
+        
+        2
+        )
+        =
+        P
+        (
+        1
+        )
+        +
+        P
+        (
+        2
+        )
+        =
+        
+          
+            
+              1
+              6
+            
+          
+        
+        +
+        
+          
+            
+              1
+              6
+            
+          
+        
+        =
+        
+          
+            
+              1
+              3
+            
+          
+        
+        .
+      
+    
+    {\displaystyle P(1{\mbox{ or }}2)=P(1)+P(2)={\tfrac {1}{6}}+{\tfrac {1}{6}}={\tfrac {1}{3}}.}
+  
+
+
+=== Digwyddiadau sy ddim yn annibynnol ar ei gilydd ===
+Os nad yw'r digwyddiadau'n annibynnol ar ei gilydd yna
+
+  
+    
+      
+        P
+        
+          (
+          
+            A
+            
+              
+                 or 
+              
+            
+            B
+          
+          )
+        
+        =
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        
+          (
+          A
+          )
+        
+        +
+        P
+        
+          (
+          B
+          )
+        
+        −
+        P
+        
+          (
+          
+            A
+            
+              
+                 and 
+              
+            
+            B
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle P\left(A{\hbox{ or }}B\right)=P(A\cup B)=P\left(A\right)+P\left(B\right)-P\left(A{\mbox{ and }}B\right).}
+  
+
+Er enghraifft, wrth dynnu cerdyn o becyn o gardiau, y siawns o gael calon neu gerdyn wyneb (J, Q, K) (neu'r ddau) yw 
+  
+    
+      
+        
+          
+            
+              13
+              52
+            
+          
+        
+        +
+        
+          
+            
+              12
+              52
+            
+          
+        
+        −
+        
+          
+            
+              3
+              52
+            
+          
+        
+        =
+        
+          
+            
+              11
+              26
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {13}{52}}+{\tfrac {12}{52}}-{\tfrac {3}{52}}={\tfrac {11}{26}}}
+  
+, oherwydd ymhlith 52 cerdyn o'r pecyn, mae 13 yn galonnau, mae 12 yn gardiau wyneb, a 3 yn perthyn i'r ddau grwp: yma mae'r posibiliadau sydd wedi'u cynnwys yn y "3 sy'n perthyn i'r ddau grwp" wedi'u cynnwys ym mhob un o'r "13 calon" a'r "12 cardiau wyneb ", ond dim ond unwaith y dylid eu cyfrif.
+
+
+=== Tebygolrwydd amodol ===
+Tebygolrwydd amodol yw tebygolrwydd rhyw ddigwyddiad A, o ystyried bod digwyddiad B arall yn digwydd. Ysgrifennir tebygolrwydd amodol 
+  
+    
+      
+        P
+        (
+        A
+        ∣
+        B
+        )
+      
+    
+    {\displaystyle P(A\mid B)}
+  
+, ac fe'i darllenir fel "tebygolrwydd A, o ystyried B". Fe'i diffinnir gan 
+
+  
+    
+      
+        P
+        (
+        A
+        ∣
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              B
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle P(A\mid B)={\frac {P(A\cap B)}{P(B)}}.\,}
+  
+
+Os 
+  
+    
+      
+        P
+        (
+        B
+        )
+        =
+        0
+      
+    
+    {\displaystyle P(B)=0}
+  
+ yna mae 
+  
+    
+      
+        P
+        (
+        A
+        ∣
+        B
+        )
+      
+    
+    {\displaystyle P(A\mid B)}
+  
+ yn cael ei ddiffinio'n ffurfiol gan yr ymadrodd hwn. Yn yr achos, mae 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ a 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ yn annibynnol, oherwydd fod
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+        =
+        0
+      
+    
+    {\displaystyle P(A\cap B)=P(A)P(B)=0}
+  
+. Fodd bynnag, mae'n bosibl diffinio tebygolrwydd amodol ar gyfer rhai digwyddiadau sydd ddim yn debygol (tebygolrwydd-0) gan ddefnyddio σ-algebra o ddigwyddiadau o'r fath (fel y rhai sy'n deillio o hapnewidyn parhaus). 
+Er enghraifft, mewn bag o 2 bêl goch a 2 bêl las (cyfanswm o 4 pêl), y tebygolrwydd o gymryd pêl goch yw 
+  
+    
+      
+        1
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle 1/2}
+  
+; fodd bynnag, wrth gymryd ail bêl, mae'r tebygolrwydd y bydd naill ai'n bêl goch neu'n bêl las yn dibynnu ar y bêl a gymerwyd o'r blaen. Er enghraifft, pe cymerid pêl goch, yna'r tebygolrwydd o ddewis pêl goch eto fyddai 
+  
+    
+      
+        1
+        
+          /
+        
+        3
+      
+    
+    {\displaystyle 1/3}
+  
+, gan mai dim ond 1 bêl goch a 2 bêl las fyddai wedi bod ar ôl. Ac os mai pêl las a gymerwyd o'r blaen, yna'r tebygolrwydd o gymryd pêl goch fydd 
+  
+    
+      
+        2
+        
+          /
+        
+        3
+      
+    
+    {\displaystyle 2/3}
+  
+ .
+
+
+=== Crynodeb o'r tebygolrwyddau ===
+
+Theori tebygolrwydd
+Ystadegau
+
+
+== Gweler hefyd ==
+Gofod tebygolrwydd
+Gofod y sampl
+Cydgyfeiriant o ran tebygolrwydd - convergence in probability
+
+
+== Cyfeiriadau ==
+
+
+== Dolenni allanol ==
+Rhith Labordai mewn Tebygolrwydd ac Ystadegau (Univ. Of Ala. -Huntsville)
+Probability
+Tebygolrwydd ac Ystadegau EBook
+Edwin Thompson Jaynes . Theori Tebygolrwydd: Rhesymeg Gwyddoniaeth . Preprint: Prifysgol Washington, (1996). - Mynegai HTML gyda dolenni i ffeiliau PostScript a PDF (tair pennod gyntaf)
+Pobl o Hanes Tebygolrwydd ac Ystadegau (Univ. Southampton)
+Tebygolrwydd ac Ystadegau ar y Tudalennau Defnydd Cynharaf (Univ. Of Southampton)
+Y Defnyddiau Cynharaf o Symbolau mewn Tebygolrwydd ac Ystadegau ar y Defnyddiau Cynharaf o Symbolau Mathemategol Amrywiol
+Tiwtorial ar debygolrwydd a theorem Bayes a ddyfeisiwyd ar gyfer myfyrwyr blwyddyn gyntaf Prifysgol Rhydychen
+[1] ffeil pdf o An Anthology of Chance Operations (1963) yn UbuWeb
+Cyflwyniad i Tebygolrwydd - eLyfr Archifwyd 2011-07-27 yn y Peiriant Wayback, gan Charles Grinstead, Laurie Snell Source Archifwyd 2012-03-25 yn y Peiriant Wayback ( Trwydded Dogfennaeth Ddi-GNU )
+(in English and Italian) Bruno de Finetti, Probabilità e induzione, Bologna, CLUEB, 1993.ISBN 88-8091-176-7 (fersiwn ddigidol)
+Darlith Richard P. Feynman ar debygolrwydd.

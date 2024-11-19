@@ -1,0 +1,51 @@
+Central Processing Unit (forkortet "CPU"), også kaldet centralenhed eller i daglig tale blot processor. Historisk set er CPU'en en separat enhed, men i dag bruges begrebet til at betegne hele mikroprocessorer, hvori CPU'en er den centrale regneenhed. CPU'erne foretager størstedelen af beregningerne i en computer (fx en PC eller et indlejret system).
+Der findes forskellige typer af CPU'er. De mest kendte i personlige computere er fra Intel, AMD, Sun, Motorola og Transmeta. Det ses ofte, at man sætter flere CPU'er sammen i en computer (SMP) for at opnå større regnekraft.
+CPU'ers "hastighed" angives med SI-enheden for frekvens Hertz (Hz) til at betegne, hvor mange regnecyklusser, de kan gennemføre per sekund. Fra 1970'eren og indtil årtusindskiftet blev CPU-frekvenser angivet i megahertz og siden i gigahertz. 
+
+
+== Kerner ==
+
+Kernen i CPU'en er der, hvor beregningerne foretages, og det er almindeligt, at producenterne indlægger flere kerner i en CPU. Designet af hver kerne er identisk, og de kan foretage samme type beregninger med samme hastighed. At producere en processor med flere kerner letter designomkostningerne betydeligt, da man, i stedet for at designe en dobbelt så stor og effektiv kerne, kan nøjes med at anvende flere af samme arkitektur og lade dem udføre beregningerne sideløbende. At udnytte en CPU med flere kerner stiller krav til de programmer, man kører på computeren, da programmerne skal optimeres til at sprede de nødvendige beregninger ud over alle kernerne. Mange programmer er begrænset til kun at udnytte en kerne, og derfor kan ydedelsesforbedringerne for et enkelt program være minimale ved at bruge en CPU med flere kerner. Flere kerner kan imidlertid være en stor fordel, hvis man kører flere krævende programmer på sin computer samtidig, da programmerne kan deles ud over kernerne.
+AMD var først på markedet med en 2-kernet processor, som hed Athlon X2. Intel lavede derefter deres Pentium D processor. I dag ser man CPU'er med mere end 22 kerner i servermiljøer.
+
+
+== Pipelining ==
+I dag benytter de fleste CPU'er instruktionspipelining, der betyder, at en CPU kan starte en ny instruktion hver cyklus. Visse CPU'er kan have 10-20 instruktioner i gang samtidigt.
+
+
+== Single Instruction Multiple Data (SIMD) ==
+Nogle CPU'er understøtter også SIMD – vektor processering. Hos Intel Pentium 4 hedder det MMX/SSE/SSE2, og i Motorola's G4 hedder det AltiVec Velocity Engine.
+Både pipelining og SIMD gør CPU-hastigheden potentielt hurtigere, men pipelining kræver, at oversættere (eng. compiler) flytter rundt på instruktionsrækkefølgen, så de bliver optimeret til pipelining. For at SIMD skal udføre programmer hurtigere, er det nødvendigt at optimere dem til det.
+
+
+== CPU-arkitekturer ==
+Hoved-CPU-arkitekturen i en PC eller et indlejret system afgør almindeligvis også, hvilke styresystemer (eng. Operativ System, OS) der kan anvendes:
+
+Intel x86, Intel Pentium.
+AMD x86, AMD K5, K6. Anvendes i PC, som f.eks. kan køre DOS, Microsoft Windows eller en Unix variant: Linux, FreeBSD og OpenBSD.
+Motorola, IBM PowerPC G3, G4, G5. Anvendes i IBM's CHRP. Apple Macintosh kan f.eks. køre Apple Mac OS X (FreeBSD- og MACH-baseret).
+SUN Sparc, UltraSparc. Anvendes i PC som f.eks. kan køre SUN Solaris.
+MIPS oprindelig brugt til generelle systemer, men efterhånden bruges den kun til indlejrede systemer.
+Acorn (nu Intel) ARM, StrongARM.
+Intel Xscale (ARM baseret).
+Transmeta
+Crusoe. Crusoe processoren kan effektivt simulere en x86 processor.
+Efficeon. Transmeta.com: Efficeon Arkiveret 31. august 2005 hos  Wayback Machine, Efficeon CPU Chosen by HP for Blade PC Arkiveret 27. september 2004 hos  Wayback Machine
+
+
+== Eksterne henvisninger ==
+
+Google: Processors Arkiveret 16. april 2003 hos  Wayback Machine
+Apple: What is AltiVec?
+x86, Pentium og Xeon serierne. (PC)
+K5, K6, Athlon, ThunderBird. (PC)
+Sun Sparc
+680xx (Amiga/Macintosh), PowerPC (Macintosh)
+Crusoe (PDA og notebooks)
+INSTRUCTION PIPELINING Arkiveret 2. maj 2003 hos  Wayback Machine
+13 May, 2002, Nasa hunts net for shuttle parts
+CPU hastigheder
+"Chaos in computer performance", Hugues Berry fra det franske forskningsinstitut for information og automation, INRIA. (pdf)
+
+
+== Noter ==

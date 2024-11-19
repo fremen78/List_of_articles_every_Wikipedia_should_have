@@ -1,0 +1,4058 @@
+La Teoria especial de la relativitat (coneguda també com a relativitat especial, relativitat restringida o RE), va ser publicada per Albert Einstein el 1905, i descriu la física del moviment en absència de camps gravitacionals. Aquests conceptes van ser presentats anteriorment per Henri Poincaré i Hendrik Lorentz, que també són considerats com a iniciadors de la teoria. Fins aleshores, els físics pensaven que la mecànica clàssica d'Isaac Newton, basada en l'anomenada relativitat de Galileu (origen de les equacions matemàtiques conegudes com a transformacions de Galileu), descrivia els conceptes de velocitat i força per a tots els observadors, o sistemes de referència. No obstant això, Hendrik Lorentz i altres, havien comprovat que les equacions de Maxwell, que governen l'electromagnetisme, no es comportaven d'acord amb les lleis de Newton quan el sistema de referència canvia; per exemple, quan es considera el mateix problema físic des del punt de vista de dos observadors que es mouen l'un respecte de l'altre.
+La noció de transformació de les lleis de la física respecte als observadors és la que dona nom a la teoria, que s'ajusta amb el qualificatiu d'especial o restringida per cenyir-se a casos de sistemes en els quals no es té en compte els camps gravitatoris. Una extensió d'aquesta teoria, que inclou els camps gravitatoris, és la Teoria General de la Relativitat, publicada per Einstein el 1916.
+
+
+== Motivació de la teoria ==
+A començaments del segle xix les lleis de Newton tenien un ampli reconeixement. Aquest reconeixement es va acabar de consolidar amb el descobriment del planeta Neptú. El planeta Urà semblava que no seguia l'òrbita exacta que preveien les lleis de Newton, llavors Francesc Aragó va suggerir al seu alumne Le Verrier que fes els càlculs de quina òrbita hauria de tenir un hipotètic planeta que provoqués les alteracions observades en l'òrbita d'Urà. Els astrònoms van enfocar els telescopis a la posició del cel on segons els càlculs de Leverrier hi havia d'haver el nou planeta i efectivament van descobrir Neptú.
+No obstant això s'estaven gestant altres observacions que feien pensar que les lleis de Newton no eren del tot correctes.
+
+
+=== Camps magnètics generats pel corrent elèctric ===
+La relació entre l'electricitat i el magnetisme, basada en la capacitat del corrent elèctric per desviar una agulla magnètica, va ser descoberta de forma independent per Gian Domenico Romagnosi i Hans Christian Ørsted. Cap dels dos en van treure més conseqüències ni van desenvolupar cap teoria per explicar-ho. Romagosi ho va descobrir el 1802 i va enviar un informe a l'Acadèmia de París, però en aquell moment la comunitat científica l'ignora. El 1820 Hans Christian Ørsted redescobreix el fenomen i presenta el seu experiment a Ginebra. Francesc Aragó va presenciar l'experiment d'Ørsted a Ginebra, el va repetir a París i va animar a Ampère a investigar sobre el fenomen. Ampère va deduir-ne que les accions magnètiques són degudes al moviment de l'electricitat.
+Aquest fet presenta un problema fonamental. Per una banda si un corrent elèctric crea un camp magnètic, una càrrega elèctrica en moviment ha de crear un camp magnètic. Però si un observador es mou conjuntament amb la càrrega, o bé no observa cap camp magnètic (perquè per a ell la càrrega no es mou), o bé la llei del camp magnètic induït per un corrent no és la mateixa depenent de la velocitat de l'observador.
+De fet, si dues càrregues elèctriques romanen immòbils entre si i l'observador, aquest només hauria d'observar la força calculada segons la llei de l'electroestàtica:
+
+.
+
+  
+    
+      
+        
+          
+            
+              F
+            
+            →
+          
+        
+        
+          
+          
+            e
+          
+        
+        =
+        
+          
+            1
+            
+              4
+              π
+              
+                ε
+                
+                  0
+                
+              
+            
+          
+        
+        
+          
+            
+              
+                Q
+                
+                  1
+                
+              
+              
+                Q
+                
+                  2
+                
+              
+            
+            
+              r
+              
+                2
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                  
+                    r
+                  
+                  →
+                
+              
+              
+            
+            r
+          
+        
+      
+    
+    {\displaystyle {\overset {\to }{\mathop {F} }}\,_{e}={\frac {1}{4\pi \varepsilon _{0}}}{\frac {Q_{1}Q_{2}}{r^{2}}}{\frac {{\overset {\to }{\mathop {r} }}\,}{r}}}
+  
+
+En canvi, si les dues càrregues es mouen conjuntament a una velocitat v respecte de l'observador, llavors segons les lleis del camp magnètic, a més hauria d'observar una força magnètica.
+El camp magnètic generat per la segona càrrega al punt on es troba la primera seria:
+
+  
+    
+      
+        
+          
+            
+              B
+            
+            →
+          
+        
+        
+        =
+        
+          
+            
+              μ
+              
+                0
+              
+            
+            
+              4
+              π
+            
+          
+        
+        
+          
+            
+              
+                Q
+                
+                  2
+                
+              
+              
+                
+                  
+                    v
+                  
+                  →
+                
+              
+              
+              ×
+              
+                
+                  
+                    r
+                  
+                  →
+                
+              
+              
+            
+            
+              r
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\overset {\to }{\mathop {B} }}\,={\frac {\mu _{0}}{4\pi }}{\frac {Q_{2}{\overset {\to }{\mathop {v} }}\,\times {\overset {\to }{\mathop {r} }}\,}{r^{3}}}}
+  
+
+I la força que aquest camp magnètic faria sobre la primera càrrega:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      F
+                    
+                    →
+                  
+                
+                
+                  
+                  
+                    m
+                  
+                
+              
+              
+                
+                =
+                
+                  Q
+                  
+                    1
+                  
+                
+                
+                  
+                    
+                      v
+                    
+                    →
+                  
+                
+                
+                ×
+                
+                  
+                    
+                      B
+                    
+                    →
+                  
+                
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    
+                      μ
+                      
+                        0
+                      
+                    
+                    
+                      4
+                      π
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        Q
+                        
+                          1
+                        
+                      
+                      
+                        Q
+                        
+                          2
+                        
+                      
+                    
+                    
+                      r
+                      
+                        3
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      v
+                    
+                    →
+                  
+                
+                
+                ×
+                
+                  
+                    
+                      r
+                    
+                    →
+                  
+                
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\overset {\to }{\mathop {F} }}\,_{m}&=Q_{1}{\overset {\to }{\mathop {v} }}\,\times {\overset {\to }{\mathop {B} }}\,\\&={\frac {\mu _{0}}{4\pi }}{\frac {Q_{1}Q_{2}}{r^{3}}}{\overset {\to }{\mathop {v} }}\,\times {\overset {\to }{\mathop {r} }}\,\\\end{aligned}}}
+  
+
+Per tant ara la força total que s'observaria entre les dues càrregues seria:
+
+  
+    
+      
+        
+          
+            
+              F
+            
+            →
+          
+        
+        
+        =
+        
+          
+            
+              
+                Q
+                
+                  2
+                
+              
+              
+                Q
+                
+                  1
+                
+              
+            
+            
+              4
+              π
+              
+                r
+                
+                  2
+                
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                
+                  
+                    μ
+                    
+                      0
+                    
+                  
+                  
+                    
+                      
+                        v
+                      
+                      →
+                    
+                  
+                  
+                  ×
+                  
+                    
+                      
+                        r
+                      
+                      →
+                    
+                  
+                  
+                
+                r
+              
+            
+            +
+            
+              
+                
+                  
+                    
+                      
+                        r
+                      
+                      →
+                    
+                  
+                  
+                
+                
+                  
+                    ε
+                    
+                      0
+                    
+                  
+                  r
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\overset {\to }{\mathop {F} }}\,={\frac {Q_{2}Q_{1}}{4\pi r^{2}}}\left({\frac {\mu _{0}{\overset {\to }{\mathop {v} }}\,\times {\overset {\to }{\mathop {r} }}\,}{r}}+{\frac {{\overset {\to }{\mathop {r} }}\,}{\varepsilon _{0}r}}\right)}
+  
+
+Però això és independent de si la velocitat relativa entre les càrregues i l'observador s'ha produït perquè les càrregues s'han posat en moviment o perquè s'ha accelerat l'observador. Un observador pot començar l'experiment mesurant la força entre dues càrregues en repòs a terra, pujar ell a un vagó de tren i en posar-se en marxa el tren, veure com la força entre les càrregues varia.
+La força magnètica comparada amb la força electroestàtica és extraordinàriament petita:
+
+  
+    
+      
+        
+          ‖
+          
+            
+              
+                
+                  
+                    
+                      F
+                    
+                    →
+                  
+                
+                
+                  
+                  
+                    m
+                  
+                
+              
+              
+                
+                  
+                    
+                      F
+                    
+                    →
+                  
+                
+                
+                  
+                  
+                    e
+                  
+                
+              
+            
+          
+          ‖
+        
+        =
+        
+          ‖
+          
+            
+              
+                
+                  
+                    
+                      μ
+                      
+                        0
+                      
+                    
+                    
+                      4
+                      π
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        Q
+                        
+                          1
+                        
+                      
+                      
+                        Q
+                        
+                          2
+                        
+                      
+                    
+                    
+                      r
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      v
+                    
+                    →
+                  
+                
+                
+                ×
+                
+                  
+                    
+                      
+                        
+                          
+                            r
+                          
+                          →
+                        
+                      
+                      
+                    
+                    r
+                  
+                
+              
+              
+                
+                  
+                    1
+                    
+                      4
+                      π
+                      
+                        ε
+                        
+                          0
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        Q
+                        
+                          1
+                        
+                      
+                      
+                        Q
+                        
+                          2
+                        
+                      
+                    
+                    
+                      r
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          
+                            r
+                          
+                          →
+                        
+                      
+                      
+                    
+                    r
+                  
+                
+              
+            
+          
+          ‖
+        
+        =
+        
+          μ
+          
+            0
+          
+        
+        
+          ε
+          
+            0
+          
+        
+        
+          ‖
+          
+            
+              
+                
+                  v
+                
+                →
+              
+            
+            
+          
+          ‖
+        
+        sin
+        ⁡
+        α
+      
+    
+    {\displaystyle \left\|{\frac {{\overset {\to }{\mathop {F} }}\,_{m}}{{\overset {\to }{\mathop {F} }}\,_{e}}}\right\|=\left\|{\frac {{\frac {\mu _{0}}{4\pi }}{\frac {Q_{1}Q_{2}}{r^{2}}}{\overset {\to }{\mathop {v} }}\,\times {\frac {{\overset {\to }{\mathop {r} }}\,}{r}}}{{\frac {1}{4\pi \varepsilon _{0}}}{\frac {Q_{1}Q_{2}}{r^{2}}}{\frac {{\overset {\to }{\mathop {r} }}\,}{r}}}}\right\|=\mu _{0}\varepsilon _{0}\left\|{\overset {\to }{\mathop {v} }}\,\right\|\sin \alpha }
+  
+
+On v és la velocitat relativa entre les càrregues i l'observador i α és l'angle entre el vector que va d'una càrrega a l'altre i el vector velocitat.
+Tenint en compte que:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  μ
+                  
+                    0
+                  
+                
+                =
+                4
+                π
+                ⋅
+                
+                  10
+                  
+                    −
+                    7
+                  
+                
+              
+            
+            
+              
+              
+                
+                  ε
+                  
+                    0
+                  
+                
+                =
+                8
+                ,
+                8542
+                ⋅
+                
+                  10
+                  
+                    −
+                    12
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&\mu _{0}=4\pi \cdot 10^{-7}\\&\varepsilon _{0}=8,8542\cdot 10^{-12}\\\end{aligned}}}
+  
+
+Resulta que el coeficient que multiplica la velocitat és:
+
+  
+    
+      
+        
+          μ
+          
+            0
+          
+        
+        
+          ε
+          
+            0
+          
+        
+        =
+        4
+        π
+        ⋅
+        
+          10
+          
+            −
+            7
+          
+        
+        ⋅
+        8
+        ,
+        8542
+        ⋅
+        
+          10
+          
+            −
+            12
+          
+        
+        ≈
+        11
+        ,
+        1265
+        ⋅
+        
+          10
+          
+            −
+            18
+          
+        
+        =
+        
+          
+            1
+            
+              
+                (
+                
+                  299
+                  ,
+                  792
+                  ⋅
+                  
+                    10
+                    
+                      6
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+          
+        
+        ≈
+        
+          
+            1
+            
+              c
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \mu _{0}\varepsilon _{0}=4\pi \cdot 10^{-7}\cdot 8,8542\cdot 10^{-12}\approx 11,1265\cdot 10^{-18}={\frac {1}{\left(299,792\cdot 10^{6}\right)^{2}}}\approx {\frac {1}{c^{2}}}}
+  
+
+Perquè aquesta força sigui apreciable cal que, o bé la velocitat sigui molt gran, o bé que les forces electroestàtiques siguin molt grans i es cancel·lin de forma que només s'apreciï la força magnètica. Això és el que passa en el cas de fils conductors del corrent, els fils tenen càrregues positives i negatives que es cancel·len les forces electroestàtiques i només resten les forces magnètiques entre els portadors en moviment respecte de l'observador.
+
+
+=== L'experiment de Francesc Aragó de 1810 ===
+
+El 1810 Francesc Aragó fa un experiment, que presenta oralment a l'Acadèmia de Ciències el 10 de desembre (tot i que no es va publicar fins al 1853 just abans de la seva mort, més de quaranta anys més tard): es tractava de mesurar la velocitat de la llum que ve dels estels, comparant el valor al matí a les 6 h i al vespre a les 18 h. A les 6 h, quan s'observa un estel al zenit, la Terra s'apropa a l'estel, s'hauria de mesurar c + V, on V és la velocitat tangencial de rotació de la Terra i c la velocitat de la llum; a les 18 h, per a un estel al zenit, la Terra s'allunya, s'hauria de mesurar c - V. Ara bé l'experiència va resultar negativa. Les diferències observades van ser molt petites, del mateix ordre de magnitud que les observades entre diferents estels i perfectament atribuïbles a errors d'experimentació. A l'octubre, Aragó repeteix l'experiment i el resultat torna a ser el mateix. La velocitat de rotació de la terra al votant del sol tampoc no afecta la velocitat observada de la llum.
+En aquest experiment Aragó no mesura directament la velocitat de la llum sinó que ho fa indirectament a partir de l'índex de refracció. Això fa que hi hagi una possible explicació que permeti conciliar aquest resultat amb les lleis de Newton, Aragó diu:
+
+L'única forma de resoldre la qüestió era la mesura directa de la velocitat de la llum. Aragó va definir els principis generals del sistema per mesurar directament la velocitat de la llum però els seus problemes de visió li impediren participar en els experiments.
+Finalment Fizeau va mesurar-la directament el 1849, més tard Léon Foucault el 1862 i Albert Abraham Michelson el 1878
+Les mesures experimentals tenien cada cop més precisió i sempre donaven el mateix resultat de l'experiment d'Aragó del 1810: La velocitat de la llum era constant i independent de la velocitat relativa entre l'emissor i el receptor.
+
+
+== Transformacions de coordenades ==
+Abans de la formulació de la teoria especial de la relativitat, Hendrik Lorentz i uns altres ja havien descobert que l'electromagnetisme diferia de la física newtoniana que les observacions d'un fenomen podrien diferir d'una persona a una altra que estigués movent-se relativament a la primera a velocitats pròximes a les de la llum. Així, una pot observar la inexistència d'un camp magnètic mentre l'altra l'observa amb claredat en el mateix espai físic.
+Lorentz va suggerir una teoria de l'èter en la qual objectes i observadors viatjarien a través d'un èter estacionari, sofrint un escurçament físic (hipòtesi de contracció de Lorentz) i un canvi en el pas del temps (dilatació del temps). Lorentz estava motivat pels resultats negatius del moviment relatiu de la llum pel que fa a l'èter proporcionat uns anys abans pel cèlebre experiment de Michelson-Morley. L'explicació de Lorentz subministrava una reconciliació parcial entre la física newtoniana i l'electromagnetisme, que es conjugaven aplicant la transformació de Lorentz, que vindria a substituir a la transformació de Galileu vigent en el sistema newtonià. La formulació de l'electromagnetisme enfront de les transformacions de Lorentz va anar també estudiada pel físic francès Henri Poincaré. Quan les velocitats involucrades són molt menors que c (la velocitat de la llum), les lleis resultants són en la pràctica les mateixes que en la teoria de Newton, i les transformacions es redueixen a les de Galileu. En qualsevol cas, la teoria de l'èter va ser criticada fins i tot pel mateix Lorentz, a causa de la seva naturalesa.
+Lorentz va suggerir la seva transformació com una descripció matemàtica precisa dels resultats dels experiments.
+Einstein a més d'obtenir les mateixes equacions imposant la constància de la velocitat de la llum per a tots els observadors, va interpretar el significat de la transformació imposant la condició addicional que aplicant aquesta transformació en comptes de la de Galileu les lleis de la física havien de ser independents de la velocitat relativa entre els observadors (invariants en diferents sistemes inercials, és a dir, per a diferents observadors). D'aquesta idea va sorgir el títol original de la teoria, "Teoria dels invariables". Va ser Max Planck qui va suggerir posteriorment el terme "relativitat" per a ressaltar la noció de transformació de les lleis de la física entre observadors movent-se relativament entre si. El fet d'imposar la condició que les lleis de la física siguin invariants obliga en alguns casos a reformular algunes lleis, i en altres certes magnituds han de patir transformacions de l'estil com passa amb la posició i la duració. Per exemple la velocitat i la massa d'un objecte són magnituds que no donen el mateix valor si les mesura un observador o si les mesura un altre que es mou amb determinada velocitat relativa respecte del primer, lleis com la dels camps magnètics apareixen de manera natural aplicant la transformació relativista a la força del camp electroestàtic i apareixen altres fenòmens nous, per exemple, qualsevol força s'ha de transformar igual que una força electroestàtica per tant hi ha un equivalent "magnètic" de qualsevol classe de força, l'energia cinètica relativista no és igual a l'energia cinètica clàssica, etc.
+La relativitat especial estudia el comportament d'objectes i observadors que romanen en repòs o es mouen amb moviment uniforme (i.e., velocitat relativa constant). En aquest cas, es diu que l'observador està en un sistema de referència inercial. La comparació d'espais i temps entre observadors inercials pot ser realitzada usant les transformacions de *Lorentz. La teoria especial de la relativitat pot predir així mateix el comportament de cossos accelerats quan aquesta acceleració no impliqui forces gravitatòries, en aquest cas és necessària la relativitat general.
+
+
+=== La transformació de Galileu ===
+
+El primer concepte de teoria de la relativitat és degut a Galileo Galilei en el seu llibre Dialogus de Duobus Systematis Maximis Mundani. El problema de trobar una llei que permeti calcular les mesures que farà un observador O₂ sabent les mesures que ha fet un altre observador O1 i la velocitat v relativa entre ells, es pot plantejar donant per fet el resultat intuïtiu de la transformació de Galileu. Si cada observador té un sistema de coordenades cartesianes, mesurant la posició dels objectes en l'eix x i suposant que la velocitat relativa entre els dos és també en l'eix x, si al començament (t1 = t₂ = 0) els sistemes de coordenades dels dos observadors tenen els orígens coincidents (x1 = x₂), llavors si en un moment t1 l'observador O1 observa un objecte en la posició x1, l'observador O₂ l'observarà en:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                =
+                
+                  x
+                  
+                    1
+                  
+                
+                +
+                v
+                ⋅
+                
+                  t
+                  
+                    1
+                  
+                
+              
+            
+            
+              
+              
+                
+                  t
+                  
+                    2
+                  
+                
+                =
+                
+                  t
+                  
+                    1
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&x_{2}=x_{1}+v\cdot t_{1}\\&t_{2}=t_{1}\\\end{aligned}}}
+  
+
+Però per entendre la teoria de la relativitat és preferible deduir aquesta transformació a partir de principis més elementals. El problema consisteix a trobar dues funcions que permetin calcular les mesures que obtindrà l'observador O₂ a partir de les mesures fetes per l'observador O1:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                =
+                f
+                
+                  (
+                  
+                    v
+                    ,
+                    
+                      x
+                      
+                        1
+                      
+                    
+                    ,
+                    
+                      t
+                      
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                  t
+                  
+                    2
+                  
+                
+                =
+                g
+                
+                  (
+                  
+                    v
+                    ,
+                    
+                      x
+                      
+                        1
+                      
+                    
+                    ,
+                    
+                      t
+                      
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&x_{2}=f\left(v,x_{1},t_{1}\right)\\&t_{2}=g\left(v,x_{1},t_{1}\right)\\\end{aligned}}}
+  
+
+Els principis més elementals o resultats d'experiments són:
+
+L'extensió i la duració dels objectes són acumulatives.
+Si es fiquen dos objectes un a continuació de l'altre en línia recta, per a tots dos observadors la longitud total és la suma de longituds.
+Si dos esdeveniments succeeixen un a continuació de l'altre, per a tots dos observadors la durada total és la suma de durades.
+Si un objecte resta quiet, respecte d'un observador l'altre el veu moure's amb la mateixa velocitat amb què veu que es mou aquest observador.
+Si un observador veu que un altre es mou a una determinada velocitat v l'altre el veu a ell movent-se a la mateixa velocitat però en sentit contrari: -v.
+A l'espai no hi ha direccions privilegiades: Si l'observador O1 es mou amb velocitat -v el resultat és el mateix que si es mou amb velocitat v.
+D'aquests quatre principis es dedueix que les funcions de transformació han de ser de la forma:
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      x
+                    
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      t
+                    
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  a
+                  
+                    (
+                    v
+                    )
+                  
+                
+                
+                  v
+                  ⋅
+                  a
+                  
+                    (
+                    v
+                    )
+                  
+                
+              
+              
+                
+                  d
+                  
+                    (
+                    v
+                    )
+                  
+                
+                
+                  a
+                  
+                    (
+                    v
+                    )
+                  
+                
+              
+            
+          
+          )
+        
+        ⋅
+        
+          (
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    t
+                    
+                      1
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{matrix}{\text{x}}_{\text{2}}\\{\text{t}}_{\text{2}}\\\end{matrix}}\right)=\left({\begin{matrix}a\left(v\right)&v\cdot a\left(v\right)\\d\left(v\right)&a\left(v\right)\\\end{matrix}}\right)\cdot \left({\begin{matrix}x_{1}\\t_{1}\\\end{matrix}}\right)}
+  
+
+Amb la restricció afegida que:
+
+  
+    
+      
+        
+          
+            [
+            
+              a
+              
+                (
+                v
+                )
+              
+            
+            ]
+          
+          
+            2
+          
+        
+        −
+        v
+        ⋅
+        a
+        
+          (
+          v
+          )
+        
+        ⋅
+        d
+        
+          (
+          v
+          )
+        
+        =
+        1
+      
+    
+    {\displaystyle \left[a\left(v\right)\right]^{2}-v\cdot a\left(v\right)\cdot d\left(v\right)=1}
+  
+
+Per tant, no queda completament determinat. Hi ha moltes solucions possibles, una és: a(v) = 1; d(v) = 0, que condueix a la transformació de Galileu:
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      x
+                    
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      t
+                    
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  1
+                
+                
+                  v
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+          
+          )
+        
+        ⋅
+        
+          (
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    t
+                    
+                      1
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{matrix}{\text{x}}_{\text{2}}\\{\text{t}}_{\text{2}}\\\end{matrix}}\right)=\left({\begin{matrix}1&v\\0&1\\\end{matrix}}\right)\cdot \left({\begin{matrix}x_{1}\\t_{1}\\\end{matrix}}\right)}
+  
+
+De fet és l'única solució on les funcions a(v) i d(v) són independents de v i és l'única compatible amb el fet que el temps mesurat per tots els observadors sigui el mateix.
+
+
+=== La transformació de Lorentz ===
+
+La transformació de Lorentz resulta de manera natural d'acceptar el resultat verificat pels diversos experiments començant pel de Francesc Aragó de 1810 que la velocitat de la llum és sempre la mateixa per a tots els observadors.
+Aquest és el principi fonamental que mancava per acabar de determinar la fórmula que ha de permetre calcular les mesures que farà l'observador O₂ a partir de les que ha fet l'observador O1 i que en la transformació de Galileu s'havia obtingut de forma arbitrària.
+El resultat és:
+
+  
+    
+      
+        
+          {
+          
+            
+              
+                
+                
+                  
+                    x
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                
+                  
+                    t
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          }
+        
+        =
+        
+          
+            1
+            
+              
+                (
+                
+                  1
+                  −
+                  
+                    
+                      
+                        v
+                        
+                          2
+                        
+                      
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                )
+              
+            
+          
+        
+        ⋅
+        
+          [
+          
+            
+              
+                
+                  1
+                
+                
+                  v
+                
+              
+              
+                
+                  
+                    
+                      v
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  1
+                
+              
+            
+          
+          ]
+        
+        ⋅
+        
+          {
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    t
+                    
+                      1
+                    
+                  
+                
+              
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{{\begin{aligned}&x_{2}\\&t_{2}\\\end{aligned}}\right\}={\frac {1}{\sqrt {\left(1-{\frac {v^{2}}{c^{2}}}\right)}}}\cdot \left[{\begin{matrix}1&v\\{\frac {v}{c^{2}}}&1\\\end{matrix}}\right]\cdot \left\{{\begin{matrix}x_{1}\\t_{1}\\\end{matrix}}\right\}}
+  
+
+On c és la velocitat de la llum.
+
+Aquesta expressió es presenta de forma més compacta definint l'anomenat factor de Lorentz γ:
+
+  
+    
+      
+        γ
+        ≡
+        
+          
+            1
+            
+              1
+              −
+              
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \gamma \equiv {\frac {1}{\sqrt {1-{\frac {v^{2}}{c^{2}}}}}}}
+  
+
+Llavors queda:
+
+  
+    
+      
+        
+          {
+          
+            
+              
+                
+                  
+                    x
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    t
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          }
+        
+        =
+        γ
+        
+          (
+          
+            
+              
+                
+                  1
+                
+                
+                  v
+                
+              
+              
+                
+                  
+                    
+                      v
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  1
+                
+              
+            
+          
+          )
+        
+        ⋅
+        
+          {
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    t
+                    
+                      1
+                    
+                  
+                
+              
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{{\begin{matrix}x_{2}\\t_{2}\\\end{matrix}}\right\}=\gamma \left({\begin{matrix}1&v\\{\frac {v}{c^{2}}}&1\\\end{matrix}}\right)\cdot \left\{{\begin{matrix}x_{1}\\t_{1}\\\end{matrix}}\right\}}
+  
+
+Fixeu-vos que el factor de Lorentz a velocitats petites creix molt a poc a poc, per exemple, per a velocitats més petites de 30.000 km/s, és a dir 108.000.000 km/h o un 10% de la velocitat de la llum, el factor és més petit d'1,005 és a dir un 0,5% més gran que 1.
+A l'esquerra es presenta la representació gràfica de la funció que a cada fracció de la velocitat de la llum li fa correspondre el seu factor de Lorentz on es pot apreciar que al començament creix molt lentament i és al final, entre el 90% i el 100% de c quan el pendent creix ràpidament i la funció tendeix a infinit.
+
+
+== Contracció de l'espai i dilatació del temps ==
+La primera conseqüència d'interpretar la transformació de Lorentz com la fórmula que permet determinar el que mesurarà un observador a partir del que ha mesurat un altre que es mou a velocitat constant respecte del primer, és que la durada dels fets i la longitud dels objectes no és una constant independent de la velocitat relativa entre l'objecte i l'observador. Això porta que el concepte de simultaneïtat s'hagi de revisar, dos fets que per un determinat observador succeeixen simultàniament per un altre no (tret que també succeeixin exactament en el mateix punt de l'espai). També porta que, perquè es compleixi el principi de causalitat, cal imposar un límit a la velocitat màxima a la qual es poden desplaçar els senyals i en conseqüència a la velocitat màxima a què es pot desplaçar qualsevol cosa. Aquest límit és la velocitat de la llum.
+
+
+=== Contracció de l'espai ===
+
+La contracció de l'espai és el fenomen que es desprèn de la teoria de la relativitat especial en mesurar la longitud d'un objecte que es mou a una velocitat v paral·lela a la direcció en què es mesura la longitud.
+Per determinar quin valor obté un observador O₂ en mesurar un objecte que es mou a velocitat v, es parteix del fet que un observador O 1 que es mou a la mateixa velocitat respecte O₂ que l'objecte, veu l'objecte quiet, el mesura obtenint el valor l. Llavors aplicant la transformació de Lorentz als dos extrems de l'objecte i calculant la diferència de les posicions Δx1, i dels moments en què s'ha fet la mesura Δx1 s'obté:
+
+  
+    
+      
+        Δ
+        
+          x
+          
+            2
+          
+        
+        =
+        γ
+        ⋅
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        v
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Delta x_{2}=\gamma \cdot \Delta x_{1}+\gamma \cdot v\cdot \Delta t_{1}}
+  
+ (1)
+Per tant la diferència entre les posicions dels extrems depèn (com era d'esperar) de les deferències de les posicions que ha mesurat O 1 i també de la diferència dels moments en què ha fet la mesura. Com que O 1 veu a O ₂ movent-se a una velocitat de –v, la transformació de Lorentz permet obtenir:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            1
+          
+        
+        =
+        γ
+        ⋅
+        
+          
+            
+              −
+              v
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            2
+          
+        
+        +
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \Delta t_{1}=\gamma \cdot {\frac {-v}{c^{2}}}\Delta x_{2}+\gamma \cdot \Delta t_{2}}
+  
+
+Perquè la mesura de la longitud que fa O ₂ sigui correcta, ha de mesurar la posició dels dos extrems al mateix temps (altrament, com que l'objecte s'està movent, obtindria una combinació de la longitud de l'objecte i de l'espai recorregut durant el temps que passa des que mesura un extrem fins que mesura l'altre) per tant ha de ser Δt₂ = 0, és a dir, en aquest cas:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            1
+          
+        
+        =
+        γ
+        ⋅
+        
+          
+            
+              −
+              v
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \Delta t_{1}=\gamma \cdot {\frac {-v}{c^{2}}}\Delta x_{2}}
+  
+
+Substituint aquesta expressió a (1) s'obté:
+
+  
+    
+      
+        Δ
+        
+          x
+          
+            2
+          
+        
+        =
+        γ
+        ⋅
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        v
+        ⋅
+        γ
+        ⋅
+        
+          
+            
+              −
+              v
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \Delta x_{2}=\gamma \cdot \Delta x_{1}+\gamma \cdot v\cdot \gamma \cdot {\frac {-v}{c^{2}}}\Delta x_{2}}
+  
+
+Aïllant Δx₂ d'aquesta equació resulta:
+
+  
+    
+      
+        Δ
+        
+          x
+          
+            2
+          
+        
+        =
+        
+          
+            
+              Δ
+              
+                x
+                
+                  1
+                
+              
+            
+            γ
+          
+        
+      
+    
+    {\displaystyle \Delta x_{2}={\frac {\Delta x_{1}}{\gamma }}}
+  
+
+Com que l'observador O 1 és solidari a l'objecte, la mesura l que obté, s'anomena la longitud pròpia de l'objecte: Δx1 = l, anomenant l'  la longitud que s'obté mesurant l'objecte quan es mou a velocitat v, resulta que l'  = Δx₂ i
+
+  
+    
+      
+        
+          l
+          ′
+        
+        =
+        
+          
+            l
+            γ
+          
+        
+      
+    
+    {\displaystyle l'={\frac {l}{\gamma }}}
+  
+
+Si |v| < c llavors γ > 1, per tant, els objectes en moure's es contrauen en la direcció paral·lela a la seva velocitat. Aquesta és la contracció de Lorentz.
+
+Si la teoria de la relativitat és correcte, aquesta contracció no és un efecte aparent pel fet de mesurar l'objecte mentre es mou, sinó que és un fenomen real. D'acord amb la interpretació que va fer Einstein de la transformació de Lorentz, qualsevol llei de la física aplicada a qualsevol objecte es compleix agafant l'  en lloc de l pel que fa a la longitud de l'objecte.
+A l'animació de la dreta es representa l'aparent paradoxa anomenada del tren i el túnel. Si el tren i el túnel en repòs tenen exactament la mateixa longitud, un observador situat a l'andana del túnel quan veu que el tren es mou mesura una longitud més petita que la de l'andana. En canvi un observador situat al tren, com que veu que el túnel es mou, mesura una longitud més curta que la del tren. Això no és cap dificultat, tots els experiments que es facin en moviment donaran com a resultat que tots dos tenen raó. Per exemple, des dels dos extrems de l'andana es poden tirar dos objectes al mateix temps (temps mesurat des de l'andana) cap a l'altra banda del túnel mentre el tren està passant sense tocar-lo. Des dels dos extrems del tren es poden tirar fora al mateix temps (temps mesurat des del tren) dos objectes mentre està travessant el túnel, sense que cap dels dos caigui dins del túnel.
+La resolució d'aquesta aparent paradoxa prové del fet que els fets que per a un observador són simultanis, en relativitat, no ho són per a un altre. Llavors cada un, en observar els llançaments d'objectes que ha fet l'altre, els observa en instants de temps que no són simultanis. Vegeu simultaneïtat.
+
+
+=== Dilatació del temps ===
+
+Una altra conseqüència de la transformació de Lorentz és que la durada dels fenòmens depèn de la velocitat relativa entre el sistema on succeeix el fenomen i l'observador.
+Si un observador O1 es mou solidari al sistema on succeïx el fenomen pot mesurar la durada amb un únic rellotge i observar que entre el començament del fenomen i el final, ha transcorregut un temps ∆t1. Un altre observador O₂ necessita dos rellotges sincronitzats, un situat en un punt que coincideixi en la posició del sistema on es produeix el fenomen en el moment d'iniciar-se i l'altre situat en el punt on es troba en acabar-se, és a dir separats la distància recorreguda pel sistema on es produeix el fenomen.
+Aplicant la transformació de Lorentz s'obté:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            2
+          
+        
+        =
+        γ
+        ⋅
+        
+          
+            v
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Delta t_{2}=\gamma \cdot {\frac {v}{c^{2}}}\Delta x_{1}+\gamma \cdot \Delta t_{1}}
+  
+
+Però com que per l'observador O1 el sistema on transcorre el fenomen no es mou, la posició final és igual a la inicial i per tant ∆x1 = 0, en conseqüència:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            2
+          
+        
+        =
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Delta t_{2}=\gamma \cdot \Delta t_{1}}
+  
+
+Com que ∆t1 és la durada del fenomen mesurada per un observador que no es mou respecte del sistema on es produeix el fenomen, d'aquesta durada se'n diu el temps propi del fenomen. Com que si 0 < v < c llavors γ és més gran que 1 (vegeu Contracció de l'espai) Qualsevol observador en moviment respecte del sistema on es produeix el fenomen (a una velocitat més petita que c) observarà que el fenomen té una durada més gran que el seu temps propi, per això d'aquest fet se'n diu dilatació temporal.
+Aquest resultat s'ha pogut posar a prova amb l'experiment de Rossi-Hall en què es mesura la vida mitjana dels muons. La vida mitjana mesurada quan els muons es mouen a diferents velocitats respecte del laboratori s'allarga d'acord amb la dilatació del temps prevista en la teoria.
+
+
+=== Transformació d'una velocitat ===
+La contracció de l'espai i la dilatació del temps porta de manera natural a analitzar com es transforma una velocitat, és a dir, si un objecte es desplaça a una velocitat v1 en la direcció de l'eix x respecte de l'observador O1, a quina velocitat es desplaça respecte de l'observador O₂.
+El resultat s'obté expressant l'espai recorregut i el temps que tarda a recórrer-lo mesurats per l'observador O₂ en funció dels mesurats per l'observador O1 i dividint.
+Pel que fa a la component de la velocitat sobre l'eix x (l'eix de la velocitat relativa als dos observadors s'obté:
+
+  
+    
+      
+        
+          v
+          
+            x
+            2
+          
+        
+        =
+        
+          
+            
+              
+                v
+                
+                  x
+                  1
+                
+              
+              +
+              v
+            
+            
+              
+                
+                  
+                    v
+                    ⋅
+                    
+                      v
+                      
+                        x
+                        1
+                      
+                    
+                  
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle v_{x2}={\frac {v_{x1}+v}{{\frac {v\cdot v_{x1}}{c^{2}}}+1}}}
+  
+
+Fixeu-vos que en el cas que la velocitat del cos i la de l'observador tinguin el mateix sentit, en comptes de sumar-se per obtenir la velocitat mesurada per l'altre observador, la suma cal dividir-la entre un nombre que és sempre més gran que 1. Per tant el resultat és sempre més petit que el que s'obtenia en la transformació de Galileu. En el cas límit que les dues velocitats (tant la de l'observador com la de l'objecte) siguin iguals a la velocitat de la llum c, aquest factor que divideix val 2 i per tant la velocitat que mesura l'altre observador és també igual a la velocitat de la llum.
+Per a les components perpendiculars a aquesta, s'obté:
+
+  
+    
+      
+        
+          v
+          
+            y
+            2
+          
+        
+        =
+        
+          
+            
+              v
+              
+                y
+                1
+              
+            
+            
+              γ
+              
+                (
+                
+                  
+                    
+                      
+                        v
+                        ⋅
+                        
+                          v
+                          
+                            x
+                            1
+                          
+                        
+                      
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                  +
+                  1
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle v_{y2}={\frac {v_{y1}}{\gamma \left({\frac {v\cdot v_{x1}}{c^{2}}}+1\right)}}}
+  
+
+
+=== Simultaneïtat ===
+
+L'equació que permet calcular l'interval de temps mesurat per l'observador O₂ a partir de les mesures fetes per O1:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            2
+          
+        
+        =
+        γ
+        ⋅
+        
+          
+            v
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Delta t_{2}=\gamma \cdot {\frac {v}{c^{2}}}\Delta x_{1}+\gamma \cdot \Delta t_{1}}
+  
+
+Indica que el fet que dos successos siguin simultanis per a l'observador O1 (és a dir el fet que ∆t1 = 0) no implica que també ho siguin per a l'observador O₂. En funció del signe de la velocitat v seran un primer i després l'altre (per exemple donant ∆t₂ positiu) o viceversa (obtenint ∆t₂ negatiu).
+Per a un observador O₂ seran simultanis tots els successos que compleixin ∆t₂ = 0 per tant:
+
+  
+    
+      
+        0
+        =
+        γ
+        ⋅
+        
+          
+            v
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle 0=\gamma \cdot {\frac {v}{c^{2}}}\Delta x_{1}+\gamma \cdot \Delta t_{1}}
+  
+
+I aïllant ∆t1:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            1
+          
+        
+        =
+        
+          
+            
+              −
+              v
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Delta t_{1}={\frac {-v}{c^{2}}}\Delta x_{1}}
+  
+
+Que representant l'espaitemps en un sistema de coordenades cartesianes és una recta amb un pendent de -v/c. Per tant, diversos fenòmens poden ser simultanis o no per un observador depenent si estan damunt d'aquesta recta o no.
+
+
+=== Causalitat. Velocitat màxima dels senyals ===
+Que la simultaneïtat dels fets no sigui la mateixa per a tots els observadors permet imposar una condició per tal que es preservi el principi de causalitat. El Principi de causalitat estableix que una causa sempre precedeix a un efecte. El fet que certs esdeveniments puguin ser observats amb un ordre cronològic diferent per diferents observadors permetria que uns observessin primer els efectes i després les causes si no hi hagués cap restricció addicional.
+La diferència d'instants en els temps en què l'observador O₂ detecta dos esdeveniments depèn de la diferència en què els observa O1 i de la distància entre els dos esdeveniments. Perquè una causa pugui provocar un efecte a una certa distància, un senyal ha de viatjar des del lloc on és la causa fins al lloc on es produeix l'efecte.
+Si per l'observador O1 la distància entre la causa i l'efecte és de ∆x1 i el temps que passa des que es produeix la causa fins que es produeix l'efecte és ∆t1, el temps que passa per l'observador O₂ serà:
+
+  
+    
+      
+        Δ
+        
+          t
+          
+            2
+          
+        
+        =
+        γ
+        
+          
+            v
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Delta t_{2}=\gamma {\frac {v}{c^{2}}}\Delta x_{1}+\gamma \cdot \Delta t_{1}}
+  
+
+Per complir el principi de causalitat aquest valor ha de ser més gran que zero per a qualsevol observador, per tant, ha de ser:
+
+  
+    
+      
+        0
+        <
+        γ
+        
+          
+            v
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        γ
+        ⋅
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle 0<\gamma {\frac {v}{c^{2}}}\Delta x_{1}+\gamma \cdot \Delta t_{1}}
+  
+
+I per tant, com que γ ≠ 0:
+
+  
+    
+      
+        0
+        <
+        
+          
+            v
+            
+              c
+              
+                2
+              
+            
+          
+        
+        Δ
+        
+          x
+          
+            1
+          
+        
+        +
+        Δ
+        
+          t
+          
+            1
+          
+        
+      
+    
+    {\displaystyle 0<{\frac {v}{c^{2}}}\Delta x_{1}+\Delta t_{1}}
+  
+
+On v és la velocitat relativa de l'observador O1 respecte de l'observador O₂, per l'observador O1, el senyal que va des de la causa fins a l'efecte ha de recórrer una distància x1 en un temps t1, per tant anomenant vs la velocitat del senyal mesurada per l'observador O1, dividint els dos cantons de la inequació entre ∆t1, s'obté:
+
+  
+    
+      
+        
+          
+            
+              
+                0
+              
+              
+                
+                <
+                
+                  
+                    
+                      v
+                      ⋅
+                      
+                        v
+                        
+                          s
+                        
+                      
+                    
+                    
+                      c
+                      
+                        2
+                      
+                    
+                  
+                
+                +
+                1
+              
+            
+            
+              
+                −
+                1
+              
+              
+                
+                <
+                
+                  
+                    
+                      v
+                      ⋅
+                      
+                        v
+                        
+                          s
+                        
+                      
+                    
+                    
+                      c
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                1
+              
+              
+                
+                >
+                
+                  
+                    
+                      −
+                      v
+                      ⋅
+                      
+                        v
+                        
+                          s
+                        
+                      
+                    
+                    
+                      c
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  c
+                  
+                    2
+                  
+                
+              
+              
+                
+                >
+                −
+                v
+                ⋅
+                
+                  v
+                  
+                    s
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}0&<{\frac {v\cdot v_{s}}{c^{2}}}+1\\-1&<{\frac {v\cdot v_{s}}{c^{2}}}\\1&>{\frac {-v\cdot v_{s}}{c^{2}}}\\c^{2}&>-v\cdot v_{s}\\\end{aligned}}}
+  
+
+Si la velocitat del senyal i la de l'observador tenen el mateix signe aquesta desigualtat es compleix sempre, però si tenen signe contrari, ha de ser:
+
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+        >
+        
+          |
+          
+            −
+            v
+          
+          |
+        
+        ⋅
+        
+          |
+          
+            v
+            
+              s
+            
+          
+          |
+        
+      
+    
+    {\displaystyle c^{2}>\left|-v\right|\cdot \left|v_{s}\right|}
+  
+
+Però qualsevol observador pot ser portador d'un senyal, per tant, la velocitat màxima dels observadors no pot ser més gran que la velocitat màxima dels senyals, si la velocitat dels observadors es pot apropar tant com es vulgui a c, llavors la velocitat màxima dels senyals ha de ser c.
+
+
+== Altres resultats de la relativitat especial ==
+Aplicant sistemàticament el concepte de què les lleis de la física són les mateixes per a tots els observadors, la teoria de la relativitat especial porta a la conclusió de què altres magnituds físiques com la massa, la quantitat de moviment i la força també s'han de transformar en ser mesurades per observadors que es mouen a velocitat constant entre ells. Això permet una interpretació clara de les forces magnètiques i per tant, permet el desenvolupament de l'electromagnetisme directament a partir de l'electroestàtica.
+Un resultat de l'electromagnetisme (i per tant es pot considerar resultat de la teoria de la relativitat especial) és que les ones electromagnètiques exerceixen una pressió sobre els cossos que les emeten o les absorbeixen. Aquest resultat era un resultat obtingut a partir de les lleis de Maxwell abans del desenvolupament de la teoria de la relativitat. Einstein va fer servir aquest resultat per arribar a la conclusió que els objectes en emetre o absorbir ones electromagnètiques perden o guanyen massa respectivament i que les ones electromagnètiques emeses o absorbides són les que tenen aquesta massa perduda o guanyada pels cossos en emetre-les o absorbir-les. A partir d'aquesta conclusió postula l'equivalència entre la massa i l'energia.
+
+
+=== Transformació de la massa ===
+Per entendre el concepte de transformació de la massa, primer cal examinar un experiment que permeti mesurar la massa d'un objecte.
+Mesurar és comparar i per tant, mesurar la massa és comparar la massa d'un objecte patró amb la massa de l'objecte que es vol mesurar i determinar quantes vegades, la massa d'aquest objecte, és més gran que la massa patró. 0 quina fracció de la massa patró conté l'objecte que s'està mesurant.
+Un experiment que es fa servir sovint per mesurar la massa dels objectes és pesar-los en una balança. Però aquest experiment compara les forces que la gravetat de la Terra exerceix sobre els objectes. Un altre experiment que determina directament la resistència dels objectes a variar la seva quantitat de moviment (és a dir la seva massa) és un xoc inelàstic.
+Si es té l'objecte amb massa m0 en repòs respecte de l'observador i es fa xocar l'objecte amb la massa que es vol mesurar m a velocitat vi contra l'objecte patró, de forma que després del xoc tots dos objectes romanguin units (xoc inelàstic), després del xoc tots dos objectes es desplacen junts a una velocitat vf. Mesurant aquesta velocitat es pot deduir la massa m de l'objecte de la següent manera:
+Per la llei de conservació de la quantitat de moviment, la quantitat de moviment ha de ser la mateixa abans i després del xoc, per tant
+
+  
+    
+      
+        m
+        ⋅
+        
+          v
+          
+            i
+          
+        
+        =
+        
+          (
+          
+            m
+            +
+            
+              m
+              
+                0
+              
+            
+          
+          )
+        
+        ⋅
+        
+          v
+          
+            f
+          
+        
+      
+    
+    {\displaystyle m\cdot v_{i}=\left(m+m_{0}\right)\cdot v_{f}}
+  
+
+donat que la velocitat de la massa patró és zero abans del xoc i donat que, per la llei de conservació de la massa, la massa total després del xoc ha de ser igual a la suma de masses abans del xoc. A partir d'aquí s'obté
+
+  
+    
+      
+        m
+        =
+        
+          
+            
+              v
+              
+                f
+              
+            
+            
+              (
+              
+                
+                  v
+                  
+                    i
+                  
+                
+                −
+                
+                  v
+                  
+                    f
+                  
+                
+              
+              )
+            
+          
+        
+        
+          m
+          
+            0
+          
+        
+      
+    
+    {\displaystyle m={\frac {v_{f}}{\left(v_{i}-v_{f}\right)}}m_{0}}
+  
+ (2)
+
+El problema de determinar com es transforma la massa es redueix al problema de transformació de velocitats si es pot trobar un experiment de xoc inelàstic en què les velocitats abans i després del xoc siguin conegudes i la massa dels dos objectes sigui la mateixa si la mesura un observador en repòs respecte de cada un dels objectes.
+A la figura de la dreta es presenta un experiment en què dues masses iguals xoquen.
+L'observador O1 roman fix al centre de masses dels dos objectes. Les mesures de velocitats que fa s'han representat amb vectors de color verd. Per ell abans del xoc l'objecte de l'esquerra igual com l'observador O₂ es mouen a velocitat v mentre que l'objecte de la dreta es mou a velocitat -v. Després del xoc tots dos objectes queden junts i amb velocitat zero.
+L'observador O₂ abans del xoc es desplaça conjuntament amb l'objecte de l'esquerra. Les mesures de velocitats que fa s'han representat amb color vermell. Per a ell l'observador O1 es desplaça a velocitat -v i d'acord amb la llei de transformació de velocitats, l'objecte de la dreta es desplaça, abans del xoc, amb una velocitat de 
+  
+    
+      
+        
+          
+            
+              −
+              2
+              v
+            
+            
+              1
+              +
+              
+                
+                  v
+                  
+                    2
+                  
+                
+              
+              
+                /
+              
+              
+                
+                  c
+                  
+                    2
+                  
+                
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {-2v}{1+{v^{2}}/{c^{2}}\;}}}
+  
+. Després del xoc els dos objectes queden junts i solidaris amb l'observador O1, per tant l'observador O₂ els veu desplaçant-se a una velocitat de -v.
+Des del punt de vista de l'observador O₂ l'objecte de l'esquerra al començament està en repòs, per tant la seva massa m0 correspon a la massa en repòs, els dos objectes són iguals, per tant la massa de l'objecte de la dreta correspon a la massa en moviment a la velocitat vi. La velocitat v (que és la velocitat final vf) després del xoc) es pot expressar en funció de vi i dona:
+
+  
+    
+      
+        
+          v
+          
+            f
+          
+        
+        =
+        
+          
+            
+              
+                c
+                
+                  2
+                
+              
+              −
+              c
+              
+                
+                  
+                    c
+                    
+                      2
+                    
+                  
+                  −
+                  
+                    v
+                    
+                      i
+                    
+                    
+                      2
+                    
+                  
+                
+              
+            
+            
+              v
+              
+                i
+              
+            
+          
+        
+      
+    
+    {\displaystyle v_{f}={\frac {c^{2}-c{\sqrt {c^{2}-v_{i}^{2}}}}{v_{i}}}}
+  
+
+Substituint aquesta expressió a l'equació (2) s'obté la fórmula que permet calcular la massa en moviment a la velocitat v d'un objecte que té massa en repòs m0 el resultat és:
+
+  
+    
+      
+        m
+        =
+        
+          
+            
+              m
+              
+                0
+              
+            
+            
+              1
+              −
+              
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle m={\frac {m_{0}}{\sqrt {1-{\frac {v^{2}}{c^{2}}}}}}}
+  
+
+Aquesta fórmula permet calcular la massa que mesura un observador a partir de la massa que mesura un altre observador que roman en repòs respecte de l'objecte. Per trobar la fórmula que permet calcular ma massa que mesura un observador a partir de la massa que mesura un altre es pot descompondre la velocitat relativa entre l'objecte i cada un dels observadors en una component paral·lela a la velocitat relativa entre els observadors vx i un altre component perpendicular vy, llavors les fórmules que permeten calcular la massa que mesura cada observador són:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  m
+                  
+                    1
+                  
+                
+                =
+                
+                  
+                    
+                      m
+                      
+                        0
+                      
+                    
+                    
+                      1
+                      −
+                      
+                        
+                          
+                            
+                              v
+                              
+                                x
+                                1
+                              
+                              
+                                2
+                              
+                            
+                            +
+                            
+                              v
+                              
+                                y
+                                1
+                              
+                              
+                                2
+                              
+                            
+                          
+                          
+                            c
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                  m
+                  
+                    2
+                  
+                
+                =
+                
+                  
+                    
+                      m
+                      
+                        0
+                      
+                    
+                    
+                      1
+                      −
+                      
+                        
+                          
+                            
+                              v
+                              
+                                x
+                                2
+                              
+                              
+                                2
+                              
+                            
+                            +
+                            
+                              v
+                              
+                                y
+                                2
+                              
+                              
+                                2
+                              
+                            
+                          
+                          
+                            c
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&m_{1}={\frac {m_{0}}{\sqrt {1-{\frac {v_{x1}^{2}+v_{y1}^{2}}{c^{2}}}}}}\\&m_{2}={\frac {m_{0}}{\sqrt {1-{\frac {v_{x2}^{2}+v_{y2}^{2}}{c^{2}}}}}}\\\end{aligned}}}
+  
+
+Aplicant les fórmules de transformació de la velocitat s'obté que:
+
+  
+    
+      
+        
+          
+            
+              
+                v
+                
+                  x
+                  2
+                
+                
+                  2
+                
+              
+              +
+              
+                v
+                
+                  y
+                  2
+                
+                
+                  2
+                
+              
+            
+            
+              c
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                v
+                
+                  y
+                  1
+                
+                
+                  2
+                
+              
+              +
+              
+                γ
+                
+                  2
+                
+              
+              
+                
+                  (
+                  
+                    
+                      v
+                      
+                        x
+                        1
+                      
+                    
+                    +
+                    v
+                  
+                  )
+                
+                
+                  2
+                
+              
+            
+            
+              
+                c
+                
+                  2
+                
+              
+              
+                γ
+                
+                  2
+                
+              
+              
+                
+                  (
+                  
+                    
+                      
+                        
+                          v
+                          ⋅
+                          
+                            v
+                            
+                              x
+                              1
+                            
+                          
+                        
+                        
+                          c
+                          
+                            2
+                          
+                        
+                      
+                    
+                    +
+                    1
+                  
+                  )
+                
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {v_{x2}^{2}+v_{y2}^{2}}{c^{2}}}={\frac {v_{y1}^{2}+\gamma ^{2}\left(v_{x1}+v\right)^{2}}{c^{2}\gamma ^{2}\left({\frac {v\cdot v_{x1}}{c^{2}}}+1\right)^{2}}}}
+  
+
+A partir d'aquí s'obté que:
+
+  
+    
+      
+        
+          m
+          
+            2
+          
+        
+        =
+        
+          m
+          
+            1
+          
+        
+        ⋅
+        γ
+        
+          [
+          
+            1
+            +
+            
+              (
+              
+                
+                  
+                    
+                      v
+                      
+                        x
+                        1
+                      
+                    
+                    v
+                  
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+              )
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle m_{2}=m_{1}\cdot \gamma \left[1+\left({\frac {v_{x1}v}{c^{2}}}\right)\right]}
+  
+
+
+=== Transformació de la quantitat de moviment ===
+La quantitat de moviment d'un cos és el producte de la seva massa per la seva velocitat, per tant la transformació de la quantitat de moviment és un resultat immediat a partir de les transformacions d'aquestes dues magnituds.
+Com que la velocitat es transforma de manera diferent depenent de si es tracta de la component paral·lela al moviment relatiu entre els observadors o de les components perpendiculars a aquesta, en el cas de la quantitat de moviment, també s'obtenen dues transformacions, una per cada un d'aquests dos casos, si la component px és la paral·lela a la velocitat relativa entre els observadors i la py és la perpendicular s'obté:
+
+  
+    
+      
+        
+          p
+          
+            x
+            2
+          
+        
+        =
+        γ
+        ⋅
+        
+          (
+          
+            
+              p
+              
+                x
+                1
+              
+            
+            +
+            
+              m
+              
+                1
+              
+            
+            ⋅
+            v
+          
+          )
+        
+      
+    
+    {\displaystyle p_{x2}=\gamma \cdot \left(p_{x1}+m_{1}\cdot v\right)}
+  
+
+  
+    
+      
+        
+          p
+          
+            y
+            2
+          
+        
+        =
+        
+          p
+          
+            y
+            1
+          
+        
+         
+      
+    
+    {\displaystyle p_{y2}=p_{y1}\ }
+  
+
+
+=== Transformació de la força. Força magnètica ===
+La segona llei de Newton diu que la variació de la quantitat de moviment d'un cos és proporcional a la força aplicada (en paraules de Newton: doblada en produirà el doble i triplicada en produirà el triple) i al temps durant el qual s'aplica aquesta força (en paraules de Newton: tant si s'aplica d'un sol cop com si s'aplica gradualment i progressivament). En notació algebraica moderna això s'expressa amb la fórmula:
+
+  
+    
+      
+        F
+        ⋅
+        Δ
+        t
+        =
+        Δ
+        
+          (
+          
+            m
+            ⋅
+            v
+          
+          )
+        
+      
+    
+    {\displaystyle F\cdot \Delta t=\Delta \left(m\cdot v\right)}
+  
+
+Com que en teoria de la relativitat la massa i la velocitat depenen de la velocitat relativa entre els observadors, per tal que es continuï complint per a tots ells la segona llei de Newton, cal imposar que la força es transformi de forma adequada. De fet és el mateix que considerar que la segona llei de Newton és la definició de la magnitud d'una força. El fet de mesurar l'augment de la quantitat de moviment que provoca durant un temps és la forma de mesurar la magnitud de la força. El fet que la llei de Newton sigui quelcom que va més enllà d'una mera definició apareix en considerar que la força es produeix per una causa (per exemple la posició en un determinat punt d'un camp provocat per una massa gravitatòria o la deformació d'un objecte elàstic) Una manera de duplicar la força és duplicar l'efecte o fer-lo actuar durant el doble del temps, la llei diu que la força que es mesurarà fent això serà el doble.
+Llavors per mesurar una força es pot dur a terme un experiment que consisteix a aplicar-la a un objecte durant un temps, mesurar el temps durant el qual s'ha aplicat, mesurar l'augment de quantitat de moviment que ha provocat i obtenir el valor de la magnitud de la força amb la següent equació:
+
+  
+    
+      
+        F
+        =
+        
+          
+            
+              Δ
+              
+                (
+                
+                  m
+                  ⋅
+                  v
+                
+                )
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+      
+    
+    {\displaystyle F={\frac {\Delta \left(m\cdot v\right)}{\Delta t}}}
+  
+
+Aplicant aquesta equació a la quantitat de moviment i al temps mesurats per dos observadors s'obté com es veu transformada la força en ser mesurada per observadors que es mouen amb una velocitat relativa v contant entre ells. Com que la quantitat de moviment té una transformació diferent si es tracta de la component paral·lela a la velocitat relativa entre els observadors i un altre si es tracta de la component perpendicular, en el cas de la força s'obtindrà resultats diferents en aquestes dues direccions:
+
+  
+    
+      
+        
+          F
+          
+            2
+            x
+          
+        
+        =
+        
+          F
+          
+            1
+            x
+          
+        
+        +
+        
+          F
+          
+            1
+            y
+          
+        
+        ⋅
+        
+          v
+          
+            1
+            y
+          
+        
+        ⋅
+        
+          
+            v
+            
+              v
+              ⋅
+              
+                v
+                
+                  1
+                  x
+                
+              
+              +
+              
+                c
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle F_{2x}=F_{1x}+F_{1y}\cdot v_{1y}\cdot {\frac {v}{v\cdot v_{1x}+c^{2}}}}
+  
+
+  
+    
+      
+        
+          F
+          
+            2
+            y
+          
+        
+        =
+        
+          
+            
+              F
+              
+                y
+                1
+              
+            
+            
+              γ
+              
+                (
+                
+                  1
+                  −
+                  
+                    
+                      
+                        v
+                        ⋅
+                        
+                          v
+                          
+                            1
+                            x
+                          
+                        
+                      
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle F_{2y}={\frac {F_{y1}}{\gamma \left(1-{\frac {v\cdot v_{1x}}{c^{2}}}\right)}}}
+  
+
+
+=== Equivalència de la massa i l'energia ===
+Einstein dedueix l'equivalència entre la massa i l'energia el 1905 a partir del resultat de la teoria electromagnètica de què un cos que emet o absorbeix un pols de radiació electromagnètica experimenta un impuls.
+Einstein planteja un cos en repòs amb massa M. Si el cos s'observa en un sistema de referència que es mou amb una velocitat v petita, ja no està en repòs i en aquest sistema de referència té una quantitat de moviment Mv.
+Einstein suposa que el cos emet dos polsos de llum un cap a l'esquerra i l'altre cap a la dreta, cada un porta una quantitat d'energia igual a E/2. Com que els dos polsos són iguals, l'objecte roman en repòs després de l'emissió, ja que rep el mateix impuls pels dos cantons.
+Però si el mateix procés s'observa en un sistema de referència que es mou amb velocitat v cap a l'esquerra, el pols que es mou a l'esquerra es desplaçarà cap al vermell mentre que el pols es mou cap a la dreta es desplaçarà cap al blau. El llum blau transmet més impuls que el vermell, de manera que l'impuls del llum al sistema de referència en moviment no està equilibrat. El llum està transmetent un impuls net cap a la dreta.
+L'objecte no ha canviat la seva velocitat abans o després de l'emissió. Encara que en aquest sistema de referència ha perdut part de la seva quantitat de moviment cap a la dreta a causa de l'impuls aplicat per la llum. L'única manera que pot perdre quantitat de moviment és perdent massa.
+La velocitat és petita, per tant la llum que es mou cap a la dreta es desplaça cap al blau una quantitat igual al efecte Doppler no relativista (1 - v/c). L'impuls de la llum és la seva energia es dividia per c, i augmenta en un factor de v/c. Així la llum que es mou cap a la dreta transporta un impuls extra 
+  
+    
+      
+        Δ
+        P
+      
+    
+    {\displaystyle \Delta P}
+  
+ donat per:
+
+  
+    
+      
+        Δ
+        P
+        =
+        
+          
+            v
+            c
+          
+        
+        
+          
+            E
+            
+              2
+              c
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \Delta P={v \over c}{E \over 2c}.\,}
+  
+
+El llum que es mou cap a l'esquerra transmet una mica menys d'impuls, en la mateixa quantitat 
+  
+    
+      
+        Δ
+        P
+      
+    
+    {\displaystyle \Delta P}
+  
+. Així l'impuls total cap a l'esquerra aplicat pels polsos de llum és dues vegades 
+  
+    
+      
+        Δ
+        P
+      
+    
+    {\displaystyle \Delta P}
+  
+.
+
+  
+    
+      
+        2
+        Δ
+        P
+        =
+        v
+        
+          
+            E
+            
+              c
+              
+                2
+              
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle 2\Delta P=v{E \over c^{2}}.\,}
+  
+
+La quantitat de moviment de l'objecte en el sistema de referència que es mou s'ha de reduir en aquesta quantitat després de l'emissió:
+
+  
+    
+      
+        
+          P
+          ′
+        
+        =
+        M
+        v
+        −
+        2
+        Δ
+        P
+        =
+        (
+        M
+        −
+        
+          
+            E
+            
+              c
+              
+                2
+              
+            
+          
+        
+        )
+        v
+        .
+        
+      
+    
+    {\displaystyle P'=Mv-2\Delta P=(M-{E \over c^{2}})v.\,}
+  
+
+Per tant la variació de la massa de l'objecte és igual a l'energia total perduda dividida entre 
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle c^{2}}
+  
+. Com que qualsevol emissió d'energia es pot dur a terme en un procés en dos passos, primer l'energia s'emet en forma de llum i després la llum es transforma en qualsevol altra forma d'energia, qualsevol emissió d'energia ha de comportar una disminució de la massa. De forma similar qualsevol absorció d'energia ha d'anar acompanyada d'un augment de la massa. Einstein conclou que la massa d'un cos és una mesura del seu contingut d'energia.
+Fixeu-vos que el fet de considerar la velocitat petita no treu exactitud al raonament, de fet es pot considerar infinitesimal, amb la qual cosa el resultat és exacte, llavors els processos es poden considerar decomposts en infinits subprocessos infinitesimals. Fixeu-vos també que en aquest resultat no s'ha emprat per a res la teoria de la relativitat de forma directa. En considerar la velocitat petita es fan servir les fórmules sense relativitat. Però indirectament és una conseqüència de la teoria de la relativitat en la mesura que 
+l'electromagnetisme se'n deriva de manera natural i per tant l'impuls provocat pels polsos de llum.
+L'equivalència entre la massa i l'energia no s'ha d'interpretar com que la massa i l'energia es poden transformar mútuament sinó que són dues formes d'observar la mateixa cosa. Mesurar la massa d'un objecte és una manera de mesurar la seva energia. Si en un procés, un objecte emet energia i un altre l'absorbeix en mesurar la disminució de massa del primer s'obté el mateix resultat que en mesurar l'augment de massa del segon i multiplicant-la per c² s'obté la quantitat d'energia transferida.
+
+
+== Espai de Minkowski ==
+
+La transformació de Lorentz permet calcular la posició i el temps en què un observador detecta un fet puntual a partir de les dades de la posició i el temps en què ha detectat aquest mateix fet puntual un altre observador. Aquesta transformació, per cada velocitat relativa entre els dos observadors és una aplicació lineal. L'expressió matemàtica que adopta aquesta aplicació lineal és la següent:
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      
+                        x
+                      
+                      ′
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      
+                        t
+                      
+                      ′
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                
+
+                
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                
+              
+              
+              
+              ╱
+              
+              
+              
+                
+
+                
+                
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                
+                  1
+                
+                
+                  −
+                  v
+                
+              
+              
+                
+                  
+                    
+                      
+                        −
+                        v
+                      
+                      
+                        c
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  1
+                
+              
+            
+          
+          )
+        
+        
+          (
+          
+            
+              
+                
+                  x
+                
+              
+              
+                
+                  t
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{matrix}{{x}'}\\{{t}'}\\\end{matrix}}\right)={\frac {1}{\sqrt {1-{}^{v^{2}}\!\!\diagup \!\!{}_{c^{2}}\;}}}\left({\begin{matrix}1&-v\\{\frac {-v}{c^{2}}}&1\\\end{matrix}}\right)\left({\begin{matrix}x\\t\\\end{matrix}}\right)}
+  
+
+On x, i t són la posició i el temps mesurats pel primer observador i x i t són els mesurats pel segon, v és la velocitat del segon observador respecte del primer i c és la velocitat de la llum. Aquesta equació parteix de la hipòtesi que els orígens dels sistemes de coordenades dels dos observadors coincideixen (en l'instant inicial t=t'=0 el punt de x=0 coincideix amb el punt x'=0)
+En aquesta equació, l'espai i el temps tenen un paper que no és simètric, si es fa el canvi de coordenades:
+
+  
+    
+      
+        
+          t
+          
+            m
+          
+        
+        =
+        i
+        c
+        t
+        
+        
+          
+            t
+          
+          
+            m
+          
+          ′
+        
+        =
+        i
+        c
+        
+          t
+          ′
+        
+      
+    
+    {\displaystyle t_{m}=ict\quad {t}'_{m}=ict'}
+  
+
+On i és 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}}
+  
+, l'aplicació adopta una forma especialment simètrica:
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      
+                        x
+                      
+                      ′
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      t
+                    
+                    
+                      m
+                    
+                    ′
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          c
+                          
+                            2
+                          
+                        
+                        
+                          
+                            c
+                            
+                              2
+                            
+                          
+                          −
+                          
+                            v
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          −
+                          
+                            v
+                            
+                              2
+                            
+                          
+                        
+                        
+                          
+                            c
+                            
+                              2
+                            
+                          
+                          −
+                          
+                            v
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      
+                        
+                          −
+                          
+                            v
+                            
+                              2
+                            
+                          
+                        
+                        
+                          
+                            c
+                            
+                              2
+                            
+                          
+                          −
+                          
+                            v
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          c
+                          
+                            2
+                          
+                        
+                        
+                          
+                            c
+                            
+                              2
+                            
+                          
+                          −
+                          
+                            v
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        
+          (
+          
+            
+              
+                
+                  x
+                
+              
+              
+                
+                  
+                    t
+                    
+                      m
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{matrix}{{x}'}\\{t}'_{m}\\\end{matrix}}\right)=\left({\begin{matrix}{\sqrt {\frac {c^{2}}{c^{2}-v^{2}}}}&{\sqrt {\frac {-v^{2}}{c^{2}-v^{2}}}}\\{\sqrt {\frac {-v^{2}}{c^{2}-v^{2}}}}&{\sqrt {\frac {c^{2}}{c^{2}-v^{2}}}}\\\end{matrix}}\right)\left({\begin{matrix}x\\t_{m}\\\end{matrix}}\right)}
+  
+
+Fixeu-vos que si no s'afegeix el component i al canvi de variables les velocitats v al quadrat queden positives al numerador i negatives al denominador, no assolin-se la simetria que es busca.
+Amb aquest canvi de variables, afegint la coordenada del temps (afectat per aquest canvi de variable) a cada punt de l'espai s'obté un nou conjunt de punts, aquest conjunt s'anomena espai de Minkowski. La figura representa aquesta geometria.
+En aquest espai es defineix la distància igual que en l'espai euclidià: la distància entre dos punts és igual a l'arrel quadrada de la suma dels quadrats de les diferències de les seves coordenades. Però com que el temps està multiplicat per i existeix una regió particular, on el quadrat de la distància posseeix una propietat especial: és negatiu. La distància d'aquesta teoria no és sempre positiva.
+Un vector de coordenades (x,y,z, t) té per mòdul x²+y²+z²-c².t². Hermann Minkowski 1864-1909 desenvolupa un sistema matemàtic basat en aquests principis el 1907 en un article titulat Espai-temps, i l'aplica a la relativitat l'any següent.
+Fixeu-vos que a l'espai de Minkowski els punts es poden identificar amb objectes de dimensió molt petita i de durada molt petita. Això és una diferència molt gran amb els punts de l'espai euclidià en què els punts es poden identificar amb objectes de dimensió molt petita però de durada infinita.
+Les distàncies en aquest espai poden ser positives, zero o imaginaries. En l'espai euclidià, els si dos punts estan a distància zero són el mateix. En l'espai de Minkowski si dos punts estan a distància zero, en cert sentit estan a tocar (encara que estiguin separats milions de quilòmetres) però no tenen per què ser el mateix.
+El con de la figura representa l'univers per a un observador en el punt A. El punt C està a una distància positiva, per arribar-hi caldria una velocitat superior a la de la llum, cosa que en el context d'aquesta teoria no és realitzable. És doncs inobservable i no pot tenir cap influència directa o indirecta sobre l'observador. El punt B és en el que es diu el con de llum, és un punt possible, podrà interaccionar amb l'observador (rebent senyals a la velocitat de la llum).
+Els punts que estan a distància zero són aquells pels quals pot passar un pols de llum. Des del punt de vista d'un observador que viatgi amb la llum, a causa de la contracció de l'espai, la distància entre aquests punts és zero. De certa manera la teoria de la relativitat resol l'antic problema de l'horror vacui i de les accions a distància i l'espai de Minkowski ho recull: Les accions a distància (en cert sentit) no existeixen, totes les accions (en aquest cert sentit) són de contacte. Si un electró d'un àtom a la superfície del Sol emet un fotó que viatja fins a la Terra i és absorbit per un altre electró d'un material semiconductor d'una placa solar, des del punt de vista d'un observador fix a la Terra, una ona electromagnètica ha viatjat per l'espai buit durant un temps i ha estat absorbida per la placa de la Terra, des del punt de vista d'un observador que viatja amb la llum, l'electró de l'àtom de la superfície solar i el del semiconductor de la placa solar estan a distància zero i la interacció entre ells és instantània. En l'espai de Minkowski la distància és zero per tots els observadors. Pel que està a la Terra és zero perquè de la distància que els separa en l'espai euclidià es resta el temps que els separa multiplicat per la velocitat de la llum (de fet, de la distància al quadrat li resta el temps al quadrat multiplicat per la velocitat de la llum al quadrat i després extreu l'arrel quadrada del resultat, però quan el resultat és zero tant se val restar quadrats que valors). Pel que viatja amb la llum és zero perquè tant el temps com l'espai que els separa són zero.
+Els punts que estan a distància positiva són tals que la llum que surt d'un no hi és a temps d'arribar a l'altre. La distància que els separa és més gran que la que pot recórrer la llum durant els temps que els separa. Per exemple, tots els punts de l'espai euclidià en el present per un observador determinat estan a la mateixa distància positiva en l'espai de Minkowski que en l'espai euclidià perquè per aquest observador el temps que els separa és zero. Per a un observador que es mou respecte d'aquest, la distància en l'espai euclidià és més gran però com que ja no són simultanis la diferència de temps compensa l'augment de distància en l'espai euclidià i la distància en l'espai de Minkwski es manté constant. Per a tots els parells de punts de l'espai de Minkowski que estiguin a distància positiva entre ells hi ha un sistema de referència en el que es troben en el mateix temps i en el que la seva distància en l'espai euclidià és igual a la distància en l'espai de Minkowski.
+Si per un determinat observador dos punts estan en la mateixa posició de l'espai euclidià però separats per un determinat període, la distància entre ells és un nombre imaginari perquè la distància que pot recórrer la llum en el temps que els separa és més gran que l'espai que els separa. Per a un observador que es mou respecte d'aquest, la separació en el temps és més gran però com que ja no estan a la mateixa posició de l'espai la diferència es compensa i la distància de Minkowski és la mateixa. Per a tots els parells de punts tals que la distància que els separa és més petita que la que pot recórrer la llum en el temps que els separa, existeix un observador per al qual estan en la mateixa posició de l'espai i només estan separats per un determinat període.
+En el cas que interessa Minkowski, els endomorfismes que tradueixen les lleis físiques d'un observador a un altre observador, tenen un paper important; són els que verifiquen l'equació 
+  
+    
+      
+        <
+        u
+        (
+        x
+        )
+        ,
+        u
+        (
+        y
+        )
+        >=<
+        x
+        ,
+        y
+        >
+      
+    
+    {\displaystyle <u(x),u(y)>=<x,y>}
+  
+, on 
+  
+    
+      
+        <
+        ,
+        >
+      
+    
+    {\displaystyle <,>}
+  
+ és la forma bilineal que descriu la geometria considerada. Aquests endomorfismes deixen la geometria invariant, corresponen en una modelització euclidiana a les isometries. En la geometria de la relativitat, 1 és valor propi i el seu espai propi associat és de dimensió 3 i i.c és un valor propi amb subespai propi associat de dimensió 1, on i designa la unitat imaginaria i c la celeritat de la llum. Es parla de signatura de Sylvester (3,1). Totes les lleis físiques han de ser invariants per aquests endomorfismes. Aquests endomorfismes formen una estructura de grup, anomenat grup especial unitari, la relativitat torna a escriure la física en lleis que resulten invariants pel grup especial unitari de dimensió 4 i de signatura (3,1).
+Es pot veure que les geodèsiques amb mesura zero formen un con dual:
+
+definit per l'equació:
+
+  
+    
+      
+        d
+        
+          s
+          
+            2
+          
+        
+        =
+        0
+        =
+        d
+        
+          x
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        d
+        
+          x
+          
+            2
+          
+          
+            2
+          
+        
+        −
+        
+          c
+          
+            2
+          
+        
+        d
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle ds^{2}=0=dx_{1}^{2}+dx_{2}^{2}-c^{2}dt^{2}}
+  
+
+, o
+
+  
+    
+      
+        d
+        
+          x
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        d
+        
+          x
+          
+            2
+          
+          
+            2
+          
+        
+        =
+        
+          c
+          
+            2
+          
+        
+        d
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle dx_{1}^{2}+dx_{2}^{2}=c^{2}dt^{2}}
+  
+
+L'equació anterior és la de cercle amb r=c**dt.
+Si s'estén l'anterior a les tres dimensions espacials, les geodèsiques nul·les són esferes concèntriques, amb radi = distancia = c*(+ o -)temps.
+
+  
+    
+      
+        d
+        
+          s
+          
+            2
+          
+        
+        =
+        0
+        =
+        d
+        
+          x
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        d
+        
+          x
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        d
+        
+          x
+          
+            3
+          
+          
+            2
+          
+        
+        −
+        
+          c
+          
+            2
+          
+        
+        d
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle ds^{2}=0=dx_{1}^{2}+dx_{2}^{2}+dx_{3}^{2}-c^{2}dt^{2}}
+  
+
+  
+    
+      
+        d
+        
+          x
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        d
+        
+          x
+          
+            2
+          
+          
+            2
+          
+        
+        +
+        d
+        
+          x
+          
+            3
+          
+          
+            2
+          
+        
+        =
+        
+          c
+          
+            2
+          
+        
+        d
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle dx_{1}^{2}+dx_{2}^{2}+dx_{3}^{2}=c^{2}dt^{2}}
+  
+
+
+== Indicis de la teoria de la relativitat general: Conservació de l'energia cinètica ==
+En la relativitat especial, la geometria no roman constant quan hi ha implicada una acceleració (δx2/δ t2), el que comporta l'aplicació d'una força (F=dt.), i en conseqüència un canvi d'energia. Aquests factors indicaven la necessitat d'una teoria més àmplia que permetés estudiar les relacions de transformació entre sistemes de referència no inercials o sotmesos a l'acció de forces. Aquests indicis van dur finalment a la formulació de la teoria de la relativitat general, en la qual la curvatura intrínseca de l'espaitemps és directament proporcional a la densitat d'energia en aquest punt.
+
+
+== Modificacions de la relativitat especial ==
+A començament del segle xxi han estat postulades un cert nombre de versions modificades de la RE.
+
+
+== Tests de postulats de la relativitat especial ==
+Experiment Michelson-Morley – arrossegament de l'èter.
+Experimento Hamar – obstrucció del flux de l'èter.
+Experiment Trouton-Noble - torque en un condensador produït per l'arrossegament de l'èter.
+Experiment Kennedy-Thorndike – contracció del temps.
+Experiment sobre les formes d'emissió.
+
+
+== Vegeu també ==
+Taquió
+
+
+== Referències i notes ==
+
+
+== Bibliografia ==
+Einstein en català Einstein, Albert (1905). Barcelona, 1998, Edicions de la Revista de Física.
+Einstein, Albert (1916). La teoria de la relativitat i altres textos, Barcelona, 2000, Institut d'Estudis Catalans, Editorial Pòrtic, Eumo Editorial, Clàssics de la Ciència, IV.
+Relativitat especial i electrodinàmica clàssica Llosa Carrasco, Josep / Molina Compte, Alfred. Edicions Universitat de Barcelona.
+On the electrodinamics of moving bodies A. Einstein 30 de juny de 1905 (Traducció a l'anglès a partir de l'original en alemany) (en anglès)
+Does inertia of a body depend upon its Energy-content? A. Einstein 27 de setembre de 1905 (Basat en la traducció a l'anglès a partir de l'original en alemany) (en anglès)
+Reflexions a propòsit de la teoria dels quanta (Simone Weil)
+
+
+== Enllaços externs ==
+
+http://www.hverdugo.cl/relatividad.htm Arxivat 2005-12-30 a Wayback Machine.
+http://www-gap.dcs.st-and.ac.uk/~history/HistTopics/Special_relativity.html
+http://www.ucm.es/info//hcontemp/leoc/hciencia.htm

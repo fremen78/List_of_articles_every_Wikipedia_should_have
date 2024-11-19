@@ -1,0 +1,358 @@
+Teoria e numrave është një ndër disiplinat më të aplikuara në matematikë. Ashtu si edhe shumë degë tjera të matematikes, teoria e numrave gjenë zbatim në jetën e përditshme, përshembull në shkenca kompjuterike dhe në kriptografi. Objektiv kryesor i teorisë së numrave është studimi i numrave të plotë më saktësisht studimin e numrave natyror dhe vetitë e tyre si dhe mardheniet që i posedojnë ato. Kjo disipline është mjaftë e gjerë prandaj edhe për studim më të leht ndahet në tre drejtime të tjera të cilat e marrin emrin e tyre varësisht nga instrumentet e matematike të cilat i përdorin:
+Teoria Klasike e Numrave e cila përdor metoda krejtësisht të pastra teorike numerike.
+Teoria Analitike e Numrave e cila operon me metodat bazë të analizës matematike e veçanërisht me metodat bazë të funksioneve komplekse.
+Teoria Algjebrike e Numrave e cila operon me metoda totalisht algjebrike dhe veçanërisht me konceptin e idealeve dhe fushave algjebrike.
+Teoria Gjeometrike e Numrave është pjesa e teorisë së numrave e cila përdor gjeometrinë për studimin e numrave algjebrikë.
+Disa koncepte kryesore të Teorisë së numrave janë studimi i numrave të thjeshtë, plotpjestueshmëria, rrënjet primitive, format kuadratike, ekuacionet e diofantit, thyesat e vazhdueshme, implementimi i saj në shkencat e tjera, etj.  
+Një fakt interesant: me anë të thyesave të vazhdueshme është vërtetuar se pianoja nuk mund të akordohet në menyrë perfekte.
+
+
+== Plotpjestueshmëria dhe pjestimi me mbetje ==
+Nga pjestimi i një numri të plotë me një numër të plotë pozitiv mund të përfitojmë dy numra: herësin dhe mbetjen. Puna me këta numra na dërgon tek një term i rëndësishëm tek aritmetika modulare, e cila luan një rol të rëndësishëm në matematikë dhe që gjen zbatim edhe në gjithë shkencën kompjuterike. Disa aplikime të rëndësishme të aritmetikës modulare janë:  gjenerimi i numrave pseudorandom, caktimi i vendndodhjeve të kujtesës së kompjuterit për skedarët, ndërtimi i shifrave kontrolluese dhe enkriptimi i mesazheve.
+
+
+=== Pjestimi ===
+Përkufizim: Nëse a dhe b janë numra të plotë me a ≠ 0, themi se a plotpjestohet nga b nëse ka një numër të plotë c të tillë që b = ac (ose ekuivalente, nëse b a janë numra të plotë). Kur a pjesëton b, themi se a është një faktor ose pjesëtues i b, dhe se b është një shumëfish i a. Shënimi a ∣ b tregon se a plotjestohet me b. Ne shkruajmë a̸ | b kur a nuk e plotpjeston b.
+Shënim: a ∣ b mund të shprehim duke përdorur kuantifikatorët si ∃c(ac = b).
+
+
+= Aritmetika modulare =
+Në matematikë, aritmetika modulare është një sistem aritmetik për numra të plotë, ku numrat "mbështjellen" kur arrijnë një vlerë të caktuar, të quajtur modul. Qasja moderne ndaj aritmetikës modulare u zhvillua nga Carl Friedrich Gauss në librin e tij Disquisitiones Arithmeticae, botuar në 1801.
+Përkufizim: Nëse a dhe b janë numra të plotë dhe m është një numër i plotë pozitiv, atëherë a është kongruent me b modul m. Ne përdorim shënimin a ≡ b (mod m) për të treguar se a është kongruente me b modulin m. Themi se a ≡ b (mod m) është një kongruencë dhe se m është moduli i saj (moduli shumës). Nëse a dhe b nuk janë kongruentë të modulit m, shkruajmë a ≢ b (mod m).
+Bashkësia e të gjithë numrave të plotë kongruentë me një numër të plotë një modul m quhet klasa e kongruencës së një moduli m
+
+Duhet të kemi shumë kujdes kur të jemi duke punuar me kongruencat. Disa veti që mund të presim të jenë të vërteta nuk janë të vlefshme. Për shembull, nëse ac ≡ bc (mod m), kongruenca a ≡ b (mod m) mund të jetë e rreme. Në mënyrë të ngjashme, nëse a ≡ b (mod m) dhe c ≡ d (mod m), kongruenca ac ≡ bd (mod m) mund të jetë e pavlefshme.
+
+
+=== Moduli aritmetik m ===
+Le të përcaktojmë veprime aritmetike në Zm, bashkësinë e numrave të plotë jonegativë më të vegjël se m, pra bashkësinë {0, 1, … , m − 1}. Në veçanti, ne përcaktojmë mbledhjen e këtyre numrave të plotë, të shënuar me +m me a +mb = (a + b) mod m, ku mbledhja në anën e djathtë të këtij ekuacioni është mbledhja e zakonshme e numrave të plotë, dhe ne përcaktojmë shumëzimin e këtyre numrave të plotë, të shënuar me ⋅m me një a ⋅mb = (a ⋅ b) mod m, ku shumëzimi në anën e djathtë të këtij ekuacioni është shumëzimi i zakonshëm i numrave të plotë. Veprimet +m dhe ⋅m quhen moduli m i mbledhjes dhe shumëzimit dhe kur përdorim këto veprime, thuhet se bëjmë modulin aritmetik m.
+Veprimet +m dhe ⋅m plotësojnë shumicën e vetive të mbledhjes dhe shumëzimit të zakonshëm të numrave të plotë. Në veçanti mund të themi se ato plotësojnë këto veti:
+Mbylljes Nëse a dhe b i përkasin Zm, atëherë a +m b dhe a ⋅m b i përkasin Zm.
+Asociative Nëse a, b dhe c i përkasin Zm, atëherë (a +mb) +mc = a +m(b +mc) dhe (a ⋅mb) ⋅mc = a ⋅m(b ⋅mc).
+Komutative Nëse a dhe b i përkasin Zm, atëherë a +mb = b +ma dhe a ⋅mb = b ⋅ma. Elementet e identitetit Elementet 0 dhe 1 janë përkatësisht elementë identifikues për modulin m të mbledhjes dhe shumëzimit. Kjo do të thotë, nëse a i përket Zm, atëherë a +m 0 = 0 +ma = a dhe a ⋅m1 = 1 ⋅ma = a.
+Inverse Nëse a ≠ 0 i takon Zm, atëherë m − a është një invers aditiv i një moduli m dhe 0 është inversi i tij shtesë. Kjo do të thotë, a +m(m − a) = 0 dhe 0 +m0 = 0.
+Distributive (Shpërndarjes) Nëse a, b dhe c i përkasin Zm, atëherë a ⋅m(b +mc) = (a ⋅mb) +m(a ⋅mc) dhe (a +mb) ⋅mc = (a ⋅mc) +m(b ⋅mc).
+Këto veti rrjedhin nga vetitë që kemi zhvilluar për kongruencat dhe mbetjet modulo m, së bashku me vetitë e numrave të plotë. Vini re se ne kemi renditur vetinë që çdo element i Zm-së ka një inverse shtesë, por nuk është përfshirë asnjë veti analoge për inverset shumëzuese. Kjo ndodh sepse inverset shumëzuese nuk ekzistojnë gjithmonë modulo m. Për shembull, nuk ka invers shumëzues të 2 modulit 6.
+Shënim: Për shkak se Zm me veprimet e modulit të mbledhjes dhe shumëzimit i plotëson vetitë e listuara, Zm me mbledhje modulare thuhet se është një grup komutativ dhe Zm me të dyja këto operacione thuhet se është një unazë komutative.
+Shënim: Bashkësia e numrave të plotë me mbledhje dhe shumëzim të zakonshëm formon gjithashtu një unazë komutative.
+
+
+== Përfaqësimi i numrave të plotë ==
+
+
+=== Përfaqësimi i numrave të plotë ===
+Në jetën e përditshme ne përdorim sistemin dhjetor për të shprehur numrat e plotë. Në sistem dhjetor, një numër i plotë n shkruhet si një shumë e formës ak10k + ak−110(k−1) + ⋯ + a110 + a0, ku aj është një numër i plotë me 0 ≤ aj ≤ 9 për j = 0, 1, … , k . Për shembull, 762 përdoret për të treguar 7 ⋅ 102 + 6 ⋅ 10 + 2. Megjithatë, shpesh her mund të vërejmë që përdorimi i bazave të tjera mund të jetë më i përshtatshëm. Shkembulli konkret, kompjuterët zakonisht përdorin sistemin binar (me bazë 2) kur kryejnë aritmetikë , dhe sistemi oktal (baza 8) ose heksadecimal (baza 16) kur shprehen karaktere, si shkronja ose shifra. Ne mund të përdorim çdo numër të plotë më të madh se 1 si bazë kur shprehim numra të plotë.
+Sistemi Binar Zgjedhja e 2 si bazë jep sistem binarë të numrave të plotë. Në sistemin binar, çdo shifër është ose 0 ose 1. Me fjalë të tjera, sistemi binar i një numri të plotë është vetëm një varg bitësh. Sistemet binare (dhe sistemet përkatëse që janë variante të sistemeve binare) përdoren nga kompjuterët për të përfaqësuar dhe bërë aritmetikë me numra të plotë.
+Sistemi Oktal dhe Heksadecimal Ndër bazat më të rëndësishme në shkencën kompjuterike janë baza 2, baza 8 dhe baza 16. Sistemi me bazë 8 quhet sistem oktal dhe sistem me bazë 16 janë sistemet heksadecimale.
+Konvertimi i bazave Për të bërë konvertimin nga një bazë në tjetrën kemi një algoritëm për ndërtimin e sistemit të bazës b të një numri të plotë n. Së pari, pjesëtoni n me b për të marrë një herës dhe mbetje, d.m.th.
+n = bq0 + a0, 0 ≤ a0 < b.
+Pjesa e mbetur, a0, është shifra më e djathtë në zgjerimin e bazës b të n. Më pas, pjesëtoni q0 me b për të marrë
+q0 = bq1 + a1, 0 ≤ a1 < b.
+Shohim se a1 është shifra e dytë nga e djathta në sistemin e bazës b të n. Vazhdojmë këtë proces, duke pjesëtuar në mënyrë të njëpasnjëshme herësin me b, duke marrë shifra shtesë të bazës b si mbetje. Ky proces përfundon kur marrim një herës të barabartë me zero. Ai prodhon shifrat e bazës b të n nga e djathta në të majtë.
+
+
+== Numrat e thjeshtë dhe pjestuesi më i madh i përbashkët ==
+Çdo numër i plotë më i madh se 1 është i pjesëtueshëm me të paktën dy numra të plotë, sepse një numër i plotë pozitiv është i pjesëtueshëm me 1 dhe me vetveten. Numrat e plotë pozitivë që kanë saktësisht dy faktorë të ndryshëm të numrave të plotë pozitivë quhen numra të thjeshtë.
+Shënim: Numri i plotë 1 nuk është i thjeshtë, sepse ka vetëm një faktor pozitiv. Gjithashtu se një numër i plotë n është i përbërë nëse dhe vetëm nëse ekziston një numër i plotë a i tillë që a ∣ n dhe
+1 < a < n.
+Teorema themelore e aritmetikës :Çdo numër i plotë më i madh se 1 mund të shkruhet në mënyrë unike si një i thjeshtë ose si prodhim i dy ose më shumë numrave të thjeshtë, ku faktorët kryesorë shkruhen në rend të madhësisë që nuk zvogëlohet.
+
+
+=== Pjestuesi me i madh i perbashket ===
+Përkufizim: Le të jenë a dhe b numra të plotë, jo zero. Numri më i madh i plotë d i tillë që d ∣ a dhe d ∣ b quhet pjesëtuesi më i madh i përbashkët i a dhe b. Pjesëtuesi më i madh i përbashkët i a dhe b shënohet me gcd(a, b).
+Pjesëtuesi më i madh i përbashkët i dy numrave të plotë, jo zero, ekziston sepse grupi i pjesëtuesve të përbashkët të këtyre numrave të plotë nuk është i zbrazët dhe i fundëm. Një mënyrë për të gjetur pjesëtuesin më të madh të përbashkët të dy numrave të plotë është të gjejmë të gjithë pjesëtuesit e përbashkët pozitivë të të dy numrave të plotë dhe më pas të marrim pjesëtuesin më të madh.
+Numrat e plotë a dhe b janë relativisht të thjeshtë nëse pjesëtuesi i tyre më i madh i përbashkët është 1.
+Numrat e plotë a1, a2, … , an janë në çift relativisht të thjeshtë nëse gcd(ai , aj ) = 1 sa herë që 1 ≤ i < j ≤ n.
+Përkufizimi 4 Shumëfishi më i vogël i përbashkët i numrave të plotë pozitiv a dhe b është numri i plotë pozitiv më i vogël që është i pjestueshëm me a dhe b. Shumëfishi më i vogël i përbashkët i a dhe b shënohet me lcm(a, b). Shumëfishi më i vogël i përbashkët ekziston sepse grupi i numrave të plotë të pjesëtueshëm me a dhe b nuk është bosh, dhe çdo grup jobosh i numrave të plotë pozitivë ka një element më të vogël.
+
+
+== Kongruenca ==
+Një kongruencë e formës ax ≡ b (mod m), ku m është një numër i plotë pozitiv, a dhe b janë numra të plotë dhe x është një ndryshore, quhet kongruencë lineare.
+Kongruenca të tilla lindin përgjatë teorisë së numrave dhe zbatimeve të saj.
+ax ≡ b (mod m)
+si mund t'i gjejmë të gjithë numrat e plotë x që plotësojnë këtë kongruencë? Një metodë përdor një numër të plotë a(kongruente) të tillë që āa ≡ 1 (mod m), nëse ekziston një numër i tillë i plotë. Një numër i tillë i plotë ā thuhet se është një invers i një moduli m.
+Teorem: Nëse a dhe m janë numra të plotë relativisht të thjeshtë dhe m > 1, atëherë ekziston një invers i një moduli m. Për më tepër, ky invers është unik modulo m. (Kjo do të thotë, ekziston një numër i plotë unik pozitiv a më i vogël se m që është një invers i një moduli m dhe çdo invers tjetër i një moduli m është në përputhje me një modul m.)
+
+
+== Aplikimi i kongruencave ==
+Kongruencat kanë shumë aplikime për matematikën diskrete, shkencat kompjuterike dhe shumë disiplina të tjera. Tre aplikimet kryesore: përdorimin e kongruencave për caktimin e vendndodhjeve të memories për skedarët e kompjuterit, gjenerimin e numrave pseudorandom dhe kontrollin e shifrave. Kongruencat mund të përdoren gjithashtu për të prodhuar shifra kontrolli për numrat e identifikimit të llojeve të ndryshme, të tilla si numrat e kodit të përdorur për të identifikuar produktet me pakicë, numrat e përdorur për të identifikuar librat, numrat e biletave të linjës ajrore, etj.
+
+
+== Historiku ==
+
+Teoria e numrave është një nga fushat më interesante të algjebres, analizës matematike si dhe matematkës në përgjithesi. Me të drejte Gausi këtë discipline e ka quajtur edhe "MBRETERESHË E MATEMATIKËS”. Eshtë një nga degët më të vjetra e cila njihej edhe nga grekët e vjetër si psh: Pitagora 569-500 p.k. ; Euklidi ?-350 p.k. ; Erastoteni 276-196 p.k. dhe Diofanti ?-250 p.k. 
+Deri vonë është menduar se Teoria e Numrave ka qenë një disciplinë e kulluar teorike por rreth 500 vjet më parë është zbuluar se ajo ka një zbatim tepër efikas në praktikë si edhe në kriptografi ku jane ndërtuar një sërë sistemesh kodimi me bazë Teorine e numrave e sidomos operimin me numrat e thjeshtë, shkencën e kodimit të dhënave, teorine e automateve, etj.
+Periudha moderne e Teorisë së Numrave fillon në vitet 1500 pas Krishtit me Claude Bacher 1581-1638 dhe vazhdon me kërkimet mjaftë të rëndesishme të Pierre Fermat 1600-1665 dhe Leonard Euler 1707-1783. Me 1801 Carl Friedrich Gauss 1777-1855 botoi librin e famshem" Disquisitiones arithmeticae” Në të cilin shkroi të gjitha përfundimet e rëndesishme të arritura nga shkenca për Teorine e Numrave si dhe mjaftë ide të reja interesante të tij.
+Gjetja më e hershme historike e natyrës aritmetike është një fragment i një tabele: pllaka argjile e thyer Plimpton 322 e cila përmban një listë të "trefishave të Pitagorës", domethënë numrave të plotë 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        ,
+        c
+        )
+      
+    
+    {\displaystyle (a,b,c)}
+  
+ të tilla që 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}+b^{2}=c^{2}}
+  
+ . 
+Dy momente të dallueshme në histori shquhen si pika lakimi në zhvillimin e Teorisë së Numrave. Së pari, në kohët arkaike, Euklidi paraqiti algoritmin e tij PMMP (Pjestuesi më i madh i përbashkët) - një grup i shkëlqyer hapash që thjeshton thyesat në formën e tyre më të thjeshtë duke përdorur vëzhgime gjeometrike. Më pas, afërsisht dy mijë vjet më vonë, Karl Gauss zyrtarizoi parimet e Euklidit duke i martuar së bashku shkrimet joformale të Euklidit me provat e tij të gjera në Disquistiones Arithmeticae të përjetshme.
+
+Në matematikë, Algoritmi Euklidian ose algoritmi i Euklidit, është një metodë efikase për llogaritjen e pjesëtuesit më të madh të përbashkët (PMMP) të dy numrave të plotë,numri më i madh që i ndan të dy pa mbetje. E ka marrë emrin nga matematikani i lashtë grek Euklidi i njohur gjithashtu si "Babai i Gjeometrisë", i cili e përshkroi për herë të parë në Elementet e tij (rreth 300 para Krishtit). Është një shembull i një algoritmi, një procedurë hap pas hapi për kryerjen e një llogaritjeje sipas rregullave të mirëpërcaktuara dhe është një nga algoritmet më të vjetra në përdorim të zakonshëm. Mund të përdoret për të reduktuar thyesat në formën e tyre më të thjeshtë dhe është pjesë e shumë llogaritjeve të tjera teorike dhe kriptografike të numrave.
+Në foto është paraqitur një animacion i bazuar në zbritje i algoritmit Euklidian. Drejtkëndëshi fillestar ka përmasa a = 1071 dhe b = 462. Brenda tij vendosen katrorë me përmasa 462×462 duke lënë një drejtkëndësh 462×147. Ky drejtkëndësh është i veshur me katrorë 147×147 derisa të mbetet një drejtkëndësh 21×147, i cili nga ana e tij është i mbuluar me katrorë 21×21, duke mos lënë asnjë zonë të pambuluar. Madhësia më e vogël katrore, 21, është GCD e 1071 dhe 462.
+Në teorinë e algjebrës dhe numrave, Teorema e Wilson-it thotë se një numër natyror n > 1 është një numër i thjeshtë nëse dhe vetëm nëse prodhimi i të gjithë numrave të plotë pozitivë më pak se n është një më i vogël se një shumëfish i n-së. Kjo është 
+  
+    
+      
+        (
+        n
+        −
+        1
+        )
+        !
+        =
+        1
+        ×
+        2
+        ×
+        3
+        ×
+        .
+        .
+        .
+        ×
+        (
+        n
+        −
+        1
+        )
+      
+    
+    {\displaystyle (n-1)!=1\times 2\times 3\times ...\times (n-1)}
+  
+ e plotëson
+
+  
+    
+      
+        (
+        n
+        −
+        1
+        )
+        !
+         
+        ≡
+        
+        −
+        1
+        
+          
+          (
+          mod
+          
+          n
+          )
+        
+      
+    
+    {\displaystyle (n-1)!\ \equiv \;-1{\pmod {n}}}
+  
+
+Në teorinë e numrave, Funksioni i Euler-it numëron numrat e plotë pozitivë deri në një numër të plotë të dhënë n që janë relativisht të thjeshtë me n. Është shkruar duke përdorur shkronjën greke phi sikur phi as 
+
+  
+    
+      
+        φ
+        (
+        n
+        )
+      
+    
+    {\displaystyle \varphi (n)}
+  
+ or 
+  
+    
+      
+        ϕ
+        (
+        n
+        )
+      
+    
+    {\displaystyle \phi (n)}
+  
+ dhe mund të quhet gjithashtu funksioni fi i Euler-it. Me fjalë të tjera, është numri i numrave të plotë k në rangun 1 ≤ k ≤ n për të cilin pjesëtuesi më i madh i përbashkët gcd(n, k) është i barabartë me 1. Numrat e plotë k të kësaj forme nganjëherë referohen si totale të n .Për shembull, totalet e n = 9 janë gjashtë numrat 1, 2, 4, 5, 7 dhe 8. Ata janë të gjithë relativisht të thjeshtë me 9, por tre numrat e tjerë në këtë varg, 3, 6 dhe 9 nuk janë , meqë gcd(9, 3) = gcd(9, 6) = 3 dhe gcd(9, 9) = 9. Prandaj, φ(9) = 6. Si shembull tjetër, φ(1) = 1 meqenëse për n = 1 i vetmi numër i plotë në rangun nga 1 në n është vetë 1, dhe gcd (1, 1) = 1.
+Në matematikë, Teorema Kineze e mbetjes thotë se nëse dihen mbetjet e ndarjes Euklidiane të një numri të plotë n me disa numra të plotë, atëherë mund të përcaktohet në mënyrë unike pjesa e mbetur e pjesëtimit të n nga produkti i këtyre numrave të plotë, me kusht që pjesëtuesit janë dyshe coprime.Teorema e mbetjes kineze përdoret gjerësisht për llogaritjen me numra të plotë të mëdhenj, pasi lejon zëvendësimin e një llogaritjeje për të cilën dihet një kufi në madhësinë e rezultatit nga disa llogaritje të ngjashme në numra të plotë të vegjël.
+
+Një Numër Binar është një numër i shprehur në sistemin numerik bazë-2 ose sistemin binar numerik, një metodë e shprehjes matematikore e cila përdor vetëm dy simbole: zakonisht "0" (zero) dhe "1" (një).Sistemi numerik bazë-2 është një shënim pozicional me një bazë prej 2. Çdo shifër referohet si një bit ose shifër binare. Për shkak të zbatimit të tij të drejtpërdrejtë në qarqet elektronike dixhitale duke përdorur portat logjike, sistemi binar përdoret pothuajse nga të gjithë kompjuterët modernë dhe pajisjet e bazuara në kompjuter, si një sistem i preferuar përdorimi, mbi teknikat e tjera të ndryshme njerëzore të komunikimit, për shkak të thjeshtësisë së gjuhe.
+
+
+== Nëndrajet kryesore ==
+
+Teoria Elementare e numrave ,termi elementar në përgjithësi tregon një metodë që nuk përdor analiza komplekse. Për shembull, teorema e numrave të thjeshtë u vërtetua për herë të parë duke përdorur analiza komplekse në 1896, por një provë elementare u gjet vetëm në 1949 nga Erdős dhe Selberg. Termi është disi i paqartë: për shembull, provat e bazuara në teorema komplekse Tauberian shihen shpesh si mjaft ndriçuese, por jo elementare, pavarësisht nga përdorimi i analizës Furier, në vend të analizës komplekse si të tillë. Këtu, si kudo tjetër, një provë elementare mund të jetë më e gjatë dhe më e vështirë për shumicën e lexuesve sesa një provë jo elementare.Teoria e numrave ka reputacionin e të qenit një fushë, shumë prej rezultateve të së cilës mund t'i deklarohen personit laik. Në të njëjtën kohë, provat e këtyre rezultateve nuk janë veçanërisht të arritshme, pjesërisht sepse gama e mjeteve që ata përdorin është, në mos ndonjë gjë, jashtëzakonisht e gjerë brenda matematikës. 
+Teoria Analitike e numrave,mund të përcaktohet teoria analitike e numravepër sa i përket mjeteve të tij, si studimi i numrave të plotë me anë të mjeteve nga analiza reale dhe komplekse ose për sa i përket shqetësimeve të tij, si studimi brenda teorisë së numrave të vlerësimeve mbi madhësinë dhe dendësinë, në krahasim me identitetet.
+Disa lëndë që përgjithësisht konsiderohen si pjesë e teorisë analitike të numrave, për shembull, teoria e sitës, mbulohen më mirë nga përkufizimi i dytë dhe jo i parë: disa nga teoria e sitës, për shembull, përdorin pak analiza, megjithatë i përket teorisë analitike të numrave.
+
+Teoria Algjebrike e numrave, një numër algjebrik është çdo numër kompleks që është një zgjidhje për disa ekuacione polinomiale 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(x)=0}
+  
+ me koeficientë racionalë; për shembull, çdo zgjidhje 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ of 
+  
+    
+      
+        
+          x
+          
+            5
+          
+        
+        +
+        (
+        11
+        
+          /
+        
+        2
+        )
+        
+          x
+          
+            3
+          
+        
+        −
+        7
+        
+          x
+          
+            2
+          
+        
+        +
+        9
+        =
+        0
+      
+    
+    {\displaystyle x^{5}+(11/2)x^{3}-7x^{2}+9=0}
+  
+ është një numër algjebrik. Fushat e numrave algjebrikë quhen gjithashtu fusha të numrave algjebrikë, ose së shpejti fusha me numra. Teoria e numrave algjebrikë studion fushat e numrave algjebrikë. Kështu, teoria analitike dhe ajo algjebrike e numrave mund dhe mbivendosen: e para përcaktohet nga metodat e saj, e dyta nga objektet e saj të studimit.
+Gjeometria Diofantine , qendror i gjeometrisë diofantine është të përcaktojë kur një ekuacion diofantin ka zgjidhje, dhe nëse ka, sa. Qasja e marrë është të mendojmë për zgjidhjet e një ekuacioni si një objekt gjeometrik.Për shembull, një ekuacion në dy variabla përcakton një kurbë në plan. Në përgjithësi, një ekuacion, ose sistem ekuacionesh, në dy ose më shumë variabla përcakton një kurbë, një sipërfaqe ose një objekt tjetër të tillë në hapësirën n-dimensionale. Në gjeometrinë diofantine, dikush pyet nëse ka ndonjë pikë racionale ose pika integrale në kurbë ose sipërfaqe. Nëse ka ndonjë pikë të tillë, hapi tjetër është të pyesni se sa janë dhe si shpërndahen ato. Një pyetje themelore në këtë drejtim është nëse ka kufij apo pafundësisht shumë pika racionale në një kurbë të caktuar.Kombinatorika aritmetike,
+
+Kombinatorika Aritmetike, jo është një fushë aktualisht e bashkuar, ai përfshin teorinë e numrave shtesë e cila ka të bëjë me disa grupe shumë specifike 
+  
+    
+      
+        
+          A
+        
+      
+    
+    {\displaystyle {A}}
+  
+ me rëndësi aritmetike, si numrat e thjeshtë ose katrorët) dhe, me siguri, një pjesë të gjeometrisë së numrave, së bashku me disa materiale të reja që zhvillohen me shpejtësi . Fokusi i tij në çështjet e rritjes dhe shpërndarjes llogarit pjesërisht për lidhjet e tij në zhvillim me teorinë ergodike, teorinë e grupeve të fundme, teorinë e modelit dhe fusha të tjera. Përdoret edhe termi kombinatorikë aditiv; megjithatë, bashkësitë 
+  
+    
+      
+        
+          A
+        
+      
+    
+    {\displaystyle {A}}
+  
+ që studiohen nuk duhet të jenë bashkësi numrash të plotë, por më tepër nëngrupe grupesh jokomutative, për të cilat tradicionalisht përdoret simboli i shumëzimit, jo simboli i mbledhjes; ato mund të jenë gjithashtu nënbashkësi unazash, në të cilin rast mund të krahasohet rritja e 
+  
+    
+      
+        
+          A
+          +
+          A
+        
+      
+    
+    {\displaystyle {A+A}}
+  
+ dhe 
+  
+    
+      
+        
+          A
+        
+      
+    
+    {\displaystyle {A}}
+  
+ , 
+  
+    
+      
+        
+          A
+        
+      
+    
+    {\displaystyle {A}}
+  
+ mund të krahasohen.
+
+
+== Referime ==
+more reference:
+[./Https://www.turito.com/learn/math/prime-numbers "number line 1 to 100"]. turito

@@ -1,0 +1,2072 @@
+Termodynamikk er den del av fysikken som beskriver hvordan varme og arbeid er forbundet ved at de er forskjellige former av energi. Den anvendes på makroskopiske system som består av et stort antall atomer eller molekyler. Det kan befinne seg i forskjellige tilstander når det er i termisk likevekt. Hver tilstand er karakterisert ved noen få «termodynamiske variable» som kan være trykk, volum, temperatur, magnetisering eller andre, passende størrelser.  De er forbundet med hverandre i en  tilstandsligning. En «termodynamisk prosess» er en overgang mellom to slike tilstander der noen av de variable tar nye verdier.
+Klassisk termodynamikk er basert på noen få og enkle postulat. Første hovedsetning uttrykker hvordan energi er bevart når den omsettes fra  varme til andre former, mens andre hovedsetning setter restriksjoner på hvordan denne omformingen kan foregå. Disse lovene er uavhengig av hva det termodynamiske systemet består av og gjelder for så vidt forskjellige innretninger som for eksempel dampmaskiner, kjøleskap, elektromagnetisk stråling og sorte hull.
+Ved etableringen av statistisk mekanikk fikk termodynamikken et mer fundementalt grunnlagt. Det var opprinnelig basert på klassisk mekanikk som kunne beskrive bevegelsen til hver enkelt partikkel i systemet når kreftene mellom dem er kjent. Men det var først ved etableringen av kvantemekanikken at dette grunnlaget ble komplett og spesielt avgjørende for innholdet av den andre hovedsetningen. 
+Selv om termodynamikken har sin opprinnelse i fysikken og fremdeles har en sentral rolle der, ble det også snart klart at den er av stor betydning innen kjemien. Der styrer den forløpet av kjemiske reaksjoner og egenskaper til faste og flytende stoffer som en del av kjemisk termodynamikk. Tilsvarende anvendelser gjøres i dag for biologiske prosesser her på Jorden og nyttes på lignende vis for astrofysiske prosesser i Verdensrommet.
+
+
+== Grunnlag ==
+
+På slutten av 1700-tallet definerte Joseph Black ved Universitetet i Glasgow egenskapene varmekapasitet og latent varme ved forskjellige stoffer som oppvarmes. De har fremdeles grunnleggende betydning i moderne termodynamikk. På samme sted arbeidet James Watt med å forbedre dampmaskinen ved å gi den en teknisk utforming som utnyttet varmen i større grad. Dette var også motivasjonen til Sadi Carnot som viste i sitt verk Réflexions sur la puissance motrice du feu fra 1824 at for en maskin som arbeider mellom to gitte temperaturer, finnes det en øvre grense på hvor effektiv den kan være. Selv om denne konklusjonen først vakte liten oppmerksomhet, fikk den senere så stor betydning at Carnot av mange ble utropt til termodynamikkens grunnlegger.
+Betraktningene til Carnot ble først kjent gjennom verket Mémoire sur la puissance motrice de la chaleur som Émile Clapeyron publiserte i 1834. Mens Carnot hadde kommet frem til sine konklusjoner med bruk av lite matematikk, viste Clapeyron her hvordan matematisk analyse kan benyttes til å beskrive de forskjellige prosessene.  Han presenterte også her den fullstendige tilstandsligningen for en ideell gass med den universelle gasskonstanten R. Men denne teoretiske fremgangen var fremdeles basert på antagelsen at varme er en egen substans med navnet kalorikk som kan overføres fra et stoff til et annet. Desto mer kalorikk som er til stede, desto varmere er stoffet. Det var videre antatt at i slike prosesser ville ingen kalorikk forsvinne, den vil bare ha flyttet seg fra et sted til et annet.
+Benjamin Thompson (grev Rumford) hadde allerede flere år tidligere argumentert for at varme må skyldes bevegelse og kan forbindes med mekanisk arbeid. Etter mer systematiske undersøkelser kom Robert Mayer frem til det samme resultat i 1842. Han fant til og med den første verdien 3.58 J/cal for den mekaniske varmeekvivalenten. En nøyaktigere verdi 4.15 J/cal ble funnet noen få år senere av James Joule. Begge disse to var overbeviste om at varme og arbeid kun er to former av energi som er bevart når den ene går over til den andre. Energi kom dermed til å spille en lignende rolle som kalorikk tidligere hadde hatt. Joule bekreftet at dette gjelder også for andre energiformer som for eksempel ved elektrisk oppvarming av vann.
+
+
+=== Absolutt temperatur ===
+ 
+Den unge William Thomson (senere Lord Kelvin) ble kjent med Carnots teoretiske resultat gjennom arbeidet til Clayperon. Han innså med en gang deres betydning og kunne allerede i 1848 lansere en ny temperaturskala basert på dem. Dette var den absolutte temperatur T  som er uavhengig av egenskapene til materialet i et termometer. Den har en sentral rolle i beskrivelsen av alle termodynamiske prosesser. Den maksimale virkningsgrad til en varmekraftmaskin som arbeider mellom temperaturene T1 og T2  > T1  er da
+
+  
+    
+      
+        
+          η
+          
+            m
+            a
+            x
+          
+        
+        =
+        1
+        −
+        
+          
+            
+              T
+              
+                1
+              
+            
+            
+              T
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \eta _{max}=1-{T_{1} \over T_{2}}}
+  
+
+Et tilsvarende resultatet gjelder for den reverserte prosessen der maskinen virker som en varmepumpe.
+Thomson fattet interesse for de eksperimentelle undersøkelsene til Joule hvordan varme kan omsettes til arbeid og omvendt. Sammen kom de frem til flere grunnleggende resultat som Thomson fra 1852 publiserte i flere artikler under navnet On the Dynamical Theory of Heat. Han benyttet her navnet termodynamikk for denne nye varmelæren og ga de første formuleringene av den første og andre hovedsetningen for sammenhengen mellom arbeid og varme. Teorien ble kalt dynamisk fordi varme ikke lenger var en bevart substans, men kunne forklares som bevegelse av materiens minste bestanddeler.
+Innholdet av den første hovedsetningen er å betrakte som et uttrykk for prinsippet om energiens bevarelse. Dette var allerede klarlagt av Hermann von Helmholtz og Rudolf Clausius. Den andre hovedsetningen kan formuleres på flere vis og tilsvarer at varme ikke av seg selv kan gå fra lavere til høyere temperatur.
+
+
+=== Entropi ===
+Første hovedsetning om energiens bevarelse kan formuleres på mange ulike måter. I termodynamikken omhandler den sammenhengen mellom det arbeid ΔW  som en maskin kan utføre når den blir tilført en varmemengde ΔQ . Differansen
+
+  
+    
+      
+        Δ
+        U
+        =
+        Δ
+        Q
+        −
+        Δ
+        W
+      
+    
+    {\displaystyle \Delta U=\Delta Q-\Delta W}
+  
+
+utgjør da forandringen i systemets indre energi U. Mens tilført varme nesten alltid regnes som en positiv størrelse, er ofte utført arbeid definert med motsatt fortegn av hva som benyttes her.
+
+Andre hovedsetning ble også gitt en matematisk utforming av Clausius da han i 1865 definerte entropien S  til et termodynamisk system. Hvis det blir tilført en varmemengde ΔQ  ved temperaturen T, øker dets entropi med  ΔS  som må oppfylle
+
+  
+    
+      
+        Δ
+        S
+        ≥
+        
+          
+            
+              Δ
+              Q
+            
+            T
+          
+        
+      
+    
+    {\displaystyle \Delta S\geq {\Delta Q \over T}}
+  
+
+Dette er Clausius' ulikhet og inneholder loven om entropiens vekst. Bare når denne forandringen skjer på en reversibel måte, blir dette en likhet. 
+En syklisk maskin som mottar en varmemengde Q2 ved en temperatur T2  og avgir en mindre mengde Q1  ved T1, vil gjennomgå en entropiforandring som derfor er
+
+  
+    
+      
+        Δ
+        S
+        =
+        
+          
+            
+              Q
+              
+                2
+              
+            
+            
+              T
+              
+                2
+              
+            
+          
+        
+        −
+        
+          
+            
+              Q
+              
+                1
+              
+            
+            
+              T
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Delta S={Q_{2} \over T_{2}}-{Q_{1} \over T_{1}}}
+  
+
+når dette skjer reversibelt. For at ΔS = 0, må derfor Q2/T2 =  Q1/T1. Da det utførte arbeidet er W = Q2 - Q1, tar dermed virkningsgraden η = W/Q2 sin maksimalverdi ηmax = 1 -  T1/T2. Den kan kun oppnås i sykliske maskiner som arbeider fullstendig reversibelt og derfor uten entropiforandring.
+For et system som gjennomgår en infinitesemal forandring ved at det utfører for eksempel et mekanisk arbeid ved at dets volum V  utvider seg litt mot et eksternt trykk P, kan den matematiske utformingen av andre hovedsetning nå kombineres med den første på differensiell form til å gi
+
+  
+    
+      
+        d
+        U
+        =
+        T
+        d
+        S
+        −
+        P
+        d
+        V
+      
+    
+    {\displaystyle dU=TdS-PdV}
+  
+
+Vanligvis blir denne fundamentale sammenhengen omtalt som «den termodynamiske identitet».
+
+
+=== Termodynamikkens lover ===
+Clausius avsluttet sitt verk av 1865 med følgende oppsummering av termodynamikkens to hovedsetninger: 
+
+  
+    
+      
+        
+          Die Energie der Welt ist constant
+        
+      
+    
+    {\displaystyle {\text{Die Energie der Welt ist constant}}}
+  
+
+  
+    
+      
+        
+          Die Entropie der Welt strebt einem Maximum zu
+        
+      
+    
+    {\displaystyle {\text{Die Entropie der Welt strebt einem Maximum zu}}}
+  
+
+I tillegg blir noen ganger antagelsen at når to systemer er i termisk likevekt med et tredje system, så er de også i likevekt seg imellom, omtalt som «termodynamikkens nullte lov». En tredje lov om at entropien må gå mot null når temperaturen går mot null, ble unødvendig etter at Ludwig Boltzmann hadde gitt den en mer fundamental definisjon basert på statistisk mekanikk. Denne hadde også gitt en mer grunnleggende forståelse av de to andre hovedsetningene i termodynamikken. Den hadde vokst frem av Maxwells utledning av hastighetsfordeling til partiklene i en gass og den påfølgende generaliseringen til Boltzmann. På slutten av 1800-tallet fikk den sin endelige utforming gjennom arbeidene til Josiah Willard Gibbs og hans innføring av statistiske ensembler.
+
+
+== System og variable ==
+
+Et termodynamisk system kan bestå av mye forskjellig og komme i et utall forskjellig utgaver. Men det skal kunne skilles klart fra omgivelsene og dets egenskaper skal kunne angis ved makroskopiske størrelser. For et system som for eksempel består av gass eller væske, ville dette være temperatur og trykk, mens det for en magnet ville være magnetisering og det magnetiske feltet den befinner seg i. Hvis det består av forskjellige stoffer, må også mengden av hver dem benyttes i en fullstendig beskrivelse.
+Slike termodynamiske variable deles i to hovedklasser, intensive og ekstensive. De kan bestemmes ved for eksempel å dele systemet i to. Man får da to ny systemer. Hvis noen av de opprinnelige variable er de samme i disse delsystemene, kalles de for intensive variable. Hvis en opprinnelig variabel derimot er blitt halvert, kalles den for en ekstensiv variabel.
+Omgivelsene til systemet kan være i kontakt med det på flere ulike måter. Grenseflaten mellom dem kan slippe igjennom varme og systemet sies da å være «termisk åpent». Hvis ikke, er denne flaten termisk lukket og systemet er isolert. Den kan også tillate at systemet kan utføre arbeid på omgivelsene som ville bety at det er «mekanisk åpent». Likedan vil det være «kjemisk åpent» hvis grenseflaten kan slippe partikler ut og inn til systemet.
+
+
+=== Termodynamisk likevekt ===
+Når de variable størrelsene som karakteriserer et system, ikke forandrer seg med tiden, sies det å være i termodynamisk likevekt. Det er da i en viss termodynamisk tilstand. De samme variable kan likevel benyttes når systemet benyttes i en eller annen prosess hvor det går over fra én likevektstilstand til en annen. Da må det skje på en slik måte at det inntar en slik tilstand over et mye kortere tidsrom enn hva som beskriver selve prosessen. Den sies da å være reversibel. I det motsatte tilfellet er den irreversibel og systemet går gjennom tilstander som ikke kan beskrives ved dets vanlige, makroskopiske variable. 
+
+
+=== Tilstandsligning ===
+
+Når systemet er i likevekt, er alle dets termodynamiske variable forbundet ved en tilstandsligning. For et system bestående av et stort antall partikler i termisk likevekt ved en gitt temperatur T  i et volum V, vil denne vanligvis angi trykket P  til dette systemet som en funksjon av disse tro variable,
+
+  
+    
+      
+        P
+        =
+        P
+        (
+        T
+        ,
+        V
+        )
+      
+    
+    {\displaystyle P=P(T,V)}
+  
+
+Ved høye temperaturer ville denne beskrive egenskapene til en gass, mens den ved lavere temperaturer eventuelt også ville gi egenskapene til den væsken som gassen går over til ved kondensasjon. Det mest kjente eksempelet er van der Waals tilstandsligning som gir en ganske realistisk fremstilling av en reell gass hvor partiklene vekselvirker med hverandre. 
+Hver slik tilstandsligning fremstiller en flate i det tredimensjonale rommet med koordinater P,T og V. En likevektstilstand tilsvarer et punkt på denne «tilstandsflaten», mens en reversibel prosess kan beskrives som en kurve på flaten.
+Da et magnetisk system har magnetisering M ved temperaturen T under påvirkning av magnetfeltet B, vil det kunne beskrives ved en tilstandsligning av formen M = M(T,B). Den beskriver igjen en flate i (M,T,B)-rommet.
+
+
+=== Kjemisk potensial ===
+Mulige anvendelser av termodynamiske prinsipp ble kraftig utvidet i 1876 da Willard Gibbs ga ut sitt første av to verk On the Equilibrium of Heterogeneous Substances. Det omhandlet system som består av flere, forskjellige stoffer og som i tillegg kan utveksles med omgivelsene. Hvis systemet mottar et lite antall dN  av slike partikler, øker dets indre energi med μdN  hvor μ  er dets kjemiske potensial. Denne lille økningen representerer dermed det kjemiske arbeidet som blir utført ved utvekslingen.
+Når man tillater en slik materiell forandring i systemet, må den termodynamiske identiteten forandres til
+
+  
+    
+      
+        d
+        U
+        =
+        T
+        d
+        S
+        −
+        P
+        d
+        V
+        +
+        μ
+        d
+        N
+      
+    
+    {\displaystyle dU=TdS-PdV+\mu dN}
+  
+
+hvor nå den indre energien må betraktes som en funksjon U(S,V,N). Den avhenger kun av systemets ekstensive variable. Med innføringen av det kjemiske potensialet var grunnlaget for kjemisk termodynamikk lagt.
+
+
+== Termodynamisk deriverte ==
+En liten forandring i temperaturen eller trykket til et gass-væskesystem vil medføre en tilsvarende forandring i volumet. Den kan beregnes fra tilstandsligningen  som man kan tenke seg kan skrives på formenV = V(T,P). Da er det generelle differensialet
+
+  
+    
+      
+        d
+        V
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  V
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            P
+          
+        
+        d
+        T
+        +
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  V
+                
+                
+                  ∂
+                  P
+                
+              
+            
+            )
+          
+          
+            T
+          
+        
+        d
+        P
+      
+    
+    {\displaystyle dV=\left({\partial V \over \partial T}\right)_{P}dT+\left({\partial V \over \partial P}\right)_{T}dP}
+  
+
+hvor det er vanlig å benytte indekser i partielle deriverte for å understreke hvilke variable som holdes konstante under operasjonen. Det første leddet her involverer den tredimensjonale, termiske ekspansjonskoeffisienten
+
+  
+    
+      
+        α
+        =
+        
+          
+            1
+            V
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  V
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            P
+          
+        
+        ,
+      
+    
+    {\displaystyle \alpha ={1 \over V}\left({\partial V \over \partial T}\right)_{P},}
+  
+
+mens det andre leddet er gitt ved gassens isoterme kompressibilitet 
+
+  
+    
+      
+        
+          κ
+          
+            T
+          
+        
+        =
+        −
+        
+          
+            1
+            V
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  V
+                
+                
+                  ∂
+                  P
+                
+              
+            
+            )
+          
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \kappa _{T}=-{\frac {1}{V}}\left({\frac {\partial V}{\partial P}}\right)_{T}}
+  
+
+Med i alt tre variable vil det også kunne opptre en tredje deriverte som gir hvordan trykket varierer med temperaturen når volumet holdes konstant. Men disse tre koeffisientene er ikke uavhengig av hverandre da de variable er forbundet med hverandre gjennom tilstandsligningen.
+
+
+=== Matematiske operasjoner ===
+Mer generelt kan man tenke seg et systemet beskrevet ved tre variable x, y og z. De er forbundet ved en ligning f(x,y,z) = 0. Hvis man tenker seg at denne kan løses slik at man finner z = z(x,y), da blir differensialet
+
+  
+    
+      
+        d
+        z
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  z
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            y
+          
+        
+        d
+        x
+        +
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  z
+                
+                
+                  ∂
+                  y
+                
+              
+            
+            )
+          
+          
+            x
+          
+        
+        d
+        y
+      
+    
+    {\displaystyle dz=\left({\partial z \over \partial x}\right)_{y}dx+\left({\partial z \over \partial y}\right)_{x}dy}
+  
+
+Det betyr at når z  er konstant slik at dz = 0, blir
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  d
+                  y
+                
+                
+                  d
+                  x
+                
+              
+            
+            ]
+          
+          
+            z
+            =
+            c
+            o
+            n
+            s
+            t
+          
+        
+        ≡
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  y
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            z
+          
+        
+        =
+        −
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  z
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            y
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  y
+                
+                
+                  ∂
+                  z
+                
+              
+            
+            )
+          
+          
+            x
+          
+        
+      
+    
+    {\displaystyle \left[{dy \over dx}\right]_{z=const}\equiv \left({\partial y \over \partial x}\right)_{z}=-\left({\partial z \over \partial x}\right)_{y}\left({\partial y \over \partial z}\right)_{x}}
+  
+
+etter å ha benyttet at 
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  z
+                
+                
+                  ∂
+                  y
+                
+              
+            
+            )
+          
+          
+            x
+          
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  y
+                
+                
+                  ∂
+                  z
+                
+              
+            
+            )
+          
+          
+            x
+          
+        
+      
+    
+    {\displaystyle \left({\partial z \over \partial y}\right)_{x}^{-1}=\left({\partial y \over \partial z}\right)_{x}}
+  
+
+som følger fra definisjonen av partiell derivasjon. Dermed har man den spesielle sammenhengen
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  x
+                
+                
+                  ∂
+                  y
+                
+              
+            
+            )
+          
+          
+            z
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  y
+                
+                
+                  ∂
+                  z
+                
+              
+            
+            )
+          
+          
+            x
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  z
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            y
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle \left({\partial x \over \partial y}\right)_{z}\left({\partial y \over \partial z}\right)_{x}\left({\partial z \over \partial x}\right)_{y}=-1}
+  
+
+som lett kan huskes når den skrives på dennne sykliske måten.
+En funksjon F(x,y) er implisitt også en funksjon av z  da denne variable er knyttet til x  og y. Hvis man for eksempel holder x  kontant, er den deriverte med hensyn på z  derfor
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          F
+                        
+                        
+                          ∂
+                          z
+                        
+                      
+                    
+                    )
+                  
+                  
+                    x
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    ∂
+                    
+                      ∂
+                      z
+                    
+                  
+                
+                F
+                (
+                x
+                ,
+                y
+                (
+                z
+                ,
+                x
+                )
+                
+                  
+                    |
+                  
+                  
+                    x
+                    =
+                    k
+                    o
+                    n
+                    s
+                    t
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          F
+                        
+                        
+                          ∂
+                          y
+                        
+                      
+                    
+                    )
+                  
+                  
+                    x
+                  
+                
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          y
+                        
+                        
+                          ∂
+                          z
+                        
+                      
+                    
+                    )
+                  
+                  
+                    x
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\left({\partial F \over \partial z}\right)_{x}&={\partial  \over \partial z}F(x,y(z,x)|_{x=konst}\\&=\left({\partial F \over \partial y}\right)_{x}\left({\partial y \over \partial z}\right)_{x}\end{aligned}}}
+  
+
+når man benytter kjerneregelen for derivasjon. Den tilsvarende deriverte kan finnes på samme vis når y  holdes kontant. På lignende måte er derfor også
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  F
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            z
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  F
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            y
+          
+        
+        +
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  F
+                
+                
+                  ∂
+                  y
+                
+              
+            
+            )
+          
+          
+            x
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  y
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            )
+          
+          
+            z
+          
+        
+      
+    
+    {\displaystyle \left({\partial F \over \partial x}\right)_{z}=\left({\partial F \over \partial x}\right)_{y}+\left({\partial F \over \partial y}\right)_{x}\left({\partial y \over \partial x}\right)_{z}}
+  
+
+når man benytter regelen for partiell derivasjon av en funksjon med flere variable.
+
+
+=== Noen eksempel ===
+Et uttrykk for hvordan trykket forandrer seg med temperaturen til systemet når dets volum holdes konstant, er gitt ved koeffisienten
+
+  
+    
+      
+        β
+        =
+        
+          
+            1
+            P
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  P
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+      
+    
+    {\displaystyle \beta ={1 \over P}\left({\partial P \over \partial T}\right)_{V}}
+  
+
+Den sykliske identiteten gir nå sammenhengen
+
+  
+    
+      
+        
+          
+            
+              
+                1
+              
+              
+                
+                =
+                −
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          P
+                        
+                        
+                          ∂
+                          V
+                        
+                      
+                    
+                    )
+                  
+                  
+                    T
+                  
+                
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          V
+                        
+                        
+                          ∂
+                          T
+                        
+                      
+                    
+                    )
+                  
+                  
+                    P
+                  
+                
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          T
+                        
+                        
+                          ∂
+                          P
+                        
+                      
+                    
+                    )
+                  
+                  
+                    V
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      V
+                      
+                        κ
+                        
+                          T
+                        
+                      
+                    
+                  
+                
+                ⋅
+                V
+                α
+                ⋅
+                
+                  
+                    1
+                    
+                      P
+                      β
+                    
+                  
+                
+                =
+                
+                  
+                    α
+                    
+                      β
+                      
+                        κ
+                        
+                          T
+                        
+                      
+                      P
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}1&=-\left({\partial P \over \partial V}\right)_{T}\left({\partial V \over \partial T}\right)_{P}\left({\partial T \over \partial P}\right)_{V}\\&={1 \over V\kappa _{T}}\cdot V\alpha \cdot {1 \over P\beta }={\alpha  \over \beta \kappa _{T}P}\end{aligned}}}
+  
+
+slik at bare to av disse tre fenomenologiske koeffisientene er uavhengige størrelser da α = βκTP.
+En viktig funksjon av de termodynamiske variable er den indre energien U(T,V). Dens deriverte med hensyn på temperaturen er gitt ved varmekapasiteten
+
+  
+    
+      
+        
+          C
+          
+            V
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+      
+    
+    {\displaystyle C_{V}=\left({\frac {\partial U}{\partial T}}\right)_{V}}
+  
+
+og kan bestemmes ved direkte målinger. Derimot er den deriverte med hensyn på volumet ikke så direkte tilgjengelig. Men den kan knyttes til andre målbare størrelser. Den termodynamiske identiteten dU = TdS - PdV  viser at de naturlige variable for denne energien er entropien S  og volumet V  med
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  S
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+        =
+        T
+        ,
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  V
+                
+              
+            
+            )
+          
+          
+            S
+          
+        
+        =
+        −
+        P
+      
+    
+    {\displaystyle \left({\partial U \over \partial S}\right)_{V}=T,\quad \left({\partial U \over \partial V}\right)_{S}=-P}
+  
+
+Hvis man nå betrakter S = S(T,V), så er U(S,V) = U(S(T,V),V) slik at
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          U
+                        
+                        
+                          ∂
+                          V
+                        
+                      
+                    
+                    )
+                  
+                  
+                    T
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          U
+                        
+                        
+                          ∂
+                          V
+                        
+                      
+                    
+                    )
+                  
+                  
+                    S
+                  
+                
+                +
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          U
+                        
+                        
+                          ∂
+                          S
+                        
+                      
+                    
+                    )
+                  
+                  
+                    V
+                  
+                
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          S
+                        
+                        
+                          ∂
+                          V
+                        
+                      
+                    
+                    )
+                  
+                  
+                    T
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                −
+                P
+                +
+                T
+                
+                  
+                    (
+                    
+                      
+                        
+                          ∂
+                          P
+                        
+                        
+                          ∂
+                          T
+                        
+                      
+                    
+                    )
+                  
+                  
+                    V
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\left({\frac {\partial U}{\partial V}}\right)_{T}&=\left({\frac {\partial U}{\partial V}}\right)_{S}+\left({\frac {\partial U}{\partial S}}\right)_{V}\left({\frac {\partial S}{\partial V}}\right)_{T}\\&=-P+T\left({\partial P \over \partial T}\right)_{V}\end{aligned}}}
+  
+
+Her har man i siste leddet benyttet Maxwell-relasjonen
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  S
+                
+                
+                  ∂
+                  V
+                
+              
+            
+            )
+          
+          
+            T
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  P
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+        .
+      
+    
+    {\displaystyle \left({\frac {\partial S}{\partial V}}\right)_{T}=\left({\partial P \over \partial T}\right)_{V}.}
+  
+
+som kan uttrykkes ved koeffisienten β. For en ideell gass er P = nRT/V  og dermed (∂U/∂V)T = 0 slik at den indre energien er uavhengig av volumet til gassen. Det betyr mer konkret at den ikke avhenger av avstanden mellom partiklene som utgjør gassen. De har ingen gjensidige vekselvirkninger. Det har de derimot i en van der Waals gass som har (∂U/∂V)T ≠ 0.
+
+
+=== Varmekapasiteter ===
+I tillegg til varmekapasiteten CV  ved konstant volum, har man også den like viktige varmekapasiteten CP  ved konstant trykk. Begge kan defineres ved termodynamisk deriverte som
+
+  
+    
+      
+        
+          C
+          
+            V
+            ,
+            P
+          
+        
+        =
+        T
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  S
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+            ,
+            P
+          
+        
+      
+    
+    {\displaystyle C_{V,P}=T\left({\frac {\partial S}{\partial T}}\right)_{V,P}}
+  
+
+Hvis man nå betrakter den indre energien U =  U(T,V), så kan den termodynamiske identiteten skrives som
+
+  
+    
+      
+        T
+        d
+        S
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+        d
+        T
+        +
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  V
+                
+              
+            
+            )
+          
+          
+            T
+          
+        
+        d
+        V
+        +
+        P
+        d
+        V
+      
+    
+    {\displaystyle TdS=\left({\frac {\partial U}{\partial T}}\right)_{V}dT+\left({\frac {\partial U}{\partial V}}\right)_{T}dV+PdV}
+  
+
+Det betyr at
+
+  
+    
+      
+        
+          C
+          
+            P
+          
+        
+        =
+        
+          C
+          
+            V
+          
+        
+        +
+        
+          [
+          
+            
+              
+                (
+                
+                  
+                    
+                      ∂
+                      U
+                    
+                    
+                      ∂
+                      V
+                    
+                  
+                
+                )
+              
+              
+                T
+              
+            
+            +
+            P
+          
+          ]
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  V
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            P
+          
+        
+      
+    
+    {\displaystyle C_{P}=C_{V}+\left[\left({\frac {\partial U}{\partial V}}\right)_{T}+P\right]\left({\frac {\partial V}{\partial T}}\right)_{P}}
+  
+
+Siste ledd på høyre side ble kan nå forenkles og gir sammenhengen
+
+  
+    
+      
+        
+          C
+          
+            P
+          
+        
+        −
+        
+          C
+          
+            V
+          
+        
+        =
+        T
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  P
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  V
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            P
+          
+        
+      
+    
+    {\displaystyle C_{P}-C_{V}=T\left({\partial P \over \partial T}\right)_{V}\left({\partial V \over \partial T}\right)_{P}}
+  
+
+mellom de to varmekapasitetene. Resultatet kan nå uttrykkes ved de fenomenologiske koeffisientene som
+
+  
+    
+      
+        
+          C
+          
+            P
+          
+        
+        −
+        
+          C
+          
+            V
+          
+        
+        =
+        P
+        T
+        V
+        α
+        β
+        =
+        T
+        V
+        
+          
+            
+              α
+              
+                2
+              
+            
+            
+              κ
+              
+                T
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle C_{P}-C_{V}=PTV\alpha \beta =TV{\alpha ^{2} \over \kappa _{T}}.}
+  
+
+For en ideell gass er α = 1/T  og κT  = 1/P slik at CP - CV = nR. Denne enkle sammenhengen kan føres tilbake til Robert Mayer og hans arbeid  for mer enn to hundre år siden.
+
+
+== Fundamental ligning ==
+Historisk var det naturlig å benytte trykk og temperatur som uavhengige variable i beskrivelsen av et termodynamisk system. De knyttes sammen med volumet V  ved en tilstandsligning. Men denne fremstillingen inneholder ikke nok informasjon til å gi en fullstendig beskrivelse av dets termodynamiske egenskaper. For eksempel er det ikke nok til å bestemme systemets indre energi U  eller entropi S. Denne situasjonen ble forandret i 1873 da Willard Gibbs viste at all informasjon kan samles i én ligning, U = U(S,V). Den omtales i dag som den fundamentale ligningen.
+I et tredimensjonalt rom med koordinater (U,S,V) beskriver ligningen en flate. Hvert punkt på flaten angir en likevektstilstand til systemet. Når  differensialet 
+
+  
+    
+      
+        d
+        U
+        =
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  S
+                
+              
+            
+            )
+          
+          
+            V
+          
+        
+        d
+        T
+        +
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  U
+                
+                
+                  ∂
+                  V
+                
+              
+            
+            )
+          
+          
+            S
+          
+        
+        d
+        V
+        ,
+      
+    
+    {\displaystyle dU=\left({\frac {\partial U}{\partial S}}\right)_{V}dT+\left({\frac {\partial U}{\partial V}}\right)_{S}dV,}
+  
+
+sammenlignes med termodynamiske identiteten dU = TdS - PdV , vil normalen til flaten i et gitt punkt ha komponenter som er gitt ved  (∂U/∂S)V = T og (∂U/∂V)S = -P.  Kombineres disse to, fremkommer tilstandsligningen P = P(T,V). Mens funksjonen U(S,V) inneholder to ekstensive variable, er dermed begge de førstederiverte intensive variable. Tilført varme eller utført arbeid av systemet vil være gitt ved integral langs kurver på flaten. Resultatet er avhengig av hvilken vei som velges mellom to likevektspunkt.
+Siden den indre energien  U = U(S,V) avhenger av to ekstensive variable, vil den øke med en faktor λ  hvis hver av dem øker med den samme faktoren,
+
+  
+    
+      
+        U
+        (
+        λ
+        S
+        ,
+        λ
+        V
+        )
+        =
+        λ
+        U
+        (
+        S
+        ,
+        V
+        )
+      
+    
+    {\displaystyle U(\lambda S,\lambda V)=\lambda U(S,V)}
+  
+
+Den er derfor en homogen funksjon av disse variable. Ved å derivere begge sidene av denne ligningen med hensyn på λ  og så sette λ = 1, finner man at
+
+  
+    
+      
+        U
+        (
+        S
+        ,
+        V
+        )
+        =
+        T
+        S
+        −
+        P
+        V
+      
+    
+    {\displaystyle U(S,V)=TS-PV}
+  
+
+Hvert ledd på høyresiden er et produkt av en intensiv og en ekstensiv variabel. De kalles i termodynamikken for konjugerte variable.
+
+
+=== Maxwells modell ===
+
+James Maxwell var på denne tiden selv opptatt med termodynamikk og statistisk fysikk som han hadde presentert i sin bok Theory of Heat fra 1872. Han var i brevkontakt med Gibbs og ble meget begeistret da han fikk tilsendt arbeidet hvor den nye formuleringen av termodynamikken ble fremlagt. Av natur likte Maxwell å ha konkrete illustrasjoner av abstrakte idéer og gikk derfor i gang med å lage en gipsmodell av flaten U = U(S,V). Han valgte å betrakte et stoff som lignet vann som kan eksistere i tre forskjellige faser og som utvider seg når det fryser. Ved direkte inspeksjon av flaten kan man da se hvor faseovergangene foregår, hvor stoffets kritiske og trippelpunkt er samt de områdene hvor flere faser samtidig kan være i likevekt.
+En utgave av denne modellen fikk Maxwell sendt til Gibbs som så mye anerkjennelse i denne oppmerksomheten. Modellen kan fremdeles beskues ved Yale University. Maxwells egen modell er utstilt ved Cavendish Laboratory som ble åpnet omtrent på samme tid med Maxwell som den første leder. Likedan er en kopi av modellen utstilt ved Skottlands nasjonalmuseum i Edinburgh.
+
+
+== Termodynamiske potensial ==
+Et mekanisk system er styrt av Newtons lover. De sier at det vil bevege seg mot en tilstand hvor den potensielle energien er mindre. Forandringen i potensiell energi kan opptre som en økning i den kinetiske energien eller at den benyttes til å utføre et arbeid. Et termodynamisk system vil på tilsvarende vis spontant bevege seg mot en tilstand hvor den indre energien er mindre. Men her kan noe av forandringen gå over til varme og derfor ikke tas ut som arbeid. Den nyttbare delen ble av Gibbs i 1873 kalt for «tilgjengelig energi», mens Helmholtz omtalte den som fri energi i 1882.
+Skjer en spontan forandring i et termodynamisk system uten en samtidig forandring i dets volum V  eller entropi S, er den nyttbare energien gitt ved reduksjonen i dens indre energi U = U(S,V). Det er et uttrykk for termodynamikkens andre lov. Av denne grunn blir også denne energien omtalt som et «termodynamisk potensial». For også å kunne ta i betraktning at det utførte arbeidet kan være av kjemisk natur ved at det utveksles partikler med omgivelsene, kan man i det mer generelle tilfellet betrakte den indre energien som en funksjon U = U(S,V,N) hvor N  er antall partikler det inneholder. Da har den termodynamiske identiteten den mer generelle formen
+
+  
+    
+      
+        d
+        U
+        =
+        T
+        d
+        S
+        −
+        P
+        d
+        V
+        +
+        μ
+        d
+        N
+      
+    
+    {\displaystyle dU=TdS-PdV+\mu dN}
+  
+
+hvor μ = (∂U/∂N )SV   er det kjemiske potensialet. Den fri energien er nå en funksjon av tre ekstensive størrelser. Av den grunn er den derfor fremdeles en homogen funksjon og kan skrives som
+
+  
+    
+      
+        U
+        =
+        T
+        S
+        −
+        P
+        V
+        +
+        μ
+        N
+      
+    
+    {\displaystyle U=TS-PV+\mu N}
+  
+
+Denne funksjonen inneholder all informasjon om systemet og er dets fundamentale ligning.
+
+
+=== Fri energi ===
+Den indre energien U  er en fri energi i den forstand at den inneholder informasjon om det nyttige arbeidet som kan ekstraheres fra systemet uten at dets entropi forandres. En slik prosess er vanligvis ikke enkel å etablere i praksis. Mer anvendelige er prosesser som skjer under konstant temperatur. Men da denne er gitt som T = (∂U/∂S )VN , kan man ved en Legendre-transformasjon konstruere et nytt, termodynamisk potensial F = U - TS. Det er Helmholtz fri energi med differensialet
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                F
+              
+              
+                
+                =
+                d
+                U
+                −
+                T
+                d
+                S
+                −
+                S
+                d
+                T
+              
+            
+            
+              
+              
+                
+                =
+                −
+                S
+                d
+                T
+                −
+                P
+                d
+                V
+                +
+                μ
+                d
+                N
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}dF&=dU-TdS-SdT\\&=-SdT-PdV+\mu dN\end{aligned}}}
+  
+
+De naturlige variable for dette potensialet er T, V og N med
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  F
+                
+                
+                  ∂
+                  T
+                
+              
+            
+            )
+          
+          
+            V
+            N
+          
+        
+        =
+        −
+        S
+        
+        ,
+        
+        
+        
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  F
+                
+                
+                  ∂
+                  V
+                
+              
+            
+            )
+          
+          
+            T
+            N
+          
+        
+        =
+        −
+        P
+        
+        ,
+        
+        
+        
+        
+        
+          
+            (
+            
+              
+                
+                  ∂
+                  F
+                
+                
+                  ∂
+                  N
+                
+              
+            
+            )
+          
+          
+            T
+            V
+          
+        
+        =
+        μ
+        
+        .
+      
+    
+    {\displaystyle \left({\partial F \over \partial T}\right)_{VN}=-S\,,\;\;\;\;\left({\partial F \over \partial V}\right)_{TN}=-P\,,\;\;\;\;\left({\partial F \over \partial N}\right)_{TV}=\mu \,.}
+  
+
+Denne frie energien kan derfor skrives som F = F(T,V,N) = U - TS = - PV + μN.
+Kjemiske reaksjoner skjer ofte ved en viss temperatur og et bestemt trykk P. Det nyttige arbeidet er i slike tilfelle gitt ved Gibbs fri energi G. Den kan finnes fra den frie energien til Helmholtz ved en ny Legendre-transformasjon som erstatter volumet V  med trykket P. Det gir G = F + PV = μN slik at det kjemiske potensialet kan betraktes som Gibbs fri energi per partikkel, 
+
+  
+    
+      
+        G
+        =
+        G
+        (
+        T
+        ,
+        P
+        ,
+        N
+        )
+        =
+        N
+        μ
+        (
+        T
+        ,
+        P
+        )
+      
+    
+    {\displaystyle G=G(T,P,N)=N\mu (T,P)}
+  
+
+Alternativt har man at G = H - TS  hvor H = U + PV  er systemets entalpi. Den er en funksjon H = H(S,P,N) og kan finnes direkte fra den frie energien hvor volumet erstattes med trykket via en Legendre-transformasjon. Som de to fri energiene F  og G  kan også entalpien betraktes som et termodynamisk potensial og inneholder all informasjon om systemet.
+For en gass av relativistiske partikler kan man ikke med sikkerhet fastslå nøyaktig hvor mange partikler det inneholder. Slike og lignende system beskrives ved Landau fri energi Ω = Ω(T,V,μ) . Den fremkommer ved en Legendre-transformasjon av den frie energien til Helmholtz hvor partikkeltallet N  erstattes med det kjemiske potensialet μ. Det gir Ω = F - μN = - PV slik at tettheten av denne frie energien er lik med det negative trykket i systemet. Den opptrer på et naturlig vis når man benytter det storkanoniske ensemblet i statistisk mekanikk for slike systemer.
+
+
+== Referanser ==
+
+
+== Opprinnelig litteratur ==
+S. Carnot, Réflexions sur la Puissance Motrice du Feu, Chez Bachelier, Paris (1824). Original
+S. Carnot, Reflections on the Motive Power of Heat. John Wiley & Sons, New York (1897). Engelsk versjon med kommentarer av William Thomson.
+E. Clapeyron, Meḿoire sur la Puissance Motrice de la Chaleur, Journal de l'École Polytechnique 14, 153–190 (1834).
+R. Clausius, Ueber verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie, Annalen der Physik, 125 (7), 353–400 (1865).
+R. Clausius, The Mechanical Equivalent of Heat, MacMillan and Co,  London (1879). Pedagogisk fremstilling av hans viktigste bidrag. Kan fremdeles benyttes som lærebok i termodynamikk.

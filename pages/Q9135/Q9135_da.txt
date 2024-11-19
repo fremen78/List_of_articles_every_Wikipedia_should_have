@@ -1,0 +1,34 @@
+For alternative betydninger, se Styresystem (flertydig). (Se også artikler, som begynder med Styresystem)
+Et styresystem, operativsystem eller styreprogram (kort OS) er en samling af systemsoftware til at håndtere adgangsrettigheder, resurser og yde fælles services for andet software, som kører "ovenpå" dem. Overvågningsprogrammer, bootloadere, kommandofortolkere og skrivebordsmiljøer er dele af styresystemets kernekomponenter. Styresystemet er i ikke-flygtig digital hukommelse (ROM) - eller hentes til flygtig digital hukommelse (RAM), via en bootloader under opstart af et computersystem.
+(Det er ikke obligatorisk med et eksplicit styresystem på et computersystem, fx har mange indlejrede systemer et monolitisk program, som håndterer apparatet, de er en del af.)
+Formålet med et styresystem er at tilbyde administratorerne, programmørerne og slutbrugerne en lettere administrationsgrænseflade, programmørgrænseflade og slutbrugergrænseflade - uanset grænsefladetype, som fx kan være en kommandofortolker eller et skrivebordsmiljø.
+Det som folk nu om stunder forbinder med begrebet, består af flere del-elementer hvoraf en del tidligere blev anset som værende separat fra styresystemet. Hvad der "hører sig til" et styresystem er også noget der varierer i forskellige kredse. 
+Fx var det i MS-DOS almindeligt at teksteditorer, tekstbehandlingsprogrammer og regnearksprogrammer havde hver deres samling af printerdrivere og hver deres samling af skrifter. De forskellige printerdriver og skrifter (med egen softwarelicens) var typisk inkompatible med andre programmer.
+Nyere styresystemer har overtaget forvaltningen af fx printerdrivere og skrifter. Det betyder i princippet at uanset hvilket program som anvendes på styresystemet, haves adgang til alle printerdrivere og skrifter. Hvis man senere får eller køber flere printere (med printerdrivere) og flere skrifter, skal de kun installeres én gang i styresystemet. Det sparer arbejdstid og evt. fejlfinding, da man ikke behøver at have og installere separate printerdrivere og skrifter i sine programmer. 
+
+
+== Elementer i et styresystem ==
+Følgende viser hvilke dele der kan være i et moderne styresystem:
+
+Kernen (på engelsk kernel) er den centrale del af et styresystem. Dens opgave er at kontrollere ressourcer som hukommelse (ram) og tilgang til datalagerplads og eksterne enheder samt at fordele CPU-ressourcer til de forskellige applikationsprogrammer.
+Drivere, moduler eller sub-systemer, hvis formål er at standardisere grænsefladen til forskellig hardware eller software. Det kan være standard-printer-drivere der "oversætter" et billede i computerens hukommelse til data som en specifik printerenhed forstår. Det kan være filsystemer som administrerer harddiskens store mængder af data ved hjælp af indekser med meta-data, det, som vi kender som filnavne og foldere. Det kan være sub-systemer, som OpenGL eller Direct3D, der lader programmer bruge mulighederne i et 3D-kort ved hjælp af en konsistent grænseflade, uden at kende til kortets egenskaber.
+
+Kommandofortolkeren (CLI) (Unix-teminologi: Shellen eller "skallen") er det program, brugeren anvender til at kommunikere med systemet. Ofte er det et tekstbaseret program, som brugeren starter programmer med ved at skrive programkald på en kommandolinje. Det er udbredt på MAC computere og PC computere, at brugeren anvender grafiske brugerflader – hos Microsoft Windows til PC eller Mac OS til MAC, ofte kaldt skrivebordet eller desktop. De tilsvarende grafiske brugerflader i UNIX ikke PC-standard – og Linux ikke PC-standard -verdenen (såsom CDE, KDE og Gnome) er et selvstændigt programmodul, som man kan vælge at installere, og er således ikke, som hos Microsoft og Apple, indbygget i operativsystemet. Den tekstbaserede kommandoprompt på MAC terminal – op i 1978 på UNIX Bourne-shellen, er fortsat en stærk grænseflade på såvel UNIX som Linux, og er stærkt udviklet med C shell, KornShell og Born Again Shell. Microsoft DOS Shell er fortsat at finde i Windows og er kommet til i Mac OS's version 10, og som er flittigt brugt i server- og mainframe-miljøer, hvor alsidighed og automatiseringsmuligheder er højere vægtet end brugervenlighed. Microsofts Power Shell har på adapteret flere de mange avancerede programmeringsfaciliteter, som man træffer i UNIX og Linux-miljøerne.
+Overstående punkter er nok det minimale man forventer at finde i et styresystem i dag, men de fleste leveres med flere dele, eller har det som valgfri mulighed, som for eksempel:
+
+En form for "windowing system", der gør det muligt for programmer at få en "del" af skærmen, og modtage input fra brugeren i disse vinduer. Primært til personlige computere, systemer hvor der er tilkoblet en grafisk terminal, servere og mainframes får primært deres inputs via andre grænseflader.
+Et "widget toolkit", som er et bibliotek af brugerflade-elementer som knapper og tekstfelter, til brug i programmers vinduer. Både for at undgå at skulle programmere de samme ting flere gange til flere programmer, men også for at få et ensartet udseende i alle programmer. Det sidstnævnte demonstreres glimrende af at styresystemer der leveres med et toolkit, som Windows og Mac OS, har et gennemgående ensartet udseende, mens styresystemer hvor det er trejdeparts-programmer, ofte har et vekslende udseende.
+Ekstra programmer i form af små nytteprogrammer som "lommeregnere", adressekartoteker, multimedie-afspilningsprogrammer, tekstredigeringsprogrammer, internet-browsere, e-mail-programmer, med mere. Disse er ikke direkte nødvendige for brugen af styresystemet, men medleveres ofte.
+Mens Windows og Mac OS, der i de tidlige 80ere blev designet med den personlige computer for øje, efterhånden har bevæget sig ind på servermarkedet i de nyeste versioner, så har Unix, som blev designet til time-sharing-systemer (det man i dag ville kalde mainframes) gået den anden vej i form af OpenBSD, NetBSD, FreeBSD og diverse GNU/Linux-distributioner, som i dag kan køre på computere der ellers ville blive betragtet som for små til at kunne køre den mindste version af et styresystem.
+Man har enmdda set MAC mini kører som server, med styresystemmer 'MAC OS X server'.
+Der er også et væld af mere eller mindre nicheprægede styresystemer fra de største mainframes til håndholdte PDA'er ("Personal Data Assistant"), specialiserede real-time-systemer og embedded systems, der tilbyder forskellige variationer af delelementer, velegnet til forskellige formål.
+
+
+== Illustration med styresystemer, versioner og tidsakse ==
+
+
+== Se også ==
+Liste over en lang række styresystemer
+Batteristyresystem
+Distribueret styresystem
+Scheduling - handlingen at tildele resurser til at udføre tasks

@@ -1,0 +1,86 @@
+Statistik er en videnskabelig metode, hvormed man effektivt anvender numeriske data, som f.eks. kan komme fra eksperimenter, spørgeskemaer eller registre.
+Historisk set startede statistik med at være beskrivende, hvor fokus var at præsentere data grafisk, med tabeller og senere ved at regne statistiske mål som gennemsnit. Moderne statistik omfatter at drage konklusioner om det generelle tilfælde (hele populationen) ud fra det enkelte tilfælde (en stikprøve). Det kan for eksempel være at bestemme parametre til sandsynlighedsfordelingen for populationen. Dette kaldes statistisk inferens. Et andet eksempel kunne være at bestemme, om der er forskel på to populationer (eksempelvis en behandlet gruppe og en placebogruppe).
+Danmarks Statistik producerer en del samfundsbeskrivende statistik, som bygger på administrative registre som fx CPR, BBR og Erhvervsregisteret, og dermed medtages hele populationen.
+
+
+== Hvorfor bruge stikprøver ==
+Stikprøver bruges, når hele populationen ikke kan undersøges. Det kan være, at det er dyrt at lave målingerne, eller at det ikke er fysisk muligt at undersøge mere end et udsnit af populationen. For eksempel er det ikke muligt at undersøge alt vandet i verdenshavene. Et andet problem, som statistik tager hensyn til, er, at målinger ofte er behæftet med usikkerhed, fejl eller mangler. Det kan for eksempel være målinger af den samme ting, hvor resultatet varierer for hver måling, men i gennemsnit har den korrekte (sande) værdi.
+For eksempel kan høstudbyttet for to forskellige kornsorter på to forskellige marker måles for at finde ud af, hvilken sort der giver mest udbytte. Her risikeres det, at det ene udbytte er meget højere end det andet, uden at det gælder i gennemsnit. Hvis det skyldes, at den ene mark tilfældigvis blev angrebet af dyr eller sygdom, mens den anden tilfældigvis gik fri, vil resultatet ikke kunne bruges til noget. Derfor bliver man nødt til at have flere observationer og bruge statistiske metoder til at undersøge resultatet.
+Hvis stikprøven omfatter et tilstrækkeligt antal observationer til at indfri forventningerne om pålidelighed i målingen, betegnes den som signifikant.
+
+
+== Etymologi ==
+Ordet statistik kommer fra det latinske statisticum collegium ("statsrådgiver") og det italienske ord statista ("statsmand" eller "politiker"). Ordet kom til Danmark via tysk indføring af Gottfried Achenwall i 1749, og beskrev oprindeligt behandling af data for staten.
+
+
+== Udspring fra sandsynlighedsregning ==
+Statistik bygger på resultater fra sandsynlighedsregning. De to fag er ret tæt forbundne, og deres udvikling refererer også langt hen ad vejen til de samme matematikere. Statistik har dog altid udgangspunkt i analyser af indsamlede data, mens sandsynlighedsregning omfatter enhver hypotetisk beregning af muligheder i et udfaldsrum
+
+
+== Beskrivende statistik ==
+
+Beskrivende statistik omfatter at præsentere data i form af tabeller (krydstabeller, kontingenstabeller) eller grafisk i form af landkort eller diagrammer.
+Der laves ingen model for data, og der bruges ingen antagelser om, hvilke fordelinger data tilhører. Ofte undersøger man et datasæt med beskrivende statistik, før man går til videre behandling af det.
+Eksempler på statistiske mål, der bruges, er kvartiler, median, gennemsnit og empirisk varians. Grafiske fremstillinger omfatter blandt andet skatterplot, boksplot og histogrammer.
+
+
+== Planlægning ==
+
+Planlægning inden for statistik omhandler metoder, som gør målinger mere præcise. Hvis man bruger de korrekte metoder, kan måleusikkerheden for en stikprøve eller et eksperiment gøres meget mindre, end hvis man ikke planlagde først.
+Et eksempel er en meningsmåling, som bør være taget af en gruppe, der er repræsentativ for befolkningen (populationen). Hvis der er 10% af befolkningen, der er mellem 18 og 24 år, bør der også være 10% i undersøgelsen. Det samme gælder med køn, indkomst, hvor i landet man kommer fra og andre ting. Med et forhåndskendskab til den befolkning, man undersøger, er det muligt at planlægge, hvilke personer man spørger, så det omtrent kommer til at passe. Inden for de definerede grupper udvælges stikprøven tilfældigt, så det ikke er de samme, der bliver spurgt hver gang, eller en systematisk udvælgelse af forskellige personer.
+
+
+== Estimering ==
+
+I moderne statistik bruges modeller til at drage konklusioner. Modellerne har nogle parametre, som afgør nogle egenskaber for dem. For normalfordelingen er middelværdi og standardafvigelse parametrene. Når en parameter til en model udregnes ud fra en stikprøve, hedder det, at parameteren bliver estimeret. Der kan laves et punktestimat, hvor parameteren estimeres med én værdi, eller et intervalestimat, hvor der estimeres et interval, som parameterens værdi forventes at være inden for.
+
+
+== Regressionsanalyse ==
+
+Regressionsanalyse er en gren inden for statistikken, hvor værdien af en eller flere variable (kaldt afhængige variabel eller respons variabel) forudsiges ud fra en eller flere andre variabler (kaldet baggrundsvariabel eller de uafhængige variabler). Resultatet er en matematisk funktion, hvor de afhængige variabler kan regnes på baggrund af baggrundsvariablerne. Funktionen vælges, så et afstandsmål mellem datapunkterne og funktionsværdien for datapunkterne minimeres. Afstandsmålet kan vælges vilkårligt, men Euklidisk afstand bruges ofte.
+Formålet kan for eksempel være at tage højde for unøjagtigheder i data, at udfylde manglende observationer i data eller at forudsige de afhængiges variablers værdier for nye data, hvor kun baggrundsvariablerne er kendt.
+
+
+== Variansanalyse ==
+
+Variansanalyse (forkortet ANOVA [fra engelsk, Analysis of Variance]) er en metode til at sammenligne to eller flere middelværdier. Navnet kommer af, at den empiriske varians bruges til at lave hypotesetest med. Man bruger variansanalyse, når man har med kvantitative faktorer at gøre. For eksempel kan faktoren være brug af medicin eller brug af placebo, hvis man ønsker at finde ud af om en type medicin virker. Der kan også være flere niveauer så som høj, mellem og lav.
+Første skridt i en variansanalyse er at estimere variansen for middelværdierne. Andet skridt er at sammenligne dem ved brug af hypotesetest. Dette bruges også til at undersøge om koefficienter fundet med regressionsanalyse bør medtages eller udelades fra modellen.
+
+
+== Hypoteseprøvning ==
+
+Når en regressionsanalyse eller variansanalyse er udført, er det vigtigt at vide, om resultatet er sandsynligt. Hertil bruges hypoteseprøvning (også kaldet hypotesetest). Hypoteseprøvning kan også bruges til at undersøge om på forhånd bestemte eller kendte værdier passer med et nyt datasæt.
+I hypoteseprøvning sammenlignes en nulhypotese med en alternativ hypotese, hvor den alternative hypotese accepteres, hvis nulhypotesen kan afvises. Den alternative hypotese er den påstand, som ønskes bekræftet, mens nulhypotesen er den modsatte påstand (en negation af påstanden). Eksempelvis kan den alternative hypotese være, at person A løber hurtigere end person B. Her vil man vælge nulhypotesen til at være, at person A løber langsommere end eller lige så hurtigt som B.
+
+
+== Bayesiansk statistik ==
+
+Der er to hovedretninger for hvordan en parameter estimeres: Frekvensstatistik statistik (også kaldet for Neyman-Pearsons statistik) og den bayesianske statistik. I den førstnævnte vælges estimat til at være den værdi, som er mest sandsynlig. Dette kan have det problem, at sandynlighedsfordelingen omkring den maksimale værdi kan være flad, så der er et interval af værdier, som er næsten lige sandsynlige. I den bayesianske statistik tages der hensyn til dette, ved at udregne fordelingen for parameter og lade estimatet være et gennemsnit af fordelingen. Det kræver i midlertidigt generelt megen regnekraft, at regne denne fordeling. Derfor er den bayesianske statistik først begyndt at blive anvendt i praksis efter, at computere har fået tilstrækkeligt regnekraft.
+
+
+== Brug af statistiske teorier ==
+De statistiske metoder til at se på store mængder tal er blevet brugt inden for blandt andet fysik og kemi. Den kinetiske gasteori inden for termodynamik er blevet udledt ud fra statistiske betragtning af atomer. Ligeledes er massevirkningsloven inden for kemi udledt ud fra statistiske betragtninger.
+
+
+== Se også ==
+Chi i anden-fordelingen
+
+
+== Referencer ==
+Propability and Statistics for Engineers (2000) af Miller & Freund (Prentice Hall), ISBN 0-13-017974-4
+Statistik I & II af L. Brøndum og J.D Monrad (1984 / 1989)
+Gyldendals 10 binds leksikon, 1978, ISBN 87-01-57251-2
+
+
+== Relaterede artikler ==
+Psykometri (psykologi)
+Signifikansniveau
+
+
+== Eksterne henvisninger/kilder ==
+Danmarks Statistik
+Færøernes Statistik/Hagstova Føroya
+Grønlands Statistik/Kalaallit Nunaanni Naatsorsueqqissaartarfik
+Andre statistikkilder
+Nordisk Statistisk Årbog Arkiveret 22. januar 2010 hos  Wayback Machine
+Manifest: Få styr på tal og statistik. Videnskab.dk 2018

@@ -1,0 +1,184 @@
+Tvrdi disk (engl. Hard Disk, prevodi se i kao kruti disk ili čvrsti disk) sekundarna je jedinica za pohranu podataka u računalima. Tvrdi diskovi su se pojavili na tehnološkoj sceni 1956. godine, kao izum tvrtke IBM, i nakon izlaska na tržište postala dominantna tehnologija za sekundarno pohranjivanje podataka u tipičnim računalnim sustavima tijekom 1960-tih. Danas (2022.) tvrdi diskovi rabe se u mnogim računalnim sustavima, a nedavne inovacije u tehnologijama kao tvrdi diskovi bez pokretnih dijelova koji rabe tehnologije flash memorija i NAND tehnologije, polako počinju potiskivati magnetske diskove s pojedinih sustava kao što su prijenosnici. Tvrdi diskovi zbog neprekidnog razvoja i usvajanja novih tehnoloških rješenja još su najprivlačniji kao tehnologija za sekundarno pohranjivanje podataka što se tiče odnosa sljedećih svojstava: nosivosti, brzine prijenosa podataka i cijene.
+
+
+== Tehnička svojstva ==
+Tvrdi diskovi sastoje se od jedne ili više kružnih ploča zatvorenih u hermetičkom kućištu. Ove kružne ploče vrte se oko jedne središnje osi uz pomoću elektromotora. Ploče su obično napravljene od legure nekog metala (željeza, aluminija, ili neke druge kombinacije) dok kod nekih tvrdih diskova ploče su izrađene od stakla. U procesu izrade ploče se obično presvlače tankim slojem neke feromagnetske tvari. Čitanje i zapisivanje podataka vrši se uz pomoć posebne magnetske glave koja lebdi tik iznad magnetskog sloja. Kod tvrdih diskova s više ploča, magnetske glave su na svakoj ploči, i nekada s obje strane ploče. Magnetske glave postavljaju se na posebne nosače kojima upravlja posebni mehanizam i upravljačka jedinicom. Podatci koji se zapisuju odnosno čitaju preko magnetskih glava podatke rabeći razne kodne i modulacijske sustave (FM, MFM, MMFM). Prednost tvrdih diskova jest da se podatci mogu čitati:
+
+u slijedu, jedan za drugim, ili
+van reda s bilo koje točke gdje magnetska glava može dostići.
+Ova osobnost pristupa van reda, dovela je do revolucije u obradi podataka na računalnim sustavima, jer više nije bilo potrebno čitati magnetske trake od početka do mjesta gdje se nalaze podatci ili čitati bušene kartice koje su zauzimale mnogo prostora i na koje nije bilo moguće spremiti mnogo podataka. Ova inovacija omogućila je razvoj novih operacijskih sustava, kao i razvoj novih aplikacijskih programa u kojima podatci se mogu obraditi u stvarnom vremenu. 
+
+
+=== Kapacitet ===
+Kapacitet tvrdih diskova uvjetovano je različitim faktorima, i mijenjala se tokom razvoja tehnologije od svoje pojave na tržištu 1956. godine. Primjerice prilikom razvoja prvog tvrdog diska IBM-ovi inženjeri mogli su razviti tvrdi disk većeg obujma, no prodajni stručnjaci bili su uvjereni da tržište nije sposobno primiti disk s većim obujmom.[nedostaje izvor] Kapacitet nekog tvrdog diska uvjetovana je sljedećim:
+
+kvalitetom magnetske tvari kojim su presvučene magnetske ploče i gustoće magnetske tvari,
+veličinom magnetske glave koja uvjetuje širinu trake, te
+tehnologijom zapisivanja (FM, MFM, MMFM)
+S poboljšavanjem tehnologije tijekom vremena, kapacitet tvrdih diskova povećavala se sukladno Mooreovom zakonu koji je prikazan na dijagramu. Od pojave tvrdog diska 1956. godine koja je tada imao kapacitet od 5MB, kapacitet diskova brzo je rasla no trebala je 51 godina (2007.) da kapacitet tvrdih diskova stigne 1TB (Tera bajta), dok za skok od 1TB do 2TB trebalo je samo godinu dana.
+
+
+=== Vrijeme pristupa podatcima ===
+Tvrdi disk je elektronsko-električno mehanički uređaj koji ima određena svojstva koje utječu na pristup odnosno na spremanje podataka. Brzina vrtnje ploča presvučenih magnetskim tvarima, brzina pomicanja čitačko/pisače magnetske glave s trake na traku, prijenos podataka s magnetske glave s i na magnetsku tvar, te prijenos podataka prema i od računala su samo dio svojstava koje utječu na vrijeme pristupa podatcima na nekom tvrdom disku. Tri osnovne značajke koje utječu na prijenos podataka jesu:
+
+latentnost,
+vrijeme traženja, te
+brzina prijenosa podataka.
+Mnogi dizajneri i proizvođači imaju svoja specifična tehnološka rješenja za navedene značajke, no u mnogo puta krajnje vrijeme pristupa podatcima ograničeno je standardima za međuspoj tvrdih diskova s računarskim sustavom, te fizičkih svojstava kao brzina vrtnje tvrdog diska.
+
+
+==== Latentnost ====
+Kod tvrdih diskova, latentnost je vrijeme koje je potrebno da se neki dio koji nosi podatke na disku ponovno pojavi ispod glave za čitanje i pisanje. Latentnost nekog tvrdog diska izravno je povezana s brzinom elektromotora koji pokreće vrtnju ploča s magnetskim premazom. Ovo kašnjenje funkcija je brzine okretanja ploče, i s bržim obrtajem ploča, latentnost se smanjuje. Isto tako latentnost na tvrdom disku uvjetovana je geometrijom traka koji se nalaze na tvrdim diskovima. Zbog raznog broja traka na magnestkoj ploči latentnost na trakama bliže osi okretanja bit će manja, dok će latentnost prema obodima magnestke ploče biti veća. Zato se u literaturi obično rabi prosječna latentnost, jer su magnetske ploče relativno malene u radijusu u odnosu prema brzini okretanja. Sljedeća tablica sadrži prosječno vrijeme latentnosti za pojedine popularne brzine okretaja koji se rabe ili su se rabile za tvrde diskove: 
+
+
+==== Vrijeme traženja ====
+Vrijeme traženja je vrijeme potrebno da se dođe do nekog željenog bloka na tvrdom disku, tj. od trenutka kada se upit poslao prema tvrdom disku, i vrijeme koje je potrebno tvrdom disku da dođe do željene minimalne čestice podataka koja se može spremiti ili čitati s tvrdog diska. Na vrijeme traženja utječu sljedeći faktori:
+
+brzina vrtnja diska,
+vrijeme da se magnetska glava pomjeri s trake na traku,
+vrijeme da se magnetska glava pomjeri na traženi blok,
+način kojim se zapisivaju blokovi, i
+način na koji se šalje slijed poslova čitanja i zapisivanja podataka
+Na vrijeme traženja u velikom utječe i mjesto gdje se magnetska glava nalazi kada se ne čitaju ili pišu podatci, ili način na koji se šalju poslovi da se čitaju ili pišu podatci. Primjerice, ako tvrdi disk miruje i ne postoje poslovi preko kojih se zapisiuju ili čitaju podatci put magnetske glave sigurno će biti smanjen ako (npr.) magnetska glava lebdi na središnjoj traci umjesto da stoji na obodu ploče ili blizu središnjice ploče. Isto tako prilikom mnogostrukih čitanja ili pisanja, izvršavanje poslova (čitanja i pisanja) prema slijedu na koji se ti poslovi pojavljuju nekada nije najbolje rješenje. Mnogi dizajneri tvrdih diskova kao i operacijskih sustava izmislili su algoritme u kojima pokušavaju smanjivati naglo pomicanje magnetskih glava od oboda do središnjice u cilju da se smanji vrijeme traženja na tvrdim diskovima.
+
+
+==== Brzina prijenosa podataka ====
+
+
+=== Postojanost i kvarovi ===
+
+
+== Princip rada ==
+Magnetski disk svoje djelovanje temelji na fizičkim osnovama magnetskog polja i svojstvima feromagnetskih materijala. Pri upisu podataka na njega koriste se svojstva takozvanih tvrdih feromagnetskih tvari da nakon što su magnetizirane vanjskim poljem, ostanu magnetizirane i nakon što se vanjsko magnetsko polje ukloni.
+Tvrdi disk se sastoji od nekoliko ploča obično od nemagnetskih materijala, najčešće legure aluminija ili stakla. Te ploče su premazane tankim slojem feromagnetskog materijala debljine 10 do 20 nm (za usporedbu, debljina običnog kopirnog papira je između 0,07 mm i 0,18 mm - 70.000-180.000 nm). Na taj magnetski materijal se obično još stavi premaz ugljika kao zaštitni sloj. Za magnetski materijal se danas obično biraju legure kobalta, dok su ranije bili korišteni oksidi žeǉeza, kroma, ili slično.
+
+Disk se okreće oko svojeg središta brzinom od 3000 okr./min. do 10.000 okr./min., dok se tik iznad njega nalazi glava za čitanje i pisanje (engl. read-and-write head), pričvršćena na ručku koja može glavu premjestiti bliže ili dalje središtu diska. Na današnjim, modernim diskovima, udaljenost te glave od površine ploče se mjeri u nanometrima.
+
+
+=== Pohranjivanje i čitanje podataka ===
+Podaci se na disk upisuju uz pomoć male zavojnice koja je sastavni dio glave. Zavojnica u biranim trenucima propušta električnu stuju izabranog smjera (princip binarnog sustava, 0 ili 1). Magnetska glava sastoji se od zavojnice koja je namotana na tvrdu feritnu jezgru. Glava je učvršćena na ručicu koju po disku pomiče aktuator. Uz pomoć njega glava se može pomicati iznad cijelog polumjera diska. Magnetska površina ploče u disku podijeljena je u puno malih magnetskih područja veličine mikrometra, a svaka od tih površina se rabi za pohranu (kodiranje) jednog bita informacije. Do 2005. ta podjela magnetske površine bila je samo vodoravna, ali od tada pa do danas ta podjela je i okomita čime su se dobili tvrdi diskovi većeg kapaciteta (do 2 TB). Zbog prirodne kristalne strukture magnetskih materijala, ta područja na disku se sastoje do nekoliko stotina magnetskih čestica (jedna magnetska čestica je veličine 10 nm).
+Protjecanjem struje kroz zavojnicu stvara se magnetsko polje koje se zbog blizine glave proteže i kroz magnetski materijal na površini diska. Kako se disk brzo okreće ispod glave, sav materijal koji prođe ispod glave se magnetizira u smjeru određenom smjerom protjecanja električne struje. Uključivanjem struje u kratkotrajnim biranim trenucima, postiže se na površini diska niz različito magnetiziranih područja jedno iza drugog, čime je na disk zapisan niz podataka tj. bitova. Podaci su na disku nalaze kao niz magnetskih čestica na magnetskom sloju diska koje su smještene u koncentrične krugove.
+Čitanje se ispočetka radilo koristeći činjenicu da kada niz različito magnetiziranih područja brzo prođe ispod zavojnice magnetske glave, u zavojnici se inducirao električni napon kod svake promjene polja. Inducirani napon i tako dobivena struja ima svoju jakost koja ovisi o jakosti magnetskog polja, njegovom smjeru, brzini promjene magnetskog polja ispred glave i udaljenosti glave od diska. Zbog razlike u induciranom naponu na zavojnici u određenom trenutku dobiva se naponski signal. Iz tog naponskog signala se stoga može zaključiti kakav je raspored magnetiziranih područja prošao ispod nje i time se niz bitova pročitao. No danas se koriste druge magnetske pojave, recimo osobine da prisutnost magnetskog polja mijenja električnu otpornost nekih materijala. Kod takvih diskova, glava je magnetnootporna. Prilikom prolaska čitača glave preko magnetizirane površine diska, glava mjenja svoj električni otpor zbog promjene jačine i smjera magnetskog polja (tehnologija gigantskog magnetootpora (GMR)).
+
+U današnjim (2015.) tvrdim diskovima glave za čitanje i pisanje su odvojene, za razliku od starih diskova na kojima se sve obavljalo uz pomoć jedne glave. Čitača glava je magnetnootporna, dok je pisača glava tankoslojna induktivna.
+
+
+=== Fizička organizacija podataka ===
+
+Ploča
+Sektor
+Traka
+Blok
+Grozd
+
+
+=== Radne značajke ===
+
+
+=== Ostale značajke ===
+
+
+=== Dobra i negativna svojstva magnetskog diska ===
+Dobra svojstva magnetskog diska jesu:
+
+veliki kapacitet,
+postojanost podataka, te
+brzi pristup podacima.
+Negativna svojstva jesu:
+
+osjetljivost na prljavštinu i elektromagnetska polja i
+ograničenje maksimalne gustoće podataka.
+Magnetski disk je posebno osjetljiv na elektromagnetska polja i pri rukovanju treba to imati na umu.
+
+
+== Logička struktura ==
+Postoje razne logičke strukture koje se rabe za spremanje podataka na tvrdim diskovima. Primjerice logička struktura FAT dijeli tvrdi disk na sljedeće dijelove: 
+
+Master boot record (MBR) veličine 512 bajtova, inače prvi sektor na disku na fizičkoj lokaciji: cilindar=0, glava=0, sektor=1. Ova pozicija na disku sadrži:  Master Partition Table (glavnu tablicu podijela na disku) GTP i Master Boot Code (glavni kod za pokretanje) GKP. GTP je također poznat kao fdisk tablica. Zbog ograničene veličine MBR-a od 512 bajtova, moguće je napraviti samo četiri podjele.
+Boot Record (datoteka za pokretanje) (sadrži informacije i datoteke potrebne za podizanje/pokretanje operativnog sustava),
+FAT1 i FAT2 (sadrže tablice datoteka te njihovu lokaciju unutar podijele),
+Boot directory (bilježi strukturu direktorija na podijele)
+te najveći dio DATA u kojem su pohranjeni podatci.
+
+
+== Povijest razvoja tvrdih diskova ==
+Prvi tvrdi disk razvila je tvrtka IBM 1956. za računalo IBM 305 pod imenom IBM 350 Disk File. Ovaj prvi tvrdi disk sastojao se od pedeset 24 inčnih magnetskih ploča i imao je zapreminu od 5 milijuna 7-bitnih znakova (~4,4 megabajta). Za 350 Disk File, IBM je naplaćivao godišnju najamninu od USD $35.000. Prvi tvrdi disk mogao je imati i veću zapreminu, jer su tehnološka rješenja to omogućavala no veća nosivost bila je odbijena od rukovodstva tvrke IBM jer navodno prodajni odjel nije vjerovao da bi mogli prodati tvrdi disk veće zapremine, zbog navodnoe nespremnosti tržišta za veću jedinicu.  Godine 1962. tvrtka IBM je na tržište iznijela novi model tvrdog diska 1311, koji je imao fizičke dimenzije stroja za pranje rublja, dok su se podatci pohranjivali na zamjenjivim diskovnim svežnjevima zapremine od 2 milijuna 7-bitnih znakova. Zamjena diskovnih svežnjeva omogućavala je korisnicima proširivanje spremišnih mogućnosti. Jedinice u kojima se nisu mogle promijeniti diskovni svežnjevi zvali su se učvršćeni tvrdi diskovi.
+Mnoge inovacije su nastale tokom vremena, kao recimo jedna glava po traci za tvrde diskove koje su imale visoke zahtjeve s pristup (npr. IBM 2305), no zbog skupće njihove izrade ove jedinice nisu bile dugo prisutne na tržištu.
+IBM je 1973. godine unio inovaciju na tržištu s proizvodom IBM 3349 Winchester, u kojem su IBMovi inženjeri uspjeli smanjiti kompleksnost magnetskih glava tako što se magnetske glave više nisu povlačile potpuno s magnetskih ploča već su prilikom pokretanja ili kada bi se tvrdi disk trebao ugasiti magnetske glave su bile micane na posebno određeno mjesto na ploči. Ova inovacija je u mnogome pomogla smanjivanja cijene tvrdim diskovima. Jedan od prvih modela imao je zamjenjive svežnjeve. Ovi zamjenjivi svežnjevi imali su inovaciju da su sadržavali cijeli podsklop i mehanizam za micanje magnetskih glava. Kasnije s razvojem tehnologije i gustoće nosivosti, IBM i ostali proizvođači krutih diskova su napustili tehnologiju zamjenjivih svežnjeva.
+
+
+=== Povijest po godinama od 1980. do danas ===
+1980. - prvi disk kapaciteta 1 GB, IBM 3380, veličine hladnjaka, težak oko 250 kg, i cijene 40.000 USD.
+1986. - standardizacija sučelja SCSI
+1998. - standardizacija pristupa UltraDMA/33 i ATAPI
+2002. - adresiranje preko 137 GB diskovnog prostora
+2003. - uvođenje standarda SATA
+2005. - prvi tvrdi disk kapaciteta 500 GB  (Hitachi)
+2005. - standardizacija Serial ATA 3G
+2005. - uvođenje standarda SAS (Serial Attached SCSI)
+2005. - tvrtka Toshiba uvodi okomito zapisivanje
+2006. - prvi disk kapaciteta 750 GB (Seagate)
+2007. - prvi disk kapaciteta 1.000 GB (1 TB - terabajt) Hitachi
+2008. - prvi disk kapaciteta 1,5 TB (Seagate)
+2009. - prvi disk kapaciteta 2 TB (Western Digital)
+2010. - prvi disk kapaciteta 3 TB (Seagate)
+
+
+=== Budućnost tvrdih diskova ===
+Zapremina mnogih današnih tvrdih diskova (2015.) približavaju se 1 TB po kvadratnom colu, a razvojem raznih tehnologija za magnetske glave, te novih tehnologija za zapisivanje podataka, te ispunjavanja unutrašnjosti inertnim plinovima i još nekim drugim inovacijama omogućit će gustoće zapisivanja i do 4 TB po kvadratnom colu magnetskog medija.
+
+
+== Standardne veličine tvrdih diskova ==
+
+8 cola
+5,25 cola
+3,5 cola
+2,5 cola
+
+
+== Pristup podacima ili adresiranje ==
+Razvoj metoda adresiranja bio he uvjetovan vremenom i tehnološkim rješenjima (sklopovlje i operacijski sustav). Od pojave tvrdih diskova na tržištu (1956.) razvijene su sljedeće tehnike za pristup podatcima:
+
+CHS (cylinder, head, sector) - cilindar, glava, sector
+ECHS (Extended cylinder, head, sector)- produženi cilindar, glava, sector
+LBA (Logical Block Adressing) - pristup preko logičkih blokova
+MZR (Multiple Zone Recording) - snimanje kroz mnogostruke zone
+CKD Count Key Data - brojanje ključnih podataka
+ECKD Enhanced CKD - prošireni CKD
+
+
+== Međusklopovi ==
+
+
+=== ST-412/506 ===
+Ime ST506 ima povijesno značenje, naime tvrtka Seagate je 1980. godine uvela taj međusklop sa svojim tvrdim diskovima od 5 megabajta, i precizno je definirala sučelje prema kontroleru. Godinu dana kasnije došao je novi model, ST412 i diskovi od 10 megabajta. IBM je prihvatio ideju, i to sučelje danas znamo pod imenom ST412/506.
+Zbog ograničene brzine prijenosa podataka (za MFM 5 megabita/s, za RLL 7,5 megabita/s), mogućnosti priključivanja samo dva diska u jednom računalu, sučelje je uskoro napušteno.
+
+
+=== ESDI ===
+ESDI je sučelje tvrtke Maxtor nastalo 1983. godine. Omogućava maksimalnu brzinu od 24 megabita u sekundi. Također, na taj način je bilo moguće spojiti sedam diskova u jednom računalu, ali sučelje nije zaživjelo.
+
+
+=== ATA ===
+IDE - kratica za intelligent drive electronics, donio je nova povećanja brzina prijenosa, ali samo dva diska u računalu.
+EIDE - enhanced ili poboljšani IDE, 4 diska + povećane brzine prijenosa podataka
+PATA - paralelni ATA
+SATA - serijski ATA
+
+
+=== SCSI ===
+SCSI (small computer systems interface) donosi od početka 7 diskova u računalu, kasnije novim standardima (SCSI II, Fast SCSI i Wide SCSI) i 15 SCSI jedinica u računalu
+SCSI II
+Fast SCSI
+Wide SCSI
+SCSI nije sučelje ograničeno samo na tvrde diskove/optičke pogone kao ST412/506, ESDI i IDE/EIDE, već je na SCSI također moguće priključiti i vanjske jedinice poput preslikača (skenera).
+
+
+== Nobelova nagrada ==
+Albert Fert i Peter Grünberg dobili su Nobelovu nagradu za fiziku za otkriće divovskog magnetootpora (GMR) - zasebno su došli do tog otkrića 1988. godine. Ta se tehnologija danas rabi u svim tvrdim diskovima.
+
+
+== Vrela ==
+
+
+== Vanjske poveznice ==

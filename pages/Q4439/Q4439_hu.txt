@@ -1,0 +1,53 @@
+A merevlemez (angolul hard disk drive, rövidítése HDD) egy számítástechnikai adattároló berendezés. Az adatokat kettes számrendszerben, mágnesezhető réteggel bevont, forgó lemezeken tárolja.
+Maga az elnevezés retronima, ugyanis ezt az adattároló berendezést csak a floppy disk (hajlékonylemez) megjelenése óta nevezik így.
+
+
+== Működési elve ==
+A merevlemez (az egykori angol elnevezés alapján winchester) az adatokat mágnesezhető réteggel bevont lemezeken tárolja, melyet a forgó lemez fölött mozgó író/olvasó fej ír vagy olvas. A lemezek állandóan forognak, forgási sebességüket rpm-ben adják meg (Revolutions Per Minute, azaz percenkénti fordulatszám, „fordulat per perc”). Ez általában 5400–7200, de léteznek 10 000–15 000 rpm-es modellek is. A fej körülbelül 1 (Hitachi, régebben IBM meghajtókban 0,19) nanométeres légpárnán repül a lemez felett, ezért egy apró porszem is tönkreteheti azt. Összeszerelésük ezért speciális körülmények között, pormentes üzemcsarnokban, úgynevezett tisztatérben történik.
+
+
+== Felépítése ==
+Egy winchesterben több lemez is lehet, közös tengelyen, és jellemzően a lemez(ek) mindkét oldalát használják adattárolásra, így a lemezekhez általában két fej tartozik: alul-felül egy. Mivel az azonos fej- és lemezszámú meghajtók kapacitása eltérő lehet, a végleges kapacitást és az adattárolásra használt területeket a gyártás során úgynevezett szervóírással alakítják ki.
+A HDD-beli lemezeket azonos központú, különböző sugarú körök tagolják, ezeket sávoknak (trackeknek) nevezzük. A sávok azonosítása számokkal történik, a legkülső sáv a 0-s sorszámú. Azokat a sávokat, melyek egymás alatt helyezkednek el, együttvéve cilindernek nevezzük (am. 'henger'). A sávokat tovább lehet bontani ún. szektorokra. Ezeket is sorszámozzák, ezek eggyel kezdődnek. A HDD gyártás során kialakított szektorokat a meghajtó formázása közben csoportosíthatjuk, így alakíthatunk ki helyfoglalási egységeket, azaz clustereket. A cluster állhat egyetlen szektorból, de merevlemezen jellemzően több szektor együttese alkotja, 4, 8, 16, 32, 64 vagy 128 darab, így a mérete maximum 64 KiB. Egy cluster csak egy fájlhoz tartozhat. Ha a fájl utolsó clustere nem íródott tele, a fennmaradó üres rész elvész. Ezért nevezhetjük az operációs rendszer számára legkisebb címezhető egységnek a HDD-ben.
+
+
+== A merevlemez főbb tulajdonságai ==
+Tárolókapacitás: megadja, hogy mennyi adat fér rá: kezdetekben csak pár megabájt volt, manapság már 500 GB – 16 TB között mozog.
+Írási és olvasási sebesség: ezt nagyban befolyásolja a lemez forgási sebessége, amely jellemzően 5400, 7200, 10 000 vagy 15 000 fordulat/perc (rpm), illetve az adatsűrűség. A merevlemez átviteli sebességének növelésének érdekében beépítenek egy gyorsítótárat (cache-t). Mivel általában szekvenciális írásról és olvasásról van szó, a merevlemez elektronikája a gyorsítótárba gyűjtögeti a kiírandó adatokat, majd ha elegendő összegyűlt, egyszerre kiírja a lemezre. Olvasásnál a lemezről többet beolvas, mint amennyire szükség van az adott pillanatban, arra a statisztikai tényre építve, hogy „úgyis kérni fogjuk az utána lévő adatokat” (előreolvasás). Nem kevésbé fontos szerepe még, hogy a csatolófelület felé szakaszosan is, de állandó sebességgel küldje és fogadja az adatokat. A gyorsítótárnak köszönhetően a HDD elérési ideje lényegesen lecsökken. A gyorsítótár lehetőségeinek kihasználása érdekében a nagyobb adatsűrűségű tárolókhoz nagyobb méretű szokott lenni. Régebben 2, 4, 8 MiB-os, manapság a nagyobb kapacitású HDD-k mellé 16, 32, 64, 128 vagy 256 MiB-os gyorsítótárat szoktak rakni.
+Csatolófelület: ezen keresztül történik az adatátvitel, több fajta létezik: ATA (PATA), SATA (SATA I, SATA II, SATA III), SCSI, SAS (Serial Attached SCSI), FC (Fiber Channel).
+
+
+== Egyéb kapcsolódó fogalmak ==
+
+Particionálás: a merevlemezt particionálással több logikai meghajtóra oszthatjuk fel. Ezek a partíciók fizikailag egy lemezen vannak, azonban az operációs rendszer több meghajtóként érzékeli és kezeli őket. Tehát a partíció a merevlemez egy logikailag különálló darabja, melyet az adatok szervezésére használunk. A particionálás műveletét a rendszerprogram telepítése kezdetén szokták végrehajtani.
+Formatálás: ahhoz, hogy a mágneslemezeken lévő mágneses réteg alkalmas legyen adatok tárolására, létre kell hozni a tároláshoz szükséges rendszert. Ezt formatálásnak vagy formázásnak nevezzük. Formatáláskor jönnek létre a sávok, szektorok. A formatálást egy bizonyos partícióra hajtjuk végre. Formatáláskor az adott partíción lévő fájlok törlődnek, bár egyes technikákkal visszaállíthatóak.
+Fájlrendszer: ahhoz, hogy fájlokat tároljunk egy merevlemezen, a PC-nek fájlrendszerre van szüksége, amely megadja a fájl nevét, helyét. Hasonlít egy katalógusra. Minden partíciónak megvan a saját személyi katalógusa, az állománykiosztási tábla (File Allocation Table, FAT vagy Master File Table, (MFT)). A PC-ken a legkorábbi fájlrendszer a FAT16 volt, még DOS operációs rendszer alá. Ezt követte a FAT32, ez a Windows 95, Windows 98 fájlrendszere volt, ezt pedig az NTFS (New Technology File System) követte. Ez a Windows NT-alapú rendszerek fájlrendszere: a Windows 2000-é, a Windows XP-é, a Windows Server 2003-é, illetve a Windows Vistáé.
+Unix és Linux operációs rendszerek alatt ettől eltérő fájlrendszereket használnak.
+A FAT fájlrendszerek hátránya az NTFS-szel szemben, hogy egy fájl mérete maximum 4 GB lehet.
+Töredezettség: a HDD-n lévő fájlok egy idő után logikailag töredezetté válnak. Oka az, hogy a merevlemez nem tud egy szektornál kisebb egységet címezni, így amikor ír egy fájlt, és az nem tölti be teljesen a szektort, kihasználatlan hely keletkezik. A merevlemez lassulását az okozza, hogy amikor ír egy adott információt, de a következő szektor foglalt, akkor ettől a szektortól egy távolabbi üres szektorba kell raknia a fájl további részét – az író/olvasó fejnek mozognia kell, hogy elérje – és ez lassabb elérési időt okoz. Ezt az állapotot töredezettségnek vagy fragmentáltságnak nevezzük. Ezt különböző szoftverek segítségével, töredezettségmentesítő, defragmentáló programokkal könnyen lehet orvosolni.
+Több merevlemez használata: ha több merevlemezünk is van egy csatornán, akkor be kell állítani, hogy melyik legyen az elsődleges (master), és melyik legyen a másodlagos (slave, azaz a kiszolgáló). Jellemzően a masteren van a boot szektor, az a szektor, ami az operációs rendszer betöltését szolgálja.
+Merevlemez mobilitása: a merevlemez mobilitását több módon próbálták elérni:
+
+Egyfajta megoldás a külső merevlemez, melynek kulturált külső borítása van, valamint a számítógép általános célú interfészei közül valamelyikre csatlakoztatható (eSATA, USB, párhuzamos port, SCSI-port, FireWire port). A külső merevlemez valamivel drágább, és csatlakozástól függően általában lassabb is, mint a belső. A merevlemezek közül már gyártanak strapabíróbbakat is: gumiburkolattal, és ezek kisebb ütődéseket is kibírnak.
+A másik megoldás a mobilrack: ekkor a merevlemez könnyen kihúzható a gépből, és átvihető másikba, és sebességbeli csökkenés sincs. Ez notebookoknál nem alkalmazható.
+Biztonság: a merevlemez ugyan viszonylag hosszú élettartamú eszköz, ám meghibásodások itt is előfordulhatnak: a biztonságra megoldás a HDD-k RAID-be szervezése. Az adatvesztés előrejelzésére több technikát is kifejlesztettek: egy ilyen például a SMART is.
+Alkalmazásuk: az 5400 fordulatos merevlemez jellemzően 2,5 hüvelykes méretben kerül piacra, és általában notebookokban alkalmazzák alacsony fogyasztása miatt, illetve külső rackekben csekély fizikai mérete és elhanyagolható tömege miatt. A 7200 rpm-es lemezek általában 3,5 colos méretben képviseltetik magukat az asztali gépekben, illetve merevlemezes DVD-írókban. A 10 000 fordulatos HDD-k többsége SCSI vagy Fibre Channel csatolóval kapható, szintén 3,5 colos méretben. Gyorsasága, megbízhatósága és nem utolsósorban ára miatt leginkább a szerverpiacon alkalmazzák, valamint nagy adatbiztonságot igénylő rendszerekben (leginkább RAID tömbként). A merevlemezek ATA, SATA, SCSI, SAS vagy Fibre Channel csatlakozó porttal készülnek.
+
+
+== A HDD-k jelene ==
+Az informatika fejlődésével elavulttá vált merevlemezt a 2010-es években a sokkal gyorsabb, kisebb fogyasztású és fokozatosan növekvő kapacitású SSD meghajtók szorították ki. (Kezdetben több merevlemezgyártó a hibrid merevlemezek bevezetését tervezte, amelyek ötvözték volna a két háttértár technológia előnyeit. Az SSD-k hátránya eleinte a rövidebb élettartam volt.)
+
+
+== Magyar és KGST vonatkozások ==
+
+A Kádár-korszakban, a hatvanas évek végére az érintett vállalatok „lobbizása” és felső szintű döntések eredményeképpen kialakult a számítógépes iparág kezdetleges hazai szerkezete. A vezető szerep az iparvállalati kategóriában a Videotonnak jutott. Háttérbe szorult, csak epizódszereplő lett többek között az Orion, az EMG és a Telefongyár is. A Videoton önálló fejlesztő vállalatot is létrehozott, de komoly szerep jutott a kutatóintézeteknek (a KFKI, az SZKI és a SZTAKI) is. A perifériagyártás meghatározója a Magyar Optikai Művek lett. A MOM kezdte el gyártani a francia, SAGEM gyár licence alapján a DISCMOM nevű merevlemezes háttértárolót, amely méretét tekintve nem emlékeztetett a ma ismert winchesterre. Az első szériák kapacitása mindössze 0,8 MB volt. A készülék elektronikáját a BRG gyártotta. A több mint másfél évtizedes gyártás, fejlesztés csúcseredménye az 5 MB kapacitás elérése volt. A MOM-nak komoly finommechanika és vegyi kikészítői tapasztalat birtokában sem sikerült biztonságosan kiváltani a mágnes lemezek gyártását. A vállalat a nyolcvanas években elkezdte a winchesterek fejlesztését is. Ezekkel azonban csak a prototípusig, illetve a nullszériáig jutott, a sorozatgyártás a cég felszámolása miatt már nem indulhatott meg. A kötegelt, cserélhető merevlemezes tárolók gyártása a KGST munkamegosztásban Bulgáriának jutott.
+Érdekesség, hogy bár a 'winchester' megnevezés az IBM 3340  eltűnésével az angolszász és más országok informatikai szakzsargonából teljesen kikopott, a magyar IT szóhasználatban még mind a mai napig egyet jelent a merevlemez fogalmával.
+
+
+== Jegyzetek ==
+
+
+== Források ==
+Számítógépes alapismeretek II. / A rendszerhívások és a fájlrendszerek fogalma, szerepe, ezek jellemzői / Az NTFS fájlrendszer fizikai szerkezete, lemezkezelése. www.tankonyvtar.hu. (Hozzáférés: 2016. február 11.)
+Kmetty József visszaemlékezése
+Egykori gyártók

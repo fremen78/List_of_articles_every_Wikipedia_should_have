@@ -1,0 +1,59 @@
+Diodo semicondutor é um elemento ou componente eletrônico composto de um cristal semicondutor de silício ou germânio numa película cristalina cujas faces opostas são dopadas por diferentes materiais durante sua formação, o que causa a polarização de cada uma das extremidades.
+É o tipo mais simples de componente eletrônico semicondutor, usado como retificador de corrente elétrica entre outras aplicações. Possui uma queda de tensão de, aproximadamente, 0,3 V (germânio) e 0,7 V (silício).
+
+
+== Comportamento em circuitos ==
+
+O diodo é um componente elétrico que permite que a corrente o atravesse num sentido com muito mais facilidade do que no outro. O tipo mais comum de diodo é o diodo semicondutor, no entanto, existem outras tecnologias de diodo. Diodos semicondutores são simbolizados em diagramas esquemáticos como na imagem 1. O termo "diodo" é habitualmente reservado a dispositivos para sinais baixos, com correntes iguais ou menores a 1 A.
+Quando colocado em um simples circuito bateria-lâmpada, o diodo permite ou impede corrente através da lâmpada, dependendo da polaridade da tensão aplicada, como nas duas figuras abaixo.
+Na imagem 2 o diodo está diretamente polarizado, há corrente e a lâmpada fica acesa. Na imagem 3 o diodo está inversamente polarizado, não há corrente, logo a lâmpada fica apagada.
+O diodo funciona como uma chave de acionamento automático (fechada quando o diodo está diretamente polarizado e aberta quando o diodo está inversamente polarizado). A diferença mais substancial é que, quando diretamente polarizado, há uma queda de tensão no diodo muito maior do que aquela que geralmente se observa em chaves mecânicas (no caso do diodo de silício, 0,7 V). Assim, uma fonte de tensão de 10 V, polarizando diretamente um diodo em série com uma resistência, faz com que haja uma tensão de 9,3 V na resistência, pois 0,7 V ficam no diodo. Na polarização inversa, acontece o seguinte: o diodo faz papel de uma chave aberta, já que não circula corrente, não haverá tensão no resistor, a tensão fica toda retida no diodo, ou seja, nos terminais do diodo há uma tensão de 10 V.
+A principal função de um diodo semicondutor, em circuitos retificadores de corrente, é transformar corrente alternada em corrente contínua pulsante. Como no semiciclo negativo de uma corrente alternada o diodo faz a função de uma chave aberta, não passa corrente elétrica no circuito (considerando o “sentido convencional de corrente”, do “positivo” para o “negativo”). A principal função de um diodo semicondutor, em circuitos de corrente contínua, é controlar o fluxo da corrente, permitindo que a corrente elétrica circule apenas em um sentido.
+
+
+== A dopagem do diodo semicondutor e os cristais P e N ==
+A dopagem no diodo é feita pela introdução de elementos dentro de cristais tetravalentes, normalmente feitos de silício e germânio. Dopando esses cristais com elementos trivalentes, obtêm-se átomos com sete elétrons na camada de valência, que necessitam de mais um elétron para a neutralização (cristal P). Para a formação do cristal P, utiliza-se principalmente o elemento índio. Dopando os cristais tetravalentes com elementos pentavalentes, obtêm-se átomos neutralizados (com oito elétrons na camada de valência) e um elétron excedente (cristal N).
+Para a formação do cristal N, utiliza-se principalmente o elemento Fósforo. Quanto maior a intensidade da dopagem, maior a condutibilidade dos cristais, pois suas estruturas apresentam um número maior de portadores livres (lacunas e elétrons livres) e poucas impurezas que impedem a condução da corrente elétrica. Outro fator que influencia na condução desses materiais é a temperatura. Quanto maior é a temperatura de um diodo, maior a condutibilidade, pelo fato de que a energia térmica ter a capacidade de quebrar algumas ligações covalentes da estrutura, acarretando no aparecimento de mais portadores livres para a condução de corrente elétrica.
+Após dopadas, cada face dos dois tipos de cristais (P e N) tem uma determinada característica diferente da oposta, gerando regiões de condução do cristal, uma com excesso de elétrons, outra com falta destes (lacunas). Entre ambas, há uma região de equilíbrio por recombinação de cargas positivas e negativas, chamada de região de depleção (a qual possui uma barreira de potencial).
+
+
+== Polarização do diodo ==
+ 
+A polarização do diodo é dependente da polarização da fonte geradora. A polarização é direta quando o polo positivo da fonte geradora entra em contato com o lado do cristal P(chamado de anodo) e o polo negativo da fonte geradora entra em contato com o lado do cristal N(chamado de cátodo).
+Assim, se a tensão da fonte geradora for maior que a tensão interna do diodo, os portadores livres se repelirão por causa da polaridade da fonte geradora e conseguirão ultrapassar a junção P-N, movimentando-os e permitindo a passagem de corrente elétrica. A polarização é indireta quando o inverso ocorre. Assim, ocorrerá uma atração das lacunas do anodo(cristal P) pela polarização negativa da fonte geradora e uma atração dos elétrons livres do cátodo (cristal N) pela polarização positiva da fonte geradora, sem existir um fluxo de portadores livres na junção P-N, ocasionando no bloqueio da corrente elétrica.
+Pelo fato de que os diodos fabricados não são ideais, a condução de corrente elétrica no diodo (polarização direta) sofre uma resistência menor que 1 ohm, que é quase desprezível. O bloqueio de corrente elétrica no diodo (polarização inversa) não é total devido novamente pela presença de impurezas, tendo uma pequena corrente que é conduzida na ordem de microampères, chamada de corrente de fuga, que também é quase desprezível.
+
+
+== Testes com o diodo ==
+Os diodos, assim como qualquer componente eletrônico, operam em determinadas correntes elétricas que são especificadas em seu invólucro ou são dadas pelo fabricante em folhetos técnicos. Além da corrente, a tensão inversa (quando o diodo está polarizado inversamente) também é um fator que deve ser analisado para a montagem de um circuito e que tem suas especificações fornecidas pelo fabricante. Se ele for alimentado com uma corrente ou tensão inversa superior a que ele suporta, o diodo pode ser danificado, ficando em curto ou em aberto. Utilizando de um ohmímetro ou um multímetro com teste de diodo, pode-se verificar se ele está com defeito.
+Colocando-se as pontas de prova desses aparelhos nas extremidades do diodo (cátodo e ânodo), verifica-se que existe condução quando se coloca a ponteira positiva no ânodo e a negativa no cátodo, além de indicar isolação quando ocorre o inverso. Assim o diodo está em perfeitas condições de operação e com isso é possível a localização do cátodo e do ânodo, porém se os aparelhos de medição indicarem condução dos dois caminhos do diodo, ele está defeituoso e em curto. Se os aparelhos de medição indicarem isolação nos dois caminhos, ele também está defeituoso e em aberto.
+
+
+== Usos ==
+
+O fenômeno da condutividade em um só sentido é aproveitado como um chaveamento da corrente elétrica para a retificação de sinais senoidais, portanto, este é o efeito diodo semicondutor tão usado na eletrônica, pois permite que a corrente flua entre seus terminais apenas numa direção.
+Esta propriedade é utilizada em grande número de circuitos eletrônicos e nos retificadores.
+Os retificadores são circuitos elétricos que convertem a tensão CA (AC) em tensão CC (DC). CA vem de Corrente alternada, significa que os elétrons circulam em dois sentidos, CC (DC), Corrente contínua, isto é circula num só sentido.
+A certa altura, o potencial U , formado a partir da junção n e p não deixa os elétrons e lacunas movimentarem-se, este processo dá-se devida assimetria de cargas existente.
+
+
+== Tipos de diodos semicondutores ==
+Os diodos são projetados para assumir diferentes características: diodos retificadores são capazes de conduzir altas correntes elétricas em baixa frequência, diodos de sinal caracterizam-se por retificar sinais de alta frequência, diodos de chaveamento são indicados na condução de altas correntes em circuitos chaveados. Dependendo das características dos materiais e dopagem dos semicondutores há uma gama de dispositivos eletrônicos variantes do diodo:
+
+
+== Ver também ==
+DIAC
+FET
+LED
+OLED
+SCR
+Transistor
+TRIAC
+Diodo zener
+Junção PN
+
+
+== Notas ==
+
+
+== Referências ==

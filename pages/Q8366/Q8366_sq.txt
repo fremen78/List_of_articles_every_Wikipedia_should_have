@@ -1,0 +1,182 @@
+Algoritmi në matematikë dhe informatikë, është një seri hapash të mirëpërcaktuara, që zakonisht përdoren për të zgjidhur një klasë të veçantë problemesh ose për të bërë një llogaritje. Algoritmi mund të përkufizohet si një ecuri që lejon të fitohet një rezultat i dhënë duke ndjekur, në një renditje të përcaktuar, një tërësi hapash të thjeshtë që përkojnë me veprimet e zgjedhura nga një tërësi e kufizuar. Algoritmi pra, është ecuria që krijon përgjigjen për një pyetje, çështje ose zgjidhjen e një problemi me një numër të kufizuar hapash.
+Me një shëmbull të thjeshtë, "algoritëm" është edhe një recetë kuzhine. Përshembull: "Si të fërgojmë dy vezë për mëngjes?"
+
+Fillimi
+Materiali (funksione, procedura, variablat, tipet e ndryshme si në ADA95, Pascal, Fortran)
+1)Ndezim pllakën ngrohëse
+2)Marrim tiganin e vëmë në pllakë
+3)Hedhim vaj për zierje
+4)Thyejmë 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ vezë
+5)Pas disa minutash i rrotullojmë
+6)Pas disa minutash i heqim vezët e fërguara i vëjmë në pjatë
+Fundi i programit
+Struktura e shembullit shpjegon si programohet, mirëpo njerëzimi qysh në kohërat e lashta ka ditur të bëjne një gjë të tillë,
+Në bazë të përkufizimevit të algoritmit, përftojmë katër vetitë themelore të algoritmit:
+
+Vijimi i udhëzimeve duhet të jetë i kufizuar
+Ai duhet të sjellë një përfundim
+Udhëzimet duhen të jenë të zbatueshme
+Udhëzimet nuk duhet të jenë të paqarta.
+
+
+= Kompleksiteti i algoritmeve =
+
+
+== Analiza e algoritmeve ==
+Analiza e algoritmit është një pjesë e rëndësishme e teorisë së kompleksitetit llogaritës, e cila siguron vlerësimin teorik për burimet e nevojshme të një algoritmi për të zgjidhur një problem specifik llogaritës. Analiza e algoritmeve është përcaktimi i sasisë së burimeve të kohës dhe hapësirës që nevojiten për ta ekzekutuar atë. Korrekësia dhe Efikasiteti janë dy elementet kryesore për tu analizuar gjatë ndërtimit të një algoritmi.
+
+
+== Kuptimi i “𝚶 - së madhe” ==
+Kuptimi “Ο- e madhe” shërben për të vlerësuar rritjen e një funksioni pa u shqetësuar për shumëzuesit konstant apo terma të një rendi më të ulët se vetë funksioni. Në rastet kur inputi i një algoritmi shkon duke u rritur, përdoret kuptimi “Ο- e madhe” për të vlerësuar numrin e veprimeve që ai algoritëm përdorë.
+Kuptimi matematikor “𝛰- e madhe” njihet si kuptim i limituar pasi që nuk ofron kufij të poshtëm.
+Kuptimi “Ο- e madhe”  fillimisht u prezantua nga matematikani gjerman i njohur Paul Bachmann më 1892. Ky simbol përdoret në shkenca kompjuterike gjatë analizimit të algoritmeve dhe shpesh herë njihet si simboli Landau sipas matematicientit gjerman Edmund Landau, i cili përdori këtë nocion përgjatë punës së tij. Disa nga elementet kryesore janë “n” që ndryshe njihet si njësia hyrëse e një programi, T(n) - funksioni që e tregon kohën e ekzekutimit, dhe f(n) - funksion i thjeshtë.
+Definicioni 1.
+
+  
+    
+      
+        T
+        (
+        n
+        )
+        =
+        O
+        (
+        f
+        (
+        n
+        )
+        )
+      
+    
+    {\displaystyle T(n)=O(f(n))}
+  
+ nëse ekzistojnë konstantet C dhe n0 të tilla që 
+  
+    
+      
+        T
+        (
+        n
+        )
+        ≤
+        c
+        ⋅
+        f
+        (
+        n
+        )
+      
+    
+    {\displaystyle T(n)\leq c\cdot f(n)}
+  
+ kur n ≥ n0 
+Definicioni 2.
+T(n) = Ω(f(n)) nëse ekzistojnë konstantet C dhe n0 të tilla që 
+  
+    
+      
+        T
+        (
+        n
+        )
+        ≥
+        c
+        ⋅
+        f
+        (
+        n
+        )
+      
+    
+    {\displaystyle T(n)\geq c\cdot f(n)}
+  
+ kur n ≥ n0 
+Definicioni 3.
+T(n) = Θ(h(n)) nëse ekzistojnë konstantet C dhe n0 ashtu që T(n) = O(h(n)) dhe T(n) = Ω(h(n))
+Definicioni 4.
+T(n) = o(p(n)) nëse ekzistojnë T(n) = O(p(n)) dhe T(n) < p(n)
+Disa rregulla:   Nëse T1(n) = O(f(n)) dhe T2(n) = O(g(n)) atëherë 
+                       T1(n) + T2(n) = max (O(f(n)), O(g(n)))
+                       T1(n) * T2(n) = O(f(n) * g(n))
+
+Përkufizim: Le të jenë dhënë dy funksione f dhe g me bashkësi fillimi 𝑍 (ose 𝑅) dhe bashkësi mbarimi 𝑅.
+Themi se 𝑓(𝑥) është 𝛰 (𝑔(𝑥)) nëse ekzistojnë konstantet 𝐶 dhe 𝑘 të tilla që
+|𝑓(𝑥)| ≤ 𝐶|𝑔(𝑥)|,                    ku 𝑥 > 𝑘.
+Me rritjen e përmasave të inputit, rritet edhe koha që i duhet një algoritmi për të shkuar deri te zgjidhja e problemit. Vlerësimi “O“ i kompleksitetit në kohë tregon këtë rritje.
+
+
+== Vlerësimet “𝚶 - e madhe” për disa funksione të rëndësishme ==
+Teorema 1 jep një rezultat të përgjithshëm për rritjen e polinomeve. 
+Le të jetë 𝑓(𝑥) = 𝑎𝑛𝑥𝑛 + 𝑎𝑛−1𝑥𝑛−1 + ⋯ + 𝑎1𝑥 + 𝑎0, ku 𝑎0, 𝑎1, . . . , 𝑎𝑛 janë numra real konstant. Atëherë, 𝑓(𝑥) është Ο(xn). 
+Vërtetim: Për 𝑥 > 1, përdorim mosbarazimin e trekëndëshit. 
+|𝑓(𝑥)| = |𝑎𝑛𝑥𝑛 + 𝑎𝑛−1𝑥𝑛−1 + ⋯ + 𝑎1𝑥 + 𝑎0 | ≤ |𝑎𝑛 |𝑥 𝑛 + |𝑎𝑛−1 |𝑥 𝑛−1 + ⋯ + |𝑎1 |𝑥 + |𝑎0 | = 𝑥𝑛 (|𝑎𝑛 | + |𝑎𝑛−1 | 𝑥 + ⋯ + |𝑎1 | 𝑥 𝑛−1 + |𝑎0 | 𝑥𝑛 ) ≤ 𝑥𝑛(|𝑎𝑛 | + |𝑎𝑛−1 | + ⋯ + |𝑎1 | + |𝑎0 |) 
+Gjatë këtyre kalimeve matematikore u përdor fakti që 𝑥𝑛 > 1 duke qënë se 𝑥 > 1, e për rrjedhojë mund të shmanget vlera absolute. Gjithashtu, 1 𝑥𝑖 , për 𝑖 = 1, . . . , 𝑛 është më e vogël se 1, duke qënë se 𝑥 > 1. Nëse shënojmë me 𝐶 = |𝑎𝑛 | + |𝑎𝑛−1 | + ⋯ + |𝑎1 | + |𝑎0 |, kemi që për 𝑘 = 1, |𝑓(𝑥)| ≤ 𝐶𝑥𝑛 . 
+Pra, 𝑓(𝑥) është 𝛰(𝑥𝑛 ).
+Teoremë: Le të jenë dhënë dy numra real 𝑎 dhe 𝑏 më të mëdhenj se 1, dhe le të jetë 𝑥 një numër real pozitiv. 
+Atëherë, log𝑎 𝑥 = log𝑏 𝑥 log𝑏 𝑎 ⟺ log𝑏 𝑥 = log𝑎 𝑥 ∙ log𝑏 𝑎 
+Vërtetim: Për të treguar rezultatin e mësipërm, mjafton të tregojmë që 𝑥 = 𝑏 log𝑏 𝑥 = 𝑏 log𝑎 𝑥∙log𝑏 𝑎 = (𝑏 log𝑏 𝑎 ) log𝑎 𝑥 = 𝑎 log𝑎 𝑥 = 𝑥 .
+Teoremë: Supozojmë që 𝑓1(𝑥) është 𝛰(𝑔1 (𝑥)) dhe 𝑓2(𝑥) është 𝛰(𝑔2 (𝑥)). 
+Atëherë, (𝑓1 + 𝑓2 )(𝑥) është 𝛰(max(|𝑔1 (𝑥)|,|𝑔2 (𝑥)|)). 
+Vërtetim: Meqënëse 𝑓1(𝑥) është 𝛰(𝑔1 (𝑥)) dhe 𝑓2(𝑥) është 𝛰(𝑔2 (𝑥)) , ekzistojnë konstantet 𝐶1, 𝑘1 dhe 𝐶2, 𝑘2 të tilla që |𝑓1(𝑥)| ≤ 𝐶1 |𝑔1 (𝑥)|, për çdo 𝑥 > 𝑘1 dhe |𝑓2 (𝑥)| ≤ 𝐶2 |𝑔2 (𝑥)|, për çdo 𝑥 > 𝑘2. Nëse 𝑥 > 𝑘1 dhe 𝑥 > 𝑘2, rrjedh se për 𝑥 ≥ max(𝑘1, 𝑘2 ) kemi të vërtetë |(𝑓1 + 𝑓2 )(𝑥) | = |𝑓1 (𝑥) + 𝑓2(𝑥)| ≤ |𝑓1 (𝑥)| + |𝑓2 (𝑥)| ≤ 𝐶1 |𝑔1 (𝑥)| + 𝐶2 |𝑔2 (𝑥)| ≤ (𝐶1 + 𝐶2 )|𝑔(𝑥)| 
+ku |𝑔(𝑥)| = max(|𝑔1 (𝑥)|,|𝑔2 (𝑥)|).
+
+
+== Kompleksiteti ==
+Çdo objekt fizik përcaktohet nga hapësira dhe koha. Për të gjetur efektivitetin e programit, njohja e vlerësimit të tyre duke përdorur kompleksitetin e hapësirës dhe kohës, mund ta bëjë programin të sillet në kushtet optimale të kërkuara dhe duke e bërë këtë, bëhemi programues efikas.
+Problemi i cili është i zgjidhshëm me anë të një algoritmi me kompleksitet polinomial, themi se edhe në rastin më të keq quhet i lehtë, sepse pritshmëria është që algoritmi do të ofroj zgjidhjen për problemin në një kohë relativisht të shkurtër. Nëse polinomi në vlerësimin “O- e madhe” ka shkallë të lartë (për shembull 100) ose në rastin kur koeficientët e tij janë ekstremisht të mëdhenj, algoritmit mund ti duhet një kohë shumë më gjatë për të zgjidhur problemin. Problemet të cilat nuk mund të zgjidhen nga algoritmet me kompleksitet polinomial, në rastin më të keq, quhen të vështirë. Problemet e ndryshme për të cilat nuk ekzistojnë algoritme që ofrojnë zgjidhjen e tyre quhen të pazgjidhshme. Vërtetimin e parë për ekzistencën e këtyre problemeve e ka dhënë matematikani dhe shkencëtari anglez Alan Turing.
+
+
+=== Rasti më i keq ===
+Me performancë më të keqe të një algoritmi kuptojmë numrin më të madh të veprimeve të nevojshme për të zgjidhur përmes algoritmit një problem të dhënë, me një input me një përmasë të caktuar. Në analizën e rastit më të keq, ne llogarisim kufirin e sipërm në kohën e funksionimit të një algoritmi. Analiza e performancës më të keqe na tregon se sa është numri i veprimeve që kërkon një algoritëm për të siguruar që të ofroj një zgjidhje.
+
+
+=== Rasti mesatar ===
+Analiza e rastit mesatar merret me gjetjen e numrit mesatar të veprimeve që nevojiten për të zgjidhur një problem, duke marrë parasysh të gjitha inputet e mundshme me një përmasë të dhënë. Pra, në analizën mesatare të rasteve, ne marrim të gjitha inputet e mundshme dhe llogarisim kohën e llogaritjes për të gjitha inputet. Analiza e rastit mesatar, zakonisht është më shumë e komplikuar se sa analiza e rastit më të keq.
+
+
+=== Rasti më i mirë ===
+Në analizën më të mirë të rastit, ne llogarisim kufirin e poshtëm në kohën e ekzekutimit të një algoritmi. Ne duhet të dimë rastin që shkakton një numër minimal operacionesh për t'u ekzekutuar. Analiza e rastit më të mirë është jo e vërtetë. Garantimi i një kufiri më të ulët në një algoritëm nuk jep ndonjë informacion, pasi që në rastin më të keq, një algoritmi mund të marrë vite për t'u ekzekutuar.
+
+
+=== Kompleksiteti kohor ===
+Kompleksiteti kohor është sasia e kohës që i duhet një algoritmi për tu ekzekutuar, në funksion të gjatësisë së hyrjes. Ai e mat kohën për të ekzekutuar çdo deklaratë të kodit në një algoritëm. 
+Ekziston një lidhje midis madhësisë së të dhënave hyrëse (n) dhe një numri operacionesh të kryera (N) në lidhje me kohën. Kjo lidhje njihet si rendi i rritjes në kompleksitetin kohor dhe jepet me O[n] ku O është rendi i rritjes dhe n është gjatësia e hyrjes.
+Ekzistojnë lloje të ndryshme të kompleksiteteve kohore, si:
+1. Koha konstante – O(1)
+2. Koha lineare – O(n)
+3. Koha logaritmike – O(log n)
+4. Koha kuadratike – O(n2)
+5. Koha kubike – O(n3)
+Disa nga funksionet shumë më komplekse janë: koha eksponenciale, koha kuazilineare, koha faktoriale, etj. Të cilat përdoren varësisht nga lloji i funksioneve të përcaktuara.
+Algoritmi Brute Force është një teknikë tipike e zgjidhjes së problemit ku zgjidhja e mundshme për një problem zbulohet duke kontrolluar secilën përgjigje një nga një, duke përcaktuar nëse rezultati plotëson deklaratën e një problemi apo jo. Algoritmi i forcës brutale zgjidhet në mënyrën më të drejtpërdrejtë, pa përfituar nga ndonjë ide që mund ta bëjë algoritmin më efikas. Kompleksiteti kohor i forcës brutale është O(m*n).
+
+
+=== Kompleksiteti hapësinor ===
+Kompleksiteti i hapësirës së një algoritmi paraqet hapësirën e marrë nga algoritmi në lidhje me madhësinë e hyrjes. Kompleksiteti hapësinor përfshin dy hapësira: ndihmëse dhe hapësirën e përdorur nga inputi.
+Kompleksiteti hapësinor është një koncept paralel me kompleksitetin kohor. Nëse krijojmë një grup me madhësi n, ky grup do të kërkojë hapësirë O(n). Nëse krijojmë një grup dy-dimensional me madhësi n*n, kjo kërkon hapësirë O(n2).
+Është më se e nevojshme të përmendet se kompleksiteti i hapësirës varet nga një një numër faktorësh si: gjuha programuese, përpiluesi, apo edhe makina që drejton algoritmin.
+
+
+== Historia ==
+Historikisht, një interes në optimizimin e algoritmeve aritmetike mund të gjurmohet para mesjetës. Metodat për zvogëlimin e numrit të veçorive, hapat themelorë të nevojshëm për llogaritje janë përshkruar në një tekst arab nga një astronom egjiptian i shekullit të katërmbëdhjetë Ibn el-Mejdi. Ai e krahasoi metodën e përkthimit me metodën e gjysmëpërkthimit. Metoda e përkthimit është përdorur për të gjetur prodhimin e dy numrave, kurse metoda e gjysmëpërkthimit vetëm për llogaritjen e katrorëve të numrave. Bazuar në shkrimet e Ibn el-Mejdiut, nëse dikush do të përdorte metodën e përkthimit për të gjetur katrorin e  një numri për shembull 348, do të kërkonte nëntë shumëzime. Në përgjithësi, kur rrënjëzojmë një numër n shifrash, metoda e përkthimit merr n2 shumëzime elementare, ndërsa metoda e gjysmëpërkthimit merr n(n-1)/2 shumëzime elementare.
+
+
+== Shiko edhe ==
+
+
+== Lidhje të jashtme ==
+
+Pa hyrë shumë në detaje në qoftë se kompleksiteti është O(lb(n)) do të thotë se po llogarisim logaritmin binar.
+
+
+== Referime ==

@@ -1,0 +1,113 @@
+Vastus, resistori, on elektroniikassa komponentti, joka vastustaa tasa- ja vaihtovirran kulkua. Vastuskomponentin sähkövastus eli resistanssi mitataan ohmeissa. Tarkkuus, jolla se osuu määriteltyyn määrään ohmeja ilmaistaan toleranssilukuna.
+Toisinaan puhekielessä suuretta resistanssi sanotaan vastukseksi.
+
+
+== Vastustyypit ==
+
+
+=== Säätyvät vastukset ===
+
+Joidenkin vastusten arvo on tarkoitettu riippuvan jostain ulkoisesta tekijästä. Termistorit ovat vastuksia, joiden vastusarvo riippuu lämpötilasta. Positiivisen lämpötilakertoimen vastusta kutsutaan PTC-termistoriksi (Positive Temperature Coefficient) ja negatiivisen lämpötilakertoimen vastusta NTC-termistoriksi (Negative Temperature Coefficient). Jos vastuksen arvo riippuu jännitteestä (Voltage Dependent Resistor, VDR-vastus) tällaista vastusta nimitetään varistoriksi. Vastuskomponenttia, jonka vastus säätyy valon mukaan (LDR Light Dependent Resistor), kutsutaan valovastukseksi.
+Mekaanisesti säädettävät vastukset luokitellaan työkalusäätöisiin trimmereihin ja käsisäätöisiin potentiometreihin.
+Lankavastus voi myös olla työkalulla aseteltava. Silloin sen suojakuoressa on vastuksen pituinen aukko, josta vastuslanka näkyy. Langan päällä on liikkuva metallirengas, joka ruuvimeisselillä kiristetään haluttuun vastusarvoon.
+
+
+=== Kiinteät vastukset ===
+Tavallisimpia kiinteitä vastuksia ovat massavastus, kalvovastus ja lankavastus.
+Massavastus valmistetaan puristamalla hiilikvartsiseos lieriömäiseen muotoon, jonka päälle tulee suojakerros. Aikaisemmin massavastus oli yleisin kiinteä vastustyyppi.
+Kalvovastus valmistetaan höyrystämällä lieriömäisen keraamisen rungon päälle tavallisesti spiraalimainen kalvo, jonka päälle tulee suojalakka tai -massa. Haluttuun resistanssiin voidaan vaikuttaa kalvonauhan pituudella, leveydellä ja paksuudella. Kalvovastukset jaetaan tavallisesti kolmeen alatyyppiin. Hiilikalvovastuksen kalvo on hiiltä ja se on halvin ja ehkä yleisin vastustyyppi. Metallikalvovastuksen kalvo on nikkelikromia ja se on myös yleinen vastustyyppi. Metallioksidikalvovastuksen kalvo on tinaoksidia.
+Lankavastus on muodoltaan lieriömäinen tai kulmikas. Lankavastus valmistetaan kiertämällä vastuslankaa eristerungon ympärille. Vastusarvo riippuu langan pituudesta ja paksuudesta. Vastuslankana käytetään esimerkiksi kuparin ja nikkelin seosta eli konstantaania tai krominikkeliä. Tavallisesti lankavastus kestää huomattavasti enemmän tehoa kuin massa- tai kalvovastus.
+
+Vastuslangan oheisen kuvan mukaisella kaksoiskierteellä voidaan ehkäistä vastuksen itseinduktanssia, eli loisinduktanssia. Esimerkiksi suurilla taajuuksilla käytetään pieni-induktanssisia vastuksia. Vastuslangan kaksoiskierteen vastakkaisiin suuntiin kulkevat vastuslangat kumoavat toistensa induktanssin.
+
+
+== Vastusarvon ilmaiseminen ==
+Vastuksen arvo ja toleranssi voidaan ilmaista vastukseen painetuin numeroin. Toinen tapa ilmaista on värikoodi, ns. RETMA (Radio Electronics Television Manufacturers Association) -sarjat. Siinä sallittuja vastusarvoja on 6, 12, 24, 48, 96 tai 192 kpl per dekadi. Niiden vastaavat nimitykset ovat E6, E12, E24, E48, E96 ja E192. Vastaavat toleranssit 20 %, 10 %, 5 %, x %, 1 % ja 0,5 % (myös 0,25 % ja 0,1 %).
+Kullekin numerolle 0...9 on oma värinsä, samoin toleransseille ja joskus myös lämpötilakertoimelle.
+
+Standardi EIA värikooditaulukko EIA-RS-279:
+
+Punaisesta violettiin värit ovat samassa järjestyksessä kuin sateenkaaressa.
+
+
+== Vastuksen tehonkesto ==
+Vastuksilla on rajallinen tehonkesto, (esimerkiksi 1/8 W, 1/4 W, 1/2 W jne.), joka määrää suurimman keskimääräisen tehon tietyssä ympäristön lämpötilassa (yleensä 23 astetta), jonka vastus kestää ilman ilmoitetun toleranssin ylittymistä. Sähköteho lasketaan virran I ja jännitteen U tulona: 
+
+  
+    
+      
+         
+        P
+        =
+        U
+        I
+      
+    
+    {\displaystyle \ P=UI}
+  
+, mikä Ohmin lain avulla voidaan kirjoittaa myös muotoihin 
+  
+    
+      
+        P
+        =
+        
+          
+            
+              U
+              
+                2
+              
+            
+            R
+          
+        
+        =
+        R
+        
+          I
+          
+            2
+          
+        
+      
+    
+    {\displaystyle P={\frac {U^{2}}{R}}=RI^{2}}
+  
+, missä R on resistanssi.
+
+
+== Vastusten käyttötarkoituksia ==
+Vastuksia voidaan käyttää mm. seuraaviin tarkoituksiin elektroniikan kytkennöissä:
+
+jännitteen muuttaminen – vastusjako esim. mittauspiireissä
+suodattimet – esim. RC-piirit
+virran rajoittaminen
+
+
+=== Lämmitysvastukset ===
+Sähkölämmittimissä on vastuselementtejä, joissa sähköenergia muuttuu lämpöenergiaksi. Tyypillisesti näissä vastuksissa lämmityselementti on valmistettu metallilangasta.
+
+
+== Katso myös ==
+Ohmin laki
+Potentiometri
+
+
+== Lähteet ==
+Volotinen, Vesa; Lesch, Kaj-Birger; Haaksikari, Jorma: Elektroniikka 1 – Analoginen elektroniikka.  WSOY, 1989.  ISBN 951-0-15259-5 
+
+
+=== Viitteet ===
+
+
+== Kirjallisuutta ==
+Wiio, Osmo A.; Somerikko, Unto V.: Nuorten radiokirja.  Tekniikan maailma, 1963. 
+
+
+== Aiheesta muualla ==
+
+Lisää tietoa vastuksista, muun muassa värikoodit (Arkistoitu – Internet Archive)
+Vastuksien (ja muidenkin komponenttien) RETMA-sarjoja (Arkistoitu – Internet Archive)
+Vastuksen koon värikoodilaskuri
+ResistorGuide.com: Wirewound resistor (englanniksi)

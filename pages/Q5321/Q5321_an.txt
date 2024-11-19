@@ -1,0 +1,102 @@
+Iste articlo ye sobre o component electronico. Se veiga resistencia electrica ta o fenomeno fisico.
+
+Un resistor u resistencia ye o component electronico disenyato ta meter una resistencia electrica determinata entre dos puntos d'un circuito. En atros casos, como en as planchas, calentadors, ecetra., as resistencias s'emplegan ta producir calor aprofeitando lo efecto Joule. Entre os tecnicos ye frecuent fer servir o termin resistor por estar mas preciso que resistencia.
+A corrient maxima en un resistor viene data por a maxima potencia que puet disipar o suyo cuerpo. Ista potencia se puet identificar visualment a partir d'o diametro sin que sía menester tener denguna atra indicación. As valors mas corrients son 0,25 W, 0,5 W y 1 W.
+Existen resistencias de valor variable, que se dicen potenciometros.
+
+
+== Comportamiento en un circuito ==
+Os resistors s'emplegan en os circuitos ta limitar a valor d'a corrient u ta fixar a valor d'a tensión. Se veiga la Lei d'Ohm.
+
+
+== Sistemas de Codificación ==
+
+
+=== Codigo de colors ===
+Ta caracterizar un resistor s'amenistan tres valors: resistencia electrica, disipación maxima y precisión u tolerancia. Istas valors s'indican a ormino sobre a mesma resistencia pendendo d'o tipo d'ista; ta o tipo de resistor axial, que se puet veyer en as fotografías, ditas valors apareixen con un codigo de franchas de colors.
+Istas valors s'indican con un conchunto de franchas de colors sobre o cuerpo de l'elemento. Son tres, cuatre u cinco franchas; metendo a francha de tolerancia (a sobén de color archent u oro) a la dreita, se leyen d'ezquierda enta dreita. A zaguera francha sinyala la tolerancia (precisión). D'a resta, a zaguera ye o multiplicador y las atras as cifras.
+A valura d'a resistencia electrica s'obtiene leyendo as cifras como un numero d'una, dos u tres cifras; se multiplica por o multiplicador y s'obtiene o resultato en Ohmios (Ω). O coeficient de temperatura nomás s'aplica en resistencias d'alta precisión (tolerancia menor de l'1%).
+
+
+==== Como leyer a valor d'una resistencia ====
+En una resistencia tenemos por un regular 4 linias de colors, encara que en podemos trobar belatras que tiengan 5 linias (4 de colors y 1 que indica tolerancia) imos a prener amás cheneral las de 4 linias, as primeras 3 y dixamos d'atra man a tolerancia que ye de color archent u oro.
+
+A primera linia representa o dichito d'as decenas.
+A segunda linia representa o dichito d'as unidaz.
+O numero asinas formato se multiplica por a potencia de 10 exprisata por a tercera linia (multiplicador).
+Por eixemplo:
+Tenemos una resistencia con as colors verda, amariella, roja y oro.
+
+Rechistramos a valor d'a primera linia (verda): 5
+Rechistramos a valor d'a segunda linia (amariella): 4
+Rechistramos a valor d'a tercera linia (roya): X 100
+Unimos as valors d'as primeras dos linias y multiplicamos por a valor d'a tercera
+54 X 100 = 5400Ω o 5,4 kΩ y ista ye a valor d'a resistencia esprisata en Ohmios
+
+
+==== Eixemplos ====
+
+A caracterización d'una resistencia de 2.700.000 Ω (2,7M Ω), con una tolerancia de ±10%, sería la representata en a Fegura 4:
+1°cifra: royo (2)
+2°cifra: morato (7)
+Multiplicador: berde (100000)
+Tolerancia: Archent (±10%)
+
+A valor d'a resistencia d'a Fegura 5 es de 65 Ω y tolerancia de ±2% ya que:
+1ª cifra: azul (6)
+2ª cifra: verde (5)
+3ª cifra: negro (0)
+Multiplicador: dorato (10-1)
+Tolerancia: Royo (±2%)
+
+
+=== Codificación de los Resistores en SMT ===
+
+A los resistors cuan se troban en circuitos con tecnolochía de montache de superficie lis s'imprentan valors numericas en un codigo pareixito a lo emplegato en os resistors acsials.
+Os resistores de tolerancia estándard en istos tipos de montaches (Standard-tolerance Surface Mount Technology (SMT)) son marcatos con un codigo de tres dichitos, en que os primers dos dichitos representan os primers dos dichitos significativos y o tercer dichito representa una potencia de diez (o numero de zeros).
+
+Por eixemplo:
+
+Os resistors de menos de 100 ohmios s'escriben: 100, 220, 470. O numero zero a la fin representa diez a la potencia de zero, que ye 1.
+
+Por eixemplo:
+
+A vegatas istas valors se marcan como "10" u "22" ta aprevenir errors.
+Os resistors menors de 10 ohmios tienen una 'R' ta indicar a posición d'o punto decimal.
+
+Por eixemplo:
+
+Os resistors de precisión son marcatos con codigos de cuatre dichitos, en os que os primers tres dichitos son os numeros significativos y o cuatreno ye a potencia de diez.
+
+Por eixemplo:
+
+As valors "000" y "0000" apareixen a vegatas en os enlaces de montaches de superficie, debito a que tienen una resistencia de cuasi zero.
+
+
+=== Codificación para uso Industrial ===
+Formato: XX 99999 ó XX 9999X
+[dos letras]<espacio>[valor d'o resistor (tres/quatre dichitos)]<sinespacio>[codigo de tolerancia(numerico/alfanumerico - un dichito/una letra)]
+
+O rango d'a temperatura operacional distingue os tipos comercial, industrial y militar d'os components.
+
+Tipo Comercial : 0 °C a 70 °C
+Tipo Industrial : −40 °C a 85 °C (a vegatas −25 °C a 85 °C)
+Tipo Militar : −55 °C a 125 °C (a vegatas -65 °C a 275 °C)
+Tipo Estandar: -5 °C a 60 °C
+
+
+== Resistencias de precisión ==
+Son aquellas cual valor s'achusta con errors de 100 partis por millón u menos y tien amás una variación mui chicota con a temperatura, de l'orden de 10 partis por millón entre 25 y 125 grados Celsius.
+Iste component tien una utilización muit especial en circuitos analochicos, con achustes muit precisos d'as especificacions, ta mas datos se veigan os manuals de Vishay, entre atros.
+
+
+== Se veiga tamién ==
+Efecto Joule.
+Lei d'Ohm.
+Corrient maxima d'una resistencia.
+Potencia que disipa una resistencia.
+
+
+== Vinclos externos ==
+ Se veigan as imáchens de Commons sobre os resistors.
+ Se veigan as imáchens de Commons sobre os resistors SMD.

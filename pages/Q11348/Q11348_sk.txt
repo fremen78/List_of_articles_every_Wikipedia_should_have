@@ -1,0 +1,297 @@
+Zobrazenie (iné názvy: jednoznačné zobrazenie, funkcia (v širšom zmysle), totálna funkcia (v širšom zmysle), priradenie) je predpis (presnejšie binárna relácia), ktorý priraďuje každému prvku jednej množiny (A) práve jeden prvok druhej množiny (B). 
+
+
+== Terminológia ==
+Pojem viacznačné zobrazenie/viacznačná funkcia nie je (napriek svojmu názvu) nikdy zobrazenie/funkcia podľa vyššie uvedenej definície. Pojem parciálna funkcia takisto (napriek svojmu názvu) nie je nevyhnutne zobrazenie/funkcia podľa vyššie uvedenej definície. Pojem (len) "zobrazenie" sa však ojedinele definuje tak, že zahŕňa aj parciálne funkcie.
+Pojem jednoznačné zobrazenie je "opačný" pojem k pojmu viacznačné zobrazenie. Pojem totálna funkcia je "opačný" pojem k pojmu parciálna funkcia.
+Z historických dôvodov sa hovorí v niektorých prípadoch zobrazeniam (hlavne, ak je definičný obor karteziánska mocina) operácie (napr. hovoríme o operácii sčítania či násobenia).
+V minulosti mali viacerí známi matematici svoju vlastnú definíciu funkcie (vždy síce podobnú vyššie uvedenej ale odlišnú).
+Výraz funkcia (totálna funkcia) v užšom zmysle je taká funkcia v širšom zmysle, u ktorej je B množinou čísiel (podľa iných zdrojov musí byť navyše A množina čísiel či skupín (usporiadaných n-tíc) čísiel).
+
+
+== Význam ==
+Pojem zobrazenie patrí medzi najzákladnejšie v matematike. Pôvodne vznikol ako abstrakcia vzťahov a pozorovaných zákonitostí v prírodných vedách (napr. veľkosť gravitačnej sily, ktorou je priťahované teleso k inému telesu, závisí od ich hmotností; počet jedincov za určitých podmienok je závislý od času a i.). 
+
+
+== Definícia pomocou množín ==
+Zobrazenie (funkcia) 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ z množiny A do množiny B je ľubovoľná podmnožina karteziánskeho súčinu 
+  
+    
+      
+        A
+        ×
+        B
+      
+    
+    {\displaystyle A\times B}
+  
+, ktorá spĺňa nasledovné vlastnosti:
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        A
+        ∃
+        b
+        ∈
+        B
+        :
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        φ
+      
+    
+    {\displaystyle \forall a\in A\exists b\in B:(a,b)\in \varphi }
+  
+,
+
+  
+    
+      
+        ∀
+        a
+        ∈
+        A
+        ,
+        ∀
+        
+          b
+          
+            1
+          
+        
+        ,
+        
+          b
+          
+            2
+          
+        
+        ∈
+        B
+      
+    
+    {\displaystyle \forall a\in A,\forall b_{1},b_{2}\in B}
+  
+ ak
+  
+    
+      
+        (
+        a
+        ,
+        
+          b
+          
+            1
+          
+        
+        )
+        ∈
+        φ
+        ,
+        (
+        a
+        ,
+        
+          b
+          
+            2
+          
+        
+        )
+        ∈
+        φ
+      
+    
+    {\displaystyle (a,b_{1})\in \varphi ,(a,b_{2})\in \varphi }
+  
+, potom 
+  
+    
+      
+        
+          b
+          
+            1
+          
+        
+        =
+        
+          b
+          
+            2
+          
+        
+      
+    
+    {\displaystyle b_{1}=b_{2}}
+  
+.
+Prvá vlastnosť hovorí, že každému prvku množiny A musí zobrazenie 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ priradiť aspoň jeden prvok množiny B, kým druhá hovorí, že ho môže priradiť najviac jeden. Inými slovami, zobrazenie priradí každému prvku množiny A práve jeden prvok množiny B.
+
+
+== Súvisiace pojmy ==
+Množine A hovoríme definičný obor (alebo len obor, niekedy aj doména), množine B koobor (alebo kodoména).
+Obor hodnôt zobrazenia 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ je množina všetkých takých prvkov
+množiny B na ktoré sa v zobrazení 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ zobrazuje nejaký prvok množiny A.
+Ak označíme danú funkciu napr. f, tak číslo, ktoré funkcia f priraďuje prvku z A, sa nazýva hodnota funkcie f v bode a a zapisuje sa f(a).
+
+
+== Zápis ==
+Fakt, že 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        φ
+      
+    
+    {\displaystyle (a,b)\in \varphi }
+  
+, často označujeme buď tzv. prefixovým zápisom: 
+  
+    
+      
+        φ
+        (
+        a
+        )
+        =
+        b
+      
+    
+    {\displaystyle \varphi (a)=b}
+  
+ alebo postfixovým zápisom: 
+  
+    
+      
+        a
+        φ
+        =
+        b
+      
+    
+    {\displaystyle a\varphi =b}
+  
+. Druhá forma sa používa hlavne v algebre.
+V prípade, že zobrazenie nazývame operácia (pozri vyššie), nazývame symboly označujúce operáciu operátory. Pri binárnych operáciach používame najčastejšie na zápis poznatku 
+  
+    
+      
+        (
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+        )
+        ,
+        b
+        )
+        ∈
+        φ
+      
+    
+    {\displaystyle ((a_{1},a_{2}),b)\in \varphi }
+  
+ tzv. infixový zápis: 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        φ
+        
+          a
+          
+            2
+          
+        
+        =
+        b
+      
+    
+    {\displaystyle a_{1}\varphi a_{2}=b}
+  
+.
+
+
+== Elementárne funkcie ==
+Konštantná funkcia
+Lineárna funkcia
+Kvadratická funkcia
+Mocninná funkcia
+Racionálna funkcia
+Polynomická funkcia
+Racionálna lomená funkcia
+Goniometrická funkcia
+Exponenciálna funkcia
+Logaritmická funkcia
+Hyperbolická funkcia
+
+
+== Externé odkazy ==
+http://thales.doa.fmph.uniba.sk/zlatos/la/LAG_A4.pdf Zobrazenie

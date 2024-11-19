@@ -1,0 +1,934 @@
+Systema coordinatarum est repraesentatio punctorum per numeros.  Si spatium N dimensiones habet, necesse est N numerorum.  Numeri in ordine sunt:  punctus (1,2) non idem est atque punctus (2,1).  Dicimus coordinatas par ordinatum esse, si sunt duo, vel N-plicem si N sunt.
+Exempli gratia, insula Manhata duas dimensiones habet, et possumus locationem huius insulae nominare duobus numeris, sicut "avenue quinta et via octagesima tertia."  Systema unius dimensionis habemus ad libros inveniendos:  librum quendam in biblioteca possumus indicare uno numero, qui est numerus libri in catalogo, sicut "QA9.H 32" vel "PA6858.A6 2004."  Coordinatae geographicae, hoc est longitudo et latitudo loci cuiusdam in terra, quoque faciunt systema coordinatarum.
+In theoria relativitatis, totum universum systemate quattuor coordinatarum describitur: tres sunt coordinatae spatiales, quarta dimensio tempus mensurat.  Theoria chordarum plures coordinatas aut dimensiones postulat, fortasse 10 aut etiam plures.
+
+
+== Systemata varia ==
+  
+
+Systema coordinatarum geometricum usitatum est systema "Cartesianum" dictum;  est systema coordinatarum per rectangulos.  Lineae inter se perpendiculares dantur, et punctum quodque spatii nominatur distantiis inter punctum et has lineas.  Lineae dicuntur axes.  Possumus habere quantoslibet axes et quantaslibet dimensiones.  Omnes axes in uno puncto coniunguntur, quod punctum est origo coordinatarum et habet valorem zerum in omni directione (nam hoc punctum inest in omni axi) -- nomen originis est ergo (0, 0) vel (0, 0, 0), vel (0, ... 0), tanta zera monstrans quantae coordinatae sunt.  Mathematicus francogallicus Renatus Cartesius hoc systema creavit in libro eius de Geometria.
+Aliud systema notatum est systema polare, in plano, quod unum solum axem habet, et originem vel polum est punctum hac in linea.  Duo numeri significant distantiam et directionem.  Si dicimus "i tres milia passum in directione septentrionali," locationem nominamus per coordinatas polares.  Punctum quoddam (r, θ) est a distantia r ab origine super lineam quae facit angulum θ cum axe.
+Si tres dimensiones habemus, possumus uti coordinatis per sphaeras, ubi primus numerus est distantia et alii sunt anguli;  aut possumus uti coordinatis per cylindros, unum modo angulum habentibus et duo numeros.  Si plures quam tres dimensiones habemus, possumus utraque methodo uti, sed saepius coordinatae rectanguli adhibentur, quod facilius sit.
+
+
+== Coordinatae et vectores ==
+
+Omne systema coordinatarum est basis spatii vectorum, quia omnis vector est combinatio linearis vectorum basis.  Numeri qui hanc combinationem faciunt sunt coordinatae vectoris.  Exempli gratia, si basis est 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},x_{2},x_{3})}
+  
+, vector 
+  
+    
+      
+        a
+        
+          x
+          
+            1
+          
+        
+        +
+        b
+        
+          x
+          
+            2
+          
+        
+        +
+        c
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle ax_{1}+bx_{2}+cx_{3}}
+  
+ coordinatas habet 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        ,
+        c
+        )
+      
+    
+    {\displaystyle (a,b,c)}
+  
+.  Vectores e basi sunt axes.
+Basis vectorum quae cum systeme Cartesiano cohaeret est copia vectorum (1, 0, 0...), (0, 1, 0...), (0, 0, 1...), et caeterorum, qui sunt vectores magnitudinis 1 in axibus perpendicularibus.  Saepius nominantur 
+  
+    
+      
+        
+          e
+          
+            1
+          
+        
+        ,
+        
+          e
+          
+            2
+          
+        
+        ,
+        
+          e
+          
+            3
+          
+        
+      
+    
+    {\displaystyle e_{1},e_{2},e_{3}}
+  
+ etc., ubi e significat elementarius (vector).
+Re vera, non necesse est axes perpendiculares esse, dummodo sint vectores independentes.
+
+
+== Geometria algebraica ==
+
+Systema coordinatarum geometriam cum algebra coniungit, quia possumus per numeros, qui puncta nominant, distantiam exprimere.  Formula "Euclideana" hoc est:  si puncta sunt 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},y_{1})}
+  
+ et 
+  
+    
+      
+        (
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          y
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{2},y_{2})}
+  
+, distantia inter puncta est 
+  
+    
+      
+        d
+        =
+        
+          
+            (
+            
+              x
+              
+                1
+              
+            
+            −
+            
+              x
+              
+                2
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              y
+              
+                1
+              
+            
+            −
+            
+              y
+              
+                2
+              
+            
+            
+              )
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle d={\sqrt {(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}}}
+  
+.  Si plus quam duas dimensiones habemus, puta punctos esse P1 et P2, quorum coordinatae sunt 
+  
+    
+      
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+        ,
+        
+          a
+          
+            3
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (a_{1},a_{2},a_{3},...,a_{n})}
+  
+ et 
+  
+    
+      
+        (
+        
+          b
+          
+            1
+          
+        
+        ,
+        
+          b
+          
+            2
+          
+        
+        ,
+        
+          b
+          
+            3
+          
+        
+        ,
+        .
+        .
+        .
+        
+          b
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (b_{1},b_{2},b_{3},...b_{n})}
+  
+.  Tunc formula generalis haec est:
+
+  
+    
+      
+        d
+        =
+        
+          
+            (
+            
+              a
+              
+                1
+              
+            
+            −
+            
+              b
+              
+                1
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              a
+              
+                2
+              
+            
+            −
+            
+              b
+              
+                2
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              a
+              
+                3
+              
+            
+            −
+            
+              b
+              
+                3
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            .
+            .
+            .
+            +
+            (
+            
+              a
+              
+                n
+              
+            
+            −
+            
+              b
+              
+                n
+              
+            
+            
+              )
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle d={\sqrt {(a_{1}-b_{1})^{2}+(a_{2}-b_{2})^{2}+(a_{3}-b_{3})^{2}+...+(a_{n}-b_{n})^{2}}}}
+  
+
+Possumus etiam figuram geometricam per aequationem exprimere.  Exempli gratia, circulus est copia omnium punctorum quae intervallo dato ("radio" dicto) inter se a dato puncto ("centro") distant.  Sit centrum origo, (0,0), et sit radius r. Tunc punctum quoddam (x, y) in circulo inest si distantia inter hoc punctum et originem est r -- hoc est, si:
+
+  
+    
+      
+        r
+        =
+        
+          
+            (
+            x
+            −
+            0
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            y
+            −
+            0
+            
+              )
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle r={\sqrt {(x-0)^{2}+(y-0)^{2}}}}
+  
+
+vel, simplicius, si:
+
+  
+    
+      
+        
+          r
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r^{2}=x^{2}+y^{2}}
+  
+
+Haec aequatio circulum definit:  si x et y numeri sunt, ut 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x^{2}+y^{2}=r^{2}}
+  
+, tunc punctum (x, y) est punctum huius circuli.
+Si centrum circuli est aliud punctum, ut (a, b), habemus:
+
+  
+    
+      
+        
+          r
+          
+            2
+          
+        
+        =
+        (
+        x
+        −
+        a
+        
+          )
+          
+            2
+          
+        
+        +
+        (
+        y
+        −
+        b
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r^{2}=(x-a)^{2}+(y-b)^{2}}
+  
+
+Omnis aequatio duarum quantitatum variabilium copiam punctorum in plano determinat:  si f(x, y) = a est aequatio, et si numeri x = h, y = k hanc aequationem veram faciunt, tunc punctum (h, k) est in tabula aequationis.  Exempli gratia, sit aequatio 
+  
+    
+      
+        (
+        
+          x
+          
+            2
+          
+        
+        −
+        1
+        )
+        (
+        x
+        −
+        1
+        
+          )
+          
+            2
+          
+        
+        +
+        (
+        
+          y
+          
+            2
+          
+        
+        −
+        1
+        
+          )
+          
+            2
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle (x^{2}-1)(x-1)^{2}+(y^{2}-1)^{2}=0}
+  
+ (vide figuram).  Punctum (0, 0) in tabula est quod x = 0, y = 0 aequationem satisfacit:  
+  
+    
+      
+        (
+        
+          0
+          
+            2
+          
+        
+        −
+        1
+        )
+        (
+        0
+        −
+        1
+        
+          )
+          
+            2
+          
+        
+        =
+        −
+        1
+        ,
+        (
+        
+          0
+          
+            2
+          
+        
+        −
+        1
+        
+          )
+          
+            2
+          
+        
+        =
+        +
+        1
+        ,
+        −
+        1
+        +
+        1
+        =
+        0.
+      
+    
+    {\displaystyle (0^{2}-1)(0-1)^{2}=-1,(0^{2}-1)^{2}=+1,-1+1=0.}
+  
+  Punctum (1, 2) non est:  
+  
+    
+      
+        (
+        
+          1
+          
+            2
+          
+        
+        −
+        1
+        )
+        (
+        1
+        −
+        1
+        
+          )
+          
+            2
+          
+        
+        −
+        (
+        
+          2
+          
+            2
+          
+        
+        −
+        1
+        
+          )
+          
+            2
+          
+        
+        =
+        0
+        −
+        9
+        =
+        −
+        9
+        ≠
+        0
+      
+    
+    {\displaystyle (1^{2}-1)(1-1)^{2}-(2^{2}-1)^{2}=0-9=-9\neq 0}
+  
+
+Aequatio plurium quantitatum variabilium puncta determinat in spatio tantarum dimensionum.
+
+
+== Mutatio coordinatarum ==
+
+Aequatio potest difficilis esse secundum systema quoddam, vel potius secundum basin quandam, quae facillior fit si aliam basin eleges.  Talis mutatio coordinatarum (aut mutatio variabilium) est transformatio linearis:  basis per matricem multiplicata (invertibilem, scilicet) alios vectores producit qui iam independentes sunt et qui sunt ergo nova basis eiusdem spatii.
+Exempli gratia, circulus supra laudatus est
+
+  
+    
+      
+        
+          r
+          
+            2
+          
+        
+        =
+        (
+        x
+        −
+        a
+        
+          )
+          
+            2
+          
+        
+        +
+        (
+        y
+        −
+        b
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r^{2}=(x-a)^{2}+(y-b)^{2}}
+  
+
+cuius centrus est (a, b).  Si malumus centrum habere in origine, debemus transformationem facere quae vectores (a, 0) et (0, b) in (1, 0) et (0, 1) mutat:
+
+  
+    
+      
+        X
+        ↦
+        x
+        −
+        a
+      
+    
+    {\displaystyle X\mapsto x-a}
+  
+
+  
+    
+      
+        Y
+        ↦
+        y
+        −
+        b
+      
+    
+    {\displaystyle Y\mapsto y-b}
+  
+
+Tunc aequatio secundum novam basin est
+
+  
+    
+      
+        
+          r
+          
+            2
+          
+        
+        =
+        
+          X
+          
+            2
+          
+        
+        +
+        
+          Y
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r^{2}=X^{2}+Y^{2}}
+  
+
+Aliud exemplum:  sit aequatio
+
+  
+    
+      
+        9
+        (
+        x
+        −
+        4
+        
+          )
+          
+            2
+          
+        
+        +
+        16
+        (
+        y
+        −
+        3
+        
+          )
+          
+            2
+          
+        
+        =
+        25
+      
+    
+    {\displaystyle 9(x-4)^{2}+16(y-3)^{2}=25}
+  
+
+Possumus transformationem facere quae ex ellipsi circulum facit:
+
+  
+    
+      
+        X
+        ↦
+        
+          
+            
+              x
+              −
+              4
+            
+            3
+          
+        
+      
+    
+    {\displaystyle X\mapsto {\frac {x-4}{3}}}
+  
+
+  
+    
+      
+        Y
+        ↦
+        
+          
+            
+              y
+              −
+              3
+            
+            4
+          
+        
+      
+    
+    {\displaystyle Y\mapsto {\frac {y-3}{4}}}
+  
+
+Aequatio secundum novam basin est
+
+  
+    
+      
+        
+          X
+          
+            2
+          
+        
+        +
+        
+          Y
+          
+            2
+          
+        
+        =
+        25
+      
+    
+    {\displaystyle X^{2}+Y^{2}=25}
+  
+
+
+== Notae ==
+
+
+== Nexus interni ==
+Functio
+Geometria analytica
+Graphum (mathematica)
+Systema coordinatarum caelestium
+
+
+== Bibliographia ==
+
+Coxeter, H.S.M. 1969.  Introduction to Geometry, editio altera.  Novi Eboraci:  John Wiley & Sons.
+Descartes, René.  1954.  The Geometry of René Descartes, cum traductione a David Eugene Smith et Marcia L. Latham scripta.  Novi Eboraci:  Dover.
+Moise, Edwin E.  1974. Elementary Geometry from an Advanced Standpoint, editio altera.  Reading:  Addison-Wesley.  ISBN 0-201-04793-4
+Neeman, Amnon.  2007.  Algebra and Analytic Geometry. Cantabridgiae:  Cambridge University Press.  ISBN 978-0-521-70983-5
+O'Halloran, Kay.  2005.  Mathematical Discourse:  Language, Symbolism, and Visual Images. Londini:  Continuum.  ISBN 0-8264-6857-8
+Shah, Priti, et Akira Miyake.  2005.  The Cambridge Handbook of Visuospatial Thinking. Cantabridgiae:  Cambridge University Press.  ISBN 0-521-80710-7.
+Slocum, Terry, ed.  2005.  Thematic Cartography and Geographic Visualization. Upper Saddle River:  Pearson/Prentice Hall.  ISBN 0-13-035123-7
+Stamper, Alva Walker.  1909. A History of the Teaching of Elementary Geometry. New York.
+
+
+== Nexus Externi ==
+
+Ludi coordinatarum, apud "Math is fun" (anglice)
+Coordinatae pro liberis (anglice)
+Coordinate geometry apud "Math wire" (anglice)

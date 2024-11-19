@@ -1,0 +1,2674 @@
+I matematikk er en funksjon en relasjon mellom to mengder, slik at det til ethvert element i den første mengden (funksjonsargument, uavhengig variabel, 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+-verdi) 
+blir tilordnet ett element i den andre mengden (funksjonsverdi, avhengig variabel, 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+-verdi). Et eksempel på en slik relasjon er 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f(x)=x^{2}}
+  
+   
+som viser forholdet mellom argumentet 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ og kvadratet av dette og som leses «f av x er lik x i andre».  Presentasjonen av en formell definisjon av en funksjon varierer i litteraturen.  
+Funksjonsbegrepet er svært sentralt i moderne matematikk og inngår også som en viktig del av matematikkundervisningen i skolen. 
+En funksjon kan spesifiseres på mange forskjellige måter: som en formel, som en graf, ved å beskrive egenskapene eller ved å spesifisere en algoritme for funksjonsverdiene. 
+Funksjonen kan også defineres ved å beskrive forholdet til en annen funksjon, for eksempel som en invers funksjon eller som en sum av to funksjoner.
+Som en følge av at funksjonsbegrepet er så viktig i matematikk, eksisterer det en stor og rik terminologi knyttet til dette.  
+Begrepene avbildning, operator, transformasjon og det engelske mapping brukes av og til synonymt med «funksjon», av og til med en tillagt nyanse i forhold til denne.
+Ofte brukes begrepene operator, transformasjon og mapping spesielt for funksjoner der både argumentmengden og verdiområdet er abstrakte  rom, 
+slik som for en lineær transformasjon. Operator brukes ofte for å betegne en funksjon der definisjonsmengden består av funksjoner.
+
+
+== Historie ==
+
+Relasjoner mellom to typer størrelser dukker tidlig opp i matematisk historie, selv om det skulle gå lang tid før slike relasjoner ble eksplisitt omtalt som en «regel» eller enda mer presist, som en «funksjon».
+Telling som grunnleggende operasjon er en form for funksjon, med en relasjon mellom abstrakte tall og et sett av objekter. Fra oldtidens Mesopotamia har vi tabeller med relasjoner mellom tall og
+inverser, kvadrattall og kubikktall.   Utarbeiding av forskjellige former for matematiske tabeller har vært viktig helt siden oldtiden og fram til dagens almanakker, ikke minst
+motivert ut fra astronomi.  De første formene for tabulering av trigonometriske relasjoner finner vi i gresk matematikk fra før Kristi fødsel.  Tabulering av matematiske
+funksjoner fortsatte helt til utviklingen av datamaskiner gjorde slike tabeller overflødige, og Mathematical Tables Project ble avviklet i 1948. Dette prosjektet hadde resultert i utgivelsen
+av standardverket Handbook of Mathematical Functions, der siste utgave kom i 1972. 
+En annen viktig inspirasjonskilde som sakte og gradvis ledet opp til introduksjonen av funksjoner, var studiet av kurver, et studium som også har røtter i gresk matematikk.  Det skulle likevel gå svært lang 
+tid fra gresk matematikk til de første forsøkene på en formalisering av funksjoner fant sted.  Nicole Oresme (1323?-1382) introduserte idéen om at en relasjon mellom målbare fysiske størrelser kan 
+visualiseres som en plan figur, som vi i dag ville kalle grafen til en funksjon.   René Descartes (1596-1650) og Pierre de Fermat (1601-1665) la grunnlaget for analytisk geometri og 
+dermed sammenhengen mellom koordinater og kurver.  Descartes påpekte at en ligning i to variable, representert ved en kurve, vil definere en relasjon mellom de to størrelsene.  Fermat ga ligninger for 
+kjeglesnittene, og drøftet også metoder for å finne maksimum til en «kvantitet», som var ett av ordene brukt for å omtale det vi i dag vil kalle en funksjon.  
+Studiet av kurver var en viktig motivasjon for differensial- og integralregning, utviklet omtrent samtidig og uavhengig av hverandre av Isaac Newton (1642-1726) og Gottfried Leibniz (1646-1716).  
+Newton brukte symbolet 
+  
+    
+      
+        
+          
+            
+              x
+              ˙
+            
+          
+        
+      
+    
+    {\displaystyle {\dot {x}}}
+  
+ for å betegne den deriverte av en størrelse 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+.  
+Leibniz var den første til å bruke ordet «funksjon», i 1694.  Ordet ble konstruert fra «functus», som er perfuktum partisipp av det latinske verbet «fungi», med betydning 
+«å utføre». Leibniz introduserte også begrepene «variabel», «parameter» og «konstant».
+En funksjon ble av Leibniz skrevet som en enkelt gresk bokstav eller ved hjelp av symbol
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    x
+                    ¯
+                  
+                
+                
+                  |
+                
+                
+                  
+                    1
+                    _
+                  
+                
+                
+                  |
+                
+                
+              
+              
+                
+                  Funksjon nr.1 av
+                
+                 
+                x
+              
+            
+            
+              
+                
+                  
+                    x
+                    ¯
+                  
+                
+                
+                  |
+                
+                
+                  
+                    2
+                    _
+                  
+                
+                
+                  |
+                
+                
+              
+              
+                
+                  Funksjon nr.2 av
+                
+                 
+                x
+              
+            
+            
+              
+                
+                  
+                    
+                      x
+                      ;
+                      y
+                    
+                    ¯
+                  
+                
+                
+                  |
+                
+                
+                  
+                    1
+                    _
+                  
+                
+                
+                  |
+                
+                
+              
+              
+                
+                  Funksjon nr.1 av
+                
+                 
+                x
+                 
+                
+                  og
+                
+                 
+                y
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}{\overline {x}}|{\underline {1}}|\qquad &{\text{Funksjon nr.1 av}}\ x\\{\overline {x}}|{\underline {2}}|\qquad &{\text{Funksjon nr.2 av}}\ x\\{\overline {x;y}}|{\underline {1}}|\qquad &{\text{Funksjon nr.1 av}}\ x\ {\text{og}}\ y\end{alignedat}}}
+  
+
+Leonhard Euler (1707-1783) var den første, i 1734, som skrev en funksjon som 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+, der bruken av bokstaven 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ var inspirert av ordet funksjon.. For en funksjon av to variable brukte brukte Euler senere flere ganger en notasjon med et ekstra kolon, som i 
+  
+    
+      
+        f
+        :
+        (
+        x
+        ,
+        t
+        )
+      
+    
+    {\displaystyle f:(x,t)}
+  
+.  
+Joseph Louis Lagrange (1736-1813) bidro med verket Theorie des fonctions analytiques (Paris, 1797) sterkt til å klargjøre funksjonsbegrepet og også til videre bruk av funksjonssymbolet 
+
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+.  Verket introduserer også notasjonen 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ for den deriverte av funksjonen.
+Differensial- og integralregningen skapte interesse både for kurver og funksjoner, ut over de tradisjonelle kjeglesnittene og de rasjonale funksjonene.  Rasjonale funksjoner er funksjoner som kan uttrykkes 
+som brøker av polynom.  Selv integralet av en enkel funksjon som 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        1
+        
+          /
+        
+        x
+      
+    
+    {\displaystyle f(x)=1/x}
+  
+ krever bruk av transcendente funksjoner, funksjoner som ikke kan uttrykkes ved hjelp av polynomuttrykk.  
+Betafunksjonen og gammafunksjonen er to slike transcendente funksjoner, begge introdusert av Euler.  Navnene og symbolene for disse to funksjonene ble først etablert mange år senere. 
+Niels Henrik Abel (1802-1829) har sammen med Carl Gustav Jacobi (1804-1851) og Carl Friedrich Gauss (1777-1855) fått æren av å ha introdusert elliptiske funksjoner, 
+en generalisering av trigonometriske funksjoner.
+Viktig for bruken av stringens og presisjon i matematisk analyse for funksjoner var arbeidet til Augustin Louis Cauchy (1789-1857).  Cauchy er kanskje mest kjent for å etablere 
+kompleks funksjonsteori, det vil si studiet av funksjoner der både argument og funksjonsverdi er komplekse tall. Arbeidet til Cauchy ble videreført av blant andre Pierre Alphonse Laurent (1813-1854) og
+Bernhard Riemann (1826-1866). Den førstnevnte oppdaget hvordan komplekse funksjoner kan utvikles i uendelige potensrekker, det som i dag kalles Laurent-rekker.
+I analysen til Leibniz og Newton er funksjonene reelle og kontinuerlige deriverbare størrelser. Det hadde lenge vært velkjent at slike funksjoner under nokså generelle vilkår kan utvikles i 
+potensrekker eller Taylorrekker, og funksjoner som oppfyller slike vilkår kalles analytiske.
+Joseph Fourier (1768-1830) antok at alle funksjoner også kan utvikles i rekker av trigonometriske funksjoner, det vi i dag kaller fourierrekker.  For å kunne utvikles i en fourierrekke trenger 
+funksjonen ikke å være kontinuerlig, den kan ha periodiske diskontinuiteter.  I første halvdel av det attende århundre begynte matematikere å trekke fram flere funksjoner som brøt med den
+tradisjonelle forestillingen til Leibniz og Newton:  Bernhard Bolzano (1781-1848) publiserte i 1834 et eksempel på en kontinuerlig funksjon som ikke er deriverbar i noe punkt.  
+Peter Gustav Dirichlet (1805-1859) ga et eksempel på en funksjon som ikke er kontinuerlig i noe punkt:  Funksjonen har verdien 
+  
+    
+      
+        c
+        >
+        0
+      
+    
+    {\displaystyle c>0}
+  
+ for rasjonale argument og verdien
+
+  
+    
+      
+        (
+        −
+        c
+        )
+      
+    
+    {\displaystyle (-c)}
+  
+ for irrasjonale argument.  Denne funksjonen kalles nå Dirichlets funksjon.  
+Bernhard Riemann ga et eksempel på en funksjon 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ som er diskontinuerlig i uendelig mange punkt, men likevel integrerbar.  
+Erkjennelsen av det eksisterte «patologiske» funksjoner førte til en løsrivelse av begrepet «funksjon» fra det geometriske begrepet «kurve».
+I 1837 definerte Dirichlet en funksjon som «en relasjon mellom to variable 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ og 
+
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, slik at til en hver numerisk verdi tilordnet 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, så er det en regel som også tilordner en entydig verdi av 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+».  Denne 
+definisjonen nærmer seg den moderne formen.  Løsrivelsen fra geometri var ledd i et større program for å frigjøre matematisk analyse fra geometri, et program der 
+Karl Weierstrass (1815-1897) var en viktig skikkelse. I dette arbeidet var sammenhengen mellom uendelige rekker og funksjoner sentralt.  
+I løpet av attenhundretallet ble det gradvis innført mer stringens og presisjon i matematisk analyse og i algebra.  Samtidig skjedde det en utvikling der matematikken ble mer og mer abstrakt.
+Som ledd i arbeidet med å etablere en stringent basis for algebra, påpekte George Peacock (1791-1858) i 1834 at elementene som bokstavene og symbolene refererte til, ikke trengte være tall. 
+Disse elementene kunne være hva som helst, så lenge de oppfylle spesifiserte matematisk krav.  Mengdelæren innført av Georg Cantor (1845-1918) ble et viktig grunnlag for abstraksjonsprosessen  
+også for funksjoner, der funksjoner ikke lenger trengte være knyttet til tall. Engelske matematikere var spesielt interessert i forbindelsen mellom matematikk og logikk, matematisk logikk. 
+Augustus De Morgan (1806-1871) og Charles Peirce (1839-1914) var begge viktige for å sette i gang et formelt studium av relasjoner, basert på mengdelæren.    
+I 1908 definerte Godfrey Harold Hardy (1877-1947) en funksjon som en relasjon mellom to variabler 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ og 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, der det «til noen verdier av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ alltid korresponderer verdier av 
+
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+».  Hardy krevde ikke at funksjonen skulle være definert for alle verdier av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ og heller ikke at funksjonen skulle forbinde en verdi 
+av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ til en enkelt, entydig verdi av 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+. Denne brede definisjonen av en funksjon omfatter flere relasjoner enn det den vanlige, samtidige matematikken betraktet.[trenger referanse]
+Giuseppe Peano (1858-1932) introduserte i 1888 vektorrom, og den aksiomatiske teorien ble i de første tiårene av 1900-tallet videreutviklet av David Hilbert (1862-1943) og Stefan Banach 
+(1892-1945).  I 1908 beskrev Maurice René Fréchet (1878-1973) i doktorarbeidet sitt metriske rom, og han var den første som brukte betegnelsen «rom» om
+abstrakte matematiske strukturer.  Både metriske rom og vektorrom har blitt fundamentalt viktige i funksjonsstudier, ved å knytte abstrakte geometriske egenskaper svarende til lengde og avstand også til funksjoner.  
+En rekke spesielle funksjonsrom er senere blitt definert og studert.
+Fréchet introduserte i doktorarbeidet også funksjonaler, en spesiell klasse av funksjoner som har reelle eller komplekse tall som verdiområde.
+Den engelske fysikeren Paul Dirac (1902-1984) innførte funksjonen som nå kalles Diracs deltafunksjon, til hjelp i kvantefysikk, et eksempel på at «patologiske» funksjoner kan være til 
+nytte i beskrivelse av fysiske fenomen.  Deltafunksjonen tilhører en klasse av generalisert funksjoner, også kalt distribusjoner, der teorien ble utviklet av
+Sergei Sobolev (1908-1989) og Laurent Schwartz (1915-2002).[trenger referanse]
+
+
+== Formell definisjon ==
+
+En intuitiv idé om en funksjon som en «regel» er svært gammel og er fremdeles brukt som definisjon i en del lærebøker i matematisk analyse. En funksjon defineres da 
+som en regel som tildeler hvert element i en mengde D ett enkelt element av en mengde C.
+Selv om definisjonen er tilstrekkelig for mange formål, er det ikke alltid tilfredsstillende at den støtter seg på det udefinerte begrepet «regel». 
+I dag er det vanlig å tolke «regel» som en binær relasjon.  Formelt kan en funksjon 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ fra en mengde 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ til en mengde 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ defineres som en mengde 
+
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ av ordnede par 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ i det kartesiske produktet 
+  
+    
+      
+        D
+        ×
+        C
+      
+    
+    {\displaystyle D\times C}
+  
+.  Mengden skal være entydig, i den forstand at hvis 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        G
+      
+    
+    {\displaystyle (x,y)\in G}
+  
+ 
+og 
+  
+    
+      
+        (
+        x
+        ,
+        z
+        )
+        ∈
+        G
+      
+    
+    {\displaystyle (x,z)\in G}
+  
+, så er 
+  
+    
+      
+        y
+        =
+        z
+      
+    
+    {\displaystyle y=z}
+  
+. 
+Definisjonen krever ikke at 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ er definert for alle elementer i mengden 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+.  
+Dersom funksjonen 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ er definert for alle elementer i 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, så sies funksjone å være total.[trenger referanse]
+Vanligvis blir ordet funksjon brukt til å bety en total funksjon. Ikke-totale funksjoner er viktige i funksjonsanalyse, matematisk logikk og kategoriteori.
+Mengden 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ kalles grafen til funksjonen.  Ikke alle forfattere skiller mellom funksjonen og grafen, og denne identifikasjonen fjerner 
+behovet for spesifisere 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ og 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ i den formelle definisjonen.
+Definisjonsmengden 
+  
+    
+      
+        A
+        ⊂
+        D
+      
+    
+    {\displaystyle A\subset D}
+  
+ til funksjonen er mengden av alle elementer som funksjonen 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ er definert for:
+
+  
+    
+      
+        A
+        =
+        {
+        x
+        ∈
+        D
+         
+        
+          |
+        
+         
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        G
+        }
+      
+    
+    {\displaystyle A=\{x\in D\ |\ (x,y)\in G\}}
+  
+
+Synonyme ord er definisjonsområde, domene og kilde. Et element i definisjonsmengden er et argument for funksjonen. For en total funksjon er 
+  
+    
+      
+        A
+        =
+        D
+      
+    
+    {\displaystyle A=D}
+  
+.  
+Mengden C kalles verdiområdet til funksjonen. Mengden 
+  
+    
+      
+        
+          V
+          
+            f
+          
+        
+      
+    
+    {\displaystyle V_{f}}
+  
+ av elementer i 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ som svarer til et ordnet par i 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+, kalles verdimengden til 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+:
+
+  
+    
+      
+        
+          V
+          
+            f
+          
+        
+        =
+        {
+        y
+        ∈
+        C
+         
+        
+          |
+        
+         
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        G
+        }
+      
+    
+    {\displaystyle V_{f}=\{y\in C\ |\ (x,y)\in G\}}
+  
+
+Verdimengden er en delmengde av verdiområdet.  Alternative navn for verdiområdet er kodomenet og for verdimengden bildet eller bildemengden.  
+Nullmengden til en funksjon er mengden av argument som gjør funksjonen lik null.  
+
+  
+    
+      
+        
+          N
+          
+            f
+          
+        
+        =
+        {
+        x
+        ∈
+        A
+        
+        
+          |
+        
+        
+        f
+        (
+        x
+        )
+        =
+        0
+        }
+      
+    
+    {\displaystyle N_{f}=\{x\in A\;|\;f(x)=0\}}
+  
+.  Nullmengden er en delmengde av definisjonsmengden.     
+Ulike disipliner kan bruke spesielt tilpassede varianter av den formelle funksjonsdefinisjonen.  
+I kategoriteori blir i noen sammenhenger mengden D kalt definisjonsmengden til f, selv om funksjonen f ikke er definert for hvert element i D.[trenger referanse] 
+I andre disipliner kan en droppe kravet om at en funksjon skal være entydig, det vil si returnere kun én verdi for et gitt argument.
+En bruker da formuleringer som en «entydig funksjon» og en «flertydig funksjon» for å skille mellom disse to tilfellene.  
+
+
+== Notasjon ==
+I stedet for en notasjon basert på ordnede par 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ er det også vanlig å skrive funksjonen som 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+.  Vanligvis brukes en enkelt bokstav, som 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, i kursiv skrift. Både
+små og store bokstaver blir brukt.  For en del standard funksjoner brukes flere bokstaver, for eksempel for trigonometriske funksjoner.  For slike standardfunksjoner dropper en også gjerne parentesene, dersom det ikke er 
+fare for misforståelser, slik som i 
+  
+    
+      
+        sin
+        ⁡
+        x
+      
+    
+    {\displaystyle \sin x}
+  
+.  Også for lineære funksjoner dropper en ofte parentesene, der dette er mulig uten å miste lesbarhet. 
+Bruken av omvendt polsk notasjon kan også i noen tilfeller eliminere behovet for parenteser.  I denne notasjonen skrives funksjonen som 
+  
+    
+      
+        x
+        
+        f
+      
+    
+    {\displaystyle x\,f}
+  
+.
+For eksempel er fakultetsfunksjonen som regel skrevet 
+  
+    
+      
+        n
+        !
+      
+    
+    {\displaystyle n!}
+  
+, selv om den relaterte gammafunksjonen skrives 
+  
+    
+      
+        Γ
+        (
+        n
+        )
+      
+    
+    {\displaystyle \Gamma (n)}
+  
+.
+For å vise mengder relatert til en total funksjon, skriver en
+
+  
+    
+      
+        f
+        :
+        D
+        →
+        C
+      
+    
+    {\displaystyle f\colon D\rightarrow C}
+  
+.
+Verdimengden skrives gjerne som 
+  
+    
+      
+        f
+        (
+        D
+        )
+      
+    
+    {\displaystyle f(D)}
+  
+.
+En komplett beskrivelse av en funksjon involverer navnet, definisjonsmengden, verdiområdet og en definisjon av den binære relasjonen. Derfor ser en ofte ulike former for todelt notasjon, som i 
+
+  
+    
+      
+        f
+        (
+        n
+        )
+        =
+        
+          
+            n
+            π
+          
+        
+        
+        n
+        ∈
+        N
+      
+    
+    {\displaystyle f(n)={\frac {n}{\pi }}\qquad n\in N}
+  
+
+og også
+
+  
+    
+      
+        
+          
+            
+              
+              
+                f
+                :
+                N
+                →
+                R
+              
+            
+            
+              
+              
+                n
+                ↦
+                
+                  
+                    n
+                    π
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}&f\colon N\to R\\&n\mapsto {\frac {n}{\pi }}\end{alignedat}}}
+  
+
+I dette eksempelet er funksjonen kalt «
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+», og denne har de naturlige tallene 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ som definisjonsmengde og de reelle tallene 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ som verdiområde. 
+Funksjonen avbilder 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ på seg selv, delt på¨
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+. 
+For sammensatte funksjoner kan det være hensiktsmessig å plassere funksjonsnavnet over pilen mellom mengdene som er involvert:
+
+  
+    
+      
+        A
+         
+        
+          
+            →
+            
+              f
+            
+          
+        
+         
+        B
+         
+        
+          
+            →
+            
+              g
+            
+          
+        
+         
+        C
+      
+    
+    {\displaystyle A\ {\xrightarrow {f}}\ B\ {\xrightarrow {g}}\ C}
+  
+
+Her er 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ en funksjon fra mengden 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ til mengden 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+, mens 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ er en funksjon fra 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ til 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+.
+
+
+== Spesifikasjon av funksjoner ==
+En gitt funksjon kan spesifiseres på flere måter, og avsnittet beskriver vanlige måter.
+
+
+=== Ved listing av ordnede par ===
+En funksjon kan spesifiseres fullt og helt ved å liste opp alle ordnede par som inngår i definisjonen.  Dersom definisjonsmengden er 
+  
+    
+      
+        A
+        =
+        {
+        1
+        ,
+        2
+        ,
+        3
+        }
+      
+    
+    {\displaystyle A=\{1,2,3\}}
+  
+, så kan en definere en funksjon
+
+  
+    
+      
+        f
+        :
+        A
+        →
+        R
+      
+    
+    {\displaystyle f:A\rightarrow R}
+  
+ ved
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                1
+                )
+              
+              
+                
+                =
+                1
+                
+                  ,
+                
+                23
+              
+            
+            
+              
+                f
+                (
+                2
+                )
+              
+              
+                
+                =
+                π
+              
+            
+            
+              
+                f
+                (
+                3
+                )
+              
+              
+                
+                =
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}f(1)&=1{,}23\\f(2)&=\pi \\f(3)&=2\end{alignedat}}}
+  
+
+
+=== Ved navn ===
+Matematikk inneholder en lang rekke funksjoner som er så viktige at de er gitt egne navn og symboler.  Dette omfatter elementære grunnfunksjoner (se eget avsnitt) og også mer 
+spesielle funksjoner, som for eksempel gammafunksjonen, Heaviside-funksjonen, Eulers totientfunksjon og feilfunksjonen.
+
+
+=== Ved formel ===
+En funksjon blir ofte spesifisert ved hjelp av matematiske symboler, som en formel. Et eksempel på en slik formelspesifikasjon kan være 
+  
+    
+      
+        y
+        =
+        2
+        x
+        +
+        b
+      
+    
+    {\displaystyle y=2x+b}
+  
+.  
+
+
+=== Som inverse funksjon ===
+En funksjon 
+  
+    
+      
+        f
+        :
+        D
+        →
+        C
+      
+    
+    {\displaystyle f:D\rightarrow C}
+  
+ sies å være bijektiv dersom funksjonen definerer en-til-en korrespondanse mellom elementer i 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ og elementer i 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+.  Det vil si at det for hvert
+element 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ i 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ eksisterer ett og kun ett element 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ slik at 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+.  For slike funksjoner er det mulig å definere den inverse funksjonen 
+
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        :
+        C
+        →
+        D
+      
+    
+    {\displaystyle f^{-1}:C\rightarrow D}
+  
+ som avbilder 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        ∈
+        C
+      
+    
+    {\displaystyle y=f(x)\in C}
+  
+ på 
+  
+    
+      
+        x
+        ∈
+        D
+      
+    
+    {\displaystyle x\in D}
+  
+.
+Den reelle logaritmefunksjonen er eksempel på en bijektiv funksjon fra mengden av positive reelle tall inn på mengden av reelle tall.  Funksjonen har en invers funksjon, som er eksponentialfunksjonen.
+Selv om en funksjon ikke er bijektiv, så kan en i noen tilfeller velge undermengder 
+  
+    
+      
+        E
+        ⊂
+        D
+      
+    
+    {\displaystyle E\subset D}
+  
+ og 
+  
+    
+      
+        F
+        ⊂
+        C
+      
+    
+    {\displaystyle F\subset C}
+  
+, slik at restriksjonen av funksjonen er bijektiv fra 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ til 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+.
+Den inverse funksjonen vil da eksistere begrenset til disse mengdene.  De inverse trigonometriske funksjonene er definert på denne måten.  For eksempel er cosinus-funksjonen en bijeksjon fra intervallet 
+  
+    
+      
+        [
+        0
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle [0,\pi ]}
+  
+, og den inverse funksjonen arcus-cosinus har definisjonsmengde 
+  
+    
+      
+        [
+        −
+        1
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle [-1,1]}
+  
+.
+
+
+=== Som implisitt funksjon ===
+Mange binære relasjoner mellom to mengder 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ og 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ vil være av en slik form at de for hvert element i 
+  
+    
+      
+        x
+        ∈
+        D
+      
+    
+    {\displaystyle x\in D}
+  
+ entydig definerer et element 
+  
+    
+      
+        y
+        ∈
+        C
+      
+    
+    {\displaystyle y\in C}
+  
+.  Slike relasjoner
+vil definere en implisitt funksjon  Den binære relasjonen som definerer den implisitte funksjonen, er som oftest en ligning.  Inverse funksjoner er en type funksjoner som er definert implisitt, 
+ved en enkel ligning 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+.  
+Som et eksempel vil ligningen for enhetssirkelen
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle x^{2}+y^{2}=1}
+  
+
+være en relasjon mellom 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ og 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+.  For for de fleste verdiene av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ i intervallet [-1,1] definerer denne to verdier av 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, en positiv og en negativ. 
+Det vil si at relasjonen definerer to funksjoner implisitt, en med verdimengde [-1,0] og en med verdimengden [0,1].  I dette enkle tilfellet er det mulig å uttrykke de to funksjonene eksplisitt:
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+              
+              
+                
+                  
+                    1
+                    −
+                    
+                      x
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                x
+                ∈
+                [
+                −
+                1
+                ,
+                1
+                ]
+              
+            
+            
+              
+                g
+                (
+                x
+                )
+              
+              
+                
+                =
+                −
+              
+              
+                
+                  
+                    1
+                    −
+                    
+                      x
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                x
+                ∈
+                [
+                −
+                1
+                ,
+                1
+                ]
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}f(x)&=&{\sqrt {1-x^{2}}}\qquad x\in [-1,1]\\[4pt]g(x)&=-&{\sqrt {1-x^{2}}}\qquad x\in [-1,1]\end{alignedat}}}
+  
+
+I mer kompliserte tilfeller er det ikke mulig å definere en implisitt funksjon på en eksplisitt form.  
+Tilstrekkelige vilkår for at en funksjonsrelasjon 
+  
+    
+      
+        F
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        ,
+        .
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            n
+          
+        
+        ,
+        y
+        )
+        =
+        0
+      
+    
+    {\displaystyle F(x_{1},x_{2},x_{3},....,x_{n},y)=0}
+  
+ definerer 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ implisitt som funksjon av 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},x_{2},...,x_{n})}
+  
+ er gitt ved 
+det implisitte funksjonsteorem. 
+
+
+=== Som sammensatt funksjon ===
+En funksjon kan spesifiseres som en sammensatt funksjon, også kalt et produkt, av to eller flere andre funksjoner.  La 
+  
+    
+      
+        g
+        :
+        A
+        →
+        B
+      
+    
+    {\displaystyle g:A\rightarrow B}
+  
+ og 
+  
+    
+      
+        h
+        :
+        B
+        →
+        C
+      
+    
+    {\displaystyle h:B\rightarrow C}
+  
+.  
+En sammensatt funksjon 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ er definert ved
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        h
+        (
+        g
+        (
+        x
+        )
+        )
+        
+        x
+        ∈
+        A
+      
+    
+    {\displaystyle f(x)=h(g(x))\quad x\in A}
+  
+
+Verdimengden til 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ er en delmengde av 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+.  En sammensatt funksjon kan skrives som 
+  
+    
+      
+        f
+        =
+        g
+        ∘
+        h
+      
+    
+    {\displaystyle f=g\circ h}
+  
+.   Et eksempel på en sammensatt funksjon er gitt ved
+
+  
+    
+      
+        
+          
+            
+              
+                g
+                (
+                u
+                )
+              
+              
+                
+                =
+                sin
+                ⁡
+                u
+              
+            
+            
+              
+                h
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  x
+                  
+                    2
+                  
+                
+              
+            
+            
+              
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                g
+                (
+                h
+                (
+                x
+                )
+                )
+                =
+                sin
+                ⁡
+                
+                  x
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}g(u)&=\sin u\\h(x)&=x^{2}\\f(x)&=g(h(x))=\sin x^{2}\end{alignedat}}}
+  
+
+
+=== Ved differensialregning ===
+Mange funksjoner er definert som løsningen av en differensialligning.  I det enkleste tilfellet inkluderer dette alle funksjoner som er en antiderivert av en annen funksjon, det vil si som er løsning av en ligning av typen
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\frac {dy}{dx}}=f(x)}
+  
+
+Mer komplekse eksempler inkluderer Bessel-funksjoner, Legendre-funksjoner og den hypergeometriske funksjonen.  
+
+
+=== Ved rekursjon ===
+Funksjoner med definisjonsmengde lik mengden av naturlige tall 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ kan defineres ved hjelp av rekursjon, det vil si at funksjonsverdien for 
+  
+    
+      
+        n
+        ∈
+        N
+      
+    
+    {\displaystyle n\in N}
+  
+ blir definert 
+som en funksjon av funksjonsverdier svarende til argument mindre enn 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+:
+
+  
+    
+      
+        f
+        (
+        n
+        )
+        =
+        F
+        (
+        
+        f
+        (
+        n
+        −
+        1
+        )
+        ,
+        f
+        (
+        n
+        −
+        2
+        )
+        ,
+        .
+        .
+        .
+        ,
+        f
+        (
+        1
+        )
+        
+        )
+      
+    
+    {\displaystyle f(n)=F(\,f(n-1),f(n-2),...,f(1)\,)}
+  
+
+Her er funksjonen 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ definert ved et endelig antall aritmetiske operasjoner på argumentene.  En følge er en type funksjon som ofte blir definert på denne måten.  
+
+
+== Representasjon av funksjoner ==
+I tillegg til en formell spesifikasjon, kan en funksjon representeres på flere måter som gir en forenklet fremstilling av variasjon i funksjonen.  Dette gjelder spesielt for reelle funksjoner, det vil si
+funksjoner der verdiområdet er mengden av reelle tall.
+
+
+=== Graf ===
+Grafen 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ til en funksjon 
+  
+    
+      
+        f
+        :
+        A
+        →
+        C
+      
+    
+    {\displaystyle f:A\rightarrow C}
+  
+ er formelt definert som
+
+  
+    
+      
+        G
+        =
+        {
+        (
+        x
+        ,
+        f
+        (
+        x
+        )
+        )
+        
+        
+          |
+        
+        
+        x
+        ∈
+        A
+        }
+        .
+      
+    
+    {\displaystyle G=\{(x,f(x))\,|\,x\in A\}.}
+  
+
+For en reell funksjon av en reell variabel vil mengden av ordnede par 
+  
+    
+      
+        (
+        x
+        ,
+        f
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle (x,f(x))}
+  
+ svare til en mengde av punkt i et todimensjonalt koordinatsystem, og en visuell fremstilling av denne punktmengden omtales 
+vanligvis som en kurve, som et plott eller som en graf til funksjonen.
+
+
+=== Tabell ===
+En tabell kan gi en komplett eller en ikke-komplett framstilling av en funksjon. Eksempler er
+
+Tabeller som viser portotakster som funksjon av brevvekt og lengde på forsendelsen
+Logaritmetabeller som viser logaritmefunksjonen for utvalgte verdier
+Dersom tabellen ikke er fullstendig, så kan interpolasjon brukes for å finne mellomliggende verdier.  
+
+
+=== Diagrammer ===
+For funksjoner som har en endelig mengde som definisjonsområde, kan et søylediagram (stolpediagram) brukes til å representere funksjonen.  I et slikt diagram er høyden på søylen proporsjonal med funksjonsverdien.
+Funksjoner med et endelig definisjonsområde kan også representeres i sektordiagram (sirkeldiagram, kakediagram).  Buelengden til hver sektor er proporsjonal med funksjonsverdien.  Det finnes en rekke spesialiserte
+varianter av sektordiagrammer, som for eksempel rosediagrammer.
+
+
+== Egenskaper til funksjoner ==
+Funksjoner kan karakteriseres med en lang rekke egenskaper, og egenskapene kan brukes til å kategorisere funksjoner i klasser og funksjonsrom.  Her er bare omtalt noen få viktige egenskaper.
+
+
+=== Injektivitet, surjektivitet og bijektivitet ===
+En funksjon er injektiv hvis den for ethvert element i verdimengden til funksjonen svarer bare til maksimum én verdi i definisjonsmengden. En slik funksjon kalles en injeksjon og også en
+en-til-en-funksjon. En funksjon er surjektiv hvis den for ethvert element i verdimengden svarer til minst én verdi i definisjonsmengden. En funksjon er bijektiv hvis den for ethvert element i verdimengden svarer til nøyaktig én verdi i definisjonsmengden.  
+
+
+=== Symmetrier ===
+En funksjon er jevn eller jamn dersom den har symmetriegenskapen 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        −
+        x
+        )
+      
+    
+    {\displaystyle f(x)=f(-x)}
+  
+.  For en reell funksjon av en reell variabel svarer dette til at grafen til funksjonen er symmetrisk om 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+-aksen.
+En odde funksjon oppfyller egenskapen 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        −
+        f
+        (
+        −
+        x
+        )
+      
+    
+    {\displaystyle f(x)=-f(-x)}
+  
+.  Grafen til en odde reell funksjon av en variabel er symmetrisk om origo.  
+En funksjon av flere variable er symmetrisk dersom den er uendret ved permutasjoner av argumentene, for eksempel 
+
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        )
+        =
+        f
+        (
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle f(x_{1},x_{2})=f(x_{2},x_{1})}
+  
+
+
+=== Kontinuitet ===
+En funksjon er kontinuerlig for et argument 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ dersom den oppfyller et vilkår
+
+  
+    
+      
+        f
+        (
+        a
+        )
+        =
+        
+          lim
+          
+            x
+            →
+            a
+          
+        
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(a)=\lim _{x\rightarrow a}f(x)}
+  
+
+Definisjonen krever at størrelsene på begge sider av likhetstegnet er definert.  Det eksisterer flere alternative definisjoner av det viktige begrepet kontinuitet. Funksjonen sies å være kontinuerlig i et område 
+dersom den er kontinuerlig for alle elementer i området.  En kontinuerlig funksjon kan uformelt karakteriseres som «sammenhengende».  Et punkt der funksjonen ikke er kontinuerlig, kalles en diskontinuitet
+
+
+=== Deriverbarhet ===
+En funksjon er deriverbar i et punkt dersom den deriverte er definert i punktet.  Funksjonen er deriverbar i et område dersom den er deriverbar for alle argument i området.  
+En funksjon som har kontinuerlig førstederiverte, sies å være kontinuerlig deriverbar.  For en glatt funksjon er alle deriverte av alle ordener kontinuerlige.  
+En kompleks funksjon er deriverbar dersom den oppfyller Cauchy-Riemann-ligningene.  En holomorf funksjon er en kompleks funksjon som er deriverbar i hele definisjonsmengden.    
+
+
+== Funksjonstyper ==
+Funksjoner kan deles inn i en lang rekke forskjellige typer, klasser og funksjonsrom, og her nevnes kun et par viktige typer.  
+For en oversikt over funksjoner omtalt på Wikipedia, se Kategori:Funksjoner.
+
+
+=== Elementære grunnfunksjoner ===
+Til de elementære grunnfunksjonene av en reell eller kompleks variable regnes
+
+De rasjonale funksjonene, inkludert polynomfunksjonene
+Eksponentialfunksjonen
+Logaritmefunksjonen
+Trigonometriske funksjoner, inkludert arcus-funksjonene
+Den generelle potensfunksjonen
+
+
+=== Elementære funksjoner ===
+En elementær funksjon er en funksjon sammensatt av elementære grunnfunksjoner, ved hjelp av et endelig antall aritmetiske operasjoner; addisjon, subtraksjon, multiplikasjon og divisjon. I tillegg
+regner også sammensatte funksjoner av elementære funksjoner som elementære.  
+
+
+=== Linære funksjoner ===
+Begrepet lineær funksjon kan brukes på to ulike måter:  I reell analyse kaller en ofte funksjonen 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        a
+        x
+        +
+        b
+      
+    
+    {\displaystyle f(x)=ax+b}
+  
+ for en lineær funksjon.  Grafen til denne funksjonen er en rett linje.
+I lineær algebra er en lineær funksjon en funksjon som oppfyller ligningen
+
+  
+    
+      
+        f
+        (
+        α
+        x
+        +
+        β
+        y
+        )
+        =
+        α
+        f
+        (
+        x
+        )
+        +
+        β
+        f
+        (
+        y
+        )
+      
+    
+    {\displaystyle f(\alpha x+\beta y)=\alpha f(x)+\beta f(y)}
+  
+
+I lineær algebra er altså funksjonen 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        a
+        x
+        +
+        b
+      
+    
+    {\displaystyle f(x)=ax+b}
+  
+ kun lineær dersom konstanten 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ er lik null.
+
+
+=== Aritmetiske funksjoner ===
+I tallteori benyttes aritmetiske funksjoner. De har som argument et naturlig tall n og gir et lignende tall ut. Et eksempel ville være en potens ns der s er et heltall. En av de mest kjente, aritmetiske funksjoner er Eulers totientfunksjon.
+
+
+=== Algerbraiske og transcendente funksjoner ===
+En algebraisk funksjon er en funksjon som kan være en løsning av en algebraisk ligning i en eller flere reelle eller komplekse variable. Alle rasjonale funksjoner er algebraiske.
+En funksjon som ikke er algebraisk, er en transcendent funksjon. Logaritmefunksjonen, eksponentialfunksjonen og gammafunksjonen er alle transcendente funksjoner.  
+
+
+=== Analytiske funksjoner ===
+En reell eller en kompleks funksjon er analytisk i en omegn til et punkt dersom den kan utvikles i en konvergent potensrekke omkring punktet.  
+En funksjon som er analytisk i hele det komplekse planet, kalles en hel funksjon.  Analytiske funksjoner kan altså utvikles i konvergente potensrekker.  Eksempler på analytiske funksjoner er
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  e
+                  
+                    x
+                  
+                
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    0
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    
+                      x
+                      
+                        k
+                      
+                    
+                    
+                      k
+                      !
+                    
+                  
+                
+              
+            
+            
+              
+                sin
+                ⁡
+                x
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    0
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    
+                      (
+                      −
+                      1
+                      
+                        )
+                        
+                          i
+                        
+                      
+                      
+                        x
+                        
+                          2
+                          k
+                          +
+                          1
+                        
+                      
+                    
+                    
+                      (
+                      2
+                      k
+                      +
+                      1
+                      )
+                      !
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}e^{x}&=\sum _{k=0}^{\infty }{x^{k} \over k!}\\\sin x&=\sum _{k=0}^{\infty }{\frac {(-1)^{i}x^{2k+1}}{(2k+1)!}}\end{alignedat}}}
+  
+
+
+== Derivasjon ==
+
+En derivert av en funksjon er et mål for den momentane endringen til funksjonen. For en reell eller kompleks funksjon av én variabel er den deriverte i et punkt 
+  
+    
+      
+        x
+        =
+        a
+      
+    
+    {\displaystyle x=a}
+  
+ definert ved
+
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        a
+        )
+        =
+        
+          
+            
+              d
+              f
+            
+            
+              d
+              x
+            
+          
+        
+        (
+        a
+        )
+        =
+        
+          lim
+          
+            x
+            →
+            a
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              )
+              −
+              f
+              (
+              a
+              )
+            
+            
+              x
+              −
+              a
+            
+          
+        
+      
+    
+    {\displaystyle f'(a)={df \over dx}(a)=\lim _{x\rightarrow a}{{f(x)-f(a)} \over {x-a}}}
+  
+,
+forutsatt at grensen eksisterer.  Funksjonen sies da å være differensierbar eller deriverbar i 
+  
+    
+      
+        x
+        =
+        a
+      
+    
+    {\displaystyle x=a}
+  
+. En kompleks funksjon som er differensierbar i hele definisjonsområdet, kalles en holomorf funksjon.  
+En funksjon som er deriverbar i et punkt, vil også være kontinuerlig i punktet.
+For reelle funksjoner av flere variable uttrykker en partiell derivert variasjonen til funksjonen når én av variablene endres og de andre holdes konstant.  
+Den retningsderiverte av en slik funksjon er et mål for endringen i en gitt retning.  Gradienten er en vektor som peker i den retningen funksjonen endrer seg mest.  
+En Gateaux-derivert for en funksjon er en generalisering av den retningsderiverte.  En Frechet-derivert generaliserer teori for den deriverte til en reell funksjon av en variabel til et Banach-rom.
+
+
+== Integrasjon ==
+
+Integralet av en reell funksjon av en variabel kan defineres uformelt som arealet under grafen til funksjonen.  Formelt defineres integralet over et intervall vanligvis som en grenseverdi for en 
+sum av rektangulære areal, når bredden av hvert rektangel går mot null og antall rektangler mot uendelig.  Et slik integral kalles et Darboux-integral eller et Riemann-integral.  
+En funksjon der grenseverdien eksisterer kalles integrerbar. Integrasjon over et intervall kalles også å finne det bestemte integralet.  
+Det ubestemte integralet eller den antideriverte av en funksjon 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ er en ny funksjon 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ som har funksjonen 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ som derivert, det vil si 
+
+  
+    
+      
+        
+          F
+          ′
+        
+        =
+        f
+      
+    
+    {\displaystyle F'=f}
+  
+.  Funksjonen 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ kalles også en primitiv funksjon til 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+.  
+Det ubestemte integralet er relatert til det bestemte integralet gjennom analysens fundamentalteorem.  Derivasjon og integrasjon er dermed inverse operasjoner.  
+En funksjon kan også integreres langs en kurve, i et linjeintegral.  En funksjon av flere variable kan integreres over en flate, i et flateintegral.  Et volumintegral er et integral over
+et tredimensjonalt område, et volum.
+Det eksisterer flere generaliserte integral, definert for å kunne omfatte en større gruppe av funksjoner som integrerbare.  Slike generaliseringer er Riemann–Stieltje-integral
+og Lebesgue-integral.
+
+
+== Se også ==
+Funksjonsdrøfting
+Funksjonslære i norsk skole
+Isomorfisme
+Ligning (matematikk)
+Matematisk analyse
+Proporsjonalitet
+
+
+== Referanser ==
+
+
+== Litteratur ==
+G. Thomas, R. Finney (1995). Calculus and analytic geometry (9th edition utg.). Reading, USA: Addison-Wesley. ISBN 0-201-53174-7. CS1-vedlikehold: Ekstra tekst (link)
+Ronald Douglas Milne (1980). Applied functional analysis, an introductory treatment. London: Pitman Publishing Limited. ISBN 0-273-08404-6. 
+N.N. Lebedev (Oversatt og redigert av R.A Silverman) (1972). Special functions and applications. I. New York: Dover Publications. ISBN 0-486-60624-4. 
+C.B.Boyer (1968). A history of mathematics. Princeton, USA: John Wiley & Sons, Inc. ISBN 0-691-02391-3.

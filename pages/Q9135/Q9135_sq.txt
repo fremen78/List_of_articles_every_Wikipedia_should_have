@@ -1,0 +1,164 @@
+Sistemi operativ është një softuer kompjuterik i cili  menaxhon mënyrën në të cilën programet të ndryshme e përdorin harduerin e kompjuterit dhe rregullon mënyrën se si përdoruesi e kontrollon kompjuterin.
+Një sistem operativ merret me inputet dhe outputet e kompjuterit dhe rregullimit  dhe leximin e memories të kompjuterit dhe bën operimin e harduerit si dhe ndezjen e kompjuterit. Sistemi Operativ është një pjesë shumë e rëndësishme e kompjuterit. Në një  shpjegim të thjeshtë hardueri është pjesa fizike e kompjuterit ndërsa sistemi operativ është ai që  e lëviz.
+Sot ka shumë distributorë të sistemeve operative të cilat mund të përmenden Windows vista, xp, 7, 8, 10, MacOS, iOS, android, Ubuntu, Linux etj.
+
+
+== Sistemi Operativ ==
+Sistemi operativ është programi kryesor në një kompjuter. Përmes tij ekzekutohet çdo program tjetër aplikativ. Sistemi operativ kujdeset për funksionet bazë të kompjuterit siç janë njohja e hyrjeve prej tastierës, daljet në pajisjet dalëse, mbajtja e shënimeve për ndryshimet në skeda dhe direktori si dhe kontrollimi i pajisjeve periferike si disqet dhe gjurmështypësit. Ekzistojnë sisteme operative të ndryshme, por i pari që është shfrytëzuar ka qene DOS-i (Disk Operating System) i paraqitur nga firma "IBM" ne vitin 1981. Meqë për të punuar me të nevojitej që shfrytëzuesit të kishin njohuri të avancuara të kompjuterit, firma Microsoft paraqiti Windows 3.11 si sistem operativ shumë më të përsosur se DOS-i. Më vonë u paraqitën edhe sisteme operative të tjera nga Microsoft si: Windows 95, Windows NT, Windows 98, Windows ME, Windows 2000, Windows XP, Windows 2003, Windows Vista (2007) dhe Windows Seven(7) në vitin 2009, Windows(8) 2012. Gjithashtu ka edhe sisteme operative te tjera, si UNIX, LINUX etj.....
+Programet kompjuterike mund të ndahen në dy kategori kryesore:
+
+– programet e sistemit që drejtojnë operacionet e sistemit të përpunimit
+– programet zbatuese që zgjidhin problemet e përdoruesve të tyre;
+Bashkësia e Programeve të Sistemit njihet me emrin Sistemi Operativ (SO).?
+
+
+== Përbërja ==
+Sistemi operativ përbëhet nga një sistem më vete i quajtur kernel (bërthama) dhe nga një numër programesh të sistemit.
+
+
+== Qëllimi i Sistemit Operativ ==
+Drejtimi i burimeve të sistemit të përpunimit
+Lehtësimi i komunikimit midis personit dhe makinës (kompjuterit).
+Një sistem operativ siguron një mjedis për ekzekutimin e programeve duke mundësuar shërbime të nevojshme nga këto programe. Shërbimet apo programet e tij ndahen në pesë kategori: 1. Kontrolli proceseve 2. Sistemi i skedave 3. Veprimet Hyrje/Dalje 4. Komunikimi ndërprocesor 5. Mirëmbajtja e informacionit
+Sistemi operativ duhet të përpiqet të plotësojë këto kërkesa për disa përdorues të tij dhe të merret me menaxhimin e: 
+
+• Burimeve
+• Gabimeve
+• Mbrojtjes
+
+
+== Puna e Sistemit: Kontrolli i Proceseve ==
+Një proces është njësi e punës. Proceset duhet të jenë në gjendje për të kontrolluar funksionimin e tyre, si edhe krijimin e proceseve të reja për të kryer detyra të tjera. Thirrjet sistem që menaxhojnë proceset janë: • fork: krijon një proces të ri • exit: ndërprerja normale, abort: • ndërprerje anormale • execve: ngarkon dhe ekzekutuar një program tjetër • wait: pret që të përfundojë një proces tjetër • menaxhimi sinjalesh: trajtimi i ngjarjeve asinkrone • sinjal sigaction: reagimi ndaj sinjaleve • vrasje: sinjal dërguar për ndërprerjen e procesit • pthread: për krijimin dhe menaxhimin e thred-eve e shumta që ekzekutohen në një proces të vetëm.
+
+
+== Sistemi i Skedave ==
+Sistemi i skedave të Unix është shumë më i komplikuar se sa duket • Direktoria rrënjë është e vendosur në diskun i cili është organizuar me anë të një sistemi të i skedave, p.sh. ext2. • Ka një CD-ROM në makinë, cd e të cilit është organizuar duke përdorur sistemin e skedave HSFS.• Nëse direktoria "kaharris" e përdoruesit gjendet në një tjetër server, p.sh. Brahman.cs.uchicago.edu:/export/u2/kaharris, ajo mund të administrohet duke përdorur sistemin e skedave në rrjet NFS. • direktoria /proc nuk është e vendosur në ndonjë pajisje. Dosjet nuk janë vende të magazinimit të të dhënave duket sikur kanë përmbajtje: cat /proc/1/status ose cat /proc/ jep proceset • direktoritë në /dev janë pajisjet fizike. Për shembull, /dev/pts/2 është terminali, /dev/mouse është miushi dhe /dev/lp0 është një gjurmështypës.
+
+
+== Sistemi operativ: Puna me sistemin ==
+Sistemi i skedave të Unix mundëson një nivel të lartë të organizimit të burimeve në dispozicion për proceset dhe përdoruesit. Sistemi i skedave të Unix është e organizuar si një graf aciklik i drejtuar, me nyjet që përfaqësojnë direktori. Nyjet me fëmijë janë direktori që përmbajnë direktori të tjera ose skeda. Proceset mundësojnë lëvizjen në sistemin e skedave dhe ndryshimin e strukturës së tij: • chdir: lëviz në një direktori të re • getcwd: jep direktorinë aktuale të punës • opendir, closedir: hap dhe mbyll një direktori • readdir: lexon një direktori • stat, fdopen: shfaq gjendjen e skedës, hap skedën • link, unlink: vendos dhe heq lidhje të fortë (një alias për një skedë) • symbolic link: krijon një lidhje të butë (një tregues për një tjetër skedë)
+
+
+== Aktivitetet e Sistemit Operativ ==
+Drejtimi i kujteses masive (file system); (HDD Hard Disk Drive)
+Drejtimi i performances RAM (Random Acces Memory);
+Drejtimi i proceseve;(Proccesor CPU si prsh Intel Core i-7 etj
+Drejtimi i nderfaqes(paraqitja grafike) se perdoruesit; (Karta grafike si prsh Nvidia GTX Monster Z)
+Perdorimi njekohesisht i shume perdoruesve ne te njejten makine;
+Kryerje e njekoheshme e shume proceseve mbi te njeten makine.
+
+
+== Struktura e Sistemit Operativ ==
+Sistemet Operative janë pergjithesisht te perbere nga nje bashkesi modulesh, sejcili me nje funksion te percaktuar. Modulet e ndryshme te sistemit operativ veprojne midis tyre sipas rregullave te percaktuara ne menyre qe te realizohen funksionet baze te makines.
+
+
+== Sistemet Mono-Tasking (një detyrësh) ==
+Sistemet Operative qe bejne kryerjen e nje programi te vetem njihen me emrin mono-tasking (një detyrësh);
+Nuk është e mundur te nderpritet kryerja i nje programi për ti dhene CPU-ne nje tjeter programi
+Jane historikisht Sistemet e para Operative. (psh MSDOS).
+
+
+== Sistemet Multi-Tasking (shumë-detyrësh) ==
+Sistemet Operative qe lejojne kryerjen e njehersheme te shume programeve njihen si shumë-detyrësh (Windows-NT , Linux);
+Nje program mund te nderpritet dhe CPU-ja i kalohet nje programi tjeter.
+
+
+== Sistemet Time-Sharing (kohë-ndarës) ==
+Nje zhvillim i sistemeve shumë-detyrësh janë sistemet kohë-ndarës. Çdo program ne veprim kryhet periodikisht ne intervale te vogla kohe.
+Nese shpejtesia e procesorit është mjaft e larte krijohet pershtypja e nje zhvillimi paralel te proceseve.
+
+Organizimi dhe drejtimi i kujteses qendrore është pamja me kritike ne krijimin e nje SO;
+Drejtuesi i kujteses është moduli i SO i ngarkuar me shperndarjen e kujteses ne detyra (task) te ndryshme (për te kryer nje detyre është e nevojshme qe kodi i saj te futet ne kujtese);
+Koklavitja e drejtuesit te kujteses varet nga tipi i SO;
+Ne sistemet shume-detyresh munden me u ngarku ne kujtese shume programe njekohesisht
+Problem: si te ndahet hapesira ne menyre optimale
+
+
+== Ndarje Lineare ==
+
+
+=== Kujtesa ===
+Moderne të përgjithshëm me qëllim kompjutera, duke përfshirë kompjuterët personal dhe Mainframes, kanë një sistemit operativ për të drejtuar programet e tjera, të tilla si software e aplikimit. Shembuj të veprojnë sistemet e kompjuterëve personal janë Microsoft Windows, Mac OS (dhe Darvini), UNIX, dhe Linux.Niveli më i ulët i çdo sistemi operativ është kernel i saj. Kjo është shtresa e parë e programeve ngarkuar në memorie kur një çizme të sistemit ose fillimi up. Kernel siguron qasje të ndryshme dhe shërbimet e përbashkëta thelbësore për të gjithë sistemin e të tjera dhe programet e aplikimit. Këto shërbime përfshijnë, por nuk kufizohen vetëm në: qasje disk, menaxhimin e kujtesës, planifikimin e detyrave, si dhe qasje në pajisje të tjera pajisjet. Si edhe të kernel, një sistem operativ është shpërndarë shpesh me mjete për programet të shfaqur dhe për të menaxhuar një ndërfaqe grafike të përdoruesit (edhe pse Windows dhe Macintosh kanë këto mjete të ndërtuar në sistemit operativ), si dhe programet e shërbimeve për detyra të tilla si menaxhimin e dosjeve dhe konfigurimin e sistemit operativ. Ata gjithashtu janë shpërndarë shpesh me aplikacionet e softuerit atë nuk mund ta lidhesh direkt me funksionin e sistemit operativ bazë, por ne të cilat eshte sistemi operativ distributor gjen favorshëm për të furnizuar me sistemin operativ.Drejtim të specifikimit në mes sistemit operativ dhe software aplikimit nuk është e saktë, dhe është herë pas here objekt polemikash. Nga pikat tregtare ose juridik, ndarje mund të varet kontekstin e interesave të përfshira. Për shembull, një nga pyetjet kryesore në shtetet e Bashkuara k gjyq Microsoft antitrust ishte nëse shfletuesi i Microsoft-it web ishte pjesë e saj sistemit operativ, ose nëse kjo ishte një pjesë e ndashme e softuerit të aplikimit.Ashtu si "sistemi operativ" vetë termi, pyetja se çfarë pikërisht duhet të formojnë"Kernel" është subjekt i ndonjë polemike, me debate nëse mbi gjëra të tilla si sistemet e skedarëve duhet të t'u përfshirë në kernel. Kampe të ndryshme avokat microkernels, kernelit monolit, dhe kështu me radhë.Sistemet operative janë përdorur në shumicën, por jo të gjitha, sistemet kompjuterike. Kompjuterët thjeshta,duke përfshirë sistemet e vogla ngulitur dhe shumë prej kompjuterëve të parë nuk janë operative sistemeve. Në vend të kësaj, ata u mbështetën në programet e aplikimit për të menaxhuar hardware minimale veten, ndoshta me ndihmën e bibliotekave të zhvilluara për këtë qëllim. Komercialisht furnizuar Sistemet operative janë të pranishëm në pothuajse të gjitha pajisjet moderne të përshkruara si kompjutera, nga personale kompjutera për mainframes, si dhe kompjutera celulare të tilla si PDAs dhe telefonat celularë.
+
+
+=== Faqosja ===
+
+
+=== Kujtesa Virtuale ===
+Shpesh kujtesa kompjuterike nuk është e mjaftueshme për te permbajtur te gjitha kodet e detyrave te ndryshme;
+Mund te simulohet nje kujtese me e madhe qe mban ne (RAM) vetem pjeset e kodeve dhe te dhenave qe sherbejne ne ate çast;
+Perdoret koncepti i kujteses virtuale.
+Te dhenat e programeve jo ne perdorim mund te hiqen nga kujtesa qendrore dhe te vendosen ne diskun kompjuterik ne zonen e quajtur zona e shkembimit (swap-it).
+Raporti i dimensioneve te zones shkembyese dhe e RAM-it është 3 : 1 (maksimum);
+Procesoret moderne zoterojne mekanizma harduere për te lehtesuar drejtimin e kujteses virtuale.
+
+
+== Drejtuesi i sistemit te dosjeve ==
+Drejtuesi i sistemit te dosjeve (file system) është moduli i sistemit operativ qe ben drejtimin e informacioneve te ruajtura ne mekanizmat e kujteses masive. Ky drejtues duhet te garantoje korrektesine dhe koherencen e informacioneve. 
+Ne sistemet shume-perdorues, duhet te vendose ne dispozicion mekanizma te mbrojtjes , ne menyre qe ti lejoje perdoruesve mbrojtjen e te dhenave nga perdorues jo te autorizuar.
+Funksionet tipike qe duhet te kryhen jane:
+
+– Te jepet nje mekanizem për identifikimin e dosjeve;
+– Te jepen menyrat me te voliteshme ne qasjen e te dhenave;
+– Te behet transparente struktura fizike e mbeshtetesit te kujtimit;
+– Zbatimi i mekanizmave te mbrojtjes se te dhenave.
+
+
+== Organizimi ==
+Gati te gjithë sistemet oprative perdorin nje organizim hierarkik te sistemit te dosjeve.
+Elementi qe ben rigrupimin e shume dosjeve se bashku quhet drejtoria (directory);
+Bashkesia hierarkike e drejtorive dhe dosjeve mund te paraqitet nepermjet nje skeme grafike te drejtorive
+
+
+== Drejtuesi i mekanizmave te Hyrje-Daljes (Input/Output ose I/O) ==
+Drejtuesi i mekanizmave te I/O është moduli i SO i ngarkuar me dhenien e detyrave mekanizmave qe bejne kerkesen dhe për ti kontrolluar. Nga ata varet cilesia dhe tipi i pajisjeve te lidhura ne kompjuter dhe te njohura nga sistemi.
+
+
+== Udhezuesi i pajisjeve (Device Driver) ==
+Kontrolli i mekanizmave te H/N behet permes programeve te posaçme te quajtura udhezuesi i pajisjeve (Device Driver);
+udhezuesi i pajisjeve kryhet nga prodhuesit e mekanizmave qe njohin shume mire veçorite fizike.
+Keto programe kryejne keto funksione:
+
+Bejne transparente veçorite tipike fizike te çdo mekanizmi;
+Drejtojne komunikimin e sinjaleve drejt mekanizmave;
+Drejtojne mosmarrveshjet, ne rastin kur dy ose me shume detyra duan te hyjne njekohesisht ne te njejtin mekanizem.
+
+
+== Nderfaqja e perdoruesit ==
+Te gjithe sistemet operative perdorin mekanizma për ta bere sa me te lehte perdorimin e sistemit nga perdoruesi; bashkesia a ketyre mekanizmave te hyrjes ne kompjuter merr emrin e nderfaqes se perdoruesit
+
+Nderfaqja tekstuale:
+komanda perkthyese (guacke - shell )
+Shembull MS-DOS
+Nderfaqja grafike (me dritare):
+Nxjerrja e programeve te ndryshme shfaqet ne menyre grafike permes dritareve
+Perdorimi i skicave e ben me intuitiv perdorimin e llogariteses;
+
+
+== Sistemet e pranishëm në treg ==
+Në treg janë të pranishëm një sasi e madhe sistemesh operative. Në të kaluarën prirja e shtëpive prodhuese të sistemeve të perpunimit ishte që të zhvillonin sisteme operative për arkitekturën e tyre, prirja e sotme është ajo a sistemave operative të përdorshëm në platforma të ndryshme. Kjo është lista e sistemeve më të njohur:
+
+
+=== Sisteme si UNIX ===
+
+Janë sistemet operativë të lidhur me System V, BSD, Linux,Ubuntu.
+Janë sisteme me liçense: GNU, Open source (kod i hapur), Freeware, etj.
+Këto sisteme janë edhe disa nga sistemet më të sigurtë dhe të fortë (të qëndrueshëm).
+
+
+=== Microsoft Windows ===
+
+Është sistemi operatv më i përhapur.
+
+
+=== Apple Mac OS X ===
+
+Një nga sistemet më të sigurtë.
+Në Pranverë 2009 del versioni i ri Mac Os X 10.6 i quajtur Snow Leopard
+LINUX
+Ubuntu ose i njohur me mire si Linux eshte Sistem Operativ per Kompujtera me Remote(Kontrollim nga nje komp. ne nje tjeter me ane te lidhjes se internetit) qe me shume perdoret per Dedicated Gaming Servers per shembull per lojra si Counter-Strike me pas per Call Of Duty , Halo , BattleField etj... Nuk ju keshilloj te mbani Linux per Sistem Operativ pasi nuk eshte i dizenjuar aq mire per te qene nje kompjuter per pune (Desktop PC) eshte dizenjuar per te qene Server.Keshtu qe duhet te mbani per sistem operativ Windows XP/Vista/7/8 (Une nuk po ju detyroj te perdorni windows si operating nese doni edhe mund ta mbani linuxin pasi deri me sot jane gjetur VETEM 45 viruse per linux)
+
+
+== Lidhje te jashtme ==
+Anglisht. Sistemet operuese.
+Anglisht. Historia e sistemeve operues.

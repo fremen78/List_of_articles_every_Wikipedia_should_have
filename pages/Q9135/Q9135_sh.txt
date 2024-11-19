@@ -1,0 +1,86 @@
+U računarstvu, operativni sistem (OS) je skup programa i rutina odgovoran za kontrolu i upravljanje uređajima i računarskim komponentama kao i za obavljanje osnovnih radnji. Operativni sistem objedinjuje u celinu raznorodne delove računara i sakriva od krajnjeg korisnika detalje funkcionisanja ovih delova. Operativni sistem stvara za korisnika radno okruženje koje rukuje procesima i datotekama, umesto bitovima, bajtovima i blokovima podataka. 
+
+ Većina operativnih sistema dolazi sa aplikacijom koja obezbeđuje korisnički interfejs za rukovanje operativnim sistemom, kao što su interpreter komandne linije i grafički korisnički interfejs. Dodatno, operativni sistem omogućava pokretanje drugih, korisničkih, programa kao što su editori, prevodioci i internet pretraživači. Mrežni operativni sistem je druga vrsta operativnog sistema.
+Prije najkorišćeniji operativni sistem u upotrebi na stonim i prenosivim računarima je Microsoft Windows XP. Jači serveri koriste Linux, FreeBSD i druge vrste juniksolikih operativnih sistema. Međutim, i ovi operativni sistemi, posebno Mac OS X, se takođe koriste na personalnim računarima.
+
+
+== Uvod ==
+Rani računari nisu imali operativni sistem (pogledati Istorija operativnih sistema). Operator je osoba koja je ručno unosila i pokretala programe. Kada su razvijeni programi za učitavanje i pokretanje drugih programa logično je bilo da takvi programi dobiju naziv po onome čiji posao obavljaju.
+Prvim računarom ćemo smatrati takav elektronski računar koji je odgovarao Fon Nojmanovoj arhitekturi - kod koga su i program i podaci u istoj memoriji. Kada su se sa sledećim računarima pojavili i prvi spoljašnji uređaji - čitači papirne trake i bušač kartica - pojavila se prilika za sledeći stepen automatizacije. Uobičajeni skup kartica na kojima su se nalazili kodovi za ulazne i izlazne operacije su bile klica za budući razvoj operativnih sistema.
+Najčešća upotreba pojma "operativni sistem" danas, od opšte i stručne javnosti, se odnosi na sav softver potreban korisniku za upravljanje sistemom i pokretanje svih programa koji mogu raditi na tom sistemu. Po opšteprihvaćenim normama to podrazumeva ne samo najniže slojeve jezgra (kernel) koji neposredno upravljaju uređajima nego i biblioteke neophodne korisničkim programima kao i osnovne programe za baratanje datotekama i konfigurisanje sistema.
+Granica između operativnog sistema i korisničkih programa nije precizno određena i predstavlja često predmet rasprava. Na primer, jedno od ključnih pitanja u antimonopolskom sudskom slučaju Sjedinjene Američke Države protiv Majkrosofta je da li je Majkrosoftov pretraživač Internet Eksplorer deo operativnog sistema Vindouz ili je deo skupa korisničkih programa. Drugi primer je neslaganje oko imenovanja GNU/Linuks, jer u osnovi jeste Linuks kernel ali mnogi upravo ceo operativni sistem zovu Linuks.
+Najniži nivo svakog operativnog sistema je kernel, jezgro, prvi sloj softvera koji se učitava u računarsku memoriju pri pokretanju. Kao prvi softverski sloj, on obezbeđuje svom ostalom softveru koji se potom učita u operativnu memoriju zajedničke usluge jezgra. Osnovne usluge koje pruža ovo zajedničko jezgro su pristup diskovima, upravljanje memorijom, upravljanje procesima i poslovima i pristup ostalim računarskim uređajima. Kao i kod operativnog sistema i ovde postoji pitanje šta tačno treba da čini "kernel". Postoje mišljenja koja podržavaju koncept "mikrokernela" ili "monolitni kernel" ili nešto treće, čak se postavljaju pitanja kao na primer—treba li sistem za upravljanje datotekama (fajl sistem) biti deo kernela?
+
+
+== Sistemski pozivi ==
+Sistemski pozivi su usluge koje korisnički programi zahtevaju od operativnog sistema. Sistemski pozivi često koriste posebne procesorske naredbe koje uzrokuju da procesor menja mod, a neki primeri su "zaštićeni mod" (protected mode) ili "nadzornički mod" (supervisor mode).
+
+
+== Zajedničke usluge jezgra ==
+Kako su se operativni sistemi razvijali, sve više usluga se očekivalo od zajedničkog jezgra. Od 1990ih se od operativnih sistema često očekuje da pruže mogućnost povezivanja na lokalnu mrežu i na Internet. Čak se očekuje da zaštite ostali softver na računaru od štete koju mogu naneti zlonamerni programi, kao što su virusi. Spisak usluga koje se očekuju od jezgra se i dalje širi.
+Programi međusobno komuniciraju kroz aplikativni programski interfejs (API), slično kao što ljudi sa računarom komuniciraju kroz korisničko sučelje - korisnički interfejs. Ovo posebno važi u komunikaciji između korisničkih programa i operativnog sistema. Zajedničkim uslugama jezgra operativnog sistema korisnički programi pristupaju kroz API. Time operativni sistem omogućava komunikaciju između softvera i hardvera, to jest, programa i uređaja. U osnovne funkcije operativnog sistema svakako treba navesti upravljanje procesorom.
+Pogledati: POSIX
+
+
+== Operativni sistemi današnjice ==
+Najrašireniji operativni sistemi današnjice koji se koriste na računarima opšte namene (tu računamo i lične računare - Pi Si) su grupisani u dve porodice: porodica Juniksolikih i porodica Majkrosoft Vindouz operativnih sistema. Veliki računari i računari posebne namene koriste izmenjene ili posebno naručene operativne sisteme koji ne moraju biti ni u kakvoj vezi sa Vindouzom ili Juniksom ali su, po pravilu, bliži Juniksu nego Vindouzu.
+
+
+=== Juniksoliki sistemi ===
+
+Porodica juniksolikih sistema je raznorodna grupa operativnih sistema koja uključuje i System V, BSD, i GNU/Linuks. Ime juniks je zaštićeno od strane Otvorene Grupe (The Open Group) koja daje licencno pravo korišćenja imena kada se pokaže da predmetni operativni sistem zadovoljava sve potrebne zadate uslove. Sam naziv se odnosi na veliki skup operativnih sistema koji podsećaju na prvobitni juniks.
+Juniks sistemi pokreću računare raznolikih unutrašnjih arhitektura. Najrasprostranjenija primena je među serverima u korporativnom sektoru ali i među radnim stanicama u akademskom i inženjerskom okruženju. Slobodno dostupne varijante Juniksa, kao što su Linuks i BSD su u usponu popularnosti. Napravljen je proboj i na tržištu stonih računara, posebno "prijateljskim" Linuks distribucijama, kao što je Ubuntu GNU/Linuks.
+Neke vlasničke varijante Juniksa, kao što je HP-ov HP-UX i IBM-ov AIX su napravljeni posebno da rade samo na računarima i sa opremom originalnog proizvođača. Drugi, kao Solaris, mogu raditi na originalnim računarima ali i na drugim računarima koji odgovaraju proizvođačevim zahtevima. Eplov Mac OS X je BSD varijanta nastala iz NeXTSTEP i FreeBSD je zamena za raniji Mac OS u uskom segmentu tržišta, ali postaje vremenom najpopularniji vlasnički Juniks sistem.
+Tokom prethodnih godina su slobodni Juniks sistemi potisnuli vlasničke iz mnogih oblasti. Na primer, naučničko modelovanje i računarska animacija su nekad bili teritorija Silikon Grafiksa i njegovog IRIKS operativnog sistema. Danas su oni pod vlašću računarskih sistema pod GNU/Linuksom.
+
+
+=== Microsoft Windows ===
+Microsoft Windows porodica operativnih sistema nastaje kao grafička nadogradnja povrh starog MS DOS operativnog sistema PI SI računara. Današnje verzije se baziraju na jednoj naprednijoj varijanti koja je nazvana Vindouz NT i ne predstavlja više samo grafičko okruženje već uistinu potpuni operativni sistem. Vindouz radi na računarima zasnovanim na procesorima firme Intel i AMD. Oznaka za takve procesore je h86 kompatibilni, a najpoznatiji su firme AMD-dobar za igrice, mada je intel bolji za obradu podataka. Postoje ili su postojale varijante koje rade na procesorima DEC Alpha, MIPS i PowerPC. Postoje takođe i varijacije za procesore sa 32 i sa 64 bita.
+
+
+=== Drugi operativni sistemi ===
+Operativni sistemi za velike računare kao što je IBM-ov z/OS i operativni sistemi posebne namene, kao što su QNX, eCos, i PalmOS nisu bliski Juniksu niti Windows - u sem Windows SE koji je blizak Windows - u i nekoliko Linuks i BSD distribucija koje su posebno krojene za specifične primene.
+Pored operativnih sistema za velike računare postoje i operativni sistemi za manje uređaje (mobilni telefoni, digitroni i sl.) i uređaje specijalne namene (mikro-procesorski sistemi u automobilima, sistemi za automatsko otvaranje vrata i sl.), koji zahtevaju rad u realnom vremenu. Popularni operativni sistemi za mobilne telefone su Simbijan i OSE, dok za uređaje specijalne namene veliko uporište imaju OSECK i OSE Epsilon i sl.
+Stariji operativni sistemi koji se još uvek ponegde koriste su Vindouzu-nalik OS/2 od IBM-a; OpenVMS od Hjulit Pakarda (nekada Didžital korporacije); Mek OS, Eplov prethodni ne-juniks operativni sistem; RISK OS, posebno stvoren za ARM procesore i njihovu arhitekturu; AmigaOS, prvi grafički orijentisan operativni sistem sa multimedijalnim mogućnostima i to još za široku publiku.
+Istraživanje i razvoj novih vrsta operativnih sistema je zasebna oblast nauke o računarima.
+
+
+== Klasifikacija i terminologija ==
+Operativni sistem je suštinski sastavljen iz tri skupa komponenti: 
+
+Korisničkog interfejsa, koji može biti grafičkog tipa ili imati interpreter komandne linije koji se još zove i školjka ("shell")
+Sistemske rutine niskog nivoa
+Jezgro-kernel koji je srce operativnog sistema
+Kao što naziv sugeriše, školjka je spoljašnji programski omotač jezgra, dok jezgro neposredno komunicira sa uređajima. Kod nekih operativnih sistema, kao što je Juniks, školjka i jezgro su različiti i samostalni entiteti, što omogućuje proizvoljne kombinacije i laku zamenu školjke. Drugi operativni sistemi samo formalno prikazuju postojanje različitih komponenti dok su u suštini monolitni.
+Ideje projektovanja jezgra operativnog sistema su se vremenom izdiferencirale u sledeće koncepte 
+
+monolitno jezgro
+mikrojezgro
+egzojezgro
+Većina najrasprostranjenijih operativnih sistema ima jezgra monolitnog tipa, kao što su Juniks, Linuks i Vindouz. Neki noviji operativni sistemi imaju mikrojezgro, kao Epl MekOS H, AmigaOS, QNX i BeOS. Među istraživačima i razvojnom zajednicom je mikrojezgro pristup veoma popularan, kao što je Hurd/GNU. Oba sistema imaju svojih prednosti i uspešno žive na mnogim mašinama. Na sistemima posebne namene koji podrazumevaju ugradnju sistema i softvera u elektronski proizvod se primenjuje projektovanje egzokernela, tačno za jedan uređaj i jednu primenu.
+
+
+== Izvori ==
+
+
+== Dodatno čitanje - knjige ==
+Besplatna i dobra knjiga za Linuks u elektronskom obliku, na srpskom jeziku: "Operativni sistemi: juniks i Linux"
+Sveobuhvatna knjiga - udžbenik o operativnim sistemima na srpskom jeziku: "Operativni sistemi – teorija, praksa i rešeni zadaci"
+
+
+== Spisak operativnih sistema ==
+AmigaOS - još uvek izlaze nove verzije sistema.
+GNOME -
+MVS
+OS/2 - IBMov operativni sistem, koji se prestao proizvoditi 90tih godina
+Unix - popular sistem tijekom 70 i 80tih godina
+Windows - najpopularniji operativni sistem današnjice.
+MS Dos - prethodnik Windowsa
+Linux - drugi najpopularniji operativni sistem današnjice
+Mac OS - operativni sistem za Macintosh kompjutere
+OS/390 -
+CP/M - sistem kojeg je zadnjeg podržavao kompjuter Commodore 128
+Palm OS - sistem za mobitele koji se prestao proizvoditi 2009. godine
+Symbian - sistem za mobitele
+UBUNTU Siste za racunare
+Ekos - operativni sistem za računare

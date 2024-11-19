@@ -1,0 +1,42 @@
+Arabiska alfabetet används för att skriva det arabiska språket, liksom ett antal andra språk som persiska, urdu och uiguriska. Det har historiskt sett används för att skriva ett större antal språk.
+Det arabiska alfabetet skrivs från höger till vänster. Bokstäverna i ett ord skrivs vanligen samman så att de blir en sammanhängande enhet. Rent praktiskt använder man vid typsättning initiala (oftast längst till höger i ordet), mediala och finala (oftast längst till vänster i ordet) former för respektive bokstav (till skillnad från dess isolerade form). Vissa bokstäver har dock inga initiala och mediala former (se nedan), men kan förekomma i början eller mitt i ord ändå. Då används den självständiga respektive den avslutande formen. Tecknet efter ska då inte heller bindas med det föregående.
+Det arabiska alfabetet är en abjad, det vill säga en konsonantskrift där vokaler är frivilliga och markeras med diakritiska tecken. Det är dock inte en "ren" abjad; långa vokaler skrivs med några få undantag alltid ut men inte de korta.
+
+
+== Ordning ==
+De arabiska bokstäverna kan sorteras på två olika sätt. Den ursprungliga abjadī-ordningen härstammar från det feniciska alfabetet och påminner därför om bokstavsordningen i exempelvis hebreiska. Hijāʼī-ordningen grupperar tecken med liknande utseende. Abjadī används vid numrering medan hijāʼī används då listor över namn eller ord ska sorteras, exempelvis telefonkataloger och ordlistor.
+
+
+== Bokstäver ==
+Det arabiska alfabetet består av 28 bokstäver. Det finns dock ett litet tecken till, (arabiska: همزة, 'hamzah') (ء), vilken ibland räknas som en bokstav och då blir det 29.
+
+Ursprungligen stod bokstaven ʾalif för en glottal stöt. Numera används den i likhet med yāʾ och wāw för att representera en lång vokal.
+Numera skrivs glottal stöt med hamza. Den skiljer sig från andra bokstäver genom att den både kan skrivas ensam (ء) och som ett diakritiskt tecken (ؤ ,ئ ,أ ,إ).
+
+
+== Vokaler ==
+
+
+=== Korta vokaler ===
+Korta vokaler skrivs i arabiska med diakritiska tecken kallade harakat ovanför eller under föregående konsonant. 
+För att markera att en konsonant inte följs av en vokal kan den markeras med ett sukūn.
+
+
+=== Långa vokaler ===
+Långt a skrivs, efter alla konsonanter utom hamza, med tecknet för kort a följt av ett ʾalif. Långt i skrivs med tecknet för kort i följt av ett yāʾ. Långt u skrivs med tecknet för kort u följt av ett wāw. 
+I texter där korta vokaler inte skrivs ut så representeras de långa vokalerna av enbart konsonanttecknen ʾalif, yāʾ och wāw. Ett viktigt undantag är den bestämda artikeln al där a uttalas kort trots att den skrivs med ʾalif.
+
+
+== Siffror ==
+I arabiskan finns det två sorters siffror: standardarabiska samt det ostliga skrivsättet som används i Iran, Pakistan samt i Indien. I Maghreb används samma siffror som i Europa.
+Siffror som förekommer i ett tal skrivs från vänster till höger och skrivs alltså inte åt samma håll som bokstäverna.
+
+
+== Hantering i datorer ==
+
+Teckenkodningen Unicode stöder det arabiska alfabetet. Det finns teckenkoder både för nominella arabiska bokstäver (som ska formas vid utskrift, så att de binds ihop med intilliggande bokstäver) och även för förformade bokstäver och ligaturer. De förformade arabiska bokstäverna finns med som teckenkoder för kompatibilitet med äldre teckenstandarder, och bör inte användas i nyskrivna texter. De nominella bokstäverna skrivs ut med olika utformning, och eventuellt olika placering i höjdled, beroende på intilliggande bokstäver. Moderna fonter (enligt till exempel OpenType eller AAT) för arabiska innehåller flera former för varje nominell arabisk bokstav (plus ev. ankarpunkter för placering i höjdled), och utskriftsystemet väljer form beroende på grannbokstäver. Teckenkoderna för de förformade bokstäverna används då inte, och en hel del utökade arabiska bokstäver har inga kodpunkter för förformade varianter. Även ligaturer, speciellt för den obligatoriska lam-alif-ligaturen, formas med hjälp av data i fonten, inte via teckenkoder för arabiska ligaturer.
+En annan svårighet är att skrivriktningen för arabisk text är från höger till vänster. Enligt Unicode ska arabisk text lagras i läsordning, och sedan skrivas ut höger-till-vänster. Så om en text bara innehåller arabiska bokstäver och några skiljetecken är det lätt, man vänder på tecknens ordning vid utskrift (om man måste skriva ut från vänster till höger), eller helt enkelt skriver ut dem höger-till-vänster, samtidigt som vissa tecken, bl.a. parenteser, speglas. Men om texten även innehåller, till exempel, ord skrivna i ett alfabet där skrivriktningen är vänster-till-höger, nummer, även arabiska nummer, blir det mer komplicerat. Unicode-standarden innehåller en, tyvärr ganska komplicerad, algoritm för detta som datorutvecklare kan använda. Resultatet blir inte alltid perfekt, så det finns även styrkoder med vars hjälp utskriften kan förbättras, till exempel för parenterser, citat och dylikt. I HTML finns istället attribut för detta som bör användas i stället för styrkoderna. 
+Även äldre 8-bitskodningar för arabiska bokstäver och siffror finns, som använts före Unicode och delvis fortfarande, till exempel ISO/IEC 8859-6. Det stödjer engelska och arabiska, men inte fullt ut persiska, urdu m.fl.
+
+
+== Källor ==

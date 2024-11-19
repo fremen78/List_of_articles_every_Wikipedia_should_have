@@ -1,0 +1,1751 @@
+Matematikan, proposizio matematiko bat egiaztatzeko erabiltzen den argudio deduktibo bat da froga edo frogapen bat. Argumentazioan aurretik ezarritako baieztapenak erabil daitezke, hala nola teoremak eta hasierako baieztapenak edo axiomak. Froga, printzipioz, funtsean frogarik behar ez duten baieztapenak lortu arte garatu daiteke, axioma izenekoak. Frogantzak dedukziozko arrazoibideen adibideak dira, eta indukzio bidezkoak eta enpirikoak bereizten dira. Frogapen batek baieztapen bat beti egiazkoa dela frogatu behar du (batzuetan, kasu posible guztiak zerrendatu eta horietako bakoitzean baliozkoa dela ikusita), eta ez kasu askotan onartzen dela. Egiazkotzat jotzen den frogatu gabeko baieztapen bati aieru deritzo.
+
+Frogapenetan, logikaz gain, normalean, hizkuntza naturala ere erabiltzen da, anbiguotasunen bat izan dezakeena. Egia esan, frogantza matematiko gehienak logika informal zorrotzaren aplikaziotzat jo daitezke. Froga formal hutsak, hizkuntza sinbolikoan (ez hizkuntza naturalean) idatziak, froga-teorian hartzen dira kontuan. Froga formal eta informalen bereizketak logika matematiko historikoa eta gaur egunekoa, kuasienpirismo matematikoa eta formalismo matematikoa ikertzea eragin du. Matematikaren filosofia hizkuntzaren eginkizunaz eta frogapenen logikaz arduratzen da.
+Teorema baten frogapena ez ezagutzeak ez du esan nahi egiazkoa ez denik; faltsua dela esango bada, ezeztapena frogatu behar da.
+
+
+== Etimologia eta historia ==
+«Froga» hitza latinetik dator, probare hitzetik, 'frogatu' esan nahi du. Erlazionatutako hitz modernoak gaztelaniazko probar ('dastatu', 'usaindu' edo 'entseatu'), probidad, probo (edo «proba») eta probabilidad hitzak dira; alemanierazko probieren ('saiatu'), italierazko probare ('saiatu'); eta ingelesezko probe eta probation hitzak. Probity ('zintzotasuna') ingelesezko terminoaren hasierako erabilerak 'ebidentzia legalaren aurkezpena' esan nahi zuen. Agintaritzako pertsona bat – oro har, diru asko zuen edozein pertsona –  'proba' pertsona zela esaten zen, eta haren ebidentziak beste edozein testigantza edo erakustaldi enpirikok baino pisu handiagoa zuen.
+Argudio onargarriek erabiltzen zituzten baliabide heuristikoak, adibidez, irudiak eta analogiak, matematikako froga zorrotzen aurretikoak izan ziren. Hasiera bateko ondorio bat frogatzearen ideia, segur aski, geometriarekin lotuta egon zen; izan ere, geometriaren jatorrizko definizioa ‘Lurraren neurri’ edo ‘lur-neurketa’ izan zen. Froga matematikoaren garapena Antzinako Greziar matematikaren oinarrizko emaitza da, eta baita haren lorpen handienetako bat ere. Tales Miletokoak ( K.a. 624-546) geometriako teorema batzuk frogatu zituen. Eudoxok ( K.a. 408-355) eta Teetetok (K.a. 417-369)  teorema batzuk adierazi zituzten, baina ez zituzten frogatu. Aristotelesek (K.a. 384-322) zioen definizioek jadanik ezagunak ziren beste kontzeptu batzuen terminoen gainean deskribatu behar zutela definitu beharreko kontzeptu berria. Metodo axiomatikoak, gaur egun oraindik matematikako frogapenetarako erabiltzen direnak, Euklidesek (K.a. 300) erabili zituen lehenengo aldiz, termino mugagabeekin eta axiomekin (egiazkotzat hartutako termino mugagabeei dagozkien proposizioak; grekotik, axios) hasten zen, eta horien bidez teoremak frogatu zituen, dedukziozko logika erabiliz. XX. mendearen erdialdera arte, mendebaldean bere burua ondo hezitakotzat zeukan edonork irakurri zuen 'Elementuak', Euklidesen liburua. Liburu horrek, geometriako ohiko teoremez gain (Pitagorasen teorema, adibidez) bi zenbakiaren erro karratua irrazionala dela eta infinitu zenbaki lehen daudela erakusten duten frogak jasotzen ditu.
+Horren ostean arlo berean egindako aurrerapenak, Erdi Aroko matematika islamikoen eskutik izan ziren. Greziako frogapen goiztiar gehienak froga geometrikoak izan ziren; matematikari islamikoek garatutako aritmetikari eta aljebrari esker, ordea, geometriaren mende ez zeuden frogapen orokorragoak lortu ziren. X. mendean Al-Hashim matematikari irakiarrak zenbakientzako frogapen orokorragoak eman zituen: besteak beste, «lerroen araberako» biderketa eta zatiketak. Metodo hori erabili zuen zenbaki irrazionalen existentzia frogatzeko.
+Sekuentzia aritmetikoak frogatzeko indukzio matematiko bidezko metodoa, Al-Karaji matematikari persiarrak sartu zuen Al-Fakhri liburuan (K.o. 1000), zeinek binomioaren teorema eta Pascal-en triangelua frogatzeko erabili zituen. Alhazen-ek kontraesanezko frogapen metodoa garatu zuen, paraleloen postulatu euklidearra frogatzeko lehen saiakera gisa.
+Frogapenen teoria modernoak indukzio bidez definituriko datu-egitura gisa tratatzen ditu frogak. Egun ez da onartzen axiomak “egiazkoak” direnik; horrek axiomen multzo alternatuetan teoria matematiko paraleloak sortzea ahalbidetzen du (ikus multzo-teoria eta geometria ez-euklidearra adibide gisa).
+
+
+== Helburua ==
+Frogapen bat hizkuntza naturalean idazten da, esan den bezala, eta haren helburua da emandako argumentuaren egiazkotasuna frogatzea. Frogapena modu desberdinetan aurkez daiteke, espero den hartzailearen arabera. Onarpena lortzeko asmoarekin, frogantzak ohiko zorroztasun parametroak bete behar ditu: argumentu osagabeak errefusatuko ditugu.
+Frogapenaren kontzeptua logika matematikoaren esparruan formalizatzen da. Frogapen formala hizkuntza naturalean beharrean, hizkuntza formalean idazten da. Frogantza formal bat hizkuntza formalean adierazitako formulen sekuentzia bat da, non formula bakoitza aurrekoen ondorio logikoa den. Hain zuzen ere, frogapen teoriaren arloak frogapen formalak eta horien propietateak aztertzen ditu; horren aplikazio bat da frogatzea baieztapen esanezin batzuek ezin dutela izan frogapenik.
+Frogapenaren kontzeptua praktika matematikoan erabiltzen den moduan ulertzeko, frogapen formalaren definizioa erabiltzen da. Definizio honekin, ikus dezakegu zabaldutako frogapen bat, printzipioz, frogapen formalean itzuli dezakegula. Hala ere, praktikan bihurketa horiek, laguntzaile automatikoen arloan bakarrik egiten dira. Filosofiako galdera klasikoetariko batek galdetzen du ea frogapen matematikoak analitikoak edo sintetikoak diren. Kant-ek adierazi zituen analitikoen eta sintetikoen arteko desberdintasunak, eta hark uste zuen frogapen matematikoak sintetikoak zirela.
+Objektu estetiko bezala kontsidera ditzakegu frogapenak, horien edertasun matematikoagatik miretsiak. Paul Erdős matematikariak, bere iritziz Liburua liburuan agertzen ziren frogapen matematiko dotoreenak deskribatu zituen. 2009.urtean argitaratutako "Liburu"-ko frogapenak saiakuntzak, editoreek hautatutako 32 frogapen biltzen ditu, frogapen horiek existitzen diren egokienak edo zuzenenak direla kontsideratzen direlako.
+
+
+== Metodo garrantzitsuenak ==
+
+
+==== Froga zuzena ====
+Hipotesi batetik abiatuz, ondorio bat ematen duten proposizioak frogatzeko erabili ohi da froga zuzena. Adibidez, euria egiten badu, orduan pista bustiko da; egunerokotasunean erabiltzen den esaldia hartzen badugu, badakigu euria egitea baldintza nahikoa dela pista bustita egon dadin; bestalde, euria egiten badu, badakigu ezinbestean pista bustiko dela. Matematikaren testuinguruan, mota honetako proposizioak, hipotesitik abiatuz, aurretik ezagutzen diren beste proposizio batzuk erabiliz ondorioztatzen dira.
+Orokorrean, froga zuzena erabiltzen denean, aurretik erabilitako axioma, definizio eta teoremak konbinatuz lortzen da ondoriora iristea. Zenbaki bikoitien batura bikoitia dela frogatzeko erabiltzen da, adibidez, metodo hau.
+Har ditzagun 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ eta 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ bi zenbaki bikoiti. Orduan, existitzen dira bi zenbaki oso, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ eta 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+, non 
+  
+    
+      
+        x
+        =
+        2
+        a
+      
+    
+    {\displaystyle x=2a}
+  
+ eta 
+  
+    
+      
+        y
+        =
+        2
+        b
+      
+    
+    {\displaystyle y=2b}
+  
+ diren. Ondorioz, bi zenbaki bikoitiak batuz, 
+  
+    
+      
+        x
+        +
+        y
+        =
+        2
+        a
+        +
+        2
+        b
+        =
+        2
+        (
+        a
+        +
+        b
+        )
+      
+    
+    {\displaystyle x+y=2a+2b=2(a+b)}
+  
+ beteko da, bikoitia dena. Beraz, bi zenbaki bikoitiren batura bikoitia da, eta frogatuta gelditzen da.
+Froga hori egiteko, zenbaki oso bikoitien propietateak erabiltzen dira; eta baita ere erabiltzen da, zenbaki osoak baturarekiko eta biderkadurarekiko itxiak direneko propietatea, hau da, bi zenbaki oso (edo bi baino gehiago, edozein) hartuz, batuz edo biderkatuz, berriro ere zenbaki oso bat lortzen dela.
+Beste proposizio eta teorema batzuek, baldintza bikoitza izaten dute; hau da, hipotesiak ondorioa inplikatzen du, eta alderantziz: ondorioak hipotesia inplikatzen du. Praktikan, mota horretako enuntziatuak froga zuzenarekin edo kontraesanezko metodoa erabiliz frogatzen dira.
+
+
+==== Kontraesanezko metodoa ====
+Kontraesanezko metodoa erabiltzen dugunean (reductio ad absurdum izenez ere ezagutua), pauso logiko batzei jarraitu ondoren, baieztapen batera heltzen gara, eta baieztapen hori ez dator bat hasierako hipotesiren batekin, edo, beste era batera esanda, logikoki absurdoa da, eta ,ondorioz, baieztapena faltsua da.
+Metodo hau erabiltzen duen frogapen ezagunenetako bat biren erroa (
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+) zenbaki irrazionala dela frogatzen duena da.
+Jotzen da, absurdora eramanez, 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ zenbaki arrazionala dela; orduan, definizioz, 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle a,b\in \mathrm {Z} }
+  
+ existitzen dira, biak ez-nuluak, non 
+  
+    
+      
+        
+          
+            2
+          
+        
+        =
+        a
+        
+          /
+        
+        b
+      
+    
+    {\displaystyle {\sqrt {2}}=a/b}
+  
+ den eta 
+  
+    
+      
+        z
+        k
+        h
+        (
+        a
+        ,
+        b
+        )
+        =
+        1
+      
+    
+    {\displaystyle zkh(a,b)=1}
+  
+ (hau da, 
+  
+    
+      
+        a
+        
+          /
+        
+        b
+      
+    
+    {\displaystyle a/b}
+  
+ zatiki irreduziblea da).
+Orain, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ bakanduz, 
+  
+    
+      
+        
+          
+            2
+          
+        
+        b
+        =
+        a
+      
+    
+    {\displaystyle {\sqrt {2}}b=a}
+  
+, eta berdintzaren bi aldeak birekin berretuz, 
+  
+    
+      
+        2
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2b^{2}=a^{2}}
+  
+, ikusten da 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}}
+  
+ bikoitia izan behar duela, eta 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+-k ere zenbaki osoa denez, bikoitia izan beha du; bestela esanda, 
+  
+    
+      
+        a
+        =
+        2
+        c
+      
+    
+    {\displaystyle a=2c}
+  
+, non 
+  
+    
+      
+        c
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle c\in \mathrm {Z} }
+  
+ ez-nulua den. Adierazpen berri hori hasierako ekuazioan ordezkatuz, 
+  
+    
+      
+        2
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+        =
+        (
+        2
+        c
+        
+          )
+          
+            2
+          
+        
+        =
+        4
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2b^{2}=a^{2}=(2c)^{2}=4c^{2}}
+  
+, eta sinplifikazioa eginez, 
+  
+    
+      
+        
+          b
+          
+            2
+          
+        
+        =
+        2
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle b^{2}=2c^{2}}
+  
+ da. Ohartu berriro ere hasierako kasua lortzen dela, eta, orduan, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+-rekin argudiatu den bezala, 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ ere bi zenbakiaren multiploa da. Ondorioz, 2 zenbakiak, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ eta 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ zatitzen ditu, eta horrek esan nahi du 
+  
+    
+      
+        z
+        k
+        h
+        (
+        a
+        ,
+        b
+        )
+        ≥
+        2
+      
+    
+    {\displaystyle zkh(a,b)\geq 2}
+  
+ dela, baina hasieran jo da 
+  
+    
+      
+        z
+        k
+        h
+        (
+        a
+        ,
+        b
+        )
+        =
+        1
+      
+    
+    {\displaystyle zkh(a,b)=1}
+  
+ dela. Beraz, kontraesan bat lortzen da, eta orduan, 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ ez da zenbaki arrazionala. Ondorioz, 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ zenbaki irrazionala dela frogatuta dago (zenbaki erreala da 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+, eta zenbaki errealak zenbaki irrazionalen eta arrazionalen bildura dira).
+
+
+==== Indukzio matematikoa ====
+Indukzio matematikoa ez da metodo induktiboa erabiltzen duen frogapen mota bat. Indukzio matematikoaren bidez, 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ aldagaiaren mende dauden proposizioak froga daitezke; 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ edozein zenbaki oso da. Hasierako kasu bat frogatzen da (
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-ren balio txiki bat erabiliz proposizioa betetzen dela ikasten da) eta baita indukzio-erregela bat ere, zeinen bidez ezartzen baita kasu konkretu batek hurrengoa dakarrela. Indukzio-erregela behin eta berriz erabili behar da, aurretik frogatutako hasierako kasutik abiatuz. Nahiz eta orokorrean hasierako kasua bakarra izan, batzuetan bi edo gehiago behar dira frogapena egin ahal izateko. Modu sinplean azalduta, hurrengo arrazoibideak laburtzen du indukzio matematikoaren ideia:Izan bedi 
+  
+    
+      
+        a
+        
+      
+    
+    {\displaystyle a\,}
+  
+ zenbaki osoa (hasierako kasua), 
+  
+    
+      
+        P
+        
+      
+    
+    {\displaystyle P\,}
+  
+ propietatea betetzen duena. Hortik abiatuta, edozein 
+  
+    
+      
+        n
+        
+      
+    
+    {\displaystyle n\,}
+  
+zenbaki osok 
+  
+    
+      
+        P
+        
+      
+    
+    {\displaystyle P\,}
+  
+ propietatea betetzeak 
+  
+    
+      
+        n
+        +
+        1
+        
+      
+    
+    {\displaystyle n+1\,}
+  
+ zenbakiak ere propietate hori betetzen duela inplikatzen badu, orduan, 
+  
+    
+      
+        a
+        
+      
+    
+    {\displaystyle a\,}
+  
+ zenbakia baino handiagoak diren zenbaki guztiek beteko dute propietate hori.Frogapen hau indukzioa matematikoaren printzipioan oinarrituta dago.
+Indukzio matematikoaren ohiko aplikazioa da ezen, propietate bat zenbaki natural baterako betetzen bada, zenbaki natural guztietarako betetzen dela:
+Izan bedi 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathrm {N} }
+  
+ zenbaki naturalen multzoa, eta 
+  
+    
+      
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)}
+  
+,edozein 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ zenbaki naturaletarako frogatu nahi dugun baieztapena; orduan:
+
+  
+    
+      
+        P
+        (
+        1
+        )
+      
+    
+    {\displaystyle P(1)}
+  
+ egiazkoa da, hau da, 
+  
+    
+      
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)}
+  
+ betetzen da n=1 denean.
+
+  
+    
+      
+        P
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle P(n+1)}
+  
+ egiazkoa da 
+  
+    
+      
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)}
+  
+ egiazkoa bada; hau da, 
+  
+    
+      
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)}
+  
+ betetzeak 
+  
+    
+      
+        P
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle P(n+1)}
+  
+ inplikatzen du.
+
+
+==== Erkatze bidezko metodoa ====
+Hipotesi batetik abiatuz, ondorio bat ematen duten proposizioak frogatu ohi dira metodo honen bidez, baina, kasu honetan, ondorioa betetzen ez bada orduan hipotesia betetzea ezinezkoa dela ikusten da. Matematikoki, 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ baieztapenak 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ baieztapena inplikatzen badu, orduan 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ ez betetzeak 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ ez dela betetzen inplikatzen du, eta baieztapen honi hasierakoaren kontrajarria dela esaten da (
+  
+    
+      
+        (
+        p
+        ⇒
+        q
+        )
+        ⟹
+        (
+        q
+         
+        e
+        z
+        ⇒
+        p
+         
+        e
+        z
+        )
+      
+    
+    {\displaystyle (p\Rightarrow q)\Longrightarrow (q\ ez\Rightarrow p\ ez)}
+  
+).
+Adibide logiko ez-matematiko bat hau izan liteke: jo dezagun jatetxe batek ostegunero paella eskaintzen duela menuan. Bistakoa da «osteguna» gertakizunak «paella» gertakizuna dakarrela. Izan baliteke, asteko beste egun batean joanez gero, jatetxeak paella eskaintzea, baina ziur, ostegunero paella egongo dela. Aurreko baieztapenetik ondorio logiko bakarra lortzen da: egun batean jatetxe horretara joanez gero eta menuan paella ez badago, orduan ez da osteguna izango.
+Adibide matematiko bat izan daiteke, 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}}
+  
+bakoitia bada, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ bakoitia dela frogatzeko prozedura. Horretarako, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ bakoitia ez bada 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}}
+  
+-rekin zer gertatzen den ikusten da. 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ zenbaki bikoitia izango da orduan, eta bere buruarekin biderkatuz, berriro ere zenbaki bikoiti bat lortzen da; beraz, 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}}
+  
+ ez da bakoitia izango, eta frogatuta geratzen da proposizioa.
+Zenbaki errealen multzoan oso ezaguna da honako proposizioa: 
+  
+    
+      
+        a
+        b
+        =
+        0
+      
+    
+    {\displaystyle ab=0}
+  
+; alegia, bi zenbaki errealen biderkadura nulua bada, orduan bi zenbakietako batek nulua izan beharko du. Horrek proposizio kontrajarri hau dakar: 
+  
+    
+      
+        a
+        ≠
+        0
+      
+    
+    {\displaystyle a\neq 0}
+  
+ eta 
+  
+    
+      
+        b
+        ≠
+        0
+      
+    
+    {\displaystyle b\neq 0}
+  
+ betetzen bada, orduan 
+  
+    
+      
+        a
+        b
+        ≠
+        0
+      
+    
+    {\displaystyle ab\neq 0}
+  
+ da.
+
+
+==== Ordenagailu bidezko metodoa ====
+
+XX. mendera arte frogapen bat baieztatzeko matematikari aditu batek berrikusi behar zuela uste zen. Edonola ere ordenagailuak teoremak frogatzeko eta gizakiontzat zailak edo luzeak diren kalkuluak burutzeko erabiltzen dira gaur egun. Lau koloreen teoremaren lehen frogapena ordenagailu bidezko frogapenen adibide bat da.
+Ordenagailuko programa batean edo programa horren exekuzioan frogapena ezeztatuko duen errore bat egiteak kezkatzen ditu matematikariak. Praktikan, ordenagailu bidezko frogapen bat baliogabetzen duen errore bat egiteko probabilitatea murriz daiteke. Horretarako, erredundantzia eta autoberrikuspena eransten dira kalkuluetan. Erroreak egitea ezin da guztiz ekidin, baina hori gizakiok egindako frogapenetan ere ezinezkoa da.
+
+
+==== Froga probabilistikoa ====
+Froga probabilistikoetan adibide baten existentzia frogatzen da probabilitate teoria erabiliz. Teorema bat onargarria (teorema segur aski egiazkoa izatea) izatea eta probabilitate bidez frogatzea ez da gauza bera. Existentzia teoremak frogatzeko erabili ohi da metodo probabilistikoa.
+
+
+==== Konbinatoria bidezko metodoa ====
+Modu desberdinetara azaldutako bi objekturen arteko baliokidetasuna frogatzeko erabili ohi da konbinatoria bidezko metodoa. Gehienetan, bijekzio bat definitzen da objektu horien artean, eta gauza beraren bi adierazpen desberdin direla frogatzen da.
+
+
+==== Froga konstruktiboa ====
+Froga konstruktiboa edo adibide bidezko froga ezaugarri espezifiko bat duen adibide konkretu bat eraikitzean datza, propietate hori duen elementuaren existentzia frogatzeko. Joseph Liouville-k, adibidez, froga konstruktiboa erabili zuen zenbaki transzedenteen existentzia frogatzeko. Batzuetan proposizio bat elementu guztientzat egiazkoa ez dela frogatzeko erabiltzen da froga konstruktiboa; horretarako, kontraadibide bat eraikitzen da.
+Frogapen metodo hau Cantor-ek erabili zuen zenbaki errealen multzoa zenbakigarria ez dela frogatzeko. Horretarako, zenbaki erreal guztiak zenbakigarriak zirela jo zuen, eta segida bat osatu zuen zenbaki horiekin; ondoren, segida horretan azaltzen ez zen zenbaki bat eraiki zuen. Ondorioz, zenbaki errealen multzoa zenbakigarria izatea absurdoa dela lortu zuen; eta, beraz, zenbaki errealen multzoa ez dela zenbakigarria frogatu zuen.
+
+
+==== Zehaztasun bidezko metodoa ====
+Zehaztasun bidezko metodoetan ondorioa lortzeko kasu finitu kopuru batean banatzen da frogatu beharrekoa, eta kasu bakoitza banan-banan frogatzen da. Kasu kopuru asko ditugunean ez da gomendatzen metodo hau erabiltzea; izan ere, oso luzea izan daiteke frogapena. Adibidez, lau koloreen teorema frogatzeko lehen saiakeran, metodo hau erabili zen, eta guztira 1936 kasutan banatu zen froga; ondorioz, kasu gehienak ordenagailu bidez egin ziren.
+
+
+== Baieztapen frogaezinak ==
+Sententzia bat betetzen dela ezin bada frogatu axioma multzo batetik abiatuta, baina ezta ez dela betetzen ere, baieztapen frogaezin bat izango da axioma horiekin. Horren adibide da paraleloen postulatua, ezin dena beiztatu ez baliogatu geometria euklidearraren gainerako axiomekin.
+Matematikariek erakutsi dute baieztapen frogaezin ugari daudela Zermelo-Fraenkel-en multzo-teorian hautapen-axiomatik abiatuta.
+Göbel-en osagabetasunaren lehen teoreman interes matematikoa duten sistema axiomatiko askok baieztapen frogaezinak dituztela ikusten da.
+
+
+== Frogapen matematikoen eragina beste arloetan ==
+
+Hainbat matematikari eta filosofo, esate baterako Baruch Spinoza , argumentu filosofikoak estilo axiomatikoan formulatzen saiatu ziren, non frogapen matematikoaren estandarrak argumentazio filosofiko orokorrean aplika zitzaketen. Beste filosofo eta matematikari batzuk, frogapen matematikoaren estandarrak eta arrazoia erabiltzen saiatu ziren ere, enpirismoa erabili gabe, adibidez, cogito argumentua Descartesek.
+
+
+== Adibideak ==
+Kontraesanezko metodoaren adibide bat: 1>0 daBaieztapenaren frogapena axioma batzuetan oinarritzen da; horrela, pauso guztiak zuzenak badira, froga egiazkoa izanten da.
+Hauek dira erabili behar diren zenbaki errealen axiomak:
+
+  
+    
+      
+        1
+        ≠
+        0
+        
+        .
+      
+    
+    {\displaystyle 1\not =0\,.}
+  
+
+  
+    
+      
+        a
+        >
+        b
+        
+      
+    
+    {\displaystyle a>b\,}
+  
+ eta 
+  
+    
+      
+        c
+        <
+        0
+        
+      
+    
+    {\displaystyle c<0\,}
+  
+ badira (
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+, 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ eta 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ zenbaki errealak izanik), orduan, 
+  
+    
+      
+        a
+        c
+        <
+        b
+        c
+        
+        .
+      
+    
+    {\displaystyle ac<bc\,.}
+  
+
+Hori kontuan hartuta, frogapena hasteko, espero den emaitzaren kontrakoa onartzen da: 1<0. Orduan, honako bi baieztapenak betetzen dira:
+
+  
+    
+      
+        1
+        <
+        0
+        
+      
+    
+    {\displaystyle 1<0\,}
+  
+ da.
+2. axioma erabiliz, eta 
+  
+    
+      
+        a
+        =
+        0
+        >
+        b
+        =
+        1
+      
+    
+    {\displaystyle a=0>b=1}
+  
+ eta 
+  
+    
+      
+        c
+        =
+        1
+      
+    
+    {\displaystyle c=1}
+  
+<0 izanik, 
+  
+    
+      
+        a
+        c
+        =
+        0
+        <
+        b
+        c
+        =
+        1
+      
+    
+    {\displaystyle ac=0<bc=1}
+  
+.
+Beraz, aurreko bi baieztapenak betetzea ezinezkoa da, eta ezarritako hipotesia (
+  
+    
+      
+        1
+        <
+        0
+        
+      
+    
+    {\displaystyle 1<0\,}
+  
+) ez da zuzena. Horrekin baiezta daitekeena 
+  
+    
+      
+        0
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq 1}
+  
+ da. Baina 1. axiomaren arabera, 
+  
+    
+      
+        1
+        ≠
+        0
+        
+      
+    
+    {\displaystyle 1\not =0\,}
+  
+ da. Beraz, 
+  
+    
+      
+        1
+        >
+        0
+        
+      
+    
+    {\displaystyle 1>0\,}
+  
+ da, eta frogapena bukatu da.
+Indukziozko frogapenaren adibide bat:
+Frogatu dezagun
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            n
+            
+              n
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{k=1}^{n}{\frac {1}{k(k+1)}}={\frac {n}{n+1}}}
+  
+ betetzen dela.
+Frogapena
+
+  
+    
+      
+        n
+        =
+        1
+      
+    
+    {\displaystyle n=1}
+  
+ denean egia dela frogatu behar dugu, batukaria k=1etik hasten baita.
+Izan bedi 
+  
+    
+      
+        n
+        =
+        1
+      
+    
+    {\displaystyle n=1}
+  
+, orduan,
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            1
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              +
+              1
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+      
+    
+    {\displaystyle \sum _{k=1}^{1}{\frac {1}{k(k+1)}}={\frac {1}{1+1}}={\frac {1}{2}}}
+  
+
+izango dugu, eta 
+  
+    
+      
+        n
+        =
+        1
+      
+    
+    {\displaystyle n=1}
+  
+erako egia dela ikusi dugu.
+
+  
+    
+      
+        n
+        >
+        1
+      
+    
+    {\displaystyle n>1}
+  
+ finko baterako egiazkotzat jota, ikus dezagun 
+  
+    
+      
+        n
+        +
+        1
+      
+    
+    {\displaystyle n+1}
+  
+-en kasuan zer gertatzen den.
+Batukarien propietateengatik badakigu,
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+            +
+            1
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        +
+        
+          ∑
+          
+            k
+            =
+            n
+            +
+            1
+          
+          
+            n
+            +
+            1
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{k=1}^{n+1}{\frac {1}{k(k+1)}}=\sum _{k=1}^{n}{\frac {1}{k(k+1)}}+\sum _{k=n+1}^{n+1}{\frac {1}{k(k+1)}}}
+  
+.
+
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-ren kasurako baieztapena egiazkotzat jo denez, hurrengoa daukagu
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            n
+            
+              n
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{k=1}^{n}{\frac {1}{k(k+1)}}={\frac {n}{n+1}}}
+  
+, eta aurreko adierazpenean ordezkatuz:
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+            +
+            1
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        +
+        
+          ∑
+          
+            k
+            =
+            n
+            +
+            1
+          
+          
+            n
+            +
+            1
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            n
+            
+              n
+              +
+              1
+            
+          
+        
+        +
+        
+          
+            1
+            
+              (
+              n
+              +
+              1
+              )
+              (
+              n
+              +
+              2
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{k=1}^{n+1}{\frac {1}{k(k+1)}}=\sum _{k=1}^{n}{\frac {1}{k(k+1)}}+\sum _{k=n+1}^{n+1}{\frac {1}{k(k+1)}}={\frac {n}{n+1}}+{\frac {1}{(n+1)(n+2)}}}
+  
+.
+Ondorioz,
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+            +
+            1
+          
+        
+        
+          
+            1
+            
+              k
+              (
+              k
+              +
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            
+              n
+              (
+              n
+              +
+              2
+              )
+              +
+              1
+            
+            
+              (
+              n
+              +
+              1
+              )
+              (
+              n
+              +
+              2
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                n
+                
+                  2
+                
+              
+              +
+              2
+              n
+              +
+              1
+            
+            
+              (
+              n
+              +
+              1
+              )
+              (
+              n
+              +
+              2
+              )
+            
+          
+        
+        =
+        
+          
+            
+              (
+              n
+              +
+              1
+              
+                )
+                
+                  2
+                
+              
+            
+            
+              (
+              n
+              +
+              1
+              )
+              (
+              n
+              +
+              2
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \sum _{k=1}^{n+1}{\frac {1}{k(k+1)}}={\frac {n(n+2)+1}{(n+1)(n+2)}}={\frac {n^{2}+2n+1}{(n+1)(n+2)}}={\frac {(n+1)^{2}}{(n+1)(n+2)}}}
+  
+.
+
+  
+    
+      
+        n
+        =
+        −
+        1
+      
+    
+    {\displaystyle n=-1}
+  
+ ez denez, sinplifika dezakegu 
+  
+    
+      
+        n
+        +
+        1
+      
+    
+    {\displaystyle n+1}
+  
+ terminoa, eta ondokoa lortzen dugu:
+
+  
+    
+      
+        
+          
+            
+              ∑
+              
+                k
+                =
+                1
+              
+              
+                n
+                +
+                1
+              
+            
+            
+              
+                1
+                
+                  k
+                  (
+                  k
+                  +
+                  1
+                  )
+                
+              
+            
+            =
+            
+              
+                
+                  (
+                  n
+                  +
+                  1
+                  )
+                
+                
+                  (
+                  n
+                  +
+                  1
+                  )
+                  +
+                  1
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\displaystyle \sum _{k=1}^{n+1}{\frac {1}{k(k+1)}}={\frac {(n+1)}{(n+1)+1}}}}
+  
+.
+Frogatu nahi genuena lortu dugu.
+Ondorioz, baieztapena 
+  
+    
+      
+        n
+        +
+        1
+      
+    
+    {\displaystyle n+1}
+  
+-en kasuan ere betetzen da.
+Beraz, baieztapena 
+  
+    
+      
+        n
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle n\in \mathbb {N} }
+  
+ guztietarako betetzen da.
+
+
+== Erreferentziak ==
+
+
+== Kanpo estekak ==

@@ -1,0 +1,1694 @@
+Un inductor, bobina o reactor es un componente pasivo de un circuito eléctrico que, debido al fenómeno de la autoinducción, almacena energía en forma de campo magnético.[1]​
+Igualmente se define como inductor, también llamado bobina, estrangulador o reactor, es un componente eléctrico pasivo de dos terminales que almacena energía en un campo magnético cuando la corriente eléctrica fluye a través de él.[2]​ Un inductor suele consistir en un cable aislado enrollado en una  bobina.
+Cuando la corriente que circula por la bobina cambia, el campo magnético que varía en el tiempo induce una fuerza electromotriz. (f.e.m.) ( tensión) en el conductor, descrita por la ley de inducción de Faraday. Según la ley de Lenz, la tensión inducida tiene una polaridad (dirección) que se opone al cambio de corriente que la ha creado. Como resultado, los inductores se oponen a cualquier cambio en la corriente que los atraviesa.
+Un inductor se caracteriza por su inductancia, que es la relación entre la tensión y la tasa de cambio de la corriente. En el Sistema Internacional de Unidades (SI), la unidad de inductancia es el «henrio» (H), llamada así por el científico estadounidense del siglo XIX Joseph Henry. En la medición de circuitos magnéticos, equivale a weber/amperio. Los inductores tienen valores que suelen oscilar entre 1 µH (10-6 H) y 20 H.  Muchos inductores tienen un núcleo magnético hecho de hierro o ferrita dentro de la bobina, que sirve para aumentar el campo magnético y, por tanto, la inductancia. Junto con los  condensadores y las  resistencias, los inductores son uno de los tres elementos pasivos lineales  que componen los circuitos electrónicos. Los inductores son muy utilizados en los equipos electrónicos de corriente alterna (CA), especialmente en los equipos de radio.  Se utilizan para bloquear la CA y permitir el paso de la CC; los inductores diseñados para este fin se denominan bobinas.  También se emplean en filtro electrónicos para separar señales de diferentes frecuencias, y en combinación con condensadores para hacer  circuitos sintonizados, utilizados para sintonizar receptores de radio y televisión.
+
+
+== Descripción ==
+Una corriente eléctrica que fluye por un conductor genera un campo magnético que lo rodea. El enlace de flujo magnético 
+  
+    
+      
+        
+          Φ
+          
+            
+              B
+            
+          
+        
+      
+    
+    {\displaystyle \Phi _{\mathbf {B} }}
+  
+ generado por una corriente determinada 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ depende de la forma geométrica del circuito. Su relación define la inductancia 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+.[3]​[4]​[5]​[6]​ Así,
+
+  
+    
+      
+        L
+        :=
+        
+          
+            
+              Φ
+              
+                
+                  B
+                
+              
+            
+            I
+          
+        
+      
+    
+    {\displaystyle L:={\frac {\Phi _{\mathbf {B} }}{I}}}
+  
+.
+La inductancia de un circuito depende de la geometría de la trayectoria de la corriente, así como de la permeabilidad magnética de los materiales cercanos. Un inductor es un componente que consiste en un alambre u otro conductor conformado para aumentar el flujo magnético a través del circuito, normalmente en forma de bobina o  hélice, con dos terminales. Al enrollar el cable en una  bobina se aumenta el número de veces que el flujo magnético líneas enlazan el circuito, aumentando el campo y por tanto la inductancia.  Cuantas más vueltas, mayor es la inductancia.  La inductancia también depende de la forma de la bobina, la separación de las espiras y muchos otros factores.  Al añadir un «núcleo magnético» de un material ferromagnético como el hierro dentro de la bobina, el campo magnetizante de la bobina inducirá la magnetización en el material, aumentando el flujo magnético.  La alta permeabilidad de un núcleo ferromagnético puede aumentar la inductancia de una bobina en un factor de varios miles sobre lo que sería sin ella.
+
+
+== Construcción ==
+Un inductor está constituido normalmente por una bobina de conductor, típicamente alambre o hilo de cobre esmaltado. Existen inductores con núcleo de aire o con núcleo hecho de material ferroso (por ejemplo, acero magnético), para incrementar su capacidad de magnetismo.
+Los inductores también pueden estar construidos en circuitos integrados, usando el mismo proceso utilizado para realizar microprocesadores. En estos casos se usa, comúnmente, el aluminio como material conductor. Sin embargo, es raro que se construyan inductores dentro de los circuitos integrados; es mucho más práctico usar un circuito llamado «girador» que, mediante un amplificador operacional, hace que un condensador se comporte como si fuese un inductor.
+El inductor consta de las siguientes partes:[7]​
+
+Devanado inductor: Es el conjunto de espiras destinado a producir el flujo magnético, al ser recorrido por la corriente eléctrica.
+Culata: Es una pieza de sustancia ferromagnética, no rodeada por devanados, y destinada a unir los polos de la máquina.
+Pieza polar: Es la parte del circuito magnético situada entre la culata y el entrehierro, incluyendo el núcleo y la expansión polar.
+Núcleo: Es la parte del circuito magnético rodeada por el devanado inductor.
+Expansión polar: Es la parte de la pieza polar próxima al inducido y que bordea al entrehierro.
+Polo auxiliar o de conmutación: Es un polo magnético suplementario, provisto o no, de devanados y destinado a mejorar la conmutación. Suelen emplearse en las máquinas de mediana y gran potencia.
+También pueden fabricarse pequeños inductores, que se usan para frecuencias muy altas, con un conductor pasando a través de un cilindro de ferrita o granulado.
+
+
+== Funcionamiento de una bobina ==
+Sea una bobina o solenoide, constituido por un conductor de longitud l y sección S, y que ha sido devanado en N espiras, por el que circula una corriente eléctrica i(t).
+Aplicando la Ley de Biot-Savart que relaciona la inducción magnética, B(t), con la causa que la produce, es decir, la corriente i(t) que circula por el solenoide, se obtiene que el flujo magnético Φ(t) que abarca es igual a: 
+
+  
+    
+      
+        
+          ϕ
+          (
+          t
+          )
+        
+        =
+        
+          B
+          (
+          t
+          )
+        
+        ⋅
+        
+          S
+        
+        =
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              N
+            
+            
+              ℓ
+            
+          
+        
+        ⋅
+        
+          i
+          (
+          t
+          )
+        
+        ⋅
+        
+          S
+        
+        =
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              
+                N
+              
+              
+                S
+              
+            
+            
+              ℓ
+            
+          
+        
+        ⋅
+        
+          i
+          (
+          t
+          )
+        
+        
+      
+    
+    {\displaystyle {\phi (t)}={B(t)}\cdot {S}={\mu _{o}}\cdot {{N} \over {\ell }}\cdot {i(t)}\cdot {S}={\mu _{o}}\cdot {{N}{S} \over {\ell }}\cdot {i(t)}\,}
+  
+
+Si el flujo magnético es variable en el tiempo, se genera en cada espira, según la Ley de Faraday, una fuerza electromotriz (f.e.m.) de autoinducción que, según la Ley de Lenz, tiende a oponerse a la causa que la produce, es decir, a la variación de la corriente eléctrica que genera dicho flujo magnético. Por esta razón suele llamarse fuerza contraelectromotriz. Esta tiene el valor:
+
+  
+    
+      
+        
+          
+            
+              E
+            
+          
+          (
+          t
+          )
+        
+        =
+        
+          −
+          N
+        
+        
+          
+            
+              
+                d
+              
+              
+                ϕ
+                (
+                t
+                )
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          −
+        
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              
+                
+                  N
+                  
+                    2
+                  
+                
+              
+              
+                S
+              
+            
+            
+              ℓ
+            
+          
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {{\mathcal {E}}(t)}={-N}{{d}{\phi (t)} \over {dt}}={-}{\mu _{o}}\cdot {{N^{2}}{S} \over {\ell }}\cdot {{di(t)} \over {dt}}}
+  
+
+A la expresión 
+  
+    
+      
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              
+                
+                  N
+                  
+                    2
+                  
+                
+              
+              
+                S
+              
+            
+            
+              ℓ
+            
+          
+        
+        
+        
+        
+      
+    
+    {\displaystyle {\mu _{o}}\cdot {{N^{2}}{S} \over {\ell }}\,\!\quad }
+  
+ se le denomina coeficiente de autoinducción, L, el cual relaciona la variación de corriente con la f.e.m. inducida y, como se puede ver, depende de la geometría de la bobina y del núcleo en la que está devanada. Se mide en henrios.
+
+
+=== Energía almacenada ===
+La bobina almacena energía en forma de campo magnético cuando aumenta la intensidad de corriente, devolviéndola cuando esta disminuye. Matemáticamente se puede demostrar que la energía 
+  
+    
+      
+        
+          
+            w
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\mathcal {w}}\,\!}
+  
+, almacenada por una bobina con inductancia 
+  
+    
+      
+        L
+        
+        
+      
+    
+    {\displaystyle L\,\!}
+  
+, que es recorrida por una corriente de intensidad 
+  
+    
+      
+        i
+        
+        
+      
+    
+    {\displaystyle i\,\!}
+  
+, viene dada por:
+
+  
+    
+      
+        w
+        =
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          i
+          
+            2
+          
+        
+      
+    
+    {\displaystyle w={1 \over 2}Li^{2}}
+  
+
+Partiendo de la ecuación que relaciona la tensión con la corriente en un inductor:
+
+  
+    
+      
+        
+          
+            v
+          
+        
+        =
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\mathcal {v}}=L{di \over dt}}
+  
+
+la ecuación de la potencia instantánea puede ser utilizada para llegar a aquella que señale la energía correspondiente en la bobina.
+
+  
+    
+      
+        
+          
+            p
+          
+        
+        =
+        v
+        i
+        =
+        
+          
+            (
+          
+        
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        
+          
+            )
+          
+        
+        i
+      
+    
+    {\displaystyle {\mathcal {p}}=vi={\biggl (}L{di \over dt}{\biggr )}i}
+  
+
+Así, la energía almacenada se puede expresar como:
+
+  
+    
+      
+        w
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            t
+          
+        
+        p
+        
+        d
+        t
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            t
+          
+        
+        
+          
+            (
+          
+        
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        
+          
+            )
+          
+        
+        i
+        
+        d
+        t
+        =
+        L
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            t
+          
+        
+        i
+        
+        d
+        i
+        =
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          i
+          
+            2
+          
+        
+        (
+        t
+        )
+        −
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          i
+          
+            2
+          
+        
+        (
+        −
+        ∞
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          i
+          
+            2
+          
+        
+      
+    
+    {\displaystyle w=\int _{-\infty }^{t}p\,dt=\int _{-\infty }^{t}{\biggl (}L{di \over dt}{\biggr )}i\,dt=L\int _{-\infty }^{t}i\,di={1 \over 2}Li^{2}(t)-{1 \over 2}Li^{2}(-\infty )={1 \over 2}Li^{2}}
+  
+
+Es razonable y práctico pensar que en algún tiempo en el pasado la corriente que atravesaba al inductor era 0 por lo que la corriente en un tiempo igual a menos infinito es 0.
+
+
+=== En circuitos ===
+
+De la formulación física de la bobina se ha extraído la expresión:
+
+  
+    
+      
+        
+          
+            
+              E
+            
+          
+          (
+          t
+          )
+        
+        =
+        
+          −
+          L
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {{\mathcal {E}}(t)}={-L}\cdot {{di(t)} \over {dt}}}
+  
+
+Suponiendo una bobina ideal, (figura 1), sin pérdidas de carga, aplicando la segunda Ley de Kirchhoff, se tiene que:
+
+  
+    
+      
+        
+          v
+          (
+          t
+          )
+        
+        +
+        
+          e
+          (
+          t
+          )
+        
+        =
+        
+          0
+        
+        
+        
+      
+    
+    {\displaystyle {v(t)}+{e(t)}={0}\,\!}
+  
+
+Es decir, en toda bobina eléctrica dentro de un circuito se produce en ella una caída de tensión:
+
+  
+    
+      
+        
+          
+            v
+            
+              L
+            
+          
+          (
+          t
+          )
+        
+        =
+        
+          v
+          (
+          t
+          )
+        
+        =
+        
+          −
+          e
+          (
+          t
+          )
+        
+        =
+        
+          L
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {v_{L}(t)}={v(t)}={-e(t)}={L}\cdot {{di(t)} \over {dt}}}
+  
+
+Despejando la intensidad:
+
+  
+    
+      
+        
+          i
+          (
+          t
+          )
+        
+        =
+        
+          i
+          (
+          0
+          )
+        
+        +
+        
+          
+            
+              1
+            
+            
+              L
+            
+          
+        
+        ⋅
+        
+          
+            ∫
+            
+              0
+            
+            
+              t
+            
+          
+          v
+          (
+          t
+          )
+          
+          d
+          t
+        
+        
+        
+      
+    
+    {\displaystyle {i(t)}={i(0)}+{{1} \over {L}}\cdot {\int _{0}^{t}v(t)\,dt}\,\!}
+  
+
+Si en el instante t = 0, la bobina está cargada con una corriente I, esta se puede sustituir por una bobina descargada y una fuente de intensidad de valor i(0) = I en paralelo.
+La corriente por la bobina y por tanto el flujo no pueden variar bruscamente ya que si no la tensión 
+  
+    
+      
+        
+          
+            v
+            
+              L
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle {v_{L}(t)}}
+  
+ debería hacerse infinita. Por eso al abrir un circuito en donde se halle conectada una bobina, siempre saltará un arco de corriente entre los bornes del interruptor que da salida a la corriente que descarga la bobina.
+Cuando el inductor no es ideal porque tiene una resistencia interna en serie, la tensión aplicada es igual a la suma de la caída de tensión sobre la resistencia interna más la fuerza contra-electromotriz autoinducida.
+
+
+=== En corriente alterna ===
+En corriente alterna, una bobina ideal ofrece una resistencia al paso de la corriente eléctrica que recibe el nombre de reactancia inductiva, 
+  
+    
+      
+        
+          
+            X
+            
+              L
+            
+          
+        
+      
+    
+    {\displaystyle {X_{L}}}
+  
+, cuyo valor viene dado por el producto de la pulsación (
+  
+    
+      
+        
+        ω
+        =
+        2
+        π
+        f
+        
+        
+      
+    
+    {\displaystyle \quad \omega =2\pi f\,\!}
+  
+) por la inductancia, L:
+
+  
+    
+      
+        
+        
+          X
+          
+            L
+          
+        
+        =
+        j
+        ω
+        L
+        
+        
+      
+    
+    {\displaystyle \quad X_{L}=j\omega L\,\!}
+  
+
+Si la pulsación está en radianes por segundo (rad/s) y la inductancia en henrios (H) la reactancia resultará en ohmios.
+De acuerdo con la ley de Ohm circulará una corriente alterna que se verá retrasada 90° (
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+  
+) respecto a la tensión aplicada.
+
+
+=== Asociaciones comunes ===
+
+Al igual que las resistencias, las bobinas pueden asociarse en serie (figura 2), paralelo (figura 3) o de forma mixta. En estos casos, y siempre que no exista acoplamiento magnético, la inductancia equivalente para la asociación en serie vendrá dada por:
+
+  
+    
+      
+        
+          L
+          
+            A
+            B
+          
+        
+        =
+        
+          L
+          
+            1
+          
+        
+        +
+        
+          L
+          
+            2
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          L
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          L
+          
+            k
+          
+        
+      
+    
+    {\displaystyle L_{AB}=L_{1}+L_{2}+...+L_{n}=\sum _{k=1}^{n}L_{k}}
+  
+
+Para la asociación en paralelo tenemos:
+
+  
+    
+      
+        
+          L
+          
+            A
+            B
+          
+        
+        =
+        
+          
+            1
+            
+              
+                ∑
+                
+                  k
+                  =
+                  1
+                
+                
+                  n
+                
+              
+              
+                
+                  1
+                  
+                    L
+                    
+                      k
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle L_{AB}={1 \over \sum _{k=1}^{n}{1 \over L_{k}}}}
+  
+
+Para la asociación mixta se procederá de forma análoga que con las resistencias.
+Si se requiere una mayor comprensión del comportamiento reactivo de un inductor, es conveniente 
+entonces analizar detalladamente la Ley de Lenz y comprobar de esta forma cómo se origina una reactancia de tipo inductiva, la cual nace debido a una oposición que le presenta el inductor o bobina a la variación de flujo magnético.
+
+
+== Comportamientos ideal y real ==
+
+
+=== En corriente continua ===
+Una bobina ideal en corriente continua se comporta como un cortocircuito (conductor ideal), ya que al ser i(t) constante, es decir, no varía con el tiempo, no hay autoinducción de ninguna f.e.m.
+
+  
+    
+      
+        
+          
+            v
+            
+              L
+            
+          
+          (
+          t
+          )
+        
+        =
+        
+          L
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          0
+        
+        
+        
+      
+    
+    {\displaystyle {v_{L}(t)}={L}\cdot {{di(t)} \over {dt}}={0}\,\!}
+  
+
+Una bobina real en régimen permanente se comporta como una resistencia cuyo valor 
+  
+    
+      
+        
+          
+            R
+            
+              L
+            
+          
+        
+      
+    
+    {\displaystyle {R_{L}}}
+  
+ (figura 6a) será el de su devanado.
+En régimen transitorio, esto es, al conectar o desconectar un circuito con bobina, suceden fenómenos electromagnéticos que inciden sobre la corriente (ver circuitos serie RL y RC).
+
+
+=== En corriente alterna ===
+
+Al conectar una CA sinusoidal v(t) a una bobina aparecerá una corriente i(t), también sinusoidal, esto es, variable, por lo que, como se comentó más arriba, aparecerá una fuerza contraelectromotriz, -e(t), cuyo valor absoluto puede demostrase que es igual al de v(t). Por tanto, cuando la corriente i(t) aumenta, e (t) disminuye para dificultar dicho aumento; análogamente, cuando i(t) disminuye, e(t) aumenta para oponerse a dicha disminución. Esto puede apreciarse en el diagrama de la figura 4. Entre 0° y 90° la curva i(t) es negativa, disminuyendo desde su valor máximo negativo hasta cero, observándose que e(t) va aumentando hasta alcanzar su máximo negativo. Entre 90° y 180°, la corriente aumenta desde cero hasta su valor máximo positivo, mientras e(t) disminuye hasta ser cero. Desde 180° hasta los 360° el razonamiento es similar al anterior.
+
+Dado que la tensión aplicada, v(t) es igual a -e(t), o lo que es lo mismo, está desfasada 180° respecto de e(t), resulta que la corriente i(t) queda retrasada 90° respecto de la tensión aplicada. Consideremos por lo tanto, una bobina L, como la de la figura 1, a la que se aplica una tensión alterna de valor:
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        
+          V
+          
+            0
+          
+        
+        ⋅
+        sin
+        ⁡
+        (
+        ω
+        t
+        +
+        β
+        )
+        ,
+      
+    
+    {\displaystyle u(t)=V_{0}\cdot \sin(\omega t+\beta ),}
+  
+
+De acuerdo con la ley de Ohm circulará una corriente alterna, retrasada 90° (
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+  
+) respecto a la tensión aplicada (figura 5), de valor:
+
+  
+    
+      
+        i
+        (
+        t
+        )
+        =
+        
+          
+            
+              u
+              (
+              t
+              )
+            
+            R
+          
+        
+        =
+        
+          I
+          
+            0
+          
+        
+        ⋅
+        sin
+        ⁡
+        (
+        ω
+        t
+        +
+        β
+        −
+        
+          90
+          
+            ∘
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle i(t)={u(t) \over R}=I_{0}\cdot \sin(\omega t+\beta -90^{\circ }),}
+  
+
+donde 
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+        =
+        
+          
+            
+              V
+              
+                0
+              
+            
+            
+              X
+              
+                L
+              
+            
+          
+        
+      
+    
+    {\displaystyle I_{0}={V_{0} \over X_{L}}}
+  
+. Si se representa el valor eficaz de la corriente obtenida en forma polar:
+
+  
+    
+      
+        
+          
+            
+              I
+              →
+            
+          
+        
+        =
+        
+          I
+          
+            
+              /
+            
+            
+            
+            
+            
+              
+                
+                   
+                  β
+                  −
+                  
+                    90
+                    
+                      ∘
+                    
+                  
+                
+                _
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {I}}=I_{/\!\!\!{\underline {\ \beta -90^{\circ }}}}}
+  
+
+Y operando matemáticamente:
+
+  
+    
+      
+        
+          
+            
+              I
+              →
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                V
+                
+                  X
+                  
+                    L
+                  
+                
+              
+            
+            )
+          
+          
+            
+              /
+            
+            
+            
+            
+            
+              
+                
+                   
+                  β
+                  −
+                  
+                    90
+                    
+                      ∘
+                    
+                  
+                
+                _
+              
+            
+          
+        
+        =
+        
+          
+            
+              V
+              
+                
+                  /
+                
+                
+                
+                
+                
+                  
+                    
+                       
+                      β
+                    
+                    _
+                  
+                
+              
+            
+            
+              
+                
+                  X
+                  
+                    L
+                  
+                
+              
+              
+                
+                  /
+                
+                
+                
+                
+                
+                  
+                    
+                       
+                      
+                        90
+                        
+                          ∘
+                        
+                      
+                    
+                    _
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {I}}=\left({V \over X_{L}}\right)_{/\!\!\!{\underline {\ \beta -90^{\circ }}}}={V_{/\!\!\!{\underline {\ \beta }}} \over {X_{L}}_{/\!\!\!{\underline {\ 90^{\circ }}}}}}
+  
+
+Por lo tanto, en los circuitos de CA, una bobina ideal se puede asimilar a una magnitud compleja sin parte real y parte imaginaria positiva:
+
+  
+    
+      
+        
+          
+            
+              
+                X
+                
+                  L
+                
+              
+              →
+            
+          
+        
+        =
+        0
+        +
+        j
+        
+          X
+          
+            L
+          
+        
+        =
+        
+          
+            
+              X
+              
+                L
+              
+            
+          
+          
+            
+              /
+            
+            
+            
+            
+            
+              
+                
+                   
+                  
+                    90
+                    
+                      ∘
+                    
+                  
+                
+                _
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {X_{L}}}=0+jX_{L}={X_{L}}_{/\!\!\!{\underline {\ 90^{\circ }}}}}
+  
+
+En la bobina real, habrá que tener en cuenta la resistencia de su bobinado, RL, pudiendo ser su circuito equivalente o modelo, el que aparece en la figura 6b) o 6c) dependiendo del tipo de bobina o frecuencia de funcionamiento, aunque para análisis más precisos pueden utilizarse modelos más complejos que los anteriores.
+
+
+== Comportamiento a la interrupción del circuito ==
+
+Examinemos el comportamiento práctico de un inductor cuando se interrumpe el circuito que lo alimenta. En el dibujo de derecha aparece un inductor que se carga a través de una resistencia y un interruptor. El condensador dibujado en punteado representa las capacitancias parásitas del inductor. Está dibujado separado del inductor, pero en realidad forma parte de él, porque representa las capacitancias parásitas de las vueltas del devanado entre ellas mismas. Todo inductor tiene capacitancias parásitas, incluso los devanados especialmente concebidos para minimizarlas como el devanado en «nido de abejas».
+
+A un cierto momento 
+  
+    
+      
+        
+          
+            
+              t
+              
+                ∘
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {t_{\circ }}}
+  
+ el interruptor se abre. Si miramos la definición de inductancia:
+
+  
+    
+      
+        V
+        =
+        L
+        
+          
+            
+              d
+              I
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle V=L{dI \over dt}}
+  
+
+vemos que, para que la corriente que atraviesa el inductor se detenga instantáneamente, sería necesario la aparición de una tensión infinita, y eso no puede suceder. Por esa razón la corriente continúa circulando a través de las capacitancias parásitas de la bobina. Al principio, el único camino que tiene es a través las capacitancias parásitas. La corriente continúa circulando a través la capacitancia parásita, cargando negativamente el punto alto del condensador en el dibujo. 
+Nos encontramos con un circuito LC que oscilará a una pulsación:
+
+  
+    
+      
+        
+          
+            ω
+            =
+            
+              
+                1
+                
+                  
+                    L
+                    C
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle {\omega ={1 \over {\sqrt {LC}}}}}
+  
+
+donde 
+  
+    
+      
+        
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {C}}
+  
+ es el valor equivalente de las capacitancias parásitas. Si los aislamientos del devanado son suficientemente resistentes a las altas tensiones, y si el interruptor interrumpe bien el circuito, la oscilación continuará con una amplitud que se amortiguará debido a las pérdidas dieléctricas y resistivas de las capacitancias parásitas y del conductor del inductor. Si además, el inductor tiene un núcleo ferromagnético, habrá también pérdidas en el núcleo.
+Hay que ver que la tensión máxima (conocida como «sobretensión») de la oscilación puede ser muy grande, ya que el máximo de la tensión corresponde al momento en el cual toda la energía almacenada en la bobina 
+  
+    
+      
+        
+          
+            
+              
+                1
+                2
+              
+            
+            L
+            
+              I
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {{1 \over 2}LI^{2}}}
+  
+ habrá pasado a las capacitancias parásitas 
+  
+    
+      
+        
+          
+            
+              
+                1
+                2
+              
+            
+            C
+            
+              V
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {{1 \over 2}CV^{2}}}
+  
+. Si estas son pequeñas, la tensión puede ser muy grande y pueden producirse arcos eléctricos entre vueltas de la bobina o entre los contactos abiertos del interruptor. 
+Aunque los arcos eléctricos sean frecuentemente perniciosos y peligrosos, otras veces son útiles y deseados. Es el caso de la soldadura al arco, lámparas a arco, alto horno eléctrico y hornos a arco. En el caso de la soldadura al arco, el interruptor de nuestro diagrama es el contacto entre el metal a soldar y el electrodo.
+
+Lo que sucede cuando el arco aparece depende de las características eléctricas del arco. Y las características de un arco dependen de la corriente que lo atraviesa. Cuando la corriente es grande (decenas de amperios), el arco está formado por un camino espeso de moléculas y átomos ionizados que presentan poca resistencia eléctrica y una inercia térmica que lo hace durar. El arco disipa centenas de vatios y puede fundir metales y crear incendios. Si el arco se produce entre los contactos del interruptor, el circuito no estará verdaderamente abierto y la corriente continuará circulando.
+Los arcos no deseados constituyen un problema serio y difícil de resolver cuando se utilizan altas tensiones y grandes potencias. 
+
+Cuando las corrientes son pequeñas, el arco se enfría rápidamente y deja de conducir la electricidad.
+En el dibujo de la derecha hemos ilustrado un caso particular que puede producirse, pero que solo es uno de los casos posibles. Hemos ampliado la escala del tiempo alrededor de la apertura del interruptor y de la formación del arco.
+Después de la apertura del interruptor, la tensión a los bornes de la inductancia aumenta (con signo contrario). En el instante 
+  
+    
+      
+        
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {t_{1}}}
+  
+, la tensión es suficiente para crear un arco entre dos vueltas de la bobina. El arco presenta poca resistencia eléctrica y descarga rápidamente las capacidades parásitas. La corriente, en lugar de continuar cargando las capacidades parásitas, comienza a pasar por el arco. Hemos dibujado el caso en el cual la tensión del arco es relativamente constante. La corriente del inductor disminuye hasta que al instante 
+  
+    
+      
+        
+          
+            
+              t
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {t_{2}}}
+  
+ sea demasiado pequeña para mantener el arco y este se apaga y deja de conducir. La corriente vuelve a pasar por las capacidades parásitas y esta vez la oscilación continúa amortiguándose y sin crear nuevos arcos, ya que esta vez la tensión no alcanzará valores demasiado grandes. Recordemos que este es solamente un caso posible.
+Se puede explicar por qué una persona puede recibir una pequeña descarga eléctrica al medir la resistencia de un bobinado con un simple óhmetro que solo puede alimentar unos miliamperios y unos pocos voltios. La razón es que para medir la resistencia del bobinado, le hace circular unos miliamperios. Si, cuando se desconectan los cables del óhmetro, se sigue tocando con los dedos los bornes de la bobina, los miliamperios que circulaban en ella continuarán haciéndolo, pero pasando por los dedos. 
+
+
+=== Análisis de transitorios ===
+
+La regla es que, para evitar los arcos o las sobretensiones, hay que proteger los circuitos previendo un pasaje para la corriente del inductor cuando el circuito se interrumpe. En el diagrama de la derecha hay un ejemplo de un transistor que controla la corriente en una bobina (la de un relé, por ejemplo). Cuando el transistor se bloquea, la corriente que circula en la bobina carga las capacidades parásitas y la tensión del colector aumenta y puede sobrepasar fácilmente la tensión máxima de la unión colector-base y destruir el transistor. Colocando un diodo como en el diagrama, la corriente encuentra un camino en el diodo y la tensión del colector estará limitada a la tensión de alimentación más los 0,6 V del diodo. El precio funcional de esta protección es que la corriente de la bobina tarda más en disminuir y eso, en algunos casos, puede ser un inconveniente. Se puede disminuir el tiempo si, en lugar de un diodo rectificador, se coloca un diodo zéner o Transil. No hay que olvidar que el dispositivo de protección deberá ser capaz de absorber casi toda la energía almacenada en el inductor.
+
+
+== Tipos de inductores ==
+
+
+=== Inductor de núcleo de aire ===
+La locución «bobina con núcleo de aire» describe un inductor que no utiliza un núcleo magnético hecho de un material ferromagnético. La locución se refiere a las bobinas enrolladas en plástico, cerámica u otras formas no magnéticas, así como a las que sólo tienen aire dentro de los devanados. Las bobinas con núcleo de aire tienen una inductancia menor que las bobinas con núcleo ferromagnético, pero se suelen utilizar a frecuencias altas porque están libres de las pérdidas de energía llamadas pérdidas en el núcleo que se producen en los núcleos ferromagnéticos, que aumentan con la frecuencia. Un efecto secundario que puede producirse en las bobinas con núcleo de aire en las que el devanado no está rígidamente apoyado en una forma es la «microfonía»: la vibración mecánica de los devanados puede provocar variaciones en la inductancia.
+
+
+==== Inductor de radiofrecuencia ====
+
+A frecuencias altas u onda corta, especialmente s (RF), los inductores tienen mayor resistencia y otras pérdidas. Además de provocar pérdidas de potencia, en los circuitos resonantes esto puede reducir el factor Q del circuito, ampliando el ancho de banda. En los inductores de RF, que en su mayoría son del tipo de núcleo de aire, se utilizan técnicas de construcción especializadas para minimizar estas pérdidas. Las pérdidas se deben a estos efectos:
+
+Efecto pelicular
+La resistencia de un cable a la corriente de alta frecuencia es mayor que su resistencia a la corriente continua debido al Efecto pelicular. La corriente alterna de radiofrecuencia no penetra mucho en el cuerpo de un conductor, sino que viaja a lo largo de su superficie.  Por ejemplo, a 6 MHz la profundidad de la piel del cable de cobre es de aproximadamente 0,001 pulgadas (25 µm); la mayor parte de la corriente se encuentra dentro de esta profundidad de la superficie.  Por lo tanto, en un cable sólido, la porción interior del cable puede llevar poca corriente, aumentando efectivamente su resistencia.
+Efecto de proximidad
+Otro efecto similar que también aumenta la resistencia del cable a altas frecuencias es el efecto de proximidad, que se produce en los cables paralelos que se encuentran cerca unos de otros. El campo magnético individual de las espiras adyacentes induce corrientes de Foucault en el hilo de la bobina, lo que hace que la corriente en el conductor se concentre en una fina franja en el lado cercano al hilo adyacente. Al igual que el efecto piel, esto reduce el área efectiva de la sección transversal del cable que conduce la corriente, aumentando su resistencia.
+Pérdidas dieléctricas
+El campo eléctrico de onda corta cerca de los conductores en una bobina de tanque puede causar el movimiento de moléculas polares en los materiales aislantes cercanos, disipando energía en forma de calor.  Por ello, las bobinas utilizadas en los circuitos sintonizados no suelen estar enrolladas en formas de bobina, sino suspendidas en el aire, apoyadas en estrechas tiras de plástico o cerámica.
+Capacitancia parásita
+La capacitancia entre las vueltas individuales de la bobina, llamada capacitancia parásita, no causa pérdidas de energía pero puede cambiar el comportamiento de la bobina. Cada vuelta de la bobina está a un potencial ligeramente diferente, por lo que el campo eléctrico entre las vueltas vecinas almacena carga en el cable, por lo que la bobina actúa como si tuviera un condensador en paralelo con ella. A una frecuencia lo suficientemente alta esta capacitancia puede resonar con la inductancia de la bobina formando un  circuito sintonizado, haciendo que la bobina se convierta en auto-resonante.
+
+
+=== Inductor de núcleo ferromagnético ===
+
+Los inductores de núcleo ferromagnético o de núcleo de hierro utilizan un núcleo magnético hecho de un material ferromagnético como el hierro o la ferrita para aumentar la inductancia. Un núcleo magnético puede aumentar la inductancia de una bobina por un factor de varios miles, al aumentar el campo magnético debido a su mayor permeabilidad magnética. Sin embargo, las propiedades magnéticas del material del núcleo causan varios efectos secundarios que alteran el comportamiento del inductor y requieren una construcción especial:
+
+
+==== Pérdidas en el núcleo ====
+Una corriente variable en el tiempo en un inductor ferromagnético, que provoca un campo magnético variable en el tiempo en su núcleo, provoca pérdidas de energía en el material del núcleo que se disipa en forma de calor, debido a dos procesos
+
+
+===== Corriente de Foucault =====
+A partir de la Ley de inducción de Faraday, el campo magnético cambiante puede inducir bucles circulantes de corriente eléctrica en el núcleo metálico conductor. La energía de estas corrientes se disipa en forma de calor en la resistencia del material del núcleo. La cantidad de energía perdida aumenta con el área dentro del bucle de corriente.
+
+
+===== Histéresis =====
+Cambiar o invertir el campo magnético en el núcleo también provoca pérdidas debido al movimiento de los diminutos dominios magnéticos que lo componen. La pérdida de energía es proporcional al área del bucle de histéresis en el gráfico BH del material del núcleo. Los materiales con baja coercitividad tienen bucles de histéresis estrechos y, por tanto, bajas pérdidas de histéresis.
+La pérdida del núcleo no es lineal con respecto a la frecuencia de la fluctuación magnética y la densidad de flujo magnético. La frecuencia de fluctuación magnética es la frecuencia de la corriente alterna en el circuito eléctrico; la densidad de flujo magnético corresponde a la corriente en el circuito eléctrico. La fluctuación magnética da lugar a la histéresis, y la densidad de flujo magnético provoca corrientes parásitas en el núcleo. Estas no linealidades se distinguen de la no linealidad de umbral de saturación. La pérdida en el núcleo puede modelarse aproximadamente con la ecuación de Steinmetz. A frecuencias bajas y en intervalos de frecuencia limitados (quizás un factor de 10), la pérdida del núcleo puede tratarse como una función lineal de la frecuencia con un error mínimo. Sin embargo, incluso en el rango de audio, los efectos no lineales de los inductores de núcleo magnético son notables y preocupantes.
+
+
+==== Saturación ====
+Si la corriente a través de una bobina de núcleo magnético es lo suficientemente alta como para que el núcleo se sature, la inductancia caerá y la corriente aumentará dramáticamente. Se trata de un fenómeno de umbral no lineal y da lugar a la distorsión de la señal. Por ejemplo, las  señales de audio pueden sufrir  distorsión de intermodulación en inductores saturados. Para evitarlo, en los circuitos linealess la corriente a través de los inductores de núcleo de hierro debe limitarse por debajo del nivel de saturación. Algunos núcleos laminados tienen un estrecho espacio de aire en ellos para este propósito, y los núcleos de hierro en polvo tienen un espacio de aire distribuido. Esto permite mayores niveles de flujo magnético y, por tanto, mayores corrientes a través del inductor antes de que se sature.[12]​
+
+
+==== Desmagnetización del punto de Curi ====
+Si la temperatura de un núcleo ferromagnético o ferrimagnético se eleva a un nivel determinado, los dominios magnéticos se disocian y el material se vuelve paramagnético, dejando de soportar el flujo magnético.  La inductancia disminuye y la corriente aumenta drásticamente, de forma similar a lo que ocurre durante la saturación.  El efecto es reversible: Cuando la temperatura desciende por debajo del punto de Curie, el flujo magnético resultante de la corriente en el circuito eléctrico realineará los dominios magnéticos del núcleo y su flujo magnético se restablecerá.  El punto Curie de los materiales ferromagnéticos (aleaciones de hierro) es bastante alto; el del hierro es el más alto a 770 °C. Sin embargo, para algunos materiales ferrimagnéticos (compuestos cerámicos de hierro - ferritas) el punto de Curie puede estar cerca de las temperaturas ambientales (por debajo de 100 °C).
+
+
+==== Inductor de núcleo laminado ====
+
+Los inductores de baja frecuencia se fabrican a menudo con núcleo laminado para evitar las corrientes parásitas, utilizando una construcción similar a la de los transformadores. El núcleo está formado por pilas de finas láminas de acero o laminación orientadas en paralelo al campo, con un revestimiento aislante en la superficie. El aislamiento evita las corrientes parásitas entre las láminas, por lo que cualquier corriente restante debe estar dentro del área de la sección transversal de las láminas individuales, lo que reduce el área del bucle y, por tanto, las pérdidas de energía en gran medida. Las laminaciones están hechas de acero al silicio de baja conductividad para reducir aún más las pérdidas por corrientes parásitas.
+
+
+==== Inductor de núcleo de ferrita ====
+
+Para frecuencias más altas, los inductores se fabrican con núcleos de ferrita. La ferrita es un material cerámico ferrimagnético que no es conductor, por lo que las corrientes parásitas no pueden fluir en su interior. La formulación de la ferrita es xxFe2O4 donde xx representa varios metales. Para los núcleos de los inductores se utilizan ferritas blandas, que tienen una baja coercitividad y, por tanto, bajas pérdidas por histéresis.
+
+
+==== Inductor de núcleo de hierro en polvo ====
+Otro material es el hierro en polvo cementado con un aglutinante.
+
+
+==== Inductor de núcleo toroidal ====
+
+En un inductor enrollado en un núcleo en forma de varilla recta, las  líneas de campo magnético que salen de un extremo del núcleo deben pasar por el aire para volver a entrar en el núcleo en el otro extremo. Esto reduce el campo, ya que gran parte del recorrido del campo magnético está en el aire en lugar del material del núcleo de mayor permeabilidad y es una fuente de interferencia electromagnética. Se puede conseguir un mayor campo magnético e inductancia formando el núcleo en un circuito magnético cerrado. Las líneas de campo magnético forman bucles cerrados dentro del núcleo sin salir del material del núcleo. La forma que se suele utilizar es la de un toroideal o núcleo de ferrita con forma de rosquilla. Debido a su simetría, los núcleos toroidales permiten que una parte mínima del flujo magnético escape fuera del núcleo (lo que se denomina flujo de fuga), por lo que irradian menos interferencias electromagnéticas que otras formas. Las bobinas de núcleo toroidal se fabrican con diversos materiales, principalmente ferrita, hierro en polvo y núcleos laminados.[13]​
+
+
+=== Inductor variable ===
+
+Probablemente el tipo más común de inductor variable hoy en día es uno con un núcleo magnético de ferrita móvil, que puede deslizarse o atornillarse dentro o fuera de la bobina. Al desplazar el núcleo hacia el interior de la bobina aumenta la permeabilidad magnética, aumentando el campo magnético y la inductancia. Muchos de los inductores utilizados en aplicaciones de radio (por lo general menos de 100 megahercios) utilizan núcleos ajustables con el fin de sintonizar dichos inductores a su valor deseado, ya que los procesos de fabricación tienen ciertas tolerancias (inexactitud). A veces, estos núcleos para frecuencias superiores a 100 MHz se fabrican con material no magnético altamente conductor, como el aluminio.[14]​ Disminuyen la inductancia porque el campo magnético debe sortearlos.
+Los inductores con núcleo de aire pueden utilizar contactos deslizantes o múltiples derivaciones para aumentar o disminuir el número de vueltas incluidas en el circuito, para cambiar la inductancia. Un tipo muy utilizado en el pasado, pero casi obsoleto en la actualidad, tiene un contacto de muelle que puede deslizarse a lo largo de la superficie desnuda de los bobinados. La desventaja de este tipo es que el contacto suele cortocircuitar una o más vueltas. Estas vueltas actúan como un  devanado secundario de transformador cortocircuitado de una sola vuelta; las grandes corrientes inducidas en ellas provocan pérdidas de potencia.
+Un tipo de inductor de núcleo de aire continuamente variable es el «variómetro». Consiste en dos bobinas con el mismo número de vueltas conectadas en serie, una dentro de la otra. La bobina interior está montada en un eje para que su eje pueda girar con respecto a la bobina exterior. Cuando los ejes de las dos bobinas son colineales, con los campos magnéticos apuntando en la misma dirección, los campos se suman y la inductancia es máxima. Cuando la bobina interior se gira para que su eje forme un ángulo con la exterior, la inductancia mutua entre ellas es menor, por lo que la inductancia total es menor. Cuando la bobina interior se gira 180° para que las bobinas sean colineales con sus campos magnéticos opuestos, los dos campos se cancelan entre sí y la inductancia es muy pequeña. Este tipo tiene la ventaja de que es continuamente variable en un amplio rango. Se utiliza en los «sintonizadores de antena» y en los circuitos de adaptación para adaptar los transmisores de baja frecuencia a sus antenas.
+Otro método para controlar la inductancia sin partes móviles requiere un devanado adicional de corriente continua que controla la permeabilidad de un material de núcleo fácilmente saturable.
+
+
+=== Bobina de choque ===
+
+Un bobina de choque es un inductor diseñado específicamente para bloquear la corriente alterna (CA) de alta frecuencia en un circuito eléctrico, permitiendo al mismo tiempo el paso de la CC o de las señales de baja frecuencia. Dado que el inductor resiste o «estrangula» los cambios de corriente, este tipo de inductor se denomina estrangulador. Suele consistir en una bobina de alambre aislado enrollada sobre un núcleo magnético, aunque algunos consisten en una «cuenta» de material de ferrita con forma toroidal ensartada en un alambre. Al igual que otros inductores, los choques resisten los cambios de la corriente que los atraviesa cada vez más con la frecuencia. La diferencia entre los choques y otros inductores es que los choques no requieren las técnicas de construcción de alto factor Q que se utilizan para reducir la resistencia en los inductores utilizados en los circuitos sintonizados.
+
+
+== Véase también ==
+Solenoide.
+Bobina del encendido.
+Bobina de Rogowski.
+
+
+== Referencias ==
+
+
+=== Bibliografía ===
+Gómez Campomanes, José. Circuitos Eléctricos. Servicio de Publicaciones de la Universidad de Oviedo. ISBN 84-7468-288-6. 
+Terman, Frederick (1943). Radio Engineers' Handbook. McGraw-Hill. 
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Inductores.
+Medida de Resistencia de Bobinados en Transformadores (artículo/manual)
+Diseño de la bobina de núcleo de aire de una capa - calculadora en línea

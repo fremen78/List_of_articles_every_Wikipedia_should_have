@@ -1,0 +1,1020 @@
+Brzina je vektorska fizikalna veličina koja opisuje kako se brzo i u kojemu smjeru neka točka (ili tijelo) giba, tj. mijenja položaj. Obilježava se malim slovom v, koji je početno slovo latinske riječi za brzinu, velocitas. Mjerna jedinica za brzinu u SI sustavu je metar u sekundi (m/s). Uz nju, često se koriste i jedinice izvan toga sustava, na primjer kilometri na sat (km/h), čvorovi (brodski promet), Machov broj itd.
+Prosječni iznos brzine izračuna se tako da se prijeđeni put podijeli s utrošenim vremenom. U jednolikim gibanjima iznos brzine se ne mijenja, pa je to ujedno i točan (trenutni) iznos brzine.
+Općenito, precizna i potpuna definicija brzine gibanja glasi: Brzina je derivacija vektora položaja po vremenu, a iznos brzine je derivacija prijeđenog puta po vremenu.
+
+
+== Značenja riječi brzina ==
+Riječ brzina u hrvatskom jeziku ima više različitih značenja, za koja se u nekim drugim jezicima koristi više različitih riječi (na primjer u engleskom, speed, velocity, rate). Zajedničko obilježje svih značenja riječi brzina jest da ona karakterizira odvijanje nekog procesa u vremenu po tome odvije li se isti dio procesa u kraćem ili duljem vremenskom intervalu. Na primjer:
+
+brzina promjene položaja (eng. velocity) ili brzina prelaženja puta (engleski speed) su pojmovi koji opisuju brzinu gibanja, i ta brzina je veća ako ako se neka promjena položaja dogodi ili ako se neki put prijeđe u kraćem vremenskom intervalu;
+brzina promjene funkcije (eng. rate of change), kod funkcija jedne varijable znači isto što i derivacija funkcije, i ona je kod funkcija vremena po iznosu veća ako se ista promjena funkcije dogodi u kraćem vremenskom intervalu (za druge varijable lako se primijeni analogija s odgovarajućim intervalima);
+brzina vršenja rada označava snagu, i ona je veća ako se isti rad obavi u kraćem vremenskom intervalu (što je primjer deriviranja funkcije po vremenu);
+brzina govora, mišljenja, djelovanja, kemijske reakcije... veća je ako se isti dio odgovarajućeg procesa obavi u kraćem vremenskom intervalu; i tako dalje.
+Ovaj članak opisuje brzinu gibanja točke u nekom referentnom sustavu, kao polazište za razumijevanje pojma brzine u fizici i tehnici.
+Iz toga pojma neposredno se izvodi pojam brzine gibanja tijela, koja najčešće označava brzinu točke koja se zove centar masa tijela (ili ponekad brzinu njegovog geometrijskog središta, kod tijela rotaciono simetričnog oblika). Za potpuni opis brzine tijela potrebno je razmotriti i brzine njegovih drugih točaka, no kod krutih tijela to se razmatranje svodi na opis kutne brzine. U specijalnom slučaju translacijskog gibanja tijela, sve točke tijela imaju istu brzinu (nema kutne brzine) pa je svejedno koja se promatra.
+Brzina gibanja točke je vektorska funkcija vremena. Njezin smjer je smjer gibanja točke (vektor brzine paralelan je s tangentom na putanju). Iznos brzine opisuje kako brzo točka prelazi put.
+U svakodnevnom govoru, riječ brzina često označava samo iznos brzine. Nasuprot tome, u fizici riječ brzina označava vektor brzine, a ako se govori o iznosu brzine, to treba eksplicitno navesti. Ipak, ukupni kontekst sprječava zabunu čak i kada se ne pazi na formalne detalje izričaja. Na primjer posve je jasno što znači izjava "brzina iznosi 10 m/s i ima smjer prema istoku", ako se pođe od "jednostavne" "fizikalne" definicije da je vektor veličina koja ima iznos (brojčanu vrijednost koja ne može biti negativna) i smjer (koji u trodimenzionalnom prostoru možete pokazati prstom). No, ako bi se koristio opis vektora koji više vole neki matematičari (na primjer "vektor ima intenzitet, smjer i orijentaciju", a ima i drugačijih), morala bi se navedena izjava o brzini preformulirati u malo kompliciraniju. To pokazuje da razgovor o vektorskim veličinama ovisi o definiciji vektora. U ovom članku koristi se ona jednostavnija ("fizikalna") definicija. Također, koristi se uobičajena praksa u fizici i tehnici da se vektorska veličina obilježava strelicom iznad slova, na primjer 
+  
+    
+      
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {v}}}
+  
+ je oznaka za brzinu kao vektorsku veličinu, dok se njezin iznos obilježava istim slovom bez strelice: 
+  
+    
+      
+        
+          v
+        
+      
+    
+    {\displaystyle \scriptstyle v}
+  
+ je iznos brzine (ali se ponekad iznos vektora označava i vertikalnim crtama: 
+  
+    
+      
+        
+          
+            |
+          
+          
+            
+              
+                v
+                →
+              
+            
+          
+          
+            |
+          
+        
+      
+    
+    {\displaystyle \scriptstyle |{\vec {v}}|}
+  
+ je također iznos brzine).
+
+
+== Brzina gibanja točke: Definicija iznosa brzine ==
+Iznos brzine je derivacija puta po vremenu:
+
+  
+    
+      
+        v
+        =
+        
+          
+            
+              d
+              s
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle v={ds \over dt}}
+  
+
+pri čemu s označava funkciju s(t) koja je pređeni put (duljina pređene putanje) do trenutka t, računajući od nekog početnog trenutka ili položaja. Slovo v označava iznos brzine, funkciju v(t), koja se može mijenjati od trenutka do trenutka, ali ne može biti negativna.
+Ta se definicija izvodi iz znatno očiglednijeg pojma prosječnog (srednjeg) iznosa brzine. Na primjer, ako točka prijeđe put od 12 metara u vremenskom intervalu od 4 sekunde, ona u prosjeku prelazi put od 3 m po jednoj sekundi toga intervala. Prosječni iznos brzine je 3 m/s, dobiva se dijeljenjem pređenog puta s pripadajućim vremenskim intervalom, i pokazuje da je metar u sekundi (m/s) mjerna jedinica za brzinu u SI sustavu.
+No, točka je mogla kojekako ubrzavati i usporavati svoje gibanje tijekom te 4 sekunde, pa bi se istim postupkom dobile različite prosječne brzine u kraćim vremenskim podintervalima. Zato se "pravi" iznos brzine (kaže se: trenutni) dobiva zamišljenim skraćivanjem vremenskog intervala na "beskonačno mali interval" oko pojedinog trenutka. Postupak se naziva graničnim prijelazom i definira pojam derivacije; derivacija puta po vremenu je "granična vrijednost" omjera pređenog puta i pripadnog vremenskog intervala kada vremenski interval "teži" prema nuli.
+
+
+=== Definicija "pređeni put u jedinici vremena" ===
+Najjednostavnija definicija za iznos brzine, koja je dobro polazište za razumijevanje pojma brzine, jest uobičajena definicija iz osnovne škole: "Brzina je pređeni put u jedinici vremena”. Međutim, ona vrlo nepotpuno opisuje brzinu: to je samo broj koji je jednak prosječnom iznosu brzine u toj jedinici vremena. 
+Jedino ako se iznos brzine u nekom vremenskom intervalu ne mijenja (jednoliko gibanje), on se doista računa tako da se put podijeli s vremenom u kojemu je prijeđen, pa se dobije broj jednak "pređenom putu u jedinici vremena” (koji je točan iznos brzine u svakom trenutku toga intervala).
+
+
+== Brzina gibanja točke: Definicija vektora brzine ==
+Dok iznos brzine opisuje samo kako brzo točka prelazi put, brzina kao vektorska veličina, koja ima i iznos i smjer, opisuje kako se brzo mijenja položaj točke koja se giba. Stoga se ona definira pomoću vektora položaja.
+Brzina je derivacija vektora položaja po vremenu:
+
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    r
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {v}}={d{\vec {r}} \over dt}}
+  
+
+Vektor položaja (ili radijvektor) 
+  
+    
+      
+        
+          
+            
+              
+                r
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {r}}}
+  
+ točke koja se giba je, dakako, funkcija vremena. Ako u trenutku 
+  
+    
+      
+        
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle t}
+  
+ točka ima položaj 
+  
+    
+      
+        
+          
+            
+              
+                r
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {r}}(t)}
+  
+, ona će se nakon vremenskog intervala 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ pomaknuti u položaj 
+  
+    
+      
+        
+          
+            
+              
+                r
+                →
+              
+            
+          
+          (
+          t
+          +
+          Δ
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {r}}(t+\Delta t)}
+  
+. Promjena položaja (ili pomak) točke tijekom toga vremenskog intervala je vektor 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                r
+                →
+              
+            
+          
+          =
+          
+            
+              
+                r
+                →
+              
+            
+          
+          (
+          t
+          +
+          Δ
+          t
+          )
+          −
+          
+            
+              
+                r
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {r}}={\vec {r}}(t+\Delta t)-{\vec {r}}(t)}
+  
+, koji se dobiva oduzimanjem prvoga vektora položaja od drugoga (lijeva strana donje skice).
+Dijeljenjem vektora promjene položaja 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                r
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {r}}}
+  
+ s pripadnim vremenskim intervalom 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ dobije se prosječni vektor brzine u tome intervalu. Da bi se dobio trenutni vektor brzine (kraće: brzina), treba koristiti derivaciju (kao i kod definicije iznosa brzine).
+Vektor brzine možemo prikazati pomoću skalarnih komponenata, na primjer u Kartezijevom koordinatnom sustavu: 
+  
+    
+      
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+          =
+          (
+          
+            
+              v
+            
+            
+              x
+            
+          
+          ,
+          
+            
+              v
+            
+            
+              y
+            
+          
+          ,
+          
+            
+              v
+            
+            
+              z
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {v}}=({v}_{x},{v}_{y},{v}_{z})}
+  
+. Tada možemo vektorsku jednadžbu za definiciju brzine rastaviti na tri skalarne jednadžbe
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            x
+          
+        
+        =
+        
+          
+            
+              d
+              x
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {v}_{x}={dx \over dt}}
+  
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            y
+          
+        
+        =
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {v}_{y}={dy \over dt}}
+  
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            z
+          
+        
+        =
+        
+          
+            
+              d
+              z
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {v}_{z}={dz \over dt}}
+  
+
+jer su komponente vektora položaja upravo Kartezijeve koordinate točke, to est. 
+  
+    
+      
+        
+          
+            
+              
+                r
+                →
+              
+            
+          
+          =
+          (
+          x
+          ,
+          y
+          ,
+          z
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {r}}=(x,y,z)}
+  
+. Brzina promjene x-koordinate točke jednaka je skalarnoj komponenti brzine točke u smjeru osi x, i tako dalje. Skalarna komponenta brzine može, naravno, biti pozitivna ili negativna. Na primjer vx(t) je negativna kada se koordinata x(t) umanjuje tijekom vremena (a pripadna vektorska komponenta brzine je u suprotnom smjeru od koordinatne osi). Pređeni put s(t), međutim, ne može se tijekom vremena umanjivati (nego raste i prilikom gibanja u suprotnom smjeru), pa njegova derivacija (što je definicija iznosa brzine) ne može biti negativna.
+
+
+== Usklađenost definicija iznosa brzine i vektora brzine ==
+
+Polazeći od gornjih dviju definicija, iznos brzine može se računati na dva načina:
+- prema prvoj (izravnoj) definiciji, kao derivacija puta po vremenu (gdje je korištena oznaka 
+  
+    
+      
+        
+          v
+        
+      
+    
+    {\displaystyle \scriptstyle v}
+  
+), te
+- prema drugoj definiciji (koja definira vektor brzine), tako da se iz vektora izračuna njegov iznos (radi razlikovanja, tako izračunati iznos brzine bit će ovdje označen sa 
+  
+    
+      
+        
+          
+            |
+          
+          
+            
+              
+                v
+                →
+              
+            
+          
+          
+            |
+          
+        
+      
+    
+    {\displaystyle \scriptstyle |{\vec {v}}|}
+  
+).
+Nije posve očigledno da će se doista dobiti isti iznos brzine u oba slučaja, i to zato što će pređeni put po krivulji (dio putanje 
+  
+    
+      
+        
+          Δ
+          s
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta s}
+  
+) općenito biti veći od iznosa vektora pomaka (promjene položaja) 
+  
+    
+      
+        
+          
+            |
+          
+          Δ
+          
+            
+              
+                r
+                →
+              
+            
+          
+          
+            |
+          
+        
+      
+    
+    {\displaystyle \scriptstyle |\Delta {\vec {r}}|}
+  
+. Zbog toga će, očito, prosječni iznos brzine (
+  
+    
+      
+        
+          
+            
+              v
+            
+            
+              p
+              r
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {v}_{pr}}
+  
+ = put kroz vrijeme) biti općenito veći od iznosa prosječne brzine (
+  
+    
+      
+        
+          
+            |
+          
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              p
+              r
+            
+          
+          
+            |
+          
+        
+      
+    
+    {\displaystyle \scriptstyle |{\vec {v}}_{pr}|}
+  
+ = iznos pomaka kroz vrijeme), to jest mora se paziti na redoslijed riječi "prosječni" i "iznos". Na primjer ako točka obiđe kružnicu duljine 1 m u vremenu od 1 s, u tome će vremenskom intervalu biti  
+  
+    
+      
+        
+          
+            
+              v
+            
+            
+              p
+              r
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {v}_{pr}}
+  
+=1 m/s (jer je prešla put od 1 m), ali  
+  
+    
+      
+        
+          
+            |
+          
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              p
+              r
+            
+          
+          
+            |
+          
+          =
+          0
+        
+      
+    
+    {\displaystyle \scriptstyle |{\vec {v}}_{pr}|=0}
+  
+ (jer se vratila na isto mjesto, ukupno nema promjene položaja).
+No, ako se promatraju sve manji pomaci (vremenski interval 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ između promatranih položaja "teži" prema nuli; na gornjoj skici je ilustriran početak graničnog procesa), tada iznosi pređenog puta i promjene položaja postaju sve više jednaki. Jednakost graničnih vrijednosti možemo zapisati pomoću diferencijala: 
+  
+    
+      
+        
+          
+            |
+          
+          
+            d
+          
+          
+            
+              
+                r
+                →
+              
+            
+          
+          
+            |
+          
+          =
+          
+            d
+          
+          s
+        
+      
+    
+    {\displaystyle \scriptstyle |\mathrm {d} {\vec {r}}|=\mathrm {d} s}
+  
+. Stoga se može formalno pisati:
+
+  
+    
+      
+        
+          |
+        
+        
+          
+            
+              v
+              →
+            
+          
+        
+        
+          |
+        
+        =
+        
+          
+            
+              
+                |
+              
+              d
+              
+                
+                  
+                    r
+                    →
+                  
+                
+              
+              
+                |
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          
+            
+              d
+              s
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        v
+      
+    
+    {\displaystyle |{\vec {v}}|={|d{\vec {r}}| \over dt}={ds \over dt}=v}
+  
+
+Dakle, trenutni iznos brzine doista je jednak iznosu trenutne brzine.
+
+
+=== Napomena o računanju iznosa brzine i pređenog puta ===
+U mnogim slučajevima, osobito kod kompliciranijih gibanja, u praktičnom se računu iznos brzine određuje iz vektora brzine, na primjer pomoću Kartezijevih komponenata:
+
+  
+    
+      
+        v
+        =
+        
+          
+            (
+            
+              v
+              
+                x
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              v
+              
+                y
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              v
+              
+                z
+              
+            
+            
+              )
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle v={\sqrt {(v_{x})^{2}+(v_{y})^{2}+(v_{z})^{2}}}}
+  
+
+Tek nakon toga može se izračunati pređeni put u nekom vremenskom intervalu od t1 do t2 pomoću integrala:
+
+  
+    
+      
+        s
+        =
+        
+          ∫
+          
+            
+              
+                t
+              
+              
+                1
+              
+            
+          
+          
+            
+              
+                t
+              
+              
+                2
+              
+            
+          
+        
+        v
+        
+        
+          d
+        
+        t
+      
+    
+    {\displaystyle s=\int _{{t}_{1}}^{{t}_{2}}v\,\mathrm {d} t}
+  
+
+to jest, ne računa se iznos brzine iz pređenog puta, nego obrnuto.
+
+
+=== Napomena: Pomak umjesto promjene položaja? ===
+U mnogim, osobito američkim udžbenicima, definicija brzine polazi od vektora pomaka, a vektor položaja se često i ne spominje. Usto se ponekad vektor pomaka obilježava simbolom 
+  
+    
+      
+        
+          
+            
+              
+                s
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {s}}}
+  
+, pa treba paziti kako se obilježava pređeni put jer on nije jednak 
+  
+    
+      
+        
+          
+            |
+          
+          
+            
+              
+                s
+                →
+              
+            
+          
+          
+            |
+          
+        
+      
+    
+    {\displaystyle \scriptstyle |{\vec {s}}|}
+  
+ (te bi upotreba oznake s(t) za put mogla dovesti do zabune).
+No, da bi se u takvom pristupu matematički korektno mogla uvesti derivacija vektorske funkcije pomaka 
+  
+    
+      
+        
+          
+            
+              
+                s
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {s}}(t)}
+  
+ po vremenu (kao definicija brzine), moraju se svi pomaci mjeriti od iste fiksne početne točke. Tada se funkcija 
+  
+    
+      
+        
+          
+            
+              
+                s
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {s}}(t)}
+  
+ trivijalno razlikuje od 
+  
+    
+      
+        
+          
+            
+              
+                r
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {r}}(t)}
+  
+, tj. samo za vektor položaja te početne fiksne točke, a ako se u tu točku postavi ishodište sustava, i ta razlika nestaje.
+Stoga se u poznatim klasičnim udžbenicima,  brzina sustavno definira pomoću vektora položaja 
+  
+    
+      
+        
+          
+            
+              
+                r
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {r}}(t)}
+  
+, a pojam vektora pomaka koristi se samo u uvodnim razmatranjima, ili tek usputno kao kraći naziv za promjenu vektora položaja, kao i u ovome članku.
+
+
+== Sličnosti između brzine i kutne brzine ==
+Kutna brzina opisuje rotaciju (vrtnju ili zakretanje) na sličan način kao što brzina točke opisuje premiještanje kroz prostor. Dok iznos "obične" brzine (u kontekstu rotacije naziva se još i obodnom, linearnom ili translacijskom brzinom) opisuje kako se brzo mijenja pređeni put, iznos kutne brzine opisuje kako se brzo mijenja kut zakreta.
+Kod jednolikog gibanja iznos brzine brojčano je jednak putu pređenom u jedinici vremena, a kod jednolike rotacije iznos kutne brzine kutu pređenom u jedinici vremena.
+Dok je vektor brzine paralelan s tangentom na putanju (i u smjeru gibanja), vektor kutne brzine paralelan je s osi rotacije (i u smjjeru koji se određuje po pravilu desne ruke ili desnog vijka). Kao i kod linearne brzine, i kod kutne brzine se u običnom govoru često ne precizira radi li se samo o iznosu ili o vektoru koji uključuje i smjer, ali je to uglavnom jasno iz konteksta.
+
+
+== Primjeri nekih brzina ==
+
+
+== Izvori ==
+
+
+== Poveznice ==
+Brzina svjetlosti
+Gibanje
+Kutna brzina
+Putanja
+Trzaj
+Ubrzanje
+Vrtnja

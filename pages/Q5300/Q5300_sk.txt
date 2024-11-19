@@ -1,0 +1,194 @@
+Centrálna procesorová jednotka alebo CPU (iné názvy pozri nižšie) je hlavný procesor počítača. Interpretuje, vykonáva alebo spracúva inštrukcie alebo dáta programu vo forme strojového kódu. Dnes sú centrálne procesorové jednotky takmer vždy realizované vo forme mikroprocesora.
+
+
+== Názvy ==
+Slovenské názvy sú: centrálna procesorová jednotka, centrálna procesná jednotka, centrálna procesová jednotka, ústredná procesorová jednotka, základná procesorová jednotka, CPJ, CPU, centrálny procesor, ústredný procesor, hlavný procesor (počítača), procesor základnej jednotky (počítača), procesor ústrednej jednotky (počítača), základná jednotka (počítača), ústredná jednotka (počítača), staršie nepresne: mikroprocesor, skrátene: procesor.
+Anglické názvy sú: central processing unit [skratka CPU] alebo central processor.
+
+
+== Počet ==
+Osobný počítač (PC) obsahuje obvykle len jednu CPU. V súčasnosti sa však vyskytujú aj riešenia, ktoré implementujú dve alebo viac nezávislých CPU do jednej základnej dosky. Existujú superpočítače s viacerými integrovanými procesormi, ktoré vzájomne spolupracujú (pozri symetrický multiprocesing).
+
+
+== Zloženie ==
+CPU interpretuje a vykonáva inštrukcie obsiahnuté v softvéri a vykonáva výpočty. Podľa Von Neumannovej schémy je táto úloha rozdelená medzi riadiacu jednotku, ktorá usmerňuje tok programu a jednu alebo viac výkonných jednotiek, ktoré vykonávajú operácie na údajoch. Spravidla sa teda CPU skladá z dvoch základných častí:
+
+aritmeticko-logická jednotka (angl. arithmetic logic unit – ALU)
+riadiaca jednotka (angl. control unit - CU)
+Ďalšie významné časti sú:
+
+súprava registrov, ktoré uchovávajú operandy a medzivýsledky. Napríklad procesor s architektúrou x86 obsahuje cca 16 registrov. Z toho sú 4 univerzálne (EAX, EBX, ECX, EDX), 2 indexové (ESI, EDI), 3 registre ukazovateľov (EIP, ESP, EBP) a 6 segmentových (DS, ES, FS, GS, SS, CS).
+MMU (jednotka správy/prideľovania pamäte)
+
+
+== Delenia ==
+
+
+=== Delenie podľa šírky operandu ===
+Je to počet bitov, ktoré je schopný procesor spracovať v jednom kroku. 
+Pre jednoduché aplikácie sa používajú štvorbitové a osembitové procesory. Dnes sa používajú väčšinou ako embedded (zabudované) napr. mikrovlnné rúry, kalkulátory, tlačiarne atď.
+Pre stredne zložité aplikácie (programovateľné automaty, mobily, PDA, videohry) sa používajú osem a šestnásť bitové procesory.
+Osobné počítače, laserové tlačiarne obsahujú 32 a 64 bitové procesory.
+Vyšší počet bitov už nepredstavuje taký skok, preto viac bitové procesory sa zatiaľ nepoužívajú.
+
+
+=== Delenie podľa štruktúry ===
+Procesor pre osobný počítač, alebo server. Spravidla ide o veľmi rýchle procesory, s rozsiahlou inštrukčnou sadou, jednotkou pre ochranu mapovania pamäte, jednotku pre výpočet v plávajúcej desatinnej čiarke a rozsiahlou pamäťou cache. Jednotka ochrany a mapovania pamäte umožňuje chod viacúlohových operačných systémov (multitasking). Prvými takýmito procesormi boli procesory Motorola 68000 a Intel 80x86.
+Jednočipový počítač (tiež mikrokontrolér) je procesor s univerzálnym jadrom a súčasne integrovanými základnými periférnymi obvodmi, ktorý je schopný samostatnej funkcie. Priekopníkom bol 8 bitový procesor Intel i8051, ktorý prvýkrát integroval všetky základné periférie (jadro procesoru, RAM, EEPROM, čítače a časovače) na jednom čipe a 16bitový technologický procesor Siemens SAB 80C166, ktorý prvýkrát integroval A/D prevodníky, komunikačné linky a systém čítačov / časovačov / prerušení.
+DSP – signálový procesor je procesor zameraný na spracovanie signálov. DSP je optimalizovaný na čo najrýchlejšie opakovanie jednoduchých matematických algoritmov, so zameraním na spracovanie signálu. Typickou aplikáciou DSP je filtrácia signálu pomocou Fourierovej analýzy (FIR, IIR, FFT). DSP sa dnes používajú predovšetkým v spotrebnej elektronike a telekomunikačnej technike. Súčasné DSP obsahujú navyše rýchle komunikačné linky.
+
+
+=== Delenie podľa počtu jadier ===
+V súčasnosti ide vývoj v procesoroch smerom k integrácii viacerých jadier (čiže vlastne viacero procesorov) do jediného čipu. Tento trend je badateľný ako u procesorov pre osobné počítače, tak aj pri DSP. Procesory podľa tohto delenia teda poznáme jednojadrové a viacjadrové. Zvyšovanie počtu jadier si v podstate vynútili fyzikálne obmedzenia (frekvencia, stratový výkon, teplota). Ukazuje sa, že pri zachovaní doterajšej výrobnej technológie je možné integrovaním väčšieho počtu jadier dosiahnuť väčší výkon pri takmer rovnakej ploche kremíkového čipu. Dnešné systémy sú vlastne len násobené počty doterajších procesorov na jednom čipe. Trendom do budúcnosti je vyriešenie nových štruktúr spolupráce, zdieľania prostriedkov, vzájomné prepojenie jadier a pod. Otázkou je aj spolupráca s operačnými systémami. Vzniknú nové štruktúry procesorov s lepším rozdelením vzájomnej spolupráce. 
+
+
+=== Iné delenia ===
+Podľa spôsobu spracovania inštrukcií
+
+vektorový procesor
+skalárny procesor
+Podľa architektúry súboru inštrukcií
+
+CISC – Complex Instruction Set Computer procesor má kompletnú inštrukčnú sadu vytvorenú hardvérovými prostriedkami.
+RISC – Reduced Instruction Set Computer procesor má redukovanú inštrukčnú sadu (len najpoužívanejšie inštrukcie, ktoré sú maximálne zjednodušené a zrýchlené) ostatné príkazy inštrukčnej sady si procesor „zloží“ z jednoduchých inštrukcií. Vychádza sa zo skutočnosti, že až 80% príkazov pre procesor používa len 20% inštrukčnej sady.
+ZISC – Zero Instruction Set Computer (doslova počítač s nulovou inštrukčnou sadou) je technológia priemyselných čipov založená na „pattern matching“ technológii. Názov vychádza z paralely k RISC procesorom s redukovanou inštrukčnou sadou, pričom ZISC nemajú žiadnu inštrukčnú sadu v bežnom slova zmysle.
+Podľa zbernicovej architektúry
+
+von Neumannova architektúra (označovaná aj ako Princetonská architektúra)
+Harvardská architektúra
+
+
+== Dnešné rodiny procesorov pre PC ==
+Dnešné osobné počítače (až na pár výnimiek) vychádzajú z architektúry Intel x86. Dlho boli procesory od rôznych výrobcov zámenné. Osadzovali sa do identických pätíc (socket). od roku 1987, hlavne kvôli licenčnej politike sa cesty výrobcov procesorov rozišli a dnes si každý výrobca vyvíja vlastnú technológiu. Procesory si preto môžeme rozdeliť do "rodín" podľa týchto pätíc. Vývoj sa urýchlil a pokiaľ v minulosti „vydržal“ soket aj niekoľko rokov, tak dnes pribúdajú sokety aj raz za pol roka. Pätica je vlastne systém elektro – mechanicko – signálového pripevnenia procesora a jeho chladiča do matičnej dosky.
+
+
+=== Známe sokety (výber) ===
+AMD Socket 	
+
+AMD K6-2, AMD K6-III; Rise mP6.
+Socket 563 – mobile Athlon XP-M (µ-PGA 563 pinov)
+Socket 754 – Athlon 64, Sempron, Turion 64 processors (PGA 754 pinov)
+Socket 939 – Athlon 64, Athlon 64 FX, Athlon 64 X2, Opteron (PGA 939 contacts)
+Socket 940 – AMD Opteron, Athlon 64 FX (PGA 940 pinov).
+Socket A (Socket 462) – Athlon, Duron, Athlon XP, Athlon XP-M, Athlon MP, Sempron processors (PGA 462 pinov).
+Socket AM2 – Athlon 64, Athlon 64 X2, Athlon 64 FX, Opteron (PGA 940 pinov)
+Socket AM3 – Phenom II (941 pinov, zatiaľ 938)
+Socket AM3+ – Phenom II, Athlon II, FX (942 pinov, zatiaľ 938)
+Socket FM1 – APU A4-3xxx, A6-3xxx, A8-3xxx, Athlon II, Sempron X2 (905 pinov)
+Socket FM2 – A10, A4, A6, A8, Athlon X2, Athlon X4, Sempron X2, FX (904 pinov)
+Socket AM1 – Athlon X4, Sempron X2 (722 pinov)
+Socket AM4 - Najnovší AMD socket Ryzen 3 (1200, 1300X, 2200g), Ryzen 5 (1400, 1500X, 1600, 1600X, 2400g, 2600, 2600X), Ryzen 7 (1700, 1700X, 1800, 1800X, 2700, 2700X)
+Intel Socket
+
+40 pin DIP – Intel 8086, Intel 8088
+68 pin PLCC – Intel 80186, Intel 80286, Intel 80386
+Socket 1 – 80486
+Socket 2 – 80486
+Socket 3 – 80486 (3.3 V a 5 V)
+Socket 4 – Intel Pentium 60/66 MHz
+Socket 5 – Intel Pentium 75 – 133 MHz; AMD K5; IDT WinChip C6, WinChip 2
+Socket 6 – 80486, málo používané
+Socket 7 – Intel Pentium, Pentium MMX; AMD K6; Cyrix
+Socket 8 – Intel Pentium Pro
+Socket 370 – Intel Pentium III, Celeron; Cyrix III; VIA C3
+Socket 423 – Intel Pentium 4 a Celeron
+Socket 478 – Intel Pentium 4, Celeron, Pentium M
+Socket 479 – Intel Pentium M a Celeron M
+Micro-FCBGA – Intel Mobile Celeron, Core 2 Duo (mobile), Core Duo, Core Solo, Celeron M, Pentium III (mobile), Mobile Celeron
+Socket 486 – 80486
+Socket 495 – Celeron/P3? –
+Socket 603 – Intel Xeon
+Socket 604 – Intel Xeon
+PAC418 – Intel Itanium
+PAC611 – Intel Itanium 2, HP PA-RISC 8800 and 8900
+Socket J (Socket 771, LGA 771) – Intel Xeon
+Socket M – Intel Core Solo, Intel Core Duo, Intel Core 2 Duo
+Socket N – Intel Dual-Core Xeon LV
+Socket P – náhrada za Socket 479 a Socket
+Socket T (Socket 775, LGA 775) – Intel Pentium 4, Pentium D, Celeron D, Pentium Extreme Edition, Core 2 Duo, Core 2 Extreme, Celeron, Xeon 3000 series, Core 2 Quad
+Slot 1 – Intel Celeron, Pentium II, Pentium III
+Slot 2 – Intel Pentium II Xeon, Pentium III Xeon
+Socket LGA 1366 – Intel Core i7
+Socket LGA 1156 – Intel Core i3/i5/
+Socket 1155
+Socket 2011
+Socket 1150
+Socket 2011-3 , Socket 1151 - Najnovší
+Iné
+
+Socket 463 (Socket NexGen) – NexGen Nx586
+Socket 499 – DEC Alpha 21164a
+Slot B – DEC Alpha
+Nové procesory AMD majú do vlastného procesoru integrovaný radič operačnej pamäte, preto majú väčší počet pinov.
+Najviac sledovaným parametrom pre zákazníkov je frekvencia procesora. Nové konštrukcie procesorov však už neumožňujú takéto jednoduché porovnanie. Dvojjadrové procesory obvykle pracujú na nižšej frekvencii, ako výkonovo porovnateľné jednojadrové.
+
+
+=== Cache ===
+Dôležitým parametrom je aj veľkosť vnútornej cache procesora (vnútorná vyrovnávacia pamäť), ktorá sa významne podieľa na jeho reálnom výkone. Cache je obvykle viacúrovňová a má 32 – 64 kB na jadro (Level 1 cache), druhá úroveň má v súčasnosti 256 – 2 048 kB na jadro (Level 2 cache), niekedy je Level 2 cache spoločná pre všetky jadrá. V súčasnosti nie je výnimočná ani kapacita 8 až 16 MB Level 3 pamäte pre najmodernejšie Intel a AMD procesory. Procesory v rámci jedného radu sa obvykle líšia pracovnou frekvenciou a veľkosťou cache (Intel Pentium – Intel Celeron – Intel Core 2 Duo, AMD Athlon – AMD Sempron resp. Duron – AMD Athlon64 X2).
+
+
+=== FSB ===
+North Bridge (severný most) ako časť čipsetu matičnej dosky (tiež System Controller) zaisťuje komunikáciu medzi procesorom, pamäťou a grafickou kartou (zbernicou AGP, resp. PCIE). Je najbližšie k CPU a zaisťuje rýchle presuny dát medzi kľúčovými oblasťami počítača. Frekvencia akou je taktovaná zbernica medzi procesorom a severným mostom je označovaná ako FSB (Front Side Bus). Rýchlosť (pracovná frekvencia) procesora je frekvencia FSB vynásobená násobičom. Celkový výkon matičnej dosky je teda úmerný aj prenosovej rýchlosti cez FSB a teda aj jej frekvencii.
+
+
+== Architektúry CPU ==
+V súčasnej dobe existuje viac architektúr CPU. Medzi najrozšírenejšie patrí x86 (IA-32) a v poslednom čase aj nové x86 – 64 (EM64T (Intel64), AMD64), ktoré sú typu CISC. Menej známe sú procesory typu RISC. Sú to napríklad Sparc, Sparc64, Alpha, hp300, hppa, macppc atď. 
+
+
+=== Architektúry zabudovaných („Embedded“) procesorov ===
+IBM PowerPC 440
+Intel 8051
+
+
+=== Architektúry mikropočítačov a osobných počítačov ===
+Intel x86
+Motorola 6800, 6809 a 68000
+MOS Technology 6502
+Zilog Z80
+IBM a neskôr PowerPC architektúra od AIM alliance's
+armv6, armv7
+
+
+=== Architektúry procesorov pracovných staníc a serverov ===
+SPARC od Sun Microsystems
+POWER od IBM
+Architektúra MIPS od MIPS Computer Systems Inc.
+PA-RISC od HP
+Alpha od DEC
+Advanced RISC Machines (pôvodne Acorn) architektúry ARM a StrongARM/XScale
+Procesor LEON2
+
+
+=== Malé/stredné/veľké architektúry procesorov ===
+System/360 od IBM
+PDP-11 od DEC a jeho následníci, architektúra VAX
+SuperH od SuperH
+UNIVAC série 1100/2200 (momentálne používaná v počítačoch ClearPath IX od Unisysu)
+AP-101 – počítač raketoplánu
+
+
+== Architektúry procesorov v blízkej budúcnosti (prítomnosti?) ==
+x86-64 od AMD (AMD AMD64 a Intel EM64T)
+Cell od IBM využívaný v PlayStation 3 (Sony/IBM/Toshiba)
+
+
+== Historicky významné procesory ==
+EDSAC – prvý praktický počítač s uloženým programom
+Navigačný počítač Apollo použitý pri letoch na Mesiac
+MIPS R4000 – prvý 64-bitový mikroprocesor
+Intel 4004 – prvý mikroprocesor
+
+
+== Pozri aj ==
+Koncepcia Johna von Neumanna
+Mikroprocesor
+Budúce Intel Core procesory
+
+
+== Iné projekty ==
+
+ Commons ponúka multimediálne súbory na tému CPU
+ Wikislovník ponúka heslo  CPU
+
+
+== Zdroje ==

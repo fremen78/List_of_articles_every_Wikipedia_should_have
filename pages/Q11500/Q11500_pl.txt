@@ -1,0 +1,862 @@
+Pole powierzchni (potocznie krótko pole lub powierzchnia) – dwuwymiarowa miara przyporządkowująca danej figurze nieujemną liczbę w pewnym sensie charakteryzującą jej rozmiar.
+Ścisła definicja wymaga wykonania pewnej konstrukcji.
+
+
+== Konstrukcja pojęcia pola ==
+
+
+=== I Definicja ===
+
+Najczęściej spotykana definicja (i jedna z najogólniejszych) odwołuje się do następującej konstrukcji:
+
+Pokrywamy całą płaszczyznę, na której znajduje się dana figura, siatką przylegających kwadratów o bokach 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle a_{1}.}
+  
+
+Liczbę kwadratów mających choćby jeden punkt wspólny z figurą, której powierzchnię mierzymy, oznaczamy przez 
+  
+    
+      
+        
+          n
+          
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle n_{1}.}
+  
+
+Tworząc rozmaite siatki kwadratów o coraz mniejszych bokach 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        >
+        
+          a
+          
+            2
+          
+        
+        >
+        
+          a
+          
+            3
+          
+        
+        >
+        …
+      
+    
+    {\displaystyle a_{1}>a_{2}>a_{3}>\ldots }
+  
+ i tak dalej, uzyskujemy ciąg liczb 
+  
+    
+      
+        
+          n
+          
+            1
+          
+        
+        ,
+        
+          n
+          
+            2
+          
+        
+        ,
+        …
+      
+    
+    {\displaystyle n_{1},n_{2},\dots }
+  
+
+Polem powierzchni nazywamy granicę:
+
+  
+    
+      
+        S
+        =
+        
+          lim
+          
+            i
+            →
+            ∞
+          
+        
+        
+          n
+          
+            i
+          
+        
+         
+        
+          a
+          
+            i
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle S=\lim _{i\to \infty }n_{i}~a_{i}^{2}.}
+  
+
+Granica ta nie zawsze istnieje. Jeśli nie istnieje, pola powierzchni nie da się obliczyć tą metodą.
+Co więcej, konstrukcja ta ma jeszcze jedną wadę – choć dobrze sprawdza się w typowych wypadkach, jednak nie ma podstawowej własności, która intuicyjnie powinna charakteryzować pole powierzchni: suma pól dwóch rozłącznych figur może być większa niż pole figury powstałej z ich połączenia.
+
+
+=== Problem wyznaczania pól powierzchni dla wszystkich figur ===
+Zbiory
+
+  
+    
+      
+        {
+        (
+        x
+        ,
+        y
+        )
+        :
+        0
+        <
+        x
+        <
+        1
+        ,
+         
+        0
+        <
+        y
+        <
+        1
+        ,
+         
+        x
+        ,
+        y
+      
+    
+    {\displaystyle \{(x,y):0<x<1,\ 0<y<1,\ x,y}
+  
+ są wymierne 
+  
+    
+      
+        }
+      
+    
+    {\displaystyle \}}
+  
+ oraz
+
+  
+    
+      
+        {
+        (
+        x
+        ,
+        y
+        )
+        :
+        0
+        <
+        x
+        <
+        1
+        ,
+         
+        0
+        <
+        y
+        <
+        1
+        ,
+         
+        x
+      
+    
+    {\displaystyle \{(x,y):0<x<1,\ 0<y<1,\ x}
+  
+ jest niewymierny lub 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ jest niewymierny 
+  
+    
+      
+        }
+      
+    
+    {\displaystyle \}}
+  
+
+są rozłączne i oba mają zewnętrzną miarę Jordana równą 1. Suma tych dwóch figur (czyli wnętrze kwadratu) ma pole powierzchni równe 1, skąd możemy wnioskować, że pola tych figur nie można zdefiniować, używając podejścia Jordana.
+Istnienie nietrywialnej funkcji, którą dałoby się zmierzyć dowolną figurę i która dla dowolnego ciągu przeliczalnego rozłącznych figur dawałaby wynik równy ich sumie, jest niedowodliwe w standardowym systemie aksjomatów ZFC.
+Zbiór Vitalego i zbiór Bernsteina (istniejące przy założeniu aksjomatu wyboru) są niemierzalne w sensie Lebesgue’a.
+Przy założeniu aksjomatu wyboru istnieje skończenie addytywna miara mierząca wszystkie podzbiory przestrzeni.
+Przy założeniu AD, wszystkie podzbiory przestrzeni euklidesowych są mierzalne w sensie Lebesgue’a.
+Jeśli istnieje liczba mierzalna, to jest niesprzeczne że continuum jest rzeczywiście mierzalne i że istnieje miara na płaszczyźnie mierząca wszystkie jej podzbiory.
+
+
+== Definicja szkolna ==
+Definicja używana w szkołach podstawowych, gimnazjach i szkołach średnich.
+
+Obieramy kwadrat o boku 1.
+Kwadrat ten zwany kwadratem jednostkowym jest jednostką pola.
+Pole jest równe liczbie kwadratów jednostkowych lub jego części mieszczących się całkowicie w mierzonej figurze.
+Definicja niejawnie używa pojęcia granicy ciągu (jego części), pojęcia nieużywanego. Definicja ta podaje dolne oszacowanie pola powierzchni figury i dobrze sprawdza się w typowych wypadkach.
+
+
+== Pole pod krzywą ==
+Pole między krzywą daną równaniem 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ a osią OX ograniczone prostymi 
+  
+    
+      
+        x
+        =
+        a
+      
+    
+    {\displaystyle x=a}
+  
+ i 
+  
+    
+      
+        x
+        =
+        b
+        ,
+      
+    
+    {\displaystyle x=b,}
+  
+ 
+  
+    
+      
+        a
+        ⩽
+        b
+      
+    
+    {\displaystyle a\leqslant b}
+  
+ jest równe całce oznaczonej
+
+  
+    
+      
+        S
+        =
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+          |
+        
+        f
+        (
+        x
+        )
+        
+          |
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle S=\int \limits _{a}^{b}|f(x)|dx.}
+  
+
+
+== Pola typowych figur ==
+równoległobok o bokach 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ oraz kącie 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ między nimi: 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        a
+        b
+        sin
+        ⁡
+        α
+      
+    
+    {\displaystyle {}\quad S=ab\sin \alpha }
+  
+
+prostokąt o bokach 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ i 
+  
+    
+      
+        b
+        
+          :
+        
+      
+    
+    {\displaystyle b{:}}
+  
+ 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        a
+        b
+        ,
+      
+    
+    {\displaystyle {}\quad S=ab,}
+  
+
+prostokąt o przekątnej 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ i stosunku proporcji boków ratio: 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        
+          
+            
+              p
+              
+                2
+              
+            
+            
+              
+                
+                  1
+                  
+                    r
+                    a
+                    t
+                    i
+                    o
+                  
+                
+              
+              +
+              r
+              a
+              t
+              i
+              o
+            
+          
+        
+      
+    
+    {\displaystyle {}\quad S={\frac {p^{2}}{{\frac {1}{ratio}}+ratio}}}
+  
+
+kwadrat o boku 
+  
+    
+      
+        a
+        
+          :
+        
+      
+    
+    {\displaystyle a{:}}
+  
+ 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        
+          a
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle {}\quad S=a^{2},}
+  
+
+kwadrat o przekątnej 
+  
+    
+      
+        p
+        
+          :
+        
+      
+    
+    {\displaystyle p{:}}
+  
+ 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        
+          
+            
+              p
+              
+                2
+              
+            
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle {}\quad S={\frac {p^{2}}{2}},}
+  
+
+pole obszaru ograniczonego przez elipsę o półosiach 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ i 
+  
+    
+      
+        b
+        
+          :
+        
+      
+    
+    {\displaystyle b{:}}
+  
+ 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        π
+        a
+        b
+      
+    
+    {\displaystyle {}\quad S=\pi ab}
+  
+
+koło o promieniu 
+  
+    
+      
+        r
+        
+          :
+        
+      
+    
+    {\displaystyle r{:}}
+  
+ 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        π
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {}\quad S=\pi r^{2}}
+  
+
+trójkąt o podstawie 
+  
+    
+      
+        a
+        ,
+      
+    
+    {\displaystyle a,}
+  
+ wysokości 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ i kącie 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ między bokami 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ i 
+  
+    
+      
+        d
+        
+          :
+        
+      
+    
+    {\displaystyle d{:}}
+  
+ 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        
+          
+            
+              a
+              h
+            
+            2
+          
+        
+        =
+        
+          
+            
+              c
+              d
+              sin
+              ⁡
+              α
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {}\quad S={\frac {ah}{2}}={\frac {cd\sin \alpha }{2}}}
+  
+
+wielokąt foremny (
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ – liczba boków, 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ – promień okręgu wpisanego w wielokąt, 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ – promień okręgu opisanego, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ – bok wielokąta):
+
+  
+    
+      
+        S
+        =
+        
+          
+            
+              n
+              a
+              r
+            
+            2
+          
+        
+        =
+        n
+        
+          r
+          
+            2
+          
+        
+        
+        tg
+        ⁡
+        
+          
+            π
+            n
+          
+        
+        =
+        
+          
+            n
+            2
+          
+        
+        
+          R
+          
+            2
+          
+        
+        sin
+        ⁡
+        
+          
+            
+              2
+              π
+            
+            n
+          
+        
+        =
+        
+          
+            n
+            4
+          
+        
+        
+          a
+          
+            2
+          
+        
+        
+        ctg
+        ⁡
+        
+          
+            π
+            n
+          
+        
+      
+    
+    {\displaystyle S={\frac {nar}{2}}=nr^{2}\,\operatorname {tg} {\frac {\pi }{n}}={\frac {n}{2}}R^{2}\sin {\frac {2\pi }{n}}={\frac {n}{4}}a^{2}\,\operatorname {ctg} {\frac {\pi }{n}}}
+  
+
+trójkąt równoboczny: 
+  
+    
+      
+        
+
+        
+        
+        S
+        =
+        
+          
+            
+              3
+            
+            4
+          
+        
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {}\quad S={\frac {\sqrt {3}}{4}}a^{2}}
+  
+
+
+== Zobacz też ==
+metoda analityczna obliczania pól
+wzór Picka
+
+
+== Przypisy ==

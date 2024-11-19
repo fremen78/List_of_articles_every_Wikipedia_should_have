@@ -1,0 +1,532 @@
+Se denomina transformador a un elemento eléctrico que permite aumentar o disminuir la tensión en un circuito eléctrico de corriente alterna, manteniendo la potencia. La potencia que ingresa al equipo, en el caso de un transformador ideal (esto es, sin pérdidas), es igual a la que se obtiene a la salida. Las máquinas reales presentan un pequeño porcentaje de pérdidas, dependiendo de su diseño y tamaño, entre otros factores.
+El transformador es un dispositivo que convierte la energía eléctrica alterna de un cierto nivel de tensión, en energía alterna de otro nivel de tensión, basándose en el fenómeno de la inducción electromagnética. Está constituido por dos bobinas de material conductor, devanadas sobre un núcleo cerrado de material ferromagnético, pero aisladas entre sí eléctricamente. La única conexión entre las bobinas la constituye el flujo magnético común que se establece en el núcleo. El núcleo, generalmente, es fabricado bien sea de hierro o de láminas apiladas de acero eléctrico, aleación apropiada para optimizar el flujo magnético. Las bobinas o devanados se denominan primario y secundario según correspondan a la entrada o salida del sistema en cuestión, respectivamente. También existen transformadores con más devanados; en este caso, puede existir un devanado "terciario", de menor tensión que el secundario.
+
+
+== Principio de funcionamiento ==
+
+El funcionamiento de los transformadores se basa en el fenómeno de la inducción electromagnética, cuya explicación matemática se resume en las ecuaciones de Maxwell.
+Al aplicar una fuerza electromotriz en el devanado primario o inductor, producida esta por la corriente eléctrica que lo atraviesa, se produce la inducción de un flujo magnético en el núcleo de hierro. Según la ley de Faraday, si dicho flujo magnético es variable, aparece una fuerza electromotriz en el devanado secundario o inducido. De este modo, el circuito eléctrico primario y el circuito eléctrico secundario quedan acoplados mediante un campo magnético.
+La tensión inducida en el devanado secundario depende directamente de la relación entre el número de espiras del devanado primario y secundario y de la tensión del devanado primario. Dicha relación se denomina relación de transformación.
+
+
+=== Transformador ideal ===
+Se considera un transformador ideal aquel en el que no hay pérdidas de ningún tipo. En la práctica no es realizable, pero es útil para comprender el funcionamiento de los transformadores reales. Estas son las condiciones que deben considerarse para un transformador ideal:
+
+Los devanados primario y secundario tienen resistencia cero.
+El flujo producido por los enlaces del devanado primario con el devanado secundario sin ningún flujo de fuga.
+Se desprecian las pérdidas del transformador, es decir, las pérdidas del núcleo y del cobre.[1]​
+En un transformador ideal, debido a la inducción electromagnética, las tensiones en los devanados son proporcionales a la variación del flujo magnético que las atraviesa y al número de espiras del devanado. Puesto que el acoplamiento magnético de los devanados se considera perfecto, se deduce que la relación entre las tensiones es proporcional a la relación entre el número de espiras de los devanados. De este modo:
+
+  
+    
+      
+        
+          
+            
+              V
+              
+                P
+              
+            
+            
+              V
+              
+                S
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                P
+              
+            
+            
+              N
+              
+                S
+              
+            
+          
+        
+        ⇔
+        
+          V
+          
+            S
+          
+        
+        =
+        
+          
+            
+              N
+              
+                S
+              
+            
+            
+              N
+              
+                P
+              
+            
+          
+        
+        ⋅
+        
+          V
+          
+            P
+          
+        
+      
+    
+    {\displaystyle {\frac {V_{P}}{V_{S}}}={\frac {N_{P}}{N_{S}}}\Leftrightarrow V_{S}={\frac {N_{S}}{N_{P}}}\cdot V_{P}}
+  
+
+Se denomina relación de transformación 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ a la relación de tensiones entre el primario y el secundario. También se puede expresar en función del número de espiras de los devanados.
+
+  
+    
+      
+        m
+        =
+        
+          
+            
+              V
+              
+                P
+              
+            
+            
+              V
+              
+                S
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                P
+              
+            
+            
+              N
+              
+                S
+              
+            
+          
+        
+      
+    
+    {\displaystyle m={\frac {V_{P}}{V_{S}}}={\frac {N_{P}}{N_{S}}}}
+  
+
+Del mismo modo, al no considerarse ningún tipo de pérdidas, la potencia de entrada en el primario es igual a la potencia de salida en el secundario.
+
+  
+    
+      
+        
+          V
+          
+            P
+          
+        
+        ⋅
+        
+          I
+          
+            P
+          
+        
+        =
+        
+          V
+          
+            S
+          
+        
+        ⋅
+        
+          I
+          
+            S
+          
+        
+      
+    
+    {\displaystyle V_{P}\cdot I_{P}=V_{S}\cdot I_{S}}
+  
+
+
+=== Transformador real ===
+En la práctica, un transformador ideal no es físicamente realizable. Los transformadores reales se diferencian de los ideales en los siguientes aspectos:
+
+Los arrollamientos o devanados tienen resistencia eléctrica y capacidades parásitas.
+En el interior del núcleo hay corrientes parásitas o corrientes de Foucault.
+El ciclo de magnetización y desmagnetización del núcleo consume energía debido a la histéresis magnética.
+El acoplamiento magnético de los devanados no es perfecto, que se traduce en una inductancia o flujo de dispersión.
+La permeabilidad magnética del núcleo depende de la frecuencia.
+La saturación magnética del núcleo provoca que la inductividad de los devanados no sea constante.
+El núcleo varía ligeramente su geometría debido a la magnetostricción.
+La resistencia de los devanados, la histéresis del núcleo y las corrientes parásitas producen pérdidas de energía. Las pérdidas de energía debidas a la resistencia eléctrica de los arrollamientos se denominan pérdidas en el cobre. Las pérdidas por el efecto de la histéresis y por las corrientes parásitas se denominan pérdidas en el hierro.
+Las pérdidas en el cobre dependen cuadráticamente de la corriente de carga del transformador, es decir, del cuadrado de la intensidad de cada arrollamiento. Las pérdidas en el hierro son prácticamente independientes del nivel de carga del transformador, pero proporcionales al cuadrado de la densidad de flujo magnético del núcleo. Así mismo, las pérdidas por histéresis son proporcionales a la frecuencia eléctrica, mientras que las corrientes parásitas son proporcionales al cuadrado de la frecuencia.
+El flujo magnético de dispersión provoca que la tensión en el secundario sea algo menor que en un transformador ideal.
+La saturación magnética limita la frecuencia mínima de funcionamiento o, dicho de otro modo, dada una frecuencia y un número de espiras, limita la tensión máxima posible del primario. Si se sobrepasan dichos límites y se satura el núcleo, aparecen grandes corrientes en el primario con poco o ningún efecto en la tensión del secundario. La saturación magnética se puede evitar incrementando el número de espiras en el primario (y por consiguiente también en el secundario) a cambio de un mayor volumen físico y mayores pérdidas en el cobre. La saturación magnética juega también un papel importante en la corriente de inserción; debido a corrientes en el primario varias veces la nominal, la saturación evita una sobrecarga en el secundario.
+
+
+==== Corriente de inserción ====
+La corriente de inserción o corriente transitoria de magnetización es una corriente transitoria que se produce en el momento de conectar el transformador a la red. Su magnitud puede ser de 10 veces la corriente nominal hasta 100 veces en casos raros.[2]​
+
+
+== Componentes de un transformador ==
+
+
+=== Núcleo ===
+
+El núcleo de un transformador es la zona por la que circula el campo magnético entre los devanados primario y secundario. Dependiendo de la finalidad del transformador, puede tener varias formas y estar constituido por diferentes materiales.
+
+
+==== Material ====
+El núcleo está formado habitualmente por varias chapas u hojas de metal (generalmente material ferromagnético) que están apiladas una junto a la otra, sin soldar, similar a las hojas de un libro. La función del núcleo es mantener el flujo magnético confinado dentro de él y evitar que este fluya por el aire favoreciendo las pérdidas en el núcleo y reduciendo la eficiencia. La configuración por láminas del núcleo laminado se realiza para reducir las corrientes de Foucault y, consiguientemente, reducir las pérdidas de energía en el núcleo.
+Algunos transformadores no tienen núcleo y se les denomina transformadores sin núcleo o con núcleo de aire. Un núcleo de aire es esencialmente un núcleo sin pérdidas por histéresis o corrientes de Foucault. Sin embargo, la inductancia de dispersión es muy alta, siendo inapropiados para la transmisión de potencia. Por el contrario, tienen un ancho de banda muy alto y se emplean frecuentemente en aplicaciones de radiocomunicación. Dentro del concepto de transformadores de núcleo de aire entran también los sistemas de carga inalámbrica y las bobinas de Tesla.
+
+
+==== Forma ====
+
+
+===== Núcleo en columnas =====
+
+Alrededor de cada columna se arrolla un devanado. Una culata superior y una culata inferior cierran el circuito magnético del núcleo.
+
+
+===== Núcleo acorazado o núcleo envolvente =====
+Además de las columnas, dos culatas laterales sin devanados se disponen a los lados. Evitan los flujos de dispersión.
+
+
+===== Núcleo toroidal =====
+
+El núcleo consiste en un anillo (toroide), normalmente de compuestos artificiales de ferrita, sobre el que se bobinan el primario y el secundario. Son más voluminosos, pero el flujo magnético queda confinado en el núcleo, teniendo flujos de dispersión muy reducidos y bajas pérdidas por corrientes de Foucault.
+
+
+===== Núcleo de grano orientado =====
+
+El núcleo está formado por una chapa de hierro de grano orientado, enrollada sobre sí misma, siempre en el mismo sentido, en lugar de las láminas de hierro dulce separadas habituales. Presenta pérdidas muy reducidas, pero es caro. La chapa de hierro de grano orientado puede ser también utilizada en transformadores orientados (chapa en E), reduciendo sus pérdidas.
+
+
+===== Núcleo de aire =====
+En aplicaciones de alta frecuencia se emplean bobinados sobre un carrete sin núcleo o con un pequeño cilindro de ferrita que se introduce más o menos en el carrete, para ajustar su inductancia.
+
+
+=== Bobinas ===
+
+
+==== Material ====
+Las bobinas son generalmente de cobre enrollado en el núcleo. Según el número de espiras (vueltas) alrededor de una pierna inducirá un voltaje mayor. Se juega entonces con el número de vueltas en el primario versus las del secundario. En un transformador trifásico el número de vueltas del primario y secundario debería ser igual para todas las fases.
+
+
+==== Disposición ====
+El devanado primario y secundario se suelen arrollar uno dentro del otro. La razón es reducir al máximo la inductancia de dispersión y aprovechar al máximo el núcleo magnético disponible. Entre los arrollamientos es necesario una capa aislante, puesto que ambos funcionan a tensiones diferentes. Para evitar tener espesores de capa aislante demasiado gruesos, lo más habitual es encontrar el devanado de baja tensión arrollado sobre el núcleo y el devanado de alta tensión arrollado sobre el devanado de baja tensión.
+
+
+=== Aislamiento ===
+Debido a que las diferentes partes eléctricas de un transformador se encuentran a distintas tensiones, es necesario aislarlas entre sí para evitar la aparición de arcos eléctricos y consecuente degradación de los componentes. Existen varios tipos de aislamiento en un mismo transformador.
+
+Aislamiento entre arrollamiento y núcleo - En transformadores de alta tensión suele ser una lámina de papel impregnada en aceite mineral.
+Aislamiento entre distintos arrollamientos - En transformadores de alta tensión suele ser una lámina de papel impregnada en aceite mineral.
+Aislamiento entre espiras no consecutivas de un mismo arrollamiento - Dos espiras diferentes de un transformador tienen distintos niveles de tensión y deben ser aisladas. En transformadores de alta tensión puede ser una lámina de papel impregnada en aceite mineral o una capa de laca sobre el cobre.
+Aislamiento entre espiras consecutivas de un mismo arrollamiento - Incluso dos espiras consecutivas tienen distintos niveles de tensión y deben ser aisladas entre sí. Una fina capa de laca sobre el cobre suele hacer esta función.
+
+
+=== Otros componentes ===
+Dependiendo del tamaño y finalidad del transformador, también puede tener los siguientes componentes.
+
+
+==== Cambiador de tomas ====
+
+El cambiador de tomas o derivaciones es un dispositivo electromecánico que puede ser accionado manualmente para cambiar la relación de transformación en un transformador. Típicamente, son cinco pasos o tomas: uno de ellos es neutral (representa la relación de transformación nominal) y los otros alteran la relación de transformación en más o menos el 2,5 % y  más o menos el 5 % respectivamente. Esto ayuda, por ejemplo, a corregir la tensión en el secundario si esta cae demasiado en alguna barra del sistema.
+
+
+==== Relé de sobrepresión ====
+Es un dispositivo mecánico que nivela el aumento de presión del transformador que pueden hacerlo explotar. Sin embargo, existen varios equipos que explotan a pesar de tener este dispositivo. Existen el relé de presión súbita para presiones transitorias y el relé de sobrepresión para presiones más permanentes.
+
+
+==== Manovacuometro ====
+
+Este accesorio indica la diferencia de presión entre el gas atrapado entre el aceite del transformador y su cuba y la presión atmosférica. Se utiliza exclusivamente con transformadores de tanque sellado en aceite, tipo de transformadores que se utilizan en instalaciones no mayores a 7500 kVA.
+La presión en el gas atrapado entre el aceite y la cuba, sufre expansión o contracción debido a las variaciones de volumen en el líquido aislante, variaciones de temperatura ambiente o en la carga propia del transformador. Presiones altas negativas o positivas pueden indicar condiciones anormales en los transformadores, como fuga de gas o ingreso de elementos a la cuba.
+Este accesorio es normalmente equipado con alarmas, que permiten detectar valores extremos de presión positiva o negativa.
+Permitir presiones extremas en el gas que queda entre el aceite y la cuba puede causar deformaciones o ruptura en la cuba.
+Las alarmas de este dispositivo se vinculan normalmente a otros dispositivos de protección de los transformadores como válvulas de alivio.[3]​
+
+
+==== Depósito de expansión ====
+En transformadores de un cierto tamaño y de refrigeración primaria en baño de aceite, se utiliza un depósito de expansión para absorber el aumento de volumen producido por el calentamiento del refrigerante.
+
+
+==== Relé de Buchholz ====
+
+En transformadores de gran tamaño y refrigeración en baño de aceite, se utiliza un relé de Buchholz para detectar fallos del dieléctrico (material aislante entre los arrollamientos). Este tipo de fallos generan un arco eléctrico en el interior del transformador que descomponen el aceite. Producto de dicha descomposición química, se generan gases que se acumulan en el relé de Buchholz, provocando el descenso del nivel de aceite. Un interruptor conectado al nivel de aceite dispara las protecciones y alarmas pertinentes.
+
+
+==== Relés de protección ====
+
+Con el advenimiento de la electrónica y de la gran difusión que han tenido los microprocesadores, se encuentran hoy en el mercado distintos dispositivos que permiten realizar la protección de transformadores. 
+Hay dispositivos que incorporan funciones de protección especialmente diseñadas para transformadores, y que, adicionalmente, monitorean cambio en las protecciones electromecánicas incluidas en éstos; este monitoreo se da por medio de contactos digitales y se sensa su cambio de abierto a cerrado, dando como consecuencia la apertura de los interruptores asociados al transformador, el bloqueo de su cierre o alarmas.
+Dentro de las funciones incorporadas en estos dispositivos de protección, se encuentran:
+
+Sobreexcitación (ANSI 24)
+Sobretemperatura (ANSI 49)
+Protección diferencial de transformador (ANSI 87T)
+Bloqueo de protecciones por detección de corriente inrush
+
+
+==== Tablero de control ====
+Contiene las conexiones eléctricas para el control, relés de protección eléctrica, señales de control de válvulas de sobrepresión hacia dispositivos de protección.
+
+
+== Caracterización de un transformador ==
+Para los cálculos de circuitos o líneas con transformadores, se utiliza un circuito equivalente que represente el comportamiento del transformador real. Para la mayoría de los casos, es suficiente con que dicho circuito equivalente represente el transformador en régimen permanente. Para el análisis de transitorios el circuito equivalente en régimen permanente no es suficiente y, por lo tanto, es necesario realizar ensayos adicionales que lleven a un circuito equivalente más complejo.
+Los ensayos más comunes son:
+
+Ensayo de vacío
+Ensayo de cortocircuito
+Ensayo de aislamiento
+
+
+=== Ensayo de vacío ===
+
+El ensayo de vacío permite determinar la impedancia de vacío o impedancia de excitación del transformador y la relación de transformación. La impedancia de vacío representa tanto la inductancia de magnetización del núcleo como las pérdidas en el hierro. Ambas se suelen considerar independientes del nivel de carga del transformador.
+
+
+=== Ensayo de cortocircuito ===
+
+El ensayo de cortocircuito permite determinar la impedancia de cortocircuito o impedancia en serie del transformador. La impedancia de cortocircuito representa las pérdidas en el cobre de los devanados, así como la inductancia de dispersión y otras inductancias parásitas. Dependen del nivel de carga del transformador.
+
+
+=== Ensayo de aislamiento ===
+Se utiliza un megóhmetro o megger para medir la resistencia eléctrica entre dos partes aisladas del transformador. Sirve para medir el estado del dieléctrico o aislante entre fases o entre una fase y el chasis del transformador. La medida suele dar valores en el orden de los megaohmios, valor que se ve reducido si el aislante está deteriorado.
+
+
+== Transformador trifásico ==
+
+Los transformadores trifásicos son muy importantes ya que están presentes en muchas partes del sistema eléctrico. Este tipo de transformadores se ocupa de la elevación y reducción de la tensión en diversas partes del sistema eléctrico: En generación cerca de los generadores para elevar la insuficiente tensión de estos, así como también en las líneas de transmisión y, por último, en distribución en donde se distribuye la energía eléctrica a voltajes menores hacia casas, comercios e industrias. Todos los transformadores desde el generador hasta la entrada a nuestros hogares o industrias son transformadores trifásicos.
+Un transformador trifásico consta de tres fases desplazadas en 120 grados eléctricos, en sistemas equilibrados tienen igual magnitud. Una fase consiste en un polo positivo y negativo por el que circula una corriente alterna. 
+Se pueden hacer transformadores trifásicos de tres formas distintas:
+
+Conectando tres transformadores monofásicos
+Núcleo tipo acorazado
+Transformador tipo núcleo.
+
+
+=== Conexión de los bobinados ===
+
+Las diferentes formas de conexión de los bobinados trifásicos de un transformador, recibe el nombre de grupo de conexión.  Además de identificar las conexiones de los bobinados primario y secundario (en estrella, en triángulo o en zigzag), el grupo de conexionado indica el desfase entre las tensiones de línea primaria y secundaria, de los sistemas trifásicos vinculados por el transformador.  Los grupos de conexionado más comúnmente utilizados en la distribución de energía eléctrica son Dy5 (primario en triángulo, secundario en estrella, desfasaje 150 grados) y Dy11 (triángulo, estrella, 330 grados), Yy0 (estrella, estrella, 0 grados), Yd11 (estrella, triángulo,  330 grados), entre otros.  El concepto práctico de grupo de conexionado adquiere relevancia para realizar una operación segura, durante la puesta en paralelo de transformadores.
+
+
+=== Clases de ventilación ===
+Los transformadores de la red eléctrica manejan un flujo importante de potencia eléctrica. Debido a las pérdidas en el cobre y en el hierro, los transformadores generan  una cantidad importante de calor debido a las pérdidas que hay que evacuar. Hay diferentes tipos de ventilación en un transformador.
+La ventilación puede ser por:
+
+Convección natural (N) - El fluido refrigerante se mueve de manera natural.
+Convección forzada (F) - El fluido refrigerante se mueve de manera forzada, con una bomba o ventilador.
+Convección forzada a través de un refrigerador (D)
+El refrigerante al interior del estante del transformador es de varios tipos:
+
+Aceite, o líquidos aislantes con un punto de inflamación ≤ 300 °C (O del inglés Oil).
+Líquidos aislantes con un punto de inflamación > 300 °C (K).
+Líquidos aislantes con un punto de inflamación no medible (L).
+Agua (W, del inglés "Water").
+Gas (G, del inglés "Gas").
+Aire (A, del inglés "Air").
+La nomenclatura que designa la ventilación es del tipo XYXY, donde X indica el tipo de refrigerante, Y indica la ventilación usada, el primer par XY se refiere al circuito primario de refrigeración y el segundo par XY se refiere al circuito secundario. Por ejemplo:
+
+ONAN - Refrigeración primaria con aceite en convección natural y refrigeración secundaria con aire en convección natural.
+ONAF - Refrigeración primaria con aceite en convección natural y refrigeración secundaria con aire en convección forzada.
+ONWF - Refrigeración primaria con aceite en convección natural y refrigeración secundaria con agua en convección forzada.
+OFAF - Refrigeración primaria con aceite en convección forzada y refrigeración secundaria con aire en convección forzada.
+Cuando el calor que se genera en los transformadores por efecto de las pérdidas no se evacua convenientemente se puede producir la destrucción de los materiales aislantes de los devanados. Para evacuar este calor se utilizan diferentes métodos de refrigeración en función de la potencia nominal del transformador y la ubicación de este, como por ejemplo:  
+Si los  transformadores son de pequeña potencia (hasta 50 kVA) la refrigeración se realiza aprovechando el aire que los envuelve. Para ello se construye la cubierta con unas aberturas, con el objeto de que el aire pueda circular de una forma natural por los transformadores (ventilación por convección). En el caso de que esta ventilación no fuese suficiente, se añaden ventiladores que fuerzan la refrigeración del transformador. 
+Si los  transformadores son de distribución de media potencia (menos de 200 kVA) se sumergen en aceite mineral o silicona. El aceite transmite el calor del transformador al exterior por convección natural. Además, con el aceite se consigue mejorar el aislamiento de los devanados de alta tensión.
+Si los transformadores son de distribución de gran potencia se añaden aletas de refrigeración en la cubierta exterior del transformador. Además se hace circular el aceite caliente desde el interior del transformador hacia dichas aletas con el fin de acelerar el proceso de refrigeración. Para transformadores de más potencia se pueden añadir ventiladores que fuerzan la evacuación de los radiadores externos.
+En los transformadores con aceite, este tiende a dilatarse con los aumentos de temperatura, por lo que para evitar sobrepresiones se coloca sobre la cuba de aceite un depósito de expansión de forma cilíndrica a medio llenar y en contacto con el exterior mediante un orificio. Para evitar la entrada de humedad del exterior al depósito, que podría alterar las cualidades del aceite, se coloca una especie de filtro que absorbe la humedad que pudiera entrar del exterior. Este dispositivo se conoce por el nombre de desecador y suele ir dotado de sales absorbentes de la humedad, como por ejemplo el silicagel. Cuando el desecador, con el tiempo, se satura de humedad cambia de color, lo que nos indica que hay que renovar las sustancias de absorción. Con el fin de dotar al sistema de refrigeración por aceite de un sistema de protección adecuado ante una sobrepresión en el circuito, se instala en el mismo el relé Buchholz. Dicho dispositivo se intercala en el circuito de refrigeración entre la cuba y el depósito de expansión. En situaciones de sobrepresiones en el circuito de refrigeración, bien ocasionadas por un cortocircuito o por una falta de aislamiento, el relé Buchholz puede desconectar el transformador o provocar una señal de alarma, dependiendo de la gravedad del incidente. Asimismo actúa en caso de un descenso rápido del nivel de aceite provocado por una fuga de este.
+
+
+=== Potencias recomendadas ===
+Los valores preferidos para los transformadores de potencias superiores a 20 MVA deberían ser según la serie R10 dada en la norma ISO3:1973. La serie de números preferidos son: (...100, 125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, etc.) kVA[4]​
+
+
+== Aplicaciones ==
+
+Varios diseños de aplicación específicamente eléctricos requieren una variedad de tipos de transformador. Aunque todos comparten las características básicas de los principios del transformador, en el proceso de fabricación se realizan algunas modificaciones en sus propiedades eléctricas para ciertos requerimientos de instalación o aplicaciones especiales. La gran mayor parte de la energía eléctrica producida ha pasado a través de un transformador a medida que llega al consumidor final.[5]​
+En el proceso de transmisión de energía eléctrica, los transformadores permiten la transmisión de potencia eléctrica a altas tensiones, el cual reduce las pérdidas debido al calentamiento de los cables. Esto permite la viabilidad económica a las plantas de generación que se encuentran a distancia de los consumidores eléctricos.[6]​
+En muchos dispositivos electrónicos, un transformador se usa para transformar el voltaje del cableado de distribución a valores adecuados para los requerimientos del circuito, ya sea directamente en la frecuencia de la potencia o a través de una fuente conmutada.
+Los transformadores de señales y audio se usan para acoplar etapas de amplificadores y para acoplar dispositivos como micrófonos y grabadoras a la entrada de los amplificadores. Los transformadores de audio permiten que los circuitos de telefonía lleven una conversación a dos canales a través de un par de cables. Un transformador de balun convierte una señal que está referenciada a tierra a una señal que tiene tensiones balanceadas a tierra, ya sea entre cables externos o circuitos internos. Los transformadores de aislamiento reducen la fuga de corriente entre el circuito secundario y son usados en equipos médicos y en obras de construcción. Los transformadores resonantes son usados para acoplar entre etapas de receptores de radio, o en bobinas de Tesla de alta tensión.
+
+
+== Historia ==
+
+
+=== Primeros pasos: los experimentos con bobinas de inducción ===
+El fenómeno de inducción electromagnética  en el que se basa el funcionamiento del transformador fue descubierto por Michael Faraday en 1831, se basa fundamentalmente en que cualquier variación de flujo magnético que atraviesa un circuito cerrado genera una corriente inducida, y en que la corriente inducida solo permanece mientras se produce el cambio de flujo magnético.
+La primera "bobina de inducción" fue inventada por el sacerdote Nicholas Joseph Callan en la Universidad de Maynooth en Irlanda en 1836. Callan fue uno de los primeros investigadores en darse cuenta de que cuantas más espiras hay en el secundario, en relación con el bobinado primario, más grande es el aumento de la tensión eléctrica.
+Los científicos e investigadores basaron sus esfuerzos en evolucionar las bobinas de inducción para obtener mayores tensiones en las baterías. En lugar de corriente alterna (CA), su acción se basó en un "do&break" mecanismo vibrador que regularmente interrumpía el flujo de la corriente directa (DC) de las baterías.
+Entre la década de 1830 y la década de 1870, los esfuerzos para construir mejores bobinas de inducción, en su mayoría por ensayo y error, revelaron lentamente los principios básicos de los transformadores. Un diseño práctico y eficaz no apareció hasta la década de 1880, cuando el transformador tendría un papel decisivo en la guerra de las Corrientes, en la que los sistemas de distribución de corriente alterna triunfaron sobre sus homólogos de corriente continua, una posición dominante que mantienen desde entonces.
+En 1876, el ingeniero ruso Pavel Yablochkov inventó un sistema de iluminación basado en un conjunto de bobinas de inducción en el cual el bobinado primario se conectaba a una fuente de corriente alterna y los devanados secundarios podían conectarse a varias lámparas de arco, de su propio diseño. Las bobinas utilizadas en el sistema se comportaban como transformadores primitivos. La patente alegó que el sistema podría, “proporcionar suministro por separado a varios puntos de iluminación con diferentes intensidades luminosas procedentes de una sola fuente de energía eléctrica”.
+En 1878, los ingenieros de la empresa Ganz en Hungría asignaron parte de sus recursos de ingeniería para la fabricación de aparatos de iluminación eléctrica para Austria y Hungría. En 1883, realizaron más de cincuenta instalaciones para dicho fin. Ofrecía un sistema que constaba de dos lámparas incandescentes y de arco, generadores y otros accesorios.
+En 1882, Lucien Gaulard y John Dixon Gibbs expusieron por primera vez un dispositivo con un núcleo de hierro llamado "generador secundario" en Londres, luego vendieron la idea a la compañía estadounidense Westinghouse Electric. También este sistema fue expuesto en Turín, Italia en 1884, donde fue adoptado para el sistema de alumbrado eléctrico.
+
+
+=== El nacimiento del primer transformador ===
+Entre 1884 y 1885, los ingenieros húngaros Miksa Déri, Ottó Titusz Bláthy y Károly Zipernowsky, de la compañía Ganz, de ese país, crearon en Budapest el modelo “DBZ” de transformador de corriente alterna, basado en un diseño de Gaulard y Gibbs (Gaulard y Gibbs solo diseñaron un modelo de núcleo abierto). Descubrieron la fórmula matemática de los transformadores:
+
+  
+    
+      
+        
+          
+            
+              V
+              
+                s
+              
+            
+            
+              V
+              
+                p
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                s
+              
+            
+            
+              N
+              
+                p
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {V_{s}}{V_{p}}}={\frac {N_{s}}{N_{p}}}}
+  
+
+donde 
+  
+    
+      
+        
+          V
+          
+            s
+          
+        
+      
+    
+    {\displaystyle V_{s}}
+  
+ es la tensión en el secundario y 
+  
+    
+      
+        
+          N
+          
+            s
+          
+        
+      
+    
+    {\displaystyle N_{s}}
+  
+ es el número de espiras en el secundario;
+  
+    
+      
+        
+          V
+          
+            p
+          
+        
+      
+    
+    {\displaystyle V_{p}}
+  
+ y 
+  
+    
+      
+        
+          N
+          
+            p
+          
+        
+      
+    
+    {\displaystyle N_{p}}
+  
+ se corresponden al primario.
+Su solicitud de patente hizo el primer uso de la palabra transformador, que había sido acuñada por Ottó Titusz Bláthy.
+En 1885, George Westinghouse compró las patentes del DBZ y las de Gaulard y Gibbs. Él le encomendó a William Stanley la construcción de un transformador de tipo ZBD para uso comercial. Este diseño se utilizó por primera vez comercialmente en 1886.
+
+
+=== Otra información de interés ===
+El primer sistema comercial de corriente alterna con fines de distribución de la energía eléctrica que usaba transformadores se puso en operación en 1886 en Great Barington, Massachusetts, en los Estados Unidos de América. En ese mismo año, la electricidad se transmitió a 2000 voltios en corriente alterna a una distancia de 30 kilómetros, en una línea construida en Cerchi, Italia. A partir de esta pequeña aplicación inicial, la industria eléctrica en el mundo ha recorrido en tal forma, que en la actualidad es factor de desarrollo de los pueblos, formando parte importante en esta industria el transformador. 
+El aparato que aquí se describe es una aplicación, entre tantas, derivada de la inicial bobina de Ruhmkorff o carrete de Ruhmkorff, que consistía en dos bobinas concéntricas. A una bobina, llamada primario, se le aplicaba una corriente continua proveniente de una batería, conmutada por medio de un ruptor movido por el magnetismo generado en un núcleo de hierro central por la propia energía de la batería. El campo magnético así creado variaba al compás de las interrupciones, y en el otro bobinado, llamado secundario y con muchas más espiras, se inducía una corriente de escaso valor pero con una fuerza eléctrica capaz de saltar entre las puntas de un chispómetro conectado a sus extremos.
+También da origen a las antiguas bobinas de ignición del automóvil Ford T, que poseía una por cada bujía, comandadas por un distribuidor que mandaba la corriente a través de cada una de las bobinas en la secuencia correcta.
+
+
+== Véase también ==
+Autotransformador
+Multiplicador de tensión
+Divisor de tensión
+Cambiador de tomas
+
+
+== Referencias ==
+
+Transformadores - Convertidores: Enciclopedia CEAC. ISBN 84-329-6004-7
+Transformadores: Ing. Francisco Singer. Editorial H.A.S.A.
+Kuznetsov: 'Fundamentos de Electrotecnia,' Editorial Mir
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una galería multimedia sobre Transformador.
+ Wikilibros alberga un libro o manual sobre Transformador.
+ Wikcionario  tiene definiciones y otra información sobre transformador.
+Resumen de la teoría de los transformadores de potencia de la Universidad de Cantabria (España).
+Medida de la resistencia de bobinados en transformadores. Artículo didáctico.

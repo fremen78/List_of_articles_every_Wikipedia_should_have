@@ -1,0 +1,152 @@
+Indenfor datalogi er programmeringssprog kunstige sprog, som er designet til at udføre beregninger på en computer. Programmeringssprog anvendes til programmering, som er at skabe computerprogrammer, og til at udtrykke algoritmer præcist.
+Nogle programmeringssprog har en form for formel definition eller specifikation for hvad der er muligt at udtrykke i sproget, og hvordan det gøres. En sådan definition eller specifikation kan opdeles i syntaks (form/grammatik) og semantik (betydning). Andre programmeringssprog er løst defineret ud fra manualer, gængs brug eller en bestemt oversætter/fortolker, kaldet en referenceimplementering. 
+De tidligste programmeringssprog går forud for den moderne computer. De blev brugt til at instruere adfærden for bl.a. væve og selvspillende pianoer. Tusindvis af programmeringssprog er sidenhen blevet skabt, primært til moderne computere, og mange nye skabes hvert år.
+
+
+== Programmeringsparadigmer ==
+
+De fleste programmeringssprog falder inden for et eller flere programmeringsparadigmer. Blandt disse er de mest populære i dag procedurel programmering, objektorienteret programmering og funktionel programmering, selvom mange nye paradigmer er kommet til for at behandle nye problemstillinger. Der er ingen entydig måde at inddele programmeringsparadigmer. En anden mere generel måde at inddele programmeringssprog er i paradigmerne imperativ og deklarativ programmering.
+Foruden programmeringssprog findes der også andre computernære sprog. Eksempelvis er opmærkningssproget HTML populært på internettet, men det er ikke et programmeringssprog fordi det ikke udtrykker programmer eller beregninger.
+
+
+== Afvikling af kildekode ==
+
+Den tekst som man udtrykker med et programmeringssprog kaldes kildekode. Kildekoden omskrives oftest til maskinkode ved hjælp af et program som fortolker og oversætter kildekoden, kaldet en compiler eller blot en oversætter. Maskinkoden er udtrykt ved et programmeringssprog hvis instruktioner kan udføres direkte på ens computer. Her er altså tale om meget simple instruktioner som i mange henseender er uegnet til programmører, men netop egnet til computere.
+I andre tilfælde afvikles kildekoden direkte af programmet som fortolker den, uden nogen omsætning til maskinkode. Disse programmer kaldes fortolkere (eng. interpreter), og programmeringssprog som benytter disse i stedet for oversættere bliver ofte omtalt som scriptingsprog. Scriptingsprog er dog også programmeringssprog.
+
+
+=== Syntaks ===
+Den overordnede form som et programmeringssprog tager form efter er givet ved sprogets syntaks. Et programmeringssprogs syntaks kan sammenlignes med naturlige sprogs syntaks: Der er grammatiske regler for hvilke sproglige konstruktioner der kan benyttes i kombination med hinanden. En fordel ved programmeringssprog er at de kan defineres med en ofte simpel og komplet regelmæssig syntaks, modsat naturlige sprog. De fleste programmeringssprog udtrykkes på tekstform, men nogle anvender grafisk repræsentation såsom pilediagrammer.
+Syntaksen for programmeringssprog er en endelig mængde regler som man oftest udtrykker ved hjælp af regulære udtryk og Backus-Naur-formudtryk (BNF). Et eksempel på et regulært udtryk er [A-Z]+, som betyder ét eller flere store bogstaver, og et eksempel på et simpelt sprog udtrykt ved BNF:
+
+udtryk ::= atom | tal | sammensat
+atom := ['A'-'Z']+
+tal := ['0'-'9']+
+sammensat := '(' udtryk ('+' | '-' | '*' | '/') udtryk ')'
+
+Dette sprog tillader udtryk på en form hvor tal uden fortegn og ubekendte med store bogstaver kan sammensættes vha. de fire regneregler hvor parenteser er obligatoriske ved sammensætning. Bemærk dog at denne oplagte fortolkning af grammatikken tilhører sprogets semantik, altså at betydningen af symbolerne 0-9 er positive heltal uden fortegn og så videre.
+Der er mange andre måder at udtrykke et programmeringssprogs grammatik, heriblandt kontekstfri grammatikker.
+
+
+=== Semantik ===
+Ikke alle syntaktisk korrekte programmer er semantisk korrekte. I naturlige sprog svarer det til at lave grammatisk korrekte vrøvlesætninger. I modsætning til naturlige sprog, hvor vrøvlesætninger godt kan betyde noget underforstået for enkeltpersoner, forventes programmeringssprog at have en entydig fortolkning. Eksemplet ovenfor giver anledning til at skrive (5 / 0), hvilket ikke lader sig gøre givet en typisk matematisk semantik for sproget. Et eksempel fra rigtige programmeringssprog på et syntaktisk korrekt, men semantisk ukorrekt udtryk er hvis man har en variabel som indeholder et tal, men man forsøger at anvende variablen som funktion.
+Nogle programmeringssprog har en veldefineret syntaks idet et helt sprog kan opskrives med BNF eller lignende. Andre nøjes med at definere sprogets syntaks som hvad end oversætteren/fortolkeren vil acceptere.
+
+
+=== Typesystem ===
+
+Et typesystem definerer hvordan et programmeringssprog klassificerer værdier og udtryk sådan at de hver især har typer som adskiller sig fra hinanden. Et typesystem definerer også hvordan typerne indbyrdes opfører sig. Formålet med et typesystem er at kunne verificere og tvinge at programmer til en vis grad opfører sig korrekt.
+Nogle programmeringssprog tillader at man midlertidigt bryder ud af typesystemet (for eksempel ved at caste en variabels type til en anden, hvilket er muligt i C, C++ og Java). Det kan være en fordel hvis det man prøver at udtrykke faktisk er et gyldigt program, selvom typesystemet ikke kan godkende det, men det er en ulempe idet typesystemet ikke længere tjener et formål i den del af programmet. I C kan det blandt andet resultere i segmenteringsfejl, og i Java kan undtagelsen NullPointerException kastes.
+Andre programmeringssprog benytter typeinferens sådan at programmøren ikke behøver at annotere typen for alle udtryk. Typeinferens forekommer ofte i funktionsorienterede programmeringssprog og medfører at kildekode fylder mindre.
+Studiet omkring typer og typesystemer kaldes typeteori.
+
+
+==== Typede og utypede sprog ====
+Et programmeringssprog kaldes gængst typet hvis det i nogen grad benytter typer.
+Blandt utypede sprog findes assemblersprog hvor en hvilken som helst operation kan udføres på en hvilken som helst mængde data. Blandt utypede programmeringssprog af højere niveau findes BCPL og nogle varianter af Forth.
+Man kan inddele typede sprog på flere måder, blandt andet i stærkt/svagt eller statisk/dynamisk afhængigt af hvor strikst typesystemet er og hvor i processen af programmets oversættelse og afvikling at typetjek sker. Nogle programmeringssprog understøtter såkaldte afhængige typer (eng. dependent types) hvor hver type angiver hver enkelt værdi den kan tage (modsat typer som int og float i gængse programmeringssprog, der kan tage værdier i et omfattende interval).
+I praksis er få programmeringssprog typede set fra et typeteoretisk perspektiv (hvis typesystemet ikke verificerer hele programmets korrekthed) -- de fleste moderne programmeringssprog tillader en grad af typestyrke, og mange tillader at omgå typesystemet, fx vha. typecasting, hvor en værdi af én type påstås at være en værdi af en anden type.
+
+
+== Generationer ==
+Traditionelt har man forsøgt at inddele programmeringssprog i et antal generationer, fra. 1. generation til 4. generation (5. generation ses undertiden). Inddelingen bruges mindre i dag, da det i stigende grad er blevet svært at afgrænse generationerne. Det bør bemærkes, at nogle af de første computere slet ikke blev programmeret i moderne forstand. I stedet ”satte man maskinen op” på rækker af omskiftere eller koblingstavler med ledninger, der forbandt de ønskede operationer.
+
+
+=== 1. generations programmeringssprog ===
+Den første generation var maskinkode, der blev lagt direkte ind i computerens lager. Programmet blev ikke oversat på nogen måde, ud over at programmørerne kunne foretage en såkaldt håndassemblering, dvs. skrive programmet med mere menneskelæsbare instruktionskoder kaldet mnemonics og så oversætte dem til deres binære repræsentation. En mnemonic oversattes til én maskininstruktion. Adresser skulle regnes ud i hånden. Det færdige program kunne lægges ind på flere måder. En af dem var ved at bruge en række kontakter fra kontrolpulten til at indstille adresse på en lagercelle og indstille det ønskede indhold af cellen på en anden række kontakter og så med en særlig kontakt overføre indholdet til cellen. Tilsvarende kunne en lagercelles indhold vises på en række lamper.
+På mikrocomputere fra 70'erne og 80'erne kunne man også gøre det fra f.eks. et BASIC-program med instruktionen POKE, der skriver en værdi til en bestemt lagercelle. Teknikken blev brugt til at tilføje små maskinkoderutiner til programmet. Disse kørte hurtigere end det fortolkede BASIC-program.
+
+
+=== 2. generations programmeringssprog ===
+Den anden generation af programmeringssprog er den symbolske assembler. Assembleren er et program, der oversætter assemblersprog til dens binære værdier, beregner adresser og ekspanderer macroer. Den letter derved programmørens arbejde meget og begrænser fejlmulighederne ved adresseberegningerne.
+
+
+=== 3. generations programmeringssprog ===
+Dette er de såkaldte højniveausprog, der dukkede op i slutningen af 1950'erne. Her arbejder programmøren ikke med maskininstruktioner men i stedet med instruktioner, der af compileren oversættes til et antal maskininstruktioner. De første højniveausprog var maskinspecifikke sprog som Flow-Matic og Math-Matic. Kort efter begyndte arbejdet med at udvikle mere eller mindre standardiserede sprog som FORTRAN, Algol, COBOL og Lisp. Disse sprog muliggjorde maskinuafhængige programmer. Den samme kildetekst kunne oversættes på forskellige computere, ofte fra forskellige leverandører, og køres; evt. med et minimum af ændringer.
+
+
+=== 4. generations programmeringssprog ===
+Et fjerdegenerationssprog skal gøre programmøren meget mere effektiv, derved at sproget håndterer en masse trivielle og hyppigt  benyttede operationer. Instruktionerne i sproget, i hvert fald mange af dem, er altså mere kraftfulde. Sproget kan have strukturer til at håndtere filer og databaser, løkker, brud (dvs. når en værdi i en række læste data skifter) og kommunikation med omverdenen. Programmøren tænkes at bruge mere tid på at løse opgaven i stedet for at bekymre sig om mindre, tekniske detaljer. Et program skrevet i et 4. generationssprog indeholder færre linjer end et tilsvarende program i et 3. generationssprog. Det antages også at indeholde færre fejl. Miljøet omkring sproget benytter sig i høj grad af oplysninger om data, metadata, der hentes fra et data dictionary. Det kan f.eks. være oplysninger om formatering og ledetekster, men også nogle valideringer kan lægges her. 
+Nogle sprog i denne gruppe producerer kildekode i et tredjegenerationssprog, der så skal oversættes af dette sprogs compiler.
+
+
+=== 5. generations programmeringssprog ===
+Denne gruppe af sprog er i hvert fald delvist baseret på kunstig intelligens. Man kunne f.eks. tænke sig, at opgaven blev beskrevet i et naturligt sprog og at systemet så stillede opklarende spørgsmål, inden det byggede en prototype. Typen er ikke rigtigt taget i brug endnu.
+
+
+=== Udvikling af opdelingen ===
+I dag er 3. generation og 4. generation til dels vokset sammen for nogle sprogs vedkommende. Det er svært at sige, hvor et sprog hører til. Samtidig er der til mange nyere sprog udviklet store og komplicerede frameworks, der tilbyder den funktionalitet til forskellige almindelige opgaver, det ellers ville have taget måneder at skrive.
+
+
+== Liste af programmeringssprog ==
+Af programmeringssprog kan bl.a. nævnes:
+
+Ada – Et sprog i Algol-Pascal familien, opkaldt efter Ada Lovelace, udviklet som standardsprog for USA's militær.
+Algol – Det første "moderne" sprog med en gennemtænkt grammatik.
+Algol 68 – Det første sprog med en halv-formel definition
+APL – Et meget kompakt sprog, særligt velegnet til matriceregning.
+Assemblersprog – Fællesbetegnelse for symbolske udgaver af maskinkode.
+ASP – Sprog til webservere, udviklet af Microsoft. (Active Server Pages)
+BASIC – Simpelt sprog tiltænkt begyndere.
+B – Fortolket typeløst sprog baseret på BCPL, forløber for C.
+BATCH – Originalt et scripting-sprog, men har senere udviklet sig til at være et simpelt men kraftfuldt programmeringssprog.
+BCPL – Typeløst sprog, forsimplet udgave af CPL.
+BETA – Sprog baseret på "patterns", en slags generaliseret abstraktion.
+Blubi – Programmeringssprog på dansk, til undervisningsbrug.
+Brainfuck – Er ikke et anvendeligt sprog, men er udviklet som en slags underholdning.
+C – Systemsprog for Unix, forgængeren til C++.
+C++ – C med understøttelse for objektorienteret og generisk programmering.
+C# – Microsofts svar på Java, syntaksen ligner C++.
+Clojure - Et Lisp-lignende funktionelt sprog, der kører under JVM, Javas virtuelle maskine.
+Caml – Variant af ML.
+COBOL – Tidligt sprog til administrative systemer. Forkortelse for: COmmon Business Oriented Language.
+COMAL – BASIC variant med understøttelse af struktureret programmering. Forkortelse for: COMmon Algoritmic Language.
+CPL (Combined Programming Language) - forløberen for B og C
+Datalog - Deklarativ database programmeringssprog - et delsæt af Prolog
+Delphi – Ikke et sprog, men en omgivelse for Object Pascal.
+Eiffel – Objektorienteret programmeringssprog.
+Erlang – Funktionelt sprog, primært brugt af den svenske Ericsson koncern.
+Flix - Funktionelt sprog med indlejret logik-programmering til datatunge anvendelser. Afvikles under JVM.
+Fortran – Tidligt sprog beregnet på videnskabelige beregninger. Forkortelse for: FORmula TRANSlation.
+FP – Funktionelt programmeringssprog uden variabler, udviklet af John Backus
+GO - Et programmeringssprog udviklet af Google.
+Haskell – Funktionelt sprog med doven evaluering inspireret af Miranda, men den primære implementation er fri software.
+INTERCAL – Parodisk, esoterisk sprog, med målet at have en kryptisk og overflødig syntaks.
+Java – Objektorienteret sprog med statisk typecheck designet til at skulle generere kode til en virtuel maskine.
+JavaScript – Baseret på ECMAScript og oprindeligt benyttet på hjemmesider. Oftest benævnt JS. Bruges i dag også server-side via bl.a. Node.js og Deno
+Job Control Language – JCL – bruges til at kontrollere jobs på en IBM-mainframe.
+Lisp – Det første funktionelle sprog. Forkortelse for LISt Processing.
+Logo – Meget simpelt sprog til at lære skolebørn programmering. Bedst kendt pga deres "skilpade" der tegnede linjer.
+LUA – Cross-platform, objektorienteret scriptsprog . Oprindelig udviklet til at udvide funktionaliteten i systemer via kundetilretninger.
+Modula – Modulær programmering.
+Modula-2 – Inspireret af Pascal og Modula.
+Modula-3 – Revideret Modula-2.
+Oberon – Modula-2 med objekter.
+Objective-C – C med udvidelser inspireret af Smalltalk.
+OCaml – Objektorienteret sprog baseret på Caml.
+Occam – Sprog til parallelprogrammering baseret på det formelle sprog CSP.
+Pascal – Imperativt sprog til struktureret programmering, inspireret af Algol.
+Perl – Et praktisk sprog til at hente data og generere rapporter.
+PHP – Et svar på ASP med en primær fri software implementation. Forkortelse for PHP: Hypertext Preprocessor (oprindeligt Personal Home Page Tools).
+PL/I – IBM's bud på et nyt standardsprog til afløsning for FORTRAN. Forkortelse for Programming Language I.
+Postscript – Sprog til sidebeskrivelse (grafik og bogstaver), udviklet af John Warnock fra Adobe.
+Prolog – Sprog til logisk programmering.
+Python – Objektorienteret fortolket sprog til scripts.
+REXX – Struktureret højniveausprog udviklet af IBM.
+Ruby – Objektorienteret sprog. Kan også bruges i scripts.
+Scheme – Variant af Lisp med statisk scope (programmering).
+Simula – Det første sprog med understøttelse af objektorienteret programmering.
+Smalltalk-80 – En standardiseret udgave af Smalltalk, et objektorienteret sprog med dynamisk typning.
+SML – En standardiseret udgave af ML.
+Structured Query Language – SQL – et sprog til databaseopslag. Bruges i bl.a. MySQL og PostgreSQL.
+Swift – Open Souce-programmeringssprog, udviklet af Apple (oprindeligt ikke open source)
+Turbo Pascal – En oprindeligt danskudviklet variant af Pascal.
+TypeScript - En udvidelse af JavaScript med typer, objekter og klasser.
+Visual Basic – En Microsoft-variant af BASIC.
+Visual Prolog – En stærkt typet objektorienteret udvidelse af Prolog (danskudviklet).
+X++ – Udviklingssprog benyttet i Microsoft Dynamics AX ERP system. En blanding af C++ og SQL. Oprindelig udviklet i Danmark af Navision/Damgaard.
+
+
+== Se også ==
+Attributgrammatik
+Script-sprog, Talesprog, Skriftsprog, Tegnsprog, Kropssprog og Billedsprog.

@@ -1,0 +1,831 @@
+Matematikoje skaičiaus logaritmas (gr. logos – santykis + gr. arithmos – skaičius) – laipsnio rodiklis, kuriuo reikia pakelti kitą fiksuotą skaičių (pagrindą), kad būtų gautas tas skaičius. Logaritmas yra atvirkštinė pagrindo kėlimo laipsniu funkcija. Veiksmas, kuriuo randamas skaičiaus logaritmas vadinamas logaritmavimu, o priešingas veiksmas vadinamas potencijavimu arba antilogaritmavimu.
+Pavyzdžiui, 1000 logaritmas pagrindu 10 yra 3, nes 10 pakėlus 3 laipsniu gaunamas 1000: 1000 = 10 × 10 × 10 = 103. Bendru atveju, bet kuriems dviem realiems skaičiams b ir x, kur b yra teigiamas ir b ≠ 1,
+
+  
+    
+      
+        y
+        =
+        
+          b
+          
+            x
+          
+        
+        ⇔
+        x
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle y=b^{x}\Leftrightarrow x=\log _{b}(y)}
+  
+
+Logaritmas, kurio pagrindas skaičius 10, yra vadinamas dešimtainiu logaritmu ir yra taikomas inžinerijoje. Logaritmas pagrindu e (≈ 2,718) yra vadinamas natūriniu logaritmu ir yra plačiai naudojamas grynojoje matematikoje, ypač integraliniame ir diferencialiniame skaičiavime. Dvejetainis logaritmas naudoja pagrindą 2 
+(b = 2), naudojamas kompiuterių moksle.
+Logaritmus atrado ir tyrė jų savybes škotų matematikas Džonas Neperis 1614 m., jis taip pat sukūrė „Nepero lazdeles“, kurios palengvino logaritmų skaičiavimą. Šiuolaikinį logaritmų žymėjimą įvedė XVIII a. Leonardas Euleris.
+Praktiniams logaritmų skaičiavimams ilgą laiką buvo plačiai naudojama logaritminė liniuotė, kurią ilgainiui pakeitė šiuolaikiniai skaičiuotuvai.
+
+
+== Veiksmai su logaritmais ==
+Logaritmų sudėties pakeitimas sandauga
+
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            b
+          
+        
+        (
+        x
+        )
+        +
+        l
+        o
+        
+          g
+          
+            b
+          
+        
+        (
+        y
+        )
+      
+    
+    {\displaystyle log_{b}(x)+log_{b}(y)}
+  
+ yra lygus 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            b
+          
+        
+        (
+        x
+        y
+        )
+      
+    
+    {\displaystyle log_{b}(xy)}
+  
+
+Pavyzdžiui: 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        4
+        )
+        +
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        8
+        )
+        =
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        4
+        ∗
+        8
+        )
+        =
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        32
+        )
+        =
+        5
+      
+    
+    {\displaystyle log_{2}(4)+log_{2}(8)=log_{2}(4*8)=log_{2}(32)=5}
+  
+
+Įrodymas: 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        4
+        )
+        =
+        2
+      
+    
+    {\displaystyle log_{2}(4)=2}
+  
+,o 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        8
+        )
+        =
+        3
+      
+    
+    {\displaystyle log_{2}(8)=3}
+  
+, taigi 2+3=5.;
+Logaritmų atimties pakeitimas dalyba
+Logaritmų atimtis yra priešingas veiksmas sudėčiai, todėl pologaritminius reiškinius (pažymėta raide 'X') reikės dalinti.
+Pavyzdžiui: 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        8
+        )
+        −
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        4
+        )
+      
+    
+    {\displaystyle log_{2}(8)-log_{2}(4)}
+  
+. Šis reiškinys bus lygus 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        8
+        
+          /
+        
+        4
+        )
+      
+    
+    {\displaystyle log_{2}(8/4)}
+  
+, taigi jis lygus 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        (
+        2
+        )
+        =
+        1
+      
+    
+    {\displaystyle log_{2}(2)=1}
+  
+.
+Įrodymas: 3-2=1.
+Pastaba: logaritmo pagrindas (pažymėta raide b) turi būti didesnis už nulį ir nelygus 1, o pologaritminis reiškinys (X) didesnis už 0.
+
+
+== Logaritmų savybės ==
+
+  
+    
+      
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            b
+          
+        
+        =
+        b
+      
+    
+    {\displaystyle a^{\log _{a}b}=b}
+  
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        a
+        =
+        lg
+        ⁡
+        a
+      
+    
+    {\displaystyle \log _{10}a=\lg a}
+  
+
+  
+    
+      
+        
+          log
+          
+            e
+          
+        
+        ⁡
+        a
+        =
+        ln
+        ⁡
+        a
+      
+    
+    {\displaystyle \log _{e}a=\ln a}
+  
+
+  
+    
+      
+        ln
+        ⁡
+        1
+        =
+        0
+      
+    
+    {\displaystyle \ln 1=0}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        1
+        =
+        0
+      
+    
+    {\displaystyle \log _{a}1=0}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        a
+        =
+        1
+      
+    
+    {\displaystyle \log _{a}a=1}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        ⋅
+        y
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        +
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+      
+    
+    {\displaystyle \log _{a}(x\cdot y)=\log _{a}x+\log _{a}y}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          
+            (
+          
+        
+        
+          
+            x
+            y
+          
+        
+        
+          
+            )
+          
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        −
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+      
+    
+    {\displaystyle \log _{a}{\Big (}{\frac {x}{y}}{\Big )}=\log _{a}x-\log _{a}y}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          x
+          
+            k
+          
+        
+        )
+        =
+        k
+        ⋅
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a}(x^{k})=k\cdot \log _{a}x}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                log
+                
+                  c
+                
+              
+              ⁡
+              x
+            
+            
+              
+                log
+                
+                  c
+                
+              
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}x={\frac {\log _{c}x}{\log _{c}a}}}
+  
+ – pagrindų keitimo formulė.
+  
+    
+      
+        
+          log
+          
+            
+              a
+              
+                n
+              
+            
+          
+        
+        ⁡
+        
+          x
+          
+            n
+          
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a^{n}}x^{n}=\log _{a}x}
+  
+
+  
+    
+      
+        
+          log
+          
+            
+              a
+              
+                n
+              
+            
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            1
+            n
+          
+        
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a^{n}}x={\frac {1}{n}}\log _{a}x}
+  
+
+  
+    
+      
+        
+          log
+          
+            
+              a
+              
+                n
+              
+            
+          
+        
+        ⁡
+        
+          
+            x
+            
+              m
+            
+          
+        
+        =
+        
+          
+            m
+            n
+          
+        
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a^{n}}{x^{m}}={\frac {m}{n}}\log _{a}x}
+  
+
+Pavyzdžiu patvirtinsime šitą formulę:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                log
+                
+                  c
+                
+              
+              ⁡
+              x
+            
+            
+              
+                log
+                
+                  c
+                
+              
+              ⁡
+              a
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \log _{a}x={\frac {\log _{c}x}{\log _{c}a}}.}
+  
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        256
+        =
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        
+          2
+          
+            8
+          
+        
+        =
+        8
+        ;
+      
+    
+    {\displaystyle \log _{2}256=\log _{2}2^{8}=8;}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                log
+                
+                  4
+                
+              
+              ⁡
+              256
+            
+            
+              
+                log
+                
+                  4
+                
+              
+              ⁡
+              2
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  4
+                
+              
+              ⁡
+              
+                4
+                
+                  4
+                
+              
+            
+            
+              
+                log
+                
+                  4
+                
+              
+              ⁡
+              
+                4
+                
+                  
+                    1
+                    2
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            4
+            
+              1
+              2
+            
+          
+        
+        =
+        8
+        ;
+      
+    
+    {\displaystyle {\frac {\log _{4}256}{\log _{4}2}}={\frac {\log _{4}4^{4}}{\log _{4}4^{1 \over 2}}}={\frac {4}{1 \over 2}}=8;}
+  
+
+čia a=2, x=256, c=4.
+
+
+== Šaltiniai ==

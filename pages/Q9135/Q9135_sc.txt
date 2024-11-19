@@ -1,0 +1,66 @@
+Unu sistema operativu (acurtzau cummenti SO), in informàtica, est su programma printzipali de unu elaboradori ca manixat is risorsas suas, frunendi servìtzius de basi a is programmas aplicativus in esecutzioni.
+
+
+=== Descritzioni ===
+Su sistema operativu ponit unu grupu de cumandus e servìtzius a disponimentu de s'impitadori, po ddu poni in cunditzionis de impreai s'elaboradori, siat custu su prus piticu de is palmaris o unu sistema centrali mannu, a su mellus de is possibbilidadis.
+Po mèdiu de su sistema operativu, s'impitadori no depit connosci is minudas costrutivas de s'elaboradori suu po ita custus funt cuaus de un'interfàtzia prus còmoda de impreai.
+Unu sistema operativu podit essi classificau cummenti:
+
+mono-impitadori, candu un'impitadori sceti podit impreai is risorsas de s'elaboradori;
+multi-impitadori, candu prus impitadoris podint impreai is risorsas de s'elaboradori a su pròpriu tempus;
+mono-processu, candu su sistema podit esecutai sceti unu còmpitu (processu) a sa bia;
+multi-processu, candu prus processus podint essi esecutaus in parallelu, gràtzias a unu pranificadori;
+tempus reali, po sistemas chi depint torrai un'arrespusta a un'intrada aìnturu de unu tempus limitau;
+portàbbili, candu su pròpriu sistema podit funtzionai in elaboradoris cun architeturas diferentis;
+distribuius, candu manìgiat prus elaboradoris faendiddus parri unu sceti a s'impitadori;
+integraus, candu depint funtzionai in sistemas piticheddus cummenti palmaris e/o cun risorsas limitadas.
+
+
+=== Fainas printzipalis ===
+In fueddus prus rigorosus, unu sistema operativu est un'assortimentu de protzeduras e struturas de datus responsàbbilis po:
+
+su controllu e su manìgiu de is risorsas de sistema (microprocessori e memòria primària) e de is cumponentis hardware ca formant s'elaboradori. Custu incluit su manìgiu de s'intrada/essida po is dispositivus collegaus;
+s'esecutzioni de is programmas ca funt esecutaus a pitzus de issu, assinniendindi is risorsas netzessàrias.
+Chi su sistema previdit sa possibbilidadi de ammentu de is datus in una memòria de massa, cummenti acuntessit me is elaboradoris po impreu generali, tenit puru su còmpitu de manigiai s'archiviatzioni e s'atzessu a is archìvius. Is programmas podint ligi e scriri in sa memòria de massa impreendi is protzeduras lassadas a disponimentu de su sistema operativu. Custa parti de su sistema est su sistema de is archìvius.
+A sa fini, chi est previdia s'interatzioni cun s'impitadori, de sòlitu est impreada po custu un'interfàtzia (gràfica o a testu). Su cunsideru de s'interfàtzia cummenti cumponenti de su sistema o cummenti programma separau dipendit de su progetu: me is sistemas UNIX, s'interfàtzia est unu programma esecutau apitzus de su sistema beru; in Windows 2000 una parti manna de is funtzionis po sa creatzioni de s'interfàtzia est unu cumponenti de fundamentu de su sistema etotu. S'interfàtzia no est un'òbligu, ca unu sistema podit essi fatu po essi impreau in màchinas ca no previdint interatzioni peruna cun umanus (cummenti sistemas integraus o cartas inteligentis).
+
+
+=== Cumponentis ===
+
+
+==== Nùcleu ====
+Su nùcleu est unu grupu de funtzionis de basi connètidas pari pari e connètidas cun is cumponentis fìsicus de s'elaboradori ca funt esecutadas cun su livellu de privilègiu màssimu a disponimentu in sa màchina: sa modalidadi nùcleu. Su nùcleu atru no est ca unu programma ca depit fruniri un'atzessu cuntrollau a is cumponentis eletrònicus e a is atrus cumponentis de su sistema operativu a is programmas aplicativus tirendindi su còmpitu de ddas manigiai.
+Ddoi at genias diferentis de nùcleus. Unu micro-nùcleu incluit sceti is funtzionis de basi e totu is atras ddas frunint atrus programmas ca funtzionant in modalidadi impitadori. Unu nùcleu clàssicu (o monolìticu) invècias integrat su manìgiu de sa memòria virtuali, su pranificadori de is processus, su sistema de is archìvius e is pilotas de is dispositivus.
+
+
+==== Su pranificadori ====
+Su pranificadori est de importu mannu po is sistemas multi-processu. Giai ca in unu elaboradori tìpicu ddoi at prus processus ca processoris po ddus esecutai, su pranificadori ponit in esecutzioni unu processu e ndi frimat un'atru, fadendi unu càmbiu de cuntestu. Custu acuntessit a una velocidadi ca donat a s'impitadori s'idea ca is processus funt esecutaus in su pròpriu momentu, ammanniendi s'eficèntzia de s'elaboradori. Su pranificadori fait puru a manera ca unu processu ca depit aspetai datus de unu dispositivu po podi sighi cun su traballu suu no tèngiat su processori inoperativu: in s'interis atrus processus podint essi esecutaus.
+Ddoi at duas genias de pranificadori: su pranificadori cooperativu e su pranificadori cun prelatzioni.
+
+Cun unu pranificadori cooperativu, dònnia processu lassat su controllu a su sistema candu at finiu s'operatzioni currenti. Custu tipu de pranificadori est prus comunu me is elaboradoris bècius. No bolit processoris progetaus po suportai su càmbiu de contestu e duncas podit essi postu in òpera in totus is elaboradoris. Po contra, est prus dèbbili, po ita ca una faddina in unu processu podit cumpromiti sa possibbilidadi de passai su controllu a su sistema e duncas ddu podit blocai dessintotu.
+Cun unu pranificadori cun prelatzioni, est su pranificadori a firmai is processus candu finint su tempus ca dd'iat assinniau. Arrachedit su suportu de su processori e prus traballu po ita ca su sistema operativu depit salvai totu su stadu de su processu a manera ca custu a pustis  podit torrai in esecutzioni, ma est sa solutzioni prus comuna me is elaboradoris modernus po ita ca est prus segura.
+
+
+==== Manìgiu de s'intrada/essida ====
+Su manìgiu tìpicu de s'intrada/essida, e duncas de is dispositivus, est portada a cumprimentu cun su mecanismu de is interrutzionis: candu unu dispositivu est prontu a scambiai datus cun su sistema, imbiat unu sinnali a su sistema operativu ca firmat s'esecutzioni de su processu currenti e ponit in esecutzioni su pilota de su dispositivu.
+
+
+==== Manìgiu de sa memòria ====
+Custa parti de su sistema manìgiat sa memòria primària e dda assìnniat a is processus ca dda pedint, in antis de incumentzai s'elaboratzioni. Su manìgiu est netzessàriu po ammentai canta memòria est impreada e canta nci nd'at a disponimentu po sodisfai pedidas noas. De sòlitu, custu còmpitu est portau a cumprimentu cun s'Unidadi de Manìgiu de sa Memòria (UMM), unu cumponenti fìsicu de s'elaboradori.
+
+
+==== Sistema de is archìvius ====
+Su sistema de is archìvius est unu grupu de funtzionis ca permitint de organizai e manigiai is datus in una memòria de massa. Gràtzias a custu, s'impitadori podit scriri, ligi e assetiai is archìvius chena pentzai a s'organizatzioni fìsica insoru in sa memòria (p.e. in cali rastu de unu discu s'agatant).
+
+
+==== Interfàtzia cun s'impitadori ====
+In unu sistema fatu po essi impreau de umanus, serbit una manera po podi giai is cumandus a s'elaboradori e arriciri is arresurtaus. Sa manera prus comuna est una presentada bisuali. Sa prus simpli est un'interfàtzia a testu, cummenti in MS-DOS e UNIX, ma oi in dii totus is sistemas prus connotus tenint un'interfàtzia gràfica, cummenti Microsoft Windows, Mac OS, Android e distributzionis medas de Linux.
+
+
+== Riferimentus ==
+
+
+== Bibliografia ==
+(EN) Andrew S. Tanenbaum e Albert S. Woodhull, Operating Systems: design and implementation, 3ª ed., Upper Saddle River, Pearson, 2009, ISBN 978-0-13-505-376-8.
+(EN) William Stallings, Operating Systems: Internals and Design Principles, 6ª ed., Noa Delhi, Pearson, 2009, ISBN 978-81-317-2528-3.
+(EN) Andrew S. Tanenbaum e Herbert Bos, Modern Operating Systems, 4ª ed., Pearson Higher Education, 2015, ISBN 978-0-13-359162-0.

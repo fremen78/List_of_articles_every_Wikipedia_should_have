@@ -1,0 +1,301 @@
+La diode (du grec di deux, double ; odos voie, chemin) est un composant électronique. C'est un dipôle non linéaire et polarisé (ou non symétrique). Le sens de branchement d'une diode détermine le fonctionnement du circuit électronique dans lequel elle est placée.
+Sans précision, ce mot désigne un dipôle qui ne laisse passer le courant électrique que dans un sens. Ce dipôle est appelé diode de redressement lorsqu'il est utilisé pour réaliser les redresseurs qui permettent de transformer le courant alternatif en courant continu.
+
+
+== Généralités ==
+Pour aborder l'électricité, on fait souvent appel à une analogie hydraulique. Si on compare l'électricité à un liquide circulant dans une canalisation, la diode est un clapet anti-retour. Dans un sens, à partir d'une certaine pression du fluide, le clapet laisse passer le fluide (analogie avec la tension de seuil). Dans l'autre sens, le fluide ne fera pas ouvrir le clapet, sauf si la pression est trop forte (analogie avec la tension inverse maximale). En poussant l'analogie, on trouve des similitudes avec les autres caractéristiques d'une diode : courant de fuite, puissance, allure de la caractéristique, temps de réponse…
+L'analogie est imparfaite. L'électricité ne se comporte pas comme un fluide. Certains usages des diodes tirent parti de propriétés qu'il est finalement plus simple d'examiner en tant que telles, plutôt que de pousser l'analogie avec l'hydrodynamique, dont les calculs ne sont pas plus simples.
+Depuis la généralisation des semi-conducteurs, ceux-ci sont à la base de toutes les diodes. La diode à vide, tout comme la diode à vapeur de mercure appartiennent à l'histoire. 
+
+
+=== Historique ===
+Karl Ferdinand Braun découvrit en 1874 qu'un cristal de galène laissait passer le courant électrique dans un sens, tout en le bloquant dans l'autre. Ce premier dispositif est aujourd'hui connu sous le nom de diode à pointe, bien que le physicien William Eccles n'ait  proposé le terme diode qu'en 1919, pour la diode à vide. Jagadish Chandra Bose l'utilisa pour la détection des ondes radio, et ce système fut largement diffusé dès les débuts de la radiodiffusion, dans les années 1920, dans le poste à galène.
+Au début du XXe siècle, on utilisait des redresseurs à oxyde de cuivre ou au sélénium pour la conversion du courant alternatif en courant continu. Cette utilisation persista dans la plus grande partie du siècle pour la charge des batteries.
+En 1901, Peter Cooper Hewitt inventa le redresseur à vapeur de mercure, utilisé pour les applications de puissance jusqu'aux années 1970.
+À la même époque, recherchant à améliorer la détection des ondes radio, John Fleming mettait au point le premier tube électronique, la diode à vide, dont la cathode, chauffée, émet des électrons que l'anode peut capter, tandis que le contraire n'est pas possible. C'est à l'époque du premier essor de l'électronique, autour des industries du téléphone et de la radio, que les ingénieurs adoptent le terme de diode pour un tube électronique à deux électrodes, tandis que la triode, inventée en 1906, en a trois.
+La diode à semi-conducteur au germanium ou au silicium vient remplacer les tubes à vide après la Seconde Guerre mondiale. Leur chute de tension dans le sens direct (sens passant) est moins élevée à courant égal et elles sont plus pratiques à mettre en œuvre, n'exigeant pas de courant de chauffage. Cependant, les diodes à vide persistent tant que le tube électronique reste l'élément actif des appareils : elles fournissent une tension compatible avec les autres tubes, et l'alimentation des circuits doit de toute façon fournir un courant de chauffage des filaments.
+Le développement des semi-conducteurs a entraîné la création de nombreuses variétés de diodes, exploitant les caractéristiques de la jonction P-N, ou, dans le cas des diodes électroluminescentes, des propriétés annexes du matériau.
+
+
+=== Symbole ===
+
+La norme CEI 60617 définit les symboles pour les schémas en électronique.
+Le schéma normalisé CEI, symbole général de la diode à semi-conducteur, apparaît sur la figure ci-contre à la deuxième ligne sous la représentation plus commune. On trouve encore une variante avec le triangle rempli en noir, et entouré d'un cercle.
+Les notes d'application de fabricants de diodes reflètent une diversité d'usage, avec la forme normalisée, la forme sans trait central ou celle avec le triangle noir.
+
+
+=== Fabrication ===
+
+Les diodes sont des composants fabriqués à partir de semi-conducteurs. Leur principe physique de fonctionnement est utilisé dans de nombreux circuits actifs en électronique.
+Une diode est créée en accolant un substrat déficitaire en électrons c'est-à-dire riche en trous (semi-conducteur type P) à un substrat riche en électrons libres (semi-conducteur de type N ou métal).
+La plupart des diodes sont réalisées par la jonction de deux semi-conducteurs : l'un dopé « P » l'autre dopé « N ». 
+La diode Schottky est constituée d'une jonction semi-conducteur/métal.
+La connexion du côté P s'appelle l'anode ; celle du côté N ou métal porte le nom de cathode.
+Seule la diode Gunn échappe totalement à ce principe : n'étant constituée que d'un barreau monolithique d'arséniure de gallium, son appellation diode peut être considérée comme un abus de langage.
+Pour les diodes cylindriques, le côté de la cathode est généralement repéré par un anneau de couleur. D'autre formes de repérage existent selon la nature de l'encapsulation de ces composants.
+
+
+== Fonctionnement théorique ==
+La diode est un dipôle à semi-conducteur (jonction P-N), qui possède deux régimes de fonctionnement : bloqué et passant.
+Ces régimes de fonctionnement ne sont pas contrôlables directement, mais dépendent de la tension VAK aux bornes de la diode et de l'intensité du courant ID (courant direct, peut aussi s'écrire IF avec F pour forward) la traversant.
+
+
+=== Caractéristique ===
+
+
+==== Caractéristique réelle ====
+
+Lorsque la diode est bloquée, ID n'est pas complètement nul mais vaut quelques nA (courant de fuite).
+Vseuil est une donnée fournie par les constructeurs et vaut typiquement :
+
+0,3 V pour les diodes au germanium ;
+0,7 V pour les diodes au silicium.
+Le courant I qui traverse la diode s'obtient par l'équation de Shockley (en) (voir : « William Shockley ») : 
+
+  
+    
+      
+        I
+        =
+        
+          I
+          
+            0
+          
+        
+        
+          [
+          
+            
+              exp
+            
+            
+              (
+              
+                
+                  
+                    V
+                    
+                      j
+                    
+                  
+                  
+                    n
+                    
+                      V
+                      
+                        0
+                      
+                    
+                  
+                
+              
+              )
+            
+            −
+            1
+          
+          ]
+        
+      
+    
+    {\displaystyle I=I_{0}\left[\mathrm {\exp } \left({\frac {V_{j}}{nV_{0}}}\right)-1\right]}
+  
+
+où : 
+
+Vj est la tension aux bornes de la diode ;
+V0 (appelé tension thermique) est égal à 
+  
+    
+      
+        
+          
+            
+              
+                k
+                
+                  
+                    B
+                  
+                
+              
+              
+              T
+            
+            e
+          
+        
+      
+    
+    {\textstyle {\frac {k_{\mathrm {B} }\,T}{e}}}
+  
+ où kB est la constante de Boltzmann, T la température absolue de la jonction et −e la charge d’un électron. V0 = 26 mV à T = 20 °C (293 K) ;
+n est le facteur de qualité de la diode, généralement compris entre 1 et 2 ; 1 pour une diode de « signal » (comme le type 1N4148) ;
+I0 est la constante spécifique au type de diode considéré, homogène à un courant. Cette constante est aussi appelée « courant de saturation » de la diode.
+
+
+==== Modélisation de la diode à l'aide de la caractéristique ====
+À l'aide de la caractéristique on peut modéliser une diode passante par l'association d'une force électromotrice US (la tension de seuil) qui s'oppose au passage du courant en série avec une résistance RD (la résistance dynamique).
+La diode dont la caractéristique dans le sens passant est représentée ci-dessus peut être modélisée par l'association de US = 0,72 V et RD = 25 mΩ. 
+L'inverse de la résistance dynamique de la diode est la pente de sa caractéristique.
+Dans certains cas il sera judicieux de négliger l'un ou l'autre de ces paramètres : 
+
+la tension de seuil si elle est faible par rapport aux autres tensions du montage ;
+la résistance dynamique si la chute de tension qu'elle provoque est faible devant les tensions du montage.
+Lorsque la diode est dite idéale, on suppose que ces deux derniers paramètres sont nuls.
+
+
+==== Caractéristique d'une diode idéale ====
+
+
+==== Caractéristiques techniques ====
+
+
+=== Principe ===
+Lors de l'aboutement des deux cristaux, les électrons surabondants de la partie N ont tendance à migrer vers la partie P pour y boucher les « trous » (phénomènes de diffusion et de recombinaison). En cédant chacun un électron, les atomes dopés de la partie N deviennent des ions positifs alors que les atomes dopés de la partie P contigus à la jonction deviennent des ions négatifs en gagnant ces électrons. Ces ions sont fixes et il se crée ainsi une barrière électrostatique croissante s'opposant, à l'équilibre, au phénomène de diffusion. Cette zone située de part et d'autre de la jonction sans porteur de charge mobile et isolante, est appelée zone de déplétion. Et il existe donc aussi, à l'équilibre thermodynamique, une différence de potentiel entre la partie N et la partie P (dite potentiel de jonction) ; celle-ci est de l'ordre de 0,7 V pour les diodes à substrat silicium, 0,3 V pour le germanium et les diodes Schottky ; elle est plus importante pour certains substrats type III-V comme GaAs ou les diodes électroluminescentes. Le champ électrique est maximal aux abords de la jonction, dans une zone appelée zone de charge d'espace, ZCE.
+Si maintenant l'on applique une tension positive côté N et négative côté P, la polarisation de la diode est dite « inverse » et la jonction « se creuse » : les électrons de la section N sont attirés vers l'extrémité du barreau, un phénomène symétrique se produit côté P avec les trous : la ZCE s'étend, aucun courant ne peut circuler, la diode est dite « bloquée » ; elle se comporte alors comme un condensateur, une propriété mise à profit dans les varicaps, diodes dont la capacité varie en fonction de la tension inverse qu'on leur applique ; elles sont utilisées entre autres dans la réalisation d'oscillateurs commandés en tension (OCT, anglais VCO).
+Lorsque la tension inverse devient suffisamment grande, on observe deux phénomènes ayant des causes distinctes :
+
+l'énergie du champ électrique devient suffisante pour permettre aux électrons de valence de passer en bande de conduction (effet Zener). Ces derniers franchissent la jonction de la diode par effet tunnel. Il s'agit d'un effet quantique qui peut avoir lieu à une tension d'autant plus faible que la ZCE est mince ;
+les paires électrons-trous créées dans le substrat à la suite de l'agitation thermique, accélérées par le champ électrique externe, vont pouvoir acquérir une énergie cinétique suffisante pour arracher, par choc contre le réseau cristallin, d'autres électrons qui vont s'extraire des liaisons covalentes et en frapper d'autres, etc. (effet d'avalanche).
+
+Ces deux phénomènes, dont la prédominance résulte de la concentration en dopant, donnent lieu à l'apparition d'un courant inverse important et non limité, qui aboutit souvent à la destruction (claquage) du cristal par effet Joule. La diode présente en effet une résistance très faible dans cette plage de fonctionnement. La tension inverse à laquelle se produit le phénomène d'avalanche s'appelle tension d'avalanche (souvent notée VBR de l'anglais Voltage Breakdown Reversed)
+Si ce courant est limité au moyen de résistances externes, la diode en avalanche se comporte alors, du fait de sa faible résistance interne, comme une référence de tension (un récepteur de tension) quasi parfaite : cette propriété est à l'origine de l'utilisation des diodes dites Zener dans la régulation de tension continue.
+En revanche, lorsque l'on applique une tension « directe », c'est-à-dire que l'on applique une tension positive du côté P et négative du côté N (polarisation directe), pourvu que cette tension soit supérieure à la barrière de potentiel présente à l'équilibre, les électrons injectés du côté N franchissent l'interface N-P et terminent leur course soit en se recombinant avec des trous, soit à l'anode via laquelle ils peuvent rejoindre la source d'alimentation : le courant circule, la diode est dite « passante ». 
+Lorsqu'un électron « tombe » dans un trou (recombinaison), il passe d'un état libre à un état lié ; il perd de l'énergie (différence entre le niveau de valence et le niveau de conduction) en émettant un photon ; ce principe est à l'origine des diodes électroluminescentes ou DEL, dont le rendement dépasse considérablement celui des sources de lumière domestiques : lampes à incandescence, lampes à halogène. Une DEL dont le substrat a été façonné pour servir de réflecteur aux photons peut donner lieu à du pompage optique, aboutissant à un rayonnement laser (diode laser).
+
+
+=== Autres types de diode ===
+
+
+==== Diode Schottky ====
+La diode Schottky est constituée d'une jonction métal/semi-conducteur ce qui lui procure une chute de tension directe réduite (0,3 V environ) et une dynamique nettement améliorée du fait de l'absence de porteurs minoritaires engagés dans le processus de conduction. Elle est en revanche incapable de supporter des tensions au-delà d'une cinquantaine de volts.
+
+
+==== Diode Zener ====
+La diode Zener est plus fortement dopée qu'une diode conventionnelle. L'effet Zener a lieu lorsque, sous l'effet de l'application d'une tension inverse suffisante, l'augmentation du champ électrique provoque la libération des porteurs de charge de telle sorte que le courant augmente brutalement et que la tension aux bornes reste pratiquement constante. D'autres diodes, néanmoins classifiées comme diodes Zener, fonctionnent selon l'effet d'avalanche. Ces diodes permettent de faire de la stabilisation de tension et de l'écrêtage. On peut aussi utiliser une diode Zener comme source de bruit.
+
+
+==== Diode Transil ====
+La diode Transil est un composant du type parasurtenseur destiné à la protection des circuits. Cette diode a été créée grâce à l'optimisation du fonctionnement des diodes dans leur zone d'avalanche.
+
+
+==== Diode électroluminescente ====
+
+La diode électroluminescente, d'abord cantonnée aux signalisations lumineuses économes en courant, sert depuis les années 2000 à l'éclairage. Au début des années 1990 les recherches permirent la création des diodes électroluminescentes bleues, puis blanches. Certaines (au nitrure de gallium ou GaN) sont assez puissantes pour des phares de voitures et réverbères (éventuellement solaires). Un projet européen vise à en faire des éclairages domestiques capables de rivaliser avec les lampes basse consommation des années 1990-2000.
+La partie émettrice de systèmes de liaison à fibre optique,, comme certains codeurs optiques peuvent utiliser des diodes électroluminescentes.
+Les diodes électroluminescentes émettant principalement dans l'infrarouge sont utilisées dans des composants électroniques tels que les photocoupleurs. Elles permettent la transmission d'un signal entre des circuits électriquement isolés.
+Pour certains systèmes de transmission, on utilise souvent des diodes électroluminescentes émettant de l'infrarouge. Cette radiation lumineuse invisible évite de perturber les personnes présentes. La transmission s'arrête aux parois du local. Des systèmes peuvent fonctionner sans interférence dans des lieux voisins. Dans les télécommandes d'appareils, ces diodes transmettent des séquences d'allumage et d'extinction qui forment un code de contrôle, souvent suivant le protocole RC5. Certains transmetteurs sans fils à usage domestique ou institutionnel, comme ceux destinés à la diffusion d'interprétation simultanée, utilisent des diffuseurs à diodes électroluminescentes qui émettent une fréquence porteuse que module le signal à transmettre, ou un signal numérique encodé par un modem.
+Les diodes émettant des infrarouges, dont la radiation est détectée par les capteurs CCD des caméras vidéo, servent aussi à l'« éclairage » invisible des systèmes de surveillance ou de prise de vues nocturnes.
+Les diodes électroluminescentes servent aussi pour le rétroéclairage des écrans à cristaux liquides des téléviseurs, des ordinateurs portables, d'appareils photographiques, de smartphones, de tableaux de bord en aéronautique, en automobile, etc. Une variante, la diode électroluminescente organique (OLED), permettant de s'affranchir du rétroéclairage et améliorant, entre autres, l'étendue de la gamme de gris des images, trouve ses applications dans les mêmes domaines ; en outre, elles permettent la construction d'écrans de moindre épaisseur ainsi que des écrans souples.
+
+
+==== Diode laser ====
+La diode laser émet de la lumière monochromatique cohérente. Elle sert, entre autres, à transporter un signal de télécommunications sur fibre optique, où leur rayonnement cohérent favorise les transmissions à haut débit et à longue distance, ou à apporter de l'énergie lumineuse pour le pompage de certains lasers et amplificateurs optiques. La diode laser est un composant essentiel des lecteurs et graveurs de disques optiques, dans ce cas elle émet le faisceau lumineux dont la réflexion sur le disque est détectée par une photodiode ou un phototransistor. Elle est également utilisée dans l'impression laser, les dispositifs électroniques de mesure de distance, de vitesse, de guidage et de pointage précis.
+
+
+==== Photodiode ====
+La photodiode génère un courant à partir des paires électrons-trous produites par l'incidence d'un photon suffisamment énergétique dans le cristal. L'amplification de ce courant permet de réaliser des commandes en fonction de l'intensité lumineuse perçue par la diode (interrupteur crépusculaire par exemple).
+
+
+==== Diode Gunn ====
+La diode Gunn consiste en un simple barreau d'arséniure de gallium (GaAs), et exploite une propriété physique du substrat : les électrons s'y déplacent à des vitesses différentes (masse effective différente) suivant leur énergie (il existe plusieurs minima locaux d'énergie en bande de conduction, suivant le déplacement des électrons). Le courant se propage alors sous forme de bouffées d'électrons, ce qui signifie qu'un courant continu donne naissance à un courant alternatif ; convenablement exploité, ce phénomène permet de réaliser des oscillateurs micro-ondes dont la fréquence se contrôle à la fois par la taille du barreau d'AsGa et par les caractéristiques physiques du résonateur dans lequel la diode est placée.
+
+
+==== Diode PIN ====
+La diode PIN est une diode dans laquelle est interposée, entre ses zones P et N, une zone non dopée, dite intrinsèque (d'où I). Cette diode, polarisée en inverse, présente une capacité extrêmement faible, une tension de claquage élevée. En revanche, en direct, la présence de la zone I augmente la résistance interne ; celle-ci, dépendante du nombre de porteurs, diminue quand le courant augmente : on a donc une impédance variable, contrôlée par une intensité (continue). Ces diodes sont donc soit utilisées en redressement des fortes tensions, soit en commutation UHF (du fait de leur faible capacité inverse), soit en atténuateur variable (contrôlé par un courant de commande continu).
+
+
+==== Diode à effet tunnel ====
+La diode à effet tunnel désigne une diode dont les zones N et P sont hyper-dopées. La multiplication des porteurs entraîne l'apparition d'un courant dû au franchissement quantique de la barrière de potentiel par effet tunnel (une telle diode a une tension de Zener nulle). Sur une faible zone de tension directe, la diode présente une résistance négative (le courant diminue lorsque la tension augmente, car la conduction tunnel se tarit au profit de la conduction « normale »), une caractéristique exploitée pour réaliser des oscillateurs. Ce type de diode n'est quasiment plus employé actuellement.
+
+
+==== Diode à vide ====
+La diode à vide, ancêtre des diodes à semi-conducteurs modernes, est un tube électronique qui utilise l'effet thermoïonique pour réaliser sa tâche de redressement du courant. Bien qu'elle soit tombée en désuétude à cause de sa taille et de sa consommation de courant, ce type de diode est recherché par les amateurs de restauration d'anciens appareils à tubes.
+
+
+== Applications des diodes ==
+
+
+=== Électronique ===
+
+En série dans un circuit :
+
+redressement de tension (conversion courant alternatif vers courant continu, semi-redressé) ;
+protection contre une erreur de branchement d'un circuit alimenté en courant continu en empêchant la circulation du courant dans le mauvais sens ;
+détection de valeur crête ou d'enveloppe ou d'une modulation dans la transmission en modulation d'amplitude,,, ; les diodes sont en général l'élément non linéaire nécessaire à la multiplication de fréquence hétérodyne ;
+plusieurs diodes en série transmettent le signal avec une différence de potentiel continue qui diminue la distorsion de raccordement dans un étage de sortie push-pull d'amplificateur électronique à transistors bipolaires ;
+la non-linéarité d'une ou plusieurs diodes en série avec une résistance suffisamment grande sert à adapter la réponse de circuits électroniques, et notamment donne une approximation de la valeur efficace d'un signal mise à profit dans un VU-mètre.
+En parallèle :
+
+restitution de composante continue pour la transposition d'un signal électrique (pompe à diode (en)) ;
+régulation de tension simple (alimentations simples de montages électroniques) et référence de tension avec une diode Zener, ;
+montages écrêteurs, et protection contre les surtensions (diode Zener, Transil…) ;
+Une diode en série, l'autre en parallèle :
+
+doubleur et multiplicateur de tension, ou pompe à diodes, dont multiplicateurs de tension Schenkel ;
+transposition de niveau d'un signal par pompe à diodes (par exemple : génération d'une alimentation négative à partir d'une alimentation positive).
+Les diodes dites de roue libre sont un élément capital de l'alimentation à découpage.
+Elles sont utilisées pour la compensation des variations de température et en thermométrie (mesure de température en fonction de la variation de la caractéristique).
+Les diodes permettent la réalisation de circuits logiques câblés simples.
+Utilisées en « pontage » (bypass en anglais) elles assurent la protection des générateurs (panneaux solaires photovoltaïques en série, etc.)
+Les diodes électroluminescentes sont utilisées en traitement du signal dans les photocoupleurs.
+Les diodes Gunn permettent la production de rayonnement de très haute fréquence à faible puissance.
+Les diodes varicap ont leur application pour l'accord des récepteurs radios et TV.
+L'injection d'impulsions de courant calibrées, la diode étant polarisée dans le sens bloqué, confère résistance négative à une diode ordinaire au silicium ou au germanium polarisée en inverse. Après ce traitement la diode permet de réaliser un oscillateur radio fréquence. On peut par exemple avec une diode 1N4148 réaliser un émetteur opérant entre 0.1 et 90 Mhz suivant le circuit oscillant associé.
+
+
+=== Électrotechnique ===
+
+Les diodes sont un des dipôles de base de l'électronique de puissance.
+
+Elles peuvent être utilisées en courant alternatif pour diminuer la puissance fournie par l'alimentation à un récepteur : en supprimant l'une des alternances, elles permettent de diviser par deux la puissance transmise à la charge pour un coût très modique. Cette technique est par exemple utilisée pour obtenir deux puissances de chauffe dans les sèche-cheveux, une diode, placée en série avec la résistance de chauffage, est mise en court-circuit par un interrupteur pour obtenir la puissance de chauffe maximale.
+Les diodes sont fréquemment utilisées dans le domaine de redressement de courant alternatif, par exemple en monophasé :
+
+redressement simple alternance : une seule diode est nécessaire ;
+redressement double alternance : on utilise pour cela un pont de diodes (pont de Graëtz), ou deux diodes sur les sorties en opposition de phase d'un transformateur à point milieu.
+
+
+=== Éclairage et signalisation ===
+
+En éclairage, l'invention des diodes électroluminescentes approximativement blanches, par association d'un produit fluorescent aux rayonnements des diodes électroluminescentes bleues, leur donne de nombreuses applications.
+Les diodes électroluminescentes, utilisées en affichage et signalisation sont une application particulièrement visible.
+
+
+== Notes et références ==
+
+
+=== Notes ===
+
+
+=== Références ===
+
+
+== Bibliographie ==
+Marcel Demontvignier, Soupapes électriques – Redresseurs – Onduleurs, Société française des électriciens – École supérieure d'électricité, université de Paris, 1966, 1968, 1970 (1re éd. 1957, 182 p.)
+Fascicule I, no 2177, 149 p.
+Fascicule II, no 2111, 118 p.
+Fascicule III, no 2169, 125 p.
+Fascicule IV, no 2124 , 164 p.
+J.C. Duez, « Utilisation élémentaire des diodes », dans Électronique appliquée 1 – 1re F2, Paris, Hachette, coll. « Classiques Hachette », 1972, p. 63-90.
+Bogdan Grabowski, Fonctions de l'électronique, Paris, Dunod, 1980, p. 9-24.
+Bogdan Grabowski, Composants de l'électronique, Paris, Dunod, 1982, p. 155-181.
+Marcel Mounic, Électronique – Redressement, première partie – Procédés de calculs – Redressement monophasé et polyphasé à commutation naturelle (diodes), Paris, Fouchet, 1969.
+Tahar Neffati, L'Électronique de A à Z, Paris, Dunod, 2006, p. 78-80 : diodes électroluminescentes p. 94, laser p. 175.
+Richard Taillet, Loïc Villain et Pascal Febvre, Dictionnaire de physique, Bruxelles, De Boeck, 2013, p. 200-202. Diode ; diode à avalanche ; diode Gunn ; diode idéale ; diode à jonction ; diode laser > laser à semi-conducteur p. 391 ; diode de roue libre ; diode tunnel ; diode à vide ; diode Zener.
+
+
+== Annexes ==
+
+
+=== Articles connexes ===
+
+Redresseur
+
+
+=== Liens externes ===
+« La diode » [archive du 6 mars 2009], sur univ-lemans.fr, université du Mans (consulté le 17 mai 2014) [PDF].
+« Analogie hydrodynamique », sur led-fr.net.
+
+ Portail de l’électricité et de l’électronique

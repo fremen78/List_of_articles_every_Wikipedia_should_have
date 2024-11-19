@@ -1,0 +1,353 @@
+Transistoren er ein elektronisk komponent som vart funnen opp ved Bells laboratorium i 1947. Transistoren er ein viktig byggestein i nesten all elektronikk. Alle datamaskinar inneheld komponentar som atter er bygde opp av transistorar. Ein kan mellom anna skilje mellom bipolare transistorar og felteffekttransistorar.
+
+
+== Bipolar transistor ==
+Bipolare transistorar (BJT) er laga av 3 lag halvleiarmateriale kalla base, kollektor og emitter. Halvleiermaterialet kan til dømes vere germanium eller silisium. I dag er silisium det vanlegaste materialet å bruke. Det finst to typar transistorar, den eine vert kalla NPN som leier straum når base har positiv spenning i høve til emitter, og PNP som leier når base er negativ i høve til emitter.
+Den bipolaren transistoren fungerer ved at han byrjar å leie straum mellom emitter og kollektor når det vert sett spenning på basen. Transistoren tek til å leie når spenninga mellom base og emitter går over kontaktpotensialet i PN-overgangen (ca 0,7V). Kollektorstraumen vil då vere gjeven av EbersMoll-likninga:
+
+  
+    
+      
+        
+          I
+          
+            C
+          
+        
+        =
+        I
+        S
+        ⋅
+        
+          e
+          
+            (
+            
+              V
+              
+                B
+                E
+              
+            
+            
+              /
+            
+            v
+            T
+            )
+          
+        
+      
+    
+    {\displaystyle I_{C}=IS\cdot e^{(V_{BE}/vT)}}
+  
+
+Transistoren fungerer som ein forsterkar for straumen mellom base og kollektor ved at straumen frå kollektor til emitter aukar når straumen frå base til kollektor aukar. 
+
+
+== Felteffekttransistor ==
+
+Felteffekttransistor finst i to utgåver, JFET og MOSFET. I digital elektronikk er MOSFET i dag fullstendig dominerande.
+MOSFET har tre terminalar, kalla source, drain og gate. Når ein set på ein positiv spenning på gate (NMOS), vert det danna eit deplesjonsområde under gate. Når potensialet mellom gate og source går over ei viss terskelspenning, vert det opna ein resistiv kanal mellom source og drain som kan leie straum. Denne resistive kanalen vert kalla for inversjonslaget.
+Så lenge transistoren er i lineærregionen (også kalla triodeområdet), dvs. at 
+  
+    
+      
+        
+          V
+          
+            G
+            S
+          
+        
+        >
+        
+          V
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle V_{GS}>V_{th}}
+  
+ og 
+  
+    
+      
+        
+          V
+          
+            D
+            S
+          
+        
+        <
+        
+          V
+          
+            G
+            S
+          
+        
+        −
+        
+          V
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle V_{DS}<V_{GS}-V_{th}}
+  
+, vil straumen flyte fra drain til source etter likninga
+
+  
+    
+      
+        
+          I
+          
+            D
+          
+        
+        =
+        
+          
+            
+              
+                μ
+                
+                  n
+                
+              
+              
+                C
+                
+                  o
+                  x
+                
+              
+            
+            2
+          
+        
+        
+          
+            W
+            L
+          
+        
+        (
+        2
+        (
+        
+          V
+          
+            G
+            S
+          
+        
+        −
+        
+          V
+          
+            t
+            h
+          
+        
+        )
+        
+          V
+          
+            D
+            S
+          
+        
+        −
+        
+          V
+          
+            D
+            S
+          
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle I_{D}={\frac {\mu _{n}C_{ox}}{2}}{\frac {W}{L}}(2(V_{GS}-V_{th})V_{DS}-V_{DS}^{2})}
+  
+
+Når 
+  
+    
+      
+        
+          V
+          
+            G
+            S
+          
+        
+        >
+        
+          V
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle V_{GS}>V_{th}}
+  
+ og 
+  
+    
+      
+        
+          V
+          
+            D
+            S
+          
+        
+        >
+        
+          V
+          
+            G
+            S
+          
+        
+        −
+        
+          V
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle V_{DS}>V_{GS}-V_{th}}
+  
+, er det ikkje lenger noko inversjonslag mellom gate og drain, og den resistive kanalen under gata vert difor kutta av før han når fram til drain. Transistoren går då over i det aktive operasjonsområdet (metningsregionen). Her vil straumen gjennom transistoren ideellt sett einast vere avhengig av spenninga på gate. Om me set 
+  
+    
+      
+        
+          V
+          
+            D
+            S
+          
+        
+        =
+        
+          V
+          
+            G
+            S
+          
+        
+        −
+        
+          V
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle V_{DS}=V_{GS}-V_{th}}
+  
+, finn me straum-spenningskarakteristikken i metningsregionen:
+
+  
+    
+      
+        
+          I
+          
+            D
+          
+        
+        =
+        
+          
+            
+              
+                μ
+                
+                  n
+                
+              
+              
+                C
+                
+                  o
+                  x
+                
+              
+            
+            2
+          
+        
+        
+          
+            W
+            L
+          
+        
+        (
+        
+          V
+          
+            G
+            S
+          
+        
+        −
+        
+          V
+          
+            t
+            h
+          
+        
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle I_{D}={\frac {\mu _{n}C_{ox}}{2}}{\frac {W}{L}}(V_{GS}-V_{th})^{2}}
+  
+
+I realiteten fører kanallengdmodulasjon til at straumen også er svakt avhengig av 
+  
+    
+      
+        
+          V
+          
+            D
+            S
+          
+        
+      
+    
+    {\displaystyle V_{DS}}
+  
+
+I digital elektronikk vil MOSFET-transistorane vere anten av eller i triodeområdet, metningsområdet vert nytta når ein til dømes skal lage ein analog forsterkar.

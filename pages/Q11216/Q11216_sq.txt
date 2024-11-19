@@ -1,0 +1,778 @@
+Analiza numerike është studimi i algoritmeve që përdorin përafrimin numerik (në krahasim me paraqitje simbolike ) për problemet e analizës matematikore (siç dallohet nga matematika diskrete ). Analiza numerike gjen natyrshëm aplikim në të gjitha fushat e inxhinierisë dhe shkencave fizike, por në shekullin 21 gjithashtu shkencat e jetës, shkencat shoqërore, mjekësia, biznesi dhe madje edhe artet kanë përvetësuar elemente të llogaritjeve shkencore. Rritja e fuqisë informatike ka revolucionarizuar përdorimin e modeleve realiste matematikore në shkencë dhe inxhinieri, dhe kërkohet një analizë delikate numerike për të zbatuar këto modele të detajuara të botës. Për shembull, ekuacionet diferenciale të zakonshme shfaqen në mekanikën qiellore (duke parashikuar lëvizjet e planetëve, yjeve dhe galaktikave); Algjebra lineare numerike është e rëndësishme për analizën e të dhënave; ekuacionet stokastike diferenciale dhe zinxhirët Markov janë thelbësorë në simulimin e qelizave të gjalla për ilaç dhe biologji. 
+Para ardhjes së kompjuterëve modernë, metodat numerike shpesh vareshin nga formulat e ndërhyrjes së duarve të aplikuara për të dhënat nga tabela të mëdha të shtypura. Që nga mesi i shekullit të 20-të, kompjuterët llogaritin funksionet e kërkuara, por shumë prej të njëjtave formula megjithatë vazhdojnë të përdoren si pjesë e algoritmeve të softuerëve. 
+Këndvështrimi numerik kthehet në shkrimet më të hershme matematikore. Një tabletë nga Koleksioni Babilonas i Yale ( YBC 7289 ), jep një përafrim numerik sexagesimal të rrënjës katrore të 2, gjatësisë së diagonales në një katror njësi . 
+Analiza numerike vazhdon këtë traditë të gjatë: në vend se përgjigjet e sakta simbolike, të cilat mund të zbatohen vetëm në matjet e botës reale me përkthim në shifra, ai jep zgjidhje të përafërta brenda kufijve të specifikuar të gabimit.
+
+
+== Paraqitje e përgjithshme ==
+Qëllimi i përgjithshëm i fushës së analizës numerike është hartimi dhe analizimi i teknikave për të dhënë zgjidhje të përafërt, por të sakta për problemet e vështira, shumëllojshmëria e të cilave sugjerohet nga sa vijon:
+
+Metodat e përparuara numerike janë thelbësore në bërjen e parashikimit numerik të motit të realizueshëm.
+Llogaritja e trajektores së një anijeje kërkon zgjidhjen e saktë numerike të një sistemi të ekuacioneve diferenciale të zakonshme.
+Kompanitë e makinave mund të përmirësojnë sigurinë e përplasjeve të automjeteve të tyre duke përdorur simulime kompjuterike të përplasjeve të makinave. Simulimet e tilla në thelb konsistojnë në zgjidhjen e ekuacioneve diferenciale të pjesshme në mënyrë numerike.
+Fondet mbrojtëse ( fondet e investimeve private) përdorin mjete nga të gjitha fushat e analizave numerike për të provuar të llogaritin vlerën e aksioneve dhe derivateve më saktësisht se pjesëmarrësit e tjerë të tregut.
+Linjat ajrore përdorin algoritme të sofistikuara të optimizimit për të vendosur çmimet e biletave, caktimet e aeroplanit dhe ekuipazhit dhe nevojat e karburantit. Historikisht, algoritme të tilla u zhvilluan në fushën mbivendosëse të kërkimit të operacioneve .
+Kompanitë e sigurimeve përdorin programe numerike për analiza aktuariale .
+Pjesa tjetër e këtij seksioni përshkruan disa tema të rëndësishme të analizës numerike.
+
+
+=== Historia ===
+Fusha e analizës numerike parashikon shpikjen e kompjuterave modernë nga shumë shekuj. Ndërhyrja lineare ishte tashmë në përdorim më shumë se 2000 vjet më parë. Shumë matematikanë të shkëlqyeshëm të së kaluarës ishin të preokupuar nga analiza numerike, siç është e qartë nga emrat e algoritmeve të rëndësishme si metoda e Njutonit, polinomi i ndërhyrjes së Lagranzhit, eleminimi Gaussian ose metoda e Eulerit . 
+Për të lehtësuar llogaritjet me dorë, librat e mëdhenj u prodhuan me formula dhe tabela të të dhënave siç janë pikat e ndërhyrjes dhe koeficientët e funksionit. Duke përdorur këto tabela, të llogaritura shpesh në 16 vende dhjetore ose më shumë për disa funksione, mund të shikoni vlera për të futur në formulat e dhëna dhe për të arritur vlerësime numerike shumë të mira të disa funksioneve. Puna kanonike në këtë fushë është botimi NIST i botuar nga Abramowitz dhe Stegun, një libër faqesh 1000 plus i një numri shumë të madh të formulave dhe funksioneve të përdorura zakonisht dhe vlerave të tyre në shumë pika. Vlerat e funksionit nuk janë më shumë të dobishme kur një kompjuter është i disponueshëm, por renditja e madhe e formulave mund të jetë akoma e dobishme. 
+Llogaritësi mekanik u zhvillua gjithashtu si një mjet për llogaritjen e duarve. Këta kalkulatorë evoluan në kompjutera elektronikë në vitet 1940, dhe atëherë u zbulua se këta kompjuterë ishin gjithashtu të dobishëm për qëllime administrative. Por shpikja e kompjuterit ndikoi gjithashtu në fushën e analizës numerike, pasi tani mund të bëhen llogaritjet më të gjata dhe më të ndërlikuara. 
+
+
+=== Metoda direkte dhe iterative ===
+
+Metodat direkte llogaritin zgjidhjen për një problem në një numër të kufizuar hapash. Këto metoda do të jepnin përgjigjen e saktë nëse do të kryheshin në aritmetikë me precizitet të pafund . Shembuj përfshijnë eleminimin Gaussian, metodën e faktorizimit QR për zgjidhjen e sistemeve të ekuacioneve lineare dhe metodën e thjeshtë të programimit linear . Në praktikë, përdoret saktësi e fundme dhe rezultati është një përafrim i zgjidhjes së vërtetë (duke supozuar stabilitet ). 
+Në kontrast me metodat direkte, metodat përsëritëse nuk pritet të përfundojnë në një numër të kufizuar hapash. Duke u nisur nga një supozim fillestar, metodat përsëritëse formojnë përafrime të njëpasnjëshme që konvergojnë në zgjidhjen e saktë vetëm në kufi. Një test i konvergjencës, shpesh që përfshin pjesën e mbetur, është specifikuar në mënyrë që të vendosë se kur është gjetur një zgjidhje mjaft e saktë (me shpresë). Edhe duke përdorur aritmetikë me saktësi të pafund këto metoda nuk do ta arrinin zgjidhjen brenda një numri të kufizuar hapash (në përgjithësi). Shembuj përfshijnë metodën e Njutonit, metodën e bekseksionit dhe përsëritjen e Jacobi . Në algjebën e matricës llogaritëse, metodat përsëritëse zakonisht janë të nevojshme për probleme të mëdha. 
+Metodat iterative janë më të zakonshme se metodat direkte në analizën numerike. Disa metoda janë të drejtpërdrejta në parim por zakonisht përdoren sikur të mos ishin, p.sh. GMRES dhe metoda e gradientit konjugues . Për këto metoda numri i hapave të nevojshëm për të marrë zgjidhjen e saktë është aq i madh sa një përafrim pranohet në të njëjtën mënyrë si për një metodë përsëritëse. 
+
+
+=== Diskretimi ===
+Për më tepër, problemet e vazhdueshme nganjëherë duhet të zëvendësohen nga një problem diskret, zgjidhja e të cilit dihet se përafron atë të problemit të vazhdueshëm; ky proces quhet ' diskretim '. Për shembull, zgjidhja e një ekuacioni diferencial është një funksion . Ky funksion duhet të përfaqësohet nga një sasi e kufizuar e të dhënave, për shembull nga vlera e tij në një numër të kufizuar pikësh në domenin e tij, edhe pse ky domen është vazhdimësi . 
+
+
+== Gjenerimi dhe përhapja e gabimeve ==
+Studimi i gabimeve formon një pjesë të rëndësishme të analizës numerike. Ekzistojnë disa mënyra në të cilat mund të futet gabimi në zgjidhjen e problemit.
+
+
+=== Round-off ===
+Gabimet e rrumbullakimit lindin sepse është e pamundur të përfaqësosh të gjithë numrat realë saktësisht në një makinë me memorje të kufizuar (që janë ato që janë të gjithë kompjuterët dixhitalë praktikë). 
+
+
+=== Gabimi i cungimit dhe diskretorizimit ===
+Gabimet e cungimit kryhen kur përfundon një metodë përsëritëse ose përafrohet një procedurë matematikore, dhe zgjidhja e përafërt ndryshon nga zgjidhja e saktë. Në mënyrë të ngjashme, diskretizimi shkakton një gabim diskretizimi sepse zgjidhja e problemit diskret nuk përkon me zgjidhjen e problemit të vazhdueshëm. Për shembull, në përsëritjen në shiritin anësor për të llogaritur zgjidhjen e 
+  
+    
+      
+        3
+        
+          x
+          
+            3
+          
+        
+        +
+        4
+        =
+        28
+      
+    
+    {\displaystyle 3x^{3}+4=28}
+  
+, pas 10 ose më shumë përsëritje, mund të konkludohet se rrënja është afërsisht 1,99 (për shembull). Prandaj, ekziston një gabim i cungimit të 0.01. 
+Pasi të krijohet një gabim, ai përgjithësisht do të përhapet përmes llogaritjes. Për shembull, është vërejtur tashmë që operacioni + në një kalkulator (ose kompjuter) është jo i efektshëm. Nga kjo rrjedh se nje llogaritje e tipit  a + b + c + d + e  është edhe më e pasaktë.
+Gabimi i cungimit krijohet kur përafrohet një procedurë matematikore. Për të integruar një funksion pikërisht kërkohet të gjeni shumën e trapezoideve të pafund, por numerikisht mund të gjenden vetëm shuma e trapezoideve të fundme, dhe kështu përafrimi i procedurës matematikore. Në mënyrë të ngjashme, për të dalluar një funksion, elementi diferencial i afrohet zeros, por numerikisht mund të zgjidhet vetëm një vlerë e fundme e elementit diferencial.
+
+
+=== Qëndrueshmëria numerike dhe problemet e paraqitura mirë ===
+Qëndrueshmëria numerike është një nocion në analizën numerike. Një algoritëm quhet 'numerikisht i qëndrueshëm' nëse një gabim, cilido qoftë shkaku i tij, nuk rritet të jetë shumë më i madh gjatë llogaritjes. Kjo ndodh nëse problemi është ' i kushtëzuar mirë ', do të thotë se zgjidhja ndryshon vetëm me një sasi të vogël nëse të dhënat e problemit ndryshohen nga një sasi e vogël. Në të kundërt, nëse një problem është 'i kushtëzuar', atëherë çdo gabim i vogël në të dhëna do të rritet si një gabim i madh. 
+Si problemi origjinal ashtu edhe algoritmi i përdorur për të zgjidhur atë problem mund të jetë 'i kushtëzuar' dhe çdo kombinim është i mundur.
+Pra, një algoritëm që zgjidh një problem të kushtëzuar mund të jetë ose i qëndrueshëm numerikisht ose numerikisht i paqëndrueshëm. Një art i analizës numerike është të gjesh një algoritëm të qëndrueshëm për zgjidhjen e një problemi matematikor të paraqitur mirë. Për shembull, llogaritja e rrënjës katrore të 2 (që është afërsisht 1.41421) është një problem i paraqitur mirë. Shumë algoritme e zgjidhin këtë problem duke filluar me një përafrim fillestar x 0 në 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+, për shembull 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        =
+        1.4
+      
+    
+    {\displaystyle x_{0}=1.4}
+  
+, dhe pastaj llogaritni supozime të përmirësuara 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle x_{1},x_{2},}
+  
+ etj. Një metodë e tillë është metoda e famshme babilonase, e cila jepet nga x k +1 = x k / 2 + 1 / x k . Një metodë tjetër, e quajtur 'metoda X', jepet nga 
+  
+    
+      
+        
+          x
+          
+            k
+            +
+            1
+          
+        
+        =
+        (
+        
+          x
+          
+            k
+          
+          
+            2
+          
+        
+        −
+        2
+        
+          )
+          
+            2
+          
+        
+        +
+        
+          x
+          
+            k
+          
+        
+      
+    
+    {\displaystyle x_{k+1}=(x_{k}^{2}-2)^{2}+x_{k}}
+  
+. Disa përsëritje të secilës skemë llogariten në formën e tabelës më poshtë, me supozimet fillestare 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        =
+        1.4
+      
+    
+    {\displaystyle x_{0}=1.4}
+  
+ dhe 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        =
+        1.42
+      
+    
+    {\displaystyle x_{0}=1.42}
+  
+. 
+
+Vëzhgoni që metoda babilonase konvergon shpejt pavarësisht nga supozimi fillestar, ndërsa Metoda X konvergjon jashtëzakonisht ngadalë me supozimin fillestar x 0 = 1.4 dhe ndryshon për supozimin fillestar x 0 = 1.42. Prandaj, metoda babilonase është numerikisht e qëndrueshme, ndërsa Metoda X është numerikisht e paqëndrueshme. 
+
+Stabiliteti numerik ndikohet nga numri i shifrave të konsiderueshme që mban makina, nëse përdoret një makinë që mban vetëm katër shifrat dhjetore më të rëndësishme, një shembull i mirë për humbjen e domethënies mund të jepet nga këto dy funksione ekuivalente
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        x
+        
+          (
+          
+            
+              
+                x
+                +
+                1
+              
+            
+            −
+            
+              
+                x
+              
+            
+          
+          )
+        
+        
+           dhe 
+        
+        g
+        (
+        x
+        )
+        =
+        
+          
+            x
+            
+              
+                
+                  x
+                  +
+                  1
+                
+              
+              +
+              
+                
+                  x
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)=x\left({\sqrt {x+1}}-{\sqrt {x}}\right){\text{ dhe }}g(x)={\frac {x}{{\sqrt {x+1}}+{\sqrt {x}}}}.}
+  
+
+Krahasimi i rezultateve të
+
+  
+    
+      
+        f
+        (
+        500
+        )
+        =
+        500
+        
+          (
+          
+            
+              
+                501
+              
+            
+            −
+            
+              
+                500
+              
+            
+          
+          )
+        
+        =
+        500
+        
+          (
+          
+            22.38
+            −
+            22.36
+          
+          )
+        
+        =
+        500
+        (
+        0.02
+        )
+        =
+        10
+      
+    
+    {\displaystyle f(500)=500\left({\sqrt {501}}-{\sqrt {500}}\right)=500\left(22.38-22.36\right)=500(0.02)=10}
+  
+
+dhe
+
+  
+    
+      
+        
+          
+            
+              
+                g
+                (
+                500
+                )
+              
+              
+                
+                =
+                
+                  
+                    500
+                    
+                      
+                        
+                          501
+                        
+                      
+                      +
+                      
+                        
+                          500
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    500
+                    
+                      22.38
+                      +
+                      22.36
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    500
+                    44.74
+                  
+                
+                =
+                11.17
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}g(500)&={\frac {500}{{\sqrt {501}}+{\sqrt {500}}}}\\&={\frac {500}{22.38+22.36}}\\&={\frac {500}{44.74}}=11.17\end{alignedat}}}
+  
+
+duke krahasuar dy rezultatet e mësipërme, është e qartë se humbja e rëndësisë (e shkaktuar këtu nga 'anulimi katastrofik') ka një efekt të madh në rezultate, edhe pse të dy funksionet janë ekuivalente, siç tregohet më poshtë
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                x
+                
+                  (
+                  
+                    
+                      
+                        x
+                        +
+                        1
+                      
+                    
+                    −
+                    
+                      
+                        x
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  (
+                  
+                    
+                      
+                        x
+                        +
+                        1
+                      
+                    
+                    −
+                    
+                      
+                        x
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      
+                        )
+                        
+                          2
+                        
+                      
+                      −
+                      (
+                      
+                        
+                          x
+                        
+                      
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    
+                      x
+                      +
+                      1
+                      −
+                      x
+                    
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    1
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    x
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                g
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{4}f(x)&=x\left({\sqrt {x+1}}-{\sqrt {x}}\right)\\&=x\left({\sqrt {x+1}}-{\sqrt {x}}\right){\frac {{\sqrt {x+1}}+{\sqrt {x}}}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=x{\frac {({\sqrt {x+1}})^{2}-({\sqrt {x}})^{2}}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=x{\frac {x+1-x}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=x{\frac {1}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&={\frac {x}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=g(x)\end{alignedat}}}
+  
+
+Vlera e dëshiruar, e llogaritur duke përdorur saktësi të pafund, është 11.174755. . .
+Shembulli është një modifikim i një të marrë nga Mathew; Metodat numerike duke përdorur Matlab, ed. 3.
+
+
+== Fushat e studimit ==
+Fusha e analizës numerike përfshin shumë nën-disiplina. Disa nga kryesoret janë:
+
+
+=== Llogaritja e vlerave të funksioneve ===
+
+Një nga problemet më të thjeshta është vlerësimi i një funksioni në një pikë të caktuar. Qasja më e drejtpërdrejtë, thjesht futja e numrit në formulë ndonjëherë nuk është shumë efikase. Për polinomet, një qasje më e mirë është duke përdorur skemën Horner, pasi zvogëlon numrin e nevojshëm të shumëzimeve dhe shtesave. Në përgjithësi, është e rëndësishme të vlerësohen dhe kontrollohen gabimet e rrumbullakimit që vijnë nga përdorimi i aritmetikës së pikës lundruese .
+
+
+=== Interpolimi, ekstrapolimi dhe regresioni ===
+Interpolacioni zgjidh problemin e mëposhtëm: duke pasur parasysh vlerën e një funksioni të panjohur në një numër pikësh, çfarë vlere ka ai funksion në një pikë tjetër midis pikave të dhëna? 
+Ekstrapolimi është shumë i ngjashëm me ndërhyrjen, përveç që tani duhet të gjendet vlera e funksionit të panjohur në një pikë që është jashtë pikave të dhëna 
+Regresioni është gjithashtu i ngjashëm, por merr parasysh që të dhënat janë të pasakta. Duke pasur parasysh disa pika, dhe një matje të vlerës së disa funksioneve në këto pika (me një gabim), funksioni i panjohur mund të gjendet. Sheshi më i vogël - metoda është një mënyrë për ta arritur këtë.
+
+
+=== Zgjidhja e ekuacioneve dhe sistemeve të ekuacioneve ===
+Një problem tjetër themelor është llogaritja e zgjidhjes së disa ekuacioneve të dhëna. Dy raste dallohen zakonisht, në varësi të faktit nëse ekuacioni është linear apo jo. Për shembull, ekuacioni 
+  
+    
+      
+        2
+        x
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x+5=3}
+  
+ është linear ndërsa 
+  
+    
+      
+        2
+        
+          x
+          
+            2
+          
+        
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x^{2}+5=3}
+  
+ nuk eshte. 
+Eshtë bërë shumë përpjekje në zhvillimin e metodave për zgjidhjen e sistemeve të ekuacioneve lineare . Metodat standarde direkte, d.m.th., metodat që përdorin disa dekompozim të matricës janë eleminimi Gaussian, zbërthimi i LU, dekompozimi Cholesky për matricën simetrike (ose hermitiane ) dhe pozitivisht të përcaktuar, dhe dekompozimi QR për matricat jo katrore. Metodat iterative siç janë metoda Jacobi, metoda Gauss-Seidel, mbi-relaksimi i njëpasnjëshëm dhe metoda e gradientit konjugues zakonisht preferohen për sisteme të mëdha. Metodat e përgjithshme përsëritëse mund të zhvillohen duke përdorur një ndarje të matricës . 
+Algoritmet për gjetjen e rrënjëve përdoren për të zgjidhur ekuacionet jolineare (ato janë quajtur kështu pasi një rrënjë e një funksioni është një argument për të cilin funksioni jep zero). Nëse funksioni është i ndryshueshëm dhe derivati është i njohur, atëherë metoda e Njutonit është një zgjedhje popullore. Linearizimi është një teknikë tjetër për zgjidhjen e ekuacioneve jolineare.
+
+
+=== Zgjidhja e problemeve me vlera të veçanta ose vlera ===
+Disa probleme të rëndësishme mund të formulohen për sa i përket dekompozimeve eigenvalue ose dekompozimeve të vlerës së njëjës . Për shembull, algoritmi i kompresimit të imazhit spektral bazohet në dekompozimin e vlerës së njëjës. Mjeti përkatës në statistika quhet analiza kryesore e komponentëve . 
+
+
+=== Optimizimi ===
+Problemet e optimizmit kërkojnë pikën në të cilën një funksion i caktuar është maksimalizuar (ose minimizuar). Shpesh, çështja gjithashtu duhet të plotësojë disa kufizime . 
+Fusha e optimizmit është ndarë më tej në disa nënfusha, në varësi të formës së funksionit objektiv dhe kufizimit. Për shembull, programimi linear merret me rastin që të dy funksioni objektiv dhe kufizimet janë lineare. Një metodë e famshme në programimin linear është metoda e thjeshtë. 
+Metoda e shumëzuesve të Lagranzhit mund të përdoret për të zvogëluar problemet e optimizmit me kufizime ndaj problemeve të pakufizuara të optimizmit.
+
+
+=== Vlerësimi i integraleve ===
+Integrimi numerik, në disa raste i njohur edhe si kuadraturë numerike, kërkon vlerën e një integrali të caktuar. Metodat popullore përdorin një nga formula Newton – Cotes (si rregulli i pikës së mesit ose rregulli i Simpsonit ) ose kuadratura Gaussian . Këto metoda mbështeten në një strategji "përçani dhe pushtoni", përmes së cilës një integral në një grup relativisht të madh është zbërthyer në integrale në grupe më të vogla. Në dimensione më të larta, kur këto metoda bëhen me kosto të kushtueshme përsa i përket përpjekjes llogaritëse, mund të përdoret metoda Monte Carlo ose quasi-Monte Carlo (shiko integrimin Monte Carlo ), ose, në dimensione modeste të mëdha, metodën e rrjetave të pakta . 
+
+
+=== Ekuacionet diferenciale ===
+Analiza numerike ka të bëjë edhe me llogaritjen (në një mënyrë të përafërt) zgjidhjen e ekuacioneve diferenciale, si ekuacionet diferenciale të zakonshme ashtu edhe ekuacionet diferenciale të pjesshme.
+Ekuacionet diferenciale të pjesshme zgjidhen duke diskreteruar së pari ekuacionin, duke e sjellë atë në një hapësirë nën-dimensionale të fundme. Kjo mund të bëhet me një metodë të elementeve të fundme, me një metodë të ndryshimit të kufizuar, ose (veçanërisht në inxhinieri) me një metodë të vëllimit të kufizuar . Arsyetimi teorik i këtyre metodave shpesh përfshin teorema nga analiza funksionale . Kjo zvogëlon problemin në zgjidhjen e një ekuacioni algjebrik.
+
+
+== Programi ==
+Që nga fundi i shekullit XX, shumica e algoritmeve zbatohen në një larmi gjuhësh programimi. Magazina Netlib përmban koleksione të ndryshme të rutinave të programeve kompjuterike për probleme numerike, kryesisht në Fortran dhe C. Produktet tregtare që zbatojnë shumë algoritme numerike të ndryshme përfshijnë bibliotekat IMSL dhe NAG ; një alternative e softuerit të lirë është Biblioteka Shkencore GNU . 
+Ekzistojnë disa aplikacione të llogaritjes numerike të njohura si MATLAB, TK Solver, S-PLUS, dhe IDL si dhe alternativa falas dhe me burim të hapur si FreeMat, Scilab, GNU Octave (të ngjashme me Matlab), dhe IT ++ (një bibliotekë C ++). Ekzistojnë gjithashtu gjuhë programimi si R (e ngjashme me S-PLUS) dhe Python me biblioteka si NumPy, SciPy dhe SymPy . Performanca ndryshon gjerësisht: ndërsa veprimet me vektor dhe matricë janë zakonisht të shpejtë, sythe skalare mund të ndryshojnë në shpejtësi për më shumë sesa një renditje e madhësisë.
+Shumë sisteme të algjebrës kompjuterike si Matematika përfitojnë gjithashtu nga disponueshmëria e aritmetikës precize arbitrare e cila mund të sigurojë rezultate më të sakta. 
+Gjithashtu, çdo softuer spreadsheet mund të përdoret për të zgjidhur probleme të thjeshta që lidhen me analizën numerike.
+
+
+== Referime ==
+
+
+=== Citatet ===
+
+
+=== Referime ===
+Golub, Gene H.; Charles F. Van Loan (1986). Matrix Computations (3rd ed.). Johns Hopkins University Press. ISBN 0-8018-5413-X.
+Higham, Nicholas J. (1996). Accuracy and Stability of Numerical Algorithms. Society for Industrial and Applied Mathematics. ISBN 0-89871-355-2.
+Hildebrand, F. B. (1974). Introduction to Numerical Analysis (2nd ed.). McGraw-Hill. ISBN 0-07-028761-9.
+Leader, Jeffery J. (2004). Numerical Analysis and Scientific Computation. Addison Wesley. ISBN 0-201-73499-0.
+Wilkinson, J.H. (1965). The Algebraic Eigenvalue Problem. Clarendon Press.
+Kahan, W. (1972). A survey of error-analysis. Proc. IFIP Congress 71 in Ljubljana. Info. Processing 71. vol. 2. Amsterdam: North-Holland Publishing. pp. 1214–39.(examples of the importance of accurate arithmetic).
+Trefethen, Lloyd N. (2006). "Numerical analysis", 20 pages. In: Timothy Gowers and June Barrow-Green (editors), Princeton Companion of Mathematics, Princeton University Press.
+
+
+== Linqe të jashtme ==
+
+
+=== Revista ===
+gdz.sub.uni-goettingen, Numerische Mathematik, vëllimet 1-66, Springer, 1959-1994 (i kërkueshëm; faqet janë imazhe). (in English and German)
+Numerische Mathematik, vëllimet 1-112, Springer, 1959–2009
+Gazeta mbi Analizat Numerike, vëllimet 1-47, SIAM, 1964–2009
+
+
+=== Tekste online ===
+Hazewinkel, Michiel, ed. (2001) [1994], "Analiza numerike", Enciklopedia e Matematikës, Springer Science + Business Media BV / Kluwer Publikuesit Akademik, ISBN    Hazewinkel, Michiel 
+Receta numerike, William H. Press (botime të mëparshme falas, të shkarkueshme)
+Hapat e parë në analizën numerike ( arkivuar ), RJHosking, S.Joe, DCJoyce dhe JCTurner
+CSEP (Projekti i Edukimit të Shkencës Kompjuterike) Arkivuar 1 gusht 2017 tek Wayback Machine, Departamenti i Energjisë i SH.B.A.
+
+
+=== Materiali i kurseve në internet ===
+Metodat numerike, Universiteti Stuart Dalziel i Kembrixhit
+Ligjërata mbi Analizat Numerike, Dennis Deturck dhe Herbert S. Wilf University of Pennsylvania
+Metodat numerike, Universiteti John D. Fenton i Karlsruhe
+Metodat numerike për fizikanët, Universiteti Anthony O'Hare Oxford
+Ligjërata në Analizat Numerike (të arkivuara ), Universiteti R. Radok Mahidol
+Hyrje në Analizat numerike për Inxhinierinë, Henrik Schmidt Instituti i Teknologjisë në Masaçusets
+Analiza numerike për Inxhinierinë, Universiteti DW Harder i Waterloo

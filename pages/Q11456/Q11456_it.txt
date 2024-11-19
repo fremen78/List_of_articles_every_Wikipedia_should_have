@@ -1,0 +1,1057 @@
+I semiconduttori, nella scienza e tecnologia dei materiali, sono materiali che hanno resistività intermedia tra i metalli e gli isolanti, spesso composti da metalloidi. Sono esempi di semiconduttori il silicio, il germanio, l'arseniuro di gallio.
+Essi sono alla base di tutti i principali dispositivi elettronici e microelettronici a stato solido quali transistor, diodi e diodi ad emissione luminosa (LED). La fisica dei semiconduttori è la branca della fisica dello stato solido che studia le proprietà elettriche dei semiconduttori. In Italia è stata fondata negli anni 1960 da Pietrino Manca, Franco Bassani e altri.
+
+
+== Descrizione ==
+Le proprietà tipiche di un semiconduttore sono associate alla conduzione elettrica, e in particolare sono la diminuzione della resistività all'aumentare della temperature, la fotoconduzione, l'effetto fotovoltaico e la rettificazione nelle giunzioni con metalli. Questi fenomeni sono stati osservati già nel XIX secolo, ma la loro spiegazione è stata data nel corso del XX secolo con lo sviluppo della meccanica quantistica e della fisica dello stato solido.
+Le proprietà di tali materiali dipendono fortemente dal drogaggio, che può cambiare la resistività elettrica di diversi ordini di grandezza a parità di temperatura. I diversi campi di utilizzo sono determinati dalle caratteristiche del semiconduttore, quali la concentrazione dei portatori di carica, la loro mobilità, la band gap.
+
+
+== Fondamenti di fisica dei semiconduttori ==
+
+Nell'ambito della fisica dello stato solido, i semiconduttori (e gli isolanti) sono definiti come solidi nei quali a 0 K (e senza eccitazioni esterne) la banda a energia più elevata di stati elettronici di energia occupati è completamente piena. 
+Dato che la conduzione elettrica nei solidi avviene solo quando si abbia una banda di stati elettronici non completamente piena, la conduzione nei semiconduttori puri avviene solo quando gli elettroni sono stati eccitati (termicamente, otticamente, etc.) e portati nelle bande a energia superiore.
+A temperatura ambiente, una porzione (generalmente molto piccola, ma non trascurabile) di elettroni in un semiconduttore è stata termicamente eccitata e portata dalla banda di valenza, la banda completa a 0 K, alla banda di conduzione, la più vicina banda superiore. La facilità con cui gli elettroni possono essere portati dalla banda di valenza alla banda di conduzione dipende dall'intervallo proibito tra le bande, ed è la grandezza di questo intervallo di energia (gap in inglese) che serve come parametro per distinguere i semiconduttori dagli isolanti. 
+I semiconduttori generalmente hanno gap di energia di circa 1 elettron-volt, mentre gli isolanti hanno gap di energia molte volte maggiori. A questo proposito, la temperatura gioca un ruolo molto importante, poiché all'aumentare di essa corrisponde un incremento dell'agitazione termica degli atomi, e quindi anche degli elettroni di valenza, che sono dunque in grado di attraversare meglio la soglia del gap di energia.
+Quando in un semiconduttore gli elettroni sono portati dalla banda di valenza alla banda di conduzione, entrambe le bande contribuiscono alla conduzione, perché la conduzione può avvenire in ogni banda di energia non completamente piena. Gli elettroni nella banda di conduzione sono chiamati elettroni liberi, anche se spesso li si chiama semplicemente elettroni se il contesto permette di essere comunque chiari. Gli stati energetici liberi nella banda di valenza sono chiamati lacune (holes). Benché non siano in effetti delle vere entità fisiche (anzi sono l'assenza di elettroni in certi stati energetici), si può mostrare che hanno un comportamento molto simile a quello di particelle cariche positivamente, e sono usualmente trattati come se fossero vere particelle cariche. Per fare un paragone, le lacune sono le bollicine di gas all'interno di un liquido come l'acqua minerale. Anziché analizzare il moto di tutta la massa d'acqua è più semplice seguire il moto delle bollicine di gas.
+
+
+=== Livelli energetici nei solidi ===
+La principale caratteristica dei solidi è la distribuzione di livelli energetici possibili in bande di energia separate da intervalli proibiti (detti bande proibite, o band gap dall'inglese).
+Nei conduttori di solito l'ultima banda (detta banda di conduzione) non è completamente riempita e quindi esistono livelli non occupati contigui in energia a quelli occupati. Gli elettroni possono accedere a questi livelli vuoti ricevendo energia da un campo elettrico esterno; questo comporta una densità di corrente concorde al campo. Gli elettroni delle bande inferiori, che sono tutte piene, non acquistano energia e non influiscono nel processo di conduzione. L'ultima banda piena si chiama banda di valenza.
+Questa configurazione non è l'unica che permetta di avere proprietà di conduzione. Può accadere che l'ultima banda completamente piena si sovrapponga a quella successiva vuota. Questo tipo di struttura a bande si trova, ad esempio, nel magnesio, e spiega perché questo ha una buona conducibilità elettrica pur avendo la banda di conduzione vuota come gli isolanti. Nel magnesio la banda di conduzione (formata dagli orbitali 3p) è vuota ma non c'è una banda proibita con la banda di valenza piena (dagli orbitali 3s) perché questa sale a coprire parte della banda 3p.
+Non sono conduttori i solidi refrattari in cui l'ultima banda contenente elettroni è completamente piena e non è sovrapposta alla banda successiva. Questa è la configurazione che caratterizza gli isolanti e i semiconduttori. L'ampiezza della zona proibita è definita banda proibita, o energia di gap, o con l'espressione inglese band gap. Quando vengono messi a contatto due o più materiali semiconduttori si ottiene un andamento spaziale della banda proibita necessario in applicazioni tecnologiche come i transistors e moltissime altre. Il procedimento ed il controllo dell'andamento spaziale del band-gap viene chiamato band-gap engineering.
+Con questo parametro è possibile definire i semiconduttori come quei solidi la cui banda proibita è abbastanza piccola da far sì che ad una temperatura inferiore al punto di fusione si possa osservare statisticamente una conduzione non trascurabile (comunque inferiore a quella dei conduttori, ma superiore a quella degli isolanti) dovuta al passaggio dei portatori di carica dalla banda di valenza (piena) a quella di conduzione per eccitazione termica.
+
+
+=== Calcolo della corrente nei semiconduttori ===
+La corrente nei semiconduttori può essere dovuta sia all'azione di un campo elettrico esterno sia alla presenza di un gradiente di concentrazione dei portatori di carica. Il primo tipo di corrente è nota come corrente di deriva (conosciuta anche come corrente di trascinamento o di drift) che nel caso dei semiconduttori si esprime in funzione della mobilità dei portatori di carica, la seconda segue le leggi di Fick e nel caso particolare unidimensionale è pari rispettivamente per le lacune e per gli elettroni a:
+
+  
+    
+      
+        −
+        q
+        
+          D
+          
+            p
+          
+        
+        ⋅
+        
+          
+            
+              d
+              p
+            
+            
+              d
+              x
+            
+          
+        
+      
+    
+    {\displaystyle -qD_{p}\cdot {\frac {dp}{dx}}}
+  
+
+  
+    
+      
+        q
+        
+          D
+          
+            n
+          
+        
+        ⋅
+        
+          
+            
+              d
+              n
+            
+            
+              d
+              x
+            
+          
+        
+      
+    
+    {\displaystyle qD_{n}\cdot {\frac {dn}{dx}}}
+  
+
+dove q è la carica dei portatori, 
+  
+    
+      
+        
+          D
+          
+            p
+          
+        
+        ,
+        
+          D
+          
+            n
+          
+        
+      
+    
+    {\displaystyle D_{p},D_{n}}
+  
+ sono le costanti di diffusione dei portatori, n e p la densità degli elettroni e delle lacune.
+La corrente totale in un semiconduttore sarà allora la somma di queste due correnti ed è descritta dall'Equazione di Boltzmann, separando la corrente delle lacune e degli elettroni:
+
+  
+    
+      
+        
+          J
+          
+            p
+          
+        
+        =
+        q
+        
+          μ
+          
+            p
+          
+        
+        ⋅
+        p
+        E
+        −
+        q
+        
+          D
+          
+            p
+          
+        
+        ⋅
+        
+          
+            
+              d
+              p
+            
+            
+              d
+              x
+            
+          
+        
+      
+    
+    {\displaystyle J_{p}=q\mu _{p}\cdot pE-qD_{p}\cdot {\frac {dp}{dx}}}
+  
+
+  
+    
+      
+        
+          J
+          
+            n
+          
+        
+        =
+        q
+        
+          μ
+          
+            n
+          
+        
+        ⋅
+        n
+        E
+        +
+        q
+        
+          D
+          
+            n
+          
+        
+        ⋅
+        
+          
+            
+              d
+              n
+            
+            
+              d
+              x
+            
+          
+        
+      
+    
+    {\displaystyle J_{n}=q\mu _{n}\cdot nE+qD_{n}\cdot {\frac {dn}{dx}}}
+  
+
+dove 
+  
+    
+      
+        
+          μ
+          
+            p
+          
+        
+        ,
+        
+          μ
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mu _{p},\mu _{n}}
+  
+ sono le mobilità dei portatori di carica.
+I coefficienti 
+  
+    
+      
+        D
+        ,
+        μ
+      
+    
+    {\displaystyle D,\mu }
+  
+ sono legati tra di loro dalle cosiddette relazioni di Einstein:
+
+  
+    
+      
+        
+          D
+          
+            n
+          
+        
+        =
+        
+          
+            
+              k
+              T
+            
+            q
+          
+        
+        
+          μ
+          
+            n
+          
+        
+         
+      
+    
+    {\displaystyle D_{n}={\frac {kT}{q}}\mu _{n}\ }
+  
+
+  
+    
+      
+        
+          D
+          
+            p
+          
+        
+        =
+        
+          
+            
+              k
+              T
+            
+            q
+          
+        
+        
+          μ
+          
+            p
+          
+        
+         
+      
+    
+    {\displaystyle D_{p}={\frac {kT}{q}}\mu _{p}\ }
+  
+
+dove 
+  
+    
+      
+        k
+         
+      
+    
+    {\displaystyle k\ }
+  
+ è la costante di Boltzmann e T la temperatura assoluta in kelvin.
+
+
+=== Purezza e perfezione dei materiali semiconduttori ===
+I semiconduttori con proprietà elettroniche predicibili e affidabili sono difficili da produrre in serie a causa della necessaria purezza chimica, e la perfezione della struttura cristallina, che sono necessarie per realizzare dispositivi. La presenza di impurità, anche in concentrazioni molto basse, può causare grandi effetti sulle proprietà del materiale; per questo, il livello di purezza chimica necessario è molto elevato. Le tecniche per ottenere tale purezza includono il raffinamento a zone, nel quale parte del cristallo solido viene fuso. Le impurità tendono a concentrarsi nella regione fusa, rendendo più puro il materiale solido. È anche richiesto un elevato grado di perfezione del reticolo cristallino, poiché i difetti nella struttura cristallina, come le dislocazioni, vacanze reticolari ed errori di impaccamento, creano livelli di energia all'interno del gap tra le bande, interferendo con le proprietà elettroniche del materiale. Difetti come questi sono una delle cause principali che portano, durante il processo di produzione, a un dispositivo inutilizzabile. Più è grande il cristallo, più è difficile ottenere le necessarie purezza e perfezione; i processi di produzione in serie usano cristalli del diametro di otto pollici (circa 20 centimetri) che sono fatti crescere in forma cilindrica (processo Czochralski), e poi affettati in fette dette wafer.
+
+
+=== Drogaggio ===
+
+Maggiori motivi per cui i semiconduttori sono utili nell'elettronica è che le loro proprietà elettroniche possono essere fortemente modificate in modo altamente controllato aggiungendo piccole quantità di impurità, chiamate droganti, le quali sono classificabili in due tipi: quelle che forniscono un eccesso di elettroni alla banda di conduzione, e quelle che forniscono un eccesso di lacune alla banda di valenza. Un semiconduttore con eccesso di elettroni è detto semiconduttore tipo n, mentre un semiconduttore con un eccesso di lacune è detto semiconduttore tipo p.
+I droganti più comuni di tipo n per il silicio sono il fosforo e l'arsenico. Da notare che entrambi questi elementi sono nel Gruppo V_A della tavola periodica, e il silicio è nel Gruppo IV_A. Quando il silicio è drogato con atomi di arsenico o di fosforo, gli atomi di questi droganti sostituiscono atomi di silicio nel reticolo cristallino del semiconduttore, ma poiché hanno un elettrone esterno in più del silicio, essi tendono a fornire questo elettrone alla banda di conduzione. Il drogante di tipo p di gran lunga più usato per il silicio è l'elemento del Gruppo III_A boro, il quale ha un elettrone esterno in meno del silicio e così tende a prendere un elettrone dalla banda di valenza, e quindi a creare una lacuna.
+Un drogaggio pesante del semiconduttore può aumentare la sua conduttività di un fattore di oltre un miliardo. Nei moderni circuiti integrati, per esempio, il silicio policristallino pesantemente drogato è spesso usato al posto dei metalli.
+
+
+==== Drogaggio tipo n ====
+Lo scopo del drogaggio di tipo n è produrre un eccesso di elettroni liberi nel materiale. Per comprendere come si effettua il drogaggio di tipo n, consideriamo il caso del silicio (Si). Gli atomi di Si hanno quattro elettroni di valenza, ciascuno dei quali è legato in modo covalente a uno dei quattro atomi adiacenti di Si. Se un atomo con cinque elettroni di valenza, come uno del Gruppo 5 della tavola periodica (e.g. fosforo (P), arsenico (As), o antimonio (Sb)), è incorporato nel reticolo cristallino al posto di un atomo di Si, allora quell'atomo avrà quattro legami covalenti e un elettrone libero. Questo elettrone aggiuntivo è solo debolmente legato all'atomo e può essere facilmente portato nella banda di conduzione. Già alle normali temperature praticamente tutti questi elettroni sono in banda di conduzione. Poiché l'eccitazione di questi elettroni non crea lacune in banda di valenza, il numero di elettroni in questi materiali è superiore a quello delle lacune. In questo caso gli elettroni sono i portatori di carica maggioritari e le lacune i portatori di carica minoritari. Poiché gli atomi a cinque elettroni esterni hanno un elettrone da donare, tali atomi si indicano col nome di atomi donatori o donori.
+
+
+==== Drogaggio tipo p ====
+Lo scopo del drogaggio di tipo p è produrre un eccesso di lacune nel materiale. Nel caso del silicio, un atomo trivalente, come il boro, sostituisce un atomo di Si nel reticolo cristallino. Il risultato è che un elettrone del silicio manca da uno dei possibili quattro legami covalenti. In tal modo l'atomo drogante (il boro) può accettare un elettrone dalla banda di valenza per completare il quarto legame: questo genera la formazione di una lacuna. Questi droganti sono chiamati accettori. Quando un numero sufficientemente grande di accettori viene aggiunto, le lacune diventano molto più numerose degli elettroni liberi. Così, le lacune sono i portatori di carica maggioritari, mentre gli elettroni sono i portatori di carica minoritari nei materiali tipo p. I diamanti blu (Tipo IIb), che contengono impurità di boro, sono un esempio di semiconduttore naturalmente drogato p.
+
+
+=== Giunzioni p-n ===
+
+Una giunzione p-n può essere creata drogando regioni vicine di un semiconduttore con droganti di tipo p e di tipo n. Se una tensione elettrica positiva viene applicata al lato di tipo p, i portatori di carica positivi, le lacune, maggioritari in questa regione sono spinti verso la giunzione. Ugualmente, i portatori di carica maggioritari nel lato n, gli elettroni, vengono attratti dalla tensione positiva e quindi sono attratti verso la giunzione. Poiché si ha una abbondanza di portatori di carica presso la giunzione, la corrente può scorrere attraverso la giunzione, sotto l'azione di una sorgente, come una batteria. Se invece la polarizzazione della tensione viene invertita, le lacune e gli elettroni vengono allontanati dalla giunzione, lasciando una regione di silicio quasi non conduttore che non consente il flusso di corrente. La giunzione p-n è la base del dispositivo elettronico chiamato diodo, che consente il flusso di corrente solo in una direzione del dispositivo.
+Due giunzioni p-n molto ravvicinate tra di loro formano invece il dispositivo a tre terminali transistor bipolare (che può essere o p-n-p o n-p-n).
+
+
+== Tipologie di semiconduttori ==
+
+
+=== Semiconduttori intrinseci ed estrinseci ===
+Un semiconduttore intrinseco è un semiconduttore sufficientemente puro per cui le impurità non influiscono apprezzabilmente sul suo comportamento elettrico. In questo caso, tutti i portatori di carica sono dovuti all'eccitazione termica o ottica degli elettroni, che dalla banda di valenza completa passano alla banda di conduzione, vuota. In questo modo in un semiconduttore intrinseco c'è lo stesso numero di elettroni e lacune. Gli elettroni e le lacune, se sottoposti a un campo elettrico, si muovono in direzioni opposte, ma contribuiscono alla corrente con lo stesso segno, avendo carica elettrica opposta. La corrente dovuta alle lacune e quella dovuta agli elettroni non è tuttavia necessariamente uguale in un semiconduttore intrinseco, poiché gli elettroni e le lacune hanno diversa mobilità elettrica.
+La concentrazione di portatori di carica è fortemente dipendente dalla temperatura. Alle basse temperature, la banda di valenza è completamente piena, rendendo il materiale un isolante (vedi conduzione elettrica per approfondimenti). L'aumento della temperatura porta a un aumento del numero di portatori di carica e a un corrispondente aumento della conduttività. Questo principio è usato nei termistori. Questo comportamento contrasta nettamente con quello della maggior parte dei metalli, che tendono a essere meno conduttivi alle alte temperature a causa dell'aumento dello scattering dei fononi.
+Un semiconduttore estrinseco è un semiconduttore che è stato drogato con impurità per modificare il numero e il tipo dei portatori liberi di carica.
+
+
+==== I Semiconduttori intrinseci ====
+Nel silicio e nel germanio l'energia di gap indiretta a temperatura ambiente (300 K equivalenti a 27 °C) è di 1.12 eV per il silicio, e 0.66 eV per il germanio; allo zero assoluto (T = 0 K, equivalenti a -273,15 °C) il gap è 1.17 eV per il silicio e 0.74 eV per il germanio, e questi solidi si comportano come isolanti. Quando la temperatura aumenta non è trascurabile la probabilità che gli ultimi elettroni, presenti nella banda di valenza, possano passare alla banda di conduzione, per eccitazione termica. Gli elettroni passati alla banda di conduzione sotto l'azione di un campo elettrico esterno danno luogo a una densità di corrente 
+  
+    
+      
+        
+          j
+          
+            e
+          
+        
+      
+    
+    {\displaystyle j_{e}}
+  
+. Ogni elettrone che passa dalla banda di valenza alla banda di conduzione, lascia un livello vuoto definito lacuna.
+La presenza delle lacune rende disponibili altri livelli che possono essere occupati da altri elettroni della banda di valenza e quindi si può avere un moto ordinato di cariche, sotto l'azione di un campo elettrico anche nella banda di valenza. Si parla quindi di una densità di corrente nella banda di valenza 
+  
+    
+      
+        
+          j
+          
+            h
+          
+        
+      
+    
+    {\displaystyle j_{h}}
+  
+. In un semiconduttore in presenza di un campo elettrico esterno abbiamo un flusso di carica negativa dovuto agli elettroni nella banda di conduzione, sia rispetto alla nuvola stazionaria degli elettroni di valenza, un flusso di carica positiva dovuto alle lacune nella banda di valenza. Chiamando 
+  
+    
+      
+        
+          n
+          
+            e
+          
+        
+      
+    
+    {\displaystyle n_{e}}
+  
+,
+  
+    
+      
+        
+          n
+          
+            h
+          
+        
+      
+    
+    {\displaystyle n_{h}}
+  
+ le concentrazioni degli elettroni e delle lacune e 
+  
+    
+      
+        
+          v
+          
+            e
+          
+        
+      
+    
+    {\displaystyle v_{e}}
+  
+, 
+  
+    
+      
+        
+          v
+          
+            h
+          
+        
+      
+    
+    {\displaystyle v_{h}}
+  
+ le velocità di deriva, una opposta e una concorde al campo elettrico esterno, la densità di corrente totale è data da
+
+  
+    
+      
+        
+          
+            
+              j
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                j
+                
+                  e
+                
+              
+              →
+            
+          
+        
+        +
+        
+          
+            
+              
+                j
+                
+                  h
+                
+              
+              →
+            
+          
+        
+        =
+        (
+        −
+        e
+        )
+        
+          n
+          
+            e
+          
+        
+        
+          
+            
+              
+                v
+                
+                  e
+                
+              
+              →
+            
+          
+        
+        +
+        e
+        
+          n
+          
+            h
+          
+        
+        
+          
+            
+              
+                v
+                
+                  h
+                
+              
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {j}}={\vec {j_{e}}}+{\vec {j_{h}}}=(-e)n_{e}{\vec {v_{e}}}+en_{h}{\vec {v_{h}}}}
+  
+
+e considerando le mobilità (le mobilità sono diverse tra di loro perché descrivono due condizioni fisiche diverse)
+
+  
+    
+      
+        
+          μ
+          
+            e
+          
+        
+        =
+        
+          
+            
+              v
+              
+                e
+              
+            
+            E
+          
+        
+        
+        ;
+        
+        
+          μ
+          
+            h
+          
+        
+        =
+        
+          
+            
+              v
+              
+                h
+              
+            
+            E
+          
+        
+      
+    
+    {\displaystyle \mu _{e}={\frac {v_{e}}{E}}\,;\qquad \mu _{h}={\frac {v_{h}}{E}}}
+  
+
+abbiamo che
+
+  
+    
+      
+        
+          
+            
+              j
+              →
+            
+          
+        
+        =
+        e
+        (
+        
+          n
+          
+            e
+          
+        
+        
+          μ
+          
+            e
+          
+        
+        +
+        
+          n
+          
+            h
+          
+        
+        
+          μ
+          
+            h
+          
+        
+        )
+        
+          
+            
+              E
+              →
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\vec {j}} =e(n_{e}\mu _{e}+n_{h}\mu _{h}){\vec {E}}}
+  
+
+Nei semiconduttori descritti sin qui, le cariche sono quelle fornite esclusivamente dagli atomi del semiconduttore stesso.
+In questa condizione 
+  
+    
+      
+        
+          
+            n
+            
+              e
+            
+          
+          =
+          
+            n
+            
+              h
+            
+          
+          =
+          
+            n
+            
+              i
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {n_{e}=n_{h}=n_{i}} }
+  
+; questa uguaglianza definisce i semiconduttori intrinseci per i quali abbiamo che
+
+  
+    
+      
+        
+          
+            
+              j
+              →
+            
+          
+        
+        =
+        e
+        
+          n
+          
+            i
+          
+        
+        (
+        
+          μ
+          
+            e
+          
+        
+        +
+        
+          μ
+          
+            h
+          
+        
+        )
+        
+          
+            
+              E
+              →
+            
+          
+        
+        =
+        
+          σ
+          
+            i
+          
+        
+        
+          
+            
+              E
+              →
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\vec {j}} =en_{i}(\mu _{e}+\mu _{h}){\vec {E}}=\sigma _{i}{\vec {E}}}
+  
+
+dove 
+  
+    
+      
+        
+          σ
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \sigma _{i}}
+  
+ si chiama conduttività del materiale.
+La concentrazione 
+  
+    
+      
+        
+          n
+          
+            i
+          
+        
+      
+    
+    {\displaystyle n_{i}}
+  
+ dei portatori di carica dipende dalla temperatura secondo la funzione 
+  
+    
+      
+        
+          n
+          
+            i
+          
+        
+        =
+        C
+        (
+        
+          
+            
+              k
+              
+                
+                  B
+                
+              
+            
+          
+        
+        T
+        
+          )
+          
+            
+              3
+              2
+            
+          
+        
+        
+          e
+          
+            
+              
+                −
+                
+                  E
+                  
+                    g
+                  
+                
+              
+              
+                2
+                
+                  
+                    
+                      k
+                      
+                        
+                          B
+                        
+                      
+                    
+                  
+                
+                T
+              
+            
+          
+        
+      
+    
+    {\displaystyle n_{i}=C({\mathit {k_{\mathbf {B} }}}T)^{\frac {3}{2}}e^{\frac {-E_{g}}{2{\mathit {k_{\mathbf {B} }}}T}}}
+  
+ dove C è una costante che dipende dal materiale e 
+  
+    
+      
+        
+          
+            
+              k
+              
+                
+                  B
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\mathit {k_{\mathbf {B} }}}}
+  
+ è la costante di Boltzmann. Questa formula è valida quando 
+  
+    
+      
+        
+          E
+          
+            g
+          
+        
+        ≫
+        
+          
+            
+              k
+              
+                
+                  B
+                
+              
+            
+          
+        
+        T
+      
+    
+    {\displaystyle E_{g}\gg {\mathit {k_{\mathbf {B} }}}T}
+  
+. Per materiali solidi questa condizione è sempre verificata.
+
+
+==== I Semiconduttori estrinseci ====
+I semiconduttori estrinseci o drogati sono quei semiconduttori ai quali vengono aggiunte impurità tramite il processo di drogaggio. Piccole percentuali di atomi diversi aumentano le proprietà di conduzione del semiconduttore: per quanto detto sui legami dei semiconduttori intrinseci, sappiamo che questi hanno legami tetravalenti cioè ogni atomo è legato ad altri quattro atomi dello stesso tipo nel reticolo cristallino, ciò è dovuto all'esistenza di quattro elettroni di valenza degli atomi (silicio, germanio) del semiconduttore. Aggiungendo atomi pentavalenti cioè che hanno cinque elettroni di valenza entro il conduttore (fosforo, arsenico, antimonio) si ha un aumento di elettroni di conduzione: questo tipo di drogaggio viene chiamato drogaggio di tipo n.
+Se invece aggiungiamo atomi trivalenti al semiconduttore cioè atomi che hanno tre elettroni di valenza nei livelli energetici più esterni (boro, gallio, indio), questi creano delle cosiddette trappole per gli elettroni, cioè creano legami che non sono stabili entro il conduttore e attraggono gli elettroni liberi in modo da stabilizzarsi. A tutti gli effetti, l'assenza di elettroni all'interno del reticolo cristallino di un semiconduttore può essere considerata come una presenza di una carica positiva detta lacuna che viaggia entro il conduttore esattamente come l'elettrone (ovviamente tenendo conto della carica). Questo tipo di drogaggio viene chiamato drogaggio di tipo p.
+Statisticamente un semiconduttore drogato tipo n o tipo p segue la legge di azione di massa, cioè in un semiconduttore estrinseco:
+
+  
+    
+      
+        n
+        ⋅
+        p
+        =
+        
+          n
+          
+            i
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n\cdot p=n_{i}^{2}}
+  
+
+cioè il prodotto delle concentrazioni (numero elettroni o numero lacune per metro cubo) rimane costante.
+Siano 
+  
+    
+      
+        
+          N
+          
+            D
+          
+        
+        ,
+        
+          N
+          
+            A
+          
+        
+      
+    
+    {\displaystyle N_{D},N_{A}}
+  
+ le concentrazioni di impurezze rispettivamente degli atomi pentavalenti e trivalenti: esse sono il numero di atomi droganti per metro cubo immessi nel semiconduttore, D sta a significare che gli atomi sono donatori cioè forniscono elettroni, A che sono accettori cioè forniscono lacune. In un semiconduttore tipo n, 
+  
+    
+      
+        
+          N
+          
+            A
+          
+        
+        =
+        0
+        ,
+        n
+        ≫
+        p
+      
+    
+    {\displaystyle N_{A}=0,n\gg p}
+  
+:
+
+  
+    
+      
+        n
+        ≈
+        
+          N
+          
+            D
+          
+        
+      
+    
+    {\displaystyle n\approx N_{D}}
+  
+
+cioè il numero di elettroni di conduzione in un semiconduttore tipo n è circa uguale a quello delle impurità pentavalenti presenti (o meglio, la concentrazione di elettroni liberi è approssimativamente uguale alla densità di atomi donatori). Dalla legge di azione di massa deriva che:
+
+  
+    
+      
+        p
+        ≈
+        
+          
+            
+              n
+              
+                i
+              
+              
+                2
+              
+            
+            
+              N
+              
+                D
+              
+            
+          
+        
+      
+    
+    {\displaystyle p\approx {\frac {n_{i}^{2}}{N_{D}}}}
+  
+.
+Ovviamente relazioni analoghe valgono anche per i semiconduttori drogati tipo p.
+
+  
+    
+      
+        n
+        ≈
+        
+          
+            
+              n
+              
+                i
+              
+              
+                2
+              
+            
+            
+              N
+              
+                A
+              
+            
+          
+        
+      
+    
+    {\displaystyle n\approx {\frac {n_{i}^{2}}{N_{A}}}}
+  
+.
+
+
+== Materiali principali utilizzati ==
+
+
+== Note ==
+
+
+== Bibliografia ==
+ William E. Hafford, Eugene W. McWhorter et al., Comprendere l'elettronica a stato solido, Jackson Italiana Editrice, 1979.
+ G. Bohle e E. Hofmeister, Dal transistor al microprocessore, Gruppo Editoriale Jackson, 1983, ISBN 88-7056-137-2.
+ Semiconduttori, collana Libri di base elettronica, Milano, Gruppo Editoriale Jackson, 1988, ISBN 88-256-0060-7.
+
+
+== Voci correlate ==
+
+
+== Altri progetti ==
+
+ Wikizionario contiene il lemma di dizionario «semiconduttore»
+ Wikimedia Commons contiene immagini o altri file sul semiconduttore
+
+
+== Collegamenti esterni ==
+
+ semiconduttore, su Treccani.it – Enciclopedie on line, Istituto dell'Enciclopedia Italiana. 
+ Franco Bassani e Federico Capasso, Semiconduttori, in Enciclopedia del Novecento, Istituto dell'Enciclopedia Italiana, 1975-2004. 
+(EN) semiconductor, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Opere riguardanti Semiconduttore, su Open Library, Internet Archive. 
+(EN) Electrical Engineering Training Series Serie di articoli sui semiconduttori e i transistori.
+(EN) Semiconductor Technology Informazioni riguardo all'industria dei semiconduttori.
+(EN) NSM-Archive Proprietà fisiche dei semiconduttori (come Si, GaAs e altri), inclusa la struttura delle bande e le proprietà meccaniche, elettriche, termiche e ottiche.
+(EN) Principles of Semiconductor Devices, su ece-www.colorado.edu.
+(EN) Britney Spears Guide to Semiconductor Physics, su britneyspears.ac.
+(EN) Semiconductor resource launch page, su semi1source.com.
+(EN) Semiconductor glossary, su semiconductorglossary.com.

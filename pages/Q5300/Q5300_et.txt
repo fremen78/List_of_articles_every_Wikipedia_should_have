@@ -1,0 +1,131 @@
+Keskseade ehk keskprotsessor ehk kesktöötlusseade (inglise keeles central processing unit, CPU), lühidalt protsessor, on arvuti või programmeeritava kontrolleri riistvara, mis täidab programmide masinakeeles antud juhiseid ning on peamine vahend ettenähtud aritmeetika-, loogika- ja sisend-/väljundoperatsioonide teostamiseks.
+Protsessor on integraallülituse kujul kasutusel alates 1960. aastatest. Sellest ajast on protsessori ehitus, arhitektuur ja teostus korduvalt muutunud, kuid põhifunktsioonid on jäänud samaks.
+
+
+== Protsessori ehitus ==
+Protsessori põhiosad on 
+
+aritmeetika-loogikaplokk (arithmetic and logic unit, ALU) – sooritab kahendsüsteemis aritmeetika- ja loogikatehteid;
+juhtplokk – täidab oma käsuregistreis sisalduvaid masinakäske, juhtides andmevooge protsessori ja mälu ning keskseadme muude üksuste vahel, samuti suhtlust välisseadmetega (keskseadmele väljastpoolt külgeühendatud seadmetega);
+mäluregistrid.
+
+
+=== Protsessorite arhitektuur ===
+Protsessoreid võib jagada arhitektuuri järgi nt Harvardi arhitektuuriga või Von Neumanni arhitektuuriga ja täpsemalt näiteks protsessoriperedesse. Protsessoripered on näiteks x86, SPARC, PowerPC, MIPS, ARM jpt. Protsessoriperede erinevused on alati piisavalt suured selleks, et samad masinkoodis programmid (tarkvara) ümber kompileerimata erinevatel arhitektuuridel või protsessoriperedel ei toimi. Tihtipeale pole abi lihtsast ümberseadistusest või kompileerimisest: programme tuleb vastava operatsioonisüsteemi, protsessori arhitektuuri või -pere tarbeks spetsiaalselt kohandada.
+Teine, märksa selgem, tunnus arhitektuuri juures on protsessori registrite suurus. Kui räägitakse 8-, 16-, 32- jne bitistest protsessoritest, siis peetakse silmas protsessori registrite suurust. Registrite suurus määrab, milliste (kui suurte) arvudega suudab protsessor kiireid arvutusi teha. Reeglina on ka 16-bitine protsessor võimeline ka näiteks 32-bitiste arvudega arvutama, aga teeb seda tunduvalt aeglasemini kui 32-bitine protsessor. Ka 64-bitine protsessor suudab loomulikult 32-bitiste arvudega arvutada, kuid jällegi on see aeglasem kui 64-bitiste puhul.
+Loomulikult vajavad näiteks 32- ja 64-bitine protsessor ka just neile mõeldud emaplaati ja mälu.
+Kuid järjest arenev VLSI disain võimaldab nendest probleemidest hoolimata protsessorite arvutusjõudlust üha kasvatada.
+
+
+=== Siinid ===
+ Pikemalt artiklis Siin
+Info edastamiseks on protsessor siinide kaudu mäluga ühendatud. Peamised siinid on andmesiin ja aadressisiin.
+Aadressisiinile pannakse mäluaadress, mille poole protsessor pöördub, andmesiinile pannakse saadetav info. Lisaks on väike ühebitine siin, mis määrab, kas andmeid loetakse mälust või kirjutatakse sinna.
+
+
+=== Registrid ===
+ Pikemalt artiklis Register (arvutitehnika)
+Registrid on protsessorisisesed mälupesad andmete ajutiseks paigutamiseks. Sinna paigutatakse andmed vahetult enne ja pärast tehteid nendega. Registrid võimaldavad vajadusel kiiret ligipääsu nendes olevatele andmetele. Vahel kasutatakse mingeid andmeid sagedamini kui teisi ning aja kokkuhoiuks hoitakse neid registris.
+Registrid jagunevad üldkasutatavateks ning eriregistriteks, mis hoolitsevad süsteemi toimimise eest. Näiteks x86 protsessoril on üldkasutatavad registrid AX, BX, CX ja DX ning süsteemseteks registriteks on käsuloendur, kus hoitakse järgmise käsu mäluaadressi. Lipuregister on osa, kus on kirjas mitmesugused süsteemsed olekusignaalid ehk lipud, teiste seas näiteks eelmise võrdlustehte tulemus.
+x86 protsessorite registreid:
+
+
+=== Käsudekooder ===
+ Pikemalt artiklis Dekooder#Käsudekooder
+Käsudekooder (Instruction decoder) jagab protsessorile toimimiseks ülesandeid juhtsignaalide abil. Ta "tõlgib" käsukoodide registrist saadud bitid protsessori igale osale arusaadavateks juhtsignaalideks.
+
+
+=== Juhtseade ===
+Protsessori tööd juhib protsessorisisene juhtseade. Selle ülesanne on organiseerida, et kõik toimuks korrapäraselt – käsu ja andmete lugemine mälust, käsu dekodeerimine, ülesande teostamine ja andmete tagastamine, mälu ülekirjutamine. Juhtseade juhib ja jälgib kõiki protsessori osi.
+
+
+=== Vahemälu ===
+ Pikemalt artiklis Vahemälu
+Protsessori vahemälu on protsessori kasutada olev kiire mälu, kuhu ajutiselt pannakse andmed, mis vajavad kiiret ligipääsu. Lihtsalt öeldes püütakse vahemällu tuua need andmed, mida protsessor ilmselt järgmisena vajab. Vahemällu toodud andmed ei osutu umbes 10% juhtudest siiski nendeks, mida protsessor järgmiseks vajab, kuid see ei muuda suurt midagi, sest sellisel juhul võtab vajalike andmete leidmine ja protsessorini toomine sama palju aega kui üldse ilma vahemäluta töötamisel. 90% juhtudest arvatakse siiski vajalikud andmed õigesti ära. Vahemälu kasutamine suurendab oluliselt protsessori tegevusega hõivatud (ehk kasulikku) tööaega, sest vahemälu töötab enamasti protsessoriga samal taktsagedusel ning sellega suhtlemine on seega oluliselt kiirem kui näiteks muutmäluga suhtlemine.
+Mida suurem on protsessori vahemälu mahutavus, seda kiiremini protsessor töötab (ei pea ootama mälust andmete saamist). Kuna vahemälu on SRAM-tüüpi mälu, siis on selle ehitus üsna keeruline ja protsessori vahemälu kasvades kasvab ka protsessoris transistoride hulk märkimisväärselt. See aga tingib protsessori tunduvalt suurema toitevajaduse, eralduva soojushulga kasvu jne.
+
+
+== Protsessorite iseloomulikud parameetrid ==
+ Pikemalt artiklis Arvutusjõudlus
+Kõige olulisem protsessori omadus on tema arvutusjõudlus ehk see, kui palju masinakäske ta suudab ühe ajaühiku jooksul täita. Seega määrab jõudluse (töökiiruse) taktsagedus ja takti kestel töödeldava sõna pikkus (bittide arv masinasõnas). Sõna pikkus ja vastavalt andmesiini laius oli esialgu 32 bitti, praegusel ajal on see 64 bitti. 
+
+
+=== Taktsagedus ===
+ Pikemalt artiklis Taktsagedus
+Taktsagedus on protsessori tööd koordineeriva ja sünkrooniva signaali – taktsignaali – sagedus. Taktsagedust antakse protsessorile taktgeneraatorist, mis paikneb emaplaadil protsessorist eraldi. Protsessorite taktsagedus jääb enamasti vahemikku 2–4 gigahertsi. Sellise sagedusega sünkroonitakse arvuti eri osade tööd. Arvuti kui terviku jõudlus sõltub peale protsessori töökiiruse loomulikult ka muudest komponentidest, eriti aga muutmälu mahust.
+Taktsageduse tõstmine üle 3 gigahertsi on seotud energiatarbe ja soojaeralduse järsu kasvuga, seepärast suurendatakse jõudlust sel teel, et keskseadmesse mahutatakse mitu protsessorilülitust, nn tuuma. Need võivad paikneda ühel kiibil või eraldi kiipidel. Näiteks Apple M1 protsessoril on kaheksa tuuma, mis töötavad muutuvatel taktsagedustel 0,6–3,2 GHz.
+
+
+=== MIPS ja FLOPS ===
+Märksa konkreetsemalt kui taktsagedus iseloomustab töökiirust see, kui palju operatsioone suudab protsessor ajaühikus täita. Kasutusel on kaks mõõtühikut:
+
+MIPS (Million Instructions Per Second, miljonit masinakäsku sekundis) kirjeldab, kui palju operatsioone täisarvudega suudab protsessor sekundis täita. Näiteks on Intel 4004 protsessor 0,06 MIPS ning Intel Pentium 4 protsessor kuni 11 000 MIPS.
+FLOPS (FLoating-point Operations Per Second, ujukomaarvutusi sekundis) erinevalt MIPS-ist väljendab protsessori jõudlust ujukomaarvutuste teostamisel.
+FLOPS-e kasutatakse rohkem teadusarvutite võrdlemisel (näiteks koostatakse nende põhjal superarvutite edetabeleid), harilike personaalarvutite puhul pole see näitaja nii oluline – märksa olulisem on nende puhul MIPS-ide hulk.
+
+
+=== CISC ja RISC ===
+On kaks suunda protsessorite masinakäskude kodeerimiseks:
+
+CISC (Complex Instruction Set Computer) – selline protsessor võib ühe käsu raames teha mitu mikrooperatsiooni. CISC protsessorile kirjutatud programmid on mahult väiksemad ning ühtlasi on neid masinkoodis ka suhteliselt lihtne kirjutada.
+RISC (Reduced Instruction Set Computer) – selline protsessor toimibki võimalikult lihtsate mikrooperatsioonidega. RISC protsessorile kirjutatud programmid vajavad rohkem mälu, sest kõik mikrooperatsioonid tuleb eraldi kirja panna. Ühtlasi on selliseid programme masinkoodis ka raskem kirjutada kui CISC-le.
+RISC tüübi protsessori jõudlus on suurem CISC tüüpi protsessorist. Arvutite algusajal ei olnud olemas veel kompilaatoreid, kõik programmid tuli kirjutada otse masinkoodi või assembleri abil ja just seetõttu oli lihtsam programme kirjutada programme CISC tüüpi protsessorile, mille puhul sai kasutada lihtsaid käske, mida oli samas palju, keerukate asjade tegemiseks. Tänapäeval on CISC ja RISC protsessorite piir ähmastunud, kuna nad on võtnud üle üksteise omadusi.
+
+
+== x86 protsessorite talitluslaadid ==
+
+
+=== Varasemate protsessoritega ühilduv talitluslaad ehk "Real Mode" ===
+Kõige esimesed protsessorid (Intel 8086, 80186 jne.) oskasid töötada ainult real mode'is. Praktiliselt tähendas see seda, et korraga sai käia ainult üks programm ja kui see kinni jooksis, siis tuli arvuti taaskäivitada. Peale selle sai arvuti kasutada just nii palju mälu kui arvutil tegelikult oli (tavaliselt 640 kB). Andmete tõrjumine saalealale polnud võimalik. Selle laadi tarvis kirjutati ohtralt tarkvara ja see on saanud oluliseks protsessorite edasises arengus. Uued protsessorid pidid olema paremate omadustega kuid samas võimaldama kasutada ka vanu programme.
+
+
+=== Kaitstud talitluslaad ===
+Alates mikroprotsessorist Intel 80286 oli võimalik personaalarvutitel töötada kahes töörežiimis: vanas ehk varasemate protsessoritega ühilduvas (Real Mode) ja uues "kaitstud" töörežiimis (Protected Mode).
+Sellistel mikroprotsessoritel sai korraga käitada mitut programmi (multitegumtöö). Sellist tööviisi toetasid varem suuremad arvutid (UNIXi laadsete operatsioonisüsteemidega).
+Kui mõni programmidest jäi tsüklisse ehk "jooksis kinni" siis jäi süsteem toimivaks ning ainult mõne programmi töö oli vaja lõpetada või programm taaskäivitada.
+Samuti sai programmidele jätta mulje, et arvutil on väga palju mälu – 1 GB.
+Mälu mida programm tegelikult kasutada sai, määras siiski ära reaalse mälu ja saaleala summa.
+Kaitstud töörežiimis (Protected Mode) tavarežiimi (Real Mode) jaoks kirjutatud programmide käivitamine väga keeruline. Ümberlülitamiseks kahe laadi vahel tuli arvutile teha taaskäivitus.
+Tuleb aga märkida, et see kas süsteem töötab kaitstud töörežiimis või mitte määrab ära mitte ainult protsessor (riistvara) vaid ka kasutatav operatsioonisüsteem (tarkvara).
+
+
+=== Virtuaalne talitluslaad ===
+Seda laadi hakkasid toetama 80386 protsessorid lisaks Real ja Protected Mode'ile. Virtual Real laadis osutus võimalikuks käivitada Real Mode'i tarvis kirjutatud programme, ja isegi mitut samaaegselt. Ümber lülitamiseks kahe laadi vahel ei olnud enam vaja taaskäivitust. Kõigi hilisemate protsessorite (Intel i486, Pentium) loomulikuks laadiks on peetud Protected Mode'i. Virtual Real Mode'i oskavad kasutada UNIX, Linux, Windows 95, NT, OS/2, seda ei oska kasutada DOS.
+
+
+=== Mittereaalne talitluslaad ===
+Tegemist on versiooniga Real Mode'ist, milles üks või rohkem andmesegmendi registreid sisaldab 32-bitiseid aadresse. Kuid selles laadis ei saa opereerida kõik x86 ja x86-64 tüüpi protsessorid. Seda kasutavad 386 ja hilisemad protsessorid. Aastatel 1990–1995 kasutasid Unreal Mode'i paljud DOS-i arvutimängud, kuna laad võimaldas DOS operatsioonisüsteemi kasutades hõivata suurema hulga mälust, kui Real Mode seda lubas. Protected Mode'i ei saanud kasutada, kuna DOS selles ei töötanud.
+
+
+=== Süsteemijuhtimislaad (SMM) ===
+Laad tuli esmakordselt kasutusele Intel i386SL protsessorites. See on opereerimislaad, mis tegeleb süsteemihaldustoimingutega, nagu mäluhälvete kõrvaldamine. Kasutatakse administratiivset tarkvara privilegeeritud kasutaja õigustega. Laad on kasutuses ka kõikides hilisemates x86 mikroprotsessorites.
+
+
+=== Pikkade sõnadega talitluslaad ===
+See laad võimaldab 64-bitistel rakendustel ja operatsioonisüsteemidel pääseda ligi 64-bitistele instruktsioonidele ja registritele. 32- ja 16-bitised Protected Mode'i programmid käivitatakse spetsiaalses ühildumiseks mõeldud all-laadis. Real Mode ja Virtual Mode seda laadi ei toeta.
+
+
+== Protsessoritootjaid ==
+AMD
+VIA Technologies
+Cyrix
+Intel
+Transmeta
+National Semiconductor
+
+
+== Ajalugu ==
+
+ENIAC ja teised sama tüüpi arvutid nõudsid erinevate ülesannete täitmiseks pidevat kaabelduse uuendamist. Seetõttu nimetati neid fikseeritavate programmidega arvutiteks. Et aga protsessoriks nimetatakse tarkvara ülesandeid täitvat seadet, jäävad esimesed päris protsessorid samasse aega "püsiprogramsete" arvutite kasutusevõtuga.
+Idee peale sellisest arvutist, millesse on ladustatud programme, tuli juba ENIACi loojatelt Presper Eckertil ja John William Mauchlyl, kuid sel ajal jäi idee ajapuuduse tõttu teostamata. Siiski oli enne neid sellise idee peale tulnud matemaatik John von Neumann, kes skitseeris 1945. aastal EDVACi: püsiprogramse arvuti. EDVAC pidi olema võimeline täitma teatud hulga erinevaid ülesanded, mida kombineerides sai luua programme. Eelis ENIACi ees oli aga see, et neid programme ei pidanud alati käsitsi seadistama, vaid need sai ladustada arvuti mällu. Tänu sellele sai programme lihtsamalt ka muuta, uuendades mälu sisu.
+Kuigi von Neumanni peetakse tänu EDVACi väljatöötamisele programmidega ladustatud arvutite loojaks, on siiski juba enne teda selliste ideede peale tuldud ning neid ka rakendatud. Näiteks Harvardi ülikoolis väljatöötatud elektromehaaniline arvuti Harvard Mark I, mis rakendas püsiprogramsuse ideed kasutades perfolinte. Peamine erinevus von Neumanni disaini ja Harvardi arhitektuuri vahel on see, et viimane eraldab protsessori tegutsemises juhised ja andmed, kui esimene kasutab mõlema jaoks sama mälu. Tänapäevased protsessorid on põhiliselt tehtud von Neumanni idee põhjal, kuid neil on ka Harvardi masinale omaseid tunnuseid.
+
+
+== Vaata ka ==
+protsessorituum
+
+
+== Välislingid ==
+http://heiki.tpt.edu.ee/eucip/protsessor.html
+http://triin.net/2004/09/29/Protsessor
+Kuutõrvaja protsessoritest

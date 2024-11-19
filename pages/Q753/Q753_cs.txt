@@ -1,0 +1,48 @@
+Kódování češtiny je libovolná reprezentace nějaké znakové sady, která obsahuje všechna písmena, číslice a další znaky používané v českých textech, číselným kódem.
+Čeština používá tolik znaků s diakritikou, že je pro ni prakticky nemožné vytvořit sedmibitové kódování založené na ASCII.
+ČSN 36 9103 vydaná v roce 1979 definovala 8bitový kódovaný soubor symbolů KOI-8čs pro češtinu a slovenštinu vycházející z mezinárodní normy ISO/IEC 646, která je založena na ASCII. Kódování primárně navržené pro sálové počítače řady JSEP bylo použito i v české lokalizaci operačního systému CP/M, jako kódování používané mikropočítačem SAPI-1 a v textovém procesoru Text602, ale v praxi se příliš nerozšířilo.
+Většího rozšíření dosáhly kódové sady vyvinuté firmami IBM, Microsoft a Apple, které ve snaze o minimalizaci počtu kódování ve svých operačních systémech vytvořily osmibitová kódování pro své operační systémy PC-DOS (MS-DOS), Windows a MacOS vždy pro celou skupinu východoevropských jazyků psaných latinkou. V rámci ISO/IEC 8859 bylo pro uvedené jazyky vytvořeno kódování ISO 8859-2, které se dočkalo uplatnění především na unixových operačních systémech. Kvůli značné těžkopádnosti používání kódových stránek v operačním systému MS-DOS bylo na počítačích kompatibilních s IBM PC velmi oblíbené kódování bratří Kamenických, nazývané také KEYBCS2.
+Okolo roku 1990 tak existovalo nejméně 6 různých osmibitových kódování pro češtinu. Neexistence jednotného kódování přinášela problémy s kompatibilitou a přenositelností textů, které zintenzívněly s nástupem elektronické pošty a internetových služeb, především WWW, a které mizejí teprve s přechodem na jednotné kódování ISO 10646/Unicode.
+
+
+== Osmibitová kódování češtiny ==
+Kódování češtiny na počítačích se musí vypořádat s faktem, že čeština s výjimkou spřežkového zápisu písmene ch používá diakritický pravopis a základní latinskou abecedu rozšiřuje o 15 malých a 15 velkých písmen s diakritikou (á, č, ď, é, ě, í, ň, ó, ř, š, ť, ú, ů, ý, ž, Á, Č, Ď, É, Ě, Í, Ň, Ó, Ř, Š, Ť, Ú, Ů, Ý, Ž), což znemožňuje vytvoření sedmibitového kódování založeného na kódování ASCII. V době vytváření sedmi a osmibitových kódování existoval společný česko-slovenský stát, proto bylo žádoucí vytvořit společnou znakovou sadu pro češtinu a slovenštinu. Pro zápis slovenštiny se používá abeceda rozšířená o 17 malých a 17 velkých písmen s diakritikou a složená písmena dz, dž a ch. Spolu se 2 malými a 2 velkými německými písmeny (ö, ü, Ö, Ü), která se často používají pro zápis německých jmen, to představuje rozšíření abecedy o 22 malých a 22 velkých písmen. Dohromady je použito 96 písmen, což je více než počet tisknutelných znaků v kódování ASCII. KOI-8čs navíc obsahuje ještě francouzské à, À.
+Převážná většina kódování znaků vychází z kódu ASCII.
+Normy Mezinárodní organizace pro normalizaci ISO/IEC 646, Mezinárodního poradního sboru pro telefon a telegraf T.50 a Ecma International ECMA-6 popisují pravidla pro vytváření sedmibitových národních kódování na bázi kódu ASCII.
+Podle těchto pravidel lze některé v textech málo používané speciální znaky nahradit národními znaky a tak rozšířit základní latinskou abecedu nejvýše o 10 písmen. Kromě toho je možné několik speciálních znaků nahradit speciálními znaky používanými v příslušném jazyce. Toto řešení neposkytuje dostatek znaků potřebných pro češtinu. V jazycích, které tolik znaků nepotřebují (např. němčina), je sice vhodné pro běžné texty, ale kvůli nahrazení speciálních znaků (především hranatých a složených závorek, svislé čáry a zpětného lomítka) znaky s diakritikou mění zápis programů v nesrozumitelnou změť znaků. Řada programovacích jazyků umožňuje nahradit chybějící znaky posloupnostmi běžnějších znaků, vhodnějším řešením je používání osmibitových kódování, které přebírají prvních 128 kódů z ASCII, nebo používání Unicode.
+Pro češtinu a se používala celá řada osmibitových kódování; většího rozšíření dosáhla následující:
+
+Nedostatkem kódování KOI-8čs byla jeho použitelnost pouze pro češtinu a slovenštinu. Kódování ISO 8859-2 ISO mělo teoreticky před nástupem Unicode představovat preferované kódování pro jazyky střední a východní Evropy. Protože převládající operační systémy používaly jiná kódování (MS-DOS kódovou stránku CP852, Windows kódování Windows-1250 a MacOS kódování Mac CE), bylo ISO 8859-2 v praxi používáno pouze v unixových operačních systémech, v elektronické poště a v menší míře na WWW.
+Kódování Windows-1250 (někdy označované též CP1250) se v několika znacích liší od ISO 8859-2; naneštěstí pro češtinu se jedná o často používané znaky Š, š, Ž, ž a znaky Ť, ť a slovenské Ľ a ľ. Kódování CP-852 používané primárně v DOSu využívají dodnes česká Windows při zadávání speciálních znaků pomocí alt-kódů. Pokud se například po stisknutí klávesy Alt na numerické klávesnici vyťuká číslo 248 a pak se klávesa Alt pustí, objeví se na obrazovce znak ° pro stupeň, který má v tabulce znaků kód 248 (hexadecimálně F8).
+Kód Kamenických (též KEYBCS2) je neoficiální kódování používané v DOSu pro potřeby češtiny a slovenštiny. Rozšířilo se díky ovladači klávesnice a programu pro nastavení znaků na adaptérech EGA a VGA, které dodávalo JZD Slušovice s počítači PC, a také díky tomu, že zachovávalo všechny semigrafické znaky, které se používaly pro vytváření rámečků a tabulek v textových režimech. Navíc na počítačích, jejichž videoadaptéry neumožňovaly změnu znakové sady, se při použití tohoto kódování místo chybějících českých znaků zobrazovaly tvarově podobné znaky.
+
+
+== Kódy českých a slovenských znaků ==
+Následující tabulka shrnuje kódy českých a slovenských znaků s diakritikou v různých standardech:
+
+
+== Odkazy ==
+
+
+=== Reference ===
+
+
+=== Související články ===
+Česká abeceda
+Kódování znaků
+ASCII
+ISO 8859-2
+Windows-1250
+CP852
+KOI8-ČS
+Kódování Cork
+Unicode
+ISO/IEC 10646
+
+
+=== Externí odkazy ===
+Přehled kódování češtiny na webu www.cestina.cz
+Proč právě ISO-8859-2? na webu www.cestina.cz
+The Czech and Slovak Character Encoding Mess Explained Lukase Petrlika
+Převodníky kódování češtiny
+IANA Registry of Character Sets

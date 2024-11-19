@@ -1,0 +1,75 @@
+Ohjelmointikielet ovat formaaleja kieliä, joita ohjelmoijat käyttävät tietokoneen ohjelmointiin algoritmin toteuttamiseksi. Ohjelmointikielellä tehdystä lähdekoodista tuotetaan tietokoneen ymmärtämää konekielistä binääriä kääntäjällä tai tulkilla. Tietokoneen ymmärtämä binääri voidaan tehdä välikielen kautta.
+
+
+== Historia ==
+
+Ohjelmien kaltaisia ratkaisuja on käytetty muun muassa kutomakoneille ja automaattipianoille ennen digitaalisen tietokoneen kehittämistä.
+Ada Lovelace kirjoitti 1800-luvulla Charles Babbagen analyyttiselle koneelle algoritmin Bernoullin lukujen laskemiseen, jonka johdosta Lovelacea pidetään ensimmäisenä ohjelmoijana. Tärkeimpänä havaintona pidetään sitä, että Lovelace hahmotti ohjelman ja algoritmin abstraktin ilmaisun, jolloin kone voi tehdä lähes mitä vain.
+Ensimmäisenä ylemmän tason ohjelmointikielenä pidetään Konrad Zusen 1940-luvulla kehittämää Plankalkülia. Kielen kuvaus julkaistiin kuitenkin vasta 1972 ja ensimmäinen kääntäjä kielelle toteutettiin vasta 1998. Kieli oli korkean tason imperatiivinen kieli.
+Small-Scale Experimental Machine (SSEM) oli ensimmäinen tietokone, jossa ohjelma voitiin tallettaa tietokoneen muistiin ja ohjelmaa voitiin vaihtaa ilman fyysisiä muutoksia tietokoneeseen (tallennetun ohjelman tietokone).
+Ennen vuotta 1954 lähes kaikki ohjelmointi tehtiin matalan tason ohjelmointikielillä kuten konekielellä tai assemblyllä. 1950-luvun lopulla syntyneitä ohjelmointikieliä olivat ALGOL, COBOL ja Fortran.
+Suuri osa ohjelmoijien työstä liittyi tuon ajan tietokoneiden rajoitteisiin. Varhaiset automaattisen ohjelmoinnin menetelmät olivat kalliita käyttää koska ne hidastivat tietokonetta 5-10-kertaisesti. FORTRANin kehitykseen vaikutti myös, että myös ohjelmoijien kustannukset olivat suuret ja merkittävä osa ajasta kului debuggaukseen. Taloudelliset syyt olivat merkittävä tekijä FORTRAN-projektin rahoittamiseen. 
+Yleisesti tunnustetaan että ohjelmointikielet ovat kehittyneet kolmen selkeästi tunnistettavan sukupolven kautta: konekieli, assembly ja ylemmän tason proseduraaliset kielet kuten COBOL ja FORTRAN. Kielten sukupolvia ovat määrittäneet kasvava siirrettävyys, riippumattomuus laitteistoarkkitehtuurista ja käytön helppous.
+Ohjelmointikielet voidaan jakaa sukupolviin seuraavasti:
+
+Neljännen sukupolven kielistä on keskusteltu 1970-luvulta alkaen. Niin kutsuttujen "ei-proseduraalisten" kielten on sanottu olevan neljännen sukupolven kieliä, mutta myös assemblya voi sanoa "ei-proseduraaliseksi". Neljännen sukupolven kielien ilmestyminen on hyvin dokumentoitu, mutta ohjelmien monimuotoisuus on tehnyt vaikeaksi tarkan määrittelyn. Neljännen sukupolven kielet on kehitetty pragmaattisemmin kuin akateemiseen työhön perustuen.
+1960- ja 1970-luvuilla Simula oli merkittävä kieli, jonka ajatuksia Smalltalkissa kehitettiin edelleen. Tämä vaikutti olio-ohjelmointikielien kehitykseen.
+Viidennen sukupolven kieliä on toisinaan mainostettu, mutta laitteistoabstraktion kannalta neljäs sukupolvi on jo korkeimmalla tasolla. Eräät tahot esittävät että viides sukupolvi perustuu enemmän ohjelmalle annetun rajoitteiden määrittelyyn kuin ongelmanratkaisualgoritmin kehittämiseen: käyttökohteena pääasiassa tekoälytutkimus.
+
+
+== Yleistä ==
+Ohjelmointikielet ovat formaaleja kieliä, joita käytetään äärellisellä automaatilla (nykyään usein tietokone tai ohjelmoitava logiikka). Ohjelmointikielissä on rajallinen määrä sanoja ja sääntöjä, joita ohjelmoinnissa voi käyttää. Sääntöjen mukaisesti tulos on aina deterministinen. Sanojen ja sääntöjen ulkopuolella tulos on epädeterministinen (määrittelemätön) ja yleensä virhe.
+Ohjelmointikielet poikkeavat luonnollisista kielistä säännönmukaisuuden ja rajatun kieliopin suhteen.
+Ohjelmointikielet noudattavat abstraktioperiaatetta siinä suhteessa, että käyttäjän ei tarvitse tietää miten asia on toteutettu vaan ainoastaan sen rajapinta: komponentin toteutusta voidaan muuttaa ilman sen vaikuttamista tai ilmoittamista sen käyttäjälle. Periaatetta käytetään yleisesti ohjelmoinnissa toistuvien kaavojen vähentämiseen.
+Laskettavuusteorian mukaan Turing-täydelliset kielet ovat korvattavissa toisella. 
+Yleensä ohjelmointikielen sanotaan olevan Turing-täydellinen jos sitä voi käyttää simuloimaan Turingin konetta. Yleiskäyttöiset ohjelmointikielet ovat Turing-täydellisiä. Ensimmäisenä yleiskäyttöisenä ylemmän tason kielenä pidetään FORTRAN:ia.
+Tietylle sovellusalueelle erikoistuneet täsmäkielet eivät yleensä ole Turing-täydellisiä.
+Ohjelmointikielissä sallittu syntaksi on usein esitetty konteksivapaalla Backus–Naur-muodolla (BNF). Kontekstivapaata kielioppia kuten BNF voidaan käyttää kääntäjän kääntäjän kuten YACC-ohjelman kanssa. 
+Lähdekoodin kääntäminen ohjelmatiedostoksi ei vielä tarkoita että ohjelman suoritus toimii oikein.
+Muun muassa nollalla jakaminen on useissa kielissä syntaksin mukaan mahdollista, mutta tulosta ei voida määrittää.
+Verratessa ohjelmointikieliä kuten FORTRAN, LISP, APL ja SNOBOL ne eroavat ilmaisumuodossa, kontrollirakenteiden valinnassa ja käytössä, sekä tiedon esityksen tyypissä ja hallinnassa. Ohjelmointikielen semantiikka määrittää sen abstraktin konemallin ja kun algoritmi vastaa kielen mallia ohjelmointi on kätevää ja toteutus on tehokas; kun algoritmin vaatima prosessointi ei vastaa kielen mallia ohjelmointi on vaikeaa ja ohjelma on tehoton.
+Muita eroja ovat muun muassa tyyppijärjestelmän toteutus ja poikkeuksien käsittely. Muistikäsittely voi olla ohjelmoijan vastuulla tai kieli voi tukea automaattista roskienkeruuta.
+
+
+== Käyttö ==
+Ohjelmointikielillä asian voi ilmaista vain rajallisella määrällä toimintoja, esimerkiksi muuttujan saldo arvon vähentäminen 10:llä ilmaistaan: saldo -= 10; tai saldo = saldo-10;.
+Esimerkiksi C-kielessä vaihtoehtoja on runsaasti, sillä kokonaislukumuuttujan arvoon voi lisätä yhden useammalla eri tavalla:
+
+Erillisinä lauseina näiden merkitys on aivan sama, eli muuttujan arvon kasvattaminen yhdellä, mutta lausekkeen osana viimeisen rivin merkitys poikkeaa aiemmista. Kolme ylintä tapaa palauttavat lausekkeen osana ollessaan muuttujan uuden arvon, kun alin palauttaa vanhan, vaikka kasvattaakin itse muuttujan arvoa. Arvon lisäykseen oikotienä käytettävät käytettävät operaattorit kuten += ja ++ ovat peräisin tilanteesta, jossa jokainen ominaisuuden lisäys kasvatti kääntäjän tarvitsemaa muistimäärää mutta uusien ominaisuuksien käyttäminen pienensi sen tarvitsemaa muistia. B-kielen ja C-kielen kehityksen yhteydessä käytettävissä olevan tietokoneen rajallinen muistimäärä oli usein ongelma.
+
+
+== Ohjelmointikielten jaottelu ==
+
+Ohjelmointikielet voidaan jaotella eri ryhmiin kielen paradigman mukaan:
+
+Paradigma
+proseduraalinen ohjelmointi
+olio-ohjelmointi
+funktionaalinen ohjelmointi
+logiikkapohjainen ohjelmointi
+Ohjelmointikielet voivat toteuttaa useaa paradigmaa eli ovat moniparadigmaisia. Esimerkiksi C++ tukee eri paradigmoja (proseduraalinen-, olio- ja geneerinen ohjelmointi) ja on siten moniparadigmainen kieli.
+Ohjelmointikielet voidaan jakaa muun muassa algoritmisiin (FORTRAN, ALGOL), liiketoimintaan orientoituneisiin (COBOL) ja koulutukseen orientoituneisiin (BASIC, Logo).
+Ohjelmointikielet sanotaan voitavan jakaa deklaratiivisiin ja imperatiivisiin, joiden alalajeja ovat funktionaaliset, logiikkapohjaiset ja proseduraaliset ohjelmointikielet.
+
+
+== Ohjelmointikieliä ==
+
+Eräitä tunnetuimpia, yleisimpiä tai merkittävimpiä ohjelmointikieliä:
+
+
+== Katso myös ==
+Konekieli
+Laitteistokuvauskieli
+Merkintäkieli
+Tietokonetekniikan historia
+Chomskyn hierarkia
+
+
+== Lähteet ==
+
+
+== Aiheesta muualla ==
+
+Aikajana muutamista ohjelmointikielistä (englanniksi)
+What is Programming? (englanniksi)
+Koodikirja.fi

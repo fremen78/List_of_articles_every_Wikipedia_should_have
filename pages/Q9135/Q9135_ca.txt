@@ -1,0 +1,157 @@
+El sistema operatiu és el conjunt dels diferents programes que controlen el funcionament d'un ordinador. Les seves funcions, entre d'altres, consisteixen a gestionar les transferències d'informació internes, procurar la comunicació de l'ordinador amb els operadors, controlar l'execució dels programes amb la detecció dels errors, encadenar automàticament les feines, optimitzar els recursos (memòria, unitat aritmètica, etc.), carregar i descarregar automàticament els programes en funció de l'espai de memòria i dels diferents perifèrics.
+El sistema operatiu és el programari responsable de gestionar els recursos en un terminal (ja sigui un ordinador personal, un telèfon mòbil, etc.). El sistema operatiu actua com a amfitrió dels diversos programes d'aplicació que normalment corren sobre una màquina. Una de les principals funcions és gestionar els detalls de l'operació del maquinari, de manera que els diversos programes no se n'hagin d'ocupar, alleugerint i fent més fàcil així el procés de programació d'aquestes aplicacions. La gran majoria d'ordinadors, des de telèfons mòbil, ordinadors personals, videoconsoles fins a supercomputadors, usen algun tipus de sistema operatiu.
+Els sistemes operatius ofereixen diversos serveis als programes d'aplicació i als usuaris. Les aplicacions poden accedir a aquests serveis a través d'API (application programming interfaces o interfície de programació d'aplicacions) o a través de crides de sistema. En sistemes mòbils i d'escriptori, la GUI (interfície gràfica d'usuari) acostuma a formar part del sistema operatiu, mentre que en sistemes més grans i multiusuari, la GUI s'implementa com un programa a part del sistema operatiu. Per a les funcions del maquinari (hardware) com d'entrada (input) i sortida (output) i l'assignació de memòria, el sistema operatiu actua com a intermediari entre els programes d'aplicació i el maquinari de l'equip.
+Alguns dels sistemes operatius més comuns són Microsoft Windows, GNU/Linux, Mac OS X; també Solaris. Microsoft Windows és el que té amb diferència més quota de mercat en els segments d'ordinadors de sobretaula i portàtils; Microsoft Windows és una família de sistemes operatius propietaris més utilitzat en els ordinadors personals i és el més habitual dels sistemes operatius per a ordinadors personals, amb un 90% de la quota de mercat. Per altra banda, en el segment de servidors i sistemes encastats, l'ús està dividit entre diversos sistemes operatius. Per la llista completa de sistemes operatius vegeu llista de sistemes operatius.
+
+
+== Història dels sistemes operatius ==
+
+
+=== Dècada del 1950 ===
+A mitjans de la dècada dels 1950 va aparèixer el transistor i va permetre construir computadors molt més fiables, petits i ràpids. Els càlculs es duien a terme en l'ordre dels microsegons o, el que és mateix, els processadors amb prou feines arribaven a velocitats d'un MHz. Això va permetre que es poguessin fabricar computadors comercials. Degut a l'alt preu dels primers computadors els primers usuaris van ser les grans corporacions i les institucions com l'exèrcit, les universitats i els governs.
+Vistes les millores a nivell de maquinari, es va fer necessari desenvolupar els primers programes que permetessin rendibilitzar l'ús d'aquestes noves tecnologies. Van aparèixer els primers llenguatges de programació (FORTRAN, Pascal, Cobol…) i els primers programes per al desenvolupament d'aplicacions (carregadors, muntadors, compiladors, biblioteques de funcions matemàtiques i rutines per al controls de dispositius d'E/S). Aquests primers sistemes ja utilitzaven doncs les passes habituals del desenvolupament d'aplicacions amb llenguatges compilats (creació del codi font, compilació, execució i depuració). Aquests elements de programari normalment no es consideren part del Sistema Operatiu però si que podem considerar un sistema operatiu molt rudimentari el conjunt de rutines per treballar amb els dispositius d'entrada i sortida juntament amb les aplicacions que permetien carregar els programes a l'ordinador.
+
+
+=== Dècada del 1960 i 1970 ===
+En els anys 60 es van produir canvis notoris en diversos camps de la informàtica: la multiprogramació, les tecnologies del temps compartit i la del temps real, i multiprocessador.
+
+Multiprogramació. En un sistema multiprogramat la memòria principal alberga a més d'un programa d'usuari. La CPU executa instruccions d'un programa, quan el que es troba en execució realitza una operació d'E/S, en lloc d'esperar que acabi l'operació d'E/S, es passa a executar un altre programa. D'aquesta forma és possible, tenint emmagatzemat un conjunt adequat de tasques en cada moment, utilitzar de manera òptima els recursos disponibles.
+Temps compartit. En aquests sistemes els programes dels diferents usuaris resideixen en la memòria. En realitzar una operació d'E/S els programes cedeixen la CPU a un altre programa, igual que en la multiprogramació. Però, a diferència d'aquesta, quan un programa fa un cert temps que s'està executant el sistema operatiu el deté perquè s'executi una altra aplicació.
+Temps real. Aquests sistemes s'utilitzen en entorns on s'han d'acceptar i processar en temps molt breus un gran nombre de successos, la majoria externs a l'ordinador. Si el sistema no respecta les restriccions de temps en què les operacions han de lliurar el seu resultat es diu que ha fallat. El temps de resposta al seu torn ha de servir per resoldre el problema o fet plantejat. El processament d'arxius es fa d'una forma contínua, ja que es processa el fitxer abans que entre el següent, els seus primers usos van ser i continuen sent en telecomunicacions.
+Multiprocessador. En els monoprocessadors, dos programes poden ser executats de manera simultània i, potencialment, poden interferir-se entre si, concretament en l'acció de les lectures i escriptures en memòria. Hi ha dues arquitectures que resolen aquests problemes: l'arquitectura NUMA –on cada processador té accés i control exclusiu a una part de la memòria–, i l'arquitectura SMP, on tots els processadors comparteixen tota la memòria. Cada microprocessador té la seva pròpia memòria cau local. Perquè un multiprocessador operi correctament necessita un sistema operatiu especialment dissenyat per a això. La majoria dels sistemes operatius actuals tenen aquesta capacitat.
+Els sistemes operatius desenvolupats en aquest període, a més de l'Atles Supervisor i l'OS/360, a mitjans dels 60 apareix Multics, sistema operatiu multiusuari i multitasca desenvolupat pels laboratoris Bell d'AT&T i Unix, convertint-lo en un dels pocs SO escrits en un llenguatge d'alt nivell. En el camp de la programació lògica es va donar a llum la primera implementació de Prolog, i en la revolucionària orientació a objectes, Smalltalk i linux
+El sistema operatiu SCOPE de procés per lots (Batch) es va usar en aplicacions científiques. Posteriorment va aparèixer el KRONOS (posteriorment NOS, acrònim en anglès per sistema operatiu per xarxes) desenvolupat per Control Data i la Universitat de Minnesota a la dècada dels 70 suportant temps compartit i per lots simultàniament. El sistema operatiu PLATO va ser àmpliament usat als EUA en tasques de simulació gràfica per entrenament i ensenyament.
+
+MULTICS (múltiplex Information and Computing Service): Originalment era un projecte cooperatiu liderat per Fernando J. Corbató del MIT, amb General Electric i els laboratoris Bell, que va començar als anys 60, però els laboratoris Bell van abandonar el 1969 per començar a crear el sistema UNIX. Es va desenvolupar inicialment per al mainframe GE-645, un sistema de 36 bits; després va ser suportat per la sèrie de màquines Honeywell 6180. Va ser un dels primers. A més, els traduïa a instruccions d'alt nivell destinades a BDOS.
+BDOS (Basic Disk Operating System): Traductor de les instruccions en trucades a la BIOS.
+
+
+=== Dècada del 1980 ===
+Amb la creació dels circuits LSI (integració a gran escala), xips que contenien milers de transistors en un centímetre quadrat de silici, va començar l'auge dels ordinadors personals. En aquests es va deixar una mica de banda el rendiment i es va buscar més que el sistema operatiu és amigable, sorgint menús, i interfícies gràfiques. Això reduïa la rapidesa de les aplicacions, però es tornaven més pràctics i simples per als usuaris. En aquesta època, van seguir utilitzant llenguatges ja existents, com Smalltalk o C, i van néixer altres nous, dels quals es podrien destacar: C++ i Eiffel dins del paradigma de l'orientació a objectes, i Haskell i Miranda en el camp de la programació declarativa. Un avenç important que es va establir a mitjans de la dècada de 1980 va ser el desenvolupament de xarxes de computadores personals que corrien sistemes operatius en xarxa i sistemes operatius distribuïts. En aquesta escena, dos sistemes operatius eren els majoritaris: MS-DOS (Micro Soft Disk Operating System), escrit per Microsoft per a IBM PC i altres ordinadors que utilitzaven la CPU Intel 8088 i els seus successors, i UNIX, que dominava en els ordinadors personals que feien ús del Motorola 68000.
+El llançament oficial de l'ordinador Macintosh el gener de 1984, al preu de 1.995 dòlars EUA (després canviat a 2.495 dòlars) [1]. Incloïa el seu sistema operatiu Mac OS la característiques noves era una GUI (Graphic User Interface), Multitasca i Mouse. Va provocar diferents reaccions entre els usuaris acostumats a la línia d'ordres i alguns ratllant l'ús del Mouse com joguina.
+[Edita] MS-DOS
+El 1981 Microsoft va comprar un sistema operatiu anomenat QDOS que, després de realitzar unes poques modificacions, es va convertir en la primera versió de MS-DOS (MicroSoft Disk Operating System). A partir d'aquí es van succeir una sèrie de canvis fins a arribar a la versió 7.1, versió 8 en Windows Milenium, a partir de la qual MS-DOS va deixar d'existir com un component del sistema operatiu.
+A mitjans dels anys 80 es crea aquest sistema operatiu, però no és fins a la sortida de Windows 95 que se li pot considerar un sistema operatiu, només era una interfície gràfica del MS-DOS. Avui en dia és el sistema operatiu més difós en l'àmbit domèstic encara que també hi ha versions per a servidors com Windows NT. Microsoft ha dissenyat també algunes versions per superordinadors, però sense gaire èxit. Anys després es va fer el Windows 98 que era el més eficaç d'aquesta època Després es crearia el sistema operatiu de Windows ME (Windows Millenium Edition) aproximadament entre l'any 1999 i l'any 2000. Un any després es crearia el sistema operatiu de Windows 2000 en aquest mateix any. Després li seguiria el sistema operatiu més utilitzat en l'actualitat, Windows XP i altres sistemes operatius d'aquesta família especialitzats en les empreses. Ara el més recent és Windows 7 (Windows Seven) que va sortir al mercat el 22 d'octubre del 2009, deixant enrere al Windows Vista, que va tenir innombrables crítiques durant el poc temps que va durar en el mercat. Ara s'estan desenvolupant actualitzacions de Windows 7.
+
+
+=== Dècada del 1990 ===
+La gran novetat és l'aparició de GNU/Linux. Aquest sistema és similar a Unix, basat en l'estàndard POSIX, un sistema que en principi treballava sols en mode de línia d'ordres. La incorporació de les Xlib i l'evolució dels gestors de finestres permet l'opció d'utilitzar un entorn d'escriptori com ara LXDE, GNOME, KDE, XFCE. Recentment GNU/Linux disposa de programes que converteixen les finestres en un entorn 3D com ara Beryl o Compiz, i això permet utilitzar Linux d'una manera visual atractiva.
+
+
+== Funcions bàsiques ==
+Els sistemes operatius, en la seva condició de capa programari que possibiliten i simplifica el maneig de la computadora, ocupen una sèrie de funcions bàsiques essencials per a la gestió de l'equip. Entre les més destacables, cadascuna exercida per un component intern (mòdul en nuclis monolítics i servidor en micronuclis), podem ressenyar les següents:
+
+Proporcionar més comoditat en l'ús d'un computador.
+Gestionar de manera eficient els recursos de l'equip, executant serveis per als processos (programes)
+Brindar una interfície a l'usuari, executant instruccions (comandaments).
+Permetre que els canvis deguts al desenvolupament del mateix SOTA es puguin realitzar sense interferir amb els serveis que ja es prestaven (evolutivitat).
+Un sistema operatiu ocupa cinc funcions bàsiques en l'operació d'un sistema informàtic: subministrament d'interfície a l'usuari, administració de recursos, administració d'arxius, administració de tasques i servei de suport i utilitats.
+
+
+== Tecnologies ==
+Un sistema operatiu és un conjunt de tecnologies que permeten a l'ordinador fer certes funcions. Aquestes tecnologies poden o no ser en tot sistema operatiu, i normalment hi ha diferències en com són implementades. Tot i això, la majoria de sistemes operatius moderns provenen d'uns mateixos orígens i, per tant, són bàsicament similars.
+
+
+=== Execució de programes ===
+L'execució d'un programa implica la creació d'un procés per part del sistema operatiu. El kernel crea un procés assignant memòria al procés, carregant el codi del programa des del disc o un altre lloc de la memòria al nou espai que s'ha reservat pel procés, i començant a executar-lo.
+
+
+=== Interrupcions ===
+Les interrupcions són centrals als sistemes operatius, en tant que permeten al sistema operatiu tractar les diferents activitats que tant els programes en execució com el món extern generen. La programació basada en interrupcions és la forma més bàsica de compartició de temps, sent directament suportada per la majoria de CPU. Les interrupcions proporcionen a l'ordinador una manera automàtica d'executar un codi específic en resposta a certs esdeveniments (events). Fins i tot els ordinadors més bàsics suporten les interrupcions, i permeten al programador especificar un codi que serà executat quan l'esdeveniment tingui lloc.
+Quan es rep una interrupció, el maquinari de l'ordinador, automàticament suspèn el programa que s'està executant, desant (amb la instrucció push) el seu estat a la pila, els seus registres i el comptador de programa. Això seria anàleg a deixar un punt de llibre al llibre quan algú és interromput per una trucada.
+En els sistemes operatius moderns, les interrupcions les gestiona el nucli del sistema operatiu.
+
+
+=== Mode protegit i mode supervisor ===
+Les CPU modernes, suporten dos modes d'operació: el mode protegit i mode supervisor, cosa que permet que certes funcions de la CPU només les controli el sistema operatiu. Algunes d'aquestes funcions especials són l'adreçament de la memòria virtual, o limitar l'accés a maquinari segons determini el programa que s'executi en mode de supervisor. Aquests modes són essencials per suportar completament els sistemes operatius multiusuari (com ara els sistemes UNIX).
+Quan un ordinador s'engega, automàticament funciona en mode supervisor. Els primers programes que s'hi executen: la BIOS, el bootloader, i el sistema operatiu, tenen accés il·limitat al maquinari. Però quan el sistema operatiu passa el control als altres programes, pot posar la CPU en mode protegit.
+
+
+=== Gestió de la memòria ===
+
+Entre altres coses, un sistema operatiu multitasca és responsable de gestionar tota la memòria del sistema que els programes fan servir. Això assegura que un programa no interfereix amb memòria ja usada per un altre programa. Com que molts programes s'executen a la vegada, cada un ha de tenir accés independent a la memòria.
+La gestió de memòria cooperativa, usada per molts sistemes operatius inicials, assumeix que tots els programes fan un ús voluntari del gestor de memòria del nucli, i no excedeixen la memòria que tenen assignada. Aquest tipus de gestió de memòria ja no es veu avui en dia, ja que els programes usualment tenen bugs que poden fer que excedeixin la memòria que els correspon. En aquest sistema, si un programa falla, pot afectar o sobreescriure la memòria d'altres programes. Programes maliciosos, o els mateixos virus, poden alterar intencionadament la memòria d'altres processos o del mateix sistema operatiu en si mateix. Només és necessari un programa incorrecte per penjar el sistema.
+La protecció de memòria permet al nucli limitar l'accés d'un procés a la memòria del sistema. Existeixen diversos mètodes de protecció de memòria, incloent-hi la segmentació i la paginació. Tots els mètodes requereixen algun tipus de suport en el maquinari (com ara la 80286 MMU), que no existeix en tots els computadors.
+Tant en mode de segmentació com de paginació, certs registres en mode protegit indiquen a la CPU quines adreces de memòria pot permetre accedir a un procés en execució. Els intents d'accedir a altres adreces provocarà una interrupció que farà que la CPU reentri en mode supervisor, posant el nucli al càrrec. Això s'anomena violació de segment (segment violation o Seg-V), i com que normalment és un símptoma de mal comportament, el nucli normalment acabarà el programa ofensiu, i notificarà l'error.
+
+
+=== Memòria virtual ===
+
+La memòria virtual és un sistema de gestió de la memòria dels ordinadors que ofereix als programes la impressió que la memòria que fan servir té adreces continuades, mentre que en realitat la memòria pots estar físicament fragmentada o fins i tot sobrepassar la memòria física i desar-se en emmagatzemament secundari (normalment disc dur). Els sistemes que usen aquesta tècnica fan més fàcil la programació de grans aplicacions i permeten un ús més eficient de la memòria real (p. ex. la memòria RAM).
+Si un programa intenta accedir a memòria que no està dins el rang actual de memòria accessible, però tot i això li ha estat assignada, el kernel l'interromprà de la mateixa manera que faria si un programa intentés excedir la memòria que li ha estat assignada. Sota Unix, aquest interrupció es coneix com a page fault o fallada de pàgina.
+En els sistemes operatius moderns, aquella memòria d'aplicació que és accedida menys freqüentment es pot emmagatzemar temporalment a disc o altres medis per alliberar espai per a altres programes. Això s'anomena swapping (intercanvi), ja que una mateixa àrea de memòria pot ser usada per múltiples programes, i el contingut d'aquesta memòria pot ser intercanviat sota demanda.
+
+
+=== Multitasca ===
+
+La multitasca es refereix al fet que múltiples processos independents corrin en el mateix ordinador, donant l'aparença que les tasques s'executen al mateix temps. Com que la majoria d'ordinadors poden fer com a màxim una o dues tasques a la vegada, l'objectiu s'aconsegueix compartint el temps del processador, de manera que cada programa usa un percentatge del temps de l'ordinador per executar-se.
+També cal controlar que cap procés es quedi sense execució i o que monopolitzi el processador.
+
+
+=== Controladors ===
+
+Un controlador (driver en anglès) és un tipus de programari dissenyat específicament per permetre la interacció entre els dispositius de maquinari. Típicament es tracta d'una interfície per comunicar-se amb el dispositiu, ja sigui mitjançant un bus específic o un subsistema de comunicacions al que l'ordinador estigui connectat. S'envien comandes al dispositiu o se'n reben dades. Es tracta d'un programari especialitzat en un maquinari i també especialitzat en un sistema operatiu, que així mateix, normalment incorpora gestió d'interrupcions per a esdeveniments asíncrons i dependents del temps que el dispositiu pugui ocasionar.
+El resultat final és que permet a qualsevol aplicació o al mateix sistema operatiu d'interaccionar amb el dispositiu d'una forma transparent.
+
+
+=== Sistema de fitxers ===
+
+Els ordinadors emmagatzemen les dades en discs usant fitxers, que estan estructurats de maneres específiques per tal de proporcionar un accés ràpid, una alta fiabilitat, i un bon ús de l'espai disponible en el disc. La manera com els fitxers són emmagatzemats a disc s'anomena sistema de fitxers, i permet als fitxers tenir noms i atributs. També permet desar-los en una jerarquia de directoris o carpetes organitzades en forma d'arbre de directoris.
+Els primers sistemes operatius només suportaven un únic tipus de disc i un únic tipus de sistema de fitxers. També eren limitats en la seva capacitat, velocitat, i en els noms dels fitxers i estructures de directori que podien usar. Aquestes limitacions sovint reflectien limitacions en el sistema operatiu pels que eren dissenyats, fent molt difícil per a un sistema operatiu suportar més d'un sistema de fitxers.
+
+
+=== Seguretat ===
+Que un ordinador sigui segur depèn de què diverses tecnologies funcionin correctament. Un sistema operatiu modern proporciona accés a diversos recursos, que són accessibles tant des del programari que corre en el sistema, com en els dispositius externs a través del kernel.
+El sistema operatiu ha de ser capaç de distingir entre les peticions de processament que han de ser acceptades i les que han de ser denegades. Mentre alguns sistemes simplement distingeixen entre el nivell "privilegiat" i el nivell "no-privilegiat", la majoria de sistemes tenen maneres de sol·licitar la identitat, com un nom d'usuari. Per establir aquesta identitat s'esdevé un procés d'autenticació. Sovint s'ha d'introduir un nom d'usuari, junt amb la corresponent contrasenya. També es poden usar altres mètodes d'autenticació, com ara targetes magnètiques o dades biomètriques. En alguns casos, sobretot en connexions des de la xarxa, els recursos són accessibles sense cap mena d'autenticació (com ara llegir un fitxer sobre una carpeta compartida). Molt relacionat amb l'autenticació és el procés d'autorització: l'accés als serveis i recursos sol·licitats per part de l'usuari una vegada s'ha autenticat va lligat amb l'usuari al qual pertany o als grups d'usuari al que l'usuari pertany.
+
+
+=== Proporciona interfície ===
+Proporcionen una interfície d'usuari (de text o gràfica), que permeten a l'usuari comunicar-se amb l'ordinador, i una interfície d'aplicacions (API) que permeten al programari comunicar-se amb el sistema operatiu o amb el maquinari. Exemples són una shell, el Gnome, o KDE.
+
+
+== Classificacions dels sistemes operatius ==
+A continuació s'exposen alguns dels criteris que de vegades s'empren per classificar els diferents sistemes operatius.
+
+
+=== Per nombre d'usuaris ===
+Monousuari: Sistemes operatius que només permeten treballar amb un usuari. En aquesta categoria podem diferenciar 2 tipus:
+Sistema monousuari estricte: Quan el sistema operatiu no treballa amb el concepte d'usuari. Podríem dir que només existeix un usuari per defecte. Un exemple de sistema operatiu monousuari és MS-DOS.
+Sistema monousuari en mode laxe': Per exemple, totes les versions de Windows (Windows 9x, ME, NT, XP, Vista, Windows 7…) permeten diferents usuaris però no de forma concurrent (excepte que disposin d'un Terminal Server).
+Multiusuari: Sistemes operatius que permeten treballar amb múltiples usuaris alhora. Per exemple, Unix/GNU/Linux o les versions de servidor de Windows.
+
+
+=== Per nombre de processos concurrents ===
+Monoprogramació: només es pot executar un procés i la resta han d'esperar que aquest procés acabi.
+Multiprogramació o multitasca: es poden executar diferents processos al mateix temps. Cal destacar que en un instant concret de temps només poden haver-hi més d'un procés executant-se al mateix temps si tenim més d'un processador (multiprocés). Aquí caldria destacar els Sistemes Operatius que disposen de planificació expulsiva i els que no (l'exemple és DOS que permetia a un procés monopolitzar l'ús de la CPU sense que el sistema el pugues expulsar de la CPU).
+
+
+=== Per nombre de processadors ===
+Monoprocés: Només permeten treballar amb un microprocessador simultàniament. Un exemple de sistema operatiu monoprocessador és Windows 9x.
+Multiprocés: Poden treballar amb múltiples microprocessadors al mateix temps. Exemples de sistemes operatius multiprocés són Unix/GNU/Linux, Sun/OS i Windows NT/2000.
+
+
+=== Segons la planificació dels processos ===
+Hi ha dues possibles classificacions:
+
+Amb restricció de temps
+
+Sistemes operatius de temps real: Dedicats a aplicacions de temps real són sistemes operatius molt específics per a àmbits industrials o militar.
+Sistemes interactius: Són els "habituals" on la màquina interacciona amb les entrades i sortida del sistema sense necessitats de processament en temps real.
+Sense restriccions de temps
+
+Processaments per lots (batch): Sistema molt utilitzat en els primers sistemes. Aquest sistemes s'utilitzaven per raons tecnològiques (les CPU eren molt més ràpides que els sistemes d'E/S i el millor sistema era processar per lots per tal d'aprofitar al màxim l'ús de la CPU).
+
+
+== Referències ==
+
+
+== Vegeu també ==
+Gestió de processos Unix
+
+
+== Enllaços externs ==
+
+Multics History and the history of operating systems
+How Stuff Works - Operating Systems
+Help finding your Operating System type and version
+The World's First Computer Operating System in millosh's blog talks about the General Motors OS and GM-NAA I/O developed in 1955 at General Motors Research and North American Airlines

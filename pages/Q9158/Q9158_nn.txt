@@ -1,0 +1,56 @@
+E-post (avstytting for elektronisk post) er ei teneste som gjer det mogleg å sende elektroniske dokument (post) frå éi datamaskin til ei anna. E-post er ei av dei mest brukte tenestene på Internett.
+Systemet vart først utvikla i 1971 av Ray Tomlinson, som òg sendte den første e-posten i historia. Han skildra innhaldet som «noko uviktig, som qwertyuiop» (den øvste bokstavrekka på eit nord-amerikansk tastatur).
+Tomlinson har naturleg nok òg æra for å ha funne på å plassere teiknet krøllalfa («@») mellom «brukarnamnet» og «domenet» i e-postadresser, sånn som vi kjenner dei i dag. Tanken var den gongen at adressa skulle seie noko nyttig om brukaren; «den e-posten her kjem frå Jan Johansen på døme-domenet.com». Då skulle mottakaren av e-posten vite at «Jan Johansen» truleg arbeidde på «døme-domenet.com».
+I seinare tid har e-posttenesta utvikla seg langt utover det som var mogleg å sjå føre seg i 1970. No finst det ei rekkje store e-post-leverandørar, selskap som tilbyr kundane sine å halde adresse og lagringsplass til personleg korrespondanse. Difor er det ofte ikkje anna enn brukarnamnet i e-postadressa som seier noko om sendaren i dag.
+Den første e-posttenesta kunne berre sende og ta imot tekst, men i dag er det mogleg å sende og ta imot alle typar filer; e-posten kan signerast og krypterast teksten i brevet kan formaterast med til dømes halvfeit og kursiv skrift, osb.
+
+
+== Atkitektur ==
+
+Når e-post vert utveksla skjer det i fleire etappar, fyrst frå datamaskina til den som sender e-brevet til ein SMTP-tenar, deretter frå SMTP-tenaren til ein annan SMTP-tenar og så frå denne til datamaskina til mottakaren. Ein typisk e-posttenar er ei fysisk tenarmaskin, som køyrer fleire tenarar, realiserte som programvare). I tillegg til ein SMTP-tenar har e-posttenar òg ein POP og/eller ein IMAP-tenar (som oftast begge deler), som alle køyrer på den same tenarmaskina.
+
+
+=== Kommunikasjon mellom SMTP-tenarar ===
+
+E-post mellom ulike brukarar vert utveksla over SMTP (definer i RFC 821) som er ein internettprotokoll utvikla spesielt for dette føremålet. Kommunikasjonen over SMTP skjer mellom SMTP-tenarar, som har faste IP-adressar, slik at dei kan ta imot innkomande e-post til alle tider. (I figuren til høgre er SMTP-tenarane merkte som MTA (Mail Transfer Agent).) Når til dømes SMTP-tenaren til domene1.com skal senda eit skjembrev til Ola.Nordman@dome2.com vil han ta kontakt med SMTP-tenaren til domene2.com og innleia ein konversasjon, som resulterer i at skjermbrevet vert overført til SMTP-tenaren til domene2.com. Denne utvekslinga er merkt med «Etape 2» i figuren.
+MUA1 får tak i IP-adressa til domene2.com ved å kontakta ein DNS-tenar som omformar domene2.com til ei IP-adresse.
+
+
+=== Kommunikasjon mellom brukarmaskinar og e-posttenarar ===
+Når ein brukar ynsker å senda eit skjermbrev vert det fyrst redigert på ei brukarmaskin og så overført til brukaren sin SMTP-tenar på domentet til sendaren («Etape 1» i figuren). Tilsvarande må skjermbrevet overførast frå SMTP-tenaren på domenet til mottakaren. Denne utvekslinga kan utførast på noko ulikt vis og til tider som passar mottakaren. Mottakaren må i alle høve nytta ein eller annan from for e-postlesar, kalla MUA (Mail User Agent) i figuren til høgre.
+
+
+==== POP-tenarar ====
+
+Ein mottakar kan lesa skjermbrev ved å nytta ein e-postlesar som nyttar Post Office Protocol (POP) for å henta skjermbrev frå e-posttenaren på domenet sitt. E-postlesaren sender då ei melding til POP-tenaren (som køyrer på same tenarmaskin som SMTP-tenaren) for å spørja etter nye skjermbrev («Etape 3» i figuren). Om brukaren har fått nye skjermbrev vert desse lasta ned på maskina hans («Etape 4» i figuren). Det er vanlegvis valfritt om ein ynskjer å sletta skjermbreva frå e-posttenaren, eller om ein ynskjer å lata dei ligga der. Om dei vert sletta er det ikkje lenger råd å lesa dei seinare frå ei anna maskin, men dei kan framleis lesast på den maskina dei vart lasta ned til. Det er difor mest vanleg å lata dei verta liggande på e-posttenaren. Når ein nyttar POP til å lesa e-post vert sambandet mellom brukarmaskina og e-posttenaren kopla ned så snart ein er ferdig med å lasta ned e-posten. E-posten ligg då på maskina til mottakaren og kan lesast utan å vera oppkopla til e-posttenaren. Dette kan vera nyttig når ein tek med seg ei berbar maskin til ein stad der ein ikkje har nettilgang.
+
+
+==== IMAP-tenarar ====
+
+Internet Message Access Protocol (IMAP) ein ein mykje meir avansert protokoll enn POP. Når ein nyttar IMAP vert e-posten liggande på e-posttenaren og ein lyt vera oppkopla til denne for å lesa e-post. IMAP vert òg nytta i samband med redigering av skjermbrev, for å sletta gamle skjermbrev, oppretta, sletta og endra namn på katalogar og for organisera skjermbrev i katalogar. Dei fleste moderne e-postlesarar er i stand til å nytta både med POP (PO3) og IMAP.
+
+
+==== Utgåande skjermbrev ====
+Skjermbrev vert skrive i e-postlesarar, sjølv om dette er misvisande terminologi, og sendt til ein sendaragent som er ein tenar som køyrer på ein e-posttenar. Det vert da nytta ein litt modifisert versjon av SMTP-protokollen. Alternativt kan utgåande skermbrev sendast via IMAP.
+
+
+==== Vevgrensesnitt ====
+Mange post-leverandørar tilbyr eit vevgrensesnitt, slik at ein kan redigera, lesa og organisera e-post via ein nettlesar. Desse har ein eigen tenar, som ofte kommuniserer med ein IMAP-tenar på e-posttenaren, via IMAP-protokollen. Denne tenaren kan køyra på same maskin som SMTP og IMAP-tenaren, eller i store installasjonar på eigne maskinar. Føremonen med vevgrensesnitt er at brukarane ikkje treng å konfigurera ein e-postlesar på si eiga maskin, men mange vevgrensnitt er ikkje like avanserte som separate e-postlesarar og som oftast noko meir tungvinte å bruka.
+
+
+== Søppelpost ==
+
+Søppelpost er masseutsendt e-post til enkeltpersonar og/eller verksemder, som anten kan vera reklame eller freistnad på svindel. Etter som det er gratis å senda e-post kostar det ikkje noko å senda reklame til fleire tusen, eller titusen, mottakarar. Det som krevst er at ein har tilgang til mange e-postadresser. Det har difor utvikla seg ein marknad for sal og kjøp lister med e-postadresser. E-postadressene vert ofte sanka inn automatisk frå nettsider. For å hindra dette kan ein bytta at «@» med «at», eller legga ut e-postadresser i form av bilete. Sjølv om det er muleg å nytta karakterattkjenning for å finna e-postadressa i eit bilete krev dette at alle bileta på ei nettside vert prosessert, noko som er såpass tungvint at dei som haustar e-postadresser ikkje fin det bryet verd.
+
+
+=== Reklame ===
+Mykje søppelpost er ulike former for reklame. Ein freistar då med svært låge prisar, eller ulovlege varer. Sjølv om svært få av mottakarane bit på slike tilbod kan det likevel svara seg på grunn av at det ikkje kostar noko å senda e-post. Om berre ein promille av ein million mottakarar «bit på» svarar det til 1000 personar. Om ein nyttar seg av slike tilbod er det ingen garanti for at produkta vert leverte, eller for kvaliteten. I fylgje Statens legemiddelverk kan det vera direkte farleg å kjøpa medisinar på internett.
+
+
+=== Svindelbrev ===
+
+Eit anna fenomen, som òg ofte vert plassert i søppelpost-kategorien, er sokalla svindelpost, der sendaren prøver å lure til dømes pengar eller personleg informasjon, som personnummer og kontonummer, ut av mottakaren. Denne typen meldingar spelar ofte på følelsar ved å be om pengar til vanskelegstilte, ofre for katastrofar og så vidare.
+Ein vanleg taktikk er å be om hjelp til å overføra ein stor sum pengar. Mottakaren vert då freista med ein klekkeleg avanse, men det svindlarane er ute etter er ofte kontonummeret til mottakaren.
+
+
+== Kjelder ==

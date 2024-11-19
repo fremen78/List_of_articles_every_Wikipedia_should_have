@@ -1,0 +1,3246 @@
+In analisi matematica un'equazione differenziale è un'equazione che lega una funzione incognita alle sue derivate: se la funzione è di una sola variabile e l'equazione presenta soltanto derivate ordinarie, viene detta equazione differenziale ordinaria; se, invece, la funzione è a più variabili e l'equazione contiene derivate parziali della funzione stessa, è detta equazione differenziale alle derivate parziali.
+
+
+== Storia ==
+Lo studio delle equazioni differenziali ha avuto inizio in seguito all'introduzione del calcolo infinitesimale da parte di Newton e Leibniz nel XVII secolo. Nel secondo capitolo del suo testo del 1671 Methodus fluxionum et serierum infinitarum, Isaac Newton focalizza il discorso su tre tipologie di equazioni differenziali di primo grado, di cui due ordinarie:
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        f
+        (
+        x
+        )
+        
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        f
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle {\frac {dy}{dx}}=f(x)\qquad {\frac {dy}{dx}}=f(x,y)}
+  
+
+e una con derivate parziali:
+
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        
+          
+            
+              ∂
+              y
+            
+            
+              ∂
+              
+                x
+                
+                  1
+                
+              
+            
+          
+        
+        +
+        
+          x
+          
+            2
+          
+        
+        
+          
+            
+              ∂
+              y
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle x_{1}{\frac {\partial y}{\partial x_{1}}}+x_{2}{\frac {\partial y}{\partial x_{2}}}=y}
+  
+
+Ne risolve inoltre un esempio per ognuna delle tipologie, esprimendo il termine non derivato come serie di potenze e ponendo che abbiano come soluzione delle serie infinite, di cui nota che i coefficienti possono essere scelti in maniera arbitraria producendo così un'infinità di soluzioni particolari.
+Un importante contributo alle equazioni ordinarie fu dato dai fratelli Jacob e Johann Bernoulli. Nel 1695 Jacob Bernoulli si occupa dell'equazione oggi nota come equazione differenziale di Bernoulli:
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        P
+        (
+        x
+        )
+        y
+        =
+        Q
+        (
+        x
+        )
+        
+          y
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\frac {dy}{dx}}+P(x)y=Q(x)y^{n}}
+  
+
+per la quale Leibniz, l'anno successivo, ottiene delle soluzioni semplificandola ad un'equazione lineare. L'anno successivo il fratello Johann si occupa invece del problema della curva brachistocrona.
+Un altro importante problema meccanico, quello della corda vibrante, viene inoltre incluso negli studi di Jean le Rond d'Alembert, Leonhard Euler, Daniel Bernoulli e Joseph-Louis Lagrange. Nel 1746, d'Alembert affronta l'equazione delle onde monodimensionale:
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        
+          
+            1
+            
+              v
+              
+                2
+              
+            
+          
+        
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\partial ^{2}u \over {\partial x^{2}}}-{\frac {1}{v^{2}}}{\partial ^{2}u \over {\partial t^{2}}}=0}
+  
+
+e successivamente Eulero introduce il caso tridimensionale.
+A partire dal 1750 fu poi sviluppata l'equazione di Eulero-Lagrange da parte di Eulero e Lagrange, che è alla base della meccanica lagrangiana.
+Un altro importante testo è Théorie analytique de la chaleur del 1822, in cui Fourier espone l'equazione del calore.
+
+
+== Descrizione ==
+Le equazioni differenziali sono tra le equazioni più studiate in matematica, avendo un ruolo fondamentale nella controparte matematica di moltissimi ambiti della scienza e dell'ingegneria. Possono descrivere, per esempio, una situazione generale in cui una certa quantità 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ varia rispetto al tempo in una maniera che dipende dal valore della quantità stessa in quel momento: ciò corrisponde al fatto che nell'equazione compare sia la funzione incognita 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ che la sua derivata rispetto al tempo 
+  
+    
+      
+        d
+        f
+        
+          /
+        
+        d
+        t
+      
+    
+    {\displaystyle df/dt}
+  
+. Nel caso più semplice compare solo la derivata:
+
+  
+    
+      
+        
+          
+            
+              d
+              f
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        g
+        (
+        t
+        )
+      
+    
+    {\displaystyle {\frac {df}{dt}}=g(t)}
+  
+
+e l'equazione viene risolta utilizzando il teorema fondamentale del calcolo integrale. Le sue soluzioni hanno cioè la forma:
+
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        
+          f
+          
+            0
+          
+        
+        +
+        G
+        (
+        t
+        )
+      
+    
+    {\displaystyle f(t)=f_{0}+G(t)}
+  
+
+dove 
+  
+    
+      
+        
+          f
+          
+            0
+          
+        
+      
+    
+    {\displaystyle f_{0}}
+  
+ è costante e 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ è la primitiva di 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+:
+
+  
+    
+      
+        G
+        (
+        t
+        )
+        =
+        ∫
+        g
+        (
+        t
+        )
+        d
+        t
+      
+    
+    {\displaystyle G(t)=\int g(t)dt}
+  
+
+Si tratta tuttavia di relazioni di cui è raramente possibile avere una forma analitica della soluzione, o una sua espressione in termini di funzioni elementari, ma vengono piuttosto studiate l'esistenza e l'unicità delle soluzioni e il loro comportamento in contesti di particolare interesse, solitamente in relazione alla situazione di un sistema fisico descritto dall'equazione differenziale. L'insieme di tutte le soluzioni di un'equazione differenziale è detto integrale generale dell'equazione differenziale data.
+Lo studio delle equazioni differenziali, come avviene spesso in matematica, è stato fortemente influenzato dall'esigenza di analizzare problemi concreti; coinvolge poi diversi ambiti, come l'algebra lineare, l'analisi numerica e l'analisi funzionale. 
+
+
+=== Definizione ===
+
+Data una funzione 
+  
+    
+      
+        u
+        :
+        I
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle u\colon I\to \mathbb {R} }
+  
+ definita in un intervallo 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ dell'insieme dei numeri reali, l'equazione differenziale ad essa associata è un'equazione differenziale ordinaria (abbreviato con ODE, acronimo di Ordinary Differential Equation) e si chiama ordine o grado dell'equazione il più alto ordine tra gli ordini delle derivate presenti nell'equazione. La scrittura generale di un'equazione differenziale ordinaria di ordine 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ per una funzione 
+  
+    
+      
+        u
+        (
+        x
+        )
+      
+    
+    {\displaystyle u(x)}
+  
+ può avere la forma:
+
+  
+    
+      
+        f
+        (
+        x
+        ,
+        u
+        (
+        x
+        )
+        ,
+        
+          u
+          ′
+        
+        (
+        x
+        )
+        ,
+        …
+        ,
+        
+          u
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(x,u(x),u'(x),\dots ,u^{(n)}(x))=0}
+  
+
+dove 
+  
+    
+      
+        u
+        ,
+        
+          u
+          ′
+        
+        ,
+        …
+        ,
+        
+          u
+          
+            (
+            n
+            )
+          
+        
+      
+    
+    {\displaystyle u,u',\dots ,u^{(n)}}
+  
+ sono le derivate di 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ fino all'ordine 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+. Se 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è lineare, l'equazione è lineare. Per esempio, l'equazione differenziale di primo ordine:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        u
+      
+    
+    {\displaystyle {\frac {du}{dx}}=u}
+  
+
+viene soddisfatta dalla funzione esponenziale 
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        
+          e
+          
+            x
+          
+        
+      
+    
+    {\displaystyle u(x)=e^{x}}
+  
+, che è uguale alla propria derivata.
+Nel caso in cui la funzione incognita 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ dipende da più variabili, le derivate sono derivate parziali e si ha un'equazione differenziale alle derivate parziali (abbreviato con PDE, da Partial Differential Equation). Una PDE di ordine 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ per la funzione 
+  
+    
+      
+        u
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        ⋯
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        :
+        U
+        ⊂
+        
+          
+            R
+          
+          
+            n
+          
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle u(x_{1},\cdots ,x_{n})\colon U\subset \mathbb {R} ^{n}\rightarrow \mathbb {R} }
+  
+ ha la forma:
+
+  
+    
+      
+        f
+        
+          (
+          
+            
+              x
+              
+                1
+              
+            
+            ,
+            …
+            ,
+            
+              x
+              
+                n
+              
+            
+            ,
+            u
+            ,
+            
+              
+                
+                  ∂
+                  u
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+            
+            ,
+            …
+            ,
+            
+              
+                
+                  ∂
+                  u
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      n
+                    
+                  
+                
+              
+            
+            ,
+            
+              
+                
+                  
+                    ∂
+                    
+                      2
+                    
+                  
+                  u
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  ∂
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+            
+            ,
+            …
+            ,
+            
+              
+                
+                  
+                    ∂
+                    
+                      2
+                    
+                  
+                  u
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  ∂
+                  
+                    x
+                    
+                      n
+                    
+                  
+                
+              
+            
+            ,
+            …
+          
+          )
+        
+        =
+        0
+      
+    
+    {\displaystyle f\left(x_{1},\ldots ,x_{n},u,{\frac {\partial u}{\partial x_{1}}},\ldots ,{\frac {\partial u}{\partial x_{n}}},{\frac {\partial ^{2}u}{\partial x_{1}\partial x_{1}}},\ldots ,{\frac {\partial ^{2}u}{\partial x_{1}\partial x_{n}}},\ldots \right)=0}
+  
+
+dove 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ è un numero intero e la funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è data. Esempi particolarmente importanti di equazioni (lineari) alle derivate parziali sono l'equazione delle onde, l'equazione del calore, l'equazione di Poisson, l'equazione del trasporto, l'equazione di continuità, o l'equazione di Helmholtz.
+Per esempio, l'equazione:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial u(x,y)}{\partial x}}=0}
+  
+
+afferma che 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle u(x,y)}
+  
+ è indipendente da 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, e non avendo nessuna informazione sulla dipendenza da 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ ha soluzione generale:
+
+  
+    
+      
+        u
+        (
+        x
+        ,
+        y
+        )
+        =
+        f
+        (
+        y
+        )
+      
+    
+    {\displaystyle u(x,y)=f(y)}
+  
+
+dove 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è una funzione arbitraria di 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+. L'equazione ordinaria:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+              (
+              x
+              )
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {du(x)}{dx}}=0}
+  
+
+ha invece soluzione 
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        c
+      
+    
+    {\displaystyle u(x)=c}
+  
+ con 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ costante.
+
+
+=== Problema di Cauchy ===
+
+Le equazioni differenziali vengono analizzate conferendo un preciso valore ad alcune delle variabili in gioco, in particolare la funzione incognita e le sue derivate (fino all'ordine 
+  
+    
+      
+        κ
+        −
+        1
+      
+    
+    {\displaystyle \kappa -1}
+  
+ per un'equazione in forma normale di ordine 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+) in certi punti del dominio di definizione dell'equazione. Il problema differenziale che ne risulta è detto "problema di Cauchy"; consiste solitamente nel porre delle condizioni iniziali o delle condizioni al contorno per gli estremi del dominio in cui è definita l'equazione.
+Nel caso l'equazione sia definita su una superficie, fornire le condizioni al contorno consiste nel dare il valore della funzione sulla frontiera o della sua derivata rispetto alla direzione normale alla frontiera. Tale assegnazione viene detta condizioni al contorno di Cauchy, e corrisponde ad imporre sia le condizioni al contorno di Dirichlet (i valori che la soluzione assume sul bordo della superficie) che le condizioni al contorno di Neumann (i valori della derivata della soluzione).
+Per le equazioni ordinarie il teorema di esistenza e unicità per un problema di Cauchy stabilisce che per un problema:
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  f
+                  (
+                  x
+                  ,
+                  y
+                  ,
+                  
+                    y
+                    ′
+                  
+                  ,
+                  
+                    y
+                    ″
+                  
+                  ,
+                  …
+                  ,
+                  
+                    y
+                    
+                      (
+                      n
+                      )
+                    
+                  
+                  )
+                  =
+                  0
+                
+              
+              
+                
+                  y
+                  (
+                  a
+                  )
+                  =
+                  
+                    y
+                    
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    y
+                    ′
+                  
+                  (
+                  a
+                  )
+                  =
+                  
+                    y
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  …
+                
+              
+              
+                
+                  
+                    y
+                    
+                      (
+                      n
+                      −
+                      1
+                      )
+                    
+                  
+                  (
+                  a
+                  )
+                  =
+                  
+                    y
+                    
+                      n
+                      −
+                      1
+                    
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}f(x,y,y',y'',\dots ,y^{(n)})=0\\y(a)=y_{0}\\y'(a)=y_{1}\\\dots \\y^{(n-1)}(a)=y_{n-1}\end{cases}}}
+  
+
+esiste una sola funzione 
+  
+    
+      
+        y
+        (
+        x
+        )
+      
+    
+    {\displaystyle y(x)}
+  
+ che soddisfa tutte le relazioni se 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è sufficientemente regolare, ad esempio se è differenziabile in un intorno di 
+  
+    
+      
+        (
+        
+          y
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          
+            n
+            −
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (y_{0},\ldots ,y_{n-1})}
+  
+.
+Per un'equazione alle derivate parziali di ordine 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ definita su 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ le condizioni iniziali sono date dal valore dell'incognita e delle sue derivate fino all'ordine 
+  
+    
+      
+        κ
+        −
+        1
+      
+    
+    {\displaystyle \kappa -1}
+  
+ su una varietà liscia 
+  
+    
+      
+        S
+        ⊂
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle S\subset \mathbb {R} ^{n}}
+  
+ di dimensione 
+  
+    
+      
+        n
+        −
+        1
+      
+    
+    {\displaystyle n-1}
+  
+, detta talvolta "superficie di Cauchy". Il problema di Cauchy consiste, nello specifico, nel trovare la funzione 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ soluzione della PDE che soddisfa:
+
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        
+          f
+          
+            0
+          
+        
+        (
+        x
+        )
+        
+        ∀
+        x
+        ∈
+        S
+      
+    
+    {\displaystyle u(x)=f_{0}(x)\qquad \forall x\in S}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  k
+                
+              
+              u
+              (
+              x
+              )
+            
+            
+              ∂
+              
+                ν
+                
+                  k
+                
+              
+            
+          
+        
+        =
+        
+          f
+          
+            k
+          
+        
+        (
+        x
+        )
+        
+        k
+        =
+        1
+        ,
+        …
+        ,
+        κ
+        −
+        1
+        
+        ∀
+        x
+        ∈
+        S
+      
+    
+    {\displaystyle {\frac {\partial ^{k}u(x)}{\partial \nu ^{k}}}=f_{k}(x)\qquad k=1,\ldots ,\kappa -1\quad \forall x\in S}
+  
+
+dove 
+  
+    
+      
+        
+          f
+          
+            k
+          
+        
+      
+    
+    {\displaystyle f_{k}}
+  
+ sono funzioni date definite sulla superficie 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ e la derivata 
+  
+    
+      
+        
+          ∂
+          
+            k
+          
+        
+        u
+        (
+        x
+        )
+        
+          /
+        
+        ∂
+        
+          ν
+          
+            k
+          
+        
+      
+    
+    {\displaystyle \partial ^{k}u(x)/\partial \nu ^{k}}
+  
+ è calcolata rispetto alla direzione 
+  
+    
+      
+        ν
+      
+    
+    {\displaystyle \nu }
+  
+ del versore normale a 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+.
+Il teorema di Cauchy-Kovalevskaya, che si applica sia per le equazioni alle derivate parziali che per quelle ordinarie, stabilisce che se l'incognita e le condizioni iniziali di un'equazione differenziale sono localmente funzioni analitiche allora una soluzione analitica esiste ed è unica.
+
+
+== Equazioni lineari ==
+
+Data una generica equazione ordinaria:
+
+  
+    
+      
+        f
+        (
+        x
+        ,
+        u
+        (
+        x
+        )
+        ,
+        
+          u
+          ′
+        
+        (
+        x
+        )
+        ,
+        …
+        ,
+        
+          u
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(x,u(x),u'(x),\dots ,u^{(n)}(x))=0}
+  
+
+è lineare se:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              f
+            
+            
+              ∂
+              
+                u
+                
+                  (
+                  i
+                  )
+                
+              
+              ∂
+              
+                u
+                
+                  (
+                  j
+                  )
+                
+              
+            
+          
+        
+        =
+        0
+        
+        ∀
+        i
+        ,
+        j
+      
+    
+    {\displaystyle {\frac {\partial f}{\partial u^{(i)}\partial u^{(j)}}}=0\qquad \forall i,j}
+  
+
+Un'equazione ordinaria lineare si può scrivere come:
+
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        (
+        x
+        )
+        
+          u
+          
+            (
+            n
+            )
+          
+        
+        +
+        
+          a
+          
+            1
+          
+        
+        (
+        x
+        )
+        
+          u
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+          u
+          ′
+        
+        +
+        
+          a
+          
+            n
+          
+        
+        (
+        x
+        )
+        u
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle a_{0}(x)u^{(n)}+a_{1}(x)u^{(n-1)}+\dots +a_{n-1}(x)u'+a_{n}(x)u=g(x)}
+  
+
+Se 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+      
+    
+    {\displaystyle a_{i}}
+  
+ sono fattori costanti l'equazione si risolve trovando una soluzione all'equazione omogenea associata:
+
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        (
+        x
+        )
+        
+          u
+          
+            (
+            n
+            )
+          
+        
+        +
+        
+          a
+          
+            1
+          
+        
+        (
+        x
+        )
+        
+          u
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+          u
+          ′
+        
+        +
+        
+          a
+          
+            n
+          
+        
+        (
+        x
+        )
+        u
+        =
+        0
+      
+    
+    {\displaystyle a_{0}(x)u^{(n)}+a_{1}(x)u^{(n-1)}+\dots +a_{n-1}(x)u'+a_{n}(x)u=0}
+  
+
+alla quale si somma una soluzione particolare dell'equazione completa, ottenibile ad esempio con il metodo delle variazioni delle costanti. Per ogni equazione ordinaria lineare omogenea (anche a coefficienti non costanti) vale inoltre il principio di sovrapposizione: se 
+  
+    
+      
+        
+          u
+          
+            1
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle u_{1}(t)}
+  
+ e 
+  
+    
+      
+        
+          u
+          
+            2
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle u_{2}(t)}
+  
+ sono soluzioni, allora lo è anche ogni loro combinazione lineare 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+        
+          u
+          
+            1
+          
+        
+        (
+        t
+        )
+        +
+        
+          α
+          
+            2
+          
+        
+        
+          u
+          
+            2
+          
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle \alpha _{1}u_{1}(t)+\alpha _{2}u_{2}(t)}
+  
+, con 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \alpha _{1}}
+  
+ e 
+  
+    
+      
+        
+          α
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \alpha _{2}}
+  
+ costanti.
+Un'equazione differenziale alle derivate parziali può essere invece lineare, semilineare, quasilineare o totalmente non lineare. L'equazione si dice lineare se ha la forma:
+
+  
+    
+      
+        
+          ∑
+          
+            
+              |
+            
+            α
+            
+              |
+            
+            ≤
+            k
+          
+        
+        
+          a
+          
+            α
+          
+        
+        (
+        x
+        )
+        
+          D
+          
+            α
+          
+        
+        u
+        =
+        h
+        (
+        x
+        )
+         
+      
+    
+    {\displaystyle \sum _{|\alpha |\leq k}a_{\alpha }(x)D^{\alpha }u=h(x)\ }
+  
+
+per opportune funzioni 
+  
+    
+      
+        
+          a
+          
+            α
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle a_{\alpha }(x)}
+  
+ ed 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+, dove 
+  
+    
+      
+        
+          D
+          
+            α
+          
+        
+      
+    
+    {\displaystyle D^{\alpha }}
+  
+ è la derivazione di ordine 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ rispetto ad una o più variabili. Se 
+  
+    
+      
+        h
+        =
+        0
+      
+    
+    {\displaystyle h=0}
+  
+ l'equazione si dice omogenea.
+Si dice semilineare se ha la forma:
+
+  
+    
+      
+        
+          ∑
+          
+            
+              |
+            
+            α
+            
+              |
+            
+            =
+            k
+          
+        
+        
+          a
+          
+            α
+          
+        
+        (
+        x
+        )
+        
+          D
+          
+            α
+          
+        
+        u
+        +
+        
+          a
+          
+            0
+          
+        
+        (
+        
+          D
+          
+            k
+            −
+            1
+          
+        
+        u
+        ,
+        ⋯
+        ,
+        D
+        u
+        ,
+        u
+        ,
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle \sum _{|\alpha |=k}a_{\alpha }(x)D^{\alpha }u+a_{0}(D^{k-1}u,\cdots ,Du,u,x)=0}
+  
+
+quasilineare se ha la forma:
+
+  
+    
+      
+        
+          ∑
+          
+            
+              |
+            
+            α
+            
+              |
+            
+            =
+            k
+          
+        
+        
+          a
+          
+            α
+          
+        
+        (
+        
+          D
+          
+            k
+            −
+            1
+          
+        
+        u
+        ,
+        ⋯
+        ,
+        D
+        u
+        ,
+        u
+        ,
+        x
+        )
+        
+          D
+          
+            α
+          
+        
+        u
+        +
+        
+          a
+          
+            0
+          
+        
+        (
+        
+          D
+          
+            k
+            −
+            1
+          
+        
+        u
+        ,
+        ⋯
+        ,
+        D
+        u
+        ,
+        u
+        ,
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle \sum _{|\alpha |=k}a_{\alpha }(D^{k-1}u,\cdots ,Du,u,x)D^{\alpha }u+a_{0}(D^{k-1}u,\cdots ,Du,u,x)=0}
+  
+
+e totalmente non lineare se dipende non-linearmente dal più alto grado di derivazione.
+Le equazioni che non sono lineari sono spesso molto difficili da affrontare, ed in molti casi si cercano metodi per linearizzarle.
+
+
+=== PDE del secondo ordine ===
+Una classe di equazioni alle derivate parziali di cui si trovano frequentemente soluzioni analitiche, e che sono ampiamente utilizzate in fisica ed ingegneria, sono le equazioni lineari del secondo ordine, ovvero del tipo:
+
+  
+    
+      
+        
+          a
+          
+            11
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        2
+        
+          a
+          
+            12
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              x
+              ∂
+              y
+            
+          
+        
+        +
+        
+          a
+          
+            22
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        g
+        (
+        x
+        ,
+        y
+        ,
+        u
+        ,
+        ∇
+        u
+        )
+        =
+        0
+      
+    
+    {\displaystyle a_{11}(x,y){\frac {\partial ^{2}u}{\partial x^{2}}}+2a_{12}(x,y){\frac {\partial ^{2}u}{\partial x\partial y}}+a_{22}(x,y){\frac {\partial ^{2}u}{\partial y^{2}}}+g(x,y,u,\nabla u)=0}
+  
+
+Supponendo che 
+  
+    
+      
+        
+          a
+          
+            11
+          
+        
+      
+    
+    {\displaystyle a_{11}}
+  
+, 
+  
+    
+      
+        
+          a
+          
+            12
+          
+        
+      
+    
+    {\displaystyle a_{12}}
+  
+ e 
+  
+    
+      
+        
+          a
+          
+            22
+          
+        
+      
+    
+    {\displaystyle a_{22}}
+  
+ non siano tutti nulli, i termini con le derivate seconde definiscono una forma quadratica nel punto 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{0},y_{0})}
+  
+:
+
+  
+    
+      
+        σ
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        ;
+        
+          p
+          
+            1
+          
+        
+        ,
+        
+          p
+          
+            2
+          
+        
+        )
+        =
+        
+          a
+          
+            11
+          
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+        
+          p
+          
+            1
+          
+          
+            2
+          
+        
+        +
+        2
+        
+          a
+          
+            12
+          
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+        
+          p
+          
+            1
+          
+        
+        
+          p
+          
+            2
+          
+        
+        +
+        
+          a
+          
+            22
+          
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+        
+          p
+          
+            2
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma (x_{0},y_{0};p_{1},p_{2})=a_{11}(x_{0},y_{0})p_{1}^{2}+2a_{12}(x_{0},y_{0})p_{1}p_{2}+a_{22}(x_{0},y_{0})p_{2}^{2}}
+  
+
+alla quale si associa la matrice simmetrica:
+
+  
+    
+      
+        A
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                  (
+                  
+                    x
+                    
+                      0
+                    
+                  
+                  ,
+                  
+                    y
+                    
+                      0
+                    
+                  
+                  )
+                
+                
+                  
+                    a
+                    
+                      12
+                    
+                  
+                  (
+                  
+                    x
+                    
+                      0
+                    
+                  
+                  ,
+                  
+                    y
+                    
+                      0
+                    
+                  
+                  )
+                
+              
+              
+                
+                  
+                    a
+                    
+                      12
+                    
+                  
+                  (
+                  
+                    x
+                    
+                      0
+                    
+                  
+                  ,
+                  
+                    y
+                    
+                      0
+                    
+                  
+                  )
+                
+                
+                  
+                    a
+                    
+                      22
+                    
+                  
+                  (
+                  
+                    x
+                    
+                      0
+                    
+                  
+                  ,
+                  
+                    y
+                    
+                      0
+                    
+                  
+                  )
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle A(x_{0},y_{0})={\begin{pmatrix}a_{11}(x_{0},y_{0})&a_{12}(x_{0},y_{0})\\a_{12}(x_{0},y_{0})&a_{22}(x_{0},y_{0})\end{pmatrix}}}
+  
+
+L'equazione nel punto 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{0},y_{0})}
+  
+ si dice:
+
+Iperbolica se 
+  
+    
+      
+        
+          a
+          
+            12
+          
+          
+            2
+          
+        
+        −
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            22
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle a_{12}^{2}-a_{11}a_{22}>0}
+  
+. In tal caso 
+  
+    
+      
+        A
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle A(x_{0},y_{0})}
+  
+ non ha autovalori nulli.
+Ellittica se 
+  
+    
+      
+        
+          a
+          
+            12
+          
+          
+            2
+          
+        
+        −
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            22
+          
+        
+        <
+        0
+      
+    
+    {\displaystyle a_{12}^{2}-a_{11}a_{22}<0}
+  
+. In tal caso tutti gli autovalori di 
+  
+    
+      
+        A
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle A(x_{0},y_{0})}
+  
+ sono tutti positivi o tutti negativi.
+Parabolica se 
+  
+    
+      
+        
+          a
+          
+            12
+          
+          
+            2
+          
+        
+        −
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            22
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle a_{12}^{2}-a_{11}a_{22}=0}
+  
+. In tal caso 
+  
+    
+      
+        A
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle A(x_{0},y_{0})}
+  
+ ha almeno un autovalore nullo.
+Le equazioni a coefficienti costanti sono iperboliche, ellittiche o paraboliche in tutti i punti del loro dominio, ed in tal caso si parla rispettivamente di "equazione iperbolica", "equazione ellittica" o "equazione parabolica". Ad esempio l'equazione di Poisson (e la sua versione omogenea, l'equazione di Laplace) è ellittica, l'equazione del calore è parabolica, e l'equazione delle onde è iperbolica.
+Le equazioni a coefficienti non costanti possono tuttavia presentare un carattere "misto", cioè possono essere iperboliche in alcune regioni del dominio ed ellittiche o paraboliche in altre. Ad esempio l'equazione di Eulero-Tricomi:
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        x
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial x^{2}}}=x{\frac {\partial ^{2}u}{\partial y^{2}}}}
+  
+
+è ellittica nella regione 
+  
+    
+      
+        x
+        <
+        0
+      
+    
+    {\displaystyle x<0}
+  
+, iperbolica nella regione 
+  
+    
+      
+        x
+        >
+        0
+      
+    
+    {\displaystyle x>0}
+  
+ e parabolica degenere sulla retta 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\displaystyle x=0}
+  
+.
+
+
+== Equazioni differenziali algebriche ==
+
+
+== Formulazione debole di un problema differenziale ==
+
+
+== Esempio ==
+Un esempio elementare di come le equazioni differenziali possano emergere naturalmente nello studio dei sistemi è il seguente: si supponga di avere una popolazione di batteri composta inizialmente da 
+  
+    
+      
+        P
+        (
+        t
+        =
+        0
+        )
+        =
+        
+          P
+          
+            0
+          
+        
+      
+    
+    {\displaystyle P(t=0)=P_{0}}
+  
+ individui e sia 
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  
+ la popolazione al tempo 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+. È ragionevole aspettarsi che, in media, in ogni istante 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ dopo un tempo relativamente piccolo 
+  
+    
+      
+        d
+        t
+      
+    
+    {\displaystyle dt}
+  
+ nasca una quantità di nuovi individui proporzionale alla popolazione e al tempo trascorso 
+  
+    
+      
+        d
+        t
+      
+    
+    {\displaystyle dt}
+  
+, cioè pari a 
+  
+    
+      
+        n
+        P
+        (
+        t
+        )
+        d
+        t
+      
+    
+    {\displaystyle nP(t)dt}
+  
+, dove 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ è un numero (che si suppone costante) che individua il tasso di natalità. Analogamente è ragionevole aspettarsi che muoiano 
+  
+    
+      
+        m
+        P
+        (
+        t
+        )
+        d
+        t
+      
+    
+    {\displaystyle mP(t)dt}
+  
+ individui nello stesso intervallo di tempo, essendo 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ il tasso (costante) di mortalità. La popolazione al tempo 
+  
+    
+      
+        t
+        +
+        d
+        t
+      
+    
+    {\displaystyle t+dt}
+  
+, quindi, sarà data dalla popolazione al tempo 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ a cui si aggiunge la popolazione appena nata e si sottrae quella morta, ovvero:
+
+  
+    
+      
+        P
+        (
+        t
+        +
+        d
+        t
+        )
+        =
+        P
+        (
+        t
+        )
+        +
+        n
+        P
+        (
+        t
+        )
+        d
+        t
+        −
+        m
+        P
+        (
+        t
+        )
+        d
+        t
+        =
+        P
+        (
+        t
+        )
+        +
+        (
+        n
+        −
+        m
+        )
+        P
+        (
+        t
+        )
+        d
+        t
+      
+    
+    {\displaystyle P(t+dt)=P(t)+nP(t)dt-mP(t)dt=P(t)+(n-m)P(t)dt}
+  
+
+Quindi si ha che:
+
+  
+    
+      
+        
+          
+            
+              P
+              (
+              t
+              +
+              d
+              t
+              )
+              −
+              P
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        (
+        n
+        −
+        m
+        )
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle {\frac {P(t+dt)-P(t)}{dt}}=(n-m)P(t)}
+  
+
+Si può riconoscere nell'espressione a primo membro il rapporto incrementale della funzione 
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  
+; se 
+  
+    
+      
+        d
+        t
+      
+    
+    {\displaystyle dt}
+  
+ è molto piccolo, tale rapporto verrà sostituito con la derivata 
+  
+    
+      
+        
+          P
+          ′
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle P'(t)}
+  
+ e si scriverà:
+
+  
+    
+      
+        
+          P
+          ′
+        
+        (
+        t
+        )
+        =
+        (
+        n
+        −
+        m
+        )
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P'(t)=(n-m)P(t)}
+  
+
+Questa è un'equazione differenziale ordinaria del primo ordine. Risolvere questa equazione significa determinare l'andamento nel tempo della popolazione, cioè la funzione 
+  
+    
+      
+        P
+        (
+        t
+        )
+      
+    
+    {\displaystyle P(t)}
+  
+. Si sta cercando quindi una funzione che sia dimensionalmente sommabile alla sua derivata prima, ovvero la funzione esponenziale (la cui derivate sono la funzione stessa per una costante):
+
+  
+    
+      
+        P
+        (
+        t
+        )
+        =
+        a
+        
+          e
+          
+            k
+            t
+          
+        
+      
+    
+    {\displaystyle P(t)=ae^{kt}}
+  
+
+dove 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ e 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ sono costanti. Imponendo di rispettare il vincolo 
+  
+    
+      
+        
+          P
+          ′
+        
+        (
+        t
+        )
+        −
+        (
+        n
+        −
+        m
+        )
+        P
+        (
+        t
+        )
+        =
+        0
+      
+    
+    {\displaystyle P'(t)-(n-m)P(t)=0}
+  
+ si ha:
+
+  
+    
+      
+        P
+        (
+        t
+        )
+        =
+        
+          P
+          
+            0
+          
+        
+        
+          e
+          
+            (
+            n
+            −
+            m
+            )
+            t
+          
+        
+      
+    
+    {\displaystyle P(t)=P_{0}e^{(n-m)t}}
+  
+
+Si tratta di una funzione esponenziale che cresce nel tempo se 
+  
+    
+      
+        n
+        >
+        m
+      
+    
+    {\displaystyle n>m}
+  
+, cioè se la natalità è maggiore della mortalità, e decresce fino ad annullarsi velocemente se 
+  
+    
+      
+        m
+        >
+        n
+      
+    
+    {\displaystyle m>n}
+  
+. Il modello che si è esaminato è particolarmente semplificato; in generale il tasso di crescita non è semplicemente proporzionale alla popolazione presente con una costante fissa di proporzionalità: è ragionevole aspettarsi ad esempio che le risorse a disposizione siano limitate ed insufficienti a soddisfare una popolazione arbitrariamente grande. Si possono considerare, inoltre, situazioni più complicate come quella in cui ci siano più popolazioni che interagiscono tra loro, come ad esempio prede e predatori nel modello di Volterra-Lotka.
+
+
+== Soluzioni ==
+Solitamente non è possibile trovare soluzioni esatte per le equazioni differenziali. Invece che trovare un'espressione analitica di una funzione che soddisfi l'equazione si è spesso limitati a studiarne l'esistenza e l'andamento qualitativo, oppure se ne determinano soluzioni approssimate servendosi di computer in grado di effettuare approssimazioni tramite metodi di calcolo numerici. Nel corso dei secoli sono tuttavia stati trovati diversi casi in cui è possibile ricavare l'espressione analitica di funzioni che sono soluzione di un'equazione differenziale, così come sono stati sviluppati molti strumenti di vario tipo per la ricerca di tali soluzioni: per affrontare le equazioni ordinarie si può ricorrere ad esempio all'utilizzo di un fattore di integrazione, del metodo delle differenze finite, del metodo delle variazioni delle costanti e diversi altri metodi di soluzione analitica e numerica.
+Per quanto riguarda le equazioni alle derivate parziali, non vi è una teoria generale per analizzarle, ma vi sono casi in cui è possibile trovare una soluzione unica che dipende in modo continuo dai dati forniti dal problema. Tali soluzioni sono dette "classiche", e si distinguono da soluzioni deboli o generalizzate. Tra i molti metodi utilizzati per studiare le PDE vi è il metodo delle caratteristiche, l'utilizzo della funzione di Green, diverse trasformate integrali o il metodo di separazione delle variabili.
+Accade inoltre spesso che si identificano classi di funzioni caratterizzate dal fatto che soddisfano alcune importanti equazioni differenziali, e per tale motivo godono di proprietà particolari che le rendono di notevole interesse. Ad esempio le onde, che soddisfano l'equazione delle onde, le funzioni armoniche, che soddisfano l'equazione di Laplace, e le funzioni speciali, tra cui le funzioni ipergeometriche che soddisfano l'equazione ipergeometrica, oppure le funzioni di Struve, le funzioni di Anger e le funzioni di Weber che soddisfano le equazioni di Bessel.
+
+
+=== Soluzioni numeriche ===
+
+Le soluzioni numeriche sono degli algoritmi che permettono di approssimare la soluzione del sistema di equazioni differenziali che costituiscono il modello matematico del sistema. Questi algoritmi sono alla base dei software di simulazione come MATLAB/Simulink ed in linea generale possono risolvere anche problemi che non ammettono soluzioni in forma chiusa.
+
+
+== Software ==
+ExpressionsinBar
+Maple: dsolve
+SageMath
+Xcas: desolve(y'=k*y,y)
+
+
+== Note ==
+
+
+== Bibliografia ==
+Nicola Fusco, Paolo Marcellini, Carlo Sbordone, Lezioni di analisi matematica due, Zanichelli, 2020, ISBN 9788808520203, Capitoli 4 e 5.
+(EN) George Boole, A treatise on differential equations, Cambridge, MCMILLAN AND CO., 1859. URL consultato il 14 luglio 2021. Ospitato su Gallica.
+(EN)  W. W. Johnson A treatise on ordinary and partial differential equations. (J. Wiley & Sons, New York, 1889)
+(EN)  T. Craig A treatise on linear differential equations (J. Wiley & Sons, New York, 1889)
+(EN) E. Goursat A course of mathematical analysis, part II of volume II (Ginn & co. 1917)
+(EN) Lawrence C. Evans, Partial Differential Equations, American Mathematical Society, 1998, ISBN 0-8218-0772-2.
+(EN) H. Bateman Differential Equations ( Longmans, Green and co., London, 1918)
+(EN) E. L. Ince Ordinary Differential Equations (Longman Greens, London, 1927)
+(EN) A. R. Forsyth A Treatise On Differential Equations (MacMillan, London, 1929)
+(EN) E. G. C. Poole Introduction To The Theory Of Linear Differential Equations (Clarendon Press, Oxford, 1936)
+(FR) E. Picard Traité d'Analyse (vol. 3) (Gauthier-Villars, 1896)
+(FR) C. Jordan Cours d'Analyse de l'Ecole Polytechnique (vol. 3) (Gauthier-Villars, 1913)
+(EN) P. L. Sachdev A Compendium on Nonlinear Ordinary Differential Equations (John Wiley, 1997) ISBN 0-471-53134-0
+(DE) L. Schlesinger Handbuch der Theorie der linearen Differentialgleichungen (Erster Band)(B. G. Teubner, Leipzig, 1895)
+(DE) L. Schlesinger Handbuch der Theorie der linearen Differentialgleichungen (Zweiter Band, Erster Theil) (B. G. Teubner, Leipzig, 1897)
+(DE) L. Schlesinger Handbuch der Theorie der linearen Differentialgleichungen (Zweiten Band, Zweiter Theil) (B. G. Teubner, Leipzig, 1898)
+(DE) H. Liebmann Lehrbuch der Differentialgleichungen (Veit & Comp., 1901)
+
+
+== Voci correlate ==
+Analizzatore differenziale
+Condizione al contorno
+Condizioni iniziali
+Controllo automatico
+Derivata
+Equazione alle derivate parziali
+Equazione differenziale algebrica
+Equazione differenziale lineare
+Equazione differenziale ordinaria
+Equazione differenziale stocastica
+Equazione integro-differenziale
+Formulazione debole
+Integrale
+Problema ai valori iniziali
+Problema di Cauchy
+Sistema dinamico
+Teorema di Cauchy-Kovalevskaya
+Teorema di esistenza di Peano
+Teorema di esistenza e unicità per un problema di Cauchy
+
+
+== Altri progetti ==
+
+ Wikiquote contiene citazioni di o su equazione differenziale
+ Wikimedia Commons contiene immagini o altri file su equazione differenziale
+
+
+== Collegamenti esterni ==
+
+ Michiel Bertsch, EQUAZIONI DIFFERENZIALI, in Enciclopedia Italiana, V Appendice, Istituto dell'Enciclopedia Italiana, 1992. 
+ equazione differenziale, in Enciclopedia della Matematica, Istituto dell'Enciclopedia Italiana, 2013. 
+(EN) differential equation, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Eric W. Weisstein, Equazione differenziale, su MathWorld, Wolfram Research. 
+V. Moretti Introduzione alla teoria delle equazioni alle Derivate Parziali del secondo ordine dispense università di Trento
+Modellizzazione con equazioni differenziali Introduzione alla modellizzazione mediante equazioni differenziali, con commenti critici.
+(EN) EqWorld, su eqworld.ipmnet.ru.

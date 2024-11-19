@@ -1,0 +1,161 @@
+Unicode je technická norma pro oblast výpočetní techniky definující jednotnou znakovou sadu a konzistentní kódování znaků pro reprezentaci a zpracovávání textů použitelné pro většinu písem používaných v současnosti na Zemi. Unicode je vyvíjen v součinnosti s ISO/IEC 10646 a je publikován elektronicky jako The Unicode Standard. Nejnovější verze obsahuje repertoár více než 140 000 znaků pokrývajících 159 moderních a historických písem a mnoho sad symbolů. Standard sestává ze sady tabulek pro vizuální referenci, popisu metod kódování, sady referenčních datových souborů a dalších položek, jako například vlastností znaků, pravidel pro normalizaci textů, dekompozici, řazení, vykreslování a zobrazování obousměrného textu (pro správné zobrazení textu obsahující písma psaná zprava doleva i zleva doprava, jako například arabské a hebrejské písmo). Poslední verze je Unicode 16.0 ze září roku 2024. Normu udržuje Unicode Consortium.
+Úspěch Unicode v unifikaci znakových sad vedl k jeho rozšíření a převládajícímu používání pro internacionalizaci a lokalizaci počítačového softwaru. Unicode je implementován mnoha technologiemi, včetně moderních operačních systémů, XML, programovacím jazykem Java a .NET Frameworkem firmy Microsoft.
+Unicode definuje několik způsobů reprezentace textů různými znakovými kódy. K nejpoužívanějším kódováním patří UTF-8, UTF-16 a zastaralé UCS-2. UTF-8 používá jeden bajt pro libovolný ASCII znak, přičemž všechny ASCII znaky mají v UTF-8 stejné kódové hodnoty jako ASCII a dva až čtyři bajty pro jiné znaky. UCS-2 používá 16bitové kódové jednotky (dva 8bitové bajty) pro každý znak, ale neumožňuje kódovat všechny znaky v aktuálním standardu Unicode. UTF-16 je rozšíření UCS-2, které pomocí dvou 16bitových jednotek (4 × 8 bit) umožňuje kódovat všechny znaky z Unicode. V Číně se používá kódování GB18030, které přebírá celý znakový repertoár Unicode, proto je také jedním ze způsobů kódování Unicode. Mapování GB18030 na UTF-32 je však netriviální (potřebuje převodní tabulku).
+Umožňuje současně používat různá písma při vícejazyčném zpracování textu v počítači a kóduje široké portfolio znaků pro profesionální zpracování textů v prakticky jakémkoli moderním i historickém jazyce. Nevýhodou unicode může být složitější zpracování, stejný text zabírá více prostoru na disku nebo v operační paměti počítače. Ovšem výhody univerzální znakové sady drtivě převažují, což je vidět mj. na tom, že starší osmibitové znakové sady jsou dnes definované jako podmnožiny Unicode.
+
+
+== Historie ==
+Ke konci osmdesátých let 20. století vznikla naléhavá potřeba sjednotit různé kódové tabulky znaků pro národní abecedy. Pro český jazyk se používalo nejméně 5 různých kódování (kódování bratří Kamenických, PC Latin 2, Windows-1250, ISO Latin 2, KOI8-CS) a podobná situace byla ve všech jazycích, které nevystačily se základní 7bitovou tabulkou ASCII znaků, což přinášelo problémy při přenosech dat mezi programy a platformami a spolupráci aplikací.
+V té době vznikly současně dva projekty pro vytvoření jednotné univerzální kódovací tabulky znaků. Byl to projekt ISO 10646 organizace ISO a projekt Unicode. Norma ISO definuje tzv. UCS – Universal Character Set. Kolem roku 1991 došlo k dohodě a projekty spojily své úsilí na vytvoření jednotné tabulky. Oba projekty stále existují a publikují své standardy samostatně, ale tabulky znaků jsou kompatibilní a jejich rozšiřování je koordinováno.
+
+
+=== Historie verzí Unicode ===
+Všechny verze Unicode od 2.0 výše jsou zpětně kompatibilní, jsou přidávány pouze nové znaky, existující znaky nejsou vyřazovány nebo přejmenovávány. Poslední verze publikovaná v knižní podobě byla verze Unicode 5.2 (ISBN 0-321-48091-0); od verze 6.0 je plný text normy publikován pouze elektronicky; v roce 2012 bylo oznámeno, že od verze 6.1 bude v knižní podobě dostupné pouze jádro normy (v té době čítající 692 stránek) tištěných na žádost. Na rozdíl od předchozích hlavních verzí výtisků normy, tištěná verze nezahrnuje žádné tabulky kódu nebo doplňky standardu. Celý standard, včetně jádra, je volně dostupný na WWW serveru Unicode konsorcia.
+
+Unicode 1.0 (1991), Unicode 1.1 (1993, odpovídá normě ISO 10646-1:1993,)
+Unicode 2.0 (1996), Unicode 2.1 (1998)
+Unicode 3.0 (1999, 2000, odpovídá normě ISO 10646-1:2000), Unicode 3.1 (2001), Unicode 3.2 (2002)
+Unicode 4.0 (2003, odpovídá třetí verzi ISO 10646:2003), Unicode 4.1 (2005)
+Unicode 5.0 (2006), Unicode 5.1 (2008), Unicode 5.2 (2009) – celkem obsahuje 107361 znaků z 90 různých jazyků a abeced.
+Unicode 6.0 (2010), Unicode 6.1 (2012), Unicode 6.2 (2012), Unicode 6.3 (2013)
+Unicode 7.0 (2014) – rozšiřuje množinu znaků o asi 250 znaků emodži., celkem přidává 2834 nových znaků (327 do BMP, zbytek do Plane 1), zavádí 23 nových jazyků.
+Unicode 8.0 (2015) – obsahuje celkem 120737 grafických znaků ve 129 písmech; zavádí podporu abecedy Ahom, anatolských hieroglyfů, abeced Hatran, Multani, Rovas a znakopisu, doplňuje 5771 unifikovaných CJK ideografů, sadu malých písmen pro slabičné písmo Cherokee a pět emoji modifikátorů pro odstíny kůže.
+Unicode 9.0 (2016)
+Unicode 10.0 (2017) – definuje celkem 136690 znaků ze 139 jazyků a abeced
+Unicode 11.0 (2018)
+Unicode 12.0 (2019)
+Unicode 13.0 (2020) – definuje 143859 znaků ve 154 písmech
+Unicode 14.0 (2021) – definuje 144697 znaků ve 159 písmech
+Unicode 15.0 (2022) – definuje 149186 znaků ve 161 písmech
+Unicode 16.0 (2024) – definuje 154998 znaků ve 168 písmech
+
+
+== Principy standardu Unicode ==
+Jednotnost – konstantní šířka znaků (UTF-32) dovoluje efektivní hledání, řazení, editaci a zobrazení prvků.
+Univerzálnost – zahrnutí všech znaků, které by mohly být využity při výměně textů – především ty, které už byly definovány v hlavních mezinárodních, národních a průmyslových znakových sadách.
+Jednoznačnost – jakákoli 16bitová (dnes 32bitová) hodnota zastupuje v jakémkoliv kontextu stejný znak.
+Maximální využití – snadná zpracovatelnost textu poskládaného z posloupnosti znaků o konstantní šířce; kódování znaků není závislé na kontextu, pro strojové zpracování textu není nutné vyhodnocovat escape sekvence nebo prohledávat text dopředu či zpět kvůli určení totožnosti znaků.
+Standard Unicode se oproti ISO 10646 navíc zabývá implementací algoritmů pro písma psaná zprava doleva (např. arabština), podporou oboustranných textů (jako např. směs hebrejštiny a latinky), algoritmy pro řazení a porovnávání textů.
+Unicode Consortium může neustále aktualizovat rozsah znaků v tabulce Unicode vydávaním nových verzí. Proto následující řádky nemusí být v budoucnu stále platné. Unicode verze XX (rok XX?????) nezahrnuje znaky, které neslouží k zápisu textu, jako jsou například taneční či hudební značky. Rovněž se nezabývá variantami zobrazení znaků (ve fontu může být více glyfů pro jeden význam, resp. pro jeden kód dle tabulky) a neobsahuje speciální znaky pro přechodné vkládání textu. Ve znakovém repertoáru Unicode kódování je vyhrazeno 6400 znaků pro potřebu programů, jejichž využití není nijak omezeno.
+V souvislosti s jazyky jako je wachánština, jejichž ortografie založené na latince používají několik znaků cyrilice či řeckého písma, byla řešena otázka, zda kvůli nim do Unicode přidat znaky jako latinská delta, latinská théta či latinské jery jako latinské protějšky těchto řeckých a cyrilských písmen. Jeden z názorů na tuto problematiku je, že požadavek, aby jazyk byl zapisován pouze znaky jednoho písma, je umělý, a že v minulosti si různé jazyky půjčovaly písmena i z jiných písem, takže na soubor písmen latinky, cyrilice a řeckého písma může být nahlíženo jako na latinsko-cyrilsko-řecké metapísmo, a tedy pro zápis těchto jazyků používat písmena v Unicode již obsažená místo vytváření nových. I v případě, kdy by tato písmena byla zavedena, lze očekávat, že by i nadále pro zápis byly používány řecké a cyrilské verze těchto písmen, protože latinské verze by byly obsaženy pouze v malém počtu fontů.
+Tento princip může způsobovat problémy při zpracování čínského, japonského a korejského písma (CJK), které mají společný historický základ, ale mají např. v Číně a Japonsku posunutý význam a odlišný tvar.
+
+
+== Architektura Unicode ==
+
+
+=== Basic Multilingual Plane ===
+Unicode byl původně navrhován jako 16bitová znaková sada, což se později (hlavně s ohledem na čínské znaky) ukázalo jako nedostatečné. Původní rozsah Unicode, tj. prvních 65 536 znaků, které jsou reprezentovatelné pomocí 16 bitů, se označuje jako BMP (Basic Multilingual Plane) – základní vícejazyčná rovina Unicode.
+
+
+=== Roviny Unicode ===
+Standard ISO/IEC 10646 oproti Unicode zpočátku používal 31bitové kódování znaků, které umožňuje reprezentaci více než 2 miliard znaků. Toto množství se ukázalo být zbytečně velké, proto bylo v listopadu 2003 v souvislosti se zavedením kódování UTF-16 omezeno na rozsah 0 až 10FFFF16 rozdělený na 17 tak zvaných rovin (anglicky plane) po 65 536 znacích (1000016). Celý rozsah kódů tak lze rozdělit na BMP (Plane 0), Plane 1, Plane 2, ... až Plane 16. Celková kapacita Unicode je tedy 1114112 kódových bodů.
+
+
+=== Náhradní páry ===
+Znaky mimo BMP se v UTF-16 kódují dvojicí speciálních kódů, které se nazývají zástupné nebo náhradní páry (anglicky surrogate pairs, surrogates). Kódy používané pro náhradní páry spadají do BMP a nejsou jim přiřazeny žádné znaky.
+
+
+=== Skupiny Unicode ===
+Písma
+podle místa původu: Evropa, Afrika, Blízký východ, Střední Asie, Jižní Asie, Jihovýchodní Asie, Východní Asie, Indonésie a Oceánie, Amerika
+kombinující diakritika
+fonetické znaky a zkratky: IPA
+Číslice a číselné znaky: číselné formy, zlomky, horní/dolní indexy
+Interpunkční znaménka: obecná interpunkce
+CJK
+Symboly: alfanumerické, kombinující diakritika, technické symboly, matematické symboly, ostatní symboly
+Speciální: kontrolní znaky, osobní použití (v tabulce v PUA – „Private Use Area“), náhradní symboly, „ne-znaky“, rezervované znaky
+
+
+=== Mapa Unicode ===
+Každý znak má jednoznačný číselný kód a svůj název. Navíc Unicode definuje u každého znaku některé základní vlastnosti, jako např. zda se jedná o písmeno, symbol atd., zda je písmeno velké či malé atp.
+Tabulka Unicode poskytuje prostor pro 1 114 112 znaků s kódy 016 až 10FFFF16. Tento prostor se dělí na 17 částí, každý o velikosti 216. První část se nazývá Basic Multilingual Plane (BMP) a obsahuje znaky běžně používaných abeced. Původní 16bitový návrh Unicode počítal jen s BMP, následně se ale ukázalo, že pro pokrytí všech používaných abeced to nestačí.
+Prvních 128 znaků (tj. sedmibitové kódy) obsahuje znakovou sadu ASCII. Osmibitové kódy (tj. prvních 256 znaků) obsahují znakovou sadu ISO 8859-1 (ISO 8859-1 obsahuje ASCII).
+V Unicode jsou také rezervovány místa pro vlastní znaky. Pro tento účel byla v Unicode tabulce rezervována tzv. PUA sekce (Private Use Area), ve které je možné využít volné kódy pro osobní potřebu. Takto je možné, aby tvůrci fontů vkládali k písmu vlastní grafiky jako jsou loga apod. 
+Je nutné si uvědomit, že v Unicode jsou to trvale volná místa a přináší jen jediný benefit – že nebudou zaměněny za jiný znak. V případě změny za cizí font je obvykle znak zvýrazněný jako chybějící. 
+Použití vlastních znaků v textu lze doporučit, jen pokud mají dekorativní funkci. Důvodem je jejich omezení v reprodukování. Vlastní znaky nelze volně přes internetovou síť dále reprodukovat (zobrazit, tisknout, číst hlasem), ale ani vyhledat. Existence těchto znaků může být spojená pouze s konkrétním fontem. Pokud se dokument bude pohybovat ve známém prostředí, např. intranet, tak s vlastním, resp. firemním fontem lze zajistit alespoň vizuální reprodukovatelnost (zobrazení, tisk) těchto znaků. 
+Zajistit správné zobrazení na internetové síti lze pomocí uzavřeného formátu, například v PDF souboru. Tento elektronický dokument by však měl splňovat kritéria nejen pro správné zobrazení, ale také například čitelnost pro vyhledávače, reprodukovatelnost přes screen-readery pro zrakově postižené apod. Zajistěte při použití vlastních znaků, aby nenesly „čtenou“ informaci a měly jen dekorativní funkci.
+
+
+=== Kódování ===
+
+Existuje několik různých způsobů, jak kódovat řetězce složené ze znaků (kódových bodů) Unicode. Unicode řetězec je sekvencí kódových bodů Unicode. Způsob jak tuto sekvenci uložit do paměti počítače nebo serializovat na disk se označuje jako kódovací znakové schéma (Character Encoding Scheme), které zahrnuje způsob kódování znaků a způsob jejich serializace do sekvence bajtů. Základní kódování Unicode jsou:
+
+UTF-8
+UTF-16 (UTF-16BE, UTF-16LE)
+UTF-32 (UTF-32BE, UTF-32LE)
+GB18030 – čínský standard, není definováno v normě Unicode, ale je na Unicode vázané (znakový repertoár je shodný s Unicode)
+Kódování UTF-32, UTF-16 a UCS-2 mají každá své varianty podle používaného pořadí bajtů. Buď je napevno stanoveno pořadí little-endian, resp., big-endian, nebo se toto pořadí určuje podle tzv. byte order mark (BOM), speciální značky umístěné na začátku textu.
+
+
+==== UTF-32 ====
+V kódování UTF-32 (též označováno jako UCS-4) je každý znak reprezentován přímo 32bitovým číslem. Jedná se tedy o principiálně velmi jednoduché kódování (jeho hlavní výhodou je stejná délka všech znaků), které však má poměrně vysoké nároky na paměť. Při serializaci do posloupnosti bajtů se podle endianity rozlišují varianty UTF-32BE (big-endian), UTF-32LE (little-endian) a UTF-32 (nestanoveno, může být určeno pomocí BOM).
+
+
+==== UTF-16 ====
+V kódování UTF-16 se znaky BMP reprezentují jedním 16bitovým číslem, znaky mimo BMP jsou reprezentovány párem 16bitových čísel (tzv. surrogate pair). Pro surrogate pairs se používají čísla v rozsahu D80016–DFFF16, přičemž odpovídající znaky v BMP (U+D800 – U+DFFF) jsou rezervovány pro tento účel, nemohou se proto v původním textu vyskytnout.
+Podle endianity se rozlišují varianty UTF-16BE (big-endian), UTF-16LE (little-endian) a UTF-16 (nestanoveno, může být určeno pomocí BOM). UTF-16 je výrazně úspornější než UTF-32, ale ztrácí výhodu pevné šířky znaku – některé znaky jsou široké 2 bajty, některé 4. Přesto se jedná o kódování používané jako základní ve velkém množství operačních systémů a dalšího softwaru (např. Microsoft Windows, .NET Framework atd.).
+
+
+==== UTF-8 ====
+UTF-8 kóduje znaky různě dlouhou (1–4 bajty, pro původní 31bitové ISO/IEC 10646 až 6 bajtů) posloupností bajtů podle jejich kódu v Unicode. Znaky ASCII (U+0000 – U+007F) jsou kódovány jedním bajtem, identicky jako v ASCII, znaky v rozsahu U+0080 – U+07FF (kde jsou také všechny znaky s diakritikou používané v české abecedě) jsou kódovány dvěma bajty, znaky U+0800 – U+FFFF (kam patří znak Euro – € – U+20AC) jsou kódovány třemi bajty, znaky mimo BMP jsou kódovány čtyřmi bajty. Znaky s vyššími kódy podle původního návrhu ISO/IEC 10646 by používaly pětibajtové a šestibajtové kódování.
+UTF-8 se často používá pro přenos dat, neboť je prostorově úsporné (hlavně pro texty psané latinkou s nevelkým počtem znaků s diakritikou, které obsahují většinu jednobajtových a zbytek dvoubajtových kódů; v nelatinkových písmech je většina textu tvořena dvoubajtovými kódy, písma Dálného východu používají tříbajtové kódy), je odolné proti chybám a zpětně kompatibilní s ASCII. Při jeho zpracování je však nepříjemná nestejná délka znaků. Je preferovaným kódováním v unixových systémech, které používají Unicode.
+Použití BOM jako příznaku endianity je u UTF-8 zbytečné (pořadí bajtů je jednoznačně určeno), BOM však může posloužit pro snadnou detekci, že se jedná o UTF-8.
+UTF-8 je popsané v ISO 10646-1:2000 Annex D a také v RFC 3629.
+
+
+==== UCS-2 ====
+UCS-2 kóduje každý znak z BMP pomocí šestnáctibitového čísla; znaky mimo BMP nelze v UCS-2 reprezentovat, proto je UCS-2 omezená znaková sada, podobně jako ASCII. Při reprezentaci proudem oktetů (bajtů) má varianty big endian a little endian. Proud dat může být zahájen BOM. UCS-2 bylo vyřazeno ze standardu v roce 1996. Výhodou UCS-2 oproti UTF-8 nebo UTF-16 je konstantní délka znaku a snadné zjišťování počtu znaků v řetězci. Obsahuje-li text pouze znaky z BMP, je UCS-2 nerozlišitelné od UTF-16.
+
+
+==== Další kódování ====
+Z různých důvodů existují také další, méně často používaná, kódování, jako UTF-7 či CESU-8.
+
+
+== Využití ==
+
+
+=== Operační systémy ===
+Znakovou sadu Unicode používá většina moderních operačních systémů. Operační systémy Microsoft Windows používají pro vnitřní zápis znaků (např. jména souborů a adresářů v NTFS) od Windows 2000 kódování UTF-16, avšak zároveň se v české mutaci používá kódování CP1250 (historicky) a CP852 (v příkazovém řádku).
+Většina distribucí Linuxu používá buď rovnou UTF-8 nebo umožňuje jeho ruční nastavení.
+
+
+=== Aplikace ===
+Některé starší aplikace Unicode (dosud) nepodporují. Na druhé straně pro některé systémy je Unicode již jedinou používanou znakovou sadou. Programovací jazyky Java a jazyky podporující Common Language Infrastructure (např. C#) vnitřně používají šestnáctibitovou verzi Unicode a navenek podporují mnoho různých kódování. Též systémy řízení báze dat dnes již často používají Unicode pro uložení znakových údajů. Na Unicode je založen kancelářský balík Microsoft Office od verze 97.
+
+
+=== Web ===
+Unicode je znakovou sadou pro HTML dokumenty od verze 4.0 a pro všechny XML dokumenty. Výchozím kódováním je UTF-8, které všechny prohlížeče podporují už delší dobu.
+
+
+=== Čeština ===
+Na rozdíl od dřívějších osmibitových tabulek znaků jako je bratří Kamenických, Latin 2, Windows-1250 či ISO-8859-2 lze všechny znaky zobrazit zároveň; v jednom textu lze tedy kombinovat např. češtinu (latinka), ruštinu (cyrilice) a řečtinu (alfabeta). Pro reprezentaci českých znaků existují dva způsoby. Buď lze použít "předkomponovaný" (precomposed) znak, tedy např. pro dlouhé A kód U+00C1, nebo je možné tento znak složit jako sekvneci <U+0041, U+0301>. Tedy ze znaku A (kód U+0041) a znaku COMBINING ACUTE ACCENT (kombinační dlouhý přízvuk, kód U+0301). Kombinační diakritický znak se vkládá za znak, který modifikuje. Z toho vyplývají možné problémy při porovnávání řetězců, tzn. řetězce je třeba před porovnáváním normalizovat.
+Základní formy normalizace jsou: NFD (kanonická dekompozice), NFC (kanonická kompozice), NFKD (kompatibilní dekompozice), NFKC (kompatibilní kompozice). Více viz přílohu Unicode Normalization Forms standardu Unicode.
+
+
+==== Tabulka českých znaků Unicode ====
+
+Tabulka českých diakritických znamének
+
+
+== Odkazy ==
+
+
+=== Poznámky ===
+
+
+=== Reference ===
+V tomto článku byl použit překlad textu z článku Unicode na anglické Wikipedii.
+
+
+=== Literatura ===
+The Unicode Consortium: The Unicode Standard, Version 5.2.0. Mountain View, CA: The Unicode Consortium, 2009. ISBN 978-1-936213-00-9. Poslední tištěná verze Unicode standardu.
+
+
+=== Externí odkazy ===
+ Obrázky, zvuky či videa k tématu Unicode na Wikimedia Commons 
+Unicode v České terminologické databázi knihovnictví a informační vědy (TDKIV)
+unicode.org – oficiální stránky (anglicky)
+DecodeUnicode – Unicode wiki (anglicky, německy)
+Tabulka znaků Unicode (anglicky)

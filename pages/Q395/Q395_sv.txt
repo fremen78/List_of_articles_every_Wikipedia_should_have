@@ -1,0 +1,643 @@
+Matematik (från grekiska: Μαθηματικά) är en abstrakt och generell vetenskap om problemlösning och metodutveckling – abstrakt därför att den frigjort sig från problemens konkreta ursprung och generell därför att den är tillämpbar i ett stort antal områden och teoretiska modeller. Alternativt kan man även benämna den som en vetenskap om kvantitativa relationer och rumsliga strukturer i den verkliga världen. Exempel på matematiska begrepp är tal, data, struktur, kvantiteter, rum och deras förhållanden. Antingen som abstrakta koncept (ren matematik) eller tillämpningar i vetenskapliga discipliner såsom fysik och teknik (tillämpad matematik).
+Medan naturvetenskapen studerar entiteter i tid och rum är det inte uppenbart att samma är sant för de objekt som studeras i matematik. Vidare skiljer sig metoderna för undersökning åt: naturvetenskapen tenderar att använda metoder av induktion och matematiken metoder av deduktion. Av bland annat nämnda skäl väcker matematik ontologiska och kunskapsteoretiska frågor skilda från vetenskapsteorin. Dessa frågor behandlas i matematikfilosofi.
+
+
+== Etymologi ==
+Det grekiska ordet mathemata betyder ungefär vad som lärs, ibland i en generell bemärkelse, ibland relaterat till astronomi, aritmetik och musik. Ordet mathemata och dess släktord har i efterhand trätt in i etymologin hos andra europeiska språk. Franska mathématiques, spanska matemáticas, latinska mathematica och engelska mathematics har alltså ett gemensamt ursprung. Definitionen av ordet matematik har aldrig varit enhetlig och har varierat genom historien och mellan världsdelar som Europa, Kina och Mellanöstern. I historisk forskning om matematik letas ekvivalenta ord i andra kulturer. Genom att undersöka dessa ord och de aktiviteter som förknippats med dessa har historievetenskapen om matematik utvecklats.
+I Sverige har matematik kommit att betyda skolämnet eller vetenskapen matematik, som i meningarna ”lärobok i matematik” och ”professor i matematik”. Ibland sägs vardagligt ”det är matematik”, med avseende på aritmetik som i ”det är lätt att räkna ut”.
+Substantivet matte är i vardagligt tal slanguttryck för ordet matematik, enligt Nationalencyklopedin har slanguttrycket funnits sedan 1924. De engelska motsvarigheterna är math (amerikansk engelska) och maths (brittisk engelska, sedan 1890).
+
+
+== Historia ==
+
+Matematiken har en minst 4000 år lång historia. Vissa menar att matematikens historia går mycket längre bak; bland annat utvecklades matematik i Sumer, södra Mesopotamien och nuvarande Irak, i samband med utvecklandet av skrivkonsten och läsandet för cirka 5000 år sedan. Vår äldsta kunskap om människans användande av matematik är från antika Egypten och Babylonien. Andra kulturer där matematik förekommit är grekisk, arabisk, kinesisk, indisk, mayansk och amerikansk kultur. De matematiska ämnen som diskuterats har varit, bland andra, algebra, analys, tal och talteori, geometri och topologi, matematisk fysik och matematisk astronomi.
+Den förste matematikern känd vid namn hette Ahmes och var en egyptisk skrivare som runt 1650 f.Kr. skrev ned ett antal matematiska problem han kallade antika skrifter. Idag kallas Ahmes antika skrifter för Rhindpapyrusen. Texten visar, tillsammans med andra arkeologiska fynd såsom Plimpton 322 (mellan 1900 och 1600 f.Kr., Babylonien) och Moskva-papyrusen (ca 1700 f.Kr. Mellersta riket, Forntida Egypten), att det antika Egypten och Babylonien, civilisationer före Antikens Grekland, hade ett välutvecklat numeriskt notationssystem.
+
+
+=== Matematiker ===
+Norman L. Biggs skriver i sin lärobok Discrete Mathematics: "Matematiker behandlar påståenden. Ofta handlar påståendena om tal. Påståendena är antingen sanna eller falska. För att bestämma om ett påstående är sant eller falskt krävs ett bevis."
+
+
+== Notation och terminologi ==
+
+Matematiska begrepp införs med en definition som beskriver hur begreppet ska tolkas. Här presenteras ett antal grundläggande begrepp inom modern matematik. Nedanstående ska dock inte tolkas som matematiska definitioner, utan försök att förklara hur begreppen används.
+
+
+=== Mängder ===
+En mängd är en samling objekt, till exempel en samling tal {1, 2, 3} som är en ändlig mängd, {1, 2, 3, ...} är däremot en oändlig mängd där punkterna markerar att numreringen fortsätter. En mängd utan innehåll kallas den tomma mängden. En mängd kan bestå av flera delmängder. Om har två mängder, kan man ta elementen som är gemensamma (snittet) eller ta elementen som finns i någon mängd (unionen). Dessutom kan man ta komplementet, de element som inte finns i den givna mängden men som finns i den största tänkbara mängden. Mängder och dess operationer studeras inom mängdteori, där Zermelo-Fraenkels mängdteori är den vanligaste modellen.
+
+
+=== Funktioner ===
+Funktioner tar värden från ett område, definitionsmängden, och tilldela värden i ett annat område, värdemängden. Inom grundskolan är ofta dessa mängder mängden av de reella talen R.
+
+
+=== Tal ===
+Matematikens numeriska system består bl.a. av de naturliga talen, heltalen, de rationella talen, de reella talen och de komplexa talen. Vi ska i detta avsnitt ge ett förslag till en konstruktion av de naturliga talen som använder sig av Peanos axiom. Utifrån denna konstruktion ska vi ge en axiomatisk definition av heltalen; vi använder ordet axiom för att mena grundantaganden som inte är i sig själva logiskt härledda resultat. Utifrån definitionen av heltal kan vi konstruera de rationella talen genom att använda oss av ordnade par av tal. En konstruktion av de reella talen finns bland annat i Richard Dedekind arbete.
+
+
+==== Konstruktion av de naturliga talen ====
+Med de naturliga talen N, avser vi mängden av icke-negativa heltal (0, 1, 2, osv). Intuitivt bygger vi de hela talen genom att börja med ett unikt element 0. Därefter associerar vi nästa tal i N med 0+1, och andra med (0+1)+1, osv. En sådan här förståelse av de naturliga talen är intuitiv, med det menat icke-formellt, eftersom + inte är en väldefinierad operation. Vi kan inte heller, under denna uppfattning, se att N är en oändlig mängd, ty ett argument för att N är oändligt är följande: (
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+) antag att det finns ett största element n i N, då är n+1 i N och n+1 är större än n, således kan inte n vara det största talet i N och via reductio ad absurdum innehåller inte N ett största tal. Notera påståendet att n+1 är större än n, det är inte sant eftersom vi ännu inte har funnit någon matematisk mening med "större än" eller "mindre än". Peanos axiom löser problemen från denna diskussion:
+Systemet 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+, vars element vi kallar naturliga tal, är en mängd med ett unikt element 0 och en funktion s från N till N så att följande tre villkor är uppfyllda:
+
+  
+    
+      
+        (
+        i
+        )
+        
+        s
+        (
+        n
+        )
+        ≠
+        0
+        
+           för alla element 
+        
+        n
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle (i)\qquad s(n)\neq 0{\text{ för alla element }}n\in \mathbb {N} }
+  
+
+  
+    
+      
+        (
+        i
+        i
+        )
+        
+        s
+        (
+        m
+        )
+        =
+        s
+        (
+        n
+        )
+        ⇒
+        m
+        =
+        n
+        
+           för alla element 
+        
+        m
+        ,
+        n
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle (ii)\qquad s(m)=s(n)\Rightarrow m=n{\text{ för alla element }}m,n\in \mathbb {N} }
+  
+
+  
+    
+      
+        (
+        i
+        i
+        i
+        )
+        
+        
+          om 
+        
+        A
+        ⊆
+        
+          N
+        
+        
+           och 
+        
+        s
+        (
+        n
+        )
+        ∈
+        A
+        
+           för alla 
+        
+        n
+        ∈
+        
+          N
+        
+        
+           så gäller att 
+        
+        A
+        =
+        
+          N
+        
+      
+    
+    {\displaystyle (iii)\qquad {\text{om }}A\subseteq \mathbb {N} {\text{ och }}s(n)\in A{\text{ för alla }}n\in \mathbb {N} {\text{ så gäller att }}A=\mathbb {N} }
+  
+
+Några kommentarer: till varje naturligt tal n säger vi att s(n) är dess efterföljare och vi definierar s i "konkreta" termer genom att skriva 
+  
+    
+      
+        s
+        (
+        n
+        )
+        =
+        n
+        +
+        1
+      
+    
+    {\displaystyle s(n)=n+1}
+  
+. Eftersom vi vill att alla tal i N är icke-negativa är det inte svårt att se att (i) är ett rimligt krav. Angående (ii): antag att kravet inte vore uppfyllt. Vi skulle då ha 
+  
+    
+      
+        s
+        (
+        n
+        )
+        =
+        s
+        (
+        m
+        )
+        ⇒
+        n
+        +
+        1
+        =
+        m
+        +
+        1
+      
+    
+    {\displaystyle s(n)=s(m)\Rightarrow n+1=m+1}
+  
+. Ofta inser vi nu att vi kan subtrahera (en operation ej definierad på 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+, ty om subtraktion vore definierad vore 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ en icke-stängd mängd; dvs. att det finns element i 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ sådan att en binär operation applicerad på dem resulterar i ett element som 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ inte innheåller. T.ex: 0-1=-1 är inte i 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+) och att n=m, så att om m är skilt från n har vi ett matematisk resultat som inte är i enlighet med allmän/kulturell/standardiserad matematisk intuition. Det är därför rimligt att (ii) gäller. (iii) kallar vi för matematisk induktion. A kan tänkas bestå av en mängd egenskaper P(n) som beror på naturliga tal n i 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+. Om det från egenskapen, ibland kallat påstående, P(n) följer att P(n+1) för alla n i 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+, säger vi att P(n) håller för alla n och kan skriva 
+  
+    
+      
+        A
+        =
+        {
+        n
+        ∈
+        
+          N
+        
+        
+          |
+        
+        P
+        (
+        n
+        )
+        }
+        =
+        
+          N
+        
+      
+    
+    {\displaystyle A=\{n\in \mathbb {N} |P(n)\}=\mathbb {N} }
+  
+ (mängden A utläses: mängden av naturliga tal n för vilka P(n) gäller). Att induktion leder till många filosofiska problem är bland annat välkänt efter David Hume.
+Med notationen från Peanos axiom definierar vi addition och multiplikation.
+Addition: För element m, n i 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ har vi att m+n är lika med s applicerad n gånger på s(m). Kortfattat: 
+  
+    
+      
+        m
+        +
+        n
+        =
+        
+          s
+          
+            n
+          
+        
+        (
+        m
+        )
+      
+    
+    {\displaystyle m+n=s^{n}(m)}
+  
+. Då vi utför denna procedur säger vi att vi adderar n till m. Proceduren kallar vi addition. Därmed är + en väldefinierad binär operation.
+Multiplikation: m*n fås av att bygga en funktion g som applicerar s m gånger, och sen applicera g n gånger på 0. Kortfattat: 
+  
+    
+      
+        m
+        ⋅
+        n
+        =
+        (
+        
+          s
+          
+            m
+          
+        
+        
+          )
+          
+            n
+          
+        
+        (
+        0
+        )
+      
+    
+    {\displaystyle m\cdot n=(s^{m})^{n}(0)}
+  
+. Då vi utför denna procedur säger vi att vi multiplicerar m och n. Proceduren kallar vi multiplikation. Därmed är * en väldefinierad binär operation.
+Större än eller lika med: Vi säger att m är större än eller lika med n, skrivet 
+  
+    
+      
+        m
+        ≥
+        n
+      
+    
+    {\displaystyle m\geq n}
+  
+, om ekvationen m=n+x har en lösning x i N. Under samma villkor säger vi att n är mindre än eller lika med m. Om lösningen ges av x=0 säger vi att m är lika med n och skriver 
+  
+    
+      
+        m
+        =
+        n
+      
+    
+    {\displaystyle m=n}
+  
+. Om lösningen x är nollskild, säger vi att m är större än n och skriver 
+  
+    
+      
+        m
+        >
+        n
+      
+    
+    {\displaystyle m>n}
+  
+. Dvs: tecknet 
+  
+    
+      
+        ≥
+      
+    
+    {\displaystyle \geq }
+  
+ kan utläsas "större än eller lika med".
+Argumentet (
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+) för att 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ är en oändlig mängd är nu giltigt baserat på Peanos axiom.
+
+
+==== Definition av heltalen ====
+
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ är en delmängd av heltalen 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+.
+
+
+==== Konstruktion av de rationella talen ====
+
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ är en delmängd av de rationella talen 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+.
+
+
+==== Konstruktion av de reella talen ====
+
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+ är en delmängd av de reella talen 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+.
+
+
+=== Rum ===
+En vektor kan ses som en lista av tal, kallade element. Vektorer kan visas i koordinatsystem, eller definiera ett så kallat vektorrum. Dessa punkter kan sättas samman till geometriska figurer. En vektor kan i stället för tal bestå av andra objekt, som följer vissa grundläggande räkneregler. Till exempel kan polynom användas som vektorer.
+
+
+=== Matematisk notation ===
+Matematisk notation är symboler som låter matematiker uttrycka idéer koncist. Till exempel tros symbolerna för addition och subtraktion uppstått på 1300-talet. Addition betecknas + och subtraktion betecknas −.
+
+
+== Delområden ==
+
+
+=== Aritmetik ===
+Vetenskapen om tal, och operationer på mängder av tal, kallas aritmetik. Aritmetiska operationer inkluderar addition, subtraktion, multiplikation och division, som kallas de fyra räknesätten. Dessutom ingår kongruensrelationen (att resten vid division är lika), faktorisering (uppdelning av ett tal i faktor som multiplicerade ihop blir talet) och potenser (att upphöja ett tal till ett annat).Operatorprioriteten avgör i vilken ordning olika delar av ett matematiskt uttryck ska beräknas. Aritmetiken var en del av quadrivium vid medeltida universitet.
+
+
+=== Geometri ===
+Geometri är vetenskapen om rumsliga strukturer. Under 1600-talet vidaredefinierade René Descartes geometrin till algebraiska formuleringar, ett ämne som kom att kallas analytisk geometri. Några följder av Descartes upptäckter är att olika kägelsnitt kunde representeras i form av korta ekvationer och att plana geometriska figurer kunde avbildas i ett kartesiskt koordinatsystem. Vetenskapen som studerar vinklar och deras förhållanden mellan varandra kallas trigonometri, sambanden mellan geometriska och trigonometriska satser är starka. I modern tid har topologi blivit ett viktigt område, där studeras rumsliga strukturer precis som i geometrin med undantaget att formen, och inga avstånd, hos objekten betraktas. Strukturerna kan töjas eller dras ihop fast håligheter ska bevaras.
+
+
+=== Algebra ===
+Algebra är en sorts vetenskap om kvantitativ balans. Elementär algebra, linjär algebra och abstrakt algebra är exempel på områden som alla behandlar algebraiska strukturer, som innehåller en mängd, några operation och räkneregler för dessa. Elementär algebra behandlar tal och linjär algebra matriser och vektorer. Abstrakt algebra eller modern algebra uppkom på 1800-talet när problem från talteorin och teorin för ekvationer ledde till studien av abstrakta matematiska objekt som kunde vara tal, polynom, permutationer eller element i andra mängder. De aritmetiska operationerna kan tillämpas på dessa objekt.
+
+
+=== Matematisk analys ===
+Matematisk analys handlar om förändring. En stor del av analysen består av teorier om gränsvärden, varur teorin om derivator, ett mått på förändring, och integraler, gränsvärdet av en summa, bildas. Ibland pratas det om vektoranalys, där används matematisk analys och linjär algebra för att lösa problem, oftast i ett tredimensionellt rum.
+
+
+=== Diskret matematik ===
+Diskret matematik handlar om heltalen. En viktig gren är kombinatorik som diskuterar kombinationer och permutationer av urval. Även grafteorin hör hit.
+
+
+== Egenskaper och metodik ==
+Matematiken söker abstrahera och generalisera olika koncept. Till exempel kan det finnas anledning att abstrahera begreppet symmetri, vilket bland annat leder till galoisteori.
+
+
+=== Bevisföring ===
+Kortfattat är matematiska satser resultat härledda från ett antal påståenden, axiom, vilka är betraktade som uppenbara och sanna utan bevis. Ett axiom är inte en förmodan eller hypotes ty de senare betraktas ej som uppenbara.
+En sats kan betraktas som ett sant matematiskt påstående. Ett bevis av en sats verifierar att satsen är en otvetydig sanning. Beviset är en verifikation i den meningen att den övertygar läsaren, med relevanta förkunskaper, om att satsen är sann. Relevanta förkunskaper inkluderar kunskapen om tidigare satser, axiom och definitioner. När vi skriver definition, avser vi en exakt förklaring av ett matematiskt ord eller en matematisk mening. Ibland förekommer orden lemma och följdsats för sanna matematiska påståenden. Ett lemma är en sats vars huvudsyfte är att förenkla beviset av en större sats. En följdsats är en direkt konsekvens av en sats.
+Låt oss betrakta definitionen "ett heltal n är udda om n=2a+1 för något heltal a". Vi påstår att "7 är ett udda heltal" är ett sant matematiskt påstående. Genom att sätta "a=3" i definitionen har vi bevisat att 7 är ett udda heltal, eftersom 7=2·3+1.
+Den brittiska matematikern Bertrand Russell (1872–1970) skrev:
+
+
+=== Estetik ===
+Många matematiker har talat om skönheten i matematik. Bland annat skrev G. H. Hardy:
+
+
+== Matematikfilosofi ==
+Matematikfilosofi avser ett antal filosofiska inriktningar som gör påståenden om vad matematiken är. Exempel på sådana inriktningar är de fyra skolorna: logicism, intuitionism, formalism och predicativism; platonism, nominalism och strukturalism.
+
+
+== Tillämpad matematik ==
+
+
+=== Fysik ===
+Fysik är den ursprungliga benämningen på all naturvetenskap. När bland andra kemin, biologin och geovetenskaperna blev separata vetenskaper kom fysiken att bli den vetenskap som studerar de grundläggande strukturerna hos materia. Teoretisk fysik är rätt så matematiskt inriktad.
+
+
+=== Numerisk analys ===
+Numerisk analys är en vetenskap som består av metoder för att med dator numeriskt finna (approximativa) lösningar till matematiska problem. Exempel är att finna rötter till ekvationer på formen 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(x)=0}
+  
+ eller att anpassa ett polynom till ett antal punkter.
+
+
+=== Sannolikhetsteori och statistik ===
+Sannolikhetsteorin söker beskriva och studera matematiska modeller av slumpmässiga fenomen från ett teoretiskt perspektiv. Statistik är det område som vill skapa metoder, principer, kriterier, m.m. för att diskutera data från slumpmässiga fenomen eller data från experiment och observationer från verkligheten. Kunskaper och teorier från sannolikhetsteorin kan exempelvis användas till att formulera sådana metoder, principer och kriterier; något som visar att sannolikhetsteorin och statistikteorin är tätt förknippade.
+Modeller används i många akademiska vetenskaper, dessa är oftast deterministiska. Det innebär att givet ett antal initiala kända värden, kan vi förutsäga en framtida händelse. Isaac Newton visade att hans rörelselagar är deterministiska eftersom de kan förutsäga tiden det tar för jorden att göra ett varv runt solen. I sannolikhetsteorin studeras slumpmässiga fenomen där framtida utfall inte kan förutsägas exakt, därför diskuteras inte deterministiska modeller utan s.k. probabilistiska modeller. Exempelvis beskriver myntkast ett slumpmässigt fenomen: trots att vi har fullständig kunskap om myntets konstruktion, t.ex. att det är symmetriskt, kan vi inte förutsäga i vilket fall det blir krona eller klave. Istället för en deterministisk modell krävs en probabilistisk.
+Den relevanta skillnaden mellan sannolikhetsteorin och statistikteorin är att vi i sannolikhetsteorin har (a) en given slumpmodell och försöker utifrån denna förutsäga utfallet i ett slumpförsök, medan i statistikteorin är förhållandet omvänt och vi har (b) ett utfall från ett slumpförsök och vill beskriva den underliggande slumpmodellen. En biokemist kan använda sig av statistiska metoder för att utveckla medicin som lindrar huvudvärk. Ges medicinen till olika personer kommer variationen mellan personer innebära att de upplever olika mycket förändring i sin huvudvärk. En statistik analys av data från ett sådant experiment kan svara på hur mycket lindring som kan förväntas i genomsnitt.
+
+
+=== Optimeringslära ===
+Optimering handlar om att maximera eller att minimera en storhet där något bivillkor är givet.
+
+
+== Utbildning ==
+I Sverige är matematik, enligt Skolverket, "ett nationellt prioriterat utvecklingsområde". Vidare ingår matematik, enligt kursplanen, i för-, grund-, grundsär-, same-, gymnasie-, gymnasiesärskolan samt vuxenutbildningen. Matematikundervisning förekommer i samtliga världsdelar och kontinenter.
+Matematiklärarutbildning bedrivs vid universitet och högskolor. Exempelvis Matematiska institutionen vid Stockholms universitet anger att man "inom ämneslärarprogrammet i matematik, naturvetenskapliga ämnen och teknik har du möjlighet att välja matematik antingen som första eller som andra ämne. ... Man kan också kombinera matematik med ämnen från andra fakultet, såsom historia eller engelska".
+I Sverige bedrivs matematikforskning bland annat på universiteten Stockholms universitet, Uppsala universitet, Linköpings universitet, Chalmers tekniska högskola, Kungliga Tekniska högskolan, Luleå tekniska universitet, Lunds universitet och Mälardalens universitet, men även på institutioner som Institut Mittag-Leffler och Fraunhofer-Chalmers Research Centre for Industrial Mathematics. I Finland bedrivs matematikforskning bland annat i Helsingfors universitet. Andra exempel där matematikforskning bedrivs är amerikanska universitet Massachusetts Institute of Technology, engelska Universitetet i Cambridge, schweiziska Eidgenössische Technische Hochschule Zürich, kinesiska Pekinguniversitetet, franska École polytechnique, japanska Tokyo Kogyo-universitetet och många fler.
+Exempel på matematiska tidskrifter är Acta Mathematica, Annals of Mathematics och The American Mathematical Monthly.
+
+
+== Källor ==
+
+
+=== Fotnoter ===
+
+
+=== Tryckta källor ===
+Stedall, Jacqueline (2012), The History of Mathematics: A Very Short Introduction (1), Oxford University Press, ISBN 978-0-19-959968-4 
+Hardy, Godfrey Harold (2012), A Mathematician's Apology (19), USA: Cambridge University Press, ISBN 978-1-107-60463-6 
+Elwes, Richard (2010), Maths 1001 (2), USA, Kanada: Firefly Books, ISBN 978-1-55407-719-9 
+Biggs, Norman (2009), Discrete Mathematics (2), USA: Oxford University Press, ISBN 978-0-19-850718-5 
+Clapham, Christopher; Nicholson, James (2009), The Concise Oxford Dictionary of Mathematics (4), USA: Oxford University Press, ISBN 978-0199235940 
+Gut, Allan (2009), An intermediate course in probability (2), Heidelberg, London, New York: Springer, ISBN 978-1-4419-0161-3 
+Devore, Jay; Berk, Kenneth (2012), Modern Mathematical Statistics with Applications (2), Heidelberg, London, New York: Springer, ISBN 978-1-4614-0391-3 
+Britton, Tom; Alm, Sven Erick (2008), Stokastik: Sannolikhetsteori och statistikteori med tillämpningar (1), Sverige, Stockholm: Liber, ISBN 978-1-107-60463-6 
+Beachy, John A.; William D. Blair (1996). Abstract algebra. Prospect Heights, Ill.: Waveland Press. ISBN 0-88133-866-4 
+Eriksson, Kimmo; Hillevi Gavel (2002). Diskret matematik och diskreta modeller. Lund: Studentlitteratur. ISBN 91-44-02465-7 
+Rogosinski, W. W. (1952). Volume and integral. Edinburgh: Oliver and Boyd Ltd 
+
+
+=== Originalcitat ===
+
+
+== Externa länkar ==
+ Wikimedia Commons har media som rör Matematik.
+ Matematik på Wikibooks.
+Sveriges Matematiklärarförening (SMaL)

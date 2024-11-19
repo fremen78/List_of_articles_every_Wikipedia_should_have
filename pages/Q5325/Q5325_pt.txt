@@ -1,0 +1,471 @@
+Um indutor é um dispositivo elétrico passivo que armazena energia na forma de campo magnético, normalmente combinando o efeito de vários loops da corrente elétrica.
+O indutor pode ser utilizado em circuitos como um filtro passa baixa, rejeitando as altas frequências.
+Também costuma ser chamado de bobina, choke ou reator.
+
+
+== Construção ==
+Um indutor é geralmente construído como uma bobina de material condutor, por exemplo, fio de cobre. Um núcleo de material ferromagnético aumenta a indutância concentrando as linhas de força de campo magnético que fluem pelo interior das espiras. Indutores podem ser construídos em circuitos integrados utilizando o mesmo processo que é usado em chips de computador. Nesses casos, normalmente o alumínio é utilizado como material condutor. Porém, é raro a construção de indutores em CI's; eles são volumosos em uma pequena escala, e praticamente restritos, sendo muito mais comum o uso de um circuito chamado "gyrator", que utiliza um capacitor comportando-se como se fosse um indutor.
+Pequenos indutores usados para frequências muito altas são algumas vezes feitos com um fio passando através de um cilindro de ferrite.
+
+
+== Indutância ==
+Indutância é a grandeza física associada aos indutores, é simbolizada pela letra L, medida em henry (H), e representada graficamente por um fio helicoidal. Em outras palavras é um parâmetro dos circuitos lineares que relaciona a tensão induzida por um campo magnético variável à corrente responsável pelo campo. A tensão entre os terminais de um indutor é proporcional à taxa de variação da corrente que o atravessa. Matematicamente temos:
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        L
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\textstyle u(t)=L{\frac {di(t)}{dt}}}
+  
+
+onde:
+
+u(t) é a tensão instantânea -> sua unidade de medida é o volt (V)
+L é a indutância -> sua unidade de medida é o henry (H)
+i(t) é a corrente instantânea -> sua unidade de medida é o ampere (A)
+t é o tempo (s)
+
+
+== Energia ==
+A energia (medida em joules, no SI) armazenada num indutor é igual à quantidade de trabalho necessária para estabelecer o fluxo de corrente através do indutor e, consequentemente, o campo magnético. É dada por:
+
+  
+    
+      
+        
+          E
+          
+            
+              a
+              r
+              m
+              a
+              z
+              e
+              n
+              a
+              d
+              a
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          I
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E_{\mathrm {armazenada} }={1 \over 2}LI^{2}}
+  
+
+onde I é a corrente que circula pelo indutor.
+
+
+== Em circuitos elétricos ==
+
+Um indutor resiste somente a mudanças de corrente. Um indutor ideal não oferece resistência para corrente contínua, exceto quando a corrente é ligada e desligada, caso em que faz a mudança de modo mais gradual. Os indutores reais são construídos a partir de materiais com condutividade elétrica finita, que atenua até mesmo a corrente direta. Materiais supercondutores não oferecem resistência a passagem de correntes elétricas contínuas, e suas aplicações implicam propriedades distintas para os indutores feitos deste tipo de material.
+No geral, a relação entre a variação da tensão de acordo com o tempo u(t) através de um indutor com indutância L e a variação da corrente de acordo com o tempo i(t) que passa por ele é descrita pela equação diferencial:
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        L
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle u(t)=L{\frac {di(t)}{dt}}}
+  
+
+Quando uma corrente alternada (CA) senoidal flui por um indutor, uma tensão alternada senoidal (ou força eletromotriz, Fem) é induzida. A amplitude da Fem está relacionada com a amplitude da corrente e com a frequência da senóide pela seguinte equação:
+
+  
+    
+      
+        U
+        =
+        I
+        ×
+        ω
+        L
+      
+    
+    {\displaystyle U=I\times \omega L}
+  
+
+onde ω é a frequência angular da senóide definida em termos da frequência f por:
+
+  
+    
+      
+        ω
+        =
+        2
+        π
+        f
+        
+      
+    
+    {\displaystyle \omega =2\pi f\,}
+  
+
+A reatância indutiva é definida por:
+
+  
+    
+      
+        
+          X
+          
+            L
+          
+        
+        =
+        ω
+        L
+        =
+        2
+        π
+        f
+        L
+        
+      
+    
+    {\displaystyle X_{L}=\omega L=2\pi fL\,}
+  
+
+onde XLé a reatância indutiva medida em Ohms (medida de resistência), ω é a freqüência angular, f é a frequência em hertz, e L é a indutância.
+A reatância indutiva é o componente positivo imaginário da impedância.
+A impedância complexa de um indutor é dada por:
+
+  
+    
+      
+        Z
+        =
+        j
+        ω
+        L
+        =
+        j
+        2
+        π
+        f
+        L
+         
+        =
+        j
+        
+          X
+          
+            L
+          
+        
+        ,
+      
+    
+    {\displaystyle Z=j\omega L=j2\pi fL\ =jX_{L},}
+  
+
+onde j é a unidade imaginária.
+
+
+== Análise de circuitos ==
+Os problemas de análise de circuitos, que resultam num sistema de equações lineares, nos quais se busca encontrar os valores de corrente e de variação de tensão para cada componente (incógnitas) são resolvidos por extensão dos problemas de circuitos com apenas fontes e resistores. Neste modelo estendido, a indutância e a capacitância são consideradas como resistências complexas, que passam a se denominar impedância. Os resultados são interpretados na forma polar, sendo o ângulo do vetor encontrado interpretado como fase da corrente alternada ou tensão alternada.
+
+
+== Redes de indutores ==
+Ligação em paralelo
+
+Cada indutor de uma configuração em paralelo possui a mesma diferença de potencial (tensão) que os demais. A indutância equivalente (Leq) é calculada por:
+
+  
+    
+      
+        
+          
+            1
+            
+              L
+              
+                
+                  e
+                  q
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              L
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              L
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              L
+              
+                n
+              
+            
+          
+        
+        ⇒
+        
+          L
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          
+            
+              
+                ∏
+                
+                  i
+                  =
+                  1
+                
+                
+                  n
+                
+              
+              
+                L
+                
+                  i
+                
+              
+            
+            
+              
+                ∑
+                
+                  j
+                  =
+                  1
+                
+                
+                  n
+                
+              
+              
+                ∏
+                
+                  k
+                  ≠
+                  j
+                
+              
+              
+                L
+                
+                  k
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{L_{\mathrm {eq} }}}={\frac {1}{L_{1}}}+{\frac {1}{L_{2}}}+\cdots +{\frac {1}{L_{n}}}\Rightarrow L_{\mathrm {eq} }={\frac {\prod _{i=1}^{n}L_{i}}{\sum _{j=1}^{n}\prod _{k\neq j}L_{k}}}}
+  
+
+Ligação em série
+
+A corrente através de indutores em série permanece a mesma, mas a tensão de cada indutor pode ser diferente. A soma das diferenças de potencial é igual à tensão total. A indutância equivalente (Leq) é calculada por:
+
+  
+    
+      
+        
+          L
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          L
+          
+            1
+          
+        
+        +
+        
+          L
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          L
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle L_{\mathrm {eq} }=L_{1}+L_{2}+\cdots +L_{n}\,\!}
+  
+
+
+== Fator Q ==
+O fator Q de um indutor pode ser encontrado através desta fórmula, onde R é a resistência elétrica interna:
+
+  
+    
+      
+        Q
+        =
+        
+          
+            
+              ω
+              
+
+              
+              L
+            
+            R
+          
+        
+      
+    
+    {\displaystyle Q={\frac {\omega {}L}{R}}}
+  
+
+
+== Aplicações ==
+Os indutores estão relacionados aos eletromagnetos em estrutura, mas são usados para um propósito diferente: armazenar energia em um campo magnético.
+Por sua habilidade de alterar sinais CA, os indutores são usados extensivamente em circuitos analógicos e processamento de sinais, incluindo recepções e transmissões de rádio. Como a reatância indutiva 
+  
+    
+      
+        
+          X
+          
+            L
+          
+        
+      
+    
+    {\displaystyle X_{L}}
+  
+ muda com a frequência, um filtro eletrônico pode usar indutores em conjunto com capacitores e outros componentes para filtrar partes específicas da frequência do espectro.
+Dois (ou mais) indutores acoplados formam um transformador, que é um componente fundamental de qualquer rede elétrica nacional.
+Um indutor é normalmente usado como saída de uma fonte chaveada de alimentação. O indutor é carregado para uma fração específica da frequência de troca do regulador e descarregado pelo restante do ciclo. Esta relação de carrega/descarrega é o que reduz (ou impulsiona) a tensão de entrada para seu novo nível.
+
+
+=== Indutor 3D ===
+O indutor 3D consolida a distribuição do campo magnético e o armazenamento de energia no espaço 3D - enquanto mantém a pouca impressão que se espera que caiba no chip. O indutor de microchip é capaz de dezenas de indução magnética no nível de militesla.
+
+
+== Ver também ==
+Capacitor
+Resistor
+Eletricidade
+Eletrônica
+Gyrator
+Indutância
+Laço de indução
+Reator
+Transformador
+Solenóide
+
+
+== Notas ==
+
+
+== Referências ==
+
+
+== Ligações externas ==
+Informações Básicas Sobre Indutores

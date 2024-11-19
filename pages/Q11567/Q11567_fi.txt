@@ -1,0 +1,1707 @@
+Kompleksilukujen joukko 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ on reaalilukujen joukon luonnollinen laajennus.
+Kompleksiluku z on muotoa
+
+  
+    
+      
+        z
+        =
+        x
+        +
+        y
+        i
+        ,
+        
+        
+      
+    
+    {\displaystyle z=x+yi,\,\!}
+  
+
+jossa x  ja y ovat reaalilukuja ja i on  imaginaariyksikkö, jolle pätee 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+        
+        
+      
+    
+    {\displaystyle i^{2}=-1\,\!}
+  
+. Lukua x kutsutaan kompleksiluvun reaaliosaksi (Re(z)) ja lukua y vastaavasti sen imaginaariosaksi (Im(z)).
+Reaalilukujen joukko on kompleksilukujen osajoukko, joka saadaan asettamalla kompleksiluvun imaginaariosa nollaksi: 
+  
+    
+      
+        y
+        =
+        0
+      
+    
+    {\displaystyle y=0}
+  
+. Jos 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\displaystyle x=0}
+  
+, kompleksilukua kutsutaan puhtaasti imaginaariseksi.
+Jokaiselle ℂ-kertoimiselle polynomiyhtälölle voidaan algebran peruslauseen mukaan löytää sen astetta vastaava määrä kompleksiratkaisuja, jotka tosin eivät ole välttämättä keskenään erisuuria. Alun perin kompleksiluvut kehitettiinkin osin tarpeesta saada entistä suurempi osa polynomiyhtälöistä ratkeaviksi. Esimerkiksi yhtälöllä 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{2}+1=0}
+  
+ ei ole reaalisia juuria, sillä 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x^{2}}
+  
+ on positiivinen kaikilla reaalisilla 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+:n arvoilla. Kompleksilukujen joukosta sille sen sijaan löytyy ratkaisut 
+  
+    
+      
+        x
+        =
+        +
+        i
+      
+    
+    {\displaystyle x=+i}
+  
+ ja 
+  
+    
+      
+        x
+        =
+        −
+        i
+      
+    
+    {\displaystyle x=-i}
+  
+.
+Kompleksilukuja hyödynnetään usein muun muassa sähkötekniikassa, vaihtosähköön liittyvässä analyysissä, sillä signaalit sisältävät kaksi muuttuvaa suuretta, amplitudin sekä vaiheen, ja kompleksiaritmetiikan avulla jännitteet ja virrat voidaan esittää yhdellä kompleksiluvulla. Sähkötekniikassa kompleksiluvun imaginaariyksikkö merkitään kirjaimella j.
+
+
+== Historia ==
+Kompleksilukujen historia alkaa kolmannen ja neljännen asteen yhtälöiden ratkaisukaavojen keksimisestä. Italialainen matemaatikko Girolamo Cardano esitteli nämä kaavat vuonna 1545 julkaisemassaan Ars Magnassa. Cardano ei keksinyt ratkaisukaavoja itse, vaan sai kolmannen asteen yhtälön ratkaisukaavan Niccolo Tartaglialta, jolle Cardano oli vakuuttanut ettei paljasta tämän salaisuutta, sillä tämä aikoi julkaista ratkaisun itse. Tartaglia katkeroitukin Cardanolle pahan kerran tämän petettyä lupauksensa. Tartagliakaan ei tosin ollut ratkaisukaavan alkuperäinen keksijä, vaan sen keksi ilmeisesti ensimmäisenä Scipione dal Ferro. Neljännen asteen yhtälön ratkaisukaavan taas keksi Cardanon apulainen Ludovico Ferrari.
+Kolmannen asteen yhtälöä ratkaistaessa ratkaisukaavan avulla päädytään väistämättä neliöjuuren ottamiseen negatiivisista luvuista, jos yhtälöllä on kolme nollasta poikkeavaa reaalijuurta. Tätä tapausta kutsutaan casus irreducibilikseksi , eli redusoimattomaksi tapaukseksi, sillä ratkaisua ei voi tässä tapauksessa löytää ilman jonkinlaista käsitystä kompleksisten lukujen laskusäännöistä. Cardano laskee Ars Magnassa formaalisti tulon 
+  
+    
+      
+        (
+        5
+        +
+        
+          
+            −
+            15
+          
+        
+        )
+        (
+        5
+        −
+        
+          
+            −
+            15
+          
+        
+        )
+      
+    
+    {\displaystyle (5+{\sqrt {-15}})(5-{\sqrt {-15}})}
+  
+ ja saa oikean tuloksen 40, huolimatta siitä että hän kieltää negatiivisten lukujen neliöjuurten olemassaolon. On muistettava että Cardanon aikaan negatiivisiakaan lukuja ei aina hyväksytty, Cardano itse kutsui niitä nimellä numeri ficti. René Descartes ei hyväksynyt kompleksisia lukuja ja pilkkasi niitä kutsumalla niitä imaginaarisiksi vuonna 1637 julkaistussa La Géométriessaan.
+Leonhard Euler julkaisi vuonna 1748 kirjassaan Introductio nykyään Eulerin lauseena tunnetun tärkeän identiteetin, jonka erityistapaus on 
+  
+    
+      
+        
+          e
+          
+            i
+            π
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle e^{i\pi }=-1}
+  
+. Euler myös otti käyttöön merkinnän 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ kuvaamaan lukua 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}}
+  
+. Aikaisemmin samalla vuosisadalla ranskalainen matemaatikko Abraham de Moivre oli keksinyt toisen tärkeän kompleksilukuihin liittyvän kaavan, de Moivren kaavan, vaikka ei sitä nykyään tunnetussa muodossa esittänytkään.
+
+
+== Laskutoimitukset ==
+Kompleksilukuja voi laskea yhteen, vähentää toisistaan tai kertoa keskenään soveltamalla liitäntä-, vaihdanta- ja osittelulakeja, sekä yhtälöä 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+:
+
+  
+    
+      
+        (
+        x
+        +
+        y
+        i
+        )
+        +
+        (
+        
+          x
+          ′
+        
+        +
+        
+          y
+          ′
+        
+        i
+        )
+        =
+        (
+        x
+        +
+        
+          x
+          ′
+        
+        )
+        +
+        (
+        y
+        +
+        
+          y
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle (x+yi)+(x'+y'i)=(x+x')+(y+y')i\,}
+  
+
+  
+    
+      
+        (
+        x
+        +
+        y
+        i
+        )
+        −
+        (
+        
+          x
+          ′
+        
+        +
+        
+          y
+          ′
+        
+        i
+        )
+        =
+        (
+        x
+        −
+        
+          x
+          ′
+        
+        )
+        +
+        (
+        y
+        −
+        
+          y
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle (x+yi)-(x'+y'i)=(x-x')+(y-y')i\,}
+  
+
+  
+    
+      
+        (
+        x
+        +
+        y
+        i
+        )
+        ⋅
+        (
+        
+          x
+          ′
+        
+        +
+        
+          y
+          ′
+        
+        i
+        )
+        =
+        x
+        
+          x
+          ′
+        
+        +
+        x
+        
+          y
+          ′
+        
+        i
+        +
+        
+          x
+          ′
+        
+        y
+        i
+        +
+        y
+        
+          y
+          ′
+        
+        
+          i
+          
+            2
+          
+        
+        =
+        (
+        x
+        
+          x
+          ′
+        
+        −
+        y
+        
+          y
+          ′
+        
+        )
+        +
+        (
+        
+          x
+          ′
+        
+        y
+        +
+        x
+        
+          y
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle (x+yi)\cdot (x'+y'i)=xx'+xy'i+x'yi+yy'i^{2}=(xx'-yy')+(x'y+xy')i\,}
+  
+
+kaikilla reaaliluvuilla x,x',y,y'
+Kompleksilukujen jakolasku lasketaan jakajan liittoluvun eli konjugaatin avulla. Kompleksiluvun 
+  
+    
+      
+        z
+        =
+        x
+        +
+        y
+        i
+        
+      
+    
+    {\displaystyle z=x+yi\,}
+  
+ liittoluku on 
+  
+    
+      
+        
+          
+            z
+          
+          
+            ∗
+          
+        
+        =
+        x
+        −
+        y
+        i
+        
+      
+    
+    {\displaystyle {z}^{*}=x-yi\,}
+  
+. Määritellään kompleksiluvun moduuli eli itseisarvo 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle |z|={\sqrt {x^{2}+y^{2}}}}
+  
+. Kun kompleksiluku kerrotaan liittoluvullaan, saadaan luvun itseisarvon neliö, joka on reaaliluku:
+
+  
+    
+      
+        z
+        
+          
+            z
+          
+          
+            ∗
+          
+        
+        =
+        (
+        x
+        +
+        y
+        i
+        )
+        (
+        x
+        −
+        y
+        i
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          y
+          
+            2
+          
+        
+        
+          i
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              +
+              
+                y
+                
+                  2
+                
+              
+            
+          
+          
+            2
+          
+        
+        =
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle z{z}^{*}=(x+yi)(x-yi)=x^{2}-y^{2}i^{2}=x^{2}+y^{2}={\sqrt {x^{2}+y^{2}}}^{2}=|z|^{2}}
+  
+
+Kompleksilukujen jakolasku sieventyy laventamalla jakajan liittoluvulla kompleksilukujen kertolaskuksi:
+
+  
+    
+      
+        
+          
+            
+              z
+              
+                1
+              
+            
+            
+              z
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                z
+                
+                  1
+                
+              
+              
+                
+                  z
+                
+                
+                  2
+                
+                
+                  ∗
+                
+              
+            
+            
+               
+              
+                z
+                
+                  2
+                
+              
+              
+                
+                  z
+                
+                
+                  2
+                
+                
+                  ∗
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                z
+                
+                  1
+                
+              
+              
+                
+                  z
+                
+                
+                  2
+                
+                
+                  ∗
+                
+              
+            
+            
+              
+                |
+              
+              
+                z
+                
+                  2
+                
+              
+              
+                
+                  |
+                
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {z_{1} \over z_{2}}={z_{1}{z}_{2}^{*} \over \ z_{2}{z}_{2}^{*}}={z_{1}{z}_{2}^{*} \over |z_{2}|^{2}}}
+  
+
+Liittolukua merkitään myös 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+:lla.
+
+
+=== Kompleksiset potenssit ja juuret ===
+Kompleksilukujen potenssit voidaan laskea käyttäen De Moivren kaavaa. Tällöin saadaan, että kompleksiluvun 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+:s potenssi on 
+  
+    
+      
+        
+          z
+          
+            n
+          
+        
+        =
+        
+          r
+          
+            n
+          
+        
+        
+          e
+          
+            i
+            n
+            θ
+          
+        
+        =
+        
+          r
+          
+            n
+          
+        
+        (
+        cos
+        ⁡
+        (
+        n
+        θ
+        )
+        +
+        i
+        sin
+        ⁡
+        (
+        n
+        θ
+        )
+        )
+      
+    
+    {\displaystyle z^{n}=r^{n}e^{in\theta }=r^{n}(\cos(n\theta )+i\sin(n\theta ))}
+  
+, missä 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ tarkoittaa kompleksiluvun 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ moduulia. Kompleksilukun 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+:s juuri saadaan seuraavasti: merkitään 
+  
+    
+      
+        ζ
+        =
+        
+          z
+          
+            
+              1
+              m
+            
+          
+        
+      
+    
+    {\displaystyle \zeta =z^{\frac {1}{m}}}
+  
+. Tällöin 
+  
+    
+      
+        
+          ζ
+          
+            m
+          
+        
+        =
+        z
+      
+    
+    {\displaystyle \zeta ^{m}=z}
+  
+. Tällöin 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+:s juuri on 
+  
+    
+      
+        ζ
+        =
+        
+          
+            r
+            
+              m
+            
+          
+        
+        
+          e
+          
+            i
+            θ
+            
+              /
+            
+            m
+          
+        
+      
+    
+    {\displaystyle \zeta ={\sqrt[{m}]{r}}e^{i\theta /m}}
+  
+, missä 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ tarkoittaa kompleksiluvun 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ moduulia.
+
+
+=== Kompleksiluvun neliöjuuri ===
+Jokaista kompleksilukua z = a + bi (paitsi lukua 0) kohti on olemassa kaksi sellaista kompleksilukua, joiden neliö on z. Koska
+
+  
+    
+      
+        (
+        x
+        +
+        y
+        i
+        
+          )
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          y
+          
+            2
+          
+        
+        +
+        2
+        x
+        y
+        i
+      
+    
+    {\displaystyle (x+yi)^{2}=x^{2}-y^{2}+2xyi}
+  
+,
+voidaan nämä johtaa ratkaisemalla toisen asteen yhtälöpari:
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          y
+          
+            2
+          
+        
+        =
+        a
+      
+    
+    {\displaystyle x^{2}-y^{2}=a}
+  
+
+  
+    
+      
+        2
+        x
+        y
+        =
+        b
+      
+    
+    {\displaystyle 2xy=b}
+  
+.
+Ratkaisuiksi saadaan:
+
+  
+    
+      
+        x
+        =
+        ±
+        
+          
+            
+              
+                a
+                ±
+                
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      b
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              2
+            
+          
+        
+      
+    
+    {\displaystyle x=\pm {\sqrt {\frac {a\pm {\sqrt {a^{2}+b^{2}}}}{2}}}}
+  
+
+ja
+
+  
+    
+      
+        y
+        =
+        ±
+        
+          
+            
+              
+                −
+                a
+                ±
+                
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      b
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              2
+            
+          
+        
+      
+    
+    {\displaystyle y=\pm {\sqrt {\frac {-a\pm {\sqrt {a^{2}+b^{2}}}}{2}}}}
+  
+
+Koska 
+  
+    
+      
+        2
+        x
+        y
+        =
+        b
+      
+    
+    {\displaystyle 2xy=b}
+  
+, on x:llä ja y:llä sama etumerkki, jos b on positiivinen, muussa tapauksessa niillä on vastakkaiset etumerkit. Koska toisaalta kompleksiluvun z = a + bi itseisarvo on 
+  
+    
+      
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {a^{2}+b^{2}}}}
+  
+, todetaan, että yhtälön 
+  
+    
+      
+        (
+        x
+        +
+        y
+        i
+        
+          )
+          
+            2
+          
+        
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle (x+yi)^{2}=a+bi}
+  
+ toteuttavat kompleksiluvut ovat:
+
+  
+    
+      
+        
+          
+            a
+            +
+            i
+            b
+          
+        
+        =
+        ±
+        (
+        
+          
+            
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+                +
+                a
+              
+              2
+            
+          
+        
+        +
+        i
+        
+          
+            b
+            
+              
+                |
+              
+              b
+              
+                |
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+                −
+                a
+              
+              2
+            
+          
+        
+        )
+      
+    
+    {\displaystyle {\sqrt {a+ib}}=\pm ({\sqrt {\frac {|z|+a}{2}}}+i{\frac {b}{|b|}}{\sqrt {\frac {|z|-a}{2}}})}
+  
+,
+kun 
+  
+    
+      
+        b
+        ≠
+        0
+      
+    
+    {\displaystyle b\neq 0}
+  
+ eli z ei ole reaaliluku.
+Tavallisesti määritellään lisäksi, että kompleksiluvun neliöjuurella tarkoitetaan näistä nimenomaan sitä, jonka reaaliosa on positiivinen.
+Jos kompleksiluku on esitetty muodossa
+
+  
+    
+      
+        z
+        =
+        r
+        
+          e
+          
+            i
+            ϕ
+          
+        
+      
+    
+    {\displaystyle z=re^{i\phi }}
+  
+,
+missä r ja 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ ovat reaalilukuja, saadaan sen neliöjuurelle yksinkertaisempi lauseke:
+
+  
+    
+      
+        
+          
+            z
+          
+        
+        =
+        
+          
+            r
+            
+              e
+              
+                i
+                ϕ
+              
+            
+          
+        
+        =
+        
+          
+            r
+          
+        
+        
+          e
+          
+            i
+            
+              
+                ϕ
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {z}}={\sqrt {re^{i\phi }}}={\sqrt {r}}e^{i{\frac {\phi }{2}}}}
+  
+.
+
+
+== Geometrinen tulkinta ==
+
+Koska kompleksiluku on järjestetty reaalilukupari, se voidaan esittää kaksiulotteisen koordinaatiston pisteenä tai paikkavektorina. Argandin kaaviossa kompleksilukua 
+  
+    
+      
+        x
+        +
+        y
+        i
+      
+    
+    {\displaystyle x+yi}
+  
+ kuvaa tason piste 
+  
+    
+      
+        P
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle P(x,y)}
+  
+ ja paikkavektori OP. Koordinaatiston toinen akseli ilmaisee kompleksiluvun reaalikomponentin ja toinen imaginaarikomponentin. Kompleksilukujen ja vektorien yhteenlaskut vastaavat toisiaan. Tasoa, jonka pisteet on määritelty vastaamaan kompleksilukuja, sanotaan kompleksitasoksi.
+Kompleksiluku voidaan esittää napakoordinaatiston avulla muodossa 
+  
+    
+      
+        z
+        =
+        r
+        (
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        )
+      
+    
+    {\displaystyle z=r(\cos \theta +i\sin \theta )}
+  
+, jossa 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ on kompleksiluvun itseisarvo 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+      
+    
+    {\displaystyle |z|}
+  
+, ja 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ on 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+:n argumentti, eli positiivisen reaaliakselin ja vektorin OP välinen suunnattu kulma. Napakoordinaattimuodossa kompleksilukujen kerto- ja jakolaskut saadaan havainnolliseen muotoon:
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ⋅
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        (
+        cos
+        ⁡
+        
+          θ
+          
+            1
+          
+        
+        +
+        i
+        sin
+        ⁡
+        
+          θ
+          
+            1
+          
+        
+        )
+        ⋅
+        
+          r
+          
+            2
+          
+        
+        (
+        cos
+        ⁡
+        
+          θ
+          
+            2
+          
+        
+        +
+        i
+        sin
+        ⁡
+        
+          θ
+          
+            2
+          
+        
+        )
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          r
+          
+            2
+          
+        
+        (
+        cos
+        ⁡
+        (
+        
+          θ
+          
+            1
+          
+        
+        +
+        
+          θ
+          
+            2
+          
+        
+        )
+        +
+        i
+        sin
+        ⁡
+        (
+        
+          θ
+          
+            1
+          
+        
+        +
+        
+          θ
+          
+            2
+          
+        
+        )
+        )
+        
+      
+    
+    {\displaystyle z_{1}\cdot z_{2}=r_{1}(\cos \theta _{1}+i\sin \theta _{1})\cdot r_{2}(\cos \theta _{2}+i\sin \theta _{2})=r_{1}r_{2}(\cos(\theta _{1}+\theta _{2})+i\sin(\theta _{1}+\theta _{2}))\,}
+  
+
+  
+    
+      
+        
+          
+            
+              z
+              
+                1
+              
+            
+            
+              z
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                r
+                
+                  1
+                
+              
+              (
+              cos
+              ⁡
+              
+                θ
+                
+                  1
+                
+              
+              +
+              i
+              sin
+              ⁡
+              
+                θ
+                
+                  1
+                
+              
+              )
+            
+            
+              
+                r
+                
+                  2
+                
+              
+              (
+              cos
+              ⁡
+              
+                θ
+                
+                  2
+                
+              
+              +
+              i
+              sin
+              ⁡
+              
+                θ
+                
+                  2
+                
+              
+              )
+            
+          
+        
+        =
+        
+          
+            
+              r
+              
+                1
+              
+            
+            
+              r
+              
+                2
+              
+            
+          
+        
+        (
+        cos
+        ⁡
+        (
+        
+          θ
+          
+            1
+          
+        
+        −
+        
+          θ
+          
+            2
+          
+        
+        )
+        +
+        i
+        sin
+        ⁡
+        (
+        
+          θ
+          
+            1
+          
+        
+        −
+        
+          θ
+          
+            2
+          
+        
+        )
+        )
+        
+      
+    
+    {\displaystyle {z_{1} \over z_{2}}={r_{1}(\cos \theta _{1}+i\sin \theta _{1}) \over r_{2}(\cos \theta _{2}+i\sin \theta _{2})}={r_{1} \over r_{2}}(\cos(\theta _{1}-\theta _{2})+i\sin(\theta _{1}-\theta _{2}))\,}
+  
+
+Kompleksilukujen kertolasku voidaan siis jakaa kahteen vaiheeseen: itseisarvojen kertomiseen keskenään, eli paikkavektorin pituuden muutokseen, ja argumenttien yhteenlaskuun, eli vektorin kiertoon. Jakolaskun suhteen voidaan menetellä vastaavalla tavalla sillä erotuksella, että itseisarvojen kertolaskua vastaa jakolasku ja argumenttien yhteenlaskua vähennyslasku.
+Kompleksilukujen kertolasku voidaan tulkita geometrisesti myös seuraavasti: Kun kompleksiluku kerrotaan reaaliluvulla, sen paikkavektorin pituus kerrotaan tällä reaaliluvulla, mutta sen suunta pysyy ennallaan tai vaihtuu päinvastaiseksi, jos kerroin on negatiivinen. Kun kompleksiluku kerrotaan imaginaariyksiköllä i, sen paikkavektorin suuntaa kierretään 90 astetta vastapäivään, mutta sen pituus pysyy ennallaan. Kertominen muulla kompleksiluvulla voidaan yhdistää näistä sekä vektorien yhteenlaskusta.
+
+
+== Analyyttiset funktiot ==
+Kompleksilukujen joukossa määriteltyjä analyyttisia funktiota tutkii funktioteoria eli kompleksianalyysi.  Funktioiden määrittelyjoukkona käytetään usein laajennettua kompleksitasoa, jossa kompleksitasoon on lisätty yksi piste, äärettömyyspiste. 
+
+
+== Katso myös ==
+Eulerin lause (funktioteoria)
+Gaussin kokonaisluku
+de Moivren kaava
+Residylaskenta
+
+
+== Lähteet ==
+Saff, Edward B. ja Snider, Arthur David: Fundamentals of Complex Analysis: Engineerging, Science, and Mathematics, Pearson 3. painos
+
+
+=== Viitteet ===
+
+
+== Kirjallisuutta ==
+Spiegel, Murray R.; Lipschutz, Seymour; Schiller, John J.; Spellman, Dennis: Complex Variables.  (Shaum's Outline Series)  McGraw-Hill Book Company, 2009 (1964).    
+Rikkonen, Harri: Matematiikan pitkä peruskurssi II – Reaalimuuttujan funktioiden differentiaalilasku.  Helsinki:  Otakustantamo, 1969.  ISBN 951-671-022-0 
+Pitkäranta, Juhani: Calculus Fennicus – TKK:n 1. lukuvuoden laaja matematiikka (2000–2013) (pdf) Helsinki:  Avoimet oppimateriaalit ry. ISBN 978-952-7010-12-9 ISBN 978-952-7010-6 (pdf).
+
+
+== Aiheesta muualla ==
+ Kuvia tai muita tiedostoja aiheesta Kompleksiluku Wikimedia Commonsissa

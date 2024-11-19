@@ -1,0 +1,1624 @@
+Trigonometria (m.kreik. τρίγωνος, trígōnos, kolmekulmainen, ja μέτρον, métron, mitata), kolmiomitanto, on matematiikan ala, joka käsittelee kolmioiden sivujen ja kulmien välisiä suhteita sekä tiettyjä, kolmion kulmista riippuvia funktioita ja niiden soveltamista laskutoimituksissa.
+Trigonometrian perustana on se tosiasia, että kaikki suorakulmaiset kolmiot, joissa on suoran kulman lisäksi toinenkin yhtä suuri kulma, ovat keskenään yhdenmuotoisia. Koska yhdenmuotoisten kolmioiden vastinsivujen suhteet ovat samat, suorakulmaisen kolmion sivujen suhteet määräytyvät vain kolmion (ei-suorasta) kulmasta. Nämä suhteet ovat siis pelkästään kulman funktioita. 
+Suorakulmaisen kolmion 
+  
+    
+      
+        A
+        B
+        C
+      
+    
+    {\displaystyle ABC}
+  
+, 
+  
+    
+      
+        ∠
+        B
+        C
+        A
+        =
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle \angle BCA=90^{\circ }}
+  
+, kolmesta sivusta 
+  
+    
+      
+        B
+        C
+        =
+        a
+      
+    
+    {\displaystyle BC=a}
+  
+, 
+  
+    
+      
+        C
+        A
+        =
+        b
+      
+    
+    {\displaystyle CA=b}
+  
+ ja 
+  
+    
+      
+        A
+        B
+        =
+        c
+      
+    
+    {\displaystyle AB=c}
+  
+ voidaan muodostaa kuusi suhdetta. Nämä on tapana nimittää kulman 
+  
+    
+      
+        ∠
+        B
+        A
+        C
+        =
+        α
+      
+    
+    {\displaystyle \angle BAC=\alpha }
+  
+ funktioiksi seuraavasti: 
+sin(
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+) on 
+  
+    
+      
+        
+          
+            a
+            c
+          
+        
+      
+    
+    {\displaystyle {\frac {a}{c}}}
+  
+ eli kulman 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ vastakkaisen sivun pituus jaettuna hypotenuusan pituudella; 
+cos(
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+) on 
+  
+    
+      
+        
+          
+            b
+            c
+          
+        
+      
+    
+    {\displaystyle {\frac {b}{c}}}
+  
+ eli viereisen sivun pituus jaettuna hypotenuusan pituudella ja 
+tan(
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+) on  
+  
+    
+      
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\displaystyle {\frac {a}{b}}}
+  
+ eli vastaisen sivun pituus jaettuna viereisen sivun pituudella 
+Lisäksi 
+  
+    
+      
+        
+          
+            b
+            a
+          
+        
+      
+    
+    {\displaystyle {\frac {b}{a}}}
+  
+ on 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+:n kotangentti, 
+  
+    
+      
+        
+          
+            c
+            b
+          
+        
+      
+    
+    {\displaystyle {\frac {c}{b}}}
+  
+ on 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+:n sekantti ja 
+  
+    
+      
+        
+          
+            c
+            a
+          
+        
+      
+    
+    {\displaystyle {\frac {c}{a}}}
+  
+ on 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+:n kosekantti. 
+Näiden suhteiden eli trigonometristen funktioiden arvoja on aikojen kuluessa taulukoitu ja muita menetelmiä niiden tuottamiseksi kehitetty. Trigonometristen funktioiden, erityisesti sinin ja kosinin, arvojen tuntemus ja sinilauseen ja kosinilauseen käyttö tekevät mahdolliseksi kolmion tuntemattomien osien laskemisen eli kolmion ratkaisemisen, kun kolmiosta tunnetaan vähintään kaksi osaa, joista ainakin yksi on kolmion sivun pituus. 
+Trigonometrialla on monia sovelluksia esimerkiksi tähtitieteessä, tilastotieteessä, kemiassa, arkkitehtuurissa, meteorologiassa ja kartografiassa. 
+
+
+== Trigonometrisista funktioista ==
+Pääartikkeli: Trigonometrinen funktio
+
+
+=== Klassiset määritelmät ===
+Suorakulmaisessa kolmiossa 
+  
+    
+      
+        A
+        B
+        C
+      
+    
+    {\displaystyle ABC}
+  
+, 
+  
+    
+      
+        ∠
+        B
+        C
+        A
+        =
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle \angle BCA=90^{\circ }}
+  
+,  sivujen suhteisiin vaikuttaa vain terävän kulman 
+  
+    
+      
+        ∠
+        B
+        A
+        C
+        =
+        α
+      
+    
+    {\displaystyle \angle BAC=\alpha }
+  
+ (
+  
+    
+      
+        0
+        <
+        α
+        <
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle 0<\alpha <90^{\circ }}
+  
+) suuruus, ei kolmion koko. Kolmion pisintä sivua 
+  
+    
+      
+        A
+        B
+        =
+        c
+      
+    
+    {\displaystyle AB=c}
+  
+ kutsutaan sen hypotenuusaksi, lyhempiä sivuja 
+  
+    
+      
+        B
+        C
+        =
+        a
+      
+    
+    {\displaystyle BC=a}
+  
+ 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+:n vastaiseksi ja 
+  
+    
+      
+        A
+        C
+        =
+        b
+      
+    
+    {\displaystyle AC=b}
+  
+ 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+:n viereiseksi kateetiksi. Näitä sivujen suhteita nimitetään kulman trigonometrisiksi funktioiksi. 
+
+SINI sin α = a/c;
+KOSINI cos α = b/c
+TANGENTTI tan α = a/b
+KOTANGENTTI cot α = b/a
+SEKANTTI sec α = c/b
+KOSEKANTTI csc α = c/a
+Kateettien ja hypotenuusan pituuksien välillä olevaa yhteyttä 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}+b^{2}=c^{2}}
+  
+ kutsutaan nimellä Pythagoraan lause. Se on erikoistapaus kosinilauseesta.
+Yleensä käytetään vain kahta tai kolmea ensimmäistä funktiota, koska kotangentti, sekantti ja kosekantti saadaan tangentin, kosinin ja sinin (vastaavasti) käänteisarvoina ja tangentti on sinin ja kosinin osamäärä.
+
+
+=== Yleisempi määritelmä ===
+
+Piirretään suorakulmaiseen xy-koordinaatistoon yksikköympyrä eli ympyrä, jonka keskipiste on origossa ja säde on yksi, ja tarkastellaan ympyrän kehän tason ensimmäisessä neljänneksessä sijaitsevaa pistettä 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+. Jos 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+-akselin ja pisteen origoon yhdistävän janan välinen kulma on 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+, niin sinin ja kosinin määritelmän perusteella 
+  
+    
+      
+        x
+        =
+        cos
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle x=\cos \phi }
+  
+ ja 
+  
+    
+      
+        y
+        =
+        sin
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle y=\sin \phi }
+  
+. Tämä antaa aiheen laajentaa sinin ja kosinin määritelmät myös sellaisille kulmille 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+, jotka eivät toteuta ehtoa 
+  
+    
+      
+        0
+        <
+        ϕ
+        <
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle 0<\phi <90^{\circ }}
+  
+. Määritelmä syntyy sijoittamalla kulma niin, että sen kärki on origo ja oikea kylki on positiivinen 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+-akseli. Jos vasen kylki leikkaa yksikköympyrän pisteessä 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+, asetetaan 
+  
+    
+      
+        cos
+        ⁡
+        ϕ
+        =
+        x
+      
+    
+    {\displaystyle \cos \phi =x}
+  
+ ja 
+  
+    
+      
+        sin
+        ⁡
+        ϕ
+        =
+        y
+      
+    
+    {\displaystyle \sin \phi =y}
+  
+. Kun 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+:n ajatellaan syntyvän kiertona positiivisesta 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+-akselista vastapäivään eli positiiviseen kiertosuuntaan, kun 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ on positiivinen, ja myötäpäivään eli negatiiviseen kiertosuuntaan, kun 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ on negatiivinen, saadaan määritelmä koskemaan kaikkia kulmia (tai kiertoja). 
+Muut trigonometriset funktiot ovat sinin ja kosinin suhteita tai käänteislukuja. Niiden yleiset määritelmät palautuvat siis sinin ja kosinin yleiseen määritelmään. Koska sini ja kosini saavat tietyillä kulmilla arvon 0, niin tangentti, kotangentti, sekantti ja kosekantti eivät ole määriteltyjä kaikilla kulmilla. 
+Koska kulmia mitataan eri yksiköin, on trigonometristen funktioiden avulla laskettaessa otettava huomioon käytettävä mittayksikkö (asteet, piirut, radiaanit jne.). Silloin, kun trigonometrisia funktioita käytetään alkuperäisestä geometrisesta yhteydestään irrotettuina, oletetaan yleensä, että niiden argumentit ovat paljaita lukuja. Kulmiin palautettuna tämä tarkoittaa kulman yksikköä radiaani eli ns. absoluuttista kulman yksikköä.
+
+
+=== Sarjakehitelmät ===
+Sini- ja kosinifunktion arvot voidaan laskea niiden sarjakehitelmistä kaikilla reaaliluvuilla 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+:
+
+  
+    
+      
+        sin
+        ⁡
+        x
+        =
+        x
+        −
+        
+          
+            
+              x
+              
+                3
+              
+            
+            
+              3
+              !
+            
+          
+        
+        +
+        
+          
+            
+              x
+              
+                5
+              
+            
+            
+              5
+              !
+            
+          
+        
+        −
+        
+          
+            
+              x
+              
+                7
+              
+            
+            
+              7
+              !
+            
+          
+        
+        +
+        ⋯
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            
+              (
+              2
+              n
+              +
+              1
+              )
+              !
+            
+          
+        
+      
+    
+    {\displaystyle \sin x=x-{\frac {x^{3}}{3!}}+{\frac {x^{5}}{5!}}-{\frac {x^{7}}{7!}}+\cdots =\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n+1}}{(2n+1)!}}}
+  
+,
+
+  
+    
+      
+        cos
+        ⁡
+        x
+        =
+        1
+        −
+        
+          
+            
+              x
+              
+                2
+              
+            
+            
+              2
+              !
+            
+          
+        
+        +
+        
+          
+            
+              x
+              
+                4
+              
+            
+            
+              4
+              !
+            
+          
+        
+        −
+        
+          
+            
+              x
+              
+                6
+              
+            
+            
+              6
+              !
+            
+          
+        
+        +
+        ⋯
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+      
+    
+    {\displaystyle \cos x=1-{\frac {x^{2}}{2!}}+{\frac {x^{4}}{4!}}-{\frac {x^{6}}{6!}}+\cdots =\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n}}{(2n)!}}}
+  
+.
+Näistä sarjoista voidaan johtaa myös muiden trigonometristen funktioiden sarjakehitelmiä, esimerkiksi 
+
+  
+    
+      
+        tan
+        ⁡
+        x
+        =
+        x
+        +
+        
+          
+            
+              x
+              
+                3
+              
+            
+            3
+          
+        
+        +
+        
+          
+            
+              2
+              
+                x
+                
+                  5
+                
+              
+            
+            15
+          
+        
+        +
+        
+          
+            
+              17
+              
+                x
+                
+                  7
+                
+              
+            
+            315
+          
+        
+        +
+        ⋯
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              
+                2
+                
+                  2
+                  n
+                
+              
+              (
+              
+                2
+                
+                  2
+                  n
+                
+              
+              −
+              1
+              )
+              
+                B
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                  −
+                  1
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+        ,
+        
+        
+          |
+          x
+          |
+        
+        <
+        
+          
+            π
+            2
+          
+        
+      
+    
+    {\displaystyle \tan x=x+{\frac {x^{3}}{3}}+{\frac {2x^{5}}{15}}+{\frac {17x^{7}}{315}}+\cdots =\sum _{n=1}^{\infty }{\frac {2^{2n}(2^{2n}-1)B_{n}x^{2n-1}}{(2n)!}},\quad \left|x\right|<{\frac {\pi }{2}}}
+  
+,
+
+  
+    
+      
+        csc
+        ⁡
+        x
+        =
+        
+          
+            1
+            x
+          
+        
+        +
+        
+          
+            x
+            6
+          
+        
+        +
+        
+          
+            
+              7
+              
+                x
+                
+                  3
+                
+              
+            
+            360
+          
+        
+        +
+        
+          
+            
+              31
+              
+                x
+                
+                  5
+                
+              
+            
+            15120
+          
+        
+        +
+        ⋯
+        =
+        
+          
+            1
+            x
+          
+        
+        +
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              2
+              (
+              
+                2
+                
+                  2
+                  n
+                  −
+                  1
+                
+              
+              −
+              1
+              )
+              
+                B
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                  −
+                  1
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+        ,
+        
+        0
+        <
+        
+          |
+          x
+          |
+        
+        <
+        π
+      
+    
+    {\displaystyle \csc x={\frac {1}{x}}+{\frac {x}{6}}+{\frac {7x^{3}}{360}}+{\frac {31x^{5}}{15120}}+\cdots ={\frac {1}{x}}+\sum _{n=1}^{\infty }{\frac {2(2^{2n-1}-1)B_{n}x^{2n-1}}{(2n)!}},\quad 0<\left|x\right|<\pi }
+  
+,
+
+  
+    
+      
+        sec
+        ⁡
+        x
+        =
+        1
+        +
+        
+          
+            
+              x
+              
+                2
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              5
+              
+                x
+                
+                  4
+                
+              
+            
+            24
+          
+        
+        +
+        
+          
+            
+              61
+              
+                x
+                
+                  6
+                
+              
+            
+            720
+          
+        
+        +
+        ⋯
+        =
+        1
+        +
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              
+                E
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+        ,
+        
+        
+          |
+          x
+          |
+        
+        <
+        
+          
+            π
+            2
+          
+        
+      
+    
+    {\displaystyle \sec x=1+{\frac {x^{2}}{2}}+{\frac {5x^{4}}{24}}+{\frac {61x^{6}}{720}}+\cdots =1+\sum _{n=1}^{\infty }{\frac {E_{n}x^{2n}}{(2n)!}},\quad \left|x\right|<{\frac {\pi }{2}}}
+  
+,
+
+  
+    
+      
+        cot
+        ⁡
+        x
+        =
+        
+          
+            1
+            x
+          
+        
+        −
+        
+          
+            x
+            3
+          
+        
+        −
+        
+          
+            
+              x
+              
+                3
+              
+            
+            45
+          
+        
+        −
+        
+          
+            
+              2
+              
+                x
+                
+                  5
+                
+              
+            
+            945
+          
+        
+        −
+        ⋯
+        =
+        
+          
+            1
+            x
+          
+        
+        −
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              
+                2
+                
+                  2
+                  n
+                
+              
+              
+                B
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                  −
+                  1
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+        ,
+        
+        0
+        <
+        
+          |
+          x
+          |
+        
+        <
+        π
+      
+    
+    {\displaystyle \cot x={\frac {1}{x}}-{\frac {x}{3}}-{\frac {x^{3}}{45}}-{\frac {2x^{5}}{945}}-\cdots ={\frac {1}{x}}-\sum _{n=1}^{\infty }{\frac {2^{2n}B_{n}x^{2n-1}}{(2n)!}},\quad 0<\left|x\right|<\pi }
+  
+.
+Näissä 
+  
+    
+      
+        
+          B
+          
+            n
+          
+        
+      
+    
+    {\displaystyle B_{n}}
+  
+:t ovat ns. Bernoullin lukuja ja 
+  
+    
+      
+        
+          E
+          
+            n
+          
+        
+      
+    
+    {\displaystyle E_{n}}
+  
+:t ns. Eulerin lukuja.
+
+
+== Trigonometrisiin funktioihin liittyviä kaavoja ==
+
+
+=== Peruskaavoja ===
+
+  
+    
+      
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        x
+        +
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        x
+        =
+        1
+        
+        tan
+        ⁡
+        x
+        =
+        
+          
+            
+              sin
+              ⁡
+              x
+            
+            
+              cos
+              ⁡
+              x
+            
+          
+        
+        
+        cot
+        ⁡
+        x
+        =
+        
+          
+            
+              cos
+              ⁡
+              x
+            
+            
+              sin
+              ⁡
+              x
+            
+          
+        
+      
+    
+    {\displaystyle \sin ^{2}x+\cos ^{2}x=1\qquad \tan x={\frac {\sin x}{\cos x}}\qquad \cot x={\frac {\cos x}{\sin x}}}
+  
+
+
+=== Muunnoskaavoja ===
+
+  
+    
+      
+        sin
+        ⁡
+        (
+        −
+        x
+        )
+        =
+        −
+        sin
+        ⁡
+        x
+        
+        cos
+        ⁡
+        (
+        −
+        x
+        )
+        =
+        cos
+        ⁡
+        x
+      
+    
+    {\displaystyle \sin(-x)=-\sin x\qquad \cos(-x)=\cos x}
+  
+
+[1][vanhentunut linkki]
+
+
+=== Derivointi ===
+
+  
+    
+      
+        D
+        ⁡
+        sin
+        ⁡
+        x
+        =
+        cos
+        ⁡
+        x
+        
+        D
+        ⁡
+        cos
+        ⁡
+        x
+        =
+        −
+        sin
+        ⁡
+        x
+        
+        D
+        ⁡
+        tan
+        ⁡
+        x
+        =
+        
+          
+            1
+            
+              
+                cos
+                
+                  2
+                
+              
+              ⁡
+              x
+            
+          
+        
+        
+        D
+        ⁡
+        cot
+        ⁡
+        x
+        =
+        −
+        
+          
+            1
+            
+              
+                sin
+                
+                  2
+                
+              
+              ⁡
+              x
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {D} \sin x=\cos x\qquad \operatorname {D} \cos x=-\sin x\qquad \operatorname {D} \tan x={\frac {1}{\cos ^{2}x}}\qquad \operatorname {D} \cot x=-{\frac {1}{\sin ^{2}x}}}
+  
+
+Trigonometristen funktioiden monikertaisten kulmien kaavat (esimerkiksi 
+  
+    
+      
+        sin
+        ⁡
+        2
+        x
+      
+    
+    {\displaystyle \sin 2x}
+  
+) voidaan johtaa De Moivren kaavalla.
+
+
+=== Integrointi ===
+
+  
+    
+      
+        ∫
+        sin
+        ⁡
+        x
+        
+        d
+        x
+        =
+        −
+        cos
+        ⁡
+        x
+        +
+        C
+        
+        ∫
+        cos
+        ⁡
+        x
+        
+        d
+        x
+        =
+        sin
+        ⁡
+        x
+        +
+        C
+        
+        ∫
+        tan
+        ⁡
+        x
+        
+        d
+        x
+        =
+        −
+        ln
+        ⁡
+        
+          |
+        
+        cos
+        ⁡
+        x
+        
+          |
+        
+        +
+        C
+      
+    
+    {\displaystyle \int \sin x\,dx=-\cos x+C\qquad \int \cos x\,dx=\sin x+C\qquad \int \tan x\,dx=-\ln |\cos x|+C}
+  
+
+  
+    
+      
+        ∫
+        cot
+        ⁡
+        x
+        
+        d
+        x
+        =
+        ln
+        ⁡
+        
+          |
+        
+        sin
+        ⁡
+        x
+        
+          |
+        
+        +
+        C
+      
+    
+    {\displaystyle \int \cot x\,dx=\ln |\sin x|+C}
+  
+
+
+== Pallotrigonometria ==
+Yleensä trigonometrialla tarkoitetaan vain tasopinnalle sijoitettuja kolmioita käsittelevää matematiikkaa. Pallotrigonometria käsittelee kolmioita, jotka muodostuvat pallon isoympyröiden kaarista. Pallokolmion kulmien ja sivujen suuruus ilmaistaan kulmamitoin.  Pallotrigonometrialla on runsaasti sovelluksia tähtitieteessä.
+
+
+== Katso myös ==
+Arkusfunktiot
+Geometria
+Hyperbolinen funktio
+Kolmion ratkaiseminen
+Kolmiomittaus
+
+
+== Lähteet ==
+
+
+== Aiheesta muualla ==
+ Kuvia tai muita tiedostoja aiheesta Trigonometria Wikimedia Commonsissa
+Opetusvideoita aiheesta Opetus.tv-sivustolla
+Matematiikkalehti Solmu, Erkki Luoma-aho: Matematiikan historia aihealueittain, Trigonometria (pdf)
+Trigonometrian periaatteet (englanniksi)

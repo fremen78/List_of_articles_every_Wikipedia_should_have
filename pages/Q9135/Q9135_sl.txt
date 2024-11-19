@@ -1,0 +1,122 @@
+Operacíjski sistém (kratica OS, angleško operating system) je programska oprema nujna za delovanje računalnika. Deluje kot vmesnik med uporabnikom in strojno opremo računalnika.
+
+
+== Naloge operacijskega sistema ==
+Dodeljevanje virov (CPE, pomnilniški prostor, vhodno/izhodne naprave) procesom,
+Časovno razporejanje opravil,
+Reševanje konfliktnih situacij (sočasni dostopi do virov),
+Optimizacija in nadzira uporabe virov,
+Omogočanje dela uporabnikom, ...
+
+
+== Uporabniški vmesniki OS ==
+slikovni (grafični) vmesniki (uporabniški vmesnik, ki ga upravljamo v kombinaciji z računalniško miško); npr. različice Windows ali namizja v Linuxu
+vmesniki z ukazno vrstico: npr. MS-DOS ali ukazne lupine v Linuxu.
+
+
+== Vrste operacijskih sistemov ==
+Operacijski sistemi se uporabljajo v raznolikih računalniških konfiguracijah - od mikro računalnikov do velikih računalniških sistemov. Zato imajo funkcije realizirane na različne načine; obstajata pa dve funkciji, ki sta skupni vsem sistemom:
+
+uporabniški vmesnik (user interface)
+zagotavljanje izvajalnega okolja (run-time environment)
+Operacijske sisteme lahko delimo glede na to, koliko uporabnikov lahko sistem uporablja istočasno. To so lahko enouporabniški (single-user, single-job), večprogramski (multiprogramminig), večprocesorski (multiprocessing) in porazdeljeni (distributed) operacijski sistemi. Drug način razdelitve je glede na to, kako uporabniki dostopajo do računalnikovih funkcij. To so lahko paketni (batch) in interaktivni (interactive) operacijski sistemi, ko mora biti procesor na rapolago v zaporednih časovnih rezinah (time-sharing). Mogoče so različne kombinacije tipov operacijskih sistemov.
+
+
+=== Enoopravilni in enouporabniški ===
+To so najpreprostejši operacijski sistemi. Računalnik lahko izvaja le en program naenkrat. Če je uporabnik želel preklopiti na drug program, je moral najprej prvega zaključiti. Šele nato je lahko zagnal drugega. Glavna slabost enoopravilnih operacijskih sistemov je slaba izkoriščenost računalniških virov.
+Tipični predstavnik te skupine operacijskih sistemov je MS-DOS.
+
+
+=== Enouporabniški, večopravilni ===
+Operacijski sistem upravlja in rezervira pomnilnik, razvršča procese in skrbi za komunikacijo med njimi, dodeljuje vire, rokuje s podatki – datotečnim sistemom itd. Enouporabniški operacijski sistemi imajo le enega uporabnika, dovoljuje pa izvajanje več programov hkrati.
+Večopravilni sistemi omogočajo izvajanje več kot enega programa naenkrat (istočasno lahko poslušate glasbo, pošiljate e-pošto, ...). Nekateri sistemi lahko istočasno navidezno izvršujejo več programov. Procesor izvaja en proces določen čas, nato naslednjega itd., uporabnik pa ima občutek kot, da se vsi procesi izvajajo istočasno. Večopravilni operacijski sistemi bolje izkoristijo razpoložljivo strojno opremo.
+Predstavniki te skupine operacijskih sistemov so Microsoft Windows 95/98/NT, Windows 2000, ...
+
+
+=== Večuporabniški, večopravilni ===
+Večuporabniški operacijski sistem dovoljuje uporabo računalniškega sistema več uporabnikom hkrati. Dostop do takšnega računalnika je tipično realiziran preko računalniškega omrežja, tako da se uporabniki na sistem povezujejo preko oddaljenega dostopa (terminalski dostop, oddaljeno namizje). Večuporabniški sistem mora upravljati in usklajevati zahteve vseh uporabnikov in pri tem zagotoviti, da ne pride do medsebojnih vplivov. Naprave, ki niso deljive, lahko istočasno izvršujejo zahtevo samo enega uporabnika (npr. tiskalnik) Sisteme, ki uporabljajo časovne rezine (time-sharing) in spletne strežnike lahko opredelimo kot večuporabniške sisteme, ker omogočajo večuporabniški dostop do računalnika preko dodeljevanja časa.
+Predstavniki so: Microsoft Windows XP, Vista, 7, 8, Unix (OpenBSD, FreeBSD, ...), Linux, ...
+
+
+=== Interaktivni ===
+Pri interaktivnem operacijskem sistemu ima uporabnik neposreden stik z računalniškim sistemom in omogoča dialog med uporabnikom in izvajanim programom. Posli se opravljajo z interaktivnimi ukazi. Sporočila tečejo od uporabnika do računalnika in obratno po znakih. Nabira se v pomnilniškem vmesniku, procesor pa ga dobi v obdelavo šele, ko je bil poslan znak za konec sporočila.
+
+
+=== Mrežni in porazdeljeni ===
+Več računalnikov je lahko medsebojno povezanih v računalniško omrežje. Računalniki lahko uporabljajo za komunikacijo programe zunaj operacijskega sistema. Za povezave pa je lahko zadolžen tudi sam operacijski sistem. Eden izmed računalnikov lahko deluje kot zbirčni strežnik (file server) do katerega dostopajo vsi drugi računalniki v omrežju. Tak dostop omogoča mrežni operacijski sistem, ki za razliko od porazdeljenega nadzira delovanje samo enega računalnika, lahko pa svoje vire da na razpolago drugim računalnikom povezanim v mrežo.
+Porazdeljeni operacijski sistem nadzira in usmerja delovanje več računalnikov povezanih v mreži, običajno streže več uporabnikom. Omogoča avtomatično razdelitev programskega bremena med več omrežnih računalnikov.
+
+
+=== Realnočasnovni ===
+Pri nekaterih računalniških sistemih je zelo pomembno, da se neko opravilo opravi pravočasno oz. so dolčeni intervali, v katerih so morajo biti začeta opravila končana. Zanj je značilno, da omogoča hitre in predvidljive odzive na zunanje dogodke. Razlika med realnočasnovnimi in interaktivnimi operacijskimi sistemi je v času odziva. Medtem, ko je pri sprotnih operacijskih sistemih čas za vsako opravilo natančno določen, se pri interaktivnih operacijskih sistemih pričakuje takojšen odziv s stališča končnega uporabnika (to je v doglednjem času).
+S takimi OS se srečamo v raznih krmiljih zahtevnih strojev in naprav, v usmerjevalnikih računalniškega omrežja, itd. Splošen primer tega tipa OS je HDTV sprejemnik in prikazovalnik (televizija z visoko ločljivostjo). Potrebuje se branje digitalnega signala, dekodiranje tega signala in prikaz dekodiranih podatkov. Kakršnakoli zakasnitev povzroči "kockanje" slike in/ali popačen zvok.
+Predstavniki tega tipa OS so LynxOS, OSE, RTLinux, VxWorks, Windows CE.
+
+
+=== Vgrajeni ===
+Vgrajeni operacijski sistemi (embedded) so strogonamenski računalniški sistemi. To je operacijski sistem, ki sloni na specifičnih zahtevah in izvaja točno določene naloge. Upravlja lahko z omejenim številom virov. So zelo kompaktni in učinkoviti. Za vgrajen sistem ni nujno, da je del nečesa večjega, lahko je tudi samostojen, kot je v primeru digitalnega fotoaparata ali dvd-predvajalnika.
+Windows CE in Minix 3 sta primera vgrajenega OS.
+
+
+== Zgodovina ==
+Zgodnji računalniki so bili zgrajeni za opravljanje vrste posameznih nalog, kot je to npr. kalkulator. Programskih jezikov ni bilo, prav tako ne operacijskih sistemov. Računalnike so upravljali neposredno z vnosom strojnih ukazov - bodis preko stikal, žičnih povezav, luknjanih kartic ali traku. To so bili sistemi za posebne namene, npr.: generiranje balističnih tabel za vojsko ali za tiskanje plačilnih seznamov na podlagi podatkov vnešenih na luknjane papirnate kartice. Potem ko so izumili programabilne računalnike za splošno rabo, so bili uvedeni strojni jeziki (sestavljeni iz nizov binarnih številk 0 in 1 na luknjanem traku papirja), ki je pospešil proces programiranja.
+
+Osnovne funkcije operacijskega sistema so bile razvite v 1950-ih letih, kot so to funkcije nadzornega programa (resident monitor), ki lahko avtomatično zaporedno izvaja različne programe z namenom pospešitve obdelave. V zgodnjih 1950 je lahko računalnik izvajal le en program naenkrat. Vsak uporabnik je imel izključno uporabo računalnika za omejeno časovno obdobje - ob načrtovanem času je vnesel program s podatki na luknjanih papirnih karticah in/ali luknjanem traku. Program se je naložil v napravo in deloval dokler se program ni zaključil ali sesul. Programe so lahko v splošnem razhroščevali preko prednje plošče z uporabo preklopnih stikal in lučk. Pravijo, da je bil za to mojster Alan Turing na zgodnjem Manchester Mark 1 stroju, ki je že vseboval primitivni koncept operacijskega sistema delujočega na načelih univerzalnega Turingovega stroja.
+Operacijski sistemi niso obstajali (v moderni in bolj zapleteni obliki) do zgodnjih 1960ih let. Dodane so bile strojne funkcije, ki omogočajo uporabo runtime knjižnic, prekinitev in vzporedno procesiranje. Ko so v 1980-ih postali priljubljeni osebni računalniki, so za njih naredili operacijske sisteme podobne tistim, ki so delovali na večjih računalnikih.
+
+
+=== Osrednji računalniki (mainframe) ===
+
+V pedesetih letih je bilo veliko funkcij na področju operacijskih sistemov pionirskih, vključno s paketno obdelavo, vhodno/izhodnimi prekinitvami, vmesnim shranjevanjem (buffering), večopravilnostjo, spooling (tiskanje v ozadju), runtime knjižnicami, povezovalnikom (linker) in programi za razvrščanje zapisov. Te funkcije so bile vključene ali pa ne v aplikacijski programski opremi glede na izbiro programerjev aplikacije, namesto v ločenem operacijskem sistemu, ki ga uporabljajo vse aplikacije. Leta 1959 je bil izdan SHARE Operating System kot namenski sistem za IBM 704 in kasneje za 709 in 7090 osrednje računalnike, čeprav je le-ta bil hitro nadomščen z IBSYS/IBJOB na 709, 7090 in 7094.
+V šestdesetih letih je IBM predstavil družino računalnikov System/360 v katerih je bil nameščen operacijski sistem OS/360. Operacijski sistem System/360 še vedno živi v današnjih sodobnih IBM-ovih operacijskih sistemih.
+OS/360 je prvi uvedel koncept, da operacijski sistem beleži vse sistemske vire, ki se uporabljajo, vključno z dodeljevanjem programov in prostora v glavnem pomnilniku in datotečnega prostora v zunanjem nosilcu podatkov (secondary storage), in zaklepanjem datotek (file locking) med posodobitvijo. Ko je postopek zaradi katerega koli razloga prekinjen, so vsi ti viri ponovno na razpolago operacijskemu sistemu.
+Alternativni CP-67 sistem za S/360-67 je začel popolnoma novo linijo IBM operacijskih sistemov, ki se je osredotočil na koncept navideznega stroja (virtual machine).
+Control Data Corporation je v 1960-ih razvil operacijski sistem SCOPE, za paketno procesiranje (batch processing). V sodelovanju z University of Minnesota, so bili v 70-ih razviti Kronos in kasnejši NOS opercijski sistemi, ki so podpirali sočasno paketno uporabo in dodeljevanje časovnih rezin. Kakor mnogo komercialnih timesharing sistemov, je bil njegov vmesnik razširitev Dartmouth BASIC operacijskih sistemov, ki je bil eden izmed pionirjev na področju dodeljevanja časovnih rezin in programskih jezikov. V poznih 1970-ih, sta Control Data in University of Illinois razvila PLATO operacijski sistem, ki je uporabljal ravni plazma zaslon in mrežo na daljavo z dodeljevanjem časovnih rezin (long-distance time sharing network). Plato je bil za svoj čas zelo inovativen, ki je omogočal pogovor v realnem času (real-time chat) in večuporabniške grafične igre.
+Leta 1961 je Burroughs Corporation predstavila B5000 z MCP, (Master Control Program) operacijski sistem. B5000 je bil skladovni stroj (stack machine) razvit za podporo višjim programskim jezikom brez strojnega jezika ali assemblerja, in MCP je bil dejansko prvi OS, ki je bil napisan izključno v višjem programskem jeziku – ESPOL, dialekt programskega jetika ALGOL. MCP je prav tako vpeljal več drugih pionisrkih inovacij, kot je prva uporaba navideznega pomnilnika.
+UNIVAC je bil prvi komercialni prizvajalec računalnikov. Proizvedel je serijo EXEC operacijskih sistemov. Kot vsi zgodnejši osrednji računalniški sistemi, je ta paketno usmerjeni sistem upravljal magnetne bobne, diske in čitalce kartic in linijske tiskalnike. V 70-ih je UNIVAC proizvedel the Real-Time Basic (RTB) sistem za podporo obsežnemu dodeljevanu časovnih rezin, prav tako narejen po vzorcu Dartmouth BC sistema.
+Digital Equipment Corporation je razvil več operacijskih sistemov za različne linije računalnikov, vključno z TOPS-10 in TOPS-20 z dodeljevanjem časovnih rezin za 36-bitne sisteme razreda PDP-10. TOPS-10 je bil še posebej popularen sistem na univerzah in v zgodnji ARPANET skupnosti.
+Od poznih 1960ih do poznih 70ih je postala strojna oprema zmogljivejša in je dovoljevala izvajanje podobne ali prenosljive programske opreme na več kot enem sistemu. Zgodnji sistemi so za izpeljavo funkcionalnosti na svojih sistemih izkoriščali mikroprogramiranje z namenom, da bi omogočili različne arhitekture računalnikov.
+Velike investicije v programsko opremo za te sisteme, ki so bili narejeni od 60-ih let, so vzrok, da je večina originalnih proizvajalcev računalnikov nadaljevala z razvojem kompatibilnih operacijskih sistemov skupaj s strojno opremo. Vidnejši operacijski sistemi za osrednje računalnike vključujejo:
+
+Burroughs MCP – B5000, 1961 v Unisys Clearpath/MCP, danes.
+IBM OS/360 – IBM System/360, 1966 v IBM z/OS, danes.
+IBM CP-67 – IBM System/360, 1967 v IBM z/VM, danes.
+UNIVAC EXEC 8 – UNIVAC 1108, 1967, v OS 2200 Unisys Clearpath Dorado, danes.
+
+
+=== Mikroračunalniki ===
+
+Prvi mikroračunalniki niso imeli zmogljivosti ali potrebe po dovršenih operacijskih sistemih, ki so bili razviti za osrednje računalnike in miniračunalnike; razviti so bili minimalistični operacijski sistemi, ki so se pogosto naložili iz ROM-a. Eden uglednejših zgodnjih diskovnih operacijskih sistemov je bil CP/M (Control Program for Mikroprocessors), ki je bil podprt na mnogih zgodnjih mikroračunalnikih in ga je močno imitiral Microsoftov MS-DOS, ki je postal splošno popularen kot operacijski sistem izbran za IBM PC (IBM-ova verzija je bila poimenovana IBM DOS ali PC DOS). V 80-tih je Apple Computer Inc. (sedaj Apple Inc.) opustil svojo popularno Apple II serijo mikroračunalnikov ko je predstavil svoj Apple Macintosh računalnik z inovativnim  grafičnim uporabniškim vmesnikom (GUI) na Mac OS. Številne od njegovih funkcij so pozneje postale običajen del GUI, npr. okna in ikone.
+Uvedba Intel 80386 CPU čipa z 32-bitno arhitekturo z možnostjo kopiranja podatkov iz navideznega v fizični pomnilnik (pomniniško ostranjevanje oz. paging) je zagotavila osebnim računalnikom zmožnost delovati na večopravilnih operacijskih sistemih podobnih tistim zgodnjim na miniračunalnikih in osrednjih računalnikih. Microsoft je kot odgovor na ta napredek odgovoril z najetjem Dave Cutlerja, ki je za Digital Equipment Corporation razvil VMS operacijski sistem. On je vodil razvoj Windows NT operacijskega sistema, ki še danes služi kot osnova za Microsoftovo linijo operacijskih sistemov. Steve Jobs, soustanovitelj Apple Inc., je ustanovil NeXT Computer Inc., ki je razvil NeXTSTEP operacijski sistem. NeXTSTEP je kasneje pridobil Apple Inc. in ga uporabil, skupaj s kodo iz FreeBSD kot jedro OS X.
+GNU je začel ameriški aktivist in programer Richard Stallman s ciljem ustvariti popolnoma svobodno programje kot nadomestilo za lastniško programsko opremo UNIX operacijskega sistema. Medtem ko je bil projekt zelo uspešen v kopiranju funkcionalnosti različnih delov UNIX-a, je bil razvoj jedra GNU Hurd neproduktiven. Leta 1991 je finski študent računalniških znanosti Linus Torvalds., v sodelovanju s prostovoljci preko interneta, izdal prvo verzijo Linux jedra. Kmalu je bil združen z GNU komponentami uporabniškega prostora (user space) in sistemsko programsko opremo, kar je oblikovalo kompletni operacijski sistem. Od takrat je industrija programske opreme kombinacijo dveh glavnih komponent običajno imenovala kar "Linux" s čimer pa se Stallman in Free Software Foundation nista strinjala in sta prednost dajala imenu GNU/Linux. Berkeley Software Distribution, poznan tdi kot BSD, je Unixova izpeljanka, ki jo je od 1970-ih razširjala Univerza Kalifornije, Berkeley.
+
+
+== Komponente ==
+
+
+=== Jedro ===
+Operacijski sistem je sestavljen iz dveh delov:
+
+jedra (kernel), ki skrbi za nadzor procesorja, pomnilnika, procesov in naprav v računalniku ter
+uporabniškega vmesnika, ki skrbi za interakcijo med uporabnikom in računalnikom.
+
+
+== Tržni delež ==
+Grosistična prodaja sistemov (tablični računalniki, prenosniki in PC-ji, vključno mobiji) po Gartnerju
+
+Po objavi »Rezultati pregleda razvijalcev 2016« spletišča Stack Overflow uporabljajo angleško govoreči uporabniki naslednje operacijske sisteme za razvoj (in bo predvidoma »v pregledu naslednje leto - to je 2017 - število razvijalcev, ki uporabljajo Windows, padlo pod 50 %«):
+
+Drug vir podatkov je platforma Steam, katere razvijalci od decembra 2008 objavljajo »Pregled HW in SW«:
+
+^†  Te številke so agregati podatkov, ki jih paro poroča Steam, in ne vključujejo statistike za Steam OS. Statistika tudi ne navaja manj rabljenih različic, tako da je te številke treba razumeti kot spodnjo mejo rabe.
+
+
+== Sklici ==
+
+
+== Zunanje povezave ==
+
+Operating Systems na Open Directory Project
+Multics History and the history of operating systems
+How Stuff Works – Operating Systems
+Help finding your Operating System type and version

@@ -1,0 +1,1093 @@
+En differensialligning er en ligning der det inngår en ukjent funksjon og deriverte av denne.   En differensialligning beskriver en sammenheng mellom en funksjon og endringer i funksjonen.   I muntlig tale blir forkortningen «diffligning» ofte brukt.  
+Differensialligninger er svært viktige i høyere matematikk og også i fagfelt der matematikk blir brukt. I fagområder som fysikk, ingeniørfag, meteorologi og økonomi blir differensialligninger anvendt for å beskrive sammenhenger og utviklingsforløp. 
+Differensialligninger har vært studert og brukt siden slutten av 1600-tallet, og det eksisterer en rik og omfattende teori for denne typen ligninger.   Bare for et fåtall ligninger kjenner en eksakte løsninger, men mange numeriske metoder er utviklet for å finne tilnærmete løsninger.   Kvalitativ analyse kan også gi egenskaper til løsningen uten at den eksakte løsningen er kjent.    
+
+
+== Eksempel på bruk av en differensialligning ==
+Et eksempel på bruk av en differensialligning kan hentes fra mekanikk:  En ball som faller vil være påvirket av tyngdekraften og av luftmotstanden.  Tyngdekraften er lik mg, der m er massen til ballen og g er tyngdeakselerasjonen.  Luftmotstanden kan tilnærmelsesvis betraktes som proporsjonal med hastigheten u, lik -ku.  Minustegnet gjenspeiler at luftmotstanden virker i mot bevegelsesretningen.  Newtons andre lov gir at akselerasjonen a til ballen er gitt ved ligningen
+
+  
+    
+      
+        m
+        a
+        =
+        −
+        k
+        u
+        +
+        m
+        g
+        
+      
+    
+    {\displaystyle ma=-ku+mg\,}
+  
+
+Siden akselerasjonen er den tidsderiverte av hastigheten svarer dette til differensialligningen
+
+  
+    
+      
+        m
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        k
+        u
+        +
+        m
+        g
+      
+    
+    {\displaystyle m{\frac {du}{dt}}=-ku+mg}
+  
+
+Ligningen har den generelle løsningen
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        
+          
+            
+              m
+              g
+            
+            k
+          
+        
+        +
+        C
+        
+          e
+          
+            −
+            
+              
+                k
+                m
+              
+            
+            t
+          
+        
+      
+    
+    {\displaystyle u(t)={\frac {mg}{k}}+Ce^{-{\frac {k}{m}}t}}
+  
+
+der C er en vilkårlig konstant.   Dersom hastigheten ved tiden t = 0 er lik null, så er løsningen gitt ved
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        
+          
+            
+              m
+              g
+            
+            k
+          
+        
+        (
+        1
+        −
+        
+          e
+          
+            −
+            
+              
+                k
+                m
+              
+            
+            t
+          
+        
+        )
+      
+    
+    {\displaystyle u(t)={\frac {mg}{k}}(1-e^{-{\frac {k}{m}}t})}
+  
+
+Etter som tiden går vil ballen nærme seg en konstant fallhastighet lik (mg / k).  
+
+
+== Løsning av differensialligninger ==
+Å løse (eller  å integrere) differensialligningen vil si å finne en eller flere funksjoner som tilfredsstiller ligningen.  En differensialligning kan ha én, mange eller ingen løsninger.  Svært få differensialligninger har kjente løsninger.   I tilfeller der eksakte løsninger ikke er kjent kan en likevel finne tilnærmete løsninger, for eksempel ved numerisk matematikk.  
+En rekke matematiske teorem gir vilkår for at en entydig løsning eksisterer, selv om løsningens form ikke er kjent.  Slike teorem kalles eksistens- og entydighetsteorem.  
+En svak løsning av en differensialligning er en funksjon som tilfredsstiller ligningen, men som ikke er deriverbar i hele området der ligningen er definert.  For slike løsninger blir begrepet «å tilfredsstille ligningen» tolket på en bestemt måte, ved hjelp av distribusjoner. 
+
+
+== Klassifikasjon av differensialligninger ==
+Differensialligninger kan grupperes og klassifiseres på en rekke forskjellige måter.  Klassifikasjonen kan si noe om egenskaper til ligningen og til løsningen. 
+
+
+=== Type ===
+Differensialligninger kan klassifiseres som ordinære eller partielle, etter som om de inneholder ordinære deriverte eller partiellderiverte.  I en partiell differensialligning vil den ukjente være en funksjon av flere variable.  
+Eksempel:  Ordinær differensialligning
+
+  
+    
+      
+        
+          u
+          ′
+        
+        +
+        u
+        =
+        0
+        
+      
+    
+    {\displaystyle u'+u=0\,}
+  
+
+Her er u' den deriverte av funksjonen u = u(x).
+Eksempel:  Partiell differensialligning
+
+  
+    
+      
+        
+          u
+          
+            x
+          
+        
+        +
+        
+          u
+          
+            y
+          
+        
+        =
+        0
+        
+      
+    
+    {\displaystyle u_{x}+u_{y}=0\,}
+  
+
+Her er 
+  
+    
+      
+        
+          u
+          
+            x
+          
+        
+      
+    
+    {\displaystyle u_{x}}
+  
+ en partiellderivert av funksjonen u = u(x,y).
+En stokastisk differensialligning er en differensialligning der minst ett av ledene er en stokastisk prosess.
+En integro-differensialligning  inneholder både deriverte og integral av den ukjente funksjonen.  
+
+
+=== Orden ===
+En differensialligning av n-te orden inneholder den n-te deriverte av den ukjente funksjonen, men ingen derivert av høyere orden enn dette.  En førsteordens ordinær differensialligning kan derfor skrives på formen
+
+  
+    
+      
+        f
+        (
+        u
+        ,
+        
+          u
+          ′
+        
+        ,
+        x
+        )
+        =
+        0
+        
+        u
+        =
+        u
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(u,u',x)=0\qquad u=u(x)}
+  
+
+
+=== Lineæritet ===
+En lineær differensialligning er lineær i den ukjente funksjonen og i samtlige deriverte av denne.   Både ordinære og partielle differensialligninger kan være lineære.  Den generelle formen for en lineær n-tegrads ordinær differensialligning er:
+
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        
+          
+            
+              
+                d
+                
+                  n
+                
+              
+              u
+            
+            
+              d
+              
+                t
+                
+                  n
+                
+              
+            
+          
+        
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        
+          
+            
+              
+                d
+                
+                  n
+                  −
+                  1
+                
+              
+              u
+            
+            
+              d
+              
+                t
+                
+                  n
+                  −
+                  1
+                
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            1
+          
+        
+        u
+        +
+        
+          a
+          
+            0
+          
+        
+        =
+        0
+        ,
+        
+        
+          a
+          
+            n
+          
+        
+        ≠
+        0
+      
+    
+    {\displaystyle a_{n}{d^{n}u \over dt^{n}}+a_{n-1}{d^{n-1}u \over dt^{n-1}}+\dots +a_{1}u+a_{0}=0,\quad a_{n}\neq 0}
+  
+
+Den lineære differensialligningen er homogen dersom leddet 
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+      
+    
+    {\displaystyle a_{0}}
+  
+ er identisk lik null, ellers er ligningen inhomogen.
+En kvasilineær differensialligning er en differensialligning som er lineær i alle de høyeste-ordens deriverte. Den generelle formen for en kvasilineær ordinær differensialligning er 
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  n
+                
+              
+              u
+            
+            
+              d
+              
+                t
+                
+                  n
+                
+              
+            
+          
+        
+        =
+        f
+        (
+        
+          
+            
+              
+                d
+                
+                  n
+                  −
+                  1
+                
+              
+              u
+            
+            
+              d
+              
+                t
+                
+                  n
+                  −
+                  1
+                
+              
+            
+          
+        
+        ,
+        …
+        ,
+        u
+        ,
+        t
+        )
+      
+    
+    {\displaystyle {d^{n}u \over dt^{n}}=f({d^{n-1}u \over dt^{n-1}},\dots ,u,t)}
+  
+
+En semilineær differensialligning er lineær i alle de deriverte, men ligningen trenger ikke være lineær i den ukjente funksjonen u.  
+Andre-ordens semilineære partielle differensialligninger kan klassifiseres som elliptiske, hyperbolske eller parabolske – eller av blandet type.
+
+
+== Intitial- og randverdiproblem ==
+Ofte er det sammen med differensialligningen gitt tilleggsvilkår som den ukjente funksjonen må tilfredsstille.  Dersom en startverdi er gitt for den ukjente funksjonen, så kalles problemet å løse ligningen sammen med dette tilleggsvilkåret for et initialverdiproblem.  Det lille eksempelet gitt innledningsvis – å beskrive fallhastigheten til en ball når starthastigheten er kjent – er et initialverdiproblem.
+Dersom differensialligningen er gitt med et tilleggskrav at den ukjente funksjonen eller deriverte av denne skal ha en spesiell form på randa av området der ligningen er definert, så kalles problemet å løse denne for et randverdiproblem.  Et randverdiproblem der den ukjente funksjonen er spesifisert på randa kalles et Dirichlet-problem, mens et Neumann-problem er et randverdiproblem der den normalderiverte til funksjonen er gitt på randa.    
+
+
+== Navngitte differensialligninger ==
+Mange differensialligninger har blitt gitt egne navn, ofte oppkalt etter en eller flere matematikere som har studert ligningen.  
+
+
+=== Bernoullis differensialligning ===
+Ligningen er navngitt etter den sveitsiske matematikeren Jakob Bernoulli.  
+
+  
+    
+      
+        
+          u
+          ′
+        
+        +
+        P
+        (
+        x
+        )
+        u
+        =
+        Q
+        (
+        x
+        )
+        
+          u
+          
+            n
+          
+        
+        
+      
+    
+    {\displaystyle u'+P(x)u=Q(x)u^{n}\,}
+  
+
+Selv om ligningen er ikke-lineær så er eksakte løsninger kjent.
+
+
+=== Cauchy-Eulers ligning ===
+Ligningen har fått navn etter Augustin Louis Cauchy og Leonhard Euler:
+
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        
+          u
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        
+          u
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        x
+        )
+        +
+        ⋯
+        +
+        
+          a
+          
+            0
+          
+        
+        u
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle x^{n}u^{(n)}(x)+a_{n-1}x^{n-1}u^{(n-1)}(x)+\cdots +a_{0}u(x)=0}
+  
+
+Ligningen reduserer seg til en lineær differensialligning med konstante koeffisienter ved transformasjonen x = exp(t).
+
+
+=== Clairauts ligning ===
+Ligningen er navngitt etter den franske matematikeren Alexis Claude Clairaut, som introduserte denne i 1734.  
+
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        x
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        f
+        
+          (
+          
+            
+              
+                d
+                u
+              
+              
+                d
+                x
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle u(x)=x{\frac {du}{dx}}+f\left({\frac {du}{dx}}\right)}
+  
+
+Funksjonen f( ) er en vilkårlig funksjon av den deriverte, og generelt vil dette være en ikke-lineær ligning.  
+
+
+=== Laplaces ligning ===
+Ligningen er oppkalt etter den franske matematikeren Pierre-Simon Laplace.   Det er en lineær, elliptisk partiell differensialligning av andre orden.  Ved bruk av Laplace-operatoren kan den skrives som
+
+  
+    
+      
+        
+          
+            ∇
+          
+          
+            2
+          
+        
+        u
+        =
+        0
+      
+    
+    {\displaystyle {\nabla }^{2}u=0}
+  
+
+og er derfor homogen. Løsninger av ligningen er gitt ved sfærisk harmonisk funksjoner.
+
+
+=== Legendres differensialligning ===
+Ligningen er oppkalt etter den franske matematiskeren Adrien-Marie Legendre.
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          [
+          
+            (
+            1
+            −
+            
+              x
+              
+                2
+              
+            
+            )
+            
+              
+                d
+                
+                  d
+                  x
+                
+              
+            
+            
+              u
+              
+                p
+              
+            
+            (
+            x
+            )
+          
+          ]
+        
+        +
+        p
+        (
+        p
+        +
+        1
+        )
+        
+          u
+          
+            p
+          
+        
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle {d \over dx}\left[(1-x^{2}){d \over dx}u_{p}(x)\right]+p(p+1)u_{p}(x)=0}
+  
+
+Løsninger av ligningen kalles Legendre-funksjoner.  For heltallige positive verdier av parameteren p er løsningen et Legendre-polynom.
+
+
+=== Poissons ligning ===
+Ligningen er oppkalt etter den franske matematikeren Siméon Denis Poisson.   Det er en lineær elliptisk partiell differensialligning av andre orden.  Ligningen er inhomogen:
+
+  
+    
+      
+        
+          
+            ∇
+          
+          
+            2
+          
+        
+        u
+        =
+        f
+      
+    
+    {\displaystyle {\nabla }^{2}u=f}
+  
+
+
+=== Riccattiligningen ===
+Ligningen er en ordinær ikke-lineær differensialligning, navnsatt etter den italienske matematikeren Jacopo Francesco Riccati 
+
+  
+    
+      
+        
+          u
+          ′
+        
+        (
+        x
+        )
+        =
+        
+          q
+          
+            0
+          
+        
+        (
+        x
+        )
+        +
+        
+          q
+          
+            1
+          
+        
+        (
+        x
+        )
+        
+        u
+        (
+        x
+        )
+        +
+        
+          q
+          
+            2
+          
+        
+        (
+        x
+        )
+        
+        
+          u
+          
+            2
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle u'(x)=q_{0}(x)+q_{1}(x)\,u(x)+q_{2}(x)\,u^{2}(x)}
+  
+
+
+=== Sturm-Liouville-ligningen ===
+Ligningen er gitt navn etter  Jacques Charles François Sturm og  Joseph Liouville.  
+
+  
+    
+      
+        −
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          [
+          
+            p
+            (
+            x
+            )
+            
+              
+                
+                  d
+                  u
+                
+                
+                  d
+                  x
+                
+              
+            
+          
+          ]
+        
+        +
+        q
+        (
+        x
+        )
+        u
+        =
+        λ
+        w
+        (
+        x
+        )
+        u
+        ,
+      
+    
+    {\displaystyle -{\frac {d}{dx}}\left[p(x){\frac {du}{dx}}\right]+q(x)u=\lambda w(x)u,}
+  
+
+
+=== Tsjebysjovs ligning ===
+Ligningen har fått navn etter  den russiske matematikeren Pafnutij Tsjebysjov.
+
+  
+    
+      
+        (
+        1
+        −
+        
+          x
+          
+            2
+          
+        
+        )
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              
+                u
+                
+                  p
+                
+              
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        x
+        
+          
+            
+              d
+              
+                u
+                
+                  p
+                
+              
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        
+          p
+          
+            2
+          
+        
+        
+          u
+          
+            p
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle (1-x^{2}){d^{2}u_{p} \over dx^{2}}-x{du_{p} \over dx}+p^{2}u_{p}=0}
+  
+
+Parameteren p er en reell konstant.  Når denne er et positivt heltal er løsningen et Tsjebysjov-polynom.
+
+
+=== Andre kjente differensialligninger ===
+Black-Scholes differensialligning er en stokastisk modell for et verdipapir, for eksempel en aksje
+Cauchy-Riemann-ligningene gir et nødvendig vilkår for at en kompleks funksjon skal være analytisk
+Diracligningen beskriver oppførsel til visse typer elementærpartikler
+Eulers ligning beskriver strøm i en ideell væske
+Maxwells ligninger beskriver elektromagnetiske felt
+Navier-Stokes-ligningen beskriver væskestrøm.
+Schrödinger-ligningen – beskriver utvikling av kvantemekaniske system over tid
+
+
+== Historie ==
+På slutten av 1600-tallet ble teori for derivasjon og integrasjon utviklet parallelt av Isaac Newton og Gottfried Wilhelm Leibniz.  Etter at forholdet mellom derivasjon og integrasjon var kjent var veien til studier av differensialligninger kort. 
+En rekke matematikere på slutten av 1600-tallet og på 1700-tallet var involvert i å kartlegge klasser av ordinære differensialligninger der det var mulig å finne løsninger.   Bernoullis differensialligning er en slik klasse av ligninger, drøftet av Jakob Bernoulli i et arbeid fra 1695.  Løsningene ble funnet omtrent samtidig av Jakob Bernoulli, Johann Bernoulli og av Gottfried Leibniz.   En annen tilsvarende klasse er navngitt etter den franske matematikeren Alexis Claude Clairaut.  Riccattiligningen ble studert av både Jacopo Fracesco Ricatti, flere av medlemmene i Bernoulli-familien, samt av Leonhard Euler.    
+Som en del av et studium av vibrerende fjører utviklet Jean le Rond d'Alembert bølgeligningen
+
+  
+    
+      
+        
+          u
+          
+            t
+            t
+          
+        
+        =
+        
+          u
+          
+            x
+            x
+          
+        
+        
+      
+    
+    {\displaystyle u_{tt}=u_{xx}\,}
+  
+
+I 1747 presenterte han i det berlinske akademis Memoirs den generelle løsningen  av denne bølgeligningen:
+
+  
+    
+      
+        u
+        (
+        x
+        ,
+        t
+        )
+        =
+        f
+        (
+        x
+        −
+        t
+        )
+        +
+        g
+        (
+        x
+        +
+        t
+        )
+        
+      
+    
+    {\displaystyle u(x,t)=f(x-t)+g(x+t)\,}
+  
+
+der f og g er vilkårlige funksjoner.  Dette arbeidet ble videreført av Euler.   
+Omkring 1747 hadde både d'Alembert og Euler utviklet metoder for løsning av den generelle lineære ordinære differensialligningen av andre grad.  
+Under oppholdet i St.Peterburg hos Katarina den store ga Euler ut to monumentale verk Institutiones calculi differentialis (1755) og Institutiones calculi integralis (1768–1770) som inneholder en beskrivelse av mange av den grunnleggende metodene vi bruker for å studere og løse differensialligninger. 
+I mot slutten av 1700-tallet hadde matematikere innsett at utvalget av differensialligninger som kan løses med enkle midler er sterkt begrenset.  Det ble nå lagt mer vekt på å kartlegge egenskaper til ligninger og løsninger, uten at løsningene selv var kjent.  En hadde også oppdaget at differensialligninger er en kilde for å definere nye spesialiserte funksjoner, slik som Legendrefunksjoner, oppkalt etter Adrien-Marie Legendre.
+Mye av arbeidet med differensialligninger var motivert ut fra anvendelser innenfor mekanikk, astronomi og geometri. Arbeid med problem innenfor disse fagfeltene var bakgrunnen for utvikling av variasjonsregning, hovedsakelig innført av Joseph Louis Lagrange omkring 1750-1760.  I dette fagfeltet studerer en funksjoner som gir opphav til ekstremverdier til en funksjonal, for eksempel ønsker en å finne funksjonen y = f(x) som maksimerer integralet
+
+  
+    
+      
+        I
+        (
+        y
+        )
+        =
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        g
+        (
+        x
+        ,
+        y
+        ,
+        
+          y
+          ′
+        
+        )
+        d
+        x
+        
+      
+    
+    {\displaystyle I(y)=\int _{a}^{b}g(x,y,y')dx\,}
+  
+
+Løsning av dette problemet leder til en differensialligning kalt Euler-Lagrange-ligningen.
+I 1788 publiserte Joseph Louis Lagrange verket Mécanique Analytique, kanskje den mest omfattende beskrivelse av klassisk mekanikk etter Newton.   Dette verket ble også grunnlaget for mye av videre arbeid innenfor matematisk fysikk.  Astronomen og matematikeren Pierre Simon Laplace, med hovedverket Mécanique Céleste fra 1799-1825, etablerte Laplaces ligning som en fundamental del av anvendt matematikk. 
+Omkring 1820 utviklet Augustin Louis Cauchy det første eksistensteoremet for en differensialligning.  Han viste at førsteordens ordinære ligninger på formen
+
+  
+    
+      
+        
+          u
+          ′
+        
+        =
+        f
+        (
+        u
+        ,
+        x
+        )
+        
+      
+    
+    {\displaystyle u'=f(u,x)\,}
+  
+
+for en vid klasse av funksjoner f har en løsning u = u(x).  
+George Boole utviklet teorien for sammenhengen mellom en andregrads ordinær differensialligning og en andregrads algabraisk ligning, og presenterte dette i 1859 i Treatise on Differential Equations.
+Dirichlet-problem og Neumann-problem er navngitt etter henholdsvis Johann Dirichlet (1805–1859) og Carl Neumann (1832–1925), begge tyske matematikere.
+
+
+== Se også ==
+Andreordens dynamisk system
+Runge-Kutta-metoder
+
+
+== Litteratur ==
+Adams, Robert (2003). Calculus : a complete course (på english). Toronto, Ont. Addison-Wesley. ISBN 0-201-79131-5. 
+Clapham, C.; Nicholson, J. (2009). The Concise Oxford Dictionary of Mathematics. Oxford Quick Reference. OUP Oxford. ISBN 978-0-19-157976-9. Besøkt 30. august 2016. 
+Lindstrøm, T. (2006). Kalkulus (på norsk). Universitetsforlaget. ISBN 978-82-15-00977-3. Besøkt 30. august 2016. 
+Lindström, S.B. (2013). Matematisk ordbok för högskolan: engelsk-svensk, svensk-engelsk: (på svensk). Stefan B. Lindström. ISBN 978-91-981287-0-3. Besøkt 30. august 2016. 
+C.B.Boyer (1968). A history of mathematics. Princeton, USA: John Wiley & Sons, Inc. ISBN 0-691-02391-3. 
+J.C.Burkill (1975). The theory of ordinary differential equations. London, UK: Longman Group Limited. ISBN 0-582-44287-7. 
+E.T.Copson (1975). Partial differential equations. Cambridge, UK: Cambridge University Press. ISBN 0-521-09893-9.

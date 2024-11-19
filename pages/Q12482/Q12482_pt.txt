@@ -1,0 +1,231 @@
+Teoria dos conjuntos ou de conjuntos é o ramo da lógica matemática que estuda conjuntos, que (informalmente) são coleções de elementos. Embora qualquer tipo de elemento possa ser reunido em um conjunto, a teoria dos conjuntos é, em geral, investigada com elementos que são relevantes para os fundamentos da matemática.
+O estudo moderno da teoria dos conjuntos foi iniciado por Georg Cantor e Richard Dedekind em 1870. Após a descoberta de paradoxos na teoria ingênua dos conjuntos (i.e. sem formalização precisa), numerosos sistemas axiomáticos foram propostos no início do século XX, dos quais a teoria dos conjuntos de Zermelo-Fraenkel, com ou sem o axioma da escolha, são os mais conhecidos e estudados.
+A teoria dos conjuntos é comumente empregada como um sistema precursor da matemática, particularmente na forma de teoria dos conjuntos de Zermelo-Fraenkel com o axioma da escolha. Além de seu papel fundamental, a teoria dos conjuntos é um ramo da matemática em si própria, com uma comunidade de pesquisa ativa. Pesquisas contemporâneas em teoria dos conjuntos incluem uma diversa coleção de temas, variando da estrutura da reta dos números reais ao estudo da  consistência de grandes cardinais.
+
+
+== Histórico ==
+Temas matemáticos geralmente surgem e evoluem através de interações entre muitos pesquisadores. Teoria dos conjuntos, no entanto, foi fundada por um único artigo de 1874, por Georg Cantor: "A respeito de uma propriedade característica de todos os números algébricos reais".
+Desde o século V a.C., começando com o matemático grego Zenão de Eleia no ocidente e os primeiros matemáticos indianos no oriente, os matemáticos têm se debatido com o conceito de infinito. Especialmente notável é o trabalho de Bernard Bolzano na primeira metade do século XIX. A compreensão moderna do conceito de infinito começou em 1867–1871, com os trabalhos de Cantor em teoria dos números, teoria das funções e séries trigonométricas.
+Um encontro em 1872 entre Cantor e Richard Dedekind influenciou o pensamento de Cantor e culminou no artigo de Cantor 1874.
+O trabalho de Cantor inicialmente dividiu os matemáticos de sua época. Enquanto Karl Weierstrass e Dedekind apoiavam Cantor, Leopold Kronecker, hoje visto como um dos fundadores do construtivismo matemático, era contra. A teoria dos conjuntos cantoriana, afinal, tornou-se amplamente difundida, devido à utilidade dos conceitos cantorianos, tais como correspondência um-para-um entre conjuntos, sua prova de que há mais números reais que inteiros, e a "infinidade de infinitos" ("paraíso de Cantor") que a operação conjunto das partes dá origem. A utilidade da teoria dos conjuntos desembocou em 1898 no artigo "Mengenlehre" de Arthur Schoenflies para a Enciclopédia de Ciências Matemáticas  organizada por Felix Klein e Wilhelm Franz Meyer.
+A onda de entusiasmo seguinte na teoria dos conjuntos chegou por volta de 1900, quando foi descoberto que algumas interpretações da teoria dos conjuntos Cantoriana dava origem a várias contradições, chamadas antinomias ou paradoxos. Bertrand Russell e Ernst Zermelo encontraram o mais simples e mais conhecido paradoxo, hoje chamado paradoxo de Russell: considere "o conjunto de todos os conjuntos que não são membros de si mesmos". Isto leva a uma contradição, uma vez que ele deve ser e não ser um membro de si mesmo. Em 1899, Cantor se questionou: "qual é o número cardinal do conjunto de todos os conjuntos?" e obteve um paradoxo relacionado. Russell usou seu paradoxo como tema em sua revisão de 1903 da matemática continental em seu livro "Os Princípios da Matemática" (não confundir com o Principia Mathematica).
+A força da teoria dos conjuntos foi tal que o debate sobre os paradoxos não a levou ao abandono. O trabalho de Zermelo em 1908 e Abraham Fraenkel e Thoralf Skolem em 1922 resultou na canônica teoria axiomática dos conjuntos ZFC. O trabalho de analistas, como Henri Lebesgue, demonstrou a grande utilidade matemática da teoria dos conjuntos. Essa teoria é comumente usada como fundamento, embora em algumas áreas - como a geometria algébrica e a topologia algébrica - a teoria das categorias seja considerada uma base preferencial.
+
+
+== Conceitos básicos ==
+
+Teoria dos conjuntos começa com uma fundamental relação binária entre um objeto o e um conjunto A. Se o é um membro (ou elemento) de A, escreve-se o ∈ A. Uma vez que conjuntos são objetos, a relação de pertinência também pode relacionar conjuntos. Um conjunto é descrito listando seus elementos separados por vírgula ou através de alguma propriedade que determine seus elementos.
+Se todos os elementos do conjunto A também são elementos do conjunto B, então A é um subconjunto de B, denotado por A ⊆ B. Por exemplo, {1,2}  é um subconjunto de {1,2,3} , mas {1,4}  não é. A partir desta definição, é evidente que um conjunto é um subconjunto de si mesmo; nos casos em que se deseja evitar isso, o termo subconjunto próprio é definido para excluir esta possibilidade. Note que {1} é subconjunto, e não elemento, de {1,2,3}; note também que 1 é membro, e não subconjunto, de {1,2,3}.
+Assim como a aritmética caracteriza operações binárias sobre números, a teoria dos conjuntos caracteriza operações binárias sobre conjuntos. Uma lista parcial de tais relações:
+
+União dos conjuntos A e B, denotada por A ∪ B, é o conjunto de todos os objetos que são membros de  A, ou B, ou ambos. A união de {1, 2, 3} e {2, 3, 4} é o conjunto {1, 2, 3, 4}.
+Interseção dos conjuntos A e B, denotada por A ∩ B, é o conjunto de todos os objetos que são membros de ambos A e B. A interseção de {1, 2, 3} e {2, 3, 4} é o conjunto {2, 3}.
+Diferença de conjuntos de U e A, denotada por U \ A é o conjunto de todos os membros de U que não são membros de A. A diferença de conjuntos {1,2,3} \ {2,3,4} é {1}, enquanto a diferença de conjuntos {2,3,4} \ {1,2,3} é {4}. Quando A é um subconjunto de U, a diferença dos conjuntos U \ A é também chamada de complemento de A em U. Neste caso, se a escolha de U é clara a partir do contexto, a notação Ac é algumas vezes usada no lugar de U \ A, particularmente se U é um conjunto universo como no estudo de diagramas de Venn.
+Diferença simétrica dos conjuntos A e B é o conjunto de todos os objetos que são membros de exatamente um de A e B (elementos que estão em um dos conjuntos, mas não em ambos). Por exemplo, para os conjuntos {1,2,3} e {2,3,4}, o conjunto diferença simétrica é {1,4}. É o conjunto diferença da união e da interseção,, (A ∪ B) \ (A ∩ B).
+Produto cartesiano de A e B, denotada por A × B, é o conjunto cujos membros são todos os possíveis pares ordenados (a,b) onde a é um membro de A e b é um membro de B.
+Conjunto das partes de um conjunto A é o conjunto cujos membros são todos os possíveis subconjuntos de A. Por exemplo, o conjunto das partes de {1, 2} é { {}, {1}, {2}, {1,2} }.
+Alguns conjuntos básicos de importância central são o conjunto vazio (o único conjunto que não contém elementos), o conjunto de números naturais, e o conjunto de números reais.
+
+
+== Um pouco de ontologia ==
+
+Um conjunto é puro se todos os seus membros são conjuntos, todos os membros de seus membros são conjuntos, e assim por diante. Por exemplo, o conjunto  contendo apenas o conjunto vazio é um conjunto puro não vazio. Na teoria dos conjuntos moderna, é comum restringir a atenção para o universo de von Neumann de conjuntos puros, e muitos sistemas da teoria axiomática dos conjuntos são projetados para axiomatizar apenas os conjuntos puros. Há muitas vantagens técnicas com esta restrição, e pequena generalidade é perdida, uma vez que, essencialmente, todos os conceitos matemáticos podem ser modelados por conjuntos puros. Conjuntos no universo de von Neumann são organizados em uma hierarquia cumulativa, com base em quão profundamente seus membros, os membros de membros, etc, são aninhados. A cada conjunto nesta hierarquia é atribuído (por recursão transfinita) um número ordinal 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, conhecido como a sua 'classe'. A classe de um conjunto puro X é definida como sendo uma mais do que o menor limitante superior das classes de todos os membros de X. Por exemplo, ao conjunto vazio é atribuída a classe 0, enquanto ao conjunto  contendo somente o conjunto vazio é atribuída classe 1. Para cada 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, o conjunto 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ é definido como consistindo de todos os conjuntos puros com classe menor que 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+. O universo de von Neumann como um todo é denotado por 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+.
+
+
+== Teoria axiomática dos conjuntos ==
+Teoria elementar dos conjuntos pode ser estudada de maneira informal e intuitiva, e por isso pode ser ensinada nas escolas primárias usando, por exemplo, diagramas de Venn. A abordagem intuitiva pressupõe que um conjunto pode ser formado a partir da classe de todos os objetos que satisfaçam qualquer condição particular de definição. Esta suposição dá origem a paradoxos, os mais simples e mais conhecidos dos quais são o paradoxo de Russell e o paradoxo de Burali-Forti. A teoria axiomática dos conjuntos foi originalmente concebida para livrar a teoria dos conjuntos de tais paradoxos.
+Os sistemas mais amplamente estudados da teoria axiomática dos conjuntos implicam que todos os conjuntos formam uma hierarquia cumulativa. Tais sistemas vêm em dois sabores, aqueles cuja ontologia consiste de:
+
+Conjuntos sozinhos. Estes incluem a mais comum teoria axiomática dos conjuntos, teoria dos conjuntos de Zermelo-Fraenkel (ZFC) com o axioma da escolha. Fragmentos da ZFC incluem:
+Teoria de conjuntos de Zermelo, que substitui o esquema de axiomas da substituição com o da separação;
+Teoria geral dos conjuntos, um pequeno fragmento da teoria de conjuntos de Zermelo suficiente para os axiomas de Peano e conjuntos finitos;
+Teoria dos conjuntos de Kripke-Platek, que omite os axiomas da infinitude, conjunto das partes, e escolha, e enfraquece os esquemas de axiomas da separação e substituição.
+Conjuntos e classes próprias. Estes incluem a teoria dos conjuntos de Von Neumann-Bernays-Gödel, que tem a mesma força que ZFC para teoremas sobre conjuntos sozinhos, e ambas as teoria dos conjuntos de Morse-Kelley e teoria dos connjuntos de Tarski-Grothendieck, que são mais fortes do que a ZFC.
+Os sistemas acima podem ser modificados para permitirem urelementos,  objetos que podem ser membros de conjuntos, mas que não são eles próprios conjuntos e não tem nenhum membro.
+Os sistemas de Novos Fundamentos NFU (permitindo urelementos) e NF (faltando eles) não são baseadas em uma hierarquia cumulativa. NF e NFU incluem um "conjunto de tudo", em relação a qual cada conjunto tem um complemento. Nestes sistemas os urelementos importam, porque NF, mas não NFU, produz conjuntos para os quais o axioma da escolha não se verifica.
+Sistemas da teoria dos conjuntos construtiva, como CST, CZF e IZF, firmam seus conjuntos de axiomas na lógica intuicionista em vez da lógica clássica. No entanto, outros sistemas admitem por padrão a lógica clássica, mas apresentam uma relação de pertencimento não padrão. Estes incluem a teoria dos conjuntos aproximados e a lógica difusa, na qual o valor de uma fórmula atômica incorporando a relação de filiação não é simplesmente Verdadeiro ou Falso. Os modelos booliano valorados de ZFC são um assunto relacionado.
+Um enriquecimento do ZFC chamado teoria interna dos conjuntos foi proposto por Edward Nelson em 1977.
+
+
+== Áreas de estudo ==
+A teoria dos conjuntos é a principal área de pesquisa na matemática, com muitas subáreas inter-relacionados. Ademais, a teoria dos conjuntos é mais do que simplesmente descrever conjuntos. Do mesmo modo como, na aritmética, é possível aprender a aplicar operações aritméticas a números, por exemplo, adição ou multiplicação, também é possível definir operações teóricas de conjuntos que gerem novos conjuntos a partir de determinados conjuntos. Exemplificando, as uniões {1, 2} e {2, 3, 4} tornam-se {1, 2, 3, 4}; as interseções {1, 2} e {2, 3, 4} tornam-se {2}. Também há a possibilidade de formar Conjuntos de partes, ou seja, a família de todos os subconjuntos de um conjunto.
+
+
+=== Teoria dos conjuntos combinatória ===
+
+A teoria dos conjuntos combinatória preocupa-se com extensões da combinatória finita para conjuntos infinitos. Isto inclui o estudo da aritmética de cardinais e o estudo de extensões do teorema de Ramsey tais como o teorema de Erdos-Rado.
+
+
+=== Teoria descritiva dos conjuntos ===
+
+Teoria descritiva dos conjuntos é o estudo de subconjuntos da reta real e dos subconjuntos dos espaços poloneses.  Ela começa com o estudo das pointclasses na hierarquia de Borel e se estende ao estudo de hierarquias mais complexas, como a hierarquia projetiva e a hierarquia de Wadge. Muitas propriedades dos conjuntos de Borel podem ser estabelecidas em ZFC, , mas a prova de que essas propriedades se verificam para conjuntos mais complicados requer axiomas adicionais relacionados com determinismo e grandes cardinais.
+O campo da teoria descritiva dos conjuntos efetiva está entre a teoria dos conjuntos e a teoria da recursão. Ele inclui o estudo de lightface pointclasses, e está intimamente relacionado com a teoria hiperaritmética. Em muitos casos, os resultados da teoria descritiva dos conjuntos clássica têm versões efetivas; em alguns casos, novos resultados são obtidos provando pela versão efetiva primeiro e depois estendendo-os ("relativizando-os") para torná-la mais amplamente aplicáveis.
+Uma área recente de pesquisa diz respeito a relações de equivalência de Borel e relações de equivalência decidíveis mais complicadas. Isto tem importantes aplicações para o estudo de invariantes em muitos campos da matemática.
+
+
+=== Teoria dos conjuntos nebulosos ===
+
+Na teoria dos conjuntos como Cantor definiu e Zermelo e Fraenkel axiomatizaram, um objeto ou é um membro de um conjunto ou não. Na teoria dos conjuntos fuzzy esta condição foi relaxada, e desta forma um objeto tem um grau de pertinência em um conjunto, como número entre 0 e 1. Por exemplo, o grau de pertinência de uma pessoa no conjunto de "pessoas altas" é mais flexível do que uma simples resposta "sim" ou "não" e pode ser um número real, tal como 0,75.
+Conjuntos fuzzy foram introduzidos simultaneamente por Lotfi A. Zadeh e Dieter Klaua em 1965 como uma extensão da noção clássica de conjunto. Na teoria dos conjuntos clássica, a associação de elementos em um conjunto é avaliada em termos binários de acordo com uma condição bivalente - um elemento ou pertence ou não pertence ao conjunto. Por outro lado, a teoria dos conjuntos fuzzy permite a avaliação gradual da participação de elementos em um conjunto, o que é descrito com a ajuda de uma função de pertinência valorada no intervalo unitário real [0, 1]. Conjuntos fuzzy generalizam conjuntos clássicos, visto que as funções indicadoras de conjuntos clássicos são casos especiais das funções de pertinência de conjuntos fuzzy, se estes só podem tomar os valores 0 ou 1. Na teoria dos conjuntos fuzzy, conjuntos clássicos bivalentes são geralmente chamados conjuntos crisp. A teoria dos conjuntos fuzzy pode ser usada em uma ampla variedade de áreas em que a informação é incompleta ou imprecisa, como na bioinformática.
+
+
+=== Conjunto de partes ===
+A família de todos os subconjuntos de um conjunto dado 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ é chamado de conjunto de partes (ou conjunto potência ) de 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, denotado por 
+  
+    
+      
+        P
+        (
+        A
+        )
+      
+    
+    {\displaystyle P(A)}
+  
+ ou 
+  
+    
+      
+        
+          2
+          
+            A
+          
+        
+      
+    
+    {\displaystyle 2^{A}}
+  
+.
+
+
+=== Teoria do modelo interno ===
+
+Um modelo interno da teoria dos conjuntos de Zermelo-Fraenkel (ZF) é uma classe transitiva que inclui todos os ordinais e satisfaz todos os axiomas de ZF. O exemplo canônico é o Universo construível L desenvolvido por Gödel. Uma das razões que torna o estudo de modelos internos interessante é que ele pode ser usado para provar resultados de consistência. Por exemplo, pode-se mostrar que, independentemente se um modelo V da ZF satisfaz a hipótese do continuum ou o axioma da escolha, o modelo interno L construído dentro do modelo original irá satisfazer tanto a hipótese do continuum generalizada quanto o axioma da escolha. Assim, a suposição de que ZF é consistente (tem qualquer modelo que seja) implica que ZF juntamente com estes dois princípios é consistente.
+O estudo de modelos de interior é comum no estudo do determinismo e grandes cardinais, especialmente quando se considera axiomas que contradizem o axioma da escolha. Mesmo que um modelo fixo da teoria dos conjuntos satisfaz o axioma da escolha, é possível que um modelo interno falhe em satisfazer o axioma da escolha. Por exemplo, a existência de cardinais suficientemente grandes implica que há um modelo interno satisfazendo o axioma do determinismo (e, portanto, não satisfazendo o axioma da escolha).
+
+
+=== Grandes cardinais ===
+
+Um grande cardinal é um número cardinal transfinito cujo caráter de "muito grande" está dado por uma propriedade extra, denominada propriedade de grande cardinal. Muitas destas propriedades são particularmente estudadas, incluindo cardinais inacessíveis, cardinais mensuráveis, cardinais compactos, entre outras. A existência de um cardinal com uma dessas propriedades não pode ser demonstrada ​​na teoria dos conjuntos de Zermelo-Fraenkel, ZF, se ZF é consistente.
+
+
+=== Determinismo ===
+
+Determinismo refere-se ao fato de que, sob os pressupostos adequados, certos dois jogadores são determinados desde o início no sentido de que um jogador deve ter uma estratégia vencedora. A existência dessas estratégias tem conseqüências importantes na teoria descritiva dos conjuntos, como a suposição de que uma classe mais ampla de jogos ser determinada muitas vezes implica que uma classe mais ampla de conjuntos possui uma propriedade topológica. O axioma do determinismo (AD) é um importante objeto de estudo, embora incompatível com o axioma da escolha, AD implica que todos os subconjuntos da reta real são bem comportados (em particular, mensuráveis ​​e com a propriedade de conjunto perfeito). AD pode ser usado para provar que os graus de Wadge têm uma estrutura alinhada.
+
+
+=== Forçamento ===
+
+Paul Cohen inventou o método de forçamento enquanto procura por um modelo de ZFC em que o axioma da escolha ou a hipótese do continuum falhe. Forçando a adição de conjuntos adicionais a algum determinado modelo da teoria dos conjuntos de modo a criar um modelo maior, com propriedades determinadas (isto é "forçadas") pelo modelo original e pela construção. Por exemplo, a construção de Cohen uniu subconjuntos adicionais dos números naturais sem mudar qualquer dos números cardinais do modelo original. Forçamento é também um dos dois métodos para provar consistência relativa  por métodos finitístico, sendo o outro os modelos de valores Booleanos.
+
+
+=== Invariantes cardinais ===
+
+Invariante cardinal é uma propriedade da reta real medida por um número cardinal. Por exemplo, uma invariante bem estudado é a menor cardinalidade de uma coleção de conjuntos magros de reais cuja união é toda a reta real. Estes são invariantes no sentido de que quaisquer dois modelos da teoria dos conjuntos isomorfos deve dar o mesmo cardinal para cada invariante. Muitos invariantes cardinais foram estudados, e as relações entre eles são muitas vezes complexas e relacionadas com os axiomas da teoria dos conjuntos.
+
+
+=== Topologia ===
+
+Topologia estuda questões de topologia geral que são de teoria dos conjuntos em sua natureza ou que requerem métodos avançados da teoria dos conjuntos para sua solução. Muitos desses teoremas são independentes de ZFC, exigindo axiomas mais fortes para a sua prova. Um famoso problema é o problema do espaço de Moore, uma questão na topologia geral que foi objecto de intensa pesquisa. A resposta para este problema acabou por ser provada ser independente de ZFC.
+
+
+== Objeções à teoria dos conjuntos como fundamento para a matemática ==
+Desde o início da teoria dos conjuntos, alguns matemáticos se opuseram a ela como um fundamento para a matemática, argumentando, por exemplo, que é apenas um jogo que inclui elementos de fantasia. A objeção mais comum à teoria dos conjuntos, um manifesto de Kronecker dos primeiros anos da teoria dos conjuntos, começou a partir da visão construtivista de que a matemática é vagamente relacionada à computação. Se este ponto de vista for admitido, então o tratamento de conjuntos infinitos, tanto na teoria ingênua dos conjuntos quanto na teoria axiomática dos conjuntos, introduz em matemática métodos e objetos que não são computáveis. Ludwig Wittgenstein questionou a forma como a teoria dos conjuntos de Zermelo-Fraenkel manipulava infinitos. As visões de Wittgenstein sobre os fundamentos da matemática foram mais tarde criticadas por Georg Kreisel e Paul Bernays, e minuciosamente investigadas por Crispin Wright, entre outros.
+Teóricos das categorias propuseram a teoria de topos como uma alternativa à tradicional teoria axiomática dos conjuntos. A teoria de topos pode interpretar várias alternativas para aquela teoria, tais como o construtivismo, a teoria dos conjuntos finitos, e a teoria dos conjuntos computáveis.[carece de fontes?]
+
+
+== Ver também ==
+Teoria das categorias
+Modelo relacional
+Orientação a objetos
+Paradoxo de Russell
+Principia mathematica
+Lógica matemática
+
+
+== Notas ==
+
+
+== Referências ==
+
+
+== Leituras adicionais ==
+Keith Devlin, (2nd ed.) 1993. The Joy of Sets. Springer Verlag, ISBN 0-387-94094-4
+Ferreirós, Jose, 2007 (1999). Labyrinth of Thought: A history of set theory and its role in modern mathematics. Basel, Birkhäuser. ISBN 978-3-7643-8349-7
+Johnson, Philip, 1972. A History of Set Theory. Prindle, Weber & Schmidt ISBN 0871501546
+Kunen, Kenneth, Set Theory: An Introduction to Independence Proofs. North-Holland, 1980. ISBN 0-444-85401-0.
+Tiles, Mary, 2004 (1989). The Philosophy of Set Theory: An Historical Introduction to Cantor's Paradise. Dover Publications.
+
+
+== Ligações externas ==
+
+Foreman, M., Akihiro Kanamori, eds. Handbook of Set Theory.  3 vols., 2010. Cada capítulo levanta algum aspecto da pesquisa contemporânea em teoria dos conjuntos. Não cobre a teoria elementar dos conjuntos estabelecida, para tal veja Devlin (1993).

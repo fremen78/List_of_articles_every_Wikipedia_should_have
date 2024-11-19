@@ -1,0 +1,217 @@
+L'analisi numerica è una branca della matematica applicata che risolve i modelli prodotti dall'analisi matematica alle scomposizioni finite normalmente praticabili, coinvolgendo il concetto di approssimazione. I suoi strumenti, detti algoritmi, sono caratterizzabili in base a velocità di convergenza, stabilità numerica e computabilità.
+
+
+== Descrizione ==
+
+La maggior parte dei metodi di soluzione forniti dall'analisi numerica è fondata sull'algebra lineare o sulla costruzione di successioni convergenti di numeri o funzioni a cui si aggiungono i contributi della combinatoria e della geometria e i collegamenti con i metodi probabilistici e fisico-matematici.
+Alcuni problemi della matematica del continuo possono essere risolti con algoritmi che risolvono il problema in un numero finito, e possibilmente noto a priori, di passi; questi metodi sono detti metodi diretti. Un tipico esempio è dato dal metodo di eliminazione di Gauss per risolvere i sistemi di equazioni lineari. Tuttavia per la maggior parte dei problemi numerici non ci sono metodi diretti e in questi casi è spesso possibile usare un metodo iterativo. Un metodo iterativo inizia da un tentativo e trova approssimazioni successive che sperabilmente convergono alla soluzione.
+Tipicamente si scrive il problema della forma x=F(x) e si applica il teorema di punto fisso. Un classico esempio di algoritmo iterativo è il metodo di Newton per calcolare gli zeri di una funzione. Anche quando esiste un metodo diretto, a volte è preferibile un metodo iterativo perché più efficiente o più stabile, ad esempio quando si devono risolvere sistemi di equazioni lineari con migliaia di incognite.
+
+
+=== Le applicazioni ===
+L'impatto sul mondo reale è decisivo e sfata il luogo comune secondo cui la matematica non avrebbe alcun fine pratico. Un esempio per tutti: l'algoritmo FFT (Trasformata veloce di Fourier), che è uno dei successi dell'analisi numerica, è alla base degli algoritmi ricostruttivi delle immagini di tomografia computerizzata e di risonanza magnetica e della risoluzione di problemi della multimedialità come, tra i più importanti, compressione JPEG di immagini, compressione MP3 di musica, compressione mpeg di filmati, campionamento e filtraggio di segnali.
+Gli algoritmi di analisi numerica sono applicati quotidianamente per risolvere molti altri problemi scientifici e tecnici. Ne sono esempi la progettazione di strutture come ponti e aeroplani, le previsioni meteorologiche, l'analisi di molecole (chimica computazionale). Gli algoritmi di analisi numerica sono anche alla base dei programmi di CAE e quasi tutti i supercomputer sono costantemente impegnati a eseguire algoritmi di analisi numerica.
+L'efficienza degli algoritmi e della loro implementazione ha una grande importanza. Pertanto un metodo euristico efficiente può essere preferito a un metodo con una solida base teorica, ma inefficiente. Gli efficienti linguaggi di programmazione Fortran e C, anche se datati, sono i più usati.
+In generale l'analisi numerica è una scienza sia teorica sia sperimentale. Infatti non usa soltanto assiomi, teoremi e dimostrazioni, come il resto della matematica, ma usa anche i risultati empirici delle elaborazioni eseguite per studiare i metodi migliori per risolvere i problemi.
+
+
+=== Storia ===
+Il campo dell'analisi numerica risale a secoli prima dell'invenzione dei calcolatori elettronici. Di fatto, molti grandi matematici del passato si dedicarono all'analisi numerica, come è evidente dai nomi di importanti algoritmi dovuti a Isaac Newton, Joseph-Louis Lagrange, Philipp Ludwig von Seidel, Carl Jacobi, Carl Friedrich Gauss, o Eulero.
+Per facilitare i calcoli a mano, furono stampati grandi libri pieni di formule e tabelle di dati come i punti interpolanti e i coefficienti di funzioni. Usando queste tabelle si potevano trovare i valori da inserire nelle formule date e ottenere stime numeriche molto buone di alcune funzioni. Il lavoro canonico nel campo è la pubblicazione del NIST curata da Abramowitz e Stegun, un libro di oltre 1000 pagine contenente un grandissimo numero di formule e funzioni comunemente usate e i loro valori in molti punti. I valori delle funzioni non sono più molto utili quando si può usare un computer, ma il grande elenco di formule può ancora essere molto comodo.
+La calcolatrice meccanica fu pure sviluppata come strumento per il calcolo manuale. Queste calcolatrici evolsero nei calcolatori elettronici negli anni 1940; l'invenzione del computer influenzò anche il campo dell'analisi numerica, permettendo lo svolgimento di calcoli gradualmente sempre più complessi.
+
+
+== Aree di studio ==
+Il campo dell'analisi numerica è suddiviso in diverse discipline a seconda del problema da risolvere.
+
+
+=== Il calcolo dei valori delle funzioni ===
+Uno dei problemi più semplici è la valutazione di una funzione in un dato punto. Perfino valutare un polinomio non è immediato: l'algoritmo di Horner è spesso più efficiente del metodo banale. In generale l'attenzione principale nella risoluzione di questi problemi è volta a stimare e tenere sotto controllo gli errori di arrotondamento dovuti all'aritmetica a virgola mobile. Ciò viene fatto ponendo attenzione all'ordine in cui vengono eseguite le operazioni aritmetiche, cercando di minimizzare il numero delle stesse e cercando di evitare, quando possibile, quelle 'pericolose', quelle cioè che portano ad una perdita di cifre significative come quelle che causano cancellazione numerica.
+
+
+=== L'interpolazione, l'estrapolazione e la regressione ===
+I metodi di interpolazione e estrapolazione stimano il valore di una funzione incognita dato il valore della funzione stessa in alcuni punti. Il più semplice metodo di interpolazione è l'interpolazione lineare, che suppone che la funzione sconosciuta sia lineare fra ogni coppia di punti consecutivi. Questo metodo può essere generalizzato dall'interpolazione polinomiale che è talvolta più accurata, ma soffre del fenomeno di Runge. Altri metodi di interpolazione usano funzioni regolari a tratti come le spline o le wavelet. L'estrapolazione, a differenza dall'interpolazione, stima la funzione in punti esterni ai punti per cui la funzione è nota.
+La regressione è simile ai suddetti problemi, ma tiene conto che i valori dati sono imprecisi. La tecnica più usata per la regressione è il metodo dei minimi quadrati.
+
+
+=== La soluzione di equazioni e di sistemi di equazioni ===
+Un altro problema fondamentale è calcolare la soluzione di un'equazione o di un sistema di equazioni. La distinzione principale è tra equazioni, o sistemi di equazioni, lineari e tra equazioni, o sistemi di equazioni, non lineari. I problemi lineari sono più facili da risolvere.
+I metodi per la risoluzione di sistemi di equazioni lineari possono essere divisi in due categorie.
+La prima categoria è quella dei metodi diretti. A questa categoria appartengono per esempio il metodo di eliminazione gaussiana e la fattorizzazione LU. I metodi diretti costruiscono l'esatta soluzione, a meno di errori di arrotondamento, in un numero finito di passi. In sostanza utilizzano l'idea della fattorizzazione della matrice dei coefficienti del sistema nel prodotto di due matrici più semplici, solitamente triangolari o ortogonali. Sono generalmente i metodi più efficienti, soprattutto quando operano su matrici dei coefficienti dense, ma su sistemi di grosse dimensioni e/o con matrici dei coefficienti sparse tendono ad essere troppo onerosi in termini di consumo di memoria. In queste situazioni sono di norma preferibili i metodi appartenenti alla seconda categoria.
+La seconda categoria è quella dei metodi iterativi. Appartengono ai metodi iterativi per esempio il metodo di Jacobi, il metodo di Gauss-Seidel e il metodo del gradiente coniugato. I metodi iterativi conducono alla soluzione del sistema in un numero teoricamente infinito di passi: partendo da un'approssimazione iniziale della soluzione, forniscono una serie di approssimazioni che, sotto opportune ipotesi, convergono alla soluzione esatta. Il processo iterativo viene arrestato non appena la precisione desiderata è stata raggiunta. Il metodo applicato è efficiente se la precisione desiderata è stata raggiunta in un numero accettabile di iterazioni.
+Se le equazioni sono non lineari, si ricorre agli algoritmi per trovare radici. Se la funzione è derivabile e la sua derivata è nota, allora il metodo di Newton è una scelta diffusa. La linearizzazione è un'altra tecnica per risolvere equazioni non lineari.
+
+
+=== L'ottimizzazione ===
+
+I problemi di ottimizzazione richiedono di trovare il punto in cui una data funzione assume il valore massimo o minimo. Spesso il punto deve soddisfare anche alcuni vincoli.
+Il campo dell'ottimizzazione è ulteriormente diviso in più sottocampi, a seconda della forma della funzione obiettivo e dei vincoli. Per esempio, la programmazione lineare tratta il caso in cui sia la funzione obiettivo che i vincoli sono lineari. Il più famoso algoritmo della programmazione lineare è il metodo del simplesso.
+Il metodo dei moltiplicatori di Lagrange può essere usato per ridurre i problemi di ottimizzazione vincolata a problemi di ottimizzazione non vincolata.
+Gli algoritmi di ottimizzazione vengono in genere testati facendo uso di apposite funzioni di test, pensate per metterli alla prova in problemi che presentano particolari difficoltà computazionali.
+
+
+=== La valutazione di integrali ===
+
+L'integrazione numerica, nota anche come quadratura numerica, stima il valore di un integrale definito. I metodi diffusi usano qualche formula di Newton-Cotes, per esempio la regola del punto di mezzo o la regola del trapezio, oppure la quadratura Gaussiana. Tuttavia, se la dimensione del dominio di integrazione diventa grande, questi metodi diventano proibitivamente costosi. In questa situazione, si può usare un metodo Monte Carlo, un metodo quasi-Monte Carlo, o, per dimensioni moderatamente grandi, il metodo delle griglie sparse.
+
+
+=== Le equazioni differenziali ===
+
+L'analisi numerica si interessa anche al calcolo approssimato della soluzione delle equazioni differenziali, sia ordinarie sia alle derivate parziali. Le equazioni differenziali vengono risolte dapprima discretizzando l'equazione, cioè portandola in un sottospazio a dimensione finita. Questo si può fare con un metodo a elementi finiti, un metodo alle differenze finite o un metodo ai volumi finiti, particolarmente usato nell'ingegneria. La giustificazione teorica di questi metodi spesso implica teoremi dell'analisi funzionale. Questo riduce il problema alla soluzione di un'equazione algebrica.
+
+
+== Alcuni problemi trattati dall'analisi numerica ==
+I problemi considerati dall'analisi numerica includono:
+
+Analisi dell'errore in aritmetica finita
+Rappresentazione in base e aritmetica finita
+Errore inerente, errore algoritmico, errore analitico
+Condizionamento di un problema, forward error e backward error
+Calcolo di valori di funzioni:
+Valutazione di polinomi usando la regola di Horner
+Stima dell'errore di arrotondamento
+Soluzione di sistemi di equazioni lineari:
+Metodo di eliminazione di Gauss
+Decomposizione LU
+Fattorizzazione QR
+Decomposizione di Cholesky per matrici simmetriche
+Metodi iterativi per la soluzione di sistemi di equazioni lineari
+Metodo di Jacobi
+Metodo di Gauss-Seidel
+Successive Over Relaxation
+Problema del calcolo numerico degli autovalori
+Metodo delle potenze
+Algoritmo QR
+Soluzione di problemi non lineari, spesso impiegando tecniche di linearizzazione:
+Approssimazioni in analisi matematica
+Metodo dell'interpolazione lineare
+Calcolo di uno zero di una funzione
+Metodo della bisezione o di dicotomia
+Metodo delle tangenti o di Newton-Raphson
+Metodo delle secanti
+Metodo della regula falsi
+Metodo di Muller
+Metodo di Brent
+Iterazione di punto fisso
+Confronto tra metodo delle secanti e metodo delle tangenti
+Metodo dell'iterazione diretta
+Regressione
+Metodo dei minimi quadrati
+Valutazione numerica di integrali usando l'integrazione numerica, nota anche come quadratura
+Regola del trapezio
+Regola del punto medio
+Regola di Simpson
+Quadratura di Romberg
+Quadratura di Gauss
+Risoluzione numerica di equazioni differenziali ordinarie
+Metodo di Eulero
+Metodi espliciti e impliciti
+Metodi a più passi: metodi di Runge Kutta
+Risoluzione numerica di equazioni differenziali alle derivate parziali
+Interpolazione e teoria dell'approssimazione
+Interpolazione lineare
+Interpolazione polinomiale
+Interpolazione spline
+Fenomeno di Runge
+Fast Fourier Transform
+Estrapolazione
+Quando sono possibili differenti soluzioni a problemi numerici, tre fattori pesano per decidere quale metodo seguire:
+
+Stabilità - gli errori nell'approssimazione non devono crescere in maniera incontrollata quando la taglia dei calcoli aumenta
+Accuratezza - l'approssimazione numerica deve essere la più accurata possibile
+Efficienza - più veloce è il calcolo, migliore è il metodo. Si deve comunque trovare un compromesso tra accuratezza ed efficienza
+
+
+=== La generazione e la propagazione degli errori ===
+Lo studio degli errori costituisce una parte importante dell'analisi numerica. Ci sono più modi in cui si possono introdurre errori nella soluzione di un problema:
+
+errore inerente: Si ha quando si rappresenta un numero reale con un numero finito di cifre. Ad esempio quando si rappresenta un numero reale con un numero di macchina all'interno di un calcolatore (es. cancellazione numerica).
+errore algoritmico: Si ha quando si utilizza per la soluzione del problema un'aritmetica finita, ad esempio sul calcolatore.
+errore analitico o di discretizzazione: Si ha quando si approssima un problema continuo con un problema discreto.
+Un errore, una volta che è stato generato, generalmente si propaga attraverso il calcolo. Questo conduce al concetto di stabilità numerica: un algoritmo si dice numericamente stabile se un errore, una volta che è stato generato, non cresce troppo durante il calcolo. Per alcuni problemi non esistono algoritmi stabili, in quanto per variazioni arbitrariamente piccole dei dati del problema, la soluzione varia comunque di molto. Questi problemi sono detti mal-condizionati. Un problema non mal-condizionato si dice ben-condizionato.
+Tuttavia un algoritmo che risolve un problema ben-condizionato può essere numericamente stabile oppure no. L'obiettivo primario dell'analisi numerica è trovare algoritmi stabili per risolvere problemi ben-condizionati. Un altro obiettivo dell'analisi numerica è trovare, per ogni problema mal-condizionato, un problema ben-condizionato la cui soluzione approssimi quella del problema originale.
+
+
+== Il software ==
+Quando algoritmi di analisi numerica sono tradotti in un linguaggio di programmazione e opportunamente adattati alle caratteristiche dell'ambiente di calcolo, ad esempio implementati ed eseguiti su un calcolatore, si parla di software numerico. Ci sono almeno tre categorie di software numerico:
+
+Librerie per programmatori (Netlib, IMSL, NAG, GNU Scientific Library, BLAS, LAPACK, FFTw).
+Ambienti interattivi per risolvere problemi della matematica e delle scienze computazionali (Mathematica, MATLAB, Maple, Scilab, GNU Octave, IDL) detti Problem Solving Enviroments (PSE).
+Applicazioni per risolvere problemi di particolari aree applicative, ad esempio per l'ingegneria (software CAE).
+
+
+== Note ==
+
+
+== Bibliografia ==
+
+
+=== Opere introduttive ===
+R. Bevilacqua, D. Bini, M. Capovani, O. Menchi (1987): Introduzione alla Matematica Computazionale, Zanichelli, ISBN 88-08-04356-8
+Samuel D. Conte, Carl de Boor (1981): Elementary numerical analysis. An algoritmic approach, 3rd ed., McGraw-Hill, ISBN 0-07-012447-7
+Valeriano Comincioli (1990): Analisi numerica. Metodi, modelli, applicazioni. McGraw-Hill, ISBN 88-386-0646-3; nuova edizione e-book APOGEO, Feltrinelli Milano, 2005 http://www.apogeonline.com/libri/88-503-1031-5/scheda 
+Giovanni Monegato (1990): Fondamenti di calcolo numerico, Levrotto & Bella, Torino
+(EN) Walter Gautschi (1997): Numerical analysis. An introduction, Birkhäuser ISBN 3-7643-3895-4
+A. Quarteroni, R. Sacco, F. Saleri (2000): Matematica Numerica, Springer Italia, Milano
+(disponibile anche una versione inglese più ampia) ISBN 88-470-0077-7
+
+G. Naldi, L. Pareschi, G. Russo (2001, 2004 II ed.): Introduzione al Calcolo Scientifico, McGraw-Hill, ISBN 88-386-0885-7
+(EN) Endre Süli e David Mayers, An Introduction to Numerical Analysis, Cambridge, Cambridge University Press, 2003, ISBN 978-0-521-00794-8.
+
+
+=== Opere di riferimento ===
+Dario A. Bini, Viktor Y. Pan (1994): Polynomial and matrix computations, Birkhäuser, ISBN 0-8176-3786-9
+R. Bevilacqua, D. Bini, M. Capovani, O. Menchi (1992): Metodi Numerici, Zanichelli, ISBN 88-08-14510-7
+(EN) Philippe Ciarlet, Jacques Louis Lions eds. (1990): Handbook of Numerical Analysis Volume I. Finite Difference Methods (Part 1). Solution of Equations in Rn (Part 1), North Holland, ISBN 0-444-70366-7
+(EN) Philippe Ciarlet, Jacques Louis Lions eds. (1991): Handbook of Numerical Analysis Volume II. Finite Element Methods (Part 1), North Holland, ISBN 0-444-70365-9
+
+
+=== Fondamenti teorici ===
+Kendall Atkinsons, Weimin Han (2001): Theoretical Numerical Analysis. A functional analysis framework, Springer ISBN 0-387-95142-3
+
+
+=== Algebra lineare numerica ===
+D. Bini, M. Capovani, O. Menchi (1988): Metodi Numerici per l'Algebra Lineare, Zanichelli, ISBN 88-08-06438-7
+(EN) Gene H. Golub, Charles F. Van Loan (1996): Matrix computations, III ed., Johns Hopkins University Press, ISBN 0-8018-5414-8
+
+
+=== Altro ===
+H. L. Rice The theory and practice of interpolation; including mechanical quadrature and other important problems concerned with the tabular values of functions (T. P. Nichols, Lynn, Massachusetts, 1899) (interpolazione)
+D. Gibb A course in interpolation and numerical integration for the mathematical laboratory (London: Bell, 1915)
+Horst von Sanden Practical mathematical analysis (Methuen, London, 1923)
+E.T. Whittaker e G. Robinson A short course in interpolation (London: Blackie & sons, 1923) (interpolazione)
+E. T. Whittaker e G. Robinson The calculus of observations (Blackie & sons, London, 1924) (interpolazione, quadrature)
+C. Runge e H. Koenig Vorlesungen über numerisches Rechnen (Berlin: Springer, 1924)
+James Blaine Scarborough, Numerical Mathematical Analysis. Baltimore, The Johns Hopkins Press, 1930.
+A. S. Householder, Principles of Numerical Analysis, (New York, McGraw-Hill 1953) (primo testo sull'analisi numerica per i computer)
+M. Abramowitz e I. Stegun Handbook of Mathematical Functions (Dover, New York, 1972) Capitolo 25
+M. E. Davis Numerical methods and modeling for chemical engineers (John Wiley & Sons, New York, NY, 1984) ISBN 0-471-88761-7
+G. W. Collins, II Fundamental Numerical Methods and Data Analysis (1990)
+G. Dahlquist e A. Björck, Numerical Methods in Scientific Computing (Prentice-Hall, 1991). Pagina Web di A. Bjorck con nuova edizione in formato PDF
+David Kincaid, Ward Cheney (2002): Numerical Analysis, 3rd ed., Ch. 6, Brooks/Cole, ISBN 0-534-38905-8
+Michelle Schatzman (2002): Numerical Analysis: A Mathematical Introduction, Ch.4 and Ch.6, Oxford Clarendon Press, ISBN 0-19-850279-6
+
+
+== Voci correlate ==
+65-XX Sezione della Mathematics Subject Classification dedicata all'analisi numerica
+Aritmetica affine
+Fortran
+Calcolo parallelo
+
+
+== Altri progetti ==
+
+ Wikibooks contiene testi o manuali sull'analisi numerica
+ Wikizionario contiene il lemma di dizionario «analisi numerica»
+ Wikimedia Commons contiene immagini o altri file su analisi numerica
+
+
+== Collegamenti esterni ==
+
+ analisi numerica, in Enciclopedia della Matematica, Istituto dell'Enciclopedia Italiana, 2013. 
+(EN) Kendall E. Atkinson, numerical analysis, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+ The Integrator - Calcolo formale di primitive (Wolfram Research), su wolframalpha.com. URL consultato il 2 marzo 2007.
+Interactive Multipurpose Server (WIMS)
+P. Caressa Appunti di Calcolo Numerico
+C. Guerrini Calcolo Numerico e Programmazione (Università di Bologna)
+ Database di SW matematici di calcolo, su swmath.org. URL consultato il 4 maggio 2019 (archiviato il 4 maggio 2019).

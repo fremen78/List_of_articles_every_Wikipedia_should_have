@@ -1,0 +1,177 @@
+System operacyjny (ang. operating system, skrót OS) – oprogramowanie zarządzające systemem komputerowym, tworzące środowisko do uruchamiania i kontroli zadań, najczęściej w formie programów.
+W celu uruchamiania i kontroli zadań użytkownika system operacyjny zajmuje się:
+
+planowaniem oraz przydziałem czasu procesora poszczególnym zadaniom,
+kontrolą i przydziałem pamięci operacyjnej dla uruchomionych zadań,
+dostarczaniem mechanizmów do synchronizacji zadań i komunikacji pomiędzy zadaniami,
+obsługą sprzętu oraz zapewnieniem równolegle wykonywanym zadaniom jednolitego, wolnego od interferencji dostępu do sprzętu.
+Dodatkowe przykładowe zadania, którymi może, ale nie musi, zajmować się system operacyjny to:
+
+ustalanie połączeń sieciowych,
+zarządzanie plikami.
+Większość współczesnych systemów operacyjnych posiada środowiska graficzne ułatwiające komunikację maszyny z użytkownikiem.
+
+
+== Geneza ==
+
+Wczesne komputery były urządzeniami bardzo kosztownymi, wobec czego właścicielom tych urządzeń zależało na maksymalnym wykorzystaniu ich możliwości, czyli najczęściej wykonania możliwie jak największej liczby prac. Miało to efektywniej wykorzystać nakłady poniesione na zakup komputera. Komputer zainstalowany w ośrodku obliczeniowym pracował niekiedy nie tylko na potrzeby swojego właściciela, ale realizował usługi dla innych podmiotów gospodarczych.
+Rozpoczęto poszukiwania możliwości zwiększenia wydajności komputera oraz ułatwienie jego programowania, a ponieważ proste rozwiązania w postaci zmiany CPU na szybszą itp. nie wchodziły w grę (ze względu na koszt), zaczęto szukać innych możliwości polepszenia sytuacji.
+Szybko dostrzeżono fakt, że szybkość działania interfejsów wejścia/wyjścia jest niewspółmiernie mniejsza niż jednostki centralnej (zresztą ta zależność utrzymuje się dzisiaj i zdaje się pogłębiać). Wprowadzanie programu i danych z kart perforowanych, a nawet taśm magnetycznych czy drukowanie wyników trwało dużo dłużej niż same obliczenia.
+Pierwszą drogą, jaką znaleziono, było umieszczenie na stałe w pamięci komputera oprogramowania realizującego obsługę sprzętu oraz komunikację sprzętu z użytkownikiem. Dzięki temu nie było już konieczne każdorazowe ładowanie kodu obsługi sprzętu i komunikacji z użytkownikiem przy ładowaniu programu użytkowego. Uzyskano w ten sposób pewną oszczędność czasu oraz zwiększono efektywność.
+Dalsze ulepszenia polegały na dostrzeżeniu faktu, że podczas samego wprowadzania programu lub wyprowadzania danych na drukarkę procesor komputera jest niewspółmiernie mniej obciążony pracą niż podczas wykonywania obliczeń. Zrodził się więc pomysł aby w tym czasie procesor był zajęty przetwarzaniem innego programu. Taka funkcjonalność, w której komputer wykonuje kilka zadań w tym samym czasie nazywa się wielozadaniowością i jest jedną z podstawowych cech nowoczesnych systemów operacyjnych.
+
+
+== System operacyjny jako interfejs pomiędzy maszyną a człowiekiem ==
+
+Aby można było mówić, że system operacyjny tworzy środowisko niezbędne do uruchamiania oraz kontroli zadań, musi on udostępniać interfejs pozwalający na wykonanie pewnych operacji. Przykładowo musi dostarczać metody pozwalające na uruchomienie lub zatrzymanie wskazanego zadania. Zazwyczaj system operacyjny udostępnia w tym celu zestaw funkcji zwanych API (Application Programming Interface) lub wywołań systemowych. Programista aplikacyjny może skorzystać z tych funkcji w celu uzyskania żądanego efektu, przykładowo odczytu danych z pliku dyskowego (o ile system operacyjny posiada system plików).
+Jakąkolwiek czynność zadania użytkownika chcą wykonać na sprzęcie, korzystają zawsze z interfejsu systemu. Ma to tę zaletę, że o szczegółach obsługi sprzętu jest poinformowany tylko i wyłącznie system operacyjny, a same zadania nie muszą znać specyfiki obsługi urządzeń. Ułatwia to zadanie programistom aplikacyjnym oraz rozwiązuje potencjalne problemy.
+Innym rodzajem interfejsu jest interfejs użytkownika. Dzięki niemu możliwa jest bezpośrednia interakcja użytkownika z komputerem, choćby tak trywialna jak bezpieczne wyłączenie maszyny. Należy przy tym zwrócić uwagę, że o ile interfejs programowy (API lub wywołania systemowe) jest elementem koniecznym, o tyle interfejs użytkownika jest elementem opcjonalnym.
+
+
+== Budowa systemu operacyjnego ==
+
+Przyjęto, że system operacyjny dzieli się na trzy główne elementy:.
+
+jądro systemu wykonujące i kontrolujące zadania:
+planisty czasu procesora, ustalającego które zadanie i jak długo będzie wykonywane,
+przełącznika zadań, odpowiedzialnego za przełączanie pomiędzy uruchomionymi zadaniami,
+i dodatkowo:
+modułu zapewniającego synchronizację i komunikację pomiędzy zadaniami,
+modułu obsługi przerwań i zarządzania urządzeniami,
+modułu obsługi pamięci, zapewniającego przydział i ochronę pamięci,
+innych modułów zależnie od funkcji i przeznaczenia systemu.
+powłoka – specjalny program komunikujący użytkownika z systemem operacyjnym,
+system plików – sposób ustrukturyzowanego zapisu danych na nośniku.
+
+
+== Podział systemów operacyjnych ==
+Najszerszym, ale najbardziej podstawowym kryterium podziału systemów operacyjnych jest podział na:
+
+system operacyjny czasu rzeczywistego (RTOS)
+systemy operacyjne czasowo niedeterministyczne.
+Podział ten odnosi się do najbardziej podstawowej funkcjonalności systemu operacyjnego jakim jest planowanie i przydział czasu procesora poszczególnym zadaniom.
+Ze względu na sposób realizacji przełączania zadań systemy operacyjne można podzielić na:
+
+systemy z wywłaszczaniem zadań
+systemy bez wywłaszczania.
+Inny rodzaj podziału to podział na:
+
+otwarte systemy operacyjne
+wbudowane systemy operacyjne.
+Systemy otwarte można uruchomić na dowolnej maszynie wskazanego rodzaju np. PC i w określonym stopniu modyfikować.
+Systemy wbudowane jak sama nazwa wskazuje są zaszyte (wbudowane) wewnątrz urządzeń użytkowych, maszyn pojazdów itp. Aby uzyskać wysoką niezawodność pracy, minimalizuje się w takich przypadkach możliwość dokonywania zmian w konfiguracji systemu operacyjnego.
+Pod względem środowiska użytego do implementacji systemu można wprowadzić podział na: 
+
+programowe
+sprzętowe.
+Sprzętowe systemy operacyjne to: sprzętowo programowe rozwiązania integrowane z wybraną architekturą procesora.
+W takim przypadku sprzętowa część systemu przyśpiesza wybrany zakres czynności wykonywanych przez system (przykładowo przełączania zadań i zachowywanie ich kontekstu).
+Można ustalić pewną relację pomiędzy wymienionymi kryteriami podziału.
+Zazwyczaj jako otwarte systemy operacyjne spotyka się systemy w pełni programowe, czasowo niedeterministyczne stosujące wywłaszczenie przy przełączaniu zadań. Wbudowane systemy operacyjne są najczęściej czasowo deterministyczne, zazwyczaj nie stosują wywłaszczenia zadań, bywa, że są realizowane również w sprzęcie.
+
+
+== Zasoby sprzętowe ==
+Zasoby sprzętowe zarządzane przez system operacyjny:
+
+procesor – przydział czasu procesora,
+pamięć
+alokacja przestrzeni adresowej dla procesów,
+transformacja adresów,
+urządzenia zewnętrzne
+udostępnianie i sterowanie urządzeniami pamięci masowej np. dysk twardy,
+alokacja przestrzeni dyskowej,
+udostępnianie i sterowanie drukarkami, skanerami, aparatami itp.,
+informacja (system plików),
+organizacja i udostępnianie informacji,
+ochrona i autoryzacja dostępu do informacji.
+
+
+== Zarządzanie zasobami ==
+W przypadku środowiska wielozadaniowego, w którym wiele zadań wykonywanych jest w tym samym czasie, może dojść do interferencji procesów.
+Aby zapobiec temu niekorzystnemu zjawisku, organizuje się dostęp do sprzętu, plików, pamięci itp. poprzez ustanowienie zasobów systemowych.
+W takim przypadku zadania (procesy) użytkownika nie sięgają samodzielnie do sprzętu lub pliku, ale używają systemu operacyjnego jako strażnika zarządcy zasobów.
+Dzięki takiej organizacji dostępu do zasobów zadania „mają wrażenie”, że każde z nich pracuje na własnym komputerze. O realny porządek dostępu do rzeczywistego urządzenia, pamięci lub pliku dba system operacyjny.
+Główne zadania systemu operacyjnego podczas zarządzania zasobami systemu komputerowego:
+
+tworzenie deskryptora zasobu,
+usuwanie deskryptora zasobu,
+realizacja żądania przydziału,
+zwolnienie i odzyskiwanie zasobu.
+Zarządzanie zasobami systemu komputerowego:
+
+przydział zasobów,
+synchronizacja dostępu do zasobów (zapobieganie interferencji),
+ochrona i autoryzacja dostępu do zasobów,
+odzyskiwanie zasobów,
+rozliczanie – gromadzenie danych o wykorzystaniu zasobów.
+Zarządzanie procesem – proces to program w stanie uruchomionym, każdy proces wymaga przydziału pewnych zasobów, włączając w to czas procesora, pamięć, pliki oraz urządzenia wejścia/wyjścia, aby w pełni wykonać swoje zadanie. System operacyjny jest odpowiedzialny w fazie zarządzania procesami za:
+
+tworzenie i usuwanie procesu,
+wstrzymywanie i przywracanie procesu,
+zapewnienie mechanizmów pozwalających na synchronizację procesów oraz komunikację między procesami.
+Zarządzanie pamięcią operacyjną – pamięć to duża tablica słów lub bajtów, z których każdy ma własny adres. Pamięć jest szybko dostępna i dzielona jest pomiędzy procesor oraz urządzenia wejścia/wyjścia. Pamięć główna jest ulotnym miejscem przechowywania danych, traci swoją zawartość w czasie awarii systemu. System operacyjny jest odpowiedzialny w fazie zarządzania pamięcią za:
+
+utrzymywanie informacji, która część pamięci jest aktualnie używana i przez kogo,
+decydowania, który proces powinien zostać wczytany do pamięci, jeżeli pamięć jest wolna,
+przydzielanie i zwalnianie pamięci.
+Zarządzanie plikami – plik jest zbiorem informacji zdefiniowanym przez twórcę pliku. Zazwyczaj, pliki reprezentują programy (źródła programów lub pliki wykonywalne) oraz dane. System operacyjny jest odpowiedzialny w fazie zarządzania plikami za:
+
+tworzenie i kasowanie plików,
+tworzenie i kasowanie katalogów,
+wsparcie dla użytkowników końcowych przy operacjach na plikach,
+mapowanie plików na nośniku danych,
+tworzenie kopii plików.
+Zarządzanie wejściem/wyjściem – system wejścia/wyjścia składa się z: systemu buforowania, interfejsu urządzeń głównych, sterowników (kontrolerów) dla specyficznych urządzeń.
+Zarządzenie nośnikami danych – pamięć główna jest ulotna i często za mała aby obsłużyć wszystkie programy i dane, dlatego stosuje się nośniki danych (najczęściej dysk twardy) do powiększania tej pamięci tak zwanej pamięć drugiego rzędu, na napędach tych mapuje się pamięć główną. System operacyjny jest odpowiedzialny w fazie zarządzania nośnikami danych za:
+
+zarządzanie wolną pamięcią,
+alokacją zapisu,
+planowaniem dysku.
+
+
+== Zaplecze sprzętowe systemów operacyjnych ==
+Jedynym dodatkowym urządzeniem koniecznym do uruchomienia wielozadaniowego systemu operacyjnego jest licznik zliczający interwały czasowe. Każdy nawet najprostszy system operacyjny musi być taktowany, aby mógł odliczać czas pozostały do zakończenia jednego a rozpoczęcia innego zadania.
+Jednak w celu uzyskania systemu komputerowego o dużym stopniu niezawodności nowoczesne procesory posiadają cechy wspierające implementacje i działanie systemów operacyjnych. Cechy te to:
+
+tryby pracy:
+uprzywilejowany (kernel/supervisor mode),
+chroniony (protected mode), w chronionym trybie pracy niektóre potencjalnie niebezpieczne instrukcje procesora są niedostępne, a próba wywołania ich spowoduje wystąpienie przerwania (obsługiwanego dalej przez system). Nawiązując do budowy systemu operacyjnego, wszelka aktywność zadań (aplikacji) użytkownika oraz powłoki odbywa się w chronionym trybie pracy (protected mode). Jądro systemu operacyjnego pracuje w trybie uprzywilejowanym (kernel mode).
+jednostki zarządzania i ochrony pamięci, pozwalające definiować obszary pamięci np. tylko do odczytu lub tylko do zapisu przez wybrany proces.
+kontrolery przerwań, gdy licznik taktujący system operacyjny wyliczy żądany interwał czasowy informacja o tym zdarzeniu przekazywana jest do procesora przy pomocy przerwania. Podobnie informacje na temat innych zdarzeń przekazywane są do procesora, a w ten sposób do systemu operacyjnego przy pomocy mechanizmu przerwań.
+specjalistyczne akceleratory sprzętowe służące do przyśpieszania pewnych typowych czynności wykonywanych przez systemy operacyjne. Ta funkcjonalność jest rzadko spotykana i zazwyczaj spotyka się ją we wbudowanych systemach RTOS.
+
+
+== Ochrona i zarządzanie pamięcią ==
+Jednym z podstawowych mechanizmów umożliwiających tworzenie niezawodnych środowisk wykonawczych są mechanizmy zarządzania i ochrony pamięci. Działanie tych mechanizmów opiera się na wsparciu sprzętowym dostarczanym przez kontrolery pamięci wbudowane w procesor (lub chipset).
+Ogólna zasada polega na wydzielaniu poszczególnym procesom obszarów pamięci do wyłącznego użytku. Oznacza to, że tylko dany proces może pisać lub czytać tylko do/z danego obszaru. Próba zapisu odczytu z nieprzydzielonego procesowi obszaru kończy się wywołaniem przerwania przerywającego wykonywanie zadania.
+Technicznie ochrona realizowana jest poprzez podział obszaru pamięci na segmenty i strony. Zadanie użytkownika, które jest aktywowane w danej chwili przywraca swój kontekst poprzez ustawienie odpowiednich rejestrów CPU, jak i również rejestrów kontrolnych jednostki zarządzania pamięcią.
+Dzięki ochronie pamięci awaria jednego zadania i próba błędnego nadpisana przestrzeni adresowej innych zadań jest niemożliwa. W ten sposób są również chronione dane potrzebne systemowi operacyjnemu do działania, przez co można zatrzymać uszkodzone zadanie.
+Aktywność systemu operacyjnego, jak i elementów typu sterowniki sprzętowe odbywa się w trybie kernel, w którym ochrona pamięci nie działa lub jest mocno ograniczona (zależnie od rodzaju CPU). Wobec tego jest możliwe awaryjne zatrzymanie systemu na skutek błędnego działania kodu systemu operacyjnego lub sterowników sprzętowych.
+
+
+== Systemy operacyjne pracujące na maszynie wirtualnej ==
+
+Możliwe jest uruchomienie kilku systemów operacyjnych na komputerze jednocześnie, przy użyciu maszyny wirtualnej.
+Najpopularniejsze przykłady programów umożliwiających wirtualizację to VMware Workstation i VirtualBox.
+
+
+== Język programowania jako system operacyjny ==
+Funkcję systemu operacyjnego spełniać może również implementacja określonego języka programowania. Miało to miejsce szczególnie w historycznych już czasach dominacji komputerów 8-bitowych. Rolę powłoki systemu operacyjnego spełnia w tym przypadku interpreter poleceń języka. Dlatego funkcję takiego systemu może pełnić implementacja danego języka oparta na interpretacji lub implementacja mieszana – interpretacyjno-kompilacyjna.
+W komputerach 8-bitowych często interpreter języka był przechowywany w pamięci ROM i stanowił podstawowy system operacyjny. Najbardziej znanym przykładem takiego języka jest BASIC stosowany szeroko w 8-bitowych komputerach. Innym, historycznym już przykładem, jest język Jean, implementowany w dużych systemach komputerowych (np. serii Odra 1300), który mógł pracować zarówno pod kontrolą innego systemu operacyjnego (np. GEORGE 3), jak również samodzielnie jako mały system operacyjny o charakterze konwersacyjnym.
+Językami programowania (a właściwie pewnymi implementacjami języków programowania), które także stanowią samodzielne systemy operacyjne, są również FORTH oraz Smalltalk. Język i zarazem system operacyjny FORTH znajdował zastosowanie szczególnie w systemach sterowania automatyki przemysłowej. Jest to najlepszy przykład języka interpretacyjno-kompilacyjnego, w którym wprowadzane słowa są interpretowane i natychmiast wykonywane, natomiast definicje słów są natychmiast kompilowane. Smalltalk to pierwszy język „czysto obiektowy”, który w wielu swoich implementacjach buduje własne środowisko stanowiące system operacyjny komputera.
+W systemach serii Mera 300 funkcję systemu operacyjnego mógł pełnić nawet asembler o nazwie MOTIS.
+
+
+== Zobacz też ==
+
+firmware
+software
+Live CD
+Crash
+
+
+== Przypisy ==
+
+
+== Bibliografia ==
+Abraham Silberschatz, Peter B. Galvin: Podstawy systemów operacyjnych. Wydawnictwa Naukowo-Techniczne, 2006. ISBN 83-204-3215-4. (pol.).

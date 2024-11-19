@@ -1,0 +1,4826 @@
+O número π (pronuncia-se [pi]) é uma constante matemática que é razão entre o comprimento de uma circunferência e seu diâmetro, aproximadamente igual a 3,14159. O número π aparece em diversas fórmulas matemáticas e físicas. É um número irracional, que significa que não pode ser expresso como a razão de dois inteiros, embora frações como 227 são comumente utilizadas para aproximar o seu valor. Consequentemente, sua representação decimal nunca acaba, nem entra num padrão que se repete infinitamente. Também é um número transcendente, ou seja, não é a solução de uma equação que envolva apenas infinitas somas, produtos, potências e coeficientes inteiros. Este último fato implica que resolver o antigo problema da quadratura do círculo com régua e compasso é impossível. Os dígitos decimais de π são aparentemente distribuídos aleatoriamente, mas nenhuma prova para essa conjectura foi encontrada.
+Por milhares de anos, matemáticos tentaram expandir seus conhecimentos sobre π, às vezes computando o seu valor a um alto nível de precisão. Civilizações antigas, incluindo os egípcios e os babilônicos, exigiam aproximações bastante precisas de π para cálculos práticos. Aproximadamente 250 a.C., o matemático grego Arquimedes criou um algoritmo para aproximar π com precisão arbitrária. No século V d.C., matemáticos chineses aproximaram π a sete dígitos, enquanto os matemáticos indianos fizeram uma aproximação de cinco dígitos, ambos utilizando técnicas geométricas. A primeira fórmula computacional, baseado numa série infinita, foi descoberta um milênio depois. O primeiro uso da letra π para representar a razão entre o comprimento e o diâmetro de uma circunferência foi o matemático galês William Jones em 1706.
+A invenção do cálculo logo levou à computação de centenas de dígitos de π, o suficiente para todas as computações científicas práticas. No entanto, nos séculos XX e XXI, matemáticos e cientistas da computação buscaram novas abordagens que, combinadas com o aumento da potência computacional, estenderam a representação decimal de π para muitos trilhões de dígitos. Essas computações são motivados pelo desenvolvimento de algoritmos eficientes para calcular séries numéricas, bem como pela busca humana por quebrar recordes. Os extensos cálculos envolvidos também foram usados para testar supercomputadores, bem como para testar o hardware de computadores de consumidores.
+Por sua definição estar relacionada à circunferência, π é encontrado em muitas fórmulas de trigonometria e geometria, especialmente aquelas relacionadas a circunferências, elipses e esferas. A constante pode ser encontrada também em fórmulas de outros tópicos da ciência, como cosmologia, fractais, termodinâmica, mecânica e eletromagnetismo. Também aparece em áreas pouco relacionadas à geometria, como teoria dos números e estatística, e na análise matemática moderna pode ser definido sem qualquer referência à geometria. A ubiquidade de π faz com que seja uma das constantes matemáticas mais amplamente conhecidas dentro e fora da ciência. Vários livros dedicados a π foram publicados, e cálculos de recorde dos dígitos de π frequentemente resultam em manchetes de notícias.
+
+
+== Fundamentos ==
+
+
+=== Nome ===
+O símbolo utilizado pelos matemáticos para representar a razão entre o comprimento de uma circunferência pelo seu diâmetro é a letra grega π minúscula, às vezes escrito como pi. Em português, π é pronunciado como [pi]. Em usos matemáticos, a letra π minúscula é diferenciada de sua forma maiúscula Π, utilizado para denotar o produtório, análogo a como Σ é utilizado para denotar o somatório.
+A escolha do símbolo π é discutida na seção § Adoção do símbolo π.
+
+
+=== Definição ===
+
+π é comumente definido como a razão do comprimento C de uma circunferência pelo seu diâmetro d:
+
+  
+    
+      
+        π
+        =
+        
+          
+            C
+            d
+          
+        
+      
+    
+    {\displaystyle \pi ={\frac {C}{d}}}
+  
+
+A razão 
+  
+    
+      
+        
+          
+            C
+            d
+          
+        
+      
+    
+    {\textstyle {\frac {C}{d}}}
+  
+ é constante, independente do tamanho da circunferência. Por exemplo, se uma circunferência possui o dobro do diâmetro de outra circunferência, o seu comprimento também será o dobro, preservando a razão mencionada. Esta definição de π implica o uso de geometria (euclidiana) plana; por mais que a noção de circunferência pode ser estendida para qualquer geometria (não euclidiana) curva, esses não satisfazem a fórmula 
+  
+    
+      
+        π
+        =
+        
+          
+            C
+            d
+          
+        
+      
+    
+    {\textstyle \pi ={\frac {C}{d}}}
+  
+.
+Aqui, o comprimento de uma circunferência é o comprimento do arco ao redor do perímetro da circunferência. Esta quantidade pode ser formalmente definida independentemente da geometria utilizando limites — um conceito do cálculo. Por exemplo, pode-se calcular diretamente o comprimento do arco da metade superior da circunferência unitária, dado em coordenadas cartesianas pela equação x2 + y2 = 1, como a integral:
+
+  
+    
+      
+        π
+        =
+        
+          ∫
+          
+            −
+            1
+          
+          
+            1
+          
+        
+        
+          
+            
+              d
+              x
+            
+            
+              1
+              −
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \pi =\int _{-1}^{1}{\frac {dx}{\sqrt {1-x^{2}}}}.}
+  
+
+Uma expressão como essa foi adotada como a definição para π por Karl Weierstrass, que a definiu diretamente de uma integral em 1841.
+Integração não é usualmente utilizada para a primeira definição analítica, porque, conforme Remmert explica, cálculo diferencial precede tipicamente o cálculo integral nos currículos das universidades, então é desejado uma definição para π que não necessite utilizar integrais. Uma dessas definições, de Richard Baltzer e popularizado por Edmund Landau, é a seguinte: π é o dobro do menor número positivo no qual seu cosseno é igual a 0. π também é o menor número positivo no qual o seno é igual a zero, bem como a diferença entre duas raízes consecutivas das funções seno e cosseno. O cosseno e o seno podem ser definidos independentemente da geometria, como uma série de potências ou a solução de uma equação diferencial.
+Semelhantemente, π pode ser definido utilizando as propriedades da função exponencial complexa exp z, de uma variável complexa z. Como o cosseno, a função exponencial complexa pode ser definida de diversas maneiras diferentes. O conjunto de números complexos no qual exp z é igual a um é então uma progressão aritmética (imaginária) da forma:
+
+  
+    
+      
+        {
+        …
+        ,
+        −
+        2
+        π
+        i
+        ,
+        0
+        ,
+        2
+        π
+        i
+        ,
+        4
+        π
+        i
+        ,
+        …
+        }
+        =
+        {
+        2
+        π
+        k
+        i
+        ∣
+        k
+        ∈
+        
+          Z
+        
+        }
+      
+    
+    {\displaystyle \{\dots ,-2\pi i,0,2\pi i,4\pi i,\dots \}=\{2\pi ki\mid k\in \mathbb {Z} \}}
+  
+
+e há um único número real positivo π com essa propriedade.
+Uma variação da mesma ideia, utilizando conceitos matemáticos sofisticados de topologia e álgebra, é o seguinte teorema: há um único isomorfismo contínuo (salvo por automorfismo) do grupo R/Z de números reais sob a adição módulo inteiro (o grupo circular), no grupo multiplicativo de números complexos de módulo um. O número π é definido como metade da magnitude da derivada deste homomorfismo.
+
+
+=== Irracionalidade e normalidade ===
+π é um número irracional, o que significa que não pode ser escrito como uma razão de dois números inteiros. Frações como 227 e 355113 são usualmente utilizadas para aproximar π, mas nenhuma fração comum (razão entre dois números inteiros) pode expressar seu exato valor. Visto que π é irracional, ele possui um número infinito de dígitos em sua representação decimal, e não é uma dízima periódica. Há diversas provas da irracionalidade de π; elas geralmente requerem cálculo e utilizam a técnica de redução ao absurdo. O grau no qual π pode ser aproximado por números racionais (chamado de medida de irracionalidade) não é precisamente conhecido; é estimado que seja maior que a medida de e ou ln 2, mas menor que a medida dos números de Liouville.
+Os dígitos de π não aparentam possuir nenhum tipo de padrão, passando em testes de aleatoriedade estatística, incluindo o teste de normalidade; um número de comprimento infinito é dito normal quando em todas as sequências de dígitos (de comprimento qualquer) aparecem com a mesma frequência. A conjectura de que π seja normal não foi provada nem refutada.
+Desde a chegada dos computadores, inúmeros dígitos estiveram disponíveis para realizar análise estatística. Yasumasa Kanada realizou uma análise estatística detalhada nos dígitos decimais de π, encontrando consistência na normalidade; por exemplo, a frequência dos dígitos de 0 a 9 foram submetidos a testes de significância estatística, e nenhum padrão foi encontrado. Qualquer sequência aleatória de dígitos contém subsequências de comprimento arbitrário que parecem não aleatórios, pelo teorema do macaco infinito. Portanto, porque a sequência de dígitos de π passa em testes estatísticos de aleatoriedade, ele contém algumas sequências de dígitos que aparentam não ser aleatórias, como a sequência de seis noves consecutivos que começa na 762.ª casa decimal da representação decimal de π. Isto também é conhecido como o "ponto de Feynman" no "folclore matemático", em homenagem a Richard Feynman, porém não há nenhuma ligação conhecida com Feynman.
+
+
+=== Transcendência ===
+
+Em adição de ser irracional, π também é um número transcendente, o que significa que não é a solução de nenhuma equação polinomial não constante com coeficientes racionais, como 
+  
+    
+      
+        
+          
+            
+              x
+              
+                5
+              
+            
+            120
+          
+        
+        −
+        
+          
+            
+              x
+              
+                3
+              
+            
+            6
+          
+        
+        +
+        x
+        =
+        0
+      
+    
+    {\textstyle {\frac {x^{5}}{120}}-{\frac {x^{3}}{6}}+x=0}
+  
+.
+A transcendência de π tem duas importantes consequências: a primeira é que π não pode ser expresso utilizando uma combinação finita de raízes quadradas ou raízes n-ésimas (como 
+  
+    
+      
+        
+          
+            31
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt[{3}]{31}}}
+  
+ ou 
+  
+    
+      
+        
+          
+            10
+          
+        
+      
+    
+    {\displaystyle {\sqrt {10}}}
+  
+). A segunda é que, como não é possível construir [en] números transcendentes com régua e compasso, a quadratura do círculo é impossível. Noutras palavras, é impossível construir, utilizando apenas régua e compasso, um quadrado cuja área é exatamente igual à área de um dado círculo. A quadratura do círculo era um dos importantes problemas da Antiguidade Clássica. Matemáticos amadores da modernidade às vezes tentam quadrar o círculo e reivindicam sucesso — mesmo sendo de fato algo matematicamente impossível.
+
+
+=== Frações contínuas ===
+Como é irracional, π não pode ser representado como uma fração comum. Mas todo número, incluindo π, pode ser representado como uma série infinita de frações uma dentro da outra, chamada de fração contínua:
+
+  
+    
+      
+        π
+        =
+        3
+        +
+        
+          
+            
+              
+                
+                  
+                
+                
+                  
+                    1
+                  
+                
+              
+              
+                
+                  
+                
+                
+                  
+                    7
+                    +
+                    
+                      
+                        
+                          
+                            
+                              
+                            
+                            
+                              
+                                1
+                              
+                            
+                          
+                          
+                            
+                              
+                            
+                            
+                              
+                                15
+                                +
+                                
+                                  
+                                    
+                                      
+                                        
+                                          
+                                        
+                                        
+                                          
+                                            1
+                                          
+                                        
+                                      
+                                      
+                                        
+                                          
+                                        
+                                        
+                                          
+                                            1
+                                            +
+                                            
+                                              
+                                                
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        1
+                                                      
+                                                    
+                                                  
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        292
+                                                        +
+                                                        
+                                                          
+                                                            
+                                                              
+                                                                
+                                                                  
+                                                                
+                                                                
+                                                                  
+                                                                    1
+                                                                  
+                                                                
+                                                              
+                                                              
+                                                                
+                                                                  
+                                                                
+                                                                
+                                                                  
+                                                                    1
+                                                                    +
+                                                                    
+                                                                      
+                                                                        
+                                                                          
+                                                                            
+                                                                              
+                                                                            
+                                                                            
+                                                                              
+                                                                                1
+                                                                              
+                                                                            
+                                                                          
+                                                                          
+                                                                            
+                                                                              
+                                                                            
+                                                                            
+                                                                              
+                                                                                1
+                                                                                +
+                                                                                
+                                                                                  
+                                                                                    
+                                                                                      
+                                                                                        
+                                                                                          
+                                                                                        
+                                                                                        
+                                                                                          
+                                                                                            1
+                                                                                          
+                                                                                        
+                                                                                      
+                                                                                      
+                                                                                        
+                                                                                          
+                                                                                        
+                                                                                        
+                                                                                          
+                                                                                            1
+                                                                                            +
+                                                                                            ⋱
+                                                                                          
+                                                                                        
+                                                                                      
+                                                                                    
+                                                                                  
+                                                                                
+                                                                              
+                                                                            
+                                                                          
+                                                                        
+                                                                      
+                                                                    
+                                                                  
+                                                                
+                                                              
+                                                            
+                                                          
+                                                        
+                                                      
+                                                    
+                                                  
+                                                
+                                              
+                                            
+                                          
+                                        
+                                      
+                                    
+                                  
+                                
+                              
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \pi =3+\textstyle {\cfrac {1}{7+\textstyle {\cfrac {1}{15+\textstyle {\cfrac {1}{1+\textstyle {\cfrac {1}{292+\textstyle {\cfrac {1}{1+\textstyle {\cfrac {1}{1+\textstyle {\cfrac {1}{1+\ddots }}}}}}}}}}}}}}}
+  
+
+Truncando a fração contínua em qualquer ponto produz uma aproximação racional para π; as quatro primeiro são 3, 227, 333106, e 355113. Estes números estão entre as aproximações históricas mais conhecidas e mais amplamente utilizadas da constante. Cada aproximação gerada desta forma se aproxima cada vez mais de π; ou seja, cada fração é mais próxima de π que uma de denominador igual ou menor. Visto que π é transcendente, por definição não é algébrico e não pode ser um irracional quadrático. Portanto, não há uma fração contínua periódica para π. Por mais que frações contínuas simples (mostrada acima) não demonstram nenhum padrão óbvio, diversas frações contínuas generalizadas apresentam, como, por exemplo:
+
+  
+    
+      
+        
+          
+            
+              
+                π
+              
+              
+                
+                =
+                3
+                +
+                
+                  
+                    
+                      
+                        
+                      
+                      
+                        
+                          
+                            1
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                    
+                      
+                        
+                      
+                      
+                        
+                          6
+                          +
+                          
+                            
+                              
+                                
+                                  
+                                
+                                
+                                  
+                                    
+                                      3
+                                      
+                                        2
+                                      
+                                    
+                                  
+                                
+                              
+                              
+                                
+                                  
+                                
+                                
+                                  
+                                    6
+                                    +
+                                    
+                                      
+                                        
+                                          
+                                            
+                                          
+                                          
+                                            
+                                              
+                                                5
+                                                
+                                                  2
+                                                
+                                              
+                                            
+                                          
+                                        
+                                        
+                                          
+                                            
+                                          
+                                          
+                                            
+                                              6
+                                              +
+                                              
+                                                
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        
+                                                          7
+                                                          
+                                                            2
+                                                          
+                                                        
+                                                      
+                                                    
+                                                  
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        6
+                                                        +
+                                                        ⋱
+                                                      
+                                                    
+                                                  
+                                                
+                                              
+                                            
+                                          
+                                        
+                                      
+                                    
+                                  
+                                
+                              
+                            
+                          
+                        
+                      
+                    
+                  
+                
+                =
+                
+                  
+                    
+                      
+                        
+                      
+                      
+                        
+                          4
+                        
+                      
+                    
+                    
+                      
+                        
+                      
+                      
+                        
+                          1
+                          +
+                          
+                            
+                              
+                                
+                                  
+                                
+                                
+                                  
+                                    
+                                      1
+                                      
+                                        2
+                                      
+                                    
+                                  
+                                
+                              
+                              
+                                
+                                  
+                                
+                                
+                                  
+                                    2
+                                    +
+                                    
+                                      
+                                        
+                                          
+                                            
+                                          
+                                          
+                                            
+                                              
+                                                3
+                                                
+                                                  2
+                                                
+                                              
+                                            
+                                          
+                                        
+                                        
+                                          
+                                            
+                                          
+                                          
+                                            
+                                              2
+                                              +
+                                              
+                                                
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        
+                                                          5
+                                                          
+                                                            2
+                                                          
+                                                        
+                                                      
+                                                    
+                                                  
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        2
+                                                        +
+                                                        ⋱
+                                                      
+                                                    
+                                                  
+                                                
+                                              
+                                            
+                                          
+                                        
+                                      
+                                    
+                                  
+                                
+                              
+                            
+                          
+                        
+                      
+                    
+                  
+                
+                =
+                
+                  
+                    
+                      
+                        
+                      
+                      
+                        
+                          4
+                        
+                      
+                    
+                    
+                      
+                        
+                      
+                      
+                        
+                          1
+                          +
+                          
+                            
+                              
+                                
+                                  
+                                
+                                
+                                  
+                                    
+                                      1
+                                      
+                                        2
+                                      
+                                    
+                                  
+                                
+                              
+                              
+                                
+                                  
+                                
+                                
+                                  
+                                    3
+                                    +
+                                    
+                                      
+                                        
+                                          
+                                            
+                                          
+                                          
+                                            
+                                              
+                                                2
+                                                
+                                                  2
+                                                
+                                              
+                                            
+                                          
+                                        
+                                        
+                                          
+                                            
+                                          
+                                          
+                                            
+                                              5
+                                              +
+                                              
+                                                
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        
+                                                          3
+                                                          
+                                                            2
+                                                          
+                                                        
+                                                      
+                                                    
+                                                  
+                                                  
+                                                    
+                                                      
+                                                    
+                                                    
+                                                      
+                                                        7
+                                                        +
+                                                        ⋱
+                                                      
+                                                    
+                                                  
+                                                
+                                              
+                                            
+                                          
+                                        
+                                      
+                                    
+                                  
+                                
+                              
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\pi &=3+{\cfrac {1^{2}}{6+{\cfrac {3^{2}}{6+{\cfrac {5^{2}}{6+{\cfrac {7^{2}}{6+\ddots }}}}}}}}={\cfrac {4}{1+{\cfrac {1^{2}}{2+{\cfrac {3^{2}}{2+{\cfrac {5^{2}}{2+\ddots }}}}}}}}={\cfrac {4}{1+{\cfrac {1^{2}}{3+{\cfrac {2^{2}}{5+{\cfrac {3^{2}}{7+\ddots }}}}}}}}\end{aligned}}}
+  
+
+A fração do meio dessas se deve ao matemático de meados do século XVII William Brouncker, veja § Fórmula de Brouncker.
+
+
+=== Valores aproximados e dígitos ===
+Algumas aproximações de π incluem:
+
+Inteiros: 3
+Frações: Frações aproximadas incluem (em ordem crescente de acurácia) 227, 333106, 355113, 5216316604, 10399333102, 10434833215, e 24585092278256779. (Lista são termos selecionados de OEIS: A063674 e OEIS: A063673.)
+Dígitos: Os primeiros 50 dígitos decimais são 3,14159265358979323846264338327950288419716939937510... (ver OEIS: A000796)
+Dígitos noutras bases
+
+Os primeiros 48 dígitos binários (base 2, chamado de bits) são 11,001001000011111101101010100010001000010110100011... (ver OEIS: A004601)
+Os primeiros 36 dígitos em ternário (base 3) são 10,010211012222010211002111110221222220... (ver OEIS: A004602)
+Os primeiros 20 dígitos em hexadecimal (base 16) são 3,243F6A8885A308D31319... (ver OEIS: A062964)
+Os primeiros 5 dígitos em sexagesimal (base 60) são 3;8,29,44,0,47 (ver OEIS: A060707)
+
+
+=== Números complexos e identidade de Euler ===
+
+Qualquer número complexo z pode ser expresso utilizando um par de números reais. No sistema de coordenadas polares, um número (raio ou r) é utilizado para representar a distância de z da origem do plano complexo, e o outro (ângulo ou φ) é a rotação do eixo dos positivos reais:
+
+  
+    
+      
+        z
+        =
+        r
+        ⋅
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sen
+        ⁡
+        φ
+        )
+        ,
+      
+    
+    {\displaystyle z=r\cdot (\cos \varphi +i\operatorname {sen} \varphi ),}
+  
+
+onde i é a unidade imaginária que satisfaz i2 = −1. A frequente aparição de π na análise complexa pode ser relacionada ao comportamento da função exponencial de uma variável complexa, descrita pela fórmula de Euler
+
+  
+    
+      
+        
+          e
+          
+            i
+            φ
+          
+        
+        =
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        ,
+      
+    
+    {\displaystyle e^{i\varphi }=\cos \varphi +i\sin \varphi ,}
+  
+
+onde e é a base do logaritmo natural. Esta fórmula estabelece uma correspondência entre as potências imaginárias de e e pontos no círculo unitário centrado na origem do plano complexo. Quando φ = π, o resultado é a identidade de Euler, considerado uma beleza da matemática por mostrar uma profunda conexão entre cinco importantes constantes matemáticas:
+
+  
+    
+      
+        
+          e
+          
+            i
+            π
+          
+        
+        +
+        1
+        =
+        0.
+      
+    
+    {\displaystyle e^{i\pi }+1=0.}
+  
+
+Para cada natural n, existem n diferentes números complexos z que satisfaçam zn = 1, sendo chamadas de raízes n-ésimas da unidade, dadas pela fórmula:
+  
+    
+      
+        
+          e
+          
+            2
+            π
+            i
+            k
+            
+              /
+            
+            n
+          
+        
+        
+        (
+        k
+        =
+        0
+        ,
+        1
+        ,
+        2
+        ,
+        …
+        ,
+        n
+        −
+        1
+        )
+        .
+      
+    
+    {\displaystyle e^{2\pi ik/n}\qquad (k=0,1,2,\dots ,n-1).}
+  
+
+
+== História ==
+
+
+=== Antiguidade ===
+As aproximações mais conhecidas de π datadas do primeiro milênio a.C. tinha uma precisão de duas casas decimais; isto foi aperfeiçoado pelos matemáticos chineses, em particular na metade do primeiro milênio, a com precisão de sete casas decimais. Após isso, nenhum progresso adicional foi feito até o final do período medieval.
+As primeiras aproximações de π foram encontradas na Babilônia e Egito, ambas com um porcento de diferença do valor verdadeiro. Na Babilônia, uma Tábua de argila datada de 1900–1600 a.C. tem uma afirmação geométrica que, por implicação, trata π como 258 = 3,125. No Egito, o Papiro de Rhind, datado de aproximadamente 1650 a.C., mas copiada de um documento datado de 1850 a.C., tinha uma fórmula para a área do círculo que considerava π como 
+  
+    
+      
+        
+          
+            (
+            
+              
+                16
+                9
+              
+            
+            )
+          
+          
+            2
+          
+        
+        ≈
+        3
+        
+          ,
+        
+        16
+      
+    
+    {\textstyle \left({\frac {16}{9}}\right)^{2}\approx 3{,}16}
+  
+. Alguns piramidologistas teorizaram que a Grande Pirâmide de Gizé possui proporções relacionadas com π, mas essa teoria não é amplamente aceita pelos estudiosos. Nos Shulba Sutras dos matemáticos indianos, datando uma tradição oral do primeiro ou segundo milênio a.C., são fornecidas aproximações interpretadas de várias maneiras como aproximadamente 3,08831, 3,08833, 3,004, 3 ou 3,125.
+
+
+=== Era da aproximação por polígonos ===
+
+O primeiro registro de um algoritmo para calcular rigorosamente o valor de π foi uma abordagem geométrica usando polígonos, desenvolvido por volta de 250 a.C. pelo matemático grego Arquimedes, implementando o método da exaustão. Este algoritmo poligonal dominou por mais de mil anos, e, como resultado, π às vezes é referido como a constante de Arquimedes. Arquimedes computou os limites superior e inferior de π ao desenhar um hexágono dentro e fora de uma circunferência, e dobrando sucessivamente o número de lados até alcançar um polígono regular de 96 lados. Ao calcular os perímetros desses polígonos, ele provou que 22371 < π < 227 (isto é, 3,1408 < π < 3,1429). O limite superior de Arquimedes de 227 pode ter causado a crença popular generalizada de que π é igual a 227. Por volta de 150 d.C., o cientista greco-romano Ptolomeu, em Almagesto, deu o valor de 3,1416 a π, que ele pode ter obtido de Arquimedes ou de Apolônio de Perga. Matemáticos alcançaram 39 dígitos de π usando algoritmos poligonais em 1630, um recorde foi batido em 1699, quando foi utilizado uma série infinita para alcançar 71 dígitos de π.
+Na China antiga, valores para π incluíam 3,1547 (em torno de 1 d.C.), 
+  
+    
+      
+        
+          
+            10
+          
+        
+      
+    
+    {\displaystyle {\sqrt {10}}}
+  
+ (100 d.C., aproximadamente 3,1623), e 14245 (século III, aproximadamente 3,1556). Por volta de 265 d.C., o matemático Liu Hui do Reino de Wei criou um algoritmo iterativo baseado em polígono e usou-o com um polígono de 3 072 lados para obter o valor de 3,1416 para π. Posteriormente Liu inventou um método mais rápido para calcular π e obteve um valor de 3,14 com um polígono de 96 lados, aproveitando que as diferenças de área de polígonos sucessivos formam uma série geométrica com fator 4. O matemático chinês Zu Chongzhi, por volta de 480 d.C, calculou que 
+  
+    
+      
+        3,141
+        5926
+        <
+        π
+        <
+        3,141
+        5927
+      
+    
+    {\displaystyle 3{,}1415926<\pi <3{,}1415927}
+  
+ e sugeriu as aproximações 
+  
+    
+      
+        π
+        ≈
+        
+          
+            355
+            113
+          
+        
+        =
+        3,141
+        59292035...
+      
+    
+    {\textstyle \pi \approx {\frac {355}{113}}=3{,}14159292035...}
+  
+ e 
+  
+    
+      
+        π
+        ≈
+        
+          
+            22
+            7
+          
+        
+        =
+        3,142
+        857142857...
+      
+    
+    {\textstyle \pi \approx {\frac {22}{7}}=3{,}142857142857...}
+  
+, os quais ele denominou Milü ("razão próxima") e Yuelü ("razão aproximada"), respectivamente, usando o algoritmo de Liu Hui aplicando num polígono de 12 288 lados. Com um valor correto para seus sete primeiros dígitos decimais, esse valor permaneceu como a aproximação mais precisa de π disponível pelos próximos 800 anos.
+O astrônomo indiano Ariabata usou um valor de 3,1416 em Aryabhatiya (499 d.C.). Fibonacci em c. 1220 computou 3,1418 usando um método poligonal, de forma independente de Arquimedes. O autor italiano Dante empregou aparentemente o valor de 
+  
+    
+      
+        3
+        +
+        
+          
+            
+              2
+            
+            10
+          
+        
+        ≈
+        3,141
+        42
+      
+    
+    {\textstyle 3+{\frac {\sqrt {2}}{10}}\approx 3{,}14142}
+  
+.
+O astrônomo persa Alcaxi produziu nove dígitos sexagesimais, aproximadamente o equivalente a 16 dígitos decimais, em 1424, usando um polígono com 3 × 228 lados, que permaneceu como o recorde mundial por cerca de 180 anos. O matemático francês François Viète em 1579 chegou a 9 dígitos com um polígono de 3 × 217 lados. O matemático flandres Adriaan van Roomen chegou a 15 casas decimais em 1593. Em 1596, o matemático holandês Ludolph van Ceulen atingiu 20 dígitos, um recorde que mais tarde aumentou para 35 dígitos (como resultado, π foi chamado de "número de Ludolph" na Alemanha até o início do século XX). O cientista holandês Willebrord Snellius atingiu 34 dígitos em 1621, e o astrônomo Christoph Grienberger chegou a 38 dígitos usando 1040 lados. Christiaan Huygens conseguiu chegar a 10 casas decimais em 1654 usando um método ligeiramente diferente equivalente à extrapolação de Richardson [en].
+
+
+=== Séries infinitas ===
+
+O cálculo de π foi revolucionado com o desenvolvimento de técnicas de séries infinitas nos séculos XVI e XVII. Uma série infinita é a soma dos termos de uma sequência infinita. Séries infinitas possibilitou que matemáticos computassem π com muito mais precisão do que Arquimedes e outros que utilizaram técnicas geométricas. Apesar de séries infinitas terem sido mais exploradas para π por matemáticos europeus, como James Gregory e Gottfried Wilhelm Leibniz, a abordagem também apareceu na escola de Querala em algum momento do século XIV ou XV. Em torno de 1500 d.C., uma descrição escrita de uma série infinita que poderia ser utilizada para computar π foi deixada em verso sânscrito em Tantrasamgraha por Nilakantha Somayaji. As séries foram apresentadas sem provas, mas elas foram apresentadas numa obra posterior, Yuktibhāṣā, em torno de 1530 d.C. Diversas séries infinitas são descritas, incluindo séries para seno (que Nilakantha atribui a Madhava de Sangamagrama), cosseno e arco tangente. Madhava usou uma série infinita para estimar 11 dígitos de π por volta de 1400.
+Em 1593, François Viète publicou o que é conhecido agora como a fórmula de Viète, um produto infinito [en] (em vez de uma soma infinita, que é mais comumente utilizada para calcular π):
+
+  
+    
+      
+        
+          
+            2
+            π
+          
+        
+        =
+        
+          
+            
+              2
+            
+            2
+          
+        
+        ⋅
+        
+          
+            
+              2
+              +
+              
+                
+                  2
+                
+              
+            
+            2
+          
+        
+        ⋅
+        
+          
+            
+              2
+              +
+              
+                
+                  2
+                  +
+                  
+                    
+                      2
+                    
+                  
+                
+              
+            
+            2
+          
+        
+        ⋯
+      
+    
+    {\displaystyle {\frac {2}{\pi }}={\frac {\sqrt {2}}{2}}\cdot {\frac {\sqrt {2+{\sqrt {2}}}}{2}}\cdot {\frac {\sqrt {2+{\sqrt {2+{\sqrt {2}}}}}}{2}}\cdots }
+  
+
+Em 1655, John Wallis publicou o que é conhecido agora como o produto de Wallis, também um produto infinito:
+
+  
+    
+      
+        
+          
+            π
+            2
+          
+        
+        =
+        
+          (
+          
+            
+              
+                2
+                1
+              
+            
+            ⋅
+            
+              
+                2
+                3
+              
+            
+          
+          )
+        
+        ⋅
+        
+          (
+          
+            
+              
+                4
+                3
+              
+            
+            ⋅
+            
+              
+                4
+                5
+              
+            
+          
+          )
+        
+        ⋅
+        
+          (
+          
+            
+              
+                6
+                5
+              
+            
+            ⋅
+            
+              
+                6
+                7
+              
+            
+          
+          )
+        
+        ⋅
+        
+          (
+          
+            
+              
+                8
+                7
+              
+            
+            ⋅
+            
+              
+                8
+                9
+              
+            
+          
+          )
+        
+        ⋯
+      
+    
+    {\displaystyle {\frac {\pi }{2}}=\left({\frac {2}{1}}\cdot {\frac {2}{3}}\right)\cdot \left({\frac {4}{3}}\cdot {\frac {4}{5}}\right)\cdot \left({\frac {6}{5}}\cdot {\frac {6}{7}}\right)\cdot \left({\frac {8}{7}}\cdot {\frac {8}{9}}\right)\cdots }
+  
+
+Na década de 1660, o cientista inglês Isaac Newton e o matemático Gottfried Wilhelm Leibniz descobriram o cálculo, que levou o desenvolvimento de diversas séries infinitas para aproximar π. O próprio Newton usou uma série de arco seno para computar uma aproximação de 15 dígitos de π em 1665 ou 1666, escrevendo "tenho vergonha de lhe dizer até quantas casas decimais levei esses cálculos, não tendo nada para fazer no momento."
+Em 1671, James Gregory e, de forma independente, Leibniz em 1673, descobriram a expansão das séries de Taylor para arco tangente:
+
+  
+    
+      
+        arctg
+        ⁡
+        z
+        =
+        z
+        −
+        
+          
+            
+              z
+              
+                3
+              
+            
+            3
+          
+        
+        +
+        
+          
+            
+              z
+              
+                5
+              
+            
+            5
+          
+        
+        −
+        
+          
+            
+              z
+              
+                7
+              
+            
+            7
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \operatorname {arctg} z=z-{\frac {z^{3}}{3}}+{\frac {z^{5}}{5}}-{\frac {z^{7}}{7}}+\cdots }
+  
+
+Esta série, às vezes chamada de série de Gregory–Leibniz, igual a π4 quando avaliada com z = 1. No entanto, ela converge de forma inconvenientemente lenta (isto é, se aproxima da resposta bem gradualmente), levando aproximadamente dez vezes mais termos para calcular cada dígito adicional.
+Em 1699, o matemático inglês Abraham Sharp usou a série de Gregory–Leibniz para 
+  
+    
+      
+        z
+        =
+        
+          
+            1
+            
+              3
+            
+          
+        
+      
+    
+    {\textstyle z={\frac {1}{\sqrt {3}}}}
+  
+ para computar 71 dígitos de π, quebrando o recorde anterior de 39 dígitos, que foi estabelecido com um algoritmo poligonal.
+Em 1706 John Machin usou a série de Gregory–Leibniz para gerar um algoritmo que converge muito mais rapidamente:
+
+  
+    
+      
+        
+          
+            π
+            4
+          
+        
+        =
+        4
+        arctg
+        ⁡
+        
+          
+            1
+            5
+          
+        
+        −
+        arctg
+        ⁡
+        
+          
+            1
+            239
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {\pi }{4}}=4\operatorname {arctg} {\frac {1}{5}}-\operatorname {arctg} {\frac {1}{239}}.}
+  
+
+Machin alcançou 100 dígitos de π com esta fórmula. Outros matemáticos criaram derivações da fórmula de Machin, que foram utilizadas para estabelecerem diversos recordes sucessivos para calcular dígitos de π.
+Isaac Newton alcançou a convergência da série de Gregory–Leibniz em 1684 (numa obra não publicada; outras pessoas descobriram o resultado de forma independente):
+
+  
+    
+      
+        arctg
+        ⁡
+        x
+        =
+        
+          
+            x
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            2
+            3
+          
+        
+        
+          
+            
+              x
+              
+                3
+              
+            
+            
+              (
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              2
+              ⋅
+              4
+            
+            
+              3
+              ⋅
+              5
+            
+          
+        
+        
+          
+            
+              x
+              
+                5
+              
+            
+            
+              (
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+              
+                )
+                
+                  3
+                
+              
+            
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \operatorname {arctg} x={\frac {x}{1+x^{2}}}+{\frac {2}{3}}{\frac {x^{3}}{(1+x^{2})^{2}}}+{\frac {2\cdot 4}{3\cdot 5}}{\frac {x^{5}}{(1+x^{2})^{3}}}+\cdots }
+  
+
+Leonhard Euler popularizou esta série em seu livro de cálculo diferencial de 1755, e posteriormente usou com uma derivação da fórmula de Machin, incluindo 
+  
+    
+      
+        
+          
+            
+              π
+              4
+            
+          
+        
+        =
+        5
+        arctan
+        ⁡
+        
+          
+            
+              1
+              7
+            
+          
+        
+        +
+        2
+        arctan
+        ⁡
+        
+          
+            
+              3
+              79
+            
+          
+        
+      
+    
+    {\textstyle {\tfrac {\pi }{4}}=5\arctan {\tfrac {1}{7}}+2\arctan {\tfrac {3}{79}}}
+  
+, na qual permitiu que ele calculasse 20 dígitos de π em uma hora.
+As derivações da fórmula de Machin mantiveram como o método conhecido para calcular π até a era dos computadores, sendo utilizadas para registrar novos recordes por 250 anos, alcançando até uma aproximação de 620 dígitos em 1946 por Daniel Ferguson — a melhor aproximação atingida sem o auxílio de um dispositivo de cálculo.
+Em 1853, o matemático britânico William Shanks calculou 607 dígitos de π, mas ele cometeu um erro na 528.ª casa decimal, fazendo que todos os dígitos subsequentes fossem calculados incorretamente. Apesar disso, em 1873 ele continuou calculando mais 100 dígitos, totalizando 707 dígitos, mas devido ao erro, estes dígitos também estavam incorretos.
+
+
+==== Razão de convergência ====
+Algumas séries infinitas para π convergem mais rápido que outras. Dado à escolha entre duas séries infinitas para π, os matemáticos geralmente escolherão aquela que converge mais rapidamente, visto que uma convergência mais rápida reduz a quantidade de cálculos necessários para calcular π para uma dada precisão. Um exemplo de série infinita simples para calcular π é a série de Gregory–Leibniz:
+
+  
+    
+      
+        π
+        =
+        
+          
+            4
+            1
+          
+        
+        −
+        
+          
+            4
+            3
+          
+        
+        +
+        
+          
+            4
+            5
+          
+        
+        −
+        
+          
+            4
+            7
+          
+        
+        +
+        
+          
+            4
+            9
+          
+        
+        −
+        
+          
+            4
+            11
+          
+        
+        +
+        
+          
+            4
+            13
+          
+        
+        −
+        ⋯
+      
+    
+    {\displaystyle \pi ={\frac {4}{1}}-{\frac {4}{3}}+{\frac {4}{5}}-{\frac {4}{7}}+{\frac {4}{9}}-{\frac {4}{11}}+{\frac {4}{13}}-\cdots }
+  
+
+Como os termos desta série infinita são adicionados à soma, o total vai gradualmente se aproximando a π, e — com uma quantidade suficiente de números de termos — pode chegar tão perto de π quanto desejado. No entanto, ela converge lentamente — após 500 mil termos, ela produz apenas cinco dígitos decimais de π corretos.
+Uma série (publicada por Nilakantha no século XV) que converge mais rápido do que a série de Gregory–Leibniz é:
+
+  
+    
+      
+        π
+        =
+        3
+        +
+        
+          
+            4
+            
+              2
+              ×
+              3
+              ×
+              4
+            
+          
+        
+        −
+        
+          
+            4
+            
+              4
+              ×
+              5
+              ×
+              6
+            
+          
+        
+        +
+        
+          
+            4
+            
+              6
+              ×
+              7
+              ×
+              8
+            
+          
+        
+        −
+        
+          
+            4
+            
+              8
+              ×
+              9
+              ×
+              10
+            
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \pi =3+{\frac {4}{2\times 3\times 4}}-{\frac {4}{4\times 5\times 6}}+{\frac {4}{6\times 7\times 8}}-{\frac {4}{8\times 9\times 10}}+\cdots }
+  
+
+A seguinte tabela compara as taxas de convergência dessas duas séries:
+
+Após cinco termos, a soma da série de Gregory-Leibniz está dentro de 0,2 do valor correto de π, enquanto a soma da série de Nilakantha está dentro de 0,002 do valor correto. A série de Nilakantha converge mais rápido e é mais útil para calcular dígitos de π. Séries que convergem ainda mais rapidamente incluem a série de Machin e a série de Chudnovsky, sendo que a segunda produz 14 dígitos decimais por termo.
+
+
+=== Irracionalidade e transcendência ===
+
+Nem todos os avanços relacionados a π tinham como objetivo aumentar a precisão das aproximações. Quando Euler resolveu o problema de Basileia em 1735, encontrar o valor exato da soma dos inversos dos quadrados, ele estabeleceu uma conexão entre π e os números primos que posteriormente contribuiu para o desenvolvimento e estudo da função zeta de Riemann:
+
+  
+    
+      
+        
+          
+            
+              π
+              
+                2
+              
+            
+            6
+          
+        
+        =
+        
+          
+            1
+            
+              1
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              2
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              3
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              4
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle {\frac {\pi ^{2}}{6}}={\frac {1}{1^{2}}}+{\frac {1}{2^{2}}}+{\frac {1}{3^{2}}}+{\frac {1}{4^{2}}}+\cdots }
+  
+
+O cientista suíço Johann Heinrich Lambert provou em 1768 que π é irracional, o que significa que não é igual a nenhuma razão entre dois inteiros. A prova de Lambert explorou uma representação em fração contínua da função tangente. O matemático francês Adrien-Marie Legendre provou em 1794 que π2 também é irracional. Em 1882, o matemático alemão Ferdinand von Lindemann provou que π é transcendente, confirmando a conjectura feita por Legendre e Euler. Posteriormente, Hilbert, Hurwitz e outros autores modificaram e simplificaram as provas.
+
+
+=== Adoção do símbolo π ===
+
+Nas primeiras utilizações, a letra grega π era usada para denotar o semiperímetro (semiperipheria em latim) de uma circunferência e era combinada numa razão com δ (para diâmetro ou semidiâmetro) ou ρ (para raio) para formar as constantes da circunferência. (Até então, matemáticos utilizavam às vezes letras como c ou p.) A primeira utilização registrada é "δ.π" de Oughtred, para expressar a razão do perímetro e o diâmetro nas edições de 1647 e posteriores de Clavis Mathematicae. Semelhantemente, Barrow utilizou "
+  
+    
+      
+        
+          
+            π
+            δ
+          
+        
+      
+    
+    {\textstyle {\frac {\pi }{\delta }}}
+  
+" para representar a constante 3,14..., enquanto que Gregory utilizou "
+  
+    
+      
+        
+          
+            π
+            ρ
+          
+        
+      
+    
+    {\textstyle {\frac {\pi }{\rho }}}
+  
+" para representar 6,28...
+O primeiro uso da letra grega π sozinha para representar a razão do comprimento de uma circunferência ao seu diâmetro foi pelo matemático galês William Jones em sua obra de 1706 Synopsis palmariorum matheseos. A letra grega aparece na frase " 12 Periphery (π)" na página 243, calculado para uma circunferência de raio um. No entanto, Jones escreve que suas equações para π são "do verdadeiramente engenhoso Sr. John Machin", levando à especulação de que Machin pode ter empregado a letra grega antes de Jones. A notação de Jones não foi imediatamente adotada pelos outros matemáticos, com a fração ainda sendo utilizada até 1767.
+Euler começou a usar uma única letra para a constante a partir do ensaio de 1727 Tentamen explicationis phaenomenorum aeris, por mais que ele utilizou π = 6,28..., a razão do perímetro pelo raio, neste e em algumas escritas posteriores.   Euler usou π = 3,14... pela primeira vez em sua obra de 1736 Mechanica,, e continuou em sua obra amplamente lida de 1748 Introductio in analysin infinitorum (ele escreveu: "por uma questão de brevidade, escreveremos esse número como π; assim, π é igual à metade do comprimento de uma circunferência de raio 1"). Como Euler se correspondia fortemente com outros matemáticos na Europa, o uso da letra grega se espalhou rapidamente, e a prática foi universalmente adotada posteriormente no mundo ocidental, embora a definição ainda variasse entre 3,14... e 6,28... até 1761.
+
+
+== Busca moderna por mais dígitos ==
+
+
+=== Era da computação e algoritmos iterativos ===
+
+O desenvolvimento de computadores na metade do século XX revolucionou novamente a busca por dígitos de π. Os matemáticos John Wrench e Levi Smith alcançaram 1 120 dígitos em 1949 usando uma calculadora de mesa. Usando uma série infinita de arco tangente (arctg), uma equipe liderada por George Reitwiesner e John von Neumann atingiram 2 037 dígitos no mesmo ano com um cálculo que levou 70 horas de tempo de computação no computador ENIAC. O recorde, sempre baseado em uma série de arco tangente, foi quebrado repetidamente (3 089 dígitos em 1955, 7 480 dígitos em 1957; 10 mil dígitos em 1958; 100 mil dígitos em 1961) até que um milhão de dígitos fossem atingidos em 1973.
+Dois desenvolvimentos adicionais por volta de 1980 mais uma vez aceleraram a habilidade de computar π. A primeira foi a descoberta de novos métodos iterativos para computar π, que eram muito mais rápidos que séries infinitas; a segunda é a invenção de algoritmos de multiplicação rápidos que poderiam rapidamente calcular grandes números. Tais algoritmos são particularmente importantes nas computações modernas de π, pois a maioria do tempo dos computadores são voltados à multiplicação. Esses algoritmos incluem o de Karatsuba, multiplicação de Toom–Cook, e métodos baseados na transformada rápida de Fourier.
+Os algoritmos iterativos foram publicados de forma independente em 1975–1976 pelo físico Eugene Salamin e o cientista Richard Brent. Isso evita a dependência de séries infinitas. Um algoritmo iterativo repete um cálculo específico, cada iteração usando as saídas das etapas anteriores como entradas, e produz um resultado em cada etapa que converge para o valor desejado. Esta abordagem foi na realidade inventada mais de 160 anos antes, por Carl Friedrich Gauss, no qual agora é denominado o método da média aritmética-geométrica ou algoritmo de Gauss-Legendre. Conforme foi modificado por Salamin e Brent, também é conhecido como algoritmo Brent-Salamin.
+Após 1980 os algoritmos iterativos foram amplamente utilizados, porque eram mais rápidos que os algoritmos por séries infinitas: enquanto uma série infinita tipicamente aumentam o número de dígitos corretos aditivamente em termos sucessivos, os algoritmos iterativos geralmente multiplicam o número de dígitos corretos em cada etapa. Por exemplo, o algoritmo Brent–Salamin dobra o número de dígitos a cada iteração. Em 1984, os irmãos John e Peter Borwein produziram um algoritmo iterativo que quadruplicava o número de dígitos a cada passo; e em 1987 um que aumentava o número de dígitos cinco vezes em cada passo. Métodos iterativos foram utilizados pelo matemático japonês Yasumasa Kanada para registrar diversos recordes de dígitos de π computados entre 1995 e 2002. A rápida convergência vem com um preço a ser pago: os algoritmos iterativos requerem significantemente mais memória que séries infinitas.
+
+
+=== Motivos para computar π ===
+
+Para a maioria dos cálculos numéricos envolvendo π, apenas alguns dígitos fornecem precisão suficiente. Conforme Jörg Arndt e Christoph Haenel, 39 dígitos são os suficientes para realizar a maioria dos cálculos cosmológicos, pois esta é a precisão necessária para calcular o volume do universo observável com a precisão de um átomo. Contabilizando dígitos adicionais necessários para compensar erro de arredondamento computacional, Arndt conclui que umas poucas centenas de dígitos de π seriam suficientes para qualquer aplicação científica. Embora o especialista da NASA Marc Rayman esclareça que, para as aplicações nos cálculos aeroespaciais da agência norte-americana, sejam usados 15 dígitos nas casas decimais, o que dá uma precisão estimada na circunferência atingida pela sonda Voyager I (48 bilhões de quilômetros arredondados, em 2022) com margem de erro na largura de um dedo mínimo. Apesar disso, pessoas trabalharam vigorosamente para computar milhares e milhões de dígitos. Este esforço pode ser parcialmente atribuído à compulsão humana de quebrar recordes e tais conquistas com π costumam ser manchetes em todo o mundo. Também há benefícios práticos, como testar supercomputadores, testar algoritmos de análise numérica (incluindo algoritmos de multiplicação de alta precisão); e na própria matemática pura, prover dados para analisar a aleatoriedade dos dígitos de π.
+
+
+=== Séries de rápida convergência ===
+
+Calculadoras modernas de π não usam exclusivamente algoritmos iterativos. Novas séries infinitas foram descobertas nas décadas de 1980 e 1990 que eram tão rápidas quanto algoritmos iterativos, porém mais simples e utilizando menos memória. Os algoritmos iterativos rápidos foram antecipados em 1914, quando o matemático indiano Srinivāsa Rāmānujan publicou dezenas de novas fórmulas inovadoras para π, notável pela sua elegância, profundidade matemática e rápida convergência. Uma de suas fórmulas, baseada nas equações modulares, é
+
+  
+    
+      
+        
+          
+            1
+            π
+          
+        
+        =
+        
+          
+            
+              2
+              
+                
+                  2
+                
+              
+            
+            9801
+          
+        
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              4
+              k
+              )
+              !
+              (
+              1103
+              +
+              26390
+              k
+              )
+            
+            
+              k
+              
+                !
+                
+                  4
+                
+              
+              
+                (
+                
+                  396
+                  
+                    4
+                    k
+                  
+                
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{\pi }}={\frac {2{\sqrt {2}}}{9801}}\sum _{k=0}^{\infty }{\frac {(4k)!(1103+26390k)}{k!^{4}\left(396^{4k}\right)}}.}
+  
+
+Essa série converge muito mais rápido que a maioria das séries de arco tangente, incluindo a fórmula de Machin. Bill Gosper foi o primeiro a usá-la para avançar no cálculo de π, conseguindo um recorde de 17 milhões de dígitos em 1985. A fórmula de Ramanujan antecipou os algoritmos modernos desenvolvidos pelos irmãos Borwein (Jonathan e Peter) e os irmãos Chudnovsky [en]. A fórmula de Chudnovsky desenvolvida em 1987 é
+
+  
+    
+      
+        
+          
+            1
+            π
+          
+        
+        =
+        
+          
+            
+              10005
+            
+            4270934400
+          
+        
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              6
+              k
+              )
+              !
+              (
+              13591409
+              +
+              545140134
+              k
+              )
+            
+            
+              (
+              3
+              k
+              )
+              !
+              
+              k
+              
+                !
+                
+                  3
+                
+              
+              (
+              −
+              640320
+              
+                )
+                
+                  3
+                  k
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{\pi }}={\frac {\sqrt {10005}}{4270934400}}\sum _{k=0}^{\infty }{\frac {(6k)!(13591409+545140134k)}{(3k)!\,k!^{3}(-640320)^{3k}}}.}
+  
+
+Ela produz aproximadamente 14 dígitos de π por termo e tem sido usada para estabelecer diversos recordes de cálculo de π, incluindo o primeiro a bater um bilhão (109) de dígitos em 1989 pelos irmãos Chudnovsky, 10 trilhões (1013) de dígitos em 2011 por Alexander Yee e Shigeru Kondo, e 100 trilhões de dígitos por Emma Haruka Iwao em 2022. Para fórmulas similares, veja séries de Ramanujan–Sato.
+Em 2006, o matemático Simon Plouffe usou o algoritmo PSLQ de relação de inteiros para gerar diversas novas fórmulas para π, conforme a seguinte predefinição:
+
+  
+    
+      
+        
+          π
+          
+            k
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              n
+              
+                k
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                a
+                
+                  
+                    q
+                    
+                      n
+                    
+                  
+                  −
+                  1
+                
+              
+            
+            +
+            
+              
+                b
+                
+                  
+                    q
+                    
+                      2
+                      n
+                    
+                  
+                  −
+                  1
+                
+              
+            
+            +
+            
+              
+                c
+                
+                  
+                    q
+                    
+                      4
+                      n
+                    
+                  
+                  −
+                  1
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \pi ^{k}=\sum _{n=1}^{\infty }{\frac {1}{n^{k}}}\left({\frac {a}{q^{n}-1}}+{\frac {b}{q^{2n}-1}}+{\frac {c}{q^{4n}-1}}\right),}
+  
+
+onde q é eπ (constante de Gelfond), k é um número ímpar e a, b, c são certos números racionais que Plouffle computou.
+
+
+=== Métodos de Monte Carlo ===
+
+Métodos de Monte Carlo, que avaliam os resultados de vários ensaios aleatórios, podem ser utilizados para criar uma aproximação de π. A Agulha de Buffon é uma dessas técnicas: se uma agulha de comprimento ℓ é largada n vezes numa superfície na qual possui retas paralelas desenhadas separadas por t unidades de comprimento, e se x é a quantidade de vezes que a agulha fica sobre a retas (x > 0), então pode-se aproximar π com base nas contagens:
+
+  
+    
+      
+        π
+        ≈
+        
+          
+            
+              2
+              n
+              ℓ
+            
+            
+              x
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \pi \approx {\frac {2n\ell }{xt}}.}
+  
+
+Outro método de Monte Carlo para calcular π é desenhar uma circunferência inscrita num quadrado, e aleatoriamente colocar pontos no quadrado. A razão de pontos na região interna da circunferência é aproximadamente igual a π/4.
+
+Utilizando probabilidade, também é possível calcular π começando com um passeio aleatório, gerado por uma sequência de cara ou coroa (justo): variáveis aleatórias independente Xk tais que Xk ∈ {−1,1} com mesmas probabilidades. O passeio aleatório associado é
+
+  
+    
+      
+        
+          W
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          X
+          
+            k
+          
+        
+      
+    
+    {\displaystyle W_{n}=\sum _{k=1}^{n}X_{k}}
+  
+
+tal que, para cada n, Wn é extraído de uma distribuição binomial deslocada e escalonada. Conforme n varia, Wn define um processo estocástico (discreto). Então π pode ser calculado por
+
+  
+    
+      
+        π
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          
+            
+              2
+              n
+            
+            
+              E
+              [
+              
+                |
+              
+              
+                W
+                
+                  n
+                
+              
+              
+                |
+              
+              
+                ]
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \pi =\lim _{n\to \infty }{\frac {2n}{E[|W_{n}|]^{2}}}.}
+  
+
+Este método de Monte Carlo é independente de qualquer relação com circunferências, a sendo uma consequência do teorema central do limite, discutido em § Integral Gaussiana.
+Estes métodos de Monte Carlo para aproximar π são bastante lentos comparado aos outros métodos, e não fornecem nenhuma informação sobre o número exato de dígitos obtidos. Portanto, eles nunca são utilizados para aproximar π quando velocidade ou precisão é desejado.
+
+
+=== Algoritmos de extração de dígitos ===
+Dois algoritmos foram descobertos em 1995 que abriram novos caminhos de pesquisa do π. Eles são chamados de algoritmos de extração de dígitos [en], também conhecido como spigot algorithms (lit.  "algoritmo de torneira"), que assim como a água gotejando de uma torneira, eles produzem dígitos individuais de π que não são reutilizados após serem calculados.  Esse método é um contraste em comparação às séries infinitas ou algoritmos iterativos, que retêm e utiliza todos os dígitos intermediários até o resultado final ser produzido.
+Os matemáticos Stan Wagon e Stanley Rabinowitz produziram um algoritmo de extração de dígitos simples em 1995. A sua velocidade é comparável aos algoritmos de arco tangente, mas não é tão rápido quanto algoritmos iterativos.
+Outro algoritmo é a fórmula BBP, descoberta em 1995 por Simon Plouffe:
+
+  
+    
+      
+        π
+        =
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              16
+              
+                k
+              
+            
+          
+        
+        
+          (
+          
+            
+              
+                4
+                
+                  8
+                  k
+                  +
+                  1
+                
+              
+            
+            −
+            
+              
+                2
+                
+                  8
+                  k
+                  +
+                  4
+                
+              
+            
+            −
+            
+              
+                1
+                
+                  8
+                  k
+                  +
+                  5
+                
+              
+            
+            −
+            
+              
+                1
+                
+                  8
+                  k
+                  +
+                  6
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \pi =\sum _{k=0}^{\infty }{\frac {1}{16^{k}}}\left({\frac {4}{8k+1}}-{\frac {2}{8k+4}}-{\frac {1}{8k+5}}-{\frac {1}{8k+6}}\right).}
+  
+
+Esta fórmula, diferente das anteriores, consegue produzir qualquer dígito hexadecimal de π sem ter que calcular os dígitos anteriores. Dígitos binários individuais podem ser extraídos de dígitos hexadecimais individuais e dígitos octais podem ser extraídos de um ou dois dígitos hexadecimais. Uma aplicação importante dos algoritmos de extração de dígitos é validar novas declarações recordes de computação de π: após um novo recorde ser reivindicado, o resultado decimal é convertido em hexadecimal e, em seguida, um algoritmo de extração de dígitos é usado para calcular vários dígitos hexadecimais selecionados aleatoriamente perto do final; se corresponderem, isso fornece uma medida de confiança de que todo o cálculo está correto.
+Entre 1998 e 2000, o projeto de processamento distribuído Pihex utilizou a fórmula de Bellard (uma modificação da fórmula BBP) para computar o quadrilionésimo (1015.º) bit de π, que acabou sendo zero. Em setembro de 2010, um empregado do Yahoo! utilizou o Hadoop da empresa em mil computadores da empresa durante um período de 23 dias para computar 256 bits de π no segundo quadrilionésimo (2×1015.º) bit, que também acabou sendo zero.
+Em 2022, Plouffle encontrou um algoritmo de base 10 para calcular dígitos de π.
+
+
+== Papel e caracterizações na matemática ==
+Pelo fato de π estar intimamente relacionado à circunferência, é encontrado em diversas fórmulas geométricas e trigonométricas, principalmente aquelas relacionadas a circunferências, esferas ou elipses. Outras áreas das ciências, como estatística, física, análise de Fourier e teoria dos números também incluem π em algumas fórmulas importantes.
+
+
+=== Geometria e trigonometria ===
+
+π aparece em fórmulas para áreas e volumes de figuras geométricas baseadas na circunferência, como  elipses, esferas, cones e toros. Abaixo estão algumas das fórmulas mais comuns que envolvem π.
+
+O comprimento de uma circunferência de raio r é 2πr.
+A área de um círculo de raio r é πr2.
+A área de uma elipse como o semieixo maior a e semieixo menor b é πab.
+O volume de uma esfera de raio r é 43πr3.
+A superfície de uma esfera de raio r é 4πr2.
+Algumas das fórmulas acima são casos especiais do volume de uma bola n-dimensional e a área da superfície é a área de seu contorno, a esfera (n − 1)-dimensional, dado em § Função gama e fórmula de Stirling.
+Além de circunferências, existem curvas de largura constante. Pelo teorema de Barbier, toda curva de largura constante tem o perímetro de π vezes sua largura. O triângulo de Reuleaux (formado pela intersecção de três círculos com os lados de um triângulo equilátero como seus raios) tem a menor área possível para sua largura e a circunferência a maior. Existem também curvas suaves e até mesmo algébricas não circulares de largura constante.
+Integrais definidas que descrevem o comprimento, área e volume de formas geradas por circunferências tipicamente possuem valores que envolvem π. Por exemplo, uma integral que especifica metade da área de um círculo de raio um é dada por:
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            1
+          
+          
+            1
+          
+        
+        
+          
+            1
+            −
+            
+              x
+              
+                2
+              
+            
+          
+        
+        
+        d
+        x
+        =
+        
+          
+            π
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \int _{-1}^{1}{\sqrt {1-x^{2}}}\,dx={\frac {\pi }{2}}.}
+  
+
+Nessa integral, a função 
+  
+    
+      
+        
+          
+            1
+            −
+            
+              x
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {1-x^{2}}}}
+  
+ representa a altura sobre o eixo x de uma semicírculo (a raiz quadrada é uma consequência do teorema de Pitágoras), e a integral computa a área abaixo do semicírculo.
+
+
+=== Unidades de ângulo ===
+
+As funções trigonométricas dependem dos ângulos, e matemáticos geralmente utilizam radianos como unidade de medida. π tem um papel importante nos ângulos medidos em radianos, o qual é definido que um círculo completo abrange o ângulo de 2π radianos. O ângulo de medida 180° é igual a π, e 1° = π/180 radianos.
+Funções trigonométricas comuns possuem períodos múltiplos de π; por exemplo, o período das funções seno e cosseno é 2π, então para qualquer ângulo θ e qualquer inteiro k,
+
+  
+    
+      
+        sen
+        ⁡
+        θ
+        =
+        sen
+        ⁡
+        
+          (
+          
+            θ
+            +
+            2
+            π
+            k
+          
+          )
+        
+        
+           e 
+        
+        cos
+        ⁡
+        θ
+        =
+        cos
+        ⁡
+        
+          (
+          
+            θ
+            +
+            2
+            π
+            k
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \operatorname {sen} \theta =\operatorname {sen} \left(\theta +2\pi k\right){\text{ e }}\cos \theta =\cos \left(\theta +2\pi k\right).}
+  
+
+
+=== Autovalores ===
+
+Várias das aparições de π nas fórmulas matemáticas e das ciências é devido sua relação íntima com a geometria. No entanto, π também aparece em situações naturais que aparentemente não possuem nenhuma relação com a geometria.
+Em diversas aplicações, ele possui um papel distinto como um autovalor. Por exemplo, uma corda vibrando pode ser modelada como o gráfico de uma função f no intervalo unitário [0, 1], com os extremos fixos f(0) = f(1) = 0. Os modos de vibração da corda são soluções da equação diferencial 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+        +
+        λ
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f''(x)+\lambda f(x)=0}
+  
+, ou 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        t
+        )
+        =
+        −
+        λ
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f''(t)=-\lambda f(x)}
+  
+. Portanto, λ é um autovalor da segunda derivada do operador 
+  
+    
+      
+        f
+        ↦
+        
+          f
+          ″
+        
+      
+    
+    {\displaystyle f\mapsto f''}
+  
+, e é restrito a apenas alguns certos valores pela teoria de Sturm-Liouville. Ele deve ser positivo, já que o operador é negativa definida, então é conveniente escrever que λ = ν2, onde ν > 0 é chamado de número de onda. Então f(x) = sen(π x) satisfaz as condições da fronteira e a equação diferencial com ν = π.
+O valor π é, de fato, o menor valor de número de onda, sendo associado com o modo fundamental de vibração da corda. Uma maneira de demonstrar isso é estimando a energia, que satisfaz a inequação de Wirtinger: para uma função  
+  
+    
+      
+        f
+        :
+        [
+        0
+        ,
+        1
+        ]
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle f:[0,1]\to \mathbb {C} }
+  
+ com f(0) = f(1) = 0 e f, f′ ambas quadrado integráveis, temos:
+
+  
+    
+      
+        
+          π
+          
+            2
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            1
+          
+        
+        
+          |
+        
+        f
+        (
+        x
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        
+        d
+        x
+        ≤
+        
+          ∫
+          
+            0
+          
+          
+            1
+          
+        
+        
+          |
+        
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        
+        d
+        x
+        ,
+      
+    
+    {\displaystyle \pi ^{2}\int _{0}^{1}|f(x)|^{2}\,dx\leq \int _{0}^{1}|f'(x)|^{2}\,dx,}
+  
+
+com igualdade precisamente quando f é um múltiplo de sen(π x). Aqui π aparece como uma constante ótima na inequação de Wirtinger, e segue que é o menor valor de onda, usando o teorema minimax do autovalor. Como uma consequência, π é o menor valor singular do operador diferencial no espaço da função em [0, 1] sumindo em abas as extremidades (o espaço de Sobolev 
+  
+    
+      
+        
+          H
+          
+            0
+          
+          
+            1
+          
+        
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle H_{0}^{1}[0,1]}
+  
+).
+
+
+=== Desigualdades ===
+
+A serventia do número π que aparece nos problemas de autovalores ocorre semelhantemente na análise de dimensões superiores. Como mencionado em § Definição, ele pode ser definido pelo seu papel de melhor constante na desigualdade isoperimétrica: A área A envolvida por uma curva de Jordan plana de perímetro P satisfaz a desigualdade
+
+  
+    
+      
+        4
+        π
+        A
+        ≤
+        
+          P
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle 4\pi A\leq P^{2},}
+  
+
+e a igualdade é claramente atingida pela circunferência, visto que neste caso A = πr2 e P = 2πr.
+Em última análise, como consequência da desigualdade isoperimétrica, π aparece como a constante ótima para a desigualdade de Sobolev crítica em n dimensões, que também caracteriza o papel de π em diversos fenômenos físicos, como, por exemplo, aquelas da teoria do potencial clássica. Em duas dimensões, a desigualdade de Sobolev crítica é
+
+  
+    
+      
+        2
+        π
+        ‖
+        f
+        
+          ‖
+          
+            2
+          
+        
+        ≤
+        ‖
+        ∇
+        f
+        
+          ‖
+          
+            1
+          
+        
+      
+    
+    {\displaystyle 2\pi \|f\|_{2}\leq \|\nabla f\|_{1}}
+  
+
+para uma função suave f com o suporte compacto em R2, 
+  
+    
+      
+        ∇
+        f
+      
+    
+    {\displaystyle \nabla f}
+  
+ é o gradiente de f, e 
+  
+    
+      
+        ‖
+        f
+        
+          ‖
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \|f\|_{2}}
+  
+ e 
+  
+    
+      
+        ‖
+        ∇
+        f
+        
+          ‖
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \|\nabla f\|_{1}}
+  
+ referem-se respectivamente à norma L2 e L1. A desigualdade de Sobolev é equivalente à desigualdade isoperimétrica (em qualquer dimensão), com as mesmas constantes ótimas.
+A desigualdade de Wirtinger também generaliza a desigualdade de Poincaré para dimensões superiores que fornecem constantes ótimas para a energia de Dirichlet de uma membrana n-dimensional. Especificamente, π é a maior constante tal que
+
+  
+    
+      
+        π
+        ≤
+        
+          
+            
+              
+                (
+                
+                  
+                    ∫
+                    
+                      G
+                    
+                  
+                  
+                    |
+                  
+                  ∇
+                  u
+                  
+                    
+                      |
+                    
+                    
+                      2
+                    
+                  
+                
+                )
+              
+              
+                1
+                
+                  /
+                
+                2
+              
+            
+            
+              
+                (
+                
+                  
+                    ∫
+                    
+                      G
+                    
+                  
+                  
+                    |
+                  
+                  u
+                  
+                    
+                      |
+                    
+                    
+                      2
+                    
+                  
+                
+                )
+              
+              
+                1
+                
+                  /
+                
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \pi \leq {\frac {\left(\int _{G}|\nabla u|^{2}\right)^{1/2}}{\left(\int _{G}|u|^{2}\right)^{1/2}}}}
+  
+
+para todo subconjunto convexo G de Rn de diâmetro 1, e funções quadrado integráveis u em G de média zero. Bem como a desigualdade de Wirtinger é a forma variacional do problema do autovalor de Dirichlet em uma dimensão, a desigualdade de Poincaré é a forma variacional do problema do autovalor de Neumann em qualquer dimensão.
+
+
+=== Transformada de Fourier e princípio da incerteza de Heisenberg ===
+
+A constante π também aparece como um parâmetro espectral crítico na transformada de Fourier. Esta é a transformada integral que pega uma função integrável de valores complexos f na reta real para a função definida como:
+
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        ξ
+        )
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        f
+        (
+        x
+        )
+        
+          e
+          
+            −
+            2
+            π
+            i
+            x
+            ξ
+          
+        
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle {\hat {f}}(\xi )=\int _{-\infty }^{\infty }f(x)e^{-2\pi ix\xi }\,dx.}
+  
+
+Por mais que haja várias convenções para a transformada de Fourier e sua inversa, qualquer convenção deve envolver π em algum lugar. A operação em L2 que também é um homomorfismo de L1 para L∞.
+O princípio da incerteza de Heisenberg também contém o número π. o princípio da incerteza fornece um limite inferior nítido sobre até que ponto é possível localizar uma função tanto no espaço quanto na frequência: com nossas convenções para a transformada de Fourier,
+
+  
+    
+      
+        
+          (
+          
+            
+              ∫
+              
+                −
+                ∞
+              
+              
+                ∞
+              
+            
+            
+              x
+              
+                2
+              
+            
+            
+              |
+            
+            f
+            (
+            x
+            )
+            
+              
+                |
+              
+              
+                2
+              
+            
+            
+            d
+            x
+          
+          )
+        
+        
+          (
+          
+            
+              ∫
+              
+                −
+                ∞
+              
+              
+                ∞
+              
+            
+            
+              ξ
+              
+                2
+              
+            
+            
+              |
+            
+            
+              
+                
+                  f
+                  ^
+                
+              
+            
+            (
+            ξ
+            )
+            
+              
+                |
+              
+              
+                2
+              
+            
+            
+            d
+            ξ
+          
+          )
+        
+        ≥
+        
+          
+            (
+            
+              
+                
+                  1
+                  
+                    4
+                    π
+                  
+                
+              
+              
+                ∫
+                
+                  −
+                  ∞
+                
+                
+                  ∞
+                
+              
+              
+                |
+              
+              f
+              (
+              x
+              )
+              
+                
+                  |
+                
+                
+                  2
+                
+              
+              
+              d
+              x
+            
+            )
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \left(\int _{-\infty }^{\infty }x^{2}|f(x)|^{2}\,dx\right)\left(\int _{-\infty }^{\infty }\xi ^{2}|{\hat {f}}(\xi )|^{2}\,d\xi \right)\geq \left({\frac {1}{4\pi }}\int _{-\infty }^{\infty }|f(x)|^{2}\,dx\right)^{2}.}
+  
+
+A consequência física, sobre a incerteza simultânea na observação da posição e do momento de um sistema da mecânica quântica, é discutida em § Descrever fenômenos físicos. A aparição de π nas fórmulas da análise de Fourier é uma consequência do teorema de Stone–von Neumann, afirmando a unicidade da representação de Schrödinger do grupo de Heisenberg.
+
+
+=== Integral Gaussiana ===
+
+Os campos da probabilidade e estatística frequente usam a distribuição normal como um modelo simples para fenômenos complexos; por exemplo, cientistas geralmente assumem que o erro observacional na maioria dos experimentos seguem uma distribuição normal. A função de Gauss, a qual é a função densidade de probabilidade da distribuição normal com média μ e desvio padrão σ, contém π:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              σ
+              
+                
+                  2
+                  π
+                
+              
+            
+          
+        
+        
+        
+          e
+          
+            −
+            (
+            x
+            −
+            μ
+            
+              )
+              
+                2
+              
+            
+            
+              /
+            
+            (
+            2
+            
+              σ
+              
+                2
+              
+            
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)={1 \over \sigma {\sqrt {2\pi }}}\,e^{-(x-\mu )^{2}/(2\sigma ^{2})}.}
+  
+
+O fator de 
+  
+    
+      
+        
+          
+            
+              1
+              
+                2
+                π
+              
+            
+          
+        
+      
+    
+    {\textstyle {\tfrac {1}{\sqrt {2\pi }}}}
+  
+ faz com que a área sob o gráfico de f seja igual a um, como um requisito para a distribuição de probabilidade. Isto segue de uma mudança de variável da integral Gaussiana
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          e
+          
+            −
+            
+              u
+              
+                2
+              
+            
+          
+        
+        
+        d
+        u
+        =
+        
+          
+            π
+          
+        
+        ,
+      
+    
+    {\displaystyle \int _{-\infty }^{\infty }e^{-u^{2}}\,du={\sqrt {\pi }},}
+  
+
+que diz que uma curva em forma de sino básica, como na figura, é igual à raiz quadrada de π.
+O teorema central do limite explica o papel central das distribuições normais, e, portanto, de π, na probabilidade e na estatística. O teorema está, em última análise, conectado com a caracterização espectral de π como o autovalor associado ao princípio da incerteza de Heisenberg, e com o fato de que a igualdade é válida no princípio da incerteza apenas para a função gaussiana. Equivalente, π é a única constante que faz a distribuição normal gaussiana e−πx2 igual à sua própria transformada de Fourier. De fato, conforme Howe, "todo o negócio" de estabelecer os teoremas fundamentais da análise de Fourier reduz-se à integral gaussiana.
+
+
+=== Topologia ===
+
+A constante π aparece na fórmula de Gauss–Bonnet, que relaciona a geometria diferencial de superfícies à sua topologia. Especificamente, se uma superfície compacta Σ tem curvatura gaussiana K, então
+
+  
+    
+      
+        
+          ∫
+          
+            Σ
+          
+        
+        K
+        
+        d
+        A
+        =
+        2
+        π
+        χ
+        (
+        Σ
+        )
+      
+    
+    {\displaystyle \int _{\Sigma }K\,dA=2\pi \chi (\Sigma )}
+  
+
+onde χ(Σ) é a característica de Euler, na qual é um inteiro. Um exemplo é a área da superfície de uma esfera S de curvatura 1 (então seu raio de curvatura, no qual coincide com seu raio, também é 1). A característica de Euler de uma esfera pode ser computada de seus grupos de homologia e encontra-se que é igual a dois. Portanto, temos
+
+  
+    
+      
+        A
+        (
+        S
+        )
+        =
+        
+          ∫
+          
+            S
+          
+        
+        1
+        
+        d
+        A
+        =
+        2
+        π
+        ⋅
+        2
+        =
+        4
+        π
+      
+    
+    {\displaystyle A(S)=\int _{S}1\,dA=2\pi \cdot 2=4\pi }
+  
+
+reproduzindo a fórmula para a área da superfície de uma esfera de raio 1.
+A constante aparece em várias outras fórmulas de integral na topologia, em particular, aquelas envolvendo classes características pelo homomorfismo de Chern–Weil.
+
+
+=== Fórmula integral de Cauchy ===
+
+Uma das ferramentas-chave na análise complexa é a integral de contorno de uma função sobre uma curva de Jordan retificável C. Uma forma da fórmula integral de Cauchy afirma que se um ponto z0 está no interior de C, então
+
+  
+    
+      
+        
+          ∮
+          
+            C
+          
+        
+        
+          
+            
+              d
+              z
+            
+            
+              z
+              −
+              
+                z
+                
+                  0
+                
+              
+            
+          
+        
+        =
+        2
+        π
+        i
+        .
+      
+    
+    {\displaystyle \oint _{C}{\frac {dz}{z-z_{0}}}=2\pi i.}
+  
+
+Apesar da curva C não ser uma circunferência, e, portanto, não tem uma óbvia conexão com π, uma prova usual deste resultado utiliza o teorema de Morera, que implica que a integral é uma invariante sob homotopia da curva, então pode ser deformada numa circunferência e então ser integrada explicitamente em coordenadas polares. De forma mais geral, é verdade que se uma curva retificável fechada C não contém z0, então a integral acima é 2πi multiplicado pelo índice da curva.
+A forma geral da integral de Cauchy estabelece a relação entre os valores de uma função holomórfica f(z) na curva de Jordan C e o valor de f(z) em qualquer ponto abaixo de z0 de C:
+
+  
+    
+      
+        
+          ∮
+          
+            γ
+          
+        
+        
+          
+            
+              f
+              (
+              z
+              )
+            
+            
+              z
+              −
+              
+                z
+                
+                  0
+                
+              
+            
+          
+        
+        
+        d
+        z
+        =
+        2
+        π
+        i
+        f
+        (
+        
+          z
+          
+            0
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle \oint _{\gamma }{f(z) \over z-z_{0}}\,dz=2\pi if(z_{0}),}
+  
+
+desde que f(z) seja analítico na região delimitada por C e se estenda continuamente até C.
+A fórmula integral de Cauchy é um caso especial do teorema dos resíduos, que se g(z) é uma função meromorfa da região delimitada por C e é contínua numa vizinhança de C, então
+
+  
+    
+      
+        
+          ∮
+          
+            C
+          
+        
+        g
+        (
+        z
+        )
+        
+        d
+        z
+        =
+        2
+        π
+        i
+        ∑
+        Res
+        ⁡
+        (
+        g
+        ,
+        
+          a
+          
+            k
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle \oint _{C}g(z)\,dz=2\pi i\sum \operatorname {Res} (g,a_{k}),}
+  
+
+onde Res(g, ak) é o resíduo de g no polo ak .
+
+
+=== Cálculo vetorial ===
+A constante π é onipresente no cálculo vetorial e na teoria do potencial, como, por exemplo, na lei de Coulomb, lei de Gauss, nas equações de Maxwell, e até mesmo nas equação de campo de Einstein. Provavelmente o exemplo mais simples é o potencial newtoniano de duas dimensões, representando o potencial de um ponto fonte na origem, cujo campo associado tem fluxo unitário para fora através de qualquer superfície fechada lisa e orientada que envolve a fonte:
+
+  
+    
+      
+        Φ
+        (
+        
+          x
+        
+        )
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        log
+        ⁡
+        
+          |
+        
+        
+          x
+        
+        
+          |
+        
+        .
+      
+    
+    {\displaystyle \Phi (\mathbf {x} )={\frac {1}{2\pi }}\log |\mathbf {x} |.}
+  
+
+O fator de 1/2π é necessário para assegurar que Φ é a solução fundamental da equação de Poisson em 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+:
+
+  
+    
+      
+        Δ
+        Φ
+        =
+        δ
+      
+    
+    {\displaystyle \Delta \Phi =\delta }
+  
+
+onde δ é o delta de Dirac.
+Em dimensões superiores, fatores de π são presentes devido à normalização pelo volume n-dimensional da n-esfera unitária. Em três dimensões, por exemplo, o potencial newtoniano é:
+
+  
+    
+      
+        Φ
+        (
+        
+          x
+        
+        )
+        =
+        −
+        
+          
+            1
+            
+              4
+              π
+              
+                |
+              
+              
+                x
+              
+              
+                |
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \Phi (\mathbf {x} )=-{\frac {1}{4\pi |\mathbf {x} |}},}
+  
+
+que possui o volume bidimensional (isto é, a área) da 2-esfera unitária no denominador.
+
+
+=== Função gama e fórmula de Stirling ===
+
+A função fatorial n! é o produto de todos os inteiros positivos de 1 a n. A função gama estende esse conceito de fatorial (usualmente definido apenas para os inteiros não negativos) para todos os números complexos, exceto pelos reais inteiros negativos, com a identidade 
+  
+    
+      
+        Γ
+        (
+        n
+        )
+        =
+        (
+        n
+        −
+        1
+        )
+        !
+      
+    
+    {\displaystyle \Gamma (n)=(n-1)!}
+  
+. Quando a função gama é avaliada na metade de dois inteiros, o resultado contém π. Por exemplo, 
+  
+    
+      
+        Γ
+        (
+        1
+        
+          /
+        
+        2
+        )
+        =
+        
+          
+            π
+          
+        
+      
+    
+    {\displaystyle \Gamma (1/2)={\sqrt {\pi }}}
+  
+ e 
+  
+    
+      
+        Γ
+        (
+        5
+        
+          /
+        
+        2
+        )
+        =
+        
+          
+            
+              3
+              
+                
+                  π
+                
+              
+            
+            4
+          
+        
+      
+    
+    {\textstyle \Gamma (5/2)={\frac {3{\sqrt {\pi }}}{4}}}
+  
+.
+A função gama é definida pelo seu desenvolvimento do produto de Weierstrass [en]:
+
+  
+    
+      
+        Γ
+        (
+        z
+        )
+        =
+        
+          
+            
+              e
+              
+                −
+                γ
+                z
+              
+            
+            z
+          
+        
+        
+          ∏
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              e
+              
+                z
+                
+                  /
+                
+                n
+              
+            
+            
+              1
+              +
+              z
+              
+                /
+              
+              n
+            
+          
+        
+        ω
+      
+    
+    {\displaystyle \Gamma (z)={\frac {e^{-\gamma z}}{z}}\prod _{n=1}^{\infty }{\frac {e^{z/n}}{1+z/n}}\omega }
+  
+
+onde γ é a constante de Euler-Mascheroni. Quando avaliada em z = 1/2 e elevada ao quadrado, a equação Γ(1/2)2 = π reduz à fórmula do produto de Wallis. A função gama também está conectada à função zeta de Riemann e identidades para o determinante funcional, no qual a constante π desempenha um papel importante.
+A função gama é utilizada para calcular o volume Vn(r) de uma bola n-dimensional de raio r no espaço euclidiano n-dimensional, e a área da superfície Sn−1(r) de seu contorno, a esfera (n − 1)-dimensional:
+
+  
+    
+      
+        
+          V
+          
+            n
+          
+        
+        (
+        r
+        )
+        =
+        
+          
+            
+              π
+              
+                n
+                
+                  /
+                
+                2
+              
+            
+            
+              Γ
+              
+                (
+                
+                  
+                    
+                      n
+                      2
+                    
+                  
+                  +
+                  1
+                
+                )
+              
+            
+          
+        
+        
+          r
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle V_{n}(r)={\frac {\pi ^{n/2}}{\Gamma \left({\frac {n}{2}}+1\right)}}r^{n},}
+  
+
+  
+    
+      
+        
+          S
+          
+            n
+            −
+            1
+          
+        
+        (
+        r
+        )
+        =
+        
+          
+            
+              n
+              
+                π
+                
+                  n
+                  
+                    /
+                  
+                  2
+                
+              
+            
+            
+              Γ
+              
+                (
+                
+                  
+                    
+                      n
+                      2
+                    
+                  
+                  +
+                  1
+                
+                )
+              
+            
+          
+        
+        
+          r
+          
+            n
+            −
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle S_{n-1}(r)={\frac {n\pi ^{n/2}}{\Gamma \left({\frac {n}{2}}+1\right)}}r^{n-1}.}
+  
+
+Além disso, segue da equação funcional que
+
+  
+    
+      
+        2
+        π
+        r
+        =
+        
+          
+            
+              
+                S
+                
+                  n
+                  +
+                  1
+                
+              
+              (
+              r
+              )
+            
+            
+              
+                V
+                
+                  n
+                
+              
+              (
+              r
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle 2\pi r={\frac {S_{n+1}(r)}{V_{n}(r)}}.}
+  
+
+A função gama pode ser utilizada para criar uma aproximação simples para a função fatorial n! para um n grande: 
+  
+    
+      
+        n
+        !
+        ∼
+        
+          
+            2
+            π
+            n
+          
+        
+        
+          
+            (
+            
+              
+                n
+                e
+              
+            
+            )
+          
+          
+            n
+          
+        
+      
+    
+    {\textstyle n!\sim {\sqrt {2\pi n}}\left({\frac {n}{e}}\right)^{n}}
+  
+, conhecida como aproximação de Stirling. Equivalentemente,
+
+  
+    
+      
+        π
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          
+            
+              
+                e
+                
+                  2
+                  n
+                
+              
+              n
+              
+                !
+                
+                  2
+                
+              
+            
+            
+              2
+              
+                n
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \pi =\lim _{n\to \infty }{\frac {e^{2n}n!^{2}}{2n^{2n+1}}}.}
+  
+
+Como uma aplicação geométrica da aproximação de Stirling, utilizando Δn para denotar o simplexo unitário em um espaço euclidiano n-dimensional, e (n + 1)Δn para denotar o simplexo com todos os seus lados multiplicados por n + 1. Então,
+
+  
+    
+      
+        Vol
+        ⁡
+        (
+        (
+        n
+        +
+        1
+        )
+        
+          Δ
+          
+            n
+          
+        
+        )
+        =
+        
+          
+            
+              (
+              n
+              +
+              1
+              
+                )
+                
+                  n
+                
+              
+            
+            
+              n
+              !
+            
+          
+        
+        ∼
+        
+          
+            
+              e
+              
+                n
+                +
+                1
+              
+            
+            
+              2
+              π
+              n
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {Vol} ((n+1)\Delta _{n})={\frac {(n+1)^{n}}{n!}}\sim {\frac {e^{n+1}}{\sqrt {2\pi n}}}.}
+  
+
+A conjectura de volume de Ehrhart é que este é o limite superior (ótimo) do volume de um corpo convexo que contém apenas um ponto de uma rede diagonal.
+
+
+=== Teoria dos números e função zeta de Riemann ===
+
+A função zeta de Riemann ζ(s) é utilizada em diversas áreas da matemática. Quando avaliada em s = 2, pode ser escrita como
+
+  
+    
+      
+        ζ
+        (
+        2
+        )
+        =
+        
+          
+            1
+            
+              1
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              2
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              3
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \zeta (2)={\frac {1}{1^{2}}}+{\frac {1}{2^{2}}}+{\frac {1}{3^{2}}}+\cdots }
+  
+
+Encontrar uma solução simples para esta série infinita era um problema famoso na matemática chamado de problema da Basiléia. Leonard Euler a resolveu em 1735, mostrando que era igual a π2/6. O resultado de Euler levou ao resultado da teoria dos números de que a probabilidade de dois números aleatórios serem primos entre si (ou seja, não terem fatores compartilhados) é igual a 6/π2. Esta possibilidade é baseada na observação de que a probabilidade de um número qualquer ser divisível por um primo p é 1/p (por exemplo, um a cada sete inteiros é divisível por sete.) Visto que a probabilidade de dois números serem divisíveis por p é 1/p2, e a probabilidade de pelo menos um deles não ser é 1 − 1/p2. Para primos distintos, esses eventos de divisibilidade são mutualmente independentes; então a probabilidade de que dois números serem relativamente primos entre si é dado pelo produto sobre todos os primos:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  ∏
+                  
+                    p
+                  
+                  
+                    ∞
+                  
+                
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      
+                        1
+                        
+                          p
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+              
+              
+                
+                =
+                
+                  
+                    (
+                    
+                      
+                        ∏
+                        
+                          p
+                        
+                        
+                          ∞
+                        
+                      
+                      
+                        
+                          1
+                          
+                            1
+                            −
+                            
+                              p
+                              
+                                −
+                                2
+                              
+                            
+                          
+                        
+                      
+                    
+                    )
+                  
+                  
+                    −
+                    1
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      1
+                      +
+                      
+                        
+                          1
+                          
+                            2
+                            
+                              2
+                            
+                          
+                        
+                      
+                      +
+                      
+                        
+                          1
+                          
+                            3
+                            
+                              2
+                            
+                          
+                        
+                      
+                      +
+                      ⋯
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      ζ
+                      (
+                      2
+                      )
+                    
+                  
+                
+                =
+                
+                  
+                    6
+                    
+                      π
+                      
+                        2
+                      
+                    
+                  
+                
+                ≈
+                61
+                %
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\prod _{p}^{\infty }\left(1-{\frac {1}{p^{2}}}\right)&=\left(\prod _{p}^{\infty }{\frac {1}{1-p^{-2}}}\right)^{-1}\\[4pt]&={\frac {1}{1+{\frac {1}{2^{2}}}+{\frac {1}{3^{2}}}+\cdots }}\\[4pt]&={\frac {1}{\zeta (2)}}={\frac {6}{\pi ^{2}}}\approx 61\%.\end{aligned}}}
+  
+
+Esta probabilidade pode ser utilizada em conjunto com um gerador de números aleatórios para aproximar π usando uma abordagem de Monte Carlo.
+A solução do problema de Basileia implica que a quantidade derivada geometricamente π está ligada profundamente à distribuição dos números primos. Este é um caso especial da conjetura de Weil sobre os números de Tamagawa [en], que afirma a igualdade de produtos infinitos semelhantes de quantidades aritméticas, localizadas em cada primo p, e uma quantidade geométrica: o inverso do volume de um certo espaço localmente simétrico. No caso do problema de Basileia, trata-se da 3-variedade hiperbólica SL2(R)/SL2(Z).
+A função zeta também satisfaz a equação funcional de Riemann, que também envolve tanto π quanto a função gama:
+
+  
+    
+      
+        ζ
+        (
+        s
+        )
+        =
+        
+          2
+          
+            s
+          
+        
+        
+          π
+          
+            s
+            −
+            1
+          
+        
+         
+        sen
+        ⁡
+        
+          (
+          
+            
+              
+                π
+                s
+              
+              2
+            
+          
+          )
+        
+         
+        Γ
+        (
+        1
+        −
+        s
+        )
+         
+        ζ
+        (
+        1
+        −
+        s
+        )
+        .
+      
+    
+    {\displaystyle \zeta (s)=2^{s}\pi ^{s-1}\ \operatorname {sen} \left({\frac {\pi s}{2}}\right)\ \Gamma (1-s)\ \zeta (1-s).}
+  
+
+Além disso, a derivada da função zeta satisfaz
+
+  
+    
+      
+        exp
+        ⁡
+        (
+        −
+        
+          ζ
+          ′
+        
+        (
+        0
+        )
+        )
+        =
+        
+          
+            2
+            π
+          
+        
+        .
+      
+    
+    {\displaystyle \exp(-\zeta '(0))={\sqrt {2\pi }}.}
+  
+
+Uma das consequências é que π pode ser obtido do determinante funcional do oscilador harmônico. Este determinante funcional pode ser computado pela expansão do produto, sendo equivalente à fórmula do produto de Wallis. O cálculo pode ser reformulado na mecânica quântica, especificamente a abordagem variacional do espectro do átomo de hidrogênio.
+
+
+=== Série de Fourier ===
+
+A constante π também aparece naturalmente nas séries de Fourier de funções periódicas. Funções periódicas são funções no grupo T = R/Z de partes fracionárias de números reais. A decomposição de Fourier mostra que funções complexas f em T podem ser escritas como superposição linear infinita de caracteres unitários de T. Isto é, homomorfismos de grupos contínuos de T para o grupo circular unitário U(1) de números complexos de módulo unitário. É um teorema que dada caráter de T é um dos expoentes complexos 
+  
+    
+      
+        
+          e
+          
+            n
+          
+        
+        (
+        x
+        )
+        =
+        
+          e
+          
+            2
+            π
+            i
+            n
+            x
+          
+        
+      
+    
+    {\displaystyle e_{n}(x)=e^{2\pi inx}}
+  
+.
+Há um único caráter em T, salvo pelo conjugado complexo, que é um isomorfismo de grupo. Utilizando a medida de Haar no grupo circular, a constante π é metade da magnitude da derivada de Randon–Nikodym deste caráter. Os outros caracteres têm derivadas cujas magnitudes são integrais positivas múltiplas de 2π. Como resultado, a constante π é o único número tal que o grupo T, junto com sua medida de Haar, é uma dualidade de Pontryagin na malha de integrais múltiplas de 2π. Esta é uma versão da fórmula do somatório de Poisson unidimensional.
+
+
+=== Formas modulares e funções teta ===
+A constante π está intimamente conectada com as formas modulares e funções teta. Por exemplo, o algoritmo de Chudnovsky envolve de forma essencial o j-invariante de uma curva elíptica.
+Formas modulares são funções holomorfas no semiplano superior caracterizado pelas suas propriedades de transformação sob o grupo modular 
+  
+    
+      
+        
+          
+            S
+            L
+          
+          
+            2
+          
+        
+        (
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle \mathrm {SL} _{2}(\mathbb {Z} )}
+  
+ (ou seus vários subgrupos), uma malha sob o grupo 
+  
+    
+      
+        
+          
+            S
+            L
+          
+          
+            2
+          
+        
+        (
+        
+          R
+        
+        )
+      
+    
+    {\displaystyle \mathrm {SL} _{2}(\mathbb {R} )}
+  
+. Um exemplo é a função teta de Jacobi
+
+  
+    
+      
+        θ
+        (
+        z
+        ,
+        τ
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          e
+          
+            2
+            π
+            i
+            n
+            z
+            +
+            i
+            π
+            
+              n
+              
+                2
+              
+            
+            τ
+          
+        
+      
+    
+    {\displaystyle \theta (z,\tau )=\sum _{n=-\infty }^{\infty }e^{2\pi inz+i\pi n^{2}\tau }}
+  
+
+que é um tipo de forma modular chamada forma de Jacobi. Às vezes é escrita em termos do nome 
+  
+    
+      
+        q
+        =
+        
+          e
+          
+            π
+            i
+            τ
+          
+        
+      
+    
+    {\displaystyle q=e^{\pi i\tau }}
+  
+.
+A constante π é o único valor que faz a função teta de Jacobi ser uma forma automórfica, que significa que ela transforma de uma maneira específica. Certas identidades valem para todas as formas automórficas. Um exemplo é
+
+  
+    
+      
+        θ
+        (
+        z
+        +
+        τ
+        ,
+        τ
+        )
+        =
+        
+          e
+          
+            −
+            π
+            i
+            τ
+            −
+            2
+            π
+            i
+            z
+          
+        
+        θ
+        (
+        z
+        ,
+        τ
+        )
+        ,
+      
+    
+    {\displaystyle \theta (z+\tau ,\tau )=e^{-\pi i\tau -2\pi iz}\theta (z,\tau ),}
+  
+
+que implica que θ transforma como uma representação sob o grupo de Heisenberg discreto. Formas modulares gerais e outras funções teta também envolvem π, novamente devido ao teorema de Stone–von Neumann.
+
+
+=== Distribuição de Cauchy e teoria do potencial ===
+
+A distribuição de Cauchy
+
+  
+    
+      
+        g
+        (
+        x
+        )
+        =
+        
+          
+            1
+            π
+          
+        
+        ⋅
+        
+          
+            1
+            
+              
+                x
+                
+                  2
+                
+              
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle g(x)={\frac {1}{\pi }}\cdot {\frac {1}{x^{2}+1}}}
+  
+
+é a função de densidade de probabilidade. A probabilidade total é igual a um, devido à integral:
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              
+                x
+                
+                  2
+                
+              
+              +
+              1
+            
+          
+        
+        
+        d
+        x
+        =
+        π
+        .
+      
+    
+    {\displaystyle \int _{-\infty }^{\infty }{\frac {1}{x^{2}+1}}\,dx=\pi .}
+  
+
+A entropia da distribuição de Cauchy é igual a ln(4π), também envolvendo π.
+A distribuição de Cauchy desempenha um papel importante na teoria do potencial, visto que é a medida de Furstenberg mais simples, o núcleo de Poisson clássico associado a um movimento browniano em um semiplano. As funções conjugadas harmônicas e também a transformada de Hilbert estão associadas à assintótica do núcleo de Poisson. A transformação de Hilbert H é a transformação integral dada pelo valor principal de Cauchy da integral singular
+
+  
+    
+      
+        H
+        f
+        (
+        t
+        )
+        =
+        
+          
+            1
+            π
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              )
+              
+              d
+              x
+            
+            
+              x
+              −
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle Hf(t)={\frac {1}{\pi }}\int _{-\infty }^{\infty }{\frac {f(x)\,dx}{x-t}}.}
+  
+
+A constante π é o único fator de normalização (positivo) tal que H define uma estrutura linear complexa no espaço de Hilbert de funções reais quadrado integráveis na reta real. A transformada de Hilbert, bem como a transformada de Fourier, pode ser caracterizada puramente em termos de suas propriedades de transformação no espaço de Hilbert L2(R): salvo por um fator de normalização, é o único operador linear limitado que comuta com dilatações positivas e anticomuta com todas as reflexões da reta real. A constante π é o único fator de normalização que faz esta transformação unitária.
+
+
+=== Conjunto de Mandelbrot ===
+
+Uma ocorrência de π no fractal chamado de conjunto de Mandelbrot foi descoberto por David Boll em 1991. Ele examinou o comportamento do conjunto próximo ao "pescoço" em (−0,75; 0). Quando o número de iterações até a divergência para o ponto (−0,75; ε) é multiplicado por ε, o resultado se aproxima de π à medida que ε se aproxima de zero. O ponto (0,25 + ε; 0) na cúspide do grande "vale" no lado direito do conjunto também se comporta de um modo similar: o número de iterações até que a divergência multiplicada pela raiz quadrada de ε tende a π.
+
+
+=== Geometria projetiva ===
+Seja V um conjunto de todas as funções reais duplamente diferenciáveis 
+  
+    
+      
+        f
+        :
+        
+          R
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f:\mathbb {R} \to \mathbb {R} }
+  
+ que satisfaçam a equação diferencial ordinária 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+        +
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f''(x)+f(x)=0}
+  
+, então V é um espaço vetorial real bidimensional, com dois parâmetros correspondentes a um par de condições iniciais para a equação diferencial. Para qualquer 
+  
+    
+      
+        t
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle t\in \mathbb {R} }
+  
+, sendo 
+  
+    
+      
+        
+          e
+          
+            t
+          
+        
+        :
+        V
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle e_{t}:V\to \mathbb {R} }
+  
+ o funcional de avaliação, que é associado para cada f ∈ V o valor et( f ) = f (t) da função f no ponto real t. Então, para cada t, o núcleo de et é um subespaço linear unidimensional de V. Como t ↦ N(et) define uma função de 
+  
+    
+      
+        
+          R
+        
+        →
+        
+          P
+        
+        (
+        V
+        )
+      
+    
+    {\displaystyle \mathbb {R} \to \mathbb {P} (V)}
+  
+ da reta real à reta projetiva real. Esta função é periódica, e a quantidade π pode ser caracterizada como o período dessa função. Este é um notável pelo fato de a constante π aparecer naturalmente nesse contexto, em vez de 2π.
+
+
+== Fora da matemática ==
+
+
+=== Descrever fenômenos físicos ===
+Apesar de não ser uma constante física, π aparece rotineiramente em equações descrevendo princípios fundamentais do universo, geralmente devido à relação de π com a circunferência e ao sistema esférico de coordenadas. Uma fórmula simples do campo da mecânica clássica dá o período T aproximado de um pêndulo simples de comprimento L, balançando com uma pequena amplitude (g é a aceleração gravitacional da Terra):
+
+  
+    
+      
+        T
+        ≈
+        2
+        π
+        
+          
+            
+              L
+              g
+            
+          
+        
+        .
+      
+    
+    {\displaystyle T\approx 2\pi {\sqrt {\frac {L}{g}}}.}
+  
+
+Uma das fórmulas-chave da mecânica quântica é o princípio da incerteza de Heisenberg, que mostra que a incerteza da posição de uma partícula (Δx) e momento linear (Δp) não pode ser ambas arbitrariamente pequenas ao mesmo tempo (onde h é a constante de Planck):
+
+  
+    
+      
+        Δ
+        x
+        
+        Δ
+        p
+        ≥
+        
+          
+            h
+            
+              4
+              π
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \Delta x\,\Delta p\geq {\frac {h}{4\pi }}.}
+  
+
+O fato que π é aproximadamente igual a 3 desempenha um importante papel na vida relativamente longa do ortopositrônio. O inverso da vida para a menor ordem da constante de estrutura fina α é
+
+  
+    
+      
+        
+          
+            1
+            τ
+          
+        
+        =
+        2
+        
+          
+            
+              
+                π
+                
+                  2
+                
+              
+              −
+              9
+            
+            
+              9
+              π
+            
+          
+        
+        
+          m
+          
+            e
+          
+        
+        
+          α
+          
+            6
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {1}{\tau }}=2{\frac {\pi ^{2}-9}{9\pi }}m_{\text{e}}\alpha ^{6},}
+  
+
+onde me é a massa do elétron.
+π está presente em algumas fórmulas de engenharia estrutural, como a fórmula de flambagem derivada por Euler, que fornece a carga axial máxima F que uma coluna longa e delgada de comprimento L, módulo de elasticidade E e momento de inércia de área I pode suportar sem flambagem:
+
+  
+    
+      
+        F
+        =
+        
+          
+            
+              
+                π
+                
+                  2
+                
+              
+              E
+              I
+            
+            
+              L
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle F={\frac {\pi ^{2}EI}{L^{2}}}.}
+  
+
+O campo da dinâmica dos fluidos contém π na lei de Stokes, que aproxima a força de fricção F exercido em pequenos objetos esféricos de raio R, se movendo com uma velocidade v num fluido com viscosidade dinâmica η:
+
+  
+    
+      
+        F
+        =
+        6
+        π
+        η
+        R
+        v
+        .
+      
+    
+    {\displaystyle F=6\pi \eta Rv.}
+  
+
+Em eletromagnetismo, a constante permeabilidade do vácuo μ0 aparece nas equações de Maxwell, que descrevem as propriedades dos campos elétricos e magnéticos e radiação eletromagnética. Antes de 20 de maio de 2019, era definido exatamente como
+
+  
+    
+      
+        
+          μ
+          
+            0
+          
+        
+        =
+        4
+        π
+        ×
+        
+          10
+          
+            −
+            7
+          
+        
+        
+           H/m
+        
+        ≈
+        1,256
+        6370614
+        …
+        ×
+        
+          10
+          
+            −
+            6
+          
+        
+        
+          
+             N/A
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \mu _{0}=4\pi \times 10^{-7}{\text{ H/m}}\approx 1{,}2566370614\ldots \times 10^{-6}{\text{ N/A}}^{2}.}
+  
+
+
+=== Memorizar dígitos ===
+
+Pifilologia é a prática de memorizar um grande número de dígitos de π. e recordes mundiais são mantidos pelo Guinness World Records. O recorde de memorizar dígitos de π, certificado pelo Guinness World Records, é de 70 mil dígitos, recitado na Índia por Rajveer Meena em 9 horas e 27 minutos em 21 de março de 2015. Em 2006, Akira Haraguchi, um engenheiro japonês aposentado, alegou ter recitado cem mil casas decimais, mas a afirmação não foi verificada pelo Guinness World Records.
+Uma técnica comum é memorizar uma história ou poema que a quantidade de letras da palavra representa os dígitos de π: a primeira palavra possui três letras, a segunda tem uma, a terceira tem quatro, a quarta tem uma, a quinta tem cinco, e assim por diante. Tais auxiliares de memorização são chamados de mnemônicos.
+
+
+=== Na cultura popular ===
+
+Talvez devido à sua simplicidade de sua definição e sua onipresença em fórmulas, π se representou na cultura popular mais do que qualquer outra construção matemática.
+No museu científico Palais de la découverte, em Paris, há uma sala circular conhecida como sala do pi. Em suas paredes estão escritos 707 dígitos de π. Os dígitos são grandes caracteres de madeira preso ao teto em forma de cúpula. Os dígitos foram baseados num cálculo de 1873 pelo matemático inglês William Shanks, que inclui um erro no 528.º dígito. O erro foi detectado em 1946 e corrigido em 1949.
+No romance Contact de 1985 de Carl Sagan é sugerido que o criador do universo enterrou uma mensagem nas profundidades dos dígitos de π. Esta parte da história foi omitida na adaptação em filme do romance. Os dígitos de π também foram incorporados nas letras da música "Pi" do álbum Aerial de Kate Bush. No episódio "Wolf in the Fold" de 1967 de Star Trek, um computador fora de controle foi contido ao ser instruído para "computar o último dígito do valor de π".
+Nos Estados Unidos, o Dia do Pi cai no dia 14 de março (escrito 3/14 no estilo norte-americano), sendo popular entre os estudantes. π e sua representação digital é geralmente utilizada por "geeks matemáticos" autoproclamados por piadas internas entre grupos de pessoas interessadas em matemática e tecnologia. Um grito de torcida universitário atribuído variadamente ao Instituto de Tecnologia de Massachusetts (MIT) ou ao Instituto Politécnico Rensselaer inclui "3,14159". O Dia do Pi em 2015 foi particularmente significante porque a data e hora 3/14/15 9:26:53 refletia ainda mais dígitos de π. Nos locais nos quais as datas são geralmente escritas no formato dia/mês/ano, 22 de julho representa o "Dia da Aproximação de Pi", visto que 22/7 = 3,142857.
+Algumas pessoas propuseram que o π fosse substituído por τ = 2π, argumentando que τ, definido como uma volta ou a razão do comprimento duma circunferência pelo seu raio, é mais natural que π, além de simplifica diversas fórmulas. Este uso de τ não chegou à matemática convencional, mas isso levou pessoas a comemorarem o Dia do Dois Pi ou Dia do Tau em 28 de junho desde 2010.
+Em 1897, um matemático amador tentou persuadir a legislatura de Indiana para aprovar o projeto de lei de Indiana sobre Pi, que descrevia um método para realizar a quadratura do círculo e continha um texto que implicava vários valores incorretos de π, incluindo 3,2. O projeto de lei é notório como uma tentativa de estabelecer um valor de constante matemática por decreto legislativo. O projeto foi aprovado pela Câmara dos Representantes de Indiana, mas rejeitado pelo Senado e, portanto, não se tornou lei.
+
+
+=== Na cultura computacional ===
+Na cibercultura contemporânea, indivíduos e organizações fazem homenagens ao número π. Por exemplo, o cientista computacional Donald Knuth fez que o número da versão do seu programa TeX se aproximasse de π. As versões eram 3, 3.1, 3.14, e assim por diante. τ foi adicionada a algumas linguagens de programação como uma constante predefinida, como Python e Rust.
+
+
+== Ver também ==
+Aproximações de π
+Cronologia do cálculo de pi
+
+
+== Notas ==
+
+
+== Referências ==
+
+
+== Bibliografia ==
+
+
+== Leitura adicional ==
+
+
+== Ligações externas ==
+
+Weisstein, Eric W. «Pi». MathWorld (em inglês) 
+«Ferramenta de busca de π» (em inglês)  2 bilhões de dígitos pesquisáveis de π, e e √2

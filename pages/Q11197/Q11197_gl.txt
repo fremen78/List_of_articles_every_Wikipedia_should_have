@@ -1,0 +1,1565 @@
+O logaritmo dun número positivo x nunha certa base b, é o expoñente y ao que hai que elevar a base para obter o número dado. A base de logaritmos b ten que ser un número positivo distinto de un.
+Abreviadamente o logartimo exprésase por log, indicando a continuación a base como un subíndice e lese "logaritmo en base b de x". Así:
+logbx=y se by=x
+Por exemplo, o logaritmo de 1000 en base 10 é 3 (log101000=3) pois 103=1000.
+Obsérvese que unha igualdade logarítmica vai asociada a unha igualdade exponencial equivalente. Isto débese a que a función logarítmica é a inversa da función exponencial da mesma base para a composición de funcións.
+Hai certas bases de logaritmos moi usadas, dando lugar a logaritmos con nome propio. Así:
+
+Os logaritmos de base 10 chámanse logaritmos vulgares ou decimais. Teñen moitas aplicacións en ciencia e enxeñaría. Adoitase a non escribir a base, así se se escribe logx, enténdese que é o logaritmo decimal de x.
+Os logarimtos de base e levan o nome de logaritmos naturais ou neperianos na honra do introdutor dos logaritmos, o matemático escocés John Napier. Son amplamente usados na matemática pura, especialmente no cálculo infinitesimal. Non se acostuma a usar a expresión habitual, loge, senón ln ou L.
+Os logaritmos de base 2 reciben a denominación de logaritmos binarios e se usan profusamente na ciencia informática. Ademais da notación habitual, log2, úsase tamén lb.
+Os logaritmos foron introducidos por John Napier a comezos do século XVII como unha ferramenta para simplificar cálculos. Foron adoptados rapidamente por navegantes, científicos, enxañeiros e outros profesionais para realizar cálculos máis facilmente, usando regras de cálculo e táboas de logaritmos. As tediosas multiplicacións de números con moitas cifras podían facerse cunha simple suma dos logaritmos dos números a multiplicar, cuxos valores mirábanse na táboa de logaritmos; finalmente mirábase na táboa o número cuxo logaritmo era a suma achada, que viña a ser o produto que se buscaba. Isto débese a unha propiedade importante dos logaritmos, a cal di que o logaritmo dun produto é igual á suma dos logaritmos dos factores. Análogas propiedades permiten simplificar os cálculos das divisións, as potencias e as raíces.
+A actual notación dos logaritmos ideouna Leonhard Euler no século XVIII ao relacionar as funcións exponencial e logarítmica.
+As escalas logarítmicas reducen un amplo rango de cantidades a outras de máis pequeno alcance. Por exemplo, o decibelio é unha unidade logarítmica que mide a presión sonora. En química, o pH dunha solución acuosa é unha medida logarítmica da súa acidez. Os logaritmos son comúns nas fórmulas científicas, na medida da complexidade dun algoritmo informático e na medida dos fractais, describen intervalos musicais, aparecen en métodos de contaxe de números primos, informan sobre algúns modelos en psicofísica, e poden axudar na peritaxe forense.
+Do mesmo xeito que a función logarítmica é a inversa da función exponencial, a función logarítmica complexa é a inversa da función exponencial complexa. O logaritmo discreto é outra variante con aplicacións na criptografía de chave pública.
+
+
+== Motivación e definición ==
+A idea da operación consistente en calcular logaritmos é a de ser a operación inversa da exponenciación, isto é, a operación de calcular a potencia dun número. Por exemplo, a terceira potencia (ou cubo)de 2 é 8, porque 8 é o produto de tres factores iguais a 2:
+
+  
+    
+      
+        
+          2
+          
+            3
+          
+        
+        =
+        2
+        ×
+        2
+        ×
+        2
+        =
+        8.
+        
+      
+    
+    {\displaystyle 2^{3}=2\times 2\times 2=8.\,}
+  
+
+Disto séguese que o logaritmo de 8 en base 2 é 3:
+log2 8 = 3.
+
+
+=== Expoñenciación ===
+A terceira potencia dun número b é o produto de tres factores iguais a b. Máis xeralmente, elevar b á n-ésima potencia, onde n é un número natural, é multiplicar n factores iguais a b. A n-ésima potencia de b escríbese bn, polo tanto
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                b
+                ×
+                b
+                ×
+                ⋯
+                ×
+                b
+              
+              ⏟
+            
+          
+          
+            n
+            
+               factores
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factores}}}.}
+  
+
+A expoñenciación pode estenderse a by, onde b é un número positivo e o expoñente y é calquera número real. Por exemplo, b−1 é o inverso ou recíproco de b para a operación da multiplicación, é dicir, é 1/b.
+
+
+=== Definición ===
+O logaritmo dun número real positivo x con respecta a unha base b positiva e distinta de 1, é o expoñente ao que hai que elevar a base b para obter o número x. Noutras palabras, o logaritmo de x en base b é a solución y da ecuación:
+
+  
+    
+      
+        
+          b
+          
+            y
+          
+        
+        =
+        x
+        .
+        
+      
+    
+    {\displaystyle b^{y}=x.\,}
+  
+
+O logaritmo denótase por "logb(x)", léndose "o logaritmo en base b de x". Na ecuación y = logb(x), o valor y é a resposta á pregunta "A que expoñente hai que elevar b para obter x?". Esta cuestión pode tamén formularse (cunha resposta máis enriquecedora) no corpo dos números complexos.
+
+
+=== Exemplos ===
+Por exemplo, log2(16) = 4, xa que 24 = 2 ×2 × 2 × 2 = 16.
+Os logaritmos poden tomar tamén valores negativos, como no exemplo:
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        
+        
+          (
+          
+            
+              1
+              2
+            
+          
+          )
+        
+        =
+        −
+        1
+        ,
+        
+      
+    
+    {\displaystyle \log _{2}\!\left({\frac {1}{2}}\right)=-1,\,}
+  
+
+pois
+
+  
+    
+      
+        
+          2
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.}
+  
+
+Un terceiro exemplo: log10(150) é aproximadamente 2.176, valor comprendido entre 2 e 3 pois 150 áchase entre 102 = 100 cuxo logaritmo é 2, e 103 = 1000 que ten de logaritmo 3.
+Finalmente, para calquera base b, logb(b) = 1 e logb(1) = 0, pois b1 = b e b0 = 1, respectivamente.
+
+
+== Identidades logarítmicas ==
+
+Algunhas fórmulas importantes, tamén chamadas identidades ou leis logarítmicas, relacionan distintas operacións cos logaritmos.
+
+
+=== Produto, cociente, potencia e raíz ===
+O logaritmo do produto de dous números é igual á suma dos logaritmos de cada factor. O logaritmo do cociente de dous números é a diferenza entre o logaritmo do numerador e o do denominador. O logaritmo dunha potencia é igual ao expoñente multiplicado polo logaritmo da base. O logaritmo dunha raíz é igual ao logaritmo do radicando dividido polo índice da raíz. Estas propiedades están listadas na seguinte táboa con exemplos:
+
+
+=== Cambio de base ===
+
+O logaritmo logb(x) pode calcularse a partir dos logaritmos de x e b con respecto a unha base arbitraria k usando a seguinte fórmula, coñecida como fórmula do cambio de base:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{k}(x)}{\log _{k}(b)}}.\,}
+  
+
+As calculadoras científicas típicas calculan só logaritmos decimais (base 10) e naturais (base e). Os logaritmos con respecto a calquera outra base b poden determinarse tomando na fórmula anterior como valor de k calquera das dúas bases que usa a calculadora:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{10}(x)}{\log _{10}(b)}}={\frac {\log _{e}(x)}{\log _{e}(b)}}.\,}
+  
+
+Se na fórmula de cambio de base facemos k=x, obteremos:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              
+                log
+                
+                  x
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {1}{\log _{x}(b)}}\,\!}
+  
+
+de onde, intercambiando os logaritmos, resulta:
+
+  
+    
+      
+        
+          log
+          
+            x
+          
+        
+        ⁡
+        (
+        b
+        )
+        =
+        
+          
+            1
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle \log _{x}(b)={\frac {1}{\log _{b}(x)}}\,\!}
+  
+
+elevando a x cada un dos membros desta última igualdade obtense a seguinte expresión:
+
+  
+    
+      
+        b
+        =
+        
+          x
+          
+            
+              1
+              
+                
+                  log
+                  
+                    b
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b=x^{\frac {1}{\log _{b}(x)}}.}
+  
+
+que permite calcular unha base b descoñecida cando se coñece un número x e o seu logaritmo nesa base, logb(x).
+
+
+== Bases particulares ==
+De entre tódalas eleccións posíbeis para a base, tres son as máis xeneralizadas. Son b = 10, b = e (o número irracional de valor aproximado ≈ 2.71828), e b = 2. En análise matemática, o logaritmo de base e úsase amplamente debido á súas particulares propiedades analíticas. Por outro lado, os logaritmos en base 10 son fáciles de usar nas operacións manuais no sistema de numeración decimal, grazas á igualdade: log10(10x)=log10(10)+log10(x)=1+log10(x), deste xeito o logaritmo dun número, log10(x), está relacionado co número de cifras dun enteiro positivo x: o número destas cifras é o enteiro máis pequeno estritamente maior que log10(x). Por exemplo, o log10(1430) é aproximadamente 3.15. O seguinte enteiro é 4, que é o número de cifras de 1430. O logaritmo en base 2 úsase na ciencia da computación, onde se traballa en sistema binario; e na teoría musical, na que está omnipresente unha proporción tonal de dúas oitavas e o cent é o logaritmo binario da razón entre dous tons (multiplicado por 1200).
+A seguinte táboa contén as notacións máis comúns para os logaritmos nestas bases e os campos onde se usan. En moitas disciplinas escríbese log(x) no canto de logb(x) cando a base pode deducirse do contexto. Ás veces aparece a notación blog(x). A columna "Notación ISO" mostra as designacións recomendadas pola Organización Internacional para a Estandarización (norma ISO 31-11).
+
+
+== Historia ==
+
+
+=== Precedentes ===
+Nalgún momento entre o 2000 e o 1600 a.C. os babilonios deberon inventar un algoritmo para multiplicar dous números usando unicamente a suma, a resta e unha táboa das cuartas partes de cadrados de números. O algoritmo di que o produto de dous números é igual á diferenza entre a cuarta parte do cadrado da suma dos dous e a a cuarta parte do cadrado da súa resta, como facilmente se pode demostrar:
+
+  
+    
+      
+        
+          ⌊
+          
+            
+              
+                
+                  (
+                  
+                    x
+                    +
+                    y
+                  
+                  )
+                
+                
+                  2
+                
+              
+              4
+            
+          
+          ⌋
+        
+        −
+        
+          ⌊
+          
+            
+              
+                
+                  (
+                  
+                    x
+                    −
+                    y
+                  
+                  )
+                
+                
+                  2
+                
+              
+              4
+            
+          
+          ⌋
+        
+        =
+        
+          
+            1
+            4
+          
+        
+        
+          (
+          
+            
+              (
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                +
+                2
+                x
+                y
+                +
+                
+                  y
+                  
+                    2
+                  
+                
+              
+              )
+            
+            −
+            
+              (
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                −
+                2
+                x
+                y
+                +
+                
+                  y
+                  
+                    2
+                  
+                
+              
+              )
+            
+          
+          )
+        
+        =
+        
+          
+            1
+            4
+          
+        
+        
+          (
+          
+            4
+            x
+            y
+          
+          )
+        
+        =
+        x
+        y
+        .
+      
+    
+    {\displaystyle \left\lfloor {\frac {\left(x+y\right)^{2}}{4}}\right\rfloor -\left\lfloor {\frac {\left(x-y\right)^{2}}{4}}\right\rfloor ={\frac {1}{4}}\left(\left(x^{2}+2xy+y^{2}\right)-\left(x^{2}-2xy+y^{2}\right)\right)={\frac {1}{4}}\left(4xy\right)=xy.}
+  
+
+A partir de 1817 elaboráronse grandes táboas de cuartas partes de cadrados de números para poder aplicar este algoritmo, de amplo uso ata a aparición dos ordenadores.
+O matemático indio Virasena traballou co concepto de ardhaccheda: o número de veces que se pode facer a metade dun número da forma 2n. Para as potencias de 2 é o logaritmo do número, cuxo valor é enteiro; para outros números, é indefinido. Describiu relacións como a fórmula do logaritmo do produto e tamén introduciu os logaritmos enteriron en base 3 (trakacheda) e en base 4 (caturthacheda)
+En 1544, Michael Stifel publicou en Nuremberg Arithmetica integra, onde aparecía unha táboa de enteiros e potencias de 2 que está considerada como unha versión temperá dunha táboa de logaritmos.
+Nos séculos XVI e XVII usábase un algoritmo para aproximar a multiplicación e a división, chamado prosthaphaeresis, que usaba a identidade trigonométrica
+
+  
+    
+      
+        cos
+        
+        α
+        
+        cos
+        
+        β
+        =
+        
+          
+            1
+            2
+          
+        
+        [
+        cos
+        ⁡
+        (
+        α
+        +
+        β
+        )
+        +
+        cos
+        ⁡
+        (
+        α
+        −
+        β
+        )
+        ]
+      
+    
+    {\displaystyle \cos \,\alpha \,\cos \,\beta ={\frac {1}{2}}[\cos(\alpha +\beta )+\cos(\alpha -\beta )]}
+  
+
+ou outra similar para converter multiplicacións e divisións en consultas nunha táboa. Porén, os logaritmos son máis directos e requiren menos traballo. Usando a fórmula de Euler pode mostrarse que as dúas técnicas están relacionadas.
+
+
+=== De Napier a Euler ===
+
+O método de logaritmos naturais foi proposto inicialmente en 1614, nun libro titulado Mirifici Logarithmorum Canonis Descriptio (Descrición da marabillosa regra dos logaritmos), por John Napier (latinizado Neperus), Barón de Merchiston en Escocia, que naceu en Edimburgo en 1550, e morreu na mesma cidade en 1617. Joost Bürgi, un matemático e reloxeiro suízo, ó servizo do Duque de Hesse-Kassel, concibiu por vez primeira os logaritmos, mais publicou os seus achados seis anos despois que Napier.
+Johannes Kepler, quen usou as táboas de logaritmos extensivamente para compilar a súa obra Ephemeris, dedicada a Napier, sinalou:
+
+ 
+
+Mediante sucesivas restas Napier calculou (1 − 10−7)L para L desde 1 a 100. O resultado para L=100 é aproximadamente 0.99999 = 1 − 10−5. Napier calculou entón os produtos deses números con 107(1 − 10−5)L para L desde 1 a 50, e fixo o mesmo con 0.9998 ≈ (1 − 10−5)20 e 0.9 ≈ 0.99520. Estes cálculos, que lle ocuparon 20 anos, permitíronlle dar, para calquera número N desde 5 a 10 millóns, o número L que é solución da ecuación:
+
+  
+    
+      
+        N
+        =
+        
+          10
+          
+            7
+          
+        
+        
+          
+            (
+            1
+            −
+            
+              10
+              
+                −
+                7
+              
+            
+            )
+          
+          
+            L
+          
+        
+        .
+        
+      
+    
+    {\displaystyle N=10^{7}{(1-10^{-7})}^{L}.\,}
+  
+
+Nun principio, Napier chamou a L "número artificial", pero máis tarde púxolle o nome "logaritmo" para significar un número que indica unha proporción: do grego λόγος (logos), proporción, e ἀριθμός (arithmos), número
+. En notación moderna, a relación para os logaritmos naturais é:
+
+  
+    
+      
+        L
+        =
+        
+          log
+          
+            (
+            1
+            −
+            
+              10
+              
+                −
+                7
+              
+            
+            )
+          
+        
+        
+        
+          (
+          
+            
+              N
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+        ≈
+        
+          10
+          
+            7
+          
+        
+        
+          log
+          
+            
+              1
+              e
+            
+          
+        
+        
+        
+          (
+          
+            
+              N
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+        =
+        −
+        
+          10
+          
+            7
+          
+        
+        
+          log
+          
+            e
+          
+        
+        
+        
+          (
+          
+            
+              N
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle L=\log _{(1-10^{-7})}\!\left({\frac {N}{10^{7}}}\right)\approx 10^{7}\log _{\frac {1}{e}}\!\left({\frac {N}{10^{7}}}\right)=-10^{7}\log _{e}\!\left({\frac {N}{10^{7}}}\right),}
+  
+
+onde a aproximación máis próxima corresponde á observación de que:
+
+  
+    
+      
+        
+          
+            (
+            1
+            −
+            
+              10
+              
+                −
+                7
+              
+            
+            )
+          
+          
+            
+              10
+              
+                7
+              
+            
+          
+        
+        ≈
+        
+          
+            1
+            e
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {(1-10^{-7})}^{10^{7}}\approx {\frac {1}{e}}.\,}
+  
+
+A invención foi rápida e amplamente aclamada. Os traballos de Bonaventura Cavalieri (Italia), Edmund Wingate (Francia), Xue Fengzuo (China) e o Chilias logarithmorum de Johannes Kepler (Alemaña), axudaron en gran medida a espallar o concepto.
+
+En 1647 Grégoire de Saint-Vincent relacionou os logaritmos coa cuadratura da hipérbole, sinalando que a área f(t) baixo a hipérbole desde x = 1 a x = t satisfai:
+
+  
+    
+      
+        f
+        (
+        t
+        u
+        )
+        =
+        f
+        (
+        t
+        )
+        +
+        f
+        (
+        u
+        )
+        .
+        
+      
+    
+    {\displaystyle f(tu)=f(t)+f(u).\,}
+  
+
+O logaritmo natural foi inicialmente descrito por Nicholas Mercator no seu traballo Logarithmotechnia publicado en 1668, aínda que o profesor de matemáticas John Speidell xa tiña compilada en 1619 unha táboa de logaritmos naturais. Arredor de 1730, Leonhard Euler definiu as funcións exponencial e logarítmica como:
+
+  
+    
+      
+        
+          e
+          
+            x
+          
+        
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        (
+        1
+        +
+        x
+        
+          /
+        
+        n
+        
+          )
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle e^{x}=\lim _{n\rightarrow \infty }(1+x/n)^{n},}
+  
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        n
+        (
+        
+          x
+          
+            1
+            
+              /
+            
+            n
+          
+        
+        −
+        1
+        )
+        .
+      
+    
+    {\displaystyle \ln(x)=\lim _{n\rightarrow \infty }n(x^{1/n}-1).}
+  
+
+Euler tamén demostrou que as dúas funcións son inversas unha da outra.
+
+
+=== Táboas de logaritmos, regras de cálculo e aplicacións históricas ===
+
+Coa simplificación dos cálculos, os logaritmos contribuíron ó avance da ciencia, e especialmente da astronomía. Foron fundamentais no avance da agrimensura, a navegación, e outras disciplinas. Pierre Simon Laplace chamou aos logaritmos:
+
+ 
+
+Unha ferramenta fundamental que permitía o uso práctico dos logaritmos antes da aparición das calculadoras e os ordenadores foi a "táboa de logaritmos". A primeira táboa foi compilada por Henry Briggs en 1617, inmediatamente despois da invención de Napier. Subsecuentemente, apareceron táboas con alcance e precisión cada vez maiores. Estas táboas listaban valores de logb(x) e bx para calquera número x nun certo rango, cunha certa precisión, e para unha certa base b (xeralmente b = 10). Por exemplo, a primeira táboa de Briggs contiña os logaritmos vulgares de tódolos enteiros comprendidos entre 1 e 1000, cunha precisión de 8 díxitos. Como a función f(x) = bx é a función inversa de logb(x), foi chamada a función antilogaritmo. O produto e o cociente de dous números positivos c e d eran calculados rutineiramente como a suma e a diferenza dos seus logaritmos. O produto cd ou o cociente c/d obtíñanse mirando na mesma táboa o antilogaritmo da suma ou da diferenza respectivamente:
+
+  
+    
+      
+        c
+        d
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            +
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        
+      
+    
+    {\displaystyle cd=b^{\log _{b}(c)}\,b^{\log _{b}(d)}=b^{\log _{b}(c)+\log _{b}(d)}\,}
+  
+
+e
+
+  
+    
+      
+        
+          
+            c
+            d
+          
+        
+        =
+        c
+        
+          d
+          
+            −
+            1
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            −
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\frac {c}{d}}=cd^{-1}=b^{\log _{b}(c)-\log _{b}(d)}.\,}
+  
+
+Para facer cálculos manuais que demandaban unha precisión considerábel, mirar os logaritmos nas táboas dos dous números, calcular a suma ou a resta dos logaritmos, e finalmente buscar na mesma táboa o antilogaritmo deste último número, era un método moito máis rápido de facer multiplicacións e divisións ca executar os primitivos métodos de multiplicar ou dividir, como a prosthaphaeresis, baseada nas identidades trigonométricas. Os cálculos de potencias e raíces reducíanse a multiplicacións e divisións e buscas na táboa por:
+
+  
+    
+      
+        
+          c
+          
+            d
+          
+        
+        =
+        (
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+          )
+          
+            d
+          
+        
+        =
+        
+          b
+          
+            d
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+      
+    
+    {\displaystyle c^{d}=(b^{\log _{b}(c)})^{d}=b^{d\log _{b}(c)}\,}
+  
+
+e
+
+  
+    
+      
+        
+          
+            c
+            
+              d
+            
+          
+        
+        =
+        
+          c
+          
+            
+              1
+              d
+            
+          
+        
+        =
+        
+          b
+          
+            
+              
+                1
+                d
+              
+            
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\sqrt[{d}]{c}}=c^{\frac {1}{d}}=b^{{\frac {1}{d}}\log _{b}(c)}.\,}
+  
+
+Moitas táboas de logaritmos dábanos separando a característica e a mantisa de x, é dicir, a parte enteira e a parte fraccionaria de log10(x). A característica de 10 · x é igual á característica de x máis 1, e as súas mantisas son iguais. Este feito amplía a táboa dos logaritmos dos números do 1 ao 1000 a máis números, por exemplo o logaritmo de 3542 aproxímase por:
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        3542
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        ⋅
+        354.2
+        )
+        =
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        354.2
+        )
+        ≈
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        354
+        )
+        .
+        
+      
+    
+    {\displaystyle \log _{10}(3542)=\log _{10}(10\cdot 354.2)=1+\log _{10}(354.2)\approx 1+\log _{10}(354).\,}
+  
+
+Durante os séculos XIX e XX foron moi usadas en España as táboas de logaritmos do matemático e político galego Vicente Vázquez Queipo. Foron declaradas oficialmente "libro de texto" e só coa chegada das calculadoras na década dos setenta, caeron en desuso.
+Outra aplicación crítica dos logaritmos foi a regra de cálculo, formada por un par de regras cunha escala logarítmica que se deslizan unha sobre a outra, usada para cálculos como o que se explica na seguinte ilustración.
+
+A escala logarítmica non deslizante, regra de Gunter, foi inventada pouco despois do descubrimento de Napier. William Oughtred mellorouna para crear a regra de cálculo, un par de escalas logarítmicas deslizantes unha con respecto da outra. Os números sitúanse a distancias proporcionais ás diferenzas entre os seus logaritmos. Deslizar a escala superior apropiadamente equivale a engadir mecanicamente os logaritmos. Por exemplo, engadindo á distancia de 1 a 2 na escala inferior, a distancia de 1 a 3 na escala superior, dá como resultado un produto de 6, o cal lese na parte inferior. A regra de cálculo foi unha ferramenta esencial de cálculo para enxañeiros e científicos ata os anos setenta do século XX porque permitía, a expensas da precisión, uns cálculos moito máis rápidos cas técnicas baseadas nas táboas.
+
+
+== Logaritmo neperiano ==
+En cálculo chámase logaritmo natural ou logaritmo neperiano á primitiva da función inversa definida como:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            1
+            x
+          
+        
+        
+        
+      
+    
+    {\displaystyle f(x)={\frac {1}{x}}\,\!}
+  
+ 
+a cal toma o valor 0 cando a variable x toma o valor 1, é dicir:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            
+              d
+              t
+            
+            t
+          
+        
+      
+    
+    {\displaystyle \ln(x)=\int _{1}^{x}{\frac {dt}{t}}}
+  
+
+Tamén se chama así ó logaritmo obtido tomando como base o valor de número irracional "e" (equivalente a 2,718281828...).
+Equivalentemente, a función logaritmo natural é a inversa da función exponencial definida por : 
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          e
+          
+            x
+          
+        
+        
+        
+      
+    
+    {\displaystyle f(x)=e^{x}\,\!}
+  
+.
+
+
+=== Dedución ===
+A derivada da función 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          x
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle f(x)=x^{n}\,\!}
+  
+ é 
+  
+    
+      
+        
+          f
+          
+            ′
+          
+        
+        (
+        x
+        )
+        =
+        n
+        .
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        
+        
+      
+    
+    {\displaystyle f^{\prime }(x)=n.x^{n-1}\,\!}
+  
+. Ó dividir ambos lados da expresión por "n" e observar o resultado, pódese afirmar que unha primitiva de 
+  
+    
+      
+        
+          x
+          
+            m
+          
+        
+        
+        
+      
+    
+    {\displaystyle x^{m}\,\!}
+  
+ é 
+  
+    
+      
+        
+          x
+          
+            m
+            +
+            1
+          
+        
+        .
+        
+          
+            1
+            
+              m
+              +
+              1
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle x^{m+1}.{\frac {1}{m+1}}\,\!}
+  
+ (con m = n - 1). Este cálculo obviamente non é válido cando m = - 1, porque non se pode dividir por cero. Polo tanto, a función inversa 1/x é a única función "potencia" que non ten unha primitiva "potencia". Pero esta función é continua sobre o rango ]0; + ∞[ o que implica que ten forzosamente unha primitiva neste intervalo, e tamén sobre ] - ∞ ; 0[.
+En resumo: 
+  
+    
+      
+        
+          ln
+          
+            ′
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            x
+          
+        
+        
+        
+      
+    
+    {\displaystyle \ln ^{\prime }(x)={\frac {1}{x}}\,\!}
+  
+ , e 
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        )
+        =
+        0
+        
+        
+      
+    
+    {\displaystyle \ln(1)=0\,\!}
+  
+.
+A función 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        
+        
+      
+    
+    {\displaystyle \ln(x)\,\!}
+  
+ é estritamente crecente pois a súa derivada é estritamente positiva, e ten límites infinitos en 0+ y en + ∞.
+
+A tanxente Te que pasa polo punto de abscisa e da curva, pasa tamén pola orixe. 
+A tanxente T1 que pasa polo punto de abscisa 1 da curva, ten como ecuación: y = x - 1. 
+A derivada de segundo orde é ln"(x) = -1 / x², sempre negativa, polo tanto a función é cóncava, é dicir que tódalas tanxentes pasan por riba da curva. É o que se constata con T1 e Te.
+
+
+=== Características útiles ===
+Os números positivos menores que 1 teñen logaritmo negativo.
+Os números positivos maiores que 1 teñen logaritmo positivo.
+Os números negativos teñen logaritmo complexo.
+Non existen os logaritmos en base negativa.
+
+
+=== Propiedade fundamental ===
+A denominada propiedade fundamental, definida por:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        a
+        b
+        )
+        =
+        ln
+        ⁡
+        (
+        a
+        )
+        +
+        ln
+        ⁡
+        (
+        b
+        )
+        
+        
+      
+    
+    {\displaystyle \ln(ab)=\ln(a)+\ln(b)\,\!}
+  
+ (1) (con a>0 e b>0)
+foi a que permitiu construír as primeiras táboas de logaritmos, cuxo propósito era facer que calcular un produto fose tan rápido como atopar unha suma. En efecto, para calcular un produto procurábanse na táboa os logaritmos dos factores, sumábanse, e procurábase o número cuxo logaritmo aproximábase máis á expresión ln a + ln b. A hoxe desaparecida regra de cálculo utilizaba o mesmo proceso.
+Proba: Sexa f(x) = ln (ax) - ln x. Derivando: f'(x) = a·(1/ax) - 1/x = 1/x - 1/x = 0, o que significa que f é constante no intervalo (0, + ∞). En consecuencia f(b) = f(1), é dicir:
+ln ab - ln b =ln a -ln 1, ou sexa ln ab= ln a + ln b.
+consecuencias:
+
+ ln (1/a) = - ln a. (2)
+En efecto, ln(a) + ln (1/a) = ln (a· 1/a) =ln 1= 0.
+
+ ln (a/b) = ln a - ln b. (3)
+En efecto ln (a/b) = ln (a·1/b) = ln a + ln (1/b) = ln a - ln b.
+
+ln (an) = n.ln a. (4) , para calquera valor real de n.
+Isto demóstrase por indución para todo número enteiro natural "n", e logo para todo "n" enteiro, con (2), e logo para todo "n" racional, utilizando (3). A continuidade do logaritmo fai que unha relación certa nos racionais é tamén válida nos reais, o que acaba a proba.
+Esta última relación permite resolver certas ecuacións coa incógnita no lugar das potencias: ax =b ten como solución x= lnb/lna cando a ≠ 1, a>0 e b>0.
+
+
+== Notas ==
+
+
+== Véxase tamén ==
+
+
+=== Ligazóns externas ===
+Mirifici. Libro primeiro, ed. 1616 (en inglés)
+Enciclopedia de logaritmos

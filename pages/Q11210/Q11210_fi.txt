@@ -1,0 +1,740 @@
+Koordinaatisto on geometrinen järjestelmä alueen kuvaamiseen ja sen mittasuhteiden, sijaintien tai muiden sellaisten ilmoittamiseen.
+Koordinaatistossa yksikäsitteistä paikkaa eli pistettä kuvataan koordinaateilla. Koordinaatit voivat olla positiivisia tai negatiivisia. Pisteillä on yhtä monta koordinaattia kuin koordinaatistossa on ulottuvuuksia. Ulottuvuuksien ja niitä vastaavien koordinaattien niminä on useimmiten x, y ja z. X- ja y-akseleita kutsutaan myös joskus abskissaksi ja ordinaataksi.
+Origo on suorakulmaisen koordinaatiston nollapiste, jossa kaikkien koordinaattien arvo on nolla ja koordinaatistoakselit leikkaavat toisensa.
+
+
+== Suorakulmainen koordinaatisto ==
+
+Yleisimmin koordinaatistolla tarkoitetaan etenkin matematiikassa suorakulmaista eli karteesista koordinaatistoa (nimetty René Descartesin mukaan). Suorakulmaisessa koordinaatistossa on ulottuvuuksien mukainen määrä akseleita, jotka on nimetty kuvaamansa ulottuvuuden  mukaan. Akselit ovat toisiaan vastaan kohtisuorassa yleensä oikeakätisesti, ja ne kulkevat koordinaatiston nollapisteen eli origon kautta sekä leikkaavat toisensa siinä. 
+Koordinaatistolle on annettu myös mittayksikkö, ja niinpä kunkin pisteen koordinaatit ilmoittavat matkan, joka kutakin akselia tulee kulkea, jotta päästäisiin merkittyyn pisteeseen. Kun koordinaatistolla kuvataan tasoa, käytetään kahta akselia: vaakasuunnan kuvaamiseen x-akselia ja pystysuunnalle y-akselia. Kolmiulotteisessa avaruudessa tarvitaan puolestaan kolme akselia: x-, y- ja z-akselit.
+Koordinaatit ilmoitetaan merkitsemällä ne sulkeisiin järjestyksessä (x, y, z) ja erottamalla kunkin ulottuvuuden koordinaattiluku pilkulla. Esimerkiksi (2, −3) tarkoittaa, että piste sijaitsee kaksiulotteisen koordinaatiston pisteessä x = 2 ja y = −3 (tässä 2 on ns. abskissa ja −3 ns. ordinaatta). Jos koordinaatit sisältävät desimaalipilkkuja, ne erotetaan toisistaan puolipisteellä, esimerkiksi (4,5; 2,25; −6,8).
+
+
+== Napakoordinaatisto ==
+
+Napakoordinaatistossa koordinaatit esitetään kiertokulman 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ ja säteen 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ funktiona. Muunnoskaavat karteesisen ja napakoordinaatiston välillä ovat:
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                r
+                cos
+                ⁡
+                θ
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                r
+                sin
+                ⁡
+                θ
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=r\cos \theta \\y&=r\sin \theta \end{aligned}}}
+  
+
+Käänteismuunnokset karteesisista koordinaateista napakoordinaatteihin voidaan johtaa Pythagoraan lauseen ja trigonometrian avulla:
+
+  
+    
+      
+        
+          
+            
+              
+                r
+              
+              
+                
+                =
+                
+                  
+                    
+                      x
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      y
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                θ
+              
+              
+                
+                =
+                arctan
+                ⁡
+                
+                  
+                    y
+                    x
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}r&={\sqrt {x^{2}+y^{2}}}\\\theta &=\arctan {\frac {y}{x}}\end{aligned}}}
+  
+
+
+== Sylinterikoordinaatisto ==
+ 
+Sylinterikoordinaatisto on kolmiulotteinen koordinaatisto, jossa x- ja y-tasossa käytetään napakoordinaatistoa ja sen lisäksi z-suunnassa karteesista z-koordinaattia. Koordinaatin muodostaa kolmikko (φ,ρ,z).
+Käänteismuunnos karteesisesta koordinaatistosta sylinterikoordinaatteihin tapahtuu vastaavalla tavalla kuin napakoordinaatistossa.
+Sylinterikoordinaatiston koordinaattikonventiot vaihtelevat. ISO-standardi ISO 80000-2 suosittelee merkintää (φ,ρ,z). Sädettä kuitenkin merkitään usein symbolilla r, atsimuuttikulmaa θ ja korkeutta h.
+Muunnos sylinterikoordinaatistosta suorakulmaiseen voidaan tehdä kaavoilla
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                ρ
+                cos
+                ⁡
+                φ
+                ,
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                ρ
+                sin
+                ⁡
+                φ
+                ,
+              
+            
+            
+              
+                z
+              
+              
+                
+                =
+                z
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=\rho \cos \varphi ,\\y&=\rho \sin \varphi ,\\z&=z.\end{aligned}}}
+  
+
+Muunnos suorakulmaisesta sylinterikoordinaatistoon voidaan tehdä kaavoilla
+
+  
+    
+      
+        ρ
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \rho ={\sqrt {x^{2}+y^{2}}},}
+  
+
+  
+    
+      
+        z
+        =
+        z
+        ,
+      
+    
+    {\displaystyle z=z,}
+  
+
+  
+    
+      
+        φ
+        =
+        atan2
+        ⁡
+        (
+        y
+        ,
+        x
+        )
+        ,
+      
+    
+    {\displaystyle \varphi =\operatorname {atan2} (y,x),}
+  
+
+missä
+
+  
+    
+      
+        atan2
+        ⁡
+        (
+        y
+        ,
+        x
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  arctan
+                  ⁡
+                  
+                    (
+                    
+                      
+                        y
+                        x
+                      
+                    
+                    )
+                  
+                
+                
+                  
+                    
+                      jos 
+                    
+                  
+                  x
+                  >
+                  0
+                
+              
+              
+                
+                  arctan
+                  ⁡
+                  
+                    (
+                    
+                      
+                        y
+                        x
+                      
+                    
+                    )
+                  
+                  +
+                  π
+                
+                
+                  
+                    
+                      jos 
+                    
+                  
+                  x
+                  <
+                  0
+                  
+                    
+                       ja 
+                    
+                  
+                  y
+                  ≥
+                  0
+                
+              
+              
+                
+                  arctan
+                  ⁡
+                  
+                    (
+                    
+                      
+                        y
+                        x
+                      
+                    
+                    )
+                  
+                  −
+                  π
+                
+                
+                  
+                    
+                      jos 
+                    
+                  
+                  x
+                  <
+                  0
+                  
+                    
+                       ja 
+                    
+                  
+                  y
+                  <
+                  0
+                
+              
+              
+                
+                  
+                    
+                      π
+                      2
+                    
+                  
+                
+                
+                  
+                    
+                      jos 
+                    
+                  
+                  x
+                  =
+                  0
+                  
+                    
+                       ja 
+                    
+                  
+                  y
+                  >
+                  0
+                
+              
+              
+                
+                  −
+                  
+                    
+                      π
+                      2
+                    
+                  
+                
+                
+                  
+                    
+                      jos 
+                    
+                  
+                  x
+                  =
+                  0
+                  
+                    
+                       ja 
+                    
+                  
+                  y
+                  <
+                  0
+                
+              
+              
+                
+                  
+                    määrittelemätön
+                  
+                
+                
+                  
+                    
+                      jos 
+                    
+                  
+                  x
+                  =
+                  0
+                  
+                    
+                       ja 
+                    
+                  
+                  y
+                  =
+                  0
+                  ,
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {atan2} (y,x)={\begin{cases}\arctan \left({\frac {y}{x}}\right)&{\mbox{jos }}x>0\\\arctan \left({\frac {y}{x}}\right)+\pi &{\mbox{jos }}x<0{\mbox{ ja }}y\geq 0\\\arctan \left({\frac {y}{x}}\right)-\pi &{\mbox{jos }}x<0{\mbox{ ja }}y<0\\{\frac {\pi }{2}}&{\mbox{jos }}x=0{\mbox{ ja }}y>0\\-{\frac {\pi }{2}}&{\mbox{jos }}x=0{\mbox{ ja }}y<0\\{\text{määrittelemätön}}&{\mbox{jos }}x=0{\mbox{ ja }}y=0,\end{cases}}}
+  
+
+jolloin φ saadaan radiaaneina. Funktio atan2(y,x) on toteutettu esimerkiksi C-kielessä.
+
+
+== Pallokoordinaatisto ==
+
+Pallokoordinaatisto on sylinterikoordinaatiston tapaan kolmiulotteisen avaruuden koordinaatisto. Siinä pisteiden ajatellaan sijaitsevan pallopinnalla. Koordinaatit määrittävät säde r, atsimuuttikulma φ sekä korotus- eli elevaatiokulma θ. Kulmat voidaan ilmoittaa radiaaneina tai asteina. Esimerkiksi tulenohjauksessa käytetään yleisesti korotuskulmaa, joka on rajattu välille 
+  
+    
+      
+        −
+        π
+        
+          /
+        
+        2
+        ≤
+        θ
+        ≤
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle -\pi /2\leq \theta \leq \pi /2}
+  
+ (tai 
+  
+    
+      
+        −
+        
+          90
+          
+            ∘
+          
+        
+        ≤
+        θ
+        ≤
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle -90^{\circ }\leq \theta \leq 90^{\circ }}
+  
+) yksikäsitteisyyden saavuttamiseksi. Matemaattisemmissa asiayhteyksissä käytetään yleisemmin korotuskulman komplementtia 
+  
+    
+      
+        
+          
+            π
+            2
+          
+        
+        −
+        θ
+        ∈
+        [
+        0
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle {\frac {\pi }{2}}-\theta \in [0,\pi ]}
+  
+, eli z-akselin ja valitun pisteen välistä kulmaa origosta katsoen. Muunnoskaavat karteesiseen koordinaatistoon merkiten tätä kulmaa (korotuskulman komplementtia) 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+:lla ovat:
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                r
+                sin
+                ⁡
+                θ
+                cos
+                ⁡
+                ϕ
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                r
+                sin
+                ⁡
+                θ
+                sin
+                ⁡
+                ϕ
+              
+            
+            
+              
+                z
+              
+              
+                
+                =
+                r
+                cos
+                ⁡
+                θ
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=r\sin \theta \cos \phi \\y&=r\sin \theta \sin \phi \\z&=r\cos \theta \end{aligned}}}
+  
+
+Vastaavasti käänteismuunnokset karteesisista koordinaateista pallokoordinaatistoon ovat:
+
+  
+    
+      
+        
+          
+            
+              
+                r
+              
+              
+                
+                =
+                
+                  
+                    
+                      x
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      y
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      z
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                θ
+              
+              
+                
+                =
+                arctan
+                ⁡
+                
+                  
+                    
+                      
+                        x
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        y
+                        
+                          2
+                        
+                      
+                    
+                    z
+                  
+                
+              
+            
+            
+              
+                ϕ
+              
+              
+                
+                =
+                arctan
+                ⁡
+                
+                  
+                    y
+                    x
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}r&={\sqrt {x^{2}+y^{2}+z^{2}}}\\\theta &=\arctan {\frac {\sqrt {x^{2}+y^{2}}}{z}}\\\phi &=\arctan {\frac {y}{x}}\end{aligned}}}
+  
+
+Yllä käytetyssä konventiossa maantieteelliset leveys- ja pituusasteet muodostavat pallokoordinaatiston, jossa leveysaste vastaa kulman 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ komplementtia 
+  
+    
+      
+        
+          90
+          
+            o
+          
+        
+        −
+        θ
+      
+    
+    {\displaystyle 90^{o}-\theta }
+  
+ ja pituusaste atsimuuttikulmaa 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+, jos käytössä on vertausellipsoidin sijaan pallo.
+
+
+== Katso myös ==
+Koordinaattijärjestelmä
+Trilineaariset koordinaatit ja Barysentriset koordinaatit
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Thompson, Jan & Martinsson, Thomas: Matematiikan käsikirja.  Helsinki:  Tammi, 1994.  ISBN 951-31-0471-0 
+Kivelä, Simo K.: Algebra ja geometria.  Espoo:  Otatieto, 1989.  ISBN 951-672-103-6 
+Pitkäranta, Juhani: Calculus Fennicus – TKK:n 1. lukuvuoden laaja matematiikka (2000–2013) (pdf) Helsinki:  Avoimet oppimateriaalit ry. ISBN 978-952-7010-12-9 ISBN 978-952-7010-6 (pdf).

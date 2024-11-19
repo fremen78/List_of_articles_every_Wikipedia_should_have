@@ -1,0 +1,62 @@
+Unit Pemroses Sentral atau Unit Pengolahan Pusat (bahasa Inggris: Central Processing Unit/Processor (CPU)) adalah sirkuit elektronik di dalam komputer yang menjalankan perintah untuk membentuk program komputer. CPU melakukan operasi aritmatika, logika, pengendalian, dan masukan/keluaran (I/O) dasar yang ditentukan oleh perintah dalam program. Industri komputer menggunakan istilah "unit pemrosesan pusat" sejak tahun 1955. Secara tradisional, istilah "CPU" mengacu pada prosesor, lebih khusus lagi untuk unit pemrosesan dan control unit (CU), yang membedakan elemen inti komputer ini dari komponen eksternal seperti memori utama dan sirkuit I/O.
+Bentuk, desain, dan implementasi CPU telah berubah sepanjang sejarahnya, tetapi operasi dasarnya hampir tidak berubah. Komponen utama dari CPU termasuk unit logika aritmatika (ALU) yang melakukan aritmatika dan operasi logika, register prosesor yang memasok operan ke ALU dan menyimpan hasil operasi ALU, dan unit kontrol yang mengatur pengambilan (dari memori) dan eksekusi. instruksi dengan mengarahkan operasi terkoordinasi ALU, register dan komponen lainnya.
+
+
+== Operasi ==
+Operasi dasar dari sebagian besar CPU, terlepas dari bentuk fisiknya, adalah menjalankan urutan perintah tersimpan yang disebut program. Perintah yang akan dijalankan disimpan dalam beberapa jenis memori komputer. Hampir semua CPU mengikuti langkah-langkah pengambilan, dekode, dan eksekusi dalam operasinya, yang secara kolektif dikenal sebagai siklus instruksi.
+Setelah eksekusi instruksi, seluruh proses berulang, dengan siklus instruksi berikutnya biasanya mengambil instruksi urutan berikutnya karena nilai yang bertambah di penghitung program. Jika instruksi jump dijalankan, penghitung program akan dimodifikasi untuk memuat alamat instruksi yang dilompati dan eksekusi program berlanjut secara normal. Dalam CPU yang lebih rumit, beberapa perintah dapat diambil, didekodekan, dan dijalankan secara bersamaan.
+
+
+=== Fetch ===
+Langkah pertama, pengambilan, melibatkan pengambilan instruksi (yang diwakili oleh nomor atau urutan angka) dari memori program. Lokasi instruksi (alamat) dalam memori program ditentukan oleh penghitung program (PC), yang menyimpan nomor yang mengidentifikasi alamat instruksi berikutnya yang akan diambil. Setelah instruksi diambil, PC bertambah panjang instruksi sehingga akan berisi alamat instruksi berikutnya secara berurutan. Seringkali, instruksi yang akan diambil harus diambil dari memori yang relatif lambat, menyebabkan CPU berhenti ketika menunggu instruksi dikembalikan. Masalah ini sebagian besar ditangani dalam prosesor modern oleh tembolok dan arsitektur pipa (lihat di bawah).
+
+
+=== Dekode ===
+Instruksi yang diambil CPU dari memori menentukan apa yang akan dilakukan CPU. Pada langkah dekode, dilakukan oleh sirkuit yang dikenal sebagai instruction decoder, instruksi diubah menjadi sinyal yang mengontrol bagian lain dari CPU.
+Cara instruksi diinterpretasikan ditentukan oleh CPU arsitektur set instruksi (ISA). Seringkali, satu kelompok bit (yaitu, "field") di dalam instruksi, yang disebut opcode, menunjukkan operasi mana yang akan dilakukan, sedangkan field yang tersisa biasanya memberikan informasi tambahan yang diperlukan untuk operasi tersebut, seperti operan. Operan tersebut dapat ditentukan sebagai nilai konstan (disebut immediate value), atau sebagai lokasi nilai yang mungkin merupakan register prosesor atau alamat memori, seperti yang ditentukan oleh beberapa mode pengalamatan.
+
+
+== Struktur dan implementasi ==
+
+Terpasang ke dalam sirkuit CPU adalah serangkaian operasi dasar yang dapat dilakukannya, yang disebut set instruksi. Operasi semacam itu mungkin melibatkan, misalnya, menambah atau mengurangi dua angka, membandingkan dua angka, atau melompat ke bagian program yang berbeda. Setiap operasi dasar diwakili oleh kombinasi bit tertentu, yang dikenal sebagai bahasa mesin opcode ; saat menjalankan instruksi dalam program bahasa mesin, CPU memutuskan operasi mana yang akan dilakukan dengan "mendekode" opcode. Instruksi bahasa mesin lengkap terdiri dari opcode dan, dalam banyak kasus, bit tambahan yang menentukan argumen untuk operasi (misalnya, angka yang akan dijumlahkan dalam kasus operasi penambahan). Menaikkan skala kompleksitas, program bahasa mesin adalah kumpulan instruksi bahasa mesin yang dieksekusi CPU.
+
+
+=== Arithmetic logic unit ===
+
+Arithmetic logic unit (ALU) adalah sirkuit digital di dalam prosesor yang melakukan operasi aritmatika integer dan logika bitwise. Input ke ALU adalah kata-kata data yang akan dioperasikan (disebut operand), informasi status dari operasi sebelumnya, dan kode dari unit kontrol yang menunjukkan operasi mana yang harus dilakukan. Bergantung pada instruksi yang dijalankan, operand dapat berasal dari register CPU internal atau memori eksternal, atau mungkin merupakan konstanta yang dihasilkan oleh ALU itu sendiri.
+
+
+=== Rentang interger ===
+Setiap CPU merepresentasikan nilai numerik dengan cara tertentu. Misalnya, beberapa komputer digital awal merepresentasikan angka sebagai nilai sistem angka desimal (basis 10) yang sudah dikenal, dan yang lainnya menggunakan representasi yang lebih tidak biasa seperti terner (basis tiga). Hampir semua CPU modern merepresentasikan angka dalam bentuk biner, dengan setiap digit diwakili oleh beberapa kuantitas fisik bernilai dua seperti voltase "tinggi" atau "rendah".
+
+Terkait dengan representasi numerik adalah ukuran dan presisi interger yang dapat diwakili oleh CPU. Dalam kasus CPU biner, ini diukur dengan jumlah bit (digit signifikan dari interger yang dikodekan biner) yang dapat diproses CPU dalam satu operasi, yang biasa disebut ukuran kata, lebar bit, lebar jalur data, presisi integer. , atau ukuran integer. Ukuran interger CPU menentukan kisaran nilai interger yang dapat dioperasikan secara langsung. Misalnya, CPU 8-bit dapat secara langsung memanipulasi interger yang diwakili oleh delapan bit, yang memiliki kisaran 256 (
+  
+    
+      
+        
+          2
+          
+            8
+          
+        
+      
+    
+    {\displaystyle 2^{8}}
+  
+) nilai interger terpisah.
+
+
+== Performa ==
+Performa atau kecepatan dari prosesor bergantung pada, di antara banyak faktor lain, kecepatan clock (umumnya diberikan dalam kelipatan hertz) dan instructions per clock (IPC), yang bersama-sama merupakan faktor untuk instructions per second (IPS) yang CPU dapat bekerja. Banyak nilai IPS yang dilaporkan telah mewakili tingkat eksekusi "puncak" pada urutan instruksi buatan dengan beberapa cabang, sedangkan beban kerja realistis terdiri dari campuran instruksi dan aplikasi, beberapa di antaranya membutuhkan waktu lebih lama untuk dieksekusi daripada yang lain. Kinerja hierarki memori juga sangat memengaruhi kinerja prosesor, masalah yang hampir tidak dipertimbangkan dalam penghitungan MIPS. Karena masalah ini, berbagai pengujian standar, yang sering disebut "benchmark" untuk tujuan ini‍ —seperti SPECint‍ — ‌telah dikembangkan untuk mencoba mengukur kinerja efektif yang sebenarnya dalam aplikasi yang umum digunakan.
+
+
+== Catatan ==
+
+
+== Referensi ==
+
+
+== Pranala luar ==
+
+Bagaimana Mikroprosesor Bekerja di HowStuffWorks.
+25 Microchips that shook the world - sebuah artikel oleh Institute of Electrical and Electronics Engineers.

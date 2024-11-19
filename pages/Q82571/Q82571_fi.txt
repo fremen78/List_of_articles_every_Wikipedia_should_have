@@ -1,0 +1,321 @@
+Lineaarialgebra on matematiikan osa-alue, joka tutkii vektoreita, vektoriavaruuksia, lineaarikuvauksia ja lineaarisia yhtälöryhmiä. Vektoriavaruudet ovat nykyisin matematiikan keskeisimpiä käsitteitä. Lineaarialgebraa tarvitaan sekä abstraktissa algebrassa että funktionaalianalyysissä.
+
+
+== Historiaa ==
+
+Lineaaristen yhtälöryhmien ratkaisu Gaussin eliminointimenetelmällä tunnettiin jo Kiinassa ennen ajanlaskun alkua. Moderni lineaarialgebra kehittyi paljon 1800-luvulla. Merkittäviä nimiä sen kehityksessä olivat muun muassa William Rowan Hamilton, Hermann Grassmann, Arthur Cayley ja James Joseph Sylvester.
+
+
+== Lineaariset yhtälöryhmät ==
+
+Lineaarinen yhtälöryhmä, jossa on 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ yhtälöä ja 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ muuttujaa voidaan kirjoittaa yleisessä muodossa
+
+  
+    
+      
+        
+          {
+          
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                  ⋅
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  +
+                  
+                    a
+                    
+                      12
+                    
+                  
+                  ⋅
+                  
+                    x
+                    
+                      2
+                    
+                  
+                  +
+                
+                
+                  ⋯
+                
+                
+                  +
+                  
+                    a
+                    
+                      1
+                      n
+                    
+                  
+                  ⋅
+                  
+                    x
+                    
+                      n
+                    
+                  
+                  =
+                  
+                    b
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    a
+                    
+                      m
+                      1
+                    
+                  
+                  ⋅
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  +
+                  
+                    a
+                    
+                      m
+                      2
+                    
+                  
+                  ⋅
+                  
+                    x
+                    
+                      2
+                    
+                  
+                  +
+                
+                
+                  ⋯
+                
+                
+                  +
+                  
+                    a
+                    
+                      m
+                      n
+                    
+                  
+                  ⋅
+                  
+                    x
+                    
+                      n
+                    
+                  
+                  =
+                  
+                    b
+                    
+                      m
+                    
+                  
+                
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle \left\{{\begin{matrix}a_{11}\cdot x_{1}+a_{12}\cdot x_{2}+&\cdots &+a_{1n}\cdot x_{n}=b_{1}\\\vdots \\a_{m1}\cdot x_{1}+a_{m2}\cdot x_{2}+&\cdots &+a_{mn}\cdot x_{n}=b_{m}\end{matrix}}\right.}
+  
+
+Saman asian voi kuitenkin kirjoittaa matriisimuodossa:
+
+  
+    
+      
+        A
+        
+          x
+        
+        =
+        
+          b
+        
+      
+    
+    {\displaystyle A\mathbf {x} =\mathbf {b} }
+  
+,
+jossa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ on 
+  
+    
+      
+        n
+        ×
+        m
+      
+    
+    {\displaystyle n\times m}
+  
+ -kokoinen kerroinmatriisi, vektori 
+  
+    
+      
+        
+          b
+        
+      
+    
+    {\displaystyle \mathbf {b} }
+  
+ sisältää alkiot 
+  
+    
+      
+        
+          b
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          b
+          
+            m
+          
+        
+      
+    
+    {\displaystyle b_{1},...,b_{m}}
+  
+ ja 
+  
+    
+      
+        
+          x
+        
+      
+    
+    {\displaystyle \mathbf {x} }
+  
+ on ratkaistava vektori. Tämä on kätevin tapa muotoilla lineaariset yhtälöryhmät esimerkiksi tietokonelaskentaa varten.
+
+
+== Vektoriavaruudet ==
+
+Lineaarialgebraa voidaan lähestyä matriisien ja lineaaristen yhtälöryhmien avulla. Yleisempi, mutta abstraktimpi tapa on kuitenkin käsitellä vektoriavaruuksia. Voidaan määrittää tietyt ominaisuudet, jotka vektoriavaruuden alkioiden ja niiden välisten laskutoimitusten on täytettävä. Vektoriavaruuksia ovat muun muassa matriisit. Itse asiassa osoittautuu, että kaikki äärellisulotteiset vektoriavaruudet voidaan ilmaista matriisien avulla. Lisäksi käy ilmi, että avaruuden dimensio määrittää täysin vektoriavaruuden, tarkemmin sanottuna kaikki samandimensioiset vektoriavaruudet ovat isomorfisia keskenään. Esimerkiksi mikä tahansa n-ulotteinen vektoriavaruus voidaan samaistaa 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+            ×
+            1
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n\times 1}}
+  
+-sarakevektorien muodostamaan avaruuteen.
+
+
+== Sovelluksia ==
+Lineaarialgebraa käytetään paljon sekä puhtaassa matematiikassa että matematiikan sovelluksissa. Alla oleva lista ei ole täydellinen.
+
+
+=== Geometria ===
+Kaikenlaisten kappaleiden lineaarikuvauksia, kuten kiertoja, peilauksia, skaalauksia tai venytyksiä, voidaan kuvata matriisioperaatioilla. Niinpä lineaarialgebraa hyödynnetään muun muassa tietokonegrafiikassa.
+
+
+=== Optimointi ===
+Matemaattisessa optimoinnissa lineaariset optimointiongelmat kirjoitetaan matriisien avulla. Tällaista optimointia voidaan käyttää muun muassa taloustieteen ja tekniikan aloilla.
+
+
+=== Tieteellinen laskenta ===
+Lineaarialgebraa käytetään lähes kaikessa tieteellisessä laskennassa. Jos ongelma ei ole lineaarinen, sen voi usein approksimoida lineaariseksi, jotta sitä voidaan käsitellä tietokoneilla. Esimerkiksi osittaisdifferentiaaliyhtälöt, joilla voidaan kuvata kaikenlaisia ongelmia esimerkiksi fysiikassa, voidaan ratkaista likimääräisesti lineaarisina yhtälöryhminä. Tätä käytetään esimerkiksi sään ennustuksessa.
+
+
+=== Funktionaalianalyysi ===
+Funktionaalianalyysi käsittelee funktioavaruuksia. Ne ovat vektoriavaruuksia, joissa on lisäksi ylimääräistä rakennetta. Esimerkki funktioavaruudesta on Hilbertin avaruus, joka on erittäin tärkeä käsite esimerkiksi kvanttimekaniikassa.
+
+
+== Opetus ==
+Lineaarialgebraa opetettiin Suomessa yliopistojen ulkopuolella muun muassa lukiossa vuosina 1998–1999 tehdyssä koulutuskokeiluissa.
+
+
+== Katso myös ==
+Neliömatriisi
+Lävistäjämatriisi
+Kääntyvä matriisi
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Thompson, Jan & Martinsson, Thomas: Matematiikan käsikirja.  Helsinki:  Tammi, 1994.  ISBN 951-31-0471-0 
+Kivelä, Simo K.: Algebra ja geometria.  Helsinki:  Otatieto, 1989.  ISBN 951-672-103-6 
+Rikkonen, Harri: Matematiikan pitkä peruskurssi I – Vektorialgebra ja analyyttinen geometria.  Helsinki:  Otakustantamo, 1969.  ISBN 951-671-067-0 
+Haukkanen, Pentti: Lineaarialgebra 1A
+Haukkanen, Pentti: Lineaarialgebra 1B

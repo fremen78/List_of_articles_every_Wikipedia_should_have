@@ -1,0 +1,820 @@
+Analisi matematikoa matematikaren adar bat da, ikuspuntu aljebraikoko nahiz topologikoko zenbakizko multzoak (zenbaki errealak eta konplexuak) eta multzo eta eraikuntza deribatu horien arteko funtzioak aztertzen dituena. Limitearen formulazio zorrotza hasten denean hasten da garatzen, eta jarraitutasuna, integrazioa eta hainbat eratako eratorpena gisako kontzeptuak aztertzen ditu.
+Aljebraren eta analisiaren arteko ezberdintasunetako bat da azken horrek elementu kopuru infinitu baten segidak barne hartzen dituzten eraikuntzetara jotzen duela; aljebra, normalean, finitua da.
+
+
+== Historia ==
+
+
+=== Antzinaroan ===
+Greziar matematikariek, Eudoxo Knidokoak eta Arkimedesek adibidez, limite eta konbergentzia kontzeptuen erabilera informala egin zuten, exhauzio-metodoa erabili zutenean eskualdeen eta solidoen azalera eta bolumena kalkulatzeko. Izan ere, π zenbakira hurbildu zen exhauzio-metodoa erabiliz. XII. mendeko Indian, Bhaskara matematikariak kalkulu diferentzialaren elementuak sortu zituen, baita gaur egun Rolleren teorema izenez ezagutzen dugunaren kontzeptua ere.
+Analisiaren lehen emaitzak inplizituki zeuden presente antzinako matematika greziarraren lehen egunetan. Adibidez, batuketa geometriko infinitu bat Zenonen dikotomiaren paradoxan dago inplizituki. Infinitesimalen erabilera esplizitua Arkimedesen teorema mekanikoen metodoan agertzen da XX. mendean berraurkitutako lan batean. Asian, Liu Hui matematikari txinatarrak exahuzio metodoa erabili zuen K.o. III. mendean, zirkulu baten azalera aurkitzeko. Literatura jainistatik ondoriozta daiteke indiarrek aritmetika eta geometria batzeko formulak bazituztela K.a. IV. mendean. Ācārya Bhadrabāhuk serie geometriko baten batuketa erabiltzen du bere Kalpasūtra (K.a. 433). XIV. mendean, Madhava matematikari indiarrak funtsezko ideiak garatu zituen, hala nola serie infinituen hedapena, potentzia-serieak, Taylor serieak eta serie infinituen hurbilketa arrazionala. Gainera, funtzio trigonometrikoen Taylorren serieak garatu zituen —sinua, kosinua, tangentea—, eta kalkulu-erroreen magnitudea zenbatetsi zuen serie horiek moztuz. Halaber, zatiki jarraitu infinituak, terminoz terminoko integrazioa eta pi potentzien seriea ere garatu zituen. Keralako Eskolako bere ikasleek XVI. mendera arte jarraitu zuten lanean.
+Europan, XVII. mendean, analisi matematikoaren oinarri modernoak ezarri ziren, eta Newtonek eta Leibnizek kalkulua asmatu zuten. Orain badakigu Newtonek Leibnizek baino hamar bat urte lehenago garatu zuela kalkulu infinitesimala. Azken horrek 1675ean garatu zuen, eta 1684an argitaratu zuen bere lana, Newtonek bere lanekin gauza bera egitea erabaki baino hogei urte inguru lehenago. Newtonek bere lankide gutxi batzuei bakarrik jakinarazi zien berria, eta ezer gutxi balio izan zuten Halleyk egindako ahaleginak Newtonek bere lanak lehenago argitara zitzan. Jarrera horrek balio izan zuen eztabaida gogaikarri bat sortzeko ideiaren aitabitxi izateagatik; Eztabaida saihets zitekeen, baldin eta beste matematikari handi batek, Fermatek, bere lanak argitara ez emateko ohitura ulertezina izan ez balu.
+Fermatek, 1636ko urriaren 22an, Robervali bidalitako gutun batean, argi eta garbi deskribatzen dira geometria analitikoa eta analisi matematikoa.​ Descartesek ere geometria analitikoa modu independentean garatu zuen. Mende horretan eta XVIII. mendean, analisiari buruzko zenbait gai, hala nola bariazioen kalkulua, ekuazio diferentzialak eta ekuazio diferentzial partzialak, Fourier-en analisia eta funtzio sortzaileak, aplikazio lan baterako garatu ziren nagusiki. Kalkuluaren teknikak arrakastaz aplikatu ziren problema diskretuak jarraituen bidez hurbiltzeko.
+
+
+=== Erdi Aroan ===
+V. mendean, Zu Chongzhik geroago Cavalieriren Printzipioa izena emango zioten metodoa ezarri zuen esfera baten bolumena aurkitzeko. Bhaskara II.a matematikari indiarrak deribatuaren adibideak eman zituen, eta, orain, Rolleren teorema izenez ezagutzen dena erabili zuen XII. mendean.
+XIV. mendean, Madhava Sangamagramakoak serie infinituen hedapenak garatu zituen, hala nola potentzia seriea eta Taylor seriea, sinua, kosinua, tangentea eta arku tangentearen funtzioena. Funtzio trigonometrikoen Taylor seriea garatzearekin batera, serie horiek haustean sortutako errore-terminoen magnitudea ere zenbatetsi zuen, eta serie infinitu baten hurbilketa arrazional bat egin zuen. Keralako Astronomia eta Matematika Eskolako bere jarraitzaileek XVI. mendera arte zabaldu zituzten lanak.
+
+
+=== Aro Modernoan ===
+
+
+==== Oinarriak ====
+Analisi matematikoaren oinarri modernoak XVII. mendeko Europan ezarri ziren, Descartesek eta Fermatek geometria analitikoa (kalkulu modernoaren aitzindaria) modu independentean garatu zutenean. Egokitzeko metodoari esker, Fermatek funtzioen maximoak eta minimoak eta kurben ukitzaileak zehaztu ahal izan zituen. Descartesen La Géometrie, koordenatu kartesiarren sistema ezarri zuena, 1637an argitaratu zen, eta analisi matematikoaren ezarpentzat jotzen da. Hamarkada batzuk geroago, Newtonek eta Leibnizek kalkulu infinitesimala garatu zuten, modu independentean, zeina hazi baitzen XVIII. mendean jarraitu zuen lan aplikatuaren pizgarriarekin analisi-gaietan, hala nola bariazioen kalkuluan, ekuazio diferentzial arrunt eta partzialetan, Fourierren analisian eta funtzio sortzaileetan. Aldi horretan, kalkulu-teknikak arazo diskretuak jarraituetara hurbiltzeko erabili ziren.
+
+
+==== Modernizazioa ====
+XVIII. mendean, Eulerrek funtzio matematikoaren nozioa ezarri zuen. 1816an, Bernard Bolzanok jarraitasunaren definizio modernoa ezarri zuenean, benetako analisia hasi zen azaleratzen, gai independente gisa, baina Bolzanoren lana ez zen zabaldu 1870eko hamarkadara arte. 1821ean, Cauchy kalkulua oinarri logiko sendo baten hasi zen jartzen, aurreko lanetan asko erabili zen (bereziki Eulerrek) aljebraren orokortasunaren printzipioa baztertuz. Cauchyk, ordea, ideia geometriko eta infinitesimo terminoetan formulatu zuen kalkulua. Hala, jarraitutasunaren definizioak x-ren aldaketa infinitesimal bat eskatzen zuen y-ren aldaketa infinitesimal bati egokitzeko. Cauchy segidaren kontzeptua ere ezarri zuen, eta analisi konplexuaren teoria formalari ekin zion. Poisson, Liouville, Fourier eta beste batzuek ekuazio diferentzial partzialak eta analisi harmonikoa aztertu zituzten. Matematikari horien eta beste batzuen ekarpenek, hala nola Weierstrass-ek, muga-ikuspegiaren definizioa (ε, δ) garatu zuten, eta, horrela, analisi matematikoaren eremu modernoa sortu zuten. Aldi berean, Riemannek integralaren  teoria ezarri zuen, eta aurrerapen esanguratsuak egin zituen analisi konplexuetan.
+XIX. mendearen amaieran, matematikariak kezkatzen hasi ziren, zenbaki errealen «continuum» baten existentzia onar ote zezaketen frogarik gabe. Dedekindek, orduan, zenbaki errealak Dededekinden ebakien bidez eraiki zituen, zeintzuetan zenbaki irrazionalak formalki definituak ziren eta zenbaki arrazionalen arteko «arrakalak» betetzeko balio zuten, horrela multzo oso bat sortuz: zenbaki errealen «continuum»a, Simon Stevin-ek hedatze hamartarren bidez garatua zuen. Denbora horretan, Riemannen integralaren teoremak perfekzionatzeko saioek funtzio errealen eten multzoaren «tamaina» aztertzera eraman zuten.
+Gainera, zenbait objektu patologiko ikertzen hasi ziren, hala nola inon jarraitzen ez duten funtzioak, funtzio jarraituak baina inon ez bereizgarriak, eta espazio-betetze kurbak, eskuarki «munstro» izenez ezagunak. Testuinguru horretan, Jordanek bere neurriaren teoria garatu zuen; Cantorrek orain multzoen teoria informal deitzen dena garatu zuen, eta Bairek frogatu zuen Baire kategoriaren teorema. XX. mendearen hasieran, multzo axiomatikoaren teoria baten bidez formalizatu zen kalkulua. Lebesguek asko hobetu zuen neurrien teoria, eta integralaren bere teoria propioa ezarri zuen, orain Lebesgueren integral izenez ezagutzen dena eta Riemannen teoriarekin alderatuta hobekuntza handia izan zena. Hilbertek, ekuazio integralak ebazteko, Hilberten espazioak ezarri zituen. Espazio bektorial normalizatu baten ideia zegoen airean, eta, 1920ko hamarkadan, Banachek analisi funtzional bat sortu zuen.
+
+
+== Kontzeptu garrantzitsuak ==
+
+
+=== Espazio metrikoa ===
+
+Matematikan espazio metrikoa multzo batek, 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, eta bertako elementuen arteko distantzia (metrika) definitzen duen funtzio batek, 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+, osatzen dute. Zehazki, 
+  
+    
+      
+        (
+        X
+        ,
+        d
+        )
+      
+    
+    {\displaystyle (X,d)}
+  
+ bikotean multzoa ez-hutstzat hartzen da (
+  
+    
+      
+        X
+        ≠
+        ∅
+      
+    
+    {\displaystyle X\not =\emptyset }
+  
+) eta 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ distantzia funtzioak
+
+  
+    
+      
+        d
+        :
+        X
+        ×
+        X
+        →
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle d\colon X\times X\rightarrow \mathbb {R} ,}
+  
+
+ondorengo propietateak izan behar ditu:
+
+  
+    
+      
+        d
+        (
+        x
+        ,
+        y
+        )
+        ≥
+        0
+      
+    
+    {\displaystyle d(x,y)\geq 0}
+  
+, eta 
+  
+    
+      
+        d
+        (
+        x
+        ,
+        y
+        )
+        =
+        0
+      
+    
+    {\displaystyle d(x,y)=0}
+  
+ baldin eta soilik baldin 
+  
+    
+      
+        x
+        =
+        y
+      
+    
+    {\displaystyle x=y}
+  
+,
+
+  
+    
+      
+        d
+        (
+        x
+        ,
+        y
+        )
+        =
+        d
+        (
+        y
+        ,
+        x
+        )
+      
+    
+    {\displaystyle d(x,y)=d(y,x)}
+  
+ (simetria),
+
+  
+    
+      
+        d
+        (
+        x
+        ,
+        z
+        )
+        ≤
+        d
+        (
+        x
+        ,
+        y
+        )
+        +
+        d
+        (
+        y
+        ,
+        z
+        )
+      
+    
+    {\displaystyle d(x,z)\leq d(x,y)+d(y,z)}
+  
+ (desberdintza triangeluarra).
+Analisi matematikoak espazio metrikoetan definituriko funtzioak aztertzen ditu; espazio metriko erabilienak zuzen erreala, plano konplexua, espazio euklidearra edo bektore espazioak izanik.
+
+
+=== Segida eta limitea ===
+
+Segida 
+  
+    
+      
+        (
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (a_{n})}
+  
+ zerrenda ordenatua da 
+  
+    
+      
+        (
+        
+          a
+          
+            n
+          
+        
+        )
+        :=
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          a
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            n
+          
+        
+        ,
+        …
+      
+    
+    {\displaystyle (a_{n}):=a_{1},a_{2},\ldots ,a_{n},\ldots }
+  
+, non segidako elementuen ordenak garrantzia du eta elementu berdinak hainbat aldiz ager daitezke segidako posizio ezberdinetan. Segida baten propietate garrantzitsuenetako bat konbergentzia da; informalki, segida batek limitea duela diogu sekuentziako elementuak puntu batera hurbiltzen badira. Notazio matematikoan:
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        =
+        a
+      
+    
+    {\displaystyle \lim _{n\to \infty }a_{n}=a}
+  
+.
+Aurreko ekuazioa formalki definitu daiteke segida errealentzat, non 
+  
+    
+      
+        (
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (a_{n})}
+  
+ segidak 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ elementua limitetzat duela esaten dugun, edozein zenbaki erreal 
+  
+    
+      
+        ε
+        >
+        0
+        >
+      
+    
+    {\displaystyle \varepsilon >0>}
+  
+ harturik, 
+  
+    
+      
+        N
+        >
+        0
+      
+    
+    {\displaystyle N>0}
+  
+ existitzen den, non 
+  
+    
+      
+        n
+        >
+        N
+      
+    
+    {\displaystyle n>N}
+  
+ bada, orduan 
+  
+    
+      
+        
+          |
+        
+        a
+        −
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        <
+        ε
+      
+    
+    {\displaystyle |a-a_{n}|<\varepsilon }
+  
+. Definizioa edozein metrikatan definituriko segidetara orokortu dezakegu balio absolutu distantzia metrikako distantziaz ordezkatuz.
+Balio errealdun funtzioen limiteak ere antzera definitu ditzakegu.  
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ funtzioak 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ duela limitetzat 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ zenbaki errealean diogu, 
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            c
+          
+        
+        f
+        (
+        x
+        )
+        =
+        L
+      
+    
+    {\displaystyle \lim _{x\to c}f(x)=L}
+  
+,
+notazioa erabiliz, formalki:
+
+  
+    
+      
+        ∀
+        ε
+        >
+        0
+        ,
+        ∃
+        δ
+        >
+        0
+        ,
+        ∀
+        x
+        :
+        
+          |
+        
+        x
+        −
+        c
+        
+          |
+        
+        <
+        δ
+        ⇒
+        
+          |
+        
+        f
+        (
+        x
+        )
+        −
+        L
+        
+          |
+        
+        <
+        ε
+        .
+      
+    
+    {\displaystyle \forall \varepsilon >0,\exists \delta >0,\forall x\colon |x-c|<\delta \Rightarrow |f(x)-L|<\varepsilon .}
+  
+
+Kontuan hartu balitekeela funtzio batek punturen batean limiterik ez izatea, honelako kasuetan limitea ez dela existitzen diogu.
+
+
+=== Deribatua ===
+
+Emanik 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ funtzioa, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ puntuan deribagarria dela esaten dugu, ondorengo limitea existitzen bada:
+
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        a
+        )
+        =
+        
+          lim
+          
+            x
+            →
+            a
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              )
+              −
+              f
+              (
+              a
+              )
+            
+            
+              x
+              −
+              a
+            
+          
+        
+        .
+      
+    
+    {\displaystyle f'(a)=\lim _{x\to a}{\frac {f(x)-f(a)}{x-a}}.}
+  
+
+
+=== Integrala ===
+
+Emanik 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ funtzioa eta 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+ zuzen errealaren tarte bat, funtzioa tarte honetak integragarria dela dela esaten dugu, funtzioak definituriko grafoaren eta ardatz horizontalaren arteko area, zerrenda bertikal meheen limitetzat definiturik, existitzen bada:
+
+  
+    
+      
+        
+          ∫
+          
+            x
+            =
+            a
+          
+          
+            b
+          
+        
+        f
+        (
+        x
+        )
+         
+        d
+        x
+        =
+        
+          lim
+          
+            δ
+            →
+            0
+          
+        
+        δ
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            [
+            (
+            b
+            −
+            a
+            )
+            
+              /
+            
+            δ
+            ]
+          
+        
+        f
+        (
+        a
+        +
+        n
+        δ
+        )
+        .
+      
+    
+    {\displaystyle \int _{x=a}^{b}f(x)\ dx=\lim _{\delta \to 0}\delta \sum _{n=0}^{[(b-a)/\delta ]}f(a+n\delta ).}
+  
+
+
+== Analisi matematikoaren adarrak ==
+
+
+=== Kalkulua ===
+
+
+=== Analisi erreala ===
+
+Analisi errealak zenbaki errealak eta balio errealdun funtzioak aztertzen ditu. Bereziki, funtzio eta segida errealen propietate analitikoak jorratzen ditu, hala nola; zenbaki errealen serieen konbergentzia eta limiteak, balio errealdun funtzioen jarraitutasuna, deribagarritasuna eta erlazionatutako propietateak.
+
+
+=== Analisi konplexua ===
+
+Analisi konplexua aldagai konplexudun funtzioak ikertzen ditu. Aldagai konplexudun funtzio deribagarriak (funtzio holomorfikoak deituak) beren Taylor seriearen berdinak direnez (hau da, analitikoak), analisi konplexua funtzio analitikoez arduratzen da bereziki.
+Matematikaren adar askotan erabilgarria da, besteak beste, geometria aljebraikoan, zenbakien teorian, matematika aplikatuan; baita fisikan ere, fluidoen dinamikan, termodinamikan, ingeniaritza elektrikoan eta, bereziki, eremu-teoria kuantikoan.
+
+
+=== Analisi funtzionala ===
+
+Analisi funtzionala analisi matematikoaren adar bat da, eta bere nukleoa osatzen du mugekin erlazionatutako nolabaiteko egitura duten bektore-espazioen azterketak (esaterako, espazio barne-produktua, norma, topologia, etab.) eta espazio horietan jarduten duten eta egitura horiek zentzu egokian errespetatzen dituzten aplikazio linealak. Analisi funtzionalaren sustrai historikoak funtzio-espazioen azterketan eta funtzio-eraldaketen propietateen formulazioan daude, hala nola Fourierren transformatua transformazio funtzio jarraituak, unitarioak, eta abar, hau da, funtzio-espazioen arteko operadoreak. Ikuspuntu hori bereziki erabilgarria izan zen ekuazio diferentzialak eta integralak aztertzeko.
+
+
+==== Analisi harmonikoa ====
+
+Analisi harmonikoa, analisi matematikoaren adar bat da, seinaleen funtzioz eta oinarrizko uhin gainjartzearen funtzioz arduratzen dena. Horren barruan sartzen da Fourierren serieen eta Fourierren transformatuen (Fourierren analisia) nozioen eta haien orokortzeen azterketa. Analisi harmonikoak hainbat arlotan ditu aplikazioak, hala nola musikaren teorian, zenbakien teorian, errepresentazioaren teorian, seinaleen prozesamenduan, mekanika kuantikoan, mareen analisian eta neurozientzian.
+
+
+==== Ekuazio diferentzialak ====
+
+Ekuazio diferentzial bat da aldagai baten edo batzuen funtzio ezezagun baterako ekuazio matematiko bat, zeinak funtzioaren beraren balioak eta zenbait ordenatako deribatuak erlazionatzen dituen. Ekuazio diferentzialek eginkizun nabarmena dute ingeniaritzan, fisikan, ekonomian, biologian eta beste diziplina batzuetan.
+
+
+==== Neurriaren teoria ====
+Multzo baten neurketa da multzo horretako azpimultzo egoki bakoitzari zenbaki bat esleitzeko modu sistematikoa, intuizioz haren tamaina gisa interpretatua. Alde horretatik, neurri bat da luzera, azalera eta bolumen kontzeptuen orokortze bat. Adibide bereziki garrantzitsua da Lebesgueren neurria espazio euklidear batean, zeinak geometria euklidearraren ohiko luzera, azalera eta bolumena espazio euklidear 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-dimentsionala 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ azpimultzo egokiei esleitzen dien. Adibidez, zenbaki errealetako 
+  
+    
+      
+        
+          [
+          
+            0
+            ,
+            1
+          
+          ]
+        
+      
+    
+    {\displaystyle \left[0,1\right]}
+  
+ tartearen Lebesgueren neurria da haren luzera, hitzaren eguneroko zentzuan –espezifikoki, 1.
+Teknikoki, neurri bat funtzio bat da, zeinak zenbaki erreal ez-negatibo batek edo +∞ multzo baten (edo gehiagoren) azpimultzo batek ematen duen 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+. Multzo hutsari 0 esleitu behar dio, eta (zenbakigarri) batukorra izan behar du: azpimultzo «handi» baten neurria da, azpimultzo disjuntu «txikiagoen» kopuru finitu (edo kontablean) batean deskonposa daitekeen azpimultzo «txikiagoen» neurrien batura. Oro har, multzo jakin baten azpimultzo bakoitzari tamaina tinko bat lotu nahi bazaio neurri baten beste axiomak asetzen direnean, kontaketa-neurria bezalako adibide arruntak baino ez dira aurkitzen. Arazo hori ebatzi zen azpimultzo guztiak azpimultzo bakar batean definituz, azpimultzo neurgarri deritzenak, zeinak beharrezkoak diren 
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+-aljebra bat eratzeko. Horrek esan nahi du multzo hutsa, bilketa zenbagarriak, ebakidura zenbagarriak eta azpimultzo neurgarrien osagarriak neurgarriak direla. Espazio euklidear bateko multzo ez-neurgarriak, zeinetan Lebesgueren neurria ezin den koherentziaz definitu, konplikatuak dira nahitaez beren osagarriarekin gaizki nahastuta egotearen zentzuan. Izan ere, haien existentzia hautapenaren axiomaren ondorio ez hutsala da.
+
+
+==== Zenbakizko analisia ====
+
+Zenbakizko analisia da analisi matematiko problemetarako (matematika diskretuan ez bezala) zenbakizko hurbilketa erabiltzen duten algoritmoen azterketa (manipulazio sinboliko orokorrak ez bezala).
+Analisi numeriko modernoak ez ditu erantzun zehatzak bilatzen, praktikan, erantzun zehatzak lortzea ezinezkoa delako askotan. Horren ordez, zenbakizko analisiaren zati handi bat gutxi gorabeherako soluzioak lortzeaz arduratzen da, erroreen gaineko arrazoizko mugak mantenduz.
+Zenbakizko analisiak, berez, ingeniaritzaren eta zientzia fisikoen eremu guztietan aurkitzen ditu aplikazioak, baina, XXI. mendean, bizitza-zientziek eta arteek ere kalkulu zientifikoaren elementuak hartu dituzte. Ekuazio diferentzial arruntak zeruko mekanikan agertzen dira (planetak, izarrak eta galaxiak); zenbakizko aljebra lineala garrantzitsua da datuak analizatzeko; ekuazio diferentzial estokastikoak eta Markoven kateak funtsezkoak dira zelula bizien simulazioan medikuntzan eta biologian.
+
+
+==== Bektorialaren analisia ====
+
+
+== Matematikari protagonistak ==
+
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+== Testu liburu ospetsuak ==
+Foundation of Analysis: The Arithmetic of Whole Rational, Irrational and Complex Numbers, by Edmund Landau
+Introductory Real Analysis, by Andrey Kolmogorov, Sergei Fomin
+Differential and Integral Calculus (3 volumes), by Grigorii Fichtenholz
+The Fundamentals of Mathematical Analysis (2 volumes), by Grigorii Fichtenholz
+A Course Of Mathematical Analysis (2 volumes), by Sergey Nikolsky
+Mathematical Analysis (2 volumes), by Vladimir Zorich
+A Course of Higher Mathematics (5 volumes, 6 parts), by Vladimir Smirnov
+Differential And Integral Calculus, by Nikolai Piskunov
+A Course of Mathematical Analysis, by Aleksandr Khinchin
+Mathematical Analysis: A Special Course, by Georgiy Shilov
+Theory of Functions of a Real Variable (2 volumes), by Isidor Natanson
+Problems in Mathematical Analysis, by Boris Demidovich
+Problems and Theorems in Analysis (2 volumes), by George Pólya, Gábor Szegő
+Mathematical Analysis: A Modern Approach to Advanced Calculus, by Tom Apostol
+Principles of Mathematical Analysis, by Walter Rudin
+Real Analysis: Measure Theory, Integration, and Hilbert Spaces, by Elias Stein
+Complex Analysis: An Introduction to the Theory of Analytic Functions of One Complex Variable, by Lars Ahlfors
+Complex Analysis, by Elias Stein
+Functional Analysis: Introduction to Further Topics in Analysis, by Elias Stein
+Analysis (2 volumes), by Terence Tao
+Analysis (3 volumes), by Herbert Amann, Joachim Escher
+Real and Functional Analysis, by Vladimir Bogachev, Oleg Smolyanov
+Real and Functional Analysis, by Serge Lang
+
+
+== Ikus, gainera ==
+Kalkuluaren historia
+Kalkulu multibariable
+
+
+== Erreferentziak ==
+
+
+== Bibliografia ==
+ .  Mathematics: Its Content, Methods, and Meaning.  1–3 (2.. argitaraldia) Cambridge, Massachusetts: The M.I.T. Press / American Mathematical Society March 1969.
+ Apostol, Tom M..  (1974). Mathematical Analysis.  (2.. argitaraldia) Addison–Wesley ISBN 978-0201002881..
+ Binmore, Kenneth George.  (1981). The foundations of analysis: a straightforward introduction.  Cambridge University Press.
+ Johnsonbaugh, Richard; Pfaffenberger, William Elmer.  (1981). Foundations of mathematical analysis.  New York: M. Dekker.
+ Nikol'skiĭ [Нико́льский], Sergey Mikhailovich [Серге́й Миха́йлович].  (2002). Hazewinkel, Michiel ed. Mathematical analysis.  Springer-Verlag ISBN 978-1402006098..
+ (Italieraz) Fusco, Nicola; Marcellini, Paolo; Sbordone, Carlo.  (1996). Analisi Matematica Due.  Liguori Editore ISBN 978-8820726751..
+ (Frantsesez) Rombaldi, Jean-Étienne.  (2004). Éléments d'analyse réelle : CAPES et agrégation interne de mathématiques.  EDP Sciences ISBN 978-2868836816..
+ Rudin, Walter.  (1976). Principles of Mathematical Analysis.  (3.. argitaraldia) New York: McGraw-Hill ISBN 978-0070542358..
+ Rudin, Walter.  (1987). Real and Complex Analysis.  (3.. argitaraldia) New York: McGraw-Hill ISBN 978-0070542341..
+ Whittaker, Edmund Taylor; Watson, George Neville.  (1927-01-02). A Course Of Modern Analysis: An Introduction to the General Theory of Infinite Processes and of Analytic Functions; with an Account of the Principal Transcendental Functions.  (4.. argitaraldia) Cambridge: at the University Press ISBN 0521067944.. (vi+608 pages) (reprinted: 1935, 1940, 1946, 1950, 1952, 1958, 1962, 1963, 1992)
+  Real Analysis – Course Notes. .
+
+
+== Kanpo estekak ==

@@ -1,0 +1,892 @@
+Probabilitatea gertakizun baten ziurgabetasuna, gauzatuko ote den alegia, neurtzen duen zenbaki bat da.
+Probabilitateak [0, 1] tarteko balioak hartzen ditu ([%0, %100], ehunekotan adierazten denean). 1 baliotik zenbat eta gertuago izan, gertakizuna orduan eta seguruagoa edo ziurragoa izango da. Gertakizun baten probabilitatea 1 denean, gertakizuna ziurra dela esaten da, erabateko ziurtasunez gauzatu edo egiaztatuko dela pentsatzen baita. Probabilitatea 0 denean, gertakizuna ezinezkoa dela esaten da. Tarte horretan, 1 baliotik gertuko probabilitatea duten gertakizunak gertagarriak direla esaten da; 0 probabilitatetik gertu dauden gertakizunak, berriz, gertagaitzak direla esaten da.
+Probabilitatea zorizkoak edo ausazkoak diren gertakizunak azaltzeko erabiltzen da. Txanpon bat botatzen denean, ez dago jakiterik zer alde erakutsiko duen eta horrela txanpon bat bota eta gurutzeko suertatzeko probabilitatea %50 dela esaten da. Beste fenomeno batzuk, ordea, ez dira guztiz zorizkoak, kausalak baizik (pertsona batek azterketa bat gainditu behar duen, adibidez, ikasten aritu den orduen mendean dago), baina kausa horien eraginari buruzko informazio zehatzik ez dagoenez, emaitza ez ziurra da eta probabilitate batez irudikatzen da. Zoriaren eta ziurgabetasunaren mendean ez dauden fenomenoak deterministak dira eta probabilitatearen azterketatik at geratzen dira.
+Zenbaki handien legearen arabera, honela interpreta daiteke gertakizun baten probabilitatea: epe luzera, zorizko saiakuntza anitzetan burutzen bada alegia, aldi guztietatik probabilitateak adierazten duen ehunekora hurbiltzeko joera izango du gertakizunak. Adibidez, txanpon bat bota eta gurutzeko suertatzeko probabilitatea 0.5 dela adierazten bada; epe luzera, txanpona aldi askotan bota ondoren, gurutzekoen proportzioa % 50era hurbiltzeko joera izango duela esan nahi du.
+Probabilitateei buruzko kalkulua teoria matematiko zorrotz bat eratuz garatu da, kalkulurako erregela zehatz eta finkoak jarraitzen dituena. Probabilitatearen teoria XVII. mendetik garatu bada ere, probabilitateak kalkulatzeko arauak Andrei Kolmogorov matematikariak finkatu zituen 1930eko hamarkadan. Hortik, probabilitate-teoria zabala eratu da, ziurgabetasunezko fenomenoak probabilitatezko eredu matematikoak erabiliz azaltzen dituena. Beste alde batetik, estatistikak fenomeno aldakorrak eta ez ziurrak aztertzen dituela kontuan hartuz, probabilitatea tresna garrantzitsua da estatistikaren garapen teorikoan eta bertatik zientzia eta teknikaren arlo guztietara zabaltzen da. Adibidez, meteorologiak aztertzen dituen fenomenoak ez ziurrak izaten dira eta hortaz probabilitate kontzeptuan oinarrituriko ereduak eratzen dira fenomeno hauen probabilitateak zehazteko; medikuntzan, sendagaien eraginkortasuna ez ziurra da eta probabilitate batez irudika daitezke; ekonomian, ezezaguna izaten da etorkizunean aldagai ekonomikoek izango duten bilakaera eta probabilitate batez hurbiltzen dira euren balioak. Aldi berean, filosofian eztabaida biziak sortzen dituen kontzeptua da, probabilitate kontzeptuaren onarpenak errealitatearen ikuspegi zorizkoa ote dakarren, adibidez. Ildo horretatik, determinismoak fenomenoen interpretazio guztiz kausala eta ziurrak baieztatzen du, zorizkotasuna erabat ukatuz.
+
+
+== Probabilitatearen interpretazioak ==
+Probabilitatearen interpretazioak probabilitate-kontzeptu ezberdinen azterketa dira, filosofia, zientzia eta matematikaren aldetik. Interpretazio bat egokia izan dadin, probabilitatearen axioma matematikoak errespetatu eta probabilitateen kalkulua eta aplikazioa azaldu behar ditu .
+
+
+=== Interpretazio klasikoa ===
+
+Interpretazio klasikoak probabilitatearen azterketarako gertakizun edo emaitza posible guztiak probabilitate berekoak izan behar direla ezartzen du. Interpretazio honen arabera, A gertakizun baten probabilitatea A gertatzen deneko emaitza guztien proportzioa da, lagin espazio edo emaitza posible guztien kopuruari buruz:
+
+  
+    
+      
+        P
+        [
+        A
+        ]
+        =
+        
+          
+            
+              N
+              
+                A
+              
+            
+            N
+          
+        
+        
+      
+    
+    {\displaystyle P[A]={\frac {N_{A}}{N}}\,}
+  
+
+Adibidez, seiko bat botata, zenbaki bikoitia (2, 4, edo 6) suertatzeko probabilitatea honela kalkulatzen da:
+
+  
+    
+      
+        P
+        [
+        b
+        i
+        k
+        o
+        i
+        t
+        i
+        a
+        ]
+        =
+        
+          
+            
+              
+                |
+              
+              {
+              2
+              ,
+              4
+              ,
+              6
+              }
+              
+                |
+              
+            
+            
+              
+                |
+              
+              {
+              1
+              ,
+              2
+              ,
+              3
+              ,
+              4
+              ,
+              5
+              ,
+              6
+              }
+              
+                |
+              
+            
+          
+        
+        =
+        
+          
+            3
+            6
+          
+        
+        =
+        0.5
+      
+    
+    {\displaystyle P[bikoitia]={\frac {|\{2,4,6\}|}{|\{1,2,3,4,5,6\}|}}={\frac {3}{6}}=0.5}
+  
+
+Jardunbide honen eragozpen gisa, gertakizun edo emaitza posible guztiek suertatzeko probabilitate edo aukera berdinak izan behar dituztela aipatu da. Errealitatean, ordea, egoera bati buruz gerta daitezkeen emaitzak ez dira probabilitate berekoak izaten edota nekeza da probabilitate bereko emaitzetara murriztea. Horrela, bere aplikazio-arloa zoria erabatekoa den kasuetara mugatze da, hala nola zori-jokoetan dago, non konbinazio guztiak probabilitate berekoak diren, jokoaren berdintasuna bermatzeko. Aldi berean, konbinatoria arloko teknikak erabiltzen ditu askotan, emaitza posibleak konbinazio ezberdineko emaitza konplexuagoetan bildu eta hauen kopurua zenbatu behar denean.
+Probabilitatearen interpretazio honen ordezkari nagusia Pierre-Simon Laplace izan zen, Théorie analytique des probabilités bere liburuan interpretazio honen defentsa egiten du.
+
+
+=== Interpretazio frekuentziala ===
+
+Interpretazio frekuentzialaren arabera, aztertzen den fenomenoaren emaitzak aldi askotan zehar jasotzen dira, esperimentatuz edo errealitatetik zuzenean datuak jasoz, probabilitatea gertakizunaren aldeko kasuen proportzioa edo maiztasun erlatiboa izango da. Adibidez, dadoaren emaitza bikoitia izateko probabilitatea emateko, dadoa 1000 aldiz bota eta horietatik 520 alditan bikoitia suertatu bada, emaitza bikoitia izateko probabilitatea 520/1000=0.52 dela adieraz daiteke. Saiakuntza kopurua zenbat eta handiagoa izan, orduan eta fidagarriagoa da probabilitatearen zenbatespena.
+Probabilitatea interpretazio honi jarraiki egiten bada, saiakuntzak burutuz edo datuak jasoz, probabilitatearen balioa estimazio, zenbatespen edo hurbilketa bat izango da betiere, baina zenbat eta aldi gehiagotan bota orduan eta fidagarriagoa. Zenbatespena zuzena izan dadin, saiakuntzak beti egoera homogeneoetan errepikatu behar dira. Hala ere, datuen fidagarritasuna ez da erabatekoa izaten, faktore kontrolaezinak eta neurketa-arazoak direla medio. Egoera homogeneotan errepika ezin daitezkeen gertaerak ere badaude: talde batek futbol-partidu jakin bat irabazteko probabilitatea zenbatesteko, ezin da partidu berdina behin eta berriz kondizio berdinetan errepikatu. Muturrean, kasu bakarreko oztopoa izenekoa sortzen da, gertakari errepikaezinen probabilitateak 1 izango baitirateke (edo 0, azkenik gauzatu ez badira) interpretazio honi jarraiki betiere. Abantaila moduan, aipatu behar da interpretazio klasikoa baliatu ezin daitekeen egoera askotan erabil daitekeela; adibidez oker eginda dagoen dado bateko probabilitateak kalkulatzeko, interpretazio klasikoa desegokia da, alde guztiek ez baitute probabilitate berdina eta ondorioz, irtenbide gisa dadoarekin esperimentatzea besterik ez da geratzen emaitza bakoitzaren probabilitatea zenbatesteko.
+Interpretazio frekuentzialaren bultzatzaileak izan ziren John Venn, Han Reichenbach eta Richard von Mises.
+
+
+=== Interpretazio subjektiboa ===
+Interpretazio subjektibotik, probabilitatea gertakizun baten gauzatzeari buruzko sinesmen-maila edo zenbatespen subjektibo bat da, gertakizunaren aldeko eta aurkako faktoreak kontutan hartuz, pertsona zentzudun baten aldetik. Adibidez, futbol-talde batek hurrengo partidua irabazteko probabilitatea finkatzean, pertsona batek partiduaren emaitza eragiten duten faktore guztiak aztertu eta neurtu ondoren (jokatuko duten jokalariak, aurkaria zein den, azken partiduetako joera, ...), irabazteko probabilitatea 0.7 dela zenbatesten du. Ikuspegi hau estatistika bayestarrean da nagusi eta Frank P. Ramsey filosofoak eta Bruno de Finetti eta Leonard Jimmie Savage matematikariek defendatu dute besteak beste.
+
+
+== Probabilitateen kalkulua ==
+Gertakizun sinpleen probabilitateak interpretazio jakin batean oinarrituta kalkula daitezke, baina osaketaz, ebaketaz, bilketaz edo bestelako multzo-eragiketen bitartez osa daitezkeen gertakizun konplexuagoen probabilitateak kalkulatzeko erregela zenbait errespetatu behar dira, intuitiboki ere aise ulertzen direnak:
+
+Bilketarako eta ebaketarako aurreko erregelak 2 gertakizun baino gehiagotarako ere zabal daitezke. Badira gainera, gertakizunen arteko bestelako erlazioak eta eragiketak (barnekotasuna, kenketa, ...).
+
+
+== Probabilitate-teoria ==
+Probabilitateen kalkuluak garapen matematikoak eskatzen ditu gehienetan. Garapen matematikoa zorrotz garatzeko, probabilitatearen oinarri matematikoak eratu behar dira, probabilitatearen axiomatika osatuz. Probabilitatearen axiomatikan oinarrituz garatutako probabilitatearen teoria matematikoari probabilitate-teoria deritzo.
+Probabilitate-teoriaren garapena XVII. mendean abiarazten bada ere, Andrei Kolmogorov izango zen 1930eko hamarkadan probabilitatearen axiomatika eratu zuena, probabilitatearen oinarri matematikoak finkatuz. Funtsean, multzo-teoriaren eta neurri-teoriaren tresnak erabili zituen probabilitateari buruzko axiomak eratu eta dedukzioa erabiliz probabilitateak kalkulatzeko erregelak matematikoki frogatzeko. Oinarri hauetatik, probabilitate-teoriak probabilitatearen bitartez fenomeno ez ziurrak irudikatzeko eredu konplexuak eratu ditu. Horrela, zorizko aldagai eta probabilitate banaketa izeneko tresnak garatu dira, aldagai batek erakuts ditzakeen balio ezberdinak azaltzen dituztenak balio horien probabilitateei buruz.
+Zorizko aldagai edo fenomeno bati probabilitate ezberdinak dituzten balio posibleek itxaropen matematiko edo itxarondako balio bat izango dute, ezezaguna eta estatistikak zenbatetsi nahi duena. Horretarako, estatistikak laginak edo zoriz jasotako emaitza edo datu zenbait bildu behar ditu, itxarondako balioa edo parametro ezezaguna zenbatesteko. Zenbatespena modu egokian egiteko, lagin ezberdinak suertatzeko probabilitateen kalkulutik abiarazi behar da, laginen populazioarekiko adierazgarritasuna bermatzeko. Laginetik populazioei buruzko konklusioak ateratzen dituen arloari inferentzia estatistiko deritzo.
+Beste alde batetik, denboran zehar aldagai baten bilakaera aztertzen duten prozesu estokastikoen teoria konplexua ere zabaldu da, inferentziarekin ere uztar daitekeena. Konbergentzia estokastikoa ere probabilitate-teoriaren atal garrantzitsua da. Bertan garatu eta frogatu diren zenbaki handien legeak eta limitearen teorema zentralek lagin bateko tamaina handitu ahala zenbatetsi nahi den probabilitate eta itxarondako baliora hurbiltzen dela ziurtatzen da.
+
+
+== Probabilitatearen aplikazioak ==
+Ziurgabetasuna non dagoen, probabilitatea han da. Gehienetan, zientziak ezin ditu kontrolatu fenomeno batean eragina duten faktore guztiak neurtu eta kontrolatzeko eta horrela, etorkizuna gauzatzeko aukera ezberdinekin agertzen da. Biharko eguraldia, datorren urteko ekonomia, hurrengo hauteskundeetako emaitzak, partikula fisiko baten mugimendua eta beste hainbat fenomeno zoriaren mendean daude. Probabilitatea ezin jakin, ez ziur eta zorizko diren emaitza horiek guztiak aztertzeko agertzen da. Probabilitate-teoriak tresna ugari eskaintzen du fenomeno horiek ikuspegi ezberdinetatik irudikatzeko; jakintza-arloa zein den ordea, probabilitatea aztertzeko modua era berezi batean garatu da.
+
+
+=== Zori-jokoak ===
+
+Probabilitate-kalkuluaren garapena zori-jokoen azterketarekin abiatu zuen XVII. mendean. Gerora ere, mus, poker eta bestelako karta eta dado-jokoak probabilitate-ebazkizunak planteatzeko erabili dira eta, ikasleen artean ere, probabilitate-kalkuluaren oinarrizko erregelak erakusteko aproposak dira. Batzuetan, ordea, zori-jokoetako probabilitateen azterketa oso konplexua izan daiteke. Probabilitateei buruzko ebazkizun klasiko asko zori jokoei buruzkoak dira gainera, Chevalier de Méré pertsonaiak planteaturiko puntuen ebazkizuna esaterako.
+Adibidez, dado bat bi aldiz botatzen bada, emaitza posibleak 6×6=36 dira, ondoko taulan erakusten den bezala. 36 emaitza hauek guztiak probabilitate berekoak dira eta beraz, probabilitatearen interpretazio klasikoa erabil daiteke horiekin, Laplaceren erregelaren bitartez.
+Zenbatekoa da dado bat bi aldiz botata 7 lortzeko probabilitatea?
+36 kasuetatik 7 emaitza 6 alditan agertzen da. Beraz, 7 lortzeko probabilitatea 6/36=0.16 da.
+Zenbatekoa da 4 puntu ez lortzeko probabilitatea?
+Aurkako gertakizuna erabiliz: 
+  
+    
+      
+        P
+        [
+         
+        
+          
+            4
+            ¯
+          
+        
+         
+        ]
+        =
+        1
+        −
+        P
+        [
+        4
+        ]
+        =
+        1
+        −
+        (
+        3
+        
+          /
+        
+        36
+        )
+        =
+        33
+        
+          /
+        
+        36
+      
+    
+    {\displaystyle P[\ {\overline {4}}\ ]=1-P[4]=1-(3/36)=33/36}
+  
+
+Zenbatekoa 4 baino gutxiago edo 9 baino gehiago lortzeko probabilitatea?
+Bi gertakizunak (4 baino gutxiago eta 9 baino gehiago) bateraezinak direnez, probabilitateak batura egiten dira:
+
+  
+    
+      
+        P
+        [
+        p
+        <
+        4
+        ∪
+        p
+        >
+        9
+        ]
+        =
+        P
+        [
+        p
+        <
+        4
+        ]
+        +
+        P
+        [
+        p
+        >
+        9
+        ]
+        =
+        3
+        
+          /
+        
+        36
+        +
+        6
+        
+          /
+        
+        36
+        =
+        9
+        
+          /
+        
+        36
+      
+    
+    {\displaystyle P[p<4\cup p>9]=P[p<4]+P[p>9]=3/36+6/36=9/36}
+  
+
+Zenbatekoa da bikoitia edo 7 baino gehiago lortzeko probabilitatea?
+2, 4, 6, 8, 8, 9, 10, 11 eta 12 emaitzen probabilitateak batuz kalkula daiteke probabilitatea, baina baita ere ebaketaren erregela erabiliz bateragarriak diren gertakizunetarako:
+
+  
+    
+      
+        P
+        [
+        (
+        p
+         
+        b
+        i
+        k
+        o
+        i
+        t
+        i
+        a
+        )
+        ∪
+        (
+        p
+        >
+        7
+        )
+        ]
+        =
+        P
+        [
+        p
+         
+        b
+        i
+        k
+        o
+        i
+        t
+        i
+        a
+        ]
+        +
+        P
+        [
+        p
+        >
+        7
+        ]
+        −
+        P
+        [
+        (
+        p
+         
+        b
+        i
+        k
+        o
+        i
+        t
+        i
+        a
+        )
+        ∩
+        (
+        p
+        >
+        7
+        )
+        ]
+        =
+        18
+        
+          /
+        
+        36
+        +
+        15
+        
+          /
+        
+        36
+        −
+        9
+        
+          /
+        
+        36
+        =
+        24
+        
+          /
+        
+        36
+      
+    
+    {\displaystyle P[(p\ bikoitia)\cup (p>7)]=P[p\ bikoitia]+P[p>7]-P[(p\ bikoitia)\cap (p>7)]=18/36+15/36-9/36=24/36}
+  
+
+Zenbatekoa da lehenengo aldian 6 eta bigarren aldian 4 baino gehiago lortzeko probabilitatea?
+Gertakizun independenteak direnez, probabilitateak biderkatu egiten dira:
+
+  
+    
+      
+        P
+        [
+        (
+        
+          p
+          
+            1
+          
+        
+        =
+        6
+        )
+        ∩
+        (
+        
+          p
+          
+            2
+          
+        
+        >
+        4
+        )
+        ]
+        =
+        1
+        
+          /
+        
+        6
+        ×
+        2
+        
+          /
+        
+        6
+        =
+        2
+        
+          /
+        
+        36
+      
+    
+    {\displaystyle P[(p_{1}=6)\cap (p_{2}>4)]=1/6\times 2/6=2/36}
+  
+
+Zenbatekoa da 7 puntu baino gehiago suertatu direla jakinda, 10 puntu lortu izanaren probabilitatea?
+
+  
+    
+      
+        P
+        [
+        (
+        p
+        =
+        10
+        
+          /
+        
+        p
+        >
+        7
+        )
+        =
+        
+          
+            
+              P
+              [
+              (
+              p
+              =
+              10
+              )
+              ∩
+              (
+              p
+              >
+              7
+              )
+              ]
+            
+            
+              P
+              [
+              p
+              >
+              7
+              ]
+            
+          
+        
+        =
+        
+          
+            
+              P
+              [
+              p
+              =
+              10
+              ]
+            
+            
+              P
+              [
+              p
+              >
+              7
+              ]
+            
+          
+        
+        =
+        
+          
+            
+              3
+              36
+            
+            
+              15
+              36
+            
+          
+        
+        =
+        
+          
+            3
+            15
+          
+        
+      
+    
+    {\displaystyle P[(p=10/p>7)={\frac {P[(p=10)\cap (p>7)]}{P[p>7]}}={\frac {P[p=10]}{P[p>7]}}={\frac {\frac {3}{36}}{\frac {15}{36}}}={\frac {3}{15}}}
+  
+
+
+=== Laginketa ===
+
+Estatistikan ohikoa populazio bateko ezaugarriak zenbatesteko lagin bat erauzi eta aztertzea. Lagin jakin batek populazioaren adierazgarri den neurtzeko, lagin hori suertatzeko probabilitatea kalkulatu behar da. Laginaren erauzketa edo laginketa bi eratara egin daiteke: itzuleraz, aldi bakoitzean populaziotik aukeratutako elementua hurrengo elementua atera baino populaziora itzultzen denean; eta itzulerarik gabe, aldi bakoitzean populaziotik aukeratutako elementu hurrengo aldietarako aparte jartzen denean.
+Adibidez, herri batean 60 emakumezko eta 40 gizonezko bizi dira. Zenbatekoa da 3 pertsona zoriz aukeraturik lehenengo biak emakumezko eta hirugarrena gizonezko suertatzeko probabilitatea, laginketa itzuleraz egiten bada?
+Laginketa itzuleraz egiten bada, ateratako pertsonen sexuen artean erabateko independentzia dago eta, beraz, ez da kontuan hartu behar probabilitateak kalkulatzean aurretik zer gertatu den (adibidez, 1e: lehenengo pertsona emakumezkoa):
+
+  
+    
+      
+        P
+        [
+        1
+        e
+        ∩
+        2
+        e
+        ∩
+        3
+        g
+        ]
+        =
+        60
+        
+          /
+        
+        100
+        ×
+        60
+        
+          /
+        
+        100
+        ×
+        40
+        
+          /
+        
+        100
+      
+    
+    {\displaystyle P[1e\cap 2e\cap 3g]=60/100\times 60/100\times 40/100}
+  
+
+Zenbatekoa da 3 pertsonetan 2 emakumezko eta gizonezko bat suertatzeko probabilitatea?
+2 emakumezkoak eta gizonezkoa edozein ordenatan atera daitezke, beraz, eta aurreko probabilitatea ordena posible adina batu behar da. Permutazioak erabiliz,
+
+  
+    
+      
+        P
+        [
+        e
+        =
+        2
+        ,
+        g
+        =
+        1
+        ]
+        =
+        60
+        
+          /
+        
+        100
+        ×
+        60
+        
+          /
+        
+        100
+        ×
+        40
+        
+          /
+        
+        100
+        ×
+        3
+        !
+        
+          /
+        
+        2
+        !
+        1
+        !
+      
+    
+    {\displaystyle P[e=2,g=1]=60/100\times 60/100\times 40/100\times 3!/2!1!}
+  
+
+Zenbatekoa da 3 pertsona zoriz aukeraturik lehenengo biak emakumezko eta hirugarrena gizonezko suertatzeko probabilitatea, laginketa itzulerarik gabe egiten bada?
+Aurretik gertatutakoa kontuan hartu behar da, dependentzia dago alegia, aldi bakoitzean bi sexuetako kopuruak ezberdinak baitira:
+
+  
+    
+      
+        P
+        [
+        1
+        e
+        ∩
+        2
+        e
+        ∩
+        3
+        g
+        ]
+        =
+        P
+        [
+        1
+        e
+        ]
+        ×
+        P
+        [
+        2
+        e
+        
+          /
+        
+        1
+        e
+        ]
+        ×
+        P
+        [
+        3
+        g
+        
+          /
+        
+        1
+        e
+        ∩
+        2
+        e
+        ]
+        =
+        60
+        
+          /
+        
+        100
+        ×
+        59
+        
+          /
+        
+        99
+        ×
+        40
+        
+          /
+        
+        98
+      
+    
+    {\displaystyle P[1e\cap 2e\cap 3g]=P[1e]\times P[2e/1e]\times P[3g/1e\cap 2e]=60/100\times 59/99\times 40/98}
+  
+
+Zenbatekoa da 3 pertsonetan 2 emakumezko eta gizonezko bat suertatzeko probabilitatea?
+Ordena posibleen probabilitateen batura eginez edo koefiziente binomialak erabiliz kalkula daiteke:
+
+  
+    
+      
+        P
+        [
+        1
+        e
+        ∩
+        2
+        e
+        ∩
+        3
+        g
+        ]
+        =
+        60
+        
+          /
+        
+        100
+        ×
+        59
+        
+          /
+        
+        99
+        ×
+        40
+        
+          /
+        
+        98
+        ×
+        3
+        !
+        
+          /
+        
+        2
+        !
+        1
+        !
+        =
+        
+          
+            
+              
+                
+                  
+                    (
+                  
+                  
+                    40
+                    2
+                  
+                  
+                    )
+                  
+                
+              
+              
+                
+                  
+                    (
+                  
+                  
+                    60
+                    1
+                  
+                  
+                    )
+                  
+                
+              
+            
+            
+              
+                (
+              
+              
+                100
+                3
+              
+              
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle P[1e\cap 2e\cap 3g]=60/100\times 59/99\times 40/98\times 3!/2!1!={\frac {{40 \choose 2}{60 \choose 1}}{100 \choose 3}}}
+  
+
+Zenbatekoa da aukeratutako bigarren pertsona emakumezkoa izateko probabilitatea?
+Probabilitate hau lehenengo pertsona nolakoa suertatu den ezberdina denez, probabilitate osoaren teorema baliatu behar da:
+
+  
+    
+      
+        P
+        [
+        2
+        e
+        ]
+        =
+        P
+        [
+        (
+        1
+        e
+        ∩
+        2
+        e
+        )
+        ∪
+        (
+        1
+        g
+        ∩
+        2
+        e
+        )
+        ]
+        =
+        60
+        
+          /
+        
+        100
+        ×
+        59
+        
+          /
+        
+        99
+        +
+        40
+        
+          /
+        
+        100
+        ×
+        60
+        
+          /
+        
+        99
+      
+    
+    {\displaystyle P[2e]=P[(1e\cap 2e)\cup (1g\cap 2e)]=60/100\times 59/99+40/100\times 60/99}
+  
+
+
+=== Bayesen teorema ===
+Ohikoa da estatistikan gertakizunei hasierako probabilitate subjektiboak esleitu eta ondoren, jasotako datuetan oinarrituz, hasierako probabilitateak hauek zehaztea. Prozesua Bayesen teorema jarraituz garatzen da eta zientziako arlo askotan erabiltzen da.
+Adibidez, 3 pilota gorri eta 7 beltz dituen ontzi bat hartuko da. Lehenengo pilota bat erauzi eta kolorea begiratu gabe, bigarren pilota atera eta gorria dela ikusten da. Zenbatekoa da lehenengo pilota beltza izateko probabilitatea?
+Bestelako informaziorik gabe, hasiera batean, lehenengo pilota beltza izateko probabilitatea 7/10 da. Bigarren pilota gorria izateak bigarrenean gorria ateratzeko aukerak handiagoak direla erakusten du eta horretarako lehenengo pilota beltza izan beharko litzateke. Bayesen teorema garatuz (B: jasotako ebidentzia, bigarren pilota gorria dela alegia):
+
+Horrela, lehenengo pilota beltza izateko probabilitatea hasierako 0.7tik ebidentziak aldatutako 0.77ra gehitzen da, intuizioarekin ados.
+
+
+== Historia ==
+[XVI. mendea]]n italiar matematikariek zoriari buruzko ebazkizunak planteatzen hasiak baziren ere, 1654 urtean sortutako eztabaida bat izan zen probabilitate-kalkuluaren jaiotzaren pizgarria. Antoine de Gombaud edo Chevalier de Méré izeneko pertsonaiak Blaise Pascal matematikari frantsesari dado-joko baten azterketa batean lortutako emaitza harrigarrien berri eman zion eta honek Pierre de Fermat matematikariarekin abiarazi zuen ebazkizunari buruzko gutun-harremana: bi dado 24 aldiz botata, bi sei ateratzeko aukerak ez ateratzeko aukerak baino handiagoak direla bide ziren Chevalier de Méré pertsonaiak egindako arrazoibidean oinarrituz, baina emaitzek ez zuten egiaztatzen hipotesi hori.
+Christian Huygens zientzialari holandarrak gutun hauen berri izan zuen eta 1657 urtean De Ratiociniis in Ludo Aleae liburua plazaratu zuen, aipaturiko ebazkizunaren eta beste zenbaiten azterketa eginez. Zori-jokoek garai hartan herritarren artean sortzen zuten jakin-mina zela eta, jakintsuen arreta erakarri eta probabilitateen kalkuluari buruzko lehenengo erregelak frogatzen hasi ziren XVIII. mendean. Urte haietan probabilitatea landu zuten pertsonaia ezagunak Jakob Bernoulli eta Abraham de Moivre izan ziren.
+1812an Pierre-Simon Laplacek pauso berri ematen du probabilitate-teorian, Théorie Analytique des Probabilités bere liburuan. Probabilitatearen aplikazioak zori-jokoetatik arlo zientifikora zabaldu zuen, erroreen teoriara esaterako. XIX. mendean zehar ere aplikazio berriak sortzen joan ziren.
+Probabilitatearen teoria matematikoa ere XIX. mendean hasi zen garatzen, Pafnuti Txebixev eta Andrei Markoven eskutik besteak beste, baina probabilitatearen oinarri matematikoak behin betirako finkatu zituena Andrei Kolmogorov izan zen 1933 urteko Grundbegriffe der Wahrscheinlichkeitsrechnung (Probabilitatearen teoriaren oinarriak, euskaraz) izenburuko bere liburuan.
+
+
+== Ariketak ==
+
+	Probabilitatea
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+== Erreferentziak ==
+
+
+== Bibliografia ==
+Fernandez, K.; Orbe Lizundia, Josu; Zubia Zubiaurre, Marian; Fernandez Agirre, Karmele.  (1997). «Estatistika I eta Estatistika II: Ariketak» www.ueu.eus
+Miguel, Aitor. «Estatistika eta probabilitatea» prezi.com
+(Ingelesez) Barragués, J. I.; Morais, A.; Guisasola, J. (2016). Probability and Statistics: A Didactic Introduction.  CRC Press
+(Ingelesez) Kallenberg, O. (2005) Probabilistic Symmetries and Invariance Principles. Springer-Verlag, New York. 510 pp. ISBN 0-387-25115-4
+(Ingelesez) Kallenberg, O. (2002) Foundations of Modern Probability, 2nd ed. Springer Series in Statistics. 650 pp. ISBN 0-387-95313-2
+(Ingelesez) Olofsson, Peter (2005) Probability, Statistics, and Stochastic Processes, Wiley-Interscience. 504 pp ISBN 0-471-67969-0.
+(Frantsesez) Sylvie Méléard, Aléatoire - Introduction à la théorie et au calcul des probabilités [archive], Éditions de l'École Polytechnique, 2010
+(Frantsesez) Claude Aslangul, , Université Pierre et Marie Curie, La science à Paris, 2004 (lire en ligne [archive]), chap. 8
+(Frantsesez) Jean Bertoin, , 2000, 79 p. (lire en ligne [archive])
+(Frantsesez) Bernard Courtebras, Mathématiser le hasard, Vuibert, 2008
+(Ingelesez) Jean Jacod et Philip E. Protter, , Springer, 2003, 254 p. (lire en ligne [archive])
+(Frantsesez) Jean-François Le Gall, , 2006, 248 p. (lire en ligne [archive])
+(Ingelesez)(Ingelesez) Daniel Revuz et Marc Yor, , vol. 293, Springer, 2004, 3e éd., 606 p. (lire en ligne [archive])
+(Frantsesez) Gilbert Saporta, , Paris, Éditions Technip, 2006, 622 p. [détail des éditions] (ISBN 978-2-7108-0814-5, présentation en ligne [archive]).
+(Ingelesez) Iakov Sinaï, , Berlin/Heidelberg/Paris etc., Springer, 1992, 138 p. (ISBN 3-540-53348-6, lire en ligne [archive])
+(Frantsesez) J Tricot, , vol. V, t. 1 à 8, VRIN, 1990, 368 p. (lire en ligne [archive])
+ 
+
+
+== Ikus, gainera ==
+Probabilitateari buruzko glosarioa
+Dadoetako probabilitateak
+Probabilitateak kontingentzia-taula batean
+
+
+== Kanpo estekak ==
+(Ingelesez) Virtual Laboratories in Probability and Statistics (Univ. of Ala.-Huntsville)
+(Ingelesez) Probability and Statistics EBook
+(Ingelesez) Edwin Thompson Jaynes. Probability Theory: The Logic of Science. Preprint: Washington University, (1996). – HTML index with links to PostScript files and PDF (first three chapters)
+(Ingelesez) People from the History of Probability and Statistics (Univ. of Southampton)
+(Ingelesez) Probability and Statistics on the Earliest Uses Pages (Univ. of Southampton)
+(Ingelesez) Earliest Uses of Symbols in Probability and Statistics on Earliest Uses of Various Mathematical Symbols
+(Ingelesez) A tutorial on probability and Bayes' theorem devised for first-year Oxford University students
+(Ingelesez) U B U W E B :: La Monte Young pdf file of An Anthology of Chance Operations (1963) at UbuWeb
+(Ingelesez) Introduction to Probability – eBook Artxibatua 27 uztaila 2011 hemen: Wayback Machine, by Charles Grinstead, Laurie Snell Source Artxibatua 25 martxoa 2012 hemen: Wayback Machine (GNU Free Documentation License)
+(Italieraz) Bruno de Finetti, Probabilità e induzione, Bologna, CLUEB, 1993. ISBN 88-8091-176-7 (digital version)
+(Ingelesez) Richard Feynman's Lecture on probability.
+(Gaztelaniaz) Problemas selectos de probabilidad (resueltos)
+(Ingelesez) Edwin Thompson Jaynes. Probability Theory: The Logic of Science. Preprint: Washington University, (1996). (PDF)
+(Gaztelaniaz) Un problema de probabilidades: [1]

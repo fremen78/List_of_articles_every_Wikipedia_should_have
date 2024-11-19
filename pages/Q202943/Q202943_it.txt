@@ -1,0 +1,1060 @@
+In matematica, una divisione per zero è una divisione della forma 
+  
+    
+      
+        
+          
+            a
+            0
+          
+        
+      
+    
+    {\textstyle {\frac {a}{0}}}
+  
+ il cui risultato non esiste, poiché risulta priva di significato in aritmetica e in algebra, in quanto nessun numero moltiplicato per 0 dà come risultato a.
+È piuttosto diffusa l'errata opinione per cui il valore di 
+  
+    
+      
+        
+          
+            a
+            0
+          
+        
+      
+    
+    {\textstyle {\frac {a}{0}}}
+  
+ sarebbe 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+ (infinito). Questa affermazione fa riferimento, in modo non del tutto corretto, a un'interpretazione della divisione in termini della teoria dei limiti dell'analisi matematica.
+Un primissimo riferimento registrato dell'impossibilità di assegnare un risultato alla divisione per zero si ha nella critica al calcolo infinitesimale contenuta in The Analyst di George Berkeley.
+Esistono comunque particolari strutture matematiche all'interno delle quali la divisione per zero potrebbe essere definita in modo consistente (per esempio, la sfera di Riemann).
+In informatica, e in particolare nell'implementazione elettronica dell'aritmetica nelle ALU dei processori, una divisione per zero causa un'eccezione (o trap) hardware e di conseguenza (in genere) la terminazione del programma che ha tentato l'operazione. Nei linguaggi interpretati come Python, un tentativo di eseguire una divisione per zero viene generalmente intercettato dall'interprete, che segnala l'anomalia (per esempio attraverso una eccezione) senza tentare di eseguire l'operazione. In JavaScript, al contrario, il risultato è Infinity.
+
+
+== Origini del problema ==
+Il brahmasphutasiddhanta di Brahmagupta è il più antico testo conosciuto che tratta lo zero come un numero vero e proprio e che cerca di definire le operazioni che lo riguardano. L'autore tuttavia dà alla divisione per zero un significato che noi considereremmo scorretto; secondo Brahmagupta, infatti:
+
+"Un numero positivo o negativo diviso per zero è una frazione avente lo zero al denominatore. Zero diviso per un numero negativo o positivo è equivalente sia allo zero che ad una frazione avente lo zero al numeratore e una quantità finita al denominatore. Zero diviso per zero è zero."
+Nell'830, Mahavira tentò senza successo di correggere l'errore di Brahmagupta nel suo libro Ganita Sara Samgraha:
+
+"Un numero non viene modificato quando diviso per zero."
+Bhaskara II tentò di risolvere il problema definendo 
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    n
+                    0
+                  
+                
+                =
+                ∞
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}{\frac {n}{0}}=\infty \end{matrix}}}
+  
+. Questa definizione non è priva di senso, ma può portare a paradossi se non viene trattata con attenzione. È difficile che Bhaskara II abbia compreso tutti i problemi connessi, quindi la sua soluzione non viene considerata corretta.
+
+
+== Interpretazione algebrica ==
+È generalmente stabilito fra i matematici che un modo naturale per interpretare la divisione per zero è prima definire la divisione in termini di altre operazioni aritmetiche. Stando alle normali regole per l'aritmetica su interi, numeri razionali, numeri reali e numeri complessi, il valore di una divisione per zero è indefinito, così come in un qualunque campo. Il motivo è che la divisione è definita in modo da essere l'operazione inversa della moltiplicazione. Questo significa che il valore di 
+  
+    
+      
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\textstyle {a \over b}}
+  
+ è la soluzione 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ dell'equazione
+
+  
+    
+      
+        b
+        
+        x
+        =
+        a
+      
+    
+    {\displaystyle b\,x=a}
+  
+
+qualora un tale valore esista e sia unico. In caso contrario l'espressione 
+  
+    
+      
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\textstyle {a \over b}}
+  
+ è indefinita. Per 
+  
+    
+      
+        b
+        =
+        0
+      
+    
+    {\textstyle b=0}
+  
+, l'equazione 
+  
+    
+      
+        b
+        
+        x
+        =
+        a
+      
+    
+    {\textstyle b\,x=a}
+  
+ può essere riscritta come 
+  
+    
+      
+        0
+        
+        x
+        =
+        a
+      
+    
+    {\textstyle 0\,x=a}
+  
+ o semplicemente 
+  
+    
+      
+        0
+        =
+        a
+      
+    
+    {\textstyle 0=a}
+  
+. Quindi, in questo caso, l'equazione 
+  
+    
+      
+        b
+        
+        x
+        =
+        a
+      
+    
+    {\textstyle b\,x=a}
+  
+ ha nessuna soluzione se 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ è diverso da 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+, e ne ha infinite se 
+  
+    
+      
+        a
+      
+    
+    {\textstyle a}
+  
+ è uguale a 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+. In entrambi i casi, 
+  
+    
+      
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\textstyle {a \over b}}
+  
+ è indefinito. Al contrario, negli insiemi numerici menzionati sopra, l'espressione 
+  
+    
+      
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\textstyle {a \over b}}
+  
+ è sempre definita se 
+  
+    
+      
+        b
+      
+    
+    {\textstyle b}
+  
+ non è uguale a zero.
+
+
+=== Dimostrazioni fallaci basate sulla divisione per zero ===
+È possibile nascondere una divisione per zero in una dimostrazione algebrica, portando ad un sofisma algebrico simile a 2 = 1 come segue:
+
+Per ogni numero reale 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+:
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          x
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          x
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle x^{2}-x^{2}=x^{2}-x^{2}.}
+  
+
+Scomponendo entrambi i membri in modo diverso:
+
+  
+    
+      
+        (
+        x
+        −
+        x
+        )
+        (
+        x
+        +
+        x
+        )
+        =
+        x
+        (
+        x
+        −
+        x
+        )
+        .
+      
+    
+    {\displaystyle (x-x)(x+x)=x(x-x).}
+  
+
+(Il termine di sinistra è ottenuto come caso particolare della ben nota regola (a + b)(a - b) = a2 - b2 ; quello di destra semplicemente raccogliendo x a fattor comune)
+
+Dividendo entrambi i membri per 
+  
+    
+      
+        x
+        −
+        x
+      
+    
+    {\displaystyle x-x}
+  
+:
+
+  
+    
+      
+        x
+        +
+        x
+        =
+        x
+        .
+      
+    
+    {\displaystyle x+x=x.}
+  
+
+Poiché questo è valido per ogni valore reale di 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ possiamo sostituire 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ con 1, ad esempio, da cui il risultato fallace:
+
+  
+    
+      
+        2
+        =
+        1.
+      
+    
+    {\displaystyle 2=1.}
+  
+
+La fallacia è nell'assumere che la divisione per 
+  
+    
+      
+        x
+        −
+        x
+      
+    
+    {\displaystyle x-x}
+  
+, dunque per zero, sia definita. In pratica, la divisione per un termine in una qualunque dimostrazione algebrica richiede o una esplicita assunzione che il termine non sia mai zero o una separata giustificazione che mostri che tale termine non possa mai essere zero.
+
+
+=== Algebra astratta ===
+Simili proposizioni sono vere in strutture algebriche più generali, come in un anello o in un campo. In un campo, ogni elemento non zero è invertibile sotto la moltiplicazione, così, come sopra, la divisione pone problemi solo durante la divisione per zero. In altri anelli, però, anche la divisione per elementi non zero può porre problemi. Consideriamo, per esempio, l'anello 
+  
+    
+      
+        
+          Z
+        
+        
+          /
+        
+        6
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} /6\mathbb {Z} }
+  
+ degli interi modulo 6. Quale significato dobbiamo dare all'espressione 
+  
+    
+      
+        
+          
+            2
+            2
+          
+        
+      
+    
+    {\textstyle {2 \over 2}}
+  
+.
+Questa dovrebbe essere la soluzione 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ dell'equazione
+
+  
+    
+      
+        2
+        
+        x
+        ≡
+        2
+        
+          
+          (
+          mod
+          
+          6
+          )
+        
+        .
+      
+    
+    {\displaystyle 2\,x\equiv 2{\pmod {6}}.}
+  
+
+Ma l'equazione ha due distinte soluzioni,  x ≡ 1 (mod 6) e  x ≡ 4 (mod 6) per cui l'espressione è indefinita. Il problema sorge poiché 2 non è invertibile rispetto alla moltiplicazione.
+
+
+== Limiti e divisione per zero ==
+Ad un primo acchito, potrebbe sembrare possibile definire 
+  
+    
+      
+        
+          
+            a
+            0
+          
+        
+      
+    
+    {\textstyle {a \over 0}}
+  
+ considerando il limite di 
+  
+    
+      
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\textstyle {a \over b}}
+  
+ con 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ che tende a 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+.
+Con 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ che tende a 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+ da destra (positivo), per ogni 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ maggiore di zero (positivo), è noto che:
+
+  
+    
+      
+        
+          lim
+          
+            b
+            →
+            
+              0
+              
+                +
+              
+            
+          
+        
+        
+          
+            a
+            b
+          
+        
+        =
+        +
+        ∞
+      
+    
+    {\displaystyle \lim _{b\to 0^{+}}{a \over b}=+\infty }
+  
+
+invece per ogni 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ minore di zero (negativo),
+
+  
+    
+      
+        
+          lim
+          
+            b
+            →
+            
+              0
+              
+                +
+              
+            
+          
+        
+        
+          
+            a
+            b
+          
+        
+        =
+        −
+        ∞
+        .
+      
+    
+    {\displaystyle \lim _{b\to 0^{+}}{a \over b}=-\infty .}
+  
+
+Studiando invece il limite con 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ che tende a 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+ da sinistra (negativo), per 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ positivo
+
+  
+    
+      
+        
+          lim
+          
+            b
+            →
+            
+              0
+              
+                −
+              
+            
+          
+        
+        
+          
+            a
+            b
+          
+        
+        =
+        −
+        ∞
+        ,
+      
+    
+    {\displaystyle \lim _{b\to 0^{-}}{a \over b}=-\infty ,}
+  
+
+e per 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ negativo
+
+  
+    
+      
+        
+          lim
+          
+            b
+            →
+            
+              0
+              
+                −
+              
+            
+          
+        
+        
+          
+            a
+            b
+          
+        
+        =
+        +
+        ∞
+        .
+      
+    
+    {\displaystyle \lim _{b\to 0^{-}}{a \over b}=+\infty .}
+  
+
+Tuttavia usando l'equazione
+
+  
+    
+      
+        +
+        ∞
+        =
+        
+          
+            1
+            0
+          
+        
+        =
+        
+          
+            1
+            
+              −
+              0
+            
+          
+        
+        =
+        −
+        
+          
+            1
+            0
+          
+        
+        =
+        −
+        ∞
+        ,
+      
+    
+    {\displaystyle +\infty ={\frac {1}{0}}={\frac {1}{-0}}=-{\frac {1}{0}}=-\infty ,}
+  
+
+si giunge al risultato errato 
+  
+    
+      
+        +
+        ∞
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle +\infty =-\infty }
+  
+ (che è scaturito dal non considerare la diversità del limite destro e sinistro in 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+). Si potrebbe anche condurre uno studio considerando un "infinito senza segno", ma la definizione che ne risulterebbe non sarebbe utile in questo contesto poiché non sarebbe compatibile con la struttura dei numeri reali di campo ordinato.
+L'equazione
+
+  
+    
+      
+        0
+        x
+        =
+        a
+        ,
+      
+    
+    {\displaystyle 0x=a,}
+  
+
+ancora non possiede soluzione per ogni 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ finito. Inoltre, non vi è nessuna definizione ovvia di 
+  
+    
+      
+        
+          
+            0
+            0
+          
+        
+      
+    
+    {\textstyle {0 \over 0}}
+  
+ che possa essere derivata considerando il limite di una divisione. Il limite
+
+  
+    
+      
+        
+          lim
+          
+            (
+            a
+            ,
+            b
+            )
+            →
+            (
+            0
+            ,
+            0
+            )
+          
+        
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\displaystyle \lim _{(a,b)\to (0,0)}{a \over b}}
+  
+
+non esiste. Limiti nella forma
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            0
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              )
+            
+            
+              g
+              (
+              x
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \lim _{x\to 0}{f(x) \over g(x)}}
+  
+
+nei quali sia 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ e 
+  
+    
+      
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle g(x)}
+  
+ tendono a 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+ quando 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ tende a 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+, possono convergere a qualunque valore o non convergere affatto. Vedere la regola di De L'Hôpital per discussioni ed esempi sui limiti di rapporti.
+
+
+== In analisi matematica ==
+Nella teoria delle distribuzioni si può estendere la funzione 
+  
+    
+      
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\textstyle {1 \over x}}
+  
+ ad una distribuzione sullo spazio intero dei numeri reali (utilizzando il valore principale di Cauchy). Non ha comunque senso chiedere il 'valore' di questa distribuzione con 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\displaystyle x=0}
+  
+; una risposta sofisticata si appoggia al supporto singolare della distribuzione.
+
+
+== Altri sistemi numerici ==
+Anche se la divisione per zero è indefinita coi numeri reali e gli interi è possibile definirla consistentemente in altre strutture matematiche, per esempio sulla sfera di Riemann (vedere anche i poli in analisi complessa). Nei numeri iperreali e nei numeri surreali la divisione per infinitesimi è possibile. Se un sistema numerico forma un anello commutativo, come gli interi, i numeri reali e i numeri complessi, per esempio, può essere esteso ad una ruota nella quale la divisione per zero è sempre possibile, anche se la divisione ha un significato leggermente diverso.
+
+
+== Aritmetica dei calcolatori ==
+
+Nello standard IEEE 754 per la virgola mobile, supportato da praticamente tutti i moderni processori, viene specificato che ogni operazione aritmetica in virgola mobile, compresa la divisione per zero, ha un risultato ben definito. Nell'aritmetica IEEE 754, 
+  
+    
+      
+        
+          
+            a
+            0
+          
+        
+      
+    
+    {\textstyle {a \over 0}}
+  
+ è infinito positivo quando 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ è positivo, infinito negativo quando 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ è negativo, e NaN (not a number) quando 
+  
+    
+      
+        a
+        =
+        0
+      
+    
+    {\displaystyle a=0}
+  
+. Queste definizioni derivano dalle proprietà dei limiti di rapporti, come discusso sopra.
+La divisione intera per zero è generalmente gestita differentemente poiché non vi è una rappresentazione intera per il risultato. La maggior parte dei processori genera una eccezione quando viene tentata la divisione intera per zero. Il risultato è tipicamente la terminazione del programma anche se in alcuni casi (specialmente quelli che impiegano l'aritmetica a virgola fissa nel caso in cui non sia disponibile hardware dedicato per la virgola mobile) viene impiegato un comportamento simile allo standard IEEE, utilizzando grandi numeri positivi e negativi per approssimare gli infiniti.
+
+
+== Note ==
+
+
+== Voci correlate ==
+Sofisma algebrico
+
+
+== Altri progetti ==
+
+ Wikimedia Commons contiene immagini o altri file sulla divisione per zero
+
+
+== Collegamenti esterni ==
+
+(EN) Eric W. Weisstein, Division by Zero, su MathWorld, Wolfram Research.

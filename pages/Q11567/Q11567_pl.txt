@@ -1,0 +1,5962 @@
+Liczby zespolone – uogólnienie zbioru liczb rzeczywistych zawierające jednostkę urojoną 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ – liczbę, której kwadrat, czyli druga potęga, wynosi minus jeden: 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1.
+      
+    
+    {\displaystyle i^{2}=-1.}
+  
+ Taki obiekt nie występuje na rzeczywistej osi liczbowej, jednak można go skonstruować za pomocą liczb rzeczywistych, co opisano dalej. Iloczyny jednostki urojonej i liczb rzeczywistych – czyli postaci 
+  
+    
+      
+        b
+        i
+        ,
+         
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle bi,\ b\in \mathbb {R} }
+  
+ – są nazywane liczbami urojonymi. Liczbami zespolonymi nazywa się dowolną sumę liczby rzeczywistej i urojonej, czyli wyrażenia algebraiczne postaci 
+  
+    
+      
+        a
+        +
+        b
+        i
+        ,
+      
+    
+    {\displaystyle a+bi,}
+  
+ gdzie 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a,b\in \mathbb {R} }
+  
+.
+Zbiór ten zwykle oznacza się dużą literą 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+. Można w nim wykonywać cztery podstawowe działania arytmetyczne, czyli dodawanie, odejmowanie, mnożenie i dzielenie przez wszystkie liczby oprócz zera; są przy tym zachowane podstawowe własności tych działań jak:
+
+przemienność i łączność dodawania oraz mnożenia;
+rozdzielność mnożenia względem dodawania i odejmowania.
+Liczby zespolone można też:
+
+potęgować z wykładnikiem naturalnym dodatnim, a niektóre liczby zespolone podnosić też do innych potęg, w tym zespolonych;
+pierwiastkować, rozwiązując odpowiednie równania algebraiczne lub podnosząc te liczby do potęg ułamkowych;
+logarytmować.
+Obliczenia na liczbach zespolonych bywają prostsze przy użyciu ich alternatywnych postaci, znanych jako trygonometryczna i wykładnicza, co opisano niżej.
+Liczby zespolone mają standardowe przedstawienie geometryczne – można je rozumieć jako punkty na płaszczyźnie, na której leży także oś rzeczywista, lub jako ich wektory wodzące, tj. prowadzące do nich z zera. Taka dwuwymiarowa konstrukcja jest znana jako płaszczyzna zespolona lub płaszczyzna Gaussa. Można na niej wprowadzać różne układy współrzędnych:
+
+układ prostokątny (kartezjański) opisuje liczbę zespoloną 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ za pomocą uporządkowanej pary liczb rzeczywistych 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        ,
+      
+    
+    {\displaystyle (a,b),}
+  
+ nazywanych odpowiednio częścią rzeczywistą i urojoną, oznaczanych 
+  
+    
+      
+        Re
+        ⁡
+        z
+        =
+        a
+        ,
+        Im
+        ⁡
+        z
+        =
+        b
+      
+    
+    {\displaystyle \operatorname {Re} z=a,\operatorname {Im} z=b}
+  
+;
+układ biegunowy opisuje każdą z tych liczb za pomocą odległości od zera – początku tego układu – oraz miary kąta między tym wektorem a półprostą liczb dodatnich. Wielkości te są znane jako moduł i argument główny, oznaczane 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        ,
+        arg
+        ⁡
+        z
+        ;
+      
+    
+    {\displaystyle |z|,\arg z;}
+  
+ za ich pomocą konstruuje się wspomniane postaci trygonometryczne i wykładnicze.
+Diagram przedstawiający płaszczyznę zespoloną (Gaussa) z kartezjańskimi osiami współrzędnych jest znany jako diagram Arganda; jego przykład podano obok. Istnieją też inne geometryczne opisy tego zbioru liczbowego, np. sfera Riemanna rozszerzająca liczby zespolone o nieskończoność.
+Liczby zespolone są rozważane od XVI wieku, kiedy użyto ich w algebrze do rozwiązywania równań trzeciego stopnia, inaczej sześciennych. Odtąd przenikły do różnych działów matematyki i jej zastosowań:
+
+okazały się użyteczne w trygonometrii i opartej na niej analizie harmoniczej. Tych dyscyplin używa się do opisu drgań, fal i sygnałów, przez co liczby zespolone zastosowano w różnych naukach empirycznych i technicznych jak fizyka, elektrotechnika i elektronika;
+powstał dział matematyki oparty w całości na tych liczbach – analiza zespolona, która również znalazła zastosowania w matematyce i poza nią. Niektóre z jej problemów uznano za jedne z najdonioślejszych w całej matematyce.
+W algebrze abstrakcyjnej mówi się, że liczby zespolone tworzą ciało i są rozszerzeniem ciała liczb rzeczywistych o jednostkę urojoną. Podano różne konstrukcje tej struktury algebraicznej, oparte na parach uporządkowanych, macierzach, przekształceniach liniowych płaszczyzny kartezjańskiej i na pierścieniach ilorazowych, co opisano niżej. Opisano też uogólnienia liczb zespolonych jak kwaterniony, inne liczby hiperzespolone i inne algebry Clifforda.
+
+
+== Postać algebraiczna (kanoniczna) ==
+Każdą liczbę zespoloną 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ można zapisać w postaci
+
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+        ,
+      
+    
+    {\displaystyle z=a+bi,}
+  
+
+gdzie 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ są pewnymi liczbami rzeczywistymi oraz 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ jest tak zwaną jednostką urojoną, to znaczy jednym z dwóch elementów zbioru liczb zespolonych, spełniających warunek 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+ (drugim elementem jest 
+  
+    
+      
+        −
+        i
+      
+    
+    {\displaystyle -i}
+  
+). Spotyka się czasami zapis 
+  
+    
+      
+        i
+        =
+        
+          
+            −
+            1
+          
+        
+        ,
+      
+    
+    {\displaystyle i={\sqrt {-1}},}
+  
+ który nie jest formalnie poprawny ze względu na fakt, że również 
+  
+    
+      
+        (
+        −
+        i
+        
+          )
+          
+            2
+          
+        
+        =
+        −
+        1
+        ,
+      
+    
+    {\displaystyle (-i)^{2}=-1,}
+  
+ jest on jednak uznawany za pewien skrót myślowy i powszechnie akceptowany.
+Postać 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ jest nazywana postacią algebraiczną liczby zespolonej 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ albo postacią kanoniczną.
+Dla liczby 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ definiuje się jej
+
+część rzeczywistą (łac. pars realis) jako 
+  
+    
+      
+        
+          r
+          e
+        
+        z
+        =
+        a
+      
+    
+    {\displaystyle \mathrm {re} z=a}
+  
+ (inne oznaczenia: 
+  
+    
+      
+        ℜ
+        z
+        ,
+        
+        
+          R
+          e
+        
+        z
+      
+    
+    {\displaystyle \Re z,\,\mathrm {Re} z}
+  
+),
+część urojoną (łac. pars imaginaria) jako 
+  
+    
+      
+        
+          i
+          m
+        
+        z
+        =
+        b
+      
+    
+    {\displaystyle \mathrm {im} z=b}
+  
+ (inne oznaczenia: 
+  
+    
+      
+        ℑ
+        z
+        ,
+        
+        
+          I
+          m
+        
+        z
+      
+    
+    {\displaystyle \Im z,\,\mathrm {Im} z}
+  
+).
+Przykładowo liczba 
+  
+    
+      
+        7
+        −
+        5
+        i
+      
+    
+    {\displaystyle 7-5i}
+  
+ jest liczbą zespoloną, której część rzeczywista wynosi 
+  
+    
+      
+        7
+        ,
+      
+    
+    {\displaystyle 7,}
+  
+ a część urojona 
+  
+    
+      
+        −
+        5.
+      
+    
+    {\displaystyle -5.}
+  
+ Liczby rzeczywiste są utożsamiane z liczbami zespolonymi o części urojonej równej 
+  
+    
+      
+        0.
+      
+    
+    {\displaystyle 0.}
+  
+
+Liczby postaci 
+  
+    
+      
+        z
+        =
+        0
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=0+bi}
+  
+ nazywa się liczbami urojonymi.
+
+
+=== Zapis alternatywny ===
+W zastosowaniach fizycznych, elektrycznych, elektrotechnicznych i tym podobnych zapis 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ może okazać się mylący z powodu wykorzystywania w tych dziedzinach litery 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ do innych celów, na przykład chwilowego natężenia prądu elektrycznego. Dlatego też stosuje się zapis niepowodujący podobnych kłopotów, mianowicie 
+  
+    
+      
+        z
+        =
+        a
+        +
+        j
+        b
+        ,
+      
+    
+    {\displaystyle z=a+jb,}
+  
+ w którym to 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+  
+ oznacza jednostkę urojoną.
+
+
+=== Równość ===
+Dwie liczby zespolone są równe wtedy i tylko wtedy, gdy ich części rzeczywiste są równe i części urojone są równe. Innymi słowy, liczby zespolone 
+  
+    
+      
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle a+bi}
+  
+ oraz 
+  
+    
+      
+        c
+        +
+        d
+        i
+      
+    
+    {\displaystyle c+di}
+  
+ są równe wtedy i tylko wtedy, gdy 
+  
+    
+      
+        a
+        =
+        c
+      
+    
+    {\displaystyle a=c}
+  
+ oraz 
+  
+    
+      
+        b
+        =
+        d
+        .
+      
+    
+    {\displaystyle b=d.}
+  
+
+
+=== Działania ===
+Dodawanie, odejmowanie i mnożenie liczb zespolonych w postaci algebraicznej
+wykonuje się tak samo jak odpowiednie operacje na wyrażeniach algebraicznych, przy czym 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+        
+          :
+        
+      
+    
+    {\displaystyle i^{2}=-1{:}}
+  
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        )
+        ±
+        (
+        c
+        +
+        d
+        i
+        )
+        =
+        (
+        a
+        ±
+        c
+        )
+        +
+        (
+        b
+        ±
+        d
+        )
+        i
+      
+    
+    {\displaystyle (a+bi)\pm (c+di)=(a\pm c)+(b\pm d)i}
+  
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        )
+        (
+        c
+        +
+        d
+        i
+        )
+        =
+        a
+        c
+        +
+        (
+        b
+        c
+        +
+        a
+        d
+        )
+        i
+        +
+        b
+        d
+        
+          i
+          
+            2
+          
+        
+        =
+        (
+        a
+        c
+        −
+        b
+        d
+        )
+        +
+        (
+        b
+        c
+        +
+        a
+        d
+        )
+        i
+        .
+      
+    
+    {\displaystyle (a+bi)(c+di)=ac+(bc+ad)i+bdi^{2}=(ac-bd)+(bc+ad)i.}
+  
+
+Aby podzielić przez siebie dwie liczby zespolone, wystarczy pomnożyć dzielną i dzielnik przez liczbę sprzężoną do dzielnika. Jest to analogiczne do usuwania niewymierności z mianownika w wyrażeniach arytmetycznych:
+
+  
+    
+      
+        
+          
+            
+              a
+              +
+              b
+              i
+            
+            
+              c
+              +
+              d
+              i
+            
+          
+        
+        =
+        
+          
+            
+              (
+              a
+              +
+              b
+              i
+              )
+              (
+              c
+              −
+              d
+              i
+              )
+            
+            
+              (
+              c
+              +
+              d
+              i
+              )
+              (
+              c
+              −
+              d
+              i
+              )
+            
+          
+        
+        =
+        
+          
+            
+              (
+              a
+              c
+              +
+              b
+              d
+              )
+              +
+              (
+              b
+              c
+              −
+              a
+              d
+              )
+              i
+            
+            
+              
+                c
+                
+                  2
+                
+              
+              +
+              
+                d
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {a+bi}{c+di}}={\frac {(a+bi)(c-di)}{(c+di)(c-di)}}={\frac {(ac+bd)+(bc-ad)i}{c^{2}+d^{2}}}.}
+  
+
+
+=== Inne operacje ===
+Pierwiastek kwadratowy – niech 
+  
+    
+      
+        z
+        =
+        x
+        +
+        i
+        y
+        ,
+      
+    
+    {\displaystyle z=x+iy,}
+  
+ wówczas mamy dwa rozwiązania (sgn to funkcja zwracająca znak):
+
+  
+    
+      
+        
+          
+            z
+          
+        
+        =
+        ±
+        
+          
+            
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+                +
+                x
+              
+              2
+            
+          
+        
+        ±
+        i
+        sgn
+        ⁡
+        (
+        y
+        )
+        
+          
+            
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+                −
+                x
+              
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {z}}=\pm {\sqrt {\frac {|z|+x}{2}}}\pm i\operatorname {sgn}(y){\sqrt {\frac {|z|-x}{2}}}}
+  
+
+
+== Płaszczyzna zespolona ==
+
+Liczbom zespolonym można przyporządkować wzajemnie jednoznacznie wektory na płaszczyźnie, podobnie jak utożsamia się wektory na prostej z liczbami rzeczywistymi (w obu przypadkach można utożsamiać również same punkty, gdyż wspomniane wektory zaczepia się w początku układów współrzędnych).
+Każdej więc liczbie zespolonej 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ można przyporządkować wektor 
+  
+    
+      
+        
+          
+            
+              z
+              →
+            
+          
+        
+        =
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle {\vec {z}}=(a,b)}
+  
+ i odwrotnie. Działania dodawania i mnożenia w liczbach zespolonych odpowiadają następującym działaniom na wektorach:
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        +
+        (
+        c
+        ,
+        d
+        )
+        =
+        (
+        a
+        +
+        c
+        ,
+        b
+        +
+        d
+        )
+        ,
+      
+    
+    {\displaystyle (a,b)+(c,d)=(a+c,b+d),}
+  
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        (
+        c
+        ,
+        d
+        )
+        =
+        (
+        a
+        c
+        −
+        b
+        d
+        ,
+        b
+        c
+        +
+        a
+        d
+        )
+        .
+      
+    
+    {\displaystyle (a,b)(c,d)=(ac-bd,bc+ad).}
+  
+
+Tak określoną płaszczyznę określa się mianem płaszczyzny zespolonej. Interpretacja ta, dla której w specjalny sposób określono mnożenie, znana była już pod koniec XVIII wieku Wesselowi, mimo to przez długi czas jej autorstwo przypisywało się Argandowi, stąd też wspomnianą płaszczyzną nazywa się również płaszczyzną Arganda. Inną spotykaną nazwą jest też płaszczyzna Gaussa. Reprezentacja geometryczna była używana także przez Hamiltona. Dzięki autorytetowi Gaussa oraz Hamiltona geometryczna teoria liczb zespolonych została w pełni zaakceptowana przez matematyków.
+
+
+=== Moduł ===
+
+Zauważmy, iż długość wektora 
+  
+    
+      
+        
+          
+            
+              z
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {z}}}
+  
+ jest równa z twierdzenia Pitagorasa 
+  
+    
+      
+        
+          |
+        
+        
+          
+            
+              z
+              →
+            
+          
+        
+        
+          |
+        
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle |{\vec {z}}|={\sqrt {a^{2}+b^{2}}}.}
+  
+ Dla liczby 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ moduł definiujemy jako 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+        ⩾
+        0.
+      
+    
+    {\displaystyle |z|={\sqrt {a^{2}+b^{2}}}\geqslant 0.}
+  
+ Moduł liczby zespolonej ma analogiczne własności do wartości bezwzględnej liczby rzeczywistej, spełniając przy tym definicję normy.
+
+
+=== Argument ===
+
+Niech 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ oznacza kąt, który wektor 
+  
+    
+      
+        
+          
+            
+              z
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {z}}}
+  
+ tworzy z prostą 
+  
+    
+      
+        Re
+        ,
+      
+    
+    {\displaystyle \operatorname {Re} ,}
+  
+ oznaczmy go przez 
+  
+    
+      
+        arg
+        ⁡
+        z
+        .
+      
+    
+    {\displaystyle \arg z.}
+  
+ Jest to tzw. argument. Widać, iż 
+  
+    
+      
+        sin
+        ⁡
+        φ
+        =
+        
+          
+            
+              b
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \sin \varphi ={\tfrac {b}{|z|}}}
+  
+ i 
+  
+    
+      
+        cos
+        ⁡
+        φ
+        =
+        
+          
+            
+              a
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \cos \varphi ={\tfrac {a}{|z|}}.}
+  
+ Liczba zespolona różna od zera ma nieskończenie wiele argumentów, choć tylko jeden moduł.
+Argument liczby 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ spełniający nierówność 
+  
+    
+      
+        0
+        ⩽
+        arg
+        ⁡
+        z
+        <
+        2
+        π
+      
+    
+    {\displaystyle 0\leqslant \arg z<2\pi }
+  
+ (czasami też równoważnie 
+  
+    
+      
+        −
+        π
+        <
+        arg
+        ⁡
+        z
+        ⩽
+        π
+      
+    
+    {\displaystyle -\pi <\arg z\leqslant \pi }
+  
+) oznacza się przez 
+  
+    
+      
+        arg
+        ⁡
+        z
+      
+    
+    {\displaystyle \arg z}
+  
+ i nazywa argumentem głównym (wartością główną argumentu). W ten sposób 
+  
+    
+      
+        arg
+        ⁡
+        z
+      
+    
+    {\displaystyle \arg z}
+  
+ jest już funkcją na jeden z powyższych zbiorów nieokreśloną jedynie dla 
+  
+    
+      
+        z
+        =
+        0
+        
+        ⟺
+        
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        0.
+      
+    
+    {\displaystyle z=0\iff |z|=0.}
+  
+ Dla liczb rzeczywistych argument główny jest równy zeru dla liczb dodatnich oraz 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ dla ujemnych.
+
+
+=== Postać trygonometryczna ===
+
+Liczba zespolona może być zatem wyrażona przez długość jej wektora (moduł) oraz jego kąt skierowany (argument):
+
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        ⋅
+        
+          
+            
+              a
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+              
+            
+          
+        
+        +
+        
+          |
+        
+        z
+        
+          |
+        
+        ⋅
+        
+          
+            
+              b
+              
+                
+                  |
+                
+                z
+                
+                  |
+                
+              
+            
+          
+        
+        i
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        ⋅
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        .
+      
+    
+    {\displaystyle z=a+bi=|z|\cdot {\tfrac {a}{|z|}}+|z|\cdot {\tfrac {b}{|z|}}i=|z|\cdot (\cos \varphi +i\sin \varphi ).}
+  
+
+Powyższą postać liczby zespolonej nazywa się:
+
+postacią trygonometryczną z powodu użycia funkcji trygonometrycznych;
+postacią biegunową – jest przedstawieniem liczby zespolonej we współrzędnych biegunowych;
+postacią geometryczną – prowadzi do geometrycznej interpretacji liczb zespolonych na płaszczyźnie.
+Warto zauważyć, że postać algebraiczna odpowiada współrzędnym prostokątnym.
+Liczby zespolone w postaci trygonometrycznej są równe, gdy ich moduły i argumenty są równe, tj. 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ oraz 
+  
+    
+      
+        u
+        =
+        c
+        +
+        d
+        i
+      
+    
+    {\displaystyle u=c+di}
+  
+ są równe, gdy
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              c
+              
+                2
+              
+            
+            +
+            
+              d
+              
+                2
+              
+            
+          
+        
+        =
+        
+          |
+        
+        u
+        
+          |
+        
+      
+    
+    {\displaystyle |z|={\sqrt {a^{2}+b^{2}}}={\sqrt {c^{2}+d^{2}}}=|u|}
+  
+
+oraz (istotne tylko dla 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        ≠
+        0
+      
+    
+    {\displaystyle |z|\neq 0}
+  
+)
+
+  
+    
+      
+        arg
+        ⁡
+        z
+        =
+        arg
+        ⁡
+        u
+        .
+      
+    
+    {\displaystyle \arg z=\arg u.}
+  
+
+Wzory pozwalające na przejście od postaci trygonometrycznej do algebraicznej są oczywiste:
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  a
+                  =
+                  
+                    |
+                  
+                  z
+                  
+                    |
+                  
+                  cos
+                  ⁡
+                  φ
+                
+              
+              
+                
+                  b
+                  =
+                  
+                    |
+                  
+                  z
+                  
+                    |
+                  
+                  sin
+                  ⁡
+                  φ
+                
+              
+            
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\begin{cases}a=|z|\cos \varphi \\b=|z|\sin \varphi \end{cases}}.}
+  
+
+Przejście odwrotne jest nieco bardziej skomplikowane:
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle |z|={\sqrt {a^{2}+b^{2}}},}
+  
+
+  
+    
+      
+        φ
+        =
+        
+          
+            {
+            
+              
+                
+                  arctg
+                  
+                  
+                    
+                      
+                        b
+                        a
+                      
+                    
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  a
+                  >
+                  0
+                
+              
+              
+                
+                  arctg
+                  
+                  
+                    
+                      
+                        b
+                        a
+                      
+                    
+                  
+                  +
+                  π
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  a
+                  <
+                  0
+                   
+                  
+                     oraz 
+                  
+                   
+                  b
+                  ⩾
+                  0
+                
+              
+              
+                
+                  arctg
+                  
+                  
+                    
+                      
+                        b
+                        a
+                      
+                    
+                  
+                  −
+                  π
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  a
+                  <
+                  0
+                   
+                  
+                     oraz 
+                  
+                   
+                  b
+                  <
+                  0
+                
+              
+              
+                
+                  +
+                  
+                    
+                      
+                        π
+                        2
+                      
+                    
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  a
+                  =
+                  0
+                   
+                  
+                     oraz 
+                  
+                   
+                  b
+                  >
+                  0
+                
+              
+              
+                
+                  −
+                  
+                    
+                      
+                        π
+                        2
+                      
+                    
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  a
+                  =
+                  0
+                   
+                  
+                     oraz 
+                  
+                   
+                  b
+                  <
+                  0
+                
+              
+              
+                
+                  
+                    n
+                    i
+                    e
+                    z
+                    d
+                    e
+                    f
+                    i
+                    n
+                    i
+                    o
+                    w
+                    a
+                    n
+                    e
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  a
+                  =
+                  0
+                   
+                  
+                     oraz 
+                  
+                   
+                  b
+                  =
+                  0
+                
+              
+            
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \varphi ={\begin{cases}\operatorname {arctg} \;{\tfrac {b}{a}},&{\text{ dla }}\ a>0\\\operatorname {arctg} \;{\tfrac {b}{a}}+\pi ,&{\text{ dla }}\ a<0\ {\text{ oraz }}\ b\geqslant 0\\\operatorname {arctg} \;{\tfrac {b}{a}}-\pi ,&{\text{ dla }}\ a<0\ {\text{ oraz }}\ b<0\\+{\tfrac {\pi }{2}},&{\text{ dla }}\ a=0\ {\text{ oraz }}\ b>0\\-{\tfrac {\pi }{2}},&{\text{ dla }}\ a=0\ {\text{ oraz }}\ b<0\\\mathrm {niezdefiniowane} ,&{\text{ dla }}\ a=0\ {\text{ oraz }}\ b=0\end{cases}}.}
+  
+
+Powyższy wzór ma wiele przypadków, lecz istnieje wzór korzystający z funkcji arcus cosinus, który wymaga mniejszej ich liczby:
+
+  
+    
+      
+        φ
+        =
+        
+          
+            {
+            
+              
+                
+                  +
+                  arccos
+                  ⁡
+                  
+                    
+                      
+                        a
+                        
+                          
+                            |
+                          
+                          z
+                          
+                            |
+                          
+                        
+                      
+                    
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  b
+                  ⩾
+                  0
+                   
+                  
+                     oraz 
+                  
+                   
+                  
+                    |
+                  
+                  z
+                  
+                    |
+                  
+                  ≠
+                  0
+                
+              
+              
+                
+                  −
+                  arccos
+                  ⁡
+                  
+                    
+                      
+                        a
+                        
+                          
+                            |
+                          
+                          z
+                          
+                            |
+                          
+                        
+                      
+                    
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  b
+                  <
+                  0
+                
+              
+              
+                
+                  
+                    n
+                    i
+                    e
+                    z
+                    d
+                    e
+                    f
+                    i
+                    n
+                    i
+                    o
+                    w
+                    a
+                    n
+                    e
+                  
+                  ,
+                
+                
+                  
+                     dla 
+                  
+                   
+                  
+                    |
+                  
+                  z
+                  
+                    |
+                  
+                  =
+                  0
+                
+              
+            
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \varphi ={\begin{cases}+\arccos {\tfrac {a}{|z|}},&{\text{ dla }}\ b\geqslant 0\ {\text{ oraz }}\ |z|\neq 0\\-\arccos {\tfrac {a}{|z|}},&{\text{ dla }}\ b<0\\\mathrm {niezdefiniowane} ,&{\text{ dla }}\ |z|=0\end{cases}}.}
+  
+
+
+=== Mnożenie ===
+Warto zwrócić uwagę na mnożenie liczb w postaci trygonometrycznej, niech
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        ⋅
+        (
+        cos
+        ⁡
+        
+          α
+          
+            1
+          
+        
+        +
+        i
+        sin
+        ⁡
+        
+          α
+          
+            1
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle z_{1}=|z_{1}|\cdot (\cos \alpha _{1}+i\sin \alpha _{1}),}
+  
+
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        ⋅
+        (
+        cos
+        ⁡
+        
+          α
+          
+            2
+          
+        
+        +
+        i
+        sin
+        ⁡
+        
+          α
+          
+            2
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle z_{2}=|z_{2}|\cdot (\cos \alpha _{2}+i\sin \alpha _{2}).}
+  
+
+Wówczas iloczyn
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ⋅
+        
+          z
+          
+            2
+          
+        
+        =
+        (
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        cos
+        ⁡
+        
+          α
+          
+            1
+          
+        
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        cos
+        ⁡
+        
+          α
+          
+            2
+          
+        
+        −
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        sin
+        ⁡
+        
+          α
+          
+            1
+          
+        
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        sin
+        ⁡
+        
+          α
+          
+            2
+          
+        
+        )
+        +
+        (
+        i
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        sin
+        ⁡
+        
+          α
+          
+            1
+          
+        
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        cos
+        ⁡
+        
+          α
+          
+            2
+          
+        
+        +
+        i
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        cos
+        ⁡
+        
+          α
+          
+            1
+          
+        
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        sin
+        ⁡
+        
+          α
+          
+            2
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle z_{1}\cdot z_{2}=(|z_{1}|\cos \alpha _{1}\cdot |z_{2}|\cos \alpha _{2}-|z_{1}|\sin \alpha _{1}\cdot |z_{2}|\sin \alpha _{2})+(i\cdot |z_{1}|\sin \alpha _{1}\cdot |z_{2}|\cos \alpha _{2}+i\cdot |z_{1}|\cos \alpha _{1}\cdot |z_{2}|\sin \alpha _{2}).}
+  
+
+Stosując odpowiednie tożsamości trygonometryczne, otrzymujemy ostatecznie
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ⋅
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        
+          |
+        
+        ⋅
+        
+          |
+        
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+        ⋅
+        
+          [
+          
+            cos
+            ⁡
+            (
+            
+              α
+              
+                1
+              
+            
+            +
+            
+              α
+              
+                2
+              
+            
+            )
+            +
+            i
+            sin
+            ⁡
+            (
+            
+              α
+              
+                1
+              
+            
+            +
+            
+              α
+              
+                2
+              
+            
+            )
+          
+          ]
+        
+        ,
+      
+    
+    {\displaystyle z_{1}\cdot z_{2}=|z_{1}|\cdot |z_{2}|\cdot \left[\cos(\alpha _{1}+\alpha _{2})+i\sin(\alpha _{1}+\alpha _{2})\right],}
+  
+
+co oznacza, że iloczyn dwóch liczb zespolonych posiada moduł będący iloczynem modułów mnożników oraz argument równy sumie argumentów mnożonych liczb.
+Mnożenie przez 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ można zinterpretować jako obrót płaszczyzny o kąt 
+  
+    
+      
+        
+          
+            
+              π
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\tfrac {\pi }{2}}.}
+  
+
+
+== Wzór de Moivre’a ==
+
+Potęgowanie za pomocą mnożenia liczb zespolonych w postaci algebraicznej prowadzi do obliczenia wartości wyrażenia 
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        
+          )
+          
+            n
+          
+        
+      
+    
+    {\displaystyle (a+bi)^{n}}
+  
+ dla danego wykładnika 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ przy warunku 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1.
+      
+    
+    {\displaystyle i^{2}=-1.}
+  
+ Mimo że można korzystać z własności trójkąta Pascala, to porządkowanie tego wyrażenia może okazać się czasochłonne. Zwykle działanie to łatwiej przeprowadzić w postaci trygonometrycznej.
+Rozpatrzmy 
+  
+    
+      
+        z
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        .
+      
+    
+    {\displaystyle z=|z|(\cos \varphi +i\sin \varphi ).}
+  
+ Na podstawie reguły indukcji matematycznej zachodzi wzór
+
+  
+    
+      
+        
+          z
+          
+            n
+          
+        
+        =
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            n
+          
+        
+        ⋅
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        
+          )
+          
+            n
+          
+        
+        =
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            n
+          
+        
+        ⋅
+        [
+        cos
+        ⁡
+        (
+        n
+        φ
+        )
+        +
+        i
+        sin
+        ⁡
+        (
+        n
+        φ
+        )
+        ]
+        .
+      
+    
+    {\displaystyle z^{n}=|z|^{n}\cdot (\cos \varphi +i\sin \varphi )^{n}=|z|^{n}\cdot [\cos(n\varphi )+i\sin(n\varphi )].}
+  
+
+
+=== Pierwiastkowanie ===
+
+Istnieje wersja wzoru de Moivre’a dla wykładników wymiernych. Każda niezerowa liczba zespolona 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ ma dokładnie 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ różnych pierwiastków 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-tego stopnia, które wyrażają się wzorem
+
+  
+    
+      
+        
+          z
+          
+            k
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              z
+              
+                |
+              
+            
+            
+              n
+            
+          
+        
+        ⋅
+        
+          (
+          
+            cos
+            ⁡
+            
+              
+                
+                  
+                    φ
+                    +
+                    2
+                    k
+                    π
+                  
+                  n
+                
+              
+            
+            +
+            i
+            sin
+            ⁡
+            
+              
+                
+                  
+                    φ
+                    +
+                    2
+                    k
+                    π
+                  
+                  n
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle z_{k}={\sqrt[{n}]{|z|}}\cdot \left(\cos {\tfrac {\varphi +2k\pi }{n}}+i\sin {\tfrac {\varphi +2k\pi }{n}}\right),}
+  
+
+gdzie 
+  
+    
+      
+        k
+        =
+        0
+        ,
+        1
+        ,
+        …
+        ,
+        n
+        −
+        1
+      
+    
+    {\displaystyle k=0,1,\dots ,n-1}
+  
+ oraz 
+  
+    
+      
+        φ
+        =
+        arg
+        ⁡
+        z
+        .
+      
+    
+    {\displaystyle \varphi =\arg z.}
+  
+
+
+== Postać wykładnicza ==
+
+Rzeczywiste funkcje 
+  
+    
+      
+        sin
+        ,
+      
+    
+    {\displaystyle \sin ,}
+  
+ 
+  
+    
+      
+        cos
+        ,
+      
+    
+    {\displaystyle \cos ,}
+  
+ oraz 
+  
+    
+      
+        exp
+      
+    
+    {\displaystyle \exp }
+  
+ zmiennej rzeczywistej można rozwinąć na szeregi Maclaurina:
+
+  
+    
+      
+        sin
+        ⁡
+        x
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            
+              (
+              2
+              n
+              +
+              1
+              )
+              !
+            
+          
+        
+        ,
+         
+        cos
+        ⁡
+        x
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              
+                x
+                
+                  2
+                  n
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+        ,
+         
+        
+          e
+          
+            x
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              x
+              
+                n
+              
+            
+            
+              n
+              !
+            
+          
+        
+      
+    
+    {\displaystyle \sin x=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n+1}}{(2n+1)!}},\ \cos x=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n}}{(2n)!}},\ e^{x}=\sum _{n=0}^{\infty }{\frac {x^{n}}{n!}}}
+  
+,
+które są zbieżne dla każdego 
+  
+    
+      
+        x
+        ∈
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle x\in \mathbb {R} .}
+  
+ Ponieważ w tych wzorach występują jedynie działania dodawania, mnożenia, dzielenia i podnoszenia do potęgi o wykładniku naturalnym, które są dobrze zdefiniowane dla liczb zespolonych, to wzory te mogą posłużyć jako definicje zespolonych funkcji zmiennej zespolonej. Mianowicie definiuje się funkcje:
+
+  
+    
+      
+        sin
+        :
+         
+        
+          C
+        
+        →
+        
+          C
+        
+        ,
+         
+        sin
+        ⁡
+        z
+        :=
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              
+                z
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            
+              (
+              2
+              n
+              +
+              1
+              )
+              !
+            
+          
+        
+      
+    
+    {\displaystyle \sin \colon \ \mathbb {C} \to \mathbb {C} ,\ \sin z:=\sum _{n=0}^{\infty }{\frac {(-1)^{n}z^{2n+1}}{(2n+1)!}}}
+  
+,
+
+  
+    
+      
+        cos
+        :
+        
+          C
+        
+        →
+        
+          C
+        
+        ,
+         
+        cos
+        ⁡
+        z
+        :=
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              
+                z
+                
+                  2
+                  n
+                
+              
+            
+            
+              (
+              2
+              n
+              )
+              !
+            
+          
+        
+      
+    
+    {\displaystyle \cos \colon \mathbb {C} \to \mathbb {C} ,\ \cos z:=\sum _{n=0}^{\infty }{\frac {(-1)^{n}z^{2n}}{(2n)!}}}
+  
+,
+
+  
+    
+      
+        exp
+        :
+        
+          C
+        
+        →
+        
+          C
+        
+        ,
+         
+        exp
+        ⁡
+        z
+        :=
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              z
+              
+                n
+              
+            
+            
+              n
+              !
+            
+          
+        
+      
+    
+    {\displaystyle \exp \colon \mathbb {C} \to \mathbb {C} ,\ \exp z:=\sum _{n=0}^{\infty }{\frac {z^{n}}{n!}}}
+  
+.
+Definicje te są poprawne, ponieważ szeregi występujące po prawej stronie są zbieżne dla każdego 
+  
+    
+      
+        z
+        ∈
+        
+          C
+        
+        ,
+      
+    
+    {\displaystyle z\in \mathbb {C} ,}
+  
+ gdyż kryteria zbieżności szeregów takie jak kryterium d’Alemberta i kryterium Cauchy’ego pozostają prawdziwe dla liczb zespolonych.
+Korzystając z pojęcia iloczynu Cauchy’ego szeregów, można udowodnić, że:
+
+  
+    
+      
+        exp
+        ⁡
+        (
+        z
+        +
+        w
+        )
+        =
+        exp
+        ⁡
+        (
+        z
+        )
+        exp
+        ⁡
+        (
+        w
+        )
+      
+    
+    {\displaystyle \exp(z+w)=\exp(z)\exp(w)}
+  
+ dla każdych 
+  
+    
+      
+        z
+        ,
+         
+        w
+        ∈
+        
+          C
+        
+      
+    
+    {\displaystyle z,\ w\in \mathbb {C} }
+  
+.
+Z definicji oraz własności szeregów wynikają następujące wzory:
+
+  
+    
+      
+        sin
+        ⁡
+        (
+        −
+        z
+        )
+        =
+        −
+        sin
+        ⁡
+        z
+        ,
+         
+        cos
+        ⁡
+        (
+        −
+        z
+        )
+        =
+        cos
+        ⁡
+        z
+        ,
+         
+        
+          e
+          
+            i
+            z
+          
+        
+        =
+        cos
+        ⁡
+        z
+        +
+        i
+        sin
+        ⁡
+        z
+      
+    
+    {\displaystyle \sin(-z)=-\sin z,\ \cos(-z)=\cos z,\ e^{iz}=\cos z+i\sin z}
+  
+ dla dowolnego 
+  
+    
+      
+        z
+        ∈
+        
+          C
+        
+      
+    
+    {\displaystyle z\in \mathbb {C} }
+  
+.
+W szczególności: 
+  
+    
+      
+        
+          e
+          
+            i
+            φ
+          
+        
+        =
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        ,
+      
+    
+    {\displaystyle e^{i\varphi }=\cos \varphi +i\sin \varphi ,}
+  
+ dla dowolnego 
+  
+    
+      
+        φ
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle \varphi \in \mathbb {R} }
+  
+ (jest to tzw. wzór Eulera).
+Zatem każda liczba zespolona różna od zera ma następujące przedstawienie:
+
+  
+    
+      
+        z
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        
+          e
+          
+            i
+            φ
+          
+        
+        ,
+      
+    
+    {\displaystyle z=|z|(\cos \varphi +i\sin \varphi )=|z|e^{i\varphi },}
+  
+ które nazywamy postacią wykładniczą liczby zespolonej.
+Pierwiastki zespolone w postaci wykładniczej wyrażają się wzorami:
+
+  
+    
+      
+        
+          z
+          
+            k
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              z
+              
+                |
+              
+            
+            
+              n
+            
+          
+        
+         
+        ⋅
+        
+          e
+          
+            i
+            
+              
+                
+                  
+                    φ
+                    +
+                    2
+                    k
+                    π
+                  
+                  n
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle z_{k}={\sqrt[{n}]{|z|}}\ \cdot e^{i{\tfrac {\varphi +2k\pi }{n}}}}
+  
+ dla 
+  
+    
+      
+        k
+        =
+        0
+        ,
+        1
+        ,
+        …
+        ,
+        n
+        −
+        1.
+      
+    
+    {\displaystyle k=0,1,\dots ,n-1.}
+  
+
+Korzystając z parzystości cosinusa i nieparzystości sinusa, można też wyprowadzić następujące wzory na funkcje trygonometryczne:
+
+  
+    
+      
+        sin
+        ⁡
+        z
+        =
+        
+          
+            
+              
+                e
+                
+                  i
+                  z
+                
+              
+              −
+              
+                e
+                
+                  −
+                  i
+                  z
+                
+              
+            
+            
+              2
+              i
+            
+          
+        
+      
+    
+    {\displaystyle \sin z={\frac {e^{iz}-e^{-iz}}{2i}}}
+  
+,
+
+  
+    
+      
+        cos
+        ⁡
+        z
+        =
+        
+          
+            
+              
+                e
+                
+                  i
+                  z
+                
+              
+              +
+              
+                e
+                
+                  −
+                  i
+                  z
+                
+              
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \cos z={\frac {e^{iz}+e^{-iz}}{2}}}
+  
+.
+
+
+== Sprzężenie ==
+
+Niech 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        ⋅
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        ⋅
+        
+          
+            e
+            
+              i
+              φ
+            
+          
+        
+        .
+      
+    
+    {\displaystyle z=a+bi=|z|\cdot (\cos \varphi +i\sin \varphi )=|z|\cdot {e^{i\varphi }}.}
+  
+ Bardzo ważną operacją jest sprzężenie liczby zespolonej, jest ona najprostsza dla liczby w postaci algebraicznej:
+
+  
+    
+      
+        
+          
+            z
+            ¯
+          
+        
+        =
+        a
+        −
+        b
+        i
+      
+    
+    {\displaystyle {\overline {z}}=a-bi}
+  
+
+Działanie to powoduje odbicie wektora liczby zespolonej względem osi 
+  
+    
+      
+        O
+        X
+      
+    
+    {\displaystyle OX}
+  
+ płaszczyzny zespolonej. Zatem liczba w postaci trygonometrycznej zachowa moduł, lecz jej argument ulegnie zmianie na 
+  
+    
+      
+        2
+        π
+        −
+        φ
+      
+    
+    {\displaystyle 2\pi -\varphi }
+  
+ lub równoważnie – zmieni on znak na przeciwny. Skoro postać wykładnicza również zależy od modułu oraz argumentu, ta sama obserwacja dotyczy i jej. Prawdą jest też, że sprzężenie liczby rzeczywistej (liczby zespolonej o zerowej części urojonej) jest równe tej liczbie.
+Sprzężenie przeprowadza izomorficznie ciało liczb zespolonych na siebie, jest zatem automorfizmem. Oprócz tożsamości jest to jedyny ciągły automorfizm tego ciała, moc zbioru nieciągłych automorfizmów wynosi zaś 
+  
+    
+      
+        
+          2
+          
+            
+              c
+            
+          
+        
+        .
+      
+    
+    {\displaystyle 2^{\mathfrak {c}}.}
+  
+ Działanie sprzężenia zespolonego jest inwolucją: 
+  
+    
+      
+        
+          
+            
+              (
+              
+                
+                  z
+                  ¯
+                
+              
+              )
+            
+            ¯
+          
+        
+        =
+        z
+        .
+      
+    
+    {\displaystyle {\overline {({\overline {z}})}}=z.}
+  
+
+
+== Relacja porządku ==
+Choć można sztucznie wprowadzić jakiś porządek liczb zespolonych (np. porządek leksykograficzny), to jednak taka relacja nie została określona i szerzej przyjęta. Nie da się bowiem sformułować jej w taki sposób, aby w zbiorze liczb zespolonych spełniała aksjomaty ciała uporządkowanego, jak w przypadku liczb rzeczywistych. Tak więc nie da się określić, która z dwóch liczb jest większa lub mniejsza. Można natomiast porównywać ich moduły oraz argumenty (główne), gdyż zarówno moduł, jak i argument liczby zespolonej są liczbami rzeczywistymi.
+
+
+== Przykłady ==
+Przedstawmy liczbę 
+  
+    
+      
+        u
+        =
+        (
+        
+          
+            1
+          
+        
+        ,
+        
+          
+            
+              
+                3
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle u=({\color {MidnightBlue}1},{\color {OliveGreen}{\sqrt {3}}})}
+  
+ (zob. sekcję dot. konstrukcji) w postaciach: algebraicznej, trygonometrycznej (biegunowej) i wykładniczej, obliczając za każdym razem jej sprzężenie.
+Postać algebraiczna:
+
+  
+    
+      
+        u
+        =
+        
+          
+            1
+          
+        
+        +
+        i
+        
+          
+            
+              
+                3
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle u={\color {MidnightBlue}1}+i{\color {OliveGreen}{\sqrt {3}}},}
+  
+
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+        =
+        
+          
+            1
+          
+        
+        −
+        i
+        
+          
+            
+              
+                3
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\overline {u}}={\color {MidnightBlue}1}-i{\color {OliveGreen}{\sqrt {3}}}.}
+  
+
+Obliczamy
+
+  
+    
+      
+        
+          |
+        
+        u
+        
+          |
+        
+        =
+        
+          |
+        
+        
+          
+            1
+          
+        
+        +
+        i
+        
+          
+            
+              
+                3
+              
+            
+          
+        
+        
+          |
+        
+        =
+        
+          
+            1
+            +
+            3
+          
+        
+        =
+        
+          
+            4
+          
+        
+        =
+        
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle |u|=|{\color {MidnightBlue}1}+i{\color {OliveGreen}{\sqrt {3}}}|={\sqrt {1+3}}={\sqrt {4}}={\color {Fuchsia}2},}
+  
+
+  
+    
+      
+        cos
+        ⁡
+        arg
+        ⁡
+        u
+        =
+        cos
+        ⁡
+        arg
+        ⁡
+        
+          (
+          
+            
+              
+                1
+              
+            
+            +
+            i
+            
+              
+                
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          
+            
+              
+                1
+              
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \cos \arg u=\cos \arg \left({\color {MidnightBlue}1}+i{\color {OliveGreen}{\sqrt {3}}}\right)={\tfrac {\color {MidnightBlue}1}{\color {Fuchsia}2}},}
+  
+
+  
+    
+      
+        sin
+        ⁡
+        arg
+        ⁡
+        u
+        =
+        sin
+        ⁡
+        arg
+        ⁡
+        
+          (
+          
+            
+              
+                1
+              
+            
+            +
+            i
+            
+              
+                
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          
+            
+              
+                
+                  
+                    3
+                  
+                
+              
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \sin \arg u=\sin \arg \left({\color {MidnightBlue}1}+i{\color {OliveGreen}{\sqrt {3}}}\right)={\tfrac {\color {OliveGreen}{\sqrt {3}}}{\color {Fuchsia}2}},}
+  
+
+  
+    
+      
+        arg
+        ⁡
+        u
+        =
+        arg
+        ⁡
+        
+          (
+          
+            
+              
+                1
+              
+            
+            +
+            i
+            
+              
+                
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          
+            
+              
+                
+                  π
+                  3
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \arg u=\arg \left({\color {MidnightBlue}1}+i{\color {OliveGreen}{\sqrt {3}}}\right)={\color {RawSienna}{\tfrac {\pi }{3}}},}
+  
+
+podobnie
+
+  
+    
+      
+        arg
+        ⁡
+        
+          
+            u
+            ¯
+          
+        
+        =
+        arg
+        ⁡
+        
+          (
+          
+            
+              
+                1
+              
+            
+            −
+            i
+            
+              
+                
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        
+          
+            
+              
+                
+                  
+                    5
+                    π
+                  
+                  3
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \arg {\overline {u}}=\arg \left({\color {MidnightBlue}1}-i{\color {OliveGreen}{\sqrt {3}}}\right)={\color {BurntOrange}{\tfrac {5\pi }{3}}}.}
+  
+
+Stąd postać trygonometryczna 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ oraz 
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {u}}}
+  
+ to
+
+  
+    
+      
+        u
+        =
+        
+          
+            2
+          
+        
+        
+          (
+          
+            cos
+            ⁡
+            
+              
+                
+                  
+                    
+                      π
+                      3
+                    
+                  
+                
+              
+            
+            +
+            i
+            sin
+            ⁡
+            
+              
+                
+                  
+                    
+                      π
+                      3
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle u={\color {Fuchsia}2}\left(\cos {\color {RawSienna}{\tfrac {\pi }{3}}}+i\sin {\color {RawSienna}{\tfrac {\pi }{3}}}\right),}
+  
+
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+        =
+        
+          
+            2
+          
+        
+        
+          (
+          
+            cos
+            ⁡
+            
+              
+                
+                  
+                    
+                      
+                        5
+                        π
+                      
+                      3
+                    
+                  
+                
+              
+            
+            +
+            i
+            sin
+            ⁡
+            
+              
+                
+                  
+                    
+                      
+                        5
+                        π
+                      
+                      3
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle {\overline {u}}={\color {Fuchsia}2}\left(\cos {\color {BurntOrange}{\tfrac {5\pi }{3}}}+i\sin {\color {BurntOrange}{\tfrac {5\pi }{3}}}\right),}
+  
+
+zaś wykładnicza:
+
+  
+    
+      
+        u
+        =
+        
+          
+            2
+          
+        
+        exp
+        ⁡
+        
+          
+            
+              
+                
+                  π
+                  3
+                
+              
+            
+          
+        
+        i
+        ,
+      
+    
+    {\displaystyle u={\color {Fuchsia}2}\exp {\color {RawSienna}{\tfrac {\pi }{3}}}i,}
+  
+
+  
+    
+      
+        
+          
+            u
+            ¯
+          
+        
+        =
+        
+          
+            2
+          
+        
+        exp
+        ⁡
+        
+          
+            
+              
+                
+                  
+                    5
+                    π
+                  
+                  3
+                
+              
+            
+          
+        
+        i
+        .
+      
+    
+    {\displaystyle {\overline {u}}={\color {Fuchsia}2}\exp {\color {BurntOrange}{\tfrac {5\pi }{3}}}i.}
+  
+
+
+== Konstrukcje i własności ==
+
+
+=== Konstrukcja Hamiltona ===
+
+Następująca formalna definicja liczb zespolonych pochodzi od Hamiltona, matematyka irlandzkiego.
+W iloczynie kartezjańskim 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+ wprowadza się działania dodawania i mnożenia:
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        +
+        (
+        c
+        ,
+        d
+        )
+        =
+        (
+        a
+        +
+        c
+        ,
+        b
+        +
+        d
+        )
+        ,
+      
+    
+    {\displaystyle (a,b)+(c,d)=(a+c,b+d),}
+  
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        ⋅
+        (
+        c
+        ,
+        d
+        )
+        =
+        (
+        a
+        c
+        −
+        b
+        d
+        ,
+        a
+        d
+        +
+        b
+        c
+        )
+        ,
+      
+    
+    {\displaystyle (a,b)\cdot (c,d)=(ac-bd,ad+bc),}
+  
+
+gdzie 
+  
+    
+      
+        a
+        ,
+        b
+        ,
+        c
+        ,
+        d
+        ∈
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle a,b,c,d\in \mathbb {R} .}
+  
+
+Tak określona struktura 
+  
+    
+      
+        (
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (\mathbb {R} ^{2},+,\cdot )}
+  
+ jest ciałem zwanym ciałem liczb zespolonych oznaczanym symbolem 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ (od ang. complex – złożony). Wówczas 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ odpowiada wektorowi 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        )
+        .
+      
+    
+    {\displaystyle (0,1).}
+  
+
+
+=== Ciało ===
+Ciało to struktura algebraiczna z działaniami dodawania, odejmowania, mnożenia i dzielenia, która spełnia określone prawa algebraiczne. Liczby zespolone jako ciało w szczególności mają więc:
+
+element neutralny dodawania („zero”), 
+  
+    
+      
+        0
+        +
+        0
+        i
+        ,
+      
+    
+    {\displaystyle 0+0i,}
+  
+
+element neutralny mnożenia („jedynka”), 
+  
+    
+      
+        1
+        +
+        0
+        i
+        ,
+      
+    
+    {\displaystyle 1+0i,}
+  
+
+element odwrotny dodawania (element przeciwny) dla każdej liczby zespolonej, dla liczby 
+  
+    
+      
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle a+bi}
+  
+ jest nim 
+  
+    
+      
+        −
+        a
+        −
+        b
+        i
+        ,
+      
+    
+    {\displaystyle -a-bi,}
+  
+
+element odwrotny mnożenia (odwrotność) dla dowolnej niezerowej liczby zespolonej, dla liczby 
+  
+    
+      
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle a+bi}
+  
+ jest nim 
+  
+    
+      
+        
+          
+            
+              a
+              
+                
+                  a
+                  
+                    2
+                  
+                
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                −
+                b
+              
+              
+                
+                  a
+                  
+                    2
+                  
+                
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+        i
+        .
+      
+    
+    {\displaystyle {\tfrac {a}{a^{2}+b^{2}}}+{\tfrac {-b}{a^{2}+b^{2}}}i.}
+  
+
+Innymi ciałami są liczby rzeczywiste i liczby wymierne. Utożsamienie każdej liczby rzeczywistej 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ z liczbą zespoloną 
+  
+    
+      
+        a
+        +
+        0
+        i
+      
+    
+    {\displaystyle a+0i}
+  
+ sprawia, że liczby rzeczywiste 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ stają się podciałem 
+  
+    
+      
+        
+          C
+        
+        .
+      
+    
+    {\displaystyle \mathbb {C} .}
+  
+
+Liczby zespolone 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ mogą być scharakteryzowane również jako domknięcie topologiczne liczb algebraicznych oraz jako domknięcie algebraiczne 
+  
+    
+      
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ,}
+  
+ co opisano dalej.
+
+
+=== Reprezentacja macierzowa ===
+Chociaż niezbyt użyteczne, alternatywne reprezentacje ciała liczb zespolonych mogą dać pewien wgląd w jego naturę. Jedna ze szczególnie eleganckich reprezentacji przedstawia każdą liczbę zespoloną jako 2×2-macierz o współczynnikach rzeczywistych, które rozciągają i obracają punkty (wektory) płaszczyzny. Każda taka macierz jest postaci
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  
+                  
+                  a
+                
+              
+            
+            ]
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{bmatrix}a&-b\\b&\;\;a\end{bmatrix}},}
+  
+
+gdzie 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle a,b\in \mathbb {R} .}
+  
+ Suma i iloczyn dwóch takich macierzy także ma tę postać, a działanie mnożenia macierzy tego typu jest przemienne. Każda niezerowa macierz tego typu jest odwracalna, a jej odwrotność także ma tę postać. Stąd macierze tego typu są ciałem izomorficznym z ciałem liczb zespolonych. Każda taka macierz może być zapisana jako
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  
+                  
+                  a
+                
+              
+            
+            ]
+          
+        
+        =
+        a
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                  
+                  1
+                
+              
+            
+            ]
+          
+        
+        +
+        b
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+            
+            ]
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{bmatrix}a&-b\\b&\;\;a\end{bmatrix}}=a{\begin{bmatrix}1&\;\;0\\0&\;\;1\end{bmatrix}}+b{\begin{bmatrix}0&-1\\1&\;\;0\end{bmatrix}},}
+  
+
+co sugeruje, że liczba rzeczywista 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ powinna być utożsamiana z macierzą identycznościową 
+  
+    
+      
+        
+          I
+          
+            2
+          
+        
+      
+    
+    {\displaystyle I_{2}}
+  
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                  
+                  1
+                
+              
+            
+            ]
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{bmatrix}1&\;\;0\\0&\;\;1\end{bmatrix}},}
+  
+
+a jednostka urojona 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ z
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+            
+            ]
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{bmatrix}0&-1\\1&\;\;0\end{bmatrix}},}
+  
+
+obrotem o 
+  
+    
+      
+        
+          90
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle 90^{\circ }}
+  
+ w kierunku przeciwnym do ruchu wskazówek zegara. Kwadrat drugiej z macierzy rzeczywiście jest równy 2×2-macierzy reprezentującej 
+  
+    
+      
+        −
+        1
+        =
+        −
+        1
+        ⋅
+        
+          I
+          
+            2
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  −
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+              
+                
+                  
+                  
+                  0
+                
+                
+                  −
+                  1
+                
+              
+            
+            ]
+          
+        
+        .
+      
+    
+    {\displaystyle -1=-1\cdot I_{2}={\begin{bmatrix}-1&\;\;0\\\;\;0&-1\end{bmatrix}}.}
+  
+
+Kwadrat modułu liczby zespolonej wyrażonej jako macierz jest równy wyznacznikowi tej macierzy.
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          
+            |
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  
+                  
+                  a
+                
+              
+            
+            |
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+        −
+        (
+        −
+        b
+        )
+        b
+        =
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle |z|^{2}={\begin{vmatrix}a&-b\\b&\;\;a\end{vmatrix}}=a^{2}-(-b)b=a^{2}+b^{2}.}
+  
+
+Jeżeli macierz postrzegana jest jako przekształcenie płaszczyzny, to obraca ono punkty o kąt równy argumentowi liczby zespolonej i skaluje o współczynnik równy modułowi liczby zespolonej. Sprzężenie liczby zespolonej 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ odpowiada przekształceniu, które obraca o ten sam kąt, co 
+  
+    
+      
+        z
+        ,
+      
+    
+    {\displaystyle z,}
+  
+ lecz w przeciwnym kierunku i skaluje w ten sam sposób, co 
+  
+    
+      
+        z
+        ;
+      
+    
+    {\displaystyle z;}
+  
+ może to być oddane jako transpozycja macierzy odpowiadającej 
+  
+    
+      
+        z
+        .
+      
+    
+    {\displaystyle z.}
+  
+
+Jeżeli elementy macierzy same są liczbami zespolonymi, to powstała w ten sposób algebra może być utożsamiana z kwaternionami. Innymi słowy, ta reprezentacja macierzowa jest sposobem wyrażenia konstrukcji Cayleya-Dicksona algebr.
+Istnieją dwa wektory własne 2×2-macierzy reprezentującej liczbę zespoloną: rzeczona liczba zespolona i jej sprzężenie.
+
+
+=== Rzeczywista przestrzeń liniowa ===
+Ciało 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jest dwuwymiarową rzeczywistą przestrzenią liniową. W przeciwieństwie jednak do liczb rzeczywistych, liczby zespolone nie mogą być w żaden sposób uporządkowane liniowo tak, by było to zgodne z działaniami arytmetycznymi w nich określonymi: 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ nie może być przekształcone w ciało uporządkowane. Ogólniej: żadne ciało zawierające pierwiastek z 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+ nie może być uporządkowane.
+W ogólności 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+-liniowe przekształcenia 
+  
+    
+      
+        
+          C
+        
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} \to \mathbb {C} }
+  
+ są postaci
+
+  
+    
+      
+        f
+        (
+        z
+        )
+        =
+        a
+        z
+        +
+        b
+        
+          
+            z
+            ¯
+          
+        
+        ,
+      
+    
+    {\displaystyle f(z)=az+b{\overline {z}},}
+  
+
+gdzie 
+  
+    
+      
+        a
+        ,
+        b
+      
+    
+    {\displaystyle a,b}
+  
+ są współczynnikami zespolonymi. Tylko pierwszy wyraz jest 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+-liniowy i tylko on jest holomorficzny, drugi jest różniczkowalny w sensie rzeczywistym, lecz nie spełnia równań Cauchy’ego-Riemanna.
+Funkcja
+
+  
+    
+      
+        f
+        (
+        z
+        )
+        =
+        a
+        z
+      
+    
+    {\displaystyle f(z)=az}
+  
+
+odpowiada obrotom złożonym ze skalowaniem (która nie zmienia orientacji), zaś funkcja
+
+  
+    
+      
+        f
+        (
+        z
+        )
+        =
+        b
+        
+          
+            z
+            ¯
+          
+        
+      
+    
+    {\displaystyle f(z)=b{\overline {z}}}
+  
+
+odpowiada symetriom złożonym ze skalowaniem (zmienia orientację).
+
+
+=== Rozwiązania równań wielomianowych ===
+Pierwiastek wielomianu 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ to liczba zespolona 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ spełniająca 
+  
+    
+      
+        p
+        (
+        z
+        )
+        =
+        0.
+      
+    
+    {\displaystyle p(z)=0.}
+  
+ Zaskakującym wynikiem analizy zespolonej jest to, iż wszystkie wielomiany stopnia 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ o współczynnikach rzeczywistych lub zespolonych mają dokładnie 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ pierwiastków zespolonych (licząc pierwiastki wielokrotnie zgodnie z ich wielokrotnością). Wynik ten znany jest jako podstawowe twierdzenie algebry i pokazuje, że liczby zespolone są ciałem algebraicznie domkniętym. Rzeczywiście, są one domknięciem algebraicznym liczb rzeczywistych, jak opisano niżej.
+
+
+=== Konstrukcja algebraiczna ===
+Jedna z możliwych konstrukcji ciała liczb zespolonych polega na rozszerzeniu ciała liczb rzeczywistych 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ o pierwiastek wielomianu 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1.
+      
+    
+    {\displaystyle x^{2}+1.}
+  
+ Aby skonstruować to rozszerzenie, należy wziąć pierścień 
+  
+    
+      
+        
+          R
+        
+        [
+        x
+        ]
+      
+    
+    {\displaystyle \mathbb {R} [x]}
+  
+ wielomianów o współczynnikach z 
+  
+    
+      
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle \mathbb {R} .}
+  
+ Wielomian 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle x^{2}+1}
+  
+ jest nierozkładalny nad 
+  
+    
+      
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ,}
+  
+ skąd ideał przez niego generowany 
+  
+    
+      
+        (
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        )
+      
+    
+    {\displaystyle (x^{2}+1)}
+  
+ jest maksymalny, a więc pierścień ilorazowy 
+  
+    
+      
+        
+          R
+        
+        [
+        x
+        ]
+        
+          /
+        
+        (
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        )
+      
+    
+    {\displaystyle \mathbb {R} [x]/(x^{2}+1)}
+  
+ jest ciałem. Rozszerzenie to zawiera dwa pierwiastki kwadratowe z 
+  
+    
+      
+        −
+        1
+        ;
+      
+    
+    {\displaystyle -1;}
+  
+ wybiera się jeden z nich i oznacza symbolem 
+  
+    
+      
+        i
+        .
+      
+    
+    {\displaystyle i.}
+  
+ Zbiór 
+  
+    
+      
+        {
+        1
+        ,
+        i
+        }
+      
+    
+    {\displaystyle \{1,i\}}
+  
+ stanowi bazę tego rozszerzenia ciała liczb rzeczywistych. Dokładniej: każdy element tego rozszerzenia można zapisać w postaci
+
+  
+    
+      
+        a
+        ⋅
+        1
+        +
+        b
+        i
+      
+    
+    {\displaystyle a\cdot 1+bi}
+  
+
+dla pewnych 
+  
+    
+      
+        a
+        ,
+        b
+      
+    
+    {\displaystyle a,b}
+  
+ rzeczywistych.
+
+
+=== Algebraiczna domkniętość ===
+Chociaż dodano wyłącznie pierwiastki 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        ,
+      
+    
+    {\displaystyle x^{2}+1,}
+  
+ to otrzymane ciało liczb zespolonych jest algebraicznie domknięte – każdy wielomian o współczynnikach w 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ można rozłożyć na wielomiany liniowe o współczynnikach z 
+  
+    
+      
+        
+          C
+        
+        .
+      
+    
+    {\displaystyle \mathbb {C} .}
+  
+ Ponieważ każde ciało ma tylko jedno, co do izomorfizmu, domknięcie algebraiczne, liczby zespolone mogą być scharakteryzowane jako domknięcie algebraiczne liczb rzeczywistych.
+
+
+=== Charakteryzacja algebraiczna ===
+Opisywane rozszerzenie odpowiada dobrze znanej płaszczyźnie zespolonej, lecz fakt ten charakteryzuje je wyłącznie algebraicznie. Ciało 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jest scharakteryzowane z dokładnością do izomorfizmu ciał przez następujące trzy własności:
+
+jego charakterystyka wynosi 
+  
+    
+      
+        0
+        ,
+      
+    
+    {\displaystyle 0,}
+  
+
+jego stopień przestępności nad ciałem prostym jest mocy continuum,
+jest algebraicznie domknięte.
+Jedną z konsekwencji tej charakteryzacji jest to, że 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ zawiera wiele podciał właściwych izomorficznych z 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ (to samo jest prawdą dla 
+  
+    
+      
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ,}
+  
+ które zawiera wiele podciał izomorficznych do siebie). Jak opisano poniżej, aby odróżnić te podciała od samych ciał 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ i 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ wymagane są rozważania topologiczne.
+
+
+=== Charakteryzacja topologiczna ===
+Jak zauważono wyżej, algebraiczna charakteryzacja 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ nie dostarcza pewnych z jego najważniejszych własności topologicznych. Własności te są kluczowe podczas studiowania analizy zespolonej, gdzie liczby zespolone badane są jako ciało topologiczne.
+Następujące własności charakteryzują 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jako ciało topologiczne:
+
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jest ciałem,
+
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ zawiera podzbiór 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ niezerowych elementów spełniających:
+
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ jest zamknięte ze względu na dodawanie, mnożenie i branie elementów odwrotnych,
+jeżeli 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ i 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ są różnymi elementami 
+  
+    
+      
+        P
+        ,
+      
+    
+    {\displaystyle P,}
+  
+ to tak 
+  
+    
+      
+        x
+        −
+        y
+        ,
+      
+    
+    {\displaystyle x-y,}
+  
+ jak i 
+  
+    
+      
+        y
+        −
+        x
+      
+    
+    {\displaystyle y-x}
+  
+ należą do 
+  
+    
+      
+        P
+        ,
+      
+    
+    {\displaystyle P,}
+  
+
+jeżeli 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ jest niepustym podzbiorem 
+  
+    
+      
+        P
+        ,
+      
+    
+    {\displaystyle P,}
+  
+ to 
+  
+    
+      
+        S
+        +
+        P
+        =
+        x
+        +
+        P
+      
+    
+    {\displaystyle S+P=x+P}
+  
+ dla pewnego 
+  
+    
+      
+        x
+        ∈
+        
+          C
+        
+        ,
+      
+    
+    {\displaystyle x\in \mathbb {C} ,}
+  
+
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ ma nietrywialny, będący inwolucją automorfizm 
+  
+    
+      
+        x
+        ↦
+        
+          x
+          
+            ∗
+          
+        
+        ,
+      
+    
+    {\displaystyle x\mapsto x^{*},}
+  
+ który dla ustalonego 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ spełnia własność, że 
+  
+    
+      
+        x
+        
+          x
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle xx^{*}}
+  
+ należy do 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ dla dowolnego niezerowego 
+  
+    
+      
+        x
+        ∈
+        
+          C
+        
+        .
+      
+    
+    {\displaystyle x\in \mathbb {C} .}
+  
+
+Dla danego ciała o tych własnościach można zdefiniować topologię, biorąc zbiory
+
+  
+    
+      
+        B
+        (
+        x
+        ,
+        p
+        )
+        =
+        {
+        y
+        :
+        p
+        −
+        (
+        y
+        −
+        x
+        )
+        (
+        y
+        −
+        x
+        
+          )
+          
+            ∗
+          
+        
+        ∈
+        P
+        }
+      
+    
+    {\displaystyle B(x,p)=\{y:p-(y-x)(y-x)^{*}\in P\}}
+  
+
+jako bazę, gdzie 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ przebiega to ciało, a 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ przebiega 
+  
+    
+      
+        P
+        .
+      
+    
+    {\displaystyle P.}
+  
+
+Aby przekonać się, że te własności charakteryzują 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jako ciało topologiczne, należy zauważyć, że 
+  
+    
+      
+        P
+        ∪
+        {
+        0
+        }
+        ∪
+        −
+        P
+      
+    
+    {\displaystyle P\cup \{0\}\cup -P}
+  
+ to ciało uporządkowane zupełnie w sensie Dedekinda, które może być w związku z tym utożsamiane z liczbami rzeczywistymi 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ poprzez jednoznacznie wyznaczony izomorfizm ciał. Z ostatniej własności łatwo wynika, że grupa Galois nad liczbami rzeczywistymi ma rząd równy dwa, co uzupełnia charakteryzację.
+Lew Pontriagin pokazał, że jedynymi spójnymi lokalnie zwartymi ciałami topologicznymi są 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ oraz 
+  
+    
+      
+        
+          C
+        
+        .
+      
+    
+    {\displaystyle \mathbb {C} .}
+  
+ Fakt ten umożliwia jeszcze jedną charakteryzację 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jako ciała topologicznego, ponieważ 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ może być odróżnione od 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ poprzez uwagę, iż niezerowe liczby zespolone są spójne w przeciwieństwie do niezerowych liczb rzeczywistych.
+
+
+== Historia ==
+
+
+=== XVI i XVII wiek ===
+Istnienie pierwiastka kwadratowego liczby ujemnej było najprawdopodobniej po raz pierwszy rozważane w starożytności przez Herona z Aleksandrii. Mimo to liczby zespolone wprowadził Girolamo Cardano w XVI wieku na potrzeby algebry. Rozważał on ujemne pola powierzchni, rozwiązując równania sześcienne, inaczej trzeciego stopnia. Nazywał nowe liczby fikcyjnymi , a liczbę 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ jednostką urojoną, nie wierząc w rzeczywiste istnienie takiego obiektu, a jedynie uznając go za pomocniczy element w rachunku. Innym pionierem tych rozważań był Rafael Bombelli.
+Liczby urojone zawdzięczają nazwę Kartezjuszowi. Nazwał je tak w pracy wydanej w 1637 roku, dla kontrastu z liczbami rzeczywistymi.
+
+
+=== XVIII i XIX wiek ===
+
+Liczby zespolone były używane przez matematyków osiemnastowiecznych jak Leonhard Euler, chociaż do pierwszej dekady XIX wieku ich status był niepewny. Nowy typ liczb stał się przedmiotem i narzędziem algebry oraz analizy; pokazała ona związek między funkcją wykładniczą o urojonych argumentach z funkcjami trygonometrycznymi, przez co liczby zespolone stały się użyteczne w trygonometrii i jej zastosowaniach jak analiza harmoniczna. Związek trygonometrii i analizy harmonicznej z opisem drgań, fal i sygnałów sprawił, że liczby zespolone zastosowano w różnych naukach empirycznych i technicznych jak fizyka, elektrotechnika i elektronika.
+Liczb zespolonych użyto też:
+
+do obliczania logarytmów z liczb ujemnych;
+w dowodzie zasadniczego twierdzenia algebry.
+Interpretacja geometryczna liczb zespolonych po raz pierwszy pojawiła się w pracach duńskiego matematyka Caspara Wessela z 1806, jednak nie została ona zauważona. Dopiero prace szwajcarskiego matematyka Roberta Arganda, zyskała większy odzew. Wielki wpływ na liczby zespolone miały prace Cauchy’ego, który systematycznie opracował algebrę funkcji zespolonych. Po raz pierwszy pojęcie liczb zespolonych, jako składających się z części rzeczywistej oraz urojonej, wprowadził niemiecki matematyk Carl Friedrich Gauss w roku 1831 lub 1832. Formalne określenie zbioru liczb zespolonych jako zbioru 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbb {R} ^{2},}
+  
+ z odpowiednio zdefiniowanymi działaniami dodawania i mnożenia, pochodzi od Hamiltona.
+W XIX wieku powstał też dział matematyki oparty w całości na liczbach zespolonych – analiza zespolona, która również znalazła zastosowania w matematyce i poza nią. Pierwszą poprawną publikacją na temat całkowania w dziedzinie liczb zespolonych była praca Cauchy'ego z 1825 roku. Jednym z problemów analizy zespolonej jest hipoteza Riemanna wysunięta w XIX wieku, istotna dla analitycznej teorii liczb. Uznano ją za jedno z najdonioślejszych zagadnień całej matematyki, przez co znalazła się na listach:
+
+23 problemów Hilberta w roku 1900;
+siedmiu problemów milenijnych w roku 2000.
+Liczby zespolone to przykład pojęcia, które po setkach lat od odkrycia znalazło swoje główne zastosowanie i okazało się być fundamentalne dla techniki, m.in. elektrotechniki.
+
+
+== Zastosowania ==
+
+
+=== Matematyka ===
+Wyznaczanie miejsc zerowych równań kwadratowych, których wyróżnik jest ujemny;
+badanie fraktali;
+rozwiązywanie równań różniczkowych;
+obliczanie całek oznaczonych z funkcji rzeczywistych przy pomocy metody residuów;
+analiza przebiegów zmiennych i periodycznych, oraz rozwiązywanie wielu problemów różniczkowych oraz całkowych, przy użyciu transformacji Fouriera;
+analiza grafów przez wartości własne macierzy sąsiedztwa.
+
+
+=== Inne nauki ===
+Analiza obwodów elektrycznych prądu przemiennego;
+mechanika kwantowa i jej rozszerzenia.
+Ze względu na liczne zastosowania liczby zespolone są typem wbudowanym w niektórych językach programowania, np. Fortran, Python, R czy Scheme.
+
+
+== Zobacz też ==
+
+ciało lokalne
+
+
+== Uwagi ==
+
+
+== Przypisy ==
+
+
+== Bibliografia ==
+David M. Burton: The History of Mathematics. Wyd. III. Nowy Jork: McGraw-Hill, 1995. ISBN 978-0-07-009465-9.
+René Descartes: Geometria. Tłumaczenie i komentarz: Piotr Błaszczyk, Kazimierz Mrówka. Kraków: TAiWPN, 2015. ISBN 978-83-242-2759-4.
+L. Górniewicz, R.S. Ingarden: Analiza matematyczna dla fizyków. Toruń: Wydawnictwo Naukowe UMK, 2012.
+István Hargittai: Fivefold symmetry (wyd. 2). Singapur: World Scientific Publishing Co. Pte. Ltd., 1992. ISBN 981-02-0600-3.
+Hans Niels Jahnke: A history of analysis. Providence, RI: American Mathematical Society, 2003. ISBN 0-8218-2623-9. OCLC 51607350.
+
+
+== Linki zewnętrzne ==
+Polskojęzyczne
+ Tomasz Zabawa, Liczby zespolone, Wydział Matematyki Stosowanej Akademii Górniczo-Hutniczej w Krakowie (WMS AGH), wms.mat.agh.edu.pl [dostęp 2024-05-16] – opis liczb zespolonych i zadania z rozwiązaniami.
+ Kalkulator liczb zespolonych, obliczone.pl [dostęp 2024-05-16].
+ Nagrania na YouTube [dostęp 2024-04-01]:
+
+Szymon Charzyński, Algebra – liczby zespolone, kanał Khan Academy po polsku, 5 lutego 2015.
+Wiktor Bartol, Liczby zespolone, Wydział Matematyki i Nauk Informacyjnych Politechniki Warszawskiej (MiNI PW), kanał „Archipelag Matematyki”, 27 września 2017.
+Helena Kazieko, Liczby zespolone, kanał SGGW, 13 maja 2020.
+Tomasz Miller, Liczby zespolone | Zacznijmy od zera #3, Centrum Kopernika Badań Interdyscyplinarnych – Uniwersytet Jagielloński, kanał „Copernicus”, 23 lutego 2021.
+Anglojęzyczne
+ Nagrania na YouTube [dostęp 2024-04-01]:
+
+Sabine Hossenfelder, Do Complex Numbers Exist?, kanał autorski, 6 marca 2021.
+How Imaginary Numbers Were Invented, kanał Veritasium, 1 listopada 2021.

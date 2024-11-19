@@ -1,0 +1,579 @@
+Logaritmi, eli logaritmifunktio on eksponenttifunktion (
+  
+    
+      
+        
+          a
+          
+            y
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle a^{y}=x}
+  
+) käänteisfunktio:
+
+  
+    
+      
+        
+          a
+          
+            y
+          
+        
+        =
+        x
+        ⇔
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        x
+        )
+        =
+        y
+      
+    
+    {\displaystyle a^{y}=x\Leftrightarrow log_{a}(x)=y}
+  
+
+Jossa 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ on kantaluku, 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ on numerus ja 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ on logaritmi.  Kantalukua pidetään kiinteänä parametrina. Logaritmifunktio vastaa kysymykseen 'mihin potenssiin 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ olisi korotettava, jotta vastaus olisi 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+?'. Esimerkiksi 
+  
+    
+      
+        
+          log
+          
+            3
+          
+        
+        ⁡
+        (
+        9
+        )
+        =
+        2
+      
+    
+    {\displaystyle \log _{3}(9)=2}
+  
+, sillä 
+  
+    
+      
+        
+          3
+          
+            2
+          
+        
+        =
+        9
+      
+    
+    {\displaystyle 3^{2}=9}
+  
+.
+
+Eräille logaritmeille on omat nimensä ja merkintänsä. Kymmenkantaisen logaritmifunktion eli Briggsin logaritmin tunnus on lg:
+
+  
+    
+      
+        lg
+        ⁡
+        (
+        x
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle \lg(x)=\log _{10}(x)\,}
+  
+.
+Luonnollisen logaritmi­funktion, jonka kantalukuna on Neperin luku e, tunnus on ln:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          log
+          
+            e
+          
+        
+        ⁡
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle \ln(x)=\log _{e}(x)\,}
+  
+.
+Luonnollinen logaritmi on tärkeä funktio varsinkin differentiaali- ja integraalilaskennassa. Sen merkitys perustuu etenkin siihen, että sen derivaatta on varsin yksinkertainen funktio, 1/x. Luonnollinen logaritmi on e-kantaisen eksponenttifunktion käänteisfunktio.
+Useissa sovelluksissa esiintyvän 2-kantaisen eli binäärisen logaritmifunktion tunnus on lb (= binäärinen logaritmi):
+
+  
+    
+      
+        lb
+        ⁡
+        (
+        x
+        )
+        =
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \operatorname {lb} (x)=\log _{2}(x)}
+  
+.
+Pelkästään merkinnän log, jossa kantalukua ei siis ole merkitty näkyviin, merkitys ei ole täysin vakiintunut. Hyvin usein se tarkoittaa 10-kantaista logaritmia ja tämä on yleistä erityisesti laskimissa, mutta merkintä on myös usein kontekstiin sidottu ja voi tarkoittaa mielivaltaista logaritmia. 
+Logaritmit kehittivät 1600-luvulla toisistaan riippumatta skotlantilainen John Napier ja sveitsiläinen Jobst Bürgi. Napier julkaisi omat, luonnollista logaritmia koskevat tuloksensa vuonna 1614.
+
+
+== Laskukaavoja ==
+Seuraavissa kaavoissa 
+  
+    
+      
+        x
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        a
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        y
+        ∈
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle x\in \mathbb {R} _{+},a\in \mathbb {R} _{+},y\in \mathbb {R} .}
+  
+ Logaritmeille on aina voimassa
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        a
+        )
+        =
+        1
+        
+      
+    
+    {\displaystyle \log _{a}(a)=1\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        1
+        )
+        =
+        0
+        
+      
+    
+    {\displaystyle \log _{a}(1)=0\,}
+  
+
+riippumatta a:n arvosta. Määritelmän perusteella on helppo osoittaa, että
+
+  
+    
+      
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle a^{\log _{a}(x)}=x}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        y
+        )
+        
+      
+    
+    {\displaystyle \log _{a}(xy)=\log _{a}(x)+\log _{a}(y)\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          (
+          
+            
+              x
+              y
+            
+          
+          )
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        −
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        y
+        )
+        
+      
+    
+    {\displaystyle \log _{a}\left({\frac {x}{y}}\right)=\log _{a}(x)-\log _{a}(y)\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          x
+          
+            n
+          
+        
+        )
+        =
+        n
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        
+        .
+      
+    
+    {\displaystyle \log _{a}(x^{n})=n\log _{a}(x)\,.}
+  
+
+Tarvittaessa myös kantaluku on helppo vaihtaa toiseksi (a:sta b:ksi), sillä
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              a
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \log _{a}(x)={\log _{b}(x) \over \log _{b}(a)}.}
+  
+
+
+== Sovelluksia ==
+Logaritmeja tarvitaan sellaisten yhtälöiden ratkaisemiseen, jossa eksponentti on tuntematon. Tällaisia yhtälöitä kutsutaan eksponenttiyhtälöiksi. Niiden avulla voidaan laskea, missä ajassa jokin eksponentiaalisesti kasvava tai vähenevä suure saa tietyn arvon. Sellaisia suureita ovat esimerkiksi korkoa korolle kasvava rahamäärä sekä myös radioaktiivisen aineen jäljellä oleva määrä tietyn ajan kuluttua.
+Eri yhteyksissä useita suureita mitataan logaritmisella asteikolla. Esimerkkejä ovat:
+
+happamuutta tai emäksisyyttä mittaava pH-asteikko, joka osoittaa liuoksen oksoniumionipitoisuuden 10-kantaisen logaritmin vastaluvun;
+äänenvoimakkuuden desibeliasteikko;
+maanjäristysten voimakkuutta ilmaiseva Richterin asteikko.
+Myös musikaalinen sävelasteikko on itse asiassa logaritminen asteikko, sillä sävelkorkeus nousee aina yhden oktaavin, kun äänen taajuus kaksinkertaistuu. Jokaista muutakin intervallia vastaa tietyn suuruinen taajuuksien suhde.
+
+
+=== Logaritmitaulukot laskutoimitusten apuvälineenä ===
+Ennen kuin taskulaskimet 1970-luvulla yleistyivät, logaritmeilla oli noin 300 vuoden ajan ollut suuri merkitys laskutoimitusten apuvälineinä. Tämä käyttö perustui edellä esitettyyn kaavaan, jonka mukaan lukujen tulon logaritmi on sama kuin tekijöiden logaritmien summa:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        y
+        )
+        
+      
+    
+    {\displaystyle \log _{a}(xy)=\log _{a}(x)+\log _{a}(y)\,}
+  
+
+Jos siis on käytettävissä taulukko eri lukujen logaritmeista, voidaan täten kerto- ja jakolasku korvata yhteen- ja vähennyslaskulla, jotka ovat suurillakin luvuilla paljon helpompi suorittaa kynällä ja paperilla kuin edelliset.  Kertolasku voidaan suorittaa katsomalla taulukosta tekijöiden logaritmit, lasketaan ne yhteen ja katsotaan sitten, minkä luvun logaritmi summa on. Jakolasku taas voidaan suorittaa katsomalla taulukosta jaettavan ja jakajan logaritmit, vähentämällä jälkimmäinen edellisestä ja katsomalla sitten, minkä luvun logaritmi erotus on. 
+Logaritmitaulukkoja on julkaistu kirjoina, joissa ovat esimerkiksi lukujen 1000 – 9999 10-kantaiset eli Briggsin logaritmit. Muiden kuin tällä välillä olevien lukujen logaritmit saadaan lisäämällä tai vähentämällä näistä luku, joka osoittaa, kuinka monta kertaa annettu luku on kerrottava tai jaettava 10:llä, jotta tulos olisi tällä välillä. Esimerkiksi lg 20 = lg 2000 - 2, koska luvusta 20 saadaan luku 2000 kertomalla se luvulla 10 kaksi kertaa. Vastaavasti lg 5 = lg 5000 - 3. 
+Myös laskutikku perustuu samoihin logaritmifunktion ominaisuuksiin.
+Logaritmeja apuna käyttäen voidaan laskea erilaisia sijoitukseen ja osallistujamäärään perustuvia rankingpistejärjestelmiä esimerkiksi turnauspokerissa.
+
+
+== Katso myös ==
+Alkeisfunktio
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Rikkonen, Harri: Matematiikan pitkä peruskurssi II – Reaalimuuttujan funktioiden differentiaalilasku.  Helsinki:  Otakustantamo, 1969.  ISBN 951-671-022-0 
+Pitkäranta, Juhani: Calculus Fennicus – TKK:n 1. lukuvuoden laaja matematiikka (2000–2013) (pdf) Helsinki:  Avoimet oppimateriaalit ry. ISBN 978-952-7010-12-9 ISBN 978-952-7010-6 (pdf). Viitattu 8.7.2019.
+
+
+== Aiheesta muualla ==
+
+Matematiikkalehti Solmu, Erkki Luoma-aho: Matematiikan historia aihealueittain, Logaritmit (pdf)
+Opetusvideoita logaritmista

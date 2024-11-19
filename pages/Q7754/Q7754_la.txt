@@ -1,0 +1,564 @@
+Analysis (-eos, f. ) est disciplina mathematica saeculo duodevicensimo orta, quam creaverunt et evolverunt Galilaeus, Leibnitius, Newtonus, Eulerus, Cantor, Weierstrass, et alii mathematici docti, calculo infinitesimali iustificando. 
+Ideae principales Analysis sunt functio et limes, quibus integrale et derivativum bene definiuntur. Mathematici diu formulis usi sunt, sed functionis idea primus saeculo XVII Leibnitius usus est, quam postea Eulerus sensu hodierno elaboraturus erat. Limes, qui ad finem serierum mutationum pertinet, vim habet quandoque definitio distantiae vel propinquitatis praebetur. Analysis est organum principale mathematicae applicatae; analysis numerica problemata analysis approximationibus solvit.  Analysis est quasi contraria mathematicae discretae, quod
+analysis de quantitatibus continuis, non discretis, tractat.
+
+
+== Ideae principales ==
+
+
+=== Functio ===
+
+In analysi functio dicitur formula mathematica seu regula quae determinat quantitatem variabilem quandam per aliquam quantitatem vel quantitates variabiles. Exempli gratia, si definimus functionem 
+  
+    
+      
+        z
+        =
+        f
+        (
+        x
+        ,
+        y
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+      
+    
+    {\displaystyle z=f(x,y)=x^{2}+y^{2}}
+  
+, dicimus z esse functionem variabilium x et y. Quantitas z sic determinata dicitur dependens, et quantitas determinans sicut x dicitur independens. Quantitas sicut x etiam dicitur argumentum functionis.
+Definitio functionis non est perfecta nisi etiam variabilium independentium fons datur, qui functionis dominium dicitur. Exempli gratia 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (x,y)\in \mathbb {R} ^{2}}
+  
+ dari potest, omnes numeros et x et y reales esse dicens. Vel 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        [
+        0
+        ,
+        1
+        ]
+        ×
+        [
+        0
+        ,
+        1
+        ]
+      
+    
+    {\displaystyle (x,y)\in [0,1]\times [0,1]}
+  
+ dari potest, si soli numeri x et y inter 0 et 1 reales adhibentur. Campus per quem quantitas dependens variat dicitur functionis codominium.
+Sunt multae species functionum:
+
+functio iniectiva
+functio superiectiva
+functio biiectiva
+functio inversa
+functio continua aut discontinua
+functio differentiabilis
+Proprietas suprema quae est omni functioni necessaria est solum unum valorem habere siquando omnia functionis argumenta sunt specificata. Ergo, 
+  
+    
+      
+        y
+        =
+        
+          
+            x
+          
+        
+      
+    
+    {\displaystyle y={\sqrt {x}}}
+  
+ est functio, quamquam 
+  
+    
+      
+        y
+        =
+        ±
+        
+          
+            x
+          
+        
+      
+    
+    {\displaystyle y=\pm {\sqrt {x}}}
+  
+ non est, quia duos valores cuidam quantitati x simul indicat.
+
+
+=== Limes ===
+ 
+In analysi limes vocatur quantitas vel functio quae evenit cum una ex functionis variabilibus fini cuidam sensim appropinquat. Ergo, cum functionem 
+  
+    
+      
+        y
+        =
+        5
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle y=5x^{2}}
+  
+ habemus, limes y est 20, si argumentum variabile x valori 2 appropinquat. Limes etiam dicitur finis cui variabile x appropinquat, sicut in integrali 
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        sin
+        ⁡
+        x
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{a}^{b}\sin x\,dx}
+  
+ ubi dicimus a esse limitem integralis inferum et b superum.
+Limitis species maximi momenti reperitur in derivativo functionis 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ simplice
+
+  
+    
+      
+        
+          
+            
+              d
+              f
+              (
+              x
+              )
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        
+          lim
+          
+            Δ
+            x
+            →
+            0
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              +
+              Δ
+              x
+              )
+              −
+              f
+              (
+              x
+              )
+            
+            
+              Δ
+              x
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {df(x)}{dx}}=\lim _{\Delta x\rightarrow 0}{\frac {f(x+\Delta x)-f(x)}{\Delta x}}}
+  
+
+qui gradum crescendi in omni puncto huius curvae dat. In notatione data limes evenit cum 
+  
+    
+      
+        Δ
+        x
+      
+    
+    {\displaystyle \Delta x}
+  
+ valori 0 appropinquat et ipso dx denotatur. Limes sicut illud derivativum non semper potest haberi, exempli gratia si linea tangens singularis non exsistit in puncto quodam curvae. Solae eae functiones, igitur, quae derivativa admittunt dicuntur differentiabiles.
+Ad limitem decernendum, definitio distantiae propinquitatisque quaedam est necessaria. Definitio naturalis, si functio argumentaque sua valores reales habeant, est distantia data secundum formulam Pythagoream. Pro distantia inter puncta vectoralia 
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        ,
+        
+          
+            
+              b
+              →
+            
+          
+        
+        ∈
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle {\vec {a}},{\vec {b}}\in \mathbb {R} ^{3}}
+  
+ habemus
+
+  
+    
+      
+        
+          |
+        
+        
+          |
+        
+        a
+        −
+        b
+        
+          |
+        
+        
+          |
+        
+        =
+        
+          
+            (
+            
+              a
+              
+                x
+              
+            
+            −
+            
+              b
+              
+                x
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              a
+              
+                y
+              
+            
+            −
+            
+              b
+              
+                y
+              
+            
+            
+              )
+              
+                2
+              
+            
+            +
+            (
+            
+              a
+              
+                z
+              
+            
+            −
+            
+              b
+              
+                z
+              
+            
+            
+              )
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle ||a-b||={\sqrt {(a_{x}-b_{x})^{2}+(a_{y}-b_{y})^{2}+(a_{z}-b_{z})^{2}}}}
+  
+,
+et pro distantia inter functiones continuas f et g habemus, inter alias definitiones possibiles,
+
+  
+    
+      
+        
+          |
+        
+        
+          |
+        
+        f
+        −
+        g
+        
+          |
+        
+        
+          |
+        
+        =
+        
+          
+            
+              ∫
+              
+                z
+              
+              
+                b
+              
+            
+            
+              |
+            
+            f
+            (
+            x
+            )
+            −
+            g
+            (
+            x
+            )
+            
+              
+                |
+              
+              
+                2
+              
+            
+            
+            d
+            x
+          
+        
+        
+      
+    
+    {\displaystyle ||f-g||={\sqrt {\int _{z}^{b}|f(x)-g(x)|^{2}\,dx}}\,}
+  
+.
+
+
+=== Mensura ===
+Mensura mathematica est similis longitudini vel areae, sed notio generalius. In spatio topologico, metricum definiri potest quod longinquitates definit; spatium quod tale metricum habet est spatium metricum. Mensura generalius est metric. Integrale calculi ordinarii est limes summationis Riemannianae in spatio metrico. Integrale abstractum est limes similis summationes in spatio mensurato.
+Notio mensurae saeculo 19 a Jordan, Peano, Lebesgue definitur.
+
+
+=== Continuitas ===
+
+Functiones maximi momenti in analysi sunt functiones continuae. Graphum functionis continuae nullum intervallum habet -- id quod non est definitio mathematica, scilicet! Definitio recta est: functio f est continua in puncto x = x0 si 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            
+              x
+              
+                0
+              
+            
+          
+        
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle \lim _{x\to x_{0}}f(x)=f(x_{0}).}
+  
+ Functio f est continua in intervallo (a, b) si continua est in omne intervalli puncto. Possumus dicere functio est "continua a dextera" in puncto x0 si 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            
+              x
+              
+                0
+              
+            
+          
+        
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle \lim _{x\to x_{0}}f(x)=f(x_{0})}
+  
+ verum est quando x < x0, et functio est "continua a sinistra" si limes exstat quando x > x0. Tunc, functio f est continua in intervallo 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\displaystyle [a,b]}
+  
+ si continua est a sinistra in puncto x = a, continua a dextra in puncto x = b, et continua in omnibus punctis intervallis a < x < b.
+
+
+== Notae ==
+
+
+== Bibliographia ==
+Aigner, Martin, et Günter M. Ziegler. 2001. Proofs from THE BOOK, editio altera. Berolini: Springer. ISBN 3-540-67865-4
+Anglin, W. S., et J. Lambek. 1995. The Heritage of Thales. Novi Eboraci: Springer.
+Behnke, H., F. Bachmann, K. Fladt, H. Kunle, et W. Süss, edd.; anglice convertit S. H. Gould. 1974. Fundamentals of Mathematics, tomus 3, Analysis. Cambridge: MIT Press. ISBN 0-262-02049-1.
+Bottazzini, Umberto. 1981. Il Calculo sublime: storia dell' analisi matematica da Euler a Weierstrass. Torino: Boringhieri.
+Bourbaki, Nicolas. 1976. Fonctions d'une variable réelle, re-editio 2007. Berolini et Novi Eboraci: Springer. ISBN 978-3-540-34036-2.
+Bridger, Mark. 2007. Real Analysis: A Constructive Approach. Hoboken: Wiley Interscience. ISBN 978-0-471-79230-7.
+Grattan-Guiness, Ivor. 1970. The Development of the Foundations of Mathematical Analysis from Euler to Riemann. Cantabrigiae: MIT Press. ISBN 0-262-07034-0
+Hairer, Ernst. 1996. Analysis by its History. Novi Eboraci: Springer. ISBN 0-387-94551-2.
+Hardy, G. H. 1952, 1992. A Course in Pure Mathematics, ed. 10. Cantabrigiae. ISBN 0-521-09227-2.
+Hasselblatt, Boris, et A. B. Katok. 2002. Handbook of Dynamical Systems. Amstelodami: North Holland. T. 1, ISBN 978-0-444-50168-4, T. 2, ISBN 978-0-444-52055-5, T. 3, ISBN 978-0-444-53141-4.
+Hawkins, Thomas. 1970. Lebesgue's Theory of Integration: Its Origins and Development. Madison. ISBN 0-299-05550-7.
+Hintikka, Jaakko. 1974. The Method of Analysis, its Geometrical Origin, and its General Significance. Dordrecht: D. Reidel.
+Hirsch, Morris W., Stephen Smale, Robert L. Devaney. 2004. Differential Equations, Dynamical Systems, and an Introduction to Chaos. Didacopoli: Academic Press. ISBN 0-12-349703-5.
+Jost, Jürgen. 2003. Postmodern Analysis, editio tertia. Berolini et Novi Eboraci: Springer. ISBN 3-540-43873-4.
+Knopp, Konrad. 1952. Elements of the Theory of Functions, editio Americana a Frederico Bagemihl verta. Novi Eboraci: Dover.
+Krantz, Steven G. 2005. Real Analysis and Foundations. Boca Raton: Chapman & Hall. ISBN 1-58488-483-5.
+Rudin, Walter. 1974. Real and Complex Analysis, editio altera. Novi Eboraci: McGraw-Hill. ISBN 0-07-054233-3.
+Stein, Elias M., et Rami Shakarchi. 2003. Complex Analysis. Princeton. ISBN 0-691-11385-8.
+Titchmarsh, E. C. 1939. Theory of Functions. Oxonii: Oxford University Press. OCLC 528091

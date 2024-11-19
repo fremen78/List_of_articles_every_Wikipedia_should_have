@@ -1,0 +1,642 @@
+Artikulu hau multzoen teoria matematikoari eta bere axiomatizazioari buruzkoa da. Multzoak era didaktiko eta sinpleago batez jakiteko ikus: Multzo.
+
+Multzo-teoria multzoen propietateak eta erlazioak aztertzen dituen logika matematikoaren adar bat da. Objektuen bilduma abstraktuak objektu moduan hartzen ditu. Multzoak eta haien arteko eragiketak edozein teoria matematikoren oinarrizko tresna dira.
+Multzo-teoria aberatsa da matematikaren gainerako objektuak eta egiturak eraikitzeko: zenbakiak, funtzioak, irudi geometrikoak... Logikaren tresnei esker, haien oinarriak aztertzea ahalbidetzen du. Gaur egun, Zermelo-Fraenkelen teoriaren axioma multzoa matematika osoa garatzeko nahikoa dela onartua dago.
+Multzo-teoriaren lehenengo ikerketa formala Georg Cantor matematikariak egin zuen XIX. mendean. Egun, multzo-teoria eskolako matematiketan irakasten den gaia da, zenbaketa irakasteko adibidez, baina ebatzi gabeko problema eta paradoxa anitz aztertzeko tresna ere bada. Horrela, ohikoa da multzo teoria naive edo sinplea (eskolan irakasten dena) eta multzo-teoria axiomatikoa (matematika puruaren arloan, formalki konplexutasun handikoa eta paradoxak ebazteko sortu zena) bereiztea.
+
+
+== Multzoen teoria intuitiboa ==
+
+
+=== George Cantor ===
+Cantorren hasierako definizioa guztiz intuitiboa da: Multzo bat osotasun batean bilduta dauden objektu jakinen C bilduma bat da, gure pertzepziotik edo gure pentsamendutik (C elementuak deitzen direnak) oso ezberdinak direnak.
+Ideia sinple eta begiesgarri hori inozoa ere bada, kontraesan izugarriak sortzen baititu berehala, Russellen paradoxa, adibidez.
+Erakutsi ahal izateko, teoria intuitibo hori formalizatzen hasi behar dugu; izan ere, multzoetarako sinboloez eta haien elementuez gain (x, C, eta abar), pertenentzia 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+ eta berdintasun = sinboloak izango ditu.
+x C multzoko elementu bat dela honela adieraziko da: x
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+C edo "x barne C" eta x C  multzoko elementua ez dela honela: x
+  
+    
+      
+        ∉
+      
+    
+    {\displaystyle \not \in }
+  
+ C edo "x ez dago C-n"
+Kontuan izango dugu ez dela beharrezkoa beti multzoak maiuskulaz eta haien elementuei letra xehez adieraztea; izan ere, multzo bat aldi berean beste multzo bateko elementua izan daiteke, eta gure teorian ez dago multzoak ez diren objekturik.
+Ezaguna da multzoko elementuak giltzen artean giltzapetzeko notazioa.
+Adibidea: A = {a, b, c}.
+
+
+== Sarrera ==
+Funtsezko multzo-teoria lengoaia matematikoaren oinarrizko tresna da. Zenbakiak eta poligonoak, adibidez, objektu matematikoak dira eta objektuen multzo moduan ikus daitezke. Elementu horietako bakoitza multzo baten barruan dago. Multzoak beste multzo batzuren elementu izan daitezke.
+Multzo baten partaide izatearen kontzeptua 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+ ikurraz adierazten da. Horrela, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ elementua 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoaren barruan dagoela edo multzoaren partaide dela 
+  
+    
+      
+        a
+        ∈
+        A
+      
+    
+    {\displaystyle a\in A}
+  
+ notazioaz adierazten da.
+Partaide izatearen kontzeptutik lortzen da multzoen arteko partekotasun-erlazioa. 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzo jakin baten barruan dagoen 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ azpi-bilduma 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-ren azpimultzo bat da. 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoen arteko erlazio hori horrela adierazten da: 
+  
+    
+      
+        B
+        ⊆
+        A
+      
+    
+    {\displaystyle B\subseteq A}
+  
+. 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-ren parte dela esaten da..
+Multzoen artean aurki ditzakegu multzo finitua, multzo infinitua, multzo hutsa, multzo ez-zenbakigarriak, multzo zenbakigarriak, etab.
+
+
+=== Zenbakizko multzo ezagunak ===
+Matematikan badira oso ezagunak eta erabiliak diren hainbat zenbakizko multzo: 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ zenbaki arrunten multzoa da, 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ zenbaki osoen multzoa, 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+ zenbaki arrazionalen multzoa, 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ zenbaki errealen multzoa eta 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ zenbaki konplexuen multzoa. Zera betetzen da: 
+  
+    
+      
+        
+          N
+        
+        ⊂
+        
+          Z
+        
+        ⊂
+        
+          Q
+        
+        ⊂
+        
+          R
+        
+        ⊂
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {N} \subset \mathbb {Z} \subset \mathbb {Q} \subset \mathbb {R} \subset \mathbb {C} }
+  
+
+
+=== Eragiketak ===
+Bildura: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoen bildura, 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-renak edota 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+-renak diren elementuek osatzen duten multzoa da. 
+  
+    
+      
+        A
+        ∪
+        B
+      
+    
+    {\displaystyle A\cup B}
+  
+ notazioaz adierazten da.
+Ebakidura: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoen ebakidura aldi berean 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-renak eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+-renak diren elementuek osatzen duten multzoa da. 
+  
+    
+      
+        A
+        ∩
+        B
+      
+    
+    {\displaystyle A\cap B}
+  
+ notazioaz adierazten da.
+Diferentzia: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoen arteko diferentzia 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+-ren barruan ez dauden 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoaren elementu guztiak dituen multzoa da. 
+  
+    
+      
+        A
+        ∖
+        B
+      
+    
+    {\displaystyle A\setminus B}
+  
+ notazioaz adierazten da.
+Osagarria: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoaren osagarria 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoak ez dituen gainerako elementu guztiak dituen multzoa da. 
+  
+    
+      
+        
+          A
+          
+            C
+          
+        
+      
+    
+    {\displaystyle A^{C}}
+  
+ notazioaz adierazten da.
+Biderkadura kartesiarra: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoen arteko biderkadura kartesiarra 
+  
+    
+      
+        A
+        ×
+        B
+      
+    
+    {\displaystyle A\times B}
+  
+ notazioaz adierazten da eta 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ eta 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ elementuek osatzen dituzten (
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+, 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+) bikote ordenatuen multzoa da, non 
+  
+    
+      
+        a
+        ∈
+        A
+      
+    
+    {\displaystyle a\in A}
+  
+ eta 
+  
+    
+      
+        b
+        ∈
+        B
+      
+    
+    {\displaystyle b\in B}
+  
+.
+Multzo disjuntuak: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ eta 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ multzoek elementu komunik ez badute disjuntuak direla esaten da,  
+  
+    
+      
+        A
+        ∩
+        B
+        =
+        {
+        }
+        =
+        ∅
+      
+    
+    {\displaystyle A\cap B=\{\}=\emptyset }
+  
+.
+Potentzia-multzoa: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoaren potentzia-multzoa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-ren azpimultzo guztiek osatzen duten multzoa da eta 
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        A
+        )
+      
+    
+    {\displaystyle {\mathcal {P}}(A)}
+  
+ notazioaz adierazten da.
+Partizioa: 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoaren partizioa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-ren azpimultzo-familia bat da, non azpimultzoak haien artean disjuntuak diren eta guztien bildura 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoa den.
+Multzoak eta multzoen arteko eragiketak Venn-en diagramen bidez irudika daitezke.
+
+
+== Aplikazioak ==
+Multzo-teoriaren bidez kontzeptu matematiko ugari defini daitezke zehaztasun handiz. Grafoak, eraztunak eta espazio bektorialak, adibidez, multzo-teoriaren propietate axiomatikoetan oinarrituz deskribatuak izan daitezkeen egitura matematikoak dira. Baliokidetasun erlazioa eta bestelako erlazio matematikoak ere, hau da, erlazioen teoria multzo-teoriaren bidez deskriba daiteke.
+Izan ere, multzo-teoria matematikaren arlo desberdin askoen oinarria da. Principia of Mathematica -ren lehen atala argitaratu zenetik, matematikako teorema guztiak edo gehienak multzo-teoriako axiomak erabiliz ondoriozta daitezkeela onartu da. Zenbaki arrunten eta errealen propietateak, adibidez, multzo-teoriatik abiatuz lor daitezke.
+Analisi matematikoaren, topologiaren, algebra abstraktuaren eta matematika diskretuaren oinarria multzo-teoria dela ezin daiteke uka; matematikariek onartu dute arlo horietako teoremak, multzo-teoriako axiometatik eta definizioetatik abiatuz lor daitezkeela. Metamath egiaztatze-proiektuak multzo-teoriako, lehen ordenako logikako eta logika proposizionaleko 12.000 teorema baino gehiagoren egiaztapenak ditu, gizakiak idatzitako eta konputagailuak egiaztatutakoak guztiak.
+
+
+== Multzo-teoria axiomatikoa ==
+Oinarrizko multzo-teoria modu informalean eta intuizioa erabiliz azter daiteke. Halaxe irakasten da eskoletan, Vennen diagramak erabiliz. Modu intuitiboan, multzoa baldintza jakin bat betetzen duten objektuek osatutako klasetik osa daitekeela esaten da. Baina, definizio horrek hainbat paradoxarako bidea ematen du. Ezagunenak Bertrand Russell matematikariak aurkitutako Russell-en paradoxa, Burali-Forti-ren paradoxa eta Cantor-en paradoxa dira. Paradoxa horiek hasiera batean Georg Cantor eta Gottlob Frege matematikariek garatutako multzoen teoria kontraesankorra dela frogatu zuten.
+Matematika azaltzeko oinarrizko tresna multzo-teoria izanik, paradoxa horiek saihestea beharrezkoa bihurtu zen. Lehen-mailako logika erabiliz eta multzo-teoria ondo eraikitzeko helburuarekin multzo-teoria axiomatikoa garatu zen, Zermelo-Fraenkel-en axiomak, adibidez. Hala ere, kasu askotan multzo-teoriaren oinarrizko formulazioa erabiltzea nahikoa izaten da.
+
+
+== Erreferentziak ==
+
+
+== Ikus, gainera ==
+Multzo
+Venn diagrama
+Multzoen arteko aljebra
+Multzoen teoria informal
+
+
+== Kanpo estekak ==
+(Ingelesez) https://en.wikipedia.org/wiki/List_of_set_identities_and_relations List of set identities and relations (Wikipedia)
+(Ingelesez) Weisstein, Eric W. https://mathworld.wolfram.com/SetTheory.html "Set Theory." From MathWorld--A Wolfram Web Resource,

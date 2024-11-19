@@ -1,0 +1,497 @@
+Un inductor es un compausant electric que pòt emmagazinar d'energia jos la forma d'un champ magnetic creat per lo passatge d'un corrent electric dins un condutor. Es un compausant de basa de l'electronica moderna qu'entra dins la fabricacion de mai d'un dispositiu, sovent en associacion emb d'autres compausants.
+
+
+== Istòria ==
+Lo desvolopament de l'induccion electromagnetica comencet durant lo periòde antic emb d'observacions empiricas (electricitat estatica, fodra, atraccion magnetica). Pasmens, i aviá pas de teorias permetent d'explicar los mecanismes a l'origina de fenomèns vists coma de manifestacions divinas. Quò perduret dusca a l'emergéncia de las sciéncias modernas.
+La prumiera descripcion de l'induccion electromagnetica fuguet aital l'òbra de Michael Faraday (1791-1867) en 1831. Lo fenomèn fuguet descubert d'un biais independent en 1832 per Joseph Henry (1797-1878). Durant son experiéncia, Faraday enrotlet dos fiaus a l'entorn daus costats opausats d'un aneu de fer. Esperava observar la propagacion d'una mena d'onda a travers l'aneu e un fenomèn electric de l'autre costat dau sistema. Pasmens, observet en realitat un corrent transitòri dins la segonda bobina quand un generator era connectat a la prumiera. Faraday contunhet sas experiéncias. Per exemple, observet d'autres corrents transitòris en desplaçant un barron aimantat dins una bobina de fiaus. Lo terme « inductor » fuguet imaginat per Heinrich Daniel Ruhmkorff (1803-1877) quand inventet l'inductòri, un generator electric permetent de produire de tensions nautas.
+
+
+== Descripcion ==
+
+
+=== Definicion ===
+
+Un corrent electric passant dins un conductor genera un champ magnetic a son entorn. Lo flux magnetic 
+  
+    
+      
+        
+          Φ
+          
+            
+              B
+            
+          
+        
+      
+    
+    {\displaystyle \Phi _{\mathbf {B} }}
+  
+ generat per lo corrent d'intensitat 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ despend de la forma geometrica dau circuit. Lor rapòrt definís l'inductància 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ :
+
+  
+    
+      
+        L
+        =
+        
+          
+            
+              Φ
+              
+                
+                  B
+                
+              
+            
+            I
+          
+        
+      
+    
+    {\displaystyle L={\frac {\Phi _{\mathbf {B} }}{I}}}
+  
+
+En mai de la geometria dau circuit, l'inductància despend tanplan de la permeabilitat magnetica daus materiaus vesins. Un inductor es un compausant constituït d'un fieu (o d'un autre conductor) que sa forma permet d'aumentar lo flux magnetic dins lo circuit. Las bobinas e las eliças son las formas preferidas. L'apondon d'un « còr magnetic », un materiau ferromagnetic a l'interior de la bobina, es un autre metòde permetent d'aumentar l'inductància en creant un champ magnetic qu'indutz una magnetizacion dau materiau.
+
+
+=== Lei de comportament ===
+Un chamjament dau corrent circulant dins un inductor entraina la formacion d'un flux magnetic variabla e l'aparicion d'una tension electrica a travers lo compausant. Segon la lei de l'induccion de Faraday, la tension 
+  
+    
+      
+        
+          
+            E
+          
+        
+      
+    
+    {\displaystyle {\mathcal {E}}}
+  
+ engendrada per la variacion de flux magnetic 
+  
+    
+      
+        
+          Φ
+          
+            
+              B
+            
+          
+        
+      
+    
+    {\displaystyle \Phi _{\mathbf {B} }}
+  
+ es donada per la relacion : 
+
+  
+    
+      
+        
+          
+            E
+          
+        
+        =
+        −
+        
+          
+            
+              d
+              
+                Φ
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\mathcal {E}}=-{\frac {d\Phi _{\mathbf {B} }}{dt}}}
+  
+
+En utilizant la definicion l'inductància, s'obten :
+
+  
+    
+      
+        
+          Φ
+          
+            
+              B
+            
+          
+        
+        =
+        L
+        I
+      
+    
+    {\displaystyle \Phi _{\mathbf {B} }=LI}
+  
+
+Puei :
+
+  
+    
+      
+        
+          
+            E
+          
+        
+        =
+        −
+        
+          
+            
+              d
+              
+                Φ
+                
+                  
+                    B
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        
+          
+            d
+            
+              d
+              t
+            
+          
+        
+        (
+        L
+        I
+        )
+      
+    
+    {\displaystyle {\mathcal {E}}=-{\frac {d\Phi _{\mathbf {B} }}{dt}}=-{\frac {d}{dt}}(LI)}
+  
+
+Quò mena finalament a la lei de comportament de l'inductor :
+
+  
+    
+      
+        
+        
+          
+            E
+          
+        
+        =
+        −
+        L
+        
+          
+            
+              d
+              I
+            
+            
+              d
+              t
+            
+          
+        
+        
+      
+    
+    {\displaystyle \quad {\mathcal {E}}=-L{\frac {dI}{dt}}\quad }
+  
+
+Segon quela relacion, l'inductància es una mesura de la quantitat de fòrça electromotritz congreada per un taus de variacion de corrent donada.
+
+
+=== Lei de Lenz ===
+
+La polaritat, es a dire la direccion, de la tension engendrada per un inductor es donada per la lei de Lenz. Segon quela regla, quela tension s'opausa aus chamjaments dau corrent dins lo circuit. Per exemple, si un corrent circulant a travers un inductor de 1 H aumenta au ritme de 1 A/s, la diferéncia de potenciau de 1 V engendrada será positiva a l'entrada de l'inductor e negativa a la surtida. L'energia dau circuit externa necessària per franchir quela barriera de potenciau es estocada dins lo champ magnetic de l'inductor. Aital, si l'intensitat dau corrent demenís, la diferéncia de potenciau engendrada será negativa a l'entrada de l'inductor e positiva a la surtida. Dins quela situacion, l'energia estocada es restituïda au circuit, çò que permet de mantenir brevament la tension.
+
+
+=== Relacion tension-intensitat dins lo cas d'una tension inducha positiva ===
+
+Las aplicacions concretas d'un inductor s'interessan normalament au cas de la tension inducha positiva. De mai, quò permet d'evitar la preséncia d'un signe mens dins la formula. Dins queu cas, la tension entre las bòrnas de l'inductor es donada per la relacion :
+
+  
+    
+      
+        V
+        (
+        t
+        )
+        =
+        L
+        
+          
+            
+              
+                d
+              
+              I
+              (
+              t
+              )
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle V(t)=L{\frac {\mathrm {d} I(t)}{\mathrm {d} t}}}
+  
+
+La forma integrala de quela relacion, en chausissent 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\displaystyle t_{0}}
+  
+ coma origina dau temps e 
+  
+    
+      
+        I
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle I(t_{0})}
+  
+ coma valor iniciala de l'intensitat, es alòrs :
+
+  
+    
+      
+        I
+        (
+        t
+        )
+        =
+        I
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+        +
+        
+          
+            1
+            L
+          
+        
+        
+          ∫
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            t
+          
+        
+        V
+        (
+        τ
+        )
+        
+        
+          d
+        
+        τ
+      
+    
+    {\displaystyle I(t)=I(t_{0})+{\frac {1}{L}}\int _{t_{0}}^{t}V(\tau )\,\mathrm {d} \tau }
+  
+
+Quela relacion es similara a la relacion obtenguda per un condensator. Quò s'explica per las similituds entre los dos compausants : l'inductor estòca d'energia dins un champ magnetic e lo condensator dins un champ electric.
+
+
+=== Energia estocada dins un inductor ===
+Durant son foncionament, un inductor estòca d'energia dins son champ magnetic quand lo corrent aumenta. Quela energia es descargada quand lo corrent demenís. Per un corrent d'intensitat 
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+      
+    
+    {\displaystyle I_{0}}
+  
+ e un inductor d'inductància 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+, l'energia estocada 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ es egala a :
+
+  
+    
+      
+        
+        W
+        =
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          
+            
+              I
+              
+                0
+              
+            
+          
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle \quad W={\frac {1}{2}}L{I_{0}}^{2}\quad }
+  
+
+
+=== Foncionament d'un inductor ideau e d'un inductor reau ===
+Quand una tension es aplicada a un inductor ideau, tres fenomèns pòden s'observar :
+
+a terme cort, lo corrent iniciau es nul car l'inductor es pas charjat. L'inductor es alòrs equivalent a un interruptor dubert.
+durant la charja de l'inductor, lo corrent aumenta pauc a pauc a un ritme constant.
+quand l'inductor es totalament charjat, lo flux magnetic ven constant e la tension entre las bòrnas de l'inductor ven nulla. Es alòrs equivalent a un interruptor barrat.
+La lei de comportament descriu lo foncionament d'un tal inductor. Pasmens, l'inductor reau a un foncionament leugierament diferent. D'efiech, l'inductor reau a una resisténcia interna que se manifesta quand l'inductor es charjat. De mai, d'una faiçon mai generala, l'inductor reau a una capacitat parasita qu'aumenta emb la frequéncia dau corrent electric.
+
+
+== Los tipes d'inductors ==
+
+
+=== Bobina de nogeu d'aire ===
+Una bobina de nogeu d'aire es un inductor qu'utiliza pas de nogeu magnetic constituït d'un materiau ferromagnetic. Queu terme fai referéncias a las bobinas enrotladas sus un element de plastic, de ceramica o d'autres compausats non magnetics o las bobinas que sos enrotlaments son emplits d'aire. An una inductància mai febla que las bobinas de nogeu ferromagnetic, mas son sovent utilizats a de frequéncias nautas per reduire las perdas observadas dins queu cas emb queu tipe de bobina.
+
+
+=== Bobina de nogeu ferromagnetic ===
+Una bobine de nogeu ferromagnetic (o de nogeu de fer) utilizan un nucleu magnetic constituït d'un materiau ferromagnetic o ferrimagnetic per aumentar l'inductància. Generalament, lo fer o la ferrita son utilizats. Los materiaus ferromagnetics permeten d'aumentar lo champ magnetic mercés a una permeabilitat magnetica mai nauta. Pasmens, las proprietats magneticas dau materiau an d'efiechs segondaris que modifican lo comportament de l'inductància e necessitan una construccion especiala. 
+
+
+=== Bobina variabla ===
+I a mai d'un tipe diferent de bobinas variablas. Lo mai frequent es una bobina emb una barra de ferrita mobila que pòt èsser entrada o surtida de la bobina. Queu dispositiu es plan utilizat per las aplicacions ràdios inferioras a 100 MHz. Per las aplicacions necessitant de frequéncias mai nautas, de materiaus conductors mas non magnetics, coma l'alumini, son preferits. I a tanben de bobinas d'aire que presentan una inductància variabla. Un sistema plan popular durant lo segle XX era de plaçar un ressòrt per assegurar lo contacte entre lo circuit e los enrotlaments. Pasmens, quela solucion entrainava l'aparicion frequenta de cortcircuits. Uei, la bobina d'aire variabla mai utilizada es lo variometre. Es constituïda d'una bobina montada sus un aubre a l'interior d'una autra bobina. Quò permet de modificar son orientacion e donc l'addicion daus champs magnetics engendrats.
+
+
+=== Bobina d'arrest ===
+Una bobine d'arrest, sovent pelada choke, es una inductància destinada a blocar un corrent alternatiu de nauta frequéncia dins un circuit electric en laissant passar los senhaus de bassa frequéncia. Es generalament constituïda d'una bobina de fiu isolat enrotlada sus un nogeu magnetic.
+
+
+== Aplicacions ==
+
+Las bobinas d'inductància son plan utilizadas dins los circuits analogics e dins lo tractament daus senhaus. Las aplicacions van de l'utilizacion d'inductàncias fòrças importantas dins las alimentacions per eliminar las ondulacions a la surtida en corrent contunhau a las pichonas inductàncias installadas a l'entorn d'un cable per empachar la transmission de las interferéncias radioelectricas. D'inductàncias son tanben utilizadas per estocar d'energia e fornir un corrent durant los periòdes de comutacion « off ».
+Los inductors son tanben utilizats en associacion emb d'autres compausants electrics per obtenir d'efiechs particulars :
+
+per crear una impulsion de tension nauta. Quò es lo cas de las bobinas d'alumatge dins los motors d'alumatge comandat onte lo ruptor entraina una importanta aumentacion de la tension dins lo circuit segondari de la bobina e la produccion d'una beluja al niveu de las bogias per enflamar lo mesladís aire-carburant. De sistemas similars existissen dins las barradissas electricas per lo bestiau o dins las lampas de descharja.
+per sas proprietats electromagneticas en vuda de concebre d'electroasimants, de relais electromagnetics o de motors electrics.
+per lissar o filtrar un senhau electric. Quò es plan utilizat en electronica car los filtres a basa d'inductors son relativament simples.
+per constituïr de circuits ressonants per reglar la frequéncia d'un receptor ràdio o per reglar la frequéncia d'un oscillator.
+per acordar l'impedància d'un circuit per minimizar las perdas dins una linha telefonica o, en associacion emb de condensators per permetre d'utilizar una antena sus mai d'una benda de frequéncias.
+per constituïr de sistemas de regulacion magnetica.
+
+
+== Annexas ==
+
+
+=== Liams internes ===
+
+
+=== Bibliografia ===
+
+
+=== Nòtas e referéncias ===

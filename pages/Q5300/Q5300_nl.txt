@@ -1,0 +1,123 @@
+Een processor, ook wel bekend als CPU (Engels: central processing unit) of in het Nederlands centrale verwerkingseenheid (cve) genoemd, is een stuk hardware in een computer dat instaat voor basisbewerkingen en -controle bij het uitvoeren van programmacode. De eerste processors waren uitgevoerd als printplaten vol met losse componenten en IC's, maar in de jaren 70 ontstonden de eerste zogenaamde microprocessors, waarbij het hele systeem op één enkele chip werd vervaardigd. De eerste microprocessor was de  4004 van Intel.
+
+
+== Soorten ==
+De ontwikkeling in de IC-technologie zorgde ervoor dat de microprocessors van 4 bit (Intel 4004) naar 8 bit, 16 bit, 32 bit en 64 bit konden groeien. Deze getallen duiden de woordbreedte aan.
+Momenteel zijn er twee belangrijke 'families' van processors:
+
+Microcontrollers (meestal 8, 16 of 32 bits).
+Microprocessors (meestal 32 of 64 bits).
+
+
+== Kenmerken ==
+De aansluitingen van een processor bestaan in hoofdzaak uit een stel besturings-, adres- en datalijnen die aangesloten zitten op de besturingsbus, de adresbus en de databus van de computer. Via de adresbus geeft de processor aan op welk adres van het extern geheugen er iets met de data moet gebeuren, via de databus worden de data getransporteerd, en via de besturingsbus wordt aangegeven of de data gelezen of geschreven moeten worden. De processor communiceert met de buitenwereld doordat bepaalde geheugenadressen met interfaces van randapparatuur zijn verbonden, zoals toetsenborden, beeldschermen, etc.
+
+
+=== Microcontrollers ===
+
+Microcontrollers danken hun naam aan hun belangrijkste toepassingsgebied: 'control' (besturing). Ze worden gebruikt in de televisie, de afstandsbediening, de videorecorder, de wasmachine, radio en zelfs in een scheerapparaat komt men ze tegen. Kenmerk van een microcontroller is dat het al een complete computer is. Moderne microcontrollers hebben een processor,  klokgenerator, RAM, ROM en hardware voor het aansturen van randapparaten allemaal op hetzelfde IC.
+
+
+=== Microprocessors ===
+
+Voor de pc-architectuur is de processorkern uitgebreid met (virtueel) geheugenmanagement en een co-processor voor floating-point-bewerkingen (zwevendekommabewerkingen). Hierdoor wordt het geschikt voor besturingssystemen als Linux en Windows.
+Alle huidige computers werken volgens dit Von Neumann-model. John von Neumann maakte dit model voordat de eerste computer bestond. Het model omschrijft kortweg de situatie dat een CPU communiceert met enerzijds het random-access memory (RAM) en anderzijds de randapparatuur zoals printers, beeldschermen, toetsenborden, enzovoort.
+Een processor genereert afhankelijk van zijn activiteit meer of minder warmte en wordt daarom meestal gekoeld door middel van een of meer koelribben en ventilatoren. Sommige processors hebben waterkoeling, en er zijn zelfs processors die stikstofkoeling nodig hebben.
+
+
+== Snelheid ==
+De snelheid van een processor hangt af van een aantal factoren:
+
+De kloksnelheid. De nieuwste processors zitten gebruikelijk tussen de 2,5 en 5 GHz.
+Het aantal instructies dat een processor (gemiddeld) per cyclus kan uitvoeren. Hierin zitten soms aanzienlijke verschillen tussen verschillende micro-architecturen. Een processor die op 1 GHz werkt en die gemiddeld slechts twee klokcycli per instructie nodig heeft is sneller dan een processor die op 2 GHz werkt, maar die gemiddeld vijf klokcycli per instructie nodig heeft. Dit probleem is niet erg groot voor bijvoorbeeld desktopcomputers (omdat de snelheid van deze architecturen tegenwoordig niet meer drastisch stijgt), maar voor het vergelijken van andere apparaten (zoals smartphones en tablets) kan dit wel belangrijk zijn.
+Verder speelt de cache ook een belangrijke rol (de cache is een klein maar snel "tussengeheugen" tussen het random-access memory en de processor). Doorgaans geldt: hoe groter de cache, hoe sneller de processor. In moderne processors komt een (per generatie verschillende) hoeveelheid cache per kern. Er zijn bovendien drie verschillende soorten cache die worden gebruikt in processors: L1, L2, en L3. L1 is het snelst, maar daar is het minst van op een chip; L3 is het minst snel, maar daarvan is het meest; L2 zit daar tussenin in beide factoren.
+Pipelining, een fenomeen dat de processorsnelheid in bepaalde situaties verhoogt. Vroeger werden commando's altijd ná elkaar uitgevoerd. Nu kan commando B beginnen terwijl commando A nog aan de gang is; dit noemt men pipelining.Sommige processors hebben meerdere pipelines die gelijktijdig aan meerdere opdrachten (kunnen) werken. Vaak zijn er ook gespecialiseerde pipelines aanwezig, zodat bijvoorbeeld "gewone" opdrachten en opdrachten met zwevendekommagetallen elk in een aparte pipeline verwerkt worden. Gespecialiseerde processors zoals gpu's kunnen tientallen pipelines hebben, soms zelfs meer dan honderd.
+Het aantal kernen dat een processor heeft. Programma's die hiervoor niet geoptimaliseerd zijn, zullen niet noemenswaardig sneller afgehandeld worden. Echter kunnen wel twee verschillende programma's tegelijk op twee verschillende kernen gedraaid worden, wat een aanzienlijk voordeel oplevert bij het draaien van meerdere programma's tegelijk. Tegenwoordig hebben de meeste desktopprocessors meerdere kernen: 4, 6 en 8 kernen zijn gebruikelijk.
+
+
+== Interne opbouw ==
+Een (eenvoudige) processor bevat de volgende onderdelen:
+
+Een aantal registers met de volgende functies:
+Een "accumulator" waarin de resultaten van berekeningen worden opgeslagen
+Een statusregister waarin informatie over de laatst uitgevoerde bewerking bijgehouden wordt (bijvoorbeeld of het resultaat 0 of negatief was)
+Een programmateller waarin het adres staat van de eerstvolgende instructie die moet worden uitgevoerd
+Registers die adressen van geheugenplaatsen kunnen bevatten, zoals stackpointers en indexregisters.
+Een arithmetic logic unit (alu) die de berekeningen uitvoert
+Logica om instructies te decoderen en de onderdelen aan te sturen
+Logica om interrupts af te handelen.
+Bij moderne processors zijn de registers onderling uitwisselbaar, zodat berekeningen niet in één speciaal register hoeven plaats te vinden. Ook is de decodeerlogica dusdanig uitgekiend dat meerdere instructies tegelijkertijd in behandeling kunnen zijn (pipeline).
+
+
+== Werking ==
+
+
+=== Ophaalfase ===
+Een processor dient instructies van het te verwerken programma in volgorde uit te voeren. Het programma zelf staat in het RAM-geheugen. De processor heeft daarom een teller, de programmateller, die het geheugenadres van de volgende instructie bijhoudt. In de zogeheten "fetch-fase" (ophaalfase) haalt de processor de instructie op van het geheugenadres dat in de programmateller staat. De code in dit adres is de volgende uit te voeren instructie en deze wordt in het instructieregister geplaatst.
+
+
+=== Decodeerfase ===
+Stel dat de code in het instructieregister 0001010100010010 is. Wat betekent dat voor de processor? Een instructie is niets anders dan een reeks bits en in de decodeerfase wordt bepaald wat er moet gebeuren. Aan de hand van deze reeks bits worden de componenten in de processor die de instructie uitvoeren in de juiste stand gezet zodat zij de gewenste bewerking uitvoeren.
+In het voorbeeld gebruikt de processor 8 bits voor het nummer van de instructie. De processor kent dus maximaal 28 = 256 verschillende instructies. De in het voorbeeld uit te voeren instructie heeft nu het nummer aangegeven door de eerste 8 bits, dus nummer 00010101, wat decimaal 21 is en in dit geval optellen betekent. Over het algemeen zal het instructienummer naar iedere component gestuurd worden, in dit geval zal alleen de optelcomponent zich klaarmaken om te gaan optellen.
+De resterende bits van het instructieregister, nl. 00010010 bepalen de plaats waar de processor zijn gegevens zal halen, dit kunnen bepaalde registers zijn, maar in complexere instructies ook een geheugenadres. In dit geval gaat het om de registers en onze processor heeft 16 registers. Om aan te geven welke registers we willen gebruiken, kunnen we gewoon de nummers van beide registers vermelden, waarvoor voor elk vier bits nodig zijn. In het voorbeeld dus de registers 0001 (=1) en 0010 (=2). De instructie houdt dus in dat de inhoud van de registers 1 en 2 bij elkaar worden opgeteld. Impliciet is tevens vastgelegd dat het resultaat in het eerstgenoemde register staat.
+De volledige instructie...
+
+0001010100010010
+... wordt dus opgesplitst in de onderdelen ...
+
+0001010100010010
+... om bij het decoderen te beslissen dat het gaat om een optelling:
+
+ADD r1,r2
+Concreet betekent dit dat in de registers r1 en r2 getallen zitten die bij elkaar opgeteld moeten worden. Onze denkbeeldige processor slaat het resultaat op in het register dat we het eerst vermelden, dus na deze instructie bevat register r1 de som van beide getallen. De registers zijn kleine stukjes geheugen in de processor met logica eromheen. Als een register zijn nummer voorbij ziet komen, wordt dit actief en zet het zich klaar om zijn inhoud te zetten op de elektrische leidinkjes naar andere delen van de processor, in dit geval de rekeneenheid.
+
+
+=== Uitvoerfase ===
+Vervolgens begint de zogeheten "execute-fase" (uitvoerfase). De processor staat in de juiste stand en de berekening wordt gestart. De twee getallen in de registers r1 en r2 stromen naar de rekeneenheid van de processor die een optelling uitvoert. Vervolgens wordt het resultaat in een klein stukje tijdelijk geheugen opgeslagen.
+
+
+=== Opslagfase ===
+Vervolgens begint de "store-fase" (opslagfase). Het register waar het resultaat voor bestemd is (r1), gaat in de luisterstand. Als op de elektrische leidingen een getal voorbij komt voor een register, dan vervangt het het getal dat het bewaart met het getal dat het voorbij ziet komen. Het getal dat berekend is, wordt vervolgens op de leidinkjes gezet.
+
+
+=== De volgende ===
+Het uitvoeren van de instructie is nu afgerond, de programmateller wordt verhoogd en de processor wordt voorbereid op het uitvoeren van de volgende instructie.
+
+
+== Synchroon of asynchroon ==
+
+
+=== Synchrone processors ===
+De meeste processors werken tegenwoordig met een klok. Dat wil zeggen dat alle logische poorten tegelijk, per klokpuls, hun instructie uitvoeren. Instructies worden bij complexere processors in meerdere klokcycli opgedeeld. De meeste RISC-processors zijn daarentegen in staat om in een enkele klokpuls een volledige instructie uit te voeren.
+Voordelen hiervan zijn een relatief eenvoudig chipontwerp, omdat duidelijk is wanneer informatie van een voorgaande stap (de vorige klokpuls) beschikbaar is.
+Nadeel van de synchrone processor is dat de klok slechts zo snel kan lopen als de traagste schakel toelaat. Een ander nadeel is dat alle poorten, ook al vervullen zij op dat moment geen functie, wel geschakeld worden en dus ook stroom gebruiken. Er zijn voor beide nadelen oplossingen verzonnen:
+
+Grote trage componenten worden in stukken opgedeeld, waardoor de kloksnelheid omhoog kan. Er zullen wel meer klokpulsen nodig zijn om dezelfde berekening uit te voeren (pipelining).
+Het kloksignaal naar delen van de chip die niet gebruikt worden, wordt uitgezet. Het is alleen moeilijk om te bepalen wanneer een deel niet gebruikt zal worden (clock gating).
+De kloksnelheid wordt aangepast voor de component die op dat moment aan het werk is. Er zal wel een schakeling nodig zijn om de snelheid te veranderen (dynamic frequency clocking).
+Delen van het systeem hebben hun eigen klok, die op het maximum van dat gebied loopt. Communicatie tussen de gebieden wordt alleen een probleem (GALS).
+Bij de huidige technologie van gigahertz-processors heeft de traagheid van elektrische signalen een steeds grotere invloed. Elektrische signalen reizen met een groot deel van de lichtsnelheid, maar zelfs dan kost het enige tijd om van A naar B te geraken. Bij een processor die op 3 GHz loopt, kan het signaal in één enkele klokpuls theoretisch maximaal 10 cm afleggen.
+Een van de ontwerpproblemen van de huidige snelle CPU's is om het kloksignaal overal op de chip tegelijk te krijgen. Het hiertoe benodigde netwerk kan tot wel 30% van het chipoppervlak en tot 60% van het energieverbruik gebruiken. Bij een gemiddelde processor zal dit energieverbruik eerder rond de 10% liggen.
+
+
+=== Asynchrone processors ===
+Asynchrone processors werken zonder centrale klokpuls. Zij hebben dus geen last van bovengenoemde problemen.
+Een asynchrone processor werkt volgens het principe dat een deelschakeling, naast de 'datalijn' minimaal één extra lijn heeft om aan te geven dat zijn staat stabiel is. Op dat moment kan de volgende schakeling in werking treden.
+Het voordeel hiervan is dat de processor functioneert op de maximumsnelheid van zijn componenten. Ook gebruiken niet-gebruikte delen van het systeem nagenoeg geen energie wat het energiegebruik drastisch reduceert.
+Een nadeel is het complexere chipontwerp. Voor een asynchrone processor met dezelfde functionaliteit als zijn synchrone variant zijn wel drie keer zoveel transistoren nodig. De ontwikkeltijd is ook veel langer.
+In de huidige markt zijn asynchrone processors schaars, mede door hun complexiteit. Sommige gehoorapparaten gebruiken al asynchrone processors. Analisten sluiten niet uit dat asynchrone processors in de toekomst een grotere rol gaan spelen. Waarschijnlijk zullen zij in de toekomst veel gebruikt worden in toepassingen waar energiezuinig gebruik een rol speelt, denk aan apparaten die op batterijen werken, zoals pda-computers of notebooks.
+De eerste licenceerbare en commercieel beschikbare asynchrone microprocessor processor was de ARM996HS, ontwikkeld door ARM Holdings en Handshake Solutions (een dochter van Philips). De processor is gebaseerd op de ARM9-kern en zal voornamelijk gebruikt worden in auto's.
+
+
+== Instructieset ==
+
+Kenmerkend aan een processor is de instructieset. Ieder type processor kan een beperkte verzameling instructies uitvoeren en deze verschilt vaak tussen verschillende typen processors. Dat betekent dat een programma voor een type processor niet uitgevoerd kan worden door een ander type processor. Aan de andere kant worden processors ook vaak ontwikkeld voor een al bekende instructieset, zodat deze juist wel alle bestaande programma's voor deze processor kan uitvoeren. Een instructieset wordt normaal genoemd naar de processor die deze kan uitvoeren.
+
+
+== Zie ook ==
+Multikernprocessor
+Lijst van microprocessoren
+
+
+== Externe link ==
+(en)  How Microprocessors Work, Marshall Brain, www.howstuffworks.com: Introductie in de werking van processors

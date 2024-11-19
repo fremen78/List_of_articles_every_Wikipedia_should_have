@@ -1,0 +1,2994 @@
+Aljebra lineala bektoreak, matrizeak, ekuazio linealen sistemak eta espazio bektorialak bezalako kontzeptuak aztertzen dituen matematikaren adar bat da.
+Aljebra lineala funtsezkoa da matematikako ia arlo guztietan. Ingeniaritza zientzietako esparru gehienetan ere erabiltzen da, hainbat fenomeno natural modelatzeko.
+
+
+== Oinarrizko kontzeptuak ==
+
+
+=== Eragiketak ===
+Izan bedi 
+  
+    
+      
+        A
+        ≠
+      
+    
+    {\displaystyle A\neq }
+  
+
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \emptyset }
+  
+ multzo bat. Orduan, 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoan eragiketa bat, 
+  
+    
+      
+        ∗
+      
+    
+    {\displaystyle *}
+  
+ moduan adierazten dena, ondorengoa betetzen duen arau bat da: 
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        A
+      
+    
+    {\displaystyle \forall a,b\in A}
+  
+, 
+  
+    
+      
+        a
+        ∗
+        b
+        ∈
+        A
+      
+    
+    {\displaystyle a*b\in A}
+  
+.
+
+
+=== Taldea ===
+Izan bitez 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoa eta 
+  
+    
+      
+        ∗
+      
+    
+    {\displaystyle *}
+  
+ 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+-ko eragiketa. 
+  
+    
+      
+        (
+        A
+        ,
+        ∗
+        )
+      
+    
+    {\displaystyle (A,*)}
+  
+ taldea dela esaten da hurrengo hiru baldintzak betetzen direnean:
+
+Propietate elkarkorra betetzen bada, hau da, 
+  
+    
+      
+        a
+        ∗
+        (
+        b
+        ∗
+        c
+        )
+        =
+        (
+        a
+        ∗
+        b
+        )
+        ∗
+        c
+        
+        ∀
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        A
+      
+    
+    {\displaystyle a*(b*c)=(a*b)*c\quad \forall a,b,c\in A}
+  
+ .
+Elementu neutroa existitzen bada, hau da, 
+  
+    
+      
+        ∃
+        e
+        ∈
+        A
+        :
+        a
+        ∗
+        e
+        =
+        e
+        ∗
+        a
+         
+        ,
+        ∀
+        a
+        ∈
+        A
+      
+    
+    {\displaystyle \exists e\in A:a*e=e*a\ ,\forall a\in A}
+  
+ .
+
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ multzoko elementu guztiak alderantzikagarriak badira, hau da, 
+  
+    
+      
+        ∀
+        a
+        ∈
+        A
+        
+        ∃
+        
+          a
+          ′
+        
+        ∈
+        A
+        :
+        a
+        ∗
+        
+          a
+          ′
+        
+        =
+        e
+        =
+        
+          a
+          ′
+        
+        ∗
+        a
+      
+    
+    {\displaystyle \forall a\in A\quad \exists a'\in A:a*a'=e=a'*a}
+  
+ . Kasu horretan, 
+  
+    
+      
+        
+          a
+          ′
+        
+         
+        a
+      
+    
+    {\displaystyle a'\ a}
+  
+ -ren alderantzizkoa deitzen zaio.
+Gainera, propietate trukakorra betetzen bada, hau da, 
+  
+    
+      
+        a
+        ∗
+        b
+        =
+        b
+        ∗
+        a
+        
+        ∀
+        a
+        ,
+        b
+        ∈
+        A
+      
+    
+    {\displaystyle a*b=b*a\quad \forall a,b\in A}
+  
+ , orduan, 
+  
+    
+      
+        (
+        A
+        ,
+        ∗
+        )
+      
+    
+    {\displaystyle (A,*)}
+  
+ talde abeldarra edo talde trukakorra deitzen da.
+
+
+=== Eraztuna ===
+Izan bitez 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ multzoa eta 
+  
+    
+      
+        +
+        ,
+        ⋅
+         
+        E
+      
+    
+    {\displaystyle +,\cdot \ E}
+  
+ gaineko bi eragiketa. Orduan, 
+  
+    
+      
+        (
+        E
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (E,+,\cdot )}
+  
+ eraztuna dela esaten da baldin eta ondorengo baldintzak betetzen badira:
+
+  
+    
+      
+        (
+        E
+        ,
+        +
+        )
+      
+    
+    {\displaystyle (E,+)}
+  
+ talde abeldarra bada.
+
+  
+    
+      
+        ⋅
+      
+    
+    {\displaystyle \cdot }
+  
+ propietate elkarkorra betetzen badu.
+Banatze-propietateak betetzen badira, hau da, 
+  
+    
+      
+        x
+        ⋅
+        (
+        y
+        +
+        z
+        )
+        =
+        x
+        ⋅
+        y
+        +
+        x
+        ⋅
+        z
+      
+    
+    {\displaystyle x\cdot (y+z)=x\cdot y+x\cdot z}
+  
+ eta 
+  
+    
+      
+        (
+        y
+        +
+        z
+        )
+        ⋅
+        x
+        =
+        y
+        ⋅
+        x
+        +
+        z
+        ⋅
+        x
+        ,
+         
+        ∀
+        x
+        ,
+        y
+        ,
+        z
+        ∈
+        E
+      
+    
+    {\displaystyle (y+z)\cdot x=y\cdot x+z\cdot x,\ \forall x,y,z\in E}
+  
+ .
+
+
+=== Gorputza ===
+Izan bitez 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ eremu bat (
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ zenbaki errealen, zenbaki osoen edo zenbaki arrunten multzoa izan ohi da, adibidez) eta 
+  
+    
+      
+        (
+        F
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (F,+,\cdot )}
+  
+ eraztuna. Orduan, 
+  
+    
+      
+        (
+        F
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (F,+,\cdot )}
+  
+ gorputza dela esaten da ondorengo propietateak betetzen badira:
+
+  
+    
+      
+        (
+        F
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (F,+,\cdot )}
+  
+ ez bada tribiala, hau da, 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ -k elementu bat baino gehiago badu.
+
+  
+    
+      
+        (
+        F
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (F,+,\cdot )}
+  
+ identitateduna eta trukakorra bada.
+
+  
+    
+      
+        F
+        −
+        {
+        0
+        }
+      
+    
+    {\displaystyle F-\{0\}}
+  
+ multzoko elementu guztiak alderantzikagarriak badira 
+  
+    
+      
+        ⋅
+      
+    
+    {\displaystyle \cdot }
+  
+ eragiketarekiko.
+
+
+== Espazio bektorialak ==
+XIX. mendera arte, aljebra lineala sistema linealen ekuazioekin eta matrizeekin adierazi zen. Matematika modernoan, espazio bektorialen bidezko adierazpena hobesten da orokorrean; izan ere, mota horretako adierazpena sintetikoagoa, orokorragoa eta kontzeptualki adierazteko errazagoa da, nahiz eta abstraktuagoa izan.
+Izan bitez 
+  
+    
+      
+        (
+        F
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (F,+,\cdot )}
+  
+ gorputza eta 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ multzoa. Orduan 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-espazio bektoriala dela esaten da baldin eta ondorengo baldintzak betetzen badira:
+
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ -n eragiketa bat definiturik badago, 
+  
+    
+      
+        +
+      
+    
+    {\displaystyle +}
+  
+ denotatzen dena, eta 
+  
+    
+      
+        (
+        V
+        ,
+        +
+        )
+      
+    
+    {\displaystyle (V,+)}
+  
+ talde abeldarra bada.
+Banatze-propietateak betetzen badira bi eragiketekiko: 
+  
+    
+      
+        a
+        (
+        u
+        +
+        v
+        )
+        =
+        a
+        u
+        +
+        a
+        v
+      
+    
+    {\displaystyle a(u+v)=au+av}
+  
+ eta 
+  
+    
+      
+        (
+        a
+        +
+        b
+        )
+        v
+        =
+        a
+        v
+        +
+        b
+        v
+        
+        ∀
+        u
+        ,
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle (a+b)v=av+bv\quad \forall u,v\in V}
+  
+ eta 
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        F
+      
+    
+    {\displaystyle \forall a,b\in F}
+  
+ .
+Biderketak propietate elkarkorra betetzen badu: 
+  
+    
+      
+        a
+        (
+        b
+        v
+        )
+        =
+        (
+        a
+        b
+        )
+        v
+        
+        ∀
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle a(bv)=(ab)v\quad \forall v\in V}
+  
+ eta 
+  
+    
+      
+        ∀
+        a
+        ,
+        b
+        ∈
+        F
+      
+    
+    {\displaystyle \forall a,b\in F}
+  
+ .
+Biderketa eskalarrak elementu neutroa badu: 
+  
+    
+      
+        1
+        v
+        =
+        v
+        
+        ∀
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle 1v=v\quad \forall v\in V}
+  
+.
+
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ko elementuak bektoreak deitzen dira eta 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-koak, aldiz, eskalarrak.
+
+
+=== Aplikazio linealak ===
+Aplikazio linealak bektore-espazio egitura gordetzen duten espazio bektorialen arteko aplikazioak dira. Izan bitez 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ eta 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ bi 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-espazio bektorial, orduan 
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\rightarrow W}
+  
+ aplikazio lineal bat izango da ondorengoa betetzen badu: 
+  
+    
+      
+        T
+        (
+        u
+        +
+        v
+        )
+        =
+        T
+        (
+        u
+        )
+        +
+        T
+        (
+        v
+        )
+        ,
+        T
+        (
+        a
+        v
+        )
+        =
+        a
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(u+v)=T(u)+T(v),T(av)=aT(v)}
+  
+ 
+  
+    
+      
+        ∀
+        u
+        ,
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle \forall u,v\in V}
+  
+ eta 
+  
+    
+      
+        ∀
+        a
+        ∈
+        F
+      
+    
+    {\displaystyle \forall a\in F}
+  
+. Horrek ondorengoa inplikatzen du: 
+  
+    
+      
+        T
+        (
+        a
+        u
+        +
+        b
+        v
+        )
+        =
+        T
+        (
+        a
+        u
+        )
+        +
+        T
+        (
+        b
+        v
+        )
+        =
+        a
+        T
+        (
+        u
+        )
+        +
+        b
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(au+bv)=T(au)+T(bv)=aT(u)+bT(v)}
+  
+.
+Aplikazio lineal baten nukleoa 
+  
+    
+      
+        K
+        e
+        r
+        T
+      
+    
+    {\displaystyle KerT}
+  
+ moduan adierazten da, eta ondorengo multzoa da: 
+  
+    
+      
+        K
+        e
+        r
+        T
+        =
+        
+          T
+          
+            −
+            1
+          
+        
+        (
+        
+          0
+          
+            W
+          
+        
+        )
+        =
+        {
+        v
+        ∈
+        V
+         
+        
+          |
+        
+         
+        T
+        (
+        v
+        )
+        =
+        
+          0
+          
+            W
+          
+        
+        }
+      
+    
+    {\displaystyle KerT=T^{-1}(0_{W})=\{v\in V\ |\ T(v)=0_{W}\}}
+  
+.
+Aplikazio berdinaren irudia 
+  
+    
+      
+        I
+        m
+        T
+      
+    
+    {\displaystyle ImT}
+  
+ edo 
+  
+    
+      
+        T
+        (
+        V
+        )
+      
+    
+    {\displaystyle T(V)}
+  
+ moduan adierazten da, eta ondorengo multzoa da: 
+  
+    
+      
+        I
+        m
+        T
+        =
+        T
+        (
+        V
+        )
+        =
+        {
+        T
+        (
+        v
+        )
+         
+        
+          |
+        
+         
+        v
+        ∈
+        V
+        }
+      
+    
+    {\displaystyle ImT=T(V)=\{T(v)\ |\ v\in V\}}
+  
+.
+Aplikazio bat injektiboa izango da, baldin eta soilik baldin, 
+  
+    
+      
+        K
+        e
+        r
+        T
+        =
+        {
+        
+          0
+          
+            V
+          
+        
+        }
+      
+    
+    {\displaystyle KerT=\{0_{V}\}}
+  
+ bada, eta supraiektiboa da baldin eta 
+  
+    
+      
+        ∀
+        w
+        ∈
+        W
+         
+        ∃
+        v
+        ∈
+        V
+        :
+        T
+        (
+        v
+        )
+        =
+        w
+      
+    
+    {\displaystyle \forall w\in W\ \exists v\in V:T(v)=w}
+  
+.
+Kontzeptu horiekin isomorfismoak definitu ditzakegu: 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ aplikazio lineala isomorfismoa dela esaten da baldin eta 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ bijektiboa bada, hau da, injektiboa eta supraiektiboa. 
+  
+    
+      
+        V
+        =
+        W
+      
+    
+    {\displaystyle V=W}
+  
+ deneko kasuan, isomorfismoari automorfismo deritzo.
+
+
+=== Azpiespazioak eta oinarriak ===
+
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-espazio bektorial baten azpiespazio lineala 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ren azpimultzo bat da, 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ deituko duguna, ondorengoa betetzen badu: 
+  
+    
+      
+        u
+        +
+        v
+        ∈
+        W
+      
+    
+    {\displaystyle u+v\in W}
+  
+ eta 
+  
+    
+      
+        a
+        v
+        ∈
+        W
+      
+    
+    {\displaystyle av\in W}
+  
+, 
+  
+    
+      
+        ∀
+        u
+        ,
+        v
+        ∈
+        W
+      
+    
+    {\displaystyle \forall u,v\in W}
+  
+ eta 
+  
+    
+      
+        ∀
+        a
+        ∈
+        F
+      
+    
+    {\displaystyle \forall a\in F}
+  
+. 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ ere 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-espazio bektoriala da.
+
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ren bi azpiespazioen batura honela definitzen da: 
+  
+    
+      
+        
+          W
+          
+            1
+          
+        
+        +
+        
+          W
+          
+            2
+          
+        
+        =
+        {
+        
+          w
+          
+            1
+          
+        
+        +
+        
+          w
+          
+            2
+          
+        
+         
+        
+          |
+        
+         
+        
+          w
+          
+            i
+          
+        
+        ∈
+        
+          W
+          
+            i
+          
+        
+        ,
+        i
+        =
+        1
+        ,
+        2
+        }
+      
+    
+    {\displaystyle W_{1}+W_{2}=\{w_{1}+w_{2}\ |\ w_{i}\in W_{i},i=1,2\}}
+  
+. Batura hori zuzena dela esaten da 
+  
+    
+      
+        
+          W
+          
+            1
+          
+        
+        ∩
+        
+          W
+          
+            2
+          
+        
+        =
+        {
+        
+          0
+          
+            V
+          
+        
+        }
+      
+    
+    {\displaystyle W_{1}\cap W_{2}=\{0_{V}\}}
+  
+ bada, eta kasu horretan 
+  
+    
+      
+        
+          W
+          
+            1
+          
+        
+        ⊕
+        
+          W
+          
+            2
+          
+        
+      
+    
+    {\displaystyle W_{1}\oplus W_{2}}
+  
+ denotatuko litzateke.
+Espazio bektorialak adierazteko, eta horiei buruzko informazioa barneratzeko, oinarriak ezinbestekoak dira. Oinarri bateko elementuekin espazio lineal baten elementu guztiak adieraz ditzakegu horien konbinazio linealen bidez, hau da, 
+  
+    
+      
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{v_{1},v_{2},...,v_{n}\}}
+  
+ bektoreek 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ espazio bektorialaren oinarria osatzen badute, edozein 
+  
+    
+      
+        v
+        ∈
+        V
+      
+    
+    {\displaystyle v\in V}
+  
+ bektore 
+  
+    
+      
+        v
+        =
+        
+          k
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          k
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          k
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+      
+    
+    {\displaystyle v=k_{1}v_{1}+k_{2}v_{2}+...+k_{n}v_{n}}
+  
+ moduan idatz daiteke, 
+  
+    
+      
+        
+          k
+          
+            1
+          
+        
+        ,
+        
+          k
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          k
+          
+            n
+          
+        
+      
+    
+    {\displaystyle k_{1},k_{2},...,k_{n}}
+  
+ eskalarrak izanik. Baina 
+  
+    
+      
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{v_{1},v_{2},...,v_{n}\}}
+  
+ 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ azpiespazioaren oinarria izango da baldin eta ondorengo baldintzak betetzen baditu:
+
+  
+    
+      
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{v_{1},v_{2},...,v_{n}\}}
+  
+ 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ -ren sistema sortzailea bada, hau da, 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ko edozein bektore 
+  
+    
+      
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{v_{1},v_{2},...,v_{n}\}}
+  
+ bektoreen konbinazio lineal moduan adieraz badaiteke. Kasu horretan 
+  
+    
+      
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{v_{1},v_{2},...,v_{n}\}}
+  
+ multzoari 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ deritzo, eta 
+  
+    
+      
+        V
+        =<
+        S
+        >
+      
+    
+    {\displaystyle V=<S>}
+  
+ idazten da.
+
+  
+    
+      
+        {
+        
+          v
+          
+            1
+          
+        
+        ,
+        
+          v
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{v_{1},v_{2},...,v_{n}\}}
+  
+ sistema askea bada, hau da, 
+  
+    
+      
+        
+          k
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          k
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          k
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+        =
+        
+          0
+          
+            F
+          
+        
+      
+    
+    {\displaystyle k_{1}v_{1}+k_{2}v_{2}+...+k_{n}v_{n}=0_{F}}
+  
+ izateak 
+  
+    
+      
+        
+          k
+          
+            1
+          
+        
+        =
+        
+          k
+          
+            2
+          
+        
+        =
+        .
+        .
+        .
+        =
+        
+          k
+          
+            n
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle k_{1}=k_{2}=...=k_{n}=0}
+  
+ direla inplikatzen du.
+
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ espazio bektorial baten sistema sortzailea (
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+ denotatzen dena) finitua bada, orduan 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ finituki sortua dela esaten da, eta 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  
+-k sortzen duen oinarriaren kardinalari 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ren dimentsioa deritzo.
+
+
+== Matrizeak ==
+Matrizeek dimentsio finituetako espazio bektorialak eta aplikazio linealak modu esplizituan manipulatzea ahalbidetzen dute. Gainera, aljebra linealean funtsezkoak dira. Matrizeak isomorfismo batean parte hartzen duten bi espazioen arteko oinarri batetik bestera pasatzeko erabiltzen dira gehien.
+Izan bitez 
+  
+    
+      
+        V
+         
+        m
+      
+    
+    {\displaystyle V\ m}
+  
+ dimentsioko 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-espazio bektoriala eta 
+  
+    
+      
+        (
+        
+          v
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          v
+          
+            m
+          
+        
+        )
+      
+    
+    {\displaystyle (v_{1},...,v_{m})}
+  
+ 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+-ren oinarri bat. Oinarriaren definizioagatik
+
+  
+    
+      
+        
+          F
+          
+            m
+          
+        
+        →
+        V
+      
+    
+    {\displaystyle F^{m}\rightarrow V}
+  
+
+  
+    
+      
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          a
+          
+            m
+          
+        
+        )
+        →
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          a
+          
+            m
+          
+        
+        
+          v
+          
+            m
+          
+        
+      
+    
+    {\displaystyle (a_{1},...,a_{m})\rightarrow a_{1}v_{1}+...+a_{m}v_{m}}
+  
+
+aplikazioa 
+  
+    
+      
+        
+          F
+          
+            m
+          
+        
+      
+    
+    {\displaystyle F^{m}}
+  
+ espaziotik 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ espaziorako bijekzio bat da.  Isomorfismo horrekin bektore bat bere aurreirudiaren bidez adieraz dezakegu, hau da, 
+  
+    
+      
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          a
+          
+            m
+          
+        
+        )
+      
+    
+    {\displaystyle (a_{1},...,a_{m})}
+  
+ koordenatuen bidez.
+Orain, izan bitez 
+  
+    
+      
+        W
+         
+        n
+      
+    
+    {\displaystyle W\ n}
+  
+ dimentsioko 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+-espazio bektoriala eta 
+  
+    
+      
+        (
+        
+          w
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          w
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (w_{1},...,w_{n})}
+  
+ 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+-ren oinarri bat, orduan ondorengo aplikazioa, 
+  
+    
+      
+        f
+        :
+        W
+        →
+        V
+      
+    
+    {\displaystyle f:W\rightarrow V}
+  
+, 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+-ren oinarriko elementuen gainean ondo definiturik dago, hau da, 
+  
+    
+      
+        f
+        (
+        W
+        )
+        =
+        (
+        f
+        (
+        
+          w
+          
+            1
+          
+        
+        )
+        ,
+        .
+        .
+        .
+        ,
+        f
+        (
+        
+          w
+          
+            n
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle f(W)=(f(w_{1}),...,f(w_{n}))}
+  
+ non 
+  
+    
+      
+        f
+        (
+        
+          w
+          
+            j
+          
+        
+        )
+        =
+        
+          a
+          
+            1
+            j
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          a
+          
+            m
+            j
+          
+        
+        
+          v
+          
+            m
+          
+        
+      
+    
+    {\displaystyle f(w_{j})=a_{1j}v_{1}+...+a_{mj}v_{m}}
+  
+ 
+  
+    
+      
+        j
+        =
+        1
+        ,
+        .
+        .
+        .
+        ,
+        n
+      
+    
+    {\displaystyle j=1,...,n}
+  
+ balioetarako. Beraz, 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ 
+  
+    
+      
+        
+          M
+          
+            
+              β
+              
+                V
+              
+            
+          
+          
+            
+              β
+              
+                W
+              
+            
+          
+        
+        (
+        f
+        )
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      1
+                      n
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+                
+                  ⋱
+                
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    a
+                    
+                      m
+                      1
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      m
+                      n
+                    
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle M_{\beta _{V}}^{\beta _{W}}(f)={\begin{pmatrix}a_{11}&\cdots &a_{1n}\\\vdots &\ddots &\vdots \\a_{m1}&\cdots &a_{mn}\end{pmatrix}}}
+  
+ matrizearekin adieraz dezakegu.
+Matrizeen biderkadurak bi aplikazioren arteko konposizio matrizea ematen du.
+
+
+== Sistema linealak ==
+Ekuazio linealetako sistema bat 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ ekuazio eta 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ ezezagunekin egindako sistema da. Matrizeak bezala, aljebra linealean funtsezkoak dira. Historikoki, aljebra lineala eta matrizeen teoria sistema ezberdinei soluzioak emateko garatuak izan dira. Gaur egungo aljebra linealean, problema ezberdinak espazio bektorialen eta matrizeen bitartez interpreta daitezke, ekuazio linealetako sistema bezala.
+Orokorrean ekuazio linealetako sistemak honela idazten dira:
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  +
+                  .
+                  .
+                  .
+                  +
+                  
+                    a
+                    
+                      1
+                      n
+                    
+                  
+                  
+                    x
+                    
+                      n
+                    
+                  
+                  =
+                  
+                    b
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    a
+                    
+                      m
+                      1
+                    
+                  
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  +
+                  .
+                  .
+                  .
+                  +
+                  
+                    a
+                    
+                      m
+                      n
+                    
+                  
+                  
+                    x
+                    
+                      n
+                    
+                  
+                  =
+                  
+                    b
+                    
+                      m
+                    
+                  
+                
+              
+            
+            
+          
+        
+        ∀
+        
+          a
+          
+            i
+            j
+          
+        
+        ,
+        
+          b
+          
+            j
+          
+        
+        ∈
+        F
+      
+    
+    {\displaystyle {\begin{cases}a_{11}x_{1}+...+a_{1n}x_{n}=b_{1}\\\vdots \\a_{m1}x_{1}+...+a_{mn}x_{n}=b_{m}\end{cases}}\forall a_{ij},b_{j}\in F}
+  
+ non 
+  
+    
+      
+        i
+        =
+        1
+        ,
+        .
+        .
+        .
+        ,
+        m
+         
+        ,
+         
+        j
+        =
+        1
+        ,
+        .
+        .
+        .
+        ,
+        n
+      
+    
+    {\displaystyle i=1,...,m\ ,\ j=1,...,n}
+  
+.
+Ekuazio linealetako sistemak matrizialki adieraz daitezke, eta 
+  
+    
+      
+        A
+        X
+        =
+        B
+      
+    
+    {\displaystyle AX=B}
+  
+ bezala denotatuko lirateke, non:
+
+  
+    
+      
+        A
+        =
+        (
+        
+          a
+          
+            i
+            j
+          
+        
+        )
+      
+    
+    {\displaystyle A=(a_{ij})}
+  
+ sistemaren matrizea den.
+
+  
+    
+      
+        B
+        =
+        (
+        
+          b
+          
+            j
+          
+        
+        )
+      
+    
+    {\displaystyle B=(b_{j})}
+  
+ gai askeen matrizea den.
+
+  
+    
+      
+        X
+        =
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle X=(x_{i})}
+  
+ ezezagunen matrizea den.
+
+  
+    
+      
+        (
+        A
+         
+        
+          |
+        
+         
+        B
+        )
+      
+    
+    {\displaystyle (A\ |\ B)}
+  
+ sistemaren matrize hedatua den.
+Izan bedi 
+  
+    
+      
+        A
+        X
+        =
+        B
+      
+    
+    {\displaystyle AX=B}
+  
+ ekuazio linealetako sistema bat. 
+  
+    
+      
+        α
+        =
+        (
+        
+          α
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle \alpha =(\alpha _{i})}
+  
+ matrizea sistemaren soluzioa dela esaten da baldin eta 
+  
+    
+      
+        A
+        α
+        =
+        B
+      
+    
+    {\displaystyle A\alpha =B}
+  
+ betetzen bada.
+
+  
+    
+      
+        A
+        X
+        =
+        B
+      
+    
+    {\displaystyle AX=B}
+  
+ soluziorik ez badu sistema bateraezina deitzen da; eta beste kasuan bateragarria. Azkenengo kasuan:
+
+Sistemak soluzio bakarra badu, bateragarri determinatua deitzen da.
+Sistemak soluzio bat baino gehiago badu, bateragarri indeterminatua dela esaten dugu.
+
+
+=== Adibidea ===
+Izan bitez ondorengo sistema lineala:
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  2
+                  x
+                  +
+                  y
+                  −
+                  z
+                  =
+                  8
+                
+              
+              
+                
+                  −
+                  3
+                  x
+                  −
+                  y
+                  +
+                  2
+                  z
+                  =
+                  −
+                  11
+                
+              
+              
+                
+                  −
+                  2
+                  x
+                  +
+                  y
+                  +
+                  2
+                  z
+                  =
+                  −
+                  3
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}2x+y-z=8\\-3x-y+2z=-11\\-2x+y+2z=-3\end{cases}}}
+  
+
+Lehenengo eta behin, har dezagun sistemaren matrizea:
+
+  
+    
+      
+        A
+        =
+        
+          
+            (
+            
+              
+                
+                  2
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  −
+                  3
+                
+                
+                  −
+                  1
+                
+                
+                  2
+                
+              
+              
+                
+                  −
+                  2
+                
+                
+                  1
+                
+                
+                  2
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle A={\begin{pmatrix}2&1&-1\\-3&-1&2\\-2&1&2\end{pmatrix}}}
+  
+
+eta gai askeen matrizea:
+
+  
+    
+      
+        B
+        =
+        
+          
+            (
+            
+              
+                
+                  8
+                
+              
+              
+                
+                  −
+                  11
+                
+              
+              
+                
+                  −
+                  3
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle B={\begin{pmatrix}8\\-11\\-3\end{pmatrix}}}
+  
+
+Deitu diezaiogun 
+  
+    
+      
+        X
+        =
+        
+          
+            (
+            
+              
+                
+                  x
+                
+              
+              
+                
+                  y
+                
+              
+              
+                
+                  z
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle X={\begin{pmatrix}x\\y\\z\end{pmatrix}}}
+  
+ ezezagunen matrizea non 
+  
+    
+      
+        A
+        X
+        =
+        B
+      
+    
+    {\displaystyle AX=B}
+  
+ den.
+Orain, ezabaketa gaussiarra erabiliko dugu. Metodo hau errenkaden arteko eragiketetan oinarrituta dago, beraz, eragiketa hauek ez dute sistemaren soluzioa aldatzen.
+
+  
+    
+      
+        (
+        A
+         
+        
+          |
+        
+         
+        B
+        )
+        ⟹
+        
+          
+            
+              (
+              
+                
+                  
+                    
+                      2
+                    
+                    
+                      1
+                    
+                    
+                      −
+                      1
+                    
+                    
+                      8
+                    
+                  
+                  
+                    
+                      −
+                      3
+                    
+                    
+                      −
+                      1
+                    
+                    
+                      2
+                    
+                    
+                      −
+                      11
+                    
+                  
+                  
+                    
+                      −
+                      2
+                    
+                    
+                      1
+                    
+                    
+                      2
+                    
+                    
+                      −
+                      3
+                    
+                  
+                
+              
+              )
+            
+          
+        
+        ⟹
+        
+          
+            
+              (
+              
+                
+                  
+                    
+                      1
+                    
+                    
+                      0
+                    
+                    
+                      0
+                    
+                    
+                      2
+                    
+                  
+                  
+                    
+                      0
+                    
+                    
+                      1
+                    
+                    
+                      0
+                    
+                    
+                      3
+                    
+                  
+                  
+                    
+                      0
+                    
+                    
+                      0
+                    
+                    
+                      1
+                    
+                    
+                      −
+                      1
+                    
+                  
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle (A\ |\ B)\Longrightarrow {\displaystyle \left({\begin{array}{rrr|r}2&1&-1&8\\-3&-1&2&-11\\-2&1&2&-3\end{array}}\right)}\Longrightarrow {\displaystyle \left({\begin{array}{rrr|r}1&0&0&2\\0&1&0&3\\0&0&1&-1\end{array}}\right)}}
+  
+
+Beraz, sistema honen soluzio bakarra 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  x
+                
+              
+              
+                
+                  y
+                
+              
+              
+                
+                  z
+                
+              
+            
+            )
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  2
+                
+              
+              
+                
+                  3
+                
+              
+              
+                
+                  −
+                  1
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}x\\y\\z\end{pmatrix}}={\begin{pmatrix}2\\3\\-1\end{pmatrix}}}
+  
+ da, hots, sistema hau sistema bateragarri determinatua da.
+
+
+== Erreferentziak ==
+
+
+== Kanpo estekak ==

@@ -1,0 +1,76 @@
+E-mail, e-post, email eller blot mail er en fællesbetegnelse for beskeder bestående af tekst og/eller binær data, der transmitteres over et datanet. Den mest udbredte form for e-mail transmitteres over internettet via SMTP-protokollen, men der findes dog også alternative standarder, fx X.400.
+Udtrykket "E-mail" er fra engelsk og står for "Electronic Mail", som på dansk betyder og kan oversættes til "elektronisk post". Ordet E-brev kan bruges om og til den enkelte meddelelse.
+
+
+== E-mail før internet ==
+E-mail blev taget i brug før internettet blev oprettet. Det startede i 1965 som en metode, hvormed brugerne på en hovedcomputer kunne kommunikere med hinanden. Senere blev det lavet, så man kunne sende beskeder til brugere på andre servere. Eftersom ikke alle computere på datanettet var koblet direkte op via internettet, blev e-mail sendt via UUCP protokollen. Den enkelte bruger skulle selv specificere den rute, som mailen skulle følge via en bang path beskrivelse, som fik dette tilnavn, fordi hvert hop er adskilt med et udråbstegn. Eksempelvis:
+
+!bigsite!foovax!barbox!me
+henviser til serveren bigsite, til computeren foovax og til kontoen barbox
+
+
+== E-mail i dag ==
+
+
+=== Levering ===
+I dag bliver e-mail langt overvejende leveret via SMTP (Simple Mail Transfer Protokol) i samarbejde med DNS og POP3/IMAP. En simpel e-mail består af følgende felter:
+
+Fra
+Til
+Emne
+Indhold
+I de fleste e-mailprogrammer indstiller man ved opsætning sin afsenderadresse, og "fra"-feltet udfyldes derfor automatisk. Det skal dog bemærkes, at der ikke er indbygget nogen kontrol af, at afsenderen er den, han giver sig ud for at være, ligesom det er tilfældet med almindelig post. E-mailadressen består af to dele, et brugernavn og et servernavn, fx alice@a.dk, hvor alice er en bruger på serveren a.dk. Det såkaldte "snabel-a" (@) kan læses som det engelske ord, "at" = hos, ved eller på. Formatet på en e-mailadresse er beskrevet i RFC2822 Arkiveret 11. april 2003 hos  Wayback Machine.
+Til-feltet udfyldes af brugeren og indeholder modtagerens e-mailadresse. Emnefeltet kan bruges til at specificere en overskrift for e-mailen, typisk vises denne overskrift sammen med afsender og dato i oversigten hos modtageren. Indholdet er selve meddelelsen.
+Når brugeren trykker "send" i sit program igangsættes leveringen af e-mailen som følgende billede viser.
+
+
+=== Leveringsrækkefølge ===
+Leveringen sker i følgende fire skridt:
+
+E-mailprogrammet hos Alice (afsenderen) kontakter sin udgående mail-server smtp.a.dk og overfører e-mailen via SMTP-protokollen.
+smtp.a.dk læser til-feltet og kontakter DNS-registeret for at få det såkaldte MX-record for modtagerens server.
+DNS-serveren sender MX-feltet tilbage som indeholder modtagerens SMTP-server der i dette tilfælde er mx.b.dk
+smtp.a.dk sender e-mailen til mx.b.dk via SMTP
+Modtageren (Bob) henter via sit e-mailprogram e-mailen via fx POP3-protokollen.
+
+
+=== Andre felter ===
+En e-mail kan ud over de tidligere beskrevne felter indeholde følgende felter:
+
+Cc – Kopi skal sendes til adressen i dette felt, Cc står for det engelske udtryk Carbon copy.
+Bcc – En skjult kopi sendes til adressen i dette felt, Bcc står for det engelske udtryk Blind carbon copy.
+Vedhæftninger – En fil eller et andet dokument vedlagt meddelelsen
+Dato – Dato for hvornår mailen er skrevet, udfyldes normalt automatisk af mail-programmet
+Indholdstype – Indeholder information om, hvordan meddelelsen er blevet leveret. Via MIME-typen.
+
+
+=== Modtagelse ===
+For at modtage e-mail benyttes oftest enten POP3- eller IMAP-datanetprotokollerne mens afsendelse sker med SMTP-protokollen. Da der kun kan sendes 7-bits data via e-mail, skal andre data base64-kodes, inden de sendes.
+Hvor både POP3, IMAP og SMTP er internationale standarder specificeret i deres respektive RFC-dokumenter, findes der også proprietære systemer som for eksempel Microsoft Exchange (server) og Microsoft Outlook (klient) samt Lotus Domino (server) og Lotus Notes (klient).
+
+
+== Tegnsæt/format ==
+Kommunikation går på tværs af landegrænser, og derfor skal man være opmærksom på modtagerens tegnsæt – f.eks. er danske tegn ikke lige synlige uden for Danmark. Det mest normale tegnsæt var tidligere ASCII, men nu er ISO-8859 mere normalt, ligesom UTF-8 er på vej frem.
+Tilsvarende gælder det, at kodningen eller formatet af brevet kan volde problemer "i den anden ende". Det mest normale var tidligere almindelig "brødtekst", dvs. bogstaverne a-z (og måske æ, ø, å) samt tal og punktuation- og specialtegn. Det er også muligt at benytte HTML-formateret tekst, men så bør man aftale med modtagere, om dette er acceptabelt. Årsagen hertil er, at mailen kan vokse sig så stor, at modtagerens brevkasse fyldes op og nægter at modtage mere.
+Når e-mail præsenteres vil de ofte fremstå med top-posting.
+
+
+== Se også ==
+Chat
+E-mailklient
+Mailing-liste
+Netetikette
+Nyhedsgruppe
+Spam
+Webmail
+
+
+== Eksterne henvisninger ==
+
+6. august 2003, Comon.dk: SMS og e-mail ændrer sproget Arkiveret 2. juli 2007 hos  Wayback Machine
+BBCNews, 22 March, 2001: Manners are lost in the net Arkiveret 18. maj 2008 hos  Wayback Machine
+What's wrong with internet Arkiveret 18. august 2003 hos  Wayback Machine [e-mail kritisk].
+Bevaring af e-mails Arkiveret 13. august 2018 hos  Wayback Machine
+
+
+== Fodnoter ==

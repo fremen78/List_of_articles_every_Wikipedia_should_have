@@ -1,0 +1,822 @@
+Priodwedd meintiol yw arwynebedd (sy'n enw gwrywaidd) a mesuriad y gofod dau ddimensiwn mae’n ei orchuddio. Mesurir arwynebedd, fel arfer, mewn sgwariau e.e. milimetr sgwâr, centimetr sgwâr. Defnyddir y term 'arwyneb yr arwynebedd' am surface area.
+
+Arwynebedd, felly, yw'r lamina planar, yn  y plân, a'r  faint o baent sy’n angenrheidiol i orchuddio’r wyneb ag un gôt. Mae'n analog dau ddimensiwn o hyd cromlin (cysyniad un dimensiwn) neu gyfaint solid (cysyniad tri dimensiwn).
+Gellir mesur arwynebedd siâp trwy gymharu'r siâp â sgwariau o faint sefydlog: gweler y diagram. Yn y System Ryngwladol o Unedau (OS), yr uned arwynebedd safonol yw'r metr sgwâr (wedi'i ysgrifennu fel m2), sef arwynebedd sgwâr y mae ei ochrau'n un fetr o hyd. Byddai gan siâp ag arwynebedd o dri metr sgwâr yr un arwynebedd â thri sgwâr o'r fath. Mewn mathemateg, diffinnir sgwâr fel uned sydd ag arwynebedd o un, ac mae arwynebedd unrhyw siâp neu arwyneb arall yn rhif real di-ddimensiwn.
+
+Mae yna sawl fformiwla adnabyddus ar gyfer arwynebedd siapiau syml fel trionglau, petryalau, a chylchoedd. Gan ddefnyddio'r fformwlâu hyn, gellir dod o hyd i arwynebedd unrhyw bolygon trwy rannu'r polygon yn drionglau. Ar gyfer siap â ffin grom, fel rheol mae angen calcwlws i gyfrifo'r arwynebedd. Yn wir, roedd y broblem o bennu arwynebedd ffigurau plân yn gymhelliant mawr i ddatblygiad hanesyddol calcwlws.
+Ar gyfer siâp solet fel sffêr, côn, neu silindr, gelwir arwynebedd ei ffin yn "arwyneb yr arwynebedd". Cyfrifwyd fformiwlâu ar gyfer arwynebedd siapiau syml gan yr hen Roegiaid, ond fel rheol mae cyfrifo arwynebedd siâp mwy cymhleth yn gofyn am galcwlws aml-newidyn (<i>multivariable</i>).
+Mae arwynebedd yn chwarae rhan bwysig mewn mathemateg fodern. Yn ychwanegol at ei bwysigrwydd amlwg mewn geometreg a chalcwlws, mae arwynebedd yn gysylltiedig â'r diffiniad o benderfynyddion mewn algebra llinol, ac mae'n briodwedd sylfaenol arwynebau mewn geometreg wahaniaethol. Mewn dadansoddiad, diffinnir arwynebedd is-set o'r blanau gan ddefnyddio mesur Lebesgue, er nad yw pob is-set yn fesuradwy. Yn gyffredinol, mae arwynebedd mewn mathemateg-uwch yn cael ei ystyried yn achos arbennig o gyfaint ar gyfer rhanbarthau dau-ddimensiwn.
+Gellir diffinio arwynebedd trwy ddefnyddio gwirebau, gan ei ddiffinio fel swyddogaeth casgliad o rai ffigurau plân i'r set o rifau real. Gellir profi bod ffwythiant o'r fath yn bodoli.
+
+
+== Unedau ==
+Mae'r canlynol yn enghreifftiau o unedau arwynebedd:
+
+metr sgwâr = System Ryngwladol o Unedau
+ar = 100 metr sgwâr
+hectar = 10,000 metr sgwâr
+cilomedr sgwâr = 1,000,000 metr sgwâr
+megametr sgwâr = 1012 metr sgwâr
+Unedau traddodiadol "Ymerodol", fel y'i diffinnir eisoes o'r metr:
+
+troedfedd sgwâr = 0.09290304 metr sgwâr
+llathen sgwâr = 9 troedfedd sgwâr = 0.83612736 metr sgwâr
+erw = 43,560 troedfedd sgwâr = 4046.8564224 metr sgwâr
+milltir sgwâr = 640 erw = 2.5899881103 cilomedr sgwâr
+
+
+== Fformiwlau defnyddiol ==
+
+
+=== Arwynebeddau gwrthrychau 2-dimensiwn ===
+Sgwâr neu betryal: h w (lle h yw'r hyd, ac w yw'r lled; mewn achos sgwâr, mae h = w).
+Cylch: 
+  
+    
+      
+        π
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \pi r^{2}}
+  
+ (lle r yw'r radiws)
+Hirgrwn: 
+  
+    
+      
+        π
+        a
+        b
+      
+    
+    {\displaystyle \pi ab}
+  
+ (lle a a b yw'r echelinau lled-fwyaf a lled-leiaf)
+Unrhyw bolygon rheolaidd: 
+  
+    
+      
+        
+          
+            
+              P
+              a
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {Pa}{2}}}
+  
+ (lle mae P = hyd y perimedr, ac a yw hyd apothem y polygon [y pellter o ganolbwynt y polygon i ganolbwynt un o'r ymylon])
+Paralelogram: 
+  
+    
+      
+        S
+        u
+      
+    
+    {\displaystyle Su}
+  
+ (Y sail S yw hyd rhyw ymyl, a'r uchder u yw'r pellter rhwng y llinellau sy'n cynnwys yr ymylon sydd â hyd S)
+Trapesoid: 
+  
+    
+      
+        
+          
+            
+              (
+              B
+              +
+              b
+              )
+              u
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {(B+b)u}{2}}}
+  
+ (hydoedd yr ymylon paralel yw B a b, ac u yw'r pellter rhwng y llinellau sy'n cynnwys yr ymylon paralel)
+Triongl: 
+  
+    
+      
+        
+          
+            
+              S
+              u
+            
+            2
+          
+        
+      
+    
+    {\displaystyle {\frac {Su}{2}}}
+  
+ (lle mae S yn unrhyw ymyl, ac u yw'r pellter rhwng y llinell sy'n cynnwys S i gornel arall y triongl). Gellir defnyddio'r fforwla hwn os wybyddir yr uchder u. Os gwybyddir hyd y tri ymyl, yna gellir defnyddio'r fformwla canlynol: 
+  
+    
+      
+        
+          
+            s
+            (
+            s
+            −
+            a
+            )
+            (
+            s
+            −
+            b
+            )
+            (
+            s
+            −
+            c
+            )
+          
+        
+      
+    
+    {\displaystyle {\sqrt {s(s-a)(s-b)(s-c)}}}
+  
+ (lle a, b, c yw hydoedd yr ymylon, ac 
+  
+    
+      
+        s
+        =
+        
+          
+            
+              a
+              +
+              b
+              +
+              c
+            
+            2
+          
+        
+      
+    
+    {\displaystyle s={\frac {a+b+c}{2}}}
+  
+ yw hanner hyd ei berimedr)
+Mae'r arwynebedd rhwng graff dwy ffwythiant yn hafal i integreiddad un o ffwythiannau f(x), tynnu integreiddiad y ffwythiant arall, g(x).
+Yr arwynebedd a amgylchynir gan ffwythiant r = r(θ) â mynegwyd cyfesurynnau polar yw 
+  
+    
+      
+        
+          
+            1
+            2
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        
+          r
+          
+            2
+          
+        
+        
+        d
+        θ
+      
+    
+    {\displaystyle {1 \over 2}\int _{0}^{2\pi }r^{2}\,d\theta }
+  
+.
+Rhoddir yr arwynebedd a amgylchynir gan gromlin barametraidd 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        t
+        )
+        =
+        (
+        x
+        (
+        t
+        )
+        ,
+        y
+        (
+        t
+        )
+        )
+      
+    
+    {\displaystyle {\vec {u}}(t)=(x(t),y(t))}
+  
+ â diweddbwyntiau 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+        =
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle {\vec {u}}(t_{0})={\vec {u}}(t_{1})}
+  
+ gan integreiddiad llwybr
+
+  
+    
+      
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        x
+        
+          
+            
+              y
+              ˙
+            
+          
+        
+        
+        d
+        t
+        =
+        −
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        y
+        
+          
+            
+              x
+              ˙
+            
+          
+        
+        
+        d
+        t
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        (
+        x
+        
+          
+            
+              y
+              ˙
+            
+          
+        
+        −
+        y
+        
+          
+            
+              x
+              ˙
+            
+          
+        
+        )
+        
+        d
+        t
+      
+    
+    {\displaystyle \oint _{t_{0}}^{t_{1}}x{\dot {y}}\,dt=-\oint _{t_{0}}^{t_{1}}y{\dot {x}}\,dt={1 \over 2}\oint _{t_{0}}^{t_{1}}(x{\dot {y}}-y{\dot {x}})\,dt}
+  
+
+neu cyfernod-z
+
+  
+    
+      
+        
+          
+            1
+            2
+          
+        
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ×
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+              ˙
+            
+          
+        
+        
+        d
+        t
+      
+    
+    {\displaystyle {1 \over 2}\oint _{t_{0}}^{t_{1}}{\vec {u}}\times {\dot {\vec {u}}}\,dt}
+  
+
+
+=== Arwynebedd arwyneb siapiau 3-dimensiwn ===
+Ciwb: 
+  
+    
+      
+        6
+        
+          h
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 6h^{2}}
+  
+, lle h yw hyd unrhyw ymyl
+Bocs petryalog: 
+  
+    
+      
+        2
+        (
+        h
+        w
+        +
+        h
+        u
+        +
+        w
+        u
+        )
+      
+    
+    {\displaystyle 2(hw+hu+wu)}
+  
+, lle dynoda h, w, ac u hyd, lled, ac uchder y bocs
+Sffêr: 
+  
+    
+      
+        4
+        π
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 4\pi r^{2}}
+  
+, π yw gymhareb hyd cylchyn a diamedr cylch, 3.14159..., ac r yw radiws y sffêr
+Sylindr: 
+  
+    
+      
+        2
+        π
+        r
+        (
+        u
+        +
+        r
+        )
+      
+    
+    {\displaystyle 2\pi r(u+r)}
+  
+, lle r yw radiws y sail, ac u yw'r uchder
+Côn: 
+  
+    
+      
+        π
+        r
+        (
+        r
+        +
+        
+          
+            
+              r
+              
+                2
+              
+            
+            +
+            
+              u
+              
+                2
+              
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \pi r(r+{\sqrt {r^{2}+u^{2}}})}
+  
+, lle r yw radiws y sail, ac u yw'r uchder.
+
+
+== Diffiniad ffurfiol ==
+Dull o ddiffinio'r hyn a olygir wrth "arwynebedd" yw trwy wirebau. Gellir diffinio "arwynebedd" fel ffwythiant o gasgliad M o fathau arbennig o ffigurau plân  (a elwir yn setiau mesuradwy) i'r set o rifau real, sy'n bodloni'r priodweddau canlynol:
+
+Ar gyfer pob S yn M, a(S) ≥ 0.
+Os yw S a T yn M yna mae S ∪ T a S ∩ T, a hefyd a(S∪T) = a(S) + a (T) - mae (S∩T).
+Os yw S a T yn M gyda S ⊆ T yna mae T - S yn M ac a( T-S ) = a(T) - a(S).
+Os yw set S yn M ac S yn gyfath â T yna mae T hefyd yn M ac a(S) = a(T).
+Mae pob petryal R yn M. Os oes gan y petryal hyd h a lled o k yna a(R) = hk.
+Gadewch i Q fod yn set wedi'i hamgáu rhwng dau ranbarth S a T. Mae rhanbarth cam (step region) yn cael ei ffurfio o undeb meidraidd o betryalau cyfagos sy'n gorffwys ar sylfaen gyffredin, h.y. S ⊆ Q ⊆ T. Os oes rhif unigryw c fel bod a(S) ≤ c ≤ a(T) ar gyfer pob rhanbarth cam S a T o'r math hwn, yna a(Q) = c.
+Gellir profi, felly, bod ffwythiant arwynebedd o'r fath yn bodoli.
+
+
+== Unedau ==
+
+Mae gan bob uned o hyd uned arwynebedd gyfatebol, sef arwynebedd sgwâr â'r hyd ochr penodol, fel y dywedwyd ar ddechrau'r erthygl hon. Felly gellir mesur arwynebedd mewn metrau sgwâr (m2), centimetrau sgwâr (cm2 ), milimetrau sgwâr (mm2 ), cilometrau sgwâr (km2 ), troedfeddi sgwâr (tr2 ), milltiroedd sgwâr (mi2), ac ati. Yn algebraaidd, gellir meddwl am yr unedau hyn fel sgwariau'r unedau hyd cyfatebol.
+Uned arwynebedd SI yw'r 'fetr sgwâr', sy'n cael ei ystyried yn uned sy'n deillio o SI.
+
+
+=== Trawsnewid ===
+
+Byddai cyfrifo arwynebedd sgwâr y mae ei hyd a'i led yn 1 fetr fel a ganlyn:
+1 metr × 1 metr = 1 m2
+ac felly, byddai gan betryal â gwahanol ochrau (dyweder hyd 3 metr a lled 2 fetr) arwynebedd mewn unedau sgwâr y gellir ei gyfrif fel:
+3 metr × 2 fetr = 6 m 2 . Mae hyn gyfwerth â 6 miliwn milimetr sgwâr. Ymhlith y trawsnewidadau ymarferol eraill y mae:
+
+1 cilomedr sgwâr = 1,000,000 metr sgwâr
+1 metr sgwâr = 10,000 centimetr sgwâr = 1,000,000 milimetr sgwâr
+1 centimetr sgwâr = 100 milimetr sgwâr.
+
+
+==== Unedau nad ydynt yn fetrig ====
+Mewn unedau nad ydynt yn fetrig, y trawsnewid rhwng dwy uned sgwâr yw sgwâr y trawsnewid rhwng yr unedau hyd cyfatebol.
+
+1 troedfedd = 12 modfedd,
+ac mae'r berthynas rhwng troedfeddi sgwâr a modfeddi sgwâr yn
+
+1 troedfedd sgwâr = 144 modfedd sgwâr,
+lle mae 144 = 122 = 12 × 12. Yn yr un modd:
+
+1 llathen sgwâr = 9 troedfedd sgwâr
+1 filltir sgwâr = 3,097,600 llath sgwâr = 27,878,400 troedfedd sgwâr
+Yn ogystal, mae ffactorau trawsnewidiad eraill yn cynnwys:
+
+1 fodfedd sgwâr = 6.4516 centimetr sgwâr
+1 troedfedd sgwâr = 0.092903 04 metr sgwâr
+1 llathen sgwâr = 0.836127 36 metr sgwâr
+1 filltir sgwâr = 2.589988 110 336 cilomedr sgwâr
+
+
+=== Unedau eraill gan gynnwys unedau hanesyddol ===
+Mae yna sawl uned gyffredin arall ar gyfer arwynebedd. Yr âr oedd yr uned wreiddiol o ran arwynebedd yn y system fetrig, gyda'r gair yn golygu tir wedi'i aredig. Roedd:
+
+1 âr = 100 metr sgwâr
+Er bod yr âr wedi peidio a bodoli o ddydd i ddydd, mae'r hectar yn dal i gael ei ddefnyddio'n gyffredin i fesur tir:
+
+1 hectar = 100 âr = 10,000 metr sgwâr = 0.01 cilomedr sgwâr
+Defnyddir yr erw yn gyffredin hefyd i fesur arwynebedd tir, lle mae
+
+1 erw = 4,840 llathen sgwâr = 43,560 troedfedd sgwâr.
+Mae erw oddeutu 40% o hectar.
+Ar y raddfa atomig, mesurir arwynebedd mewn unedau '<i>barn</i>', fel:
+
+1 'barn' = 10 −28 metr sgwâr.
+Defnyddir y mesur hwn yn gyffredin wrth ddisgrifio maes trawsdoriadol rhyngweithio mewn ffiseg niwclear.
+Yn India ,
+
+20 dhurki = 1 dhur
+20 dhur = 1 khatha
+20 khata = 1 bigha
+32 khata = 1 erw
+
+
+== Hanes ==
+
+
+=== Arwynebedd y cylch ===
+Yn y 5g CC, Hippocrates of Chios oedd y cyntaf i ddangos bod arwynebedd disg (sef y rhanbarth wedi'i amgáu gan gylch) yn gymesur â sgwâr ei ddiamedr, ond ni nododd gysondeb y cymesuredd (constant of proportionality). Canfu Eudoxus o Cnidus, hefyd yn y 5g CC, fod arwynebedd disg yn gymesur â'i radiws sgwâr.
+Yn dilyn hynny, deliodd Llyfr I o Elfennau Euclid â hafaledd arwynebedd rhwng ffigurau dau-ddimensiwn. Defnyddiodd y mathemategydd Archimedes offer geometreg Ewclidaidd i ddangos bod yr arwynebedd y tu mewn i gylch yn hafal i arwynebedd triongl ongl sgwâr sydd a hyd ei waelod yn hafal i gylchedd y cylch, ac y mae ei uchder yn hafal i radiws y cylch, yn ei lyfr Mesur Cylch. (Y cylchedd yw 2πr, ac mae arwynebedd triongl yn hanner y sylfaen wedi'i luosi gyda'i uchder, sef πr2 ar gyfer y ddisg.) Amcangyfrifodd Archimedes gwerth π gyda'i ddull dyblu, lle arysgrifiodd driongl rheolaidd mewn cylch a nodi ei arwynebedd, yna dyblodd nifer yr ochrau i roi hecsagon rheolaidd, yna dyblu nifer yr ochrau dro ar ôl tro wrth i ardal y polygon agosáu ac yn agosach at arwynebedd y cylch (a gwnaeth yr un peth â pholygonau wedi'u hamgylchu).
+Profodd y gwyddonydd o'r Swistir Johann Heinrich Lambert ym 1761 fod π, cymhareb arwynebedd cylch â'i radiws sgwâr, yn afresymol (rhif anghymarebol), sy'n golygu nad yw'n hafal i gyniferydd unrhyw ddau rif cyfan. Ym 1794 profodd y mathemategydd Ffrengig Adrien-Marie Legendre fod π2 yn afresymol; mae hyn hefyd yn profi bod π yn afresymol. Ym 1882, profodd mathemategydd Almaeneg Ferdinand von Lindemann fod π yn drosgynnol, gan gadarnhau rhagdybiaeth a wnaed gan Legendre ac Euler.
+
+
+=== Ardwynebedd triongl ===
+Daeth Heron (neu Hero) o Alexandria o hyd i'r hyn a elwir yn fformiwla Heron ar gyfer arwynebedd triongl o ran ei ochrau, a gellir gweld prawf yn ei lyfr, Metrica, a ysgrifennwyd tua 60 CE. Awgrymwyd bod Archimedes  yn gwybod y fformiwla dros ddwy ganrif yn gynharach, a chan fod Metrica yn gasgliad o'r wybodaeth fathemategol sydd ar gael yn yr hen fyd, mae'n bosibl bod y fformiwla yn rhagddyddio'r cyfeiriad a roddir yn y gwaith hwnnw.
+Yn 499 mynegodd Aryabhata, mathemategydd a seryddwr o oes glasurol mathemateg Indiaidd, arwynebedd triongl fel hanner y sylfaen yn fwy na'r uchder yn yr Aryabhatiya (adran 2.6).
+
+
+=== Arwynebedd pedrochr ===
+Yn y 7g, datblygodd Brahmagupta fformiwla, a elwir bellach yn fformiwla Brahmagupta, ar gyfer arwynebedd pedrochrog cylchol (pedrochr wedi'i arysgrifio mewn cylch) o ran ei ochrau. Yn 1842 daeth mathemategwyr yr Almaen Carl Anton Bretschneider a Karl Georg Christian von Staudt o hyd i fformiwla, a elwir yn fformiwla Bretschneider, ar gyfer arwynebedd unrhyw pedrochr.
+
+
+=== Arwynebedd y polygon cyffredinol ===
+Caniataodd datblygiad y cyfesurynnau Cartesaidd gan René Descartes yn yr 17g i Carl Friedrich Gauss,  ddwy ganrif yn ddiweddarach i ddatblygu fformiwla'r syrfëwr ar gyfer arwynebedd unrhyw bolygon â lleoliadau fertig.
+
+
+=== Arwynebedd a bennir gan ddefnyddio calcwlws ===
+Roedd datblygu calcwlws integrol ar ddiwedd yr 17g yn darparu offer y gellid eu defnyddio wedi hynny ar gyfer cyfrifo arwynebedd mwy cymhleth, megis arwynebedd elips ac arwyneb gwahanol wrthrychau tri dimensiwn crwm.
+
+
+== Fformiwlâu arwynebedd ==
+
+
+=== Fformiwlâu polygon ===
+Ar gyfer polygon (syml ) nad yw'n hunan-groestori, mae'r cyfesurynnau Gartesaidd 
+  
+    
+      
+        (
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          y
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{i},y_{i})}
+  
+ (I = 0, 1, ..., n -1) lle mae'r fertigau n yn hysbys, mae'r arwynebedd yn cael ei roi gan y fformiwla syrfëwr hwn:
+
+  
+    
+      
+        A
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            |
+          
+        
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            n
+            −
+            1
+          
+        
+        (
+        
+          x
+          
+            i
+          
+        
+        
+          y
+          
+            i
+            +
+            1
+          
+        
+        −
+        
+          x
+          
+            i
+            +
+            1
+          
+        
+        
+          y
+          
+            i
+          
+        
+        )
+        
+          
+            |
+          
+        
+      
+    
+    {\displaystyle A={\frac {1}{2}}{\Biggl \vert }\sum _{i=0}^{n-1}(x_{i}y_{i+1}-x_{i+1}y_{i}){\Biggr \vert }}
+  
+
+a pan fo i = n -1, yna mae i+1 yn  cael ei fynegi felmodwlws n ac felly mae'n cyfeirio at 0.
+
+
+==== Petryalau ====
+
+Y fformiwla arwynebedd fwyaf sylfaenol yw'r fformiwla ar gyfer arwynebedd petryal. O ystyried petryal gyda hyd l a lled w, y fformiwla ar gyfer yr arwynebedd yw:
+
+A = lw  (petryal).
+Hynny yw, arwynebedd y petryal yw'r hyd wedi'i luosi â'r lled. Fel achos arbennig, fel l = w yn achos sgwâr, rhoddir arwynebedd sgwâr â hyd ochr s yn y fformiwla:
+
+A = s2  (sgwâr).
+Mae'r fformiwla ar gyfer arwynebedd petryal yn dilyn yn uniongyrchol o briodweddau sylfaenol arwynebedd, ac weithiau fe'i cymerir fel diffiniad neu wireb. Ar y llaw arall, os datblygir y geometreg cyn y rhifyddeg, gellir defnyddio'r fformiwla hon i ddiffinio lluosi rhifau real.
+
+
+=== Rhestr o fformiwlâu ===
+
+Mae'r cyfrifiadau uchod yn dangos sut i ddod o hyd i arwynebedd llawer o siapiau cyffredin.
+
+
+=== Perthynas yr arwynebedd â'r perimedr ===
+Mae'r anghydraddoldeb isoperimetrig yn nodi, ar gyfer cromlin gaeedig o hyd L (felly mae gan y rhanbarth y mae'n ei amgáu berimedr L ) ac ar gyfer arwynebedd A y rhanbarth y mae'n ei amgáu,
+
+  
+    
+      
+        4
+        π
+        A
+        ≤
+        
+          L
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle 4\pi A\leq L^{2},}
+  
+
+ac mae cydraddoldeb yn dal os a dim ond os yw'r gromlin yn gylch. Felly, y cylch sydd â'r arwynebedd mwyaf o unrhyw ffigur caeedig gyda pherimedr penodol.
+
+
+== Gweler hefyd ==
+Rhestr o wledydd gydag arwynebedd llai na Chymru
+
+
+== Cyfeiriadau ==

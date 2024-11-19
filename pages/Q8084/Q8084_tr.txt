@@ -1,0 +1,896 @@
+Trigonometri (Yunanca trigōnon "üçgen" + metron "ölçmek"), üçgenlerin açıları ile kenarları arasındaki bağıntıları konu edinen matematik dalı. Trigonometri, sinüs ve kosinüs gibi trigonometrik işlevlerin (fonksiyon) üzerine kurulmuştur ve günümüzde fizik ve mühendislik branşlarında sık sık kullanılmaktadır.
+
+
+== Tarihçe ==
+
+Matematiğin doğrudan doğruya astronomiden çıkmış bir kolu olan trigonometrinin bazı ögeleri, daha Babilliler ve Eski Mısırlılar döneminde biliniyor, Sümerli astronomlar ilk kez bir çemberi 360 eşit parçaya bölerek açı ölçümünü yaptılar. Eski Yunanlar Menelaos’un küresel geometrisi aracılığıyla, bir daire içine çizilebilen dörtgenden yola çıkarak daire yaylarının kirişlerinin değerlerini veren çizgiler oluşturuyorlardı. Daha sonra Araplar, yay kirişlerinin yerine sinüsleri koyup; tanjant, kotanjant, sekant, kosekant kavramlarını geliştirdiler.[kaynak belirtilmeli].İlk kez Akdeniz'in çevresi trigonometre ile Abbasiler döneminde ölçülmüştür.
+Batıda Nasîrüddin Tûsî’den büyük ölçüde yararlanan Regiomontanus’un üçgen üstüne adlı eseriyle gerçek trigonometri doğmuş oldu. François Viète ve Simon Stevin, hesaplarda ondalık sayılardan yararlandılar. John Napier logaritmayı işe kattı. Isaac Newton ve öğrencileri trigonometri işlevlerinin ve logaritmalarının hesabına tam serileri uyguladılar. Daha sonra da Leonhard Euler, birim olarak trigonometrik cetvelin yarıçapını alarak, modern trigonometrinin temellerini attı.[kaynak belirtilmeli].
+
+
+== Genel bakış ==
+
+
+=== Trigonometrik işlevler ===
+
+Trigonometrik işlevler bir dik üçgen ya da birim çember üzerinden tanımlanır. Temel olarak üç tane trigonometrik işlev ve bunların çarpma işlemine göre terslerinden oluşan üç tane daha işlev vardır. Yandaki ABC üçgeninde
+
+Sinüs işlevi (sin), karşı kenarın hipotenüse oranıdır.
+
+  
+    
+      
+        sin
+        ⁡
+        A
+        =
+        
+          
+            karşı
+            hipotenüs
+          
+        
+        =
+        
+          
+            a
+            
+              
+              c
+              
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \sin A={\frac {\text{karşı}}{\text{hipotenüs}}}={\frac {a}{\,c\,}}\,.}
+  
+
+Kosinüs işlevi (cos), komşu kenarın hipotenüse oranıdır.
+
+  
+    
+      
+        cos
+        ⁡
+        A
+        =
+        
+          
+            komşu
+            hipotenüs
+          
+        
+        =
+        
+          
+            b
+            
+              
+              c
+              
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \cos A={\frac {\text{komşu}}{\text{hipotenüs}}}={\frac {b}{\,c\,}}\,.}
+  
+
+Tanjant işlevi (tan), karşı kenarın komşu kenarı oranıdır.
+
+  
+    
+      
+        tan
+        ⁡
+        A
+        =
+        
+          
+            karşı
+            komşu
+          
+        
+        =
+        
+          
+            a
+            
+              
+              b
+              
+            
+          
+        
+        =
+        
+          
+            
+              sin
+              ⁡
+              A
+            
+            
+              cos
+              ⁡
+              A
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \tan A={\frac {\text{karşı}}{\text{komşu}}}={\frac {a}{\,b\,}}={\frac {\sin A}{\cos A}}\,.}
+  
+
+Bir de bu işlevlerin çarpmaya göre tersi vardır. kosekant, sekant ve kotanjant:
+
+  
+    
+      
+        csc
+        ⁡
+        A
+        =
+        
+          
+            1
+            
+              sin
+              ⁡
+              A
+            
+          
+        
+        =
+        
+          
+            c
+            a
+          
+        
+        ,
+      
+    
+    {\displaystyle \csc A={\frac {1}{\sin A}}={\frac {c}{a}},}
+  
+
+  
+    
+      
+        sec
+        ⁡
+        A
+        =
+        
+          
+            1
+            
+              cos
+              ⁡
+              A
+            
+          
+        
+        =
+        
+          
+            c
+            b
+          
+        
+        ,
+      
+    
+    {\displaystyle \sec A={\frac {1}{\cos A}}={\frac {c}{b}},}
+  
+
+  
+    
+      
+        cot
+        ⁡
+        A
+        =
+        
+          
+            1
+            
+              tan
+              ⁡
+              A
+            
+          
+        
+        =
+        
+          
+            
+              cos
+              ⁡
+              A
+            
+            
+              sin
+              ⁡
+              A
+            
+          
+        
+        =
+        
+          
+            b
+            a
+          
+        
+        .
+      
+    
+    {\displaystyle \cot A={\frac {1}{\tan A}}={\frac {\cos A}{\sin A}}={\frac {b}{a}}.}
+  
+
+Bu işlevler geometrinin dolayısıyla fiziğin ve mühendisliğin pek çok alanında kullanılır. Sinüs ve kosinüs teoremleri bir üçgenin açıları ve kenarlarını hesaplamakta kullanılır ki herhangi bir çokgen üçgenlerin birleşimi olduğundan çokgenleri incelemede de yararlıdır.
+
+
+=== Birim çember ve esas ölçü ===
+
+Yukarıda dik üçgen üzerinden yapılan tanım sadece 0-90 derece aralığını kapsar (0-π/2 radyan).
+90-360 derece arasındaki açıların trigonometrik değerleri birim çember üzerinden hesaplanır. 360 dereceden büyük açılar 360 üzerinden devrettirilerek 0-360 arasındaki esas ölçüsü bulunur.
+
+0° ≤x <360° ve k bir tam sayı olmak üzere ölçüsü (x + 360k) olan açıların esas ölçüsü x derecedir.
+0 ≤ x< 2π ve k bir tam sayı olmak üzere, ölçüsü (x + 2πk) olan açıların esas ölçüsü x radyandır.
+Merkezi orijin ve yarıçapı 1 birim olan çembere birim çember veya trigonometrik çember denir.
+Birim çemberin denklemi x2+y2=1 şeklindedir.
+
+
+=== Sarma işlevi ===
+Gerçel sayılar kümesinden birim çember üzerindeki noktalara tanımlanan işleve sarma işlevi denir.
+Sarma işlevini s ile, birim çemberi de C ile gösterirsek işlev
+
+  
+    
+      
+         
+        s
+        :
+        
+          R
+        
+        →
+        C
+      
+    
+    {\displaystyle \ s:\mathbb {R} \to C}
+  
+
+şeklinde yazılabilir ve 
+  
+    
+      
+         
+        s
+        (
+        x
+        )
+        =
+        P
+      
+    
+    {\displaystyle \ s(x)=P}
+  
+ oldugunda 
+  
+    
+      
+         
+        s
+        (
+        x
+        +
+        2
+        k
+        π
+        )
+        =
+        P
+      
+    
+    {\displaystyle \ s(x+2k\pi )=P}
+  
+ olur. Başka bir deyişle, sarma işlevi, gerçel sayılar üzerinde dönemi (periyodu) 
+  
+    
+      
+        2
+        π
+      
+    
+    {\displaystyle 2\pi }
+  
+ olan bir işlevdir.
+
+
+=== İşlevler arasındaki ilişkiler ===
+Yukarıdaki tanımlardan görülebileceği gibi, bu işlevler arasında
+
+  
+    
+      
+        
+          
+            cos
+            
+              2
+            
+          
+          ⁡
+           
+          x
+        
+        +
+        
+          
+            sin
+            
+              2
+            
+          
+          ⁡
+           
+          x
+        
+        =
+        1
+      
+    
+    {\displaystyle {\cos ^{2}\ x}+{\sin ^{2}\ x}=1}
+  
+ (Pisagor teoremi)
+
+  
+    
+      
+        
+          sec
+          
+            2
+          
+        
+        ⁡
+        A
+        −
+        
+          tan
+          
+            2
+          
+        
+        ⁡
+        A
+        =
+        1
+         
+      
+    
+    {\displaystyle \sec ^{2}A-\tan ^{2}A=1\ }
+  
+
+  
+    
+      
+        
+          csc
+          
+            2
+          
+        
+        ⁡
+        A
+        −
+        
+          cot
+          
+            2
+          
+        
+        ⁡
+        A
+        =
+        1
+         
+      
+    
+    {\displaystyle \csc ^{2}A-\cot ^{2}A=1\ }
+  
+
+ilişkileri vardır.
+
+
+=== Sık kullanılan açıların trigonometrik oranları ===
+
+
+== Gerçek veya karmaşık değişkenlerin trigonometrik fonksiyonları ==
+
+
+=== Trigonometrik fonksiyon grafikleri ===
+6 ana trigonometrik fonksiyonun özelliklerini özetleyen diyagramlar:
+
+
+=== Ters trigonometrik fonksiyonlar ===
+6 ana trigonometrik fonksiyon periyodik olduğu için birebir değillerdir yani ters çevrilemezler, ancak trigonometrik bir fonksiyonun alanını kısıtlayarak ters çevrilebilirler.
+
+
+== Kullanım alanları ==
+
+Trigonometri birçok fen biliminde, matematiğin diğer alanlarında ve çeşitli sanatlarda yaygın bir biçimde kullanılmaktadır. Trigonometriyi kullanan bazı dallar şunlardır:
+jeofizik, kristalografi, ekonomi (özellikle de finansal pazarların analizinde), elektrik mühendisliği, inşaat mühendisliği, elektronik, jeodezi, makine mühendisliği, meteoroloji, müzik kuramı, sayı kuramı (ve dolayısıyla kriptografi), oşinografi (okyanus bilimi), farmakoloji (eczacılık), optik, fonetik, olasılık kuramı, psikoloji, sismoloji...
+Trigonometri yukarıda örneklendiği gibi birçok farklı alana farklı katkılarda bulunmuştur. Örneğin Pisagor kuramının isim babası Pisagor matematiksel müzik kuramına ilk katkıda bulunan isimlerdendir. Oşinografide bazı dalgaların sinüs dalgalarına benzerliği ilgili incelemelerde trigonometrinin kullanımına olanak tanımıştır. Bunun dışında Fourier serileri sayesinde trigonometrik işlevler farklı fonksiyonları temsil etmekte kullanılırlar ve bu sayede trigonometri birçok yararlanılan dallarda kullanım olanağı bulmuştur.
+
+
+== Özdeşlikler ==
+
+
+=== Üçgen özdeşlikleri ===
+
+
+==== Sinüs teoremi ====
+
+
+==== Kosinüs teoremi ====
+
+
+==== Tanjant teoremi ====
+
+
+=== Trigonometrik özdeşlikler ===
+
+
+==== Euler bağıntısı ====
+
+  
+    
+      
+        
+          e
+          
+            i
+            θ
+          
+        
+        =
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        
+      
+    
+    {\displaystyle e^{i\theta }=\cos \theta +i\sin \theta \,}
+  
+
+Bu bağıntıyla iki matematiksel ifade olan i ve 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ birbirine bağlanmış olur.
+
+
+==== de Moivre formülü ====
+
+  
+    
+      
+        
+          
+            (
+            
+              cos
+              ⁡
+              x
+              +
+              i
+              sin
+              ⁡
+              x
+            
+            )
+          
+          
+            n
+          
+        
+        =
+        cos
+        ⁡
+        
+          (
+          
+            n
+            x
+          
+          )
+        
+        +
+        i
+        sin
+        ⁡
+        
+          (
+          
+            n
+            x
+          
+          )
+        
+        .
+        
+      
+    
+    {\displaystyle \left(\cos x+i\sin x\right)^{n}=\cos \left(nx\right)+i\sin \left(nx\right).\,}
+  
+
+
+=== Diğer özdeşlikler ===
+
+
+==== Toplam fark formülleri ====
+Trigonometrik değerleri bilinen iki açının toplamının veya farkının trigonometrik değerlerini hesaplamak için kullanılan formüllerdir.
+sin(α+β) = sin α.cos β + cos α.sin β
+sin(α-β) = sin α.cos β - cos α.sin β
+cos(α+β) = cos α.cos β - sin α.sin β
+cos(α-β) = cos α.cos β + sin α.sin β
+tan(α+β) = (tan α + tan β) / (1 - tan α . tan β)
+tan(α-β) = (tan α - tan β) / (1 + tan α . tan β)
+cot(α+β) = (cot α . cot β - 1) / (cot α + cot β)
+cot(α-β) = (cot α . cot β + 1) / (cot β - cot α)
+
+
+==== Yarım açı formülleri ====
+Yarım açı formülleri ya da iki kat açı formülleri, trigonometrik değerleri bilinen bir açının iki katının veya yarısının trigonometrik değerlerini hesaplamak için kullanılan formüllerdir.
+sin2α = 2sin α.cos α
+cos2α = cos2 α - sin2 α
+cos2α = 2cos2 α - 1
+cos2α = 1- 2sin2 α
+tan2α = 2tan α / 1-tan2 α
+tan2α = 2 / cot α - tan α
+cot2α = cot2 α - 1 / 2cot α
+
+
+==== Dönüşüm formülleri ====
+Dönüşüm formülleri, toplam durumundaki iki trigonometrik ifadeyi çarpım haline getirmeye yarar. Bu işlemin amacı bazı özel durumlarda işlem kolaylığı sağlamaktır.
+
+  
+    
+      
+        sin
+        ⁡
+        a
+        +
+        sin
+        ⁡
+        b
+        =
+        2
+        sin
+        ⁡
+        
+          
+            
+              a
+              +
+              b
+            
+            2
+          
+        
+        cos
+        ⁡
+        
+          
+            
+              a
+              −
+              b
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \sin a+\sin b=2\sin {a+b \over 2}\cos {a-b \over 2}}
+  
+
+  
+    
+      
+        sin
+        ⁡
+        a
+        −
+        sin
+        ⁡
+        b
+        =
+        2
+        cos
+        ⁡
+        
+          
+            
+              a
+              +
+              b
+            
+            2
+          
+        
+        sin
+        ⁡
+        
+          
+            
+              a
+              −
+              b
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \sin a-\sin b=2\cos {a+b \over 2}\sin {a-b \over 2}}
+  
+
+  
+    
+      
+        cos
+        ⁡
+        a
+        +
+        cos
+        ⁡
+        b
+        =
+        2
+        cos
+        ⁡
+        
+          
+            
+              a
+              +
+              b
+            
+            2
+          
+        
+        cos
+        ⁡
+        
+          
+            
+              a
+              −
+              b
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \cos a+\cos b=2\cos {a+b \over 2}\cos {a-b \over 2}}
+  
+
+  
+    
+      
+        cos
+        ⁡
+        a
+        −
+        cos
+        ⁡
+        b
+        =
+        −
+        2
+        sin
+        ⁡
+        
+          
+            
+              a
+              +
+              b
+            
+            2
+          
+        
+        sin
+        ⁡
+        
+          
+            
+              a
+              −
+              b
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \cos a-\cos b=-2\sin {a+b \over 2}\sin {a-b \over 2}}
+  
+
+  
+    
+      
+        tan
+        ⁡
+        a
+        +
+        tan
+        ⁡
+        b
+        =
+        
+          
+            
+              sin
+              ⁡
+              (
+              a
+              +
+              b
+              )
+            
+            
+              cos
+              ⁡
+              a
+              cos
+              ⁡
+              b
+            
+          
+        
+      
+    
+    {\displaystyle \tan a+\tan b={\frac {\sin(a+b)}{\cos a\cos b}}}
+  
+
+  
+    
+      
+        tan
+        ⁡
+        a
+        −
+        tan
+        ⁡
+        b
+        =
+        
+          
+            
+              sin
+              ⁡
+              (
+              a
+              −
+              b
+              )
+            
+            
+              cos
+              ⁡
+              a
+              cos
+              ⁡
+              b
+            
+          
+        
+      
+    
+    {\displaystyle \tan a-\tan b={\frac {\sin(a-b)}{\cos a\cos b}}}
+  
+
+  
+    
+      
+        cot
+        ⁡
+        a
+        +
+        cot
+        ⁡
+        b
+        =
+        
+          
+            
+              sin
+              ⁡
+              (
+              a
+              +
+              b
+              )
+            
+            
+              sin
+              ⁡
+              a
+              sin
+              ⁡
+              b
+            
+          
+        
+      
+    
+    {\displaystyle \cot a+\cot b={\frac {\sin(a+b)}{\sin a\sin b}}}
+  
+
+  
+    
+      
+        cot
+        ⁡
+        a
+        −
+        cot
+        ⁡
+        b
+        =
+        −
+        
+          
+            
+              sin
+              ⁡
+              (
+              a
+              −
+              b
+              )
+            
+            
+              sin
+              ⁡
+              a
+              sin
+              ⁡
+              b
+            
+          
+        
+      
+    
+    {\displaystyle \cot a-\cot b=-{\frac {\sin(a-b)}{\sin a\sin b}}}
+  
+
+
+== Ayrıca bakınız ==
+Trigonometrinin ana hatları
+
+
+== Notlar ==

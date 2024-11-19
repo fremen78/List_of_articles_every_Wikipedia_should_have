@@ -1,0 +1,839 @@
+Funkcija ili preslikavanje je jedan od najvažnijih matematičkih pojmova koji predstavlja preslikavanje članova jednog skupa (domena) u drugi (kodomena). Pri tome preslikavanje mora biti jedinstveno, tj. svaki član domene se preslikava u točno jedan član kodomene.
+
+
+== Definicija ==
+Funkcija ili preslikavanje je uređena trojka 
+  
+    
+      
+        (
+        D
+        ,
+        K
+        ,
+        f
+        )
+      
+    
+    {\displaystyle (D,K,f)}
+  
+ koja sadrži skupove 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+ i neko pravilo 
+  
+    
+      
+        f
+        :
+        D
+        →
+        K
+      
+    
+    {\displaystyle f\colon D\to K}
+  
+ po kojem se svakom članu 
+  
+    
+      
+        x
+        ∈
+        D
+      
+    
+    {\displaystyle x\in D}
+  
+ pridružuje jedinstveni član 
+  
+    
+      
+        y
+        ∈
+        K
+      
+    
+    {\displaystyle y\in K}
+  
+ tako da je 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+. 
+Skup 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ se naziva područje definicije ili domena funkcije 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, a skup 
+  
+    
+      
+        K
+      
+    
+    {\displaystyle K}
+  
+ područje vrijednosti ili kodomena funkcije 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+. Član domene 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ je nezavisna varijabla ili argument funkcije 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, a član kodomene 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ je zavisna varijabla funkcije 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+.
+Želimo li istaknuti skupove na kojima funkcija izvršava pridruživanje, pišemo 
+  
+    
+      
+        f
+        :
+        D
+        →
+        K
+      
+    
+    {\displaystyle f\colon D\to K}
+  
+.
+Želimo li istaknuti pravilo po kojem funkcija djeluje, pišemo 
+  
+    
+      
+        x
+        ↦
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle x\mapsto y=f(x)}
+  
+.
+
+
+== Jednakost funkcija ==
+Funkcije 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ i 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ su jednake, što zapisujemo sa 
+  
+    
+      
+        f
+        =
+        g
+      
+    
+    {\displaystyle f=g}
+  
+, ako vrijedi:
+
+imaju jednake domene, tj. 
+  
+    
+      
+        
+          D
+          
+            f
+          
+        
+        =
+        
+          D
+          
+            g
+          
+        
+      
+    
+    {\displaystyle D_{f}=D_{g}}
+  
+;
+imaju jednako pravilo preslikavanja tj. 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+        ,
+        ∀
+        x
+        ∈
+        A
+      
+    
+    {\displaystyle f(x)=g(x),\forall x\in A}
+  
+.
+Na primjer, funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)={\frac {x^{2}}{x}}}
+  
+ i 
+  
+    
+      
+        g
+        (
+        x
+        )
+        =
+        x
+      
+    
+    {\displaystyle g(x)=x}
+  
+ nisu jednake.  One imaju jednako pravilo pridruživanja, jer, kada se kod 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ skrati razlomak, dobijemo 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        x
+      
+    
+    {\displaystyle f(x)=x}
+  
+.
+Međutim, nemaju jednaku domenu, jer funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ nema vrijednost za 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\displaystyle x=0}
+  
+.  Dijeljenje s nulom nije definirano, pa je domena 
+  
+    
+      
+        
+          D
+          
+            f
+          
+        
+        =
+        
+          R
+        
+        ∖
+        
+          {
+          0
+          }
+        
+      
+    
+    {\displaystyle D_{f}=\mathbb {R} \backslash \left\{0\right\}}
+  
+, skup realnih brojeva bez nule. Domena 
+  
+    
+      
+        
+          D
+          
+            g
+          
+        
+        =
+        
+          R
+        
+      
+    
+    {\displaystyle D_{g}=\mathbb {R} }
+  
+, čitav skup realnih brojeva.
+
+
+== Klasifikacija funkcija ==
+Funkcija može imati mnogo svojstava, ali neka od važnijih su injektivnost, surjektivnost i bijektivnost.
+Injekcija ili 1-1 preslikavanje je funkcija takva da ne postoje dva različita člana domene koja se preslikavaju u isti član kodomene. Za takvu funkciju kažemo da ima svojstvo injektivnosti i da je injektivna. 
+Matematički zapisujemo, 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        
+          x
+          ′
+        
+        )
+        ⇒
+        x
+        =
+        
+          x
+          ′
+        
+        ,
+        ∀
+        x
+        ∈
+        
+          D
+          
+            f
+          
+        
+        ,
+        ∀
+        
+          x
+          ′
+        
+        ∈
+        
+          D
+          
+            f
+          
+        
+      
+    
+    {\displaystyle f(x)=f(x')\Rightarrow x=x',\forall x\in D_{f},\forall x'\in D_{f}}
+  
+ 
+ili ekvivalentnu tvrdnju 
+  
+    
+      
+        ∀
+        x
+        ,
+        
+          x
+          ′
+        
+        ∈
+        D
+        
+          
+             takve da 
+          
+        
+        x
+        ≠
+        
+          x
+          ′
+        
+        ,
+        f
+        (
+        x
+        )
+        ≠
+        f
+        (
+        
+          x
+          ′
+        
+        )
+      
+    
+    {\displaystyle \forall x,x'\in D{\mbox{ takve da }}x\neq x',f(x)\neq f(x')}
+  
+.
+Slika funkcije f je skup članova iz kodomene na koje se preslikava neki član domene. 
+Sliku funkcije f označavamo s 
+  
+    
+      
+        
+          R
+          
+            f
+          
+        
+      
+    
+    {\displaystyle R_{f}}
+  
+.
+Surjekcija ili preslikavanje na je funkcija čija slika je jednaka cijeloj kodomeni 
+  
+    
+      
+        
+          R
+          
+            f
+          
+        
+        =
+        K
+      
+    
+    {\displaystyle R_{f}=K}
+  
+. 
+Drugim riječima, za svaki član kodomene postoje jedan ili više članova iz domene koji se u njega preslikavaju tj. ima bar jednu prasliku. 
+Matematički zapis: 
+  
+    
+      
+        ∀
+        y
+        ∈
+        K
+        
+        ∃
+        x
+        ∈
+        D
+        ,
+        f
+        (
+        x
+        )
+        =
+        y
+      
+    
+    {\displaystyle \forall y\in K\;\exists x\in D,f(x)=y}
+  
+. Za takvu funkciju kažemo da ima svojstvo surjektivnosti i da je surjektivna.
+Bijekcija ili 1 na 1 korespondencija ili obostrano jednoznačno preslikavanje je funkcija koja je injektivna i surjektivna. Kažemo još da je funkcija bijektivna i da ima svojstvo bijektivnosti.
+Primjer bijekcije je funkcija identiteta, odnosno funkcija 
+  
+    
+      
+        
+          i
+          
+            X
+          
+        
+        :
+        X
+        →
+        X
+      
+    
+    {\displaystyle i_{X}:X\to X}
+  
+ definirana s 
+  
+    
+      
+        
+          i
+          
+            X
+          
+        
+        (
+        x
+        )
+        =
+        x
+        ,
+        ∀
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle i_{X}(x)=x,\forall x\in X}
+  
+.
+
+
+=== Ostala svojstva ===
+involutivnost: kažemo da je funkcija (operacija) involucija (lat. obavijanje) ako je 
+  
+    
+      
+        f
+        (
+        f
+        (
+        x
+        )
+        )
+        =
+        x
+      
+    
+    {\displaystyle f(f(x))=x}
+  
+ za svaki 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ iz njezine domene. Primjeri takvih funkcija, odnosno operacija, uključuju logičku negaciju (jer je 
+  
+    
+      
+        ¬
+        (
+        ¬
+        P
+        )
+        =
+        P
+      
+    
+    {\displaystyle \neg (\neg P)=P}
+  
+), tako i negaciju realnih brojeva (
+  
+    
+      
+        −
+        (
+        −
+        x
+        )
+        =
+        x
+      
+    
+    {\displaystyle -(-x)=x}
+  
+), komplementiranje u teoriji skupova (npr. 
+  
+    
+      
+        (
+        
+          
+            
+              U
+            
+          
+          
+            c
+          
+        
+        
+          )
+          
+            c
+          
+        
+        =
+        
+          ∅
+          
+            c
+          
+        
+        =
+        
+          
+            U
+          
+        
+      
+    
+    {\displaystyle ({\mathcal {U}}^{c})^{c}=\emptyset ^{c}={\mathcal {U}}}
+  
+), centralnu simetriju u euklidskoj geometriji i sl.
+
+
+== Graf funkcije ==
+
+Graf funkcije 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ jest skup točaka 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ ravnine 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+ za koje vrijedi 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ te čine krivulju. Formalnije, to je skup 
+  
+    
+      
+        G
+        (
+        f
+        )
+        ⊆
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ,
+        G
+        (
+        f
+        )
+        =
+        
+          
+            {
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        
+          
+            R
+          
+          
+            2
+          
+        
+        :
+        x
+        ∈
+        
+          D
+          
+            f
+          
+        
+        ,
+        y
+        =
+        f
+        (
+        x
+        )
+        
+          
+            }
+          
+        
+      
+    
+    {\displaystyle G(f)\subseteq \mathbb {R} ^{2},G(f)={\big \{}(x,y)\in \mathbb {R} ^{2}:x\in D_{f},y=f(x){\big \}}}
+  
+.
+
+
+== Vidi još ==
+Funkcija identiteta
+Konstantna funkcija
+Nulfunkcija
+Linearna funkcija
+Kvadratna funkcija
+Kubna funkcija
+Polinomna funkcija
+Eksponencijalna funkcija
+Trigonometrijske funkcije
+
+
+== Izvori ==

@@ -1,0 +1,2459 @@
+In matematica, una funzione è una relazione tra due insiemi, chiamati dominio e codominio della funzione, che associa a ogni elemento del dominio uno e un solo elemento del codominio.
+Se il dominio e il codominio della funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ sono rispettivamente indicati con 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ e 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+, la relazione si indica con 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ e l’elemento che 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ associa a 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ si indica con 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ (si pronuncia "effe di x").
+
+
+== Descrizione ==
+La parola "funzione" non si riferisce alla sola associazione di elementi, ma alla terna: associazione di elementi, dominio e codominio. Specificare un'associazione non definisce una funzione: occorre specificare anche dominio e codominio. Infatti, due funzioni che hanno una "stessa" associazione di elementi ma diverso dominio o diverso codominio sono funzioni diverse. Per esempio, la funzione che associa a ogni numero naturale il suo quadrato (
+  
+    
+      
+        f
+        :
+        
+          N
+        
+        →
+        
+          N
+        
+        ,
+        f
+        (
+        n
+        )
+        =
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f\colon \mathbb {N} \to \mathbb {N} ,f(n)=n^{2}}
+  
+) è diversa dalla funzione che associa a un numero intero il quadrato di quel numero (
+  
+    
+      
+        f
+        :
+        
+          Z
+        
+        →
+        
+          N
+        
+        ,
+        f
+        (
+        z
+        )
+        =
+        
+          z
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f\colon \mathbb {Z} \to \mathbb {N} ,f(z)=z^{2}}
+  
+); infatti la prima è iniettiva la seconda no. In molti casi, quando il dominio e il codominio sono chiari dal contesto, una funzione viene espressa indicando solamente la relazione e sottintendendo dominio e codominio.
+Si dice che 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ è l'argomento della funzione, oppure un valore della variabile indipendente, mentre 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ è un valore della variabile dipendente della funzione.
+Sinonimi del termine "funzione" sono applicazione e mappa. Il termine trasformazione viene utilizzato spesso in ambito geometrico per indicare una funzione 
+  
+    
+      
+        f
+        :
+        X
+        →
+        X
+      
+    
+    {\displaystyle f\colon X\rightarrow X}
+  
+ invertibile e che conserva le proprietà geometriche di 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, mentre operatore è talvolta utilizzato nella trattazione di funzioni lineari tra spazi vettoriali.
+Le funzioni hanno un ruolo molto importante in tutte le scienze esatte. Il concetto di dipendenza funzionale tra due grandezze sostituisce infatti, all'interno delle teorie fisiche e matematiche, quello di causa-effetto, che, al contrario del precedente, non riguarda enti teorici ma direttamente gli elementi della realtà concreta. Se si afferma, ad esempio, che la pressione di una certa quantità di gas perfetto è funzione della sua temperatura e del suo volume si sta facendo un'affermazione interna a un modello termodinamico, mentre il rapporto di causa-effetto che viene individuato fra le tre grandezze dipende in modo sostanziale dalle possibilità di intervento concreto su di esse. Rimanendo a questo esempio, il valore della pressione viene visto più spesso come conseguenza del valore degli altri due parametri, poiché è generalmente molto più facile intervenire sul volume e sulla temperatura che direttamente sulla pressione.
+
+
+=== Esempi ===
+Gli esempi più semplici di funzione sono quelli per cui sia il dominio che il codominio sono insiemi numerici. Per esempio, se a ogni numero naturale si associa il doppio di tale numero, si ha una funzione, il cui dominio è l'insieme dei numeri naturali e il cui codominio è l'insieme dei numeri naturali pari.
+Tuttavia si parla di funzione anche quando il dominio o il codominio, o entrambi, non sono insiemi numerici. Se, per esempio, a ogni triangolo del piano si associa il cerchio in esso inscritto, si ha ugualmente una funzione, in quanto per ogni triangolo esiste uno e un solo cerchio in esso inscritto.
+Inoltre spesso si parla di funzioni con più argomenti, o con più valori: per esempio la funzione che alle coordinate 
+  
+    
+      
+        x
+        ,
+        y
+        ,
+        z
+      
+    
+    {\displaystyle x,y,z}
+  
+ di un punto nello spazio fa corrispondere temperatura 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ e pressione 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ dell'aria. In tal caso, la funzione ha in realtà sempre un solo argomento, che è la terna 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        ,
+        z
+        )
+        ,
+      
+    
+    {\displaystyle (x,y,z),}
+  
+ e ha sempre un solo valore, che è la coppia 
+  
+    
+      
+        (
+        T
+        ,
+        P
+        )
+        .
+      
+    
+    {\displaystyle (T,P).}
+  
+
+
+== Definizione ==
+Dati due insiemi non vuoti 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ e 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+, si chiama funzione da 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ in 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ una relazione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ tale che per ogni 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ esiste uno ed un solo elemento 
+  
+    
+      
+        y
+        ∈
+        Y
+      
+    
+    {\displaystyle y\in Y}
+  
+ tale che 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        f
+      
+    
+    {\displaystyle (x,y)\in f}
+  
+. Tale elemento tradizionalmente si denota con 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+: in altre parole, invece di scrivere 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        f
+      
+    
+    {\displaystyle (x,y)\in f}
+  
+ si può usare la scrittura più tradizionale:
+
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle y=f(x).}
+  
+
+Il fatto che 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ sia una funzione da 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ in 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ che associa a 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ l’elemento 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ si può esprimere con la scrittura:
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                :
+              
+              
+                X
+              
+              
+                ⟶
+              
+              
+                Y
+              
+            
+            
+              
+              
+                x
+              
+              
+                ⟼
+              
+              
+                f
+                (
+                x
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\begin{matrix}f\colon &X&\longrightarrow &Y\\&x&\longmapsto &f(x)\end{matrix}}.}
+  
+
+L’insieme 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ (da cui la funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ “prende” i valori) è il dominio della funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, mentre l’insieme 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ (in cui si trovano i valori “restituiti” dalla funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+) è il codominio della funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+.
+Le espressioni “prendere un valore” e “restituire un valore” fanno riferimento a un modello meccanico delle funzioni, rappresentate come meccanismi che, fornito loro un elemento del dominio, lo “trasformano” nel corrispondente elemento del codominio.
+
+
+=== Immagine e controimmagine ===
+
+Data una funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ di dominio 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ e codominio 
+  
+    
+      
+        Y
+        ,
+      
+    
+    {\displaystyle Y,}
+  
+ comunque scelto un elemento 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ del dominio, si chiama immagine di 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ il corrispondente elemento del codominio, indicato con 
+  
+    
+      
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle f(x).}
+  
+ Analogamente, se 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ è un elemento del codominio che sia immagine di un elemento 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ del dominio, cioè se 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+, si dice che 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ è una controimmagine di 
+  
+    
+      
+        y
+        .
+      
+    
+    {\displaystyle y.}
+  
+ Mentre a ogni elemento del dominio di 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è assegnata una e una sola immagine, è possibile che un elemento nel codominio possegga diverse controimmagini, o che non ne possieda affatto. Si definisce quindi “controimmagine” dell’elemento 
+  
+    
+      
+        y
+        ∈
+        Y
+      
+    
+    {\displaystyle y\in Y}
+  
+ l’insieme
+
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        y
+        )
+        =
+        {
+        x
+        ∈
+        X
+        
+        
+          |
+        
+        
+        f
+        (
+        x
+        )
+        =
+        y
+        }
+        .
+      
+    
+    {\displaystyle f^{-1}(y)=\{x\in X\,|\,f(x)=y\}.}
+  
+
+Se 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        y
+        )
+        ≠
+        ∅
+      
+    
+    {\displaystyle f^{-1}(y)\neq \varnothing }
+  
+ per ogni 
+  
+    
+      
+        y
+        ∈
+        Y
+      
+    
+    {\displaystyle y\in Y}
+  
+ si dice che 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è suriettiva, mentre se 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        y
+        )
+      
+    
+    {\displaystyle f^{-1}(y)}
+  
+ contiene al più un elemento per ogni 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ si dice che 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è iniettiva. Se valgono entrambe le condizioni, 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è detta biiettiva o biunivoca.
+L’insieme
+
+  
+    
+      
+        {
+        y
+        ∈
+        Y
+        
+        
+          |
+        
+        
+        ∃
+        x
+        ∈
+        X
+        :
+        y
+        =
+        f
+        (
+        x
+        )
+        }
+      
+    
+    {\displaystyle \{y\in Y\,|\,\exists x\in X:y=f(x)\}}
+  
+
+degli elementi 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ del codominio per i quali esiste almeno un 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ nel dominio che ha 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ come immagine è detto immagine di 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ e si denota con 
+  
+    
+      
+        
+          
+            Im
+          
+        
+        (
+        f
+        )
+      
+    
+    {\displaystyle {\textrm {Im}}(f)}
+  
+ o con 
+  
+    
+      
+        f
+        (
+        X
+        )
+      
+    
+    {\displaystyle f(X)}
+  
+.
+
+
+=== Altre notazioni per le funzioni ===
+Per il valore di una funzione 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ corrispondente a un elemento 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, denotabile con la notazione tradizionale 
+  
+    
+      
+        F
+        (
+        x
+        )
+      
+    
+    {\displaystyle F(x)}
+  
+, vengono usate anche altre due scritture.
+Per quella che chiamiamo notazione a funzione prefissa si pone
+
+  
+    
+      
+        F
+        x
+        :=
+        F
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle Fx:=F(x).}
+  
+
+Per quella che chiamiamo notazione a funzione suffissale si pone
+
+  
+    
+      
+        x
+        F
+        :=
+        F
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle xF:=F(x).}
+  
+
+A volte al posto delle parentesi tonde si usano parentesi quadrate:
+
+  
+    
+      
+        F
+        [
+        x
+        ]
+        =
+        F
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle F[x]=F(x).}
+  
+
+In questo modo si evitano confusioni con le parentesi che indicano l’ordine delle operazioni. Questa notazione è usata da alcuni programmi di calcolo simbolico.
+Nelle funzioni di due variabili si usa talvolta la notazione infissa, ossia
+
+  
+    
+      
+        x
+        F
+        y
+        :=
+        F
+        (
+        x
+        ,
+        y
+        )
+        ,
+      
+    
+    {\displaystyle xFy:=F(x,y),}
+  
+
+ad esempio, nelle usuali operazioni di addizione e sottrazione si usa scrivere 
+  
+    
+      
+        x
+        +
+        y
+      
+    
+    {\displaystyle x+y}
+  
+ e 
+  
+    
+      
+        x
+        −
+        y
+      
+    
+    {\displaystyle x-y}
+  
+ invece di 
+  
+    
+      
+        +
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle +(x,y)}
+  
+ e 
+  
+    
+      
+        −
+        (
+        x
+        ,
+        y
+        )
+        .
+      
+    
+    {\displaystyle -(x,y).}
+  
+
+
+=== Estensione e restrizione di una funzione ===
+Data una funzione 
+  
+    
+      
+        f
+        :
+        A
+        →
+        Y
+      
+    
+    {\displaystyle f\colon A\to Y}
+  
+ e un insieme 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ tale che 
+  
+    
+      
+        A
+        ⊂
+        X
+      
+    
+    {\displaystyle A\subset X}
+  
+, si dice che la funzione 
+  
+    
+      
+        
+          
+            
+              f
+              ~
+            
+          
+        
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle {\tilde {f}}\colon X\to Y}
+  
+ è un’estensione di 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ all’insieme 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ se
+
+  
+    
+      
+        
+          
+            
+              f
+              ~
+            
+          
+        
+        ∘
+        i
+        =
+        f
+      
+    
+    {\displaystyle {\tilde {f}}\circ i=f}
+  
+
+dove 
+  
+    
+      
+        i
+        :
+        A
+        →
+        X
+      
+    
+    {\displaystyle i\colon A\to X}
+  
+ è l’inclusione di 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, data da 
+  
+    
+      
+        i
+        (
+        a
+        )
+        =
+        a
+      
+    
+    {\displaystyle i(a)=a}
+  
+. Si dice viceversa che 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è la restrizione di 
+  
+    
+      
+        
+          
+            
+              f
+              ~
+            
+          
+        
+      
+    
+    {\displaystyle {\tilde {f}}}
+  
+ all’insieme 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+La restrizione di una funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ a un insieme 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ contenuto nel suo dominio è abitualmente indicata con 
+  
+    
+      
+        f
+        
+          
+            
+              |
+            
+          
+          
+            A
+          
+        
+      
+    
+    {\displaystyle f{\big |}_{A}}
+  
+.
+
+
+== Funzioni di due o più variabili ==
+Quando il dominio di una funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è il prodotto cartesiano di due o più insiemi, e dunque la funzione agisce su 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-uple di elementi di insiemi, allora l'immagine del vettore di questi elementi 
+  
+    
+      
+        
+          x
+        
+      
+    
+    {\displaystyle \mathbf {x} }
+  
+ viene indicata con la notazione
+
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            i
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle f(x_{i}).}
+  
+
+In questo caso la funzione viene anche chiamata funzione di vettore. A tal proposito in fisica si parla di campo.
+Per esempio, si consideri la funzione di moltiplicazione che associa un vettore di due numeri naturali 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ e 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ al loro prodotto: 
+  
+    
+      
+        f
+        (
+        x
+        ,
+        y
+        )
+        =
+        x
+        y
+      
+    
+    {\displaystyle f(x,y)=xy}
+  
+. Questa funzione può essere definita formalmente come avente per dominio 
+  
+    
+      
+        
+          N
+        
+        ×
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} \times \mathbb {N} }
+  
+, l'insieme di tutte le coppie di numeri naturali; si noti inoltre che in questo caso la funzione è simmetrica rispetto alle componenti del vettore: 
+  
+    
+      
+        f
+        (
+        x
+        ,
+        y
+        )
+        =
+        f
+        (
+        y
+        ,
+        x
+        )
+      
+    
+    {\displaystyle f(x,y)=f(y,x)}
+  
+ e quindi si tratta di una funzione di un insieme 
+  
+    
+      
+        f
+        {
+        x
+        ,
+        y
+        }
+      
+    
+    {\displaystyle f\{x,y\}}
+  
+ in cui non importa cioè l'ordine degli elementi. Sono inoltre possibili anche altri raggruppamenti delle variabili: per esempio risulta estremamente importante nello studio dei sistemi di equazioni differenziali la teoria della funzione di matrice:
+
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            i
+            j
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle f(x_{ij}).}
+  
+
+
+=== Operazioni binarie ===
+Molte operazioni binarie dell'aritmetica, come l'addizione e la moltiplicazione, sono funzioni dal prodotto cartesiano 
+  
+    
+      
+        
+          Z
+        
+        ×
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} \times \mathbb {Z} }
+  
+ a valori in 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+, e vengono descritte tramite la notazione infissa: si scrive cioè 
+  
+    
+      
+        x
+        +
+        y
+      
+    
+    {\displaystyle x+y}
+  
+ (e non 
+  
+    
+      
+        +
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle +(x,y)}
+  
+) per descrivere l'immagine della coppia 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ tramite l'operazione 
+  
+    
+      
+        +
+      
+    
+    {\displaystyle +}
+  
+.
+Questa notazione è stata generalizzata dall'algebra moderna, per definire strutture algebriche come ad esempio quella di gruppo, come un insieme 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ dotato di alcune operazioni binarie aventi determinate proprietà.
+
+
+== Funzioni a più valori ==
+Se il codominio di una funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ è il prodotto cartesiano di due o più insiemi, questa può essere indicata come funzione vettoriale. Tali variabili spesso vengono aggregate in un vettore; a tal proposito in fisica si parla di campo vettoriale.
+Un esempio tipico è dato da una trasformazione lineare del piano, ad esempio:
+
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        →
+        (
+        y
+        ,
+        x
+        )
+        .
+      
+    
+    {\displaystyle (x,y)\to (y,x).}
+  
+
+Una funzione è invece detta polidroma nel caso in cui esista almeno un elemento del dominio cui corrisponde più di un elemento del codominio. In effetti tali funzioni non rientrano nella definizione data inizialmente, ma in alcuni campi (ad esempio in analisi complessa) essa viene estesa proprio in questo senso. Un esempio di funzione polidroma è la radice quadrata di un numero reale positivo, che può essere descritta come una funzione
+
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+        
+        →
+        
+          P
+        
+        (
+        
+          R
+        
+        )
+      
+    
+    {\displaystyle \mathbb {R} _{+}\to \mathbb {P} (\mathbb {R} )}
+  
+
+che associa a ogni numero reale positivo l'insieme delle sue due radici quadrate. Un esempio analogo è il logaritmo definito sull'insieme dei numeri complessi.
+
+
+== Tipologia ==
+Nella matematica e sostanzialmente in tutte le sue applicazioni si incontrano numerosi tipi di funzioni, che si presentano anche con caratteristiche molto diverse, e che vengono classificate seguendo diversi criteri.
+
+
+=== Classificazione puramente insiemistica ===
+Funzione iniettiva
+Funzione suriettiva
+Funzione biunivoca
+Endofunzione
+Permutazione
+Involuzione
+
+
+=== Classificazione delle funzioni nell'ambito della teoria della calcolabilità ===
+
+Funzione ricorsiva primitiva
+Funzione calcolabile
+Funzione ricorsiva (secondo la Tesi di Church-Turing, funzioni ricorsive e funzioni calcolabili sono la stessa cosa)
+Funzione ricorsiva totale
+Funzione enumerativa
+
+
+=== Classificazione delle funzioni nell'ambito dell'analisi matematica ===
+
+Funzione algebrica e funzione trascendente
+Funzione analitica
+Funzione antiolomorfa
+Funzione armonica
+Funzione cilindrica
+Funzione concava
+Funzione continua
+Funzione convessa
+Funzione crescente, funzione decrescente e funzione monotona
+Funzione differenziabile
+Funzione integrabile
+Funzione integrale
+Funzione lipschitziana
+Funzione liscia
+Funzione meromorfa
+Funzione olomorfa
+Funzione pari e funzione dispari
+Funzione polinomiale
+Funzione razionale fratta
+
+
+=== Alcune funzioni notevoli ===
+Funzione Beta, funzione Gamma, funzione zeta di Riemann
+Funzioni trigonometriche: seno, coseno, tangente, cotangente, secante, cosecante
+Funzione identità
+Funzione esponenziale, logaritmo
+
+
+=== Funzioni di interesse probabilistico e statistico ===
+Funzione di ripartizione
+Funzione di probabilità
+Funzione di densità
+Funzione generatrice dei momenti
+Funzione caratteristica
+
+
+== Operazioni elementari su funzioni di variabile reale a valori reali ==
+Data una funzione 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ di variabile reale a valori reali e una costante 
+  
+    
+      
+        c
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle c\in \mathbb {R} }
+  
+, su di essa sono applicabili le operazioni aritmetiche elementari ovvero somma, sottrazione, moltiplicazione, divisione, elevamento a potenza, radice n-esima ovvero:
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        c
+        ,
+      
+    
+    {\displaystyle z(x)=f(x)+c,}
+  
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        −
+        c
+        ,
+      
+    
+    {\displaystyle z(x)=f(x)-c,}
+  
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        ⋅
+        c
+        ,
+      
+    
+    {\displaystyle z(x)=f(x)\cdot c,}
+  
+
+se 
+  
+    
+      
+        c
+        ≠
+        0
+      
+    
+    {\displaystyle c\neq 0}
+  
+ si ha anche
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        
+          
+            
+              f
+              (
+              x
+              )
+            
+            c
+          
+        
+        ,
+      
+    
+    {\displaystyle z(x)={\frac {f(x)}{c}},}
+  
+
+se 
+  
+    
+      
+        f
+        (
+        x
+        )
+        >
+        0
+      
+    
+    {\displaystyle f(x)>0}
+  
+ si ha anche
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        
+          )
+          
+            c
+          
+        
+        ,
+      
+    
+    {\displaystyle z(x)=f(x)^{c},}
+  
+
+e se 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ intero maggiore di 1, e se 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ pari si deve avere anche 
+  
+    
+      
+        f
+        (
+        x
+        )
+        ≥
+        0
+      
+    
+    {\displaystyle f(x)\geq 0}
+  
+, si ha anche
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        
+          
+            
+              f
+              (
+              x
+              )
+            
+            
+              c
+            
+          
+        
+        .
+      
+    
+    {\displaystyle z(x)={\sqrt[{c}]{f(x)}}.}
+  
+
+Date due funzioni 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ e 
+  
+    
+      
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle g(x)}
+  
+ di variabile reale a valori reali sono applicabili le operazioni aritmetiche elementari di cui sopra ossia:
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        g
+        (
+        x
+        )
+        ,
+      
+    
+    {\displaystyle z(x)=f(x)+g(x),}
+  
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        −
+        g
+        (
+        x
+        )
+        ,
+      
+    
+    {\displaystyle z(x)=f(x)-g(x),}
+  
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        ⋅
+        g
+        (
+        x
+        )
+        ;
+      
+    
+    {\displaystyle z(x)=f(x)\cdot g(x);}
+  
+
+se 
+  
+    
+      
+        g
+        (
+        x
+        )
+        ≠
+        0
+      
+    
+    {\displaystyle g(x)\neq 0}
+  
+ si ha anche
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        
+          
+            
+              f
+              (
+              x
+              )
+            
+            
+              g
+              (
+              x
+              )
+            
+          
+        
+        ;
+      
+    
+    {\displaystyle z(x)={\frac {f(x)}{g(x)}};}
+  
+
+se 
+  
+    
+      
+        f
+        (
+        x
+        )
+        >
+        0
+      
+    
+    {\displaystyle f(x)>0}
+  
+ (o 
+  
+    
+      
+        f
+        (
+        x
+        )
+        ≥
+        0
+      
+    
+    {\displaystyle f(x)\geq 0}
+  
+ nel caso in cui 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        0
+        ∧
+        g
+        (
+        x
+        )
+        >
+        0
+      
+    
+    {\displaystyle f(x)=0\land g(x)>0}
+  
+) si ha anche
+
+  
+    
+      
+        z
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        
+          )
+          
+            g
+            (
+            x
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle z(x)=f(x)^{g(x)}.}
+  
+
+
+=== Composizione ===
+Date due funzioni 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ e 
+  
+    
+      
+        g
+        :
+        Y
+        →
+        Z
+      
+    
+    {\displaystyle g\colon Y\to Z}
+  
+ si può definire la loro composizione: questa è definita applicando prima 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ ad 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ e quindi applicando 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ al risultato 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+.
+Questa nuova funzione viene denotata con 
+  
+    
+      
+        g
+        ∘
+        f
+      
+    
+    {\displaystyle g\circ f}
+  
+ (si legge: "g composta f" oppure "g composto f"). Riconducendoci alla notazione tradizionale con le due notazioni il risultato della precedente composizione applicato all'elemento 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ del dominio si può scrivere
+
+  
+    
+      
+        (
+        g
+        ∘
+        f
+        )
+        (
+        x
+        )
+        =
+        g
+        [
+        f
+        (
+        x
+        )
+        ]
+        .
+      
+    
+    {\displaystyle (g\circ f)(x)=g[f(x)].}
+  
+
+
+=== Traslazione ===
+Data una funzione 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ di variabile reale a valori reali e una costante 
+  
+    
+      
+        c
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle c\in \mathbb {R} }
+  
+:
+
+la sua traslata rispetto all'asse 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ verso destra è 
+  
+    
+      
+        f
+        (
+        x
+        −
+        c
+        )
+        ;
+      
+    
+    {\displaystyle f(x-c);}
+  
+
+la sua traslata rispetto all'asse 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ verso sinistra è 
+  
+    
+      
+        f
+        (
+        x
+        +
+        c
+        )
+        ;
+      
+    
+    {\displaystyle f(x+c);}
+  
+
+la sua traslata rispetto all'asse 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ verso l'alto è 
+  
+    
+      
+        f
+        (
+        x
+        )
+        +
+        c
+        ;
+      
+    
+    {\displaystyle f(x)+c;}
+  
+
+la sua traslata rispetto all'asse 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ verso il basso è 
+  
+    
+      
+        f
+        (
+        x
+        )
+        −
+        c
+        .
+      
+    
+    {\displaystyle f(x)-c.}
+  
+
+
+=== Simmetria ===
+Data una funzione 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ di variabile reale a valori reali:
+
+la simmetrica di 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ rispetto all'asse 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ è 
+  
+    
+      
+        f
+        (
+        −
+        x
+        )
+        ;
+      
+    
+    {\displaystyle f(-x);}
+  
+
+la simmetrica di 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ rispetto all'asse 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ è 
+  
+    
+      
+        −
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle -f(x).}
+  
+
+
+== Note ==
+
+
+== Bibliografia ==
+ Andrea Bacciotti e Fulvio Ricci, Analisi matematica, Liguori Editore, 1995, ISBN 9788820723972.
+ Carlo Domenico Pagani e Sandro Salsa, Analisi matematica, volume 1, Masson, 1995, ISBN 88-214-0079-4.
+ Michiel Bertsch, Roberta Dal Passo e Lorenzo Giacomelli, Analisi matematica, McGraw-Hill, 2011, ISBN 978-88-386-6281-2.
+Nicola Fusco, Paolo Marcellini, Carlo Sbordone, Lezioni di Analisi Matematica Due, Zanichelli, 2020, ISBN 9788808520203
+Paolo Marcellini, Carlo Sbordone, Analisi Matematica Uno, Liguori Editore, 1998, ISBN 9788820728199
+Enrico Giusti, Analisi Matematica 1, Boringhieri, 2002, ISBN 9788833956848
+
+
+== Voci correlate ==
+Dominio e codominio
+Immagine (matematica)
+Grafico di una funzione
+Funzione di variabile reale
+Funzione definita a tratti
+Parte positiva e parte negativa di una funzione
+Studio di funzione
+Storia della nozione di funzione matematica
+Analisi matematica, integrale, derivata
+Funzione speciale
+Funzione periodica
+Funzionale
+Funzione parziale
+Applicazione parziale
+Serie di funzioni
+Serie formale di potenze
+Equazione differenziale
+Equazione funzionale
+Teoria delle categorie
+
+
+== Altri progetti ==
+
+ Wikizionario contiene il lemma di dizionario «funzione»
+ Wikiversità contiene risorse sulla funzione
+ Wikimedia Commons contiene immagini o altri file sulla funzione
+
+
+== Collegamenti esterni ==
+
+ funzione, su Treccani.it – Enciclopedie on line, Istituto dell'Enciclopedia Italiana. 
+ Leonida Tonelli e Salvatore Pincherle, FUNZIONE, in Enciclopedia Italiana, Istituto dell'Enciclopedia Italiana, 1932. 
+ Funzione, su Vocabolario Treccani, Thesaurus, Istituto dell'Enciclopedia Italiana, 2018. 
+ funzione (matematica), su sapere.it, De Agostini. 
+ Luca Dell'Aglio, Funzioni, in Enciclopedia dei ragazzi, Istituto dell'Enciclopedia Italiana, 2004-2006. 
+ Funzione, in Enciclopedia della Matematica, Istituto dell'Enciclopedia Italiana, 2013. 
+ Samantha Leorato, Funzione matematica, in Dizionario di Economia e Finanza, Istituto dell'Enciclopedia Italiana, 2012. 
+(EN) function, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Eric W. Weisstein, Function, su MathWorld, Wolfram Research. 
+(EN) Function, su Encyclopaedia of Mathematics, Springer e European Mathematical Society.

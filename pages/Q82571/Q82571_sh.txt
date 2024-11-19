@@ -1,0 +1,154 @@
+Linearna algebra (lat: linealis, pripada liniji), je matematička disciplina koja se bavi vektorima i matricama i uopšte vektorskim prostorom i linearnim transformacijama. Za razliku od drugih dijelova matematike, u kojima se pojavljuju često novi i neriješeni problemi, u linearnoj algebri to nije česta pojava. Njena vrijednost leži u njenoj primjenjljivosti, počev od matematičke fizike, apstraktne algebre i primjene u ekonomiji, programiranju i računarstvu, itd.
+Skup tačaka sa koordinatama koje zadovoljavaju linearne jednačine formiraju hiperravan u n-dimenzionalnom prostoru. Uslovi pod kojima skup od n hiperravni seku u jednoj tački je ono što linearna algebra proučava. Takva istraga je u početku motivisana sistemom linearnih jednačina koje sadrže nekoliko nepoznatih. Takve jednačine su predstavljene pomoću matrica i vektora.
+Linearna algebra je centar sušte i primenjene matematike. Apstraktna algebra nastaje opuštanjem aksioma vektorskog prostora. Funkcionalna analiza proučava beskonačno — dimenzionalnu verzija teorije vektorskih prostora. U kombinaciji sa računom, linearna algebra olakšava rešavanje linearnih sistema diferencijalnih jednačina.
+Za razliku od drugih delova matematike, u kojima se pojavljuju često novi i nerešeni problemi, u linearnoj algebri to nije česta pojava. Njena vrednost leži u njenoj primenljivosti, počev od inženjerstva, analitičke geometrije, matematičke fizike, apstraktne algebre i primene u ekonomiji, programiranju i računarstvu.
+
+
+== Istorija ==
+Studije linearne algebre su inicijalno nastale iz izučavanja determinanti, koje su korištene za rešavanje sistema linearnih jednačina. Determinante je koristio Lajbnic 1693. godine, i naknadno je Gabrijel Kramer izveo Kramerovo pravilo za rešavanje linearnih sistema 1750. Kasnije je Gaus dalje razvio teoriju rešavanja linearnih sistema koristeći Gausovu eliminaciju, koja je inicijalno bila navedena kao napredak u geodeziji.
+Studiranje algebre matrica je prvobitno nastalo u Engleskoj sredinom 1800-tih. Godine 1844 Herman Grosman je objavio „teoriju proširenja” koja je obuhvatala osnove toga što se danas naziva linearnom algebrom. Godine 1848, Džejms Džozef Silvester je uveo termin matrica, što je latinska reč za „matericu”. Dok je izučavao kompozicije linearnih transformacija, Artur Kejli je definisao množenje matrica i nalaženje inverznih matrica. On je koristio pojedinačna slova da označi matrice, te je stoga tretirao matrice kao agregatne objekte. On je isto tako uočio vezu između matrica i determinanti, i o tome je pisao: „Moglo bi se reći puno toga o ovoj teoriji matrica koja bi, kako meni izgleda, trebalo da prethodi teoriji determinanti”.
+Godine 1882, Husejin Tevfik Paša je napisao knjigu s naslovom „Linearna algebra”. Prvu modernu i precizniju definiciju vektora je uveo Peano 1888. godine. Do 1900, teorija linearnih transformacija konačno dimenzionalnog vektorskog prostora se pojavila. Linearna algebra je poprimila svoju modernu formu u prvoj polovini dvadesetog veka, kad su mnoge ideje i metodi ranijih vekova bili generalizovani kao apstraktna algebra. Upotreba matrica u kvantnoj mehanici, specijalnoj relativnosti, i statistici pomogla je širenju predmeta linearne algebre izvan čiste matematike. Razvoj računara je doveo do znatnijeg istraživanja efikasnih algoritama za Gaousovu eliminaciju i dekompoziciju matrica, i linearna algebra je postala esencijalno oruđe za modelovanje i simulacije.
+Poreklo znatnog broja tih ideja je diskutovano u člancima o determinantama i Gausovoj eliminaciji.
+
+
+=== Obrazovna istorija ===
+Linearna algebra se prvi put pojavila u američkim udžbenicima tokom 1940-tih. Nakon rada Studijske grupe matematičkih škola, u obrazovne programe 12. razreda srednjih škola u SAD je tokom 1960-tih uvedena „matrička algebra, koja je ranije predavana u koledžima”. U Francuskoj su tokom 1960-tih uvedena predavanja linearne algebre u vidu vektorskog prostora konačnih dimenzija u prvoj godini srednje škole. To je dovelo do reakcije tokom 1980.tih godina, koja je dovela do uklanjanja linearne algebre iz nastavnog plana i programa. Godine 1993, američka grupa za nastavni program linearne algebre preporučila da se fakultetski kursevi linearne algebre predaju u vidu aplikaciono bazirane „matrične orijentacije” umesto teoretske orijentacije. Pregledi nastave linearne algebre preporučuju stavljanje naglaska na vizualizaciju i geometrijsku interpretaciju teoretskih ideja, i uvrštavanje krunskog dragulja linearne algebre, dekompozicije singularne vrednosti (SVD), pošto ona nalazi primenu u veoma velikom broju disciplina. Da bi se poboljšao asortiman primena u 21. veku, kao što upotrebe u oblastima analize podataka i analize nesigurnosti, linearna algebra može da bude bazirana na SVD umesto na Gausovoj eliminaciji.
+
+
+== Opseg izučavanja ==
+
+
+=== Vektorski prostori ===
+Glavne strukture linearne algebre su vektorski prostori. Vektorski prostor preko polja F (obično polja realnih brojeva) je skup V na kome su primenljive dve binarne operacije koje zadovoljavaju sledeće aksiome. Elementi skupa V se nazivaju vektorima, a elementi F se nazivaju skalarima. Prva operacija, vektorska adicija, uzima dva vektora v i w i proizvodi treći vektor v + w. Druga operacija, skalarno množenje, uzima bilo koji skalar a i bilo koji vektor v i formira novi vektor av. Operacije sabiranja i množenja u vektorskom prostoru moraju da zadovolje sledeće aksiome. Na donjoj listi, neka su u, v i w arbitrarni vektori u V, a a i b skalari u F.
+
+Prva četiri aksioma formulišu V kao abelovu grupu u kontekstu vektorske adicije. Elementi vektorskog prostora mogu da budu različite prirode; na primer, oni mogu da budu sekvence, funkcije, polinomi ili matrice. Linearna algebra se bavi svojstvima koja su zajednička za sve vektorske prostore.
+
+
+=== Linearne transformacije ===
+
+Slično teorijama drugih algebarskih struktura, linearna algebra studira mapiranja između vektorskog prostora koja prezerviraju vektorsko prostorne strukture. Ako su data dva vektorska prostora V i W na polju F, linearna transformacija (koja se isto tako naziva linearna mapa, linearno mapiranje ili linearni operator) je mapiranje
+
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\to W}
+  
+
+koje je kompatibilno sa adicijom i skalarnim množenjem:
+
+  
+    
+      
+        T
+        (
+        u
+        +
+        v
+        )
+        =
+        T
+        (
+        u
+        )
+        +
+        T
+        (
+        v
+        )
+        ,
+        
+        T
+        (
+        a
+        v
+        )
+        =
+        a
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(u+v)=T(u)+T(v),\quad T(av)=aT(v)}
+  
+
+za bilo koje vektore u,v ∈ V i skalare a ∈ F.
+Dodatno za vektore u, v ∈ V i skalare a, b ∈ F:
+
+  
+    
+      
+        
+        T
+        (
+        a
+        u
+        +
+        b
+        v
+        )
+        =
+        T
+        (
+        a
+        u
+        )
+        +
+        T
+        (
+        b
+        v
+        )
+        =
+        a
+        T
+        (
+        u
+        )
+        +
+        b
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle \quad T(au+bv)=T(au)+T(bv)=aT(u)+bT(v)}
+  
+
+Kad postoji bijekciono linearno mapiranje između dva vektorska prostora (drugim rečima, kad je svaki vektor iz drugog prostora asociran sa tačno jednim iz prvog), može se reći da su dva prostora izomorfna. Pošto izomorfizam prezervira linearnu strukturu, dva izomorfna vektorska prostora su „esencijalno ista” sa tačke gledišta linearne algebre. Jedno esencijalno pitanje u linearnoj algebri je da li je mapiranje izomorfno ili nije, i odgovor na to pitanje se može naći proveravanjem da je vrednost determinante različita od nule. Ako mapiranje nije izoformno, linearna algebra ima interes u nalaženju njegovog opsega (ili slike) i stup elemenata koji se mapiraju u nulu, zvani jezgro mapiranja.
+Linearne transformacije imaju geometrijski značaj. Na primer, 2 × 2 realne matrice predstavljaju standardna planarna mapiranja koja prezerviraju koordinatni početak.
+
+
+== Napomene ==
+
+
+== Reference ==
+
+
+== Literatura ==
+
+
+== Spoljašnje veze ==
+
+International Linear Algebra SocietyArhivirano 2014-01-03 na Wayback Machine-u
+Hazewinkel Michiel, ur. (2001). „Linear algebra”. Encyclopaedia of Mathematics. Springer. ISBN 978-1-55608-010-4. 
+Linear Algebra on MathWorld.
+Matrix and Linear Algebra Terms on Earliest Known Uses of Some of the Words of Mathematics
+Earliest Uses of Symbols for Matrices and Vectors on Earliest Uses of Various Mathematical Symbols
+
+
+=== Onlajn knjige ===
+Beezer, Rob, A First Course in Linear Algebra
+Connell, Edwin H., Elements of Abstract and Linear Algebra
+Hefferon, Jim, Linear Algebra Arhivirano 2014-03-01 na Wayback Machine-u
+Matthews, Keith, Elementary Linear Algebra
+Treil, Sergei, Linear Algebra Done Wrong

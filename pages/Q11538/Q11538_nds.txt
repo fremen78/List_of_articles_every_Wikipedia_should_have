@@ -1,0 +1,602 @@
+In de Mathematik is en Bewies de formal korrekte Bewies, dat ut en Koppel vun Utsagen noch een annere Utsaag folgt.
+Dat gifft dree wichtige Methoden (blangen annern), in de Mathematik wat to bewiesen:
+
+de direkte Bewies
+de indirekte Bewies (de Bewies dör Daalsneren)
+de (vullständige) Indukschoon
+
+
+== De direkte Bewies ==
+Bi den direkten Bewies warrt wiest, dat de Utsaag ut annere Utsagen (de al bewiesen sünd) folgt.
+'n poor eenfache Bispelen:
+
+
+=== Satz 1 ===
+Utsaag: 
+  
+    
+      
+        S
+        (
+        n
+        )
+        :=
+        1
+        +
+        2
+        +
+        3
+        +
+        .
+        .
+        .
+        +
+        n
+        =
+        n
+        ⋅
+        (
+        n
+        +
+        1
+        )
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle S(n):=1+2+3+...+n=n\cdot (n+1)/2}
+  
+
+Bewies: Wi schrievt de Summ twee Maal op un treckt striepwies tosamen:
+
+         S(n) =   1   +   2   + ... + (n-1) +   n
+         S(n) =   n   + (n-1) + ... +   2   +   1
+  -------------------------------------------------
+  S(n) + S(n) = (n+1) + (n+1) + ... + (n+1) + (n+1)
+
+Dat heet
+
+  
+    
+      
+        2
+        ⋅
+        S
+        (
+        n
+        )
+        =
+        n
+        ⋅
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle 2\cdot S(n)=n\cdot (n+1)}
+  
+.
+Nu deelt wi op beiden Sieden dör 2 un hebbt uns Utsaag bewiesen.
+To dissen Bewies gifft dat 'n Anekdoot: Een Dag harr Carl Friedrich Gauß sien Mathematiklehrer keen Lust to ünnerrichten. He geev de Schölers de Opgaav, de Tallen vun 1 bet 100 tosamentotrecken. He harr sik dat jüst kommodig maakt un anfangen, dat Daagblatt to lesen, dor vertell de söven Johr ole Gauß, dat he al fardig weer. Gauß harr dat op disse Oort utrekent.
+
+
+=== Satz 2 ===
+Utsaag: Dat Quadrat vun elk evene, natürliche Tall n is ok even.
+Bewies:
+Laat n 'n evene, natürliche Tall ween. Dann lett sik n as 
+  
+    
+      
+        n
+        =
+        2
+        k
+      
+    
+    {\displaystyle n=2k}
+  
+ opschrieven, wonehm k en natürliche Tall is. Denn folgt:
+
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+        =
+        (
+        2
+        k
+        
+          )
+          
+            2
+          
+        
+        =
+        (
+        2
+        k
+        )
+        ⋅
+        (
+        2
+        k
+        )
+        =
+        4
+        ⋅
+        
+          k
+          
+            2
+          
+        
+        =
+        2
+        ⋅
+        (
+        2
+        ⋅
+        
+          k
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle n^{2}=(2k)^{2}=(2k)\cdot (2k)=4\cdot k^{2}=2\cdot (2\cdot k^{2})}
+  
+.
+
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n^{2}}
+  
+ is denn dat Dubbelde vun de natürliche Tall, de dor in Klemmen steiht. Un dat heet, dat se sülvst ok even is.
+
+
+=== Satz 3 ===
+Utsaag: Dat Quadrat vun 'n unevene natürliche Tall n is ok uneven.
+Bewies:
+Laat n 'n unevene natürliche Tall ween. Dann lett sik n opschreven as 
+  
+    
+      
+        n
+        =
+        2
+        k
+        +
+        1
+      
+    
+    {\displaystyle n=2k+1}
+  
+, wonehm k 'n natürliche Tall oder Null is. Ut de 1. binoomsche Formel folgt:
+
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+        =
+        (
+        2
+        k
+        +
+        1
+        
+          )
+          
+            2
+          
+        
+        =
+        4
+        
+          k
+          
+            2
+          
+        
+        +
+        4
+        k
+        +
+        1
+        =
+        2
+        ⋅
+        (
+        2
+        
+          k
+          
+            2
+          
+        
+        +
+        2
+        k
+        )
+        +
+        1
+      
+    
+    {\displaystyle n^{2}=(2k+1)^{2}=4k^{2}+4k+1=2\cdot (2k^{2}+2k)+1}
+  
+.
+Dat heet, dat 
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n^{2}}
+  
+ uneven is.
+
+
+== De indirekte Bewies (Bewies dör Daalsneren) ==
+Bi den indirekten Bewies wiest een, dat een sik daalsneert, wenn de Utsaag, de en bewiesen will, verkehrt weer. Op latiensch heet dat ok reductio ad absurdum, also dat dat absurd is, wat dor bi rutsuert. Un wenn de Utsaag denn nich verkehrt ween kann, denn kann se blots richtig ween. Wichtig dorbi (un dat versteiht sik nich jümmers vun sülven) is, dat dat bloots gellt, wenn in dat System, dat ünnersöcht warrt, en Utsaag nich toglieks wohr un verkehrt ween kann. 
+Dat klassische Bispeel för den indirekten Bewies is de Satz vun Euklid, de seggt, dat dat unendlich vele Primtallen gifft.
+Noch ’n poor Bispelen:
+
+
+=== Satz 4 ===
+Utsaag: De Wörtel vun 'n evene natürliche Quadrattall n is ok even.
+Bewies:
+Wi nehmt an, 
+  
+    
+      
+        
+          
+            n
+          
+        
+        =
+        k
+      
+    
+    {\displaystyle {\sqrt {n}}=k}
+  
+ weer uneven. Denn is na Satz 3 
+  
+    
+      
+        
+          k
+          
+            2
+          
+        
+        =
+        n
+      
+    
+    {\displaystyle k^{2}=n}
+  
+ ok uneven  – wi hebbt uns daalsneert.
+
+
+=== Satz 5 ===
+Utsaag: De Wörtel ut en unevene natürliche Quadrattall n is uneven.
+Bewies:
+Wi nehmt an, 
+  
+    
+      
+        
+          
+            n
+          
+        
+        =
+        k
+      
+    
+    {\displaystyle {\sqrt {n}}=k}
+  
+ weer even. Denn is na Satz 2 
+  
+    
+      
+        
+          k
+          
+            2
+          
+        
+        =
+        n
+      
+    
+    {\displaystyle k^{2}=n}
+  
+ ok even – wi hebbt uns daalsneert.
+
+
+=== Satz 6 ===
+Utsaag: De Tall 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ is irratschonal.
+Bewies: 
+Wi nehmt an, 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ weer ratschonal.
+Dann lett sik 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ as Bröök schrieven
+
+  
+    
+      
+        
+          
+            2
+          
+        
+        =
+        
+          
+            n
+            k
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}={\frac {n}{k}}}
+  
+,
+wonehm n un k natürliche Tallen un o. B. d. A. (Platt?) relativ prim sünd.
+Na dat Quadreren folgt:
+
+  
+    
+      
+        2
+        =
+        
+          
+            
+              n
+              
+                2
+              
+            
+            
+              k
+              
+                2
+              
+            
+          
+        
+        ⇔
+        
+          n
+          
+            2
+          
+        
+        =
+        2
+        
+          k
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2={\frac {n^{2}}{k^{2}}}\Leftrightarrow n^{2}=2k^{2}}
+  
+.
+Dat heet, 
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n^{2}}
+  
+ is 'n evene Tall.
+Wiel de Wörtel ut en evene Quadrattall ok even is (Satz 4), is n ok sülvst even. Dat heet, n/2 is en natürliche Tall.
+Nu buut wi dat üm:
+
+  
+    
+      
+        
+          k
+          
+            2
+          
+        
+        =
+        
+          
+            
+              n
+              
+                2
+              
+            
+            2
+          
+        
+        =
+        2
+        ⋅
+        
+          
+            (
+            
+              
+                n
+                2
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle k^{2}={\frac {n^{2}}{2}}=2\cdot \left({\frac {n}{2}}\right)^{2}}
+  
+.
+Dat wiest, dat 
+  
+    
+      
+        
+          k
+          
+            2
+          
+        
+      
+    
+    {\displaystyle k^{2}}
+  
+ un dormit ok k evene natürliche Tallen sünd.
+n un k sünd also even un hebbt beide den Deler 2. Dat heet, n un k sünd nich relativ prim – wi hebbt uns mit de Annahm daalsneert.
+Dat heet, dat is verkehrt antonehmen, dat 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ ratschonal is.
+
+
+== De vullstännige Indukschoon ==
+De Bewies dör vullständige Indukschoon warrt in de Mathematik geern bruukt üm Utsagen in de Form "För alle natürlichen Tallen n gellt..." to bewiesen. 
+
+Toeerst wiest een, dat de Utsaag för n=0 gellt un
+Denn wiest een, dat de Utsaag ok för n+1 gellt, wenn se al för n gellt. De vullständige Induschoon lett sik mit 'n Reeg vun Dominostenen verglieken. Een stellt de Steen so op, dat wenn een ümfallt, de Naver ok ümfallt (n → n+1) un een stött den eersten Steen üm (n=0).
+Een eenfach Bispill:
+
+
+=== Satz 7 ===
+Utsaag: A(n): 1 + 3 + ... + (2n+1) = (n+1)²
+Bewies:
+
+A(0): (2*0+1) = 1 = (0+1)², dat heet, de Utsaag is wohr.
+Wi nehmt an, de Utsaag gellt för jichtenseen n. För n+1 kriegt wi
+A(n+1): 1 + 3 + ... + (2n+1) + (2n+3) = ((n+1) + 1)².
+Wieldat de Utsaag för n gellt, folgt
+1 + 3 + ... + (2n+1) + (2n+3) = (n+1)² + (2n+3) = (n+2)² = ((n+1) + 1)²
+Dat heet, de Utsaag is bewiesen.
+Een bruukt nich jümmers mit n=0 antofangen; wenn een to'n Bispeel en Utsaag bewiesen will, de för alle 
+  
+    
+      
+        n
+        ≥
+        5
+      
+    
+    {\displaystyle n\geq 5}
+  
+ gellt(as in 
+  
+    
+      
+        
+          2
+          
+            n
+          
+        
+        >
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2^{n}>n^{2}}
+  
+), dann is dat beter, mit n=5 antofangen.

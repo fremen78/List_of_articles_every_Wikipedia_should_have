@@ -1,0 +1,40 @@
+A MIME (Multipurpose Internet Mail Extensions) internetes szabvány, ami eredetileg az SMTP-vel továbbított e-mailek formátumának jelzésére szolgált, de később átvette a HTTP és a SIP is. A MIME szabvány a következő hat RFC-ben van specifikálva: 2045, 2046, 2047, 4288, 4289 és 2077.
+Az SMTP és a HTTP protokoll üzenetei számos más internetes protokollhoz hasonlóan néhány típus: érték alakú fejlécből és egy törzsből állnak. A MIME szabvány az encoded-word (kódolt szó) jelölés révén lehetővé teszi nem ASCII tartalom használatát a fejlécekben, illetve néhány új fejléctípust definiál, amelyek meghatározzák, hogyan kell a törzset feldolgozni.
+
+
+== MIME fejlécek ==
+MIME-Version: elméletileg a használt MIME szabvány verziószámát jelzi. A gyakorlatban, noha a szabványon számos kisebb módosítást végeztek, a verziót sosem növelték, így a fejléc értéke mindig 1.0.
+Content-Description: az üzenet tartalmának emberi nyelven történő leírása. A gyakorlatban ezt a fejlécet ritkán használják.
+Content-ID: az elküldött tartalom egyedi azonosítója.
+Content-Type: a legfontosabb MIME fejléc, amely a tartalom (az üzenet törzse) típusát adja meg egy típus/altípus alakú kóddal. Ebben a fejlécben adható meg a szöveg kódolása is.
+Content-Disposition: ezzel a fejléccel egy fájlnevet lehet társítani az üzenethez. Ez alapján tudnak például a böngészők értelmes nevet ajánlani a letöltendő fájlnak akkor is, ha az URL-ben csak egy azonosítószám szerepel.
+Content-Transfer-Encoding: ez a fejléc jelzi, hogy a bináris tartalom át lett-e kódolva szövegessé, és ha igen, akkor hogyan.
+
+
+== Encoded-word ==
+Az encoded-word jelölés lehetővé teszi a fejlécekben nem ASCII értékek használatát; ennek révén lehet például ékezetes betűket használni egy levél tárgyában. A jelölés =?karakterkészlet?kódolás?érték?= alakú: a karakterkészlet határozza meg, hogyan kell a nem ASCII szöveget bináris kóddá alakítani, a kódolás pedig azt, hogyan kell ezt a kódot olyan ASCII karakterekkel reprezentálni, amelyek megengedettek a fejlécben. A szokásos, IANA által nyilvántartott karakterkészletek használhatóak (például ISO-8859-1 vagy UTF-8), a kódolás pedig base64 vagy quoted-printable-szerű lehet; előbbit B, utóbbit Q jelzi. A Q által jelzett kódolás azért tér el a normális quoted-printable-től, mert bizonyos karakterek nem használhatóak egy fejlécben illetve egy encoded-word jelölésben (így például a ?= karaktersorozat nem fordulhat elő, mert az az encoded-word jelölés végét jelezné).
+Például egy "Árvíztűrő tükörfúrógép" tárgyú levél "Subject:" fejléce UTF-8 kódolással így néz ki:
+
+Subject: =?utf-8?Q?=C3=81rv=C3=ADzt=C5=B1r=C5=91_t=C3=BCk=C3=B6rf=C3=BAr=C3=B3g=C3=A9p?=
+
+
+== Tartalomtípusok ==
+Egy üzenet a sima szöveg mellett számos egyéb dolgot is tartalmazhat: nem ASCII karakterkészletű kódolt szöveget, HTML kódot, képet, hangot, videót stb. A Content-type fejléc jelzi, hogy a fogadónak a kapott bájtsorozatot ezek melyikeként kell értelmeznie.
+A fejléc egy típus/altípus alakú jelölést és szöveges típusok esetén opcionálisan egy karakterkódolást tartalmazhat. A típus jelzi a tartalom jellegét, ez általában a következők egyike: text (szöveg – ember által is olvasható szöveges formátum), image (kép), audio (hang), video vagy application (alkalmazás – általában egy specifikus szoftver által használt formátum). Lehetőség van több különböző típusú részből álló üzenet küldésére is a multipart (többrészes) tartalomtípussal.
+A MIME szabvány nyitott, bárki regisztrálhat új tartalomtípust. A csak egy bizonyos cég által használt formátumok típusai általában application/vnd.gyártó-program alakúak (a vnd a vendor (forgalmazó) szóból van). Ha az altípus neve elején x- van, az azt jelenti, hogy nem szabványos típus – az ilyen típust nem lehet regisztrálni az IANA-nál.
+Néhány gyakran használt tartalomtípus:
+
+
+== Lásd még ==
+S/MIME
+8BITMIME
+
+
+== Megjegyzések ==
+
+
+== Külső hivatkozások ==
+karakterkészletek listája (angol)
+tartalomtípusok listája (angol)
+MIM áttekintés példákkal (angol)
+hogyan kell beállítani a szervert, hogy helyes MIME típusokat küldjön (angol) Archiválva 2008. október 14-i dátummal a Wayback Machine-ben

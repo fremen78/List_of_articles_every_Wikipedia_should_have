@@ -1,0 +1,80 @@
+Numerieke wiskunde is een deelgebied van de wiskunde waarin algoritmes voor problemen in de continue wiskunde of wiskundige analyse bestudeerd worden (in tegenstelling tot discrete wiskunde). Dit betekent dat het vooral gaat over reële of complexe variabelen, de oplossing van differentiaalvergelijkingen en andere vergelijkbare problemen die optreden in de natuurkunde en techniek.
+
+
+== Algemeen ==
+Sommige problemen in de continue wiskunde kunnen exact opgelost worden met behulp van een algoritme. Zulke algoritmen worden directe methoden genoemd. Een voorbeeld van een directe methode is Gauss-eliminatie voor het oplossen van een systeem lineaire vergelijkingen en de simplexmethode voor het oplossen van lineaire programmerings-problemen.
+Toch zijn voor de meeste problemen geen directe methoden beschikbaar. Eén mogelijkheid is om het continue probleem te vervangen door een discrete variant. Dit proces wordt discretisatie genoemd. Een andere mogelijkheid is het gebruik van een iteratieve methode. Bij deze methode wordt uitgegaan van een schatting en vervolgens vindt men benaderingen die hopelijk naar de oplossing convergeren. Zelfs als discrete methoden voorhanden zijn, wordt vaak gekozen voor iteratieve methoden, omdat die efficiënter zijn.
+
+
+=== Ontstaan en propageren van fouten ===
+De studie van fouten vormt een belangrijk deel van de numerieke wiskunde. Fouten ontstaan in iteratieve methoden omdat de benaderde oplossingen afwijken van de exacte oplossing. Discretisatie brengt ook fouten met zich mee, omdat de oplossing van een gediscretiseerd probleem in het algemeen niet overeenkomt met de oplossing van het continue probleem. Zelfs als een directe methode wordt gebruikt kunnen fouten optreden, namelijk afrondfouten.
+Als er eenmaal een fout in het algoritme is opgetreden, propageert deze. Dit leidt tot het begrip numerieke stabiliteit: een algoritme is numeriek stabiel als een fout (ontstaan in het algoritme) niet te hard groeit gedurende de berekening. Dit is alleen mogelijk als het probleem bepaalde eigenschappen bezit. Dit staat bekend als de conditionering van het probleem. Een goed geconditioneerd probleem heeft de eigenschap dat de gegenereerde oplossing niet veel verandert als de inputdata niet veel verandert. Dit in tegenstelling tot een slecht geconditioneerd probleem, waarin de oplossing snel verandert bij een kleine wijziging in de inputdata.
+Toch wil dit niet zeggen dat elk algoritme dat wordt toegepast op een goed geconditioneerd probleem numeriek stabiel is. De kunst van de numerieke wiskunde is het vinden van een stabiel algoritme voor het oplossen van goed geconditioneerde wiskundige problemen.
+
+
+=== Toepassingen ===
+De algoritmes in de numerieke wiskunde worden toegepast bij veel problemen in de wetenschap en techniek. Voorbeelden zijn het ontwerp van bouwwerken als bruggen en vliegtuigen, weersvoorspellingen, klimaatmodellen, de analyse van moleculen en het vinden van oliereservoirs en berekeningen in de elektrotechniek. Bijna alle supercomputers voeren constant numerieke algoritmes uit.
+Efficiëntie van de berekeningen speelt dan ook een zeer belangrijke rol in de numerieke wiskunde. Vaak speelt de theoretische onderbouwing van de modellen een ondergeschikte rol bij de keuze voor een bepaald model. In de numerieke wiskunde worden empirische resultaten van modellen gebruikt om nieuwe modellen te vinden en problemen te analyseren. Daarnaast wordt uiteraard ook gebruikgemaakt van wiskundige axioma's, stellingen en bewijzen.
+
+
+== Onderzoeksgebieden ==
+De numerieke wiskunde is verdeeld in een aantal disciplines.
+
+
+=== Berekenen van functiewaarden ===
+Een van de eenvoudigste problemen is de evaluatie van de functie in een gegeven punt. Echter, zelfs het evalueren van een polynoom is niet triviaal: het Hornerschema is vaak efficiënter dan de meest voor de hand liggende methode. In het algemeen is het belangrijk om afrondingsfouten te schatten en onder controle te houden.
+
+
+=== Interpolatie, extrapolatie en regressierekening ===
+Interpolatie lost het volgende probleem op: gegeven de waarde van een of andere onbekende functie in een aantal punten, welke waarde heeft die functie in een ander punt tussen de gegeven punten? De eenvoudigste methode is lineaire interpolatie, waarin wordt aangenomen dat de onbekende functie lineair is tussen elk paar opeenvolgende punten. Dit kan gegeneraliseerd worden tot interpolatie met polynomen, hetgeen nauwkeuriger resultaten geeft. Zo heeft men bijvoorbeeld de interpolerende veeltermen van Lagrange, de voor- en achterwaarts interpolerende veeltermen van Newton en Gauss en de interpolatiemethodes van Neville, Stirling en Bessel.
+Extrapolatie lijkt erg op interpolatie, behalve dat we nu de waarde van de onbekende functie willen weten in een punt buiten de gegeven punten.
+Regressierekening is ook soortgelijk, maar hierbij wordt ervan uitgegaan dat de gegevens niet exact zijn. Gegeven een aantal punten en een meting van een functie in deze punten (met een fout) willen we de onbekende functie bepalen. De kleinste-kwadratenmethode is een populaire methode om dit te bereiken.
+
+
+=== Oplossing van vergelijkingen ===
+Een ander fundamenteel probleem is het berekenen van een oplossing voor een gegeven vergelijking. Vaak wordt hierbij een onderscheid gemaakt tussen twee gevallen, afhankelijk van of de vergelijking lineair is of niet.
+Er is veel onderzoek gedaan naar de ontwikkeling van methoden om systemen van lineaire vergelijkingen op te lossen. Bekende methoden zijn Gauss-eliminatie en LU-decompositie. Er zijn ook speciale methoden voor zeer grote systemen.
+Voor niet-lineaire vergelijkingen zijn andere algoritmen beschikbaar. Als de functie differentieerbaar is en de afgeleide bekend, wordt de Newtonmethode veel toegepast. Andere methoden zijn Regula Falsi, de halveringsmethode en de Ridders-methode. Linearisatie is een andere techniek voor het oplossing van niet-lineaire vergelijkingen. Voor het bepalen van de nulpunten van reële veeltermen is de methode van Müller geschikt, ook wanneer de nulpunten complex zijn.
+
+
+=== Eigenwaarden en eigenvectoren van een matrix ===
+Van een hermitische matrix kan men de eigenwaarden en -vectoren bepalen met het Jacobi-eigenwaardealgoritme. Ze geeft zowel de eigenwaarden als de orthonormale eigenvectoren. De methode bepaalt iteratief door successieve rotaties een diagonaalmatrix. De methode van Givens bepaalt geen diagonaalmatrix, maar een tridiagonale matrix. Dat gaat rechtstreeks in plaats van iteratief, en daarom sneller, maar het bepalen van de eigenvectoren is moeilijker. De methode van Householder werkt niet met rotaties, maar met hermitische transformaties. Dat gaat nog sneller.
+Als de matrix niet hermitisch is, moet hij naar de Hessenberg-vorm herleid worden. Hier schijnt het dubbel-QR-algoritme van Francis efficiënter te zijn dan andere methoden.
+
+
+=== Optimalisatie ===
+In optimaliseringsproblemen wordt gezocht naar een punt waarin een gegeven functie haar maximum of minimum aanneemt. Vaak moet dit punt ook aan zekere voorwaarden voldoen.
+Het gebied van optimalisatie wordt verder onderverdeeld in diverse deelgebieden, afhankelijk van de vorm van de doelstellingsfunctie en de voorwaarden. Zo gaat lineair programmeren over het geval dat zowel de doelstellingsfunctie als de voorwaarden lineair zijn. Een beroemde methode voor het oplossen van dergelijke problemen is de simplexmethode.
+
+
+=== Evaluatie van integralen ===
+Numerieke integratie vraagt om de waarde van een bepaalde integraal.
+Er zijn diverse numerieke methoden die gebruikt kunnen worden, al naargelang de aard van de integraal. Voorbeelden zijn de formules van Newton-Cotes, zoals de eenvoudige trapeziumregel en de betere Regel van Simpson. Nog beter maar ingewikkelder is de kwadratuurformule van Gauss.
+Een heel belangrijke integraal is de integraal van de Fourier-transformatie. Hiervoor bestaat een bijzondere methode: de Fast Fourier Transform of FFT.
+
+
+=== Differentiaalvergelijkingen ===
+In de numerieke wiskunde houdt men zich ook bezig met het benaderen van de oplossing van differentiaalvergelijkingen, zowel gewone differentiaalvergelijkingen als partiële differentiaalvergelijkingen.
+Voor gewone differentiaalvergelijkingen zijn er de Runge-Kuttamethode en de Predictor-Correctormethode van Milne.
+Partiële differentiaalvergelijkingen worden vaak opgelost door de vergelijking eerst te discretiseren. Dit kan gedaan worden middels de eindige-elementenmethode, de eindige-differentiemethode of (met name in de techniek) de eindige-volumemethode. De theoretische onderbouwing van deze methoden steunt op stellingen uit de functionaalanalyse.
+Na discretisatie komt het oplossen van de differentiaalvergelijking neer op het oplossen van een stelsel van algebraïsche vergelijkingen. Echter, het oplossen van deze vergelijkingen kan in veel gevallen niet worden gedaan met behulp van Gauss-eliminatie, omdat de matrix te groot is. Indien het stelsel vergelijkingen uit te veel onbekenden bestaat zal men een iteratieve oplossingsmethode moeten gebruiken. Veel gebruikte methoden zijn Multigrid, BIM, CG en verwante methodieken die zijn gebaseerd op een Krylov-deelruimte. Hoewel de matrix groot is, bestaat hij grotendeels uit nullen: het is een zogenaamde ijle matrix. De methoden maken daar nuttig gebruik van.
+
+
+== Geschiedenis ==
+De numerieke wiskunde heeft zijn oorsprong ver voordat de eerste computers werden uitgevonden. Veel beroemde wiskundigen uit het verleden hielden zich met numerieke wiskunde bezig. Veel belangrijke algoritmen zijn naar hen vernoemd, zoals de Newtonmethode, formule van Newton-Cotes, interpolatie van Isaac Newton, Gauss-eliminatie, kwadratuurformule van Gauss, interpolatie van Carl Friedrich Gauss en Formule van Euler-Maclaurin.
+Om de berekeningen met de hand uit te kunnen voeren, werden grote boeken geproduceerd met formules en tabellen met data zoals interpolatiepunten en functiecoëfficiënten. Door gebruik te maken van deze tabellen (vaak berekend tot 16 decimalen nauwkeurig) kon men waarden opzoeken en deze aan formules toevoegen. Zo bereikte men zeer goede numerieke schattingen van sommige functies. De functieberekeningen waren achterhaald toen de computer zijn intrede deed.
+De mechanische rekenmachine werd ontwikkeld voor berekening met de hand. Deze rekenmachines gingen in de jaren veertig over in computers en dit betekende een revolutie in de numerieke wiskunde. Er konden gecompliceerde berekeningen worden gedaan die vroeger te veel werk vereisten. Dit leidde tot vele nieuwe modellen, met name voor grootschalige problemen. 
+
+
+== Software ==
+Tegenwoordig worden de meeste modellen geïmplementeerd en uitgevoerd op een computer. Er is een aantal bekende computerprogramma's die gebruikt worden voor het uitvoeren van numerieke berekeningen:
+
+MATLAB is een breed toegepast programma voor het uitvoeren van numerieke berekeningen. Het heeft zijn eigen programmeertaal, waarin numerieke problemen geïmplementeerd kunnen worden.
+AIMMS is een modelleersysteem specifiek gericht op optimalisatieproblemen.
+Fortran
+GNU Octave is een gratis programma dat veel op MATLAB lijkt.
+IDL (programmeertaal)
+R is een softwarepakket en programmeertaal ontwikkeld voor statistiek en data-analysedoeleinden.
+Scilab.
+VisSim is een programma voor het modelleren en simuleren van (complexe) niet-lineaire dynamische systemen.
+Veel computeralgebrasystemen zoals Mathematica en Maple kunnen ook gebruikt worden om numerieke berekeningen te verrichten.

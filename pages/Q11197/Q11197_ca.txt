@@ -1,0 +1,1241 @@
+El logaritme d'un nombre en una certa base és l'exponent al qual cal elevar aquesta base per obtenir el nombre donat. Per exemple, el logaritme de 1000 en base 10 és 3, perquè 1000 és 10 elevat a 3: 1000 = 10 × 10 × 10 = 103. D'una manera més general, si x = by llavors y és el logaritme de x en base b, el qual s'escriu y = logb(x) o y = logb(by) i per tant log10(1000) = log10(103) = 3.
+Algunes formes de logaritme són especialment usades. El logaritme en base 10 (b = 10) s'anomena logaritme decimal i té moltes aplicacions en ciència i enginyeria. El logaritme en base 10 log10(x) es representa convencionalment com lg(x). D'altra banda, el logaritme natural o logaritme neperià té el nombre e (≈ 2,718) com a base i s'usa a bastament en matemàtiques pures, especialment en càlcul. Es recomana representar els logaritmes naturals loge(x) com ln(x). Finalment, el logaritme binari utilitza la base 2 (b = 2) i és molt important en informàtica.
+Els logaritmes foren introduïts per John Napier a principis del segle xvii com a mitjà per simplificar els càlculs. Foren adoptats ràpidament per navegants, científics, enginyers i altres per dur a terme còmputs de manera més fàcil utilitzant el regle de càlcul i la taula de logaritmes. Les tedioses passes que consisteixen en multiplicacions de molts dígits es poden reemplaçar per consultes de taules i simples sumes gràcies a la propietat fonamental del logaritme, segons la qual el logaritme d'un producte és la suma dels logaritmes dels factors:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y)\,}
+  
+
+La notació actual dels logaritmes prové de Leonhard Euler, qui els relacionà amb la funció exponencial al segle xviii.
+Els logaritmes apareixen profusament en moltes àrees de ciència i tecnologia. L'escala logarítmica és útil quan les dades cobreixen una àmplia gamma de valors: el logaritme les redueix a un rang més manejable. Per exemple, el decibel és una unitat logarítmica que quantifica el nivell de pressió sonora, i el pH és una mesura logarítmica de l'acidesa d'una dissolució química. Els logaritmes també descriuen intervals musicals i informen alguns models en psicofísica, entre molts altres casos.
+De la mateixa manera que el logaritme és la funció inversa de l'exponencial, el logaritme complex és la funció inversa de l'exponencial complexa. El logaritme discret n'és una altra variant que té aplicacions en criptografia de clau pública.
+
+
+== Motivació i definició ==
+La funció logarítmica és la inversa de l'operació de potenciació, la qual consisteix a elevar un nombre a una potència. Per exemple, el cub (potència tercera) de 2 és 8, ja que 8 és el producte de tres factors de 2:
+
+  
+    
+      
+        
+          2
+          
+            3
+          
+        
+        =
+        2
+        ×
+        2
+        ×
+        2
+        =
+        8
+        
+      
+    
+    {\displaystyle 2^{3}=2\times 2\times 2=8\,}
+  
+
+Per tant, d'aquí es desprèn que el logaritme de 8 respecte a la base 2 és 3: 
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        8
+        )
+        =
+        3
+        
+      
+    
+    {\displaystyle \log _{2}(8)=3\,}
+  
+
+
+=== Potenciació ===
+La potència tercera d'un nombre qualsevol b és el producte de tres factors de b. D'una manera més general, l'elevació d'un nombre b a l'n-èsima potència (on n és un nombre natural) s'aconsegueix multiplicant n factors de b. L'n-èsima potència de b s'escriu bn, de tal manera que:
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                b
+                ×
+                b
+                ×
+                ⋯
+                ×
+                b
+              
+              ⏟
+            
+          
+          
+            n
+            
+               factors
+            
+          
+        
+      
+    
+    {\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factors}}}}
+  
+
+La potenciació es pot estendre a by, on b és un nombre positiu i l'exponent y és un nombre real. Per exemple, b−1 és el recíproc de b, és a dir, 1/b (per a més detalls, entre els quals la fórmula bm + n = bm · bn, vegeu Potenciació).
+
+
+=== Definició ===
+El logaritme d'un nombre real positiu x respecte a una base b, un nombre real positiu que no sigui 1, és l'exponent al qual s'ha d'elevar b per donar com a resultat x. En altre paraules, el logaritme de x amb base b és la solució y de l'equació:
+
+  
+    
+      
+        
+          b
+          
+            y
+          
+        
+        =
+        x
+        
+      
+    
+    {\displaystyle b^{y}=x\,}
+  
+
+El logaritme es denota per "logb(x)" (pronunciat com "logaritme de x en base b" o "logaritme en base b de x"). A l'equació 
+  
+    
+      
+        y
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=\log _{b}(x)}
+  
+, el valor y és la resposta a la pregunta "a quina potència cal elevar b per obtenir x?". Aquesta qüestió també es pot plantejar (amb una resposta més extensa) per nombres complexos, la qual cosa es tracta a la secció Logaritme complex.
+
+
+=== Exemples ===
+Per exemple, log₂(16) = 4, ja que 24 = 2 ×2 × 2 × 2 = 16. Els logaritmes també poden ser negatius:
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        
+        
+          (
+          
+            
+              1
+              2
+            
+          
+          )
+        
+        =
+        −
+        1
+        
+      
+    
+    {\displaystyle \log _{2}\!\left({\frac {1}{2}}\right)=-1\,}
+  
+
+Ja que:
+
+  
+    
+      
+        
+          2
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+      
+    
+    {\displaystyle 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}}
+  
+
+Un tercer exemple: log10(150) és aproximadament 2,176, nombre que cau entre 2 i 3, d'igual manera que 150 es troba entre 10² = 100 i 103 = 1000. Finalment, per qualsevol base b, logb(b) = 1 i logb(1) = 0, ja que b¹ = b i b0 = 1, respectivament.
+
+
+== Propietats dels logaritmes ==
+
+Moltes fórmules importants, de vegades denominades identitats logarítmiques o lleis logarítmiques, relacionen els logaritmes els uns amb els altres.
+
+
+=== Producte, quocient, potència i arrel ===
+El logaritme d'un producte és la suma dels logaritmes dels nombres que s'estan multiplicant, i el logaritme de la divisió entre dos nombres és la diferència dels logaritmes. El logaritme de la potència p-èsima d'un nombre és p vegades el logaritme del nombre, i el logaritme de l'arrel n-èsima d'un nombre és el logaritme del nombre dividit per p. La taula següent llista aquestes identitats amb exemples. Cadascuna de les identitats es pot derivar mitjançant la substitució de les definicions logarítmiques 
+  
+    
+      
+        x
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+      
+    
+    {\displaystyle x=b^{\log _{b}(x)}}
+  
+ i/o 
+  
+    
+      
+        y
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            y
+            )
+          
+        
+      
+    
+    {\displaystyle y=b^{\log _{b}(y)}}
+  
+ a la part esquerra de les equacions.
+
+
+=== Canvi de base ===
+El logaritme logb(x) es pot calcular a partir dels logaritmes de x i de b respecte a una base arbitrària k utilitzant la següent fórmula:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{k}(x)}{\log _{k}(b)}}\,}
+  
+
+Les calculadores científiques normalment calculen els logaritmes en base 10 i base e. Els logaritmes respecte a una base qualsevol b es poden determinar fent ús de qualsevol d'aquests dos logaritme amb la fórmula anterior:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{10}(x)}{\log _{10}(b)}}={\frac {\log _{e}(x)}{\log _{e}(b)}}\,}
+  
+
+Donat un nombre x i el seu logaritme logb(x) respecte a una base desconeguda b, la base s'obté amb la següent expressió:
+
+  
+    
+      
+        b
+        =
+        
+          x
+          
+            
+              1
+              
+                
+                  log
+                  
+                    b
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle b=x^{\frac {1}{\log _{b}(x)}}}
+  
+
+
+== Bases particulars ==
+Entre totes les opcions possibles per la base, tres són especialment comunes: b = 10, b = e (la constant matemàtica irracional ≈ 2.71828) i b = 2. En anàlisi matemàtica, el logaritme de base e és molt utilitzat a causa de les seves propietats matemàtiques, explicades més avall. D'altra banda, els logaritmes de base 10 són fàcils de fer servir en càlculs manuals en el sistema decimal:
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        x
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        )
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        .
+         
+      
+    
+    {\displaystyle \log _{10}(10x)=\log _{10}(10)+\log _{10}(x)=1+\log _{10}(x).\ }
+  
+
+Per tant, log10(x) està relacionat amb el nombre de dígits decimals d'un enter positiu x: el nombre de dígits és l'enter més petit estrictament major que log10(x). Per exemple, log10(1430) és aproximadament 3,15. El següent enter és 4, que és el nombre de dígits de 1430.
+Tant el logaritme natural com el logaritme de base dos s'utilitzen en teoria de la informació, concretament en l'ús del nat o del bit, respectivament, com a unitat fonamental d'informació. Els logaritmes binaris també s'utilitzen en informàtica, on el sistema binari és ubic; en teoria musical, on l'interval d'altures de dos (l'octava) és ubic i el cent és el logaritme binari (escalat per 1.200) de la proporció entre dues altures de la mateixa afinació; i en fotografia per mesurar el valor d'exposició.
+La taula següent llista notacions comunes per logaritmes amb aquestes bases i els camps on s'utilitzen. Moltes disciplines escriuen log(x) en comptes de logb(x) quan la base es pot deduir a partir del context. La notació blog(x) també es pot trobar. La columna "Notació ISO" llista les designacions suggerides per l'Organització Internacional per a l'Estandardització (ISO 31-11). Com que la notació log x ha estat utilitzada per totes tres bases (o quan la base és indeterminada o immaterial), la base desitjada sovint s'ha de deduir segons el context o la disciplina. En informàtica i matemàtiques, log normalment es refereix a log₂ iloge, respectivament. En altres contexts, log sol significar log10.
+
+
+== Càlcul dels logaritmes ==
+
+Calcular el logaritme en una base b d'un nombre x és executar un algorisme que faci servir operacions elementals i doni com a resultat, o bé el logaritme, o bé una aproximació tan exacta com es necessiti.
+La fórmula de canvi de base permet transformar el problema de calcular el logaritme en una base qualsevol en el problema de fer una divisió de dos logaritmes en una base en la que es tingui un algorisme eficient per calcular-los.
+Un mètode per calcular logaritmes (i moltes altres funcions) és aproximar la funció logaritme pel seu desenvolupament en sèrie de Taylor. Això transforma el problema en calcular el valor d'un polinomi, cosa que es fa emprant només operacions de sumar i multiplicar. Aquest mètode només és adequat pel càlcul dels logaritmes naturals perquè en el cas de logaritmes en qualsevol base, al calcular la derivada per obtenir el desenvolupament en sèrie resulta:
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              (
+              a
+              )
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {d}{dx}}\log _{a}(x)={\frac {1}{x\ln(a)}}}
+  
+
+I porta a haver de calcular un altre logaritme. En canvi en el cas del logaritme natural:
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          log
+          
+            e
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              (
+              e
+              )
+            
+          
+        
+        =
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {d}{dx}}\log _{e}(x)={\frac {1}{x\ln(e)}}={\frac {1}{x}}}
+  
+
+El desenvolupament en sèrie de Taylor entorn del punt x = 1 resulta:
+
+  
+    
+      
+        
+          
+            
+              
+                ln
+                ⁡
+                x
+              
+              
+                
+                =
+                (
+                x
+                −
+                1
+                )
+                −
+                
+                  
+                    
+                      (
+                      x
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+                +
+                
+                  
+                    
+                      (
+                      x
+                      −
+                      1
+                      
+                        )
+                        
+                          3
+                        
+                      
+                    
+                    3
+                  
+                
+                −
+                
+                  
+                    
+                      (
+                      x
+                      −
+                      1
+                      
+                        )
+                        
+                          4
+                        
+                      
+                    
+                    4
+                  
+                
+                +
+                ⋯
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    1
+                  
+                  
+                    ∞
+                  
+                
+                (
+                −
+                1
+                
+                  )
+                  
+                    n
+                    +
+                    1
+                  
+                
+                
+                  
+                    
+                      (
+                      x
+                      −
+                      1
+                      
+                        )
+                        
+                          n
+                        
+                      
+                    
+                    n
+                  
+                
+                =
+                −
+                
+                  ∑
+                  
+                    n
+                    =
+                    1
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    
+                      (
+                      1
+                      −
+                      x
+                      
+                        )
+                        
+                          n
+                        
+                      
+                    
+                    n
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\ln x&=(x-1)-{\frac {(x-1)^{2}}{2}}+{\frac {(x-1)^{3}}{3}}-{\frac {(x-1)^{4}}{4}}+\cdots \\&=\sum _{n=1}^{\infty }(-1)^{n+1}{\frac {(x-1)^{n}}{n}}=-\sum _{n=1}^{\infty }{\frac {(1-x)^{n}}{n}}.\end{aligned}}}
+  
+
+Encara que aquesta expressió es pot reescriure de forma que estalviï multiplicacions, el problema d'aquest mètode si es pretén fer un càlcul amb molts dígits de precisió és que la seva convergència és lenta. Vegeu l'article principal.
+Un mètode més ràpid és aprofitar que el desenvolupament en sèrie de la funció exponencial convergeix molt ràpid i que la funció logaritme és la inversa de la funció exponencial. Llavors emprar el mètode de Newton per resoldre l'equació:
+
+  
+    
+      
+        
+          e
+          
+            y
+          
+        
+        −
+        x
+        =
+        0
+        
+      
+    
+    {\displaystyle e^{y}-x=0\,}
+  
+
+On y és la incògnita i x el nombre del qual es vol calcular el logaritme.
+Pel cas del logaritme en base 2 a l'article principal es descriu un algorisme eficient per calcular-lo.
+
+
+== Etimologia ==
+John Napier va proposar públicament el mètode dels logaritmes el 1614, en un llibre titulat Mirifici Logarithmorum Canonis Descriptio (Descripció de la meravellosa regla dels logaritmes). Napier va encunyar el terme per a logaritme en llatí mitjà, logarithmorum, que significa literalment "relació-nombre", com un mot compost format per dues arrels gregues: logos (que significa "proporció”, “raó”, “ràtio” o “paraula") i aritmos, que significa "nombre".
+
+
+== Història ==
+
+El matemàtic indi Virasena va treballar amb el concepte ardhaccheda, és a dir, el nombre de vegades que un nombre de l'expressió 2n podria ser reduït a la meitat. Per a les competències exactes de 2, aquest és el logaritme d'aquesta base, que és un nombre enter, però per a altres nombres, no està definit. Ell va descriure les relacions com la fórmula del producte i també va introduir els logaritmes de sencers de base 3 (trakacheda) i de base 4 (caturthacheda). Michael Stifel publicà Arithmetica integra a Nuremberg, el 1544, obra que conté una taula de nombres enters, i de potències de 2 que ha estat considerada una primera versió d'una taula de logaritmes.
+El mètode de càlcul mitjançant logaritmes va ser proposat per primera vegada, públicament, per John Napier (llatinitzat Neperus) el 1614, en un llibre titulat Mirifici Logarithmorum Canonis Descriptio. Jost Bürgi, un matemàtic i rellotger suís al servei del duc de Hesse-Kassel, va utilitzar per primera vegada els logaritmes, encara que va publicar el seu descobriment 6 anys després que Napier. La resistència inicial a la utilització de logaritmes va canviar gràcies a l'ús que en feu Kepler, que quedà reflectit en l'entusiasta suport de la seva publicació i per la impecable i clara explicació de com funcionaven.
+Aquest mètode contribueix a l'avanç de la ciència, i especialment de l'astronomia, facilitant la resolució de càlculs molt complexos. Els logaritmes van ser utilitzats habitualment en geodèsia, navegació i altres branques de la matemàtica aplicada, abans de l'arribada de les calculadores i computadores. A més a més de la utilitat en el càlcul numèric, els logaritmes també ocuparen un important lloc en les matemàtiques més avançades, el logaritme natural presenta una solució pel problema de la quadratura d'un sector hiperbòlic pensat per Grégoire de Saint-Vincent en 1647.
+Napier no utilitzava una base tal com s'entén habitualment però el seu logaritme, com a factor d'escala, funcionava de manera eficaç amb base 1/e. Pels propòsits d'interpolació i facilitat de càlcul, eren útils per trobar la relació r en una sèrie geomètrica tendent a 1. Napier va escollir 
+  
+    
+      
+        r
+        =
+        1
+        −
+        
+          10
+          
+            −
+            7
+          
+        
+        =
+        0
+        ,
+        999999
+      
+    
+    {\displaystyle r=1-10^{-7}=0,999999}
+  
+ (Bürgi elegí 
+  
+    
+      
+        r
+        =
+        1
+        +
+        
+          10
+          
+            −
+            4
+          
+        
+        =
+        1
+        ,
+        0001
+      
+    
+    {\displaystyle r=1+10^{-4}=1,0001}
+  
+). Els logaritmes originals de Napier no tenien 
+  
+    
+      
+        log
+        ⁡
+        1
+        =
+        0
+      
+    
+    {\displaystyle \log 1=0}
+  
+, sinó 
+  
+    
+      
+        log
+        ⁡
+        
+          10
+          
+            7
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \log 10^{7}=0}
+  
+. Així, si N es un nombre i L es el logaritme, Napier calcula: N = 107(1 − 10−7)L. on (1 − 10−7)107 es aproximadament 1/e, fent L/107 equivalent a log1/e N/107.
+Els logaritmes van ser "connectats" al càlcul infinitesimal el 1647, quan Grégoire de Saint-Vincent va computar la quadratura asimptòtica de la hipèrbola, el qual es el logaritme natural. El logaritme natural va ser primerament descrit per Nicolaus Mercator en el seu treball "Logaritmotechnia" publicat el 1668, tot i que el professor de matemàtiques John Speidell ja havia compilat una taula en el logaritme natural.
+
+
+=== Denominacions ===
+Inicialment, Napier anomenava "nombres artificials" als logaritmes i "nombres naturals" als antilogaritmes. Més tard, Napier va utilitzar la paraula logaritme en el sentit d'un nombre que indica una proporció: λόγος (logos) el sentit de proporció, i ἀριθμός (arithmos) significa nombre, i es defineix, literalment, com un nombre que indica una relació o proporció. Es refereix a la proposició que va ser feta per Napier en el seu "teorema fonamental", que estableix que la diferència de dos logaritmes determina la relació dels nombres els quals corresponen, de manera que una successió aritmètica de logaritmes corresponent a una successió geomètrica de nombres. El terme antilogarítmic va ser introduït a finals del segle xvii i, encara que mai s'utilitza àmpliament en matemàtiques, va perdurar en moltes taules, fins que no es va utilitzar més.
+
+
+== Extensions ==
+És possible estendre el concepte de logaritme més enllà dels reals positius.
+
+
+=== Nombres reals ===
+Per a enters b i x, el nombre 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{b}(x)}
+  
+ és irracional (no pot representar-se com a quocient de dos enters) si b o x té un factor primer que l'altre no té.
+El logaritme natural d'un nombre real positiu està ben definit i és un nombre real. No obstant això, generalitzar el logaritme natural a nombres reals negatius, només pot fer-se introduint nombres complexos.
+
+
+=== Nombres complexos ===
+El logaritme natural d'un nombre complex z és un altre nombre complex 
+  
+    
+      
+        b
+        =
+        ln
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle b=\ln(z)}
+  
+ que sigui solució de l'equació:
+
+  
+    
+      
+        z
+        =
+        
+          e
+          
+            b
+          
+        
+        
+      
+    
+    {\displaystyle z=e^{b}\;}
+  
+
+L'equació anterior no té solució única. Té un nombre infinit de solucions, encara que totes elles són fàcils de trobar. Donat un nombre complex z escrit en forma polar, una solució possible de l'equació (*) és b0:
+
+  
+    
+      
+        
+          b
+          
+            0
+          
+        
+        =
+        ln
+        ⁡
+        ρ
+        +
+        i
+        θ
+        
+        
+          
+            amb
+          
+        
+         
+        z
+        =
+        ρ
+        
+          e
+          
+            i
+            θ
+          
+        
+      
+    
+    {\displaystyle b_{0}=\ln \rho +i\theta \qquad {\mbox{amb}}\ z=\rho e^{i\theta }}
+  
+
+Per qualsevol valor 
+  
+    
+      
+        k
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle k\in \mathbb {Z} }
+  
+ resulta que el nombre complex bk, també té solució:
+
+  
+    
+      
+        
+          b
+          
+            k
+          
+        
+        =
+        ln
+        ⁡
+        ρ
+        +
+        i
+        θ
+        +
+        2
+        π
+        k
+        i
+        
+        ⇒
+        
+          e
+          
+            
+              b
+              
+                k
+              
+            
+          
+        
+        =
+        ρ
+        
+          e
+          
+            i
+            θ
+          
+        
+        ⋅
+        
+          e
+          
+            2
+            π
+            k
+            i
+          
+        
+        =
+        z
+      
+    
+    {\displaystyle b_{k}=\ln \rho +i\theta +2\pi ki\qquad \Rightarrow e^{b_{k}}=\rho e^{i\theta }\cdot e^{2\pi ki}=z}
+  
+
+Cada valor particular de k defineix una superfície de Riemann.
+
+
+=== Logaritme amb base imaginària ===
+Un logaritme en base imaginària és un logaritme que té com a base a la i. Encara que calcular aquest tipus de logaritmes sembli una tasca impossible, es pot realitzar fàcilment amb la fórmula:
+
+  
+    
+      
+        
+          log
+          
+            i
+          
+        
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        ∗
+        ln
+        ⁡
+        (
+        z
+        )
+        
+          /
+        
+        i
+        ∗
+        π
+      
+    
+    {\displaystyle \log _{i}(z)=2*\ln(z)/i*\pi }
+  
+
+on z és qualsevol nombre complex excepte 0.
+
+
+=== Matrius ===
+Una matriu B és logaritme d'una matriu donada A si la potenciació de B és A:
+
+  
+    
+      
+        
+          e
+          
+            B
+          
+        
+        =
+        A
+        .
+        
+      
+    
+    {\displaystyle e^{B}=A.\,}
+  
+
+A diferència de la potenciació de matrius, el logaritme d'una matriu real pot no estar definit sempre.
+En el cas d'una matriu diagonalitzable és necessari que el logaritme estigui definit per a tots i cadascun dels autovalors o valors propis de la matriu. En aquest cas el logaritme de la matriu està definit i és una matriu real.
+Si el logaritme no està definit sobre l'espectre o conjunt d'autovalors, encara és possible definir una matriu logaritme (de manera similar a com es defineixen els logaritmes de nombres negatius o complexes), tot i que no resulta única.
+En el cas d'una matriu no diagonalitzable, aquest procés és més complicat, ja que requereix trobar primer la seva forma canònica de Jordan.
+
+
+== Aplicacions ==
+
+Els logaritmes tenen moltes aplicacions dins i fora de les matemàtiques. Alguns d'aquests successos es relacionen amb el concepte d'invariància d'escala. Per exemple, cada càmera de la petxina d'un nautilus és una còpia aproximada de la següent, a escala per un factor constant. Això dona lloc a una espiral logarítmica. La llei de Benford en la distribució dels dígits inicials també s'explica per la invariància d'escala. Els logaritmes també estan vinculats a l'autosimilitud. Per exemple, els logaritmes apareixen en l'anàlisi dels algorismes que resolen un problema dividint en dos petits problemes similars i les seves solucions de connexions. Les dimensions de les formes geomètriques autosimilars, és a dir, de les formes i les parts que s'assemblen a la imatge general, també sobre la base dels logaritmes. Les escales logarítmiques són útils per quantificar la variació relativa d'un valor per oposició a la seva diferència absoluta. D'altra banda, perquè el registre de la funció logarítmica (x) creixi molt lentament per a grans x, les escales logarítmiques són utilitzades per comprimir les dades científiques a gran escala. Els logaritmes també apareixen en nombroses fórmules científiques, com l'equació del coet Tsiolkovsky, l'equació de Fenske, o l'equació de Nernst.
+
+
+=== Escala logarítmica ===
+
+Les quantitats científiques sovint s'expressen com logaritmes de les quantitats d'altres en una escala logarítmica. Per exemple, el decibel és una unitat logarítmica de mesura. Es basa en el logaritme comú de relacions 10 vegades el logaritme comú d'una relació de poder o 20 vegades el logaritme comú d'una relació de tensió. S'utilitza per a quantificar la pèrdua dels nivells de tensió en la transmissió de senyals elèctrics, per descriure els nivells de potència dels sons en l'acústica, i l'absorció de la llum en el camp de l'espectrometria i l'òptica. La relació senyal/soroll que descriu la quantitat de soroll no desitjat en relació amb un senyal (significativa) també es mesura en decibels. En una línia similar, el pic de relació senyal-soroll és comunament utilitzat per avaluar la qualitat dels mètodes de compressió de so i imatge utilitzant el logaritme.
+La força d'un terratrèmol es mesura prenent el logaritme comú de l'energia emesa en el terratrèmol. Això s'utilitza en l'escala de magnitud de moment o l'escala de Richter. Per exemple, un terratrèmol de 5,0 allibera 10 vegades i el 6,0 allibera 100 vegades l'energia d'un 4,0. Una altra escala logarítmica és la magnitud aparent. Es mesura la brillantor de les estrelles logarítmicament. Un altre exemple és el pH en la química; pH és el negatiu del logaritme de l'activitat dels ions oxoni (els ions d'hidrogen forma H + prenen aigua). L'activitat dels ions oxoni en aigua neutral és 10−7 mol·L−1, per tant un pH de 7. El vinagre normalment té un pH de prop de 3. La diferència de 4 correspon a una proporció de 104 de l'activitat, és a dir, l'activitat de vinagre de ions oxoni és de 10−3 mol·L−1.
+Gràfics semilogarítmics (log-lineals) utilitzen el concepte d'escala logarítmica per a la visualització: un dels eixos, en general la vertical, es escala logarítmica. Per exemple, el gràfic de la dreta comprimeix el fort augment de 1-1000000 per al mateix espai (en l'eix vertical), com l'augment d'1 a 1 milions de dòlars. En els gràfics per exemple, funcions exponencials de la forma f(x) = a · bx apareixen com a línies rectes amb pendent proporcional a b. Log-log Gràfics amb escala logarítmica en els dos eixos, el que fa les funcions de la forma f(x) = a · xk per ser representats com a línies rectes amb pendent proporcional a l'exponent k. Això s'aplica en la visualització i l'anàlisi de les lleis d'energia.
+
+
+=== Psicologia ===
+Els logaritmes es produeixen en diverses lleis que descriuen la percepció humana. La llei de Hick proposa una relació logarítmica entre el temps les persones donen per triar una alternativa i el nombre d'opcions que tenen dret. La llei de Fitts prediu que el temps necessari per a ràpidament traslladar-se a una àrea de destinació és una funció logarítmica de la distància i la mida de l'objectiu. En psicofísica, la llei de Weber-Fechner proposa una relació logarítmica entre l'estímul i la sensació com el real enfront del pes percebut d'un punt una persona està realitzant. Aquesta "llei", però, és menys precisa que els models més recents, com la llei de potència de Stevens.
+Els estudis psicològics van trobar que els individus matemàticament sofisticats tendeixen a estimar quantitats logarítmica, és a dir, la posició d'un nombre en una línia marcada d'acord amb el seu logaritme, de manera que 10 es col·loca el més a prop a 20 com 100 és 200. L'augment de la comprensió matemàtica canvis aquesta a una estimació lineal (posició 100 10x tan lluny).
+
+
+=== La teoria de probabilitats i estadístiques ===
+
+Els logaritmes es plantegen en la teoria de probabilitat: la llei dels grans nombres estableix que, per una moneda, ja que augmenta el nombre de llançaments de la moneda-fins a l'infinit, la proporció observada dels caps s'acosta a la meitat. Les fluctuacions d'aquest percentatge gairebé la meitat són descrits per la llei del logaritme iterat.
+Els logaritmes també es produeixen en la distribució log-normal. Quan el logaritme d'una variable aleatòria té una distribució normal, la variable es diu que té una distribució logarítmica normal. La distribució Log-normal es troben en molts camps, sempre que sigui una variable es forma com el producte de molts independents positiu a l'atzar variables, per exemple en l'estudi de la turbulència.
+Els logaritmes s'utilitzen per a l'estimació de màxima versemblança dels models estadístics paramètrics. Per a aquest model, la funció de versemblança depèn de com a mínim un paràmetre que ha de ser estimat. Un màxim de la funció de versemblança es produeix en el mateix paràmetre de valor com a màxim del logaritme de la probabilitat (la "versemblança"), ja que el logaritme és una funció creixent. El logaritme de la versemblança és més fàcil d'optimitzar, en especial per multiplicar les probabilitats per a variables aleatòries independents.
+Llei de Benford descriu l'aparició de dígits en molts conjunts de dades, com per exemple altures dels edificis. D'acord amb la llei de Benford, la probabilitat que els primers dígits decimals d'un element en la mostra de dades és d (d'1 a 9) és igual a 
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        d
+        +
+        1
+        )
+        −
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        d
+        )
+      
+    
+    {\displaystyle \log _{10}(d+1)-\log _{10}(d)}
+  
+, independentment de la unitat de mesura. Així, al voltant del 30% de les dades es pot esperar a tenir un inici com el primer dígit, el 18% amb 2, etc. Comptes examinarà les desviacions de la llei de Benford per detectar la comptabilitat fraudulenta.
+
+
+== Notes ==
+
+
+== Referències ==
+
+
+== Vegeu també ==
+El nombre e
+Logaritme natural
+Logaritme neperià
+Logaritme integral
+
+
+== Enllaços externs ==
+
+Colin Byfleet. «Educational video on logarithms». [Consulta: 12 octubre 2010].

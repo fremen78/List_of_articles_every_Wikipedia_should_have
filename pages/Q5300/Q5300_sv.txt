@@ -1,0 +1,92 @@
+En processor, central processing unit (engelsk initialism CPU), även kallad centralprocessor eller huvudprocessor, är enheten som exekverar (utför) program i en dator, genom att från primärminnet läsa in programmets maskininstruktioner till processorns instruktionsregister, och därefter utföra begärda operationer som beräkningar och datahantering. Processortermen har använts inom datorindustrin åtminstone sedan början av 1960-talet. Processorer finns i ett stort antal varianter och återfinns i moderna maskiner och apparater, från bilar till kaffebryggare. I dagligt tal avses ofta den typen av processor som sitter i en persondator.
+Det finns två olika typer av processorarkitekturer: RISC och CISC. RISC står för engelskans Reduced Instruction Set Computing och CISC står för Complex Instruction Set Computing. En processor av typen RISC är konstruerad för att klara av enkla operationer väldigt snabbt. CISC däremot är konstruerad för att kunna göra komplicerade operationer men inte nödvändigtvis särskilt snabbt jämfört med RISC. Utvecklingen har sedan gjort så att dessa två varianter har lånat många tekniker från varandra. Dagens[när?] processorer kan inte med lätthet klassificeras i endera gruppen.
+En viktig del i en processor är  ALU:n (Arithmetic Logic Unit), en enhet som utför logiska och enklare aritmetiska operationer såsom addition och subtraktion. För beräkningar med flyttal krävs antingen en följd av enkla instruktioner eller en flyttalsprocessor. Den var ursprungligen en extra krets men ingår numera[när?] som standard i moderna processorer för PC-marknaden.
+Processorer är idag[när?] uppbyggda av drygt en miljard[källa behövs] transistorer på en yta av ett par cm². Antalet transistorer man kan få in på ett chip har hittills ökat exponentiellt enligt Moores lag.
+Merparten av dagens datorer är von Neuman-datorer[källa behövs].
+
+
+== Funktion ==
+Den grundläggande funktionen för de flesta processorer, oavsett vilken fysisk form de har, är att utföra en sekvens av lagrade instruktioner, som kallas för program. Programmet representeras av en serie tal som hålls i någon form av datorminne. Processorer arbetar i två- eller tretakt: hämta, adressberäkna och utföra.
+
+
+== Talsystem ==
+
+Det sätt en processor representerar tal är ett designval som påverkar de mest grundläggande metoderna för hur den fungerar. Vissa tidiga digitala datorer använde en elektrisk modell av det vanliga decimala talsystemet (med basen tio) att representera tal internt. Några andra datorer har använt mer exotiska siffersystem som den ternära (med basen tre). Nästan[källa behövs] alla moderna processorer representerar tal i binär form (med basen två), där varje siffra representeras av en ungefärlig värdering av två fysiska storheter, som en "hög" eller "låg" spänning.
+
+
+== Klockfrekvens ==
+
+De flesta processorer, och faktiskt även de flesta sekventiellt logiska enheterna, är av synkronkaraktär. De är alltså utformade och fungerar på antaganden om en synkronsignal. Denna signal, känd som klocksignal, sker vanligen i form av en periodisk fyrkantsvåg. Genom att beräkna den maximala tiden som elektriska signaler kan röra sig i olika grenar av en CPU:s många kretsar, kan formgivarna välja en lämplig period för klocksignalen.
+
+
+== Mikroprocessorer ==
+
+Införandet av mikroprocessorn på 1970-talet påverkade i hög grad utformningen och funktionssättet hos bearbetningsenheten (processorer) i allmänhet. Sedan introduktionen 1970 av den första kommersiellt tillgängliga mikroprocessorn Intel 4004 som använder 4-bit och den första utbredda mikroprocessorn Intel 8080 som använder 8-bit och som släpptes 1974, och den första riktigt prisvärda processorn MOS 6502 8-bit som släpptes 1975 för 25 dollar vid en tidpunkt då konkurrenter som Motorola 6800 och Intel 8080 såldes för 179 dollar som snabbt sänktes till 69 dollar vilket legitimiserade MOS 6502 som började sälja i hundratals exemplar. Sedan dessa introduktioner har denna typ av processorer nästan helt gått om alla andra konstruktionssätt.
+16-bit-processorer introducerades 1975 med HP BPC.
+Stor- och minidatortillverkare från denna tid lanserade egna program för att utveckla integrerade kretsar för att uppgradera sina äldre datorarkitekturer, och så småningom producerades instruktionsuppsättningskompatibla mikroprocessorer som var bakåtkompatibla med äldre hårdvara och mjukvara. Den stora framgången med persondatorn kombinerat med dess tillkomst innebar att termen "CPU" numera nästan uteslutande används som benämning för mikroprocessorer.
+
+
+== Tillverkare ==
+
+Bland processortillverkarna för persondatorer märks Intel, AMD, Cyrix och Motorola, även VIA och Transmeta har gett sig in i denna marknad på senare tid[när?].
+ARM-arkitekturen, som främst används för portabla enheter, är tillståndspliktig. Företag som är licenstagare är exempelvis Alcatel, Atmel, Broadcom, Cirrus Logic, Digital Equipment Corporation, Freescale, Intel (genom DEC), LG, Marvell Technology Group, NEC, NVIDIA, NXP (tidigare Philips), Oki, Qualcomm, Samsung, Sharp, ST Microelectronics, Symbios Logic, Texas Instruments, VLSI Technology, Yamaha och ZiiLABS.
+
+
+== Arkitekturer ==
+
+Alla datorer använder instruktioner som utför grundläggande funktioner, som att läsa och skriva data och grundläggande aritmetik. Den fullständiga listan över instruktioner för en processor kallas instruktionsuppsättning.
+Processorarkitekturer strävar efter mönster som är kompakta och effektiva, vilket tvingade många kompromisser att beaktas vid utformningarna av dessa. En 64-bitars arkitektur kan flytta mer data än en 32-bitars motsvarighet i varje cykel (vilket gör den snabbare), men databussen blir också dubbelt så bred, som då tar upp mer yta på den begränsade ytan av ett chip. Trots dessa utmaningar har kontinuerliga framsteg i VLSI-konstruktionen gjort det möjligt för datorprocessorer att stadigt bli exponentiellt mer kraftfulla under de senaste decennierna.
+Följande är en lista över betydande arkitekturer:
+
+
+=== För mikrodatorer ===
+AMD64
+Intel IA-32 (x86)
+Intel IA-64
+MOS Technology 6502
+Motorola 68000
+Motorola 88000
+
+
+=== För servrar ===
+DEC Alpha
+MIPS
+PA-RISC från Hewlett Packard
+SPARC från Sun Microsystems
+Itanium (IA-64) från Intel och Hewlett Packard
+Xeon från Intel
+
+
+=== Inbäddade ===
+
+ARM
+AVR från Atmel
+Intel 8051
+PIC från Microchip
+PowerPC från IBM
+SuperH från Hitachi
+WDC 65816 från Western Design Center
+Zilog Z80
+
+
+=== Övriga ===
+Cell från Sony, Toshiba och IBM (den så kallade "STI"-alliansen), processorarkitektur som används i spelkonsolen PlayStation 3
+IBM AP-101, processorarkitektur som används i rymdfärjan Space Shuttle
+Parallax Propeller
+
+
+== Se även ==
+Grafikprocessor
+Flyttalsprocessor
+Signalprocessor
+Aritmetisk logisk enhet
+Tråd – exekveringsenhet
+Processorarkitektur
+
+
+== Referenser ==
+
+
+== Externa länkar ==
+ Wikimedia Commons har media som rör Processor.
+ CPU design på Wikibooks.

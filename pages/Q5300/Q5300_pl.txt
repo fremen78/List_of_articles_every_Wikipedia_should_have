@@ -1,0 +1,75 @@
+Procesor (ang. central processing unit, CPU) – sekwencyjne urządzenie cyfrowe, które pobiera dane z pamięci operacyjnej lub strumienia danych, interpretuje je i wykonuje jako rozkazy, zwracając dane do pamięci lub wyjściowego strumienia danych. Termin ten w zawężonym znaczeniu jest używany w odniesieniu do jednostki centralnej (CPU) systemu, ale odnosi się również do innych elementów przetwarzających dane zwanych koprocesorami, takich jak jednostki do obliczeń na liczbach zmiennopozycyjnych, przetwarzania grafiki (GPU).
+Technika wykonywania procesorów zmienia się wraz z rozwojem elektroniki. Pierwotnie procesory były konstruowane przy użyciu wielu lamp próżniowych, później wielu pojedynczych tranzystorów, które zastępowano układami scalonymi małej skali integracji. W latach 70. XX wieku skonstruowano procesory składające się z jednego lub kilku układów scalonych wielkiej skali integracji określane jako mikroprocesory. Od lat 80. XX wieku niemal wszystkie procesory wykonuje się jako monolityczne układy scalone.
+Jedną z podstawowych cech procesora jest określona długość (liczba bitów) słowa, na którym wykonuje on podstawowe operacje obliczeniowe. Jeśli przykładowo słowo tworzą 64 bity, to taki procesor określany jest jako 64-bitowy. Innym ważnym parametrem określającym procesor jest szybkość, z jaką wykonuje on rozkazy. Przy danej architekturze procesora, szybkość ta w znacznym stopniu zależy od czasu trwania pojedynczego taktu, a więc głównie od częstotliwości jego taktowania.
+
+
+== Nazwa ==
+Procesor bywa też nazywany jednostką centralną, centralną jednostką obliczeniową lub centralną jednostką przetwarzającą (poprzez tłumaczenie angielskiego wyrażenia central processing unit (CPU) w sposób niemal dosłowny). Część użytkowników „jednostkę centralną” kojarzy jednak z handlowym terminem określającym jednostkę systemową komputera – złożoną z procesora, płyty głównej, kart rozszerzeń, pamięci operacyjnej, dysków twardych i innych elementów zamkniętych we wspólnej obudowie – nieobejmującym urządzeń peryferyjnych (monitora, klawiatury, drukarki).
+
+
+== Budowa ==
+W funkcjonalnej strukturze procesora można wyróżnić:
+
+zespół rejestrów do przechowywania danych i wyników. Rejestry mogą być ogólnego przeznaczenia lub mają specjalne przeznaczenie,
+jednostkę arytmetyczną (arytmometr) do wykonywania operacji obliczeniowych na danych,
+układ sterujący przebiegiem wykonywania programu,
+inne układy, w które producent wyposaża procesor w celu usprawnienia jego pracy.
+
+
+== Rozmiary elementów ==
+Jednym z parametrów procesora jest rozmiar elementów budujących jego strukturę. Im są one mniejsze, tym niższe jest zużycie energii, napięcie pracy oraz wyższa możliwa do osiągnięcia częstotliwość pracy. W roku 2012 firma Intel wprowadziła procesory wykonane w procesie technologicznym (fotolitografii) 22 nm (Ivy Bridge), a w czwartym kwartale 2014 było to 14 nm (Core M). W 2019 roku firma AMD wprowadziła na rynek pierwsze procesory o mikroarchitekturze Zen 2 wykonane w litografii 7 nm w fabrykach TSMC.
+Aby ograniczyć straty związane z powstawaniem defektów w tak małych strukturach, fabryki procesorów muszą posiadać pomieszczenia o niezwykłej czystości, co jest bardzo kosztownym przedsięwzięciem.
+
+
+== Wielordzeniowość i procesory pomocnicze ==
+Współcześnie większość procesorów ma wielordzeniową budowę. Pierwszym procesorem wielordzeniowym ogólnego przeznaczenia był procesor Power 4 firmy IBM wprowadzony na rynek w roku 2001. Pierwszymi procesorami wielordzeniowymi architektury x86 były wersje procesorów Opteron firmy AMD i Pentium Extreme Edition firmy Intel wprowadzone w kwietniu 2005 roku.
+Modelem firmy Intel z niższej półki cenowej, który kontynuował ten trend był Intel Pentium D, chwilę później największy konkurent Intela, czyli AMD, wprowadził do sprzedaży popularny model procesora dwurdzeniowego o nazwie Athlon 64 X2. Dużą popularność zyskał dopiero Intel Core 2 Duo zbudowany na bazie architektury Conroe (65 nm). Niedługo później pojawił się także 4-rdzeniowy układ Intel Core 2 Quad.
+CPU mają rdzenie taktowane zegarem nawet 5 GHz (np. Intel Core i9-9900KS), lecz nie występuje już wyraźny wzrost taktowania w kolejnych generacjach procesorów. Szybkość obliczeń jednak wzrasta dzięki zwiększaniu liczby tranzystorów i rdzeni w procesorach.
+Intel i AMD mają dziś w ofercie także modele czterordzeniowe (Intel Core i3, oraz AMD Ryzen 3), sześciordzeniowe (Intel Core i5, oraz AMD Ryzen 5), oraz ośmiordzeniowe (Intel Core i7, oraz AMD Ryzen 7), oraz szesnastordzeniowe AMD Threadripper, AMD Ryzen 9 i Intel Core i9 klasy desktop. Ponadto są dostępne specjalne procesory do zastosowań profesjonalnych obu firm, które mogą mieć nawet do 64 rdzeni.
+Projektanci procesorów próbują także innych metod zwiększania wydajności procesorów, na przykład hyper-threading, gdzie każdy rdzeń może się zachowywać jak dwa procesory logiczne, dzielące między siebie zasoby pamięci podręcznej i jednostek wykonawczych. Gdy jeden z konkurujących ze sobą procesów pozostawia niewykorzystane zasoby, proces przypisany do drugiego procesora logicznego może ich użyć, co w sprzyjających okolicznościach może prowadzić do sumarycznego wzrostu wydajności od kilku do kilkunastu procent.
+W roku 2007 Intel zaprezentował testy układu scalonego Intel Polaris wyposażonego w 80 rdzeni ogólnego przeznaczenia, który osiągnął wydajność 1,01 TFLOPS.
+Komputer (w szczególności komputer osobisty) oprócz procesora głównego (CPU) ma zwykle procesory pomocnicze: obrazu (GPU, najnowsze konstrukcje pozwalają na integrację CPU z GPU w APU), dźwięku, koprocesory arytmetyczne (od lat 90. na ogół są zintegrowane z CPU).
+
+
+== Rozkazy procesora ==
+Do typowych rozkazów wykonywanych przez procesor należą:
+
+kopiowanie danych
+z pamięci do rejestru
+z rejestru do pamięci
+z pamięci do pamięci (niektóre procesory)
+(podział ze względu na sposób adresowania danych)
+działania arytmetyczne
+dodawanie
+odejmowanie
+porównywanie dwóch liczb
+dodawanie i odejmowanie jedności
+zmiana znaku liczby
+działania na bitach
+iloczyn logiczny – AND
+suma logiczna – OR
+suma modulo 2 (różnica symetryczna) – XOR
+negacja – NOT
+przesunięcie lub rotacja bitów w lewo lub w prawo
+skoki
+bezwarunkowe
+warunkowe
+Rozkazy dla procesora identyfikowane są na podstawie binarnego kodu maszynowego, jednak dany kod nie musi oznaczać wykonywania tych samych operacji przez procesor do tego samego (lub innego) zadania. W tym celu, w procesorach niedostępnych masowo, można spotkać możliwość programowania rozkazów CPU, czyli mikroprogramowania. Rozwiązanie takie daje pełniejszą kontrolę nad procesorem oraz możliwość zwiększenia wydajności procesora w pewnych zastosowaniach, w stopniu znacznie większym niż w przypadku powszechnie dostępnych procesorów, w których kody maszynowe są na stałe przypisane do odpowiednich ciągów mikrorozkazów (mikroinstrukcji).
+
+
+== Producenci procesorów ==
+Głównymi producentami procesorów są: Fujitsu, AMD, Intel, Toshiba, IBM, Freescale (dawniej jako Motorola), Texas Instruments, VIA Technologies, Qualcomm, Apple.
+
+
+== Zobacz też ==
+
+physics processing unit
+procesor graficzny – GPU
+tensorowe jednostki przetwarzania (TPU), np. dla AlphaGo
+
+
+== Przypisy ==
+
+
+== Linki zewnętrzne ==
+Baza procesorów (EN)

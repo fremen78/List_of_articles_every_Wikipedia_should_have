@@ -1,0 +1,1384 @@
+Un'algoritmu est unu protzedimentu chi risolvet unu problema spetzificu pro mèdiu de unu nùmeru finidu de passos elementares, craros e no ambìguos. Su tèrmine derivat de sa trascritzione latina de su nùmene de su matemàticu persianu a su-Khwarizmi, bìvidu in su de IX sèculos d.C., chi est cunsideradu unu de sos primos autores a àere fatu riferimentu a custu cuntzetu iscriende su libru "Règulas de riprìstinu e minimòngiu".
+Sos primos assuntos de algoritmu s'agatant in documentos de su de XVII sèculos a.C., connotos comente a sos papiros de Ahmes, chi cuntenent una colletzione de problemas cun solutzione, cumprendende unu problema de multiplicatzione chi s'iscritore decrarat de àere copiadu dae unos àteros papiros anteriores de 12 sèculos.
+S'algoritmu est unu cuntzetu fundamentale de s'informàtica, in antis de totu ca est a sa base de s'assuntu teòricu de carculabilidade: unu problema est carculàbile cando si podet risòlvere mediante un'algoritmu. Annotamala, s'algoritmu est unu cuntzetu càrdine fintzas in sa fase de programmatzione de s'isvilupu de unu programma: pigadu unu problema de automatizare, sa programmatzione est sa tradutzione o codificatzione de un'algoritmu pro cussu problema in programma, iscritu in unu tzertu limbàgiu, chi podet èssere duncas esecutadu dae unu elaboradore rapresentende·nde sa lògica de elaboratzione.
+
+
+== Definitzione ==
+In su de XX sèculos, su cuntzetu de algoritmu est istadu formalizadu pro risòlvere su problema matemàticu de su "detzisu" (Entscheidungsproblem), postu dae David Hilbert in su 1928 e àteras formalizatziones imbenientes sunt lòmpidas cun s'isvilupu de sos cuntzetos de "carculabilidade efetiva" e de "mètodu efetivu".
+Sas formalizatziones matemàticas prus famadas sunt sas funtziones recursivas de Gödel–Herbrand–Kleene de su 1930, 1934 e 1935; su lambda càrculu de Alonzo Church e sa Formulation 1 de Emil Post de su 1936; e, in fines, sa Màchina de Alan Turing de su 1936–37 e 1939. Nointames, una definitzione de su cuntzetu de algoritmu chi siat formale e non tècnica mancat totora e nos semus duncas costrintos a nos cuntentare de s'idea intuitiva de algoritmu comente:
+
+"una secuèntzia ordinada e finida de passos (operatziones o istrutziones) elementares chi giughet a unu resurtadu bene determinadu in unu tempus finidu".
+
+
+=== Mollos formales ===
+
+Sa definitzione de algoritmu aporrida est informale, mentras fiat netzessàriu tènnere una definitzione prus rigorosa pro tratare su cuntzetu de algoritmu cun trastos matemàticos. Pro custu, sunt istados definidos unos cantos mollos matemàticos de algoritmu. Unu de sos prus famados est sa màchina de Turing. Issa rapresentat una ratza de elaboradore ideale acumpangiadu de unu programma de esecutare, ma, a su contràriu de un'elaboradore ideale, sa màchina de Turing tenet unu funtzionamentu in meda prus simpre, pro nde pòdere descrìere su funtzionamentu suo tèrmines matemàticos, impreende cuntzetos comente a insieme, relatzione e funtzione.
+Sa màchina de Von Neumann, chi est su mollu de architetura babbu de totu is elaboradores de oe, est ecuivalente, comente pòdere de càrculu, a sa màchina de Turing. In àteras paràulas, est istadu dimustradu chi unu problema podet èssere risòlvidu dae un'elaboradore (programmadu in manera oportuna) si, e solu si, issu podet èssere risòlvidu fintzas de una màchina de Turing. Ultres a sa màchina de Turing, proposta dae Alan Turing in su 1936, in su matessi perìodu, àteros matemàticos ant elaboradu rapresentatziones formales de su cuntzetu de algoritmu comente, pro esempru, su lambda càrculu. A pustis de carchi annu, fiat craru chi totus custos mollos fiant ecuivalentes: sos problemas chi una màchina de Turing podiat risòlvere fiant is pròpios chi podiat risòlvere una màchina de von Neumann e fintzas is pròpios chi podiat risòlvere una funtzione costrùida cun su lambda càrculu.
+De custos resurtados nd'est essida a pilu sa tesi de Church-Turing, chi afirmat chi cale si siat algoritmu siat rapresentàbile cun una màchina de Turing. In àteros faeddos, custa tesi sustentat chi est impossìbile chircare de immaginare unu mollu de algoritmu prus balente e, de cunsighèntzia, chi, in lìnia de printzìpiu, peruna màchina at a pòdere mai risòlvere problemas chi una màchina de Turing non potzat risòlvere. Non est unu teorema dimustradu in manera matemàtica, ca sa tesi istabilit s'egualidade de duos cuntzetos, s'algoritmu e sa màchina de Turing, ma su primu non tenet una definitzione formale. Sa tesi est oe pro su prus atzetada, mancari chi is progressos in sa chirca in su setore de s'iper-computatzione pàrgiant ponende·dda a bortas in chistione.
+
+
+=== Propiedades fundamentales de sos algoritmos ===
+De sa definitzione pretzedente de algoritmu nde essit carchi propiedade netzessària:
+
+sos passos costituentes depent èssere "elementares", duncas non si depent pòdere iscumpònnere in passos prus piticos (atomitzidade);
+sos passos costituentes depent èssere interpretàbiles in modu deretu e unìvocu dae s'esecutore, siat issu umanu o artifitziale (no ambiguidade);
+s'algoritmu depet èssere assentadu dae unu nùmeru finidu de passos e rechèrrere una cantidade finida de datos in intrada (finitesa)
+s'esecutzione depet terminare a pustis de unu tempus finidu (terminatzione);
+s'esecutzione depet batire a unu resurtadu unìvocu (efetividade).
+
+Aici, a esèmpiu, "segare is oos" podet èssere cunsideradu unu passu elementare de un'"algoritmu pro sa coghina" (retzeta), ma non diat pòdere l'èssere fintzas "agiùnghere sale cantu bastat" sende chi s'espressione "cantu bastat" est ambìgua, e no indicat cun pretzisione cales passos serbant pro determinare sa cantidade netzessària.
+Unu passu che "preparare una pingiadedda de crema pastitzera" non si podet cunsiderare legìtimu, ca si podet iscumpònnere in suta-operatziones (allumare su fogu, regulare sa frama, pònnere sa pingiadedda subra sa forredda, etc.) e fintzas ca tenet ambiguidades (non dislindada cantu manna depet èssere sa pingiadedda, cantu depet èssere prena de crema, etz). A su contràriu, "sighire a girare a fogu biu finas a cando su cumpostu no assumet colore brunu" est un'istrutzione atzetàbile de tipu iterativu, chi cumportat unu nùmeru finidu de operatziones (is giradas) mancari chi su nùmeru non si potzat connòschere a in antis, ca dipendet dae su chi est naradu intrada (su gradu de umidade de sa farina in su cumpostu, su vigore de sa frama, etc.). A s'imparu no elementare de preparatzione de sa crema diat pòdere, però, èssere assotziadu un'oportunu rimandu a un'àtera setzione de su retzetàriu, chi frunat unu suta-algoritmu apòsitu pro custa operatzione. Custu sugerit chi, pro comodidade, sos algoritmos potzant èssere modulares, overas orientados a risòlvere suta-problemas, e organizados a manera geràrchica. Annotamala, una retzeta chi previdat sa cotura a micro-undas non podet èssere preparada dae un'esecutore chi no tèngiat s'apòsitu eletrodomèsticu; custu rimandat a su problema de sa realizabilidade de sos algoritmos, overas de sa cumpatibilidade issoro cun sas risursas materiales e temporales a disponimentu. In fines, si podent iscrìere prus algoritmos bàlidos pro risòlvere unu matessi problema, ma ognunu cun unu diferente gradu de atòliu.
+S'algoritmu est de sòlitu descritu comente a "protzedimentu de risolutzione de unu problema". In custu cuntestu, is "problemas" chi si cunsìderant sunt belle semper caraterizados dae datos de intrada variàbiles, chi s'algoritmu etotu at a impreare pro lòmpere a sa solutzione. Pro esempru, su càrculu de su màssimu comunu divisore intre duos nùmeros est su "problema", e sos datos suos de intrada sunt is duos nùmeros in chistione. A unu non-matemàticu custa diat pòdere apàrrere che a una "famìlia de problemas" (su problema de contare su màssimu comunu divisore intre 10 e 15, su problema de ddu contare intre 40 e 60, intre 35 e 95, etz). Su matemàticu e s'informàticu identìficant cun sa paràula "problema" totu sa famìlia e cun "rechesta" o "x" cada cuesitu otentu isseberende duos balores. Fata custa premissa, un'algoritmu risolvet unu problema si pro cale si siat rechesta issu produet in unu tempus finidu sa solutzione disigiada, overas unu tzertu resurtadu o dadu in essida (output) partende dae unos datos in intrada (input).
+Si custa idea teniat giai unu tzertu importu pro su càrculu matemàticu, s'abbentu de s'informàtica dd'at arricada de un'importu nou, e est difatis cun s'informàtica chi su tèrmine "algoritmu" at incumentzadu a si difùndere. Difatis, si pro otènnere unu tzertu resurtadu (risòlvere unu tzertu problema) esistet unu protzedimentu infallìbile, chi podet èssere descritu in modu no ambìguu finas a sas minudas, e giughet semper a s'obietivu disigiadu in unu tempus finidu, tando esistent sas cunditziones pro afidare custu còmpitu a un'elaboradore, introduende s'algoritmu in chistione in unu programma iscritu in un'oportunu limbàgiu cumprensìbile a sa màchina.
+In su comintzu, un'algoritmu podet èssere descritu pro mèdiu de s'impreu de unu diagramma de flussu o unu pseudo-còdighe. Posca, in sa fase de programmatzione s'algoritmu iscritu de aici at a èssere traduidu in limbàgiu de programmatzione a òpera de unu programmadore in suta de forma de còdighe orìgine ponende in òpera su programma chi at a èssere esecutadu dae su carculadore, mancari a pustis de un'àtera tradutzione in limbàgiu màchina. In custu cuntestu tenet rilevàntzia teòrica su teorema de Böhm-Jacopini chi afirmat chi cale si siat algoritmu podet èssere ativadu impreende tres istruturas isceti, sa secuèntzia, s'issèberu e su tziclu (iteratzione), de aplicare a manera recursiva a sa cumpositzione de istrutziones elementares. In sa pràtica currente su programmadore professionista in su traballu suo acumprit in manera automàtica custu protzessu de tradutzione iscriende luego su còdighe netzessàriu in sas modalidades numenadas, aende giai agatadu sa solutzione a su problema dadu.
+
+
+== Acostamentu matemàticu ==
+Esistent medas mollos matemàticos de algoritmu. In generale, un'algoritmu retzit un'insieme de balores (datos) in intrada e nde gènerat unu in essida (mutidu solutzione). Dadu duncas un'algoritmu A, si indicat cun fA sa funtzione chi assòtziat a ogni intrada x de A s'essida a tenore.
+Custa posta tra intrada e essida non rapresentat su problema risòlvidu dae s'algoritmu. A manera formale, unu problema est una funtzione 
+  
+    
+      
+        f
+        (
+        
+          D
+          
+            i
+          
+        
+        )
+        →
+        
+          D
+          
+            s
+          
+        
+      
+    
+    {\displaystyle f(D_{i})\to D_{s}}
+  
+ definida subra insiemes Di de elementos chi amus a mutire restantzas, a balores in un'insieme Ds de risolutziones.
+S'istùdiu de un'algoritmu est partidu in duas fases: 
+
+resumu (narada fintzas disinnu o progetu): dadu unu problema A, costruire un'algoritmu f pro risòlvere A, est a nàrrere tale chi f=fa.
+anàlisi: dadu un'algoritmu f e unu problema A, dimustrare chi f risolvet A, est a nàrrere f=fa (curretesa) e valutare sa cantidade de risursas impreadas dae f (cumplessidade cuncreta).
+
+
+=== Formalizatzione de unu problema ===
+A ogni problema 
+  
+    
+      
+        Π
+      
+    
+    {\displaystyle \Pi }
+  
+ ddoe at:
+
+  
+    
+      
+        f
+        π
+        :
+        D
+        π
+        →
+        S
+        π
+      
+    
+    {\displaystyle f\pi :D\pi \rightarrow S\pi }
+  
+
+ue 
+  
+    
+      
+        D
+        π
+      
+    
+    {\displaystyle D\pi }
+  
+ sunt is rechestas de su problema e 
+  
+    
+      
+        S
+        π
+      
+    
+    {\displaystyle S\pi }
+  
+ sunt is solutziones e 
+  
+    
+      
+        ∀
+        x
+        ∈
+        D
+        π
+        :
+        f
+        π
+        (
+        x
+        )
+      
+    
+    {\displaystyle \forall x\in D\pi :f\pi (x)}
+  
+ siat una solutzione a su problema pro sa rechesta x.
+
+
+=== Istùdiu de sa cumplessidade computatzionale de un'algoritmu ===
+Una portzione manna de sa teoria de is algoritmos est s'istùdiu de sa cumplessidade, computatzionale e ispatziale. Bolimus ischire, a su crèschere de sa cumplessidade de su problema, in cale manera creschet su tempus netzessàriu a esecutare s'algoritmu e s'ispàtziu de memòria ocupadu in unu carculadore.
+Sa cumplessidade de un'algoritmu bolet mesurada a manera asintòtica. Bi sunt bator mètodos pro carculare sa cumplessidade de un'algoritmu:
+
+mètodu de càmbiu
+mètodu de s'iteratzione
+mètodu de s'àrbore
+mètodu de s'espertu
+Dda definimus asintòtica pro duos motivos
+
+ogni carculadore podet pònnere in òpera is algoritmos a manera diferente e duncas non faghet a istimare su tempus pretzisu
+si bolet dare un'idea cuantitativa de comente a s'algoritmu potzat crèschere in consumu de tempus a su crèschere de s'intrada.
+Pigada una funtzione assotziada a un'algoritmu de su tipu:
+
+  
+    
+      
+        ϕ
+        A
+        L
+        G
+        :
+        
+          I
+          n
+          A
+          L
+          G
+        
+        →
+        
+          O
+          u
+          t
+          A
+          L
+          G
+        
+      
+    
+    {\displaystyle \phi ALG:\mathrm {InALG} \rightarrow \mathrm {OutALG} }
+  
+
+podimus definire sa funtzione de pesu comente
+
+  
+    
+      
+        
+          W
+          A
+          L
+          G
+        
+        :
+        
+          I
+          n
+          A
+          L
+          G
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle \mathrm {WALG} :\mathrm {InALG} \rightarrow \mathbb {N} }
+  
+
+chi espressat sa dimensione de sos datos in intrada, duncas su nùmeru de bit chi serbint a s'algoritmu pro codificare is datos in intrada.
+A esèmpiu, in unu vetore sa longària sua at a determinare su nùmeru de bit netzessàrios a ddu codificare e in una madrighe su nùmeru de s'òrdine. A esèmpiu, in una madrighe cuadrada s'òrdine suo est determinadu dae una de sas duas dimensiones (orizontale o verticale).
+Sa cumplessidade de un'algoritmu si definit comente:
+
+  
+    
+      
+        
+          T
+          A
+          L
+          G
+        
+        :
+        
+          N
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle \mathrm {TALG} :\mathbb {N} \rightarrow \mathbb {N} }
+  
+4 chi indicat pro ogni balore intreu n (est a nàrrere sa dimensione de su problema) sa cantidade de tempus e/o ispàtziu impreada dae s'algoritmu pro elaborare dados de dimensione n. Un'algoritmu si podet cumportare cun calicuna diferèntzia sensìbile fintzas pro rechestas chi tèngiant dimensione uguale (est a nàrrere su pròpiu pesu).
+Si dimustrat chi sa cumplessidade de un'algoritmu est una funtzione chi creschet a manera istrinta, cun 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        T
+        (
+        x
+        )
+        =
+        ∞
+      
+    
+    {\displaystyle \lim _{n\rightarrow \infty }T(x)=\infty }
+  
+ 
+Difatis est banale a dimustrare chi 
+  
+    
+      
+        
+          S
+          
+            a
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle S_{a}(x)}
+  
+ tirat a s'infinitu a su crèschere de 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ (est a nàrrere de su nùmeru de datos de elaborare), ca issa est minorada dae 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ (est unu 
+  
+    
+      
+        o
+        (
+        x
+        )
+      
+    
+    {\displaystyle o(x)}
+  
+) pro ite su nùmeru mìnimu de ispàtzios de memòria pro ammentare un'insieme de datos est sa cardinalidade sua. Est de importu a ammentare chi pro sas madrighes isparidas tocat a cunsiderare comente a nùmeru de datos sos elementos non nullos.
+Duas medidas pro sistemas de càrculu secuentziales sunt sos balores 
+  
+    
+      
+        
+          T
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle T_{a}(n)}
+  
+ e 
+  
+    
+      
+        
+          S
+          
+            a
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle S_{a}(x)}
+  
+ chi rapresentant una su tempus e s'àtera s'ispàtziu de memòria rechertos dae un'algoritmu 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ pro intrada 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+. Pro sa propiedade tzitada subra, su domìniu 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ depet duncas cointzìdere cun s'insieme 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+. Podimus duncas cunsiderare 
+  
+    
+      
+        
+          T
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle T_{a}(n)}
+  
+ e 
+  
+    
+      
+        
+          S
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle S_{a}(n)}
+  
+ comente a funtziones intreas positivas chi rapresentant su nùmeru de operatziones (non su tempus de esecutzione efetivu) elementares esecutadas e su nùmeru de tzellas de memòria impreadas durante s'esecutzione de 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ in s'istante 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+.
+Descrìere sas funtziones 
+  
+    
+      
+        
+          T
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle T_{a}(n)}
+  
+ e 
+  
+    
+      
+        
+          S
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle S_{a}(n)}
+  
+ podet èssere meda complicadu ca sa variàbile 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ assumet balores in s'insieme de totu is intradas. Una solutzione chi frunit informatziones bonas subra 
+  
+    
+      
+        
+          T
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle T_{a}(n)}
+  
+ e 
+  
+    
+      
+        
+          S
+          
+            a
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle S_{a}(n)}
+  
+ cunsistet in s'introduire su cuntzetu de dimensione de una rechesta, agrupende in custa manera is intradas chi tenent sa matessi dimensione: sa funtzione dimensione assòtziat a ogni intrada unu nùmeru naturale chi rapresentat in manera intuitiva sa cantidade de informatzione cuntènnida in su datu cunsideradu. Pro esempru sa dimensione naturale de un'intreu positivu 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ est 
+  
+    
+      
+        [
+        1
+        +
+        l
+        o
+        
+          g
+          
+            2
+          
+        
+        
+          k
+        
+        ]
+      
+    
+    {\displaystyle [1+log_{2}{k}]}
+  
+, est a nàrrere su nùmeru de tzifras netzessàriu pro rapresentare 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ in notatzione binària. A sa pròpiu manera, sa dimensione de unu vetore de elementos est a parusu costituida dae su nùmeru de is cumponentes suos, mentras sa dimensione de unu grafu est dada dae su nùmeru de nodos e de arcos suos. Sa dimensione de 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ est iscrita comente a 
+  
+    
+      
+        
+          |
+        
+        n
+        
+          |
+        
+      
+    
+    {\displaystyle |n|}
+  
+.
+Cunsideradu un'algoritmu 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ subra un'insieme de intradas 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+, podet acontèssere chi duas rechestas 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+,
+  
+    
+      
+        
+          i
+          ′
+        
+      
+    
+    {\displaystyle i'}
+  
+ de dimensione uguale, est a nàrrere 
+  
+    
+      
+        
+          |
+        
+        i
+        
+          |
+        
+      
+    
+    {\displaystyle |i|}
+  
+ = 
+  
+    
+      
+        
+          |
+        
+        
+          i
+          ′
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |i'|}
+  
+ apant tempos diversos de esecutzione pro unu matessi algoritmu. Si faeddat duncas de cumplessidade de s'intrada e si nde distinghent tres casos:
+
+cumplessidade s'in casu peus
+cumplessidade s'in casu mèdiu
+cumplessidade s'in casu mègius
+Su casu mèdiu permitit de istudiare s'algoritmu in base a sa fitiania 
+  
+    
+      
+        
+          p
+          
+            i
+          
+        
+      
+    
+    {\displaystyle p_{i}}
+  
+ chi s'avèrguant is intradas e a sa cumplessidade 
+  
+    
+      
+        
+          c
+          
+            i
+          
+        
+      
+    
+    {\displaystyle c_{i}}
+  
+ de s'algoritmu pro cada de issos:
+
+  
+    
+      
+        
+          T
+          A
+          L
+          G
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          p
+          
+            i
+          
+        
+        
+          c
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \mathrm {TALG} =\sum _{i=1}^{n}p_{i}c_{i}}
+  
+
+Cando sos casos tenent totus sa pròpiu probabilidade, su casu mèdiu est contadu comente a mèdia aritmètica de sa cumplessidade carculada subra totus is intradas possìbiles:
+
+  
+    
+      
+        
+          T
+          A
+          L
+          G
+        
+        =
+        
+          
+            1
+            n
+          
+        
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          c
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \mathrm {TALG} ={\frac {1}{n}}\sum _{i=1}^{n}c_{i}}
+  
+
+Pro esèmpiu, in un'algoritmu de chirca lineare, si s'elementu chircadu est su primu de sa lista nch'agatemus s'in casu mègius, .
+  
+    
+      
+        
+          T
+          
+            m
+            e
+            g
+            i
+            u
+            s
+          
+        
+        (
+        n
+        )
+        =
+        1
+      
+    
+    {\displaystyle T_{megius}(n)=1}
+  
+.
+Sa cumplessidade s'in casu mèdiu est 
+  
+    
+      
+        
+          T
+          
+            m
+            e
+            d
+            i
+            u
+          
+        
+        (
+        n
+        )
+        =
+        
+          
+            1
+            n
+          
+        
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        i
+        =
+        (
+        n
+        +
+        1
+        )
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle T_{mediu}(n)={\frac {1}{n}}\sum _{i=1}^{n}i=(n+1)/2}
+  
+.
+In su casu peus s'elementu chircadu est s'ùrtimu de sa lista: in custu casu 
+  
+    
+      
+        
+          T
+          
+            p
+            e
+            u
+            s
+          
+        
+        (
+        n
+        )
+        =
+        n
+      
+    
+    {\displaystyle T_{peus}(n)=n}
+  
+, est a nàrrere ddoe cherent totus sos 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ passos pro agatare sa solutzione.
+Su casu peus est su chi est a parusu cunsideradu pro descrìere sa cumplessidade de un'algoritmu. In carchi casu (a esèmpiu su quicksort) est cunsideradu su casu mèdiu, ca su casu peus acontesset in manera rara meda o fintzas cun probabilidade zero.
+
+
+=== Cumplessidade e istabilidade ===
+S'istabilidade numèrica istabilit cantu un'algoritmu est "resistente" a insiemes particulares de datos. S'arresonu est de sòlitu curreladu a s'anàlisi numèrica, e a sa posta in òpera de algoritmos subra màchinas dislindadas, nointames podent esìstere algoritmos a s'in prus matemàticos chi pro carchi datu frunint resurtados indeterminados, comente a 
+  
+    
+      
+        
+          0
+        
+        0
+      
+    
+    {\displaystyle 0 \over 0}
+  
+, mentras àteros algoritmos ecuivalentes cun is matessi datos arribbant a dare rispostas: sos primos sunt mancu istàbiles de sos segundos. Un'esèmpiu sunt sos lìmites carculados cun su mètodu canònicu, opuru cun su mètodu de De l'Hôpital.
+
+
+=== Esèmpiu: istùdiu de sa cumplessidade de risolutzione de sos sistemas lineares ===
+Bolimus agatare un'algoritmu efitziente pro risòlvere unu sistema lineare de 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ ecuatziones in 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ incògnitas (fintzas 100, 1000...). Depimus duncas valutare, tra totu is algoritmos disponìbiles, su chi impreat mancu tempus e consumat prus pagu ispàtziu de is àteros. S'Àlgebra nos oferit duos mètodos de risolutzione importantes pro s'istùdiu de sa cumplessidade de sos algoritmos.
+
+NÒTA
+in sos esèmpios si tenet contu chi su sistema siat determinadu a manera unìvoca. In sede de aprofundimentu est possìbile connòschere cales sunt sas cunditziones affinché sos algoritmos chi istemus pro espònnere sunt aplicàbiles
+Sa Règula de Cramer permitet sa risolutzione de unu sistema lineare in sa manera prus simpre gràtzias a una definitzione isceti:
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        =
+        
+          
+            
+              det
+              (
+              
+                A
+                
+                  i
+                
+              
+              )
+            
+            
+              det
+              (
+              A
+              )
+            
+          
+        
+      
+    
+    {\displaystyle x_{i}={\det(A_{i}) \over \det(A)}}
+  
+
+in ue 
+  
+    
+      
+        
+          A
+          
+            i
+          
+        
+      
+    
+    {\displaystyle A_{i}}
+  
+ est sa madrighe formada sostituende sa de 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ colunna de 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ cun su vetore de is incògnitas.
+Su determinante de sa madrighe podet èssere carculadu a priori, duncas serbit solu su càrculu de 
+  
+    
+      
+        n
+        +
+        1
+      
+    
+    {\displaystyle n+1}
+  
+ determinantes pro risòlvere su sistema.
+Su determinante est a parusu definidu tràmite s'isvilupu de Laplace, chi frunit un'algoritmu ricorsivu:
+
+  
+    
+      
+        det
+        (
+        
+          A
+          
+            k
+          
+        
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            i
+            +
+            k
+          
+        
+        
+          a
+          
+            i
+            ,
+            k
+          
+        
+        det
+        (
+        
+          A
+          
+            i
+            ,
+            k
+          
+        
+        )
+      
+    
+    {\displaystyle \det(A_{k})=\sum _{i=1}^{n}(-1)^{i+k}a_{i,k}\det(A_{i,k})}
+  
+
+in ue 
+  
+    
+      
+        
+          a
+          
+            i
+            ,
+            k
+          
+        
+      
+    
+    {\displaystyle a_{i,k}}
+  
+ est s'elementu de coordinadas 
+  
+    
+      
+        i
+        ,
+        k
+      
+    
+    {\displaystyle i,k}
+  
+ e 
+  
+    
+      
+        
+          A
+          
+            i
+            ,
+            k
+          
+        
+      
+    
+    {\displaystyle A_{i,k}}
+  
+ est su minore otentu suprimende sa 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+-esima riga e sa 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+-esima colunna.
+Sa cumplessidade de custu algoritmu pro su càrculu de su determinante est 
+  
+    
+      
+        O
+        (
+        n
+        !
+        )
+      
+    
+    {\displaystyle O(n!)}
+  
+, ca pro ogni determinante de òrdine 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ si depent contare m determinantes de òrdine 
+  
+    
+      
+        m
+        −
+        1
+      
+    
+    {\displaystyle m-1}
+  
+ .
+Sunt pro custu impreados unos cantos àteros algoritmos cun mègius cumplessidade. (Custos algoritmos sunt fintzas a sa base de mètodos prus efitzientes pro su càrculu de su determinante). Unu de custos est su mètodu de eliminatzione de Gauss, basadu subra duos importantes printzìpios.
+Su primu est chi duos sistemas lineares
+
+  
+    
+      
+        A
+        ⁡
+        x
+        =
+        b
+      
+    
+    {\displaystyle \operatorname {A} \operatorname {x} =\operatorname {b} }
+  
+ e 
+  
+    
+      
+        U
+        ⁡
+        x
+        =
+        c
+      
+    
+    {\displaystyle \operatorname {U} \operatorname {x} =\operatorname {c} }
+  
+
+sunt uguales si 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle \operatorname {U} }
+  
+ s'otenet sostituende sas rigas e sas colunnas de 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle \operatorname {A} }
+  
+ cun cumbinatziones lineares issoro e sos elementos de 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle \operatorname {c} }
+  
+ sunt cumbinatziones lineares de sos elementos de 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle \operatorname {b} }
+  
+ in base a sos coefitzientes de 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle \operatorname {U} }
+  
+.
+Su segundu est chi pro risòlvere unu sistema triangulare (in ue, est a nàrrere, su mollu de sos coefitzientes gosat de sa propiedade de triangolaridade) est sufitziente impreare s'algoritmu de càmbiu in antis o a dae segus (sa cumplessidade computatzionale est 
+  
+    
+      
+        O
+        (
+        n
+        )
+      
+    
+    {\displaystyle O(n)}
+  
+).
+Si dimustrat chi pro trasformare su sistema in triangulare bisòngiat un'algoritmu cun cumplessidade 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{3})}
+  
+. Aplichende a custu sistema s'algoritmu de càmbiu dereta s'agatant sas solutziones de su sistema, e si dimustrat chi sa cumplessidade totale de s'algoritmu de Gauss est semper 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{3})}
+  
+.
+Pro cantu pertocat sa cumplessidade ispatziale:
+
+s'algoritmu basadu subra sa règula de Cramer recheret feti una variàbile agiuntiva, pro ammentare su determinante de sa madrighe de sos coefitzientes, duncas sa cumplessidade sua est mìnima: 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{2})}
+  
+ (
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+      
+    
+    {\displaystyle n^{2}}
+  
+ pro ammentare sa madrighe de sos coefitzientes, 
+  
+    
+      
+        2
+        n
+      
+    
+    {\displaystyle 2n}
+  
+ pro ammentare su vetore de sos tèrmines nòdidos e sas solutziones, prus un'ispàtziu paris a 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ pro su càrculu de sos determinantes)
+s'algoritmu de Gauss non recheret prus ispàtziu de su cussu netzessàriu pro ammentare sa madrighe de sos coefitzientes e su vetore de sos tèrmines nòdidos. A su tèrmine de s'algoritmu su vetore de sos tèrmines nòdidos at a cuntènnere sa solutzione. Duncas sa cumplessidade ispatziale sua est finas issa mìnima: 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{2})}
+  
+.
+
+
+== Notas ==

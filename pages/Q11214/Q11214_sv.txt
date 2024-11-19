@@ -1,0 +1,1886 @@
+En differentialekvation är en ekvation som beskriver ett samband mellan en okänd funktion och dess derivator. Differentialekvationer är en typ av funktionalekvationer. De har mycket viktiga tillämpningar inom bland annat fysik, biologi och nationalekonomi.
+Differentialekvationen kallas ordinär, om den obekanta funktionen är en funktion av endast en variabel. Om funktionen är av flera variabler, så att dess derivator är partiella derivator, kallas ekvationen en partiell differentialekvation.
+
+
+== Tillämpningar ==
+
+Differentialekvationer används bland annat för att konstruera matematiska modeller av fysikaliska fenomen inom exempelvis flödesdynamik eller mekanik. Därför är studiet av differentialekvationer ett omfattande område inom både ren och tillämpad matematik. En matematisk modell behandlar ofta en förändring av en variabel med avseende på en annan variabel. Förändringar kan uttryckas med hjälp av derivator och matematiska modeller innehåller därför ofta differentialekvationer.
+Lösningar till differentialekvationer ligger till grund för exempelvis formgivning av broar, bilar och flygplan. Differentialekvationer är också användbara inom andra områden så som framtagandet av ekonomiska modeller.
+
+
+== Beteckningar ==
+Låt 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ vara en funktion av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+. Derivatorna kan skrivas med Lagranges notation som
+
+  
+    
+      
+        
+          y
+          ′
+        
+        ,
+        
+          y
+          ″
+        
+        ,
+        …
+        ,
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+      
+    
+    {\displaystyle y',y'',\dots ,y^{(n)}}
+  
+
+eller med Leibniz notation som
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        ,
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          
+            
+              
+                d
+                
+                  (
+                  n
+                  )
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  (
+                  n
+                  )
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {dy \over dx},{d^{2}y \over dx^{2}},...,{d^{(n)}y \over dx^{(n)}}.}
+  
+
+Exempel på en ordinär differentialekvation av andra ordningen:
+
+  
+    
+      
+        
+          y
+          ″
+        
+        +
+        3
+        x
+        
+        
+          y
+          ′
+        
+        +
+        y
+        =
+        0
+      
+    
+    {\displaystyle y''+3x\,y'+y=0}
+  
+
+De partiella derivatorna upp till ordning 2, av en funktion 
+  
+    
+      
+        u
+      
+    
+    {\textstyle u}
+  
+ av två variabler kan skrivas som
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              x
+            
+          
+        
+        ,
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              y
+            
+          
+        
+        ,
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        ,
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              x
+              ∂
+              y
+            
+          
+        
+        ,
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              ∂
+              y
+              ∂
+              x
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial u(x,y)}{\partial x}},{\frac {\partial u(x,y)}{\partial y}},{\frac {\partial ^{2}u(x,y)}{\partial x^{2}}},{\frac {\partial ^{2}u(x,y)}{\partial y^{2}}},{\frac {\partial ^{2}u(x,y)}{\partial x\partial y}},{\frac {\partial ^{2}u(x,y)}{\partial y\partial x}}}
+  
+
+(De två sista derivatorna är identiska för en stor klass funktioner, men inte för alla.)
+En enkel partiell differentialekvation är den linjära transportekvationen i en dimension, som har formen
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              t
+              )
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        c
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              t
+              )
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial u(x,t)}{\partial t}}+c{\frac {\partial u(x,t)}{\partial x}}=0}
+  
+
+med den reella konstanten 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+.
+
+
+== Ordinära differentialekvationer ==
+
+En ekvation för bestämning av en obekant funktion 
+  
+    
+      
+        y
+        (
+        x
+        )
+      
+    
+    {\displaystyle y(x)}
+  
+ av en variabel, där förutom funktionen även dess derivator ingår, kallas en ordinär differentialekvation (ODE) och kan skrivas
+
+  
+    
+      
+        F
+        
+          (
+          
+            x
+            ,
+            y
+            (
+            x
+            )
+            ,
+            
+              y
+              ′
+            
+            (
+            x
+            )
+            ,
+            …
+            ,
+            
+              y
+              
+                (
+                n
+                )
+              
+            
+            (
+            x
+            )
+          
+          )
+        
+        =
+        0
+      
+    
+    {\displaystyle F\left(x,y(x),y'(x),\ldots ,y^{(n)}(x)\right)=0}
+  
+
+och sägs vara av 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+:e ordningen. Allmänna lösningen till en ekvation av 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+:e ordningen innehåller 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ godtyckliga konstanter. Vid praktiska problem bestäms konstanterna av givna begynnelse- eller randvärden.
+En ekvation som innehåller funktionen och dess förstaderivata är en differentialekvation av första ordningen och så vidare. Exempelvis är differentialekvationen 
+
+  
+    
+      
+        α
+        
+          y
+          ″
+        
+        (
+        x
+        )
+        +
+        β
+        
+          y
+          ′
+        
+        (
+        x
+        )
+        +
+        γ
+        y
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle \alpha y''(x)+\beta y'(x)+\gamma y(x)=0}
+  
+
+av andra ordningen.
+
+
+=== Homogena och inhomogena differentialekvationer ===
+En ekvation 
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        y
+        )
+        =
+        h
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle {\mathcal {L}}(y)=h(x)=0}
+  
+
+där 
+  
+    
+      
+        h
+        (
+        x
+        )
+      
+    
+    {\displaystyle h(x)}
+  
+ är alla termer som endast beror av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, kallas homogen, i annat fall inhomogen.
+Lösningen till en inhomogen, linjär ekvation kan skrivas
+
+  
+    
+      
+        y
+        =
+        
+          y
+          
+            h
+          
+        
+        +
+        
+          y
+          
+            p
+          
+        
+      
+    
+    {\displaystyle y=y_{h}+y_{p}}
+  
+
+där 
+  
+    
+      
+        
+          y
+          
+            h
+          
+        
+      
+    
+    {\displaystyle y_{h}}
+  
+ är den homogena lösningen och 
+  
+    
+      
+        
+          y
+          
+            p
+          
+        
+      
+    
+    {\displaystyle y_{p}}
+  
+ är den partikulära lösningen, det vill säga, den specifika lösningen då 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ är nollskild.
+
+
+=== Linjära och icke-linjära ekvationer ===
+En differentialekvation kan skrivas på den förenklade formen
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        y
+        )
+        =
+        h
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(y)=h(x)}
+  
+
+där 
+  
+    
+      
+        h
+        (
+        x
+        )
+      
+    
+    {\displaystyle h(x)}
+  
+ är alla termer som endast beror av 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+.
+För att en ordinär differentialekvation skall vara linjär måste den uppfylla
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        
+          y
+          
+            1
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        )
+        =
+        
+          
+            L
+          
+        
+        (
+        
+          y
+          
+            1
+          
+        
+        )
+        +
+        
+          
+            L
+          
+        
+        (
+        
+          y
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle {\mathcal {L}}(y_{1}+y_{2})={\mathcal {L}}(y_{1})+{\mathcal {L}}(y_{2})}
+  
+
+och
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        α
+        (
+        x
+        )
+        y
+        )
+        =
+        α
+        (
+        x
+        )
+        
+          
+            L
+          
+        
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle {\mathcal {L}}(\alpha (x)y)=\alpha (x){\mathcal {L}}(y).}
+  
+
+Alltså gäller
+
+  
+    
+      
+        
+          
+            L
+          
+        
+        (
+        y
+        )
+        =
+        
+          f
+          
+            n
+          
+        
+        (
+        x
+        )
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        +
+        
+          f
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        …
+        
+          f
+          
+            1
+          
+        
+        (
+        x
+        )
+        
+          y
+          ′
+        
+        +
+        
+          f
+          
+            0
+          
+        
+        (
+        x
+        )
+        y
+      
+    
+    {\displaystyle {\mathcal {L}}(y)=f_{n}(x)y^{(n)}+f_{n-1}(x)y^{(n-1)}\dots f_{1}(x)y'+f_{0}(x)y}
+  
+
+Exempel:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          y
+          
+            3
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {d^{2}y \over dx^{2}}+y^{3}=0}
+  
+
+är icke-linjär på grund av termen 
+  
+    
+      
+        
+          y
+          
+            3
+          
+        
+      
+    
+    {\displaystyle y^{3}}
+  
+, liksom
+
+  
+    
+      
+        y
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        y
+        =
+        0
+      
+    
+    {\displaystyle y{d^{2}y \over dx^{2}}+{\frac {dy}{dx}}+y=0}
+  
+
+på grund av termen 
+  
+    
+      
+        y
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle y{d^{2}y \over dx^{2}}}
+  
+, men
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        y
+        =
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle {d^{2}y \over dx^{2}}+y=x^{3}}
+  
+
+är linjär. 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle x^{3}}
+  
+ i högerledet inverkar inte på lineariteten.
+
+
+=== Beroende och oberoende variabel ===
+I till exempel differentialekvationen 
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {d^{2}y \over dx^{2}}+y^{2}=0}
+  
+
+är 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ den beroende variabeln och 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ är den oberoende variabeln.
+
+
+== Partiella differentialekvationer ==
+
+Partiella differentialekvationer (PDE) är ekvationer av en eller flera okända funktioner, som uppfyller kriterierna
+
+Den okända funktionen beror av åtminstone två variabler
+I ekvationen förekommer partiella derivator med avseende på åtminstone två variabler
+I ekvationen förekommer endast partiella derivator av den obekanta funktionen
+Den implicita formen av en partiell differentialekvation för en funktion 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ av två variabler 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ och 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, kan skrivas
+
+  
+    
+      
+        F
+        
+          (
+          
+            x
+            ,
+            y
+            ,
+            u
+            (
+            x
+            ,
+            y
+            )
+            ,
+            
+              
+                
+                  ∂
+                  u
+                  (
+                  x
+                  ,
+                  y
+                  )
+                
+                
+                  ∂
+                  x
+                
+              
+            
+            ,
+            
+              
+                
+                  ∂
+                  u
+                  (
+                  x
+                  ,
+                  y
+                  )
+                
+                
+                  ∂
+                  y
+                
+              
+            
+            ,
+            …
+            ,
+            
+              
+                
+                  
+                    ∂
+                    
+                      2
+                    
+                  
+                  u
+                  (
+                  x
+                  ,
+                  y
+                  )
+                
+                
+                  ∂
+                  x
+                  ∂
+                  y
+                
+              
+            
+            ,
+            …
+          
+          )
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle F\left(x,y,u(x,y),{\frac {\partial u(x,y)}{\partial x}},{\frac {\partial u(x,y)}{\partial y}},\ldots ,{\frac {\partial ^{2}u(x,y)}{\partial x\partial y}},\ldots \right)=0,}
+  
+
+där 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ är en godtycklig funktion. 
+
+
+=== Linjära och olinjära ekvationer ===
+En partiell differentialekvation är linjär om den okända funktionen och alla förekommande derivator uppträder linjärt. Detta innebär att koefficienterna endast beror på funktioner av variablerna hos den okända funktionen och inte av själva funktionen.
+Exempel på en icke-linjär partiell differentialekvation är
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              t
+              )
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        u
+        (
+        x
+        ,
+        t
+        )
+        
+          
+            
+              ∂
+              u
+              (
+              x
+              ,
+              t
+              )
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial u(x,t)}{\partial t}}+u(x,t){\frac {\partial u(x,t)}{\partial x}}=0}
+  
+
+
+== Lösningar till ordinära differentialekvationer ==
+Att lösa en differentialekvation innebär att finna den funktion som uppfyller ekvationen. Exempelvis har den homogena ekvationen av första ordningen
+
+  
+    
+      
+        
+          y
+          ′
+        
+        +
+        a
+        y
+        =
+        0
+      
+    
+    {\displaystyle y'+ay=0}
+  
+
+där 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ är en konstant, lösningen
+
+  
+    
+      
+        y
+        =
+        C
+        
+          e
+          
+            −
+            a
+            x
+          
+        
+      
+    
+    {\displaystyle y=Ce^{-ax}}
+  
+
+där 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ är en konstant, som bestäms av randvillkor eller begynnelsevärden.
+En differentialekvation har oändligt många lösningar, men det finns satser som visar att det finns unika lösningar till vissa begynnelsevärdesproblem.
+Det finns metoder för att bestämma lösningar till vissa typer av differentialekvationer. I de flesta fall saknas sådana metoder, men alla differentialekvationer kan lösas approximativt med numeriska metoder.
+En explicit lösning till en differentialekvation är en funktion av den oberoende variabeln som löser differentialekvationen (av formen 
+  
+    
+      
+        y
+        (
+        x
+        )
+        =
+         
+        .
+        .
+        .
+      
+    
+    {\displaystyle y(x)=\ ...}
+  
+). En implicit lösning är ett förhållande mellan den beroende och den oberoende variabeln som indirekt definierar en funktion som är en explicit lösning (exempelvis 
+  
+    
+      
+        sin
+        ⁡
+        (
+        x
+        +
+        y
+        )
+        =
+        x
+        y
+        +
+        2
+        x
+      
+    
+    {\displaystyle \sin(x+y)=xy+2x}
+  
+).
+
+
+=== Bakterietillväxt ===
+En differentialekvation kan användas till att beskriva bakterietillväxt i en lösning. Eftersom varje bakterie delar sig med en viss hastighet, är bakterietillväxten proportionell mot antalet bakterier vid en given tidpunkt. Om 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  
+ anger antalet bakterier vid tiden 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ gäller därför sambandet
+
+  
+    
+      
+        
+          N
+          ′
+        
+        (
+        t
+        )
+        =
+        k
+        ⋅
+        N
+        (
+        t
+        )
+      
+    
+    {\displaystyle N'(t)=k\cdot N(t)}
+  
+
+Lösningen till denna differentialekvation är en funktion som har egenskapen att funktionens derivata är proportionell mot funktionen själv. Exponentialfunktionen är den enda funktion som har denna egenskap och lösningen måste således vara en exponentialfunktion.
+Uppenbarligen är denna modell av bakterietillväxten bara approximativ - bland annat genom att bakterietillväxten i en lösning så småningom måste avstanna i brist på näring.
+
+
+=== Fritt fall ===
+Ett föremål släpps från en viss höjd 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ och faller på grund av gravitationskraften 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+. Här görs förenklingen att gravitationen är den enda kraft som verkar på föremålet och att gravitationen är konstant. I verkligheten finns också andra krafter, till exempel luftmotstånd.
+Enligt Newtons andra lag är ett föremåls massa 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ multiplicerat med dess acceleration 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ lika med den kraft 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ som verkar på föremålet:
+
+  
+    
+      
+        m
+        ⋅
+        a
+        =
+        F
+      
+    
+    {\displaystyle m\cdot a=F}
+  
+
+Accelerationen är derivatan av hastigheten 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ med avseende på tid 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+, eller:
+
+  
+    
+      
+        a
+        =
+        
+          
+            
+              d
+              v
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle a={dv \over dt}}
+  
+
+Hastigheten är i sin tur derivatan av sträckan, eller i detta fall höjden 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ med avseende på tid 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+:
+
+  
+    
+      
+        v
+        =
+        
+          
+            
+              d
+              h
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle v={dh \over dt}}
+  
+
+Alltså är accelerationen andraderivatan av höjden:
+
+  
+    
+      
+        a
+        =
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              h
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle a={d^{2}h \over dt^{2}}}
+  
+
+Den kraft 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ som verkar på föremålet antogs vara endast gravitationen. Newtons andra lag kan då skrivas som:
+
+  
+    
+      
+        m
+        ⋅
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              h
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        −
+        m
+        g
+      
+    
+    {\displaystyle m\cdot {d^{2}h \over dt^{2}}=-mg}
+  
+
+(Minustecken eftersom man enligt konvention räknar krafter positiva från jorden.)
+Differentialekvationen går lätt att lösa med avseende på 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+. Först divideras med 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+, vilket ger
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              h
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        −
+        g
+      
+    
+    {\displaystyle {d^{2}h \over dt^{2}}=-g}
+  
+
+Integrering av båda leden ger
+
+  
+    
+      
+        
+          
+            
+              d
+              h
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        g
+        t
+        +
+        
+          C
+          
+            1
+          
+        
+      
+    
+    {\displaystyle {dh \over dt}=-gt+C_{1}}
+  
+
+och ytterligare en integrering ger
+
+  
+    
+      
+        h
+        =
+        h
+        (
+        t
+        )
+        =
+        −
+        
+          
+            
+              g
+              
+                t
+                
+                  2
+                
+              
+            
+            2
+          
+        
+        +
+        
+          C
+          
+            1
+          
+        
+        t
+        +
+        
+          C
+          
+            2
+          
+        
+      
+    
+    {\displaystyle h=h(t)=-{gt^{2} \over 2}+C_{1}t+C_{2}}
+  
+
+Integrationskonstanterna 
+  
+    
+      
+        
+          C
+          
+            1
+          
+        
+      
+    
+    {\displaystyle C_{1}}
+  
+ och 
+  
+    
+      
+        
+          C
+          
+            2
+          
+        
+      
+    
+    {\displaystyle C_{2}}
+  
+ kan bestämmas om föremålets begynnelsehöjd och begynnelsehastighet är kända.
+Resultatet är en funktion, eller en formel, för föremålets höjdläge vid tiden 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+.
+
+
+== Metoder för lösning av differentialekvationer ==
+Vissa differentialekvationer kan lösas analytiskt och lösningen blir då exakt. I analytiska lösningar kan man använda transformation, oftast Laplacetransformation för ordinära differentialekvationer och Fouriertransformation för partiella.
+För de flesta differentialekvationer behövs numeriska metoder. Några vanliga numeriska metoder för lösning av differentialekvationer är Eulers metod och Runge–Kuttas metod för begynnelsevärdesproblem, och provskottsmetoden för randvärdesproblem. Partiella differentialekvationer är särskilt känsliga för fel i lösningen.
+
+
+== Programvara ==
+Det finns programvara som kan lösa differentiella ekvationer:
+
+ExpressionsInBar
+Maple: dsolve
+SageMath
+Xcas: desolve(y'=k*y,y)
+
+
+== Se även ==
+
+Ordinär differentialekvation
+Differentialekvationer av första ordningen
+Linjära ordinära differentialekvationer med konstanta koefficienter
+Begynnelsevärdesproblem
+Differensekvation
+Lagranges ekvationer
+Laplacetransformen av differentialekvationer
+
+
+== Källor ==
+Persson, Arne & Böiers, Lars-Christer (2001). Analys i en variabel (2 uppl). Lund: Studentlitteratur. ISBN 91-44-02056-2 
+
+
+=== Fotnoter ===
+
+
+== Externa länkar ==
+ Wikimedia Commons har media som rör Differentialekvation.

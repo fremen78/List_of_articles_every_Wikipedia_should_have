@@ -1,0 +1,251 @@
+Vjerojatnost ili verovatnoća je kvantifikacija očekivanja da će se neki događaj desiti. Teorija verovatnoće kvantifikuje verovatne događaje. Verovatnoća se izražava brojem između 0 i 1, gde, slobodno govoreći, 0 ukazuje na nemogućnost, a 1 ukazuje na sigurnost. Što je veća verovatnoća jednog dogaćaja, to je verovatnije da će doći do događaja. Jednostavan primer je bacanje (nepristrasnog) novčića. Pošto je kovanica nepristrasna, dva ishoda („glava“ i „rep“) su jednako verovatna; verovatnoća „glave“ jednaka verovatnoći „repa“; i pošto nijedan drugi ishod nije moguć, verovatnoća bilo koje „glave“ ili „repa“ je 1/2 (što bi takođe moglo biti napisano kao 0,5 ili 50%).
+Ovim konceptima je data aksiomatska matematička formalizacija u teoriji verovatnoće, koja je u širokoj upotrebi u takvim oblastima studiranja kao što su matematika, statistika, finansije, kockanje, nauka (posebno fizika), veštačka inteligencija/mašinsko učenje, informatika, teorija igara, i filozofija da se, na primer, izvuku zaključci o očekivanim učestalostima događaja. Teorija verovatnoće se takođe koristi za opisivanje ishodišne mehanike i regularnosti kompleksnih sistema
+
+
+== Istorija ==
+Naučno izučavanje verovatnoće je moderni razvoj u matematici. Kockanje pokazuje da je već milenijumima postojao znatan interes za kvantifikaciju ideja verovatnoće, ali su precizni matematički opisi nastali znatno kasnije. Postoje razlozi za spor razvoj matematike verovatnoće. Dok su igre na sreću pružile impetus za matematičke studije verovatnoće, fundametalna pitanja su ostala nejasna zbog sujeverja kockara.
+
+Prema Ričardu Džefriju, „pre sredine sedamnaestog veka, termin „verovatan” (latinski probabilis) je značio potvrdiv, i primenjivao se u tom smislu, nedvosmisleno, na mišljenja i na dela. Verovatno delo ili mišljenje je bilo ono koje bi razumni ljudi preduzeli ili držali, u datim situacijama.” Međutim, specifično u pravnom kontekstima, 'verovatno' je isto tako moglo da se odnosi na propozicije za koje postoje dobri dokazi.
+
+Šesnaestovekovni italijanski polimat Đirolamo Kardano je demonstrirao efikasnost definisanja šansi kao odnos povoljnih i nepovoljnih ishoda (što podrazumeva da je verovatnoća događaja data odnosom povoljnih ishoda i ukupnog broja mogućih ishoda). Nauka o verovatnoći datira od prepiske Pjera Ferma i Blez Paskala iz 1654. godine, a za njeno zasnivanje zaslužan je i Antoan Gombo. Kristijan Hajgens se od 1657. godine prvi posvetio izučavanju ove oblasti i sa njegovim rezultatima verovatnoća je dobila naučni karakter. Verovatnoća se kao grana matematike tretira od vremena Jakoba Bernulija i njegovog posthumno objavljenog rada Ars Conjectandi 1713, i Abrahama de Muara u njegovoj Doktrini slučajnosti izdatoj 1718. Dodatne informacije su dostupne u delu Ijana Hakinga Pojava verovatnoće i radu Džejmsa Frenklina Nauka o pretpostavkama, koji se bave istorijama ranog razvoja samog koncepta matematičke verovatnoće.
+Teorija grešaka datira još iz rada Rodžera Kotesa Opera Miscellanea (posthumno objavljenog 1722. godine), dok je memoare pripremio Tomas Simpson 1755. godine (ovjavljene 1756). Kotes je prvi primenio teoriju u diskusiji grešaka opservacija. U ponovnom izdanju (1757) tih memoara su položeni aksiomi prema kojima su pozitivne i negativne greške jednako verovatne, i da određeni pripisivi limiti definišu opseg svih grešaka. Simpson je isto tako diskutovao kontinuirane greške i opisao verovatnoću krive.
+Prva dva zakona greške je formulisao Pjer Simon Laplas. Prvi zakon je objavljen 1774. godine, i prema njemu se frekvencija greške može izraziti kao eksponencijalna funkcija numeričke veličine greške, bez obzira na znak. Drugi zakon greške je Laplas predložio 1778. godine, i prema njemu je frekvencija greške eksponencijalna funkcija kvadrata greške. Drugi zakon greške se naziva normalnom distribucijom ili Gausovim zakonom. „Teško je istorijski pripisati taj zakon Gausu, koji uprkos svoje dobre poznate rane zrelosti, verovatno nije napravio ovo otkriće pre nego što je imao dve godine.”
+Danijel Bernuli (1778) uveo je princip maksimalnog proizvoda verovatnoća sistema istovremenih greški.
+
+Adrijen-Mari Ležandr (1805) razvio je metod najmanjih kvadrata, a uveo je taj metod u svom radu Nouvelles méthodes pour la détermination des orbites des comètes (Novi metodi za određivanje orbita kometa). Uprkos Ležandrovog doprinosa, jedan irsko-američki pisac, Robert Adrijan, editor časopisa „The Analyst” (1808), prvi je izveo zakon o grešci,
+
+  
+    
+      
+        ϕ
+        (
+        x
+        )
+        =
+        c
+        
+          e
+          
+            −
+            
+              h
+              
+                2
+              
+            
+            
+              x
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \phi (x)=ce^{-h^{2}x^{2}},}
+  
+
+gde je 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ konstanta koja zavisi od preciznosti opservacije, i 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ je faktor veličine koji osigurava da je površina ispod krive jednaka jedinici. On je dao dva dokaza, drugi od kojih je esencijalno bio isti kao Džon Heršelov (1850). Gaus je dao prvi dokaz koji izgleda da je bio poznat u Evropi (treći nakon Adrajanovog) 1809. godine. Dalje dokaze su dali Laplas (1810, 1812), Gaus (1823), Džejms Ajvori (1825, 1826), Hejgen (1837), Fridrih Besel (1838), Donkin (1844, 1856), i Krofton (1870). Dodatne doprinose su napravili Elis (1844), De Morgan (1864), Glejšer (1872), i Đovani Skjapareli (1875). Petersova (1856) formula za r, verovatnu grešku pojedinačne opservacije, je dobro poznata.
+U devetnaestom veku autori na opštoj teoriji su bili Laplas, Lakrua (1816), Litrov (1833), Adolf Ketle (1853), Ričard Dedekind (1860), Helmert (1872), Herman Loran (1873), Liagre, Didion, i Karl Pirson. De Morgan i Džordž Bul su uvećali izloženost teorije.
+Andrej Markov je uveo notaciju Markovih lanaca (1906), što je igralo važnu ulogu u teoriji stohastičkih procesa i njenih aplikacija. Modernu teoriju verovatnoće koja je bazirana na teoriji mera je razvio Andrej Kolmogorov (1931).
+U pogledu geometrijskih aspekata (pogledajte integralnu geometriju) bili su uticajni doprinosi u časopisu The Educational Times (Miler, Krofton, Makol, Volstenholme, Votson, i Artemas Martin).
+
+
+== Teorija verovatnoće ==
+
+Poput drugih teorija, teorija verovatnoće predstavlja svoje koncepte u formalnom smislu — t.j. u vidu termina koji se mogu razmatrati odvojeno od njihovog značenja. Takvi formalni termini se manipulišu pravilima matematike i logike, i svi rezultati se interpretiraju i transliraju nazad u domen problema.
+Opšta teorija verovatnoće se deli na:
+
+Aleatorna verovatnoća
+Epistemička verovatnoća
+Postoje su bar dva uspešna pokušaja formalizacije verovatnoće, naime Kolmogorova formulacija i Koksova formulacija. U Kolmogorovoj formulaciji (pogledajte prostor verovatnoće), skupovi se interpretiraju kao događaji, a sama verovatnoća kao mera na klasi skupa. U Koksovoj teoremi, verovatnoća se uzima kao polazna tačka (drugim rečima ne analizira se dalje) i naglasak se stavlja na konstruisanje doslednog dodeljivanja vrednosti verovatnoća propozicijama. U oba slučaja, zakoni verovatnoće su isti, izuzev tehničkih detalja.
+Postoje i druge metode kvantifikacije neizvesnosti, kao što je Teorija Dempstera — Šafera ili teorija mogućnosti, ali one su esencijalno različite i nisu kompatibilne sa zakonima verovatnoće kao što se obično shvataju.
+
+
+== Interpretacije ==
+
+Kada se koriste eksperimenti koji su slučajni i dobro definisani u čisto teoretskom okruženju (poput bacanja novčića), verovatnoće mogu da budu numerički opisane brojem željenih ishoda podeljenim ukupnim brojem svih ishoda. Na primer, bacanje novčića dva puta može da proizvede „glava-glava”, „glava-rep”, „rep-glava”, i „rep-rep” ishode. Verovatnoća dobijanja ishoda „glava-glava” je 1 od 4 ishoda ili 1/4 ili 0,25 (ili 25%). U pogledu praktičnih primena razlikuju se dve glavne konkurentne kategorije tumačenja verovatnoće, čiji pripadnici poseduju različita gledišta o osnovnoj prirodi verovatnoće:
+
+Objektivisti dodeljuju brojeve radi opisivanja nekog objektivnog ili fizičkog stanja stvari. Najpopularnija verzija objektivne verovatnoće je frekventna verovatnoća, koja tvrdi da verovatnoća slučajnog događaja označava relativnu učestalost pojave ishoda eksperimenta, pri ponavljanju eksperimenta. Ovo tumačenje smatra da je verovatnoća relativna „dugoročna” učestalost ishoda. Modifikacija ovoga je verovatnoća sklonosti, koja interpretira verovatnoću kao tendenciju nekog eksperimenta da proizvede izvestan ishod, čak i kad se izvede samo jednom.
+Subjektivisti dodeljuju brojeve po subjektivnoj verovatnoći, tj., kao stepen verovanja. Stepen verovanja se interpretira kao „cena po kojoj biste kupili ili prodali opkladu koja plaća 1 jedinicu korisnosti ako je E, 0 ako nije E.” Najpopularnija verzija subjektivne verovatnoće je Bajesova verovatnoća, koji uključuje stručno znanje kao i eksperimentalne podatke pri evaluaciji verovatnoće. Stručno znanje se predstavlja putem neke (subjektivne) distribucije prethodne verovatnoće. Ovi podaci se inkorporiraju u funkciju verovatnoće. Normalizovani proizvod prethodne i sadašnje verovatnoće rezultira u distribuciji posterine verovatnoće koja inkorporira sve informacije koje su do sada poznate. Prema teoremi Aumanove saglasnosti, Bajesovi uticaji čija prethodna verovanja su slična, proizvode slična posteriorna verovanja. Međutim, znatno različita prethodna verovanja mogu da dovedu do različitih zaključaka nezavisno od toga koliko informacija ti uticaja dele.
+
+
+== Primene ==
+Teorija verovatnoće se primenjuje u svakodnevnom životu u proceni rizika i modelovanju. Industrija osiguranja i tržišta koriste aktuarsku nauku za određivanje cena i donošenje odluka o trgovini. Vlade primenjuju probalilističke metode u regulaciji životne sredine, analizi ovlašćenja (teorija pouzdanosti starenja i dugovečnosti), i finansijskoj regulaciji.
+Dobar primer primene teorije verovatnoće u trgovanju akcijama je uticaj percepirane verovatnoće bilo kakvog široko rasprostranjenog sukoba na Bliskom istoku na cene nafte, što ima dalekosežne uticaje na ekonomiju kao celinu. Procena robnog trgovca da je rat verovatniji može da uzrokuje porast ili pad cena robe, i da bude signal drugim trgovcima sa sličnim stanovištem. Shodno tome, verovatnoće se ne procenjuju nezavisno, niti su nužno veoma racionalne. Teorija bihevioralnih finansija je formulisana da bi se opisao efekat takvog grupnog razmišljanja na određivanje cena, na politiku, i na mir i konflikte.
+Pored finansijskih procena, verovatnoća se koristiti u analizi trendova u biologiji (npr. širenje bolesti), kao i u ekologiji (npr. biološki Panetovi kvadrati). Kao i u finansijama, procena rizika može da bude korisna kao statističko oruđe za izračunavanje verovatnoće nastanka neželjenih događaja i može da pomogne u implementaciji protokola za izbegavanje takvih situacija. Verovatnoća se koristi pri dizajnu igara na sreću, tako da kasina mogu da ostvare garantovane profite, uz istovremeno obezbeđivanje isplata igračima koje su dovoljno česte da podstiču kontinuiru igru.
+Otrkiće rigoroznih metoda za procenu i kombinovanje procena verovatnoće je izmenilo društvo. Za većinu građana je važno da razumeju kako se procene verovatnoće vrše, i kako oni mogu da doprinesu odlukama.
+Još jedna značajna primena teorije verovatnoće u svakodnevnom životu je pouzdanost. Pri izradi mnogih potrošačkih proizvoda, kao što su automobili i potrošačka elektronika, koristi se teorija pouzdanosti u dizajnu proizvoda da bi se redukovala verovatnoća kvarova. Verovatnoća kvarova može da utiče na odluke proizvođača u pogledu garancija proizvoda.
+
+
+== Formalizacija verovatnoće ==
+Kao i druge teorije, teorija verovatnoće je opis koncepta u formalnim terminima, odnosno terminima koji se posmatraju odvojeno od njihovog značenja. Ovim formalnim terminima upravljaju pravila matematike i logike i rezultati se tumače i prenose i u tom objašnjenom obliku vraćaju u oblast okvirne teorije.
+Postoje najmanje dva uspešna sistema aksioma verovatnoće, dva uspešna pokušaja da se formalizuje verovatnoća, koji su nazvani Kolmogorova formulacija i Koksova formulacija.
+U oba slučaja zakoni verovatnoće su isti, sa malom razlikom u tehničkim detaljima:
+
+  
+    
+      
+        0
+        ≤
+        P
+        (
+        A
+        )
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq P(A)\leq 1}
+  
+. Verovatnoća je broj između 0 i 1;
+
+  
+    
+      
+        P
+        (
+        Ω
+        )
+        =
+        1
+        
+      
+    
+    {\displaystyle P(\Omega )=1\,}
+  
+. Zbir verovatnoća da će se posmatrani događaj dogoditi, i da se on neće dogoditi iznosi 1;
+
+  
+    
+      
+        P
+        (
+        
+          
+            
+              A
+              ¯
+            
+          
+        
+        )
+        =
+        1
+        −
+        P
+        (
+        A
+        )
+      
+    
+    {\displaystyle P({\bar {A}})=1-P(A)}
+  
+. Verovatnoća da će se neka dva događaja dogoditi je jednaka proizvodu verovatnoće jednog od njih i verovatnoće drugog pri uslovu da se prvi već dogodio;
+
+  
+    
+      
+        P
+        (
+        ∅
+        )
+        =
+        0
+      
+    
+    {\displaystyle P(\emptyset )=0}
+  
+. Verovatnoća nemogučeg događaja;
+
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        P
+        (
+        
+          A
+          
+            i
+          
+        
+        )
+        =
+        1
+      
+    
+    {\displaystyle \sum _{i=1}^{n}P(A_{i})=1}
+  
+. U jednom potpunom sistemu događaja 
+  
+    
+      
+        
+          A
+          
+            i
+          
+        
+      
+    
+    {\displaystyle A_{i}}
+  
+ je njihov proizvod verovatnoće jednak 1.
+
+
+=== Predstavljanje i interpretacija vrednosti ===
+Verovatnoća događaja se predstavlja kao realan broj između 0 i 1. Nemoguć događaj ima verovatnoću 0, a siguran događaj ima verovatnoću 1. U slučaju da je jednaka verovatnoća da će se događaji dogoditi, kao i da neće, verovatnoća je 0,5.
+
+
+=== Raspodele ===
+Raspodela verovatnoće je funkcija koja dodeljuje verovatnoće elementima nekog skupa. Raspodela je diskretna ako je taj skup prebrojiv (najčešće podskup skupa prirodnih brojeva), a neprekidna ako je funkcija raspodele definisana na nekom konačnom ili beskonačnom intervalu skupa realnih brojeva i neprekidna na njemu. Skoro sve raspodele od praktične važnosti su ili diskretne ili neprekidne.
+
+
+== Povezano ==
+Teorija igara
+Informaciona teorija
+Slučajna promenljiva
+Statistika
+Stohastički proces
+
+
+== Reference ==
+
+
+== Literatura ==
+
+
+== Spoljašnje veze ==
+
+Richard P. Feynman's Lecture on probability.

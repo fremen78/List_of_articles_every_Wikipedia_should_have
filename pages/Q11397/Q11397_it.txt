@@ -1,0 +1,266 @@
+Con il termine meccanica classica si intende generalmente, in fisica e in matematica, l'insieme delle teorie meccaniche, con i loro relativi formalismi, sviluppate fino alla fine del 1904 e comprese all'interno della fisica classica, escludendo quindi gli sviluppi della meccanica relativistica e della meccanica quantistica.
+Essa descrive in modo sostanzialmente accurato gran parte dei fenomeni meccanici osservabili direttamente nella nostra vita quotidiana ed è applicabile ai corpi continui, a velocità non prossime alla velocità della luce e per dimensioni superiori a quelle atomiche o molecolari. Dove non sono valide queste ipotesi è necessario applicare teorie meccaniche differenti, che tengano conto delle caratteristiche del sistema in esame.
+
+
+== Formulazioni ==
+Abitualmente si individuano all'interno della meccanica classica due formulazioni ben distinguibili:
+
+la meccanica newtoniana, formalizzata da Newton nel celebre testo pubblicato nel 1687 Philosophiae Naturalis Principia Mathematica, anche noto come Principia. Gli strumenti matematici tipici della meccanica newtoniana sono il calcolo aritmetico e i fondamenti dell'analisi matematica. Talvolta, specie nella letteratura anglofona, con "meccanica classica" non s'intende tutta la branca della fisica, ma soltanto la meccanica newtoniana.
+la meccanica razionale, o analitica, sviluppata da Lagrange, Hamilton, Maupertuis, Liouville, Jacobi e altri fra la seconda metà del XVIII secolo e la fine del XIX secolo. Gli strumenti matematici tipici della meccanica razionale sono il calcolo delle variazioni ed elementi di analisi matematica superiore.
+È bene osservare che le due formulazioni sono perfettamente equivalenti, dato che dall'una si può dimostrare l'altra e viceversa; pur partendo da princìpi diversi, i principi di Newton nel primo caso e il principio di minima azione nel secondo, e utilizzando metodi matematici differenti, giungono a risultati identici dal punto di vista sperimentale.
+
+
+== Principi ==
+
+
+=== Principio di relatività ===
+
+Per qualsiasi formulazione della meccanica classica risulta indispensabile introdurre un principio di relatività. Nonostante esistano teorie più generali, dotate di una validità più estesa, per definire la meccanica classica è più che sufficiente il principio di relatività enunciato nel 1639 da Galileo Galilei nel suo Dialogo sopra i due massimi sistemi del mondo:
+
+Relatività galileiana: "Le leggi fisiche sono covarianti in tutti i sistemi di riferimento inerziali"; in particolare, "le leggi fisiche sono invarianti per trasformazioni galileiane".
+
+
+=== Principi di Newton ===
+
+La meccanica newtoniana si basa su tre princìpi fondamentali:
+
+primo principio della dinamica (o principio di inerzia): "In un sistema inerziale, un corpo libero, cioè non sottoposto ad alcuna interazione reale, mantiene il suo stato di moto rettilineo uniforme o di quiete finché non interviene una interazione reale esterna a variare tale moto". Il principio di inerzia è una diretta conseguenza del principio di relatività di Galileo, ma non è possibile dimostrare quest'ultimo a partire dal principio di inerzia.
+secondo principio della dinamica: "Una forza impressa ad un corpo produce una variazione della sua quantità di moto nel verso della forza in maniera direttamente proporzionale alla forza applicata", cioè 
+  
+    
+      
+        
+          F
+        
+        =
+        
+          
+            
+              d
+              
+                p
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {F} ={\frac {d\mathbf {p} }{dt}}}
+  
+. Nel caso di masse costanti il secondo principio ha una formulazione ridotta, che è quella più nota: "L'accelerazione di un corpo è direttamente proporzionale alla forza ad esso applicata", cioè 
+  
+    
+      
+        
+          F
+        
+        =
+        m
+        
+          a
+        
+      
+    
+    {\displaystyle \mathbf {F} =m\mathbf {a} }
+  
+, dove la costante di proporzionalità tra la forza e l'accelerazione è proprio la massa inerziale del corpo;
+terzo principio della dinamica: "In un sistema di riferimento inerziale, la quantità di moto e il momento angolare totale rispetto ad un polo fisso di un sistema materiale libero, cioè non sottoposto a forze esterne, si conservano". Da ciò discende il principio di azione e reazione: "ad ogni azione corrisponde una reazione, uguale e contraria, agente sulla stessa retta di applicazione", dove per "azione" s'intendono le forze e i momenti reali.
+Questa non è l'unica formulazione possibile dei principi della meccanica newtoniana, ma ne esistono altre perfettamente equivalenti.
+
+
+=== Principio di minima azione ===
+
+In meccanica razionale, al posto dei tradizionali principi newtoniani, si definisce il principio di minima azione, noto anche come principio di azione stazionaria, che impone una condizione di tipo variazionale. Anche di quest'ultimo principio esistono molteplici definizioni, una di quelle più utilizzate afferma che:
+"Il moto naturale di un sistema è tale da minimizzare l'azione 
+  
+    
+      
+        
+          
+            A
+          
+        
+      
+    
+    {\displaystyle {\mathcal {A}}}
+  
+ del sistema", dove l'azione risulta definita come:
+
+  
+    
+      
+        
+          
+            A
+          
+        
+        :=
+        
+          ∫
+          
+            
+              t
+              
+                1
+              
+            
+          
+          
+            
+              t
+              
+                2
+              
+            
+          
+        
+        
+          
+            L
+          
+        
+        (
+        
+          
+            
+              
+                q
+              
+              ˙
+            
+          
+        
+        ,
+        
+          q
+        
+        ,
+        t
+        )
+        
+        
+          d
+        
+        t
+      
+    
+    {\displaystyle {\mathcal {A}}:=\int _{t_{1}}^{t_{2}}{\mathcal {L}}({\dot {\mathbf {q} }},\mathbf {q} ,t)\,\mathrm {d} t}
+  
+
+dove 
+  
+    
+      
+        
+          
+            L
+          
+        
+      
+    
+    {\displaystyle {\mathcal {L}}}
+  
+ è la funzione Lagrangiana, dipendente dalle coordinate generalizzate 
+  
+    
+      
+        
+          q
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          q
+          
+            n
+          
+        
+      
+    
+    {\displaystyle q_{1},\dots ,q_{n}}
+  
+, dalle loro derivate temporali e dal tempo. Minimizzando questo funzionale si ottengono le equazioni del moto tramite le equazioni di Eulero-Lagrange.
+
+
+== Discipline della meccanica classica ==
+
+
+=== Discipline della meccanica newtoniana ===
+Le discipline della meccanica newtoniana sono:
+
+cinematica, lo studio descrittivo del moto con le sole nozioni di spazio e tempo
+dinamica, lo studio del moto di un corpo attraverso le nozioni di forza e momento
+statica, lo studio dell'equilibrio di un corpo attraverso le nozioni di forza e momento
+Ciascuna disciplina può essere studiata nell'ambito del punto materiale, di un sistema di punti, di un corpo rigido o un corpo continuo.
+
+
+=== Discipline della meccanica razionale ===
+Meccanica lagrangiana
+Meccanica hamiltoniana
+
+
+=== Altre discipline della meccanica classica ===
+Meccanica del continuo
+Meccanica dei solidi
+Meccanica dei materiali
+Meccanica delle strutture
+Meccanica applicata alle macchine
+Meccanica dei fluidi
+Idrostatica
+Idrodinamica
+Fluidodinamica
+Meccanica del suono
+Meccanica celeste
+
+
+== Note ==
+
+
+== Bibliografia ==
+Domenico Chelini Elementi di meccanica razionale G. Legnani, 1860.
+Ugo Amaldi e Tullio Levi-Civita, Lezioni di meccanica razionale Padova: "La litotipo", editrice universitaria, 1920.
+Tullio Levi-Civita e Ugo Amaldi, Lezioni di meccanica razionale Bologna: N. Zanichelli, 1923.
+Giuseppe Armellini, Corso di meccanica razionale, Padova: "La Litotipo", 1921.
+Cesare Burali-Forti e Tommaso Boggio Meccanica razionale, Torino-Genova: S. Lattes & c., 1921.
+Pietro Burgatti Lezioni di meccanica razionale Bologna: N. Zanichelli, 1919.
+Gian Antonio Maggi Dinamica dei sistemi; lezioni sul calcolo del movimento dei corpi naturali. Pisa: E. Spoerri, 1921.
+Gian Antonio Maggi Dinamica fisica. Lezioni sulle leggi generali del movimento dei corpi naturali Pisa: E. Spoerri, 1921.
+Giovanni Gallavotti Meccanica elementare, Torino, Boringhieri, 1980, (tradotto in inglese da Springer; una edizione rivista in inglese è disponibile qui)
+(EN)  Heinrich Hertz The principles of mechanics: presented in a new form MacMillan, 1899.
+(EN)  Percival Frost Newton's Principia, first book, sections I, II, III with notes and illus. and a collection of problems principally intended as example of Newton's methods London: Macmillan, 1900.
+(EN)  Alexander Ziwet Elements of theoretical mechanics New York: McMillan, 1904.
+(EN)  Arthur Gordon Webster The dynamics of particles and of rigid, elastic, and fluid bodies Leipzig: B.G. Teubner, 1904.
+(EN)  James Hopwood Jeans An elementary treatise on theoretical mechanics Ginn & co., 1907.
+(EN)  Andrew Gray e James Gordon Gray A treatise on dynamics with examples and exercises MacMillan, 1911.
+(EN)  E. T. Whittaker A treatise on the analytical dynamics of particles and rigid bodies Cambridge: University Press, 1917.
+(EN)  Horace Lamb Higher Mechanics Cambridge: University Press, 1920.
+(EN)  A. E. H. Love Theoretical mechanics; an introductory treatise on the principles of dynamics, with applications and numerous examples Cambridge: University press, 1921.
+(EN)  R. Abraham e J. E. Marsden Foundations of Mechanics, Second Edition Addison-Wesley, 1987. ISBN 0-8053-0102-X
+(EN)  Vladimir Igorevich Arnold (1982): Mathematical methods of classical mechanics, Springer, ISBN 0-387-96890-3
+
+
+== Voci correlate ==
+Fisica classica
+Teoremi della meccanica classica
+Personaggi
+
+
+== Altri progetti ==
+
+ Wikiquote contiene citazioni sulla meccanica classica
+ Wikizionario contiene il lemma di dizionario «meccanica classica»
+ Wikimedia Commons contiene immagini o altri file sulla meccanica classica
+
+
+== Collegamenti esterni ==
+
+(EN) classical mechanics, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+ Applet di meccanica, su fisi.polimi.it. URL consultato il 29 marzo 2009 (archiviato dall'url originale il 19 novembre 2011).

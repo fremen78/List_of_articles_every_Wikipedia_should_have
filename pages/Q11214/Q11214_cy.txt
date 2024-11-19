@@ -1,0 +1,587 @@
+Hafaliad mathemategol yw hafaliad differol (differential equation), sy'n ymwneud â ffwythiant a'i ddeilliadau. Pan gaiff yr egwyddor hwn ei gymhwyso, cynrychiolir y ffwythiannau, fel arfer, fel gwerthoedd ffisegol, mae'r deilliannau'n cynrychioli y raddfa sy'n mesur y newid ac mae'r hafaliad yn diffinio y berthynas rhwng y ddau. Gan fod y fath berthynas mor gyffredin, mae' hafaliadau differol yn chwarae rhan flaenllaw mewn sawl disgyblaeth gan gynnwys peirianneg, ffiseg, economeg a bioleg.
+Mewn mathemateg bur, astudir hafaliadau differol o sawl perspectif gwahanol, ond yn bwysicach na'r un, o berspectif datrysiadau - y set o ffwythiannau sy'n bodloni'r hafaliad. Dim ond yr hafaliad differol symlaf un all gael ei ddatrus gan fformiwlâu penodol; fodd bynnag, gellir canfod rhai o briodweddau datrysiadau hafaliad differol arbennig heb ganfod eu hunion ffurf.
+Os nad oes mynegiad caeedig ar gael ar gyfer y datrysiad, gellir brasamcanu'r rhif drwy ddefnyddio cyfrifiaduron. Mae theori systemau dynamig yn rhoi'r pwyslais ar ddadansoddiadau o ansawdd y systemau hyn, drwy hafaliadau differol; ar y llaw arall, datblygwyd sawl dull rhifyddol, er mwyn cafod atebion, a hynny'n eitha cywir. 
+
+
+== Hanes ==
+Daeth hafaliadau differol i fodolaeth am y tro cyntaf pan ddatblywyd calcwlws gan Leibniz ac Newton. Ym Mhennod 2 o Methodus fluxionum et Serierum Infinitarum mae Newton yn rhestru tri math o hafaliadau differol:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  
+                    
+                      d
+                      y
+                    
+                    
+                      d
+                      x
+                    
+                  
+                
+                =
+                f
+                (
+                x
+                )
+              
+            
+            
+              
+              
+                
+                  
+                    
+                      d
+                      y
+                    
+                    
+                      d
+                      x
+                    
+                  
+                
+                =
+                f
+                (
+                x
+                ,
+                y
+                )
+              
+            
+            
+              
+              
+                
+                  x
+                  
+                    1
+                  
+                
+                
+                  
+                    
+                      ∂
+                      y
+                    
+                    
+                      ∂
+                      
+                        x
+                        
+                          1
+                        
+                      
+                    
+                  
+                
+                +
+                
+                  x
+                  
+                    2
+                  
+                
+                
+                  
+                    
+                      ∂
+                      y
+                    
+                    
+                      ∂
+                      
+                        x
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                =
+                y
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&{\frac {dy}{dx}}=f(x)\\[5pt]&{\frac {dy}{dx}}=f(x,y)\\[5pt]&x_{1}{\frac {\partial y}{\partial x_{1}}}+x_{2}{\frac {\partial y}{\partial x_{2}}}=y\end{aligned}}}
+  
+
+Mae'n datrys yr enghreifftiau hyn, ac eraill, drwy gyfres anfeidraidd, ac mae'n trafod y datrysiadau hyn gan nodi nad ydynt yn unigryw.
+Yn 1695, cynigiodd Jacob Bernoulli yr hyn a elwir heddiw yn "hafaliad differol Bernoulli". Mae'r hafaliad hwn yn un cyffredin, a ellir ei nodi yn y ffurf ganlynol:
+
+  
+    
+      
+        
+          y
+          ′
+        
+        +
+        P
+        (
+        x
+        )
+        y
+        =
+        Q
+        (
+        x
+        )
+        
+          y
+          
+            n
+          
+        
+        
+      
+    
+    {\displaystyle y'+P(x)y=Q(x)y^{n}\,}
+  
+
+Y flwyddyn ganlynol, canfyddodd Leibniz ddatrusiadau drwy ei symlhau.
+Dros amser, astudiwyd problem llinyn yn dirgrynnu, megis tant offeryn cerdd gan Jean le Rond d'Alembert, Leonhard Euler, Daniel Bernoulli, a Joseph-Louis Lagrange. Ym 1746, darganfu d'Alembert hafaliad tonnau un dimensiwn, ac ymhen deng mlynedd darganfu Euler hafaliad tonnau tri dimensiwn.
+Datblygwyd hafaliad Euler-Lagrange yn y 1750au gan Euler a Lagrange mewn cysylltiad â'u hastudiaethau o'r broblem tautochrone. Dyma'r broblem o bennu cromlin y bydd gronyn a phwysau (weighted particle) yn cwympo i bwynt sefydlog a hynny mewn cyfnod penodol o amser hefyd, yn annibynnol ar y man cychwyn. Datrysodd Lagrange y broblem hon ym 1755 ac anfonodd yr ateb i Euler. Datblygodd y ddau ddull Lagrange ymhellach a'i gymhwyso i fecaneg, a arweiniodd at lunio mecaneg Lagrangian.
+Yn 1822, cyhoeddodd Fourier ei waith ar lif gwres yn Théorie analysistique de la chaleur (Damcaniaeth Ddadansoddol Gwres), lle seiliodd ei ymresymiad ar gyfraith oeri Newton, sef, bod llif gwres rhwng dau folecwl cyfagos yn gymesur â'r gwahaniaeth bach iawn yn eu tymereddau. Yn y llyfr hwn roedd cynnig Fourier o'i hafaliad gwres ar gyfer trylediad dargludol gwres. Bellach dysgir yr hafaliad differol rhannol hwn i bob myfyriwr ffiseg fathemategol. Ym 1746, darganfu d'Alembert hafaliad tonnau un dimensiwn, ac ymhen deng mlynedd darganfu Euler hafaliad tonnau tri dimensiwn.
+
+
+== Enghraifft ==
+Mewn mecaneg glasurol, disgrifir cynnig corff yn ôl ei safle a'i gyflymder wrth i'r gwerth amser amrywio. MaeDeddfau mudiant Newton yn caniatáu i'r newidynnau hyn gael eu mynegi'n ddeinamig (o ystyried y safle, y cyflymder, y cyflymiad a'r grymoedd amrywiol sy'n gweithredu ar y corff) fel hafaliad differolol ar gyfer safle anhysbys y corff fel ffwythiant amser.
+Mewn rhai achosion, gellir datrys yr hafaliad differol hwn (a elwir yn hafaliad mudiant) yn echblyg.
+Enghraifft o fodelu problem yn y byd go-iawn gan ddefnyddio hafaliadau differol yw pennu cyflymder (velocity) pêl yn cwympo trwy'r awyr, gan ystyried disgyrchiant a gwrthiant aer yn unig. Cyflymiad y bêl tuag at y ddaear yw'r cyflymiad oherwydd disgyrchiant minws arafiad gwrthiant aer yn ei erbyn. Ystyrir bod disgyrchiant yn gyson, a gellir modelu gwrthiant aer fel cyfrannedd â chyflymder y bêl. Mae hyn yn golygu bod cyflymiad y bêl, sy'n ddeilliad o'i chyflymder, yn dibynnu ar y cyflymder (ac mae'r cyflymder yn dibynnu ar amser). Mae dod o hyd i'r cyflymder fel ffwythiant amser yn golygu datrys hafaliad differol a gwirio ei ddilysrwydd.
+
+
+== Mathau ==
+Gellir rhannu hafaliadau differol yn sawl math. Ar wahân i ddisgrifio priodweddau'r hafaliad ei hun, gall y dosbarthiadau hyn o hafaliadau differol helpu ddewis y dull o ddatrys. Mae'r gwahaniaethau a ddefnyddir yn gyffredin yn cynnwys a yw'r hafaliad yn gyffredin neu'n rhannol, yn llinol neu'n aflinol, ac yn homogenaidd neu'n heterogenaidd. Mae'r rhestr hon ymhell o fod yn gynhwysfawr a chewir llawer o briodweddau ac is-ddosbarthiadau hafaliadau differol eraill a all fod yn ddefnyddiol iawn mewn cyd-destunau penodol.
+
+
+=== Hafaliadau differol cyffredin ===
+Hafaliad differol cyffredin (ordinary differential equation; ODE) yw hafaliad sy'n cynnwys ffwythiant anhysbys o un newidyn real neu gymhlyg x, ei ddeilliadau, a rhai o ffwythiannau penodol x . Yn gyffredinol, cynrychiolir y ffwythiant anhysbys gan newidyn (a ddynodir yn aml y), sydd, felly, yn dibynnu ar x. Felly gelwir x yn aml yn newidyn annibynnol yr hafaliad. Defnyddir y term "cyffredin" mewn cyferbyniad â'r term hafaliad differol rhannol, a all fod mewn perthynas â mwy nag un newidyn annibynnol.
+Hafaliadau differol llinol yw'r hafaliadau differol sy'n llinol yn y ffwythiant anhysbys a'i deilliadau. Mae eu theori wedi'i datblygu'n dda, ac mewn llawer o achosion gall rhywun fynegi eu datrysiadau yn nhermau integrynnau.
+Mae'r rhan fwyaf o ODEs y deuir ar eu traws mewn ffiseg yn llinol. Felly, gellir diffinio'r rhan fwyaf o ffwythiannau arbennig fel datrysiadau hafaliadau differol llinol (gweler ffwythiant Holonomig).
+Gan na ellir mynegi datrysiadau hafaliad differol trwy fynegiant ffurf gaeedig, defnyddir dulliau rhifiadol yn gyffredin ar gyfer datrys hafaliadau differol ar gyfrifiadur.
+
+
+=== Hafaliadau differol rhannol ===
+Mae hafaliad differol rhannol (partial differential equation; PDE) yn hafaliad differol sy'n cynnwys ffwythiannau aml-newidyn anhysbys a'u deilliadau rhannol. (Mae hyn yn wahanol i hafaliadau differol cyffredin, sy'n delio â ffwythiannau newidyn sengl a'u deilliadau.) Defnyddir PDEs i lunio problemau sy'n cynnwys ffwythiannau sawl newidyn, ac maent naill ai'n cael eu datrys ar ffurf gaeedig, neu'n cael eu defnyddio i greu model cyfrifiadurol perthnasol.
+Gellir defnyddio PDEs i ddisgrifio amrywiaeth eang o ffenomenau mewn natur fel sain, gwres, electrostatics, electrodynameg, llif hylif, hydwythedd, neu fecaneg cwantwm. Gellir ffurfioli'r ffenomenau corfforol hyn sy'n ymddangos yn wahanol yn yr un modd o ran PDEs. Yn yr un modd ag y mae hafaliadau differol cyffredin yn aml yn modelu systemau deinamig un dimensiwn, mae hafaliadau differol rhannol yn aml yn modelu systemau amlddimensiwn. Mae hafaliadau differol rhannol stochastig yn cyffredinoli hafaliadau differol rhannol ar gyfer modelu hap.
+
+
+=== Hafaliadau differol aflinol ===
+Mae hafaliad differol aflinol yn hafaliad differol nad yw'n hafaliad llinol yn y ffwythiant anhysbys a'i ddeilliadau (nid ystyrir llinoledd neu aflinoledd yn nadleuon y ffwythiant yma). Ychydig iawn o ddulliau sydd ar gael i ddatrys hafaliadau differol aflinol yn union; mae'r rhai sy'n hysbys fel arfer yn dibynnu ar y fod gan yr hafaliad gymesureddau penodol. Gall hafaliadau differol aflinol arddangos ymddygiad cymhleth iawn dros gyfnodau amser estynedig, sy'n nodweddiadol o anhrefn. Mae hyd yn oed cwestiynau sylfaenolol am fodolaeth, unigrywiaeth, ac estynadwyedd atebion ar gyfer hafaliadau differol aflinol ar gyfer PDEs aflinol yn broblemau caled ac ystyrir bod eu datrys mewn achosion arbennig yn ddatblygiad sylweddol yn y ddamcaniaeth fathemategol (cf. Navier–Stokes existence and smoothness). Fodd bynnag, os yw'r hafaliad differolol yn gynrychiolaeth wedi'i llunio'n gywir o broses gorfforol ystyrlon, yna disgwylir iddo gael datrysiad.
+Mae hafaliadau differol llinol yn aml yn ymddangos fel brasamcan i hafaliadau aflinol. Dim ond o dan amodau cyfyngedig y mae'r brasamcanion hyn yn ddilys. Er enghraifft, mae hafaliad yr osgiladur harmonig yn frasamcan i'r hafaliad pendil aflinol sy'n ddilys ar gyfer osgiliadau osgled bach (small amplitude oscillations).
+
+
+=== Trefn yr hafaliadau ===
+Disgrifir hafaliadau differol yn ôl eu trefn, a bennir gan y term sydd a'r deilliadau uchaf. Hafaliad differol gorchymyn cyntaf yw hafaliad sy'n cynnwys deilliadau cyntaf yn unig, hafaliad differol o'r ail-orchymyn yw hafaliad sy'n cynnwys yr ail ddeilliad, ac ati. Mae gan hafaliadau differol sy'n disgrifio ffenomenau naturiol bron bob amser ddeilliadau gorchymyn cyntaf ac ail ynddynt, ond mae rhai eithriadau, fel yr hafaliad ffilm denau, sy'n hafaliad differol rhannol o'r pedwerydd gorchymyn.
+
+
+=== Enghreifftiau ===
+Yn y grŵp cyntaf o enghreifftiau mae u yn ffwythiant anhysbys o x, ac mae c ac ω yn gysonion sydd i fod yn hysbys. Ceir dau ddosbarth eang o hafaliadau differol cyffredin a rhannol sy'n cynnwys gwahaniaethu rhwng hafaliadau differol llinol ac aflinol, a rhwng hafaliadau differol homogenaidd a rhai heterogenaidd.
+
+Hafaliad differol cyffredin llinol o'r gorchymyn-cyntaf homogenaidd
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        c
+        u
+        +
+        
+          x
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {du}{dx}}=cu+x^{2}.}
+  
+
+Hafaliad differol cyffredin llinol o'r ail-orchymyn homogenaidd:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        x
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}-x{\frac {du}{dx}}+u=0.}
+  
+
+Hafaliad differol cyffredin llinol o'r ail-orchymyn homogenaidd sy'n disgrifio'r Osgiliadur harmonig:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          ω
+          
+            2
+          
+        
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}+\omega ^{2}u=0.}
+  
+
+Hafaliad differol cyffredin aflinol gorchymyn-cyntaf heterogenaidd:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        4.
+      
+    
+    {\displaystyle {\frac {du}{dx}}=u^{2}+4.}
+  
+
+Hafaliad differol cyffredin afliniol ail-orchymyn (oherwydd ffwythiant sin) sy'n disgrifio symudiad pendil o hyd L:
+
+  
+    
+      
+        L
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        g
+        sin
+        ⁡
+        u
+        =
+        0.
+      
+    
+    {\displaystyle L{\frac {d^{2}u}{dx^{2}}}+g\sin u=0.}
+  
+
+Yn y grŵp nesaf o enghreifftiau, mae'r swyddogaeth anhysbys u yn dibynnu ar ddau newidyn x a t neu x ac y.
+
+Hafaliad differol rhannol llinol gorchymyn-cyntaf homogenaidd:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        t
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}+t{\frac {\partial u}{\partial x}}=0.}
+  
+
+Homogeneous second-order linear constant coefficient partial differential equation of elliptic type, the Laplace equation:
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial x^{2}}}+{\frac {\partial ^{2}u}{\partial y^{2}}}=0.}
+  
+
+Hafaliad differol rhannol aflinol trydydd-gorchymyn homogenaidd :
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        6
+        u
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        −
+        
+          
+            
+              
+                ∂
+                
+                  3
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  3
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}=6u{\frac {\partial u}{\partial x}}-{\frac {\partial ^{3}u}{\partial x^{3}}}.}
+  
+
+
+== Cysyniadau cysylltiedig ==
+Mae hafaliad differol oedi (DDE) yn hafaliad ar gyfer ffwythiant newidyn sengl, a elwir fel arfer yn amser, lle rhoddir deilliad y ffwythiant ar amser penodol o ran gwerthoedd y ffwythiant ar adegau cynharach.
+Hafaliad integro-differol (IDE) yw hafaliad sy'n cyfuno agweddau ar hafaliad differol a hafaliad integrol.
+Mae hafaliad differol stochastig (SDE) yn hafaliad lle mae'r maint anhysbys yn broses stochastig ac mae'r hafaliad yn cynnwys rhai prosesau stochastig hysbys, er enghraifft, y broses Wiener yn achos hafaliadau trylediad.
+Mae hafaliad differol rhannol stochastig (SPDE) yn hafaliad sy'n cyffredinoli SDEs i gynnwys prosesau sŵn amser-gofod, gyda chymwysiadau mewn theori maes cwantwm a mecaneg ystadegol .
+Mae hafaliad algebraidd differol (DAE) yn hafaliad differol sy'n cynnwys termau differol ac algebraidd, a roddir ar ffurf ymhlyg.
+
+
+== Cymhwyso ==
+Mae astudio hafaliadau differol yn faes eang mewn mathemateg bur a chymhwysol, ffiseg a pheirianneg. Mae'r holl ddisgyblaethau hyn yn ymwneud â phriodweddau hafaliadau differol o wahanol fathau. Mae mathemateg bur yn canolbwyntio ar fodolaeth a datrysiadau unigryw, tra bod mathemateg gymhwysol yn pwysleisio cyfiawnhad trwyadl y dulliau ar gyfer brasamcanu atebion. Chwaraea hafaliadau differol ran bwysig wrth fodelu bron pob proses ffisegol, technegol neu fiolegol, o fudiant nefol, i ddylunio pontydd, i ryngweithio rhwng niwronau ayb. Efallai na fydd hafaliadau differol fel y rhai a ddefnyddir i ddatrys problemau bywyd go iawn o reidrwydd yn ac nad oes ganddynt atebion ffurf gaeedig. Yn hytrach, gellir brasamcanu atebion trwy ddefnyddio dulliau rhifiadol.
+Gellir llunio llawer o ddeddfau sylfaenol ffiseg a chemeg fel hafaliadau differol. Mewn bioleg ac economeg, defnyddir hafaliadau differol i fodelu ymddygiad systemau cymhleth. Datblygodd theori fathemategol hafaliadau differol yn gyntaf ynghyd â'r gwyddorau lle'r oedd yr hafaliadau wedi tarddu a lle roedd y canlyniadau'n berthnasol. Fodd bynnag, gall problemau amrywiol, weithiau'n tarddu o feysydd gwyddonol eithaf gwahanol, arwain at hafaliadau differol sydd yn union yr un fath. Pryd bynnag y bydd hyn yn digwydd, gellir ystyried theori fathemategol y tu ôl i'r hafaliadau fel egwyddor sy'n uno y tu ôl i ffenomenau amrywiol. 
+Er enghraifft, ystyriwch pelydru golau a sain yn yr atmosffer, a thonnau ar wyneb pwll. Gellir disgrifio pob un ohonynt gan yr un hafaliad differol rhannol ail-orchymyn, hafaliad y tonnau, sy'n caniatáu inni feddwl am olau a sain fel ffurfiau o donnau, yn debyg iawn i donnau cyfarwydd yn y dŵr. Mae dargludiad gwres, y datblygwyd ei ddamcaniaeth gan Joseph Fourier, yn cael ei lywodraethu gan hafaliad differol rhannol ail-orchymyn arall, yr hafaliad gwres. Mae'n ymddangos bod llawer o brosesau trylediad, er eu bod yn ymddangos yn wahanol, yn cael eu disgrifio gan yr un hafaliad; mae hafaliad Black-Scholes mewn cyllid, er enghraifft, yn gysylltiedig â'r hafaliad gwres.
+Mae nifer yr hafaliadau differol sydd wedi derbyn enw, mewn amrywiol feysydd gwyddonol yn dyst o bwysigrwydd y pwnc. 
+
+
+== Meddalwedd ==
+Gall rhai mathau o feddalwedd meddal CAS (computer algebra system) ddatrys hafaliadau differol. Mae'n werth sôn am y nwyddau meddal CAS hyn a'u gorchmynion:
+
+ExpressionsinBar
+Maple: dsolve
+SageMath
+Xcas: desolve(y'=k*y,y)
+
+
+== Cyfeiriadau ==
+
+
+== Dolenni allanol ==
+ Cyfryngau perthnasol Differential equations ar Gomin Wicimedia
+Lectures on Differential Equations MIT Open CourseWare Videos
+Online Notes / Differential Equations Paul Dawkins, Lamar University
+Differential Equations, S.O.S. Mathematics
+Introduction to modeling via differential equations Introduction to modeling by means of differential equations, with critical remarks.
+Mathematical Assistant on Web Symbolic ODE tool, using Maxima
+Exact Solutions of Ordinary Differential Equations
+Collection of ODE and DAE models of physical systems Archifwyd 2008-12-19 yn y Peiriant Wayback MATLAB models
+Notes on Diffy Qs: Differential Equations for Engineers An introductory textbook on differential equations by Jiri Lebl of UIUC
+Khan Academy Video playlist on differential equations Topics covered in a first year course in differential equations.
+MathDiscuss Video playlist on differential equations

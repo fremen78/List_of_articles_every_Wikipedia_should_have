@@ -1,0 +1,83 @@
+Internet on mis tahes arvutivõrkude võrgustiku üldnimetus. Ülemaailmse TCP/IP-protokollistikku kasutava arvutivõrkude võrgu nimi on Internet.
+Kõige lihtsamalt öeldes on Internet suur hulk omavahel ühendatud arvuteid. Selleks, et arvutid omavahel suhelda saaksid, kasutatakse paljusid protokolle. Protokoll on sisuliselt lihtsalt üks reegel või reeglite kogum, mis määrab, kuidas midagi tehakse. Ilma protokollideta ei oleks võimalik omavahel infot vahetada. Tänapäeval arvatakse olevat internetti ühendatud seadmeid 20 miljardi kandis.
+Tuleks veel eristada internetti ja veebi (ingl World Wide Web). Need on kaks eri asja. Internet lubab arvutitel omavahel ühendusse astuda. Tegemist on ülemaailmse süsteemiga. Veeb on lihtsalt üks viisidest, kuidas informatsiooni saab interneti kaudu jagada. Kuna see on kõige levinum viis, kuidas me internetti tänapäeval kasutame, siis peetakse seda lihtsalt interneti sünonüümiks. Tegelikult võib internetti kasutada info vahetamiseks ka ilma veebita.
+Internetiga seostub mõiste "nutistu" (ingl internet of things). Tegelikult mõeldaksegi selle all internetti, aga selle vahega, et enam ei ühendata omavahel ainult arvuteid või servereid, vaid kõiki esemeid, millel on interneti tugi, näiteks telefonid, tahvelarvutid, külmkapid, televiisorid jne.
+
+
+== Ajalugu ==
+Tänapäevast Internetti hakati välja töötama 1960. aastatel USA kaitseministeeriumi katselisest arvutivõrgust ARPANET, mis hiljem jaotati tsiviilkasutusega ARPANET-iks ja salastatud sõjaväeliseks MILNET-iks. Aastail 1962–1968 arendati välja paketipõhine tsentraliseerimata andmesidevõrk, et tagada töökindlus ka suurte purustuste (näiteks tuumasõja) korral. 1969. aastal toimusid esimesed õnnestunud katsed pakettedastusprotokolliga California Ülikoolis Los Angeleses (UCLAs) professor Kleinrocki juhtimisel ning 1970. aastate alguses töötasid Vint Cerf ja Robert Kahn välja TCP/IP-protokolli.
+1983. aastal käivitati esimene TCP/IP-arvutivõrk 200 hostarvutiga ja järgmisel aastal alustas tööd sellel põhinev kommertsarvutivõrk.
+1980. aastate lõpus hakati Genfis Euroopa Tuumauuringute Keskuse CERN-i uurimislaboris arendama jooniseid ja viiteid sisaldavate dokumentide edastamise süsteemi inglase Tim Berners-Lee juhtimisel. Aluseks võeti uus loodav hüpertekstikeel HTML (HyperText Markup Language).
+1993 formuleeris Tim Berners-Lee oma hüpertekstikeele (HTML-i) esimese versiooni. Teaberuum, kus seda kasutama hakati, nimetati veebiks (World Wide Web, WWW). Samal ajal töötas Marc Andreessen USA Illinoisi Ülikoolist välja esimese mugava kasutajaliidesega brauseri Mosaic 1.0 ning Interneti ja veebi laialdasem levik võis alata.
+2012. aasta 30. juuni seisuga oli maailmas üle 2,4 miljardi internetikasutaja.
+
+
+== Brauserid ==
+Brauser ehk veebilehitseja on tarkvaraline rakendus veebilehtede kuvamiseks. Selle lisandprogrammidega saab kasutada teisi Interneti-põhiseid teenuseid.
+
+
+== Teenused ==
+Internetis sagedamini kasutatavad andmevahetusprotokollid on IP, TCP, UDP, DNS, PPP, SLIP, ICMP, POP3, IMAP, SMTP, HTTP, HTTPS, SSH, telnet, FTP, LDAP ja SSL/TLS.
+Populaarsemad teenused, mis neid protokolle kasutavad, on e-post, veeb, Useneti uudiserühmad, failide jagamine, kiirsuhtlus, IRC ja MUD. Neist enim kasutatakse e-posti ja veebi ning paljud teenused põhinevad omakorda neil, nagu näiteks postiloendid ja ajaveebid. Internet võimaldab samuti reaalajas pakutavaid teenuseid, näiteks veebiraadiod ja videopildi otseülekanded.
+
+
+== Domeen ==
+Domeen on nimeline valdus Internetis, mille nimi koostatakse tähtede ja numbrite kombinatsioonina. Domeenis saab omakorda olla mitut tüüpi nimesid, kõige levinum on seda kasutada, et nimele IP-aadress vastavusse seada. Domeenide süsteem on hierarhiline – tipmine on esimese astme domeen, edasi teise astme domeen jne.
+
+
+== OSI mudel ==
+
+OSI (Open Systems Interconnection) mudel on loogiline mudel, mis näitab, kuidas peaks interneti süsteem toimima. Selleks jagatakse erinevad komponendid eri kihtidesse. OSI mudel koosneb seitsmest kihist.
+7. Rakenduskiht – selles kihis tegeletakse rakendustega ehk see mida kasutaja näeb. Siia kihti kuuluvad Mozilla Firefox, Google Chrome, Safari, aga ka HTTPS-, FTP- ja SNMP-protokollid.
+6. Esitluskiht – selles kihis toimub kõik, mis toimub rakenduskihi taga. Tegeleb andmete krüpteerimise ja dekrüpteerimisega. Viib andmed sellisele kujule, mida rakenduskiht aktsepteerib. Selles kihis asuvad näiteks ASCII, JPEG, GIF.
+5. Seansikiht – selles kihis luuakse sessioon kahe seadme vahel.
+4. Transpordikiht – seal toimub andmete edastamine. Kui palju andmeid edastatakse ja kuidas, seda reguleeritakse siin. TCP- ja UDP-protokollid asuvad selles kihis.
+3. Võrgukiht – tegeleb marsruutimisega. Siia kihti kuuluvad kõik ruuterid ja IP-aadressid.
+2. Kanalikiht – tegeleb füüsilise adresseerimisega. Muudab bitid kaadriteks ja vastupidi. Ühesõnaga tegutseb võrgukihi ja füüsilise kihi vahendajana. Tegeleb vigade tuvastamisega, aga ka andmete edastamise kiirusega. Selles kihis asuvad MAC-aadressid ja kommutaatorid (ingl switches).
+1. Füüsiline kiht – selles kihis asuvad füüsilised esemed, näiteks kõik võrgukaablid.
+
+
+== TCP/IP ==
+TCP/IP-on protokollide kogum, mille kaks peamist protokolli on nimest tulenevalt TCP (ingl Transmission Control Protocol) ehk edastusohje protokoll ja IP (ingl Internet Protocol) ehk internetiprotokoll. TCP/IP loodi kohe pärast interneti loomist 1970.aastatel samuti USA sõjaväe poolt. TCP/IP ongi mõeldud andmevahetuseks loodud interneti süsteemi jaoks. Luues TCP/IP-d taheti, et andmed kindlasti kohale jõuaksid isegi siis, kui toimub massiline tuumarünnak. Selleks loodi TCP/IP-protokoll nii, et see kontrolliks ka, kas paketid kohale jõuavad. Interneti-protokoll ehk IP ühendab omavahel kaks võrgu otspunkti. Seda tehakse IP-aadresside abil ehk siis igal võrgus oleval punktil (ruuteril) peab olema unikaalne IP-aadress, et neid saaks eristada. Kui ühendus on olemas, tuleb mängu TCP, mis ütleb ja kontrollib seda, kuidas andmeid vahetatakse. TCP saadab andmeid pakettide kaupa ja kontrollib, kas andmed kohale jõuavad. Selleks saadetakse algul väga väike andmepakett ja kui tuleb signaal, et teine osapool on andmepaketi kätte saanud, siis saadetakse 2 korda suurem pakett. Kui tuleb jälle signaal, et pakett on kätte saadud, siis saadetakse jälle 2 korda suurem pakett. Kui ei esine tõrkeid, jätkatakse nii kuni teatud ülempiirini. Kui tekivad tõrked, hakkab kogu protsess jälle otsast pihta. Igal paketil on olemas päis, kus on kirjas vajalik info, et pärast saaks pakettidest terviku kokku panna. Olgu selleks siis pilt või mõni muu fail. Sellisest suhtlusest tulenevalt ei sobi TCP/IP näiteks reaalsete kõnede tegemiseks, kuna alguses liigub infot vähem kui vaja, ja kui esineb tõrge, siis jällegi ei saa piisavas koguses infot läbi.
+On olemas kahte tüüpi IP-aadresse. IP versioon 4 ehk IPv4 ja IP versioon 6 ehk IPv6. Antud artiklis kasutan ma ainult IPv4-aadresse kuna tänapäeval on see jätkuvalt kõige levinum viis. Kuna seadmete hulk, mis tahavad liituda ülemaailmse internetiga aina kasvab, siis ühel päeval saavad IPv4-aadressid otsa ja kasutusele tuleb võtta IPv6-aadressid. Vt IPv6.
+
+
+== DNS ==
+DNS (ingl Domain Name System) ehk domeeninimede süsteem on süsteem, mis võimaldab internetiaadresside tõlkimist – teisendamist. Kui sisestada veebibrauserisse aadress www.google.com, siis see ei tähenda arvutile midagi. Arvuti hoolib ainult IP-aadressidest. Teisenduseks on olemas DNS-serverid. DNS-server on lihtsalt üks server, kus IP-aadress ja inimesele loetav aadress (näiteks www.google.com) on pandud vastavusse. Näiteks 216.58.207.227 = www.google.com (lihtsalt näide). Nii ei pea inimesed mäletama peast kõiki IP-aadresse, mis oleks üsna jama. IPv4-aadressid pole tegelikult veel nii hullud, aga kui kunagi peaks kogu süsteem ümber minema ipv6 peale, siis oleks olukord ikka päris hull. Siinkohal on ka võimalik turvaauk, kui mõni häkker peaks suutma ära muuta DNS-serveri aadressi, siis saab ta väga lihtsalt kontrolli arvuti üle. Üheks väga levinud petuskeemiks on teiste veebilehtede maskeerimine. Näiteks keegi maskeerib panga lehekülje identseks ja suudab DNS-serveri ära vahetada enda oma peale, siis võib ta väga lihtsalt võrguliikluse suunata ümber. DNS-servereid saab vaadata kas terminali kaudu või näiteks ruuteri seadetest. Internetiteenuse pakkujad on automaatselt ette ära seadistanud primaarse ja sekundaarse DNS-serveri, kuid neid on võimalik muuta kui tekib tahtmine. Niiviisi saab ka tööandja kontrollida enda töötajaid kõige lihtsamalt, näiteks pannes www.facebook.com juurde mõni kasutu IP-aadress. Niiviisi ei ole töötajal enam juurdepääsu leheküljele www.facebook.com. DNS-serverite puhul võiks veel ühte asja teada. Iga arvuti on seadistatud automaatselt kõigepealt otsima vastavat IP-aadressi /etc/hosts kaustast, Windowsi arvutis asub see kaust aadressil C:\Windows\System32\drivers\etc. Kui sinna kausta panna ise mõni IP-aadress vastama mõne lehekülje aadressiga, siis arvuti alati avab selle lehekülje vastava IP järgi, mis sinna kausta kirjutati. Ehk alati esmalt otsitakse IP-aadressi kaustast Hosts. Pärast seda otsitakse vastavale lehekülje aadressile vastet lokaalsest DNS-serverist, milleks on väiksemates süsteemides ruuter. Suurtel kontsernidel võib selleks olla enda DNS-server. Seejärel otsitakse primaarsest DNS-serverist. Kui ka sealt ei leita, siis otsitakse vastavat aadressi sekundaarsest DNS-serverist.
+
+
+== DHCP ==
+DHCP (ingl Dynamic Host Control Protocol) ehk dünaamiline hostikonfiguratsiooni protokoll on andmevahetuse protokoll, mis võimaldab DHCP-serveritel anda välja teatud ajaks dünaamilisi IP-aadresse. IP-aadresse on kahte sorti, on dünaamilised ja staatilised. Staatilised on need, mis ei muutu kunagi. Dünaamilised muutuvad teatud aja tagant. DHCP on ülimalt kasulik suurte võrkude puhul, aga ka kasulik väiksemate puhul. Näiteks kui sul on kohvikus Wi-Fi ja seda kohvikut külastab päevas 1000 inimest, siis ei ole varsti enam ühtki unikaalset IP-aadressi järel. Ja siis tekib üks paras segadus, kui mitu arvutit üritavad kasutada sama IP-aadressi. Osa pakette läheb ühte arvutisse ja osa teise ning mitte kumbki ei saa infot kätte. Poolikute pakettidega pole midagi peale hakata, kuna ülejäänud informatsioon on puudu. Samas need inimesed vahetuvad pidevalt ja kui oleks võimalus, et kui keegi lahkub ja järgmine tuleb ning tema saaks sama IP-aadressi, mis lahkuval inimesel oli, siis ei tekiks probleemi. Ja seda just DHCP võimaldabki. Teiseks ülimalt suureks boonuseks on lihtsus, DHCP teeb elu lihtsamaks. Kui keegi tahaks ükskõik kust internetti pääseda, siis igaüks peaks käsitsi sisestama nii IP-aadressi, subnet maski (alamvõrgu aadressi), DNS-serverite aadressid ja ka default lüüs, et saada internetiga ühendus. Mis need on sinna veel jõuame. DHCP puhul on üks vajalik mõiste nimega lease time, see näitabki kui kaua tohib üks seade hoida kindlat IP-aadressi enda käes. Pärast 50% lease time aega küsib arvuti või mis iganes seade DHCP-serveri käest, kas ta võib seda IP-aadressi edasi hoida. Näiteks kui Lease time on 1 päev, siis 12 tunni pärast küsib arvuti kas ta võib IP-aadressi alles hoida. Niimoodi arvuti või mis iganes seade annab teada, et ta on veel olemas. Kui ühendust ei toimu, siis server teab, et kui ühendust ei ole olnud, siis pärast lease time lõppu võib IP-aadressi vabaks jälle lasta. Samas kui DHCP-server ära kaob ehk arvuti ei saa ühendust, siis ta hoiab IP-aadressi ja küsib jälle 50% pärast uuesti. Ehk kui lease time oli 1 päev, siis esimest korda küsib 12 tunni pärast ja järgmisel korral 6 tunni pärast jne. Kui lõpuks jõuab niimoodi nulli, siis sõltub juba seadmest ,kas ta hoiab seda IP-aadresst või mitte. Lease time on võimalik määrata igaühel oma ruuteri seadetest. Siinkohal tuleks veel aru saada, et DHCP võib olla täiesti eraldi server suurtes korporatsioonides, lihtsalt ongi eraldi selleks ülesandeks server püsti pandud. Kodus aga mängib DHCP-serveri rolli ruuter.
+Ruuteril on olemas tegelikult kaks IP-aadressi. On olemas väline ja sisemine. Sisemine on tavaliselt aadressiga 192.168.1.1. Ruuteri sisemist IP-aadressi kutsutakse default gateway. See on staatiline IP ehk see ei muutu. Ruuteril on ilmselgelt on olemas ka väline IP-aadress, mis on pääsuks internetti ja see peab ka unikaalne olema. Kuid väline IP ei pruugi olla staatiline, vaid on enamasti koduvõrkudes dünaamiline. Siin tuleb juba mängu ISP (ingl Internet service provider) ehk internetiteenuste pakkuja, eestis võib selleks olla näiteks telia. Staatilised IP-aadressid hoitakse äridele, kes ilmselgelt maksavad ka selle eest. Neile on väga oluline, et nende veebileht või mis iganes teenus internetis asuks samal aadressil. Dünaamilisi on vaja selleks, et maailmas on miljardeid arvuteid ja igaühele ei jätkuks staatilisi IP-aadresse. Lisaks paljud ei kasuta internetti 24/7 ja seega IP-aadress võib muutuda. Selleks, et staatilist IP-aadressi saada tuleb kontakteeruda oma ISP-ga. Tavaliselt dünaamilised IP-aadressid ei muutu tihti, võivad kesta kuid ja isegi aastaid. Kui teed ruuterile restardi üle pika aja siis saad tõenäoliselt uue IP-aadressi. Kohalikus koduvõrgus võid aga oma arvutile või mis iganes seadmele ise määrata staatilise IP-aadressi kui on soovi. Silmas tuleks pidada, et see oleks väljaspool ruuteri pakutavaid IP-aadresseid. Muidu võib kaks seadet lihtsalt juhuslikult sama IP-aadressi saada. Staatilisest IP-aadressist on kasu näiteks koduvõrgus serveri kasutamisel. Aga see on vajalik ka siis, kui tahta üles seada üleinternetilist serverit, mis on muidugi juba keerulisem teema.
+
+
+== NAT ==
+NAT (ingl Network address translation) ehk võrguaadresside tõlkimine on viis kuidas muuta ruuteri taga olevad ühendused tulevat ruuterist endast. Sisuliselt NAT muudab ära andmepakkide päised. Kui varem tulid andmepaketid arvuti IP-aadressilt, siis ruuter asendab andmepakettide päistes oleva arvuti IP-aadressi enda IP-aadressiga. Nii paistab välisele võrgule, et andmepaketid tulevad ruuterist kuigi tegelikult tulevad need ruuteri taga olevast arvutist (võib olla mis iganes seade, arvuti on lihtsalt kõige levinum näide). NAT on igale ruuterile sisse ehitatud ja toimib automaatselt. Siit tulenevalt ei ole vaja igale võrgus olevale seadmele unikaalset IP-aadressi terves maailmas. Niiviisi saaksid kohe IP-aadressid otsa. Tänu NAT-ile võivad ruuteri taga olevad seadmed kasutada uuesti neid IP-aadresse, mis juba on välises võrgus ära kasutatud.
+
+
+== Pordid ==
+Port on suhtlemise lõpp-punkt operatsioonisüsteemis. Igal protokollil on oma vaikeport. Iga programm kasutab mõnda porti, selle kaudu saab ühenduse internetiga. IP-aadressiga koos teab ISP, kes mida teeb. NAT töötab ka portide põhimõttel. Üks port saab teenindada korraga ühte tegevust (protokolli), aga üks programm võib kasutada mitut porti. Portide numbrid on vahemikus 0–65535. Esimest 1024 porti ehk porte numbritega 0–1023 kutsutakse üldtuntud portideks. Näiteks FTP (protokoll, mille abil saab faile üles ja alla laadida) kasutab porti 21, SSH (protokoll, mille abil saab serverile juurdepääsu interneti kaudu) kasutab porti 22, HTTP (protokoll, millega saab näha veebilehti) kasutab porti 80 ning HTTPS (sama mis HTTP, aga krüpteeritud) kasutab porti 443..
+Kõik on ilmselt kuulnud tulemüürist. Tegelikult kõik, mida tulemüür teeb, on portide blokeerimine.
+
+
+== Vaata ka ==
+e-kiri
+Internetisotsioloogia
+Internetiühendus
+Võrguneutraalsus
+Digilõhe
+Interneti kuulsuste hall
+Eesti internet
+Interneti turvalisus
+
+
+== Viited ==
+
+
+== Välislingid ==
+
+Kaido Kikkas, 2. loeng – Internet: ülevaade ja kujunemislugu
+IT ja sidetehnika seletav sõnaraamat: Internet
+Sidesüsteemid ja võrgud
+Koitmas on interneti kolmas põlvkond, kus inimesed võtavad suurfirmadelt võimu tagasi, Geenius, 2. märts 2018
+Jongho Heo, Juhwan Oh , S. V. Subramanian, Yoon Kim, Ichiro Kawachi, Addictive Internet Use among Korean Adolescents: A National Survey, 5. veebruar 2014

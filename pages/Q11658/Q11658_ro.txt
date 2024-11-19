@@ -1,0 +1,487 @@
+Un transformator este un dispozitiv electric static care transferă energie electrică dintr-un circuit (primarul transformatorului) în altul (secundarul transformatorului), funcționând pe baza legii inducției electromagnetice. Un curent electric alternativ care străbate înfășurarea primară produce un câmp magnetic  în miezul magnetic al transformatorului, acesta la rândul lui producând o tensiune electrică alternativă în înfășurarea secundară.
+
+
+== Funcția transformatorului ==
+În circuitele și rețelele electrice, transformatorul realizează transfer de energie (electrică) dintr-un circuit (rețea) de anumiți parametri - tensiune U, curent I, rezistență R - , în energie electrică cu alți parametri (valori) de circuit, în condițiile unei separări (izolări) galvanice între cele două circuite (rețele) electrice. Practic se acceptă, că energia electrică obținută la ieșire, în circuitul (circuitele, dacă sunt mai multe) secundar este aproximativ egală cu cea de la intrare, din circuitul primar. Totuși în calcule de proiectare pierderile de energie (din transformator) sunt luate în considerație.
+
+
+== Principiul de funcționare ==
+
+Presupunem că ambele circuite ale transformatorului au spirele înfășurate în același sens și că au N1 respectiv N2 spire [1] Arhivat în 24 august 2009, la Wayback Machine.. Transformatorul se consideră că funcționează în gol (i2=0, adică circuitul secundar este deschis). Dacă se aplică transformatorului tensiunea alternativă u1 de valoare efectivă U1 în primar apare curentul de intensitate i1 și valoare efectivă I1. Acesta, conform legii Biot-Savart, dă naștere unui flux magnetic alternativ având valoarea instantanee Φ = Φmcos ωt. Acest flux variabil care străbate spirele ambelor înfășurări face să apară în cele N1 spire ale primarului o tensiune electromotoare (t.e.m) de autoinducție:
+
+  
+    
+      
+        
+          e
+          
+            1
+          
+        
+        =
+        −
+        
+          N
+          
+            1
+          
+        
+        
+          
+            
+              
+                d
+              
+              Φ
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        
+          N
+          
+            1
+          
+        
+        ω
+        
+          Φ
+          
+            m
+          
+        
+        s
+        i
+        n
+        ω
+        t
+      
+    
+    {\displaystyle e_{1}=-N_{1}{\frac {\mathrm {d} \Phi }{\mathrm {d} t}}=N_{1}\omega \Phi _{m}sin\omega t}
+  
+
+iar în secundar, t.e.m. este:
+
+  
+    
+      
+        
+          e
+          
+            2
+          
+        
+        =
+        −
+        
+          N
+          
+            2
+          
+        
+        
+          
+            
+              
+                d
+              
+              Φ
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        
+          N
+          
+            2
+          
+        
+        ω
+        
+          Φ
+          
+            m
+          
+        
+        s
+        i
+        n
+        ω
+        t
+      
+    
+    {\displaystyle e_{2}=-N_{2}{\frac {\mathrm {d} \Phi }{\mathrm {d} t}}=N_{2}\omega \Phi _{m}sin\omega t}
+  
+
+Facem raportul celor două relații:
+
+  
+    
+      
+        
+          
+            
+              e
+              
+                1
+              
+            
+            
+              e
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                1
+              
+            
+            
+              N
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {e_{1}}{e_{2}}}={\frac {N_{1}}{N_{2}}}}
+  
+
+Conform legii lui Ohm, în circuitul primar suma dintre tensiunea de alimentare u1 și t.e.m. de autoinducție e1 trebuie să fie egală cu căderea de tensiune din primar:
+
+u1 + e1 = R1 i1
+unde R1 este rezistența primarului. De obicei, valoarea lui R1 este mică și produsul R1i1 se poate neglija, astfel încât:
+
+e1 ≈ -u1
+Semnul „−” arată că t.e.m. de autoinducție e1 este în opoziție de fază cu tensiunea rețelei de alimentare a transformatorului, u1. La funcționarea în gol a transformatorului, t.e.m. e2 este egală cu tensiunea u2 de la bornele secundarului:
+
+e2 = -u2
+Rezultă deci, că:
+
+  
+    
+      
+        
+          
+            
+              e
+              
+                1
+              
+            
+            
+              e
+              
+                2
+              
+            
+          
+        
+        ≃
+        
+          
+            
+              U
+              
+                1
+              
+            
+            
+              U
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {e_{1}}{e_{2}}}\simeq {\frac {U_{1}}{U_{2}}}}
+  
+
+T.e.m. e1 și e2 sunt în fază, iar tensiunile u1 și u2 sunt în opoziție de fază (semnul  -  din fața raportului u1 / u2 indică această defazare, de π radiani). În valoare absolută, rezultă o relație și între valorile efective ale mărimilor alternative:
+
+  
+    
+      
+        
+          
+            
+              U
+              
+                1
+              
+            
+            
+              U
+              
+                2
+              
+            
+          
+        
+        ≃
+        
+          
+            
+              E
+              
+                1
+              
+            
+            
+              E
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                1
+              
+            
+            
+              N
+              
+                2
+              
+            
+          
+        
+        =
+        k
+      
+    
+    {\displaystyle {\frac {U_{1}}{U_{2}}}\simeq {\frac {E_{1}}{E_{2}}}={\frac {N_{1}}{N_{2}}}=k}
+  
+
+Raportul tensiunilor la bornele înfășurărilor, la mersul în gol al transformatorului, notat cu k, se numește raportul de transformare al transformatorului. Dacă k < 1, u2 > u1, transformatorul poartă denumirea de transformator ridicător de tensiune, iar dacă k > 1, u2 < u1, se numește transformator coborâtor de tensiune. Când k = 1, u2 = u1, transformatorul servește la separarea electrică a circuitelor (sunt folosite în unele montaje din electronică).
+Dacă la bornele transformatorului se conectează un consumator rezistiv de rezistență RS, prin circuitul secundar va apărea curentul de intensitate i2. În acest caz, u2 ≈ e2 deoarece apare căderea de tensiune pe sarcină RS i2. În condiții normale (nominale) de funcționare, diferența e2 - u2 este mică, deoarece și pierderile Joule în secundarul transformatorului sunt mici. Se poate deci considera că practic, puterea P1 din primar și cea din secundar P2 sunt egale: P1 = P2 sau U1I1 = U2I2, de unde:
+
+  
+    
+      
+        
+          
+            
+              U
+              
+                1
+              
+            
+            
+              U
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              I
+              
+                2
+              
+            
+            
+              I
+              
+                1
+              
+            
+          
+        
+        ≃
+        
+          
+            
+              N
+              
+                1
+              
+            
+            
+              N
+              
+                2
+              
+            
+          
+        
+        =
+        k
+      
+    
+    {\displaystyle {\frac {U_{1}}{U_{2}}}={\frac {I_{2}}{I_{1}}}\simeq {\frac {N_{1}}{N_{2}}}=k}
+  
+
+Deoarece transformatoarele au un randament foarte mare (la cele de puteri mari fiind peste 99,5%), această relație constituie o foarte bună aproximare.
+Pentru cazul transformatorului care funcționează în sarcină, în sensul că la bornele primarului se aplică tensiunea alternativă u1, iar la bornele înfășurării secundare este conectat un receptor (consumator), procesele fizice sunt, în principal, următoarele: circuitul secundar fiind închis printr-un consumator oarecare, rezistiv sau rezistiv-reactiv, t.e.m. e2 produce în el un curent de intensitate i2. Acest curent produce la rândul său un flux Φ2 care, conform legii lui Lenz, este de sens contrar fluxului creat de curentul primar, denumit flux de regim Φ1. Având în vedere faptul că transferul de putere din primar în secundar (realizat prin cuplaj magnetic) face să apară o serie de pierderi de natură electrică și magnetică (prin efect Joule în înfășurări și pierderi prin curenți turbionari și histerezis în miezul de fier) valoarea maximă a fluxului Φ2 este mai mică decât valoarea maximă a lui Φ1. Diferența celor două fluxuri constituie fluxul principal prin transformator și este practic egal cu fluxul Φ = Φm cos ωt produs de curentul primar la mersul în gol al transformatorului: Φ = Φ1 - Φ2 = Φm cos ωt. La o creștere a sarcinii, valoarea maximă a lui Φ2 crește și are ca efect tendința de scădere a fluxului principal Φ. Ca efect, din relația:
+
+  
+    
+      
+        
+          i
+          
+            1
+          
+        
+        =
+        
+          
+            
+              
+                u
+                
+                  1
+                
+              
+              −
+              
+                N
+                
+                  1
+                
+              
+              
+                
+                  
+                    
+                      d
+                    
+                    Φ
+                  
+                  
+                    
+                      d
+                    
+                    t
+                  
+                
+              
+            
+            
+              R
+              
+                1
+              
+            
+          
+        
+        ,
+        (
+        
+          din 
+        
+        
+          u
+          
+            1
+          
+        
+        +
+        
+          e
+          
+            1
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        
+          i
+          
+            1
+          
+        
+        ,
+        
+          e
+          
+            1
+          
+        
+        =
+        −
+        
+          N
+          
+            1
+          
+        
+        
+          
+            
+              
+                d
+              
+              Φ
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        )
+      
+    
+    {\displaystyle i_{1}={\frac {u_{1}-N_{1}{\frac {\mathrm {d} \Phi }{\mathrm {d} t}}}{R_{1}}},({\text{din }}u_{1}+e_{1}=R_{1}i_{1},e_{1}=-N_{1}{\frac {\mathrm {d} \Phi }{\mathrm {d} t}})}
+  
+
+rezultă că valoarea efectivă I1 crește. Creșterea lui I1 implică creșterea valorii maxime a fluxului Φ1. Ca urmare, Φm rămâne practic constant în raport cu variația sarcinii.
+Așadar, când crește sarcina transformatorului, adică crește I2, crește și intensitatea curentului I1 prin circuitul primar, deoarece puterea furnizată în secundar crește și deci trebuie să crească și puterea absorbită de primar de la rețeaua de alimentare. Invers, la scăderea puterii în secundar, scade și puterea absorbită de primar.
+
+
+=== Pierderi în transformator ===
+Pierderi în circuitul magnetic – nu tot fluxul magnetic trece prin miezul magnetic al transformatorului. În plus, circuitul magnetic nu se comportă perfect liniar, ci are histerezis.
+Pierderi în înfășurări – prin efect Joule.
+Curenții turbionari – induși în miezul magnetic, care este un material conductor.
+Magnetostricție.
+
+
+== Aplicații ==
+Principala utilizare este la transportul energiei electrice pe distanțe mari, prin implementarea liniilor de înaltă tensiune (zeci sau sute de kilovolți). Aceasta este necesar din rațiuni economice. La capătul de aplicare (intrare) a energiei se folosesc transformatoare ridicătoare de tensiune, iar la destinație energia se transmite linilor de joasă tensiune prin intermediul unor transformatoare coborâtoare de tensiune electrică. Prin folosirea unor tensiuni înalte și foarte înalte se scade curentul prin linie la valori care reduc pierderile prin efect Joule la un nivel rezonabil, astfel nefiind necesară utilizarea unor conductoare cu secțiuni sensibil mai mari, care ar ridica costul construcției și conservării linilor electrice de transport de energie
+
+
+== Bibliografie ==
+
+E. Potolea. Calculul regimurilor de funcționare ale sistemelor electroenergetice. București: Editura Tehnică, 1977.

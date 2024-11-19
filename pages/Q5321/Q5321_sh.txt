@@ -1,0 +1,642 @@
+Otpornik je pаsivna elektronska komponenta koja pruža otpor električnoj struji, stvarajući pad napona između priključaka. U otporniku uložena električna energija većim delom nepovratno prelazi u drugi vid energije, najčešće u toplotnu, ali može i u svetlosnu, mehaničku itd.
+Otpornici su uobičajeni elementi električnih i elektronskih kola, mogu biti sastavljeni od različitih materijala i imati različite oblike. Mogu biti stalni ili promenljivi. Otpornost stalnog otpornika nikada se ne menja (tačnije, neznatno se menja s temperaturom, vremenom ili radnim naponom). U slučaju promenljivog otpornika, otpornost se može menjati. Zavisno od konstrukcije, otpornost se može menjati ručno, na primer, okretanjem potenciometra; u drugim slučajevima, uzrok promene otpornosti je spoljni uticaj - na primer, promena jačine svetlosti, temperature ili napona. Promenljivi otpornici se mogu koristiti za podešavanje uređaja (kao što je kontrola jačine zvuka ili prigušivanje lampe), ili kao senzori za toplotu, svetlost, vlažnost, silu i sl.
+Vrednost otpora otpornika izražava se u omima, a simbol je veliko grčko slovo omega (Ω). Što je vrednost u omima veća, veći je otpor komponente. Prema Omovom zakonu, električni otpor jednak je padu napona na otporniku podeljenom sa jačinom struje koja protiče kroz njega.
+
+
+== Primena ==
+
+Otpornici su nezaobilazni delovi električnih kola, pa ih ima u svim elektronskim projektima. Mogu se koristiti za:
+
+Ograničavanje struje. Neke komponente, kao svetleće diode (LED), pokušavaju da upotrebe svu struju koja im je data. Međutim, one lako pregorevaju ako prime previše električne struje. Zato koristimo otpornik da ograničimo struju do LED diode.
+Smanjenje (prigušenje) napona u delu kola. U mnogim električnim kolima neophodno je obezbediti različite napone za različite delove tog kola. Dva otpornika spojena na određen način čine takozvani razdelnik napona. Kad imamo dva ista otpornika, koji podjednako „koče“ protok struje, napon između njih je tačno upola manji od napona u ostatku kola.
+Upravljanje naponom/strujom koji ulaze u druge komponente. Na primer, kombinacija otpornika i kondenzatora daje neku vrstu elektronskog peščanog sata. Otpornik možemo postaviti na ulaz tranzistora da bismo upravljali stepenom pojačanja signala u tranzistoru.
+Zaštita ulaza osetljivih komponenti. Previše električne struje uništava elektronske komponente. Postavljanjem otpornika na ulaz osetljivog tranzistora ili integrisanog kola, ograničavamo struju koja stiže do njih. Iako nije stoprocentno sigurna, ova jednostavna tehnika može da predupredi mnoga oštećenja.
+Na osnovu Omovog zakona, ako je struja poznata, tada se otpornik koristi za stvaranje razlike potencijala proporcionalne toj struji. Obratno, ukoliko je poznata razlika potencijala između dve tačke u kolu, tada se otpornik može koristiti za stvaranje struje proporcionalne toj razlici potencijala.
+
+
+== Idealni i realni otpornik ==
+Otpornik ima otpor od 1 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  
+ (oma) ako napon od 1V (volt) na njegovim krajevima daje struju od 1A (ampera).
+Kod idealnog otpornika otpor ostaje isti bez obzira na dovedeni napon ili struju ili brzinu promene struje. Iako stvarni otpornici ne mogu postići ovaj zahtev, oni su projektovani da imaju male varijacije u otporu podvrgnuti tim promenama, ili promenama temperature i ostalim faktorima sredine. Za izračunavanje otpora provodnika koristimo sledeći izraz:
+
+  
+    
+      
+        
+          R
+          
+            20
+          
+        
+        =
+        ρ
+        ⋅
+        
+          
+            l
+            S
+          
+        
+      
+    
+    {\displaystyle R_{20}=\rho \cdot {l \over S}}
+  
+
+gde je, 
+
+  
+    
+      
+        
+          R
+          
+            20
+          
+        
+      
+    
+    {\displaystyle R_{20}}
+  
+ otpor na 20 °C,
+
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ specifični električni otpor materijala od koga je sačinjen provodnik,
+l dužina provodnika i
+S površina poprečnog preseka provodnika.
+
+Svaki otpornik ima najveći radni napon i struju iznad koje može promeniti otpor, pregrejati se ili pregoreti. Svojstva otpornika se takođe menjaju s promenom temperature. Iako je promena otpora u odnosu na promenu temperature vrlo nelinearna, možemo je aproksimisati sledećim izrazom:
+
+  
+    
+      
+        
+          R
+          
+            T
+          
+        
+        =
+        
+          R
+          
+            20
+          
+        
+        (
+        1
+        +
+        α
+        ⋅
+        Δ
+        T
+        )
+        =
+        R
+        (
+        
+          T
+          
+            0
+          
+        
+        )
+        (
+        1
+        +
+        α
+        ⋅
+        (
+        T
+        −
+        
+          T
+          
+            0
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle R_{T}=R_{20}(1+\alpha \cdot \Delta T)=R(T_{0})(1+\alpha \cdot (T-T_{0}))}
+  
+
+gde je 
+
+  
+    
+      
+        
+          T
+          
+            0
+          
+        
+        =
+        20
+        
+          
+          
+            ∘
+          
+        
+        
+          C
+        
+      
+    
+    {\displaystyle T_{0}=20\,^{\circ }\mathrm {C} }
+  
+
+Realni otpornici unose i nešto induktiviteta i malu količinu kapaciteta, koji menjaju karakteristike u odnosu na idealni otpornik.
+
+
+== Vrste otpornika ==
+
+Dve osnovne vrste otpornika su stalni i promenljivi:
+
+Stalni otpornik pruža unapred određen otpor električnoj struji. Oznake u boji određuju vrednost otpora većine stalnih otpornika. Obeležavanje bojama počinje od kraja tela otpornika, a oznaka se sastoji od četiri, pet i ponekad šest traka različitih boja.
+Promenljivi otpornik, koji se naziva potenciometar, omogućava kontinualno podešavanje otpora od praktično 0 oma do neke maksimalne vrednosti. Vrednost potenciometra se može namestiti okretanjem osovine ili pomicanjem klizača.
+Ostali tipovi otpornika su:
+
+Metal oksidni varistor (MOV) je specijalni tip otpornika koji menja svoj otpor s porastom napona: vrlo veliki otpor na niskom naponu i vrlo mali otpor na visokim naponima. Radi kao prekidač. Obično se koristi kao zaštita energetskih sklopova od kratkog spoja ili odvodnik atmosferskog pražnjenja na uličnim svetiljkama, ili kao element za ograničavanje porasta struje u induktivnim kolima.
+Termistor je temperaturno zavisan otpornik. Postoje dve vrste, a razlikuju se prema predznaku njihovog temperaturnog koeficijenta:
+PTC (Positive Temperature Coefficient) otpornik je otpornik s pozitivnim temperaturnim koeficijentom. Kako raste temperatura tako se i otpor termistora povećava. PTC termistori se često mogu naći u televizorima u serijskom spoju s demagnetizirajućim namotom gde se koriste za osiguravanje kratkotrajnog strujnog udara kroz zavojnicu kada je televizor uključen.
+NTC (Negative Temperature Coefficient) otpornik je takođe temperaturno zavisan otpornik, ali s negativnim temperaturnim koeficijentom. Kada se temperatura povećava otpor termistora pada. NTC termistori se često koriste u jednostavnim temperaturnim detektorima i mernim instrumentima.
+Fotootpornik ili foto-otpornik je otpornik čiji se otpor menja prema svetlosti koja pada na njega. Koristi se kao senzor, a u najjednostavnijem slučaju za automatsko paljenje uličnih lampi uveče.
+
+
+== Vrednosti otpornika ==
+Na većini otpornika vrednost otpora je označena bojama, a negde i brojkama. Ako vrednost otpornika nije poznata, može se izmeriti multimetrom.
+
+
+=== Označavanje otpora bojama ===
+Označavanje otpora bojama je prihvaćen standard u elektronici. Otpornik može imati četiri ili pet traka (prstenova) boja, zavisno od preciznosti. Otpornici standardne preciznosti imaju četiri boje, i veće odstupanje. Oni se koriste u većini hobi projekata. Otpornici visoke preciznosti imaju pet boja, a dozvoljeno odstupanje im je najviše 1%.
+Na standardnim otpornicima, prve tri boje određuju vrednost otpora, a četvrta toleranciju. Prve dve boje su značajne cifre vrednosti, a treća množilac. Tolerancija je moguće odstupanje vrednosti otpora i izražava se u procentima (na primer, tolerancija od ±5% znači da otpor može biti 5% veći ili manji od naznačenog). Svaka boja odgovara određenom broju:
+
+Na otpornicima visoke preciznosti, prva tri boje predstavljaju značajne cifre, četvrta je množilac, a peta je tolerancija.
+Primer: Otpornik je označen žuto-ljubičasto-crveno-srebrno. Na osnovu tabele, žuta je 4, ljubičasta 7, dakle prve dve cifre su 47. Crvena je množilac, što iznosi 100. Pomnoživši 47 sa 100 dobijamo 4700 oma, odnosno 4,7 kilo oma. Srebrna boja ukazuje na toleranciju od ±10%. Za naznačeni otpor od 4700 oma s tolerancijom od deset procenata, stvarni otpor je između 4230 i 5170 oma.
+
+
+=== Označavanje otpora brojevima ===
+
+SMD (engl. Surface Mount Device) otpornici imaju ispisane numeričke vrednosti na isti način kao kod cilindričnih otpornika. SMD otpornici sa standardnim tolerancijama se označavaju trocifrenim kodom, u kom prve dve cifre predstavljaju prve dve značajne cifre vrednosti, dok je treća cifra eksponent broja 10 (odnosno množilac). Na primer, 472 predstavlja 47 (prve dve cifre) pomnoženo s deset na 2. stepen (treća cifra), tj. 47h10²=47h100=4700 oma. Precizni SMD otpornici se označavaju s četverocifrenim kodom u kome su prve tri cifre ujedno i prve tri značajne cifre vrednosti, a četvrta cifra je stepen broja 10.
+
+
+=== Snaga otpornika ===
+
+Kad god se elektroni kreću kroz neku sredinu, proizvode toplotu. Snaga otpornika nam govori koliko toplote otpornik može da izdrži. Otpornici mogu da podnesu tačno određenu količinu toplote pre nego što se istope. Snaga otpornika se meri u vatima, i izračunava formulom:
+
+P = I x V
+gde je
+
+P - oznaka za snagu, izraženu u vatima;
+I - električna struja koja protiče kroz otpornik, u amperima;
+V - napon na krajevima otpornika.
+Na primer, ako je napon 5 volti, a kroz otpornik protiče struja od 25 miliampera. Da bismo izračunali snagu, pomnožimo 5 sa 0,025 što iznosi 0,125 ili 1/8 vata.
+Za razliku od vrednosti otpora, na otpornicima je retko istaknuta vrednost snage. Umesto toga, snaga se procenjuje na osnovu veličine otpornika. Otpornici koji se koriste u električnim kolima sa velikim opterećenjem, na primer motor ili upravljački uređaj za lampu, moraju biti veće snage od otpornika u kolima s slabijom strujom. Otpornici snage veće od 5 vati najčešće imaju epoksidni ili neki drugi vodonepropusni i vatrostalni omotač, i pravougaoni su a ne cilindrični. Otpornici velike snage ponekad čak imaju i sopstveni hladnjak.
+Otpornici se klasifikuju i prema snazi. Najčešće klase snage za ugljene i metal-film otpornike su 1/8, 1/4 i 1/2 W (vata). Otpornici izrađeni od metal-filmova i ugljenih filmova su puno temperaturno stabilniji od ugljenih otpornika. Veliki otpornici mogu podneti više toplote jer imaju veću površinu. Žičani i otpornici omotani keramikom se koriste kada se traži visoki razred snage.
+
+Prema području radne temperature razlikujemo komercijalnu, industrijsku i vojnu klasu komponenti:
+
+Komercijalna klasa: 0 °C do 70 °C
+Industrijska klasa: -25 °C do 85 °C
+Vojna klasa: -25 °C do 125 °C
+
+
+== Teorija ==
+
+
+=== Omov zakon ===
+
+Odnos između napona, otpora i struje kroz element dat je jednostavnom formulom poznatom pod imenom Omov zakon:
+
+  
+    
+      
+        U
+        =
+        I
+        ⋅
+        R
+      
+    
+    {\displaystyle U=I\cdot R}
+  
+
+gde je U napon na elementu u voltima, I je struja kroz element u amperima, i R je otpor u omima. Ako su U i I linearno povezani – tj. ako je R konstantan - na određenom području vrednosti, kažemo da je materijal na tom području omski. Savršeni otpornik ima fiksnu vrednost otpora na svim frekvencijama i amplitudama napona ili struje.
+Superprovodni materijali na vrlo niskim temperaturama imaju otpor (praktično) jednak nuli. Izolatori (kao što su vazduh, dijamant, ili ostali neprovodni materijali) mogu imati ekstremno (ali ne beskonačno) visok otpor, koji se može probiti pod uticajem jakog električnog polja i tako desiti veliki protok struje.
+
+
+=== Disipacija snage ===
+Snaga disipacije (potrošene) na otporniku jednaka je naponu na otporniku pomnoženom sa strujom kroz otpornik::
+
+  
+    
+      
+        P
+        =
+        I
+        ⋅
+        U
+        =
+        
+          I
+          
+            2
+          
+        
+        R
+        =
+        
+          
+            
+              U
+              
+                2
+              
+            
+            R
+          
+        
+      
+    
+    {\displaystyle P=I\cdot U=I^{2}R={\frac {U^{2}}{R}}}
+  
+
+Sva tri izraza su ekvivalentna, zadnja dva su izvedena iz prvog korištenjem Omovog zakona.
+Ukupan iznos oslobođene toplotne energije je integral snage po vremenu:
+
+  
+    
+      
+        W
+        =
+        
+          ∫
+          
+            
+              t
+              
+                1
+              
+            
+          
+          
+            
+              t
+              
+                2
+              
+            
+          
+        
+        u
+        (
+        t
+        )
+        i
+        (
+        t
+        )
+        
+        d
+        t
+      
+    
+    {\displaystyle W=\int _{t_{1}}^{t_{2}}u(t)i(t)\,dt}
+  
+
+Ukoliko prosečna snaga disipacije premaši klasu snage otpornika najpre dolazi do odstupanja otpora u odnosu na nominalnu vrednost, a kasnije i do uništenja (pregorevanja) zbog pregrevanja.
+
+
+=== Serijska i paralelna veza ===
+
+Otpornici u paralelnoj vezi imaju osobinu da im je isti napon na izvodima. Izračunavanje ukupnog ekvivalentnog otpora (Req):
+
+  
+    
+      
+        
+          
+            1
+            
+              R
+              
+                
+                  e
+                  q
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              R
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              R
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              R
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{R_{\mathrm {eq} }}}={\frac {1}{R_{1}}}+{\frac {1}{R_{2}}}+\cdots +{\frac {1}{R_{n}}}}
+  
+
+Zapis paralelne veze se u jednačinama može prikazati kao dve vertikalne linije ||, čime se pojednostavljuje jednačina. Za dva otpornika,
+
+  
+    
+      
+        
+          R
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        ‖
+        
+          R
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+            
+              
+                R
+                
+                  1
+                
+              
+              +
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {eq} }=R_{1}\|R_{2}={R_{1}R_{2} \over R_{1}+R_{2}}}
+  
+
+Otpornici spojeni u red imaju osobinu da je struja kroz sve njih ista, ali napon na pojedinom otporniku može biti različit. Zbir napona jednak je ukupnom naponu. Određivanje ukupnog otpora:
+
+  
+    
+      
+        
+          R
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        +
+        
+          R
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          R
+          
+            n
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {eq} }=R_{1}+R_{2}+\cdots +R_{n}}
+  
+
+Otpornička mreža, kombinacija paralelno i serijski vezanih otpornika, se ponekad može rastaviti na manje delove koji su ili paralele ili serije. Na primer,
+
+  
+    
+      
+        
+          R
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          (
+          
+            
+              R
+              
+                1
+              
+            
+            ‖
+            
+              R
+              
+                2
+              
+            
+          
+          )
+        
+        +
+        
+          R
+          
+            3
+          
+        
+        =
+        
+          
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+            
+              
+                R
+                
+                  1
+                
+              
+              +
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          R
+          
+            3
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {eq} }=\left(R_{1}\|R_{2}\right)+R_{3}={R_{1}R_{2} \over R_{1}+R_{2}}+R_{3}}
+  
+
+
+=== Provodnost ===
+
+Provodnost je recipročna vrednost otpora:
+
+  
+    
+      
+        G
+        =
+        
+          
+            1
+            R
+          
+        
+      
+    
+    {\displaystyle G={1 \over R}}
+  
+
+SI jedinica za električnu provodnost je 1 S (simens)
+
+
+== Tehnologija ==
+
+Otpornici se obično proizvode namatanjem metalne žice oko keramike, plastike, ili oko staklenog vlakna. Krajevi žica se zaleme na dva izvoda koji se nalaze na krajevima jezgre. Sklop se zaštiti slojem boje, plastikom ili slojem emajla pečenog na visokoj temperaturi. Žičani izvodi obično imaju prečnik između 0.6 i 0.8 mm i presvučeni su zaštitinim slojem da se omogući lakše lemljenje.
+Uz opisane vrste otpornika namijenjene elektronici, u regulaciji uređaja jake struje (npr. regulaciji snage dizaličnih elektromotora, elektro-viljuškara i dr.) susreću se i otpornici za velike snage. Uobičajeno se izvode iz limenih ploča pakovanih u prozračne metalne kutije ili ormariće koje omogućuju efikasno hlađenje. Specifičnim slučajem otpornika u širem smislu reči možemo smatrati različite soli za elektrootporne metalurške i slične peći.
+Na kraju, otpornikom se mogu smatrati i različite vrste grejačih elemenata uobičajeno iz spiralno motane otporne žice razapete preko izolirajućih potpornih elemenata ili uložene u bakrene cijevi punjene izolirajućim punjenjem. Takvi grijači elementi imaju široku primjenu u industrijskoj i kućanskoj tehnici i ugrađuju se u peći, pećnice, pegle, perilice i druge uređaje i aparate.
+
+
+== Električni i toplotni šum ==
+
+Pri pojačavalju slabih signala često je neophodno da se minimizuje elektronski šum, posebno u prvom stupnju pojačavanja. Kao disipativni element, čak i idealni otpornik prirodno proizvodi randomno fluktuirajući napon, ili šum, na svojim krajevima. Taj termalni šum je fundamentalni izvor šuma koji zavisi od temperature i otpora otpornika, i on je predviđen teoremom fluktuacije i disipacije. Koristeći veće vrednosti otpora stvara se veći naponski šum na datoj temperaturi.
+Termalni šum praktičnih otpornika može da nadmaši teoretska predviđanja i to povećanje je tipično zavisno od frekvencije. Prekomerni šum otpornika je uočljiv samo kad kroz njega protiče struja. On se izražava u jedinici μV/V/dekada – μV šuma po voltu primenjeneom na otpornik po dekadi frekvencije. Ova vrednost se često daje u dB, tako da otpornik sa indeksom šuma od 0 dB ispoljava 1 μV (rms) viška šuma po svakom voltu primenjenom na otpornik u svakoj dekadi frekvencije. Višak šuma je stoga primer 1/f šuma. Otpornici od debelog filma ili ugljeničnog sastava stvaraju više viška šuma nego drugi tipovi na niskim frekvencijama. Otpornici od namotane žice i debelog filma se često koriste zbog njihovih boljih karakteristika šuma. Otpornici ugljeničnog sastava mogu da ispolje indeks šuma od 0 dB, dok otpornici od obimne metalne folije mogu da imaju indeks šuma od −40 dB, te je suvišni šum otpornika od metalne folije obično zanemarljiv. Otpornici od površina tankog filma tipično imaju niži šum i bolju termičku stabilnost od otpornika od površina debelog filma. Višak šuma je isto tako zavisan od veličine: generalno je višak šuma umanjuje sa povećanjem fizičke veličine otpornika (ili ako se koriste višestruki paralelni otpornici), pošto nezavisno fluktuirajući otpori manjih komponenti imaju tendenciju da se usrednjavaju.
+Mada to nije primer šuma sam po sebi, otpornik može da deluje kao termopar, proizvodeći mali DC naponski diferencijal usled termoelektričnog učinka, ako su njegovi krajevi na različitim temperaturama. Tako indukovani DC napon može da degradira preciznost instrumentacionih pojačavača. Takav napon se pojavljuje na spojevima otpornika sa pločom kola i telom otpornika. Uobičajeni otpornici sa metalnim filmom pokazuju takav efekat sa magnitudom od oko 20 µV/°C. Neki otpornici ugljeničnog sastava mogu da ispolje termoelektrične efekte manitude i do 400 µV/°C, dok specijalno konstruisani otpornici mogu da imaju taj napon umanjen do 0,05 µV/°C. U primenama gde termoelektrični efekat može da bude značajan, more se obratiti pažnja da se otpornici postave horizontalno da bi se izbegli temperaturni gradijenti i da se vodi računa od protoku vazduha preko ploče.
+
+
+== Literatura ==
+Middleton, Wendy; Van Valkenburg, Mac E. (2002). Reference data for engineers: radio, electronics, computer, and communications (9 izd.). Newnes. str. 5–10. ISBN 978-0-7506-7291-7. 
+Gordon McComb i Earl Boysen, Elektronika za neupućene, Beograd, 2007.
+
+
+== Izvori ==
+
+
+== Povezano ==
+Elektronske komponente
+Električni otpor
+Omov zakon
+
+
+== Spoljašnje veze ==
+
+Otpornik

@@ -1,0 +1,101 @@
+Un algoritmo ye ua sequéncia fenita de anstruçones bien defenidas i nun ambíguas, cada ua de las quales puode ser eisecutada mecanicamente nun período de tiempo fenito i cun ua cantidade de sfuorço fenita.
+L cunceito d'algoritmo ye frequentemente eilustrado pul eisemplo dua receita culinária, ambora muitos algoritmos séian mais cumplexos. Eilhes puoden repetir passos (fazer iteraçones) ó necessitar de decisones (tales cumo cumparaçones ó lógica) até que la tarefa seia cumpletada. Un algoritmo corretamente eisecutado nun eirá resulber un porblema se stubir amplementado ancorretamente ó se nó fur apropiado al porblema.
+Un algoritmo nun repersenta, necessariamente, un porgrama de cumputador, i si ls passos necessairos para rializar ua tarefa. Sue amplementaçon puode ser feita por un cumputador, por outro tipo de outómato ó mesmo por un ser houmano. Defrentes algoritmos puoden rializar la mesma tarefa usando un cunjunto defrenciado d'anstruçones an mais ó menos tiempo, spácio ó sfuorço de l qu'outros. Tal defrença puode ser reflexo de la cumplexidade cumputacional aplicada, que depende de struturas de dados adequadas al algoritmo. Por eisemplo, un algoritmo para se bestir puode specificar que bocé bista purmeiro las meias i ls çapatos antes de bestir la calça anquanto outro algoritmo specifica que bocé debe purmeiro bestir la calça i depuis las meias i ls çapatos. Queda claro que l purmeiro algoritmo ye mais defícel d'eisecutar que l segundo anque ambos liebáren al mesmo resultado.
+L cunceito dun algoritmo fui formalizado an 1936 pula Máquina de Turing de Alan Turing i pul cálclo lambda de Alonzo Church, que formórun las purmeiras fundaçones de la Ciéncia de la cumputaçon.
+
+
+== Eitimologie ==
+Ls storiadores de la palabra algoritmo ancontrórun la ourige ne l subrenome, Al-Khwarizmi, de l matemático persa de l seclo IX Mohamed ben Musa, cujas obras fúrun traduzidas ne l'oucidente crestiano ne l seclo XII, tenendo ua deilhas recebido l nome Algorithmi de numero andorun, subre ls algoritmos usando l sistema de numeraçon decimal (andiano). Outros outores, antretanto, defenden l'ourige de la palabra an Al-goreten (raiç - cunceito que se puode aplicar als cálclos). Álgebra i algorismo tamien forman formas corrompidas de la palabra, pus las pessonas squecian las deribaçones ouriginales. L dicionairo Bollständiges Mathematisches Lexicon (Leipzig, 1747) refire la palabra "Algorithmus"; nesta zeignaçon stá cumbinado las noçones de quatro cálclos aritméticos, nomeadamente la adiçon, multiplicaçon, subtraçon i debison. La frase "algorithmus anfenitesimalis" fui na altura outelizado para seneficar; "maneiras de calcular cun cantidades anfenitésimas" (pequeinhas), ua ambençon de Leibnitç. Tamien ye coincido ne l meio financeiro, cumo "algos".
+
+
+== Formalismo ==
+
+Un porgrama de cumputador ye eissencialmente un algoritmo que diç al cumputador ls passos specíficos i an qu'orde eilhes dében ser eisecutados, cumo por eisemplo, ls passos la séren tomados para calcular las notas que seran ampressas ne ls boletines de ls alunos dua scuola. Lougo, l'algoritmo puode ser cunsidrado ua sequéncia d'ouparaçones que puoden ser simuladas por ua máquina de Turing cumpleta.
+Quando ls procedimientos dun algoritmo ambolben l processamiento de dados, l'anformaçon ye lida dua fuonte d'antrada, processada i retornada sob nuobo balor passado processamiento, l que giralmente ye rializado cul ajuda dua ó mais strutura de dados.
+Para qualquiera porcesso cumputacional, l'algoritmo percisa star rigorosamente defenido, specificando la maneira qu'el se cumportará an todas las circunstáncias. La corretebidade de l'algoritmo puode ser probada matematicamente, bien cumo la cantidade assintótica de tiempo i spácio (cumplexidade) necessairos pa la sue eisecuçon. Estes aspetos de ls algoritmos son albo de la análeze d'algoritmos.
+La maneira mais simples de se pensar un algoritmo ye por ua lista de procedimientos bien defenida, na qual las anstruçones son eisecutadas passo a passo a partir de l'ampeço de la lista, ua eideia que puode ser facilmente bisualizada atrabeç dun fluxograma. Tal formalizaçon adota las premissas de la porgramaçon amperatiba, que ye ua forma macánica para bisualizar i zambolber un algoritmo. Cuncepçones altarnatibas para algoritmos barian an porgramaçon funcional i porgramaçon lógica.
+
+
+=== Término de l'algoritmo ===
+Alguns outores restringe la defeniçon d'algoritmo para procedimientos qu'eibentualmente treminan. Marbin Minsky custatou que se l tamanho dun procedimiento nun ye coincido d'antemon, tentar çcubri-lo ye un porblema andecidible, yá que l procedimiento puode ser eisecutado anfenitamente, de forma que nunca se terá la repuosta. Alan Turing probou an 1936 que nun eisiste máquina de Turing para rializar tal análeze para todos ls causos, lougo nun hai algoritmo para rializar tal tarefa para todos ls causos. Tal cundiçon ye coincida atualmente cumo porblema de la parada.
+Para algoritmos anterminables l sucesso nun puode ser detreminado pula anterpretaçon de la repuosta i si por cundiçones ampostas pul própio zambolbedor de l'algoritmo durante sue eisecuçon.
+
+
+== Amplementaçon ==
+La maiorie de ls algoritmos ye zambolbida para ser amplementada nun porgrama de cumputador. Anque desso eilhes tamien puoden ser amplementados por outros modos tales cumo ua rede neural biológica (tal cumo ne l cérebro quando efetuamos ouparaçones aritméticas) an circuitos eilétricos ó até mesmo an çpositibos macánicos.
+Para porgramas de cumputador eisiste ua grande bariadade de lenguaiges de porgramaçon, cada ua cun caratelísticas specíficas que puoden facelitar l'amplementaçon de detreminados algoritmos ó atender la propósitos mais gerales.
+
+
+== Análeze d'algoritmos ==
+
+L'análeze d'algoritmos ye un galho de la ciéncia de la cumputaçon que studa las técnicas de porjeto d'algoritmos i ls algoritmos de forma abstrata, sin stáren amplementados nua lenguaige de porgramaçon an particular ó amplementadas d'algun outro modo. Eilha preocupa-se culs recursos necessairos pa l'eisecuçon de l'algoritmo tales cumo l tiempo d'eisecuçon i l spácio d'armazenamiento de dados. Debe-se perceber que para un dado algoritmo puode-se tener defrentes cantidades de recursos alocados d'acuordo culs parámetros passados na antrada. Por eisemplo, se defenirmos que l fatorial dun númaro natural ye eigual al fatorial de sou antecessor multiplicado pul própio númaro, queda claro que l'eisecuçon de fatorial(10) cunsume mais tiempo que l'eisecuçon de fatorial(5).
+Un meio d'eisibir un algoritmo la fin d'analisá-lo ye atrabeç de l'amplementaçon por pseudocódigo an pertués struturado. L'eisemplo a seguir ye un algoritmo an pertués struturado que retorna (balor de salida) la soma de dous balores (tamien coincidos cumo parámetros ó argumientos, balores d'antrada) que son antroduzidos na chamada de la funçon:
+
+Algoritmo "SomaDeDoisBalores";
+bariable:
+SOMA,La,B: anteiro;
+ampeço
+Screba("Digite un numero");
+Leia(La);
+screba("digite outro numero");
+leia(B);
+SOMA ← La + B;
+escreba(SOMA);
+fin.
+
+
+== Classeficaçon ==
+
+
+=== Classeficaçon por amplementaçon ===
+Puode-se classeficar algoritmos pula maneira pul qual fúrun amplementados.
+
+Recursibo ó iteratibo - un algoritmo recursibo ten la caratelística d'ambocar la si mesmo repetidamente até que cierta cundiçon seia sastifeita i el ye treminado, que ye un método quemun an porgramaçon funcional. Algoritmos iteratibos úsan struturas de repetiçon tales cumo laços, ó inda struturas de dados adicionales tales cumo pilhas, para resulber porblemas. Cada algoritmo recursibo ten un algoritmo iteratibo eiquibalente i al alrobés, mas que puode tener mais ó menos cumplexidade an sue custruçon.
+Lógico - un algoritmo puode ser bisto cumo ua deduçon lógica cuntrolada. L cumponente lógico spressa ls axiomas ousados na cumputaçon i l cumponente de cuntrole detremina la maneira cumo la deduçon ye aplicada als axiomas. Tal cunceito ye base pa la porgramaçon lógica.
+Serial ó paralelo - algoritmos son giralmente assumidos por séren eisecutados anstruçon l'anstruçon andebidualmente, cumo ua lista d'eisecuçon, l que custitui un algoritmo serial. Tal cunceito ye base pa la porgramaçon amperatiba. Por outro lado eisisten algoritmos eisecutados paralelamente, que lieban an cunta las arquiteturas de cumputadores cun mais dun processador para eisecutar mais dua anstruçon al mesmo tiempo. Tales algoritmos debeden ls porblemas an subproblemas i l delegan a quantos processadores stubíren çponibles, agrupando ne l final l resultado de ls subproblemas nun resultado final al algoritmo. Tal cunceito ye base pa la porgramaçon paralela. De forma giral, algoritmos iteratibos son paralelizables; por outro lado eisisten algoritmos que nun son paralelizables, chamados anton porblemas inerentemente seriales.
+Determinístico ó nó-determinístico - algoritmos determinísticos resolben l porblema cun ua decison sata la cada passo anquanto algoritmos nó-determinísticos resolben l porblema al deduzir ls melhores passos atrabeç de stimatibas sob forma de heiurísticas.
+Sato ó aprossimado - anquanto alguns algoritmos ancontran ua repuosta sata, algoritmos d'aprossimaçon percuran ua repuosta próssima la berdadeira soluçon, seia atrabeç de stratégia determinística ó aleatória. Possuen aplicaçones práticas subretodo para porblemas mui cumplexos, de l qual ua repuosta correta ye ambiable debido a la sue cumplexidade cumputacional.
+
+
+=== Classeficaçon por paradigma ===
+Puode-se classeficar algoritmos pula metodologie ó paradigma de sou zambolbimiento, tales cumo:
+
+Debison i cunquista - algoritmos de debison i cunquista reduzen repetidamente l porblema an sub-porblemas, giralmente de forma recursiba, até que l sub-porblema ye pequeinho l suficiente para ser resolbido. Un eisemplo prático ye l'algoritmo d'ourdenaçon merge sort. Ua bariante dessa metodologie ye l decremiento i cunquista, que resolbe un sub-porblema i outeliza la soluçon para resulber un porblema maior. Un eisemplo prático ye l'algoritmo para pesquisa binária.
+Porgramaçon dinámica - puode-se outelizar la porgramaçon dinámica para eibitar l re-cálclo de soluçon yá resolbidas antes.
+Algoritmo ganancioso - un algoritmo ganancioso ye similar a la porgramaçon dinámica, mas difire na medida an que las soluçones de ls sub-porblemas nun percisan ser coincidas la cada passo, ua scolha gananciosa puode ser feita la cada momiento cul qu'até anton parece ser mais adequado.
+Porgramaçon linear
+Reduçon - la reduçon resolbe l porblema al trasformá-lo an outro porblema. Ye chamado tamien trasformaçon i cunquista.
+Busca i enumeraçon - bários porblemas puoden ser modelados atrabeç de grafos. Un algoritmo de sploraçon de grafo puode ser ousado para caminar pula strutura i retornan anformaçones úteles pa la resoluçon de l porblema. Esta catadorie anclui algoritmos de busca i backtracking.
+Paradigma heiurístico i porbabilístico - algoritmos porbabilísticos rializan scolhas aleatoriamente. Algoritmos genéticos tentan ancontrar la soluçon atrabeç de ciclos de mutaçones eibolucionárias antre geraçones de passos, tendendo pa la soluçon sata de l porblema. Algoritmos heiurísticos ancontran ua soluçon aprossimada pa l porblema.
+
+
+=== Classeficaçon por campo de studo ===
+Cada campo de la ciéncia ten sous própios porblemas i respetibos algoritmos adequados para resolbé-los. Eisemplos clássicos son algoritmos de busca, de ourdenaçon, d'análeze numérica, de teorie de grafos, de manipulaçon de cadeias de testo, de geometrie cumputacional, de análeze cumbinatória, de daprendizaige de máquina, de critografie, de cumpresson de dados i de anterpretaçon de testo.
+
+
+=== Classeficaçon por cumplexidade ===
+
+Alguns algoritmos son eisecutados an tiempo linear, d'acuordo cula antrada, anquanto outros son eisecutados an tiempo sponencial ó até mesmo nunca treminan de séren eisecutados. Alguns porblemas ten múltiplos algoritmos anquanto outros nun possuen algoritmos para resoluçon.
+
+
+== Refréncias ==
+
+
+== Bibliografie ==
+.com.br/libros/algoritmos/ Algoritmos i Porgramaçon - Teorie i Prática: para ounibersitairos i profissionales d'anformática[lhigaçon einatiba]: Nobatec Eiditora. ISBN 85-7522-073-X
+Donald I. Knuth (1973) The Art of Cumputer Porgramming, Belume 1: Fundamental Algorithms (2ª eidiçon). Addison-Wesley, ISBN 0-201-03809-9 (an anglés)
+
+
+== Ber tamien ==
+Strutura de dados
+Outómato
+Teorie de la cumputaçon
+Algoritmo porbabilístico
+Algoritmo de Euclides
+
+
+== Ligaçones sternas ==
+.com.br/matematica/pratica-pedagogica/algoritmo-611956.shtml L que ye algoritmo? ()  - Rebista Nuoba Scuola
+Ditionary of Algorithms and Data Strutures[lhigaçon einatiba]
+.com/zambolbimiento/daprender-algoritmos/ Daprenda la Porgramar[lhigaçon einatiba]: Série d'artigos didáticos ansinando Pertués Struturado
+.com/zambolbimiento/40-eisercicios-de-algoritmos-resolbidos-para-studo/ Eisercícios resolbidos d'algoritmos para studo[lhigaçon einatiba]

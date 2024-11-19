@@ -1,0 +1,757 @@
+Logiikka (kreikan sanasta λογική [logikē], johdettu sanasta λόγος [logos], ”sana”, ”järjestys”, ”järki”) on tieteenala, joka tutkii päättelyn ja ajattelun muotoja, erityisesti deduktiivista päättelyä. Päättely on deduktiivista, jos se säilyttää totuuden siten, että oletusten ollessa tosia johtopäätös ei voi olla epätosi. Logiikka on perinteisesti nähty filosofian osana, mutta 1900-luvulla osa logiikan saralla tehtävästä tutkimuksesta eriytyi matematiikan osaksi. Logiikan tutkimus on myös muodostunut osaksi tietojenkäsittelytiedettä.
+Usein sanalla ’logiikka’ viitataan täsmälliseen symboliseen tekniikkaan tai menetelmään, jolla voidaan tutkia argumentin deduktiivista pätevyyttä tai deduktiivisesti pätevien argumenttien muotoja, joko yleisesti tai tarkoittaen tiettyä logiikan järjestelmää.
+Filosofinen logiikka pyrkii mallintamaan filosofisesti relevantteja ilmiöitä logiikan keinoin. Esimerkiksi kielifilosofiassa voidaan kielen loogisen analyysin avulla pyrkiä ratkaisemaan kielellis-filosofisia ongelmia. Logiikan voidaan nähdä liittyvän myös läheisesti ontologiaan. Logiikan avulla voidaan tutkia erilaisten formaalien ontologioiden seurauksia.
+Matemaattisen logiikan painopiste on logiikan termistöä (päättely, määritelmä) koskevien matemaattisten tulosten ja todistusten kehittämisessä. Matemaattisen ja filosofisen (formaalin) logiikan välinen täsmällinen rajanveto on osoittautunut ongelmalliseksi, mutta selviä kulttuurillisia eroja on.
+
+
+== Logiikan historia ==
+
+Useat muinaiset kulttuurit ovat soveltaneet erilaisia systemaattisen ajattelun menetelmiä. Tieteellisenä ajattelun ja päättelyn muotojen tutkimisena se kehittyi alkujaan kolmessa paikassa: Kiinassa 400-luvulla eaa., sekä Intiassa ja Kreikassa 300- ja 100-lukujen välillä eaa.
+Nykyaikaisen logiikan teoriat ovat kreikkalaisen logiikan perillisiä, vaikkakin on ehdotettu, että Boolen algebran kehittäjät olisivat olleet tietoisia intialaisesta logiikasta. Kreikkalaisen logiikan historia ei ole kuitenkaan pelkästään eurooppalaista, vaan Euroopan keskiaikaiset loogikot saivat sen islamilaisen maailman aristoteelisesta logiikasta ja siihen tehdyistä kommentaareista.
+Euroopan ulkopuolisen logiikan perinteet eivät ole säilyneet nykypäivään. Kiinassa Qin-dynastia tukahdutti logiikan tutkimisen, ja sen tilalle tuli Han Feizin legalistinen filosofia. Islamilaisessa maailmassa puolestaan ash'ari-koulukunnan nousu tukahdutti alkuperäisen logiikan tutkimuksen. Intiassa logiikan tutkiminen jatkui 1700-luvun alkupuolelle, mutta se päättyi pian siirtomaa-ajan alettua.
+
+
+== Logiikan lajeja ==
+Logiikkaa on tutkittu historian saatossa erilaisissa muodoissa. Siinä missä aristoteelinen logiikka on ollut kiinnostunut lähinnä hyvästä argumentoinnista, matemaattinen logiikka ja analyyttinen filosofia ovat painottaneet enemmän logiikkaa itseään tutkimuskohteena, jolloin logiikkaa on tutkittu abstraktimmalla tasolla.
+
+
+=== Syllogistinen logiikka ===
+
+Aristoteelinen logiikka eli syllogistiikka on yksinkertaista yksipaikkaisten (subjekti-objekti-predikaatti) väitelauseiden logiikkaa, joka erittelee syllogismeja. Syllogismi koostuu kahdesta premissistä, jotka puolestaan koostuvat kahdesta termistä ja jakavat keskenään yhteisen termin. Premisseistä edetään johtopäätökseen, joka yhdistää premissien alussa toisiinsa liittymättömät termit. Aristoteelinen logiikka kehittyi myöhemmin perinteiseksi logiikaksi eli termilogiikaksi.
+Aristoteelinen logiikka sai alkunsa Aristoteleen teoksissa Ensimmäinen analytiikka ja Tulkinnasta, jotka ovat osa kokoelmaa Organon. Nykyisin monet katsovat, ettei Aristoteleen järjestelmällä ole juuri muuta kuin historiallista arvoa, koska propositio- ja predikaattilogiikka ovat syrjäyttäneet sen. Termilogiikkaa on kuitenkin yhä edelleen pyritty laajentamaan, ja sitä on hyödynnetty argumentointiteoriassa, tekoälytutkimuksessa ja oikeustieteessä.
+
+
+=== Propositiologiikka ===
+
+Propositiologiikka eli lauselogiikka tai lausekalkyyli on logiikan alue, jossa tutkitaan propositiosymboleja (kuten 
+  
+    
+      
+        
+          p
+          
+            0
+          
+        
+      
+    
+    {\displaystyle p_{0}}
+  
+, 
+  
+    
+      
+        
+          p
+          
+            1
+          
+        
+      
+    
+    {\displaystyle p_{1}}
+  
+, 
+  
+    
+      
+        
+          p
+          
+            2
+          
+        
+      
+    
+    {\displaystyle p_{2}}
+  
+) sekä luonnollisen kielen lausekonnektiiveja (kuten ”ei”, ”ja” ja ”tai”) vastaavia loogisia konnektiiveja (kuten 
+  
+    
+      
+        ¬
+        ,
+        ∧
+        ,
+        ∨
+      
+    
+    {\displaystyle \neg ,\land ,\lor }
+  
+) sisältävien formaalikielen lauseiden ominaisuuksia. Näistä ominaisuuksista keskeisimpiä ovat totuus ja lauseiden väliset päättelysuhteet. Propositiologiikka on välttämätön pohja kaikille muille logiikan lajeille.
+
+
+=== Predikaattilogiikka ===
+
+Predikaattilogiikka eli predikaattikalkyyli on logiikan osa-alue, jolla tutkitaan tietynlaisia formaalikieliä. Predikaattilogiikka jakautuu ensimmäisen kertaluvun predikaattilogiikkaan ja korkeampien kertalukujen predikaattilogiikoihin. Jälkimmäisten kohdalta mielenkiinto kohdistuu yleensä vain toisen kertaluvun predikaattilogiikkaan. Predikaattilogiikka laajentaa propositiologiikan aakkostoa muun muassa universaali- ( 
+  
+    
+      
+        ∀
+      
+    
+    {\displaystyle \forall }
+  
+ ) ja eksistenssikvanttoreilla ( 
+  
+    
+      
+        ∃
+      
+    
+    {\displaystyle \exists }
+  
+ ). Ensimmäisen kertaluvun predikaattilogiikassa on mahdollista kvantifioida yli muuttujien, korkeamman kertaluvun logiikoissa voidaan kvantifioida yli ominaisuuksien ja käsitellä ominaisuuksien ominaisuuksia.
+Predikaattilogiikan keksijänä pidetään yleensä Gottlob Fregeä. Nykyinen ensimmäisen kertaluvun predikaattilogiikan muotoilu on peräisin David Hilbertiltä ja Wilhelm Ackermannilta. Toisen kertaluvun predikaattilogiikkaa ovat kehittäneet ennen kaikkea George Boolos ja Stewart Shapiro, ja sitä on kritisoinut ennen kaikkea Willard Van Orman Quine.
+Predikaattilogiikan kehittäminen mahdollisti sen, että loogikot saattoivat ensimmäistä kertaa ilmaista luonnollisen kielen väittämät loogisella syntaksilla tarpeellisessa laajuudessa. Predikaattilogiikka mahdollisti myös matematiikan formalisoinnin, ja vaikutti näin matemaattisen logiikan, joukko-opin ja malliteorioiden kehitykseen.
+
+
+=== Modaalilogiikka ===
+
+Modaalilogiikka on logiikan alue, jolla tutkitaan aleettisten modaliteettien eli välttämättömyyden ja mahdollisuuden loogisia piirteitä. Usein termi ”modaalilogiikka” ymmärretään kokonaisnimityksenä kaikkien
+modaliteettien loogiikoille. Muita modaliteetteja ovat muun muassa episteeminen, temporaalinen ja deonttinen.
+Modaliteettien tutkimus on peräisin jo Aristoteleelta. Enemmän kehitystä alalla tapahtui kuitenkin vasta Clarence Irving Lewisin tutkimusten myötä. Hänen työnsä saivat aikaan uuden tutkimuksen aallon, jonka myötä modaliteettien tutkimus laajeni deonttiseen ja episteemiseen logiikkaan. Arthur Prior käytti samaa lähestymistapaa temporaaliseen logiikkaan. Saul Kripke kehitti kehyssemantiikan, joka antoi tietä graafiteorisille modaliteettien tarkastelutavoille. Se on puolestaan vaikuttanut dynaamiseen logiikkaan, jota sovelletaan komputationaalisessa lingvistiikassa ja tietojenkäsittelytieteessä.
+
+
+== Logiikan sovellusalueita ==
+
+
+=== Matemaattinen logiikka ===
+
+”Matemaattinen logiikka” viittaa kahteen erilliseen tutkimusalueeseen: toisaalta formaalisen logiikan menetelmien soveltamiseen matematiikkaan ja matemaattiseen päättelyyn, ja toisaalta matemaattisten menetelmien soveltamiseen formaalisen logiikan esittämisessä ja analysoinnissa.
+Varhaisin matematiikan ja geometrian käyttö logiikassa ja filosofiassa löytyy jo antiikin Kreikasta Eukleideelta, Platonilta ja Aristoteleelta. Rohkein yritys soveltaa logiikkaa matematiikkaan on epäilemättä ollut filosofi-loogikoiden Gottlob Frege ja Bertrand Russell logisismi. Heidän ajatuksensa oli, että matemaattiset teoriat olivat loogisia tautologioita, ja he pyrkivät osoittamaan tämän palauttamalla matematiikan logiikkaan. Tämä kuitenkin epäonnistui, mistä esimerkkinä Fregen ohjelman lamaannuttanut Russellin paradoksi ja Hilbertin ohjelman romuttanut Gödelin epätäydellisyyslause.
+Sekä Hilbertin ohjelma että Gödelin vastine siihen olivat riippuvaisia toisesta matemaattisen logiikan osa-alueesta, matematiikan soveltamisesta logiikkaan todistusteorian muodossa. Vaikka epätäydellisyysteoreema oli luonteeltaan negatiivinen, Gödelin täydellisyyslause oli malliteorian tulos ja osoittaa, kuinka lähellä logisismi oli osoittautua todeksi: jokainen täsmällisesti määritelty matemaattinen teoria voidaan esittää ensimmäisen kertaluvun logiikan teorialla; Fregen todistuskalkyyli pystyi kuvaamaan koko matematiikan, vaikka ei vastaakaan sitä. Näin matemaattisen logiikan kaksi osa-aluetta osoittautuvat toisiaan täydentäviksi.
+Jos todistusteoria ja malliteoria ovatkin olleet matemaattisen logiikan perusta, ne ovat muodostaneet vasta kaksi sen neljästä tukipilarista. Joukko-oppi sai alkunsa Georg Cantorin äärettömyyden tutkimuksista ja se on tuottanut monet matemaattisen logiikan haastavimmista ja merkittävimmistä ongelmista (kuten Cantorin lause, valinta-aksiooma ja kontinuumihypoteesi). Rekursioteoria kuvaa laskentaa logiikan ja aritmetiikan avulla. Sen klassisimpia saavutuksia ovat Alan Turingin Entscheidungsproblemin osoittaminen ratkaisemattomaksi sekä Churchin-Turingin teesi. Nykyisin rekursioteoria tutkii ennen kaikkea monimutkaisuuksia ja ongelmien (tehokasta) ratkeavuutta.
+
+
+=== Filosofinen logiikka ===
+Filosofinen logiikka käsittelee luonnollisen kielen formaaleja määrittelyjä. Useimmat filosofit olettavat, että logiikka voi kuvata ”normaalia” oikeaa päättelyä, jos voidaan löytää oikea menetelmä kääntää tavallista kieltä tälle logiikalle. Filosofinen logiikka jatkaa aikaisempaa ennen matemaattisen logiikan syntyä ”logiikaksi” kutsutun filosofian osa-alueen perinnettä. Se on matemaattista kiinnostuneempi luonnollisen kielen ja logiikan välisistä suhteista. Seurauksena filosofiset loogikot ovat vaikuttaneet paljon epästandardien logiikoiden (kuten vapaa logiikka, temporaalinen logiikka) sekä perinteisen logiikan laajennosten (kuten modaalilogiikka) sekä niiden epästandardien semantiikkojen kehitykseen.
+Logiikka liittyy läheisesti kielifilosofiaan, joka tutkii, kuinka kielemme liittyy ajatteluumme. Logiikan sekä logiikan ja tavallisen puheen välisen suhteen tutkimus voi myös auttaa filosofia muotoilemaan omat argumenttinsa paremmin sekä arvostelemaan muiden argumentteja. Kielifilosofia koki 1900-luvulla mullistuksen Ludwig Wittgensteinin töiden myötä.
+
+
+=== Logiikka tietojenkäsittelytieteessä ===
+Logiikka tuli tietojenkäsittelytieteen keskiöön Alan Turingin töiden myötä. Turingin Entscheidungsproblem seurasi Gödelin epätäydellisyysteoreemaa, ja tästä kehittynyt ajatus yleisestä Turingin koneesta oli keskeinen 1940-luvun tietokonetekniikan kehitykselle.
+1950- ja 1960-luvuilla tutkijat ennustivat, että kun inhimillinen tietämys olisi ilmaistavissa logiikalla ja matemaattisella merkintätavalla, tämä mahdollistaisi ajattelevien koneiden eli tekoälyn kehittämisen. Tämä osoittautui odotettua vaikeammaksi, johtuen ajattelun monimutkaisuudesta. Logiikkapohjaisessa ohjelmoinnissa (kuten Prolog-kielessä) tietokoneohjelma koostuu joukosta aksioomia ja sääntöjä, ja ohjelma laskee niiden seuraukset vastatakseen esitettyyn kysymykseen.
+Nykyään logiikkaa käytetään laajalti tietojenkäsittelytieteessä ja tekoälytutkimuksessa, ja nämä alat tarjoavat formaalille ja epäformaalille logiikalle paljon uusia ongelmia. Formaalikielten analysointi on osa tietojenkäsittelyn teoriaa, ja se käsittää ohjelmointikielten formaalit semantiikat sekä menetelmät (kuten Hoaren logiikka). Boolen algebra on keskeistä tietokoneiden laitteistojen kannalta. Tekoälytutkimuksessa hyödynnetään modaalilogiikkaa ja oletuslogiikkaa tietämyksen esittämisen formalismeissa ja menetelmissä, Hornin klausuulia logiikkaohjelmoinnissa, sekä kuvauslogiikkaa. Lisäksi intuitionistista logiikkaa hyödynnetään ohjelmointikielten tyyppijärjestelmissä.
+Tietokoneet ovat myös hyödyllinen työväline loogikoille. Tietokoneita voidaan käyttää apuna muun muassa symbolisen ja matemaattisen logiikan todistuksissa. Koneet voivat löytää ja tarkistaa todistuksia käyttämällä teoreemojen automaattista todistamista, sekä käsitellä todistuksia, jotka ovat liian pitkiä kirjoitettaviksi auki käsin.
+
+
+== Logiikka ja päättely ==
+
+
+=== Deduktiivinen ja induktiivinen päättely sekä enthymeme ===
+Antiikin aikana logiikan tarkoituksena oli ennen kaikkea hyvien argumenttien erottaminen huonoista. Tämä vaikutin on edelleen olemassa logiikassa, vaikka se ei enää olekaan yhtä keskeisessä osassa, ja logiikka voidaan nähdä erityisesti deduktiivisen päättelyn tutkimisena.
+Usein sanotaan, että deduktiivista päättelyä on päättely yleisestä yksityiseen ja induktiivista päättelyä vastaavasti päättely yksityisestä yleiseen. Tämä ei kaikilta osin pidä paikkaansa. Esimerkiksi täydellinen luetteleva induktio etenee yksityisestä yleiseen mutta on deduktiivista päättelyä. Deduktiivinen päättely on päättelyä, joka säilyttää välttämättä totuuden, mutta ei objektiivisessa mielessä lisää informaatiota. Induktiivinen päättely taas ei välttämättä säilytä totuutta mutta lisää informaatiota.
+Esimerkki 1
+
+Kaikki nuoret käyttävät huumeita.
+Esko on nuori.
+Siis: Esko käyttää huumeita.
+Esimerkissä 1 päättely on deduktiivista. Jos on olemassa tietty joukko (nuoret), jonka kaikki jäsenet toteuttavat tietyn ominaisuuden (käyttävät huumeita), niin on mahdotonta ajatella tilannetta, jossa jokin yksittäinen olio (Esko) kuuluisi tähän joukkoon, mutta ei toteuttaisi kyseistä ominaisuutta – jos kerran kaikki joukon jäsenet sen toteuttavat. Toisin sanoen, päättelyn pätevyys ynnä muu mielessä riippuu ainoastaan siitä, seuraako johtopäätös premisseistä, ei siitä, ovatko premissit tosia.
+Esimerkki 2
+
+Kaikki havaitut korpit ovat mustia;
+Siis: Kaikki korpit ovat mustia.
+Esimerkissä 2 päättely ei ole deduktiivista, vaan induktiivista. Induktiivisessa päättelyssä johtopäätöksen totuus ei ole oletusten totuuden välttämätön seuraus.
+Joskus päättely saattaa vaikuttaa pätevältä, vaikka se ei olekaan deduktiivista.
+Esimerkki 3
+Esko on mies.
+Siis: Esko ei ole nainen.
+Esimerkin 3 päättely ei ole deduktiivista. Se vaikuttaa kuitenkin pätevältä, koska olemme taipuvaisia implisiittisesti olettamaan eksplisiittisesti mainitun oletuksen (Esko on mies) lisäksi, että ”jos jokin on mies, niin tämä jokin ei ole nainen”. Termi ’jokin’ viittaa tässä kaikkiin yksilöihin, jotka ylipäätään voivat tulla kyseeseen jonkin ominaisuuden toteuttajina. Esimerkin 3 päättely on niin sanottu enthymeme eli epätäydellisesti ilmaistu syllogismi. Päättelystä saadaan deduktiivinen lisäämällä siihen mainitsematta jätetty lisäoletus seuraavasti:
+Esimerkki 4
+Esko on mies.
+Jos jokin on mies, niin tämä jokin ei ole nainen.
+Siis: Esko ei ole nainen.
+Looginen analyysi voi usein paljastaa jonkin todellisuutta koskevan piilevän oletuksen, kuten tässä sen, että miehet eivät ole naisia. Esimerkin 3 päättely voi joissakin yhteyksissä olla pätevää, esimerkiksi uimahallissa Eskon pohtiessa kumpaan pukuhuoneeseen hänen tulisi mennä. Mutta loogisesti pätevää, deduktiivista se ei ole.
+
+
+=== Perinteinen näkemys logiikasta argumenttien pätevyyttä tutkivana tieteenä ===
+Logiikassa argumentit ovat lausejonoja, joiden viimeinen lause on johtopäätös edellisistä lauseista, alkuehdoista eli premisseistä. Perinteinen näkökulma keskittyy argumentti­skeemoihin. Argumenttiskeemat ovat käsitteellisiä rakenteita, joiden pätevyys perustuu niiden loogiseen muotoon.
+Esimerkki 5
+Jos 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+, niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+.
+
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+.
+Siis: 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+.
+Esimerkissä 5 esitetty päättely on pätevä muotonsa perusteella. Johtopäätöksen 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+ seuraaminen premisseistä ei perustu 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+:n ja 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+:n sisältöön, vaan muotojen ”Jos 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+, niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+.” ja ”
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+.” yhteyteen.  Ensimmäisen premissin mukaan
+
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+ on 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+:n riittävä edellytys, ja jälkimmäisen mukaan tämä riittävä edellytys 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+ vallitsee.
+Esimerkin 5 argumenttiskeemaa voidaan soveltaa sijoittamalla lausemuuttujien 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+ ja 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+ paikalle lauseita.
+Esimerkki 6  Olkoon 
+  
+    
+      
+        A
+        
+          =
+          
+            d
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle A=_{df}\,\!}
+  
+”Esko ui” ja 
+  
+    
+      
+        B
+        
+          =
+          
+            d
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle B=_{df}\,\!}
+  
+”Esko kastuu”.
+Jos Esko ui, niin Esko kastuu.
+Esko ui.
+Siis: Esko kastuu.
+Se, että premissien itsensä totuus saattaa perustua niiden sisältöön, ei kuulu logiikkaan, koska argumenttiskeemat eivät väitä mitään premissien totuudesta. Ne vain toteavat, mitä seuraa loogisesti, jos tietyt premissit ovat tosia. Tämä selvenee, kun esimerkki 5 esitetään seuraavassa muodossa:
+Esimerkki 7
+Jos jos 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+, niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+ ja 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+, niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+.
+Esimerkistä 7 huomataan helposti, että loogisesti monimutkaisemmat luonnollisen kielen ilmaisut ovat melko hankalia hahmottaa. Ensimmäinen jos-sana viittaa premissien mahdolliseen totuuteen, jälkimmäinen jos-sana on osa ensimmäistä premissiä. Ilmaisua voidaan selventää sulkeilla:
+Esimerkki 8
+Jos ([jos 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+, niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+] ja 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+), niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+.
+Olkoon 
+  
+    
+      
+        C
+        
+          =
+          
+            d
+            f
+          
+        
+        
+        
+      
+    
+    {\displaystyle C=_{df}\,\!}
+  
+”(jos 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+, niin
+
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+)”. Argumentin premissit ovat nyt 
+  
+    
+      
+        C
+        
+        
+      
+    
+    {\displaystyle C\,\!}
+  
+
+ja 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+.  Päädytään seuraavaan muotoon:
+Esimerkki 9
+Jos (
+  
+    
+      
+        C
+        
+        
+      
+    
+    {\displaystyle C\,\!}
+  
+ ja 
+  
+    
+      
+        A
+        
+        
+      
+    
+    {\displaystyle A\,\!}
+  
+), niin 
+  
+    
+      
+        B
+        
+        
+      
+    
+    {\displaystyle B\,\!}
+  
+.
+Esimerkin 5 argumentti on siis jono 
+  
+    
+      
+        ⟨
+        
+
+        
+        C
+        ,
+        A
+        ,
+        B
+        ⟩
+        
+        
+      
+    
+    {\displaystyle \langle {}C,A,B\rangle \,\!}
+  
+.
+Loogisen argumentin yleinen muoto on jono
+
+  
+    
+      
+        ⟨
+        
+
+        
+        
+          A
+          
+            1
+          
+        
+        ,
+        
+          A
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          A
+          
+            n
+            −
+            1
+          
+        
+        ,
+        
+          A
+          
+            n
+          
+        
+        ⟩
+        
+        
+      
+    
+    {\displaystyle \langle {}A_{1},A_{2},\ldots ,A_{n-1},A_{n}\rangle \,\!}
+  
+, jossa 
+
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+        ,
+        
+          A
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          A
+          
+            n
+            −
+            1
+          
+        
+        
+        
+      
+    
+    {\displaystyle A_{1},A_{2},\ldots ,A_{n-1}\,\!}
+  
+ ovat premissejä ja
+
+  
+    
+      
+        
+          A
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle A_{n}\,\!}
+  
+ johtopäätös.
+
+
+== Logiikoita ==
+Aristoteelinen logiikka
+Boolen logiikka
+Deonttinen logiikka
+Dynaaminen logiikka
+Episteeminen logiikka
+Konstruktiivinen logiikka eli intuitionistinen logiikka
+Kuvauslogiikka
+Modaalilogiikka eli aleettinen modaalilogiikka
+Oletuslogiikka
+Parakonsistentti logiikka
+Predikaattilogiikka
+Propositiologiikka eli lauselogiikka
+Sumea logiikka
+Temporaalinen logiikka
+Termilogiikka
+
+
+== Katso myös ==
+Salva veritate, ”totuus säilyen”
+
+
+== Lähteet ==
+Miettinen, Seppo K.: Logiikka: Perusteet.  Helsinki:  Gaudeamus, 2002.  ISBN 951-662-865-6 
+
+
+=== Viitteet ===
+
+
+== Kirjallisuutta ==
+ Lisää luettavaa aiheesta Kirjallisuutta logiikasta on Wikiaineistossa
+Allwood, Jens, Andersson, Lars-Gunnar & Dahl, Östen: Logiikka ja kieli.  (Logik för lingvister, 1972)  Suomentanut Paavo Siro. Helsinki:  Yliopistopaino, 1988.  ISBN 951-570-020-5 
+Jussila, Erkki: Logiikkaa itseopiskelijalle.  (5. painos (1. painos 2004))  Tampere:  Erkki Jussila, 2012.  ISBN 978-952-93-0196-6 
+Priest, Graham: Logiikka.  (A Very Short  Introduction to Logic, 2000/2017)  Suomentanut Risto Koskensilta. Tampere:  niin & näin, 2017.  ISBN 978-952-7189-21-4 
+Rantala, Veikko & Virtanen, Ari: Logiikkaa: Teoriaa ja sovelluksia.  (2. painos (1. painos 1995))  Tampere:  Tampereen yliopisto, Matematiikan, tilastotieteen ja filosofian laitos, 1999.  ISBN 951-44-4624-0 
+Rantala, Veikko & Virtanen, Ari: Modaalilogiikka.  Helsinki:  Gaudeamus, 2004.  ISBN 951-662-907-5 
+Salminen, Hannele & Väänänen, Jouko: Johdatus logiikkaan.  (7. painos 2005)  Helsinki:  Gaudeamus, 1992.  ISBN 951-662-549-5 
+Suppes, Patrick: Introduction to logic.  Mineola, New York:  Dover Publications, 1999.  ISBN 0-486-40687-3  (englanniksi)
+Väänänen, Jouko: Matemaattinen logiikka.  Helsinki:  Gaudeamus, 1987.  ISBN 951-662-422-7 
+
+
+== Aiheesta muualla ==
+
+
+=== Oppimateriaaleja ===
+Mattila, Jorma K.: Diskreetit mallit ja menetelmät (Arkistoitu – Internet Archive). Lappeenrannan teknillinen yliopisto, Sovelletun matematiikan laitos.
+Rantala, Veikko & Virtanen, Ari: Logiikan peruskurssi (Arkistoitu – Internet Archive). Tampereen yliopisto.
+
+
+=== Ensyklopedia-artikkeleita ===
+Carnielli, Walter & Coniglio, Marcelo Esteban: Combining Logics The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+Enderton, Herbert B.: Second-order and Higher-order Logic The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+Galton, Antony: Temporal Logic The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+Groarke, Leo: Informal Logic The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+Hodges, Wilfrid: Logic and Games The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+Hofweber, Thomas: Logic and Ontology The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+Mares, Edwin: Relevance Logic The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)
+McKeon, Matthew: Logical Consequence The Internet Encyclopedia of Philosophy. (englanniksi)
+Shapiro, Stewart: Classical Logic The Stanford Encyclopedia of Philosophy. The Metaphysics Research Lab. Stanford University. (englanniksi)

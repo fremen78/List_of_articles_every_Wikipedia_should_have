@@ -1,0 +1,102 @@
+Analisis numerik adalah studi algoritme untuk memecahkan masalah dalam matematika kontinu (sebagaimana dibedakan dengan matematika diskret)
+Salah satu tulisan matematika terdini adalah loh Babilonia YBC 7289, yang memberikan hampiran numerik seksagesimal dari 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+, panjang diagonal dari persegi satuan.
+Kemampuan untuk dapat menghitung sisi segitiga (dan berarti mampu menghitung akar kuadrat) sangatlah penting, misalnya, dalam pertukangan kayu dan konstruksi.
+Analisis numerik melanjutkan tradisi panjang perhitungan praktis matematika ini. Seperti hampiran orang Babilonia terhadap 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+, analisis numerik modern tidak mencari jawaban eksak, karena jawaban eksak dalam praktiknya tidak mungkin diperoleh. Sebagai gantinya, kebanyakan analisis numerik memperhatikan bagaimana memperoleh pemecahan hampiran, dalam batas galat yang beralasan.
+Analisis numerik secara alami diterapkan di semua bidang rekayasa dan ilmu-ilmu fisis, tetapi pada abad ke-21, ilmu-ilmu hayati dan seni mulai mengadopsi unsur-unsur komputasi ilmiah. Persamaan diferensial biasa muncul dalam pergerakan benda langit (planet, bintang dan galaksi. Optimisasi muncul dalam pengelolaan portofolio. Aljabar linear numerik sangat penting dalam psikologi kuantitatif. Persamaan diferensial stokastik dan rantai Markov penting dalam mensimulasikan sel hidup dalam kedokteran dan biologi
+Sebelum munculnya komputer modern metode numerik kerap kali tergantung pada interpolasi menggunakan pada tabel besar yang dicetak. Sejak pertengahan abad ke-20, sebagai gantinya, komputer menghitung fungsi yang diperlukan. Namun algoritme interpolasi mungkin masih digunakan sebagai bagian dari peranti lunak untuk memecahkan persamaan diferensial.
+
+
+== Pengenalan umum ==
+Tujuan keseluruhan bidang analisis numerik adalah perancangan dan analisis teknik untuk mendapatkan solusi hampiran yang akurat terhadap masalah-masalah yang sukar. Contoh masalah-masalah tersebut akan dipaparkan di bawah.
+
+Metode numerik lanjut sangat penting dalam membuat prakiraan cuaca numerik yang layak
+Perhitungan trajektori wahana antariksa mensyaratkan pemecahan numerik yang akurat dari sistem persamaan diferensial biasa.
+Perusahaan otomotif dapat meningkatkan keamanan kendaraan dengan menggunakan simulasi tabrakan kendaraan. Simulasi seperti ini pada dasarnya terdiri dari pemecahan persamaan diferensial parsial secara numerik.
+Lembaga dana investasi pribadi menggunakan alat-alat dari seluruh bidang analisis numerik untuk menghitung nilai saham dan derivatif yang lebih tepat daripada peserta pasar lainnya
+Maskapai penerbangan menggunakan algoritme optimisasi canggih untuk menentukan harga tiket, pesawat terbang dan penugasan awak, serta keperluan bahan bakar. Bidang ini juga dinamakan riset operasi
+Perusahaan asuransi menggunakan program numerik untuk analisis aktuaria.
+
+
+=== Sejarah ===
+Bidang analisis numerik sudah sudah dikembangkan berabad-abad sebelum penemuan komputer modern. Interpolasi linear sudah digunakan lebih dari 2000 tahun yang lalu. Banyak matematikawan besar dari masa lalu disibukkan oleh analisis numerik, seperti yang terlihat jelas dari nama algoritme penting seperti metode Newton, interpolasi polinomial Lagrange, eliminasi Gauss, atau metode Euler.
+Buku-buku besar berisi rumus dan tabel data seperti interpolasi titik dan koefisien fungsi diciptakan untuk memudahkan perhitungan tangan. Dengan menggunakan tabel ini (sering kali menampilkan perhitungan sampai 16 angka desimal atau lebih untuk beberapa fungsi), kita bisa melihat nilai-nilai untuk diisikan ke dalam rumus yang diberikan dan mencapai perkiraan numerik sangat baik untuk beberapa fungsi. Karya utama dalam bidang ini adalah penerbitan NIST yang disunting oleh Abramovich dan Stegun, sebuah buku setebal 1000 halaman lebih. Buku ini berisi banyak sekali rumus yang umum digunakan dan fungsi dan nilai-nilainya di banyak titik. Nilai f-nilai fungsi tersebut tidak lagi terlalu berguna ketika komputer tersedia, tetapi senarai rumus masih mungkin sangat berguna.
+Kalkulator mekanik juga dikembangkan sebagai alat untuk perhitungan tangan. Kalkulator ini berevolusi menjadi komputer elektronik pada tahun 1940. Kemudian ditemukan bahwa komputer juga berguna untuk tujuan administratif. Tetapi penemuan komputer juga mempengaruhi bidang analisis numerik, karena memungkinkan dilakukannya perhitungan yang lebih panjang dan rumit.
+
+
+=== Metode langsung dan iteratif ===
+Metode langsung menghitung pemecahan suatu masalah dalam jumlah langkah terhingga. Metode ini akan memberikan jawaban persis bila dilakukan dalam hitungan dengan ketepatan takhingga. Contohnya adalah eliminasi Gauss, metode pemfaktoran QR untuk memecahkan sistem persamaan linear, dan metode simpleks untuk pemrograman linear. Pada praktiknya, yang digunakan adalah perhitungan ketepatan hingga (titik kambang) dan hasilnya adalah hampiran terhadap pemecahan sebenarnya (dengan andaian tercapai kestabilan numerik).
+Berbeda dengan metode langsung, metode iteratif tidak diharapkan akan berakhir dalam jumlah langkah terhingga. Dimulai dari tebakan awal, metode iteratif menghasilkan hampiran yang secara berturut-turut akan konvergen ke pemecahan eksak. Uji kekonvergenan dilakukan untuk memutuskan kapan pemecahan yang cukup akurat dapat dicapai. Bahkan dengan menggunakan aritmetika ketepatan takhingga sekali pun metode seperti ini secara umum tidak akan mencapai pemecahan dalam jumlah langkah terhingga. Contohnya termasuk metode Newton, metode bagi dua, dan iterasi Jacobi. Dalam aljabar komputasi matriks, metode iteratif biasanya diperlukan untuk masalah besar.
+Dalam analisis numerik metode iteratif lebih jamak daripada metode langsung. Beberapa metode pada intinya adalah langsung, tetapi biasanya diterapkan seolah-olah bukan, seperti GMRES dan metode gradien sekawan. Untuk metode-metode ini jumlah langkah yang diperlukan untuk mencapai solusi eksak sangat besar sehingga hampiran dapat diterima seperti pada metode iteratif.
+
+
+=== Diskretisasi ===
+Masalah kontinu kadang-kadang mesti digantikan dengan masalah diskret yang solusinya diketahui menghampiri masalah kontinu. Proses seperti ini dinamakan diskretisasi. Sebagai contoh, solusi persamaan diferensial adalah sebuah fungsi. Fungsi ini mesti direpresentasikan oleh data dalam jumlah terhingga, misalnya oleh nilai-nilainya pada sejumlah terhingga titik dalam domainnya, meskipun domainnya adalah malaran.
+
+
+== Penciptaan dan perambatan galat ==
+Studi galat merupakan bagian penting dari analisis numerik. Ada beberapa jalan masuknya galat ke dalam pemecahan suatu masalah.
+
+
+=== Pembulatan ===
+Galat pembulatan muncul karena tidak mungkin merepresentasikan bilangan riil secara eksak dalam sebuah mesin dengan memori terhingga (semua komputer digital seperti ini).
+
+
+=== Galat pemenggalan dan diskretisasi ===
+Galat pemenggalan dilakukan ketika metode iteratif diakhiri atau prosedur matematika dihampiri, dan pemecahan hampiran berbeda dengan pemecahan eksak. Mirip dengan hal ini, galat diskretisasi terjadi karena pemecahan masalah diskret tidak sama dengan pemecahan masalah kontinu. Sebagai contoh pada iterasi untuk menghitung pemecahan persamaan 
+  
+    
+      
+        3
+        
+          x
+          
+            3
+          
+        
+        +
+        4
+        =
+        28
+      
+    
+    {\displaystyle 3x^{3}+4=28}
+  
+, setelah 10 atau lebih iterasi, kita menyimpulkan bahwa akarnya kira-kira 1,99. Dengan demikian kita memiliki galat pemenggalan 0,01.
+Sekali galat diciptakan, galat ini akan merambat ke seluruh perhitungan. Sebagai contoh, kita telah mengetahui bahwa operasi + pada kalkulator atau komputer tidaklah eksak. Karena itu penghitungan a+b+c+d+e lebih tidak eksak lagi.
+Apa artinya ketika kita mengaktan bahwa galat pemenggalan diciptakan ketika kita menghampiri sebuah prosedur matematika? Kita mengetahui bahwa untuk mengintegralkan fungsi dengan eksak kita perlu mengetahui jumlahan trapesium yang banyaknya takhingga. Namun secara numerik kita hanya dapat menemukan jumlahan trapesium hingga, dan karena itu hanyalah hampiran dari prosedur matematika itu. Mirip dengan hal itu, untuk menurunkan suatu fungsi, elemen diferensial mendekati nol, tetapi secara numerik kita hanya dapat memilih nilai hingga dari elemen diferensial.
+
+
+== Perangkat lunak ==
+Sejak akhir abad keduapuluh, algoritme kebanyakan diimplementasikan dalam berbagai bahasa pemrograman. Netlib memiliki berbagai daftar perangkat lunak yang banyak digunakan di bidang numerik, kebanyakan bahasa pemrograman yang digunakan dalam Fortran dan C. Untuk produk perangkat lunak yang komersial menerapkan algoritme numerik yang lebih beragam termasuk IMSL dan NAG libraries, sedangkan untuk alternatif yang gratis adalah GNU Scientific Library.
+Ada beberapa perangkat lunak populer di bidang numerik seperti MATLAB, TK Solver, S - PLUS, LabVIEW, dan IDL selain itu ada juga versi gratis seperti freemat, Scilab, GNU Octave (mirip dengan Matlab), IT ++ (C ++ library), R (mirip dengan S - PLUS ) dan varian tertentu dari Python. Kinerja yang dihasilkan dari perangkat lunak tersebut bervariasi, untuk operasi matrik dan vektor biasanya cukup cepat sedangkan untuk skalar kecepatan bervariasi berdasarkan urutan besarnya.
+Banyak sistem aljabar komputer seperti perangkat lunak Mathematica memiliki kelebihan dalam hal arbitrary precision arithmetic sehingga dapat memberikan hasil yang lebih akurat.
+Selain itu perangkat lunak lembatang sebar juga dapat digunakan untuk menyelesaikan permasalahan berkaitan dengan analisis numerik
+
+
+== Catatan kaki ==

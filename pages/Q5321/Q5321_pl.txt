@@ -1,0 +1,350 @@
+Rezystor, opornik elektryczny (z łac. resistere „stawiać opór”) – element bierny obwodu elektrycznego, wykorzystywany jest do ograniczenia prądu w nim płynącego. Jest elementem liniowym: występujący na nim spadek napięcia jest wprost proporcjonalny do prądu płynącego przez opornik. Przy przepływie prądu zamienia energię elektryczną w ciepło.
+Idealny opornik posiada tylko jedną wielkość, która go charakteryzuje – rezystancję. W praktyce występuje jeszcze pojemność wewnętrzna oraz wewnętrzna indukcyjność, co, np. w technice wysokich częstotliwości (RTV), ma duże znaczenie (jest to tzw. pojemność oraz indukcyjność pasożytnicza). W technologii bardzo wysokich częstotliwości – kilkuset megaherców (MHz) i powyżej – właściwości pasożytnicze typowego rezystora muszą być traktowane jako wartości rozproszone, tzn. rozłożone wzdłuż jego fizycznych wymiarów (zobacz: schemat zastępczy).
+
+
+== Wzory na rezystancję zastępczą ==
+
+
+=== Połączenie szeregowe ===
+
+W połączeniu szeregowym rezystancja zastępcza jest sumą poszczególnych wartości:
+
+  
+    
+      
+        
+          R
+          
+            z
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        +
+        
+          R
+          
+            2
+          
+        
+        +
+        
+          R
+          
+            3
+          
+        
+        +
+        …
+        +
+        
+          R
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          R
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle R_{z}=R_{1}+R_{2}+R_{3}+\ldots +R_{n}=\sum _{i=1}^{n}R_{i}.}
+  
+
+
+=== Połączenie równoległe ===
+
+W połączeniu równoległym odwrotność rezystancji zastępczej (tj. konduktancja zastępcza) jest sumą odwrotności poszczególnych wartości:
+
+  
+    
+      
+        
+          
+            1
+            
+              R
+              
+                z
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              R
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              R
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              R
+              
+                3
+              
+            
+          
+        
+        +
+        …
+        +
+        
+          
+            1
+            
+              R
+              
+                n
+              
+            
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            
+              R
+              
+                i
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {1}{R_{z}}}={\frac {1}{R_{1}}}+{\frac {1}{R_{2}}}+{\frac {1}{R_{3}}}+\ldots +{\frac {1}{R_{n}}}=\sum _{i=1}^{n}{\frac {1}{R_{i}}},}
+  
+
+tj. sumą poszczególnych konduktancji:
+
+  
+    
+      
+        
+          S
+          
+            z
+          
+        
+        =
+        
+          S
+          
+            1
+          
+        
+        +
+        
+          S
+          
+            2
+          
+        
+        +
+        
+          S
+          
+            3
+          
+        
+        +
+        …
+        +
+        
+          S
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          S
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle S_{z}=S_{1}+S_{2}+S_{3}+\ldots +S_{n}=\sum _{i=1}^{n}S_{i}.}
+  
+
+Dla dwóch rezystorów wzór na rezystancję zastępczą upraszcza się do postaci:
+
+  
+    
+      
+        
+          R
+          
+            z
+          
+        
+        =
+        
+          R
+          
+            1
+            ,
+            2
+          
+        
+        =
+        
+          
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+            
+              
+                R
+                
+                  1
+                
+              
+              +
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle R_{z}=R_{1,2}={\frac {R_{1}R_{2}}{R_{1}+R_{2}}}.}
+  
+
+
+== Parametry ==
+Podstawowe parametry opisujące rezystor to:
+
+rezystancja nominalna – rezystancja podawana przez producenta na obudowie opornika, wyrażona w omach i przyjmująca wartości określane według szeregów wartości; rezystancja rzeczywista różni się od rezystancji nominalnej, jednak zawsze mieści się w podanej klasie tolerancji. Często używanym parametrem jest konduktancja wyrażana w simensach
+tolerancja – inaczej klasa dokładności; podawana w procentach możliwa odchyłka rzeczywistej wartości opornika od jego wartości nominalnej
+moc znamionowa – moc jaką opornik może przez dłuższy czas wydzielać w postaci ciepła bez wpływu na jego parametry; przekroczenie tej wartości może prowadzić do zmian innych parametrów rezystora (np. rezystancji) lub jego uszkodzenia,
+napięcie graniczne – maksymalne napięcie jakie można przyłożyć do opornika bez obawy o jego zniszczenie,
+temperaturowy współczynnik rezystancji – współczynnik określający zmiany rezystancji pod wpływem zmian temperatury opornika.
+
+
+== Oznaczenia rezystorów ==
+
+Uwagi:
+
+pasków lub kropek jest trzy, cztery, pięć lub sześć
+jeśli jest ich trzy, to wszystkie trzy oznaczają oporność (w tym trzeci oznacza mnożnik), a tolerancja wynosi ±20%
+jeśli jest ich cztery, to trzy pierwsze oznaczają (tak jak w przypadku powyżej) oporność, a czwarty – tolerancję
+jeśli jest ich pięć, to trzy pierwsze oznaczają cyfry oporności, czwarty mnożnik, a piąty tolerancję
+jeśli jest ich sześć, to jest to opornik precyzyjny i trzy pierwsze oznaczają cyfry oporności, czwarty – mnożnik, piąty – tolerancję, szósty – temperaturowy współczynnik rezystancji (ten pasek może znajdować się na samym brzegu opornika)
+pierwszą cyfrę oznacza pasek bliższy końca, a między mnożnikiem i tolerancją jest czasem większy odstęp
+stare oporniki są oznakowane:
+1 cyfra – kolor opornika
+2 cyfra – kolor paska
+mnożnik – kolor kropki
+
+
+=== Szereg wartości ===
+Oporniki (rezystory) produkowane masowo mają oporności znamionowe wynikające z tabeli szeregów.
+
+
+== Schemat zastępczy rezystora ==
+
+Schemat zastępczy rezystora rzeczywistego uwzględnia pojemność oraz indukcyjność pasożytniczą (w tym indukcyjność doprowadzeń). Są to przeważnie wartości bardzo małe, pomijalne w typowej analizie obwodu, jednak przy wysokich częstotliwościach (powyżej 1 GHz) parametry pasożytnicze mogą zupełnie zmienić charakter elementu.
+Oporniki stosowane do precyzyjnych pomiarów prądu, na przykład jako boczniki, są często wykonywane jako „bezindukcyjne”, poprzez nawinięcie ich w sposób bifilarny lub wykonanie w technologii grubowarstwowej.
+
+
+== Opornik w historii ==
+Opornik przypięty do swetra lub noszony w klapie marynarki w czasie stanu wojennego w Polsce w latach 1981–1983 symbolizował opór wobec władzy.
+
+
+== Zobacz też ==
+
+
+== Przypisy ==
+
+
+== Linki zewnętrzne ==
+Oznaczenia. edw.com.pl. [zarchiwizowane z tego adresu (2014-07-07)].
+Opis parametry oznaczenia połączenia
+Rezystory – zasady znakowania oporników oraz dekoder kodu barwnego
+Obliczanie rezystancji zastępczej rezystorów
+Kodowanie kolorystyczne oporników.

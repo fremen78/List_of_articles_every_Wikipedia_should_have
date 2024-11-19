@@ -1,0 +1,310 @@
+Un algoritmo é un conxunto ordenado e finito de operacións sinxelas que conducen á resolución dun problema, como por exemplo a formulación programática paso a paso para producir unha serie de resultados nun programa en informática. Máis especificamente, en matemáticas, constitúe o conxunto de procesos (e símbolos que os representan) para efectuar un cálculo.
+A palabra algoritmo ten orixe no alcume Al-Khwarizmi, do matemático persa do século IX, Abu Yafar Mohámmed Abenmusa, cuxas obras foron traducidas no occidente cristián no século XII, recibindo unha delas o nome "Algorithmi de numero indorum", sobre os algoritmos usando o sistema de numeración decimal (indiano). Outros autores, con todo, defenden a orixe da palabra en Al-goreten (raíz - concepto que se pode aplicar aos cálculos).
+O concepto de algoritmo é frecuentemente ilustrado co exemplo dunha receita, aínda que moitos algoritmos son máis complexos. Eles poden repetir pasos (facer interaccións) ou necesitar decisións (tales como comparacións ou lóxica) ata que a tarefa sexa completada. Un algoritmo correctamente executado non resolverá un problema se o algoritmo fose incorrecto ou non fose apropiado ao problema.
+Un algoritmo non representa, necesariamente, un programa de computador, e si os pasos necesarios para realizar unha tarefa. A súa posta en funcionamento pode ser feita por un computador, por outro tipo de autómata ou mesmo por un ser humano. Diferentes algoritmos poden realizar a mesma tarefa usando un conxunto diferenciado de instrucións en máis ou menos tempo, espazo ou esforzo que outros. Por exemplo, un algoritmo para se vestir pode especificar que vostede vista primeiro as medias e os zapatos antes de vestir o pantalón, en canto outro algoritmo especifica que vostede debe primeiro vestir o pantalón e despois as medias e os zapatos. Fica claro que o primeiro algoritmo é máis difícil de executar que o segundo.
+
+
+== Etimoloxía ==
+O vocábulo algoritmo ten as súas raíces na latinización do nisba, que indica a orixe xeográfica, do nome do matemático persa Muhammad ibn Musa al-Khwarizmi como algorismus. Al-Khwārizmī (الخوارزمی c. 780–850) foi un matemático, astrónomo, xeógrafo e estudoso da Casa da Sabedoría de Bagdad, e o seu nome significa "natural de Khwarazm", rexión que facía parte do Grande Irán e actualmente pertence a Uzbekistán.
+Arredor de 825, al-Khwarizmi escribiu un tratado en árabe sobre o sistema de numeración indoarábigo, que foi traducido ao latín durante o século XII. O manuscrito comeza coa frase Dixit Algorizmi ("Así falou Al-Khwarizmi"), onde "Algorizmi" foi a latinización do nome de Al-Khwarizmi que fixo o tradutor. Al-Khwarizmi foi o matemático máis lido en Europa a finais da idade media, especialmente por outro dos seus libros, Álxebra. No latín medieval final, algorismus significaba simplemente "sistema de numeración decimal". No século XV, pola influencia da palabra grega ἀριθμός (arithmos), "número", a palabra latina alterouse a algorithmus. O vocábulo inglés algorithm foi recollido no século XVII e o sentido moderno da expresión déuselle no século XIX.
+
+
+== Algoritmos e linguaxes de programación de computadores ==
+Xeralmente, os algoritmos descríbense informalmente nunha linguaxe próxima da lingua natural, máis facilmente comprendida por un ser humano que por un computador. Un algoritmo pode, na maior parte dos casos, ser aplicado en calquera linguaxe de programación.
+
+
+== Formalizando algoritmos ==
+Un programa de computador é esencialmente un algoritmo que di ao computador os pasos específicos e en que orde eles deben ser executados, como por exemplo, os pasos a seren tomados para calcular as notas que serán impresas nos boletíns dos alumnos dunha escola.
+Para calquera proceso computacional, o algoritmo precisa estar rigorosamente definido, especificando como se comportará en todas as circunstancias.
+A corrección do algoritmo pode ser probada matematicamente, ben como a cantidade asintótica de tempo e espazo (complexidade) necesarios para a súa execución. Estes aspectos dos algoritmos son materia da análise de algoritmos.
+
+
+== Posta en funcionamento ==
+Hai hoxe unha gran variedade de linguaxes de programación, cada unha con características específicas que poden facilitar a aplicación de determinados algoritmos ou atender a propósitos máis xerais.
+Os algoritmos non se poñen en funcionamento só como programas para computadores, senón que tamén se poden aplicar en circuítos eléctricos ou ata no noso cerebro cando executamos operacións aritméticas. A análise de algoritmos é unha rama da ciencia da computación que estuda as técnicas de proxecto de algoritmos e os algoritmos de forma abstracta, sen estaren aplicados nunha linguaxe de programación en particular ou dalgún outro modo. Un medio de exhibir un algoritmo é mostrar o seu pseudocódigo.
+
+
+== Algoritmos como funcións ==
+
+Un algoritmo pode concibirse como unha función que transforma os datos dun problema (entrada) nos datos dunha solución (saída). Aínda máis, os datos poden representarse á súa vez como secuencias de bits, e en xeral, de símbolos calquera. Como cada secuencia de bits representa un número natural, entón os algoritmos son en esencia funcións dos números naturais nos números naturais que si se poden calcular. É dicir que todo algoritmo calcula unha función 
+  
+    
+      
+        f
+        :
+        
+          N
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle f:\mathbf {N} \to \mathbf {N} }
+  
+ onde cada número natural é a codificación dun problema ou dunha solución.
+En ocasións os algoritmos son susceptibles de non rematar nunca, por exemplo, cando entran nun bucle infinito. Cando ocorre isto, o algoritmo nunca devolve ningún valor de saída, e podemos dicir que a función queda indefinida para ese valor de entrada. Por esta razón considérase que os algoritmos son funcións parciais, é dicir, non necesariamente definidas en todo o seu dominio de definición.
+Cando unha función pode ser calculada por medios algorítmicos, sen importar a cantidade de memoria que ocupe ou o tempo que se tarde, dise que esa función é computable. Non todas as funcións entre secuencias datos son computables. O problema da parada é un exemplo.
+
+
+== Exemplo de algoritmo ==
+O problema consiste en atopar o máximo dun conxunto de números.
+
+
+=== Descrición de alto nivel ===
+Dado un conxunto finito 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ de números, tense o problema de atopar o número máis grande. Sen perda de xeneralidade pode asumirse que ese conxunto non é baleiro e que os seus elementos están numerados como 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+          c
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{0},c_{1},\dots ,c_{n}}
+  
+.
+É dicir, dado un conxunto 
+  
+    
+      
+        C
+        =
+        {
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+          c
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle C=\{c_{0},c_{1},\dots ,c_{n}\}}
+  
+ pídese atopar 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ tal que 
+  
+    
+      
+        x
+        ≤
+        m
+      
+    
+    {\displaystyle x\leq m}
+  
+ para todo elemento 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ que pertence ao conxunto 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+.
+Para atopar o elemento máximo, asúmese que o primeiro elemento (
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+      
+    
+    {\displaystyle c_{0}}
+  
+) é o máximo; despois, percórrese o conxunto e compárase cada valor co valor do máximo número atopado ata ese momento. No caso no que un elemento sexa maior que o máximo, asígnase o seu valor ao máximo. Cando se termina de percorrer a lista, o máximo número que se atopou é o máximo de todo o conxunto.
+
+
+=== Descrición formal ===
+O algoritmo pode ser escrito dunha maneira máis formal no seguinte pseudocódigo:
+
+ 
+
+Sobre a notación:
+
+"←" representa unha asignación: 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ ← 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ significa que a variable 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ toma o valor de 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+;
+"devolver" termina o algoritmo e dá o valor á súa dereita (neste caso, o máximo de 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+).
+
+
+=== Posta en funcionamento ===
+En linguaxe C++:
+
+
+== Exemplo en pseudocódigo ==
+Exemplo dun algoritmo que devolve a suma de dous valores (tamén coñecidos como parámetros ou argumentos) que son introducidos na chamada da función:
+
+ función SumaDeDousValores (A numérico, B numérico)
+ {
+   declara SUMA numérico
+   SUMA <-- A + B
+   retorna SUMA
+ }
+
+Exemplo dun algoritmo (WinPseudo 1.4) que imprime todos os números menores que <Limite>:
+
+#-----------------------------------------
+#  Pseudocódigo para imprimir todos os 
+#  números menores que <Limite>              
+#-----------------------------------------
+
+INICIO Programa1 - Imprime todos os números menores que <Limite>
+
+     VAR
+	NUMERICO i
+	NUMERICO Limite
+     FIN-VAR
+
+     LER (Limite)
+     IMPRIMIR NL
+
+     i = 0
+     MENTRES (i < Limite)
+	IMPRIMIR ENTEIRO (i)
+	IMPRIMIR ", "
+	i = i + 1
+     FIN-MENTRES
+
+FINAL
+
+
+== Notas ==
+
+
+== Véxase tamén ==
+
+
+=== Bibliografía ===
+Bellah, Robert Neelly (1985). Habits of the Heart: Individualism and Commitment in American Life. Berkeley: University of California Press. ISBN 978-0-520-25419-0. 
+Berlinski, David (2001). The Advent of the Algorithm: The 300-Year Journey from an Idea to the Computer. Harvest Books. ISBN 978-0-15-601391-8. 
+Chabert, Jean-Luc (1999). A History of Algorithms: From the Pebble to the Microchip. Springer Verlag. ISBN 978-3-540-63369-3. 
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein, Clifford (2009). Introduction To Algorithms (3rd ed.). MIT Press. ISBN 978-0-262-03384-8. 
+Harel, David; Feldman, Yishai (2004). Algorithmics: The Spirit of Computing. Addison-Wesley. ISBN 978-0-321-11784-7. 
+Hertzke, Allen D.; McRorie, Chris (1998). "The Concept of Moral Ecology".  En Lawler, Peter Augustine; McConkey, Dale. Community and Political Thought Today. Westport, CT: Praeger. 
+Knuth, Donald E. (2000). Selected Papers on Analysis of Algorithms Arquivado 01 de xullo de 2017 en Wayback Machine.. Stanford, California: Center for the Study of Language and Information.
+Knuth, Donald E. (2010). Selected Papers on Design of Algorithms Arquivado 16 de xullo de 2017 en Wayback Machine.. Stanford, California: Center for the Study of Language and Information.
+Wallach, Wendell; Allen, Colin (November 2008). Moral Machines: Teaching Robots Right from Wrong. US: Oxford University Press. ISBN 978-0-19-537404-9. 
+
+
+=== Outros artigos ===
+Algoritmo xenético
+Ciencia da Computación
+Estruturas de datos
+Exemplos de algoritmos en varias linguaxes
+
+
+=== Ligazóns externas ===
+Exemplos de algoritmos básicos
+Todo sobre algoritmos Arquivado 03 de maio de 2020 en Wayback Machine.

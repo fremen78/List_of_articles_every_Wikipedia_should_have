@@ -1,0 +1,130 @@
+Disgyblaeth fathemategol yw ystadegaeth sy'n astudio ffyrdd o gasglu, crynhoi, dadansoddi, dod i gasgliadau a chyflwyno data. Mae'n ddefnyddiol ar gyfer amrywiaeth lydan o ddisgyblaethau academaidd o'r gwyddorau ffisegol a chymdeithasol i'r dyniaethau, yn ogystal â busnes, llywodraeth, a diwydiant. Mae ystadegau'n delio â phob agwedd ar ddata, gan gynnwys cynllunio casglu data o ran dyluniad arolygon ac arbrofion.
+Mae llawer o gysyniadau ystadegaeth yn dibynnu ar ddealltwriaeth o debygolrwydd, ac fe ddaw sawl term ystadegol o'r maes hwnnw, er enghraifft: poblogaeth, sampl a thebygolrwydd.
+Tad gwyddoniaeth actiwaraidd bydeang oedd William Morgan (1750 - 1833) o Ben-y-bont ar Ogwr, Sir Forgannwg ac un o golofnau mawr The Equitable Life Assurance Society a'r Scottish Widows.  Mae maes yr actiwri ac yswiriant yn ddibynol iawn ar ystadegaeth. Bu farw yn Stamford Hill, Llundain ar 4 Mai 1833 a chladdwyd ef yn Hornsey. Yn 2020 cyhoeddwyd cyfrol am William Morgan yng nghyfres Gwyddonwyr Cymru Gwasg Prifysgol Cymru gan Nicola Bruton Bennetts, gor-gor-gor-wyres William Morgan. Cyhoeddodd Nicola Bruton Bennetts erthygl am William Morgan (perthynas pell iddi) yn y Bywgraffiadur Cymreig. Un o brif feysydd William Morgan oedd y tebygolrwydd i berson fyw i oedran arbennig, ac yswiro bywydau.
+Unwaith mae'r data wedi ei gasglu (trwy ddull samplu ffurfiol, neu drwy nodi canlyniadau rhyw arbrawf neu'i gilydd, neu drwy arsylwi rhyw broses drosodd a throsodd dros amser), gellir cynhyrchu crynhöadau rhifyddol gan ddefnyddio ystadegaeth ddisgrifiol.
+Modelir patrymau yn y data i dynnu casgliadau ynglŷn â'r boblogaeth ehangach, gan ddefnyddio ystadegaeth gasgliadol i ddehongli hapder ac ansicrwydd y sefyllfa. Gall y casgliadau fod yn atebion i gwestiynau "ie/na" (profi rhagdybiaeth), amcangyfrif nodweddau rhifyddol, rhagweld yr arsylwadau sydd i ddod, disgrifiadau o gysylltiad, neu modelu perthynasau. Ystadegaeth gymwysiedig yw'r uchod yn y bôn. O gymharu, mae ystadegaeth haniaethol yn is-ddisgybliaeth fathemategol sy'n defnyddio tebygolrwydd a dadansoddi i roi sylfaen theoretig, gadarn i ystadegaeth.
+
+
+== Cyffredinol ==
+
+Pan na ellir casglu data cyfrifiad mae ystadegwyr yn casglu data trwy ddatblygu dyluniadau arbrofion penodol a samplau arolwg. Mae samplu rhai cynrychiolwyr (sy'n cynrychioli'r gweddill) yn sicrhau y gall dod i y casgliadau a'r canlyniadau terfynol fod yn  gyntychioliadol o'r boblogaeth gyfan. Mae astudiaeth arbrofol yn cynnwys cymryd mesuriadau o'r system a astudir, newid o fewn y system, ac yna cymryd mesuriadau ychwanegol gan ddefnyddio'r un weithdrefn i benderfynu a yw'r driniaeth o'r sampl data wedi gwella'r canlyniad. Mewn cyferbyniad, nid yw astudiaeth arsylwadol yn cynnwys trin a thrafod arbrofol.
+Defnyddir dau brif ddull ystadegol wrth ddadansoddi data: ystadegaeth disgrifiadol, sy'n crynhoi data o sampl gan ddefnyddio mynegeion fel y gwyriad safonol, ac ystadegaeth gasgliadol, sy'n dod i gasgliadau o ddata sy'n destun amrywiadau ar hap (ee gwallau arsylwadol, amrywiad samplu). Mae ystadegau disgrifiadol yn ymwneud gan amlaf â dwy set o briodweddau dosbarthiad (sampl neu boblogaeth): mae tueddiad canolog (canolduedd neu leoliad ) yn ceisio nodweddu gwerth canolog neu nodweddiadol y dosbarthiad, tra bod gwasgariad (neu amrywioldeb) yn nodweddu i ba raddau y mae aelodau o'r dosbarthiad yn gwyro o'r canol yn fwy na'i gilydd. Gwneir casgliadau ar ystadegaeth mathemategol  dan fframwaith damcaniaeth (neu theori) tebygolrwydd, sy'n delio â dadansoddi ffenomenau ar hap.
+Mae gweithdrefn ystadegol safonol yn cynnwys casglu data sy'n arwain at brofi'r berthynas rhwng dwy set ddata ystadegol, neu set ddata a data synthetig a dynnwyd o fodel delfrydol. Cynigir rhagdybiaeth ar gyfer y berthynas ystadegol rhwng y ddwy set ddata, a chymharir hyn fel dewis arall yn lle rhagdybiaeth nwl delfrydol o ddim perthynas rhwng dwy set o ddata. Gwrthodir neu wrthbrofir y rhagdybiaeth nwl gan ddefnyddio profion ystadegol sy'n meintioli'r ymdeimlad y gellir profi  bod y nwl yn ffug, o gofio'r data a ddefnyddir yn y prawf. Gan weithio o ragdybiaeth nwl, cydnabyddir dau fath sylfaenol o wall: Gwallau Math I (gwrthodir rhagdybiaeth nwl yn ffug (ffals) gan roi "ffug gadarnhaol" neu "false positive") a Gwallau Math II (mae rhagdybiaeth nwl yn methu â chael ei wrthod a methir â chanfod perthynas wirioneddol rhwng gwahanol boblogaethau. gan roi "ffug negyddol", neu "false negative"). Mae'r fframwaith hwn yn llawn o broblemau gan gynnwys canfod maint sampl digonol a fethu a nodi rhagdybiaeth nwl ddigonol.
+Mae cynhyrchu data ystadegol yn gofyn am brosesau mesur da, ac yn aml hefyd yn destun gwallau. Mae llawer o'r gwallau hyn yn cael eu dosbarthu fel rhai ar hap (sŵn) neu systematig (bias / gogwydd), ond gall mathau eraill o wallau (ee camsyniad, megis pan fydd dadansoddwr yn adrodd am yr unedau anghywir) ddigwydd hefyd. Gall presenoldeb data coll neu sensro data arwain at amcangyfrifon rhagfarnllyd a datblygwyd technegau penodol i fynd i'r afael â'r problemau hyn.
+
+
+== Cyflwyniad ==
+Mae ystadegaeth yn gorff mathemategol o wyddoniaeth sy'n ymwneud â chasglu, dadansoddi, dehongli a chyflwyno data, neu fel cangen o fathemateg. Mae rhai o'r farn bod ystadegau'n wyddoniaeth fathemategol unigryw yn hytrach na changen o fathemateg. Er bod llawer o ymchwiliadau gwyddonol yn defnyddio data, mae ystadegau'n ymwneud â defnyddio data yng nghyd-destun ansicrwydd a gwneud penderfyniadau yn wyneb yr ansicrwydd hwnnw.
+Wrth gymhwyso ystadegau i broblem, mae'n arfer cyffredin dechrau gyda phoblogaeth neu broses i'w hastudio. Gall poblogaethau fod yn bynciau amrywiol fel "pawb sy'n byw mewn gwlad" neu "bob atom o fewn darn o risial". Yn ddelfrydol, mae ystadegwyr yn casglu data am y boblogaeth gyfan (gweithrediad o'r enw cyfrifiad ee mewn etholiad). Gall sefydliadau ystadegol y llywodraeth drefnu hyn. Gellir defnyddio ystadegaeth ddisgrifiadol i grynhoi'r data poblogaeth. Mae disgrifyddion rhifiadol yn cynnwys gwyriad cymedrig a gwyriad safonol ar gyfer data parhaus (fel incwm), tra bod amlder a chanran yn fwy defnyddiol o ran disgrifio data categori (fel addysg).
+Pan nad yw cyfrifiad o'r cyfan yn ymarferol, astudir is-set o'r boblogaeth a elwir yn sampl. Unwaith y penderfynir ar sampl sy'n gynrychioliadol o'r boblogaeth, cesglir data ar gyfer aelodau'r sampl naill ai'n yn arsylwadol neu arbrofol. Unwaith eto, gellir defnyddio ystadegau disgrifiadol i grynhoi'r data sampl. Fodd bynnag, mae llunio'r sampl yn cynnwys elfen o hap; felly, mae'r disgrifyddion rhifiadol o'r sampl hefyd yn dueddol o gynnwys ansicrwydd. Er mwyn dod i gasgliadau ystyrlon am y boblogaeth gyfan, mae angen ystadegaeth casgliadol, sy'n defnyddio patrymau yn y data sampl i ddod i gasgliadau am y boblogaeth gyfan, gan gyfrif hefyd am yr elfen o hap. Gall y casgliadau hyn fod ar ffurf ateb cwestiynau ie / nage am y data (pawf rhagdybiaeth), amcangyfrif nodweddion rhifiadol y data (amcangyfrif), disgrifio cysylltiadau (correlation) o fewn y data (cydberthynas), a modelu perthynas o fewn y data (er enghraifft, defnyddio dadansoddiad atchweliad (regression analysis). Gall inference ymestyn i ragweld (forecasting), rhagfynegi ac amcangyfrif gwerthoedd heb eu harsylwi, naill ai yn y boblogaeth sy'n cael ei hastudio neu'n gysylltiedig â hi. Gall gynnwys allosod a rhyngosod cyfres amser neu ddata gofodol, a chloddio data.
+
+
+=== Ystadegau mathemategol ===
+Ystadegaeth mathemategol yw cymhwyso mathemateg i ystadegau. Ymhlith y technegau mathemategol a ddefnyddir ar gyfer hyn mae dadansoddiad mathemategol, algebra llinol, dadansoddiad stocastig, hafaliadau differol, a mesur-theoretig theori tebygolrwydd.
+
+
+== Hanes ==
+
+Mae'r ysgrifau cynnar ar gasglu ystadegau yn dyddio'n ôl i fathemategwyr a chryptograffwyr Arabaidd, yn ystod yr Oes Aur Islamaidd rhwng yr 8fed a'r 13g. Swgennodd Al-Khalil (717–786) y Llyfr Negeseuon Cryptograffig, sy'n cynnwys y defnydd cyntaf o drawsnewidiadau a chyfuniadau (permutations and combinations), i restru'r holl eiriau Arabeg posibl gyda llafariaid a hebddynt. Yn ei lyfr, Llawysgrif ar  Ddehongli Negeseuon Cryptograffig, rhoddodd Al-Kindi ddisgrifiad manwl o sut i ddefnyddio dadansoddiad amledd i ddehongli negeseuon wedi'u hamgryptio. Gwnaeth Al-Kindi hefyd y defnydd cynharaf hysbys o gasgliad ystadegol, tra datblygodd ef a chryptograffwyr Arabaidd diweddarach y dulliau ystadegol cynnar ar gyfer datgodio negeseuon wedi'u hamgryptio. Yn ddiweddarach, gwnaeth Ibn Adlan (1187–1268) gyfraniad pwysig, ar ddefnyddio maint sampl wrth ddadansoddi amledd.
+Mae'r drafodaeth Ewropeaidd gynharaf ar ystadegau yn dyddio'n ôl i 1663, gyda chyhoeddiad Natural and Political Observations upon the Bills of Mortality gan John Graunt. Sylweddolodd llawer o wledydd y byd fbwysigrwydd o seilio polisi ar ddata demograffig ac economaidd, a daeth etymoleg yn faes pwysig. Ehangodd cwmpas disgyblaeth ystadegau ar ddechrau'r 19g i gynnwys casglu a dadansoddi data yn gyffredinol. Heddiw, mae ystadegau'n cael eu defnyddio'n helaeth gan lywodraethau, busnes, a'r gwyddorau naturiol a chymdeithasol.
+Gosodwyd sylfeini mathemategol ystadegau modern yn yr 17g gyda datblygiad damcaniaeth tebygolrwydd gan Gerolamo Cardano, Blaise Pascal a Pierre de Fermat. Cododd o astudio gemau siawns, er bod y cysyniad o debygolrwydd eisoes wedi'i archwilio gan yr Arabiaid ac oddi fewn i ddeddfau'r Oesoedd Canol a chan athronwyr fel Juan Caramuel. Disgrifiwyd y dull o sgwariau lleiaf gyntaf gan Adrien-Marie Legendre ym 1805.
+
+Daeth y maes ystadegau modern i'r amlwg ar ddiwedd y 19eg a dechrau'r 20g mewn tri cham.
+Cymerwyd y cam cyntaf, ar droad canrif 19 a 20, gan waith Francis Galton a Karl Pearson, a drawsnewidiodd ystadegaeth yn ddisgyblaeth fathemategol drwyadl a ddefnyddir ar gyfer dadansoddi, nid yn unig mewn gwyddoniaeth, ond mewn diwydiant a gwleidyddiaeth hefyd. Roedd cyfraniadau Galton yn cynnwys cyflwyno cysyniadau gwyriad safonol, cydberthynas, dadansoddiad atchwel a chymhwyso'r dulliau hyn wrth astudio amrywiaeth o nodweddion dynol: taldra, pwysau, lliw gwallt ayb. Datblygodd Pearson y Pearson product-moment correlation coefficient, a ddiffinnir fel product-moment, y dull yr eiliad ar gyfer gosod dosraniadau i samplau a dosbarthiad Pearson, ymhlith llawer o bethau eraill. Sefydlodd Galton a Pearson Biometrika fel cyfnodolyn cyntaf ystadegau mathemategol a biostadegau (gan ei alw, ar y pryd, yn biometry), a sefydlodd yr olaf adran ystadegaeth prifysgol gynta'r byd yng Ngholeg Prifysgol Llundain (UCL).
+Bathodd Ronald Fisher y term rhagdybiaeth nwl yn ystod arbrawf blasu te Lady, na chaiff "fyth ei brofi na'i sefydlu, ond sydd o bosibl yn cael ei wrthbrofi, o fewn yr arbrawf".
+Cymerwyd yr ail gam yn y 1910au a'r 20au gan William Sealy Gosset, a gyrhaeddodd ei anterth yng ngwaith Ronald Fisher, a ysgrifennodd y gwerslyfrau a oedd i ddiffinio'r ddisgyblaeth academaidd hon o fewn prifysgolion ledled y byd. Cyhoeddiadau pwysicaf Fisher oedd ei bapur arloesol (a sgwennodd yn 1918) The Correlation between Relatives on the Supposition of Mendelian Inheritance (sef y cyntaf i ddefnyddio'r term ystadegol, amrywiant sef variance), ei waith clasurol Statistical Methods for Research Workers yn 1925 a'i The Design of Experiments yn 1935 lle datblygodd ddyluniad o fodelau. Cychwynnodd y cysyniadau o ddigonolrwydd, ystadegau ategol, gwahaniaethydd llinol Fisher a gwybodaeth Fisher. Yn ei lyfr yn 1930, The Genetical Theory of Natural Selection, cymhwysodd ystadegau at amrywiol gysyniadau biolegol megis egwyddor Fisher (a alwodd A. W. F. Edwards yn "fwy na thebyg y ddadl fwyaf enwog mewn bywydeg esblygiad"), y cysyniad o ddetholiad naturiol rhywogaethau o fewn esblygiad.
+Deilliodd y trydydd cam, a welodd yn bennaf fireinio ac ehangu datblygiadau cynharach, o'r gwaith cydweithredol rhwng Egon Pearson a Jerzy Neyman yn y 1930au. Cyflwynodd y ddau gysyniadau gwall "Math II", pŵer y prawf a chyfyngau hyder. Dangosodd Jerzy Neyman ym 1934 fod samplu ar hap haen-ar-haen yn gyffredinol yn well dull amcangyfrif na samplu bwriadol (cwota).
+Heddiw, cymhwysir dulliau ystadegol ym mhob maes sy'n cynnwys gwneud penderfyniadau, ar gyfer dod i gasgliadau cywir gan gorff data a gasglwyd ac ar gyfer gwneud penderfyniadau yn wyneb ansicrwydd yn seiliedig ar fethodoleg ystadegol. Mae defnyddio cyfrifiaduron modern, cryf wedi cyflymu cyfrifiannau ystadegol ar raddfa fawr ac mae hefyd wedi gwneud dulliau newydd yn bosibl, dulliau a fu gynt yn anymarferol i'w gwneud â llaw. Mae ystadegaeth yn parhau i fod yn faes ymchwil weithredol er enghraifft ar y broblem o sut i ddadansoddi data mawr .
+
+
+== Data ystadegol ==
+
+
+=== Casglu data ===
+
+
+==== Samplu ====
+Pan na ellir casglu data cyfrifiad llawn, mae ystadegwyr yn casglu data sampl trwy ddatblygu dyluniadau arbrofion penodol a samplau arolwg. Mae ystadegau ei hun hefyd yn darparu offer ar gyfer darogan a rhagweld trwy fodelau ystadegol.
+Er mwyn defnyddio sampl fel canllaw i boblogaeth gyfan, mae'n bwysig ei fod yn wirioneddol gynrychioli'r boblogaeth gyffredinol. Mae samplu cynrychioliadol yn sicrhau y gall casgliadau a chanlyniadau (inferences and conclusions) ymestyn y sampl yn ddiogel i'r boblogaeth gyfan. Y broblem fawr yw penderfynu i ba raddau y mae'r sampl a ddewiswyd yn gynrychioliadol mewn gwirionedd. Mae ystadegau'n cynnig dulliau i amcangyfrif a chywiro unrhyw fias neu ragfarn yn y sampl a gweithdrefnau casglu data. Mae yna hefyd ddulliau o ddylunio arbrofion tecach a all leihau'r bias yma ar ddechrau'r astudiaeth, gan gryfhau'r gallu i ganfod y gwirionedd am y boblogaeth.
+
+
+==== Astudiaethau arbrofol ac arsylwadol ====
+Nod cyffredin ar gyfer prosiect ymchwil ystadegol yw ymchwilio i achosiaeth, ac yn benodol, i ddod i gasgliad ar effaith newidiadau yng ngwerth rhagfynegwyr neu newidynnau annibynnol ar newidynnau dibynnol. Mae dau brif fath o astudiaeth ystadegol achosol: astudiaethau arbrofol ac astudiaethau arsylwadol. Yn y ddau hyn, arsylwir ar effaith gwahaniaethau newidyn/au annibynnol ar ymddygiad y newidyn dibynnol. Mae'r gwahaniaeth rhwng y ddau fath yn gorwedd yn y modd y cynhelir yr astudiaeth mewn gwirionedd. Gall pob un fod yn effeithiol iawn. Mae astudiaeth arbrofol yn cynnwys cymryd mesuriadau o'r system dan astudiaeth, trin y system, ac yna cymryd mesuriadau ychwanegol gan ddefnyddio'r un weithdrefn i benderfynu a yw'r trin-a-thrafod wedi addasu gwerthoedd y mesuriadau. Mewn cyferbyniad, nid yw astudiaeth arsylwadol yn cynnwys trin-a-thrafod arbrofol. Yn hytrach, cesglir data ac ymchwilir i gydberthynas rhwng rhagfynegwyr ac ymateb. Er bod offer dadansoddi data yn gweithio orau ar ddata o astudiaethau ar hap, fe'u cymhwysir hefyd i fathau eraill o ddata - fel arbrofion naturiol ac astudiaethau arsylwadol - byddai ystadegydd yn defnyddio dull amcangyfrif wedi'i addasu, mwy strwythuredig ar gyfer hyn (ee. y gwahaniaeth mewn amcangyfrif gwahaniaethau a newidynnau, ymhlith llawer o rai eraill) sy'n cynhyrchu amcangyfrifwyr cyson.
+
+
+===== Arbrofion =====
+Ymhlith y camau sylfaenol a gymerir mewn arbrawf ystadegol y mae:
+
+Cynllunio'r ymchwil, gan gynnwys darganfod nifer yr atgynyrchiadau (number of replicates) o'r astudiaeth, gan ddefnyddio'r wybodaeth ganlynol: amcangyfrifon rhagarweiniol ynghylch maint effeithiau triniaeth, rhagdybiaethau amgen, a'r amrywioldeb arbrofol amcangyfrifedig. Mae angen ystyried y dewis o bynciau arbrofol a moeseg yr ymchwil. Mae ystadegwyr yn argymell bod arbrofion yn cymharu (o leiaf) un driniaeth newydd â thriniaeth neu reolaeth safonol, er mwyn caniatáu amcangyfrif diduedd o'r gwahaniaeth mewn effeithiau trin-a-thrafod y data.
+Dylunio arbrofion, gan ddefnyddio blocio i leihau dylanwad newidynnau dryslyd, ac aseinio triniaethau ar hap i bynciau i ganiatáu amcangyfrifon diduedd o effeithiau triniaeth a chamgymeriad arbrofol. Ar yr adeg hon, mae'r arbrofwyr a'r ystadegwyr yn ysgrifennu'r protocol arbrofol a fydd yn arwain perfformiad yr arbrawf ac sy'n nodi dadansoddiad sylfaenol o'r data arbrofol.
+Perfformio'r arbrawf yn dilyn y protocol arbrofol a dadansoddi'r data yn dilyn y protocol arbrofol.
+Archwilio'r set ddata ymhellach mewn dadansoddiadau eilaidd, i awgrymu damcaniaethau newydd ar gyfer astudio yn y dyfodol.
+Dogfennu a chyflwyno canlyniadau'r astudiaeth.
+Mae gan arbrofion ar ymddygiad dynol bryderon arbennig. Archwiliodd astudiaeth enwog Hawthorne newidiadau i'r amgylchedd gwaith yng ngwaith Hawthorne y Western Electric Company. Roedd gan yr ymchwilwyr ddiddordeb mewn penderfynu a fyddai gwella golau'r adeilad yn gwella cynhyrchiant (productivity) gweithwyr y llinell ymgynnull. Yn gyntaf, mesurodd yr ymchwilwyr y cynhyrchiant yn y gwaith, yna addaswyd y goleuo mewn rhan o'r planhigyn a gwirio a oedd y newidiadau mewn goleuo yn effeithio ar gynhyrchiant. Canfuwyd bod cynhyrchiant wedi gwella yn wir (o dan yr amodau arbrofol). Fodd bynnag, mae'r astudiaeth yn cael ei beirniadu'n hallt heddiw am wallau mewn gweithdrefnau arbrofol, yn benodol am ddiffyg grŵp rheoli a dallineb i wybodaeth. Mae effaith Hawthorne yn cyfeirio at ddarganfod bod canlyniad (yn yr achos hwn, cynhyrchiant y gweithwyr) wedi newid oherwydd arsylwi ei hun. Daeth y rhai yn astudiaeth Hawthorne yn fwy cynhyrchiol nid oherwydd bod y goleuadau wedi newid ond oherwydd eu bod yn cael eu harsylwi!
+
+
+===== Astudiaeth arsylwi =====
+Enghraifft o astudiaeth arsylwadol yw un sy'n archwilio'r cysylltiad rhwng ysmygu a chanser yr ysgyfaint. Mae'r math hwn o astudiaeth fel arfer yn defnyddio arolwg i gasglu arsylwadau am y maes diddordeb ac yna'n gwneud dadansoddiad ystadegol. Yn yr achos hwn, byddai'r ymchwilwyr yn casglu arsylwadau ysmygwyr a rhai nad ydynt yn ysmygu, efallai trwy astudiaeth garfan, ac yna'n edrych am nifer yr achosion o ganser yr ysgyfaint ym mhob grŵp. Mae astudiaeth rheoli achos yn fath arall o astudiaeth arsylwadol lle mae pobl sydd / heb y maes diddordeb (ee canser yr ysgyfaint) yn cael eu gwahodd i gymryd rhan a chasglir eu hanesion.
+
+
+=== Mathau o ddata ===
+Gwnaed ymdrechion amrywiol i gynhyrchu tacsonomeg o lefelau mesur. Diffiniodd y seicoffisegydd Stanley Smith Stevens raddfeydd enwol, trefnol, egwyl a chymhareb (nominal, ordinal, interval, and ratio scales). Nid oes gan fesuriadau enwol drefn restrol ystyrlon ymhlith gwerthoedd, ac maent yn caniatáu unrhyw drawsnewidiad un-i-un (chwistrellus). Mae gan fesuriadau trefnol wahaniaethau dibwys rhwng gwerthoedd olynol, ond mae ganddynt drefn ystyrlon i'r gwerthoedd hynny, ac maent yn caniatáu unrhyw drawsnewid sy'n cadw trefn. Mae gan fesuriadau bellteroedd ystyrlon rhwng y mesuriadau a ddiffinnir, ond mae'r gwerth sero yn fympwyol (fel yn achos mesuriadau hydred a thymheredd yn Celsius neu Fahrenheit), ac maent yn caniatáu unrhyw drawsnewid llinol. Mae gan fesuriadau cymhareb werth sero ystyrlon ac mae ganddynt bellteroedd rhwng gwahanol fesuriadau wedi eu diffinio, ac maent yn caniatáu unrhyw drawsnewid drwy ail-raddio.
+
+
+== Cymhwyso ystadegaeth ==
+
+
+=== Ystadegau cymhwysol, ystadegau damcaniaethol ac ystadegau mathemategol ===
+Mae ystadegau cymhwysol yn cynnwys ystadegau disgrifiadol a chymhwyso ystadegau casgliadol. Mae ystadegau damcaniaethol yn ymwneud â'r dadleuon rhesymegol sy'n sail i gyfiawnhad dulliau o ddod i gasgliad ystadegol, yn ogystal â chwmpasu ystadegau mathemategol. Mae ystadegau mathemategol yn cynnwys nid yn unig trin dosraniadau tebygolrwydd sy'n angenrheidiol i gael canlyniadau sy'n gysylltiedig â dulliau amcangyfrif a chasglu, ond hefyd amrywiol agweddau ar ystadegau cyfrifiadol a dylunio arbrofion.
+Gall ymgynghorwyr ystadegol helpu sefydliadau a chwmnïau nad oes ganddynt arbenigedd mewnol.
+
+
+=== Dysgu peirianyddol a chloddio data ===
+Mae modelau dysgu peirianyddol yn fodelau ystadegol a thebygol sy'n sbotio patrymau yn y data trwy ddefnyddio algorithmau cyfrifiadol.
+
+
+=== Ystadegau yn y byd academaidd ===
+Mae ystadegau'n berthnasol i amrywiaeth eang o ddisgyblaethau academaidd, gan gynnwys y gwyddorau naturiol a chymdeithasol, y llywodraeth a busnes. Mae ystadegau busnes yn defnyddio dulliau ystadegol mewn economeg, archwilio a chynhyrchu a gweithrediadau, gan gynnwys gwella gwasanaethau ac ymchwil marchnata. Canfu astudiaeth o ddau gyfnodolyn mewn bioleg drofannol mai'r 12 prawf ystadegol amlaf yw: Dadansoddiad o Amrywiant (ANOVA), Prawf Chi-Sgwâr, Prawf T Myfyrwyr, Atchweliad Llinol, Cyfernod Cydberthynas Pearson, Prawf U Mann-Whitney, Prawf Kruskal-Wallis , Mynegai Amrywiaeth Shannon, Prawf Tukey, Dadansoddiad Clwstwr, Prawf Cydberthynas Safle Spearman a Dadansoddiad Prif Gydran.
+
+
+=== Cyfrifiadura ystadegol ===
+
+Mae'r cynnydd cyflym a pharhaus mewn pŵer cyfrifiadurol a ddechreuodd o ail hanner yr 20g wedi cael effaith sylweddol ar wyddoniaeth ystadegol ymarferol. Roedd modelau ystadegol cynnar bron bob amser o'r dosbarth modelau llinol, ond achosodd cyfrifiaduron pwerus, ynghyd ag algorithmau rhifiadol addas, i ddiddordeb mewn modelau aflinol gynyddu'n aruthrol (ee rhwydweithiau niwral) yn ogystal â chreu mathau newydd, fel modelau llinol cyffredinol a modelau aml-lefel.
+Mae pŵer cyfrifiadurol cynyddol hefyd wedi arwain at boblogrwydd cynyddol dulliau cyfrifiadol ddwys yn seiliedig ar ail-fodelu, megis profion trynewid a'r bootstrap, tra bod technegau fel samplu Gibbs wedi gwneud modelau Price-Bayesaidd yn fwy ymarferol. Mae gan y chwyldro cyfrifiadurol oblygiadau ar gyfer dyfodol ystadegau gyda phwyslais newydd ar ystadegau "arbrofol" ac "empirig". Ceir bellach nifer fawr o feddalwedd ystadegol i bwrpas cyffredinol ac arbenigol. Mae enghreifftiau o'r feddalwedd sydd ar gael sy'n gallu gwneud cyfrifiant ystadegol cymhleth yn cynnwys rhaglenni fel Mathematica, SAS, SPSS, ac R.
+
+
+=== Ystadegaeth yn y byd busnes ===
+Mewn busnes, mae "ystadegaeth" yn offeryn rheoli a chefnogi penderfyniadau a ddefnyddir yn helaeth. Fe'i cymhwysir yn arbennig mewn rheolaeth ariannol, rheoli marchnata, a rheoli cynhyrchu, gwasanaethau a gweithrediadau. Defnyddir ystadegau ar lefel rheoli hefyd yn helaeth mewn cyfrifeg ac archwilio arioannol. Mae disgyblaeth Gwyddoniaeth Rheolaeth yn ffurfioli'r defnydd o ystadegau, a mathemategau eraill, mewn busnes. Econometreg yw cymhwyso dulliau ystadegol i ddata economaidd er mwyn rhoi cynnwys empirig i berthnasoedd economaidd.
+
+
+=== Ystadegau sy'n berthnasol i fathemateg neu'r celfyddydau ===
+Yn draddodiadol, roedd ystadegau'n ymwneud â llunio casgliadau gan ddefnyddio methodoleg lled-safonol a oedd yn "ddysgu gofynnol" yn y mwyafrif o wyddorau.  Mae'r traddodiad hwn wedi newid gyda'r defnydd o ystadegau mewn cyd-destunau nad ydynt yn rhai casgliadol. Mae'r hyn a ystyriwyd ar un adeg yn bwnc sych, a gymerwyd mewn sawl maes fel gofyniad gradd, bellach yn cael ei ystyried yn faes byw a modern: yn wir, caiff ei ystyried yn fethodoleg hanfodol mewn rhai meysydd.
+
+
+== Disgyblaethau arbenigol ==
+Defnyddir technegau ystadegol mewn ystod eang o fathau o ymchwil wyddonol a chymdeithasol, gan gynnwys: biostadegaeth, bioleg gyfrifiadol, cymdeithaseg gyfrifiadol, bioleg rhwydwaith, gwyddoniaeth gymdeithasol, cymdeithaseg ac ymchwil gymdeithasol. Mae rhai meysydd ymholi'n defnyddio ystadegau cymhwysol mor helaeth fel bod ganddynt derminoleg arbenigol.
+
+
+== Darllen pellach ==
+Lydia Denworth, "Problem Sylweddol: Mae dulliau gwyddonol safonol ar dân. A fydd unrhyw beth yn newid? " , American Americanaidd, cyf. 321, na. 4 (Hydref 2019), tt. 62–67. "Mae'r defnydd o werthoedd p ers bron i ganrif [ers 1925] i bennu arwyddocâd ystadegol canlyniadau arbrofol wedi cyfrannu at rhith o sicrwydd ac [i] argyfyngau atgynyrchioldeb mewn llawer o feysydd gwyddonol . Mae penderfyniad cynyddol i ddiwygio dadansoddiad ystadegol. . . Mae rhai [ymchwilwyr] yn awgrymu newid dulliau ystadegol, ond byddai eraill yn gwneud i ffwrdd â throthwy ar gyfer diffinio canlyniadau "arwyddocaol" (t. 63. )
+Barbara Illowsky; Susan Dean (2014). Introductory Statistics. OpenStax CNX. ISBN 9781938168208.9781938168208
+Stockburger, David W. "Introductory Statistics: Concepts, Models, and Applications". Missouri State University. Archifwyd o'r gwreiddiol ar 28 Mai 2020.
+Ystadegau OpenIntro Archifwyd 2019-06-16 yn y Peiriant Wayback Archived   , 3ydd argraffiad gan Diez, Barr, a Cetinkaya-Rundel
+Stephen Jones, 2010. Ystadegau mewn Seicoleg: Esboniadau heb Hafaliadau . Palgrave Macmillan.ISBN 9781137282392ISBN 9781137282392 .
+Cohen, J (1990). "Things I have learned (so far)". American Psychologist 45 (12):  1304–1312. doi:10.1037/0003-066x.45.12.1304. http://moityca.com.br/pdfs/Cohen_1990.pdf.
+Gigerenzer, G (2004). "Mindless statistics". Journal of Socio-Economics 33 (5):  587–606. doi:10.1016/j.socec.2004.09.033.
+Ioannidis, J.P.A. (2005). "Why most published research findings are false". PLOS Medicine 2 (4):  696–701. doi:10.1371/journal.pmed.0040168. PMC 1855693. PMID 17456002. http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pmcentrez&artid=1855693.
+
+
+== Dolenni allanol ==
+(Fersiwn Electronig): TIBCO Software Inc. (2020). Gwerslyfr Gwyddor Data .
+Addysg Ystadegau Ar-lein: Cwrs Astudio Amlgyfrwng Rhyngweithiol . Datblygwyd gan Brifysgol Rice (Datblygwr Arweiniol), Prifysgol Houston Clear Lake, Prifysgol Tufts, a'r Sefydliad Gwyddoniaeth Cenedlaethol.
+Adnoddau Cyfrifiadura Ystadegol UCLA
+Athroniaeth Ystadegau o Wyddoniadur Athroniaeth Stanford
+
+
+== Gweler hefyd ==
+Richard Price
+
+
+== Cyfeiriadau ==

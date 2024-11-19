@@ -1,0 +1,2560 @@
+Ekuazio diferentziala funtzio bat bere deribatu edo diferentzialekin lotzen dituen ekuazioa da. Matematika aplikatuan, funtzioek, eskuarki, kantitate fisikoak adierazten dituzte; deribatuek, berriz, beren aldaketa-arrazoiak adierazten dituzte, eta ekuazioak haien arteko erlazioa definitzen du. Erlazio horiek oso arruntak direnez, ekuazio diferentzialek funtsezko rola jokatzen dute hainbat diziplinatan, besteak beste, ingeniaritzan, fisikan, kimikan, ekonomian eta biologian.
+Matematikaren aplikazioetan, askotan, parametro batek beste batekiko duen mendekotasuna ezagutzen ez den problemak sortzen dira maiz, baina parametro baten eta beste baten (deribatuaren) arteko truke-tasaren adierazpen bat idatz daiteke. Kasu horretan, problema murrizten da funtzio bat beste adierazpen batzuekin lotutako deribatuaren bidez aurkitzera.
+Matematika garbian, ekuazio diferentzialak ikuspegi desberdinetatik aztertzen dira, gehienak ekuazioa betetzen duten funtzioen ebazpen multzoari dagozkionak. Ekuazio diferentzial sinpleenak baino ezin dira ebatzi formula esplizituen bidez; hala ere, ekuazio diferentzial jakin baten ebazpenen propietate batzuk zehaztu daitezke, haren forma zehatza aurkitu gabe.
+Emaitza zehatza aurkitu ezin bada, zenbakien bidez lor daiteke ordenagailuak erabiliz. Sistema dinamikoen teoriak ekuazio diferentzialen bidez deskribatutako sistemen analisi kualitatiboa azpimarratzen du; zenbakizko analisi asko, berriz, soluzioak nolabaiteko zehaztasun-mailarekin zehazteko garatu dira.
+
+
+== Historia ==
+
+Ekuazio diferentzialak Newtonek eta Leibnizek kalkulua asmatu ondoren agertu ziren. Newtonek hiru ekuazio diferentzial mota zerrendatu zituen 1671n idatzi zuen Methodus fluxionum et Serierum Infinitarum liburuaren bigarren atalean:
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  
+                    
+                      d
+                      y
+                    
+                    
+                      d
+                      x
+                    
+                  
+                
+                =
+                f
+                (
+                x
+                )
+              
+            
+            
+              
+              
+                
+                  
+                    
+                      d
+                      y
+                    
+                    
+                      d
+                      x
+                    
+                  
+                
+                =
+                f
+                (
+                x
+                ,
+                y
+                )
+              
+            
+            
+              
+              
+                
+                  x
+                  
+                    1
+                  
+                
+                
+                  
+                    
+                      ∂
+                      y
+                    
+                    
+                      ∂
+                      
+                        x
+                        
+                          1
+                        
+                      
+                    
+                  
+                
+                +
+                
+                  x
+                  
+                    2
+                  
+                
+                
+                  
+                    
+                      ∂
+                      y
+                    
+                    
+                      ∂
+                      
+                        x
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                =
+                y
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&{\frac {dy}{dx}}=f(x)\\[5pt]&{\frac {dy}{dx}}=f(x,y)\\[5pt]&x_{1}{\frac {\partial y}{\partial x_{1}}}+x_{2}{\frac {\partial y}{\partial x_{2}}}=y\end{aligned}}}
+  
+
+Serie infinituez baliatu zen ekuaziook eta bete batzuk ebazteko. Gainera, lortutako soluzioen bakartasun ezaz eztabaidatu zuen bere liburuan.
+1695ean, Jakob Bernoullik Bernoulliren ekuazio diferentziala proposatu zuen, 
+  
+    
+      
+        
+          y
+          ′
+        
+        +
+        P
+        (
+        x
+        )
+        y
+        =
+        Q
+        (
+        x
+        )
+        
+          y
+          
+            n
+          
+        
+      
+    
+    {\displaystyle y'+P(x)y=Q(x)y^{n}}
+  
+ formako ekuazio diferentzial arrunta. Hurrengo urtean, Leibnizek ekuazioari dagozkion soluzioak aurkitu zituen sinplifikazio bidez.
+Historikoki Jean le Rond d'Alembert, Leonhard Euler, Daniel Bernoulli eta Joseph-Louis Lagrange matematekariek hari dardarkariaren problema aztertu zuten. 1746an, d’Alembertek dimentsio bateko uhin-ekuazioa aurkitu zuen. Hamar urte geroago, Eulerrek hiru dimentsioko uhin-ekuazioa aurkitu zuen.
+1750eko hamarkadan, Eulerrek eta Lagrangek Euler-Lagrangeren ekuazioa garatu zuten problema tautokronoaren inguruan ikertuz: hau da, pisudun partikula bat puntu finko batean (denbora-kopuru finko batean) eroriko den kurba bat hasierako puntutik independentea den problema zehaztea. 1755an, Lagrangek problema ebatzi, eta ebazpena Eulerri bidali zion. Bien artean, Lagrangeren metodoa garatu zuten, eta mekanikan erabiltzen hasi ziren. Horrek Lagrangeren mekanika formulatzera eraman zituen.
+1822an, Joseph Fourierrek bero transferentziari buruzko Théorie analytique de la chaleur lana argitaratu zuen. Newtonen hozte legean oinarrituz, elkarren ondoko bi molekulen arteko bero transferentzia euren arteko tenperatura-diferentzia txikiarekiko proportzionala dela arrazoitzeko. Liburuan, eroapen bidezko bero-transferentziaren ekuazioa proposatu zuen. Ekuazio diferentzial partzial hori fisika matematikoko funtsezko ekuazioetako bat da.
+Ekuazio diferentzial estokastikoak, ekuazio diferentzialen teoria zein probabilitatearen teoria zabaltzen dutenak, Kiyoshi Itō eta Ruslán Stratónovich-ek sartu zituzten tratamendu zorrotz batekin, 1940 eta 1950eko hamarkadetan.
+
+
+== Ekuazio diferentzial motak ==
+Ekuazio diferentzialak hainbat taldetan sailka daitezke: arruntak eta partzialak; linealak eta ez-linealak; homogeneoak eta ez-homogeneoak. Zerrenda handiegia da; ekuazio diferentzialen beste propietate eta azpimota asko daude testuinguru espezifikoetan oso erabilgarriak izan daitezkeenak.
+
+
+=== Ekuazio diferentzial arruntak ===
+
+Ekuazio diferentzial arrunt (EDA) mendeko aldagai ezezagun bakarra eta bere deribatuak dituen ekuazio diferentzialari deritzo. «Arrunt» adjektiboa deribatu partzialetako ekuazioarekin kontrastean erabiltzen da, zeina aldagai independente bat baino gehiagorekiko izan baitaiteke.
+Ekuazio diferentzial linealak ondo definitu eta ulertuta daude, eta aurki daitezkeen emaitza zehatzak dituzte. Ekuazio diferentzial linealek batuketa egin dezaketen eta koefizienteen bidez biderka daitezkeen soluzioak dituzte. Aldiz, batu ezin diren soluzioak dituzten EDAk ez-linealak dira, eta haien soluzioa korapilatsuagoa da, eta oso gutxitan aurki daitezke oinarrizko funtzioen forma zehatzean: irtenbideak serie edo forma integral gisa lortzen dira. EDArako zenbakizko metodoak eta metodo grafikoak eskuz edo ordenagailuen bidez egin daitezke, EDAren soluzioak hurbil daitezke, eta haien emaitza oso erabilgarria izan daiteke, askotan konponbide zehatza eta analitikoa alde batera uzteko nahikoa.
+
+
+=== Ekuazio diferentzial partzialak ===
+
+Ekuazio diferentzial partziala (EDP) aldagai ezezagun anitz eta bere deribatu partzialak dituen ekuazioa da. Ekuazio horiek hainbat aldagai duten funtzioak dituzten problemak formulatzeko erabiltzen dira, eta eskuz ebatz daitezke ordenagailu bidezko simulazio bat sortzeko.
+EDPak hainbat fenomeno deskribatzeko erabil daitezke, hala nola soinua, beroa, elektrostatika, elektrodinamika, fluidodinamika, elastikotasuna edo mekanika kuantikoa. Fenomeno fisiko horiek EDParen terminoetan formaliza daitezke. Ekuazio diferentzial arruntekin oso ohikoa da sistema dinamikoen dimentsio bakarreko ereduak egitea, eta ekuazio diferentzial partzialak dimentsio anitzeko sistemen ereduetarako erabil daitezke. EDPek orokortze bat dute deribatu partzial estokastikoetako ekuazioetan.
+
+
+== Ekuazio diferentzial linealak ==
+Ekuazio diferentzial bat lineala da baldin eta haren emaitzak beste emaitza batzuen konbinazio linealetatik lor badaitezke. Lineala bada, ekuazio diferentzialak 1eko potentzia maximoarekin ditu bere deribatuak, eta ez dago terminorik non produktuak funtzio ezezagunaren eta/edo haren deribatuen artean dauden. Ekuazio linealen ezaugarri bereizgarria da haien ebazpenek ebazpen egokien espazio baten antzeko azpiespazio baten forma dutela eta emaitza ekuazio diferentzial linealen teorian garatzen dela.
+Ekuazio diferentzial lineal homogeneoak ekuazio diferentzial linealen azpiklase bat dira, eta, horretarako, soluzioen espazioa azpiespazio lineal bat da; hau da, edozein irtenbide-multzoren edo irtenbide-multiploen batura ere irtenbide bat da. Funtzio ezezagunaren koefizienteak, eta ekuazio diferentzial lineal batean haien deribatuak aldagaiaren funtzioak edo aldagai independenteak izan daitezke; koefiziente horiek konstanteak badira, koefiziente konstanteetako ekuazio diferentzial linealez hitz egiten da.
+Ekuazio bat lineala dela esaten da honako forma hau badu:
+
+Hau da:
+
+Ez funtzioa ez haren deribatuak ez daude bat edo zero ez den beste ezein potentziatara goratuta.
+Biderkatuz agertzen den koefiziente bakoitzean, aldagai independenteak baino ez du parte hartzen.
+Bere ebazpenen konbinazio lineal bat ekuazioaren ebazpena ere bada.
+Adibideak:
+
+  
+    
+      
+        
+        
+          y
+          ′
+        
+        −
+        y
+        =
+        0
+      
+    
+    {\displaystyle \,y'-y=0}
+  
+ lehen mailako ekuazio diferentzial arrunt lineala da, emaitza gisa ditu: 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        =
+        k
+        ⋅
+        
+          e
+          
+            x
+          
+        
+      
+    
+    {\displaystyle y=f(x)=k\cdot e^{x}}
+  
+, k-rekin edozein zenbaki erreal
+
+  
+    
+      
+        
+        
+          y
+          ″
+        
+        +
+        y
+        =
+        0
+      
+    
+    {\displaystyle \,y''+y=0}
+  
+ bigarren mailako ekuazio diferentzial arrunt lineala da, emaitza gisa ditu: 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        =
+        a
+        cos
+        ⁡
+        (
+        x
+        )
+        +
+        b
+        sen
+        ⁡
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle y=f(x)=a\cos(x)+b\operatorname {sen}(x)\,}
+  
+, a eta b errealekin.
+
+  
+    
+      
+        
+        
+          y
+          ″
+        
+        −
+        y
+        =
+        0
+      
+    
+    {\displaystyle \,y''-y=0}
+  
+ bigarren mailako ekuazio diferentzial arrunt lineala da, emaitza gisa ditu: 
+  
+    
+      
+        
+        a
+        ⋅
+        
+          e
+          
+            x
+          
+        
+        +
+        b
+        ⋅
+        1
+        
+          /
+        
+        (
+        
+          e
+          
+            x
+          
+        
+        )
+      
+    
+    {\displaystyle \,a\cdot e^{x}+b\cdot 1/(e^{x})}
+  
+, a eta b errealekin.
+
+
+=== Ekuazio diferentzial ez linealak ===
+Oso metodo gutxi daude ekuazio diferentzial ez-linealak modu zehatzean ebazteko; ezagutzen direnak ohikoa da ekuazioaren mende egotea, eta simetria bereziak izaten dituzte. Ekuazio diferentzial ez-linealek oso portaera konplexua izan dezakete denbora-tarte luzeetan, kaosaren ezaugarria. Ekuazio diferentzial ez-linealen existentziaren, bakartasunaren eta hedagarritasunaren funtsezko alderdietako bakoitza eta EDParen hasierako kondizioen eta inguruaren arazo ez-linealen problema ondo definitua arazo zailak dira. Kasu berezietan, horiek ebaztea aurrerapauso nabarmena da teoria matematikoan (adibidez, Navier-Stokes-en existentzia eta leuntasuna). Hala ere, ekuazio diferentziala ondo formulatutako prozesu fisiko esanguratsu baten irudikapena bada, emaitza bat izatea espero da.
+Ekuazio diferentzial ez-linealak ekuazio linealetarako hurbilketen bidez agertu ohi dira. Hurbilketa horiek baldintza mugatuetan baino ez dute balio. Adibidez, osziladore harmonikoaren ekuazioa pendulu baten ekuazio ez-linealaren hurbilketa bat da, eta oszilazio-anplitude txikietarako balio du (ikus aurrerago).
+
+
+=== Ekuazio erdi linealak eta ia linealak ===
+Ez dago prozedura orokorrik ekuazio diferentzial ez-linealak ebazteko. Hala ere, ez-linealtasuneko kasu partikular batzuk konpon daitezke. Interesgarriak dira kasu erdi lineala eta kasu ia lineala.
+n ordenako ekuazio diferentzial arrunt bati ia lineal deritzo, baldin eta n ordenako deribatuan «lineala» bada. Zehazkiago, 
+  
+    
+      
+        
+          y
+          (
+          x
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle y(x)}
+  
+ funtziorako ekuazio diferentzial arrunta honela idatz badaiteke:
+
+  
+    
+      
+        f
+        (
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        ,
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          ″
+        
+        ,
+        
+          y
+          ′
+        
+        ,
+        y
+        ,
+        x
+        )
+        =
+        0
+        ,
+        
+        
+        
+          f
+          
+            1
+          
+        
+        (
+        z
+        )
+        :=
+        f
+        (
+        z
+        ,
+        
+          α
+          
+            n
+            −
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          α
+          
+            2
+          
+        
+        ,
+        
+          α
+          
+            1
+          
+        
+        ,
+        
+          α
+          
+            0
+          
+        
+        ,
+        
+          β
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle f(y^{(n)},y^{(n-1)},\dots ,y'',y',y,x)=0,\qquad \qquad f_{1}(z):=f(z,\alpha _{n-1},\dots ,\alpha _{2},\alpha _{1},\alpha _{0},\beta _{0})}
+  
+
+Ekuazioa ia lineala dela esaten da baldin eta 
+  
+    
+      
+        
+          
+            f
+            
+              1
+            
+          
+          (
+          ⋅
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle f_{1}(\cdot )}
+  
+ funtzio afin bada, hau da 
+  
+    
+      
+        
+          
+            f
+            
+              1
+            
+          
+          (
+          z
+          )
+          =
+          a
+          z
+          +
+          b
+        
+      
+    
+    {\displaystyle \scriptstyle f_{1}(z)=az+b}
+  
+.
+n mailako ekuazio diferentzial arrunta erdi lineal deritzo baldin eta idatz badaiteke n maila-deribatuaren funtzio «lineal» baten batuketa gehi gainerako deribatuen edozein funtzio gisa. Formalki, 
+  
+    
+      
+        
+          y
+          (
+          x
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle y(x)}
+  
+ funtziorako ekuazio diferentzial arrunta honela idatz daiteke: 
+
+  
+    
+      
+        f
+        (
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        ,
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          ″
+        
+        ,
+        
+          y
+          ′
+        
+        ,
+        y
+        ,
+        x
+        )
+        =
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        ,
+        x
+        )
+        +
+        g
+        (
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          ′
+        
+        ,
+        y
+        ,
+        x
+        )
+        
+        
+        
+          f
+          
+            2
+          
+        
+        (
+        z
+        )
+        :=
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        z
+        ,
+        
+          β
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle f(y^{(n)},y^{(n-1)},\dots ,y'',y',y,x)={\hat {f}}(y^{(n)},x)+g(y^{(n-1)},\dots ,y',y,x)\qquad \qquad f_{2}(z):={\hat {f}}(z,\beta _{0})}
+  
+
+Ekuazioa erdi lineala dela esaten da baldin eta 
+  
+    
+      
+        
+          
+            f
+            
+              2
+            
+          
+          (
+          ⋅
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle f_{2}(\cdot )}
+  
+ funtzio lineala bada
+
+
+== Definizioak ==
+Ekuazio diferentzialetan ordenaz eta mailaz hitz egiten da.
+
+
+=== Ordena ===
+Ekuazio diferentzialaren ordena ekuazio horretan aldi gehiagotan deribatu den terminoak duen ordena da. Adibideak:
+
+Lehen ordenako ekuazio diferentziala: 
+  
+    
+      
+        
+          y
+          ′
+        
+        +
+        y
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y'+y(x)=f(x)}
+  
+
+Bigarren ordenako ekuazio diferentziala: 
+  
+    
+      
+        
+          y
+          ″
+        
+        +
+        4
+        y
+        =
+        0
+      
+    
+    {\displaystyle y''+4y=0}
+  
+
+Hirugarren ordenako ekuazio diferentziala: 
+  
+    
+      
+        x
+        
+          y
+          ‴
+        
+        −
+        2
+        x
+        
+          y
+          ″
+        
+        +
+        4
+        
+          y
+          ′
+        
+        =
+        0
+      
+    
+    {\displaystyle xy'''-2xy''+4y'=0}
+  
+
+Koefiziente aldakorreko bigarren ordenako ekuazioa: 
+  
+    
+      
+        
+          y
+          ″
+        
+        +
+        2
+        x
+        
+          y
+          ′
+        
+        +
+        4
+        y
+        =
+        0
+      
+    
+    {\displaystyle y''+2xy'+4y=0}
+  
+
+
+=== Maila ===
+Ekuazio diferentzialaren maila ekuazio horretako ordena goreneko deribatuaren berretzailea da.
+
+
+=== Ekuazio diferentzial zehatzak ===
+Atal honetan, 
+  
+    
+      
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+        +
+        Q
+        (
+        x
+        ,
+        y
+        )
+        d
+        y
+        =
+        0
+      
+    
+    {\displaystyle P(x,y)dx+Q(x,y)dy=0}
+  
+ y 
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        −
+        
+          
+            
+              P
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              Q
+              (
+              x
+              ,
+              y
+              )
+            
+          
+        
+      
+    
+    {\displaystyle y'=-{P(x,y) \over Q(x,y)}}
+  
+ gisa idatzitako ekuazio diferentzialak aurkituko ditugu, lehenengo eta bigarren ekuazioen artean inolako bereizketarik egin gabe. 
+P eta Q 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+-ko 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ laukizuzen ireki batean definitutako funtzioak direla suposatuko da, aldi berean nuluak ez direnak.
+
+Esaten da ekuazioa diferentzial zehatza dela R 
+  
+    
+      
+        →
+      
+    
+    {\displaystyle \rightarrow }
+  
+ 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ funtzio deribagarri hauek 
+  
+    
+      
+        
+          F
+          
+            x
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        P
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle F_{x}(x,y)=P(x,y)}
+  
+ y 
+  
+    
+      
+        
+          F
+          
+            y
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        Q
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle F_{y}(x,y)=Q(x,y)}
+  
+ 
+  
+    
+      
+        ∀
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        R
+      
+    
+    {\displaystyle \forall (x,y)\in R}
+  
+ dituena baldin badago
+
+.
+Zehaztasunaren garrantzia datza 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+        =
+        c
+      
+    
+    {\displaystyle F(x,y)=c}
+  
+ kurba integralen familia bat izatean, x-rekiko inplizituki desberdinduz erator daitekeena: 
+  
+    
+      
+        
+          F
+          
+            x
+          
+        
+        +
+        
+          F
+          
+            y
+          
+        
+        
+          y
+          ′
+        
+        =
+        0
+      
+    
+    {\displaystyle F_{x}+F_{y}y'=0}
+  
+-k, beraz, 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+        =
+        c
+      
+    
+    {\displaystyle F(x,y)=c}
+  
+-k 
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        −
+        
+          
+            
+              P
+              (
+              x
+              ,
+              y
+              )
+            
+            
+              Q
+              (
+              x
+              ,
+              y
+              )
+            
+          
+        
+      
+    
+    {\displaystyle y'=-{P(x,y) \over Q(x,y)}}
+  
+ asebetetzen du.
+Ekuazio bat diferentzial zehatza den zehaztasunez jakiteko erabil daitekeen irizpide bat da abiapuntutzat hartzea P eta Q funtzio jarraituak direla eta R-n deribatu partzial lehen jarraituak dituztela. 
+  
+    
+      
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+        +
+        Q
+        (
+        x
+        ,
+        y
+        )
+        d
+        y
+        =
+        0
+      
+    
+    {\displaystyle P(x,y)dx+Q(x,y)dy=0}
+  
+ ekuazioa diferentzial zehatza bada, orduan, 
+  
+    
+      
+        
+          P
+          
+            y
+          
+        
+        =
+        
+          Q
+          
+            x
+          
+        
+      
+    
+    {\displaystyle P_{y}=Q_{x}}
+  
+ R-n dela frogatzen da.
+Demagun 
+  
+    
+      
+        
+          P
+          
+            y
+          
+        
+        =
+        
+          Q
+          
+            x
+          
+        
+      
+    
+    {\displaystyle P_{y}=Q_{x}}
+  
+ R-n dagoela eta F bilatzen dugula, 
+  
+    
+      
+        
+          F
+          
+            x
+          
+        
+        =
+      
+    
+    {\displaystyle F_{x}=}
+  
+ P eta 
+  
+    
+      
+        
+          F
+          
+            y
+          
+        
+        =
+        Q
+      
+    
+    {\displaystyle F_{y}=Q}
+  
+ izanik. 
+  
+    
+      
+        
+          F
+          
+            x
+          
+        
+        =
+      
+    
+    {\displaystyle F_{x}=}
+  
+ P ekuazioa x-rekiko integratuz: 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+        =
+        ∫
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+        +
+        C
+        (
+        y
+        )
+      
+    
+    {\displaystyle F(x,y)=\int P(x,y)dx+C(y)}
+  
+ non C(y) y-ren menpeko integrazio-konstantea den. 
+
+  
+    
+      
+        
+          F
+          
+            y
+          
+        
+        =
+        Q
+      
+    
+    {\displaystyle F_{y}=Q}
+  
+ baldintza ezarriz gero, 
+  
+    
+      
+        
+          C
+          ′
+        
+        (
+        y
+        )
+        =
+        Q
+        (
+        x
+        ,
+        y
+        )
+        −
+        
+          
+            ∂
+            
+              ∂
+              y
+            
+          
+        
+        ∫
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+      
+    
+    {\displaystyle C'(y)=Q(x,y)-{\partial  \over \partial y}\int P(x,y)dx}
+  
+ lortzen da,  non, 
+  
+    
+      
+        
+          P
+          
+            y
+          
+        
+        =
+        
+          Q
+          
+            x
+          
+        
+      
+    
+    {\displaystyle P_{y}=Q_{x}}
+  
+ aplikatuz, berdintasunaren eskuineko aldea y aldagaiaren funtzioa da x-tik independentea.
+Azkenik
+
+Horrela, metodo bat lortu da 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+        =
+        c
+      
+    
+    {\displaystyle F(x,y)=c}
+  
+ ekuazio diferentzial zehatz baten kurba integralak kalkulatu ondoren, arestian adierazitako teorema frogatuz.
+
+
+=== Adibideak ===
+Lehenengo adibide multzoan, demagun u x-ren menpe dagoen funtzio ezezaguna dela, eta c eta ω konstante ezagunak direla. Kontuan izan ekuazio diferentzial arruntak eta partzialak «lineal» eta «ez-lineal» gisa sailka daitezkeela.
+
+Lehen mailako koefiziente konstanteak dituen ekuazio diferentzial arrunt lineala:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        c
+        u
+        +
+        
+          x
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {du}{dx}}=cu+x^{2}.}
+  
+
+Bigarren mailako ekuazio diferentzial arrunt lineal homogeneoa:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        x
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}-x{\frac {du}{dx}}+u=0.}
+  
+
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        =
+        A
+        X
+      
+    
+    {\displaystyle y=f(x)=AX}
+  
+-ek ebazpen bat ematen du.
+
+Ekuazio diferentzial arrunt lineala bigarren mailako koefiziente konstante homogeneoak dituena eta osziladore harmoniko bat deskribatzen duena.
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          ω
+          
+            2
+          
+        
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}+\omega ^{2}u=0.}
+  
+
+Lehen malako ekuazio diferentzial arrunt ez lineala, ez homogeneoa:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        4.
+      
+    
+    {\displaystyle {\frac {du}{dx}}=u^{2}+4.}
+  
+
+Bigarren mailako ekuazio diferentzial arrunt ez lineala (senuaren funtzioa dela eta), L luzerako pendulu baten mugimendua deskribatzen duena:
+
+  
+    
+      
+        L
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        g
+        sen
+        ⁡
+        u
+        =
+        0.
+      
+    
+    {\displaystyle L{\frac {d^{2}u}{dx^{2}}}+g\operatorname {sen} u=0.}
+  
+
+Hurrengo adibide multzoan, u funtzio ezezaguna x y t o x e y bi aldagaien mende dago.
+
+Lehen ordenako ekuazio diferentzial partzial lineal homogeneoa, orduan:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        t
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}+t{\frac {\partial u}{\partial x}}=0.}
+  
+
+Ekuazio diferentzial partzial lineal homogeneoa, mota eliptikoko bigarren mailako koefiziente konstanteak dituena, Laplaceren ekuazioa:
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial x^{2}}}+{\frac {\partial ^{2}u}{\partial y^{2}}}=0.}
+  
+
+Hirugarren ordenako ekuazio diferentzial partzial ez-lineala, Korteweg-de Vriesen ekuazioa:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        6
+        u
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        −
+        
+          
+            
+              
+                ∂
+                
+                  3
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  3
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}=6u{\frac {\partial u}{\partial x}}-{\frac {\partial ^{3}u}{\partial x^{3}}}.}
+  
+
+
+==== Ekuazio diferentzial zehatzaren adibidea ====
+
+  
+    
+      
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+        +
+        Q
+        (
+        x
+        ,
+        y
+        )
+        d
+        y
+        =
+        0
+      
+    
+    {\displaystyle P(x,y)dx+Q(x,y)dy=0}
+  
+  
+  
+    
+      
+        ∀
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        B
+      
+    
+    {\displaystyle \forall (x,y)\in B}
+  
+ lehen ordenako ekuazio diferentziala da, non P eta Q bi funtzio jarraitu baitira 
+  
+    
+      
+        B
+        ⊂
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle B\subset \mathbb {R} ^{2}}
+  
+ irekian.
+
+  
+    
+      
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+        +
+        Q
+        (
+        x
+        ,
+        y
+        )
+        d
+        y
+        =
+        0
+      
+    
+    {\displaystyle P(x,y)dx+Q(x,y)dy=0}
+  
+ ekuazioa ekuazio diferentzial zehatza dela esaten da B-n definitutako 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle F(x,y)}
+  
+ funtzio potentzial bat baldin badago: 
+
+Izan bedi 
+  
+    
+      
+        P
+        (
+        x
+        ,
+        y
+        )
+        d
+        x
+        +
+        Q
+        (
+        x
+        ,
+        y
+        )
+        d
+        y
+        =
+        0
+      
+    
+    {\displaystyle P(x,y)dx+Q(x,y)dy=0}
+  
+ ekuazio diferentzial zehatza, 
+  
+    
+      
+        ∀
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        B
+        ⊂
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \forall (x,y)\in B\subset \mathbb {R} ^{2}}
+  
+ irekia eta 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle F(x,y)}
+  
+ haren funtzio potentziala, orduan, grafoa B-n dagoen ekuazioaren 
+  
+    
+      
+        y
+        =
+        ϕ
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=\phi (x)}
+  
+ soluzio bakoitzak betetzen du ekuazioa
+
+
+== Ekuazio diferentzial baten ebazpena ==
+
+
+=== Ebazpenen existentzia ===
+1.go pausua: Ekuazio diferentzialen ebazpena ez da ekuazio aljebraikoen ebazpenak bezalakoa. Batzuetan, bere ebazpenak oso argiak ez diren arren, interesgarria izan daiteke bakarrak edo existitzen badira.
+Hasierako balioak dituzten lehen mailako arazoetarako, Peanoren existentziaren teoremak baldintza multzo bat ematen digu, non soluzioa existitzen den. xy planoko edozein 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+ puntutarako, eta 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+ eskualde angeluzuzen bat definituta, hau da, 
+  
+    
+      
+        Z
+        =
+        [
+        l
+        ,
+        m
+        ]
+        ×
+        [
+        n
+        ,
+        p
+        ]
+      
+    
+    {\displaystyle Z=[l,m]\times [n,p]}
+  
+ eta 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+ 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+-ren barruan badago. Ekuazio diferentzial 
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              y
+            
+            
+              
+                d
+              
+              x
+            
+          
+        
+        =
+        g
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle {\frac {\mathrm {d} y}{\mathrm {d} x}}=g(x,y)}
+  
+ badugu eta 
+  
+    
+      
+        y
+        =
+        b
+      
+    
+    {\displaystyle y=b}
+  
+ hori 
+  
+    
+      
+        x
+        =
+        a
+      
+    
+    {\displaystyle x=a}
+  
+ denean, orduan, arazo honen ebazpen lokala badago: 
+  
+    
+      
+        g
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle g(x,y)}
+  
+ eta 
+  
+    
+      
+        
+          
+            
+              ∂
+              g
+            
+            
+              ∂
+              x
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial g}{\partial x}}}
+  
+ biak 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+-n jarraituak badira. Ebazpena tarte batean dago, eta bere zentroa 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+-n du. Baliteke irtenbidea ez izatea bakarra. (Ikus Ekuazio diferentzial arrunta beste emaitza batzuetarako).
+Hala ere, horrek hasierako baldintzekin lehen mailako arazoekin bakarrik laguntzen digu. 
+Demagun arazo lineal bat dugula, hasierako enegarren ordenako baldintzekin:
+
+  
+    
+      
+        
+          f
+          
+            n
+          
+        
+        (
+        x
+        )
+        
+          
+            
+              
+                
+                  d
+                
+                
+                  n
+                
+              
+              y
+            
+            
+              
+                d
+              
+              
+                x
+                
+                  n
+                
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          f
+          
+            1
+          
+        
+        (
+        x
+        )
+        
+          
+            
+              
+                d
+              
+              y
+            
+            
+              
+                d
+              
+              x
+            
+          
+        
+        +
+        
+          f
+          
+            0
+          
+        
+        (
+        x
+        )
+        y
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{n}(x){\frac {\mathrm {d} ^{n}y}{\mathrm {d} x^{n}}}+\cdots +f_{1}(x){\frac {\mathrm {d} y}{\mathrm {d} x}}+f_{0}(x)y=g(x)}
+  
+
+hau modukoa:
+
+  
+    
+      
+        y
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            0
+          
+        
+        ,
+        
+          y
+          ′
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            0
+          
+          ′
+        
+        ,
+        
+          y
+          ″
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            0
+          
+          ″
+        
+        ,
+        ⋯
+      
+    
+    {\displaystyle y(x_{0})=y_{0},y'(x_{0})=y'_{0},y''(x_{0})=y''_{0},\cdots }
+  
+
+  
+    
+      
+        
+          f
+          
+            n
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{n}(x)}
+  
+ zero ez den edozeinentzat, 
+  
+    
+      
+        {
+        
+          f
+          
+            0
+          
+        
+        ,
+        
+          f
+          
+            1
+          
+        
+        ,
+        ⋯
+        }
+      
+    
+    {\displaystyle \{f_{0},f_{1},\cdots \}}
+  
+ eta 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ jarraituak badira 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+ duen tarte batean, 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ bakarra da, eta existitzen da.
+
+
+=== Ebazpen motak ===
+Ekuazio diferentzial baten ebazpena funtzio bat da, zeinak, funtzio ezezaguna, kasu bakoitzean dagozkion deribazioekin ordezkatzean, ekuazioa egiaztatzen duen; hau da, identitate bihurtzen du. Hiru irtenbide mota daude:
+
+
+==== Ebazpen orokorra ====
+Soluzio orokorra soluzio generiko bat da, konstante batekin edo gehiagorekin adierazia. Kurba sorta bat da. Duen konstante kopuruaren araberako infinitutasun ordena du (konstante bat amaigabeko familia bati dagokio; bi konstante bi bider amaigabe den familia bati, eta abar). Ekuazioa lineala bada, emaitza (ekuazioaren ordena adina) orokorra lortzen da ekuazio homogeneoaren (
+  
+    
+      
+        y
+        (
+        x
+        )
+      
+    
+    {\displaystyle y(x)}
+  
+ eta bere deribatuen menpekotasunik gabeko terminoa 0 bihurtzetik ateratzen dena) gehi ekuazio osoaren emaitza partikular bat konbinatuz.
+
+
+==== Ebazpen partikularra ====
+Ekuazio diferentzialaren emaitzak nahitaez igaro behar duen edozein 
+  
+    
+      
+        P
+        (
+        
+          X
+          
+            0
+          
+        
+        ,
+        
+          Y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle P(X_{0},Y_{0})}
+  
+ puntu finkatuz gero, C-ren balio bakar bat existitzen da: eta, beraz, ekuazioa betetzen duen kurba integralarena, Horri, ekuazioaren emaitza partikular deituko zaio 
+  
+    
+      
+        P
+        (
+        
+          X
+          
+            0
+          
+        
+        ,
+        
+          Y
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle P(X_{0},Y_{0})}
+  
+ puntuan, zeinak hasierako baldintza izena hartzen duen.
+Emaitza orokorraren kasu berezi bat da, non konstanteak (edo konstanteek) balio espezifiko bat jasotzen duen.
+
+
+==== Ebazpen berezia ====
+Ebazpen berezia ekuazioa egiaztatzen duen funtzio bat da, baina ez da emaitza orokorra partikularizatuz lortzen. Ekuazio horren emaitza ez da ekuazio orokorraren partikularizazio bat; bestela esanda, ebazpen hori, ez dagokio ebazpen orokorrari, baina, hala ere, ekuazio diferentziala egiaztatzen du.
+
+
+=== Ebazpenei buruzko oharrak ===
+
+  
+    
+      
+        f
+        (
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        ,
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          ″
+        
+        ,
+        
+          y
+          ′
+        
+        ,
+        y
+        ,
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(y^{(n)},y^{(n-1)},\dots ,y'',y',y,x)=0}
+  
+ n ordenako ekuazio diferentzial arrunta bada, erraza da egiaztatzea y= f(x) funtzioa dela haren soluzioa. Nahikoa da haren C-ren deribatuak kalkulatzea, ondoren, ordezkatu ekuazioan, f(x)-rekin batera, eta frogatu x-n identitate bat lortzen dela.
+EDAren emaitzak inplizituki definitutako funtzio gisa aurkezten dira, eta, batzuetan, ezin dira esplizituki adierazi. Adibidez
+
+  
+    
+      
+        x
+        y
+        =
+        ln
+        ⁡
+        y
+        +
+        c
+      
+    
+    {\displaystyle xy=\ln y+c}
+  
+, zeina emaitza 
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              y
+            
+            
+              
+                d
+              
+              x
+            
+          
+        
+        =
+        
+          
+            
+              y
+              
+                2
+              
+            
+            
+              1
+              −
+              x
+              y
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {{\text{d}}y}{{\text{d}}x}}={\frac {y^{2}}{1-xy}}}
+  
+ den
+
+:
+Kasu batzuetan, oinarrizko kalkulu metodoen bidez ebatz daiteke. Beste kasu batzuetan, ordea, soluzio analitikoak analisi konplexuko teknikak edo teknika sofistikatuagoak behar ditu, integralekin gertatzen den bezala:
+
+  
+    
+      
+        y
+        =
+        ∫
+        
+          exp
+          ⁡
+          (
+          
+            x
+            
+              2
+            
+          
+          )
+           
+          
+            d
+          
+          x
+        
+      
+    
+    {\displaystyle y=\int {\exp(x^{2})\ {\text{d}}x}}
+  
+    eta   
+
+  
+    
+      
+        y
+        =
+        ∫
+        
+          
+            
+              
+                sen
+                ⁡
+                x
+              
+              x
+            
+          
+           
+          
+            d
+          
+          x
+        
+      
+    
+    {\displaystyle y=\int {{\frac {\operatorname {sen} x}{x}}\ {\text{d}}x}}
+  
+ integralean
+
+ezin da egituratu oinarrizko funtzioen kopuru mugatu baten bidez
+
+
+== Aplikazioak ==
+Ekuazio diferentzialen azterketa eremu zabala da matematika huts (puru) eta aplikatuan, fisikan eta ingeniaritzan. Diziplina horiek guztiak interesatzen dira zenbait motatako ekuazio diferentzialen propietateetan. Matematika garbiak soluzioen existentzia eta bakartasuna ditu ardatz; matematika aplikatuak, berriz, soluzioen hurbiltze-metodoen justifikazio zehatza azpimarratzen du. Ekuazio diferentzialek oso zeregin garrantzitsua dute edozein prozesu fisiko, tekniko edo biologikoren modelatze birtualean, adibidez, zeruko mugimendua, zubi baten diseinua edo neuronen arteko elkarrekintza. Bizitza errealeko problemak ebazteko planteatzen diren ekuazio diferentzialak ez dira nahitaez zuzenean ebatz daitezkeenak, hau da, haien soluzioek ez dute adierazpen itxirik. Hori gertatzen denean, emaitzak zenbakizko metodoak erabiliz hurbil daitezke.
+Fisikaren eta kimikaren lege asko ekuazio diferentzialekin formalizatzen dira. Biologian eta ekonomian, ekuazio diferentzialak sistema konplexuen portaera modelatzeko erabiltzen dira. Ekuazio diferentzialen teoria matematikoa, hasiera batean, ekuazioak sortzen ziren eta aplikazioetarako emaitzak aurkitzen ziren zientziekin garatu zen. Hala ere, batzuetan, hainbat arazo sortzen ziren eremu zientifiko desberdinetan, eta, haietatik, ekuazio diferentzial berak ateratzen ziren. Izan ere, ekuazioen teoria matematikoaren atzean, printzipio bateratu bat ikus daiteke fenomenoen atzean. Adibidez, argiaren eta soinuaren hedapena atmosferan kontuan hartzen bada eta uhinena urmael baten gainazalean. Fenomeno horiek guztiak bigarren mailako deribatu partzialetako ekuazio berarekin deskriba daitezke, uhin-ekuazioarekin, zeinak argia eta soinua uhin-forma gisa eta uretako uhinen antzera pentsatzen ahalbidetzen digun. Beroaren eroapena, Joseph Fourier-ek garatu zuen teoria, bigarren mailako deribatu partzialetako beste ekuazio batek gobernatzen du, beroaren ekuazioak. Difusio-prozesu asko, itxuraz desberdinak izan arren, ekuazio berak deskribatzen ditu. Adibidez, Black-Scholes ekuazioa finantzetan, beroaren ekuazioarekin lotuta dago.
+
+
+=== Fisika ===
+
+Euler-Lagrangeren ekuazioak mekanika klasikoan
+Hamiltonen ekuazioak mekanika klasikoan
+Erradioaktibitatea fisika nuklearrean
+Newtonen hozte-legea termodinamikan
+Uhin-ekuazioa
+Bero-ekuazioa termodinamikan
+Laplaceren ekuazioa, funtzio harmonikoak definitzen dituena
+Poissonen ekuazioa
+[[Ekuazio geodesikoa
+Navier-Stokesen ekuazioak fluidodinamikan
+Difusio-ekuazioa prozesu estokastikoetan
+Konbekzio-difusio ekuazioa fluidodinamikan
+Cauchy-Riemannen ekuazioak analisi konplexuan
+Poisson-Boltzmannen ekuazioa dinamika molekularrean
+Saint-Venanten ekuazioak
+Ekuazio diferentzial unibertsala
+Lorenz-en ekuazioak, zeinen soluzioek fluxu kaotikoa erakusten baitute.
+
+
+== Softwarea ==
+ExpressionsinBar
+Maple: dsolve
+SageMath
+Xcas: desolve(y'=k*y,y)
+
+
+== Ikus, gainera ==
+Ekuazio diferentzial funtzional
+Ekuazio diferentzial konplexu
+Ekuazio diferentzial zehatz
+Ekuazio integral
+
+
+== Erreferentziak ==
+
+
+== Bibliografia ==
+
+
+== Kanpo estekak ==

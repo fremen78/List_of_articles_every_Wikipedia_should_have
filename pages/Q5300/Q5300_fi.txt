@@ -1,0 +1,180 @@
+Suoritin tai prosessori (engl. Central Processing Unit eli CPU) on tietokoneen osa, joka suorittaa tietokoneohjelman sisältämiä konekielisiä käskyjä. Se on tietokoneen keskeisimpiä osia. Nykyisissä suorittimissa kaikki osat on pakattu yhdelle mikropiirille, joten ne ovat mikroprosessoreita (MPU).
+Yksittäinen yksinkertainen suoritin voi suorittaa kerrallaan vain yhtä ohjelmaa, mutta sen tehtäviä voidaan vaihdella erittäin nopeasti, jolloin suoritus näyttää käyttäjästä rinnakkaiselta (ks. Moniajo). Monisäikeistetyssä suorittimessa voidaan suorittaa aidosti yhtä aikaa useampaa kuin yhtä tehtävää, samoin moniydinsuorittimessa on samaan mikropiiriin rakennettu kaksi tai useampia suorittimia.
+Suorittimia suunnitellaan useisiin erilaisiin käyttötarkoituksiin. Suorittimia valmistetaan erilaisiin supertietokoneisiin, sulautettuihin järjestelmiin ja henkilökohtaisiin tietokoneisiin. Erikoistuneita apusuorittimia ovat digitaalinen signaaliprosessori (DSP), grafiikkaprosessori (GPU) ja matematiikkasuoritin (FPU), joka nykyään usein integroidaan yleiskäyttöiseen suorittimiin. Osa optimoidaan erittäin pieneen tehonkulutukseen, osa suureen laskentatehoon tietynlaiselle datalle, osa taas mahdollisimman laajaan yleiskäyttöisyyteen, jolloin sama mikropiiri saattaa sisältää useita eri oheislaitteita ja kymmeniä liityntäväyliä. Mikrokontrollerit (MCU) sisältävät samoja peruselementtejä kuin mikroprosessorit (MPU) vähemmän vaativiin tarkoituksiin: mikrokontrollerit voivat olla karsittuja jotta ne mahtuvat yhdelle mikropiirille. Näytöllisten älylaitteiden myötä tärkeäksi ryhmäksi ovat nousseet pitkälle integroidut ns. järjestelmäpiirit (SoC), joissa voi olla samassa piirissä mukana mm. muisteja, signaaliprosessori ja monipuolinen näytönohjain.
+
+
+== Historia ==
+
+Ensimmäinen yleiskäyttöinen tietokone, jossa ohjelma voitiin tallettaa tietokoneen muistiin ja vaihtaa ilman fyysisiä muutoksia (tallennetun ohjelman tietokone), oli Manchesterin yliopiston Small-Scale Experimental Machine. Koska suoritettava ohjelma voitiin vaihtaa lataamalla toinen ohjelma eikä käyttötarkoitusta siten rajattu tätä voitaneen pitää tietokonesuorittimien alkuna vastakohtana laskukoneelle. Aikaisemmissa laitteissa ohjelman muuttaminen saattoi tarkoittaa laitteen kytkentöjen muuttamista ohjelman lataamisen sijaan (ks. ENIAC).
+Kuten tietokonetekniikka yleisesti voidaan suorittimet jakaa neljään sukupolveen teknologian mukaan:
+
+sukupolvi: elektroniputket
+sukupolvi: diskreetit transistorit: aluksi germanium-transistoreja ja myöhemmin piihin perustuvat
+sukupolvi: mikropiirit
+sukupolvi: mikroprosessorit
+Kvanttitietokoneen toteutus voi olla merkittävä seuraava kehitysaskel teknologiassa. Myös optinen siru voi olla tuleva kehitysaskel.
+Tekoälyyn ja koneoppimiseen suunnattujen suorittimien kehitys on synnyttänyt useita uusia yrityksiä lyhyessä ajassa sekä useat olemassa olevat yritykset ovat aloittaneet omien ratkaisujensa kehittämisen. Syynä uudelle kehitykselle mainitaan olemassa olevien vakiintuneiden yleiskäyttöisien arkkitehtuurien tarpeeton monimutkaisuus erikoistuneeseen tehtävään.
+Mikrokontrollereita kuten MCS-48, jotka integroivat muistin suorittimeen on myös kutsuttu viidenneksi sukupolveksi johtuen integraatiokehityksestä.
+
+
+== Arkkitehtuurit ==
+Suoritinarkkitehtuurit voidaan jakaa ryhmiin esimerkiksi konekäskyjen perusrakenteen mukaan seuraavasti:
+
+CISC (Complex Instruction Set Computer)
+RISC (Reduced Instruction Set Computer)
+VLIW (Very Long Instruction Word)
+TTA (Transport Triggered Architecture)
+RISC-arkkitehtuuria esiteltiin vastauksena monimutkaistuville suorittimille (erona CISC-arkkitehtuurille), jonka sanottiin olevan entistä tärkeämpää VLSI-tekniikan myötä. Sekä CISC- että RISC-arkkitehtuureilla on etunsa että haittansa.
+Suorittimien käskykantarakenteet voidaan ryhmitellä kolmeen seuraavasti:
+
+L/S load-store arkkitehtuuri
+R/M register-memory arkkitehtuuri
+R+M register-plus-memory arkkitehtuuri
+Load-store käskykanta (kuten ARM ja MIPS) käyttää erillisiä käskyjä muistin käsittelyyn kun taas register-memory -arkkitehtuurissa se voi olla osana muuta käskyä.
+Arkkitehtuuri kuvailee suorittimen ohjelmoinnin näkökulmasta kun taas mikroarkkitehtuuri liittää arkkitehtuurin ja logiikkatason. Tietty arkkitehtuuri voidaan toteuttaa eri tavoin mikroarkkitehtuurin tasolla.
+
+
+== Ominaisuudet ==
+Tietokoneen yleisnopeus riippuu paljon juuri suorittimen nopeudesta. Suorittimen nopeus riippuu sekä sen käyttämästä arkkitehtuurista että kellotaajuudesta. Kellotaajuus ilmoitetaan yleensä Hertsin monikertoina kuten megahertseinä (MHz) tai gigahertseinä (GHz), ja suoritin toimii sen tahdissa. Pelkän kellotaajuuden lisäksi suorittimen nopeuteen vaikuttavat monet tekniset ratkaisut, kuten:
+
+kuinka leveitä prosessorin lukuja käsittelevät yksiköt ja liityntäväylät ovat (yleensä 4, 8, 16, 32 tai 64 bittiä),
+kuinka monta ja minkä tyyppisiä käskyjä suoritin kykenee suorittamaan samanaikaisesti (käskykannan liukuhihna),
+kuinka suuria välimuisteja suorittimessa on,
+miten tehokkaasti edelliset on toteutettu ja niihin liittyvät ongelmatilanteet on arkkitehtuurissa ratkaistu.
+Eräitä 2-bittisiä bit-slice -suorittimia (BSP) on myös valmistettu. BSP-suorittimia pystyi kytkemään rinnakkain muodostamaan ”suuremman” suorittimen.
+
+
+=== Perustoiminnot ===
+Suorittimen keskeiset osat ovat aritmeettis-looginen yksikkö (engl. Arithmetic Logical Unit, ALU), valvontayksikkö (engl. Control Unit, CU)  ja yleensä useita rekistereiksi kutsuttuja käsiteltävän tiedon tallentavia muistipaikkoja. Prosessorin toimintaa on noutaa muistista käsky ja siihen liittyvä luku tai luvut, suorittaa kyseinen käsky ALU-yksikössään ja palauttaa tulos muistiin. Yksittäinen käsky voi olla esim. ”laske yhteen rekisterin A ja muistipaikan XX sisältö ja siirrä tulos rekisteriin B”.
+Yksinkertaistetusti suorittimen toiminta on hakea muistista käskyjä, tehdä niillä jokin operaatio ja kirjoittaa tulos muistiin (myös muut laitteet ja väylät voivat näkyä muistipaikkoina suorittimelle). Toiminta voidaan jakaa neljään vaiheeseen seuraavasti:
+
+muistihaku (fetch)
+käskynpurku (decode)
+suoritus (execute)
+tallennus (store)
+Ohjelmalaskuri (engl. program counter, engl. instruction pointer) pitää suorituksen sijaintitietoa. Eräissä suoritinarkkitehtuureissa kuten MIPS käskyt ovat kiinteämittaisia 32-bittisiä arvoja. Toisissa arkkitehtuureissa kuten x86 käskyn pituus vaihtelee.
+Muita keskeisiä toimintoja ovat muun muassa pino-osoitin (engl. stack pointer): eräissä suorittimissa on omat käskyt pinon käsittelyyn kun taas eräissä se on ohjelman vastuulla.
+Suorittimet voivat vaatia tietotyyppien olevan tasattuja tyypin koon mukaan muistiosoitteisiin (engl. data alignment): mikäli näin ei ole suoritin voi toimia hitaammin, tuottaa vääriä tuloksia tai jumiuttaa tai kaataa järjestelmän.
+Prosessori voi vaatia, että 32-bittisen luvun hakeminen alkaa osoitteesta, joka on jaollinen neljällä tai se antaa virheen.
+
+
+=== Erikoiskäskyt ===
+Prosessorin erikoiskäskyistä voi olla suurta hyötyä etenkin matemaattisissa sovelluksissa. Yksi erikoiskäsky voi korvata kymmeniä peruskäskyjä, vaikka sen suoritukseen aikaa kuluu vain saman verran kuin yhden tai muutaman peruskäskyn suoritukseen.
+Välimuistin hyöty on, että muistista haettava ja sinne kirjoitettava tieto saadaan nopeasta välimuistista huomattavasti nopeammin kuin hitaammasta keskusmuistista. Merkittäviä nopeusetuja saadaan myös kirjoittamalla tehokasta ohjelmakoodia.
+
+
+=== Valmistustekniikka ===
+Valmistustekniikan kehittyessä mikropiirien sisältämien transistorien määrä on kaksinkertaistunut säännöllisin väliajoin kuten ns. Mooren laki on ennustanut. Suorittimien kohdalla tämä on pitänyt paikkansa usean vuosikymmenen ajan, mutta kehitys on hidastunut. Valmistusprosessin kehityksen lisäksi paremman suorituskyvyn mahdollistavia arkkitehtuureita on kehitetty.
+Suorittimet tuottavat toimiessaan hukkalämpöä, joka saattaa vaikuttaa suorittimen toiminnan luotettavuuteen tai liiallisena jopa tuhota suorittimen. Hukkalämmön johtamiseksi pois suorittimesta voidaan käyttää esimerkiksi jäähdytysripaa, jota muotonsa vuoksi monesti kutsutaan jäähdytyssiiliksi, ja siihen usein liitettyä ilman virtausta tehostavaa tuuletinta, tai nestejäähdytystä. Myös muita jäähdytysratkaisuja voidaan käyttää, kuten esimerkiksi nämä supertietokoneet :
+
+Cray-1 käytti freonipohjaista jäähdytystä (lämpöpumppu)
+Cray-2 upotti piirit Fluorinert-nimiseen sähköä johtamattomaan nesteeseen (konvektio)
+Käyttämällä kehittyneempää valmistustekniikkaa voidaan suorittimen virrankäyttöä vähentää ja tämän vaikutuksesta myös tuotettua hukkalämpöä voidaan vähentää. Vastaavasti transistorien määrän lisääminen nostaa tarvittavan virran määrää. Eräs puolijohteiden valmistusmenetelmä on CMOS.
+
+
+=== Ominaisuuksien laajentaminen ===
+Suorittimelle on mahdollista integroida samalle piirille useita suoritinytimiä, suurempia ja monitasoisempia välimuisteja, sekä tukipiirejä kuten 2D- tai 3D-grafiikan käsittelyyn erikoistunut grafiikkasuoritin. Nykyaikaisissa suorittimissa on muistinhallintayksikkö (MMU) ja matematiikkasuoritin (FPU) integroituna samalle piirille. Mikrokontrollerit integroivat suorittimen lisäksi samalle piirille muistia. Järjestelmäpiirit integroivat suorittimen lisäksi samalle piirille IO-piirejä ja useita muita komponentteja.
+
+
+=== Moniprosessointi ===
+
+Yksittäinen tietokone voi sisältää yhden tai useampia suorittimia, jolloin kyseessä on moniprosessointi.
+
+
+=== Moniytimellisyys ===
+
+Suorittimissa voi olla kaksi tai useampia ytimiä. Moniytimellisyys mahdollistaa sen, että monia raskaita laskutehtäviä vaativia ohjelmia voidaan ajaa tietokoneella samanaikaisesti ilman, että muiden prosessien suoritus häiriintyy, ja että monisäikeisien yksittäisien prosessien suoritus voidaan jakaa usean ytimen kesken nostaen sen suoritustehoa.
+Ytimet voivat olla joko identtisiä, tai ne voivat olla erikoistuneita erilaisiin tehtäviin. Eräissä suorittimissa kuten järjestelmäpiireissä on integroituna apusuoritin kuten Digitaalinen signaaliprosessori (DSP) varsinaisen CPU-ytimen lisäksi.
+Moniydinsuoritin voi useaan yksinkertaiseen suorittimeen verrattuna käyttää hieman vähemmän sähköä ja tuottaa vähemmän lämpöä. Yleensä moniydinsuorittimen kaikki ytimet kuitenkin jakavat samat oheislaiteväylät ja käyttävät samaa keskusmuistia.
+
+
+=== Monisäikeistys ===
+Monisäikeistys engl. multithreading on tekniikka, jolla sama ydin voi suorittaa kahta tai useampaa erillistä ohjelmasäiettä yhtäaikaisesti (rinnakkain). Tekniikka on yksi kehityssuunta suorituskyvyn lisäämiseen ja aiheesta on julkaistu useita tutkimuksia.
+Kaksi kehityssuuntausta ovat:
+
+engl. Simultaneous multithreading (SMT), prosessorin on oltava superskalaarinen
+engl. Temporal multithreading, tai engl. Interleaved multithreading, myös nimellä engl. super-threading
+Eri valmistajilla on eri tuotenimiä tekniikan toteuttamisesta, näitä ovat mm. Intelin Hyper-threading ja SPARC CoolThreads. IBM POWER8 käyttää yleistä termiä engl. Simultaneous Multi-Threading (SMT).
+Symmetrinen monisäikeistys on jatkokehitystä superskalaari- ja moniprosessointi-tekniikkaan nähden ja hyödyntää ohjelmissa olevaa sekä käskytason rinnakkaisuutta (engl. Instruction Level Parallelism, ILP) että säietason rinnakkaisuutta (engl. Thread Level Parallelism, TLP).
+
+
+=== Muut ominaisuudet ===
+Muita tehokkuuden parantamiseen tähtääviä keinoja ovat muun muassa epäjärjestyksessä suorittaminen (engl. out-of-order execution) sakkaustilanteiden välttämiseksi ja haarautumisen ennakointi (engl. branch prediction).
+
+
+== Suoritinperheitä ==
+Suorittimet voidaan jakaa perheisiin niiden yhteensopivuuden mukaan. Tyypillisesti saman perheen uudempi suoritin pystyy suorittamaan ohjelmia, jotka on tehty saman perheen aikaisimmille suorittimille. Toisinpäin tämä ei välttämättä ole mahdollista erilaisten käskykantalaajennusten vuoksi.
+
+
+=== Ensimmäisen sukupolven suorittimet ===
+Ensimmäisen sukupolven suorittimet olivat osa laajempaa kokonaisuutta ja osa itse tietokoneen rakennetta ja suunnittelua.
+Ensimmäisen sukupolven suorittimet perustuivat elektroniputkien käyttöön.
+
+
+=== Toisen ja kolmannen sukupolven suorittimet ===
+
+Minitietokoneissa ja suurtietokoneissa käytetyissä tietokoneissa oli huomattavia mallikohtaisia eroja. Kaikki samaan mallisarjaan kuuluneet eivät välttämättä olleet yhteensopivia muiden saman sarjan mallien kanssa. Toisen sukupolven suorittimet perustuivat diskreettien (erillisten) transistorien käyttöön (TTL-logiikka, ECL-logiikka). Kolmannen sukupolven suorittimet käyttivät useita mikropiirejä.
+
+IBM S/360 mahdollisti samojen ohjelmien ajamisen erilaisissa saman arkkitehtuurin mukaisissa tietokoneissa mikrokoodin avulla, tekniikka perustui SLT-transistoreihin
+IBM S/370 käytti SSI-mikropiirejä
+DEC PDP-11 suunniteltiin SSI-mikropiireillä, mutta käytti LSI-mikropiirejä kun ne tulivat käytännöllisiksi
+Digitalin VAX arkkitehtuuri
+Fairchild F8 julkaistiin aluksi kahden mikropiirin versiona, mutta myöhemmin julkaistiin yhdelle piirille integroitu versio
+
+
+=== Neljännen sukupolven suorittimet ===
+
+Neljännen sukupolven suorittimet ovat mikroprosessoreja, joissa kaikki suorittimen toiminnot ovat integroituna yhdelle mikropiirille. MOS- ja CMOS-tekniikat mahdollistivat mikroprosessorit.
+
+Intel 8080 -suoritin, 8-bittinen, julkaistu 1974.
+Motorola 6800 -suoritinperhe, 8-bittinen, julkaistu 1974.
+MOS Technologyn MOS 6502 ja sen kehitysversiot (julkaistu 1975). Käytettiin Atari 2600 -pelikonsolissa, Applen varhaisissa tietokoneissa ja Commodoren kuuluisissa VIC-20- ja Commodore 64 -tietokoneissa.
+Zilog Z80 -suoritinperhe, 8-bittinen, julkaistu 1976.
+Intelin x86-sarja, alkaen 16-bittisestä mallista 8086 (1978) jatkuen IA-32-malleihin (1985), mukaan lukien yhteensopivat muilta valmistajilta. Käytetty IBM PC -yhteensopivissa ensimmäisestä IBM PC:stä lähtien.
+Motorola 68000 -sarja, julkaistu 1979. Käytetty Unix-työasemissa, Macintoshissa ja Amigassa.
+Intelin ja Hewlett-Packardin IA-64 Itanium-suorittimet.
+AMD:n kehittämän AMD64-käskykannan suorittimet, ml. Intelin valmistamat yhteensopivat suorittimet.
+ARM-suorittimet useilta eri valmistajilta
+Texas Instrumentsin TMS320-signaaliprosessoriperhe (esitelty 1983).
+National Semiconductorin NS32000 sarja.
+Sun Microsystemsin SPARC-suoritinperhe.
+MIPS Technologiesin MIPS-suoritinperhe
+Hewlett-Packardin PA-RISC
+Digitalin Alpha-suoritinperhe
+IBM:n POWER-suoritinperhe sekä PowerPC-suoritinperhe
+Tilera 64-120-ytimiset palvelimille tarkoitetut suorittimet
+NEC V800 RISC-perhe
+Fujitsu FR-V (Fujitsu RISC-VLIW) mediakäsittelyyn
+Apollo Computerin Apollo PRISM RISC-suoritin
+Hitachin SuperH RISC-suoritin
+Blackfin
+Microblaze
+OpenRISC
+RISC-V RISC-suoritin, esitelty 2010.
+Suoritinperheet voidaan edelleen jakaa arkkitehtuureihin niiden iän ja sukupolven mukaan. Esimerkiksi SPARC-perheen aikaisemmat arkkitehtuurit, HyperSPARC ja SuperSPARC, toteuttavat SPARC v7 -käskykannan ja uudemmat arkkitehtuurit 64-bittisen SPARC v9 -käskykannan, jonka toteuttavia malleja ovat Sun Microsystemsin valmistaman UltraSPARCin eri mallit ja Fujitsun SPARC64.
+x86-suorittimissa on ollut useita kilpailevia valmistajia, joiden suorittimet käyttävät yhteensopivaa käskykantaa (IA-32, AMD64 tai edeltävät). Suoritinvalmistajilla on useita arkkitehtuureita, jotka jakaantuvat useisiin malleihin, joita on saatavilla eri kellotaajuuksilla. ARM-suorittimista lisensoidaan käskykantaa ja arkkitehtuuria eri valmistajille eri tavoin.
+
+
+== Käskylaajennukset ==
+Useat valmistajat ja suoritinsukupolvet laajentavat suorittimen käskykantaa uusilla käskyillä. Tällaisia laajennuksia ovat mm. MMX, VIS, 3DNow!, SSE ja AltiVec, joista on kaikista lisäksi useampia versioita uusien arkkitehtuurien mukana.
+
+
+== Toimintatilat ==
+Useat suorittimet toteuttavat supervisor-tilan, jossa käyttöjärjestelmän ydin yleensä suoritetaan. Tässä tilassa suoritin asettaa vähemmän rajoituksia kuin käyttäjätilassa (engl. user mode).
+Nykyiset suorittimet lisäävät virtualisointitukea hypervisor-ominaisuuksilla.
+
+
+== Katso myös ==
+Digitaalipiirit
+Tavujärjestys
+Konekieli
+Superskalaarinen suoritin
+Handlerin luokittelu
+Fengin luokittelu
+
+
+== Lähteet ==
+
+
+== Aiheesta muualla ==
+ Kuvia tai muita tiedostoja aiheesta Suoritin Wikimedia Commonsissa

@@ -1,0 +1,919 @@
+Rovnice je v matematice vztah rovnosti dvou výrazů, které obsahují jednu nebo více proměnných. Kořen rovnice je libovolná hodnota proměnné (příp. sada hodnot proměnných), pro které je rovnost splněna.
+
+
+== Formální definice ==
+Uvažujme dvě funkce 
+  
+    
+      
+        f
+        (
+        x
+        )
+        ,
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x),g(x)}
+  
+, které jsou definovány na nějaké množině 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, pak nalezení všech 
+  
+    
+      
+        x
+        ∈
+        D
+      
+    
+    {\displaystyle x\in D}
+  
+, která splňují rovnost
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=g(x)}
+  
+
+se nazývá rovnicí o jedné neznámé 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+. Funkce 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ se nazývá levá strana rovnice a 
+  
+    
+      
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle g(x)}
+  
+ se nazývá pravá strana rovnice.
+
+
+== Kořeny rovnice ==
+
+Každé číslo 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        ∈
+        D
+      
+    
+    {\displaystyle x_{0}\in D}
+  
+, které vyhovuje vztahu 
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        g
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle f(x_{0})=g(x_{0})}
+  
+, se nazývá kořen rovnice. Množinu všech kořenů dané rovnice označujeme jako řešení rovnice. Má-li rovnice alespoň jeden kořen v 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, nazývá se řešitelná v 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+, pokud žádný kořen v 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ nemá, říkáme, že rovnice je v 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ neřešitelná. Pokud je rovnice 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=g(x)}
+  
+ splněna pro všechna 
+  
+    
+      
+        x
+        ∈
+        D
+      
+    
+    {\displaystyle x\in D}
+  
+, jde o identitu, což značíme
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        ≡
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)\equiv g(x)}
+  
+
+
+=== Triviální řešení ===
+Řešení, které je identicky rovno nule, se označuje jako triviální. Pokud řešení rovnice není identicky rovno nule, hovoří se o netriviálním řešení.
+V mnoha případech je požadavek na nalezení pouze netriviálního řešení přímo součástí zadání problému.
+Např. triviálním řešením diferenciální rovnice
+
+  
+    
+      
+        
+          y
+          
+            ′
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle y^{\prime }=y}
+  
+
+je
+
+  
+    
+      
+        y
+        =
+        0
+      
+    
+    {\displaystyle y=0}
+  
+,
+což je funkce identicky rovna nule. Netriviální řešení má tvar
+
+  
+    
+      
+        y
+        =
+        
+          
+            e
+          
+          
+            x
+          
+        
+      
+    
+    {\displaystyle y=\mathrm {e} ^{x}}
+  
+,
+což je exponenciální funkce.
+Jiným příkladem je tzv. Velká Fermatova věta, která hledá netriviální řešení rovnice 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        +
+        
+          b
+          
+            n
+          
+        
+        =
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a^{n}+b^{n}=c^{n}}
+  
+ pro 
+  
+    
+      
+        n
+        >
+        2
+      
+    
+    {\displaystyle n>2}
+  
+. Triviálním řešením by v tomto případě bylo 
+  
+    
+      
+        a
+        =
+        b
+        =
+        c
+        =
+        0
+      
+    
+    {\displaystyle a=b=c=0}
+  
+, což platí pro libovolné 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+. Podobně je triviálním řešením 
+  
+    
+      
+        a
+        =
+        1
+        ,
+        b
+        =
+        0
+        ,
+        c
+        =
+        1
+      
+    
+    {\displaystyle a=1,b=0,c=1}
+  
+. Takováto řešení jsou však obvykle nezajímavá.
+
+
+== Ekvivalentní rovnice ==
+Jsou-li na dané množině definovány dvě rovnice 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        (
+        x
+        )
+        =
+        
+          g
+          
+            1
+          
+        
+        (
+        x
+        )
+        ,
+        
+          f
+          
+            2
+          
+        
+        (
+        x
+        )
+        =
+        
+          g
+          
+            2
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{1}(x)=g_{1}(x),f_{2}(x)=g_{2}(x)}
+  
+, pak je-li každý kořen první rovnice současně kořenem rovnice druhé a naopak, říkáme, že obě rovnice jsou ekvivalentní (rovnocenné, stejné).
+Rovnici lze tzv. ekvivalentními úpravami převést na ekvivalentní rovnici. Mezi nejčastěji používané ekvivalentní úpravy patří:
+
+přičtení (nebo odečtení) stejného čísla k oběma stranám rovnice, tzn. 
+  
+    
+      
+        f
+        (
+        x
+        )
+        +
+        a
+        =
+        g
+        (
+        x
+        )
+        +
+        a
+      
+    
+    {\displaystyle f(x)+a=g(x)+a}
+  
+ je ekvivalentní rovnicí s rovnicí 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=g(x)}
+  
+
+vynásobení obou stran rovnice stejným nenulovým číslem, tzn. 
+  
+    
+      
+        a
+        f
+        (
+        x
+        )
+        =
+        a
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle af(x)=ag(x)}
+  
+ je ekvivalentní rovnicí s rovnicí 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=g(x)}
+  
+
+Rovnici 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=g(x)}
+  
+ je možné pomocí ekvivalentních úprav převést na (ekvivalentní) tvar
+
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        −
+        g
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle F(x)=f(x)-g(x)=0}
+  
+
+Při řešení rovnice lze použít také jiné úpravy, např. logaritmování nebo umocnění obou stran rovnice apod. Tyto úpravy však nemusí být ekvivalentní a při jejich použití je vždy nutno provést zkoušku.
+
+
+== Zkouška ==
+Po nalezení řešení rovnice provádíme zkoušku, neboť v mnoha případech nejsme schopni ověřit, zda použité úpravy byly opravdu ekvivalentní. Zkouška spočívá v dosazení získaných kořenů do původní rovnice. Pokud některý kořen nesplňuje zkoušku, nebyly pravděpodobně všechny provedené úpravy ekvivalentní, a nejedná se tedy o kořen původní rovnice.
+
+
+== Rovnice o více neznámých ==
+Rovnice o 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ neznámých má tvar
+
+  
+    
+      
+        F
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        =
+        0
+      
+    
+    {\displaystyle F(x_{1},x_{2},...,x_{n})=0}
+  
+
+Při jejím řešení postupujeme obdobně jako při řešení rovnice o jedné neznámé 
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle F(x)=0}
+  
+, přičemž řešením rovnice o 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ neznámých jsou n-tice 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},x_{2},...,x_{n})}
+  
+.
+
+
+== Algebraické a nealgebraické rovnice ==
+Rovnice lze rozdělit na algebraické rovnice (též označované polynomická rovnice) a nealgebraické rovnice (též transcendentní rovnice).
+Jako algebraickou rovnici 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-tého stupně o jedné neznámé označujeme rovnici ve tvaru
+
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          a
+          
+            1
+          
+        
+        x
+        +
+        
+          a
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle a_{n}x^{n}+a_{n-1}x^{n-1}+...+a_{1}x+a_{0}=0}
+  
+,
+kde levou stranu rovnice tvoří polynom 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-tého stupně s 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        ≠
+        0
+      
+    
+    {\displaystyle a_{n}\neq 0}
+  
+, přičemž se předpokládá, že 
+  
+    
+      
+        n
+        ≥
+        1
+      
+    
+    {\displaystyle n\geq 1}
+  
+. Pokud rovnici nelze vyjádřit ve tvaru algebraické rovnice, pak hovoříme o rovnici nealgebraické.
+Rovnice až do 4. stupně jsou obecně vždy řešitelné analyticky, v algebře se dokazuje, že obecný vzorec řešící jakoukoli rovnici 5. a vyšších stupňů neexistuje a řešení je nutné hledat numericky.
+Mezi nejjednodušší algebraické rovnice patří lineární rovnice 
+  
+    
+      
+        (
+        n
+        =
+        1
+        )
+      
+    
+    {\displaystyle (n=1)}
+  
+, kvadratická rovnice 
+  
+    
+      
+        (
+        n
+        =
+        2
+        )
+      
+    
+    {\displaystyle (n=2)}
+  
+, kubická rovnice 
+  
+    
+      
+        (
+        n
+        =
+        3
+        )
+      
+    
+    {\displaystyle (n=3)}
+  
+ a kvartická rovnice 
+  
+    
+      
+        (
+        n
+        =
+        4
+        )
+      
+    
+    {\displaystyle (n=4)}
+  
+. Také pro některé zvláštní případy polynomů dostáváme jednoduché rovnice, jde např. o binomické, trinomické nebo reciproké rovnice.
+Při práci s algebraickými rovnicemi má velký význam tzv. základní věta algebry. Podle této věty má každý polynom s komplexními koeficienty stupně 
+  
+    
+      
+        n
+        ≥
+        1
+      
+    
+    {\displaystyle n\geq 1}
+  
+ alespoň jeden komplexní kořen. Každá algebraická rovnice má tedy řešení v oboru komplexních čísel. Řešení algebraických rovnic usnadňuje znalost některých vlastností polynomů.
+Mezi nejjednodušší případy nealgebraických rovnic patří např. exponenciální rovnice, logaritmická rovnice nebo goniometrická rovnice.
+
+
+=== Homogenní rovnice ===
+Algebraickou rovnici o několika neznámých označujeme jako homogenní, pokud mají všechny její členy stejný stupeň. Např. 
+  
+    
+      
+        3
+        
+          x
+          
+            2
+          
+        
+        y
+        +
+        3
+        
+          x
+          
+            3
+          
+        
+        +
+        2
+        
+          y
+          
+            3
+          
+        
+        −
+        5
+        x
+        
+          y
+          
+            2
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle 3x^{2}y+3x^{3}+2y^{3}-5xy^{2}=0}
+  
+ je homogenní rovnice třetího stupně.
+Homogenní rovnici lze vyjádřit ve tvaru 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(x)=0}
+  
+, kde 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ je homogenní funkce.
+
+
+== Další druhy rovnic ==
+Rovnice obsahující derivace označujeme jako diferenciální.
+Rovnice obsahující integrály označujeme jako integrální.
+Rovnice obsahující diference proměnných označujeme jako diferenční.
+
+
+== Související články ==
+Algebra
+Nerovnice
+Soustava rovnic
+
+
+== Externí odkazy ==
+ Obrázky, zvuky či videa k tématu rovnice na Wikimedia Commons 
+ Téma Rovnice ve Wikicitátech
+ Slovníkové heslo rovnice ve Wikislovníku
+kalkulačka na počítání rovnic

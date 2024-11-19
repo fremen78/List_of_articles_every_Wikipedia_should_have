@@ -1,0 +1,382 @@
+A klasszikus, vagy newtoni mechanika a testek mozgásának leírásával és az azokat okozó törvényekkel foglalkozik.
+
+
+== Az alkalmazhatóság határa ==
+A klasszikus mechanika törvényei szigorúan csak alacsony sebességek (fénysebességhez képest) mellett érvényesek, a fénysebességgel összemérhető sebességek esetében a speciális relativitáselmélet eredményeit kell használni. Mikrorendszerek (atomok, molekulák szintje) esetén pedig a kvantummechanika törvényei érvényesek.
+
+
+== Részterületei ==
+Kinematika (mozgástan): feladata a testek mozgásának leírása;
+Dinamika (erőtan): a testek mozgását okozó törvényszerűségeket vizsgálja;
+Statika: a testek erőhatás alatti egyensúlyának feltételeivel foglalkozik.
+A vizsgált objektumok lehetnek pontszerűek, illetve kiterjedtek, merevek, vagy rugalmasak, halmazállapotuk szerint pedig szilárdak, folyékonyak és gázneműek (hidrodinamika, hidrosztatika, aerodinamika és aerosztatika).
+
+
+== Kinematika ==
+A kinematika a testek mozgásának leírásával foglalkozik, ehhez az Euklideszi geometriát használja.
+
+
+=== Tömegpont fogalma ===
+A jelenségek leírásakor, azok egyszerűsítése céljából, a valós testek matematikai absztrakciójaként pontszerű részecskéket, ún. tömegpontokat használunk. A tömegpont néhány fizikai mennyiséggel jellemezhető, ezek: helyvektor, tömeg, sebesség, gyorsulás. A valóságos testek mérete természetesen nem mindig elhanyagolható.
+
+
+=== Pontszerű részecskék helyzete ===
+Egy tömegpont helyzete megadható, egy, a térben rögzített ponthoz viszonyított helyzetével. Ezt a viszonyítási pontot gyakran origónak (O) nevezzük. A részecske helyzete tehát megadható az O pontból a tömegpontba húzott 
+  
+    
+      
+        
+          
+            
+              r
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {r}}}
+  
+ helyvektorral. Ha a részecske mozog, akkor az 
+  
+    
+      
+        
+          
+            
+              r
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {r}}}
+  
+ vektor az idő függvényében változik. A klasszikus mechanikában az idő vonatkoztatási rendszertől független, azaz koordináta-rendszer váltásakor értéke nem változik (abszolút) (ld. Galilei-transzformáció).
+
+
+=== Sebesség ===
+A sebesség az elmozdulás idő szerinti deriváltja:
+
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                d
+              
+              
+                
+                  
+                    r
+                    →
+                  
+                
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {v}}={\mathrm {d} {\vec {r}} \over \mathrm {d} t}\,\!}
+  
+.
+A sebesség additív vektormennyiség, azaz a sebességek a vektorgeometria szabályai szerint összegeződnek, illetve bonthatók fel komponensekre. A sebesség függ a koordináta-rendszer megválasztásától.
+
+
+=== Gyorsulás ===
+Gyorsulásnak nevezzük a sebesség idő szerinti első deriváltját, amely megegyezik a hely szerinti második deriválttal.
+
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                d
+              
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                
+                  d
+                  
+                    2
+                  
+                
+              
+              
+                
+                  
+                    r
+                    →
+                  
+                
+              
+            
+            
+              
+                d
+              
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {a}}={\mathrm {d} {\vec {v}} \over \mathrm {d} t}={\mathrm {d^{2}} {\vec {r}} \over \mathrm {d} t^{2}}\,\!}
+  
+.
+A gyorsulás nagysága a sebesség változásának sebességét adja meg. A test sebességének csökkenéséhez, lassuláshoz negatív értékű gyorsulás tartozik.
+
+
+== Merev test ==
+Egy merev testnek hat szabadsági foka van azaz leírható egy vektorkettőssel.
+
+
+=== Dinamika ===
+
+Inerciarendszerben a mozgásállapot megváltozása mindig erő hatására történik. A dinamika feladata az erők (a mozgás okainak) leírása.
+
+
+=== Tömeg ===
+Az SI alapegysége, mértékegysége a kg. Kétféle tömeget különböztethetünk meg aszerint, hogy milyen kölcsönhatásban vesz részt a test:
+
+A súlyos tömeg jellemzi a test gravitációs kölcsönhatásban való részvételének mértékét.
+Tehetetlen tömeg, a test erőhatással szembeni tehetetlenségének mértéke. Ahhoz, hogy egy test sebességét megváltoztassuk erővel kell hatnunk rá (Newton I. törvénye szerint). A sebesség-változás nagysága fordítva arányos a test tehetetlen tömegével: 
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                
+                  F
+                  →
+                
+              
+            
+            m
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}={{\vec {F}} \over m}}
+  
+ (Newton II. törvényének egyik megfogalmazása).
+
+
+=== Lendület ===
+Lendületnek vagy impulzusnak nevezzük a tömeg és sebesség szorzatát:
+
+  
+    
+      
+        
+          
+            
+              p
+              →
+            
+          
+        
+        =
+        m
+        
+          
+            
+              v
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {p}}=m{\vec {v}}}
+  
+.
+Az impulzus (vagy lendület) általában véve a test azon törekvésének mértéke, hogy megtartsa mozgásának nagyságát és irányát. Zárt rendszer összimpulzusa állandó.
+
+
+=== Erő ===
+Newton második törvénye (ld. Newton törvényei) egy test tömegét és sebességét egy vektormennyiséggel kapcsolja össze, amelyet impulzusnak nevezünk. Ha m a test tömege és F a testre ható erők eredője, akkor Newton második törvénye szerint:
+
+  
+    
+      
+        
+          
+            
+              F
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                d
+              
+              
+                
+                  
+                    
+                      m
+                      v
+                    
+                    →
+                  
+                
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                d
+              
+              
+                
+                  
+                    p
+                    →
+                  
+                
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {F}}={\mathrm {d} {\vec {mv}} \over \mathrm {d} t}={\mathrm {d} {\vec {p}} \over \mathrm {d} t}\,\!}
+  
+.
+Egy testre ható erők eredője tehát egyenlő a test lendületének idő szerinti deriváltjával. Ha test tömege az időben állandó, akkor Newton törvényét a következőképpen adhatjuk meg:
+
+  
+    
+      
+        
+          F
+        
+        =
+        m
+        
+          a
+        
+      
+    
+    {\displaystyle \mathbf {F} =m\mathbf {a} }
+  
+, ahol 
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}}
+  
+ a gyorsulás.
+Ha a tömeg az időben nem állandó (például egy rakéta esetében, amely mozgás közben elégeti a tömegének egy részét képező hajtóanyagát), akkor az általános képlet használandó.
+
+
+=== Munka, energia ===
+Ha egy test a rá ható erők hatására Δs elmozdulást végez, akkor az erő a testen mechanikai munkát végez.
+ΔW = FΔs
+Szorosan összefügg a munka fogalmával az energia fogalma, amely a testek munkavégző képességét jelenti.
+
+
+== Források ==

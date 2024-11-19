@@ -1,0 +1,839 @@
+Tranzistor (engl. transistor, od trans[fer] [res]istor: prijenosni otpornik) je aktivni poluvodički element s trima elektrodama. Razlikuju se bipolarni i unipolarni tranzistori. Promjenom ulazne struje bipolarnoga tranzistora ili ulaznoga napona unipolarnoga tranzistora upravlja se električnom strujom u izlaznom krugu. U analognim sklopovima tranzistori se primjenjuju ponajprije za pojačanje električnih signala, a u digitalnim sklopovima kao upravljane sklopke. Tranzistor se koristi i za stabilizaciju napona, modulaciju signala i mnoge druge primjene. Osnovni je tvorni element mnogih elektroničkih sklopova, integriranih krugova i elektroničkih računala. Pod pojmom tranzistor najčešće se podrazumijeva ranije otkriveni bipolarni tranzistor, a kada se govori o unipolarnom tranzistoru redovito se naglašava o kojoj se vrsti unipolarnog tranzistora radi. Prednost je tranzistora da je malih dimenzija i da je mali potrošak električne energije.
+Bipolarni tranzistor sastoji se od triju slojeva poluvodiča, s kontaktima emitera (E), baze (B) i kolektora (C). Postoje NPN tranzistori i PNP tranzistori (poluvodiči). Kod NPN tranzistora baza P tipa poluvodiča napravljena je između emitera i kolektora koji su N tipa, dok su kod PNP tranzistora slojevi emitera, baze i kolektora suprotnoga tipa. U radu bipolarnoga tranzistora sudjeluju oba tipa nosilaca. U normalnom aktivnom području rada tranzistora emiter injektira nosioce u bazu. Manji dio nosilaca gubi se (rekombinira) u uskoj bazi, čineći malu struju baze, a veći dio prolazi kroz bazu u kolektor, uzrokujući struju kolektora. Kod NPN tranzistora osnovnu struju čine elektroni, a kod PNP tranzistora šupljine. Struje emitera, baze i kolektora međusobno su proporcionalne. U najčešće korištenom spoju zajedničkog emitera mala promjena ulazne struje baze uzrokuje veliku promjenu izlazne struje kolektora, čime se ostvaruje pojačavajuće djelovanje tranzistora u pojačanju signala. Bipolarni tranzistor upotrebljava se i kao sklopka. Ovisno o ulaznoj struji baze, tranzistor se prebacuje iz područja zapiranja u područje zasićenja i obratno; u području zapiranja radi kao isključena sklopka uz zanemarive struje, a u području zasićenja kao uključena sklopka uz mali pad napona između kolektora i emitera.
+
+
+== Povijest ==
+Naziv tranzistor potječe iz 1947., kada su američki istraživači John Bardeen, Walter Houser Brattain i William Bradford Shockley konstruirali prvi germanijski bipolarni tranzistor. Prvi silicijski tranzistor bio je proizveden od tvrtke Texas Instruments 1954. Uslijedio je brz razvoj poluvodičke tehnologije i brojne vrste novih vrsta različitih bipolarnih tranzistora. Prvi unipolarni MOS (eng. Metal Oxide Semiconductor) tranzistor proizveden je već 1960.
+Prvi tranzistor je uglavnom bio građen od kristala germanija. U metalnu ili crno obojenu staklenu kapicu, široku 3 do 7 mm, smještena je tanka pločica izrezana iz kristala N germanija. Na pločicu je s jedne i druge strane nanesena kapljica indija. Ta kapljica indija služi kao elektroda. Elektroda na koju se dovodi slaba struja zove se emiter (E), a elektroda kroz koju se propušta jača struja drugog strujnog kruga zove se kolektor (C). Treća elektroda je germanijeva pločica, na koju je spojena priključna žica. To je takozvana baza (B) tranzistora. Sve je smješteno u cjevčicu hermetički zatvorenu, kroz čije dno ulaze tri žice. Na cjevčici je obojena točkica koja označuje priključak kolektora. Ti se tranzistori označuju slovima PNP, jer od emitera prema kolektoru imamo P germanij, N germanij i opet P germanij.
+Takav tranzistor sastoji se od dviju kristalnih dioda. Baza i kolektor čine takozvanu kolektorsku diodu, a baza i emiter emitersku diodu. Te dvije diode u stvari su srasle jedna u drugu. Stavimo između emitera E i kolektora C jednog PNP tranzistora određeni električni napon UC. Emiter je spojen s pozitivnim, a kolektor s negativnim polom izvora struje. Stoga struja u kolektorskom krugu neće teći jer je smjer propusta struje kolektorske diode suprotan smjeru propusta struje emiterske diode. No pustimo li preko baze (B) struju Ib, teći će struja i preko kolektora. Kolektorska struja IC može biti i 100 puta jača od struje koja prelazi preko baze. Na taj način možemo mijenjanjem slabe pomoćne struje IB regulirati vrlo jake struje IC, koje teku kroz tranzistor preko kolektora. Pomoćnu struju IB možemo mijenjati uzimanjem većeg ili manjeg broja galvanskih članaka ili mijenjanjem električnog otpora R. Svakoj promjeni struje IB odgovara promjena struje IC. Omjer jakosti kolektorske struje IC i struje IB koja teče preko baze zove se faktor strujnog pojačanja tranzistora β:
+
+  
+    
+      
+        β
+        =
+        
+          
+            
+              I
+              
+                C
+              
+            
+            
+              I
+              
+                B
+              
+            
+          
+        
+        
+      
+    
+    {\textstyle \beta ={\frac {I_{C}}{I_{B}}}\,}
+  
+
+Tranzistor dakle funkcionira kao elektronska cijev, pa se može i umjesto nje upotrijebiti. Pri tom emiter odgovara katodi, bez mrežice, a kolektor anodi. Kod elektronske cijevi anodna se struja regulira prednaponom na mrežici, a kod tranzistora se kolektorska struja regulira strujom koja teče preko baze. Razlika je u tome što je kod elektronske cijevi anoda pozitivna, dok je kod tranzistora kolektor negativan.
+
+
+== Bipolarni tranzistor ==
+
+Bipolarni su tranzistori građeni tako da dopiranjem čistog poluvodiča, npr. silicija ili germanija, nastaje struktura u kojoj se između dva područja istog tipa vodljivosti (P ili N) nalazi područje suprotnog tipa vodljivosti (N ili P). Ovisno o tome moguća su dva tipa bipolarnih tranzistora koji se označavaju kao:
+
+PNP(pozitivno-negativno-pozitivno)
+NPN(negativno-pozitivno-negativno)
+Kod bipolarnih tranzistora razlikujemo:
+
+bazu [B]
+emiter [E]
+kolektor [C]
+na koje su spojeni izvodi pomoću kojih se tranzistor spaja u vanjski električni krug.
+Baza i emiter čine u normalnom aktivnom načinu rada propustno polariziran PN spoj (kod NPN tranzistora), za razliku od kolektora i baze koji u normalnom aktivnom načinu rada čine nepropustno polariziran PN spoj.
+Princip rada tranzistora se zasniva na injekciji manjinskih nosilaca iz emitera u bazu i njihovom transportu do kolektora. Kako je napon na spoju baza-emiter manji od napona na spoju kolektor-baza, a također je i struja koja teče u bazu manja od struja emitera i kolektora znači da tranzistor omogućuje upravljanje potrošnjom u krugu veće snage pomoću kruga u kojem se troši manja snaga. Ovisno o tome koja je elektroda za oba kruga zajednička tranzistor se može koristiti u tri različita spoja.
+U spoju sa zajedničkom bazom ostvaruje se samo pojačanje napona, u spoju sa zajedničkim kolektorom samo pojačanje struje, a spoju sa zajedničkim emiterom pojačava se i napon i struja, pa je pojačanje snage najveće.
+Za učinkovit je rad tranzistora bitno da struja koja teče u bazu bude što manja. Dva faktora koja na to utječu su faktor injekcije i transportni faktor. Faktor injekcije ovisi o odnosu broja nosilaca koji se injektiraju iz emitera u bazu prema broju nosilaca koji se injektiraju iz baze u emiter. Povoljan se odnos postiže kada je emiter znatno više dopiran od baze.
+Transportni faktor ovisi o broju injektiranih nosilaca koji se rekombiniraju u bazi, a za njega je bitno da baza bude dovoljno tanka kako bi nosioci stigli do kolektorskog spoja prije nego što se rekombiniraju.
+Bilo da se radi o PNP ili NPN tipu tranzistora oba obavljaju istu funkciju. Razlika je u polaritetima vanjskih napona i struja, te u vrsti nosilaca električne struje. U PNP tipu tranzistora glavni su nosioci električne struje šupljine, a u NPN tipu tranzistora su to elektroni.
+
+
+== Parametri bipolarnog tranzistora ==
+
+Bipolarni tranzistor primarno smatramo strujnim aktivnim izvorom gdje istosmjerna kolektorska struja ovisi o struji baze:
+
+  
+    
+      
+        
+          I
+          
+            C
+          
+        
+        =
+        f
+        (
+        
+          I
+          
+            B
+          
+        
+        )
+        
+      
+    
+    {\displaystyle I_{C}=f(I_{B})\,}
+  
+
+Bipolarni transistor kao aktivni električni izvor predstavljamo u elektroničkim krugovima nadomjesnim upravljanim strujnim izvorom.
+
+
+=== Dinamičko strujno pojačanje ===
+Za razliku od istosmjernog strujnog pojačanja koje definiramo kao:
+
+  
+    
+      
+        β
+        =
+        
+          
+            
+              I
+              
+                C
+              
+            
+            
+              I
+              
+                B
+              
+            
+          
+        
+        
+      
+    
+    {\textstyle \beta ={\frac {I_{C}}{I_{B}}}\,}
+  
+
+dinamički faktor stujnog pojačanja hFE definiramo kao strujno pojačanje za mali električni signal u određenoj radnoj točki tranzistora:
+
+  
+    
+      
+        
+          h
+          
+            F
+            E
+          
+        
+        =
+        
+          
+            |
+            
+              
+                
+                  △
+                  
+                    i
+                    
+                      c
+                    
+                  
+                
+                
+                  △
+                  
+                    i
+                    
+                      b
+                    
+                  
+                
+              
+            
+            |
+          
+          
+            
+              U
+              
+                c
+              
+            
+            =
+            k
+            o
+            n
+            s
+            t
+          
+        
+        .
+      
+    
+    {\displaystyle h_{FE}=\left|{\frac {\vartriangle i_{c}}{\vartriangle i_{b}}}\right|_{U_{c}=konst}.}
+  
+
+Razmatramo li male izmjenične struje bipolarni tranzistor možemo predočiti aktivnim strujno upravljanim strujnim izvorom nazivne struje :
+
+  
+    
+      
+        
+          
+            i
+            
+              c
+            
+          
+        
+        =
+        
+          h
+          
+            F
+            E
+          
+        
+        
+          i
+          
+            b
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle {i_{c}}=h_{FE}i_{b},\,}
+  
+
+gdje je ic izmjenična komponenta kolektorske struje, hFE  dinamički faktor strujnog pojačanja, a ib ulazna pobudna struja baze.
+Faktor strujnog pojačanja može poprimati vrijednosti od nekoliko desetaka do nekoliko stotina, ovisno o namjeni i tehnologiji izrade.
+
+
+=== Ulazni dinamički otpor ===
+
+Veličina ulaznog dinamičkog otpora određena je položajem radne točke na ulaznoj UBE/ IB karakteristici. Kako je struja baze u ovisnosti o naponu baza/emiter određena sa:
+
+  
+    
+      
+        
+          I
+          
+            B
+          
+        
+        =
+        
+          I
+          
+            s
+          
+        
+        
+          e
+          
+            
+              
+                U
+                
+                  B
+                  E
+                
+              
+              
+                k
+                T
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle I_{B}=I_{s}e^{\frac {U_{BE}}{kT}}\,}
+  
+
+gdje je IB struja baze, Is reverzna struja zasićenja, UBE napon baza/emiter, k Boltzmanova konstanta, a T apsolutna temperatura u 0K. Slijedi da je ulazna dinamička vodljivost određena kao:
+
+  
+    
+      
+        
+          G
+          
+            u
+            l
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  I
+                  
+                    B
+                  
+                
+              
+            
+            
+              d
+              
+                
+                  U
+                  
+                    B
+                    E
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              I
+              
+                s
+              
+            
+            
+              k
+              T
+            
+          
+        
+        
+          e
+          
+            
+              
+                U
+                
+                  B
+                  E
+                
+              
+              
+                k
+                T
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle G_{ul}={\frac {d{I_{B}}}{d{U_{BE}}}}={\frac {I_{s}}{kT}}e^{\frac {U_{BE}}{kT}}\,}
+  
+,
+gdje je tada dinamički ulazni otpor jednak:   
+
+  
+    
+      
+        
+          R
+          
+            u
+            l
+          
+        
+        =
+        
+          
+            
+              d
+              
+                U
+                
+                  B
+                  E
+                
+              
+            
+            
+              d
+              
+                I
+                
+                  B
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              k
+              T
+            
+            
+              I
+              
+                s
+              
+            
+          
+        
+        
+          e
+          
+            −
+            
+              
+                
+                  U
+                  
+                    B
+                    E
+                  
+                
+                
+                  k
+                  T
+                
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle R_{ul}={\frac {dU_{BE}}{dI_{B}}}={\frac {kT}{I_{s}}}e^{-{\frac {U_{BE}}{kT}}}\,}
+  
+,
+Dinamički ulazni otpor veličina je koja izrazito ovisi o radnoj točki tranzistora. U zapornom području je ulazni otpor velik, a u propustnom se brzo smanjuje naročito za napon baza/emiter UBE veći od praga vođenja koji je za silicijeve tranzistore negdje između O,5 i O,6 V. Kako će fizički veći tranzistori imati u pravilu i veću reverznu struju zasićenja, izlazni tranzistori snage imaju sukladno tome i manji dinamički ulazni otpor, što se vidi i iz njihove ulazne UBE/ IB karakteristike.
+Tranzistor u zasićenju radi kao uključena sklopka.
+
+
+=== Unutarnji dinamički otpor ===
+Unutarnji dinamički otpor određuje se kao omjer male promjene kolektorskog napona i male promjene kolektorske struje u radnoj točki tranzistora, a uz konstantnu struju baze:
+
+  
+    
+      
+        
+          R
+          
+            i
+          
+        
+        =
+        
+          
+            |
+            
+              
+                
+                  △
+                  
+                    U
+                    
+                      c
+                    
+                  
+                
+                
+                  △
+                  
+                    I
+                    
+                      c
+                    
+                  
+                
+              
+            
+            |
+          
+          
+            
+              I
+              
+                b
+              
+            
+            =
+            k
+            o
+            n
+            s
+            t
+          
+        
+      
+    
+    {\displaystyle R_{i}=\left|{\frac {\vartriangle U_{c}}{\vartriangle I_{c}}}\right|_{I_{b}=konst}}
+  
+
+Unutarnji dinamički otpor tranzistora je velik za sve suvremene silicijeve bipolarne tranzistore te je izlazni kolektorski izmjenični napon ovisan najvećim dijelom o veličini opteretnog otpora.
+
+
+== Naponsko pojačanje u spoju zajedničkog emitera ==
+Bipolarni tranzistor predstavlja za izmjenični električni signal strujno upravljan električni izvor struje i predstavljamo ga nadomjestnim izvorom unutarnjeg otpora Ri i struje
+
+  
+    
+      
+        
+          
+            i
+            
+              c
+            
+          
+        
+        =
+        
+          h
+          
+            F
+            E
+          
+        
+        
+          i
+          
+            u
+            l
+          
+        
+        
+      
+    
+    {\displaystyle {i_{c}}=h_{FE}i_{ul}\,}
+  
+,
+gdje je hFE dinamički faktor strujnog pojačanja, a iul pobudna struja koja teče kroz bazu bipolarnog tranzistora. 
+Međutim, u čestim okolnostima gdje je dinamički električni otpor koji se pojavljuje na ulaznim elektrodama bipolarnog tranzistora znatno veći od unutarnjeg otpora električnog izvora koji se priključuje na bazu i emiter bipolarnog tranzistora, ova jednakost se može prikazati u nešto drukčijem obliku
+
+  
+    
+      
+        
+          
+            i
+            
+              c
+            
+          
+        
+        =
+        
+          h
+          
+            F
+            E
+          
+        
+        
+          
+            
+              u
+              
+                u
+                l
+              
+            
+            
+              R
+              
+                u
+                l
+              
+            
+          
+        
+      
+    
+    {\displaystyle {i_{c}}=h_{FE}{\frac {u_{ul}}{R_{ul}}}}
+  
+
+gdje je uul ulazni napon koji dolazi iz naponskog izvora, a Rul dinamički otpor na ulazu tranzistora.
+Pad napona uR na opteretnom otporu bit će ovisan o međusobnom odnosu opteretnog otpora i unutarnjeg otpora izvora
+
+  
+    
+      
+        
+          
+            u
+            
+              R
+            
+          
+        
+        =
+        −
+        
+          h
+          
+            F
+            E
+          
+        
+        
+          
+            
+              u
+              
+                u
+                l
+              
+            
+            
+              R
+              
+                u
+                l
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                  R
+                  
+                    t
+                  
+                
+              
+              
+                
+                  R
+                  
+                    i
+                  
+                
+              
+            
+            
+              
+                R
+                
+                  t
+                
+              
+              +
+              
+                R
+                
+                  i
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {u_{R}}=-h_{FE}{\frac {u_{ul}}{R_{ul}}}{\frac {{R_{t}}{R_{i}}}{R_{t}+R_{i}}}}
+  
+
+te je naponsko pojačanje pojačala s bipolarnim tranzistorom određeno prema jednakosti
+
+  
+    
+      
+        
+          
+            A
+            
+              V
+            
+          
+        
+        =
+        −
+        
+          
+            
+              h
+              
+                F
+                E
+              
+            
+            
+              R
+              
+                u
+                l
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                  R
+                  
+                    t
+                  
+                
+              
+              
+                
+                  R
+                  
+                    i
+                  
+                
+              
+            
+            
+              
+                R
+                
+                  t
+                
+              
+              +
+              
+                R
+                
+                  i
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {A_{V}}=-{\frac {h_{FE}}{R_{ul}}}{\frac {{R_{t}}{R_{i}}}{R_{t}+R_{i}}}}
+  
+
+Naponsko pojačanje elektroničkog sklopa s bipolarnim tranzistorima određeno je, dakle, prvenstveno faktorom dinamičkog strujnog pojačanja i dinamičkom ulaznom impedancijom bipolarnog tranzistora te međusobnim odnosom opteretnog otpora i unutarnjeg otpora izvora. Pojačanje ima negativan predznak jer povećanje ulaznog izmjeničnog napona na bazi tranzistora ima za posljedicu smanjenje kolektorskog napona na izlazu.
+
+
+== Ponašanje na višim frekvencijama ==
+
+
+=== Ulazna impedancija ===
+Ulaznu impedanciju bipolarnog tranzistora sačinjavaju njezin radni dio, ulazni otpor Rul i rezultantna ulazna kapacitivnost koju čini s jedne strane kapacitet baza/emiter
+Cbe, a s druge strane kapacitet kolektor/baza Ccb koji se preslikava u ulazni krug uvećan za naponski faktor pojačanja sklopa u koji je ugrađen bipolarni transistor (Millerov efekt):
+
+  
+    
+      
+         
+        
+          C
+          
+            r
+          
+        
+        =
+        
+          C
+          
+            g
+          
+        
+        k
+        +
+        
+          A
+          
+            V
+          
+        
+        
+          C
+          
+            a
+          
+        
+        g
+      
+    
+    {\displaystyle \ C_{r}=C_{g}k+A_{V}C_{a}g}
+  
+
+gdje je tada ulazna impedancija određena jednakosti:
+
+  
+    
+      
+        
+          Z
+          
+            u
+          
+        
+        l
+        =
+        
+          
+            1
+            
+              j
+              ω
+              
+                C
+                
+                  r
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle Z_{u}l={\frac {1}{j\omega C_{r}}}}
+  
+.
+Ulazna impedancija triode je na taj način osjetno manja u usporedbi s tetrodom i pentodom kod kojih su drugom rešetkom ulazni i izlazni krug praktički potpuno odvojeni.
+
+
+=== Izlazna impedancija ===
+Unutarnji, odn. izlazni dinamički otpor elektronske cijevi na nižim i srednjim frekvencijama određen je karakteristikama razmatrane elektronske cijevi, gdje će trioda u tom smislu imati relativno mali unutarnji otpor, tetroda osjetno veći, a pentoda najveći. Razmjerno veličini unutarnjeg otpora rast će i mogućnost naponskog pojačanja elektronske cijevi te će pentoda imati najmanje za red veličine veće naponsko pojačanje. Pri višim frekvencijama valja računati na utjecaj svih međuelektrodnih kapaciteta što će se očitovati kao pad pojačanja pri višim frekvencijama, a zbog djelovanja međuelektrodnih kapaciteta koji se u izlaznom krugu pojavljuju kao kapacitivno opterećenje ovisno o frekvenciji.
+
+
+== Unipolarni tranzistor ==
+Unipolarni tranzistor označava se kraticom FET (engl. Field Effect Transistor: tranzistor upravljan poljem). FET ima tri osnovne elektrode: uvod (S), upravljačku elektrodu (G) i odvod (D). Naponom priključenim između uvoda i upravljačke elektrode modulira se poluvodički otpor (nazvan kanal) između uvoda i odvoda, čime se upravlja strujom odvoda. Ovisno o tipu poluvodiča u kanalu razlikuju se n-kanalni i p-kanalni FET-ovi. Rad FET-ova određuje tok samo jednoga tipa nosilaca – elektrona kod n-kanalnih i FET-ova šupljina kod p-kanalnih. Upravljačka elektroda električki je izolirana od kanala te se FET-ovi odlikuju velikim ulaznim otporom. Ovisno o konstrukciji rabi se više tipova FET-ova. Kod JFET-a (engl. Junction FET: spojni FET) kanal i upravljačka elektroda čine zaporno polarizirani pn-spoj, a kod MESFET-a (engl. Metal-Semiconductor FET: metalni poluvodički FET) zaporno polarizirani pn-spoj zamijenjen je zaporno polariziranim spojem metal-poluvodič. Kod MOSFET-a (engl. Metal-Oxide-Semiconductor FET: metalnooksidni poluvodički FET) metalna ili polisilicijska upravljačka elektroda izolirana je od kanala tankim slojem silicijeva dioksida (SiO2). MOSFET ima četvrtu elektrodu, podlogu (B), koja se najčešće spaja s uvodom. Posebna vrsta FET-ova je HEMT (engl. High Electron Mobility Transistor: tranzistor s visokom pokretljivosti elektrona). Poput bipolarnoga tranzistora, FET-ovi se rabe kao pojačavajući elementi ili kao naponom upravljane sklopke.
+Bipolarni tranzistori strujno su upravljani elementi, a FET-ovi naponski upravljivi. Bipolarni tranzistori imaju veću strminu, pa su pojačanja pojačala realiziranih s bipolarnim tranzistorima veća od pojačanja pojačala s FET-ovima. Uz to su bipolarni tranzistori brži i uz iste dimenzije daju jaču struju od FET-ova. Bipolarni se tranzistori mogu upravljati svjetlosnim snopom, što se primjenjuje u izvedbi fototranzistora (fotomultiplikator), elemenata za pretvorbu svjetlosnoga signala u optički. Glavna je prednost FET-ova velik ulazni otpor. Temperaturni je koeficijent izlazne struje FET-ova negativan, a bipolarnih tranzistora pozitivan, pa su FET-ovi pogodniji tranzistori za konstrukciju pojačala snage.
+Osnovni poluvodički materijal za realizaciju bipolarnih tranzistora, JFET-ova i MOSFET-ova, i dalje je silicij. U nekim se izvedbama bipolarnih tranzistora i MOSFET-ova silicij kombinira s germanijem (silicijsko-germanijski tranzistori, SiGe), ponajprije radi povećanja brzine rada. Većom brzinom rada odlikuju se tranzistori koji se kao poluvodičkim materijalom koriste galijevim arsenidom (GaAs). Od galijeva arsenida izrađuju se MESFET-ovi, a od kombinacije galijeva arsenida i aluminij-galijeva arsenida (AlGaAs) proizvode se heterospojni bipolarni tranzistori (HBT-ovi – od engl. Heterojunction Bipolar Transistor) i HEMT-ovi. Naziv HBT upotrebljava se i za silicijsko-germanijske bipolarne tranzistore.
+Zahvaljujući dobrim svojstvima poput velike brzine rada, male potrošnje, velike pouzdanosti i male cijene, tranzistori su osnovni elementi elektroničkih sklopova različitih funkcija poput pojačala, stabilizatora, modulatora, generatora signala, digitalnih logičkih sklopova, poluvodičkih memorija i slično. Kao diskretne komponente u zasebnim kućištima, tranzistori se proizvode za različite namjene. Uz tranzistore opće namjene, s ujednačenim karakteristikama, izrađuju se tranzistori s optimiranim karakteristikama za pojedine primjene, na primjer visokofrekvencijski tranzistori, tranzistorske sklopke, visokonaponski tranzistori i tranzistori snage.
+U većoj mjeri tranzistori se rabe kao dio integriranih sklopova u kojima se u istoj, najčešće silicijskoj, pločici integrira velik broj tranzistora i ostalih elemenata (dioda, otpornika, kondenzatora). Analogni integrirani sklopovi poput operacijskih pojačala i stabilizatora temelje se pretežno na primjeni bipolarnih tranzistora. Ulazni tranzistori integriranih operacijskih pojačala često su JFET-ovi, koji osiguravaju veliki ulazni otpor pojačala. Većina digitalnih integriranih sklopova izvodi se u komplementarnoj MOS-tehnici (CMOS), u kojoj se upotrebljavaju komplementarni parovi n-kanalnih i p-kanalnih MOSFET-ova. Zahvaljujući jednostavnosti i malim dimenzijama MOSFET-ova te maloj potrošnji, u komplementarnoj MOS-tehnici realiziraju se integrirani sklopovi velike složenosti poput mikroprocesora i memorijskih sklopova s više od 109 tranzistora. Često se u komplementarnoj MOS-tehnici u istom integriranom sklopu uz digitalne funkcije izvode i analogne. Optimalna svojstva složenih integriranih sklopova postižu se kombinacijom MOSFET-a i bipolarnih tranzistora u BiCMOS-tehnici (naziv BiCMOS upućuje na istodobno korištenje bipolarnih komplementarnih MOS-tranzistora na istoj silicijskoj pločici). Najbrži su integrirani sklopovi od galijeva arsenida temeljeni na primjeni MESFET-ova i HEMT-ova. Takvi se sklopovi najčešće rabe u visokofrekvencijskim komunikacijskim uređajima, na primjer u mobilnoj telefoniji.
+
+
+== Fototranzistor ==
+Znatno veću osjetljivost na svjetlost u usporedbi s fotodiodama imaju fototranzistori. Međutim, brzina rada im je znatno manja od brzine rada fotodiode. Vrijeme uključenja, a posebno isključenja, znatno je duže, reda veličine nekoliko mikrosekundi, dok kod fotodiode može biti manje od nanosekunde. Djelovanje fototranzistora slično je djelovanju običnih bipolarnih tranzistora s tim da se struja baze stvara osvjetljenjem PN spoja baza-kolektor. Fototranzistor se može predočiti s pomoću spoja bipolarnog tranzistora i fotodiode spojene između kolektora i baze. Kad je tranzistor neosvjetljen njime teče samo vrlo mala tamna struja koju čini preostala struja kolektora reda veličine od nekoliko nanoampera do nekoliko desetaka nanoampera.
+
+
+== Izvori ==
+
+Jelaković T. “Tranzistorska audiopojačala”, Školska knjiga, Zagreb, 1973.
+Stuart J.R. “An approach to audio amplifier design”, Wireless World, August 1973
+David Bodanis (2005). Electric Universe. Crown Publishers, New York. ISBN 0-7394-5670-9.
+J. Chelikowski, "Introduction: Silicon in all its Forms", Silicon: evolution and future of a technology (Editors: P. Siffert, E. F. Krimmel), p. 1, Springer, 2004 ISBN 3540405461.
+Streetman, Ben (1992). Solid State Electronic Devices. Englewood Cliffs, NJ: Prentice-Hall. pp. 301–305. ISBN 0-13-822023-9.
+Amos S W & James M R (1999). Principles of Transistor Circuits. Butterworth-Heinemann. ISBN 0-7506-4427-3.
+Horowitz, Paul & Hill, Winfield (1989). The Art of Electronics. Cambridge University Press. ISBN 0-521-37095-7.
+Riordan, Michael & Hoddeson, Lillian (1998). Crystal Fire. W.W Norton & Company Limited. ISBN 0-393-31851-6. The invention of the transistor & the birth of the information age
+Warnes, Lionel (1998). Analogue and Digital Electronics. Macmillan Press Ltd. ISBN 0-333-65820-5.
+
+
+== Poveznice ==

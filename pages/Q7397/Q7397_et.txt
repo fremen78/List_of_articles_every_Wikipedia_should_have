@@ -1,0 +1,74 @@
+Tarkvara ehk arvuti tarkvara on masinloetav juhend, mis suunab arvuti protsessorit spetsiifilisi toiminguid sooritama. Tarkvara hõlmab kõiki mittefüüsilisi arvuti tööks vajalikke või rakenduslikke komponente, eelkõige arvutiprogramme ning nende andmeid – andmefaile, seadeid, dokumentatsiooni, jne.
+Tarkvara mõistet kasutatakse vastandina arvuti riistvara mõistele, need on arvuti füüsilised seadmed ja ühendused (näiteks protsessor), millel on tarkvara talletatud ja mis teostavad antud juhised. Arvuti riist- ja tarkvara vajavad üksteist ja kumbagi ei saa reaalselt kasutada ilma teiseta.
+"Tarkvara" on üldine termin. See võib viidata kõikidele arvuti juhistele üldiselt või mistahes konkreetsele juhisele. See hõlmab nii masinjuhiseid (kahendkood, mida protsessor "Mõistab") kui ka lähtekoodist (inimesele arusaadavamad juhendid, mis tuleb enne käivitamist tõlkida masinkoodi).
+Arvuti tarkvara on komplekt programme, protseduure, funktsioone, seotud andmeid ja nende dokumentatsioone, kui võimalik. Programmi tarkvara täidab rakendatava programmi ülesande, kas andes juhised otse digitaalsele elektroonikale või töötavad sisendina mõne teise tarkvara jaoks.
+
+Erinevalt riistvarast on käivitatav tarkvara salvestatud andmetena arvuti süsteemis ning seega ei saa seda füüsiliselt puudutada. Madalaimal tasandil käivitatav kood koosneb masinkeelsetest juhistest, mis on spetsiifilised ühele individuaalsele protsessorile. Masinkeel koosneb kahendväärtuste rühmadest, mis tähistavad protsessori juhiseid, mis muudavad arvuti olekut. Näiteks võib mõni juhis muuta konkreetsesse kohta salvestatud väärtuse (mida kasutaja silmaga ei näe) või (kaudselt) panna arvuti ekraanile ilmuma mõne objekti (mida näeb kasutaja ka ise). Protsessor täidab juhiseid nende esitatud järjekorras, välja arvatud olukorras, kui tal on kästud "hüpata" mõnele teisele käsule või kui toiming on katkestatud.
+Tarkvara on tavaliselt kirjutatud kõrgetasemelises programmeerimiskeeles, mida on inimestel lihtsam ja tõhusam kasutada (sarnaneb rohkem loomuliku keelega) kui masinkeelt. Kõrgetasemelised keeled on koostatud või tõlgitakse masinkeele objektikoodi. Tarkvara võib olla kirjutatud ka assemblerkeeles, sisuliselt meeldejäävam variant masinkeelest, kasutades loomuliku keele tähestikku. Assemblerkeel tuleb koostada objektikoodi koostaja (assembler) abil.
+
+
+== Tarkvara liigid ==
+Tarkvara hõlmab suurt hulka tooteid, mis võivad olla toodetud erinevaid tehnikaid nagu tavalisi programmeerimiskeeli, mikrokoodi või FPGA konfiguratsiooni kasutades.
+Peaaegu kõikidel arvuti platvormidel saab tarkvara jagada paari suuremasse kategooriasse:
+
+Süsteemitarkvara on tarkvara, mis on kavandatud arvuti riistvara juhendamiseks, et tagada põhifunktsioonid ja tagada platvorm jooksvatele rakendustarkvaradele. Süsteemi tarkvara hõlmab seadme süsteemidraivereid, operatsioonisüsteeme (Mac OS X, Microsoft Windows, Linux jne), serveritarkvara, aknahaldustarkvara ja utiliite (nt diagnostikaprogrammid).
+Süsteemi tarkvara sisaldab ka alglaadimise püsivara, mis laadib lahti (või mõnel juhul ka moodustab) operatsioonisüsteemi. Püsivara on tarkvara, mis on püsivalt salvestatud riistvarasse (täpsemalt püsimällu). Seega on sellel nii tarkvara kui ka riistvara omadusi, kuid on siiski tarkvara.
+Rakendustarkvara ja skriptid olid ajalooliselt määratletud kui kogu tarkvara, mis kasutab arvutisüsteemi, et teha kasulikumat tööd (või lahutada meelt), kui arvuti algoperatsioonid või arvuti ise. Praktikas on aga süsteemi- ja rakendustarkvara erinevused sageli ähmased kasulikkude operatsioonisüsteemi rakenduste tõttu. Rakendustarkvara võimaldab kasutajal teatava kindla ülesande täitmist. Rakendustarkvara alla kuuluvad näiteks kontoritarkvara (Microsoft Office, LibreOffice), arhiveerimistarkvara, majandustarkvara, andmebaasid, arvutimängud. Rakendustarkvaras on tavaliselt kasutusel graafiline kasutajaliides (GUI).
+Rakendustarkvara sisaldab töölauarakendusi nagu brauserid ja Microsoft Office, samuti nutitelefoni ja tableti rakendusi (nn "äpp").
+JavaScripti skriptid on tarkvara osad, mis on traditsiooniliselt veebilehtede osad, mis käivitatakse otse brauseri sees, kui veebileht lahti laaditakse, ilma et oleks vaja veebibrauseri pistikprogrammi (inglise plug-in). Tarkvara, mis on kirjutatud teistes programmeerimiskeeltes, saab ka veebibrauseris käivitada, kui tarkvara on, kas tõlgitud JavaScripti või kui brauseri pistikprogramm, mis toetad vastavat keelt, on installitud. Kõige levinum näide viimasest on ActionScripti skriptid, mida toetab Adobe Flashi lisandprogramm.
+Veebirakendused töötavad tavaliselt veebiserveris ja väljundavad veebibrauseritele dünaamiliselt genereeritud veebilehti, kasutades tarkvara nagu PHP, Java või ASP.NET, või isegi JavaScripti, mis jookseb serveris.
+Pistikprogrammid ja laiendid on tarkvara, mis laiendab või muudab mõne teise tarkvara funktsionaalsust, nõudes vastava tarkvara kasutamist, et funktsioneerida.
+Sisseehitatud tarkvara on arvuti tarkvara, mis on kirjutatud, et juhtida masinaid või seadmeid, millest tavaliselt ei mõelda kui arvutitest. Üldiselt spetsialiseerunud eelkõige riistvarale, mida vastav tarkvara käitab ning millel on aja- ja mälupiirangud. Seda terminit kasutatakse mõnikord püsivarana, kuigi püsivara saab kasutada ka arvuti püsimälupõhises koodis, millelt operatsioonisüsteem jookseb, samas kui sisseehitatud tarkvara on tavaliselt ainuke tarkvara kõnealusel seadmel.
+Mikrokood on eriline, suhteliselt segast tüüpi sisseehitatud tarkvara, mis ütleb protsessorile, kuidas täita masinkoodi, nii et tegelikult on see madalam tasand kui masinkood. See on tavaliselt salastatud protsessori tootja poolt ning kõik vajalikud mikrokoodi tarkvara uuendused varustatakse kasutajatele nende poolt (mis on palju odavam kui asendava protsessori riistvara kohaletoimetamine). Seega tavaline programmeerija ei peaks kunagi eeldama, et peab sellega tegelema.
+
+
+=== Programmeerimisvahendid ===
+Programmeerimisvahendid on tarkvara programmide või rakenduste kujul, mida tarkvara arendajad (tuntud ka kui programmeerijad, koodijad, häkkerid või tarkvarainsenerid) kasutavad, et luua, siluda, säilitada (st parandada või täiustada) või muul viisil toetada tarkvara. Tarkvara kirjutatakse ühes või mitmes programmeerimiskeeles; on palju programmeerimiskeeli ja igaühel neist on vähemalt üks rakendus, millest igaüks koosneb oma programmeerimisvahendite komplektist. Need vahendid võivad olla suhteliselt iseseisvad programmid nagu koostajad, silujad, tõlgid ja teksti toimetajad, mida saab kasutada koos, et täita teatud ülesanne (täpselt nagu füüsilise objekti parandamisel mitme tööriista kasutamine). Nad võivad olla ka integreeritud arenduskeskkond (IDE), millel on mitmed või kõik selliseid kompaktsete tööriistade funktsioonid. Peaaegu kõik programmeerimiskeele rakendused (erandiks on Smalltalk) annavad võimaluse kasutada konkreetseid vahendeid IDE asemel, sest mõned programmeerijad eelistavad IDE mittekasutamist eri põhjustel. Lisaks läheb tavaliselt kauem aega, et arendada IDE "vastuvõetavale" tasemele.
+
+
+== Tarkvaralised teemad ==
+
+
+=== Arhitektuur ===
+Kasutajad näevad asju sageli teistmoodi kui programmeerijad. Inimesed, kes kasutavad nüüdisaegseid üldotstarbelisi arvuteid (erinevalt manussüsteemidest, analoogarvutitest ja superarvutitest) näevad tavaliselt kolme kihti tarkvara, mis täidavad erinevaid ülesandeid: platvormi, rakenduslik ja kasutaja tarkvara.
+
+Tarkvaraplatvorm – sisaldab püsivara, seadmedraiverid, operatsioonisüsteemi ja tavaliselt graafilist kasutajaliidest, mis kokkuvõttes võimaldab kasutajal suhelda arvuti ja selle välisseadmetega. Tarkvaraplatvorm on sageli arvutiga komplekteeritud. Eraarvutitel on kasutajal tavaliselt võimalus muuta tarkvaraplatvormi.
+Rakendustarkvara – rakendustarkvara või rakendused on need, mida enamik inimesi peavad tarkvaraks. Tüüpilised näited on kontoritöö programmid ja videomängud. Rakendustarkvara ostetakse sageli riistvarast eraldi. Mõnikord on rakendused arvutiga kaasas, kuid see ei muuda asjaolu, et nad töötavad iseseisvate rakendustena. Rakendused on tavaliselt sõltumatud programmid operatsioonisüsteemis, kuigi nad on sageli kohandatud teatud platvormidele.
+Kasutaja kirjutatud tarkvara, mida lõppkasutajad ise arendavad ja kujundavad vastavalt endi vajadustele. Kasutaja tarkvara hulka kuuluvad arvutustabeli- ja tekstitöötlusmallid. Isegi e-posti filtrid on omamoodi kasutaja tarkvara. Kasutajad loovad selle tarkvara ise ja tihti ei pane isegi tähele, kui oluline see on. Sõltuvalt sellest, kui asjatundlikult kasutaja kirjutatud tarkvara on integreeritud vaikerakenduse pakettidesse, ei pruugi paljud kasutajad teha vahet originaalpaketil ja töökaaslaste lisatud tarkvaral.
+
+
+=== Teostus ===
+Arvuti tarkvara peab laadima arvuti "salve" (näiteks kõvaketas või mälu). Pärast tarkvara laadimist on arvuti võimeline tarkvara käivitama. See sisaldab rakendustarkvara juhiste läbimist läbi süsteemi tarkvara riistvarale, mis lõpuks saab juhendid kui masinkoodis. Iga juhis põhjustab arvutis teatud operatsiooni teostamise – andmete teisaldamise, arvutuse tegemise või juhiste kontrollvoolu muutmise.
+Andmete teisaldamine tähendab tavaliselt andmete teisaldamist ühest mälu kohast teise. Vahel sisaldab see andmete teisaldamist mälu ja registrite vahel, mis võimaldavad protsessoris andmetele kiire juurdepääsu. Andmete teisaldamine, eriti suurtes kogustes, võib olla ohtlik. Seega aeg-ajalt välditakse seda, kasutades andmete viitu. Arvutused sisaldavad lihtsaid toiminguid, näiteks muutuva andme osale väärtuse juurde lisamine. Keerulisemad arvutused võivad sisaldada nii mitmeid operatsioone kui ka andmete elemente.
+
+
+=== Kvaliteet ja töökindlus ===
+ Pikemalt artiklis Tarkvara testimine
+Tarkvara kvaliteet on väga oluline, eriti äri- ja süsteemitarkvara (näiteks Microsoft Office, Microsoft Windows ja Linux) kvaliteet. Kui tarkvara on vigane, võib see kustutada isiku töö, arvuti kokku jooksutada ja teha muid ootamatuid asju. Paljud vead avastatakse ja kõrvaldatakse tarkvara testimise käigus. Kuid tarkvara testimine eemaldab harva – kui üldse – kõik vead. Mõned programmeerijad isegi ütlevad, et "igal programmil on vähemalt üks viga" (Lubarsky seadus). Kõikidel suurtel tarkvarafirmadel, näiteks Microsoftil, Novellil ja Sun Microsystemsil, on oma tarkvara testimise osakonnad, mille konkreetne eesmärk ongi vaid tarkvara testimine. Tarkvara saab kontrollida ühiktestimise, regressioonitestimise ja muude meetodite rakendamisel, mida tehakse käsitsi. Tavaliselt tehakse seda aga automaatselt, sest tihti on testitava koodi suurus üsna suur. Näiteks NASA-l on äärmiselt ranged tarkvara testimise protseduurid paljude operatsioonisüsteemide ja sidefunktsioonide jaoks. Paljud NASA-l põhinevad operatsioonid suhtlevad ja tuvastavad üksteist läbi käskprogrammide, mida kutsutakse käsktarkvaraks. See võimaldab paljudel NASA-s töötavatel inimestel kontrollida ja hinnata üldisi funktsionaalseid süsteeme. Programmid sisaldavad käsk tarkvara võimaldab riistvara insenerja süsteemi tegevuse toimida palju lihtsam koos. Programmide abil, mis sisaldavad käsktarkvara, saavad riistvara ja tarkvara palju sujuvamalt koos töötada.
+
+
+=== Litsents ===
+Tarkvaralitsents annab kasutajale õiguse kasutada tarkvara litsentsitud keskkonnas. Mõnel tarkvaral on litsents, kui see ostetakse n-ö riiulilt, riistvaraga kaasas aga OEM litsents. Ülejäänud tarkvaraga kaasneb tasuta tarkvara litsents, andes saajale õigused muuta ja levitada antud tarkvara. Tarkvara võib olla ka vabavara või jaosvara kujul.
+
+
+=== Patendid ===
+Tarkvara saab patenteerida mõningates, kuid mitte kõikides riikides. Tarkvarapatendid võivad tarkvara tööstuses olla vastuolulised – paljudel inimestel on selles osas erinevad vaated. Lahkarvamused tarkvarapatentide kohta on seotud konkreetsete algoritmide ja tehnikate kasutamisega, mida tarkvara sisaldab ning mida ei tohi teised dubleerida. Selle dubleerimist peetakse intellektuaalomandi ja autoriõiguse rikkumiseks, sõltuvalt rikkumise raskusastmest.
+
+
+== Väljatöötamine ja rakendamine ==
+Tarkvara väljatöötamine ja rakendamine sõltub suuresti tarkvara keerukusest. Näiteks Microsoft Wordi tarkvara väljatöötamine ja loomine võtab programmide funktsionaalsete erinevuste tõttu palju rohkem aega kui Microsoft Notepadi arendamine ja väljatöötamine.
+Tarkvara on tavaliselt välja töötatud ja loodud (kodeeritud/kirjutatud/programmeeritud) integreeritud arenduskeskkondades (IDE) nagu Eclipse, Emacs ja Microsoft Visual Studio, mis suudavad protsessi lihtsustada ja koostada programmi. Nagu erinevates sektsioonides märgitud, loodakse tarkvara tavaliselt olemasoleva tarkvara ja rakenduse programmeerimisliidese (API), mille antud alumine tarkvara annab nagu GTK +, JavaBeans või Swing, peale. Rakenduse programmeerimisliidese raamatukogud on liigitatud erinevatel põhjustel. Näiteks JavaBeansi teeki (inglise library) kasutatakse ettevõtete rakenduste väljatöötamiseks, Windows Formsi teeki aga graafilise kasutajaliidese (GUI) rakenduste väljatöötamisel (näiteks Microsoft Word) ning Windows Communication Foundationi teeki veebiteenuste väljatöötamisel. Programmeerimise alusmõisted quicksort, paisktabel (inglise hash table), rida (inglise array) ja kahendpuu võivad olla tarkvara loomisel kasulikud. Programmi disainimisel tugineb see rakenduse programmiliidesele.
+
+
+== Vaata ka ==
+Riistvara
+Programmeerimine
+Eesti Äritarkvara Liit
+Tarkvara paigaldamine
+Tarkvarasüsteemi ohutus
+Tarkvara kvaliteedijuhtimine
+Tarkvarahooldus
+Tarkvara turvaauk
+
+
+== Viited ==

@@ -1,0 +1,3728 @@
+Un numero complesso è definito come un numero della forma 
+  
+    
+      
+        x
+        +
+        i
+        y
+      
+    
+    {\displaystyle x+iy}
+  
+, con 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ e 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ numeri reali e 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ una soluzione dell'equazione 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle x^{2}=-1}
+  
+ detta unità immaginaria. I numeri complessi sono usati in tutti i campi della matematica, in molti campi della fisica (notoriamente in meccanica quantistica), nonché in ingegneria (specialmente in elettronica, telecomunicazioni ed elettrotecnica) per la loro utilità nel rappresentare onde elettromagnetiche e correnti elettriche ad andamento temporale sinusoidale.
+In matematica i numeri complessi formano un campo (nonché un'algebra reale bidimensionale) e sono generalmente visualizzati come punti di un piano, detto piano complesso. La proprietà più importante dei numeri complessi è basata sul teorema fondamentale dell'algebra, secondo il quale qualunque equazione polinomiale di grado 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ ha 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ soluzioni complesse, non necessariamente distinte.
+
+
+== Introduzione informale ==
+
+
+=== L'unità immaginaria ===
+Nel corso dei secoli gli insiemi dei numeri sono andati man mano allargandosi, presumibilmente per rispondere all'esigenza di dare soluzione a equazioni e problemi sempre nuovi.
+I numeri complessi sono un'estensione dei numeri reali, nata inizialmente per consentire di trovare tutte le soluzioni delle equazioni polinomiali. Ad esempio, l'equazione 
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle x^{2}=-1}
+  
+
+non ha soluzioni nell'insieme dei numeri reali, perché in questo insieme non esistono numeri il cui quadrato sia negativo.
+Si definisce allora il valore 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+, chiamato unità immaginaria, che gode della seguente proprietà:
+
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1.
+      
+    
+    {\displaystyle i^{2}=-1.}
+  
+
+I numeri complessi sono formati da due parti, una parte reale e una parte immaginaria, e sono rappresentati dalla seguente espressione:
+
+  
+    
+      
+        a
+        +
+        i
+        b
+        ,
+      
+    
+    {\displaystyle a+ib,}
+  
+
+dove 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ e 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ sono numeri reali, 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ è l'unità immaginaria.
+Le leggi della somma algebrica e del prodotto nei numeri complessi si applicano facendo i conti nel modo usuale e sapendo che 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+.
+Come i numeri reali sono in corrispondenza biunivoca con i punti di una retta, quelli complessi sono in corrispondenza con i punti del piano, detto piano complesso (o di Argand-Gauss): al numero complesso 
+  
+    
+      
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle a+ib}
+  
+ si associa il punto di coordinate cartesiane 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+.
+
+
+=== Equazioni a coefficienti reali con soluzioni non reali ===
+Usando la relazione 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+ si possono risolvere tutte le equazioni di secondo grado
+
+  
+    
+      
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        =
+        0
+        ,
+      
+    
+    {\displaystyle ax^{2}+bx+c=0,}
+  
+
+con 
+  
+    
+      
+        a
+        ,
+        b
+        ,
+        c
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a,b,c\in \mathbb {R} }
+  
+, incluse quelle che non hanno soluzioni reali perché dotate di discriminante negativo:
+
+  
+    
+      
+        Δ
+        =
+        
+          b
+          
+            2
+          
+        
+        −
+        4
+        a
+        c
+        <
+        0.
+      
+    
+    {\displaystyle \Delta =b^{2}-4ac<0.}
+  
+
+Le soluzioni sono determinate dalla formula risolutiva dell'equazione
+
+  
+    
+      
+        x
+        =
+        
+          
+            
+              −
+              b
+              ±
+              
+                
+                  
+                    b
+                    
+                      2
+                    
+                  
+                  −
+                  4
+                  a
+                  c
+                
+              
+            
+            
+              2
+              a
+            
+          
+        
+        =
+        
+          
+            
+              −
+              b
+              ±
+              
+                
+                  Δ
+                
+              
+            
+            
+              2
+              a
+            
+          
+        
+      
+    
+    {\displaystyle x={\frac {-b\pm {\sqrt {b^{2}-4ac}}}{2a}}={\frac {-b\pm {\sqrt {\Delta }}}{2a}}}
+  
+
+che nel caso in cui il discriminante sia negativo, si svolge nel modo seguente:
+
+  
+    
+      
+        
+          
+            −
+            Δ
+          
+        
+        =
+        
+          
+            (
+            −
+            1
+            )
+            (
+            Δ
+            )
+          
+        
+        =
+        
+          
+            −
+            1
+          
+        
+        
+          
+            Δ
+          
+        
+        =
+        i
+        
+          
+            Δ
+          
+        
+        .
+      
+    
+    {\displaystyle {\sqrt {-\Delta }}={\sqrt {(-1)(\Delta )}}={\sqrt {-1}}{\sqrt {\Delta }}=i{\sqrt {\Delta }}.}
+  
+
+Ad esempio:
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        4
+        x
+        +
+        8
+        =
+        0
+        ⇒
+        x
+        =
+        
+          
+            
+              −
+              4
+              ±
+              
+                
+                  16
+                  −
+                  32
+                
+              
+            
+            2
+          
+        
+        =
+        
+          
+            
+              −
+              4
+              ±
+              
+                
+                  −
+                  16
+                
+              
+            
+            2
+          
+        
+        =
+        
+          
+            
+              −
+              4
+              ±
+              i
+              
+                
+                  16
+                
+              
+            
+            2
+          
+        
+        =
+        −
+        2
+        ±
+        2
+        i
+        .
+      
+    
+    {\displaystyle x^{2}+4x+8=0\Rightarrow x={\frac {-4\pm {\sqrt {16-32}}}{2}}={\frac {-4\pm {\sqrt {-16}}}{2}}={\frac {-4\pm i{\sqrt {16}}}{2}}=-2\pm 2i.}
+  
+
+Più in generale è vero che se un numero complesso è soluzione di un'equazione a coefficienti reali, allora anche il suo complesso coniugato è soluzione della stessa equazione. Quindi nel caso di un'equazione di grado dispari, tra le soluzioni ci sarà sempre almeno un numero reale.
+
+
+=== Storia ===
+
+I numeri complessi hanno avuto una genesi dilatata nel tempo. Cominciarono a essere utilizzati formalmente nel XVI secolo nelle formule di risoluzione delle equazioni di terzo e quarto grado di Tartaglia. I primi che riuscirono ad attribuire soluzioni alle equazioni cubiche furono Scipione del Ferro, il Bombelli e anche Niccolò Tartaglia, quest'ultimo, dopo molte insistenze, passò i risultati a Girolamo Cardano con la promessa di non divulgarli. Cardano dopo aver verificato l'esattezza delle soluzioni di Tartaglia non rispettò la sua promessa e pubblicò i risultati, citandone l'autore però, nella sua nota Ars Magna del 1545. Tartaglia aveva molte amicizie tra gli inquisitori e in seguito Cardano ebbe problemi legati alla giustizia del tempo, molti dei quali provenienti da accuse di eresia. Attualmente la comparsa di radici di numeri negativi viene attribuita principalmente a Tartaglia mentre nelle meno numerose pagine dedicate a Cardano non vi è traccia del suo probabile importante contributo a tale rappresentazione numerica.
+Inizialmente i numeri complessi non vennero considerati come "numeri" ma solo come artifici algebrici utili a risolvere equazioni. Erano infatti numeri "che non dovrebbero esistere": Cartesio nel XVII secolo li chiamò "numeri immaginari". Abraham de Moivre ed Eulero nel XVIII secolo incominciarono a fornire ai numeri complessi una base teorica, finché questi assunsero piena cittadinanza nel mondo matematico con i lavori di Gauss. Contemporaneamente si affermò l'interpretazione dei numeri complessi come punti del piano.
+
+
+=== Terminologia ===
+In matematica molti oggetti e teoremi dipendono dalla scelta di un insieme numerico di base: spesso la scelta è fra numeri reali e complessi. L'aggettivo "complesso" è in questo caso usato per specificare questo insieme di base. Per esempio, si definiscono le matrici complesse, i polinomi complessi, gli spazi vettoriali complessi e l'algebra di Lie complessa. Esistono anche il teorema di Sylvester complesso e il teorema spettrale complesso.
+
+
+== Definizione moderna ==
+Formalmente un numero complesso si può definire come una coppia ordinata di numeri reali 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+. Si definiscono quindi somma e prodotto di due numeri complessi nel modo seguente:
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        +
+        (
+        c
+        ,
+        d
+        )
+        =
+        (
+        a
+        +
+        c
+        ,
+        b
+        +
+        d
+        )
+        ,
+      
+    
+    {\displaystyle (a,b)+(c,d)=(a+c,b+d),}
+  
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        (
+        c
+        ,
+        d
+        )
+        =
+        (
+        a
+        c
+        −
+        b
+        d
+        ,
+        b
+        c
+        +
+        a
+        d
+        )
+        .
+      
+    
+    {\displaystyle (a,b)(c,d)=(ac-bd,bc+ad).}
+  
+
+Con queste due operazioni, l'insieme dei numeri complessi risulta essere un campo, che viene indicato con 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+.
+Il numero complesso 
+  
+    
+      
+        (
+        a
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (a,0)}
+  
+ viene identificato con il numero reale 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+, mentre il numero 
+  
+    
+      
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    {\displaystyle (0,1)}
+  
+ è chiamato unità immaginaria ed è descritto con la lettera 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+. L'elemento 1 è l'elemento neutro per la moltiplicazione, mentre si verifica che:
+
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        (
+        0
+        ,
+        1
+        )
+        (
+        0
+        ,
+        1
+        )
+        =
+        (
+        −
+        1
+        ,
+        0
+        )
+        =
+        −
+        1.
+      
+    
+    {\displaystyle i^{2}=(0,1)(0,1)=(-1,0)=-1.}
+  
+
+Ogni numero complesso 
+  
+    
+      
+        z
+        =
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle z=(a,b)}
+  
+ si scrive facilmente come combinazione lineare nel modo seguente:
+
+  
+    
+      
+        z
+        =
+        (
+        a
+        ,
+        b
+        )
+        =
+        (
+        a
+        ,
+        0
+        )
+        +
+        (
+        0
+        ,
+        b
+        )
+        =
+        a
+        +
+        (
+        b
+        ,
+        0
+        )
+        (
+        0
+        ,
+        1
+        )
+        =
+        a
+        +
+        b
+        (
+        0
+        ,
+        1
+        )
+        =
+        a
+        +
+        b
+        i
+        .
+      
+    
+    {\displaystyle z=(a,b)=(a,0)+(0,b)=a+(b,0)(0,1)=a+b(0,1)=a+bi.}
+  
+
+I numeri 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ e 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ sono rispettivamente la parte reale e la parte immaginaria di 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+. Questa rappresentazione dei numeri complessi rende agevole lo svolgimento delle operazioni di somma e prodotto. Ad esempio:
+
+  
+    
+      
+        (
+        2
+        +
+        4
+        i
+        )
+        (
+        1
+        −
+        i
+        )
+        =
+        2
+        (
+        1
+        −
+        i
+        )
+        +
+        4
+        i
+        (
+        1
+        −
+        i
+        )
+        =
+        2
+        −
+        2
+        i
+        +
+        4
+        i
+        −
+        4
+        
+          i
+          
+            2
+          
+        
+        =
+        2
+        +
+        2
+        i
+        −
+        4
+        (
+        −
+        1
+        )
+        =
+        6
+        +
+        2
+        i
+        .
+      
+    
+    {\displaystyle (2+4i)(1-i)=2(1-i)+4i(1-i)=2-2i+4i-4i^{2}=2+2i-4(-1)=6+2i.}
+  
+
+
+=== Definizioni alternative ===
+Usando gli strumenti della teoria dei campi, il campo dei numeri complessi può essere definito come la chiusura algebrica del campo dei numeri reali.
+Usando gli strumenti della teoria degli anelli, può anche essere introdotto come l'anello quoziente dell'anello dei polinomi reali con una variabile tramite l'ideale generato dal polinomio  
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle x^{2}+1}
+  
+:
+
+  
+    
+      
+        
+          C
+        
+        =
+        
+          R
+        
+        [
+        x
+        ]
+        
+          /
+        
+        (
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        )
+        .
+      
+    
+    {\displaystyle \mathbb {C} =\mathbb {R} [x]/(x^{2}+1).}
+  
+
+Questo è effettivamente un campo perché 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle x^{2}+1}
+  
+ è irriducibile. La radice del polinomio 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle x^{2}+1}
+  
+ è l'unità immaginaria 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+, quindi l'anello quoziente è isomorfo a 
+  
+    
+      
+        
+          R
+        
+        [
+        i
+        ]
+        =
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {R} [i]=\mathbb {C} }
+  
+.
+
+
+== Geometria ==
+
+Un numero complesso può essere visto come un punto del piano cartesiano, chiamato in questo caso piano di Gauss. Una rappresentazione di questo tipo si chiama diagramma di Argand-Gauss. Nella figura si vede che
+
+  
+    
+      
+        z
+        =
+        x
+        +
+        i
+        y
+        =
+        r
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        ,
+      
+    
+    {\displaystyle z=x+iy=r(\cos \varphi +i\sin \varphi ),}
+  
+
+essendo 
+  
+    
+      
+        cos
+        ⁡
+        φ
+      
+    
+    {\displaystyle \cos \varphi }
+  
+ e 
+  
+    
+      
+        sin
+        ⁡
+        φ
+      
+    
+    {\displaystyle \sin \varphi }
+  
+ funzioni trigonometriche.
+Le formule inverse sono:
+
+  
+    
+      
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle r={\sqrt {x^{2}+y^{2}}},}
+  
+
+  
+    
+      
+        φ
+        =
+        arctan
+        ⁡
+        
+          
+            y
+            x
+          
+        
+        ,
+      
+    
+    {\displaystyle \varphi =\arctan {\frac {y}{x}},}
+  
+ per 
+  
+    
+      
+        x
+        >
+        0
+        ,
+      
+    
+    {\displaystyle x>0,}
+  
+
+  
+    
+      
+        φ
+        =
+        arctan
+        ⁡
+        
+          
+            y
+            x
+          
+        
+        +
+        π
+        ,
+      
+    
+    {\displaystyle \varphi =\arctan {\frac {y}{x}}+\pi ,}
+  
+ per 
+  
+    
+      
+        x
+        <
+        0.
+      
+    
+    {\displaystyle x<0.}
+  
+
+Usando la formula di Eulero, possiamo esprimere 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ come
+
+  
+    
+      
+        z
+        =
+        r
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        =
+        r
+        
+          e
+          
+            i
+            φ
+          
+        
+        ,
+      
+    
+    {\displaystyle z=r(\cos \varphi +i\sin \varphi )=re^{i\varphi },}
+  
+
+tramite la funzione esponenziale. Qui 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ è il modulo (o valore assoluto o norma) e 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ (detta anomalia) è l'argomento di 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+. L'argomento è determinato da 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ se è inteso nell'intervallo 
+  
+    
+      
+        [
+        0
+        ,
+        2
+        π
+        )
+      
+    
+    {\displaystyle [0,2\pi )}
+  
+, altrimenti è definito solo a meno di somme con 
+  
+    
+      
+        2
+        k
+        π
+      
+    
+    {\displaystyle 2k\pi }
+  
+ per qualche intero 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+.
+
+
+== Operazioni con i numeri complessi ==
+
+
+=== Modulo e distanza ===
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle |z|={\sqrt {x^{2}+y^{2}}}.}
+  
+
+Il valore assoluto (modulo) ha le seguenti proprietà:
+
+  
+    
+      
+        
+          |
+        
+        z
+        +
+        w
+        
+          |
+        
+        ≤
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        
+          |
+        
+        w
+        
+          |
+        
+        ,
+      
+    
+    {\displaystyle |z+w|\leq |z|+|w|,}
+  
+
+  
+    
+      
+        
+          |
+        
+        z
+        w
+        
+          |
+        
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        
+          |
+        
+        w
+        
+          |
+        
+        ,
+      
+    
+    {\displaystyle |zw|=|z||w|,}
+  
+
+  
+    
+      
+        
+          |
+          
+            
+              z
+              w
+            
+          
+          |
+        
+        =
+        
+          
+            
+              
+                |
+              
+              z
+              
+                |
+              
+            
+            
+              
+                |
+              
+              w
+              
+                |
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \left|{\frac {z}{w}}\right|={\frac {|z|}{|w|}},}
+  
+ se 
+  
+    
+      
+        w
+        ≠
+        0
+        ,
+      
+    
+    {\displaystyle w\neq 0,}
+  
+
+valide per tutti i numeri complessi 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ e 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+.
+La prima proprietà è una versione della disuguaglianza triangolare.
+La distanza fra due punti del piano complesso è data semplicemente da
+
+  
+    
+      
+        d
+        (
+        z
+        ,
+        w
+        )
+        =
+        
+          |
+        
+        z
+        −
+        w
+        
+          |
+        
+        .
+      
+    
+    {\displaystyle d(z,w)=|z-w|.}
+  
+
+
+=== Coniugato ===
+
+Il complesso coniugato del numero complesso 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ è definito come 
+
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        =
+        a
+        −
+        i
+        b
+        .
+      
+    
+    {\displaystyle {\bar {z}}=a-ib.}
+  
+
+A volte è anche indicato come 
+  
+    
+      
+        
+          z
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle z^{*}}
+  
+. Nel piano complesso 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ è ottenuto da 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ per simmetria rispetto all'asse reale. Valgono le seguenti proprietà:
+
+  
+    
+      
+        
+          
+            
+              z
+              +
+              w
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        +
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        ;
+      
+    
+    {\displaystyle {\overline {z+w}}={\bar {z}}+{\bar {w}};}
+  
+
+  
+    
+      
+        
+          
+            
+              z
+              w
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        ;
+      
+    
+    {\displaystyle {\overline {zw}}={\bar {z}}{\bar {w}};}
+  
+
+  
+    
+      
+        
+          
+            
+              (
+              z
+              
+                /
+              
+              w
+              )
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        
+          /
+        
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        ;
+      
+    
+    {\displaystyle {\overline {(z/w)}}={\bar {z}}/{\bar {w}};}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  z
+                  ¯
+                
+              
+              ¯
+            
+          
+        
+        =
+        z
+        ;
+      
+    
+    {\displaystyle {\bar {\bar {z}}}=z;}
+  
+
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        =
+        z
+        ⟺
+        z
+        ∈
+        
+          R
+        
+        ;
+      
+    
+    {\displaystyle {\bar {z}}=z\Longleftrightarrow z\in \mathbb {R} ;}
+  
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          |
+        
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        
+          |
+        
+        ;
+      
+    
+    {\displaystyle |z|=|{\bar {z}}|;}
+  
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        z
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        .
+      
+    
+    {\displaystyle |z|^{2}=z{\bar {z}}.}
+  
+
+
+=== Reciproco ===
+
+Conoscendo il valore assoluto e il coniugato di un numero complesso 
+  
+    
+      
+        z
+        ≠
+        0
+      
+    
+    {\displaystyle z\neq 0}
+  
+ è possibile calcolare il suo reciproco 
+  
+    
+      
+        
+          z
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle z^{-1}}
+  
+ attraverso la formula:
+
+  
+    
+      
+        
+          z
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            
+              
+                z
+                ¯
+              
+            
+            
+              
+                |
+              
+              z
+              
+                
+                  |
+                
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle z^{-1}={\frac {\bar {z}}{|z|^{2}}}.}
+  
+
+Ossia, se 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ otteniamo
+
+  
+    
+      
+        (
+        a
+        +
+        i
+        b
+        
+          )
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            
+              a
+              −
+              i
+              b
+            
+            
+              
+                a
+                
+                  2
+                
+              
+              +
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle (a+ib)^{-1}={\frac {a-ib}{a^{2}+b^{2}}}.}
+  
+
+
+=== Somma algebrica ===
+Valgono le relazioni
+
+  
+    
+      
+        (
+        a
+        +
+        i
+        b
+        )
+        +
+        (
+        c
+        +
+        i
+        d
+        )
+        =
+        (
+        a
+        +
+        c
+        )
+        +
+        i
+        (
+        b
+        +
+        d
+        )
+        ,
+      
+    
+    {\displaystyle (a+ib)+(c+id)=(a+c)+i(b+d),}
+  
+
+  
+    
+      
+        (
+        a
+        +
+        i
+        b
+        )
+        −
+        (
+        c
+        +
+        i
+        d
+        )
+        =
+        (
+        a
+        −
+        c
+        )
+        +
+        i
+        (
+        b
+        −
+        d
+        )
+        .
+      
+    
+    {\displaystyle (a+ib)-(c+id)=(a-c)+i(b-d).}
+  
+
+La somma di due numeri complessi equivale alla usuale somma fra vettori nel piano complesso.
+
+
+=== Prodotto ===
+Vale
+
+  
+    
+      
+        (
+        a
+        +
+        i
+        b
+        )
+        (
+        c
+        +
+        i
+        d
+        )
+        =
+        (
+        a
+        c
+        −
+        b
+        d
+        )
+        +
+        i
+        (
+        b
+        c
+        +
+        a
+        d
+        )
+        .
+      
+    
+    {\displaystyle (a+ib)(c+id)=(ac-bd)+i(bc+ad).}
+  
+
+In realtà il prodotto non è che il risultato di un normalissimo prodotto di binomi. Usando la rappresentazione 
+
+  
+    
+      
+        z
+        =
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+      
+    
+    {\displaystyle z=re^{i\theta }}
+  
+
+e le proprietà della funzione esponenziale, il prodotto di due numeri complessi 
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          e
+          
+            i
+            
+              θ
+              
+                1
+              
+            
+          
+        
+        ,
+        
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            i
+            
+              θ
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle z_{1}=r_{1}e^{i\theta _{1}},\quad z_{2}=r_{2}e^{i\theta _{2}}}
+  
+
+assume la forma più agevole
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ⋅
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          e
+          
+            i
+            
+              θ
+              
+                1
+              
+            
+          
+        
+        ⋅
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            i
+            
+              θ
+              
+                2
+              
+            
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            i
+            (
+            
+              θ
+              
+                1
+              
+            
+            +
+            
+              θ
+              
+                2
+              
+            
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle z_{1}\cdot z_{2}=r_{1}e^{i\theta _{1}}\cdot r_{2}e^{i\theta _{2}}=r_{1}r_{2}e^{i(\theta _{1}+\theta _{2})}.}
+  
+
+In altre parole, nel prodotto di due numeri complessi, si sommano gli argomenti e si moltiplicano i moduli.
+Questa affermazione consente di dimostrare la regola dei segni del prodotto:  
+  
+    
+      
+        −
+        ⋅
+        −
+        =
+        +
+      
+    
+    {\displaystyle -\cdot -=+}
+  
+. Difatti se si considera che l'argomento di un numero reale negativo è 180º, moltiplicando tra loro due di questi numeri si ottiene un numero con argomento 360° e quindi 0° che è l'argomento di un numero reale positivo.
+Una moltiplicazione per un numero complesso può essere vista come una simultanea rotazione e omotetia. Moltiplicare un vettore o equivalentemente un numero complesso per l'elemento 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ produce una rotazione di 90°, in senso antiorario, del numero complesso di partenza. Ovviamente la moltiplicazione per 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ e poi ancora per 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ produce una rotazione di 180º; ciò è logico visto che 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+.
+
+
+=== Rapporto ===
+Il rapporto fra due numeri complessi 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z_{1}=a+ib}
+  
+ e 
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        c
+        +
+        i
+        d
+      
+    
+    {\displaystyle z_{2}=c+id}
+  
+ è dato da:
+
+  
+    
+      
+        
+          
+            
+              z
+              
+                1
+              
+            
+            
+              z
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              a
+              +
+              i
+              b
+            
+            
+              c
+              +
+              i
+              d
+            
+          
+        
+        =
+        
+          
+            
+              (
+              a
+              +
+              i
+              b
+              )
+            
+            
+              (
+              c
+              +
+              i
+              d
+              )
+            
+          
+        
+        
+          
+            
+              (
+              c
+              −
+              i
+              d
+              )
+            
+            
+              (
+              c
+              −
+              i
+              d
+              )
+            
+          
+        
+        =
+        
+          
+            
+              a
+              c
+              +
+              b
+              d
+              +
+              i
+              (
+              c
+              b
+              −
+              a
+              d
+              )
+            
+            
+              
+                c
+                
+                  2
+                
+              
+              +
+              
+                d
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {z_{1} \over z_{2}}={a+ib \over c+id}={(a+ib) \over (c+id)}{(c-id) \over (c-id)}={\frac {ac+bd+i(cb-ad)}{c^{2}+d^{2}}}.}
+  
+
+Usando la rappresentazione 
+
+  
+    
+      
+        z
+        =
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        ,
+      
+    
+    {\displaystyle z=re^{i\theta },}
+  
+
+il rapporto di due numeri complessi è
+
+  
+    
+      
+        
+          
+            
+              
+                r
+                
+                  1
+                
+              
+              
+                e
+                
+                  i
+                  
+                    θ
+                    
+                      1
+                    
+                  
+                
+              
+            
+            
+              
+                r
+                
+                  2
+                
+              
+              
+                e
+                
+                  i
+                  
+                    θ
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              r
+              
+                1
+              
+            
+            
+              r
+              
+                2
+              
+            
+          
+        
+        
+          e
+          
+            i
+            (
+            
+              θ
+              
+                1
+              
+            
+            −
+            
+              θ
+              
+                2
+              
+            
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {r_{1}e^{i\theta _{1}}}{r_{2}e^{i\theta _{2}}}}={\frac {r_{1}}{r_{2}}}e^{i(\theta _{1}-\theta _{2})}.}
+  
+
+
+=== Potenze ===
+Rappresentando ogni numero complesso come
+
+  
+    
+      
+        z
+        =
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+      
+    
+    {\displaystyle z=re^{i\theta }}
+  
+
+è facile descrivere la potenza 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-esima
+
+  
+    
+      
+        
+          z
+          
+            n
+          
+        
+        =
+        
+          r
+          
+            n
+          
+        
+        
+          e
+          
+            n
+            i
+            θ
+          
+        
+        ,
+      
+    
+    {\displaystyle z^{n}=r^{n}e^{ni\theta },}
+  
+
+per ogni 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ intero. Con una notazione lievemente differente:
+
+  
+    
+      
+        z
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        (
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        )
+      
+    
+    {\displaystyle z=|z|(\cos \theta +i\sin \theta )}
+  
+
+Si ottiene la formula di De Moivre:
+
+  
+    
+      
+        
+          z
+          
+            n
+          
+        
+        =
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            n
+          
+        
+        (
+        cos
+        ⁡
+        (
+        n
+        θ
+        )
+        +
+        i
+        sin
+        ⁡
+        (
+        n
+        θ
+        )
+        )
+        .
+      
+    
+    {\displaystyle z^{n}=|z|^{n}(\cos(n\theta )+i\sin(n\theta )).}
+  
+
+Inoltre, ogni numero complesso ha esattamente 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ radici 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-esime: in particolare non esiste un modo univoco di definire la radice quadrata di un numero complesso.
+
+
+=== Esponenziale ===
+
+La funzione esponenziale complessa 
+  
+    
+      
+        
+          e
+          
+            z
+          
+        
+      
+    
+    {\displaystyle e^{z}}
+  
+ è definita facendo uso delle serie e degli strumenti del calcolo infinitesimale, nel modo seguente:
+
+  
+    
+      
+        
+          e
+          
+            z
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              z
+              
+                n
+              
+            
+            
+              n
+              !
+            
+          
+        
+        .
+      
+    
+    {\displaystyle e^{z}=\sum _{n=0}^{\infty }{\frac {z^{n}}{n!}}.}
+  
+
+In particolare, se 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ si ottiene
+
+  
+    
+      
+        
+          e
+          
+            a
+            +
+            i
+            b
+          
+        
+        =
+        
+          e
+          
+            a
+          
+        
+        
+          e
+          
+            i
+            b
+          
+        
+        =
+        
+          e
+          
+            a
+          
+        
+        (
+        cos
+        ⁡
+        b
+        +
+        i
+        sin
+        ⁡
+        b
+        )
+      
+    
+    {\displaystyle e^{a+ib}=e^{a}e^{ib}=e^{a}(\cos b+i\sin b)}
+  
+
+facendo uso della formula di Eulero.
+
+
+=== Logaritmo ===
+
+Il logaritmo naturale 
+  
+    
+      
+        ln
+        ⁡
+        z
+      
+    
+    {\displaystyle \ln z}
+  
+ di un numero complesso 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ è per definizione un numero complesso 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ tale che
+
+  
+    
+      
+        
+          e
+          
+            w
+          
+        
+        =
+        z
+        .
+      
+    
+    {\displaystyle e^{w}=z.}
+  
+
+Se 
+
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+        =
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        =
+        r
+        (
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        )
+        ,
+      
+    
+    {\displaystyle z=a+ib=re^{i\theta }=r(\cos \theta +i\sin \theta ),}
+  
+
+il logaritmo di 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ è un qualsiasi numero complesso 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ del tipo
+
+  
+    
+      
+        w
+        =
+        ln
+        ⁡
+        z
+        =
+        ln
+        ⁡
+        (
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        =
+        ln
+        ⁡
+        r
+        +
+        i
+        (
+        θ
+        +
+        2
+        k
+        π
+        )
+        ,
+      
+    
+    {\displaystyle w=\ln z=\ln(re^{i\theta })=\ln r+i(\theta +2k\pi ),}
+  
+
+dove 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ è un numero intero qualsiasi. Poiché il valore 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ è arbitrario, un numero complesso ha una infinità di logaritmi distinti, che differiscono per multipli interi di 
+  
+    
+      
+        2
+        π
+        i
+      
+    
+    {\displaystyle 2\pi i}
+  
+.
+Se 
+  
+    
+      
+        a
+        >
+        0
+      
+    
+    {\displaystyle a>0}
+  
+ si può scrivere
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        a
+        +
+        i
+        b
+        )
+        =
+        ln
+        ⁡
+        
+          
+            
+              
+                a
+                
+                  2
+                
+              
+              +
+              
+                b
+                
+                  2
+                
+              
+            
+            
+              2
+            
+          
+        
+        +
+        i
+        arctan
+        ⁡
+        
+          
+            b
+            a
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(a+ib)=\ln {\sqrt[{2}]{a^{2}+b^{2}}}+i\arctan {\frac {b}{a}}.}
+  
+
+In questo caso, se 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ è reale (cioè se 
+  
+    
+      
+        b
+        =
+        0
+      
+    
+    {\displaystyle b=0}
+  
+) fra gli infiniti valori ce n'è uno reale, che corrisponde all'usuale logaritmo di un numero reale positivo.
+
+
+=== Esempi ===
+Supponiamo di voler individuare i numeri complessi z tali che 
+
+  
+    
+      
+        4
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                z
+                ¯
+              
+            
+          
+          
+            4
+          
+        
+        .
+      
+    
+    {\displaystyle 4z^{2}={\bar {z}}^{4}.}
+  
+
+La prima possibilità è quella di porre 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ e di uguagliare la parte reale di 
+  
+    
+      
+        4
+        
+          z
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 4z^{2}}
+  
+ alla parte reale del coniugato di 
+  
+    
+      
+        
+          z
+          
+            4
+          
+        
+      
+    
+    {\displaystyle z^{4}}
+  
+ e analogamente per le rispettive parti immaginarie. Seguendo questa strada si ottengono due equazioni:
+
+  
+    
+      
+        a
+        b
+        (
+        
+          a
+          
+            2
+          
+        
+        −
+        
+          b
+          
+            2
+          
+        
+        +
+        2
+        )
+        =
+        0
+        ,
+      
+    
+    {\displaystyle ab(a^{2}-b^{2}+2)=0,}
+  
+
+  
+    
+      
+        
+          a
+          
+            4
+          
+        
+        +
+        
+          b
+          
+            4
+          
+        
+        −
+        6
+        (
+        a
+        b
+        
+          )
+          
+            2
+          
+        
+        =
+        4
+        (
+        
+          a
+          
+            2
+          
+        
+        −
+        
+          b
+          
+            2
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle a^{4}+b^{4}-6(ab)^{2}=4(a^{2}-b^{2}).}
+  
+
+da cui si ricavano 7 soluzioni:
+
+  
+    
+      
+        z
+        =
+        0
+        ,
+        −
+        2
+        ,
+        2
+        ,
+        i
+        
+          
+            3
+          
+        
+        +
+        1
+        ,
+        −
+        i
+        
+          
+            3
+          
+        
+        +
+        1
+        ,
+        i
+        
+          
+            3
+          
+        
+        −
+        1
+        ,
+        −
+        i
+        
+          
+            3
+          
+        
+        −
+        1.
+      
+    
+    {\displaystyle z=0,-2,2,i{\sqrt {3}}+1,-i{\sqrt {3}}+1,i{\sqrt {3}}-1,-i{\sqrt {3}}-1.}
+  
+
+In alternativa, si può usare la rappresentazione polare
+
+  
+    
+      
+        z
+        =
+        r
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+      
+    
+    {\displaystyle z=r(\cos \varphi +i\sin \varphi )}
+  
+
+e uguagliare le norme e gli argomenti di 
+  
+    
+      
+        4
+        
+          z
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 4z^{2}}
+  
+ e del coniugato di 
+  
+    
+      
+        
+          z
+          
+            4
+          
+        
+      
+    
+    {\displaystyle z^{4}}
+  
+, ottenendo anche qui due equazioni: 
+
+  
+    
+      
+        4
+        
+          r
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            4
+          
+        
+        ,
+      
+    
+    {\displaystyle 4r^{2}=r^{4},}
+  
+
+  
+    
+      
+        6
+        φ
+        =
+        2
+        k
+        π
+        ,
+      
+    
+    {\displaystyle 6\varphi =2k\pi ,}
+  
+
+con 
+  
+    
+      
+        k
+        =
+        0
+        ,
+        1
+        ,
+        …
+        ,
+        5
+      
+    
+    {\displaystyle k=0,1,\ldots ,5}
+  
+. Ovviamente si ottengono le stesse soluzioni, per esempio 
+
+  
+    
+      
+        z
+        =
+        i
+        
+          
+            3
+          
+        
+        +
+        1
+        =
+        2
+        
+          e
+          
+            i
+            
+              π
+            
+            
+              /
+            
+            3
+          
+        
+        .
+      
+    
+    {\displaystyle z=i{\sqrt {3}}+1=2e^{i{\pi }/3}.}
+  
+
+
+== Alcune proprietà ==
+
+
+=== Perdita dell'ordinamento ===
+Diversamente dai numeri reali, i numeri complessi non possono essere ordinati in modo compatibile con le operazioni aritmetiche. Non è cioè possibile definire un ordine tale che
+
+  
+    
+      
+        a
+        ≤
+        b
+        ,
+        ⇒
+        a
+        +
+        c
+        ≤
+        b
+        +
+        c
+        ,
+      
+    
+    {\displaystyle a\leq b,\Rightarrow a+c\leq b+c,}
+  
+
+  
+    
+      
+        a
+        ≥
+        0
+        ,
+        b
+        ≥
+        0
+        ⇒
+        a
+        b
+        ≥
+        0
+        ,
+      
+    
+    {\displaystyle a\geq 0,b\geq 0\Rightarrow ab\geq 0,}
+  
+
+come avviene con i numeri reali. Quindi non ha senso chiedere ad esempio se 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ è maggiore o minore di 
+  
+    
+      
+        0
+      
+    
+    {\displaystyle 0}
+  
+, né studiare disequazioni nel campo complesso. Infatti in ogni campo ordinato tutti i quadrati devono essere maggiori o uguali a zero: per costruzione dell'unità immaginaria, invece 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+.
+Ciò non deve essere confuso con il dire che l'insieme dei numeri complessi non può essere totalmente ben ordinato. Infatti i numeri complessi hanno, ad esempio, un ordinamento in termini di ordine lessicografico, e costituiscono quindi un insieme ordinabile (come ogni insieme in ZFC stante l'assioma della scelta), ma non formano un campo ordinato (per la ragione di cui sopra) né una struttura algebrica ordinabile rispetto alla metrica indotta da una norma.
+
+
+=== Piano cartesiano ===
+
+Quando si disegna una funzione nel piano cartesiano il cui codominio contiene numeri dell'insieme immaginario, tali numeri non possono essere rappresentati da una coppia di coordinate 
+  
+    
+      
+        (
+        x
+        ;
+        y
+        )
+      
+    
+    {\displaystyle (x;y)}
+  
+, poiché essendo 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ complesso non può avere ordinamento rispetto alla retta 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+.
+
+
+=== Spazio dei vettori reali ===
+L'insieme 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ è contemporaneamente uno spazio vettoriale complesso a una dimensione (come tutti i campi), e uno spazio vettoriale reale a due dimensioni. In quanto spazio vettoriale reale a dimensione finita è inoltre uno spazio normato completo, cioè uno spazio di Banach, e più in particolare uno spazio di Hilbert.
+
+
+=== Soluzioni delle equazioni polinomiali ===
+
+Una radice complessa di un polinomio 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ a coefficienti reali è un numero complesso 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ tale che 
+  
+    
+      
+        p
+        (
+        z
+        )
+        =
+        0
+      
+    
+    {\displaystyle p(z)=0}
+  
+. Il teorema fondamentale dell'algebra asserisce che ogni polinomio di grado 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ ha esattamente 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ soluzioni complesse, contate con molteplicità. Questo risultato indica che i numeri complessi sono (a differenza dei reali) un campo algebricamente chiuso.
+
+
+== Analisi complessa ==
+
+Lo studio delle funzioni con variabili complesse è detto analisi complessa e trova largo impiego nella matematica applicata e nella teoria dei numeri, oltre che in altre branche della matematica, della fisica e dell'ingegneria. Spesso, le dimostrazioni più semplici per gli enunciati dell'analisi reale o persino della teoria dei numeri impiegano tecniche di analisi complessa (vedi teorema dei numeri primi per un esempio). Diversamente dalle funzioni reali, che sono rappresentate comunemente come grafici bidimensionali, le funzioni complesse hanno grafici a quattro dimensioni e spesso vengono rappresentate come grafici colorati dove il colore sopperisce alla dimensione mancante (si veda, ad esempio, la voce Immagini conformi). Si possono anche usare delle animazioni per mostrare la trasformazione dinamica della funzione complessa del piano complesso.
+
+
+== Applicazioni ==
+
+
+=== In matematica ===
+I numeri complessi sono presenti in tutta la matematica, e sono protagonisti di interi settori, come l'analisi complessa o la geometria algebrica. Elenchiamo qui soltanto alcune applicazioni dei numeri complessi a settori della matematica in cui questi non hanno un ruolo dominante.
+
+Teoria dei numeri: La teoria dei numeri analitica usa l'analisi complessa per affrontare problemi sui numeri interi. Alcuni esempi sono il teorema dei numeri primi e la collegata ipotesi di Riemann.
+Integrali impropri: Alcuni integrali impropri possono essere risolti agevolmente con il teorema dei residui dell'analisi complessa.
+Equazioni differenziali: Le equazioni differenziali lineari a coefficienti costanti si risolvono trovando le radici complesse di un polinomio associato all'equazione.
+Frattali: Alcuni frattali sono definiti tramite i numeri complessi, per esempio l'insieme di Mandelbrot e l'insieme di Julia.
+
+
+=== In fisica ===
+Dinamica dei fluidi: Nella dinamica dei fluidi i numeri complessi vengono utilizzati per descrivere il flusso potenziale in 2 dimensioni.
+Meccanica quantistica: Il campo dei numeri complessi è una componente essenziale della meccanica quantistica dato che la teoria è sviluppata in uno spazio di Hilbert a dimensione infinita derivato da C. L'unità immaginaria compare anche nell'equazione di Schrödinger.
+Relatività: Nella relatività generale e relatività speciale alcune formule dello spazio metrico diventano più semplici se si suppone la variabile temporale come una variabile immaginaria.
+
+
+=== Ingegneria ===
+I numeri complessi sono utilizzati per la risoluzione delle equazioni differenziali associate al moto di tipo vibratorio dei sistemi meccanici. Sono molto usati anche nell'ingegneria elettrica, soprattutto per rappresentare lo sfasamento tra reattanza e resistenza.
+
+
+==== Analisi dei segnali ====
+I numeri complessi vengono utilizzati nell'analisi dei segnali e in tutti i campi dove si trattano segnali che variano sinusoidalmente nel tempo, o anche semplicemente periodici. Il valore assoluto di |z| è interpretato come l'ampiezza del segnale mentre l'argomento di z è interpretato come la fase. I numeri complessi rendono possibile anche l'analisi di Fourier, che rende possibile scomporre un generico segnale tempo-invariante in una somma di infinite sinusoidi: ogni sinusoide è scritta come un singolo numero complesso
+
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        z
+        
+          e
+          
+            i
+            ω
+            t
+          
+        
+        ,
+      
+    
+    {\displaystyle f(t)=ze^{i\omega t},}
+  
+
+dove 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ è la pulsazione della sinusoide e z la sua ampiezza.
+
+
+=== Elettrotecnica ed elettronica ===
+Nell'ingegneria elettrica ed elettronica vengono utilizzati per indicare la tensione e la corrente. L'analisi dei componenti resistivi, capacitivi e induttivi è stata unificata con l'introduzione dei numeri complessi, che riassumono tutte e tre queste componenti in una sola entità detta impedenza, semplificando notevolmente i calcoli. Possono esprimere delle relazioni che tengono conto delle frequenze e di come i componenti varino il loro comportamento al variare della frequenza. In questo tipo di calcoli si usa tradizionalmente la lettera j per indicare l'unità immaginaria, dato che la i è riservata alla corrente: i primi trattati di elettrotecnica, all'inizio del XX secolo, stabilivano j = -i, cioè l'unità immaginaria nelle formule usate per l'elettrotecnica era il negativo di quella usata dai matematici. L'uso è stato mantenuto nel tempo, e questo dettaglio, sia pure ignoto ai più, è parzialmente vero anche oggi. Anche se, la stragrande maggioranza delle volte, nella letteratura tecnica con j oramai si intende l'unità immaginaria stessa, per cui j=i.
+
+
+== Generalizzazioni ed estensioni ==
+
+Il processo di estensione del campo R dei numeri reali al campo C dei numeri complessi è noto come costruzione di Cayley-Dickson. Esso può essere portato oltre a dimensioni più elevate, ottenendo i quaternioni H, gli ottetti (o ottonioni) O e i sedenioni, i quali costituiscono, rispettivamente, delle algebre a 4, 8, 16 dimensioni sul campo dei numeri reali.
+In questo contesto, i numeri complessi sono stati chiamati binarioni.
+Le algebre prodotte da questo processo sono note come algebre di Cayley-Dickson e, poiché estendono i numeri complessi, vanno a costituire una famiglia dell'insieme dei cosiddetti numeri ipercomplessi, il quale, tuttavia, include anche la famiglia delle algebre di Clifford.
+
+
+== Note ==
+
+
+== Bibliografia ==
+(EN) Lars Ahlfors, Complex Analysis, 3rd, McGraw-Hill, 1979, ISBN 978-0-07-000657-7.
+(EN)  E. Freitag, R. Busam, Complex Analysis; Springer-Verlag (2005).
+(EN) P. Lounesto, Clifford Algebras and Spinors, Cambridge University Press, 1997, ISBN 0-521-59916-4.
+(EN) Paul J. Nahin, An imaginary tale : the story of [the square root of minus one], Princeton University Press, 1998, ISBN 0-691-02795-1, OCLC 38147840.
+(EN) Tristan Needham, Visual complex analysis, Clarendon Press, 1997, ISBN 0-19-853447-7, OCLC 36523806.
+
+
+== Voci correlate ==
+
+
+== Altri progetti ==
+
+ Wikizionario contiene il lemma di dizionario «numero complesso»
+ Wikiversità contiene risorse sul numero complesso
+ Wikimedia Commons contiene immagini o altri file sul numero complesso
+
+
+== Collegamenti esterni ==
+
+ numero complesso, in Enciclopedia della Matematica, Istituto dell'Enciclopedia Italiana, 2013. 
+(EN) complex number, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Opere riguardanti Complex Numbers, su Open Library, Internet Archive. 
+(EN) Eric W. Weisstein, Complex Number, su MathWorld, Wolfram Research. 
+(EN) Complex number, su Encyclopaedia of Mathematics, Springer e European Mathematical Society. 
+(EN) Denis Howe, complex number, in Free On-line Dictionary of Computing. Disponibile con licenza GFDL
+(AR, EN, ES, FR) Dimensions: a math film. Film introduttivo sui numeri complessi (capitoli 5 e 6).
+Numeri Complessi. Una lezione interattiva
+I numeri complessi. Note da lezioni alle superiori.  Con GeoGebra.

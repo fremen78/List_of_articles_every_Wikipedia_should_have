@@ -1,0 +1,2390 @@
+Teorija skupova je matematička teorija dobro definisanih kolekcija objekata koje zovemo skupovima. Ovi objekti se zovu elementi skupa. Čista teorija skupova je ona teorija u kojoj su elementi skupa opet skupovi. Srž teorije skupova je proučavanje beskonačnih skupova. U teoriji skupova skupovi su dati aksiomatski, tj njihovo postojanje i osnovna svojstva su data odgovarajućim formalnim aksiomama. Formalni jezik čiste teorije skupova dopuštaju da se formalizuju svi matematički pojmovi. Na taj način teorija skupova postaje standardna osnova matematike pošto svaki matematički objekt može da se vidi kao skup i svaka teorema matematike može logički biti izvedena predikatskim računom iz aksioma teorije skupova.
+Oba aspekta teorije skupova, kao matematičke nauke o beskonačnom i kao osnove matematike, imaju svoje filozofsko značenje. Da bi se mogao u potpunosti razumeti ovaj članak, potrebno je prvo ovladati Osnovama teorije skupova
+
+
+== Ishodišta ==
+Ocem teorije skupova, kao posebne matematičke discipline, se smatra Georg Kantor (Georg Cantor). Njegovo fundamentalno otkriće je bilo da je skup realnih brojeva neprebrojiv tj. i pored toga da su skupovi prirodnih i realnih brojeva beskonačni, više je realnih brojeva nego prirodnih što je dovelo do zaključka da postoje različite vrednosti beskonačnosti.
+Prema Kantoru dva skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ i 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ su iste veličine, tj. kardinalnosti, ako se elementi skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ mogu 1-u-1 preslikati u elemente skupa 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+. Na taj način skupovi 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ prirodnih i realnih 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ brojeva imaju različite kardinalnosti. Time je Kantor definisao njegovu hipotezu kontinuuma koja tvrdi da svaki beskonačni skup realnih brojeva je ili prebrojiv ili nije tj. ima kardinalnost skupa 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+, ili kardinalnost skupa 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+. Do danas, Kantorova hipoteza kontinuuma niti je oborena niti dokazana. Pokušaji da se ova hipoteza dokaže doveli su do saznanja da se sama hipoteza ne može niti dokazati niti oboriti na osnovi postojeće aksiomatike moderne teorije skupova.
+Naivno shvatanje da skup mora da ima uvek neko svojstvo ili karakteristiku dovelo je do otkrića tzv. Raselovog (Bertrand Russell) paradoksa (koji je pre Rasela bio poznat Cermelou (Ernst Zermelo)) koji glasi
+
+Neka je dato svojstvo skupova po kome skupovi nisu elementi samih sebe. Ako ovo svojstvo definiše skup, nazovimo ga skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+, tada je 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ element samoga sebe ako nije element samoga sebe.
+Na taj način neke kolekcije kao što su kolekcija svih skupova, kolekcija svih ordinalnih brojeva, kolekcija svih kardinalnih brojeva, nisu skupovi. Ovakve kolekcije se zovu prave klase.
+Da bi se izbegli paradoksi i dobila čvrsta osnova teorije, teorija skupova je aksiomatizovana. Prvu aksiomatizaciju teorije je dao Cermelo koji je izbegao Raselov paradoks aksiomom razdvajanja koja kvantificira svojstva skupa preko tvrdnje drugog reda. Skolem (Thoralf Skolem) i Frenkel (Abraham Fraenkel) su aksiomu razdvajanja formalizovali formulama prvog reda a zatim uveli aksiomu zamene koja je bila nužna da bi se podupro razvoj teorije transfinitnih ordinala i kardinala. Dalji rad u cilju poboljšanja Cermelove teorije je bio na dokazivanju osnovnih činjenica teorije skupova kao što je tvrdnja da se svaki skup sadrži u nekom tranzitivnom skupu, tj. skupu koji sadrži sve elemente sopstvenih elemenata. Fon Nojman (John von Neumann) je dodao aksiomu osnove čime je stvoren standardni aksiomatički sistem teorije skupova  koji se zove Cermelo-Frenkel aksiome sa aksiomom izbora.
+
+
+== Aksiome teorije skupova ==
+U ovoj sekciji izložićemo, u kratkim crtama,  Cermelo-Frenkel aksiome sa aksiomom izbora (CFI). Cela aksiomatika se može izložena u logici prvog reda sa samo jednom binarnom relacijom pripadnosti 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+. Ovde odstupamo od tog pravila kako bi tekst članka bio čitljiviji onom ko se prvi put susreće sa ovom teorijom.
+
+Aksioma proširenja: Dva skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ i 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ su jednaki ako imaju iste elemente.
+Aksioma praznog skupa: Skup koji nema elemente zove se prazan skup i označava sa 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \emptyset }
+  
+.
+Aksioma para: Ako su dati skupovi 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ i 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+, tada postoji skup 
+  
+    
+      
+        
+          A
+          ,
+          B
+        
+      
+    
+    {\displaystyle {A,B}}
+  
+ koji sadrži samo 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ i 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ kao svoje elemente. Postoji takođe skup 
+  
+    
+      
+        {
+        A
+        }
+      
+    
+    {\displaystyle \{A\}}
+  
+ čiji je jedan jedini element skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+Aksioma partitivnog skupa: Za svaki skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ postoji skup 
+  
+    
+      
+        
+          
+            P
+          
+        
+        (
+        A
+        )
+      
+    
+    {\displaystyle {\mathcal {P}}(A)}
+  
+ koji se zove partitivni skup skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ čiji su elementi svi podskupovi skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+Aksioma unije: Za svaki skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ postoji skup 
+  
+    
+      
+        ∪
+        A
+      
+    
+    {\displaystyle \cup A}
+  
+ koji se zove unija skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ a čiji su elementi elementi skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+Aksioma beskonačnosti: Postoji beskonačan skup, tj. postoji skup 
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+ koji sadrži 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \emptyset }
+  
+ i takav da ako je 
+  
+    
+      
+        A
+        ∈
+        Z
+      
+    
+    {\displaystyle A\in Z}
+  
+ tada je 
+  
+    
+      
+        ∪
+        {
+        A
+        ,
+        {
+        A
+        }
+        }
+        ∈
+        Z
+      
+    
+    {\displaystyle \cup \{A,\{A\}\}\in Z}
+  
+.
+Aksioma razdvajanja: Za svaki skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ i svako dato svojstvo skupa postoji skup koji sadrži elemente skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ koji imaju pomenuto svojstvo skupa. Svojstvo skupa je definisano formulom 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ u logici prvog reda. Na taj je način aksiom razdvajanja u suštini aksiom šema tj. beskonačna lista aksioma, gde je svaka aksioma data formulom 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+.
+Aksioma zamene: Za svaku funkciju koja se može definisati na skupu 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ kao svom domenu postoji skup čiji su elementi sve vrednosti ove funkcije. Zamena je takođe aksioma šema jer su funkcije definisane formulama.
+Aksioma osnove: Svaki neprazni skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ sadrži neki 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+-minimalni element tj.element koji ne sadrži ni jedan drugi element skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+Aksioma izbora: Za svaki skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ uzajamno disjunktnih nepraznih skupova postoji skup koji sadrži tačno jedan element iz svakog skupa koji pripada skupu 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+.
+Problemi i sumnje u valjanost ove aksiome potiču od činjenice da aksioma tvrdi da postoje skupovi koji ne mogu biti eksplicitno definisani. Ove sumnje su uklonjene Gedelovim (Kurt Gödel) dokazom da je aksioma izbora saglasna sa ostalim Cermelo-Frenkel aksiomama. Aksioma izbora je ekvivalentna principu dobre uređenosti koji tvrdi da svaki skup može da se dobro uredi tj. svaki skup može da se linearno uredi tako da svaki njegov neprazan podskup ima neki minimalni element.
+U teoriji skupova se pored simbola 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+ koriste pomoćni simboli podskupa 
+  
+    
+      
+        (
+        ⊆
+        )
+      
+    
+    {\displaystyle (\subseteq )}
+  
+, unije 
+  
+    
+      
+        (
+        ∪
+        )
+      
+    
+    {\displaystyle (\cup )}
+  
+, preseka 
+  
+    
+      
+        (
+        ∩
+        )
+      
+    
+    {\displaystyle (\cap )}
+  
+, uređenog para 
+  
+    
+      
+        (
+        (
+        A
+        ,
+        B
+        )
+        )
+      
+    
+    {\displaystyle ((A,B))}
+  
+ i Dekartovog proizvoda 
+  
+    
+      
+        (
+        A
+        ×
+        B
+        )
+      
+    
+    {\displaystyle (A\times B)}
+  
+ koji nisu nužni. Detaljnije o ovim pomoćnim simbolima vidi u Osnove teorije skupova,
+
+
+== Teorija transfinitnih ordinala i kardinala ==
+Cermelo-Frenkelove aksiome (CF) zajedno sa aksiomom izbora mogu se koristiti pri razvoju Kantorove teorije transfinitnih (tj. beskonačnih) tipova uređenja: ordinala i kardinala.
+Prvi ordinalni broj je 
+  
+    
+      
+        ∅
+      
+    
+    {\displaystyle \emptyset }
+  
+. Ako je dat ordinal 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, onda je njegov neposredni sledbenik 
+  
+    
+      
+        α
+        +
+        1
+      
+    
+    {\displaystyle \alpha +1}
+  
+ definisan kao skup 
+  
+    
+      
+        α
+        ∪
+        {
+        α
+        }
+      
+    
+    {\displaystyle \alpha \cup \{\alpha \}}
+  
+. Ako je dat neprazan skup 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ ordinala takav da je za svako 
+  
+    
+      
+        α
+        ∈
+        X
+      
+    
+    {\displaystyle \alpha \in X}
+  
+ njegov sledbenik 
+  
+    
+      
+        α
+        +
+        1
+      
+    
+    {\displaystyle \alpha +1}
+  
+ takođe u 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+, može se dobiti granični ordinal 
+  
+    
+      
+        ∪
+        X
+      
+    
+    {\displaystyle \cup X}
+  
+. Lako se pokazuje da je svaki ordinal strogo dobro uređen preko relacije 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+, tj. linearno je uređen preko 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+ i ne postoji beskonačno 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+-opadajući niz. Svaki dobro uređeni skup je izomorfan nekom jedinstvenom ordinalu koji se zove tip uređenja.
+Operacije sabiranja i množenja prirodnih brojeva se mogu proširiti na ordinale. Ordinal 
+  
+    
+      
+        α
+        +
+        β
+      
+    
+    {\displaystyle \alpha +\beta }
+  
+ je tip uređenja dobrog uređenja koje se dobija spajanjem dobro uređenog skupa tipa uređenja 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ i dobro uređenog skupa tipa uređenja 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+. Niz ordinala dobro uređenih po 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+, je
+
+  
+    
+      
+        0
+        ,
+        1
+        ,
+        2
+        ,
+        …
+        ,
+        n
+        ,
+        …
+        ,
+        ω
+        ,
+        ω
+        +
+        1
+        ,
+        ω
+        +
+        2
+        ,
+        …
+        ,
+        ω
+        +
+        ω
+        ,
+        …
+        ,
+        n
+        .
+        ω
+        ,
+        …
+        ,
+        ω
+        .
+        ω
+        ,
+        …
+        ,
+        
+          ω
+          
+            n
+          
+        
+        ,
+        …
+        ,
+        
+          ω
+          
+            ω
+          
+        
+        ,
+        …
+      
+    
+    {\displaystyle 0,1,2,\dots ,n,\dots ,\omega ,\omega +1,\omega +2,\dots ,\omega +\omega ,\dots ,n.\omega ,\dots ,\omega .\omega ,\dots ,\omega _{n},\dots ,\omega ^{\omega },\dots }
+  
+
+Ordinali zadovoljavaju princip transfinitne indukcije: pretpostavimo da je 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ klasa ordinala takva da kad god 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ sadrži sve ordinale 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+ koji su manji od nekog ordinala 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, tada je 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ takođe u 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+. Na taj način klasa 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ sadrži sve ordinale. Koristeći transfinitnu indukciju može se u CFI (za šta je potrebna i aksioma zamene) dokazati princip transfinitne rekurzije koji kaže da ako je data klasa-funkcija koja se može definisati 
+  
+    
+      
+        G
+        :
+        V
+        ←
+        V
+      
+    
+    {\displaystyle G:V\leftarrow V}
+  
+, onda se može definisati klasa-funkcija 
+  
+    
+      
+        F
+        :
+        O
+        N
+        ←
+        V
+      
+    
+    {\displaystyle F:ON\leftarrow V}
+  
+ takva da 
+  
+    
+      
+        F
+        (
+        α
+        )
+      
+    
+    {\displaystyle F(\alpha )}
+  
+je vrednost funkcije 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  
+ primenjene na funkciju 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ koja je ograničena na 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+. Transfinitna rekurzija se koristi, na primer, da se definišu aritmetičke operacije sabiranja, množenja i eksponenta na ordinalima.
+Bilo koji beskonačni skup je prebrojiv ako se može 1-u-1 preslikati u 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+, tj. koji je bijetivan sa 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+. Svi ordinali koje smo spomenuli gore su ili konačni ili prebrojivi. Skup svih konačnih i prebrojivih ordinala je takođe ordinal, označen sa 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega ^{1}}
+  
+, koji nije prebrojiv. Na isti način skup svih ordinala koji su bijektivni sa nekim ordinalom koji je manji od ordinala 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega ^{1}}
+  
+ je takođe ordinal, označen sa 
+  
+    
+      
+        
+          ω
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \omega ^{2}}
+  
+, i koji nije bijektivan sa 
+  
+    
+      
+        
+          ω
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \omega ^{1}}
+  
+, itd.
+Kardinal se definiše kao ordinal koji nije bijektivan sa nekim manjim ordinalom. Time je svaki konačni ordinal i kardinal. Beskonačni kardinali se zapisuju slovom alef (
+  
+    
+      
+        ℵ
+      
+    
+    {\displaystyle \aleph }
+  
+) i indeksiraju ordinalima.
+
+  
+    
+      
+        
+          ℵ
+          
+            0
+          
+        
+        ,
+        
+          ℵ
+          
+            1
+          
+        
+        ,
+        
+          ℵ
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          ℵ
+          
+            ω
+          
+        
+        ,
+        
+          ℵ
+          
+            ω
+            +
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          ℵ
+          
+            ω
+            +
+            ω
+          
+        
+        ,
+        …
+        ,
+        
+          ℵ
+          
+            ω
+            +
+            
+              ω
+              
+                2
+              
+            
+          
+        
+        ,
+        …
+        ,
+        
+          ℵ
+          
+            
+              ω
+              
+                ω
+              
+            
+          
+        
+        ,
+        …
+        ,
+        
+          ℵ
+          
+            
+              ω
+              
+                1
+              
+            
+          
+        
+        ,
+        …
+        ,
+        
+          ℵ
+          
+            
+              ω
+              
+                2
+              
+            
+          
+        
+        ,
+        …
+      
+    
+    {\displaystyle \aleph _{0},\aleph _{1},\aleph _{2},\dots ,\aleph _{\omega },\aleph _{\omega +1},\dots ,\aleph _{\omega +\omega },\dots ,\aleph _{\omega +\omega ^{2}},\dots ,\aleph _{\omega ^{\omega }},\dots ,\aleph _{\omega _{1}},\dots ,\aleph _{\omega _{2}},\dots }
+  
+
+Za svaki kardinal postoji veći kardinal i granica rastućeg niza kardinala je opet kardinal. Klasa svih kardinala nije skup nego prava klasa.
+Beskonačni kardinal 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ je regularan ako nije unija manje od 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ manjih kardinala. 
+  
+    
+      
+        
+          ℵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \aleph _{0}}
+  
+ je regularni kardinal kao i svi njegovi beskonačni sledbenici kardinali kao što je 
+  
+    
+      
+        
+          ℵ
+          
+            
+              ℵ
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle \aleph _{\aleph _{n}}}
+  
+. Ne-regularni beskonačni kardinal se zove singularni kardinal. Prvi singularni kardinal je 
+  
+    
+      
+        
+          ℵ
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle \aleph _{\omega }}
+  
+ i unija je prebrojivo mnogo manjih kardinala, tj. 
+  
+    
+      
+        
+          ℵ
+          
+            ω
+          
+        
+        =
+        
+          ∪
+          
+            n
+            <
+            ω
+          
+        
+        
+          ℵ
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \aleph _{\omega }=\cup _{n<\omega }\aleph _{n}}
+  
+.
+Kofinalnost kardinala 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+, u oznaci 
+  
+    
+      
+        c
+        f
+        (
+        κ
+        )
+      
+    
+    {\displaystyle cf(\kappa )}
+  
+, je najmanji kardinal 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ takav da je 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ unija 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+-mnogo manjih ordinala, tj. 
+  
+    
+      
+        c
+        f
+        (
+        
+          ℵ
+          
+            ω
+          
+        
+        )
+        =
+        
+          ℵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle cf(\aleph _{\omega })=\aleph _{0}}
+  
+.
+Po aksiomi izbora svaki skup 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ se može dobro urediti, tj. bijektvan je sa nekim jedinstvenim kardinalom koji se zove kardinalnost skupa 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+. Suma 
+  
+    
+      
+        κ
+        +
+        λ
+      
+    
+    {\displaystyle \kappa +\lambda }
+  
+ dvaju kardinala 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ i 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ se definiše kao kardinalnost skupa koji je unija bilo koja dva disjunktna skupa gde je kardinalnost jednoga 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ a drugoga 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+. Proizvod 
+  
+    
+      
+        κ
+        ×
+        λ
+      
+    
+    {\displaystyle \kappa \times \lambda }
+  
+ se definiše kao kardinalnost Dekartovog proizvoda 
+  
+    
+      
+        κ
+        ×
+        λ
+      
+    
+    {\displaystyle \kappa \times \lambda }
+  
+. Operacije sume i proizvoda dvaju beskonačnih kardinala 
+  
+    
+      
+        κ
+      
+    
+    {\displaystyle \kappa }
+  
+ i 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ se definišu kao 
+  
+    
+      
+        κ
+        +
+        λ
+        =
+        κ
+        .
+        λ
+        =
+        m
+        a
+        x
+        {
+        κ
+        ,
+        λ
+        }
+      
+    
+    {\displaystyle \kappa +\lambda =\kappa .\lambda =max\{\kappa ,\lambda \}}
+  
+.
+Eksponent kardinala je izuzetno kompleksan problem pa ćemo ga izostaviti.
+
+
+== Univerzum ==
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ svih skupova
+CF aksiome, sa izuzetkom aksiome proširljivosti, služe pri gradnji kumulativne hijerarhije skupova. Koristeći transfinitnu rekurziju definišemo klasu-funkciju koja koja dodeljuje svakom ordinalu 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ skup 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ na sledeći način:
+
+  
+    
+      
+        
+          V
+          
+            0
+          
+        
+        =
+        ∅
+      
+    
+    {\displaystyle V_{0}=\emptyset }
+  
+
+  
+    
+      
+        
+          V
+          
+            α
+            +
+            1
+          
+        
+        =
+        
+          
+            P
+          
+        
+        (
+        
+          V
+          
+            α
+          
+        
+        )
+      
+    
+    {\displaystyle V_{\alpha +1}={\mathcal {P}}(V_{\alpha })}
+  
+
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+        =
+        
+          ∪
+          
+            β
+            <
+            α
+          
+        
+        
+          V
+          
+            β
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }=\cup _{\beta <\alpha }V_{\beta }}
+  
+ kad god je 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ granični ordinal.
+Aksioma partitivnog skupa se koristi da se od 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ dobije 
+  
+    
+      
+        
+          V
+          
+            α
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle V_{\alpha +1}}
+  
+. Aksiome zamene i unije se koriste da se dobije 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ za 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ granični ordinal. Aksioma beskonačnosti se koristi da se dokaže postojanje 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ a time i transfinitni niz ordinala. Aksioma osnove, uz pretpostavku važenja ostalih aksioma, je ekvivalentna tvrdnji da svaki skup pripada nekom 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ za neki ordinal 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+. Na taj način CF dokazuje da teoretski univerzalni skup, označen sa 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+, je unija svih 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+, gde je 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ neki ordinal.
+Prava klasa 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+, zajedno sa relacijom 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+, zadovoljava sve CFI aksiome a je time i jedan model CFI. CFI nije kompletan opis što ćemo upravo pokazati.
+Dokazano i značajno svojstvo 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ koje se može dokazati pomoću CFI je takozvani princip refleksije. Za svaku formulu 
+  
+    
+      
+        ϕ
+        (
+        
+          x
+          
+            1
+          
+        
+        >
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \phi (x_{1}>,\dots ,x_{n})}
+  
+ CFI dokazuje da postoji neki ordinal 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ takav da ga 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ reflektuje, tj za svaki 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            n
+          
+        
+        ∈
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle a_{1},\dots ,a_{n}\in V_{\alpha }}
+  
+
+  
+    
+      
+        ϕ
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \phi (a_{1},\dots ,a_{n})}
+  
+ važi u 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ ako i samo ako 
+  
+    
+      
+        ϕ
+        (
+        
+          a
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \phi (a_{1},\dots ,a_{n}}
+  
+) važi u 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+
+Otud 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ se ne može opisati nekom rečenicom, pošto bilo koja rečenica koja važi u 
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+ mora da takođe važi u nekom inicijalnom segmentu od 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+. Otud dolazimo do zaključka da CFI nije finalno aksiomatizovana jer bi u protivnom CFI dokazala da, za neograničeno mnogo ordinala 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, 
+  
+    
+      
+        
+          V
+          
+            α
+          
+        
+      
+    
+    {\displaystyle V_{\alpha }}
+  
+ je neki model CFI, što protivreči drugoj Gedelovoj teoremi.
+Princip refleksije je suština CF teorije skupova pošto je ovaj princip ekvivalentan aksiomama beskonačnosti i zamene uz važenje ostalih CF aksioma.
+
+
+== Teorija skupova kao osnova matematike ==
+Cela matematika se može formalizovati unutar CFI što znači da je moguće samu matematiku proučavati matematički. Svakom pitanju o postojanju nekog matematičkog objekta ili mogućnosti dokazivanja neke pretpostavke ili hipoteze može se dati precizna matematička formulacija. Pitanje o mogućnosti dokaza neke matematičke tvrdnje postaje smisleno matematičko pitanje. Kad je već reč o nerešenom matematičkom problemu ili dilemi ima smisla da se upitamo da li je moguće rešiti ih unutar formalnog CFI sistema. Odgovor može ne biti ni da ni ne jer je CFI nekompletan sistem. Navedimo nekoliko primera gde je moguće formalizovati matematičke objekte unutar CFI. Skup prirodnih brojeva se može identfikovati sa konačnim ordinalima, tj. 
+  
+    
+      
+        >
+        
+          N
+        
+        =
+        ω
+      
+    
+    {\displaystyle >\mathbb {N} =\omega }
+  
+. Skup celih brojeva 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ može da se definiše kao skup klasa ekvivalencije parova prirodnih brojeva gde je relacija ekvivalencije 
+  
+    
+      
+        (
+        n
+        ,
+        m
+        )
+        ≡
+        (
+        n
+        ′
+        ,
+        m
+        ′
+        )
+      
+    
+    {\displaystyle (n,m)\equiv (n\prime ,m\prime )}
+  
+ ako i samo ako 
+  
+    
+      
+        n
+        +
+        m
+        ′
+        =
+        m
+        +
+        n
+        ′
+      
+    
+    {\displaystyle n+m\prime =m+n\prime }
+  
+. Ako se svaki prirodni broj 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ identifikuje sa klasom ekvivalencije para 
+  
+    
+      
+        (
+        n
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (n,0)}
+  
+ onda se operacije sume i proizvoda prirodnih brojeva mogu prirodno proširiti na skup celih brojeva 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+. Skup racionalnih brojeva 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+ se može da definiše kao skup klasa ekvivalencije parova 
+  
+    
+      
+        (
+        n
+        ,
+        m
+        )
+      
+    
+    {\displaystyle (n,m)}
+  
+ celih brojeva pri čemu je 
+  
+    
+      
+        m
+        ≠
+        0
+      
+    
+    {\displaystyle m\neq 0}
+  
+ i pri relaciji ekvivalencije 
+  
+    
+      
+        (
+        n
+        ,
+        m
+        )
+        ≡
+        (
+        n
+        ′
+        ,
+        m
+        ′
+        )
+      
+    
+    {\displaystyle (n,m)\equiv (n\prime ,m\prime )}
+  
+ ako i samo ako je 
+  
+    
+      
+        n
+        .
+        m
+        ′
+        =
+        m
+        .
+        n
+        ′
+      
+    
+    {\displaystyle n.m\prime =m.n\prime }
+  
+. Operacije sume i proizvoda na 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ mogu se prirodno proširiti na 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+. Poredak 
+  
+    
+      
+        
+          ≤
+          
+            
+              Q
+            
+          
+        
+      
+    
+    {\displaystyle \leq _{\mathbb {Q} }}
+  
+ na skupu racionalnih brojeva je definisan sa: 
+  
+    
+      
+        r
+        
+          ≤
+          
+            
+              Q
+            
+          
+        
+        s
+      
+    
+    {\displaystyle r\leq _{\mathbb {Q} }s}
+  
+ ako i samo ako postoji 
+  
+    
+      
+        t
+        ∈
+        
+          Q
+        
+      
+    
+    {\displaystyle t\in \mathbb {Q} }
+  
+ takvo da je 
+  
+    
+      
+        s
+        =
+        r
+        +
+        t
+      
+    
+    {\displaystyle s=r+t}
+  
+. Realni brojevi se mogu definisati kao Dedekindovi preseci u 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+, tj. realni broj je dat parom 
+  
+    
+      
+        (
+        A
+        ,
+        B
+        )
+      
+    
+    {\displaystyle (A,B)}
+  
+ dvaju disjunktnih nepraznih skupova takvih da je 
+  
+    
+      
+        A
+        ∪
+        B
+        =
+        
+          Q
+        
+      
+    
+    {\displaystyle A\cup B=\mathbb {Q} }
+  
+, i 
+  
+    
+      
+        a
+        
+          ≤
+          
+            
+              Q
+            
+          
+        
+        b
+      
+    
+    {\displaystyle a\leq _{\mathbb {Q} }b}
+  
+ za svako 
+  
+    
+      
+        a
+        ∈
+        A
+      
+    
+    {\displaystyle a\in A}
+  
+ i 
+  
+    
+      
+        b
+        ∈
+        B
+      
+    
+    {\displaystyle b\in B}
+  
+. Opreacije sume, proizvoda i uređenosti 
+  
+    
+      
+        
+          ≤
+          
+            
+              Q
+            
+          
+        
+      
+    
+    {\displaystyle \leq _{\mathbb {Q} }}
+  
+ na 
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+, se mogu proširiti na skup realnih brojeva 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+.
+CFI model je par 
+  
+    
+      
+        (
+        M
+        ,
+        E
+        )
+      
+    
+    {\displaystyle (M,E)}
+  
+ gde je 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ neprazan skup a 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ je binarna relacija na 
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  
+ takva da su sve CFI aksiome istinite ako se interpretiraju u 
+  
+    
+      
+        (
+        M
+        ,
+        E
+        )
+      
+    
+    {\displaystyle (M,E)}
+  
+. Na taj način ako je 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ neka tvrdnja u teoriji skupova onda se može naći neki CFI model za koji je tvrdnja 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ važeća, tada se negacija 
+  
+    
+      
+        ¬
+        ϕ
+      
+    
+    {\displaystyle \neg \phi }
+  
+ ne može dokazati u CFI. Ako se može naći model za 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ i model za 
+  
+    
+      
+        ¬
+        ϕ
+      
+    
+    {\displaystyle \neg \phi }
+  
+, tada se 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ ne može dokazati niti oboriti u CFI. U tom se slučaju kaže da je 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ nezavisna od CFI. Gedelova teorema kompletnosti logike prvog reda kaže da je CFI konsistentna aksiomatika ako se može naći CFI model. Kosistentnost ovde znači da CFI aksiome nisu protivrečne jedna drugoj.
+Gedelove teoreme nekompletnosti pokazuju da bilo koji formalni sistem u matematici koji ima smisla je obavezno nekompletan. Ako je CFI konsistentan onda u CFI postoje tvrdnje koje su nezavisne od CFI. Gedelova druga teorema nekompletnosti dokazuje da formala aritmetička tvrdnja CON(CFI) koja pokazuje da je CFI konsistentan sistem ne može biti dokazana u CFI kao što ne može biti dokazana njena negacija, tj. CON(CFI) je nezavisna od CFI.
+Ako je CFI konsistentan, tada nije moguće dokazati postojanje CFI modela jer bi u suprotnom bilo moguće da se u CFI dokaže konistentnost samog CFI. Na taj način je dokaz konsistentnosti ili nezavisnosti neke tvrdnje 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ uvek dokaz relativne konsistentnosti, tj. ako se pretpostavi da je CFI konsistentan onda CFI ima model a time se može konstruisati drugi model za koju je tvrdnja 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ istinita.
+Lebeg (Henri Léon Lebesgue) je uveo pojam mere skupa kao apstrakciju dužine za skupove na realnoj pravoj. CFI pokazuje da postoje skupovi koji nemaju Lebegovu meru što praktično znači da za verovatnoću na realnim brojevima postoje događaji bez verovatnoće i da se svaki događaj može umetnuti između dva događaja bez verovatnoće. Da li i koje posledice ova činjenica ima u naukama koje se bave realnim svetom, niko još nije razmišljao.
+
+
+== Vidi još ==
+Teorija skupova kontinuuma
+
+
+== Literatura ==
+Godehard Link (editor): One Hundred Years of Russell's Paradox: Mathematics, Logic, Philosophy, Walter de Gruyter, Berlin-New York 2004
+Aleksandar Perović, Aleksandar Jovanović, Boban Veličković: Teorija skupova, ISBN 978-86-7589-058-4,  Matematički fakultet, Beograd
+Andras Hajnal, Peter Hamburger: Set Theory, Cambridge University Press, Nov 11, 1999
+
+
+== Spoljašnje veze ==
+Stanford Encyclopedia of Philosophy Archive/Set Theory

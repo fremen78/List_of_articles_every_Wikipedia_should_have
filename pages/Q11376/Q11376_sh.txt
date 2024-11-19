@@ -1,0 +1,2767 @@
+Ubrzanje ili akceleracija u fizici opisuje kako se mijenja brzina gibanja. U svakodnevnom govoru iste riječi opisuju kako se mijenja brzina odvijanja bilo kakvog procesa; no, tu pojam nije precizno definiran nego samo podrazumijeva povećavanje brzine (npr. "treba ubrzati postupak...").
+U fizici je ubrzanje vektorska veličina koja se dobiva deriviranjem brzine po vremenu (koja je također vektor). U nekim situacijama, međutim, koristi se riječ ubrzanje da označi samo iznos vektora ubrzanja, ako je iz konteksta jasno o čemu se radi, npr. kod gibanja po pravcu.
+Najjednostavnije je opisivati ubrzanje i brzinu gibanja točke. Takav se opis odnosi i na tijela kojima su dimenzije zanemarivo male (čestice) i na kruta tijela koja ne rotiraju, tj. gibaju se samo translacijski. Ako tijelo još i rotira, njegove različite točke imaju različita ubrzanja. Tada se pojam ubrzanje tijela odnosi na ubrzanje njegovog centra masa (a kaže se još da je to translacijsko ili linearno ubrzanje), a usto se još promatra i kutno ubrzanje.
+U ovome tekstu opisuje se samo ubrzanje točke (čestice), tj. samo translacijsko ubrzanje.
+
+
+== Formalna definicija ==
+Ubrzanje je derivacija brzine po vremenu:
+
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}={d{\vec {v}} \over dt}}
+  
+.
+Simbol 
+  
+    
+      
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}}
+  
+ označava ubrzanje (a je prvo slovo riječi akceleracija koja je latinskog porijekla), simbol 
+  
+    
+      
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {v}}}
+  
+ označava brzinu; i jedna i druga veličina su funkcije vremena t (što se podrazumijeva, pa se ne mora eksplicitno navesti). Ubrzanje opisuje kako se brzo i u kojemu smjeru mijenja brzina u pojedinom trenutku. Budući da je brzina vektorska veličina koja može mijenjati i iznos i smjer, ubrzanje istovremeno opisuje i jednu i drugu promjenu. No, one se mogu razdvojiti tako da se zasebno promatraju tangencijalno i normalno ubrzanje (definirani kasnije u tekstu).
+Analiza gibanja u dinamici često polazi od 2. Newtonovog aksioma, koji (u nerelativističkoj aproksimaciji) glasi "suma sila jednaka je umnošku mase i akceleracije" (tj. 
+  
+    
+      
+        
+          Σ
+          
+            
+              
+                F
+                →
+              
+            
+          
+          =
+          m
+          
+            
+              
+                a
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Sigma {\vec {F}}=m{\vec {a}}}
+  
+). Odatle se, iz sila koje djeluju na materijalnu česticu, izravno dobiva njezina akceleracija. Potom se iz akceleracije brzina čestice računa integriranjem:
+
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+          
+            0
+          
+        
+        +
+        
+          ∫
+          
+            
+              
+                t
+              
+              
+                0
+              
+            
+          
+          
+            t
+          
+        
+        
+          
+            
+              a
+              →
+            
+          
+        
+        
+        
+          d
+        
+        t
+      
+    
+    {\displaystyle {\vec {v}}={\vec {v}}_{0}+\int _{{t}_{0}}^{t}{\vec {a}}\,\mathrm {d} t}
+  
+
+gdje je 
+  
+    
+      
+        
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              0
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {v}}_{0}}
+  
+ brzina u trenutku 
+  
+    
+      
+        
+          
+            t
+            
+              0
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle t_{0}}
+  
+ (tzv. početna brzina). (A potom se iz brzine može odrediti jednadžba putanje ili pređeni put. Ako se umjesto materijalne točke promatra tijelo, navedena razmatranja odnose se na gibanje njegovog centra masa.)
+
+
+== Prosječno i trenutno ubrzanje ==
+Za gore navedenu definiciju ponekad se kaže da opisuje trenutno ili pravo ubrzanje. Ti se termini koriste (umjesto jednostavnog naziva ubrzanje) kada se želi naglasiti razlika u odnosu na prosječno ili srednje ubrzanje 
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  →
+                
+              
+            
+            
+              p
+              r
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}_{pr}}
+  
+, koje se definira kao omjer promjene brzine i vremenskog intervala u kojemu se brzina promijenila:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+          
+            p
+            r
+          
+        
+        =
+        
+          
+            
+              Δ
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}_{pr}={\Delta {\vec {v}} \over \Delta t}}
+  
+
+gdje simbol 
+  
+    
+      
+        
+          Δ
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta }
+  
+ označava promjenu, tj. razliku između kasnije i ranije vrijednosti. Tu je 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                v
+                →
+              
+            
+          
+          =
+          
+            
+              
+                v
+                →
+              
+            
+          
+          (
+          
+            t
+            
+              2
+            
+          
+          )
+          −
+          
+            
+              
+                v
+                →
+              
+            
+          
+          (
+          
+            t
+            
+              1
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}={\vec {v}}(t_{2})-{\vec {v}}(t_{1})}
+  
+ promjena brzine od trenutka 
+  
+    
+      
+        
+          
+            t
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle t_{1}}
+  
+ do trenutka 
+  
+    
+      
+        
+          
+            t
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle t_{2}}
+  
+, dok je 
+  
+    
+      
+        
+          Δ
+          t
+          =
+          
+            t
+            
+              2
+            
+          
+          −
+          
+            t
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t=t_{2}-t_{1}}
+  
+ vremeski interval (proteklo vrijeme) između ta dva trenutka.
+Tijekom promatranog vremenskog intervala točka (ili tijelo) je mogla kojekako ubrzavati i usporavati svoje gibanje, pa će se istim postupkom dobiti različita prosječna ubrzanja u kraćim vremenskim podintervalima, što ograničava upotrebnu vrijednost prosječnog ubrzanja na zadani vremenski interval (i njegov zadani početni trenutak).
+Nasuprot tome, "pravo" ubrzanje ("trenutno") ne ovisi o vremenskom intervalu jer se dobiva njegovim zamišljenim skraćivanjem na "beskonačno mali interval" oko pojedinog trenutka. Postupak se općenito (u različitim primjenama) naziva graničnim prijelazom i definira pojam derivacije. Trenutno ubrzanje je derivacija brzine po vremenu, tj. "granična vrijednost" (limes, simbol "lim") omjera promjene brzine i pripadnog vremenskog intervala kada vremenski interval "teži" prema nuli:
+
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          lim
+          
+            Δ
+            t
+            →
+            0
+          
+        
+        
+          
+            
+              Δ
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {a}}={\frac {d{\vec {v}}}{dt}}=\lim _{\Delta t\to 0}{\frac {\Delta {\vec {v}}}{\Delta t}}\,\!}
+  
+.
+
+
+=== Definicija "promjena brzine u jedinici vremena" ===
+Najjednostavnija definicija ubrzanja, koja je dobro polazište za razumijevanje pojma, jest uobičajena definicija iz osnovne škole: "Ubrzanje je promjena brzine u jedinici vremena”. Pritom se obično promatra pravocrtno gibanje, pa se riječ brzina odnosi samo na iznos brzine (jer ne mijenja smjer) a i riječ ubrzanje samo na iznos ubrzanja. Takva definicija vrlo nepotpuno opisuje ubrzanje: to je samo broj koji je jednak prosječnom iznosu ubrzanja u toj jedinici vremena.
+No ako promatramo jednoliko ubrzano pravocrtno gibanje, kod kojega se iznos ubrzanja ne mijenja, onda je on doista jednak prosječnom iznosu, i računa se tako da se promjena brzine podjeli s vremenom. Npr. ako za 3 sekunde brzina naraste s 5 m/s na 17 m/s, ukupna promjena je 12 m/s, a ubrzanje se dobiva dijeljenjem (12 m/s) : (3 s) = 4 m/s2, i označava da brzina naraste za 4 m/s svake sekunde. Odatle se vidi i da je metar u sekundi na kvadrat (m/s2) mjerna jedinica za ubrzanje u SI sustavu
+
+
+== Tangencijalno i centripetalno ubrzanje ==
+
+U svakoj točki proizvoljno zakrivljene putanje neke materijalne čestice može se njezino ubrzanje 
+  
+    
+      
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}}
+  
+ rastaviti na dvije komponente: na tangencijalno ubrzanje 
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  →
+                
+              
+            
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}_{t}}
+  
+ koje je paralelno s tangentom na putanju, i na normalno ubrzanje 
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  →
+                
+              
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}_{n}}
+  
+ koje je u smjeru normale na putanju. Na skici desno prikazano je u gornjem dijelu ukupno ubrzanje (i sila 
+  
+    
+      
+        
+          
+            
+              
+                F
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {F}}}
+  
+ koja ga uzrokuje), a u donjem dijelu to ubrzanje rastavljeno je na tangencijalnu i normalnu komponentu (kao i sila). Prikazane su i tangenta i normala (t i n) kao koordinatne osi: tangenta je u smjeru brzine 
+  
+    
+      
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {v}}}
+  
+, a normala je okomita na tangentu, leži u ravnini koju određuju brzina i ukupno ubrzanje, i usmjerena je prema "udubljenom" dijelu putanje. (Uobičajeno korištenje istog slova t i za tangentu i za vrijeme ne bi smjelo dovesti do zabune: ono se u tekstu odnosi na tangentu samo ako je indeks tangencijalnog vektora ili komponente.)
+Tangencijalno ubrzanje opisuje kako se brzo mijenja iznos brzine:
+
+  
+    
+      
+        
+          a
+          
+            t
+          
+        
+        =
+        
+          
+            
+              d
+              v
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle a_{t}={dv \over dt}}
+  
+.
+Tu je 
+  
+    
+      
+        
+          
+            a
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle a_{t}}
+  
+ skalarna tangencijalna komponenta ubrzanja, dok je 
+  
+    
+      
+        
+          v
+        
+      
+    
+    {\displaystyle \scriptstyle v}
+  
+ iznos brzine.
+Normalno ubrzanje opisuje kako se brzo mijenja smjer brzine:
+
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        =
+        
+          
+            
+              v
+              
+                2
+              
+            
+            
+              r
+              
+                k
+              
+            
+          
+        
+      
+    
+    {\displaystyle a_{n}={v^{2} \over r_{k}}}
+  
+.
+Tu je 
+  
+    
+      
+        
+          
+            a
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle a_{n}}
+  
+ skalarna normalna komponenta ubrzanja, 
+  
+    
+      
+        
+          v
+        
+      
+    
+    {\displaystyle \scriptstyle v}
+  
+ je iznos brzine, dok je 
+  
+    
+      
+        
+          
+            r
+            
+              k
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle r_{k}}
+  
+ radijus zakrivljenosti putanje u promatranoj točki.
+Na skici su prikazane vektorske komponente, a u gornjem tekstu se koriste skalarne komponente. Odnos između njih i ukupnog ubrzanja je sljedeći:
+
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+          
+            t
+          
+        
+        +
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+          
+            n
+          
+        
+        =
+        
+          a
+          
+            t
+          
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          
+            t
+          
+        
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}={\vec {a}}_{t}+{\vec {a}}_{n}=a_{t}{\vec {u}}_{t}+a_{n}{\vec {u}}_{n}}
+  
+.
+Tu je 
+  
+    
+      
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {u}}_{t}}
+  
+ jedinični vektor u smjeru tangente (dakle, i u smjeru brzine), dok je 
+  
+    
+      
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {u}}_{n}}
+  
+ jedinični vektor u smjeru normale (jedinični vektori imaju iznos jednak 1). Kada se skalarna komponenta pomnoži s jediničnim vektorom, dobije se vektorska komponenta, npr. 
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  →
+                
+              
+            
+            
+              t
+            
+          
+          =
+          
+            a
+            
+              t
+            
+          
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}_{t}=a_{t}{\vec {u}}_{t}}
+  
+.
+Za razumijevanje uloge komponenti ubrzanja korisno je razmotriti njihovu vezu sa silama na temelju 2. Newtonovog zakona. Ako je 
+  
+    
+      
+        
+          
+            
+              
+                F
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {F}}}
+  
+ ukupna (rezultantna) sila koja djeluje na česticu, ona joj daje ubrzanje 
+  
+    
+      
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {a}}}
+  
+ u smjeru sile prema formuli 
+  
+    
+      
+        
+          
+            
+              
+                F
+                →
+              
+            
+          
+          =
+          m
+          
+            
+              
+                a
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {F}}=m{\vec {a}}}
+  
+. Temeljno svojstvo vektora jest da među njihovim komponentama na pojedinoj osi koordinatnog sustava vrijede isti odnosi (jednadžbe) kao i među samim vektorima. To znači da tangencijalna sila daje tangencijalno ubrzanje, a normalna sila daje normalno ubrzanje (kao na skici).
+Odatle se lako razumije zašto tangencijalno i normalno ubrzanje imaju gore navedeni smisao. Tangencijalna sila djeluje u smjeru brzine (ili u suprotnom smjeru); dakle, ona povećava iznos brzine (ili ga umanjuje). Zato tangencijalno ubrzanje opisuje promjenu iznosa brzine (povećanje ili umanjenje). Dakle, nema razloga da se te tangencijalne komponente dovode u vezu s promjenom smjera brzine.
+Nasuprot tome, normalna sila okomita je na brzinu: ona ne povećava brzinu jer ne vuče nimalo prema naprijed, niti umanjuje brzinu jer ne vuče nimalo prema natrag. A ipak mijenja brzinu jer daje čestici ubrzanje (normalno ubrzanje). Budući da nema promjene iznosa brzine, očito je da to mora biti promjena smjera brzine.
+
+
+=== Formalni izvod ===
+Formule za tangencijalno i normalno ubrzanje mogu se dokazati deriviranjem brzine ako se ona prikaže kao umnožak iznosa i jediničnog vektora
+
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        v
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          
+            t
+          
+        
+      
+    
+    {\displaystyle {\vec {v}}=v{\vec {u}}_{t}}
+  
+.
+Jedinični vektor tangente 
+  
+    
+      
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {u}}_{t}}
+  
+ ima smjer brzine, i može se dobiti tako da se brzina podijeli sa svojim iznosom (zato što je njegov iznos jednak 1). Deriviranjem gornjeg izraza za brzinu, prema pravilu deriviranja umnoška, dobije se:
+
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          
+            
+              d
+              v
+            
+            
+              d
+              t
+            
+          
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          
+            t
+          
+        
+        +
+        v
+        
+          
+            
+              d
+              
+                
+                  
+                    
+                      u
+                      
+                        t
+                      
+                    
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}={d{\vec {v}} \over dt}={dv \over dt}{\vec {u}}_{t}+v{d{\vec {u_{t}}} \over dt}}
+  
+.
+Odmah se vidi da lijevi pribrojnik izgleda kao ranije definirana tangencijalna komponenta ubrzanja. No, da bi se to dokazalo, treba pokazati da je desni pribrojnik jednak normalnoj komponenti ubrzanja. U tu svrhu treba objasniti što se dobiva deriviranjem jediničnog vektora 
+  
+    
+      
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {u}}_{t}}
+  
+ u desnom pribrojniku.
+
+
+==== Derivacija jediničnog vektora ====
+
+Derivacija bilo kojeg jediničnog vektora 
+  
+    
+      
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {u}}}
+  
+ mora biti okomita na njega, kako se vidi iz skice desno, koja prikazuje promjenu 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                u
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {u}}}
+  
+ nekog jediničnog vektora u vremenskom intervalu 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+. Na skici je ta promjena približno okomita na jedinični vektor, a u graničnom prijelazu kada vremenski interval teži nuli (kad se računa derivacija), promjena 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                u
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {u}}}
+  
+ postaje točno okomita na jedinični vektor (i to u smjeru njegova zakretanja). Iznos derivacije dobije se tako da se iznos promjene 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                u
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {u}}}
+  
+ podijeli s 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ i provede granični prijelaz u kojemju vremenski interval teži nuli. Na skici se vidi da je iznos promjene 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                u
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {u}}}
+  
+ približno jednak duljini kružnoga luka kojega prekriva, a u graničnom prijelazu postaju točno jednaki. Duljina tog dijela kružnoga luka jednaka je kutu zakreta 
+  
+    
+      
+        
+          Δ
+          φ
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta \varphi }
+  
+ kako slijedi iz definicije kuta u radijanima (luk kroz polumjer), budući da je iznos polumjera jednak 1 (iznos jediničnog vektora). Dakle, iznos derivacije jediničnog vektora je granična vrijednost 
+  
+    
+      
+        
+          
+            
+              
+                Δ
+                φ
+              
+              
+                Δ
+                t
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {{\Delta \varphi } \over {\Delta t}}}
+  
+, a to je iznos kutne brzine zakretanja jediničnog vektora 
+  
+    
+      
+        
+          ω
+          =
+          
+            
+              
+                d
+                φ
+              
+              
+                d
+                t
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \omega ={{d\varphi } \over {dt}}}
+  
+.
+Odatle se vidi da desni pribrojnik gornje jednadžbe za ubrzanje ima smjer jediničnog vektora normale 
+  
+    
+      
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {u}}_{n}}
+  
+ te da ima iznos 
+  
+    
+      
+        
+          v
+          ω
+        
+      
+    
+    {\displaystyle \scriptstyle v\omega }
+  
+. To je, dakle, doista normalna komponenta ubrzanja, i ona ima oblik:
+
+  
+    
+      
+        v
+        
+          
+            
+              d
+              
+                
+                  
+                    
+                      u
+                      
+                        t
+                      
+                    
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+          
+            n
+          
+        
+        =
+        v
+        ω
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle v{d{\vec {u_{t}}} \over dt}={\vec {a}}_{n}=v\omega {\vec {u}}_{n}}
+  
+ .
+
+
+==== Analogija s kružnim gibanjem ====
+Kod kružnog gibanja iznos kutne brzine 
+  
+    
+      
+        
+          ω
+        
+      
+    
+    {\displaystyle \scriptstyle \omega }
+  
+ jednak je omjeru iznosa brzine i polumjera kružnice, 
+  
+    
+      
+        
+          ω
+          =
+          v
+          
+            /
+          
+          r
+        
+      
+    
+    {\displaystyle \scriptstyle \omega =v/r}
+  
+. Tu kutna brzina opisuje zakretanje polumjera (radij-vektora) povučenog do točke koja se giba po kružnici. No, ista kutna brzina opisuje i zakretanje vektora brzine točke, jer je taj vektor stalno okomit na polumjer kružnice. Zato se normalna komponenta ubrzanja može izraziti preko iznosa brzine i polumjera: 
+  
+    
+      
+        
+          
+            a
+            
+              n
+            
+          
+          =
+          v
+          ω
+          =
+          
+            
+              
+                v
+                
+                  2
+                
+              
+              r
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle a_{n}=v\omega ={v^{2} \over r}}
+  
+.
+Po analogiji s kružnim gibanjem, i kod gibanja po krivulji opisuje se zakretanje vektora brzine pomoću iznosa brzine, i to relacijom 
+  
+    
+      
+        
+          ω
+          =
+          v
+          
+            /
+          
+          
+            r
+            
+              k
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \omega =v/r_{k}}
+  
+. Ta relacija zapravo definira polumjer zakrivljenosti 
+  
+    
+      
+        
+          
+            r
+            
+              k
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle r_{k}}
+  
+ krivulje u promatranoj točki. Polumjer zakrivljenosti krivulje je polumjer tzv. oskulatorne kružnice, a to je kružnica koja najbolje prianja uz krivulju u toj točki (imaju jednaku zakrivljenost). Definiranje polumjera zakrivljenosti omogućuje da se normalna komponenta ubrzanja na krivulji izrazi na sličan način kao na kružnici:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                →
+              
+            
+          
+          
+            n
+          
+        
+        =
+        
+          
+            
+              v
+              
+                2
+              
+            
+            
+              r
+              
+                k
+              
+            
+          
+        
+        
+          
+            
+              
+                u
+                →
+              
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\vec {a}}_{n}={v^{2} \over r_{k}}{\vec {u}}_{n}}
+  
+.
+
+
+=== Alternativni geometrijski izvod ===
+
+Prethodni izvod orijentiran je na matematičku korektnost i potpunost, pa mu zato nedostaje neposrednog geometrijskog zora. Na skici desno, međutim, zorno je prikazano gibanje točke po krivulji tako da se vide vektori položaja i brzine na početku i na kraju vremenskog intervala 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ (lijeva strana skice), kao i promjena brzine 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                v
+                →
+              
+            
+          
+          =
+          
+            
+              
+                v
+                →
+              
+            
+          
+          (
+          t
+          +
+          Δ
+          t
+          )
+          −
+          
+            
+              
+                v
+                →
+              
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}={\vec {v}}(t+\Delta t)-{\vec {v}}(t)}
+  
+ na desnoj strani skice. Pritom je promjena brzine rastavljena na tangencijalnu i normalnu komponentu:
+
+  
+    
+      
+        Δ
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        Δ
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+          
+            t
+          
+        
+        +
+        Δ
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \Delta {\vec {v}}=\Delta {\vec {v}}_{t}+\Delta {\vec {v}}_{n}}
+  
+.
+Ubrzanje je derivacija brzine po vremenu, tj. granična vrijednost omjera promjene brzine 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                v
+                →
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}}
+  
+ i pripadnog vremenskog intervala 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ kada vremenski interval teži nuli:
+
+  
+    
+      
+        
+          
+            
+              a
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          lim
+          
+            Δ
+            t
+            →
+            0
+          
+        
+        
+          
+            
+              Δ
+              
+                
+                  
+                    v
+                    →
+                  
+                
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+        =
+        
+          lim
+          
+            Δ
+            t
+            →
+            0
+          
+        
+        
+          
+            
+              Δ
+              
+                
+                  
+                    
+                      v
+                      →
+                    
+                  
+                
+                
+                  t
+                
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+        +
+        
+          lim
+          
+            Δ
+            t
+            →
+            0
+          
+        
+        
+          
+            
+              Δ
+              
+                
+                  
+                    
+                      v
+                      →
+                    
+                  
+                
+                
+                  n
+                
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {a}}={\frac {d{\vec {v}}}{dt}}=\lim _{\Delta t\to 0}{\frac {\Delta {\vec {v}}}{\Delta t}}=\lim _{\Delta t\to 0}{\frac {\Delta {\vec {v}}_{t}}{\Delta t}}+\lim _{\Delta t\to 0}{\frac {\Delta {\vec {v}}_{n}}{\Delta t}}\,\!}
+  
+.
+I bez punog matematičkog formalizma, može se razumjeti kako lijevi pribrojnik daje tangencijalnu komponentu a desni normalnu komponentu ubrzanja. Iz skice je očito da 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              t
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}_{t}}
+  
+ samo mijenja iznos brzine (u prikazanom primjeru povećava brzinu). Smjer brzine mijenja samo komponenta 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}_{n}}
+  
+, ali ona malo doprinosi i promjeni iznosa, jer prevodi katetu 
+  
+    
+      
+        
+          (
+          
+            
+              
+                v
+                →
+              
+            
+          
+          (
+          t
+          )
+          +
+          Δ
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              t
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle ({\vec {v}}(t)+\Delta {\vec {v}}_{t})}
+  
+ pravokutnog trokuta u hipotenuzu 
+  
+    
+      
+        
+          
+            
+              
+                v
+                →
+              
+            
+          
+          (
+          t
+          +
+          Δ
+          t
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle {\vec {v}}(t+\Delta t)}
+  
+. Međutim, kada u graničnom prijelazu 
+  
+    
+      
+        
+          Δ
+          t
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta t}
+  
+ teži prema nuli (kod izračuna ubrzanja), taj pravokutni trokut postaje jednakokračan, pa 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}_{n}}
+  
+ mijenja samo smjer vektora brzine.
+Odatle je jasno da je skalarna tangencijalna komponenta ubrzanja jednaka derivaciji iznosa brzine po vremenu - te da je pozitivna kad se brzina povećava, a negativna kad se brzina umanjuje. Skalarna normalna komponenta ubrzanja uvijek je pozitivna, jer se brzina zakreće u smjeru normale. Njezin iznos, međutim, određuje se na temelju gornjeg formalnog izvoda, ili na temelju analize kružnog gibanja. (Ipak, i sa skice se razabire da taj iznos treba biti jednak 
+  
+    
+      
+        
+          v
+          ω
+        
+      
+    
+    {\displaystyle \scriptstyle v\omega }
+  
+, zato što je iznos 
+  
+    
+      
+        
+          Δ
+          
+            
+              
+                
+                  v
+                  →
+                
+              
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \Delta {\vec {v}}_{n}}
+  
+ približno jednak umnošku iznosa brzine i kuta njezinoga zakretanja.)
+
+
+=== Tangencijalno i centripetalno ubrzanje ===
+
+Brzina čestice koja se kreće na zakrivljenom putu kao funkcija vremena se može zapisati kao:
+
+  
+    
+      
+        
+          v
+        
+        (
+        t
+        )
+        =
+        v
+        (
+        t
+        )
+        
+          
+            
+              
+                v
+              
+              (
+              t
+              )
+            
+            
+              v
+              (
+              t
+              )
+            
+          
+        
+        =
+        v
+        (
+        t
+        )
+        
+          
+            u
+          
+          
+            
+              t
+            
+          
+        
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle \mathbf {v} (t)=v(t){\frac {\mathbf {v} (t)}{v(t)}}=v(t)\mathbf {u} _{\mathrm {t} }(t),}
+  
+
+gde je v(t) jednako brzini duž puta, a
+
+  
+    
+      
+        
+          
+            u
+          
+          
+            
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                v
+              
+              (
+              t
+              )
+            
+            
+              v
+              (
+              t
+              )
+            
+          
+        
+         
+        ,
+      
+    
+    {\displaystyle \mathbf {u} _{\mathrm {t} }={\frac {\mathbf {v} (t)}{v(t)}}\ ,}
+  
+
+je jedinična vektorske tangenta na putu, koja je usmerena u pravcu kretanja datog momenta. Uzimajući u obzir promenu brzini v(t) i promenu smera ut, ubrzanje čestice koja se kreće duž zakrivljenog puta se može zapisati koristeći lančano pravilo diferencijacije za proizvod dve funkcije vremena kao:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      
+                        d
+                      
+                      
+                        v
+                      
+                    
+                    
+                      
+                        d
+                      
+                      t
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    
+                      
+                        d
+                      
+                      v
+                    
+                    
+                      
+                        d
+                      
+                      t
+                    
+                  
+                
+                
+                  
+                    u
+                  
+                  
+                    
+                      t
+                    
+                  
+                
+                +
+                v
+                (
+                t
+                )
+                
+                  
+                    
+                      d
+                      
+                        
+                          u
+                        
+                        
+                          
+                            t
+                          
+                        
+                      
+                    
+                    
+                      d
+                      t
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    
+                      
+                        d
+                      
+                      v
+                    
+                    
+                      
+                        d
+                      
+                      t
+                    
+                  
+                
+                
+                  
+                    u
+                  
+                  
+                    
+                      t
+                    
+                  
+                
+                +
+                
+                  
+                    
+                      v
+                      
+                        2
+                      
+                    
+                    r
+                  
+                
+                
+                  
+                    u
+                  
+                  
+                    
+                      n
+                    
+                  
+                
+                 
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}\mathbf {a} &={\frac {\mathrm {d} \mathbf {v} }{\mathrm {d} t}}\\&={\frac {\mathrm {d} v}{\mathrm {d} t}}\mathbf {u} _{\mathrm {t} }+v(t){\frac {d\mathbf {u} _{\mathrm {t} }}{dt}}\\&={\frac {\mathrm {d} v}{\mathrm {d} t}}\mathbf {u} _{\mathrm {t} }+{\frac {v^{2}}{r}}\mathbf {u} _{\mathrm {n} }\ ,\\\end{alignedat}}}
+  
+
+gde je un jedinica normalnog vektora na trajektoriju čestice (koja se takođe naziva principalnom normalom), i r je njen trenutni prečnik krive baziran na dodirnoj kružnici u vremenu t. Te komponente se nazivaju tangencijalnim ubrzanjem i normalnim ili radijalnim ubrzanjem (ili centripetalnim ubrzanjem kružnog kretanja, vidi takođe kružno kretanje i centripetalnu silu).
+Geometrijska analiza trodimenzionalnih krivih, koja objašnjava tangencijalno, (principijalno) normalno i binormalno kretanje, je opisana Frenet–Seretovim formulama.
+
+
+== Brzina i pređeni put kod promjenjivog kretanja ==
+Ako želimo izračunati brzinu u nekom trenutku ubrzanog kretanja, moramo znati koliko je vremena prošlo otkad se tijelo počelo kretati (t) i kolika mu je brzina bila prije početka ubrzanja (v0). Brzina u nekom trenutku ubrzanog kretanja računa se po sljedećoj formuli: 
+  
+    
+      
+        v
+        =
+        a
+        ∗
+        t
+        +
+        
+          v
+          
+            0
+          
+        
+      
+    
+    {\displaystyle v=a*t+v_{0}}
+  
+.
+Oznaka za pređeni put je s. Put promjenjivog kretanja bez početne brzine računa se po formuli 
+  
+    
+      
+        s
+        =
+        
+          
+            
+              a
+              ∗
+              
+                t
+                
+                  2
+                
+              
+            
+            2
+          
+        
+      
+    
+    {\displaystyle s={\frac {a*t^{2}}{2}}}
+  
+, dok se za rješavanje puta s poznatom početnom brzinom koristi izraz 
+  
+    
+      
+        s
+        =
+        
+          v
+          
+            0
+          
+        
+        t
+        +
+        
+          
+            
+              a
+              ∗
+              
+                t
+                
+                  2
+                
+              
+            
+            2
+          
+        
+      
+    
+    {\displaystyle s=v_{0}t+{\frac {a*t^{2}}{2}}}
+  
+.
+Jednoliko ubrzano pravolinijsko kretanje jest ono kretanje u kojem se neko tijelo kreće pravolinijski s nekom početnom brzinom v0, koja se jednako povećava u jednakim intervalima.
+Put (s) kod jednoliko ubrzanog pravolinijskog kretanja preko početne brzine (v0) i ubrzanja (a), bez vremena (t), može se napisati i ovako: 
+  
+    
+      
+        s
+        =
+        
+          
+            
+              
+                v
+                
+                  2
+                
+              
+              −
+              
+                v
+                
+                  0
+                
+                
+                  2
+                
+              
+            
+            
+              2
+              a
+            
+          
+        
+      
+    
+    {\displaystyle s={\frac {v^{2}-v_{0}^{2}}{2a}}}
+  
+.
+Iz ovoga proizlazi da je 
+  
+    
+      
+        2
+        a
+        s
+        =
+        
+          v
+          
+            2
+          
+        
+        −
+        
+          v
+          
+            0
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2as=v^{2}-v_{0}^{2}}
+  
+, pa se brzina s poznatom početnom brzinom v0 izračunava izrazom 
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+        =
+        
+          v
+          
+            0
+          
+          
+            2
+          
+        
+        +
+        2
+        a
+        s
+      
+    
+    {\displaystyle v^{2}=v_{0}^{2}+2as}
+  
+.
+Naravno, za 
+  
+    
+      
+        
+          v
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle v_{0}=0}
+  
+ važit će: 
+  
+    
+      
+        v
+        =
+        a
+        ∗
+        t
+      
+    
+    {\displaystyle v=a*t}
+  
+, 
+  
+    
+      
+        s
+        =
+        
+          
+            
+              a
+              ∗
+              
+                t
+                
+                  2
+                
+              
+            
+            2
+          
+        
+      
+    
+    {\displaystyle s={\frac {a*t^{2}}{2}}}
+  
+ i 
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+        =
+        2
+        a
+        s
+      
+    
+    {\displaystyle v^{2}=2as}
+  
+.
+Jednoliko usporeno pravolinijsko kretanje jeste kretanje koje se odvija po određenom pravcu u nekom vremenu (t) s nekom početnom brzinom (v0), koja se jednako smanjuje u jednakim intervalima.
+Brzina kod jednoliko usporenog pravolinijskog kretanja s poznatom vremenom računa se preko formule 
+  
+    
+      
+        v
+        =
+        
+          v
+          
+            0
+          
+        
+        −
+        a
+        t
+      
+    
+    {\displaystyle v=v_{0}-at}
+  
+ dok se formula 
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+        =
+        
+          v
+          
+            0
+          
+          
+            2
+          
+        
+        −
+        2
+        a
+        s
+      
+    
+    {\displaystyle v^{2}=v_{0}^{2}-2as}
+  
+ koristi za dobijanje brzine s poznatim putem.
+Vrijeme zaustavljanja tijela pod utjecajem umjereno usporenog kretanja može se naći formulom 
+  
+    
+      
+        t
+        z
+        =
+        
+          
+            
+              v
+              
+                0
+              
+            
+            a
+          
+        
+      
+    
+    {\displaystyle tz={\frac {v_{0}}{a}}}
+  
+ dok se put do zaustavljanja (Sz) dobija formulom 
+  
+    
+      
+        S
+        z
+        =
+        
+          
+            
+              v
+              
+                0
+              
+              
+                2
+              
+            
+            
+              2
+              a
+            
+          
+        
+      
+    
+    {\displaystyle Sz={\frac {v_{0}^{2}}{2a}}}
+  
+.
+
+
+== Gravitacijsko ubrzanje ==
+Gravitacijsko ubrzanje je ubrzanje koje tijelo dobija pri slobodnom padu (padu s određene tačke, bez podsticaja bilo koje druge sile osim sile Zemljine teže). To ubrzanje iznosi približno 
+  
+    
+      
+        10
+        
+          
+            m
+            
+              s
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle 10{\frac {m}{s^{2}}}}
+  
+, a ono zavisi od blizine određenog tijela središtu Zemlje. To zavisi od geografskog položaja i nadmorske visine. U Sarajevu je gravitacijsko ubrzanje 
+  
+    
+      
+        9
+        ,
+        81
+        
+          
+            m
+            
+              s
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle 9,81{\frac {m}{s^{2}}}}
+  
+.
+Gravitacijsko ubrzanje označava se slovom g i pomoću njega izračunavamo težinu određenog tijela. G = m*g, gdje je m masa tog tijela, a G težina.
+
+
+== Drugi Newtonov zakon ==
+Ovaj zakon glasi: 
+"Intenzitet sile koja pokreće tijelo jednak je proizvodu mase tijela i ubrzanja koje tijelo dobija djelovanjem te sile", tj. F = m*a, gdje je F sila koja pokreće tijelo i daje mu ubrzanje, m masa tog tijela i a ubrzanje koje tijelo dobija djelovanjem te sile. Pošto je jedinica za silu 1 njutn (N) - 
+  
+    
+      
+        1
+        N
+        =
+        1
+        
+          
+            
+              k
+              g
+              m
+            
+            
+              s
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle 1N=1{\frac {kgm}{s^{2}}}}
+  
+, a za masu 1 kg, dobijamo da je jedinica za ubrzanje 
+  
+    
+      
+        1
+        
+          
+            m
+            
+              s
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle 1{\frac {m}{s^{2}}}}
+  
+.
+
+
+== Jednostavni slučajevi: ubrzanje na pravcu i na kružnici ==
+Ubrzano gibanje po pravcu i jednoliko gibanje po kružnici zanimljivi su primjeri zato što sadrže samo jednu od opisanih komponenata ubrzanja. Kod gibanja po pravcu, to je samo tangencijalno ubrzanje (jer brzina ne mijenja smjer). Kod jednolikog gibanja po kružnici, to je samo normalno ubrzanje (jer brzina ne mijenja iznos), a ono se na kružnici naziva centripetalnim ili radijalnim ubrzanjem.
+Jednoliko i jednoliko ubrzano gibanje po pravcu najjednostavniji su primjeri gibanja, na kojima učenici osnovnih i srednjih škola tek upoznaju veličine pomoću kojih se gibanje opisuje - znatno prije nego što će učiti npr. o vektorima ili o derivacijama. Na toj razini znanja, i brzina i ubrzanje se opisuju kao skalarne veličine. Kaže se da je ubrzanje promjena brzine u jedinici vremena, te da je pozitivno kada brzina raste a negativno kad se brzina umanjuje. Za jednoliko ubrzano gibanje po pravcu, takve su definicije "operativno korektne" jer omogućuju točan izračun brzine i pređenoga puta (barem za gibanje tijela na istu stranu; manje komplikacije nastaju ako se počne vraćati). U konceptualno korektnom opisu, ubrzanje je vektor koji ne može biti niti pozitivan niti negativan; a skalar koji se koristi u formulama je skalarna tangencijalna komponenta ubrzanja.
+Kod jednolikog gibanja po kružnici uvodi se pojam centripetalnog ubrzanja koji i bez punog vektorskog formalizma jasno ocrtava smisao normalne komponente ubrzanja. A kod jednoliko ubrzanog gibanja po kružnici mora se - pored centripetalnog ubrzanja - uvesti i tangencijalno ubrzanje za opis promjene iznosa brzine. Time je zapravo obuhvaćen glavni smisao rastava ubrzanja na normalnu i tangencijalnu komponentu, čak i ako se ne koristi formalni vektorski opis.
+
+
+== Izvori ==
+
+
+== Literatura ==
+
+
+== Vanjske veze ==
+
+Acceleration Calculator Simple acceleration unit converter
+Measurespeed.com - Acceleration Calculator Based on starting & ending speed and time elapsed.

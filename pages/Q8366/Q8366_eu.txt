@@ -1,0 +1,346 @@
+Algoritmo bat problema bat ebazteko eman behar diren urratsen deskribapen formala da. Programazio-lengoaia baten bidez, algoritmoak ordenagailu batek egikari dezakeen programa bihur dezake. Matematikan, informatikan, hizkuntzalaritzan eta beste zenbait esparrutan, algoritmo bat ongi definitutako instrukzio sekuentzia finitu bat da, ordenagailuz martxan jar daitekeena, normalean, problema bat urratsez urrats ebazteko edo konputazio bat kalkulatzeko. Algoritmoak beti dira zehatzak, ez dira anbiguoak, eta jarraibide gisa erabiltzen dira kalkuluak egiteko, datuak prozesatzeko, arrazoitze automatizaturako eta beste zeregin batzuetarako. Metodo eraginkor gisa, algoritmo bat espazio- eta denbora-kantitate finitu baten barruan eta ongi definitutako hizkuntza formal batean adieraz daiteke funtzio bat kalkulatzeko.
+Hasierako egoera batetik eta hasierako datu batetik ("sarrera") abiatuta (agian hutsik egongo da), instrukzioek konputazio bat deskribatzen dute, eta, exekutatzen direnean, ondo definitutako ondoz ondoko egoera-kopuru finitu baten bidez egiten da, eta, aldi berean, "irteera" sortzen da, eta amaierako egoeran amaitzen da. Egoera batetik bestera igarotzeko bideak ez du beti eredu determinista jarraitzen, zenbait algoritmok zorizko balioak ere integratzen baitituzte.
+
+
+== Historia. Kontzeptuaren bilakaera ==
+
+Algoritmo hitza, berez, IX. mendeko matematikari persiar baten izenetik eratortzen da: Al-Khwarizmi.
+XIX. mendean, Ada Lovelace-k, makina analitikoaren bidez, algoritmo bat idatzi zuen Bernouilliren zenbakiak kalkulatzeko: zer eragiketa egin behar ziren; zer ordenan; zer aldagairen gainean; begiztak, baldintzen menpeko jauziak... Hori guztia ordenagailu baterako programa gisa har daiteke. Horregatik, historiako lehen programatzailetzat hartu izan da Lovelace.
+Geroago, algoritmoaren kontzeptu moderno bihurtuko zena formalizatzeko, lehen urratsak berak egin zituen; David Hilbertek 1928an planteatutako Entscheidungsproblema (erabakitze-problema) ebazteko saiakerak egin ziren. Ondoren, formalizazio berriak asmatu ziren "kalkulagarritasun eraginkorra" edo "metodo eraginkorra" definitzeko saiakera gisa. Formalizazio horien artean sartu ziren 1930eko, 1934ko eta 1935eko Gödel–Herbrand–Kleeneren funtzio errekurtsiboak; 1936ko Alonzo Church-en lambda kalkulua; 1936ko Emil Post-en 1 formulazioa, eta 1936-37 eta 1939ko Alan Turing-en Turing makinak.
+
+
+== Definizio informala ==
+Definizio informala «eragiketa-sekuentzia bat zehatz-mehatz definitzen duen arau multzoa» izan liteke, programa informatiko guztiak barne hartzen dituena (zenbakizko kalkuluak egiten ez dituzten programak barne) eta (adibidez) agindutako edozein prozedura burokratiko edo sukalde-liburu bateko errezeta bat.
+Oro har, programa bat algoritmo bat da azkenean gelditzen bada, nahiz eta batzuetan begizta infinituak desiragarriak izan daitezkeen.
+Algoritmo baten adibide prototipiko bat euklidear algoritmoa da, bi osoko banaketa komun maximoa zehazteko erabiltzen dena; adibide bat (beste batzuk ere badaude) goiko eta ondorengo sekzio baten adibide gisa deskribatzen da.
+Algoritmo baten adibide prototipiko bat Euclidesen algoritmoa da, zeina bi zenbaki osoko banaketa komun maximoa zehazteko erabiltzen den; adibide bat (beste batzuk ere badaude) goiko fluxu-diagraman deskribatzen da, eta adibide gisa ondorengo sekzio batean.
+, algoritmo hitzaren esanahi informala eskaintzen du honako aipu honetan:
+
+.Zenbakitu daitekeen multzo amaigabea zenbaki osoekin korrespondentzian ezar daitekeen osagaia da. Horrela, Boolosek eta Jeffreyk diote algoritmo batek aginduak ematen dituela zenbaki osoak sortzeko sarrerako zenbaki arbitrario oso batetik edo talde batetik abiatuta, zeinak, teorian, arbitrarioki handiak izan daitezkeen. Adibidez, algoritmo bat y = m + n moduko ekuazio aljebraikoa izan daiteke (hau da, bi sarrerako aldagai arbitrario, m eta n, eta irteera bat, y, sortzen dutenak), baina autore batzuen nozioa definitzeko saiakerek adierazten dute hitzak hori baino askoz gehiago inplikatzen duela, ordenako zerbait:
+
+Algoritmo kontzeptua arabakigarritasun nozioa definitzeko ere erabiltzen da, axioma eta arau multzo txiki batetik abiatuz sistema formalak nola sortzen diren azaltzeko funtsezkoa den nozioa. Logikan, algoritmo batek osatzeko behar duen denbora ezin da neurtu, itxuraz ez baitago ohiko dimentsio fisikoarekin lotuta. Egiten ari den lana ezaugarritzen duten ziurgabetasun horietatik sortzen da terminoaren erabilera konkretu (nolabait) nahiz abstraktuari komeni zaion definizio baten baliaezintasuna.
+Algoritmo gehienak programa informatiko gisa ezartzeko dira. Hala ere, algoritmoak beste bide batzuetatik ere inplementatu daitezke, hala nola neurona-sare biologiko batean (adibidez, giza burmuinak aritmetika inplementatzen edo elikagai bila dabilen intsektu bat), zirkuitu elektriko batean edo gailu mekaniko batean.
+
+
+== Formalizazioa ==
+Algoritmoak funtsezkoak dira ordenagailuek datuak prozesatzeko duten moduarentzat. Programa informatiko askok algoritmoak dituzte ordenagailuak zeregin jakin bat betetzeko —ordena zehatz batean— bete behar dituen jarraibide zehatzak zehazten dituztenak, hala nola langileen ordainketa-txekeak kalkulatzea edo ikasleen txosten-txartelak inprimatzea. Horrela, algoritmo bat Turing-complete sistema baten bidez simula daitekeen edozein eragiketa sekuentziatzat har daiteke. Tesi hau baieztatzen duten egileen artean Minsky (1967), Savage (1987) eta Gurevich (2000) daude:
+
+Turing makinek amaierarik ez duten prozesu konputazionalak defini ditzakete. Algoritmoen definizio informalek algoritmoa beti amaitzea eskatzen dute. Eskakizun horrek prozedura formal bat kasu orokorrean algoritmo bat ezinezkoa ote den erabakitzeko eginkizuna ezartzen du geldiarazte-problema gisa ezagutzen den konputagarritasun-teoria handi baten ondorioz.
+Normalean, algoritmo bat prozesatzeko informazioarekin lotzen denean, sarrerako iturri batetik datuak irakur daitezke; irteerako gailu batera idatzi, eta, ondoren, prozesatzeko gorde. Gordetako datuak algoritmoa egiten duen erakundearen barne egoeraren zatitzat hartzen dira. Praktikan, emaitza datu-egitura batean edo gehiagotan gordetzen da.
+Prozesu konputazional horietako batzuetarako, algoritmoa zorrotz definitu behar da, eta sor daitezkeen egoera posible guztietan aplikatzeko moduan zehaztu. Horrek esan nahi du baldintzapeko urrats guztiak sistematikoki egin behar direla, kasuz kasu; kasu bakoitzerako, irizpideak argiak (eta konputagarriak) izan behar dira.
+Algoritmo bat urrats zehatzen zerrenda zehatza denez, konputazioaren ordena beti da erabakigarria algoritmoaren funtzionamendurako. Normalean, jarraibideak esplizituki zerrendatzen direla suposatzen da, eta goitik hasi eta beherantz doazela deskribatzen da; formalki, kontrol-egitura izenez deskribatzen den ideia.
+Orain arte, algoritmo bat formalizatzeari buruzko eztabaidak programazio inperatiboaren premisak hartu ditu. Horixe da kontzepzio arruntena, eginkizun bat modu diskretu mekanikoan deskribatzen saiatzen dena. Algoritmo formalizatuen kontzepzio horretatik esleipen-eragiketa da aldagai baten balioa ezartzen duen bakarra. Oroimena, atzaparkada gisa, begiestetik dator.
+
+
+== Algoritmo baten adierazpen-baliabideak ==
+Algoritmoak modu askotara adieraz daitezke, besteak beste, hizkuntza naturala, pseudokodoa, fluxu-diagramak eta programazio-lengoaiak. Hizkuntza naturaleko deskribapenak anbiguoak eta zabalak izan ohi dira. Pseudokodoa eta fluxu-diagramak erabiltzeak hizkuntza naturalaren anbiguotasun asko saihesten ditu. Adierazpen horiek algoritmoak irudikatzeko forma egituratuagoak dira; hala ere, programazio-lengoaia espezifiko batetik, aparte mantentzen dira.
+Algoritmo baten deskribapena hiru mailatan egin ohi da:
+
+Goi-mailako deskribapena. Problema ezartzen da; eredu matematiko bat aukeratzen da, eta algoritmoa hitzez azaltzen da, segur aski ilustrazioekin eta xehetasunik gabe.
+Deskribapen formala. Pseudokodo bat erabiltzen da soluzioa aurkitzen duten urratsen sekuentzia deskribatzeko.
+Inplementazioa. Algoritmoa programazio-lengoaia espezifiko batean edo jarraibideak gauzatzeko gai den objekturen batean adierazten da.
+Algoritmoa zuzena dela, konplexutasun-azterketa dela edo biak direla frogatzen duen teorema ere sar daiteke.
+
+
+=== Fluxu-diagrama ===
+Fluxu-diagramak algoritmoen deskribapen grafikoak dira; geziekin lotutako ikurrak erabiltzen dituzte jarraibideen sekuentzia adierazteko, eta ISO arauak dituzte.
+Fluxu-diagramak algoritmo txikiak irudikatzeko erabiltzen dira, espazio handia hartzen baitute eta egitura neketsua baitute. Irakurtzeko erraza denez, algoritmoetarako sarrera gisa, hizkuntza baten deskribapena egiteko eta konputazioaz kanpoko pertsonei prozesuak deskribatzeko erabiltzen dira.
+
+
+=== Sasikode ===
+Sasikodea algoritmo baten goi-mailako deskribapena da. Algoritmo horrek lengoaia naturala eta programazio-lengoaien berezko konbentzio sintaktiko batzuk nahasten ditu, hala nola esleipenak, zikloak eta baldintzazkoak, nahiz eta ez duen inolako estandarrik erabiltzen.
+Sasikodea pertsonei algoritmo bat ulertzen laguntzeko pentsatuta dago, eta, beraz, inplementazio batean beharrezkoak diren xehetasun garrantzigabeak ken ditzake. Programatzaile desberdinek konbentzio desberdinak erabiltzen dituzte, programazio-lengoaia zehatzen sintaxian oinarrituta egon daitezkeenak. Hala ere, sasikodea, oro har, ulergarria da berariazko programazio-ingurune bat ezagutu edo erabili beharrik gabe, eta, aldi berean, nahikoa egituratua da hura zuzenean inplementatu ahal izateko.
+Hala, sasikodea arestian aipatutako funtzioak betetzen ditu zerbait abstraktua irudikatzeko; protokoloak programaziorako lengoaiak dira. Bilatu iturri zehatzagoak gaia hobeto ulertzeko.
+
+
+=== Sistema formalak ===
+Automaten teoriak eta funtzio errepikakorren teoriak algoritmo kontzeptua formalizatzen duten eredu matematikoak ematen dituzte. Eredu ohikoenak Turing makina, erregistro-makina eta μ-recursivas funtzioak dira. Eredu horiek makina-lengoaia bezain zehatzak dira, eta ez dute lagunarteko adierazpiderik edo anbiguotasunik; hala ere, edozein konputagailurekin eta edozein inplementaziorekin zerikusirik ez dute.
+
+
+=== Inplementazioa ===
+Algoritmo asko programa batean ezartzeko asmatu dira. Hala ere, algoritmoak beste ingurune batzuetan ezar daitezke, hala nola neurona-sare batean, zirkuitu elektriko batean edo aparatu mekaniko eta elektriko batean. Algoritmo batzuk bereziki diseinatzen dira arkatza eta papera erabiliz inplementatzeko. Biderketa tradizionaleko algoritmoa, Euklidesen algoritmoa, Eratostenesen bahetzea eta erro karratua ebazteko modu asko adibide batzuk besterik ez dira.
+
+
+=== Aldagaiak ===
+Datu-mota jakin baten balio espezifikoak hartzen dituzten elementuak dira. Aldagai baten deklarazioa egiteko, var-a erabil daiteke. Nagusiki, bi modu daude aldagaiei hasierako balioak emateko:
+
+Esleipen-epai baten bidez.
+Datuak sartzeko prozedura baten bidez (adibidez, 'read').
+Adibidea:
+
+     ...
+    i:=1;
+    read(n);
+    while i < n do begin
+       (* cuerpo del bucle *)
+       i := i + 1
+    end;
+     ...
+
+
+=== Egitura sekuentzialak ===
+Egitura sekuentzialean, ekintza batek segidako beste ekintza bati jarraitzen dio. Eragiketak bata bestearen atzetik gertatzen dira, halako moldez non baten irteera hurrengoaren sarrera baita, eta, horrela, hurrenez hurren, prozesua amaitu arte. Hori esleitzeko, balioak edo emaitzak memoriaren eremu batera pasatu behar dira. Eremu horri balioa hartzen duen aldagaiaren izena jarriko zaio. Esleipena honela sailka daiteke:
+
+Sinpleak: Balio konstante bat aldagai batera pasatzea da (bidalitako15)
+Kontagailua: Prozesu bat zenbat aldiz egiten den egiaztatzeko erabiltzen da (bidalketei a + 1)
+Metagailua: Prozesuan batutzaile gisa erabiltzean datza (a bidali a + b)
+Lanekoa: Aldagai asko (bidalketei c + b*1/2) eragiten dituen eragiketa matematiko baten emaitza jaso dezakezu.
+
+
+== Algoritmoak funtzio gisa ==
+Algoritmo bat problema baten datuak (sarrera) ebazpen baten datu (irteera) bihurtzen dituen funtzio gisa uler daiteke. Are gehiago, datuak bit-sekuentzia gisa adieraz daitezke, eta, oro har, edozein sinboloren sekuentzia gisa. Bit-sekuentzia bakoitzak zenbaki arrunt bat adierazten duenez (ikus Sistema bitarra), algoritmoak, funtsean, zenbaki arrunten funtzioak dira kalkula daitezkeen zenbaki arruntetan. Hau da, algoritmo orok funtzio bat kalkulatzen du, non zenbaki natural bakoitza problema edo ebazpen baten kodetzea baita.
+  
+    
+      
+        f
+        :
+        
+          N
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle f\colon \mathbb {N} \to \mathbb {N} }
+  
+
+Batzuetan, algoritmoak ezin dira inoiz amaitu, adibidez, begizta infinitu batera sartzen direnean. Hori gertatzen denean, algoritmoak ez du inoiz irteerako baliorik itzultzen, eta esan dezakegu funtzioa mugagabe geratzen dela sarrera-balio horretarako. Hori dela eta, algoritmoak funtzio partzialak direla jotzen da, hau da, ez dutela zertan definitu haien definizio-eremu osoan.
+Funtzio bat baliabide algoritmikoen bidez kalkula daitekeenean, betetzen duen memoria kopurua edo berandututako denbora kontuan hartu gabe, funtzio hori konputagarria dela esaten da. Datu-sekuentzien arteko funtzio guztiak ez dira konputagarriak. Geldialdiaren arazoa adibide bat da.
+
+
+== Algoritmoen analisia ==
+Algoritmo baten eraginkortasunaren neurri gisa, algoritmoak kontsumitzen dituen baliabideak (memoria eta denbora) aztertzen dira. Algoritmoen analisia egin da sarrera-balioen tamainaren arabera denbora- eta memoria-gastuaren bilakaera nolabait adierazten (edo zehazten) duten balioak lortzeko.
+Algoritmoen azterketa konputazio-zientzien diziplina bat da, eta, kasu gehienetan, haien azterketa guztiz abstraktua da inolako programazio-hizkuntzarik edo beste edozein inplementaziorik erabili gabe; horregatik, alde horretatik, bat dator matematika-diziplinen ezaugarriekin. Hala, algoritmoen analisia algoritmoaren oinarrizko printzipioetan oinarritzen da, ez ezarpen partikularrean. Algoritmo bat irudikatzeko (edo batzuetan "kodetzeko") modu bat da pseudokodoan idaztea edo Lexico bezalako hizkuntza sinple bat erabiltzea, zeinaren kodeak programatzailearen hizkuntzan egon baitaitezke.
+Zenbait idazlek algoritmoaren definizioa mugatu egiten dute uneren batean amaitu behar diren prozeduretara; beste batzuek, berriz, betiko eten gabe exekuta daitezkeen prozeduratzat hartzen dituzte, betiko funtziona dezakeen gailu fisikoren bat balego bezala. Azken kasu horretan, algoritmoa arrakastaz amaitzea ezingo litzateke esan algoritmoaren amaiera gisa, irteera egoki batekin, baizik eta arrakasta algoritmoa exekutatzen den bitartean emandako irteera-sekuentzien arabera definituko litzateke. Adibidez, sekuentzia bitar infinitu batean bat baino zero gehiago daudela egiaztatzen duen algoritmo bat exekutatu egin behar da beti balio erabilgarri bat itzuli ahal izateko. Zuzen ezartzen bada, algoritmoak itzultzen duen balioa baliozkoa izango da hurrengo digitu bitarra ebaluatu arte. Horrela, hurrengo sekuentzia ebaluatzen den bitartean, bi seinale mota irakur daitezke: seinale positibo bat (bat baino zero gehiago bada) eta, bestela, seinale negatibo bat. Azkenik, algoritmo horren irteera balio positiboen itzulketa gisa definitzen da, baldin eta bat baino zero gehiago badaude sekuentzian, eta, beste edozein kasutan, seinale positiboen eta negatiboen nahasketa bat itzuliko du.
+
+
+=== Formala versus enpirikoa ===
+Askotan, garrantzitsua da algoritmo jakin baterako baliabide jakin bat (denbora edo biltegiratzea, adibidez) teorikoki zenbat behar den jakitea. Algoritmoak analizatzeko metodoak garatu dira erantzun kuantitatibo horiek lortzeko (estimazioak); adibidez, n zenbakiko zerrenda bateko elementuak batzen dituen algoritmo batek O(n) denbora-eskakizuna izango luke, O notazio handia erabiliz. Uneoro, algoritmoak bi balio bakarrik gogoratu behar ditu: orain arteko elementu guztien batura eta sarrera-zerrendan uneko posizioa. Beraz, O(1) espazio-eskakizuna duela esaten da sarrerako zenbakiak gordetzeko behar den espazioa zenbatzen ez bada edo O(n) zenbatzen bada.
+Algoritmo ezberdinek beste batzuek baino denbora, espazio edo ahalegin txikiagoan edo handiagoan osatu dezakete zeregin bera. Adibidez, (O (log n) kostudun) bilaketa-algoritmo bitar batek (O (n) kostudun) bilaketa sekuentzial bat gainditzen du zerrenda edo zerrenda ordenatuetan taula-behaketak egiteko erabiltzen denean.
+
+
+=== Exekuzioaren eraginkortasuna ===
+Ongi finkaturiko algoritmoetan ere egin daitezkeen hobekuntza potentzialak ilustratzeko, FFT algoritmoei buruzko azken berrikuntza esanguratsu batek (irudien tratamenduan oso erabilia) prozesatzeko denbora 1.000 aldiz murriztu dezake, adibidez, irudi medikoen aplikazioetarako. Oro har, abiadura-hobekuntzak arazoaren propietate berezien araberakoak dira, eta oso ohikoak dira aplikazio praktikoetan. Tamaina horretako abiadurek aukera ematen dute irudien prozesamendua asko erabiltzen duten gailu informatikoek (hala nola kamera digitalek eta ekipo medikoek) potentzia gutxiago kontsumitzeko.
+
+
+== Algoritmoaren adibidea ==
+Problema zenbaki-multzo baten maximoa aurkitzea da. Adibide konplexuago baterako, ikus Euklidesen algoritmoa.
+
+
+=== Goi-mailako deskribapena ===
+Zenbaki-multzo finitu bat emanda, zenbakirik handiena aurkitzeko arazoa dago.
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ Orokortasunik galdu gabe, onar daiteke multzo hori ez dela hutsa eta bere elementuak honela zenbakituta daudela:
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+          c
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{0},c_{1},\dots ,c_{n}}
+  
+
+Hau da, multzo bat emanda, multzoari dagokion elementu ororentzat aurkitzea eskatzen da.
+  
+    
+      
+        C
+        =
+        {
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+          c
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle C=\{c_{0},c_{1},\dots ,c_{n}\}}
+  
+
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+
+  
+    
+      
+        x
+        ≤
+        m
+      
+    
+    {\displaystyle x\leq m}
+  
+
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+
+Elementu maximoa aurkitzeko, lehenengo elementua () maximoa dela jotzen da; gero, multzoa zeharkatu eta balio bakoitza ordura arte aurkitutako zenbaki maximoaren balioarekin alderatzen da.
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+      
+    
+    {\displaystyle c_{0}}
+  
+ Elementu bat maximoa baino handiagoa bada, haren balioa maximoari esleitzen zaio. Zerrenda amaitzen denean, multzo osoaren maximoa aurkitu da.
+
+
+=== Deskribapen formala ===
+Algoritmoa modu formalagoan idatz daiteke sasikodigo batekin.
+Notazioari buruz:
+
+"Esleipen bat adierazten du": “Aldagaiak honako honen balioa hartzen duela adierazten du:
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+
+"devolver"-ek algoritmoa amaitzen du, eta balioa eskuinean itzultzen du (kasu honetan, -ren maximoa).
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+
+
+=== Inplementazioa ===
+C++ lengoaian:
+
+
+== Algoritmoak diseinatzeko teknikak ==
+Algoritmo bortitzak (greedy): hautagaien multzoan etorkizun handiena duten elementuak hautatzen dituzte irtenbide bat aurkitu arte. Kasu gehienetan, emaitza ez da optimoa.
+Algoritmo paraleloak: problema bat azpiproblemetan zatitzeko aukera ematen dute, zenbait prozesadoretan aldi berean exekutatu ahal izateko.
+Probabilitate-algoritmoak: horrelako algoritmoen urratsetako batzuk balio pseudoaleatorioen arabera daude.
+Algoritmo deterministikoak: algoritmoaren portaera lineala da: algoritmoaren urrats bakoitzak ondorengo urrats bat eta aurrekari bat besterik ez ditu.
+Algoritmo ez-deterministikoak: algoritmoaren portaerak zuhaitz-forma du, eta, algoritmoaren urrats bakoitzean, ondoz ondoko edozein urratsetara adarkatu daiteke; gainera, adar guztiak batera exekutatzen dira.
+Zatitu eta irabazi egingo duzu: arazoa disjuntoen azpimultzoetan zatitzen dute, eta azpimultzo bakoitzak emaitza bat ematen du; ondoren batu eta, hala, problema osoari konponbidea ematen zaio.
+Metaheuristikoak: problemen gutxi gorabeherako konponbideak aurkitzen dituzte (ez optimoak), haien aurreko ezagutzan oinarrituta (batzuetan esperientzia deitua).
+Programazio dinamikoa: problemak ebazten saiatzen da kostu konputazionala gutxituz eta kostu espaziala handituz.
+Adarkatzea eta akotazioa: arazoari irtenbideak ematean oinarritzen da zuhaitz inplizitu baten bidez. Zuhaitz hori modu kontrolatuan zeharkatzen da, eta soluziorik onenak aurkitzen ditu.
+Atzerako itzulera (backtracking): arazoari irtenbidea emateko espazioa eraikitzen da zuhaitz batean. Zuhaitz hori erabat aztertzen da, eta ahalik eta konponbide merkeenak biltzen dira.
+
+
+== Erreferenziak ==
+
+
+== Bibliografia ==
+ (Ingelesez) Boolos, George; Jeffrey, Richard.  (1974, 1999). Computability and Logic.  Cambridge University Press, London ISBN 978-0-521-20402-6..
+ (Ingelesez) Stone, Harold S..  (1972). Introduction to Computer Organization and Data Structures.  McGraw-Hill, New York ISBN 978-0-07-061726-1..
+
+
+== Ikus, gainera ==
+Nagle algoritmoa
+
+
+== Kanpo estekak ==
+Algoritmoak, Gizapedian.
+(Ingelesez)Munduan gehien erabiltzen diren 10 algoritmoak

@@ -1,0 +1,200 @@
+Zenbakizko analisia, arazo matematikoei hurbilpenezko soluzioak topatzea ahalbidetzen dituzten algoritmoak aztertzen dituen matematikaren adarra da, analisi matematikoaren arlo bat. Zenbaketa sinbolikotik bereizten da ez dituelako adierazpen aljebraikoak manipulatzen, zenbakiak baizik.
+
+Arazo bat hurbilketa bidez ebaztean, algoritmoak eta, askotan, iterazio pausoak ere erabiltzen dira soluzioa lortzeko. Soluzio hori, ordea, ez da zehatza gehienetan, eta hurbilketa-errore bat izaten du. Zenbakizko analisian, errore hori balioesten da soluzioaren egokitasuna zehazteko.
+Argitu beharrekoa da zenbakizko analisiaren emaitza aldagai baten balioa izan daitekeela (zenbaki bat), baina baita bektore edo funtzio bat ere (eskuarki polinomio funtzio baten bidez egiten da hurbilketa).
+Zenbakizko analisia honako kasuetan aplikatzen da:
+
+Soluzioa analitikoki topatzea ezinezkoa denean.
+Soluzioa analitikoki topatzea posible izan arren, arazo praktikoak medio analitikoki topatzea ezinezkoa edo oso zaila denean.
+Soluzioa analitikoki topatzea posible izan arren, denbora luzeegia eskatzen duenean edo hurbilpen arin batekin lan egitea praktikoagoa denean.
+Azken hamarkadetan, ordenagailuen bidez algoritmoak eta iterazio metodoak erabiltzeko gaitasuna asko handitu denez, zenbakizko analisia arazoak ebazteko metodo eraginkorra bihurtu da arlo askotan. Ordenagailuak oso erabilgarriak dira kalkulu matematiko konplexuetarako, baina, azken batean, zenbaki bitarrekin eta eragiketa matematiko sinpleekin lan egiten dute.
+Ikuspuntu horretatik, zenbakizko analisiak algoritmoen bidez adieraz daitezkeen prozedura matematiko guztiak gauzatzeko behar den guztia emango du, algoritmoetan oinarrituta eta zenbakiak erabiliz prozesu errazagoetan simulatu edo kalkulatu ahal izateko.
+Behin errorea definituta, errore onargarriarekin batera, algoritmoen egonkortasun kontzeptura pasatuko gara. Eragiketa matematiko asko aurrera eraman daitezke algoritmoa (feedback) berriz elikatzen duten zenbaki-serie bat sortuz. Horrek kalkulu- eta fintze-ahalmen handia ematen dio makinari, eta, ziklo bat osatu ahala, soluziora iristen da. Arazoa gertatzen da zikloarekin noiz arte jarraitu beharko duen edo arazoaren konponbidetik urruntzen ari garen zehaztean.
+Azkenik, zenbakizko analisiarekin paraleloa den beste kontzeptu bat da zenbakien eta beste kontzeptu matematiko batzuen (bektoreak, polinomioak, etab.) irudikapenarena. Adibidez, ordenagailuetan zenbaki errealak irudikatzeko, koma flotatzaile kontzeptua erabiltzen da, matematika konbentzionalak erabiltzen duenetik oso urrun dagoena.
+Oro har, arazo matematiko baten emaitza gisa zenbakizko balio bat behar denean aplikatzen dira metodo horiek, eta prozedura «zehatzak» edo «analitikoak» (manipulazio aljebraikoak, ekuazio diferentzialen teoria, integrazio-metodoak, etab.) ezin dute erantzun bat eman. Hori dela eta, fisikariek eta ingeniariek maiz erabiltzen dituzten prozedurak dira, eta, doitasuna erabatekoa ez izan arren, soluzioak lortzeko horiek duten beharrak haien garapena erraztu du. Gogoan izan behar da fisika esperimentalak, adibidez, ez dituela inoiz balio zehatzak ematen, baizik eta lortutako emaitza esperimental gehienak biltzen dituzten tarteak, ez baita ohikoa fenomeno beraren bi neurketak balio ber-berak ematea.
+Adibidez, ekuazio diferentzial arruntak zeru-mekanikan agertzen dira planeten, izarren eta galaxien mugimenduak iragartzeko; zenbakizko aljebra lineala garrantzitsua da datuak aztertzeko. Ekuazio diferentzial estokastikoak eta Markov kateak funtsezkoak dira zelula bizien simulazioan, medikuntza eta biologiarako.
+Ordenagailu modernoak iritsi baino lehen, maiz, zenbakizko metodoak eskuz egindako Interpolazio formulen mende zeuden, inprimatutako taula handien datuei aplikatuta. XX. mendearen erdialdetik aurrera, haien ordez, ordenagailuek beharrezkoak diren funtzioak kalkulatzen dituzte, baina, hala ere. formula horietako asko softwarearen algoritmoen zati gisa erabiltzen dira oraindik.
+Ikuspegi matematikoa lehendabiziko idazki matematikoetatik dago presente, Yale Babiloniar Bildumako ([1]) oholtxo batek sistema hirurogeitarreko 2 zenbakiaren erro karratuaren hurbilpena erakusten baitu, diagonalaren luzera lauki unitario batean.
+Zenbakizko analisiak tradizio luze horri jarraitzen dio: erantzun sinboliko zehatzen ordez (mundu errealeko neurketetan digituetarako itzulpenaren bidez bakarrik aplika daitezkeenak), gutxi gorabeherako soluzioak ematen ditu zehaztutako errore-mugen barruan.
+
+
+== Sarrera orokorra ==
+Zenbakizko analisiaren arloaren helburu orokorra da arazo zailei gutxi beherako irtenbideak baina zehatzak emateko teknikak diseinatzea eta aztertzea. Hona hemen arazo horien barietatea:
+
+Zenbakizko metodo aurreratuak ezinbestekoak dira eguraldiaren zenbakizko iragarpena bideragarri egiteko.
+Espazio-ontzi baten ibilbidea kalkulatzeko behar da ekuazio diferentzial arrunten sistema baten zenbakizko ebazpen zehatz bat.
+Automobil-fabrikatzaileek beren ibilgailuen segurtasuna hobetu dezakete trafiko-istripuen simulazioak ordenagailu bidez eginez. Simulazio horiek, funtsean, ekuazio diferentzial partzialen zenbakizko ebazpen dira.
+Estaldura-funtsek (inbertsio-funts pribatuak) zenbakizko analisiaren eremu guztietako tresnak erabiltzen dituzte akzioen eta deribatuen balioa merkatuko beste parte-hartzaile batzuek baino zehaztasun handiagoz kalkulatzen saiatzeko.
+Hegazkin-konpainiek optimizazio-algoritmo sofistikatuak erabiltzen dituzte txartelen prezioa, hegazkinen eta tripulazioen esleipena eta erregai-beharrak erabakitzeko. Historikoki, algoritmo horiek ikerketa operatiboaren arloan garatu izan dira.
+Aseguru konpainiek zenbakizko programak erabiltzen dituzte analisi aktuariala egiteko.
+
+
+=== Historia ===
+Zenbakizko analisiaren eremua ordenagailu modernoak asmatu baino lehenagokoa da mende askotan. Interpolazio lineala duela 2.000 urte baino gehiago erabiltzen zen. Iraganeko matematikari handi asko arduratu ziren zenbakizko analisiaz, algoritmo garrantzitsuen izenetatik ondorioztatu daitekeenez: Newtonen metodoa, Lagrangeren interpolazio-polinomikoa, Gauss-Jordan algoritmoa edo Eulerren metodoa.
+Kalkuluak eskuz errazago egiteko, formulak eta datu-taulak zituzten liburu handiak argitaratu ziren, hala nola interpolazio-puntuak eta funtzioen koefizienteak. Taula horiekin, askotan funtzio batzuetarako 16 hamartarrekin edo gehiagorekin kalkulatuak, balioak bila zitezkeen emandako formuletan sartzeko eta funtzio batzuen zenbakizko estimazio oso onak lortzeko. Arlo horretako lan kanonikoa Abramowitzek eta Stegunek editatutako Arau eta Teknologia Institutu Nazionalaren (NIST, ingelesezko siglaz) argitalpena da, 1.000 orrialde baino gehiagoko liburua, erabilera arrunteko formula eta funtzio ugari eta balio dituenak puntu askotan. Funtzioen balioak dagoeneko ez dira oso erabilgarriak ordenagailu bat dugunean; hala ere, formula zerrenda handi horrek oso erabilgarria izaten jarrai dezake.
+Kalkulagailu mekanikoa eskuzko kalkulurako tresna gisa ere garatu zen. Kalkulagailu horiek ordenagailu elektroniko bihurtu arte eboluzionatu zuten 1940ko hamarkadan, eta, orduan, konturatu ziren ordenagailu horiek erabilgarriak zirela helburu administratiboetarako ere. Baina ordenagailuaren asmakuntzak eragina izan zuen zenbakizko analisiaren arloan ere, kalkulu luzeagoak eta konplexuagoak egin baitzitezkeen orain.
+
+
+=== Metodo zuzenak eta iterazio metodoak ===
+Azter dezagun arazo honen ebazpena:
+
+3x3 + 4 = 28
+x kantitate ezezagunarentzat.
+
+Iterazio metodorako, aplika diezaiogun bisekzio-metodoa honi: f(x) = 3x3 − 24. Hasierako balioak hauek dira: a = 0, b = 3, f(a) = −24, f(b) = 57.
+
+Taula horretatik, emaitza 1,875 eta 2,0625 artean dagoela ondoriozta daiteke. Algoritmoak tarte horretako edozein zenbaki itzul lezake, 0,2 baino errore txikiagoarekin.
+
+
+==== Diskretizazioa eta zenbakizko integrazioa ====
+
+Bi orduko lasterketa batean, autoaren abiadura hiru unetan neurtzen da, eta taula honetan erregistratzen da:
+
+Diskretizazio bat litzateke esatea autoaren abiadura konstantea izan zela 0:00etatik 0:40ra, gero 0:40tik 1:20ra eta azkenik 1:20tik 2:00etara. Adibidez, lehen 40 minutuetan egindako distantzia, guztira, gutxi gorabehera (2/3 h × 140 km / h) = 93,3 kilometro. Horrek aukera emango liguke egindako distantzia osoa zenbatesteko: 93,3 kilometro +100 km +120 km =313,3 km, zeina zenbakizko integrazioaren adibide bat den (ikus aurrerago) Riemannen batura erabiliz, zeren desplazamendua abiaduraren integrala baita.
+Gaizki baldintzatutako arazoa: hartu f(x) = 1/(x − 1) funtzioa. Kontuan izan ezen x-n egindako 0,1 baino gutxiagoko aldaketa bat ia 1.000ko aldaketa bihurtzen dela f(1.1) = 10 eta f(1.001) = 1.000. Gaizki baldintzatutako arazoa da f (x) ebaluatzea x = 1 baliotik gertu.
+Ondo baldintzatutako arazoa: aitzitik, funtzio bera f(x) = 1/(x − 1) x = 10 funtziotik gertu ebaluatzea ondo baldintzatutako arazoa da. Adibidez, f(10) = 1/9 ≈ 0.111 eta f(11) = 0.1; Beraz, x-n egindako aldaketa apal batek f-n (x) aldaketa apal batera garamatza.
+Metodo zuzenek pauso kopuru mugatu batean kalkulatzen dute arazo baten soluzioa. Metodo horiek doitasun infinituko aritmetikan eginez gero, erantzun zehatza emango lukete. Hona hemen adibide batzuk: ezabaketa gaussiarra, ekuazio linealen sistemak ebazteko QR faktorizazio-metodoa eta programazio linealeko sinplex metodoa. Praktikan, doitasun finitua erabiltzen da, eta emaitza benetako soluzioaren hurbilketa da (egonkortasuna onartuz).
+Metodo zuzenekin ez bezala, ez da espero iterazio metodoak pauso kopuru mugatu batean bukatzea. Hasierako aieru batetik abiatuta, iterazio-metodoek ondoz ondoko hurbilketak osatzen dituzte, eta emaitza zehatzera mugan baino ez dira hurbiltzen. Konbergentzia-proba bat zehazten da (askotan hondarra ere barne hartzen duena) erabakitzeko noiz aurkitu den (zoriz) konponbide behar bezain zehatza. Doitasun infinituko aritmetika erabilita ere, metodo horiek, oro har, ez lukete lortuko soluzioa urrats kopuru mugatu batean. Adibide batzuk dira: Newtonen metodoa, bisekzio metodoa eta Jacobiren metodoa. Aljebra matrizial konputazionalean, iterazio-metodoak, normalean, beharrezkoak dira arazo handietarako.
+Iterazio-metodoak zuzeneko metodoak baino ohikoagoak dira zenbakizko analisian. Metodo batzuk zuzenak dira printzipioz, baina zuzenak ez balira bezala erabili ohi dira, adibidez, hondar minimo orokortuen metodoa (GMRES ingelesezko siglaz) eta gradiente konjugatuaren metodoa. Metodo horietarako, hain handia da ebazpen zehatza lortzeko behar den urrats kopurua, ezen hurbilketa bat onartzen baita metodo iteratibo baterako onartzen den modu berean.
+
+
+== Arazoen sailkapena ==
+Matematikaren adar honetako arazoak bi talde nagusitan sailka daitezke:
+
+Dimentsio finituko arazoak: arazo horien emaitza zenbaki finitu multzo bat da, hala nola ekuazio aljebraikoak edo determinanteak.
+Dimentsio infinituko arazoak: arazo horien emaitza edo planteamenduan, zenbaki infinituak sartzen dira, adibidez, integralak, deribatuak, interpolazioa edota ekuazio diferentzialak.
+
+
+=== Izaeraren edo motibazioaren araberako sailkapena ===
+Era berean, metodoa erabiltzeko arrazoiari erreparatuz, arazoak sailkatzeko beste modu bat dago:
+
+Soluzio analitikorik ez duten arazo konplexuen ebazpena
+Soluzio analitikoa duen arazoa, baina, konplexutasunagatik, ebazpena praktika eramatea ez da erraza
+Soluzio erraza dauka, baina zenbakizko analisiak kalkulu gutxiago eskatzen du
+
+
+== Ikasketa eremuak ==
+Zenbakizko analisia hainbat diziplinatan banatzen da, ebatzi beharreko problemaren arabera.
+
+
+=== Funtzio baten balioen kalkulua ===
+Arazorik errazenetako bat da funtzio bat ebaluatzea puntu jakin batean. Polinomioetarako, Hornerren algoritmoa da gehien erabiltzen den metodoetako bat, egin beharreko eragiketa kopurua murrizten baitu. Oro har, garrantzitsua da puntu flotatzailearen aritmetika erabiltzeagatik gertatzen diren biribiltze-erroreak zenbatestea eta kontrolatzea.
+Estrapolazioa interpolazioaren oso antzekoa da, baina, orain, funtzio ezezagunaren balioa aurkitu nahi dugu emandako puntuen artean ez dagoen puntu batean.
+Erregresioa ere antzekoa da, baina kontuan hartzen du datuak zehaztugabeak direla. Puntu batzuk emanda eta horietan funtzioak duen balioaren neurketa bat (neurketaren ondorioz errore bat duena), funtzio ezezaguna zehaztu nahi dugu. Karratu txikienen metodoa da hori lortzeko modu herrikoia.
+
+
+=== Ekuazioak eta ekuazio-sistemak ebaztea ===
+Funtsezko beste arazo bat da ekuazio edo ekuazio-sistema jakin baten emaitza kalkulatzea. Bi kasu bereizten dira ekuazioa edo ekuazio-sistema lineala ote den ala ez. Adibidez, 
+  
+    
+      
+        2
+        x
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x+5=3}
+  
+ ekuazioa lineala da, eta 
+  
+    
+      
+        2
+        
+          x
+          
+            2
+          
+        
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x^{2}+5=3}
+  
+ bigarren mailako ekuazioa, berriz, ez.
+Ahalegin handia egin da ekuazio-sistema linealak ebazteko metodoak garatzeko. Metodo zuzenak, hau da, matrizearen faktorizazioren bat erabiltzen duten metodoak dira: ezabatzeko Gauss metodoa, LU deskonposizioa, Choleskyren deskonposizioa matrize simetriko (edo hermitiko) definitu positiboetarako eta QR deskonposizioa. Zenbait iterazio-metodo, hala nola Jacobiren metodoa, Gauss-Seidelen metodoa, ondoz ondoko hurbilketen metodoa eta gradiente konjugatuaren metodoa, sistema handietarako erabiltzen dira maiz.
+Ekuazio ez-linealen zenbakizko ebazpenean, metodo ezagunenetako batzuk dira: bisekzio metodoa, sekantearen metodoa eta posizio faltsuaren metodoa. Funtzioa, gainera, deribagarria bada eta deribatua ezagutzen bada, oso erabilia da Newtonen metodoa. Metodo hori puntu finkoaren iterazio metodo bat da. Linealizazioa ere ekuazio ez-linealak ebazteko beste teknika bat da.
+Ekuazio aljebraiko polinomialek zenbakizko metodo ugari dituzte zerrendatzeko, hona hemen:
+
+Gräeffe-ren metodoa (edo Lobachevskiren edo Lobachevski-Dandelin-Gräefferen metodoa edo erroen karratuaren metodoa)
+Laguerre metodoa
+Bairstow metodoa (edo Lin-Bairstow metodoa)
+Bernoulli metodoa
+Horner metodoa
+Householder metodoa
+Newton-Raphson metodoa, polinomioentzat espezializatua
+Richmond metodoa, polinomioentzat espezializatua
+Richmond metodo berritua
+Newton-Horner metodoa
+Birge-Biète metodoa
+Jenkins-Traub metodoa
+
+
+=== Deskonposaketa espektrala eta balio berezietan ===
+Arazo garrantzitsu asko adieraz daitezke espektro-deskonposizioaren bidez (matrize baten bektoreak eta balio propioak kalkulatzea) edo balio berezietan deskonposatzea. Adibidez, osagai nagusien analisiak bektore eta balio propioetan deskonposatzea erabiltzen du.
+
+
+=== Optimizazioa ===
+
+Optimizazio-problemek bilatzen dute funtzio jakin batek bere maximoa edo minimoa lortzeko behar duen puntua. Sarritan, puntuak ere nolabaiteko murrizketa ere asetzen du.
+Optimizazio-arazoen adibideak dira programazio lineala, non xede-funtzioa zein murrizketak linealak diren. Programazio linealeko metodo ezagun bat simplex metodoa da.
+Lagrangeren biderkatzaileen metodoa erabil daiteke murrizketak dituzten optimizazio-arazoak murriztapenik gabekoetara murrizteko.
+
+
+=== Integralen ebaluazioa ===
+
+Zenbakizko integrazioak, zenbakizko koadratura izenaz ere ezagutzen denak, integral definitu baten balioa kalkulatzea bilatzen du. Metodo herrikoiek Newton-Cotes-en formularen bat erabiltzen dute (laukizuzenaren erregela edo Simpsonen erregela, adibidez) edo gaussiar koadraturaren bat. Metodo horiek «zatitu eta garaitu» estrategia batean oinarritzen dira, integrazio-tartea azpitartetan zatituz eta integrala azpitarte bakoitzeko integralen batura gisa kalkulatuz; ondoren, Rombergen metodoaren bidez lortutako integralaren balioa hobetu daiteke. Integral anizkoitzak kalkulatzeko, metodo horiek ahalegin konputazional handiegia eskatzen dute, eta, horretarako erabilgarria da Montecarlo metodoa.
+
+
+=== Ekuazio diferentzialak ===
+Zenbakizko analisiak kalkula ditzake ekuazio diferentzialen emaitza hurbilduak ere, bai ekuazio diferentzial arruntak, bai ekuazio diferentzial partzialak. Erabilitako metodoak, izan ere, dagokion ekuazioa diskretizatzean oinarritzen dira. Zenbakizko deribazioa ikustea baliagarria da.
+Ekuazio diferentzial arruntak ebazteko, metodorik erabilienak dira: Eulerren metodoa eta Runge-Kutta metodoak.
+Deribatu partzialetako ekuazioak ebazteko, lehenik, ekuazioa diskretizatzen da, eta dimentsio finituko azpiespazio batera eramaten da. Hori elementu finituen metodo baten bidez egin daiteke.
+
+
+== Errore-iturriak eta haien eragina ==
+Zenbakizko metodoen algoritmoak ordenagailuen bidez inplementatu ohi dira. Matematikako problemen zenbakizko soluzioa aurkitzeko erabiltzen direnean, propietate horiek akatsak eragiten dituzte, besteak beste, honako hauek:
+
+Ordenagailuak digitu kopuru mugatu bat gordetzeko gai dira, eta, beraz, ezin dute zenbaki errealen multzo osoa gorde zenbaki horiekin zenbakizko eragiketak egiteko. Aldiz, zenbaki errealen azpimultzo bat dute, puntu flotatzaileko zenbakiak edo makina-zenbakiak deitzen direnak. Mugatzaile horrek dakarren erroreari, biribiltze-errorea deritzo.
+Problemak ebazteko kalkulu asko egin behar izaten dira. Batzuetan, soluzioak sentikorrak dira tarteko kalkuluen zehaztasunarekiko, eta, kasu horretan, esaten da datuek nahasi dituztela soluzioak.
+Zenbat eta eragiketa gehiago egin, orduan eta biribiltze-errore handiagoa izango da. Ordenagailuek prozesamendurako ematen duten abiadurak nabarmen azkartu du eragiketak kalkulatzeko azkartasuna. Hala ere, ordenagailuek egindako kalkuluek biribiltze-erroreak hedatzeak eragin dezake ordenagailuetan programatutako algoritmoek emandako emaitzen ezegonkortasuna.
+Ordenagailu batek azken emaitza emateko egiten dituen bitarteko kalkuluen akatsak, askotan, ezezagunak dira programatzaileentzat, eta oso zailak detektatzen: puntu flotatzaileko zenbakien batuketa eta biderketa eragiketa kommutatiboak dira, baina ez dira asoziatiboak, ezta distributiboak ere. Zenbaki errealen bi propietate horiek egiaztatzen ez direnez, puntu flotatzaileko zenbakiekin egindako eragiketak erabiltzea lan zaila da. Bestalde, eragiketen ordenak makinak itzulitako emaitzen zehaztasunean eragin dezake; izan ere, adiera aljebraiko batean baliokideak diren bi adierazpenek emaitza desberdinak eman ditzakete makina-zenbakien testuinguruan.
+Zorionez, badaude teknika batzuk biribiltze-erroreari aurrea hartzeko eta erasotzeko. Estrategia horiek batuketa, kenketa, biderketa eta zatiketako oinarrizko eragiketetan dituzten ondorioetako batzuk aztertzen dira erreferentzian honetan. IEEEren puntu flotatzailearen estandar batzuk eta puntu flotatzailearen eta sistema konputazionalen diseinuaren arteko konexioak ere aztertzen dira erreferentzia berean.
+Puntu flotatzaileko zenbakien doitasuna hobetzea, oraindik ere, aztergai da gaur egun. 2015ean, Washingtongo Unibertsitateko ikertzaileek «Herbie» deitutako tresna konputazional bat garatu zuten, eta «programa batek bere zehaztasuna hobetzeko beharrezkoak diren eraldaketak automatikoki detektatzen ditu».​ Puntu flotatzaile baten adierazpenaren errorea ebaluatzen du Herbiek, eta erroreak metatzen gehien laguntzen duten eragiketak identifikatzen ditu; ondoren, eragiketa horiek egiteko aukerak sortzen ditu, eta konparatibo bat egiten du, azkenean, programa zuzentzeko adierazpen baliokide optimoa (errorea minimizatzen duena) zehazteko.
+Praktikan izan ditzakeen ondorioei zor zaie ordenagailu batek emandako zenbakizko emaitzetan nolabaiteko zehaztasun-maila ziurtatzeko interesa. Adibidez, esparru akademikoan, biribiltze-erroreak eragotzi izan du ikerketa-artikuluren bat erreproduzitzea, eta, batzuetan, hori izan da arrazoia ez argitaratzeko eta baztertzeko. Errore-mota horrek herrialde batzuetako finantzen arloko lege-erregulazioa ere ekarri du, eta burtsa-merkatuaren indizeak desitxuratu izan ditu.
+Zenbaki errealak puntu flotatzailearen bidez adierazteko mugak eragina du ordenagailu baten bidez sortutako grafikoetan ere. Zenbaki bat makina-epsilon izenez ezagutzen dena baino txikiagoa denean, ordenagailuak ezin du irudikatu. Horren ondorioz, epsilon baino txikiagoak diren zenbaki-balioei lotutako grafikoek portaera faltsuak izan ditzakete, eta haietan oinarritutako erabakietan eragin dezake, espero ez diren ondorioekin, adibidez, iragarpenak egitean, izan ere, eremu horretan zehaztasuna funtsezkoa baita.
+Badira beste errore mota batzuk zenbakizko metodoen testuinguruan, arreta eta kontu bera merezi dutenak, Mozketa- eta bihurketa-akatsek, besteak beste, hondamendi ugari eragin baitituzte: Patriot misilaren akatsa, Ariane 5 suziriaren inaugurazioko leherketa, Sleipner petrolio-plataformaren hondoratzea dira horren adibide batzuk. Horregatik da garrantzitsua errore-iturri horiek ezagutzea, horiei aurrea hartzeko eta, hala badagokio, detektatzeko eta zuzentzeko.
+
+
+== Zenbakizko analisiko alorrak ==
+Zenbakizko analisia hainbat alorretan banatzen da:
+
+Funtzio baten balioen kalkulua
+Interpolazioa, estrapolazioa eta erregresioa
+Ekuazio eta ekuazio sistemen ebazpena
+Espektro deskonposizioa
+Optimizazioa
+Integralak
+Ekuazio diferentzialak
+
+
+== Erreferentziak ==
+
+
+== Bibliografia ==
+ Golub, Gene H.; Charles F. Van Loan.  (1986). Matrix Computations.  (3.. argitaraldia) Johns Hopkins University Press ISBN 0-8018-5413-X..
+ Higham, Nicholas J..  (1996). Accuracy and Stability of Numerical Algorithms.  Society for Industrial and Applied Mathematics ISBN 0-89871-355-2..
+ Hildebrand, F. B..  (1974). Introduction to Numerical Analysis.  (2nd. argitaraldia) McGraw-Hill ISBN 0-07-028761-9..
+ Leader, Jeffery J..  (2004). Numerical Analysis and Scientific Computation.  Addison Wesley ISBN 0-201-73499-0..
+ Wilkinson, J.H..  (1965). The Algebraic Eigenvalue Problem.  Clarendon Press.
+ Kahan, W..  (1972). A survey of error-analysis.  2. liburukia Amsterdam: North-Holland Publishing, 1214–39 or.. (examples of the importance of accurate arithmetic).
+Trefethen, Lloyd N. (2006). "Numerical analysis", 20 pages. In: Timothy Gowers and June Barrow-Green (editors), Princeton Companion of Mathematics, Princeton University Press.
+
+
+== Kanpo estekak ==

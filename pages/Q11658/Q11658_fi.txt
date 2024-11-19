@@ -1,0 +1,364 @@
+Muuntaja on sähkömagneettinen laite, joka muuttaa vaihtosähkön jännitteen tai virran toiseksi samantaajuiseksi jännitteeksi tai virraksi. Yksinkertaisessa muuntajassa  saman rautasydämen ympärillä on kaksi toisistaan eristettyä käämiä, ensiökäämi ja toisiokäämi. Energia siirtyy virtapiiristä toiseen käämien välisen keskinäisinduktanssin välityksellä:  ensiökäämissä kulkeva vaihtovirta synnyttää rautasydämeen muuttuvan magneettivuon. Se puolestaan indusoi toisiokäämin napoihin sen kierrosmäärää vastaavan jännitteen (sähkömotorisen voiman). 
+Muuntaja ei toimi tasavirralla, koska vain magneettikentän vaihtelut tuottavat jännitettä toisiokäämiin.
+Yleisiä muuntajia ovat sähköverkon jakelumuuntajat.  Monet tavalliset laitteet kuten verkkokäyttöisten laitteiden virtalähteet, laturit,  taajuusmuuttajat ja vaihtosuuntaajat sisältävät muuntajan tapaan toimivia käämityksiä, mutta niiden lisäksi myös elektronisia komponentteja.
+
+
+== Muuntosuhde ==
+Muuntosuhteella tarkoitetaan muuntajan ensiö- ja toisiokäämien jännitteiden suhdetta, joka häviöttömässä muuntajassa on yhtä suuri kuin käämien kierroslukujen suhde tai virtojen suhteen käänteisarvo:
+
+  
+    
+      
+        
+          
+            
+              U
+              
+                1
+              
+            
+            
+              U
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                1
+              
+            
+            
+              N
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              I
+              
+                2
+              
+            
+            
+              I
+              
+                1
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {U_{1} \over U_{2}}={N_{1} \over N_{2}}={I_{2} \over I_{1}},}
+  
+
+missä 
+  
+    
+      
+        
+          U
+          
+            1
+          
+        
+      
+    
+    {\displaystyle U_{1}}
+  
+ on ensiökäämin jännite, 
+  
+    
+      
+        
+          U
+          
+            2
+          
+        
+      
+    
+    {\displaystyle U_{2}}
+  
+ toisiokäämin jännite, 
+  
+    
+      
+        
+          N
+          
+            1
+          
+        
+      
+    
+    {\displaystyle N_{1}}
+  
+ ensiökäämin kierrosten lukumäärä, 
+  
+    
+      
+        
+          N
+          
+            2
+          
+        
+      
+    
+    {\displaystyle N_{2}}
+  
+ toisiokäämin kierrosten lukumäärä, 
+  
+    
+      
+        
+          I
+          
+            1
+          
+        
+      
+    
+    {\displaystyle I_{1}}
+  
+ on ensiökäämin virta ja 
+  
+    
+      
+        
+          I
+          
+            2
+          
+        
+      
+    
+    {\displaystyle I_{2}}
+  
+ toisiokäämin virta.
+Muuntosuhde on siis käytännöllisesti katsoen sama kuin ensiö- ja toisiokäämien johdinkierrosten lukumäärien suhde. Piireissä kulkevien virtojen suhde on tähän nähden käänteinen. 
+Ideaalisessa muuntajassa muuntajan ensiöpuolelle syötetty teho, eli virran ja jännitteen tulo, on yhtä suuri kuin toisiopuolelta otettu teho.  Kaavana tämä ilmaistaan muodossa 
+
+  
+    
+      
+        
+          P
+          
+            1
+          
+        
+        =
+        
+          U
+          
+            1
+          
+        
+        
+          I
+          
+            1
+          
+        
+        =
+        
+          U
+          
+            2
+          
+        
+        
+          I
+          
+            2
+          
+        
+        =
+        
+          P
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle P_{1}=U_{1}I_{1}=U_{2}I_{2}=P_{2},}
+  
+
+missä 
+  
+    
+      
+        
+          P
+          
+            1
+          
+        
+      
+    
+    {\displaystyle P_{1}}
+  
+ ja 
+  
+    
+      
+        
+          P
+          
+            2
+          
+        
+      
+    
+    {\displaystyle P_{2}}
+  
+ ovat ensiö- ja toisioteho.
+Käytännön muuntajissa osa tehosta menee muun muassa lämpöhäviöihin ja muuntaja lämpenee vähän.    Energiansiirtoon käytetyissä muuntajissa hyötysuhde on kuitenkin melko hyvä.
+
+
+== Muuntaja ja impedanssi ==
+Ensiökäämin impedanssi, joka ideaalisessa käämissä aiheutuu yksinomaan sen induktanssista, on yhtä suuri kuin piirin jännitteen ja siinä kulkevan virran suhde, ja edellä olevista yhtälöistä seuraa, että tämä impedanssi on verrannollinen käämin kierrosluvun neliöön. 
+Jos toisiopiirissä kulkevaan virtaan kohdistuu impedanssi Z2, tämä näkyy ensiöpiirin puolelta mitattuna impedanssina 
+
+  
+    
+      
+        
+          Z
+          
+            2
+          
+          ′
+        
+        =
+        
+          Z
+          
+            2
+          
+        
+        
+        
+          
+            (
+            
+              
+              
+                
+                  
+                    
+                      N
+                      
+                        1
+                      
+                    
+                    
+                      N
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              
+            
+            )
+          
+          
+            2
+          
+        
+        
+        
+      
+    
+    {\displaystyle Z'_{2}=Z_{2}\!\left(\!{\tfrac {N_{1}}{N_{2}}}\!\right)^{2}\!\!}
+  
+.
+
+
+== Rautasydämen rakenne ==
+Usein muuntajan rautasydän kootaan toisistaan eristetyistä muuntajalevyistä (dynamolevyistä). Muuntajalevyt eristetään toisistaan, koska näin sydämeen indusoituvat pyörrevirrat vähenevät, muuntaja lämpenee vähemmän ja hyötysuhde paranee.
+
+
+== Muuntajat energiatekniikassa ==
+Koska virtajohtimissa tapahtuvat lämpöhäviöt ovat verrannollisia virran voimakkuuden neliöön, sähköenergian siirrossa on edullista käyttää mahdollisimman pientä virtaa ja vastaavasti suurta jännitettä, etenkin siirrettäessä energiaa pitkiä matkoja. Siksi energialaitoksissa tuotettava sähköenergia muunnetaan generaattorin muodostamasta muutamasta kilovoltista ylöspäin jopa useaan sataan kilovolttiin. Tällainen suurjännite voidaan voimalinjoja pitkin siirtää pitkiäkin matkoja vähähäviöisesti.
+Jakeluverkossa voimalinjat taas päätyvät muuntoasemille, joissa suurjännite muunnetaan pienemmäksi, kotitalouksien käyttöön sopivaksi verkkojännitteeksi.
+Sähköverkkojen automaatiojärjestelmissä käytetään mittamuuntajia muuntamaan mitattavan kohteen jännite tai virta mittalaitteille tai releille sopivaksi.
+
+
+== Muuntajien muita sovelluksia ==
+Elektroniikassa muuntajia voidaan teholähteiden lisäksi käyttää myös impedanssitasojen sovittamiseen muun muassa audio- ja radiotekniikassa.  
+Sähkötekniikassa muuntajia käytetään myös erottamaan virtapiirejä galvaanisesti toisistaan. Tällaisia muuntajia kutsutaan suojaerotusmuuntajiksi. Suojaerotusmuuntaja on hyödyllinen laite esimerkiksi sähkökokeita suoritettaessa, koska galvaanisesti verkosta erotetun jännitteen ja maan (esimerkiksi vesijohdot) välillä ei ole potentiaalieroa, eikä suojaerotusmuuntajan antamasta jännitteestä voi saada sähköiskua koskettaessa yhtä aikaa maahan ja jännitteiseen johtimeen. 
+Tavanomaisten jännitemuuntajien lisäksi käytetään myös erityisiä virtamuuntajia. Virtamuuntajissa toisiopiiriä käytetään kuormitettuna lähes oikosulussa. (Esim. hitsausmuuntaja)
+
+
+== Erilaisia muuntajia ==
+
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+== Katso myös ==
+Suojaerotusmuuntaja
+Induktiivinen kytkeytyminen
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Voipio, Erkki: Sähkö- ja magneettikentät.  (Moniste 381)  Espoo:  Otakustantamo, 1987.  ISBN 951-672-038-2 
+Voipio, Erkki: Virtapiirit ja verkot.  Helsinki:  Otatieto, 2001 (1976).  ISBN 951-672-082-X 
+
+
+== Aiheesta muualla ==
+Opetus TV: Muuntaja ja keskinäisinduktanssi

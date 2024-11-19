@@ -1,0 +1,457 @@
+Waarskynlikheid is 'n maatstaf of skatting van die moontlikheid van 'n gebeurtenis. Waarskynlikhede word 'n waarde tussen 0 (0% kans of sal nie gebeur nie) en 1 (100% kans of sal gebeur nie) toegeken. Hoe hoër die graad van waarskynlikheid, hoe groter is die kans dat die geval sal gebeur, of in 'n langer reeks monsters, hoe meer is die aantal kere wat verwag word dat so 'n geval sal gebeur.
+
+
+== Voorbeelde ==
+
+
+=== As ek 'n muntstuk opskiet, wat is die kans dat die uitkoms "kop" sal wees? ===
+Dit is voor die hand liggend dat daar 2 moontlikhede is. Dus is die kans/waarskynlikheid dat dit sal gebeur 1 uit elke 2 = 1/2 = 0.5 = 50%
+
+
+=== As ek 3 muntstukke opskiet of een muntstuk 3 keer opskiet, wat is die kans dat die uitkoms 3 keer "kop" sal wees? ===
+Opsie 1:
+Met elke opskiet is daar 2 verskillende kombinasies, dus is die verskillende hoeveelheid kombinasies: 2×2×2 = 23 = 8.
+Dus is die waarskynlikheid/kans dat dit sal gebeur 1 uit elke 8 = 1/8 = 0.125 = 12.5%
+Opsie 2:
+Die waarskynlikheid dat die eerste raai reg is, is 1/2 en die tweede en die derde. Die kans dat al drie raaie reg is, is (1/2)3 = 1/8 = 12.5%
+
+
+=== Wat is die waarskynlikheid dat 'n persoon een van die vier A's uit 'n pak kaarte van 52 sal trek? ===
+Die kans dat 'n persoon die A van harte sal trek is 1/52. Die kans dat die persoon die A van diamante sal trek is 1/52 en so die kans vir die A van klawers en die A van skoppens ook 1/52. Die persoon hoef egter slegs een van die vier A's te trek, dus is dit OF die A van harte, OF die A van diamante, ens. Omdat dit 'n OF is, is die waarskynlikheid die som van die waarskynlikhede. Dus is die waarskynlikheid om een van die vier A's uit die pak kaarte te trek = 1/52 + 1/52 + 1/52 + 1/52 = 4/52 = 0.0769 = 7.7%
+
+
+=== Wat is die waarskynlikheid dat 'n persoon al 4 die A's uit 'n pak kaarte van 52 sal trek? ===
+Omdat die volgorde nie belangrik is nie, is hierdie 'n soortgelyke voorbeeld van 'n kombinasie as die lotery-voorbeeld.
+Opsie 1: Uit eerste beginsels
+Die kans dat die eerste raai reg is, is 4/52.
+Die kans dat die tweede raai reg is, is 3/51 (daar is 3 A's oor en 51 kaarte oor).
+Die kans dat die derde raai reg is, is 2/50 (daar is 2 A's oor en 50 kaarte).
+Die kans dat die vierde raai reg is, is 1/49 (daar is 1 A oor en 49 kaarte).
+Dus, die kans dat al vier kanse reg is, is
+
+  
+    
+      
+        
+          
+            4
+            52
+          
+        
+        ×
+        
+          
+            3
+            51
+          
+        
+        ×
+        
+          
+            2
+            50
+          
+        
+        ×
+        
+          
+            1
+            49
+          
+        
+        =
+        
+          
+            
+              4
+              !
+            
+            
+              52
+              !
+            
+          
+        
+        ×
+        
+          
+            
+              48
+              !
+            
+            1
+          
+        
+        =
+        3.69
+        ×
+        
+          10
+          
+            −
+            6
+          
+        
+        =
+        3.69
+        ×
+        
+          10
+          
+            −
+            4
+          
+        
+        %
+      
+    
+    {\displaystyle {4 \over 52}\times {3 \over 51}\times {2 \over 50}\times {1 \over 49}={4! \over 52!}\times {48! \over 1}=3.69\times 10^{-6}=3.69\times 10^{-4}\%}
+  
+
+Opsie 2: Gebruik die formule vir kombinasies
+n=52 en k=4
+Die aantal verskillende kombinasies = n!/[k!(n-k)!] = 52!/[4!(52-4)!] = 270 725
+Die waarskynlikheid is die resiprook en is dus 1/270 725 = 3.69×10-6 = 3.69×10-4%
+
+
+=== Wat is die waarskynlikheid dat die letters A, B, C en D ewekansig in die volgorde B, C, D, A gerangskik sal word? ===
+Omdat die volgorde belangrik is, is dit 'n permutasie.
+Opsie 1:
+Met die eerste raaiskoot, moet jy uit 4 letters kies, met die tweede raaiskoot uit 3, met die 3de raaiskoot uit 2 en die laaste een is nie 'n raaiskoot nie. Dus is die aantal permutasies = 4×3×2×1 = 4! = 24.
+Opsie 2:
+Alternatiewelik is n = 4 en k = 4. Dus is die aantal permutasies:
+n×(n-1)×(n-2)×...×(n-k+1) = 4×3×...×(4-4+1) = 4×3×....×1 = 24.
+Opsie 3:
+n!/(n-k)! = 4!/0! = 24
+Die waarskynlikheid dat dit sal gebeur is dus 1/24 = 0.01467 = 1.47%
+
+
+=== As 9 vriende vir jou kom kuier, wat is die waarskynlikheid dat Ben, Koos, Gert en Jan, in hierdie volgorde, eerste by jou sal opdaag? ===
+Omdat die volgorde belangrik is, werk ons met 'n permutasie. Dieselfde vriend kan nie meer as een keer opdaag nie (dieselfde item kan dus nie meer as een keer gekies word nie).
+Opsie 1: Eerste beginsels
+Die eerste vriend kan een van 9 wees, die tweede een van 8, ens. Dus is die aantal moontlike permutasies: 9×8×7×6 = 3024
+Opsie 2: Gebruik die formule vir permutasies
+n = 9 en k = 4:
+Aantal permutasies = n×(n-1)×(n-2)×...×(n-k+1) = 9×8×...×(9-4+1) = 9×8×7×6 = 3024
+Opsie 3: Gebruik die alternatiewe formule vir permutasies.
+n!/(n-k)! = 9!/(9-4)! = 9!/5! = 3024
+Die waarskynlikheid daarvan is die resiprook en is dus 1/3024 = 0.003307 = 0.33%
+
+
+=== As 9 vriende vir jou kom kuier, wat is die waarskynlikheid dat Ben, Koos, Gert en Jan, eerste by jou sal opdaag, maar nie noodwendig in hierdie volgorde nie? ===
+Omdat die volgorde nie belangrik is nie, werk ons met 'n kombinasie. Dieselfde vriend kan nie meer as een keer opdaag nie (dieselfde item kan dus nie meer as een keer gekies word nie).
+Opsie 1: Eerste beginsels
+Moet nooit aanvaar dat die volgorde belangrik is nie. Dus is die waarskynlikheid dat enige een van die vier vriende eerste opdaag 4/9, die waarskynlikheid dat een van die 3 oorblywende vriende tweede gaan opdaag is dus 3/8, ens. Dus is die waarskynlikheid:
+
+  
+    
+      
+        
+          
+            4
+            9
+          
+        
+        ×
+        
+          
+            3
+            8
+          
+        
+        ×
+        
+          
+            2
+            7
+          
+        
+        ×
+        
+          
+            1
+            6
+          
+        
+        =
+        
+          
+            
+              4
+              !
+            
+            
+              9
+              !
+            
+          
+        
+        ×
+        
+          
+            
+              5
+              !
+            
+            1
+          
+        
+        =
+        0.007937
+        =
+        0.794
+        %
+      
+    
+    {\displaystyle {4 \over 9}\times {3 \over 8}\times {2 \over 7}\times {1 \over 6}={4! \over 9!}\times {5! \over 1}=0.007937=0.794\%}
+  
+
+Opsie 2: Bepaal die aantal permutasies en deel deur 4! om die aantal kombinasies te kry
+Om die hoeveelheid permutasies te kry: Die eerste vriend kan een van 9 wees, die tweede een van 8, ens. Dus is die aantal moontlike permutasies: 9×8×7×6 = 3024. Die vier vriende kan egter op 4! verskillende maniere by my aankom, dus is die aantal kombinasies 3024/4! = 126
+Opsie 3: Gebruik die formule vir kombinasies.
+n = 9 en k = 4:
+Aantal kombinasies = n!/[k!(n-k)!] = 9!/[4!5!] = 126
+Dus is die waarskynlikheid dat die vier vriende eerste by my gaan opdaag, die resiprook en is dus 1/126 = 0.007937 = 0.794%
+
+
+=== As ek 'n aap voor 'n telefoon sit, wat is die kans dat die aap die getalle 2, 4, 6, 8, 0 in hierdie volgorde sal kies? ===
+Aanvaar dat die aap slegs die getalle 0 tot 9 op die telefoon sal druk en dat wat hy druk, heeltemal ewekansig is.
+Met elke druk van 'n knoppie kan die aap dus 1 uit enige van 10 getalle kies. Dus kan een item meer as een keer gekies word en dus is die hoeveelheid kombinasies: 10×10×10×10×10 = 105
+Dus is die waarskynlikheid dat dit sal gebeur = 1/105 = 0.001%
+
+
+=== As ek 'n aap voor 'n telefoon sit, wat is die kans dat die aap die getalle 2, 4, 6, 8, 0 in enige volgorde sal kies? ===
+Opsie 1:
+Aanvaar dat die aap slegs die getalle 0 tot 9 op die telefoon sal druk en dat wat hy druk, heeltemal ewekansig is.
+Met elke druk van 'n knoppie kan die aap dus 1 uit enige van 10 getalle kies. Dus kan een item meer as een keer gekies word en dus is die waarskynlikheid:
+
+  
+    
+      
+        
+          
+            5
+            10
+          
+        
+        ×
+        
+          
+            4
+            10
+          
+        
+        ×
+        
+          
+            3
+            10
+          
+        
+        ×
+        
+          
+            2
+            10
+          
+        
+        ×
+        
+          
+            1
+            10
+          
+        
+        =
+        
+          
+            
+              5
+              !
+            
+            
+              10
+              
+                5
+              
+            
+          
+        
+        =
+        0.0012
+        =
+        0.12
+        %
+      
+    
+    {\displaystyle {5 \over 10}\times {4 \over 10}\times {3 \over 10}\times {2 \over 10}\times {1 \over 10}={5! \over 10^{5}}=0.0012=0.12\%}
+  
+
+Opsie 2:
+Alternatiewelik kan die aantal permutasies uitgewerk word en dit deel deur k om die aantal kombinasies te kry. Die aantal permutasies = 105.
+Dus is die aantal kombinasies = 105/5! = 833.33
+Die waarskynlikheid is die resiprook en is dus 5!/105 = 0.0012 = 0.12%
+
+
+=== Wat is die waarskynlikheid dat twee mense uit 'n groep van 23 op dieselfde dag verjaar? ===
+Die aantal pare wat 'n mens kan maak uit 'n groep van 23 mense = die aantal kombinasies van 2 mense in 'n groep van 23 =
+
+  
+    
+      
+        
+          
+            23
+            2
+          
+        
+        ×
+        
+          
+            22
+            1
+          
+        
+        =
+        
+          
+            
+              23
+              !
+            
+            
+              21
+              !
+            
+          
+        
+        ×
+        
+          
+            1
+            
+              2
+              !
+            
+          
+        
+        =
+        253
+      
+    
+    {\displaystyle {23 \over 2}\times {22 \over 1}={23! \over 21!}\times {1 \over 2!}=253}
+  
+
+of
+
+  
+    
+      
+        
+          
+            
+              23
+              !
+            
+            
+              2
+              !
+              (
+              23
+              −
+              2
+              )
+              !
+            
+          
+        
+        =
+        
+          
+            
+              23
+              !
+            
+            
+              2
+              !
+              21
+              !
+            
+          
+        
+        =
+        253
+      
+    
+    {\displaystyle {23! \over 2!(23-2)!}={23! \over 2!21!}=253}
+  
+
+Die waarskynlikheid dat twee persone op verskillende dae sal verjaar is 
+  
+    
+      
+        
+          
+            
+              365
+              −
+              1
+            
+            365
+          
+        
+        =
+        
+          
+            364
+            365
+          
+        
+      
+    
+    {\displaystyle {365-1 \over 365}={364 \over 365}}
+  
+
+Die kans dat al 253 pare/kombinasies nie op dieselfde dag sal verjaar nie is 
+  
+    
+      
+        
+          
+            
+              364
+              365
+            
+          
+          
+            253
+          
+        
+        =
+        0.4995
+      
+    
+    {\displaystyle {364 \over 365}^{253}=0.4995}
+  
+
+Dus is die kans dat twee mense wel op dieselfde dag sal verjaar, is: 1 – 49.95% = 50.05%
+
+
+=== Wat is die waarskynlikheid om sekere getalle met twee dobbelstene te gooi? ===
+Die verskillende hoeveelheid kombinasies wat 'n mens met twee dobbelstene kan gooi is 6×6 = 36
+Om 2 te gooi, is daar slegs een moontlike kombinasie: jy moet 'n 1 en 'n 1 gooi. Dus is die waarskynlikheid 1 uit 36. Die volgende tabel wys die waarskynlikheid vir verskillende getalle:
+
+
+== Kyk ook ==
+Kombinasie
+Permutasie
+Waarskynlikheidsleer
+Statistiek
+
+
+== Verwysings ==
+
+
+== Eksterne skakels ==
+ Wikimedia Commons het meer media in die kategorie Waarskynlikheid.

@@ -1,0 +1,96 @@
+Algoritmas (lot. Algorismus < Algorithmi < arab. Al Chorezmi) – griežtų taisyklių, pagal kurias atliekamos operacijos, seka, leidžianti išspręsti matematikos ar logikos uždavinius.
+Algoritmo koncepciją iliustruoja paprasčiausias kiaušinių išvirimo receptas, kuris galėtų būti toks:
+
+Algoritmo pradžia.
+paimti puodą (sąlyga: kad tilptų vandens apsemti n kiaušiniai);
+į puodą įdėti n sveikų kiaušinių (jeigu netelpa n kiaušinių – paimti didesnį puodą arba sumažinti kiaušinių kiekį n-1);
+pripilti vandens;
+uždėti puodą ant viryklės;
+įjungti viryklę;
+virti (jeigu norime skystai virto kiaušinio – 5 minutes, jei kietai – 15 minučių).
+išjungti viryklę
+nuimti puodą
+išpilti karštą vandenį
+įpilti šaltą vandenį ir palaikyti 1 min.
+išimti kiaušinius
+Algoritmo pabaiga.
+
+
+== Panaudojimas ==
+Dažniausiai algoritmo sąvoka naudojama informatikoje užrašant kompiuterines programas. Tokiu atveju algoritmų užrašymui naudojami įvairūs susitarimai – programavimo kalbos. Dažniausiai mokymosi tikslams naudojama Pascal programavimo kalba arba pseudokalba, kai norime algoritmą publikuoti viešai.
+
+
+== Algoritmas kasdieniniame gyvenime ==
+Gyvenime dažnai susiduriame su algoritmo sinonimais: instrukcijomis, nurodymais ir taisyklėmis, kurių nežinodami negalėtume atlikti tam tikrų veiksmų. Tačiau kartais šie aprašymai stokoja tikslumo. Taigi bendrai algoritmą būtų galima apibūdinti kaip  tikslių nurodymų seką tam, kas turės atlikti konkrečią užduotį. Daugelį kasdieninės veiklos rezultatų pasiekiame net nesusimąstydami, kad vykdome tam tikrą algoritmą (sinonimai psichologijoje: įprotis, įgūdis, įgimtas ar įgytas refleksas). Jie mums reikalingi: išgyventi (savisaugai), prisitaikyti (adaptacijai), reikiamai vietovei pasiekti, prietaisams įjungti, išjungti bei naudoti, pirmajai pagalbai suteikti, maistui pagal receptą gaminti, matematiniams uždaviniams spręsti ir pan. Pagaliau, mūsų visą dieną (įvardinus jos tikslus) galima būtų pavadinti algoritmu, nes ji turi savo dienotvarkę, t. y. veiksmų atlikimo tvarką. Kartais sukeitus algoritmo veiksmus rezultatas nepakinta. Tačiau vykdant kai kuriuos algoritmus veiksmų sukeitimas gali sugriauti visą tolimesnę algoritmo eigą.
+
+
+== Privalomos sąlygos ==
+Algoritmas turi patenkinti šias sąlygas:
+
+jis turi atlikti darbą;
+jis turi būti aiškus ir nedviprasmiškas;
+jis turi apibrėžti žingsnių seką, reikalingą darbui atlikti, t. y. jis turi nurodyti žingsnių atlikimo tvarką.
+Informatikoje dažnai dar reikalaujama, kad algoritmas būtų baigtinis dviem prasmėm:
+atliekamų žingsnių skaičius turi būti baigtinis, t. y. algoritmas turi tikrai baigti darbą;
+kiekvienam žingsniui atlikti turi pakakti baigtinio laiko ir baigtinių resursų, t. y. kiekvienas žingsnis turi būti toks, kad jį būtų galima atlikti.
+Reikalavimai 4-5 garantuoja, kad algoritmas bus baigtas baigtiniu laiku ir su baigtiniais resursais. Algoritmai, tenkinantys tik sąlygas 1-3, vadinami daliniais (angl. partial) algoritmais, o tenkinantys visas penkias sąlygas – pilnais (angl. total) algoritmais.
+
+
+== Algoritmo vykdymas ==
+Parašytas algoritmas yra perduodamas vykdytojui. Vykdytojas gali realizuoti algoritmą, jei yra tam tinkama aplinka. To paties algoritmo efektyvumas (greičio, atminties, patogumo vartotojui ar kitu parametru atžvilgiu) dažniausiai priklauso nuo pasirinktos aplinkos ir sprendimo metodo.
+Sudėtingesnių algoritmų sukūrimas, aprašymas bei įdiegimas dažniausiai yra nelengvas darbas, reikalaujantis specialių žinių. Tačiau jų kainą gana greitai atsiperka, jei įdiegti algoritmai vykdomi daug kartų. Vienam vykdytojui algoritmas gali būti aiškus ir nedviprasmiškas, o kitam – visai nesuprantamas. Nuo vykdytojo tiesiogiai priklauso, kokius primityvus galima naudoti, apibrėžiant veiksmus. Jei vykdytojas ne žmogus, algoritmą reikia pateikti specifine, tam vykdytojui priimtina forma, pavyzdžiui, specialia algoritmine kalba. Jei mes turime algoritmą, išreikštą vykdytojo operacijomis, tai jį užrašyti ar perrašyti vienokia ar kitokia kalba nėra sudėtinga.
+Informatikoje kaip vykdytojas dažniausia – kompiuteris. Pagrindinės idėjos:
+
+kompiuteriai apdoroja duomenis, išreikštus simboliais;
+jie kontroliuojami instrukcijomis, kurios ir sudaro algoritmą;
+instrukcijos irgi pateikiamos mašinai kaip simbolių seka.
+Taigi viskas, ko reikia algoritmų pateikimui kompiuteriui, tai kalba patogiam instrukcijų užrašymui.
+
+
+== Algoritmo savybės ==
+Kai automatizuojamas sudėtingas procesas, tenka jo struktūroje išskirti atskirus etapus, o šiuos vėl gali tekti skaidyti i paprastesnius, t. y. taikomas dekompozicijos principas. Jei šioje uždavinio sprendimo etapų sekoje bus bent vienas, neduodantis teisingo atsakymo,
+visas uždavinys liks neišspręstas. Kartais taip gali atsitikti tiesiog dėl duomenų trūkumo.
+Algoritmams būdingos tokios bendrosios savybės:
+
+ Diskretumas: algoritmas skaidomas į tiksliai aprašytus vykdymo žingsnius.
+Baigtumas: algoritmas turi turėti pabaigą.
+Rezultatyvumas: algoritmas visada turi pateikti konkretų rezultatą (jei jis egzistuoja)
+arba paaiškinimą, kodėl jis negautas.
+
+Aiškumas: algoritmas turi būti pateikiamas taip, kad jį visi vienareikšmiškai suprastų.
+Universalumas: algoritmas turi tikti bet kokiems duomenimis.Paprastas pavyzdys – elektroninio laiško kūrimas: pradiniai duomenys – reikia turėti adresą A,
+reikia turėti laišką L, gali būti ir laiško priedai P. Rezultatas R bus arba išsiųstas, arba neišsiųstas laiškas. O neišsiųsti laiško galime tuo atveju, jei nebus internetinio ryšio.
+Taigi, laiškų siuntimo algoritmą aprašysime kaip vykdomų veiksmų sąrašą:
+Darbo pradžia (įjungti kompiuterį)
+
+Tikrinti, ar yra ryšys su internetu:
+jei taip, vykdyti antrą žingsnį;
+jei ne, vykdyti aštuntą žingsnį.
+Iškviesti pašto programą.
+Įvesti A, rašyti laišką (L).
+Tikrinti, ar reikia siųsti priedus (P):
+jei taip, vykdyti penktą žingsnį;
+jei ne, vykdyti šeštą žingsnį.
+Pridėti prie laiško priedų failus.
+Išsiųsti laišką.
+Nustatyti kintamojo R reikšmę „Išsiųsta“. Baigti darbą.
+Nustatyti kintamojo R reikšmę „Neišsiųsta“.
+Darbo pabaiga (baigti darbą su elektroninio pašto programa).
+Algoritmas turi patenkinti šias sąlygas:
+jis turi atlikti darbą;
+jis turi būti aiškus ir nedviprasmiškas;
+jis turi apibrėžti žingsnių seką, reikalingą darbui atlikti, t. y. jis turi nurodyti žingsnių atlikimo tvarką.
+Informatikoje dažnai dar reikalaujama, kad algoritmas būtų baigtinis dviem prasmėm:
+atliekamų žingsnių skaičius turi būti baigtinis, t. y. algoritmas turi tikrai baigti darbą;
+kiekvienam žingsniui atlikti turi pakakti baigtinio laiko ir baigtinių resursų, t. y. kiekvienas žingsnis turi būti toks, kad jį būtų galima atlikti.
+Reikalavimai 4-5 garantuoja, kad algoritmas bus baigtas baigtiniu laiku ir su baigtiniais resursais. Algoritmai, tenkinantys tik sąlygas 1-3, vadinami daliniais (angl. partial) algoritmais, o tenkinantys visas penkias sąlygas – pilnais (angl. total) algoritmais.
+
+
+== Algoritmų dizaino paradigmos ==
+iteratyvus;
+skaldyk ir valdyk;
+algoritmai naudojantys abstrakčius duomenų tipus (ADT);
+dinaminis programavimas;
+
+
+== Šaltiniai ==

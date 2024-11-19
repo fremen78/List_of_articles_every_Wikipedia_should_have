@@ -1,0 +1,160 @@
+Logika (gr. λόγος, logos 'žodis, reikšmė'; žr. žodyne) – filosofijos mokslo šaka, tirianti priimtinus samprotavimo būdus; plačiąja prasme – taisyklingas mąstymas, samprotavimų eiga, sveikas protas, vidinis dėsningumas.
+Šnekamojoje kalboje logika dažniausiai vadinamas samprotavimų analizavimas. Tradiciškai logika buvo mokoma kaip filosofijos dalis, bet jau du šimtmečius logika studijuojama ir kaip matematikos, o paskutiniais dešimtmečiais – kaip kompiuterių mokslo dalis. Kaip mokslas, logika tyrinėja ir klasifikuoja sakinių ir argumentų struktūrą, apibrėžia aprašymo schemą, nagrinėja tikimybės santykį su priežastingumu, teisingus ir klaidingus teiginius ir paradoksus.
+Panašiai, kaip mokėjimas kalbėti egzistavo dar iki kalbotyros mokslo atsiradimo, taip ir taisyklingas mąstymas buvo ir iki logikos mokslo susiformavimo. Loginės operacijos: apibrėžimas, klasifikacija, įrodymas, paneigimas ir kt. dažnai naudojamos kasdien, tačiau nesąmoningai ir su paklaidomis. Kai kurie žmonės linkę laikyti savo mąstymą natūraliu procesu, nereikalaujančiu analizės ir kontrolės daugiau, negu sakykim kvėpavimas ar judėjimas. Tačiau realus mąstymas nėra tik paprasta loginė seka – sprendžiant kilusius uždavinius dažnai svarbu ir nuoseklumas, ir intuicija, ir emocijos, ir pasaulėžiūra ir kt.
+Logikos teorija naudoja specialią dirbtinę kalbą. Todėl kartais atrodo, kad apie paprastus dalykus kalbama pernelyg sudėtingai.
+Logikos mokslą sudaro daug teorijų. Pati paprasčiausia ir labiausiai žinoma yra teiginių logika, nagrinėjanti teiginių loginius ryšius. Kitos žinomiausios teorijos – predikatų logika, modalinė logika, silogistika.
+
+
+== Natūra ==
+
+
+=== Rūšys ===
+Formalioji logika yra paprastos kalbos argumentų mokslas. Klaidingos argumentacijos mokslas yra ypač svarbi neoficialios logikos šaka. Platono dialogai yra puikus neoficialios logikos pavyzdys.
+Neformalioji logika yra išvadų darymo mokslas. Aristotelio darbai yra puikus oficialios logikos pavyzdys.
+Simbolinė logika yra simbolinių abstrakcijų mokslas. Simbolinė logika yra dažnai skirstoma į dvi šakas: teiginių logika ir predikatų logika.
+Matematinė logika yra simbolinės logikos tąsa kitose srityse: modelių teorijoje, įrodymų teorijoje, aibių teorijoje, rekursijų teorijoje.
+
+
+=== Loginė forma ===
+Kadangi logika analizuoja ir perteikia tam tikrų pagristų argumentų formą (arba loginę formą), ji visuotinai pripažįstama kaip formalioji. Argumento forma yra užrašoma ir pateikiama pagal formaliosios gramatikos taisykles, naudojant loginės kalbos simbolius. Paprasčiau sakant, formalizacija yra vertimas iš lietuvių kalbos į logikos kalbą.
+Šnekamosios, kasdienės kalbos sakiniai gali būti įvairios sudėties, sudėtingų formų, todėl jų naudojimas yra nepraktiškas, apsunkinantis suvokimą. Dėl šios priežasties ir yra naudojama loginė argumento forma. Joje praleidžiami gramatiniai kalbos bruožai, kurie logikoje yra nereikšmingi (pavyzdžiui, giminė ir linksnis), nereikalingi jungtukai (tokie kaip „bet“) pakeičiami loginėmis jungtimis (pvz., „ir“), o dviprasmiški bei tiksliai neapibrėžti loginiai išsireiškimai („kiekvienas“, „bet kuris“, kt.) – standartinėmis išraiškomis (pvz., „visi“ arba universaliu ženklu ∀). Tam tikros sakinių dalys turi būti pakeistos į raides. Pavyzdžiui, sakinys „visi A yra B‘ parodo loginę formą, kuri tinka apibrežti tokiems sakiniams kaip „visi žmonės yra mirtingi“, „visos katės yra mėsėdės“, „visi graikai yra filosofai“ ir t. t.
+Ši loginės formos idėja yra esminė logikoje ir buvo iškelta jau senovėje. Aristotelis savo veikale apie silogistiką) naudojo skirtingas raides, kurios atitiko tam tikras pagrįstas išvadas (lenkų logikas ir filosofas Jan Łukasiewicz teigė, kad kintamųjų naudojimas buvo „vienas svarbiausių Aristotelio atradimų“). Pagal Aristotelio sekėjus, tik tie loginiai principai, kurie pateikti schematiškai, o ne tie, kurie apibrėžti konkrečiais terminais, priklauso logikai. Konkretūs terminai (tokie kaip „žmogus“, „mirtingas“, kt.) yra lygūs tam tikrų žymių (tokių kaip „A“, „B“, „C“, kt.), graikų vadintų išvadų „materija“ (gr. „hyle“), vertei. Esminis skirtumas tarp modernios formaliosios logikos ir tradicinės (arba Aristotelio) logikos slypi skirtingose loginės formos sakinių analizėse.
+
+Pagal tradicinį požiūrį, sakinio forma susideda iš (1) subjekto (pvz., „žmonės“) ir prie jo pridėto kiekybę žyminčio žodžio (pvz., „visi“, „nė vienas“, „kai kurie“); (2) jungties „yra“ arba: nėra“; (3) predikato (pvz., „mirtingas). Pagal šią formą galima sudėti teiginį „visi žmonės yra mirtingi“. Tai yra fiksuota forma, kurioje kiekviena sakinio dalis turi nustatytą kiekį ir jungtį.
+Pagal modernų požiūrį, esminė paprasto sakinio forma yra pateikiama naudojant rekursinę struktūrą, įtraukiant logines jungtis. Modernus požiūris yra sudėtingesnis, nes vienam Aristotelio sistemos sprendimui prireiks dviejų ar daugiau loginių jungčių. Pavyzdžiui, sakinyje „visi žmonės yra mirtingi“ yra du „neloginiai“ terminai: „yra žmogus“ (pažymėtas M) ir „yra mirtingas“ (pažymėtas D); todėl sakinys gali būti užrašytas kaip A(M,D). Predikatų logikoje, sakinyje yra du „neloginiai“terminai, čia pažymėti kaip m(x) ir d(x), o sakinys gali būti užrašytas kaip, įtraukiant logines jungtis ir implikaciją.
+Lyginant abu požiūrius, modernus yra veiksmingesnis; viduramžių logikai atrado problemą, kurios nebuvo galima išspręsti naudojantis Aristotelio logika. Tokie sakiniai kaip „Kai kurios pelės bijo bent vienos katės“ turi du kiekybę nusakančius išsireiškimus („kai kurios“ ir „bent vienos“), o Aristotelio pasiūlyta griežta struktūra leidžia tik vieną tokį išsireiškimą. Tiek normaliai kalbai, tiek ir logikai reikia rekursinės struktūros.
+
+
+=== Dedukcinis ir indukcinis samprotavimas ===
+Dedukcinis samprotavimas parodo, kas seka iš duotų premisų (jei a, tai b). Indukcinis samprotavimas – tai procesas, kurio metu iš prielaidų gaunama tikėtina išvada – kartais taip pat yra įtraukiamas į logikos studijas. Atitinkamai, turime atskirti dedukcinio ir indukcinio samprotavimo pagrįstumą. Išvada yra dedukciškai pagrįsta jei ir tik jei nėra tokios situacijos, kurioje visos premisos yra teisingos, bet išvada yra klaidinga. Indukciniu samprotavimu grindžiama išvada yra nei tikėtina, nei netikėtina; jo premisos suteikia tik tam tikrą kiekį pagrįstumo, tačiau išvada yra tik tikėtina.
+Dedukcinio pagrįstumo sąvoka gali būti griežtai naudojama formaliojoje logikoje dėl lengvai suprantamų semantinių sąvokų. Indukcinis pagrįstumas, kitą vertus, reikalauja apibrėžti tam tikrą kiekį stebėjimų (prielaidų). Tokio apibrėžimo pateikimui galima naudoti įvairius būdus, kai kurie iš jų ne tokie formalūs kaip kiti, kartais tokiais atvejais naudojamas matematinės tikimybės skaičiavimo modelis. Tačiau daugiausiai logikoje kalbama apie dedukcinę logiką.
+
+
+=== Nuoseklumas, pagrįstumas, užbaigtumas, teisingumas ===
+Dauguma loginių samprotavimų turi kelias svarbias savybes:
+
+Nuoseklumas – visos samprotavimo teoremos negali prieštarauti viena kitai.
+Pagrįstumas – remiantis samprotavimo įrodymo taisyklėmis, iš teisingų prielaidų niekada negali sekti neteisingos išvados. Loginis samprotavimas bus teisingas tik tada, kai bus pagrįstas, ir naudosis prielaidomis, kurių teisingumą galima įrodyti (arba, aksiomų atveju, prielaidomis, kurios visuotinai laikomos teisingomis).
+Užbaigtumas – jei teorema teisinga, tai ją galima įrodyti.
+Teisingumas – samprotavimo prielaidos yra teisingos, o įrodymas yra svarus.
+Kai kurie loginiai samprotavimai neturi visų keturių savybių. Pavyzdžiui, Kurto Gėdelio neužbaigtumo teoremos parodo, jog pakankamai sudėtingi aritmetiniai loginiai samprotavimai negali būti nuoseklūs ir užbaigti.
+
+
+=== Kitos logikos sampratos ===
+Imanuelis Kantas (Immanuel Kant) manė, jog logika turėtų būti suvokiama kaip mokslas apie nuomonę ir sprendimą. Ši idėja buvo pasiskolinta iš Gotlobo Fregės (Gottlob Frege) loginių ir filosofinių darbų, kur mintį (vokiškai: Gedanke) pakeitė sprendimas (vokiškai: Urteil). Remiantis šia samprata, teisingos išvados seka iš struktūrinių sprendimų ar minčių savybių.
+
+
+== Istorija ==
+Patys seniausi aptikti darbai logikos tema buvo parašyti Aristotelio. Aristoteliška logika buvo plačiai naudojama Vakarų moksle bei matematikoje iki XIX amžiaus pradžios. Aristotelio logikos sistemos dėka atsirado tokios naujos logikos rūšys kaip laikinoji modalinė logika bei induktyvinė logika, sukurtos naujos sąvokos, pavyzdžiui, hipotetinis silogizmas. Vėlyvųjų viduramžių metu Europoje buvo stengiamasi parodyti, kad Aristotelio idėjos neprieštaravo krikščionių tikėjimui. Tuo metu logika tapo pagrindiniu filosofų dėmesio centru, vyko aktyvi filosofinių ginčų loginė analizė.
+Kinų logikos filosofas Gongsunas Longas (Gongsun Long) III a. pr. m. e. iškėlė paradoksą „Vienas ir vienas negali pavirsti dvejais, nes nė vienas nepavirsta dvejais“. Vis dėlto, mokslinio logikos tyrinėjimo tradicija Kinijoje buvo pažabota Cinų dinastijos, kai įsigalėjo Hano Feizi (Han Feizi) legalistų filosofija.
+Aristoteliška logika darė stiprią įtaką vėlesnei logikai Islamo filosofijoje, ypač Avicenos logikai.
+Indijoje inovacijos scholastinėje mokykloje, vadintoje Nyaya, tęsėsi nuo senovės laikų iki ankstyvo XVIII amžiaus, kai išsivystė Navya-Nyaya mokykla. Iki XVI a. Nyaya mokykla sukūrė teorijas, atspindinčias šiuolaikinę logiką, pavyzdžiui, Gotlobo Fregės (Gottlob Frege) „teisingų vardų reikšmės ir paminėjimo skirtingumą“ ir jo „skaičių definiciją“, taip pat „apribojančių universalo sąlygų“ teoriją, numatančią šiuolaikinių teorijų rinkinio plėtrą. Nuo 1824 m. indų logika patraukė daugelio Vakarų mokslininkų dėmesį ir darė įtaką svarbiems XIX amžiaus logikams Čarlzui Babadžui (Charles Babbage), Augustui De Morganui (Augustus De Morgan) ir Džordžui Būlui (George Boole). XX a. Vakarų filosofai Stanislavas Šajeris (Stanislaw Schayer) ir Klausas Glashofas (Klauss Glashoff) taip pat plačiai tyrinėjo indų logiką.
+Aristotelio išvystyta silogistinė logika dominavo Vakaruose iki XIX a. Vidurio, kai susidomėjimas atradimais matematikoje paskatino simbolistinės (matematinės) logikos plėtrą. 1854 m. Džordžas Būlas (George Boole) išleido „An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities“, pristačiusią simbolistinę logiką ir taip vadinamos Būlianinės (Boolean) logikos principus. 1879 m. Gotlobas Fregė (Gottlob Frege) išleido „Begriffsschrift“, kurioje modernioji logika buvo papildyta kvantoriaus notacijos atradimu. Nuo 1910 iki 1913 m. Alfredas Norfas Vaithedas (Alfred North Whitehead) ir Bertrandas Ruselas (Bertrand Russell) išleido „Principia Mathematica“ apie matematikos pagrindą, kuriame bandoma nustatyti matematines tiesas pagal aksiomas ir simbolistinės logikos išvadų taisykles. 1931 m. Giodelis (Gödel) iškėlė rimtas fundatalistinės programos problemas ir logika liovėsi fokusuotis į šią programą.
+Nuo Fregės (Frege), Ruselo (Russell) ir Vitgenšteino (Wittgenstein) laikų logikos plėtra darė didelę įtaką filosofijos praktikai ir suvokiamai filosofinių problemų prigimčiai, taip pat matematinei filosofijai. Logika, ypač sentencinė, panaudota kompiuterių loginėse grandinėse ir yra svarbi kompiuterių mokslui. Logika dažnai dėstoma universitetų filosofijos fakultetuose, dažnai kaip privalomoji disciplina.
+
+
+== Logikos temos ==
+
+
+=== Silogistinė logika ===
+
+Organonas buvo pagrindinis Aristotelio darbo įrankis logikoje. Kartu tai buvo pirmasis aiškus darbas formalioje logikoje pristatant silogistiką. Silogistinės logikos dalys, taip pat žinomos kaip tradicinės logikos dalys yra sprendimų analizė į pasiūlymus, sudarytus iš dviejų teiginių, kurie yra susiję silogizmu, besidalinančių bendra sąvoka: prielaida ir išvada.
+Aristotelio darbai buvo laikomi kaip visiškai parengta sistema. Europoje ir Artimuosiuose rytuose taip pat. Tačiau jis nebuvo vienas: stoicistai pasiūlė teiginių logikos sistemą, studijuotą viduramžių logikų. Be to, viduramžiais išliko bendrumo problema. Nepaisant to, problemos su silogistine logika nebuvo reikalingos revoliuciniams sprendimams.
+Šiandien kai kurie mokslininkai teigia, kad Aristotelio sistema yra vertinama, kaip turinti šiek tiek daugiau nei vien istorinę vertę (dabar norima išplėsti logikos terminą). Kiti naudoja Aristotelio argumentacijos teoriją siekiant padėti plėtoti ir kritiškai išsiaiškinti argumentacijos schemas, kurios yra naudojamos dirbtinio intelekto ir teisiniuose argumentuose.
+
+
+=== Teiginių logika ===
+
+Teiginių skaičiavimas arba logika yra formali sistema, kurioje formulės gali būti sudaromos keičiant teiginius, taip pat naudojant logines jungtis. Logikoje įrodymo taisyklės leidžia tam tikras formules vadinti teoremomis.
+
+
+=== Predikatų logika ===
+
+Predikatų logikoje yra bendras terminas formalioms sistemoms, tokioms kaip pirmos eilės logika, antros eilės logika, daugiarūšė logika ir infinitary logika.
+Predikatų logika apima kiekių skaičių, tiek kiek reikia išreikšti, plačiam argumentų skaičiui kasdieninėje kalboje. Aristotelio silogistinė logika nurodo mažą formų skaičių, kurios yra tiesiogiai susijusi dalis, sprendimams priimti. Predikatų logikoje sakiniai turi subjektą ir argumentą, kurie gali būti analizuojami keliais papildomais būdais, todėl predikatų logikoje galima išspręsti bendrumo problemą, kuri buvo suklaidinusi viduramžių logikus.
+Predikatų logikos vystymasis siejamas su Gotlobu Frege, kuris taip pat yra vienas iš pasekėjų analitinės filosofijos. Šių dienų predikatų logikos formuluotė, pristatyta matematinės logikos principuose 1928 m., siejama su Davidu Hilbertu ir Vilhelmu Akermanu. Predikatų logikos analitinis bendrumas gali būti matematikos formalizacija per aibių teorijų tyrimą. Tai buvo Alfredo Tarskio šuolis į modelio teoriją, o tai reiškia pagrindą šiuolaikinei matematiniai logikai.
+Frege predikatų logikos sistema buvo labiau antros nei pirmos eilės. Antros eilės logika aiškiai buvo ginama Džordžo Bolo ir Stiuarto Šapiro nuo tokių kritikų kaip Vilardas Van Omanas Keinas ir kitų.
+
+
+=== Modalinė logika ===
+
+Skirtingose kalbose, modalumas susijęs su reiškiniu, kad sakinio dalys gali turėti savo semantiką, kurią keičia specialūs veiksmažodžiai arba modalinės dalelės. Pavyzdžiui: „Mes einame žaisti“ gali būti perdarytas taip „Mes turėtume eiti žaisti“, ir „Mes galime eiti žaisti“ arba „Mes eisime žaisti“. Bendriau galima sakyt jog modalumą įtakoja aplinkybės, kuriom esant tenkinamas teiginys.
+Loginius tyrimus apie modalumą vykdė jau Aristotelis. Jam rūpėjo būtinumo ir galimybės, kurių dvylipumą jis matė De Morgano dėsniuose, aletiniai modalumai. Nors būtinybės ir galimybės studijos išliko svarbios filosofams, buvo mažai naujovių iki pat žymių Clarence Irving Lewis tyrimų 1918 m. Jis išplėtė modalumo rūšis, įtraukdamas deontinės logikos ir episteminės logikos rūšis.
+
+
+=== Neformalus motyvavimas ===
+
+Senovėje, motyvacija logikos studijoms buvo aiški: taip yra, nes vienas išmoks gerus argumentus atskirti nuo blogų, ir tokių būdu tapti veiksmingu diskusijose ir iškalbiu oratoriumi, galbūt taip pat tapti geresniu žmogumi. Pusė Aristotelio Organonų traktuoja išvadą, kad tai atsiranda neoficialioje aplinkoje, šalia Silogistinių atradimų, ir Aristotelio mokykloje šie logikos darbai papildė Aristotelio požiūrį į retoriką. Ši senovės motyvacija vis dar gyva, nors ir neužima pagrindinės vietos logikos paveiksle; paprastai dialektinė logika sudaro kurso pagrindą kritiškame mąstyme, tai privalomas kursas daugelyje universitetų.
+Argumentacijos teorija yra neformaliosios logikos mokslas ir ieškojimai, nuklydimai ir svarbūs klausimai, kurie susiję su kiekviena diena ir praktinėmis situacijomis. Konkretūs dialogų tipai gali būti analizuojami ir kvestionuojami, siekiant atskleisti prielaidas, išvadas ir klaidingą argumentaciją. Argumentacijos teorija šiais laikais naudojama teisėje bei kuriant dirbtinį intelektą.
+
+
+=== Matematinė logika ===
+
+Matematinė logika skirstoma į dvi atskiras mokslo šakas. Pirmoji logikos formulių panaudojimas matematikoje ir matematiniuose įrodymuose. Antra matematikos metodų naudojimas analizuoti formalią logiką.
+
+
+=== Filosofinė logika ===
+
+Filosofinė logika susijusi su formaliu natūralios kalbos aprašymu. Dauguma filosofų tvirtina, kad radus tinkamą metodą galima rasti samprotavimo branduolį, jei tik pavyksta kasdienę kalbą paversti logine. Filosofinė logika iš esmės yra tradicinių sekų, kurios buvo vadinamas „Logika“ (iki matematinės logikos termino išradimo), tęsinys. Filosofinė logika turi daug didesnį ryšį su natūraliaja kalba nei su pačia logika. Tikriausiai dėl to, filosofijos logikai išrado daugybę nestandartinių logikos šakų, įprastų logikos metodų patobulinimų ir nestandartinių semantinių taisyklių (pvz., Kripkės logikos semantikos įvertinimo technika).
+Logika ir kalba filosofija yra glaudžiai susiję. Kalbos filosofija analizuoja, kaip mūsų kalba sąveikauja su mąstymu. Logika turi tiesioginį poveikį kitų mokslo sričių tyrimams. Logikos ir jos ryšio su kasdiene kalba studijavimas gali padėti žmogui svariau pateikti savus arba sukritikuoti kitų argumentus. Daugybė puliarių argumentų yra pilni klaidų, nes žmonės dažnai nėra mokęsi logikos ir neatkreipia dėmesio į formuluojamų teiginių teisingumą.
+
+
+=== Logika ir skaičiavimas ===
+
+Logika tapo kompiuterio širdies centru, kai buvo atrasta tvarka: Alano Turingo darbai „Entscheidungsproblem“, sekę Kurto Gödelio darbus su nebaigtumo teoremomis, buvo labai svarbūs pagrindinei kompiuterio kilmei, dabartiniam jo tikslui bei tuometiniams kompiuterių kūrėjams nuo 1940-ųjų.
+XX a. 6-7 dm., tyrinetojai spėjo, kad pasitelkus logiką, žmogaus mąstymas gali būti išreikštas matematiniais simboliais. Taip būtų galima sukurti mašinas su dirbtiniu intelektu. Tai pasirodė esą daug sunkiau, nei atrodė iš pradžių, dėl žmogaus samprotavimo sudėtingumo. Loginiame programavime visos programos sudaromos iš aksiomų ir taisyklių. Loginio programavimo sistemos tokios kaip „Prolog“ skaičiuoja taisyklių ir aksiomų eilės tvarką, kad atsakytų į užlausą.
+Šiandien logika yra plačiai taikoma Dirbtinio Intelekto ir Kompiuterių mokslų srityse, kurios aprūpina formaliąją bei neformaliąją logiką problrmomis. Vienas geriausių logikos taikymo dirbtinio intelekto srityje pavyzdžių – argumentavimo teorija. Kompiuterių mokslų klasifikavimo sistema ACM (Computing Classification System) šiuo atveju:
+
+F.3 skyriuje apie logika ir programų prasmę, F.4 dėl matematinės logikos ir formalios kalbos kaip kompiuterių mokslo teorijos: šis darbas apima formaliųjų programavimo kalbų semantika, taip pat formaliosios logikos darbus.
+Booleano logika, kaip pagrindinė kompiuterio operacinės sistemos prasmė: aritmetinė ir loginė operatorių „ir“, „ne“ ir „arba“ sistema.
+Daugelis fundamentaliosios logikos formalizmų yra esminiai I.2 skyriuje, kalbant apie dirbtinį intelektą.
+Be to, kompiuteriai gali būti naudojami kaip logikų įrankiai. Pavyzdžiui, simbolinėje ar matematinėje logikoje. Naudojant automatizuotą įrodymo teoremą, mašinos gali rasti ir patikrinti įrodymus, taip pat dirbti su jais, pernelyg ilgai netruktume rašydami juos ranka.
+
+
+== Kontroversijos ==
+
+Deja atsiranda ir nesutarimų dėl klausimo, apie ką vis dėlto yra logika, todėl kyla ginčų dėl logikos tiesų.
+
+
+=== Bivalentingumas ir „trečio negalimo“ dėsnis ===
+
+Hegelis ne tik ištobulino savo dialektikos logiką, kuri papildė Kanto transcendentinę logiką, bet ir sugrąžino mus ant žemės, užtikrindamas, kad „nei danguje, nei žemėje, nei proto pasaulyje, nei gamtoje, nėra tokio abstraktumo kaip „ arba-arba “, kaip teigia supratimas. Viskas, kas egzistuoja, yra konkretu, su skirtumo ir opozicijos savyje“.
+1910 m. Nikolajus A. Vasilijevas atmetė „trečio nereikalingo“ taisyklę, pasiūlydamas „ketvirto nereikalingo“ taisyklę ir logiką, tolerantišką prieštaravimui. XX a. pr. Jan Łukasiewicz ištyrė tradicinio tiesa/klaida metodo variantą ir įvedė nauja, „įmanoma“ reikšmę.
+Nuo tada tokioms logikos rūšims kaip neapibrėžtoji logika suteiktas „tiesos laipsnis“, apibrėžiamas skaičiumi nuo 0 iki 1.
+Intuicijonistinė logika L.E.J. Brouwerio buvo pasiūlyta matematikos sričiai, pagrįstai jo „trečio nereikalingo“ taisyklės atmetimu bei intuicijonizmu. Brouweris atmetė matematikos formalizaciją, bet jo mokinys Arendas Heytingas formaliai studijavo intuicijonistinę logika, kaip ir Gerhardas Gentzenas. Intuicijonistinė logika sukėlė didelį susidomėjimą kompiuterių mokslininkams, nes tai buvo konstruktyvioji logika, taigi būtent tai tada „išmoko“ kompiuteris.
+Nors modalinė logika yra laikoma netradicine logikos rūšimi, tačiau ji dažniausiai formalizuojama „trečio nereikalingo“ principu, todėl šis įtraukimas abejotinas.
+
+
+=== „Ar logika empirinė?“ ===
+Kas yra epistemologinis statusas įstatymų teisės logikoje? Kokie argumentai yra tinkami apibūdinant teiginių logikos principus? Viename gerai žinomame logikos veikale „Ar logika empirinė?“ Hilary Putnam teigia, jog apskritai, teiginių logikos prielaidos turi panašius epistemologinius statusus kaip ir faktai apie fizinę visatą, pavyzdžiui: mechanikos ar bendrosios reliatyvumo teorijos taisyklės ir apskritai viskas, ką fizikai šiandien žino apie kvantinę mechaniką, sudaro didžiulę klasikinės logikos dalį. Kalbėdami apie fizikinius fenomenus, dar vadinamus kvantinės teorijos principais, turime atmesti distribucijos principus ir pakeisti klasikinę logiką kvantine logika, kuri buvo pasiūlyta Garrett Birkhoff ir John von Neumann.
+Kitame veikale tuo pačiu pavadinimu autorius Sir Michael Dummet teigia, jog Putnamas siekė realizuoti distribucijos teisės mandatus. Logikos distribucija yra būtina, norint suprasti ir realistiškai įvertinti, ar teiginiai yra teisingi, tuo pačiu būdu kaip jis įvertino bivalencijos principus. Taigi, klausimas „Ar logika empirinė?“ natūraliai veda prie esminių metafizikos teorijų supriešinimo ir tuo pačiu supriešina realizmą su anti-realizmu.
+
+
+=== Implikacija: tiksli ar materiali? ===
+Akivaizdu, kad klasikinės logikos pagalba formalizuotą sąvoką yra sudėtinga išversti į natūraliąją kalbą su reikšmėmis „, jei … tada… „, nes tuomet gali kiti daug problemų vadinamų materialiosios implikacijos paradoksais.
+Pirmąją paradoksų klasę sudaro supriešintos prielaidos, tokios kaip “Jei mėnulis yra iš sūrio, tai 2+2=5”, iš kurių seka klaidinančios išvados, nes natūraliojoje kalboje ekspozicinis principas yra nevartojamas. Šios paradoksų klasės išskyrimas pastūmėjo C.I. Lewis suformuluoti griežtosios implikacijos sąvoką.
+Antrajai paradoksų klasei priklauso perteklinės premisos, klaidinga manyti, jog žinant galutines išvadas, žinome ir pirmines prielaidas: „Jei tas žmogus bus išrinktas, močiutė numirs“. Iš esmės išvada yra teisinga, atsižvelgiant į tai, kad močiutė serga mirtina liga, bet tai nėra niekaip susiję su minėto žmogaus rinkimais. Tokie sakiniai pažeidžia Grinceno tiesioginio ryšio taisyklę.
+
+
+=== Toleruojant tai, kas neįmanoma ===
+Hegel buvo kritiškai nusistatęs prieš kiekvieną simplifikuotą dvigubo prieštaravimo sąvoką. Šis, dvigubo prieštaravimo principas buvo pagrįstas Leibnico idėja, kad kiekvienas loginis samprotavimas privalo turėti pakankamą pagrindą teigti, jog prielaida pati sau neprieštarauja. Pavyzdžiui, galima sakyti, kad pastatas ir juda ir nejuda, nes pirmasis pastato pagrindas yra Saulės sistema, o antrasis – žemė. Hegelio dialektikoje, dvigubas prieštaravimas atsiranda tada, kai objektas egzistuoja skirtingose aplinkose ir negali atsiriboti nuo jų.
+Kalbant apie materialiosios implikacijos paradoksus, neišvengiamai kyla mintis, jog logikos mokslas turėtų toleruoti loginius nenuoseklumus. Tinkamumo logika ir nesuderinamumo logika yra patys svarbiausi atspirties taškai, nors ir orientuoti į skirtingus dalykus: visa klasikinės logikos esmė yra paremta ekspoziciniu principu, kuris teigia, jog loginiai samprotavimai veiksnūs tik jei gebama paneigti kylančius prieštaravimus ar nesuderinamumus. Graham Priest, teigė, kad nesuderinamumai, iš esmės, yra tiesos neigimai.
+
+
+=== Loginių tiesų neigimas ===
+Skeptiška filosofijos gysla sukelia daugybę abejonių dėl pagrindų, ant kurių laikosi visa logika, pvz., loginės formos idėja, teisingą išvadą, reikšmę, paprastai vedančią prie išvados, kad loginės tiesos iš viso nėra. Tarkime, jog tai tiesiog priešinga įprastiems skeptiškos filosofijos teiginiams, kur logika nukreipia skeptišką tyrimą abejoti iš Sextus Empiricus darbų gauta išmintim.
+Friedrich Nietzsche pateikia stiprų logikos pagrindų paneigimo pavyzdį: radikalus jo idealizacijos atmetimas priverte atsisakyti tiesos, kad „mobili metaforų, metonimijų ir antromorfizmų armija – trumpiau… metaforos, nusidėvėję metaforos, netekę jausminės galios; kaip nusitrynę monetos, tarnaujancios kaip metalas, o ne kaip monetos“. Jo tiesos atmetimas neprivertė paneigti logikos atsiradimo idėjos, kuri sako, kad logiškumas žmogaus galvoje atsirado iš nelogiškumo, kuris tikriausiai neturėjo ribų. Nesuskaičiuojama galybė būtybių mums nežinomu būdu dariusių sprendimus pagaliau išnyko. Taigi galima teigti, jog loginė įžvalga tapo žmogaus išlikimo įrankiu, bet tai neįrodo loginės tiesos buvimo: logika taip pat remiasi prielaidomis, neatitinkančiomis nieko realiame pasaulyje.
+Ši, Nietzsche ginama pozicija, susilaukė daug kruopščių tikrinimų dėl kelių priežasčių. Jam nepavyko pademonstruoti savo tvirtinimų teisingumo, todėl jie tvirtinami tik retoriškai. Be to, ši pozicija buvo tvirtinama save paneigiančia, tokių filosofų kaip Jürgen Habermas, kuris apkaltino Nietzsche neturint nuoseklių, perspektyvių teorinių žinių. George Lukacs savo knygoje „The Destruction of Reason“ (Priežasčių naikinimas) teigė, jog studijuodami Nietzsche teiginius, susidurtume su savavališkais, tragiškais ir visiškai nesuderinamais tvirtinimais (“Were we to study Nietzsche’s statements in this area from a logico-philosophical angle, we would be confronted by a dizzy chaos of the most lurid assertions, arbitrary and violently incompatible“). Kraštutinis skeptiškumas, kurį demonstruoja Nietzsche, nebesusilaukia tiek rimto filosofų dėmesio XX a. Bertrand Russell savo veikale „ A History of Western Philosophy“ (Vakarų filosofijos istorija) apibudina Nietzsche teiginius kaip tuščiažodžiavima.
+
+
+== Taip pat skaitykite ==
+Argumentacijos klaida
+Įrodymas
+Paradoksas
+Retorika
+
+
+== Bibliografija ==
+Nijolė Lomanienė „Logika: deduktyvaus samprotavimo analizės pagrindai“. – Vilnius: Justitia, 2002, ISBN 9986-567-78-5
+Stanislovas Norgėla „Matematinė logika“. – Vilnius, TEV, 2004, ISBN 9955-491-60-4
+Romanas Plečkaitis „Logikos pagrindai“. – Vilnius, Tyto alba, 2004, ISBN 9986-16-322-6

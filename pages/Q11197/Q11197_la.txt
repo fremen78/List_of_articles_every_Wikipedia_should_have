@@ -1,0 +1,1293 @@
+Logarithmus est functio mathematica 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        :
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ∖
+        {
+        0
+        }
+        →
+        
+          R
+        
+        ,
+        x
+        ↦
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        ,
+         
+        (
+        a
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ∖
+        {
+        0
+        }
+        )
+      
+    
+    {\displaystyle \log _{a}:\mathbb {R} ^{+}\setminus \lbrace 0\rbrace \to \mathbb {R} ,x\mapsto \log _{a}(x),\ (a\in \mathbb {R} ^{+}\setminus \lbrace 0\rbrace )}
+  
+, cuius valor indicat exponentem variabilis independentis x ad basim a potentiae, id est: 
+  
+    
+      
+        y
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        ⇔
+        
+          a
+          
+            y
+          
+        
+        =
+        x
+        .
+      
+    
+    {\displaystyle y=\log _{a}(x)\Leftrightarrow a^{y}=x.}
+  
+
+Exempla:
+
+     log10(10)   = 1 quia 101 = 10
+     log10(100)  = 2 quia 102 = 100
+     log10(1000) = 3 quia 103 = 1000
+
+logarithmus decimalis seu vulgaris: logarithmus pro basi 10
+log10(1000) lege: logarithmus decimalis quantitatis mille
+logarithmus naturalis seu hyperbolicus: logarithmus pro basi e (Numero Euleri).
+Nota: Basis in formulis saepe omittitur; itaque logarithmus decimalis scribitur lg aut log, logarithmus naturalis ln.
+
+
+== Arithmetica et logarithmi ==
+Logarithmis possumus multiplicationem in additionem convertere, hoc modo.  Si debemus multiplicare A et B, pone X = productum, hoc est AB = X.  Tunc log(AB) = log(X) (secundum quemlibet basin).  Sed log(AB) = log(A) + log(B).  Ergo si logarithmos addimus, possumus logarithmum producti scire, tunc productum ipsum.  Exemplum:
+
+  
+    
+      
+        1234
+        ∗
+        7654
+        =
+        X
+      
+    
+    {\displaystyle 1234*7654=X}
+  
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1234
+        )
+        ≈
+        7.1180162045
+      
+    
+    {\displaystyle \ln(1234)\approx 7.1180162045}
+  
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        7654
+        )
+        ≈
+        8.9429836660
+      
+    
+    {\displaystyle \ln(7654)\approx 8.9429836660}
+  
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1234
+        )
+        +
+        ln
+        ⁡
+        (
+        7654
+        )
+        ≈
+        16.0609998705
+      
+    
+    {\displaystyle \ln(1234)+\ln(7654)\approx 16.0609998705}
+  
+
+et 16.0609998705 est ln(9445036.0004629891)
+ergo 
+  
+    
+      
+        1234
+        ∗
+        7654
+        ≈
+        9445036
+      
+    
+    {\displaystyle 1234*7654\approx 9445036}
+  
+ quod est re vera productum horum numerorum
+Quare est log(AB) = log(A) + log(B)?  Si X = log(A), secundum basin b, et Y = log(B) secundum eandem basin, tunc 
+  
+    
+      
+        
+          b
+          
+            X
+          
+        
+        =
+        A
+        ,
+        
+          b
+          
+            Y
+          
+        
+        =
+        B
+      
+    
+    {\displaystyle b^{X}=A,b^{Y}=B}
+  
+ (per definitionem).  Nunc 
+  
+    
+      
+        A
+        B
+        =
+        
+          b
+          
+            X
+          
+        
+        
+          b
+          
+            Y
+          
+        
+      
+    
+    {\displaystyle AB=b^{X}b^{Y}}
+  
+, sed 
+  
+    
+      
+        
+          b
+          
+            X
+          
+        
+        
+          b
+          
+            Y
+          
+        
+        =
+        
+          b
+          
+            X
+            +
+            Y
+          
+        
+      
+    
+    {\displaystyle b^{X}b^{Y}=b^{X+Y}}
+  
+.  (Facilius est intellectu si X et Y sunt numeri integri;  calculus nobis dicit id verum esse etiam si sint alii numeri reales.)  Et 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        
+          b
+          
+            X
+            +
+            Y
+          
+        
+        )
+        =
+        X
+        +
+        Y
+      
+    
+    {\displaystyle \log _{b}(b^{X+Y})=X+Y}
+  
+, per definitionem.  Habemus igitur 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        A
+        B
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        A
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        B
+        )
+      
+    
+    {\displaystyle \log _{b}(AB)=\log _{b}(A)+\log _{b}(B)}
+  
+.
+
+Regula remissaria hac ratione utitur.  In linea numerorum spatium inter numeros differentiam repraesentat:  quod 5 - 2 = 6 - 3, spatium de puncto "2" ad punctum "5" idem est atque spatium inter puncta "3" et "6":  est tres pedes.  In regula remissaria, spatium rationem numerorum repraesantat:  quod 6/2 = 3/1, spatium de punctum "2" ad punctum "6" idem est atque spatium inter puncta "3" et "1."  Est ergo scala logarithmica.
+
+Regula duas scalas habet.  Ut 2 per 3 multiplices, mitte "1" in scala superiore prope "2" in scala inferiore.  Tunc "3" in scala superiore erit iuxta "6" in scala inferiore:  spatium de "1" ad "3" in superiore scala idem est atque spatium de "2" ad "6" in inferiore.  Et spatium non est 3 pedes, sed log(3) pedes.
+
+
+== Usus logarithmorum ==
+
+Sunt quantitates in natura quae secundum regulam exponentialem variant, ut Potentia Hydrogenii in chemia, magnitudo terrae motus per scalam Richterianam descripta, magnitudo apparens stellarum in astronomia, Bit in informatica, decibel in acustica, entropia in thermodynamica et semivita biologica in pharmacologia.  Omnes secundum scalam logarithmicam calculantur.  Talis scala utilis est cum valor mensurandus secundum rationem exponentialem auget.
+Exempli gratia, si substantia quaedam habet potentiam hydrogenii (pH) 6 et alia habet pH 7, secunda decies plus protona habet quam prima.
+Terrae motus magnitudine 5 fere decies maior est quam terrae motus magnitude 4, et fere decies rarior.
+
+
+== Definitio et proprietates functionis ==
+Ut supra dicitur, functio 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=\log _{a}(x)}
+  
+ est inversa functionis 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          a
+          
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=a^{x}}
+  
+.  Quod 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          a
+          
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=a^{x}}
+  
+ est functio continua, inversa 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)=\log _{a}(x)}
+  
+ quoque est continua.
+Possumus etiam logarithmum naturalem definire per integrale:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            1
+            t
+          
+        
+        d
+        t
+      
+    
+    {\displaystyle \ln(x)=\int _{1}^{x}{\frac {1}{t}}dt}
+  
+
+si x > 0, ex qua formula scimus 
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {d}{dx}}\ln(x)={\frac {1}{x}}}
+  
+, et functio ln(x) est continua.  Cum x ad infinitatem tendet, ln(x) quoque sine fine auget.  Et ln(1) = 0.  Si 0 < x < 1, ln(x) < 0:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            1
+            t
+          
+        
+        d
+        t
+      
+    
+    {\displaystyle \ln(x)=\int _{1}^{x}{\frac {1}{t}}dt}
+  
+
+Pone 
+  
+    
+      
+        u
+        =
+        
+          
+            1
+            t
+          
+        
+      
+    
+    {\displaystyle u={\frac {1}{t}}}
+  
+ -- tunc
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            
+              1
+              x
+            
+          
+        
+        
+          
+            
+              −
+              1
+            
+            u
+          
+        
+        d
+        u
+        =
+        −
+        
+          ∫
+          
+            1
+          
+          
+            
+              1
+              u
+            
+          
+        
+        
+          
+            1
+            u
+          
+        
+        d
+        u
+        =
+        −
+        ln
+        ⁡
+        
+          (
+          
+            
+              1
+              x
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \ln(x)=\int _{1}^{\frac {1}{x}}{\frac {-1}{u}}du=-\int _{1}^{\frac {1}{u}}{\frac {1}{u}}du=-\ln \left({\frac {1}{x}}\right)}
+  
+
+Ergo 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            0
+          
+        
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle \lim _{x\to 0}\ln(x)=-\infty }
+  
+
+Si definitio per integrale re vera eandem functionem definit atque definitio per functionem inversam, debemus demonstrare ln(xy) = ln(x) + ln(y):
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+            y
+          
+        
+        
+          
+            1
+            t
+          
+        
+        d
+        t
+      
+    
+    {\displaystyle \ln(xy)=\int _{1}^{xy}{\frac {1}{t}}dt}
+  
+
+Sit t = uy;  tunc 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          ∫
+          
+            
+              1
+              y
+            
+          
+        
+        
+          
+            1
+            u
+          
+        
+        d
+        u
+      
+    
+    {\displaystyle \ln(xy)=\int _{\frac {1}{y}}{\frac {1}{u}}du}
+  
+
+quod est 
+  
+    
+      
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            1
+            u
+          
+        
+        d
+        u
+        −
+        
+          ∫
+          
+            1
+          
+          
+            
+              1
+              y
+            
+          
+        
+        
+          
+            1
+            u
+          
+        
+        d
+        u
+      
+    
+    {\displaystyle =\int _{1}^{x}{\frac {1}{u}}du-\int _{1}^{\frac {1}{y}}{\frac {1}{u}}du}
+  
+
+  
+    
+      
+        =
+        ln
+        ⁡
+        (
+        x
+        )
+        −
+        ln
+        ⁡
+        
+          (
+          
+            
+              1
+              y
+            
+          
+          )
+        
+        =
+        ln
+        ⁡
+        (
+        x
+        )
+        +
+        ln
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle =\ln(x)-\ln \left({\frac {1}{y}}\right)=\ln(x)+\ln(y)}
+  
+
+Functio hoc modo definita ergo easdem proprietates habet atque inversa functionis exponentialis:  eadem est functio.
+Numerus Euleri e est numerus cuius logarithmus naturalis est 1:  
+  
+    
+      
+        
+          ∫
+          
+            1
+          
+          
+            e
+          
+        
+        
+          
+            1
+            t
+          
+        
+        d
+        t
+        =
+        1
+      
+    
+    {\displaystyle \int _{1}^{e}{\frac {1}{t}}dt=1}
+  
+.  Definitio functionis exponentialis y = ex est inversa functionis logarithmicae.
+Si hoc modo logarithmum naturalem definimus, quo modo possumus logarithmos ad alias bases calculare?  Sit 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        ln
+        ⁡
+        (
+        x
+        )
+        
+          /
+        
+        ln
+        ⁡
+        (
+        a
+        )
+      
+    
+    {\displaystyle \log _{a}(x)=\ln(x)/\ln(a)}
+  
+.  Tunc:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              ln
+              ⁡
+              (
+              x
+              )
+            
+            
+              ln
+              ⁡
+              (
+              a
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}(x)={\frac {\ln(x)}{\ln(a)}}}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        ×
+        ln
+        ⁡
+        (
+        a
+        )
+        =
+        ln
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{a}(x)\times \ln(a)=\ln(x)}
+  
+
+  
+    
+      
+        
+          e
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            (
+            x
+            )
+            ln
+            ⁡
+            (
+            a
+            )
+          
+        
+        =
+        
+          e
+          
+            ln
+            ⁡
+            (
+            x
+            )
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle e^{\log _{a}(x)\ln(a)}=e^{\ln(x)}=x}
+  
+
+  
+    
+      
+        
+          e
+          
+            
+              
+                ln
+                ⁡
+                (
+                a
+                )
+              
+              
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+            
+          
+        
+        =
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+      
+    
+    {\displaystyle e^{{\ln(a)}^{\log _{a}(x)}}=a^{\log _{a}(x)}}
+  
+
+hoc est, 
+  
+    
+      
+        x
+        =
+        
+          a
+          
+            (
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+      
+    
+    {\displaystyle x=a^{(\log _{a}(x)}}
+  
+ ut desideremus.
+
+
+== Historia logarithmorum ==
+
+Ioannes Napier, baro Murchiston, logarithmum primum describit, in libro anno 1614 edito, cuius titulus est Mirifici logarithmorum canonis descriptio.  Nomen logarithmus finxit e verbis Graecis λόγος (logos vel ratio) et ἀριθμός (arithmos vel numerus).   Tabulas logarithmorum fecit ut facilius producta et rationes computaret.
+Henricus Briggs, eius collega et professor geometriae in Universitate Oxoniensis, anno 1617 tabulas meliores fecit; qui librum edidit Logarithmorum chilias prima, in quo fuerunt logarithmi omnium numerorum integrorum de 1 ad 1000. Anno 1624 librum cuius titulus est Arithmetica logarithmica edidit, ubi logarithmos numerorum de 1 ad 10 000 et de 90 000 ad 100 000 calculavit.
+Logarithmus secundum Napier non idem fuit atque logarithmus hodiernus; Briggs autem definitionem hodiernam habuit, secundum basin 10. Napier scivit summam exponentium cum numerorum producto cohaerere: si vis multiplicare bx et by, non opus est multiplicationi, quod productum est bx+y. Napier, si poterat basin b invenire ut omnes numerus N sit bx, multiplicare per additionem poterat. Et facilius esset si indices x essent parvi numeri, proximi inter se.  Elegit ergo basin b = 0.9999999 = 1 - 10-7, sed nunc indices (exponentes) nimis proximae inter se fuerunt. Napier igitur omnia per 107 multiplicavit. Sit Nap(x) functio eius: tunc Nap(x) non re vera est 
+  
+    
+      
+        
+          log
+          
+            0.9999999
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{0.9999999}(x)}
+  
+.  Si 
+  
+    
+      
+        x
+        =
+        
+          10
+          
+            7
+          
+        
+        
+          
+            (
+            
+              1
+              −
+              
+                
+                  1
+                  
+                    10
+                    
+                      7
+                    
+                  
+                
+              
+            
+            )
+          
+          
+            L
+          
+        
+      
+    
+    {\displaystyle x=10^{7}\left(1-{\frac {1}{10^{7}}}\right)^{L}}
+  
+ (hoc est, bL × 107), Nap(x) = L.  Ut faciliter videtur, Nap(107) = 0, et 
+  
+    
+      
+        N
+        a
+        p
+        
+          (
+          
+            
+              10
+              
+                7
+              
+            
+            
+              (
+              
+                1
+                −
+                
+                  
+                    1
+                    
+                      10
+                      
+                        7
+                      
+                    
+                  
+                
+              
+              )
+            
+          
+          )
+        
+        =
+        1
+      
+    
+    {\displaystyle Nap\left(10^{7}\left(1-{\frac {1}{10^{7}}}\right)\right)=1}
+  
+. 
+Multiplicatio ergo additio fit: 
+  
+    
+      
+        N
+        a
+        p
+        (
+        a
+        )
+        +
+        N
+        a
+        p
+        (
+        b
+        )
+        =
+        N
+        a
+        p
+        
+          (
+          
+            
+              
+                a
+                b
+              
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle Nap(a)+Nap(b)=Nap\left({\frac {ab}{10^{7}}}\right)}
+  
+. Non exacte idem regulus est atque regulus logarithmorum verorum, quod necesse est punctum decimale movere post additionem, id quod autem perfacile est.
+Quod 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          
+            (
+            
+              1
+              −
+              
+                
+                  1
+                  n
+                
+              
+            
+            )
+          
+          
+            n
+          
+        
+        =
+        
+          
+            1
+            e
+          
+        
+      
+    
+    {\displaystyle \lim _{n\rightarrow \infty }\left(1-{\frac {1}{n}}\right)^{n}={\frac {1}{e}}}
+  
+, functio Nap(x) similis est functioni 
+  
+    
+      
+        
+          log
+          
+            
+              1
+              e
+            
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{\frac {1}{e}}(x)}
+  
+.
+Briggs autem illum numerum 107 e regulo eicere voluit. Functionem similem Nap(x) definit, dicamus Br(x), ut Br(1) = 0, Br(10) = 1;  tunc Br(√10) = .5 etc. Functio Br(x) est logarithmus decimalis.
+Eodem fere tempore, Iobst Bürgi mathematicus Helveticus principia logarithmorum invenit, sed nihil ante anno 1620 edidit.
+
+
+== Notae ==
+
+
+== Bibliographia ==
+Aigner, Martin, et Günter M. Ziegler. 2001. Proofs from THE BOOK, editio altera. Berolini: Springer. ISBN 3540678654
+Anglin, W. S., et J. Lambek. 1995. The Heritage of Thales. Berolini et Novi Eboraci: Springer. ISBN 038794544X.
+Bourbaki, Nicolas.  1976. Fonctions d'une variable réelle, editio nova, 2007. Berolini et Novi Eboraci: Springer.  ISBN 978-3-540-34036-2.
+Boyer, Carl B. 1968. A History of Mathematics. Novi Eboraci: John Wiley & Sons. ISBN 0471093742.
+Bridger, Mark.  2007. Real Analysis:  A Constructive Approach. Hoboken: Wiley Interscience. ISBN 9780471792307.
+Hardy, G. H.  1952. A Course in Pure Mathematics, ed. 10 (1992). Cantabrigiae. ISBN 0521092272.
+Krantz, Steven G.  2005. Real Analysis and Foundations. Boca Raton:  Chapman & Hall. ISBN 1584884835.
+Rudin, Walter.  1974. Real and Complex Analysis, editio altera. Novi Eboraci: McGraw-Hill. ISBN 0-07-054233-3.
+
+
+== Nexus interni ==
+Spiralis logarithmica
+
+
+== Nexus externi ==
+Powered by Google Text & Tabellen apud docs.google.com Arithmetica Logarithmica (Anglice, Latine)
+Logarithmi apud Wolfram MathWorld (Anglice)
+Logarithmi apud PurpleMath (Anglice)
+Logarithme -- approche, historique, définitions (Francogallice)
+Logarithmen und Logarithmusgesitze apud Mathematik.net (Theodisce)

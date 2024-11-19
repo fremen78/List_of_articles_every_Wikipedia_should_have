@@ -1,0 +1,85 @@
+E-post, elektronisk post, även kallad e-brev, e-mail, eller mejl, är en av de ursprungliga typerna av meddelandebefordran över bland annat Internet. Det kännetecknas av högre tillförlitlighet än andra typer av elektroniska meddelanden. E-post är en av de äldsta kommunikationstjänsterna på internet och har en dominerande ställning bland internetanvändares kommunikationskanaler.
+E-brev, även kallat e-postbrev, är det enskilda meddelandet/försändelsen i samband med e-post. Det förmedlas ofta med hjälp av nätverksprotokollet SMTP via ett antal serverdatorer. E-brev läses med ett e-postprogram som antingen kommer åt e-posten som filer på datorn eller kommunicerar med en e-postserver med hjälp av IMAP, POP3 eller liknande protokoll eller med hjälp av ett WWW-gränssnitt (”webbpost”). I fall av webbgränssnitt används en vanlig webbläsare som e-postprogram. Inom stora organisationer är det vanligt med e-postsystem som använder slutna protokoll.
+Ökningen i fenomen som skräppost och datorvirus har gjort användningen av e-post mer problematisk än den var på 1980-talet, men den är fortfarande den dominerande standarden för att skicka meddelanden över Internet.
+
+
+== Historia ==
+E-posten uppstod i början eller mitten av 1960-talet, då i regel som meddelanden mellan användare på samma dator. När ARPANET uppstod 1969 blev det möjligt att skicka meddelanden också till en dator långt borta; den första e-posten på ARPANET skickades möjligen i slutet av 1971.
+På 1980-talet användes e-post i många former i olika datanätverk såsom ARPANET, BITNET, DECnet, UUCPNET och X.400/OSI. Meddelanden kunde överföras mellan nätverken genom skilda gateway-maskiner, som översatte meddelanden (i synnerhet adressuppgifter och annan metainformation) till en form acceptabel i mottagarnätet. Så småningom övergick de flesta system att använda Internet och SMTP, men till exempel kravet på att den lokala delen av en e-postadress inte skall tolkas sammanhänger med att den tidigare användes för adressinformation för det andra nätverket. Adressen <abc%def%lars@uucpgate.example.org> kunde tolkas som att uucpgate.example.org skulle skicka posten vidare med UUCP till användaren lars på maskinen def via maskinen abc (vilket på UUCPNET skulle skrivas som abc!def!lars).
+År 1991 kom MIME, en standard för att skicka bilagor till e-post och ange kodningen i dessa och följebrevet. Dittills hade innehåll annat än ren text på engelska fungerat dåligt, eftersom bara 7-bit ASCII stöddes officiellt. Många teckenuppsättningar, såsom för skandinaviska, kyrilliska, japanska och kinesiska tecken, användes också tidigare, men det fanns inget allmänt etablerat sätt att ange vilken teckenkodning som använts och den åttonde biten i varje oktett nollades av många e-postservrar. Bilagor hade tidigare ofta skickats kodade till exempel med uuencode eller binhex, men standardiseringen var inofficiell och bristfällig och problem att hantera bilagorna relativt vanliga.
+Det första e-brevet mellan regeringschefer skickades 4 februari 1994, då Carl Bildt som statsminister skrev till president Bill Clinton.
+Sedan dess har mängden e-post ökat explosionsartat. År 2010 skickades kring trehundra miljarder e-brev per dag över hela världen. Det motsvarar nästan tre miljoner e-brev varje sekund, hundra biljoner (1014) under året. Cirka 90 procent antogs vara skräppost. Resten uppskattades ha skickats av cirka 1,9 miljarder användare. I Sverige var e-posten år 2017 den vanligaste kommunikationskanalen bland alla internetanvändare. 97 procent av alla internetanvändare använde e-post varav 69 procent använde det dagligen.
+
+
+== Terminologi ==
+Svenska datatermgruppen rekommenderar att man använder sig av e-post för tekniken och e-brev för själva meddelandet. Webmail översätts webbpost. I vardagsspråk används också termen ”mejl”, en försvenskning av engelskans mail, nedkortat från e-mail. Även mail förekommer som alternativ stavning i Svensk ordbok. Det engelska ordet mail betyder ”post” (”brev”) rent allmänt, vilket kan leda till språkförvirring.
+
+
+== Distributionsteknik ==
+
+En typisk e-postadress är av formen <användarnamn@example.com>, där "example" är en organisation (domänen "example.com" är reserverad för användning som exempel), "com" är en toppdomän som anger land eller typ av organisation ("com" står för kommersiell) och ”användarnamn” betecknar ett postfack inom organisationen eller annan information som skall tolkas lokalt.
+Inom domännamnssystemet (DNS) är det möjligt att ange vilken dator eller vilka datorer som tar emot e-post för domänen ifråga, ofta en värddator kallad mail.example.com, smtp.example.com eller liknande. Det är vanligt att e-posten hanteras av en dator i en annan domän, då till exempel småföretag gärna har en egen domän men ogärna administrerar en egen e-postserver.
+Ett e-brev skrivs vanligen med ett e-postprogram, som lägger till lämplig metainformation och ger det åt den lokala e-postservern för leverans. Om den dator som ansvarar för mottagarens (eller vissa mottagares) e-post inte svarar lämnas e-posten i kö på den lokala servern och nya försök görs med regelbundna mellanrum, till att börja med kanske var tionde minut, senare kanske med någon timmes mellanrum. Om datorn inte svarat inom ett dygn eller så skickas ofta en varning till avsändaren, om leveransen inte lyckas inom några dagar (antingen för att datorn inte svarar eller för att den vägrar ta emot meddelandet) returneras brevet med en förklaring om varför leveransen misslyckats.
+SMTP-protokollet är konstruerat så att e-post inte lätt skall kunna försvinna på grund av nätverksstörningar eller liknande. Den vanligaste orsaken till att e-post försvinner är att den klassificeras som skräppost efter att den tagits emot av en e-postserver och förbindelsen till avsändardatorn hunnit brytas. Felmeddelanden skickas i allmänhet inte i detta fall, då avsändaren för skräppost i de flesta fall är förfalskad.
+Då e-posten når adressatens e-postlåda kan den läsas eller hämtas till mottagarens egen maskin, vanligen med något av nätverksprotokollen IMAP eller POP3. Ofta är e-postlådan också kopplad till en WWW-server, varvid e-brevet kan läsas med en webbläsare.
+Om adressaten inte är tillgänglig på Internet räcker det att man i domännamnssystemet definierar en dator tillgänglig via Internet, som tar hand om e-posten och vidarebefordrar den på annat sätt. Närmare adressinformation kan kodas i ”användarnamnet”. Detta var vanligt innan Internet fått en dominerande ställning, och användes senare till exempel för att skicka telefax via en dator nära mottagaren.
+
+
+== E-brevets form ==
+
+Ett e-brev består av ett "kuvert" med uppgifter om avsändare och mottagare, ett brevhuvud och resten av brevet, som kan bestå av flera delar.
+Kuvertet konstrueras vanligen utgående från uppgifterna i brevhuvudet och ses varken av avsändare eller mottagare. Det används för leverans och eventuell returnering av meddelandet enligt SMTP-protokollet. Avsändare och adressat på kuvertet kan skilja sig från dem i brevhuvudet, till exempel då adressaten i brevhuvudet är en sändlista eller då en kopia av e-brevet skickas åt andra än dem som skall synas i brevhuvudet (BCC-mottagare).
+Brevhuvudet består av ett antal rader i bunden form: uppgiftens namn följt av kolon, blankslag och själva uppgiften. Sådana rader finns vanligen åtminstone för avsändare, mottagare, rubrik, datering, meddelande-id, meddelandets form (se MIME) och för dokumentering av den rutt brevet tagit. E-postprogram brukar visa ett urval av raderna om man inte explicit ber om att få se hela brevhuvudet. Brevhuvudet skiljs från resten av brevet med en tom rad.
+Själva brevet kan, sedan MIME-standarden infördes, vara i en eller flera delar. Om det är i en del anges kodning, teckenuppsättning etc. i brevhuvudet, om det är i flera delar finns dessa uppgifter skilt för varje del. Varje del kan i sin tur (rekursivt) bestå av flera delar och sambandet mellan delarna kan visas formellt, till exempel så att en del finns både i textform för att lätt kunna läsas på datorskärmen och i PDF-form för vacker utskrift. Om brevet är i annan form än så kallad ren text (MIME: text/plain) brukar det bestå av ett följebrev i ren textform (ibland både text och HTML) och en eller flera bilagor (dokument i de använda programmens egna format, bilder, pdf-filer eller liknande).
+
+
+== Olika avsändare och adressater ==
+
+Ett e-brev kan i brevhuvudet ha olika typers avsändare och adressater, till exempel:
+
+From: den eller de formella avsändarna
+Sender: den som de facto skickat e-brevet, denna skall i allmänhet få eventuella felmeddelanden
+Resent-From: den som vidarebefordrat ett meddelande
+To: den primära adressaten eller adressaterna
+CC: adressater som skall ha e-brevet till kännedom
+BCC: adressater som skall ha e-brevet till kännedom utan att synas i brevhuvudet (standarden tillåter att BCC-adressater ser vilka andra som fått brevet som BCC-adressat, men normalt stryks alla dessa adresser ur brevet efter att adresserna kopierats till kuvertet)
+Reply-To: den eller de som avsändaren önskar att eventuella svar skall riktas till
+Sender-adressen skall hänföra sig till en enskild e-postlåda. I övrigt kan avsändare eller adressater också vara sändlistor eller motsvarande. Adresser kan grupperas med konstruktionen
+
+Gruppnamn: <adress>, <adress2>, ...;
+
+Detta är lämpligt för att visa i vilken egenskap en grupp adressater fått e-brevet, då deras funktion inte framgår av e-postadressen. Konstruktionen kan användas också då man vill visa vem som fått e-brevet utan att avslöja själva e-postadresserna:
+
+To: styrelsen:;
+BCC: NN@example.com, NN@example.net
+
+De flesta programpaket för e-postservrar tillåter att man definierar alias-beteckningar för postlådor. Det är vanligt att en person nås både på sitt användarnamn och på sitt egentliga namn (<fornamn.efternamn@organisation.example.org> eller liknande), eventuellt också enligt funktion, till exempel <ordforande@example.org> (formellt kan tecken som å, ä och ö inte användas i brevhuvudet och därmed inte i e-postadresser; numera kan de kodas, men risken för fel vid kodning och avkodning är skäl nog att undvika dem där rätt tolkning är viktig).
+Det rekommenderas att personer som ansvarar för vissa funktioner nås på standardadresser, till exempel bör e-post till <webmaster@example.org> gärna nå någon som kan rätta fel på webbplatsen och <abuse@example.org> någon som kan ingripa i missbruk, till exempel då en dator inom domänen ifråga används för skickande av skräppost.
+Adressen postmaster bör alltid fungera och kan användas dels för problem med e-postsystemet, dels vid andra problem (till exempel missbruk) då annan fungerande adress inte kan hittas.
+
+
+== Brevhemlighet ==
+
+E-posten omfattas i princip av posthemligheten: att läsa andras e-post på väg mellan avsändare och mottagare är i de flesta fall förbjudet. Viss kontrovers finns kring huruvida arbetsgivare under vissa omständigheter skall tillåtas läsa anställdas e-post. Lagstiftningen, lagtolkning och praxis varierar mellan olika länder. En del länders underrättelsetjänster har rätt att avlyssna trafik, jämför till exempel FRA-lagen och Echelon. Eftersom Internet-trafiken inte sällan är internationell påverkar detta också dem vars egna länder inte tillåter avlyssning. Också i de fall själva e-brevet inte får läsas kan myndigheter, arbetsgivare eller teleföretag ha rätt eller plikt att lagra och hantera metainformation, som den om mottagare och avsändare, jämför till exempel Lex Nokia i Finland.
+Oberoende av de lagliga aspekterna är e-post normalt i praktiken mycket svagt skyddad. Mellan e-postservrar rör sig e-breven oftast i klartext, oberoende av om förbindelsen mellan e-postprogram och e-postserver är krypterad (med SSL/TLS). De systemansvariga på teleföretagen och de systemansvariga för lokala e-postservrar har i allmänhet teknisk möjlighet att läsa meddelanden som passerar systemen, antingen i samband med överföringen eller i e-postköer och e-postlådor. Genom att kryptera trafiken mellan den egna datorn och e-postservern kan man ändå skydda trafiken för avlyssning på det lokala nätet.
+Sedan länge är det möjligt att kryptera själva e-postmeddelandena (med S/MIME, PGP, GPG eller dylikt), varvid endast metainformationen går att läsa, förutsatt att obehöriga inte har tillgång till avsändarens eller mottagarens dator eller till mottagarens privata krypteringsnycklar. Det är också möjligt att skicka e-posten via omvägar (via anonymitetstjänster), varvid också avsändar- och mottagaruppgifterna kan skyddas.
+
+
+== Statistik ==
+
+En undersökning genomförd av Internetstiftelsen 2019 visade att 97 procent av de svenska internetanvändarna använde sig av e-post varav 69 procent gjorde det varje dag. Siffrorna har legat på samma höga nivå det senaste decenniet; år 2007 använde 93 procent e-post och 59 procent gjorde det dagligen. Användandet skiljer sig dock åt åldersmässigt; i åldern 36–45 år använde 85 procent e-post dagligen medan bland de yngsta internetanvändarna i ålder 12–15 år var det 21 procent som använde e-post varje dag. I den äldsta åldersgruppen  66+ år använde 56 procent e-post varje dag vilket alltså gör e-post till en av de få företeelser på internet som de äldre nyttjar oftare på daglig basis än de unga.
+
+
+== Se även ==
+Elektrisk post
+Memo Mail
+Innovation (Radikal innovation)
+
+
+== Referenser ==
+
+
+== Externa länkar ==
+ Wikimedia Commons har media som rör E-post.
+RFC 2822 - standardiseringsdokumentet för e-post.
+RFC 2821 - standardiseringsdokumentet för SMTP, nätverksprotokollet för förmedling av e-post.

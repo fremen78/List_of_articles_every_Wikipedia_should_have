@@ -1,0 +1,111 @@
+Der er for få eller ingen kildehenvisninger i denne artikel, hvilket er et problem. Du kan hjælpe ved at angive troværdige kilder til de påstande, som fremføres i artiklen.
+En algoritme (oldpersisk: Kharazmi) er en utvetydig og abstrakt beskrivelse af, hvordan en specifik type problem løses terminerende.
+En algoritme er en opskrift til at løse et problem af en bestemt type, som leverer en løsning uanset den konkrete problemsituations udseende. Et eksempel kunne være en præcis beskrivelse af, hvordan man sorterer et spil kort, uanset hvordan de enkelte kort ligger som udgangspunkt.
+Ordet er en forvanskning af Muhammad ibn Mūsā al-Khwārizmīs navn, han var en stor persisk matematiker.
+
+
+== Sortering af kort ==
+Hvis vi som eksempel skal beskrive hvordan man sorterer et spil kort, uanset udgangspunktet, kunne det gøres på følgende måde:
+
+Tag et tilfældigt kort fra bunken.
+Gå nu bunken igennem – alle de, som er højere end dit tilfældige kort, lægger du i en bunke til venstre, og de, som er mindre i en bunke til højre.
+Læg dit tilfældige kort i den venstre bunke.
+Hvis der er mere end to kort i bunkerne, gentag pkt 1 til 3 for begge af de to bunker. Sørg for, at når de enkelte bunker deles, bliver begge de nye bunker sammen på samme side.
+Hvis der er to kort i bunken, læg det højeste øverst, og læg bunken ovenpå den bunke den blev delt fra.
+Denne algoritme kalder sig selv på den måde, at man skal udføre den igen og igen på mindre og mindre bunker (indtil man kun har to kort i bunkerne, så lægger man dem sammen igen).
+
+
+== Algoritmer på internettet ==
+Et andet eksempel på algoritmer, og brug af algoritmer, er mediehusenes og Techgiganternes dataindsamling over internettet.
+Når du besøger hjemmesider så som Facebook, instagram og BT får dig og en anden forskellige reklamer, nyheder og diverse andre anbefalede ting. Det gør i fordi både mediehusene og techgiganter så som Facebook indsamler og køber din data om dine interesser, lokation, venner, osv. og bruger det data til at udregne hvad der kunne interessere dig/fange din opmærksomhed. De putter det data de har om dig igennem en række algoritmer, og bruger den data til at præsentere dig for personlige reklamer og nyheder på deres hjemmesider og apps, som er mere relevante for dig.
+Algoritmerne der bruges i dette eksempel, er lærende algoritmer. Lærende algoritmer er i dette tilfælde algoritmer der bruger andre menneskers data til at lære f.eks. hvilke interesser der leder til hvilke køb. Det algoritmen lærer fra andre personer, bruger algoritmen altså til at udregne hvilke reklamer der passer bedst til din online person.
+Særlig techgiganter så som tiktok, youtube og instagram, men også mediehusene online bruger disse algoritmer til at fange dig i et såkaldt kaninhul, hvor man nemt kan bruge timevis på at klikke videre på mere eller mindre interessante videoer eller nyheder som algoritmen har valgt ud til dig gennem din data.
+
+
+== Anvendelse ==
+Det ovenstående eksempel kan forekomme besværligt og mærkeligt til at forklare, hvordan man sorterer en stak kort. Men selvom det for et menneske er en intuitiv opgave, er en computer nødt til at få sine ordrer meget utvetydigt. Hvis man formulerer ovenstående algoritme i et programmeringssprog, vil programmet være i stand til at sortere et (fiktivt) spil kort.
+Sorteringsalgoritmer er meget anvendt eksempel på algoritmer, da de er eksemplariske og helt logiske af natur. Derudover bruges algoritmer også til optimeringsopgaver i planlægningen af f.eks. fly-ruter, skemalægning til skoler osv. Denne type algoritmer kaldes heuristikker. Kort kan der nævnes simuleret nedkøling og genetiske algoritmer, som er typer af heuristikker.
+Man finder adskillige eksempler på algoritmer i vores hverdag. Madopskrifter, monteringsinstruktioner og brugsanvisninger kan betragtes som algoritmer. De er dog kun nogenlunde logisk opstillede, og de fleste har prøvet at skulle samle et møbel efter en instruktion, som er mangelfuld. Andre har forsøgt sig med madopskrifter, der går ud fra som en selvfølge, at f.eks. delalgoritmen "opbagning" er velkendt for alle. For brugsanvisninger (eksempelvis på pesticider) gælder der et ikke-håndhævet lovkrav om, at de skal være éntydige og umiddelbart forståelige.
+
+
+== Kompleksitet ==
+Beregningskompleksiteten af en algoritme beskriver hvor lang tid det teoretisk vil tage at løse et problem af en given størrelse. Man taler om at en algoritme kører i tid 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{2})}
+  
+ for at løse en problem instans af størrelse 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+. Det vil her sige at køretiden af algoritmen vil være kvadratisk afhængig af inddataens størrelse, groft sagt svarer det til at hvis du har dobbelt så mange kort der skal sorteres tager det 4 gange så lang tid. En simpel sorteringsalgoritme af kort, hvor man tager et kort ud af en blandet bunke og placerer det i en ordnet bunke vil køre i 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{2})}
+  
+. Sorteringsalgoritmen nævnt foroven er noget mere avanceret og vil køre i 
+  
+    
+      
+        O
+        (
+        n
+        ⋅
+        l
+        g
+        (
+        n
+        )
+        )
+      
+    
+    {\displaystyle O(n\cdot lg(n))}
+  
+ tid. Dette kunne svare til at dobbelt så mange kort ville tage 3 gange så lang tid at sortere (dette vil dog afhænge af mange faktorer, men forholdene er ikke urealistiske).
+Det er derfor en stor fordel at bruge mere effektive algoritmer, da det løser problemer hurtigere.
+Sorteringsalgoritmer vil normalt køre i polynomiel tid, det vil sige at deres køretid kan beskrives af et polynomium i deres inddatas størrelse, 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+. Specielt svære problemer kan køre i eksponentiel tid, det kunne svare til at hvis du vil løse et problem af størrelse 21 i stedet for af størrelse 20, kan det tage dobbelt så lang tid. Køretiden eksploderer altså med større inddata. Den rejsende handelsmands problem er et eksempel på et sådant problem, disse kaldes også NP-hårde.
+
+
+== Kilder ==
+
+
+== Ekstern henvisning ==
+Informationsordbogen. Opslagsord: Algoritme

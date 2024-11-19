@@ -1,0 +1,234 @@
+Posta elektronikoa, e-maila edo e-posta (ingelesez, e-mail) komunikazio sistema elektronikoen bidez (normalean, Internet bidez) mezuak bidali eta jasotzea ahalbidetzen dituen sare-zerbitzua da. Mezu horiekin batera, fitxategiak ere atxiki daitezke. Ohiko postarekin alderatuz, azkarragoa eta merkeagoa da.
+Zerbitzu horrek erabiltzaileen esku jartzen du mezuak bidali eta jaso ahal izatea komunikabide elektroniko sareei esker; mezu horiei gutun elektroniko edo posta elektroniko deritze. Posta elektroniko izendapena ohiko posta oinarri hartuz analogia bidez sorturiko hitza da. Aurreko biak mezuak jaso eta bidaltzeko erabiltzen dira, eta bitarteko postontzia dute biek, posta zerbitzaria. E-mailak ez ditu bakarrik testuak bidaltzen eta jasotzen, era guztietako fitxategiak ere igortzen baititu, nahiz eta batzuetan pisu-mugak dauden fitxategi erantsiekin.
+Posta elektroniko sistemak birbidali eta biltzeko sisteman oinarritzen dira; beraz, ez da nahitaezkoa sistemaren bi muturrak aldi berean konektaturik egotea. Horretarako, posta zerbitzaria erabiltzen da, erdiko eginkizunak treba ditzan behin-behineko mezu biltegi bihurtzen da, ondoren, mezuak dagokien helbidera heltzen dira. Interneten mota horietako hamaika posta zerbitzari daude: askeak, ordaindu beharrekoak, enpresa pribatuen esku daudenak...
+
+
+== Posta elektronikoaren jatorria ==
+E-mailaren sorrera Internetena baino antzinakoa da. Aurrekaria 1962koa da, Massachusettseko Teknologia institutuak lehenengo aldiz ordenagailu bat erosi zuenean, IBM 7090 ordenagailua erabiltzaile askoren artean partekatzen zuten (1963an IBM 7094 ordenagailuarekin berritu zuten aurrekoa). Sistema horiei esker, erabiltzaileek urrutiko terminalak erabiliz saioa has zezaketen eta era horretan, informazioa diskoan gorde.
+Gaur egun, mezutzat hartzen dugun e-maila lehen aldiz 1971n bidali zuten data sare baten bidez. Mezu horrek soilik «QWERTYUIOP» zeukan testuan, ARPANET sariaren bidez bidali zuten, nahiz eta bi aparatuak bata bestearen ondoan egon. Ray Tomlinson izan zen sare bidezko mezuak bidaltzearen ideiaren jabea: CYPNET proba protokoloa erabili zuen sare bidez mezuak bidaltzeko bi aparaturen artean; ordu arte ordenagailu berdina erabiltzen zuten erabiltzaileak soilik komunika zitezkeen.
+Tomlisonek berak erantsi zuen a bilduaren (@) erabilera erabiltzailearen eta norakoaren erabiltzailearen kontuari dagokion ordenagailuaren arteko banaketa islatzeko. Ikur hori hautatu zuten ingelesez at irakurtzen delako, beraz, «non» zegoen norakoaren erabiltzailearen kontua irakur zitekeen. Horrela, adibidea@proba.com helbidearen adibidea irakurtzen da makinan: puntu com.
+1977an, e-maila sare zerbitzu estandar bihurtu zen, RFC 7733 zehaztapena lortu zuten, hainbat betekizun lortu ondoren.
+
+
+== Helbide elektronikoak ==
+
+Mezuak bidali edo jaso ahal izateko, beharrezkoa da posta elektroniko kontu bat izatea: postontzi birtual bat da, helbide elektroniko batekin identifikatua. Horrek leire.agirre@adibide.com formakoa izan behar du: a bilduaren ezkerrean posta elektroniko kontuaren jabearen izena, izen-deiturak, ezizena edo helbidearen jabeari zein jabeei identitatea ematen dien hitz edo zenbaki bat izan behar du, eta bigarren zatian, a bilduaren eskuinean, domeinua identifikatu behar da.
+Anitz forma daude posta elektroniko kontu bat egiteko:
+
+Enpresek eta administrazioek eskaini egiten dituzten posta korporatiboak, eta beraien langileei eskaintzen dizkiete.
+Ikasketa lekuek, bereziki unibertsitateek, gauza bera egiten dute ikasle eta langileekin.
+Etxeko eremuan, erabiltzaileak Internetez hornitzen dituzten enpresek (ISP), normalean, kontu bat edo pare bat ematen dituzte.
+Badaude posta zerbitzua diru kopuru baten truke ezartzen dutenak.
+Azkenik, posible da dohainik, ―baina zerbitzua eskaintzen duten konpainiekin gure datu pribatu batzuk partekatzearen truke ―, posta elektroniko kontu bat lortzea, adibidez, @gmail.com, @Yahoo Mail, @Outlook.com, @ni.eus, @sindominio.org, eta beste asko.
+
+
+== Funtzionamendua ==
+Irudiko adibidean, Anak (ana@a.org) Beari (bea@b.com) e-mail bat bidali dio. Posta elektronikoa zerbitzari banatan dute: Anak, a.org zerbitzarian eta Beak, b.com zerbitzarian. Bi zerbitzariak aldi berean harremanetan jarri behar dira mezua transferitzeko.
+Prozesuan, urrats hauek gertatzen dira:
+
+Anak mezua idatzi du, mezu elektronikoko bezero batekin (bezero elektronikoak ordenagailuen softwareak dira, mezuak irakurri eta idazteko erabiliak; e-mailak bezeroan gorde egiten dira eta askok ez dute Interneten beharrik erabiltzailearen mezuak erakutsi edo mezu berriak bidaltzeko prest gordetzeko) SMTP protokoloaren (Simple Mail Transfer Protocol) komunikatu egiten da posta zerbitzariarekin (smtp.a.org zerbitzariarekin), horrek mezua jaso eta hartzaileari bidaltzeko ordena jasotzen du.
+smtp.a.org zerbitzariak b.com domeinua daukan erabiltzaile bati mezu bat eman behar dio, baina zerbitzariak ez daki zein den erabiltzailearen ordenagailua; horretarako, bere sarearen DNS (Domain Name System) zerbitzarian kontsultatu behar du DNS protokoloa erabiltzen. DNSari zein den b.com domeinua kudeatzen duen arduraduna galdetuko dio, hau da, zein den domeinuak lotuta daukan Mx erregistroa.
+Eskaera horren DNSaren erantzuna domeinu baten izena da, Bea adibidez. Kasu horretan, mx.b.com.
+SMTP zerbitzariak, (smtp.a.org) jada, mx.b.com-ekin konekta daiteke eta mezua eman diezaioke, berriz SMTP protokoloa erabiltzen da kasu horretan.
+Beak berriz bere ordenagailua piztutakoan, softwarea martxan jartzen denean, zerbitzariak ordenagailuan gorde egiten ditu heldu zaizkion mezu guztiak, eta azkenik, Beak Anaren mezua jaisten du, irakurri ahal izateko. Horretarako, POP3 (Post Office Protocol versión 3) edo IMAP (Internet Message Acess Protocol) protokoloak erabiltzen dira.
+Batzuetan, hainbat kasu berezi gerta daitezke:
+
+Bi posta elektronikotako kontuak sare berean badaude: kasu horretan, mezua ez da bidaltzen zerbitzarien artean, zerbitzari berean daudelako.
+Anak bere ordenagailuan SMTP zerbitzaria badu, Lehenengo pausoa bere ordenagailuan egiten da. Era berean, Beak ere bere zerbitzaria bere ordenagailuan izan lezake.
+Pertsona batek posta-bezeroa web interfaze baten bidez badarabil, prozesua ia bera da, baina HTTP (Hypertext Transfer Protocol) konexioak erabiltzen dira postara sartzeko (IMAP/POP3 protokoloen ordez).
+Normalean posta zerbitzari (MX) libre bat baino gehiago dago; batek huts egiten badu, posta jaso ahal izateko.
+Interneten hastapenetan ohikoa zen zerbitzariak open relay gisa konfiguratuta egotea (errele irekia), hau da, edozein erabiltzaileren mezuak igortzen zituztela, eta ez bakarrik igorle edo hartzaile ezagunenak. Hala ere, funtzionamendu mota hori erabilerarik gabe geratu da, spama hedatzea errazten baitzuten, eta, izan ere, estandarrek ez dute gomendatzen hura erabiltzea.
+
+
+== Erabilerak ==
+
+
+=== Enpresa eta erakundeetan ===
+
+E-maila gaur egun biziki onartuta dago enpresa, gobernu eta gobernutik kanpoko erakundeentzat. E-garapenaren gai garrantzitsuenetarikoa da, komunikazioa gauzatzeko, Interneten oinarrituz.
+2010ean egindako ikasketa batek islatu zuenez, estatubatuarren % 83ren ustez e-maila beharrezkoa zela beren lana egiteko.
+Hona hemen enpresa eta erakundeentzat ekarritako onurak:
+
+logistika erraztea,
+sinkronizazioarekin laguntzea,
+kostu ekonomikoak murriztea,
+abiadura areagotzea,
+erregistro idatzia sortzea, eta
+e-mail bidezko marketina sortzea
+
+
+=== Erabilera pertsonala ===
+
+
+==== Ordenagailuak ====
+Jende askok e-mail bidez jasotako mezu eta berri guztiak begiratzeko, ordenagailuak darabiltza, bai bakoitzarenak zein familia kide edo lagun batenak.
+
+
+==== Mugikorrak ====
+Gaur egun, telefono adimentsu guztietan, mezu elektronikoak irakurtzeko hainbat aplikazio daude. Askotan app batzuk e-maila eskatu egiten dute, fidagarritasuna handiagotzeko.
+2011n, mundu osoan 1,4 bilioi email erabiltzaile zeuden eta egunero spamik gabeko 50 bilioi e-mail bidaltzen ziren.
+
+
+== Mezuaren idazketa ==
+Mezu elektronikoa edo posta elektroniko mezua egun munduan idatzia agian gehien erabiltzen den testu mota da. Garai bateko gutunen edo eskutitzen aldaeratzat jotzen da, kanala papera zen tokian sistema elektroniko bat dago orain, posta elektroniko sistema bat.
+Bi ordenagailu pertsonalen edo ordenagailu zentral baten bi terminalen artean ezin dira mezuak elkartrukatu. Posta mezuak postontzi batean artxibatzen dira (mezuak bidaltzeko era azkar bat). Pertsona batek posta elektroniko bat idaztea erabakitzen duenean, bere programak (edo web postak) gutxienez hiru gauza eskatuko dizkio:
+
+Hartzailea: mezua jaso duen posta helbide bat edo gehiago.
+Gaia: hartzaileak posta ireki baino lehen mezuan ikusiko duenaren laburpena. Tarte hau betetzea komeni da baina ez da ezinbestekoa.
+Mezua: Testua hantxe idazten da, irudik txerta daitezke eta ez du gehienezko tamainarik.
+Gainera, fitxategiak gehitzeko aukera ematen du edozein motako datu informatikoak bidaltzeko aukera emanez.
+Mezuaren hartzailea zehazteko, hartzailearen posta helbidea idazten da interfazearen Nori izeneko eremuan. Hartzaile bat baino gehiago egotekotan, hartzaile guztien posta helbideak idatzi behar dira, koma edo puntu eta komaz banatuta.
+Nori eremuaz aparte, CC eta CCO eremuak daude. Eremu horiek hautazkoak dira eta mezuaren kopiak bidaltzeko balio dute:
+
+CC eremua (Ikatzezko kopia): eremu horretan idazten diren helbideak mezua jasoko dute, baina haiek hartzaile nagusia ez direla ikusiko dute. Aldi berean, mezua jasotzen duen edonork ikus dezake CC eremua, hau da, mezua jaso duen edonork ikus dezake CC zerrendan dauden helbideek mezua jaso dutela.
+CCO eremua (Ikatzezko kopia ezkutua): eremu honetan idazten diren helbideek mezua jasoko dute, haiek hartzaile nagusia ez izan arren. Kasu honetan, CC eremuaren kontrakoa da, mezua jasotzen duen inork ezin duelako eremu hau ikusi, hau da, CCO zerrendan dauden helbideek ez dute jakingo mezua jaso dutela.
+Adibidez: Anak bere irakasle Beari mezu bat bidaltzen dio, lan bat haren esku jartzeko. Karlos eta Jone taldekideek mezuaren kopia bat jaso nahi dute, lana ondo bidali dela egiaztatzeko; beraz, Anak CC eremuan Joneren eta Karlosen helbideak gehituko ditu. Azkenik, demagun Anaren nebak lana ikusi nahi lukeela, baina ez da taldearen parte: horrela, Anak nebaren helbidea CCO eremuan gehituko du. Modu horretan, nebak kopia bat jasoko du eta taldeko beste partaide guztiek ez dute kopia jaso duenik jakingo.
+Orduan:
+
+Beak berari zuzendutako mezua jasoko du (Nori eremuan haren helbidea agertzen delako); aldi berean, Karlosek eta Jonek kopia bat jaso dutela (CC eremuan daudelako) ikusiko du.
+Karlosek berari zuzenduta ez dagoen mezu bat jasoko du (CC eremuan dagoelako eta hartzaile nagusia Bea delako).
+Jone Karlosen egoera berean dago.
+Anaren nebak mezua jasoko du eta hurrengoa ikusiko du: Bea hartzaile nagusia dela (Nori eremuan dagoelako). Jonek eta Karlosek kopia bat jaso dutela (CC eremua). Azkenik, ondorioztatuko du Anak mezua bidali diola, bere helbidea CCO eremuan gehituz.
+Reply-To eremua (erantzun). Igorleak erantzuna non jaso nahi duen adierazten duen eremua. Oso erabilgarria da igorleak posta helbide bat baino gehiago daukanean.
+Data eremua (mezuaren ordua eta eguna). Mezua zein egun eta ordutan bidali zen. Igorlearen sistemak ordu eta eguna oker konfiguratuta badauzka, hor akatsak sor litezke.
+Beste eremu batzuk:
+
+Igorlea (Sender): mezua bidaltzen duen sistema edo pertsona.
+Hartzaileak (Received): Mezua garraiatu duten MTAen zerrenda.
+Mezu identifikatzailea (Message-Id): Mezua identifikatzen duen zenbaki bakarra.
+In-Reply-To: erantzun mezuaren identifikatzailea.
+Erreferentziak (References): Mezuaren beste id-ak.
+Keywords: Erabiltzailearen gako hitzak.
+X-Erabiltzaile: Erabiltzaileak definitutakoak.
+Mezuaren goiburua normalean laburtuta adierazten da. Xehaztasun guztiak ikusteko, goiburua zabaldu bakarrik egin behar da.
+
+
+=== Posta baten bidalketa prozesua ===
+
+Erabiltzaileak nahi badu, bidaltzen dituen mezuak gorde ahal ditu bere ordenagailuan, era automatiko edo eskuzko era batean. Gordetako mezuak bidalitako mezuei erreserbatutako direktorio batean gordeta geratzen dira.
+
+
+=== Mezuen harrera ===
+Pertsona batek mezu bat jasotzen duenean, mezu horren laburpen bat ikusi ahal du sarrera ontzia deritzogun karpetan. Laburpen honetan hurrengoa ikusiko du:
+
+Igorlea (From ingelesez): eremu horrek mezua nork bidaltzen duen adierazten du. Igorlearen izena, posta helbidea edo ezizena bistaratuko da. Igorleak bere posta elektronikoa konfiguratu ez badu, posta elektronikoaren helbidea soilik ikusiko da.
+Gaia: eremu honetan mezuaren laburpen bat ikusten da. Igorleak eremu hau hutsik uzten badu, eremu honetan gai gabe motako mezu bat ager liteke.
+Mezua beste mezu baten erantzuna bada, gaia RE: edo Re: (erantzuna edo Reply ingelesez laburdura) letrekin hasten da. Hala ere, mezuaren jatorriaren arabera beste laburdura batzuk ager litezke, An: (antwort hitz alemanetik) adibidez.
+Mezua birbidalketa bat bada, gaia RV: (reenviar gazteleraz) edo Fwd: (forward ingelesez) letrekin hasten da.
+Data: eremu honek mezua noiz bidali den edo mezua noiz heldu den adierazten du. Eremu hau ordezkatzen dituen bi eremu egon daitezke, bata mezua noiz bidali den adierazten duena eta bestea mezua noiz jaso den adierazten duena.
+Gainera beste eremu batzuk ager litezke:
+
+Tamaina: mezuaren eta honen barruan egon daitezkeen fitxategien tamaina adierazten duen eremua da.
+Hartzaileak (edo Nori: edo To: ingelesez): mezua nori bidali den adierazten du.
+Erantsitako datuak: marka bat agertzen bada (normalen klip bat), mezua erantsitako fitxategiekin batera bidali dela esan nahi du.
+Lehentasuna: hartzaileak mezuari jarritako lehentasuna adierazten du (lehentasun handia harridura-marka batekin adierazten da, lehentasun txikia beherantz begira dagoen gezi batekin adierazten da eta lehentasun ertaina ez da adierazten).
+Jarraipen marka: aktibatuta badago (adibidez bandera batekin) mezua kontuan hartu behar dela esan nahi du (aldez aurretik mezua jaso duen pertsonak markatu egin du).
+Ikuskatu edo alde batera utzi: eremu honetan klik bat eginez mezua markatu daiteke mezua ikuskatzeko. Bi klik eginez, mezua alde batera uzteko markatu dezakegu. Hiru klik eginez, hasierako egoerara bueltatzen gara.
+Erabiltzaile-izena: Posta-bezero bat erabiltzen badugu eta honetan erabiltzaile-izen bat baino gehiago konfiguratzen badugu, konfiguratutako zein posta helbidera ailegatu den mezua adierazten du eremu honek.
+Mezuaren lehenengo hitzak.
+Oraindik irakurri gabe ditugun mezuak letra lodiz adierazten dira, eta behin irakurrita letra arruntez adierazten dira. Batzuetan, mezu hauek aukeratzerakoan (mezua ireki gabe) hauen aurrebista bat ikus dezakegu.
+Hartzaileak mezua irakurri nahi badu, normalean mezuan bi klik egin behar ditu. Orduan, hartzaileak mezuaren goiburua eta mezuaren edukia ikusi ahal izango ditu. Fitxategiak badaude, goiburuaren edo mezuaren edukiaren ondoren agertzen dira.
+Behin hartzaileak mezua jaso eta ireki duenean, hainbat gauza egin ditzake. Aukera posibleak:
+
+Erantzun: jasotako mezuaren igorleari erantzun (pertsona bakarra) edo guztiei erantzun, igorleari eta CC eremuan dauden helbideei erantzun.
+Birbidali: jasotako mezua igorlea ez den beste pertsona bati bidali. Birbidalitako mezua editatu ahal da.
+Zabor posta edo Spam: jasotako mezua beste ontzi batean gorde. Ontzi horretan jaso nahi ez ditugun mezuak gordetzen dira. Posta-bezeroak konfiguratu daitezke mezuak zuzenean spam ontzira bidaltzeko.
+Artxibatu: mezua ordenagailuan gorde, modu honetan, mezua kontsultatu ahal izango dugu edonoiz. Normalean, posta-bezeroak automatikoki artxibatzen ditu jasotako mezuak.
+Ezabatu: Mezua ezabatutako elementuetako karpetara bidaltzen da.
+Karpetaz mugitu: sistema batzuek mezuak katalogatzea ahalbidetzen dute, mezuak karpeta desberdinetan gordetzeko aukera emanez.
+
+
+=== Posta mezuen estiloa ===
+Eskutitz edo gutunetan bezala, igorleak estilo bat, hizkuntza-erregistro bat edo beste hautatuko du testuinguruaren arabera eta hartzailearen arabera. Posta mezu elektronikoetako hasierako agur eta amaierako diosala batzuk behin eta berriro idazteko ohiturak sortu dira sistema hori erabiltzen den hizkuntzetan, baina ohitura horiek pixkanaka-pixkanaka aldatzen doaz. Hasiera eta amaierako formulismo horiek igorleari eta hartzaileari mezua errazteko funtzioa betetzen dute. Hartzaileak lehen lerrotik ikusiko du mezuaren tonua eta igorleak formula bakar batzuk edo beste batzuen artean besterik ez du aukeratu behar, mezua idazten hasteko eta erregistro bati hasiera-hasieratik eusteko.
+
+
+===== Hasierako formulak edo agurrak =====
+Lagunarteko erregistroko, erregistro hurbileko hasiera agur batzuk: Epa!, Aupa!, Iepa! Kaixo! Zelan? Kaixo, familia! Agur bero bat! Agur, adixkide!
+Hasiera formula neutroak. Gertutasun handirik erakusten ez dutenak. Lankide hori. Xko arduradun hori! Irakasle hori! Zuzendari hori! Jauna: Andrea: Jaun/Andre hori:
+Erregistro (oso) formaleko hasiera agur batzuk: Jaun/Andre agurgarria, Jaun/Andre agurgarri hori, Xko (arduraren izena) agurgarri hori,
+
+
+===== Testuaren gorputza =====
+Testua. Mezuaren zatirik aldakorrena. Honek ere egitura logikoa izan behar du. Posta mezuaren formatuak eskatzen du mezu luzeegiak ez idaztea. Hiruzpalau paragrafo, 1500 karaktere baino gutxiagoko testuak idatzi beharko lirateke mezu elektroniko formatu honetan.
+Testuaren funtzio nagusiak askotarikoak izan daitezke: besterik gabe harremana mantentzeko mezuak idatz daitezke, maitasuna transmititzeko mezuak, eskariak egiteko, kexak adierazteko, mesedeak eskatzeko, zerbaiten berri emateko, zerbait eskaintzeko, besterik gabe iritzia edo aholkua eskatzeko mezuak...
+Igorleak ondo pentsatu behar du ze funtzio komunikatibo nagusi bete nahi dituen eta helburu komunikatibo horiek lortzeko testu labur bat idatzi behar duela argi izan behar du hasieratik amaiera arte. Hasierako formularen ostean, testuaren hasieran mezuaren helburu nagusia zein den erakutsi beharko litzateke, eta luzamendu gehiegitan galdu gabe, harira. Batzuetan aurrekari batzuk gogoratu behar, testuingurua argitu. Ondoren, posta mezuaren helburu nagusia argitu beharko da, ideiak, iritziak, gertaerak, iradokizunak, azalpenak, labur eta argi, mezuaren funtzio nagusia betetzeko behar den hori. Azkenik eta bukatzeko ordura arte idatzitakoarekin zerikusia duen ondorio, laburpen, eskaera edo proposamenen berri eman beharko. Eta amaierako formula batekin, bukatu.
+
+
+===== Amaierako formulak edo agurrak =====
+Lagunarteko erregistroko, erregistro hurbileko amaierako agur batzuk: Beno ondo izan!, Zaindu!, Izan txintxo! Ondo portatu eta gutxi gastatu! Ikusi arte! Ea noiz ikusten dugun elkar! Muxu (handi) bat! Besarkada (handi/bero) bat! Aio! Agur! Hi ere idatzi, eh! Hurrengo(ra) arte! Beno, ea noiz daukazun tartetxoren bat erantzuteko! Agur bero bat! Nahi duzunean, badakizu non gauden! Kaixo lagun! Lagun hori! Adiskidea, adiskide hori...
+Amaiera formula neutroak. Gertutasun handirik erakusten ez dutenak. Ondo izan. Agur t'erdi. Izan huntsa. Izan ongi. Aio. Agur. Laster arte. Ikusi arte. Ea noiz ikusten dugun elkar, aurrez aurre. Agur t'erdi. Horrenbestez, agur. Besteruj gabe, agur.
+Erregistro (oso) formaleko amaiera agur batzuk: Adeitasunez/Begirunez agur (t'erdi).
+
+
+== E-mail zerbitzariak ==
+Gaur egun dohainik aurkitu ditzakegun zuzkitzaileen artean honako hauek ditugu:
+
+Gmail: webmail, POP3 eta IMAP
+Outlook.com: webmail eta POP3
+Yahoo! Mail: webmail eta POP3 hauek publizitatea daukate.
+Zerbitzu berezi batzuk daude, Mailnator da horren adibide. Iraungarritasun epea daukaten kontuak eskaintzen dituzte, hauek ez dute erregistrotik behar.
+
+
+== Posta elektronikoa irakurtzeko eta kudeatzeko programak ==
+
+Windows Live Mail: Windows.
+Evolution: GNU/Linux.
+Mail: Mac OS X eta iOS.
+Outlook Express: Windows.
+Thunderbird: Windows, GNU/Linux, Mac OS X.
+
+
+== Posta elektronikoaren programa zerbitzariak ==
+Bezeroei zerbitzua eskaintzeko erabilitzen diren programak dira (posta zerbitzariak deiturikoak). Posta bezero batetik erabil daitezke.
+
+Zerbitzari programa nagusiak:
+Mercury Mail Server: Windows, Unix, GNU/Linux.
+Microsoft Exchange Server: Windows.
+MailEnable: Windows.
+MDaemon: Windows.
+Exim: Unix.
+Sendmail: Unix.
+Qmail: Unix.
+Postfix: Unix.
+Zimbra: Unix, Windows.
+Lotus Domino: GNU/Linux, OS400, Windows.
+Windows Live Mail
+Windows Live Messenger
+Zentyal: Unix.
+Posta zerbitzatzeko beste programa batzuk existitzen dira.
+
+
+== Arazoak ==
+Gaurko arazo nagusia zabor-posta da. Posta-mota horiek orokorrean kopuru handiko publizitate faltsuak dira; gehienetan, pornografia eta beste produktu batzuk (kalitate susmagarriarekin) bultzatzen dute.
+Mezuek bidaltzailearen helbideak faltsuak direla erakusten dituzte. Arrazoi honengatik, zailagoa da benetako bidaltzaileak aurkitzea edota identifikatzea; beraz, erantzuteak ez du ezertarako balio: erantzunak jasoko dituzten erabiltzaileek ez direlako benetako erabiltzaileak. Oraingoz, posta elektronikoko zerbitzuak ezin ditu mezuak identifikatu, benetako helbideak eta faltsuak bereizteko moduan.
+Zabor-postaz gain, segurtasunari eragiten dioten beste arazo batzuk daude:
+
+Birus informatikoak, fitxategi erantsien bitartez hedatzen direnak, irekitzen dituenaren ordenagailua infektatuz.
+Phishing: bankuaren informazioa lortzen saiatzen den iruzurrezko posta.
+Gezurrak (txantxa, iseka...): berri faltsuak barra-barra hedatzen dituzte.
+Posta elektronikoko kateak, pertsona askori bidaltzen zaizkien mezuak dira. Nahiz eta kalterik ez duela eragiten iruditu, eskala handian hedatzen da kontaktu guztietatik. Identitateak ordezkatzen eta birusak bidaltzen dituzte.
+Pribatutasunaren galera progresiboa
+2014tik, web-postako hornitzaile nagusiek (Google edo Yahoo bezala) baldintza batzuk eskatzen dituzte, aurreko arazoak gerta ez daitezen: datu pertsonalak, telefono-zenbaki edota posta elektroniko beste helbide bat. Horrela alta anonimoak eta faltsuak galarazten dituzte.
+
+
+== Erreferentziak ==
+
+
+== Ikus, gainera ==
+Posta-bezeroa
+Eranskina: posta-bezeroak
+Webmail
+Spam
+Robinson zerrenda
+Posta korporatiboa
+Internet
+Web 2.0
+Domeinu
+Posta elektronikoan erabiltzen diren protokolo nagusiak:
+MIME
+SMTP
+POP3
+IMAP
+
+
+== Kanpo estekak ==

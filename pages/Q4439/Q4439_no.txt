@@ -1,0 +1,53 @@
+En harddisk eller et platelager (engelsk: hard disk, forkortet HD, eller hard disk drive, HDD) er  et lagringsmedium for binært kodet informasjon på hurtig roterende platelagerskiver. Skivene er dekket av et tynt ferromagnetisk lag der informasjonen lagres som remanens. Denne er ikke flyktig, slik at innholdet blir stående også når platelageret ikke er i drift. 
+I motsetning til sekvensielle lagringsmedier som magnetbånd eller hullstrimler er det ikke nødvendig å søke lineært for å finne ønsket data, derfor regnes platelageret som et valgfritt adresserbart medium (engelsk: random access).
+Opprinnelig hadde de fleste datamaskiner platelager som bakgrunnslager. I nyere tid har det også kommet flashminner med høy lagerkapasitet på markedet. Flashminner med de samme tilkoplingene som vanlige platelager betegnes som SSD-lager, disse blir ofte også kalt platelager for enkelhets skyld.
+
+
+== Historikk ==
+
+Før man lagret på plater var trommelminne et av de mest brukte lagringsmediene. Hvert enkelt spor lå som en lukket sirkel på trommelen, og hadde et eget lese/skrivehode som var fast montert. I adresseringsmetoden «chs», cylinder, head, sector, som også er brukelig i dag, blir sporene fremdeles betegnet som head. Tromlene var store og med begrenset lagringsplass, men de var forholdsvis raske. Andre eldre lagringsmedier er:  Williamsminne, kvikksølvminne og magnetkjerneminne (forløper for dagens RAM).
+4. september 1956 introduserte IBM sitt første platelager, IBM 350. Platelageret bestod av 50 plater der hver plate var 24″ i diameter – med en kapasitet på 5 megabyte, noe som var mye på den tiden. Hele enheten veide 1,2 tonn. Den ble ikke solgt, men utleid for 650 dollar/måned. I 1981 kom de første lagringsenhetene for personlige datamaskiner, da med en kapasitet rundt 5 megabyte. I dag leveres ordinære hjemmemaskiner med platelager med kapasitet opp mot flere terabyte.
+
+
+== Størrelse ==
+Vanlige yttermål er 3,5″, 2,5″ og 1,8″. En del utstyr ble levert med enda mindre platelager. Dette var ofte mobile enheter som f.eks. MP3-spillere som ikke følger standardiserte mål. 2,5" og 1,8" standardene var også populære valg i den bærbare musikkbransjen da disse bruker lite strøm, kan holde store mengder data og er nesten lydløse. Creative og Apple brukte disse to typene i mange av sine MP3-spillere før flashminne tok over.
+
+
+== Kapasitet ==
+ 
+Et platelager består av flere plater med én eller to brukbare sider. På hver plate er det et antall spor, som igjen er delt inn i sektorer. Hver sektor kan lagre et visst antall bytes, vanligvis 512. Lagringskapasitet = antall plater * sider * spor * sektorer * byte per sektor. Kapasiteten til platelager ble opprinnelig angitt i megabyte. Rundt 1997 gikk man over til å angi gigabyte, og omtrent siden 2008 har også terabyte blitt brukelig. Det har vist seg at kapasiteten har blitt fordoblet i løpet av ca. 16 måneder. 
+Det er relativt tidkrevende å lese og skrive informasjon til et platelager, dette kan være en flaskehals når man behandler større mengder data. Dette er svært merkbart på en vanlig PC når minnet er overbelastet slik at datamaskinen stadig må hente informasjon fra harddiskens sidevekslingsfil. De viktigste faktorene for diskers aksesstid er flyttingen av diskhodet (søketid), den tiden det tar for platen å rotere slik at første ønskede sektor er under diskhodet (rotasjonsforsinkelsen) og den tiden det tar å kjøre alle ønskede data under diskhodet (overføringstiden). Aksesstid = søketid + midlere rotasjonsforsinkelse + overføringstid. Søketid avhenger av produsentens spesifikasjoner. Midlere rotasjonsforsinkelse er tiden det tar for platen å rotere en halv runde. Overføringstiden avhenger av hvor mye data som skal behandles og hvordan den er organisert på disken. En operasjon tar vesentlig lengre tid hvis dataene som leses er spredt tilfeldig utover enn hvis dataene ligger etter hverandre fellestilrørende, så derfor er defragmentasjon viktig.
+
+
+== Oppbygning ==
+
+Et platelager består av to deler; én elektronisk og én mekanisk. Den mekaniske delen består av et sett med plater i et støvtett miljø. Platesettet består av en eller flere plater som er montert på en roterende spindel, denne drives av en elektromotor. Et sett med kombinerte lese- og skrivehoder sitter på en styrt arm som kan bevege seg langs overflaten av platene for å skrive og lese informasjonen som er lagret på dem på ønsket sted.
+Den elektroniske delen styrer den mekaniske delen, og er det primære mellomleddet mellom resten av datamaskinen og selve lese- og lagringsforholdet. Elektronikken tar seg av følgende:
+
+Styring av mekanismen
+Diagnose og måling av temperatur
+Kommunikasjon med resten av datamaskinen
+Hurtigminne
+Kartlegge informasjonen på platene
+Bearbeider informasjonen iht. filtabellen (som forteller hvor filene ligger på platene)
+Når datamaskinen spør om å få en gitt mengde informasjon fra platelageret, blir denne forespørselen først sendt til styringsenheten i platelageret. Styringsenheten oversetter de logiske koordinatene den mottar og oversetter dem til de faktiske koordinatene på platelageret. Så styrer den «armene» – hvor «hodene» ligger – til de ulike koordinatene, leser informasjonen og returnerer det. En enhet i elektronikken setter så sammen de ulike bitene av informasjon, som ikke nødvendigvis er lest i samme rekkefølge som de ble forespurt, og sender dem videre i riktig rekkefølge.
+Hodene flyter på et hårtynt luftlag, og dersom enheten får fysisk støt, kan hodene slå mot plate-overflaten, som kan forårsake det som heter hode-krasj, og stedene bli ødelagt. Leverandørene lager platelagrenes mekanikk til å motstå små støt, som måles i G (1 G er 9,8m²/sek.). Se til høyre for eksemplar av dette.
+
+
+=== Hurtigminne ===
+De fleste platelagre i dag har hurtigminne, såkalt «cache», som fungerer som en buffer. Meningen med hurtigminnet er at den siste informasjonen som ble skrevet til platelageret skal være raskt tilgjengelig, slik at overføringstiden blir minst mulig.
+Det finnes også platelagre med flashminne. Selv om flashminnet er betydelig langsommere enn vanlig internminne, er platelagre med flashminne fremdeles mye raskere enn mekaniske platelagre. Det er først og fremst en vesentlig raskere tilgangstid som gjør at disse platelagrene brukes, og de benyttes også i en del miljøer hvor platelagrene er utsatt for mekaniske belastninger, som for eksempel vibrasjoner eller slag. Lagringskapasiteten til et slikt flashminne er ofte svært begrenset i forhold til vanlige platelagre, men har den fordelen at informasjonen ikke går tapt når strømmen slås av.
+Det er også produsert en del platelagre hvor mengden hurtigminne er vesentlig større enn normalt, ofte med flashminne for å supplere det vanlige hurtigminnet. Styringsenheten til platelageret kan da velge hvor den vil hente informasjonen, fra flashminnet eller fra platelageret. Da blir det ofte brukt avanserte algoritmer for å avgjøre hvor det er optimalt å lagre informasjonen, og i noen tilfeller kan styringsenheten gis hint om hvor den bør lagre bestemte filer. Slik manipulering vil skje uten at brukeren trenger å gjøre noe.
+
+
+== Tilkobling ==
+Platelagrenes forbindelse – «interface» – til hovedkortet, er basert på kabler. ST-506 og ESDI er tidlige standarder. Interfacestandarden sier ingen ting om platelageret sitt faktiske ytelse. Et ATA100 platelager kan vise seg å være mye raskere enn et ATA133 platelager. Det er den mekaniske delen som bestemmer lese-/skrivehastigheten.
+Opprinnelig har man brukt IDE-grensesnittet, men med innføringen av SATA-standarden 2003 endret man samtidig utseende på kablene, slik at de ble langt smalere, noe som er viktig i forhold til den begrensede plassen i kabinettet og behovet for god luftsirkulasjon. For løsninger hvor større hastigheter ble krevet, ble SCSI-grensesnittet benyttet, på grunn av utvikling av alternative standarder etter hvert utelukkende for tjenere. For eksterne platelagre benyttes gjerne USB- eller Firewire-grensesnittene. Disse er også alltid IDE eller S-ATA disk som er satt inni et kabinett der en respektiv IDE- eller S-ATA-kontroller kommuniserer med maskinen på USB eller Firewire porten. En slik disk kan taes ut av diskkabinettet og settes i hvilken som helst respektiv kontroller. Dette er det samme prinsippet som at den interne IDE- eller S-ATA-kontrolleren i en datamaskin kommuniserer på maskinen sin PCI-buss istedenfor USB- eller Firewire-bussen. 
+Den opprinnelige versjonen av SATA fra 2003 spesifiserte en overføringshastighet på 1,5 Gbit/s, SATA 3.0 som ble offentliggjort 2008 spesifisere 6 Gbit/s. SATA 3.2 (SATA Express) med 8 eller 16 Gbit/s (avhengig av konfigurasjon) ble publisert i august 2013. Alle revisjonene er bakoverkompatibel. De nyere revisjonene har gjort det mulig å forbedre kvaliteten på for eksempel strømming av video. Også SSD-lagringsmediene, som baserer seg på halvledende flash-minne har dradd nytte av SATAs videreutvikling. De nye SSD-lagringsmediene forventes å ta over mange anvendelsesområder for dagens platelagre. De har ingen bevegelige deler, er generelt raskere, og bruker svært lite strøm.
+
+
+== Referanser ==
+
+
+== Eksterne lenker ==
+Kriminaletterforskere i cyberspace - artikkel fra forskning.no 5.9.02

@@ -1,0 +1,127 @@
+E-mail (iné názvy: email, mail, mejl, elektronická pošta, e-pošta; slangové tvary sú: meil, majl) môže byť:
+
+elektronický list (iné názvy: e-mailová/emailová/mailová/mejlová/e-poštová správa), t.j. adresovaná elektronická správa pri elektronickej komunikácii medzi používateľmi počítačov pripojených do počítačovej siete, ktorá obsahuje v tele obyčajne samotný text a prípadné netextové prílohy;
+súhrn elektronických listov;
+súhrn softvéru počítača na výmenu (zasielanie, prijímanie) elektronických listov, alebo metóda na takúto výmenu elektronických listov, alebo samotná táto výmena elektronických listov;
+Väčšina dnešných e-mailových systémov používa na prenos správ internet, a zároveň e-mail je popri www jedným z najčastejších spôsobov použitia internetu. 
+
+
+== Jazykové záležitosti ==
+Slová e-mail, email, mail, mejl sa v slovenčine v lokáli končia na -le, nie na -li (napr. v e-maile, nie v e-maili)
+Pokiaľ ide o angličtinu, slovníky Oxford, AHD a Longman v súčasnosti uvádzajú tvary email a e-mail ako rovnocenné, pričom na prvom mieste uvádzajú tvar email; aj americký Merriam-Webster ich uvádza ako rovnocenné, ale na prvom mieste uvádza tvar e-mail . Collins uvádza síce v zásade tvary email, e-mail alebo E-mail ako rovnocenné a na prvom miest tvar email, ale pre americkú angličtinu uvádza tvar e-mail.
+Oxfordská redakcia má najstarší doklad pre tvar electronic mail z roku 1975, pre tvar E-mail z roku 1979 a pre tvar Email z roku 1982 (stav v roku 2012), predpokladá však, že existujú staršie výskyty.  
+
+
+== Pôvod e-mailu ==
+E-mail je starší ako internet. Existencia e-mailových systémov bolo rozhodujúcou motiváciou pri tvorbe internetu.
+Spustenie systému mainframového počítača so zdieľaním času (CTSS - Compatible Time-Sharing System) v MIT v roku 1961 umožnilo pomocou terminálov prihlásenie viacerých užívateľov do centrálneho systému s možnosťou uloženia a zdieľania súborov. V roku 1965 bolo navrhnuté do tohto systému pridať príkaz "MAIL", ktorý by pridával súkromné správy pre každého užívateľa, ktoré len on môže čítať, do súboru "MAIL BOX".  Príkaz bol pôvodne určený na správy systému o zálohovaní súborov ale potom sa používal aj ako spôsob komunikácie viacerých používateľov.
+E-mail sa rýchlo rozšíril a stal sa sieťovým e-mailom, čo umožňovalo používateľom posielanie správ medzi rôznymi počítačmi. Raná história sieťového e-mailu je nejasná; systémy AUTODIN mohli byť prvé, ktoré umožňovali prenos elektronických textových správ medzi rôznymi počítačmi (1966), ale je možné, že niečo podobné mal už skôr systém SAGE.
+Počítačová sieť ARPANET mala hlavné slovo v ďalšej evolúcii e-mailu. Existuje správa , ktorá poukazuje na experimenty v prenose e-mailov medzi systémami krátko po vzniku ARPANETu v roku 1969. Ray Tomlinson začal v roku 1972 používať znak @ na oddelenie mena používateľa od názvu stroja. Všeobecný názor, že bol pôvodcom e-mailu je prehnaný, hoci jeho programy SNDMSG a READMAIL boli v skorom vývoji veľmi dôležité. ARPANET významne zvýšil popularitu e-mailu, a ten sa zároveň stal trhákom ako aplikácia v rámci ARPANETU.
+
+
+== Rastúca popularita ==
+Ako sa stala všeobecne známou použiteľnosť a výhody e-mailu v rámci ARPANETu, popularita e-mailu sa zvyšovala, čo viedlo k dopytu od ľudí, ktorí nemali prístup k ARPANETu. Bolo vyvinutých niekoľko protokolov na doručovanie pošty medzi skupinami počítačov so zdieľaním času pomocou alternatívnych prenosových systémov, ako UUCP a e-mailový systém VNET od IBM.
+Keďže nie všetky počítače, alebo siete boli navzájom zosieťované, e-mailové adresy museli obsahovať „cestu“ pre správu, t. j. trasu medzi počítačom odosielateľa a prijímateľa. Týmto spôsobom bolo možné posielať e-maily medzi viacerými sieťami vrátane sietí ARPANET, BITNET a NSFNET, ako aj strojom pripojeným k priamo k iným pomocou UUCP.
+Cestu špecifikovala tzv. „bang path“ adresa, ktorá špecifikovala skoky (hops) medzi lokáciami, ktoré boli považované za dostupné adresátovi. Nazývala sa tak, pretože obsahovala pre každý skok znak „bang“, t. j. „!“. Takže napríklad cesta ...!bigsite!foovax!barbox!ja oznamuje, že pošta sa má smerovať stroju bigsite (predpokladaná dobre známa lokácia prístupná každému) a odtiaľ cez stroj foovax používateľskému účtu ja na stroji barbox.
+Predtým, ako sa bežne začali používať mailovacie programy s automatickým smerovaním, ľudia často uverejňovali zložené bang adresy s použitím { } konvencie (pozri Glob), aby boli uvedené cesty z niekoľkých veľkých strojov, v nádeji, že potenciálny korešpondent bude schopný spoľahlivo doručiť poštu na jeden z nich (príklad ...!{seismo, ut-sally, ihnp4}!rice!beta!gamma!ja). Bang cesty s 8 až 10 skokmi neboli v roku 1981 ničím výnimočným. Vytáčané UUCP spojenia pracujúce v nočných hodinách spôsobovali týždeň dlhé časy prenosu. 
+
+
+== Moderný internetový e-mail ==
+
+
+=== Ako e-mail funguje ===
+Typický sled udalostí, ktorý sa uskutoční, keď Anička napíše e-mail Braňovi:
+
+Anička napíše správu pomocou svojho programu mail user agent (MUA). Napíše alebo zvolí z adresára e-mailovú adresu svojho korešpondenta. Potom stlačí tlačidlo „odoslať“ a MUA použije Simple Mail Transfer Protocol (SMTP) na to, aby poslal správu mail transfer agentovi (MTA), napr. smtp.a.org, ktorý prevádzkuje Aničkin Internet Service Provider (ISP).
+MTA sa pozrie na cieľovú adresu, napr. brano@b.org. Moderná internetová adresa má tvar miestneurcenie@domena.priklad.sk časť pred znakom @ je miestna časť adresy, často používateľské meno príjemcu správy, a časť za @ je názov domény. MTA vyhľadá názov domény v Domain Name System (DNS), aby zistil mail exchange servery prijímajúce poštu pre danú doménu.
+DNS server domény b.org -- ns.b.org -- odpovie MX záznamom, kde uvedie mail exchange servre pre danú doménu, v našom prípade mx.b.org, server prevádzkovaný Braňovym ISP.
+smtp.a.org odošle správu mx.b.org použitím protokolu SMTP, ktorý ho doručí do schránky používateľa brano.
+Braňo stlačí tlačidlo „skontrolovať novú poštu“ v jeho MUA, ktorý vyzdvihne poštu pomocou protokolu POP (POP3).
+Tento sled udalostí sa pravdepodobne týka väčšiny používateľov e-mailu. Existuje však veľa alternatív a komplikácií e-mailového systému:
+
+Anička nemusí mať na svojom počítači MUA, namiesto toho sa pripája k webmailovej službe
+Na Aničkinom počítači môže bežať MTA, čím sa eliminuje prenos z kroku 1
+Je veľa spôsobov, ako si Braňo môže vyzdvihovať svoju poštu, napríklad použitím protokolu IMAP, prihlásením sa na mx.b.org a priamym prečítaním pošty, alebo použitím webmailovej služby.
+Domény zvyčajne majú záložné (backup) mail exchange servre, takže môžu pokračovať v prijímaní pošty, aj keď nie je práve dostupný hlavný mail exchange server. Príklad:
+$ host -t mx wikipedia.org
+wikipedia.org mail is handled by 10 mail-eater.wikimedia.org.
+wikipedia.org mail is handled by 50 pascal.knams.wikimedia.org.
+
+Bývalo zvykom, že ktorýkoľvek MTA prijímal správy pre ktoréhokoľvek používateľa na internete a urobil, čo sa dalo, aby správu doručil. Takí MTA sa nazývajú open mail relays. Toto bolo dôležité v začiatkoch internetu, keď boli sieťové spojenia nespoľahlivé a nepermanentné. Ak MTA nemohol doručiť správu do cieľa, mohol ju aspoň poslať agentovi bližšie k cieľu. Ten by mal väčšiu šancu ju doručiť neskôr. Ukázalo sa však, že tento mechanizmus bol zneužiteľný ľuďmi posielajúcimi nevyžiadanú hromadnú poštu (spam), čoho dôsledkom je, že veľmi málo zo súčasných MTA sú open mail relays (t. j. prijímajú poštu iba pre známych používateľov resp. domény). Prakticky všetky open relays sú rýchlo odhalené a zneužité spammermi, ktorí neustále prehľadávajú (scanujú) IP rozsahy celého internetu.
+
+
+=== Formát správy ===
+Formát e-mailovej správy je definovaný v RFC2822. Pred uvedením RFC2822 bol formát opísaný RFC822.
+Internetové e-mailové správy pozostávajú z dvoch hlavných častí:
+
+Hlavičky - sumár správy, odosielateľ, príjemca a iné informácie o e-maile
+Telo - samotná správa, zvyčajne obsahujúca na konci blok s podpisom
+Hlavičky zvyčajne obsahujú aspoň štyri polia:
+
+Od: e-mailová adresa odosielateľa správy
+Komu: e-mailová adresa prijímateľa správy
+Predmet: stručný sumár obsahu správy
+Dátum: miestny dátum a čas originálneho odoslania správy
+Je treba poznamenať, že pole „Od“ nemusí obsahovať adresu odosielateľa. Informácie v hlavičke na počítači prijímateľa je podobná záhlaviu na konvenčnom liste - skutočná informácia o tom, komu bola správa adresovaná je odstránená mailovým serverom potom, ako je priradená správnej mailovej schránke. Tiež si všimnite, že pole „Od“ nemusí obsahovať adresu skutočného odosielateľa. je veľmi jednoduché sfalšovať tento riadok a správa potom vyzerá, že prišla z uvedenej vymyslenej adresy. Je možné digitálne podpísať e-mail. To je priam nemožné sfalšovať.
+Ďalšie bežné hlavičky:
+
+Cc: carbon copy - kópia (pretože písacie stroje používajú „kopirák“ (carbon paper) na robenie kópií listov)
+Bcc: blind carbon copy - slepá kópia (adresát bude vidieť osoby uvedené v poli „Komu“, ale nie zoznam adries v "Bcc")
+Received: prijaté - trasovacia informácia vytváraná servermi, ktorými správa prešla
+Content-type: typ obsahu - informácia o tom, ako má byť správa zobrazená, zvyčajne MIME typ
+
+
+== Správy a mailové schránky ==
+Medzi počítačmi na internete sa vymieňajú správy pomocou Simple Mail Transfer Protocol a softvéru typu MTA ako napr. Sendmail. Používatelia si sťahujú správy zo svojho servera zvyčajne použitím jedného z protokolov POP alebo IMAP, avšak v prostrediach veľkých spoločností sa stále vyskytuje použitie niektorého komerčného protokolu ako napr. Lotus Notes alebo Microsoft Exchange Server.
+Je možné ukladať e-maily buď na strane servera alebo strane klienta. Štandardné formáty pre mailové schránky sú napr. Maildir a mbox. Niekoľko prominentných e-mailových klientov používa vlastný formát, a na konverziu medzi týmito formátmi je potrebný špeciálny program.
+Keď nie je možné správu doručiť, MTA prijímateľa musí o tom odoslať správu (bounce message) späť odosielateľovi, v ktorej poukazuje na problém.
+
+
+== Kódovanie obsahu e-mailu ==
+Pre e-mail je definované nesenie 7-bitovej ASCII informácie. Hoci je väčšina e-mailových prenosov „8-bitovo bezproblémová“, nie je možné to zaručiť. Z tohto dôvodu bol e-mail rozšírený o štandard MIME, aby bolo umožnené kódovanie binárnych príloh, vrátane obrázkov, zvukov a HTML príloh.
+
+
+== Spam a e-mailové červy ==
+Užitočnosť e-mailu ohrozujú dva fenomény, spam a e-mailové červy.
+Spam je nevyžiadaná komerčná pošta. Nízke náklady na odoslanie správy umožňujú spammerom odoslať stovky miliónov e-mailových správ denne pomocou lacného internetového pripojenia. Stovky aktívnych spammerov takto spôsobujú preťaženie počítačov v internete, ktoré dostávajú desiatky či stovky nevyžiadaných e-mailov denne.
+E-mailové červy používajú e-mail na to, aby sa mohli šíriť do ostatných zraniteľných počítačov. Hoci prvý e-mailový červ (Morris worm) infikoval UNIXové počítače, tento problém sa v súčasnosti týka takmer výlučne Microsoft Windows.
+Vplyv týchto dvoch faktorov spôsobuje, že používatelia dostávajú čoraz viac nevyžiadanej pošty, čo redukuje použiteľnosť e-mailu.
+Množstvo technologických iniciatív (Stopping e-mail abuse) sa snaží zmierniť dopad spamových útokov. V USA bol kongresom schválený zákon na reguláciu takéhoto e-mailu.
+Iným spôsobom obrany pred spamom okrem legálnej je obrana technologická. Jedným zo zdrojov e-mailových adries je web, a vďaka špecializovaným programom je možné hromadne extrahovať e-mailové adresy vyskytujúce sa v texte webstránok. Na zabránenie takýchto automatizovaných útokov sa používa e-mailová adresa vo forme pochopiteľnej človeku, avšak nečitateľnej stroju. Napríklad adresa „alenka@domena.sk“ sa zapíše ako „alenka zavináč domena bodka sk“ (v angl. často používané „alenka AT domena DOT sk“), alebo sa vygeneruje obrázok obsahujúci e-mailovú adresu a ten sa uvedie namiesto textu (napr. [3], [4]).
+
+
+== E-mail a súkromie ==
+Bez osobitných bezpečnostných opatrení e-mail nezaručuje súkromie, pretože
+
+e-mailové správy vo všeobecnosti nie sú šifrované;
+e-mailové správy musia prejsť cudzími počítačmi v sieti predtým, ako dosiahnu cieľový počítač, čo znamená, že je pre iných relatívne jednoduché zachytiť a prečítať správu;
+väčšina poskytovateľov e-mailových služieb ukladá na svojich serveroch kópie e-mailových správ predtým, ako sú doručené. Tieto zálohy môžu zostať na serveri aj počas niekoľkých mesiacov a to aj v prípade, že ich vo svojej schránke vymažete.
+Existujú kryptografické aplikácie, ktoré môžu tieto nedostatky riešiť, ako napr. virtuálne privátne siete, šifrovanie správ pomocou PGP alebo GNU Privacy Guard, šifrovaná komunikácia s e-mailovým serverom pomocou Transport Layer Security a Secure Sockets Layer a šifrované autentifikačné schémy ako Simple Authentication and Security Layer.
+
+
+== Referencie ==
+
+
+== Pozri aj ==
+Príloha e-mailu
+Sociálne aspekty:
+netiketa
+spam
+počítačový vírus
+Freemailové služby/webmail:
+Gmail
+Outlook
+Yahoo! Mail
+Azet.sk
+Centrum.sk
+Zoznam.sk
+Post.sk
+
+
+== Iné projekty ==
+
+ Commons ponúka multimediálne súbory na tému E-mail
+
+
+== Zdroj ==
+Tento článok je čiastočný alebo úplný preklad článku E-mail na anglickej Wikipédii.

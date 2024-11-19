@@ -1,0 +1,54 @@
+Le disco dur (o DD, translation del anglese hard disk; pro isto sovente abbreviate HD) esse un dispositivo cargate de immagazinar information de forma persistente in un computator.
+Le discos dur generalmente utilisa un systema de registration magneto-optic. In iste typo de disco se trova intra le copertura un serie de plattos metallic cumulate, girante a grande velocitate. Super iste plattos se situa le capites, cargate de leger o scriber le impulsos magnetic.
+Il ha distincte standardes governante le communication inter un disco dur e le computator. Les plus utilisate es IDE/ATA, SCSI, e SATA (de recente apparition).
+Le disco dur non pote essser utilisate per un systema de operation directemente post livration del fabrica. Primarimente nos debe definir in illo un o plus partitiones, e postea nos debe dar lo un formato que pote esser comprendite per nostre systema.
+Tamben existe un altere typo de discos, denominate discos de stato solide, que utilisa un certe typo de memorias construite con semiconductores pro immagazinar le information. Le uso de iste classe de discos generalmente es limitate al supercomputatores, a causa de su elevate precio.
+
+
+== Partition de disco dur ==
+
+Le partition de discos dur esse le creation divisiones logic que permitte le application de un formato logic. Un disco dur pote habe un partition, plure partitiones, o nulle partitiones (un disco informattate). Le partitionamento de discos es un technica simple que pote esser vidite como un precursor del direction de volumines logic.
+Hodie, plus que un systema de operation pote esser executate o installate in un sol computator, sin un partition (como BSD, Linux, e SkyOS). Aun assi, le majoritateusante de systemas de installation, aun illes que pote esser usate sin un disco dur, esse installate a un particular partition de un disco dur. Si le systema habe plure partitiones, iste pote permitter le installation de plure systemas de operation, o le immagazination de filas non del systema de opration (como documentos personal e programmas) a su proprie partition.
+Il ha plure schemas de organisation de filas in un partition; iste schemas esse nominate systemas de filas. Le plus commun familias esse le series FAT (File Allocation Table, tabula de assignation de filas; typos include FAT16, FAT32, et alia), le series NTFS, e le series Ext (Ext2, Ext3, Ext4, etc.), ma il ha varie systemas de filas pro varie usages e rationes. Le majoritate de systemas usa un metaphora logic de filas e camisas. Un camisa pote esser situate in un altere camisa, e ulle camisa esse logicamente in un "assignation radice". Un fila de assignation mantene ligamines interne al position real de cata fila, e le loco logic.
+
+
+== Partitionamento de discos in architectura commun ==
+Un partition in le architectura commun es un parte de un unitate de disco dur que pote tener un systema de filas independente. Existe tres typos de partitiones principal:
+
+Partition primari
+Partition extendite, que contine un o plus partitiones logic
+Partition logic
+
+
+=== Stato actual ===
+Le descriptiones in iste articulo de necun maniera constitue le unic designo possibile pro implementar le partitionamento del unitate de disco dur in un IBM PC. Nonobstante, isto es le schema de partitionamento principal usate in le architectura IBM PC, e le unic utilisate pro le systemas de operation de Microsoft.
+Lo dicite anteriormente non significa que non existe deviationes possibile ab iste schema. Existe varie productos de software, que per modification de alcun partes del sequentia de initialisation, es capace de extender iste limitate schema de partitionamento. Nonobstante, ante de usar qualque typo de software, es consiliabile studiar como isto functiona e interage apud le systemas de operation que sia executate.
+Pro le proxime apparition del architectura IA-64 (le extention de 64 bit del linea x86) Intel habe preparate un joco de specificationes cognoscite como Extensible Firmware Interface (EFI). Istos include, inter altere cosas, un formato plus avantiate pro le tabella de partition (appellate “GUID Partition Table” o GPT).
+
+
+=== Partitiones extendite e logico ===
+Le systema de operation DOS de omnes version poteta leger solo un partition FAT primaria in le disco duro. Ista,le deteriorization del FAT del utilisation del disco et le limitationes in le dimensiones de discos se faceva a Microsoft inventar un schema meliorate le partitions de disco. Le schema esseva relativamente simple: un del entrata del tabla de partition principal esseva nominate una partition extendite, e date un numero del tipo de partition special (0x05). Solo le campo de initio de partition dentro de iste esseva usate, pro reservar le ubication del primer descriptor del partition extendite; que a su voce teneva un campo similar reservante le ubication del siquiente, in effecto que crea una lista unite de descriptores de particion. Le altera campos de una partition extendite esseva indefinite, et desde istos significates nincuno spacio iste assignate al mesme partition, ista non pote esser usate pro reservar de datos. Le partitiones in le initio del lista unite con una partition extendite es nominate le partitiones logicas. Istes es spacio assignate, e potete usarse pro reservar data. Le sistemas operativos vetuste, que non esseva consientes de particiones extendite, partitiones simplemente ignorate con le numero de tipo 0x05, et assi le contabilitate esseva preservate. Iste schema pote theoricamente reimplaciar le vetuste, como totes le partition de un disco duro pote esser puestas dentro de una solo partition extendite; non obstante, por alcun ration, Microsoft non actualisiva su sistema operativo DOS (o de facite qualqunque altera usque le momento), per lo tanto iste activate desde una partition extendite, e debite a que le necessitate pro partitiones primarias se preservava. Super toto totevea haberea solo permitite un partition FAT primaria pro unitate, significante totes le alteras partition FAT primarias debe tener lor numeros de tipo de partition prior cambiante al activante DOS, pro que ista esserea capacitate de procceder. Iste technica, usate per varias administratores de activate populares, se volveva cognoscites como occultation del partition.
+Partitionamiento iste es facite pro varias rationes:
+
+Alcun systemas de archivos (per exemple, versiones vetustate de sistemas archivo FAT de Microsoft) habe limites de dimensiones plus pauco que un unitate de disco moderna.
+Si una partition se volve corrupta, se pote intentar salvar datos super altere partition. Iste es similar a un systema RAID, excepto in le mismo disco.
+In alcunos sistemas operativos, per exemplo Linux, le archivos swap habe que esser lor propias partitiones.
+A veces, dos sistemas de operation non pote coexistir in le mesme partition, o usar differentes systemas de formation "nativo". Le unitate esse partitionate in discos logicos differentes pro differentes sistemas operativos.
+Numerosos sistemas de partitionamento ha apparecite durante annos recentamente, pro casi totes le architecturas de computeres in existentia. Multos de istos es relativamente transparentes e permite manipulation conveniente del partitiones de disco; alcunos, nonobstante, es obsoletos.
+Iste schema es extensamente considerate obsoleto, por permite solo con discos duros major que 8 gigabytes in dimensiones. Como le architectura IBM PC es extremadamente commun, le tablas de partition es probablemente pro remanecerse durante un tempo.Nonobstante, un projecto recente de Intel e Microsoft nominate Extensible Firmware Initiative (EFI) tene un componente nominate GUID Partition Table.
+
+
+== Caracteristicas de un disco dur ==
+
+Inter le characteristicas notabile de un disco dur, il habe:
+
+Capacitate: Le capacitate de discos dur esse mensurate in bytes. Pro marcar le grandor de bytes, le prefixes del systema international mega-, giga-, e tera-- esse usate, ma in referentia a un numero de bytes, iste prefixes non representa 106, 109, e 1012, ma 220, 230, e 240, respectivemente.
+Tempore medie de accesso: Le tempore medie que le disco require pro prender accesso a un bloco aleatori de memoria. Le blocos immagazinate proxime al centro del disco esse plus facile que leger que blocos
+Tempore de acceso maxime: Le tempore requirite pro le pejore possibile movimento del capite de leger.
+Velocitate de transferentia: Le velocitate que le hardware del disco dur pote transferir le information legite al computator. Iste velocitate pote esser limitate per le altere hardware del computator.
+Cache: Un cache de memoria de accesso aleatori, usate pro immagazinar information accessate frequentemente, pro prolongar le vita del disco
+Interfacie: Methodo usate per le disco dur pro communicar con le computator. Interfacies include IDE e SCSI (si internal) e USB e Firewire (se external), con plure alteres.
+
+
+== Referentias ==
+(espaniol) Llop Tella, José Manuel. Disco dur e particiones.

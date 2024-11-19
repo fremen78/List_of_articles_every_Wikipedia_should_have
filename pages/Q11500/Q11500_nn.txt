@@ -1,0 +1,777 @@
+Flatevidd eller areal er ord som vert brukte for å uttrykka utstrekkinga av eit område. 
+Einingane ein bruker til å måle flatevidd har to dimensjonar, lengde og breidde. Ein kvadratmeter er til dømes ein meter lang og ein meter brei, medan ein kvadratkilometer er ein kilometer i kvar retning. Andre einingar ein ofte brukar for å snakka om flatevidd er mål og dekar, som begge er definert som 1000 kvadratmeter.
+Det er fleire kjende formlar for enkle former som trekantar, rektangel og sirklar. Ved å nytte desse formlane kan ein finne arealet til alle polygon ved å dele dei inn i trekantar. For former som består av kurver, må ein som regel nytte differensialrekning for å finne arealet. Faktisk var problemet med å finne arealet til forskjellige figurar ein stor motivasjonsfaktor for utviklinga av differensialrekning.
+For former som kuler, kjegler og sylindrar, vert arealet av overflata kalla overflatearealet. Formlar for overflateareal av enkle former vart rekna ut av greske matematikarar i antikken.
+
+
+== Formell definisjon ==
+Ei tilnærming til å definere kva ein meiner med areal finn ein gjennom aksioma. Til dømes kan ein definere eit areal som ein funksjon a frå ei samlnig M av ei særskild plan figur i ei mengd reelle tal som tilfredsstiller følgjande eigenskapar: 
+
+For alle S i M, 
+  
+    
+      
+        a
+        (
+        S
+        )
+        ≥
+        0
+      
+    
+    {\displaystyle a(S)\geq 0}
+  
+.
+Om S og T er i M så er òg 
+  
+    
+      
+        S
+        ∪
+        T
+      
+    
+    {\displaystyle S\cup T}
+  
+ og 
+  
+    
+      
+        S
+        ∩
+        T
+      
+    
+    {\displaystyle S\cap T}
+  
+ det, 
+  
+    
+      
+        a
+        (
+        S
+        ∪
+        T
+        )
+        =
+        a
+        (
+        S
+        )
+        +
+        a
+        (
+        T
+        )
+        −
+        a
+        (
+        S
+        ∩
+        T
+        )
+      
+    
+    {\displaystyle a(S\cup T)=a(S)+a(T)-a(S\cap T)}
+  
+.
+Om S og T er i M med 
+  
+    
+      
+        S
+        ⊂
+        T
+      
+    
+    {\displaystyle S\subset T}
+  
+ så er T − S i M og a(T − S) = a(T) − a(S).
+Om ei mengd S er i M og S er kongruent til T så er T òg i M og a(S) = a(T).
+Alle rektangel R er i M. Om rektangelet har lengda h og breidda k så er a(R) = hk.
+La Q vere ei mengd lukka mellom to stegvise regionar S go T. Ein stegregion er danna av ein endeleg union av tilstøytande rekangel som kviler på same grunnlinje, til dømes 
+  
+    
+      
+        S
+        ⊂
+        Q
+        ⊂
+        T
+      
+    
+    {\displaystyle S\subset Q\subset T}
+  
+. Om det finst eit unikt tal c slik at 
+  
+    
+      
+        a
+        (
+        S
+        )
+        ≤
+        c
+        ≤
+        a
+        (
+        T
+        )
+      
+    
+    {\displaystyle a(S)\leq c\leq a(T)}
+  
+ for alle slike stegregionar S og T, så er a(Q) = c.
+
+
+== Einingar ==
+
+Kvar lengdeeining har ein tilsvarande eining for areal, nemleg arealet til eit kvadrat med den lengda ein har nytta. Areal kan derfor målast i kvadratmeter (m2), kvadratcentimeter (cm2), kvadratmillimeter (mm2), kvadratkilometer (km2), kvadratfot (ft2), kvadratyard (yd2), kvadratmile (mi2), og så vidare. Algebraisk kan ein tenkje på desse einingane som kvadrat av dei samsvarande lengdeeiningane. 
+SI-eininga for areal er kvadratmeter. 
+
+
+=== Omrekningar ===
+
+Omrekninga mellom to arealeiningar er kvadratet av omrekninga mellom dei tilsvarande lengdeeiningane. Til dømes sidan 
+
+1 fot = 12 tommer,
+så er forholdet mellom kvadratfot og kvadrattomme 
+
+1 kvadratfot = 144 kvadrattommar
+der 144 = 122 = 12 × 12. På liknande vis:
+
+1 kvadratkilometer = 1 000 000 kvadratmeter
+1 kvadratmeter = 10 000 kvadratcentimeter = 1 000 000 kvadratmillimeter
+1 kvadratcentimeter = 100 kvadratmillimeter
+1 kvadratyard = 9 kvadratfot
+1 kvadratmile = 3 097 600 kvadratyard = 27 878 400 kvadratfot
+I tillegg, 
+
+1 kvadrattomme = 6,4516 kvadratcentimeter
+1 kvadratfot = 0.09290304 kvadratmeter
+1 kvadratyard = 0.83612736 kvadratmeter
+1 kvadratmile = 2.589988110336 kvadratkilometer
+
+
+=== Andre einingar ===
+Det finst òg fleire andre einingar for areal. 
+Hektar eller mål vert ofte framleis nytta for å måle landområde 
+
+1 hektar = 10 000 kvadratmeter = 0.01 kvadratkilometer
+I somme land nyttar ein òg acre der
+
+1 acre = 4 840 kvadratyard = 43 560 kvadratfot
+Ein acre er om lag 40 % av ein hektar. 
+
+
+== Arealformlar ==
+
+
+=== Rektangel ===
+
+Den mest grunnleggande arealformelen er formelen for arealet til eit rektangel. Eit rektangel med lengda l og breidda b, har arealformelen: 
+
+A = lb  (rektangel).
+Altså arealet er lengda multiplisert med breidda. Eit spesialtilfelle er eit kvadrat med lengda s som er gjeven av formelen
+
+A = s2  (kvadrat).
+
+
+=== Oppdelingsformlar ===
+Dei fleste andre enkle formlar for areal går ut på å dele opp problemet. Dette vil sei å dele formene inn i bitar som ein kan rekne ut arealet for, og så summere arealet for å få arealet til den originale forma. 
+Til dømes kan eit parallellogram delast inn i eit trapes og ein rettvinkla trekant, som vist i figuren til venstre. Om trekanten vert flytta til den andre sida av trapeset får ein eit rektangel. Dermed vil arealet til parallellogrammet vere det same som arealet til rektangelet: 
+
+A = bh  (parallellogram).
+
+Det same parallellogrammet kan kuttast inn i ein diagonal og delast inn i to kongruente triangel, som synt i figuren til høgre. Det følgjer at arealet kvart triangel er halvparten av arealet til parallellogrammet:
+
+  
+    
+      
+        A
+        =
+        
+          
+            1
+            2
+          
+        
+        b
+        h
+      
+    
+    {\displaystyle A={\frac {1}{2}}bh}
+  
+  (trekant).
+Liknande argument kan nyttast til å finne arealformlar for trapes og rombe, samt meir kompliserte polygon.
+
+
+=== Sirklar ===
+
+Formelen for arealet til ein sirkel er basert på ein liknande metode. Om ein har ein sirkel med radius r, er det mogeleg å dele sirkelen inn i sektorar, som vist i figuren til høgre. Kvar sektor er tilnærma trekantforma og kan omarrangerast og forme eit tilnræma parallellogram. Høgda på dette parallellogrammet er r, og breidda er halve omkrinssen til sirkelen eller πr. Dermed er det totale arealet til sirkelen r × πr, eller πr2:
+
+A = πr2  (sirkel).
+Sjølv om oppdelinga nytta i denne formelen berre er ei tilnærming, vert feilen mindre og mindre etter fleire og fleire sektorar ein deler sirkelen inn i. Grensa til arealet for det tilnærma parallellogrammet er nøyaktig πr2, som er arealet for ein sirkel. 
+Denne metoden er faktisk eit enkelt døme på ideane i differensialrekning. 
+
+
+=== Overflateareal ===
+
+Dei mest grunnleggande formlane for overflateareal kan ein få ved å kutte overflata opp og flate dei ut. Til dømes om overflata til ein sylinder (eller eit prisme) vert kutta på langs, så kan ein brette ut overflata til eit rektangel. På liknande vis kan ein kutte langs sida på ei kjegle og få ein sektor av ein sirkel, som så kan reknast ut. 
+Formelen for overflatearealet til ei kule er vanskelegare, fordi overflate har ei ei gaussisk krumming som ikkje er lik null, og dermed ikkje kan flatast ut. Formelen for overflate arealet til ei kule var det Arkimedes som først kom fram til i verket On the Sphere and Cylinder. Formelen er
+
+A = 4πr2  (kule).
+der r er radiusen til kula. Som med formelen for arealet til ein sirkel kan ein kome fram til denne formelen med liknande metodar som vert nytta i differensialrekning.
+
+
+== Formlar ==
+
+
+== Andre formlar ==
+
+
+=== Areal i differensialrekning ===
+
+arealet mellom grafane til to funksjonar er lik integralet til den eine funksjonen, f(x), minus integralet til den andre funksjonen, g(x).
+eit areal avgrensa av ein funksjon r = r(θ) uttrykt i polarkoordinatar er 
+  
+    
+      
+        
+          
+            1
+            2
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        
+          r
+          
+            2
+          
+        
+        
+        d
+        θ
+      
+    
+    {\displaystyle {1 \over 2}\int _{0}^{2\pi }r^{2}\,d\theta }
+  
+.
+arealet lukka av ei parametrisk kurve 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        t
+        )
+        =
+        (
+        x
+        (
+        t
+        )
+        ,
+        y
+        (
+        t
+        )
+        )
+      
+    
+    {\displaystyle {\vec {u}}(t)=(x(t),y(t))}
+  
+ med endepunkt 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          t
+          
+            0
+          
+        
+        )
+        =
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          t
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle {\vec {u}}(t_{0})={\vec {u}}(t_{1})}
+  
+ er gjeven av linjeintegrala
+
+  
+    
+      
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        x
+        
+          
+            
+              y
+              ˙
+            
+          
+        
+        
+        d
+        t
+        =
+        −
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        y
+        
+          
+            
+              x
+              ˙
+            
+          
+        
+        
+        d
+        t
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        (
+        x
+        
+          
+            
+              y
+              ˙
+            
+          
+        
+        −
+        y
+        
+          
+            
+              x
+              ˙
+            
+          
+        
+        )
+        
+        d
+        t
+      
+    
+    {\displaystyle \oint _{t_{0}}^{t_{1}}x{\dot {y}}\,dt=-\oint _{t_{0}}^{t_{1}}y{\dot {x}}\,dt={1 \over 2}\oint _{t_{0}}^{t_{1}}(x{\dot {y}}-y{\dot {x}})\,dt}
+  
+
+eller z-komponenten av
+
+  
+    
+      
+        
+          
+            1
+            2
+          
+        
+        
+          ∮
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        
+          
+            
+              u
+              →
+            
+          
+        
+        ×
+        
+          
+            
+              
+                
+                  u
+                  →
+                
+              
+              ˙
+            
+          
+        
+        
+        d
+        t
+        .
+      
+    
+    {\displaystyle {1 \over 2}\oint _{t_{0}}^{t_{1}}{\vec {u}}\times {\dot {\vec {u}}}\,dt.}
+  
+
+
+=== Generell formel for overflateareal ===
+Den generelle formelen for overflatearealet av grafen til ein kontinuerleg differensierbar funksjon 
+  
+    
+      
+        z
+        =
+        f
+        (
+        x
+        ,
+        y
+        )
+        ,
+      
+    
+    {\displaystyle z=f(x,y),}
+  
+ der 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        D
+        ⊂
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (x,y)\in D\subset \mathbb {R} ^{2}}
+  
+ og 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ er ein region i xy-planet med glatte grenser: 
+
+  
+    
+      
+        A
+        =
+        
+          ∬
+          
+            D
+          
+        
+        
+          
+            
+              
+                (
+                
+                  
+                    
+                      ∂
+                      f
+                    
+                    
+                      ∂
+                      x
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+            +
+            
+              
+                (
+                
+                  
+                    
+                      ∂
+                      f
+                    
+                    
+                      ∂
+                      y
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+            +
+            1
+          
+        
+        
+        d
+        x
+        
+        d
+        y
+        .
+      
+    
+    {\displaystyle A=\iint _{D}{\sqrt {\left({\frac {\partial f}{\partial x}}\right)^{2}+\left({\frac {\partial f}{\partial y}}\right)^{2}+1}}\,dx\,dy.}
+  
+
+Ein enno meir generell formel for arealet til ein graf av ei parametrisk flate på vektorforma 
+  
+    
+      
+        
+          r
+        
+        =
+        
+          r
+        
+        (
+        u
+        ,
+        v
+        )
+        ,
+      
+    
+    {\displaystyle \mathbf {r} =\mathbf {r} (u,v),}
+  
+ der 
+  
+    
+      
+        
+          r
+        
+      
+    
+    {\displaystyle \mathbf {r} }
+  
+ er ein kontinuerleg differensierbar vektorfunksjon av 
+  
+    
+      
+        (
+        u
+        ,
+        v
+        )
+        ∈
+        D
+        ⊂
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (u,v)\in D\subset \mathbb {R} ^{2}}
+  
+:
+
+  
+    
+      
+        A
+        =
+        
+          ∬
+          
+            D
+          
+        
+        
+          |
+          
+            
+              
+                
+                  ∂
+                  
+                    r
+                  
+                
+                
+                  ∂
+                  u
+                
+              
+            
+            ×
+            
+              
+                
+                  ∂
+                  
+                    r
+                  
+                
+                
+                  ∂
+                  v
+                
+              
+            
+          
+          |
+        
+        
+        d
+        u
+        
+        d
+        v
+        .
+      
+    
+    {\displaystyle A=\iint _{D}\left|{\frac {\partial \mathbf {r} }{\partial u}}\times {\frac {\partial \mathbf {r} }{\partial v}}\right|\,du\,dv.}
+  
+
+
+== Kjelder ==
+
+
+== Bakgrunnsstoff ==
+
+Weisstein, Eric W., «Area» frå MathWorld.
+Arealformlar

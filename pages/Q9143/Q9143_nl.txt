@@ -1,0 +1,57 @@
+Een programmeertaal is een formele taal waarin de opdrachten die een computer moet uitvoeren, worden geschreven. Deze talen hebben een andere syntaxis en grammatica dan natuurlijke talen. Deze laatste zijn te complex en ambigu om als programmeertaal te fungeren. Code die in een programmeertaal geschreven is, dient maar op één manier te kunnen worden 'begrepen' door de computer.
+
+
+== Programmeerparadigma ==
+
+Er zijn in de loop der jaren duizenden programmeertalen ontstaan en zij kunnen op verschillende manieren gecategoriseerd worden. Een veel gebruikt onderscheid is dat van programmeerparadigma. Enkele belangrijke voorbeelden zijn de imperatieve, functionele en logische programmeerparadigma's, waarbij vermeld moet worden dat programmeertalen soms meerdere paradigma's combineren.
+
+
+== Gebruik ==
+Er zijn verschillende manieren waarop een door een softwareontwikkelaar geschreven computerprogramma door een computer uitgevoerd kan worden.  De code die de ontwikkelaar ziet en bewerkt, wordt de broncode van de programmatuur genoemd; die moet op de een of andere manier worden omgezet in de machinetaal van de computer in kwestie die door de processor kan worden uitgevoerd. Grosso modo zijn er de volgende mogelijkheden:
+
+Geen omzetting: de programmeur voert machinecode direct in het geheugen van de computer in. Dit is zo onpraktisch en tijdrovend dat het niet of nauwelijks meer gebeurt.
+Interpretatie: een interpreter leest stukje bij beetje tekst van de broncode in, interpreteert deze in termen van betekenisvolle instructies en voert die, gesteund door een runtimebibliotheek, direct uit. Een programma dat zo werkt, wordt meestal een script genoemd en de programmeertaal in kwestie een scripttaal.
+Assemblage: een assembleertaal maakt het mogelijk om programma's te schrijven als reeksen instructies en gegevens die direct op machinetaal af te beelden zijn, maar waarin op een wat meer symbolische manier gewerkt kan worden, bijvoorbeeld doordat de machine-instructies namen hebben, geheugenadressen namen kunnen krijgen en macro's kunnen worden gebruikt; een assembler zet zulke code om naar bestanden met objectcode, die door een linker samen met de al vooraf aanwezige objectcode van softwarebibliotheken tot een uitvoerbaar programma worden samengesteld.
+Compilatie: vertaling van de broncode naar een andere taal (de doeltaal) door een compiler. De doeltaal kan assembleertaal zijn; of een speciaal voor het vertaalproces ontworpen machine-onafhankelijke tussentaal (bytecode, ook wel P-code genoemd), die vervolgens gecompileerd of geïnterpreteerd moet worden; of een andere programmeertaal.
+Hiervan bestaan allerlei tussenvormen en varianten.
+Een hogere (d.w.z. gecompileerde of geïnterpreteerde) programmeertaal is ontworpen om de programmeur zo helder en elegant mogelijk te laten specificeren wat een programma moet doen in de termen waarin de programmeur over het probleem nadenkt, zonder detailkennis over hoe het precies door de computer uitgevoerd gaat worden: zulke talen bieden abstracties op hoog niveau en zijn machine-onafhankelijk. In assembleertaal wordt alleen geprogrammeerd als er specifieke kennis over de precieze werking van de computer in kwestie gebruikt moet worden, bijvoorbeeld omdat het programma anders te veel ruimte of tijd zou gebruiken.
+Is er sprake van compilatie, dan is vaak een onderscheid nodig tussen handelingen verricht tijdens het bewerken van de broncode ('at edit time'), tijdens het vertaalproces van broncode naar doelcode ('at compile time'), en tijdens het uitvoeren van de doelcode ('at run time'). In elk van deze fasen kan software de programmeur ondersteunen, bijvoorbeeld door de geldigheid of zinnigheid van bepaalde bewerkingen of uitdrukkingen te controleren.
+Tijdens het vertalen vindt vaak optimalisatie van de code plaats. Een simpel voorbeeld: als tijdens het vertalen blijkt dat er in de doelcode een optelling of aftrekking met 0 ontstaat, kan die worden weggelaten.
+Een programma dat met een compiler vertaald is naar doelcode, kan over het algemeen — mede door optimalisatie — sneller door de computer worden uitgevoerd, dan wanneer gebruikgemaakt wordt van een interpreter, omdat de laatste de opdrachten altijd eerst nog moet omzetten naar machinetaal - het equivalent van de compilatie wordt in run-time gedaan. Veel talen werken echter met een tussenvorm, waarin op het moment dat opdracht tot uitvoering van een programma wordt gegeven, alsnog een compilatie naar tussencode en/of doelcode wordt gedaan: Just-In-Time-compilatie.
+Het traditionele onderscheid tussen gecompileerde talen enerzijds en geïnterpreteerde talen (of 'scripttalen') is daarom niet helemaal juist. Is een geïnterpreteerde programmeertaal populair, dan worden er vaak compilers (JIT of anderszins) voor geschreven om de uitvoering te versnellen; ook komt het wel voor dat er een interpreter wordt geschreven voor een tot dan toe alleen gecompileerde taal, of een vertaler van de ene programmeertaal naar de andere.
+
+
+== Definitie ==
+Onder programmeertalen worden, in de normaal gebruikte definitie, talen verstaan die turingvolledig zijn. Dat wil zeggen dat het mogelijk moet zijn om in de programmeertaal een interpreter voor een turingmachine te schrijven, en dat het mogelijk moet zijn een interpreter te schrijven voor de programmeertaal op een turingmachine.
+In een taal die niet turingvolledig is, kan een kleiner aantal problemen opgelost worden dan in een turingvolledige taal. In SQL kan men bijvoorbeeld wel totalen van tabellen met gegevens berekenen, maar men kan niet berekenen wat de kortste route tussen twee punten in een graaf is.
+
+
+== Geschiedenis ==
+
+Het is mogelijk om computers direct in hun eigen machinetaal te programmeren: direct de enen en nullen te specificeren die door de processor kunnen worden begrepen. Dit was voor de eerste computers gebruikelijk, met schakelaartjes werden groepen van 8 bits ingesteld. Men ondervond echter snel dat het veel te lastig was om programma's die op die manier waren geschreven, te onderhouden. Snel werd er daarom een symbolische manier bedacht om de machine-instructies als tekst weer te geven in de vorm van mnemonics. Zo werd het mogelijk om instructies veel eenvoudiger te lezen. Zulke code, die grotendeels een-op-een met de instructiecodes overeenkomt, noemt men assembly-code of ook wel assembler en is geschreven in assembleertaal. Een programma dat deze code in machinetaal omzet wordt een assembler genoemd.
+Voor het programmeren van assembler en machinetaal moet de programmeur veel weten van de computer die hij wil programmeren. Om programmeren makkelijker te maken, zijn daarna andere programmeertalen, de zogenaamde hogere programmeertalen ontwikkeld. Hoe hoger de orde, hoe verder de taal van de machine-instructies af staat. Een imperatieve programmeertaal (zoals Pascal of C) staat bijvoorbeeld dichter bij de machine-instructies dan een functionele programmeertaal (zoals Scheme en Haskell). Een functionele programmeertaal sluit meer aan bij het denken van de mens dan bij de interne werking van de computer. Zo is het in Haskell mogelijk om 'normale' wiskundige definities te gebruiken.
+Programmeertalen worden ook wel onderverdeeld in generaties:
+
+Eerste generatie: machinetaal.
+Tweede generatie: assembler (de kale machine-instructies, maar leesbaar neergezet).
+Derde generatie: procedurele talen als COBOL, Algol, Pascal, C en Fortran, en later ook objectgeoriënteerde talen zoals C++ en Java.
+Vierde generatie: Talen met een hoger abstractieniveau, die voor een bepaald doel zijn ontwikkeld, zoals SQL en Progress 4GL.
+Vijfde generatie: Probleemoplossende talen. Hierbij specificeert de programmeur geen algoritme maar het probleem zelf, met een aantal bijbehorende beperkingen. Vijfde-generatietalen worden vooral gebruikt op het gebied van kunstmatige intelligentie. Het bekendste voorbeeld is Prolog.
+De generaties worden vaak afgekort als GL, bijvoorbeeld 3GL, als afkorting van 3rd Generation Language(s).
+Een van de eerste hogere programmeertalen was Plankalkül, in 1946 ontwikkeld door de Duitser Konrad Zuse.
+De ontwikkeling van programmeertalen vertoont de volgende kenmerken:
+
+Er bestaan er duizenden; er komen voortdurend nieuwe talen bij, terwijl er ook voortdurend talen in onbruik raken. Een programmeertaal kan onbruikbaar worden (als er geen compiler of interpreter voor bestaat die werkt op een nog werkende computer) en zelfs verloren raken (als ook de kennis over de taal verloren raakt).
+Hun populariteit varieert sterk: sommige talen zijn alleen ooit door hun eigen maker gebruikt, terwijl andere dagelijks door miljoenen worden gebruikt.
+Gebruikte talen ontwikkelen zich meestal, waarbij in opeenvolgende versies uitbreidingen en veranderingen worden aangebracht (VB.NET bijvoorbeeld lijkt helemaal niet meer op het BASIC waar het uit is ontwikkeld). Deze ontwikkeling hoeft niet lineair te zijn: een taal kan op een andere gebaseerd zijn of in sterke mate elementen uit andere talen in zich opnemen; een taal kan zich ook in verschillende versies splitsen die zich elk verder ontwikkelen.
+Om programmeertalen te beschrijven, is een metataal bedacht: BNF of Backus-Naur Form. Deze beschrijft alleen de vorm (syntaxis) van in de taal geschreven programma's, niet hun betekenis (semantiek).
+Voor veel programmeertalen kan de programmeur gebruikmaken van een software-ontwikkelomgeving die speciaal is toegerust om de ontwikkeling van programma's in die taal te ondersteunen.
+
+
+== Zie ook ==
+Lijst van programmeertalen
+Lijst van niet op het Engels gebaseerde programmeertalen
+
+
+== Externe link ==
+Waarom is er niet één universele computerprogrammeertaal? - Universiteit van Vlaanderen

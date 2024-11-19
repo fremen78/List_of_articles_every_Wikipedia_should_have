@@ -1,0 +1,4371 @@
+Funkcja (łac. functio, -onis „odbywanie, wykonywanie, czynność”), odwzorowanie, przekształcenie, transformacja – pojęcie matematyczne używane w co najmniej dwóch zbliżonych znaczeniach:
+
+dla danych dwóch zbiorów 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ i 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ funkcją nazywano każde przyporządkowanie elementom zbioru 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ po jednym elemencie zbioru 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+;
+zazwyczaj wymaga się też, aby to przypisanie dotyczyło każdego elementu zbioru 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+. Wtedy obiekty spełniające tylko pierwszy warunek są znane jako funkcje częściowe.
+Funkcje oznacza się na ogół literami 
+  
+    
+      
+        f
+        ,
+        g
+        ,
+        h
+      
+    
+    {\displaystyle f,g,h}
+  
+ itd. Jeśli funkcja 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ przyporządkowuje elementom zbioru 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ elementy zbioru 
+  
+    
+      
+        Y
+        ,
+      
+    
+    {\displaystyle Y,}
+  
+ to pisze się: 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+        .
+      
+    
+    {\displaystyle f\colon X\to Y.}
+  
+ W kontekście każdej funkcji używa się kilku podstawowych pojęć:
+
+zbiór 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ nazywa się dziedziną funkcji f, przy czym ten termin ma też inne znaczenie opisane w linkowanym artykule. Inna nazwa to zbiór argumentów, ponieważ jego każdy element 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ nazywa się argumentem tej funkcji lub zmienną niezależną;
+zbiór 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ to przeciwdziedzina tej funkcji 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ lub jej zbiór wartości, przy czym te terminy mają też inne znaczenie – por. linkowane artykuły. Każdy element 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ nazywa się wartością funkcji lub zmienną zależną.
+Funkcje to szczególne przypadki relacji binarnych. Relacja 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ jest funkcją, jeśli spełnia dwa warunki, poniżej zapisane za pomocą kwantyfikatorów:
+
+jednoznaczność: 
+  
+    
+      
+        ∀
+        x
+        ∈
+        X
+        ,
+        
+          y
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            2
+          
+        
+        ∈
+        Y
+        :
+        [
+        x
+        R
+        
+          y
+          
+            1
+          
+        
+        ∧
+        x
+        R
+        
+          y
+          
+            2
+          
+        
+        ⇒
+        (
+        
+          y
+          
+            1
+          
+        
+        =
+        
+          y
+          
+            2
+          
+        
+        )
+        ]
+        ,
+      
+    
+    {\displaystyle \forall x\in X,y_{1},y_{2}\in Y:[xRy_{1}\wedge xRy_{2}\Rightarrow (y_{1}=y_{2})],}
+  
+
+  
+    
+      
+        ∀
+        x
+        ∈
+        X
+         
+        ∃
+        y
+        ∈
+        Y
+        :
+        x
+        R
+        y
+        .
+      
+    
+    {\displaystyle \forall x\in X\ \exists y\in Y:xRy.}
+  
+
+Przez to funkcje rozumiane szeroko są też znane jako relacje jednoznaczne. Teoria mnogości definiuje relacje za pomocą iloczynu kartezjańskiego zbiorów, czyli zbioru par uporządkowanych: 
+  
+    
+      
+        R
+        ⊆
+        X
+        ×
+        Y
+        .
+      
+    
+    {\displaystyle R\subseteq X\times Y.}
+  
+
+Termin funkcja pojawił się w matematyce w XVII wieku, po czym kolejni uczeni nadawali mu nowe znaczenia. Leonhard Euler w osiemnastym wieku był pierwszym matematykiem, który użył wpółczesnego oznaczenia funkcji. Euler używał dwóch definicji funkcji, pierwsze jako analityczne wyrażenie (formuła), zawierajaca stałe oraz zmienne. Druga definicja to zmienna zależna od innej zmiennej. Takie samo podejście można znaleźć w książkach Lagrange’a. Drugie podejście, z drobnymi zmianami, było używane przez późniejszych matematyków, takich jak Cauchy, Fourier, Drichlet, czy Riemann.
+Funkcje stały się jednym z podstawowych i najważniejszych pojęć całej nowożytnej matematyki i innych nauk ścisłych; funkcje:
+
+są głównym przedmiotem badań analizy;
+pozwoliły zdefiniować jedno z podstawowych pojęć kombinatoryki i teorii mnogości: moc zbioru.
+pojawiają się w logice matematycznej w postaci funkcji zdaniowych (predykatów) i innych funktorów;
+stały się jednym z fundamentów informatyki, gdzie nazywa się tak odmianę procedury; powstałe całe metody programowania oparte na tym pojęciu jak programowanie funkcyjne;.
+Opisano dziesiątki odmian funkcji; niezależnie od dziedziny i przeciwdziedziny można wyróżnić funkcje różnowartościowe (iniekcje), funkcje „na” (suriekcje) oraz przecięcie tych dwóch zbiorów – funkcje wzajemnie jednoznaczne (bijekcje). Inne typy definiuje się m.in. za pomocą konkretnej dziedziny lub przeciwdziedziny, co opisano w dalszych sekcjach. Zbiór wszystkich funkcji ze zbioru 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ do zbioru 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ oznacza się 
+  
+    
+      
+        
+          Y
+          
+            X
+          
+        
+      
+    
+    {\displaystyle Y^{X}}
+  
+.
+
+
+== Formalna definicja ==
+Funkcja 
+  
+    
+      
+        f
+        =
+        (
+        X
+        ,
+        Y
+        ,
+        W
+        )
+      
+    
+    {\displaystyle f=(X,Y,W)}
+  
+ to trójka uporządkowana składająca się z poniższych elementów:
+
+dziedziny 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ będącej dowolnym zbiorem,
+przeciwdziedziny 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ również będącej dowolnym zbiorem,
+wykresu 
+  
+    
+      
+        W
+        ⊆
+        X
+        ×
+        Y
+      
+    
+    {\displaystyle W\subseteq X\times Y}
+  
+ będącym zbiorem par, takim że 
+  
+    
+      
+        ∀
+        x
+        ∈
+        X
+        ,
+        ∃
+        !
+        y
+        ∈
+        Y
+        :
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        W
+        .
+      
+    
+    {\displaystyle \forall x\in X,\exists !y\in Y:(x,y)\in W.}
+  
+
+Wyjaśnienie: Wykres 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ to zbiór tylko takich par, że dla każdego elementu 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ z 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ istnieje dokładnie jeden 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ z 
+  
+    
+      
+        Y
+        ,
+      
+    
+    {\displaystyle Y,}
+  
+ taki że para 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ znajduje się w zbiorze 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ (czyli owa para jest „punktem” z wykresu funkcji).
+
+
+== Alternatywne definicje ==
+Definicja 
+  
+    
+      
+        f
+        =
+        (
+        X
+        ,
+        Y
+        ,
+        W
+        )
+      
+    
+    {\displaystyle f=(X,Y,W)}
+  
+ nazywana jest również definicją Bourbakiego (wprowadzoną w 1954 r.) ze względu na prostotę, pełność i ogólność spełnia wymogi współczesnej matematyki. Zauważmy że dla teoriomnogościowej definicji trójki jako pewnego zbioru (co zwykle się przyjmuje), funkcja 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ staje się zbiorem. W literaturze definicja może różnić się kolejnością elementów np. 
+  
+    
+      
+        f
+        =
+        (
+        W
+        ,
+        X
+        ,
+        Y
+        )
+      
+    
+    {\displaystyle f=(W,X,Y)}
+  
+ albo 
+  
+    
+      
+        f
+        =
+        (
+        X
+        ,
+        W
+        ,
+        Y
+        )
+      
+    
+    {\displaystyle f=(X,W,Y)}
+  
+. Spotyka się również wariant tej definicji w której używa się klas zamiast zbiorów.
+Jeżeli zakładamy że funkcja jest surjekcją lub jeśli jest wygodne nie ustalanie przeciwdziedziny, wówczas można skorzystać z definicji redukującej funkcję tylko do wykresu funkcji tj. 
+  
+    
+      
+        f
+        =
+        W
+      
+    
+    {\displaystyle f=W}
+  
+ (a więc do pewnego zbioru par). Tak zredukowana definicja jest bardziej pierwotna i została sformalizowana wcześniej (w latach ok. 1914–1921). Często w literaturze zaznacza się (z przyczyn głównie historycznych), że taka zredukowana definicja (wykres) jest pewną relacją binarną. Należy zauważyć że między ogólną definicją a zredukowaną istnieją poważne różnice. Powyższa zredukowana definicja oraz pełna definicja Bourbakiego, są powszechnie używane w literaturze.
+Istnieją również definicje starsze, bardziej pierwtone i mniej precyzyjne, jednak współcześnie zykle nie używa się ich.
+
+
+== Notacja ==
+W tradycyjnej notacji zwykle rozdziela się definicję wykresu od dziedziny i przeciwdziedziny np. 
+
+Dana jest funkcja 
+  
+    
+      
+        f
+        :
+        
+          N
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f\colon \mathbb {N} \to \mathbb {R} }
+  
+ określona wzorem 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        x
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle f(x)=x/2}
+  
+,
+tu najpierw podano dziedzinę 
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ (liczby naturane) i przeciwdziedzinę 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ (liczby rzeczywiste), a następnie osobno zdefiniowano wykres (zbiór 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ w formalnej definicji) poprzez formułę pozwalającą wyznaczyć każdy jego element - czyli każdą parę 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        =
+        (
+        x
+        ,
+        f
+        (
+        x
+        )
+        )
+        =
+        (
+        x
+        ,
+        x
+        
+          /
+        
+        2
+        )
+      
+    
+    {\displaystyle (x,y)=(x,f(x))=(x,x/2)}
+  
+, gdzie 
+  
+    
+      
+        x
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle x\in \mathbb {N} }
+  
+, oraz 
+  
+    
+      
+        y
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y\in \mathbb {R} }
+  
+ (symbol 
+  
+    
+      
+        ∈
+      
+    
+    {\displaystyle \in }
+  
+ oznacza przynależność do zbioru). 
+Dokładniej: poprzez podstawienie danego elementu 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ dziedziny pod formułę 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        x
+        
+          /
+        
+        2
+        =
+        y
+      
+    
+    {\displaystyle f(x)=x/2=y}
+  
+ otrzymamy element przeciwdziedziny 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, co pozwoli skonstruować parę 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ bądącą elementem (punktem) wykresu 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ funkcji, np. dla 
+  
+    
+      
+        x
+        =
+        6
+      
+    
+    {\displaystyle x=6}
+  
+ podstawiamy 
+  
+    
+      
+        f
+        (
+        6
+        )
+        =
+        6
+        
+          /
+        
+        2
+        =
+        3
+      
+    
+    {\displaystyle f(6)=6/2=3}
+  
+ - otrzymaliśmy więc parę 
+  
+    
+      
+        (
+        6
+        ,
+        3
+        )
+        ∈
+        W
+      
+    
+    {\displaystyle (6,3)\in W}
+  
+, jeśli podobnie ucznimy dla pozostalych elementów dziedziny to znajdziemy wszystkie punktu (elementy) wykresu. 
+Bardziej formalny zapis (którego zwykle się nie stosuje w praktyce) dla tego przykładu wyglądałby tak: 
+
+  
+    
+      
+        f
+        =
+        
+          (
+          
+            
+              N
+            
+            ,
+            
+              R
+            
+            ,
+            
+              {
+              
+                
+                  (
+                  
+                    x
+                    ,
+                    
+                      
+                        x
+                        2
+                      
+                    
+                  
+                  )
+                
+                :
+                x
+                ∈
+                
+                  N
+                
+              
+              }
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle f=\left(\mathbb {N} ,\mathbb {R} ,\left\{\left(x,{\frac {x}{2}}\right):x\in \mathbb {N} \right\}\right).}
+  
+
+Jeżeli pomija się podanie dziedziny i przeciwdziedziny dla danej funkcji to oznacza, że należy wywieść te informacje z wykresu lub kontekstu – co często ma miejsce (i uzasadnia oddzielenie definicji wykresu w tradycyjnej notacji).
+
+
+=== Przykład 1 ===
+Funkcje używające tej samej formuły 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ do zdefiniowania wykresu nie muszą być tożsame. Rozważmy taki przypadek czterech funkcji korzystających z formuły 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f(x)=x^{2}}
+  
+ (poniżej oznaczono: 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ to liczby rzeczywiste a 
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{+}}
+  
+ to liczby rzeczywiste większe od zera):
+
+  
+    
+      
+        f
+        :
+        
+          R
+        
+        →
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        f
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle f\colon \mathbb {R} \to \mathbb {R} ^{+},f(x)=x^{2},}
+  
+ więc z definicji: 
+  
+    
+      
+        f
+        =
+        (
+        
+          R
+        
+        ,
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        {
+        (
+        x
+        ,
+        
+          x
+          
+            2
+          
+        
+        )
+        :
+        x
+        ∈
+        
+          R
+        
+        }
+        )
+        ,
+      
+    
+    {\displaystyle f=(\mathbb {R} ,\mathbb {R} ^{+},\{(x,x^{2}):x\in \mathbb {R} \}),}
+  
+
+  
+    
+      
+        g
+        :
+        
+          R
+        
+        →
+        
+          R
+        
+         
+        ,
+        g
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle g\colon \mathbb {R} \to \mathbb {R} \ ,g(x)=x^{2},}
+  
+ więc z definicji: 
+  
+    
+      
+        g
+        =
+        (
+        
+          R
+        
+        ,
+        
+          R
+        
+        ,
+        {
+        (
+        x
+        ,
+        
+          x
+          
+            2
+          
+        
+        )
+        :
+        x
+        ∈
+        
+          R
+        
+        }
+        )
+        ,
+      
+    
+    {\displaystyle g=(\mathbb {R} ,\mathbb {R} ,\{(x,x^{2}):x\in \mathbb {R} \}),}
+  
+
+  
+    
+      
+        h
+        :
+        
+          
+            R
+          
+          
+            +
+          
+        
+        →
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        h
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle h\colon \mathbb {R} ^{+}\to \mathbb {R} ^{+},h(x)=x^{2},}
+  
+ więc z definicji: 
+  
+    
+      
+        h
+        =
+        (
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        {
+        (
+        x
+        ,
+        
+          x
+          
+            2
+          
+        
+        )
+        :
+        x
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+        }
+        )
+        ,
+      
+    
+    {\displaystyle h=(\mathbb {R} ^{+},\mathbb {R} ^{+},\{(x,x^{2}):x\in \mathbb {R} ^{+}\}),}
+  
+
+  
+    
+      
+        k
+        :
+        
+          
+            R
+          
+          
+            +
+          
+        
+        →
+        
+          R
+        
+         
+        ,
+        k
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle k\colon \mathbb {R} ^{+}\to \mathbb {R} \ ,k(x)=x^{2},}
+  
+ więc z definicji: 
+  
+    
+      
+        k
+        =
+        (
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ,
+        
+          R
+        
+        ,
+        {
+        (
+        x
+        ,
+        
+          x
+          
+            2
+          
+        
+        )
+        :
+        x
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+        }
+        )
+        .
+      
+    
+    {\displaystyle k=(\mathbb {R} ^{+},\mathbb {R} ,\{(x,x^{2}):x\in \mathbb {R} ^{+}\}).}
+  
+
+mamy: 
+  
+    
+      
+        k
+        ≠
+        g
+        ≠
+        f
+        ≠
+        h
+        ≠
+        k
+        ≠
+        f
+        ≠
+        h
+        ≠
+        g
+      
+    
+    {\displaystyle k\neq g\neq f\neq h\neq k\neq f\neq h\neq g}
+  
+ (bo każda jest inną trójką). Każda z funkcji ma inny charakter: 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ to suriekcja, 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ to bijekcja, k to iniekcja.
+
+
+=== Przykład 2 ===
+Rozważmy funkcję której dziedzina to 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+        =
+        
+          R
+        
+        ×
+        
+          R
+        
+        =
+        
+          {
+          
+            (
+            u
+            ,
+            v
+            )
+            :
+            u
+            ∈
+            
+              R
+            
+            
+            ∧
+            
+            v
+            ∈
+            
+              R
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}=\mathbb {R} \times \mathbb {R} =\left\{(u,v)\colon u\in \mathbb {R} \;\wedge \;v\in \mathbb {R} \right\}}
+  
+ (iloczyn kartezjański) czyli każdy element 
+  
+    
+      
+        x
+        ∈
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x\in \mathbb {R} ^{2}}
+  
+ z dziedziny jest parą dwóch liczb rzeczywistych tj. 
+  
+    
+      
+        x
+        =
+        (
+        u
+        ,
+        v
+        )
+      
+    
+    {\displaystyle x=(u,v)}
+  
+. Przeciwdziedziną zaś niech będzie 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ zaś wykresem 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        (
+        u
+        ,
+        v
+        )
+        )
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        
+          v
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f(x)=f((u,v))=u^{2}+v^{2}}
+  
+. Zwróćmy uwagę że tak zdefiniowana funkcja przyjmuje defacto dwie liczby 
+  
+    
+      
+        u
+        ,
+        v
+      
+    
+    {\displaystyle u,v}
+  
+ (stanowiące jedną parę 
+  
+    
+      
+        (
+        u
+        ,
+        v
+        )
+      
+    
+    {\displaystyle (u,v)}
+  
+ oznaczoną przez 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ ) jako argument a zwraca w wyniku jedną liczbę (będącą sumą kwadratów elementów pary). Kożystając z tradycyjnej notacji zapiszemy
+
+  
+    
+      
+        f
+        :
+        
+          
+            R
+          
+          
+            2
+          
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f\colon \mathbb {R} ^{2}\to \mathbb {R} }
+  
+, 
+  
+    
+      
+        f
+        (
+        u
+        ,
+        v
+        )
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        
+          v
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f(u,v)=u^{2}+v^{2}}
+  
+
+zwróćmy uwagę, że zamiast 
+  
+    
+      
+        f
+        (
+        (
+        u
+        ,
+        v
+        )
+        )
+      
+    
+    {\displaystyle f((u,v))}
+  
+ zapisano 
+  
+    
+      
+        f
+        (
+        u
+        ,
+        v
+        )
+      
+    
+    {\displaystyle f(u,v)}
+  
+ a więc pominięto wewnętrzne nawiasy - jest to powszechnie stosowany skrót notacyjny. Formalnie funkcja przyjmuje tylko jeden argument (który jest parą liczb). Bardziej formalna definicja (nie stosowana w praktyce) wyglądała by tak:
+
+  
+    
+      
+        f
+        =
+        
+          (
+          
+            
+              
+                R
+              
+              
+                2
+              
+            
+            ,
+            
+              R
+            
+            ,
+            
+              {
+              
+                
+                  (
+                  
+                    (
+                    u
+                    ,
+                    v
+                    )
+                    ,
+                    
+                      u
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      v
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                :
+                u
+                ,
+                v
+                ∈
+                
+                  R
+                
+              
+              }
+            
+          
+          )
+        
+      
+    
+    {\displaystyle f=\left(\mathbb {R} ^{2},\mathbb {R} ,\left\{\left((u,v),u^{2}+v^{2}\right):u,v\in \mathbb {R} \right\}\right)}
+  
+
+Funkcje których argument jest parą, trójką lub w ogólności n-tką nazywamy funkcjami wielu zmiennych.
+
+
+=== Przykład 3 ===
+Argumentem funkcji może być n-tka zawierająca wiele elementów (np. 
+  
+    
+      
+        f
+        :
+        
+          
+            R
+          
+          
+            3
+          
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f:\mathbb {R} ^{3}\to \mathbb {R} }
+  
+ przyjmuje trójkę liczb). Operacje arytmetyczne na liczbach są tego typu funkcjami np. dodawanie liczb naturalnych 
+  
+    
+      
+        +
+        :
+        
+          
+            N
+          
+          
+            2
+          
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle +:\mathbb {N} ^{2}\to \mathbb {N} }
+  
+ (z indywidualną notacją). Wynikiem funkcji również może być n-tka zawierająca wiele wartości (np. 
+  
+    
+      
+        f
+        :
+        
+          
+            R
+          
+          
+            2
+          
+        
+        →
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle f:\mathbb {R} ^{2}\to \mathbb {R} ^{3}}
+  
+ przyjmuje parę a zwraca trójkę liczb). Funkcje które mogą przyjmować inne funkcje jako argument i zwracać liczbę jako wynik nazywane są funkcjonałami (np. funkcjonał 
+  
+    
+      
+        f
+        :
+        
+          
+            R
+          
+          
+            
+              R
+            
+          
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f:\mathbb {R} ^{\mathbb {R} }\to \mathbb {R} }
+  
+ zwracający pole pod wykresem funkcji). Funkcje które jako argument przyjmują pewne funkcje i zwracają inne funkcje nazywamy operatorami - operatory transformują/zmieniają daną funkcję (lub kilka funkcji) na inną i często do ich zapisu stosujemy indywidualna odrębną notację (np.  transformata Fouriera 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {f}}}
+  
+, operator składania funkcji 
+  
+    
+      
+        f
+        ∘
+        g
+      
+    
+    {\displaystyle f\circ g}
+  
+, operator Nabla dla gradientu 
+  
+    
+      
+        ∇
+        f
+      
+    
+    {\displaystyle \nabla f}
+  
+ itp.)
+
+
+=== Przykład 4 ===
+Poniżej kilka nietypowych/granicznych przypadków – kolumna po stronie lewej trójka f; w środku to interpretacja f jako funkcji w świetle formalnej definicji zapisana w tradycyjnej notacji; ostatnia kolumna to wyjaśnienie (
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ i 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  
+ to dowolne nie puste zbiory, 
+  
+    
+      
+        W
+      
+    
+    {\displaystyle W}
+  
+ to niepusty wykres)
+
+
+== Obraz i przeciwobraz ==
+Zbiór 
+  
+    
+      
+        f
+        (
+        A
+        )
+        =
+        {
+        y
+        =
+        f
+        (
+        x
+        )
+        :
+        x
+        ∈
+        A
+        }
+      
+    
+    {\displaystyle f(A)=\{y=f(x)\colon x\in A\}}
+  
+ jest obrazem podzbioru 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ zbioru 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ w przekształceniu 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+,
+dla każdego elementu 
+  
+    
+      
+        b
+        ∈
+        f
+        (
+        X
+        )
+      
+    
+    {\displaystyle b\in f(X)}
+  
+ przeciwobrazem elementu 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ (dokładniej pełnym przeciwobrazem) nazywamy zbiór 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        b
+        )
+        =
+        {
+        a
+        ∈
+        X
+        :
+        f
+        (
+        a
+        )
+        =
+        b
+        }
+        ;
+      
+    
+    {\displaystyle f^{-1}(b)=\{a\in X\colon f(a)=b\};}
+  
+ jeśli 
+  
+    
+      
+        b
+        ∉
+        f
+        (
+        X
+        )
+        ,
+      
+    
+    {\displaystyle b\notin f(X),}
+  
+ to 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        b
+        )
+        =
+        ∅
+      
+    
+    {\displaystyle f^{-1}(b)=\varnothing }
+  
+,
+przeciwobrazem podzbioru 
+  
+    
+      
+        B
+        ⊂
+        Y
+      
+    
+    {\displaystyle B\subset Y}
+  
+ nazywamy zbiór 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        B
+        )
+        =
+        {
+        a
+        ∈
+        X
+        :
+        f
+        (
+        a
+        )
+        ∈
+        B
+        }
+        ;
+      
+    
+    {\displaystyle f^{-1}(B)=\{a\in X\colon f(a)\in B\};}
+  
+ jeżeli 
+  
+    
+      
+        B
+        ∩
+        f
+        (
+        X
+        )
+        =
+        ∅
+        ,
+      
+    
+    {\displaystyle B\cap f(X)=\varnothing ,}
+  
+ to 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        B
+        )
+        =
+        ∅
+      
+    
+    {\displaystyle f^{-1}(B)=\varnothing }
+  
+.
+
+
+== Wykres funkcji ==
+
+Wykresem funkcji 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ nazywa się zbiór 
+  
+    
+      
+        
+          W
+          
+            f
+          
+        
+        =
+        {
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        X
+        ×
+        Y
+        :
+        y
+        =
+        f
+        (
+        x
+        )
+        }
+        .
+      
+    
+    {\displaystyle W_{f}=\{(x,y)\in X\times Y:y=f(x)\}.}
+  
+ Z definicji funkcji wynika, że dla każdego 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        ∈
+        X
+      
+    
+    {\displaystyle x_{0}\in X}
+  
+ istnieje dokładnie jeden taki 
+  
+    
+      
+        
+          y
+          
+            0
+          
+        
+        ∈
+        Y
+        ,
+      
+    
+    {\displaystyle y_{0}\in Y,}
+  
+ że 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+        ∈
+        
+          W
+          
+            f
+          
+        
+        .
+      
+    
+    {\displaystyle (x_{0},y_{0})\in W_{f}.}
+  
+ Jeśli 
+  
+    
+      
+        f
+        :
+        
+          R
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f\colon \mathbb {R} \to \mathbb {R} }
+  
+ jest funkcją ciągłą, to jej wykres jest krzywą w układzie współrzędnych na płaszczyźnie.
+Jeżeli zakładamy, że funkcja jest suriekcją, to wykres funkcji jednoznacznie ją określa. Jeśli 
+  
+    
+      
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          y
+          
+            0
+          
+        
+        )
+        ∈
+        
+          W
+          
+            f
+          
+        
+        ,
+      
+    
+    {\displaystyle (x_{0},y_{0})\in W_{f},}
+  
+ to 
+  
+    
+      
+        
+          y
+          
+            0
+          
+        
+        =
+        f
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle y_{0}=f(x_{0}),}
+  
+ przy czym 
+  
+    
+      
+        
+          y
+          
+            0
+          
+        
+      
+    
+    {\displaystyle y_{0}}
+  
+ jest jedynym takim elementem.
+Definicję relacyjną zaproponował Giuseppe Peano; utożsamia ona funkcję z jej wykresem. Jest użyteczna w tworzeniu systemów aksjomatycznych pewnych teorii, bowiem funkcja jest wtedy pojęciem pochodnym względem aksjomatyki teorii mnogości.
+
+
+== Funkcje liczbowe ==
+Ważną klasą funkcji są funkcje
+
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle f\colon X\to \mathbb {C} }
+  
+ (zbiór 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ jest zbiorem liczb zespolonych)
+nazywane funkcjami o wartościach liczbowych.
+W zbiorze funkcji liczbowych określonych na ustalonym zbiorze 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ można zdefiniować działania arytmetyczne:
+
+Dla 
+  
+    
+      
+        f
+        ,
+        g
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f,g\colon X\to Y}
+  
+ funkcja 
+  
+    
+      
+        f
+        +
+        g
+      
+    
+    {\displaystyle f+g}
+  
+ przyjmuje dla każdego 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ wartość 
+  
+    
+      
+        f
+        (
+        x
+        )
+        +
+        g
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle f(x)+g(x).}
+  
+
+Dla 
+  
+    
+      
+        f
+        ,
+        g
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f,g\colon X\to Y}
+  
+ funkcja 
+  
+    
+      
+        f
+        −
+        g
+      
+    
+    {\displaystyle f-g}
+  
+ przyjmuje dla każdego 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ wartość 
+  
+    
+      
+        f
+        (
+        x
+        )
+        −
+        g
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle f(x)-g(x).}
+  
+
+Dla 
+  
+    
+      
+        f
+        ,
+        g
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f,g\colon X\to Y}
+  
+ funkcja 
+  
+    
+      
+        f
+        ⋅
+        g
+      
+    
+    {\displaystyle f\cdot g}
+  
+ przyjmuje dla każdego 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ wartość 
+  
+    
+      
+        f
+        (
+        x
+        )
+        ⋅
+        g
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle f(x)\cdot g(x).}
+  
+
+Dla 
+  
+    
+      
+        f
+        ,
+        g
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f,g\colon X\to Y}
+  
+ i 
+  
+    
+      
+        
+          ∀
+          
+            x
+            ∈
+            X
+          
+        
+        g
+        (
+        x
+        )
+        ≠
+        0
+      
+    
+    {\displaystyle \forall _{x\in X}g(x)\neq 0}
+  
+ funkcja 
+  
+    
+      
+        f
+        
+          /
+        
+        g
+      
+    
+    {\displaystyle f/g}
+  
+ przyjmuje dla każdego 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ wartość 
+  
+    
+      
+        f
+        (
+        x
+        )
+        
+          /
+        
+        g
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle f(x)/g(x).}
+  
+
+Dla 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ i 
+  
+    
+      
+        λ
+        ∈
+        
+          C
+        
+      
+    
+    {\displaystyle \lambda \in \mathbb {C} }
+  
+ funkcja 
+  
+    
+      
+        λ
+        ⋅
+        f
+      
+    
+    {\displaystyle \lambda \cdot f}
+  
+ przyjmuje dla każdego 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ wartość 
+  
+    
+      
+        λ
+        ⋅
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle \lambda \cdot f(x).}
+  
+
+Funkcja 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ jest ograniczona, jeśli istnieje taka liczba rzeczywista dodatnia 
+  
+    
+      
+        M
+        ,
+      
+    
+    {\displaystyle M,}
+  
+ że dla każdego 
+  
+    
+      
+        x
+        ∈
+        X
+      
+    
+    {\displaystyle x\in X}
+  
+ spełniona jest nierówność 
+  
+    
+      
+        
+          |
+        
+        f
+        (
+        x
+        )
+        
+          |
+        
+        <
+        M
+        .
+      
+    
+    {\displaystyle |f(x)|<M.}
+  
+
+Jeśli funkcja liczbowa 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ przyjmuje jedynie wartości rzeczywiste
+
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle f\colon X\to \mathbb {R} ,}
+  
+
+to nazywa się ją funkcją o wartościach rzeczywistych.
+Dla funkcji o wartościach rzeczywistych wyniki powyżej zdefiniowanych czterech działań arytmetycznych są funkcjami o wartościach rzeczywistych. Wyjątkiem jest mnożenie przez stałą, która powinna być rzeczywista, aby w wyniku mnożenia funkcji o wartościach rzeczywistych przez tę stałą uzyskać funkcję o wartościach rzeczywistych.
+Funkcjami liczbowymi nazywamy:
+
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          C
+        
+        ,
+      
+    
+    {\displaystyle f\colon X\to \mathbb {C} ,}
+  
+ gdzie 
+  
+    
+      
+        X
+        ⊂
+        
+          C
+        
+      
+    
+    {\displaystyle X\subset \mathbb {C} }
+  
+ (jest to funkcja zespolona)
+
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle f\colon X\to \mathbb {R} ,}
+  
+ gdzie 
+  
+    
+      
+        X
+        ⊂
+        
+          R
+        
+      
+    
+    {\displaystyle X\subset \mathbb {R} }
+  
+ (jest to funkcja rzeczywista)
+Można także mówić o funkcjach liczbowych wielu zmiennych (rzeczywistych lub zespolonych):
+
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          C
+        
+        ,
+      
+    
+    {\displaystyle f\colon X\to \mathbb {C} ,}
+  
+ gdzie 
+  
+    
+      
+        X
+        ⊂
+        
+          
+            C
+          
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                
+                  C
+                
+                ×
+                …
+                ×
+                
+                  C
+                
+              
+              ⏟
+            
+          
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle X\subset \mathbb {C} ^{n}=\underbrace {\mathbb {C} \times \ldots \times \mathbb {C} } _{n},}
+  
+
+  
+    
+      
+        f
+        :
+        X
+        →
+        
+          R
+        
+        ,
+      
+    
+    {\displaystyle f\colon X\to \mathbb {R} ,}
+  
+ gdzie 
+  
+    
+      
+        X
+        ⊂
+        
+          
+            R
+          
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                
+                  R
+                
+                ×
+                …
+                ×
+                
+                  R
+                
+              
+              ⏟
+            
+          
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle X\subset \mathbb {R} ^{n}=\underbrace {\mathbb {R} \times \ldots \times \mathbb {R} } _{n},}
+  
+
+których dziedzina jest podzbiorem iloczynu kartezjańskiego zbioru liczb rzeczywistych lub zbioru liczb zespolonych, które zapisuje się:
+
+  
+    
+      
+        y
+        =
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle y=f(x_{1},x_{2},\dots ,x_{n}),}
+  
+ gdzie 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle x_{1},\dots ,x_{n}}
+  
+ są współrzędnymi punktu w 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+ lub odpowiednio w 
+  
+    
+      
+        
+          
+            C
+          
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbb {C} ^{n}.}
+  
+
+
+=== Rodzaje funkcji liczbowych ===
+
+funkcja rosnąca;
+funkcja malejąca;
+funkcja nierosnąca;
+funkcja niemalejąca;
+funkcja monotoniczna – funkcja rosnąca lub funkcja malejąca, lub funkcja nierosnąca, lub funkcja niemalejąca;
+funkcje ograniczone – funkcja, której zbiór wartości jest ograniczony;
+funkcja parzysta – wykres funkcji parzystej jest symetryczny względem osi rzędnych;
+funkcja nieparzysta – wykres funkcji nieparzystej jest symetryczny względem początku układu współrzędnych;
+funkcja okresowa;
+funkcja ciągła;
+funkcja różniczkowalna – funkcja, dla której istnieje pochodna w każdym punkcie jej dziedziny.
+
+
+== Sposoby określania funkcji ==
+Jeżeli dziedzina 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ jest skończona, wystarczy wymienić wszystkie pary (argument, wartość). Można to zrobić za pomocą grafu (przykład obok).
+Funkcje liczbowe można definiować za pomocą wzorów. Jest to sposób analityczny. W tym celu wykorzystuje się pewien zasób funkcji (wielomiany, funkcje elementarne itp.), działania algebraiczne, złożenie funkcji i operację przejścia do granicy (w tym operacje analizy matematycznej, takie jak różniczkowanie, całkowanie i sumowanie szeregów).
+Klasa funkcji, które można przedstawić za pomocą szeregu (potęgowego, trygonometrycznego itp.) jest bardzo szeroka. Każdą funkcję elementarną można przedstawić za pomocą szeregu potęgowego zwanego szeregiem Taylora.
+Przedstawić analitycznie funkcję można w sposób jawny, tzn. jako 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ lub jako tak zwaną funkcję uwikłaną, tzn. za pomocą równania 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        y
+        )
+        =
+        0
+      
+    
+    {\displaystyle F(x,y)=0}
+  
+.
+Czasem funkcja jest dana kilkoma wzorami, na przykład:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  
+                    3
+                    
+                      x
+                    
+                  
+                  ,
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  >
+                  0
+                
+              
+              
+                
+                  0
+                  ,
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  =
+                  0
+                
+              
+              
+                
+                  2
+                  x
+                  −
+                  1
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  <
+                  0
+                
+              
+            
+            
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)={\begin{cases}3^{x},&{\text{gdy }}x>0\\0,&{\text{gdy }}x=0\\2x-1&{\text{gdy }}x<0\end{cases}}.}
+  
+
+Do określenia funkcji można też stosować metodę opisową. Na przykład funkcja Dirichleta jest funkcją, która dla argumentów wymiernych przyjmuje wartość 1, a dla argumentów niewymiernych 0.
+Funkcja może na ogół być określona na wiele sposobów. Na przykład funkcję sgn (x) można określić w taki sposób:
+
+  
+    
+      
+        sgn
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  1
+                  ,
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  >
+                  0
+                
+              
+              
+                
+                  0
+                  ,
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  =
+                  0
+                
+              
+              
+                
+                  −
+                  1
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  <
+                  0
+                
+              
+            
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {sgn}(x)={\begin{cases}1,&{\text{gdy }}x>0\\0,&{\text{gdy }}x=0\\-1&{\text{gdy }}x<0\end{cases}},}
+  
+
+albo w taki:
+
+  
+    
+      
+        sgn
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  
+                    
+                      x
+                      
+                        
+                          |
+                        
+                        x
+                        
+                          |
+                        
+                      
+                    
+                  
+                  ,
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  ≠
+                  0
+                
+              
+              
+                
+                  0
+                  ,
+                
+                
+                  
+                    gdy 
+                  
+                  x
+                  =
+                  0
+                
+              
+            
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {sgn}(x)={\begin{cases}{\frac {x}{|x|}},&{\text{gdy }}x\neq 0\\0,&{\text{gdy }}x=0\end{cases}}.}
+  
+
+Dla funkcji rzeczywistych o wartościach rzeczywistych stosowano tabelaryczny sposób określania funkcji. Obecnie w dobie kalkulatorów i arkuszy kalkulacyjnych tabele wartości funkcji logarytmicznych i trygonometrycznych i innych nie są już niezbędne, ale bywają wykorzystywane.
+Ważnym sposobem przedstawiania i badania funkcji jest jej wykres, który dla funkcji 
+  
+    
+      
+        f
+        :
+        
+          R
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f\colon \mathbb {R} \to \mathbb {R} }
+  
+ w przypadku funkcji ciągłej jest krzywą na płaszczyźnie.
+
+
+=== Przykłady funkcji liczbowych określonych za pomocą wzoru ===
+
+  
+    
+      
+        y
+        =
+        a
+        x
+        +
+        b
+      
+    
+    {\displaystyle y=ax+b}
+  
+ – funkcja liniowa
+
+  
+    
+      
+        y
+        =
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+      
+    
+    {\displaystyle y=ax^{2}+bx+c}
+  
+ – funkcja kwadratowa
+
+  
+    
+      
+        y
+        =
+        
+          a
+          
+            0
+          
+        
+        +
+        
+          a
+          
+            1
+          
+        
+        x
+        +
+        …
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle y=a_{0}+a_{1}x+\ldots +a_{n}x^{n}}
+  
+ – funkcja wielomianowa
+
+  
+    
+      
+        y
+        =
+        1
+        +
+        
+          
+            ln
+            ⁡
+            
+              sin
+              ⁡
+              
+                2
+                π
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle y=1+{\sqrt {\ln {\sin {2\pi x}}}}}
+  
+
+  
+    
+      
+        
+          P
+          
+            n
+          
+        
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              
+                2
+                
+                  n
+                
+              
+              n
+              !
+            
+          
+        
+        
+          
+            
+              
+                d
+                
+                  n
+                
+              
+              (
+              
+                x
+                
+                  2
+                
+              
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+            
+            
+              d
+              
+                x
+                
+                  n
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle P_{n}(x)={\frac {1}{2^{n}n!}}{\frac {d^{n}(x^{2}-1)^{n}}{dx^{n}}}}
+  
+
+  
+    
+      
+        I
+        (
+        α
+        ,
+        β
+        )
+        =
+        
+          ∫
+          
+            0
+          
+          
+            +
+            ∞
+          
+        
+        
+          e
+          
+            −
+            α
+            x
+          
+        
+        
+          
+            
+              sin
+              ⁡
+              β
+              x
+            
+            x
+          
+        
+        d
+        x
+      
+    
+    {\displaystyle I(\alpha ,\beta )=\int _{0}^{+\infty }e^{-\alpha x}{\frac {\sin \beta x}{x}}dx}
+  
+
+  
+    
+      
+        σ
+        (
+        z
+        )
+        =
+        
+          
+            ∑
+            
+              n
+              =
+              1
+            
+            
+              ∞
+            
+          
+          
+            
+              1
+              
+                n
+                
+                  z
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \sigma (z)=\textstyle \sum _{n=1}^{\infty }{\frac {1}{n^{z}}}}
+  
+
+  
+    
+      
+        y
+        −
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle y-f(x)=0}
+  
+ – funkcja jawna zapisana jako uwikłana
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        −
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{2}+y^{2}-1=0}
+  
+ – funkcja uwikłana (równanie okręgu)
+
+
+== Funkcja jako związek między zmiennymi ==
+Zamiast mówić o funkcji jako o relacji między zbiorami, można też mówić o zależności (związku) między dwiema zmiennymi 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ i 
+  
+    
+      
+        y
+        ,
+      
+    
+    {\displaystyle y,}
+  
+ gdzie pierwsza z nich przyjmuje wartości ze zbioru 
+  
+    
+      
+        X
+        ,
+      
+    
+    {\displaystyle X,}
+  
+ a druga przyjmuje wartości ze zbioru 
+  
+    
+      
+        Y
+        ;
+      
+    
+    {\displaystyle Y;}
+  
+ wtedy 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ nazywa się zmienną niezależną, a 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ – zmienną zależną. Taka interpretacja funkcji jest często używana w analizie matematycznej i zastosowaniach matematyki w innych naukach. W tym wypadku niezależność zmiennej 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ oznacza, że może się ona zmieniać w dowolny sposób, a zależność zmiennej 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ oznacza, że jej zmiany są zależne od zmian zmiennej 
+  
+    
+      
+        x
+        .
+      
+    
+    {\displaystyle x.}
+  
+ Na przykład droga 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ w ruchu jednostajnym o prędkości 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ jest zależna od czasu 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ ruchu i wyraża się wzorem:
+
+  
+    
+      
+        s
+        =
+        v
+        ⋅
+        t
+        .
+      
+    
+    {\displaystyle s=v\cdot t.}
+  
+
+W praktyce często się zdarza, że zbiór 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+ jest opisywany przez kilka zmiennych niezależnych 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle x_{1},\dots ,x_{n}.}
+  
+ Mówimy wtedy, że zmienna 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ jest funkcją zmiennych 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle x_{1},\dots ,x_{n}.}
+  
+ Na przykład siła 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ działająca na ciało jest zależna od masy 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ ciała i jego przyspieszenia 
+  
+    
+      
+        a
+        
+          :
+        
+      
+    
+    {\displaystyle a{:}}
+  
+
+  
+    
+      
+        F
+        =
+        m
+        ⋅
+        a
+        .
+      
+    
+    {\displaystyle F=m\cdot a.}
+  
+
+
+== Przykłady funkcji ==
+
+
+=== W matematyce ===
+Definicję funkcji spełniają na przykład:
+
+działania arytmetyczne: dodawanie, odejmowanie, mnożenie i dzielenie. Można je traktować jako funkcje liczbowe dwóch lub większej liczby zmiennych.
+Jednoargumentowe działania na liczbach: zaokrąglanie, podłoga i sufit oraz część ułamkowa, wartość bezwzględna, liczba przeciwna (przykład funkcji liniowej), liczba odwrotna (przykład funkcji wymiernej),
+średnie: arytmetyczna, geometryczna i inne. To funkcje dwóch lub dowolnej liczby zmiennych. Można je traktować jako funkcje na ciągach lub multizbiorach liczb.
+inne funkcje statystyczne, np. mediana, moda, minimum i maksimum,
+funkcje teorioliczbowe: największy wspólny dzielnik i najmniejsza wspólna wielokrotność dwóch lub więcej liczb całkowitych,
+przekształcenia geometryczne: odbicie względem prostej lub punktu i inne symetrie, obrót względem punktu lub osi, jednokładność, dylatacja, inwersja i wiele innych,
+odległość między punktami (w ogólności metryka), długość wektora (w ogólności norma),
+Średnica zbioru – funkcja ze zbioru potęgowego dowolnej przestrzeni metrycznej,
+długość linii (łamanej lub ogólnie krzywej), w szczególności obwód dla krzywych zamkniętych,
+pole powierzchni, objętość, prawdopodobieństwo i inne przykłady miary.
+działania na zdaniach lub formułach: negacja, implikacja, alternatywa, alternatywa rozłączna, koniunkcja, dysjunkcja, równoważność,
+same formuły zdaniowe: przyporządkowanie termom zdania,
+wartość logiczna,
+działania na zbiorach,
+działania na ciągach skończonych, jak permutacja (np. inwersja) oraz konkatenacja,
+układ współrzędnych to funkcja z przestrzeni geometrycznej (zwłaszcza rozmaitości) w przestrzeń kartezjańską.
+
+
+=== W fizyce ===
+
+Wszystkie wielkości fizyczne rozpatruje się jako funkcje innych zmiennych:
+
+Jednostki fizyczne są często funkcjami liniowymi innych jednostek, np. temperatura w skali Fahrenehita jest liniową funkcją tej Celsjusza.
+Czasami jednostki są logarytmicznymi funkcjami innych jednostek, np. poziom natężenia dźwięku, wysokość dźwięku, jasność absolutna,
+W statyce: przyporządkowanie każdemu ciału fizycznemu jego masy oraz środka masy. Zgodnie z prawem Hooke’a siła nacisku lub naciągu jest proporcjonalna do odkształcenia ciała (dla odpowiednio małych wartości tych parametrów). To funkcje liniowe siebie nawzajem. Ich zależność opisują współczynnik sprężystości, moduł Younga i inne. Tarcie jest liniową funkcją siły nacisku.
+W kinematyce: ruch ciał fizycznych opisywany jest przez wektor położenia lub przemieszczenia 
+  
+    
+      
+        
+          
+            
+              r
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {r}}}
+  
+ oraz skalary odległości lub drogi s. Wszystkie są funkcjami czasu. Ta pierwsza to tzw. trajektoria lub linia świata. Na ich podstawie są oparte inne funkcje czasu: prędkość i przyspieszenie.
+W dynamice: pęd jest funkcją dwóch zmiennych: masy i prędkości, przy czym obydwie mogą być funkcjami czasu. Siła okazuje się pochodną pędu po czasie (II zasada dynamiki). Praca jest funkcją siły i przesunięcia ciała, a energia może być zależna od różnych wielkości. Energia kinetyczna ruchu ciała jest zależna od masy ciała i jego prędkości; energia potencjalna grawitacji jest (w przypadku grawitacji ziemskiej) zależna od masy ciała i jego odległości h od powierzchni Ziemi; przyrost energii cieplnej cieczy jest funkcją masy cieczy i przyrostu jej temperatury T
+W bardziej zaawansowanej mechanice definiuje się też inne wielkości dynamiczne: lagranżjan, działanie i hamiltonian, które też są funkcjami mas, położeń i prędkości.
+Liczne pola fizyczne: funkcje z przestrzeni lub czasoprzestrzeni w zbiór skalarów, wektorów, tensorów itp.
+prąd jest funkcją napięcia – w prostych wypadkach opisywaną przez prawo Ohma.
+W termodynamice: objętość ciał oraz ich gęstość jest funkcją temperatury – rozszerzalność cieplna
+W mechanice kwantowej wektor stanu bywa funkcją, a konkretniej zespolonym polem skalarnym – tzw. funkcja falowa.
+Tensory: formy wieloliniowe, czyli funkcje wielu wektorów i kowektorów. Są używane w statyce (wytrzymałość materiałów), w optyce (dwójłomność) oraz w ogólnej teorii względności Einsteina.
+
+
+=== W innych dziedzinach ===
+Funkcja może wyrażać własność pewnego obiektu, dlatego obejmuje bardzo wiele pojęć z nauk empirycznych. Jako funkcję można też traktować każdą relację równoważności zachodzącą między dokładnie dwoma obiektami – jest to tzw. inwolucja.
+Astronomia:
+
+położenie ciał niebieskich na niebie (współrzędne astronomiczne) jest funkcją czasu oraz współrzędnych geograficznych,
+okres obiegu planety wokół Słońca jest malejącą funkcją promienia jej orbity, zgodnie z III prawem Keplera,
+jasność obserwowana gwiazdy jest funkcją jej jasności absolutnej i odległości od obserwatora,
+krzywa rotacji galaktyki – prędkość gwiazdy względem galaktyki jest funkcją odległości od jej środka,
+przesunięcie ku czerwieni widm odległych galaktyk jest funkcją ich odległości od Ziemi – zgodnie z prawem Hubble’a,
+Diagram HR opisuje moc promieniowania i temperaturę gwiazdy w funkcji czasu.
+Chemia:
+
+Przykładowo liczba atomowa, blok, grupa i okres w UOP albo liczba elektronów walencyjnych to funkcje na zbiorze pierwiastków chemicznych. Ta pierwsza jest różnowartościowa, a pozostałe – nie.
+liczba masowa i liczba neutronowa to funkcje na zbiorze nuklidów (wszystkie izotopy wszystkich pierwiastków),
+masa cząsteczkowa – funkcja na zbiorze molekuł albo związków,
+jądro lustrzane – bijekcja w zbiorze nuklidów,
+odbicie lustrzane – bijekcja w zbiorze cząsteczek chiralnych,
+własności makroskopowe subtancji jak temperatura wrzenia, temperatura topnienia itp.,
+skala pH jest logarytmiczną funkcją altywności jonów hydroniowych.
+Biologia:
+
+Przykładem nieliczbowej funkcji jest kod genetyczny. Zgodnie z zasadą szufladkową Dirichleta nie może być funkcją różnowartościową, czyli innymi słowy jest zdegenerowany.
+mutacje genowe – zmiana sekwencji nukleotydów, np. substytucja, delecja, insercja,
+komplementarny nukleotyd lub cała nić DNA,
+krzywa wzrostu i inne parametry populacji.
+Medycyna i fizjologia:
+
+BMI – funkcja dwóch zmiennych: wzrostu i wagi
+EKG i EEG – funkcje napięcia między elektrodami od czasu,
+Geografia fizyczna, geodezja i inne nauki o Ziemi:
+
+wysokość bezwzględna, temperatura, ciśnienie atmosferyczne, a dla zbiorków wodnych zasolenie – funkcje współrzędnych geograficznych. To przykłady funkcji wielu zmiennych – konkretniej pól skalarnych.
+Temperatura i ciśnienie są też funkcją współrzędnych geograficznych i wysokości bezwzględnej,
+średnia temperatura atmosfery ziemskiej jest od XX w. funkcją rosnącą – globalne ocieplenie.
+Geografia społeczna, demografia i socjologia:
+
+piramida wieku danemu wiekowi lub przedziałowi wieku przyporządkowuje odsetek osób w tym wieku. Dla społeczeństw młodych jest to funkcja malejąca. Niże i echa niżów demograficznych to lokalne minima tej funkcji.
+opinia publiczna, np. procentowe poparcie dla danej opcji politycznej albo decyzji jest funkcją czasu, a także wieku, płci i regionu.
+Ekonomia:
+
+funkcje podaży i popytu,
+cena, np. kurs walutowy,
+rozmaite parametry gospodarki: PKB, inflacja, dług publiczny, HDI itd. Można je traktować jako funkcje na zbiorze państw, a dla danego państwa: funkcje od czasu.
+Liczne krzywe ekonomiczne, np. Laffera i Phillipsa
+Psychologia:
+
+wyniki testów IQ są rosnącą funkcją czasu – efekt Flynna,
+funkcja komfortu psychicznego obserwatora od podobieństwa androida do człowieka ma lokalne minimum – to tzw. dolina niesamowitości,
+wiele wyników testów psychometrycznych w populacji, np. IQ i EQ jest opisanych funkcją rozkładu normalnego.
+
+
+== Pojęcia ==
+
+
+=== Złożenie. Iteracja ===
+
+Mając dwie funkcje 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ i 
+  
+    
+      
+        g
+        :
+        Y
+        →
+        Z
+        ,
+      
+    
+    {\displaystyle g\colon Y\to Z,}
+  
+ można utworzyć funkcję złożoną 
+  
+    
+      
+        (
+        g
+        ∘
+        f
+        )
+        :
+        X
+        →
+        Z
+      
+    
+    {\displaystyle (g\circ f)\colon X\to Z}
+  
+ określoną wzorem 
+  
+    
+      
+        (
+        g
+        ∘
+        f
+        )
+        (
+        x
+        )
+        =
+        g
+        
+          
+            (
+          
+        
+        f
+        (
+        x
+        )
+        
+          
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle (g\circ f)(x)=g{\Big (}f(x){\Big )}.}
+  
+
+Wielokrotne złożenie funkcji 
+  
+    
+      
+        f
+        :
+        X
+        →
+        X
+      
+    
+    {\displaystyle f\colon X\to X}
+  
+ nosi nazwę iteracji. Ściśle: 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-tą iteracją funkcji 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ nazywa się funkcję
+
+  
+    
+      
+        
+          f
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                
+                  
+                    
+                      f
+                      ∘
+                      f
+                      ∘
+                      …
+                      ∘
+                      f
+                    
+                    ⏟
+                  
+                
+              
+            
+            
+              
+                
+                  n
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle f^{n}={\begin{matrix}\underbrace {f\circ f\circ \ldots \circ f} \\{n}\\[-4ex]\end{matrix}}.}
+  
+
+
+=== Funkcja odwrotna ===
+
+Dla każdej funkcji wzajemnie jednoznacznej można określić funkcję 
+  
+    
+      
+        
+          f
+          
+            −
+            1
+          
+        
+        :
+        Y
+        →
+        X
+      
+    
+    {\displaystyle f^{-1}\colon Y\to X}
+  
+ taką, że 
+  
+    
+      
+        (
+        f
+        ∘
+        
+          f
+          
+            −
+            1
+          
+        
+        )
+        (
+        x
+        )
+        =
+        x
+        ,
+      
+    
+    {\displaystyle (f\circ f^{-1})(x)=x,}
+  
+ którą nazywa się wówczas funkcją odwrotną.
+
+
+=== Zawężenie i przedłużenie ===
+
+Dla funkcji 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ można określić jej zawężenie, nazywane też obcięciem lub ograniczeniem, do zbioru 
+  
+    
+      
+        M
+        ⊆
+        X
+        .
+      
+    
+    {\displaystyle M\subseteq X.}
+  
+ Jest to funkcja 
+  
+    
+      
+        f
+        
+          
+            |
+          
+          
+            M
+          
+        
+        :
+        M
+        →
+        Y
+      
+    
+    {\displaystyle f|_{M}\colon M\to Y}
+  
+ taka, że 
+  
+    
+      
+        f
+        
+          
+            |
+          
+          
+            M
+          
+        
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f|_{M}(x)=f(x)}
+  
+ dla każdego 
+  
+    
+      
+        x
+        ∈
+        M
+        .
+      
+    
+    {\displaystyle x\in M.}
+  
+ Nazywa się ją też funkcją częściową dla funkcji f.
+Jeżeli 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+      
+    
+    {\displaystyle f\colon X\to Y}
+  
+ jest funkcją, a 
+  
+    
+      
+        f
+        
+          
+            |
+          
+          
+            M
+          
+        
+        :
+        M
+        →
+        Y
+      
+    
+    {\displaystyle f|_{M}\colon M\to Y}
+  
+ jest jej zawężeniem do zbioru 
+  
+    
+      
+        M
+        ⊂
+        X
+        ,
+      
+    
+    {\displaystyle M\subset X,}
+  
+ to dla dowolnego zbioru 
+  
+    
+      
+        B
+        ⊂
+        Y
+      
+    
+    {\displaystyle B\subset Y}
+  
+ mamy 
+  
+    
+      
+        
+          
+            (
+            
+              f
+              
+                
+                  |
+                
+                
+                  M
+                
+              
+            
+            )
+          
+          
+            −
+            1
+          
+        
+        (
+        B
+        )
+        =
+        M
+        ∩
+        
+          f
+          
+            −
+            1
+          
+        
+        (
+        B
+        )
+        .
+      
+    
+    {\displaystyle \left(f|_{M}\right)^{-1}(B)=M\cap f^{-1}(B).}
+  
+
+Z drugiej strony, dla 
+  
+    
+      
+        M
+        ⊂
+        X
+        ,
+      
+    
+    {\displaystyle M\subset X,}
+  
+ można przedłużyć funkcję 
+  
+    
+      
+        f
+        :
+        M
+        →
+        Y
+      
+    
+    {\displaystyle f\colon M\to Y}
+  
+ zachowawszy często pewną regułę, otrzymując w ten sposób funkcję 
+  
+    
+      
+        g
+        :
+        X
+        →
+        Y
+        .
+      
+    
+    {\displaystyle g\colon X\to Y.}
+  
+ Można np. wymagać, by przedłużenie 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ funkcji 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ było ciągłe, różniczkowalne lub okresowe.
+
+
+== Rys historyczny ==
+Poszukiwaniem wzajemnych zależności między różnymi wielkościami zajmowali się już starożytni Grecy, którzy badali dość szeroki krąg zależności funkcyjnych. Pojęcie funkcji w postaci początkowej pojawiało się w średniowieczu, lecz dopiero w pracach matematyków XVII wieku, Fermata, Kartezjusza, Newtona i Leibniza, zaczęło być traktowane jako obiekt badań. Newton używał terminu fluenta. Terminu funkcja użył po raz pierwszy Leibniz w pracy Odwrotna metoda stycznych lub o funkcjach. Po raz drugi Leibniz użył tego terminu w dość wąskim znaczeniu w pracy opublikowanej w czasopiśmie „Acta Eruditorum” w 1692 roku i dwa lata później w „Journal des Sçavans”. Następnie w tym samym 1694 roku Johann Bernoulli w „Acta Eruditorum”, nie używając co prawda słowa funkcja, oznaczył mimochodem literą n „dowolną wielkość utworzoną z nieoznaczonych i stałych”. Po trzech latach, w tym samym piśmie, Bernoulli wielkości te oznaczał przez X i 
+  
+    
+      
+        ξ
+        ,
+      
+    
+    {\displaystyle \xi ,}
+  
+ a w liście do Leibniza z 26 kwietnia 1698 roku stwierdził, że symbole te są lepsze, bo „od razu jest widoczne, od jakiej zmiennej jest funkcja”. Jeszcze w 1698 roku w korespondencji między oboma uczonymi funkcja była rozumiana jako wyrażenie analityczne i weszły do użytku terminy wielkość zmienna i wielkość stała.
+Określenie funkcji jako wyrażenia analitycznego było po raz pierwszy sformułowane w druku w artykule Johanna Bernoulli opublikowanym w 1718 roku. Napisał on:
+
+W tym samym artykule zaproponował on jako „charakterystykę” funkcji grecką literę 
+  
+    
+      
+        φ
+        ,
+      
+    
+    {\displaystyle \varphi ,}
+  
+ zapisując argument jeszcze bez nawiasów 
+  
+    
+      
+        φ
+        x
+        .
+      
+    
+    {\displaystyle \varphi x.}
+  
+ Zarówno nawiasy, jak literę f wprowadził Leonhard Euler w 1734 roku.
+
+
+== Zobacz też ==
+
+rachunek lambda
+
+
+== Uwagi ==
+
+
+== Przypisy ==
+
+
+== Bibliografia ==
+Juszkiewicz: Historia matematyki od Starożytności do początku XIX wieku. T. 2. Warszawa: PWN, 1976.
+Andriej Kołmogorow, Sergei Fomin: Elementy teorii funkcji i analizy funkcjonalnej. Moskwa: Mir, 1989. (ros.).
+Kazimierz Kuratowski: Rachunek różniczkowy i całkowy. Funkcje jednej zmiennej. Warszawa: Państwowe Wydawnictwo Naukowe, 1967.
+Kazimierz Kuratowski, Andrzej Mostowski: Teoria mnogości. Warszawa: PWN, 1966.
+Zenon Moszner: O teorii relacji. Warszawa: Wydawnictwa Szkolne i Pedagogiczne, 1974.
+Iwan Winogradow: Encyklopedia matematyczna. T. 5. Moskwa: Encyklopedia Radziecka, 1985. (ros.).
+Charles C. Pinter: A Book of Set Theory. Nowy Jork: Dover Ppublications, INC, 2014, s. 52,53. ISBN 0-486-49708-9. (ang.).
+What is a function. W: Mirin Alison: PME-NA Mathematics Education Across Cultures. Meksyk: PME-NA, 2020, s. 1157. ISBN 978-1-7348057-0-3. (ang.).
+Hans Niels Jahnke: A history of analysis. Providence, RI: American Mathematical Society, 2003. ISBN 0-8218-2623-9. OCLC 51607350.
+
+
+== Literatura dodatkowa ==
+Helena Rasiowa: Wstęp do matematyki współczesnej. Warszawa: PWN, 1968. ISBN 83-01-13949-8. Brak numerów stron w książce
+
+
+== Linki zewnętrzne ==
+ Paweł Lubowiecki, Odwzorowania cz. I Pojęcia podstawowe, Wojskowa Akademia Techniczna im. Jarosława Dąbrowskiego, kanał „Uczelnia WAT” na YouTube, 30 stycznia 2024 [dostęp 2024-09-07].
+Eric W.E.W. Weisstein Eric W.E.W., Function, [w:] MathWorld, Wolfram Research  (ang.). [dostęp 2023-12-23].

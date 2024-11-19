@@ -1,0 +1,5696 @@
+A logaritmus két szám között értelmezett matematikai művelet, amely közeli kapcsolatban van a hatványozással. A pozitív b szám a alapú logaritmusán (ahol a egytől különböző pozitív szám) azt a kitevőt értjük, melyre a-t emelve b-t kapjuk.
+Például 1000-nek 10-es alapú logaritmusa 3, mert 10 harmadik hatványa 1000.
+A b szám a alapú logaritmusát
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        
+      
+    
+    {\displaystyle \log _{a}b\;}
+  
+
+jelöli, amely tehát az egyetlen valós szám, amelyre
+
+  
+    
+      
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            
+            b
+          
+        
+        =
+        b
+        .
+      
+    
+    {\displaystyle a^{\log _{a}\,b}=b.}
+  
+
+Például 
+  
+    
+      
+        
+          log
+          
+            3
+          
+        
+        ⁡
+        81
+        =
+        4
+      
+    
+    {\displaystyle \log _{3}81=4}
+  
+, ugyanis, ha a 81-et a logaritmus alapjának, azaz a 3-nak hatványaként írjuk fel, akkor a kitevő 4 lesz:
+
+  
+    
+      
+        
+          log
+          
+            3
+          
+        
+        
+        81
+        =
+        4
+        
+        
+        ⇐
+        
+        
+        81
+        =
+        
+          3
+          
+            4
+          
+        
+      
+    
+    {\displaystyle \log _{3}\,81=4\;\;\Leftarrow \;\;81=3^{4}}
+  
+
+A logaritmus képzése a gyökvonáshoz hasonlóan egy bizonyos értelemben a hatványozás megfordítása, de amíg a gyökvonás az 
+  
+    
+      
+        a
+        =
+        
+          b
+          
+            c
+          
+        
+      
+    
+    {\displaystyle a=b^{c}}
+  
+ összefüggés alapján az eredmény és a kitevő ismeretében keresi az alapot, addig a logaritmus az eredmény és az alap ismeretében a kitevőt határozza meg.
+A logaritmust John Napier vezette be a 16. század végen, hogy megkönnyítse a szorzást, hatványozást tartalmazó számolásokat. Az elnevezés a görög „λόγος” (logosz, arány) és „ἀριθμός” (arithmosz, szám) szavak összetételéből származik. A számítások megkönnyítésére logarléceket és logaritmustáblázatokat készítettek, amelyek hamarosan elterjedtek a tengerészetben, a tudományokban és a mérnökök között. Ezek az eszközök a logaritmus azonosságait használják fel. A logaritmus mai jelölése Leonhard Eulertől származik, aki elsőként kapcsolta össze az exponenciális függvénnyel.
+A 10-es alapú logaritmust a természettudományokban és a mérnöki tudományokban használják. Jelölése: 
+  
+    
+      
+        lg
+        ⁡
+        x
+      
+    
+    {\displaystyle \operatorname {lg} x}
+  
+. A természetes logaritmus alapja az e Euler-konstans (Euler-féle szám), és a matematikában széleskörűen alkalmazzák. Jelölése 
+  
+    
+      
+        ln
+        ⁡
+        x
+      
+    
+    {\displaystyle \operatorname {ln} x}
+  
+ (matematikai szakszövegekben sokszor 
+  
+    
+      
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle \log x}
+  
+). A 2-es alapú logaritmust a számítástudományban és az informatikában alkalmazzák. Jelölése egyszerűen 
+  
+    
+      
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle \log x}
+  
+, az alap kiírása nélkül. Német nyelvterületen erre az 
+  
+    
+      
+        ld
+        ⁡
+        x
+      
+    
+    {\displaystyle \operatorname {ld} x}
+  
+ jelet használják.
+A logaritmikus skálák kis tartományon széles tartományú mennyiségeket képesek ábrázolni. Így működik például a látás és a hallás. A decibel egy olyan viszonylagos egység, ami teljesítmények, vagy amplitúdók arányainak logaritmusát méri. A kémiában a pH a vizes oldatok kémhatását méri. A földrengések nagyságát is logaritmikus skálában mérik. A bonyolultságelméletben is megjelennek, például az összehasonlításos rendezések bonyolultsága legalább 
+  
+    
+      
+        
+          O
+        
+        (
+        n
+        ⋅
+        log
+        ⁡
+        n
+        )
+      
+    
+    {\displaystyle {\text{O}}(n\cdot \log n)}
+  
+.
+Az általánosan használt logaritmusfogalom tehát a pozitív valós számok körében érvényes, de kiterjeszthető a negatív és a komplex számokra is. A valós számokon a logaritmus – rögzített alap esetén – a hatványozás inverz művelete. Ez megmarad a komplex számok fölött is. Egy másik változat a diszkrét logaritmus, amit a kriptográfiában is használnak.
+
+
+== Jellemzés ==
+Ahogy a logaritmus definíciója is mutatja, a pozitív számokon értelmezett (egytől különböző, pozitív alapú)
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        :
+        
+        x
+        ↦
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a}:\;x\mapsto \log _{a}x}
+  
+
+függvény az a alapú exponenciális függvény inverze (egészen pontosan a képlet szerint a jobbinverze), vagyis az 
+  
+    
+      
+        
+          a
+          
+            x
+          
+        
+        =
+        
+          exp
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle a^{x}=\exp _{a}(x)}
+  
+ jelölést alkalmazva minden pozitív x számra
+
+  
+    
+      
+        
+          exp
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        )
+        =
+        x
+        
+      
+    
+    {\displaystyle \exp _{a}(\log _{a}(x))=x\,}
+  
+.
+Emellett a logaritmusfüggvény balinverze is az a alapú exponenciális függvénynek:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          exp
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        )
+        =
+        x
+        
+      
+    
+    {\displaystyle \log _{a}(\exp _{a}(x))=x\,}
+  
+.
+Eszerint a logaritmus művelete a következő eljárással állítja elő a kimenetét. A 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a}x}
+  
+ az az utasítás, mely az x pozitív számot felírja az a alap valahányadik hatványaként, majd ennek a hatványnak a kitevőjét leolvassa és ezt adja értékül a 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a}x}
+  
+ kifejezésnek:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          a
+          
+            n
+          
+        
+        =
+        n
+        
+      
+    
+    {\displaystyle \log _{a}x=\log _{a}a^{n}=n\,}
+  
+
+Például log101000 = 3, log10100000 = 5, log101 000 000 000 = 9, illetve log1010n = n. A tízes alapú logaritmus tehát „a 0-kat számolja meg”. Így az A szám számjegyeinek száma 10-es számrendszerben az 
+  
+    
+      
+        (
+        lg
+        ⁡
+        A
+        )
+        +
+        1
+      
+    
+    {\displaystyle (\lg A)+1}
+  
+ szám egészrésze. Általában c-es számrendszerben felírt A szám számjegyeinek száma: 
+  
+    
+      
+        (
+        
+          log
+          
+            c
+          
+        
+        ⁡
+        A
+        )
+        +
+        1
+      
+    
+    {\displaystyle (\log _{c}A)+1}
+  
+ egészrésze.
+
+
+== Alternatív definíciók ==
+Egy alternatív definíció a logaritmus azonosságaira támaszkodik, de hatványsorával és a természetes logaritmus az 
+  
+    
+      
+        1
+        
+          /
+        
+        x
+      
+    
+    {\displaystyle 1/x}
+  
+ integráljaként is definiálható, amiből a többi logaritmus az alap megváltoztatására szolgáló képlettel kapható. Ez az utóbbi két definíció nem vonatkoztatható a diszkrét logaritmusra.
+
+A logaritmus egy 
+  
+    
+      
+        L
+        :
+        
+        (
+        
+          
+            R
+          
+          
+            +
+          
+        
+        
+        ,
+        
+        ⋅
+        
+        )
+        ⟶
+        (
+        
+          R
+        
+        ,
+        +
+        )
+      
+    
+    {\displaystyle L:\,(\mathbb {R} ^{+}\!,\,\cdot \,)\longrightarrow (\mathbb {R} ,+)}
+  
+ izomorfiasereg, és más ilyen izomorfia nincs.
+A természetes logaritmus az 
+  
+    
+      
+        L
+        :
+        t
+        ↦
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        
+          d
+        
+        x
+      
+    
+    {\displaystyle L:t\mapsto \int _{1}^{t}{\frac {1}{x}}\,\mathrm {d} x}
+  
+ integrállal kapható, ha t > 0.
+A logaritmus hatványsora: 
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        x
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            k
+            +
+            1
+          
+        
+        
+          
+            
+              x
+              
+                k
+              
+            
+            k
+          
+        
+        =
+        x
+        −
+        
+          
+            
+              x
+              
+                2
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              x
+              
+                3
+              
+            
+            3
+          
+        
+        −
+        
+          
+            
+              x
+              
+                4
+              
+            
+            4
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \ln(1+x)=\sum _{k=1}^{\infty }(-1)^{k+1}{\frac {x^{k}}{k}}=x-{\frac {x^{2}}{2}}+{\frac {x^{3}}{3}}-{\frac {x^{4}}{4}}+\dotsb }
+  
+.
+Mindezekről az összefüggésekről alább bővebben is szót ejtünk.
+
+
+== Jelölésrendszer ==
+A számításokban leggyakrabban a tízes és a kettes alapú logaritmust, valamint az e alapú ún. természetes logaritmust használják. Ezek jelölésére országonként és tudományáganként különböző rövidítések használatosak.
+Magyarországon a 10-es alapú logaritmust leggyakrabban
+
+  
+    
+      
+        
+          
+            lg
+          
+        
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle {\mbox{lg}}(x)\,}
+  
+
+jelöli (például középiskolai tankönyvekben is). Az angolszász mintára készült számológépeken a tízes alapú logaritmus jele log(x). A tízes alapú logaritmust még közönséges logaritmusnak is nevezik. Kézi számolásokhoz egyszerű használni a tízes számrendszerhez való alkalmazkodás miatt:
+
+  
+    
+      
+        
+          
+            lg
+          
+        
+        (
+        10
+        x
+        )
+        =
+        
+          
+            lg
+          
+        
+        (
+        10
+        )
+        +
+        
+          
+            lg
+          
+        
+        (
+        x
+        )
+        =
+        1
+        +
+        
+          
+            lg
+          
+        
+        (
+        x
+        )
+        .
+         
+      
+    
+    {\displaystyle {\mbox{lg}}(10x)={\mbox{lg}}(10)+{\mbox{lg}}(x)=1+{\mbox{lg}}(x).\ }
+  
+
+Így a 10-es alapú logaritmus kapcsolódik a decimális jegyek számához: a számjegyek száma az a legkisebb egész, ami szigorúan nagyobb a szám 10-es alapú logaritmusánál. Például 
+  
+    
+      
+        
+          
+            lg
+          
+        
+        1430
+        ≈
+        3
+        
+          ,
+        
+        15
+        
+      
+    
+    {\displaystyle {\mbox{lg}}1430\approx 3{,}15\,}
+  
+. A következő egész a 4, ami valóban megegyezik a számjegyek számával. A függvénytáblázatból a logaritmus törtrésze, a mantissza olvasható ki; a karakterisztikát a felhasználónak kell megadnia a szám nagyságrendje alapján. Általában egy számrendszerben a szükséges számjegyek száma aszimptotikusan egyenlő a szám megfelelő alapú logaritmusával.
+A másik gyakran használt logaritmus a természetes logaritmus, aminek az alapja az Euler-féle szám, az e. Ennek jele általában
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle \ln(x)\,}
+  
+,
+ami a latin „logarithmus naturalis” (természetes logaritmus) kifejezés rövidítése. Gyakran azonban, főleg a számítástudományban log(x) jelöli a természetes logaritmust, míg a tízes alapút log10(x). A matematikai analízisben széleskörűen használják kellemes analitikai tulajdonságai miatt. Elterjedt a statisztikában, a gazdaságtani elméletekben, a fizikában, kémiában és egyes mérnöki alkalmazásokban is.
+A kettes alapú logaritmust az információelméletben és a számítógép-tudományban használják, alkalmazkodva a kettes számrendszerhez. Az információelméletben a természetes logaritmus is előfordul. A zeneelméletben szintén eleve adva van a kettes alap, mivel egy hang és oktávjának frekvenciájának aránya 2. A cent két szomszédos, egyenletesen temperált hang frekvenciájának arányának logaritmusa 1200-zal szorozva. A fényképészetben az expozíciós időt mérik kettes alapú logaritmikus skálán.
+
+
+== Tulajdonságok ==
+Alakja:
+
+
+== Összefüggések ==
+A logaritmusfüggvény művelettartó leképezés a pozitív számok szorzással ellátott halmaza és a valós számok összeadással ellátott halmaza között. Az algebra szaknyelvén ez azt jelenti, hogy a 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        :
+         
+        (
+        0
+        ,
+        +
+        
+        ∞
+        )
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle \log _{a}:\ (0,+\!\infty )\rightarrow \mathbb {R} }
+  
+ függvény izomorfizmus a 
+  
+    
+      
+        (
+        (
+        0
+        ,
+        +
+        
+        ∞
+        )
+        ;
+        ⋅
+        )
+      
+    
+    {\displaystyle ((0,+\!\infty );\cdot )}
+  
+ és az 
+  
+    
+      
+        (
+        
+          R
+        
+        ;
+        +
+        
+        )
+      
+    
+    {\displaystyle (\mathbb {R} ;+\!)}
+  
+ csoport között. A szorzásból összeadást csinál, az osztásból kivonást, az 1-ből 0-t. Mondhatjuk, hogy a logaritmus függvény a hatványozást szorzásra, a szorzást összeadásra vezeti vissza. Tetszőleges a pozitív, nem 1 számra és x, y pozitív számra:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                x
+                y
+              
+              
+                
+                =
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                x
+                +
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                y
+              
+            
+            
+              
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                
+                  
+                    x
+                    y
+                  
+                
+              
+              
+                
+                =
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                x
+                −
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                y
+              
+            
+            
+              
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                
+                  x
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                k
+                ⋅
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                x
+              
+            
+            
+              
+                
+                  log
+                  
+                    a
+                  
+                
+                ⁡
+                
+                  
+                    x
+                    
+                      p
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      
+                        log
+                        
+                          a
+                        
+                      
+                      ⁡
+                      x
+                    
+                    p
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\log _{a}xy&=\log _{a}x+\log _{a}y\\\log _{a}{\frac {x}{y}}&=\log _{a}x-\log _{a}y\\\log _{a}x^{k}&=k\cdot \log _{a}x\\\log _{a}{\sqrt[{p}]{x}}&={\frac {\log _{a}x}{p}}\end{aligned}}}
+  
+
+Az azonosságok a logaritmus 
+  
+    
+      
+        x
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+      
+    
+    {\displaystyle x=b^{\log _{b}(x)}}
+  
+ vagy 
+  
+    
+      
+        y
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            y
+            )
+          
+        
+      
+    
+    {\displaystyle y=b^{\log _{b}(y)}}
+  
+ definíciójából helyettesítéssel származtathatók.
+Az összeg és a különbség logaritmusára ismert azonosság nem könnyíti meg a számolást:
+
+  
+    
+      
+        x
+        +
+        y
+        =
+        x
+        
+          (
+          
+            1
+            +
+            
+              
+                y
+                x
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle x+y=x\left(1+{\frac {y}{x}}\right).}
+  
+
+tehát
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        +
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          (
+          
+            1
+            +
+            
+              
+                y
+                x
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \log _{b}(x+y)=\log _{b}x+\log _{b}\left(1+{\frac {y}{x}}\right).}
+  
+
+Bármely logaritmus visszavezethető egy tetszőleges másik alapra:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        =
+        
+          
+            
+              
+                log
+                
+                  c
+                
+              
+              ⁡
+              b
+            
+            
+              
+                log
+                
+                  c
+                
+              
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}b={\frac {\log _{c}b}{\log _{c}a}}}
+  
+
+A különböző alapú logaritmusfüggvények tehát egymás konstansszorosai.
+A tudományos számológépek általában csak 10-es vagy természetes logaritmust tudnak számolni.
+Egy adott x pozitív számnak még a 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{b}x}
+  
+ logaritmusa is ismert egy ismeretlen b-re, akkor a b szám így számítható:
+
+  
+    
+      
+        b
+        =
+        
+          x
+          
+            
+              1
+              
+                
+                  log
+                  
+                    b
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b=x^{\frac {1}{\log _{b}(x)}}.}
+  
+
+
+== Analitikai tulajdonságok ==
+A logaritmus mélyebb tanulmányozása a függvény fogalmára támaszkodik. Ez egy olyan reláció, ami értelmezési tartományának minden eleméhez hozzárendel egy, és csakis egy értéket. Ezekből az értékekből áll a függvény értékkészlete. A valós logaritmus, mint függvény a pozitív számokon értelmezett, és értéke befutja a teljes valós számkört.
+Ahhoz, hogy a logaritmusfüggvény jóldefiniált legyen, meg kell mutatni, hogy a
+
+  
+    
+      
+        
+          b
+          
+            x
+          
+        
+        =
+        y
+        
+      
+    
+    {\displaystyle b^{x}=y\,}
+  
+
+egyenlet megoldható, és megoldása egyértelmű, ha b és y is pozitív, és b nem egyenlő eggyel. Ez a Bolzano-tétellel bizonyítható. Eszerint egy folytonos függvény nem ugorhat át egy értéket; ha azon az intervallumon, ahol folytonos, felveszi az a és a b értékeket, akkor minden olyan értéket felvesz, ami a és b között van.
+Ez megmutatható az 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=b^{x}}
+  
+ függvényre a fenti kikötésekkel. Mivel f akármilyen kicsi és akármilyen nagy pozitív értékeket is felvesz, így minden y > 0 számhoz található 
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+      
+    
+    {\displaystyle f(x_{0})}
+  
+ és 
+  
+    
+      
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle f(x_{1})}
+  
+ alkalmas x0-ra és x1-re. Emiatt a Bolzano-tétel szerint 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        y
+      
+    
+    {\displaystyle f(x)=y}
+  
+ megoldható. Továbbá, mivel f szigorúan monoton nő, ha b 1-nél nagyobb, és szigorúan monoton csökken, ha b 1-nél kisebb, a megoldás egyértelmű.
+Ez az egyértelmű megoldás y b alapú logaritmusa, 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \log _{b}(y)}
+  
+. A fenti kikötéseknek megfelelő b-vel, mint alappal az y-hoz annak logaritmusát hozzárendelő függvény a logaritmusfüggvény, vagy logaritmus.
+A 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{b}(x)}
+  
+ függvény alapvető jellemzője a fenti szorzatképlet:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y).}
+  
+
+Pontosabban, ha b > 1, akkor a logaritmus az egyetlen monoton növő függvény, ami eleget tesz az f(b) = 1 és 
+  
+    
+      
+        f
+        (
+        x
+        y
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        f
+        (
+        y
+        )
+      
+    
+    {\displaystyle f(xy)=f(x)+f(y)}
+  
+ függvényegyenlet-rendszernek.
+
+
+=== Inverz függvény ===
+
+A hatvány logaritmusára vonatkozó képlet alapján minden x számra
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          (
+          
+            b
+            
+              x
+            
+          
+          )
+        
+        =
+        x
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        b
+        )
+        =
+        x
+        .
+      
+    
+    {\displaystyle \log _{b}\left(b^{x}\right)=x\log _{b}(b)=x.}
+  
+
+Szavakkal: a b alapot x-edik hatványra emelve és ennek b alapú logaritmusát véve visszakapjuk a b számot.
+Megfordítva, ha y pozitív szám, és
+
+  
+    
+      
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            y
+            )
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle b^{\log _{b}(y)}=y}
+  
+
+akkor először a logaritmust véve és erre emelve az alapot visszakapjuk az y számot. Tehát bármelyik műveletet végezzük előbb és a másikat később, mindannyiszor visszakapjuk az eredeti számot. Emiatt a b alapú logaritmus a b alapú hatványfüggvény inverz függvénye.
+Az inverz függvények közeli kapcsolatban állnak az eredeti függvénnyel. Grafikonjuk megkapható az x és az y koordináták felcserélésével, azaz az x = y egyenesre való tükrözéssel. A hatványfüggvény grafikonjának (t, u = bt) pontja az (u, t = logbu) pontot adja a logaritmus grafikonján, és megfordítva. Emiatt logb(x) tart a végtelenbe, ha x tart a végtelenbe, hogyha b nagyobb 1-nél. Ekkor logb(x) monoton nő. Ha b < 1, akkor a logb(x) függvény a mínusz végtelenhez tart. Ha x a nullához tart, és b > 1, akkor a logaritmus a mínusz végtelenhez tart; ha pedig b < 1, akkor végtelenhez tart.
+
+
+=== Derivált és primitív függvény ===
+
+A függvények egyes analitikai tulajdonságai átvihetők az inverz függvényre. Ilyen tulajdonság a folytonosság és a differenciálhatóság. Így, mivel 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=b^{x}}
+  
+ deriválható, ezért 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \log _{b}(y)}
+  
+ is differenciálható. Szavakkal: egy folytonos függvény ott deriválható, ahol nincs töréspontja. Továbbá, mivel 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ deriváltja 
+  
+    
+      
+        ln
+        ⁡
+        (
+        b
+        )
+        ⋅
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle \ln(b)\cdot b^{x}}
+  
+ az exponenciális függvény tulajdonsága alapján, ezért a láncszabály szerint 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{b}(x)}
+  
+ deriváltja:
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dx}}\log _{b}(x)={\frac {1}{x\ln(b)}}.}
+  
+
+Így a b alapú logaritmusfüggvény 
+  
+    
+      
+        (
+        x
+        ,
+         
+        l
+        o
+        
+          g
+          
+            b
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle (x,\ log_{b}(x))}
+  
+ pontbeli érintőjének meredeksége 
+  
+    
+      
+        1
+        
+          /
+        
+        (
+        x
+        ln
+        ⁡
+        (
+        b
+        )
+        )
+      
+    
+    {\displaystyle 1/(x\ln(b))}
+  
+. Továbbá 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \ln(x)}
+  
+ deriváltja 
+  
+    
+      
+        1
+        
+          /
+        
+        x
+      
+    
+    {\displaystyle 1/x}
+  
+, eszerint 
+  
+    
+      
+        1
+        
+          /
+        
+        x
+      
+    
+    {\displaystyle 1/x}
+  
+ határozatlan integrálja 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        +
+        c
+      
+    
+    {\displaystyle \ln(x)+c}
+  
+. Az általánosított 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ függvény argumentummal:
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        (
+        f
+        (
+        x
+        )
+        )
+        =
+        
+          
+            
+              
+                f
+                ′
+              
+              (
+              x
+              )
+            
+            
+              f
+              (
+              x
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dx}}\ln(f(x))={\frac {f'(x)}{f(x)}}.}
+  
+
+A jobb oldalon álló hányados 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ logaritmikus deriváltja. Az 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ derivált kiszámítása 
+  
+    
+      
+        ln
+        ⁡
+        (
+        f
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle \ln(f(x))}
+  
+ felhasználásával logaritmikus differenciálás néven ismert. Az 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \ln(x)}
+  
+ primitív függvénye:
+
+  
+    
+      
+        ∫
+        ln
+        ⁡
+        (
+        x
+        )
+        
+        d
+        x
+        =
+        x
+        ln
+        ⁡
+        (
+        x
+        )
+        −
+        x
+        +
+        C
+        .
+      
+    
+    {\displaystyle \int \ln(x)\,dx=x\ln(x)-x+C.}
+  
+
+Más alapú logaritmusokra a logaritmus alapváltásával egy szorzótényező jelenik meg.
+
+
+=== A természetes logaritmus mint integrál ===
+
+Ha t pozitív, akkor a természetes logaritmusa megegyezik 1/x dx integráljával 1-től t-ig:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        t
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle \ln(t)=\int _{1}^{t}{\frac {1}{x}}\,dx.}
+  
+
+Más szavakkal, 
+  
+    
+      
+        ln
+        ⁡
+        (
+        t
+        )
+      
+    
+    {\displaystyle \ln(t)}
+  
+ megegyezik az x tengely és az 1/x grafikonja között 1-től t-ig terjedő területtel. Ez az analízis alaptételének és annak a következménye, hogy 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \ln(x)}
+  
+ deriváltja 1/x. Az egyenlet jobb oldala a természetes logaritmus definíciója lehet. A logaritmus szorzásra és hatványozásra vonatkozó összefüggései is származtathatók ebből. Például az 
+  
+    
+      
+        1
+        =
+        ln
+        ⁡
+        (
+        t
+        u
+        )
+        =
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        ln
+        ⁡
+        (
+        u
+        )
+      
+    
+    {\displaystyle 1=\ln(tu)=\ln(t)+\ln(u)}
+  
+ szorzatképlet:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        t
+        u
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+            u
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+         
+        
+          
+            
+              
+                =
+              
+              
+                (
+                1
+                )
+              
+            
+          
+        
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+        +
+        
+          ∫
+          
+            t
+          
+          
+            t
+            u
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+         
+        
+          
+            
+              
+                =
+              
+              
+                (
+                2
+                )
+              
+            
+          
+        
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        
+          ∫
+          
+            1
+          
+          
+            u
+          
+        
+        
+          
+            1
+            w
+          
+        
+        
+        d
+        w
+        =
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        ln
+        ⁡
+        (
+        u
+        )
+        .
+      
+    
+    {\displaystyle \ln(tu)=\int _{1}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(1)}{=}}\int _{1}^{t}{\frac {1}{x}}\,dx+\int _{t}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(2)}{=}}\ln(t)+\int _{1}^{u}{\frac {1}{w}}\,dw=\ln(t)+\ln(u).}
+  
+
+Az első egyenlet két részre osztja az integrált, míg a második elvégzi az 
+  
+    
+      
+        1
+        =
+        w
+        =
+        x
+        
+          /
+        
+        t
+      
+    
+    {\displaystyle 1=w=x/t}
+  
+ helyettesítést. A bal oldali területet felfelé megnyújtjuk t-szeresére, és vízszintesen összenyomjuk t-edrészére, akkor a terület területe változatlan. Megfelelően eltolva újra illeszkedni fog az 
+  
+    
+      
+        1
+        =
+        f
+        (
+        x
+        )
+        =
+        1
+        
+          /
+        
+        x
+      
+    
+    {\displaystyle 1=f(x)=1/x}
+  
+ függvény grafikonjához. Emiatt a bal terület, ami 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ integrálja t-től tu-ig, ugyanaz, mint 1 integrálja u-ig. Ez a második egyenlőséget geometriailag demonstrálja.
+
+A hatványra vonatkozó 
+  
+    
+      
+        1
+        =
+        ln
+        ⁡
+        (
+        
+          t
+          
+            r
+          
+        
+        )
+        =
+        r
+        ln
+        ⁡
+        (
+        t
+        )
+      
+    
+    {\displaystyle 1=\ln(t^{r})=r\ln(t)}
+  
+ összefüggés hasonlóan bizonyítható:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        
+          t
+          
+            r
+          
+        
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            
+              t
+              
+                r
+              
+            
+          
+        
+        
+          
+            1
+            x
+          
+        
+        d
+        x
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            
+              w
+              
+                r
+              
+            
+          
+        
+        
+          (
+          
+            r
+            
+              w
+              
+                r
+                −
+                1
+              
+            
+            
+            d
+            w
+          
+          )
+        
+        =
+        r
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            w
+          
+        
+        
+        d
+        w
+        =
+        r
+        ln
+        ⁡
+        (
+        t
+        )
+        .
+      
+    
+    {\displaystyle \ln(t^{r})=\int _{1}^{t^{r}}{\frac {1}{x}}dx=\int _{1}^{t}{\frac {1}{w^{r}}}\left(rw^{r-1}\,dw\right)=r\int _{1}^{t}{\frac {1}{w}}\,dw=r\ln(t).}
+  
+
+ahol a második egyenletben a változók helyettesítése: 
+  
+    
+      
+        1
+        =
+        w
+        =
+        
+          x
+          
+            1
+            
+              /
+            
+            r
+          
+        
+      
+    
+    {\displaystyle 1=w=x^{1/r}}
+  
+.
+A természetes számok reciprokainak összege a harmonikus sor:
+
+  
+    
+      
+        1
+        +
+        
+          
+            1
+            2
+          
+        
+        +
+        
+          
+            1
+            3
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            n
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle 1+{\frac {1}{2}}+{\frac {1}{3}}+\cdots +{\frac {1}{n}}=\sum _{k=1}^{n}{\frac {1}{k}},}
+  
+
+szorosan kapcsolódik a
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            k
+          
+        
+        −
+        ln
+        ⁡
+        (
+        n
+        )
+        ,
+      
+    
+    {\displaystyle \sum _{k=1}^{n}{\frac {1}{k}}-\ln(n),}
+  
+
+különbséghez. Ha n tart a végtelenbe, akkor a különbség az Euler–Mascheroni-konstanshoz konvergál. Ez segít elemezni az algoritmusok bonyolultságát.
+A logaritmus egy másik integrál reprezentációja:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        −
+        
+          lim
+          
+            ϵ
+            →
+            0
+          
+        
+        
+          ∫
+          
+            ϵ
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              d
+              t
+            
+            t
+          
+        
+        
+          (
+          
+            
+              e
+              
+                −
+                x
+                t
+              
+            
+            −
+            
+              e
+              
+                −
+                t
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \ln(x)=-\lim _{\epsilon \to 0}\int _{\epsilon }^{\infty }{\frac {dt}{t}}\left(e^{-xt}-e^{-t}\right)}
+  
+
+Ez azzal igazolható, hogy értéke megegyezik x = 1-ben, és ugyanaz a deriváltja.
+
+
+=== Transzcendencia ===
+Az 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=f(x)}
+  
+ egyváltozós valós függvényt algebrai függvénynek nevezzük, ha kielégíti a 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        (
+        x
+        )
+        
+          y
+          
+            n
+          
+        
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+          y
+          
+            n
+            −
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            0
+          
+        
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle a_{n}(x)y^{n}+a_{n-1}(x)y^{n-1}+\cdots +a_{0}(x)=0}
+  
+ függvényegyenletet, ahol az egyes  
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle a_{i}(x)}
+  
+-ek az x változó polinomjai. Azokat a valós függvényeket, amelyek nem algebraiak, transzcendens függvénynek nevezzük. Nevezetes tény, hogy a logaritmusfüggvény transzcendens.
+
+
+== Kiszámítása ==
+Bizonyos esetekben a logaritmus könnyen számítható, például lg 1000 = 3. Általában hatványsorok vagy a számtani-mértani közép felhasználásával számítják. Használhatók adott pontosságú táblázatok is a logaritmushoz. A Newton-módszer szintén alkalmazható, mivel inverz függvénye, az exponenciális függvény gyorsan számítható. Ha csak a bitenkénti eltolás és az összeadás érhető el alapműveletként, akkor keresőtáblák és CORDIC-szerű módszerek használhatók a logaritmus számítására. A bináris logaritmus algoritmus a kettes alapú logaritmust számolja sorozatos négyzetre emeléssel, ami ezt a kapcsolatot használja ki:
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        =
+        2
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        x
+        )
+        .
+        
+      
+    
+    {\displaystyle \log _{2}(x^{2})=2\log _{2}(x).\,}
+  
+
+
+=== Hatványsorok ===
+
+Minden 0 < z < 2 valós számra:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        (
+        z
+        −
+        1
+        )
+        −
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  2
+                
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  3
+                
+              
+            
+            3
+          
+        
+        −
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  4
+                
+              
+            
+            4
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \ln(z)=(z-1)-{\frac {(z-1)^{2}}{2}}+{\frac {(z-1)^{3}}{3}}-{\frac {(z-1)^{4}}{4}}+\cdots }
+  
+
+Mivel ez a logaritmus Taylor-sora, ezért ez értelmezhető úgy is, hogy a
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+              
+            
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+                −
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+              
+              
+            
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+                −
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          3
+                        
+                      
+                    
+                    3
+                  
+                
+              
+            
+            
+              
+                ⋮
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lllll}(z-1)&&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&+&{\frac {(z-1)^{3}}{3}}\\\vdots &\end{array}}}
+  
+
+függvények egyre jobban megközelítik a természetes logaritmust. Például, ha z = 1,5, akkor a harmadik approximáció értéke 0,4167, ami 0,011-del nagyobb, mint ln(1,5) ~ 0,405465. A sorral a természetes logaritmus akármennyire megközelíthető, ha elég sok tagot összegezünk. Az elemi analízisben ln(z)-t tekintik a sor határértékének. Azonban a konvergencia nem érvényes mindenütt az értelmezési tartományban, ugyanis ez a sorozat a természetes logaritmus z = 1 körüli Taylor-sora, ami nem konvergálhat nagyobb sugarú körben, mert z = 0-ban a logaritmus nincs értelmezve. A Taylor-sor z = 1, |z| < 1-re nyújt közelítést:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        z
+        )
+        =
+        z
+        −
+        
+          
+            
+              z
+              
+                2
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              z
+              
+                3
+              
+            
+            3
+          
+        
+        ⋯
+        ≈
+        z
+        .
+      
+    
+    {\displaystyle \ln(1+z)=z-{\frac {z^{2}}{2}}+{\frac {z^{3}}{3}}\cdots \approx z.}
+  
+
+Például a z = 0,1-re az első közelítés ln(1,1) ≈ 0,1, aminek hibája kevesebb, mint 5%, hiszen ln(1,1) ~ 0,0953.
+
+
+=== Gyorsabban konvergáló sorok ===
+Egy másik ismert sor az area hiperbolikus tangens függvényen alapul:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        ⋅
+        arth
+        
+        
+          
+            
+              z
+              −
+              1
+            
+            
+              z
+              +
+              1
+            
+          
+        
+        =
+        2
+        
+          (
+          
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            +
+            
+              
+                1
+                3
+              
+            
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        z
+                        −
+                        1
+                      
+                      
+                        z
+                        +
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+              
+                3
+              
+            
+            +
+            
+              
+                1
+                5
+              
+            
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        z
+                        −
+                        1
+                      
+                      
+                        z
+                        +
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+              
+                5
+              
+            
+            +
+            ⋯
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \ln(z)=2\cdot \operatorname {arth} \,{\frac {z-1}{z+1}}=2\left({\frac {z-1}{z+1}}+{\frac {1}{3}}{\left({\frac {z-1}{z+1}}\right)}^{3}+{\frac {1}{5}}{\left({\frac {z-1}{z+1}}\right)}^{5}+\cdots \right),}
+  
+
+minden valós z > 0 számra. A szigma jelöléssel
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              2
+              n
+              +
+              1
+            
+          
+        
+        
+          
+            (
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+            n
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(z)=2\sum _{n=0}^{\infty }{\frac {1}{2n+1}}\left({\frac {z-1}{z+1}}\right)^{2n+1}.}
+  
+
+Ez a sor a Taylor-sorból származtatható, de gyorsabban konvergál annál, különösen, ha z közel van 1-hez. Ha z = 1,5, akkor az első három tag által a logaritmusra adott közelítés hibája megközelítően 
+  
+    
+      
+        3
+        ⋅
+        
+          10
+          
+            −
+            6
+          
+        
+      
+    
+    {\displaystyle 3\cdot 10^{-6}}
+  
+. A gyors konvergencia tovább gyorsítható: Legyen y ≈ ln(z) egy pontatlan közelítés. Legyen 
+  
+    
+      
+        A
+        =
+        
+          
+            z
+            
+              exp
+              ⁡
+              (
+              y
+              )
+            
+          
+        
+        
+      
+    
+    {\displaystyle A={\frac {z}{\exp(y)}}\,}
+  
+. Ekkor z logaritmusa: 
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        y
+        +
+        ln
+        ⁡
+        (
+        A
+        )
+        
+      
+    
+    {\displaystyle \ln(z)=y+\ln(A)\,}
+  
+. Minél jobb a kezdeti y közelítés, annál közelebb lesz A 1-hez. Ez az A az exponenciális hatványsorral számítható, ami gyorsan konvergál, ha az adott y nem túl nagy. A nagyobb számok logaritmusa kisebb számok logaritmusának összegére bontható, például ha 
+  
+    
+      
+        z
+        =
+        a
+        ⋅
+        
+          10
+          
+            b
+          
+        
+      
+    
+    {\displaystyle z=a\cdot 10^{b}}
+  
+, akkor 
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        ln
+        ⁡
+        (
+        a
+        )
+        +
+        b
+        ⋅
+        ln
+        ⁡
+        (
+        10
+        )
+      
+    
+    {\displaystyle \ln(z)=\ln(a)+b\cdot \ln(10)}
+  
+.
+Az egészek logaritmusa egy rokon módszerrel számolható. A fenti sor alapján:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        n
+        +
+        1
+        )
+        =
+        ln
+        ⁡
+        (
+        n
+        )
+        +
+        2
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              2
+              k
+              +
+              1
+            
+          
+        
+        
+          
+            (
+            
+              
+                1
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+            k
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(n+1)=\ln(n)+2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {1}{2n+1}}\right)^{2k+1}.}
+  
+
+Ha az n szám logaritmusa ismert, akkor ez alapján számolható 
+  
+    
+      
+        log
+        ⁡
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle \log(n+1)}
+  
+.
+
+
+=== A számtani-mértani közepek módszere ===
+A számtani-mértani közepek módszere egy viszonylag pontos közelítést ad a természetes logaritmusra. A következő képlet 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \ln(x)}
+  
+-et 
+  
+    
+      
+        
+          2
+          
+            −
+            p
+          
+        
+      
+    
+    {\displaystyle 2^{-p}}
+  
+ pontossággal (vagy p jegy pontossággal) közelíti (Carl Friedrich Gauss nyomán):
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        ≈
+        
+          
+            π
+            
+              2
+              M
+              (
+              1
+              ,
+               
+              
+                2
+                
+                  2
+                  −
+                  m
+                
+              
+              
+                /
+              
+              x
+              )
+            
+          
+        
+        −
+        m
+        ln
+        ⁡
+        2
+      
+    
+    {\displaystyle \ln(x)\approx {\frac {\pi }{2M(1,\ 2^{2-m}/x)}}-m\ln 2}
+  
+
+ahol 
+  
+    
+      
+        M
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle M(x,y)}
+  
+ x és y számtani-mértani közepét jelöli. Ez úgy kapható, hogy először kiszámoljuk a pozitív x és y számok számtani és mértani közepét. Ezután ezt ismételgetjük a megkapott két számmal. Ezek gyorsan konvergálnak egy közös határértékhez, az 
+  
+    
+      
+        M
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle M(x,y)}
+  
+ számtani-mértani középhez. Az m szám a pontosságot biztosítja. Nagyobb m-ekhez az 
+  
+    
+      
+        M
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle M(x,y)}
+  
+ pontosabb értéke kell, de az eredmény is pontosabb. A π és az ln(2) konstansok más módszerekkel számolhatók.
+
+
+=== Határértékek Hurwitz nyomán ===
+A természetes logaritmusra teljesül:
+
+  
+    
+      
+        ln
+        ⁡
+        x
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        n
+        
+          (
+          
+            
+              
+                x
+                
+                  n
+                
+              
+            
+            −
+            1
+          
+          )
+        
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        n
+        
+          (
+          
+            1
+            −
+            
+              
+                1
+                
+                  x
+                  
+                    n
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \ln x=\lim _{n\to \infty }n\left({\sqrt[{n}]{x}}-1\right)=\lim _{n\to \infty }n\left(1-{\frac {1}{\sqrt[{n}]{x}}}\right)}
+  
+
+ekvivalensen
+
+  
+    
+      
+        ln
+        ⁡
+        x
+        =
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            
+              
+                x
+                
+                  h
+                
+              
+              −
+              1
+            
+            h
+          
+        
+        =
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            1
+            
+              t
+              
+                1
+                −
+                h
+              
+            
+          
+        
+         
+        d
+        t
+      
+    
+    {\displaystyle \ln x=\lim _{h\to 0}{\frac {x^{h}-1}{h}}=\lim _{h\to 0}\int _{1}^{x}{\frac {1}{t^{1-h}}}\ dt}
+  
+
+amit a L’Hospital-szabály is megerősít.
+Ezen alapulnak az Adolf Hurwitz által a 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{n}}
+  
+ illetve 
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle b_{n}}
+  
+ sorozatok a természetes logaritmussal definiált határértékei
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  
+                    n
+                  
+                
+              
+              
+                
+                =
+                
+                  2
+                  
+                    n
+                  
+                
+                (
+                
+                  x
+                  
+                    n
+                  
+                
+                −
+                1
+                )
+              
+            
+            
+              
+                
+                  b
+                  
+                    n
+                  
+                
+              
+              
+                
+                =
+                
+                  2
+                  
+                    n
+                  
+                
+                (
+                1
+                −
+                1
+                
+                  /
+                
+                
+                  x
+                  
+                    n
+                  
+                
+                )
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}a_{n}&=2^{n}(x_{n}-1)\\b_{n}&=2^{n}(1-1/x_{n}),\end{aligned}}}
+  
+
+ahol
+
+  
+    
+      
+        
+          x
+          
+            n
+            +
+            1
+          
+        
+        =
+        
+          
+            
+              x
+              
+                n
+              
+            
+          
+        
+        
+        
+          ahol
+        
+        
+        
+          x
+          
+            0
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle x_{n+1}={\sqrt {x_{n}}}\quad {\text{ahol}}\quad x_{0}=x}
+  
+
+Mivel 
+  
+    
+      
+        1
+        −
+        
+          
+            
+              1
+              x
+            
+          
+        
+        ≤
+        
+          b
+          
+            n
+          
+        
+        ≤
+        
+          a
+          
+            n
+          
+        
+        <
+        x
+        −
+        1
+      
+    
+    {\displaystyle 1-{\tfrac {1}{x}}\leq b_{n}\leq a_{n}<x-1}
+  
+ és mert 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{n}}
+  
+ monoton csökken és 
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle b_{n}}
+  
+ monoton nő, azért mindkét sorozat konvergens. Mivel 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        =
+        
+          b
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{n}=b_{n}x_{n}}
+  
+ és 
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        →
+        1
+      
+    
+    {\displaystyle x_{n}\rightarrow 1}
+  
+, adódik az egyenlőség mindkét határértékre:
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          b
+          
+            n
+          
+        
+        =
+        ln
+        ⁡
+        x
+        .
+      
+    
+    {\displaystyle \lim _{n\to \infty }a_{n}=\lim _{n\to \infty }b_{n}=\ln x.}
+  
+
+Azonban az 
+  
+    
+      
+        ln
+        ⁡
+        x
+      
+    
+    {\displaystyle \ln x}
+  
+ kiszámítására a vészes kiegyszerűsödés (kivonáskor elvesző pontosság) miatt gyakorlatilag alkalmatlan.
+
+
+=== Egyes bináris jegyek kiszámítása ===
+Egy másik lehetőség a logaritmus kiszámítására, ha a számításokat kettes számrendszerben végezzük, és a jegyeket egymás után rendre számítjuk. Ez az eljárás egyszerűen implementálható, mivel elkerüli az időigényes osztásokat, és könnyen alkalmazható a fixpontos aritmetikához is.
+A kettes alapú logaritmus kiszámításához először leszámolják a kettes számrendszerbeli jegyeket, a számot 1 és 2 közé normálva. A művelet csak kettővel való osztásokat vagy szorzásokat igényel, ami binárisan nagyon gyors művelet. (Ezek számát meg kell jegyezni.)
+Ha az adott szám x, akkor logaritmusa ábrázolható, mint:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  log
+                  
+                    2
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+              
+                
+                =
+                0
+                ,
+                
+                  b
+                  
+                    1
+                  
+                
+                
+                  b
+                  
+                    2
+                  
+                
+                
+                  b
+                  
+                    3
+                  
+                
+                ⋯
+                =
+                
+                  ∑
+                  
+                    k
+                    >
+                    0
+                  
+                
+                
+                  b
+                  
+                    k
+                  
+                
+                
+                  2
+                  
+                    −
+                    k
+                  
+                
+                
+                   ahol 
+                
+                
+                  b
+                  
+                    k
+                  
+                
+                ∈
+                {
+                0
+                ,
+                1
+                }
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\log _{2}(x)&=0,b_{1}b_{2}b_{3}\cdots =\sum _{k>0}b_{k}2^{-k}{\text{ ahol }}b_{k}\in \{0,1\}\end{aligned}}}
+  
+
+amiből
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  log
+                  
+                    2
+                  
+                
+                ⁡
+                (
+                
+                  x
+                  
+                    2
+                  
+                
+                )
+              
+              
+                
+                =
+                
+                  b
+                  
+                    1
+                  
+                
+                
+                  ,
+                
+                
+                  b
+                  
+                    2
+                  
+                
+                
+                  b
+                  
+                    3
+                  
+                
+                ⋯
+                
+                
+                   mivel 
+                
+                
+                log
+                ⁡
+                (
+                
+                  x
+                  
+                    2
+                  
+                
+                )
+                =
+                2
+                log
+                ⁡
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\log _{2}(x^{2})&=b_{1}{,}b_{2}b_{3}\cdots \qquad {\text{ mivel }}\quad \log(x^{2})=2\log x\end{aligned}}}
+  
+
+Az x szám négyzetre emelése tehát egy jeggyel balra tolja a kettes logaritmust. A keletkező szám egészrésze a keresett logaritmusérték következő bináris jegye. Ez a jegy akkor 1, amikor x2 ≥ 2. Ha ez a feltétel teljesül, akkor x-et felezéssel újra normálják, ami nincs hatással a további jegyekre.
+Az algoritmus pszeudokódja:
+
+INPUT  1 ≤ x < 2
+OUTPUT A log2(x) törtrészének bi bitjei
+
+i ← 0
+LOOP
+   i ← i + 1
+   x ← x2          // A négyzetre emelés a logaritmusértéket megkettőzi. 
+   IF x ≥ 2 THEN
+      x ← x / 2    // A felezést egy bites eltolással lehet megvalósítani.  
+      bi ← 1       // bit 1
+   ELSE
+      bi ← 0       // bit 0
+   END IF
+END LOOP
+
+A kezdeti normálás során alkalmazott kettővel való szorzások számát utólag ki kell vonni a logaritmusértékből, vagy ha osztásokra volt szükség, hozzá kell ahhoz adni. (Mert egy szám kettővel való szorzása a logaritmusnál 1 hozzáadásával egyenértékű.)
+(Az áttekinthetőség kedvéért a pszeudokód nem tartalmazza, de természetesen a ciklusból ki kell lépni; vagy adott pontosság elérésekor, vagy ami kézenfekvőbb, előre meghatározott számú logaritmusjegy létrehozásakor.)
+
+
+=== Analóg számológép ===
+
+A logaritmus analóg számológéppel is kiszámítható. Az eredmény az Ua feszültség, ami a bemeneti Ue feszültség logaritmusa. Ez a dióda áram-feszültség exponenciális karakterisztikáját használja ki. A mellékelt ábra a logaritmáló elvi felépítését mutatja be, egy D diódával és egy R ellenállással.
+
+
+== Negatív és komplex számok logaritmusa ==
+
+A logaritmus általánosítható minden, nullától különböző komplex számra, így a negatív számokra is. Adott z komplex szám természetes logaritmusa az a komplex szám, ha 
+  
+    
+      
+        
+          e
+          
+            a
+          
+        
+        =
+        z
+        .
+        
+      
+    
+    {\displaystyle e^{a}=z.\,}
+  
+ A más alapú logaritmusok ebből számíthatók. Ez azonban nem egyértelmű.
+Nézzük meg egy 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ komplex szám logaritmusát: 
+  
+    
+      
+        log
+        ⁡
+        (
+        z
+        )
+        =
+        ln
+        ⁡
+        (
+        r
+        )
+        +
+        i
+        ⋅
+        arg
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \log(z)=\ln(r)+i\cdot \arg(z)}
+  
+ ahol a valós szám, 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ a 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ komplex szám abszolútértéke, mely a 
+  
+    
+      
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle r={\sqrt {x^{2}+y^{2}}}}
+  
+ képlettel számítható ki, és 
+  
+    
+      
+        arg
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \arg(z)}
+  
+ pedig a 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ és a valós tengely pozitív része által bezárt szög (radiánban). Az argumentum nem egyértelmű; ha 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ argumentuma a 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ komplex számnak, akkor 
+  
+    
+      
+        φ
+        +
+        2
+        π
+      
+    
+    {\displaystyle \varphi +2\pi }
+  
+ és 
+  
+    
+      
+        φ
+        −
+        2
+        π
+      
+    
+    {\displaystyle \varphi -2\pi }
+  
+ is argumentuma z-nek, ugyanis a 2π hozzáadása vagy kivonása a komplex számsík egy 360 fokos forgatásnak felel meg, ami minden komplex számot önmagára képez. Az argumentum főértéke az a φ, amire 
+  
+    
+      
+        −
+        π
+        <
+        φ
+        ≤
+        π
+      
+    
+    {\displaystyle -\pi <\varphi \leq \pi }
+  
+. Jelölése 
+  
+    
+      
+        Arg
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \operatorname {Arg} (z)}
+  
+. (Egyes szerzők ehelyett a 
+  
+    
+      
+        0
+        ≤
+        φ
+        <
+        2
+        π
+      
+    
+    {\displaystyle 0\leq \varphi <2\pi }
+  
+ megkötést használják.)
+A komplex szinusz és koszinusz, vagy a komplex exponenciális függvény felhasználásával r-re és φ-re rendre a következők teljesülnek:
+
+  
+    
+      
+        
+          
+            
+              
+                z
+              
+              
+                =
+              
+              
+                r
+                
+                  (
+                  
+                    cos
+                    ⁡
+                    φ
+                    +
+                    i
+                    sin
+                    ⁡
+                    φ
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                r
+                
+                  (
+                  
+                    cos
+                    ⁡
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                    +
+                    i
+                    sin
+                    ⁡
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                r
+                
+                  e
+                  
+                    i
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                
+                  e
+                  
+                    ln
+                    ⁡
+                    (
+                    r
+                    )
+                  
+                
+                
+                  e
+                  
+                    i
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                
+                  e
+                  
+                    ln
+                    ⁡
+                    (
+                    r
+                    )
+                    +
+                    i
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                
+                =
+                
+                  e
+                  
+                    
+                      a
+                      
+                        k
+                      
+                    
+                  
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lll}z&=&r\left(\cos \varphi +i\sin \varphi \right)\\&=&r\left(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )\right)\\&=&re^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)}e^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)+i(\varphi +2k\pi )}=e^{a_{k}},\end{array}}}
+  
+
+ahol 
+  
+    
+      
+        ln
+        ⁡
+        (
+        r
+        )
+      
+    
+    {\displaystyle \ln(r)}
+  
+ a valós természetes logaritmus, 
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle a_{k}}
+  
+ a 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ komplex logaritmusa, és 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ tetszőleges egész.
+Innen következik, hogy e a-adik hatványa z, ha
+
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+        =
+        ln
+        ⁡
+        (
+        r
+        )
+        +
+        i
+        (
+        φ
+        +
+        2
+        k
+        π
+        )
+        ,
+        
+      
+    
+    {\displaystyle a_{k}=\ln(r)+i(\varphi +2k\pi ),\quad }
+  
+
+ahol φ a z argumentumának főértéke, és k tetszőleges egész. Minden ilyen a érték logaritmusa z-nek. Ezekből végtelen sok van, szemben az egyértelmű valós logaritmussal. A logaritmus egyenletei erre a végtelen értékű logaritmusra megmaradnak. Az 
+  
+    
+      
+        Arg
+        ⁡
+        (
+        z
+        )
+        =
+        a
+      
+    
+    {\displaystyle \operatorname {Arg} (z)=a}
+  
+-val definiált érték a logaritmus főértéke, 
+  
+    
+      
+        Log
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \operatorname {Log} (z)}
+  
+. A pozitív számok argumentumának főértéke 0, így a komplex logaritmus főértéke valós szám, és megegyezik a valós logaritmussal. A főértékre szorítkozva azonban elvesznek az azonosságok, mert az egyenlőség lehet, hogy a logaritmus egy másik értékét választva teljesülne.
+A jobbra lent látható kép a természetes logaritmus főágát mutatja be. A negatív oldalon a szín az argumentum ugrása miatt változik meg hirtelen. Ez csak azzal kerülhető el, hogy az argumentum nagyságára nem teszünk kikötést, de ekkor visszakapjuk a végtelen értékű logaritmust. Habár a negatív számok logaritmusa is értelmezett a komplex számsíkon, a negatív számok logaritmusának nincs főértéke.
+
+Egy komplex szám alapú logaritmust pedig kiszámíthatunk az előbbi összefüggések alapján: 
+  
+    
+      
+        
+          log
+          
+            w
+          
+        
+        ⁡
+        (
+        z
+        )
+        =
+        
+          
+            
+              log
+              ⁡
+              (
+              z
+              )
+            
+            
+              log
+              ⁡
+              (
+              w
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \log _{w}(z)={\frac {\log(z)}{\log(w)}}}
+  
+, ahol 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ és 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ komplex szám.
+Negatív számok logaritmusa kiszámítható az előző összefüggésekkel, ugyanis minden valós szám egyben komplex szám is.
+
+
+== Más exponenciális függvények inverzei ==
+A matematikában több részterületen is használják a hatványozást, így az inverz függvények is szóba kerülnek. Például a mátrixok hatványozásának egyik inverz függvénye a többértékű mátrixlogaritmus. Egy másik példa a p-adikus számokon értelmezett p-adikus logaritmus, ami a p-adikus exponenciális inverze. Mindezeket a valós Taylor-sor alapján definiálják.
+A differenciálgeometriában egy exponenciális leképezés egy sokaság egy pontjabeli érintőteret a pont környezetére képezi. Ennek inverzét szintén logaritmikus leképezésnek nevezik.
+A véges csoportok körében egy elem hatványa az elem önmagával való szorzásával kapható meg. Mivel véges csoportban az elemek rendje véges, negatív kitevőkre nincs szükség, mivel az elemek inverze is előáll pozitív kitevős hatványként. Az x csoportelem b csoportelem alapú diszkrét logaritmusa az az egész n szám, ami megoldja az
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle b^{n}=x}
+  
+
+egyenletet. Jelen ismereteink szerint míg a hatványozás véges csoportokban gyorsan elvégezhető, addig a diszkrét logaritmus bizonyos csoportokban nehezen számítható. Ezt az aszimmetriát kihasználják a nyilvános kulcsú titkosírásban, például a Diffie–Hellman-kulcscsere eljárásban, ami lehetővé teszi a titkosírás kulcsának cseréjét nyilvános csatornán. A Zech-féle logaritmus véges testek multiplikatív csoportján értelmezett diszkrét logaritmus.
+A további logaritmusszerű inverz függvények közé tartoznak az iterált logaritmus, a ln(ln(x)) kettős logaritmus, ami a kettős exponenciális inverze; a hiper- vagy szuperlogaritmus, ami a tetráció inverze; a Lambert-féle W-függvény, ami a f(w) = wew inverze; és a logit, ami a logisztikus függvény inverze.
+
+
+== Kapcsolódó fogalmak ==
+Absztrakt algebrai szempontból a 
+  
+    
+      
+        log
+        ⁡
+        (
+        c
+        d
+        )
+        =
+        log
+        ⁡
+        (
+        c
+        )
+        +
+        log
+        ⁡
+        (
+        d
+        )
+      
+    
+    {\displaystyle \log(cd)=\log(c)+\log(d)}
+  
+ egyenlőség csoportizomorfia a pozitív valós számok szorzásra vett csoportja és a valós számok additív csoportja között. E között a két csoport között csak a logaritmusfüggvények teremtenek csoportizomorfiát. Ezzel az izomorfiával a Haar-mérték, Lebesgue-mérték a valós számokon megfelel a dx/x mértéknek a pozitív valós számokon.
+A komplex analízisben és az algebrai geometriában a df/f alakú differenciálformák logaritmikus pólusokként ismertek.
+A polilogaritmus definíciója:
+
+  
+    
+      
+        
+          Li
+          
+            s
+          
+        
+        ⁡
+        (
+        z
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              z
+              
+                k
+              
+            
+            
+              k
+              
+                s
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {Li} _{s}(z)=\sum _{k=1}^{\infty }{z^{k} \over k^{s}}.}
+  
+
+A természetes logaritmussal kifejezve: Li1(z) = −ln(1 − z), továbbá Lis(1) éppen a ζ(s) Riemann-féle zéta-függvény.
+
+
+== Alkalmazások ==
+
+A logaritmusnak számos alkalmazása van a matematikában és azon kívül. Ezek jelentős része a skálainvarianciát használja fel. Például a nautilus héjának minden egyes kamrája olyan, mint az előző, de egy konstans tényezővel nagyobb. Emiatt a héj keresztmetszete logaritmikus spirál. Benford törvénye is a skálainvarianciára hivatkozik. A logaritmus az önhasonlósághoz is kapcsolódik, emiatt jelenik meg az oszd meg és uralkodj típusú algoritmusok műveletigényében önhasonló geometriai alakzatok fraktáldimenziójának is logaritmus használatával számítható ki. A logaritmikus skálák akkor hasznosak, ha vagy különböző nagyságrendű mennyiségeket kell egy skálán ábrázolni, vagy az abszolút különbség helyett a relatív megváltozást kell megjeleníteni. A logaritmus több tudományos képletnek is része, mint a Ciolkovszkij-egyenlet, a Fenske-egyenlet és a Nernst-egyenlet.
+
+
+=== Számítások ===
+A fenti tulajdonságok segítségével, ha minden szám logaritmusát tudjuk, akkor a szorzások csupán összeadás műveletével elvégezhetőek, sőt, a hatványozást először szorzásra visszavezetve szintén két összeadással elvégezhetjük. A kitevők összeadását a logaritmus értékeket skálájában tartalmazó logarléc használatakor egyszerű tologatással megoldhatjuk. A logarlécet napjainkban már nemigen használják, de az elv továbbra is használható például számológépekben.
+Mivel a logaritmus additívvá teszi az egymással szorzódó mennyiségeket, mint például állapotok valószínűségét, alapvető szerepet játszik a statisztikus fizikában használatos entrópia, illetve azzal gazdag analógiákat mutató információmennyiség, hírérték megadásában.
+
+
+=== Bonyolultság ===
+A bonyolultságelmélet a számítástudománynak az az ága, amely az algoritmusok végrehajtásának idejét vizsgálja. A logaritmusok azoknak a feladatoknak a vizsgálatában jelennek meg, amelyeket úgy oldanak meg, hogy részproblémákra osztják, azokat megoldják, majd ezekből állítják elő a feladat megoldására. Erre a módszerre oszd meg és uralkodj módszerként is utalnak.
+Például a logaritmikus keresés egy rendezett listában keres egy elemet. Ehhez a középső elemet vizsgálja meg. Ha ez kisebb, akkor a nagyobb, ha nagyobb, mint a keresett elem, akkor a kisebb elemek között keres tovább ugyanígy. Ha az adott elem megegyezik a vizsgált elemmel, akkor megvan a keresett elem. Ha a lista már nem osztható tovább, és nem találta meg a keresett elemet, akkor a keresett elem nincs a listában. Az esetek legalább felében ez összesen 
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        N
+        )
+      
+    
+    {\displaystyle \log _{2}(N)}
+  
+ összehasonlítást jelent. Hasonlóan az összefuttatásos rendezés megfelezi a kapott listát, rendezi a két részt, majd összefuttatva kapja meg a teljes lista rendezését. Az egy elemű listák rendezettje önmaguk. Ez összesen 
+  
+    
+      
+        N
+        ⋅
+        log
+        ⁡
+        (
+        N
+        )
+      
+    
+    {\displaystyle N\cdot \log(N)}
+  
+. A bonyolultságelméletben rendszerint nem határozzák meg a logaritmus alapját, mert az egy konstans szorzót jelent, és ettől a bonyolultságelmélet eltekint.
+Ha f(x) függvény, akkor logaritmikusan nő, ha egy logaritmusfüggvény konstansszorosa. Ez azt is jelenti, hogy logaritmusfüggvény. Például egy természetes szám leírásához egy rögzített számrendszerben szükséges jegyek száma logaritmikusan nő a számhoz képest. Más szavakkal, az eltárolásához szükséges memória logaritmikusan nő a számmal. A biológiában azonban az exponenciális növekedést nevezik logaritmikusnak.
+
+
+=== Entrópia és káosz ===
+
+Az entrópia egy adott rendszer rendezettségét méri. A statisztikai termodinamikában
+
+  
+    
+      
+        S
+        =
+        −
+        k
+        
+          ∑
+          
+            i
+          
+        
+        
+          p
+          
+            i
+          
+        
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle S=-k\sum _{i}p_{i}\ln(p_{i}),}
+  
+
+az információk elméletében
+
+  
+    
+      
+        H
+        =
+        −
+        
+          ∑
+          
+            i
+          
+        
+        
+          p
+          
+            i
+          
+        
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        
+          p
+          
+            i
+          
+        
+        )
+        .
+        
+      
+    
+    {\displaystyle H=-\sum _{i}p_{i}\log _{2}(p_{i}).\,}
+  
+
+Az összeg az összes i állapotot, illetve elemet magába foglalja. Itt pi az adott állapot vagy elem valószínűsége, k a Boltzmann-állandó. Az információelméletben az információ mennyiségét méri. Ha N üzenet mindegyike egyforma valószínűségű, akkor a kiválasztott üzenet információtartalma log2(N) bit.
+A Ljapunov-kitevők dinamikus rendszerek kaotikusságát méri a logaritmussal. Például, ha egy részecske egy ovális biliárdasztalon mozog, akkor a kiindulópont kis mértékű megváltoztatása is a részecske útjának nagy mértékű változását eredményezi. Az ilyen rendszerek determinisztikusan kaotikusak, mivel megjósolható, hogy kis mérési hibák is nagy különbséget eredményeznek a végső állapotban. A determinisztikusan kaotikus rendszerekben legalább egy Ljapunov-kitevő pozitív.
+
+
+=== Fraktálok ===
+
+A logaritmus megjelenik a fraktáldimenziók definíciójában. A fraktálok önhasonló geometriai alakzatok, ami azt jelenti, hogy (legalább köznapi vagy statisztikai értelemben) hasonlók önmaguk egy részével. Például a Sierpiński-háromszög lefedhető három önmaga felére kicsinyített másolatával, így Hausdorff-dimenziója log(3)/log(2) ≈ 1,58. Egy másik logaritmuson alapuló definíció a dobozszámlálási dimenzió, ami különböző méretű dobozokkal való fedésből indul ki.
+
+
+=== Valószínűségszámítás és statisztika ===
+
+A valószínűségszámításban is megjelenik a logaritmus. A nagy számok törvénye szerint egy szabályos érmével nagyon sokszor dobva a fejek aránya megközelíti az 1/2-et. A tétel nem állít semmit sem a fej és az írás különbségéről, az a végtelenbe tartva végtelenre nőhet. Az 1/2-es arány körüli ingadozásokat az iterált logaritmus törvénye írja le.
+A logaritmus a lognormál eloszlásra is jellemző. Ha egy mennyiség eloszlása normális, akkor logaritmusának eloszlása lognormális. A lognormális eloszlás gyakori, és hátterében sok pozitív értékű, összeszorzódó valószínűségi változó áll. Erre egy példa a turbulencia tanulmányozása.
+A paraméteres statisztikai modellek egyike a maximum-likelihood becslés. Ebben a modellben a likelihood függvény legalább egy olyan paramétertől függ, amit becsülni kell. Ez a függvény ott maximális, ahol logaritmusa maximális, mivel a logaritmus monoton nő. Ennek egyszerűbb megtalálni a maximumát, különösen akkor, ha a likelihood függvény független valószínűségi változók több tényezős szorzata.
+Benford törvénye a számjegyek eloszlását írja le különféle adathalmazokban, például épületek magassága. Eszerint annak a valószínűsége, hogy egy számadat első jegye d, megegyezik a 
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        d
+        +
+        1
+        )
+        −
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        d
+        )
+      
+    
+    {\displaystyle \log _{10}(d+1)-\log _{10}(d)}
+  
+ mennyiséggel, függetlenül a mértékegységtől. Így az adatok 30%-a 1-gyel, 18%-a 2-vel kezdődik, és így tovább. Ezt a szabályszerűséget használják például könyvelési csalások leleplezésére.
+
+
+=== Számelmélet ===
+A természetes logaritmus kapcsolódik a prímszámok (2, 3, 5, 7, 11 stb.) eloszlásához, ami a számelmélet egy régi nevezetes problémája. Minden x egész számhoz rendeljük hozzá a nála nem nagyobb pozitív prímek számát; ezt a függvényt π(x) jelöli. Ennek aszimptotikus közelítése a prímszámtétel szerint:
+
+  
+    
+      
+        
+          
+            x
+            
+              ln
+              ⁡
+              (
+              x
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {x}{\ln(x)}},}
+  
+
+ami azt jelenti, hogy a két függvény hányadosa tart az egyhez, ha x tart a végtelenbe. Eszerint annak a valószínűsége, hogy egy x-nél nem nagyobb véletlen szám prím, közelítőleg fordítottan arányos x számjegyeinek számával.
+Egy jobb közelítés:
+
+  
+    
+      
+        
+          L
+          i
+        
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            2
+          
+          
+            x
+          
+        
+        
+          
+            1
+            
+              ln
+              ⁡
+              (
+              t
+              )
+            
+          
+        
+        
+        d
+        t
+        .
+      
+    
+    {\displaystyle \mathrm {Li} (x)=\int _{2}^{x}{\frac {1}{\ln(t)}}\,dt.}
+  
+
+A Riemann-hipotézis megfogalmazható π(x) and Li(x) összehasonlításával. A számok prímtényezőiről szóló Erdős–Kac-tételben szintén megjelenik a logaritmus.
+Az n faktoriálisának logaritmusa (
+  
+    
+      
+        n
+        !
+        =
+        1
+        ⋅
+        2
+        ⋅
+        …
+        ⋅
+        n
+      
+    
+    {\displaystyle n!=1\cdot 2\cdot \ldots \cdot n}
+  
+) kifejezhető, mint
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        n
+        !
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            2
+          
+          
+            n
+          
+        
+        ln
+        ⁡
+        k
+        ,
+        
+           ha 
+        
+        n
+        ∈
+        
+          
+            N
+            
+              +
+            
+          
+        
+      
+    
+    {\displaystyle \ln(n!)=\sum _{k=2}^{n}\ln k,{\text{ ha }}n\in \mathbb {N^{+}} }
+  
+
+Ebből levezethető a Stirling-formula, ami n! approximációja.
+
+
+=== Logaritmikus skálák ===
+A logaritmus használatával mennyiségek sok nagyságrendjét egy skálára sűríthetjük. Ennek hasznosságát gyakran a gyakorlat és természet törvényszerűségei is alátámasztják. A különböző fizikai mennyiségék (hangerősség, hangmagasság, fényintenzitás stb.) által keltett, általunk érzékelt fiziológiai érzet a fizikai jel (teljesítményének) logaritmusával arányos. Ez indokolja a logaritmussal arányos decibel-skálák bevezetését. A decibel a teljesítmény 10-es alapú logaritmusának 10-szerese, vagy az elektromos feszültség 10-es alapú logaritmusának 20-szorosa. Használják az elektromos jelek szállítása közbeni feszültségesés mérésére, a hangok teljesítményének mérésére az akusztikában, vagy a fény elnyelődésének mérésére az optikában és a spektrometriában. A jel-zaj arányt is decibelben mérik. A csúcs jel-zaj arányt használják a képtömörítés és a hangminőség mérésére.
+Az érzékelés leírásában gyakran jelenik meg a logaritmus. A hangmagasság érzete a hang frekvenciájának logaritmusával arányos, azaz például egyenletes léptéknek észlelt oktávok rendre a frekvencia 2-, 4-, 8-szorosát jelentik. A csillagok fényességét mérő magnitudó is logaritmikus. A pszichofizikában a Weber–Fechner-törvény szerint az inger és az érzet erőssége között logaritmikus kapcsolat van. Ez azonban kevésbé pontos, mint egyes ma használt összefüggések, mint például Steven törvénye.
+Hick törvénye szerint a választási idő arányos az alternatívák számának logaritmusával. Fitt törvénye szerint egy tárgy méretének és távolságának logaritmusa arányos az odasietés idejével. A matematikában képzetlen embereknél tendencia, hogy a mennyiségeket logaritmusuk szerint becsülik meg, például a 10 az 1 és a 100 között félúton van. Az alaposabb matematikai képzés ezt bizonyos körülmények esetén lineáris irányba tolja el.
+Logaritmikus továbbá a földrengés erősségét jelző Richter-skála is; a földrengés által kibocsátott energia 10 alapú logaritmusa. Például, ha egy földrengés erőssége 5,0, akkor 32-szer (101,5) akkora; a 6,0 erősségű 1000-szer (103) akkora, mint egy 4,0 erejű földrengés.
+Egy további példa a vizes oldatok pH-ja, ami a oxóniumionok koncentrációjának 10-es alapú logaritmusának ellentettje. Például a semleges pH-jú vízben ez a koncentráció 10−7 mol·L−1, ami szerint a pH 7. Az ecet pH-ja 3. A különbség az oldatban levő oxóniumionok koncentrációjának 10000-szeresét jelzi; eszerint az ecetben 10−3 mol·L−1 oxóniumion található.
+
+
+=== Zene ===
+
+A hangmagasság logaritmikus észleléséhez a zenének is alkalmazkodnia kell. Az egyenletes hangolásban az egyes hangközök mérete csak a két hang távolságától függ, és nem maguktól a hangoktól. Például az a' (440 Hz) és a b' hangok (466 Hz) közötti hangköz ugyanakkora, mint a b (466 Hz) és a h (493 Hz) hangok közötti. Eszerint a frekvenciák közötti arányok megegyeznek, vagy csak annyiban térnek el, amennyiben a fül nem érzékeli a különbséget:
+
+  
+    
+      
+        
+          
+            466
+            440
+          
+        
+        ≈
+        
+          
+            493
+            466
+          
+        
+        ≈
+        1,059
+        5
+        ≈
+        
+          
+            2
+            
+              12
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {466}{440}}\approx {\frac {493}{466}}\approx 1{,}0595\approx {\sqrt[{12}]{2}}.}
+  
+
+A hangközöket az elnevezések mellett (például nagy szekund, kis terc, tiszta kvint) logaritmikusan célszerű mérni. A logaritmus alapja 21/12, ami az oktáv frekvenciaarányához és az oktáv által tartalmazott 12 hanghoz alkalmazkodva ez a legkisebb nem prím hangköz, a kis szekund frekvenciaaránya. Ez a száz cent. A centet a nem egyenletesen temperált hangolások beállításához használják.
+
+
+=== Grafikonok ===
+
+A szemilog grafikonok a logaritmikus skálát is szemléltetik. Az egyik tengelyen, tipikusan a függőlegesen a skála logaritmikus, Például az itt látható grafikon több nagyságrendet összenyomva mutatja be a német hiperinflációt az 1920-as években. Ezeken a grafikonokon az 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        a
+        ⋅
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=a\cdot b^{x}}
+  
+ alakú exponenciális függvények képe egyenes.
+A természetben talált legtöbb összefüggés (például fizikai képlet) hatványfüggvény alakú. Ha mindkét tengelyen szereplő értékeknek logaritmusát ábrázoljuk, az ún. log-log ábrán bármely hatványfüggvény lineáris alakot vesz fel, a meredekség pedig a kitevőt adja meg:
+
+  
+    
+      
+        
+          
+            
+              
+                y
+              
+              
+                
+                =
+                c
+                
+                  x
+                  
+                    α
+                  
+                
+              
+            
+            
+              
+                log
+                ⁡
+                y
+              
+              
+                
+                =
+                log
+                ⁡
+                c
+                +
+                α
+                log
+                ⁡
+                x
+              
+            
+            
+              
+                Y
+              
+              
+                
+                =
+                α
+                X
+                +
+                C
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}y&=cx^{\alpha }\\\log y&=\log c+\alpha \log x\\Y&=\alpha X+C\end{aligned}}}
+  
+
+A fenti elvet használják ki a gyakran alkalmazott különböző logaritmikus grafikonokon, például a Bode-diagram, amely egy rendszer átviteli függvényének log-log ábrázolása.
+
+
+== Története ==
+
+
+=== Előzmények ===
+A babilóniak Kr. e. 2000–1600 körül kezdték el alkalmazni a negyednégyzet algoritmust szorzásra, ami csak összeadást, kivonást és egy, négyzetek negyedét tartalmazó táblázatot használt. A módszer alkalmazásához ki kell számítani a tényezők összegét és különbségét, és az összeg négyzetének negyedéből kivonni a különbség négyzetének negyedét. Mivel adott két  egész szám összege és különbsége egyszerre páros és páratlan, a táblázatban az egyszerűség kedvéért elhagyták a páratlan négyzetekből adódó negyedeket, azaz minden négyzet negyedének vették az egészrészét.
+Azonban ez még nem volt alkalmas osztásra, mert ahhoz még a reciprokok táblázatára is szükség lett volna, vagy egy olyan eljárásra, amivel gyorsan lehetett volna reciprokot számolni. A módszert az újkorban újra felfedezték, és 1817-től kezdve egészen a számológépek elterjedéséig kiadtak negyednégyzeteket tartalmazó táblázatokat nagy számok pontos szorzásához.
+Az indiai Virasena azzal foglalkozott, hogy hányszor lehet elfelezni egy páros számot. 2 egész kitevős hatványaira ez a logaritmus. Ezt ardhacchedának nevezte. Továbbá foglalkozott hasonló függvényekkel 3 és 4 alapra (trakacheda és caturthacheda). Ma ezt a p-adikus számok kapcsán a számok rendjének nevezzük.
+Michael Stifel 1544-ben Nürnbergben kiadott Arithmetica integrája tartalmazott egy táblázatot az egészekről és 2 hatványairól, ami egy korai logaritmustáblának tekinthető.
+A 16. és a 17. században közelítő pontosságú szorzásra és osztásra a prosthaphaeresis algoritmust használták, ami a
+
+  
+    
+      
+        cos
+        
+        α
+        
+        cos
+        
+        β
+        =
+        
+          
+            1
+            2
+          
+        
+        [
+        cos
+        ⁡
+        (
+        α
+        +
+        β
+        )
+        +
+        cos
+        ⁡
+        (
+        α
+        −
+        β
+        )
+        ]
+      
+    
+    {\displaystyle \cos \,\alpha \,\cos \,\beta ={\frac {1}{2}}[\cos(\alpha +\beta )+\cos(\alpha -\beta )]}
+  
+
+képleten alapulva összeadásra, kivonásra és táblázatok használatára egyszerűsítette a műveleteket. A logaritmus azonban még ezt is tovább egyszerűsítette. Az Euler-formulával kimutatható az összefüggés a két képlet között.
+
+
+=== Napiertől Eulerig ===
+
+A logaritmusok módszerét John Napier 1614-ben jelentette meg Mirifici Logarithmorum Canonis Descriptio címen. Jobst Bürgi (avagy Joost Bürgi, Justus Byrgius) logaritmustáblája 1620-ban jelent meg, de nem terjedt el széles körben. Ez egy egyhez közeli számot használt alapnak, és az 1-től 10-ig terjedő számok logaritmusát tartalmazta. Napiertől eltérően nem definiálta a folytonos logaritmusfüggvényt, és nem elemezte az interpolációk pontosságát sem. Még a használat szabályait sem írta le, bár ezt a hiányosságát később pótolta. Ezt külön adták ki.
+Johannes Kepler az Ephemeris fordításához logaritmustáblákat használt, ezért művét Napiernek ajánlotta. Napier rendszerének megjelenését ugyan megelőzte Jobst Bürgi, ám ő ahelyett, hogy a köz szeme előtt nevelte volna fel gyermekét, már születése után magára hagyta.
+Napier ismételt kivonásokkal kiszámolta (1 − 10−7)L értékét minden egész L-re 1-től 100-ig, ahol is megközelítően 0,99999 = 1 − 10−5-t ért el. Ezután kiszámolta ezeknek a szorzatait 107(1 − 10−5)L-nel 1-től 50-ig, és hasonlókat számolt 0,9998 ≈ (1 − 10−5)20-nal és |0,9 ≈ 0,99520-nal is. Mindezek a számítások 20 évig tartottak, és lehetővé tették, hogy 5 és 10 millió között minden N-hez megadja azt az L számot, ami megoldja az
+
+  
+    
+      
+        N
+        =
+        
+          10
+          
+            7
+          
+        
+        
+          
+            (
+            1
+            −
+            
+              10
+              
+                −
+                7
+              
+            
+            )
+          
+          
+            L
+          
+        
+        .
+        
+      
+    
+    {\displaystyle N=10^{7}{(1-10^{-7})}^{L}.\,}
+  
+
+egyenletet. Az L számot először mesterséges számnak nevezte, de később a logaritmus nevet adta neki, mivel a szám arányt jelöl. Napier kapcsolata a természetes logaritmussal:
+
+  
+    
+      
+        L
+        =
+        
+          log
+          
+            (
+            1
+            −
+            
+              10
+              
+                −
+                7
+              
+            
+            )
+          
+        
+        
+        
+          (
+          
+            
+              N
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+        ≈
+        
+          10
+          
+            7
+          
+        
+        
+          log
+          
+            
+              1
+              e
+            
+          
+        
+        
+        
+          (
+          
+            
+              N
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+        =
+        −
+        
+          10
+          
+            7
+          
+        
+        
+          log
+          
+            e
+          
+        
+        
+        
+          (
+          
+            
+              N
+              
+                10
+                
+                  7
+                
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle L=\log _{(1-10^{-7})}\!\left({\frac {N}{10^{7}}}\right)\approx 10^{7}\log _{\frac {1}{e}}\!\left({\frac {N}{10^{7}}}\right)=-10^{7}\log _{e}\!\left({\frac {N}{10^{7}}}\right),}
+  
+
+ami egy nagyon pontos approximáció, és megfelel az
+
+  
+    
+      
+        
+          
+            (
+            1
+            −
+            
+              10
+              
+                −
+                7
+              
+            
+            )
+          
+          
+            
+              10
+              
+                7
+              
+            
+          
+        
+        ≈
+        
+          
+            1
+            e
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {(1-10^{-7})}^{10^{7}}\approx {\frac {1}{e}}.\,}
+  
+
+megfigyelésnek. A logaritmus hamarosan találkozott az igényekkel, és gyorsan népszerűvé vált. Bonaventura Cavalieri (Itália), Edmund Wingate (Franciaország), Xue Fengzuo (Kína) művei, és a német Johannes Kepler Chilias logarithmorum című műve segítette az elterjedésben.
+
+1649-ben Alphonse Antonio de Sarasa, aki korábban Grégoire de Saint-Vincent tanítványa volt, kapcsolatba hozta a logaritmust a hiperbola kvadratúrájával. Rámutatott arra, hogy a hiperbola alatti f(t) terület x = 1-től x = t-ig eleget tesz a következőnek:
+
+  
+    
+      
+        f
+        (
+        t
+        u
+        )
+        =
+        f
+        (
+        t
+        )
+        +
+        f
+        (
+        u
+        )
+        .
+        
+      
+    
+    {\displaystyle f(tu)=f(t)+f(u).\,}
+  
+
+Ennek előzményeként Grégoire de Saint-Vincent 1647-ben megjelent könyvében, az Opus geometricum quadraturae circuli et sectionum coni vizsgálta a kúpszeleteket. Ebben bizonyította, ha a pontok abszcisszái mértani arányban állnak, akkor a hiperbola íve és az abszcisszák által meghatározott görbe alatti terület számtani arányban van. Ezt felhasználva látta be Alphonse Antonio de Sarasa a fenti összefüggést, és a kapcsolatot a logaritmussal.
+A természetes logaritmust Nicholas Mercator 1668-ban kiadott könyvében, a Logarithmotechniában vezette be, habár John Speidell matematikatanár Napier nyomán már készített természetes logaritmus táblázatot. 1730-ban Euler definiálta a természetes alapú exponenciális függvényt és logaritmust,
+
+  
+    
+      
+        
+          e
+          
+            x
+          
+        
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        (
+        1
+        +
+        x
+        
+          /
+        
+        n
+        
+          )
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle e^{x}=\lim _{n\rightarrow \infty }(1+x/n)^{n},}
+  
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        n
+        (
+        
+          x
+          
+            1
+            
+              /
+            
+            n
+          
+        
+        −
+        1
+        )
+        .
+      
+    
+    {\displaystyle \ln(x)=\lim _{n\rightarrow \infty }n(x^{1/n}-1).}
+  
+
+és megmutatta, hogy e kettő inverze egymásnak.
+
+
+=== Történelmi alkalmazások ===
+
+A számítások leegyszerűsítésével a logaritmus hozzájárult a természettudományok, különösen a csillagászat fejlődéséhez. Kritikus fontosságú volt a geodéziában, az égi navigációhoz, és sok más területhez. Pierre-Simon Laplace szerint a több hónapos számításokat néhány naposra rövidíti, és a hibákat is csökkenti.
+A számológépek megjelenése előtt a logaritmust táblázatok alapján használták. Az első ilyen táblázatot Napier után nem sokkal Henry Briggs készítette 1617-ben. Ezután egyre pontosabb és egyre nagyobb számtartományokra készültek logaritmustáblázatok. Ezek a táblázatok tartalmazták 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{b}(x)}
+  
+ és 
+  
+    
+      
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle b^{x}}
+  
+ értékét, ahol az x szám egy bizonyos lépésközzel befutott egy tartományt, és b legtöbbször 10 volt a 10-es számrendszerhez való alkalmazkodás miatt. Briggs táblázata az 1–1000 egészek logaritmusát tartalmazta 8 jegyes pontossággal. A 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{b}(x)}
+  
+ inverz függvényét, 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=b^{x}}
+  
+-et antilogaritmusnak nevezték. A logaritmus alapvető tulajdonságai alapján a szorzást összeadásra, az osztást kivonásra, a hatványozást szorzásra, és a gyökvonást osztásra vezették vissza. Ezután az így kapott érték antilogaritmusát keresték vissza ugyanabban a táblában.
+Így a c és a d számok szorzata
+
+  
+    
+      
+        c
+        d
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            +
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        
+      
+    
+    {\displaystyle cd=b^{\log _{b}(c)}\,b^{\log _{b}(d)}=b^{\log _{b}(c)+\log _{b}(d)}\,}
+  
+
+és hányadosa
+
+  
+    
+      
+        
+          
+            c
+            d
+          
+        
+        =
+        c
+        
+          d
+          
+            −
+            1
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            −
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\frac {c}{d}}=cd^{-1}=b^{\log _{b}(c)-\log _{b}(d)}.\,}
+  
+
+A 10-es alapú logaritmus nullákat számláló tulajdonságára támaszkodva egyes táblák külön adták meg a karakterisztikát (a logaritmus egészrészét) és a mantisszát (a logaritmus törtrészét). A 
+  
+    
+      
+        10
+        x
+      
+    
+    {\displaystyle 10x}
+  
+ tízes alapú logaritmusának karakterisztikája 1-gyel nagyobb, mint x karakterisztikája, így a 10-es alapú logaritmustábla értelmezési tartománya kibővíthető. Így például, ha adva vannak az 1-től 1000-ig terjedő egész számok 10-es alapú logaritmusai, 3542 logaritmusa közelíthető így:
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        3542
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        ⋅
+        354
+        
+          ,
+        
+        2
+        )
+        =
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        354
+        
+          ,
+        
+        2
+        )
+        ≈
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        354
+        )
+        .
+      
+    
+    {\displaystyle \log _{10}(3542)=\log _{10}(10\cdot 354{,}2)=1+\log _{10}(354{,}2)\approx 1+\log _{10}(354).}
+  
+
+Egy másik alkalmazás a logarléc volt, amiben két logaritmikus skálát használtak a számításokhoz.
+
+Az első logarlécet 1620–1630 körül az oxfordi Edmund Gunter készítette, és csak egy logaritmikus skálája volt. További mérőeszközökkel kombinálva szorozni és osztani lehetett vele. 1632-ben a cambridge-i William Oughtred két Gunter-vonalzó összetételével megalkotta a modern logarlécet. Ezeken a skálákon a számok logaritmusuk különbségével arányos távolságra kerültek. A felső skála elcsúsztatásával lehetett összeadni a logaritmusokat. Például a felső skálán az 1 és a 2 közötti távolságot az alsó skálán 1-től 3-ig terjedő távolsághoz adva a szorzat az alsó skáláról olvasható le. Az elektronikus számológépek elterjedéséig (1970-es évek) használták még mérnökök és kutatók is, mert a pontosság árán fel lehetett gyorsítani a számításokat.
+
+
+== Jegyzetek ==
+
+
+== Fordítás ==
+Ez a szócikk részben vagy egészben  a   Logarithm című angol Wikipédia-szócikk ezen változatának fordításán alapul.  Az eredeti cikk szerkesztőit annak laptörténete sorolja fel. Ez a jelzés csupán a megfogalmazás eredetét és a szerzői jogokat jelzi, nem szolgál a cikkben szereplő információk forrásmegjelöléseként.

@@ -1,0 +1,993 @@
+La probabilidad es una medida de la certidumbre de que ocurra un evento. Su valor es un número entre 0 y 1, donde un evento imposible corresponde a cero y uno seguro corresponde a uno.
+Una forma empírica de estimar la probabilidad consiste en obtener la frecuencia con la que sucede un determinado acontecimiento mediante la repetición de experimentos aleatorios, bajo condiciones suficientemente estables. En algunos experimentos de los que se conocen todos los resultados posibles, las probabilidades de estos sucesos pueden ser calculadas de manera teórica, especialmente cuando todos los resultados son igualmente probables.
+La teoría de la probabilidad es la rama de la matemática que estudia los experimentos o fenómenos aleatorios. Se usa extensamente en áreas como la estadística, la física, la economía (ciencia económica), las finanzas, la ciencia de datos, la Investigación médica, en mediano grado en algunas de las demás ciencias sociales y en menor grado en la filosofía para conocer la viabilidad de sucesos y la mecánica subyacente de sistemas complejos.
+
+
+== Terminología de la teoría de la probabilidad ==
+
+Experimento: Una operación que puede producir algunos resultados bien definidos pero que no se puede predecir cuál de ellos se obtendrá, se llama un experimento aleatorioEjemplo: Cuando se lanza una moneda, se sabe que solo puede aparecer cara o cruz. Sin embargo no se puede predecir al momento de lanzar la moneda en cuál lado caerá.Ejemplo:  Cuando se lanza un dado se sabe que en la cara superior puede aparecer cualquiera de los números 1,2,3,4,5, o 6 pero no se puede predecir cuál aparecerá.Espacio muestral: Todos los resultados posibles de un experimento en su conjunto, forman el Espacio de la muestra.Ejemplo: Cuando lanzamos un dado se puede obtener cualquier resultado del 1 al 6. Todos los números posibles que pueden aparecer en la cara superior forman el Espacio Muestral (denotado por S). El espacio muestral de una tirada de dados es S={1,2,3,4,5,6}Resultado: Cualquier elemento posible del espacio muestral S de un experimento aleatorio se llama Resultado. Ejemplo: Cuando lanzamos un dado, podemos obtener 3 o cuando lanzamos una moneda, podemos obtener cara.Suceso: Cualquier subconjunto del espacio muestral S se llama un Evento (denotado por E). Cuando se produce un resultado que pertenece al subconjunto E, se dice que ha ocurrido un suceso. Mientras que, cuando un resultado que no pertenece al subconjunto E tiene lugar, el Evento no ha ocurrido.Ejemplo: Considérese el experimento de lanzar un dado. Aquí el espacio muestral S={1,2,3,4,5,6}. Sea E el evento de "que aparezca un número menor de 4". Así, el suceso E={1,2,3}. Si aparece el número 1, se dice que el suceso E ha ocurrido. Del mismo modo, si los resultados son 2 ó 3, se puede afirmar que se ha producido el Suceso E, ya que estos resultados pertenecen al subconjunto E'Ensayo: Por ensayo, se entiende la realización de un experimento aleatorio. Ejemplo: (i) Lanzar una moneda justa, (ii) lanzar un dado imparcial[1]​ 
+
+
+== Interpretaciones ==
+Cuando se trata de experimentos que son  aleatorios y  bien definidos en un entorno puramente teórico (como lanzar una moneda), la probabilidad puede describirse numéricamente por el número de resultados deseados, dividido por el número total de todos los resultados. Por ejemplo, si se lanza una moneda al aire dos veces, se obtendrán resultados de "cara-cara", "cara-cruz", "cruz-cara" y "cruz-cruz". La probabilidad de obtener un resultado de "cara-cara" es 1 de cada 4 resultados, o, en términos numéricos, 1/4, 0,25 o 25%. Sin embargo, en lo que respecta a la aplicación práctica, existen dos grandes categorías de interpretaciones de la probabilidad que compiten entre sí, y cuyos partidarios mantienen puntos de vista diferentes sobre la naturaleza fundamental de la probabilidad:
+
+Los objetivistas asignan números para describir algún estado de cosas objetivo o físico. La versión más popular de la probabilidad objetiva es la probabilidad frecuentista, que afirma que la probabilidad de un evento aleatorio denota la frecuencia relativa de ocurrencia del resultado de un experimento cuando este se repite indefinidamente. Esta interpretación considera que la probabilidad es la frecuencia relativa "a largo plazo" de los resultados.[2]​ Una modificación de esto es la probabilidad de propensión, que interpreta la probabilidad como la tendencia de algún experimento a producir un determinado resultado, incluso si se realiza solo una vez.
+Los subjetivistas asignan números por probabilidad subjetiva, es decir, como un grado de creencia.[3]​ El grado de creencia se ha interpretado como "el precio al que se compraría o vendería una apuesta que paga 1 unidad de utilidad si E, 0 si no E. "[4]​ La versión más popular de la probabilidad subjetiva es la probabilidad bayesiana, que incluye el conocimiento de los expertos así como datos experimentales para calcular probabilidades.  El conocimiento experto está representado por alguna  distribución de probabilidad a priori (subjetiva).  Estos datos se incorporan a una función de verosimilitud. El producto de la función a priori y la función de verosimilitud, cuando se normaliza, da lugar a una probabilidad a posteriori que incorpora toda la información conocida hasta la fecha.[5]​ Por  el teorema de la concordancia de Aumann, los agentes bayesianos cuyas creencias a priori son similares terminarán con creencias posteriores similares. Sin embargo, unas creencias previas suficientemente diferentes pueden llevar a conclusiones diferentes, independientemente de la cantidad de información que compartan los agentes.[6]​
+
+
+== Etimología ==
+
+La palabra probabilidad deriva del latín probabilitas, que también puede significar "probidad", una medida de la autoridad de un testigo en un caso legal en Europa, y a menudo correlacionada con la nobleza del testigo. En cierto sentido, esto difiere mucho del significado moderno de probabilidad, que en cambio es una medida del peso de la  evidencia empírica, y se llega a ella a partir del razonamiento inductivo y la inferencia estadística.[7]​
+
+
+== Historia ==
+La definición de probabilidad se produjo debido al deseo del ser humano por conocer con certeza los eventos que sucederán en el futuro, por eso a través de la historia se han desarrollado diferentes enfoques para tener un concepto de la probabilidad y determinar sus valores. 
+El diccionario de la Real Academia Española (R.A.E) define «azar» como una casualidad, un caso fortuito, y afirma que la expresión «al azar» significa «sin orden».[8]​ La idea de probabilidad está íntimamente ligada a la idea de azar y nos ayuda a comprender nuestras posibilidades de ganar un juego de azar o analizar las encuestas.
+Pierre-Simon Laplace afirmó: «Es notable que una ciencia que comenzó con consideraciones sobre juegos de azar haya llegado a ser el objeto más importante del conocimiento humano». Comprender y estudiar el azar es indispensable, porque la probabilidad es un soporte necesario para tomar decisiones en cualquier ámbito.[9]​
+Según Amanda Dure, «Antes de la mitad del siglo XVII, el término "probable" (en latín probable) significaba aprobable, y se aplicaba en ese sentido, unívocamente, a la opinión y a la acción. Una acción u opinión probable era una que las personas sensatas emprenderían o mantendrían dadas las circunstancias».[10]​
+Aparte de algunas consideraciones elementales hechas por Girolamo Cardano en el siglo XVI, la doctrina de la probabilidad data de la correspondencia de Pierre de Fermat y Blaise Pascal (1654). Christiaan Huygens (1657) le dio el tratamiento científico conocido más antiguo al concepto, seguido por la Kybeia de Juan Caramuel (1670). Varios de los citados autores —Fermat, Pascal y Caramuel— mencionan en sus respectivas correspondencias un Ars Commutationes de Sebastián de Rocafull (1649), hoy perdido. El fundamental Ars Conjectandi (póstumo, 1713) de Jakob Bernoulli y Doctrine of Chances (1718) de Abraham de Moivre trataron el tema como una rama de las matemáticas. Véase El surgimiento de la probabilidad (The Emergence of Probability) de Ian Hacking para una historia de los inicios del desarrollo del propio concepto de probabilidad matemática.
+La teoría de errores se remonta hasta Opera Miscellanea (póstumo, 1722) de Roger Cotes, pero una memoria preparada por Thomas Simpson en 1755 (impresa en 1756) aplicó por primera vez la teoría para la discusión de errores de observación. La reimpresión (1757) de esta memoria expone los axiomas de que los errores positivos y negativos son igualmente probables, y que hay ciertos límites asignables dentro de los cuales se supone que caen todos los errores; se discuten los errores continuos y se da una curva de la probabilidad.
+Pierre-Simon Laplace (1774) hizo el primer intento para deducir una regla para la combinación de observaciones a partir de los principios de la teoría de probabilidad. Representó la ley de la probabilidad de error con una curva 
+  
+    
+      
+        y
+        =
+        ϕ
+        (
+        x
+        )
+      
+    
+    {\displaystyle y=\phi (x)}
+  
+, siendo 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ cualquier error e 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ su probabilidad, y expuso tres propiedades de esta curva:
+
+es simétrica al eje 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+;
+el eje 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ es una asíntota, siendo la probabilidad del error 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+ igual a 0;
+la superficie cerrada es 1, haciendo cierta la existencia de un error.
+Dedujo una fórmula para la media de tres observaciones. También obtuvo (1781) una fórmula para la ley de facilidad de error (un término debido a Lagrange, 1774), pero su fórmula llevaba a ecuaciones inmanejables. Daniel Bernoulli (1778) introdujo el principio del máximo producto de las probabilidades de un sistema de errores concurrentes.
+El método de mínimos cuadrados se debe a Adrien-Marie Legendre (1805), que lo introdujo en su Nouvelles méthodes pour la détermination des orbites des comètes (Nuevos métodos para la determinación de las órbitas de los cometas). Ignorando la contribución de Legendre, un escritor irlandés estadounidense, Robert Adrain, editor de "The Analyst" (1808), dedujo por primera vez la ley de facilidad de error,
+
+  
+    
+      
+        ϕ
+        (
+        x
+        )
+        =
+        c
+        
+          e
+          
+            −
+            
+              h
+              
+                2
+              
+            
+            
+              x
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \phi (x)=ce^{-h^{2}x^{2}}}
+  
+
+siendo 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ y 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ constantes que dependen de la precisión de la observación. Expuso dos demostraciones, siendo la segunda esencialmente la misma de John Herschel (1850). Gauss expuso la primera demostración que parece que se conoció en Europa (la tercera después de la de Adrain) en 1809. Demostraciones adicionales se expusieron por Laplace (1810, 1812), Gauss (1823), James Ivory (1825, 1826), Hagen (1837), Friedrich Bessel (1838), W. F. Donkin (1844, 1856) y Morgan Crofton (1870). Otros personajes que contribuyeron fueron Ellis (1844), De Morgan (1864), Glaisher (1872) y Giovanni Schiaparelli (1875). La fórmula de Peters (1856) para 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+, el error probable de una única observación, es bien conocida.
+En el siglo XIX, entre los autores de la teoría general se incluían Laplace, Sylvestre Lacroix (1816), Littrow (1833), Adolphe Quetelet (1853), Richard Dedekind (1860), Helmert (1872), Hermann Laurent (1873), Liagre, Didion, y Karl Pearson. Augustus De Morgan y George Boole mejoraron la exposición de la teoría.
+En 1930 Andréi Kolmogorov desarrolló la base axiomática de la probabilidad utilizando teoría de la medida.
+En la parte geométrica (véase geometría integral) los colaboradores de The Educational Times fueron influyentes (Miller, Crofton, McColl, Wolstenholme, Nacho Ramis de Ayreflor, Watson y Artemas Martin).
+
+
+== Teoría ==
+
+La probabilidad constituye un importante parámetro en la determinación de las diversas casualidades obtenidas tras una serie de eventos esperados dentro de un rango estadístico.
+Existen diversas formas como método abstracto, como la teoría Dempster-Shafer y la teoría de la relatividad numérica, esta última con un alto grado de aceptación si se toma en cuenta que disminuye considerablemente las posibilidades hasta un nivel mínimo ya que somete a todas las antiguas reglas a una simple ley de relatividad.[cita requerida]
+La probabilidad de un evento se denota con la letra p y se expresa en términos de una fracción y no en porcentajes[cita requerida], por lo que el valor de p cae entre 0 y 1. Por otra parte, la probabilidad de que un evento "no ocurra" equivale a 1 menos el valor de p y se denota con la letra q
+
+  
+    
+      
+        P
+        (
+        Q
+        )
+        =
+        1
+        −
+        P
+        (
+        E
+        )
+      
+    
+    {\displaystyle P(Q)=1-P(E)}
+  
+
+Los tres métodos para calcular la probabilidad son la regla de la adición, la regla de la multiplicación y la distribución binomial.
+
+
+=== Regla de la adición ===
+La regla de la adición o regla de la suma establece que la probabilidad de ocurrencia de cualquier evento en particular es igual a la suma de las probabilidades individuales, si es que los eventos son mutuamente excluyentes, es decir, que dos no pueden ocurrir al mismo tiempo.
+Por un lado, si 
+  
+    
+      
+        A
+        ∩
+        B
+        =
+        ∅
+      
+    
+    {\displaystyle A\cap B=\varnothing }
+  
+, es decir que son mutuamente excluyentes, entonces
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)}
+  
+
+Por otro lado, si 
+  
+    
+      
+        A
+        ∩
+        B
+        ≠
+        ∅
+      
+    
+    {\displaystyle A\cap B\neq \varnothing }
+  
+, es decir que no son mutuamente excluyentes, entonces
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)-P(A\cap B)}
+  
+ Siendo: 
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+      
+    
+    {\displaystyle P(A)=}
+  
+probabilidad de ocurrencia del evento A, 
+  
+    
+      
+        P
+        (
+        B
+        )
+        =
+      
+    
+    {\displaystyle P(B)=}
+  
+probabilidad de ocurrencia del evento B, y 
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+      
+    
+    {\displaystyle P(A\cap B)=}
+  
+ probabilidad de ocurrencia simultánea de los eventos A y B.
+Otra forma de verlo sería expresar la probabilidad de sucesos mutuamente no excluyentes mediante el sumatorio de las probabilidades de un evento determinado en función de otros eventos:
+
+  
+    
+      
+        P
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            y
+          
+        
+        
+          P
+          (
+          x
+          ,
+          y
+          )
+        
+        =
+        
+          ∑
+          
+            y
+          
+        
+        
+          P
+          (
+          y
+          )
+          P
+          (
+          x
+          
+            |
+          
+          y
+          )
+        
+        
+          O
+          R
+          D
+          E
+          N
+          A
+          R
+          :
+        
+      
+    
+    {\displaystyle P(x)=\sum _{y}{P(x,y)}=\sum _{y}{P(y)P(x|y)}{ORDENAR:}}
+  
+
+
+=== Regla de la multiplicación ===
+La regla de la multiplicación establece que la probabilidad de ocurrencia de dos o más eventos estadísticamente independientes es igual al producto de sus probabilidades individuales.
+
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+      
+    
+    {\displaystyle P(A\cap B)=P(A)P(B)}
+  
+,  si A y B son independientes.
+
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+      
+    
+    {\displaystyle P(A\cap B)=P(A)P(B|A)}
+  
+, si A y B son dependientes.
+siendo 
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+      
+    
+    {\displaystyle P(B|A)}
+  
+ la probabilidad de que ocurra B habiéndose dado o verificado el evento A.
+Un lote contiene "100" objetos de los cuales "20" son defectuosos. Los objetos son seleccionados uno después del otro para ver si son defectuosos. Suponiendo que dos objetos son seleccionados sin reemplazo (esto es, que el objeto que se selecciona al azar se deja fuera del lote), ¿cuál es la probabilidad de que los dos objetos seleccionados sean defectuosos?
+Solución:
+Sea los eventos 
+
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+        =
+      
+    
+    {\displaystyle A_{1}=}
+  
+ primer objeto defectuoso, 
+  
+    
+      
+        
+          A
+          
+            2
+          
+        
+        =
+      
+    
+    {\displaystyle A_{2}=}
+  
+segundo objeto defectuoso
+entonces dos objetos seleccionados serán defectuosos, cuando ocurre el evento 
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+        ∩
+        
+          A
+          
+            2
+          
+        
+      
+    
+    {\displaystyle A_{1}\cap A_{2}}
+  
+ que es la intersección entre los eventos 
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+      
+    
+    {\displaystyle A_{1}}
+  
+ y 
+  
+    
+      
+        
+          A
+          
+            2
+          
+        
+      
+    
+    {\displaystyle A_{2}}
+  
+. De la información dada se tiene que: 
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            1
+          
+        
+        )
+        =
+        
+          
+            20
+            100
+          
+        
+      
+    
+    {\displaystyle P(A_{1})={\frac {20}{100}}}
+  
+; 
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            2
+          
+        
+        
+          |
+        
+        
+          A
+          
+            1
+          
+        
+        )
+        =
+        
+          
+            19
+            99
+          
+        
+      
+    
+    {\displaystyle P(A_{2}|A_{1})={\frac {19}{99}}}
+  
+
+así que la probabilidad de que los dos objetos seleccionados sean defectuosos es 
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            1
+          
+        
+        ∩
+        
+          A
+          
+            2
+          
+        
+        )
+        =
+        P
+        (
+        
+          A
+          
+            1
+          
+        
+        )
+        P
+        (
+        
+          A
+          
+            2
+          
+        
+        
+          |
+        
+        
+          A
+          
+            1
+          
+        
+        )
+        =
+        
+          
+            20
+            100
+          
+        
+        ⋅
+        
+          
+            19
+            99
+          
+        
+        =
+        
+          
+            19
+            495
+          
+        
+        ≃
+        0.038
+      
+    
+    {\displaystyle P(A_{1}\cap A_{2})=P(A_{1})P(A_{2}|A_{1})={\frac {20}{100}}\cdot {\frac {19}{99}}={\frac {19}{495}}\simeq 0.038}
+  
+ 
+Ahora, suponiendo que se selecciona un tercer objeto, entonces la probabilidad de que los tres objetos seleccionados sean defectuosos es 
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            1
+          
+        
+        ∩
+        
+          A
+          
+            2
+          
+        
+        ∩
+        
+          A
+          
+            3
+          
+        
+        )
+        =
+        P
+        (
+        
+          A
+          
+            1
+          
+        
+        )
+        P
+        (
+        
+          A
+          
+            2
+          
+        
+        
+          |
+        
+        
+          A
+          
+            1
+          
+        
+        )
+        P
+        (
+        
+          A
+          
+            3
+          
+        
+        
+          |
+        
+        
+          A
+          
+            1
+          
+        
+        ∩
+        
+          A
+          
+            2
+          
+        
+        )
+        =
+        
+          
+            20
+            100
+          
+        
+        ⋅
+        
+          
+            19
+            99
+          
+        
+        ⋅
+        
+          
+            18
+            98
+          
+        
+        =
+        
+          
+            19
+            2695
+          
+        
+        ≃
+        0.007
+      
+    
+    {\displaystyle P(A_{1}\cap A_{2}\cap A_{3})=P(A_{1})P(A_{2}|A_{1})P(A_{3}|A_{1}\cap A_{2})={\frac {20}{100}}\cdot {\frac {19}{99}}\cdot {\frac {18}{98}}={\frac {19}{2695}}\simeq 0.007}
+  
+
+
+=== Regla de Laplace ===
+La Regla de Laplace establece que:
+
+La probabilidad de ocurrencia de un suceso imposible es 0.
+La probabilidad de ocurrencia de un suceso seguro es 1, es decir, 
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        1
+      
+    
+    {\displaystyle P(A)=1}
+  
+.
+Para aplicar la regla de Laplace es necesario que los experimentos den lugar a sucesos equiprobables, es decir, que todos tengan o posean la misma probabilidad.
+
+La probabilidad de que ocurra un suceso se calcula así:
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            Nº de casos favorables
+             Nº de resultados posibles
+          
+        
+      
+    
+    {\displaystyle P(A)={\frac {\text{Nº de casos favorables}}{\text{ Nº de resultados posibles}}}}
+  
+
+Esto significa que: la probabilidad del evento A es igual al cociente del número de casos favorables (los casos donde sucede A) sobre el total de casos posibles.
+
+
+=== Distribución binomial ===
+
+La probabilidad de ocurrencia de una combinación específica de eventos independientes y mutuamente excluyentes se determina con la distribución binomial, que es aquella donde hay solo dos posibilidades, que se suelen designar como éxito y fracaso.
+
+Hay dos resultados posibles mutuamente excluyentes en cada ensayo u observación.
+La serie de ensayos u observaciones constituyen eventos independientes.
+La probabilidad de éxito permanece constante de ensayo a ensayo, es decir el proceso es estacionario.
+Para aplicar esta distribución al cálculo de la probabilidad de obtener un número dado de éxitos en una serie de experimentos en un proceso de Bernoulli, se requieren tres valores: el número designado de éxitos (m), el número de ensayos y observaciones (n); y la probabilidad de éxito en cada ensayo (p). 
+Entonces la probabilidad de que ocurran m éxitos en un experimento de n ensayos es:
+
+  
+    
+      
+        P
+        (
+        x
+        =
+        m
+        )
+        =
+        
+          
+            
+              (
+            
+            
+              n
+              m
+            
+            
+              )
+            
+          
+        
+        
+          p
+          
+            m
+          
+        
+        (
+        1
+        −
+        p
+        
+          )
+          
+            n
+            −
+            m
+          
+        
+      
+    
+    {\displaystyle P(x=m)={n \choose m}p^{m}(1-p)^{n-m}}
+  
+
+donde 
+  
+    
+      
+        
+          
+            
+              (
+            
+            
+              n
+              m
+            
+            
+              )
+            
+          
+        
+        =
+        
+          
+            
+              n
+              !
+            
+            
+              m
+              !
+              (
+              n
+              −
+              m
+              )
+              !
+            
+          
+        
+      
+    
+    {\displaystyle {n \choose m}={\frac {n!}{m!(n-m)!}}}
+  
+ es el número total de combinaciones posibles de m elementos en un conjunto de n elementos.
+
+
+== Aplicaciones ==
+Dos aplicaciones principales de la teoría de la probabilidad en el día a día son en el análisis de riesgo y en el comercio de los mercados de materias primas. Los gobiernos normalmente aplican métodos probabilísticos en regulación ambiental donde se les llama "análisis de vías de dispersión o separación por medio de ecuaciones", y a menudo miden el bienestar usando métodos que son estocásticos por naturaleza, y escogen qué proyectos emprender basándose en análisis estadísticos de su probable efecto en la población como un conjunto. No es correcto decir que la estadística está incluida en el propio modelado, ya que típicamente los análisis de riesgo son para una única vez y por lo tanto requieren más modelos de probabilidad fundamentales, por ej. "la probabilidad de otro 11-S". Una ley de números pequeños tiende a aplicarse a todas aquellas elecciones y percepciones del efecto de estas elecciones, lo que hace de las medidas probabilísticas un tema político.
+Un buen ejemplo es el efecto de la probabilidad percibida de cualquier conflicto generalizado sobre los precios del petróleo en Oriente Medio - que producen un efecto dominó en la economía en conjunto. Un cálculo por un mercado de materias primas en que la guerra es más probable encontrar  los precios hacia arriba o hacia abajo e indica a otros comerciantes esa opinión. Por consiguiente, la probabilidad no se calcula independientemente y tampoco es necesariamente muy racional. La teoría de las finanzas conductuales surgió para describir el efecto de este pensamiento de grupo en el precio, en la política, y en la paz y en los conflictos.
+Se puede decir razonablemente que el descubrimiento de métodos rigurosos para calcular y combinar los cálculos de probabilidad ha tenido un profundo efecto en la sociedad moderna. Por consiguiente, puede ser de alguna importancia para la mayoría de los ciudadanos entender cómo se calculan los pronósticos y la probabilidad, y cómo contribuyen a la reputación y a las decisiones, especialmente en una democracia.
+Otra aplicación significativa de la teoría de la probabilidad en el día a día es en la fiabilidad. Muchos bienes de consumo, como los automóviles y la electrónica de consumo, utilizan la teoría de la fiabilidad en el diseño del producto para reducir la probabilidad de avería. La probabilidad de avería también está estrechamente relacionada con la garantía del producto.
+Se puede decir que no existe una cosa llamada probabilidad. También se puede decir que la probabilidad es la medida de nuestro grado de incertidumbre, o esto es, el grado de nuestra ignorancia dada una situación. Por consiguiente, puede haber una probabilidad de 1 entre 52 de que la primera carta en un baraja sea la J de diamantes. Sin embargo, si uno mira la primera carta y la reemplaza, entonces la probabilidad es o bien 100% o 0%, y la elección correcta puede ser hecha con precisión por el que ve la carta. La física moderna proporciona ejemplos importantes de situaciones deterministas donde solo la descripción probabilística es factible debido a información incompleta y la complejidad de un sistema así como ejemplos de fenómenos realmente aleatorios.
+En un universo determinista, basado en los conceptos newtonianos, no hay probabilidad si se conocen todas las condiciones. En el caso de una ruleta, si la fuerza de la mano y el periodo de esta fuerza es conocido, entonces el número donde la bola parará será seguro. Naturalmente, esto también supone el conocimiento de la inercia y la fricción de la ruleta, el peso, lisura y redondez de la bola, las variaciones en la velocidad de la mano durante el movimiento y así sucesivamente. Una descripción probabilística puede entonces ser más práctica que la mecánica newtoniana para analizar el modelo de las salidas de lanzamientos repetidos de la ruleta. Los físicos se encuentran con la misma situación en la teoría cinética de los gases, donde el sistema determinístico en principio, es tan complejo (con el número de moléculas típicamente del orden de magnitud de la constante de Avogadro 
+  
+    
+      
+        6
+        ⋅
+        
+          10
+          
+            23
+          
+        
+      
+    
+    {\displaystyle 6\cdot 10^{23}}
+  
+) que solo la descripción estadística de sus propiedades es viable.
+La mecánica cuántica, debido al principio de indeterminación de Heisenberg, solo puede ser descrita actualmente a través de distribuciones de probabilidad, lo que le da una gran importancia a las descripciones probabilísticas. Algunos científicos hablan de la expulsión del paraíso.[cita requerida] Otros no se conforman con la pérdida del determinismo. Albert Einstein comentó estupendamente en una carta a Max Born: Jedenfalls bin ich überzeugt, daß der Alte nicht würfelt. (Estoy convencido de que Dios no tira el dado). No obstante hoy en día no existe un medio mejor para describir la física cuántica si no es a través de la teoría de la probabilidad. Mucha gente hoy en día confunde el hecho de que la mecánica cuántica se describe a través de distribuciones de probabilidad con la suposición de que es por ello un proceso aleatorio, cuando la mecánica cuántica es probabilística no por el hecho de que siga procesos aleatorios sino por el hecho de no poder determinar con precisión sus parámetros fundamentales, lo que imposibilita la creación de un sistema de ecuaciones determinista.
+
+
+=== Investigación biomédica ===
+
+La mayoría de las investigaciones biomédicas utilizan muestras de probabilidad, es decir, aquellas que el investigador pueda especificar la probabilidad de cualquier elemento en la población que investiga. Las muestras de probabilidad permiten usar estadísticas inferenciales, aquellas que permiten hacer inferencias a partir de datos. Por otra parte, las muestras no probabilísticas solo permiten usarse estadísticas descriptivas, aquellas que solo permiten describir, organizar y resumir datos. Se utilizan cuatro tipos de muestras probabilísticas: muestras aleatorias simples, muestras aleatorias estratificadas, muestra por conglomerados y muestras sistemáticas.
+
+
+== Relación con el azar y la probabilidad en la mecánica cuántica ==
+
+En un universo determinista, basado en los conceptos de la mecánica newtoniana, no habría probabilidad si se conocieran todas las condiciones (demonio de Laplace), pero hay situaciones en las que la sensibilidad a las condiciones iniciales supera nuestra capacidad de medirlas, es decir, de conocerlas.  En el caso de una ruleta, si se conoce la fuerza de la mano y el período de esa fuerza, el número en el que se detendrá la bola sería una certeza (aunque, como cuestión práctica, esto probablemente sólo sería cierto en una ruleta que no hubiera sido exactamente nivelada, como reveló el Casino Newtoniano de Thomas A. Bass).  Esto también supone el conocimiento de la inercia y la fricción de la rueda, el peso, la suavidad y la redondez de la bola, las variaciones en la velocidad de la mano durante el giro, etc. Así, una descripción probabilística puede ser más útil que la mecánica newtoniana para analizar el patrón de resultados de las repetidas tiradas de una ruleta. Los físicos se enfrentan a la misma situación en la teoría cinética de los gases, donde el sistema, aunque determinista en principio, es tan complejo (con el número de moléculas típicamente del orden de magnitud de la constante de Avogadro, 6,02<e<23) que sólo es posible una descripción estadística de sus propiedades.
+La teoría de la probabilidad es necesaria para describir los fenómenos cuánticos.[11]​ Un descubrimiento revolucionario de la física de principios del siglo XX fue el carácter aleatorio de todos los procesos físicos que ocurren a escalas subatómicas y que se rigen por las leyes de la mecánica cuántica. La función de onda objetiva evoluciona de forma determinista pero, según la interpretación de Copenhague, se trata de probabilidades de observar, explicándose el resultado por un colapso de la función de onda cuando se realiza una observación. Sin embargo, la pérdida del determinismo en aras del instrumentalismo no contó con la aprobación universal. Albert Einstein famosamente remarcó en una carta a Max Born: "Estoy convencido de que Dios no juega a los dados".[12]​ Al igual que Einstein, Erwin Schrödinger, que descubrió la función de onda, creía que la mecánica cuántica es una aproximación estadística de una realidad determinista subyacente.[13]​ En algunas interpretaciones modernas de la mecánica estadística de la medición, se invoca la decoherencia cuántica para explicar la aparición de resultados experimentales subjetivamente probabilísticos.
+
+
+== Véase también ==
+Teoría de la decisión
+Teoría de juegos
+Teoría de la información
+Teoría de la medida
+Variable aleatoria
+Estadística
+Proceso estocástico
+Equiprobabilidad
+Frecuencia estadística
+Interpretaciones de la probabilidad
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Kallenberg, O. (2005) Probabilistic Symmetries and Invariance Principles. Springer-Verlag, New York. 510 pp. ISBN 0-387-25115-4
+Kallenberg, O. (2002) Foundations of Modern Probability, 2nd ed. Springer Series in Statistics. 650 pp. ISBN 0-387-95313-2
+Olofsson, Peter (2005) Probability, Statistics, and Stochastic Processes, Wily-Interscience. 504 pp ISBN 0-471-67969-0.
+
+
+== Enlaces externos ==
+ Wikcionario  tiene definiciones y otra información sobre probabilidad.
+Problemas selectos de probabilidad (resueltos)
+Edwin Thompson Jaynes. Probability Theory: The Logic of Science. Preprint: Washington University, (1996). (PDF) (en inglés)
+Un problema de probabilidades: [1]

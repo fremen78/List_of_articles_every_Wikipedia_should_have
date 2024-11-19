@@ -1,0 +1,8233 @@
+Die komplexen Zahlen stellen eine Erweiterung der reellen Zahlen dar.
+Ziel der Erweiterung ist es, algebraische Gleichungen wie 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{2}+1=0}
+  
+ bzw. 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle x^{2}=-1}
+  
+ lösbar zu machen. Im Gegensatz zu den Erweiterungen 
+  
+    
+      
+        
+          N
+        
+        →
+        
+          Z
+        
+        →
+        
+          Q
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {N} \rightarrow \mathbb {Z} \rightarrow \mathbb {Q} \rightarrow \mathbb {R} }
+  
+ reicht es hier nicht mehr aus, die Zahlen „linksseitig“ zu erweitern (ganze Zahlen) oder „dichter zu stopfen“ (rationale und reelle Zahlen), sondern man wechselt von einer Zahlengeraden zu einer Zahlenebene.
+Da die Quadrate aller reellen Zahlen größer oder gleich 0 sind, kann die Lösung der Gleichung 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle x^{2}=-1}
+  
+ keine reelle Zahl sein. Man braucht eine ganz neue Zahl, die man üblicherweise 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ nennt, mit der Eigenschaft 
+  
+    
+      
+        
+          
+            i
+          
+          
+            2
+          
+        
+        =
+        −
+        1.
+      
+    
+    {\displaystyle \mathrm {i} ^{2}=-1.}
+  
+ Diese Zahl 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ wird als imaginäre Einheit bezeichnet.
+Komplexe Zahlen werden nun als Summe 
+  
+    
+      
+        a
+        +
+        b
+        ⋅
+        
+          i
+        
+      
+    
+    {\displaystyle a+b\cdot \mathrm {i} }
+  
+ definiert, wobei 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ und 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ reelle Zahlen sind und 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ die oben definierte imaginäre Einheit ist.
+Auf die so definierten komplexen Zahlen lassen sich die üblichen Rechenregeln für reelle Zahlen anwenden, wobei 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ wie eine Konstante verwendet wird und 
+  
+    
+      
+        
+          
+            i
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathrm {i} ^{2}}
+  
+ durch 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+ ersetzt werden kann und umgekehrt. Für die Menge der komplexen Zahlen wird das Symbol 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ (ℂ als Unicode-Zeichen U+2102, siehe Buchstaben mit Doppelstrich) verwendet.
+Der so konstruierte Zahlenbereich der komplexen Zahlen bildet einen Erweiterungskörper der reellen Zahlen und hat eine Reihe vorteilhafter Eigenschaften, die sich in vielen Bereichen der Natur- und Ingenieurwissenschaften als äußerst nützlich erwiesen haben. Einer der Gründe für diese nützlichen Eigenschaften ist die algebraische Abgeschlossenheit der komplexen Zahlen. Dies bedeutet, dass jede algebraische Gleichung positiven Grades über den komplexen Zahlen eine Lösung besitzt, was für reelle Zahlen nicht gilt. Diese Eigenschaft ist der Inhalt des Fundamentalsatzes der Algebra. Ein weiterer Grund ist ein Zusammenhang zwischen trigonometrischen Funktionen und der Exponentialfunktion (Eulerformel), der über die komplexen Zahlen hergestellt werden kann. Ferner ist jede auf einer offenen Menge einmal komplex differenzierbare Funktion dort auch beliebig oft differenzierbar – anders als in der Analysis der reellen Zahlen. Die Eigenschaften von Funktionen mit komplexen Argumenten sind Gegenstand der Funktionentheorie, auch komplexe Analysis genannt.
+In der Elektrotechnik wird stattdessen der Buchstabe 
+  
+    
+      
+        
+          j
+        
+      
+    
+    {\displaystyle \mathrm {j} }
+  
+ verwendet, um einer Verwechslung mit einer (durch 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ oder 
+  
+    
+      
+        i
+        (
+        t
+        )
+      
+    
+    {\displaystyle i(t)}
+  
+ bezeichneten) von der Zeit 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ abhängigen Stromstärke vorzubeugen, allerdings erhöht dies die Verwechslungsgefahr mit der Stromdichte 
+  
+    
+      
+        
+          
+            
+              ȷ
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\jmath }}}
+  
+ in der Elektrodynamik.
+
+
+== Definition ==
+Die komplexen Zahlen lassen sich als Zahlbereich im Sinne einer Menge von Zahlen, für die die Grundrechenarten Addition, Multiplikation, Subtraktion und Division erklärt sind, mit den folgenden Eigenschaften definieren:
+
+Die reellen Zahlen sind in den komplexen Zahlen enthalten. Das heißt, dass jede reelle Zahl eine komplexe Zahl ist.
+Das Assoziativgesetz und das Kommutativgesetz gelten für die Addition und die Multiplikation komplexer Zahlen.
+Das Distributivgesetz gilt.
+Für jede komplexe Zahl 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ existiert eine komplexe Zahl 
+  
+    
+      
+        −
+        z
+      
+    
+    {\displaystyle -z}
+  
+, sodass: 
+  
+    
+      
+        z
+        +
+        (
+        −
+        z
+        )
+        =
+        0
+      
+    
+    {\displaystyle z+(-z)=0}
+  
+
+Für jede von Null verschiedene komplexe Zahl 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ existiert eine komplexe Zahl 
+  
+    
+      
+        
+          
+            
+              1
+              z
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{z}}}
+  
+, sodass: 
+  
+    
+      
+        z
+        ⋅
+        
+          
+            
+              1
+              z
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle z\cdot {\tfrac {1}{z}}=1}
+  
+
+Es existiert eine komplexe Zahl 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ mit der Eigenschaft 
+  
+    
+      
+         
+        
+          
+            i
+          
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle \ \mathrm {i} ^{2}=-1}
+  
+ .
+Unter allen Zahlbereichen mit den zuvor genannten Eigenschaften sind die komplexen Zahlen minimal.
+Die letzte Forderung ist gleichbedeutend damit, dass sich jede komplexe Zahl in der Form 
+  
+    
+      
+        a
+        +
+        b
+        ⋅
+        
+          i
+        
+      
+    
+    {\displaystyle a+b\cdot \mathrm {i} }
+  
+ (bzw. in verkürzter Notation 
+  
+    
+      
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle a+b\,\mathrm {i} }
+  
+ oder auch 
+  
+    
+      
+        a
+        +
+        
+          i
+        
+        
+        b
+      
+    
+    {\displaystyle a+\mathrm {i} \,b}
+  
+) mit reellen Zahlen 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ und 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ darstellen lässt. Die imaginäre Einheit 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ ist dabei keine reelle Zahl. Die Existenz eines solchen Zahlbereichs wird im Abschnitt zur Konstruktion der komplexen Zahlen nachgewiesen.
+Unter Verwendung der Begriffe Körper und Isomorphie lässt sich das so formulieren: Es gibt minimale Körper, die den Körper der reellen Zahlen und ein Element 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ mit der Eigenschaft 
+  
+    
+      
+        
+          
+            i
+          
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle \mathrm {i} ^{2}=-1}
+  
+ enthalten. In einem solchen Körper hat jedes Element 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ eine und nur eine Darstellung als 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} }
+  
+ mit reellen 
+  
+    
+      
+        a
+        ,
+        b
+        .
+      
+    
+    {\displaystyle a,b.}
+  
+ Die komplexen Zahlen sind isomorph zu jedem solchen Körper.
+Die Koeffizienten 
+  
+    
+      
+        a
+        ,
+        b
+      
+    
+    {\displaystyle a,b}
+  
+ werden als Real- bzw. Imaginärteil von 
+  
+    
+      
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle a+b\,\mathrm {i} }
+  
+ bezeichnet. Dafür haben sich zwei typografische Schreibweisen etabliert:
+
+  
+    
+      
+        a
+        =
+        Re
+        
+        
+          (
+          a
+          +
+          b
+          
+          
+            i
+          
+          )
+        
+         
+      
+    
+    {\displaystyle a=\operatorname {Re} \!{(a+b\,\mathrm {i} )}\ }
+  
+ und 
+  
+    
+      
+         
+        b
+        =
+        Im
+        
+        
+          (
+          a
+          +
+          b
+          
+          
+            i
+          
+          )
+        
+      
+    
+    {\displaystyle \ b=\operatorname {Im} \!{(a+b\,\mathrm {i} )}}
+  
+  (Schreibweise der Operatoren ohne besondere Ausschreibung)
+
+  
+    
+      
+        a
+        =
+        
+        
+        ℜ
+        
+          (
+          a
+          +
+          b
+          
+          
+            i
+          
+          )
+        
+         
+      
+    
+    {\displaystyle a=\,\,\Re {(a+b\,\mathrm {i} )}\ }
+  
+ und 
+  
+    
+      
+        
+        b
+        =
+        
+        
+        ℑ
+        
+          (
+          a
+          +
+          b
+          
+          
+            i
+          
+          )
+        
+      
+    
+    {\displaystyle \;b=\;\;\Im {(a+b\,\mathrm {i} )}}
+  
+   (Schreibweise der Operatoren in Frakturschrift)
+In der Elektrotechnik wird das kleine i schon für zeitlich veränderliche Ströme verwendet (siehe Wechselstrom) und kann zu Verwechslungen mit der imaginären Einheit 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ führen. Daher wird in der Elektrotechnik üblicherweise für die imaginäre Einheit die Bezeichnung 
+  
+    
+      
+        
+          j
+        
+      
+    
+    {\displaystyle \mathrm {j} }
+  
+ gewählt, wie dies auch in der Norm DIN 1302 festgelegt ist.
+In der Physik wird zwischen 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ für die Stromstärke bei Wechselstrom und 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ durch die Art der Darstellung des Buchstabens für die imaginäre Einheit unterschieden. Dies führt durch die Trennung beim aufmerksamen Leser nicht zu Verwechslungen und wird in dieser Form weitgehend sowohl in der physikalisch-experimentellen als auch in der physikalisch-theoretischen Literatur angewandt; handschriftlich ist diese Feinheit allerdings nicht zu halten, weshalb häufig das 
+  
+    
+      
+        
+          j
+        
+      
+    
+    {\displaystyle \mathrm {j} }
+  
+ als Symbol für die imaginäre Einheit verwendet wird. Siehe auch: Komplexe Wechselstromrechnung
+Komplexe Zahlen können gemäß DIN 1304-1 und DIN 5483-3 unterstrichen dargestellt werden, um sie von reellen Zahlen zu unterscheiden. Siehe auch: Phasor.
+
+
+== Grundlegende Eigenschaften ==
+
+
+=== Darstellung von komplexen Zahlen in der komplexen Zahlenebene ===
+
+Während sich die Menge 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ der reellen Zahlen als Punkte auf einer Zahlengeraden darstellen lässt, lässt sich die Menge 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ der komplexen Zahlen als Punkte auf einer Ebene (komplexe Ebene, gaußsche Zahlenebene) darstellen. Da die komplexen Zahlen einen zweidimensionalen reellen Vektorraum definieren, kann die komplexe Ebene mit einem kartesischen Koordinatensystem versehen werden, das von den beiden orthogonalen Vektoren 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ und 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ aufgespannt wird. Es ist üblich, innerhalb diesem die reellen Zahlen 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ über eine waagerechte und die imaginären Zahlen 
+  
+    
+      
+        
+          R
+        
+        
+          i
+        
+      
+    
+    {\displaystyle \mathbb {R} \mathrm {i} }
+  
+ über eine senkrechte Achse darzustellen. Eine komplexe Zahl 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} }
+  
+ mit 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a,b\in \mathbb {R} }
+  
+ besitzt dann die „horizontale Koordinate“ 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ und die „vertikale Koordinate“ 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+, wird also mit dem Zahlenpaar 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (a,b)\in \mathbb {R} ^{2}}
+  
+ identifiziert. Entsprechend bildet 
+  
+    
+      
+        {
+        1
+        ,
+        
+          i
+        
+        }
+      
+    
+    {\displaystyle \{1,\mathrm {i} \}}
+  
+ eine Basis des 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+-Vektorraumes 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+.
+Gemäß Definition entspricht die Addition komplexer Zahlen einer Vektoraddition, wobei man die Punkte in der Zahlenebene mit ihren Ortsvektoren identifiziert. Die Subtraktion komplexer Zahlen entspricht einer Vektorsubtraktion.
+Die Multiplikation ist in der gaußschen Ebene eine Drehstreckung, was nach Einführung der Polarform weiter unten klarer werden sollte.
+Es gibt mehrere Möglichkeiten der Darstellung von komplexen Zahlen:
+
+Darstellung in kartesischen Koordinaten 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+, gelegentlich auch algebraische Form genannt, als Summe des reellen 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ und des rein imaginären Anteils 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ mit folgenden Schreibweisen, also
+
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+         
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\ \mathrm {i} }
+  
+ oder auch 
+  
+    
+      
+        z
+        =
+        a
+        +
+        
+          i
+        
+         
+        b
+         
+      
+    
+    {\displaystyle z=a+\mathrm {i} \ b\ }
+  
+.
+
+Darstellung in Polarkoordinaten bzw. in Polardarstellung 
+  
+    
+      
+        (
+        r
+        ,
+        φ
+        )
+      
+    
+    {\displaystyle (r,\varphi )}
+  
+ als Produkt des absoluten Betrages 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ gedreht um den Winkel 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ mit folgenden Schreibweisen:
+
+  
+    
+      
+        z
+        =
+        r
+        
+        (
+        cos
+        ⁡
+        φ
+        +
+        
+          i
+        
+        sin
+        ⁡
+        φ
+        )
+      
+    
+    {\displaystyle z=r\,(\cos \varphi +\mathrm {i} \sin \varphi )}
+  
+,
+
+  
+    
+      
+        z
+        =
+        r
+        
+        cis
+        ⁡
+        φ
+      
+    
+    {\displaystyle z=r\,\operatorname {cis} \varphi }
+  
+,
+
+  
+    
+      
+        z
+        =
+        r
+        
+        
+          
+            e
+          
+          
+            
+              i
+            
+            φ
+          
+        
+        .
+      
+    
+    {\displaystyle z=r\;\mathrm {e} ^{\mathrm {i} \varphi }.}
+  
+
+Hierbei wird der Faktor 
+  
+    
+      
+        
+          
+            e
+          
+          
+            
+              i
+            
+            φ
+          
+        
+      
+    
+    {\displaystyle \mathrm {e} ^{\mathrm {i} \varphi }}
+  
+ als Phasenfaktor und der Winkel 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ auch als Argument 
+  
+    
+      
+        φ
+        =
+        arg
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \varphi =\arg(z)}
+  
+ der komplexen Zahl (in Polardarstellung) bezeichnet. Hintergrund dieser Darstellung ist die Eulersche Formel, die über die komplexen Zahlen einen fundamentalen Zusammenhang zwischen der natürlichen Exponentialfunktion und den trigonometrischen Funktionen herstellt. Alle oberen Schreibweisen stellen demnach exakt den gleichen Sachverhalt dar. Es ist zu beachten, dass die komplexe Zahl 
+  
+    
+      
+        z
+        =
+        0
+      
+    
+    {\displaystyle z=0}
+  
+ kein Argument besitzt, weshalb hier keine Darstellung in Polarkoordinaten im oberen Sinne möglich ist.
+Eine Umwandlung von kartesischer Form in Polarform ist mittels 
+  
+    
+      
+        0
+        ≠
+        z
+        =
+        a
+        +
+        b
+        
+          i
+        
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        
+          
+            
+              e
+            
+          
+          
+            
+              i
+            
+            φ
+          
+        
+      
+    
+    {\displaystyle 0\not =z=a+b\mathrm {i} =|z|{\mathrm {e} }^{\mathrm {i} \varphi }}
+  
+ und
+
+  
+    
+      
+        φ
+        =
+        arg
+        ⁡
+        (
+        a
+        +
+        b
+        
+          i
+        
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  2
+                  arctan
+                  ⁡
+                  
+                    (
+                    
+                      
+                        
+                          b
+                          
+                            
+                              
+                                
+                                  a
+                                  
+                                    2
+                                  
+                                
+                                +
+                                
+                                  b
+                                  
+                                    2
+                                  
+                                
+                              
+                            
+                            +
+                            a
+                          
+                        
+                      
+                    
+                    )
+                  
+                
+                
+                  
+                    falls 
+                  
+                  b
+                  ≠
+                  0
+                  
+                     oder 
+                  
+                  a
+                  >
+                  0
+                  ,
+                
+              
+              
+                
+                  π
+                
+                
+                  
+                    falls 
+                  
+                  b
+                  =
+                  0
+                  
+                     und 
+                  
+                  a
+                  <
+                  0
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \varphi =\arg(a+b\mathrm {i} )={\begin{cases}2\arctan \left({\dfrac {b}{{\sqrt {a^{2}+b^{2}}}+a}}\right)&{\text{falls }}b\neq 0{\text{ oder }}a>0,\\\pi &{\text{falls }}b=0{\text{ und }}a<0\end{cases}}}
+  
+
+möglich. Setzt man 
+  
+    
+      
+        φ
+        =
+        arg
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \varphi =\arg(z)}
+  
+, ergo 
+  
+    
+      
+        sin
+        ⁡
+        (
+        φ
+        )
+        =
+        
+          
+            
+              b
+              
+                
+                  a
+                  
+                    2
+                  
+                
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \sin(\varphi )={\tfrac {b}{\sqrt {a^{2}+b^{2}}}}}
+  
+ und 
+  
+    
+      
+        cos
+        ⁡
+        (
+        φ
+        )
+        =
+        
+          
+            
+              a
+              
+                
+                  a
+                  
+                    2
+                  
+                
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \cos(\varphi )={\tfrac {a}{\sqrt {a^{2}+b^{2}}}}}
+  
+, so ist der obere Teil dieser Gleichung die Konsequenz aus der Halbwinkelformel 
+
+  
+    
+      
+        tan
+        ⁡
+        
+          (
+          
+            
+              φ
+              2
+            
+          
+          )
+        
+        =
+        
+          
+            
+              sin
+              ⁡
+              (
+              φ
+              )
+            
+            
+              1
+              +
+              cos
+              ⁡
+              (
+              φ
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                b
+                
+                  
+                    a
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+            
+            
+              1
+              +
+              
+                
+                  
+                    a
+                    
+                      
+                        a
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        b
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            b
+            
+              
+                
+                  
+                    a
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+              +
+              a
+            
+          
+        
+        
+        (
+        
+          falls 
+        
+        b
+        ≠
+        0
+        
+           oder 
+        
+        a
+        >
+        0
+        )
+        .
+      
+    
+    {\displaystyle \tan \left({\frac {\varphi }{2}}\right)={\frac {\sin(\varphi )}{1+\cos(\varphi )}}={\frac {\tfrac {b}{\sqrt {a^{2}+b^{2}}}}{1+{\tfrac {a}{\sqrt {a^{2}+b^{2}}}}}}={\frac {b}{{\sqrt {a^{2}+b^{2}}}+a}}\qquad ({\text{falls }}b\neq 0{\text{ oder }}a>0).}
+  
+
+Die linke Seite lässt sich im „vollen Winkelbereich des Hauptarguments“ 
+  
+    
+      
+        −
+        π
+        <
+        φ
+        <
+        π
+      
+    
+    {\displaystyle -\pi <\varphi <\pi }
+  
+ unter Anwendung des Arkustangens zu 
+  
+    
+      
+        
+          
+            
+              φ
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {\varphi }{2}}}
+  
+ umformen. Ist hingegen 
+  
+    
+      
+        −
+        
+          
+            
+              π
+              2
+            
+          
+        
+        <
+        φ
+        <
+        
+          
+            
+              π
+              2
+            
+          
+        
+      
+    
+    {\displaystyle -{\tfrac {\pi }{2}}<\varphi <{\tfrac {\pi }{2}}}
+  
+, also 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ auf der rechten Halbebene, so kann die Gleichung 
+  
+    
+      
+        tan
+        ⁡
+        (
+        φ
+        )
+        =
+        
+          
+            
+              b
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \tan(\varphi )={\tfrac {b}{a}}}
+  
+ vereinfachend auch zu 
+  
+    
+      
+        φ
+        =
+        arg
+        ⁡
+        (
+        z
+        )
+        =
+        arctan
+        ⁡
+        (
+        
+          
+            
+              b
+              a
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \varphi =\arg(z)=\arctan({\tfrac {b}{a}})}
+  
+ aufgelöst werden.
+
+
+=== Komplexe Konjugation ===
+
+Ändert man das Vorzeichen des Imaginärteils 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ einer komplexen Zahl 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+        ,
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} ,}
+  
+ so erhält man die zu 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ konjugiert komplexe Zahl 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        =
+        a
+        −
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle {\bar {z}}=a-b\,\mathrm {i} }
+  
+ (manchmal auch 
+  
+    
+      
+        
+          z
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle z^{*}}
+  
+ geschrieben).
+Die Konjugation 
+  
+    
+      
+        
+          C
+        
+        →
+        
+          C
+        
+        ,
+        
+        z
+        ↦
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} \to \mathbb {C} ,\,z\mapsto {\bar {z}}}
+  
+ ist ein (involutorischer) Körperautomorphismus, da sie mit Addition und Multiplikation verträglich ist, d. h., für alle 
+  
+    
+      
+        y
+        ,
+        z
+        ∈
+        
+          C
+        
+      
+    
+    {\displaystyle y,z\in \mathbb {C} }
+  
+ gilt
+
+  
+    
+      
+        
+          
+            
+              y
+              +
+              z
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              y
+              ¯
+            
+          
+        
+        +
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        ,
+        
+        
+          
+            
+              y
+              ⋅
+              z
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              y
+              ¯
+            
+          
+        
+        ⋅
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\overline {y+z}}={\bar {y}}+{\bar {z}},\quad {\overline {y\cdot z}}={\bar {y}}\cdot {\bar {z}}.}
+  
+
+In der Polardarstellung hat die konjugiert komplexe Zahl 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ bei unverändertem Betrag gerade den negativen Winkel von 
+  
+    
+      
+        z
+        .
+      
+    
+    {\displaystyle z.}
+  
+ Man kann die Konjugation in der komplexen Zahlenebene also als die Spiegelung an der reellen Achse interpretieren. Insbesondere werden unter der Konjugation genau die reellen Zahlen auf sich selbst abgebildet.
+Das Produkt aus einer komplexen Zahl 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} }
+  
+ und ihrer komplex Konjugierten 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ ergibt das Quadrat ihres Betrages:
+
+  
+    
+      
+        z
+        ⋅
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        =
+        (
+        a
+        +
+        b
+        
+        
+          i
+        
+        )
+        (
+        a
+        −
+        b
+        
+        
+          i
+        
+        )
+        =
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle z\cdot {\bar {z}}=(a+b\,\mathrm {i} )(a-b\,\mathrm {i} )=a^{2}+b^{2}=|z|^{2}}
+  
+
+Die komplexen Zahlen bilden damit ein triviales Beispiel einer C*-Algebra.
+Die Summe aus einer komplexen Zahl 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} }
+  
+ und ihrer komplex Konjugierten 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ ergibt das 2-Fache ihres Realteils:
+
+  
+    
+      
+        z
+        +
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        =
+        (
+        a
+        +
+        b
+        
+        
+          i
+        
+        )
+        +
+        (
+        a
+        −
+        b
+        
+        
+          i
+        
+        )
+        =
+        2
+        a
+        =
+        2
+        
+        Re
+        ⁡
+        
+          
+          (
+          z
+          )
+        
+      
+    
+    {\displaystyle z+{\bar {z}}=(a+b\,\mathrm {i} )+(a-b\,\mathrm {i} )=2a=2\,\operatorname {Re} {\!(z)}}
+  
+
+Die Differenz aus einer komplexen Zahl 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} }
+  
+ und ihrer komplex Konjugierten 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ ergibt das 
+  
+    
+      
+        
+          2
+          i
+        
+      
+    
+    {\displaystyle \mathrm {2i} }
+  
+-Fache ihres Imaginärteils:
+
+  
+    
+      
+        z
+        −
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        =
+        (
+        a
+        +
+        b
+        
+        
+          i
+        
+        )
+        −
+        (
+        a
+        −
+        b
+        
+        
+          i
+        
+        )
+        =
+        2
+        b
+        
+        
+          i
+        
+        =
+        2
+        
+        
+          i
+        
+        
+        Im
+        ⁡
+        
+          
+          (
+          z
+          )
+        
+      
+    
+    {\displaystyle z-{\bar {z}}=(a+b\,\mathrm {i} )-(a-b\,\mathrm {i} )=2b\,\mathrm {i} =2\,\mathrm {i} \,\operatorname {Im} {\!(z)}}
+  
+
+
+=== Als normierter, metrischer und topologischer Raum ===
+Die durch die Abstandsfunktion 
+  
+    
+      
+        
+          d
+          
+            
+              C
+            
+          
+        
+        (
+        
+          z
+          
+            1
+          
+        
+        ,
+        
+          z
+          
+            2
+          
+        
+        )
+        :=
+        
+          |
+        
+        
+          z
+          
+            1
+          
+        
+        −
+        
+          z
+          
+            2
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle d_{\mathbb {C} }(z_{1},z_{2}):=|z_{1}-z_{2}|}
+  
+ induzierte Metrik versieht den komplexen Vektorraum 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ mit seiner Standardtopologie. Sie stimmt mit der Produkttopologie von 
+  
+    
+      
+        
+          R
+        
+        ×
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} \times \mathbb {R} }
+  
+ überein, so wie auch die Einschränkung 
+  
+    
+      
+        
+          d
+          
+            
+              R
+            
+          
+        
+      
+    
+    {\displaystyle d_{\mathbb {R} }}
+  
+ von 
+  
+    
+      
+        
+          d
+          
+            
+              C
+            
+          
+        
+      
+    
+    {\displaystyle d_{\mathbb {C} }}
+  
+ auf 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ mit der Standardmetrik auf 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ übereinstimmt. Der  Betrag einer komplexen Zahl 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\mathrm {i} }
+  
+ berechnet sich durch 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        :=
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle |z|:={\sqrt {a^{2}+b^{2}}}}
+  
+. Zum Beispiel gilt
+
+  
+    
+      
+        
+          |
+        
+        12
+        +
+        5
+        
+          i
+        
+        
+          |
+        
+        =
+        
+          
+            
+              12
+              
+                2
+              
+            
+            +
+            
+              5
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            144
+            +
+            25
+          
+        
+        =
+        
+          
+            169
+          
+        
+        =
+        13.
+      
+    
+    {\displaystyle |12+5\mathrm {i} |={\sqrt {12^{2}+5^{2}}}={\sqrt {144+25}}={\sqrt {169}}=13.}
+  
+
+Beide Räume, 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ sowie 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+, sind vollständig unter diesen Metriken. Auf beiden Räumen lässt sich der topologische Begriff der Stetigkeit zu analytischen Begriffen wie Differentiation und Integration erweitern.
+
+
+=== Ordnung ===
+
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ ist im Gegensatz zu 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ kein geordneter Körper, d. h., es gibt keine mit der Körperstruktur verträgliche lineare Ordnungsrelation auf 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+. Von zwei unterschiedlichen komplexen Zahlen kann man daher im Allgemeinen nicht sinnvoll (bezogen auf die Addition und Multiplikation in 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+) festlegen, welche von beiden die „größere“ bzw. die „kleinere“ Zahl ist.
+
+
+=== Weitere Eigenschaften ===
+Der Körper 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ der komplexen Zahlen ist einerseits ein Oberkörper von 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+, andererseits ein zweidimensionaler 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+-Vektorraum. Der Isomorphismus 
+  
+    
+      
+        
+          C
+        
+        ≅
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} \cong \mathbb {R} ^{2}}
+  
+ wird auch als natürliche Identifikation bezeichnet. In der Regel nutzt man dies auch, um 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ formell als 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+ mit der entsprechenden komplexen Multiplikation zu definieren und dann 
+  
+    
+      
+        
+          i
+        
+        :=
+        (
+        0
+        ,
+        1
+        
+          )
+          
+            
+              T
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {i} :=(0,1)^{\mathrm {T} }}
+  
+ zu setzen. Dabei wird gleichzeitig festgelegt:
+Die Drehung der komplexen Ebene am Ursprung um den positiven Winkel 
+  
+    
+      
+        +
+        
+          
+            
+              π
+              2
+            
+          
+        
+      
+    
+    {\displaystyle +{\tfrac {\pi }{2}}}
+  
+ führt die positive reelle 
+  
+    
+      
+        +
+        1
+      
+    
+    {\displaystyle +1}
+  
+ in die positiv-imaginäre Einheit 
+  
+    
+      
+        +
+        
+          i
+        
+      
+    
+    {\displaystyle +\mathrm {i} }
+  
+ über.
+Wenn die positiv-reelle Halbachse in der komplexen Ebene nach rechts geht, dann legt man die positiv-imaginäre Halbachse nach oben. Das ist in Einklang mit dem mathematisch positiven Drehsinn.
+Die Körpererweiterung 
+  
+    
+      
+        
+          C
+        
+        
+          /
+        
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {C} /\mathbb {R} }
+  
+ ist vom Grad 
+  
+    
+      
+        [
+        
+          C
+        
+        :
+        
+          R
+        
+        ]
+        =
+        2
+      
+    
+    {\displaystyle [\mathbb {C} :\mathbb {R} ]=2}
+  
+; genauer ist 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ isomorph zum Faktorring 
+  
+    
+      
+        
+          R
+        
+        [
+        X
+        ]
+        
+          /
+        
+        (
+        
+          X
+          
+            2
+          
+        
+        +
+        1
+        )
+      
+    
+    {\displaystyle \mathbb {R} [X]/(X^{2}+1)}
+  
+, wobei 
+  
+    
+      
+        
+          X
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle X^{2}+1}
+  
+ das Minimalpolynom von 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ über 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ ist. Ferner bildet 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ bereits den algebraischen Abschluss von 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+.
+Als 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+-Vektorraum besitzt 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ die Basis 
+  
+    
+      
+        {
+        1
+        ,
+        
+          i
+        
+        }
+      
+    
+    {\displaystyle \{1,\mathrm {i} \}}
+  
+. Daneben ist 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ wie jeder Körper auch ein Vektorraum über sich selbst, also ein eindimensionaler 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+-Vektorraum mit Basis 
+  
+    
+      
+        {
+        1
+        }
+      
+    
+    {\displaystyle \{1\}}
+  
+.
+
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ und 
+  
+    
+      
+        −
+        
+          i
+        
+      
+    
+    {\displaystyle -\mathrm {i} }
+  
+ sind genau die Lösungen der quadratischen Gleichung 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{2}+1=0}
+  
+. In diesem Sinne kann 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ (aber auch 
+  
+    
+      
+        
+          −
+          i
+        
+      
+    
+    {\displaystyle \mathrm {-i} }
+  
+) als „Wurzel aus 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  
+“ aufgefasst werden.
+
+
+== Rechenregeln ==
+
+
+=== Addition ===
+Für zwei komplexe Zahlen 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\mathrm {i} }
+  
+ und 
+  
+    
+      
+        w
+        =
+        c
+        +
+        d
+        
+          i
+        
+      
+    
+    {\displaystyle w=c+d\mathrm {i} }
+  
+ gilt
+
+  
+    
+      
+        z
+        +
+        w
+        =
+        (
+        a
+        +
+        c
+        )
+        +
+        (
+        b
+        +
+        d
+        )
+        
+        
+          i
+        
+         
+      
+    
+    {\displaystyle z+w=(a+c)+(b+d)\,\mathrm {i} \ }
+  
+.
+Addition und Subtraktion sind in Polardarstellung nicht ohne Weiteres möglich. Es ist vorher eine Umrechnung in die kartesische Form und ggf. danach eine Rückrechnung in die Polarform empfehlenswert. Für 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          e
+          
+            
+              i
+            
+            
+              φ
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle z_{1}=r_{1}e^{\mathrm {i} \varphi _{1}}}
+  
+ und 
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            
+              i
+            
+            
+              φ
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle z_{2}=r_{2}e^{\mathrm {i} \varphi _{2}}}
+  
+ erhält man
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ±
+        
+          z
+          
+            2
+          
+        
+        =
+        r
+        ⋅
+        
+          
+            e
+          
+          
+            
+              i
+            
+            φ
+          
+        
+      
+    
+    {\displaystyle z_{1}\pm z_{2}=r\cdot \mathrm {e} ^{\mathrm {i} \varphi }}
+  
+
+mit
+
+  
+    
+      
+        r
+         
+        :=
+        
+          
+            
+              r
+              
+                1
+              
+              
+                2
+              
+            
+            +
+            
+              r
+              
+                2
+              
+              
+                2
+              
+            
+            ±
+            2
+            
+              r
+              
+                1
+              
+            
+            
+              r
+              
+                2
+              
+            
+            cos
+            ⁡
+            (
+            
+              φ
+              
+                1
+              
+            
+            −
+            
+              φ
+              
+                2
+              
+            
+            )
+          
+        
+        
+      
+    
+    {\displaystyle r\ :={\sqrt {r_{1}^{2}+r_{2}^{2}\pm 2r_{1}r_{2}\cos(\varphi _{1}-\varphi _{2})}}\quad }
+  
+ und
+
+  
+    
+      
+        φ
+        :=
+        arctan2
+        
+        
+          (
+          
+            
+              r
+              
+                1
+              
+            
+            cos
+            ⁡
+            
+              φ
+              
+                1
+              
+            
+            ±
+            
+              r
+              
+                2
+              
+            
+            cos
+            ⁡
+            
+              φ
+              
+                2
+              
+            
+            ,
+             
+            
+              r
+              
+                1
+              
+            
+            sin
+            ⁡
+            
+              φ
+              
+                1
+              
+            
+            ±
+            
+              r
+              
+                2
+              
+            
+            sin
+            ⁡
+            
+              φ
+              
+                2
+              
+            
+          
+          )
+        
+         
+      
+    
+    {\displaystyle \varphi :=\operatorname {arctan2} \;\left(r_{1}\cos \varphi _{1}\pm r_{2}\cos \varphi _{2},\ r_{1}\sin \varphi _{1}\pm r_{2}\sin \varphi _{2}\right)\ }
+  
+ unter Nutzung der arctan2-Funktion.
+
+
+=== Multiplikation ===
+Für zwei komplexen Zahlen 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\mathrm {i} }
+  
+ und 
+  
+    
+      
+        w
+        =
+        c
+        +
+        d
+        
+          i
+        
+      
+    
+    {\displaystyle w=c+d\mathrm {i} }
+  
+ folgt durch direktes Ausmultiplizieren
+
+  
+    
+      
+        
+          
+            
+              
+                z
+                ⋅
+                w
+              
+              
+                
+                =
+                (
+                a
+                +
+                b
+                
+                  i
+                
+                )
+                ⋅
+                (
+                c
+                +
+                d
+                
+                  i
+                
+                )
+                =
+                (
+                a
+                c
+                −
+                b
+                d
+                )
+                +
+                (
+                a
+                d
+                +
+                b
+                c
+                )
+                
+                  i
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}z\cdot w&=(a+b\mathrm {i} )\cdot (c+d\mathrm {i} )=(ac-bd)+(ad+bc)\mathrm {i} \end{aligned}}}
+  
+,
+wobei im letzten Schritt 
+  
+    
+      
+        
+          
+            i
+          
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle \mathrm {i} ^{2}=-1}
+  
+ zu beachten ist.
+Für die Multiplikation zweier komplexer Zahlen 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          e
+          
+            
+              i
+            
+            
+              φ
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle z_{1}=r_{1}e^{\mathrm {i} \varphi _{1}}}
+  
+ und 
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            2
+          
+        
+        
+          e
+          
+            
+              i
+            
+            
+              φ
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle z_{2}=r_{2}e^{\mathrm {i} \varphi _{2}}}
+  
+ in Polarform gilt
+
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        ⋅
+        
+          z
+          
+            2
+          
+        
+        =
+        
+          r
+          
+            1
+          
+        
+        
+          r
+          
+            2
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            
+              i
+            
+            (
+            
+              φ
+              
+                1
+              
+            
+            +
+            
+              φ
+              
+                2
+              
+            
+            )
+          
+        
+         
+      
+    
+    {\displaystyle z_{1}\cdot z_{2}=r_{1}r_{2}\cdot \mathrm {e} ^{\mathrm {i} (\varphi _{1}+\varphi _{2})}\ }
+  
+.
+
+
+=== Division ===
+Für die Division einer komplexen Zahl 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ durch eine komplexe Zahl 
+  
+    
+      
+        w
+        ≠
+        0
+      
+    
+    {\displaystyle w\neq 0}
+  
+ erweitert man den Bruch mit der zum Nenner 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ konjugiert komplexen Zahl 
+  
+    
+      
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        =
+        c
+        −
+        d
+        
+        
+          i
+        
+      
+    
+    {\displaystyle {\bar {w}}=c-d\,\mathrm {i} }
+  
+. Der Nenner wird dadurch reell (und ist das Quadrat des Betrages von 
+  
+    
+      
+        c
+        +
+        d
+        
+        
+          i
+        
+      
+    
+    {\displaystyle c+d\,\mathrm {i} }
+  
+) und die Division lässt sich auf den vorherigen Fall zurückführen:
+
+  
+    
+      
+        
+          
+            z
+            w
+          
+        
+        =
+        
+          
+            
+              z
+              ⋅
+              
+                
+                  
+                    w
+                    ¯
+                  
+                
+              
+            
+            
+              
+                
+                  
+                    w
+                    ⋅
+                    
+                      
+                        
+                          w
+                          ¯
+                        
+                      
+                    
+                  
+                  ⏟
+                
+              
+              
+                reell
+              
+            
+          
+        
+        =
+        
+          
+            
+              (
+              a
+              +
+              b
+              
+              
+                i
+              
+              )
+              (
+              c
+              −
+              d
+              
+              
+                i
+              
+              )
+            
+            
+              (
+              c
+              +
+              d
+              
+              
+                i
+              
+              )
+              (
+              c
+              −
+              d
+              
+              
+                i
+              
+              )
+            
+          
+        
+        =
+        
+          
+            
+              a
+              c
+              +
+              b
+              d
+            
+            
+              
+                c
+                
+                  2
+                
+              
+              +
+              
+                d
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              b
+              c
+              −
+              a
+              d
+            
+            
+              
+                c
+                
+                  2
+                
+              
+              +
+              
+                d
+                
+                  2
+                
+              
+            
+          
+        
+        
+        
+          i
+        
+         
+        .
+      
+    
+    {\displaystyle {\frac {z}{w}}={\frac {z\cdot {\bar {w}}}{\underbrace {w\cdot {\bar {w}}} _{\text{reell}}}}={\frac {(a+b\,\mathrm {i} )(c-d\,\mathrm {i} )}{(c+d\,\mathrm {i} )(c-d\,\mathrm {i} )}}={\frac {ac+bd}{c^{2}+d^{2}}}+{\frac {bc-ad}{c^{2}+d^{2}}}\,\mathrm {i} \ .}
+  
+
+Alternativ gilt entsprechend zur Multiplikation bei 
+  
+    
+      
+        
+          r
+          
+            2
+          
+        
+        ≠
+        0
+      
+    
+    {\displaystyle r_{2}\neq 0}
+  
+ 
+
+  
+    
+      
+        
+          
+            
+              z
+              
+                1
+              
+            
+            
+              z
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              r
+              
+                1
+              
+            
+            
+              r
+              
+                2
+              
+            
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            
+              i
+            
+            (
+            
+              φ
+              
+                1
+              
+            
+            −
+            
+              φ
+              
+                2
+              
+            
+            )
+          
+        
+         
+        .
+      
+    
+    {\displaystyle {\frac {z_{1}}{z_{2}}}={\frac {r_{1}}{r_{2}}}\cdot \mathrm {e} ^{\mathrm {i} (\varphi _{1}-\varphi _{2})}\ .}
+  
+
+
+=== Rechenbeispiele ===
+Addition:
+
+  
+    
+      
+        (
+        5
+        +
+        3
+        
+          i
+        
+        )
+        +
+        (
+        4
+        +
+        2
+        
+          i
+        
+        )
+        =
+        (
+        5
+        +
+        4
+        )
+        +
+        (
+        3
+        +
+        2
+        )
+        
+          i
+        
+        =
+        9
+        +
+        5
+        
+          i
+        
+      
+    
+    {\displaystyle (5+3\mathrm {i} )+(4+2\mathrm {i} )=(5+4)+(3+2)\mathrm {i} =9+5\mathrm {i} }
+  
+
+Subtraktion:
+
+  
+    
+      
+        (
+        5
+        +
+        3
+        
+          i
+        
+        )
+        −
+        (
+        4
+        +
+        2
+        
+          i
+        
+        )
+        =
+        (
+        5
+        −
+        4
+        )
+        +
+        (
+        3
+        −
+        2
+        )
+        
+          i
+        
+        =
+        1
+        +
+        1
+        
+          i
+        
+        =
+        1
+        +
+        
+          i
+        
+      
+    
+    {\displaystyle (5+3\mathrm {i} )-(4+2\mathrm {i} )=(5-4)+(3-2)\mathrm {i} =1+1\mathrm {i} =1+\mathrm {i} }
+  
+
+Multiplikation:
+
+  
+    
+      
+        (
+        5
+        +
+        3
+        
+          i
+        
+        )
+        ⋅
+        (
+        4
+        +
+        2
+        
+          i
+        
+        )
+        =
+        (
+        5
+        ⋅
+        4
+        −
+        3
+        ⋅
+        2
+        )
+        +
+        (
+        5
+        ⋅
+        2
+        +
+        3
+        ⋅
+        4
+        )
+        
+          i
+        
+        =
+        14
+        +
+        22
+        
+          i
+        
+      
+    
+    {\displaystyle (5+3\mathrm {i} )\cdot (4+2\mathrm {i} )=(5\cdot 4-3\cdot 2)+(5\cdot 2+3\cdot 4)\mathrm {i} =14+22\mathrm {i} }
+  
+
+Division:
+
+  
+    
+      
+        
+          
+            
+              (
+              5
+              +
+              3
+              
+                i
+              
+              )
+            
+            
+              (
+              4
+              +
+              2
+              
+                i
+              
+              )
+            
+          
+        
+        =
+        
+          
+            
+              (
+              5
+              +
+              3
+              
+                i
+              
+              )
+            
+            
+              (
+              4
+              +
+              2
+              
+                i
+              
+              )
+            
+          
+        
+        ⋅
+        
+          
+            
+              (
+              4
+              −
+              2
+              
+                i
+              
+              )
+            
+            
+              (
+              4
+              −
+              2
+              
+                i
+              
+              )
+            
+          
+        
+        =
+        
+          
+            
+              (
+              20
+              +
+              6
+              )
+              +
+              (
+              12
+              
+                i
+              
+              −
+              10
+              
+                i
+              
+              )
+            
+            
+              
+                4
+                
+                  2
+                
+              
+              +
+              
+                2
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              26
+              +
+              2
+              
+                i
+              
+            
+            20
+          
+        
+        =
+        
+          
+            26
+            20
+          
+        
+        +
+        
+          
+            2
+            20
+          
+        
+        
+          i
+        
+        =
+        
+          
+            13
+            10
+          
+        
+        +
+        
+          
+            
+              i
+            
+            10
+          
+        
+      
+    
+    {\displaystyle {\frac {(5+3\mathrm {i} )}{(4+2\mathrm {i} )}}={\frac {(5+3\mathrm {i} )}{(4+2\mathrm {i} )}}\cdot {\frac {(4-2\mathrm {i} )}{(4-2\mathrm {i} )}}={\frac {(20+6)+(12\mathrm {i} -10\mathrm {i} )}{4^{2}+2^{2}}}={\frac {26+2\mathrm {i} }{20}}={\frac {26}{20}}+{\frac {2}{20}}\mathrm {i} ={\frac {13}{10}}+{\frac {\mathrm {i} }{10}}}
+  
+.
+
+
+=== Potenzen, Wurzeln und Logarithmen ===
+Zu den Rechenoperationen der dritten Stufe gehören Potenzieren, Wurzelziehen (Radizieren) und Logarithmieren.
+
+
+==== Logarithmen ====
+Der komplexe natürliche Logarithmus ist (anders als der reelle auf 
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{+}}
+  
+) nicht eindeutig. Durch Hinzufügen von Bedingungen kann allerdings wieder eine Eindeutigkeit erreicht werden. Man spricht dann vom sog. Hauptzweig des Logarithmus. Eine Eigenschaft dieses Hauptzweiges ist, dass seine Einschränkung auf 
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{+}}
+  
+ wieder dem reellen natürlichen Logarithmus entspricht.
+Eine komplexe Zahl 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ heißt Logarithmus der komplexen Zahl 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+, wenn
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            w
+          
+        
+        =
+        z
+        .
+      
+    
+    {\displaystyle \mathrm {e} ^{w}=z.}
+  
+
+Mit 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ ist auch jede Zahl 
+  
+    
+      
+        w
+        +
+        2
+        π
+        
+          i
+        
+        k
+      
+    
+    {\displaystyle w+2\pi \mathrm {i} k}
+  
+ mit beliebigem 
+  
+    
+      
+        k
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle k\in \mathbb {Z} }
+  
+ ein Logarithmus von 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+. Man arbeitet daher mit Hauptwerten, d. h. mit Werten eines bestimmten Streifens der komplexen Ebene.
+Der Hauptwert des natürlichen Logarithmus der komplexen Zahl
+
+  
+    
+      
+        z
+        =
+        r
+        
+          
+            e
+          
+          
+            
+              i
+            
+            φ
+          
+        
+        ∈
+        
+          
+            C
+          
+          
+            ×
+          
+        
+      
+    
+    {\displaystyle z=r\mathrm {e} ^{\mathrm {i} \varphi }\in \mathbb {C} ^{\times }}
+  
+
+ist
+
+  
+    
+      
+        
+          L
+          o
+          g
+        
+        (
+        z
+        )
+        =
+        ln
+        ⁡
+        r
+        +
+        
+          i
+        
+        φ
+      
+    
+    {\displaystyle \mathrm {Log} (z)=\ln r+\mathrm {i} \varphi }
+  
+
+mit 
+  
+    
+      
+        r
+        >
+        0
+      
+    
+    {\displaystyle r>0}
+  
+ und 
+  
+    
+      
+        −
+        π
+        <
+        φ
+        ≤
+        π
+      
+    
+    {\displaystyle -\pi <\varphi \leq \pi }
+  
+.
+Anders formuliert: Der Hauptwert des natürlichen Logarithmus der komplexen Zahl 
+  
+    
+      
+        z
+        ∈
+        
+          
+            C
+          
+          
+            ×
+          
+        
+      
+    
+    {\displaystyle z\in \mathbb {C} ^{\times }}
+  
+ ist
+
+  
+    
+      
+        
+          L
+          o
+          g
+        
+        (
+        z
+        )
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        
+          i
+        
+        
+        arg
+        ⁡
+        (
+        z
+        )
+        ,
+      
+    
+    {\displaystyle \mathrm {Log} (z)=\ln |z|+\mathrm {i} \,\arg(z),}
+  
+
+wobei 
+  
+    
+      
+        arg
+        ⁡
+        (
+        z
+        )
+      
+    
+    {\displaystyle \arg(z)}
+  
+ der Hauptwert des Arguments von 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ ist.
+Für allgemeine 
+  
+    
+      
+        z
+        ,
+        w
+        ∈
+        
+          
+            C
+          
+          
+            ×
+          
+        
+      
+    
+    {\displaystyle z,w\in \mathbb {C} ^{\times }}
+  
+ gilt
+
+  
+    
+      
+        
+          L
+          o
+          g
+        
+        (
+        z
+        w
+        )
+        =
+        
+          L
+          o
+          g
+        
+        (
+        z
+        )
+        +
+        
+          L
+          o
+          g
+        
+        (
+        w
+        )
+        +
+        2
+        π
+        
+          i
+        
+        h
+        (
+        z
+        ,
+        w
+        )
+      
+    
+    {\displaystyle \mathrm {Log} (zw)=\mathrm {Log} (z)+\mathrm {Log} (w)+2\pi \mathrm {i} h(z,w)}
+  
+,
+wobei
+
+  
+    
+      
+        h
+        (
+        z
+        ,
+        w
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  0
+                  ,
+                
+                
+                  
+                  −
+                  π
+                  <
+                  
+                    A
+                    r
+                    g
+                  
+                  (
+                  z
+                  )
+                  +
+                  
+                    A
+                    r
+                    g
+                  
+                  (
+                  w
+                  )
+                  ≤
+                  π
+                  ,
+                
+              
+              
+                
+                  1
+                  ,
+                
+                
+                  
+                  −
+                  2
+                  π
+                  <
+                  
+                    A
+                    r
+                    g
+                  
+                  (
+                  z
+                  )
+                  +
+                  
+                    A
+                    r
+                    g
+                  
+                  (
+                  w
+                  )
+                  ≤
+                  −
+                  π
+                  ,
+                
+              
+              
+                
+                  −
+                  1
+                  ,
+                
+                
+                  
+                  π
+                  <
+                  
+                    A
+                    r
+                    g
+                  
+                  (
+                  z
+                  )
+                  +
+                  
+                    A
+                    r
+                    g
+                  
+                  (
+                  w
+                  )
+                  ≤
+                  2
+                  π
+                  .
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle h(z,w)={\begin{cases}0,&\qquad -\pi <\mathrm {Arg} (z)+\mathrm {Arg} (w)\leq \pi ,\\1,&\qquad -2\pi <\mathrm {Arg} (z)+\mathrm {Arg} (w)\leq -\pi ,\\-1,&\qquad \pi <\mathrm {Arg} (z)+\mathrm {Arg} (w)\leq 2\pi .\end{cases}}}
+  
+
+Insbesondere ist die aus der reellen Analysis bekannte Regel 
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        ln
+        ⁡
+        (
+        x
+        )
+        +
+        ln
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \ln(xy)=\ln(x)+\ln(y)}
+  
+ für 
+  
+    
+      
+        x
+        ,
+        y
+        >
+        0
+      
+    
+    {\displaystyle x,y>0}
+  
+ nicht allgemein für den Hauptzweig des Logarithmus gültig.
+
+
+==== Potenzen ====
+
+
+===== Natürliche Exponenten =====
+Für natürliche Zahlen 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ berechnet sich die 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-te Potenz in der polaren Form 
+  
+    
+      
+        z
+        =
+        r
+        
+          
+            e
+          
+          
+            
+              i
+            
+            φ
+          
+        
+      
+    
+    {\displaystyle z=r\mathrm {e} ^{\mathrm {i} \varphi }}
+  
+ zu
+
+  
+    
+      
+        
+          z
+          
+            n
+          
+        
+        =
+        
+          r
+          
+            n
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            
+              i
+            
+            n
+            φ
+          
+        
+        =
+        
+          r
+          
+            n
+          
+        
+        ⋅
+        (
+        cos
+        ⁡
+        n
+        φ
+        +
+        
+          i
+        
+        ⋅
+        sin
+        ⁡
+        n
+        φ
+        )
+      
+    
+    {\displaystyle z^{n}=r^{n}\cdot \mathrm {e} ^{\mathrm {i} n\varphi }=r^{n}\cdot (\cos n\varphi +\mathrm {i} \cdot \sin n\varphi )}
+  
+
+(siehe den Satz von de Moivre) oder für die algebraische Form 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=a+b\,\mathrm {i} }
+  
+ mit Hilfe des binomischen Satzes zu
+
+  
+    
+      
+        
+          z
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            
+              
+                k
+                =
+                0
+                ,
+              
+              
+                k
+                
+                   gerade
+                
+              
+            
+          
+          
+            n
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              k
+            
+            
+              )
+            
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            
+              k
+              2
+            
+          
+        
+        
+          a
+          
+            n
+            −
+            k
+          
+        
+        
+          b
+          
+            k
+          
+        
+        +
+        
+          i
+        
+        
+          ∑
+          
+            
+              
+                k
+                =
+                1
+                ,
+              
+              
+                k
+                
+                   ungerade
+                
+              
+            
+          
+          
+            n
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              k
+            
+            
+              )
+            
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            
+              
+                k
+                −
+                1
+              
+              2
+            
+          
+        
+        
+          a
+          
+            n
+            −
+            k
+          
+        
+        
+          b
+          
+            k
+          
+        
+        .
+      
+    
+    {\displaystyle z^{n}=\sum _{k=0, \atop k{\text{ gerade}}}^{n}{\binom {n}{k}}(-1)^{\frac {k}{2}}a^{n-k}b^{k}+\mathrm {i} \sum _{k=1, \atop k{\text{ ungerade}}}^{n}{\binom {n}{k}}(-1)^{\frac {k-1}{2}}a^{n-k}b^{k}.}
+  
+
+Zum Beispiel gilt
+
+  
+    
+      
+        (
+        1
+        +
+        
+          i
+        
+        
+          )
+          
+            8
+          
+        
+        =
+        (
+        2
+        
+          i
+        
+        
+          )
+          
+            4
+          
+        
+        =
+        (
+        −
+        4
+        
+          )
+          
+            2
+          
+        
+        =
+        16
+      
+    
+    {\displaystyle (1+\mathrm {i} )^{8}=(2\mathrm {i} )^{4}=(-4)^{2}=16}
+  
+
+oder
+
+  
+    
+      
+        
+          (
+          1
+          +
+          
+            i
+          
+          
+            )
+            
+              8
+            
+          
+          =
+          
+            
+              (
+            
+          
+          
+            
+              
+                (
+              
+              
+                8
+                0
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              0
+            
+          
+          
+          
+            1
+            
+              8
+            
+          
+          
+          −
+          
+            
+              
+                (
+              
+              
+                8
+                2
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              2
+            
+          
+          
+          
+            1
+            
+              6
+            
+          
+          
+          +
+          
+            
+              
+                (
+              
+              
+                8
+                4
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              4
+            
+          
+          
+          
+            1
+            
+              4
+            
+          
+          
+          −
+          
+            
+              
+                (
+              
+              
+                8
+                6
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              6
+            
+          
+          
+          
+            1
+            
+              2
+            
+          
+          
+          +
+          
+            
+              
+                (
+              
+              
+                8
+                8
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              8
+            
+          
+          
+          
+            1
+            
+              0
+            
+          
+          
+            
+              )
+            
+          
+          
+          +
+          
+          
+            
+              (
+            
+          
+          
+            
+              
+                (
+              
+              
+                8
+                1
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              1
+            
+          
+          
+          
+            1
+            
+              7
+            
+          
+          
+          −
+          
+            
+              
+                (
+              
+              
+                8
+                3
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              3
+            
+          
+          
+          
+            1
+            
+              5
+            
+          
+          
+          +
+          
+            
+              
+                (
+              
+              
+                8
+                5
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              5
+            
+          
+          
+          
+            1
+            
+              3
+            
+          
+          
+          −
+          
+            
+              
+                (
+              
+              
+                8
+                7
+              
+              
+                )
+              
+            
+          
+          
+            1
+            
+              7
+            
+          
+          
+          
+            1
+            
+              1
+            
+          
+          
+            
+              )
+            
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \textstyle (1+\mathrm {i} )^{8}={\Big (}{\binom {8}{0}}1^{0}\!1^{8}\!-{\binom {8}{2}}1^{2}\!1^{6}\!+{\binom {8}{4}}1^{4}\!1^{4}\!-{\binom {8}{6}}1^{6}\!1^{2}\!+{\binom {8}{8}}1^{8}\!1^{0}{\Big )}\;+\;{\Big (}{\binom {8}{1}}1^{1}\!1^{7}\!-{\binom {8}{3}}1^{3}\!1^{5}\!+{\binom {8}{5}}1^{5}\!1^{3}\!-{\binom {8}{7}}1^{7}\!1^{1}{\Big )}\mathrm {i} }
+  
+
+  
+    
+      
+        
+          
+          
+           
+          =
+          
+            
+              (
+            
+          
+          
+            
+              
+                (
+              
+              
+                8
+                0
+              
+              
+                )
+              
+            
+          
+          
+          −
+          
+          
+            
+              
+                (
+              
+              
+                8
+                2
+              
+              
+                )
+              
+            
+          
+          
+          +
+          
+          
+            
+              
+                (
+              
+              
+                8
+                4
+              
+              
+                )
+              
+            
+          
+          
+          −
+          
+          
+            
+              
+                (
+              
+              
+                8
+                6
+              
+              
+                )
+              
+            
+          
+          
+          +
+          
+          
+            
+              
+                (
+              
+              
+                8
+                8
+              
+              
+                )
+              
+            
+          
+          
+            
+              )
+            
+          
+          
+          +
+          
+          
+            
+              (
+            
+          
+          
+            
+              
+                (
+              
+              
+                8
+                1
+              
+              
+                )
+              
+            
+          
+          
+          −
+          
+          
+            
+              
+                (
+              
+              
+                8
+                3
+              
+              
+                )
+              
+            
+          
+          
+          +
+          
+          
+            
+              
+                (
+              
+              
+                8
+                5
+              
+              
+                )
+              
+            
+          
+          
+          −
+          
+          
+            
+              
+                (
+              
+              
+                8
+                7
+              
+              
+                )
+              
+            
+          
+          
+            
+              )
+            
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \textstyle \qquad \quad \ ={\Big (}{\binom {8}{0}}\!-\!{\binom {8}{2}}\!+\!{\binom {8}{4}}\!-\!{\binom {8}{6}}\!+\!{\binom {8}{8}}{\Big )}\;+\;{\Big (}{\binom {8}{1}}\!-\!{\binom {8}{3}}\!+\!{\binom {8}{5}}\!-\!{\binom {8}{7}}{\Big )}\mathrm {i} }
+  
+
+  
+    
+      
+        
+        
+         
+        =
+        (
+        1
+        −
+        28
+        +
+        70
+        −
+        28
+        +
+        1
+        )
+        +
+        (
+        8
+        −
+        56
+        +
+        56
+        −
+        8
+        )
+        
+          i
+        
+        =
+        16.
+      
+    
+    {\displaystyle \qquad \quad \ =(1-28+70-28+1)+(8-56+56-8)\mathrm {i} =16.}
+  
+
+Anwendung findet diese Formel zudem beim Beweis diverser trigonometrischer Identitäten. So erhält man, durch Vergleiche von Real- und Imaginärteil mit 
+  
+    
+      
+        r
+        =
+        1
+      
+    
+    {\displaystyle r=1}
+  
+ im Satz von de Moivre, die Ausdrücke
+
+  
+    
+      
+        cos
+        ⁡
+        (
+        n
+        φ
+        )
+        =
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            
+              ⌊
+              
+                
+                  n
+                  2
+                
+              
+              ⌋
+            
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            j
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              
+                2
+                j
+              
+            
+            
+              )
+            
+          
+        
+        
+          sin
+          
+            2
+            j
+          
+        
+        ⁡
+        (
+        φ
+        )
+        
+        
+          cos
+          
+            n
+            −
+            2
+            j
+          
+        
+        ⁡
+        (
+        φ
+        )
+      
+    
+    {\displaystyle \cos(n\varphi )=\sum _{j=0}^{\left\lfloor {\frac {n}{2}}\right\rfloor }(-1)^{j}{n \choose 2j}\sin ^{2j}(\varphi )\;\cos ^{n-2j}(\varphi )}
+  
+,
+und
+
+  
+    
+      
+        sin
+        ⁡
+        (
+        n
+        φ
+        )
+        =
+        
+          ∑
+          
+            j
+            =
+            0
+          
+          
+            
+              ⌊
+              
+                
+                  
+                    n
+                    −
+                    1
+                  
+                  2
+                
+              
+              ⌋
+            
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            j
+          
+        
+        
+          
+            
+              (
+            
+            
+              n
+              
+                2
+                j
+                +
+                1
+              
+            
+            
+              )
+            
+          
+        
+        
+          sin
+          
+            2
+            j
+            +
+            1
+          
+        
+        ⁡
+        (
+        φ
+        )
+        
+        
+          cos
+          
+            n
+            −
+            2
+            j
+            −
+            1
+          
+        
+        ⁡
+        (
+        φ
+        )
+      
+    
+    {\displaystyle \sin(n\varphi )=\sum _{j=0}^{\left\lfloor {\frac {n-1}{2}}\right\rfloor }(-1)^{j}{n \choose 2j+1}\sin ^{2j+1}(\varphi )\;\cos ^{n-2j-1}(\varphi )}
+  
+.
+
+
+===== Beliebige komplexe Exponenten =====
+Allgemein kann für 
+  
+    
+      
+        z
+        ≠
+        0
+      
+    
+    {\displaystyle z\neq 0}
+  
+ mit komplexen Exponenten 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+
+  
+    
+      
+        
+          z
+          
+            ω
+          
+        
+        :=
+        
+          
+            e
+          
+          
+            ω
+            ⋅
+            
+              L
+              o
+              g
+            
+            (
+            z
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle z^{\omega }:=\mathrm {e} ^{\omega \cdot \mathrm {Log} (z)}.}
+  
+
+definiert werden. Dabei steht 
+  
+    
+      
+        
+          L
+          o
+          g
+        
+      
+    
+    {\displaystyle \mathrm {Log} }
+  
+ für den Hauptzweig des komplexen Logarithmus. Diese Definition ist jedoch willkürlich, denn sie hängt von der Wahl des Zweiges des Logarithmus ab. In oberem Fall spricht man entsprechend vom Hauptwert von 
+  
+    
+      
+        
+          z
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle z^{\omega }}
+  
+. Jede Zahl aus der Menge
+
+  
+    
+      
+        
+          {
+          
+            
+              
+                e
+              
+              
+                ω
+                (
+                ln
+                ⁡
+                (
+                
+                  |
+                
+                z
+                
+                  |
+                
+                )
+                +
+                
+                  i
+                
+                
+                
+                  a
+                  r
+                  g
+                
+                (
+                z
+                )
+                )
+              
+            
+            
+              
+                e
+              
+              
+                2
+                π
+                
+                  i
+                
+                ω
+                k
+              
+            
+            ,
+            k
+            ∈
+            
+              Z
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{\mathrm {e} ^{\omega (\ln(|z|)+\mathrm {i} \,\mathrm {arg} (z))}\mathrm {e} ^{2\pi \mathrm {i} \omega k},k\in \mathbb {Z} \right\}}
+  
+
+kann allerdings als eine 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+-te Potenz von 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ aufgefasst werden, und die Wahl des Logarithmus wird bei der entsprechenden Definition der Größe 
+  
+    
+      
+        
+          z
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle z^{\omega }}
+  
+ mit genannt. Im Fall 
+  
+    
+      
+        ω
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle \omega \in \mathbb {Z} }
+  
+ stimmen jedoch alle möglichen Ergebnisse mit dem Hauptwert überein, und die Funktion 
+  
+    
+      
+        z
+        ↦
+        
+          z
+          
+            ω
+          
+        
+      
+    
+    {\displaystyle z\mapsto z^{\omega }}
+  
+ wird eindeutig, d. h. unabhängig von der getroffenen Logarithmuswahl.
+Ein Beispiel dieser allgemeinen Regel ist das Potenzieren imaginärer Zahlen mit komplexen Exponenten. So ist der Hauptwert von 
+  
+    
+      
+        
+          
+            i
+          
+          
+            a
+            +
+            b
+            
+              i
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {i} ^{a+b\mathrm {i} }}
+  
+ wegen 
+  
+    
+      
+        
+          L
+          o
+          g
+        
+        (
+        
+          i
+        
+        )
+        =
+        
+          
+            
+              π
+              2
+            
+          
+        
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {Log} (\mathrm {i} )={\tfrac {\pi }{2}}\mathrm {i} }
+  
+ durch
+
+  
+    
+      
+        
+          
+            i
+          
+          
+            a
+            +
+            b
+            
+              i
+            
+          
+        
+        =
+        
+          
+            e
+          
+          
+            (
+            a
+            +
+            b
+            
+              i
+            
+            )
+            
+              L
+              o
+              g
+            
+            (
+            
+              i
+            
+            )
+          
+        
+        =
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  b
+                  π
+                
+                2
+              
+            
+            +
+            
+              
+                
+                  π
+                  a
+                
+                2
+              
+            
+            
+              i
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \mathrm {i} ^{a+b\mathrm {i} }=\mathrm {e} ^{(a+b\mathrm {i} )\mathrm {Log} (\mathrm {i} )}=\mathrm {e} ^{-{\frac {b\pi }{2}}+{\frac {\pi a}{2}}\mathrm {i} }.}
+  
+
+gegeben. Zum Beispiel gilt dann 
+  
+    
+      
+        
+          
+            i
+          
+          
+            
+              i
+            
+          
+        
+        =
+        
+          
+            e
+          
+          
+            −
+            
+              
+                π
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {i} ^{\mathrm {i} }=\mathrm {e} ^{-{\frac {\pi }{2}}}}
+  
+. Allgemein sind alle möglichen Werte des Terms 
+  
+    
+      
+        
+          
+            i
+          
+          
+            
+              i
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {i} ^{\mathrm {i} }}
+  
+ durch die Elemente der Menge 
+  
+    
+      
+        {
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  
+                    4
+                    k
+                    +
+                    1
+                  
+                  2
+                
+              
+            
+            π
+          
+        
+        ,
+        k
+        ∈
+        
+          Z
+        
+        }
+      
+    
+    {\displaystyle \{\mathrm {e} ^{-{\tfrac {4k+1}{2}}\pi },k\in \mathbb {Z} \}}
+  
+ gegeben.
+Beim Rechnen mit beliebigen komplexen Potenzen ist, wegen der vielen verschiedenen Zweige des Logarithmus, große Vorsicht geboten. So ist etwa das aus den reellen Zahlen bekannte Potenzgesetz
+
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        
+          x
+          
+            2
+          
+        
+        
+          )
+          
+            b
+          
+        
+        =
+        
+          x
+          
+            1
+          
+          
+            b
+          
+        
+        
+          x
+          
+            2
+          
+          
+            b
+          
+        
+        ,
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        >
+        0
+        ,
+        b
+        ∈
+        
+          R
+        
+        )
+      
+    
+    {\displaystyle (x_{1}x_{2})^{b}=x_{1}^{b}x_{2}^{b},\qquad (x_{1},x_{2}>0,b\in \mathbb {R} )}
+  
+
+im komplexen im Allgemeinen nicht mehr gültig. Zum Beispiel gilt bei Benutzung des Hauptzweigs
+
+  
+    
+      
+        −
+        1
+        =
+        
+          i
+        
+        ⋅
+        
+          i
+        
+        =
+        (
+        −
+        1
+        
+          )
+          
+            
+              1
+              2
+            
+          
+        
+        ⋅
+        (
+        −
+        1
+        
+          )
+          
+            
+              1
+              2
+            
+          
+        
+        ≠
+        (
+        (
+        −
+        1
+        )
+        ⋅
+        (
+        −
+        1
+        )
+        
+          )
+          
+            
+              1
+              2
+            
+          
+        
+        =
+        
+          1
+          
+            
+              1
+              2
+            
+          
+        
+        =
+        1.
+      
+    
+    {\displaystyle -1=\mathrm {i} \cdot \mathrm {i} =(-1)^{\frac {1}{2}}\cdot (-1)^{\frac {1}{2}}\not =((-1)\cdot (-1))^{\frac {1}{2}}=1^{\frac {1}{2}}=1.}
+  
+
+
+== Untergruppen ==
+Genau die Zahlen 
+  
+    
+      
+        
+          
+            e
+          
+          
+            
+              i
+            
+            φ
+          
+        
+      
+    
+    {\displaystyle \mathrm {e} ^{\mathrm {i} \varphi }}
+  
+ bilden den Einheitskreis der komplexen Zahlen mit dem Betrag 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+, diese Zahlen werden auch unimodular genannt und bilden die Kreisgruppe.
+Dass die Multiplikation von komplexen Zahlen (außer der Null) Drehstreckungen entspricht, lässt sich mathematisch wie folgt ausdrücken: Die multiplikative Gruppe 
+  
+    
+      
+        
+          
+            C
+          
+          
+            ×
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} ^{\times }}
+  
+ der komplexen Zahlen ohne die Null lässt sich als direktes Produkt der Gruppe der Drehungen – isomorph zur Kreisgruppe – und der Streckungen um einen Faktor ungleich Null – isomorph zur multiplikativen Gruppe 
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{+}}
+  
+ – auffassen. Erstere Gruppe lässt sich durch das Argument 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ parametrisieren, zweitere entspricht gerade den Beträgen.
+Alle Elemente einer endlichen Untergruppe der multiplikativen Einheitengruppe 
+  
+    
+      
+        
+          
+            C
+          
+          
+            ×
+          
+        
+        =
+        
+          C
+        
+        ∖
+        {
+        0
+        }
+      
+    
+    {\displaystyle \mathbb {C} ^{\times }=\mathbb {C} \setminus \{0\}}
+  
+ sind Einheitswurzeln. Unter allen Ordnungen von Elementen einer gegebenen endlichen Untergruppe gibt es eine maximale, sie heiße 
+  
+    
+      
+        n
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle n\in \mathbb {N} }
+  
+. Da 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ kommutativ ist, erzeugt ein Element mit dieser maximalen Ordnung dann auch die Gruppe, so dass die Gruppe zyklisch ist und genau aus den Elementen
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            2
+            π
+            
+              i
+            
+            
+              
+                k
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {e} ^{2\pi \mathrm {i} {\frac {k}{n}}}}
+  
+ mit 
+  
+    
+      
+        k
+        ∈
+        {
+        0
+        ,
+        1
+        ,
+        …
+        ,
+        n
+        −
+        1
+        }
+      
+    
+    {\displaystyle k\in \{0,1,\dotsc ,n-1\}}
+  
+
+besteht. Alle diese Elemente liegen auf dem Einheitskreis.
+Die Vereinigung aller endlichen Untergruppen ist eine Gruppe, die zur Torsionsgruppe 
+  
+    
+      
+        
+          Q
+        
+        
+          /
+        
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Q} /\mathbb {Z} }
+  
+ isomorph ist. Sie liegt dicht in ihrer Vervollständigung, der schon erwähnten Kreisgruppe, die auch als 1-Sphäre aufgefasst werden kann und zu 
+  
+    
+      
+        
+          R
+        
+        
+          /
+        
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {R} /\mathbb {Z} }
+  
+ isomorph ist.
+
+
+== Konstruktion ==
+In diesem Abschnitt wird nachgewiesen, dass tatsächlich ein Körper 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ der komplexen Zahlen existiert, der den in der obigen Definition geforderten Eigenschaften genügt. Es sind dabei verschiedene Konstruktionen möglich, die jedoch bis auf Isomorphie zum selben Körper führen.
+
+
+=== Paare reeller Zahlen ===
+Die Konstruktion nimmt zunächst keinerlei Bezug auf die imaginäre Einheit 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+: Im 2-dimensionalen reellen Vektorraum 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+ der geordneten reellen Zahlenpaare 
+  
+    
+      
+        z
+        =
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle z=(a,b)}
+  
+ wird neben der Addition
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        +
+        (
+        c
+        ,
+        d
+        )
+        :=
+        (
+        a
+        +
+        c
+        ,
+         
+        b
+        +
+        d
+        )
+      
+    
+    {\displaystyle (a,b)+(c,d):=(a+c,\ b+d)}
+  
+
+(das ist die gewöhnliche Vektoraddition) eine Multiplikation durch
+
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        ⋅
+        (
+        c
+        ,
+        d
+        )
+        :=
+        (
+        a
+        ⋅
+        c
+        −
+        b
+        ⋅
+        d
+        ,
+         
+        a
+        ⋅
+        d
+        +
+        b
+        ⋅
+        c
+        )
+      
+    
+    {\displaystyle (a,b)\cdot (c,d):=(a\cdot c-b\cdot d,\ a\cdot d+b\cdot c)}
+  
+
+definiert.
+Nach dieser Festlegung schreibt man 
+  
+    
+      
+        
+          C
+        
+        =
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {C} =\mathbb {R} ^{2}}
+  
+, und 
+  
+    
+      
+        (
+        
+          C
+        
+        ,
+        +
+        ,
+        ⋅
+        )
+      
+    
+    {\displaystyle (\mathbb {C} ,+,\cdot )}
+  
+ wird zu einem Körper, dem Körper der komplexen Zahlen. Die imaginäre Einheit wird dann durch 
+  
+    
+      
+        
+          i
+        
+        :=
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    {\displaystyle \mathrm {i} :=(0,1)}
+  
+ definiert.
+Da 
+  
+    
+      
+        {
+        (
+        1
+        ,
+        0
+        )
+        ,
+        (
+        0
+        ,
+        1
+        )
+        }
+        =
+        {
+        1
+        ,
+        
+          i
+        
+        }
+      
+    
+    {\displaystyle \{(1,0),(0,1)\}=\{1,\mathrm {i} \}}
+  
+ eine Basis des 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+ bilden, lässt sich 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ damit als Linearkombination
+
+  
+    
+      
+        z
+        =
+        1
+        ⋅
+        (
+        a
+        ,
+        0
+        )
+        +
+        
+          i
+        
+        ⋅
+        (
+        b
+        ,
+        0
+        )
+        =
+        a
+        +
+        
+          i
+        
+        b
+      
+    
+    {\displaystyle z=1\cdot (a,0)+\mathrm {i} \cdot (b,0)=a+\mathrm {i} b}
+  
+
+darstellen.
+
+
+==== Erste Eigenschaften ====
+Die Abbildung 
+  
+    
+      
+        
+          R
+        
+        →
+        
+          C
+        
+        ,
+        
+        a
+        ↦
+        (
+        a
+        ,
+        0
+        )
+      
+    
+    {\displaystyle \mathbb {R} \to \mathbb {C} ,\,a\mapsto (a,0)}
+  
+ ist eine Körpereinbettung von 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ in 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+, aufgrund der wir die reelle Zahl 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ mit der komplexen Zahl 
+  
+    
+      
+        (
+        a
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (a,0)}
+  
+ identifizieren.
+Bezüglich der Addition ist:
+
+die Zahl 
+  
+    
+      
+        0
+        =
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle 0=(0,0)}
+  
+ das neutrale Element (das Nullelement) in 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ und
+die Zahl 
+  
+    
+      
+        −
+        z
+        =
+        (
+        −
+        a
+        ,
+        −
+        b
+        )
+      
+    
+    {\displaystyle -z=(-a,-b)}
+  
+ das inverse Element in 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+.
+Bezüglich der Multiplikation ist:
+
+die Zahl 
+  
+    
+      
+        1
+        =
+        (
+        1
+        ,
+        0
+        )
+      
+    
+    {\displaystyle 1=(1,0)}
+  
+ das neutrale Element (das Einselement) von 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ und
+das Inverse (Reziproke) zu 
+  
+    
+      
+        z
+        =
+        (
+        a
+        ,
+        b
+        )
+        ≠
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle z=(a,b)\neq (0,0)}
+  
+ ist 
+  
+    
+      
+        
+          z
+          
+            −
+            1
+          
+        
+        =
+        
+          (
+          
+            
+              
+                a
+                
+                  
+                    a
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ,
+            
+            
+              
+                
+                  −
+                  b
+                
+                
+                  
+                    a
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle z^{-1}=\left({\frac {a}{a^{2}+b^{2}}},\,{\frac {-b}{a^{2}+b^{2}}}\right)}
+  
+.
+
+
+==== Bezug zur Darstellung in der Form a + bi ====
+Durch 
+  
+    
+      
+        
+          i
+        
+        :=
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    {\displaystyle \mathrm {i} :=(0,1)}
+  
+ wird die imaginäre Einheit festgelegt; für diese gilt 
+  
+    
+      
+        
+          
+            i
+          
+          
+            2
+          
+        
+        =
+        (
+        0
+        ,
+        1
+        
+          )
+          
+            2
+          
+        
+        =
+        (
+        −
+        1
+        ,
+        0
+        )
+      
+    
+    {\displaystyle \mathrm {i} ^{2}=(0,1)^{2}=(-1,0)}
+  
+, was nach obiger Einbettung gleich 
+  
+    
+      
+        −
+        1
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle -1\in \mathbb {R} }
+  
+ entspricht.
+Jede komplexe Zahl 
+  
+    
+      
+        z
+        =
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          C
+        
+      
+    
+    {\displaystyle z=(a,b)\in \mathbb {C} }
+  
+ besitzt die eindeutige Darstellung der Form
+
+  
+    
+      
+        z
+        =
+        (
+        a
+        ,
+        b
+        )
+        =
+        (
+        a
+        ,
+        0
+        )
+        +
+        (
+        0
+        ,
+        b
+        )
+        =
+        a
+        ⋅
+        (
+        1
+        ,
+        0
+        )
+        +
+        b
+        ⋅
+        (
+        0
+        ,
+        1
+        )
+        =
+        a
+        +
+        b
+        
+        
+          i
+        
+      
+    
+    {\displaystyle z=(a,b)=(a,0)+(0,b)=a\cdot (1,0)+b\cdot (0,1)=a+b\,\mathrm {i} }
+  
+
+mit 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a,b\in \mathbb {R} }
+  
+; dies ist die übliche Schreibweise für die komplexen Zahlen.
+
+
+=== Polynome: Adjunktion ===
+Eine weitere Konstruktion der komplexen Zahlen ist der Faktorring
+
+  
+    
+      
+        
+          R
+        
+        [
+        X
+        ]
+        
+          /
+        
+        (
+        
+          X
+          
+            2
+          
+        
+        +
+        1
+        )
+      
+    
+    {\displaystyle \mathbb {R} [X]/(X^{2}+1)}
+  
+
+des Polynomringes in einer Unbestimmten über den reellen Zahlen. Hintergrund ist der surjektive Einsetzungshomomorphismus 
+  
+    
+      
+        
+          R
+        
+        [
+        X
+        ]
+        →
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {R} [X]\to \mathbb {C} }
+  
+ mit 
+  
+    
+      
+        X
+        ↦
+        
+          i
+        
+      
+    
+    {\displaystyle X\mapsto \mathrm {i} }
+  
+, der als Kern das maximale Ideal 
+  
+    
+      
+        (
+        
+          X
+          
+            2
+          
+        
+        +
+        1
+        )
+      
+    
+    {\displaystyle (X^{2}+1)}
+  
+ hat. Mit dem Homomorphiesatz ergibt sich dann die behauptete Isomorphie.
+Dieses Konstruktionsprinzip ist auch in anderem Kontext anwendbar, man spricht von Adjunktion.
+
+
+=== Matrizen ===
+Die Menge der 
+  
+    
+      
+        2
+        ×
+        2
+      
+    
+    {\displaystyle 2\times 2}
+  
+-Matrizen der Form
+
+  
+    
+      
+        Z
+        =
+        
+          
+            (
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  a
+                
+              
+            
+            )
+          
+        
+        =
+        a
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            )
+          
+        
+        +
+        b
+        
+          
+            (
+            
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            )
+          
+        
+        =
+        a
+        ⋅
+        E
+        +
+        b
+        ⋅
+        I
+      
+    
+    {\displaystyle Z={\begin{pmatrix}a&-b\\b&a\end{pmatrix}}=a{\begin{pmatrix}1&0\\0&1\end{pmatrix}}+b{\begin{pmatrix}0&-1\\1&0\end{pmatrix}}=a\cdot E+b\cdot I}
+  
+  mit  
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a,b\in \mathbb {R} }
+  
+
+bildet ebenfalls ein Modell der komplexen Zahlen. Dabei werden die reelle Einheit 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  
+ bzw. die imaginäre Einheit 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ durch die Einheitsmatrix 
+  
+    
+      
+        E
+      
+    
+    {\displaystyle E}
+  
+ bzw. die Matrix 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ dargestellt. Daher gilt:
+
+  
+    
+      
+        Re
+        ⁡
+        (
+        Z
+        )
+        =
+        a
+        =
+        
+          
+            1
+            2
+          
+        
+        tr
+        ⁡
+        (
+        Z
+        )
+      
+    
+    {\displaystyle \operatorname {Re} (Z)=a={\frac {1}{2}}\operatorname {tr} (Z)}
+  
+
+  
+    
+      
+        Im
+        ⁡
+        (
+        Z
+        )
+        =
+        b
+      
+    
+    {\displaystyle \operatorname {Im} (Z)=b}
+  
+
+  
+    
+      
+        
+          I
+          
+            2
+          
+        
+        =
+        −
+        E
+      
+    
+    {\displaystyle I^{2}=-E}
+  
+
+  
+    
+      
+        abs
+        ⁡
+        (
+        Z
+        )
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            det
+            Z
+          
+        
+      
+    
+    {\displaystyle \operatorname {abs} (Z)={\sqrt {a^{2}+b^{2}}}={\sqrt {\det Z}}}
+  
+
+  
+    
+      
+        
+          
+            Z
+            ¯
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  a
+                
+                
+                  b
+                
+              
+              
+                
+                  −
+                  b
+                
+                
+                  a
+                
+              
+            
+            )
+          
+        
+        =
+        
+          Z
+          
+            ⊤
+          
+        
+      
+    
+    {\displaystyle {\overline {Z}}={\begin{pmatrix}a&b\\-b&a\end{pmatrix}}=Z^{\top }}
+  
+
+Diese Menge ist ein Unterraum des Vektorraums der reellen 
+  
+    
+      
+        2
+        ×
+        2
+      
+    
+    {\displaystyle 2\times 2}
+  
+-Matrizen.
+Diese Darstellung spielt eine entscheidende Rolle bei Holomorphen Funktion im Zusammenhang der Cauchy-Riemannschen partiellen Differentialgleichungen.
+Reelle Zahlen entsprechen Diagonalmatrizen 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  a
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  a
+                
+              
+            
+            )
+          
+        
+        .
+      
+    
+    {\displaystyle {\begin{pmatrix}a&0\\0&a\end{pmatrix}}.}
+  
+
+Die zu den Matrizen gehörenden linearen Abbildungen sind, sofern 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ und 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ nicht beide null sind, Drehstreckungen im Raum 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}}
+  
+. Es handelt sich um genau dieselben Drehstreckungen wie bei der Interpretation der Multiplikation mit einer komplexen Zahl 
+  
+    
+      
+        a
+        +
+        b
+        
+          i
+        
+      
+    
+    {\displaystyle a+b\mathrm {i} }
+  
+ in der gaußschen Zahlenebene.
+
+
+== Geschichte ==
+Der Begriff „komplexe Zahlen“ wurde von Carl Friedrich Gauß (Theoria residuorum biquadraticorum, 1831) eingeführt, der Ursprung der Theorie der komplexen Zahlen geht auf die Mathematiker Gerolamo Cardano (Ars magna, Nürnberg 1545) und Rafael Bombelli (L’Algebra, Bologna 1572; wahrscheinlich zwischen 1557 und 1560 geschrieben) zurück.
+Die Unmöglichkeit eines naiven Radizierens der Art 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        −
+        1
+        ⇒
+        x
+        =
+        ±
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle x^{2}=-1\Rightarrow x=\pm {\sqrt {-1}}}
+  
+ ist bei der Behandlung quadratischer Gleichungen schon sehr früh bemerkt und hervorgehoben worden, z. B. schon in der um 820 n. Chr. verfassten Algebra des Muhammed ibn Mûsâ Alchwârizmî. Aber bei dem nächstliegenden und scheinbar unanfechtbaren Schluss, dass diese Art von Gleichung nicht lösbar sei, blieb die mathematische Forschung nicht stehen.
+In gewissem Sinne ist bereits Gerolamo Cardano (1501–1576) in seinem 1545 erschienenen Buch Artis magnae sive de regulis algebraicis liber unus darüber hinausgegangen. Er behandelt dort die Aufgabe, zwei Zahlen zu finden, deren Produkt 40 und deren Summe 10 ist. Er hebt hervor, dass die dafür anzusetzende Gleichung
+
+  
+    
+      
+        x
+        (
+        10
+        −
+        x
+        )
+        =
+        40
+      
+    
+    {\displaystyle x(10-x)=40}
+  
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        −
+        10
+        x
+        +
+        40
+        =
+        0
+      
+    
+    {\displaystyle x^{2}-10x+40=0}
+  
+
+keine Lösung hat, fügt aber einige Bemerkungen hinzu, indem er in die Lösung
+
+  
+    
+      
+        
+          x
+          
+            1
+            ,
+            2
+          
+        
+        =
+        −
+        
+          
+            p
+            2
+          
+        
+        ±
+        
+          
+            
+              
+                
+                  p
+                  
+                    2
+                  
+                
+                4
+              
+            
+            −
+            q
+          
+        
+      
+    
+    {\displaystyle x_{1,2}=-{\frac {p}{2}}\pm {\sqrt {{\frac {p^{2}}{4}}-q}}}
+  
+
+der allgemeinen normierten quadratischen Gleichung
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        p
+        x
+        +
+        q
+        =
+        0
+      
+    
+    {\displaystyle x^{2}+px+q=0}
+  
+
+für 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ und 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ die Werte −10 bzw. 40 einsetzt. Wenn es also möglich wäre, dem sich ergebenden Ausdruck
+
+  
+    
+      
+        
+          
+            25
+            −
+            40
+          
+        
+        =
+        
+          
+            −
+            15
+          
+        
+      
+    
+    {\displaystyle {\sqrt {25-40}}={\sqrt {-15}}}
+  
+
+einen Sinn zu geben, und zwar so, dass man mit diesem Zeichen nach denselben Regeln rechnen dürfte wie mit einer reellen Zahl, so würden die Ausdrücke
+
+  
+    
+      
+        5
+        +
+        
+          
+            −
+            15
+          
+        
+      
+    
+    {\displaystyle 5+{\sqrt {-15}}}
+  
+
+  
+    
+      
+        5
+        −
+        
+          
+            −
+            15
+          
+        
+      
+    
+    {\displaystyle 5-{\sqrt {-15}}}
+  
+
+in der Tat je eine Lösung darstellen.
+Für die Quadratwurzel aus negativen Zahlen und allgemeiner für alle aus einer beliebigen reellen Zahl 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ und einer positiven reellen Zahl 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+ zusammengesetzten Zahlen
+
+  
+    
+      
+        α
+        +
+        
+        
+          
+            −
+            β
+            
+          
+        
+      
+    
+    {\displaystyle \alpha +\!{\sqrt {-\beta \,}}}
+  
+   oder   
+  
+    
+      
+        α
+        −
+        
+        
+          
+            −
+            β
+            
+          
+        
+      
+    
+    {\displaystyle \alpha -\!{\sqrt {-\beta \,}}}
+  
+
+hat sich seit der Mitte des 17. Jahrhunderts die Bezeichnung imaginäre Zahl eingebürgert, die ursprünglich von René Descartes stammt, der in seiner La Géométrie (1637) damit die Schwierigkeit des Verständnisses komplexer Zahlen als nichtreeller Lösungen algebraischer Gleichungen ausdrückte. John Wallis erzielte im 17. Jahrhundert erste Fortschritte in Hinblick auf eine geometrische Interpretation komplexer Zahlen. Gottfried Wilhelm Leibniz nannte sie 1702 eine „feine und wunderbare Zuflucht des menschlichen Geistes, beinahe ein Zwitterwesen zwischen Sein und Nichtsein“. Die Einführung der imaginären Einheit 
+  
+    
+      
+        
+          i
+        
+      
+    
+    {\displaystyle \mathrm {i} }
+  
+ als neue Zahl wird Leonhard Euler zugeschrieben. Er erzielte durch Rechnen mit imaginären Zahlen wertvolle neue Erkenntnisse, zum Beispiel veröffentlichte er die Eulersche Formel 1748 in seiner Einführung in die Analysis und veröffentlichte erstmals explizit die Formel von Abraham de Moivre (Ende des 17. Jahrhunderts, dieser wiederum hatte sie von Isaac Newton), aber auch Euler hatte noch große Schwierigkeiten beim Verständnis und der Einordnung komplexer Zahlen, obwohl er routinemäßig damit rechnete.
+Die geometrische Interpretation wurde zuerst vom Landvermesser Caspar Wessel (1799 veröffentlicht in den Abhandlungen der Königlich Dänischen Akademie der Wissenschaften, aber erst rund hundert Jahre später weiteren Kreisen bekannt), von Jean-Robert Argand (in einem obskuren Privatdruck 1806, den aber Legendre zur Kenntnis kam und der 1813 breiteren Kreisen bekannt wurde) und Gauß (unveröffentlicht) entdeckt. Gauß erwähnt die Darstellung explizit in einem Brief an Friedrich Bessel vom 18. Dezember 1811. Nach Argand wird die geometrische Darstellung in der Zahlenebene manchmal auch Arganddiagramm genannt.
+Als Begründer der komplexen Analysis gilt Augustin-Louis Cauchy in einer 1814 bei der französischen Akademie eingereichten Arbeit über Integration im Komplexen, die aber erst 1825 veröffentlicht wurde. 1821 definierte er in seinem Lehrbuch Cours d’analyse eine Funktion einer komplexen Variablen in die komplexe Zahlenebene und bewies viele grundlegende Sätze der Funktionentheorie.
+William Rowan Hamilton strebte aufgrund seiner Interpretation der Philosophie Immanuel Kants einen „Aufbau der Algebra als Wissenschaft der reinen Zeit an“ und fand in dem Kontext 1833 eine logisch einwandfreie Begründung der komplexen Zahlen als geordnetes Paar reeller Zahlen. Er deutete die komplexe Zahl 
+  
+    
+      
+        a
+        +
+        b
+        ⋅
+        
+          i
+        
+      
+    
+    {\displaystyle a+b\cdot \mathrm {i} }
+  
+ als Zahlenpaar 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+ und definierte Addition beziehungsweise die Multiplikation durch
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                
+                  a
+                  
+                    1
+                  
+                
+                ,
+                
+                  b
+                  
+                    1
+                  
+                
+                )
+                +
+                (
+                
+                  a
+                  
+                    2
+                  
+                
+                ,
+                
+                  b
+                  
+                    2
+                  
+                
+                )
+              
+              
+                
+                =
+                (
+                
+                  a
+                  
+                    1
+                  
+                
+                +
+                
+                  a
+                  
+                    2
+                  
+                
+                ,
+                 
+                
+                  b
+                  
+                    1
+                  
+                
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+                )
+              
+            
+            
+              
+                (
+                
+                  a
+                  
+                    1
+                  
+                
+                ,
+                
+                  b
+                  
+                    1
+                  
+                
+                )
+                
+                ⋅
+                
+                (
+                
+                  a
+                  
+                    2
+                  
+                
+                ,
+                
+                  b
+                  
+                    2
+                  
+                
+                )
+              
+              
+                
+                =
+                (
+                
+                  a
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+                −
+                
+                  b
+                  
+                    1
+                  
+                
+                
+                  b
+                  
+                    2
+                  
+                
+                ,
+                 
+                
+                  a
+                  
+                    1
+                  
+                
+                
+                  b
+                  
+                    2
+                  
+                
+                +
+                
+                  a
+                  
+                    2
+                  
+                
+                
+                  b
+                  
+                    1
+                  
+                
+                )
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(a_{1},b_{1})+(a_{2},b_{2})&=(a_{1}+a_{2},\ b_{1}+b_{2})\\(a_{1},b_{1})\;\cdot \,(a_{2},b_{2})&=(a_{1}a_{2}-b_{1}b_{2},\ a_{1}b_{2}+a_{2}b_{1}).\end{aligned}}}
+  
+
+Heute machen diese Dinge keinerlei begriffliche oder tatsächliche Schwierigkeiten. Durch die Einfachheit der Definition, der bereits erläuterten Bedeutung und Anwendungen in vielen Wissenschaftsgebieten stehen die komplexen Zahlen den reellen Zahlen in nichts nach. Der Begriff der „imaginären“ Zahlen, im Sinne von eingebildeten bzw. unwirklichen Zahlen, hat sich also im Laufe der Jahrhunderte zu einer schiefen, aber beibehaltenen Bezeichnung entwickelt.
+
+
+== Bedeutung ==
+
+
+=== Komplexe Zahlen in der Physik ===
+Komplexe Zahlen spielen in der Grundlagenphysik eine zentrale Rolle. In der Quantenmechanik wird der Zustand eines physikalischen Systems als Element eines (projektiven) Hilbertraums über den komplexen Zahlen aufgefasst. Komplexe Zahlen finden Verwendung bei der Definition von Differentialoperatoren in der Schrödingergleichung und der Klein-Gordon-Gleichung. Für die Dirac-Gleichung benötigt man eine Zahlbereichserweiterung der komplexen Zahlen, die Quaternionen. Alternativ ist eine Formulierung mit Pauli-Matrizen möglich, die aber die gleiche algebraische Struktur wie die Quaternionen aufweisen.
+Komplexe Zahlen haben in der Physik und Technik eine wichtige Rolle als Rechenhilfe. So lässt sich insbesondere die Behandlung von Differentialgleichungen zu Schwingungsvorgängen vereinfachen, da sich damit die komplizierten Beziehungen in Zusammenhang mit Produkten von Sinus- bzw. Kosinusfunktionen durch Produkte von Exponentialfunktionen ersetzen lassen, wobei lediglich die Exponenten addiert werden müssen. So fügt man dazu beispielsweise in der komplexen Wechselstromrechnung geeignete Imaginärteile in die reellen Ausgangsgleichungen ein, die man bei der Auswertung der Rechenergebnisse dann wieder ignoriert. Dadurch werden in der Zwischenrechnung harmonische Schwingungen (reell) zu Kreisbewegungen in der komplexen Ebene ergänzt, die mehr Symmetrie aufweisen und deswegen einfacher zu behandeln sind.
+In der Optik werden die brechenden und absorbierenden Effekte einer Substanz in einer komplexen, wellenlängenabhängigen Permittivität (Dielektrizitätskonstante) oder dem komplexen Brechungsindex zusammengefasst, die wiederum auf die elektrische Suszeptibilität zurückgeführt wird.
+In der Fluiddynamik werden komplexe Zahlen eingesetzt, um ebene Potentialströmungen zu erklären und zu verstehen. Jede beliebige komplexe Funktion eines komplexen Arguments stellt immer eine ebene Potentialströmung dar – der geometrische Ort entspricht dem komplexen Argument in der gaußschen Zahlenebene, das Strömungspotenzial dem Realteil der Funktion, und die Stromlinien den Isolinien des Imaginärteils der Funktion mit umgekehrtem Vorzeichen. Das Vektorfeld der Strömungsgeschwindigkeit entspricht der konjugiert komplexen ersten Ableitung der Funktion. Durch das Experimentieren mit verschiedenen Überlagerungen von Parallelströmung, Quellen, Senken, Dipolen und Wirbeln kann man die Umströmung unterschiedlicher Konturen darstellen. Verzerren lassen sich diese Strömungsbilder durch konforme Abbildung – das komplexe Argument wird durch eine Funktion des komplexen Arguments ersetzt. Beispielsweise lässt sich die Umströmung eines Kreiszylinders (Parallelströmung + Dipol) in die Umströmung eines tragflügel-ähnlichen Profils (Joukowski-Profil) verzerren und die Rolle des tragenden Wirbels an einer Flugzeug-Tragfläche studieren. So nützlich diese Methode zum Lernen und Verstehen ist, zur genauen Berechnung reicht sie im Allgemeinen nicht aus.
+
+
+=== Komplexe Zahlen in der Elektrotechnik ===
+In der Elektrotechnik besitzt die Darstellung elektrischer Größen mit Hilfe komplexer Zahlen weite Verbreitung. Sie wird bei der Berechnung von zeitlich sinusförmig veränderlichen Größen wie elektrischen und magnetischen Feldern verwendet. Bei der Darstellung einer sinusförmigen Wechselspannung als komplexe Größe und entsprechenden Darstellungen für Widerstände, Kondensatoren und Spulen vereinfachen sich die Berechnungen des elektrischen Stromes, der Wirk- und der Blindleistung in einer Schaltung. Die durch Differentialquotienten oder Integrale gegebene Verkopplung geht über in eine Verkopplung durch trigonometrische Funktionen; die Berechnung der Zusammenhänge lässt sich damit wesentlich erleichtern. Auch das Zusammenwirken mehrerer verschiedener sinusförmiger Spannungen und Ströme, die zu unterschiedlichen Zeitpunkten ihre Nulldurchgänge haben können, lässt sich in komplexer Rechnung leicht darstellen. Genaueres über dieses Thema steht im Artikel über die komplexe Wechselstromrechnung.
+In den letzten Jahren hat die digitale Signalverarbeitung außerordentlich an Bedeutung gewonnen, deren Fundament die Rechnung mit komplexen Zahlen bildet.
+
+
+=== Körpertheorie und algebraische Geometrie ===
+Der Körper der komplexen Zahlen ist der algebraische Abschluss des Körpers der reellen Zahlen.
+Je zwei algebraisch abgeschlossene Körper mit derselben Charakteristik und demselben Transzendenzgrad über ihrem Primkörper (der durch die Charakteristik festgelegt ist) sind (ringtheoretisch) isomorph. Bei einem Körper von Charakteristik 0 mit überabzählbarem Transzendenzgrad ist dieser gleich der Kardinalität des Körpers. Körpertheoretisch bilden die komplexen Zahlen also den einzigen algebraisch abgeschlossenen Körper mit Charakteristik 0 und der Kardinalität 
+  
+    
+      
+        ℵ
+      
+    
+    {\displaystyle \aleph }
+  
+ des Kontinuums. Eine Konstruktion des Körpers der komplexen Zahlen ist mithilfe dieser Feststellung auch rein algebraisch etwa als Erweiterung des algebraischen Abschlusses der rationalen Zahlen um 
+  
+    
+      
+        ℵ
+      
+    
+    {\displaystyle \aleph }
+  
+ viele transzendente Elemente möglich. Eine weitere Konstruktion liefert ein Ultraprodukt: Hierzu bilde man zu jedem endlichen Körper seinen algebraischen Abschluss und bilde von ihnen das Ultraprodukt bezüglich eines beliebigen freien Ultrafilters. Aus dem Satz von Łoś folgt, dass dieses Ultraprodukt ein algebraisch abgeschlossener Körper mit Charakteristik 0 ist, die Kardinalität des Kontinuums folgt aus mengentheoretischen Überlegungen.
+Unter dem Schlagwort Lefschetz-Prinzip werden verschiedene Sätze zusammengefasst, die es erlauben, Ergebnisse der algebraischen Geometrie, die über den komplexen Zahlen bewiesen werden, auf andere algebraisch abgeschlossene Körper mit Charakteristik 0 zu übertragen (was maßgeblich auf der Vollständigkeit der Theorie der algebraisch abgeschlossenen Körper mit Charakteristik 0 aufbaut). Die Betrachtung des komplexen Falls bietet den Vorteil, dass dort topologische und analytische Methoden eingesetzt werden können, um algebraische Ergebnisse zu erhalten. Obige Ultraproduktkonstruktion erlaubt die Übertragung von Ergebnissen im Fall einer Charakteristik ungleich 0 auf die komplexen Zahlen.
+
+
+=== Spektraltheorie und Funktionalanalysis ===
+Viele Ergebnisse der Spektraltheorie gelten für komplexe Vektorräume in größerem Umfang als für reelle. So treten z. B. komplexe Zahlen als Eigenwerte reeller Matrizen auf (dann jeweils zusammen mit dem konjugiert-komplexen Eigenwert). Das erklärt sich dadurch, dass das charakteristische Polynom der Matrix aufgrund der algebraischen Abgeschlossenheit von 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ über den komplexen Zahlen stets in Linearfaktoren zerfällt. Dagegen gibt es reelle Matrizen ohne reelle Eigenwerte, während das Spektrum eines beliebigen beschränkten Operators auf einem komplexen (mindestens eindimensionalen) Banachraum nie leer ist. In der Spektraltheorie auf Hilberträumen lassen sich Sätze, die im reellen Fall nur für selbstadjungierte Operatoren gelten, im komplexen Fall oft auf normale Operatoren übertragen.
+Auch in weiteren Teilen der Funktionalanalysis spielen die komplexen Zahlen eine besondere Rolle. So wird etwa die Theorie der C*-Algebren meist im Komplexen betrieben, die harmonische Analyse befasst sich mit Darstellungen von Gruppen auf komplexen Hilberträumen.
+
+
+=== Funktionentheorie und komplexe Geometrie ===
+Das Studium differenzierbarer Funktionen auf Teilmengen der komplexen Zahlen ist Gegenstand der Funktionentheorie. Sie ist in vieler Hinsicht starrer als die reelle Analysis und lässt weniger Pathologien zu. Beispiele sind die Aussage, dass jede in einem Gebiet differenzierbare Funktion bereits beliebig oft differenzierbar ist, oder der Identitätssatz für holomorphe Funktionen.
+Die Funktionentheorie ermöglicht oft auch Rückschlüsse auf rein reelle Aussagen, beispielsweise lassen sich manche Integrale mit dem Residuensatz berechnen. Ein wichtiges Einsatzgebiet dieser Methoden ist die analytische Zahlentheorie, die Aussagen über ganze Zahlen auf Aussagen über komplexe Funktionen zurückführt, häufig in der Form von Dirichletreihen. Ein prominentes Beispiel ist die Verbindung zwischen Primzahlsatz und riemannscher ζ-Funktion. In diesem Zusammenhang spielt die riemannsche Vermutung eine zentrale Rolle.
+Die oben erwähnte Starrheit holomorpher Funktionen tritt noch stärker bei globalen Fragen in Erscheinung, d. h. beim Studium komplexer Mannigfaltigkeiten. So gibt es auf einer kompakten komplexen Mannigfaltigkeit keine nichtkonstanten globalen holomorphen Funktionen; Aussagen wie der Einbettungssatz von Whitney sind im Komplexen also falsch. Diese sogenannte „analytische Geometrie“ (nicht mit der klassischen analytischen Geometrie von René Descartes zu verwechseln!) ist auch eng mit der algebraischen Geometrie verknüpft, viele Ergebnisse lassen sich übertragen. Die komplexen Zahlen sind auch in einem geeigneten Sinne ausreichend groß, um die Komplexität algebraischer Varietäten über beliebigen Körpern der Charakteristik 0 zu erfassen (Lefschetz-Prinzip).
+
+
+== Verwandte Themen ==
+Gaußsche Zahlen und Eisenstein-Zahlen sind eine Verallgemeinerung der ganzen Zahlen auf die komplexen Zahlen.
+Hyperkomplexe Zahlen verallgemeinern die algebraische Struktur der komplexen Zahlen.
+Komplexwertige Funktionen bilden komplexe Zahlen auf komplexe Zahlen ab.
+
+
+== Anmerkungen ==
+
+
+== Literatur ==
+Paul Nahin: An imaginary tale: The story of 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}}
+  
+. Princeton University Press, 1998, ISBN 978-0-691-14600-3.
+Reinhold Remmert: Komplexe Zahlen. In D. Ebbinghaus u. a. (Hrsg.): Zahlen. Springer, 1983.
+
+
+== Weblinks ==
+
+Schriften, Dokumentationen
+Einführung in die komplexen Zahlen. 
+Rechnen mit komplexen Zahlen. uni-kiel.de
+Anwendung der komplexen Zahlen in der Chaostheorie insb. Kapitel 5 und 6. dimensions-math.org
+Programme zur direkten Ausführung
+HTML5-App zur geometrischen Deutung. walter-fendt.de
+Rechner für komplexe Zahlen. calc3d.com
+Zur Geschichte
+Geschichte der komplexen Zahlen
+How Imaginary Numbers Were Invented auf Youtube mit wissenschaftlicher Literatur in der Videobeschreibung
+
+
+== Einzelnachweise ==

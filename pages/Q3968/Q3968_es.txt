@@ -1,0 +1,179 @@
+En teoría de grupos, dado un grupo G y un subgrupo normal N de G, el grupo cociente o grupo factor de G sobre N es, intuitivamente, el grupo que "colapsa" el grupo normal N al elemento neutro. El grupo cociente se denota por G/N, lo que normalmente se lee en español como "G sobre N".
+
+
+== Producto de subconjuntos de un grupo ==
+En la siguiente discusión, se definirá una operación binaria en los subconjuntos de G: dados dos subconjuntos S y T de G, se define su producto como:
+
+  
+    
+      
+        S
+        T
+        =
+        {
+        s
+        t
+        
+          |
+        
+        s
+        ∈
+        S
+        
+        ,
+        
+        t
+        ∈
+        T
+        }
+        .
+      
+    
+    {\displaystyle ST=\{st|s\in S\,,\,t\in T\}.}
+  
+
+Esta operación es asociativa, y tiene por elemento neutro al conjunto {e}, donde e es el neutro de G. El conjunto de los subconjuntos de G forma entonces un monoide bajo esta operación.
+En términos de dicha operación se puede primero definir lo que es un grupo cociente, y luego un subgrupo normal:
+
+Un grupo cociente de un grupo G es una partición de G en la cual la operación de producto de subconjuntos sea cerrada.
+No es difícil demostrar que basta con esta condición, aparentemente débil, para que un "grupo cociente" sea, efectivamente, un grupo con la operación definida. Dicha partición está completamente determinada por el conjunto que contiene a e. Un subgrupo normal de G es entonces el conjunto que contiene a e en una de tales particiones. Los otros conjuntos son entonces las clases laterales de este subgrupo normal.
+Equivalentemente, un subgrupo N de un grupo G es normal si y sólo si sus clases laterales derechas e izquierdas coinciden; esto es, aN = Na para todo a ∈ G. En términos del producto de subconjuntos, un subgrupo normal de G es uno que conmuta con cualquier subconjunto de G.
+
+
+== Definición ==
+Se define entonces G/N como el conjunto de clases laterales izquierdas de N en G, esto es:
+
+  
+    
+      
+        G
+        
+          /
+        
+        N
+        =
+        {
+        a
+        N
+        
+          |
+        
+        a
+        ∈
+        G
+        }
+        .
+      
+    
+    {\displaystyle G/N=\{aN|a\in G\}.}
+  
+
+La operación de grupo en G/N es el producto de subconjuntos antes definido (el producto de subconjuntos es el conjunto de elementos obtenibles como producto de un elemento de un subconjunto y otro del otro). Para que esta operación sea cerrada, (aN)(bN) deberá ser también una clase lateral izquierda para cualesquiera a y b en G, lo cual se demuestra fácilmente siempre y cuando N sea normal en G (es decir, las clases izquierda y derecha de cada elemento coincidan):
+
+  
+    
+      
+        (
+        a
+        N
+        )
+        (
+        b
+        N
+        )
+        =
+        a
+        (
+        N
+        b
+        )
+        N
+         
+        
+          
+            =
+            
+              (
+              ∗
+              )
+            
+          
+        
+         
+        a
+        (
+        b
+        N
+        )
+        N
+        =
+        (
+        a
+        b
+        )
+        N
+        N
+        =
+        (
+        a
+        b
+        )
+        N
+        ,
+      
+    
+    {\displaystyle (aN)(bN)=a(Nb)N\ {\overset {(*)}{=}}\ a(bN)N=(ab)NN=(ab)N,}
+  
+
+donde hemos usado que N es normal en G en el paso 
+  
+    
+      
+        (
+        ∗
+        )
+      
+    
+    {\displaystyle (*)}
+  
+. 
+Por lo tanto, el mismo resultado vale para N\G, el conjunto de clases laterales derechas de G (que, de hecho, es el mismo conjunto que G/N si N es normal). Puesto que la operación deriva del producto de subconjuntos de G, está bien definida (es decir, no depende de los representantes de la clase), asociativa, y tiene a N = eN por elemento neutro (con e el elemento neutro de G).
+El elemento inverso de aN en G/N será, según la ecuación anterior, a−1N, lo cual completa la demostración de que G/N forma un grupo con el producto de subconjuntos.
+Otra manera de interpretar la operación que hemos definido en el cociente, (aN)(bN)=(ab)N, es que el producto de dos clases es la clase del producto de dos representantes suyos cualesquiera, es decir, las clases se operan operando sus representantes, y esto está bien definido como hemos justificado antes.
+
+
+== Ejemplos ==
+Sea Z el grupo de enteros con la adición, y el subgrupo 2Z conformado por los enteros pares; este es un subgrupo normal, puesto que Z es abeliano. Sólo hay dos clases laterales: la del 0 (0 + 2Z) contiene todos los números pares, y la del 1 (1+ 2Z) todos los impares; es decir, las clases de equivalencia son los conjuntos de enteros pares e impares respectivamente. Por lo tanto, el grupo cociente Z/2Z tiene sólo dos elementos y tiene que ser necesariamente el grupo cíclico de dos elementos. Es decir, es isomorfo al grupo Z2, que es el conjunto { 0, 1 } con adición módulo 2, y de hecho, se toma a veces Z/2Z como la definición de Z2, identificando el conjunto de los pares con 0 y el de los impares con 1.
+Sea R el grupo conformado por los reales con la adición, y el subgrupo Z de los enteros. Las clases laterales de Z son conjuntos de la forma a + Z, con 0 ≤ a < 1 un número real. La suma de dichas clases se realiza sumando los correspondientes representantes a, y restando 1 si el resultado es mayor o igual que 1 (para obtener unos de los representantes 0 ≤ a < 1 que hemos considerado). El grupo R/Z es entonces isomorfo al grupo circular S1 de números complejos de valor absoluto 1 bajo la multiplicación, o también, el grupo de rotaciones en el plano cartesiano en torno al origen, esto es, el grupo ortogonal especial SO(2). Un posible isomorfismo sería a + Z → e2πia (por la identidad de Euler).
+Si G es el grupo multiplicativo de matrices reales invertibles de tamaño 3×3, y N es el subgrupo de matrices con determinante 1, entonces N es normal en G (por ser el núcleo del homomorfismo determinante). Las clases laterales de N son los conjuntos de matrices el mismo determinante, con lo cual G/N es isomorfo al grupo multiplicativo de los reales distintos de 0 (pues el determinante es multiplicativo).
+Sea el grupo abeliano Z4 = Z/4Z (esto es, el conjunto { 0, 1, 2, 3 } bajo la suma módulo 4), y sea N su subgrupo { 0, 2 }. El grupo cociente Z4/N es { { 0, 2 }, { 1, 3 } }, con elemento neutro { 0, 2 }. Tanto este como el grupo N son isomorfos a Z2, el grupo cíclico de dos elementos.
+
+El grupo factor (ℤ4 x ℤ6 )/ <(0,1)>). Siendo <(0,1)>  el grupo cíclico de ℤ4 x ℤ6 generado por (0,1) de modo que
+H = {(0,0 ),(0,1 ),(0,2 ),(0,3 ),(0,4 ),(0,5 )}.
+Como ℤ4 x ℤ6 tiene 24 elementos y H tiene 6 elementos, todas las clases laterales de H deben tener seis elementos y ℤ4 x ℤ6 )/ H debe tener orden 4. 
+Las clases laterales en notación aditiva son 
+
+H=H+(0,0),  H+(1,0), H+(2,0), H+(3,0).[1]​
+
+
+== Propiedades ==
+Claramente, G/G es isomorfo al grupo trivial (de un solo elemento), y G/{e} es isomorfo a G.
+El orden de G/N es por definición igual a [G:N], el índice de N en G. Si G es finito, este índice es igual a |G|/|N|; es posible, sin embargo, G/N puede ser finito, aunque G y N sean ambos infinitos (ejemplo: Z/2Z).
+Hay un homomorfismo sobreyectivo "natural" π : G → G/N, definido por π(g) = gN. La función π se denomina comúnmente proyección canónica de G sobre G/N. Su núcleo es N.
+La proyección π induce una correspondencia biyectiva (de hecho, un isomorfismo de retículos) entre los subgrupos de G que contienen a N y los subgrupos de G/N: si H es un subgrupo de G con N ⊆ H, el correspondiente subgrupo de G/N es π(H). Esta correspondencia preserva la normalidad de los subgrupos de uno y otro grupo.
+Varias propiedades importantes de los grupos cocientes se recogen en el teorema fundamental de homomorfismos.
+Si G es cíclico, finitamente generado, abeliano, nilpotente o soluble, entonces también lo será G/N.
+Si H es un subgrupo de un grupo finito G, y el orden de H es la mitad del orden de G, entonces H es un subgrupo normal de G, con lo que G/H está bien definido y es isomorfo al grupo cíclico de dos elementos, Z2. Este resultado se puede enunciar como "todo subgrupo de índice 2 es normal", y en esta forma vale también para grupos infinitos.
+Todo grupo es isomorfo a un cociente de un grupo libre.
+
+
+== Véase también ==
+Ideal de un anillo, el equivalente en teoría de anillos a un subgrupo normal.
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Weisstein, Eric W. «Quotient Group».  En Weisstein, Eric W, ed. MathWorld (en inglés). Wolfram Research. 
+Colaboradores de Wikilibros. Álgebra/Álgebra Abstracta (Primer Curso)/Contenidos/Grupos Cocientes [Internet]. Wikilibros, ; 2015 oct 4, 17:33 UTC [citado el 2016 feb 7]. Disponible en: https://es.wikibooks.org/w/index.php?title=%C3%81lgebra/%C3%81lgebra_Abstracta_(Primer_Curso)/Contenidos/Grupos_Cocientes&oldid=290431.

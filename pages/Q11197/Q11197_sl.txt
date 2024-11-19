@@ -1,0 +1,1262 @@
+Logarítem (starogrško λόγος: lógos - beseda + starogrško ἀριθμός: aritmós - število) oziroma logaritemska funkcija je v matematiki funkcija, ki iz eksponentne enačbe 
+  
+    
+      
+        
+          a
+          
+            y
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle a^{y}=x}
+  
+ vrne eksponent 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+. Zapiše se jo v obliki 
+  
+    
+      
+        y
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle y=\log _{a}x}
+  
+, kjer sta 
+  
+    
+      
+        a
+        ,
+        x
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle a,x\in \mathbb {R} ^{+}}
+  
+. To se bere logaritem x z osnovo a. 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ se imenuje logaritmand ali pa argument.
+Algebrska definicija logaritma: 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        y
+        ⟺
+        
+          a
+          
+            y
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle \log _{a}x=y\Longleftrightarrow a^{y}=x}
+  
+
+Logaritemska funkcija je definirana le za pozitivna števila, njena zaloga vrednosti pa so vsa realna števila:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        :
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ⟶
+        
+          R
+        
+        
+        
+        .
+      
+    
+    {\displaystyle \log _{a}:\mathbb {R} ^{+}\longrightarrow \mathbb {R} \!\,.}
+  
+
+Zgledi:
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        8
+        =
+        3
+        ,
+        
+          log
+          
+            5
+          
+        
+        ⁡
+        125
+        =
+        3
+        ,
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        
+          (
+          
+            
+              1
+              16
+            
+          
+          )
+        
+        =
+        −
+        4
+        
+        
+        .
+      
+    
+    {\displaystyle \log _{2}8=3,\log _{5}125=3,\log _{2}\left({\frac {1}{16}}\right)=-4\!\,.}
+  
+
+  
+    
+      
+        
+          log
+          
+            3
+          
+        
+        ⁡
+        
+          
+            27
+          
+        
+        =
+        
+          log
+          
+            3
+          
+        
+        ⁡
+        
+          3
+          
+            
+              3
+              2
+            
+          
+        
+        =
+        
+          
+            3
+            2
+          
+        
+        
+        
+        .
+      
+    
+    {\displaystyle \log _{3}{\sqrt {27}}=\log _{3}3^{\frac {3}{2}}={\frac {3}{2}}\!\,.}
+  
+
+Antilogaritmiranje je postopek, s katerim se zapletenejši logaritemski izraz predela v eksponentno enačbo. To omogoča lažje reševanje.
+Zgleda: 
+
+Vrednosti logaritmov so pred pojavom računalnikov prebirali iz logaritemskih tablic. Slovenski matematik Jurij Vega je bil avtor znanega logaritmovnika Thesaurus Logarithmorum Completus.
+
+
+== Pravila za računanje z logaritmi ==
+
+
+=== Vsota logaritmov ===
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        +
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        
+        
+        .
+      
+    
+    {\displaystyle \log _{a}x+\log _{a}y=\log _{a}(xy)\!\,.}
+  
+
+Dokaz:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        d
+        ;
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+        =
+        e
+        ⟹
+        
+          a
+          
+            d
+          
+        
+        =
+        x
+        ;
+        
+          a
+          
+            e
+          
+        
+        =
+        y
+        
+        
+      
+    
+    {\displaystyle \log _{a}x=d;\log _{a}y=e\Longrightarrow a^{d}=x;a^{e}=y\!\,}
+  
+
+  
+    
+      
+        x
+        y
+        =
+        
+          a
+          
+            d
+          
+        
+        ⋅
+        
+          a
+          
+            e
+          
+        
+        =
+        
+          a
+          
+            d
+            +
+            e
+          
+        
+        
+          /
+        
+        
+          log
+          
+            a
+          
+        
+        
+        
+      
+    
+    {\displaystyle xy=a^{d}\cdot a^{e}=a^{d+e}/\log _{a}\!\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          a
+          
+            d
+            +
+            e
+          
+        
+        =
+        d
+        +
+        e
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        +
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+        
+        
+      
+    
+    {\displaystyle \log _{a}(xy)=\log _{a}a^{d+e}=d+e=\log _{a}x+\log _{a}y\!\,}
+  
+
+
+=== Razlika logaritmov ===
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        −
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          (
+          
+            
+              x
+              y
+            
+          
+          )
+        
+        
+        
+      
+    
+    {\displaystyle \log _{a}x-\log _{a}y=\log _{a}\left({\frac {x}{y}}\right)\!\,}
+  
+
+Dokaz:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        d
+        ;
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+        =
+        e
+        ⟹
+        
+          a
+          
+            d
+          
+        
+        =
+        x
+        ;
+        
+          a
+          
+            e
+          
+        
+        =
+        y
+        
+        
+      
+    
+    {\displaystyle \log _{a}x=d;\log _{a}y=e\Longrightarrow a^{d}=x;a^{e}=y\!\,}
+  
+
+  
+    
+      
+        
+          
+            x
+            y
+          
+        
+        =
+        
+          
+            
+              a
+              
+                d
+              
+            
+            
+              a
+              
+                e
+              
+            
+          
+        
+        =
+        
+          a
+          
+            d
+            −
+            e
+          
+        
+        
+          /
+        
+        
+          log
+          
+            a
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\frac {x}{y}}={\frac {a^{d}}{a^{e}}}=a^{d-e}/\log _{a}\!\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          
+            x
+            y
+          
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          a
+          
+            d
+            −
+            e
+          
+        
+        =
+        d
+        −
+        e
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        −
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        y
+        
+        
+      
+    
+    {\displaystyle \log _{a}{\frac {x}{y}}=\log _{a}a^{d-e}=d-e=\log _{a}x-\log _{a}y\!\,}
+  
+
+
+=== Množenje logaritma s konstanto ===
+
+  
+    
+      
+        r
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          x
+          
+            r
+          
+        
+      
+    
+    {\displaystyle r\log _{a}x=\log _{a}x^{r}}
+  
+; 
+  
+    
+      
+        r
+        ∈
+        
+          R
+        
+        
+        
+      
+    
+    {\displaystyle r\in \mathbb {R} \!\,}
+  
+
+Dokaz:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        b
+        ⟹
+        
+          a
+          
+            b
+          
+        
+        =
+        x
+        
+        
+      
+    
+    {\displaystyle \log _{a}x=b\Longrightarrow a^{b}=x\!\,}
+  
+
+  
+    
+      
+        
+          x
+          
+            y
+          
+        
+        =
+        (
+        
+          a
+          
+            b
+          
+        
+        
+          )
+          
+            y
+          
+        
+        =
+        
+          a
+          
+            b
+            y
+          
+        
+        
+          /
+        
+        
+          log
+          
+            a
+          
+        
+        
+        
+      
+    
+    {\displaystyle x^{y}=(a^{b})^{y}=a^{by}/\log _{a}\!\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          x
+          
+            y
+          
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          a
+          
+            b
+            y
+          
+        
+        =
+        b
+        y
+        =
+        y
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        
+        
+      
+    
+    {\displaystyle \log _{a}x^{y}=\log _{a}a^{by}=by=y\log _{a}x\!\,}
+  
+
+
+== Logaritmi z različnimi osnovami ==
+Pogosto se pojavi potreba, da se znan logaritem izrazi z drugačno logaritemsko osnovo. Žepni računalniki znajo računati samo z dvema osnovama (10 in Eulerjevo število) razen če imate TI-36X PRO, ki lahko računa s katerokoli osnovo. Glede na to se loči desetiške ali Briggsove logaritme ter naravne logaritme. 
+Če logaritemska osnova ni podana, gre za desetiški logaritem: 
+  
+    
+      
+        log
+        ⁡
+        x
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log x=\log _{10}x}
+  
+.
+Naravne logaritme se označuje z drugo oznako: 
+  
+    
+      
+        ln
+        ⁡
+        x
+        =
+        
+          log
+          
+            e
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \ln x=\log _{e}x}
+  
+.
+Med logaritmi z različnimi osnovami se pretvarja po pravilu 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              x
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}x={\frac {\log _{b}x}{\log _{b}a}}}
+  
+. Logaritem z osnovo a se je pretvoril v izraz z logaritmi z osnovo b. Če je b = 10 ali e, se lahko izračuna iskano vrednost 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{a}x}
+  
+ kar z žepnim računalnikom: 
+  
+    
+      
+        
+          
+            
+              log
+              ⁡
+              x
+            
+            
+              log
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\log x}{\log a}}}
+  
+ (oziroma 
+  
+    
+      
+        
+          
+            
+              ln
+              ⁡
+              x
+            
+            
+              ln
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\ln x}{\ln a}}}
+  
+).
+Iz pravil za pretvarjanje osnov logaritmov tudi sledi izrek: produkt dveh logaritmov z zamenjanima osnovama in argumentoma je 1. 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        ⋅
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        =
+        1
+      
+    
+    {\displaystyle \log _{a}b\cdot \log _{b}a=1}
+  
+
+Dokaz:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              b
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              a
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle \log _{a}b={\frac {\log _{b}b}{\log _{b}a}}\!\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        =
+        
+          
+            1
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              a
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle \log _{a}b={\frac {1}{\log _{b}a}}\!\,}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        ⋅
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        =
+        1
+        
+        
+      
+    
+    {\displaystyle \log _{a}b\cdot \log _{b}a=1\!\,}
+  
+
+
+== Zgodovina ==
+Zgodovina logaritmov v Evropi sedemnajstega stoletja se je začela z odkritjem nove funkcije, ki je področje analize razširila izven dosega algebrskih metod. Metodo logaritmov je javno predstavil John Napier leta 1614 v knjigi z naslovom Mirifici Logarithmorum Canonis Descriptio (Opis čudovitega pravila logaritmov). Pred Napierjevim izumom so obstajale še druge tehnike podobnega obsega, na primer metoda prostafereza ali uporaba tabel zaporedij, ki jih je obširno razvil Jost Bürgi okoli leta 1600. Napier je izraz za logaritem skoval v srednji latinščini, "logarithmus", ki izhaja iz grščine, dobesedno pomeni "razmerje-število", iz logos "delež, razmerje, beseda" + aritmos "število".
+Okoli leta 1730 je Leonhard Euler definiral exponentno funkcijo in naravni logaritev
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  e
+                  
+                    x
+                  
+                
+              
+              
+                
+                =
+                
+                  lim
+                  
+                    n
+                    →
+                    ∞
+                  
+                
+                
+                  
+                    (
+                    
+                      1
+                      +
+                      
+                        
+                          x
+                          n
+                        
+                      
+                    
+                    )
+                  
+                  
+                    n
+                  
+                
+                ,
+              
+            
+            
+              
+                ln
+                ⁡
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  lim
+                  
+                    n
+                    →
+                    ∞
+                  
+                
+                n
+                (
+                
+                  x
+                  
+                    1
+                    
+                      /
+                    
+                    n
+                  
+                
+                −
+                1
+                )
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}e^{x}&=\lim _{n\rightarrow \infty }\left(1+{\frac {x}{n}}\right)^{n},\\[6pt]\ln(x)&=\lim _{n\rightarrow \infty }n(x^{1/n}-1).\end{aligned}}}
+  
+
+V učbeniku z leta 1748 pristopi do logaritmov kot inverzne funkcije 
+  
+    
+      
+        y
+        =
+        
+          a
+          
+            z
+          
+        
+        .
+      
+    
+    {\displaystyle y=a^{z}.}
+  
+ Saj inverzna oblika je:
+
+z = loga y.
+
+
+=== Tabele logaritmov ===
+
+Matematične tabele logaritmov desetiškega sistema so bile velikokrat zelo koristno orodje pri računanju, saj so pred prihodom računalnikov bolj zapleteno množenje in deljenje spremenili v lažje funkcije seštevanja in odštevanja. Vsako število se je tako izrazilo kot seštevek enostavnih zmnožkov desetiške eksponentne funkcije.
+
+
+=== Zgodnje tabele ===
+Michael Stifel je objavil Arithmetica integra v Nürnbergu leta 1544, ki je vsebovala tabelo faktorjev s potencami števila 2. 
+Angleški matematik Henry Briggs je objavil leta 1617 Logarithmorum Chilias Prima ("Prvih tisoč logaritmov"), ki so vsebovali preprost pregled nad logaritmi in tabelo za prvih 1000 celih števil, izračunanih do 14 decimalnega mesta.
+Izboljšava leta 1624, Briggsova Arithmetica Logarithmica, je vsebovala logaritemske tabele 30 000 naravnih števil (1-20,000 in 90,001 to 100,000). To tabelo je razširil Adrian Vlacq, a za 10 decimalnih mest natančno. Hiter pregled natisnjenih tabel:
+
+Poleg tabelic je vredno omeniti logaritemsko računalo. Leta 1624 je Edmund Wingate (1593–1656) omenil možnost dvojne mere, torej dveh metrov, ki bi primerjali dimenzije. Leta 1630 je William Oughtred izumil okroglo računalo. Leta 1821 je Nathaniel Bowditch opisal napravo v American Practical Navigator, kjer drsi meter, ki na eni strani opisuje fukcije trigonometrije in logaritemske vrednosti tangent in sinusov. Naprava naj bi olajšala računanje navigacije.
+
+
+== Glej tudi ==
+dvojiški logaritem
+logaritemsko računalo
+eksponentna funkcija
+Taylorjeva vrsta
+
+
+== Sklici ==
+
+
+== Viri ==
+Stöcker, Horst (2006). Matematični priročnik z osnovami računalništva. Ljubljana: Tehniška založba Slovenije. COBISS 229576192. ISBN 86-365-0587-9.
+
+
+== Zunanje povezave ==
+
+ Predstavnosti o temi Logaritem v Wikimedijini zbirki
+Praktik.si: Video razlaga logaritma Arhivirano 2007-09-29 na Wayback Machine.
+Weisstein, Eric Wolfgang. »Logarithm«. MathWorld.

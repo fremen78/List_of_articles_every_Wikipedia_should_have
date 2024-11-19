@@ -1,0 +1,2068 @@
+Velocidade vetorial é a velocidade escalar em combinação com a direção do movimento de um objeto. A velocidade vetorial é um conceito fundamental na cinemática, o ramo da mecânica clássica que descreve o movimento dos corpos.
+A velocidade vetorial é uma grandeza vetorial física: tanto a magnitude quanto a direção são necessárias para defini-la. O valor absoluto escalar (magnitude) da velocidade vetorial é chamado de velocidade escalar, sendo uma unidade derivada coerente cuja quantidade é medida no SI (sistema métrico) como metros por segundo (m/s ou m⋅s−1). Por exemplo, “5 metros por segundo” é um escalar, enquanto “5 metros por segundo leste” é um vetor. Se houver uma mudança na velocidade escalar, direção ou ambas, diz-se que o objeto está sofrendo uma aceleração.
+
+
+== Definição ==
+
+
+=== Velocidade média ===
+A velocidade média de um objeto durante um período de tempo é sua mudança de posição, 
+  
+    
+      
+        Δ
+        s
+      
+    
+    {\displaystyle \Delta s}
+  
+, dividida pela duração do período, 
+  
+    
+      
+        Δ
+        t
+      
+    
+    {\displaystyle \Delta t}
+  
+, dada matematicamente como
+
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              Δ
+              s
+            
+            
+              Δ
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {v}}={\frac {\Delta s}{\Delta t}}}
+  
+
+
+=== Velocidade instantânea ===
+
+A velocidade instantânea de um objeto é a velocidade média limite conforme o intervalo de tempo se aproxima de zero. Em qualquer momento t específico, pode ser calculada como a derivada da posição em relação ao tempo:
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          lim
+          
+            
+              Δ
+              t
+            
+            →
+            0
+          
+        
+        
+          
+            
+              Δ
+              
+                s
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                s
+              
+            
+            
+              d
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\boldsymbol {v}}=\lim _{{\Delta t}\to 0}{\frac {\Delta {\boldsymbol {s}}}{\Delta t}}={\frac {d{\boldsymbol {s}}}{dt}}.}
+  
+
+A partir desta equação derivada, no caso unidimensional pode-se ver que a área sob uma velocidade versus tempo (gráfico de v versus t) é o deslocamento, s. Em termos de cálculo, a integral da função de velocidade v(t) é a função de deslocamento s(t). Na figura, isto corresponde à área amarela sob a curva.
+
+  
+    
+      
+        
+          s
+        
+        =
+        ∫
+        
+          v
+        
+         
+        d
+        t
+      
+    
+    {\displaystyle {\boldsymbol {s}}=\int {\boldsymbol {v}}\ dt}
+  
+
+Embora o conceito de velocidade instantânea possa à primeira vista parecer contra-intuitivo, pode ser pensado como a velocidade com que o objeto continuaria a viajar se parasse de acelerar naquele momento.
+
+
+=== Diferença entre as velocidades escalar e vetorial ===
+
+Embora os termos velocidade escalar e velocidade vetorial sejam frequentemente usados ​​coloquialmente de forma intercambiável para denotar a rapidez com que um objeto está se movendo, em termos científicos eles são diferentes. A velocidade escalar, a magnitude escalar de um vetor de velocidade, denota apenas a rapidez com que um objeto está se movendo, enquanto a velocidade vetorial indica a velocidade escalar e a direção de um objeto.
+Para ter uma velocidade vetorial constante, um objeto deve ter uma velocidade escalar constante em uma direção constante. A direção constante restringe o objeto ao movimento em uma trajetória reta, portanto, uma velocidade vetorial constante significa movimento em linha reta a uma velocidade escalar constante.
+Por exemplo, um carro que se move a uma velocidade constante de 20 quilômetros por hora em uma trajetória circular tem uma velocidade escalar constante, mas não tem velocidade vetorial constante porque sua direção muda. Portanto, considera-se que o carro está passando por uma aceleração.
+
+
+=== Unidades ===
+Como a derivada da posição em relação ao tempo dá a mudança na posição (em metros) dividida pela mudança no tempo (em segundos), a velocidade é medida em metros por segundo (m/s).
+
+
+== Equação de movimento ==
+
+
+=== Velocidade média ===
+A velocidade é definida como a taxa de mudança de posição em relação ao tempo, que também pode ser referida como velocidade instantânea para enfatizar a distinção da velocidade média. Em algumas aplicações, a velocidade média de um objeto pode ser necessária, ou seja, a velocidade constante que forneceria o mesmo deslocamento resultante que uma velocidade variável no mesmo intervalo de tempo, v(t), ao longo de algum período de tempo Δt. A velocidade média pode ser calculada como:
+
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              Δ
+              
+                x
+              
+            
+            
+              Δ
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                ∫
+                
+                  
+                    t
+                    
+                      0
+                    
+                  
+                
+                
+                  
+                    t
+                    
+                      1
+                    
+                  
+                
+              
+              
+                v
+              
+              (
+              t
+              )
+              d
+              t
+            
+            
+              
+                t
+                
+                  1
+                
+              
+              −
+              
+                t
+                
+                  0
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {\bar {v}} ={\frac {\Delta \mathbf {x} }{\Delta t}}={\frac {\int _{t_{0}}^{t_{1}}\mathbf {v} (t)dt}{t_{1}-t_{0}}}.}
+  
+
+A velocidade média é sempre menor ou igual à velocidade escalar média de um objeto. Isso pode ser visto ao perceber que, enquanto a distância está sempre aumentando estritamente, o deslocamento pode aumentar ou diminuir em magnitude, bem como mudar de direção.
+Em termos de um gráfico de deslocamento-tempo (x versus. t), a velocidade instantânea (ou, simplesmente, velocidade) pode ser considerada como a inclinação da reta tangente à curva em qualquer ponto, e a velocidade média como a inclinação da reta secante entre dois pontos com coordenadas t iguais aos limites do período de tempo para a velocidade média.
+
+
+==== Casos especiais ====
+Quando uma partícula se move com diferentes velocidades escalares uniformes v1, v2, v3, ..., vn em diferentes intervalos de tempo t1, t2, t3, ..., tn respectivamente, então a velocidade escalar média sobre o tempo total da jornada é dada como 
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              
+                v
+                
+                  1
+                
+              
+              
+                t
+                
+                  1
+                
+              
+              +
+              
+                v
+                
+                  2
+                
+              
+              
+                t
+                
+                  2
+                
+              
+              +
+              
+                v
+                
+                  3
+                
+              
+              
+                t
+                
+                  3
+                
+              
+              +
+              ⋯
+              +
+              
+                v
+                
+                  n
+                
+              
+              
+                t
+                
+                  n
+                
+              
+            
+            
+              
+                t
+                
+                  1
+                
+              
+              +
+              
+                t
+                
+                  2
+                
+              
+              +
+              
+                t
+                
+                  3
+                
+              
+              +
+              ⋯
+              +
+              
+                t
+                
+                  n
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {v}}={v_{1}t_{1}+v_{2}t_{2}+v_{3}t_{3}+\dots +v_{n}t_{n} \over t_{1}+t_{2}+t_{3}+\dots +t_{n}}}
+  
+
+Se t1 = t2 = t3 = ... = t, então a velocidade escalar média é dada pela média aritmética das velocidades escalares 
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              
+                v
+                
+                  1
+                
+              
+              +
+              
+                v
+                
+                  2
+                
+              
+              +
+              
+                v
+                
+                  3
+                
+              
+              +
+              ⋯
+              +
+              
+                v
+                
+                  n
+                
+              
+            
+            n
+          
+        
+        =
+        
+          
+            1
+            n
+          
+        
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            v
+            
+              i
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {v}}={v_{1}+v_{2}+v_{3}+\dots +v_{n} \over n}={\frac {1}{n}}\sum _{i=1}^{n}{v_{i}}}
+  
+
+Quando uma partícula se move em diferentes distâncias s1, s2, s3,..., sn com velocidades escalares v1, v2, v3,..., vn respectivamente, então a velocidade escalar média da partícula ao longo da distância total é dada como
+
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              
+                s
+                
+                  1
+                
+              
+              +
+              
+                s
+                
+                  2
+                
+              
+              +
+              
+                s
+                
+                  3
+                
+              
+              +
+              ⋯
+              +
+              
+                s
+                
+                  n
+                
+              
+            
+            
+              
+                t
+                
+                  1
+                
+              
+              +
+              
+                t
+                
+                  2
+                
+              
+              +
+              
+                t
+                
+                  3
+                
+              
+              +
+              ⋯
+              +
+              
+                t
+                
+                  n
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                s
+                
+                  1
+                
+              
+              +
+              
+                s
+                
+                  2
+                
+              
+              +
+              
+                s
+                
+                  3
+                
+              
+              +
+              ⋯
+              +
+              
+                s
+                
+                  n
+                
+              
+            
+            
+              
+                
+                  
+                    s
+                    
+                      1
+                    
+                  
+                  
+                    v
+                    
+                      1
+                    
+                  
+                
+              
+              +
+              
+                
+                  
+                    s
+                    
+                      2
+                    
+                  
+                  
+                    v
+                    
+                      2
+                    
+                  
+                
+              
+              +
+              
+                
+                  
+                    s
+                    
+                      3
+                    
+                  
+                  
+                    v
+                    
+                      3
+                    
+                  
+                
+              
+              +
+              ⋯
+              +
+              
+                
+                  
+                    s
+                    
+                      n
+                    
+                  
+                  
+                    v
+                    
+                      n
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {v}}={s_{1}+s_{2}+s_{3}+\dots +s_{n} \over t_{1}+t_{2}+t_{3}+\dots +t_{n}}={{s_{1}+s_{2}+s_{3}+\dots +s_{n}} \over {{s_{1} \over v_{1}}+{s_{2} \over v_{2}}+{s_{3} \over v_{3}}+\dots +{s_{n} \over v_{n}}}}}
+  
+
+Se s1 = s2 = s3 = ... = s, então a velocidade escalar média é dada pela média harmônica das velocidades escalares
+
+  
+    
+      
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        =
+        n
+        
+          
+            (
+            
+              
+                
+                  1
+                  
+                    v
+                    
+                      1
+                    
+                  
+                
+              
+              +
+              
+                
+                  1
+                  
+                    v
+                    
+                      2
+                    
+                  
+                
+              
+              +
+              
+                
+                  1
+                  
+                    v
+                    
+                      3
+                    
+                  
+                
+              
+              +
+              ⋯
+              +
+              
+                
+                  1
+                  
+                    v
+                    
+                      n
+                    
+                  
+                
+              
+            
+            )
+          
+          
+            −
+            1
+          
+        
+        =
+        n
+        
+          
+            (
+            
+              
+                ∑
+                
+                  i
+                  =
+                  1
+                
+                
+                  n
+                
+              
+              
+                
+                  1
+                  
+                    v
+                    
+                      i
+                    
+                  
+                
+              
+            
+            )
+          
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle {\bar {v}}=n\left({1 \over v_{1}}+{1 \over v_{2}}+{1 \over v_{3}}+\dots +{1 \over v_{n}}\right)^{-1}=n\left(\sum _{i=1}^{n}{\frac {1}{v_{i}}}\right)^{-1}}
+  
+
+
+=== Relação com a aceleração ===
+Embora a velocidade seja definida como a taxa de mudança de posição, é comum começar com uma expressão para a aceleração de um objeto. Como visto pelas três linhas tangentes verdes na figura, a aceleração instantânea de um objeto em um ponto no tempo é a inclinação da linha tangente à curva de um gráfico v(t) naquele ponto. Em outras palavras, a aceleração instantânea é definida como a derivada da velocidade em relação ao tempo:
+
+  
+    
+      
+        
+          a
+        
+        =
+        
+          
+            
+              d
+              
+                v
+              
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {a}}={\frac {d{\boldsymbol {v}}}{dt}}}
+  
+
+A partir daí, a velocidade é expressa como a área sob um gráfico de aceleração versus tempo a(t). Como acima, isso é feito usando o conceito da integral:
+
+  
+    
+      
+        
+          v
+        
+        =
+        ∫
+        
+          a
+        
+         
+        d
+        t
+      
+    
+    {\displaystyle {\boldsymbol {v}}=\int {\boldsymbol {a}}\ dt}
+  
+
+
+==== Aceleração constante ====
+No caso especial de aceleração constante, a velocidade pode ser estudada usando as equações de suvat. Ao considerar a como sendo igual a algum vetor constante arbitrário, isso mostra
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          u
+        
+        +
+        
+          a
+        
+        t
+      
+    
+    {\displaystyle {\boldsymbol {v}}={\boldsymbol {u}}+{\boldsymbol {a}}t}
+  
+
+com v como a velocidade no tempo t e u como a velocidade no tempo t = 0. Ao combinar esta equação com a equação de suvat x = ut + at2/2, é possível relacionar o deslocamento e a velocidade média por
+
+  
+    
+      
+        
+          x
+        
+        =
+        
+          
+            
+              (
+              
+                u
+              
+              +
+              
+                v
+              
+              )
+            
+            2
+          
+        
+        t
+        =
+        
+          
+            
+              v
+              ¯
+            
+          
+        
+        t
+      
+    
+    {\displaystyle {\boldsymbol {x}}={\frac {({\boldsymbol {u}}+{\boldsymbol {v}})}{2}}t={\boldsymbol {\bar {v}}}t}
+  
+
+Também é possível derivar uma expressão para a velocidade independente do tempo, conhecida como equação de Torricelli, da seguinte forma:
+
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+        =
+        
+          v
+        
+        ⋅
+        
+          v
+        
+        =
+        (
+        
+          u
+        
+        +
+        
+          a
+        
+        t
+        )
+        ⋅
+        (
+        
+          u
+        
+        +
+        
+          a
+        
+        t
+        )
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        2
+        t
+        (
+        
+          a
+        
+        ⋅
+        
+          u
+        
+        )
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          t
+          
+            2
+          
+        
+      
+    
+    {\displaystyle v^{2}={\boldsymbol {v}}\cdot {\boldsymbol {v}}=({\boldsymbol {u}}+{\boldsymbol {a}}t)\cdot ({\boldsymbol {u}}+{\boldsymbol {a}}t)=u^{2}+2t({\boldsymbol {a}}\cdot {\boldsymbol {u}})+a^{2}t^{2}}
+  
+
+  
+    
+      
+        (
+        2
+        
+          a
+        
+        )
+        ⋅
+        
+          x
+        
+        =
+        (
+        2
+        
+          a
+        
+        )
+        ⋅
+        (
+        
+          u
+        
+        t
+        +
+        
+          
+            
+              1
+              2
+            
+          
+        
+        
+          a
+        
+        
+          t
+          
+            2
+          
+        
+        )
+        =
+        2
+        t
+        (
+        
+          a
+        
+        ⋅
+        
+          u
+        
+        )
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          t
+          
+            2
+          
+        
+        =
+        
+          v
+          
+            2
+          
+        
+        −
+        
+          u
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (2{\boldsymbol {a}})\cdot {\boldsymbol {x}}=(2{\boldsymbol {a}})\cdot ({\boldsymbol {u}}t+{\tfrac {1}{2}}{\boldsymbol {a}}t^{2})=2t({\boldsymbol {a}}\cdot {\boldsymbol {u}})+a^{2}t^{2}=v^{2}-u^{2}}
+  
+
+  
+    
+      
+        ∴
+        
+          v
+          
+            2
+          
+        
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        2
+        (
+        
+          a
+        
+        ⋅
+        
+          x
+        
+        )
+      
+    
+    {\displaystyle \therefore v^{2}=u^{2}+2({\boldsymbol {a}}\cdot {\boldsymbol {x}})}
+  
+
+onde v = |v| etc.
+As equações acima são válidas tanto para a mecânica newtoniana quanto para a relatividade especial. Onde a mecânica newtoniana e a relatividade especial diferem é em como diferentes observadores descreveriam a mesma situação. Em particular, na mecânica newtoniana, todos os observadores concordam com o valor de t e as regras de transformação para posição criam uma situação na qual todos os observadores não aceleradores descreveriam a aceleração de um objeto com os mesmos valores. Nenhuma das duas é verdadeira para a relatividade especial. Em outras palavras, apenas a velocidade relativa pode ser calculada.
+
+
+== Quantidades que dependem da velocidade ==
+
+
+=== Momento ===
+Na mecânica clássica, a segunda lei de Newton define momento (momentum), p, como um vetor que é o produto da massa e velocidade de um objeto, dado matematicamente como 
+  
+    
+      
+        
+          p
+        
+        =
+        m
+        
+          v
+        
+      
+    
+    {\displaystyle {\boldsymbol {p}}=m{\boldsymbol {v}}}
+  
+ onde m é a massa do objeto.
+
+
+=== Energia cinética ===
+A energia cinética de um objeto em movimento depende de sua velocidade e é dada pela equação
+  
+    
+      
+        
+          E
+          
+            k
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        m
+        
+          v
+          
+            2
+          
+        
+      
+    
+    {\displaystyle E_{\text{k}}={\tfrac {1}{2}}mv^{2}}
+  
+ onde Ek é a energia cinética. A energia cinética é uma quantidade escalar, pois depende do quadrado da velocidade.
+
+
+=== Arrasto (resistência de fluido) ===
+Na dinâmica de fluidos, o arrasto é uma força que atua em oposição ao movimento relativo de qualquer objeto que se move em relação a um fluido circundante. A força de arrasto, 
+  
+    
+      
+        
+          F
+          
+            D
+          
+        
+      
+    
+    {\displaystyle F_{D}}
+  
+, depende do quadrado da velocidade e é dada como 
+  
+    
+      
+        
+          F
+          
+            D
+          
+        
+        
+        =
+        
+        
+          
+            
+              1
+              2
+            
+          
+        
+        
+        ρ
+        
+        
+          v
+          
+            2
+          
+        
+        
+        
+          C
+          
+            D
+          
+        
+        
+        A
+      
+    
+    {\displaystyle F_{D}\,=\,{\tfrac {1}{2}}\,\rho \,v^{2}\,C_{D}\,A}
+  
+ onde
+
+  
+    
+      
+        ρ
+      
+    
+    {\displaystyle \rho }
+  
+ é a densidade do fluido;
+
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ é a velocidade do objeto em relação ao fluido;
+
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ é a área da seção transversal;
+
+  
+    
+      
+        
+          C
+          
+            D
+          
+        
+      
+    
+    {\displaystyle C_{D}}
+  
+ é o coeficiente de arrasto – um número adimensional.
+
+
+=== Velocidade de escape ===
+A velocidade de escape é a velocidade escalar mínima que um objeto balístico precisa para escapar de um corpo massivo como a Terra. Ela representa a energia cinética que, quando adicionada à energia potencial gravitacional do objeto (que é sempre negativa), é igual a zero. A fórmula geral para a velocidade de escape de um objeto a uma distância r do centro de um planeta com massa M é
+  
+    
+      
+        
+          v
+          
+            e
+          
+        
+        =
+        
+          
+            
+              
+                2
+                G
+                M
+              
+              r
+            
+          
+        
+        =
+        
+          
+            2
+            g
+            r
+          
+        
+        ,
+      
+    
+    {\displaystyle v_{\text{e}}={\sqrt {\frac {2GM}{r}}}={\sqrt {2gr}},}
+  
+onde G é a constante gravitacional e g é a aceleração gravitacional. A velocidade de escape da superfície da Terra é de cerca de 11.200 m/s, e é independente da direção do objeto. Isso torna "velocidade de escape" um tanto impróprio, pois o termo mais correto seria "velocidade escalar de escape": qualquer objeto que atinja uma velocidade dessa magnitude, independentemente da atmosfera, deixará a vizinhança do corpo base, desde que não intersecte com algo em seu caminho.
+
+
+=== O fator de Lorentz da relatividade especial ===
+Na relatividade especial, o fator de Lorentz adimensional aparece frequentemente e é dado por
+  
+    
+      
+        γ
+        =
+        
+          
+            1
+            
+              1
+              −
+              
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                  
+                    c
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \gamma ={\frac {1}{\sqrt {1-{\frac {v^{2}}{c^{2}}}}}}}
+  
+ onde γ é o fator de Lorentz e c é a velocidade escalar da luz.
+
+
+== Velocidade relativa ==
+A velocidade relativa é uma medida da velocidade entre dois objetos determinada em um único sistema de coordenadas. A velocidade relativa é fundamental tanto na física clássica quanto na moderna, uma vez que muitos sistemas da física lidam com o movimento relativo de duas ou mais partículas.
+Considere um objeto A movendo-se com vetor de velocidade v e um objeto B com vetor de velocidade w; essas velocidades absolutas são normalmente expressas no mesmo referencial inercial. Então, a velocidade do objeto A em relação ao objeto B é definida como a diferença dos dois vetores de velocidade:
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            A
+            
+               em relação a 
+            
+            B
+          
+        
+        =
+        
+          v
+        
+        −
+        
+          w
+        
+      
+    
+    {\displaystyle {\boldsymbol {v}}_{A{\text{ em relação a }}B}={\boldsymbol {v}}-{\boldsymbol {w}}}
+  
+
+Da mesma forma, a velocidade relativa do objeto B movendo-se com velocidade w, em relação ao objeto A movendo-se com velocidade v é:
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            B
+            
+               em relação a 
+            
+            A
+          
+        
+        =
+        
+          w
+        
+        −
+        
+          v
+        
+      
+    
+    {\displaystyle {\boldsymbol {v}}_{B{\text{ em relação a }}A}={\boldsymbol {w}}-{\boldsymbol {v}}}
+  
+
+Normalmente, o referencial inercial escolhido é aquele em que o último dos dois objetos mencionados está em repouso.
+Na mecânica newtoniana, a velocidade relativa é independente do referencial inercial escolhido. Este não é mais o caso da relatividade especial, na qual as velocidades dependem da escolha do referencial.
+
+
+=== Velocidades escalares ===
+No caso unidimensional, as velocidades são escalares e a equação é:
+
+  
+    
+      
+        
+          v
+          
+            rel
+          
+        
+        =
+        v
+        −
+        (
+        −
+        w
+        )
+        ,
+      
+    
+    {\displaystyle v_{\text{rel}}=v-(-w),}
+  
+
+se os dois objetos estiverem se movendo em direções opostas, ou:
+
+  
+    
+      
+        
+          v
+          
+            rel
+          
+        
+        =
+        v
+        −
+        (
+        +
+        w
+        )
+        ,
+      
+    
+    {\displaystyle v_{\text{rel}}=v-(+w),}
+  
+
+se os dois objetos estiverem se movendo na mesma direção.
+
+
+== Sistemas de coordenadas ==
+
+
+=== Coordenadas cartesianas ===
+Em sistemas de coordenadas cartesianas multidimensionais, a velocidade é dividida em componentes que correspondem a cada eixo dimensional do sistema de coordenadas. Em um sistema bidimensional, onde há um eixo x e um eixo y, os componentes de velocidade correspondentes são definidos como:
+
+  
+    
+      
+        
+          v
+          
+            x
+          
+        
+        =
+        d
+        x
+        
+          /
+        
+        d
+        t
+      
+    
+    {\displaystyle v_{x}=dx/dt}
+  
+
+  
+    
+      
+        
+          v
+          
+            y
+          
+        
+        =
+        d
+        y
+        
+          /
+        
+        d
+        t
+      
+    
+    {\displaystyle v_{y}=dy/dt}
+  
+
+O vetor de velocidade bidimensional é então definido como 
+  
+    
+      
+        
+          
+            v
+          
+        
+        =<
+        
+          v
+          
+            x
+          
+        
+        ,
+        
+          v
+          
+            y
+          
+        
+        >
+      
+    
+    {\displaystyle {\textbf {v}}=<v_{x},v_{y}>}
+  
+. A magnitude deste vetor representa a velocidade escalar e é encontrada pela fórmula de distância como:
+
+  
+    
+      
+        
+          |
+        
+        v
+        
+          |
+        
+        =
+        
+          
+            
+              v
+              
+                x
+              
+              
+                2
+              
+            
+            +
+            
+              v
+              
+                y
+              
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle |v|={\sqrt {v_{x}^{2}+v_{y}^{2}}}}
+  
+
+Em sistemas tridimensionais onde há um eixo z adicional, o componente de velocidade correspondente é definido como:
+
+  
+    
+      
+        
+          v
+          
+            z
+          
+        
+        =
+        d
+        z
+        
+          /
+        
+        d
+        t
+      
+    
+    {\displaystyle v_{z}=dz/dt}
+  
+
+O vetor de velocidade tridimensional é definido como 
+  
+    
+      
+        
+          
+            v
+          
+        
+        =<
+        
+          v
+          
+            x
+          
+        
+        ,
+        
+          v
+          
+            y
+          
+        
+        ,
+        
+          v
+          
+            z
+          
+        
+        >
+      
+    
+    {\displaystyle {\textbf {v}}=<v_{x},v_{y},v_{z}>}
+  
+ com sua magnitude também representando a velocidade escalar e sendo determinada por:
+
+  
+    
+      
+        
+          |
+        
+        v
+        
+          |
+        
+        =
+        
+          
+            
+              v
+              
+                x
+              
+              
+                2
+              
+            
+            +
+            
+              v
+              
+                y
+              
+              
+                2
+              
+            
+            +
+            
+              v
+              
+                z
+              
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle |v|={\sqrt {v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}}}
+  
+
+Enquanto alguns livros didáticos usam a notação subscrita para definir componentes cartesianos de velocidade, outros usam 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+, 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+, e 
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  
+ para os eixos 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, e 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+, respectivamente.
+
+
+=== Coordenadas polares ===
+
+Em coordenadas polares, uma velocidade bidimensional é descrita por uma velocidade radial, definida como o componente da velocidade para longe ou em direção à origem, e uma velocidade transversal, perpendicular à radial. Ambas surgem da velocidade angular, que é a taxa de rotação em torno da origem (com quantidades positivas representando a rotação no sentido anti-horário e quantidades negativas representando a rotação no sentido horário, em um sistema de coordenadas destro).
+As velocidades radial e transversal podem ser derivadas dos vetores de velocidade e deslocamento cartesianos decompondo o vetor de velocidade em componentes radial e transversal. A velocidade transversal é o componente da velocidade ao longo de um círculo centrado na origem.
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          
+            v
+          
+          
+            T
+          
+        
+        +
+        
+          
+            v
+          
+          
+            R
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {v}}={\boldsymbol {v}}_{T}+{\boldsymbol {v}}_{R}}
+  
+
+onde:
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            T
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {v}}_{T}}
+  
+ é a velocidade transversal;
+
+  
+    
+      
+        
+          
+            v
+          
+          
+            R
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {v}}_{R}}
+  
+ é a velocidade radial.
+A velocidade escalar radial (ou magnitude da velocidade radial) é o produto escalar do vetor de velocidade e o vetor unitário na direção radial. 
+  
+    
+      
+        
+          v
+          
+            R
+          
+        
+        =
+        
+          
+            
+              
+                v
+              
+              ⋅
+              
+                r
+              
+            
+            
+              |
+              
+                r
+              
+              |
+            
+          
+        
+        =
+        
+          v
+        
+        ⋅
+        
+          
+            
+              r
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle v_{R}={\frac {{\boldsymbol {v}}\cdot {\boldsymbol {r}}}{\left|{\boldsymbol {r}}\right|}}={\boldsymbol {v}}\cdot {\hat {\boldsymbol {r}}}}
+  
+ onde 
+  
+    
+      
+        
+          r
+        
+      
+    
+    {\displaystyle {\boldsymbol {r}}}
+  
+ é a posição e 
+  
+    
+      
+        
+          
+            
+              r
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {\boldsymbol {r}}}}
+  
+ é a direção radial.
+A velocidade escalar transversal (ou magnitude da velocidade transversal) é a magnitude do produto cruzado do vetor unitário na direção radial e o vetor de velocidade. É também o produto escalar da velocidade e a direção transversal, ou o produto da velocidade escalar angular 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ e o raio (a magnitude da posição).
+
+  
+    
+      
+        
+          v
+          
+            T
+          
+        
+        =
+        
+          
+            
+              
+                |
+              
+              
+                r
+              
+              ×
+              
+                v
+              
+              
+                |
+              
+            
+            
+              
+                |
+              
+              
+                r
+              
+              
+                |
+              
+            
+          
+        
+        =
+        
+          v
+        
+        ⋅
+        
+          
+            
+              t
+              ^
+            
+          
+        
+        =
+        ω
+        
+          |
+        
+        
+          r
+        
+        
+          |
+        
+      
+    
+    {\displaystyle v_{T}={\frac {|{\boldsymbol {r}}\times {\boldsymbol {v}}|}{|{\boldsymbol {r}}|}}={\boldsymbol {v}}\cdot {\hat {\boldsymbol {t}}}=\omega |{\boldsymbol {r}}|}
+  
+
+tal que:
+
+  
+    
+      
+        ω
+        =
+        
+          
+            
+              
+                |
+              
+              
+                r
+              
+              ×
+              
+                v
+              
+              
+                |
+              
+            
+            
+              
+                |
+              
+              
+                r
+              
+              
+                
+                  |
+                
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \omega ={\frac {|{\boldsymbol {r}}\times {\boldsymbol {v}}|}{|{\boldsymbol {r}}|^{2}}}}
+  
+
+Momento angular na forma escalar é a massa vezes a distância até a origem vezes a velocidade transversal, ou equivalentemente, a massa vezes a distância ao quadrado vezes a velocidade escalar angular. A convenção de sinais para momento angular é a mesma que para velocidade angular.
+
+  
+    
+      
+        L
+        =
+        m
+        r
+        
+          v
+          
+            T
+          
+        
+        =
+        m
+        
+          r
+          
+            2
+          
+        
+        ω
+      
+    
+    {\displaystyle L=mrv_{T}=mr^{2}\omega }
+  
+
+onde:
+
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ é a massa;
+
+  
+    
+      
+        r
+        =
+        
+          |
+        
+        
+          r
+        
+        
+          |
+        
+      
+    
+    {\displaystyle r=|{\boldsymbol {r}}|}
+  
+
+A expressão 
+  
+    
+      
+        m
+        
+          r
+          
+            2
+          
+        
+      
+    
+    {\displaystyle mr^{2}}
+  
+ é conhecida como momento de inércia. Se as forças estão na direção radial apenas com uma dependência inversa do quadrado, como no caso de uma órbita gravitacional, o momento angular é constante, e a velocidade escalar transversal é inversamente proporcional à distância, a velocidade escalar angular é inversamente proporcional à distância ao quadrado, e a taxa na qual a área é varrida é constante. Essas relações são conhecidas como leis de Kepler do movimento planetário.
+
+
+== Ver também ==
+
+
+== Notas ==
+Robert Resnick and Jearl Walker, Fundamentals of Physics, Wiley; 7 Sub edition (em inglês) (16 de junho de 2004). ISBN 0-471-23231-9.
+
+
+== Referências ==
+
+
+== Ligações externas ==

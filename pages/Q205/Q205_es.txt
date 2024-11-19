@@ -1,0 +1,1140 @@
+El concepto de infinito (símbolo: ∞) aparece en varias ramas de la matemática, la filosofía y la astronomía,[1]​ en referencia a una cantidad sin límite o sin final, contrapuesto al concepto de finitud.[2]​
+En matemáticas el infinito aparece de diversas formas: en geometría, el punto al infinito en geometría proyectiva y el punto de fuga en geometría descriptiva; en análisis matemático, los límites infinitos; y en teoría de conjuntos como números transfinitos.
+
+
+== Teoría de conjuntos ==
+Los conjuntos finitos tienen una propiedad "intuitiva" que los caracteriza: "dada una parte propia de los mismos, esta contiene un número de elementos menor que todo el conjunto". Es decir, no puede establecerse una biyección entre una parte propia del conjunto finito y todo el conjunto. Sin embargo, esa propiedad "intuitiva" de los conjuntos finitos no la tienen los conjuntos infinitos, y formalmente se dice que:
+
+La idea de cardinalidad de un conjunto se basa en la noción anterior de biyección. De dos conjuntos entre los que se puede establecer una biyección se dice que tienen la misma cardinalidad. Para un conjunto finito su cardinalidad puede representarse por un número natural. Por ejemplo, el conjunto {manzana, pera, durazno} tiene 3 elementos. Esto significa de modo más formal que se puede establecer una biyección entre tal conjunto y el número 3 que es el conjunto {0,1,2}:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    Manzana
+                  
+                
+              
+              
+                ↔
+              
+              
+                0
+              
+            
+            
+              
+                
+                  
+                    Pera
+                  
+                
+              
+              
+                ↔
+              
+              
+                1
+              
+            
+            
+              
+                
+                  
+                    Durazno
+                  
+                
+              
+              
+                ↔
+              
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}{\mbox{Manzana}}&\leftrightarrow &0\\{\mbox{Pera}}&\leftrightarrow &1\\{\mbox{Durazno}}&\leftrightarrow &2\end{matrix}}}
+  
+
+Dicho de otra forma, es posible hacer parejas (0, manzana), (1, pera), (2, durazno) de modo que cada elemento de los dos conjuntos se utilice exactamente una vez. Cuando es posible establecer tal relación "uno a uno" entre dos conjuntos se dice que ambos conjuntos tienen la misma cardinalidad, lo cual, para conjuntos finitos, equivale a que tengan el mismo número de elementos.
+
+
+=== Primera definición positiva de conjunto infinito ===
+La primera definición positiva de conjunto infinito fue dada por Georg Cantor y se basa en la siguiente observación: Si un conjunto S es finito y T es un subconjunto propio, no es posible construir una biyección entre S y T. Por ejemplo, si S = {1,2,3,4,5,6,7,8} y T = {2,4,6,8} no es posible construir una biyección entre S y T, porque de ser así tendrían la misma cardinalidad (el mismo número de elementos).
+Un conjunto es infinito si es posible encontrar un subconjunto propio del mismo que tenga la misma cardinalidad que el conjunto original. Consideremos el conjunto de los números naturales N={1,2,3,4,5,...}, el cual es un conjunto infinito. Para verificar tal afirmación es necesario encontrar un subconjunto propio y construir una biyección entre ambos. Para este caso, consideremos el conjunto de enteros positivos pares P={2,4,6,8,10,...}. El conjunto P es un subconjunto propio de N, y la regla de asignación 
+  
+    
+      
+        n
+        →
+        2
+        n
+      
+    
+    {\displaystyle n\to 2n}
+  
+ es una biyección:
+
+  
+    
+      
+        
+          A
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  N
+                
+                
+                  ↔
+                
+                
+                  P
+                
+              
+              
+                
+                  1
+                
+                
+                  ↔
+                
+                
+                  2
+                
+              
+              
+                
+                  2
+                
+                
+                  ↔
+                
+                
+                  4
+                
+              
+              
+                
+                  3
+                
+                
+                  ↔
+                
+                
+                  6
+                
+              
+              
+                
+                  4
+                
+                
+                  ↔
+                
+                
+                  8
+                
+              
+            
+            ]
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {A} ={\begin{bmatrix}N&\leftrightarrow &P\\1&\leftrightarrow &2\\2&\leftrightarrow &4\\3&\leftrightarrow &6\\4&\leftrightarrow &8\end{bmatrix}}.}
+  
+
+ya que a todo elemento de N le corresponde un único elemento de P y viceversa.
+
+
+=== Números ordinales infinitos ===
+
+Los números ordinales sirven para notar una posición en un conjunto ordenado (primer, segundo, tercer elemento...). El ejemplo más elemental es el de los números naturales, que se definen rigurosamente así:
+Se nota 
+  
+    
+      
+        0
+        
+      
+    
+    {\displaystyle 0\,}
+  
+ el conjunto vacío:
+
+  
+    
+      
+        0
+        =
+        {
+        }
+        =
+        ∅
+      
+    
+    {\displaystyle 0=\{\}=\varnothing }
+  
+
+se nota 
+  
+    
+      
+        1
+        
+      
+    
+    {\displaystyle 1\,}
+  
+ el conjunto que solo contiene 
+  
+    
+      
+        0
+        
+      
+    
+    {\displaystyle 0\,}
+  
+:
+
+  
+    
+      
+        1
+        =
+        {
+        0
+        }
+        =
+        {
+        ∅
+        }
+      
+    
+    {\displaystyle 1=\{0\}=\{\varnothing \}}
+  
+
+ 
+luego se nota 
+  
+    
+      
+        2
+        
+      
+    
+    {\displaystyle 2\,}
+  
+ el conjunto que solo contiene 
+  
+    
+      
+        0
+        
+      
+    
+    {\displaystyle 0\,}
+  
+ y 
+  
+    
+      
+        1
+        
+      
+    
+    {\displaystyle 1\,}
+  
+:
+
+  
+    
+      
+        2
+        =
+        {
+        0
+        ,
+        1
+        }
+        =
+        {
+        0
+        ,
+        {
+        0
+        }
+        }
+        =
+        {
+        ∅
+        ,
+        {
+        ∅
+        }
+        }
+      
+    
+    {\displaystyle 2=\{0,1\}=\{0,\{0\}\}=\{\varnothing ,\{\varnothing \}\}}
+  
+
+Y así sucesivamente:
+
+  
+    
+      
+        3
+        =
+        {
+        0
+        ,
+        1
+        ,
+        2
+        }
+        =
+        {
+        ∅
+        ,
+        {
+        ∅
+        }
+        ,
+        {
+        ∅
+        ,
+        {
+        ∅
+        }
+        }
+        }
+        ,
+        
+        (
+        n
+        +
+        1
+        )
+        =
+        n
+        ⋃
+        {
+        n
+        }
+      
+    
+    {\displaystyle 3=\{0,1,2\}=\{\varnothing ,\{\varnothing \},\{\varnothing ,\{\varnothing \}\}\},\qquad (n+1)=n\bigcup \{n\}}
+  
+
+Por construcción, 0 está incluido en 1, quien a su vez está incluido en 2, ya que obviamente:
+
+  
+    
+      
+        n
+        ⊆
+        n
+        ⋃
+        {
+        n
+        }
+        =
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle n\subseteq n\bigcup \{n\}=(n+1)}
+  
+
+La inclusión permite convertir a los ordinales en un conjunto bien ordenado (dos elementos distintos siempre se pueden comparar, y añadiendo la igualdad daría un orden total) entre estos conjuntos que se prefiere, por costumbre, escribir "<", lo que da las relaciones 0 < 1 < 2 < 3. Decir que un ordinal es menor (estrictamente) que otro significa, cuando se les considera a ambos como conjuntos, que está incluido en el otro.
+Si a y b son ordinales, entonces aUb, la unión de los conjuntos, también es un ordinal. En particular, si son ordinales finitos (conjuntos finitos) correspondientes a los naturales a y b, entonces aUb corresponde al mayor de los dos, a o b. En general, si los conjuntos ai son ordinales, donde i toma todos los valores de un conjunto I, entonces a = Uai también lo será. Y si el conjunto I no es finito, tampoco lo será a. Así obtendremos ordinales (o sea números) infinitos. 
+Con el fin de formalizar adecuadamente la discisión, es necesario definir rigurosamente la noción de "infinito", para poderlo aplicar a los ordinales. Dos conjuntos bien ordenados A y B son isomorfos (con relación al orden) si existe una biyección f entre ambos que respeta el orden: si a < a' en A, entonces f(a) < f(a) en B. Resulta obvio constatar que si A es un conjunto ordenado con n elementos (n entero natural) entonces A es isomorfo an = {0, 1, 2, ..., n-1}. Basta con renombrar cada elemento de A para obtener A = {a0, a1, a2, ..., an-1}. Un isomorfismo es meramente un cambio de apelación. Diremos que un ordinal es finito si cada una de sus partes no vacías tiene un elemento máximo. Por lo tanto todo natural es un ordenal finito. La intuición nos dice que no hay otros ordenales finitos. Lógicamente, diremos que un conjunto ordenado es finito si es isomorfo a un ordinal finito, o sea a un natural.
+Para introducir los ordinales infinitos, es preciso dar ahora la definición exacta de un ordinal:
+
+Un conjunto A totalmente ordenado (por la inclusión) es un ordinal si y solo si cada elemento de A es también un subconjunto de A
+Ya vimos que es el caso para los naturales: Por ejemplo, el conjunto 2 = {0, 1} admite 1= {0}, como elemento y por lo tanto también como subconjunto.
+
+
+=== Primer ordinal infinito ===
+Ya hemos visto que una unión cualquiera de ordinales es un ordinal. Si tomamos una unión finita de ordinales finitos, fabricamos un ordinal finito. Para obtener el primer ordinal infinito tenemos que reunir un número no finito de ordinales finitos. Haciéndolo, siempre caemos en el mismo conjunto, construido al reunir todos los ordinales finitos, es decir los naturales. El conjunto de todos los naturales, ℕ, es pues el primer ordinal infinito, lo que no debería sorprender, y lo notamos en este contexto ω (omega).
+Para visualizar los ordinales, resulta muy práctico representar cada uno por un punto de una sucesión creciente convergente, como por ejemplo un = 1 - 1/(n+1). Esto da algo semejante a: 
+
+X__________X_________X_______X______X______X_____X____X___X__X_X_XXX........
+Escojamos un punto de la sucesión, y miremos cuantos puntos están más a la izquierda. En el ejemplo, hay cuatro, y por lo tanto se trata de u4, lo que corresponde al ordinal 4. 
+Para representar el ordinal w, resulta natural añadir a la sucesión previa un punto 'O' situado exactamente en el límite de la sucesión:
+
+X__________X_________X_______X______X______X_____X____X___X__X_X_XXX...O
+A la izquierda de uw hay una infinidad de puntos, por lo tanto w es infinito. Pero si elegimos a cualquier otro punto de la sucesión a su izquierda, ya no es el caso, lo cual prueba que w es el primer ordinal infinito.
+Después de w llega w+1, w+2 ... que se representan añadiendo a la derecha uno dos o más puntos, inicialmente distantes, y luego más cercanos entre sí:
+
+X________X________X_______X______X______X_____X____X___X__X_X_XXX...O_______X_____X
+El último punto dibujado corresponde a w+2.
+Más generalmente, para sumar dos ordinales A y B se cambian los nombres de los elementos para que sean todos distintos, luego se juntan los conjuntos A y B, poniendo B a la derecha de A es decir imponiendo que cada elemento de B sea mayor que todos los de A.
+Así hemos construido w+1, ... y así podemos construir 1+w: Notemos Y el elemento de 1, y X los de w:
+
+X__________X__________X_________X_______X______X______X_____X____X___X__X_X_XXX...
+Salta a la vista que w y 1+w son muy parecidos. De hecho la función x →x - 1 realiza un isomorfismo entre ellos (1+w tiene dos elementos llamados 0: 0A y 0B. El primero hace el papel de -1 en la función). Por lo tanto corresponden al mismo ordinal: 1+w = w. Mas no es el caso de w+1, que es distinto de w porque su el conjunto w+1 tiene un elemento máximo (el O del dibujo) mientras que el conjunto w no lo tiene (el límite de los naturales no es un natural). 
+El punto w (el O del dibujo) no tiene antecesor, es decir que no existe un n tal que n+1=w: se dice que w es un ordinal límite. Cero tiene también esta propiedad pero no merece esta apelación. 
+Como w+1 ≠ 1+w, la adición no es conmutativa en los ordinales.
+Se construye del mismo modo w + w que se nota lógicamente 2w. La multiplicación se define a partir de la adición como para los naturales.
+Una vez que se ha representado nw, con n natural, no resulta demasiado difícil imaginar lo que 
+será w.w, escrito w2. Luego se puede definir wn, con n natural, y, 
+tomando el límite, ww, tiene tantos elementos como la recta real.
+La sucesión 
+  
+    
+      
+        
+          ω
+          
+            
+              ω
+              
+                
+                  
+                    …
+                  
+                  
+                    ω
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \omega ^{\omega ^{{\dots }^{\omega }}}}
+  
+ tiene como límite 
+  
+    
+      
+        
+          ε
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \varepsilon _{0}}
+  
+.
+
+
+=== Números cardinales infinitos ===
+
+El cardinal de un conjunto es el número de elementos que contiene. Esta noción es por lo tanto distinta del ordinal, que caracteriza el lugar de un elemento en una sucesión. "Cinco" difiere de "quinto" aunque obviamente existe una relación entre ambos. Se dice que dos conjuntos tienen el mismo cardinal si existe una biyección entre ellos. Contrariamente a los ordinales, esta biyección no tiene que respetar el orden (además los conjuntos no tienen que ser ordenados).
+Como ya tenemos un surtido de conjuntos —los ordinales— veamos sus tamaños (o sea sus cardinales) respectivos. No es ninguna sorpresa que los ordinales finitos también son cardinales: entre dos conjuntos con n y m elementos, m y n distintos, no puede haber biyección, por lo tanto tienen cardinales distintos. Pero no es el caso con los ordinales infinitos: Por ejemplo, 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ y 
+  
+    
+      
+        ω
+        +
+        1
+      
+    
+    {\displaystyle \omega +1}
+  
+ están en biyección por la función:
+
+  
+    
+      
+        ω
+        +
+        1
+        →
+        ω
+      
+    
+    {\displaystyle \omega +1\to \omega }
+  
+
+  
+    
+      
+        x
+        →
+        x
+        +
+        1
+      
+    
+    {\displaystyle x\to x+1}
+  
+ y 
+  
+    
+      
+        ω
+        →
+        0
+      
+    
+    {\displaystyle \omega \to 0}
+  
+, tal biyección no respeta el orden, por eso dos ordinales distintos pueden corresponder a un mismo cardinal.
+Se suele notar |A| el cardinal de A. Se llama 
+  
+    
+      
+        
+          ℵ
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \aleph _{0}}
+  
+ (alef0) el cardinal de w, o sea del conjunto de los naturales (donde alef es la primera letra del alfabeto hebreo).
+Si A y B son conjuntos, entonces 
+  
+    
+      
+        
+          
+            |
+          
+          A
+          ×
+          B
+          
+            |
+          
+          =
+          
+            |
+          
+          A
+          
+            |
+          
+          ⋅
+          
+            |
+          
+          B
+          
+            |
+          
+        
+      
+    
+    {\displaystyle \scriptstyle |A\times B|=|A|\cdot |B|}
+  
+, donde x designa el producto cartesiano de los conjuntos, y "·" es el producto de los cardinales definidos por esta fórmula.
+El conjunto de las partes de un conjunto A, P(A) está en biyección con el conjunto de las funciones de A hacia {0,1}, conjunto que de escribe como 2A, como caso particular de YX que denota el conjunto de las aplicaciones de X hacia Y.
+El cardinal de R, conjunto de los reales, es por lo tanto 2alef0, porque R está en biyección con las partes de N, por medio de la escritura decimal de los reales.
+No se puede decidir, con los axiomas clásicos (los de la teoría de los conjuntos, fundamentos de la matemática), si existe un cardinal mayor que alef0 y menor que 2alef0, es decir si existe un conjunto con más elementos que N pero con menos elementos que R. La hipótesis del continuo, que es un axioma adicional, afirma que no.
+
+
+== Análisis matemático ==
+
+
+=== Análisis estándar u ordinario ===
+Un conjunto de números reales S es acotado superiormente si existe un número c (la cota) tal que c es mayor que todo elemento de S (Por ejemplo, si S={π ; 7 ; 
+  
+    
+      
+        
+          
+            2
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\sqrt {2}}\,\!}
+  
+} entonces S es un conjunto acotado, ya que el número c=10 cumple que π<10, 7<10, 
+  
+    
+      
+        
+          
+            2
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\sqrt {2}}\,\!}
+  
+<10). Cuando un conjunto no es acotado, para cualquier número c es posible encontrar 
+  
+    
+      
+        x
+        ∈
+        S
+      
+    
+    {\displaystyle x\in S}
+  
+ de modo que c < x. El concepto de infinito se introduce como una cota especial para este tipo de conjuntos. Este concepto de infinito se representa con el símbolo 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+.
+También es utilizado en  el Análisis matemático cuando se quiere expresar que los términos de una sucesión ordenada, o los valores que toma una función al tomar la variable dependiente valores cercanos a uno fijado previamente "diverge" ("tiende a infinito", o su límite es infinito). En este contexto, se considera 
+  
+    
+      
+        ∞
+        
+        
+      
+    
+    {\displaystyle \infty \,\!}
+  
+ para representar al límite que tiende a infinito y 
+  
+    
+      
+        0
+        
+        
+      
+    
+    {\displaystyle 0\,\!}
+  
+ al límite cuando tiende a 0; y no al número 0). 
+Para recordar las reglas de límite se suele entonces acudir a las siguientes reglas nemotecnias:
+(aquí "x" representa un n.° real cualquiera)
+
+  
+    
+      
+        ∞
+        =
+        +
+        (
+        +
+        ∞
+        )
+        =
+        −
+        (
+        −
+        ∞
+        )
+      
+    
+    {\displaystyle \infty =+(+\infty )=-(-\infty )}
+  
+
+  
+    
+      
+        −
+        ∞
+        =
+        −
+        (
+        +
+        ∞
+        )
+        =
+        +
+        (
+        −
+        ∞
+        )
+      
+    
+    {\displaystyle -\infty =-(+\infty )=+(-\infty )}
+  
+
+  
+    
+      
+        x
+        +
+        ∞
+        =
+        ∞
+      
+    
+    {\displaystyle x+\infty =\infty }
+  
+
+  
+    
+      
+        x
+        −
+        ∞
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle x-\infty =-\infty }
+  
+
+  
+    
+      
+        
+          
+            x
+            ∞
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {x \over \infty }=0}
+  
+, 
+  
+    
+      
+        
+          
+            x
+            
+              −
+              ∞
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {x \over -\infty }=0}
+  
+
+Si 
+  
+    
+      
+        x
+        >
+        0
+        ,
+        
+        
+        x
+        ⋅
+        ∞
+        =
+        ∞
+      
+    
+    {\displaystyle x>0,\,\,x\cdot \infty =\infty }
+  
+   y   
+  
+    
+      
+        x
+        ⋅
+        (
+        −
+        ∞
+        )
+        =
+        (
+        −
+        ∞
+        )
+      
+    
+    {\displaystyle x\cdot (-\infty )=(-\infty )}
+  
+
+Si 
+  
+    
+      
+        x
+        <
+        0
+        ,
+        
+        
+        x
+        ⋅
+        ∞
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle x<0,\,\,x\cdot \infty =-\infty }
+  
+ y 
+  
+    
+      
+        x
+        ⋅
+        (
+        −
+        ∞
+        )
+        =
+        ∞
+      
+    
+    {\displaystyle x\cdot (-\infty )=\infty }
+  
+
+  
+    
+      
+        ∞
+        +
+        ∞
+        =
+        ∞
+        ,
+        
+        
+        −
+        ∞
+        −
+        ∞
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle \infty +\infty =\infty ,\,\,-\infty -\infty =-\infty }
+  
+
+  
+    
+      
+        ∞
+        ⋅
+        ∞
+        =
+        (
+        −
+        ∞
+        )
+        (
+        −
+        ∞
+        )
+        =
+        ∞
+        =
+        ∞
+      
+    
+    {\displaystyle \infty \cdot \infty =(-\infty )(-\infty )=\infty =\infty }
+  
+
+  
+    
+      
+        (
+        −
+        ∞
+        )
+        ⋅
+        ∞
+        =
+        ∞
+        (
+        −
+        ∞
+        )
+        =
+        −
+        ∞
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle (-\infty )\cdot \infty =\infty (-\infty )=-\infty =-\infty }
+  
+
+Las identidades anteriores son perfectamente formalizables en el análisis no estándar asociado a los números hiperreales.
+Límites indeterminados (no es posible determinar a priori su valor como en el resto de los ejemplos, no hay un valor asignado):
+
+  
+    
+      
+        0
+        ⋅
+        (
+        ±
+        ∞
+        )
+        ,
+        
+        +
+        ∞
+        −
+        ∞
+        
+      
+    
+    {\displaystyle 0\cdot (\pm \infty ),\qquad +\infty -\infty \,}
+  
+
+  
+    
+      
+        
+        
+          1
+          
+            ±
+            ∞
+          
+        
+        ,
+        
+        
+          0
+          
+            0
+          
+        
+        ,
+        
+        
+          
+            (
+            ±
+            ∞
+            )
+          
+          
+            0
+          
+        
+        
+      
+    
+    {\displaystyle \qquad 1^{\pm \infty },\qquad 0^{0},\qquad {(\pm \infty )}^{0}\,}
+  
+
+  
+    
+      
+        
+          
+            0
+            0
+          
+        
+        ,
+        
+        
+          
+            
+              ±
+              ∞
+            
+            
+              ±
+              ∞
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\frac {0}{0}},\qquad {\pm \infty  \over \pm \infty }\,}
+  
+
+
+=== Análisis no estándar ===
+
+El análisis no estándar amplia la teoría de los números reales. Desde el punto de vista lógico los números reales pueden ser entendidos como un lenguaje formal en el que se da por supuesto la existencia de ciertos objetos y en el cual se puede deducir la existencia de otros objetos. En términos de lenguajes formales el análisis no estándar es una extensión lógica de la teoría ordinaria de los números reales que además es conservadora (en el sentido que sus teoremas deducibles coinciden con los deducibles en la teoría ordinaria de los números reales). Si bien esta extensión parece antieconómica desde el punto de vista de la navaja de Ockham, ya que la complicación introducida no altera la clase de teoremas básicos sobre los números reales ordinarios, realmente permite hacer demostraciones más breves, derivar resultados más fácilmente que en la teoría ordinaria y frecuentemente más intuitiva en términos lógicos.
+En el seno del análisis no estándar se introduce un predicado nuevo st(·) y tres nuevos axiomas que describen el uso de dicho predicado. Gracias a ese predicado el conjunto de números descritos por el lenguaje forman se puede dividir en "elementos estándar" para los cuales (r es estándar si st(r) es cierto) y "elementos no estándar" (r es no estándar si ¬st(r) es cierto). Los elementos estándar tienen esencialmente las mismas propiedades que los números reales ordinarios, mientras que los elementos no estándar incluyen números especiales algunos de los cuales como infinitesimales o como números ilimitados (infinitos). La ventaja de la estructura lógica del análisis no estándar es que se pueden usar dichos números y ser empleados en deducciones sin inconsistencia alguna (a diferencia de las reglas heurísticas del cálculo infinitesimal tradicional antes de la formalización del siglo XIX).
+En el análisis no estándar pueden definirse números que intuitivamente se comportan como números infinitos gracias al predicado st(·) "· es estándar". Por ejemplo un número ilimitado r satisface que "para cualquier número e del conjunto y cualquier número natural estándar resulta que ne < r", formalmente:
+
+  
+    
+      
+        ∀
+        e
+        ∈
+        
+          
+
+          
+          
+            ∗
+          
+        
+        
+          R
+        
+        ,
+        ∀
+        n
+        ∈
+        
+          N
+        
+        ,
+        
+          [
+          
+            
+              s
+              t
+            
+            (
+            n
+            )
+            ∧
+            n
+            e
+            <
+            r
+          
+          ]
+        
+      
+    
+    {\displaystyle \forall e\in {}^{*}\mathbb {R} ,\forall n\in \mathbb {N} ,\left[\mathrm {st} (n)\land ne<r\right]}
+  
+
+Obviamente el número r no puede ser estándar, ya que para números estándar se tiene que "para cualquier número e y cualquier r existe un natural tal que ne > r, formalmente:
+
+  
+    
+      
+        ∀
+        e
+        ∈
+        
+          
+
+          
+          
+            ∗
+          
+        
+        
+          R
+        
+        ,
+        ∃
+        n
+        ∈
+        
+          N
+        
+        ,
+        
+          [
+          
+            n
+            e
+            >
+            r
+          
+          ]
+        
+      
+    
+    {\displaystyle \forall e\in {}^{*}\mathbb {R} ,\exists n\in \mathbb {N} ,\left[ne>r\right]}
+  
+
+Nótese que en esta expresión no aparece el predicado "estándar" st(·), y por tanto es formalizable en la teoría ordinaria, mientras que la noción de número ilimitado no es formalizable en la teoría ordinaria por carecer esta teoría del predicado st(·).
+Análogamente en el análisis no estándar pueden definirse números infinitesimales, más pequeños en valor absoluto que cualquier número estándar positivo. De hecho el inverso de un número ilimitado es siempre un número infinitesimal.
+
+
+== Infinito en informática ==
+De manera relacionada con el infinito para números reales, algunos lenguajes de programación admiten un valor especial que recibe el nombre de infinito: valor que se puede obtener como resultado de ciertas operaciones matemáticas no realizables, tales como las descritas en el punto anterior u operaciones teóricamente posibles, pero demasiado complejas para su trabajo en el ordenador/lenguaje en cuestión. En otros lenguajes simplemente se produciría un error.
+
+
+== Infinito en metafísica ==
+Lo infinito no puede admitir ninguna restricción, lo que supone que es absolutamente incondicionado e indeterminado, ya que toda determinación, cualquiera que sea, es forzosamente una limitación, porque deja algo fuera de ella. Por otra parte, la limitación presenta el carácter de una verdadera negación: poner un límite, es negar, para lo que está encerrado en él, todo lo que este límite excluye; por consiguiente, la negación de un límite es propiamente la negación de una negación, es decir, lógica e incluso matemáticamente una afirmación, de tal suerte que la negación de todo límite equivale en realidad a la afirmación total y absoluta. Lo que no tiene límites, es aquello de lo cual no se puede negar nada, y por consiguiente, aquello que contiene todo, aquello fuera de lo cual no hay nada; y esta idea del Infinito, que es así la más afirmativa de todas, puesto que comprende o envuelve todas las afirmaciones particulares, cualesquiera que puedan ser, no se expresa por un término de forma negativa (in-finito) sino en razón misma de su indeterminación absoluta.[3]​
+
+
+=== Infinito según la física aristotélica ===
+El concepto finito según la física aristotélica niega que existe el infinito en acto.[4]​ Cuando habla de infinito se refiere sobre todo a un cuerpo infinito y los argumentos que aduce contra la existencia de un cuerpo finito.[5]​ Lo infinito existe solo como potencia o en potencia.[5]​ Infinito en potencia es, por ejemplo, el número, porque siempre es posible añadir a cualquier número otro, sin llegar jamás a un límite extremo tras el cual no se pueda avanzar más; o infinito en potencia es también el espacio, porque es divisible hasta el infinito, en cuanto el resultado de la división es siempre una magnitud que, como tal, es divisible ulteriormente; finalmente, infinito potencial es también el tiempo, que no puede existir en su totalidad a la vez, sino que se desarrolla y crece sin fin.[5]​
+Aristóteles no llegó a entrever la idea de que lo inmaterial pudiera ser infinito, debido a que asoció el concepto de infinito a la categoría de cantidad, que solo puede aplicarse a lo sensible.[5]​ Y se explica también que el filósofo concluyera por sellar definitivamente la idea pitagórica, y, en general, propia de casi toda la cultura griega, según la cual lo finito es perfecto y lo infinito es imperfecto.[6]​
+Esta es la razón por la que Aristóteles tenía que negar necesariamente de Dios el atributo de la infinitud.[5]​ Después de esta concepción del infinito como potencialidad e imperfección, había que eliminar la antigua intuición de los milesios, de Meliso y de Anaxágoras, que consideraban al Absoluto como infinito: tal intuición resultaba excéntrica respecto al pensamiento de toda la cultura griega y, para poder renacer, tendría que esperar al descubrimiento de ulteriores horizontes metafísicos.[5]​
+
+
+== Historia ==
+
+
+=== El símbolo de infinito ===
+El símbolo 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  
+ con que se expresa el infinito fue introducido a la notación matemática por el matemático inglés John Wallis (1616-1703) en una de sus obras más importantes: Arithmetica Infinitorum en 1656. En 1694 fue creada la representación gráfica lemniscata por Jacob Bernoulli (1655-1705).[7]​ 
+También se cree posible que la forma provenga de otros símbolos alquímicos o religiosos, como por ejemplo ciertas representaciones de la serpiente uróboros.[cita requerida]
+Otra hipótesis defiende que el símbolo parece la representación gráfica del fenómeno conocido como analema solar. Esta teoría tiene más sentido si dotamos de importancia a la parte formal del diseño y a la cronología de su origen.[cita requerida]. El analema solar se trata de una foto o de una gráfica del sol, registrada todos los días durante un año a la misma hora y en el mismo lugar, al reunir los puntos veremos que se dibuja una lemniscata debido a la inclinación del eje terrestre que varía el ángulo en el que visualizamos el sol a lo largo de un año, quedando en el punto más alto el solsticio de verano y en el más bajo el solsticio de invierno, su forma varía levemente dependiendo del punto geográfico de la tierra desde donde se registre. Esto simboliza un "ciclo Anual" a su vez en el ciclo infinito del sol año tras año.
+Se ha querido ver también una banda de Möbius en su forma,[cita requerida] aunque el símbolo se usó durante cientos de años antes de que August Möbius descubriera la banda que lleva su nombre.
+El símbolo de infinito se representa en Unicode con el carácter ∞[1] (U+221E).
+
+
+== Véase también ==
+Asíntota
+Conjuntos numerables
+Infinitesimal
+Número transfinito
+Paradojas sobre el infinito
+
+
+== Referencias ==
+
+
+== Más información ==
+Manolios, Panagiotis & Vroon, Daron. Algorithms for ordinal arithmetic. Baader, Franz (ed), 19th International Conference on Automated Deduction--CADE-19. Pages 243-257 of LNAI, vol. 2741. Springer-Verlag.
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una categoría multimedia sobre Infinito.

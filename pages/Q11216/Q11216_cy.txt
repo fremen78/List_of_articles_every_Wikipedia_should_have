@@ -1,0 +1,674 @@
+Dadansoddiad rhifiadol (Saesneg: Numerical analysis) yw'r astudiaeth o algorithmau sy'n defnyddio brasamcan rhifiadol (yn hytrach na thrin a thrafod symbolau) ar gyfer problemau dadansoddi mathemategol (yn wahanol i fathemateg arwahanol sef discrete mathematics).
+Mae dadansoddiad rhifiadol yn cael ei gymhwyso ym mhob maes peirianneg a'r gwyddorau ffisegol yn naturiol iawn, ond yn yr 21g hefyd mae'r gwyddorau bywyd, y gwyddorau cymdeithasol, meddygaeth, busnes a hyd yn oed y celfyddydau wedi mabwysiadu elfennau o gyfrifo gwyddonol. Mae'r twf yng nghryfder a chyflymder y cyfrifiadur wedi cynyddu'r defnydd o fodelau mathemategol realistig mewn gwyddoniaeth a pheirianneg, ac mae angen dadansoddiad rhifiadol cynnil i roi'r modelau manwl hyn o'r byd ar waith. Er enghraifft, mae hafaliad differol cyffredin yn ymddangos mewn mecaneg wybrennol (sy'n darogan symudiad planedau, sêr a galaethau); mae algebra llinol rhifiadol yn bwysig ar gyfer dadansoddi data; mae hafaliadau dufferol stocastig a chadwyni Markov yn hanfodol wrth efelychu celloedd byw mewn meddygaeth a bioleg.
+Mae'r safbwynt rhifiadol yn mynd yn ôl i'r ysgrifau mathemategol cynharaf. Ceir tabled yng Nghasgliad Babilonaidd Prifysgol Iâl (7289), yn rhoi brasamcan rhifiadol o Ail isradd 2, hyd y groeslin mewn sgwâr. Mae dadansoddiad rhifiadol yn parhau â'r traddodiad hir hwn: yn hytrach nag atebion symbolaidd union, mae'n rhoi atebion bras o fewn ffiniau gwallau penodol. Cyn cyfrifiaduron modern, roedd dull rhifiadol yn aml yn dibynnu ar fformiwlâu rhyngosod â llaw rhyngosod, gan ddefnyddio data o dablau print, mawr. Ers canol yr 20g, mae cyfrifiaduron yn cyfrifo'r ffwythiannau gofynnol, ond mae llawer o'r un fformwlâu yn parhau i gael eu defnyddio yn algorithmau'r meddalwedd.
+
+
+== Cyffredinol ==
+Nod cyffredinol y maes dadansoddi rhifiadol yw dylunio a dadansoddi technegau i roi atebion bras ond cywir i broblemau caled, a chedir amrywiaeth ohonynt:
+
+Mae dulliau rhifiadol uwch yn hanfodol er mwyn gwneud rhagfynegiad tywydd mewn dull rhifiadol, a hynny'n ymarferol.
+Wrth gyfrifo taflwybr llong ofod mae angen datrysiad rhifiadol cywir system o hafaliadau differol cyffredin.
+Gall cwmnïau ceir wella diogelwch gan leihau damweiniau eu cerbydau trwy ddefnyddio modelau cyfrifiadurol o ddamweiniau ceir. Yn y bôn, mae modelau (neu efelychiadau) o'r fath yn cynnwys datrys hafaliadau differol rhannol yn rhifiadol.
+Mae hedge funds (cronfeydd buddsoddi preifat) yn defnyddio offer o bob maes dadansoddi rhifiadol i geisio cyfrifo gwerth stociau a deilliadau ariannol yn fwy manwl gywir na chyfranogwyr eraill y farchnad.
+Mae cwmnïau hedfan yn defnyddio algorithmau optimeiddio soffistigedig i benderfynu prisiau tocynnau, aseiniadau awyren a chriw ac anghenion tanwydd. Yn hanesyddol, datblygwyd algorithmau o'r fath ym maes gorgyffwrdd ymchwil gweithrediadau .
+Mae cwmnïau yswiriant yn defnyddio rhaglenni rhifiadol ar gyfer dadansoddi actiwaraidd. Tad gwyddoniaeth actiwaraidd fodern oedd William Morgan (1750 - 1833) o Ben-y-bont ar Ogwr, Sir Forgannwg  ac un o golofnau mawr The Equitable Life Assurance Society a'r Scottish Widows.
+
+
+=== Hanes ===
+Mae maes dadansoddi rhifiadol yn rhagddyddio cyfrifiaduron modern fel y nodwyd. Roedd rhyngosod llinellol (linear interpolation) eisoes yn cael ei ddefnyddio fwy na 2000 o flynyddoedd yn ôl. Archwiliwyd y maes dadansoddiad rhifiadol gan lawer o fathemategwyr mawr y gorffennol, fel sy'n amlwg o enwau algorithmau pwysig fel dull Newton, polynomial rhyngosod Lagrange, dileu Gaussaidd, neu ddull Euler.
+Er mwyn hwyluso cyfrifo â llaw, cynhyrchwyd llyfrau mawr gyda fformwlâu a thablau o ddata fel pwyntiau rhyngosod a chyfernodau ffwythiant. Gan ddefnyddio'r tablau hyn, a gyfrifir yn aml i 16 lle degol neu fwy ar gyfer rhai ffwythiannau, gellid darllen gwerthoedd i'w defnyddio mewn fformwlâu a chyflawni amcangyfrifon rhifiadol eithaf cywir ar adegau. Y gwaith canonaidd yn y maes yw'r cyhoeddiad NIST a olygwyd gan Abramowitz a Stegun, llyfr  1000 tudalen gyda mwy o fformiwlâu a ffwythiannau na chyn hynny. Yn yr oes fodern, nid yw'r gwerthoedd ffwythiant, bellach yn ddefnyddiol, gyda'r cyfrifiadur yn gwneud y gwaith, ond gall y rhestr fawr o fformiwlâu fod yn ddefnyddiol iawn o hyd.
+Datblygwyd y gyfrifiannell fecanyddol hefyd fel offeryn ar gyfer cyfrifo gyda llaw a llygad. Esblygodd y cyfrifianellau hyn yn gyfrifiaduron electronig yn y 1940au, pan ganfuwyd bod y cyfrifiaduron hyn yn ddefnyddiol at ddibenion gweinyddol. Ond dylanwadodd y cyfrifiadur yn drwm ar faes dadansoddi rhifiadol, gan y gellid gwneud cyfrifiadau hirach a mwy cymhleth.
+
+
+=== Dulliau uniongyrchol ac ailadroddol ===
+Ystyriwch y broblem o ddatrys
+
+3 x 3 + 4 = 28
+ar gyfer y maint anhysbys x.
+
+Ar gyfer y dull ailadroddol, cymhwyswch y dull hanerydd i f(x) = 3x3 − 24. Y gwerthoedd cychwynnol yw a = 0, b = 3, f(a) = −24, f(b) = 57.
+
+O'r tabl hwn gellir dod i'r casgliad bod yr ateb rhwng 1.875 a 2.0625. Gallai'r algorithm ddychwelyd unrhyw rif yn yr ystod honno gyda gwall llai na 0.2.
+
+
+==== Discretization ac integreiddio rhifiadol ====
+
+Mewn ras dwy awr, mae cyflymder y car yn cael ei fesur mewn tri lle, a'i gofnodi yn y tabl canlynol.
+
+Discretization fyddai dweud bod cyflymder y car yn gyson rhwng 0:00 a 0:40, yna o 0:40 i 1:20 ac yn olaf o 1:20 i 2:00. Er enghraifft, mae cyfanswm y pellter a deithiwyd yn ystod y 40 munud cyntaf oddeutu (2/3 h × 140 km/h) = 93.3 km. Byddai hyn yn caniatáu inni amcangyfrif cyfanswm y pellter a deithiwyd fel 93.3 km + 100 km + 120 km = 313.3 km, sy'n enghraifft o integreiddio rhifiadol (gweler isod) gan ddefnyddio swm Riemann, oherwydd bod dadleoli yw integryn cyflymder.
+Problem â chyflyrau gwael (ill-conditioned problem):
+Cymerwch y ffwythiant f(x) = 1/(x−1). Sylwch fod f(1.1) = 10 ac f(1.001) = 1000: newid yn x o lai na 0.1 sy'n troi'n newid yn f(x) o bron i 1000. Mae gwerthuso f(x) ger x=1 yn broblem â chyflyrau gwael.
+Mewn cyferbyniad, mae problem wedi'i chyflyru'n dda yn gwerthuso'r un ffwythiant f(x) = 1/(x−1) ger x = 10 yn broblem â chyflwr da. Er enghraifft, f(10) = 1/9 ≈ 0.111 ac f(11) = 0.1: mae newid cymharol fach yn x yn arwain at newid cymharol fach yn f(x).
+Mae dulliau uniongyrchol yn cyfrifo'r datrysiad i broblem mewn nifer gyfyngedig (anfeidrol) o gamau. Byddai'r dulliau hyn yn rhoi'r union ateb pe byddent yn cael eu perfformio mewn rhifyddeg trachywiredd anfeidrol. Ymhlith yr enghreifftiau mae dileu Gaussaidd, y dull ffactorio QR ar gyfer datrys systemau hafaliadau llinol, a'r dull syml o raglennu llinol. Yn ymarferol, defnyddir manwl gywirdeb meidrol a'r canlyniad yw brasamcan o'r gwir ddatrysiad (gan dybio sefydlogrwydd).
+Mewn cyferbyniad â dulliau uniongyrchol, ni ddisgwylir i ddulliau ailadroddol ddod i ben mewn nifer meidraidd o gamau. Gan ddechrau o ddyfalu cychwynnol, mae dulliau ailadroddol yn ffurfio brasamcanion olynol sy'n cydgyfeirio i'r union ddatrysiad yn y terfan yn unig. Nodir prawf cydgyfeirio, sy'n aml yn cynnwys y gweddilliol, er mwyn penderfynu pryd y daethpwyd o hyd i ateb digon cywir (gobeithio). Hyd yn oed gan ddefnyddio rhifyddeg trachywiredd anfeidrol ni fyddai'r dulliau hyn yn cyrraedd y datrysiad o fewn nifer gyfyngedig o gamau (yn gyffredinol). Ymhlith yr enghreifftiau mae dull Newton, y dull haneru (bisection), ac iteriad Jacobi. Mewn algebra matrics cyfrifiadol, yn gyffredinol mae angen dulliau ailadroddol ar gyfer problemau mawr.
+Mae dulliau ailadroddol yn fwy cyffredin na dulliau uniongyrchol mewn dadansoddiad rhifiadol. Mae rhai dulliau yn uniongyrchol mewn egwyddor ond fe'u defnyddir fel arfer fel pe na baent, ee GMRES a'r dull graddiant cyfun (conjugate gradient method). Ar gyfer y dulliau hyn, mae nifer y camau sydd eu hangen i gael yr union ddatrysiad mor fawr nes bod brasamcan yn cael ei dderbyn yn yr un modd ag ar gyfer dull ailadroddol.
+
+
+=== Discretization ===
+Ar ben hynny, weithiau mae'n rhaid disodli problemau parhaus gan broblem arwahanol y gwyddys bod ei datrysiad yn debyg i broblem barhaus; gelwir y broses hon yn 'discretization'. Er enghraifft, mae datrysiad o hafaliad differol yn ffwythiant. Rhaid i'r ffwythiant hon gael ei chynrychioli gan swm meidraidd o ddata, er enghraifft gan ei werth ar nifer gyfyngedig o bwyntiau yn ei barth, er bod y parth hwn yn gontinwwm.
+
+
+=== Sefydlogrwydd rhifiadol a phroblemau mewn sefyllfa dda ===
+Mae sefydlogrwydd rhifiadol yn syniad mewn dadansoddiad rhifiadol. Gelwir algorithm yn 'sefydlog yn rhifiadol' os nad yw gwall yn tyfu'n fwy yn ystod y cyfrifiad. Mae hyn yn digwydd os yw'r broblem wedi'i 'chyflyru'n dda' ('well-conditioned'), sy'n golygu bod y datrysiad yn newid ychydig bach yn unig os yw'r data'n cael ei newid ychydig bach. I'r gwrthwyneb, os yw problem yn 'wael ei chyflwr', yna bydd unrhyw wall bach yn y data'n tyfu i fod yn wall mawr.
+Gall y broblem wreiddiol a'r algorithm a ddefnyddir i ddatrys y broblem honno fod mewn cyflwr dan neu mewn cyflwr gwael, ac mae unrhyw gyfuniad yn bosibl.
+Felly gall algorithm sy'n datrys problem sydd wedi'i chyflyru'n dda fod naill ai'n sefydlog yn rhifiadol neu'n ansefydlog yn rhifiadol. Camp dadansoddiad rhifiadol yw dod o hyd i algorithm sefydlog ar gyfer datrys problem fathemategol sydd wedi'i gosod yn dda. Er enghraifft, mae cyfrifo ail isradd 2 (sef 1.41421 yn fras) yn broblem sydd wedi'i gosod yn dda. Mae llawer o algorithmau yn datrys y broblem hon trwy ddechrau gyda brasamcan cychwynnol x0 i 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+, er enghraifft x0 = 1.4, ac yna cyfrifo dyfaliadau gwell x1, x2, ac ati. Un dull o'r fath yw'r dull Babilonaidd enwog, a roddir gan xk+1 = xk/2 + 1 / xk. Rhoddir dull arall, o'r enw 'dull X', gan xk+1 = (xk2 - 2)2 + xk. Mae ychydig o iteriadau o bob cynllun yn cael eu cyfrif ar ffurf tabl, isod, gyda dyfaliadau cychwynnol x0 = 1.4 a x0 = 1.42.
+
+Mae'r dull Babilonaidd uchod yn cydgyfarfod yn gyflym waeth beth yw'r dyfalu cychwynnol, ond mae Dull X yn cydgyfarfod yn araf iawn gyda dyfalu cychwynnol x0 = 1.4 ac yn dargyfeirio ar gyfer dyfalu cychwynnol x0 = 1.42. Felly, mae'r dull Babilonaidd yn sefydlog yn rhifiadol, tra bod Dull X yn ansefydlog yn rhifiadol.
+
+Effeithir ar sefydlogrwydd rhifiadol gan nifer y digidau arwyddocaol y mae'r peiriant yn eu cadw. Os defnyddir peiriant sy'n cadw'r pedwar digid degol mwyaf arwyddocaol yn unig, gellir rhoi enghraifft dda o golli arwyddocâd gan y ddwy swyddogaeth gyfatebol
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        x
+        
+          (
+          
+            
+              
+                x
+                +
+                1
+              
+            
+            −
+            
+              
+                x
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle f(x)=x\left({\sqrt {x+1}}-{\sqrt {x}}\right)}
+  
+ a 
+  
+    
+      
+        g
+        (
+        x
+        )
+        =
+        
+          
+            x
+            
+              
+                
+                  x
+                  +
+                  1
+                
+              
+              +
+              
+                
+                  x
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle g(x)={\frac {x}{{\sqrt {x+1}}+{\sqrt {x}}}}.}
+  
+
+gan gymharu canlyniadau
+
+  
+    
+      
+        f
+        (
+        500
+        )
+        =
+        500
+        
+          (
+          
+            
+              
+                501
+              
+            
+            −
+            
+              
+                500
+              
+            
+          
+          )
+        
+        =
+        500
+        
+          (
+          
+            22.38
+            −
+            22.36
+          
+          )
+        
+        =
+        500
+        (
+        0.02
+        )
+        =
+        10
+      
+    
+    {\displaystyle f(500)=500\left({\sqrt {501}}-{\sqrt {500}}\right)=500\left(22.38-22.36\right)=500(0.02)=10}
+  
+
+a
+
+  
+    
+      
+        
+          
+            
+              
+                g
+                (
+                500
+                )
+              
+              
+                
+                =
+                
+                  
+                    500
+                    
+                      
+                        
+                          501
+                        
+                      
+                      +
+                      
+                        
+                          500
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    500
+                    
+                      22.38
+                      +
+                      22.36
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    500
+                    44.74
+                  
+                
+                =
+                11.17
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}g(500)&={\frac {500}{{\sqrt {501}}+{\sqrt {500}}}}\\&={\frac {500}{22.38+22.36}}\\&={\frac {500}{44.74}}=11.17\end{alignedat}}}
+  
+
+trwy gymharu'r ddau ganlyniad uchod, mae'n amlwg bod colli arwyddocâd (a achosir yma trwy ganslo trychinebus rhag tynnu brasamcanion i'r niferoedd cyfagos 
+  
+    
+      
+        
+          
+            501
+          
+        
+      
+    
+    {\displaystyle {\sqrt {501}}}
+  
+ a 
+  
+    
+      
+        
+          
+            500
+          
+        
+      
+    
+    {\displaystyle {\sqrt {500}}}
+  
+, er bod y tynnu wedi'i gyfrifo'n union) yn cael effaith enfawr ar y canlyniadau, er bod y ddau ffwythiant yn gyfwerth, fel y dangosir isod
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                x
+                
+                  (
+                  
+                    
+                      
+                        x
+                        +
+                        1
+                      
+                    
+                    −
+                    
+                      
+                        x
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  (
+                  
+                    
+                      
+                        x
+                        +
+                        1
+                      
+                    
+                    −
+                    
+                      
+                        x
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    
+                      (
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      
+                        )
+                        
+                          2
+                        
+                      
+                      −
+                      (
+                      
+                        
+                          x
+                        
+                      
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    
+                      x
+                      +
+                      1
+                      −
+                      x
+                    
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                x
+                
+                  
+                    1
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    x
+                    
+                      
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                      +
+                      
+                        
+                          x
+                        
+                      
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                g
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{4}f(x)&=x\left({\sqrt {x+1}}-{\sqrt {x}}\right)\\&=x\left({\sqrt {x+1}}-{\sqrt {x}}\right){\frac {{\sqrt {x+1}}+{\sqrt {x}}}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=x{\frac {({\sqrt {x+1}})^{2}-({\sqrt {x}})^{2}}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=x{\frac {x+1-x}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=x{\frac {1}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&={\frac {x}{{\sqrt {x+1}}+{\sqrt {x}}}}\\&=g(x)\end{alignedat}}}
+  
+
+Y gwerth a ddymunir, wedi'i gyfrifo gan ddefnyddio manwl gywirdeb anfeidrol, yw 11.174755. . .
+Mae'r enghraifft yn addasiad o un a gymerwyd o Mathew; dulliau rhifiadol gan ddefnyddio Matlab, 3ydd arg.
+
+
+== Meysydd astudio ==
+Mae maes dadansoddi rhifiadol yn cynnwys llawer o is-ddisgyblaethau. Dyma rai o'r prif rai:
+
+
+=== Gwerthoedd cyfrifiadurol ffwythiannau ===
+Un o'r problemau symlaf yw gwerthuso ffwythiant ar bwynt penodol. Weithiau nid yw'r dull symlaf, o ddim ond plygio'r rhif yn y fformiwla yn effeithlon iawn. Ar gyfer polynomialau, dull gwell yw defnyddio'r cynllun Horner, gan ei fod yn lleihau'r nifer angenrheidiol o luosiadau ac adio. Yn gyffredinol, mae'n bwysig amcangyfrif a rheoli gwallau talgrynnu sy'n deillio o ddefnyddio rhifyddeg pwynt arnawf.
+
+
+=== Rhyngosod, allosod, ac atchweliad ===
+Mae rhyngosod yn datrys y broblem ganlynol: o ystyried gwerth rhywfaint o ffwythiant anhysbys ar nifer o bwyntiau, pa werth sydd gan y ffwythiant honno ar ryw bwynt arall rhwng y pwyntiau a roddir?
+Mae allosod yn debyg iawn i ryngosod, ac eithrio bod yn rhaid dod o hyd i werth y ffwythiant anhysbys ar bwynt sydd y tu allan i'r pwyntiau penodol.
+Mae atchweliad hefyd yn debyg, ond mae'n cymryd i ystyriaeth bod y data'n amwys. O ystyried rhai pwyntiau, a mesuriad o werth rhyw ffwythiant ar y pwyntiau hyn (gyda gwall), gellir dod o hyd i'r ffwythiant anhysbys. Mae'r dull a elwir yn ddull y sgwariau lleiaf yn un ffordd o gyflawni hyn.
+
+
+=== Datrys hafaliadau a systemau o hafaliadau ===
+Problem sylfaenol arall yw cyfrifo datrysiad o hafaliad penodol. Mae dau achos yn cael eu gwahaniaethu'n gyffredin, yn dibynnu ar y cwestiwn a yw'r hafaliad yn llinol ai peidio. Er enghraifft, mae'r hafaliad 
+  
+    
+      
+        2
+        x
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x+5=3}
+  
+ yn llinol tra nad yw 
+  
+    
+      
+        2
+        
+          x
+          
+            2
+          
+        
+        +
+        5
+        =
+        3
+      
+    
+    {\displaystyle 2x^{2}+5=3}
+  
+.
+Gwnaed llawer o ymdrech i ddatblygu dulliau ar gyfer datrys systemau hafaliadau llinol. Ymhlith y dulliau uniongyrchol safonol y mae dileu Gaussaidd, dadelfennu LU , dadelfennu Cholesky ar gyfer matrics cymesur (neu hermitian ) a matrics positif-bendant, a dadelfennu QR ar gyfer matricsau nad ydynt yn sgwâr. Mae dulliau ailadroddol fel dull Jacobi, dull Gauss-Seidel, gor-ymlacio olynol a dull graddiant cyfun (conjugate gradient method) fel arfer yn cael eu ffafrio ar gyfer systemau mawr. Gellir datblygu dulliau ailadroddol cyffredinol gan hollti matrics.
+Defnyddir algorithmau darganfod yr ail isradd i ddatrys hafaliadau aflinol (fe'u henwir felly gan fod ail isradd ffwythiant yn ddadl y mae'r ffwythiant yn cynhyrchu sero ar ei chyfer). Os yw'r ffwythiant yn ddifferadwy ac os yw'r deilliad yn hysbys, yna mae dull Newton yn ddewis poblogaidd. Mae llinelloli yn dechneg arall ar gyfer datrys hafaliadau aflinol.
+
+
+=== Datrys problemau gwerth eigenvalue neu unigol ===
+Gellir geirio sawl problem bwysig o ran dadelfeniadau eigenvalue neu ddadelfeniadau gwerth unigol. Er enghraifft, mae'r algorithm cywasgu delwedd spectral yn seiliedig ar y dadelfennu gwerth unigol. Gelwir yr offeryn cyfatebol mewn ystadegau yn 'ddadansoddiad prif gydran'.
+
+
+=== Optimeiddio ===
+Mae problemau optimeiddio yn gofyn am y pwynt lle mae ffwythiant benodol ar ei uchafu (neu ar ei leiaf). Yn aml, mae'n rhaid i'r pwynt fodloni rhai cyfyngiadau hefyd.
+Rhennir y maes optimeiddio ymhellach mewn sawl is-faes, yn dibynnu ar ffurf y ffwythiant wrthrychol a'r cyfyngiad. Er enghraifft, mae rhaglennu llinolyn  delio â'r achos bod y ffwythiant a'r cyfyngiadau yn llinol. Dull enwog mewn rhaglennu llinol yw'r dull simplex.
+Gellir defnyddio dull lluosyddion Lagrange i leihau problemau optimeiddio.
+
+
+=== Gwerthuso integrynnau ===
+ 
+Mae integreiddio rhifiadol, a elwir hefyd yn <i>quadrature</i> rhifiadol, yn gofyn am werth integrol bendant. Mae dulliau poblogaidd yn defnyddio un o fformiwlâu Newton-Cotes (fel y rheol ganolbwynt neu reol Simpson) neu <i>quadrature Gaussaidd</i>. Mae'r dulliau hyn yn dibynnu ar strategaeth "rhannu a choncro", lle mae integryn ar set gymharol fawr yn cael ei rannu'n integrynnau ar setiau llai. Mewn dimensiynau uwch, lle mae'r dulliau hyn yn dod yn rhy ddrud o ran ymdrech gyfrifiadol, gellir defnyddio dulliau Monte Carlo neu led-Monte Carlo, ), neu mewn dimensiynau cymedrol fawr, y dull o gridiau tenau (sparse grids).
+
+
+=== Hafaliadau differol ===
+ 
+Mae dadansoddiad rhifiadol hefyd yn ymwneud â chyfrifiadura datrysiad o hafaliadau differol, hafaliadau differol cyffredin ac hafaliadau gwahaniaethol rhannol.
+Datrysir hafaliadau differol rhannol trwy ddileu'r hafaliad yn gyntaf, gan ddod ag ef i is-ofod meidraidd-gyfyngedig. Gellir gwneud hyn trwy ddull elfen gyfyngedig, dull gwahaniaeth meidraidd, neu (yn enwedig ym maes peirianneg) dull cyfaint meidraidd. Mae cyfiawnhad damcaniaethol y dulliau hyn yn aml yn cynnwys theoremau dadansoddi ffwythiannol, sy'n lleihau'r broblem i ddatrysiad hafaliad algebraidd.
+Ceir dau fath: yr hafaliad differol cyffredin yw hafaliad sy'n cynnwys ffwythiant anhysbys o un newidyn real neu gymhlyg x, ei ddeilliadau, a rhai o ffwythiannau penodol x . Yn gyffredinol, cynrychiolir y ffwythiant anhysbys gan newidyn (a ddynodir yn aml y), sydd, felly, yn dibynnu ar x. Felly gelwir x yn aml yn newidyn annibynnol yr hafaliad. Defnyddir y term "cyffredin" mewn cyferbyniad â'r term hafaliad differol rhannol, a all fod mewn perthynas â mwy nag un newidyn annibynnol.
+Hafaliadau differol llinol yw'r hafaliadau differol sy'n llinol yn y ffwythiant anhysbys a'i deilliadau. Mae eu theori wedi'i datblygu'n dda, ac mewn llawer o achosion gall rhywun fynegi eu datrysiadau yn nhermau integrynnau. Mae'r rhan fwyaf o ODEs y deuir ar eu traws mewn ffiseg yn llinol. Felly, gellir diffinio'r rhan fwyaf o ffwythiannau arbennig fel datrysiadau hafaliadau differol llinol (gweler ffwythiant Holonomig). Gan na ellir mynegi datrysiadau hafaliad differol trwy fynegiant ffurf gaeedig, defnyddir dulliau rhifiadol yn gyffredin ar gyfer datrys hafaliadau differol ar gyfrifiadur.
+
+
+== Meddalwedd ==
+Ers diwedd yr 20g, gweithredir y mwyafrif o algorithmau mewn amrywiaeth o ieithoedd rhaglennu. Mae ystorfa Netlib yn cynnwys casgliadau amrywiol o feddalwedd ar gyfer problemau rhifiadol, yn Fortran ac C yn bennaf. Ymhlith y cynnyrch masnachol sy'n gweithredu llawer o wahanol algorithmau rhifiadol mae llyfrgelloedd IMSL a NAG; dewis arall o ran meddalwedd am ddim yw Llyfrgell Wyddonol GNU.
+
+
+== Cyfeiriadau ==
+
+
+=== Cyfnodolion ===
+gdz.sub.uni-goettingen, Numerische Mathematik, cyfrolau 1-66, Springer, 1959-1994. Nodyn:In lang
+Numerische Mathematik, cyfrolau 1–112, Springer, 1959–2009
+Journal on Numerical Analysis, cyfrolau 1-47, SIAM, 1964–2009
+
+
+=== Testun arlein ===
+Numerical Recipes, William H. Press
+First Steps in Numerical Analysis (archived), R.J.Hosking, S.Joe, D.C.Joyce, and J.C.Turner
+CSEP (Computational Science Education Project), U.S. Department of Energy (Internet Archive)
+Numerical Methods, ch 3. in the Digital Library of Mathematical Functions
+Numerical Methods Archifwyd 28 Gorffennaf 2009 yn y Peiriant Wayback, Stuart Dalziel Prifysgol Caergrawnt
+Lectures on Numerical Analysis, Dennis Deturck and Herbert S. Wilf Prifysgol Pennsylvania
+Numerical methods, John D. Fenton Prifysgol Karlsruhe
+Numerical Methods for Physicists, Anthony O’Hare Prifysgol Rhydychen
+Lectures in Numerical Analysis (Internet Archive), R. Radok Prifysgol Mahidol
+Introduction to Numerical Analysis for Engineering, Henrik Schmidt Massachusetts Institute of Technology
+Numerical Analysis for Engineering, D. W. Harder Prifysgol Waterloo
+
+
+== Dolenni allanol ==
+ Cyfryngau perthnasol Numerical analysis ar Gomin Wicimedia
+Lectures on Differential Equations MIT Open CourseWare Videos
+Online Notes / Differential Equations Paul Dawkins, Lamar University
+Differential Equations, S.O.S. Mathematics
+Introduction to modeling via differential equations Introduction to modeling by means of differential equations, with critical remarks.
+Mathematical Assistant on Web Symbolic ODE tool, using Maxima
+Exact Solutions of Ordinary Differential Equations
+Collection of ODE and DAE models of physical systems Archifwyd 2008-12-19 yn y Peiriant Wayback MATLAB models
+Notes on Diffy Qs: Differential Equations for Engineers An introductory textbook on differential equations by Jiri Lebl of UIUC
+Khan Academy Video playlist on differential equations Topics covered in a first year course in differential equations.
+MathDiscuss Video playlist on differential equations

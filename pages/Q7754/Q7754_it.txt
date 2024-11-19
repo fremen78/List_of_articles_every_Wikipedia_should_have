@@ -1,0 +1,779 @@
+L'analisi matematica è il campo della matematica che studia le proprietà delle funzioni dal punto di vista delle varie nozioni di limite, continuità, integrazione e derivazione. In molti casi le funzioni studiate sono definite su insiemi di numeri reali o complessi e sono a valori sia reali che complessi.
+Grazie ai preziosi sviluppi maturati alla fine del XVII secolo sul calcolo differenziale e integrale, l'analisi è cresciuta fino a diventare un ambito ampio, fondamentale e centrale della ricerca matematica, con svariate applicazioni negli ambiti scientifici e ingegneristici, ma anche in altri settori quali la finanza, l'economia e le scienze sociali, tra cui la sociologia.
+
+
+== Storia ==
+
+L'analisi matematica nasce durante la seconda metà del XVII secolo, grazie a Isaac Newton e Gottfried Leibniz che indipendentemente introdussero i concetti fondamentali del calcolo infinitesimale. Inizialmente l'analisi matematica puntava alla rappresentazione geometrica nel piano cartesiano delle funzioni, nel tentativo di rispondere a quesiti su calcolo di aree e caratteristiche geometriche di una curva. Lo sviluppo dell'analisi nel XVIII secolo fu anche fortemente motivato dalla fisica portando allo sviluppo e all'elaborazione della meccanica razionale.
+Dalla fine del XVIII secolo si introdusse il concetto di limite, passando da un'interpretazione intuitiva basata su suddivisioni successive, già introdotta, nel V secolo a.C., dal filosofo eleatico Zenone nella formulazione delle sue aporie (Paradossi di Zenone), fino ad arrivare all'analisi matematica dei giorni nostri, che introdusse metodologie per il calcolo di un valore del limite. Questo portò ad una rivoluzione completa della materia che rianalizzò nozioni e teoremi senza più avvalersi di giustificazioni geometriche ma basandosi su concetti di numero e di insieme. Questo permise l'analisi più approfondita di geometrie non euclidee e di spazi a dimensione maggiore di tre.
+
+
+== Concetti ==
+
+
+=== Spazi metrici ===
+
+Introdotta nel 1906 dal matematico francese Maurice Fréchet e sviluppata poco dopo da Felix Hausdorff, la nozione di spazio metrico è un risultato diretto dell’analisi delle principali proprietà astratte della metrica. Tuttavia, l’estensione agli spazi metrici delle proprietà dello spazio euclideo (definibili a partire dalla sola distanza), introduce un interessante linguaggio geometrico applicabile in numerosi problemi, oltreché di analisi stessa, anche di algebra e teoria dei numeri.
+
+
+=== Teoria degli insiemi ===
+
+Il concetto di insieme costituisce l'elemento fondante di quella parte della matematica che è la teoria degli insiemi. In ambiti matematici diversi dalla teoria degli insiemi, come l'analisi matematica, è spesso considerato un concetto primitivo, per cui non se ne dà una definizione rigorosa (seguendo la teoria ingenua degli insiemi); in tal caso si può dire che un insieme è un raggruppamento, collezione, aggregato di elementi.
+La teoria degli insiemi e le operazioni possibili tra essi permettono di definire uno dei principali argomenti di studio dell'analisi: le funzioni. Di particolare interesse sono le funzioni aventi come dominio e codominio due tra i seguenti insiemi numerici:
+
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathbb {N} }
+  
+ è l'insieme dei numeri naturali
+
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  
+ è l'insieme dei numeri interi
+
+  
+    
+      
+        
+          Q
+        
+      
+    
+    {\displaystyle \mathbb {Q} }
+  
+ è l'insieme dei numeri razionali
+
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ è l'insieme dei numeri reali
+
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ è l'insieme dei numeri complessi
+Per definire alcune proprietà di notevole interesse e diffuso uso (quali la continuità e la derivabilità) sono necessari i concetti di base della topologia, in particolare quello di intorno, e il concetto di distanza in uno spazio metrico.
+
+
+=== Le funzioni ===
+
+Il concetto di funzione è fondamentale per l'analisi matematica. Attraverso operazioni come quella di limite viene definita una serie di proprietà fondamentali di notevole utilità negli sviluppi teorici e nelle applicazioni pratiche. Tra di esse si possono elencare:
+
+continuità
+derivabilità
+differenziabilità
+Un importante ruolo è svolto dalle cosiddette funzioni elementari, quali:
+
+funzioni polinomiali
+funzioni trigonometriche
+funzioni esponenziali
+funzioni iperboliche
+funzioni logaritmiche
+Di particolare importanza, nel XX secolo, sono stati gli avanzamenti nello studio degli spazi di funzioni, visti come particolari spazi vettoriali topologici infinito-dimensionali, nell'ambito dell'Analisi funzionale.
+
+
+=== L'operazione di limite ===
+
+Il concetto di limite, alla base dell'analisi, è stato definito coerentemente solo nell'Ottocento, ma era stato compreso intuitivamente da matematici come Wallis, Eulero, Bernoulli, Newton, Leibniz e probabilmente già Archimede. Il limite di una funzione 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ per 
+  
+    
+      
+        x
+        →
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x\rightarrow x_{0}}
+  
+ è, in parole povere, un numero reale a cui il valore della funzione si avvicina sempre di più (senza necessariamente raggiungerlo) man mano che 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ si avvicina a 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+. Per esempio, 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            +
+            ∞
+          
+        
+        
+          
+            1
+            x
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \lim _{x\to +\infty }{\frac {1}{x}}=0}
+  
+: all'aumentare di 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, 
+  
+    
+      
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{x}}}
+  
+ è sempre più vicino a zero.
+Il limite di una funzione può:
+
+essere un numero finito (come nell'esempio precedente)
+essere infinito (per esempio 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            ∞
+          
+        
+        
+          x
+          
+            2
+          
+        
+        =
+        +
+        ∞
+      
+    
+    {\displaystyle \lim _{x\to \infty }x^{2}=+\infty }
+  
+)
+non esistere (per esempio 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            +
+            ∞
+          
+        
+        sin
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\textstyle \lim _{x\to +\infty }\sin(x)}
+  
+ non esiste)
+
+
+=== Serie ===
+
+Attraverso il concetto di limite di una successione è possibile definire la somma di un numero infinito di elementi. Ad esempio, è possibile dare un senso all'espressione
+
+  
+    
+      
+        e
+        =
+        1
+        +
+        
+          
+            1
+            
+              1
+              !
+            
+          
+        
+        +
+        
+          
+            1
+            
+              2
+              !
+            
+          
+        
+        +
+        
+          
+            1
+            
+              3
+              !
+            
+          
+        
+        +
+        
+          
+            1
+            
+              4
+              !
+            
+          
+        
+        +
+        …
+      
+    
+    {\displaystyle e=1+{\frac {1}{1!}}+{\frac {1}{2!}}+{\frac {1}{3!}}+{\frac {1}{4!}}+\ldots }
+  
+
+che è uno dei tanti modi per descrivere il numero di Nepero 
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+.
+Una somma infinita di elementi è detta serie e viene indicata, in genere, con 
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            +
+            ∞
+          
+        
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle \sum _{k=0}^{+\infty }a_{k}}
+  
+.
+Dunque, ponendo 
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+        =
+        
+          
+            1
+            
+              k
+              !
+            
+          
+        
+      
+    
+    {\displaystyle a_{k}={\frac {1}{k!}}}
+  
+, il numero di Nepero 
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+, con le precedenti notazioni, può essere scritto in uno nei seguenti modi
+
+  
+    
+      
+        e
+        =
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            +
+            ∞
+          
+        
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle e=\sum _{k=0}^{+\infty }a_{k}}
+  
+    oppure   
+  
+    
+      
+        e
+        =
+        1
+        +
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            +
+            ∞
+          
+        
+        
+          a
+          
+            k
+          
+        
+      
+    
+    {\displaystyle e=1+\sum _{k=1}^{+\infty }a_{k}}
+  
+ .
+Analogamente a quanto accade per i limiti, la somma di infiniti elementi può essere finita, infinita, o addirittura non essere definita come nel caso della serie 
+  
+    
+      
+        1
+        −
+        1
+        +
+        1
+        −
+        1
+        +
+        1
+        −
+        .
+        .
+        .
+      
+    
+    {\displaystyle 1-1+1-1+1-...}
+  
+ , detta serie di Grandi.
+
+
+==== Serie di Taylor ====
+
+La serie di Taylor di una funzione analitica permette di scrivere la funzione come una serie di potenze. Per una funzione analitica 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ si ha che:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            +
+            ∞
+          
+        
+        
+          
+            
+              
+                f
+                
+                  (
+                  n
+                  )
+                
+              
+              (
+              a
+              )
+            
+            
+              n
+              !
+            
+          
+        
+        (
+        x
+        −
+        a
+        
+          )
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle f(x)=\sum _{n=0}^{+\infty }{\frac {f^{(n)}(a)}{n!}}(x-a)^{n},}
+  
+
+dove 
+  
+    
+      
+        n
+        !
+      
+    
+    {\displaystyle n!}
+  
+ è il fattoriale di 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ e 
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        a
+        )
+      
+    
+    {\displaystyle f^{(n)}(a)}
+  
+ è la derivata 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-esima della 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ nel punto 
+  
+    
+      
+        a
+        .
+      
+    
+    {\displaystyle a.}
+  
+ Se 
+  
+    
+      
+        a
+        =
+        0
+        ,
+      
+    
+    {\displaystyle a=0,}
+  
+ la serie viene chiamata serie di Maclaurin ed è
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            +
+            ∞
+          
+        
+        
+          
+            
+              
+                f
+                
+                  (
+                  n
+                  )
+                
+              
+              (
+              0
+              )
+            
+            
+              n
+              !
+            
+          
+        
+        
+          x
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)=\sum _{n=0}^{+\infty }{\frac {f^{(n)}(0)}{n!}}x^{n}.}
+  
+
+Troncando lo sviluppo in serie di Taylor ad un certo ordine 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+
+si ottiene un polinomio di ordine 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ che approssima la funzione sviluppata in serie con un errore pari ad un infinitesimo di ordine superiore al grado del polinomio stesso. Questo polinomio è detto polinomio di Taylor. L'uso dei polinomi di Taylor risulta particolarmente utile in analisi matematica e nelle scienze matematiche applicate quali fisica, ingegneria, eccetera.  Le serie di Taylor sono inoltre fondamentali nell'analisi complessa in cui le funzioni olomorfe possono essere caratterizzate proprio dall'essere localmente esprimibili come serie di Taylor. Esistono inoltre anche altri sviluppi in serie, come, ad esempio, quello di Laurent.
+
+
+=== Derivata ===
+
+Il concetto di derivata occupa un ruolo fondamentale nel calcolo infinitesimale e in tutta l'analisi matematica. Definita come limite del rapporto incrementale, la derivata quantifica il tipo di crescita di una funzione, e ha applicazione in tutte le scienze.
+Tramite la nozione di derivata si definiscono e studiano i concetti di massimo e minimo di una funzione, di concavità e convessità: la derivata è quindi uno strumento fondamentale per lo studio di una funzione.
+Tramite una lista di regole di derivazione è possibile calcolare la derivata di qualsiasi funzione definita combinando funzioni elementari.
+Il concetto di derivata si estende anche a funzioni a più variabili tramite la nozione di derivata parziale.
+
+
+=== Integrale ===
+
+L'integrale è un altro strumento fondamentale del calcolo infinitesimale. Viene utilizzato soprattutto per calcolare aree e volumi di figure curve, quali ad esempio l'ellisse o la parte del piano cartesiano delimitata da una funzione.
+Per il teorema fondamentale del calcolo integrale, l'integrale risulta essenzialmente essere un'operazione inversa a quella della derivata. Se ne differenzia però poiché, contrariamente a quanto accade per la derivata, non ci sono degli algoritmi che permettano di calcolare l'integrale di qualsiasi funzione definita a partire da funzioni elementari. Vi sono comunque numerosi metodi di integrazione con cui risolvere buona parte degli integrali più semplici, spesso riassunti in opportune tavole.
+A partire dal XIX secolo, il concetto di integrale si è legato sempre più al concetto di misura. La definizione stessa di integrale è legata ad un problema fondamentale di come "misurare" lunghezze, aree e volumi di sottoinsiemi della retta, del piano, dello spazio. Ciascuna possibile risposta a questa domanda fornisce una definizione di integrale: le definizioni più utilizzate sono l'integrale di Riemann e l'integrale di Lebesgue.
+
+
+=== Studio di funzione ===
+Lo studio di funzione è lo studio dell'andamento o grafico di una funzione evidenziandone massimi e minimi (relativi ed assoluti), asintoti (orizzontali e verticali), flessi (orizzontali e verticali), concavità e area sottesa, attraverso l'uso di strumenti propri dell'analisi matematica sopraesposti ovvero limite, derivata e integrale.
+
+
+== Campi di interesse ==
+L'analisi matematica comprende diversi campi di studio:
+
+Calcolo infinitesimale
+Analisi armonica
+Analisi funzionale
+Calcolo delle variazioni
+Teoria della misura
+Analisi vettoriale
+Analisi complessa
+Analisi non standard
+Teoria analitica dei numeri
+
+
+== Note ==
+
+
+== Bibliografia ==
+
+
+=== Storia ===
+Enrico Rufini, Il "Metodo" di Archimede e le origini dell'analisi infinitesimale nell'antichità. (Roma: Casa editrice Alberto Stock, 1926)
+
+
+=== Testi ===
+Guido Fubini, Lezioni di analisi matematica (Torino: Società tipografico-editrice nazionale, 1920)
+Ulisse Dini, Lezioni di analisi infinitesimale. (Pisa: Nistri, 1907-15) t.1 t. 2, prima parte t. 2 seconda parte
+Paolo Marcellini, Carlo Sbordone (1998), Analisi Matematica Uno, Liguori Editore, Napoli, ISBN 9788820728199
+Nicola Fusco, Paolo Marcellini, Carlo Sbordone (2020), Lezioni di Analisi Matematica Due, Zanichelli, ISBN 9788808520203
+Walter Rudin (1953), Principi di analisi matematica, McGraw-Hill Libri Italia, ISBN 88-386-0647-1
+(EN)  Errett Bishop, Douglas Bridges (1985), Constructive analysis, Springer, ISBN 0-387-15066-8
+(EN)  Serge Lang (1987), Calculus of several Variables, 3rd ed., Springer, ISBN 0-387-96405-3
+(EN)  Serge Lang (1993), Real and Functional Analysis, 3rd ed., Springer, ISBN 0-387-94001-4
+(EN)  A. W. Knapp (2005), Basic Real Analysis, Birkhauser, ISBN 0-8176-3250-6
+(EN)  G. V. Milovanović (1998), Recent Progress in Inequalities, Kluwer, ISBN 0-7923-4845-1
+(EN)  Nicolas Bourbaki (2004), Elements of Mathematics. Functions of a real variable—Ch.I Derivatives. Ch.II Primitives and integrals. Ch.III Elementary functions. Ch.IV Differential equations. Ch.V Local study of functions. Ch.VI Generalized Taylor expansion, EulerMacLaurin sum formula. Ch.VII Gamma function., Springer, ISBN 3-540-65340-6
+
+
+== Voci correlate ==
+Analisi non standard
+Analisi complessa
+Analisi funzionale
+Limite (matematica)
+Funzione (matematica)
+Serie (matematica)
+Derivata
+Integrale
+Serie di Taylor
+Topologia
+Geometria differenziale
+
+
+== Altri progetti ==
+
+ Wikibooks contiene testi o manuali sull'analisi matematica
+ Wikizionario contiene il lemma di dizionario «analisi matematica»
+ Wikiversità contiene una materia sull'analisi matematica
+ Wikimedia Commons contiene immagini o altri file sull'analisi matematica
+
+
+== Collegamenti esterni ==
+
+ Analisi matematica, in Enciclopedia della Matematica, Istituto dell'Enciclopedia Italiana, 2013. 
+(EN) John Colin Stillwell e Ian Stewart, analysis, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Eric W. Weisstein, Analysis, su MathWorld, Wolfram Research. 
+ Sito divulgativo, su ripmat.it.

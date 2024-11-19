@@ -1,0 +1,116 @@
+Numeerinen analyysi on matematiikan osa-alue, joka pyrkii löytämään likimääräisratkaisuja matemaattisiin ongelmiin, joita ei voi tai ei kannata ratkaista tarkasti. Numeerisia menetelmiä sovelletaan usein muun muassa fysiikan tarpeisiin esimerkiksi differentiaaliyhtälöiden ratkaisemiseksi. Numeerisia menetelmiä ovat esimerkiksi yhtälöiden numeerinen ratkaiseminen, approksimointi ja numeerinen integrointi. 
+Esimerkki numeerisen analyysin menetelmistä on haarukointimenetelmä, jolla etsitään jatkuvan funktion nollakohtia. Haarukointimenetelmän algoritmi on seuraava:
+
+Valitaan lukuväli, jolla tutkittava funktio on määritelty ja jonka päätepisteissä funktio saa erimerkkiset arvot.
+Lyhennetään väliä jommastakummasta päästä siten, että funktio saa erimerkkiset arvot välin päätepisteissä.
+Toistetaan kunnes haluttu tarkkuus on saavutettu.
+
+
+== Yleinen johdatus ==
+Monia matemaattisia ongelmia ei voida ratkaista suljetussa muodossa. Esimerkkinä ovat funktion exp(
+  
+    
+      
+        −
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle -x^{2}}
+  
+) integrointi (katso virhefunktio) tai neljättä korkeampiasteisten yleisten polynomiyhtälöiden ratkaisu. Näiden ratkaisemiseen on olemassa kaksi vaihtoehtoa: 1) yritetään löytää likimääräinen vastaus käyttäen asymptoottisia menetelmiä tai 2) numeerisella analyysillä. Jälkimmäinen vaihtoehto kuvaa numeeristen menetelmien tehtäväkenttää. 
+Numeeriset tehtävät soveltuvat erityisen hyvin tietokoneen laskemaksi.
+
+
+=== Suorat ja iteratiiviset menetelmät ===
+Joidenkin ongelmien ratkaisuun on olemassa tarkkoja algoritmeja, joita kutsutaan suoriksi menetelmiksi. Esimerkkeinä ovat Gaussin eliminointi lineaaristen yhtälöryhmien ratkaisemisessa ja simplex-menetelmä lineaarisessa ohjelmoinnissa.
+Kuitenkaan suurimmalle osalle ongelmista ei ole olemassa suoraa ratkaisumenetelmää. Näissä tapauksissa on joskus mahdollista käyttää iteratiivista menetelmää. Sellainen menetelmä lähtee arvauksella ja löytää onnistuneen arvion (approksimaation), joka on kyllin lähellä ratkaisua. Jopa silloin kun suora menetelmä on olemassa, iteratiivinen menetelmä saattaa olla suositeltavampi tehokkuuden ja stabiiliuden takia.
+
+
+=== Diskretointi ===
+Jatkuva tehtävä pitää joskus korvata diskreetillä tehtävällä, jonka ratkaisun tiedetään approksimoivan jatkuvaa ongelmaa. Tätä prosessia kutsutaan diskretoinniksi. Esimerkiksi differentiaaliyhtälön ratkaisu on funktio, joka diskretoituna kuvataan äärellisellä lukujoukolla. Tämä voi esimerkiksi olla sen arvojoukko äärellisessä pisteistössä, vaikka funktio olisikin määritelty jatkumossa.
+
+
+=== Virheiden synty ja kumuloituminen ===
+Virheiden arviointi on tärkeä osa numeerisia menetelmiä. Virhe voi tulla esiin monella tavalla ongelman ratkaisussa. Pyöristysvirheitä tulee, koska on mahdotonta kuvata kaikkia reaalilukuja täsmällisesti äärellisessä automaatissa (jollaisia käytännössä kaikki tietokoneet ovat). Katkaisuvirheitä syntyy, kun iteratiivinen menetelmä katkaistaan ja approksimoitu ratkaisu eroaa tarkasta ratkaisusta. Samoin diskretointi aiheuttaa diskretointivirheen, koska diskreetin ongelman ratkaisu ei täsmää jatkuvan ongelman ratkaisun kanssa.
+Kun kerran virhe on syntynyt, se etenee läpi koko laskennan. Tämä johtaa numeerisen stabilisuuden käsitteeseen: menetelmä on numeerisesti stabiili jos virhe, kun se on kerran syntynyt, ei kasva liian suureksi laskennan aikana. Tämä on mahdollista vain jos ongelma on hyvin asetettu, mikä merkitsee, että ratkaisu muuttuu vain vähän, jos lähtöarvot muuttuvat vähän. Vastaavasti huonosti asetetussa ongelmassa mikä tahansa virhe lähtötiedoissa kasvaa suureksi.
+Hyvin asetetun ongelman ratkaiseva menetelmä ei ole välttämättä numeerisesti stabiili. Stabiilien menetelmien etsintä hyvin asetetuille tehtäville muodostaakin tärkeän osan numeerista analyysiä. Toisenlainen osa-alue on stabiilien algoritmien etsiminen huonosti asetetuille ongelmille. Yleensä tämä edellyttää, että löydetään hyvin asetettu tehtävä, jonka ratkaisu on lähellä alkuperäisen tehtävän ratkaisua.
+
+
+=== Sovellukset ===
+Numeerisia menetelmiä on sovellettu moniin tieteellisiin ja teknisiin ongelmiin. Esimerkkejä ovat silta- ja lentokonerakenteet (katso laskennallinen fysiikka ja laskennallinen nesteiden dynamiikka), sääennustukset, ilmastomallit, molekyylianalyysi ja molekyylien suunnittelu (laskennallinen kemia) ja öljyesiintymien etsintä. Itse asiassa supertietokoneita käytetään jatkuvasti numeerisen analyysin sovelluksiin.
+Tämän seurauksena tehokkuudella on suuri merkitys, ja teoreettisesti täsmällisemmän menetelmän voi joskus korvata nopeampi heuristinen menetelmä. Yleisesti numeerisessa analyysissä käytetään empiirisiä tuloksia uusien menetelmien ja ongelmien tutkimiseen, mutta tietenkin siinä myös sovelletaan matemaattisia aksioomia, lauseita ja todistuksia.
+
+
+== Osa-alueet ==
+Numeerinen analyysi tieteenä jaetaan ratkaistavan ongelman mukaan.
+
+
+=== Funktion arvojen laskenta ===
+Funktion arvojen laskenta annetussa pisteessä on yksi yksinkertaisimmista numeeristen menetelmien ongelmista. Mutta edes polynomien arvojen laskeminen ei ole suoraviivaista. Hornerin skeema on usein tehokkaampi kuin tavanomainen menetelmä. Yleisesti on tärkeää arvioida ja hallita liukulukuaritmetiikan pyöristysvirheitä.
+
+
+=== Interpolointi, ekstrapolointi ja regressio ===
+Interpolointi ratkaisee seuraavan ongelman: On annettu tuntemattoman funktion arvoja joissakin pisteissä. Mitä arvoja funktio saa näiden pisteiden välissä? Erittäin yksinkertainen menetelmä on käyttää lineaarista interpolointia, joka olettaa, että tuntematon funktio on lineaarinen jokaisen kahden pisteen välissä. Tämä voidaan yleistää polynomiseen interpolointiin, joka on joskus tarkempi, mutta kärsii Rungen ilmiöstä. Muut interpolointimenetelmät käyttävät paikallistettuja funktioita kuten splinejä ja aallokkeita.
+Ekstrapolointi on hyvin samantapainen kuin interpolointi, paitsi että nyt haluamme löytää tuntemattoman funktion arvoja annettujen pisteiden ulkopuolella.
+Regressio on myös samankaltainen, mutta siinä pisteet eivät ole tarkkoja. Haluamme määritellä tuntemattoman funktion mittaamalla sen arvoja joissakin annetuissa pisteissä (virheen kanssa).  Pienimmän neliösumman menetelmä on yksi tunnetuimmista tavoista etsiä tätä.
+
+
+=== Yhtälöiden ratkaiseminen ja yhtälöjärjestelmät ===
+Toinen perusongelma on annetun yhtälön ratkaiseminen. Kaksi erilaista tilannetta erotellaan riippuen onko yhtälö lineaarinen vai ei.
+Lineaaristen yhtälöryhmien ratkaisumenetelmien kehitykselle on laitettu paljon painoa. Standardimenetelmiä ovat Gauss-jordan eliminointi ja LU-hajotelma. Iteratiiviset menetelmät kuten liittogradienttimenetelmiä sopivat suuriin yhtälöryhmiin.
+Juurenhakumentelmiä käytetään epälineaaristen yhtälöiden ratkaisemiseen (niitä nimitetään sellaisiksi, koska funktion juuri on argumentti, jossa funktion arvo tulee nollaksi). Jos funktio on derivoituva ja sen derivaatta on tunnettu, on Newtonin menetelmä suosittu valinta. Yhtälön linearisointi on toinen tekniikka ratkaista epälineaarisia yhtälöitä.
+
+
+=== Optimointi ===
+Optimointiongelmissa haetaan pistettä, jossa annetun funktion arvo on maksimissaan (tai minimissään). Usein tämän pisteen tulee täyttää rajoitusehtoja.
+Optimoinnin ongelmakenttä jaetaan osa-alueisiin riippuen funktiosta ja rajoituksista. Esimerkiksi lineaariohjelmoinnissa sekä funktio, että rajoitukset ovat lineaarisia. Tunnettu menetelmä lineaariohjelmoinnissa on simplex-menetelmä.
+Lagrangen kertojien menetelmää käytetään palauttamaan rajoitteinen optimointiongelma rajoitteettomaksi.
+
+
+=== Integraalilaskenta ===
+Numeerisia integrointimenetelmiä, joita joskus kutsutaan kvadratuureiksi, käytetään määrättyjen integraalien laskemiseen. Yksinkertaisimpiin menetelmiin kuuluu Eulerin menetelmä. Se ei ole kovinkaan tarkka, mutta sen kautta on johdettu useat paremmat menetelmät. Suositut menetelmät käyttävät jotakin Newton-Cotes kaavaa (kuten keskipiste- tai Simpsonin sääntö) tai Gaussin kvadratuuria. Nämä menetelmät perustuvat "hajota ja hallitse" -strategiaan, jossa integraali suhteellisen laajassa joukossa jaetaan pienempien joukkojen integraaleiksi. Tunnetuimpia tällä tavoin johdettuja menetelmiä ovat monet Runge-Kutta-menetelmät. Korkeissa dimensioissa, joissa nämä menetelmät tulevat raskaiksi tietokonelaskennalle, voidaan käyttää Monte Carlo tai kvasi-Monte Carlo -metodeita, tai dimensioltaan kohtuullisissa tehtävissä harvojen hilojen menetelmää.
+
+
+=== Differentiaalilaskenta ===
+Numeerinen analyysiin kuuluu myös tavallisten sekä osittaisdifferentiaaliyhtälöiden ratkaisujen laskeminen (approksimoivalla tavalla). 
+Osittaisdifferentiaaliyhtälöt ratkaistaan diskretoimalla ensin yhtälö tuomalla se äärellisulotteiseen avaruuteen. Tämä voidaan tehdä elementtimenetelmällä, differenssimenetelmällä tai (etenkin teknisissä sovelluksissa) kontrollitilavuusmenetelmällä. Näiden menetelmien teoreettinen pohja on funktionaalianalyysin teoreemoissa. Tämä palauttaa ongelman algebrallisten yhtälöiden ratkaisuhin.
+
+
+== Historia ==
+Numeeriset menetelmät edeltävät modernin tietokoneen keksimistä monia vuosisatoja. Itse asiassa, monet suuret matemaatikot menneisyydessä askartelivat numeeristen menetelmien parissa, mikä käy ilmi tärkeiden menetelmien nimissä kuten Newtonin menetelmä, Lagrangen polynomiaalinen interpolointi, Gaussin eliminointi tai Eulerin menetelmä.
+Laskentaa helpottamaan tehtiin laajoja kirjoja kaavoja ja arvotaulukkoineen kuten interpolointipisteet ja funktiokertoimet. Käyttämällä näitä taulukkoarvoja laskettiin usein 16 desimaalilukua tai vielä enemmän joillekin funktioille. Niitä voidaan verrata annettuun kaavaan ja löydetään erittäin hyviä numeerisia estimaatteja (arvioita) joillekin funktioille. Tällainen kanoninen teos on NIST-julkaisu, jonka tekijät ovat Abramowitz ja Stegun. Yli tuhatsivuinen kirja erittäin suuresta joukosta yleisesti käytettyjä kaavoja ja funktioita ja niiden arvoja monissa pisteissä. Funktioiden arvot eivät ole enää kovin käyttökelpoisia kun tietokoneita on saatavilla. Mutta laaja lista kaavoista voi olla vieläkin hyvin käytännöllisiä.
+Mekaaninen laskin on kehitetty käsinlaskennan työkaluksi. Nämä laskimet johtivat elektroniseen tietokoneeseen 1940-luvulla. Sitten huomattiin, että nämä tietokoneet olivat käyttökelpoisia ylläpidollisten syiden takia. Mutta tietokoneen keksintö vaikutti numeerisiin menetelmiin, sillä nykyisin voidaan tehdä monimutkaisempia laskutoimituksia.
+
+
+== Sovellukset ==
+Nykypäivinä lähes kaikki numeeriset menetelmät on toteutettu suoritettaviksi tietokoneohjelmiksi. Netlib -palvelin sisältää erilaisia kokoelmia enimmäkseen Fortran- ja C-kielisiä ohjelmarutiineja numeerisiin tehtäviin. Kaupalliset tuotteet, kuten IMSL ja NAG-kirjastot toteuttavat monia erilaisia numeerisia menetelmiä. Vapaa vaihtoehto näille on GNU Scientific Library -kirjasto. Toisenlainen lähestymistapa on Numerical Recipes -kirjastolla, jossa paino on menetelmien ymmärtämisellä maallikon näkökulmasta.
+Muita suosittuja kieliä numeerisessa analyysissä ovat MATLAB, IDL ja Python. Ne ovat tulkkattavia kieliä, mutta ne mahdollistavat nopeamman kehitystyön. Jos on tarpeen, ne voidaan muuntaa Fortraniin tai C:hen nopeuden saamiseksi suoritettaviin ohjelmiin.
+Monia tietokonealgebraohjelmia kuten Mathematicaa ja Maplea (tai vapaita ohjelmistoja kuten Maximaa, Axiomia, calcia ja Yacasia) voidaan käyttää numeeristen menetelmien laskentaan. Niiden vahvuus on kuitenkin tyypillisesti symbolisessa laskennassa.
+
+
+== Lähteet ==
+Nick Trefethen, The definition of numerical analysis, SIAM News, November 1992.
+Numerische Mathematik (Complete digitized copies of volumes 1–66, spanning the years 1959 to 1994, of a well-known journal of numerical analysis.)
+Higham, Nicholas J. (1996). Accuracy and Stability of Numerical Algorithms. Society for Industrial and Applied Mathematics.
+Gautschi, W. (1997). Numerical analysis. Springer Science & Business Media.
+Leader, Jeffery J. (2004). Numerical Analysis and Scientific Computation. Addison Wesley.
+Quarteroni, A., Sacco, R., & Saleri, F. (2010). Numerical mathematics. Springer Science & Business Media.
+Stoer, J., & Bulirsch, R. (2013). Introduction to numerical analysis. Springer Science & Business Media.
+Conte, S. D., & De Boor, C. (2017). Elementary numerical analysis: an algorithmic approach. Society for Industrial and Applied Mathematics.
+Greenspan, D. (2018). Numerical Analysis. CRC Press.
+Linz, P. (2019). Theoretical numerical analysis. Courier Dover Publications.
+
+
+=== Viitteet ===
+
+
+== Aiheesta muualla ==
+
+Scientific computing FAQ (Arkistoitu – Internet Archive)
+Numerical Recipes Homepage – with free, complete downloadable books (Arkistoitu – Internet Archive)
+Alternatives to Numerical Recipes (Arkistoitu – Internet Archive)

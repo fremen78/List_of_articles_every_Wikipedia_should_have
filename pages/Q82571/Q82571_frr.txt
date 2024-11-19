@@ -1,0 +1,585 @@
+Lineaar algebra as en dial faan a matematiik. Hat befaadet ham mä vektorrümer an lineaar funksioonen.
+Fööraal gongt det am lineaar liknangsüsteemen an matritsen.
+
+
+== Lineaar liknangsüsteem ==
+Bispal
+
+Aatj an dring san tuup 62 juar ual. Föör 6 juaren wiar di aatj 4-sis so ual üs san dring. Hü ual san's?
+Diar koon am son liknangsüsteem faan maage (a=aatj, d=dring):
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                1
+                )
+              
+              
+                a
+                +
+                d
+              
+              
+                =
+              
+              
+                62
+              
+            
+            
+              
+                (
+                2
+                )
+              
+              
+                a
+                −
+                6
+              
+              
+                =
+              
+              
+                4
+                ⋅
+                (
+                d
+                −
+                6
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}(1)&a+d&=&62\\(2)&a-6&=&4\cdot (d-6)\end{matrix}}}
+  
+
+Nü wurd a liknangen amsteld, so dat jo detsalew furem fu. Lachter ääg a wariaabeln, rochter ääg a taalen:
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                1
+                )
+              
+              
+                a
+              
+              
+                +
+              
+              
+                d
+              
+              
+                =
+              
+              
+                62
+              
+            
+            
+              
+                (
+                2
+                )
+              
+              
+                a
+              
+              
+                −
+              
+              
+                4
+                d
+              
+              
+                =
+              
+              
+                −
+                18
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}(1)&a&+&d&=&62\\(2)&a&-&4d&=&-18\end{matrix}}}
+  
+
+Tu't liasin jaft at flook metooden. Heer woort det aditsioonsmetood brükt, an det boowenst liknang faan det onerst uftaanj:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                −
+                4
+                d
+                −
+                (
+                a
+                +
+                d
+                )
+              
+              
+                
+                =
+                −
+                18
+                −
+                62
+              
+            
+            
+              
+                −
+                5
+                d
+              
+              
+                
+                =
+                −
+                80
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}a-4d-(a+d)&=-18-62\\-5d&=-80\\\end{aligned}}}
+  
+
+Do woort efter d apliaset, 
+  
+    
+      
+        d
+        =
+        16
+      
+    
+    {\displaystyle d=16}
+  
+, di dring as 16 juar ual. Det liasang woort uun't iarst liknang iinsaat:
+
+  
+    
+      
+        a
+        +
+        16
+        =
+        62
+      
+    
+    {\displaystyle a+16=62}
+  
+
+An diar komt do 
+  
+    
+      
+        a
+        =
+        46
+      
+    
+    {\displaystyle a=46}
+  
+ bi ütj, di aatj as 46 juar ual.
+
+
+== Matritsen ==
+En linear liknangsüsteem koon uk uun furem faan en maatriks skrewen wurd. Diar stun do bluas noch taalen uun. Det algemian furem sjocht so ütj:
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  A
+                
+                
+                  b
+                
+              
+            
+          
+          )
+        
+        =
+        
+          (
+          
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      12
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      1
+                      n
+                    
+                  
+                
+                
+                  
+                    b
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    a
+                    
+                      21
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      22
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      2
+                      n
+                    
+                  
+                
+                
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+                
+                  ⋮
+                
+                
+                  ⋱
+                
+                
+                  ⋮
+                
+                
+              
+              
+                
+                  
+                    a
+                    
+                      m
+                      1
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      m
+                      2
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      m
+                      n
+                    
+                  
+                
+                
+                  
+                    b
+                    
+                      m
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{array}{c|c}A&b\end{array}}\right)=\left({\begin{array}{cccc|c}a_{11}&a_{12}&\cdots &a_{1n}&b_{1}\\a_{21}&a_{22}&\cdots &a_{2n}&b_{2}\\\vdots &\vdots &\ddots &\vdots &\\a_{m1}&a_{m2}&\cdots &a_{mn}&b_{m}\end{array}}\right)}
+  
+
+Uun üüs faal (boowen) wiar det:
+
+  
+    
+      
+        
+          (
+          
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  62
+                
+              
+              
+                
+                  1
+                
+                
+                  −
+                  4
+                
+                
+                  −
+                  18
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left({\begin{array}{cc|c}1&1&62\\1&-4&-18\end{array}}\right)}
+  
+
+An do reegenst dü efter Cramer sin reegel:
+
+  
+    
+      
+        a
+        =
+        
+          
+            
+              (
+              62
+              ⋅
+              (
+              −
+              4
+              )
+              )
+              −
+              (
+              −
+              18
+              ⋅
+              1
+              )
+            
+            
+              (
+              1
+              ⋅
+              (
+              −
+              4
+              )
+              )
+              −
+              (
+              1
+              ⋅
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            
+              −
+              248
+              +
+              18
+            
+            
+              −
+              4
+              −
+              1
+            
+          
+        
+        =
+        
+          
+            
+              −
+              230
+            
+            
+              −
+              5
+            
+          
+        
+        =
+        46
+      
+    
+    {\displaystyle a={\frac {(62\cdot (-4))-(-18\cdot 1)}{(1\cdot (-4))-(1\cdot 1)}}={\frac {-248+18}{-4-1}}={\frac {-230}{-5}}=46}
+  
+
+  
+    
+      
+        d
+        =
+        
+          
+            
+              (
+              1
+              ⋅
+              (
+              −
+              18
+              )
+              )
+              −
+              (
+              1
+              ⋅
+              62
+              )
+            
+            
+              (
+              1
+              ⋅
+              (
+              −
+              4
+              )
+              )
+              −
+              (
+              1
+              ⋅
+              1
+              )
+            
+          
+        
+        =
+        
+          
+            
+              −
+              18
+              −
+              62
+            
+            
+              −
+              4
+              −
+              1
+            
+          
+        
+        =
+        
+          
+            
+              −
+              80
+            
+            
+              −
+              5
+            
+          
+        
+        =
+        16
+      
+    
+    {\displaystyle d={\frac {(1\cdot (-18))-(1\cdot 62)}{(1\cdot (-4))-(1\cdot 1)}}={\frac {-18-62}{-4-1}}={\frac {-80}{-5}}=16}
+  
+
+
+== Luke uk diar ==
+
+ Wikibooks: Mathematik 3, Lineaar algebra (sjiisk)

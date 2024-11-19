@@ -1,0 +1,667 @@
+Ekuacionet ne te cilat bejne pjese derivatet ose diferencialet quhen ekuacione diferenciale. Pra ekuacioni i cili permban nje apo me shumë funksione të panjohura, me një apo më shumë ndryshore të pavarura dhe së paku një prej derivateve te funksioneve të panjohur, quhet ekuacion diferencial. Nëse ne ekuacionin diferencial ka vetëm një ndryrshore të pavarur, atehere atë e quajmë ekuacion diferencial i zakonshëm (EDZ).
+Ekuacionet diferenciale kane rëndësi jashtëzakonisht te madhe në teknikë dhe fusha te ndryshme të shkencës sepse me ane tyre mund lidhen shumë madhësi dhe funksione të ndryshme. Fushat ku gjejne zbatim me te madh jane:
+
+Inxhinieria
+Fizika
+Ekonomia
+dhe disiplina tjera
+Me studimin e ekuacioneve diferenciale merret matematika e aplikuar ose ndryshe matematika e zbatuar dhe përgjithësisht Matematika. Ekuacionet diferenciale luajnë rol kyç ne modelimin virtual te proceseve teknike, fizike, biologjike etj. Dega e cila mirret me studimin e stabilitetit te ekuacioneve diferenciale njihet si teoria e stabilitetit. Për më tepër lexo .
+
+
+== Historia ==
+Ekuacionet diferenciale u zbuluan me shpikjen e analizës matematike nga Njutoni dhe Lajbnici . Në kapitullin 2 të veprës së tij të vitit 1671 Methodus fluxionum et Serierum Infinitarum  Isak Njutoni renditi tre lloje ekuacionesh diferenciale:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      d
+                      y
+                    
+                    
+                      d
+                      x
+                    
+                  
+                
+              
+              
+                
+                =
+                f
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  
+                    
+                      d
+                      y
+                    
+                    
+                      d
+                      x
+                    
+                  
+                
+              
+              
+                
+                =
+                f
+                (
+                x
+                ,
+                y
+                )
+              
+            
+            
+              
+                
+                  x
+                  
+                    1
+                  
+                
+                
+                  
+                    
+                      ∂
+                      y
+                    
+                    
+                      ∂
+                      
+                        x
+                        
+                          1
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                +
+                
+                  x
+                  
+                    2
+                  
+                
+                
+                  
+                    
+                      ∂
+                      y
+                    
+                    
+                      ∂
+                      
+                        x
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                =
+                y
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\frac {dy}{dx}}&=f(x)\\[4pt]{\frac {dy}{dx}}&=f(x,y)\\[4pt]x_{1}{\frac {\partial y}{\partial x_{1}}}&+x_{2}{\frac {\partial y}{\partial x_{2}}}=y\end{aligned}}}
+  
+
+Në të gjitha këto raste, 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ është një funksion i panjohur i 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ (ose i 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x_{1}}
+  
+ dhe 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{2}}
+  
+ ), dhe 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ është një funksion i dhënë.
+Jakob Bernuli propozoi ekuacionin diferencial të Bernulit në 1695.  Ky është një ekuacion i zakonshëm diferencial i trajtës:
+
+  
+    
+      
+        
+          y
+          ′
+        
+        +
+        P
+        (
+        x
+        )
+        y
+        =
+        Q
+        (
+        x
+        )
+        
+          y
+          
+            n
+          
+        
+        
+      
+    
+    {\displaystyle y'+P(x)y=Q(x)y^{n}\,}
+  
+
+për të cilin vitin e ardhshëm Lajbnici gjeti zgjidhje duke e thjeshtuar. 
+
+
+== Shembuj ==
+Në mekanikën klasike, lëvizja e një trupi përshkruhet nga vendndodhja dhe shpejtësia e tij me kalimin e kohës. Ligjet e Njutonit lejojnë që këto ndryshore të shprehen në mënyrë dinamike (duke pasur parasysh vendndodhjen, shpejtësinë, nxitimin dhe forcat e ndryshme që veprojnë mbi trup) si një ekuacion diferencial për pozicionin e panjohur të trupit në funksion të kohës.
+Një shembull i modelimit të një problemi të botës reale duke përdorur ekuacione diferenciale është përcaktimi i shpejtësisë së një topi që bie, duke marrë parasysh vetëm rëndesën dhe rezistencën e ajrit. Nxitimi i topit drejt tokës është nxitimi për shkak të gravitetit minus ngadalësimin për shkak të rezistencës së ajrit. Graviteti konsiderohet konstant dhe rezistenca e ajrit mund të modelohet si e përpjesshme me shpejtësinë e topit. Kjo do të thotë se nxitimi i topit, i cili është një derivat i shpejtësisë së tij, varet nga shpejtësia (dhe shpejtësia varet nga koha). Gjetja e shpejtësisë në funksion të kohës përfshin zgjidhjen e një ekuacioni diferencial dhe verifikimin e vlefshmërisë së tij.
+
+
+== Hyrje ==
+Rendi i ekuacionit diferencial konsiderohet rendi i derivatit më të lartë në ekuacion. Keshtu qe mund te themi se ka ekuacione te rendit te pare, te rendit te dyte, te rendit te trete e deri te ekuacionet e rendit n. Trajta implicite e ekuacionit te rendit n jepet me ekuacionin :
+
+  
+    
+      
+        F
+        
+          (
+          
+            x
+            ,
+            y
+            ,
+            
+              y
+              ′
+            
+            ,
+            ⋯
+            
+              y
+              
+                (
+                n
+                −
+                1
+                )
+              
+            
+          
+          )
+        
+        =
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+      
+    
+    {\displaystyle F\left(x,y,y',\cdots y^{(n-1)}\right)=y^{(n)}}
+  
+
+Zgjidhje e pergjithshme ose integral i pergjithshem i ekuacionit diferencial te rendit n quhet zgjidhja e cila permban n konstanta te pavarura te cfaredoshme. Zgjidhje partikulare quhet cdo zgjidhje e cila mund te merret nga zgjidhja e pergjithshme kur konstantave u japim vlera te caktuara. Zgjidhja singulare fitohet kur nuk mund te merret nga zgjidhja e pergjithshme per vlera te caktuara te konstantave te cfaredoshme.
+Qe te caktohet nje zgjidhje partikulare e ekuacionit diferencial jepen konditat e ashtuquajtura fillestare.
+
+
+=== Shembuj te ekuacioneve diferenciale ===
+Ne kete rast te shembujve, le te jete u e panjohur ne funksion te x, dhe c dhe ω konstante te panjohura.
+
+Ekuacion johomogjen i zakonshem i rendit te parë me koeficientë konstantë :
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        c
+        u
+        +
+        
+          x
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {du}{dx}}=cu+x^{2}.}
+  
+
+Ekuacion homogjen linear i rendit te dytë  :
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        x
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}-x{\frac {du}{dx}}+u=0.}
+  
+
+Ekuacioni homogjen i rendit të dytë me koeficientë konsantë që përshkruan lavjerrësin harmonik:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          ω
+          
+            2
+          
+        
+        u
+        =
+        0
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}+\omega ^{2}u=0}
+  
+
+Ekuacioni heterogjen jolinear i rendit të parë:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        4
+      
+    
+    {\displaystyle {\frac {du}{dx}}=u^{2}+4}
+  
+
+Ekuacioni jolinear i rendit të dytë që përshkruan lavjerrësin me gjatësi L
+
+  
+    
+      
+        L
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        g
+        sin
+        ⁡
+        u
+        =
+        0
+      
+    
+    {\displaystyle L{\frac {d^{2}u}{dx^{2}}}+g\sin u=0}
+  
+
+Në grupin tjetër të shëmbujve, funksioni i panjohur, 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+, varet nga dy ndryshore 
+  
+    
+      
+        x
+        
+           ose 
+        
+        t
+      
+    
+    {\displaystyle x{\text{ ose }}t}
+  
+ por ndonjëherë edhe 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ ose 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+
+Ekuacioni me derivate të pjesshme linear homogjen i rendit të parë
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                u
+              
+            
+            
+              ∂
+              
+                t
+              
+            
+          
+        
+        +
+        t
+        
+          
+            
+              ∂
+              
+                u
+              
+            
+            
+              ∂
+              
+                x
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial {u}}{\partial {t}}}+t{\frac {\partial {u}}{\partial {x}}}=0}
+  
+
+Ekuacioni i Laplasit (linear, homogjen, i rendit të dytë dhe me koeficientë konstantë)
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              
+                u
+              
+            
+            
+              ∂
+              
+                
+                  x
+                
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              
+                u
+              
+            
+            
+              ∂
+              
+                
+                  y
+                
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial ^{2}{u}}{\partial {x}^{2}}}+{\frac {\partial ^{2}{u}}{\partial {y}^{2}}}=0}
+  
+
+
+== Zgjidhjet e ekuacioneve diferenciale ==
+Zgjidhja e ekuacioneve diferenciale nuk është si zgjidhja e ekuacioneve algjebrike . Jo vetëm që zgjidhjet e tyre janë shpesh të paqarta, por nëse zgjidhjet janë unike ose ekzistojnë janë gjithashtu subjekte interesi.
+
+
+== Aplikimet e ekuacioneve diferenciale ==
+Shumë ligje te njohura nga fizika dhe kimia mund të formulohen me anen e ekuacioneve diferenciale. Ne biologji dhe ekonomi me anën e ekuacioneve diferenciale mund te shqyrtohet kompleksiteti i sistemeve te ndryshme.
+
+
+== Softuer kompjuterik ==
+ExpressionsinBar
+Maple: dsolve
+SageMath
+Xcas: desolve(y'=k*y,y)
+
+
+== Ekuacionet Diferenciale Me Te Njohura ==
+
+
+=== Biologji ===
+Verhulst equation – rritja biologjike e populacionit
+von Bertalanffy model – rritja biologjike e populacionit
+Lotka–Volterra equations – dinamika e populacioni dinamik
+Replicator dynamics – e gjetur ne biologjine teorike
+Hodgkin–Huxley model – potencialet neurale
+
+
+=== Ekonomi ===
+The Black–Scholes PDE
+Exogenous growth model
+Malthusian growth model
+The Vidale–Wolfe advertising model
+
+
+== Referime ==
+
+Matematika 2 - Hajdar Peci(Fakulteti i Inxhinierise Elektrike dhe Kompjuterike)
+Matematika 3(Ejup Hamiti dhe Shqipe Lohaj) - Permbledhje Detyrash(Fakulteti i Inxhinieris Elektrike dhe Kompjuterike)

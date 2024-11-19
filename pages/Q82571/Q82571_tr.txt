@@ -1,0 +1,422 @@
+Doğrusal cebir ya da lineer cebir; matematiğin, vektörler (yöney), vektör uzayları, doğrusal dönüşümler, doğrusal denklem takımları ve matrisleri (dizey) inceleyen alanıdır. Vektör uzayları, modern matematiğin merkezinde yer alan bir konudur. Bundan dolayı doğrusal cebir hem soyut cebirde hem de fonksiyonel analizde sıkça kullanılır. Doğrusal cebir, analitik geometri ile de alakalı olup sosyal bilimlerde ve fen bilimlerinde yaygın bir uygulama alanına sahiptir.
+Modern doğrusal cebirin geçmişi 1843 ve 1844 yıllarına dayanır. 1843'te William Rowen Hamilton Kuaterniyonları keşfetti. 1844'te Hermann Grassmann Die lineale Ausdehnungslehre adlı kitabını yayınladı. Arthur Cayley, doğrusal cebirin en temel fikirlerinden birisi olan vektörleri 1857 yılında tanıttı. Ne var ki doğrusal cebir, asıl büyük atılımlarını 20. yüzyılda yapmıştır.
+
+
+== Temelleri ==
+Doğrusal cebirin temelleri vektörlerin incelenmesinde yatar. Burada sözü edilen vektör, yönü ve büyüklüğü olan bir doğru parçasıdır. Vektörler yöney olarak da bilinir. Vektörler kuvvet gibi fiziksel birimlerin ifade edilmesinde kullanılabilir. Birbirlerine eklenebildikleri gibi sabit bir skalerle de çarpılabilirler. Böylece basit bir reel vektör uzayının oluşumu gösterilebilir.
+Modern Doğrusal Cebir, 2 ve 3 boyut sınırlamasını kaldırarak isteğe bağlı veya sonsuz boyutlu uzaylarda işleyebilecek şekilde genişletilmiştir. 2 ve 3 boyutlu uzaylardaki sonuçların büyük bir kısmı n-boyutlu uzaylarda da geçerlidir. N boyutlu bir uzayın görselleştirilmesi zor gibi görünse de aslında bu tür uzaylar temel bilimlerde ve günlük hayatta sık kullanılır. Örneğin 8 ülkenin ulusal gelirini listelediğimiz zaman bu liste 8 boyutlu bir vektörü ifade eder. Bu vektördeki her bir elemanın bir ülkenin ulusal gelirini temsil ettiğini söyleyebiliriz.
+Matematikte, soruna doğrusal bir açıdan bakıp, matris cebriyle ifade ettikten sonra onu matris işlemleriyle çözmek, matematikte sık kullanılan uygulamalardan birisidir. Örneğin doğrusal denklem sistemleri (dizge) matris yardımıyla ifade edilip çözülerek denklemin kökleri elde edilebilir.
+
+
+== Vektörler ve Matrisler ==
+Aşağıda üç boyutlu bir sütun vektörü görülmektedir:
+
+  
+    
+      
+        
+          a
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  3
+                
+              
+              
+                
+                  7
+                
+              
+              
+                
+                  2
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {a} ={\begin{pmatrix}3\\7\\2\end{pmatrix}}}
+  
+
+Burada ise 4 boyutlu bir satır vektörünü görmekteyiz:
+
+  
+    
+      
+        
+          b
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  4
+                
+                
+                  6
+                
+                
+                  3
+                
+                
+                  7
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {b} ={\begin{pmatrix}4&6&3&7\end{pmatrix}}}
+  
+
+Son olarak 4 satır ve üç sütundan oluşan bir matris örneğini şöyle gösterebiliriz:
+
+  
+    
+      
+        
+          M
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  8
+                
+                
+                  2
+                
+                
+                  9
+                
+              
+              
+                
+                  4
+                
+                
+                  8
+                
+                
+                  2
+                
+              
+              
+                
+                  8
+                
+                
+                  3
+                
+                
+                  7
+                
+              
+              
+                
+                  5
+                
+                
+                  9
+                
+                
+                  1
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle \mathbf {M} ={\begin{pmatrix}8&2&9\\4&8&2\\8&3&7\\5&9&1\end{pmatrix}}}
+  
+
+
+== Çalışmanın kapsamı ==
+
+
+=== Vektör uzayları ===
+Vektör uzayı, doğrusal cebirin ana yapısıdır. Bir F [[cismi]] üzerinde bir vektör uzayı bir V kümesi ile birlikte iki ikili işlemdir. V’nin ögelerine vektör ve F’nin ögelerine skaler denir. Aşağıdaki listede diyelim ki u, v ve w, V içinde keyfi vektörler ve a ve b, F içinde skalerler olsun.
+
+
+=== Doğrusal dönüşümler ===
+Verilen bir F alanı üzerinde V ve W iki vektör uzayı, bir doğrusal dönüşüm (ayrıca doğrusal gönderme, doğrusal gönderim veya doğrusal işlemci) bir göndermedir.
+
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\to W}
+  
+
+bu toplam ve skaler çarpım ile uyumlandırılabilir:
+
+  
+    
+      
+        T
+        (
+        u
+        +
+        v
+        )
+        =
+        T
+        (
+        u
+        )
+        +
+        T
+        (
+        v
+        )
+        ,
+        
+        T
+        (
+        a
+        v
+        )
+        =
+        a
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(u+v)=T(u)+T(v),\quad T(av)=aT(v)}
+  
+
+u,v ∈ V herhangi iki vektör ve bir skaler a ∈ F için.
+toplanabilir herhangi iki vektör u, v ∈ V ve skaler a, b ∈ F için:
+
+  
+    
+      
+        
+        T
+        (
+        a
+        u
+        +
+        b
+        v
+        )
+        =
+        T
+        (
+        a
+        u
+        )
+        +
+        T
+        (
+        b
+        v
+        )
+        =
+        a
+        T
+        (
+        u
+        )
+        +
+        b
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle \quad T(au+bv)=T(au)+T(bv)=aT(u)+bT(v)}
+  
+
+
+=== Alt uzay, germe ve taban ===
+Yine diğer cebirsel nesnelerin teorileri ile analog olarak, lineer cebir vektör uzaylarının kendileri vektör alanlarının alt kümeleriyle ilgilenmektedir, bu alt kümeler doğrusal alt uzayı olarak adlandırılır. Örneğin, aralık ve doğrusal bir eşleme bölgesinin hem çekirdek hem de alt uzayları vardır ve bu nedenle sık sık aralık alanı olarak adlandırılır ve boşuzay; bu alt uzayların önemli örnekleridir. Bir alt uzayı oluşturmanın bir diğer önemli yolu da doğrusal kombinasyona almaktır, v1, v2, …, vk vektörlerinin bir kümesi:
+
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            k
+          
+        
+        
+          v
+          
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle a_{1}v_{1}+a_{2}v_{2}+\cdots +a_{k}v_{k},}
+  
+
+burada a1, a2, …, ak skalerlerdir. Vektörlerinin doğrusal tüm bileşimlerinin kümesi v1, v2, …, vk buna germe denir, bunun bir alt uzay formudur.
+Tüm sıfır katsayısı ile vektörlerinin herhangi bir sisteminin bir lineer kombinasyonu V sıfır vektörüdür. Bu lineer bir kombinasyonu olarak sıfır vektör ifade etmek için tek yoldur v1, v2, …, vk ise bu vektörler doğrusal bağımsızdır.Verilen bir vektörler kümesinin bu vektörlerinin bir uzay gerimi, eğer herhangi vektör w diğer vektörlerin doğrusal kombinasyonu (ve böylece kümeleri doğrusal bağımsız değildir) ise biz eğer w kümesinden germeyi kaldırırsak aynı kalacaktır. Böylece, doğrusal bağımlı vektörlerin kümesi bir doğrusal bağımsız alt kümesi aynı alt uzayı kapsar anlamında gereksizdir. Bu nedenle, bir vektör uzayı V yi geren vektörlerin lineer bağımsız kümesinin içinden daha çok ilgiliyiz, buna V’nin tabanı deriz. Vektörlerin herhangi kümesi that spans Vnin gerilmiş bir tabanını içerir ve V içindeki vektörlerin herhangi doğrusal bağımsız kümesi bir tabana gerilebilir(yayılabilir). Buradan çıktığı üzere biz seçim aksiyomu olarak kabul edersek, her vektör uzayının bir tabanı vardır; yine de, bu doğal olmayan baz olabilir ve gerçekten de, hatta inşa edilebilir olmayabilir. Örneğin, burada Kesirli üzerinde bir vektör alanı olarak kabul edilen reel sayılar için bir temel var, ama hiçbir açık temel inşa edilmemiştir.
+V vektör uzayının herhangi iki tabanı aynı kardinalitesi varsa, buna V’nin boyutu denir. Bir vektör uzayının boyutu vektör uzayı için boyut teoremi ile iyi-tanımlıdır. Eğer V’nin bir tabanı ögelerin sonlu sayısı varsa, V’ye bir sonlu-boyutlu vektör uzayı denir. Eğer V sonlu-boyutlu ve U V’nin bir alt uzayı ise dim U ≤ dim V. Eğer U1 ve U2 V'nin alt uzayı ise
+
+  
+    
+      
+        dim
+        ⁡
+        (
+        
+          U
+          
+            1
+          
+        
+        +
+        
+          U
+          
+            2
+          
+        
+        )
+        =
+        dim
+        ⁡
+        
+          U
+          
+            1
+          
+        
+        +
+        dim
+        ⁡
+        
+          U
+          
+            2
+          
+        
+        −
+        dim
+        ⁡
+        (
+        
+          U
+          
+            1
+          
+        
+        ∩
+        
+          U
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \dim(U_{1}+U_{2})=\dim U_{1}+\dim U_{2}-\dim(U_{1}\cap U_{2})}
+  
+.
+Birçoğu sonlu boyutlu vektör alanlarına önemi sınırlar. Lineer cebir temel bir teoremi aynı boyutun tüm vektör uzaylarının izomorf olduğunu belirtiyor, eş yapının karakterize edilmesi için bir kolay bir yol verir.
+
+
+== Ayrıca bakınız ==
+Özvektörler
+Doğrusal regresyon, bir istatistiksel kestirim yöntemi
+Simpleks yöntemi, doğrusal programlama için teknik bir çözüm
+Dönüşüm matrisi
+Elementer matris
+
+
+== Notlar ==
+
+
+== Konuyla ilgili yayınlar ==
+
+
+== Dış bağlantılar ==
+
+International Linear Algebra Society 3 Ocak 2014 tarihinde Wayback Machine sitesinde arşivlendi.
+MIT Professor Gilbert Strang's Linear Algebra Course Homepage 27 Şubat 2014 tarihinde Wayback Machine sitesinde arşivlendi. : MIT Course Website Kursu
+MIT Linear Algebra Lectures23 Nisan 2006 tarihinde Wayback Machine sitesinde arşivlendi.: MIT OpenCourseWare dan videolar
+Linear Algebra - Foundations to Frontiers EDX tarafından açılacak özgür MOOC
+Linear Algebra Toolkit 16 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi..
+Hazewinkel, Michiel, (Ed.) (2001), "Linear algebra", Encyclopaedia of Mathematics, Kluwer Academic Publishers, ISBN 978-1556080104 
+Linear Algebra 23 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi. on MathWorld.
+Linear Algebra tutorial 25 Şubat 2014 tarihinde Wayback Machine sitesinde arşivlendi. interaktif çevrimiçi programları ile.
+Matrix and Linear Algebra Terms8 Temmuz 2015 tarihinde Wayback Machine sitesinde arşivlendi. on Earliest Known Uses of Some of the Words of Mathematics4 Mart 2009 tarihinde Wayback Machine sitesinde arşivlendi.
+Earliest Uses of Symbols for Matrices and Vectors5 Ekim 2018 tarihinde Wayback Machine sitesinde arşivlendi. on Earliest Uses of Various Mathematical Symbols20 Şubat 2016 tarihinde Wayback Machine sitesinde arşivlendi.
+Linear Algebra21 Eylül 2008 tarihinde Wayback Machine sitesinde arşivlendi. Elmer G. Wiens.tarafından vektörler, matrisler, lineer denklem için etkileşimli web sayfaları
+Linear Algebra Solved Problems18 Nisan 2008 tarihinde Wayback Machine sitesinde arşivlendi.: Düşük seviyeden zor seviyeye doğrusal cebir problemlerinin tartışılması için interaktif forumlar(Putnam).
+Linear Algebra for Informatics. José Figueroa-O'Farrill, University of Edinburgh
+Online Notes / Linear Algebra9 Mayıs 2008 tarihinde Wayback Machine sitesinde arşivlendi. Paul Dawkins, Lamar University
+Elementary Linear Algebra textbook with solutions 19 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi.
+Linear Algebra Wiki
+Linear algebra (math 21b) homework and exercises 25 Haziran 2003 tarihinde Wayback Machine sitesinde arşivlendi.
+Textbook and solutions manual 5 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi., Saylor Vakfı.
+An Intuitive Guide to Linear Algebra11 Ekim 2012 tarihinde Wayback Machine sitesinde arşivlendi. on BetterExplained
+
+
+=== Çevrimiçi kitaplar ===
+Beezer, Rob, A First Course in Linear Algebra 4 Kasım 2013 tarihinde Wayback Machine sitesinde arşivlendi.
+Connell, Edwin H., Elements of Abstract and Linear Algebra 27 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi.
+Hefferon, Jim, Linear Algebra 14 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi.
+Matthews, Keith, Elementary Linear Algebra 19 Mart 2014 tarihinde Wayback Machine sitesinde arşivlendi.
+Sharipov, Ruslan, Course of linear algebra and multidimensional geometry9 Mayıs 2008 tarihinde Wayback Machine sitesinde arşivlendi.
+Treil, Sergei, Linear Algebra Done Wrong 31 Ocak 2014 tarihinde Wayback Machine sitesinde arşivlendi.

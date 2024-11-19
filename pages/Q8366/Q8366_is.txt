@@ -1,0 +1,69 @@
+Reiknirit (einnig algrím, sjaldnar reiknisögn eða algóriþmi) er lausnaraðferð og skilgreint sem endanlegt mengi vel skilgreindra fyrirmæla til að leysa verkefni. Reiknirit skilar fyrirfram skilgreindri niðurstöðu að gefnu upphafsskilyrði. Reiknirit eru einkum notuð í stærðfræði og tölvunarfræði við lausn vandamála.
+
+
+== Saga ==
+Reiknirit er einnig kallað algrím eða algóriþmi. Uppruna orðsins algóriþmi má rekja til stærðfræðings sem var uppi á 10. öld, Abu Abdullah Muhammad ibn Musa al-Khwarizmi. Al-Khwarizmi er af mörgum talinn upphafsmaður nútíma algebru og var hann sannfærður um að hægt væri að leysa öll stærðfræðileg vandamál ef þeim væri skipt upp í minni skref. 
+Eitt frægasta reiknirit allra tíma er reiknirit Evklíðs sem finnur stærsta sameiginlega deili tveggja heiltalna, en það var birt árið 300 fyrir Krist.
+Fyrsta reikniritið sem skrifað var fyrir tölvur var skrifað af Ada Byron árið 1842, en það var aldrei útfært.
+
+
+== Framsetning reiknirita ==
+Reiknirit eru oft í upphafi hönnunar skrifuð í sauðakóða sem er nokkurs konar millistig almenns ritmáls og forritunarmáls og er því óháð því forritunarmáli sem reikniritið verður útfært í. Það auðveldar útfærslu reikniritsins í hinum ýmsu forritunarmálum, enda er sauðakóðinn auðskiljanlegur öllum forriturum óháð forritunarbakgrunn þeirra.
+Dæmi um reiknirit í sauðakóða:
+
+ ef tala er slétt tala þá
+      deila í tölu með tveimur
+ annars 
+      hækka tölu um einn heilan og deila svo í hana með tveimur
+    
+ skrifa tölu á skjá
+
+Dæmi um sama reiknirit í C++
+
+ if  (nr % 2 == 0) 
+    nr = nr/2;
+ else
+    nr = (nr + 1) / 2;
+  
+ std::cout<<nr<<endl;
+
+
+== Nokkrar tegundir reiknirita ==
+Reiknirit geta verið einföld þar sem þau eru framkvæmd í röð eins og farið sé eftir uppskrift. Reiknirit geta líka verið flóknari. Sum reiknirit nota samanburð og rökaðgerðir til að ákvarða næsta skref, sbr. dæmið hér að ofan, önnur nota lykkjur og ítrun og enn önnur eru endurkvæm. Til eru margar gerðir leitarreiknirita sem leita að tilteknu staki í lista t.d. Dæmi um slík reiknirit eru t.d. línuleg leit og tvíundarleit. Einnig eru til mörg röðunarreiknirit. Algengast þeirra er sennilega reikniritið quick-sort. 
+Dæmi um reiknirit sem notar lykkju:
+Reikniritið margfaldar saman heiltölurnar frá 1 og til og með 9. Einnig kallað hrópfall.
+
+ int nr = 1;
+ 
+ for (int i = 2, i < 10, i++)  
+ {
+    nr = nr * i;
+ ) 
+ std::cout<<nr<<endl;
+
+Dæmi um endurkvæmt reiknirit sem gerir það sama:
+Fallið kallar í sjálft sig með n-1 þar til n er minna en 1 og reiknar sig svo til baka.
+
+ int factorial(n) 
+  
+ {
+    if (n <= 1)
+       return n;
+    else
+       return n * factorial(n-1);
+ }
+
+
+== Greining reiknirita ==
+Við greiningu reiknirita erum við að skoða hvort reiknirit sé ákjósanlegt. Þar er aðallega horft til tveggja þátta, einfaldleika og skilvirkni. Greining reiknirita er mjög mikilvæg þar sem við getum oft valið um fleiri en eitt reiknirit til lausnar á sama vandamáli. Það er mikilvægt að skilvirkni reiknirits sé skoðuð áður en það er útfært. Þá er notast við sauðakóða framsetningu reiknirits. 
+
+
+== Einfaldleiki reiknirita ==
+Einfalt reiknirit er auðvelt að útfæra, prófa, viðhalda og sýna fram á að það sé rétt. Kostir einfaldra reiknirita eru því margir en sé reiknirit mjög óskilvirkt og það eigi að nota til að leysa stórt vandamál er það í raun ónothæft þó það sé mjög einfalt.
+
+
+== Skilvirkni reiknirita ==
+Reiknirit eru misskilvirk. Til eru reiknirit sem tekur marga mannsaldra að leysa vandamál sem önnur skilvirkari reiknirit leysa á svipstundu. Það er því mikilvægt ef leysa á stórt vandamál að reikniritið sé skilvirkt. Skilvirkni er mæld í vaxtarhraða keyrslutíma, big Oh, annars vegar og minnisnotkun hins vegar. Þegar vandamálið sem leysa á er mjög lítið, t.d. að raða 10 stökum skiptir skilvirkni ekki öllu máli.
+
+
+== Tilvísanir ==

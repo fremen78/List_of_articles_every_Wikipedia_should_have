@@ -1,0 +1,1469 @@
+Der er for få eller ingen kildehenvisninger i denne artikel, hvilket er et problem. Du kan hjælpe ved at angive troværdige kilder til de påstande, som fremføres i artiklen.
+En differentialligning er en ligning, hvori der indgår en (ubekendt) funktion og dens afledede. At løse differentialligningen vil sige at finde en funktion, som tilfredsstiller denne.
+Den helt generelle form for en n'te ordens lineær differentialligning ser således ud:
+
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        
+          
+            
+              d
+              
+                
+                
+                  n
+                
+              
+              y
+            
+            
+              d
+              
+              
+                t
+                
+                  n
+                
+              
+            
+          
+        
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        
+          
+            
+              d
+              
+                
+                
+                  n
+                  −
+                  1
+                
+              
+              y
+            
+            
+              d
+              
+              
+                t
+                
+                  n
+                  −
+                  1
+                
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            1
+          
+        
+        y
+        =
+        u
+        (
+        t
+        )
+        
+        ,
+        
+        
+          a
+          
+            n
+          
+        
+        ≠
+        0
+      
+    
+    {\displaystyle a_{n}{\operatorname {d} \!^{n}y \over \operatorname {d} \!t^{n}}+a_{n-1}{\operatorname {d} \!^{n-1}y \over \operatorname {d} \!t^{n-1}}+\dots +a_{1}y=u(t)\quad ,\quad a_{n}\neq 0}
+  
+
+Såfremt 
+  
+    
+      
+        u
+        (
+        t
+        )
+      
+    
+    {\displaystyle u(t)}
+  
+ er lig nul, siger man, at differentialligningen er homogen, og i alle andre tilfælde, at den er inhomogen.
+En differentiallignings orden afhænger af, hvor mange gange der højest er differentieret. Ordenen kan således være fra et og opefter.
+
+
+== Eksempel: Hastighed og acceleration ==
+Et eksempel på benyttelse af differentialligninger i hverdagen er beskrivelsen af hhv. hastighed og acceleration i én dimension. Hastigheden 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ er defineret som ændring i position 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  
+ pr. tidsændring 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+:
+
+  
+    
+      
+        v
+        =
+        
+          
+            
+              d
+              
+              s
+            
+            
+              d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle v={\operatorname {d} \!s \over \operatorname {d} \!t}}
+  
+
+Samtidig er acceleration 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ ændringen i hastighed pr. tidsændring:
+
+  
+    
+      
+        a
+        =
+        
+          
+            
+              d
+              
+              v
+            
+            
+              d
+              
+              t
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                
+                  2
+                
+              
+              s
+            
+            
+              d
+              
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle a={\operatorname {d} \!v \over \operatorname {d} \!t}={\operatorname {d} \!^{2}s \over \operatorname {d} \!t^{2}}}
+  
+
+Dette er eksempler på differentialligninger af hhv. første og anden orden, idet man kan opfatte både strækning og hastighed, som en funktion, der afhænger af tiden.
+Flere praktiske eksempler er differentialligninger til beskrivelse af elektriske kredsløb eller til beskrivelse af et masse-fjedersystem. Her tænkes der på en masse, som er fastmonteret til en fjeder, hvorefter fjederen bliver strakt ud. Beskrivelsen af den oscillerende bevægelse frem og tilbage beskrives typisk også med en differentialligning. Dette er kun ganske få udpluk af utallige praktiske anvendelser.
+
+
+== Eksempel: Lodret kast med bold ==
+Et konkret eksempel på anvendelse af ovenstående differentialligninger kan ses ved at kaste en bold lodret op i luften og beregne, hvornår den rammer jorden. Ses der bort fra luftmodstanden, vil denne bold accelerere nedad med tyngdeaccelerationen 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+, som i Danmark er omtrent 9,82 m/s². Det betyder, at følgende differentialligning kan opstilles for boldens højde 
+  
+    
+      
+        s
+        (
+        t
+        )
+      
+    
+    {\displaystyle s(t)}
+  
+ over jorden:
+
+  
+    
+      
+        
+          
+            
+              d
+              
+                
+                
+                  2
+                
+              
+              s
+              (
+              t
+              )
+            
+            
+              d
+              
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        −
+        9
+        ,
+        82
+      
+    
+    {\displaystyle {\operatorname {d} \!^{2}s(t) \over \operatorname {d} \!t^{2}}=-9,82}
+  
+
+Hvor strækningen er målt i meter og tiden i sekunder. Det negative fortegn skyldes, at tyngdekraften presser nedad på bolden.
+Der antages yderligere, at bolden kastes opad med farten 5 m/s og at den slippes fra en højde på 1,5 m. Disse to informationen kaldes begyndelsesbetingelser til differentialligningen. De kan skrives matematisk, som hhv.:
+
+  
+    
+      
+        
+          v
+          
+            0
+          
+        
+        =
+        
+          
+            
+              d
+              
+              s
+            
+            
+              d
+              
+              t
+            
+          
+        
+        (
+        0
+        )
+        =
+        5
+      
+    
+    {\displaystyle v_{0}={\operatorname {d} \!s \over \operatorname {d} \!t}(0)=5}
+  
+
+  
+    
+      
+        
+          s
+          
+            0
+          
+        
+        =
+        s
+        (
+        0
+        )
+        =
+        1
+        ,
+        5
+      
+    
+    {\displaystyle s_{0}=s(0)=1,5}
+  
+
+Løsningen til differentialligningen kan findes ved at integrere af to omgange. Først findes hastigheden:
+
+  
+    
+      
+        
+          
+            
+              d
+              
+                
+                
+                  2
+                
+              
+              s
+              (
+              t
+              )
+            
+            
+              d
+              
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        −
+        9
+        ,
+        82
+      
+    
+    {\displaystyle {\operatorname {d} \!^{2}s(t) \over \operatorname {d} \!t^{2}}=-9,82}
+  
+
+  
+    
+      
+        ∫
+        
+          
+            
+              
+                d
+                
+                  
+                  
+                    2
+                  
+                
+                s
+                (
+                t
+                )
+              
+              
+                d
+                
+                
+                  t
+                  
+                    2
+                  
+                
+              
+            
+          
+          d
+          
+          t
+        
+        =
+        ∫
+        
+          −
+          9
+          ,
+          82
+          d
+          
+          t
+        
+      
+    
+    {\displaystyle \int {{\operatorname {d} \!^{2}s(t) \over \operatorname {d} \!t^{2}}\operatorname {d} \!t}=\int {-9,82\operatorname {d} \!t}}
+  
+
+  
+    
+      
+        
+          
+            
+              d
+              
+              s
+              (
+              t
+              )
+            
+            
+              d
+              
+              t
+            
+          
+        
+        =
+        −
+        9
+        ,
+        82
+        ⋅
+        t
+        +
+        
+          v
+          
+            0
+          
+        
+      
+    
+    {\displaystyle {\operatorname {d} \!s(t) \over \operatorname {d} \!t}=-9,82\cdot t+v_{0}}
+  
+
+I denne differentialligning kan den første begyndelsesbetingelse indsættes, så der opnås:
+
+  
+    
+      
+        
+          
+            
+              d
+              
+              s
+              (
+              t
+              )
+            
+            
+              d
+              
+              t
+            
+          
+        
+        =
+        −
+        9
+        ,
+        82
+        ⋅
+        t
+        +
+        5
+      
+    
+    {\displaystyle {\operatorname {d} \!s(t) \over \operatorname {d} \!t}=-9,82\cdot t+5}
+  
+
+Dette er en udtryk for boldens hastighed. Ønskes strækningen integreres det:
+
+  
+    
+      
+        ∫
+        
+          
+            
+              
+                d
+                
+                s
+                (
+                t
+                )
+              
+              
+                d
+                
+                t
+              
+            
+          
+          d
+          
+          t
+        
+        =
+        ∫
+        
+          (
+          −
+          9
+          ,
+          82
+          ⋅
+          t
+          +
+          5
+          )
+          d
+          
+          t
+        
+      
+    
+    {\displaystyle \int {{\operatorname {d} \!s(t) \over \operatorname {d} \!t}\operatorname {d} \!t}=\int {(-9,82\cdot t+5)\operatorname {d} \!t}}
+  
+
+  
+    
+      
+        s
+        (
+        t
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        (
+        −
+        9
+        ,
+        82
+        )
+        ⋅
+        
+          t
+          
+            2
+          
+        
+        +
+        5
+        ⋅
+        t
+        +
+        
+          s
+          
+            0
+          
+        
+      
+    
+    {\displaystyle s(t)={1 \over 2}(-9,82)\cdot t^{2}+5\cdot t+s_{0}}
+  
+
+Heri kan den anden begyndelsesbetingelse anvendes:
+
+  
+    
+      
+        s
+        (
+        t
+        )
+        =
+        −
+        4
+        ,
+        91
+        ⋅
+        
+          t
+          
+            2
+          
+        
+        +
+        5
+        ⋅
+        t
+        +
+        1
+        ,
+        5
+      
+    
+    {\displaystyle s(t)=-4,91\cdot t^{2}+5\cdot t+1,5}
+  
+
+Dette er den løsningen til den oprindelige differentialligning. Spørgsmålet om hvornår den rammer jorden kan besvares ved at løse andengradsligningen:
+
+  
+    
+      
+        0
+        =
+        −
+        4
+        ,
+        91
+        ⋅
+        
+          t
+          
+            2
+          
+        
+        +
+        5
+        ⋅
+        t
+        +
+        1
+        ,
+        5
+      
+    
+    {\displaystyle 0=-4,91\cdot t^{2}+5\cdot t+1,5}
+  
+
+Hvilket giver den positive løsning:
+
+  
+    
+      
+        t
+        =
+        1
+        ,
+        23
+      
+    
+    {\displaystyle t=1,23}
+  
+
+Bolden rammer derfor jorden efter 1,23 sekunder.
+
+
+== Populær definition af differentialligning ==
+Populært sagt er en differentialligning en type ligning, som består af to ubestemte integraler; men der er gået kludder i de to ubestemte integraler.
+Som standard er det ene integral af 
+  
+    
+      
+        d
+        x
+      
+    
+    {\displaystyle dx}
+  
+ og det andet integral er af 
+  
+    
+      
+        d
+        y
+      
+    
+    {\displaystyle dy}
+  
+.
+Metoden separation af de variable
+At løse en differentialligning kan ske ved metoden separation af de variable.
+Her starter man med at definere to funktioner; der som standard hedder 
+  
+    
+      
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle g(x)}
+  
+ og 
+  
+    
+      
+        h
+        (
+        y
+        )
+      
+    
+    {\displaystyle h(y)}
+  
+.
+Man tager forbehold og sikrer, at 
+  
+    
+      
+        h
+        (
+        y
+        )
+        ≠
+        0
+      
+    
+    {\displaystyle h(y)\neq 0}
+  
+
+for man skal senere dividere med 
+  
+    
+      
+        h
+        (
+        y
+        )
+      
+    
+    {\displaystyle h(y)}
+  
+ eller rettere: Man skal dividere med det, som er lig med 
+  
+    
+      
+        h
+        (
+        y
+        )
+      
+    
+    {\displaystyle h(y)}
+  
+.
+Når man har bragt orden i de ubestemte intgraler,
+sætter man et integraltegn (det langstrakte s:
+  
+    
+      
+        ∫
+      
+    
+    {\displaystyle \int }
+  
+) på hver side af lighedstegnet.
+Skrive to stamfunktioner
+Herefter skal man skrive to stamfunktioner.
+Ved at skrive de to stamfunktioner opstår der en almindelig ligning.
+Løse den almindelige ligning
+Den almindelige ligning løser man ved at isolere variablen 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+
+Så har man beregnet differentialligningens fuldstændige løsning.
+
+
+== Nogle eksempler på typer af differentialligninger ==
+Ifølge Hebsgaard (1995) findes der flere forskellige typer differentialligninger.
+· Den proportionale første ordens differentialligning
+
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        k
+        ⋅
+        y
+        
+        ,
+        
+        y
+        ≠
+        0
+      
+    
+    {\displaystyle y'={dy \over dx}=k\cdot y\quad ,\quad y\neq 0}
+  
+
+  
+    
+      
+        ⟺
+      
+    
+    {\displaystyle \Longleftrightarrow }
+  
+ og dens fuldstændige løsning
+
+  
+    
+      
+        y
+        (
+        x
+        )
+        =
+        c
+        ⋅
+        
+          e
+          
+            k
+            ⋅
+            x
+          
+        
+      
+    
+    {\displaystyle y(x)=c\cdot e^{k\cdot x}}
+  
+
+· Den lineære første ordens differentialligning
+
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        a
+        ⋅
+        y
+        +
+        b
+        
+        ,
+        
+        a
+        ≠
+        0
+      
+    
+    {\displaystyle y'={dy \over dx}=a\cdot y+b\quad ,\quad a\neq 0}
+  
+
+  
+    
+      
+        ⟺
+      
+    
+    {\displaystyle \Longleftrightarrow }
+  
+ og dens fuldstændige løsning
+
+  
+    
+      
+        y
+        (
+        x
+        )
+        =
+        c
+        ⋅
+        
+          e
+          
+            a
+            ⋅
+            x
+          
+        
+        −
+        
+          
+            b
+            a
+          
+        
+        
+        ,
+        
+        a
+        ≠
+        0
+      
+    
+    {\displaystyle y(x)=c\cdot e^{a\cdot x}-{b \over a}\quad ,\quad a\neq 0}
+  
+
+· Den proportionale anden ordens differentialligning
+
+  
+    
+      
+        
+          y
+          ″
+        
+        =
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          k
+          
+            2
+          
+        
+        ⋅
+        y
+      
+    
+    {\displaystyle y''={d^{2}y \over dx^{2}}=k^{2}\cdot y}
+  
+
+  
+    
+      
+        ⟺
+      
+    
+    {\displaystyle \Longleftrightarrow }
+  
+ og dens fuldstændige løsning
+for 
+  
+    
+      
+        
+          k
+          
+            2
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle k^{2}>0}
+  
+
+  
+    
+      
+        
+          y
+          ″
+        
+        =
+        
+          k
+          
+            2
+          
+        
+        ⋅
+        y
+        ⟺
+        y
+        =
+        
+          c
+          
+            1
+          
+        
+        ⋅
+        e
+        x
+        p
+        (
+        k
+        x
+        )
+        +
+        
+          c
+          
+            2
+          
+        
+        ⋅
+        e
+        x
+        p
+        (
+        −
+        k
+        x
+        )
+      
+    
+    {\displaystyle y''=k^{2}\cdot y\Longleftrightarrow y=c_{1}\cdot exp(kx)+c_{2}\cdot exp(-kx)}
+  
+
+for 
+  
+    
+      
+        
+          k
+          
+            2
+          
+        
+        <
+        0
+      
+    
+    {\displaystyle k^{2}<0}
+  
+
+  
+    
+      
+        
+          y
+          ″
+        
+        =
+        −
+        
+          k
+          
+            2
+          
+        
+        ⋅
+        y
+        ⟺
+        y
+        =
+        
+          c
+          
+            1
+          
+        
+        ⋅
+        c
+        o
+        s
+        (
+        k
+        x
+        )
+        +
+        
+          c
+          
+            2
+          
+        
+        ⋅
+        s
+        i
+        n
+        (
+        k
+        x
+        )
+      
+    
+    {\displaystyle y''=-k^{2}\cdot y\Longleftrightarrow y=c_{1}\cdot cos(kx)+c_{2}\cdot sin(kx)}
+  
+
+for 
+  
+    
+      
+        k
+        =
+        0
+      
+    
+    {\displaystyle k=0}
+  
+
+  
+    
+      
+        
+          y
+          ″
+        
+        =
+        0
+        ⟺
+        y
+        =
+        
+          c
+          
+            1
+          
+        
+        ⋅
+        x
+        +
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle y''=0\Longleftrightarrow y=c_{1}\cdot x+c_{2}}
+  
+
+Løsningen beregnes nemt ved at integrere to gange.
+
+
+== Eksempler på anvendte differentialligninger ==
+Navier-Stokes' ligning
+Euler-Lagrange-ligning
+Logistisk vækst
+Newtons afkølingslov
+Newtons anden lov
+Radioaktivitet
+Reaktionshastighed
+
+
+== Løsning ==
+For en separabel første orden differentialligning skelner man mellem den fuldstændige løsning og en partikulær løsning; den fuldstændige løsning omfatter alle løsninger; en partikulær løsning er derimod en konkret løsning; først beregner man den fuldstændige løsning og herefter beregner man en partikulær løsning.
+En funktion 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+, som tilfredsstiller en differentialligning, kaldes en løsning. Grafen for 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ kaldes en løsningskurve eller integralkurve; samtlige funktioner, som tilfredsstiller en differentialligning kaldes den fuldstændige løsning. Korte stumper af løsningskurver indtegnet i koordinatsystemet betegnes linjeelementer.
+
+
+=== Løsningsmetoder ===
+Separation af de variable
+Anvende panserformlen til at løse lineær differentialligning af første orden
+
+
+== Separabel første ordens differentialligning ==
+Beviset for, at den logistiske funktions forskrift er løsningen til en differentialligning, kan føres vha. separation af de variable; hvor 
+  
+    
+      
+        g
+        (
+        x
+        )
+        =
+        1
+      
+    
+    {\displaystyle g(x)=1}
+  
+. En separabel første ordens differentialligning kan opfattes som to ubestemte integraler. Der er tale om et ubestemt integrale af 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ og et andet ubestemt integrale af 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+. Men der er gået kludder i de to ubestemte integraler. Så samler man alt, der har med 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ at gøre på den ene side af lighedstegnet; mens alt, som har med 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ at gøre, samler man på den anden side af lighedstegnet.
+Ved at anvende separation af de variable samt skrive to stamfunktioner og den fælles integrationskonstant (gerne med et græsk bogstav) er der fremkommet en almindelig ligning.
+Så er det lettere at isolere 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ i den almindelige ligning. Når man har isoleret 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, så har man beregnet differentialligningens fuldstændige løsning. Ved først at isolere konstanten 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+; og så indsætte løsningskurvens punkts koordinater i den fuldstændige løsning beregner man den partikulære løsning, der indeholder det punkt, som løsningskurven gennemskærer.
+
+
+== CAS-softwares ==
+En håndfuld CAS-softwares kan løse differentialligninger algebraisk. Den typiske kommando for at løse differentialligning er
+enten:
+dsolve(
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        k
+        ⋅
+        y
+      
+    
+    {\displaystyle y'=k\cdot y}
+  
+ , 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+) for Maple og Mathematica
+eller:
+deSolve(
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        b
+        ⋅
+        y
+        −
+        a
+      
+    
+    {\displaystyle y'=b\cdot y-a}
+  
+ ,
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+,
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+) for TI-Nspire CAS og TI-92 Plus online emulator og TI-89 online simulator
+hhv.
+desolve(
+  
+    
+      
+        
+          y
+          ′
+        
+        =
+        b
+        ⋅
+        y
+        −
+        a
+      
+    
+    {\displaystyle y'=b\cdot y-a}
+  
+ , 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+) for SageMath og Xcas og ExpressionsinBar
+Disse websites kan løse differentialligninger
+
+https://www.symbolab.com/solver/ordinary-differential-equation-calculator Arkiveret 24. april 2020 hos  Wayback Machine
+https://www.wolframalpha.com/examples/mathematics/differential-equations/ Arkiveret 22. maj 2020 hos  Wayback Machine
+Kunstig intelligens er ved at lære at løse første ordens og anden ordens differentialligninger.
+
+
+== IT-afsnit ==
+Som en del af Edge browser kan MS Copilot bevise den proportionale differentiallignings løsningsformel, hvis man promter dette:
+bevis differentialligningen dy/dx=k*y med forklaringer undervejs ved metoden separation af variable
+
+
+== Eksterne kilder ==
+
+
+=== Bøger ===
+Bahr, Kristian (2015): Smart matematik A : teoribog til adgangskursus. Praxis - Nyt Teknisk Forlag, Odense. ISBN 978-87-571-2848-2
+Bruun, Bodil & Grøn, Bjørn m.fl. (2015): Hvad er matematik? - A : grundbog. 2. udgave. Lindhardt og Ringhof, København. ISBN 9788770664936
+Carstensen, Jens & Frandsen, Jesper (1985): Matematik 2 - Matematik for gymnasiets matematisk-fysiske gren. Forlaget Systime, Herning. ISBN 87-7351-287-7
+Hebsgaard, Thomas m.fl. (1995): Matematik højniveau 2. integralregning og differentialligninger. Forlaget Trip, Vejle. ISBN 87-88049-17-5
+Herman, Edwin “Jed” & Strang, Gilbert (2016): Calculus : Volume 2 : OpenStax, Rice University, Houston, Texas, USA. ISBN 978-1-947172-14-2. (online) URL: https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/CalculusVolume2-OP_esPpXTB.pdf
+Reinhardt, Fritz & Soeder, Heinrich (1977): dtv-Atlas zur Mathematik : Tafeln und Texte : Analysis und angewandte Mathematik. Band 2. Deutscher Taschenbuch Verlag, München. ISBN 3-423-03008-9
+
+
+=== Referencer ===

@@ -1,0 +1,221 @@
+Algoritem je v matematiki in računalništvu končno zaporedje natančno določenih, računalniško izvedljivih navodil, običajno namenjenih reševanju težav ali za izvajanje izračuna. Kako podrobno se razdelajo koraki navodila, je odvisno od tega, kdo izvaja algoritem (človek, računalnik). Če algoritem izvaja računalnik, potem se govori o računalniškem programu. Algoritmi so vedno nedvoumni in se uporabljajo kot specifikacije za izvajanje izračunov, obdelave podatkov, avtomatiziranega sklepanja in drugih nalog.
+Učinkovita metoda za izračun funkcije je, da algoritem lahko izrazimo v končni količini prostora in časa in v natančno določenem formalnem jeziku. Navodila opisujejo izračun, ki se začne od začetnega stanja in začetnega vnosa (ki je morda prazen), ki se potem izvaja skozi končno število natančno določenih zaporednih stanj, sčasoma proizvede "izhod" in se zaključi v končnem stanju. Prehod iz enega stanja v naslednje ni nujno deterministično; nekateri algoritmi, znani kot naključni algoritmi, vključujejo naključne vnose.
+Koncept algoritma je obstajal že v antiki. Aritmetične algoritme, kot je algoritem deljenja, so uporabljali starodavni babilonski matematiki c. 2500 pred našim štetjem in egipčanski matematiki c. 1550 pr. n. št. Grški matematiki so pozneje uporabili algoritme v Eratostenovem situ za iskanje praštevil ter Evklidov algoritem za iskanje največjega skupnega delitelja dveh števil. Arabski matematiki, kot je al-Kindi v 9. stoletju, so uporabljali kriptografske algoritme za razbijanje kod na podlagi frekvenčne analize.
+Sama beseda algoritem izhaja iz imena matematika iz 9. stoletja Al-Hvarizmija, katerega nisba (ki ga označuje kot Hvarizmi) je bila latinizirana v Algoritmi. V 9. stoletju je napisal algoritme za osnovne matematične operacije. Njegova najbolj pomembna knjiga, Kitab al-Džabr val-Mukabala (Pravila reintegracije in redukcije), je bila osnova za standardizacijo arabskih številk v evropski matematiki. Del njegovega imena, Al-Džabr, je bilo kasneje interpretirano kot beseda algebra.
+Delna formalizacija tega, kar bi postalo sodoben koncept algoritma, se je začela s poskusi reševanja problema Entscheidungsproblem (problem odločanja), ki ga je leta 1928 postavil David Hilbert. Kasnejše formalizacije so bile oblikovane kot poskusi definiranja "učinkovite izračunljivosti" ali "učinkovite metode". Te formalizacije so vključevale rekurzivne funkcije Gödel - Herbrand - Kleene iz leta 1930, 1934 in 1935, lambda račun Alonza Church iz leta 1936, Formulacija 1 Emila Posta iz 1936 in Turingove stroje Alana Turinga v letih 1936–37 in 1939.
+
+
+== Etimologija ==
+Beseda algoritem ima svoje korenine v latinizirani nisbi algorismus, ki kaže na njeno geografsko poreklo, imena perzijskega matematika Mohamed ben Musa al Hvarizmija. Al-Hvarizmi (arabizirana perzijščina الخوارزمی c. 780–850) je bil matematik, astronom, geograf in učenjak v Hiši modrosti v Bagdadu in njegovo ime pomeni 'doma iz Horezma', medrečjem vzhodno od Aralskega jezera,  ki je danes del Uzbekistana.
+
+
+== Neformalna definicija ==
+Neformalna definicija bi lahko bila "sklop pravil, ki natančno opredeljuje zaporedje operacij",  vse od  računalniških  programov do tipičnega birokratskega postopka in kuharskega recepta.
+Na splošno je program lahko algoritem le v primeru, če se sčasoma ustavi - čeprav so včasih neskončne zanke tudi zaželene.
+Prototipni primer algoritma je Evklidov algoritem, ki se uporablja za določitev največjega skupnega delitelja dveh celih števil; primer (obstajajo tudi drugi) je opisan v zgornjem diagramu poteka in tudi v kasnejšem poglavju.
+
+Spodnji citat iz Boolos & Jeffrey (1974, 1999) ponuja neformalni pomen besede "algoritem":Nobeno človeško bitje ne more pisati dovolj hitro, dovolj dolgo ali majhno† (†"majhno in še manjše brez omejitve ... poskušali bi pisati na molekule, na atome, na elektrone"), da bi zapisalo enega za drugim imena vseh članov preštevne neskončne množice. Toda ljudje lahko naredimo v primeru nekaterih preštevnih neskončnih množic nekaj enako uporabnega: lahko damo izrecna navodila za določanje n-tega člana množice za poljubni končni n. Takšna navodila moramo podati nazorno v obliki, ki ji lahko sledi računalniški stroj ali človek, ki je sposoben izvajati le nekaj osnovnih operacij s simboli.
+
+
+== Formalizacija ==
+Algoritmi so bistveni za računalniško obdelavo podatkov. Številni računalniški programi vsebujejo algoritme, ki podrobno podajajo navodila, ki jih mora računalnik izvesti—v določenem vrstnem redu—za izvedbo določene naloge, kot je to na primer izračun plač zaposlenih. Tako lahko za algoritem štejemo katero koli zaporedje operacij, ki ga lahko Turingov popoln sistem ponazori. Med avtorji, ki zagovarjajo to tezo, so Minsky (1967), Savage (1987) in Gurevič (2000).
+Turingovi stroji lahko opredelijo računske procese, ki se ne zaustavijo. Neformalne definicije algoritmov običajno zahtevajo, da se algoritem vedno zaustavi. Zaradi tega pogoja ostaja vprašanje,  ali gre pri formalnem postopku algoritem ali ne, na splošno odprto —zaradi  izreka teorije izračunljivosti, znanega kot problem zaustavitve.
+Običajno se, ko je algoritem povezan z obdelovanjem informacij, podatki lahko preberejo iz vhodnega vira, jih zapišejo v izhodno napravo in shranijo za nadaljnjo obdelavo. Shranjeni podatki se obravnavajo kot del internega stanja entitete, ki izvaja algoritem. V praksi je stanje shranjeno v eni ali več podatkovnih strukturah.
+Za nekatere od teh računskih procesov mora biti algoritem natančno opredeljen: določen na način, ki se lahko uporabi v katerikoli okoliščini, ki bi lahko nastala. To pomeni, da je treba sistematično obravnavati vse pogojne korake, za vsak primer posebej; kriterij mora biti jasen (in izračunljiv) za vse primere.
+Ker je algoritem natančen seznam natančnih korakov, je vrstni red izračuna vedno ključnega pomena za delovanje algoritma. Za navodila se navadno predvideva, da so zapisana kot točen seznam in opisana "od vrha" proti "do dna"— ideja, ki je bolj formalno zapisana s potekom izvajanja.
+Doslej je razprava o formalizaciji algoritmov temeljila na ukaznem programiranju. To je najpogostejši koncept—nalogo skuša opisati na diskretni, "mehanski" način. Edinstvena temu konceptu formaliziranih algoritmov je prireditvena operacija, ki nastavlja vrednost spremenljivke .Zgled take prireditve lahko najdete spodaj.
+Za nekatere alternativne koncepte glejte funkcijsko programiranje in logično programiranje.
+
+
+=== Izražanje algoritma ===
+Obstaja veliko načinov za izražanje in zapis algoritma. Nekateri so zelo neformalni, nekateri so precej formalne in matematične narave, nekateri pa so precej grafični - vključno z naravnimi jeziki, s psevdokodo, diagrami poteka, diagrami v jeziku drakon, programskimi jeziki ali s tabelami za nadzor (procesirajo jih interpreterji). Izrazi algoritma v naravnem jeziku so ponavadi gostobesedni in dvoumni in se le redko uporabljajo za kompleksne ali tehnične algoritme. Psevdokode, diagrami poteka, drakon-diagrami in tabele za nadzor so strukturiran način za izražanje algoritmov in se izogibajo dvoumnostim, ki jih pogosto najdemo v izjavah, ki temeljijo na naravnem jeziku. Programski jeziki so primarno namenjeni izražanju algoritmov v obliki, ki jo lahko izvaja računalnik, pogosto pa se uporabljajo tudi kot način definiranja ali dokumentiranja algoritmov.
+Obstaja širok nabor predstavitev, npr. program Turingovega stroja lahko podamo kot zaporedje strojnih tabel, kot diagrame poteka, kot drakon-diagrame ali kot obliko osnovne strojne kode ali zbirne kode.
+Predstavitve algoritmov lahko razvrstimo v tri sprejete ravni opisa Turingovega stroja, in sicer:
+
+1 Opis na visokem nivoju
+“... proza za opis algoritma, pri čemer se ne upoštevajo podrobnosti izvedbe. Na tej ravni nam ni treba omenjati, kako stroj upravlja s trakom ali glavo. "
+2 Opis izvedbe
+»... proza uporabljena za določanje načina, kako Turingov stroj uporablja glavo in način shranjevanja podatkov na traku. Na tej ravni ne podajamo podrobnosti o stanju ali prehodni funkciji. "
+3 Formalni opis
+Najbolj podrobni, "najnižja raven", podaja "tabelo stanja" Turingovega stroja.
+Za primer preprostega algoritma "Seštej m + n", opisanega na vseh treh ravneh, glejte Algoritem#Zgledi.
+
+
+== Načrtovanje ==
+Načrtovanje algoritma se nanaša na metodo ali matematični postopek algoritmov, ki rešujejo probleme ali pa so inženirske narave. Načrtovanje algoritmov je del teorij mnogih rešitev operativnih raziskav, kot sta dinamično programiranje in deli in vladaj. Tehnike za načrtovanje in implementacije načrta algoritma se imenujejo tudi vzorci načrtovanja algoritmov, z zgledi, ki vsebujejo vzorce predlog šablonske metode in vzorci dekoratorja.
+Eden najpomembnejših vidikov načrtovanja algoritmov je ustvarjanje algoritma z učinkovitim časom izvajanja, znan tudi kot notacija O.
+Tipični koraki pri razvoju algoritmov:
+
+Opredelitev problema
+Razvoj modela
+Specifikacija algoritma
+Oblikovanje algoritma
+Preverjanje pravilnosti algoritma
+Analiza algoritma
+Implementacija algoritma
+Testiranje programov
+Priprava dokumentacije
+
+
+== Implementacija ==
+
+Večina algoritmov naj bi se implementirala kot računalniški programi. Vendar se algoritmi lahko implementirajo tudi na druge načine, na primer v biološki nevronski mreži (npr. človeški možgani izvajajo aritmetiko, ali žuželke, ki iščejo hrano), v električnem krogu ali v mehanski napravi.
+
+
+== Računalniški algoritmi ==
+
+V računalniških sistemih je algoritem v bistvu primer logike, ki so jo v programskem jeziku zapisali razvijalci programske opreme, na način, ki bi bil učinkovit za predvidene "ciljne" računalnike, ki dajo izhod (output) iz danega (morda praznega - null) vhoda (input). Optimalni algoritem, tudi če deluje v zastareli strojni opremi, bi hitreje dal rezultate od neoptimalnega (večja časovna kompleksnost) algoritma, ki deluje na učinkovitejši strojni opremi; zato algoritme, tako kot računalniško strojno oprem, štejejo za tehnologijo.
+"Elegantni" (kompaktni) programi, "dobri" (hitri) programi: Pojem "preprostost in eleganca" se pojavlja v Knuthu in v Chaitinu:
+
+Knuth: "... želimo dobre algoritme v estetskem smislu. Eden izmed kriterijev … je čas, potreben za izvedbo algoritma…. drugi kriteriji so prilagodljivost algoritma računalnikom, njegova preprostost in eleganca itd."
+Chaitin: "... program je 'eleganten', s čimer mislim, da je najkrajši možni program za dajanje rezultatov, ki jih nudi."
+Chaitin je svojo definicijo začel takole: "Pokazal vam bom, da ne morete dokazati, da je program 'eleganten'"—tak dokaz bi rešil problem zaustavitve (ibid).
+Algoritem v primerjavi s funkcijo, izračunljivo z algoritmom: Za dano funkcijo lahko obstaja več algoritmov. To velja tudi ne da bi razširili razpoložljiv nabora inštrukcij, ki so na voljo programerju. Rogers opaža "da je ... pomembno razlikovati med pojmom algoritem, tj. postopkom, in pojmom funkcija izračunljiva z algoritmom, tj. preslikava pridobljena s postopkom. Ista funkcija ima lahko več različnih algoritmov ".
+Na žalost prihaja tudi do kompromisa med dobrim (hitrostjo) in eleganco (kompaktnostjo) - eleganten program lahko za dokončanje izračuna vsebuje več korakov kot manj eleganten. Primer Evklidovega algoritma je prikazan spodaj.
+Računalniki, računski modeli: Računalnik (ali človeški "računalnik") je omejena vrsta stroja, "diskretna deterministična mehanska naprava", ki slepo sledi svojim navodilom.
+Minsky opisuje bolj primerno različico Lambekovega modela "abakusa" v svoji "Very Simple Bases for Computability". Minskyjev registrski stroj prehaja zaporedno preko petih (ali šestih, odvisno od tega, kako se šteje) inštrukcij, razen če pogojni IF – THEN GOTO ali brezpogojni GOTO spremeni program v izhod iz zaporedja. Poleg HALT-a Minskyjev stroj vključuje tri operacije prireditvene (zamenjava, nadomestitev) operacije: ZERO (tj. vsebina lokacije je nadomeščena z 0: L ← 0), SUCCESSOR (tj. L ← L + 1) in DECREMENT  (tj. L ← L - 1). Redkokdaj mora programer napisati "kodo" s tako omejenim naborom inštrukcij. Ampak Minsky prikaže (tako kot Melzak in Lambek), da je njegov stroj  popolno po Turingu z le štirimi splošnimi tipi inštrukcij: pogojni GOTO, brezpogojni GOTO, prireditev/zamenjava/nadomestitev in HALT. Kakorkoli, nekaj različnih inštrukcij za prirejanje (npr. DECREMENT, INCREMENT in ZERO/CLEAR/EMPTY za Minskyev stroj) je potrebnih tudi za Turingovo popolnost; njihova natančna specifikacija je nekoliko odvisna od oblikovalca. Brezpogojni GOTO je priročen; zgradi se lahko z inicializacijo določene lokacije na vrednost nič, npr. inštrukcija "Z ← 0";temu sledi inštrukcija IF Z=0 THEN GOTO xxx brezpogojna.
+Simulacija algoritma: računalniški jezik : Knuth bralcu svetuje, da je "najboljši način za učenje algoritmov preizkušanje ... vzemite pisalo in papir in se lotite primera". Kaj pa simulacija ali izvajanje pravega testa? Programer mora algoritem prevesti v jezik, ki ga lahko simulator/računalnik učinkovito izvede. Stone je podal primer: računalnik mora pri izračunu korena kvadratne enačbe vedeti, kako izračunati kvadratni koren. Če tega ne zna, mora algoritem, da bo učinkovit, zagotoviti niz ukazov za pridobivanje kvadratnega korena.
+To pomeni, da mora programer poznati "jezik", ki je učinkovit glede na ciljno računalniško sredstvo (računalnik).
+Kateri model se lahko uporabi za simulacijo? Van Emde Boas ugotavlja, da "tudi če teorijo kompleksnosti temeljimo na abstraktnem, namesto na konkretnih strojih, ostaja izbira modela svobodna. Na tej točki nastopi pojem simulacije ". Pri merjenju hitrosti je nabor inštrukcij pomemben. Na primer, podprogram v Evklidovem algoritmu za izračun ostanka bi se izvedel veliko hitreje, če bi imel programer na voljo inštrukcijo "modul" in ne samo odštevanje (ali še huje: samo Minskyjev "decrement").
+Strukturirano programiranje, kanonične strukture: Glede na Church – Turingovo tezo lahko vsak algoritem izračunamo z modelom Turing complete, in glede na Minskyjeve prikaze, Turingova popolnost zahteva le štiri tipe inštrukcij - pogojni GOTO, brezpogojni GOTO, prireditev, HALT. Kemeny in Kurtz ugotavljata, da čeprav z "nedisciplinirano" uporabo brezpogojnih GOTO-jev in pogojnih IF-THEN GOTO-jev lahko povzročimo "kodo špagetov" (zamotano besedilo programa), lahko programer z uporabo le teh inštrukcij napiše strukturirane programe; po drugi strani "pa je tudi mogoče in ne preveč težko napisati slabo strukturirane programe v strukturiranem jeziku". Tausworthe dodaja trem kanoničnim Böhm-Jacopinijeve strukturam: SEQUENCE, IF-THEN-ELSE in WHILE-DO, še dve: DO-WHILE in CASE. Dodatna prednost strukturiranega programa je, da z uporabo matematične indukcije pomaga pri dokazovanju pravilnosti.
+Simboli kanoničnega diagrama poteka: Grafični pripomoček imenovan diagram poteka ponuja način za opis in dokumentiranje algoritma (in računalniškega programa). Tako kot programski tok Minskyevega stroja se tudi diagram poteka vedno začne na vrhu strani in nadaljuje navzdol. Primarni simboli so le štirje: usmerjena puščica, ki prikazuje pretok programa, pravokotnik (SEQUENCE, GOTO), diamant (IF-THEN-ELSE) in pika (OR-tie). Iz teh primitivnih oblik so narejene Kanonične Böhm – Jacopini strukture. Podstrukture se lahko "gnezdijo" v pravokotnike, vendar le, če omogoča en izhod iz superstrukture. Simboli in njihova uporaba za gradnjo kanoničnih struktur so prikazani v diagramu.
+
+
+== Zgledi ==
+Eden najpreprostejših algoritmov je najti največje število v seznamu števil v naključnem vrstnem redu. Iskanje rešitve zahteva ogled vsake številke v seznamu. Iz tega sledi preprost algoritem, ki ga lahko predstavimo s slovensko prozo z opisom na visokem nivoju:
+Opis na visokem nivoju:
+
+Če v naboru ni številk, potem tudi najvišje številke ni.
+Predpostavimo, da je prvo število v nizu največje število v nizu.
+Za vsako preostalo število v nizu: če je to število večje od trenutnega največjega števila, upoštevajte, da je to število največje število v nizu.
+Ko v naboru ni nobene številke, ki bi jo lahko ponovil, upoštevajte, da je trenutno največje število največje število nabora.
+(Kvazi) formalni opis: napisan je v prozi, vendar veliko bližje jeziku na visokem nivoju računalniškega programa. Spodaj je zapis formalnejšega kodiranja algoritma v psevdokodi ali pidgin kodi:
+
+
+=== Evklidov algoritem ===
+
+Evklidov algoritem za izračun največjega skupnega delitelja (GCD) dveh števil se pojavi kot Trditev II v Knjigi VII ("Elementarna teorija števil") njegovih Elementov. Evklid problem zastavi takole: "Dani sta dve števili, ki si nista praštevili, da bi našli njuno največjo skupno mero". Evklid določi "Število [ki bo], množica sestavljena iz enot": število za štetje, pozitivno celo število ne vključuje ničle. "Mera" pomeni namestiti krajšo merilno dolžino s zaporedoma (q krat) vzdolž daljše dolžine l, dokler preostali del r ni manjši od krajše dolžine s. S sodobnimi besedami, bi lahko rekli: ostanek r = l − q × s, kjer je q jkoličnik, ostanek r pa je "modul", celoštevilčni del, ki ostane po delitvi.
+Da je Evklidove metode uspešna, morajo začetne dolžine izpolnjevati dve zahtevi: (i) dolžine ne smejo biti enake nič IN (ii) odštevanje mora biti "pravilno"; tj. test mora zagotoviti, da se od obeh števil odšteje manjše od večjega (ali pa sta lahko enaki, tako da rezultat odštevanja da nič).
+Izvirni Evklidov dokaz dodaja še tretjo zahtevo: dolžini ne smeta biti praštevili eni drugi. Evklid je podal to zahtevo zato, da je lahko zgradil reductio ad absurdum dokaz, da je skupna mera obeh števil v resnici največja. Nikomahov algoritem je enak Evklidovemu, ko sta števili ena drugi praštevili, dobi število "1" za njuno skupno mero. Torej, če smo natančni, je to v resnici Nikomahov algoritem.
+
+
+==== Računalniški jezik za Evklidov algoritem ====
+Le nakaj tipov inštrukcij je potrebnih za izvajanje Evklidovega algoritm - nekaj logičnih testov (pogojni GOTO), brezpogojni GOTO, prireditev (zamenjava) in odštevanje.
+
+Lokacijo simbolizirajo velike črke, npr. S, A itd.
+Spreminjajoča se količina (število) v lokaciji je napisana z malimi črkami in je (običajno) povezana z imenom lokacije. Na primer, lokacija L na začetku lahko vsebuje število l = 3009.
+
+
+==== Neeleganten program za Evklidov algoritem ====
+
+Naslednji algoritem je formuliran kot Knuthova štiristopenjska različica Evkllidovega in Nikomahaovega algoritma, vendar namesto da bi za iskanje ostanka uporabil deljenje, uporablja zaporedna odštevanja krajše dolžine s od preostale dolžine r, dokler r ni manjše od s. Opis na visokem nivoju, prikazan v krepkem tisku, je povzet po Knuth 1973: 2–4:
+VHOD :
+
+1 [V dve lokaciji L in S vstavite število l in s, ki predstavljata dve dolžini]:
+  VHOD L, S
+2 [Inicializiraj R: napravi preostalo dolžino r enako začetni/inicialni/vhodni dolžini l]:
+  R ← L
+
+E0: [Zagotovite, da je r ≥ s.]
+
+3 [Zagotovite, da je majše od dveh števil v S in večje v R]:
+  IF R > S THEN
+    je vsebina L večje število, zato preskoči na zamenjevalne-korake 4, 5 in 6:
+    GOTO korak 6
+  ELSE
+    zamenjaj vsebini R in S.
+4   L ← R (ta prvi korak je redundanten, ampak uporaben za kasneje).
+5   R ← S
+6   S ← L
+
+E1: [Najdi ostanek] : Dokler je preostala dolžina r v R manjša od krajše dolžine s v S, ponavljajte odštevanje merilnega števila s v S od preostale dolžine r v R.
+
+7 IF S > R THEN
+    merjenje je zaključeno zato
+    GOTO 10
+  ELSE
+    ponovno merjenje,
+8   R ← R − S
+9   [Ostanek-zanka]:
+    GOTO 7.
+
+E2: [Ali je preostanek nič?] : ALI (i) je bil zadnja mera točna, ostanek v R je enak nič in program pa se lahko ustavi ALI (ii) pa se mora algoritem nadaljevati: zadnja mera je pustila ostanek v R manjši kot je merilno število v S.
+
+10 IF R = 0 THEN
+     zaključeno zato
+     GOTO korak 15
+   ELSE
+     CONTINUE TO korak 11,
+
+E3: [Izmenjava s in r ] : Srž Evklidovega algoritma. Uporabite ostankek r, da izmerite katero  je bilo prejšnje manjše število s; L služi kot začasna lokacija.
+
+11  L ← R
+12  R ← S
+13  S ← L
+14  [Ponovi postopek meritve]:
+    GOTO 7
+
+IZHOD :
+
+15 [Narejeno. S vsebuje največji skupni delitelj]:
+   PRINT S
+
+KONČANO :
+
+16 HALT, END, STOP.
+
+
+==== Eleganten program za Evklidov algoritem ====
+Diagram poteka "Elegantnega" algoritma se nahaja na vrhu tega članka. V (nestrukturiranem) Basic-u so koraki oštevilčeni, inštrukcija LET [] = [] je prireditvena inštrukcija, ki jo simbolizira ←.
+
+Delovanje "Elegantnega": Namesto zunanje "Evklidove zanke" se "Elegantni" premika naprej in nazaj med dvema "ko-zankama", A > B zanka, ki izračuna A ← A - B in B ≤ A zanka, ki izračuna B ← B - A. To deluje, ker ko je končno zmanjševanec M manjši ali enaka odštevancu S (Razlika = Zmanjševanec - Odštevanec), lahko zmanjševanec postane s (nova merilna dolžina) in odštevanec lahko postane nov r (dolžina, ki jo je treba izmeriti); z drugimi besedami, "smisel" odštevanja se obrne.
+Naslednja različica se lahko uporablja v programskih jezikih iz družine C:
+
+
+=== Testiranje Evklidovih algoritmov ===
+Ali algoritem počne tisto, kar si je njegov avtor želel? Nekaj testov običajno da nekaj zaupanja v osnovno funkcionalnost testa. A testi sami niso dovolj. Za testne primere en vir uporablja 3009 in 884. Knuth je predlagal 40902, 24140. Še en zanimiv primer pa sta dve tuji števili 14157 in 5950.
+Tuda "primere izjem"  je treba prepoznati in preizkusiti. Ali bo "Neelegantni" pravilno deloval, če bodo R > S, S > R, R = S? Enako kot za "Elegantnega": B > A, A > B, A = B? (Odgovor je "da" za vse). Kaj se zgodi, če je eno število nič, ali če sta obe števili nič? ("Neelegantni" izračuna neskončno v vseh primerih; "Elegantni" izračuna neskončno, ko je A = 0.) Kaj se zgodi, če vnesemo negativna števila? Ulomke? Če naj vhodna števila vključujejo samo pozitivna cela števila  vključno z ničlo, potem napake pri ničli pomenijo, da je algoritem (in program, ki ga inštancira) delna funkcija in ne običajna funkcija. Zelo znana okvara zaradi izjem je okvara rakete Ariane 5 Flight 501 (4. junij 1996).
+Dokaz pravilnosti programa z uporabo matematične indukcije: Knuth dokaže uporabo matematične indukcije na "razširjeni" verziji Evklidovega algoritma in predlaga "splošno metodo uporabno za dokazovanje veljavnosti katerega koli algoritma". Tausworthe predlaga, da je merilo zapletenosti programa dolžina dokaza njegove pravilnosti.
+
+
+== Analiza algoritmov ==
+Pogosto je pomembno vedeti, koliko določenega vira (na primer časa ali prostora) je v teoriji potrebno za dani algoritem. Za pridobitev takšnih kvantitativnih odgovorov (ocen) so bile razvite metode za analizo algoritmov; na primer, zgornji algoritem za razvrščanje ima časovno zahtevnost O(n), pri čemer uporablja veliko O notacijo z n kot dolžino seznama. Algoritem si mora zapomniti le dve vrednosti: največje doslej najdeno število in njegov trenutni položaj v vhodnem seznamu. Zatorej, imel naj bi prostorsko zahtevnost O(1), če se ne šteje prostor potreben za shranjevanje vhodnih števil, ali O(n), če se šteje.
+Različni algoritmi lahko isto nalogo opravijo z drugačnim naborom inštrukcij z manj ali več časa, prostora ali 'napora' kot drugi.
+
+
+== Klasifikacija ==
+Obstajajo različne kategorije algoritmov, bolje rečeno strategij, ki se jih uporablja za reševanje problemov. Poznane in razdelene strategije so:
+
+deli in vladaj
+dinamično programiranje
+požrešna metoda
+linearno programiranje
+verjetnostni algoritmi
+Pri analizi algoritma je običajno v osprednju zanimanja njegova prostorska in časovna zahtevnost.
+Ena izmed bolj znanih knjig o algoritmih in o programiranju je Knuthova Umetnost računalniškega programiranja (The Art of Computer Programming).
+
+
+== Glej tudi ==
+Evklidov algoritem
+algoritmi za urejanje podatkov
+NP problemi
+IDEA
+
+
+== Sklici ==
+
+
+== Bibliografija ==
+Knuth, Donald (1997). Fundamental Algorithms, Third Edition. Reading, Massachusetts: Addison–Wesley. ISBN 978-0-201-89683-1.
+Knuth, Donald (1969). Volume 2/Seminumerical Algorithms, The Art of Computer Programming First Edition. Reading, Massachusetts: Addison–Wesley.
+Rogers, Jr, Hartley (1987). Theory of Recursive Functions and Effective Computability. The MIT Press. ISBN 978-0-262-68052-3.
+Sipser, Michael (2006). Introduction to the Theory of Computation. PWS Publishing Company. ISBN 978-0-534-94728-6.
+Stone, Harold S. (1972). Introduction to Computer Organization and Data Structures (1972 izd.). McGraw-Hill, New York. ISBN 978-0-07-061726-1. Cf. in particular the first chapter titled: Algorithms, Turing Machines, and Programs. His succinct informal definition: "...any sequence of instructions that can be obeyed by a robot, is called an algorithm" (p. 4).
+Tausworthe, Robert C (1977). Standardized Development of Computer Software Part 1 Methods. Englewood Cliffs NJ: Prentice–Hall, Inc. ISBN 978-0-13-842195-3.
+
+
+== Zunanje povezave ==
+»Algorithm«. Encyclopedia of Mathematics. EMS Press. 2001 [1994].
+Algorithms at Curlie
+Weisstein, Eric Wolfgang. »Algorithm«. MathWorld.
+Dictionary of Algorithms and Data Structures

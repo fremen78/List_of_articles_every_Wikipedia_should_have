@@ -1,0 +1,412 @@
+Transformator je statična električna naprava, ki preoblikuje (pretvarja) električno energijo ene izmenične napetosti in enega izmeničnega toka v električno energijo druge izmenične napetosti in drugega izmeničnega toka iste frekvence. Je najenostavnejši električni stroj.
+
+
+== Glavni pomen, cilj transformatorja ==
+Energetski transformator potrebujemo za to, da z njim v elektrarnah dvignemo napetost U2 za npr. 20 -krat (iz 20kV na 400kV). Sočasno z dvigom napetosti (TR = DVIGOVALNIK napetosti, angl. step -up) spustimo tok na sekundarnemu I2 za 20-krat. 20x manjši tok na daljnovodu povzroča kar 400x manjše izgube pri prenosu energije po omrežju. Nazadnje imamo še transformatorje = spuščalnike napetosti ( step -down) v bližini porabnikov oz. naselij, ki morajo prilagoditi napetost porabnikom: npr. 400V/230V. Enostaven transformator ima primarno in sekundarno navitje, ki sta naviti na skupno feromagnetno jedro.
+
+
+== Poskus poimenovanja v slovenščini ==
+DVIGOVALNIK napetosti  ( step -up transformer, ang.), se običajno uporablja v elektrarnah
+ SPUŠČALNIK napetosti  (step -down transformer, angl.), se običajno uporablja na porabniški strani
+Na primarno navitje priključimo napetost, ki jo želimo transformirati.
+Primarna stran po IEC standardu je tista, v katero energija vstopa v transformator in 
+sekundarna kjer energija izstopa. 
+Ljudje velikokrat napačno mislijo, da je primar vedno višjenapetostna stran. V primeru TR v elektrarni ima primar nižjo napetost kot sekundar.
+Transformator deluje na principu indukcije, vzbujanja, ki jo povzroči samo časovno spremenljivo magnetno polje ( oz. časovno spremenljiv magnetni pretok 
+  
+    
+      
+        
+          Φ
+          
+            g
+            l
+          
+        
+      
+    
+    {\displaystyle \Phi _{gl}}
+  
+).
+Na primarno navitje priključimo izmenično napetost tako primarno navitja ustvarja spremenljivo magnetno polje katerega feromagnetno jedro še dodatno ojači na sekundarju pa se zaradi spreminjanja magnetnega polja inducira napetost katera je odvisna od števila ovojev tako imamo pri več navojev pomeni večja napetost na sekundarju. Tako imamo pri transformatorjih  prestavno razmerje .
+
+
+== Delovanje transformatorja, logični koraki ==
+Na izbrano navitje priključimo vir izmenične napetosti ( npr. omrežno napetost, 230V, 50 Hz) in s tem navitje definiramo kot primar, ker dobiva energijo
+U1 požene v bakreno navitje primarja električni tok I1, ki ima enak značaj kot napetost ( izmeničen tok s frekvenco 50 Hz)
+I1 povzroči magnetni pretok 
+  
+    
+      
+        
+          Φ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Phi _{1}}
+  
+ skozi tuljavo. Tuljave so nasajene na feromagnetnem jedru, na stebrih jedra. Vmes je še tuljavnik.
+Magnetni pretok 
+  
+    
+      
+        
+          Φ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Phi _{1}}
+  
+ teče po feromagnetnem jedru. Zato je nekaj tisočkrat večji kot če bi tekel po zraku.
+Samo izmenični magnetni pretok bo povzročil INDUKCIJO (po transformatorski enačbi poleg magnetnega pretoka na velikost Ui vplivata še frekvenca in število ovojev tuljave na kateri sa napetost inducira) oz. na vseh tuljavah, navitjih povzroči različno velike inducirane napetosti.
+Ui1 bo enako velika kot omrežna napetost le v protifazi je.
+Ui2 pa bo naš vir napetosti U2 za napajanje porabnika. Ker je to navitje tisto, ki bo dajalo energijo, se imenuje sekundar.
+Ko na sekundar priključimo porabnika ali neko drugo omrežje, U2 požene po porabniku tok I2.
+I2 povzroči 
+  
+    
+      
+        
+          Φ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \Phi _{2}}
+  
+, ki je veliko večji od  
+  
+    
+      
+        
+          Φ
+          
+            1
+          
+        
+      
+    
+    {\displaystyle \Phi _{1}}
+  
+ in v protifazi
+Da se ravnovesje tokov in magnetnih pretokov v TR ne poruši mora primar potegniti iz vira nekajkrat večji I1, da bo lahko porabnik dobil svoj I2 iz sekundarja.
+I1o je tok odprtih sponk oz. neobremenjenega TR (ko je I2=0A) in je po navadi okrog 100x manjši od nazivnega toka I1N pri obremenjenem TR
+
+
+== Zakoni ==
+TRANSFORMATORSKA enačba (velja za napetost sinusne oblike) pove, kdo povzroča inducirano napetost oz. kdo vpliva na njeno velikost:
+
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+        =
+        4
+        ,
+        44
+        ⋅
+        
+          N
+          
+            1
+          
+        
+        ⋅
+        f
+        ⋅
+        
+          ϕ
+          
+            g
+            l
+          
+        
+      
+    
+    {\displaystyle E_{1}=4,44\cdot N_{1}\cdot f\cdot \phi _{gl}}
+  
+ , kjer je zadnji člen fi glavno.
+
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+      
+    
+    {\displaystyle E_{1}}
+  
+ pomeni efektivno vrednost (kvadratno srednjo vrednost) napetosti, 
+  
+    
+      
+        
+          ϕ
+          
+            g
+            l
+          
+        
+      
+    
+    {\displaystyle \phi _{gl}}
+  
+  pa temensko (maksimalno) vrednost magnetnega pretoka.
+
+Iz nje izpeljemo 1. in 2. zakon transformacije. 
+Pri drugem zakonu izhajamo še iz formule za moč transformatorja, kjer ne upoštevamo različnih faktrojev delavnosti in zanemarimo izgube transformatorja.
+Poznamo prvi zakon transformacije, ki nam predstavlja kvocient induciranih napetosti (velja za enofazni transformator):
+
+  
+    
+      
+        
+          
+            
+              E
+              
+                1
+              
+            
+            
+              E
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                1
+              
+            
+            
+              N
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {E_{1}}{E_{2}}}={\frac {N_{1}}{N_{2}}}}
+  
+
+ker se zaradi pritisnjene napetostu 
+  
+    
+      
+        
+          U
+          
+            1
+          
+        
+      
+    
+    {\displaystyle U_{1}}
+  
+ inducirata
+
+  
+    
+      
+        
+          E
+          
+            1
+          
+        
+        =
+        4
+        ,
+        44
+        ⋅
+        
+          N
+          
+            1
+          
+        
+        ⋅
+        f
+        ⋅
+        
+          ϕ
+          
+            g
+            l
+          
+        
+      
+    
+    {\displaystyle E_{1}=4,44\cdot N_{1}\cdot f\cdot \phi _{gl}}
+  
+ napetost na primarju in
+
+  
+    
+      
+        
+          E
+          
+            2
+          
+        
+        =
+        4
+        ,
+        44
+        ⋅
+        
+          N
+          
+            2
+          
+        
+        ⋅
+        f
+        ⋅
+        
+          ϕ
+          
+            g
+            l
+          
+        
+      
+    
+    {\displaystyle E_{2}=4,44\cdot N_{2}\cdot f\cdot \phi _{gl}}
+  
+ napetost na sekundarju.
+
+  
+    
+      
+        
+          N
+          
+            1
+          
+        
+      
+    
+    {\displaystyle N_{1}}
+  
+ je število ovojev tuljave (navitja) na primarni strani,
+
+  
+    
+      
+        
+          N
+          
+            2
+          
+        
+      
+    
+    {\displaystyle N_{2}}
+  
+ je število ovojev tuljave (navitja) na sekundarni strani,
+
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ je frekvenca pritisnjene napetosti U1, pri frekvenci 0 Hz ni indukcije!!
+
+  
+    
+      
+        
+          Φ
+          
+            g
+            l
+          
+        
+      
+    
+    {\displaystyle \Phi _{gl}}
+  
+ je glavni magnetni pretok po feromagnetnem jedru.
+Z obremenitvijo transformatorja dobimo drugi zakon transformacije, ki je kvocient tokov (velja za enofazni transformator):
+
+  
+    
+      
+        
+          
+            
+              I
+              
+                1
+              
+            
+            
+              I
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                2
+              
+            
+            
+              N
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {I_{1}}{I_{2}}}={\frac {N_{2}}{N_{1}}}}
+  
+
+
+=== Primer ===
+
+Če imamo na primarju 100 ovojev na sekundarju pa 200 in priključimo primarno navitje na 10 V, bomo na sekundarju dobili 20 V. Če pa priključimo na sekundar 10 V izmenične napetosti, pa bomo na primarju dobili 5 V izmenične napetosti. 
+Tako lahko s transformatorjem spreminjamo napetost. To je zlasti prikladno pri prenosih energije na večje razdalje, kajti z večanjem napetosti lahko enako količino energije prenesemo pri manjših tokovih. Veliki tokovi imajo za posledico velike premere vodnikov.
+Transformatorji imajo relativno velike izkoristke, ki se pri večjih transformatorjih gibljejo nad 90 %.
+
+
+== Zunanje povezave ==

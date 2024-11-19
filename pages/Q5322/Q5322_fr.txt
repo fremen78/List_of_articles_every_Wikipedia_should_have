@@ -1,0 +1,1394 @@
+Un condensateur est un composant électronique élémentaire, constitué de deux armatures conductrices (appelées « électrodes ») en influence totale et séparées par un isolant polarisable (ou « diélectrique »). Sa propriété principale est de pouvoir stocker des charges électriques opposées sur ses armatures. La valeur absolue de ces charges est proportionnelle à la valeur absolue de la tension qui lui est appliquée.
+Les condensateurs sont principalement utilisés pour :
+
+stabiliser une alimentation électrique (il se décharge lors des chutes de tension et se charge lors des pics de tension) ;
+traiter des signaux périodiques (filtrage par exemple) ;
+séparer le courant alternatif du courant continu, ce dernier étant bloqué par le condensateur ;
+stocker de l'énergie, auquel cas on parle de supercondensateur.
+
+
+== Définition ==
+Le condensateur est caractérisé par le coefficient de proportionnalité entre charge et tension, appelé capacité électrique (ou simplement capacité) et exprimé en farads (F). La relation caractéristique d'un condensateur idéal est :
+
+  
+    
+      
+        i
+        =
+        C
+        
+        
+          
+            
+              
+                d
+              
+              u
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle i=C\,{\frac {\mathrm {d} u}{\mathrm {d} t}}}
+  
+
+où :
+
+i désigne l'intensité du courant électrique qui passe par le composant, exprimée en ampères (symbole : A) ;
+u la tension aux bornes du composant, exprimée en volts (V) ;
+C la capacité électrique du condensateur, exprimée en farads (F) ;
+
+  
+    
+      
+        
+          d
+        
+        u
+        
+          /
+        
+        
+          d
+        
+        t
+      
+    
+    {\displaystyle \mathrm {d} u/\mathrm {d} t}
+  
+ la dérivée de la tension par rapport au temps (V/s).
+Les signes sont tels que l'électrode par laquelle entre le courant (dans le sens conventionnel du courant : + vers -) voit son potentiel augmenter.
+
+
+== Loi de comportement du condensateur ==
+On définit la capacité par la relation :
+
+  
+    
+      
+        Q
+        =
+        C
+        
+        U
+      
+    
+    {\displaystyle Q=C\;U}
+  
+
+où :
+
+Q est la charge stockée sur sa borne positive (qui s'exprime en coulombs),
+C la capacité électrique du condensateur (farads),
+U la tension aux bornes du composant (volts).
+
+
+=== Expression algébrique de la loi de comportement du condensateur ===
+
+  
+    
+      
+        
+          Q
+          
+            1
+          
+        
+        =
+        C
+        
+        (
+        
+          V
+          
+            1
+          
+        
+        −
+        
+          V
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle Q_{1}=C\,(V_{1}-V_{2})}
+  
+
+où :
+
+les indices 1 et 2 repèrent chacune des deux bornes,
+
+  
+    
+      
+        
+          Q
+          
+            k
+          
+        
+      
+    
+    {\displaystyle Q_{k}}
+  
+ désigne la charge de la borne no k (k = 1 ou 2),
+et 
+  
+    
+      
+        
+          V
+          
+            k
+          
+        
+      
+    
+    {\displaystyle V_{k}}
+  
+ son potentiel électrique.
+La borne au potentiel le plus élevé (borne positive) est donc chargée positivement.
+La charge « totale » d'un condensateur 
+  
+    
+      
+        
+        
+          Q
+          
+            
+              t
+            
+          
+        
+        =
+        
+          Q
+          
+            1
+          
+        
+        +
+        
+          Q
+          
+            2
+          
+        
+        
+      
+    
+    {\displaystyle \,Q_{\mathrm {t} }=Q_{1}+Q_{2}\,}
+  
+ est donc nulle. Procédant par influence électrostatique, le courant « pénétrant » par une borne ressort à l'identique par l'autre borne, bien que les armatures soient séparées par un isolant.
+Si l'on oriente la branche de circuit contenant le condensateur dans le sens : borne 1 → borne 2, fixant ainsi le sens positif du courant i, on définit alors algébriquement la tension u dans le sens opposé (« convention récepteur ») :
+
+  
+    
+      
+        u
+        =
+        
+          V
+          
+            1
+          
+        
+        −
+        
+          V
+          
+            2
+          
+        
+      
+    
+    {\displaystyle u=V_{1}-V_{2}}
+  
+.
+Il devient alors possible de définir algébriquement une relation entre le courant circulant dans la branche et la dérivée temporelle de la tension :
+
+  
+    
+      
+        i
+        =
+        
+          
+            
+              
+                d
+              
+              
+                Q
+                
+                  1
+                
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        C
+        
+        
+          
+            
+              
+                d
+              
+              u
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle i={\frac {\mathrm {d} Q_{1}}{\mathrm {d} t}}=C\,{\frac {\mathrm {d} u}{\mathrm {d} t}}}
+  
+.
+Lorsque l'on connecte un condensateur à un générateur de tension continue à l'aide d'un circuit ayant une résistance R, la valeur de la tension aux bornes du condensateur en régime transitoire est définie en fonction du temps pour un système du premier ordre par la relation suivante :
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        
+          u
+          
+            ∞
+          
+        
+        +
+        (
+        
+          u
+          
+            0
+          
+        
+        −
+        
+          u
+          
+            ∞
+          
+        
+        )
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                t
+                τ
+              
+            
+          
+        
+      
+    
+    {\displaystyle u(t)=u_{\infty }+(u_{0}-u_{\infty })\,\mathrm {e} ^{-{\frac {t}{\tau }}}}
+  
+
+où :
+
+  
+    
+      
+        
+          u
+          
+            0
+          
+        
+      
+    
+    {\displaystyle u_{0}}
+  
+ désigne la tension initiale,
+
+  
+    
+      
+        
+          u
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle u_{\infty }}
+  
+ la tension en régime permanent,
+et 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+ la constante de temps, égale à :
+
+  
+    
+      
+        τ
+        =
+        R
+        
+        C
+      
+    
+    {\displaystyle \tau =R\;C}
+  
+
+Si la résistance du circuit est très faible, l'intensité du courant peut prendre une valeur instantanée très élevée.
+
+
+== Composant électrique ou électronique ==
+
+Un condensateur est un composant électronique élémentaire, constitué de deux armatures conductrices (également appelées « électrodes ») en influence totale et séparées par un isolant polarisable (ou « diélectrique »). Sa propriété principale est de pouvoir stocker des charges électriques opposées sur ses armatures. La valeur absolue de ces charges est, en première approximation, proportionnelle à la valeur absolue de la tension qui lui est appliquée.
+En octobre 1745, le physicien Ewald Georg von Kleist de Poméranie en Allemagne, invente le premier condensateur. Peu de temps après en janvier 1746, le physicien hollandais Pieter van Musschenbroek le découvre aussi de façon indépendante. Il l'appelle bouteille de Leyde car Musschenbroek travaillait alors à l'université de Leyde.
+
+Un condensateur est constitué fondamentalement de deux armatures conductrices appelées « électrodes », très proches l'une de l'autre, séparées par un isolant appelé « diélectrique ».
+La charge électrique emmagasinée par le condensateur est proportionnelle à la tension appliquée entre ses deux armatures. Aussi, un tel composant est-il principalement caractérisé par sa capacité, rapport entre sa charge et la tension.
+La capacité 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ d’un condensateur se détermine essentiellement en fonction de la géométrie des armatures et de la nature du ou des isolants ; la formule simplifiée suivante, davantage adaptée à un condensateur plan, est souvent utilisée pour estimer sa valeur :
+
+  
+    
+      
+        C
+        =
+        ε
+        
+        
+          
+            S
+            e
+          
+        
+      
+    
+    {\displaystyle C=\varepsilon \,{\frac {S}{e}}}
+  
+
+où :
+
+S désigne la surface des armatures en regard (qui s'exprime en mètres carrés, m2),
+e la distance entre les armatures (mètres, m),
+et ε la permittivité du diélectrique (farads par mètre, F/m).
+L'unité de base de capacité électrique, le farad représente une capacité très élevée, rarement atteinte (à l'exception des supercondensateurs) ; ainsi, de très petits condensateurs peuvent avoir des capacités de l'ordre du picofarad (pF).
+Une des caractéristiques des condensateurs est leur tension de service maximale, qui dépend de la nature et de l'épaisseur de l'isolant entrant dans leur constitution. Cet isolant présente une certaine rigidité diélectrique, c'est-à-dire une tension au-delà de laquelle il peut apparaître un violent courant de claquage qui entraîne une destruction du composant (sauf pour certains d'entre eux, dont l'isolant est dit auto-cicatrisant).
+La recherche de la plus forte capacité pour les plus faibles volume et coût de fabrication conduit à réduire autant que possible l'épaisseur d'isolant entre les deux armatures ; comme la tension de claquage diminue également dans la même proportion, il y a souvent avantage à retenir les meilleurs isolants.
+
+où 
+  
+    
+      
+        
+          ε
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \varepsilon _{0}}
+  
+ représente la permittivité électrique du vide (8,85 × 10−12 F m−1) et 
+  
+    
+      
+        
+          ε
+          
+            
+              r
+            
+          
+        
+      
+    
+    {\displaystyle \varepsilon _{\mathrm {r} }}
+  
+ la permittivité relative de l'isolant.
+
+
+=== Différentes catégories ===
+
+De nombreuses techniques, souvent issues de la chimie, ont permis d'améliorer sensiblement les performances des condensateurs, que l'on relie à la qualité du diélectrique employé. C'est donc la nature du diélectrique qui permet de classer les condensateurs :
+
+les condensateurs non polarisés, de faible valeur (quelques nano- ou microfarads) sont essentiellement de technologie « Mylar » ou « céramique » ;
+les condensateurs dits polarisés sont sensibles à la polarité de la tension électrique qui leur est appliquée : ils ont une borne négative et une positive. Ce sont les condensateurs de technique « électrolytique » (également appelée, par abus de langage, « chimique ») et « tantale ». Une erreur de branchement ou une inversion accidentelle de la tension conduit généralement à leur destruction, qui peut être très brutale, voire explosive ;
+les supercondensateurs ont une énorme capacité mais une faible tenue en tension (quelques volts). Ils ont été développés à la suite des recherches effectuées pour améliorer les accumulateurs. La capacité qui peut dépasser la centaine de farads est obtenue grâce à l'immense surface développée d'électrodes sur support de charbon actif ;
+les condensateurs à capacité variable, employés par exemple pour la réalisation des filtres RLC réglables.
+Quand les plaques sont rapprochées, la capacité augmente rapidement, de même que le gradient de tension (c'est-à-dire le champ électrostatique). Par exemple, le champ dans un condensateur soumis à seulement 5 volts et dont les plaques sont distantes de 5 micromètres est de 1 million de volts par mètre. L'isolant joue donc un rôle capital. L'isolant idéal aurait une résistance infinie et une transparence totale au champ, n'aurait aucun point d'éclair (gradient de champ où apparaît un arc), n'aurait aucune inductance (qui limite la réaction aux hautes fréquences : un condensateur idéal laisserait passer la lumière par exemple), etc. Un isolant doit donc être choisi selon le but recherché, c’est-à-dire l'usage voulant être fait du condensateur.
+
+
+==== Condensateurs électrolytiques ====
+
+
+===== Utilisation =====
+Les condensateurs électrolytiques sont utilisés :
+
+quand une grande capacité de stockage est nécessaire ;
+lorsqu'un condensateur parfait n'est pas nécessaire :
+grande résistance en série,
+mauvaise réponse aux hautes fréquences,
+grande tolérance.
+
+
+===== Fabrication =====
+Contrairement à tout autre condensateur, lorsqu'on les fabrique, on ne met pas d'isolant entre les deux conducteurs. D'ailleurs, un électrolytique neuf conduit le courant continu. En fait, un des conducteurs est métallique, l'autre est une gelée conductrice : le conducteur métallique est simplement inséré dans la gelée. Lorsqu'on applique une tension pour la première fois, une réaction chimique (appelée électrolyse, d'où le nom) a lieu, ce qui crée une interface isolante à la surface du métal. Évidemment, sitôt formée, cette couche empêche le courant de passer et donc sa propre formation. Il en résulte une couche isolante très mince (quelques molécules d'épaisseur) d'où la très grande capacité des condensateurs électrolytiques en fonction de leur volume. D'où aussi leur tension maximale limitée (quelques centaines de volts).
+Cependant, la gelée n'est pas aussi bonne conductrice qu'un métal : un condensateur électrolytique a donc une résistance série non négligeable qui crée un « zéro » au sens des fonctions de transfert (filtre passe-bas) avec la capacité. De plus, un courant alternatif passant dans la gelée déforme les orbitales des électrons des couches de valence qui lient la gelée, créant une petite vibration mécanique dans la gelée, d'où :
+
+un effet d'inertie (inductance) important ;
+une mauvaise réponse aux hautes fréquences.
+À l'origine, ces condensateurs n'étaient pas conçus pour servir à des fins de découplage ou de filtrage de signaux.
+Ils sont principalement utilisés dans la partie filtrage des circuits d'alimentation.
+
+
+===== Condensateurs au tantale =====
+Il existe deux techniques de condensateurs au tantale :
+Les condensateurs au tantale à électrolyte solide : ce sont des condensateurs où la première électrode est le tantale, et la seconde du dioxyde de manganèse MnO2.
+Le contact avec le dioxyde de manganèse est assuré par une couche de métallisation à base d'argent.
+Cette technologie apporte les avantages suivants :
+
+résistance série (ESR) réduite ;
+faibles inductances série ;
+faibles résonances ;
+pas de dégradation dans le temps, en stockage ou en utilisation ;
+coût faible.
+Les condensateurs au tantale à électrolyte liquide (WET Tantalum) :
+ce sont des condensateurs où la première électrode est le tantale, et la seconde un gel conducteur.
+
+plus de résistance série (ESR) que les modèles « solides » ;
+faibles inductances série ;
+faibles résonances ;
+capacité d'auto-cicatrisation élevée, d'où une grande fiabilité ;
+coût plus élevé.
+En effet, l'électrolyte liquide est capable d'oxyder le tantale en cas de défaut dans la couche d'oxyde, cette régénération en fait des condensateurs de grande fiabilité, ils sont souvent choisis pour des applications où la fiabilité est un critère déterminant ; exemple : utilisation dans un satellite. Par contre, cette possibilité signifie qu'un courant de fuite plus élevé est possible, à prendre en compte dans la conception.
+Les condensateurs à électrolyte liquide sont plus coûteux, en raison des matériaux utilisés : argent ou encore tantale massif pour le boîtier (à cause de l'électrolyte acide), ainsi que des procédés de fabrication plus complexes (assemblage étanche), ils sont de fait réservés à des applications « haut de gamme ».
+Les condensateurs au tantale solide présentent une résistance série extrêmement faible, ce qui en fait un composant préférentiel pour les découplages d'alimentation sur les cartes.
+Les condensateurs au tantale ont toutefois un défaut : ils présentent une légère non-linéarité, c'est pourquoi ces condensateurs sont déconseillés pour la transmission de signaux (création d'harmoniques paires) sauf lorsqu'ils sont associés à d'autres condensateurs non électrolytiques pour former un condensateur composite.
+Les condensateurs au tantale solide ont également un autre défaut : le tantale risque de prendre feu en cas de dépassement du courant ou en cas de défaillance. C'est pourquoi ils sont peu utilisés dans des applications où cela présente un danger pour l'utilisateur (automobile par exemple).
+
+
+===== Modélisation =====
+Un condensateur électrolytique se modélise de façon plus ou moins réaliste.
+
+En première approximation, on décrit les caractéristiques essentielles du composant :
+la valeur de la capacité ;
+la résistance série ;
+l'inductance série ;
+la résistance parallèle ;
+En faisant une modélisation plus sophistiquée, on accède à des caractéristiques plus fines :
+l'hystérésis de charge ;
+l'effet de batterie ;
+autres (influence de la température, le vieillissement des matériaux, etc.).
+L'hystérésis de charge est un effet qui fait que, en dessous d'une tension seuil (faible), la gelée ne laisse pas passer de courant (par exemple, un gros condensateur électrolytique de 1 farad soumis à une tension de 5 microvolts n'accumulera pas une charge de 5 microcoulombs). Il en résulte donc que les faibles signaux alternatifs en ressortent avec une distorsion qui ressemble à celle d'un amplificateur classe B pure, quoique beaucoup moindre.
+L'effet de batterie, moins négligeable, est dû à l'existence d'une réaction d'électrolyse et une d'électrosynthèse parasites qui ont lieu en présence d'un signal alternatif ou d'une tension continue. Cette charge et décharge de batterie est à ne pas confondre avec une charge et décharge de condensateur, car sa constante de temps est beaucoup plus grande. Pour l'observer, on peut charger un condensateur électrolytique, le laisser charger quelques minutes (ce qui provoque le phénomène) puis le décharger brusquement en le court-circuitant pendant un court moment. Au moyen d'un voltmètre, on observera alors aux bornes la réapparition d'une tension : c'est la charge de batterie.
+Un autre effet de cette technologie est que la couche isolante n'a pas toujours la même épaisseur, même pour un même modèle. L'épaisseur dépend de plusieurs facteurs : la température, les micro-aspérités microscopiques du métal, les vibrations, l'humidité lors de la fabrication, l'âge du condensateur, l'usage auquel il a été soumis, etc. C'est pourquoi la capacité des électrolytiques est toujours présentée avec une grande tolérance (typiquement –20 % à +100 % pour les gros), ce qui en fait des mauvais candidats pour faire des filtres précis ou des bases de temps.
+
+
+==== Condensateurs à isolant ====
+Ils sont fabriqués selon la définition classique du condensateur : deux conducteurs métalliques séparés d'un isolant. Comme toujours, l'isolant, choisi en fonction de l'usage qu'on veut en faire, déterminera la nature du condensateur.
+
+
+===== Air =====
+
+Cette catégorie comprend les condensateurs variables/ajustables et certaines capacités de faible valeur réalisées à l'aide du circuit imprimé lui-même. Ses caractéristiques d'isolation sont relativement faibles et sensibles à l'humidité ambiante.
+
+Exemple
+Condensateur ajustable à air (utilisés dans les postes récepteurs de radio pour le choix des stations).
+Description
+Ils sont constitués d'armatures mobiles l'une par rapport à l'autre ; les surfaces en regard déterminent la valeur du condensateur.
+
+
+===== Céramique =====
+La céramique présente :
+
+les avantages d'une inductance extrêmement faible et d'une très grande résistance parallèle, c'est pourquoi les condensateurs à isolant céramique sont largement utilisés :
+dans les applications haute fréquence (jusqu'à des centaines de gigahertz),
+dans les applications haute tension (circuits à valves (tubes) par exemple),
+pour les composants de surface, car ils se prêtent bien à une miniaturisation ;
+les inconvénients :
+d'être mécaniquement fragile,
+d'être extrêmement sensible à la chaleur : le simple fait de le toucher fait varier sa capacité,
+d'avoir un champ d'éclair pas très élevé. Ils nécessitent une certaine distance entre les plaques et se prêtent donc mal aux grandes capacités (ce qui n'a pas d'importance dans les hautes fréquences),
+d'avoir une légère hystérésis de charge et de générer un tout petit peu de bruit lorsque le dV/dt (courant donc) est élevé (grande amplitude de signal ou très haute fréquence). Ce bruit étant un bruit blanc, il a peu d'effet sur les circuits haute fréquence, ceux-ci étant généralement accordés (syntonisés) sur une bande étroite.
+Plusieurs classes de céramiques sont définies selon leur tenue en température :
+
+les céramiques C0G (NP0) présentent une grande stabilité et sont utilisées pour les applications de haute fréquence, et chaque fois que l'on exige une bonne stabilité en température. Malheureusement, ces céramiques ne présentent pas une très grande constante diélectrique, ce qui limite la valeur de la capacité : 200 nanofarads au maximum, pour les composants de surface ;
+les céramiques X7R, de stabilité moindre : environ 10 % de variation entre −10 °C et +60 °C. On réserve ces céramiques aux applications n'exigeant pas une haute stabilité. La constante diélectrique est plus élevée, ce qui permet d'atteindre en standard CMS des capacités de quelques dizaines de microfarads ;
+effet piézoélectrique avec X5R ou X7R, le condensateur fait office de microphone. Il faut préférer le type C0G pour les applications audio ;
+les céramiques Y4T et Z5U, ont des dérives en température de l'ordre de 50 % dans les gammes citées plus haut, et sont donc réservées aux fonctions de découplage. Par contre on peut obtenir des capacités jusqu'à 200 microfarads en composants de surface ;
+les céramiques particulières pour les hyperfréquences, de très haute stabilité et de très faible facteur de perte. Ces céramiques ont un coût nettement supérieur, mais sont indispensables pour certaines applications.
+
+
+====== Détail des classe 2 et 3 ======
+1re lettre du code : température minimale de travail
+X -55 °C
+Y -30 °C
+Z +10 °C
+2e chiffre du code : température maximale de travail
+4 +65 °C
+5 +85 °C
+6 +105 °C
+7 +125 °C
+8 +150 °C
+9 +200 °C
+3e lettre du code : variation de la tolérance en fonction de la température
+P +/-10 %
+R +/-15 %
+L +/-15 % (+15 %/-40 % au delà de 125 °C)
+S +/-22 %
+
+
+===== Mica =====
+Ces condensateurs, généralement de faible valeur, sont utilisés en haute fréquences et en moyenne et haute tension. Ils ont une bonne stabilité (étalon de mesure par exemple), mais ils coûtent environ deux fois plus cher qu'un condensateur céramique de tension et capacité égale par exemple.
+
+
+===== Condensateurs film à base de matériaux synthétiques =====
+Les condensateurs à isolant plastique (polyéthylène, polystyrène et polypropylène sont les plus courants) ont été conçus spécifiquement pour fins de découplage de signaux et d'utilisation dans des filtres. Leur hystérésis de charge est très faible (nul pour le polypropylène) et, de ce fait, ils sont précieux pour le traitement de très faibles signaux (radiotélescopes, communications spatiales, etc., et audio de référence). Le polystyrène et le polypropylène n'ont pas d'effet de batterie (le polyéthylène en a un très faible).
+
+
+====== Construction ======
+Deux méthodes sont utilisées : soit par l'utilisation de feuilles conductrices et isolantes (film/foil construction), soit par dépôt d'aluminium sur le diélectrique (metallized film capacitor). La deuxième méthode diminue le coût, le volume, le poids des condensateurs, mais diminue également le courant admissible.
+
+Polyester
+Le polyester est principalement utilisé sous deux de ses formes : le polytéréphtalate d'éthylène (PET) et le polynaphtalate d'éthylène (PEN).
+L'avantage du polyéthylène est qu'il peut être étiré (ou laminé) très mince et peut donc permettre des capacités appréciables dans un petit volume (pas comparables aux électrolytiques, cependant). Il est facile à fabriquer et à former, ces condensateurs sont donc peu coûteux. Les condensateurs à polyéthylène sont très employés dans les circuits audio de moyenne à bonne qualité et dans des circuits demandant une faible variation de capacité avec l'âge et l'humidité.
+
+Polystyrène
+Le polystyrène n'est pas aussi facile à fabriquer avec précision que le polyéthylène. Il n'est pas coûteux en soi (des emballages sont faits de polystyrène) mais difficile à laminer précisément en couches minces. Pour cette raison, les condensateurs en polystyrène sont relativement encombrants pour une capacité donnée (un 0,01 µF étant aussi volumineux qu'un électrolytique de 200 µF). Ils sont aussi nettement plus coûteux que les polyéthylènes.
+Le grand avantage des condensateurs en polystyrène est leur qualité. Ils sont très stables. Pour cette raison, ils sont employés là où la précision est requise : circuits syntonisés à bande étroite, bases de temps… Leur bruit est pratiquement indécelable et très proche de la limite théorique (limite de Johnson). Ils sont très peu sensibles à la température et à l'âge et, pour autant qu'on reste en deçà des limites de courant et tension du manufacturier, insensibles à l'usage. Leur inductance parasite dépend du montage : certains sont faits de deux feuilles de métal et deux feuilles de polystyrène enroulées en spirale : ceux-là présentent une bonne précision de la capacité au prix d'une certaine inductance parasite (faible). D'autres sont faits de plaques moulées dans un bloc de polystyrène : ils sont moins précis pour la capacitance (ce qui n'est pas un problème pour les circuits de précision qui ont toujours un élément ajustable) mais ont une inductance parasite extrêmement faible.
+
+Polypropylène
+Les condensateurs polypropylène (PP) sont très utilisés en audio et dans les applications impulsionnelles (alimentations à découpage, circuits d'aide à la commutation, etc.) car ils sont caractérisés par une résistance série très faible et admettent donc des courants efficaces importants. Ils sont aussi moins chers que les condensateurs au polystyrène (le polypropylène est très connu des manufacturiers de plastique : beaucoup de jouets, de meubles, boîtiers divers, pièces automobiles, téléphones portables et autres accessoires, même les sacs d'épicerie, sont faits de polypropylène). Ils sont aussi stables que le polystyrène. Ils sont moins précis en valeur nominale que les condensateurs au polystyrène (ils ne sont pas utilisés dans les circuits de référence comme les bases de temps précises). Ils sont aussi assez volumineux pour leur capacité, le polypropylène se prêtant mal, lui aussi, à un laminage très fin.
+
+
+====== Autres matériaux synthétiques ======
+On trouve également du polysulfure de phénylène (PPS), polycarbonate (PC) (condensateurs de précision), polyimide (PI), Téflon (polytétrafluoroéthylène PTFE).
+
+Papier
+Les condensateurs à film papier ont été utilisés dans les anciens récepteurs radio. Ils ont été abandonnés du fait de leur mauvais vieillissement, entraînant un important courant de fuite. ils peuvent être trouvés chez des luthiers, les guitaristes adeptes d'un son vintage les utilisant parfois sur les guitares électriques.
+Verre
+Les condensateurs multicouches avec un diélectrique en verre sont utilisés pour leur stabilité en température et leur durée de vie.
+
+
+=== Séries de valeurs normales ===
+La liste des valeurs disponibles est définie par la norme CEI 60063.
+
+
+==== Tension de claquage ====
+Lorsqu’on maintient une tension u entre les bornes d’un condensateur un champ électrique Е s’établit entre ses armatures.
+Chaque diélectrique est caractérisé par le champ électrique maximal qu’il peut supporter. Ce champ, appelé champ disruptif constitue la limite au-delà de laquelle une étincelle jaillit entre les deux armatures provoquant la décharge du condensateur accompagné généralement de sa détérioration : c’est le claquage du condensateur.
+
+
+=== Marquage ===
+
+La valeur des condensateurs électroniques est marquée sur leurs boîtiers sous quatre formes principales. Elle est en clair sur les condensateurs de grosseur suffisante pour accueillir l'inscription (exemple : 10 µF). Le caractère µ est parfois transformé en la lettre u comme dans 10 uF. Le fabricant peut utiliser le code de couleurs CEI 60757 relativement peu employé sauf sur certains condensateurs en boîtier plastique. Le plus souvent sur les condensateurs de taille modeste et de précision normale, la valeur est notée en picofarads (pF) dans le format XXY où XX correspond aux deux premiers chiffres de la valeur et Y à la valeur de l'exposant de dix en notation scientifique. Une lettre peut suivre pour indiquer la tolérance (J pour ±5 %, K pour ±10 % ou M pour ±20 %).
+Par exemple la signification des marquages suivants est :
+
+474 signifie 47 × 104 pF (47 × 104 x 1 × 10−12 F = 47 × 10−8 F), soit 470 nF ;
+101 signifie 100 pF ;
+220 signifie 22 pF ;
+684 signifie 680 000 pF soit 680 nF ou 0,68 µF.
+La dernière manière de marquer la valeur capacitive sur les condensateurs ressemble à la première, elle est en « clair » pour autant que l'on sache que l'unité de lecture est le microfarad [µF]. S'il est marqué :
+
+4,7 cela signifie 4,7 µF ;
+68 correspond à 68 µF ;
+0,022 correspond à 22 nF.
+En d'autres termes, si la valeur marquée est décimale ou d'un nombre à deux chiffres, la valeur se lit en microfarads.
+
+
+=== Test d'un condensateur ===
+Un multimètre en mode ohmmètre peut être utilisé pour vérifier si un condensateur est défectueux ou non mais permet aussi d’estimer la valeur de sa capacité si cette dernière est à minima de l’ordre du microfarad.
+Le principe de base est le suivant : on utilise un multimètre numérique en ohmmètre qui a la propriété de délivrer un courant constant (il se comporte comme un générateur de courant) pour charger le condensateur à tester. Ensuite les relations valables lors d’une charge à courant constant : q(t) = I  dt  = C  duc(t) permettent d’évaluer la valeur de C grâce à la mesure du temps nécessaire pour atteindre la valeur limite de l’ohmmètre.
+
+
+==== câblage et mesures ====
+On retire le condensateur à tester du dispositif, il ne doit être relié à aucun autre circuit ou composant.
+On le décharge complètement en le connectant à une résistance ou en le court-circuitant.
+On sélectionne un calibre, ce qui nécessite de connaitre le multimètre utilisé et de tenir compte de l’ordre de grandeur de la capacité à mesurer.
+La majorité des appareils délivrent un courant qui provoque une chute de tension de 2 V au calibre maximum. Par exemple sur le calibre 2 MΩ, le courant délivré vaut 1 µA. Si l’on dispose d’un deuxième multimètre, on pourra mesurer avec exactitude la valeur constante de l’intensité délivrée par l’appareil lorsqu’il est réglé sur ce calibre.
+À noter qu’un courant de cette intensité permet de charger un condensateur de 1 µF sous une tension de 2 V en 2 secondes, c’est pourquoi il est illusoire de mesurer une capacité inférieure à cette valeur. Cependant la quasi-totalité des condensateurs utilisés dans le petit électroménager ont des valeurs de capacité supérieures au µF.
+
+La relation suivante permet d’évaluer la valeur de la capacité d’un condensateur en bon état :
+
+  
+    
+      
+        Δ
+        t
+        ⋅
+        
+          
+            
+              I
+              
+                o
+                h
+                m
+              
+            
+            
+              U
+              
+                m
+                a
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Delta t\cdot {\frac {I_{ohm}}{U_{max}}}}
+  
+  avec :
+
+  
+    
+      
+        
+          I
+          
+            o
+            h
+            m
+          
+        
+      
+    
+    {\displaystyle I_{ohm}}
+  
+ valeur de l’intensité délivrée par le multimètre.
+
+  
+    
+      
+        
+          U
+          
+            m
+            a
+            x
+          
+        
+      
+    
+    {\displaystyle U_{max}}
+  
+ valeur de la tension correspondant au calibre maximal.
+Ces deux valeurs peuvent être mesurées par un autre multimètre.
+
+Δt : durée nécessaire pour atteindre le calibre maximal (la valeur affichée est alors souvent OL)
+Si le condensateur n’est pas polarisé, peut importe ensuite le sens du câblage.
+S’il est polarisé (condensateur électrochimique) on prendra garde à connecter la borne négative du condensateur sur la masse du multimètre (la borne "com").
+
+
+==== Analyse des résultats ====
+Si le condensateur est en bon état, les valeurs qui apparaissent sur l'écran partent de quasiment zéro, et augmentent de manière régulière jusqu’à la limite du calibre.
+La valeur initiale n’est jamais nulle car le temps de la mesure, de l’ordre de quelques centaines de ms, suffit à charger un peu le condensateur.
+
+Si la valeur reste faible et constante, le condensateur est en court-circuit, il est hors d’usage.
+Si la valeur est d’emblée très élevée, le condensateur est un circuit ouvert (suite à un claquage par exemple ou une connexion défectueuse) il est également hors d’usage. Attention toutefois à s’assurer de ne pas avoir choisi un courant d’intensité trop élevé (donc un faible calibre de l’ohmmètre) qui chargerait de manière quasi instantanée un condensateur de faible capacité.
+
+Enfin, on peut évaluer les éventuels courants de fuite de cette manière ; lorsque le multimètre indique une valeur proche de la mi calibre (par exemple 100 kΩ sur le calibre 200 kΩ), on débranche le condensateur, on attend plusieurs secondes, puis on reconnecte le multimètre. Si l’affichage indique quasiment la même valeur que celle qui était affichée au moment où l’on a débranché, cela signifie que la charge du condensateur est restée la même et qu’il n’y a pas de courant de fuite significatif.
+
+
+== Calcul des circuits comportant un ou des condensateur(s) ==
+L'intensité qui circule dans la branche où est présent un condensateur, ne dépend pas directement de la tension aux bornes de ce condensateur, mais de la variation de cette tension. Ainsi, on écrit généralement l'équation (en convention récepteur, 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ étant la charge de l'armature sur laquelle arrive 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+) :
+
+  
+    
+      
+        i
+        =
+        
+          
+            
+              
+                d
+              
+              q
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        
+      
+    
+    {\displaystyle i={\frac {\mathrm {d} q}{\mathrm {d} t}}\,}
+  
+
+avec :
+
+q : la charge de l'armature en coulombs,
+t : le temps en secondes.
+
+  
+    
+      
+        q
+        =
+        C
+        ⋅
+        u
+        
+      
+    
+    {\displaystyle q=C\cdot u\,}
+  
+
+  
+    
+      
+        i
+        =
+        C
+        ⋅
+        
+          
+            
+              
+                d
+              
+              u
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        
+      
+    
+    {\displaystyle i=C\cdot {\frac {\mathrm {d} u}{\mathrm {d} t}}\,}
+  
+
+avec :
+
+C : la capacité du condensateur en farads.
+On peut ainsi en déduire l'impédance du condensateur alimenté par une tension fonction périodique du temps :
+
+  
+    
+      
+        Z
+        =
+        
+          
+            U
+            I
+          
+        
+        =
+        
+          
+            1
+            
+              C
+              ω
+            
+          
+        
+        
+      
+    
+    {\displaystyle Z={U \over I}={1 \over C\omega }\,}
+  
+
+où U et I sont les valeurs efficaces de la tension et de l'intensité.
+La transformation complexe appliquée à la tension et à l'intensité permet de déterminer l'impédance complexe :
+
+  
+    
+      
+        
+          
+            Z
+            _
+          
+        
+        =
+        
+          
+            
+              U
+              _
+            
+            
+              I
+              _
+            
+          
+        
+        =
+        
+          
+            1
+            
+              j
+              C
+              ω
+            
+          
+        
+        =
+        −
+        
+          
+            j
+            
+              C
+              ω
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\underline {Z}}={\frac {\underline {U}}{\underline {I}}}={1 \over jC\omega }=-{\frac {j}{C\omega }}\,}
+  
+
+Ces relations montrent bien qu'un condensateur se comporte comme un circuit ouvert (impédance infinie) pour une tension continue et tend à se comporter comme un court-circuit (impédance nulle) pour les hautes fréquences. Pour ces raisons, ils sont utilisés pour réaliser des filtres, en les associant avec des résistances, des composants actifs (on parle de filtre actif, quand des composants réactifs — condensateurs ou inductances — sont utilisés dans la boucle de contre-réaction d'un amplificateur), et/ou des inductances. L'usage d'inductances est cependant généralement limité aux applications HF (radiocommunication) pour lesquelles on n'a pas besoin de valeurs élevées, ou aux applications dans lesquelles on ne dispose pas d'une alimentation pour mettre en œuvre un filtre actif et/ou pour lesquelles le coût élevé de fabrication d'une inductance de valeur importante n'a pas un impact important sur le coût global (dans les filtres de séparation des voies sur des enceintes acoustiques de qualité, par exemple).
+
+
+=== Énergie stockée - puissance échangée ===
+Un condensateur stocke de l'énergie sous forme électrique.
+Cette énergie E (joules) s'exprime en fonction de sa capacité C (farads) et de sa charge q (coulombs) (ou de sa tension u) selon :
+
+  
+    
+      
+        E
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          u
+          
+            2
+          
+        
+        =
+        
+          
+            
+              q
+              
+                2
+              
+            
+            
+              2
+              C
+            
+          
+        
+      
+    
+    {\displaystyle E={\frac {1}{2}}Cu^{2}={\frac {q^{2}}{2C}}}
+  
+
+On remarque que cette énergie est toujours positive (ou nulle) et qu'elle croît comme le carré de la charge ou de la tension.
+Ces propriétés sont analogues à celles de l'énergie cinétique d'une masse m animée d'une vitesse v.
+
+La puissance électrique P reçue par le condensateur est :
+
+  
+    
+      
+        P
+        =
+        
+          
+            
+              
+                d
+              
+              
+                (
+                
+                  C
+                  ×
+                  
+                    
+                      
+                        u
+                        
+                          2
+                        
+                      
+                      2
+                    
+                  
+                
+                )
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+         
+        =
+        u
+        ⋅
+        C
+        
+          
+            
+              
+                d
+              
+              u
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+         
+        =
+        u
+        ×
+        i
+        ,
+      
+    
+    {\displaystyle P={\frac {\mathrm {d} \left(C\times {\frac {u^{2}}{2}}\right)}{\mathrm {d} t}}\ =u\cdot C{\frac {\mathrm {d} u}{\mathrm {d} t}}\ =u\times i,}
+  
+
+qui est bien la dérivée de l'énergie annoncée précédemment (en convention récepteur).
+Si la puissance est positive (puissance reçue) cette énergie augmente, le condensateur se charge. Inversement, lorsque le condensateur se décharge, l'énergie diminue, la puissance est négative : elle est cédée par le condensateur au monde extérieur.
+Il en résulte qu'il est difficile de faire varier rapidement la tension aux bornes d'un condensateur et ceci d'autant plus que la valeur de sa capacité sera élevée. Cette propriété est souvent utilisée pour supprimer des variations de tension non désirées (filtrage).
+Inversement, une décharge très rapide d'un condensateur dans une utilisation de faible résistance électrique est possible. Une énergie importante est délivrée dans un temps très court (donc avec une très forte puissance). Cette propriété est entre autres exploitée dans les flashs électroniques et dans les alimentations de lasers pulsés.
+Il est préférable de parler de puissance reçue (ou cédée) plutôt que de puissance consommée.
+Ce dernier qualificatif laisse à penser que la puissance reçue est « perdue » ou du moins dissipée. Ce qui est le cas d'une résistance qui « consomme » de la puissance électrique, toujours positive par effet Joule, la puissance Joule « consommée » s'écrivant :
+
+  
+    
+      
+        
+          P
+          
+            J
+          
+        
+        =
+        R
+        ×
+        
+          i
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle P_{J}=R\times i^{2},}
+  
+
+
+=== Lois d'association ===
+
+
+==== Association en parallèle ====
+Lorsque deux condensateurs sont placés en parallèle, donc soumis à la même tension, le courant à travers cet ensemble est la somme des courants à travers chacun des condensateurs. Ceci a pour conséquence que la charge électrique totale stockée par cet ensemble est la somme des charges stockées par chacun des condensateurs qui le composent :
+
+  
+    
+      
+        Q
+        =
+        
+          Q
+          
+            1
+          
+        
+        +
+        
+          Q
+          
+            2
+          
+        
+        =
+        
+          C
+          
+            1
+          
+        
+        U
+        +
+        
+          C
+          
+            2
+          
+        
+        U
+        =
+        (
+        
+          C
+          
+            1
+          
+        
+        +
+        
+          C
+          
+            2
+          
+        
+        )
+        U
+        =
+        
+          C
+          
+            e
+            q
+          
+        
+        U
+        
+      
+    
+    {\displaystyle Q=Q_{1}+Q_{2}=C_{1}U+C_{2}U=(C_{1}+C_{2})U=C_{eq}U\,}
+  
+
+donc :
+
+  
+    
+      
+        
+          C
+          
+            e
+            q
+          
+        
+        =
+        (
+        
+          C
+          
+            1
+          
+        
+        +
+        
+          C
+          
+            2
+          
+        
+        )
+        
+      
+    
+    {\displaystyle C_{eq}=(C_{1}+C_{2})\,}
+  
+
+Ce raisonnement est généralisable à n condensateurs en parallèle : le condensateur équivalent à n condensateurs en parallèle a pour capacité la somme des capacités des n condensateurs considérés.
+La tension maximale que peut supporter l'ensemble est celle du condensateur dont la tension maximale est la plus faible.
+
+
+==== Association en série ====
+Lorsque deux condensateurs sont en série, donc soumis au même courant, il en résulte que la charge stockée par chacun d'eux est identique.
+
+  
+    
+      
+        Q
+        =
+        
+          Q
+          
+            1
+          
+        
+        =
+        
+          Q
+          
+            2
+          
+        
+        =
+        
+          C
+          
+            1
+          
+        
+        
+          U
+          
+            1
+          
+        
+        =
+        
+          C
+          
+            2
+          
+        
+        
+          U
+          
+            2
+          
+        
+        =
+        
+          C
+          
+            e
+            q
+          
+        
+        U
+        
+      
+    
+    {\displaystyle Q=Q_{1}=Q_{2}=C_{1}U_{1}=C_{2}U_{2}=C_{eq}U\,}
+  
+
+ou
+
+  
+    
+      
+        U
+        =
+        
+          
+            Q
+            
+              C
+              
+                e
+                q
+              
+            
+          
+        
+        =
+        
+          U
+          
+            1
+          
+        
+        +
+        
+          U
+          
+            2
+          
+        
+        =
+        
+          
+            Q
+            
+              C
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            Q
+            
+              C
+              
+                2
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle U={\frac {Q}{C_{eq}}}=U_{1}+U_{2}={\frac {Q}{C_{1}}}+{\frac {Q}{C_{2}}}\,}
+  
+
+d'où
+
+  
+    
+      
+        
+          
+            1
+            
+              C
+              
+                e
+                q
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              C
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              C
+              
+                2
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\frac {1}{C_{eq}}}={\frac {1}{C_{1}}}+{\frac {1}{C_{2}}}\,}
+  
+
+Ce raisonnement étant généralisable à n condensateurs, on en déduit que le condensateur équivalent à n condensateurs en série a pour inverse de sa capacité la somme des inverses des capacités des n condensateurs considérés.
+Cette association est généralement une association de n condensateurs identiques ayant pour but d'obtenir un ensemble dont la tension maximale qu'il peut supporter est égale à n fois celle des condensateurs utilisés, ceci au prix d'une division de la capacité par n.
+
+
+=== Modélisation en haute fréquence ===
+Les condensateurs sont très souvent utilisés dans les circuits de hautes fréquences. Sur ces fréquences, les éléments parasites peuvent changer notablement les valeurs calculées. En général, jusqu'aux fréquences de quelques gigahertz, deux éléments parasites doivent être pris en compte : l'inductance du boîtier et la résistance équivalente série. L'introduction de ces deux éléments parasites est indispensable, notamment pour la simulation des circuits au-delà de quelques centaines de MHz.
+On peut considérer aujourd'hui que l'immense majorité des condensateurs utilisés en hautes fréquences sont en céramique et en composants de surface. C'est donc surtout ce type de condensateur qui est envisagé ici.
+Le modèle d'un condensateur CMS sera donc constitué par trois éléments en série : la capacité nominale C, la résistance équivalente série Rs et l'inductance du boîtier L.
+La résistance Rs est constituée non seulement de la résistance ohmique, mais aussi de la résistance série fictive représentant les pertes diélectriques. Pour les condensateurs avec céramique NP0, la valeur de cette résistance sera comprise en général entre 0,1 et 1 ohm. Si on veut des résistances rs plus faibles, notamment pour réduire les pertes des filtres en VHF et UHF, on devra utiliser les condensateurs dits « high Q », et au-delà de 2 ou 3 GHz, il faudra utiliser uniquement des condensateurs spécifiés pour hyperfréquences… ou des condensateurs répartis réalisés avec le circuit imprimé lui-même.
+L'inductance série va varier avec le boîtier (elle est augmentée aussi de l'inductance des pistes, dont on ne parle pas ici…). Pour les boîtiers CMS 1206, cette inductance est de l'ordre de 2 nH. Pour un boîtier 0603, elle sera plutôt de l'ordre de 0,5 nH. Pour se convaincre de l'importance de cette inductance, il suffit de vérifier qu'à 1,5 GHz, un condensateur de 10 pF en boîtier 1206 n'est plus une capacité mais une inductance.
+À plusieurs centaines de MHz, la simulation du circuit va exiger une modélisation encore plus fine du condensateur et de sa piste. L'ensemble sera considéré comme une ligne de transmission. On devra alors introduire l'impédance caractéristique de la ligne, fonction de la largeur du condensateur et de la piste, et de l'épaisseur du substrat sur lequel il est posé.
+
+
+== Innovations et prospective ==
+Un nouveau condensateur cylindrique (40 mm de diamètre, 110 mm de long, pour une tension de 3,8 V à 2,2 V) au lithium, produit par le japonais Shin-Kobe Electric Machinery offre selon le fabricant une faible auto-décharge (2 % en 1 000 heures à 60 °C), pour une densité énergétique de 10,1 Wh/l (équivalent à une capacité de 1,37 Wh) en pouvant être traversé par des courants élevés (jusqu'à 300 A). Sa température de fonctionnement est comprise entre −20 °C et +80 °C.
+
+
+== Notes et références ==
+
+
+== Bibliographie ==
+(en) Principles and Applications of Electrical Engineering (voir formule 1.1)
+
+
+== Voir aussi ==
+
+
+=== Articles connexes ===
+
+
+=== Liens externes ===
+(en) AVX Dielectric Comparison Chart
+(en) Panasonic Technical Data of Conductive Polymer Hybrid Aluminum Electrolytic Capacitors, March 2016 (DMF0000COL42)
+(en) Nonlinstor-An electronic circuit element of the nonlinear type with the deepening charge-controlled capacitor properties based on the form of the nonlinear differential equation
+
+ Portail de la physique   Portail de l’électricité et de l’électronique

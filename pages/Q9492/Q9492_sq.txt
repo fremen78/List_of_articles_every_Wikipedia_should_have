@@ -1,0 +1,173 @@
+Probabiliteti është dega e matematikës e cila merret me ngjarjet dhe përshkrimet numerike se sa gjasa ka që ato të ndodhin. Probabiliteti i një ngjarje është një numër midis 0 dhe 1, sa më i madh të jetë ky numër aq më të mëdhaja janë gjasat që kjo ngjarje të ndodhë.
+
+
+== EKSPERIMENTET E RASTIT ==
+Një pjesë e jetës së përditshme bazohet në realitetin që ardhmëria është e paparishikueshme.
+Jemi të njohur që rëndësinë e eksperimenteve në shkencat e ndryshme e në veqanti në inxhinieri.Këtu kemi të bëjmë me një parim fundamental: kur rezultatet përsëriten nën kondita gati identike, rezultatet e eksperimenteve të përsëritur janë esencialisht rezultate të njëjta.
+Nga ana tjetër, ka eksperimente të cilat edhe pse kryhen nën kondita gati të njëjta, kur të përsëriten nuk na japin rezultate esencialisht të njëjta.Këto eksperimente quhen eksperimente të rastit.
+Eksperimenti i rastit është një proces që ka këto veti:
+	Eksperimenti i rastit bëhet në pajtim me një numër rregullash të cilat e përcaktojnë realizimin e tij në tërësi;
+	Eksperimenti i rastit mund të përsëritet sa herë që duam dhe
+	Rezultati i eksperimentit të rastit varet vetëm nga ‘fati’ d.m.th. nga ndikimet të cilat nuk mund t’i kontrollojmë.
+Rezultatin e kryerjes së një eksperimenti e quajmë realizim. Realizimet e një eksperimenti paraqesin ngjarjet.
+Studimi i teorisë së probabilitetit fillon pikërisht me shqyrtimin e relacioneve ndërmjet realizimeve ose ngjarjeve të mundshme që i korrespondojnë një eksperimenti të rastit.
+Përkufizim: Bashkësinë e të gjitha realizimeve të mundshme të një eksperimenti e quajmë hapësirë të realizimeve.
+Hapësirën e realizimeve e shënojmë me S. Bashkësinë S në një mënyrë  mund ta konsiderojmë bashkësi univerzale.
+Elementet qenësore të zhvillimit të teorisë së probabilitetit paraqesin nënbashkësitë e bashkësisë S. çdo nënbashkësi A e bashkësisë S : (A⊂S) quhet ngjarje.
+Hapësira e realizimeve paraqet një model ideal të një eksperimenti në kuptimin që sipas përkufizimit, çdo realizim i eksperimentit është plotësisht i përshkruar me anën e një dhe vetëm një pike (elementi) të hapësirës S (çdo realizim i veqantë paraqet ngjarje elementare).
+
+
+== PROBABILITETI KONDICIONAL ==
+Le të jetë B një ngjarje e farëdoshme në hapësirën e realizimeve S me probabilitet P (b) > 0.
+Probabiliteti që një ngjarje A të realizohet, kur dihet që ngjarja B ka ndodhur, apo me fjalë tjera, probabiliteti kondicional i ngjarjes A ku dihet ngjarja B, simbolikisht P(A⁄B). Përkufizohet me:
+P(A⁄B)=P(A∩B)/P(B) 
+Për arsye se dihet që ngjarja B ka ndodhur, atëherë hapësira e realizimeve S reduktohet në B. Në këtë mënyrë B luan tani rolin e hapësirësn së realizimeve.
+Teoremë: Për çdo dy ngjarje A dhe B vlen :
+P(A)=P(A⁄B)P(B)+P(A⁄B^C )P(B^C )  
+Vërtetimi: Po nisemi nga relacioni A=(A∩B)∪(A∩B^C ). Bashkësitë A∩B dhe A∩B^C  janë bashkësi disjunkte sepse (A∩B)∪ (A∩B^C )=∅. Prandaj,
+P(A)= P(A∩B)+P(A∩B^C )= P(A⁄B)P(B)+P(A⁄B^C )P(B^C )
+Bashësia S le të jetë participuar me anën e bashkësive B_i, vlen:
+Teoremë: Në qoftë se A=⋃_(i=1)^n(A∩B_i ) , atëherë duke supozuar se B_i janë bashkësi disjunkte:
+P(A)=P(⋃_(i=1)^n(A∩B_i ) )=∑_(i=1)^nP (A∩B_i )=∑_(i=1)^nP (A⁄B_i )P(B_i )
+Teorema e fundit quhet teorema multiplicative.
+
+
+== TEOREMA E BAYESIT ==
+Le të jenë B_1, B_2, … B_n ngjarje reciprokisht eksluzive unioni i të cilave është hapësira e realizimeve S. Atëherë, nëse A është një ngjarje në S, vlen teorema e Bayesit:
+P(B_n⁄A)=P(B_n )P(A⁄B_n )/(∑_(i=1)^n▒P(B_i )  P(A⁄B_i ) )
+Vërtetim. - Sipas përkufizimit:
+P(B_n⁄A)=P(B_n∩A)/P(A)       nwse P(A)≠0
+ose 
+P(A⁄B_n )=(P(A∩B_n))/P(B_n )      nwse P(B_n )≠0
+P(B_n⁄A)=P(B_n )P(A⁄B_n )/(∑_(i=1)^n▒P(B_i )  P(A⁄B_i ) )
+Kjo formulë quhet formula e Bajesit.
+
+
+== NGJARJET E PAVARURA ==
+Në përgjithësi, në qoftë se realizimi i një ngjarje B ndryshon me probabilitetin e realizimit të një ngjarje tjetër, atëherë probabiliteti original P(A) reduktohet në probabilitetin P(A⁄B). Por, nëse realizimi i ngjarjes B nuk e ndryshon probabilitetin e ngjarjes A, d.m.th. në qoftëse se
+P(A⁄B)=P(A)                                                                                        (1)
+Atëherë, për ngjarjet A dhe B themi se janë ngjarje të pavarura.
+Në qoftë se në formulën  P(A⁄B)=(P(A∩B))/(P(B)), zëvendësojmë P(A⁄B) nga (1) do të marrim relacionin:
+P(A∩B)=P(A)∙P(B)
+Përkufizim. - Ngjarjet A dhe B quhen ngjarje të pavarura nëse:
+P(A∩B)=P(A)∙P(B)
+Në rastin e përgjithshëm, ngjarjet {A_i, i ∈ I} quhen ngjarje të pavarura nëse:
+P(⋂_(i∈J)▒A_i )=∏_(i∈J)▒〖P(A_i ),pwr çdo J⊂〗 I,J≠∅ 
+
+
+== VARIABLAT E RASTIT DHE DISTRIBUIMI I TYRE ==
+KUPTIMI I VARIABLËS SË RASTIT
+Në shumë zbatime të teorisë së probabilitetit, hapësira e realizimeve nuk paraqitet në mënyrë eksplicite. Kjo shpesh as që është e nevojshme. Shumë zbatime të teorisë së probabilitetit më tepër bazohen në konceptin e funksionit të quajtur variabla e rastit.
+Në përgjithësi, realizimet e një eksperimenti d.m.th. pikat e hapësirës S, nuk është e domosdoshme që të jenë numra.
+Numri i gabimeve të shtypit në një libër, numri i prodhimeve defekte në një fabrikë etj. janë realizime numerike të një eksperimenti.
+Në teorinë e probabilitetit, rregullën gjegjësisht funksionin me anën e të cilit çdo realizimi s ∈ S i shoqërohet një numër real quhet variabël e rastit.
+çdo realizimi s ∈ S është e mundur që t’i shoqërohet një numër real. Kjo, në gjuhën matematike, do të thotë se në S mund të përkufizohet një funksion. Në fakt konceptin e funksionit e zbatojmë këtu për t’i paraqitur vlerat të cilat ia shoqërojmë realizimeve të një eksperimenti. Qdo elementi s ∈ S i shoqërojmë një numër real X(s). Në këtë mënyrë kemi përkufizuar një funksion X nga S në R.
+Përkufizim.-Variabël e rastit quhet funksioni X domeni i të cilit është hapësira e realizimeve S dhe vlerat e të cilit janë numrat real.
+Rangu i funksionit X, në rastin e përgjithshëm është një nënbashkësi e numrave real. Simbolikisht:
+X : S → R
+Në rastin e përgjithshëm, për të vizualizuar konceptin e variablës së rastit, nevojitet që të shqyrtojmë me kujdes idenë e një funksioni X të përcaktuar në hapësirën e realizimeve S, që i merr vlerat në bashkësinë e numrave real R.
+Pika në boshtin real R të cilës i përgjigjet një ngjarje në S quhet pika e pasqyrimit.Në rastin kur hapësira S ka numër të pafundëm të elementeve s, atëherë karakteri i plotë i funksionit X mund të paraqitet me anën e një diagrami i cili tregon vlerat (pikat e pasqyrimit) në R të cilat, përmes X i shoqërohen çdo elementi s nga S.
+
+
+== FUNKSIONET E SHPËRNDARJES ==
+Në qoftë se X është një variabël  e rastit dhe x është një numër real të cilin e kemi përcaktuar për njërën nga ngjarjet, atëherë, funksioni korrespondues i probabilitetit P [X ≤ x] të ngjarjes të dhënë të rastit, ngjarja dhe probabiliteti i saj varen nga x.
+Përkufizim. -Funksioni F_x : R → [0,1] i përkufizuar me anën e relacionit:
+
+  
+    
+      
+        
+          F
+          
+            X
+          
+        
+        (
+        x
+        )
+        =
+        P
+        (
+        x
+        ≤
+        X
+        )
+        ,
+        −
+        ∞
+        <
+        x
+        <
+        +
+        ∞
+      
+    
+    {\displaystyle F_{X}(x)=P(x\leq X),-\infty <x<+\infty }
+  
+
+quhet funksion i distribuimit të probabilitetit ose funksion i distribuimit kumutativ.
+
+Domeni i funksionit të distribuimit të probabilitetit, është bashkësia e të gjithë numrave real kurse rangu i tij është intervali [0,1].
+Me futjen e konceptit të funksionit të distribuimit, koncepti i hapësirës së realizimeve, ngjarjes dhe masës së probabilitetit, koncepte me rëndësi të madhe për ndërtimin e teorisë së probabilitetit, shpesh ‘humbin’ rëndësinë krahasuar me rëndësinë e funksionit të distribuimit. Me anën e funksionit të distribuimit është e mundur që të gjenerohet probabiliteti për çdo numër të familjeve F (R) të nënbashkësive të drejtzës reale R.
+Përkufizim. - Për variablën e rastit thuhet se është variabël diskrete e rastit në qoftë se rangu i funksionit të distribuimit F_x (x) është bashkësi diskrete. Për variablën e rastit thuhet se është variabël e vazhdueshme e rastit në qoftë se rangu i funksionit të distribuimit F_x (x) është i vazhdueshëm.
+Në qoftë se e dijmë funksionin e probabilitetit të variablës së rastit X, atëherë mund të gjejmë funksionin e distribuimit të variablës diskrete të rastit për arsye se:
+F_x (x)=∑_(X≤x)▒P_x (x)
+Me ç’rast sumacioni bëhet mbi të gjithë x-at nga rangu i variablës X që e arsyetojnë relacionin X ≤ x.
+
+
+== FUNKSIONI I DENSITETIT ==
+Derivati I funksionit të distribuimit F_x (x):(dF_x (x))/dx=f_x (x) sa herë që të ekzistoj, quhet funksioni i densitetit të variablës së rastit X ose funksioni i frekuencës. Pasi funksioni F_█(x@) (x) mund të mos ketë derivate për qdo x, dallojmë disa tipe të variablës së rastit.
+VARIABLAT DISKRETE TË RASTIT
+Funksioni i distribuimit mund të zbatohet për t’i klasifikuar variablat e rastit në dy tipe: në variablat e rastit të tipit diskret dhe në variablat e rastit të tipit të vazhdueshëm.
+Përkufim. - Për një variabël të rastit thuhet se është e tipit diskret, nëse funksioni i saj i distribuimit F_x (x) paraqet shumë të funksioneve shkallë të argumenteve të tyre.
+Variabla diskrete e rastit X mund të karaktrizohet si variabël funksioni distribuiv F_x (x) i së cilës vazhdon duke bërë kërcime. Të vetmet kontribute të ndryshmme prej zeros të funksionit F_x  (x) ndodhin në një bashkësi diskrete të pikave x_(1,)  x_2,〖 x〗_3… 
+Atëherë mund të përkufizojmë një funksion i cili arrin vlera të ndryshme prej zeros në pikat x_i. Vlera që funksioni arrin në qdo x_i, i është e barabartë me madhësinë për të cilën F_x (x) kërcen në atë pikë. Prandaj mund të përkufizojmë një funksion të ri:
+Px (x) = P [X = x] 
+i cili quhet funksioni i masës së probabilitetit të variablës së rastit X.
+Funksioni Px (x), ka këto veti:
+	P_x(x)=0  përveq rastit kur x është njëra prej bashkësive diskrete të pikave x_1 〖,x〗_(2,) 〖 x〗_(3…;)
+	0 ≤P_x (x_i )≤1 për çdo x_(i )nga rangu I variablës X;
+	∑_i▒P_x  (x_i )=∑_i▒P[X=x_i ] =1.
+
+
+== INTERPRETIMI FIZIK I DENSITETIT TË PROBABILITETIT ==
+Në disa probleme fizike mund të hasim në konceptet siç janë distribuimi i masës, shkarkimi elektrik dhe populacioni. Në qoftë se supozojmë se një masë e përgjithshme prej një njësie, është shpërndarë përgjatë drejtëzës reale, në atë menyrë, që probabiliteti i shoqëruar cilësdo bashkësi të pikave, është pikërisht masa e bashkësisë së tillë, atëherë, probabilitetet mund të interpretohen si masa. Me këtë interpretim, funksioni i distribuimit F_x (x) paraqet pikërisht masën e përgjithshme të pjesës së drejtëzës që ndodhet majtas nga pika x duke përfshirë edhe pikën x.
+Në qoftë se distribuimin diskret e interpretojmë si një distribuim në të cilin shpërndarja e masës është bërë tërësisht nëpër pikat x_(1 ),x_2 〖,x〗_3… ndërsa P_x (x_k) janë masat të cilat u janë shoqëruar pikave x_k.
+
+
+== VARIABLAT E VAZHDUESHME TË RASTIT ==
+Përkufizim. - Për një variabël të rastit X, thuhet se është e tipit të vazhdueshëm në qoftë se funksioni i saj i distribuimit F_x (x) është funksion i vazhdueshëm i x. Nga ky supozim nuk rrjedh se F_x(x) ka derivate për  çdo x.
+Po supozojmë se numri i pikave në të cilat funksioni F_x(x) nuk është i diferencueshëm, është i numrueshëm. Atëherë do të themi se variabla e rastit X është e tipit të vazhdueshëm, në qoftë se ekziston një funksion jonegativ f_x  (x), i tillë që për  çdo numër real, përveç për një bashkësi të numrueshme në R, vlen relacioni:
+F_x (x)=∫_(-∞)^∞▒f_x (x)dx
+Ku F_x(x) është funksioni i distribuimit të variablës X.
+Funksioni f_x(x) quhet funksioni i probabilitetit ose funksioni i densitetit të probabilitetit të variablës së rastit X ose thjeshtë funksioni i densitetit.
+
+
+== DISA SHEMBUJ TË FUNKSIONEVE TË DISTRIBUIMIT DHE TËDENSITETI ==
+	DISTRIBUIMI BINOMIAL
+	DISTRIBUIMI UNIFORM
+	DISTRIBUIMI NORMAL
+	DISTRIBUIMI EKSPONENCIAL
+	DISTRIBUIMI I PAUSONIT
+	DISTRIBUIMI GAMA
+	DISTRIBUIMI I KOSHIUT
+
+
+== MOMENTET E VARIABLËS SË RASTIT ==
+PRITJA MATEMATIKE
+Pritja matematike, vlera e pritur apo thjeshtë pritja e një variable të rastit paraqet një koncept të rëndësishëm në probabilitet dhe në statistikë. Pritja matematike quhet ndryshe edhe moment i parë qëndror i distribuimit.
+Përkufizim. - Për variablën diskrete të rastit, e cila ka n vlera të mundshme x_1, x_2,….,x_n, pritja matematike e variablës së rastit X, të cilën do ta shënojmë me E(X) përkufizohet:
+〖E(X)=x〗_1 P[X=x_1 ]+x_2 P[X=x_2 ]+⋯+x_n P[X=x_n]=∑_(k=1)^n▒x_k P [X=x_k]
+Nëse shënojmë P[X = x_k]=p_k atëherë
+E(X) = (∑_(k=1)^n▒〖=1〗). Pritja matematike ndryshe quhet edhe qendra e distribuimit.
+Është e qartë se (∑_(k=1)^n▒〖=1)〗. Pritja matematike quhet edhe qendra e distribuimit.
+Përkufizim. – në qoftë se X është e variabël e vazhdueshme e rastit, me funksionin e densitetit f_x(x), atëherë, pritja matematike e saj përkuizohet me:
+E (X) = ∫_(-∞)^∞▒f_x (x) dx
+Me kusht që integrali të konvergjoj. Që ky integral të konvergjojë, është e mjaftueshme që ai të konvergjoj absolutisht d.m.th. që ∫_(-∞)^∞▒|x|  f(x)dx<∞
+Nëse F_x(x) është funksioni I distribuimit të variablës së rastit X, atëherë:
+E (X) = ∫_(-∞)^∞▒xd F_x(x)
+
+
+== REFERENCAT ==
+Probability & Statistics for Engineers & Scientists
+Konceptet baze te probablitetit

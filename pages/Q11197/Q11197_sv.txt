@@ -1,0 +1,1534 @@
+Logaritmen är inom matematiken den inversa funktionen till exponentiering.  Logaritmen för ett tal a är den exponent x till vilket ett givet tal, med basen b, måste upphöjas för att anta värdet a:
+
+  
+    
+      
+         
+        a
+        =
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle \ a=b^{x}}
+  
+
+Logaritmer kan vara ett hjälpmedel, i synnerhet vid manuella beräkningar med stora antal av tal, genom att multiplikationer och divisioner kan omvandlas till additioner respektive subtraktioner.
+Logaritmernas uppfinnare anses vara skotten John Napier (1600-talet).
+
+
+== Reell logaritm ==
+För reella tal måste gälla att a > 0 och b > 0 för att logaritmen ska kunna beräknas. Logaritmen x kan anta godtyckliga värden. I uttrycket a = bx kallas x logaritmen av a i basen b och skrivs
+
+  
+    
+      
+         
+        x
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+      
+    
+    {\displaystyle \ x=\log _{b}a}
+  
+, eller 
+  
+    
+      
+        x
+        =
+        
+          
+            
+              
+              
+                b
+              
+            
+          
+          l
+          o
+          g
+        
+         
+        a
+      
+    
+    {\displaystyle x=\mathrm {{^{b}}log} \ a}
+  
+,     där alltså 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle a,b\in \mathbb {R} }
+  
+ och 
+  
+    
+      
+        a
+        ,
+        b
+        >
+        0
+      
+    
+    {\displaystyle a,b>0}
+  
+
+
+=== Binär logaritm - tvålogaritm ===
+Om 
+  
+    
+      
+        b
+        =
+        2
+      
+    
+    {\displaystyle b=2}
+  
+ kan även skrivningen lb a förekomma (b:et står för binär") och även skrivningen ld a förekommer (speciellt i tyskspråkig litteratur - "ld" står för latin logarithmus dualis). I viss amerikansk litteratur används lg a för tvålogaritmer, vilket inte rekommenderas eftersom denna betckning är standard för tiologaritmer i exempelvis svensk- eller tyskspråkig litteratur.
+
+
+== Tiologaritm eller briggsk logaritm ==
+
+Ett praktiskt val av logaritmbas vid användning av den decimala notationen är den briggska logaritmen (10-logaritmen utvecklad av Henry Briggs). Den briggska logaritmen för ett tal a är den exponent x till vilken 10 skall upphöjas för att bilda talet a:
+
+  
+    
+      
+        
+          10
+          
+            x
+          
+        
+        =
+        a
+        
+        ⇔
+        
+        x
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        a
+        =
+        lg
+        ⁡
+        a
+      
+    
+    {\displaystyle 10^{x}=a\quad \Leftrightarrow \quad x=\log _{10}a=\lg a}
+  
+
+Andra beteckningssätt för log10 a är 10log a och log a.
+
+
+== Naturlig logaritm (logarithmus naturalis) ==
+
+En speciell bas är e (Eulers tal). Beteckningen för loge a, den naturliga logaritmen av a, är ln a.
+Detta ger sambanden
+
+  
+    
+      
+        a
+        =
+        
+          
+            e
+          
+          
+            x
+          
+        
+        ⇔
+        x
+        =
+        ln
+        ⁡
+        a
+        .
+      
+    
+    {\displaystyle a=\mathrm {e} ^{x}\Leftrightarrow x=\ln a.}
+  
+
+En viktig anledning till att denna logaritm används är att den är den inversa funktionen till exponentialfunktionen ex.
+En intressant egenskap hos den naturliga logaritmfunktionen är att dess derivata är 1/x, vilket gör att den fyller ut en lucka bland de primitiva funktionerna till potensfunktioner:
+
+  
+    
+      
+        ∫
+        
+          x
+          
+            n
+          
+        
+        d
+        x
+        =
+      
+    
+    {\displaystyle \int x^{n}dx=}
+  
+
+  
+    
+      
+        
+          {
+          
+            
+              
+                
+                  
+                    
+                      
+                        x
+                        
+                          n
+                          +
+                          1
+                        
+                      
+                      
+                        n
+                        +
+                        1
+                      
+                    
+                  
+                  +
+                  C
+                
+                
+                  
+                    
+                      om 
+                    
+                  
+                  n
+                  ≠
+                  −
+                  1
+                
+              
+              
+                
+                  ln
+                  ⁡
+                  x
+                  +
+                  C
+                
+                
+                  
+                    
+                      om 
+                    
+                  
+                  n
+                  =
+                  −
+                  1
+                
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle \left\{{\begin{matrix}{\frac {x^{n+1}}{n+1}}+C&{\mbox{om }}n\neq -1\\\ln x+C&{\mbox{om }}n=-1\end{matrix}}\right.}
+  
+
+n = -1 leder till division med noll, vilket är otillåtet. För varje tal nära -1 kommer "första primitiva funktionen" att vara godtyckligt nära ln x. Därför kan logaritmen ses som en kontinuerlig utvidgning av polynomen, ett faktum som även kan motiveras genom att betrakta vissa speciella gränsfall av interpolationspolynomen (kanske enklast via Newtons interpolationspolynom).
+Se även definitionen av talet e.
+
+
+== Komplex logaritm ==
+Den flervärda komplexa logaritmen log definieras som urbilden till exponentialfunktionen, det vill säga
+
+  
+    
+      
+        log
+        :
+        
+          C
+        
+        →
+        
+          2
+          
+            
+              C
+            
+          
+        
+        ,
+         
+        z
+        ↦
+        {
+        w
+        ∈
+        
+          C
+        
+        :
+        exp
+        ⁡
+        w
+        =
+        z
+        }
+      
+    
+    {\displaystyle \log :\mathbb {C} \to 2^{\mathbb {C} },\ z\mapsto \{w\in \mathbb {C} :\exp w=z\}}
+  
+
+Vilket också kan uttryckas som
+
+  
+    
+      
+         
+        log
+        ⁡
+        z
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        i
+        ∗
+        (
+        a
+        r
+        g
+        (
+        z
+        )
+        +
+        n
+        ∗
+        2
+        π
+        )
+      
+    
+    {\displaystyle \ \log z=\ln |z|+i*(arg(z)+n*2\pi )}
+  
+
+där + innebär addition av vektormängder och arg är argumentsfunktionen. Den komplexa logaritmen uppfyller de flesta räkneregler för den reella logaritmen; problem kan uppstå om exempelvis summan av två argument hamnar utanför grenen. Man kan studera en gren av logaritmen, som då blir en envärd funktion. För principalgrenen Log används principalgrenen av argumentsfunktionen, dvs
+
+  
+    
+      
+        
+          I
+          m
+        
+         
+        
+          L
+          o
+          g
+        
+         
+        z
+        ∈
+        (
+        −
+        π
+        ,
+        π
+        )
+      
+    
+    {\displaystyle \mathrm {Im} \ \mathrm {Log} \ z\in (-\pi ,\pi )}
+  
+.
+
+
+== Diskret logaritm ==
+På samma sätt som ovan kan man definiera en logaritm i en godtycklig ändlig kropp. Det är då ett väldefinierat begrepp eftersom en kropp under multiplikation (andra kompositionsoperatorn) är isomorf med en cyklisk delgrupp. Som bas för logaritmen väljer man en generator för denna cykliska grupp. Utvidgningen är helt analog med reella logaritmer. Skillnaden mellan reella logaritmer och diskreta logaritmer är att den diskreta logaritmen alltid blir ett heltal. I övrigt har diskreta och reella logaritmen likartade lagar och följer ungefärligen samma teori.
+Till skillnad från vanliga (reella) logaritmer är det generellt sett svårt att hitta logaritmen för ett givet tal. Man kallar detta diskreta logaritmproblemet. Faktum är att det är så svårt, att man använder denna svårighet för att konstruera säker kryptering. Poängen är att det är lätt att verifiera en föreslagen logaritm, men svårt att finna den. Metoden påminner om hur man i krypteringsalgoritmer utnyttjar problemet med finna primtalsfaktorisering av stora tal.
+
+
+== Integrallogaritm ==
+Med en integrallogaritm, eller logaritmisk integral, avses en funktion, betecknad med li(x), på formen:
+
+  
+    
+      
+        li
+        ⁡
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            0
+          
+          
+            x
+          
+        
+        
+          
+            
+              d
+              t
+            
+            
+              ln
+              ⁡
+              t
+            
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle \operatorname {li} (x)=\int _{0}^{x}{\frac {dt}{\ln t}},\quad }
+  
+ för 
+  
+    
+      
+        0
+        <
+        x
+        <
+        1
+      
+    
+    {\displaystyle 0<x<1}
+  
+
+och
+
+  
+    
+      
+        li
+        ⁡
+        (
+        x
+        )
+        =
+        lim
+        
+          ∫
+          
+            x
+          
+          
+            1
+            −
+            ϵ
+          
+        
+        
+          
+            
+              d
+              t
+            
+            
+              ln
+              ⁡
+              t
+            
+          
+        
+        +
+        lim
+        
+          ∫
+          
+            1
+            +
+            ϵ
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              d
+              t
+            
+            
+              ln
+              ⁡
+              t
+            
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle \operatorname {li} (x)=\lim \int _{x}^{1-\epsilon }{\frac {dt}{\ln t}}+\lim \int _{1+\epsilon }^{\infty }{\frac {dt}{\ln t}},\quad }
+  
+ för 
+  
+    
+      
+        x
+        >
+        1
+      
+    
+    {\displaystyle x>1}
+  
+
+Funktionen har en singularitet vid 
+  
+    
+      
+        x
+        =
+        1
+      
+    
+    {\displaystyle x=1}
+  
+ eftersom 
+  
+    
+      
+        ln
+        ⁡
+        1
+        =
+        0
+      
+    
+    {\displaystyle \ln 1=0}
+  
+.
+
+
+== Derivata ==
+Derivatan av en logaritmfunktion
+
+  
+    
+      
+        y
+        =
+        
+          log
+          
+            b
+          
+        
+        
+        x
+      
+    
+    {\displaystyle y=\log _{b}\,x}
+  
+
+är
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              b
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {dy}{dx}}={\frac {1}{x\ln b}}}
+  
+
+Speciellt är 
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        x
+        =
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {d}{dx}}\ln x={\frac {1}{x}}}
+  
+
+
+== Identiteter ==
+
+  
+    
+      
+         
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        =
+        x
+        ↔
+        
+          b
+          
+            x
+          
+        
+        =
+        a
+      
+    
+    {\displaystyle \ \log _{b}a=x\leftrightarrow b^{x}=a}
+  
+
+  
+    
+      
+         
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            a
+          
+        
+        =
+        a
+      
+    
+    {\displaystyle \ b^{\log _{b}a}=a}
+  
+
+  
+    
+      
+         
+        
+          a
+          
+            x
+          
+        
+        =
+        
+          
+            e
+          
+          
+            x
+            ln
+            ⁡
+            a
+          
+        
+      
+    
+    {\displaystyle \ a^{x}=\mathrm {e} ^{x\ln a}}
+  
+
+  
+    
+      
+         
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        
+        +
+        
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \ \log _{a}(xy)=\log _{a}(x)\,+\,\log _{a}(y)}
+  
+
+  
+    
+      
+         
+        log
+        ⁡
+        
+
+        
+        (
+        
+          a
+          
+            p
+          
+        
+        )
+        =
+        p
+        log
+        ⁡
+        
+
+        
+        (
+        a
+        )
+      
+    
+    {\displaystyle \ \log {}(a^{p})=p\log {}(a)}
+  
+
+  
+    
+      
+         
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          (
+          
+            
+              x
+              y
+            
+          
+          )
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        −
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \ \log _{a}\left({\frac {x}{y}}\right)=\log _{a}(x)-\log _{a}(y)}
+  
+
+  
+    
+      
+         
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          x
+          
+            p
+          
+        
+        )
+        =
+        p
+        
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \ \log _{a}(x^{p})=p\,\log _{a}(x)}
+  
+
+  
+    
+      
+         
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              x
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              a
+            
+          
+        
+        =
+        
+          
+            
+              ln
+              ⁡
+              x
+            
+            
+              ln
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \ \log _{a}x={\frac {\log _{b}x}{\log _{b}a}}={\frac {\ln x}{\ln a}}}
+  
+
+  
+    
+      
+         
+        log
+        ⁡
+        
+
+        
+        (
+        
+          
+            a
+            
+              p
+            
+          
+        
+        )
+        =
+        
+          
+            1
+            p
+          
+        
+        log
+        ⁡
+        (
+        a
+        )
+      
+    
+    {\displaystyle \ \log {}({\sqrt[{p}]{a}})={1 \over p}\log(a)}
+  
+
+
+== Exempel ==
+Logaritmernas främsta ursprungliga nytta var att ersätta långa sekvenser av multiplikationer med mindre tidskrävande sekvenser av additioner. 
+Antag att produkten 217 · 596 skall beräknas utan användande av multiplikation. Enligt logaritmlagarna är summan av faktorernas logaritmer lika med logaritmen för produkten:
+
+  
+    
+      
+        log
+        ⁡
+        a
+        +
+        log
+        ⁡
+        b
+        =
+        log
+        ⁡
+        a
+        b
+        ⇒
+      
+    
+    {\displaystyle \log a+\log b=\log ab\Rightarrow }
+  
+
+  
+    
+      
+        log
+        ⁡
+        217
+        +
+        log
+        ⁡
+        596
+        =
+        2.33646
+        +
+        2.77525
+        =
+        5.11171
+      
+    
+    {\displaystyle \log 217+\log 596=2.33646+2.77525=5.11171}
+  
+
+Med hjälp av en tabell går det att bestämma vilket tal som har logaritmen 5.11171:
+
+  
+    
+      
+        log
+        ⁡
+        x
+        =
+        5.11171
+        
+        ⇒
+        
+          tabelluppslagning
+        
+        ⇒
+        
+        x
+        =
+        129332
+      
+    
+    {\displaystyle \log x=5.11171\quad \Rightarrow {\text{tabelluppslagning}}\Rightarrow \quad x=129332}
+  
+
+
+=== Exempel (reella logaritmen) ===
+Logaritmerna kan användas för att lösa vissa ekvationer. Antag att ekvationen
+
+  
+    
+      
+        
+          7
+          
+            x
+          
+        
+        =
+        1234
+      
+    
+    {\displaystyle 7^{x}=1234}
+  
+
+skall lösas med hjälp av logaritmer. Bilda 10-logaritmen av båda sidor:
+
+  
+    
+      
+        log
+        ⁡
+        
+          7
+          
+            x
+          
+        
+        =
+        log
+        ⁡
+        1234
+      
+    
+    {\displaystyle \log 7^{x}=\log 1234}
+  
+
+Utnyttja en av logaritmlagarna:
+
+  
+    
+      
+        x
+        ⋅
+        log
+        ⁡
+        7
+        =
+        log
+        ⁡
+        1234
+      
+    
+    {\displaystyle x\cdot \log 7=\log 1234}
+  
+
+Beräkna värdet av x på miniräknaren:
+
+  
+    
+      
+        x
+        =
+        
+          
+            
+              
+                
+              
+              
+                
+                  log
+                  ⁡
+                  1234
+                
+              
+            
+            
+              
+                
+              
+              
+                
+                  log
+                  ⁡
+                  7
+                
+              
+            
+          
+        
+        =
+        3.65794
+      
+    
+    {\displaystyle x={\cfrac {\log 1234}{\log 7}}=3.65794}
+  
+
+
+=== Exempel (diskreta logaritmen) ===
+Det går att använda diskreta logaritmer för att lösa ekvationer i godtyckliga kroppar. Här visas hur man bestämmer diskreta logaritmer i en given kropp.
+I exemplet kommer vi att betrakta galoiskroppen av ordning 27, GF(33). Den genereras av ett kubiskt irreducibelt polynom över ℤ3 via Kroneckers konstruktion. Ett sådant irreducibelt polynom är x3 + 2x + 1 vilket inses genom att manuellt undersöka de möjliga rötterna. Därmed har vi en kropp
+
+  
+    
+      
+        
+          
+            Z
+          
+          
+            3
+          
+        
+        [
+        x
+        ]
+        
+          /
+        
+        <
+        
+          x
+          
+            3
+          
+        
+        +
+        2
+        x
+        +
+        1
+        >
+      
+    
+    {\displaystyle \mathbb {Z} _{3}[x]/<x^{3}+2x+1>}
+  
+
+med 27 element som kommer att vara isomorf med GF(27). I den går det nu att beräkna diskreta logaritmer.
+Låt oss här återge stegen vi tagit lite mer detaljerat. Vi har hittat ett irreducibelt polynom över ℤ3. Då kommer
+
+  
+    
+      
+        
+          
+            Z
+          
+          
+            3
+          
+        
+        [
+        x
+        ]
+        
+          /
+        
+        <
+        
+          x
+          
+            3
+          
+        
+        +
+        2
+        x
+        +
+        1
+        >
+      
+    
+    {\displaystyle \mathbb {Z} _{3}[x]/<x^{3}+2x+1>}
+  
+
+att bli en kropp, som genereras av ett principalt ideal.
+Detta förklaras genom att ℤ3 är en kropp och därför är varje ideal i ℤ3[x] principalt och genom att polynomet x3 + 2x + 1 är irreducibelt. Därför är < x3 + 2x + 1 > ett maximalt ideal. Och därför är kvotringen
+
+  
+    
+      
+        
+          
+            Z
+          
+          
+            3
+          
+        
+        [
+        x
+        ]
+        
+          /
+        
+        <
+        
+          x
+          
+            3
+          
+        
+        +
+        2
+        x
+        +
+        1
+        >
+      
+    
+    {\displaystyle \mathbb {Z} _{3}[x]/<x^{3}+2x+1>}
+  
+
+inte bara en kvotring, utan en kropp.
+Låt oss ta reda på vad elementet/sidoklassen x2 + 1 har som diskret logaritm. Genom att successivt beräkna potenser xn där 
+  
+    
+      
+        n
+        =
+        0
+        ,
+        1
+        ,
+        …
+        ,
+        26
+      
+    
+    {\displaystyle n=0,1,\dots ,26}
+  
+ fås att första gången xn = x2 + 1 är när n = 21:
+
+  
+    
+      
+         
+        n
+        =
+        0
+        ,
+         
+        
+          x
+          
+            0
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle \ n=0,\ x^{0}=1}
+  
+
+  
+    
+      
+         
+        n
+        =
+        1
+        ,
+         
+        
+          x
+          
+            1
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle \ n=1,\ x^{1}=x}
+  
+
+  
+    
+      
+         
+        n
+        =
+        2
+        ,
+         
+        
+          x
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \ n=2,\ x^{2}=x^{2}}
+  
+
+  
+    
+      
+         
+        n
+        =
+        3
+        ,
+         
+        
+          x
+          
+            3
+          
+        
+        =
+        x
+        +
+        2
+      
+    
+    {\displaystyle \ n=3,\ x^{3}=x+2}
+  
+
+  
+    
+      
+         
+        n
+        =
+        4
+        ,
+         
+        
+          x
+          
+            4
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        2
+        x
+      
+    
+    {\displaystyle \ n=4,\ x^{4}=x^{2}+2x}
+  
+
+  
+    
+      
+         
+        n
+        =
+        5
+        ,
+         
+        
+          x
+          
+            5
+          
+        
+        =
+        2
+        
+          x
+          
+            2
+          
+        
+        +
+        x
+        +
+        2
+      
+    
+    {\displaystyle \ n=5,\ x^{5}=2x^{2}+x+2}
+  
+
+  
+    
+      
+         
+        n
+        =
+        6
+        ,
+         
+        
+          x
+          
+            6
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        x
+        +
+        1
+      
+    
+    {\displaystyle \ n=6,\ x^{6}=x^{2}+x+1}
+  
+
+  
+    
+      
+         
+        …
+      
+    
+    {\displaystyle \ \ldots }
+  
+
+  
+    
+      
+         
+        n
+        =
+        21
+        ,
+         
+        
+          x
+          
+            21
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle \ n=21,\ x^{21}=x^{2}+1}
+  
+
+Därför är logx(x2 + 1) = 21. Notera att det var nödvändigt att gå igenom ett stort antal exponenter n = 0, 1, … för att hitta den vi sökte. Det finns bättre algoritmer för att hitta diskreta logaritmen. Men även med dessa är det generellt sett en tidsödande process, eftersom man kan konstruera kroppar av mycket hög ordning.
+
+
+== Antilogaritm ==
+Antilogaritmen är ett annat namn för potens. Även om termen visserligen används är det ett inte helt lyckat bruk, eftersom potens är konventionen.
+
+
+== Referenser ==
+
+
+== Se även ==
+Karakteristika
+Mantissa
+Logaritmisk skala
+
+
+== Externa länkar ==
+ Wikimedia Commons har media som rör Logaritm.

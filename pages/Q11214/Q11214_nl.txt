@@ -1,0 +1,2254 @@
+Een differentiaalvergelijking, vaak afgekort tot DV, is een wiskundige vergelijking voor een functie waarin, behalve eventueel de functie zelf, een of meer van de afgeleiden van die functie voorkomen. Betreft het een functie van meer dan één onafhankelijke variabele, dan zijn het de partiële afgeleiden die in de vergelijking voorkomen en spreekt men van een partiële differentiaalvergelijking. Is er maar één onafhankelijke variabele, dan spreekt men van een gewone differentiaalvergelijking.
+
+
+== Definitie ==
+Een gewone differentiaalvergelijking is een vergelijking waarin als onbekende een functie 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ van één variabele voorkomt en een of meer van de afgeleiden ervan, met steeds hetzelfde argument.
+De algemene impliciete vorm van een gewone differentiaalvergelijking is:
+
+  
+    
+      
+        F
+        (
+        x
+        ,
+        f
+        (
+        x
+        )
+        ,
+        
+          f
+          
+            ′
+          
+        
+        (
+        x
+        )
+        ,
+        
+          f
+          
+            ′
+            ′
+          
+        
+        (
+        x
+        )
+        ,
+        …
+        ,
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        )
+        =
+        0
+      
+    
+    {\displaystyle F(x,f(x),f^{\prime }(x),f^{\prime \prime }(x),\ldots ,f^{(n)}(x))=0}
+  
+
+De orde 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ van de hoogste voorkomende afgeleide 
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+      
+    
+    {\displaystyle f^{(n)}}
+  
+ heet de orde van de differentiaalvergelijking.
+Als de vergelijking naar de hoogste afgeleide is opgelost, dus kan worden geschreven in de vorm: 
+
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        =
+        φ
+        (
+        x
+        ,
+        f
+        (
+        x
+        )
+        ,
+        
+          f
+          
+            ′
+          
+        
+        (
+        x
+        )
+        ,
+        
+          f
+          
+            ′
+            ′
+          
+        
+        (
+        x
+        )
+        ,
+        …
+        ,
+        
+          f
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle f^{(n)}(x)=\varphi (x,f(x),f^{\prime }(x),f^{\prime \prime }(x),\ldots ,f^{(n-1)}(x))}
+  
+
+noemt men deze de differentiaalvergelijking in expliciete vorm.
+Er zijn varianten zoals 
+  
+    
+      
+        
+          f
+          
+            ′
+          
+        
+        (
+        x
+        )
+        −
+        f
+        (
+        x
+        −
+        1
+        )
+        =
+        0
+      
+    
+    {\displaystyle f^{\prime }(x)-f(x-1)=0}
+  
+, een delay differential equation, die buiten deze definitie vallen.
+
+
+== Toepassingen ==
+Allerlei verschijnselen in de natuurkunde en de toepassingen daarvan in de techniek worden door differentiaalvergelijkingen beschreven. Het voorbeeld bij uitstek vormen trillingen en golven. Bij de eenvoudigste trillingsvergelijking is er een evenredig verband tussen de tweede afgeleide en de functie zelf. De oplossing is een sinusfunctie. Golfvoortplanting in de ruimte wordt door een partiële differentiaalvergelijking beschreven met als variabelen de drie ruimtelijke coördinaten en de tijd.
+Ook bevolkingsgroei kan door een differentiaalvergelijking worden beschreven. Gaat men uit van de (sterk vereenvoudigde) veronderstelling van een constante vruchtbaarheid, dat wil zeggen dat de bevolking van een land groeit met een snelheid die evenredig is met het aantal inwoners, dan is de eerste afgeleide van het aantal inwoners als functie van de tijd, evenredig met dat aantal zelf. De oplossing van deze differentiaalvergelijking is een exponentiële functie; vandaar de welhaast spreekwoordelijke exponentiële groei.
+Differentiaalvergelijkingen die in de natuur voorkomende verschijnselen beschrijven, zijn vaak niet wiskundig oplosbaar. Soms kan dan met numerieke methoden een benaderende oplossing gevonden worden. Maar dan is er alsnog een hoop wiskunde nodig voordat zo'n vergelijking kan worden 'opgelost' met een computer die eigenlijk slechts elementaire rekenkundige bewerkingen kan uitvoeren. Sommige differentiaalvergelijkingen kunnen zelfs met computers niet of niet nauwkeurig worden opgelost, bijvoorbeeld vergelijkingen die turbulente stromingen beschrijven. Dat is een van de redenen dat er geen betrouwbare weersvoorspellingen mogelijk zijn op langere termijn.
+
+
+== Oplossing ==
+Er zijn maar weinig differentiaalvergelijkingen met een 'gesloten' oplossing, een oplossing in een formule. Dat stelt een grens aan de mogelijkheden van een wiskundige benadering van natuurverschijnselen. Nog de meeste mogelijkheden van een puur wiskundige oplossing hebben lineaire differentiaalvergelijkingen: vergelijkingen waarbij de som van twee oplossingen ook een oplossing is. Trillingen en golven worden vaak door zulke differentiaalvergelijkingen beheerst. Transformaties vanuit het domein van tijd en ruimte naar frequenties, waaraan de naam van Fourier is verbonden, kunnen het differentiëren tot een vermenigvuldiging reduceren.
+Veel verschijnselen in de natuur dragen echter een niet-lineair karakter. Dat geldt met name voor turbulente stromingen. Natuurlijk zijn er benaderingsmethoden om aan zulke verschijnselen te rekenen, maar de mogelijkheden zijn toch zo beperkt dat experimenten hier vooralsnog onontbeerlijk blijven. Het zal de leek verbazen dat ook met supercomputers nog steeds niet alles is uit te rekenen.
+
+
+== Lineaire differentiaalvergelijking ==
+Een lineaire 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-de-orde-differentiaalvergelijking is een gewone differentiaalvergelijking van de vorm:
+
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+        (
+        x
+        )
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        +
+        
+          c
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+          f
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        x
+        )
+        +
+        …
+        +
+        
+          c
+          
+            1
+          
+        
+        (
+        x
+        )
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        +
+        
+          c
+          
+            0
+          
+        
+        (
+        x
+        )
+        f
+        (
+        x
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle c_{n}(x)f^{(n)}(x)+c_{n-1}(x)f^{(n-1)}(x)+\ldots +c_{1}(x)f'(x)+c_{0}(x)f(x)=g(x)}
+  
+
+Als 
+  
+    
+      
+        g
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle g(x)=0}
+  
+, heet de differentiaalvergelijking homogeen of gereduceerd, anders inhomogeen of compleet. De verzameling functies die oplossing zijn van een bepaalde homogene lineaire differentiaalvergelijking vormt een vectorruimte. Daarin is dus iedere lineaire combinatie van oplossingen ook een oplossing.
+De algemene oplossing van een inhomogene vergelijking is te schrijven als een particuliere oplossing plus de algemene oplossing van de bijbehorende homogene vergelijking. De verzameling functies die oplossing zijn van een bepaalde inhomogene lineaire differentiaalvergelijking vormt een affiene ruimte.
+
+
+=== Constante coëfficiënten ===
+Een speciaal geval is een lineaire differentiaalvergelijking met constante coëfficiënten, waarin de coëfficiënten 
+  
+    
+      
+        
+          c
+          
+            i
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle c_{i}(x)}
+  
+ constanten 
+  
+    
+      
+        
+          c
+          
+            i
+          
+        
+      
+    
+    {\displaystyle c_{i}}
+  
+ zijn. Voor dergelijke differentiaalvergelijkingen bestaat een relatief eenvoudige algemene oplossingsmethode.
+
+
+==== Algemene oplossingsmethode ====
+Een oplossing van de homogene vergelijking:
+
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        +
+        
+          c
+          
+            n
+            −
+            1
+          
+        
+        
+          f
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        +
+        …
+        +
+        
+          c
+          
+            1
+          
+        
+        
+          f
+          ′
+        
+        +
+        
+          c
+          
+            0
+          
+        
+        f
+        =
+        0
+      
+    
+    {\displaystyle c_{n}f^{(n)}+c_{n-1}f^{(n-1)}+\ldots +c_{1}f'+c_{0}f=0}
+  
+
+is de functie
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          e
+          
+            a
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=e^{ax}}
+  
+,
+mits de parameter 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ voldoet aan de karakteristieke vergelijking:
+
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+        
+          a
+          
+            n
+          
+        
+        +
+        
+          c
+          
+            n
+            −
+            1
+          
+        
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        +
+        …
+        +
+        
+          c
+          
+            1
+          
+        
+        a
+        +
+        
+          c
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle c_{n}a^{n}+c_{n-1}a^{n-1}+\ldots +c_{1}a+c_{0}=0}
+  
+,
+die door invullen van de mogelijke oplossing in de differentiaalvergelijking ontstaat. Dit is een gewone polynomiale vergelijking van de graad 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ in de parameter 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+. In het algemeen heeft deze vergelijking 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ complexe oplossingen 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{1},\ldots ,a_{n}}
+  
+, waarvan er eventueel enkele kunnen samenvallen. Als alle oplossingen verschillend zijn, wordt de algemene oplossing van de differentiaalvergelijking gegeven door een lineaire combinatie van de afzonderlijke e-machten:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          A
+          
+            1
+          
+        
+        
+          e
+          
+            
+              a
+              
+                1
+              
+            
+            x
+          
+        
+        +
+        
+          A
+          
+            2
+          
+        
+        
+          e
+          
+            
+              a
+              
+                2
+              
+            
+            x
+          
+        
+        +
+        …
+        +
+        
+          A
+          
+            n
+          
+        
+        
+          e
+          
+            
+              a
+              
+                n
+              
+            
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=A_{1}e^{a_{1}x}+A_{2}e^{a_{2}x}+\ldots +A_{n}e^{a_{n}x}}
+  
+,
+waarin de coëfficiënten 
+  
+    
+      
+        
+          A
+          
+            i
+          
+        
+      
+    
+    {\displaystyle A_{i}}
+  
+ nog vrij kunnen worden gekozen. Meestal worden deze coëfficiënten vastgelegd door de beginvoorwaarden.
+
+
+==== Voorbeeld 1 ====
+De differentiaalvergelijking:
+
+  
+    
+      
+        
+          f
+          ″
+        
+        +
+        f
+        =
+        0
+      
+    
+    {\displaystyle f''+f=0}
+  
+
+kan gelezen worden als: zoek een functie die als tweede afgeleide zijn eigen tegengestelde heeft. Het is bekend dat de sinus en de cosinus deze eigenschap hebben.
+De karakteristieke vergelijking is:
+
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle a^{2}+1=0}
+  
+,
+met de twee oplossingen: 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        =
+        i
+      
+    
+    {\displaystyle a_{1}=i}
+  
+ en 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        =
+        −
+        i
+      
+    
+    {\displaystyle a_{2}=-i}
+  
+.
+De algemene oplossing van de differentiaalvergelijking wordt dus:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          A
+          
+            1
+          
+        
+        
+          e
+          
+            i
+            x
+          
+        
+        +
+        
+          A
+          
+            2
+          
+        
+        
+          e
+          
+            −
+            i
+            x
+          
+        
+      
+    
+    {\displaystyle f(x)=A_{1}e^{ix}+A_{2}e^{-ix}}
+  
+
+Door geschikte keuze van 
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+      
+    
+    {\displaystyle A_{1}}
+  
+ en 
+  
+    
+      
+        
+          A
+          
+            2
+          
+        
+      
+    
+    {\displaystyle A_{2}}
+  
+ komen inderdaad de sinus en de cosinus als oplossing tevoorschijn.
+
+
+==== Voorbeeld 2 ====
+Het tweede voorbeeld is een inhomogene lineaire tweede-orde-differentiaalvergelijking:
+
+  
+    
+      
+        4
+        
+          f
+          
+            ′
+            ′
+          
+        
+        (
+        x
+        )
+        +
+        f
+        (
+        x
+        )
+        =
+        sin
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle 4f^{\prime \prime }(x)+f(x)=\sin(x)}
+  
+
+De bijbehorende homogene DV heeft de karakteristieke vergelijking:
+
+  
+    
+      
+        4
+        
+          a
+          
+            2
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle 4a^{2}+1=0}
+  
+,
+met de oplossingen: 
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        i
+      
+    
+    {\displaystyle a_{1}={\tfrac {1}{2}}i}
+  
+ en 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        =
+        −
+        
+          
+            
+              1
+              2
+            
+          
+        
+        i
+      
+    
+    {\displaystyle a_{2}=-{\tfrac {1}{2}}i}
+  
+
+Dat geeft als algemene oplossing van de homogene DV:
+
+  
+    
+      
+        
+          f
+          
+            H
+          
+        
+        (
+        x
+        )
+        =
+        
+          A
+          
+            1
+          
+        
+        
+          e
+          
+            
+              
+                1
+                2
+              
+            
+            i
+            x
+          
+        
+        +
+        
+          A
+          
+            2
+          
+        
+        
+          e
+          
+            −
+            
+              
+                1
+                2
+              
+            
+            i
+            x
+          
+        
+      
+    
+    {\displaystyle f_{H}(x)=A_{1}e^{{\frac {1}{2}}ix}+A_{2}e^{-{\frac {1}{2}}ix}}
+  
+
+Deze kan ook geschreven worden als
+
+  
+    
+      
+        
+          f
+          
+            H
+          
+        
+        (
+        x
+        )
+        =
+        A
+        sin
+        ⁡
+        (
+        
+          
+            
+              1
+              2
+            
+          
+        
+        x
+        )
+        +
+        B
+        cos
+        ⁡
+        (
+        
+          
+            
+              1
+              2
+            
+          
+        
+        x
+        )
+      
+    
+    {\displaystyle f_{H}(x)=A\sin({\tfrac {1}{2}}x)+B\cos({\tfrac {1}{2}}x)}
+  
+
+Vervolgens gaat het erom een particuliere oplossing van de inhomogene DV te vinden. De twee meest gebruikte methoden om een dergelijke oplossing te vinden zijn de methode van de onbepaalde coëfficiënten en de variatie van de parameters.
+Een eenvoudige vorm van de eerste van deze twee methoden is te proberen of 
+
+  
+    
+      
+        
+          f
+          
+            P
+          
+        
+        (
+        x
+        )
+        =
+        a
+        sin
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{P}(x)=a\sin(x)}
+  
+
+voldoet als mogelijke oplossing. Invullen in de DV levert:
+
+  
+    
+      
+        −
+        4
+        a
+        sin
+        ⁡
+        (
+        x
+        )
+        +
+        a
+        sin
+        ⁡
+        (
+        x
+        )
+        =
+        sin
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle -4a\sin(x)+a\sin(x)=\sin(x)}
+  
+,
+waaruit volgt 
+  
+    
+      
+        a
+        =
+        −
+        
+          
+            
+              1
+              3
+            
+          
+        
+      
+    
+    {\displaystyle a=-{\tfrac {1}{3}}}
+  
+.
+Een particuliere oplossing is dus:
+
+  
+    
+      
+        
+          f
+          
+            P
+          
+        
+        (
+        x
+        )
+        =
+        −
+        
+          
+            
+              1
+              3
+            
+          
+        
+        sin
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{P}(x)=-{\tfrac {1}{3}}\sin(x)}
+  
+
+De algemene oplossing is de som van de gevonden particuliere oplossing 
+  
+    
+      
+        
+          f
+          
+            P
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{P}(x)}
+  
+ en de algemene oplossing 
+  
+    
+      
+        
+          f
+          
+            H
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{H}(x)}
+  
+ van de homogene DV :
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          f
+          
+            P
+          
+        
+        (
+        x
+        )
+        +
+        
+          f
+          
+            H
+          
+        
+        (
+        x
+        )
+        =
+        −
+        
+          
+            
+              1
+              3
+            
+          
+        
+        sin
+        ⁡
+        (
+        x
+        )
+        +
+        A
+        sin
+        ⁡
+        (
+        
+          
+            
+              1
+              2
+            
+          
+        
+        x
+        )
+        +
+        B
+        cos
+        ⁡
+        (
+        
+          
+            
+              1
+              2
+            
+          
+        
+        x
+        )
+      
+    
+    {\displaystyle f(x)=f_{P}(x)+f_{H}(x)=-{\tfrac {1}{3}}\sin(x)+A\sin({\tfrac {1}{2}}x)+B\cos({\tfrac {1}{2}}x)}
+  
+
+
+==== Voorbeeld 3 Leeglopend vat ====
+Beschouw een vat gevuld met een vloeistof dat langzaam leegstroomt door een opening onder in het vat ter grootte 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+. De hoogte van het vloeistofniveau in het vat 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ neemt af met de tijd. Het is dus een functie 
+  
+    
+      
+        h
+        (
+        t
+        )
+      
+    
+    {\displaystyle h(t)}
+  
+ van de tijd 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+. Voor een vat met constante doorsnede 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ is de uitgestroomde hoeveelheid vloeistof in het tijdsinterval 
+  
+    
+      
+        (
+        t
+        ,
+        t
+        +
+        
+          d
+        
+        t
+        )
+      
+    
+    {\displaystyle (t,t+\mathrm {d} t)}
+  
+ gelijk aan:
+
+  
+    
+      
+        
+          
+            (
+          
+        
+        h
+        (
+        t
+        )
+        −
+        h
+        (
+        t
+        +
+        
+          d
+        
+        t
+        )
+        
+          
+            )
+          
+        
+        D
+        =
+        a
+        ⋅
+        v
+        (
+        t
+        )
+        
+          d
+        
+        t
+      
+    
+    {\displaystyle {\big (}h(t)-h(t+\mathrm {d} t){\big )}D=a\cdot v(t)\mathrm {d} t}
+  
+,
+zodat
+
+  
+    
+      
+        v
+        (
+        t
+        )
+        =
+        −
+        
+          
+            D
+            a
+          
+        
+        
+          h
+          ′
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle v(t)=-{\frac {D}{a}}h'(t)}
+  
+
+De uitstroomsnelheid van de vloeistof hangt af van de hoogte. In een eenvoudig geval is die snelheid evenredig met de hoogte en is de hoogteverandering 
+  
+    
+      
+        
+          h
+          ′
+        
+        (
+        t
+        )
+      
+    
+    {\displaystyle h'(t)}
+  
+ dus evenredig met de hoogte. Dat levert de differentiaalvergelijking:
+
+  
+    
+      
+        
+          h
+          ′
+        
+        (
+        t
+        )
+        =
+        −
+        c
+        ⋅
+        h
+        (
+        t
+        )
+      
+    
+    {\displaystyle h'(t)=-c\cdot h(t)}
+  
+
+met 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ een positieve constante.
+Omdat het eigenlijk een vergelijking is voor de functie 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+, wordt vaak geschreven:
+
+  
+    
+      
+        
+          h
+          ′
+        
+        =
+        −
+        c
+        ⋅
+        h
+      
+    
+    {\displaystyle h'=-c\cdot h}
+  
+
+De algemene oplossing is:
+
+  
+    
+      
+        h
+        (
+        t
+        )
+        =
+        A
+         
+        
+          e
+          
+            −
+            c
+            t
+          
+        
+      
+    
+    {\displaystyle h(t)=A\ e^{-ct}}
+  
+,
+waarin de constante bepaald wordt door de voorwaarde 
+  
+    
+      
+        A
+        =
+        h
+        (
+        0
+        )
+      
+    
+    {\displaystyle A=h(0)}
+  
+.
+Stel namelijk dat ook 
+  
+    
+      
+        
+          
+            
+              h
+              ~
+            
+          
+        
+      
+    
+    {\displaystyle {\tilde {h}}}
+  
+ een oplossing is, dan volgt:
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  
+                    h
+                    ~
+                  
+                
+                h
+              
+            
+            )
+          
+          ′
+        
+        =
+        
+          
+            
+              
+                
+                  
+                    
+                      h
+                      ~
+                    
+                  
+                
+                ′
+              
+              h
+              −
+              
+                
+                  
+                    h
+                    ~
+                  
+                
+              
+              
+                h
+                ′
+              
+            
+            
+              h
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              −
+              c
+              
+                
+                  
+                    h
+                    ~
+                  
+                
+              
+              h
+              +
+              c
+              
+                
+                  
+                    h
+                    ~
+                  
+                
+              
+              h
+            
+            
+              h
+              
+                2
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \left({\frac {\tilde {h}}{h}}\right)'={\frac {{\tilde {h}}'h-{\tilde {h}}h'}{h^{2}}}={\frac {-c{\tilde {h}}h+c{\tilde {h}}h}{h^{2}}}=0}
+  
+
+Dus is 
+  
+    
+      
+        
+          
+            
+              h
+              ~
+            
+          
+        
+      
+    
+    {\displaystyle {\tilde {h}}}
+  
+ een veelvoud van 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+.
+
+
+== Niet-lineaire differentiaalvergelijkingen ==
+Het oplossen van niet-lineaire differentiaalvergelijkingen is een stuk moeilijker en onoverzichtelijker. Er is geen algemene oplossingsmethode voor.
+
+
+=== Voorbeeld 1 Slinger ===
+De bewegingsvergelijking van een slinger wordt gegeven door de volgende differentiaalvergelijking:
+
+  
+    
+      
+        
+          φ
+          ″
+        
+        (
+        t
+        )
+        +
+        ω
+         
+        sin
+        ⁡
+        
+          
+            (
+          
+        
+        φ
+        (
+        t
+        )
+        
+          
+            )
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \varphi ''(t)+\omega \ \sin {\big (}\varphi (t){\big )}=0}
+  
+
+Daarin is 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ de hoek die de slinger maakt met de verticale richting en 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ een constante. Deze vergelijking is niet oplosbaar met standaardtechnieken. Voor kleine uitwijkingen kan een benadering toegepast worden; dan is 
+  
+    
+      
+        sin
+        ⁡
+        (
+        φ
+        )
+        ≈
+        φ
+      
+    
+    {\displaystyle \sin(\varphi )\approx \varphi }
+  
+, zodat de vergelijking overgaat in  die van de harmonische oscillator:
+
+  
+    
+      
+        
+          φ
+          ″
+        
+        +
+        ω
+        φ
+        =
+        0
+      
+    
+    {\displaystyle \varphi ''+\omega \varphi =0}
+  
+
+
+=== Voorbeeld 2 Hangende ketting ===
+Een ander voorbeeld is de differentiaalvergelijking voor de vorm van een hangende ketting of touw:
+
+  
+    
+      
+        f
+        (
+        t
+        )
+        
+          f
+          ″
+        
+        (
+        t
+        )
+        =
+        (
+        
+          f
+          ′
+        
+        (
+        t
+        )
+        
+          )
+          
+            2
+          
+        
+        +
+        1
+      
+    
+    {\displaystyle f(t)f''(t)=(f'(t))^{2}+1}
+  
+
+Deze heeft de zogenaamde kettinglijn als algemene oplossing
+
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        C
+         
+        cosh
+        ⁡
+        
+          
+            
+              t
+              −
+              
+                t
+                
+                  0
+                
+              
+            
+            C
+          
+        
+      
+    
+    {\displaystyle f(t)=C\ \cosh {\frac {t-t_{0}}{C}}}
+  
+,
+met de integratieconstanten 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ en 
+  
+    
+      
+        
+          t
+          
+            0
+          
+        
+      
+    
+    {\displaystyle t_{0}}
+  
+.
+
+
+== Begin- en randvoorwaarden ==
+Om een eenduidige oplossing van een differentiaalvergelijking te krijgen, moeten randvoorwaarden opgelegd worden. In het algemeen kan gesteld worden dat voor een 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-de orde differentiaalvergelijking 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ verschillende randvoorwaarden nodig zijn.
+Bijvoorbeeld: de eerste orde differentiaalvergelijking
+
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        t
+        )
+        =
+        f
+        (
+        t
+        )
+      
+    
+    {\displaystyle f'(t)=f(t)}
+  
+
+heeft als algemene oplossing 
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        A
+        
+          e
+          
+            t
+          
+        
+      
+    
+    {\displaystyle f(t)=Ae^{t}}
+  
+, waarbij 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+  
+ nog onbepaald is. Door de beginvoorwaarde 
+  
+    
+      
+        f
+        (
+        0
+        )
+        =
+        1
+      
+    
+    {\displaystyle f(0)=1}
+  
+ op te leggen, wordt de oplossing eenduidig bepaald als 
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        
+          e
+          
+            t
+          
+        
+      
+    
+    {\displaystyle f(t)=e^{t}}
+  
+.
+
+
+=== Lineaire vergelijkingen ===
+Men kan bewijzen, dat een lineaire differentiaalvergelijking van 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+-de orde, met randvoorwaarden
+
+  
+    
+      
+        y
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            0
+          
+        
+      
+    
+    {\displaystyle y(x_{0})=y_{0}}
+  
+
+  
+    
+      
+        
+          y
+          ′
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            1
+          
+        
+      
+    
+    {\displaystyle y'(x_{0})=y_{1}}
+  
+
+...
+
+  
+    
+      
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        =
+        
+          y
+          
+            n
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle y^{(n-1)}(x_{0})=y_{n-1}}
+  
+
+één unieke continu oplossing heeft.
+Een mooi voorbeeld om de natuurkundige betekenis van begin- en randvoorwaarden te illustreren is de trillende snaar. De differentiaalvergelijking die een trillende snaar beschrijft heeft oneindig veel oplossingen (waaronder de nuloplossing voor een snaar in rust). Pas met de randvoorwaarden dat de snaar een amplitude nul heeft in haar bevestigingspunten, en de beginvoorwaarde van de stand van de snaar op een bepaald moment is een eenduidige oplossing te berekenen.
+
+
+=== Voorbeeld partiële differentiaalvergelijking van een snaar ===
+Veel verschijnselen in de natuurkunde moeten beschreven worden met behulp van partiële differentiaalvergelijkingen. Bijvoorbeeld de trilling van een snaar wordt beschreven door
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial x^{2}}}={\frac {\partial ^{2}u}{\partial t^{2}}}}
+  
+,
+waarbij 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        t
+        )
+      
+    
+    {\displaystyle u(x,t)}
+  
+ de uitwijking van de snaar is, 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ de positie van de snaar (van 0 aan het ene eind tot 1 aan het andere eind) en 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ de tijd. Deze partiële differentiaalvergelijking is van de tweede orde, zowel in de tijd als in de plaats. Er zijn dus twee randvoorwaarden in de tijd, beginvoorwaarden nodig, bijvoorbeeld
+
+  
+    
+      
+        u
+        (
+        x
+        ,
+        0
+        )
+        =
+        f
+        (
+        x
+        )
+        ,
+         
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        (
+        x
+        ,
+        0
+        )
+        =
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle u(x,0)=f(x),\ {\frac {\partial u}{\partial t}}(x,0)=g(x)}
+  
+
+en twee randvoorwaarden in de plaats, bijvoorbeeld
+
+  
+    
+      
+        u
+        (
+        0
+        ,
+        t
+        )
+        =
+        0
+      
+    
+    {\displaystyle u(0,t)=0}
+  
+,
+
+  
+    
+      
+        u
+        (
+        1
+        ,
+        t
+        )
+        =
+        0
+      
+    
+    {\displaystyle u(1,t)=0}
+  
+.
+Deze randvoorwaarden houden in dat de snaar is ingeklemd. Door middel van scheiden van veranderlijken is deze DV te herleiden tot twee gewone DV's, waarin alleen tijd of plaats als onafhankelijk variabele voorkomt.
+
+
+== Differentievergelijkingen ==
+Er kan ook met discrete variabelen in plaats van continue variabelen worden gerekend, maar men spreekt dan van differentievergelijkingen in plaats van differentiaalvergelijkingen.
+
+
+== Software ==
+Software die differentiaalvergelijkingen kan oplossen:
+
+ExpressionsInBar
+Maple
+SageMath
+Xcas
+
+
+== Zie ook ==
+Lineaire differentiaalvergelijking van eerste orde
+Methode van de onbepaalde coëfficiënten: methode voor het vinden van een particuliere oplossing.
+Orthogonale families
+Variatie van de parameters: methode voor het vinden van een particuliere oplossing.
+
+
+== Externe bronnen ==
+(en)  videocolleges over differentiaalvergelijkingen op MIT OpenCourseWare door professor Arthur Mattuck
+Oplossingsmethode voor enkele soorten differentiaalvergelijkingen.
+
+
+== Referenties ==

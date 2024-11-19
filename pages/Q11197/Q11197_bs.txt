@@ -1,0 +1,816 @@
+U matematici, logaritam je inverzna operacija za eksponenciju. To znači da je logaritam broja ustvari eksponent za koju određena fiksna vrijednost, baza, mora biti stepenovana da proizvede taj broj. U jednostavnim slučajevima logaritam se smatra ponovljenim množenjem. Naprimjer, baza 10 logaritma od 1000 jeste 3, jer 10 stepenovan brojem 3 daje 1000 (1000 = 10 × 10 × 10 = 103); multiplikacija se ponavlja tri puta. Općenitije, eksponencija dopušta bilo kojem realnom broju da se podigne na bilo koji realan stepen, uvijek proizvodeći pozitivan rezultat, tako da se logaritam može izračunati za bilo koja dva pozitivna realna broja b i x gdje b nije jednako 1. Logaritam od x za bazu b, piše se logb(x), jedinstven je realan broj y takav da vrijedi
+
+by = x.
+Naprimjer, jer je 64 = 26, onda je:
+
+log2(64) = 6
+Logaritam za bazu 10 (gdje je b = 10) zove se opći algoritam i ima nekoliko primjena u nauci i inženjerstvu. Prirodni logaritam ima broj e (≈ 2.718) kao bazu; njegova primjena je raširena u matematici i fizici, zbog svog jednostavnijeg izvoda. Binarni logaritam koristi bazu 2 (gdje je b = 2) i često se koristi u računarstvu.
+Logaritme je uveo John Napier početkom 17. vijeka radi pojednostavljenja proračuna. Oni se uveliko koriste od strane navigatora, naučnika, inženjera i ostalih kako bi se računarski proračuni izvršavali mnogo lakše, koristeći logaritmar i logaritamske tablice. Zamorno višecifreno množenje mogu zamijeniti tablice s jednostavnim sabiranjem zbog činjenice — veoma važne — da je logaritamski proizvod zapravo zbir logaritama faktora:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        ,
+        
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y),\,}
+  
+
+gdje su b, x i y svi pozitivni i b ≠ 1.
+Današnji pojam logaritma dolazi od Leonharda Eulera, koji je napravio vezu između logaritama i eksponencijalne funkcije u 18. vijeku.
+Logaritamska skala smanjuje širok spektar veličina na manje prostora. Naprimjer, decibel je mjerna jedinica jačine signala snage log-odnosa i amplitude log-odnosa (od kojih je zvučni pritisak čest primjer). U hemiji, pH je logaritamska mjera za kiselost vodene otopine. Logaritmi su uobičajena u naučnim formulama, te u mjerama kompleksnosti algoritama i geometrijskih objekata zvanih fraktali. Oni opisuju muzičke intervale, pojavljuju se u formulama brojeći proste brojeve, informišu neke modele u psihofizici, te mogu pomoći u forenzičkom računovodstvu.
+Na isti način kako logaritam služi eksponenciji, kompleksni logaritam je inverzna funkcija eksponencijalne funkcije primijenjene na kompleksne brojeve. Diskretni logaritam je naredna varijanta; koristi se u asimetričnoj kriptografiji.
+
+
+== Motivacija i definicija ==
+Ideja logaritama je da obrnu operaciju eksponencije, to jeste, stepenovanje broja određenim stepenom. Naprimjer, treći stepen (ili kocka) od 2 jeste 8, jer je 8 proizvod tri faktora 2:
+
+  
+    
+      
+        
+          2
+          
+            3
+          
+        
+        =
+        2
+        ×
+        2
+        ×
+        2
+        =
+        8.
+        
+      
+    
+    {\displaystyle 2^{3}=2\times 2\times 2=8.\,}
+  
+
+To znači daje logaritam od 8 sa bazom 2 upravo 3, tako da je log2 8 = 3.
+
+
+=== Eksponencija ===
+Treći stepen nekog broja b jeste proizvod tri faktora od b. Općenitije, stepenovanjem b na n-ti stepen, gdje je n prirodni broj, radi se množenjem n faktora od b. n-ti stepen od b se piše kao bn, tako da je
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                b
+                ×
+                b
+                ×
+                ⋯
+                ×
+                b
+              
+              ⏟
+            
+          
+          
+            n
+            
+               factors
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factors}}}.}
+  
+
+Eksponencija se može proširiti na by, gdje je b pozitivni broj i eksponent y je bilo koji realni broj. Naprimjer, b−1 je recipročan od b, to jeste, 1/b.
+
+
+=== Definicija ===
+Logaritam pozitivnog realnog broja x sa bazom b, pozitivni realan broj nejednak sa 1, jeste eksponent kojim b mora biti stepenovan da se dobije x. Drugim riječima, logaritam od x za bazu b je rješenje y za jednačinu
+
+  
+    
+      
+        
+          b
+          
+            y
+          
+        
+        =
+        x
+        .
+        
+      
+    
+    {\displaystyle b^{y}=x.\,}
+  
+
+Logaritam je opisan "logb(x)" (čita se "logaritam od x za bazu b". U jednačini y = logb(x), vrijednost y je odgovor na pitanje "Na koji stepen mora biti b dignut, da bi se dobio x?". Ovo pitanje može također biti upućeno (sa bogatijim odgovorom) za kompleksne brojeve, što je pokazano u sekciji "Kompleksni logaritam".
+
+
+=== Primjeri ===
+Naprimjer, log2(16) = 4, pošto je 24 = 2 ×2 × 2 × 2 = 16. Logaritmi također mogu biti negativni:
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        
+        
+          (
+          
+            
+              1
+              2
+            
+          
+          )
+        
+        =
+        −
+        1
+        ,
+        
+      
+    
+    {\displaystyle \log _{2}\!\left({\frac {1}{2}}\right)=-1,\,}
+  
+
+pošto je
+
+  
+    
+      
+        
+          2
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.}
+  
+
+Treći primjer: log10(150) je približno 2.176, što leži između 2 i 3, kao što 150 leži između 102 = 100 i 103 = 1000. Konačno, za bilo koju bazu b, logb(b) = 1 i logb(1) = 0, pošto važi b1 = b i b0 = 1, redom.
+
+
+== Logaritamski identiteti ==
+
+Nekoliko važnih formula, ponekad zvanih logaritamski identiteti ili logaritamski zakoni, vežu logaritme međusobno.
+
+
+=== Proizvod, koeficijent, stepen i korijen ===
+Logaritam proizvoda jeste suma logaritama brojeva koji se množe; logaritam odnosa dva broja jednaka je razlici logaritama. Logaritam od p-tog stepena broja je p puta logaritam samog broja; logaritam od p-tog korijena je logaritam broja podijeljen sa p. Slijedeća tabela pokazuje ove identitete sa primjerima. Svaki od ovih identiteta može biti izveden nakon smjene definicije logaritma 
+  
+    
+      
+        x
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+      
+    
+    {\displaystyle x=b^{\log _{b}(x)}}
+  
+ ili 
+  
+    
+      
+        y
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            y
+            )
+          
+        
+      
+    
+    {\displaystyle y=b^{\log _{b}(y)}}
+  
+ na lijevoj strani.
+
+
+=== Izmjena baze ===
+Logaritam logb(x) može biti izračunat iz logaritama od x i b uzimajući u obzir proizvoljnu bazu k preko sljedeće formule:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{k}(x)}{\log _{k}(b)}}.\,}
+  
+
+Obični naučni digitron računa logaritme sa bazama 10 i konstantom e. Logaritmi s obzirom na bilo koju bazu b mogu se odrediti korištenjem bilo kojih od dva logaritama preko prethodne formule:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{10}(x)}{\log _{10}(b)}}={\frac {\log _{e}(x)}{\log _{e}(b)}}.\,}
+  
+
+Neka je dat broj x i njegov logaritam logb(x) za nepoznatu bazu b, baza je data sa:
+
+  
+    
+      
+        b
+        =
+        
+          x
+          
+            
+              1
+              
+                
+                  log
+                  
+                    b
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b=x^{\frac {1}{\log _{b}(x)}}.}
+  
+
+
+== Određene baze ==
+Među svim izborima za bazu, tri su posebno česta. To su b = 10, b = e (iracionalna matematička konstanta ≈ 2,71828), i b = 2. U matematičkoj analizi, logaritam za bazu e je raširen zbog svojih određenih analitičkih svojstava objašnjenih ispod. U drugu ruku, algoritmi s bazom 10 su jednostavni za koristiti za ručne proračune u decimalnom brojnom sistemu:
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        x
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        )
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        .
+         
+      
+    
+    {\displaystyle \log _{10}(10x)=\log _{10}(10)+\log _{10}(x)=1+\log _{10}(x).\ }
+  
+
+Tako, log10(x) je vezan za broj decimalnih brojeva pozitivnog cijelog broja x: broj brojki je najmanji cijeli broj striktno veći od log10(x). Naprimjer, log10(1430) je približno 3,15. Slijedeći cijeli broj je 4, što je broj brojki od 1430. I prirodni logaritam i logaritam za bazu 2 se koriste u informacionoj teoriji, što odgovara upotrebi natu ili bitovima kao osnovnim jedinicama informacije, respektivno. Binarni logaritmi su također korišteni u računarstvu, gdje je binarni brojni sistem sveprisutan, u muzičkoj teoriji, gdje je omjer visine tona dva (oktava) sveprisutan i cent je binarni logaritam (umanjen za 1200) od odnosa između dva susjedna jednako smirena tona, te u fotografiji za mjerenje vrijednosti izlaganja.
+Slijedeća tabela pokazuje česte notacije za logaritme za ove baze i polja gdje se koriste. Dosta disciplina piše log(x) umjesto logb(x), kada se izabrana baza može odrediti iz konteksta. Notacija blog(x) također se pojavljuje. Kolona "ISO notacija" pokazuje preporuke od ISO organizacije, (ISO 31-11).
+
+
+== Historija ==
+
+Historija logaritama u Evropi u 17. vijeku jeste otkriće nove funkcije koja je proširila stvarnost analize iza opsega algebarske metode. Metodu logaritama je javno objavio John Napier 1614. godine, u knjizi naslova Mirifici Logarithmorum Canonis Descriptio (Opis čudesnog pravila logaritama). Prije Napierovog izuma, postojale su slične tehnike sličnog opsega, kao što su prostafereza ili korištenje tablica progresije, koje je ekstenzivno razvio Jost Bürgi oko 1600. godine.
+Opći logaritam broja je indeks onog stepena od deset koji je jednak tom broju. Govoreći o broju koji zahtijeva mnogo cifara jeste grubi nagovještaj općeg logaritma, kojeg je spominjao Arhimed kao "red broja". Prvi realni logaritmi bile su heurističke metode koje su pretvarale množenje u sabiranje, čime se olakšava brzo računanje. Neke od tih metoda koristile su tablice izvedene iz trigonometrijskih identiteta.
+Takve metoda se naziva prostafereza.
+Izum funkcije sada poznate kao prirodni logaritam počeo je kao pokušaj da se obavi kvadratura pravougaone hiperbole od Gregoire de Saint Vincenta, belgijskog Jezuita koji je boravio u Pragu. Arhimed je napisao Kvadraturu hiperbole u 3. vijeku p.n.e, ali kvadratura za hiperbolu izmicala je svima naporima dok Saint-Vincent nije objavio svoje rezultate 1647. godine. Veza koju pruža logaritam između geometrijske progresije u svom argumentu i aritmetičke progresije vrijednosti, podstakla je A. A. de Sarasa da napravi vezu između Saint-Vincentove kvadrature i tradicije logaritama u prostaferezi, što je dovelo do pojma "hiperbolni logaritam", sinomnim za prirodni logaritam. Uskoro je nova funkcija cijenjena od strane naučnik: Huygensa, Pataviija, i Jamesa Gregoryja. Notaciju Log y je uveo Leibniz 1675. godine, a sljedeće godine on ju je povezao sa integralom
+
+  
+    
+      
+        ∫
+        
+          
+            
+              d
+              y
+            
+            y
+          
+        
+        .
+      
+    
+    {\displaystyle \int {\frac {dy}{y}}.}
+  
+
+
+== Logaritamke tablice, logaritamska skala i historijske primjene ==
+
+Pojednostavljenjem teških proračuna, logaritmi su doprinijeli razvoju nauke, naročito astronomije. Bili su značajni za napredak u anketiranje, nebeskoj navigaciji i drugim domenama. Pierre-Simon Laplace nazivao je logaritme:
+
+"...divljenja vrijedno lukavstvo koje, reduciranjem na nekoliko dana rad od nekoliko mjeseci, uduplava život astronoma, te ga pošteđuje grešaka i gađenja koje uzrokuje dugi proračun."
+Ključni alat koji je dopustio praktičnu upotrebu logaritama prije digitrona i računara bile su logaritamske tablice. Prvu takvu tablicu kompajlirao je Henry Briggs 1617. godine, odmah nakon Napierovog izuma. Naknadno, napravljene su tablice sa povećanim opsegom. Ove tablice su listale vrijednosti od logb(x) i bx za svaki broj x u određenom opsegu, sa određenom preciznošću, za određenu bazu b (često b = 10). Naprimjer, Briggsova prva tabela sadržavala je opće logaritme svih cijelih brojeva u nizu 1–1000, sa preciznošću od 14 cifara. Kako je funkcija f(x) = bx inverzna funkcija od logb(x), bila je nazvana antilogaritam. Proizvod i koeficijent od dva pozitivna broja c i d bili su rutinski računari kao suma i razlika njihovih logaritama. Proizvod cd ili koeficijent c/d dolazio je od uzimanja antilogaritma zbira ili razlike, također preko iste tabele:
+
+  
+    
+      
+        c
+        d
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            +
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        
+      
+    
+    {\displaystyle cd=b^{\log _{b}(c)}\,b^{\log _{b}(d)}=b^{\log _{b}(c)+\log _{b}(d)}\,}
+  
+
+i
+
+  
+    
+      
+        
+          
+            c
+            d
+          
+        
+        =
+        c
+        
+          d
+          
+            −
+            1
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            −
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\frac {c}{d}}=cd^{-1}=b^{\log _{b}(c)-\log _{b}(d)}.\,}
+  
+
+
+== Analitička svojstva ==
+Dublji studiji logaritama zahtijevaju koncept funkcije. Funkcija je pravilo koje, kada mu se da broj, proizvodi neki drugi broj. Primjer je funkcija koja proizvodi x-ti stepen od b za bilo koji realan broj x, gdje je baza b fiksni broj. Ova se funkcija piše kao
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          b
+          
+            x
+          
+        
+        .
+        
+      
+    
+    {\displaystyle f(x)=b^{x}.\,}
+  
+
+
+=== Logaritamska funkcija ===
+Da bi se opravdala definicija logaritama, potrebno je pokazati da jednačina
+
+  
+    
+      
+        
+          b
+          
+            x
+          
+        
+        =
+        y
+        
+      
+    
+    {\displaystyle b^{x}=y\,}
+  
+
+ima rješenje x i da je rješenje jedinstveno, pod uvjetom da je y pozitivan i da je b pozitivan i različit od 1. Dokaz ovog slučaja zahtijeva teoremu o srednjoj vrijednosti iz elementarnog kalkulusa. Ova teorema drži da neprekidna funkcija koja proizvodi dvije vrijednosti m i n također proizvodi bilo koju vrijednost koja leži između m i n. Funkcija je neprekidna ako ne "skače", tj. ako se njezin grafik može nacrtati bez podizanja olovke.
+Ovo svojestvo može biti prikazano da važi za funkciju f(x) = bx. Pošto f uzima proizvoljno velike i proizvoljno male pozitivne vrijednosti, bilo koji broj y > 0 leži između f(x0) i f(x1) za odgovarajući x0 and x1. Stoga, teorema o srednjoj vrijednosti osigurava da jednačina f(x) = y ima rješenje. Štaviše, postoji samo jedno rješene za ovu jednačinu, jer je funkcija f strogo rastuća (za b > 1), ili strogo opadajuća (za 0 < b < 1).
+Jedinstveno rješenje x je logaritam od y za bazu b, logb(y). Funkcija koja dodjeljuje y svoj logaritam zove se logaritamska funkcija ili logaritmična funkcija (ili samo logaritam).
+Funkcija logb(x) je u suštini okarakerisana formulom proizvoda iznad
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y).}
+  
+
+Preciznije, logaritam za svaku bazu b > 1 je samo rastuća funkcija f od pozitivnih realnih brojeva do realnih brojeva koji zadovoljavaju f(b) = 1 i 
+
+  
+    
+      
+        f
+        (
+        x
+        y
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        f
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle f(xy)=f(x)+f(y).}
+  
+
+
+== Također pogledajte ==
+Prirodni logaritam
+Beskonačni logaritam
+Iterativni logaritam
+Diskretni logaritam
+Zechovi logaritmi
+Logaritam matrice
+Decibel
+
+
+== Bilješke ==
+
+
+== Reference ==
+
+
+== Vanjski linkovi ==
+
+Khan Academy: Logarithms, free online micro lectures
+Hazewinkel, Michiel, ured. (2001), "Logarithmic function", Matematička enciklopedija, Kluwer Academic Publishers, ISBN 978-1556080104
+Colin Byfleet, Educational video on logarithms, pristupljeno 12. 10. 2010
+Edward Wright, Translation of Napier's work on logarithms, arhivirano s originala, 3. 12. 2002, pristupljeno 12. 10. 2010

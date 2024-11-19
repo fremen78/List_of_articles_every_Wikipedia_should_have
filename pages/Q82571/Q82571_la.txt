@@ -1,0 +1,1261 @@
+Algebra linearis est pars algebrae quae de vectoribus, matricibus, aequationibus linearibus tractat.  Notio maximi momenti est transformatio linearis, quae modificat coordinatas aequationum, et quae facit transformationem geometricam inter duo spatia vectorum. Transformatio linearis inter spatia finitarum dimensionum semper per matricem scribi potest.
+
+
+== Aequationes lineares ==
+
+Algebra linearis nomen habet quod de aequationibus linearibus tractat. Hae sunt aequationes ubi nulla quantitas variabilis ad potestatem maior quam unitatem appareat, nec appareant functiones aliae ut trigonometricae vel exponentialis. Forma aequationis linearis est ergo:
+
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        
+          x
+          
+            0
+          
+        
+        +
+        
+          a
+          
+            1
+          
+        
+        
+          x
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+        =
+        b
+      
+    
+    {\displaystyle a_{0}x_{0}+a_{1}x_{1}+\dots +a_{n}x_{n}=b}
+  
+
+Tabula talis aequationis est linea.  Exempli gratia:
+
+  
+    
+      
+        2
+        x
+        −
+        y
+        =
+        1
+      
+    
+    {\displaystyle 2x-y=1}
+  
+
+  
+    
+      
+        3
+        x
+        +
+        y
+        =
+        9
+      
+    
+    {\displaystyle 3x+y=9}
+  
+
+(Possumus etiam scribere y = 2x - 1 et y = -3x + 9, sed nihil refert utrum x an y sit variabilis dependens.)
+Si tantas aequationes habemus quantas variabiles in aequationibus, et si aequationes differunt inter se, est vel una tantum solutio, vel nulla. Si plures variabiles sunt quam aequationes, quantitas solutionum est infinita.
+Ut solutionem systematis inveniamus, debemus calculare. Possumus multiplicare aequationem per numerum; possumus unam ad aliam aequationem addere.
+
+  
+    
+      
+        2
+        x
+        −
+        y
+        =
+        1
+      
+    
+    {\displaystyle 2x-y=1}
+  
+
+  
+    
+      
+        3
+        x
+        +
+        y
+        =
+        9
+      
+    
+    {\displaystyle 3x+y=9}
+  
+
+Addimus primam ad secundam:
+
+  
+    
+      
+        2
+        x
+        −
+        y
+        =
+        1
+      
+    
+    {\displaystyle 2x-y=1}
+  
+
+  
+    
+      
+        5
+        x
+        +
+        0
+        =
+        10
+      
+    
+    {\displaystyle 5x+0=10}
+  
+
+Multiplicamus secundam per numerum 1/5:
+
+  
+    
+      
+        2
+        x
+        −
+        y
+        =
+        1
+      
+    
+    {\displaystyle 2x-y=1}
+  
+
+  
+    
+      
+        1
+        x
+        +
+        0
+        =
+        2
+      
+    
+    {\displaystyle 1x+0=2}
+  
+
+Nunc scimus x = 2 in solutione;  si x = 2 in quemlibet aequationem mittimus, inveniemus y:
+
+  
+    
+      
+        2
+        (
+        2
+        )
+        −
+        y
+        =
+        1
+      
+    
+    {\displaystyle 2(2)-y=1}
+  
+
+h.e., 
+  
+    
+      
+        4
+        −
+        y
+        =
+        1
+      
+    
+    {\displaystyle 4-y=1}
+  
+ et y = 3
+Si alia aequatione utimur, eandem solutionem inveniemus:
+
+  
+    
+      
+        3
+        (
+        2
+        )
+        +
+        y
+        =
+        9
+      
+    
+    {\displaystyle 3(2)+y=9}
+  
+
+h.e., 
+  
+    
+      
+        6
+        +
+        y
+        =
+        9
+      
+    
+    {\displaystyle 6+y=9}
+  
+, et y = 3
+Punctum (2, 3) est intersectio linearum.
+Systema duarum aequationum perfacilis est solvere; quid si plures sunt aequationes et plures variabiles?  Eaedem calculationes ad solutionem ducunt.
+
+
+== Matrices ==
+
+Coefficientes aequationum in matrice disponimus ut facilius systema solveamus.  Exempli gratia,
+
+2a + b + c = 8
+3a - 2b - c = 1
+4a - 7b + 3c = 10
+Possumus tabulam vel matricem facere:
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  2
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  8
+                
+              
+              
+                
+                  3
+                
+                
+                  −
+                  2
+                
+                
+                  −
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  4
+                
+                
+                  −
+                  7
+                
+                
+                  3
+                
+                
+                  10
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}2&1&1&8\\3&-2&-1&1\\4&-7&3&10\end{pmatrix}}}
+  
+
+Tunc easdem operationes quas in aequationibus facimus possumus in matricem facere: lineam per numerum multiplicere, lineam ad aliam addere; possumus etiam lineas permutare. Matrix habet formam per gradus si:
+
+omnes lineae quarum elementa sunt zero in infima parte matricis sunt
+primum elementum (ad sinistram) quod non est zero est 1
+primum elementum 1 in linea inferiore stat dexteriore elementi 1 lineae superiore
+Si matricem in formam per gradus reducimus, solutio systematis aequationum facile invenitur. 
+Si matrix habet formam per gradus, et in omne columna, ubi est elementum 1 primum cuiuslibet lineae, omnia alia elementa 0 sunt, dicimus matricem habere formam reductam per gradus.
+Exempla:
+Matrix in forma per gradus:
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  3
+                
+                
+                  5
+                
+                
+                  7
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  5
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}1&3&5&7\\0&0&1&5\\0&0&0&0\end{pmatrix}}}
+  
+
+Matrix in forma reducta per gradus:
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  9
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  4
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  6
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}1&0&0&9\\0&1&0&4\\0&0&1&6\end{pmatrix}}}
+  
+
+Simplicius autem est systema aequationum linearium scribere in forma AX = B, ubi X = (x1, x2...) est vector cuius elementa sunt quantitates variables aequationum, A est matrix coefficientum, B est vector cuius elementa sunt quantitates in dextera parte aequationum. Exempli gratia, harum aequationum
+
+2a + b + c = 8
+3a - 2b - c = 1
+4a - 7b + 3c = 10
+haec est aequatio inter matrices:
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  2
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  3
+                
+                
+                  −
+                  2
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  4
+                
+                
+                  −
+                  7
+                
+                
+                  3
+                
+              
+            
+            )
+          
+        
+        
+          
+            (
+            
+              
+                
+                  a
+                
+              
+              
+                
+                  b
+                
+              
+              
+                
+                  c
+                
+              
+            
+            )
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  8
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  10
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}2&1&1\\3&-2&-1\\4&-7&3\end{pmatrix}}{\begin{pmatrix}a\\b\\c\end{pmatrix}}={\begin{pmatrix}8\\1\\10\end{pmatrix}}}
+  
+
+Si matrix A invertibilis est, solutio AX = B est X = A-1B. Et si non est invertibilis, non exstat solutio.
+Matrices quadratae (quae tantas lineas habet quantas columnas) possunt invertibiles esse; matrices non quadratae non sunt.
+Matrix idemfactor vel I ext matrix quadrata cuius elementa in diagonale sunt 1 et alia sunt 0:  
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}}}
+  
+  Est idemfactor quod si quemlibet matricem A per I multiplicamus, productum est A ipsa:  AI = IA = A.
+Si A est matrix, inversa A-1 est illa matrix ut A A-1 = I, et A-1A = I.
+Multiplicatio matricum non commutativa est. Matrices invertibiles magnitudinis cuiusdam, cum additione et multiplicatione, sunt anellus: idemfactor additionis est matrix cuius omnia elementa sunt 0, et I est idemfactor multiplicationis.
+Matrix quadrata A habet determinans det(A) vel |A|, qui est numerus scalar. Si A habet n lineas, sit productum elementarium in A productum n elementorum matricis, ut nulla ex eadem linea nec ex eadem columna veniant. Exempli gratia, sit A 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                  
+                    a
+                    
+                      12
+                    
+                  
+                  
+                    a
+                    
+                      13
+                    
+                  
+                
+              
+              
+                
+                  
+                    a
+                    
+                      21
+                    
+                  
+                  
+                    a
+                    
+                      22
+                    
+                  
+                  
+                    a
+                    
+                      23
+                    
+                  
+                
+              
+              
+                
+                  
+                    a
+                    
+                      31
+                    
+                  
+                  
+                    a
+                    
+                      32
+                    
+                  
+                  
+                    a
+                    
+                      33
+                    
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}a_{11}a_{12}a_{13}\\a_{21}a_{22}a_{23}\\a_{31}a_{32}a_{33}\end{pmatrix}}}
+  
+ Tunc 
+  
+    
+      
+        
+          a
+          
+            11
+          
+        
+        ×
+        
+          a
+          
+            23
+          
+        
+        ×
+        
+          a
+          
+            32
+          
+        
+      
+    
+    {\displaystyle a_{11}\times a_{23}\times a_{32}}
+  
+ est productum elementarium, sed 
+  
+    
+      
+        
+          a
+          
+            11
+          
+        
+        ×
+        
+          a
+          
+            21
+          
+        
+        ×
+        
+          a
+          
+            32
+          
+        
+      
+    
+    {\displaystyle a_{11}\times a_{21}\times a_{32}}
+  
+ non est, quod duae elementa e prima columna veniunt. Productum elementarium est ergo 
+  
+    
+      
+        
+          a
+          
+            1
+            
+              j
+              
+                1
+              
+            
+          
+        
+        
+          a
+          
+            2
+            
+              j
+              
+                2
+              
+            
+          
+        
+        
+          a
+          
+            3
+            
+              j
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle a_{1j_{1}}a_{2j_{2}}a_{3j_{3}}}
+  
+ -- tria elementa, e prima, secunda, altera lineis. Nunc, si (j1, j2, j3) est permutatio par numerorum (1, 2, 3), sit signum producti elementari +1, et si permutatio est impar, sit signum -1.  Tunc, determinans est summa omnium productorum elementariorum per signa multiplicatorum.
+Exempli gratia, si A est 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  
+                    a
+                    
+                      11
+                    
+                  
+                  
+                    a
+                    
+                      12
+                    
+                  
+                  
+                    a
+                    
+                      13
+                    
+                  
+                
+              
+              
+                
+                  
+                    a
+                    
+                      21
+                    
+                  
+                  
+                    a
+                    
+                      22
+                    
+                  
+                  
+                    a
+                    
+                      23
+                    
+                  
+                
+              
+              
+                
+                  
+                    a
+                    
+                      31
+                    
+                  
+                  
+                    a
+                    
+                      32
+                    
+                  
+                  
+                    a
+                    
+                      33
+                    
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}a_{11}a_{12}a_{13}\\a_{21}a_{22}a_{23}\\a_{31}a_{32}a_{33}\end{pmatrix}}}
+  
+   tunc producta elementaria (cum signis) sunt:
+
+  
+    
+      
+        +
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            22
+          
+        
+        
+          a
+          
+            33
+          
+        
+        ,
+        −
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            23
+          
+        
+        
+          a
+          
+            32
+          
+        
+      
+    
+    {\displaystyle +a_{11}a_{22}a_{33},-a_{11}a_{23}a_{32}}
+  
+
+  
+    
+      
+        −
+        
+          a
+          
+            12
+          
+        
+        
+          a
+          
+            21
+          
+        
+        
+          a
+          
+            33
+          
+        
+        ,
+        +
+        
+          a
+          
+            12
+          
+        
+        
+          a
+          
+            23
+          
+        
+        
+          a
+          
+            31
+          
+        
+      
+    
+    {\displaystyle -a_{12}a_{21}a_{33},+a_{12}a_{23}a_{31}}
+  
+
+  
+    
+      
+        +
+        
+          a
+          
+            13
+          
+        
+        
+          a
+          
+            21
+          
+        
+        
+          a
+          
+            32
+          
+        
+        ,
+        −
+        
+          a
+          
+            13
+          
+        
+        
+          a
+          
+            22
+          
+        
+        
+          a
+          
+            31
+          
+        
+      
+    
+    {\displaystyle +a_{13}a_{21}a_{32},-a_{13}a_{22}a_{31}}
+  
+
+et det(A) = 
+  
+    
+      
+        +
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            22
+          
+        
+        
+          a
+          
+            33
+          
+        
+        −
+        
+          a
+          
+            11
+          
+        
+        
+          a
+          
+            23
+          
+        
+        
+          a
+          
+            32
+          
+        
+        −
+        
+          a
+          
+            12
+          
+        
+        
+          a
+          
+            21
+          
+        
+        
+          a
+          
+            33
+          
+        
+        +
+        
+          a
+          
+            12
+          
+        
+        
+          a
+          
+            23
+          
+        
+        
+          a
+          
+            31
+          
+        
+        +
+        
+          a
+          
+            13
+          
+        
+        
+          a
+          
+            21
+          
+        
+        
+          a
+          
+            32
+          
+        
+        −
+        
+          a
+          
+            13
+          
+        
+        
+          a
+          
+            22
+          
+        
+        
+          a
+          
+            31
+          
+        
+      
+    
+    {\displaystyle +a_{11}a_{22}a_{33}-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32}-a_{13}a_{22}a_{31}}
+  
+
+Determinans matricis A eadem est atque determinans matricis transposatae AT.
+Matrix quadrata invertibilis est si et tantum si det(A) ≠ 0.  Et si A est invertibilis, 
+  
+    
+      
+        det
+        (
+        
+          A
+          
+            −
+          
+        
+        1
+        )
+        =
+        
+          
+            1
+            
+              det
+              (
+              A
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \det(A^{-}1)={\frac {1}{\det(A)}}}
+  
+
+Sit A matrix quadrata n×n, et x vector qui n elementa habet. Si est numerus scalar λ ut Ax = λx, dicimus λ esse eigenvalorem aut valorem proprium matricis A, et x eigenvectorem (vectorem proprium). A potest usque ad n valores proprios habere.
+Si Ax = λx, tunc Ax = λIx (ubi I est matrix idemfactor n×n), hoc est λIx - Ax = 0, vel (λI - A)x = 0.  Hoc est systema aequationum linearum, et solutionem non-0 habet si matricem (λI - A) non invertibilem esse, hoc est si determinans huius matricis est 0.(Si matrix est invertibilis, sola solutio est x = 0). Et det(λI - A) est polynomium scalar gradus n; debemus aequationem det(λI - A) = 0 solvere.
+
+
+== Spatia vectorum ==
+Spatium vectorum est copia vectorum in qua exstant duo operationes:  additio vectorum et multiplicatio vectoris per scalarem.
+Si (A) est matrix, lineae A sunt vectores, et columnae sunt vectores.  Spatium minimum in quo sunt lineae matricis A est spatium linearum A;  similiter, spatium columnarum A est spatium minimum in quo sunt columnae. Operationes elementariae in lineas (additio unius ad aliam, multiplicatio per scalarem) spatium linearum non mutant. Spatium linearum et spatium columnarum eandem dimensionem habent (quae est ordo matricis).  Ordo matricis invertibilis n×n est n.
+
+
+== Transformationes lineares ==
+Transformatio linearis est functio F cuius dominium et codominium sunt spatia vectorum, ut:
+
+F(a + b) = F(a) + F(b), si a et b sunt vectores in dominio
+F(ka) = kF(a), si k est numerus scalaris
+Si dimensio amborum spatiorum finita est, functio F per matricem scribi potest, ut F(a) = MF × a (ubi MF est matrix quae transformationem facit). Hoc est, transformatio linearis est multiplicatio per matricem.
+Exempli gratia, sit M = 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  cos
+                  ⁡
+                  (
+                  θ
+                  )
+                
+                
+                  −
+                  sin
+                  ⁡
+                  (
+                  θ
+                  )
+                
+              
+              
+                
+                  sin
+                  ⁡
+                  (
+                  θ
+                  )
+                
+                
+                  cos
+                  ⁡
+                  (
+                  θ
+                  )
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}\cos(\theta )&-\sin(\theta )\\\sin(\theta )&\cos(\theta )\end{pmatrix}}}
+  
+ Tunc Mx = vector x, per θ angulum rotatus.
+
+
+== Historia ==
+Mathematici Europaeani a saeculo 17 systemata aequationum linearium solvere voluerunt.  Leibnitius et, paulo post, Cramer solutionem per determinantem matricis coefficientium scripserunt;  talis solutio nunc Lex Crameri nominatur.  Sylvester nomine quod est matrix primus usus est, ut videtur.  Gauss autem non de solutionibus aequationum sed de transformationibus linearibus tractat (in Disquisitionibus Arithmeticis). Cayley theoriam algebraicam matricium explicuit:  primus ergo fuit qui "algebram linearem" sensu stricto fecit.
+Mathematici Sinici theoriam similem noverunt, etiamsi algebram abstractam non habuerent.
+
+
+== Notae ==
+
+
+== Nexus interni ==
+Algebra abstracta
+Functio linearis
+
+
+== Bibliographia ==
+Anton, Howard. 1977. Elementary Linear Algebra. Novi Eboraci: John Wiley & Sons.
+Birkhoff, Garrett, et Saunders MacLane. 1965. A Survey of Modern Algebra. Editio tertia. Novi Eboraci: Macmillan.
+Bourbaki, Nicolas Bourbaki. 2007.  Algèbre, chapitres 1 à 3 Éléments de mathematique. Berolini: Springer Verlag.
+Gowers, Timothy, ed. 2008. The Princeton Companion to Mathematics. Princeton:  Princeton University Press.  ISBN 978-0-691-11880-2.
+Hart, Roger. 2011. The Chinese Roots of Linear Algebra.  Baltimore:  Johns Hopkins University Press.  ISBN 978-0-8018-9755-9.
+Heffron, Jim. 2011. Linear Algebra. Liber ab auctore editus, in rete
+
+
+== Nexus Externi ==
+Cursus scholasticus apud MIT
+Cursus scholasticus a Keith Matthews propositus
+Cursus scholasticus ex Universitate Massiliense

@@ -1,0 +1,70 @@
+Algoritmus  je postupnosť presne definovaných inštrukcií na splnenie určitej úlohy. Algoritmus je elementárnym pojmom informatiky – nie je ho možné popísať pomocou ešte elementárnejších pojmov – tak ako napr. pojmy bod a číslo v matematike. Algoritmus nazývame čiastočne správny, ak v prípade že skončí, dáva vždy správne výsledky. Algoritmus nazývame konečný, ak pre ľubovoľné vstupné údaje skončí v konečnom čase. Algoritmus, ktorý je čiastočne správny a konečný, sa nazýva správny. Algoritmizácia je schopnosť aktívne vytvárať algoritmy určené pre nemysliace zariadenie. Je nevyhnutná pri vytváraní počítačových programov. Program je algoritmus napísaný v programovacom jazyku.
+
+
+== Vlastnosti algoritmov ==
+Vzhľadom na svoju dlhú históriu predstavuje slovo algoritmus veľmi všeobecný pojem, ktorý nemá jednoznačnú formálnu definíciu. Preto sa jeho súčasná neformálna definícia v informatike obmedzuje vlastnosťami, ktoré musí spĺňať, aby sa dali algoritmy podrobiť vedeckému skúmaniu. Neexistuje jednoznačná zhoda na jedinej správnej formálnej definícií, a preto existuje niekoľko rôznych neformálnych charakterizácií. Niekedy sa tieto definície líšia len zápisom, že niektoré vlastnosti sú spojené, inak nazvané, alebo zahrnuté do samotnej definície pojmu algoritmus.
+
+
+=== Vlastnosti podľa Donalda Knutha ===
+Algoritmus je definovaný ako „konečná množina pravidiel, ktorá popisuje postupnosť operácií na riešenie určitého typu problému“. Zároveň spĺňa nasledovné vlastnosti:
+
+Konečnosť
+Každý algoritmus musí skončiť po vykonaní konečného počtu krokov. Tento počet krokov môže byť ľubovoľne veľký (podľa rozsahu a hodnôt vstupných údajov), ale pre každý jednotlivý vstup musí byť konečný. Postupy, ktoré túto podmienku nespĺňajú, sa môžu nazývať výpočtové metódy. Špeciálnym príkladom nekonečnej výpočtovej metódy je reaktívny proces, ktorý priebežne reaguje s okolitým prostredím.
+Determinovanosť
+Každý krok algoritmu musí byť jednoznačne a presne definovaný; v každej situácii musí byť úplne zrejmé, čo a ako sa má vykonať, ako má vykonávanie algoritmu pokračovať. Pretože bežný jazyk zvyčajne neposkytuje úplnú presnosť a jednoznačnosť vyjadrovania, boli pre zápis algoritmov navrhnuté programovacie jazyky, v ktorých má každý príkaz jasne definovaný význam. Vyjadrenie algoritmu v programovacom jazyku sa nazýva program.
+Vstup
+Algoritmus zvyčajne pracuje s nejakými vstupmi, veličinami, ktoré sú mu odovzdané pred začatím jeho vykonávania, alebo v priebehu jeho činnosti. Vstupy majú definované množiny hodnôt, ktoré môžu nadobúdať.
+Výstup
+Algoritmus má aspoň jeden výstup, veličinu, ktorá je v požadovanom vzťahu k zadaným vstupom, a tým tvorí odpoveď na problém, ktorý algoritmus rieši.
+Efektivita
+Všeobecne požadujeme, aby algoritmus bol efektívny, v tom zmysle, že požadujeme, aby každá operácia požadovaná algoritmom, bola dostatočne jednoduchá na to, aby mohla byť aspoň v princípe prevedená v konečnom čase iba s použitím ceruzky a papiera.
+Knuth poznamenáva, že v praxi samotná podmienka konečnosti nestačí a algoritmus by mal skončiť po „veľmi konečnom“, teda rozumnom počte krokov. Uvádza ako príklad algoritmus, ktorý zistí, či biely vždy môže vyhrať šachovú partiu, pokiaľ neurobí chybu. Tento algoritmus je síce konečný, ale jeho vykonanie presahuje dĺžku ľudského života. V praxi nás preto zaujímajú len dobré algoritmy, ktoré spĺňajú rôzne kritéria. Jedným z nich je počet krokov potrebných na vykonanie algoritmu, ďalšie napr. jednoduchosť, či elegancia.
+
+
+=== Vlastnosti podľa Algoritmizácia a úvod do programovania ===
+Algoritmus je definovaný ako "návod na vykonanie činnosti, ktorý nás od (meniteľných) vstupných údajov privedie v konečnom čase k výsledku.". Zároveň splňa nasledovné vlastnosti:
+
+Konečnosť
+Výpočet (činnosť vykonávaná podľa algoritmu) vždy skončí po vykonaní konečného počtu krokov,
+Rezultatívnosť
+Algoritmus vždy vydá po konečnom počte krokov výsledok.
+Determinovanosť
+Postup je zostavený tak, že v každom momente jeho vykonávania je jednoznačne určené, aká činnosť má nasledovať, alebo či sa už postup skončil.
+Elementárnosť
+Postup je zložený z krokov, ktoré sú pre vykonávateľa (počítač, človek) zrozumiteľné. Každý postup môže byť zapísaný viacerými spôsobmi. Pri jeho navrhovaní treba dbať na to, aby jednotlivé inštrukcie boli pre adresáta zrozumiteľné, jednoduché a jednoznačné.
+Efektívnosť
+Výpočet sa uskutočňuje v čo najkratšom čase a s využitím čo najmenšieho množstva prostriedkov (časových i pamäťových).
+Avšak aj neefektívny algoritmus je algoritmom.
+Všeobecnosť (hromadnosť)
+Algoritmus nerieši jeden konkrétny problém (napr. „ako vypočítať 3×7“), ale rieši všeobecnú triedu podobných problémov (napr. „ako vypočítať súčin dvoch celých čísel“).
+Existujú však špeciálne algoritmy na určitý problém a niekedy ani nie je možné vytvoriť všeobecný algoritmus. Táto vlastnosť je preto len užitočná a nepokladá sa za nutnú.
+Pri bližšom pozorovaní vidíme, že Knuthova vlastnosť vstupu je obsiahnutá v definícií algoritmu, vlastnosť výstupu je rezultatívnosť a Knuthova efektivita je obsiahnutá pod pojmom elementárnosť. V skutočnosti sa spomenuté dve definície líšia len vo vlastnosti efektívnosti (v zmysle počtu krokov algoritmu) a všeobecnosti, ktoré tu však tiež nie sú považované za nutné vlastnosti algoritmov. V skutočnosti sú tak tieto dve definície algoritmov totožné a líšia sa len zápisom.
+
+
+== Etapy algoritmizácie úloh ==
+Spracovanie informácií predstavuje proces, v ktorom sú konkrétne vstupné údaje pretvárané do výsledkov, ktoré možno použiť na riadenie a rozhodovanie. Ak chceme riešiť akúkoľvek úlohu na počítači, treba ju rozdeliť na celý rad prípravných prác – etáp.
+Algoritmizácia úloh má tri základné etapy:
+
+formulácia úlohy
+analýza úlohy
+zostavenie riešiaceho algoritmu
+Formulácia úlohy
+Prvým predpokladom, aby sme danú úlohu mohli riešiť na počítači, je jej jasná a jednoznačná formulácia a identifikácia, ako aj ujasnenie cieľa, ktorý sledujeme riešením príslušnej úlohy. Za tým nasleduje tzv. formulácia problému, napr. matematickými prostriedkami (modelom), čiže problém musíme formalizovať pomocou nejakej sústavy vzťahov medzi premennými a konštantami. Formalizovanie konkrétnej úlohy si spravidla vyžaduje individuálny prístup, adaptáciu štandardných postupov, príp. nový typ modelu. Na formalizáciu možno použiť aj iný spôsob ako matematický, môže to byť napr. grafický model. Pre riešenie úloh na počítači je však matematická formulácia najvhodnejšia.
+Analýza úlohy
+V tejto etape je potrebné nájsť algoritmus riešenia úlohy. Zisťuje sa, či úloha je riešiteľná, či má jedno alebo viac riešení, načrtávajú sa možnosti riešenia a rozhoduje sa o druhu metód. Vytypovaná metóda riešenia musí zabezpečovať dosiahnutie požadovaných výsledkov (výstupné informácie), ale zároveň musí presne určiť, ktoré vstupné údaje budú potrebné. Úloha sa zovšeobecňuje a uskutočňuje sa prvá predstava o algoritmickej riešiteľnosti.
+Zostavenie riešiaceho algoritmu
+Po správnej formulácii a analýze úlohy nasleduje etapa syntetickej činnosti, v ktorej sa popíše logika a postup riešenia úlohy. Výsledkom tejto etapy je riešiaci algoritmus.
+Do tejto etapy môžeme zahrnúť aj programovanie úlohy. Pod pojmom programovanie rozumieme činnosť, pomocou ktorej sa uskutočňuje prevod úlohy z ľudského vedomia do formy vhodnej pre spracovanie na počítači. Výsledkom tejto činnosti je program. Program je algoritmus v takej forme, ktorej rozumie počítač, t. j. program je zápis algoritmu v niektorom programovacom jazyku.
+
+
+== Referencie ==
+
+
+== Literatúra ==
+NIKLAUS, Wirth. Algoritmy a štruktúry údajov.  druhé. vyd.  Bratislava : Alfa, 1989. 481 s.      ISBN 80-05-00153-3.      
+
+
+== Niektoré známe algoritmy ==
+Eratostenovo sito
+Euklidov algoritmus
+Dijkstrov algoritmus

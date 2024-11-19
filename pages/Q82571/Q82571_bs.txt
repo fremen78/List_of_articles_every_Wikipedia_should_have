@@ -1,0 +1,1093 @@
+Linearna algebra je grana matematike koja se bavi linearnim jednačinama kao što je: 
+
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        
+          x
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+        =
+        b
+        ,
+      
+    
+    {\displaystyle a_{1}x_{1}+\cdots +a_{n}x_{n}=b,}
+  
+
+linearnim preslikavanjen kao što je:
+
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        ↦
+        
+          a
+          
+            1
+          
+        
+        
+          x
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+        ,
+      
+    
+    {\displaystyle (x_{1},\ldots ,x_{n})\mapsto a_{1}x_{1}+\cdots +a_{n}x_{n},}
+  
+
+i njihovim prikazom u vektorskim prostorima i uz pomoć matrica.
+Linearna algebra je centralna u gotovo svim oblastima matematike. Na primjer, linearna algebra je fundamentalna u modernim prezentacijama geometrije, uključujući definisanje osnovnih objekata kao što su prave, ravni i rotacije. Funkcionalna analiza, grana matematičke analize, također se može posmatrati kao primjena linearne algebre na prostore funkcija.
+Linearna algebra se također koristi u većini nauka i oblasti inženjerstva, jer omogućava modeliranje mnogih prirodnih fenomena i efikasno računanje s takvim modelima. Za nelinearne sisteme, koji ne mogu biti modelirani s linearnom algebrom, često se koristi za rad s aproksimacijama prvog reda, koristeći činjenicu da je diferencijal multivarijantne funkcije u tački linearno preslikavanje koje najbolje aproksimira tu funkciju u blizini te tačke.
+
+
+== Historija ==
+Procedura (koristeći štapove za brojanje) za rješavanje simultanih linearnih jednačina koja se sada naziva Gaussova eliminacija pojavljuje se u drevnom kineskom matematičkom tekstu Osmo poglavlje: Pravokutni nizovi iz Devet poglavlja o matematičkoj umjetnosti. Njegova upotreba je ilustrovana u osamnaest zadataka, sa dvije do pet jednačina.
+Sistemi linearnih jednačina nastali su u Evropi 1637. kada je René Descartes uveo koordinate u geometriju. U stvari, u ovoj novoj geometriji koja se sada zove Descartesova geometrija, prave i ravni su predstavljene linearnim jednačinama, a izračunavanje njihovih presjeka predstavlja rješavanje sistema linearnih jednačina.
+Prve sistematske metode za rješavanje linearnih sistema koristile su determinante i prvi ih je razmatrao Leibniz u 1693. Gabriel Cramer ih je 1750. koristio za davanje eksplicitnih rješenja linearnih sistema, sada nazvanih Cramerovo pravilo. Kasnije je Gauss dalje opisao metodu eliminacije, koja je u početku bila navedena kao napredak u geodeziji.
+Hermann Grassmann je 1844. objavio svoju "Teoriju ekstenzije" koja je uključivala temeljne nove teme onoga što se danas zove linearna algebra. James Joseph Sylvester je 1848. uveo termin matrica, što je latinska riječ za matericu.
+Linearna algebra je rasla s idejama zabilježenim u kompleksnoj ravni. Na primjer, dva broja w i z u 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ imaju razliku w – z, a segmenti pravih wz i 0(w − z) su iste dužine i smjera. Segmenti su ekvipolentni. Četvorodimenzionalni sistem kvaterniona 
+  
+    
+      
+        
+          H
+        
+      
+    
+    {\displaystyle \mathbb {H} }
+  
+ započet je 1843. Termin vektor je uveden kao v = xi + yj + zk što predstavlja tačku u prostoru. Kvaterniona razlika p – q također proizvodi segment ekvipolentan pq. Drugi hiperkompleksni brojevni sistemi su takođe koristili ideju o linearnom prostoru s bazom.
+Arthur Cayley je 1856. uveo množenje matrica i inverznu matricu, čime je omogućena opća linearna grupa. Mehanizam grupne reprezentacije postao je dostupan za opisivanje kompleksnih i hiperkompleksnih brojeva. Velikog značaja je imalo to što je Cayley koristio jedno slovo da označi matricu, tretirajući je tako kao zbirni objekat. Također je shvatio vezu između matrica i determinanti, te je napisao: "Moglo bi se reći mnogo stvari o ovoj teoriji matrica koja bi, čini mi se, trebala prethoditi teoriji determinanti".
+Benjamin Peirce je objavio svoju Linearnu asocijativnu algebru (1872), a njegov sin Charles Sanders Peirce kasnije je proširio taj rad.
+Telegraf je zahtijevao sistem objašnjenja, a publikacija Traktata o elektricitetu i magnetizmu iz 1873. uvela je teoriju polja sila i zahtijevala je diferencijalnu geometriju za izražavanje. Linearna algebra je ravna diferencijalna geometrija i služi u tangentnim prostorima na mnogostrukosti. Elektromagnetske simetrije prostor-vremena izražene su Lorentzovim transformacijama, a veći dio historije linearne algebre je historija Lorentzovih transformacija.
+Prvu modernu i precizniju definiciju vektorskog prostora uveo je Peano 1888; do 1900. pojavila se teorija linearnih transformacija konačno-dimenzionalnih vektorskih prostora. Linearna algebra je dobila svoj savremeni oblik u prvoj polovini dvadesetog stoljeća, kada su mnoge ideje i metode iz prethodnih stoljeća generalizovane kao apstraktna algebra. Razvoj računara doveo je do povećanog istraživanja efikasnih algoritama za Gaussovu eliminaciju i dokmpoziciu matrica, a linearna algebra je postala suštinski alat za modeliranje i simulacije.
+
+
+== Vektorski prostori ==
+
+Sve do 19. stoljeća, linearna algebra se prvenstveno prikazivala kroz sisteme linearnih jednačina i matrice. U modernoj matematici općenito se preferira prezentacija kroz vektorske prostore, budući da je više sintetička, opštija (nije ograničena na slučaj konačnih dimenzija) i konceptualno jednostavnija, iako apstraktnija.
+Vektorski prostor nad poljem F (često polje realnih brojeva) je skup V opremljen s dvije binarne operacije koje zadovoljavaju sljedeće aksiome. Elementi iz V nazivaju se vektori, a elementi iz F nazivaju se skalarima. Prva operacija, sabiranje vektora, uzima bilo koja dva vektora v i w i daje kao rezultat treći vektor v + w. Druga operacija, skalarno množenje, uzima bilo koji skalar a i bilo koji vektor v i daje kao rezultat novi vektor vector av. Aksiomi koje sabiranje i skalarno množenje moraju zadovoljiti su sljedeći. (U spisku ispod, u, v i w su proizvoljni elementi od V, a a i b su proizvoljni skalari u polju FF.)
+
+Prva četiri aksioma znače da je V abelova grupa pod sabiranjem.
+Element određenog vektorskog prostora može imati različitu prirodu; na primjer, to može biti niz, funkcija, polinom ili matrica. Linearna algebra se bavi onim svojstvima takvih objekata koja su zajednička svim vektorskim prostorima.
+
+
+=== Linearna preslikavanja ===
+
+Linearna preslikavanja su preslikavanja između vektorskih prostora koja zadržavaju strukturu vektorskog prostora. Za dva vektorska prostora V i W u polju F, linearno preslikavanje (također u određenim kontekstima nazvano linearna transformacija ili linearno mapiranje)
+
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\to W}
+  
+
+je kompatibilno sa sabiranjem i skalarnim množenjem
+
+  
+    
+      
+        T
+        (
+        
+          u
+        
+        +
+        
+          v
+        
+        )
+        =
+        T
+        (
+        
+          u
+        
+        )
+        +
+        T
+        (
+        
+          v
+        
+        )
+        ,
+        
+        T
+        (
+        a
+        
+          v
+        
+        )
+        =
+        a
+        T
+        (
+        
+          v
+        
+        )
+      
+    
+    {\displaystyle T(\mathbf {u} +\mathbf {v} )=T(\mathbf {u} )+T(\mathbf {v} ),\quad T(a\mathbf {v} )=aT(\mathbf {v} )}
+  
+
+za bilo koje vektore u,v iz V i skalar a iz F.
+Ovo implicira da za bilo koje vektore u, v iz V i skalare a, b iz F vrijedi
+
+  
+    
+      
+        T
+        (
+        a
+        
+          u
+        
+        +
+        b
+        
+          v
+        
+        )
+        =
+        T
+        (
+        a
+        
+          u
+        
+        )
+        +
+        T
+        (
+        b
+        
+          v
+        
+        )
+        =
+        a
+        T
+        (
+        
+          u
+        
+        )
+        +
+        b
+        T
+        (
+        
+          v
+        
+        )
+      
+    
+    {\displaystyle T(a\mathbf {u} +b\mathbf {v} )=T(a\mathbf {u} )+T(b\mathbf {v} )=aT(\mathbf {u} )+bT(\mathbf {v} )}
+  
+
+Kada su V = W isti vektorski prostori, linearno preslikavanje T : V → V je također poznato i kao linearni operator na V.
+Bijektivno linearno preslikavanje između dva vektorska prostora (to jest, svaki vektor iz drugog prostora je pridružen tačno jednom vektoru iz prvog) je izomorfizam. Pošto izomorfizam zadržava linearnu strukturu, dva izomorfna vektorska prostora su "u suštini ista" s tačke gledišta linearne algebre, u smislu da se ne mogu razlikovati korištenjem svojstava vektorskog prostora. Bitno pitanje u linearnoj algebri je testiranje da li je linearno preslikavanje izomorfizam ili ne, i, ako nije izomorfizam, pronalaženje njegove slike (ili opsega) i skupa elemenata koji su preslikani u nulti vektor, koji se naziva jezgro preslikavanja. Sva ova pitanja mogu se riješiti korištenjem Gaussove eliminacije ili neke varijante ovog algoritma.
+
+
+=== Podprostori, raspon i baza ===
+
+Proučavanje podskupova vektorskih prostora koji su sami po sebi vektorski prostori pod indukovanim operacijama je fundamentalno, slično kao i za mnoge matematičke strukture. Ovi podskupovi se nazivaju linearni podprostori. Preciznije, linearni podprostor vektorskog prostora V nad poljem F je podskup W od V takav da su u + v i au, za svako u, v u W i svako a u F. (Ovi uslovi su dovoljni za impliciranje da je W vektorski prostor.)
+Na primjer, ukoliko imamo linearno preslikavanje T : V → W, slika T(V) od V i inverzna slika T−1(0) (nazvana jezgro ili nulti prostor), predstavljaju linearne podprostore W i V.
+Drugi važan način formiranja podprostora je razmatranje linearnih kombinacija skupa vektora S: skup svih zbirova
+
+  
+    
+      
+        
+          a
+          
+            1
+          
+        
+        
+          
+            v
+          
+          
+            1
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        
+          
+            v
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            k
+          
+        
+        
+          
+            v
+          
+          
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle a_{1}\mathbf {v} _{1}+a_{2}\mathbf {v} _{2}+\cdots +a_{k}\mathbf {v} _{k},}
+  
+
+gdje v1, v2, ..., vk iz S i a1, a2, ..., ak iz F formiraju linearni podprostor koji se naziva raspon od S. Raspon od S je također presjek svih linearnih podprostora koji sadrže S. Drugim riječima, to je najmanji (za relaciju inkluzije) linearni podprostor koji sadrži S.
+Skup vektora je linearno nezavisan ako nijedan nije u rasponu od ostalih. Ekvivalentno tome, skup vektora S je linearno nezavisan ako je jedini način da se nulti vektor izrazi kao linearna kombinacija elemenata od S da se uzme nula za svaki koeficijent ai.
+Skup vektora koji obuhvata vektorski prostor naziva se rasponski skup ili generirajući skup. Ako je rasponski skup S linearno ovisan (koji nije linearno nezavisan), tada je neki element w od S u rasponu ostalih elemenata iz S, a raspon bi ostao isti ako se ukloni w iz S. Može se nastaviti sa uklanjanjem elemenata iz S sve dok se ne dobije linearno nezavisan rasponski skup. Takav linearno nezavisan skup koji obuhvata vektorski prostor V naziva se baza od V. Važnost baza leži u činjenici da su one istovremeno minimalni generirajući skupovi i maksimalni nezavisni skupovi. Preciznije, ako je S linearno nezavisan skup, a T rasponski skup takav da je S ⊆ T, onda postoji baza B takva da je S ⊆ B ⊆ T.
+Bilo koje dvije baze vektorskog prostora V imaju istu kardinalnost, koja se zove dimenzija od V; ovo je dimenzijska teorema za vektorske prostore. Štaviše, dva vektorska prostora nad istim poljem F su izomorfna ako i samo ako imaju istu dimenziju.
+Ako bilo koja baza od V (a samim tim i svaka baza) ima konačan broj elemenata, V je konačno-dimenzionalni vektorski prostor. Ako je U podprostor od V, onda je dim U ≤ dim V. U slučaju kada je V konačno-dimenzionalan, jednakost dimenzija implicira da je U = V.
+Ako su U1 i U2 podprostori od V, onda
+
+  
+    
+      
+        dim
+        ⁡
+        (
+        
+          U
+          
+            1
+          
+        
+        +
+        
+          U
+          
+            2
+          
+        
+        )
+        =
+        dim
+        ⁡
+        
+          U
+          
+            1
+          
+        
+        +
+        dim
+        ⁡
+        
+          U
+          
+            2
+          
+        
+        −
+        dim
+        ⁡
+        (
+        
+          U
+          
+            1
+          
+        
+        ∩
+        
+          U
+          
+            2
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle \dim(U_{1}+U_{2})=\dim U_{1}+\dim U_{2}-\dim(U_{1}\cap U_{2}),}
+  
+
+gdje U1 + U2 označava raspon od U1 ∪ U2.
+
+
+== Matrice ==
+
+Matrice dozvoljavaju eksplicitnu manipulaciju konačno-dimenzionalnih vektorskih prostora i linearnih preslikavanja. Stoga je njihova teorija bitan dio linearne algebre.
+Neka je V konačno-dimenzionalni vektorski prostor nad poljem F i neka je (v1, v2, ..., vm) baza od V (dakle, m je dimenzija od V). Po definiciji baze, preslikavanje
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                
+                  a
+                  
+                    1
+                  
+                
+                ,
+                …
+                ,
+                
+                  a
+                  
+                    m
+                  
+                
+                )
+              
+              
+                
+                ↦
+                
+                  a
+                  
+                    1
+                  
+                
+                
+                  
+                    v
+                  
+                  
+                    1
+                  
+                
+                +
+                ⋯
+                
+                  a
+                  
+                    m
+                  
+                
+                
+                  
+                    v
+                  
+                  
+                    m
+                  
+                
+              
+            
+            
+              
+                
+                  F
+                  
+                    m
+                  
+                
+              
+              
+                
+                →
+                V
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}(a_{1},\ldots ,a_{m})&\mapsto a_{1}\mathbf {v} _{1}+\cdots a_{m}\mathbf {v} _{m}\\F^{m}&\to V\end{aligned}}}
+  
+
+je bijekcija od Fm, skupa nizova od m elemenata od F, na V. Ovo je izomorfizam vektorskih prostora, ako je Fm opremljen svojom standardnom strukturom vektorskog prostora, gdje se sabiranje vektora i skalarno množenje obavljaju komponentu po komponentu.
+Ovaj izomorfizam omogućava predstavljanje vektora njegovom inverznom slikom pod ovim izomorfizmom, odnosno koordinatnim vektorom (a1, ..., am) ili kolonskom matricom
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    a
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    a
+                    
+                      m
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        .
+      
+    
+    {\displaystyle {\begin{bmatrix}a_{1}\\\vdots \\a_{m}\end{bmatrix}}.}
+  
+
+Ako je W još jedan konačno-dimenzionalni vektorski prostor (moguće isti), s bazom (w1, ..., wn), linearno preslikavanje f od W na V je dobro definisano svojim vrijednostima na elementima baze, tj. (f(w1), ..., f(wn)). Dakle, f je dobro predstavljen spiskom odgovarajućih kolonskih matrica. Odnosno, ako je
+
+  
+    
+      
+        f
+        (
+        
+          w
+          
+            j
+          
+        
+        )
+        =
+        
+          a
+          
+            1
+            ,
+            j
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          a
+          
+            m
+            ,
+            j
+          
+        
+        
+          v
+          
+            m
+          
+        
+        ,
+      
+    
+    {\displaystyle f(w_{j})=a_{1,j}v_{1}+\cdots +a_{m,j}v_{m},}
+  
+
+za j = 1, ..., n, tada je f predstavljeno matricom
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    a
+                    
+                      1
+                      ,
+                      1
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      1
+                      ,
+                      n
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+                
+                  ⋱
+                
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    a
+                    
+                      m
+                      ,
+                      1
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    a
+                    
+                      m
+                      ,
+                      n
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{bmatrix}a_{1,1}&\cdots &a_{1,n}\\\vdots &\ddots &\vdots \\a_{m,1}&\cdots &a_{m,n}\end{bmatrix}},}
+  
+
+sa m redova i n kolona.
+Množenje matrice je definisano na način da je proizvod dvije matrice matrica sastavljena od odgovarajućih linearnih preslikavanja, a proizvod matrice i kolonske matrice je kolonska matrica koja predstavlja rezultat primjene predstavljenog linearnog preslikavanja na predstavljeni vektor. Iz toga slijedi da su teorija konačno-dimenzionalnih vektorskih prostora i teorija matrica dva različita jezika za izražavanje potpuno identičnih koncepata.
+Dvije matrice koje kodiraju istu linearnu transformaciju u različitim bazama nazivaju se sličnim. Može se dokazati da su dvije matrice slične ako i samo ako jedna može transformirati jednu u drugu pomoću elementarnih operacija reda i kolona. Za matricu koja predstavlja linearno preslikavanje od W na V, operacije redova odgovaraju promjeni baza u V, a operacije kolona odgovaraju promjeni baza u W. Svaka matrica je slična jediničnoj matrici koja je moguće omeđena redovima nula i kolonama nula. U smislu vektorskih prostora, to znači da za bilo koje linearno preslikavanje od W na V postoje baze takve da je dio baze od W preslikan bijektivno na dio baze od V, a da se preostali elementi baze od W, ako ih ima, preslikavaju na nulu. Gaussova eliminacija je osnovni algoritam za pronalaženje ovih elementarnih operacija i dokazivanje ovih rezultata.
+
+
+== Linearni sistemi ==
+
+Konačan skup linearnih jednačina u konačnom skupu varijabli, na primjer, x1, x2, ..., xn, ili x, y, ..., z naziva se sistem linearnih jednačina ili linearni sistem.
+Sistemi linearnih jednačina čine fundamentalni dio linearne algebre. Historijski gledano, linearna algebra i teorija matrica su razvijene za rješavanje takvih sistema. U modernoj prezentaciji linearne algebre kroz vektorske prostore i matrice, mnogi problemi se mogu tumačiti u pojmovima linearnih sistema.
+Na primjer, neka je
+
+linearni sistem.
+Takav sistem se može napisati u obliku matrice 
+
+  
+    
+      
+        M
+        =
+        
+          [
+          
+            
+              
+                
+                  2
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  −
+                  3
+                
+                
+                  −
+                  1
+                
+                
+                  2
+                
+              
+              
+                
+                  −
+                  2
+                
+                
+                  1
+                
+                
+                  2
+                
+              
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle M=\left[{\begin{array}{rrr}2&1&-1\\-3&-1&2\\-2&1&2\end{array}}\right].}
+  
+
+i vektora njegovih desnih članova
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  8
+                
+              
+              
+                
+                  −
+                  11
+                
+              
+              
+                
+                  −
+                  3
+                
+              
+            
+            ]
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {v} ={\begin{bmatrix}8\\-11\\-3\end{bmatrix}}.}
+  
+
+Neka je T linearna transformacija matrice M. Rješenje sistema (S ) je vektor 
+
+  
+    
+      
+        
+          X
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  x
+                
+              
+              
+                
+                  y
+                
+              
+              
+                
+                  z
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle \mathbf {X} ={\begin{bmatrix}x\\y\\z\end{bmatrix}}}
+  
+
+tako da je 
+
+  
+    
+      
+        T
+        (
+        
+          X
+        
+        )
+        =
+        
+          v
+        
+        ,
+      
+    
+    {\displaystyle T(\mathbf {X} )=\mathbf {v} ,}
+  
+
+element predpreslikavanja vektora v od T.
+Neka je (S′ ) homogeni sistem, gdje su desne strane jednačina jednake nuli:
+
+Rješenja od (S′ ) su upravo elementi jezgra od T ili, ekvivalentno, M.
+Gaussova eliminacija se sastoji od izvođenja elementarnih operacija reda na proširenoj matrici
+
+  
+    
+      
+        
+          [
+          
+            
+            
+              
+                
+                  
+                    M
+                  
+                  
+                    
+                      v
+                    
+                  
+                
+              
+            
+            
+          
+          ]
+        
+        =
+        
+          [
+          
+            
+              
+                
+                  2
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+                
+                  8
+                
+              
+              
+                
+                  −
+                  3
+                
+                
+                  −
+                  1
+                
+                
+                  2
+                
+                
+                  −
+                  11
+                
+              
+              
+                
+                  −
+                  2
+                
+                
+                  1
+                
+                
+                  2
+                
+                
+                  −
+                  3
+                
+              
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle \left[\!{\begin{array}{c|c}M&\mathbf {v} \end{array}}\!\right]=\left[{\begin{array}{rrr|r}2&1&-1&8\\-3&-1&2&-11\\-2&1&2&-3\end{array}}\right]}
+  
+
+kako bi se stavila u reduciranu formu ešalona reda. Ove operacije reda ne mijenjaju skup rješenja sistema jednačina. U primjeru, reducirana forma ešalona je 
+
+  
+    
+      
+        
+          [
+          
+            
+            
+              
+                
+                  
+                    M
+                  
+                  
+                    
+                      v
+                    
+                  
+                
+              
+            
+            
+          
+          ]
+        
+        =
+        
+          [
+          
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  2
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  3
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  −
+                  1
+                
+              
+            
+          
+          ]
+        
+        ,
+      
+    
+    {\displaystyle \left[\!{\begin{array}{c|c}M&\mathbf {v} \end{array}}\!\right]=\left[{\begin{array}{rrr|r}1&0&0&2\\0&1&0&3\\0&0&1&-1\end{array}}\right],}
+  
+
+što pokazuje da sistem (S ) ima jedinstveno rješenje
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                2
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                3
+              
+            
+            
+              
+                z
+              
+              
+                
+                =
+                −
+                1.
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=2\\y&=3\\z&=-1.\end{aligned}}}
+  
+
+Iz ove matrične interpretacije linearnih sistema proizilazi da se iste metode mogu primijeniti za rješavanje linearnih sistema i za mnoge operacije na matricama i linearnim transformacijama, koje uključuju izračunavanje rangova, jezgara, inverza matrica.
+
+
+== Također pogledajte ==
+Linearno programiranje
+
+
+== Bilješke ==
+
+
+== Reference ==
+
+
+== Vanjski linkovi ==
+
+
+=== Online resursi ===
+
+MIT - video predavanja o linearnoj algebri, serija od 34 snimljena predavanja profesora Gilberta Stranga (proljeće 2010)
+Međunarodna zajednica linearne algebre Arhivirano 5. 7. 2020. na Wayback Machine
+Hazewinkel, Michiel, ured. (2001), "Linear algebra", Matematička enciklopedija, Kluwer Academic Publishers, ISBN 978-1556080104
+Linearna algebra na MathWorldu
+Pojmovi linearne algebre na Earliest Known Uses of Some of the Words of Mathematics
+Suština linearne algebre, video prezentacija 3Blue1Brown-a o osnovama linearne algebre s naglaskom na vezu između geometrije, matrica i apstraktne tačke gledišta
+
+
+=== Online knjige ===
+Beezer, Robert A. (2009) [2004]. A First Course in Linear Algebra (jezik: engleski). Gainesville (Florida): Univerzitet Press of Florida. ISBN 9781616100049.
+Connell, Edwin H. (2004) [1999]. Elements of Abstract and Linear Algebra (jezik: engleski). Univerzitet Miami, Coral Gables (Florida): Self-published.
+Margalit, Dan; Rabinoff, Joseph (2019). Interactive Linear Algebra (jezik: engleski). Tehnološki institut Georgia, Atlanta: Self-published.
+Matthews, Keith R. (2013) [1991]. Elementary Linear Algebra (jezik: engleski). Univerzitet Queensland, Brisbane, Australija: Self-published.
+Mikaelian, Vahagn H. (2020) [2017]. Linear Algebra: Theory and Algorithms (jezik: engleski). Jerevan, Armenija: Self-published – preko ResearchGate.
+Sharipov, Ruslan, Course of linear algebra and multidimensional geometry
+Treil, Sergei, Linear Algebra Done Wrong

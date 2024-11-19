@@ -1,0 +1,128 @@
+Prográmski jêzik je stroju berljiv umetni jezik, ki je bil razvit, da izraža izračune oz. komputacije, katere lahko izvaja stroj oziroma računalnik. Programski jeziki so nastali zaradi razvoja računalnikov in so bili sprva podrejeni temu razvoju in je zato zgodnje obdobje razvoja programskih jezikov hkrati tudi zgodovina računalnikov..
+
+
+== Elementi ==
+Vsi programski jeziki imajo nekaj osnovnih gradnikov za opis podatkov in procesov ali pretvorb, ki nanašajo nanje (kot npr. seštevanje dveh števil ali izbira elementa iz zbirke). Ti osnovni gradniki (primitivi) so opredeljeni s sintaktičnimi in semantičnimi pravili, ki opisujejo njihovo strukturo in pomen. Sintaksa je nabor pravil ali formul, ki določa množico (formalno pravilnih) stavkov. Pravila ne omogočajo samo ugotoviti ali je neko zaporedje stavek, določajo tudi samo zgradbo stavka, ki je nujna pri prepoznavanju njegovega pomena. Zato sta sintaksa in semantika tesno povezani.
+Sintaksa (skladnja) opredeljuje strukturo stavkov programskega jezika, medtem ko semantika (pomenoslovje) predstavlja njen abstraktni pomen. Ker morajo vsi uporabniki jezika imeti enako predstavo o pomenu posameznih stavkov programskega jezika, morajo biti pravila, ki določajo sintakso in semantko natančno določena. Praviloma se sintaktične nepravilnosti ugotavljajo mnogo hitreje in enostavneje kot semantične. Del programske opreme prevajalnika, ki je odgovoren za ugotavljanje omenjenih nepravilnosti, se imenuje razčlenjevalnik (angl. parser), kateri izvaja analize skladnje pred prevodom izvorne kode v strojno kodo programske opreme.
+
+
+=== Sintaksa (skladnja/slovnica) ===
+
+Sintaksa programskega jezika ali nauk o zgradbi jezika govori o združevanju elementov jezika, na primer besed, v višje strukture, na primer v stavke. Enolično določa obliko dovoljenih izrazov v danem programskem jeziku. Večina programskih jezikov je tekstovnih; uporabljajo zaporedje besedila, ki vključuje besede, števila, ločila, podobno kot je to v naravnih jezikih. Na drugi strani obstaja tudi nekaj programskih jezikov, ki so grafični, ki omogoča uporabniku specifikacijo programa z grafičnimi elementi namesto z besedilom.
+Sintaksa jezika obravnava možne kombinacije znakov in drugih elemetov jezika ter njihov medsebojni odnos ne glede na pomen teh kombinacij. Za pomen kombinacij simbolov je odgovorna semantika. Ker je večina jezikov tekstovnih, ta članek obravnava tekstovno sintakso.
+Sintaksa programskega jezika je običajno podana s kombinacijo regularnih izrazov in metasintaktičnega jezika kot je Backus-Naurova notacija, ki podaja sintakso jezika v obliki razvidni iz naslednjega zgleda:
+
+Oklepaja "<" in ">" omogočata predstavitev gradnikov jezika s pomočjo besed oz. fraz naravnega jezika, znak "|" pa omogoča naštevanje alternativ. Takšna predstavitev sintakse je lahko razumljiva tako programerju kot računalniku, ki s prevajalnikom razpoznava programske stavke.
+Spodaj je preprost zgled sintakse, ki temelji na programskem jeziku Lisp:
+
+Ta slovnica določa sledeče:
+
+izraz je ali atom ali list;
+atom je ali število ali simbol;
+število je neprekinjeno zaporedje en ali več desetiških cifer, z možnim predhodnim znakom za plus ali minus;
+simbol je črka, ki ji sledi nič ali več katerihkoli znakov (izključeni so presledki); in
+seznam je povezan par oklepajev, z nič ali več izrazi znotraj oklepajev.
+Primeri dobro oblikovanega zaporedja žetonov (token) v tej sintaksi so: '12345', '()', '(a b c232 (1))'
+Vsi sintaktično pravilni programi niso pravilni tudi semantično. Mnogo sintaktično pravilnih programov je slabo napisanih in lahko (odvisno od specifikacij jezika in trdnosti implementacije) ustvarijo napako pri prevajanju ali izvajanju. V nekaterih primerih se lahko taki programi obnašajo nepričakovano.
+Zgled uporabe naravnega jezika za sintaktično pravilni stavek, ki pa mu ni mogoče določiti pomena:
+
+»Colorless green ideas sleep furiously. -Brezbarvne zelene ideje spijo besno.« (Noam Chomsky, 1957), je slovnično pravilno oblikovan toda nima splošno priznanega pomena.
+»Janez je poročen samec.« je slovnično pravilno oblikovan stavek toda izraža pomen, ki ne more biti pravilen.
+Sledeči košček C jezika je sintaktično pravilen, ampak izvaja operacije, ki niso semantično definirane (operacija *p >> 4 nima pomena za vrednost kompleksnega tipa in p->im ni definiran ker je vrednost p null kazalec):
+
+Če je deklaracija tipa iz prve vrstice izpuščena, bo program sprožil napako pri prevajanju, ker spremenljivka "p" ne bo definirana. Toda program bo še vedno sintaktično pravilen, ker deklaracija tipa zagotavlja le semantične informacije.
+Slovnica, ki je potrebna za opredelitev programskega jezika, se lahko klasificira glede na svoj polažaj v hierarhiji Chomskega. Sintaksa večine programskih jezikov se lahko opredeli kot uporaba Slovnice tipa 2, t.j kontekstno neodvisne slovnice (context-free grammar). Nekateri jeziki, vključno z Perl in Lisp, vsbujejo konstrukte, ki dovoljujejo izvajanje med fazo razčlenjevanje kode (parser). Jeziki, ki vsebujejo konstrukte, ki dovoljujejo programerju spreminjanje obnašanja razčlenjevalnika kode, napravijo analizo sintakse za nedoločljiv problem in na splošno zabrišejo razlikovanje med razčlenjevanjem kode in izvajanjem.
+
+
+=== Semantika ===
+Izraz semantika se navezuje na pomen jezikovnih elementov v nasprotju z jezikovno obliko (sintakso). Včasih ima jezikovni element samo en pomen in mu je prirejena ena sama stvar. Običajno pa moremo pravi pomen besede razbrati šele iz konteksta. Semantiko programskih stavkov je zelo težko opisati s formalnimi jeziki.
+
+
+==== Statična semantika ====
+Statična semantiksa opredeljuje omejitve za strukturo veljavnih besedil, ki jih težko izrazimo s standardnimi sintaktičnimi formalizmi. Za prevedene jezike statična semantika vključuje zlasti tista pravila, ki se jih lahko preveri med prevajanjem. Primeri vključujejo preverjanje prisotnosti deklaracij identifikatorjev predno je uporabljen (v jezikih, ki takšne deklaracije zahtevajo) ali pa, da se uporabljene labele v case stavku med seboj razlikujejo. Veliko pomembnih omejitev tega tipa (kot je to preverjanje, da so identifikatorji uporabljeni v ustreznem kontekstu, ali da klici podprogramov vsebujejo pravilno število in tip argumentov) se lahko uveljavi tako, da se jih definira kot pravilo v logiki imenovani sistem tipov. Druge oblike statične analize kot je analiza toka podatkov so lahko prav tako del statične semantike.
+
+
+==== Dinamična semantika ====
+Ko so enkrat podatki opredeljeni, se mora stroju podati navodila za izvajanje operacij nad podatki. Na primer, semantika lahko definira strategijo s katero se izrazi ovrednotijo za vrednosti ali način s katerim kontrolne strukture pogojno izvajajo stavke. Dinamična semantika (poznana tudi kot "semantika izvajanja") jezika definira kako in kdaj naj določen konstrukt jezika izvede določeno obnašanje programa. Obstaja več načinov definiranja semantike izvajanja. Za določitev semantike izvajanja jezikov se pogosto uporabi naravni jezik.
+
+
+==== Sistemi tipov ====
+Sistem tipov definira kako programski jezik razvršča vrednosti in izraze v tipe, kako z njimi ravna in kako so medsebojno povezani. Cilj sistema tipov je preverjanje in običajno uveljavljanje nekega nivoja pravilnosti napisanih programov z detekcijo nepravilnih operacij. Vsak odločljiv sistem tipov vključuje kompromis: medtem ko zavrača številne nepravilne programe, lahko prepove tudi nekatere pravilne četudi neobičajne programe. V večini tipiziranih jezikih se sistem tipov uporablja le za preverjanje tipov (type checking) programov, toda nekateri jeziki se zanašajo na programerja, da bo pravilno opredelil tipe. Formalno obravnavanje tipov se imenuje tudi teorija tipov.
+
+
+===== Tipizirani jezik proti netipiziranemu =====
+Jezik je tipiziran, če specifikacija vsake operacije definira tip podatkov te operacije. Na primer, podatek predstavljen z "to besedilo med narekovaji " je string. V večini programskih jezikov deljenje števila s stringom nima pomena; zato bo večina modernih programskih jezikov zavrnila vsak poskus izvajanja programa, ki bi izvajal takšno operacijo. V nekaterih jezikih se vsaka nesmiselna operacija zazna pri prevajanju programa (»statično« preverjanje tipov) in jo zavrne že prevajalnik; medtem ko se pri ostalih jezikih zazna šele pri izvajanju programa (»dinamično« preverjanje tipov), kar povzroči izjeme v času izvajanja (run-time exception; programska napaka, ki običajno kaže na »hrošče«).
+Netipizirani jezik, kot je to večina zbirnih jezikov, dovoljuje izvajanje katerekoli operacije nad katerimkoli podatkom, in se jih običajno obravnava kot zaporedja bitov različne dolžine.
+V praksi se malo jezikov opredeljuje kot tipizirane s stališča teorije tipov (preverjanje in zavračanje vseh operacij), večina modernih jezikov ponuja določeno stopnjo tipizacije. Nekateri jeziki omogočajo eksplicitne pretvorbe med podatkovnimi tipi; s tem se varnost tipiziranja zamenja z natančnejšo kontrolo izvajanja programa (glej eksplicitne pretvorbe).
+
+
+===== Statično tipiziranje proti dinamičnemu =====
+Glede na čas preverjanja tipov ločimo dve skupini programskih jezikov:
+
+jeziki statičnih tipov (statically typed languages) in
+jeziki dinamičnih tipov (dynamically typed languages).
+Značilnost statičnega tipiziranja je, da ima vsaka spremenljivka in prameter tip, ki ga določi programer. Preverjanje tipa se preveri še pred izvajanjem programa, običajno v času prevajanja. Na primer, 1 in (2+2) sta integer izraza; ne moreta biti posredovana funkciji, ki pričakuje string, ne moreta biti shranjena v spremenljivki, ki vsebuje datume.
+Jeziki statičnih tipov so ali vidno tipizirani (manifest typing) ali pa so tipizirani s sklepanjem (type inference). V prvem primeru mora programer eksplicitno napisati tipe na določenem mestu v kodi. V drugem primeru prevajalnik sklepa o tipu izrazov in deklaracij glede na kontekst. O sklepanju o tipu govorimo takrat, kadar tip entitete ni podan, temveč ga povzamemo iz okolice. Večina prevladujočih statično tipiziranih jezikov, kot so C++, C# in Java, so vidno tipizirani. Popolno tipiziranje s sklepanjem je običajno povezano z neprevladujočimi jeziki kot sta Haskell in ML. Kakorkoli, veliko vidno tipiziranih jezikov podpira delno tipiziranje s sklepanjem; na primer, Java in C# vsebujeta v omejenem obsegu tudi tipiziranje s sklepanjem.
+Značilnost dinamičnega tipiziranja je, da imajo le vrednosti določen tip. Spremenljivka in parameter pa prevzameta določen tip od različnih vrednosti v različnih časih. Dinamično tipiziranje opredeljuje varnost tipov operacij v času izvajanja. Kot pri jeziki, ki so tipizirani s sklepanjem, dinamično tipizirani jeziki ne zahtevajo od programerja, da napiše explicitno opredelitev tipov izrazov. Med drugim to dovoljuje, da se ena spremenljivka lahko uporabi za vrednosti različnih tipov na različnih točkah izvajanja programov. Kakorkoli, napake tipov se ne more zaznati avtomatsko dokler se koda dejansko ne izvede, kar potencialno oteži razhroščevanje. Lisp, Perl, Python, JavaScript in Ruby so dinamično tipizirani jeziki.
+
+
+===== Šibko tipiziranje proti močnemu =====
+Glede na način preverjanja tipov (neodvisno od časa) programske jezike delimo na:
+
+močno tipizirane jezike (strongly typed languages) in
+šibko tipizirane jezike (weakly typed languages).
+Pri močno tipiziranih jezikih je preverjanje tipov popolno, saj spremenljivki ne moremo prirediti vrednosti, ki je drugačnega tipa. Pri šibko tipiziranih je preverjanje tipov nepopolno in lahko privede do nepravilnega obnašanja.
+Šibko tipiziranje dovoljuje, da se vrednostjo enega tipa ravna kot z vrednostjo drugega tipa; na primer, obravnavanje stringa kot število. To je včasih lahko koristno, vendar lahko tudi dovoljuje neodkrite napake programa v času prevajanja in celo v času izvajanja.
+Močno tipiziranje preprečuje zgoraj opisane probleme. Poskus izvajanja operacije nad napačnim tipom vrednosti javi napako.
+Drugačna definicija za »šibko tipiziranje« se nanaša na jezike, kot sta Perl in JavaScript, ki dovoljujejo večje število implicitnih pretvorb med podatkovnimi tipi. V JavaScriptu, na primer, izraz 2 * x implicitno pretvori x v število; in ta konverzija je uspešna celo, če je x null, undefined, Array ali niz črk. Takšna implicitna pretvorba je pogosto uporabna, vendar lahko zakrije napake pri programiranju.
+Nekateri uporabljajo izraz močno tipizirano s pomenom močno, statično tipizirano ali, da je zmeda še večja, uporabljajo ta izraz s pomenom statično tipizirano. Tako je bil C imenovan hkrati kot močno in šibko, statično tipiziran.
+
+
+=== Standardna knjižnica ===
+Večina programskih jezikov ima pridruženo jedrno knjižnico (poznano tudi kot 'standardna knjižnica'), ki je običajno dostopna vsem implementacijam jezika. Jedrne knjižnice tipično vsebujejo definicije za splošno uporabne algoritme, podatkovne strukture in mehanizme za vhod in izhod (input/output).
+Jedrno knjižnico jezika uporabniki pogosto tretirajo kot del jezika, čeprav jo oblikovalci smatrajo kot ločeno entiteto. Veliko specifikacij jezika definira jedro, ki mora biti na voljo vsem implementacijam in v primeru standardiziranih jezikom je takšna knjižnica lahko zahtevana. Meja med jezikom in njegovo jedrno knjižnico se razlikoju od jezika do jezika. Nekateri jeziki so zasnovani tako, da se določenih sintaktičnih konstruktov ne more opisati brez nanašanja na jedrno knjižnico.
+
+
+== Načrtovanje in implementacija programskih jezikov ==
+Veliko programskih jezikov je nastalo zaradi novih potreb iz nič ali pa so bili kombinirani z drugimi jeziki. Veliko se jih ne uporablja več. Prav tako so nekateri poskusili oblikovati »univerzalni« programski jezik, ki bi služil za kakršnikoli namen - nobeden izmed njih ni bil splošno sprejet. Potreba po raznovrstnih programskih jezikih v glavnem nastaja zaradi raznovrstnosti načina uporabe jezikov:
+
+Programi so lahko majhne skripte, ki jih napišejo posamezni ljubiteljski programerji ali pa so lahko ogromni sistemi, ki so bili sprogramirani s strani več 100 programerjev.
+Strokovno znanje programerjev variira od novincev, ki predvsem potrebujejo preprosto uporabo jezika, do ekspertov, ki obvladajo kompleksnejše programiranje.
+Programi morajo delovati z določeno hitrostjo, velikostjo in enostavnostjo na sistemih, ki variirajo od mikrokrmilnikov do superračunalnikov.
+Programi so lahko napisani enkrat in se ne spreminjajo, ali pa se lahko redno posodabljajo.
+Končno imajo programerji lahko tudi različne okuse: lahko so navajeni razpravljati o problemih in jih reševati v določenem jeziku.
+V razvoju programskih jezikov je trend dodajanja možnosti reševanja problemov z uporabo višjega nivoja abstrakcije. Zgodnejši programski jeziki so bili pogojeni z razpoložljivo strojno opremo rečunalnika. Ko so se razvili novi programski jeziki, so jim dodali funkcionalnost, ki dovoljuje programerjem izražanje idej, ki so bolj odmaknjene od preprostega prevajanja inštrukcij strojne opreme. Programerji so tako manj omejeni s kompleksnostjo računalnika, njihovi programi lahko izvedejo več računanja z manj truda. To jim dovoljuje pisanje več kode na časovno enoto.
+Procesorji naravnega jezika so bili predlagani kot način za odpravo potrebe po specializiranih jezikih za programiranje. kakorkoli, ta cilj je še daleč in njegogove prednosti so še stvar razprave. Edsger W. Dijkstra je zavzel stališče, da je formalni jezik nujno potreben za preprečevanje nesmiselnih konstruktov, in zavrnil idejo o programiranju naravnih jezikov kot »nespametno«. Prav tako je idejo zavrnil Alan Perlis. Hibridni pristop sta privzela Structured English in SQL.
+Oblikovalci jezikov in uporabniki morajo ustvariti številne dokumente, ki vodijo in omogočajo programiranje. Najpomembnejša izmed teh sta specifikacija in implementacija jezika.
+
+
+=== Specifikacija ===
+Namen specifikacije programskega jezika je podroben opis jezika, ki ga lahko uporabniki jezika in implementatorji uporabijo pri določanju pravilnosti obnašanja programa glede na izvorno kodo.
+Specifikacija programskega jezika je lahko v različnih oblikah:
+
+Natančna definicija sintakse, statične semantike, izvajanja semantike jezika. Medtem ko je sintaksa običajno specificirana z uporabo formalne slovnice, je semantika lahko zapisana v naravnem jeziku (npr. kot je to pri jeziku C) ali s formalno semantiko (npr. kot je to pri Standard ML in Scheme specifikacijah).
+Opis obnašanja translatorja za jezik (npr. C++ in Fortran specifikacije). Sintaksa in semantika jezika se sklepata iz tega opisa, ki je lahko napisan v naravnem ali formalnem jeziku.
+
+
+=== Implementacija ===
+Implementacija programskega jezika zagotavlja način izvajanja programa na eni ali več konfiguracij strojne ali programske opreme. V splošnem obstajata dva pristopa k implementaciji programskega jezika:
+prevajanje in interpretiranje.
+Izhodni rezultat prevajalnika lahko izvaja strojna oprema ali program, ki se imenuje interpreter. V nekaterih implementacijah uporaba pristopa interpreterja zabriše mejo med prevajanje in interpreterjem. Na primer, nekatere implementacije programskega jezika BASIC prevajajo in potem izvajajo vir vrstico po vrstico.
+Programi, ki se izvajajo direktno na strojni opremi, se običajno izvajajo veliko hitreje kot tisti, ki jih izvaja interpreter v programski opremi.
+Ena izmed tehnik za izboljšanje izvajanja interpretiranih programov je predčasno prevajanje (just-in-time compilation). Tukaj navidezni stroj, tik pred izvajanjem, prevede bloke bytecode, ki jih bo uporabila strojna koda za direktno izvajanje v strojni opremi.
+
+
+== Razvrstitev programskih jezikov ==
+Od začetkov računalništva do danes je bilo napisanih veliko programskih jezikov, ki jih je mogoče razvrstiti po različnih kriterijih: po moči osnovnih operacij (po nivoju programskih jezikov), po namenu uporabe, po naravi osnovnih objektov in po drugih kriterijih.
+Programski jeziki so glede na svoj abstrakcijski nivo kategorizirani od prve do pete generacije. Jeziki nižjih nivojev so bližje zapisu, ki ga razumejo stroji, medtem ko so jeziki višjih novojev razumljivejši človeku in so skladenjsko bolj podobni naravnim jezikom.
+Prva generacija je strojni jezik, ki ga razume centralna procesna enota, druga generacija je zbirni programski jezik, katerega skladenjska pravila so opredeljena z mnemoniki in operandi oziroma parametri, tretja generacija so visokonivojski programski jeziki (angl. high-level programming languages - HLL), četrta zelo visokonivojski programski jeziki (angl. very high-level programming languages - VHLL) in peta generacija (angl. domain-specific languages - DSL), ki opredeljuje programske jezike, ki služijo reševanju specifičnih problemov ozkega področja.
+Visokonivojski programski jezik je skupek skladenjskih in pomenoslovnih pravil, podatkovnih struktur in vmesnikov, ki programerju služijo kot orodje za reševanje problemov oziroma implementacijo računalniškega programa, v človeku bolj prijazni, razumljivi strukturi in pomenu. Programski jeziki od druge do pete generacije se uporabljajo zato, ker sta človekova in računalnikova »govorica« tako različni, da je pisati programje v jeziku računalnika (strojni kodi) zelo zahtevno. Zbirni jezik se še vedno uporablja zlasti med poklicnimi programerji na področju sistemskega programiranja.
+
+
+== Sklici ==
+
+
+== Viri ==
+Špegel, Marjan (1971), »Programski jeziki«,  v Spiller-Muys, Franc (ur.), Elektronski računalniki, Ljubljana: Elektrotehniška zveza Slovenije
+Žumer, Viljem; Mernik, Marjan (2001), Principi programskih jezikov, Maribor: Fakulteta za elektrotehniko, računalništvo in informatiko, COBISS 45721345, ISBN 86-435-0362-2
+Wirth, Niklaus (1983), Računalniško programiranje 2.del, Ljubljana: Društvo matematikov, fizikov in astronomov SRS

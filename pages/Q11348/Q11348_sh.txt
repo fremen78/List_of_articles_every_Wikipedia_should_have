@@ -1,0 +1,3507 @@
+Za ostala značenja, vidi Funkcija (razvrstavanje).
+Funkcija je, uopšte, pravilo pridruživanja jednog elementa iz skupa H (domen funkcije) drugom iz skupa U (kodomen funkcije). Za zapisivanje funkcija koristimo oznake kao što je 
+  
+    
+      
+        f
+        :
+        X
+        →
+        Y
+        ,
+      
+    
+    {\displaystyle f:X\rightarrow Y,}
+  
+ ili 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        ,
+      
+    
+    {\displaystyle y=f(x),}
+  
+ a prirodu skupova koji učestvuju opisujemo frazama kakva je na primer: funkcija realne promenljive. Opseg, raspon ili područje definicije funkcije f je skup vrednosti, f(x), za x iz domena f.
+
+
+== Definicije ==
+Funkcija je jedan od osnovnih pojmova matematike. Posebno pogledajte: Analitička funkcija, Grafik funkcije, Neprekidna funkcija, Trigonometrijske funkcije, Hiperboličke funkcije. Definicija funkcije kao promenljive veličine je nesavršena jer se pri tome koristi nestrogi pojam promenljive veličine i zato se obično koristi savremeniji pristup ovom problemu preko teorije skupova.
+
+
+=== Analitička definicija ===
+Ako dve promenljive količine stoje u takvoj vezi da se menjanjem vrednosti jedne količine menja vrednost i druge, onda je druga funkcija prve.
+Osnovna karakteristika funkcije je da za jednu ulaznu vrednost dobija najviše jedna izlazna vrednost.
+Funkcija može imati više promenljivih.
+
+
+=== Definicije iz teorije skupova ===
+Skup se u matematici uzima za osnovni pojam. Dekartov proizvod skupova je skup uređenih parova. Uređeni par elemenata čine bilo kakva dva elementa kod kojih se, iz bilo kojih razloga, zna koji od njih je prvi, a koji drugi. Zatim, relacija (matematika) je neprazan podskup Dekartovog proizvoda skupova, i konačno, funkcija je jedna vrsta relacije, slika desno. Na slici desno, pre svega, data je relacija 
+  
+    
+      
+        f
+        =
+        {
+        (
+        a
+        ,
+        α
+        )
+        ,
+        (
+        b
+        ,
+        β
+        )
+        ,
+        (
+        c
+        ,
+        β
+        )
+        }
+        .
+        
+      
+    
+    {\displaystyle f=\{(a,\alpha ),(b,\beta ),(c,\beta )\}.\,}
+  
+ Zašto takvu relaciju nazivamo i funkcija?
+
+Definicija
+Neka su A i B neprazni skupovi. Tada se binarna relacija 
+  
+    
+      
+        f
+        ⊆
+        A
+        ×
+        B
+      
+    
+    {\displaystyle f\subseteq A\times B}
+  
+ zove funkcija ili preslikavanje iz A u B, ako važi 
+  
+    
+      
+        (
+        ∀
+        x
+        ∈
+        A
+        )
+        (
+        ∃
+        !
+        y
+        ∈
+        B
+        )
+        y
+        =
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle (\forall x\in A)(\exists !y\in B)y=f(x).}
+  
+
+Poslednji izraz je formula napisana pomoću kvantora svaki (obrnuto slovo A) i postoji tačno jedan (obrnuto E sa uzvičnikom) koja se čita: "za svako iks iz A postoji tačno jedno ipsilon iz Be takvo da je y=f(x)". To znači da na grafu, desno, iz svakog od elemenata skupa 
+  
+    
+      
+        A
+        =
+        {
+        a
+        ,
+        b
+        ,
+        c
+        }
+      
+    
+    {\displaystyle A=\{a,b,c\}}
+  
+ polazi po tačno jedna strelica, koja predstavlja (po tačno jedan) uređeni par (za svako od slova 
+  
+    
+      
+        a
+        ,
+        b
+        ,
+        c
+        .
+      
+    
+    {\displaystyle a,b,c.}
+  
+) Drugim rečima, funkcija je takva vrsta relacije gde je svaki elemenat jednog od skupova tačno po jednom prvi. 
+Druga, ekvivalentna definicija: binarna relacija f iz A u B je funkcija ako je
+
+  
+    
+      
+        (
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        f
+        ∧
+        (
+        x
+        ,
+        z
+        )
+        ∈
+        f
+        )
+        ⇒
+        (
+        y
+        =
+        z
+        )
+        .
+      
+    
+    {\displaystyle ((x,y)\in f\wedge (x,z)\in f)\Rightarrow (y=z).}
+  
+
+Ova definicija postavlja isti kriterijum: ako su originali jednaki (h=h) tada su i kopije jednake (y=z). Dakle, ne može isti original proizvesti različite kopije!
+Elementi skupa A nazivaju se argumenti, nezavisno promenljive, originali preslikavanja, likovi, ili elementi domena. Skup A je skup prvih elemenata uređenih parova, na grafu to je polazni skup strelice, naziva se domen, područje vrednosti (rang), itd. funkcije f. Skup B naziva se kodomen (kontradomen) funkcije, skup kopija, slika, itd. Često se domen funkcije f označava sa 
+  
+    
+      
+        
+          
+            D
+          
+        
+        (
+        f
+        )
+      
+    
+    {\displaystyle {\mathcal {D}}(f)}
+  
+, a kodomen ponekad 
+  
+    
+      
+        
+          
+            K
+          
+        
+        (
+        f
+        )
+        .
+      
+    
+    {\displaystyle {\mathcal {K}}(f).}
+  
+ Na navedenom grafu je 
+  
+    
+      
+        
+          
+            D
+          
+        
+        (
+        f
+        )
+        =
+        A
+        ,
+        
+        
+          
+            K
+          
+        
+        (
+        f
+        )
+        =
+        B
+      
+    
+    {\displaystyle {\mathcal {D}}(f)=A,\;{\mathcal {K}}(f)=B}
+  
+ i f je funkcija sa A u B, što pišemo 
+  
+    
+      
+        f
+        :
+        A
+        →
+        B
+        ,
+      
+    
+    {\displaystyle f:A\rightarrow B,}
+  
+ ili 
+  
+    
+      
+        f
+        :
+        x
+        →
+        y
+        ,
+        
+        x
+        ∈
+        A
+        ,
+        
+        y
+        ∈
+        B
+        .
+      
+    
+    {\displaystyle f:x\rightarrow y,\;x\in A,\;y\in B.}
+  
+ Često umesto 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ stavljamo 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+, pa je 
+  
+    
+      
+        y
+        =
+        f
+        (
+        x
+        )
+        ,
+        
+        x
+        ∈
+        A
+        ,
+        
+        y
+        ∈
+        B
+        .
+      
+    
+    {\displaystyle y=f(x),\;x\in A,\;y\in B.}
+  
+
+Definicija
+Funkcija 
+  
+    
+      
+        f
+        :
+        A
+        →
+        B
+      
+    
+    {\displaystyle f:A\rightarrow B}
+  
+ zove se surjekcija, ili "na"-preslikavanje, ako je 
+  
+    
+      
+        
+          
+            K
+          
+        
+        (
+        f
+        )
+        =
+        B
+        .
+      
+    
+    {\displaystyle {\mathcal {K}}(f)=B.}
+  
+
+Pomoću kvantora tu istu definiciju pišemo: 
+  
+    
+      
+        (
+        ∀
+        y
+        ∈
+        B
+        )
+        (
+        ∃
+        x
+        ∈
+        A
+        )
+        
+        y
+        =
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\displaystyle (\forall y\in B)(\exists x\in A)\;y=f(x).}
+  
+ Jednostavnije rečeno, funkcija je surjekcija ako i samo ako su svi elementi desnog skupa (B) nečije slike. Na gornjem grafu ka elementu γ ne ide niti jedna strelica. Prema tome, data funkcija nije surjekcija. Surjekcija po definiciji dozvoljava „duple kopije“.
+
+Definicija
+Funkcija 
+  
+    
+      
+        f
+        :
+        A
+        →
+        B
+      
+    
+    {\displaystyle f:A\rightarrow B}
+  
+ zove se injekcija, ili "1-1"-preslikavanje, ako važi 
+  
+    
+      
+        (
+        ∀
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ∈
+        A
+        )
+        (
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+        =
+        f
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        )
+        ⇒
+        (
+        
+          x
+          
+            1
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle (\forall x_{1},x_{2}\in A)(f(x_{1})=f(x_{2}))\Rightarrow (x_{1}=x_{2}).}
+  
+
+To je definicija po formi obrnuta onoj drugoj definiciji funkcije: ista kopija ne može biti rezultat kopiranja različitih originala. Na datom grafu, elemenat β je kopija dva originala i prema tome data funkcija f nije injekcija. Injekcija po definiciji dozvoljava da u skupu kopija postoje elementi koji uopšte nisu rezultat preslikavanja. 
+
+Definicija
+Funkcija koja je surjekcija i injekcija zove se bijekcija.
+Bijekciju nazivamo i obostrano jednoznačno preslikavanje.
+
+
+=== Teškoće prve teorije skupova ===
+Bijekcija je odigrala važnu ulogu u razmatranju pojma beskonačnosti i njemu srodnih pojmova. Ako postoje dva skupa i makar jedna funkciju među njima koja je bijekcija onda ta dva skupa imaju isti broj elemenata. To znači da ako za dva beskonačna skupa, recimo brojeva, pronađemo bar jedno bijektivno preslikavanje među njima, tada kažemo da oni imaju jednako mnogo elemenata. To je jedna od osnovnih ideja osnivača teorije skupova Kantora i Dedekinda.
+Početnu ideju skupova je ubrzo, početkom 20. veka, uzdrmao britanski matematičar i filozof, Bertran Rasel, našavši nekoliko nedoslednosti u Kantorovoj teoriji. Danas se te nedoslednosti obično nazivaju paradoksima teorije skupova. Rasel je ukazao na paradoks praznog skupa, koji je razrešen zahtevom da je prazan skup podskup svakog skupa. Njegov drugi paradoks je paradoks skupa svih skupova. Ideja skupa svih skupova je kontradiktorna, tako da današnja teorija skupova, jednostavno, ne zahteva postojanje sveobuhvatnog, "univerzalnog skupa".
+
+
+== Ispitivanje toka  funkcije ==
+Ispitati  tok funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ znači oidrediti sljedeće
+
+
+=== Područje definicije ===
+Za određivanje područja definicije funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ potrebno je poznavati elementarne funkcije
+
+
+=== Parnost ===
+Parnost funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ provjerava se pomoću definicije:
+
+Funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ je parna ako je 
+  
+    
+      
+        f
+        (
+        −
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(-x)=f(x)}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        
+          
+            D
+          
+        
+      
+    
+    {\displaystyle x\in {\mathcal {D}}}
+  
+, a neparna ako je 
+  
+    
+      
+        f
+        (
+        −
+        x
+        )
+        =
+        −
+        f
+        (
+        x
+      
+    
+    {\displaystyle f(-x)=-f(x}
+  
+) za svaki 
+  
+    
+      
+        x
+        ∈
+        
+          
+            D
+          
+        
+      
+    
+    {\displaystyle x\in {\mathcal {D}}}
+  
+.
+Kod parne i neparne funkcije područje definicije mora biti simetrično u odnosu na koordinantni početak 
+  
+    
+      
+        O
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle O(0,0)}
+  
+.
+
+Primjer
+
+  
+    
+      
+        
+          
+            x
+            
+              n
+            
+          
+          ,
+          
+          n
+          ∈
+          
+            N
+          
+        
+      
+    
+    {\displaystyle \displaystyle x^{n},\qquad n\in \mathbb {N} }
+  
+
+je parna za 
+  
+    
+      
+        n
+        =
+        2
+        k
+      
+    
+    {\displaystyle n=2k}
+  
+ paran, a neparna za 
+  
+    
+      
+        n
+        =
+        2
+        k
+        +
+        1
+      
+    
+    {\displaystyle n=2k+1}
+  
+ neparan pa je:
+
+  
+    
+      
+        
+          f
+          (
+          −
+          x
+          )
+          =
+          (
+          −
+          x
+          
+            )
+            
+              n
+            
+          
+          =
+          (
+          −
+          1
+          
+            )
+            
+              n
+            
+          
+          
+            x
+            
+              n
+            
+          
+          =
+          (
+          −
+          1
+          
+            )
+            
+              n
+            
+          
+          f
+          (
+          x
+          )
+        
+      
+    
+    {\displaystyle \displaystyle f(-x)=(-x)^{n}=(-1)^{n}x^{n}=(-1)^{n}f(x)}
+  
+.
+Funkcija 
+  
+    
+      
+        |
+        x
+        |
+      
+    
+    {\displaystyle \vert x\vert }
+  
+ je parna: ako je 
+  
+    
+      
+        x
+        >
+        0
+      
+    
+    {\displaystyle x>0}
+  
+, tada je 
+  
+    
+      
+        −
+        x
+        <
+        0
+      
+    
+    {\displaystyle -x<0}
+  
+ pa vrijedi
+
+  
+    
+      
+        
+          |
+          −
+          x
+          |
+          =
+          −
+          (
+          −
+          x
+          )
+          =
+          x
+          =
+          |
+          x
+          |
+        
+      
+    
+    {\displaystyle \displaystyle \vert -x\vert =-(-x)=x=\vert x\vert }
+  
+
+Za 
+  
+    
+      
+        x
+        <
+        0
+      
+    
+    {\displaystyle x<0}
+  
+ je 
+  
+    
+      
+        −
+        x
+        >
+        0
+      
+    
+    {\displaystyle -x>0}
+  
+ pa vrijedi
+
+  
+    
+      
+        
+          |
+          −
+          x
+          |
+          =
+          −
+          x
+          =
+          |
+          x
+          |
+        
+      
+    
+    {\displaystyle \displaystyle \vert -x\vert =-x=\vert x\vert }
+  
+
+
+=== Periodičnost ===
+Periodičnost funkcije provjerava se pomoću definicije
+
+Funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ je periodična ako postoji broj 
+  
+    
+      
+        P
+        ≠
+        0
+      
+    
+    {\displaystyle P\neq 0}
+  
+ takav da za svaki 
+  
+    
+      
+        x
+        ∈
+        
+          
+            D
+          
+        
+      
+    
+    {\displaystyle x\in {\mathcal {D}}}
+  
+ vrijedi
+
+  
+    
+      
+        
+          f
+          (
+          x
+          +
+          P
+          )
+          =
+          f
+          (
+          x
+          )
+        
+      
+    
+    {\displaystyle \displaystyle f(x+P)=f(x)}
+  
+
+Tada mora vrijediti 
+  
+    
+      
+        x
+        +
+        P
+        ∈
+        
+          
+            D
+          
+        
+      
+    
+    {\displaystyle x+P\in {\mathcal {D}}}
+  
+. Najmanji takav pozitivni broj 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ osnovni period ili period funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+.
+Primjeri periodičnih funkcija su trigonometrijske funkcije.
+Elementarna funkcija ne može biti periodićna ako ne sadrži neku od trigonometrijskih funkcija.
+
+
+=== Nula funkcije ===
+Nula funkcije određuju se rješavanjem jednačine 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(x)=0}
+  
+
+
+=== Asimptote funkcije ===
+Asimptote mogu biti vertikalne, horizontalne i kose. Određuju se nalaženjem limesa i L'Hospitalovim  pravilo, ako je potrebno.
+Asimptota funkcije je prava sa osobinom da udaljenost između tačke na grafiku funkcije i te prave teži ka nuli 
+  
+    
+      
+        (
+        0
+      
+    
+    {\displaystyle (0}
+  
+) kada tačka na grafiku odmiće u beskonačnost.
+Prava 
+  
+    
+      
+        x
+        =
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x=x_{0}}
+  
+ je vertikalna asimptota funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+u tački 
+
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+ s lijeve strane ako je 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            
+              x
+              
+                0
+              
+            
+            −
+            0
+          
+        
+        f
+        (
+        x
+        )
+        =
+        +
+        ∞
+      
+    
+    {\displaystyle \lim _{x\to x_{0}-0}f(x)=+\infty }
+  
+ ili
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            
+              x
+              
+                0
+              
+            
+            −
+            0
+          
+        
+        f
+        (
+        x
+        )
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle \lim _{x\to x_{0}-0}f(x)=-\infty }
+  
+.
+Prava 
+  
+    
+      
+        x
+        =
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x=x_{0}}
+  
+ je vertikalna asimptota funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ u tacki 
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+ s desne strane ako je
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            
+              x
+              
+                0
+              
+            
+            +
+            0
+          
+        
+        f
+        (
+        x
+        )
+        =
+        +
+        ∞
+      
+    
+    {\displaystyle \lim _{x\to x_{0}+0}f(x)=+\infty }
+  
+ ili
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            
+              x
+              
+                0
+              
+            
+            +
+            0
+          
+        
+        f
+        (
+        x
+        )
+        =
+        −
+        ∞
+      
+    
+    {\displaystyle \lim _{x\to x_{0}+0}f(x)=-\infty }
+  
+.
+Vertikalne asimptote se mogu nalaziti u tačkama prekida funkcije ili u otvorenim rubovima područja definicije.
+
+Primjer
+
+		
+			
+			
+		
+
+Prava 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\displaystyle x=0}
+  
+ je vertikalna asimptota funkcije 
+  
+    
+      
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{x}}}
+  
+ s obje strane. 
+Prava 
+  
+    
+      
+        x
+        =
+        0
+      
+    
+    {\displaystyle x=0}
+  
+ je vertikalna asimptota funkcija 
+  
+    
+      
+        ln
+        ⁡
+        x
+      
+    
+    {\displaystyle \ln x}
+  
+, 
+  
+    
+      
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle \log x}
+  
+ i 
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{2}x}
+  
+ s desne strane. U ovom slučaju vertikalna asimptota se nalazi u rubu područja definicije.
+Prava 
+  
+    
+      
+        y
+        =
+        
+          y
+          
+            0
+          
+        
+      
+    
+    {\displaystyle y=y_{0}}
+  
+ je horizontalna asimptota funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ na lijevoj strani ako je 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            −
+            ∞
+          
+        
+        f
+        (
+        x
+        )
+        =
+        
+          y
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \lim _{x\to -\infty }f(x)=y_{0}}
+  
+. 
+Prava 
+  
+    
+      
+        y
+        =
+        
+          y
+          
+            0
+          
+        
+      
+    
+    {\displaystyle y=y_{0}}
+  
+ je horizontalna asimptota funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ na desnoj strani ako je 
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            +
+            ∞
+          
+        
+        f
+        (
+        x
+        )
+        =
+        
+          y
+          
+            0
+          
+        
+      
+    
+    {\displaystyle \lim _{x\to +\infty }f(x)=y_{0}}
+  
+.
+
+Primjer
+Prava 
+  
+    
+      
+        y
+        =
+        0
+      
+    
+    {\displaystyle y=0}
+  
+ je horizontalna asimptota funkcije 
+  
+    
+      
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{x}}}
+  
+ na obje strane, kao i 
+  
+    
+      
+        y
+        =
+        0
+      
+    
+    {\displaystyle y=0}
+  
+ horizontalna asimptota funkcija 
+  
+    
+      
+        
+          2
+          
+            x
+          
+        
+      
+    
+    {\displaystyle 2^{x}}
+  
+ i 
+  
+    
+      
+        
+          e
+          
+            x
+          
+        
+      
+    
+    {\displaystyle e^{x}}
+  
+ na lijevoj strani.
+Ako je
+
+  
+    
+      
+        
+          
+            lim
+            
+              x
+              →
+              −
+              ∞
+            
+          
+          
+            
+              
+                f
+                (
+                x
+                )
+              
+              x
+            
+          
+          =
+          k
+          ,
+          
+          
+            lim
+            
+              x
+              →
+              −
+              ∞
+            
+          
+          (
+          f
+          (
+          x
+          )
+          −
+          k
+          x
+          )
+          =
+          l
+          ,
+        
+      
+    
+    {\displaystyle \displaystyle \lim _{x\to -\infty }{\frac {f(x)}{x}}=k,\qquad \lim _{x\to -\infty }(f(x)-kx)=l,}
+  
+
+pri čemu je
+
+  
+    
+      
+        
+          k
+          ≠
+          0
+          ,
+          −
+          ∞
+          ,
+          +
+          ∞
+          ,
+          
+          l
+          ≠
+          −
+          ∞
+          ,
+          +
+          ∞
+        
+      
+    
+    {\displaystyle \displaystyle k\neq 0,-\infty ,+\infty ,\qquad l\neq -\infty ,+\infty }
+  
+ tada je prava 
+  
+    
+      
+        y
+        =
+        k
+        x
+        +
+        l
+      
+    
+    {\displaystyle y=kx+l}
+  
+ kosa asimptota funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ sa lijeve strane.
+Kosu asimptotu funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ sa desne strane definišemo analogno.
+Udaljenost od tačke na krivoj do asimptote je 
+  
+    
+      
+        d
+        (
+        M
+        ,
+        L
+        )
+      
+    
+    {\displaystyle d(M,L)}
+  
+. Prema definiciji asimptote 
+  
+    
+      
+        d
+        (
+        M
+        ,
+        L
+        )
+        →
+        0
+      
+    
+    {\displaystyle d(M,L)\to 0}
+  
+ kada 
+  
+    
+      
+        x
+        →
+        +
+        ∞
+      
+    
+    {\displaystyle x\to +\infty }
+  
+. Kako je 
+  
+    
+      
+        cos
+        ⁡
+        α
+        ≠
+        0
+      
+    
+    {\displaystyle \cos \alpha \neq 0}
+  
+ konstanta, zaključujemo da
+
+  
+    
+      
+        
+          d
+          (
+          M
+          ,
+          L
+          )
+          →
+          0
+          
+          ⇔
+          
+          d
+          (
+          M
+          ,
+          N
+          )
+          →
+          0
+          
+          ⇔
+          
+          
+            lim
+            
+              x
+              →
+              +
+              ∞
+            
+          
+          |
+          f
+          (
+          x
+          )
+          −
+          (
+          k
+          x
+          +
+          l
+          )
+          |
+          =
+          0
+        
+      
+    
+    {\displaystyle \displaystyle d(M,L)\to 0\quad \Leftrightarrow \quad d(M,N)\to 0\quad \Leftrightarrow \quad \lim _{x\to +\infty }\vert f(x)-(kx+l)\vert =0}
+  
+.
+Zadnji uslov, koji je ekvivalentan sa
+
+  
+    
+      
+        
+          
+            lim
+            
+              x
+              →
+              +
+              ∞
+            
+          
+          (
+          f
+          (
+          x
+          )
+          −
+          k
+          x
+          −
+          l
+          )
+          =
+          0
+        
+      
+    
+    {\displaystyle \displaystyle \lim _{x\to +\infty }(f(x)-kx-l)=0}
+  
+ je nužan i dovoljan uslov za postojanje kose asimptote.
+Gornja jednakost je ekvivalentna sa
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            +
+            ∞
+          
+        
+        (
+        f
+        (
+        x
+        )
+        −
+        k
+        x
+        )
+        =
+        l
+      
+    
+    {\displaystyle \lim _{x\to +\infty }(f(x)-kx)=l}
+  
+.
+
+  
+    
+      
+        
+          
+            lim
+            
+              x
+              →
+              +
+              ∞
+            
+          
+          
+            
+              
+                f
+                (
+                x
+                )
+                −
+                k
+                x
+                −
+                l
+              
+              x
+            
+          
+          =
+          0
+        
+      
+    
+    {\displaystyle \displaystyle \lim _{x\to +\infty }{\frac {f(x)-kx-l}{x}}=0}
+  
+
+pa je
+
+  
+    
+      
+        
+          lim
+          
+            x
+            →
+            +
+            ∞
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              )
+            
+            x
+          
+        
+        =
+        k
+      
+    
+    {\displaystyle \lim _{x\to +\infty }{\frac {f(x)}{x}}=k}
+  
+.
+Pri tome treba voditi računa o sljedećem:
+
+kod traženja horizontalnih i kosih asimptota limese kada 
+  
+    
+      
+        x
+        →
+        −
+        ∞
+      
+    
+    {\displaystyle x\to -\infty }
+  
+ i kada
+asimptote je najbolje tražiti u opisanom redosljedu, 
+  
+    
+      
+        x
+        →
+        +
+        ∞
+      
+    
+    {\displaystyle x\to +\infty }
+  
+ uvijek treba računati posebno
+treba biti oprezan u slučaju parnih korjena kada 
+  
+    
+      
+        x
+        →
+        −
+        ∞
+      
+    
+    {\displaystyle x\to -\infty }
+  
+,
+Primjer
+
+  
+    
+      
+        
+          
+            lim
+            
+              x
+              →
+              −
+              ∞
+            
+          
+          
+            
+              
+                
+                  x
+                  
+                    2
+                  
+                
+              
+              x
+            
+          
+          =
+          −
+          
+            lim
+            
+              x
+              →
+              +
+              ∞
+            
+          
+          
+            
+              
+                
+                  x
+                  
+                    2
+                  
+                
+              
+              x
+            
+          
+          =
+          −
+          1
+        
+      
+    
+    {\displaystyle \displaystyle \lim _{x\to -\infty }{\frac {\sqrt {x^{2}}}{x}}=-\lim _{x\to +\infty }{\frac {\sqrt {x^{2}}}{x}}=-1}
+  
+.
+
+
+=== Ekstremi funkcije ===
+Kod određivanja ekstrema funkcije potrebno je provjeriti nžzne i dovoljne uslove ekstrema.
+Provjera nužnih uslova vrši se po teoremi
+
+Neka je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ neprekidna u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+. Ako funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima lokalni ekstrem u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, tada je 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ kritična tačka funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+.
+Potrebno je nači stacionarne i kritične tačke po definiciji
+
+Neka je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ neprekidna u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+. Tačka 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ je stacionarna tačka funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ako je 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        c
+        )
+        =
+        0
+      
+    
+    {\displaystyle f'(c)=0}
+  
+. Tačka  
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ je kritična tačka funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ako je 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ stacionarna tačka ili ako 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ nije diferencijabilna u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+.
+Tj. potrebno je odrediti područje definicije prvog izvoda 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ i riješiti jednačinu  
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle f'(x)=0}
+  
+. 
+Provjera dovoljnih uslova može se vršiti na tri nacina:
+pomoću promjene predznaka prvog izvoda na osnovu teoreme
+
+Ako prvi izvod 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ mijenja predznak u kritičnoj tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, tada funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima lokalni ekstrem u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+. Pri tome vrijedi sljedeće
+ako 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ mijenja predznak sa 
+  
+    
+      
+        −
+      
+    
+    {\displaystyle -}
+  
+ na 
+  
+    
+      
+        +
+      
+    
+    {\displaystyle +}
+  
+, tada je 
+  
+    
+      
+        f
+        (
+        c
+        )
+      
+    
+    {\displaystyle f(c)}
+  
+ lokalni minimum, a ako 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ mijenja predznak sa 
+  
+    
+      
+        +
+      
+    
+    {\displaystyle +}
+  
+ na 
+  
+    
+      
+        −
+      
+    
+    {\displaystyle -}
+  
+, tada je 
+  
+    
+      
+        f
+        (
+        c
+        )
+      
+    
+    {\displaystyle f(c)}
+  
+ lokalni maksimum.
+pomoću drugog izvoda na osnovu teoreme
+
+Neka je u stacionarnoj tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ dva puta diferencijabilna. Ako je 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        c
+        )
+        ≠
+        0
+      
+    
+    {\displaystyle f''(c)\neq 0}
+  
+, tada funkcija 
+  
+    
+      
+        f
+        x
+        )
+      
+    
+    {\displaystyle fx)}
+  
+ ima lokalni ekstrem u tacki 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+. Pri tome vrijedi sljedeće
+ako je 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        c
+        )
+        >
+        0
+      
+    
+    {\displaystyle f''(c)>0}
+  
+, tada je 
+  
+    
+      
+        f
+        (
+        c
+        )
+      
+    
+    {\displaystyle f(c)}
+  
+ lokalni minimum, a ako je 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        c
+        )
+        <
+        0
+      
+    
+    {\displaystyle f''(c)<0}
+  
+, tada je 
+  
+    
+      
+        f
+        (
+        c
+        )
+      
+    
+    {\displaystyle f(c)}
+  
+ lokalni maksimum.
+pomoću viših izvoda na osnovu teoreme
+
+Neka funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima u nekoj 
+  
+    
+      
+        ε
+      
+    
+    {\displaystyle \varepsilon }
+  
+ -okolini tačke c neprekidnog izvoda do uključivo reda 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, pri čemu je 
+  
+    
+      
+        n
+        ≥
+        3
+      
+    
+    {\displaystyle n\geq 3}
+  
+.
+Neka je 
+  
+    
+      
+        
+          
+            f
+            ″
+          
+          (
+          c
+          )
+          =
+          
+            f
+            ‴
+          
+          (
+          c
+          )
+          =
+          ⋯
+          =
+          
+            f
+            
+              (
+              n
+              −
+              1
+              )
+            
+          
+          (
+          c
+          )
+          =
+          0
+          ,
+          
+          
+            f
+            
+              (
+              n
+              )
+            
+          
+          (
+          c
+          )
+          ≠
+          0.
+        
+      
+    
+    {\displaystyle \displaystyle f''(c)=f'''(c)=\cdots =f^{(n-1)}(c)=0,\qquad f^{(n)}(c)\neq 0.}
+  
+
+Ako je 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ neparan, tada funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima infleksiju u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+. Ako je 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ paran i ako je uz to još i 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        c
+        )
+        =
+        0
+      
+    
+    {\displaystyle f'(c)=0}
+  
+, tada funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima lokalni ekstrem u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ i to minimum za 
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        c
+        )
+        >
+        0
+      
+    
+    {\displaystyle f^{(n)}(c)>0}
+  
+ i maksimum za 
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        c
+        )
+        <
+        0
+      
+    
+    {\displaystyle f^{(n)}(c)<0}
+  
+.
+
+
+=== Intervali monotonosti ===
+Posto smo načli prvi izvod 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ funkcije 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ intervale monotonosti određujemo određujuci predznak od 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f'(x)}
+  
+ na osnovu teoreme
+
+Neka je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ diferencijabilna na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+. Tada vrijedi
+funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ je rastuća na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+ ako i samo ako je 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        ≥
+        0
+      
+    
+    {\displaystyle f'(x)\geq 0}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle x\in (a,b)}
+  
+
+Funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ je opadajuća na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+ ako i samo ako je 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        ≤
+        0
+      
+    
+    {\displaystyle f'(x)\leq 0}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle x\in (a,b)}
+  
+
+Ako je 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        >
+        0
+      
+    
+    {\displaystyle f'(x)>0}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle x\in (a,b)}
+  
+, tada je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ strogo rastuća na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+      
+    
+    {\displaystyle (a,b}
+  
+
+Ako je 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        <
+        0
+      
+    
+    {\displaystyle f'(x)<0}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle x\in (a,b)}
+  
+, tada je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ strogo opadajuća na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+.
+
+
+=== Konkavnost i konveksnost funkcije ===
+Potrebno je odrediti drugi izvod 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f''(x)}
+  
+,a onda intervale konveksnosti i konkavnosti pomoću teoreme
+
+Neka je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ dva puta deiferencijabilna na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+. Ako je 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+        >
+        0
+      
+    
+    {\displaystyle f''(x)>0}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle x\in (a,b)}
+  
+, tada je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ strogo konveksna na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+. Ako je 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+        <
+        0
+      
+    
+    {\displaystyle f''(x)<0}
+  
+ za svaki 
+  
+    
+      
+        x
+        ∈
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle x\in (a,b)}
+  
+, tada je funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ strogo konkavna na intervalu 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+.
+
+
+=== Tačke infleksije ===
+Potrebno je naći tačke u kojima drugi izvod 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+        $
+      
+    
+    {\displaystyle f''(x)\$}
+  
+ mijenja predznak, odnosno tačke koje ispunjavaju dovoljne uslove infleksije po teoremi
+
+Neka je funkcija dva puta deferencijabilna na nekoj 
+  
+    
+      
+        ε
+      
+    
+    {\displaystyle \varepsilon }
+  
+ -okolini tačke 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, osim možda u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+. Ako 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f''(x)}
+  
+ mijenja predznak u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+, tada funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima infleksiju u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+.
+Za provjeru dovoljnih uslova infleksije možemo koristiti i više izvode na osnovu teoreme
+
+Neka funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima u nekoj 
+  
+    
+      
+        ε
+      
+    
+    {\displaystyle \varepsilon }
+  
+ - okolini tačke 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ neprekidne izvode do uključivo reda 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+, pri čemu je 
+  
+    
+      
+        n
+        ≥
+        3
+      
+    
+    {\displaystyle n\geq 3}
+  
+. Neka je
+
+  
+    
+      
+        
+          
+            f
+            ″
+          
+          (
+          c
+          )
+          =
+          
+            f
+            ‴
+          
+          (
+          c
+          )
+          =
+          ⋯
+          =
+          
+            f
+            
+              (
+              n
+              −
+              1
+              )
+            
+          
+          (
+          c
+          )
+          =
+          0
+          ,
+          
+          
+            f
+            
+              (
+              n
+              )
+            
+          
+          (
+          c
+          )
+          ≠
+          0.
+        
+      
+    
+    {\displaystyle \displaystyle f''(c)=f'''(c)=\cdots =f^{(n-1)}(c)=0,\qquad f^{(n)}(c)\neq 0.}
+  
+
+Ako je 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ neparan, tada funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima infleksiju u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+.
+Ako je 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ paran i ako je uz to još i 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        c
+        )
+        =
+        0
+      
+    
+    {\displaystyle f'(c)=0}
+  
+, tada funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima lokalni ekstrem u tacki 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ i to minimum za 
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        c
+        )
+        >
+        0
+      
+    
+    {\displaystyle f^{(n)}(c)>0}
+  
+ i maksimum za 
+  
+    
+      
+        
+          f
+          
+            (
+            n
+            )
+          
+        
+        (
+        c
+        )
+        <
+        0
+      
+    
+    {\displaystyle f^{(n)}(c)<0}
+  
+.
+U tom slučaju potrebno je prvo naci tačke u kojima je drugi izvod 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f''(x)}
+  
+ jednak nuli, odnosno tačke koje zadovoljavaju nužan uslov infleksije po teoremi
+
+Ako funkcija 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+ ima infleksiju u tački 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ i ako 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        c
+        )
+      
+    
+    {\displaystyle f''(c)}
+  
+ postoji, tada je 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        c
+        )
+        =
+        0
+      
+    
+    {\displaystyle f''(c)=0}
+  
+.
+
+
+=== Graf funkcije ===
+Grafik funkcije se crta na osnovu dobijenih informacija.
+
+
+== Eksterni linkovi ==
+
+spisak kategorija matematičkih funkcija

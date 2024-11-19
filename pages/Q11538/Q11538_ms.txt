@@ -1,0 +1,368 @@
+Dalam matematik, bukti ialah demonstrasi yang meyakinkan (dalam piawaian yang diterima untuk bidang tersebut) untuk membuktikan kebenaran beberapa pernyataan bermatematik. Bukti tidak akan diperolehi dengan taakulan induktif atau hujah empirikal, tetapi dengan taakulan deduktif. Ini bermaksud, satu bukti mesti menunjukkan yang satu pernyataan itu benar dalam semua kes, tanpa sebarang pengecualian. Proposisi yang tidak dibuktikan tetapi dipercayai benar, dikenali sebagai konjektur.
+Pernyataan yang telah dibuktikan sering dipanggil teorem.  . Apabila satu teorem telah dibuktikan , ia boleh digunakan sebagai asas untuk membuktikan pernyataan-pernyataan yang lain. Satu teorem boleh juga dirujuk sebagai lema, terutamanya jika ia hendak digunakan sebagai batu loncatan dalam pembuktian teorem yang lain.
+Bukti menggunakan logik, tetapi selalunya mengandungi juga beberapa bahasa asli yang biasanya mempunyai kesamaran. Sebenarnya, sebahagian besar bukti-bukti dalam matematik bertulis boleh dianggap sebagai aplikasi logik tak formal yang keras. Bukti formal yang tulen yang ditulis dalam bahasa simbolik, bukan bahasa asli, akan diterima dalam teori bukti. Perbezaan antara bukti formal dan tak formal telah membawa kepada banyak penyelidikan tentang amalan matematik, kuasi empirisisme dalam matematik, dan matematik lisan yang digunakan dulu dan sekarang. Falsafah matematik mengambil berat tentang peranan bahasa dan logik dalam bukti-bukti dan matematik sebagai satu bahasa.
+
+
+== Sifat ==
+Terdapat dua konsepsi yang berbeza untuk bukti matematik. 
+Pertamanya ialah bukti tidak formal, iaitu ungkapan rapi bahasa asli yang bertujuan untuk meyakinkan khalayak akan kebenaran sesebuah teorem. Oleh kerana penggunaan bahasa asli ini, piawai kerapian untuk bukti tidak formal akan bergantung pada khalayak bukti tersebut. Walau bagaimanapun, untuk dianggap sebagai satu bukti, hujah tersebut mestilah cukup rapi; kerana hujah yang samar atau tidak lengkap adalah tidak layak menjadi bukti. Bukti tidak formal ialah bukti yang biasa dijumpai dalam penerbitan matematik. Ia kadang-kadang dipanggil "bukti formal" kerana kerapiannya, tetapi ahli logik menggunakan istilah "bukti formal" untuk merujuk kepada satu jenis bukti yang berbeza sepenuhnya.
+Dalam logik, bukti formal tidak ditulis dalam bahasa asli, sebaliknya menggunakan bahasa formal yang terdiri daripada rantaian simbol tertentu dari abjad tetap. Ini membenarkan pentakrifan bukti formal ditentukan tanpa sebarang kesamaran. Bidang teori bukti mengkaji bukti formal dan sifat-sifatnya. Walaupun secara teori, setiap bukti tidak formal boleh ditukar menjadi bukti formal, ia jarang dilakukan. Pengkajian bukti formal digunakan untuk menentukan sifat-sifat kebolehbuktian secara umumnya, dan untuk menunjukkan pernyataan tertentu tidak boleh dibuktikan.
+
+
+== Kaedah bukti ==
+
+
+=== Bukti langsung ===
+Dalam bukti langsung, kesimpulan dihasilkan dengan menggabungkan secara logik aksiom-aksiom, definisi-definisi, dan teorem-teorem yang lebih awal. Contohnya, bukti langsung boleh diguna untuk menentukan yang hasil tambah dua integer genap akan sentiasa genap:
+
+Bayangkan dua integer genap x and y. Oleh kerana keduanya adalah genap, ia boleh ditulis sebagai x=2a dan y=2b secara berturutan untuk integer a dan b. Kemudian hasil tambah 
+  
+    
+      
+        x
+        +
+        y
+        =
+        2
+        a
+        +
+        2
+        b
+        =
+        2
+        (
+        a
+        +
+        b
+        )
+      
+    
+    {\displaystyle x+y=2a+2b=2(a+b)}
+  
+. Dari sini, ia jelas yang x+y memiliki 2 sebagai faktor dan juga merupakan integer genap, maka hasil tambah untuk sebarang dua integer genap akan menghasilkan integer genap juga.
+Bukti ini menggunakan definisi integer genap, dan juga hukum taburan.
+
+
+=== Bukti menerusi aruhan matematik ===
+Dalam pembuktian menerusi aruhan matematik, mulanya "kes dasar" akan dibuktikan, dan kemudian "petua aruhan" akan digunakan untuk membuktikan siri (biasanya yang tak terhingga) untu kes yang lain.  Oleh kerana kes dasar adalah benar, ketakterhinggaan kes yang lain mesti juga benar, walaupun jika semuanya tidak boleh dibuktikan secara terus disebabkan nombor tak terhingga mereka.
+Prinsip aruhan matematik menyatakan yang:
+Biar N = { 1, 2, 3, 4, ... } menjadi set nombor asli dan P(n) menjadi pernyataan matematik yang melibatkan nombor n yang terdapat dalam N
+
+(i) P(1) adalah benar, i.e., P(n) adalah benar untuk n = 1
+(ii) P(n + 1) adalah benar bila mana P(n) adalah benar, i.e., P(n) adalah benar menunjukkan yang P(n + 1) adalah benar.
+Maka P(n) adalah benar untuk semua nombor asli n.
+Ahli matematik sering menggunakan istilah "bukti dengan aruhan" sebagai kependekan untuk bukti dengan aruhan matematik. Bagaimanapun, istilah "bukti dengan aruhan" boleh juga digunakan dalam logik yang membawa maksud satu hujah yang menggunakan taakulan induktif.
+
+
+=== Bukti menerusi transposisi ===
+Bukti menerusi transposisi memberi kesimpulan "jika p maka q" dengan membuktikan pernyataan kontrapositif "jika bukan q maka bukan p".
+
+
+=== Bukti menerusi percanggahan ===
+Dalam bukti menerusi percanggahan (juga dikenali sebagai reductio ad absurdum, bahasa latin/latin untuk "dengan pengurangan ke arah mustahil "), ia menunjukkan yang jika beberapa pernyataan adalah sebegitu,satu percanggahan logikal berlaku, maka pernyataan itu mesti tidak begitu. Kaedah ini adalah yang termasyhur dalam bukti matematik. Contoh terkenal bukti dengan percanggahan menunjukkan 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ ialah satu nombor tak nisbah:
+
+Diberi 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ ialah satu nombor nisbah, jadi 
+  
+    
+      
+        
+          
+            2
+          
+        
+        =
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}={a \over b}}
+  
+ di mana a dan b adalah integer bukan sifar yang tiada faktor sepunya. Maka, 
+  
+    
+      
+        b
+        
+          
+            2
+          
+        
+        =
+        a
+      
+    
+    {\displaystyle b{\sqrt {2}}=a}
+  
+. Mengkuasa dua kedua belah akan menghasilkan 2b2 = a2. Oleh kerana 2 membahagi di bahagian kiri, 2 juga mesti membahagi bahagian kanan (kerana keduanya adalah integer dan sama). Maka a2 adalah genap, yang mengimplikasikan yang a mesti juga genap. Jadi kita boleh menulis a = 2c, di mana c juga ialah satu integer. Apabila ia dimasukkan ke dalam persamaan yang asal, menghasilkan 2b2 = (2c)2 = 4c2. Bahagikan kedua belah dengan 2 akan menghasilkan b2 = 2c2. Tetapi, dengan hujah yang sama seperti sebelumnya, 2 bahagi b2, maka b mesti juga genap. Bagaimanapun, jika a dan b kedua-duanya adalah genap, ia berkongsi satu faktor iaitu 2. Ini bercanggah dengan andaian kita sebelumnya yang kedua a dan b tiada faktor sepunya. Maka kita terpaksa menyimpulkan yang 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ ialah satu nombor tak nisbah.
+
+
+=== Bukti menerusi pembinaan ===
+Bukti menerusi pembinaan atau bukti dengan contoh, ialah satu pembinaan contoh yang konkrit dengan satu sifat untuk menunjukkan yang, sesuatu yang memiliki sifat tersebut wujud. Contohnya, Joseph Liouville membuktikan kewujudan nombor transenden dengan membina contoh yang tak tersirat.
+
+
+=== Bukti menerusi habisan ===
+Dalam bukti menerusi habisan, kesimpulan didapati dengan membahagikannya kepada satu bilangan kes yang terhingga dan membuktikan setiap satunya secara berasingan. Bilangan kes kadang-kadang boleh menjadi sangat besar. Sebagai contoh,bukti pertama untuk teorem empat warna ialah bukti menerusi habisan dengan 1,936 kes. Bukti ini adalah satu kontrovesi kerana majoriti kes diperiksa dengan satu program komputer, bukan dengan pengiraan tangan. Bukti paling pendek yang diketahui hari ini untuk teorem empat warna masih memiliki lebih 600 kes.
+
+
+=== Bukti menerusi kebarangkalian ===
+Bukti berkebarangkalian ialah di mana contoh ditunjukkan wujud dengan kepastian, menggunakan kaedah teori kebarangkalian. Ia tidak boleh dikelirukan dengan satu hujah yang teorem adalah 'barangkali' benar. Penaakulan ini boleh dipanggil 'hujah kemungkinan' dan bukannya satu bukti; dalam kes konjektur Collatz, ia jelas betapa jauh konsepnya dari bukti tulen.  Seperti juga bukti menerusi pembinaan, bukti berkebarangkalian ialah salah satu cara untuk menunjukkan teorem kewujudan.
+
+
+=== Bukti kombinatorik ===
+Bukti kombinatorik membina kesamaan antara ungkapan-ungkapan yang berbeza dengan menunjukkan yang mereka mengira objek yang sama dengan cara yang berbeza. Bijeksi antara dua set yang berbeza sering digunakan untuk menunjukkan yang ungkapan untuk saiz mereka adalah sama. Secara alternatif, hujah pengiraan dua kali memberi dua ungkapan yang berbeza untuk saiz satu set tunggal, juga menunjukkan yang kedua-dua ungkapan adalah sama.
+
+
+=== Bukti tidak membina ===
+Bukti tidak membina menetapkan yang sebuah objek matematik mesti wujud (contohnya "Beberapa X melengkapkan f(X)"), tanpa menerangkan bagaimana objek tersebut boleh ditemui. Kadang-kadang, ia sama bentuk dengan bukti menerusi percanggahan di mana ketidakwujudan sesuatu objek dibuktikan mustahil. Sebaliknya, bukti membina menetapkan yang sesuatu objek wujud dengan memberikan satu kaedah untuk mencarinya. Contoh terkenal bukti tidak membina menunjukkan terdapat dua nombor tak nisbah a dan b yang mana 
+  
+    
+      
+        
+          a
+          
+            b
+          
+        
+      
+    
+    {\displaystyle a^{b}}
+  
+ adalah nombor nisbah:
+
+Samada 
+  
+    
+      
+        
+          
+            
+              2
+            
+          
+          
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}^{\sqrt {2}}}
+  
+ adalah nombor nisbah dan kita sudah selesaikannya (take 
+  
+    
+      
+        a
+        =
+        b
+        =
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a=b={\sqrt {2}}}
+  
+), atau 
+  
+    
+      
+        
+          
+            
+              2
+            
+          
+          
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}^{\sqrt {2}}}
+  
+ adalah nombor tak nisbah, maka kita boleh mencatat 
+  
+    
+      
+        a
+        =
+        
+          
+            
+              2
+            
+          
+          
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle a={\sqrt {2}}^{\sqrt {2}}}
+  
+ dan 
+  
+    
+      
+        b
+        =
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle b={\sqrt {2}}}
+  
+. Ini kemudian menghasilkan 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  2
+                
+              
+              
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            
+              2
+            
+          
+        
+        =
+        
+          
+            
+              2
+            
+          
+          
+            2
+          
+        
+        =
+        2
+      
+    
+    {\displaystyle \left({\sqrt {2}}^{\sqrt {2}}\right)^{\sqrt {2}}={\sqrt {2}}^{2}=2}
+  
+ yang merupakan nombor nisbah untuk 
+  
+    
+      
+        
+          a
+          
+            b
+          
+        
+        .
+      
+    
+    {\displaystyle a^{b}.}
+  
+
+
+=== Bukti visual ===
+Walaupun ia secara rasminya bukan satu bukti, demonstrasi visual untuk teorem matematik kadang-kadang dipanggil "bukti tanpa perkataan". Gambar berikut merupakan contoh bersejarah bukti visual untuk teorem Pythagoras dan kes segi tiga (3,4,5).
+
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+=== Bukti asas ===
+Bukti asas ialah bukti yang hanya menggunakan teknik-teknik asas. Istilah ini digunakan terutamanya dalam teori nombor untuk merujuk kepada bukti-bukti yang tidak menggunakan analisis kompleks. Untuk seketika, beberapa teorem seperti teorem nombor perdana dianggap hanya boleh dibuktikan dengan matematik "tinggi". Bagaimanapun, seiring peredaran masa, kebanyakan keputusan-keputusan ini telah dibuktikan semula dengan menggunakan hanya teknik asas.
+
+
+=== Bukti dua lajur ===
+
+Bentuk bukti tertentu yang menggunakan dua lajur selari sering digunakan dalam kelas geometri asas di Amerika Syarikat. Bukti ini ditulis dalam bentuk siri garisan dalam dua lajur. Dalam setiap garisan, lajur bahagian kiri mengandungi satu proposisi, sementara lajur bahagian kanan mengandungi penerangan ringkas tentang samada proposisi itu adalah aksiom, hipotesis, atau boleh secara logik diterbitkan dari proposisi sebelumnya. Lajur di bahagian kiri selalunya diberi tajuk "pernyataan" dan bahagian kanan diberi tajuk "taakulan".
+
+
+=== Bukti statistik dalam matematik tulen ===
+Ungkapan "bukti statistik" mungkin digunakan secara teknikal atau bahasan dalam bidang-bidang matematik tulen, seperti yang melibatkan kriptografi dan teori nombor yang berkebarangkalian atau analitik.. Istilah ini jarang digunakan untuk merujuk kepada bukti matematik dalam cabang matematik yang dikenali sebagai statistik matematik.
+
+
+=== Bukti bantuan komputer ===
+Sehingga kurun ke-20, sebarang bukti dianggap secara prinsipnya boleh diperiksa oleh ahli matematik yang cekap untuk menentukan kesahihannya. . Bagaimanapun, sekarang komputer digunakan untuk membuktikan teorem dan juga untuk menyelesaikan pengiraan yang terlalu panjang untuk manusia lakukan; bukti pertama untuk teorem empat warna adalah contoh bukti bantuan komputer. Beberapa ahli matematik mengambil berat akan kemungkinan ralat di dalam program komputer atau ralat masa jalanan dalam pengiraannya, menyebabkan kesahihan bukti bantuan komputer ini boleh dipersoalkan. Realitinya, kebarangkalian ralat mentaksahkan bukti bantuan komputerr boleh dikurangkan dengan memasukkan semak lawahan dan semak sendiri dalam pengiraan, dan dengan membangunkan beberapa pendekatan dan program bebas.
+
+
+== Rujukan ==
+
+
+== Sumber ==
+Polya, G. Mathematics and Plausible Reasoning. Princeton University Press, 1954.
+Fallis, Don (2002) “What Do Mathematicians Want? Probabilistic Proofs and the Epistemic Goals of Mathematicians.” Logique et Analyse 45:373-88.
+Franklin, J. and Daoud, A. Proof in Mathematics: An Introduction. Quakers Hill Press, 1996. ISBN 1-876192-00-3
+Solow, D. How to Read and Do Proofs: An Introduction to Mathematical Thought Processes. Wiley, 2004. ISBN 0-471-68058-3
+Velleman, D. How to Prove It: A Structured Approach. Cambridge University Press, 2006. ISBN 0-521-67599-5

@@ -1,0 +1,59 @@
+Tvrdi disk (engleski: hard disk) jest elektromehanički uređaj za pohranjivanje digitalnih podataka koji su magnetski zapisani na jednoj ili više rotirajućih disk ploča.
+
+
+== Dijelovi hard diska ==
+Tvrdi disk se sastoji od 5 glavnih dijelova, a to su:
+
+Magnetna ploča
+Glava za čitanje/pisanje
+Pobuđivačka kazaljka (aktuatorska ruka)
+Pobuđivač (aktuator)
+Osovina
+Obično kad govorimo o hard diskovima razlikujemo elektronički i mehanički dio diska, a pošto je hard disk zatvoren vidi se samo jedan dio elektronike. Oni se zapisuju na površini magnetne ploče u sektorima i stazama (tracks). 
+
+Sektor obično sadrži određeni broj bajtova (npr. 128), i oni su u obliku zaobljenih polukrugova, dok su staze u obliku koncentričnih krugova ("cilindri"). Postoje dvije vrste formatiranja, a to su Low-level i High-level formatiranje. Low-level formatiranje utvrđuje staze i sektore (sa konstantim razmakom između "cilindara" i zbog različitih konstrukcija, različitih brojeva sektora u pojedinom "cilindru", gdje noviji tvrdi diskovi imaju više sektora na širim "cilindrima", a stariji imaju konstantan broj po obimu "cilindra" bez obzira na polumjer od centra vrtnje), dok High-level formatiranje je mnogo poznatije i korištenije (standardni format C:\) te ono obezbjeđuje da disk može zapisivati datoteke.
+
+
+== Princip rada ==
+Stvar je - principijelno - jednostavna, elektronički dio kontroliše čitanje i pisanje podataka, dok motor okreće ploče, naravno sve je to napravljeno jako precizno. Magnetna ploča je skoro najbitniji dio, i taj dio se okreće, danas najčešće brzine su 5400, 7200 i više rpm (rotacija po minuti), dok se kazaljka (ili ruka aktuatora) kreće po ploči koja je izuzetno precizna i lagana, a uz to i brza.
+Budući da je po osnovnoj konstrukciji tvrdi disk "očigledno" analogni uređaj, iz jednostavnog opisa njegovog rada to bi se i možda (pogrešno) moglo zaključiti. Međutim, suština pojma tvrdog diska i njegovog rada je u tome da je to DIGITALNI uređaj : Što znači da je kretanje aktuatora i vrtnja ploča tvrdog diska savršeno sinhronizirana (direktno i indirektno), tako da kada npr. zbog ograničenja prostora kada se slobodni kapacitet tvrdog diska smanjuje zbog ponavljanog zapisivanja podataka , pa tada aktuatorska glava mora preskakati iznad različitih polumjera od centra vrtnje (na različitim "cilindrima", te sljedstvenog "defragmentiranja" podataka), tada mora doći do re-sinhronizacije "u hodu" da bi se istovremeno održao kontinuitet dotoka podataka i sinhroni/digitalni izlaz/ulaz podataka u konstatnom "clocku" , kojeg inicijano zadaje matična ploča. Magnetska glava, na kraju aktuatorske ruke, nalazi se veoma blizu površine ploče (nekoliko desetina do stotina nanometara), ali nikada ne smije da je dodirne, čak ni u slučaju pada tvrdog dika sa manje visine, dok je isti u pogonu. Istovremeno, ovaj podatak znači da je površina ploče tvrdog diska doslovno optički glatka, sa još manjim tolerancijama po pitanju "grbavosti" plohe, pa ploče zbog ovoga zaista i imaju osobine optičkih ogledala.
+Gornje činjenice znače da i aktuator i magnetna glava na njegovom vrhu moraju imati što manju inerciju, budući da je vrijeme koje je potrebno da bi tvrdi disk nasumce pristupao podacima "za komforan rad" korisnika, reda veličine nekoliko milisekundi (kod najbržih SCSI serverskih tvrdih diskova minimum je oko 4 ms), a pri tom se na aktuatoru koriste ekstremno jaki permanentni neodijumski magneti, kako bi se dobio izuzetno jak zakretni momenat i potrebna snaga da se u kratkom vremenu može načiniti jednako brz pokret aktuatora u suprotnom smjeru bez značajnijeg desinhroniziranja tvrdog diska i smanjenja protoka podataka.
+Što se tiče motora na kojima se vrte ploče tvrdih diskova, to su u principu trofazni (ili rjeđe polifazni) specijalni sinhroni motori koji u svojoj konstrukciji sadržavaju osobine veoma vremenski stabilne i istovremeno u hodu konstante (i u smislu pojedinog okreta i u smislu dugotrajne nepromjenjivosti performansi) 
+vrtnje, te mogućnosti kontrole te vrtnje kod promjene temperature, uz istovremeno veoma dobro izdržavanje toplote koju stvaraju zbog veoma visokog broja obrtaja. Kao što se može i pretpostaviti, većina elektronike koja se nalazi na tvrdom disku odrađuje zadatak raznoraznih sinhronizacija, a noviji tvrdi diskovi imaju i podsistem samokontrole kvaliteta rada. Životni vijek tvrdih diskova, u zavisnosti od opterećenja, kreće se od nekoliko godina (kod najjeftinijih kućnih modela) pa do desetak godina (uz staklene ploče), za serverske varijante, a najčešći uzrok otkaza tvrdih diskova je gubljenje zadatih performansi i desinhroniziranje zbog fizičkog razlabavljivanja ležaja motora, zbog istrošenosti ležajeva - zbog vrućine i trenja.
+Iz svega iznesenog, vezano za način rada tvrdog diska, jasno je da je taj uređaj visoko tehnički zahtjevan proizvod, koji istovremeno ima osobine Tesline pumpe, jer vrtnjom uvlači zrak zbog njegove adhezije, a također i bitno aerodinamički ograničen zbog otpora zraka, pa uz razne limite po pitanju ubrzanja i temperature pod kojim može garantovano ispravno da radi, tvrdi diskovi imaju i ograničenje rada po gradijentu smanjenja gustine zraka, tako da ih se ne preporučuje koristiti unutar uređaja koji se nalaze na ekvivalentnoj nadmorskoj visini od 3000 m ili višoj.
+
+Podaci se zapisuju na površini magnetne ploče u sektorima i stazama (tracks). Sektor obično sadrži određeni broj bajtova (npr. 128), i oni su u obliku zaobljenih polukrugova, dok su staze u obliku koncentričnih krugova. Postoje dvije vrste formatiranja, a to su Low-level i High-level formatiranje. Low-level formatiranje utvrđuje staze i sektore, dok High-level formatiranje je mnogo poznatije i korištenije (standardni format c:) te ono obezbjeđuje da disk može zapisivati datoteke.
+
+
+== Najpoznatiji proizvođači ==
+Seagate
+Maxtor
+Hitachi
+Western Digital
+IBM
+Samsung
+Fujitsu
+
+
+== Također pogledajte ==
+Binarni brojevni sistem
+Flopi disk
+Magnet
+FDE
+TrueCrypt
+
+
+== Reference ==
+
+
+== Vanjski linkovi ==
+
+Isprobavanje, usporedba i ocjenjivanje hard diskova Arhivirano 28. 12. 2005. na Wayback Machine - bosanski hardver portal, Hardwarebase.net Arhivirano 19. 6. 2006. na Wayback Machine
+Usporedba i spisak svih hard diskova - Tom's Hardware
+The PC Guide: Kratka historija hard diskova (en)
+Unutar hard diska Arhivirano 4. 1. 2006. na Wayback Machine (en)
+Technical Whitepaper: Detaljan osvrt na način zapisivanja na hard disk (en)
+Binarni protiv decimalnog (en)
+Behold the God Box - Predviđanja vezana za jeftine hard diskove (en)
+Hitachijevi planovi za pravljenje diskova od 20GB sićušnih dimenzija ili 1TB (terabajt), 3,5" diskove (en)
+Kako uništiti hard disk? (en)

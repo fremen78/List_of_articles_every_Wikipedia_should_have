@@ -1,0 +1,164 @@
+El backgammon és un joc de tauler que combina estratègia i atzar on dos jugadors fan córrer cada un les seves 15 peces en una "cursa d'obstacles" per un tauler de 24 posicions o fletxes, segons els punts que marquen les tirades de dos daus. Està molt estès arreu del món, però especialment als països anglosaxons o d'herència cultural britànica. És similar al joc de jaquet, o sinònim.
+Tot i que la sort té un paper important en el joc, hi ha un ampli marge per l'estratègia. Cada vegada que es llencen els daus, els jugadors han de triar entre nombroses opcions, per moure les seves peces i anticipar els possibles moviments del contrincant. Els jugadors poden augmentar les apostes durant el joc. Hi ha un repertori establert de tàctiques i situacions comunes.
+Com en el cas dels escacs, els informàtics han estudiat el backgammon amb gran interès. A causa d'aquesta investigació, s'ha desenvolupat un programari de backgammon que és capaç de derrotar jugadors humans de classe mundial.
+
+
+== Descripció de l'equipament ==
+Cada jugador té quinze peces del seu color (blanc o negre).
+Es juga amb dos daus de sis cares, numerades de l'1 al 6. A més, si es juga apostant, es fa servir un altre dau més, anomenat dau de doblar (vegeu més endavant).
+El tauler té vint-i-quatre caselles o fletxes. Les fletxes estan agrupades en quatre compartiments o quadres. Convencionalment, per descriure les posicions, encara que no és necessari per jugar, les fletxes de l'itinerari d'un jugador es numeren del 24 a l'1, entenent que cada jugador mou les seves peces des de les fletxes amb números més alts cap a les de números més baixos.
+Al mig del tauler hi ha un espai que el divideix en dos anomenat barra, que és on es deixen les peces capturades (vegeu més endavant).
+
+
+== Principi de la partida ==
+En la posició de principi de partida, cada jugador té 2 peces a la fletxa 24, 5 a la fletxa 13, 3 a la fletxa 8, i 5 a la fletxa 6.
+Al principi de la partida, les peces negres i blanques es disposen d'aquesta manera:
+
+A la figura, el quadre de sota a la dreta és l'inici de l'itinerari de les negres, que continuaran el seu itinerari pel quadre de sota a l'esquerra, el quadre de dalt a l'esquerra o quadre exterior negre, i el quadre de dalt a la dreta o quadre interior negre, fins a sortir del tauler.
+Les blanques segueixen l'itinerari invers. A la figura, el quadre de dalt a la dreta és l'inici de l'itinerari de les blanques, que continuaran el seu itinerari pel quadre de dalt a l'esquerra, el de sota a l'esquerra o quadre exterior blanc, i el de sota a la dreta o quadre interior blanc, fins a sortir del tauler.
+Cada jugador tira un dau. Si empaten, tornen a tirar. El jugador amb el dau més alt tria color i comença a jugar.
+
+
+== Com es mouen les peces ==
+
+Els jugadors tiren els daus i mouen les seves peces (en anglès man) alternativament. Les peces es mouen de fletxa en fletxa segons els punts que marquen els daus. El joc consisteix primer a portar totes les peces del color propi al quadre interior propi, per després poder-les fer sortir del tauler. Guanya el jugador que fa sortir primer totes les seves peces.
+Si els punts dels dos daus són diferents el jugador pot moure:
+
+O bé dues peces diferents, una per cada dau.
+O bé una sola peça en dues passes. En aquest cas, la fletxa destinació de la primera passa també ha de ser oberta (vegeu més endavant què entenem per oberta).
+Si els punts dels dos daus són iguals (un doble), el jugador compta com si tingués quatre daus (i no dos), i pot moure:
+
+O bé una sola peça amb un moviment múltiple de quatre passes.
+O bé dues peces diferents, amb dues passes per cada peça.
+O bé dues peces diferents, amb una sola passa amb una, i un moviment múltiple de tres passes amb l'altra.
+O bé tres peces diferents, amb una sola passa amb dues, i un moviment múltiple de dues passes amb l'altra.
+O bé quatre peces diferents, amb una sola passa amb cadascuna.
+Una fletxa és oberta (s'hi pot deixar una peça o fer-hi una passa en un moviment múltiple) només si:
+
+O bé és buida.
+O bé conté peces del color propi.
+O bé només conté una sola peça del color contrari (en anglès blot o exposed man). En aquest cas, aquesta peça és vulnerable i es pot capturar (vegeu més avall com es captura).
+Per contra, si una fletxa conté dues o més peces del contrari, la fletxa és ocupada i no és oberta (no s'hi pot pas deixar una peça pròpia ni tampoc fer-hi una passa en un moviment múltiple).
+Un jugador està obligat a moure amb tots dos daus sempre que pugui. Si es juguen tots dos daus, es poden comptar en l'ordre que més convingui (per exemple, per aconseguir passar per entre fletxes ocupades pel contrari, o cap al final de la partida per fer sortir peces sense deixar peces vulnerables - vegeu més endavant).
+Si un jugador només pot moure amb un qualsevol dels dos daus però no amb tots dos, llavors ha de moure amb el dau que marca més punts. Altrament, si només pot moure amb un dels daus però no amb l'altre, llavors mou amb el dau que pot i perd l'oportunitat de moure amb l'altre dau.
+Si un jugador no pot fer cap jugada (per exemple, qualsevol dels moviments marcats pels daus el portaria a fletxes ocupades pel contrari) llavors passa i perd el seu torn.
+
+
+=== Com es captura i es fa tornar a entrar les peces mortes ===
+Un jugador pot capturar una peça del contrari (en anglès hit a man) si està sola en una fletxa i per tant és vulnerable.
+Per capturar una peça, el jugador pot o bé moure-hi una peça pròpia, o bé fer-hi una passa d'un moviment múltiple. Llavors aquesta peça capturada es desa a la barra central del tauler.
+Un jugador no pot fer cap altre moviment mentre tingui alguna peça capturada a la barra central. Les peces capturades s'han de tornar a fer entrar al joc al quadre del principi del seu itinerari (és a dir, dins del quadre interior contrari).
+Per tornar a fer entrar una peça capturada al joc els punts d'un dels daus han de portar a una fletxa oberta dins del primer quadre de l'itinerari del jugador (comptant 1 per la primera fletxa, 2 per la segona, etcètera). Si els punts de tots dos daus porten a fletxes ocupades, el jugador passa i ha d'esperar un altre torn per intentar tornar a entrar la peça capturada.
+Quan una peça capturada es torna a entrar amb els punts d'un dels daus, els punts de l'altre dau es poden fer servir o bé per moure endavant la mateixa peça acabada d'entrar o bé per moure'n una altra de pròpia que ja era al joc (sempre que el jugador no tingui cap altra peça capturada, és clar).
+Si un jugador té dues peces capturades només les pot tornar a fer entrar alhora si els dos daus porten a dues fletxes obertes. Si només una de les dues fletxes està oberta, s'entra una peça i el jugador ha d'esperar un altre torn per intentar tornar a entrar l'altra peça capturada.
+
+
+== Com es fan sortir les peces ==
+Quan un jugador té totes les seves peces al seu quadre interior (el quart i darrer quadre del seu itinerari) pot començar a fer-les sortir del tauler. Les peces que s'han tret del tauler ja no hi tornen a entrar. Guanya el jugador que fa sortir abans totes les seves peces.
+Un jugador no pot fer sortir peces mentre en tingui alguna morta a la barra central o fora del seu quadre interior. És a dir, si un jugador ja ha començat a fer sortir peces però n'hi maten una, llavors no pot continuar fent-ne sortir fins que aquesta hagi tornat a entrar i hagi fet altra vegada el recorregut fins al seu quadre interior.
+Les peces es poden fer sortir del tauler segons els punts que marquen els daus (es compta 1 per l'última fletxa, 2 per la segona fletxa abans de la sortida, etcètera).
+Per exemple, amb un doble 6 es poden fer sortir de cop quatre peces de la 6a fletxa abans de la sortida.
+Si la fletxa indicada pel dau és buida però al jugador li queden peces més endarrerides, llavors amb aquest dau ha de moure endavant alguna de les endarrerides, i no pot pas fer-lo servir per a moure o fer-ne sortir una de més avançada (per exemple, si un jugador té peces a la fletxa 6a i a la 3a, i la fletxa 4a és buida, amb un dau 4 pot moure endavant una de la 6a, però no pot fer-ne sortir una de la 3a).
+Si la fletxa indicada pel dau és buida i al jugador no li queda cap peça més endarrerida (el dau marca més punts dels necessaris per a fer sortir la peça més endarrerida que li queda), llavors amb aquest dau ha fer-ne sortir una de les de la fletxa més endarrerida on en tingui, i no pot pas fer-lo servir per a fer sortir una peça més avançada (per exemple, si un jugador té peces a la fletxa 4a i a la 3a, i no n'hi queda cap de més endarrerida, amb un dau 4 ha de fer-ne sortir una de la 4a, però no pot fer-ne sortir una de la 3a).
+Ara bé, un jugador no està obligat a fer sortir una peça si pot fer un altre moviment vàlid qualsevol. Pot ser que a un jugador li convingui més de moure una altra peça endavant que no pas fer-ne sortir una i deixar la seva parella sola i vulnerable. En alguns casos, per fer sortir peces sense risc (sense deixar-ne altres de soles i vulnerables) pot ser millor jugar el dau més baix abans del més alt (cal jugar tots dos daus sempre que es pugui, però es pot triar l'ordre si totes dues combinacions són vàlides).
+Per exemple, si un jugador té una peça a la fletxa 5 i dues a la fletxa 2, i el jugador contrari en té una a la fletxa 1 i una a la barra, i els daus marquen daus 6-3, el jugador pot moure la de la fletxa 5 a la fletxa 2 amb el dau 3, i llavors fer-ne sortir una amb l'altre dau (el 6), deixant-ne dues segures a la fletxa 2 sense deixar-ne cap de vulnerable. Per contra, l'altre moviment possible, fer servir el 6-3 per fer sortir la de la fletxa 5 i una de les de la fletxa 2, en deixaria una de sola a la fletxa 2 amb moltes possibilitats de ser capturada pel jugador contrari.
+
+
+== Final de la partida ==
+Guanya el jugador que fa sortir abans totes les seves peces. La partida guanyada val més o menys segons la posició al final de la partida:
+Un hit o partida simple: quan el perdedor ha fet sortir almenys una de les seves peces, el guanyador rep un punt o l'aposta acordada.
+Un gammon o partida doble: quan el perdedor encara no ha fet sortir cap peça, el guanyador rep dos punts o el doble de l'aposta acordada.
+Un backgammon o partida triple: quan el perdedor encara no ha fet sortir cap peça i a més encara li'n queda alguna al seu primer quadre o alguna de capturada a la barra, el guanyador rep tres punts o el triple de l'aposta acordada.
+
+
+== Les apostes i el dau de doblar ==
+
+Si es juga com a joc d'aposta es fa servir el dau de doblar, un dau de sis cares numerades 2,4,8,16,32,64. Inicialment, el dau de doblar és fora del tauler.
+Si un jugador creu que té prou avantatge posicional, abans de jugar el seu torn pot doblar, o demanar que la partida valgui el doble de l'aposta acordada fins a aquell moment. Aquest jugador posa el dau amb el 2 de cara amunt davant de l'altre jugador per mostrar que la partida s'ha doblat.
+El jugador contrari pot, o bé abandonar el joc i perdre la partida (i l'aposta acordada), o bé acceptar l'envit. Si l'accepta, llavors té dret de redoblar en aquest mateix moment o més endavant, i llavors posa el dau amb el 4 de cara amunt davant de l'altre jugador, etcètera.
+A partir d'aquest moment, el dau de doblar només el pot tocar el jugador que ha acceptat l'últim doblatge.
+
+
+== Joc en clubs i tornejos ==
+
+Els entusiastes d'aquest joc han format clubs pel joc social del backgammon. Els clubs locals poden celebrar reunions informals, en què els membres es troben a cafès i bars a la tarda per jugar i xerrar. Alguns clubs ofereixen serveis afegits, mantenint les seves pròpies instal·lacions o oferint una anàlisi informàtica de jugades problemàtiques. Alguns responsables dels clubs han observat un creixement recent de l'interès pel backgammon, i l'atribueixen a la popularitat del joc a Internet.
+Els clubs de backgammon també poden organitzar tornejos. Els tornejos de clubs grans a vegades atreuen competidors d'altres regions, i les partides finals són vistes per centenars d'espectadors. Els jugadors més forts dels tornejos regionals sovint competeixen en campionats nacionals i internacionals importants. Els guanyadors dels principals tornejos poden endur-se premis de desenes de milers de dòlars.
+
+
+== Consideracions tàctiques ==
+A un principiant el backgammon li pot semblar només un joc d'atzar, i procura no deixar peces soles vulnerables, i mata sempre que pot. Però aquesta manera de fer, encara que sembla lògica, no és pas la millor estratègia. Hi ha alguns altres factors que cal considerar a l'hora de fer un pla de batalla.
+Una peça sola en una fletxa és vulnerable i la poden capturar. Convé assegurar-les ajuntant-ne dues o més. Al quadre interior (l'últim de l'itinerari) normalment no val la pena capturar arriscant una peça deixant-la sola en una fletxa: la contrària pot tornar a entrar i capturar-nos tot seguit.
+Però escampant les peces en més fletxes es tenen més alternatives per moure o matar-ne de contràries. Al principi de la partida es pot arriscar més. Per contra cap al final de la partida o amb les peces ja al quadre interior cal mirar d'assegurar-les.
+En tornar a fer entrar una peça capturada l'avantatge del joc pot canviar molt ràpidament de mans si es té la sort d'entrar amb un doble i poder capturar-ne de cop fins a quatre de contràries.
+Si totes les peces arriben a creuar-se sense capturar-se, llavors el joc es converteix en una simple cursa (en anglès running game).
+Alguns factors a tenir en compte:
+
+Distribució: Com de ben repartides estan les peces entre les fletxes ocupades. Sol ser millor tenir 6 peces repartides entre dues fletxes diferents 3 i 3, que no pas 4 i 2. Molt rarament convé tenir-ne 6 a la mateixa fletxa, i mai no convé de tenir-ne més. Un jugador amb les peces més ben repartides semblarà que té més sort i que treu més bons daus que no pas el seu contrari menys flexible, quan de fet tindrà millors alternatives per jugar els daus que li toquen, siguin quins siguin.
+Vulnerabilitat: Al principi de la partida es pot arriscar més i deixar peces vulnerable tot mirant d'ocupar bones posicions ofensives o defensives. Convé assegurar més i arriscar-se menys quan el jugador contrari ja té una posició forta al seu quadre interior (l'últim del seu itinerari), perquè com més fletxes ocupades hi tingui el jugador contrari llavors més difícil serà de poder tornar a fer entrar una peça capturada pròpia. Per contra, es pot jugar més arriscadament com més fletxes ocupades es tinguin al quadre interior del jugador contrari. Fins i tot amb una bona posició convé no deixar massa peces vulnerables; un límit raonable és no deixar-ne més de 4 soles. Quan es té un avantatge notable convé limitar encara més la vulnerabilitat per tal de mantenir-lo.
+Quan convé capturar: Convé capturar les peces contràries que estan més avançades o en fletxes que tenen valor estratègic per al contrari. Convé capturar només quan resulti avantatjós. Per exemple, si ja hi ha 2 peces contràries a la barra convé més ocupar una fletxa al quadre interior propi que no pas capturar-ne una 3a. Convé no capturar si en fer-ho es queda més vulnerable que el jugador contrari. Per exemple, si queden més peces pròpies soles que no pas del contrari, o si les peces pròpies soles estan notablement més avançades que les del contrari.
+Bloqueig (en anglès blocking game): Convé ocupar fletxes seguides al quadre interior (l'últim de l'itinerari) al davant de les peces del jugador contrari, per bloquejar-li el pas o per fer-li difícil de tornar a entrar les peces capturades al seu primer quadre. Així que es pugui, convé començar el bloqueig ocupant les fletxes més crítiques, que aproximadament per ordre d'importància són: 5, 4 i 7.
+Barrera (en anglès prime): Si un jugador aconsegueix ocupar 6 fletxes seguides forma una barrera (prime). Mentre mantingui aquesta estructura les peces endarrerides del contrari no en podran escapar.
+Joc endarrerit (en anglès back-game): Consisteix a deixar àncores (en anglès anchors) o peces endarrerides en fletxes segures al quadre interior contrari (el principi de l'itinerari propi). Aquestes peces podrien capturar-ne de contràries que ja estaven cap al final del seu itinerari. Alhora d'aquesta manera un jugador s'assegura fletxes obertes per tornar a fer entrar les seves peces capturades. Convé combinar-ho ocupant fletxes al quadre interior (l'últim de l'itinerari) per fer difícil de tornar a entrar a les peces capturades contràries. Al principi de la partida convé ocupar les fletxes més altes (20,21) (5,4 del quadre interior contrari). Si un jugador ha quedat molt endarrerit en la cursa, les fletxes més baixes (22,23,24) tenen més valor estratègic per mirar d'ocupar tot el quadre interior contrari i esperar capturar alguna peça contrària. Si s'ocupen dues fletxes al quadre interior contrari convé tenir-les en fletxes seguides.
+
+
+== Breu història ==
+El joc es va inventar a la Gran Bretanya cap a principis del segle xvii, però és membre d'una família de jocs molt antiga, els jocs de taules, ja que pel que sembla es pot relacionar amb taulers trobats a excavacions a l'antiga Pèrsia de fa 5.000 anys o amb el senet egipci. Els jocs de taules són molt populars a Grècia, Turquia i tot l'Orient Mitjà. Als Països Catalans n'hi ha un d'autòcton, el caixó o jaquet, jugat encara als casinos de Menorca. L'addició del dau data de 1920 i les versions informàtiques del 1970.
+
+
+=== Història Antiga ===
+
+Avui en dia el backgammon el més conegut entre la gran família dels jocs de tauler. S'hi inclouen els antics jocs d'estratègia en que les peces es mouen d'acord amb els resultats d'un generador de nombres aleatoris (petxines, pedres, pals, etc.), com els seus antecedents.
+Un recent descobriment arqueològic prop de la frontera sud-est de l'Iran, a la província de Sist-Balutxistan, va ser capaç de rastrejar l'origen dels jocs de taula en 5000 anys De la mateixa manera, el senet de l'antic Egipte i joc real d'Ur solen considerar-se dos dels seus avantpassats.
+Els jocs de taula es caracteritzen per un material en particular: un tauler, de 24 caselles dividides simètricament, un nombre de daus cúbics que varia en els diferents jocs, i les peces normalment en nombre de 15 per jugador, de vegades menys.
+El joc més antic conegut que correspongui a aquests criteris és el Ludus duodecim Scriptorum  (conjunt de dotze línies) o XII scripta molt practicat a l'antiga Roma. Però les regles no ens han arribat a nosaltres, i el tauler hi havia tres files de 12 caselles en lloc de dos. El seu descendent, també romà, anomenat tabula, amb material idèntic al que caracteritza els jocs de taula. L'expressió "jocs de taules" prové de la paraula tabula (taula en llatí) que significa el tauler, però també més tardanament cadascuna de les seves quatre quadrants de 6 casilles, i fins i tot en plural, les peces que hi circulen segueixen el llançament dels daus.
+S'han trobat referències en l'obra d'Ovidi. Es creu que diversos emperadors romans han sigut grans adeptes: Claudi (qui hauria escrit un llibre), Neró i Còmmode que s'hi haurien jugat fortunes. Dos murals de Pompeia representen escenes del joc.
+
+Ja àmpliament distribuït en l'Imperi Romà, el futur backgammon es va fer popular a la resta d'Europa i l'Orient Mitjà, seguint el comerç i, principalment, les invasions de musulmans i cristianes. Les taules de joc se citen a Cançó de Rotllan, els poemes de Charles d'Orleans, etc.
+A Espanya, el Llibre dels jocs , manuscrit realitzat a petició del rei Alfons X el Savi i completat a 1283, conté les normes il·lustrades de catorze jocs de taula, entre les quals s'hi troba todas tablas, que presenta les principals característiques del backgammon actual amb peons a la posició inicial i les regles bàsiques.
+La consolidació dels jocs de taula va ser molt difícil. El rei Ricard Cor de Lleó prohibí jugar als no nobles, i perdre més de 20 xílings per dia Lluís XII de França també intentà desterrar-los del regne, amb poc èxit. En 1526, el cardenal Anglès Thomas Wolsey va ordenar cremar tots els jocs d'atzar. Segons la llegenda, aquestes instruccions han donat als taulers la seva tradicional forma de maletí plegable, que els permetria simular un llibre. Un tauler i els peons estan representats a la part inferior dreta en El triomf de la Mort de Pieter Brueghel el Vell, pintat cap a 1562.
+A França, Totes les taules apareix a 1534 a la llista de jocs de Gargantúa de Rabelais. Encara que no s'hi presenten les regles, és concebible que aquest és més o menys el mateix joc que todas tablas espanyol, perquè les dues denominacions són equivalents.
+
+
+=== Història recent ===
+
+En el segle xvi, una variant pròxima de todas tablas, anomenada irish era el joc de taula preferit a Anglaterra amb el Tick-Tack. A la primera meitat del segle xvii el substituirà una versió més ràpida - hi ha doblets s'hi juga llavors dues vegades - anomenat backgammon.
+Però és a França que les regles més semblants al backgammon modern, conegut com a "toute-table", es publiquen per primera vegada en 1699 com a continuació al tractat Le Jeu du trictrac, Charpentier, París. En comparació amb el backgammon modern, els únics punts absents al "toute-table" són l'oportunitat de guanyar una partida triple i la utilització d'un dau de doblador.
+En el 1743, Edmond Hoyle publica A Short Treatise on the Game of Back-Gammon junt amb un tractat de whist. Més que un llibre de regles, és un tractat amb les estratègies, les tàctiques, les obertures i les probabilitats. Amb això es van afegir cinc lleis que codifiquen l'ús dels peons, per exemple, dama tocada, dama jugada. El backgammon presentat per Edmond Hoyle no diferia de toute-table.
+A França, la denominació toute-table va caure en desús després de la caiguda de Napoleó, en favor de l'anglesa backgammon.
+Avui en dia, el toute-table de 1699 encara es practica tradicionalment a Grècia amb el nom de portes, a Turquia sota el nom de Tavla, a Armènia amb el nom de Tavlou, en el país de Màixriq (Iraq, Síria, Líban Jordània, Palestina) amb el nom de Tawla o Tawlé, i a Israel com a Xeix Beix (paraula composta que combina el nombre sis en persa (Xeix) i el nombre cinc turc (Beix)).
+El backgammon ha evolucionat afegint l'oportunitat de guanyar una partida triple, i especialment els dos daus a partir de 1920 i les normes relatives a les seves maneres d'ús. El progrés de la indústria també han fet possible fabricar daus idèntics, el que permet que cada jugador usi el seu parell de daus (en lloc de compartir-lo tots dos) i simplifica les normes sobre el començament i el final del torn d'un jugador.
+
+
+== Documents ==
+Algunes referències documentades sobre casos concrets permeten una visió genèrica més precisa sobre la història del joc de taules en èpoques passades.
+
+1279.
+1284. El rei Jaume II de Mallorca signa un Ordonament del joch per a Perpinyà. Es prohibeixen els jocs de daus i s'autoritza el joc de taules: «... negun joch de daus, exceptat joch de taules...» 
+1306. Joc de taules. València.
+1326. Vila-real.
+1357. Els consellers de Barcelona prohibeixen els jocs de daus als esclaus. El joc de taules queda exclòs de la prohibició.
+1374. Segons un dels Llibres de Crides e Ordinacions de Barcelona, els jueus no podien jugar –fora del call- a cap joc d'atzar. L'únic joc que els era permès era el joc de taules.
+1410. En l'Inventari de bens mobles del rei Martí l'Humà hi ha diversos taulers i peces per a jocs de taules.
+1461. En l'Inventari del príncep Carles de Viana hi ha la relació de diversos jocs de taules.
+1586. En les Constitutions fetes per la Sacra Catholica Real Magestat del Rey don Phelip (signades l'any 1585 a Monçó), hi ha prohibicions de diversos jocs: cartes, daus,... El joc de taules estava autoritzat.
+
+
+== Notes ==
+
+
+== Referències ==
+
+
+== Bibliografia ==
+(en anglès) Michael Crane, Backgammon, Teach Yoursef, 2006, ISBN 978-0-340-92723-6
+Massacrier, Jacques. El Backgammon per la imatge.  Barcelona: Altafulla, 1982. ISBN 84-85403-43-6. 
+
+
+== Vegeu també ==
+Jaquet
+
+
+== Enllaços externs ==
+
+Backgammon a Curlie
+rec.games.backgammon a la Usenet

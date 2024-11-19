@@ -1,0 +1,424 @@
+Un algorisme (o, alternativament, algoritme) és un conjunt finit d'instruccions o passos que serveixen per a executar una tasca o resoldre un problema. En la vida quotidiana, s'empren algorismes en multitud d'ocasions per a resoldre diversos problemes, com per exemple fer bugada amb una rentadora (conjunt d'instruccions enganxades a la tapa de la màquina), tocar un instrument musical (partitures), construir un aeroplà a escala (expressats en les instruccions), fer trucs de màgia (passos per a fer el truc) o, fins i tot, fer receptes de cuina (passos de la recepta). Alguns exemples d'algorismes en les matemàtiques són l'algorisme de la divisió per a calcular el quocient de dos nombres, l'algorisme d'Euclides per a obtenir el màxim comú divisor de dos enters positius, el mètode de Gauss per resoldre un sistema lineal d'equacions, o com per exemple un algorisme que sumi els 'n' nombres primers.
+D'una manera més formal, un algorisme és una seqüència finita d'instruccions realitzables, no ambigües, l'execució de les quals condueix a una resolució d'un problema. Aquesta definició es pot generalitzar des del punt de vista sistèmic, si se suposa que l'algorisme pot ser dissenyat per rebre i aprofitar una determinada entrada, donant com a resultat una sortida, que pot resoldre un problema determinat.
+
+
+== Història ==
+
+En aquest apartat, es distingeix entre la història de la paraula que denota el procés i la història de la ciència que estudia l'aplicació d'algorismes i els requeriments d'aquests. És evident que la repetició de tasques amb un mateix procés és practicada per tota mena de sistemes vivents i que ja es coneixien alguns algorismes com per exemple el d'Euclides, pertanyents a l'àmbit de les matemàtiques, abans de designar-los com a tals.
+
+
+=== Algorismes matemàtics en l'antiguitat ===
+El coneixement de l'aplicabilitat de tècniques repetitives a l'hora de resoldre problemes matemàtics prové de l'antiga Babilònia, on es troben escrits en què es proposen algorismes i també es feien servir taules de càlcul per a resoldre problemes.
+Altres exemples de l'antiguitat es troben en l'algorisme d'Euclides per a calcular el màxim comú divisor de dos enters positius i pertanyen a l'àmbit de les matemàtiques. Cal destacar també el treball d'Euclides en el camp de la geometria, que fou un referent per al desenvolupament formal de l'algorísmica. Un exemple d'aplicació dels algorismes és el problema que consisteix a trobar el màxim d'un conjunt de nombres. Un exemple més complex per a utilitzar aquest algorisme és el que s'explicarà a continuació utilitzant una descripció d'alt nivell.
+
+
+== Exemple d'aplicació: algorisme d'Euclides ==
+Donat un conjunt finit C de nombres, es té el problema de trobar-ne el nombre més gran. Sense pèrdua de generalitat, es pot assumir que el conjunt següent no és buit dels seus elements i estan numerats com 
+  
+    
+      
+        
+          c
+          
+            1
+          
+        
+        ,
+        
+          c
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{1},c_{2},\dots ,c_{n}}
+  
+
+És a dir, donat un conjunt 
+  
+    
+      
+        C
+        =
+        {
+        
+          c
+          
+            1
+          
+        
+        ,
+        
+          c
+          
+            2
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle C=\{c_{1},c_{2},\dots ,c_{n}\}}
+  
+ es demana trobar m tal que 
+  
+    
+      
+        m
+        ∈
+        C
+      
+    
+    {\displaystyle m\in C}
+  
+ i 
+  
+    
+      
+        x
+        ≤
+        m
+      
+    
+    {\displaystyle x\leq m}
+  
+ per a tot element x que pertany al conjunt C.
+Per trobar-ne l'element màxim, s'assumeix que el primer element (c1) és el màxim, després, es recorre el conjunt i es compara cada valor amb el valor del màxim nombre trobat fins aquell moment. En el cas que un element sigui major que el màxim, s'assigna el seu valor al màxim. Quan s'acaba de recórrer la llista, el màxim nombre que s'ha trobat és el màxim de tot el conjunt.
+
+
+=== Descripció formal ===
+L'algorisme pot ser escrit d'una manera més formal en el pseudocodi següent:
+
+Sobre la notació:
+
+"←" representa una assignació: 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ ← 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ significa que la variable 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ pren el valor de 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+;
+"tornar" termina l'algorisme i retorna el valor a la seva dreta (en aquest cas, el màxim de 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+).
+
+
+=== Origen del terme ===
+
+El terme algorisme prové del matemàtic i astrònom àrab Abu Abdullah Muhammad bin Musa al-Khwarizmi, autor de l'obra Sobre el càlcul amb nombres indis, de l'any 825. Aquesta mateixa obra va ser traduïda al llatí al segle xii, incloent-hi el nom de l'autor en forma llatina com a commemoració. Un dels primers usos d'aquest terme, el trobem en el tractat matemàtic en vers Carmen de Algorismo, és a dir, Cançó o Poema de l'algorisme (c.1220), del professor Alexandre de Villadei. Aquesta cançó fou introduïda per tal d'ensenyar el sistema numèric indi. D'aquesta manera, es desprenien mètodes de computació que simplificaven les operacions algebraiques amb els nous numerals (del zero al nou). Així, els càlculs manuals es podien fer amb més eficiència. Una altra obra que esmenta Al-Khwarizmi és Algorismus Vulgaris, de Johannes de Sacrobosco, obra escrita el 1250 amb la intenció d'ensenyar els numerals indis i les possibilitats de l'aritmètica que va servir per a introduir aquests coneixements en les universitats.
+D'aquesta manera, la paraula s'estengué per Occident com al sistema introduït per l'autor basant-se en la numeració índia i les operacions fonamentals que es podien simplificar amb aquest sistema.
+
+
+=== Desenvolupament de l'algorísmica ===
+La història del plantejament matemàtic de la teoria dels algorismes va haver de nodrir-se de diferents idees en el camp de les matemàtiques per tal d'arribar a disposar dels primers computadors.
+Com a punt de partida del tractament axiomàtic de la matemàtica, és notable la tasca d'Euclides, que va formular els axiomes necessaris per desprendre la geometria amb la publicació del seu treball Elements.
+El desenvolupament de l'estudi d'algorismes, el va iniciar David Hilbert el 1900, en fer la proposició de la possibilitat de disposar d'un algorisme capaç de resoldre demostracions matemàtiques; això seria, senzillament, un mètode d'esbrinar si, donada una afirmació, aquesta és verdadera o és falsa.
+Un treball important que formulà les bases per tal de començar formalment la investigació de l'algorítmia, el va fer Kurt Gödel, en demostrar el 1931 en l'article ”Uber formal unentscheidbare Sätze der Principia Mathematica und verwandter a Systeme” el teorema d'incompletesa, en què s'estableix que no es pot trobar un conjunt d'axiomes que compleixin les condicions necessàries per a la proposició de Hilbert:
+
+Axiomes suficientment potents per tal de demostrar qualsevol enunciat vertader.
+No admeten contradiccions, de manera que les afirmacions no puguin ser certes alhora que les seves negacions ho són.
+Gràcies a Hilbert i a Gödel, es va aconseguir desenvolupar l'algorítmica en paral·lel, per part de Church i d'en Turing. Per una banda, Church dedueix el càlcul lambda, mentre que Turing proposa la seva màquina, dues aplicacions en paral·lel i dutes a terme per separat. Amb aquests dos treballs, s'omple el buit necessari per a aclarir el concepte d'irresolubilitat del problema de Hilbert en el cas dels algorismes.
+
+
+== Avantatges de l'ús d'algorismes en la resolució de problemes ==
+
+L'algorisme dona una solució genèrica a un problema i es pot emprar totes les vegades que es presenti aquest mateix problema, sempre que es dispose d'unes entrades adequades per a fer-lo servir: per exemple, l'algorisme de la divisió és genèric i independent dels nombres en què s'hagi de dividir.
+Una vegada descobert un algorisme per a efectuar una tasca, la realització d'aquesta ja no requereix entendre els principis en què es basa aquest algorisme, ja que el procés es redueix a seguir-ne les instruccions. Per exemple, es pot fer una divisió seguint l'algorisme sense entendre per què funciona. La intel·ligència requerida per a portar a terme la tasca està codificada en l'algorisme.
+Les màquines algorísmiques són aquelles capaces de dur a terme algorismes, i entre aquestes estan els ordinadors. En l'àmbit dels ordinadors, els algorismes s'expressen com a programes. Els programes són algorismes codificats amb un llenguatge no ambigu la sintaxi i semàntica del qual "entén" l'ordinador. Hi ha molts llenguatges de programació d'ordinadors, com per exemple fortran, pascal o C.
+Així, doncs, si es vol que un ordinador efectuï una tasca, primer s'ha de desenvolupar un algorisme per a portar-la a terme; programar l'algorisme en la màquina consisteix a representar aquest algorisme de manera que es pugui comunicar a una màquina. En altres paraules, s'ha de transformar l'algorisme conceptual en un conjunt d'instruccions i representar aquestes últimes en un llenguatge sense ambigüitat.
+Gràcies a la capacitat per a comunicar el pensament humà mitjançant algorismes, es poden construir màquines el comportament de les quals simula intel·ligència. El nivell d'intel·ligència que simula la màquina estarà limitat per la intel·ligència que puguem comunicar-li per mitjà d'algorismes. Les màquines només poden realitzar tasques algorítmiques. Si es troba un algorisme per a dirigir l'execució d'una tasca, es podria construir una màquina per a portar-la a terme sempre que la tecnologia hagi avançat prou. Si no es troba un algorisme, és possible que l'execució estigui fora de les capacitats de les màquines. Un computador és tot aparell o màquina destinada a processar informació, entenent-se per procés les successives fases, manipulacions o transformacions que sofreix la informació per a resoldre un problema determinat, seguint les instruccions d'un programa registrat.
+En la imatge d'aquesta secció, es mostra l'algorisme d'ordenació en una versió molt simple. El propòsit de l'algorisme és fer passades des del cursor inicial fins al final, marcant el menor nombre i posant-lo al principi. Ací, és clar que tots els casos tenen les mateixes operacions, ja que el recorregut és sempre el mateix, del cursor fins al final avaluant d'un a un tots els casos. És un clar exemple d'avantatge d'aquestes tècniques, ja que fa servir la força bruta per tal de recórrer un camí, sense fer divisions.
+
+
+== Eines per tal d'analitzar algorismes ==
+A causa de la dificultat que suposa avaluar cadascun dels efectes d'un determinat algorisme en les disponibilitats en recursos per a la seva consecució, és important l'ús d'eines matemàtiques potents i de suficients habilitats per a resoldre els entrebancs d'una determinada formulació d'algorisme.
+
+Anàlisi combinatòria
+Teoria de la probabilitat
+Destresa algebraica
+Identificació de les parts importants en les fórmules
+Teoria dels nombres
+Càlcul infinitesimal
+En aquest apartat, es poden veure alguns dels temes clau per a l'analista que fa possible l'aplicació d'un algorisme amb uns recursos determinats.
+
+
+=== Expressió de l'algorisme amb el llenguatge ===
+
+Els algorismes es poden expressar amb moltes notacions, incloent-hi el llenguatge, el pseudocodi, els diagrames de flux i els llenguatges de programació. Les expressions del llenguatge natural solen ser ambigües i amb massa riquesa de paraules i verbs, de manera que no se solen fer servir per a escriure algorismes tècnics i concisos. El pseudocodi i els diagrames de flux s'estructuren de diferents maneres per tal d'expressar els algorismes, de manera que s'evita caure en l'ambigüitat del llenguatge natural, disposant així d'unes instruccions concretes, fàcils d'entendre i independents de cap llenguatge d'implementació. Els llenguatges de programació es fan servir per a expressar algorismes en una forma en la qual es puguin executar en les computadores, però que també es fan servir per a documentar algorismes.
+La utilitat de totes aquestes eines es troba associada a les tècniques de desenvolupament de codi, en què primer es defineixen els passos, que poden ser esclarits o transmesos amb el llenguatge natural; després es plasmen en algun mitjà de representació mitjançant un pseudocodi o diagrames de flux i, finalment, es tradueixen a algun llenguatge, procés també conegut com a codificació.
+
+
+=== El problema de l'eficiència ===
+Quan es fan repeticions o combinacions d'algorismes de manera constant, resulta interessant orientar o fer l'anàlisi de l'algorisme o algorismes emprats en termes d'eficiència, és a dir, cal avaluar l'ús que es fa de l'algorisme per tal d'obtenir el resultat en termes de:
+
+Memòria: és una mesura de la quantitat de dades de què disposa l'algorisme en un moment determinat.
+Velocitat: és una mesura que depèn de les línies de codi que es recorren i de les operacions que contenen aquestes. Es podria mesurar en termes de velocitat computacional.
+En determinades ocasions, un plantejament d'algorisme té un cert marge per tal d'aconseguir millores que minimitzen tant la memòria com el recorregut en nombre d'operacions de l'algorisme, que relaxen els requeriments de la màquina que el fa servir i agiliten el procés. Un efecte col·lateral en la millora dels algorismes és una possible reducció del codi d'instruccions i de la millora en la llegibilitat d'aquest, aconseguint així una millor mantenibilitat de l'algorisme a l'hora de revisar-lo.
+Els recursos que solen consumir els algorismes, en general, solen ser els següents:
+
+Memòria
+Amplada de banda
+Portes lògiques
+
+
+=== Millor cas, pitjor cas i cas mitjà ===
+Per als treballs computacionals, és útil considerar els diferents casos que poden donar-se en fer iteracions amb algorismes. Es defineixen així els conceptes de millor cas, pitjor cas i cas mitjà d'un algorisme, per tal d'expressar la quantitat en termes de recurs almenys, com a màxim i mitjana respectivament, tractant-se normalment del recurs temps d'execució. Això és una peça important en l'estudi de la complexitat computacional i es pot estudiar fent servir les eines exposades en l'apartat anterior, és a dir: l'eliminació de constants en el càlcul dels requeriments de cada cas amb la notació de Landau.
+Breument, es descriuen els dos casos interessants per a fer estimacions amb algorismes, encara que normalment el problema se centra en el pitjor dels casos:
+
+El pitjor cas és el pitjor cost, en termes de temps. El pitjor cas s'aconsegueix amb un conjunt d'entrades que fan que l'algorisme tingui aquest temps d'execució. És indicatiu del cost de l'algorisme en general i permet assegurar que el temps d'execució no sobrepassi aquest valor.
+El cas mitjà és el temps mitjà que trigaria l'algorisme prenent un grup aleatori de possibles entrades en l'algorisme. Es tracta d'un càlcul que comporta una certa dificultat, especialment si no es coneix la distribució aleatòria de les entrades, ja que la tendència general és la de suposar casos equiprobables.
+
+
+== Classificació ==
+Es tracten diferents maneres de classificar els algorismes. En cadascuna d'aquestes classificacions, es poden trobar unes particularitats d'aplicació en cada grup d'algorismes definit.
+
+
+=== Per implementació ===
+Segons la manera en què es faran servir els recursos i es recorreran les instruccions del codi, es poden classificar els algorismes de diferents maneres. Totes aquestes tenen aplicacions per a la resolució de determinats problemes.
+
+
+==== Recursivitat ====
+Molts algorismes tracten de simplificar el seu plantejament dividint un problema en un o diversos problemes més simples en els quals es faria una crida al mateix algorisme, amb un valor més proper.
+L'exemple més clar es podria veure en la solució recursiva del problema del factorial d'un nombre natural n. En efecte, la solució per a n>0 es pot descompondre en problemes del mateix tipus que resulten ser més simples:
+
+  
+    
+      
+        n
+        !
+        =
+        n
+        ∗
+        (
+        n
+        −
+        1
+        )
+        !
+      
+    
+    {\displaystyle n!=n*(n-1)!}
+  
+
+En què es pot notar que:
+
+n! és el factorial de n.
+És clar que 
+  
+    
+      
+        (
+        n
+        −
+        1
+        )
+        !
+      
+    
+    {\displaystyle (n-1)!}
+  
+ pot descompondre's una altra vegada en 
+  
+    
+      
+        (
+        n
+        −
+        1
+        )
+        !
+        =
+        (
+        n
+        −
+        1
+        )
+        ∗
+        (
+        n
+        −
+        2
+        )
+        !
+      
+    
+    {\displaystyle (n-1)!=(n-1)*(n-2)!}
+  
+, i així s'aniria disminuint fins a 1, en què s'hauria d'establir la parada de l'algorisme, possiblement amb la convenció 0!=1, que sol proposar-se com a definició per tal de generalitzar la majoria de problemes de matemàtiques.
+Així, doncs, en l'exemple es resol un problema gràcies a les successives crides al mateix algorisme fins a unes condicions de parada en què no es torna a requerir el mateix algorisme i la funció dona una sortida predeterminada en arribar al punt final. Gràcies a la multiplicació acumulativa dels resultats de l'algorisme en cada nivell, es conclou finalment amb la cerca del factorial d'un nombre natural amb l'ús de la recursivitat. Mirant-ho des del punt de vista de l'eficiència, la recursivitat és una alternativa força recomanable. S'hi troben moltíssimes variants en els bucles while i for, que poden ser reemplaçats per un algorisme recursiu, augmentant així la seva eficiència, i per tant, la utilització de la CPU.
+
+
+==== Lògica ====
+Si l'algorisme s'implementa basant-se en una deducció lògica controlada, en què el component lògic expressa els axiomes que es poden fer servir en la computació i el component de control determina la manera en què la deducció s'aplica als axiomes i es formulen les possibles estratègies de resolució implementades. Es tracta de la base del paradigma de la programació lògica. En els llenguatges de programació lògics purs, el component de control és fix, mentre que el component lògic és l'única especificació amb la qual s'alimenten els algorismes. Aquestes solucions tenen l'avantatge de tenir una semàntica elegant: el canvi en els axiomes té un resultat ben definit: el canvi de l'algorisme.
+
+
+==== En sèrie, en paral·lel o distribuït ====
+
+Se sol suposar que, en els algorismes, les computadores només executen una instrucció en un moment determinat del temps. Aquestes operacions i les computadores que les executen normalment s'anomenen seqüencials o bé se'ls posa el cognom de en sèrie.
+El concepte contrari al seqüencial és el del tractament de l'algorisme amb més d'un processador a la vegada; aquesta manera d'efectuar les instruccions sol distingir-se també pel tipus d'arquitectura de processadors emprada. La distinció per tipus d'arquitectura és evident, ja que determina la gestió de la memòria, del trànsit de les comunicacions i del procés en general de l'algorisme. Així, doncs, se sol distingir entre: algorismes en paral·lel o algorismes distribuïts:
+
+Els algorismes en paral·lel prenen avantatge d'arquitectures d'ordinadors, en què es disposa de diferents processadors per a treballar amb un problema al mateix temps.
+Els algorismes distribuïts fan servir màquines diferents connectades per xarxa en forma de clúster o bé sistemes que fan servir una configuració intermèdia amb processadors independents amb memòria distribuïda.
+Els algorismes que es fan servir per a aprofitar aquestes màquines divideixen els problemes de manera que els ataquen com a subconjunts de problemes simètrics o asimètrics per tal d'aconseguir uns resultats que comprendrien la combinació de les resolucions dels problemes per separat.
+El consum de recursos en aquest tipus d'algorismes no sols depèn dels cicles d'instruccions processats, ja que s'han de tenir en compte les comunicacions entre processadors. Un exemple de la necessitat de recursos de comunicació es troba en els algorismes d'ordenació, que poden adaptar-se a l'ús en paral·lel de manera molt eficient, però que malbaratarien la disponibilitat del recurs de comunicació. L'impacte en la necessitat del recurs de comunicació és dependent del grau de paral·lelització o granularitat; això és, que si s'incrementa la granularitat dels processos es concentrarien les tasques en uns pocs processadors, cosa que disminueix la necessitat de comunicació, però que fa servir menys processadors, apropant-se més al processament en sèrie.
+Els algorismes iteratius són, en el cas general, paral·lelitzables. Alguns problemes que no poden ser resolts en paral·lel, se solen anomenar inherently serial problems (en català: problemes inherentment expressables en sèrie).
+
+
+==== Determinístics o no determinístics ====
+Els algorismes determinístics resolen els problemes amb la solució exacta al problema en cada etapa de l'algorisme, mentre que els no determinístics ho fan responent a preguntes típiques que van fent la solució cada vegada més acurada gràcies a l'ús de l'heurística.
+
+
+==== Exactes o aproximats ====
+Mentre que molts algorismes arriben a una solució exacta, els algorismes aproximats cerquen una aproximació que s'apropi a la vertadera. Les aproximacions es poden fer servir amb una estratègia determinística o bé aleatòria. Aquests algorismes tenen valor pràctic per a problemes molt difícils.
+
+
+=== Per paradigma o estratègia de resolució ===
+L'altra manera de classificar algorismes pot fer-se per la metodologia seguida en el seu disseny. Alguns dels dissenys més estesos són els que es veuen a continuació.
+
+
+==== Divideix i venceràs ====
+
+Amb l'exposició d'un exemple senzill de recursivitat ha quedat retratada l'estratègia general per tal de resoldre un problema gràcies a la divisió en parts més petites. Les estratègies generals d'aquest tipus tractarien d'acomplir tres passos:
+
+Divideix: es tracta de l'estratègia de divisió per tal de fer servir el mateix o altres algorismes amb el consegüent progrés en la cerca de la solució.
+Conquereix: una vegada es té clara l'estratègia de divisió, es processen els subproblemes amb els algorismes necessaris.
+Combina: el resultat és la combinació dels diferents subproblemes conquerits.
+Amb la recursivitat vista en el problema del factorial són evidents les tres fases, ja que:
+
+La divisió es tracta factoritzant la solució en els dos naturals més grans que el componen n i (n-1)!, en què n és conegut i n-1 també, però és necessària la resolució d'aquest últim com a subproblema.
+La conquesta comença en resoldre l'1!, en què s'ha introduït la definició de 0!=1.
+Cada subproblema es resol gràcies a les combinacions de cada conquesta, donant com a resultat des d'1!=1*0!=1*1=1, fins al cas del nombre factorial cercat: n!=n*(n-1)! en què ja es coneixen tots els valors a la dreta de la igualtat.
+
+
+==== Programació dinàmica ====
+
+Es tracta de la divisió de l'algorisme en problemes d'optimització per separat, que poden superposar-se per tal d'avaluar en última instància el resultat òptim d'un problema. Cadascun dels subproblemes es tracten de resoldre gràcies a diferents instàncies.
+D'aquesta manera, el programa divideix el treball, segons la necessitat, en problemes més petits. Aquest és un punt en comú amb el mètode de divideix i venceràs, amb el matís que aquest últim divideix el problema en punts determinístics. L'ús del paradigma divideix i venceràs és adequat quan els problemes no tenen dependència.
+D'altra banda, en la resolució de problemes per programació dinàmica, el punt de divisió dels problemes entra en joc com a variable a optimitzar, resultant més adequat per a resoldre problemes dependents que se superposen.
+
+
+==== El mètode voraç ====
+L'algorisme voraç és similar a la programació dinàmica, amb la diferència que els subproblemes no són generalment coneguts en cada etapa. En comptes d'això, es pot escollir una opció voraç, que és el que sembla òptim en aquest moment. Aquest algorisme juga amb les solucions de subproblemes prenent les millors decisions (no totes les factibles en el moment) i el porta a una etapa basada en òptims locals de l'anterior etapa. No és gaire exhaustiva ni hi dona la resposta correcta en general. No obstant això, és un mètode molt eficient si el recorregut de l'algorisme és l'adequat. L'algorisme voraç més conegut és el que dona Joseph Kruskal per tal d'aconseguir l'arbre de llargària mínima.
+
+
+==== Programació lineal ====
+Són els problemes que es resolen donant un espai de restriccions a un problema que opera amb unes variables determinades. L'objectiu en aquest tipus de problemes és el de cercar un òptim d'una funció donada també en funció de les variables del problema. Les restriccions de l'espai de les solucions solen donar-se en forma d'inequacions. Alguns problemes expressats en forma de grafs, com per exemple el del flux màxim o el del transport, formen part d'aquest tipus de paradigma de resolució de problemes d'optimització i es poden resoldre per un algorisme genèric per al tractament de la programació lineal, com és el mètode Simplex. Una variable més complexa de la programació lineal s'anomena programació entera, en què l'espai de les solucions es restringeix al camp dels enters.
+
+
+==== Reducció ====
+Aquesta tècnica té avantatges en la resolució de problemes difícils dels quals no es coneix un algorisme de resolució específic. S'aplica quan aquests problemes poden resoldre's gràcies a algorismes coneguts que transformen el problema i aprofiten aquesta transformació per tal de resoldre l'algorisme resultant de la reducció. Per exemple, un algorisme de selecció per tal de buscar l'element mitjà en una llista d'elements desordenada es pot resoldre transformant la llista amb l'algorisme d'ordenació i després fent la cerca de l'element situat en la posició mitjana. Aquesta tècnica també s'anomena transforma i venceràs (de l'anglès transform and conquer).
+
+
+==== Cerca i enumeració ====
+Alguns problemes (com jugar als escacs) es poden modelar de manera més adequada amb l'ús de grafs. Un algorisme d'exploració de grafs especifica les regles per tal de moure's per un determinat graf, de manera que l'aplicació d'aquest per a la resolució de problemes sigui útil. Aquesta categoria inclou: algorismes de cerca, algorismes de poda i ramificació i algorismes de tornada enrere.
+
+
+==== Paradigma probabilístic i heurístic ====
+Els algorismes que pertanyen a aquesta classe no s'ajusten exactament a la definició d'algorisme. Aquests són:
+
+Algorismes probabilístics: són aquells en els quals s'escullen aleatòriament algunes decisions; per a alguns problemes, es pot provar que les solucions més ràpides han d'involucrar certa aleatorietat.
+Algorismes genètics, que tracten de trobar solucions imitant el procés biològic evolucionari amb un cicle de mutacions aleatòries de les quals es desprenen diferents solucions. D'aquesta manera, s'emula la reproducció i la supervivència del més adaptat. En la programació genètica, aquesta aproximació té extensió als algorismes, tractant-se en si mateixos com si fossin la solució a un problema i seleccionant entre les més adaptades.
+Algorismes heurístics, amb el propòsit general no de trobar una solució òptima, sinó més aviat d'aproximar una solució en què el temps o els recursos són limitats. No són pràctics per tal de trobar solucions perfectes. Un exemple d'açò pot ser la cerca local, la cerca tabú, o els algorismes de recuita simulada (de l'anglès simulated annealing), que és una classe d'algorisme probabilístic heurístic que varia la solució d'un problema en una quantitat aleatòria. El nom de recuita simulada fa al·lusió al terme recuita, procedent de la metal·lúrgia, per a denotar l'escalfament i posterior refredament amb cert manteniment de la temperatura del metall per tal de conferir-li les característiques desitjades, de manera que els grans del metall es recristal·litzen i lliuren la peça de defectes. El propòsit de la variància aleatòria és trobar prop dels òptims globals solucions que poden ser més simples localment que algunes solucions òptimes.
+
+
+== Algorismes com a funcions ==
+Un algorisme es pot entendre com una funció que transforma les dades d'un problema (entrada) en les dades d'una solució (sortida). Encara més, les dades es poden representar, al seu torn, com a seqüències de bits, i en general, de símbols qualssevol. Com cada seqüència de bits representa un nombre natural (vegeu sistema binari), llavors els algorismes són, en essència, funcions dels nombres naturals en els nombres naturals que sí que es poden calcular. És a dir, que tot algorisme calcula una funció 
+  
+    
+      
+        f
+        :
+        
+          N
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle f:\mathbf {N} \to \mathbf {N} }
+  
+ en què cada nombre natural és la codificació d'un problema o d'una solució (ajustant-se cadascuna de les resolucions dels problemes als algorismes utilitzats en les funcions).
+
+
+== Computació amb algorismes ==
+En els sistemes de computadors, un algorisme és una instància d'una lògica escrita en forma de programari, feta per programadors i escrita per tal de funcionar en un determinat mitjà computacional, per tal de fer alguna tasca. Aquesta lògica pot resultar molt senzilla i estar implementada en qualsevol tipus de programa.
+
+
+=== Implementació ===
+En el cas general, els algorismes no són necessàriament implementats mitjançant programes d'ordinador. N'hi ha altres mitjans, com per exemple en la biologia o en els circuits elèctrics o mecànics que presenten repeticions d'algorismes.
+
+
+== Referències ==
+
+
+== Vegeu també ==
+Algorisme genètic
+Algorisme de Huffman
+Algorisme recursiu
+Hashing
+Quicksort
+Codi spaghetti
+
+
+== Enllaços externs ==
+
+Nist.gov (Institut d'estàndards i tecnologia) - Diccionari d'estructures i algorismes (anglès)
+
+Viccionari

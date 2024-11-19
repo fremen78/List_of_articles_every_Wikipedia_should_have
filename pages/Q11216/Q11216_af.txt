@@ -1,0 +1,175 @@
+Numeriese analise is die deel van wiskunde wat te doen het met die berekening van werklike getalle soos 
+  
+    
+      
+        y
+        =
+        0,732
+        050807568877
+      
+    
+    {\displaystyle y=0{,}732050807568877}
+  
+ eerder as eksakte simboliese antwoorde soos 
+  
+    
+      
+        y
+        =
+        
+          
+            3
+          
+        
+        −
+        1.
+      
+    
+    {\displaystyle y={\sqrt {3}}-1.}
+  
+  Dit word veral gebruik wanneer eksakte analise nie moontlik is nie, en sluit onder ander in:
+
+Die benadering van 'n moeilik berekenbare funksie deur 'n eenvoudiger funksie.
+Die berekening van integrale met behulp van 'n eindige aantal waardes van die integrand.
+Die voorstelling van die oplossing van 'n differensiaalvergelyking as 'n tabel van funksiewaardes.
+Interpolasie (vind van tussenwaardes) in so 'n tabel.
+Drie verwante maar verskillende dissiplines word gewoonlik onder die term numeriese analise ingesluit:
+
+Numeriese metodes
+'n Eksakte wiskundige proses wat teoreties 'n oneindige aantal stappe behels, word vervang met 'n oneindige ry prosesse wat elk slegs 'n eindige aantal stappe benodig.  In die praktyk sal slegs 'n eindige aantal van daardie prosesse uitgevoer word.   In die proses ontstaan daar onvermydelik 'n fout , dws die mate van onakkuraatheid wat inherent is aan berekenings en skattings.
+Analise van benaderingsfout
+Die verkryging van 'n boonste grens (of 'n benadering daarvan) op die fout wat deur die numeriese metode gemaak word, onder die aanname dat die berekeninge self foutloos is.  Taylor se stelling en Taylorreekse word dikwels hiervoor gebruik..
+Analise van afrondingsfout
+Die verkryging van  'n boonste grens (of 'n benadering daarvan) op die fout wat gemaak word omdat werklike berekeninge nie foutloos is nie, maar net tot 'n sekere aantal syfers gemaak  word.  Aaangesien in die praktyk slegs 'n eindige aantal syfers gestoor kan word, word óf 'n afkappingsfout gemaak wanneer sekere syfers geïgnoreer word, óf 'n afrondingsfout waar tot die naaste beskikbare masjiengetal afgerond word.  Moderne rekenaars rond byna almal af.
+Numeriese metodes val in twee hoofgroepe: iteratiewe metodes en diskrete metodes.
+
+Iteratiewe metodes
+maak van 'n beskikbare swak skatting van die antwoord gebruik om 'n beter een te kry.  Bv die sogenaamde Babiloniese metode om 'n vierkantswortel te bepaal, berus op die beginsel dat as 
+  
+    
+      
+        x
+        <
+        
+          
+            a
+          
+        
+      
+    
+    {\displaystyle x<{\sqrt {a}}}
+  
+, dan is 
+  
+    
+      
+        a
+        
+          /
+        
+        x
+        >
+        
+          
+            a
+          
+        
+      
+    
+    {\displaystyle a/x>{\sqrt {a}}}
+  
+ . Dus behoort 
+  
+    
+      
+        (
+        a
+        +
+        a
+        
+          /
+        
+        x
+        )
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle (a+a/x)/2}
+  
+ 'n beter benadering tot 
+  
+    
+      
+        
+          
+            a
+          
+        
+      
+    
+    {\displaystyle {\sqrt {a}}}
+  
+ as 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ te wees. Hierdie proses word dan soveel keer as nodig herhaal.
+Diskrete metodes
+vervang die oneindig klein inkremente wat kenmerkend van analise is met ""stappe"" wat nie oneindig klein is nie.  'n Voorbeeld hiervan is die berekening van die omtrek van 'n sirkel deur Archimedes, wat dit deur die omtrek van die ingeskrewe en omgeskrewe reëlmatige 96-hoeke benader het.
+
+
+== Konvergensietempo en numeriese stabiliteit ==
+'n Iteratiewe metode is linêer  konvergent as  die aantal korrekte syfers ongeveer eweredig aan die aantal iterasies is, en
+kwadraties konvergent as  die aantal korrekte syfers ongeveer verdubbel met elke iterasie.  'n Diskrete metode het orde 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+
+as die fout ongeveer eweredig is aan 
+  
+    
+      
+        
+          h
+          
+            p
+          
+        
+        ,
+      
+    
+    {\displaystyle h^{p},}
+  
+ waar 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  
+ die grootte van die stap is.
+'n Metode is numeries stabiel as die effek van afrondingsfout in die praktyk buite rekening gelaat kan word.
+As 'n algemene reël is 'n metode beter as 'n ander was dit vinniger konvergeer, of 'n hoër orde het.  Daar kan egter redes wees waarom dit nie so is nie.
+
+Die aantal berekeninge per stap is gewoonlik meer.  Die voordeel skop dus eers in wanneer hoë akkuraatheid vereis word.
+'n Metode wat vinniger konvergeer, vereis soms dat die beskikbare waarde nader aan korrek moet wees as een wat slegs lineêr konvergeer.
+'n Hoër-orde metode kan minder stabiel wees.
+
+
+== Bronnelys ==
+Numeriese analise. C.M. Villet. 2000

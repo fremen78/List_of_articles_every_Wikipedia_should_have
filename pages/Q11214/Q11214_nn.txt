@@ -1,0 +1,677 @@
+Ei differensiallikning er ei likning der ei eller fleire av dei ukjente er funksjonar og der den deriverte av enkelte av funksjonane er med i likninga. Løysninga på ei slik likning er ei mengd av funksjonar som kan oppfylla likninga. Differensiallikningar spelar ei viktig rolle i ingeniørvitskap, fysikk, økonomi og andre fagfelt. 
+Differensiallikningar opptrer i mange område innan vitskap og teknologi, særleg når eit deterministisk forhold med kontinuerlege varierande storleikar (i form av funksjonar) og korleis dei endrar seg i rom og/eller tid (uttrykt som dei deriverte) er kjend eller postulert. Dette er illustrert i klassisk mekanikk der rørsla til ein lekam er skildra av korleis posisjonen og snøggleiken til lekamen endrar seg med tida. Newton sine lover gjev eit forhold mellom posisjonen, snøggleiken, akselerasjonen og forskjellige krefter som virkar på lekamen og gjev forholdet som ei differensiallikning for den ukjende posisjonen til lekamen som ein funksjon av tida. I somme tilfelle kan denne differensiallikninga (kalla rørslelikninga) løysast eksplisitt. 
+Eit døme på eit problem som kan løysast med differensiallikningar er å avgjere snøggleiken til ei kule som fell gjennom lufta, med omsyn på berre tyngdeakselerasjonen og luftmotstanden. Akselerasjonen til kula mot bakken er akselerasjonen som oppstår på grunn av tyngdekrafta minus nedbremsinga på grunn av luftmotstanden. Tyngdekrafta vert rekna som konstant og luftmotstanden kan modellerast som proporsjonal til snøggleiken til kula. Dette tyder at akselerasjonen til kula, som er den deriverte av snøggleiken til kula, er avhengig av snøggleiken. Å finne snøggleiken som ein funksjon av tida omfattar å løyse ei differensiallikning. 
+Differensiallikningar vert studerte matematisk frå fleire forskjellige perspektiv, hovudsakleg for finne løysinga deira, som er funksjonssettet som tilfredsstiller likninga. Berre dei enklaste differensiallikningane har løysingar gjevne av eksplisitte formlar, men somme eigenskapar hos løysinga til ei differensiallikning kan finnast utan å finne den eksakte forma. Om det ikkje finst ein formel for løysinga, så kan ein finne løysinga numerisk tilnærma ved hjelp av datamaskinar. 
+
+
+== Studieretningar ==
+Studiet av differnesiallikninga er eit vidt felt i rein matematikk og bruksmatematikk, fysikk, meteorologi og ingeniørvitskap. Innan alle desse fagfelta prøver ein å finne eigenskapane til forskjellige differensiallikningar. I rein matematikk fokuserer ein på eksistensen og unikheita til løysingane, medan ein i bruksmatematikk legg vekt på strenge grunngjevinga for metodar for å finne tilnærma løysingar. Differensiallikningar spelar ei viktig rolle i å modellere nær sagt alle fysiske, tekniske eller biologiske prosessar, frå rørslene til himmellekamar, til brubygging, til vekselverknaden mellom nerveceller. Differensiallikningar som vert nytta til å løyse problem i røyndomen kan ikkje alltid løysast direkte, til dømes fordi dei ikkje har lukka løysingar. I staden vert løysingane tilnærma ved hjelp av numeriske metodar. 
+Matematikarar studerer òg svake løysingar (avhengige av svake deriverte), som er løysingsformer som ikkje treng å vere differensierbare overalt. Denne metoden må ofte nyttast for å få i stand løysingar, og fører òg til meir fysisk fornuftige eigenskapar i løysingane, som at det kan vere sjokk til staden i likningar av den hyperbolske typen. 
+Studiet av stabiliteten til løysingane av differensiallikningar vert kalla stabilitetsteori.
+
+
+== Fagterminologi ==
+Teorien for differensiallikningar er ganske godt utvikla og metodane nytta til å studere dei varier mykje etter kva likningstype ein har. 
+
+Ei ordinær differensiallikning (ODE) er ei differensiallikning der den ukjende funksjonen (òg kjend som avhengig variabel) er ein funksjon av ein enkel uavhengig variabel. I den enklaste forma er den ukjende funksjonen ein funksjon med reell eller komplekse funksjonar, men meir generelt kan dei ha vektor- eller matrise-verdiar: dette samsvarar med eit system av ordinære differensiallikningar for ein enkel funksjon:
+Ordinære differensiallikningar er vidare delt inn etter ordenen av den høgaste deriverte av den avhengige variabelen med omsyn til den uavhengige variabelen i likninga. Dei viktigaste tilfella er førsteordens og andreordens differensiallikningar. Til dømes er Bessels differensiallikning
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              y
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        x
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        (
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          α
+          
+            2
+          
+        
+        )
+        y
+        =
+        0
+      
+    
+    {\displaystyle x^{2}{\frac {d^{2}y}{dx^{2}}}+x{\frac {dy}{dx}}+(x^{2}-\alpha ^{2})y=0}
+  
+
+(der 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ er den avhengige variabelen) ei andreordens differensiallikning.
+Ei partiell differensiallikning (PDE) er ei differensiallikning der den ukjende funksjonen er ein funksjon av fleire avhengige variablar og likningar involverer deira partiellderiverte. Ordenen deira er definert på same vis som for ordinære differensiallikningar, men kan vidare delast inn i elliptiske, hyperbolske og parabolske likningar, særleg for andreordens lineære likningar. Somme partielle differensiallikningar fell ikkje inn i nokre av desse kategoriane over heile domenet til den uavhengige variabelen og kan kallast ein blandingstype.
+Både ordinære og partielle differensiallikningar vert klassifiserte som lineære og ikkje-lineære. Ei differensiallikning er lineær om dei ukjende funksjonane og deira deriverte har potens 1 (ein kan ikkje ha produkt) og ikkje-lineære elles. Den karakteristiske eigenskapen til lineære likningar er at løysingane deira dannar eit affint underrom av eit høvande funksjonsrom, som fører til ein mykje meir utvikla teori for lineære differensiallikningar. Homogene lineære differensiallikningar er ein vidare underklasse der løysingsrommet er eit lineært underrom, til dømes at summen av ei kvar mengd av løysingar eller multiple løysingar òg er ei løysing. Koeffisientane til den ukjende funksjonen og den deriverte av denne i ei lineær differnsiallikning kan vere (kjende) funksjonar av uavhengige variablar. Om desse koeffisientane er konstantar så snakkar ein om ei ei lineær differensiallikning med konstante koeffisientar. 
+Det finst særs få metodar for å løyse ikkje-lineære differensiallikningar eksplisitt. Dei ein kjenner er typisk avhengige av at likninga har spesifikke symmetriar. Ikkje-lineære differensiallikningar kan vere særs kompliserte over lange tidsintervall og vere kaotiske. 
+Lineære differensiallikningar vert ofte nytta som tilnærmingar til ikkje-lineære likningar. Desse tilnærmingane er berre gyldige under avgrensa vilkår. Til dømes er den harmoniske svingelikninga ei tilnærming av den ikkje-lineære pendellikninga og gjeld berre for svingingar med små amplitudar. 
+
+
+=== Oppsummering av klassifiseringa ===
+Dei matematiske definisjonane for dei forskjellige klassifiseringane av differensiallikningar kan oppsummerast slik. 
+
+
+==== Ordinære differensiallikningar ====
+
+I tabellen under er alle differensiallikningane av orden n og vilkårleg grad d.
+F er ein implisitt funksjon av: ein avhengig variabel x, ein avhengig variabel y (ein funksjon av x), og ein heiltalsderivert av y. 
+y kan generelt vere ein funksjon med vektorverdi:
+
+  
+    
+      
+        y
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                  (
+                  x
+                  )
+                
+              
+              
+                
+                  
+                    y
+                    
+                      2
+                    
+                  
+                  (
+                  x
+                  )
+                
+              
+              
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    y
+                    
+                      m
+                    
+                  
+                  (
+                  x
+                  )
+                  ,
+                
+              
+            
+            )
+          
+        
+        
+        
+      
+    
+    {\displaystyle y={\begin{pmatrix}y_{1}(x)\\y_{2}(x)\\\vdots \\y_{m}(x),\end{pmatrix}}\,\!}
+  
+
+så x er eit element i vektorrommet R, y eit element i vektorrommet med dimensjon m, 
+  
+    
+      
+        x
+        ∈
+        
+          R
+        
+        ,
+        y
+        ∈
+        
+          
+            R
+          
+          
+            m
+          
+        
+        
+        
+      
+    
+    {\displaystyle x\in \mathbf {R} ,y\in \mathbf {R} ^{m}\,\!}
+  
+, der R er mengda reelle tal, 
+  
+    
+      
+        
+          
+            R
+          
+          
+            m
+          
+        
+        =
+        
+          R
+        
+        ×
+        
+          R
+        
+        ×
+        ⋯
+        ×
+        
+          R
+        
+        
+        
+      
+    
+    {\displaystyle \mathbf {R} ^{m}=\mathbf {R} \times \mathbf {R} \times \cdots \times \mathbf {R} \,\!}
+  
+ er det kartesiske produktet til R med seg sjølv m gonger for å danne m-tuple reelle tal. 
+Dette fører til eit system av differensiallikningar som kan løysast for y1, y2,...ym.
+y er karakterisert av funksjonsavbildinga 
+  
+    
+      
+        y
+        :
+        
+          R
+        
+        →
+        
+          
+            R
+          
+          
+            m
+          
+        
+        
+        
+      
+    
+    {\displaystyle y:\mathbf {R} \rightarrow \mathbf {R} ^{m}\,\!}
+  
+.
+r(x) vert kalla kjeldeleddet i x, og A(x) er ein vilkårleg funksjon, begge rekna for å vere kontinuerlege i x for definerte intervall. 
+
+Merk at avbildinga frå 
+  
+    
+      
+        
+          
+            R
+          
+          
+            m
+            n
+            +
+            2
+          
+        
+        
+        
+      
+    
+    {\displaystyle \mathbf {R} ^{mn+2}\,\!}
+  
+ eller 
+  
+    
+      
+        
+          
+            R
+          
+          
+            m
+            n
+            +
+            1
+          
+        
+        
+        
+      
+    
+    {\displaystyle \mathbf {R} ^{mn+1}\,\!}
+  
+ samsvarar med avbildinga frå x, y, og (n+2) eller (n+1) deriverte av y til løysinga, som generelt er implisitt. 
+
+
+=== Døme ===
+I den første gruppa av døme, la u vere ein ukjend funksjon av x, og c og ω er kjende konstantar. 
+
+Ikkje-homogen førsteordens lineær differensiallikning med konstante koeffisientar:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        c
+        u
+        +
+        
+          x
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {du}{dx}}=cu+x^{2}.}
+  
+
+Homogen andreordens lineær differensiallikning:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        x
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        +
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}-x{\frac {du}{dx}}+u=0.}
+  
+
+Homogen andreordens lineær differensiallikning: med konstante koeffisientar skildra som harmonisk oscillator:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          ω
+          
+            2
+          
+        
+        u
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {d^{2}u}{dx^{2}}}+\omega ^{2}u=0.}
+  
+
+Førsteorden ikkje-lineær ordinær differensiallikning:
+
+  
+    
+      
+        
+          
+            
+              d
+              u
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        
+          u
+          
+            2
+          
+        
+        +
+        1.
+      
+    
+    {\displaystyle {\frac {du}{dx}}=u^{2}+1.}
+  
+
+Andreordens ikkje-lineær ordinær differensiallikning som skildrar rørsla til ein pendel med lengda L:
+
+  
+    
+      
+        L
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              u
+            
+            
+              d
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        g
+        sin
+        ⁡
+        u
+        =
+        0.
+      
+    
+    {\displaystyle L{\frac {d^{2}u}{dx^{2}}}+g\sin u=0.}
+  
+
+I den neste gruppa døme er den ukjende funksjonen u avhengig av to variablar x og t eller x og y. 
+
+Homogen førsteorden lineær partiell differensiallikning:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        t
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}+t{\frac {\partial u}{\partial x}}=0.}
+  
+
+Homogen andreorden lineær partiell elliptisk differensiallikning med konstante koeffisientar, Laplace-likninga:
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial x^{2}}}+{\frac {\partial ^{2}u}{\partial y^{2}}}=0.}
+  
+
+Tredjeordens ikkje-lineær partiell differensiallikning, Korteweg–de Vries-likninga:
+
+  
+    
+      
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        6
+        u
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+        −
+        
+          
+            
+              
+                ∂
+                
+                  3
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  3
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {\partial u}{\partial t}}=6u{\frac {\partial u}{\partial x}}-{\frac {\partial ^{3}u}{\partial x^{3}}}.}
+  
+
+
+== Eksakte løysingar ==
+Somme differensiallikningar har løysingar som kan skrivast på ei eksakt og lukka form. Somme viktige klasser er førte opp her. 
+I tabellen under er H(x), Z(x), H(y), Z(y) eller H(x,y), Z(x,y) ein vilkårleg integrerbar funksjon av x eller y (eller begge), og A, B, C, I, L, N, M er alle konstantar. Generelt er A, B, C, I, L reelle tal, medan N, M, P og Q kan vere komplekse. Differensiallikningane er i sine ekvivalente og alternative former som førte til løysinga ved hjelp av integrasjon.
+
+Merk at 3 og 3 er spesialtilfelle av 7, og er relativt vanlege tilfelle og inkludert her for heilskapen sin del. 
+8 er eit spesialtilfelle av 9, men 8 er ei relativt vanleg form, særleg i enkle fysiske og ingeniørtekniske problem. 
+
+
+== Kjelder ==

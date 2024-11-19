@@ -1,0 +1,69 @@
+Centrinis procesorius – pagrindinė kompiuterio dalis, valdanti visą kompiuterį. Procesoriaus sąvoka yra bendrinė, reiškianti gana abstrakčią informacinių sistemų rūšį, atliekančią manipuliacijas su duomenimis, tačiau dažniau naudojama, kalbant apie skaičiavimams skirtus procesorius, realizuotus, kaip aparatiniai (apčiuopiami) įrenginiai (dažniausiai – mikroprocesoriai) ar (rečiau) programas, sugebančias vykdyti tam tikras komandų sekas.
+
+
+== Aparatinės realizacijos ==
+Procesoriai (įrenginiai) būna skaitmeniniai (labiausiai paplitę) ir analoginiai (naudojami tada, kai būtinas itin didelis skaičiavimų greitis, bet tikslumas – ne toks svarbus).
+
+
+=== Skaitmeniniai procesoriai ===
+
+Skaitmeniniai procesoriai susideda iš aritmetinio loginio įrenginio, atliekančio skaičiavimus bei registrų. Kaip papildomos schemos, pagreitinančios skaičiavimus, naudojami konvejeriai, kešavimo įrenginiai ir pan. Atskirą dalį sudaro priemonės ryšiui su kitais įrenginiais, visų pirma, atmintimi – atminties magistralė (šyna), bei (kartais) – prievadai (angl. ports). Procesoriai skirstomi pagal adresų erdvę (komandos kartu su duomenimis, ar atskirai), pagrindinį adresacijos metodą (stekinė architektūra, adresuojama atmintis ir pan.).
+
+Procesorius gali turėti daug įvairių komandų (CISC) arba mažiau bet greitesniam vykdymui optimizuotų komandų (RISC). Galimi įvairūs specializuoti procesoriai (signalo keitimo, vaizdo plokštės ir pan.) Pagrindiniai procesoriaus našumo rodikliai yra apdirbamų skaičių dydis (bitais), taktinis dažnis bei atminties darbo greitis. 2011 metais daugumoje darbo stočių, serverių buvo naudojami 64 bitų procesoriai. Yra procesorių, galinčių atlikti operacijas su 128 ar net 256 bitų skaičiais.
+
+
+==== Skaitmeninio procesoriaus sąveika su kitomis kompiuterio dalimis ====
+Procesorius jungiamas su likusia kompiuterio dalimi trimis pagrindinėmis išvadų (kontaktų) grupėmis:
+
+Duomenų magistrale perduodami duomenys. Priklausomai nuo valdymo magistralės signalų, duomenų perdavimo kryptis gali būti tiek iš procesoriaus, tiek ir į procesorių. Šio tipo kontaktų paprastai būna tiek, koks yra procesoriaus žodžio ilgis. Vienavardžiai procesoriaus ir visų atminties bei įvedimo-išvedimo įrenginių duomenų magistralės išvadai sujungti tarpusavyje.
+Adresų magistralėje procesorius nustato kiekvienai atminties ląstelei ir kiekvienam įvedimo-išvedimo įrenginiui specifinę kombinaciją (adresą). Iš procesoriaus priima (arba savo duomenis perduoda) tik tas įrenginys ar atminties ląstelė, kurios adresas nurodytas šioje magistralėje. Pavyzdžiui, Intel 8080 adreso magistralė yra šešiolikos bitų. Taigi galima dirbti su 65536 (tiek gali būti derinių) atminties ląstelėmis – atminties apimtis lygi 64 kilobaitams (tuo metu to pakako). Atminties ir įvedimo-išvedimo įrenginiai, kurių adresas neatitinka šiuo metu esamo, savo duomenų magistralės elektrines grandines perveda į Z būseną (loginio elemento išėjimas nuo mikroschemos išėjimo kontakto elektriškai atjungtas).
+Valdymo magistralėje procesorius nurodo duomenų perdavimo kryptį (iš ar į procesorių) bei, neretai, ir išorinio įrenginio tipą (atmintis ar įvedimo-išvedimo įrenginys). Ja taip pat perduodami ir įvairūs paties procesoriaus darbą valdantys signalai (pertraukimo ir kiti).
+Sudėtingesni kompiuteriai turi keletą procesorių arba ir kitokių įrenginių, kurie prireikus paeiliui užima procesoriaus rolę. Pavyzdžiui, taip neretai elgiasi diskų skaitymo įrenginys, pats nustatydamas adresą ir rašydamas skaitomą informaciją į atmintį tiesiogiai (ne per procesorių). Visų tokių įrenginių adreso (ir kai kurie valdymo) magistralės vienvardžiai kontaktai irgi sujungti kartu. Neaktyvių įrenginių jie irgi pervedami į Z būseną.
+Išorinis įrenginys valdymo magistrale gali pasiųsti pertraukimo signalą, priversdamas procesorių laikinai palikti tuo metu vykdomą operacijų seką ir įvykdyti šiam įrenginiui reikalingus veiksmus. Pavyzdžiui, vykdant programą galima perkelti į kitą vietą pelės kursorių – procesorius jį perpieš reaguodamas į pelės pertraukimą.
+
+
+==== Skaitmeninio procesoriaus programa ====
+Šiuolaikinio procesoriaus programos saugojimas paprastai nesiskiria nuo jo duomenų saugojimo. Programa įsimenama kaip greta esančių (gretimus adresus turinčių) baitų seka. Procesorius pažingsniui skaito ir vykdo vieną ar keletą baitų užimančias komandas. Paprastai įvykdžius komandą, toliau vykdoma kita, po jos sekanti komanda. Tačiau būna komandų kurios šį sekančios vykdomos komandos adresą pakeičia. Tokių komandų reikia ciklams, paprogramėms, pertraukimams ir šiaip valdymo perdavimui realizuoti.
+
+
+==== Pagrindinės skaitmeninio procesoriaus dalys ====
+Programos skaitiklis būna visuose procesoriuose ir saugo adresą komandos, kuri bus vykdoma po to, kai bus baigta vykdyti dabartinė komanda. Valdymą kitu adresu perduodančios komandos bei pertraukimo signalai pakeičia šio skaitiklio reikšmę.
+Akumuliatorius irgi būna beveik visuose procesoriuose. Paprastai jame turi būti iš anksto įrašomas vienas dvinarės operacijos (sudėties, atimties ir pan.) narių. Antrasis narys gali būti bendrosios paskirties registre arba ir atmintyje už procesoriaus ribų. Operacijos rezultatas irgi patalpinamas akumuliatoriuje ir gali būti iš ten perkeltas į reikiamą vietą vėlesnėmis komandomis. Kai kada paprastai nedidelė dalis veiksmų gali būti atliekamos vietoj akumuliatoriaus naudojant ir kurį nors bendrosios paskirties registrą.
+Vienas ar keli bendrosios paskirties registrai yra labai nedidelė greitai pasiekiama procesoriaus vidinė atmintis duomenims saugoti. Priklausomai nuo procesoriaus tipo, kai kurie aritmetiniai veiksmai gali būti įmanomi tik tarp tokio registro ir akumuliatoriaus.
+Steko rodyklė rodo į atminties sritį (steką), kur laikinai įsimintas ankstesnis vykdymo adresas, ankstesnės registrų reikšmės ir kiti panašūs duomenys. Kviečiant paprogramę, procesorius įsimena steke programos skaitiklio reikšmę, kad baigus paprogramę vykdyti galėtų grįžti atgal. Jei paprogramei prireikia naudoti akumuliatorių ar bendrosios paskirties registrus, esamos reikšmės paprastai irgi išsaugomos steke ir iš ten atstatomos prieš grąžinant valdymą kvietusiai programai. Nepakeisti dabar esančių registrų reikšmių ypač svarbu aptarnaujant pertraukimus, nes pagal pertraukimo signalą jo paprogramė gali būti iškviesta bet kada.
+Vėliavėlių registras saugo keletą bitų, kurių reikšmės automatiškai nustatomos po kai kurių aritmetinių operacijų ir gali būti naudojamos kitoms aritmetinėms operacijos arba sąlyginio perdavimo komandoms. Pavyzdžiui, sudedant du aštuonženklius (dvejetainėje sistemoje) skaičius, gali būti gautas ir devynženklis dvejetainis skaičius. Perteklinis tokio skaičiaus bitas bus išsaugotas vėliavėlių registro bite „carry“ (angl. perpildymas). Visos vėliavėlių registro reikšmės irgi gali būti perkeliamos į steką bei vėliau iš ten atkuriamos.
+Aritmetinis loginis įrenginys atlieka šio procesoriaus vykdomas aritmetines (sudėties, atimties bei kai kada ir dalybos bei daugybos) ir logines (ir, arba) operacijas.
+Magistralės stiprintuvai formuoja duomenų, adresų bei valdymo magistralių signalus ir prireikus gali persijungti į Z būseną.
+Procesoriaus spartinančioji atmintinė – nedidelė greito veikimo atmintis kur procesorius papildomai prisimena mažus, dažnai skaitomus pagrindinės atminties fragmentus, kad ir vėl prireikus galėtų juos perskaityti iš ten, nesikreipdamas į pagrindinę atmintį. Būdamas jau procesoriaus viduje, kešas daug greitesnis nei pagrindinė atmintis. Kešas veikia automatiškai ir paprastai nereikalauja programuotojo dėmesio.
+
+
+==== CISC procesoriai ====
+CISC procesoriai turi gana sudėtingą komandų rinkinį, yra orientuoti į efektyvesnį atminties panaudojimą, patogesnį programavimą. Tipiškuose CISC procesoriuose būna dešimtys ar net šimtai skirtingų komandų, daugelis komandų būna sudėtingos, atitinkančios ilgą seką aritmetinių veiksmų (pvz., šaknies traukimo ar kėlimo laipsniu komandos). Tipiškos CISC architektūros – i386, VAX, Elbrus.
+
+
+==== RISC procesoriai ====
+RISC procesoriai yra optimizuoti dideliam našumui, jų komandų rinkinys būna labai mažas (kai kada – mažiau, nei 10 komandų). Tipiškos RISC architektūros – Sparc, Alpha. Kai kurie RISC vadinami procesoriai turi gana didelį komandų skaičių, kelis adresacijos metodus, todėl laikytini tarpiniais tarp RISC ir CISC (pvz., PowerPC procesoriai). Siekiant padidinti įprastų CISC procesorių našumą, jie dažnai turi RISC branduolį, kuris vykdo mikroprogramas, emuliuojančias CISC procesoriaus darbą.
+
+
+==== Aušinimo problema ====
+Dėl didelio veikimo greičio šiuolaikiniai procesoriai neretai yra nemažai energijos suvartojantys ir daug šilumos išskiriantys įtaisai. Jų radiatorių ir kitokių aušinimo sistemų kūrimas bei gamyba – sparčiai besivystančios technologijos kryptys. Specialiai kurtos daug energijos nevartoti serijos paprastai būna lėtesnės. Entuziastai padidina procesoriaus darbo greitį net iki trijų kartų, tačiau tuomet jis dirbdamas išskiria daugiau šilumos nei spėja atiduoti per įprastinį radiatorių. Tokiems rekordams pasiekti vietoj orinio radiatoriaus naudojamas vandens ar net skysto azoto aušinimas.
+
+
+=== Analoginiai procesoriai ===
+
+Analoginiai procesoriai veikia, kaip įvairius skaičiavimus atliekantys netiesiniai stiprintuvai. Paprastu atveju toks procesorius gali turėti vieną ar kelis įėjimus signalams, kurie bus apdirbami ir vieną išėjimą jau apdirbtam signalui. Iki XX a. 8-ojo dešimtmečio analoginiai procesoriai buvo labai dažnai naudojami, kai reikdavo ypatingai greitai atlikti sudėtingus skaičiavimus, pvz., valdant lėktuvus, kosminius aparatus ir t. t., taip pat – analizuojant itin sudėtingus uždavinius, pvz., aerodinaminius ar meteorologinius.
+Paprasčiausiu analoginiu skaičiavimo įrenginiu galima laikyti logaritminę liniuotę. Modernesni analoginiai procesoriai būna realizuojami, kaip elektroninės schemos. Paprastai šiuo atveju kertinis procesoriaus elementas yra kondensatorius, kuriame sukauptas elektros krūvis (proporcingas jo įtampai) tarnauja kaip kintamojo reikšmė. Jei kondensatorius per rezistorių sujungiamas su kitu įtampos šaltiniu, jo krūvis pradeda keistis link šio šaltinio reikšmės. Krūvio kitimo greitis (pirmoji išvestinė) proporcingas įtampų skirtumui. Tokie procesoriai „natūraliai“ sprendžia pirmo laipsnio diferencialinę lygtį ar tokių lygčių sistemą. Šios lygčių sistemos dešinėje pusėje esantys aritmetiniai veiksmai realizuojami įvairiomis operacinių stiprintuvų ir kitokiomis elektroninėmis schemomis.
+Skirtingai nuo skaitmeninių procesorių, analoginiai procesoriai turi skaičiavimo tikslumo apribojimus, nors didelių klaidų taip pat nedaro. Buvo teigiama, jog jie gerai tinka kuomet pradiniai duomenys yra kintančios įtampų reikšmės (tarkim, žmogaus nervų ar raumenų sistemos elektrinis aktyvumas). Tokius procesorius sunku perprogramuoti naujai užduočiai. Atsiradus superkompiuteriams ir mikroprocesoriams analoginių skaičiavimo įrenginių reikšmė sumažėjo.
+Taip pat skaitykite:
+
+Diferenciatorius (schema)
+Integratorius (schema)
+Diferencialinis stiprintuvas
+Analoginis sumatorius
+
+
+== Programinės realizacijos ==
+Programos irgi turi procesoriams būdingus bruožus – visos jos gali būti nagrinėjamos, kaip sistemos, vykdančios apibrėžtus veiksmus su duomenimis, tačiau praktiškai procesoriais vadinamos tik programos, galinčios atlikti tam tikras veiksmų sekas su duomenų masyvais. Dažniausi programinių procesorių atvejai – tai transliatoriai (kompiliatoriai, asembleriai, interpretatoriai), įvairūs emuliatoriai (loginiu požiūriu aparatinio procesoriaus emuliatorius niekuo nesiskiria nuo emuliuojamojo procesoriaus), automatinės teksto apdirbimo programos (pvz., groff). Kartais procesoriams priskiriamos ir programos, skirtos duomenų srauto (video, audio ir t. t.) apdirbimui.
+
+
+== Šaltiniai ==

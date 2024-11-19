@@ -1,0 +1,1040 @@
+Funktsioon ehk kujutus on matemaatikas binaarne seos, mis seob ühe hulga iga elemendi üheselt määratud elemendiga teisest hulgast (need kaks hulka võivad ka kokku langeda). Varem on funktsioonide all mõistetud peamiselt arvude hulkade vahelisi kujutusi.
+Funktsiooni mõistel on keskne koht peaaegu kõikides matemaatika harudes ja kvantitatiivseid meetodeid kasutavates teadusharudes.
+Funktsiooni mõistele on lähedased teisenduse ja operaatori mõiste.
+
+
+== Definitsioon ==
+Funktsioon on "masin", mis teisendab mis tahes korrektse sisendi üheksainsaks väljundiks. Näiteks f(x)=x−1 teisendab iga arvu, mis ei võrdu nulliga, selle arvu pöördarvuks. Selles näites ei ole arv 0 korrektne sisend.
+
+
+=== Formaalne definitsioon seose kaudu ===
+Formaalselt võib funktsiooni f sisendväärtuste hulgalt X võimalike väljundväärtuste hulka Y (kirjutatakse f: X → Y) defineerida binaarse seosena X ja Y vahel, mille puhul on täidetud järgmised tingimused:
+
+f on täielik: iga x puhul hulgast X eksisteerib y hulgast Y, nii et x f y (x on y-ga seoses f), see tähendab iga sisendväärtuse puhul on vähemalt üks väljundväärtus hulgast Y.
+f on funktsionaalne: kui x f y ja x f z, siis y = z. see tähendab iga sisendväärtuse puhul on ainult üks võimalik väljundväärtus.
+Seda definitsiooni saab lühemalt väljendada nii: funktsioon hulgast X hulka Y on otsekorrutise X × Y alamhulk f, mille korral iga elemendi x puhul hulgast X on hulgas Y niisugune üheselt määratud element y, et järjestatud paar (x, y) on hulga f element.
+
+
+=== Kõnepruuk ja tähistused ===
+Iga sisendväärtuse x korral määramispiirkonnast tähistatakse vastavat üheselt määratud väljundväärtust y kõigi võimalike väljundväärtuste hulgast avaldisega f(x).
+Seda olukorda kirjeldatakse teiste sõnadega veel järgmistel viisidel:
+
+hulga X igale elemendile x on üheselt vastavusse seatud hulga Y element y, mida tähistatakse f(x)
+muutuja y on muutuja x funktsioon
+muutuja y sõltub muutujast x
+
+
+== Ajalugu ==
+Matemaatikas võttis termini "funktsioon" kasutusele Leibniz (aastal 1694), et rääkida kõveraga seotud suurustest, näiteks kõvera tõusust. Tänapäeva matemaatilises kõnepruugis öeldakse, et funktsioonid, mida Leibniz vaatles, on diferentseeruvad. Mittematemaatikud puutuvad kõige sagedamini kokku just selliste funktsioonidega. Sääraste funktsioonide puhul saab rääkida piirväärtustest ja tuletistest. Mõlemad mõõdavad sisendväärtuste muutusega kaasnevat väljundväärtuste muutust. Need konstruktsioonid on aluseks matemaatilisele analüüsile.
+Sõna "funktsioon" kasutas hiljem (18. sajandi keskel) Leonhard Euler argumentidega avaldiste ja valemite kohta, näiteks f(x) = sin(x) + x3.
+19. sajandil hakkasid matemaatikud kõiki matemaatikaharusid formaliseerima. Karl Weierstrass pooldas matemaatilise analüüsi rajamist aritmeetikale, mitte geomeetriale, mistõttu Euleri definitsiooni eelistati Leibnizi omale (vaata matemaatilise analüüsi aritmetiseerumine).
+Funktsiooni mõiste laiendamine võimaldas matemaatikutel uurida sääraseid veidraid matemaatilisi objekte nagu pidevaid funktsioone, mis ei ole kuskil diferentseeruvad. Algul peeti neid lihtsalt teoreetilisteks kurioosumiteks ning veel 19. ja 20. sajandi vahetusel nimetati neid monstrumiteks. Hiljem leiti, et sellised funktsioonid on kasulikud Browni liikumise taoliste füüsikaliste nähtuste modelleerimisel.
+19. sajandi lõpupoole hakkasid matemaatikud katsuma formaliseerida kogu matemaatikat hulgateooria abil ning püüdsid iga matemaatilist objekti defineerida hulgana. Tänapäeval kasutatava formaalse definitsiooni andis funktsioonile Peter Gustav Lejeune Dirichlet.
+Dirichlet' definitsiooni järgi on funktsioon seose erijuht. Enamiku praktiliste rakenduste puhul ei mängi erinevused Euleri ja Dirichlet' definitsiooni vahel peaaegu mingit rolli.
+
+
+== Funktsiooni uurimine ja liigitamine ==
+
+
+=== Ühe muutuja funktsioonid ===
+Kui igale muutuja x (argumendi) väärtusele mingisugusest piirkonnast X on vastavusse seatud üks muutuja y(funktsiooni) kindel väärtus piirkonnast Y, siis muutujat y nimetatakse muutuja x funktsiooniks.
+Funktsioone saab esitada:
+
+tabelina
+
+graafikuna
+
+analüütiliselt
+ilmutatud kujul 
+  
+    
+      
+        
+        (
+        y
+        =
+        2
+        x
+        )
+      
+    
+    {\displaystyle \,(y=2x)}
+  
+
+ilmutamata kujul 
+  
+    
+      
+        
+        (
+        2
+        x
+        −
+        y
+        =
+        0
+        )
+      
+    
+    {\displaystyle \,(2x-y=0)}
+  
+
+funktsiooni parameetrilisel esitusviisil 
+  
+    
+      
+        
+        
+          {
+          
+            
+              
+                
+                  x
+                  =
+                  2
+                  t
+                
+              
+              
+                
+                  y
+                  =
+                  t
+                
+              
+            
+          
+          
+        
+      
+    
+    {\displaystyle \,\left\{{\begin{array}{c}x=2t\\y=t\end{array}}\right.}
+  
+
+
+=== Funktsiooni liigitamine ===
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse paarisfunktsiooniks, kui 
+  
+    
+      
+        
+        (
+        x
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x\in X)}
+  
+ korral 
+  
+    
+      
+        
+        f
+        (
+        −
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,f(-x)=f(x)}
+  
+
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse paarituks, kui 
+  
+    
+      
+        
+        (
+        x
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x\in X)}
+  
+ korral 
+  
+    
+      
+        
+        f
+        (
+        −
+        x
+        )
+        =
+        −
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,f(-x)=-f(x)}
+  
+
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse perioodiliseks, kui leidub selline reaalarv 
+  
+    
+      
+        
+        (
+        T
+        ≠
+        0
+        )
+      
+    
+    {\displaystyle \,(T\neq 0)}
+  
+ , et 
+  
+    
+      
+        
+        (
+        x
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x\in X)}
+  
+ korral 
+  
+    
+      
+        
+        f
+        (
+        x
+        +
+        T
+        )
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,f(x+T)=f(x)}
+  
+
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse kasvavaks, kui kahe mis tahes argumendi 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x_{1},x_{2}\in X)}
+  
+ korral, rahuldavad tingimust 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        <
+        
+          x
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \,(x_{1}<x_{2})}
+  
+, on 
+  
+    
+      
+        
+        (
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+        <
+        f
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle \,(f(x_{1})<f(x_{2}))}
+  
+.
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse monotoonselt kasvavaks, kui kahe mis tahes argumendi 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x_{1},x_{2}\in X)}
+  
+ korral, rahuldavad tingimust 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        <
+        
+          x
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \,(x_{1}<x_{2})}
+  
+, on 
+  
+    
+      
+        
+        (
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+        ⩽
+        f
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle \,(f(x_{1})\leqslant f(x_{2}))}
+  
+.
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse kahanevaks, kui kahe mis tahes argumendi 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x_{1},x_{2}\in X)}
+  
+ korral, rahuldavad tingimust 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        <
+        
+          x
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \,(x_{1}<x_{2})}
+  
+, on 
+  
+    
+      
+        
+        (
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+        >
+        f
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle \,(f(x_{1})>f(x_{2}))}
+  
+.
+Funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ nimetatakse monotoonselt kahanevaks, kui kahe mis tahes argumendi 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ∈
+        X
+        )
+      
+    
+    {\displaystyle \,(x_{1},x_{2}\in X)}
+  
+ korral, rahuldavad tingimust 
+  
+    
+      
+        
+        (
+        
+          x
+          
+            1
+          
+        
+        <
+        
+          x
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \,(x_{1}<x_{2})}
+  
+, on 
+  
+    
+      
+        
+        (
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        )
+        ⩾
+        f
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        )
+      
+    
+    {\displaystyle \,(f(x_{1})\geqslant f(x_{2}))}
+  
+.
+
+
+=== Pöördfunktsioon ===
+Pöördfunktsiooni saame, kui vaatleme funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ muutujat 
+  
+    
+      
+        
+        x
+      
+    
+    {\displaystyle \,x}
+  
+ muutuja 
+  
+    
+      
+        
+        y
+      
+    
+    {\displaystyle \,y}
+  
+ funktsioonina 
+  
+    
+      
+        
+        x
+        =
+        Γ
+        (
+        y
+        )
+        =
+        
+          f
+          
+            −
+          
+        
+        1
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,x=\Gamma (y)=f^{-}1(x)}
+  
+. Pöördfunktsiooni 
+  
+    
+      
+        
+        x
+        =
+        Γ
+        (
+        y
+        )
+      
+    
+    {\displaystyle \,x=\Gamma (y)}
+  
+ graafiku saame funktsiooni 
+  
+    
+      
+        
+        y
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,y=f(x)}
+  
+ graafiku peegeldamise teel sirge 
+  
+    
+      
+        
+        y
+        =
+        x
+      
+    
+    {\displaystyle \,y=x}
+  
+ suhtes. Kõigil funktsioonidel ei leidu pöördfunktsiooni.
+
+
+=== Funktsiooni pidevus ===
+Funktsioon on pidev punktis 
+  
+    
+      
+        
+        a
+      
+    
+    {\displaystyle \,a}
+  
+, kui leidub 
+  
+    
+      
+        
+        f
+        (
+        a
+        )
+      
+    
+    {\displaystyle \,f(a)}
+  
+, leidub 
+  
+    
+      
+        
+        
+          lim
+          
+            x
+            →
+            a
+          
+        
+        
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \,\lim _{x\to a}\,f(x)}
+  
+ ja 
+  
+    
+      
+        
+        
+          lim
+          
+            x
+            →
+            a
+          
+        
+        
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        a
+        )
+      
+    
+    {\displaystyle \,\lim _{x\to a}\,f(x)=f(a)}
+  
+
+Funktsioon on pidev piirkonnas X, kui funktsioon on pidev selle piirkonna igas punktis. Piisav tingimus selleks on 
+  
+    
+      
+        
+        
+          lim
+          
+            Δ
+            x
+            →
+            0
+          
+        
+        
+        Δ
+        y
+        =
+        0
+      
+    
+    {\displaystyle \,\lim _{\Delta x\to 0}\,\Delta y=0}
+  
+
+
+=== Liitfunktsioon ===
+Kui kõigepealt rakendada argumendile x funktsiooni f: X → Y ja seejärel rakendada tulemile funktsiooni g: Y → Z, saame liitfunktsiooni, mida nimetame funktsioonide f ja g kompositsiooniks ja märgitakse nii: g o f: X → Z. See funktsioon on defineeritud järgmiselt: (g o f)(x) := g(f(x)) mis tahes x korral hulgast X.
+Oletame näiteks, et lennuki kõrgus ajahetkel t on antud funktsiooniga h(t) ning et hapniku kontsentratsioon kõrgusel x on antud funktsiooniga c(x).
+Siis (c o h)(t) on funktsioon, mis kirjeldab hapniku kontsentratsiooni lennuki ümber ajahetkel t.
+Kui
+Y⊂X, 
+siis saab rääkida funktsiooni 
+f kompositsioonist iseendaga; mõnikord märgitakse seda nii: 
+f 2. (Sel juhul ei peeta silmas funktsiooni väärtuse korrutist iseendaga nagu näiteks avaldises cos² x.)
+
+
+=== Määramispiirkond ja muutumispiirkond ===
+Funktsiooni f sisendväärtuste hulka X nimetatakse funktsiooni f määramispiirkonnaks. Funktsiooni f muutumispiirkond on tegelike väljundite hulk {f(x) : x on määramispiirkonna element}.
+Informaatikas määravad funktsiooni (alamprogrammi) määramispiirkonna argumentide andmetüübid ning võimalike väärtuste hulga tagastusväärtuse andmetüüp. Seega on muutumispiirkond ja võimalike väärtuste hulk piirangud, mis funktsiooniga algusest peale seostatakse.
+
+
+=== Funktsiooni graafik ===
+
+Funktsiooni f graafik on kõikide järjestatud paaride (x, f(x)) hulk, kus x on määramispiirkonna X element.
+On teoreeme, mida on kõige lihtsam sõnastada ja tõestada graafiku mõiste kaudu, näiteks kinnise graafiku teoreem.
+Kui X ja Y on reaalsirged, siis see definitsioon vastab tavalisele funktsiooni graafiku mõistele.
+
+
+=== Kujutised ja algkujud ===
+Elemendi x∈X kujutis funktsiooni f korral on väljund f(x).
+Alamhulga A⊂X kujutis funktsiooni f korral on hulga Y alamhulk, mis defineeritakse nii:
+
+f(A) := {f(x) : x∈A}.
+Funktsiooni f muutumispiirkond on selle määramispiirkonna kujutis f(X). Ülaltoodud funktsiooni puhul on hulga {2,3} kujutis funktsiooni f korral f({2, 3}) = {c, d} ja funktsiooni f muutumispiirkond on {a, c, d}.
+Siintoodud definitsiooni järgi tuleb välja, et kujutis f on funktsioon, mille määramispiirkond on hulga X kõikide alamhulkade hulk (ehk hulga X astmehulk) ja mille võimalike väärtuste hulk on hulga Y astmehulk. Algsel funktsioonil f ja kujutisel on sama tähistus. Kontekstist tuleb aru saada, mida silmas peetakse.
+Hulga B ⊂ Y algkuju funktsiooni f korral on hulga X alamhulk, mis defineeritakse nii:
+
+f −1(B) := {x∈X : f(x)∈B}.
+Ülaltoodud funktsiooni puhul on hulga {a, b} algkuju f −1({a, b}) = {1}.
+Selle definitsiooni järgi tuleb välja, et f −1 on funktsioon, mille määramispiirkond on hulga Y astmehulk ja mille võimalike väärtuste hulk on hulga X astmehulk.
+Nendest definitsioonidest järeldub, et:
+
+f(A1 ∪ A2) = f(A1) ∪ f(A2).
+f(A1 ∩ A2) ⊆ f(A1) ∩ f(A2).
+f −1(B1 ∪ B2) = f −1(B1) ∪ f −1(B2).
+f −1(B1 ∩ B2) = f −1(B1) ∩ f −1(B2).
+f(f −1(B)) ⊆ B.
+f −1(f(A)) ⊇ A.
+Need seosed kehtivad määramispiirkonna suvaliste alamhulkade A, A1 ja A2 ning võimalike väärtuste hulga suvaliste alamhulkade B, B1 ja B2 korral.
+Kujutiste ja algkujude seosed ühisosade ja ühenditega kehtivad mitte ainult alamhulkade paaride, vaid alamhulkade mis tahes kogumite korral.
+
+
+=== Injektiivsed, sürjektiivsed ja bijektiivsed funktsioonid ===
+Järgmised mõisted on väga kasulikud: 
+
+Injektiivsed (üksühesed) funktsioonid seavad eri argumentidele vastavusse eri väärtused; teiste sõnadega, kui x ja y on funktsiooni f määramispiirkonna elemendid, siis f(x) = f(y) ainult juhul, kui x = y. Ülaltoodud funktsioon on injektiivne.
+Sürjektiivsetel funktsioonidel on kõik võimalikud väärtused tegelikud; teiste sõnadega, kui y on funktsiooni f võimalik väärtus, siis leidub vähemalt üks x, mille korral f(x) = y. Ülaltoodud funktsioon ei ole sürjektiivne.
+Bijektiivsed funktsioonid on korraga injektiivsed ja sürjektiivsed; sageli kasutatakse neid selleks, et hulki X ja Y kuidagi "samastada".
+
+
+=== Mitme muutuja funktsioonid ===
+Rakendustes on sageli tarvis mitme muutuja funktsioone: nende väärtused sõltuvad mitmest eri tegurist. Matemaatika nõuab, et funktsionaalses seoses (funktsionaalses sõltuvuses) oleksid kõik sõltumatud muutujad välja toodud: "varjatud" tegurid ei ole lubatud.
+Matemaatika seisukohast ei ole ühe ja mitme muutuja funktsioonidel põhimõttelist erinevust: näiteks kolme reaalarvulise muutuja funktsiooni saab vaadelda reaalarvude järjestatud kolmikute funktsioonina. Järgmises lõigus öeldakse sedasama formaalsemas keeles.
+Kui funktsiooni määramispiirkond on n hulga otsekorrutise alamhulk, siis nimetatakse seda funktsiooni n-aarseks funktsiooniks ehk n muutuja funktsiooniks.
+Näiteks seose dist määramispiirkond on R × R ning seetõttu ta kujutab endast binaarset funktsiooni (2-aarset funktsiooni ehk kahe muutuja funktsiooni).
+Sellistel juhtudel ei kirjutata tavaliselt mitte dist((x,y)), vaid lihtsalt dist(x,y).
+Mõnda liiki mitme muutuja funktsioone nimetatakse teheteks. Abstraktses algebras väljendatakse binaarseid funktsioone tehtemärkide (näiteks "*" abil). Näiteks avaldis x*y märgib õigupoolest funktsiooni *(x,y), kuid teeb seda mugavamal viisil (infiksnotatsioonis). Ka näiteks tavaline liitmistehe arvudega kujutab endast funktsiooni: me võiksime kirjutada "2+3" asemel +(2,3), kus + on funktsioon.
+
+
+=== Mitmeväärtuseline funktsioon ja osaline funktsioon ===
+Seos hulkade X ja Y vahel, mille puhul on täidetud tingimus (1), on mitmeväärtuseline funktsioon. Iga funktsioon on mitmeväärtuseline funktsioon, kuid iga mitmeväärtuseline funktsioon ei ole funktsioon.
+Seos hulkade X ja Y vahel, mille puhul on täidetud tingimus (2), on osaline funktsioon. Iga funktsioon on osaline funktsioon, kuid iga osaline funktsioon ei ole funktsioon.
+Vaatame järgmist kolme näidet:
+
+
+== Intuitiivne sissejuhatus ==
+Intuitiivselt võib funktsiooni all mõista "eeskirja", mis seab igale antud sisendile vastavusse üheselt määratud väljundi. Toome mõned näited: 
+
+Igal inimesel on lemmikvärv järgmise 6 värvi hulgast: punane, oranž, kollane, roheline, sinine, lilla. Lemmikvärv on inimese funktsioon. Näiteks Jaani lemmikvärv on punane ja Tiina lemmikvärv on lilla. Sisendiks on siin inimene ja väljundiks on üks 6 värvist.
+Lapsed müüvad suvel limonaadi. Müüdud limonaadi hulk pudelites mingil päeval on selle päeva maksimaalse õhutemperatuuri funktsioon. Näiteks kui temperatuur on 22 kraadi, siis nad müüvad 10 pudelit limonaadi, ja kui temperatuur on 26 kraadi, siis nad müüvad 25 pudelit limonaadi.
+Mingit kivi visatakse alla kõrghoone eri korrustelt. Aeg, mille jooksul kivi maapinnani jõuab, on korruse funktsioon. Näiteks kukub kivi kolmandalt korruselt 2 sekundit ja 11. korruselt 4 sekundit.
+"Eeskirja", millega funktsioon on määratud, saab väljendada valemi (funktsiooni üldavaldise abil, seose abil või lihtsalt tabeli abil, mis loetleb sisendid ja neile vastavad väljundid.
+Funktsiooni kõige iseloomulikum omadus on see, et ta on deterministlik: samale sisendile vastab alati sama väljund. Seetõttu võib funktsiooni kujutleda "masinana" või "musta kastina", mis muundab lubatava sisendi üheselt määratud väljundiks. Sisendit nimetatakse sageli funktsiooni argumendiks ning väljundit funktsiooni väärtuseks.
+Kõige tavalisemal juhul on nii argument kui ka funktsiooni väärtused arvud, funktsionaalset seost (funktsionaalset sõltuvust) väljendatakse valemiga ning funktsiooni väärtuse saamiseks asendatakse argument otseselt valemisse. Vaatame näiteks funktsiooni
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle f(x)=x^{2}}
+  
+,
+mis seab igale arvule x vastavusse selle arvu ruudu.
+Funktsiooni mõistet saab üldistada nii, et funktsioon võib sõltuda mitmest argumendist. Näiteks 
+
+  
+    
+      
+        g
+        (
+        x
+        ,
+        y
+        )
+        =
+        x
+        y
+      
+    
+    {\displaystyle g(x,y)=xy}
+  
+
+on funktsioon, mis võtab kaks arvu x ja y ning seab neile vastavusse nende korrutise xy. Võib paista, nagu sel juhul poleks tegemist funktsiooniga ülalkirjeldatud mõttes, sest see "eeskiri" sõltub kahest sisendist. Ent kui me võtame need kaks sisendit kokku üheksainsaks järjestatud paariks (x, y), siis me võime tõlgendada asja nii, et g on funktsioon, mille argument on järjestatud paar (x, y) ning mille väärtus on xy.
+Teaduses on sageli tegemist funktsioonidega, mis ei ole esitatud valemitega. Võtame näiteks temperatuuri jaotuse maapinnal eri aegadel: see on funktsioon, mille argumentideks on koht ja aeg ning mis annab väljundiks temperatuuri antud kohas antud hetkel.
+Nägime, et intuitiivne funktsioonimõiste ei piirdu arvutustega, mis kasutavad üksikuid arve, ega üldse arvutustega. Matemaatiline funktsioonimõiste on veel üldisem ega piirdu olukordadega, kus on tegemist arvudega. Funktsioon seob oma määramispiirkonna (sisendite hulga) oma võimalike väljundite hulgaga nõnda, et igale määramispiirkonna elemendile seatakse vastavusse täpselt üks element võimalike väljundite hulgast. Allpool näeme, kuidas funktsioone abstraktselt defineeritakse seoste kaudu. Nii üldiselt mõistetud funktsioon on fundamentaalne mõiste peaaegu kõikides matemaatika harudes.
+
+
+== Näiteid ==
+ Pikemalt artiklis funktsioonide loend
+Seos Eesti elanike ja nende kaalude vahel.
+Seos riikide ja nende pealinnade vahel (kuigi tegelikult on mõnel riigil mitu pealinna).
+Seos naturaalarvude n ja nende ruutude vahel.
+Seos ln positiivsete reaalarvude x ja nende naturaallogaritmide ln(x) vahel. Seos reaalarvude ja nende naturaallogaritmide vahel ei ole funktsioon, sest igal reaalarvul ei ole naturaallogaritmi; teiste sõnadega, see seos ei ole täielik.
+Seos dist tasandi R2 punktide ja nende kauguste vahel koordinaatide algpunktist (0,0).
+Kõige tavalisemate matemaatiliste funktsioonide seas on liitmine, jagamine, astendamine, logaritmid, korrutamine, polünoomid, juured, lahutamine ja trigonomeetrilised funktsioonid. Mitteelementaarfunktsioonid (erifunktsioonid) on näiteks Besseli funktsioonid ja gammafunktsioonid.
+
+
+== Vaata ka ==
+Funktsiooni üldavaldis
+Funktsiooni muut
+Funktsionaal
+Operaator
+Tehe
+antitoonne kujutus (antitone mapping)
+biholomorfne kujutus (biholomorphic mapping)
+bijektiivne kujutus (bijective mapping)
+diagonaalkujutus (diagonal map, evaluation mapping)
+eksponentsiaalkujutus (exponential mapping)
+ekviareaalne kujutus (equiareal mapping)
+homomorfism ehk homomorfne kujutus (homomorphism, homomorphous mapping)
+hüpopidev bilineaarne kujutus (hypocontinuous bilinear mapping)
+isotoonne kujutus (isotonic mapping)
+jadapidev kujutus (sequentially continuous mapping)
+jätkatav kujutus (extendable mapping)
+kanooniline kujutus ehk faktorkujutus (canonical mapping, natural mapping, quotient mapping)
+kihistuskujutus (fiber mapping)
+koherentselt invariantne kujutus (coherence­invariant mapping)
+konformne kujutus (conformal mapping)
+kvaasikonformne kujutus (quasiconformal mapping)
+lahtine kujutus (interior mapping, open mapping)
+monomorfne kujutus (monomorphic mapping)
+peaaegu lahtine kujutus (almost open mapping)
+pealekujutus (onto mapping)
+perspektiivne kujutus (perspective mapping)
+pöördkujutus (inverse mapping)
+residuaalkujutus (residual mapping)
+simplitsiaalkujutus (simplicial mapping)
+sissekujutus (into mapping)
+tihenduskujutus (condensation mapping)
+
+
+== Viited ==

@@ -1,0 +1,245 @@
+Radio, eller radiokommunikasjon, er trådlaus kommunikasjon, der ein overfører informasjon ved hjelp av elektromagnetiske bølgjer. 
+Kommunikasjonen forgår ved at ei berebølgje, som er ei elektromagnetisk bølgje med konstant frekvens, vert modulert av informasjonssignalet som skal overførast. Informasjonen ein ynskjer å overføra kan vera tale, musikk, eller vilkårleg data.
+Radiosamband vert nytta til mange ulike føremål, som kringkasting, walkie-talkie, naudsamband, mobiltelefon, for å kommunisera med fly, skipstrafikk, romskip og så vidare. Kvar sendar var tildelt eit frekvensområde, kalla ein kanal som dei må halda seg innanføre.
+
+
+== Teknologi ==
+
+
+=== Kanalar og modulasjon ===
+
+Når informasjon skal overførast via radio må signalet som skal overførast flyttast til eit frekvensområde der det er praktisk mogeleg å overføra det. Grunnen til dette er at dei fysiske dimensjonane på antenna må stå i høve til bølgjelengda 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ til signalet som skal overførast. Bølgjelengda 
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ (eining m) er forholdet mellom utbreiingshastigheita og frekvensen til signalet som skal overførast. Bølgjelengda er gitt som
+
+  
+    
+      
+        λ
+        =
+        c
+        
+          /
+        
+        f
+      
+    
+    {\displaystyle \lambda =c/f}
+  
+,
+der c = 3 x 10^8 m/s er utbreiingshastigheita til elektromagnetiske bølgjer i vakum pg luft, og f er frekvensen Hz. Lengda til antenna kan vera lik bølgjelengda, men 
+  
+    
+      
+        λ
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \lambda /2}
+  
+ (halvbølgjeantenne) eller 
+  
+    
+      
+        λ
+        
+          /
+        
+        4
+      
+    
+    {\displaystyle \lambda /4}
+  
+ (kvartbølgjeantenne) er meir vanleg.
+Om ein skulle overføra ein tone på 100 Hz ville ei kvarbølgjeantenne ha ei lengd på 750 km, noko som ville vera særs upraktisk! Det er difor naudsynt å flytta signalet til eit høgare frekvensområde. Om ein flyttar 100 Hz tonen til 50 MHz for eksempel vert lengda på kvarbølgjeantenna berre 1,5 m og flyttar ein signalet til 1 GHz vert lengda på ei kvartbølgjeantenne berre 7,5 cm.
+Det er dessutan naudsynt at dei ulike radiosambanda nyttar kvart sitt frekvensområde, slik at dei ikkje forstyrrar kvarandre. Det elektromagnetiske spekteret er difor delt inn i ulike frekvensområde, kalla kanalar, som illustrert i Fig. 2. Desse vert tildelte av internasjonal standardiseringsorgan som ITU og andre. Operasjonen som flyttar eit signal til eit anna frekvensområde vert det kalla modulasjon.
+
+
+=== Modulasjon ===
+Hovudartikkel: Modulasjon
+
+For å flytta signalet opp til rett frekvensområde (kanal) vert det modulert. I blokkdiagrammet i Fig. 3 er det blokka til venstre, merka «Modulator», som utfører denne oppgåva. I tidsplanet kan det spenninga til det modulerte signalet uttrykkast som:
+
+  
+    
+      
+        v
+        (
+        t
+        )
+        =
+        A
+        ⋅
+        cos
+        ⁡
+        (
+        
+          ω
+          
+            c
+          
+        
+        t
+        +
+        ϕ
+        )
+        ,
+        
+      
+    
+    {\displaystyle v(t)=A\cdot \cos(\omega _{c}t+\phi ),\,}
+  
+
+der 
+  
+    
+      
+        v
+        (
+        t
+        )
+      
+    
+    {\displaystyle v(t)}
+  
+ er spenninga på utgangen av modulatoren, t er tid (eining s), A er amplituden, 
+  
+    
+      
+        
+          ω
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \omega _{c}}
+  
+ er vinkelfrekvensen (eining rad/s) og 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ er fasen i høve til den umodulerte berebølgja (eining rad). Frekvensen kan òg uttrykkast i eininga Hz: 
+  
+    
+      
+        
+          f
+          
+            c
+          
+        
+        =
+        
+          ω
+          
+            c
+          
+        
+        
+          /
+        
+        2
+        π
+      
+    
+    {\displaystyle f_{c}=\omega _{c}/2\pi }
+  
+.
+Ein har difor tre parameterar ein kan lata informasjonssignalet modulera (endra proporsjonalt med amplituden til informasjonsignalet) :
+
+A: amplitudemodulasjon (AM-modulasjon)
+
+  
+    
+      
+        
+          ω
+          
+            c
+          
+        
+      
+    
+    {\displaystyle \omega _{c}}
+  
+: frekvensmodulasjon (FM-modulasjon)
+
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+: fasemodulasjon (PM-modulasjon)
+Til dømes nyttar lang- og mellombølgjekringkasting AM-modulasjon, medan FM-kringkasting, naturleg nok, nyttar FM-modulasjon.
+Ein skil mellom analog og digital modulasjon. Det modulerte signalet som vert overført som elektromagnetiske bølgjene er alltid eit analoge signal, medan informasjonssignalet kan vera eit analogt signal eller ein digital bitstraum (som kan representera vilkårleg informasjon). Når informasjonssignalet er eit analogt signal, som tale eller musikk, vert radioen kalla analog radio og når informasjonssignalet er ein digital bitstraum vert han kalla digital radio. Typiske døme på analog radio er AM- og FM-kringkasting og kortbølgje sambandsradio. Analog TV nyttar òg analog modulasjon for å overføra bileteinformasjon; PAL og NTSC nyttar AM-modulasjon, medan SECAM nyttar FM-modulasjon. Døme på digital radio er GSM for mobiltelefon, DAB, DVB, trådlause nett, Blåtann og så vidare.
+
+
+=== Kanaleigenskapar ===
+Når det modulerte signalet vert utstråla frå sendeantenna forplantar det seg som elektromagnetiske bølgjer gjennom (tilnærma) vakuum (til dømes frå ei romsonde) eller luft. Radiobølgjene kan anten nå radiomottakarane direkte, eller bli vidaresende gjennom refleksjon frå atmosfæren eller frå landskapsformasjonar. Radiobølgjene kan òg i nokon grad forplanta seg gjennom veggar i bygningar, men dette fører til at dei vert svekka.
+Effekta i dei elektromagnetiske bølgjene som vert stråla ut frå sendarantenna vert spreidd ut over eit stort geografisk område, så Intensiteten (effekt per areal) i signalet som når fram til mottakarantenna er svært liten. I tillegg til ein sterkt svekka versjon av det utstråla signalet frå sendarantenna vil signalet som mottakarantenna fangar opp innehalda støy og interferens frå anna radiokommunikasjon, industri, hushandmingsapparat og så vidare. Typen og graden av støy og interferense varierer frå frekvensområde til frekvensområde, over tid og frå stad til stad. Ulike radiokanalar (stasjonar) vert difor mottekne med ulik kvalitet på signalet på ulike stadar og til ulike tider på døgeret. AM-modulerte signal er mykje meir følsam for slike forstyrringar enn FM-modulerte signal . Dei kan òg verta reflekterte frå landskapsformasjonar, bygningar og liknande, noko som kan føra til multibaneproblem. Dette ser ein til dømes som fleire kopiar av bilete på analogt TV, der dei ulike kopiane av biletet er forskyvd i høve til kvarandre på skjermen. Dette er ei direkte fylje av at mottakaren mottek fleire reflekterte kopiar av signalet, med ulik forseinking.
+
+
+=== Mottaking av radiosignal ===
+I ein radiomottakar vert det elektriske feltet i radiobølgjene fanga opp av ei mottakarantenne og forsterka, som illustrert med det triangulære symbolet til høgre i Fig. 3. Det vert så filtrert for å fjerna støy og interferens som ligg utanfor det frekvensområdet rin er interessert i. Det filtrerte signalet vert så flytta med ned til det opphavleg frekvensområdet. Denne oppgåva vert utført av demodulatoren, Fig. 3, som utfører den motsette operasjonen av modulatoren i sendaren.
+
+
+== Soge ==
+Frå tidleg på 1800-talet hadde ein brukt elektrisitet til telegrafi. Grunnlaget for bruk av radiobølgjer til kommunikasjon blei lagd av ei rekkje vitskapsfolk, ingeniørar og forretningsfolk i ulike land på slutten av 1800-talet. Medan Maxwell hadde lagt fram teorien om elektromagnetisme i 1864 og David E. Hughes hadde overført radiobølgjer i 1879, overtydde Heinrich Hertz vitskapen gjennom ei rekke forsøk i 1880-åra om at det fanst elektromagnetiske bølgjer. Nikola Tesla demonstrerte overføring av radiofrekvensar over korte avstandar i 1891, og føreslo at informasjon kunne oversendast trådlaust.
+
+Franske Édouard Branly utvikla ein radiomottakar kalla koherar rundt 1890.
+Russiske Aleksandr Popov bygde radiomottakarar med koherar i 1894 og indiske Jagadish Chandra Bose demonstrerte overføring av radiobølgjer i 1894 eller -95. 
+Den britiske marineoffiseren Henry Jackson utførte forsøk med overføring over lengre avstandar i 1895 og 96. 
+Tyske Adolf Slaby oppretta verdas til då lengste radiosamband på 2,1 mil i 1897.
+Italienske Augusto Righi fann ut ein måte å endra bølgjelengda til radiobølgjene på, og gav tidleg hjelp til Guglielmo Marconi. Marconi er rekna som opphavsmannen til radiomediet etter å ha utvikla kommersiell radiotelegrafi med eit radioselskap i 1897, og demonstrerte transatlantisk radiooverføring over 350 mil i 1901. Han fekk Nobelprisen i fysikk i 1909 for utviklinga av trådlaus kommunikasjon saman med Karl Ferdinand Braun, oppfinnaren av krystallmottakaren.
+
+Medan det stadig kom teknologiske nyvinningar tok radioamatørar i bruk det nye kommunikasjonsmiddelet. 
+Reginald Fessenden frå Massachusetts utførte det som kanskje var verdas første kringkasting då han overførte eit juleprogram med opplesing og musikk julaftan 1906. Den første amatørradioklubben blei stifta i USA i 1909. Radiokommunikasjon spelte raskt ei rolle innan skipsfart, mellom anna av den japanske marinen i slaget ved Tsushima i 1905, og i samband med det kjende forliset til RMS «Titanic» i 1912.
+
+
+=== Radioselskap ===
+Første verdskrigen stimulerte til vidare utvikling, særleg i samband med det nye flyvåpenet, og radiorøyret blei forbetra. Etter krigen kunne militær ekspertise brukast til å utvikla private radioselskap og offentleg radio. I USA blei Radio Corporation of America (RCA) grunnlagd i 1919 for å sikra samarbeid mellom amerikanske radioprodusentar som hadde ulike patent på radioteknologien. Den første faste radiostasjonen er gjerne rekna som KDKA frå radioprodusenten Westinghouse Corporation i East Pittsburgh, som starta sendingar 2. november 1920. Det første radionettverket, National Broadcasting Company (NBC), blei starta i 1926. Etter at det kom til fleire hundretals radiostasjonar som skapte kaos og interferens, måtte staten gripa inn og regulera stasjonar gjennom Federal Radio Commission (FRC), grunnlagd i 1927. Same året blei det private British Broadcasting Company, stifta i 1922, gjort om til det statleg eigde British Broadcasting Corporation i Storbritannia.
+Den første radiosendinga i Noreg var ei overføring av opera frå prøvestudioet til Marconi i London i 1920. Dei første prøvesendingane blei halde av Telegrafstyret frå 1923, og dei første offentlege radiosendingane blei sende frå Tryvann av Telegrafverket for det private Kringkastingsselskapet AS den 29. april 1925. Blant dei faste sendingane var Lørdagsbarnetimen, som 75 år seinare var blitt verdas eldste radioprogram. Sendingane blei overført over kort avstand, og i dei påfølgjande åra blei det grunnlagd kringkastingsselskap i Bergen, Tromsø og Ålesund. I 1933 blei dei private lokalradioane erstatta av Norsk rikskringkasting som skulle driva allmennkringkasting i heile Noreg.
+
+Medan radio blei mykje brukt til å senda underhalding som musikk og høyrespel, blei radio raskt også ein del av propaganda og informasjonskrig. I Noreg under andre verdskrigen brukte Quisling radioen til å meddela at Nasjonal samling hadde teke over styringa av landet den 9. april 1940, medan ein frå 1941 forbod andre enn NS-medlemmer å ha radio for å hindra dei i å få informasjon frå dei allierte. Under den kalde krigen blei det vanleg å senda radio, som Radio Free Europe, gjennom «jernteppet» og å bruka støysendarar for å forstyrra signala frå slike kanalar frå den andre sida. På 1960-talet voks også talet på «piratradioar» som sende radio utan konsesjon, anten frå skip, som Radio Mercur, eller frå andre land, som Radio Luxembourg.
+Forsøk med overføringar av levande bilete på 1920-talet førte til utviklinga av fjernsynssendingar på 1940-talet. Samstundes utvikla ein radioapparat som var mindre, og på 1950-talet blei det innført berbare transistorradioar.
+Utviklinga av kommunikasjonssatellittar rundt 1960 gjorde det mogleg å senda radiobølgjer kvar som helst på jorda. Radionavigasjon med satellitt blei kraftig utvikla til GPS blei innført i 1987.
+
+
+=== Digitalisering ===
+Sist på 1960-talet tok ein i bruk digital radio for å utvikla eit digitalt telefonnettverk i USA. På 1990-talet tok også radioamatørar i bruk pcar med lydkort til å omforma radiosignal. I 1994 utvikla den amerikanske hæren og DARPA Software-Defined Radio (SDR) som bruker datamaskinar til å omforma og avkoda radiosignal. Standardiserte digitale radiosendingar, som DAB, tok til på slutten av 1990-talet.
+Det er også blitt vanleg å senda radioprogram med internetteknologi. Nettradio kan vera strøymande program eller podkast frå vanlege eller nye, berre nettbaserte, radiostasjonar.
+
+
+== Kjelder ==
+
+
+== Bakgrunnsstoff ==

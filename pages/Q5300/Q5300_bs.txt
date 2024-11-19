@@ -1,0 +1,42 @@
+Centralna procesorska jedinica ili samo procesor je elektronska komponenta napravljena od minijaturnih tranzistora na jednom čipu (poluprovodničkom integralnom sklopu).
+Svaki procesor izvana izgleda veoma jednostavno, no on je u svojoj unutrašnjosti jako kompleksan, jer se radi o stotinama miliona tranzistora koji su smješteni u jednom čipu. Prvi put takvo nešto je uspjelo 1971. kada je napravljen prvi procesor Intel 4004, koji doduše mogao samo sabirati i oduzimati, ali su naučnici prvi put uspjeli da u jedan čip smjeste silna integrisana kola i tranzistore, što je dalo poticaj za daljnji razvoj procesora koji su tim napretkom počeli da troše mnogo manje električne energije.
+
+
+== Kako radi CPU? ==
+Procesor obrađuje i izvršava mašinski kod (binarni) koji mu govori šta da procesor radi. Jedini razumljivi jezik procesoru je mašinski jezik. CPU radi tri osnovne stvari:
+
+Pomoću ALU (engleski: Arithmetic/Logic Unit) procesor je u mogućnosti da izvodi osnovne matematičke operacije (sabiranje, oduzimanje, množenje i dijeljenje). Moderni procesori su u mogućnosti da obavljaju i veoma komplikovane operacije.
+Procesor prebacuje podatke s jednog memorijskog mjesta na drugi
+Shodno naredbama, procesor može skočiti na novi set instrukcija
+Na slici je pokazan najjednostavniji mogući procesor gdje je moguće objasniti principe rada procesora iako se radi o veoma softificiranom dijelu računara (ako ne i najkomplikvanijem). Glavni dijelovi procesora su:
+
+Artimetričko logička jedinica (ALU)
+Dio zadužen za sve matematičke kalkulacije
+
+Registri
+Registri su jednostavne flip-flop zakačke, na slici ih imamo 3, no moderni procesori ih imaju mnogo više.
+
+Program counter
+Dio zadužen, doslovno, za brojanje, shodno naredbi on povečava vrijednost za 1, ili je resetira na 0.
+
+Intrukcijski registar i dekoder
+Dijelovi koji kontrolišu sve ostale dijelove procesora
+Poslije obrade podataka, adresna sabirnica šalje adresu memoriji, dok se kroz ulaz i izlaz dobijaju podaci iz memorije, odnosno šalju. Čitanje i pisanje se odnosi na adresiranu memoriju, tj. kada je procesor želi, reset postavlja program counter na 0.
+Procesor radi u tijesnoj saradnji sa RAM memorijom, ustvari procesor adresira svaki podatak koji ide na memoriju.
+
+
+== Reference ==
+
+
+== Također pogledajte ==
+Hronologija razvoja mikroprocesora
+L1 cache
+
+
+== Vanjski linkovi ==
+
+Isprobavanje, usporedba i ocjenjivanje procesora Arhivirano 28. 12. 2005. na Wayback Machine
+Dizajn procesora: Upoznavanje - Detaljno upoznavanje sa dizajnom procesora. Iako je prilično star materijal, još uvijek je vrijedan
+Kako Procesor Radi
+Pipelining: Pregled - Ars Technica
+SIMD Arhitekture - Upoznavanje i objašnjenje SIMD-a, posebno o načinu kako se odnosi na lične računare

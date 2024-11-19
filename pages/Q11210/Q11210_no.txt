@@ -1,0 +1,1249 @@
+Koordinatsystem benyttes for å angi punkter på en entydig måte i et rom eller på en geometrisk mangfoldighet. Det mest kjente eksemplet er kartesiske koordinatsystem som brukes i rom med euklidsk geometri. Antall koordinater som behøves, er lik med rommets dimensjon. Holdes alle koordinatene bortsett fra en fast, vil den siste koordinatene beskrive en rett koordinatlinje. Det kartesiske koordinatsystemet er derfor også eksempel på et «rettlinjet» koordinatsystem. På den måten kan euklidsk geometri formuleres ved matematiske ligninger og beskrives som analytisk geometri.
+Et annet, kjent koordinatsystem er geografiske koordinater bestående av lengde og bredde på Jordens overflate. Dette er en krum flate med to dimensjoner og koordinatene sies derfor å være krumlinjete. Tilsvarende koordinater brukes også innen astronomi for å angi punkter på himmelkulen eller i universet. Etter at Einstein i sin generelle relativitetsteori viste at det firedimensjonale tidrommet er krummet på grunn av masse og energi, må slike krumlinjete koordinater alltid benyttes i denne viktige delen av moderne, teoretisk fysikk.
+Koordinatsystem brukes i mange andre sammenhenger, også i flere morsomme spill som blant annet slagskip og sjakk.
+
+
+== Rettlinjete koordinater ==
+
+I et tredimensjonalt, euklidsk rom er hvert punkt angitt ved tre kartesiske koordinater som (x,y,z). Det er ekvivalent med å tilordne punktet en «posisjonsvektor» r = x ex + y ey +z ez hvor de tre basisvektorene er ex = (1,0,0),  ey = (0,1,0) og ez = (0,0,1). Da disse overalt i rommet står vinkelrett på hverandre, sies dette kartesiske koordinatsystemet å være «rettvinklet». Uttrykt ved Kronecker-deltaet, skrives det som 
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            m
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            n
+          
+        
+        =
+        
+          δ
+          
+            m
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbf {e} _{m}\cdot \mathbf {e} _{n}=\delta _{mn}}
+  
+
+hvor de latinske indeksene tar verdiene (x,y,z). Med bruk av Einsteins summekonvensjon som sier at man alltid skal summere over to like indekser i et matematisk uttrykk, kan posisjonsvektoren skrives på den mer kompakte formen r = xm em. Indeksen til den kartesiske koordinaten xm kunne likså godt stå nede, men det er hensiktsmessig å la den her stå oppe. Denne skrivemåten  er uavhengig av hvor mange dimensjoner rommet har og blir svært ofte benyttet.
+
+
+=== Skjevvinklet koordinatsystem ===
+Enhver lineært uavhengig kombinasjon av de gitte, kartesiske basisvektorene em kan benyttes til å lage et nytt sett med basisvektorer eμ. Slike lineærkombinasjoner kan sammenfattes i ligningen
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            μ
+          
+        
+        =
+        
+          
+            e
+          
+          
+            m
+          
+        
+        
+          A
+          
+            
+            
+            μ
+          
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \mathbf {e} _{\mu }=\mathbf {e} _{m}A_{\;\;\mu }^{m}}
+  
+
+når man benytter Einsteins summekonvensjon og summerer over like indekser. Her er den greske indeksen μ = 1,2,3,...,D i det generelle tilfellet når rommet har D dimensjoner. Da vil  koeffisientene Amμ  utgjøre en D×D matrise A. Den vil garantert ha en inverse A-1 med elementer (A-1)μm  når denne nye basisen består av lineært uavhengige vektorer. Det betyr at man også har den inverse sammenhengen
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            m
+          
+        
+        =
+        
+          
+            e
+          
+          
+            μ
+          
+        
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        
+          )
+          
+            
+            
+            m
+          
+          
+            μ
+          
+        
+      
+    
+    {\displaystyle \mathbf {e} _{m}=\mathbf {e} _{\mu }(A^{-1})_{\;\;m}^{\mu }}
+  
+
+mellom de gamle og nye basisvektorene. Settes dette inn i uttrykket for posisjonsvektoren, kan den nå skrives som  r = xμ eμ hvor nå 
+
+  
+    
+      
+        
+          x
+          
+            μ
+          
+        
+        =
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        
+          )
+          
+            
+            
+            m
+          
+          
+            μ
+          
+        
+        
+          x
+          
+            m
+          
+        
+      
+    
+    {\displaystyle x^{\mu }=(A^{-1})_{\;\;m}^{\mu }x^{m}}
+  
+
+sies å være koordinatene i dette nye koordinatsystemet. Omvendt gjelder derfor også sammenhengene xm = Amμ xμ. Varierer man her bare en av de skjeve koordinatene xμ, vil ligningene beskrive en rett koordinatlinje i rommet. Da de nye basisvektorene er gitt som eμ = ∂r/∂xμ, er de tangentvektorer til disse koordinatlinjene.
+Det transformerte koordinatsystemet er vanligvis ikke lenger rettvinklet. Matematisk kommer det frem fra produktet
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            μ
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            ν
+          
+        
+        =
+        
+          
+            e
+          
+          
+            m
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            n
+          
+        
+        
+          A
+          
+            
+            
+            μ
+          
+          
+            m
+          
+        
+        
+          A
+          
+            
+            
+            ν
+          
+          
+            n
+          
+        
+        =
+        
+          A
+          
+            
+            
+            μ
+          
+          
+            m
+          
+        
+        
+          A
+          
+            
+            
+            ν
+          
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \mathbf {e} _{\mu }\cdot \mathbf {e} _{\nu }=\mathbf {e} _{m}\cdot \mathbf {e} _{n}A_{\;\;\mu }^{m}A_{\;\;\nu }^{n}=A_{\;\;\mu }^{m}A_{\;\;\nu }^{m}}
+  
+
+hvor man igjen skal summere over den latinske indeksen m. Alle disse produktene mellom basisvektorene inneholder informasjon om deres lengder og vinklene mellom dem. Dette er ikke noe annet en metrikken til rommet uttrykt i de nye koordinatene. Den betegnes vanligvis ved en D×D symmetrisk matrise med elementer gμν = eμ⋅eν. I det kartesiske koordinatsystemet er metrikken gitt ved Kronecker-deltaet δmn = em⋅en. Avstanden Δs  mellom to punkt r og r + Δr uttrykt ved de skjevvinklete koordinatene er dermed gitt ved
+
+  
+    
+      
+        Δ
+        
+          s
+          
+            2
+          
+        
+        =
+        Δ
+        
+          r
+        
+        ⋅
+        Δ
+        
+          r
+        
+        =
+        
+          
+            e
+          
+          
+            μ
+          
+        
+        Δ
+        
+          x
+          
+            μ
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            ν
+          
+        
+        Δ
+        
+          x
+          
+            ν
+          
+        
+        =
+        
+          g
+          
+            μ
+            ν
+          
+        
+        Δ
+        
+          x
+          
+            μ
+          
+        
+        Δ
+        
+          x
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle \Delta s^{2}=\Delta \mathbf {r} \cdot \Delta \mathbf {r} =\mathbf {e} _{\mu }\Delta x^{\mu }\cdot \mathbf {e} _{\nu }\Delta x^{\nu }=g_{\mu \nu }\Delta x^{\mu }\Delta x^{\nu }}
+  
+
+I alle rettlinjete koordinatsystem er metrikken gμν den samme i hele rommet og derfor med komponenter som alle har konstante verdier.
+
+
+=== Kontravariante og kovariante komponenter ===
+I tillegg til basisvektorene eμ  kan man velge å benytte et alternativt sett av lineært uavhengige vektorer som en basis i dette rommet. Det er basert på at koordinattransformasjonen xμ = (A-1)μm xm  beskriver en flate i rommet når en koordinat xμ  holdes fast. Dette er «koordinatflaten» for denne koordinaten. Hver koordinat har sin tilsvarende koordinatflate. Normalvektorene eμ = ∇xμ  til disse flatene danner en dual basis som angis ved å skrive den greske indeksen i hevet posisjon. Hver av disse nye basisvektorene står vinkelrett på alle andre i den opprinnelige basisen bortsett fra sin duale motpart. Det følger fra 
+
+  
+    
+      
+        
+          
+            e
+          
+          
+            μ
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            ν
+          
+        
+        =
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        
+          )
+          
+            
+            
+            m
+          
+          
+            μ
+          
+        
+        
+          
+            e
+          
+          
+            m
+          
+        
+        ⋅
+        
+          
+            e
+          
+          
+            n
+          
+        
+        
+          A
+          
+            
+            
+            ν
+          
+          
+            n
+          
+        
+        =
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        
+          )
+          
+            
+            
+            m
+          
+          
+            μ
+          
+        
+        
+          A
+          
+            
+            
+            ν
+          
+          
+            m
+          
+        
+        =
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        A
+        
+          )
+          
+            
+            
+            ν
+          
+          
+            μ
+          
+        
+        =
+        
+          δ
+          
+            
+            ν
+          
+          
+            μ
+          
+        
+      
+    
+    {\displaystyle \mathbf {e} ^{\mu }\cdot \mathbf {e} _{\nu }=(A^{-1})_{\;\;m}^{\mu }\mathbf {e} _{m}\cdot \mathbf {e} _{n}A_{\;\;\nu }^{n}=(A^{-1})_{\;\;m}^{\mu }A_{\;\;\nu }^{m}=(A^{-1}A)_{\;\;\nu }^{\mu }=\delta _{\;\nu }^{\mu }}
+  
+
+hvor på høyresiden Kronecker-deltaet med greske indekser opptrer. En dual basis kan også konstrueres i det mer generelle tilfellet hvor rommet som skal koordinatiseres, i utgangspunktet ikke har noen metrikk. Dette benyttes noen ganger i den mer abstrakte formuleringen av differensialgeometri.
+En vilkårlig vektor V kan i det opprinnelige, kartesiske koordinatsystemet uttrykkes ved sine komponenter på de tilsvarende basisvektorene slik at V = Vm em. For de kartesiske komponentene Vm  er det uvesentlig om den latinske indeksen skrives oppe eller nede. Men i den skjevvinklete i basisen er dette ikke lenger tilfelle. Der får vektoren andre komponenter som følger fra
+
+  
+    
+      
+        
+          V
+        
+        =
+        
+          
+            e
+          
+          
+            μ
+          
+        
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        
+          )
+          
+            
+            
+            m
+          
+          
+            μ
+          
+        
+        
+          V
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \mathbf {V} =\mathbf {e} _{\mu }(A^{-1})_{\;\;m}^{\mu }V^{m}}
+  
+
+Dette kan igjen skrives på formen V = Vμ eμ hvor koeffisientene
+
+  
+    
+      
+        
+          V
+          
+            μ
+          
+        
+        =
+        (
+        
+          A
+          
+            −
+            1
+          
+        
+        
+          )
+          
+            
+            
+            m
+          
+          
+            μ
+          
+        
+        
+          V
+          
+            m
+          
+        
+      
+    
+    {\displaystyle V^{\mu }=(A^{-1})_{\;\;m}^{\mu }V^{m}}
+  
+
+kalles vektorens kontravariante komponenter. Det er angitt ved å plassere den greske indeksen i en hevet posisjon. Navnet «kontravariante» kommer fra den egenskapen at disse komponentene transformerer med den inverse matrisen A-1 og derfor motsatt av de tilsvarende basisvektorene  eμ.
+Alternativt kan man nå også benytte den duale basisen i det skjevvinklete koordinatsystemet. Da er V = Vμ eμ  som definerer de kovariante komponentene Vμ = eμ⋅V  til denne vektoren. De skrives med den greske indeksen i senket posisjon. Skriver man her V = Vν eν, er derfor Vμ = eμ⋅eνVν  som betyr at
+
+  
+    
+      
+        
+          V
+          
+            μ
+          
+        
+        =
+        
+          g
+          
+            μ
+            ν
+          
+        
+        
+          V
+          
+            ν
+          
+        
+      
+    
+    {\displaystyle V_{\mu }=g_{\mu \nu }V^{\nu }}
+  
+
+Metrikken gμν  kan derfor brukes til å «senke» en kontravariant indeks slik at man får en kovariant komponent. På tilsvarende måte er en kontravariant komponent gitt som Vμ = eμ⋅V  som betyr at man kan skrive Vμ = gμνVν  etter å ha definert gμν = eμ⋅eν = (A-1)μm(A-1)νm. Det er derfor naturlig å kalle disse koeffisientene for de kontravariante komponentene av metrikken. Da de oppfyller
+
+  
+    
+      
+        
+          g
+          
+            μ
+            λ
+          
+        
+        
+          g
+          
+            λ
+            ν
+          
+        
+        =
+        
+          δ
+          
+            
+            ν
+          
+          
+            μ
+          
+        
+        ,
+      
+    
+    {\displaystyle g^{\mu \lambda }g_{\lambda \nu }=\delta _{\;\nu }^{\mu },}
+  
+
+danner de en matrise som er den inverse av matrisen med de kovariante komponentene gμν. Indreproduktet mellom vektorene V og U = Uμ eμ blir nå U⋅V = gμνUμVν. Det kan derfor også skrives som U⋅V = UμVμ = UμVμ.
+
+
+=== Et todimensjonalt eksempel ===
+
+Denne formalismen kan illustreres i et euklidsk rom med D = 2  dimensjoner. I stedet for de  to kartesiske basisvektorene ex og ey, kan man for eksempel benytte den skjevvinklete basisen definert ved e1 = ex - ey og e2 = ex + 2ey. Transformasjonsmatrisen og dens inverse er derfor 
+
+  
+    
+      
+        A
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  −
+                  1
+                
+                
+                  2
+                
+              
+            
+            ]
+          
+        
+        ,
+        
+        
+        
+          A
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  2
+                  
+                    /
+                  
+                  3
+                
+                
+                  −
+                  1
+                  
+                    /
+                  
+                  3
+                
+              
+              
+                
+                  1
+                  
+                    /
+                  
+                  3
+                
+                
+                  1
+                  
+                    /
+                  
+                  3
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle A={\begin{bmatrix}1&1\\-1&2\end{bmatrix}},\;\;A^{-1}={\begin{bmatrix}2/3&-1/3\\1/3&1/3\end{bmatrix}}}
+  
+
+Fra de nye basisvektoren følger også direkte de kovariante komponentene av metrikken,
+
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  2
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  −
+                  1
+                
+                
+                  5
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle g_{\mu \nu }={\begin{bmatrix}2&-1\\-1&5\end{bmatrix}}}
+  
+
+De nye, kontravariante koordinatene blir på samme måte
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  x
+                  
+                    1
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    2
+                    3
+                  
+                
+                x
+                −
+                
+                  
+                    1
+                    3
+                  
+                
+                y
+              
+            
+            
+              
+                
+                  x
+                  
+                    2
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    3
+                  
+                
+                x
+                +
+                
+                  
+                    1
+                    3
+                  
+                
+                y
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x^{1}&={2 \over 3}x-{1 \over 3}y\\x^{2}&={1 \over 3}x+{1 \over 3}y\\\end{aligned}}}
+  
+
+Dette gir også den duale basisen bestående av e1 = 2/3 ex - 1/3 ey  og e2 = 1/3 ex + 1/3 ey.  De kontravariante komponentene av metrikken blir dermed
+
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            1
+            9
+          
+        
+        
+          
+            [
+            
+              
+                
+                  5
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  2
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle g^{\mu \nu }={1 \over 9}{\begin{bmatrix}5&1\\1&2\end{bmatrix}}}
+  
+
+I figuren til høyre er dette skjevvinklete koordinatsystemet vist med noen forskjellige koordinatlinjer  og basiser tegnet inn i noen tilfeldige punkt. Det fundamentale parallellogrammet e1 × e2  har et areal som er kvadratroten av det(gμν ) = 3 ganger større enn arealet til kvadratet ex × ey, mens det duale parallellogrammet e1 × e2  har et areal som er 3 ganger mindre enn dette enhetskvadratet.
+En kartesisk vektor V = 3ex  + 4ey  kan da angis ved sine kontravariante komponenter som V = 2/3 e1 + 7/3 e2 som fremkommer ved projeksjoner parallelt med koordinatlinjene. I den duale basisen blir V = -e1 + 11e2  med kovariante komponenter som finnes ved projeksjoner normalt på koordinatlinjene.
+
+
+== Krumlinjete koordinater ==
+
+I det samme, euklidske rommet kan man også uttrykke de kartesiske koordinatene xm  ved mer generelle koordinater xμ. Slike koordinattransformasjoner vil i alminnelighet være ikke-lineære slik at de nye koordinatlinjene er krumme. De kalles derfor for krumlinjete koordinater. Et typisk eksempel i tre dimensjoner er kulekoordinater eller «sfæriske koordinater» definert ved transformasjonen
+
+  
+    
+      
+        x
+        =
+        r
+        sin
+        ⁡
+        θ
+        
+        cos
+        ⁡
+        φ
+      
+    
+    {\displaystyle x=r\sin \theta \,\cos \varphi }
+  
+
+  
+    
+      
+        y
+        =
+        r
+        sin
+        ⁡
+        θ
+        
+        sin
+        ⁡
+        φ
+      
+    
+    {\displaystyle y=r\sin \theta \,\sin \varphi }
+  
+
+  
+    
+      
+        z
+        =
+        r
+        cos
+        ⁡
+        θ
+      
+    
+    {\displaystyle z=r\cos \theta }
+  
+
+En r-koordinatlinje er en rett linje gjennom origo, mens θ- og φ-koordinatlinjer er sirkler på samme måte som breddegrad og lengdegrad.
+Fra koordinattransformasjonene xm = xm(xμ ) kan man direkte beregne tangentvektorene til koordinatlinjene. De kan benyttes som en ny vektorbasis som igjen kan skrives som eμ = emAmμ. Men nå vil transformasjonsmatrisen Amμ = ∂xm/∂xμ  variere fra punkt til punkt i rommet slik at basisvektorene overalt vil ha forskjellige retninger. For eksempel, med kulekoordinater blir
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    e
+                  
+                  
+                    r
+                  
+                
+              
+              
+                
+                =
+                sin
+                ⁡
+                θ
+                cos
+                ⁡
+                φ
+                
+                
+                  
+                    e
+                  
+                  
+                    x
+                  
+                
+                +
+                sin
+                ⁡
+                θ
+                sin
+                ⁡
+                φ
+                
+                
+                  
+                    e
+                  
+                  
+                    y
+                  
+                
+                +
+                cos
+                ⁡
+                θ
+                
+                
+                  
+                    e
+                  
+                  
+                    z
+                  
+                
+              
+            
+            
+              
+                
+                  
+                    e
+                  
+                  
+                    θ
+                  
+                
+              
+              
+                
+                =
+                r
+                cos
+                ⁡
+                θ
+                
+                cos
+                ⁡
+                φ
+                
+                
+                  
+                    e
+                  
+                  
+                    x
+                  
+                
+                +
+                r
+                cos
+                ⁡
+                θ
+                
+                sin
+                
+                φ
+                
+                
+                  
+                    e
+                  
+                  
+                    y
+                  
+                
+                −
+                r
+                sin
+                ⁡
+                θ
+                
+                
+                  
+                    e
+                  
+                  
+                    z
+                  
+                
+              
+            
+            
+              
+                
+                  
+                    e
+                  
+                  
+                    φ
+                  
+                
+              
+              
+                
+                =
+                −
+                r
+                sin
+                ⁡
+                θ
+                sin
+                ⁡
+                φ
+                
+                
+                  
+                    e
+                  
+                  
+                    x
+                  
+                
+                +
+                r
+                sin
+                ⁡
+                θ
+                cos
+                
+                φ
+                
+                
+                  
+                    e
+                  
+                  
+                    y
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\mathbf {e} _{r}&=\sin \theta \cos \varphi \,\mathbf {e} _{x}+\sin \theta \sin \varphi \,\mathbf {e} _{y}+\cos \theta \,\mathbf {e} _{z}\\\mathbf {e} _{\theta }&=r\cos \theta \,\cos \varphi \,\mathbf {e} _{x}+r\cos \theta \,\sin \,\varphi \,\mathbf {e} _{y}-r\sin \theta \,\mathbf {e} _{z}\\\mathbf {e} _{\varphi }&=-r\sin \theta \sin \varphi \,\mathbf {e} _{x}+r\sin \theta \cos \,\varphi \,\mathbf {e} _{y}\\\end{aligned}}}
+  
+
+Basisvektoren eθ  og eφ  er ortogonale tangentvektorer til en kule med radius r, mens er  står normalt på kuleflaten i radiell retning.
+På samme måte som med skjevvinklete koordinater kan komponentene til en vektor finnes i dette nye koordinatsystemet. Avstander og skalare produkt mellom vektorer er igjen gitt ved en metrikk gμν = eμ⋅eν. Fra basisvektorene i kulekoordinater kan komponentene beregnes og samles i matrisen
+
+  
+    
+      
+        
+          g
+          
+            μ
+            ν
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    r
+                    
+                      2
+                    
+                  
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  
+                    r
+                    
+                      2
+                    
+                  
+                  
+                    sin
+                    
+                      2
+                    
+                  
+                  ⁡
+                  θ
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle g_{\mu \nu }={\begin{bmatrix}1&0&0\\0&r^{2}&0\\0&0&r^{2}\sin ^{2}\theta \end{bmatrix}}}
+  
+
+I dette tilfellet er matrisen diagonal da basisvektorene står vinkelrett på hverandre. Ved hjelp av denne metrikken kan kovariante komponenter av vektorer beregnes. Alternativt kan de også finnes fra den inverse transformasjonen xμ = xμ(xm)  som kan benyttes til å etablere en dual basis.
+
+
+== Se også ==
+Kartesiske koordinater
+Krumlinjete koordinater
+Polarkoordinater
+Kulekoordinater
+Linjekoordinater
+
+
+== Referanser ==
+
+
+== Litteratur ==
+M.L. Boas, Mathematical Methods in the Physical Sciences, John Wiley & Sons, New York (1983). ISBN 0-471-04409-1.
+E. Kreyzig, Differential Geometry, Dover Publications, New York (1991). ISBN 0-486-66721-9.
+
+
+== Eksterne lenker ==
+«Koordinatsystem», fra Store norske leksikon
+«Koordinatsystem», video fra matematikk.org

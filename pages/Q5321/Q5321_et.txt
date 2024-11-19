@@ -1,0 +1,68 @@
+Takisti on elektroonikakomponent mingi soovitava või kindla elektritakistuse tekitamiseks vooluringis. Sellest tulenevalt kasutatakse neid kas voolutugevuse piiramiseks või pingelangu tekitamiseks.
+
+
+== Takistite liigitus ==
+
+Takistid võivad olla kas lineaarsed või mittelineaarsed. Lineaartakistit läbiva voolu tugevus on võrdeline talle mõjuva pingega. Vastavalt on takistile rakenduva pinge (joonisel V) ja teda läbiva voolu (i) vaheline sõltuvus lineaarne (graafikul sirgjoon).
+Mittelineaartakistite takistus sõltub tugevasti välismõjureist: pingest (varistoridel), temperatuurist (termotakisteil) või valguskiirgusest (fototakisteil).
+Lineaartakisteid kui kõige levinumaid nimetatakse üldiselt lihtsalt takistiteks.
+Otstarbelt ning ehituselt jagunevad takistid püsitakistiteks, mille takistus on kindla väärtusega, ja muuttakistiteks, mille takistus on sujuvalt või astmeliselt muudetav.
+Takistusmaterjali järgi liigitatakse nii püsi- kui ka muuttakisteid kihttakisteiks ja traattakisteiks.
+
+
+== Püsitakistite ehitus ==
+
+Silindrilistel kihttakistitel on portselanvarras või -toru kaetud takistusmaterjali kihiga; materjaliks on metall (nt. nikkel) või metallisulam, metalloksiid (nt tinaoksiid), metallkeraamika (kermis) või grafiit. Takistuskiht on enamasti keermekujuline. Takistuskiht võib olla kaetud värvi, isoleerlaki või -kompaundiga.
+Traattakisti isoleeralusele on keritud oksüdeeritud takistustraat. Varda otstele on pressitud messingotsakud koos traadist väljaviikudega.
+
+1980. aastaist alates rakendatakse elektroonikaseadmete tootmisel pindmontaaži (SMD). Siin kasutatakse miniatuurseid traatviikudeta liistakukujulisi takisteid ‒ SMD-takisteid ‒ trükkplaadi pinnale jootmiseks.
+Keraamilisest alusmaterjalist (alumiiniumoksiidist) kiipide suurust (pikkus × laius) väljendatakse tollikoodis (ühikuks 1/100 tolli) või meeterkoodis (ühikuks 1/10 mm). Näiteks 1,0×0,5 mm suuruse kiibi tähis on tollikoodis 0402 ja meeterkoodis 1005; kiipi mõõtmetega 5,0×2,5 mm tähistab tollikoodis 2010 ja meeterkoodis 5025. Kiibi paksus on enamasti 1/40 tolli ≈ 0,6 mm.
+
+
+== Takistite põhiparameetrid ==
+Takistite põhiparameetriteks on nimitakistus, tolerants, nimivõimsus ja piirpinge. Lisaks nendele antakse veel takistuse temperatuuritegur, suhteline mürapinge ja piirsagedus.
+
+Nimitakistused vastavad püsitakistitel normridadele E6, E12, E24, E48, E96 ja E192 ning muuttakistitel enamasti ridadele E6 ja E12. Tähele E järgnev number väljendab nimiväärtuste arvu reas.
+Tolerants ehk takistushälve näitab, mitu protsenti võib takisti tegelik takistus erineda nimiväärtusest üles- või allapoole. Üldotstarbeliste püsitakistite tolerants on enamasti 10, 5 ja 2% (muuttakistitel 20%), täppistakistitel 1; 0,5; 0,25; 0,1% või veelgi väiksem.
+Nimivõimsus on suurim võimsus, millele vastavat soojust on takisti võimeline kestvalt hajutama takisti tüübist sõltuval kõrgeimal ümbrustemperatuuril ilma lubamatult üle kuumenemata. Takistite nimivõimsused võivad nt. olla 0,005; 0,062; 0,1; 0,125; 0,25; 0,33; 0,40; 0,50; 0,75; 1; 2; 5; 7,5; 10 jne W.
+Piirpinge väljendab takisti elektrilist tugevust; see on kõrgeim pinge, mida takisti kestvalt talub, ilma et tekiks läbilöök. Lubatav pinge kasvab koos nimivõimsusega.
+Takistuse temperatuuritegur (TKR) näitab takistuse suhtelist muutust temperatuuri muutumisel 1 K (kraadi) võrra. Sõltuvalt takisti tüübist võib see tegur olla positiivne või negatiivne, s.t temperatuuri tõustes takistus vastavalt suureneb või väheneb.
+Mürapinge on takistil tekkiva soojusmüra efektiivväärtus (μV) temale rakenduva alalispinge 1 V kohta.
+Piirsagedus on suurim töösagedus, millel takisti töötab ilma parasiitmahtuvuste ja -induktiivsuste toime olulise mõjuta. Parasiitsest rööpmahtuvusest ja jadainduktiivsusest tingitud reaktiivtakistused hakkavad praktiliselt lisanduma takisti aktiivtakistusele traattakisteil alates sagedusest umbes 1 kHz, keermekujulise takistuskihiga takistitel sagedusest 10 MHz, spetsiaalsetel kõrgsagedustakistitel 300 MHz, ristkülikulistel viikudeta takistitel 3 GHz.
+
+
+== Takistite markeerimine ==
+Takistite olulisemad parameetrid nagu nimitakistus, tolerants ja mõnikord ka võimsus kantakse markeeringuna takistitele. Markeering võib olla kas arv-, arvtäht- või värvkoodis.
+Eelisarvuridade E6...E24 korral koosneb takistuse kood kahest numbrist ja tähest, mis väljendab takistusühikut: oomi (Ω) tähistab R või E (või puudub täht üldse), kilo-oomi K, megaoomi M. Ühiku tähis asub takistust väljendava arvu järel, kui see on täisarv. Kui takistus väljendub kümnendikosades, siis paikneb see täht arvu ees, asendades nulli ja koma. Täis- ja kümnendosast koosnevas takistusväärtuses asendab ühiku tähis koma. Näiteks 68R tähendab 68 Ω, 36K ‒ 36 kΩ, R68 ‒ 0,68 Ω, 6K8 ‒ 6,8 kΩ jne.
+Tolerants väljendatakse tähena koodi lõpus järgmise süsteemi kohaselt: B ‒ 0,1%, C ‒ 0,25%. D ‒ 0,5%, E ‒ 1%, G ‒ 2%, J ‒ 5%, K ‒ 10%, M ‒ 20%.
+Värvkoodiga markeerimisel on takistile kantud värvilised rõngad, millest esimene on nihutatud ühe otsa poole. Ridade E6...E24 korral tähistavad kaks esimest rõngast numbreid, mis väljendavad takistuse nimiväärtust, kolmanda rõngaga määratakse korrutaja, mis takistuse arvväärtusega korrutamisel annab nimitakistuse. Neljanda rõnga värvus annab tolerantsi; kui 4. rõngas puudub, on hälve 20%.
+Takistitel, mille nimitakistus määratakse kolmekohalisena (read E48, E92, E 192), on koodis viis rõngast.
+
+SMD-takisteile võib olla trükitud või lasergraveeritud kolm numbrit: kaks esimest väljendavad takistusväärtust ja kolmas 10 astendajat, nt
+
+472 = 47 × 102 = 47 × 100 = 4700 Ω = 4,7 kΩ
+561 = 56 × 101 = 56 × 10 = 560 Ω
+820 = 82 × 100 = 82 × 1 = 82 Ω
+Alla 10-oomistel takistitel on koma asemel R: 6R8 = 6,8 Ω
+Väga väikestel takistitel (tüüpmõõdust 0603 väiksematel) tähis harilikult puudub.
+
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+Elektriskeemidel tähistatakse takisti nimiväärtust numbri ja tähega, mis väljendab takistusühikut: oomi tähistab R, kilo-oomi K, megaoomi M. Ühiku tähis asub takistust väljendava arvu järel sel juhul, kui see on täisarv, nt 68R tähendab 68 Ω, 115K ‒ 115 kΩ. Väljendub takistus sajandikosades, paikneb ühiku tähis arvu ees, asendades nulli ja koma, nt R47 on 0,47 Ω, K442 ‒ 0,442 kΩ = 442 Ω. Täis- ja kümnendosast koosnevas takistusväärtuses asendab kümnendeesliite tähis koma, nt 3K3 on 3,3 kΩ, 6M19 ‒ 6,19 MΩ.
+
+
+== Vaata ka ==
+Takistus
+Värvkood
+Oommeeter

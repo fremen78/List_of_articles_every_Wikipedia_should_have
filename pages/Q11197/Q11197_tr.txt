@@ -1,0 +1,989 @@
+Matematikte logaritma, üstel işlevlerin tersi olan bir matematiksel fonksiyondur. Mesela, 1000'in 10 tabanına göre logaritması 3'tür çünkü 1000, 10'un 3. kuvvetidir,1000 = 10 × 10 × 10 = 103. Daha genel bir ifadeyle:
+
+  
+    
+      
+        x
+        =
+        
+          b
+          
+            y
+          
+        
+        ⇔
+        l
+        o
+        
+          g
+          
+            b
+          
+        
+        (
+        x
+        )
+        =
+        y
+      
+    
+    {\displaystyle x=b^{y}\Leftrightarrow log_{b}(x)=y}
+  
+
+Tabanın 10 olması durumunda işlev, onluk logaritma ya da genel logaritma olarak adlandırılır. Onluk logaritmanın fen ve mühendislikte pek çok kullanım alanı vardır. Taban e sayısı olursa buna doğal logaritma denir. Doğal logaritma, soyut matematikte çok sık kullanılır. Bir diğer logaritma şekli de ikilik logaritmadır, bilgisayar bilimlerinde önemli bir yere sahiptir.
+Logaritma 17. yüzyılın başında John Napier tarafından hesaplamaları kolaylaştırmak için oluşturuldu. Denizciler, bilim insanları, mühendisler ve daha hızlı hesap yapmak isteyen kişiler tarafından hızlıca benimsenen logaritma, hesap cetvelleri ve logaritma tabloları aracılığıyla kullanılabiliyordu.
+Uzun zaman alan çok basamaklı çarpma işlemleri logaritmanın şu özelliği sayesinde oldukça kolaylaştı:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y).\,}
+  
+
+Logaritmanın bugünkü yazım şekli 18. yüzyıla dayanır. Leonhard Euler logaritmanın üstel işlevlerle olan ilişkisini keşfetmiş ve bugünkü yazımı oluşturmuştur.
+
+
+== Gerekliliği ve tanımı ==
+Logaritma, üstel işlevlerin tersinin hesaplanmasına duyulan ihtiyaç sonucu ortaya çıkmıştır. Örneğin 2'nin küpü 8'dir. Burada 3'ü ifade etmek için logaritmaya ihtiyaç vardır. log2 8 = 3.
+
+
+== Tarihi ==
+Logaritma, birbirinden habersiz çalışan iki kişi tarafından keşfedilmiştir. Bunlar; 1614'te İskoçyalı John Napier ve 1620'de İsviçreli Joost Bürgi'dir.
+Logaritmaya önemli katkı sağlayan bir diğer isim de cebirin babası olarak tanınan Fars matematikçi Harezmi'dir. Aynı zamanda ondalık sayıyı bulmuştur ve sıfırı kullanan ilk kişidir. 780-850 yılları arasında yaşamıştır.
+Logaritma üzerinde önemli çalışmaları olan bir Türk matematikçi Gelenbevi İsmail Efendi'dir. Kendisi büyük bir matematikçi olup, mantıkla da uğraşmıştır. 1730-1790 yıllarında yaşayan bu büyük alimin Logaritma Risalesi isimli çok açık, anlaşılır yazılmış bir eseri mevcuttur. Bu risaledeki metinler, bilim insanlarına hesap yapabilen bir cihaz tasarlama fikrini vermiştir. İsmail Efendi'nin bilim dünyasına bu açıdan bakıldığında büyük katkıları olduğu açıkça fark edilmektedir. Logaritmanın Türkiye'ye gelişine ve uygulanışına dair en detaylı bilgileri veren bilimsel bir makalede  bu konu bilim tarihi bakımından ve Salih Murat Üzdilek'in hatıralarıyla beraber açıklanmakta ve Türkiye'de logaritma konusunda ilk çalışmanın Halifezade İsmail Efendi tarafından 1765 yılında yayınlanan Tuhfe-i Behic-i Rasini Tercüme-i Zic-i Kasini adlı yazma tercüme eser olduğu ve logaritmanın Türkiye'ye Batı'dan J. Cassini üzerinden yapılma tercümeyle geldiğini kabul etmek gerektiği gösterilmektedir.
+
+
+== Logaritmik özellikler ==
+
+
+=== Çarpma, bölme, üs ve kök ===
+
+
+=== Taban değiştirme ===
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{k}(x)}{\log _{k}(b)}}.\,}
+  
+
+Hesap makineleri istenen logaritma değerini hesaplamak için şu formülü kullanır:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{10}(x)}{\log _{10}(b)}}={\frac {\log _{e}(x)}{\log _{e}(b)}}.\,}
+  
+
+
+== Özel tabanlar ==
+Yaygın olarak kullanılan üç tane taban vardır.
+
+
+== Negatif ve imajiner logaritma ==
+Negatif logaritma üzerinde en önemli çalışmalar yapan matematikçi Leonhard Euler dir.
+Euler özdeşliği yardımıya negatif sayıların logaritması alınabilir. Bu logaritmayı alabilmek için logaritmanın özellikleri ve Euler özdeşliği bilinmelidir.
+
+  
+    
+      
+        
+          e
+          
+            i
+            π
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle e^{i\pi }+1=0}
+  
+ İşte negatif ve imajiner logaritmanın en önemli denklemlerinden biridir. Euler özdeşliği.
+
+  
+    
+      
+        
+          a
+          
+            x
+          
+        
+        =
+        −
+        b
+      
+    
+    {\displaystyle a^{x}=-b}
+  
+ denkleminin çözümü 
+  
+    
+      
+        x
+        =
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        −
+        b
+        )
+        ⇒
+        x
+        =
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        b
+        +
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        −
+        1
+        )
+      
+    
+    {\displaystyle x=log_{a}(-b)\Rightarrow x=log_{a}b+log_{a}(-1)}
+  
+ olur.
+Burada 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        −
+        1
+        )
+        =
+        
+          
+            
+              l
+              n
+              (
+              −
+              1
+              )
+            
+            
+              l
+              n
+              a
+            
+          
+        
+      
+    
+    {\displaystyle log_{a}(-1)={\frac {ln(-1)}{lna}}}
+  
+ şeklinde de yazılabilir. Bu logaritmanın ln ile genişletmesinin sebebi 
+  
+    
+      
+        
+          e
+          
+            i
+            π
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle e^{i\pi }+1=0}
+  
+ denklemi uygun bir logaritma olan ln logaritma fonksiyonudur.
+
+  
+    
+      
+        
+          e
+          
+            i
+            π
+          
+        
+        +
+        1
+        =
+        0
+        ⇒
+        
+          e
+          
+            i
+            π
+          
+        
+        =
+        −
+        1
+        ⇒
+        i
+        π
+        =
+        l
+        n
+        (
+        −
+        1
+        )
+      
+    
+    {\displaystyle e^{i\pi }+1=0\Rightarrow e^{i\pi }=-1\Rightarrow i\pi =ln(-1)}
+  
+ olur. 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        −
+        1
+        )
+        =
+        
+          
+            
+              l
+              n
+              (
+              −
+              1
+              )
+            
+            
+              l
+              n
+              a
+            
+          
+        
+      
+    
+    {\displaystyle log_{a}(-1)={\frac {ln(-1)}{lna}}}
+  
+ denkleminde yerine yazılırsa 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        −
+        1
+        )
+        =
+        
+          
+            
+              i
+              π
+            
+            
+              l
+              n
+              a
+            
+          
+        
+      
+    
+    {\displaystyle log_{a}(-1)={\frac {i\pi }{lna}}}
+  
+ olur. Bu sonuç da 
+  
+    
+      
+        x
+        =
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        b
+        +
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        (
+        −
+        1
+        )
+      
+    
+    {\displaystyle x=log_{a}b+log_{a}(-1)}
+  
+ denkleminde yerine yazılırsa
+
+  
+    
+      
+        x
+        =
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        b
+        +
+        
+          
+            
+              i
+              π
+            
+            
+              l
+              n
+              a
+            
+          
+        
+      
+    
+    {\displaystyle x=log_{a}b+{\frac {i\pi }{lna}}}
+  
+ sonucuna ulaşılır.
+
+
+=== Sonuç ===
+
+  
+    
+      
+        
+          a
+          
+            x
+          
+        
+        =
+        −
+        b
+        ⇒
+        x
+        =
+        l
+        o
+        
+          g
+          
+            a
+          
+        
+        b
+        +
+        
+          
+            
+              i
+              π
+            
+            
+              l
+              n
+              a
+            
+          
+        
+      
+    
+    {\displaystyle a^{x}=-b\Rightarrow x=log_{a}b+{\frac {i\pi }{lna}}}
+  
+
+
+=== İmajiner logaritma ===
+Sanal logaritma demektir. Sanal sayılar ı içerir. 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            m
+          
+        
+        i
+      
+    
+    {\displaystyle log_{m}i}
+  
+ şeklindeki logaritmanın 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            m
+          
+        
+        i
+        =
+        
+          
+            
+              l
+              n
+              i
+            
+            
+              l
+              n
+              m
+            
+          
+        
+      
+    
+    {\displaystyle log_{m}i={\frac {lni}{lnm}}}
+  
+ şeklinde dönüştürülerek bulunabilir. Negatif logaritmaya benzer bir şekilde Euler özdeşliğinden 
+  
+    
+      
+        i
+        π
+        =
+        l
+        n
+        (
+        −
+        1
+        )
+      
+    
+    {\displaystyle i\pi =ln(-1)}
+  
+ şeklinde bulunmuştu (yukarıda) denklem düzenlenirse 
+  
+    
+      
+        i
+        =
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle i={\sqrt {-1}}}
+  
+ den dolayı 
+  
+    
+      
+        i
+        π
+        =
+        l
+        n
+        (
+        −
+        1
+        )
+        ⇒
+        i
+        π
+        =
+        l
+        n
+        
+          i
+          
+            2
+          
+        
+        ⇒
+        
+          
+            
+              i
+              π
+            
+            2
+          
+        
+        =
+        l
+        n
+        i
+      
+    
+    {\displaystyle i\pi =ln(-1)\Rightarrow i\pi =lni^{2}\Rightarrow {\frac {i\pi }{2}}=lni}
+  
+ olur. 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            m
+          
+        
+        i
+        =
+        
+          
+            
+              l
+              n
+              i
+            
+            
+              l
+              n
+              m
+            
+          
+        
+      
+    
+    {\displaystyle log_{m}i={\frac {lni}{lnm}}}
+  
+ denkleminde ln(i) yerine yazılırsa sonuç: 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            m
+          
+        
+        i
+        =
+        
+          
+            
+              i
+              π
+            
+            
+              2
+              l
+              n
+              m
+            
+          
+        
+      
+    
+    {\displaystyle log_{m}i={\frac {i\pi }{2lnm}}}
+  
+ olur.
+
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            i
+          
+        
+        m
+      
+    
+    {\displaystyle log_{i}m}
+  
+ şeklindeki logaritma ise 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            i
+          
+        
+        m
+        =
+        
+          
+            
+              l
+              n
+              m
+            
+            
+              l
+              n
+              i
+            
+          
+        
+      
+    
+    {\displaystyle log_{i}m={\frac {lnm}{lni}}}
+  
+ olur. Yani 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            i
+          
+        
+        m
+        =
+        
+          
+            1
+            
+              l
+              o
+              
+                g
+                
+                  m
+                
+              
+              i
+            
+          
+        
+      
+    
+    {\displaystyle log_{i}m={\frac {1}{log_{m}i}}}
+  
+ dir. 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            m
+          
+        
+        i
+        =
+        
+          
+            
+              i
+              π
+            
+            
+              2
+              l
+              n
+              m
+            
+          
+        
+      
+    
+    {\displaystyle log_{m}i={\frac {i\pi }{2lnm}}}
+  
+ bulunmuştu. Yerine yazılırsa 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            i
+          
+        
+        m
+        =
+        
+          
+            1
+            
+              
+                i
+                π
+              
+              
+                2
+                l
+                n
+                m
+              
+            
+          
+        
+      
+    
+    {\displaystyle log_{i}m={\frac {1}{\frac {i\pi }{2lnm}}}}
+  
+ düzenlenirse 
+  
+    
+      
+        l
+        o
+        
+          g
+          
+            i
+          
+        
+        m
+        =
+        
+          
+            
+              2
+              l
+              n
+              m
+            
+            
+              i
+              π
+            
+          
+        
+      
+    
+    {\displaystyle log_{i}m={\frac {2lnm}{i\pi }}}
+  
+ sonucuna ulaşılır.
+
+
+== Ayrıca bakınız ==
+Matematiksel fonksiyonların listesi
+
+
+== Kaynakça ==
+Yusuf Avcı-Nurettin Ergun-Kamil Alnıaçık. "Kolay Yoldan Logaritma" (PDF). Matematik Dünyası. 15 Mayıs 2013 tarihinde kaynağından (PDF) arşivlendi. Erişim tarihi: 6 Aralık 2013.

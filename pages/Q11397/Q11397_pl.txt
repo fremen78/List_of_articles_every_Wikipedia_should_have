@@ -1,0 +1,2173 @@
+Mechanika klasyczna – dział mechaniki opisujący ruch ciał (kinematyka), wpływ oddziaływań na ruch ciał (dynamika) oraz badanie równowagi ciał materialnych (statyka). Mechanika klasyczna oparta jest na prawach ruchu (zasadach dynamiki) sformułowanych przez Isaaca Newtona, dlatego też jest ona nazywana „mechaniką Newtona” (Principia). Mechanika klasyczna wyjaśnia poprawnie zachowanie się większości ciał w naszym otoczeniu.
+Do końca XIX wieku była uznawana za teorię dokładną, na początku XX wieku okazała się niepoprawna w niektórych sytuacjach. W celu wyjaśnienia niezgodności powstały nowe działy mechaniki:
+
+mechanika relatywistyczna wraz z jej teoriami – ogólną teorią względności i szczególną teorią względności, opisujące zachowanie się obiektów poruszających się z prędkością porównywalną z prędkością światła w próżni,
+mechanika kwantowa, opisująca zachowanie się mikroskopijnych obiektów (cząsteczki, atomy, cząstki elementarne).
+Wymienione teorie w pewnym sensie obalają mechanikę klasyczną, choć są zbudowane na jej bazie pojęciowej i ją uzupełniają. Mimo to mechanika klasyczna jest nadal bardzo użyteczna, ponieważ:
+
+jest prostsza w stosowaniu niż inne teorie,
+z pewnymi przybliżeniami może być stosowana w szerokim zakresie,
+stanowi podstawę pojęciową dla innych teorii.
+Mechanika klasyczna może być używana do opisu ruchu zarówno obiektów rozmiaru makroskopowych (np. piłka, samochód), w tym obiektów astronomicznych (np. planety, galaktyki), jak i obiektów mikroskopijnej wielkości (np. cząsteczek organicznych, a nawet – w dużym przybliżeniu i w ograniczonym zakresie – do cząstek elementarnych). Przykładowo: równanie ruchu elektronu, wynikające z mechaniki klasycznej, poprawnie opisuje działanie mikroskopu elektronowego; dopiero do wyjaśnienia ograniczeń rozdzielczości tego mikroskopu potrzeba odwołania do mechaniki kwantowej, a wyjaśnienie działania mikroskopu elektronowego z użyciem samych pojęć mechaniki kwantowej byłoby trudne.
+W ostatnich latach wzrastającym zainteresowaniem cieszy się dział mechaniki klasycznej o nazwie dynamika nieliniowa. Kluczowym pojęciem jest tu chaos, a głównym narzędziem – nieliniowe równania różniczkowe i iteracyjne.
+
+
+== Podsumowanie ==
+Chociaż mechanika klasyczna jest z grubsza zgodna z innymi „klasycznymi” teoriami, takimi jak klasyczna elektrodynamika i termodynamika, to pewne sprzeczności odkryte pod koniec XIX wieku są wyjaśniane przez współczesną fizykę. Przykładowo klasyczna elektrodynamika mówi, że prędkość światła w próżni jest stała dla wszystkich obserwatorów – jest to sprzeczne z mechaniką klasyczną, w wyniku czego powstała szczególna teoria względności.
+W mechanice klasycznej można wydzielić poddziedziny:
+
+kinematyka – opisująca ruch jako zagadnienie geometryczne,
+statyka – zajmująca się ciałami nie poruszającymi się i warunkami pozostania ciał w spoczynku (równowadze),
+dynamika – opisująca ruch ciał oraz zmiany ruchu ciał pod wpływem oddziaływań.
+
+
+== Opis ruchu ==
+Podstawowym pojęciem wprowadzanym w mechanice klasycznej jest punkt materialny, który jest obiektem o zaniedbywalnie małych rozmiarach oraz posiadający masę. Ruch punktu materialnego jest scharakteryzowany przez kilka parametrów liczbowych (lub wektorów): jego położenie, masę i siłę działającą na niego. Każdy z tych parametrów zostanie opisany poniżej.
+W rzeczywistości obiekty, które opisuje mechanika klasyczna zawsze mają niezerowy rozmiar. Prawdziwy punkt materialny, np. elektron prawidłowo jest opisywany przez mechanikę kwantową. Obiekt o niezerowym rozmiarze ma bardziej skomplikowane zachowanie niż hipotetyczny punkt materialny, ponieważ jego wewnętrzny układ może ulec zmianie – np. podczas lotu piłka może obracać się wokół własnej osi, zmieniając w wyniku tego swój ruch. Jakkolwiek będziemy w stanie użyć naszych rezultatów dla punktu materialnego, aby studiować takie obiekty, traktując je jako zbiorowy obiekt, zbudowany z oddziałujących na siebie punktów materialnych, można pokazać, że takie zbiorowe obiekty zachowują się jak punkt materialny. W omawianym przykładzie piłkę traktujemy jako punkt materialny.
+
+
+=== Położenie i wielkości pochodne ===
+Położenie punktu materialnego jest określane względem wybranego punktu odniesienia (O) znajdującego w przestrzeni. Wybrany punkt wraz z innymi ciałami z nim związanymi nazywamy układem odniesienia. Punktowi materialnemu w konkretnym układzie współrzędnych (opisanym przez wektory jednostkowe 
+  
+    
+      
+        
+          
+            e
+          
+          
+            i
+          
+        
+        
+        i
+        =
+        1
+        ,
+        2
+        ,
+        3
+      
+    
+    {\displaystyle \mathbf {e} _{i}\;i=1,2,3}
+  
+) przyporządkowujemy współrzędne 
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x^{i}}
+  
+
+  
+    
+      
+        
+          x
+        
+        (
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            3
+          
+        
+        
+          x
+          
+            i
+          
+        
+        (
+        t
+        )
+        
+          
+            e
+          
+          
+            i
+          
+        
+        =
+        
+          x
+          
+            i
+          
+        
+        (
+        t
+        )
+        
+          
+            e
+          
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {x} (t)=\sum _{i=1}^{3}x^{i}(t)\mathbf {e} _{i}=x^{i}(t)\mathbf {e} _{i}.}
+  
+
+Wprowadza się pojęcie „ciało fizyczne” lub krótko „ciało” oznaczające dowolny obiekt będący punktem materialnym lub złożony z punktów materialnych.
+Położenie ciała definiowane jest jako wektor 
+  
+    
+      
+        
+          x
+        
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle \mathbf {x} (t),}
+  
+ ciało nie musi być nieruchome, więc położenie zmienia się w czasie (jest funkcją czasu 
+  
+    
+      
+        (
+        t
+        )
+      
+    
+    {\displaystyle (t)}
+  
+).
+Prędkość opisuje szybkość zmiany położenia w czasie, jest definiowana jako pochodna położenia po czasie (oznaczana również przez kropkę)
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          
+            
+              d
+              
+                x
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          v
+          
+            i
+          
+        
+        
+          
+            e
+          
+          
+            i
+          
+        
+        =
+        
+          
+            
+              d
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        
+          
+            e
+          
+          
+            i
+          
+        
+        =
+        
+          
+            
+              
+                x
+                ˙
+              
+            
+          
+          
+            i
+          
+        
+        
+          
+            e
+          
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {v} ={\frac {d\mathbf {x} }{dt}}=v^{i}\mathbf {e} _{i}={\frac {dx^{i}}{dt}}\mathbf {e} _{i}={\dot {x}}^{i}\mathbf {e} _{i}.}
+  
+
+Prędkość też zazwyczaj nie jest stała dlatego do opisu jej zmian wprowadza się przyspieszenie, czyli szybkość zmiany prędkości, jest zdefiniowana
+
+  
+    
+      
+        
+          a
+        
+        =
+        
+          
+            
+              d
+              
+                v
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        
+          
+            e
+          
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {a} ={\frac {d\mathbf {v} }{dt}}={\frac {d^{2}x^{i}}{dt^{2}}}\mathbf {e} _{i}.}
+  
+
+Zmiana wektora przyspieszenia może dotyczyć zmiany jego wartości lub kierunku bądź obydwu.
+
+
+=== Pojęcie siły i druga zasada dynamiki Newtona ===
+Druga zasada dynamiki Newtona wiąże zmianę masy i prędkości punktu materialnego z siłą. Jeżeli 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ jest masą 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ prędkością punktu materialnego, a 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ jest sumą wektorową sił przyłożonych do niego, to druga zasada dynamiki Newtona głosi, że szybkość zmiany pędu ciała jest równa sile działającej na to ciało, co można wyrazić wzorem:
+
+  
+    
+      
+        
+          F
+        
+        =
+        
+          
+            
+              d
+              
+                p
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          
+            
+              d
+              (
+              m
+              
+                v
+              
+              )
+            
+            
+              d
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {F} ={\frac {d\mathbf {p} }{dt}}={\frac {d(m\mathbf {v} )}{dt}}.}
+  
+
+Wartość 
+  
+    
+      
+        
+          p
+        
+        =
+        m
+        
+          v
+        
+      
+    
+    {\displaystyle \mathbf {p} =m\mathbf {v} }
+  
+ jest nazywana pędem i jest ważnym pojęciem mechaniki klasycznej.
+Kiedy masa 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ jest stała w czasie, druga zasada dynamiki Newtona może zostać zapisane w prostszej formie:
+
+  
+    
+      
+        
+          F
+        
+        =
+        m
+        
+          a
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {F} =m\mathbf {a} ,}
+  
+
+gdzie: 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ – przyspieszenie, zdefiniowane powyżej.
+Nie zawsze masa jest niezależna od czasu, np. masa rakiety na paliwo chemiczne zmniejsza się w miarę zużywania się paliwa. W takiej sytuacji powyższe równanie jest niepoprawne, zatem do opisu powinna być zastosowana pełna forma drugiego prawa Newtona.
+Druga zasada dynamiki Newtona wymaga podania siły 
+  
+    
+      
+        F
+        ,
+      
+    
+    {\displaystyle F,}
+  
+ która jest miarą oddziaływań naszego ciała z innymi ciałami. Np. typowa siła oporu ruchu piłki w powietrzu jest funkcją prędkości i wielkości piłki.
+
+  
+    
+      
+        
+          
+            F
+          
+          
+            
+              R
+            
+          
+        
+        =
+        −
+        λ
+        
+          v
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {F} _{\mathrm {R} }=-\lambda \mathbf {v} ,}
+  
+
+gdzie:
+
+  
+    
+      
+        λ
+      
+    
+    {\displaystyle \lambda }
+  
+ – dodatnia stała zależna od wielkości i kształtu ciała,
+minus oznacza, że siła ma przeciwny zwrot do zwrotu prędkości (jest zawsze siłą hamującą).
+Gdy tylko znane są siły działające na punkt materialny w postaci funkcji czasu, położenia i prędkości, możemy podstawić je do II prawa Newtona, otrzymując równanie różniczkowe, które jest nazwane dynamicznym równaniem ruchu
+
+  
+    
+      
+        m
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          F
+          
+            i
+          
+        
+        (
+        
+          x
+        
+        (
+        t
+        )
+        ,
+        t
+        )
+        .
+      
+    
+    {\displaystyle m{\frac {d^{2}x^{i}}{dt^{2}}}=F^{i}(\mathbf {x} (t),t).}
+  
+
+Dla przykładu, załóżmy, że tarcie jest jedyną siłą działającą na punkt materialny. Wtedy równanie ruchu przybiera postać:
+
+  
+    
+      
+        m
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        −
+        λ
+        
+          
+            
+              d
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle m{\frac {d^{2}x^{i}}{dt^{2}}}=-\lambda {\frac {dx^{i}}{dt}}.}
+  
+
+Równanie to można scałkować otrzymując
+
+  
+    
+      
+        
+          v
+        
+        =
+        
+          
+            v
+          
+          
+            0
+          
+        
+        
+          e
+          
+            −
+            λ
+            t
+            
+              /
+            
+            m
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {v} =\mathbf {v} _{0}e^{-\lambda t/m},}
+  
+
+gdzie 
+  
+    
+      
+        
+          v
+          
+            0
+          
+        
+      
+    
+    {\displaystyle v_{0}}
+  
+ jest prędkością początkową, czyli prędkością ciała w momencie początkowym 
+  
+    
+      
+        (
+        t
+        =
+        0
+        )
+        .
+      
+    
+    {\displaystyle (t=0).}
+  
+ Z równania tego wynika, że prędkość tego punktu materialnego zmniejsza się eksponencjalnie do zera w miarę upływu czasu. To wyrażenie może być następnie wycałkowane w celu otrzymania kinematycznego równania ruchu.
+
+
+==== Cząstka swobodna ====
+Przy braku działania sił zewnętrznych cząstka porusza się swobodnie. Jej ruch opisany jest prostym równaniem różniczkowym
+
+  
+    
+      
+        m
+        
+          
+            
+              
+                d
+                
+                  2
+                
+              
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle m{\frac {d^{2}x^{i}}{dt^{2}}}=0.}
+  
+
+Równanie to jest niezmiennicze przy transformacji układu współrzędnych
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        →
+        
+          
+            
+              x
+              ′
+            
+          
+          
+            i
+          
+        
+        =
+        
+          R
+          
+            j
+          
+          
+            i
+          
+        
+        
+          x
+          
+            j
+          
+        
+        +
+        
+          v
+          
+            i
+          
+        
+        t
+        +
+        
+          x
+          
+            0
+          
+          
+            i
+          
+        
+        ,
+      
+    
+    {\displaystyle x^{i}\to {x'}^{i}=R_{j}^{i}x^{j}+v^{i}t+x_{0}^{i},}
+  
+
+  
+    
+      
+        t
+        →
+        
+          t
+          ′
+        
+        =
+        t
+        +
+        
+          t
+          
+            0
+          
+        
+        .
+      
+    
+    {\displaystyle t\to t'=t+t_{0}.}
+  
+
+Właściwe transformacje Galileusza to:
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        →
+        
+          
+            
+              x
+              ′
+            
+          
+          
+            i
+          
+        
+        =
+        
+          x
+          
+            i
+          
+        
+        +
+        
+          v
+          
+            i
+          
+        
+        t
+        +
+        
+          x
+          
+            0
+          
+          
+            i
+          
+        
+        ,
+      
+    
+    {\displaystyle x^{i}\to {x'}^{i}=x^{i}+v^{i}t+x_{0}^{i},}
+  
+
+  
+    
+      
+        t
+        →
+        
+          t
+          ′
+        
+        =
+        t
+        +
+        
+          t
+          
+            0
+          
+        
+        ,
+      
+    
+    {\displaystyle t\to t'=t+t_{0},}
+  
+
+tworzących grupę Galileusza. Są one symetrią równania Newtona dla cząstki swobodnej.
+Grupa transformacji Galileusza parametryzowana jest przez 10 ciągłych parametrów. Zgodnie z twierdzeniem Noether, gdy grupa ta jest symetrią równań ruchu układu fizycznego odpowiada jej istnienie 10 odpowiednich praw zachowania, np. energii z translacji w czasie, pędu z translacji w przestrzeni, momentu pędu z symetrii obrotowej i pędu środka masy z transformacji właściwej generowanej przez v.
+Z transformacji Galileusza wynika prawo składania prędkości. Oznaczmy 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    x
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\vec {u}}={\frac {d{\vec {x}}}{dt}},}
+  
+ 
+  
+    
+      
+        
+          
+            
+              
+                u
+                ′
+              
+              →
+            
+          
+        
+        =
+        
+          
+            
+              d
+              
+                
+                  
+                    
+                      x
+                      ′
+                    
+                    →
+                  
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\vec {u'}}={\frac {d{\vec {x'}}}{dt}},}
+  
+ z właściwej transformacji Galileusza różniczkując, otrzymujemy
+
+  
+    
+      
+        
+          
+            
+              
+                u
+                ′
+              
+              →
+            
+          
+        
+        =
+        
+          
+            
+              u
+              →
+            
+          
+        
+        +
+        
+          
+            
+              v
+              →
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\vec {u'}}={\vec {u}}+{\vec {v}}.}
+  
+
+
+=== Formalizm Lagrange’a ===
+Równania ruchu Newtona można wyprowadzić w formalizmie Lagrange’a z zasady ekstremum funkcjonału nazywanego całką działania 
+  
+    
+      
+        S
+        [
+        
+          x
+        
+        (
+        t
+        )
+        ]
+        .
+      
+    
+    {\displaystyle S[\mathbf {x} (t)].}
+  
+ Funkcjonał ten zdefiniowany jest poprzez funkcje Lagrange’a
+
+  
+    
+      
+        L
+        (
+        
+          x
+        
+        ,
+        
+          
+            
+              
+                x
+              
+              ˙
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\displaystyle L(\mathbf {x} ,{\dot {\mathbf {x} }},t)}
+  
+
+  
+    
+      
+        S
+        [
+        
+          x
+        
+        (
+        t
+        )
+        ]
+        =
+        
+          ∫
+          
+            
+              t
+              
+                0
+              
+            
+          
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+        d
+        t
+        L
+        (
+        
+          x
+        
+        ,
+        
+          
+            
+              
+                x
+              
+              ˙
+            
+          
+        
+        ,
+        t
+        )
+        .
+      
+    
+    {\displaystyle S[\mathbf {x} (t)]=\int \limits _{t_{0}}^{t_{1}}dtL(\mathbf {x} ,{\dot {\mathbf {x} }},t).}
+  
+
+Warunek na ekstremum tego funkcjonału (δS=0) generuje równania Eulera-Lagrange’a
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              t
+            
+          
+        
+        
+          
+            
+              ∂
+              L
+            
+            
+              ∂
+              
+                
+                  
+                    
+                      x
+                      ˙
+                    
+                  
+                
+                
+                  i
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              ∂
+              L
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dt}}{\frac {\partial L}{\partial {\dot {x}}^{i}}}={\frac {\partial L}{\partial x^{i}}}.}
+  
+
+Na równania te można spojrzeć jak na równania Newtona, kojarząc pęd jako
+
+  
+    
+      
+        
+          p
+          
+            i
+          
+        
+        =
+        
+          
+            
+              ∂
+              L
+            
+            
+              ∂
+              
+                
+                  
+                    
+                      x
+                      ˙
+                    
+                  
+                
+                
+                  i
+                
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle p^{i}={\frac {\partial L}{\partial {\dot {x}}^{i}}},}
+  
+
+a siłę jako
+
+  
+    
+      
+        
+          F
+          
+            i
+          
+        
+        (
+        
+          x
+        
+        ,
+        
+          
+            
+              
+                x
+              
+              ˙
+            
+          
+        
+        ,
+        t
+        )
+        =
+        
+          
+            
+              ∂
+              L
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle F^{i}(\mathbf {x} ,{\dot {\mathbf {x} }},t)={\frac {\partial L}{\partial x^{i}}}.}
+  
+
+Otrzymamy dokładną postać równania Newtona gdy zdefiniujemy funkcje Lagrange’a jako
+
+  
+    
+      
+        L
+        (
+        
+          x
+        
+        ,
+        
+          
+            
+              
+                x
+              
+              ˙
+            
+          
+        
+        ,
+        t
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        m
+        
+          
+            
+              
+                x
+                ˙
+              
+            
+          
+          
+            2
+          
+        
+        −
+        U
+        (
+        
+          x
+        
+        ,
+        
+          
+            
+              
+                x
+              
+              ˙
+            
+          
+        
+        ,
+        t
+        )
+        .
+      
+    
+    {\displaystyle L(\mathbf {x} ,{\dot {\mathbf {x} }},t)={\frac {1}{2}}m\mathbf {\dot {x}} ^{2}-U(\mathbf {x} ,{\dot {\mathbf {x} }},t).}
+  
+
+Szczególną grupą są siły zachowawcze – mogą być one wyrażane jako gradient funkcji skalarnej, zwanej energią potencjalną i oznaczaną U:
+
+  
+    
+      
+        
+          F
+        
+        =
+        −
+        ∇
+        U
+      
+    
+    {\displaystyle \mathbf {F} =-\nabla U}
+  
+
+lub
+
+  
+    
+      
+        
+          
+            F
+          
+          
+            i
+          
+        
+        =
+        −
+        
+          
+            
+              ∂
+              
+                U
+              
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+            
+          
+        
+        =
+        −
+        
+          ∂
+          
+            i
+          
+        
+        U
+        .
+      
+    
+    {\displaystyle \mathbf {F} ^{i}=-{\frac {\partial {U}}{\partial x^{i}}}=-\partial _{i}U.}
+  
+
+Niezwykle ważną w zastosowaniach cechą formalizmu Lagrange’a jest niezmienniczość równania Eulera-Lagrange’a względem wyboru układu współrzędnych. Fakt ten nie jest prawdziwy dla sformułowania Newtona, którego forma 
+  
+    
+      
+        
+          F
+        
+        =
+        m
+        
+          a
+        
+      
+    
+    {\displaystyle \mathbf {F} =m\mathbf {a} }
+  
+ ma miejsce tylko we współrzędnych kartezjańskich. Niezmienniczość równania Eulera-Lagrange’a umożliwia dobór współrzędnych dopasowanych do symetrii badanego układu mechanicznego lub jego więzów. Redukuje się w ten sposób liczbę stopni swobody problemu lub eliminuje z obliczeń konieczność rozważania sił więzów.
+
+
+=== Energia układu fizycznego ===
+Siła F przyłożona do punktu materialnego, którego przesunięcie wynosi δr wykonuje pracę, praca wykonana przez siłę jest wielkością skalarną opisaną wzorem:
+
+  
+    
+      
+        δ
+        W
+        =
+        
+          F
+        
+        ⋅
+        δ
+        
+          r
+        
+        .
+      
+    
+    {\displaystyle \delta W=\mathbf {F} \cdot \delta \mathbf {r} .}
+  
+
+Zakładając, że masa punktu materialnego jest stała i δWtotal jest całkowitą pracą wykonaną na punkcie materialnym, którą otrzymujemy poprzez sumowanie prac wykonanych przez każdą siłę przyłożoną do punktu. Na podstawie drugiego prawa Newtona możemy pokazać, że
+
+  
+    
+      
+        δ
+        
+          W
+          
+            
+              t
+              o
+              t
+              a
+              l
+            
+          
+        
+        =
+        δ
+        T
+        ,
+      
+    
+    {\displaystyle \delta W_{\mathrm {total} }=\delta T,}
+  
+
+gdzie 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ jest energią kinetyczną. Dla punktu materialnego jest zdefiniowana:
+
+  
+    
+      
+        T
+        =
+        
+          
+            
+              m
+              
+                
+                  v
+                
+                
+                  2
+                
+              
+            
+            2
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        m
+        
+          
+            
+              
+                x
+                ˙
+              
+            
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle T={\frac {m\mathbf {v} ^{2}}{2}}={\frac {1}{2}}m\mathbf {\dot {x}} ^{2}.}
+  
+
+Dla obiektów złożonych z wielu punktów materialnych, energia kinetyczna jest sumą energii kinetycznych poszczególnych punktów materialnych. Zatem
+
+  
+    
+      
+        
+          F
+        
+        ⋅
+        δ
+        
+          r
+        
+        =
+        −
+        ∇
+        U
+        ⋅
+        δ
+        
+          r
+        
+        =
+        −
+        δ
+        U
+      
+    
+    {\displaystyle \mathbf {F} \cdot \delta \mathbf {r} =-\nabla U\cdot \delta \mathbf {r} =-\delta U}
+  
+
+  
+    
+      
+        ⇒
+        −
+        δ
+        U
+        =
+        δ
+        T
+      
+    
+    {\displaystyle \Rightarrow -\delta U=\delta T}
+  
+
+  
+    
+      
+        ⇒
+        δ
+        (
+        T
+        +
+        U
+        )
+        =
+        0.
+      
+    
+    {\displaystyle \Rightarrow \delta (T+U)=0.}
+  
+
+Ten rezultat znany jako zachowanie energii mechanicznej, a stan w którym całkowita energia
+
+  
+    
+      
+        E
+        =
+        T
+        +
+        U
+        =
+        
+          
+            1
+            2
+          
+        
+        m
+        
+          
+            
+              
+                x
+                ˙
+              
+            
+          
+          
+            2
+          
+        
+        +
+        U
+      
+    
+    {\displaystyle E=T+U={\frac {1}{2}}m\mathbf {\dot {x}} ^{2}+U}
+  
+
+jest stała w czasie nazywamy układem zachowawczym. Prawo to jest często używane, ponieważ wiele spotykanych sił to siły zachowawcze (ważnym wyjątkiem jest siła tarcia i oporu). Idea zachowania energii mechanicznej została rozszerzona na inne przypadki oddziaływań w wyniku czego utworzono pojęcie energia, a zasada zachowania energii jest najważniejszą zasadą zachowania w fizyce.
+
+
+=== Formalizm Hamiltona ===
+Energię układu fizycznego wyrazić można poprzez położenie i pęd {
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          p
+          
+            i
+          
+        
+      
+    
+    {\displaystyle x^{i},p^{i}}
+  
+}. Zbiór takich par definiuje przestrzeń fazową. Punkt w przestrzeni fazowej w pełni określa układ fizyczny, nazywamy go stanem układu w mechanice klasycznej (patrz stan kwantowy w mechanice kwantowej). Energię jako funkcję położenia i pędu nazywamy funkcją Hamiltona lub hamiltonianem. Definiujemy ją jako
+
+  
+    
+      
+        H
+        (
+        x
+        ,
+        p
+        ,
+        t
+        )
+        =
+        
+          ∑
+          
+            i
+          
+        
+        
+          p
+          
+            i
+          
+        
+        
+          v
+          
+            i
+          
+        
+        (
+        x
+        ,
+        p
+        ,
+        t
+        )
+        −
+        L
+        (
+        x
+        ,
+        v
+        (
+        x
+        ,
+        p
+        ,
+        t
+        )
+        ,
+        t
+        )
+        .
+      
+    
+    {\displaystyle H(x,p,t)=\sum _{i}p_{i}v^{i}(x,p,t)-L(x,v(x,p,t),t).}
+  
+
+Dla cząstek w polu potencjału 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+
+  
+    
+      
+        H
+        (
+        x
+        ,
+        p
+        ,
+        t
+        )
+        =
+        
+          
+            
+              p
+              
+                2
+              
+            
+            
+              2
+              m
+            
+          
+        
+        +
+        U
+        (
+        x
+        ,
+        t
+        )
+        .
+      
+    
+    {\displaystyle H(x,p,t)={\frac {p^{2}}{2m}}+U(x,t).}
+  
+
+Równania Lagrange’a można zastąpić układem dwóch równań (równania Hamiltona) pierwszego rzędu
+
+  
+    
+      
+        
+          
+            
+              d
+              
+                p
+                
+                  i
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        
+          
+            
+              ∂
+              H
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+            
+          
+        
+        =
+        −
+        
+          
+            
+              ∂
+              U
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+            
+          
+        
+        =
+        
+          F
+          
+            i
+          
+        
+      
+    
+    {\displaystyle {\frac {dp^{i}}{dt}}=-{\frac {\partial H}{\partial x^{i}}}=-{\frac {\partial U}{\partial x^{i}}}=F^{i}}
+  
+
+  
+    
+      
+        
+          
+            
+              d
+              
+                x
+                
+                  i
+                
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          
+            
+              ∂
+              H
+            
+            
+              ∂
+              
+                p
+                
+                  i
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {dx^{i}}{dt}}={\frac {\partial H}{\partial p^{i}}}.}
+  
+
+Definiując nawiasy Poissona
+
+  
+    
+      
+        [
+        A
+        ,
+        B
+        ]
+        =
+        
+          ∑
+          
+            i
+          
+        
+        
+          (
+          
+            
+              
+                
+                  ∂
+                  A
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      i
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  ∂
+                  B
+                
+                
+                  ∂
+                  
+                    p
+                    
+                      i
+                    
+                  
+                
+              
+            
+            −
+            
+              
+                
+                  ∂
+                  B
+                
+                
+                  ∂
+                  
+                    x
+                    
+                      i
+                    
+                  
+                
+              
+            
+            
+              
+                
+                  ∂
+                  A
+                
+                
+                  ∂
+                  
+                    p
+                    
+                      i
+                    
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle [A,B]=\sum _{i}\left({\frac {\partial A}{\partial x^{i}}}{\frac {\partial B}{\partial p^{i}}}-{\frac {\partial B}{\partial x^{i}}}{\frac {\partial A}{\partial p^{i}}}\right)}
+  
+
+zmianę dowolnej wielkości fizycznej 
+  
+    
+      
+        F
+        (
+        x
+        ,
+        p
+        )
+      
+    
+    {\displaystyle F(x,p)}
+  
+ z czasem można przedstawić jako
+
+  
+    
+      
+        
+          
+            
+              d
+              F
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        [
+        H
+        ,
+        F
+        ]
+        +
+        
+          
+            
+              ∂
+              F
+            
+            
+              ∂
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {dF}{dt}}=-[H,F]+{\frac {\partial F}{\partial t}}.}
+  
+
+Jeżeli wielkość fizyczna 
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+ jawnie nie zależy od czasu
+
+  
+    
+      
+        
+          
+            
+              ∂
+              F
+            
+            
+              ∂
+              t
+            
+          
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle {\frac {\partial F}{\partial t}}=0,}
+  
+
+to będzie zachowana (jest stałą ruchu), gdy
+
+  
+    
+      
+        
+          
+            
+              d
+              F
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        0
+        →
+        [
+        H
+        ,
+        F
+        ]
+        =
+        0
+      
+    
+    {\displaystyle {\frac {dF}{dt}}=0\to [H,F]=0}
+  
+
+będzie komutowała z hamiltonianem. Mówimy, że dwie wielkości A, B komutują, gdy 
+  
+    
+      
+        [
+        A
+        ,
+        B
+        ]
+        =
+        0.
+      
+    
+    {\displaystyle [A,B]=0.}
+  
+
+Przykładem wielkości niekomutujących jest pęd i położenie
+
+  
+    
+      
+        [
+        
+          x
+          
+            i
+          
+        
+        ,
+        
+          p
+          
+            j
+          
+        
+        ]
+        =
+        
+          δ
+          
+            i
+            j
+          
+        
+        .
+      
+    
+    {\displaystyle [x^{i},p^{j}]=\delta _{ij}.}
+  
+
+W mechanice kwantowej oznaczać to będzie niemożność jednoczesnego pomiaru tych wielkości (zasada nieoznaczoności).
+
+
+== Przypisy ==
+
+
+== Bibliografia ==
+Rosu, Haret C., „Classical Mechanics”. Physics Education. 1999. [arxiv.org: physics/9909035].
+
+
+== Linki zewnętrzne ==
+
+SzymonS. Charzyński SzymonS., KrzysztofK. Turzyński KrzysztofK., Mechanika analityczna, „Delta”, wrzesień 2016, ISSN 0137-3005 [dostęp 2021-10-04] .
+ Mechanics, classical (ang.), Routledge Encyclopedia of Philosophy, rep.routledge.com [dostęp 2023-05-08].

@@ -1,0 +1,906 @@
+Kompleksarv on reaalarvu üldistus, mida samuti nimetatakse arvuks: see on matemaatiline objekt kujul 
+  
+    
+      
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle a+ib}
+  
+, kus 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ ja 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ on reaalarvud ning 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ imaginaarühik, mille puhul postuleeritakse, et 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+. Kompleksarvude liitmine, lahutamine, korrutamine ja jagamine toimuvad seda omadust arvestades nii, nagu i oleks tavaline arv.  
+Kõikide kompleksarvude hulga tähiseks on 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+.
+Reaalarvu 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ nimetatakse kompleksarvu 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ reaalosaks ja reaalarvu 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ selle kompleksarvu imaginaarosaks (a = Re z, b = Im z). Iga kompleksarv 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ on määratud oma reaal- ja imaginaarosaga, see tähendab reaalarvude järjestatud paariga 
+  
+    
+      
+        (
+        a
+        ;
+        b
+        )
+      
+    
+    {\displaystyle (a;b)}
+  
+. Sellise paariga on määratud ka tasandi punkt. Seega on vastavus tasandi punktide või nende kohavektorite ja kompleksarvude vahel üksühene.
+Kaht kompleksarvu 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ ja 
+  
+    
+      
+        x
+        =
+        c
+        +
+        i
+        d
+      
+    
+    {\displaystyle x=c+id}
+  
+ nimetatakse võrdseteks, kui 
+  
+    
+      
+        a
+        =
+        c
+      
+    
+    {\displaystyle a=c}
+  
+ ja 
+  
+    
+      
+        b
+        =
+        d
+      
+    
+    {\displaystyle b=d}
+  
+.
+Reaalarve saab vaadelda kompleksarvudena, mille imaginaarosa on 0. Teisi kompleksarve nimetatakse imaginaararvudeks. Imaginaararvudeks on nimetatud ka kõiki kompleksarve või siis kompleksarve, mille reaalosa on 0 ja imaginaarosa ei ole 0 (puhtimaginaararve).     
+
+
+== Tehted kompleksarvudega ==
+
+
+=== Liitmine ja lahutamine ===
+Kahe kompleksarvu 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z_{1}=a+ib}
+  
+ ja 
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        c
+        +
+        i
+        d
+      
+    
+    {\displaystyle z_{2}=c+id}
+  
+ summaks nimetatakse kompleksarvu 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        +
+        
+          z
+          
+            2
+          
+        
+        =
+        (
+        a
+        +
+        c
+        )
+        +
+        i
+        (
+        b
+        +
+        d
+        )
+      
+    
+    {\displaystyle z_{1}+z_{2}=(a+c)+i(b+d)}
+  
+. 
+Näiteks: (2+3i) + (1−5i) = 2+1+(3–5)i = 3–2i
+Analoogiliselt liitmisega toimub kompleksarvude lahutamine.
+
+
+=== Korrutamine ===
+Kahe kompleksarvu 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z_{1}=a+ib}
+  
+ ja 
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        c
+        +
+        i
+        d
+      
+    
+    {\displaystyle z_{2}=c+id}
+  
+ korrutis on kompleksarv 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        
+          z
+          
+            2
+          
+        
+        =
+        (
+        a
+        c
+        −
+        b
+        d
+        )
+        +
+        i
+        (
+        a
+        d
+        +
+        b
+        c
+        )
+      
+    
+    {\displaystyle z_{1}z_{2}=(ac-bd)+i(ad+bc)}
+  
+. 
+Näiteks:
+(2+3i)(1−5i) = 2·1+2·(−5i)+3i·1+3i·(−5i) = 2−10i+3i−15i² = 2−7i−15·(−1) = 17−7i.
+
+
+=== Kaaskompleksi võtmine ===
+Kompleksarvu 
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ kaaskompleksarvuks nimetatakse kompleksarvu 
+  
+    
+      
+        
+          z
+          
+            ∗
+          
+        
+        =
+        a
+        −
+        i
+        b
+        .
+      
+    
+    {\displaystyle z^{*}=a-ib.}
+  
+ 
+
+
+=== Moodul ===
+Kompleksarvu  
+  
+    
+      
+        z
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z=a+ib}
+  
+ mooduliks nimetatakse suurust 
+  
+    
+      
+        
+          |
+        
+        z
+        
+          |
+        
+        =
+        
+          
+            z
+            
+              z
+              
+                ∗
+              
+            
+          
+        
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle |z|={\sqrt {zz^{*}}}={\sqrt {a^{2}+b^{2}}}.}
+  
+
+
+=== Jagamine ===
+Kompleksarvude jagamine defineeritakse korrutamise kaudu. Kahe kompleksarvu 
+  
+    
+      
+        
+          z
+          
+            1
+          
+        
+        =
+        a
+        +
+        i
+        b
+      
+    
+    {\displaystyle z_{1}=a+ib}
+  
+ ja 
+  
+    
+      
+        
+          z
+          
+            2
+          
+        
+        =
+        c
+        +
+        i
+        d
+      
+    
+    {\displaystyle z_{2}=c+id}
+  
+ jagatis on 
+  
+    
+      
+        
+          
+            
+              z
+              
+                1
+              
+            
+            
+              z
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                z
+                
+                  1
+                
+              
+              
+                z
+                
+                  2
+                
+                
+                  ∗
+                
+              
+            
+            
+              
+                |
+              
+              
+                z
+                
+                  2
+                
+              
+              
+                
+                  |
+                
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              (
+              a
+              c
+              +
+              b
+              d
+              )
+              +
+              i
+              (
+              b
+              c
+              −
+              a
+              d
+              )
+            
+            
+              
+                c
+                
+                  2
+                
+              
+              +
+              
+                d
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {z_{1}}{z_{2}}}={\frac {z_{1}z_{2}^{*}}{|z_{2}|^{2}}}={\frac {(ac+bd)+i(bc-ad)}{c^{2}+d^{2}}}.}
+  
+ 
+Jagatis on defineeritud juhul, kui c või d on nullist erinev.
+
+
+== Kompleksarvude korpus ==
+Koos aritmeetiliste tehetega "+" (liitmine) ja "·" (korrutamine) on kompleksarvude hulk 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+ korpus (kompleksarvude korpus), mis sisaldab reaalarvude korpust 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+.
+Kompleksarvude korpus on reaalarvude korpuse algebraline laiend, mis saadakse, kui adjungeerida reaalarvude korpusele polünoomi x²+1 juur i.
+Kompleksarvude korpus on algebraliselt kinnine: mis tahes polünoom koefitsientidega kompleksarvude korpusest lahutub lineaarteguriteks. Mis tahes polünoomil astmega n≥1 on kompleksarvude korpuses vähemalt üks juur (d'Alemberti-Gaussi teoreem).
+
+
+== Ajalugu ==
+Teatud ruutvõrrandite lahendamise võimatust märkis juba Muḩammad ibn Mūsā al-Khwārizmī, kes kirjutas sellest raamatus "Khisāb al-jabr wa-l-muqābalah" (umbes 825).
+Imaginaarseid suurusi käsitles arvatavasti esimesena Gerolamo Cardano võrrandite lahendamist käsitleva teose "Ars magna, sive de regulis algebraicis" (1545) 37. peatükis. Ta ei mõistnud täielikult nende omadusi. Kuupvõrrandeid uurides lahendas ta järgmise ülesande: leida kaks arvu, mille summa on 10 ja mille korrutis on 40. Ülesanne taandub ruutvõrrandile 
+  
+    
+      
+        x
+        (
+        10
+        −
+        x
+        )
+        =
+        40
+      
+    
+    {\displaystyle x(10-x)=40}
+  
+ ehk 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        −
+        10
+        x
+        +
+        40
+        =
+        0
+      
+    
+    {\displaystyle x^{2}-10x+40=0}
+  
+. Ta märgib, et sel võrrandil lahendeid pole, kuid võtab siis ruutvõrrandi üldlahendi avaldise 
+  
+    
+      
+        
+          x
+          
+            1
+            ,
+            2
+          
+        
+        =
+        −
+        
+          
+            p
+            2
+          
+        
+        ±
+        
+          
+            
+              
+                
+                  p
+                  
+                    2
+                  
+                
+                4
+              
+            
+            −
+            q
+          
+        
+      
+    
+    {\displaystyle x_{1,2}=-{\frac {p}{2}}\pm {\sqrt {{\frac {p^{2}}{4}}-q}}}
+  
+ ning võtab p väärtuseks −10 ja q väärtuseks 40. Kui oleks võimalik anda tähendus avaldisele  
+  
+    
+      
+        
+          
+            25
+            −
+            40
+          
+        
+      
+    
+    {\displaystyle {\sqrt {25-40}}}
+  
+ ehk 
+  
+    
+      
+        
+          
+            −
+            15
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-15}}}
+  
+ ning tohiks sellega arvutada tavaliste reeglite järgi, siis oleksid lahenditeks  5 + √−15 ja 5 − √−15. "Kui keegi ütleb: jaga 10 kaheks osaks, mille korrutis [...] on 40, siis on selge, et see juhtum on võimatu. Sellegipoolest toimime järgmiselt: jagame 10 kaheks võrdseks osaks, millest kumbki on 5.  Need võtame ruutu, saame 25. Kui tahad, lahuta 40 äsja saadud 25-st [...]; nii saadud jääk on −15, selle ruutjuurt liidetuna 5-le või lahutatuna 5-st annab mõlemad osad korrutisega 40. Need on niisiis 5 + √-15 ja 5 – √-15." Cardano nimetas seda arutluskäiku sofistlikuks, sest ta ei näinud sellel tähendust, kuid sellegipoolest tegi ta arvutuse, mis näitas, et nende korrutis on 40. Ta ei pidanud negatiivsete arvude ruutjuuri kasutamiskõlblikeks, vaid sofistlikeks suurusteks (quantitas sophistica) ning leidis, et saadud vastus on "sama peen kui kasutu". 
+Insener Rafael Bombelli, kes Kirikuriigi teenistuses soid kuivendas, oli oma üldarusaadavas õpikus "L'algebra, parte maggiore dell'aritmetica" (1572) esimene, kes pidas niisuguseid arve kasulikuks. Ta rakendas neid kuupvõrrandite lahendamiseks "taandumatutel juhtumitel" (casus irreducibilis), kui reaalarvulised lahendid avalduvad imaginaarsete suuruste kuupjuurtena ning kuupvõrrandil on kolm erinevat reaalarvulist lahendit. Ta esitas ka lihtsamad reeglid imaginaarsete suurustega arvutamiseks. Bombelli uuris muu hulgas võrrandit x³=15x+4. Oli teada, et 4 on selle võrrandi lahend, Cardano meetod aga andis lahendiks 
+  
+    
+      
+        
+          
+            
+              2
+              +
+              
+                
+                  −
+                  121
+                
+              
+            
+            
+              3
+            
+          
+        
+        +
+        
+          
+            
+              2
+              −
+              
+                
+                  −
+                  121
+                
+              
+            
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt[{3}]{2+{\sqrt {-121}}}}+{\sqrt[{3}]{2-{\sqrt {-121}}}}}
+  
+. Bombelli püüdis nende avaldistega arvutada, ning leidis, et (2 + √-1)³ = 2 + 11·√-1 = 2 + √-121, seega lahend x = 2 + √-1 + 2 – √-1 = 4. Bombelli kasutas uut laadi juurte väljendamiseks termineid "miinuse pluss" (più di meno; s.o +i) ja "miinuse miinus" (meno di meno; s.o -i). Ta esitas nende kohta arvutusreeglid, mis on analoogsed reeglitega negatiivsete arvudega arvutamiseks, mis ise olid tollal kahtlased: 
+
+"pluss" korda "miinuse pluss" on "miinuse pluss"  (+1·+i = +i)
+"miinus" korda "miinuse pluss" on "miinuse miinus"  (−1·+i = -i)
+"pluss" korda "miinuse miinus" on "miinuse miinus"  (+1·-i = -i)
+"miinus" korda "miinuse miinus" on "miinuse pluss"  (−1·-i = +i)
+"miinuse pluss" korda "miinuse pluss" on "miinus"  (+i·+i = -1)
+"miinuse pluss" korda "miinuse miinus" on "pluss"  (+i·-i = +1)
+"miinuse miinus" korda "miinuse pluss" on "pluss"  (-i·+i = +1)
+"miinuse miinus" korda "miinuse miinus" on "miinus"  (-i·-i = -1)
+17. sajandi keskpaigas hakati ruutjuuri negatiivsetest arvudest ning üldisemalt kõiki suvalisest reaalarvust 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+ ja positiivsest arvust 
+  
+    
+      
+        β
+      
+    
+    {\displaystyle \beta }
+  
+ kokku pandud arve  
+  
+    
+      
+        α
+        +
+        
+          
+            −
+            β
+          
+        
+      
+    
+    {\displaystyle \alpha +{\sqrt {-\beta }}}
+  
+ või 
+  
+    
+      
+        α
+        −
+        
+          
+            −
+            β
+          
+        
+      
+    
+    {\displaystyle \alpha -{\sqrt {-\beta }}}
+  
+
+nimetama imaginaararvudeks (st "kujuteldavateks" arvudeks) ning "tavalisi" arve reaalarvudeks (st "tegelikeks" arvudeks). Selline vastandus esineb arvatavasti esimest korda René Descartesi 1637. aastal ilmunud raamatus "La Géométrie".  Descartes oletas, et n-astme võrrandil on alati n lahendit (kui pidada mitmekordseid lahendeid mitmeks lahendiks; algebra põhiteoreem). Osa neist lahendeist on ainult "kujuteldavad". 
+16. ja 17. sajandil hakati kompleksarve, mille imaginaarosa ei ole 0, nimetama imaginaarseteks avaldisteks.  Paljud 17. sajandi teadlased pidasid imaginaarsete suuruste algebralist ja geomeetrilist olemust ebaselgeks või koguni saladuslikuks ja müstiliseks. Isaac Newton ei pidanud imaginaarseid suurusi arvudeks. Gottfried Wilhelm Leibniz leidis: "Imaginaararvud on jumaliku vaimu kaunis ja imeline varjupaik, analüüsi ime, ideaalse maailma monstrum, peaaegu olemise amfiib mitteolemisega." Leibnizile avaldas sügavat muljet võrdus 
+  
+    
+      
+        
+          
+            1
+            +
+            
+              
+                −
+                3
+              
+            
+          
+        
+        +
+        
+          
+            1
+            −
+            
+              
+                −
+                3
+              
+            
+          
+        
+        =
+        
+          
+            6
+          
+        
+      
+    
+    {\displaystyle {\sqrt {1+{\sqrt {-3}}}}+{\sqrt {1-{\sqrt {-3}}}}={\sqrt {6}}}
+  
+, mille ta leidis. 2. veebruaril 1702 kirjutas ta oma avastusest Pierre Varignonile ning kirjutas: "Kui ma juhtisin sellele kadunud härra H... tähelepanu, vastas ta mulle, et selles on midagi meile mõistetamatut." 
+Abraham de Moivre ja Roger Cotes lahendasid põhijoontes antud arvust n-astme juure võtmise probleemi.  Moivre avastas ka valemi
+
+cos (nα) + i sin (nα) = (cos α + i sin α)n (Moivre'i valem).
+Imaginaarühiku i kui uue arvu kasutuselevõtt omistatakse Leonhard Eulerile. Temalt pärineb ka selle sümbol i. Ta ei kasutanud seda järjekindlalt; see tähistus sai üldlevinuks tänu Gaussile. Et imaginaararvudega arvutamine oli näinud pelga mänguna, oldi üllatunud, et see mäng andis väga sageli väärtuslikke tulemusi või võimaldas anda juba teada olevatele tulemustele rahuldavama kuju.  Teoses "Introductio in analysin infinitorum" käsitles Euler teatud märkimisväärseid võrdusi, mis sisaldavad ainult reaalarve ning osutuvad eranditeta paikapidavateks, mida aga imaginaararve kasutamata on raske tõestada. 
+Astmeridasid kasutades jõudis Euler võrrandini
+
+eix = cos x + i sin x.
+Jean le Rond d'Alembert väitis 1747 sisuliselt kompleksarvude korpuse algebralist kinnisust, Euler rääkis sellest 1751. Esimesena tõestas selle rangelt Carl Friedrich Gauss.
+Imaginaararvudega hakati üha rohkem tegelema. Siiski peeti seda valdkonda veel salapäraseks, mõistatuslikuks ja ebarahuldavaks. Alles norra-taani maamõõtja Caspar Wessel sillutas 1797 ilmunud traktaadis "Essai sur la représentation analytique de la direction" teed nende arvude mõistmisele, esitades kompleksarvude ning nendega sooritatavate tehete täieliku geomeetrilise tõlgenduse. Ent see töö, mille ta esitas Taani Kuninglikule Teaduste Akadeemiale, jäi algul tähelepanuta. Sama juhtus teiste matemaatikute töödega, nii et asjaga tuli mitu korda otsast alustada. Aastatel 1806 ja 1814 avaldas Jean-Robert Argand tööd, milles ta põhiliselt kordas sõltumatult Wesseli järeldusi. Tema geomeetrilist esitust nimetatakse Argandi diagrammiks. 
+Augustin Louis Cauchy defineeris 1821 ilmunud õpikus "Cours d'analyse" esimesena kompleksmuutuja funktsiooni ja tõestas palju olulisi kompleksmuutuja funktsiooniteooria teoreeme. 
+Alles siis, kui Carl Friedrich Gauß aastal 1831 ilmunud artiklis imaginaararvude geomeetrilisest tõlgendusest kirjutas, arvatavasti teadmata eelkäijate töödest, sai see üldtuttavaks. Gauß võttis selles artiklis kasutusele termini "kompleksarv". 
+Puhtaritmeetilise teooria, mille järgi kompleksarvud on reaalarvude paarid, esitas esimesena William Rowan Hamilton 1837. Ta võttis kasutusele ka kompleksarvude üldistuse kvaternioonid, mille korrutamine ei ole kommutatiivne. 19. sajandi lõpus näidati, et arvu mõiste laiendamine väljapoole kompleksarvude valda on võimalik ainult juhul, kui loobutakse tehete mõnest tavalisest omadusest (tavaliselt kommutatiivsusest).
+
+
+== Vaata ka ==
+Hüperkompleksarv
+Kaksikarv
+Duaalarv
+Cayley arv
+Gaussi arv
+Eisensteini arv
+
+
+== Märkused ==
+
+
+== Välislingid ==
+Citizendiumi artikkel
+Jutta Gerhard. Das Imaginäre wird real. (kompleksarvude ajaloost)

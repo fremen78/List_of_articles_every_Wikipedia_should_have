@@ -1,0 +1,212 @@
+Basa program nyaéta basa jieunan nu bisa dipaké keur ngadalikeun paripolah hiji mesin, utamana komputer. Basa program, saperti basa alami, dihartikeun ku aturan sintaksis jeung semantik keur ngajelaskeun struktur jeung hartina. Loba basa program nu mibanda sababaraha wanda dina nuliskeun sintaks jeung semantik; sababaraha basa program ngan dihartikeun ku sawanda dina cara maké sacara resmi.
+Basa program dipaké keur mantuan komunikasi dina raraga ngokolakeun pangaweruh tur nembongkeun algoritma kalawan présisi. Sababaraha pangarang méré watesan nu leuwih heureut yén "basa program" nyaéta basa nu bisa dipaké keur ngagambarkeun sakabeh algoritma nu mungkin; kadangkala watesan "basa komputer" dipaké keur basa jieunan nu leuwih heureut.
+Rébuan basa program nu béda-beda geus dijieun, tur méh unggal taun ngahasilkeun basa program nu anyar.
+
+
+== Harti ==
+Sifat penting keur nangtukeun pilihan basa program nyaéta:
+
+Fungsi:  Basa program nyaéta basa nu paké keur nulis program komputer, kaasup pintonan komputer dina sababaraha komputasi atawa algoritma sarta bisa ogé salaku alat kadali luar saperti printer, robot, jeung nu séjénna.
+Target:  Basa program béda jeung basa alami yén dina basa alami ngan dipaké keur antar manusa, sedengkeun dina basa program ngawenangkeun jalma keur nyieun parentah kana mesin. Sababaraha basa program dupake keur alat ngadalikeun nu séjénna.  Contona program PostScript remen dijieun ku basa program séjénna keur ngadalikeun printer atawa tampila.
+Konsep: Basa program mibanda sababaraha kompnen keur ngartikeun tur ngokolakeun struktur data atawa ngadalikeun kaputusan aliran.
+Kakuatan éksprési:  Téori komputasi misahkeun basa ku itungan nu bisa ditembongkeun (tempo hirarki Chomsky). Sakabéh basa Turing lengkep bisa dipaké kana runtuyan algoritma nu sarua. ANSI/ISO SQL jeung Charity conto basa Turing teu lengkep nu ilahar disebut basa program.
+Basa non-komputasi, saperti basa markup siga HTML atawa formal grammar siga BNF, ilaharna teu disebut basa program. Ilaharna basa program ditambahkeun kana basa non-itungan ieu.
+
+
+== Kaperluan ==
+Kaperluan utama basa program nyaéta keur méré paréntah kana komputer. Saperti, basa program béda jeung éksprési jalma nu mana merlukeun présisi nu luhur tur lengkep. Waktu ngagunakan hiji basa alam keur ngobrol jeung jalma séjén, pangarang jeung nu ngobrol bisa bingung tur nyieun saeutik kasalahan, sarta duana masih bisa ngarti. béda jeung komputer nu sarua jeung naon anu diparéntahkeun ka manéhna, teu bisa ngarti kana kode nu nyieun program "nu dimaksud" keur nulis. Kombinasi harti basa, program, jeung asupan program kudu sacara husus ngartikeun paripolah luar nu bakal kajadian lamun éta program dijalankeun.
+Loba basa geus dirancang ti anggalna, dirobah pikeun minuhan kabutuhan anyar, digabungkeun jeung basa séjén, sarta pamustunganana ditinggalkeun. Sanaos aya usaha pikeun ngararancang hiji basa komputer "universal" anu tiasa dianggo pikeun sadaya tujuan, aranjeunna sadayana gagal ditampi dina peran ieu.  Kabutuhan pikeun rupa-rupa basa komputer bijil tina rupa-rupa basa kontéks anu digunakeunana :
+
+Program dibasajankeun skrip leutik anu ditulis ku individu anu mikaresep dugi ka sistem ageung anu ditulis ku ratusan programer.
+Kaahlian programmer bénten-bénten ti kawit anu ngabaladah kéneh anu ngutamikeun kasederhanaan tina sagalarupina, dugika saurang  pakar anu ngaraos nyaman ku kompleksitas anu kawilang luhur.
+Program kedah nyaimbangkeun kacepetan, ukuran, sareng kasederhanaan dina ieu sistem ti kawit mikrokontroler dugi ka  superkomputer.
+Program tiasa diserat sakali sareng henteu dirobih salami sababaraha generasi, atanapi tiasa ngrandapan modifikasi anu ampir konstan.
+Panungtung, programmer panginten ngan benten dina pangaresepna: aranjeuna tiasa waé tos lumrah ngabahas masalah sareng  ngalaksanakeunna dina basa anu tos ditangtoskeun.
+
+One common trend in the development of programming languages has been to add more ability to solve problems using a higher level of abstraction.  The éarliest programming languages were tied very closely to the underlying hardware of the computer.  As new programming languages have developed, féatures have been added that let programmers express idéas that are more removed from simple translation into underlying hardware instructions.  Because programmers are less tied to the needs of the computer, their programs can do more computing with less effort from the programmer.  This lets them write more programs in the same amount of time.
+Natural language processors have been proposed as a way to eliminate the need for a specialized language for programming. However, this goal remains distant and its benefits are open to debate. Edsger Dijkstra took the position that the use of a formal language is essential to prevent the introduction of méaningless constructs, and dismissed natural language programming as "foolish." Alan Perlis was similarly dismissive of the idéa.
+
+
+== Elements ==
+
+
+=== Syntax ===
+
+A programming language's surface form is known as its syntax.  Most programming languages are purely textual; they use sequences of text including words, numbers, and punctuation, much like written natural languages.  On the other hand, there are some programming languages which are more graphical in nature, using spatial relationships between symbols to specify a program.
+The syntax of a language describes the possible combinations of symbols that form a syntactically correct program.  The méaning given to a combination of symbols is handled by semantics.  Since most languages are textual, this article discusses textual syntax.
+Programming language syntax is usually defined using a combination of regular expressions (for lexical structure) and Backus-Naur Form (for grammatical structure).  Below is a simple grammar, based on Lisp:
+
+expression ::= atom   | list
+atom       ::= number | symbol    
+number     ::= [+-]?['0'-'9']+
+symbol     ::= ['A'-'Z''a'-'z'].*
+list       ::= '(' expression* ')'
+
+This grammar specifies the following:
+
+an expression is either an atom or a list;
+an atom is either a number or a symbol;
+a number is an unbroken sequence of one or more decimal digits, optionally preceded by a plus or minus sign;
+a symbol is a letter followed by zero or more of any characters (excluding whitespace); and
+a list is a matched pair of parentheses, with zero or more expressions inside it.
+The following are examples of well-formed token sequences in this grammar: '12345', '()', '(a b c232 (1))'
+Not all syntactically correct programs are semantically correct.  Many syntactically correct programs are nonetheless ill-formed, per the language's rules; and may (depending on the language specification and the soundness of the implementation) result in an error on translation or execution.  In some cases, such programs may exhibit undefined behavior.  Even when a program is well-defined within a language, it may still have a méaning that is not intended by the person who wrote it.
+Using natural language as an example, it may not be possible to assign a méaning to a grammatically correct sentence or the sentence may be false:
+
+"Colorless green ideas sleep furiously." is grammatically well-formed but has no generally accepted méaning.
+"John is a married bachelor." is grammatically well-formed but expresses a méaning that cannot be true.
+The following C language fragment is syntactically correct, but performs an operation that is not semantically defined (because p is a null pointer, the operations p->réal and p->im have no méaning):
+
+complex *p = NULL;
+complex abs_p = sqrt (p->réal * p->réal + p->im * p->im);
+
+The grammar needed to specify a programming language can be classified by its position in the Chomsky hierarchy.  The syntax of most programming languages can be specified using a Type-2 grammar, i.e., they are context-free grammars.
+
+
+=== Type system ===
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal Type system.
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal Type safety.
+A type system defines how a programming language classifies values and expressions into types, how it can manipulate those types and how they interact.  This generally includes a description of the data structures that can be constructed in the language.  The design and study of type systems using formal mathematics is known as type theory.
+Internally, all data in modérn digital computers are stored simply as zeros or ones (binary).
+
+
+==== Typed versus untyped languages ====
+A language is typed if operations defined for one data type cannot be performed on values of another data type. For example, "this text between the quotes" is a string. In most programming languages, dividing a number by a string has no méaning. Most modérn programming languages will therefore reject any program attempting to perform such an operation.  In some languages, the méaningless operation will be detected when the program is compiled ("static" type checking), and rejected by the compiler, while in others, it will be detected when the program is run ("dynamic" type checking), resulting in a runtime exception.
+A special case of typed languages are the single-type languages.  These are often scripting or markup languages, such as Rexx or SGML, and have only one data type — most commonly character strings which are used for both symbolic and numeric data.
+In contrast, an untyped language, such as most assembly languages, allows any operation to be performed on any data, which are generally considered to be sequences of bits of various lengths.  High-level languages which are untyped include BCPL and some varieties of Forth.
+In practice, while few languages are considered typed from the point of view of type theory (verifying or rejecting all operations), most modérn languages offer a degree of typing.  Many production languages provide méans to bypass or subvert the type system.
+
+
+==== Static versus dynamic typing ====
+In static typing all expressions have their types determined prior to the program being run (typically at compile-time).  For example, 1 and (2+2) are integer expressions; they cannot be passed to a function that expects a string, or stored in a variable that is defined to hold dates.
+Statically-typed languages can be manifestly typed or type-inferred.  In the first case, the programmer must explicitly write types at certain textual positions (for example, at variable declarations).  In the second case, the compiler infers the types of expressions and declarations based on context.  Most mainstréam statically-typed languages, such as C++ and Java, are manifestly typed.  Complete type inference has traditionally been associated with less mainstréam languages, such as Haskell and ML.  However, many manifestly typed languages support partial type inference; for example, Java and C# both infer types in certain limited cases.
+Dynamic typing, also called latent typing, determines the type-safety of operations at runtime; in other words, types are associated with runtime values rather than textual expressions.  As with type-inferred languages, dynamically typed languages do not require the programmer to write explicit type annotations on expressions.  Among other things, this may permit a single variable to refer to values of different types at different points in the program execution.  However, type errors cannot be automatically detected until a piece of code is actually executed, making debugging more difficult. Ruby, Lisp, JavaScript,  and Python are dynamically typed.
+
+
+==== Weak and strong typing ====
+Weak typing allows a value of one type to be tréated as another, for example tréating a string as a number.  This can occasionally be useful, but it can also allow some kinds of program faults to go undetected at compile time.
+Strong typing prevents the above.  Attempting to mix types raises an error.  Strongly-typed languages are often termed type-safe or safe.  Type safety can prevent particular kinds of program faults occurring (because constructs containing them are flagged at compile time).
+An alternative definition for "weakly typed" refers to languages, such as Perl, JavaScript, and C++ which permit a large number of implicit type conversions; Perl in particular can be characterized as a dynamically typed programming language in which type checking can take place at runtime. See type system.  This capability is often useful, but occasionally dangerous; as it would permit operations whose objects can change type on demand.
+Strong and static are generally considered orthogonal concepts, but usage in the literature differs.  Some use the term strongly typed to méan strongly, statically typed, or, even more confusingly, to méan simply statically typed.  Thus C has been called both strongly typed and wéakly, statically typed..
+
+
+=== Execution semantics ===
+Once data has been specified, the machine must be instructed to perform operations on the data.  The execution semantics of a language defines how and when the various constructs of a language should produce a program behavior.
+For example, the semantics may define the strategy by which expressions are evaluated to values, or the manner in which control structures conditionally execute statements.
+
+
+=== Core library ===
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal Standard library.
+Most programming languages have an associated core library (sometimes known as the 'Standard library', especially if it is included as part of the published language standard), which is conventionally made available by all implementations of the language. Core libraries typically include definitions for commonly used algorithms, data structures, and mechanisms for input and output.
+A language's core library is often tréated as part of the language by its users, although the designers may have tréated it as a separate entity.  Many language specifications define a core that must be made available in all implementations, and in the case of standardized languages this core library may be required.  The line between a language and its core library therefore differs from language to language.  Indeed, some languages are designed so that the méanings of certain syntactic constructs cannot even be described without referring to the core library.  For example, in Java, a string literal is defined as an instance of the java.lang.String class; similarly, in Smalltalk, an anonymous function expression (a "block") constructs an instance of the library's BlockContext class.  Conversely, Scheme contains multiple coherent subsets that suffice to construct the rest of the language as library macros, and so the language designers do not even bother to say which portions of the language must be implemented as language constructs, and which must be implemented as parts of a library.
+
+
+== Practice ==
+A language's designers and users must construct a number of artifacts that govern and enable the practice of programming.  The most important of these artifacts are the language specification and implementation.
+
+
+=== Specification ===
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal Programming language specification.
+The specification of a programming language is intended to provide a definition that language users and implementors can use to determine the behavior of a program, given its source code.
+A programming language specification can take several forms, including the following:
+
+An explicit definition of the syntax and semantics of the language.  While  syntax is commonly specified using a formal grammar, semantic definitions may be written in natural language (e.g., the C language), or a formal semantics (e.g., the Standard ML  and Scheme specifications).
+A description of the behavior of a translator for the language (e.g., the C++ and Fortran specifications).  The syntax and semantics of the language have to be inferred from this description, which may be written in natural or a formal language.
+A reference or model implementation, sometimes written in the language being specified (e.g., Prolog or ANSI REXX).  The syntax and semantics of the language are explicit in the behavior of the reference implementation.
+
+
+=== Implementation ===
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal Programming language implementation.
+An implementation of a programming language provides a way to execute that program on one or more configurations of hardware and software.  There are, broadly, two approaches to programming language implementation: compilation and interpretation.  It is generally possible to implement a language using either technique.
+The output of a compiler may be executed by hardware or a program called an interpreter.  In some implementations that maké use of the interpreter approach there is no distinct boundary between compiling and interpreting.  For instance, some implementations of the BASIC programming language compile and then execute the source a line at a time.
+Programs that are executed directly on the hardware usually run several orders of magnitude faster than those that are interpreted in software.
+One technique for improving the performance of interpreted programs is just-in-time compilation.  Here the virtual machine monitors which sequences of bytecode are frequently executed and translates them to machine code for direct execution on the hardware.
+
+
+== History ==
+
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal History of programming languages.
+
+
+=== Early developments ===
+The first programming languages predate the modérn computer. The 19th century had "programmable" looms and player piano scrolls which implemented what are today recognized as examples of domain-specific programming languages.  By the beginning of the twentieth century, punch cards encoded data and directed mechanical processing.  In the 1930s and 1940s, the formalisms of Alonzo Church's lambda calculus and Alan Turing's Turing machines provided mathematical abstractions for expressing algorithms; the lambda calculus remains influential in language design.
+In the 1940s, the first electrically powered digital computers were créated. The computers of the éarly 1950s, notably the UNIVAC I and the IBM 701 used machine language programs. First generation machine language programming was quickly superseded by a second generation of programming languages known as Assembly languages.  Later in the 1950s, assembly language programming, which had evolved to include the use of macro instructions, was followed by the development of three higher-level programming languages: FORTRAN, LISP, and COBOL. Updated versions of all of these are still in general use, and importantly, éach has strongly influenced the development of later languages.  At the end of the 1950s, the language formalized as Algol 60 was introduced, and most later programming languages are, in many respects, descendants of Algol. The format and use of the éarly programming languages was héavily influenced by the constraints of the interface.
+
+
+=== Refinement ===
+The period from the 1960s to the late 1970s brought the development of the major language paradigms now in use, though many aspects were refinements of idéas in the very first Third-generation programming languages:
+
+APL introduced array programming and influenced functional programming.
+PL/I (NPL) was designed in the éarly 1960s to incorporate the best idéas from FORTRAN and COBOL.
+In the 1960s, Simula was the first language designed to support object-oriented programming; in the mid-1970s, Smalltalk followed with the first "purely" object-oriented language.
+C was developed between 1969 and 1973 as a systems programming language, and remains popular.
+Prolog, designed in 1972, was the first logic programming language.
+In 1978, ML built a polymorphic type system on top of Lisp, pioneering statically typed functional programming languages.
+éach of these languages spawned an entire family of descendants, and most modérn languages count at léast one of them in their ancestry.
+The 1960s and 1970s also saw considerable debate over the merits of structured programming, and whether programming languages should be designed to support it. Edsger Dijkstra, in a famous 1968 letter published in the Communications of the ACM, argued that GOTO statements should be eliminated from all "higher level" programming languages.
+The 1960s and 1970s also saw expansion of techniques that reduced the footprint of a program as well as improved productivity of the programmer and user. The card deck for an éarly 4GL was a lot smaller for the same functionality expressed in a 3GL deck.
+
+
+=== Consolidation and growth ===
+The 1980s were yéars of relative consolidation. C++ combined object-oriented and systems programming.  The United States government standardized Ada, a systems programming language intended for use by defense contractors. In Japan and elsewhere, vast sums were spent investigating so-called "fifth generation" languages that incorporated logic programming constructs. The functional languages community moved to standardize ML and Lisp.  Rather than inventing new paradigms, all of these movements elaborated upon the idéas invented in the previous decade.
+One important trend in language design during the 1980s was an incréased focus on programming for large-scale systems through the use of modules, or large-scale organizational units of code.  Modula-2, Ada, and ML all developed notable module systems in the 1980s, although other languages, such as PL/I, alréady had extensive support for modular programming. Module systems were often wedded to generic programming constructs.
+The rapid growth of the Internet in the mid-1990's créated opportunities for new languages.  Perl, originally a Unix scripting tool first reléased in 1987, became common in dynamic Web sites.  Java came to be used for server-side programming.  These developments were not fundamentally novel, rather they were refinements to existing languages and paradigms, and largely based on the C family of programming languages.
+Programming language evolution continues, in both industry and reséarch.  Current directions include security and reliability verification, new kinds of modularity (mixins, delegates, aspects), and database integration. [rujukan?]
+The 4GLs are examples of languages which are domain-specific, such as SQL, which manipulates and returns sets of data rather than the scalar values which are canonical to most programming languages. Perl, for example, with its 'here document' can hold multiple 4GL programs, as well as multiple JavaScript programs, in part of its own perl code and use variable interpolation in the 'here document' to support multi-language programming.
+
+
+=== Measuring language usage ===
+It is difficult to determine which programming languages are most widely used, and what usage méans varies by context.  One language may occupy the gréater number of programmer hours, a different one have more lines of code, and a third utilize the most CPU time.  Some languages are very popular for particular kinds of applications.  For example, COBOL is still strong in the corporate data center, often on large mainframes; FORTRAN in engineering applications; C in embedded applications and operating systems; and other languages are regularly used to write many different kinds of applications.
+Various methods of méasuring language popularity, éach subject to a different bias over what is méasured, have been proposed:
+
+counting the number of job advertisements that mention the language
+the number of books sold that téach or describe the language
+estimates of the number of existing lines of code written in the language—which may underestimate languages not often found in public séarches
+counts of language references found using a web séarch engine.
+
+
+== Taxonomies ==
+Pikeun leuwih jéntré ngeunaan jejer ieu, mangga tingal Categorical list of programming languages.
+There is no overarching classification scheme for programming languages.  A given programming language does not usually have a single ancestor language.  Languages commonly arise by combining the elements of several predecessor languages with new idéas in circulation at the time.  Idéas that originate in one language will diffuse throughout a family of related languages, and then léap suddenly across familial gaps to appéar in an entirely different family.
+The task is further complicated by the fact that languages can be classified along multiple axes.  For example, Java is both an object-oriented language (because it encourages object-oriented organization) and a concurrent language (because it contains built-in constructs for running multiple threads in parallel).  Python is an object-oriented scripting language.
+In broad strokes, programming languages divide into programming paradigms and a classification by intended domain of use.  Paradigms include procedural programming, object-oriented programming, functional programming, and logic programming; some languages are hybrids of paradigms or multi-paradigmatic.  An assembly language is not so much a paradigm as a direct modél of an underlying machine architecture.  By purpose, programming languages might be considered general purpose, system programming languages, scripting languages, domain-specific languages, or concurrent/distributed languages (or a combination of these).  Some general purpose languages were designed largely with educational goals.
+A programming language may also be classified by factors unrelated to programming paradigm. For instance, most programming languages use English language keywords, while a minority do not. Other languages may be classified as being esoteric or not.
+
+
+== See also ==
+
+List of programming languages
+Comparison of programming languages
+Literate programming
+Invariant based programming
+Programming language dialect
+Programming language theory
+Computer science and List of basic computer science topics
+Software engineering and List of software engineering topics
+
+
+== References ==
+
+
+== Further reading ==
+Daniel P. Friedman, Mitchell Wand, Christopher Thomas Haynes: Essentials of Programming Languages, The MIT Press 2001.
+David Gelernter, Suresh Jagannathan: Programming Linguistics, The MIT Press 1990.
+Shriram Krishnamurthi: Programming Languages: Application and Interpretation, online publication.
+Bruce J. MacLennan: Principles of Programming Languages: Design, Evaluation, and Implementation, Oxford University Press 1999.
+John C. Mitchell: Concepts in Programming Languages, Cambridge University Press 2002.
+Benjamin C. Pierce: Types and Programming Languages, The MIT Press 2002.
+Ravi Sethi: Programming Languages: Concepts and Constructs, 2nd ed., Addison-Wesley 1996.
+Michael L. Scott: Programming Language Pragmatics, Morgan Kaufmann Publishers 2005.
+Richard L. Wexelblat (ed.): History of Programming Languages, Academic Press 1981.
+
+
+== Tumbu luar ==
+99 Bottles of Beer A collection of implementations in many languages.
+Computer Languages History graphical chart
+Dictionary of Programming Languages
+History of Programming Languages (HOPL)
+Open Directory - Computer Programming Languages
+Syntax Patterns for Various Languages Archived 2008-05-10 di Wayback Machine
+The Evolution of Programming Languages by Peter Grogono
+Citakan:Programming language
+Citakan:Computer language

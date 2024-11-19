@@ -1,0 +1,959 @@
+En xeometría, un sistema de coordenadas é un sistema que utiliza un ou máis números ou coordenadas, para determinar de forma única a posición dun punto ou doutro elemento xeométrico. É un conxunto de valores que permiten definir univocamente a posición de calquera punto nun espazo n-dimensional respecto a un punto de referencia chamado orixe de coordenadas. O uso dun sistema de coordenadas permite que determinados problemas en xeometría se traduzan en problemas numéricos e á inversa. Esta é a base da xeometría analítica.
+O conxunto de eixos, puntos ou planos que conflúen na orixe, e a partir dos cales se calculan as coordenadas, constitúen o que se denomina sistema de referencia.
+
+
+== Historia ==
+
+Os primeiros sistemas de coordenadas como tales áchanse a mediados do século XVI. O matemático italiano Rafael Bombelli (1526 - 1572) vai utilizar a recta numérica para representar os diferentes números coa lonxitude nesta recta; de aquí vaise estender á idea dos números reais, e a do primeiro sistema de coordenadas na recta.
+Posteriormente, René Descartes (1596-1650), filósofo e matemático francés, vai introducir o novo concepto de coordenadas no plano e, ao relacionar os puntos do plano e as parellas de números reais, vai obter os que actualmente se nomean sistemas de coordenadas cartesianas.
+Hai diversas narracións da introdución das coordenadas polares como parte dun sistema formal de coordenadas. Grégoire de Saint-Vincent e Bonaventura Cavalieri van introducir independentemente os conceptos a mediados do século XVII. Saint-Vincent vaino escribir en privado en 1625 e vai publicar o seu traballo en 1647, mentres que Cavalieri publica o seu en 1635, cunha versión corrixida que publica en 1653. Cavali1eri vai ser o primeiro en facer uso das coordenadas polares para resolver un problema referente á área contida dentro dunha espiral de Arquimedes. Máis tarde, Blaise Pascal servirase das coordenadas polares para calcular a lonxitude dun arco de paràbola.
+Se ben hai exemplos onde se evidencia que os conceptos de ángulo e raio eran coñecidos e se manexaban desde a antigüidade, non é ata finais do século XVII, con posterioridade á invención da xeometría analítica, que se pode falar do concepto formal de sistema de coordenadas polares. A pesar diso, o concepto abstracto de sistema de coordenadas polares débese a Isaac Newton, quen o introduce na súa obra Método das fluxións (escrita en 1671 e publicada en 1736) para resolver problemas relativos a tanxentes e curvas; concretamente no sétimo destes problemas aparecen as coordenadas polares. Así mesmo examina as transformacións entre coordenadas polares (das cales di que son a "Sétima Maneira para as Espirais"), e outros novos sistemas de coordenadas. Tamén se lle atribúe o primeiro uso de coordenadas negativas nunha colección de figuras e gráficos dos polinomios de terceiro grao, no seu libro Enumeratio linearum tertii ordinis (Enumeración das curvas de terceiro grao). En 1691, na revista Acta Eruditorum, Jacob Bernoulli utilizaba un sistema cun punto sobre unha liña, aos que chamou polo e eixo polar respectivamente. As coordenadas especificábanse pola distancia ao polo e o ángulo respecto ao eixo polar. No traballo de Bernoulli áchase o concepto de raio de curvatura das curvas expresadas neste sistema de coordenadas.
+O termo actual, coordenadas polares, atribúese ao matemático italiano Gregorio Fontana (1735 - 1803) e xa o utilizaban os escritores italianos do século XVIII. O termo aparece por primeira vez en inglés na tradución de 1816 feita por George Peacock do Traité du calcul différentiel et du calcul intégral (Tratado do cálculo diferencial e do cálculo integral) de Sylvestre François Lacroix. Alexis Clairaut vai ser o primeiro en pensar en coordenadas polares en tres dimensións, e Leonhard Euler o primeiro en desenvolvelas.
+En 1827, na obra Der barycentrische Calcül, August Ferdinand Möbius vai introducir o concepto de coordenadas homoxéneas ou coordenadas proxectivas.
+O sistema de coordenadas UTM vai ser desenvolvido polo corpo de enxeñeiros do Exército dos Estados Unidos na década de 1940. O sistema baséase nun modelo elipsoidal da Terra. Úsábase o elipsoide de Clarke de 1866 para o territorio dos 48 estatos contiguos. Para o resto do mundo -incluídos os estados de Alasca e Hawai - úsábase o elipsoide Internacional. Actualmente trabállase co elipsoide WGS84 como modelo de base para o sistema de coordenadas UTM.
+
+
+== Sistemas de coordenadas unidimensionais ==
+
+
+=== Recta real ===
+
+O exemplo máis simple dun sistema de coordenadas é a identificación de puntos nunha recta con números reais utilizando a recta real ou recta numérica. Neste sistema, escóllese un punto arbitrario O (a orixe) nunha liña, unha unidade de medida, e un sentido positivo nela (normalmente é o que vai de esquerda a dereita); obviamente o sentido contrario ao positivo (de dereita a esquerda) é o negativo. A coordenada, ou abscisa, dun punto M defínese como a distancia da orixe O ao punto M, con signo positivo ou negativo segundo que o sentido que vai de O a M sexa positivo ou negativo. A cada punto asóciaselle unha coordenada única, e cada número é a coordenada dun único punto.
+
+Cando o punto se move sobre unha curva, en lugar dunha recta, é posíbel escoller tamén sobre a curva unha orixe, un sentido positivo de percorrido e unha unidade de medida, mais en tal caso falarase de abscisa curvilínea. A distancia con signo do punto á orixe é a coordenada curvilínea do punto.
+
+
+== Sistemas de coordenadas bidimensionais ==
+
+
+=== Sistema de coordenadas cartesianas ===
+
+Un dos sistemas de coordenadas bidimensional está constituído por un par de rectas incidentes, indicados xeralmente por X e Y, chamados eixos de coordenadas. O punto de intersección das rectas é a orixe de coordenadas. Sobre cada eixo se fixa un sentido positivo de percorrido e unha unidade de medida que, en xeral, é igual para ambos eixos, mais por esixencias particulares os eixos poden ter distintas unidades de medida. A posición dun punto M calquera do plano ven indicada por un par de números, xeralmente indicados polas letras x e y, chamadas coordenadas do punto M. O número x é a distancia con signo desde o eixo Y ao punto M medida paralelamente ao eixo X e coa unidade de medida elixida para este último eixo (o signo será positivo ou negativo se o sentido desde o eixo Y ao punto M é o mesmo ou o contrario respectivamente, ao establecido no eixo X). Analogamente, o número y e a medida con signo da distancia do eixo X ao punto M medida paralelamente ao eixo Y e coa unidade de medida elixida para este último; con signo positivo se o sentido positivo de Y coincide co sentido que vai desde o eixo X a M, e negativo en caso contrario. A parella de coordenadas que caracterizan ao punto M se indican da forma (x,y).
+
+Cando os eixos X e Y son perpendiculares, o sistema de coordenadas cartesiano dise ortogonal, se ademais a medida elixida para cada eixo é a mesma dise ortonormal. Noutro caso, é dicir cando os eixos non son perpendiculares, fálase dun sistema de coordenadas cartesianas non ortogonal.
+O nome cartesiano é na honra do matemático francés René Descartes quen o recupera na idade moderna, despois de que fora xa introducido na idade media polo tamén francés Nicole Oresme.
+Nun sistema de coordenadas cartesianas o eixo horizontal X recibe o nome de eixo de abscisas e o vertical Y eixo de ordenadas. Consecuentemente, a primeira coordenada x dun punto é a súa abscisa, e a segunda y a súa ordenada. Oresme usaba respectivamente os nomes de lonxitude e latitude, que hoxe en día resérvanse para as coordenadas xeográficas.
+
+
+=== Sistema de coordenadas polares ===
+
+O sistema de coordenadas polares é especialmente útil cando a relación entre dous puntos se expresa mellor en termos de ángulos e distancias. As coordenadas polares defínense por un punto fixo O chamado polo (equivalente á orixe nas coordenadas cartesianas), e por unha recta que pasa por O, nomeado eixo polar (equivalente ao eixo X das coordenadas cartesianas). A primeira coordenada é a distancia r entre o polo e o punto P considerado, mentres que a segunda é o ángulo orientado positivo (antihorario) φ que vai do eixo polar á recta que pasa por O e o punto P. A primeira, r, é a coordenada radial, e a segunda, φ, é a coordenada radial (tamén coñecida por ángulo polar ou ángulo acimutal
+
+Para pasar das coordenadas polares (r,φ) ás cartesianas (x,y) úsanse as seguintes fórmulas, que se obteñen sen máis que despexar na definición do seno e do coseno de φ (véxase a imaxe):
+
+  
+    
+      
+        x
+        =
+        r
+        cos
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle x=r\cos \phi }
+  
+
+  
+    
+      
+        y
+        =
+        r
+        sen
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle y=r\operatorname {sen} \phi }
+  
+
+e para pasar das cartesianas ás polares: 
+
+  
+    
+      
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle r={\sqrt {x^{2}+y^{2}}}}
+  
+
+  
+    
+      
+        ϕ
+         
+        =
+        arctan
+        ⁡
+        
+          (
+          
+            
+              y
+              x
+            
+          
+          )
+        
+        =
+        arccos
+        ⁡
+        
+          (
+          
+            
+              x
+              r
+            
+          
+          )
+        
+        =
+        
+          a
+          r
+          c
+          s
+          e
+          n
+        
+        
+          (
+          
+            
+              y
+              r
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \phi \ =\arctan \left({\frac {y}{x}}\right)=\arccos \left({\frac {x}{r}}\right)=\mathrm {arcsen} \left({\frac {y}{r}}\right)}
+  
+
+onde a primeira fórmula non é máis que o teorema de Pitágoras, e a segunda resulta das definicións das funcións trigonométricas inversas.
+
+
+=== Sistema de coordenadas elípticas ===
+
+As coordenadas elípticas son un sistema bidimensional de coordenadas curvilíneas ortogonais, onde as liñas coordenadas son elipses e hipérboles cos mesmos focos.
+
+
+=== Sistema de coordenadas parabólicas ===
+
+As coordenadas parabólicas son un sistema bidimensional de coordenadas ortogonais no que as liñas coordenadas son parábolas cun foco común.
+
+
+== Sistemas de coordenadas tridimensionais ==
+
+
+=== Sistema de coordenadas cartesianas ===
+
+O sistema cartesiano tridimensional consta de tres rectas chamadas eixos de coordenadas que pasan por un punto común que é a orixe de coordenadas, denotada comunmente por O. Para cada un dos eixos, nomeados xeralmente por X, Y e Z, se escolle unha unidade de medida e un sentido positivo de percorrido. As coordenadas dun punto calquera do espazo indícanse coas letras x, y e z. A primeira coordenada x indica a distancia con signo do punto ao plano que contén aos eixos Y e Z, medida paralelamente ao eixo X e usando a unidade de medida escollida para este eixo. Analogamente defínense as outras dúas coordenadas y e z. As tres coordenadas que caracterizan un punto do espazo indícanse da forma (x,y,z). Cando os tres eixos son perpendiculares dise que o sistema cartesiano é ortogonal ou rectangular; se ademais a unidade de medida é a mesma para os tres eixos, o sistema cartesiano é ortonormal.
+
+
+=== Sistema de coordenadas cilíndricas ===
+
+O sistema de coordenadas cilíndricas é a expansión natural do sistema de coordenadas polares plano ás tres dimensións. Este sistema é especialmente útil en problemas de simetría axial. Está constituído por dúas rectas (normalemte perpendiculares), X e Y, chamadas eixos, cun punto en común, O, que é o polo ou a orixe.
+As coordenadas dun punto xenérico P denótanse por (ρ, φ e z), onde:
+
+ρ é a distancia do punto Q á orixe O, sendo Q a proxección ortogonal do punto P sobre o plano XY.
+φ é o ángulo que forma o semieixo positivo de X co vector 
+  
+    
+      
+        
+          
+            
+              ρ
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\rho }}}
+  
+, de orixe O e extremo Q, medido en sentido positivo (antihorario).
+z é a distancia de P a Q.
+Para pasar das coordenadas cilíndricas ás cartesianas úsanse as fórmulas:
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                ρ
+                
+                cos
+                ⁡
+                Φ
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                ρ
+                 
+                
+                  s
+                  e
+                  n
+                
+                
+                Φ
+              
+            
+            
+              
+                z
+              
+              
+                
+                =
+                z
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=\rho \,\cos \Phi \\y&=\rho \ \mathrm {sen} \,\Phi \\z&=z\end{aligned}}}
+  
+.
+e para pasar das cartesianas ás cilíndricas:
+
+  
+    
+      
+        
+          
+            
+              
+                ρ
+              
+              
+                
+                =
+                
+                  
+                    
+                      x
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      y
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                Φ
+              
+              
+                
+                =
+                arctan
+                ⁡
+                
+                  (
+                  
+                    
+                      y
+                      x
+                    
+                  
+                  )
+                
+                =
+                
+                  a
+                  r
+                  c
+                  s
+                  e
+                  n
+                
+                
+                
+                  (
+                  
+                    
+                      y
+                      
+                        
+                          x
+                          
+                            2
+                          
+                        
+                        +
+                        
+                          y
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                =
+                arccos
+                ⁡
+                
+                  (
+                  
+                    
+                      x
+                      
+                        
+                          x
+                          
+                            2
+                          
+                        
+                        +
+                        
+                          y
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+                z
+              
+              
+                
+                =
+                z
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\rho &={\sqrt {x^{2}+y^{2}}}\\\Phi &=\arctan \left({\frac {y}{x}}\right)=\mathrm {arcsen} \,\left({\frac {y}{\sqrt {x^{2}+y^{2}}}}\right)=\arccos \left({\frac {x}{\sqrt {x^{2}+y^{2}}}}\right)\\z&=z\end{aligned}}}
+  
+.
+As fórmulas anteriores obtéñense facilmente a partir do teorema de Pitágoras e das definicións das razóns trigonométricas e as súas inversas.
+
+
+=== Sistema de coordenadas esféricas ===
+
+O sistema de coordenadas esféricas é un sistema tridimensional que consta de tres rectas ou eixos, X, Y e Z, perpendiculares entre si e que se cortan nun punto O, que é a orixe.
+Dado un punto calquera do espazo P, as súas coordenadas esféricas denótanse por 
+  
+    
+      
+        
+          (
+          
+            ρ
+            ,
+            θ
+            ,
+            Φ
+          
+          )
+        
+      
+    
+    {\displaystyle \left(\rho ,\theta ,\Phi \right)}
+  
+, onde:
+
+ρ é a distancia do punto P á orixe O.
+θ é o ángulo que forma 
+  
+    
+      
+        
+          
+            
+              ρ
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\rho }}}
+  
+ coa parte positiva do eixo Z. Recibe o nome de zenit, ángulo polar ou colatitude.
+φ é o ángulo positivo (antihorario) que forma o semieixo positivo de X co vector 
+  
+    
+      
+        
+          
+            
+              ρ
+              →
+            
+          
+        
+        
+           
+          ′
+        
+      
+    
+    {\displaystyle {\vec {\rho }}\ '}
+  
+, de orixe O e extremo Q, sendo Q a proxección ortogonal de P sobre o eixo XY. Chámase acimut.
+Para pasar das coordenadas esféricas ás cartesianas úsanse as seguintes fórmulas:
+
+  
+    
+      
+        x
+        =
+        ρ
+         
+        sen
+        ⁡
+        θ
+         
+        cos
+        ⁡
+        Φ
+      
+    
+    {\displaystyle x=\rho \ \operatorname {sen} \theta \ \cos \Phi }
+  
+
+  
+    
+      
+        y
+        =
+        ρ
+         
+        sen
+        ⁡
+        θ
+         
+        sen
+        ⁡
+        Φ
+      
+    
+    {\displaystyle y=\rho \ \operatorname {sen} \theta \ \operatorname {sen} \Phi }
+  
+
+  
+    
+      
+        z
+        =
+        ρ
+         
+        cos
+        ⁡
+        θ
+      
+    
+    {\displaystyle z=\rho \ \cos \theta }
+  
+
+E para pasar das cartesianas ás esféricas:
+
+  
+    
+      
+        ρ
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+            +
+            
+              z
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \rho ={\sqrt {x^{2}+y^{2}+z^{2}}}}
+  
+
+  
+    
+      
+        Φ
+         
+        =
+        arctan
+        ⁡
+        
+          (
+          
+            
+              y
+              x
+            
+          
+          )
+        
+        =
+        
+          a
+          r
+          c
+          s
+          e
+          n
+        
+        
+          (
+          
+            
+              y
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                +
+                
+                  y
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \Phi \ =\arctan \left({\frac {y}{x}}\right)=\mathrm {arcsen} \left({\frac {y}{\sqrt {x^{2}+y^{2}}}}\right)}
+  
+
+  
+    
+      
+        θ
+         
+        =
+        arccos
+        ⁡
+        
+          (
+          
+            
+              z
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                +
+                
+                  y
+                  
+                    2
+                  
+                
+                +
+                
+                  z
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        arccot
+        ⁡
+        
+          (
+          
+            
+              z
+              
+                
+                  x
+                  
+                    2
+                  
+                
+                +
+                
+                  y
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \theta \ =\arccos \left({\frac {z}{\sqrt {x^{2}+y^{2}+z^{2}}}}\right)=\operatorname {arccot} \left({\frac {z}{\sqrt {x^{2}+y^{2}}}}\right)}
+  
+
+Como no caso das coordenadas cilíndricas, as fórmulas anteriores dedúcense sen dificultade do teorema de Pitágoras e das definicións das razóns trigonométricas e as súas inversas.
+
+
+=== Sistema de coordenadas parabólicas ===
+
+A versión tridimensional das coordenadas parabólicas obténse a través da rotación do sistema bidimensional sobre o eixo de simetria de todas as parábolas.
+
+
+== Sistemas de coordenadas multidimensionais ==
+
+
+=== Sistema de coordenadas cartesianas ===
+
+O sistema de coordenadas cartesianas pódese ampliar a 
+  
+    
+      
+        
+          
+            
+              R
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \mathbb {R} ^{n}}
+  
+ definindo as n coordenadas dun punto calquera do espazo n-dimensional dun xeito análogo ao feito para 
+  
+    
+      
+        
+          
+            
+              R
+            
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \mathbb {R} ^{2}}
+  
+ e 
+  
+    
+      
+        
+          
+            
+              R
+            
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \mathbb {R} ^{3}}
+  
+.
+
+
+=== Sistema de coordenadas homoxéneas ===
+
+O sistema de coordenadas homoxéneas asigna a cada punto dun espazo n-dimensional unha (n+1)-upla de n+1 compoñentes denotada a miúdo [x0 : x1 : ... : xn ] que están definidas agás multiplicacións por escalares [λx0 : λx1 : ... : λxn ] λ≠0, é dicir, que dúas (n+1)-uplas representan o mesmo punto en tanto que se conserve a proporción entre as súas compoñentes. Este tipo de coordenadas son moi usadas en xeometría proxectiva, onde representan os vectores do espazo vectorial usado para definir cada espazo proxectivo. Tamén se utilizan, por exemplo, para denotar as rectas do plano como ecuacións na forma xeral Ax+By+C=0.
+Un punto no plano pode representarse en coordenadas homoxéneas por (x, y, z), onde x/z e y/z son as coordenadas cartesianas do punto. Isto introduce unha coordenada "extra" onde só dúas son necesarias para especificar un punto no plano, mais este sistema é útil para representar calquera punto no plano proxectivo sen o uso do infinito. En xeral, un sistema de coordenadas homoxéneas é aquel onde soamente as proporcións das coordenadas son significativas e non os valores efectivos.
+
+
+=== Sistema de coordenadas curvilíneas ===
+
+Un sistema de coordenadas curvilíneas é a forma máis xeral de parametrizar ou etiquetar os puntos dun espazo localmente euclidiano ou variedade diferenciábel (globalmente o espazo pode ser euclidiano, mais non necesariamente). Se M é un espazo localmente euclidiano de dimensión m, pódese construír un sistema de coordenadas curvilíneas local en torno a un punto p sempre a partir de calquera difeomorfismo que cumpra:
+
+  
+    
+      
+        ϕ
+        :
+        M
+        →
+        
+          
+            R
+          
+          
+            m
+          
+        
+        
+        p
+        ∈
+        M
+        ∧
+        ϕ
+        (
+        p
+        )
+        =
+        (
+        0
+        ,
+        0
+        ,
+        .
+        .
+        .
+        ,
+        0
+        )
+        ∈
+        
+          
+            R
+          
+          
+            m
+          
+        
+      
+    
+    {\displaystyle \phi :M\to \mathbb {R} ^{m}\qquad p\in M\land \phi (p)=(0,0,...,0)\in \mathbb {R} ^{m}}
+  
+
+Para calquera punto q próximo a p defínense as súas coordenadas curvilíneas:
+
+  
+    
+      
+        ϕ
+        (
+        q
+        )
+        =
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            m
+          
+        
+        )
+        
+      
+    
+    {\displaystyle \phi (q)=(x_{1},x_{2},...,x_{m})\,}
+  
+
+Nun espazo euclidiano, os sistemas de coordenadas distintos do cartesiano son sistemas de coordenadas curvilíneas.
+Se o espazo localmente euclidiano ten a estrutura de variedade de Riemann, pódense clasificar a certos sistemas de coordenadas curvilíneas como sistemas de coordenadas ortogonais e, dentro destes, aos sistemas de coordenadas ortonormais.
+
+
+==== Coordenadas curvilíneas ortogonais ====
+
+Un sistema de coordenadas curvilíneas ortogonais é aquel no que as coordenadas do tensor métrico nese sistema teñen forma diagonal. Moitas das fórmulas do cálculo vectorial diferencial pódense escribir de forma particularmente sinxela usando estas coordenadas, podéndose aproveitar este feito cando existe algún tipo de simetría como, por exemplo, a axial, a esférica ou doutro tipo facilmente representábel nestas coordenadas curvilíneas ortogonais.
+As coordenadas cilíndricas e as esféricas son casos particulares de sistemas de coordenadas curvilíneas ortogonais sobre o espazo euclidiano 
+  
+    
+      
+        
+          
+            R
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{3}}
+  
+.
+
+
+== Sistema de coordenadas xeográficas ==
+
+As coordenadas xeográficas corresponden ao concepto da latitude e da lonxitude, é dicir, son os paràmetros que determinan a posición dun punto da superficie terrestre. As liñas de referencia son o ecuador terrestre e un meridiano inicial (o de Greenwich por convenio).
+A lonxitude dun punto P da superficie terrestre é o arco do ecuador comprendido entre o punto de intersección do meridiano inicial de Greenwich co ecuador e o punto de intersección do meridiano local de P co ecuador. O valor da lonxitude é un ángulo comprendido entre 0º e 180º. Para evitar confusións, a lonxitude pode ser leste. cando se avanza cara ao leste desde o semimeridiano de Greenwich que pasa por Europa ata o meridiano local, ou oeste, en caso contrario.
+A latitude de P é o arco do meridiano local de P comprendido entre o ecuador e P. A latitude está comprendida entre 0° e 90°, diferenciándose entre latitude norte e latitude sur para cada hemisferio a partir do ecuador.
+A forma real da Terra fai que a extensión dun grao de lonxitude ou de latitude sexa diferente en diferentes puntos xeográficos, motivo polo cal, e para máis exactitude, fixéronse correccións no cálculo da latitude. A posición xeográfica dun punto queda completamente establecida ao especificar a altitude.
+A latitude e a lonxitude poden mostrase nos seguintes formatos (siglas en inglés): 
+
+DD Decimal Degree (Graos Decimais): ex. 49.500-123.500
+DM Degree:Minute (Graos:Minutos): ex. 49:30.0-123:30.0
+DMS Degree:Minute:Second (Graos:Minutos:Segundos): ex. 49:30:00-123:30:00
+
+
+=== Sistema de coordenadas UTM ===
+
+O Sistema de Coordenadas Universal Transversal de Mercator, en inglés Universal Transverse Mercator (UTM) é un sistema de coordenadas xeográficas baseado na proxección cartográfica transversal de Mercator, que se constrúe coa proxección de Mercator normal mais, no canto de facer a tanxente ao ecuador terrestre, faise esta a un meridiano. A diferenza do sistema de coordenadas xeográficas de lonxitude e latitude, as coordenadas no sistema UTM exprésanse en metros unicamente ao nivel do mar, que é a base da proxección do elipsoide de referència.
+A proxección transversal de Mercator é unha variante da proxección de Mercator que foi desenvolvida polo xeógrafo flamengo Gerardus Mercator en 1659. Esta proxección é "conforme", é dicir, conserva os ángulos e case non distorsiona as formas, mais inevitabelmente si que o fai coas distancias e as áreas. O uso de escalas non lineares no sistema UTM asegura que o mapa proxectado resulte conforme.
+
+
+== Sistemas de coordenadas astronómicas ou celestes ==
+
+As coordenadas celestes ou astronómicas son calquera sistema de coordenadas que se utiliza para determinar a posición dun corpo sobre a esfera celeste. Segundo os elementos de referencia que se escollan, pódense utilizar diferentes sistemas de coordenadas. A razón pola cal hai diferentes referencias para determinar un mesmo punto é que as coordenadas xeocéntricas serven para distinguir calquera punto respecto onde nos encontramos, mais os cálculos sobre as órbitas dos corpos celestes fanse moi complicadas. Faise máis sinxelo (que non doado) se se toma a referencia do punto segundo o que orbita o corpo a estudar.
+Trátase de determinar as posicións aparentes que ocupan os astros no firmamento, sobre a nomeada esfera ou bóveda celeste. Así fan falta dous parámetros angulares para situar sobre esta esfera calquera astro. O valor numérico destes parámetros é distinto segundo o sistema de coordenadas elixido, os cales son nomeados, entre outros: celestial, horizontal, ecuatorial, eclíptico, galáctico, extragaláctico, supergaláctico e binario. As máis usadas son as ecuatoriais e as eclípticas.
+
+
+==== Sistema de coordenadas ecuatoriais ====
+
+As coordenadas ecuatoriais son un sistema de coordenadas celestes que permiten determinar a posición dun corpo respecto ao ecuador celeste e o primeiro punto Aries. As súas dúas coordenadas son a ascensión recta e a declinación.
+
+
+==== Sistema de coordenadas eclípticas ====
+
+As coordenadas eclípticas son un sistema de coordenades celestes que permiten determinar a posición dun corpo respecto ao plano da eclíptica e ao primeiro punto de Aries. As dúas coordenadas son a lonxitude celeste e a latitude celeste.
+
+
+== Outros sistemas de coordenadas ==
+Na relatividade xeral, certos sistemas de coordenadas elíxense para simplificar os cálculos.
+
+Un sistema de coordenadas harmónicas é un sistema de coordenadas definido nunha variedade diferencial no que as coordenadas, consideradas como campos vectoriais, teñen o laplaciano nulo.
+Máis xeralmente, un sistema de coordenadas é esencialmente arbitrario na relatividade xeral, a estrutura das ecuacións non depende da elección das coordenadas. Non obstante, cando vén a fase de resolución das ecuacións do campo gravitacional, certos sistemas de coordenadas revélanse máis cómodos que outros, ou permiten unha interpretación física simple dos resultados obtidos. As clases de sistemas de coordenadas que posúen tal propiedade son funcionais de Minkowski. No terreo da teoría das perturbacións cosmolóxicas, a elección dun tal funcional pode presentar vantaxes.
+
+
+== Mapas de coordenadas ==
+
+O concepto dun mapa de coordenadas ou carta é central na teoría das variedades. Un mapa de coordenadas é esencialmente un sistema de coordenadas para un subconxunto dun espazo dado coa propiedade de que cada punto ten exactamente un conxunto de coordenadas. Máis precisamente, un mapa de coordenadas é un homeomorfismo dun subconxunto aberto dun espazo X nun subconxunto aberto de 
+  
+    
+      
+        
+          
+            
+              R
+            
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle \mathbb {R} ^{n}}
+  
+. Con frecuencia non é posíbel proporcionar un sistema de coordenadas consistente para todo un espazo. Neste caso, unha colección de mapas de coordenadas xúntase para formar un atlas cubrindo todo o espazo. Un espazo equipado cun atlas chámase variedade, na cal pode definirse unha estrutura adicional sempre que esta sexa consistente onde se superpoñen mapas de coordenadas. Por exemplo, unha variedade diferenciábel é unha variadade na que o cambio de coordenadas dun mapa de coordenadas a outro é sempre unha función diferenciábel.
+
+
+== Curvas e superficies coordenadas ==
+
+Se nun sistema de coordenadas bidimensional se mantén constante unha coordenada mentres que a outra varía en todo o seu percorrido, o resultado é unha curva chamada curva coordenada (algúns autores usan a expresión "liñas coordenadas"). Esta definición non sempre ten sentido, por exemplo, nun sistema de coordenadas homoxéneas non hai curvas coordenadas. No sistema de coordenadas cartesianas, as curvas coordenadas son, de feito, rectas paralelas a algún dos eixos coordenados. Para outros sistemas de coordenadas as curvas coordenadas son curvas propias, por exemplo, as curvas coordenadas nun sistema de coordenadas polares que se obteñen mantendo r constante son circunferencias con centro na orixe de coordenadas.
+Se nun sistema de coordenadas tridimensional se mantén constante unha coordenada mentres cas outras varían en todo o seu percorrido, o resultado é unha superficie chamada superficie coordenada. Por exemplo, as superficies coordenadas obtidas mantendo ρ constante nun sistema de coordenadas esféricas son superficies esféricas con centro na orixe de coordenadas. Nun espazo tridimensional a intersección de dúas superficies coordenadas é unha curva coordenada.
+Para dimensións maiores defínense dun xeito análogo as hipersuperficies coordenadas
+
+
+== Notas ==
+
+
+== Véxase tamén ==
+
+
+=== Outros artigos ===
+Coordenadas cartesianas
+Coordenadas polares
+Coordenadas cilíndricas
+Coordenadas esféricas
+Coordenadas xeográficas
+Coordenadas celestes
+
+
+=== Ligazóns externas ===
+Alberto Rodríguez Santos (28-12-2012). "La invención de los sistemas de coordenadas". Epsilones (en castelán). Arquivado dende o orixinal o 19 de xullo de 2013. Consultado o 24 de agosto de 2013.

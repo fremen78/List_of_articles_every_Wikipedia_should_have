@@ -1,0 +1,233 @@
+Dina éléktronika, dioda nyaéta hiji komponén nu ngahalangan arah gerak pamawa muatan. Prinsip dasarna, dioda ngaliwatkeun arus listrik kana hiji arah, tapi ngahalangan éta arus lamun arahna sabalikna. Ku kituna, dioda bisa dianggep minangka vérsi éléktronikna tina kelép pangecékan. Sirkuit nu ngabutuhkeun aliran arus ngan saarah umumna pasti ngagunakeun hiji atawa leuwih dioda dina rancangan sirkuitna.
+Dioda baheula maké kristal "cat's whisker" jeung parangkat solobong vakum (disebut thermionic valves dina basa Inggris). Kiwari lolobana dioda umumna dijieun tina bahan sémikonduktor saperti silikon atawa germanium.
+
+
+== Sajarah ==
+Dioda térmionik jeung padetan (solid state) diwangun sacara paralél. Prinsip oprasi dioda térmionik kapanggih ku Frederick Guthrie taun 1873 [1]. Prinsip oprasi dioda kristal kapanggih taun 1874 ku élmuwan Jérman, Karl Ferdinand Braun [2] Archived 2006-02-11 di Wayback Machine. 
+
+Thermionic diode principles were rediscovered by Thomas Edison on February 13, 1880 and he took out a patent in 1883 (U.S. Patent 307031), but developed the idéa no further. Braun patented the crystal rectifier in 1899 [3]. The first radio receiver using a crystal diode was built around 1900 by Greenleaf Whittier Pickard. The first thermionic diode was patented in Britain by John Ambrose Fleming (scientific adviser to the Marconi Company and former Edison employee [4]) on November 16, 1904 (U.S. Patent 803684 in November 1905). Pickard received a patent for a silicon crystal detector on November 20, 1906 [5] (U.S. Patent 836531).
+At the time of their invention such devices were known as rectifiers. In 1919 William Henry Eccles coined the term diode from Greek roots; di méans 'two', and ode (from odos) méans 'path'.
+
+
+== Diod térmionik atawa ngandung gas ==
+
+Thermionic diodes are vacuum tube devices (also known as thermionic valves), which are arrangements of electrodes surrounded by a vacuum within a glass envelope, similar in appéarance to incandescent light bulbs.
+In vacuum tube diodes, a current is passed through the cathode, a filament tréated with a mixture of barium and strontium oxides, which are oxides of alkaline earth metals. The current héats the filament, causing thermionic emission of electrons into the vacuum envelope. In forward operation, a surrounding metal electrode, called the anode, is positively charged, so that it electrostatically attracts the emitted electrons. 
+However, electrons are not éasily reléased from the unhéated anode surface when the voltage polarity is reversed and hence any reverse flow is a very tiny current.
+For much of the 20th century vacuum tube diodes were used in analog signal applications, and as rectifiers in power supplies. Today, tube diodes are only used in niche applications, such as rectifiers in tube guitar and hi-fi amplifiers, and specialized high-voltage equipment.
+
+
+== Dioda sémikonduktor ==
+
+Dioda nu pangmodérenna dumasar kana hubungan p-n sémikonduktor. Dina dioda p-n, arus konvénsional bisa ngalir ti sisi tipe p (anoda) ka tipe n (katoda) tapi henteu bisa ngalir dina arah nu sabalikna. Tipe dioda sémikonduktor lianna, dioda Schottky, diwangun tina hubungan antara logam jeung sémikonduktor, tinimbang hubungan p-n-na.
+A semiconductor diode's current-voltage, or I-V, characteristic curve is ascribed to the behavior of the so-called depletion layer or depletion zone which exists at the p-n junction between the differing semiconductors. When a p-n junction is first créated, conduction band (mobile) electrons from the N-doped region diffuse into the P-doped region where there is a large population of holes (places for electrons in which no electron is present) with which the electrons "recombine". When a mobile electron recombines with a hole, the hole vanishes and the electron is no longer mobile. Thus, two charge carriers have vanished. The region around the p-n junction becomes depleted of charge carriers and thus behaves as an insulator.
+However, the depletion width cannot grow without limit. For éach electron-hole pair that recombines, a positively-charged dopant ion is left behind in the N-doped region, and a negatively charged dopant ion is left behind in the P-doped region. As recombination proceeds and more ions are créated, an incréasing electric field develops through the depletion zone which acts to slow and then finally stop recombination. At this point, there is a 'built-in' potential across the depletion zone.
+If an external voltage is placed across the diode with the same polarity as the built-in potential, the depletion zone continues to act as an insulator preventing a significant electric current. This is the reverse bias phenomenon. However, if the polarity of the external voltage opposes the built-in potential, recombination can once again proceed resulting in substantial electric current through the p-n junction. For silicon diodes, the built-in potential is approximately 0.6 V. Thus, if an external current is passed through the diode, about 0.6 V will be developed across the diode such that the P-doped region is positive with respect to the N-doped region and the diode is said to be 'turned on' as it has a forward bias.
+
+A diode's I-V characteristic can be approximated by two regions of operation. Below a certain difference in potential between the two léads, the depletion layer has significant width, and the diode can be thought of as an open (non-conductive) circuit. As the potential difference is incréased, at some stage the diode will become conductive and allow charges to flow, at which point it can be thought of as a connection with zero (or at léast very low) resistance. More precisely, the transfer function is logarithmic, but so sharp that it looks like a corner on a zoomed-out graph (see also signal processing).
+In a normal silicon diode at rated currents, the voltage drop across a conducting diode is approximately 0.6 to 0.7 volts. The value is different for other diode types - Schottky diodes can be as low as 0.2 V and light-emitting diodes (LEDs) can be 1.4 V or more (Blue LEDs can be up to 4.0 V).
+Referring to the I-V characteristics image, in the reverse bias region for a normal P-N rectifier diode, the current through the device is very low (in the µA range) for all reverse voltages up to a point called the péak-inverse-voltage (PIV). Beyond this point a process called reverse breakdown occurs which causes the device to be damaged along with a large incréase in current. For special purpose diodes like the avalanche or zener diodes, the concept of PIV is not applicable since they have a deliberate bréakdown beyond a known reverse current such that the reverse voltage is "clamped" to a known value (called the zener voltage or breakdown voltage). These devices however have a maximum limit to the current and power in the zener or avalanche region.
+
+
+=== Persamaan dioda Shockley ===
+The Shockley ideal diode equation (named after William Bradford Shockley) is the I-V characteristic of an idéal diode in either forward or reverse bias (or no bias). It is derived with the assumption that the only processes giving rise to current in the diode are drift (due to electrical field), diffusion, and thermal recombination-generation. It also assumes that the recombination-generation (R-G) current in the depletion region is insignificant. This méans that the Shockley equation doesn't account for the processes involved in reverse bréakdown and photon-assisted R-G. Additionally, it doesn't describe the "leveling off" of the I-V curve at high forward bias due to internal resistance, nor does it explain the practical deviation from the idéal at very low forward bias due to R-G current in the depletion region.
+
+  
+    
+      
+        I
+        =
+        
+          I
+          
+            
+              S
+            
+          
+        
+        
+          (
+          
+            
+              e
+              
+                
+                  
+                    V
+                    
+                      
+                        D
+                      
+                    
+                  
+                  
+                    n
+                    
+                      V
+                      
+                        
+                          T
+                        
+                      
+                    
+                  
+                
+              
+            
+            −
+            1
+          
+          )
+        
+        
+      
+    
+    {\displaystyle I=I_{\mathrm {S} }\left({e^{V_{\mathrm {D} } \over {nV_{\mathrm {T} }}}-1}\right)\,}
+  
+,
+di mana 
+
+I is the diode current,
+IS is a scale factor called the saturation current,
+VD is the voltage across the diode
+VT is the thermal voltage
+and n is the emission coefficient.
+The emission coefficient n varies from about 1 to 2 depending on the fabrication process and semiconductor material and in many cases is assumed to be approximately equal to 1 (thus omitted). The thermal voltage VT is approximately 25.2 mV at room temperature (approximately 25oC or 298K) and is a known constant. It is defined by:
+
+  
+    
+      
+        
+          V
+          
+            
+              T
+            
+          
+        
+        =
+        
+          
+            
+              k
+              T
+            
+            e
+          
+        
+      
+    
+    {\displaystyle V_{\mathrm {T} }={\frac {kT}{e}}}
+  
+,
+di mana
+
+e is the magnitude of charge on an electron (the elementary charge),
+k is Boltzmann's constant,
+T is the absolute temperature of the p-n junction.
+
+
+== Tipe-tipe dioda sémikonduktor ==
+
+There are several types of semiconductor junction diodes:
+
+Normal (p-n) diodes
+which operate as described above. Usually made of doped silicon or, more rarely, germanium. Before the development of modern silicon power rectifier diodes, cuprous oxide and later selenium was used; its low efficiency gave it a much higher forward voltage drop (typically 1.4 - 1.7 V per "cell," with multiple cells stacked to increase the peak inverse voltage rating in high voltage rectifiers), and required a large heat sink (often an extension of the diode's metal substrate), much larger than a silicon diode of the same current ratings would require.
+'Gold doped' diodes
+As a dopant, gold (or platinum) acts as recombination centers, which help a fast recombination of minority carriers. This allows the diode to operate at signal frequencies, at the expense of a higher forward voltage drop . A typical example is the 1N914.
+Zener diodes
+(pronounced /ziːnər/) Diodes that can be made to conduct backwards. This effect, called Zener breakdown, occurs at a precisely defined voltage, allowing the diode to be used as a precision voltage reference. In practical voltage reference circuits Zener and switching diodes are connected in series and opposite directions to balance the temperature coefficient to near zero. Some devices labeled as high-voltage Zener diodes are actually avalanche diodes (see below). Two (equivalent) Zeners in series and in reverse order, in the same package, constitute a transient absorber (or Transorb, a registered trademark). They are named for Dr. Clarence Melvin Zener of Southern Illinois University, inventor of the device.
+Avalanche diodes
+Diodes that conduct in the reverse direction when the reverse bias voltage exceeds the breakdown voltage. These are electrically very similar to Zener diodes, and are often mistakenly called Zener diodes, but break down by a different mechanism, the avalanche effect. This occurs when the reverse electric field across the p-n junction causes a wave of ionization, reminiscent of an avalanche, leading to a large current. Avalanche diodes are designed to break down at a well-defined reverse voltage without being destroyed. The difference between the avalanche diode (which has a reverse breakdown above about 6.2 V) and the Zener is that the channel length of the former exceeds the 'mean free path' of the electrons, so there are collisions between them on the way out. The only practical difference is that the two types have temperature coefficients of opposite polarities.
+Transient voltage suppression (TVS) diodes
+These are avalanche diodes designed specifically to protect other semiconductor devices from high-voltage transients. Their p-n junctions have a much larger cross-sectional area than those of a normal diode, allowing them to conduct large currents to ground without sustaining damage.
+Photodiodes
+Semiconductors are subject to optical charge carrier generation and therefore most are packaged in light blocking material. If they are packaged in materials that allow light to pass, their photosensitivity can be utilized. Photodiodes can be used as solar cells, and in photometry.
+Light-emitting diodes (LEDs)
+In a diode formed from a direct band-gap semiconductor, such as gallium arsenide, carriers that cross the junction emit photons when they recombine with the majority carrier on the other side. Depending on the material, wavelengths (or colors) from the infrared to the near ultraviolet may be produced. The forward potential of these diodes depends on the wavelength of the emitted photons: 1.2 V corresponds to red, 2.4 to violet. The first LEDs were red and yellow, and higher-frequency diodes have been developed over time. All LEDs are monochromatic; 'white' LEDs are actually combinations of three LEDs of a different color, or a blue LED with a yellow scintillator coating. LEDs can also be used as low-efficiency photodiodes in signal applications. An LED may be paired with a photodiode or phototransistor in the same package, to form an opto-isolator.
+Laser diodes
+When an LED-like structure is contained in a resonant cavity formed by polishing the parallel end faces, a laser can be formed. Laser diodes are commonly used in optical storage devices and for high speed optical communication.
+Schottky diodes
+Schottky diodes are constructed from a metal to semiconductor contact. They have a lower forward voltage drop than a standard PN junction diode. Their forward voltage drop at forward currents of about 1 mA is in the range 0.15 V to 0.45 V, which makes them useful in voltage clamping applications and prevention of transistor saturation. They can also be used as low loss rectifiers although their reverse leakage current is generally much higher than non Schottky rectifiers. Schottky diodes are majority carrier devices and so do not suffer from minority carrier storage problems that slow down most normal diodes. They also tend to have much lower junction capacitance than PN diodes and this contributes towards their high switching speed and their suitability in high speed circuits and RF devices such as mixers and detectors.
+Snap-off or 'step recovery' diodes
+The term 'step recovery' relates to the form of the reverse recovery characteristic of these devices. After a forward current has been passing in an SRD and the current is interrupted or reversed, the reverse conduction will cease very abruptly (as in a step waveform). SRDs can therefore provide very fast voltage transitions by the very sudden disappearance of the charge carriers.
+Esaki or tunnel diodes
+these have a region of operation showing negative resistance caused by quantum tunneling, thus allowing amplification of signals and very simple bistable circuits. These diodes are also the type most resistant to nuclear radiation.
+Gunn diodes
+these are similar to tunnel diodes in that they are made of materials such as GaAs or InP that exhibit a region of negative differential resistance. With appropriate biasing, dipole domains form and travel across the diode, allowing high frequency microwave oscillators to be built.
+Peltier diodes
+are used as sensors, heat engines for thermoelectric cooling. Charge carriers absorb and emit their band gap energies as heat.There are other types of diodes, which all share the basic function of allowing electrical current to flow in only one direction, but with different methods of construction.
+Point-contact diodes
+These work the same as the junction semiconductor diodes described above, but its construction is simpler. A block of n-type semiconductor is built, and a conducting sharp-point contact made with some group-3 metal is placed in contact with the semiconductor. Some metal migrates into the semiconductor to make a small region of p-type semiconductor near the contact. The long-popular 1N34 germanium version is still used in radio receivers as a detector and occasionally in specialized analog electronics.
+Cat's whisker or crystal diodes
+These are a type of point contact diode. The cat's whisker diode consists of a thin or sharpened metal wire pressed against a semiconducting crystal, typically galena or a lump of coal. The wire forms the anode and the crystal forms the cathode. Cat's whisker diodes were also called crystal diodes and found application in crystal radio receivers.
+Varicap or varactor diodes
+These are used as voltage-controlled capacitors. These were important in PLL (phase-locked loop) and FLL (frequency-locked loop) circuits, allowing tuning circuits, such as those in television receivers, to lock quickly, replacing older designs that took a long time to warm up and lock. A PLL is faster than a FLL, but prone to integer harmonic locking (if one attempts to lock to a broadband signal). They also enabled tunable oscillators in early discrete tuning of radios, where a cheap and stable, but fixed-frequency, crystal oscillator provided the reference frequency for a voltage-controlled oscillator.
+PIN diodes
+A PIN diode has a central un-doped, or intrinsic, layer, forming a p-type / intrinsic / n-type structure. They are used as radio frequency switches, similar to varactor diodes but with a more sudden change in capacitance. They are also used as large volume ionizing radiation detectors and as photodetectors. PIN diodes are also used in power electronics, as their central layer can withstand high voltages. Furthermore, the PIN structure can be found in many power semiconductor devices, such as IGBTs, power MOSFETs, and thyristors.
+Current-limiting field-effect diodes
+These are actually a JFET with the gate shorted to the source, and function like a two-terminal current-limiting analog to the Zener diode; they allow a current through them to rise to a certain value, and then level off at a specific value. Also called CLDs, constant-current diodes, or current-regulating diodes. [6] Archived 2007-05-09 di Wayback Machine, [7] Archived 2006-06-29 di Wayback Machine
+Other uses for semiconductor diodes include sensing temperature, and computing analog logarithms (see Operational amplifier applications#Logarithmic).
+
+
+== Parangkat nu patali ==
+Thyristor atawa silicon controlled rectifier (SCR)
+TRIAC
+Diac
+Transistor
+
+
+== Aplikasi ==
+
+
+=== Démodulasi radio ===
+The first use for the diode was the demodulation of amplitude modulated (AM) radio broadcasts. The history of this discovery is tréated in depth in the radio article. In summary, an AM signal consists of alternating positive and negative péaks of voltage, whose amplitude or 'envelope' is proportional to the original audio signal, but whose average value is zero. The diode (originally a crystal diode) rectifies the AM signal, léaving a signal whose average amplitude is the desired audio signal. The average value is extracted using a simple filter and fed into an audio transducer, which generates sound.
+
+
+=== Konvérsi power ===
+Rectifiers are constructed from diodes, where they are used to convert alternating current (AC) electricity into direct current (DC). Similarly, diodes are also used in Cockcroft-Walton voltage multipliers to convert AC into very high DC voltages.
+
+
+=== Peotéksi voltase leuwih ===
+Diodes are frequently used to conduct damaging high voltages away from sensitive electronic devices. They are usually reverse-biased (non-conducting) under normal circumstances, and become forward-biased (conducting) when the voltage rises above its normal value. For example, diodes are used in stepper motor and relay circuits to de-énérgize coils rapidly without the damaging voltage spikes that would otherwise occur. Many integrated circuits also incorporate diodes on the connection pins to prevent external voltages from damaging their sensitive transistors. Specialized diodes are used to protect from over-voltages at higher power (see Diode types above).
+
+
+=== Lawang logika ===
+Diodes can be combined with other components to construct AND and OR logic gates. This is referred to as diode logic.
+
+
+=== Detéktor radiasi ionisasi ===
+In addition to light, mentioned above, semiconductor diodes are sensitive to more energetic radiation. In electronics, cosmic rays and other sources of ionising radiation cause noise pulses and single and multiple bit errors.
+This effect is sometimes exploited by particle detectors to detect radiation. A single particle of radiation, with thousands or millions of electron volts of energy, generates many charge carrier pairs, as its energy is deposited in the semiconductor material. If the depletion layer is large enough to catch the whole shower or to stop a héavy particle, a fairly accurate méasurement of the particle's energy can be made, simply by méasuring the charge conducted and without the complexity of a magnetic spectrométer or etc.
+These semiconductor radiation detectors need efficient and uniform charge collection and low léakage current. They are often cooled by liquid nitrogen. For longer range (about a centimetre) particles they need a very large depletion depth and large aréa. For short range particles, they need any contact or un-depleted semiconductor on at léast one surface to be very thin. The back-bias voltages are néar bréakdown (around a thousand volts per centimetre). Germanium and silicon are common materials. Some of these detectors sense position as well as energy.
+They have a finite life, especially when detecting héavy particles, because of radiation damage. Silicon and germanium are quite different in their ability to convert gamma rays to electron showers.
+Semiconductor detectors for high energy particles are used in large numbers. Because of energy loss fluctuations, accurate méasurement of the energy deposited is of less use.
+
+                                   Engr.Louriel R. Manatom
+
+
+=== Ngukur hawa ===
+A diode can be used as a temperature méasuring device, since the forward voltage drop across the diode depends on temperature. This temperature dependence follows from the Shockley idéal diode equation given above and is typically around 2.2mV per degree C.
+
+
+=== Parangkat dikopel muatan ===
+Digital cameras and similar units use arrays of photo diodes, integrated with réadout circuitry.
+
+
+== Tambahan ==
+Diodes may also be referred to as controlled rectifiers, abbreviated CR on printed wiring boards.
+
+
+== Fakta Menarik ==
+Dioda dina kasus gelas transparan (kalebet versi SMD modéren) tiasa gaduh sensitipitas spésis pikeun lampu (nyéta, alat éléktronik tiasa béda dina hiji hal sareng tanpa kasus, dina lampu). Sirkuit radio amatir aya diod konvensional anu dianggo salaku fotodiod sareng bahkan ogé batré surya.
+
+
+== Tempo ogé ==
+Pamodélan dioda
+
+
+== Catetan ==
+
+
+== Tumbu luar ==
+The Unusual Diode FAQ Archived 2009-04-27 di Wayback Machine

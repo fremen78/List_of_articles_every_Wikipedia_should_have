@@ -1,0 +1,225 @@
+A reseestor is a twa-endit electronic component that maks a voltage ower its ends evenly tae the circuit's voltage bi Ohm's Law. In electronic circuits, resistors are uised tae git current flow doun, sort signal levels, tae spleet voltages, bias active elements, an terminate transmission lines, among ither uises. Heigh-power resistors that can dissipate mony watts o electrical pouer as heat micht be uised as pairt o motor controls, in pouer distreebution seestems, or as test loads for generators. Fixed resistors hiv resistances that juist chynge a wee bit wi temperatur, time or operatin voltage. Variable resistors can be uised tae sort circuit elements (sic as a vollum control or a lamp dimmer), or as sensin devices for heat, licht, humidity, force, or chemical acteevity.[citation needit]
+Resistors are common elements for electrical networks an electronic circuits and are fun in loads o electronic equipment.  Practical resistors as discrete components can be made up o sindry compounds an forms. Resistors are implementit ben integrated circuits an aw.
+The electrical function for a resistor is specifeed bi its resistance: common commercial resistors are manufacturt ower a reenge o mair nor nine orders of magnitude. The nominal value for the resistance faws ben the manufacturin tolerance, indicatit on the component.
+
+
+== Electronic seembols an notation ==
+Twa teepical schematic diagram seembol are as fund ablow:
+		
+			
+			
+		
+		
+			
+			
+		
+The notation tae gie a resistor's vailye in a circuit diagram kin be different fae diagram tae diagram.
+Ae common scheme is the RKM code follaein IEC 60062. Insteid o uisin a decimal separator, this notation uises a letter loosely associatit wi SI prefixes correspondin wi the pairt's resistance. For exemple, 8K2 as pairt merkin code, in a circuit diagram or in a bill of materials (BOM) gies a resistor vailyie for 8.2 kΩ. Extrae zeros pit at the end imply a tichter tolerance, for exemple 15M0 for three signeeficant digits. Whan the vailyie can be gien wioot needin a prefix (that is, multiplicator 1), an "R" is pit in insteid o the decimal separator. For exemple, 1R2 indicates 1.2 Ω, an 18R indicates 18 Ω.[citation needit]
+
+
+== Theory for operation ==
+
+
+=== Ohm's law ===
+The behaviour for an ideal resistor is descrived bi Ohm's law:
+  
+    
+      
+        V
+        =
+        I
+        ⋅
+        R
+        .
+      
+    
+    {\displaystyle V=I\cdot R.}
+  
+Ohm's law states thit the voltage (
+  
+    
+      
+        V
+      
+    
+    {\displaystyle V}
+  
+) across a resistor is proportional tae the current (
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+) passin throu it, whaur the constant o proportionality is the resistance (
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+). For exemple, see gin a 300-ohm resistor is pit across the terminals for a 12-volt battery, than a current for 12 / 300 = 0.04 amperes flowes throu that resistor.
+The ohm (seembol: Ω) is the SI unit for electrical resistance, named for Georg Simon Ohm. An ohm is the same as a volt per ampere. As resistors are specifeed an manufacturt ower a muckle reenge o vailyies, the derived units for milliohm (1 mΩ = 10−3 Ω), kilohm (1 kΩ = 103 Ω), an megohm (1 MΩ = 106 Ω) are uised commonly an aw.
+
+
+=== Series an parallel resistors ===
+
+The tot resistance for resistors connectt ane efter the ither is thair individual resistance vailyies pit thegither.
+  
+    
+      
+        
+          R
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        +
+        
+          R
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          R
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle R_{\mathrm {eq} }=R_{1}+R_{2}+\cdots +R_{n}.}
+  
+The tot resistance for resistors connectit alangside ane anither is the reciprocal o the reciprocals for the individual resistors pit thegither.
+  
+    
+      
+        
+          
+            1
+            
+              R
+              
+                
+                  e
+                  q
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              R
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              R
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              R
+              
+                n
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{R_{\mathrm {eq} }}}={\frac {1}{R_{1}}}+{\frac {1}{R_{2}}}+\cdots +{\frac {1}{R_{n}}}.}
+  
+For exemple, a 10 ohm resistor connectit alangside in parallel wi a 5 ohm resistor an a 15 ohm resistor gies oor  1/1/10 + 1/5 + 1/15 ohm o resistance, or 30/11 = 2.727 ohm.
+A resistor netwark thit is a combination o parallel an series connections can be spleet up intae smawer pairts thit are aither ane or the ither. Some complex netwarks o resistors cannae be resolved in this mainer, needin mair sophisticatit circuit analysis. Generally, the Y-Δ transform, or matrix methods can be uised to solve sic problems.
+
+
+=== Power dissipation ===
+At ony instant, the pouer P (watts) consumed bi a resistor for resistance R (ohm) is calculatit as:
+  
+    
+      
+        P
+        =
+        I
+        V
+        =
+        
+          I
+          
+            2
+          
+        
+        R
+        =
+        
+          
+            
+              V
+              
+                2
+              
+            
+            R
+          
+        
+      
+    
+    {\displaystyle P=IV=I^{2}R={\frac {V^{2}}{R}}}
+  
+whaur V (volts) is the voltage across the resistor an I (amps) is the current flowin throu it. Uisin Ohm's law, the twa ither forms can be derived. This pouer is convertit intae heat thit haes tae be dissipatit bi the resistor's package afore its temperatur gangs up ower much.
+Resistors are ratit bi the wey o thair maximum pouer dissipation.  Discrete resistors in solid-state electronic seestems are teepically ratit as ​1⁄10, ​1⁄8, or ​1⁄4 watt. Thay normally absorb much less not a watt o electrical pouer an arenae needin a lot o tent tae thair pouer ratin.
+
+Pouer resistors are needin tae dissipate substantial amoonts o pouer an are teepically uised in pouer supplies, pouer conversion circuits, an pouer amplifiers; this designation is loosely applied tae resistors wi pouer ratins for 1 watt or mair. Pouer resistors are pheesically mair muckle an mey no uise the preferred vailyies, colour codes, an ooter packages descrived ablow.[citation needit]
+See gin the average pouer dissipatit bi a resistor is mair nor its pouer rating, daimige tae the resistor micht happen, permanently chyngin its resistance; this is distinct frae the reversible chynge in resistance due tae its temperatur coefficient whan it warms up. Ower much pouer dissipation micht heeze the temperatur for the resistor tae a pynt whaur it can burn the circuit board or nearbi components, or e'en stairt a fire. Thare are flameproof resistors thit willnae stairt flames wi ony owerload for ony amoont o time.[citation needit]
+Resistors micht be specifeed wi heicher ratit dissipation than is gien in service tae tak intae accoont puir air circulation, heich altitude, or high operatin temperatur.
+Aw resistors hive a maximum voltage ratin; this micht limit the pouer dissipation for heicher resistance vailyies. For exemple, amang ​1⁄4 watt resistors (an awfy common sort o leaded resistor) ane is listit wi a resistance o 100 MΩ an a maximum ratit voltage o 750 V. Hounaiver e'en pittin 750 V across a 100 MΩ resistor aw the time wad juist hae the ootcome power dissipation for less nor 6 mW, makin the nominal ​1⁄4 watt ratin meaninless.[citation needit]
+
+
+== Nonideal properties ==
+Practical resistors hiv a series inductance an a smaw parallel capacitance; these specifications can be important in heich-frequency applications. In a law-noise amplifier or pre-amp, the noise characteristics for a resistor micht be an issue. In some precision applications, the temperatur coefficient for the resistance micht be a concern an aw.[citation needit]
+The unwantit inductance, excess noise, an temperatur coefficient are maistly dependent on the technology uised in manufacturin the resistor. They arenae for ordinar specified individually for a parteecular faimily o resistors manufacturt uising a parteecular technology. A faimily o discrete resistors micht be characterised bi the wey o its form factor, that is, the size o the device an the poseetion o the leads (or terminals). This is relevant in the practical manufacturin o circuits thit micht uise thaim.[citation needit]
+Practical resistors are specified as havin a maximum pouer rating thit is needin tae ootding the anticipatit pouer dissipation for that resistor in a parteecular circuit an aw: this is maistly concernin pouer electronics applications. Resistors wi heicher pouer ratins are pheesically mair muckle an micht need heat sinks. Sometimes in a heich-voltage circuit, the rated maximum wirkin voltage for the resistor needs taen tent. While thare isnae a minimum wirkin voltage for a gien resistor, failure tae accooont for a resistor's maximum ratin micht cause the resistor tae catch fire whan current is ran throu it.[citation needit]
+
+
+== References ==

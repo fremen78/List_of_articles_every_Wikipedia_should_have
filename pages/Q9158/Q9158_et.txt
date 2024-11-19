@@ -1,0 +1,50 @@
+E-kiri (inglise keeles e-mail ehk email) ehk elektronkiri (kõnekeeles ka meil) on tarkvaraga seadmes (nt telefon, arvuti jne) koostatud kiri, mida saab edastada ning vastu võtta arvutivõrkudes elektroonilisel kujul. Internetis kasutatakse kirjade edastamiseks kirjade edastamise protokolli.
+Kirjade saatmiseks ja vastuvõtmiseks on vaja omada e-postkasti (kasutajakontot postiserveris), mida pakuvad tasu eest ja tasuta arvukad teenusepakkujad, lisaks ettevõtted oma töötajatele ja koolid oma õpilastele. E-kirjade vahetamise süsteem e-post on veebi kõrval kõige kasutatavam internetiteenus. 
+E-kirja saatmiseks ja saabunud kirjade lugemiseks on vaja kasutada postiprogrammi, mis võib olla ka veebipõhine. Uue kirja saatmiseks tuleb sisestada saaja e-posti aadress, sisukokkuvõte ja kirja tekstiline sisu. Enamik postiprogramme võimaldab saata üht kirja korraga mitmele adressaadile (kellest osa võivad olla märgitud koopia saajateks) ja lisada kirjale manustena faile. E-kirja maht ei ole üheselt piiratud, vaid sõltub kirja edastavate serverite seadistatud piirangutest.
+Tänapäeval saadetavatest e-kirjadest on suurem osa rämpspost (2010. aasta neljandas kvartalis 88,2%).
+
+
+== Ülesehitus ==
+E-kirja arvutite vahel edastatava vormingu (kommentaarinõue RFC 2822) kohaselt koosnevad e-kirjad ainult tekstimärkidest. Eespool asub kirja päis, selle järel paikneb kirja keha.
+
+
+=== Päis ===
+E-kirja päis annab teavet e-kirja teele saatmise aja, liikumisteekonna ning saatja ja saaja kohta.
+Iga e-kirja päise ridades peaksid sisalduma vähemalt järgmised väljad:
+
+Kellelt (From): saatja e-posti aadress ja soovi korral ka nimi. Enamik e-posti kliente küsib seda kasutajalt vaid korra, ja edaspidi täidab juba ise automaatselt.
+Kellele (To): saaja(te) e-posti aadress(id), soovi korral koos nimega. Tähistab peamisi adressaate (keda võib olla mitu); teiseste saajate kohta vaata Cc: ja Bcc: allpool.
+Teema (Subject): kirja lühikokkuvõte, milles sageli kasutatakse levinud lühendeid RE: (inglise sõna reply 'vastus' lühend; tähendab 'vastuseks kirjale') ja FWD: (inglise sõna forward 'edasi' lühend; tähistab edasisaadetud kirja).
+Kuupäev (Date): kirja saatmise kellaaeg ja kuupäev kirja saatja kohaliku aja järgi. Enamik e-posti kliente täidab kirja saatmisel selle välja automaatselt.
+Kirja ID (Message-ID): automaatselt tekitatud väli; kasutatakse selleks, et vältida sama kirja mitmekordset saatmist ja ühtlasi, et märkida vastuses (väljas In-Reply-To:), mis kirjale vastusega on tegemist.
+Ülejäänud sagedamini kasutatavad päiseväljad:
+
+Koopia Cc: kirja koopia saajad (Cc on lühend ingliskeelsest väljendist Carbon copy). Enamik e-posti kliente eristab saajaid ja koopia saajaid kirja kuvamisel.
+Pimekoopia Bcc: kirja saajad, keda teised saajad ei näe (Bcc on lühend ingliskeelsest väljendist Blind carbon copy).
+Formaat Content-Type: e-kirja tüüp, tavaliselt MIME.
+Vahendajad (Received): e-kirja edastanud serverite tekitatud teave.
+Vastuseks kirjale (In-Reply-To): kirja ID ehk identifikaator (Message-ID), mille vastus käesolev kiri on.
+Vastuse aadress (Reply-To:): e-kirja aadress, kellele saata vastused.
+
+
+=== Keha ===
+E-kirja keha on päisest eraldatud tühja reaga ja sisaldab edastatavat kirja ühes või mitmes osas. 
+RFC 2822 lõike 2.3 kohaselt tohivad e-kirja kehas olla ainult ASCII märgid. Teistsugused märgid või andmed tuleb eelnevalt kodeerida. Kodeerimist reguleerivad kommentaarinõuded RFC 2045 ja base64). Tänapäeva e-posti kliendid kodeerivad teksti ja manused vajaduse korral automaatselt. 
+Peale tavalise teksti saadetakse osalt ka hüperteksti, kas tahtmatult, e-posti kliendi algatusel, või meelega, et osa teksti esile tõsta. Ent paljud vastuvõtjad hüperteksti vastu ei võta, sest see tekitab JavaScripti või muude ressursside kasutamise tõttu turvalisusriski. Peale selle sõltub hüpertekstikoodi tõlgendus oluliselt vastuvõtja programmidest ja seadetest, mistõttu efektid ja vormingud võtavad sageli teistsuguse kuju kui saatja oli ette näinud.
+
+
+==== E-posti aadress ====
+E-posti aadress on sümbolite järjend, mis identifitseerib e-kirja saajat ja määrab sellega ära, kellele kiri edastada. SMTP-protokolli kohaselt koosneb internetis kasutatav e-posti aadress kahest osast: kasutajaosast ja domeeniosast. Nende kahe osa vahel on märk @. Näiteks e-posti aadressis info@wikipedia.org on wikipedia.org domeeniosa, info kasutajaosa. Teised edastusmehhanismid, näiteks UUCP ja X.400, kasutavad teistsugust aadressisüntaksit. 
+
+
+==== Manused ====
+Manus on fail, mis saadetakse kirja keha koosseisus. Seda võimaldab MIME-protokoll, mis reguleerib kirja keha alajaotusi ja faili kodeerimist. Manused võivad sisaldada arvutiviirusi, mistõttu tuleb nende avamisega olla ettevaatlik. 
+
+
+== Vaata ka ==
+Kiri
+Rämpspost
+Mobiilisõnum
+
+
+== Viited ==

@@ -1,0 +1,71 @@
+Un algorithmo (del latino algorismus, nominate pro le inventator de algebra Mohamet ibn Musa al-Khwarizmi) es un serie de instructiones interpretabile e finite pro resolver contingentias e accomplir qualcunque carga que ha un stato final recognoscibile, puncto final, o resultato pro cata dato possibilemente introducite in illo. (Contrasta con heuristica.) Algorithmos sovente ha passos iterate o requirente decisiones (usante le logica boolean e inequalitates) usque al completion del carga.
+In terminos mathematic formal, un algorithmo es considerate esser un qualcunque sequentia de operationes que pote esser exequite per un systema de Turing complete.
+Algorithmos differente pote compler le mesme carga con un differente serie de instructiones in plus o minus tempore, spatio, o effortio que alteres. Un recepta pro cocer es un exemplo de un algorithmo. Donate duo differente receptas pro facer salata de patatas, le un pote haber "pella le patata" ante "coce le patata in aqua" durante que le altere presenta le passos in ordine reverse; totevia ambes instrue a repeter iste passos pro tote le patatas usque le salata de patatas es preste pro esser mangiate.
+Exequer un algorithmo correctemente non solvera un problema si le algorithmo es defecte o inappropriate al problema. Per exemplo, un execution del algorithmo pro salata de patatas fallira si il non ha patatas disponibile, mesmo si tote le motiones de preparar le salata es exequite como si le patatas esseva presente.
+
+
+== Algorithmos formal ==
+Algorithmos es essential a fin que computatores tracta information, proque un programma computatorial es essentialmente un algorithmo que instrue a un computator le passos specific a exequer (e lor ordine specific) a fin de exequer un carga specific, tal como le calculation del salario de empleatos o imprimer le cartas de reporto de studentes.
+Normalmente, si un algorithmo es associate con le tractamento de information, datos es legite de un fonte o apparato pro introduction (entrata), scribite a un canal o apparato pro rendimento (sortita), e/o immagazinate pro uso futur. Datos immagazinate es reguardate como parte del stato interne del entitate exequente le algorithmo.
+Pro omne tal processo computational, le algorithmo debe esser definite rigorosemente: specificate de tal maniera que illo es applicabile a omne possibile circumstantias que poterea manifestar se. Isto es, omne passos conditional debe esser definite systematicamente, caso per caso; le criterios pro cata caso debe esser clar (e computabile).
+Pro que un algorithmo es un lista precise de passos precise, le ordine de computation es quasi sempre essential a su functionamento. Instructiones es normalmente assumite de esser listate explicitemente, e es describite como initiante 'ab le summitate' e descendente 'al fundo', un idea que es describite plus formalmente como un fluxo de controlo.
+Usque ora, iste discussion del formalisation de un algorithmo ha assummite le premissos del programmation imperative. Isto es le concepto le plus commun, e illo tenta de describer un carga de maniera discrete e 'mechanic'. Unic a iste concepto de algorithmos formalisate es le operation de assignamento, que assigna un valor a un variabile. Illo deriva del intuition de 'memoria' como un bloco de notas. Infra se trova un exemplo de un tal assignamento.
+Vide programmation functional pro un description alternative de un algorithmo.
+
+
+== Implementation de algorithmos ==
+Quando un description formal ha essite obtenite, un algorithmo es un methodo o procedura ben definite pro solver un problema mathematic o alteremente connexe al manipulation de information.
+Algorithmos se implementa hodie le plus sovente como programmas de computator sed pote esser implementate per altere medios, tales como circuitos electric o un machina. Algorithmos pote mesmo esser executate directemente per humanos: pensa per exemplo de un abaco, o le execution de arithmetica con penna e papiro o su equivalente mental – le majoritate del gente usa algorithmos apprendite in le juventute pro facer isto.
+Le analyse e studio de algorithmos es un disciplina central del informatica, e se practica sovente abstractemente (sin uso de alcun linguage de programmation specific, designate pro implementation practic). In iste senso, illo resimila altere disciplinas mathematic in le quales le analyse se concentra super le principios fundamental del execution del algorithmo, e non super alcun implementation particular de illo. Le "codification" de algorithmos de tal maniera abstracte es appellate "scriber pseudocodice".
+Alcun personas restringe le definition de "algorithmo" a proceduras con un fin. Alteres include proceduras que poterea exequer se pro sempre e continuemente, con le argumento que un computator pote deber exequer un carga continue. In tal caso on usa altere exigentias que le existentia de un stato final pro determinar si le algorithmo comple un carga con successo.
+
+
+== Typos de algorithmos ==
+Il ha plure methodos pro cassificar algorithmos, cata un con su proprie meritos.
+
+
+=== Classification per campo de studio ===
+Cata campo de scientia habe su proprie problemas que require algorithmos efficiente. Problemas relate in un campo es frequentemente studiate conjunctemente. Exemplos include algorithmos de cercar, algorithmos de assortir, algorithmos de fusionar, algorithmos numeric, algorithmos graphic, algorithmos de series, algorithmos combinatorial, algorithmos de compression, e algorithmos cryptographic.
+Le campos differente frequentemente coincide con alteres, e advantias in algorithmos in un campo pote meliorar le solutiones de problemas in altere, a vices non totalmente distincte, campos. Per exemplo, le programmation dynamic esseva inventate pro le optimisation del consumption de ressoures industrial, sed hodie illo es usate pro resolver plure categorias in plure campos.
+
+
+=== Classification per complexitate ===
+Algorithmos pote esser classificate per le quantitate de tempore que illos require pro completer, comparate al dimension de su entrata. Iste es su ordine de computation. Il ha un varietate large; alcun algorithmos se complete in tempore linear relative al dimension del entrata, sed alteres ha ordine exponential o pejor, e alcun nunquam fini. Additionalmente, alcun problemas ha plure algorithmos de differente ordines de computation, sed altere problemas ha nulle algorithmo efficiente -- o simplemente nulle algorithmo. Gratias a isto, e al intersection de campos, on crede que il es melior de classificar le problams in categorias de equivalentia, basate super le complexitate maxime del algorithmo possibile inter illos.
+
+
+== Exemplo ==
+Ecce un exemplo simple de un algorithmo.
+Imagina haber un lista non assortite de numeros qualcunque. Nostre objectivo es de trovar le numero le plus grande in iste lista. Un prime pensata super le solution rende obvie que cata numero in le lista debe esser examinate. Plus de reflexion revela que il non es necessari de reguardar cata numero plus de un vice. Con isto in consideration, ecce un algorithmo simple pro accomplir isto:
+
+Assume que le prime numero in le lista es le numero le plus grande.
+Reguarda le sequente numero, e compara lo con iste numero le plus grande.
+Solmente si iste proxime numero es plus grande, retene illo con le nove numero le plus grande.
+Repete passos 2 e 3 usque tote le lista ha essite percurrite.
+Ecce un codification plus formal del algorithmo in un pseudocodice simile al majoritate del linguages de programmation:
+
+Date: un lista Lista de longor Longor 
+
+contator = 1
+leplusgrande = Lista[contator]
+durante contator <= Longor:
+    si Lista[contator] > leplusgrande:
+        leplusgrande = Lista[contator]
+    contator = contator + 1
+imprime leplusgrande
+
+Notas super le notation:
+
+= como usate hic significa un assignamento. Isto es, le valor al dextra del expression es assignate al receptaculo (o variabile) al sinistra del expression.
+Lista[contator] como usate hic significa le elemento numero contator in le lista. Per exemplo: si le valor de contator es 5, alora list[contator] refere al 5te elemento del lista.
+<= como usate hic significa "minus de o equal a".
+In le practica, le majoritate de personas qui implementa algorithmos vole saper quanto un particular ressource (tal como tempore o immagazination) un algorithmo donate require. Il ha essite disveloppate methodos pro le analyse de algorithmos pro obtener tal datos quantitative, e quando vos ha legite iste section, vos determinara que iste algorithmo ha un requirimente temporal de O(n), ubi le notation de O majuscule esseva usate e n representa le longor del lista.
+
+
+== Historia ==
+Le parola algorithmo proveni del anglese algorithm que es un modification de algorisme del latino medieval que proveniva del nomine del mathematico persian Mohamet ibn Musa al-Khwarizmi (ca. 780 - ca. 845). Ille esseva le autor del libro Kitab al-jabr w'al-muqabala (Regulas de restauration e de reduction) que introduceva le algebra al gente occidental. Originalmente le parola refereva solmente al regulas de exequer arithmetica con numerales arabe sed finalmente evolveva a includer omne procedura definite pro resolver problemas o exequer cargas. Le parola algebra mesme proveni de al-Jabr del titulo del libro. 
+Le prime caso de un algorithmo scribite pro un computator esseva le notas super le motor analytic de Ada Lovelace scribite in 1842, le quales la ha donate le titulo de prime programmator del mundo.
+Le manco de rigor mathematic in le definition "procedura ben definite" de algorithmos poneva alcun difficultates al mathematicos e al logicos del seculo 19 e del initio del seculo 20. Iste problema esseva pro le major parte resolvite con le description del machina de Turing, un modello abstracte de un computator describite per Alan Turing, e le demonstration que omne methodo pro describer "proceduras ben definite" trovate usque hodie per altere mathematicos poterea esser emulate in un machina de Turing (un declaration cognoscite como le these de Church-Turing).
+Hodie, un criterio formal pro un algorithmo es que illo es un procedura implementabile in un machina de Turing completemente specificate o in un del formalismos equivalente. Le interesse initial de Turing esseva in le problema de haltar, i.e. de decider quando un algorithmo describe un procedura que ha un fin. In terminos practic, le theoria de complexitate computational importa plus: illo include le problema mysteriose del algorithmos appellate NP-complete, que es generalmente presumite de prender un quantitate de tempore plus que polynomial.
+
+
+== Referentias ==

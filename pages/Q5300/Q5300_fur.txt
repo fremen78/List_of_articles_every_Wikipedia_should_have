@@ -1,0 +1,33 @@
+La CPU (Central Processing Unit, Unitât centrâl di elaborazion) e je il çurviel dal ordenadôr.
+La sô funzion e je chê di fâ calcui a grande velocitât.
+Lis prestazions di un ordenadôr a dipendin soredut di chest component, parcè che se la velocitât (GHz) e aumente, a aumentin il numar di operazions che al rive adore a fâ in un secont.
+
+
+== Gjenars ==
+A esistin dôs fameis di CPU:
+
+cun architeture Von Neumann classiche, dulà che dâts e istruzions a risiedin te stesse memorie (in chel mût chi al è possibil vê un codis che si modifiche di bessôl). Cheste architeture e je la plui comune, par vie de sô semplicitât e flessibilitât.
+cun architeture Harvard: i dâts e lis istruzions a risiedin in dôs memoriis difarentis. Cheste architeture e garantìs prestazions plui elevadis, parvie che lis dôs memoriis a puedin lavorâ in paralêl; l'inconvenient al è che chest gjenar di architeture al è plui complicât di gjestî. E je tipichementri usade intai DSP.
+
+
+== Architeture ==
+Lis CPUs a contegnin:
+
+une Unitât aritmetiche-logjiche (ALU), che si ocupe di eseguî lis operazions logichis e aritmetichis;
+une Unitât di control, che e leç de memorie lis istruzions, i eventuâi dâts par cheste ultime, e eseguìs la istruzion e e memorize il risultât scrivint te memorie o in un regjistri de CPU.
+uns regjistris, speciâls locazions di memorie dentri de CPU, une vore velocis, dulà ch'al è possibil acedi plui rapidementri rispiet ae memorie: il valôr complessîf di ducj i regjistris de CPU al costituìs il stât dulà che si cjate intun dât moment. Doi regjistris simpri presentis a son:
+il regjistri IP (Instruction Pointer) o PC (Program Counter), che al conten la direzion de cele in memorie de prossime istruzion di eseguî;
+il regjistri dai flag: chest regjistri nol conten valôrs numerics convenzionâi, ma al è pluitost un insieme di bit, clamâts flag, che a segnalin i stâts particolârs de CPU e uns informazions sul risultât de ultime operazion eseguide. I flag plui impuartants a son:
+Flag di stât:
+Overflow: al indiche se il risultât de operazion precedentementri eseguide al è trop grant par il cjamp risultât: 1 al significhe presence di overflow, 0 tai altris câs;
+Zero: al vâl 1 se la ultime operazion e à vût come risultât il numar zero; altrimentri al val 0.
+Carry: al vâl 1 se la ultime operazion e à ecedût la capacitât dal regjistri che al conten il risultât, altrimentri al vâl 0 (a esempli: in un regjistri a 8 bit, che al pues rapresentâ dome numars di 0 a 255, la some 178 + 250 e darès come risultât 172 e il carry al sarès puest a 1).
+Segn: al indiche il segn dal risultât de ultime operazion eseguide: 0 al è risultât positîf, 1 negatîf
+Flag di control:
+Interrupt: se al à come valôr 1, la CPU e mole di rispuindi aes richiestis esternis di servizi des periferichis (i segnâi des liniis IRQ) fintremai che nol ven tornât a meti il valôr 0, o fin a che nol rive un segnâl di reset dal esterni.
+
+
+== Viôt ancje ==
+
+
+== Leams ==

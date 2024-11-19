@@ -1,0 +1,114 @@
+E-mail is digitaal, elektronisch postverkeer. Er wordt zowel het bericht mee bedoeld, als de berichtendienst, als het onderliggende technische systeem (programma). Als synoniemen worden gebruikt: mail, e-post, e-brief, elektronische post en elektronische brief.
+Oorspronkelijk bevatte de e-mail primair tekst, maar al snel ontstonden mogelijkheden om andere data mee te sturen die daartoe als tekenset in een afzonderlijk tekstblok gecodeerd werden. Sinds 1982 wordt hiervoor doorgaans de MIME-standaard gebruikt. De andere data wordt "bijlage" of in het Engels "attachment" genoemd.
+
+
+== Geschiedenis ==
+Voorgangers van e-mail zijn de brief, het telegram, de telex, de telefax en binnen Nederland het op Datanet gebaseerde Memocom 400 dat echter nooit succesvol werd. In de context van e-mail werd de veel tragere analoge brievenpost de eerste decennia van de ontwikkling wel snail mail, Engels voor slakkenpost, genoemd.
+De eerste e-mail over een computernetwerk werd in 1971 door Ray Tomlinson verzonden. In 1982 werd het protocol RFC 822 gepubliceerd dat ook beschrijft hoe bijlages meegestuurd kunnen worden. Vanaf 1995 werd het populair bij het grote publiek toen het internet meer algemeen toegankelijk werd. E-mail kan echter ook met andere technieken dan het internet verstuurd worden.
+
+
+== Etymologie ==
+De Engelse term mail is afgeleid van het woord voor reistas (1205), verwant met Oudfrans male (beurs), < Frankisch *malha, Indo-Europees *molko- "huis, tas". Via de brieventas heeft het begrip zich ontwikkeld tot de drager van de poststukken (1654) en uiteindelijk tot het bericht zelf. De Oxford dictionary legt het e-voorvoegsel als volgt uit: "Het gebruik van elektronische dataverzending, vooral via internet".
+
+
+=== Schrijfwijze ===
+Internationaal is email de meest gebruikte versie. De officiële Nederlandse spelling is e-mail, dus met streepje, omdat het een samenstelling is met een letter en als homograaf verward zou kunnen worden met de emaillen beschermlaag.
+
+
+== Techniek ==
+Technisch wordt e-mail beschreven in RFC 561 en RFC 861
+In hoofdzaak zijn twee typen functies benodigd:
+
+de zogenaamde MUA (mail user agent), het softwareprogramma dat de gebruiker van de e-mail ziet en gebruikt om e-mail te lezen en schrijven;
+de zogenaamde MTA (mail transfer agent), het softwareprogramma dat de e-mail van de MUA aanneemt en verder verstuurt naar een volgende MTA of naar een MUA.
+De MTA is vergelijkbaar met de postbode en de keten van postkantoren in het traditionele briefverkeer.
+
+
+=== Routering en infrastructuur ===
+
+Over het algemeen wordt een e-mail niet direct naar de ontvanger gestuurd, maar verloopt de verzending via een of meer tussenschakels.
+Elke e-mail wordt door de MUA voorzien van een header ('koptekst') die van de door de gebruiker geschreven tekst gescheiden is met twee regelovergangen. In deze header staan onder meer de gegevens die de MTA nodig heeft bij het doorsturen van de e-mail. Een e-mail kan - afhankelijk van de adressering - naar meerdere adressen doorgestuurd worden.
+Als de geadresseerde en alle tussenstations online zijn, kan een e-mail in seconden op de plaats van bestemming zijn. Het protocol garandeert dit echter niet. Wat wel door het protocol gegarandeerd wordt, is dat de e-mail door de MTA na een instelbare tijd als "onbestelbaar" wordt teruggestuurd naar de afzender. Traditioneel zal de MTA ingesteld zijn om na enkele uren ter informatie een waarschuwing aan de afzender te sturen; na vijf dagen geeft de MTA het op en stuurt de e-mail retour.
+
+
+==== Bounce ====
+Het terugsturen van de e-mail lukt om uiteenlopende reden niet altijd. Dan is er sprake van een zogenaamde "bounce" (ping-pong). De MTA probeert zo'n situatie te herkennen en geeft dan alle pogingen voor deze e-mail op.
+
+
+==== Ontvangstbevestiging ====
+Sommige MUA's bieden aan om een ontvangstbevestiging te vragen bij de ontvanger. Daar dit niet in het oorspronkelijke e-mailprotocol was opgenomen, is er geen garantie dat dat werkt. Dat is dan mede afhankelijk van de MUA die de ontvanger gebruikt. Voor de MTA is een ontvangstbevestiging een onafhankelijke e-mail die op zijn beurt al dan niet succesvol ergens moet worden afgeleverd.
+
+
+=== Internet ===
+Voor het doorsturen van e-mail wordt gebruikgemaakt van een aantal andere internetdiensten, met name DNS. Een e-mailgebruiker gebruikt een bepaald e-mailaccount, bijvoorbeeld bij een Internet Service Provider (ISP) of een andere aanbieder van e-maildiensten zoals Gmail, Yahoo!, Hotmail of Windows Live Mail.
+Aan een e-mailaccount is een e-mailadres gekoppeld, dat nodig is om e-mail te kunnen ontvangen. Dit adres is opgebouwd uit een aantal delen: een gebruikersnaam, het @-teken, server- of ISP-naam, en het topleveldomein, bijvoorbeeld .nl.
+Voorbeeld: jan.jansen@example.nl
+Hier is:
+
+"jan.jansen" de gebruikersnaam
+"example.nl" de domeinnaam met slechts twee niveaus, met ".nl" de topleveldomein-aanduiding en als tweede niveau "example" (kan de ISP-naam zijn)
+Meestal is niet alleen de domeinnaam, maar het hele e-mailadres hoofdletterongevoelig, zodat bijvoorbeeld Jan.Jansen@example.nl hetzelfde e-mailadres representeert.
+
+
+=== SMTP ===
+
+Het Simple Mail Transfer Protocol is de de-facto-standaard voor het verzenden van e-mail via het internet.
+
+
+=== UUCP ===
+Vooral in de begintijd van het e-mailverkeer en voordat het internet als zodanig algemeen toegankelijk was, werd e-mail veelal met het UUCP (Unix to Unix Copy)-protocol verstuurd. De adressering ziet er daarbij anders uit: een reeks van adressen van tussenstations, gescheiden door uitroeptekens. Doordat alle tussenstations in het adres zijn opgenomen, is er geen centrale database zoals DNS nodig om de e-mail door te sturen.
+
+
+=== Websites als MUA (Mail User Agent) ===
+Een andere manier om e-mail te versturen is via een website. Daarbij wordt aan de gebruiker bijvoorbeeld een formulier gepresenteerd.
+Bedrijven maken graag van deze mogelijkheid gebruik om de inhoud van de e-mail (deels) te standaardiseren door bijvoorbeeld keuzelijsten aan te bieden met productgroepen of de gebruiker te verplichten bepaalde adresgegevens te versturen.
+Het bedrijf hoeft daarbij zijn e-mailadres niet te publiceren en ontvangt daardoor minder spam.
+
+
+==== Nadelen ====
+De gebruiker is minder vrij in het schrijven van de e-mail, de interface biedt gewoonlijk minder functies dan het eigen bekende e-mailprogramma en doorgaans is het niet mogelijk om bijlages te versturen langs deze weg.
+Soms moeten bepaalde gegevens verplicht ingevuld worden die op geldigheid gecontroleerd worden. Bijvoorbeeld een Amerikaans telefoonnummer. Kan de verzender dat niet opgeven, dan kan hij geen bericht verzenden.
+De lengte van het bericht wordt vaak beperkt, bijvoorbeeld tot 1000 tekens. Hiermee wil het bedrijf de werkdruk op het personeel verhinderen. De verzender kan daardoor soms niet zeggen wat hij zeggen wil, of hij gaat afkortingen gebruiken die de leesbaarheid niet ten goede komen.
+
+
+=== Brievenbus voor e-mail ===
+E-mail kan, net als gewone brievenpost, onderweg in een brievenbus belanden. Deze brievenbus kan door een MUA direct worden gelezen of via een post office protocol of Internet Message Access Protocol. De functie en werking van deze systemen is in de betreffende artikelen beschreven.
+
+
+== Misbruik ==
+In de bijlage kunnen virussen en andere schadelijke software verstuurd worden. Als de MUA deze zonder meer uitvoert, is dat voor de ontvanger een probleem.
+Ongeveer 55% van het totale e-mailverkeer is spam. Ooit was dit meer dan 90%. Dit is niet alleen een ergernis voor de ontvanger. Het is tevens een last voor de verbindingscapaciteit en voor de verwerkingscapaciteit van computers en gebruikers.
+Net als bij brievenpost is er geen garantie dat het afzenderadres correct is. Omdat e-mail goedkoop en laagdrempelig is, is het een geliefd instrument geworden voor oplichters.
+Door dit hiaat kan iedereen een e-mail versturen met een vals afzenderadres. Hierdoor krijgen internetgebruikers e-mails in hun postvak die zich voordoen als belangrijke berichten en de gebruiker oproepen actie te ondernemen waardoor ze persoonlijke gegevens zouden meedelen via een nagemaakte website, zoals een wachtwoord of een pincode. Deze vorm van misbruik wordt phishing genoemd. Verder kan e-mail als lokaas dienen voor een oplichtingstruc, bijvoorbeeld Nigeriaanse oplichting of een kettingbrief.
+Een andere vorm van misbruik is het aan een grote groep doorsturen van informatie met het doel een persoon of bedrijf te schande te zetten (naming and shaming).
+
+
+== Nevenwerking van e-mailverkeer ==
+De laagdrempeligheid van het schrijven van een e-mail heeft invloed op de onderlinge communicatie en brengt ook gevaren met zich mee.
+Onderzoek van Motivaction, uitgevoerd in opdracht van Douwe Egberts, wees uit dat e-mailverkeer op de werkplek persoonlijk contact tussen collega's onder druk zet en zorgt voor een minder prettige werksfeer. De helft van de collega's e-mailt of belt elkaar terwijl men net zo makkelijk even langs kan lopen. Vanwege dit spontane contactverlies face to face, verbood het ICT-bedrijf Atos het dikwijls onnodige e-mailen zo veel mogelijk onder zijn personeel.
+Een ander nadeel van (zakelijke) e-mail is dat fouten en onzorgvuldigheden sneller kunnen voorkomen, omdat het medium laagdrempeliger is en omdat men makkelijker met meerdere personen tegelijkertijd kan communiceren. Bij het schrijven van een brief is er een zekere bedenktijd, vanwege de vereiste handelingen van schrijven, in een envelop stoppen, posten en frankeren.
+
+
+== Nederland ==
+
+
+=== Juridische waardering ===
+Op 24 maart 2009 werd door de rechtbank Zwolle, in een bestuursrechtelijke zaak tegen het UWV met betrekking tot een weigering van een WW-uitkering na een vrijwillig overeengekomen beëindiging van een arbeidsovereenkomst, uitgesproken dat, gelet op de ontwikkelingen in de moderne communicatie, ook correspondentie per of vastlegging in e-mail in beginsel kan worden aangemerkt als schriftelijk.
+Om een overeenkomst te sluiten tussen twee partijen moet één partij een aanbod doen dat door de andere wordt geaccepteerd. De wijze waarop is in principe vrij. Het kan dus ook per e-mail, en geldt dan als koop op afstand.
+Ook als de overeenkomst schriftelijk moet worden gesloten, kan dat volgens het Burgerlijk Wetboek onder voorwaarden per e-mail (BW Boek 6, artikel 227a):
+1. Indien uit de wet voortvloeit dat een overeenkomst slechts in schriftelijke vorm geldig of onaantastbaar tot stand komt, is aan deze eis tevens voldaan indien de overeenkomst langs elektronische weg is tot stand gekomen en
+
+a. raadpleegbaar door partijen is;
+b. de authenticiteit van de overeenkomst in voldoende mate gewaarborgd is;
+c. het moment van totstandkoming van de overeenkomst met voldoende zekerheid kan worden vastgesteld; en
+d. de identiteit van de partijen met voldoende zekerheid kan worden vastgesteld.
+Als een overeenkomst via e-mail is gesloten, kan die overeenkomst ook weer via e-mail worden ontbonden. (BW Boek 6, artikel 267) Voor het vaststellen van de authenticiteit kan de elektronische handtekening uitkomst bieden.
+In 2014 werd door de Europese Unie de eIDAS-verordening aangenomen die in 2016 in werking trad, en waardoor elektronische aangetekende zendingen een juridisch kader kregen.
+
+
+== Andere vormen van digitaal berichtenverkeer ==
+Er zijn ook vormen van digitaal berichtenverkeer die niet onder het begrip e-mail vallen, zoals sms, mms, en instant messaging, bijvoorbeeld WhatsApp. Ook kan een webpagina (naast webmail, die onder het begrip e-mail valt) ook anderszins de mogelijkheid bieden digitale informatie te versturen, door tekst in een of meer invulvakken te plaatsen en/of een bestand te uploaden, en/of opties aan te vinken of anderszins te selecteren.
+
+
+== Externe link ==
+(en) Richard Griffiths, History of Electronic Mail. Gearchiveerd op 18 augustus 2010. Geraadpleegd op 30 oktober 2010.

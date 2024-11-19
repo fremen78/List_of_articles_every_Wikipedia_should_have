@@ -1,0 +1,302 @@
+Logik (fra græsk λόγος, logos = sprog, ord, system, samling) er en filosofisk disciplin, der undersøger hvorvidt argumenter er i overensstemmelse med de klassiske tankelove, såsom kontradiktionsprincippet, den udelukkede midte og identitetsloven.
+Disciplinen kan inddeles i formel og uformel logik.
+I formel logik tester man gyldigheden, som har at gøre med hvorvidt de enkelte dele i givne argumenter følger af hinanden (qua strukturen).
+I uformel logik tester man sandheden, som har med argumentets indhold og semantik at gøre.
+Herudover arbejder man med holdbarhed.
+Når et arguments konklusion med logisk nødvendighed følger af præmisserne, så er argumentet gyldigt.
+Når selve indholdet af et gyldigt argument også er sandt, så er det holdbart.
+Et argument kan se sådan ud:
+
+Præmis: "Hvis du er en kat, så er du et reptil."
+Præmis: "Du er en kat."
+Konklusion: "Derfor er du et reptil."
+Vi kan formalisere det således:
+
+P1: Hvis A, så B
+P2: A
+K: Derfor B
+Med logiske konnektiver (forbindelsesled) skrives dette som:
+
+A → B
+A
+∴ B
+Argumentet er gyldigt, men det er ikke sandt, da katte for det første ikke er reptiler (men pattedyr), da man for det andet ikke kan være et reptil og et pattedyr på samme tid, og da man for det tredje enten må være et reptil, eller være noget andet end et reptil.
+Historisk stammer den klassiske logik fra Aristoteles. Hans syllogismer var standard inden for logikken helt op til 1879, hvor Gottlob Frege udgav sin Begriffsschrift, som var en milepæl i filosofien og moderne logik, matematik og datalogi.
+
+
+== Områder inden for logik ==
+Matematik
+Matematisk logik
+Prædikatlogik
+Domslogik
+Modallogik
+Epistemisk logik
+Temporal logik
+Dynamisk logik
+
+
+== Konnektiver i filosofisk udsagnslogik ==
+For at udtrykke udsagn i formel logik, så anvender man såkaldte konnektiver (forbindelsesled).
+Disse kan have forskellige tegn, alt efter hvilket sted man studerer ved.
+
+Konklusionsindikator (Derfor): ∴ eller ├
+Negation (Ikke): ¬ eller ~
+Konjunktion (Og): ᴧ eller • eller &
+Disjunktion (Eller): v
+Konditional (Hvis...så): → eller ⊃
+Bikonditional (A kun, og kun hvis, B): ↔ eller ≡
+
+
+== Sandhedstabeller i filosofisk udsagnslogik ==
+
+
+=== Forklaring af betydningen af tabellernes indhold ===
+
+
+=== Negation ===
+Huskeregel: Altid modsat.
+
+
+=== Konjunktion ===
+Huskeregel for udsagnsresultat: Kun sandt hvis begge er sande.
+
+
+=== Disjunktion ===
+Huskeregel for udsagnsresultat: Kun falsk hvis begge er falske.
+
+
+=== Konditional ===
+Huskeregel for udsagnsresultat: Kun falsk hvis s→f.
+
+
+=== Bikonditional ===
+Huskeregel for udsagnsresultat: Kun sandt hvis begge er ens.
+
+
+== Eksempler på anvendelsen af sandhedstabeller ==
+Bemærk at ".", "-" og "*" er placeret for mere overblik over udregningsprocessen.
+"." bruges til at udregne "-", og "-" til at udregne "*".
+
+a)     (A → B)  ᴧ  (A  ᴧ  ¬B)
+A B
+T T     T T T   F   T  F  F T
+T F     T F F   F   T  T  T F
+F T     F T T   F   F  F  F T
+F F     F T F   F   F  F  T F
+        . - .   *   .  -  .
+
+b)       (A → (B v C)) → (A → (B ᴧ C))
+A B C
+T T T     T T  T T T   T  T T  T T T
+T T F     T T  T T F   F  T F  T F F
+T F T     T T  F T T   F  T F  F F T
+T F F     T F  F F F   T  T F  F F F
+F T T     F T  T T T   T  F T  T T T
+F T F     F T  T T F   T  F T  T F F
+F F T     F T  F T T   T  F T  F F T
+F F F     F T  F F F   T  F T  F F F
+          . -    .     *  . -    .
+
+Bemærk at ".", "-" og "*" ikke bruges til udregninger på tværs af argumentets dele (separeret af hhv. komma og konklusionsindikator).
+
+c)      (A → B), ¬(A v B) ⊦ ¬(A ᴧ B)
+A B
+T T      T T T   F T T T    F T T T
+T F      T F F   F T T F    T T F F
+F T      F T T   F F T T    T F F T
+F F      F T F   T F F F    T F F F
+         . - .   * . - .    * . - .
+
+Fremgangsmæssigt afvikles parenteser først (hvis der er flere: dem med negation først), hvorefter disses værdier bruges til at udregne sætningens hovedkonnektiv.
+Metoden for sandhedstabeller kan bruges til at finde ud af om argumenter er hhv.:
+
+Tautologiske/valide: At alle udsagn er sande i sandhedstabellen.
+Kontradiktoriske: At alle udsagn er falske i sandhedstabellen.
+Konsistente: At det er muligt for alle udsagn at være sande på samme tid / At der findes mindst ét udsagnsresultat hvor alle sætninger er sande på samme tid / At sammenlægningen af flere sætninger ikke leder til en kontradiktion.
+Inkonsistente: At der ikke findes noget udsagnsresultat hvor alle sætninger er sande på samme tid.
+Ækvivalente: At flere sætninger har identiske værdier i sandhedstabellen.
+Gyldige: At der ikke findes et modeksempel.
+Ugyldige: At et modeksempel findes.
+For at klargøre, så er rækkerne fra venstre til højre hver især en mulighed man udregner ved de givne sætninger.
+
+
+== Kvantorer i filosofisk prædikatslogik ==
+I prædikatslogik bygger man ovenpå udsagnslogik, og tilføjer to såkaldte kvantorer. De ser sådan ud:
+
+Eksistenskvantoren (mindst én): ∃
+Universalkvantoren (alle): ∀
+De benyttes til at udtrykke mængder i formler.
+Der er ækvivalente måder hvorpå begge kvantorer kan bruges (dvs. tilsvarende måder at udtrykke noget på, via den ene eller den anden kvantor).
+Måderne er som følger:
+
+¬∀xGx (ikke alle er glade)
+∃x¬Gx (mindst én er ikke glad)
+og
+
+∀x¬Gx (alle er ikke glade)
+¬∃xGx (der er ikke mindst én, der er glad/ingen er glade)
+Man udtrykker her egenskaber med stort bogstav, og substantiver med lille.
+I udsagnslogik kan dette være omvendt.
+Med prædikatslogik lærer man endvidere at teste udsagn, der indeholder disse kvantorer.
+Her bruger man dog ikke sandhedstabeller, men såkaldte sandhedstræer, der er en anden metode.
+Sandhedstræer bruger hhv. stablingsregler og forgreningsregler.
+
+
+== Stablingsregler i filosofisk logik ==
+
+
+=== Dobbelt negation ===
+¬ ¬A
+   A
+
+
+=== Konjunktion ===
+ AᴧB
+  A
+  B
+
+
+=== Disjunktion ===
+¬ (AvB)
+   ¬A
+   ¬B
+
+
+=== Konditional ===
+¬ (A→B)
+    A
+   ¬B
+
+
+== Forgreningsregler i filosofisk logik ==
+
+
+=== Konjunktion ===
+¬ (AᴧB)
+    ∧
+  ¬A ¬B
+
+
+=== Disjunktion ===
+  AvB
+   ∧
+  A  B
+
+
+=== Konditional ===
+   A→B 
+    ∧
+  ¬A  B
+
+
+=== Bikonditional ===
+   A↔B
+    ∧
+  A   ¬A
+  B   ¬B
+
+
+=== Negeret bikonditional ===
+ ¬ (A↔B)
+     ∧
+   A   ¬A
+  ¬B    B
+
+¬ (A↔B)
+    ∧
+ ¬A    A
+  B   ¬B
+
+
+== Eksempler på anvendelsen af sandhedstræer ==
+Eksempel uden kvantorer:
+For mere overblik over fremgangen, så er hhv. "A1-B2" placeret på venstre side og "1a-4b" på højre.
+Hver side udregnes separat.
+Venstre: Først A1-A2. Så B1-B2.
+Højre: Først 1a-1b. Så 2a-2b. Osv.
+
+                             ¬((pvq) ↔ ¬ (¬p ᴧ ¬q))
+                    --------------------------------------
+			              ∧
+	   B1	         p v q			¬(p v q)	 1a
+	  	    ¬¬(¬p ᴧ ¬q)			¬(¬p ᴧ ¬q)	    2a
+	A1	      (¬p ᴧ ¬q)			¬p		 1b
+	A2	             ¬p			¬q		 1b
+	A2	             ¬q			 ∧		    2b
+	   B2	              ∧		    ¬¬p    ¬¬q		       3a 4a
+	         	    p   q	      p      q		       3b 4b
+                            x   x             x      x
+
+Eksempel med kvantorer:
+Tallene fra "1a" til "6b" er placeret for mere overblik over udregningsprocessen.
+1a er det første skridt, 1b det næste.
+Fortsat med 2a, 2b.
+3a, 3b, osv.
+
+∀x(Gx v Sx), ∃x¬Gx ∴ ∀xSx
+
+	∀x(Gx v Sx)	        4a
+	∃x¬Gx		    2a
+	¬∀xSx		  1a	
+	------------------
+	∃xSx		  1b  3a
+	¬Ga		    2b
+	¬Sb		      3b
+	Ga v Sa		        4b 5a
+	Gb v Sb		             6a
+	   ∧		           5b
+	Ga   Sa
+        x     ∧ 	             6b
+	    Gb  Sb
+                x
+
+Fremgangsmæssigt starter man med at anstille argumentet (ovenfor den stiplede linje).
+Dvs. hver sætning (adskilt af et komma, eller konklusionsindikatoren) sættes på hver sin linje.
+Konklusionen får et negationstegn foran, da vi søger at modvise argumentet ved at finde et modeksempel.
+
+Herefter afvikles argumentet (under den stiplede linje) i følgende orden:
+
+¬
+andre konnektiver
+∃
+∀
+stablings- og forgreningsregler (stabling først for at undgå dobbeltarbejde)
+En negeret kvantor omvendes til et ækvivalent udtryk, for at fjerne negationen (se ækvivalente måder under Kvantorer, længere oppe).
+Omvendingen skrives nederst i ens foreløbige gennemgang.
+Ved eksistenskvantoren skal man instantiere.
+Dvs. man fjerner kvantoren og dens x, og erstatter det resterende x med et lille bogstav (fra a til w).
+Instantieringen (det resterende, store bogstav samt det nye, lille bogstav) skrives så nederst i ens foreløbige gennemgang.
+Per instantiering skal et nyt, lille bogstav bruges (som hverken er i argumentets originale form, eller blandt dem brugt til at instantiere).
+Ved universalkvantoren instantierer man osse.
+Her gøres det for samtlige små bogstaver, der pt er i stykket.
+Per instantiering tager man dog ikke nye bogstaver i brug, men bruger af dem, der allerede er (og ét bogstav per linje/instantiering).
+Instantieringerne skrives nederst i ens foreløbige gennemgang.
+Efter dette gennemgår man stablings- og forgreningsregler for evt. uafviklede dele.
+Disse skrives nederst i ens foreløbige gennemgang.
+Til sidst tjekker man for modsigelser (fx Sb og ¬Sb) via den korteste rute man kan finde op igennem træet til toppen.
+Finder man en modsigelse, så lukker man grenen modsigelsen er i (ved at sætte x i bunden).
+Metoden for sandhedstræer kan bruges til at finde ud af om sætninger/argumenter er hhv.:
+
+Konsistente/gyldige/tautologiske: At alle grene lukkes i den negerede version.
+Inkonsistente/ugyldige/kontradiktoriske: At en eller flere grene er åbne i den negerede form.
+Ækvivalente: At alle grene lukkes i den negerede version af et bikonditionalt udsagn.
+Kontingente: At et udsagn har mindst én gren åben i både dets normale og negerede form.
+
+
+== Se også ==
+deduktion, induktion (psykologi), konjunktion, logisk operator, modus ponens, modus tollens, fuzzy logik, udsagnslogik, prædikatlogik, mængdelære, hypotese, aksiom, bevis, matematisk bevis, matematisk sætning.
+
+
+== Litteratur ==
+Espersen, Jon: Logik og argumenter. Kbh. 1975.
+Gundersen, Lars Bo: Hej logik. Aarhus universitetsforlag, 2017.
+Hendricks, Vincent F., Thought 2 Talk: A Crash Course in Reflection and Expression, 2006, New York: Automatic Press / VIP ISBN 87-991013-7-8.
+Hendricks, Vincent F. og Andur Pedersen, Stig., Moderne elementær logik, 2003, København: Forlaget Høst & Søn. 2. reviderede udgave, 2011
+Hendricks, Vincent F. og Stjernfelt, Frederik., Tal en tanke: om klarhed og nonsens i tænkning og kommunikation, 2007, København: Samfundslitteratur.
+Torben Braüner: Logikkens Muligheder og Grænser. Aktuel Naturvidenskab, 6, 2006.
+Howson, Colin. "Logic With Trees". 1997, Routledge.
+Priest, Graham: Logic: a very short introduction to logic, Oxford University Press, 2000. Her finder du også en glimrende bibliografi, hvis du vil vide endnu mere.
+Vor tids filosofi 2. Videnskab og sprog. Politikens Forlag 1982. ISBN 87-567-3544-8
+
+
+== Noter ==

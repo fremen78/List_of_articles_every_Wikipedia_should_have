@@ -1,0 +1,386 @@
+Ei  likning er ei matematisk utsegn som uttrykker at to storleikar er like. Likninga inneheld ei venstreside og ei høgreside, delt av eit likskapteikn.
+Ei likning kan ha ein eller fleire ukjende variablar. Ofte vert «x», «y» og «z» brukt som nemningar på variablane. Å løysa ei likning vil seia å finna desse ukjente variablane, gjerne under visse andre føresetnadar. Tilleggsføresetnadane kan til dømes vera at variablane skal vera reelle tal eller at dei skal oppfylla bestemte tilleggslikningar.
+
+
+== Å løysa likningar ==
+Formelt kan ei likning skrivast som f(x) = g(x), der x står for ein vektor av variablar. Å løysa ei likning vil seia å finna alle moglege eksplisitte uttrykk for vektoren x. Ein standardteknikk for å få dette til er å finna ein funksjon h slik at x = h(f(x)) = h(g(x), der uttrykket til høgre er uavhengig av variablane. Som oftast vert denne funksjonen funne i løpet av fleire trinn. Ofte må me også dela oppgåva opp i fleire segment ved å nytta såkalla multifunksjonar.
+
+
+== Likning med ein ukjend ==
+Tenk på likninga som ei vekt. For at likninga skal vera i balanse, må begge sidene vera like. Dette gjer du ved å gjera det same med begge sidene. Viss det står + 6, så legg du til -6 på begge sider for å flytta til andre sida. 
+
+2x + 6 = 4x - 6
+Likninga
+2x + 6 - 4x - 6 = 4x - 6 - 4x - 6
+Samla ledda med x på venstre sida og dei reine tala på høgre sida
+2x - 4x = -6 - 6
+-2x / -2 = -12 / -2
+x = 6
+Løysinga
+
+Det går an å gjera det enklare:
+
+2x + 6 = 4x - 6
+2x - 4x = -6 - 6
+-2x / -2 = -12 / -2
+x = 6
+
+
+== Likningar med to ukjende ==
+
+For å løysa likningar der to variablar er ukjende, må ein ha eit «likningssett», altså to definisjonar av verdien til den andre ukjende.
+
+y = 2x + 18
+y = 3x - 9
+
+Det finst tre typiske måtar å løysa likningssettet på.
+
+
+=== Grafisk løysing ===
+Du kan teikna eit koordinatsystem og teikna inn funksjonane y = 2x + 18 og y = 3x - 9. Der linene møtest, finn du x og y som koordinata til skjæringspunktet. Men dette er til dels unøyaktig fordi skjæringspunktet blir funne på augemål.
+
+
+=== Innsetjingsmetoden ===
+Tilpass likningane slik at ein av dei ukjende er åleine på den eine sida i minst ei av likningane, sett denne verdien inn i den andre likninga, og løys resultatet som ei likning med ein ukjend:
+
+y = 2x + 18
+y = 3x - 9
+
+2x + 18 = 3x - 9
+2x - 3x = -9 - 18
+-x / -1 = -27 / -1
+x = 27
+
+Så set du inn verdien 27 for x, og finn ut kor mykje y er.
+
+y = 2x + 18
+y = 2 * 27 + 18
+y = 54 + 18
+y = 72
+
+Eller:
+
+y = 3x - 9
+y = 3 * 27 - 9
+y = 81 - 9
+y = 72
+
+
+=== Addisjonsmetoden ===
+Tilpass likningane slik at faktoren foran den eine ukjende er motsett (t.d. 3 og -3) i dei to likningane, addér likningane, og løys resultatet som ei likning med ein ukjend:
+
+y = 2x + 18 | * -1,5
++ y = 3x - 9
+-----------------------------
+-1,5y = -3x - 27
++ y = 3x - 9
+-----------------------------
+
+Sjå korleis 3x forsvinn:
+
+-0.5y * -2 = -36 * -2
+y = 72
+
+Så snur du likningssettet:
+
+y = 2x + 18
+2x + 18 = 72
+2x = 72 - 18
+2x = 54
+2x / 2 = 54 / 2
+x = 27
+
+Eller:
+
+y = 3x - 9
+3x - 9 = 72
+3x = 72 + 9
+3x = 81
+3x / 3 = 81 / 3
+x = 27
+
+
+== Andregradslikningar ==
+Andregradslikningar er likningar der eit av ledda er i andre potens.
+
+  
+    
+      
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        =
+        0
+      
+    
+    {\displaystyle ax^{2}+bx+c=0}
+  
+
+Den generelle formelen for å løysa andregradslikningar er
+
+  
+    
+      
+        x
+        =
+        
+          
+            
+              −
+              b
+              ±
+              
+                
+                  
+                    b
+                    
+                      2
+                    
+                  
+                  −
+                  4
+                  a
+                  c
+                
+              
+            
+            
+              2
+              a
+            
+          
+        
+      
+    
+    {\displaystyle x={\frac {-b\pm {\sqrt {b^{2}-4ac}}}{2a}}}
+  
+
+Teiknet ± tyder pluss eller minus.
+Døme:
+
+  
+    
+      
+        −
+        14
+        
+          x
+          
+            2
+          
+        
+        +
+        9
+        x
+        +
+        1000
+        =
+        0
+      
+    
+    {\displaystyle -14x^{2}+9x+1000=0}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                =
+              
+              
+                
+                  
+                    
+                      −
+                      9
+                      ±
+                      
+                        
+                          
+                            9
+                            
+                              2
+                            
+                          
+                          −
+                          4
+                          ⋅
+                          −
+                          14
+                          ⋅
+                          1000
+                        
+                      
+                    
+                    
+                      2
+                      ⋅
+                      −
+                      14
+                    
+                  
+                
+              
+            
+            
+              
+                x
+              
+              
+                =
+              
+              
+                
+                  
+                    
+                      −
+                      9
+                      ±
+                      
+                        
+                          81
+                          +
+                          56000
+                        
+                      
+                    
+                    
+                      −
+                      28
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}x&=&{\frac {-9\pm {\sqrt {9^{2}-4\cdot -14\cdot 1000}}}{2\cdot -14}}\\x&=&{\frac {-9\pm {\sqrt {81+56000}}}{-28}}\\\end{matrix}}}
+  
+
+x er to forskjellige tal.
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                =
+              
+              
+                
+                  
+                    
+                      −
+                      9
+                      +
+                      236
+                      ,
+                      814
+                    
+                    
+                      −
+                      28
+                    
+                  
+                
+              
+            
+            
+              
+                x
+              
+              
+                =
+              
+              
+                −
+                8
+                ,
+                136
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}x&=&{\frac {-9+236,814}{-28}}\\x&=&-8,136\\\end{matrix}}}
+  
+
+Teiknet ∨(ikkje v, men eit teikn som liknar mykje) tyder eller.
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                =
+              
+              
+                
+                  
+                    
+                      −
+                      9
+                      −
+                      236
+                      ,
+                      814
+                    
+                    
+                      −
+                      28
+                    
+                  
+                
+              
+            
+            
+              
+                x
+              
+              
+                =
+              
+              
+                8
+                ,
+                779
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{matrix}x&=&{\frac {-9-236,814}{-28}}\\x&=&8,779\end{matrix}}}
+  
+
+
+== Bakgrunnsstoff ==
+ligning - matematikk i Store Norske Leksikon

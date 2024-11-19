@@ -1,0 +1,2089 @@
+Sannolikhet (även probabilitet) är, i strikt bemärkelse, ett mått på hur troligt det är att en viss händelse inträffar. 
+Sannolikhet är i en allmän och vagare mening, graden av ett omdömes eller en teoris rationella trovärdighet eller graden av någons benägenhet att tro att ett visst påstående är sant, vilket dock är sannolikhetsbedömningar snarare än faktisk sannolikhet. Sannolikheten är opåverkbar av tillgänglig information och det finns bara en sannolikhet för varje utfall. Sannolikhetsbedömningar kan skilja sig åt, beroende på kunskaper och tillgänglig information, vilka kan skilja mellan olika personer. Alla korrekta sannolikhetsbedömningar har dock ett gemensamt utfallsområde.
+I den förstnämnda strikta betydelsen, kan sannolikheten för att en viss händelse E skall inträffa vid ett försök, betecknas med P(E) och den klassiska sannolikhetsdefinitionen innebär att 
+
+  
+    
+      
+        P
+        (
+        E
+        )
+        =
+        
+          
+            n
+            N
+          
+        
+      
+    
+    {\displaystyle P(E)={\frac {n}{N}}}
+  
+
+där N är det totala antalet lika sannolika utfall och n antalet utfall sådana att händelsen E inträffar. 
+Om vid kast med en tärning E är händelsen att antalet prickar är udda blir P(E) lika med
+
+Sannolikhetsmåttet P är en funktion som till varje möjlig händelse E ordnar ett reellt tal P(E), sådant att 
+
+  
+    
+      
+        0
+        ≤
+        P
+        (
+        E
+        )
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq P(E)\leq 1}
+  
+
+Ju mer sannolikt det är att en händelse E inträffar, desto större värde har P(E).
+Sannolikhetsberäkningar är en del av sannolikhetsteorin vilken tillämpas inom discipliner som matematik, finans och hasardspel. Teorin är uppdelad i två huvuddiscipliner, den moderna och den klassiska. Sannolikhetsteorins grunder är Kolmogorovs axiom, mängdteori och kombinatorik.
+
+
+== Historik ==
+
+Sannolikhetsteorin kan delas upp i klassisk och modern sannolikhetsteori. Den klassiska har sitt ursprung i Frankrike och Italien under 1500-1600-talen där den bland annat användes för hasardspel. Viktiga klassiska sannolikhetsteoretiker är Gerolamo Cardano, Blaise Pascal, Thomas Bayes, Pierre de Fermat, Jakob Bernoulli, Abraham de Moivre och Pierre-Simon de Laplace. Viktiga begrepp inom disciplinen är bland andra klassisk sannolikhetsdefinition, geometriska sannolikhetsrum, kombinatorik och bayesiansk statistik.
+Den moderna sannolikhetsteorin löste ett av problemen med den klassiska; den klassiska klassificerar inte händelser och sannolikhet med exakta matematiska koncept. 
+Andrej Kolmogorov upptäckte att den klassiska kan beskrivas med mängd- och måtteoretiska metoder, vilket resulterade i sannolikhetsrummet, det viktigaste moderna sannolikhetsteoretiska begreppet. Detta gav upphov till Kolmogorovs axiom.
+
+
+== Filosofi ==
+
+Det råder stor enighet om de matematiska regler som behandlar sannolikheter (se sannolikhetsteori), dock finns oenighet om på vad den matematiska teorin kan tillämpas, vilket leder till tolkningen av begreppet sannolikhet.
+Ordet sannolikhet kan tolkningsmässigt brukas i två sammanhang:
+
+Aleatorisk sannolikhet (även: ontologisk/statistisk sannolikhet) beskriver de relativa frekvenserna av framtida händelser bestämda av en slumpmässig fysikalisk process. Specifikt skiljs mellan deterministiska fysikaliska processer som i princip kan förutsägas, givet en tillräcklig mängd korrekt information (tärningskast, vädret) och icke-deterministiska processer, som i princip inte är förutsägbara (radioaktivt sönderfall).
+Epistemisk sannolikhet (även subjektiv/personlig sannolikhet) beskriver osäkerheten hos uttalanden vars orsakssamband och bakgrunder endast är ofullständigt kända. Dessa uttalanden kan avse tidigare eller framtida händelser. Till exempel beskrivs naturlagarna endast i enstaka fall med epistemiska sannolikheter, medan uttalanden inom politik ("Skattesänkningen kommer att ske med 60 % sannolikhet"), ekonomi och juridik, ofta har en epistemisk karaktär.
+Det är en öppen fråga om aleatorisk sannolikhet kan reduceras till epistemisk sannolikhet (eller vice versa). Framträder världen för oss som slumpartad, eftersom vår kunskap är otillräcklig, eller är världen i grunden slumpprocesser, till exempel enligt tolkningarna inom kvantmekaniken? Även om samma matematiska regler för att hantera sannolikheter gäller för båda synsätten, har varje synsätt viktiga konsekvenser för vilka matematiska modeller som kan anses giltiga.
+
+
+== Beräkning av sannolikheter ==
+
+För analys och beräkningar av sannolikheter är mängdlärans metoder och symboler mycket användbara.
+
+
+=== Händelser ===
+Varje möjligt utfall av en slumpmässig process är en elementarhändelse. Mängden av alla möjliga elementarhändelser utgör utfallsrummet (också kallat händelserummet) och betecknas vanligen med Ω.
+En delmängd av utfallsrummets elementarhändelser kallas en händelse. Om den process vi vill beskriva är kast med en tärning kan elementarhändelserna betecknas med talen 1 till 6 och utfallsrummet Ω blir
+
+Ω = {1, 2, 3, 4, 5, 6}, eller med diagram
+
+Vid kast med en tärning kan händelsen A =  "antalet prickar är udda" beskrivas som
+
+A = {1, 3, 5}, eller i diagramform
+
+Om den slumpmässiga processen är "kast med två tärningar" är varje elementarhändelse ett av paren
+
+(1, 1), (1, 2),...(1, 6); (2, 1), (2, 2),...(2, 6);...,
+Om händelsen A är "kast med två tärningar där summan av antalet prickar är mindre än 4" är
+
+A = {(1, 1), (1, 2), (2, 1)}, eller i tabellform
+
+Händelsen A består således av tre elementarhändelser.
+Venndiagram och Eulerdiagram kan användas för att beskriva händelser.
+
+
+=== Sannolikhetsmåttet P ===
+För funktionen P gäller enligt Kolmogorovs axiomsystem vilket är grundläggande för sannolikhetsläran:
+
+  
+    
+      
+        0
+        ≤
+        P
+        (
+        ⋅
+        )
+        ≤
+        1
+      
+    
+    {\displaystyle 0\leq P(\cdot )\leq 1}
+  
+
+För att P skall kunna avbilda sannolikheten 0 måste Ω innehålla en null-händelse (tomma mängden).
+
+  
+    
+      
+        P
+        (
+        Ω
+        )
+        =
+        1
+      
+    
+    {\displaystyle P(\Omega )=1}
+  
+
+det vill säga, summan av sannolikheterna för alla elementarhändelser måste vara 1:
+
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+          
+        
+        P
+        (
+        
+          e
+          
+            i
+          
+        
+        )
+        =
+        1
+      
+    
+    {\displaystyle \sum _{i=1}^{N}P(e_{i})=1}
+  
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)}
+  
+ om A och B är disjunkta händelser
+
+Då A och B saknar gemensamma händelser är
+P(alla element som tillhör A eller B) = P(A) + P(B)
+
+
+=== Addition av sannolikheter ===
+
+Vid addition av sannolikheter måste hänsyn tas till vilka händelser som de i additionen ingående händelserna har gemensamt. Sannolikheten för "A eller B inträffar" om A och B har gemensamma händelser är
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+        ,
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)-P(A\cap B),}
+  
+
+ett viktigt samband som kallas additionssatsen för två händelser.
+Om A och B har gemensamma händelser kommer dessa att räknas två gånger i summan P(A) + P(B) och subtraktionen korrigerar för detta.
+
+Komplexiteten växer snabbt med antalet händelser. För ett venndiagram för tre händelser blir additionsregeln
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        ∪
+        C
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        +
+        P
+        (
+        C
+        )
+        −
+      
+    
+    {\displaystyle P(A\cup B\cup C)=P(A)+P(B)+P(C)-}
+  
+
+  
+    
+      
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        C
+        )
+        −
+        P
+        (
+        B
+        ∩
+        C
+        )
+        +
+        P
+        (
+        A
+        ∩
+        B
+        ∩
+        C
+        )
+      
+    
+    {\displaystyle -P(A\cap B)-P(A\cap C)-P(B\cap C)+P(A\cap B\cap C)}
+  
+
+För summan av ett godtyckligt antal sannolikheter gäller
+
+  
+    
+      
+        P
+        (
+        
+          ∪
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          A
+          
+            i
+          
+        
+        )
+        =
+        
+          ∑
+          
+            i
+          
+        
+        P
+        (
+        
+          A
+          
+            i
+          
+        
+        )
+        −
+        
+          ∑
+          
+            i
+            j
+          
+        
+        
+          
+            
+            ′
+          
+        
+        P
+        (
+        
+          A
+          
+            i
+          
+        
+        )
+        ∩
+        P
+        (
+        
+          A
+          
+            j
+          
+        
+        )
+        +
+      
+    
+    {\displaystyle P(\cup _{i=1}^{n}A_{i})=\sum _{i}P(A_{i})-\sum _{ij}{'}P(A_{i})\cap P(A_{j})+}
+  
+
+  
+    
+      
+        +
+        
+          ∑
+          
+            i
+            j
+            k
+          
+        
+        
+          
+            
+            ″
+          
+        
+        P
+        (
+        
+          A
+          
+            i
+          
+        
+        )
+        ∩
+        P
+        (
+        
+          A
+          
+            j
+          
+        
+        )
+        ∩
+        P
+        (
+        
+          A
+          
+            k
+          
+        
+        )
+        −
+        .
+        .
+        .
+        +
+        (
+        −
+        1
+        
+          )
+          
+            n
+            −
+            1
+          
+        
+        P
+        (
+        
+          ∩
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          A
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle +\sum _{ijk}{''}P(A_{i})\cap P(A_{j})\cap P(A_{k})-...+(-1)^{n-1}P(\cap _{i=1}^{n}A_{i})}
+  
+
+
+=== Sannolikhetsfördelningar ===
+
+Hur sannolikheterna fördelar sig på olika händelser kallas en sannolikhetsfördelning, vilken kan beskrivas med en diskret eller kontinuerlig täthetsfunktion. 
+Några ofta förekommande sannolikhetsfördelningar:
+
+Likformig fördelning
+Binomialfördelning
+Gammafördelning
+Hypergeometrisk fördelning
+Normalfördelning
+Poissonfördelning
+
+
+=== Utfallsrum ===
+
+
+==== Diskret utfallsrum ====
+Om antalet elementarhändelser är ändligt eller uppräkneligt sägs Ω vara ett diskret utfallsrum.
+
+
+==== Kontinuerligt utfallsrum ====
+
+Om antalet elementarhändelser inte är uppräkneligt sägs Ω vara ett kontinuerligt utfallsrum. Ett kontinuerligt utfallsrum måste diskretiseras, uppdelas i intervall, för att elementarhändelserna skall kunna tilldelas nollskilda sannolikheter.
+Ett sätt att åstadkomma detta är att använda en kumulativ fördelningsfunktion.
+Den kumulativa fördelningsfunktionen för en slumpvariabel X är funktionen
+
+  
+    
+      
+        
+          F
+          
+            X
+          
+        
+        (
+        x
+        )
+        =
+        P
+        ⁡
+        (
+        X
+        ≤
+        x
+        )
+        ,
+      
+    
+    {\displaystyle F_{X}(x)=\operatorname {P} (X\leq x),}
+  
+
+där högerledet är sannolikheten att slumpvariabeln X antar värden mindre än eller lika med x. Sannolikheten att X tillhör intervallet [a, b] är således
+
+  
+    
+      
+        P
+        ⁡
+        (
+        a
+        <
+        X
+        ≤
+        b
+        )
+        =
+        
+          F
+          
+            X
+          
+        
+        (
+        b
+        )
+        −
+        
+          F
+          
+            X
+          
+        
+        (
+        a
+        )
+      
+    
+    {\displaystyle \operatorname {P} (a<X\leq b)=F_{X}(b)-F_{X}(a)}
+  
+
+Normalfördelningen är ett exempel på en kumulativ fördelningsfunktion.
+
+
+=== Betingad sannolikhet ===
+
+Antag att det finns åtta pennor och att dessa väljs under antagandet att likformig sannolikhetsfördelning föreligger beträffande vilken penna som väljs.
+Om A betyder "röd penna väljs" blir enligt den klassiska sannolikhetsdefinitionen
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            
+              
+                
+              
+              
+                
+                  3
+                
+              
+            
+            
+              
+                
+              
+              
+                
+                  8
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle P(A)={\cfrac {3}{8}}}
+  
+
+Om B betyder "lång penna väljs" är
+
+  
+    
+      
+        P
+        (
+        B
+        )
+        =
+        
+          
+            5
+            8
+          
+        
+      
+    
+    {\displaystyle P(B)={\frac {5}{8}}}
+  
+
+Det framgår också att
+
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        
+          
+            2
+            8
+          
+        
+      
+    
+    {\displaystyle P(A\cap B)={\frac {2}{8}}}
+  
+
+då endast två pennor är både röda och långa.
+Om en röd penna har valts, hur stor är sannolikheten för att den är lång? Denna sannolikhet definieras som
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              A
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(B|A)={\frac {P(A\cap B)}{P(A)}}}
+  
+
+och kallas den betingade sannolikheten för B om A har inträffat.
+I exemplet med pennorna blir
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        =
+        
+          
+            
+              2
+              8
+            
+            
+              3
+              8
+            
+          
+        
+        =
+        
+          
+            2
+            3
+          
+        
+      
+    
+    {\displaystyle P(B|A)={\frac {\frac {2}{8}}{\frac {3}{8}}}={\frac {2}{3}}}
+  
+
+Det kan förenkla beräkningar med betingade sannolikheter att känna förhållandet mellan P(B|A) och P(A|B). Enligt regeln ovan är
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              A
+              )
+            
+          
+        
+        ⇒
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        
+        P
+        (
+        A
+        )
+      
+    
+    {\displaystyle P(B|A)={\frac {P(A\cap B)}{P(A)}}\Rightarrow P(A\cap B)=P(B|A)\,P(A)}
+  
+
+  
+    
+      
+        P
+        (
+        A
+        
+          |
+        
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              B
+              ∩
+              A
+              )
+            
+            
+              P
+              (
+              B
+              )
+            
+          
+        
+        ⇒
+        P
+        (
+        B
+        ∩
+        A
+        )
+        =
+        P
+        (
+        A
+        
+          |
+        
+        B
+        )
+        
+        P
+        (
+        B
+        )
+      
+    
+    {\displaystyle P(A|B)={\frac {P(B\cap A)}{P(B)}}\Rightarrow P(B\cap A)=P(A|B)\,P(B)}
+  
+
+men
+
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        B
+        ∩
+        A
+        )
+      
+    
+    {\displaystyle P(A\cap B)=P(B\cap A)}
+  
+
+och således gäller
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        
+        P
+        (
+        A
+        )
+        =
+        P
+        (
+        A
+        
+          |
+        
+        B
+        )
+        
+        P
+        (
+        B
+        )
+        ⇒
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              
+                |
+              
+              B
+              )
+              
+              P
+              (
+              B
+              )
+            
+            
+              P
+              (
+              A
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(B|A)\,P(A)=P(A|B)\,P(B)\Rightarrow P(B|A)={\frac {P(A|B)\,P(B)}{P(A)}}}
+  
+
+ett resultat som innefattas i Bayes sats.
+
+
+=== Oberoende händelser ===
+
+För sannolikhetsberäkningar är det ofta nödvändigt att avgöra om händelser är oberoende. Om sannolikheten för händelsen B är oberoende av om händelsen A inträffat eller ej, gäller enligt regeln för betingad sannolikhet
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        A
+        )
+        =
+        P
+        (
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              A
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(B|A)=P(B)={\frac {P(A\cap B)}{P(A)}}}
+  
+
+vilket kan skrivas om till den viktiga multiplikationsregeln. Om
+
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+      
+    
+    {\displaystyle P(A\cap B)=P(A)P(B)}
+  
+
+sägs A och B vara oberoende händelser.
+Multiplikationsregeln kan formuleras för ett godtyckligt antal händelser:
+
+Sannolikheten för en följd av n händelser där varje händelse Ai har sannolikheten pi är produkten av sannolikheterna p enligt
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            1
+          
+        
+        ∩
+        
+          A
+          
+            2
+          
+        
+        ∩
+        .
+        .
+        .
+        ∩
+        
+          A
+          
+            n
+          
+        
+        )
+        =
+        
+          p
+          
+            1
+          
+        
+        ⋅
+        
+          p
+          
+            2
+          
+        
+        ⋯
+        
+          p
+          
+            n
+          
+        
+      
+    
+    {\displaystyle P(A_{1}\cap A_{2}\cap ...\cap A_{n})=p_{1}\cdot p_{2}\cdots p_{n}}
+  
+
+om de n händelserna är oberoende.
+
+
+==== Exempel ====
+Antag att vid tärningskast, A är sannolikheten för "etta" och B är sannolikheten för "jämnt antal prickar". Sannolikheten för att i två på varandra följande kast med en välgjord tärning, först erhålla en etta och i nästa kast ett jämnt antal prickar är
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+        =
+        
+          
+            1
+            6
+          
+        
+        ⋅
+        
+          
+            3
+            6
+          
+        
+        =
+        
+          
+            1
+            12
+          
+        
+      
+    
+    {\displaystyle P(A)P(B)={\frac {1}{6}}\cdot {\frac {3}{6}}={\frac {1}{12}}}
+  
+
+då händelserna "etta i första kastet" och "jämnt antal prickar i andra kastet" kan antas vara oberoende.
+
+
+=== Komplementär händelse ===
+En komplementär händelse till händelsen A är en händelse, som inträffar när A inte inträffar.
+
+Sannolikheten för att A inte inträffar är
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            ∁
+          
+        
+        )
+        =
+        1
+        −
+        P
+        (
+        A
+        )
+      
+    
+    {\displaystyle P(A^{\complement })=1-P(A)}
+  
+
+Antag att händelserna A1,  A2,..., An är oberoende och att P(Ai) = pi. 
+Vilken är sannolikheten för att minst en av dem inträffar vid n försök?
+Sannolikheten för att ingen av dem inträffar är produkten av sannolikheterna för motsvarande komplementära händelser
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            1
+          
+          
+            ∁
+          
+        
+        ∩
+        
+          A
+          
+            2
+          
+          
+            ∁
+          
+        
+        ∩
+        .
+        .
+        .
+        ∩
+        
+          A
+          
+            n
+          
+          
+            ∁
+          
+        
+        )
+        =
+        (
+        1
+        −
+        
+          p
+          
+            1
+          
+        
+        )
+        (
+        1
+        −
+        
+          p
+          
+            2
+          
+        
+        )
+        ⋯
+        (
+        1
+        −
+        
+          p
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle P(A_{1}^{\complement }\cap A_{2}^{\complement }\cap ...\cap A_{n}^{\complement })=(1-p_{1})(1-p_{2})\cdots (1-p_{n})}
+  
+
+Sannolikheten för att minst en av händelserna inträffar är sannolikheten för komplementet till händelsen "ingen av dem inträffar":
+
+  
+    
+      
+        1
+        −
+        (
+        1
+        −
+        
+          p
+          
+            1
+          
+        
+        )
+        (
+        1
+        −
+        
+          p
+          
+            2
+          
+        
+        )
+        ⋯
+        (
+        1
+        −
+        
+          p
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle 1-(1-p_{1})(1-p_{2})\cdots (1-p_{n})}
+  
+
+Sannolikheten att vid kast med tre tärningar få minst en sexa blir då
+
+  
+    
+      
+        1
+        −
+        (
+        1
+        −
+        
+          
+            1
+            6
+          
+        
+        )
+        (
+        1
+        −
+        
+          
+            1
+            6
+          
+        
+        )
+        (
+        1
+        −
+        
+          
+            1
+            6
+          
+        
+        )
+        =
+        1
+        −
+        
+          
+            (
+            
+              
+                5
+                6
+              
+            
+            )
+          
+          
+            3
+          
+        
+        =
+        1
+        −
+        
+          
+            125
+            216
+          
+        
+        =
+        
+          
+            91
+            216
+          
+        
+      
+    
+    {\displaystyle 1-(1-{\frac {1}{6}})(1-{\frac {1}{6}})(1-{\frac {1}{6}})=1-\left({\frac {5}{6}}\right)^{3}=1-{\frac {125}{216}}={\frac {91}{216}}}
+  
+
+
+=== Tilldelning av sannolikhet ===
+
+Innan sannolikhetsberäkningar kan göras för händelser i utfallsrummet måste elementarhändelserna tilldelas sannolikheter, det vill säga, en sannolikhetsfördelning för elementarhändelserna måste konstrueras. 
+Vissa sannolikhetsfördelningar är användbara för många olika slumpprocesser och det finns utarbetade metoder för att använda en del av dessa. Ett sätt att tilldela sannolikheter är att, på goda grunder, välja någon av dessa fördelningar.
+
+Till exempel kan en viss kömodell väsentligen anses bestå av en ankomstprocess och en betjäningsprocess. För ankomstprocessen kan en poissonfördelning väljas och till betjäningsprocessen en exponentialfördelning. Valet av fördelningar kan bygga på erfarenhet eller kan kräva mätningar i fält.
+
+
+==== Exempel på val av likformig fördelning ====
+
+Om vi återgår till exemplet med tärningskast är en möjlighet, att anta att de verkliga tärningarna kan approximeras tillräckligt väl av idealiserade tärningar för vilka varje resultat är förenligt med den klassiska sannolikhetsdefinitionen
+
+  
+    
+      
+        P
+        =
+        
+          
+            
+              A
+              n
+              t
+              a
+              l
+              e
+              t
+               
+              g
+              y
+              n
+              n
+              s
+              a
+              m
+              m
+              a
+               
+              f
+              a
+              l
+              l
+            
+            
+              A
+              n
+              t
+              a
+              l
+              e
+              t
+               
+              m
+              
+                
+                  
+                    o
+                    ¨
+                  
+                
+              
+              j
+              l
+              i
+              g
+              a
+               
+              f
+              a
+              l
+              l
+            
+          
+        
+      
+    
+    {\displaystyle P={\frac {\mathrm {Antalet\ gynnsamma\ fall} }{\mathrm {Antalet\ m{\ddot {o}}jliga\ fall} }}}
+  
+
+där varje utfall antas ha samma sannolikhet att inträffa, det vill säga utfallen har en likformig fördelning.
+
+
+==== Empirisk sannolikhet ====
+
+Verkliga tärningar kan antas ha defekter av flera slag och det kan vara av intresse att göra en noggrannare bestämning av tärningarnas egenskaper. En undersökning av hur ofta en etta inträffar skulle kunna ge resultatet
+
+Den relativa frekvensen kan användas som ett mått på sannolikhet. Om antalet gånger händelsen A inträffat är n och det totala antalet utfall är N, är 
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            n
+            N
+          
+        
+      
+    
+    {\displaystyle P(A)={\frac {n}{N}}}
+  
+
+en approximation av sannolikheten. Detta slag av sannolikhet kallas empirisk sannolikhet.
+
+
+=== Exempel ===
+
+
+==== Transportskador ====
+Ett företag skickar gods med flyg, buss och tåg. 20 % av godset skickas med flyg, 30 % med buss och 50 % med tåg. Andelen transportskadat gods är 3 % med flyg, 10 % med buss och 5 % med tåg.
+
+Låt F, B och T betyda transport med flyg, buss respektive tåg. Låt S beteckna händelsen att godset är transportskadat. 
+Därmed är givet att 
+
+  
+    
+      
+        P
+        (
+        F
+        )
+        =
+        0
+        ,
+        20
+        
+        P
+        (
+        B
+        )
+        =
+        0
+        ,
+        30
+        
+        P
+        (
+        T
+        )
+        =
+        0
+        ,
+        50
+      
+    
+    {\displaystyle P(F)=0,20\quad P(B)=0,30\quad P(T)=0,50}
+  
+
+och att 
+
+  
+    
+      
+        P
+        (
+        S
+        
+          |
+        
+        F
+        )
+        =
+        0
+        ,
+        03
+        
+        P
+        (
+        S
+        
+          |
+        
+        B
+        )
+        =
+        0
+        ,
+        10
+        
+        P
+        (
+        S
+        
+          |
+        
+        T
+        )
+        =
+        0
+        ,
+        05
+      
+    
+    {\displaystyle P(S|F)=0,03\quad P(S|B)=0,10\quad P(S|T)=0,05}
+  
+
+Hur stor andel av godset kan antas vara transportskadat?
+Sannolikheten för transportskadat gods kan skrivas
+
+  
+    
+      
+        P
+        (
+        S
+        )
+        =
+        P
+        (
+        S
+        ∩
+        F
+        )
+        +
+        P
+        (
+        S
+        ∩
+        B
+        )
+        +
+        P
+        (
+        S
+        ∩
+        T
+        )
+        =
+      
+    
+    {\displaystyle P(S)=P(S\cap F)+P(S\cap B)+P(S\cap T)=}
+  
+
+  
+    
+      
+        =
+        P
+        (
+        F
+        )
+        ⋅
+        P
+        (
+        S
+        
+          |
+        
+        F
+        )
+        +
+        P
+        (
+        B
+        )
+        ⋅
+        P
+        (
+        S
+        
+          |
+        
+        B
+        )
+        +
+        P
+        (
+        T
+        )
+        ⋅
+        P
+        (
+        S
+        
+          |
+        
+        T
+        )
+        =
+      
+    
+    {\displaystyle =P(F)\cdot P(S|F)+P(B)\cdot P(S|B)+P(T)\cdot P(S|T)=}
+  
+
+  
+    
+      
+        =
+        0
+        ,
+        20
+        ⋅
+        0
+        ,
+        03
+        +
+        0
+        ,
+        30
+        ⋅
+        0
+        ,
+        10
+        +
+        0
+        ,
+        50
+        ⋅
+        0
+        ,
+        05
+        =
+        0
+        ,
+        061
+      
+    
+    {\displaystyle =0,20\cdot 0,03+0,30\cdot 0,10+0,50\cdot 0,05=0,061}
+  
+
+där definitionen av betingad sannolikhet utnyttjats.
+Andelen transportskadat gods kan således antas vara cirka 6 %.
+Om mottaget gods är skadat, vilken är sannolikheten att godset transporterats med buss?
+Enligt definitionen av betingad sannolikhet är den sökta sannolikheten
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        S
+        )
+        =
+        
+          
+            
+              P
+              (
+              S
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              S
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(B|S)={\frac {P(S\cap B)}{P(S)}}}
+  
+
+där P(S) enligt ovan är 0,061.
+Den betingade sannolikheten för S om B inträffat är
+
+  
+    
+      
+        P
+        (
+        S
+        
+          |
+        
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              S
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              B
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(S|B)={\frac {P(S\cap B)}{P(B)}}}
+  
+
+vilket ger
+
+  
+    
+      
+        P
+        (
+        S
+        ∩
+        B
+        )
+        =
+        P
+        (
+        B
+        )
+        ⋅
+        P
+        (
+        S
+        
+          |
+        
+        B
+        )
+        =
+        0
+        ,
+        30
+        ⋅
+        0
+        ,
+        10
+        =
+        0
+        ,
+        03
+      
+    
+    {\displaystyle P(S\cap B)=P(B)\cdot P(S|B)=0,30\cdot 0,10=0,03}
+  
+
+och därmed är
+
+  
+    
+      
+        P
+        (
+        B
+        
+          |
+        
+        S
+        )
+        =
+        
+          
+            
+              0
+              ,
+              03
+            
+            
+              0
+              ,
+              061
+            
+          
+        
+        =
+        0
+        ,
+        4918...
+      
+    
+    {\displaystyle P(B|S)={\frac {0,03}{0,061}}=0,4918...}
+  
+
+
+==== Par i poker ====
+
+Vad är sannolikheten att få par (och endast par) i första given? Enligt den klassiska sannolikhetsdefinitionen är denna, kvoten mellan antalet gynnsamma fall och antalet möjliga fall.
+Antalet sätt som fem kort kan väljas utan hänsyn till ordning, då ordning inte spelar någon roll för en pokerhand, kan anges med en binomialkoefficient enligt
+
+  
+    
+      
+        m
+        =
+        
+          
+            
+              (
+            
+            
+              52
+              5
+            
+            
+              )
+            
+          
+        
+      
+    
+    {\displaystyle m={52 \choose 5}}
+  
+
+där m alltså är antalet möjliga fall.
+Då fyra kort per valör kan bilda par kan detta ske på
+
+  
+    
+      
+        13
+        ⋅
+        
+          
+            
+              (
+            
+            
+              4
+              2
+            
+            
+              )
+            
+          
+        
+      
+    
+    {\displaystyle 13\cdot {4 \choose 2}}
+  
+
+sätt. De tre övriga korten måste ha annan valör än det valda paret. Om vi först väljer unik valör (för att undvika par och tretal bland de tre korten) bland de återstående tolv och sedan svit, kan de tre korten väljas på
+
+  
+    
+      
+        
+          
+            
+              (
+            
+            
+              12
+              3
+            
+            
+              )
+            
+          
+        
+        ⋅
+        
+          4
+          
+            3
+          
+        
+      
+    
+    {\displaystyle {12 \choose 3}\cdot 4^{3}}
+  
+
+sätt och enligt multiplikationsprincipen blir då antalet gynnsamma fall
+
+  
+    
+      
+        g
+        =
+        13
+        ⋅
+        
+          
+            
+              (
+            
+            
+              4
+              2
+            
+            
+              )
+            
+          
+        
+        ⋅
+        
+          
+            
+              (
+            
+            
+              12
+              3
+            
+            
+              )
+            
+          
+        
+        ⋅
+        
+          4
+          
+            3
+          
+        
+      
+    
+    {\displaystyle g=13\cdot {4 \choose 2}\cdot {12 \choose 3}\cdot 4^{3}}
+  
+
+Därmed kan den sökta sannolikheten skrivas som
+
+  
+    
+      
+        
+          
+            g
+            m
+          
+        
+        =
+        
+          
+            
+              13
+              ⋅
+              
+                
+                  
+                    (
+                  
+                  
+                    4
+                    2
+                  
+                  
+                    )
+                  
+                
+              
+              ⋅
+              
+                
+                  
+                    (
+                  
+                  
+                    12
+                    3
+                  
+                  
+                    )
+                  
+                
+              
+              ⋅
+              
+                4
+                
+                  3
+                
+              
+            
+            
+              
+                (
+              
+              
+                52
+                5
+              
+              
+                )
+              
+            
+          
+        
+        =
+        
+          
+            
+              13
+              ⋅
+              6
+              ⋅
+              220
+              ⋅
+              64
+            
+            
+              2
+               
+              598
+               
+              960
+            
+          
+        
+        =
+        
+          
+            
+              1
+               
+              098
+               
+              240
+            
+            
+              2
+               
+              598
+               
+              960
+            
+          
+        
+        ≈
+        42
+        ,
+        2
+         
+        %
+      
+    
+    {\displaystyle {\frac {g}{m}}={\frac {13\cdot {4 \choose 2}\cdot {12 \choose 3}\cdot 4^{3}}{52 \choose 5}}={\frac {13\cdot 6\cdot 220\cdot 64}{2\ 598\ 960}}={\frac {1\ 098\ 240}{2\ 598\ 960}}\approx 42,2\ \%}
+  
+
+
+== Se även ==
+Odds
+Risk
+
+
+== Källor ==
+Gunnar Blom, Sannolikhetsteori och statistikteori med tillämpningar, Lund 1972
+William Feller, An Introduction to Probability Theory and Its Applications, Wiley International, New York 1950.

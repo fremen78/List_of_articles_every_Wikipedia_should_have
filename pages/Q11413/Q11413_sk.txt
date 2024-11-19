@@ -1,0 +1,56 @@
+Go je strategická dosková hra pre dvoch hráčov pochádzajúca zo starej Číny medzi rokmi 2000 pred Kr. až 200 pred Kr.. Je veľmi populárna vo východnej Ázii, ale rozširuje sa aj prostredníctvom internetového hrania po celom svete. V Číne sa volá 圍棋 (Pinyin: weiqi, Wade-Giles: Wei-ch'i), v Kórei 바둑 baduk a v Japonsku 囲碁 igo, z ktorého sa odvodilo anglické Go z japonského znaku 碁.
+Hoci pravidlá Go sú veľmi jednoduché, stratégia hry je extrémne komplexná. Go je deterministická strategická hra ako šach, dáma alebo otelo, avšak jej hĺbka prekonáva tieto hry.
+Veľkou výhodou tejto hry je tiež prepracovaný systém hendikepov, ktorý umožňuje hrať partiu s otvoreným koncom aj dvom hráčom s veľmi rozdielnou silou.
+
+
+== Pravidlá ==
+Hracia doska: Hrá sa na štvorcovej sieti, hracej doske nazývanej goban. Originálne Go sa hrá na doske 19x19, pre účely výuky sa zvyknú používať aj dosky rozmerov 13x13 alebo 9x9.
+Počet kameňov: Súprava Go obsahuje 180+180 čiernych a bielych kameňov diskovitého tvaru. Hráč má však počet kameňov neobmedzený. Ak mu nestačia, požiada súpera o výmenu zajatcov.
+Prvý ťah: Go hrajú 2 hráči. Prvý ťahá čierny. Potom sa hráči v ťahoch striedajú.
+Ťah: Ťahom sa rozumie položenie jedného kameňa na voľný priesečník. Prípadné zajatie a vybratie súperových kameňov je súčasťou ťahu. Ťahom môže byť aj Pas, tj. vzdanie sa ťahu.
+Cieľ hry: Cieľom hry je ohraničiť územie a poprípade zajať súperove kamene. Oba ciele sa hodnotia bodmi: jeden bod za každý priesečník územia a jeden bod za každého zajatca. Víťazom je hráč s väčším súčtom týchto bodov.
+Sloboda: Počet voľných priesečníkov susediacich s kameňom alebo skupinou kameňov je počtom slobôd. Kameň položený do voľného priestoru do stredu dosky má 4 slobody, kameň na strane dosky má 3 slobody, kameň v rohu len 2 slobody.
+
+Zajatie: Ak hráč obsadí postupne svojimi kameňmi všetky slobody kameňa (kameňov) druhej farby, kameň je zajatý. Po strate poslednej slobody musí byť okamžite odstránený z dosky. Zajímajúci hráč si zajatcov zhromažďuje pre neskoršie počítanie skóre.
+Zákaz samovraždy: Hráč nesmie zahrať taký ťah, aby jeho kameň (poprípade skupina kameňov), nemal po ťahu žiadnu slobodu. Do samovraždy hráč môže položiť kameň iba vtedy, ak týmto ťahom zajme jeden alebo viac súperových kameňov. Tým jeho kameň získa slobody a tak vlastne nestojí v samovražde.
+Zákaz opakovania pozície (pravidlo Ko (japonsky nekonečný)):. Hráč nesmie ťahať tak, aby sa po jeho ťahu presne zopakovala pozícia pred posledným ťahom súpera. Toto pravidlo sa týka situácií, kde by inak bolo možné brať jeden kameň stále dookola a tak znemožniť koniec hry. Pozície s ko sú často dôležitým taktickým prvkom.
+Územie: Doska je postupom hry rozdelená na niekoľko oblastí, kde dominujú kamene jednej farby. Voľné priesečníky vo vnútri hranice tvorené kameňmi jednej farby (a prípadne okrajom dosky) nazývame územie. Pre pochopenie pojmu územie je dôležité si uvedomiť, že súper môže do môjho územia hrať. Ak je územie naozaj moje, dokážem jeho kamene chytiť a tak svoje územie obhájiť. Ak to nedokážem, súper si vybuduje v mojom území svoju skupinu so svojím územím a súčasne tým moje územie zničí.
+Koniec hry: Ak hráč príde k záveru, že už nemôže nič získať ani spôsobiť súperovi stratu, vzdá sa ťahu slovom Pas. Partia končí, ak pasujú po sebe obaja hráči. Ak druhý hráč nepasuje ale pokračuje v hre, môže aj prvý hráč ďalej hrať. Pred ukončením partie je nutné vyriešiť všetky sporné situácie na doske vrátane všetkých situácií ko a seki a vyplniť neutrálne body (body nikoho medzi hranicami bielych a čiernych území). Ak hráči nájdu po obojstrannom pasovaní nejasnú situáciu, obnovia hru. Kamene, ktoré ležia v súperovom území a mohli by byť kedykoľvek zajaté (tzv. mŕtve kamene), sú po skončení hry z dosky odstránené a pridané k zajatcom. Teda nie je treba im vlastnými ťahmi do vlastného územia brať všetky slobody, ako pri normálnom zajímaní v hre.
+Spočítanie výsledku: Každý hráč si spočíta všetky body vlastných území (voľné priesečníky) a k nim pripočíta body za zajatcov. Hráč s väčším súčtom víťazí.
+Handicapová hra a Komi: Zaujímavú partiu go s otvoreným výsledkom si môžu zahrať aj hráči veľmi rozdielnej výkonnosti. Rozdiel vo výkonnosti dvoch po sebe idúcich tried je približne 10 bodov. Hodnota ťahu na začiatku partie je takisto približne 10 bodov. Z toho plynie možnosť handicapových partií: slabší hráč (čierny) položí na začiatku partie niekoľko kameňov po sebe na zvýraznené handicapové body, až potom hrá biely. Normálny počet handicapov je 2 až 9 na doske 19x19, 2 až 5 na doskách 13x13 a 9x9. Výhoda prvého ťahu je v partiách hráčov s rovnakou výkonnostnou triedou kompenzovaná takzvaným komi, ktoré si biely hráč na konci partie pripočíta ku svojmu skóre. Komi je obyčajne 5,5 bodu (aby sa zabránilo remíze). Podľa japonských pravidiel 6,5, podľa čínskych 7,5.
+V hre go neexistuje encyklopédia zahájení šachového typu. Na začiatku partie má hráč 361 možností (kvôli symetrii vlastne len 81), z toho viac než 50 rozumných a strom variánt sa zväčšuje astronomicky. Spracované sú však varianty v rohoch (džoseki) a princípy zahájenia (fuseki).
+
+
+== Výkonnostné triedy ==
+V amatérskom go existujú triedy kyu a dan, od 20.kyu (najslabšie) až po 1.kyu, nad nimi je 1. až 7. dan. (V Japonsku sú kyu od 30. po 1.). Profesionálni hráči majú profesionálne dany, pričom 1. profesionálny dan zodpovedá 7. amatérskemu danu. Výkonnosť profesionálnych hráčov go končí na úrovni 9. danu (profesionálneho).
+Podobne ako v šachu v hre Go sa používa aj Elo hodnotenie.
+20. kyu má 100 Elo, každý vyššia trieda má o 100 Elo viac, 1. kyu má 2000 Elo, 7. dan 2700 Elo.
+Škála pre profesionálne dany je odstupňovaná po 30 Elo, 1p=2700 Elo až po 9p=2940 Elo. Kým Elo kolíše podľa aktuálnej výkonnosti, dosiahnutá majstrovská trieda hráčovi zostáva doživotne. Keď sa stretnú dvaja hráči s rovnakým Elo, víťazovi sa priráta 7.5 Elo bodov, porazenému sa 7.5 Elo bodov odráta.
+
+
+== Go na Slovensku ==
+Na Slovensku existuje niekoľko klubov a usporadúva sa každoročne viacero turnajov, z ktorých niektoré sú súčasťou Grand Prix.
+
+
+== Počítače a Go ==
+Doposiaľ sa tradovalo, že ani najvýkonnejšie go programy zatiaľ nedosahujú výrazne lepšie výsledky ako priemerný klubový hráč. Čo je výhoda oproti šachu pri hraní po Internete, pretože sa netreba báť, že súper zneužije počítač ako poradcu. Použiteľné výsledky pre bežnú hru sa dajú dosiahnuť softvérom využívajúcim algoritmus Monte-Carlo Tree Search, ktorý sa v týchto programoch implementuje od roku 2006.
+Program MoGo Titan dokázal v roku 2012 na superpočítači Huygens počas turnaja na Taiwane poraziť profesionálnych hráčov Go na úrovni 9p a 1p dan, avšak iba s handicapom 7 kameňov (pri hráčovi úrovne 9p) a 6 kameňov (proti hráčovi na úrovni 1p). 
+9. Marca 2016 porazil počítač AlphaGo  svetovú dvojku  v Go v prvej hre.  Lee Sedol začal s riskantným otvorením, čo počítač využil logickou a efektívnou reakciou. Do konca hry už Lee Sedol nezískal prevahu. Hra skončila krátko po tom, ako stratil kontrolu nad oblasťou vpravo dolu. Bežný superpočítač alebo algoritmus nie je schopný v Go konkurovať profesionálnym hráčom, no Google požíva nový typ super počítačov od D-Wave, System 2x. AlphaGo vzniklo v rámci Google DeepMind .
+
+
+== Referencie ==
+
+
+== Iné projekty ==
+
+ Commons ponúka multimediálne súbory na tému Go
+
+
+== Externé odkazy ==
+Slovenská asociácia
+Zoznam Go asociácií v Európe Archivované 2004-06-22 na Wayback Machine
+
+
+== Zdroje ==
+Sensei's Library je stránka wiki typu celá orientovaná na hru Go.
+The Usenet newsgroup rec.games.go obsahuje tiež FAQ dokument, rec.games.go FAQ[nefunkčný odkaz].

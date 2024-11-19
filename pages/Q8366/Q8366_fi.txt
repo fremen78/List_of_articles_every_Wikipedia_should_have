@@ -1,0 +1,101 @@
+Algoritmi on yksityiskohtainen kuvaus tai ohje siitä, miten tehtävä tai prosessi suoritetaan; jota seuraamalla voidaan ratkaista tietty ongelma. J.G. Brookshearin määritelmän mukaan algoritmi koostuu järjestyksessä olevista, yksiselitteisistä toiminnoista jotka voidaan suorittaa ja jotka määrittelevät lopputulokseen johtavan prosessin.
+
+
+== Algoritmin käsite ja historia ==
+
+Algoritmien tutkimus alkoi matematiikan aiheena ja algoritmit ovat tietojenkäsittelytieteessä keskeinen käsite. Epämuodollisesti algoritmi on joukko askeleita, joka määrittää miten tehtävä suoritetaan. Esimerkiksi on olemassa algoritmeja ruuanlaittoon (reseptejä), ohjeet paikan löytämiseen kaupungissa (suuntaohjeet), pesukoneen käyttöön (käyttöohjeet), musiikin soittamiseen (nuottikirjoitus) ja taikatemppujen suorittamiseen.
+Algoritmeja ovat jo nekin koulun alaluokilla opetetut menetelmät (allekkain kertomisesta ja jakokulmassa jakamisesta), joilla mitkä tahansa luvut voidaan kertoa tai jakaa keskenään, mutta toisinaan termillä on tarkoitettu nimenomaan Eukleideen algoritmia kahden kokonaisluvun suurimman yhteisen tekijän etsimiseksi. Nykyisin algoritmin käsite kuitenkin liittyy ennen kaikkea tietokoneiden ohjelmointiin ja tietojenkäsittelytieteeseen, joissa niillä on erityisen suuri merkitys etenkin tietorakenteiden yhteydessä. 
+Universaalia Turingin konetta on käytetty määrittelemään mitä on mahdollista ratkaista laskennallisesti: kun jokin ongelma ei ole ratkaistavissa universaalilla koneella se ei ole ratkaistavissa laskennallisesti lainkaan.
+Churchin–Turingin teesi ehdottaa, että algoritmi on vastaava kuin Turingin kone.
+On väitetty, että Churchin–Turingin teesi oli vain askel ymmärtämään algoritmeja, mutta että se ei ratkaissut ongelmaa mikä algoritmi on.
+Algoritmeissa sekä tietokoneilla että ilman tietokonetta informaation käsittelyyn liittyy abstraktio todellisesta maailmasta: tietokoneelle valittu data on ongelman ratkaisun kannalta olennainen osa, jotta voidaan saada haluttu lopputulos.
+Sana algoritmi tulee persialaisen matemaatikon ja tähtitieteilijän Muhammed ibn-Musa al-Khwarizmin nimestä. Al-Khwarizmi kirjoitti kirjan Kitab al jabr wa'l-muqābala, josta on peräisin sana "algebra".
+Sana "algoritmi" ilmestyi vuonna 1957 Webster's New World Dictionary -sanakirjassa.
+Ada Lovelace julkaisi vuonna 1843 kuvauksen ("Note G") askeleittain tehtävästä toimintojen sarjasta matemaattisen ongelman ratkaisemiseen, jota on kutsuttu ensimmäiseksi julkaistuksi algoritmiksi tietokoneelle.
+
+
+== Algoritminen periaate ==
+
+Esimerkkinä algoritmista voidaan käyttää Eukleideen algoritmia suurimman yhteisen nimittäjän löytämiseen kahdelle luvulle. Kahdelle positiiviselle kokonaisluvulle m ja n voidaan löytää suurin yhteinen nimittäjä seuraavasti:
+
+(etsi jakojäännös) Jaa m luvulla n ja aseta r jakojäännökseksi. (Tällöin 0 ≤ r < n).
+(onko jakojäännös nolla?) Jos r on yhtä kuin nolla (r = 0), algoritmi päättyy; n on vastaus.
+(vähennä) Aseta m arvoksi n (m ← n) ja n arvoksi r (n ← r) ja palaa ensimmäiseen askeleeseen.
+Eukleides ei esittänyt algoritmiaan tässä muodossa, mutta tätä voidaan käyttää esimerkkinä algoritmien esitystavasta.
+Algoritmin käsitteen määrittelyyn liittyy viisi ominaisuutta:
+
+Äärellisyys: algoritmin on aina päätyttävä äärellisellä määrällä askeleita. Määrä voi olla suuri, mutta kuitenkin rajallinen.
+Tarkkarajaisuus: algoritmin jokainen askel on oltava täsmällisesti määritelty. Toiminnot on kuvattava ilman monia tulkintoja jokaiselle tapaukselle.
+Syötteet: algoritmilla on nolla tai useampia syötteitä eli alkuarvoja tai arvot päätellään dynaamisesti suorituksen aikana.
+Tulosteet: algoritmilla on yksi tai useampi lopputuloste eli arvoja, jotka liittyvät syötteisiin.
+Tehokkuus: algoritmin odotetaan olevan tehokas siten, että sen toiminnot ovat yksinkertaisia ja periaatteessa suoritettavissa rajallisella määrällä aikaa käyttäen kynää ja paperia.
+Algoritmit riippuvat tietorakenteiden suunnittelusta ja tietyt algoritmit ja rakenteet ovat toisia tehokkaampia samaan tarkoitukseen. Kun algoritmin kuvauksen pitää olla riittävän tarkka ihmisen ymmärrettäväksi niin tietokoneohjelman pitää olla sopiva tietokoneen suoritettavaksi. Tietokone tarvitsee lisää informaatiota formaalilla kielellä, jolloin algoritmi toteutetaan jollakin ohjelmointikielellä.
+
+
+== Algoritmien analyysi ==
+Algoritmien analyysi koskee pääasiassa algoritmin muisti- (tila) ja aikavaatimuksia (kompleksisuus). Muistivaatimuksien määrittelyyn käytettävät tekniikat ovat alijoukko aikavaatimuksen määrittelyyn käytettävistä. Algoritmin aikavaatimus määritetään ratkottavan ongelmajoukon koon funktiona.
+Perinteisesti algoritmien analyysi koskee operaatioiden ja vaiheiden määrän laskemiseen, joka oli perusteltu tapa aikana, jolloin tietokone käytti enemmän aikaa operaation suorittamiseen kuin muistihakuun. Nykyään suorituksen kustannus on merkittävästi pienempi kuin tiedon muistista hakemisen kustannus ja tämän seurauksena monien algoritmien suoritusaikaa hallitsee muistiviittausten määrä sekä välimuistihutien määrä. Tästä johtuen algoritmien suunnittelussa on otettava huomioon muistilatenssi.
+Analyysissa voi usein keskittyä heikoimpaan suoritusaikaan eli pisimpään suoritusaikaan millä tahansa syötteellä. Heikoin suoritusaika on antaa ylärajan suoritusajalle. Tietyille algoritmeille heikoin tapaus tapahtuu usein. "Keskivertotapaus" voi olla karkeasti ottaen yhtä huono kuin heikoin. Myös suoritusajan kasvutahti on merkittävä.
+
+
+== Algoritmien suunnittelu ==
+Algoritmi on menetelmä tietyn tehtävän suorittamiseen ja ollakseen hyödyllinen algoritmin on ratkaistava yleinen täsmällisesti määritelty ongelma. Algoritminen ongelma määritellään kuvaamalla tapaukset (instanssit), joissa sen on toimittava ja sen tuloste jonkin tapauksen suorittamisen jälkeen. Erottelu yleiseen ongelmaan ja ongelman tapaukseen on olennainen. Yleisen tapauksen tunnistaminen on ensimmäinen askel ratkaisemiseen.
+Hyvällä algoritmilla on kolme haluttavaa ominaisuutta: oikeellisuus, tehokkuus sekä toteutuksen helppous. Kaikki ominaisuudet eivät ole aina yhtä aikaa saavutettavia. Tietorakenteen vaihtaminen ei vaikuta oikeellisuuteen, mutta se voi tarjota vaihtoehtoja ja vaikuttaa operaatioiden tehokkuuteen, jolloin suorituskyky voi parantua dramaattisesti. Haastavimmat ongelmat algoritmeissa liittyvät optimointiin, jolloin etsitään ratkaisua, joka maksimoi tai minimoi funktion.
+
+
+== Lakiasiat ==
+
+Ohjelmistopatenttien käsittely on kiistanalaista, mutta patenttien laajentaminen algoritmeihin on tyrmätty. "Matemaattisia algoritmeja" ei ole voinut patentoida, mutta eräät ihmiset sijoittavat tietokoneohjelman toteuttaman algoritmin eri kategoriaan pohtiessaan patentoivuutta.
+
+
+== Muutamia algoritmeja ==
+Hakualgoritmit
+Lajittelualgoritmit
+Valinta-algoritmit
+Kryptografiset tiivistealgoritmit
+Hajautusalgoritmit
+Pakkausalgoritmit
+Merkkijonohakualgoritmit
+A*-algoritmi
+FFT, nopea Fourier'n muunnos
+Bresenhamin algoritmi
+Dijkstran algoritmi
+Myös äänen- ja kuvanpakkaukseen liittyvät koodekit käyttävät erilaisia algoritmeja.
+Matemaattisia algoritmeja:
+
+Eukleideen algoritmi
+Eratostheneen seula
+Neliöjuurialgoritmit
+Newtonin menetelmä
+
+
+== Katso myös ==
+Luettelo algoritmeista
+Online-algoritmi
+Kvanttialgoritmi
+Asymptoottinen suoritusaika
+Tiedonpakkaus
+Videonpakkaus
+Äänenpakkaus
+Puheen pakkaaminen
+Ultranopea kaupankäynti
+Algoritmit viestinnässä
+Koneoppiminen
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Brookshear, J. Glenn (1989). Theory of Computation: Formal Languages, Automata, and Complexity. Redwood City, California: Benjamin/Cummings Publish Company, Inc. ISBN 0-8053-0143-7.
+A. Aho, J. Hopcroft, J. Ullman: The Design and Analysis of Computer Algorithms.  Addison-Wesley, 1974.  ISBN 978-0201000290  (englanniksi)
+Knuth, Donald E.: Fundamental Algorithms, The Art of Computer Programming.  Addison-Wesley Publishing Company, 1976.  (englanniksi)
+Wirth, Niklaus: Algorithms + Data Structures = Programs.  Prentice-Hall, 1976.  ISBN 0-13-022418-9  (englanniksi)
+Kaleva, Osmo: Numeerinen analyysi.  (Opintomoniste 163)  Tampere:  TTKK, 1993.  ISBN 951-721-941-5 
+Goodrich, Michael T. & Tamassia, Roberto: Algorithm Design and Applications.  Wiley, 2014.  ISBN 978-1-118-33591-8  (englanniksi)
+Kleinberg, Jon & Tardos, Eva: Algorithm Design.  Pearson, 2005.  ISBN 978-0321295354  (englanniksi)
+
+
+== Aiheesta muualla ==
+
+Algorithm Encyclopedia of Mathematics (englanniksi)

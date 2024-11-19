@@ -1,0 +1,274 @@
+Diode er ein ikkje-liniære elektronisk komponent som med god tilnærming leiar elektrisk straum berre i ein retning. Namnet kjem av at dioden har to terminalar, katode og anode. Straumen kan berre gå frå anoden (plusspol) til katoden (minuspol) - men, med unnatak av ein liten reversstraum, ikkje andre vegen. Den første dioden var krystalldetektoren som vart nytta i barndomen til radioen på 1920-talet. Eldre diodar var elektronrøyr, men i dag vert diodar laga av halvleiarmateriale, som oftast silisium. Diodar vert nytta i likerettarar, i biasnettverk i forsterkar, radiomottakarar, analog signalhandsaming og så bortetter. 
+
+
+== Røyrdiodar ==
+
+Røyrdiodar har to elektrodar, kalla katode (òg kalla plata) og anode, plasserte i eit lufttomt glasrøyr. Katoden vert oppvarma av ein glødespiral, som held ein temperatur på 800-1000° C og vert raudglødande. Den termiske eksitasjonen fører til at katoden gjev frå seg elektron til rommet rundt katoden, noko som vert kalla termisk emisjon. Når det vert lagt ei elektrisk spenning mellom katoden, slik at anoden får ei positiv spenning i høve til katoden, vil det elektriske feltet føra til at elektrona som vert frigjevne frå katoden vert akselererte mot katoden og vidare inn i spenningkjelda. Det flyt med andre ord ein elektrisk straum i dioden. Elektrona vert transporterte frå katoden til anoden, men sidan konvensjonell straumretning er i motsett retning til elektronstraumen vil den elektriske straumen etter konvensjonell straumretning flyta frå anoden til katoden. 
+Om den elektriske spenninga vart reversert slik at anoden vert positiv i høve til katoden vil dioden sperra etter som anoden er kald og ikkje gjev frå seg elektron. 
+Røyrdiodar har mange ulemper, som høgt energiforbruk, oppvarming av omkringliggande elektronikk og avgrensa levetid. Dei har difor gått ut av bruk, til fordel for halvleiardiodar. 
+
+
+== Halvleiardiodar ==
+Moderne diodar er laga av halvleiarar, som er mindre, billigare og meir robuste. Dei er konstruerte ved at n og p-materiale er sett saman, slik at det oppstår ein pn-overgang. 
+
+
+=== Framoverbias ===
+
+Når den positive polen på ei spenningskjelde vert kopla til anoden og den negative polen til anoden på ein diode vert dette kalla framoverbias. Den negative spenninga på katoden vil støyta frå seg elektron, som er frie ladningsberarar i metallkontaket og leiaren tilkopla anoden, slik at dei strøymer mot pn-overgangen. Det oppstår med andre ord ein elektronstraum i n-materialet. Når spenninga over dioden i framoverretning overstig poteniellbarrieren til pn-overgangen vil elektrona strøyma over i p-materialet. På grunn av at elektrona taper energi i enegibarrieren i pn-overgangen vil dei gå frå leiarskiktet til valensbandet i p-materialet, som illustrert med dei blå vertikale pilane i figuren til høgre. Den stripla streken indikerer at energien til elektronane fell når dei når p-materialet. Dei vil så verta trekte mot den positive anoden og hoppar frå hol til hol i p-materialet til dei når anaoden og strøymer ut i tilkoplingsledninga mot spenningskjela. Hola, som er majoritsbærarar i p-materialet, flyttar seg difor frå anoden mot pn-overgangen. Dette vert kalla holstraum.
+Når meir elektron strøymer mot pn-overgangen i n-materialet vert talet på positive ionar på n-sida av pn-overgangen redusert. Tilsvarande vert talet på negative ionar på p-sida av pn-overgangen redusert på grunn av holstraumen inn mor pn-overgangen i p-materialet. Dette fører til at breidda på pn-overgangen vert redusert ved framoverbias.
+
+
+=== Reversbias ===
+
+Når den negative polen på ei spenningskjelde vert kopla til anoden og den positive polen til anoden på ein diode vert dette kalla reversbias. Den positive spenninga på katoden vil då trekkja elektrona i n-materialet bort frå pn-overgangen, slik at talet på positive ion på n-sida av pn-overgangen aukar. Likeeina vil den negative spenninga på katoden trekkja til seg dei positive majoritetsbærarane (hol) i p-materialet, slik at talet på negative ion på n-sida av pn-overgangen aukar. Reversbias fører difor til at breidda på pn-overgangen aukar. Resultatet er at dioden ikkje leiar elektrisk straum ved reversbias, med unnatak av ein svært liten reversstraum på grunna av termisk eksitasjon (som tilfører nokre få elektron nok energi til at det går frå valensskalet til leiarskitet. Elektron i leiarskiktet i p-materialet ramlar ned enegibarrierern i pn-overgangen og hamnar i n-materialet. Den stripla linja i figuren til høgre illustrerer at energinivået til elektrona i er lågae i n-materialet enn i p-materialet. I silisium er reversstraume i nA-området, men aukar med temperaturen i materialet.
+
+
+=== Skredeffekt og knespenning ===
+Om reversspenninga over dioden vert stor nok vil det elektriske feltet verta kraftig nok til å gje ninoritetsbærarane (frie elektron) i p-materialet nok energi til at dei kan tilfører andre elektron i valensskalet som dei kolliderer med nok energi til å frigjera dei. Desse elektrona vert så aksellererte av det elektriske feltet og riv laus enda fleire elektron, slik at det oppstår ei skredeffekt. Dette gjer at reversstraumen aukar kraftig og dioden leiar ved reversbias. Dette skjer når reversspenninga overstig den såkalla knespenninga. Om denne reversstraume ikkje vert avgrensa vert dioden øydelagt. Ein lyt difor syta for at reversspenninga til småsigan og likerattardiodar aldrig vert så stor at det oppstår ei slik skredeffekt. I zenerdiodar derimot vert skredeffekta utnytta, men då på ein kontrollert måte.
+
+
+=== Spenning/straum-karakteristikk ===
+
+Straumen gjennom ein diode i framoverretning avheng av spenninga over dioden, men temperaturen spelar òg ein rolle. Strumen kan uttrykkast med den sokalla diodelikninga (òg kalla Shockley-ligning) 
+
+  
+    
+      
+        
+          i
+          
+            D
+          
+        
+        =
+        
+          I
+          
+            s
+          
+        
+        (
+        
+          e
+          
+            
+              v
+              
+                D
+              
+            
+            
+              /
+            
+            η
+            
+              V
+              
+                T
+              
+            
+          
+        
+        −
+        1
+        )
+      
+    
+    {\displaystyle i_{D}=I_{s}(e^{v_{D}/\eta V_{T}}-1)}
+  
+,
+der 
+  
+    
+      
+        
+          I
+          
+            s
+          
+        
+      
+    
+    {\displaystyle I_{s}}
+  
+ er metningsstraumen i reversretning, 
+  
+    
+      
+        
+          v
+          
+            D
+          
+        
+      
+    
+    {\displaystyle v_{D}}
+  
+ er spenninga over dioden, 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+  
+ er ein konstant med verdi mellom 1 og 2 (kalla emisjonskoeffisienten), avhenging av dopingsgraden og 
+  
+    
+      
+        
+          V
+          
+            T
+          
+        
+        =
+        k
+        T
+        
+          /
+        
+        q
+      
+    
+    {\displaystyle V_{T}=kT/q}
+  
+ er ei sokalla termisk spenning, der k er boltzmannkonstanten, T er den absolutte temperaturen (K) og q er elementærladninga. Ein småsignal eller likerattar silisiumdiode tek til å leia når spenninga overstig 0.6 til 0.7 V, noko avhengig av temperatur og dopingsgrad og -geometri. Figuren syner ein typisk spennings/straum-karakteristikk for ein diode. For ein germaiumdiode er reversstraumen nokre μA, medan han i ein silisiumdiode ligg i storleiksorden 10 nA.
+
+
+=== Temperaturfølsamheit ===
+
+Reversmetningsstraumen 
+  
+    
+      
+        
+          I
+          
+            s
+          
+        
+      
+    
+    {\displaystyle I_{s}}
+  
+ er svært liten og temperaturavhengig. Når 
+  
+    
+      
+        
+          I
+          
+            s
+          
+        
+      
+    
+    {\displaystyle I_{s}}
+  
+ er kjent ved ein bestemt temperatur 
+  
+    
+      
+        
+          T
+          
+            1
+          
+        
+      
+    
+    {\displaystyle T_{1}}
+  
+  kan ein finna han ved ein annan tempratur 
+  
+    
+      
+        
+          T
+          
+            2
+          
+        
+      
+    
+    {\displaystyle T_{2}}
+  
+ som 
+
+  
+    
+      
+        
+          I
+          
+            s
+          
+        
+        (
+        
+          T
+          
+            2
+          
+        
+        )
+        =
+        
+          I
+          
+            s
+          
+        
+        (
+        
+          T
+          
+            1
+          
+        
+        )
+        
+          2
+          
+            (
+            
+              T
+              
+                2
+              
+            
+            −
+            
+              T
+              
+                1
+              
+            
+            )
+            
+              /
+            
+            10
+          
+        
+      
+    
+    {\displaystyle I_{s}(T_{2})=I_{s}(T_{1})2^{(T_{2}-T_{1})/10}}
+  
+.
+
+
+== Referansar ==
+
+
+== Sjå òg ==
+Zenerdiode
+Kapasitansdiode
+Schottkydiode
+Tunneldiode
+Lysdiode
+Fotodiode
+PIN-diode

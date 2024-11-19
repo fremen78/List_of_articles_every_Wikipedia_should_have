@@ -1,0 +1,414 @@
+En matemáticas, lógica, ciencias de la computación y disciplinas relacionadas, un algoritmo es un conjunto de instrucciones o reglas definidas y no-ambiguas, ordenadas y finitas que permite, típicamente, solucionar un problema, realizar un cómputo, procesar datos y llevar a cabo otras tareas o actividades.[1]​ Dado un estado inicial y una entrada, siguiendo los pasos sucesivos se llega a un estado final y se obtiene una solución. Los algoritmos son el objeto de estudio de la algoritmia.[2]​
+En la vida cotidiana, se emplean algoritmos frecuentemente para resolver problemas determinados. Algunos ejemplos son los manuales de usuario, que muestran algoritmos para usar un aparato, o las instrucciones que recibe un trabajador de su patrón. Algunos ejemplos en matemática son el algoritmo de multiplicación, para calcular el producto, el algoritmo de la división para calcular el cociente de dos números, el algoritmo de Euclides para obtener el máximo común divisor de dos enteros positivos, o el método de Gauss para resolver un sistema de ecuaciones lineales.
+En términos de programación, un algoritmo es una secuencia de pasos lógicos que permiten solucionar un problema.
+
+
+== Etimología ==
+La palabra castellana algoritmo deriva del latín algorithmus, que se acuñaría en el siglo XV a partir del latín algorismus, con influencia del griego arithmos, que significa «número»,[3]​[4]​ o de la latinización del apellido del matemático persa Al-Juarismi.[2]​[5]​
+La RAE, por su parte, propone que deriva del latín algobarismus, que derivaría del árabe clásico ḥisābu lḡubār, que significa «cálculo mediante cifras arábigas».[6]​
+
+
+== Definición ==
+En general, no existe ningún consenso definitivo en cuanto a la definición formal de algoritmo. Muchos autores los señalan como listas de instrucciones para resolver un cálculo o un problema abstracto, es decir, que un número finito de pasos convierten los datos de un problema (entrada) en una solución (salida).[2]​[6]​[7]​[8]​[9]​[10]​ Sin embargo, cabe notar que algunos algoritmos no tienen necesariamente que terminar o resolver un problema en particular. Por ejemplo, una versión modificada de la criba de Eratóstenes, que nunca termine de calcular números primos, no deja de ser un algoritmo.[11]​
+A lo largo de la historia, varios autores han tratado de definir formalmente los algoritmos utilizando modelos matemáticos. Esto lo hizo Alonzo Church en 1936 con el concepto de «calculabilidad efectiva» basada en su cálculo lambda y por Alan Turing basándose en la máquina de Turing. Los dos enfoques son equivalentes, en el sentido de que se pueden resolver exactamente los mismos problemas con ambos enfoques.[12]​[13]​ No obstante, estos modelos están sujetos a un tipo particular de datos, como son números, símbolos o gráficas mientras que, en general, los algoritmos funcionan sobre una vasta cantidad de estructuras de datos.[7]​[2]​ En general, la parte común en todas las definiciones se puede resumir en las siguientes tres propiedades, siempre y cuando no consideremos algoritmos paralelos:[11]​
+
+Tiempo secuencial. Un algoritmo funciona en tiempo discretizado –paso a paso–, definiendo así una secuencia de estados computacionales por cada entrada válida (la entrada son los datos que se le suministran al algoritmo antes de comenzar).
+Estado abstracto. Cada estado computacional puede ser descrito formalmente utilizando una estructura de primer orden y cada algoritmo es independiente de su implementación (los algoritmos son objetos abstractos), de manera que en un algoritmo las estructuras de primer orden son invariantes bajo isomorfismo.
+Exploración acotada. La transición de un estado al siguiente queda completamente determinada por una descripción fija y finita; es decir, entre cada estado y el siguiente solamente se puede tomar en cuenta una cantidad fija y limitada de términos del estado actual.
+En resumen, un algoritmo es cualquier cosa que funcione paso a paso, donde cada paso se pueda describir sin ambigüedad y sin hacer referencia a una computadora en particular, y además tiene un límite fijo en cuanto a la cantidad de datos que se pueden leer/escribir en un solo paso[14]​.
+Esta amplia definición abarca tanto a algoritmos prácticos como aquellos que solo funcionan en teoría, por ejemplo, el método de Newton y la eliminación de Gauss-Jordan funcionan, al menos en principio, con números de precisión infinita; sin embargo, no es posible programar la precisión infinita en una computadora, y no por ello dejan de ser algoritmos.[15]​ En particular es posible considerar una cuarta propiedad que puede usarse para validar la tesis de Church-Turing, de que toda función calculable se puede programar en una máquina de Turing (o equivalentemente, en un lenguaje de programación suficientemente general):[15]​
+
+Aritmetizabilidad. Solamente operaciones innegablemente calculables están disponibles en el paso inicial.
+
+
+== Medios de expresión de un algoritmo ==
+Los algoritmos pueden ser expresados de muchas maneras, incluyendo al lenguaje natural, pseudocódigo, diagramas de flujo y lenguajes de programación entre otros. Las descripciones en lenguaje natural tienden a ser ambiguas y extensas. El usar pseudocódigo y diagramas de flujo evita muchas ambigüedades del lenguaje natural. Dichas expresiones son formas más estructuradas para representar algoritmos; no obstante, se mantienen independientes de un lenguaje de programación específico.
+La descripción de un algoritmo suele hacerse en tres niveles:
+
+Descripción de alto nivel. Se establece el problema, se selecciona un modelo matemático y se explica el algoritmo de manera verbal, posiblemente con ilustraciones y omitiendo detalles.
+Descripción formal. Se usa un pseudocódigo para describir la secuencia de pasos que encuentran la solución.
+Implementación. Se muestra el algoritmo expresado en un lenguaje de programación específico o algún objeto capaz de llevar a cabo instrucciones.
+También es posible incluir un teorema que demuestre que el algoritmo es correcto, un análisis de complejidad o ambos.
+
+
+=== Diagrama de flujo ===
+
+Los diagramas de flujo son descripciones gráficas de algoritmos; usan símbolos conectados con flechas para indicar la secuencia de instrucciones y están regidos por ISO.
+Los diagramas de flujo se emplean para representar algoritmos pequeños, ya que abarcan mucho espacio y su construcción es laboriosa. Por su facilidad de lectura se utilizan como introducción a los algoritmos, descripción de un lenguaje y descripción de procesos a personas ajenas a la computación.
+
+
+=== Pseudocódigo ===
+
+El pseudocódigo (falso lenguaje, el prefijo pseudo significa falso) es una descripción de alto nivel de un algoritmo que emplea una mezcla de lenguaje natural con algunas convenciones sintácticas propias de lenguajes de programación, como asignaciones, ciclos y condicionales, aunque no está regido por ningún estándar. 
+El pseudocódigo está pensado para facilitar a las personas el entendimiento de un algoritmo y, por lo tanto, puede omitir detalles irrelevantes que son necesarios en una implementación. Programadores diferentes suelen utilizar convenciones distintas, que pueden estar basadas en la sintaxis de lenguajes de programación concretos. Sin embargo, el pseudocódigo, en general, es comprensible sin necesidad de conocer o usar un entorno de programación específico, y es a la vez suficientemente estructurado para que su implementación se pueda hacer directamente a partir de él.
+Así, el pseudocódigo cumple con las funciones antes mencionadas para representar algo abstracto, los protocolos son los lenguajes para la programación. Busque fuentes más precisas para tener mayor comprensión del tema.
+
+
+=== Sistemas formales ===
+La teoría de autómatas y la teoría de funciones recursivas proveen modelos matemáticos que formalizan el concepto de algoritmo. Los modelos más comunes son la máquina de Turing, máquina de registro y funciones μ-recursivas. Estos modelos son tan precisos como un lenguaje máquina, careciendo de expresiones coloquiales o ambigüedad; sin embargo, se mantienen independientes de cualquier computadora y de cualquier implementación.
+
+
+=== Implementación ===
+Muchos algoritmos se han ideado para implementarse en un programa. No obstante, los algoritmos pueden ser implementados en otros medios, como una red neuronal, un circuito eléctrico o un aparato mecánico y eléctrico. Algunos algoritmos incluso se diseñan especialmente para implementarse usando lápiz y papel. El algoritmo de multiplicación tradicional, el algoritmo de Euclides, la criba de Eratóstenes y muchas formas de resolver la raíz cuadrada son solo algunos ejemplos.
+
+
+=== Variables ===
+Son elementos que toman valores específicos de un tipo de datos concreto. La declaración de una variable puede realizarse comenzando con var. Principalmente, existen dos maneras de otorgar valores iniciales a variables: 
+
+Mediante una sentencia de asignación.
+Mediante un procedimiento de entrada de datos (por ejemplo: 'read').
+Ejemplo:
+
+     ...
+    i:=1;
+    read(n);
+    while i < n do begin
+       (* cuerpo del bucle *)
+       i := i + 1
+    end;
+     ...
+
+
+=== Estructuras secuenciales ===
+La estructura secuencial es aquella en la que una acción sigue a otra en secuencia. Las operaciones se suceden de tal modo que la salida de una es la entrada de la siguiente y así sucesivamente hasta el fin del proceso.
+La asignación de esto consiste en el paso de valores o resultados a una zona de la memoria. Dicha zona será reconocida con el nombre de la variable que recibe el valor. La asignación se puede clasificar de la siguiente forma: 
+
+Simples: Consiste en pasar un valor constante a una variable (a ← 15)
+Contador: Consiste en usarla como un verificador del número de veces que se realiza un proceso (a ← a + 1)
+Acumulador: Consiste en usarla como un sumador en un proceso (a ← a + b)
+De trabajo: Donde puede recibir el resultado de una operación matemática que involucre muchas variables (a ← c + b*1/2).
+Un ejemplo de estructura secuencial, como obtener el área de un triángulo:
+
+Inicio 
+...
+    float b, h, a;
+    printf("Diga la base");
+    scanf("%f", &b);
+    printf("Diga la altura");
+    scanf("%f", &h);
+    a = (b*h)/2;
+    printf("El área del triángulo es %f", a)
+...
+Fin
+
+
+== Algoritmos como funciones ==
+
+Un algoritmo se puede concebir como una función que transforma los datos de un problema (entrada) en los datos de una solución (salida). Más aún, los datos se pueden representar a su vez como secuencias de bits, y en general, de símbolos cualesquiera.[2]​[13]​[16]​ Como cada secuencia de bits representa a un número natural (véase Sistema binario), entonces los algoritmos son en esencia funciones de los números naturales en los números naturales que sí se pueden calcular. Es decir que todo algoritmo calcula una función 
+  
+    
+      
+        f
+        :
+        
+          N
+        
+        →
+        
+          N
+        
+      
+    
+    {\displaystyle f\colon \mathbb {N} \to \mathbb {N} }
+  
+ donde cada número natural es la codificación de un problema o de una solución.
+En ocasiones los algoritmos son susceptibles de nunca terminar, por ejemplo, cuando entran a un bucle infinito. Cuando esto ocurre, el algoritmo nunca devuelve ningún valor de salida, y podemos decir que la función queda indefinida para ese valor de entrada. Por esta razón se considera que los algoritmos son funciones parciales, es decir, no necesariamente definidas en todo su dominio de definición.
+Cuando una función puede ser calculada por medios algorítmicos, sin importar la cantidad de memoria que ocupe o el tiempo que se tarde, se dice que dicha función es computable. No todas las funciones entre secuencias datos son computables. El problema de la parada es un ejemplo.
+
+
+== Análisis de algoritmos ==
+
+Como medida de la eficiencia de un algoritmo, se suelen estudiar los recursos (memoria y tiempo) que consume el algoritmo. El análisis de algoritmos se ha desarrollado para obtener valores que de alguna forma indiquen (o especifiquen) la evolución del gasto de tiempo y memoria en función del tamaño de los valores de entrada.
+El análisis y estudio de los algoritmos es una disciplina de las ciencias de la computación y, en la mayoría de los casos, su estudio es completamente abstracto sin usar ningún tipo de lenguaje de programación ni cualquier otra implementación; por eso, en ese sentido, comparte las características de las disciplinas matemáticas. Así, el análisis de los algoritmos se centra en los principios básicos del algoritmo, no en los de la implementación particular. Una forma de plasmar (o algunas veces «codificar») un algoritmo es escribirlo en pseudocódigo o utilizar un lenguaje muy simple tal como Léxico, cuyos códigos pueden estar en el idioma del programador.
+Algunos escritores restringen la definición de algoritmo a procedimientos que deben acabar en algún momento, mientras que otros consideran procedimientos que podrían ejecutarse eternamente sin pararse, suponiendo el caso en el que existiera algún dispositivo físico que fuera capaz de funcionar eternamente. En este último caso, la finalización con éxito del algoritmo no se podría definir como la terminación de este con una salida satisfactoria, sino que el éxito estaría definido en función de las secuencias de salidas dadas durante un periodo de vida de la ejecución del algoritmo. Por ejemplo, un algoritmo que verifica que hay más ceros que unos en una secuencia binaria infinita debe ejecutarse siempre para que pueda devolver un valor útil. Si se implementa correctamente, el valor devuelto por el algoritmo será válido, hasta que evalúe el siguiente dígito binario. De esta forma, mientras evalúa la siguiente secuencia podrán leerse dos tipos de señales: una señal positiva (en el caso de que el número de ceros sea mayor que el de unos) y una negativa en caso contrario. Finalmente, la salida de este algoritmo se define como la devolución de valores exclusivamente positivos si hay más ceros que unos en la secuencia y, en cualquier otro caso, devolverá una mezcla de señales positivas y negativas.
+
+
+== Ejemplo de algoritmo ==
+El problema consiste en encontrar el máximo de un conjunto de números. Para un ejemplo más complejo véase Algoritmo de Euclides.
+
+
+=== Descripción de alto nivel ===
+Dado un conjunto finito 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ de números, se tiene el problema de encontrar el número más grande. Sin pérdida de generalidad se puede asumir que dicho conjunto no es vacío y que sus elementos están numerados como 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+          c
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{0},c_{1},\dots ,c_{n}}
+  
+.
+Es decir, dado un conjunto 
+  
+    
+      
+        C
+        =
+        {
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+          c
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          c
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle C=\{c_{0},c_{1},\dots ,c_{n}\}}
+  
+ se pide encontrar 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ tal que 
+  
+    
+      
+        x
+        ≤
+        m
+      
+    
+    {\displaystyle x\leq m}
+  
+ para todo elemento 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ que pertenece al conjunto 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+.
+Para encontrar el elemento máximo, se asume que el primer elemento (
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+      
+    
+    {\displaystyle c_{0}}
+  
+) es el máximo; luego, se recorre el conjunto y se compara cada valor con el valor del máximo número encontrado hasta ese momento. En el caso de que un elemento sea mayor que el máximo, se asigna su valor al máximo. Cuando se termina de recorrer la lista, el máximo número que se ha encontrado es el máximo de todo el conjunto.
+
+
+=== Descripción formal ===
+El algoritmo puede ser escrito de una manera más formal en el siguiente pseudocódigo:
+
+Sobre la notación:
+
+«←» representa una asignación: 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ ← 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ significa que la variable 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ toma el valor de 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+;
+«devolver» termina el algoritmo y devuelve el valor a su derecha (en este caso, el máximo de 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+).
+
+
+=== Implementación ===
+En lenguaje C++:
+
+
+== Véase también ==
+
+
+=== Tipos de algoritmos según su función ===
+Algoritmo de ordenamiento
+Algoritmo de búsqueda
+
+
+=== Técnicas de diseño de algoritmos ===
+Algoritmos voraces (greedy): seleccionan los elementos más prometedores del conjunto de candidatos hasta encontrar una solución. En la mayoría de los casos la solución no es óptima.
+Algoritmos paralelos: permiten la división de un problema en subproblemas de forma que se puedan ejecutar de forma simultánea en varios procesadores.
+Algoritmos probabilísticos: algunos de los pasos de este tipo de algoritmos están en función de valores pseudoaleatorios.
+Algoritmos determinísticos: el comportamiento del algoritmo es lineal: cada paso del algoritmo tiene únicamente un paso sucesor y otro antecesor.
+Algoritmos no determinísticos: el comportamiento del algoritmo tiene forma de árbol y a cada paso del algoritmo puede bifurcarse a cualquier número de pasos inmediatamente posteriores, además todas las ramas se ejecutan simultáneamente.
+Divide y vencerás: dividen el problema en subconjuntos disjuntos obteniendo una solución de cada uno de ellos para después unirlas, logrando así la solución al problema completo.
+Metaheurísticas: encuentran soluciones aproximadas (no óptimas) a problemas basándose en un conocimiento anterior (a veces llamado experiencia) de los mismos.
+Programación dinámica: intenta resolver problemas disminuyendo su coste computacional aumentando el coste espacial.
+Ramificación y acotación: se basa en la construcción de las soluciones al problema mediante un árbol implícito que se recorre de forma controlada encontrando las mejores soluciones.
+Vuelta atrás (backtracking): se construye el espacio de soluciones del problema en un árbol que se examina completamente, almacenando las soluciones menos costosas.
+
+
+=== Temas relacionados ===
+Cota inferior asintótica
+Cota ajustada asintótica
+Complejidad computacional
+Diagramas de flujo
+Diagrama Nassi-Shneiderman
+Máquina de Turing
+
+
+=== Disciplinas relacionadas ===
+Ciencias de la Computación
+Análisis de algoritmos
+Complejidad computacional
+Gobierno por algoritmos
+Informática
+Inteligencia artificial
+Investigación operativa
+Matemáticas
+Programación
+
+
+== Referencias ==
+
+
+== Bibliografía ==
+Aho, Alfred (1974). The Design and Analysis of Computer Algorithms (en inglés). Addison-Wesley. ISBN 978-0201000290. 
+Cormen, T. H.; Leiserson, C. E.; Rivest, R. L.; Stein, C. (2001). Introduction to Algorithms (en inglés) (2nd edición). MIT Press. ISBN 978-0070131514. 
+Brassard, Gilles; Bratley, Paul (1996). Fundamentos de Algoritmia. Prentice Hall. ISBN 978-8489660007. 
+Knuth, Donald E. (2022). The Art of Computer Programming (en inglés). Addison-Wesley Professional. ISBN 978-0137935109. 
+Mamber, Udi (1989). Introduction to Algorithms, a Creative Approach (en inglés). Addison-Wesley. ISBN 978-0201120370. 
+Sedgewick, Robert (1997). Algorithms in C (en inglés) (3rd edición). Addison-Wesley Professional. ISBN 978-0201314526. 
+Axt, P (1959). «On a Subrecursive Hierarchy and Primitive Recursive Degrees». Transactions of the American Mathematical Society 92 (1): 85-105. JSTOR 1993169. doi:10.2307/1993169. 
+Bell, C. Gordon; Newell, Allen (1971). Computer Structures: Readings and Examples (en inglés). Nueva York: McGraw–Hill. ISBN 978-0070043572. 
+Blass, Andreas; Gurevich, Yuri (2003). «Algorithms: A Quest for Absolute Definitions». Bulletin of European Association for Theoretical Computer Science 81.  Includes an excellent bibliography of 56 references.
+Bolter, David J. (1984). Turing's Man: Western Culture in the Computer Age (1984 edición). Chapel Hill, NC: The University of North Carolina Press. ISBN 978-0807815649. 
+Boolos, George; Jeffrey, Richard (1999). Computability and Logic (4th edición). Cambridge University Press, London. ISBN 978-0-521-20402-6. (requiere registro). : cf. Capítulo 3 Turing machines donde se argumenta que «certain enumerable sets not effectively (mechanically) enumerable».
+Burgin, Mark (2004). Super-Recursive Algorithms. Springer. ISBN 978-0387955698. 
+Campagnolo, M.L., Moore, C., and Costa, J.F. (2000) An analog characterization of the subrecursive functions. In Proc. of the 4th Conference on Real Numbers and Computers, Odense University, pp. 91–109
+Church, Alonzo (1936a). «An Unsolvable Problem of Elementary Number Theory». The American Journal of Mathematics 58 (2): 345-363. JSTOR 2371045. doi:10.2307/2371045.  Republicado en The Undecidable, p. 89ff. La primera expresión de «tesis de Church». Obsérverse en particular la página 10 de The Undecidable donde se define la noción de «calculabilidad efectiva» en términos de «un algoritmo», y usa la expresón «termina», etc.
+Church, Alonzo (1936b). «A Note on the Entscheidungsproblem». The Journal of Symbolic Logic 1 (1): 40-41. JSTOR 2269326. doi:10.2307/2269326.  Church, Alonzo (1936). «Correction to a Note on the Entscheidungsproblem». The Journal of Symbolic Logic 1 (3): 101-102. JSTOR 2269030. doi:10.2307/2269030.  Reprinted in The Undecidable, p. 110ff. Church shows that the Entscheidungsproblem is unsolvable in about 3 pages of text and 3 pages of footnotes.
+Daffa', Ali Abdullah al- (1977). The Muslim contribution to mathematics. London: Croom Helm. ISBN 978-0856644641. 
+Davis, Martin (1965). The Undecidable: Basic Papers On Undecidable Propositions, Unsolvable Problems and Computable Functions. New York: Raven Press. ISBN 978-0486432281. (requiere registro).  Davis introduce cada artículo; los autores de los artículos incluyen a  Gödel, Alonzo Church, Turing, Rosser, Kleene, and Emil Post; los artículos citados en esta entrada se encuentran referenciados por el nombre de cada autor.
+Davis, Martin (2000). Engines of Logic: Mathematicians and the Origin of the Computer. New York: W.W. Nortion. ISBN 978-0-393-32229-3.  Davis offers concise biographies of Leibniz, Boole, Frege, Cantor, Hilbert, Gödel and Turing with von Neumann as the show-stealing villain. Very brief bios of Joseph-Marie Jacquard, Babbage, Ada Lovelace, Claude Shannon, Howard Aiken, etc.
+Dean, Tim (2012). «Evolution and moral diversity». Baltic International Yearbook of Cognition, Logic and Communication 7. doi:10.4148/biyclc.v7i0.1775. 
+Dennett, Daniel (1995). «Darwin's Dangerous Idea». Complexity 2 (1) (New York: Touchstone/Simon & Schuster). pp. 32–36. Bibcode:1996Cmplx...2a..32M. ISBN 978-0-684-80290-9. doi:10.1002/(SICI)1099-0526(199609/10)2:1<32::AID-CPLX8>3.0.CO;2-H. (requiere registro). 
+Dilson, Jesse (2007). The Abacus ((1968, 1994) edición). St. Martin's Press, NY. ISBN 978-0-312-10409-2. , ISBN 0-312-10409-X
+Yuri Gurevich, Sequential Abstract State Machines Capture Sequential Algorithms, ACM Transactions on Computational Logic, Vol 1, no 1 (July 2000), pp. 77–111. Includes bibliography of 33 sources.
+van Heijenoort, Jean (2001). From Frege to Gödel, A Source Book in Mathematical Logic, 1879–1931 ((1967) edición). Harvard University Press, Cambridge. ISBN 978-0-674-32449-7. , 3rd edition 1976[?], ISBN 0-674-32449-8 (pbk.)
+Hodges, Andrew (1983). «Alan Turing: The Enigma». Physics Today 37 (11) (New York: Simon and Schuster). pp. 107-108. Bibcode:1984PhT....37k.107H. ISBN 978-0-671-49207-6. doi:10.1063/1.2915935. , ISBN 0-671-49207-1. Cf. Chapter "The Spirit of Truth" for a history leading to, and a discussion of, his proof.
+Kleene, Stephen C. (1936). «General Recursive Functions of Natural Numbers». Mathematische Annalen 112 (5): 727-742. S2CID 120517999. doi:10.1007/BF01565439. Archivado desde el original el 3 de septiembre de 2014. Consultado el 30 de septiembre de 2013.  Presented to the American Mathematical Society, September 1935. Reprinted in The Undecidable, p. 237ff. Kleene's definition of "general recursion" (known now as mu-recursion) was used by Church in his 1935 paper An Unsolvable Problem of Elementary Number Theory that proved the "decision problem" to be "undecidable" (i.e., a negative result).
+Kleene, Stephen C. (1943). «Recursive Predicates and Quantifiers». American Mathematical Society Transactions 54 (1): 41-73. JSTOR 1990131. doi:10.2307/1990131.  Reprinted in The Undecidable, p. 255ff. Kleene refined his definition of "general recursion" and proceeded in his chapter "12. Algorithmic theories" to posit "Thesis I" (p. 274); he would later repeat this thesis (in Kleene 1952:300) and name it "Church's Thesis"(Kleene 1952:317) (i.e., the Church thesis).
+Kleene, Stephen C. (1991). Introduction to Metamathematics (Tenth edición). North-Holland Publishing Company. ISBN 978-0-7204-2103-3. 
+Knuth, Donald (1997). Fundamental Algorithms, Third Edition. Reading, Massachusetts: Addison–Wesley. ISBN 978-0-201-89683-1. 
+Knuth, Donald (1969). Volume 2/Seminumerical Algorithms, The Art of Computer Programming First Edition. Reading, Massachusetts: Addison–Wesley. 
+Kosovsky, N.K. Elements of Mathematical Logic and its Application to the theory of Subrecursive Algorithms, LSU Publ., Leningrad, 1981
+Kowalski, Robert (1979). «Algorithm=Logic+Control». Communications of the ACM 22 (7): 424-436. S2CID 2509896. doi:10.1145/359131.359136. 
+A.A. Markov (1954) Theory of algorithms. [Translated by Jacques J. Schorr-Kon and PST staff] Imprint Moscow, Academy of Sciences of the USSR, 1954 [i.e., Jerusalem, Israel Program for Scientific Translations, 1961; available from the Office of Technical Services, U.S. Dept. of Commerce, Washington] Description 444 p. 28 cm. Added t.p. in Russian Translation of Works of the Mathematical Institute, Academy of Sciences of the USSR, v. 42. Original title: Teoriya algerifmov. [QA248.M2943 Dartmouth College library. U.S. Dept. of Commerce, Office of Technical Services, number OTS .]
+Minsky, Marvin (1967). Computation: Finite and Infinite Machines (First edición). Prentice-Hall, Englewood Cliffs, NJ. ISBN 978-0-13-165449-5. (requiere registro).  Minsky expands his "...idea of an algorithm – an effective procedure..." in chapter 5.1 Computability, Effective Procedures and Algorithms. Infinite machines.
+Post, Emil (1936). «Finite Combinatory Processes, Formulation I». The Journal of Symbolic Logic 1 (3): 103-105. JSTOR 2269031. doi:10.2307/2269031.  Reprinted in The Undecidable, pp. 289ff. Post defines a simple algorithmic-like process of a man writing marks or erasing marks and going from box to box and eventually halting, as he follows a list of simple instructions. This is cited by Kleene as one source of his "Thesis I", the so-called Church–Turing thesis.
+Rogers, Jr, Hartley (1987). Theory of Recursive Functions and Effective Computability. The MIT Press. ISBN 978-0-262-68052-3. 
+Rosser, J.B. (1939). «An Informal Exposition of Proofs of Godel's Theorem and Church's Theorem». Journal of Symbolic Logic 4 (2): 53-60. JSTOR 2269059. doi:10.2307/2269059.  Reprinted in The Undecidable, p. 223ff. Herein is Rosser's famous definition of "effective method": "...a method each step of which is precisely predetermined and which is certain to produce the answer in a finite number of steps... a machine which will then solve any problem of the set with no human intervention beyond inserting the question and (later) reading the answer" (p. 225–226, The Undecidable)
+Santos-Lang, Christopher (2014). «Moral Ecology Approaches to Machine Ethics». Machine Medical Ethics. Intelligent Systems, Control and Automation: Science and Engineering 74. Switzerland: Springer. pp. 111-127. ISBN 978-3-319-08107-6. doi:10.1007/978-3-319-08108-3_8. 
+Scott, Michael L. (2009). Programming Language Pragmatics (3rd edición). Morgan Kaufmann Publishers/Elsevier. ISBN 978-0-12-374514-9. 
+Sipser, Michael (2006). Introduction to the Theory of Computation. PWS Publishing Company. ISBN 978-0-534-94728-6. 
+Sober, Elliott; Wilson, David Sloan (1998). Unto Others: The Evolution and Psychology of Unselfish Behavior. Cambridge: Harvard University Press. (requiere registro). 
+Stone, Harold S. (1972). Introduction to Computer Organization and Data Structures (1972 edición). McGraw-Hill, New York. ISBN 978-0-07-061726-1.  Cf. in particular the first chapter titled: Algorithms, Turing Machines, and Programs. His succinct informal definition: "...any sequence of instructions that can be obeyed by a robot, is called an algorithm" (p. 4).
+Tausworthe, Robert C (1977). Standardized Development of Computer Software Part 1 Methods. Englewood Cliffs NJ: Prentice–Hall, Inc. ISBN 978-0-13-842195-3. 
+Turing, Alan M. (1936–37). «On Computable Numbers, With An Application to the Entscheidungsproblem». Proceedings of the London Mathematical Society. Series 2 42: 230-265. doi:10.1112/plms/s2-42.1.230. . Corrections, ibid, vol. 43(1937) pp. 544–546. Reprinted in The Undecidable, p. 116ff. Turing's famous paper completed as a Master's dissertation while at King's College Cambridge UK.
+Turing, Alan M. (1939). «Systems of Logic Based on Ordinals». Proceedings of the London Mathematical Society 45: 161-228. doi:10.1112/plms/s2-45.1.161.  Reprinted in The Undecidable, pp. 155ff. Turing's paper that defined "the oracle" was his PhD thesis while at Princeton.
+United States Patent and Trademark Office (2006), 2106.02 **>Mathematical Algorithms: 2100 Patentability, Manual of Patent Examining Procedure (MPEP). Latest revision August 2006
+
+
+== Enlaces externos ==
+ Wikilibros alberga un libro o manual sobre Algoritmia.
+ Wikcionario  tiene definiciones y otra información sobre algoritmo.

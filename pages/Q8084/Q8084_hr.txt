@@ -1,0 +1,1021 @@
+Trigonometrija je grana matematike koja je proistekla iz proučavanja odnosa između kutova i duljina stranica trokuta. Pojavila se u helenizmu tijekom 3. stoljeća pr. n. e. u primjenama geometrije i astronomskim proučavanjima. Grci su se usredotočili na izračun duljina tetiva kružnice, dok su matematičari u Indiji izradili najstarije poznate tablice vrijednosti za trigonometrijske omjere, koji danas nose ime trigonometrijske funkcije. Te se funkcije mogu poopćiti i na kutove koji se ne mogu naći u trokutu i koje su periodične u skupu realnih brojeva pa se danas trigonometrija definira kao grana koja proučava poopćene trigonometrijske funkcije i bavi se njihovom upotrebom.
+Ime trigonometrije dolazi od starogrčkih riječi τρίγωνον (trígōnon) za trokut i μέτρον (métron) za mjeru.
+Trigonometrija se kroz povijest primjenjivala u područjima kao što su geodezija, zemljomjerstvo, nebeska mehanika i navigacija. S pomoću trigonometrijskih funkcija mogle su se izraziti putanje u topništvu. Bez nje je nezamisliva današnja tehnologija, posebice digitalna grafika i digitalna analiza i sinteza zvuka.
+Trigonometrija je poznata po brojnim trigonometrijskim jednakostima koje se upotrebljavaju za pretvorbu i pojednostavljivanje trigonometrijskih izraza i rješavanje jednadžbi.
+
+
+== Povijest ==
+
+Sumerski astronomi proučavali su mjerenje kutova koristeći podjelu kruga na 360 stupnjeva. Oni, a poslije i Babilonci, proučavali su omjere stranica sličnih trokuta i otkrili neka svojstva tih omjera, ali to nisu pretvorili u sustavnu metodu za pronalaženje stranica i kutova trokuta. Interpretacije podataka na ploči Plimpton 322 iz oko 1900. godine pr. n. e. ukazuju na to da su Babilonci tada imali precizne seksagezimalne tablice sekansa. Drevni Nubijci imali su sličnu metodu.
+U 3. stoljeću pr. n. e. grčki matematičari poput Euklida i Arhimeda proučavali su svojstva tetiva i obodnih kutova kružnice te su dokazali teoreme koji su ekvivalentni modernim trigonometrijskim formulama, iako su ih prikazali geometrijski, a ne algebarski. Hiparh iz Nikeje u Maloj Aziji dao je 140. godine pr. n. e. prve tablice za tetive, analogne suvremenim tablicama vrijednosti funkcije sinus, i koristio ih za rješavanje problema u ravninskoj i sfernoj trigonometriji. U 2. stoljeću nove ere grčko-egipatski astronom Ptolemej iz Aleksandrije u Egiptu konstruirao je detaljne trigonometrijske tablice u 1. knjizi svojega Almagesta. Ptolemej je koristio duljinu tetive kružnice za definiranje svojih trigonometrijskih funkcija, što je slično današnjoj konvenciji za sinuse: vrijednost za sin ϑ dobije se iz duljine tetive za dvostruki kut (2ϑ) u njegovoj tablici i dijeljenjem te vrijednosti s dva. Stoljeća su prošla prije nego što su izrađene detaljnije tablice, a Ptolemejev rad ostao je u upotrebi za izvođenje trigonometrijskih izračuna u astronomiji tijekom sljedećih 1200 godina, u srednjovjekovnom bizantskom, islamskom, i  naposljetku u zapadnoeuropskom svijetu.
+Moderna definicija funkcije sinus prvi je put potvrđena u sanskrtskom traktatu Sūrya Siddhānta, a njezina je svojstva dodatno dokumentirao u 5. stoljeću indijski matematičar i astronom Aryabhata. Grčka i indijska djela preveli su i proširili srednjovjekovni islamski matematičari. Godine 830. perzijski matematičar Habash al-Hasib al-Marwazi izradio je prvu tablicu kotangensa. Do 10. stoljeća nove ere perzijski matematičar Abū al-Wafā' al-Būzjānī upotrebio je svih šest trigonometrijskih funkcija. Abu al-Wafa imao je tablice sinusa u koracima od četvrtine stupnja (0,25°) s točnošću od 8 decimalnih mjesta i točne tablice vrijednosti tangensa. Također je uveo važne inovacije u sfernu trigonometriju. Perzijski polihistor Nasirudin Tusi smatra se tvorcem trigonometrije kao zasebne matematičke discipline, neovisne o astronomiji, a razvio je i sfernu trigonometriju u njezin današnji oblik. Naveo je šest različitih slučajeva pravokutnog trokuta u sfernoj trigonometriji, otkrio poučak o sinusima za ravninske trokute i trokute na sferi i tangensni poučak za sferne trokute i dokazao ih. Znanje o trigonometrijskim funkcijama i metodama dospjelo je u zapadnu Europu preko latinskih prijevoda Ptolemejeva grčkog Almagesta kao i djela perzijskih i arapskih astronoma kao što su Al Battani i Nasirudin Tusi. Jedno od najranijih djela o trigonometriji sjevernoeuropskog matematičara jest De Triangulis Nijemca Regiomontana iz 15. stoljeća, kojega je bizantski grčki učenjak kardinal Bazil Bessarion s kojim je živio potaknuo da piše i opskrbio ga primjerkom Almagesta. U isto vrijeme, drugi prijevod Almagesta s grčkog na latinski dovršio je  Krećanin George iz Trapezunda. Trigonometrija je još uvijek bila toliko malo poznata u sjevernoj Europi 16. stoljeća da je Nikola Kopernik posvetio dva poglavlja knjige De revolutionibus orbium coelestium pojašnjavanju osnovnih pojmova.
+Potaknuta potrebama navigacije i točnih karata velikih geografskih područja, trigonometrija je prerasla u glavnu granu matematike. Bartholomaeus Pitiscus prvi je upotrijebio tu riječ, objavivši svoj rad Trigonometria 1595. godine. Gemma Frisius prvi je opisao metodu triangulacije koja se i danas koristi u geodetskoj izmjeri. Leonhard Euler  uključio je kompleksne brojeve u trigonometriju. Radovi škotskih matematičara Jamesa Gregoryja u 17. stoljeću i Colina Maclaurina u 18. stoljeću utjecali su na razvoj trigonometrijskih redova. U 18. stoljeću Brook Taylor definirao je opći Taylorov red.
+
+
+== Trigonometrijski omjeri ==
+
+Trigonometrijski omjeri jesu omjeri duljina stranica pravokutnog trokuta. Ti omjeri ovise samo o jednom oštrom kutu pravokutnog trokuta jer su svaka dva pravokutna trokuta s istim oštrim kutom slična.
+Omjeri definiraju funkcije toga kuta koje se nazivaju trigonometrijske funkcije. U nastavku ih prikazujemo kao funkcije poznatog kuta α (alfa) u vrhu A, uz oznake a za duljinu nasuprotne katete, b za duljinu priležeće katete i h za duljinu hipotenuze:
+
+Sinus kuta α  (oznaka: sin α) jest omjer duljina nasuprotne stranice i hipotenuze:
+
+  
+    
+      
+        sin
+        ⁡
+        α
+        =
+        
+          
+            a
+            h
+          
+        
+      
+    
+    {\displaystyle \sin \alpha ={\frac {a}{h}}}
+  
+
+Kosinus kuta α (oznaka: cos α) jest omjer duljina priležeće katete i hipotenuze:
+
+  
+    
+      
+        cos
+        ⁡
+        α
+        =
+        
+          
+            b
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle \cos \alpha ={\frac {b}{h}}.}
+  
+
+Tangens kuta α (oznaka: tan α ili tg α) jest omjer duljina nasuprotne i priležeće katete:
+
+  
+    
+      
+        tan
+        ⁡
+        α
+        =
+        
+          
+            a
+            b
+          
+        
+        =
+        
+          
+            
+              a
+              
+                /
+              
+              h
+            
+            
+              b
+              
+                /
+              
+              h
+            
+          
+        
+        =
+        
+          
+            
+              sin
+              ⁡
+              α
+            
+            
+              cos
+              ⁡
+              α
+            
+          
+        
+      
+    
+    {\displaystyle \tan \alpha ={\frac {a}{b}}={\frac {a/h}{b/h}}={\frac {\sin \alpha }{\cos \alpha }}}
+  
+
+Hipotenuza je stranica nasuprot kutu od 90 stupnjeva u pravokutnom trokutu; to je najduža stranica trokuta i jedna od dviju stranica koje zatvaraju kut u vrhu A. Priležeća kateta jest druga stranica koja zatvara kut u vrhu A. Nasuprotna kateta jest stranica koja je nasuprot kutu u vrhu  A.
+Recipročne vrijednosti tih omjera nazivaju se kosekans (csc), sekans (sec) i kotangens (cot ili ctg):
+
+  
+    
+      
+        csc
+        ⁡
+        α
+        =
+        
+          
+            1
+            
+              sin
+              ⁡
+              α
+            
+          
+        
+        =
+        
+          
+            h
+            a
+          
+        
+      
+    
+    {\displaystyle \csc \alpha ={\frac {1}{\sin \alpha }}={\frac {h}{a}}}
+  
+
+  
+    
+      
+        sec
+        ⁡
+        α
+        =
+        
+          
+            1
+            
+              cos
+              ⁡
+              α
+            
+          
+        
+        =
+        
+          
+            h
+            b
+          
+        
+      
+    
+    {\displaystyle \sec \alpha ={\frac {1}{\cos \alpha }}={\frac {h}{b}}}
+  
+
+  
+    
+      
+        cot
+        ⁡
+        α
+        =
+        
+          
+            1
+            
+              tan
+              ⁡
+              α
+            
+          
+        
+        =
+        
+          
+            
+              cos
+              ⁡
+              A
+            
+            
+              sin
+              ⁡
+              A
+            
+          
+        
+        =
+        
+          
+            b
+            a
+          
+        
+      
+    
+    {\displaystyle \cot \alpha ={\frac {1}{\tan \alpha }}={\frac {\cos A}{\sin A}}={\frac {b}{a}}}
+  
+
+Funkcije kosinus, kotangens i kosekans nazvane su tako jer su jednake sinusu, tangensu i sekansu komplementarnog kuta (β=90°–α), što se dodaje kao prefiks ko– u njihovu imenu.
+Pomoću ovih funkcija mogu se riješiti gotovo sva pitanja o proizvoljnim trokutima upotrebom sinusnog poučka i kosinusnog poučka. Ti se poučci mogu upotrebljavati za izračunavanje preostalih kutova i stranica bilo kojeg trokuta čim su poznate duljine dviju stranica i kut među njima ili dva kuta i duljina stranice ili duljine svih triju stranica.
+
+
+=== Jedinična kružnica i uobičajene trigonometrijske vrijednosti ===
+
+Trigonometrijski omjeri mogu se prikazati pomoću jedinične kružnice, što je kružnica radijusa 1 sa središtem u ishodištu ravnine. U ovoj postavci promatrani kut ϑ zatvara apscisa koordinatnog sustava i zraka iz središta kružnice prema točki (x,y) na kružnici,  gdje je onda x=cos ϑ i y=sin ϑ. Uz poznavanje vrijednosti funkcija za neke uobičajene kutove (30°, 45°) iz tog se prikaza mogu odrediti  vrijednosti kutova koji ih na neki način komplementiraju:
+
+
+== Trigonometrijske funkcije realne i kompleksne varijable ==
+Koristeći se jediničnom kružnicom definicije trigonometrijskih omjera mogu se proširiti na sve realne brojeve u kojima su sinus i kosinus funkcije s periodom 2π (360°), a tangens i kotangens s periodom π (180°).
+
+
+=== Grafovi trigonometrijskih funkcija ===
+Sljedeća tablica prikazuje glavna svojstva grafova šest trigonometrijskih funkcija:
+
+
+=== Inverzne trigonometrijske funkcije ===
+Kako su glavne trigonometrijske funkcije periodične one nisu injektivne pa stoga nisu invertibilne, ali se ograničavanjem domene mogu učiniti invertibilnima. 
+Nazivi inverznih trigonometrijskih funkcija, zajedno s njihovim domenama i rasponom, nalaze se u sljedećoj tablici:  
+
+
+=== Prikaz u obliku reda ===
+Kada se uzmu kao funkcije realne varijable, trigonometrijski omjeri mogu se prikazati zbrojem beskonačnog niza tj. redom potencija svoje bezdimenzijske varijable (npr. kuta izraženog u radijanima). Na primjer, sinus i kosinus imaju sljedeće prikaze:
+
+  
+    
+      
+        
+          
+            
+              
+                sin
+                ⁡
+                x
+              
+              
+                
+                =
+                x
+                −
+                
+                  
+                    
+                      x
+                      
+                        3
+                      
+                    
+                    
+                      3
+                      !
+                    
+                  
+                
+                +
+                
+                  
+                    
+                      x
+                      
+                        5
+                      
+                    
+                    
+                      5
+                      !
+                    
+                  
+                
+                −
+                
+                  
+                    
+                      x
+                      
+                        7
+                      
+                    
+                    
+                      7
+                      !
+                    
+                  
+                
+                +
+                ⋯
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    0
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    
+                      (
+                      −
+                      1
+                      
+                        )
+                        
+                          n
+                        
+                      
+                      
+                        x
+                        
+                          2
+                          n
+                          +
+                          1
+                        
+                      
+                    
+                    
+                      (
+                      2
+                      n
+                      +
+                      1
+                      )
+                      !
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\sin x&=x-{\frac {x^{3}}{3!}}+{\frac {x^{5}}{5!}}-{\frac {x^{7}}{7!}}+\cdots \\&=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n+1}}{(2n+1)!}}\\\end{aligned}}}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                cos
+                ⁡
+                x
+              
+              
+                
+                =
+                1
+                −
+                
+                  
+                    
+                      x
+                      
+                        2
+                      
+                    
+                    
+                      2
+                      !
+                    
+                  
+                
+                +
+                
+                  
+                    
+                      x
+                      
+                        4
+                      
+                    
+                    
+                      4
+                      !
+                    
+                  
+                
+                −
+                
+                  
+                    
+                      x
+                      
+                        6
+                      
+                    
+                    
+                      6
+                      !
+                    
+                  
+                
+                +
+                ⋯
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    0
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    
+                      (
+                      −
+                      1
+                      
+                        )
+                        
+                          n
+                        
+                      
+                      
+                        x
+                        
+                          2
+                          n
+                        
+                      
+                    
+                    
+                      (
+                      2
+                      n
+                      )
+                      !
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\cos x&=1-{\frac {x^{2}}{2!}}+{\frac {x^{4}}{4!}}-{\frac {x^{6}}{6!}}+\cdots \\&=\sum _{n=0}^{\infty }{\frac {(-1)^{n}x^{2n}}{(2n)!}}.\end{aligned}}}
+  
+
+Uskličnik u tim formulama označava vrijednost faktorijela.
+Pomoću ovih definicija trigonometrijske funkcije mogu se definirati za kompleksne brojeve. Kada se eksponencijalnu funkciju poopći na skup kompleksnih brojeva, vrijedi i formula koju se naziva Eulerovom formulom:
+
+  
+    
+      
+        
+          e
+          
+            x
+            +
+            i
+            y
+          
+        
+        =
+        
+          e
+          
+            x
+          
+        
+        (
+        cos
+        ⁡
+        y
+        +
+        i
+        sin
+        ⁡
+        y
+        )
+        .
+      
+    
+    {\displaystyle e^{x+iy}=e^{x}(\cos y+i\sin y).}
+  
+
+
+=== Izračunavanje trigonometrijskih funkcija ===
+Trigonometrijske funkcije bile su jedan od prvih primjera upotrebe matematičkih tablica. One su se dugo nalazile u udžbenicima, a učenike se podučavalo kako nalaziti vrijednosti funkcija i interpolirati vrijednosti za kutove koji nisu bili navedeni u tablicama. Poneki logaritamari (šiberi) imali su posebne ljestvice za trigonometrijske funkcije.
+Napredniji kalkulatori imali su tipke za izračun glavnih trigonometrijskih funkcija. Većina računalnih programskih jezika ima biblioteke funkcija koje uključuju trigonometrijske funkcije. Hardverske jedinice s pomičnim zarezom ugrađene u mikroprocesore osobnih računala imaju ugrađene upute za izračun trigonometrijskih funkcija.
+
+
+== Primjene ==
+
+
+=== Astronomija ===
+Stoljećima se sferna trigonometrija koristila za određivanje položaja Sunca, Mjeseca i zvijezda, predviđanje pomrčina i opisivanje orbita planeta.
+U moderno doba, tehnika triangulacije koristi se u astronomiji za mjerenje udaljenosti do obližnjih zvijezda, kao i u satelitskim navigacijskim sustavima.
+
+
+=== Navigacija ===
+
+Povijesno gledano, trigonometrija se koristila za određivanje zemljopisne širine i dužine jedrenjaka, iscrtavanje putanja i izračunavanje udaljenosti tijekom plovidbe.
+Trigonometrija se još uvijek koristi u navigaciji putem sredstava kao što su sustav globalnog pozicioniranja i umjetna inteligencija za autonomna vozila.
+
+
+=== Geodetske izmjere ===
+U zemljomjerstvu, trigonometrija se koristi za izračunavanje duljina, površina i relativnih kutova između objekata.
+Na većoj skali, trigonometrija se koristi u geografiji za mjerenje udaljenosti između orijentira.(30°, 45°)
+
+
+=== Periodične funkcije ===
+
+Funkcije sinus i kosinus važne su za teoriju periodičnih funkcija, poput onih koje opisuju zvučne i svjetlosne valove. Fourier je otkrio da se svaka kontinuirana periodična funkcija može opisati kao zbroj beskonačnog niza trigonometrijskih funkcija.
+Čak se i neperiodične funkcije mogu prikazati kao integral sinusa i kosinusa s pomoću Fourierove transformacije. Ona, među ostalim, ima primjenu u kvantnoj mehanici i komunikacijama. 
+
+
+=== Optika i akustika ===
+Trigonometrija je korisna u mnogim fizičkim znanostima, uključujući akustiku i optiku. U tim se područjima koristi za opisivanje zvučnih i svjetlosnih valova.
+
+
+=== Ostale aplikacije ===
+Polja koja koriste trigonometriju ili trigonometrijske funkcije uključuju teoriju glazbe, geodeziju, audiosintezu, arhitekturu, elektroniku, biologiju, medicinsko snimanje ( CT skeniranje i ultrazvuk), kemiju, teoriju brojeva (a time i kriptografiju), seizmologiju, meteorologiju, oceanografiju, kompresiju slika, fonetiku, ekonomiju, elektrotehniku, strojarstvo, građevinarstvo, računalnu grafiku, kartografiju, kristalografiju i razvoj računalnih igara.
+
+
+== Trigonometrijski identiteti ==
+
+Trigonometrija je poznata po svojim brojnim identitetima, odnosno jednadžbama koje su istinite za sve moguće brojeve.
+Identiteti koji uključuju samo kutove poznati su kao trigonometrijski identiteti. Druge jednadžbe, poznate kao identiteti trokuta, povezuju stranice i kutove danog trokuta.
+
+
+=== Identiteti trokuta ===
+U sljedećim identitetima α, β, γ jesu kutovi u vrhovima trokuta A, B, C, dok su a, b i c duljine tim vrhovima nasuprotnih stranica.
+
+
+==== Sinusni poučak ====
+Sinusni poučak za proizvoljan trokut izražava se formulama
+
+  
+    
+      
+        
+          
+            a
+            
+              sin
+              ⁡
+              α
+            
+          
+        
+        =
+        
+          
+            b
+            
+              sin
+              ⁡
+              β
+            
+          
+        
+        =
+        
+          
+            c
+            
+              sin
+              ⁡
+              γ
+            
+          
+        
+        =
+        2
+        R
+        =
+        
+          
+            
+              a
+              b
+              c
+            
+            
+              2
+              P
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {a}{\sin \alpha }}={\frac {b}{\sin \beta }}={\frac {c}{\sin \gamma }}=2R={\frac {abc}{2P}}}
+  
+
+gdje 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ je površina trokuta, a R je polumjer trokutu opisane kružnice:
+
+  
+    
+      
+        R
+        =
+        
+          
+            
+              a
+              b
+              c
+            
+            
+              (
+              a
+              +
+              b
+              +
+              c
+              )
+              (
+              a
+              −
+              b
+              +
+              c
+              )
+              (
+              a
+              +
+              b
+              −
+              c
+              )
+              (
+              b
+              +
+              c
+              −
+              a
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle R={\frac {abc}{\sqrt {(a+b+c)(a-b+c)(a+b-c)(b+c-a)}}}.}
+  
+
+
+==== Kosinusni poučak ====
+Kosinusni poučak proširenje je Pitagorina poučka na proizvoljne trokute:
+
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+        −
+        2
+        a
+        b
+        cos
+        ⁡
+        γ
+      
+    
+    {\displaystyle c^{2}=a^{2}+b^{2}-2ab\cos \gamma }
+  
+
+To se ponekad piše i kao
+
+  
+    
+      
+        cos
+        ⁡
+        γ
+        =
+        
+          
+            
+              
+                a
+                
+                  2
+                
+              
+              +
+              
+                b
+                
+                  2
+                
+              
+              −
+              
+                c
+                
+                  2
+                
+              
+            
+            
+              2
+              a
+              b
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \cos \gamma ={\frac {a^{2}+b^{2}-c^{2}}{2ab}}.}
+  
+
+
+==== Projekcijska formula ====
+Duljina stranice trokuta može se dobiti kao zbroj projekcija drugih dviju stranica na nju, na primjer:
+
+  
+    
+      
+        c
+        =
+        a
+        cos
+        ⁡
+        β
+        +
+        b
+        cos
+        ⁡
+        α
+      
+    
+    {\displaystyle c=a\cos \beta +b\cos \alpha }
+  
+
+
+==== Površina trokuta ====
+Ako su zadane dvije stranice a i b i kut između njih γ, površina trokuta dana je polovicom umnoška duljina stranica i sinusa tog kuta:
+
+  
+    
+      
+        P
+        =
+        
+          
+            1
+            2
+          
+        
+        a
+        b
+        sin
+        ⁡
+        γ
+      
+    
+    {\displaystyle P={\frac {1}{2}}ab\sin \gamma }
+  
+
+
+=== Trigonometrijski identiteti ===
+Sljedeći trigonometrijski identitet povezan je s Pitagorinim poučkom i vrijedi za bilo koju vrijednost x:
+
+  
+    
+      
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        x
+        +
+        
+          cos
+          
+            2
+          
+        
+        ⁡
+        x
+        =
+        1
+         
+      
+    
+    {\displaystyle \sin ^{2}x+\cos ^{2}x=1\ }
+  
+
+
+==== Eulerova formula ====
+Eulerova formula 
+  
+    
+      
+        
+          e
+          
+            i
+            x
+          
+        
+        =
+        cos
+        ⁡
+        x
+        +
+        i
+        sin
+        ⁡
+        x
+      
+    
+    {\displaystyle e^{ix}=\cos x+i\sin x}
+  
+ daje sljedeće analitičke identitete za sinus, kosinus i tangens s pomoću broja e i imaginarne jedinice i:
+
+  
+    
+      
+        sin
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                e
+                
+                  i
+                  x
+                
+              
+              −
+              
+                e
+                
+                  −
+                  i
+                  x
+                
+              
+            
+            
+              2
+              i
+            
+          
+        
+        ,
+        
+        cos
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                e
+                
+                  i
+                  x
+                
+              
+              +
+              
+                e
+                
+                  −
+                  i
+                  x
+                
+              
+            
+            2
+          
+        
+        ,
+        
+        tan
+        ⁡
+        x
+        =
+        
+          
+            
+              i
+              (
+              
+                e
+                
+                  −
+                  i
+                  x
+                
+              
+              −
+              
+                e
+                
+                  i
+                  x
+                
+              
+              )
+            
+            
+              
+                e
+                
+                  i
+                  x
+                
+              
+              +
+              
+                e
+                
+                  −
+                  i
+                  x
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \sin x={\frac {e^{ix}-e^{-ix}}{2i}},\qquad \cos x={\frac {e^{ix}+e^{-ix}}{2}},\qquad \tan x={\frac {i(e^{-ix}-e^{ix})}{e^{ix}+e^{-ix}}}.}
+  
+
+
+==== Ostali trigonometrijski identiteti ====
+Ostali često korišteni trigonometrijski identiteti uključuju identitete polukuta, identitete zbroja i razlike kutova te identitete umnožaka i zbroja.
+
+
+== Literatura ==
+Boyer, Carl B. 1991. A history of mathematics. 2 izdanje. Wiley. New York. ISBN 978-0-471-54397-8
+Nielsen, Kaj L. 1966. Logarithmic and Trigonometric Tables to Five Places. 2 izdanje. Barnes & Noble
+Thurston, Hugh A. 1996. Early astronomy. Springer study edition. 1. ed., 1. softcover printing izdanje. Springer. New York Berlin Heidelberg. ISBN 978-0-387-94822-5
+
+
+== Izvori ==
+
+
+== Vanjske poveznice ==
+Khan Academy: Trigonometrija
+Trigonometrija Alfreda Monroea Kenyona i Louisa Ingolda iz 1914.
+Trigonometry Encyclopædia Britannica

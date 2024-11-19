@@ -1,0 +1,784 @@
+Kondensaattori (lat. condensare, puristaa kasaan) on kaksinapainen sähkötekniikassa käytettävä passiivikomponentti. Sen keskeisin ominaisuus on kapasitanssi, joka on kykyä tallentaa sähkövarausta. Kondensaattori varastoi energiaa sähkökenttään.
+Kun varausta siirretään kondensaattorin napoihin, muodostuu niiden välille jännite, joka on suoraan verrannollinen siirretyn varauksen suuruuteen ja kääntäen verrannollinen kondensaattorin kapasitanssiin.
+Kondensaattoreita voidaan tämän kapasitanssin vuoksi käyttää elektronisissa piireissä jännitevaihteluiden tasaamisessa. Kondensaattorin kyky tasata jännitevaihtelua on suoraan verrannollinen sen kapasitanssiin.
+
+
+== Historiaa ==
+Ensimmäisen kondensaattorin keksi Ewald Georg von Kleist Camminissa Pommerissa 11. lokakuuta 1745, yrittäessään varastoida sähköä elohopeaa täynnä olevaan pulloon. Maailmalle tieto uudesta keksinnöstä levisi kuitenkin Pieter van Musschenbroekin kautta. Hän teki kokeen vedellä täytetyllä astialla Leydenin (Leidenin) yliopistossa Hollannissa tammikuussa 1746. Tästä sai nimensä Leydenin pullo. 
+
+
+== Rakenne ==
+Tyypillinen kondensaattori koostuu kahdesta elektrodista, joista kumpikin varastoi samansuuruisen mutta erimerkkisen sähkövarauksen. Elektrodit voivat olla esimerkiksi tasomaisia levyjä (levykondensaattori) tai sisäkkäisiä pallokuoria (pallokondensaattori). Elektrodit on eristetty toisistaan, ja kun kondensaattori kytketään jännitelähteeseen, ne saavat sähköisen varauksen ja niiden välille muodostuu sähkökenttä. 
+Kondensaattori varautuu myös, jos sen jompaakumpaa elektrodia kosketetaan varauksellisella kappaleella. Tällöin myös toinen elektrodi saa influenssi-ilmiön vaikutuksesta yhtä suuren, mutta vastakkaismerkkisen varauksen.
+Kondensaattorin sähkökenttä on käytännöllisesti katsoen kokonaan elektrodien välissä, sillä muualla elektrodien vastakkaismerkkisten varausten aiheuttamat sähkökentät kumoavat toisensa. Levykondensaattorissa tämä sähkökenttä on käytännössä homogeeninen eli kaikkialla levyjen välissä yhtä voimakas. Sähkökentän voimakkuus on:
+
+  
+    
+      
+        
+          E
+        
+        =
+        
+          
+            U
+            d
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {E} ={\frac {U}{d}},}
+  
+
+jossa
+U on levyjen välinen jännite ja
+d on levyjen välinen etäisyys
+
+
+=== Epäideaalisuus ===
+
+
+==== Läpilyönti ====
+Jos jännite ylittää eristeen kestokyvyn, tapahtuu läpilyönti, jolloin eriste muuttuu johtavaksi (ks. valokaari). Tätä jännitettä kutsutaan läpilyöntijännitteeksi
+
+  
+    
+      
+        
+          U
+        
+        =
+        
+          E
+        
+        ⋅
+        
+          d
+        
+        ,
+      
+    
+    {\displaystyle {U}={E}\cdot {d},}
+  
+
+jossa
+E on eristeen dielektrinen lujuus ja
+d on levyjen välinen etäisyys.
+Tämän estämiseksi valmistaja määrittelee kondensaattorin suurimman sallitun käyttöjännitteen.
+
+
+==== Vuotovirta ====
+Kondensaattorin levyjen välille muodostunut sähkökenttä säilyy, vaikka jännitelähde irrotetaan, koska sähkökenttä pitää varaukset paikoillaan. Levyjen välissä olevalla eristeellä on kuitenkin johtavuutta, joka riippuu eristemateriaalista. Tämä johtavuus aiheuttaa pienen vuotovirran RLeak kondensaattorin napojen välillä, joten kondensaattori purkautuu ajan kuluessa itsekseen.
+
+
+==== Ekvivalenttinen sarjaresistanssi ja sarjainduktanssi ====
+Kondensaattorin jalat aiheuttavat ekvivalenttisen sarjaresistanssin RESR ja ekvivalenttisen sarjainduktanssin LESL. Ekvivalenttinen sarjainduktanssi ja -resistanssi on otettava huomioon suuritaajuisia kytkentöjä suunniteltaessa, sillä taajuuden kasvaessa kapasitiivinen impedanssi pienenee ja induktiivinen impedanssi kasvaa, jolloin sarjainduktanssi ja -resistanssi määräävät kondensaattorin impedanssin.
+
+
+== Vesianalogia ==
+
+Vesianalogiassa johdossa kulkevia latauksen kuljettajia kuvataan veden virtauksena putkessa. Kondensaattori on kuin putkessa oleva muovikalvo. Vesimolekyylit eivät voi kulkea kalvon lävitse mutta vesi voi venyttää kalvoa. Analogia selvittää muutamaa näkökulmaa kondensaattoreista:
+
+Virta muuttaa kondensaattorin varausta niin kuin vedenvirtaus muuttaa kalvon venymistä.
+Mitä enemmän kondensaattoria on ladattu, sen suurempi on jännitehäviö. Voidaan havaita vesianalogiasta siten että mitä enemmän kalvoa venytetään sen enemmän se alkaa vastustamaan venytystä.
+Varaus voi virrata kondensaattorin “läpi” vaikka elektronit eivät pääse puolelta toiselle. Vesianalogiassa tätä kuvaa veden virtaaminen putkessa, vaikka vesimolekyylit eivät voikaan läpäistä kalvoa. Virtaus ei silti voi jatkua samaan suuntaan loputtomiin tai kalvo repeää eli virta pääsee kulkemaan kondensaattorin läpi.
+Kapasitanssi kuvaa sitä kuinka paljon varausta voidaan varastoida yhdelle kondensaattorin levylle. Hyvin venyvä kalvo kuvaa korkeampaa kapasitanssia kuin huonosti venyvä kalvo.
+Latautunut kondensaattori varastoi potentiaalienergiaa kuten venyvä kalvo.
+
+
+== Kapasitanssi ==
+
+Kondensaattorin kapasitanssi (symboli C) on suure, joka kuvaa varauksen (Q) suuruutta suhteessa elektrodien väliseen potentiaalieroon (U). Näin ollen
+
+  
+    
+      
+        C
+        =
+        
+          
+            Q
+            U
+          
+        
+        .
+      
+    
+    {\displaystyle C={\frac {Q}{U}}.}
+  
+
+Kapasitanssin SI-järjestelmän mukainen yksikkö on faradi [F], joka vastaa yhden coulombin varausta yhden voltin jännitteellä.
+Faradi on hyvin suuri yksikkö käytännön sovellutuksiin, joten yleensä käytetään etuliiteyksiköitä pikofaradi (pF), nanofaradi (nF), mikrofaradi (μF) ja millifaradi (mF). 
+
+
+==== Kapasitanssin laskeminen kondensaattorikytkennöissä ====
+Rinnakkain kytkettyjen kondensaattorien C1, C2,... Cn kapasitanssi on kapasitanssien summa
+
+  
+    
+      
+        
+          C
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          C
+          
+            1
+          
+        
+        +
+        
+          C
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          C
+          
+            n
+          
+        
+      
+    
+    {\displaystyle C_{\mathrm {eq} }=C_{1}+C_{2}+\cdots +C_{n}}
+  
+
+Kun rinnakkain kytketyt kondensaattorit kytketään jännitteeseen V, on kaikkien kondensaattoreiden jännite sama.  
+Sarjaan kytkettyjen kondensaattorien C1, C2,... Cn
+kapasitanssi on
+
+  
+    
+      
+        
+          
+            1
+            
+              C
+              
+                
+                  e
+                  q
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              C
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              C
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              C
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{C_{\mathrm {eq} }}}={\frac {1}{C_{1}}}+{\frac {1}{C_{2}}}+\cdots +{\frac {1}{C_{n}}}}
+  
+
+Kun sarjaan kytketyt kondensaattorit kytketään jännitteeseen V, saavat kaikki kondensaattorit samansuuruisen varauksen Q. Kokonaisjännite V on kondensaattoreiden jännitteiden summa.
+
+  
+    
+      
+        V
+        =
+        
+          V
+          
+            1
+          
+        
+        +
+        
+          V
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          V
+          
+            n
+          
+        
+      
+    
+    {\displaystyle V=V_{1}+V_{2}+\cdots +V_{n}}
+  
+
+Tasavirta ei kulje kondensaattorin läpi, koska sen levyjen välissä on eriste. Mutta jos se kytketään muuttuvaan jännitteeseen, myös levyjen varaus muuttuu, ja kondensaattorin latautuessa tai purkautuessa jännitelähteestä levyihin tai päinvastoin kulkee virta, jonka suuruus on 
+
+  
+    
+      
+        
+          i
+          =
+          C
+          
+            
+              
+                
+                  
+                    d
+                  
+                
+                U
+              
+              
+                
+                  
+                    d
+                  
+                
+                t
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle i=C{\frac {{\rm {d}}U}{{\rm {d}}t}}}
+  
+, jossa C on kapasitanssi, U jännite ja t aika.
+Kapasitanssi voidaan määrittää siis kondensaattorin virran i  suhteena jännitteen U muutosnopeuteen dU/dt yhtälöllä
+
+  
+    
+      
+        C
+        =
+        
+          
+            i
+            
+              (
+              
+                
+                  
+                    d
+                    U
+                  
+                  
+                    d
+                    t
+                  
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle C={\frac {i}{({\frac {dU}{dt}})}}}
+  
+.
+
+Kondensaattorin elektrodit ovat yleensä metallilevyjä tai -kalvoja. Kahdesta yhtä suuresta samansuuntaisesta levyelektrodista koostuvan levykondensaattorin kapasitanssi on
+
+  
+    
+      
+        C
+        =
+        
+          ϵ
+          
+            0
+          
+        
+        
+          ϵ
+          
+            
+              r
+            
+          
+        
+        
+          
+            A
+            d
+          
+        
+        ,
+      
+    
+    {\displaystyle C=\epsilon _{0}\epsilon _{\rm {r}}{\frac {A}{d}},}
+  
+
+missä 
+
+A on elektrodin pinta-ala,
+d on levyjen välinen etäisyys,
+ε0 on tyhjiön permittiivisyys ja
+εr on levyjen välissä olevan eristeen suhteellinen permittiivisyys.
+Levyjen koon kasvaessa varauksen määrä kasvaa. Myös levyjen välisen etäisyyden pienentyessä varauskyvyn määrä kasvaa, mutta samalla pienenee jännitteen sietokyky eristeen ohi-/läpilyönnin vuoksi.
+
+
+== Kondensaattoriin varautunut energia ==
+Kondensaattoriin varautunut energia voidaan määrittää laskemalla kondensaattorin varaamiseksi tarvittava työ.
+Olkoon kondensaattorin kapasitanssi C, ja sen kokonaisvaraus Q. Kondensaattoria varatessa sen hetkellinen varaus on q(t), ja potentiaaliero napojen välillä on u(t) = q(t)/C. Kun pieni varaus dq siirretään elektrodilta toiselle potentiaalieron u yli, tehdään työ dW:
+
+  
+    
+      
+        
+          
+            d
+          
+        
+        W
+        =
+        
+          
+            q
+            C
+          
+        
+        
+        
+          
+            d
+          
+        
+        q
+        .
+      
+    
+    {\displaystyle {\rm {d}}W={\frac {q}{C}}\,{\rm {d}}q.}
+  
+
+Kondensaattorin kokonaisenergia saadaan integroimalla tämä infinitesimaalisen pieni siirto koko siirrettävän varauksen Q yli:
+
+  
+    
+      
+        W
+        =
+        
+          ∫
+          
+            0
+          
+          
+            Q
+          
+        
+        
+          
+            q
+            C
+          
+        
+        
+        
+          
+            d
+          
+        
+        q
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            
+              Q
+              
+                2
+              
+            
+            C
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          U
+          
+            2
+          
+        
+        =
+        E
+        .
+      
+    
+    {\displaystyle W=\int _{0}^{Q}{\frac {q}{C}}\,{\rm {d}}q={\frac {1}{2}}{\frac {Q^{2}}{C}}={\frac {1}{2}}CU^{2}=E.}
+  
+
+Koska toisaalta kondensaattorin kapasitanssi saadaan yhtälöstä
+
+  
+    
+      
+        C
+        =
+        
+          ϵ
+          
+            0
+          
+        
+        
+          ϵ
+          
+            r
+          
+        
+        
+          
+            A
+            d
+          
+        
+      
+    
+    {\displaystyle C=\epsilon _{0}\epsilon _{r}{\frac {A}{d}}}
+  
+
+ja sen jännitteen ja sähkökentän välillä vallitsee yhteys
+
+  
+    
+      
+        U
+        =
+        
+          E
+        
+        ⋅
+        
+          d
+        
+        ,
+      
+    
+    {\displaystyle U=\mathbf {E} \cdot \mathbf {d} ,}
+  
+
+saadaan tästä kondensaattorin sähkökentän energian tiheydelle lauseke
+
+  
+    
+      
+        
+          
+            E
+            V
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ϵ
+          
+            o
+          
+        
+        
+          ϵ
+          
+            r
+          
+        
+        
+          
+            A
+            d
+          
+        
+        
+          
+            E
+          
+          
+            2
+          
+        
+        
+          
+            d
+          
+          
+            2
+          
+        
+        
+          
+            1
+            
+              A
+              d
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ϵ
+          
+            0
+          
+        
+        
+          ϵ
+          
+            r
+          
+        
+        
+          
+            E
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {E}{V}}={\frac {1}{2}}\epsilon _{o}\epsilon _{r}{\frac {A}{d}}\mathbf {E} ^{2}\mathbf {d} ^{2}{\frac {1}{Ad}}={\frac {1}{2}}\epsilon _{0}\epsilon _{r}\mathbf {E} ^{2}.}
+  
+
+Tämä energiantiheyden lauseke pätee yleisesti kaikille sähkökentille, ei vain kondensaattoreissa.
+
+
+== Kondensaattori sähköisissä piireissä ==
+Kondensaattori ei päästä lävitseen varauksenkuljettajia, sillä sen elektrodit on galvaanisesti eristetty toisistaan  eristeellä. Kuitenkin lyhyen aikaa jännitteen kytkemisen jälkeen kondensaattorin elektrodeihin kulkee sähkövirta, joka aiheuttaa sähkökentän elektrodien välille ja varaa kondensaattorin elektrodit vastakkaismerkkisillä varauksilla. Kun näin varautunut kondensaattori kytketään kuormaan, sähkökenttään varastoitunut energia muuttuu takaisin sähkövirraksi. Virta kulkee, kunnes kondensaattorin varaus on purkautunut, eli sähkökenttä on poistunut.
+Vaihtovirtapiireissä kondensaattorin varaus latautuu ja purkautuu sitä useammin, mitä suurempi taajuus on. Tästä seuraa, että kondensaattorin keskimääräinen lataus- ja purkausvirta kasvavat taajuuden kasvaessa. Kondensaattorin vastus vaihtovirralle on siis kääntäen verrannollinen taajuuteen. Tätä vastustavaa ominaisuutta vaihtovirtapiireissä kutsutaan kapasitiiviseksi reaktanssiksi (XC, yksikkö ohmi), joka määritellään yhtälöllä
+
+  
+    
+      
+        
+          X
+          
+            C
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              π
+              f
+              C
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle X_{C}={\frac {1}{2\pi fC}},}
+  
+
+missä 
+
+f on vaihtovirran taajuus ja
+C kondensaattorin kapasitanssi.
+Vaihtovirtapiireissä kondensaattorin jännitteellä ja virralla on 90° vaihe-ero virran ollessa jännitettä edellä.
+Vaihesiirron takia kondensaattoripiirien laskennassa voidaan käyttää kompleksilukulaskentaa. Esimerkiksi kapasitiivinen reaktanssi voidaan tulkita piirin impedanssin imaginääriseksi komponentiksi.
+
+
+== Tunnistaminen ==
+Kondensaattorin arvotiedot merkitään yleisesti numeroin, vinoviivoin ja kirjaimin seuraavassa muodossa: kapasitanssi / toleranssi / jännitteenkesto. Kirjaimen ollessa numeroiden välissä tai edessä tulkitaan kirjain samalla desimaalipilkuksi.
+Merkinnöissä perusyksikkönä on yleensä pikofaradi (pF).
+
+Kirjain M merkitsee mikrofaradia (µF) (eli miljoona pF, M = ’mega’).
+Kirjain K merkitsee nanofaradia (nF) (eli tuhat pF, K = ’kilo’).
+Kirjain E merkitsee pikofaradia (pF).
+Esimerkiksi
+
+4M7 / 10 / 100 tulkitaan 4,7 µF, 10 % toleranssilla ja 100 V jännitteenkestolla.
+44K / 10 / 100 tulkitaan 44 nF, 10 % toleranssilla ja 100 V jännitteenkestolla.
+3E3 / 10 / 400 tulkitaan 3,3 pF, 10 % toleranssilla ja 400 V jännitteenkestolla.
+Toinen merkintätapa on kirjoittaa vain kapasitanssiarvo pikofaradeina siten, että viimeinen numero tarkoittaa lopussa olevien nollien määrää. Esimerkki: 473 tarkoittaa lukua jossa on 47 ja kolme nollaa eli 47 000 pF = 47 nF.
+
+
+== Kondensaattorityypit ==
+
+
+=== Muovieristeiset kondensaattorit ===
+Muovikalvokondensaattori on kulutuselektroniikassa yleisin kondensaattori, joka valetaan epoksiin ja niitä valmistetaan radiaali- sekä aksiaalirakenteisina. Suosio johtuu suuresta C * U -tulosta tilavuusyksikköön nähden, pienistä häviöistä, suuresta pulssinsietokyvystä ja kohtalaisesta lämpötilavakaudesta.
+Polyesterikondensaattorit (KT, KS) ovat hyvin tavallisia, koska ne ovat halpoja, mutta ominaisuuksiltaan aika heikkoja. Eristeenä käytetään polyesterikalvoa ja levyinä metallifolioliuskoja, jotka ovat yleensä alumiinia. KT-lyhenne tulee saksan sanoista 'Kunststoff, Teraftalat'.
+Metalloitu Polyesterikondensaattorit (MKT, MKS) ovat hyvin pitkälti samanlaisia kuin polyesterikondensaattorit, mutta niissä ei ole erillistä metallikalvoa, vaan muovikalvonpintaan on höyrystetty ohut metallikalvo toiselle puolelle. Nämä kondensaattorit ovat sikäli hyviä, että ne voivat itse korjaantua läpilyönnistä, koska metallikalvo höyrystyy ja läpilyöntikohta poistuu, koska metallit eivät kosketa toisiaan. Lisäksi MKT:t ovat pienempiä kuin KT:t, mutta eivät kestä suuria taajuuksia.
+Polykarbonaattikondensaattorit ovat ominaisuuksiltaan hieman parempia kuin polyesterikondensaattorit. Niitä voidaan käyttää esimerkiksi kytkentäkondensaattoreina.
+Polystyreenikondensaattorit soveltuvat melkoisen vaativiin käyttötarkoituksiin, kuten aikavakiopiireihin ja suurtaajuuskäyttöön.
+Harvemmin käytettyjä muovieristeisiä kondensaattoreita ovat polypropyleeni- ja polytetrafuorieteenikondensaattorit.
+
+
+=== Keraamiset kondensaattorit ===
+
+Keraamisia kondensaattoreita käytetään pääasiassa suurtaajuuskytkennöissä ja pienikokoisissa laitteissa. Yleisesti saatavana on keraamisia kondensaattoreita kapasitanssiltaan 1 pF – 1 μF ja jännitekestoisuudeltaan 16 – 15 000 volttia. Keraamisen kondensaattorin hallitseva ominaisuus voi olla pieni toleranssi, pienet häviöt, hyvä stabiilisuus tai pieni koko. Kaikkia ei kuitenkaan saa samassa paketissa.
+Keraamiset kondensaattorit murtuvat helposti, joten niitä on käsiteltävä varovasti. Pienikin murtuma saattaa johtaa siihen, että kondensaattorin sisäosat altistuvat ilman kosteudelle ja kondensaattori tuhoutuu ajan kuluessa.
+Keraamiset kondensaattorit jaetaan usein eri luokkiin tai ryhmiin suhteellisen permittiivisyyden mukaan. Suurempi permittiivisyys tarkoittaa suurempaa häviökerrointa, mutta samalla se mahdollistaa kondensaattorin koon pienentämisen todella pieneksi.
+
+
+=== Elektrolyyttikondensaattorit ===
+Elektrolyyttikondensaattorissa kondensaattorilevyjen välisenä eristeenä toimii metallioksidikerros, joka syntyy, kun sopivasta metallista (tantaali tai alumiini) valmistetut kondensaattorin levyt upotetaan elektrolyyttinesteeseen ja niiden välille tuodaan tasajännite. Paksuuteensa nähden oksidikerros kestää erittäin suuren jännitteen. Siten on mahdollista saada suuri kapasitanssi todella pieneen tilaan. Mikäli elektrolyyttikondensaattori kytketään napaisuudeltaan väärin päin tai vaihtojännitteeseen, se saattaa tuhoutua, koska oksidikerrosta ei muodostu kunnolla ja levyt menevät oikosulkuun.
+Alumiinielektrolyyttikondensaattorit tarjoavat suuren kapasitanssin pienessä koossa. Niitä käytetään pääasiassa jännitelähteissä suotokondensaattoreina, mutta ne soveltuvat myös muihin tarkoituksiin, missä tarvitaan kapasitanssiltaan millifaradeista mikrofaradeihin suuruisia kondensaattoreita. Tämän kondensaattorityypin stabiilius on kuitenkin heikko, joten tarkkuutta vaativiin sovelluksiin ne eivät käy. Myöskään suurtaajuuskytkentöihin elektrolyyttikondensaattorit eivät käy suurten häviöiden vuoksi. Ne usein ikääntyvät laitteen muita komponentteja nopeammin ja pakkasen kestävyys on heikohko.
+Alumiinielektrolyyttikondensaattorin levyt ovat ohuet alumiinifoliot, joiden väliin on laitettu glykolipohjaisella elektrolyytillä kostutettu paperi. Nämä kerrokset on pyöritetty rullaksi ja suljettu elektrolyytillä täytettyyn koteloon. Kun kondensaattori kytketään tasajännitteeseen, anodin eli positiivisen levyn pintaan muodostuu eristävä alumiinioksidikalvo (Al2O3). Tämän kerroksen paksuus riippuu osittain jännitteestä, joten kapasitanssin toleranssikin on suuri. Katodina toimii elektrolyyttineste, joka on sähköisessä yhteydessä toiseen alumiinifolioon. Kapasitanssia voidaan valmistusvaiheessa kasvattaa karhentamalla anodilevyn pintaa.
+Pitkään käyttämättömänä ollut alumiinielektrolyyttikondensaattori saattaa menettää oksidikerroksensa, jolloin se on korjattava syöttämällä kondensaattorille tasajännitettä muutaman kilo-ohmin vastuksen läpi. Mikäli vastusta ei käytetä, virta voi kasvaa ennen oksidikerroksen muodostumista niin suureksi, että kondensaattori tuhoutuu samalla tavalla kuin väärin päin tai vaihtojännitteeseen kytketty alumiinielektrolyyttikondensaattori.
+Tantaalikondensaattorin toimintaperiaate on likimain sama, eli anodina toimivan tantaalipalan pintaan tehdään elektrolyyttisesti tantaalipentoksidikalvo (Ta2O5), joka siis toimii eristeenä. Sen päälle muodostetaan katodi hopeoidusta grafiittikerroksesta.
+Käyttämättömänä olleen tantaalikondensaattorin oksidikerros ei vaadi korjausta.
+
+
+=== Säädettävät kondensaattorit ===
+Säädettäviä kondensaattoreita käytetään oskillaattoreiden ja resonanssipiirien värähtelytaajuuden säätämiseen. Säädettävät kondensaattorit jaetaan kahteen ryhmään: jatkuvasäätöisiin säätökondensaattoreihin ja työkalusäätöisiin trimmerikondensaattoreihin. Rakenteeltaan kaikki säädettävät kondensaattorit ovat lähes samanlaisia, eli koostuvat kahdesta levypakasta, joista kiinteä on nimeltään staattori ja liikkuva on roottori. Kapasitanssi määräytyy sen mukaan, kuinka paljon levyt ovat toistensa kanssa limittäin. Eristeenä säädettävissä kondensaattoreissa käytetään ilmaa, kiillettä tai muovia. Niitä käytetään yleensä suurtaajuuspiireissä.
+
+
+=== Muut kondensaattorityypit ===
+Edellä mainittujen kondensaattorityyppien lisäksi on olemassa mm. paperi-, metallipaperi-, kiille-, lasi- ja kuivia alumiinielektrolyyttikondensaattoreita. 1970-luvulle saakka käytettiin suurissa kondensaattoreissa eristeaineena yleisesti polykloorattuja bifenyylejä (PCB), joista kuitenkin on luovuttu niiden myrkyllisyyden ja ympäristöhaittojen vuoksi. Tyhjiökondensaattori käyttää eristeenä suurtyhjiötä.
+Nykyään on olemassa myös ns. superkondensaattoreita. Superkondensaattorin kapasitanssi voi olla tuhansia faradeita, mutta jännitekesto on hyvin alhainen.
+
+
+== Kondensaattorien käyttö ==
+Kondensaattoreita käytetään mm. seuraaviin tarkoituksiin:
+
+
+=== Energian varastointi ===
+Kondensaattori voi varastoida sähköistä energiaa kun se irrotetaan sähköisestä piiristä, jolloin sitä voidaan käyttää lyhytaikaisena paristona. Kondensaattoreita käytetään yleisesti sähkölaitteissa ylläpitovirtalähteenä paristoja vaihdettaessa. (Tämä estää tiedon katoamista lyhytkestoisessa muistissa.)
+Kondensaattori muuttaa varautuneiden hiukkasten sisältämän kineettisen energian sähköenergiaksi ja varastoi sen.
+Tavanomaiset kondensaattorit varaavat ominaisenergiaa alle 360 J/kg, kun taas perinteisen alkalipariston ominaisenergia on 590 kJ/kg. Kompromissina näiden kahden välillä toimivat superkondensaattorit, jotka varaavat ja purkavat energiaa paljon nopeammin kuin paristot ja kestävät useampia latauskertoja kuin uudelleenladattavat akut. Ne ovat kuitenkin varaukseen nähden kymmenen kertaa isompia kuin tavanomaiset akut. Toisaalta, on pystytty osoittamaan, että kondensaattorin diaelektriselle kalvolle muodostunut varaus voi olla yhtä suuri tai jopa suurempi kuin kondensaattorin levyillä oleva varaus.
+Autojen äänentoistojärjestelmissä suuria kondensaattoreita käytetään varaamaan energiaa vahvistimen käyttöön.
+
+
+=== Digitaalinen muisti ===
+1930-luvulla John Atanasoff sovelsi kondensaattorien kykyä varastoida energiaa rakentaakseen dynaamisia digitaalisia muistipiirejä ensimmäisiin binaaritietokoneisiin.
+
+
+=== Pulssiteho ===
+Suuria, varta vasten rakennettuja, pieni-induktiivisia ja korkeajännitteisiä kondensaattoreita käytetään suurien virtapulssien tekemiseen. Käyttökohteita ovat mm. sähkömagneettinen muotoilu, Marxin generaattorit, pulssilaserit, tutkat ja hiukkaskiihdyttimet.
+
+
+=== Lyhytaikaiset sähkövarastot ===
+Varastokondensaattoreita käytetään virtalähteissä, jossa ne toimivat tasasuuntaajien lähdön tasoittajina. Niitä voidaan myös käyttää varauspumppupiireissä energiavarastoina, kun tuotetaan korkeampia jännitteitä kuin syöttöjännitteet.
+Kondensaattorit ovat yleensä rinnakkain muiden sähköpiirien kanssa, sillä ne tasoittavat virran muutoksia joita tapahtuu virtalähteellä. Äänentoistolaitteet esimerkiksi käyttävät kondensaattoreita käyttöjännitteen häiriöiden suodattamiseen ennen kuin se pääsee signaalipiirille.
+
+
+=== Loistehon kompensointi ===
+Kondensaattoreita käytetään virran jakelussa loistehon kompensointiin. Tällaiset kondensaattorit tulevat yleensä kolmena kondensaattorina, jotka on kytketty kolmivaihekuormaksi. Kondensaattoreiden tarkoitus on vastustaa indusoitumista, jota aiheutuu sähkömoottoreista ja siirtolinjoista, ja saada niin kuorma näyttämään suurimmaksi osakseen resistiiviselta.
+
+
+=== Sähkömoottorit ===
+Kondensaattoreita käytetään moottorin käynnistiminä, sillä esimerkiksi häkkikäämitetyissä roottorimoottoreissa moottorin oma kondensaattori ei kykene aloittamaan roottorin pyörimisliikettä mutta pystyy ylläpitämään sitä. Tarvitaan siis toinen starttauskondensaattori. 
+
+
+=== Ottomoottorit ===
+Ottomoottorin sytytysjärjestelmässä katkojan kärkien rinnalla.
+
+
+=== Muistipiirit ===
+DRAM-muistipiireissä käytetään kondensaattoreita bittien tilan varastointiin tietokoneen päälläolon ajaksi jatkuvasti virkistettynä. Flash-muistipiireissä tallennetaan tieto vuosiksi muistialkioiden kapasitanssien varauksina.
+
+
+=== Anturit ===
+Kondensaattorit ovat yleensä fyysiseltä rakenteeltaan muuttumattomia. Kuitenkin useat tekijät voivat muuttaa kondensaattorin rakennetta ja nämä muutokset aiheuttavat vaihteluita kondensaattorin kapasitanssiin. Näistä kapasitanssin vaihteluista voidaan havaita mikä kondensaattorin rakenteessa on muuttunut.
+Esimerkiksi mikrofonin toiminta perustuu kondensaattorin levyjen etäisyyden muutoksiin ääniaaltojen vaikutuksesta.
+
+
+=== Resonanssipiirit ===
+Resonanssipiirissä on rinnan- tai sarjaankytkettyinä kela ja kondensaattori, joiden reaktanssit tai suskeptanssit kumoavat toisensa resonanssitaajuudella.
+
+
+=== Valontuottaminen ===
+Valoa emittoiva kondensaattori on valmistettu dielektrisestä aineesta, joka käyttää fosforenssia valon tuottamiseksi. Jos yksi johtavista levyistä valmistetaan läpinäkyvällä materiaalilla, valo on näkyvissä. Valoa emittoivia kondensaattoreita käytetään elektroluminoivien paneelien rakentamiseen sovelluksiin, kuten kannettavan tietokoneen taustavaloon. Tällöin koko paneeli on kondensaattori, jota käytetään valon generoimiseksi.
+
+
+== Vaarat ja turvallisuus ==
+Kondensaattorin vaarallisuus riippuu sen varastoiman energian määrästä. Jännitteen suuruus ja kuorimateriaali ovat tälle toissijaisia, sillä näistä riippuu ainoastaan sähköiskun todennäköisyys eikä mahdollisen iskun aiheuttama vahinko.
+Piirissä olevat kondensaattorit voivat pysyä latautuneina pitkään vaikka piirin virtalähde olisi siitä poistettu; tämä varaus voi aiheuttaa vaarallisia tai mahdollisesti tappaviakin sähköiskuja ja vahingoittaa kondensaattoriin kytkettyjä laitteita. Esimerkiksi kertakäyttökameran salamavaloa pyörittävällä 1,5 voltin AA-paristolla on kondensaattori, joka voi sisältää jopa 15 joulea energiaa ja latautua yli 300 volttiin. 
+Elektroniikkalaitteita huollettaessa laitteiden kondensaattorit useimmiten tyhjennetään varauksesta vaaratilanteiden välttämiseksi. Kondensaattoreilla voi myös olla sisäänrakennettuja purkautumisvastuksia pienentääkseen niihin latautuneen energiamäärän turvalliseksi syötön katketessa. Suurjännitekondensaattoreita säilytetään oikosuljettuina vaarallisten latausten syntymisen välttämiseksi.
+Jotkut vanhat suuret öljyllä täytetyt paperi- tai muovifilmikapasitaattorit sisältävät polykloorattuja bifenyylejä. Polyklooratut bifenyylit voivat valua pohjavesiin, jos kondensaattorit joutuvat kaatopaikalle.
+Kondensaattorit voivat pettää, kun ne joutuvat luokitustensa ulkopuolisten virtojen tai jännitteiden vaikutusten alaisiksi tai vanhetessaan. Dielektriset häiriöt tai metallien kosketushäiriöt voivat synnyttää valokaaria, jotka höyrystävät kondensaattorin dielektrisen nesteen aiheuttaen kuoren pullistumista, halkeamia tai jopa kondensaattorin räjähdyksen. Kondensaattorit, joita käytetään radiosovelluksissa tai pitkäkestoisissa suurjännitesovelluksissa, voivat ylikuumeta. Suurjännitetyhjiökondensaattorit voivat synnyttää heikkoja röntgensäteitä jopa normaalilla toiminnallaan. Vaaroja voidaan vähentää kunnollisella suunnittelulla, käyttämällä tarkoitukseen sopivaa kondensaattorityyppiä, kunnollisia sulakkeita ja liitoksia sekä suorittamalla ennalta ehkäiseviä huoltoja.
+
+
+== Katso myös ==
+ Kuvia tai muita tiedostoja aiheesta Kondensaattori Wikimedia Commonsissa
+Häiriönpoistokondensaattori
+Superkondensaattori
+Reaktanssi
+Flash-muisti
+Häviökerroin
+Kela
+Kaskadi (elektroniikka)
+LCR-mittari
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Wiio, Osmo A.; Somerikko, Unto V.: Nuorten radiokirja.  Tekniikan maailma, 1963.

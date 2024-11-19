@@ -1,0 +1,136 @@
+Zilog Z80 je osmibitový mikroprocesor, navržený firmou Zilog a prodávaný od července 1976. Byl široce používán jak ve stolních počítačích, tak pro armádní účely. Z80 a jeho klony tvoří jednu z nejvíce používaných CPU sérií všech dob a společně se sérií MOS Technology 6502 dominoval trhu s osmibitovými počítači od začátku 70. až do poloviny 80. let 20. století.
+Zilog licencoval design Z80 několika dodavatelům a mnoho východoevropských a ruských výrobců vyrábělo nelicencované kopie (U880D v počítačích Robotron). To umožnilo výrobkům menších společností prosadit se na trhu vedle větších společností, jako třeba Toshiba. V důsledku toho Zilog, od uvedení procesoru na trh, vyrobil méně než polovinu procesorů Z80. V posledních desetiletích se Zilog soustředí na stále rostoucí trh s vestavěnými systémy (pro který jsou učeny původní Z80 a Z180) a na nejnovější z rodiny mikrokontrolérů, Z80-kompatibilní.
+Ačkoli už dříve Zilog uskutečnil pokusy s pokročilými mikropočítači, než byly architektury Z80 (Z800 a Z280), tyto čipy se nikdy neuchytily. Společnost se také snažila proniknout na trh s pracovními stanicemi se svým procesorem Z8000 a 32bitovým Z80000 (ani jeden nesouvisí s 8bitovým procesorem Z80).
+Společnost Sharp vyrobila funkční skleněnou variantu procesoru Z80.
+
+
+== Stručná historie a přehled ==
+Z80 se objevil, když Federico Faggin po práci na procesoru Intel 8080 opustil společnost Intel a na konci roku 1974 vstoupil do firmy Zilog. Společně s Ralphem Ungermanem (1942–2015) uvedli v červenci 1976 procesor Z80 na trh. Byl navržen, aby byl zpětně kompatibilní s procesorem Intel 8080, takže operační systém CP/M mohl fungovat bez jakýchkoli dalších úprav. K vývoji procesoru Z80 přispěl také další z návrhářů procesorů Intel 4004 a 8080, Masatoshi Shima.
+Patrně nejslavnější použití a boom přinesla procesoru řada domácích počítačů Sinclair ZX81 a Sinclair ZX Spectrum. Později ho firma SEGA nasadila v herních konzolích Master System a Game Gear. Firma Nintendo použila v konzolích Game Boy a Game Boy Color klon procesoru Z80 od firmy Sharp. Procesor Z80 byl také použit v japonském domácím počítači Sord M5. Mezi další počítače, ve kterých byl použit, patří TRS-80 (modely 1–4), Commodore 128D, Franklin Ace 1200, Osborne 1, KayPro I a KayPro II. V herních automatech a konzolích Neo Geo je využitý jako koprocesor řídící zvukový systém. V Československu byly na základě Z80 vyráběny počítače Ondra a Didaktik, nebo také slušovické TNS-SC, TNS-GC a TNS-HC.
+V současnosti je Z80 stále používán např. ve vestavěných systémech, mikrokontrolérech nebo v elektronice (například programovatelné kalkulátory, tiskárny, syntezátory či MP3 přehrávače atd.). Je také využíván pro různé domácí a školní projekty a výukové pomůcky.
+Z80 nabízí mnoho skutečných vylepšení oproti 8080:
+
+Rozšířená instrukční sada obsahující blokové operace, manipulace s bity a relativní skoky
+Nové indexové registry IX a IY s podporou adresování base+offset
+Lepší systém přerušení
+Více automatický a obecně vektorizovaný systém přerušení, mode 2, a systém s pevným vektorem přerušení, mode 1, pro jednoduché systémy s minimálním hardwarem (mode 0 je kompatibilní s Intel 8080).
+Nemaskovatelné přerušení (NMI – Non Maskable Interrupt), může být použito v případě výpadku napájení a/nebo při jiné události s vysokou prioritou (umožňuje minimalistickému systému Z80 snadno implementovat dvouúrovňové schéma přerušení v mode 1).
+Dva soubory registrů, mezi kterými lze rychle přepínat, což umožňuje zrychlit reakci na přerušení.
+Menší požadavky na hardware.
+Jeden 5V zdroj napájení (procesor 8080 potřeboval +5V/-5V/+12V).
+Jednofázové 5V hodiny (procesor 8080 potřeboval dvoufázový generátor hodin s velkou amplitudou).
+Vestavěný obnovovací mechanismus pro paměti DRAM, který by jinak musel být realizován externími obvody.
+Nemultiplexovaná sběrnice
+Z80 vystřídal procesor 8080 a jeho nástupce 8085, na trhu s procesory a stal se jedním z nejpopulárnějších 8bitových CPU. Možná, že klíčem, který zapříčinil úspěch procesoru Z80, byl zabudovaný DRAM refresh a ostatní funkce, které dovolovaly systému aby byl postaven s menším počtem podpůrných čipů (později, většinu Z80 systémů představovaly vestavěné systémy, které typicky používaly statickou RAM, a proto nepotřebovaly tento refresh).
+Podle originálního designu NMOS se určená horní hranice frekvence postupně zvyšuje z původních 2,5 MHz, přes dobře známé 4 MHz (Z80A), až na 6 MHz (Z80B) a 8 MHz (Z80H). CMOS verze byla také vyvinuta se stanovenými limity frekvencí v rozsahu od 4 MHz až do 20 MHz pro verzi, která se prodává dnes. CMOS verze také umožňovala spánek s nízkou spotřebou se zachováním vnitřních stavů (nemá žádnou dolní hraniční frekvenci). Plně kompatibilní s deriváty HD64180/Z180 a eZ80, ty jsou v současné době určené až pro 33 MHz a 50 MHz.
+Procesor umožňuje adresovat 64 KiB paměti, která může být libovolného typu, RAM i ROM. Pokud je vyžadováno více dostupné paměti, než 64 KiB, je nutné použít techniku stránkování paměti, která je použita mimo jiné u počítačů Sinclair ZX Spectrum 128, Didaktik Gama, či v herních automatech a konzolích Neo Geo. K dispozici je oficiálně 256 vstupně/výstupních portů (8bitové adresování), chování procesoru umožňuje adresovat až 65536 portů (16bitové adresování), při adresování 65536 portů ale nelze použít instrukce blokových vstupně/výstupních operací, protože registr B umožňující 16bitové adresování je u těchto instrukcí využit jako čítač přenesených bajtů.
+Toshiba, jakožto licencovaný výrobce, integrovala některé periferní obvody z rodiny procesoru Z80 do společného pouzdra s vlastním procesorem, tyto kombinované procesory později převzal Zilog do svého výrobního programu také.
+
+
+== Technický popis ==
+
+
+=== Programovací model a sada registrů ===
+Programovací model a sada registrů jsou konvenční a díky odvození ze stejného předchůdce (Intel 8080) se podobají rodině x86. Procesor Z80 má zdvojenou sadu hlavních registrů, což spolu s rychlými instrukcemi pro přepínání obou sad umožňuje rychle reagovat na jednoúrovňové přerušení s vysokou prioritou. Tato vlastnost byla představena v Datapoint 2200, ale v procesoru 8008 nebyla Intelem implementována. Tato vlastnost usnadňuje použití Z80 ve vestavěných systémech, pro které byla většina prvních mikroprocesorů určena spíše než pro použití v osobních počítačích. Podle jednoho z designérů, Masatoshi Shima, se trh zaměřil na vysoce výkonné tiskárny, pokladny a inteligentní terminály. Zdvojená sada registrů však byla také využívána pro vysoce optimalizované, ručně kódované programy. Některý software, hlavně hry pro MSX, Sinclair ZX Spectrum a další počítače založené na Z80, které používaly kód optimalizovaný na extrémní úroveň, využívaly mimo jiné i zdvojenou sadu registrů.
+Registry
+
+Stejně jako v procesoru 8080, 8bitové registry jsou většinou spojeny, aby poskytovaly 16bitovou verzi. Kompatibilní registry procesoru 8080 jsou:
+
+AF: 8bitový akumulátor (A) a bitové příznaky (F) přenos, nula, znaménko, parita/přetečení, poloviční přenos (používaný pro BCD operace), a příznak sčítání/odčítání (obvykle nazývaný N) také pro BCD operace
+BC: 16bitový datový/adresní registr nebo dva 8bitové registry
+DE: 16bitový datový/adresní registr nebo dva 8bitové registry
+HL: 16bitový akumulátor/adresní registr nebo dva 8bitové registry
+SP: ukazatel zásobníku (stack pointer), 16 bitů
+PC: programový čítač (program counter), 16 bitů
+Nové registry zavedené v Z80 jsou:
+
+IX: 16bitový index nebo bázový registr pro 8bitová přímá posunutí
+IY: 16bitový index nebo bázový registr pro 8bitová přímá posunutí
+I: bázový registr přerušovacího vektoru, 8 bitů
+R: čítač pro občerstvování pamětí DRAM, 8 bitů
+AF´: alternativní (nebo stínový) akumulátor a flag (přepínatelný instrukcí EX AF, AF´)
+BC´, DE´ a HL´: alternativní (nebo stínový) registr (přepínatelné instrukcí EXX)
+Čtyři bity pro stav přerušení a režim přerušení
+Alternativní registry nejsou přímo přístupné, místo toho jsou použity dvě speciální instrukce, EX AF, AF' a EXX, které pouze přepínají klopný obvod vybírající registr A a příznaky nebo zbytek (registry BC, DE a HL) sady registrů. To umožňuje rychlé prohození kontextu pro obsluhu přerušení: instrukce EX AF, AF´ může být použita samostatně (pro opravdu jednoduché a rychlé přerušení) nebo spolu s EXX aby se vyměnila celá sada AF, BC, DE, HL. Tento postup je mnohonásobně rychlejší, než uložení registrů na zásobník (které lze používat pro pomalejší obsluhu víceúrovňových přerušení s nižší prioritou).
+Refresh registr, R, se zvyšuje pokaždé, když CPU vykoná opcode (operační kód) nebo opcode prefix a proto nemá žádný přímý vztah s vykonáváním programu. Proto se někdy používá pro generování pseudonáhodných čísel ve hrách a také ve schématech ochrany softwaru. V některých návrzích je také použit jako „hardwarový“ čítač, slavný příklad toho je ZX81, který umožňuje sledovat pozici písmene na televizní obrazovce tím, že generuje přerušení při přetočení čítače (propojením A6 na vstup INT).
+Registr I je určený pro vyšší byte adresy tabulky obsluh přerušení ve speciálním režimu přerušení číslo 2 (do něhož se přepíná instrukcí IM 2). Nižší byte adresy dodá zařízení v cyklu potvrzení přerušení. Tento režim umožňuje používat až 128 obslužných rutin přerušení, přičemž priorita může být určena pořadím zapojení zařízení v řetězci. I tento registr se někdy používá velmi kreativně; v režimech přerušení 0 a 1 může být použit jednoduše jako další 8bitový datový registr.
+
+
+=== Z80 - jazyk symbolických adres ===
+
+
+==== Datapoint 2200 a Intel 8008 ====
+První jazyk symbolických adres (dále jen assembler) pro Intel 8008 byl založen na velmi jednoduché (ale systematické) syntaxi, zděděné od Datapointu 2200. Pro původní čip Intel 8008 byla později tato originální syntaxe změněna na novou, poněkud tradičnější formu assembleru. V tu samou dobu byl assembler rozšířen, aby se přizpůsobil přidání nových adresních možností ve více pokročilém čipu Intel 8080 (Intel 8008 a 8080 sdílely jazykovou podskupinu bez toho aby byly binárně kompatibilní, nicméně, Intel 8008 byl binárně kompatibilní s Datapointem 2200).
+V tomto procesu, symbolický název (neboli mnemonická zkratka) L, pro LOAD, byla nahrazena různými zkratkami slov LOAD, STORE a MOVE, a ty byly smíchány s ostatními symbolickými písmeny. Symbolický název písmene M, pro paměť, byl odstraněn ze symbolických instrukcí, aby se stal syntakticky samostatným operandem, zatímco registry a kombinace registrů byly velmi rozporuplně označeny. Buď zkrácením operandu (MVI D, LXI H a podobně) nebo v rámci vlastních symbolických instrukcí (LDA, LHLD a podobně) nebo obojím najednou (LDAX B, STAX D a podobně).
+
+Ukázka čtyř syntaxí, používajících vzorky ekvivalentní nebo (pro 8086) velmi podobné LOAD a STORE instrukcím.
+
+
+==== Nová syntaxe ====
+Protože Intel prohlašoval, že vlastní práva na symbolické názvy, musela být v assembleru vyvinuta nová syntaxe.
+Tentokrát byl použit mnohem systematičtější přístup:
+
+Všechny registry, včetně párových registrů jsou explicitně označeny jejich celými jmény.
+Závorky jsou běžně použity k označení "obsahu paměti", s výjimkou nějakých skokových instrukcí.
+Všechny LOAD a STORE instrukce používají stejný symbolický název, LD pro LOAD (byl to návrat ke zjednodušenému slovníku z Datapointu 2200). Ostatní běžné instrukce, jako například ADD a INC, používaly stejný symbolický název, bez ohledu na adresní režim nebo velikost operandu. To je možné právě proto, že operand už sám o sobě obsahuje dostatek informací.
+Tyto zásady umožňovaly přímočaře zjistit jména a tvary všech instrukcí procesoru Z80. Naopak je ale nutné, aby si uživatel pamatoval omezení některých instrukcí, kdy například instrukce LD umožňuje osmibitový přenos mezi libovolnými dvěma registry, zatímco šestnáctibitový přenos je možný pouze mezi některými dvojicemi a tak třeba instrukce LD BC,HL neexistuje.
+S výjimkou pojmenování rozdílů, a navzdory určitému rozporu v základní registrové struktuře, syntaxe Z80 a 8086 je v podstatě izomorfní pro velkou část instrukcí. V assembleru pro 8080 a 8086 existují pouze docela nedůležité podobnosti (jako například slovo MOV, nebo písmeno X pro rozšířené registry). Programy pro procesor 8080 mohou být přeloženy do strojového kódu pro procesor 8086 pomocí speciálního assembleru nebo přeloženy do jazyka symbolických adres pomocí překladatelského programu.
+
+
+=== Instrukční sada a kódování ===
+Procesor Z80 používá 252 z 256 možných kódů jednotlivých bajtů opcodu (operační kód – "kořenové instrukce"). Čtyři zbývající kódy jsou značně používané jako opcode prefix.
+CB a ED povolí speciální instrukce a DD nebo FD vyberou IX+d nebo IY+d příslušně (v některých případech bez posunutí "d") v místě HL. Toto schéma dává procesoru Z80 velké množství permutací instrukcí a registrů. Zilog je kategorizuje do 158 různých instrukčních typů, 78 z nich jsou ty samé jako u procesoru Intel 8080 (umožňují provoz programů z procesoru 8080 na procesoru Z80).
+Dokumentace k Z80 dělí skupiny instrukcí do následujících kategorií:
+
+8bitové aritmeticko-logické operace
+16bitová aritmetika
+8bitový load
+16bitový load
+Nastavení bitů, resetování a testování
+Call, return a restart
+Výměna, transfer bloků a vyhledávání
+Základní účel aritmetiky a řízení CPU
+Vstup a výstup
+Skoky
+Rotace a posun
+V originálním procesoru Z80 nejsou dostupné několikanásobné instrukce. Rozdílné velikosti a varianty sčítání, posunu a rotace mají někdy rozdílné účinky na příznaky, a to proto, že z procesoru 8080 byly zkopírovány příznaky ovlivňující vlastnosti. Instrukce LOAD neovlivňuje příznaky (s výjimkou LOAD registru I a R, které jsou pro zvláštní účely). Instrukce index registru jsou užitečné pro snížení délky kódu a zatímco některé nejsou o mnoho rychlejší než ekvivalentní sekvence jednodušších operací, nepřímo šetří čas pro vykonání instrukce tím, že snižuje potřebu uložit a obnovit registry. O deset let mladší design Z180 si mohl ze začátku dovolit více "čipového prostoru", který umožňuje o něco účinnější implementaci (mimo jiné používá širší ALU). Podobné věci mohou být řečeny o Z800, Z280 a Z380. Nicméně až roku 2001, když byl vydán procesor eZ80 umožňující plné zřetězení instrukcí (neboli Pipelining), se jim tyto instrukce konečně přiblížily svou efektivitou v cyklech jak jen to bylo technicky možné, to jest vzhledem ke kódování v Z80 kombinovaném se schopností realizovat 8bitové čtení nebo zápis v každém hodinovém cyklu. Stejně tak instrukce pro 16bitové sčítání nejsou v originálním procesoru Z80 příliš rychlé (11 hodinových cyklů). Nicméně, jsou asi dvakrát rychlejší, než když se vykonávají ty samé výpočty pomocí 8bitových operací. A stejně tak důležité je, že snižují množství operací s registry.
+
+
+==== Seznam instrukcí ====
+Některé instrukce vyžadují, aby byly následovány číselnými operandy. Typ vyžadovaného operandu je označen následujícím způsobem:
+
+N – instrukce je následována bezznaménkovým osmibitovým operandem,
+NN – instrukce je následována bezznaménkovým šestnáctibitovým operandem,
+±N – instrukce je následována znaménkovým osmibitovým operandem.
+Některé instrukce se z konstrukčních důvodů nacházejí v instrukční sadě několikrát, např. instrukce ld hl,(NN) a ld (NN),hl, a jejich jednotlivé varianty se liší způsobem interní realizace a dobou jejich vykonání. Ze stejných důvodů se v instrukční sadě nacházejí také instrukce, které nedělají žádnou smysluplnou akci, např. instrukce ld a,a. Počítač Sprinter využívá ve svém hardwaru těchto "nic nedělajících" instrukcí k ovládání hardwarového akcelerátoru.
+
+Instrukce s prefixem ED v rozsazích 00-3F A 80-FF šestnáctkově s výjimkou instrukcí pro blokové přenosy nedělají žádnou akci, pouze trvají 8 T-cyklů a zvyšují hodnotu registru R o 2. V instrukčním souboru se nenacházejí instrukce pro násobení. Instrukce pro násobení mlt obsahuje až procesor Z180.
+
+
+== Kompilátory ==
+Protože procesor Z80 je použit v mnoha typech počítačů, pro každý typ existuje kompilátor. Pro počítače Sinclair ZX Spectrum existují kompilátor Gens a Prometheus. Pro operační systém Linux a pro DOS existuje kompilátor Z80-ASM, který kromě podpory samotného procesoru s 64 KiB paměti podporuje i obvod Z80 CTC, rozšířené stránkování paměti a prioritní systém přerušení procesoru Z80. Existuje také online vývojové prostředí a kompilátor ORG.
+
+
+== Poznámky ==
+
+
+== Reference ==
+
+
+== Literatura ==
+ZAKS, Rodnay. Programming the Z80. [s.l.]: Sybex, 1979 (1. vyd.), 1980 (2. vyd.), 1981 (3. vyd.). 624 s. Dostupné online. ISBN 0-89588-047-4, ISBN 0-89588-094-6. ((anglicky)) Kniha vyšla také pod názvem How to program the Z80 s ISBN 0-89588-057-1. Dostupné také na [1]. 
+
+
+== Externí odkazy ==
+ Obrázky, zvuky či videa k tématu Zilog Z80 na Wikimedia Commons 
+ZX magazín, Stručně o CPU Z80: http://zxmagazin.80.cz/…
+Z80 Product Family, oficiální stránky: http://www.zilog.com/…
+Thomas Scherrer Z80-Family Official Support Page: http://www.z80.info/
+Počítače používající procesory Z80 (Michael Kromeke): http://www.zianet.com/…
+Z80 instruction set na clrhome.org – tabulkový přehled instrukcí procesoru Z80, včetně jejich popisu, počtu strojových cyklů nutných k jejich vykonání a vlivu na příznakové bity
+Z80 Instruction set summary na fms.komkon.org – abecední přehled instrukcí procesoru Z80 se schematickým znázorněním jejich činnosti
+8080/Z80 Instruction Set na lonestar.org – tabulkový přehled odpovídajících si instrukcí procesorů 8080 a Z80
+vývojové prostředí ORG na clrhome.org – online vývojové prostředí pro procesor Z80, umožňuje i export do souboru .tap pro emulátory ZX Spectra
+Naučte se assembler 8080, Z80, 6502 – učebnice assembleru osmibitových procesorů 8080, Z80 a 6502
+Memory & IO Interfacing to CPU Archivováno 29. 11. 2014 na Wayback Machine. – přehled možností připojení paměti a periférií k procesoru Z80, podklady k přednáškám k předmětu Microprocessors and Microcontroller na Kashan University
+z80 Heaven – tutoriály o programování kalkulaček TI

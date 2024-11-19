@@ -1,0 +1,1296 @@
+La probabilitat mesura el grau de certesa d'un esdeveniment dintre d'un experiment aleatori. Matemàticament s'expressa com un nombre entre 0 i 1 o bé com a percentatge entre 0% i 100%. Zero és la probabilitat d'un esdeveniment impossible i 1 la probabilitat d'un esdeveniment segur.
+La teoria de la probabilitat s'usa extensament en àrees com l'estadística, la matemàtica, la ciència i la filosofia per a treure conclusions sobre la probabilitat de successos potencials i la mecànica subjacent de sistemes complexos.
+El càlcul de probabilitats és una part de les matemàtiques que es dedica a calcular la possibilitat (probabilitat) que pugui ocórrer un determinat succés, quan es realitza un experiment aleatori. S'entén per experiment aleatori aquell en què no es coneix el resultat que sortirà, però sí tots els resultats possibles (per exemple: llançar una moneda a l'aire, jugar a la loteria primitiva, fer una travessa, etc.). Un succés d'un experiment aleatori no és més que un subconjunt dels possibles resultats, com per exemple treure un sis quan llancem un dau a l'aire, o treure cara quan llancem una moneda.
+Al conjunt de tots els resultats possibles d'un experiment aleatori li diem espai mostral i normalment el representem amb el signe Ω. Si llancem una moneda i observem la cara superior, veurem que els resultats possibles són cara o creu, així doncs, l'espai mostral d'aquest experiment és 
+  
+    
+      
+        Ω
+        =
+        {
+        c
+        a
+        r
+        a
+        ,
+        c
+        r
+        e
+        u
+        }
+      
+    
+    {\displaystyle \Omega =\{cara,creu\}}
+  
+. O si llancem un dau i observem el nombre de la cara superior, els resultats possibles són 1, 2, 3, 4, 5 o 6, és a dir, 
+  
+    
+      
+        Ω
+        =
+        {
+        1
+        ,
+        2
+        ,
+        3
+        ,
+        4
+        ,
+        5
+        ,
+        6
+        }
+      
+    
+    {\displaystyle \Omega =\{1,2,3,4,5,6\}}
+  
+.
+Hi ha dues formes principals d'assignació de la probabilitat als esdeveniments aleatoris:
+
+Una forma aplicable quan un experiment aleatori té unes característiques que permeten considerar que els diferents resultats tenen la mateixa probabilitat. Per exemple al llençar un dau equilibrat totes les cares tenen la mateixa probabilitat. En aquests casos s'utilitza la regla de Laplace
+
+  
+    
+      
+        P
+        =
+        
+          
+            nombre casos favorables
+            nombre casos possibles
+          
+        
+      
+    
+    {\displaystyle P={\frac {\text{nombre casos favorables}}{\text{nombre casos possibles}}}}
+  
+
+Si per exemple es tracta de trobar la probabilitat de treure un as al agafar una carta a l'atzar d'una baralla estàndard de 48 cartes, la fórmula de Laplace s'aplicaria amb casos favorables 4 i casos possibles 48, així 
+  
+    
+      
+        P
+        =
+        4
+        
+          /
+        
+        48
+        =
+        1
+        
+          /
+        
+        12
+        ≈
+        0.083
+        =
+        8
+        ,
+        3
+        %
+      
+    
+    {\displaystyle P=4/48=1/12\approx 0.083=8,3\%}
+  
+
+Una segona forma d'assignació de probabilitats consisteix en utilitzar la freqüència relativa de l'esdeveniment. Així per exemple en l'experiment aleatori de llençar una xinxeta i considerar els esdeveniments "punta tocant a terra" i "punta enlaire" on la geometria de la xinxeta clarament no permet considerar els dos esdeveniments equiprobables es pot llavors llençar la xinxeta un nombre elevat de cops per exemple 1000, si ha quedat per exemple 853 cops amb la punta tocant a terra i 147 cops amb la punta enlaire, les probabilitats assignades a aquests esdeveniments podrien ser 853/1000 = 0,853 i 147/1000 = 0,147
+Així i tot, la probabilitat no és pas una ciència exacta. Simplement analitza i calcula possibles resultats. No hi hem de confiar cegament, en el sentit que si hem obtingut un resultat d'un 90% per exemple en un problema concret, no vol dir que necessàriament hagi de succeir. Moltes vegades, per poc que ens agradi, ocorren els resultats amb menys probabilitat teòrica.
+
+
+== Història i terminologia ==
+
+Originàriament, en les traduccions d'Aristòtil, el terme probabilitat no denota una quantificació del caràcter aleatori d'un fet, sinó la idea que un concepte és comunament acceptat per tothom. No va ser fins al Renaixement que, arran dels comentaris successius i de les imprecisions de les traduccions de l'obra d'Aristòtil, aquest terme va evolucionar fins a acabar per designar la versemblança d'una idea. Dels segles XVI a XVII va prevaler aquest significat, en particular en l'estudi del probabilisme dins l'àmbit de la teologia moral. Va ser durant la segona meitat del segle xvii, arran de l'obra de Blaise Pascal, Pierre de Fermat i Christiaan Huygens sobre el problema dels punts que aquest terme va anar prenent gradualment el seu sentit actual, amb els desenvolupaments del tractament matemàtic d'aquest tema per Jakob Bernoulli. A partir del segle xix, apareix el que es pot considerar com la teoria moderna de la probabilitat en matemàtiques.
+Així, existeixen diverses nocions:
+
+la probabilitat d'un esdeveniment caracteritza la possibilitat que aquest fet es produeixi, una versemblança, una aparença de veritat. (definició 2 de Larousse).
+Vegeu l'article del Viccionari: probable,
+les probabilitats d'un esdeveniment donen el percentatge de possibilitats que aquest fet es produeixi, és a dir, donen un o més valors (o percentatge) de la possibilitat que es produeixi. Aquesta noció s'apropa a la noció matemàtica de distribució de probabilitat (definició 1 de Larousse). Més formalment, expressa la relació entre en nombre de casos favorables i el nombre de casos possibles,
+les probabilitats o el càlcul de probabilitats o la teoria de la probabilitat és la teoria matemàtica que estudia el caràcter probable dels esdeveniments (definició 1 de Larousse).
+Vegeu l'article: teoria de la probabilitat,
+el probabilisme és una doctrina de teologia moral que defensa que hom pot dur a terme una acció, encara que estigui en contra de l'opinió general o el consens social, si és que hi ha una possibilitat, encara que sigui petita, que els seus resultats posteriors siguin bons,
+Vegeu l'article: probabilisme.
+
+
+=== Noció de probabilitat d'Aristòtil ===
+El primer ús del terme probabilitat apareix el 1370 amb la traducció de l'Ètica a Nicòmac d'Aristòtil per Oresme i designa «el caràcter del qual és probable». El concepte d'Aristòtil (ενδοξον, en grec) és així definit en els Tòpics:
+
+El que atribueix una opinió probable, segons Aristòtil, és el seu caràcter generalment admès; no va ser fins a la traducció de Ciceró dels Tòpics d'Aristòtil, que va traduir per probabilis o per verisimilis, que la noció de versemblança s'associa a la de probabilitat, i això va tenir un impacte al llarg de l'edat mitjana i posteriorment al Renaixement, amb els successius comentaris de l'obra d'Aristòtil.
+
+
+=== Doctrina de la probabilitat al segle xvi i al segle xvii ===
+La doctrina de la probabilitat, també anomenada probabilisme, és una teologia moral catòlica que es va desenvolupar al llarg del segle xvi sota la influència, entre d'altres, de Bartolomé de Medina i dels jesuïtes. Amb l'aparició de la doctrina de la probabilitat, aquest terme va patir un canvi semàntic, que va acabar per designar, a meitats del segle xvii, el caràcter versemblant d'una idea.
+La probabilitat d'una opinió designa, a meitats del segle xvii, la probabilitat que una opinió sigui vertadera. Va ser a partir de finals del segle xvii, amb el sorgiment de la probabilitat matemàtica, que la noció de probabilitat no denota només les opinions i les idees, sinó també els fets, i s'apropa a la noció d'atzar, amb la qual es coneix en l'actualitat.
+
+
+=== Noció moderna de probabilitat ===
+L'aparició de la noció de risc, anterior a l'estudi de les probabilitats, no va ser fins al segle xii amb l'avaluació de contractes comercials, amb el Traité des contrats de Pere de Joan Olivi, i es va desenvolupar durant el segle xvi amb la generalització dels contractes d'assegurança marítima. A part d'algunes consideracions elementals de Girolamo Cardano a inicis del segle xvi i de Galileu a inicis del segle xvii, el naixement real de la teoria de la probabilitat data de la correspondència entre Pierre de Fermat i Blaise Pascal el 1654.
+No va ser fins a partir de mitjan segle xvii, amb el sorgiment del tractat matemàtic d'aquest tema, que va aparèixer l'ús modern del terme probabilitat.
+
+
+=== Probabilitats del segle xvii al segle xix ===
+
+El naixement real de la teoria de la probabilitat data de la correspondència entre Pierre de Fermat i Blaise Pascal el 1654. Ambdós comencen a elaborar les bases del tractament matemàtic de les probabilitats, al voltant de l'estudi de jocs d'atzar proposats, entre d'altres, per Antoine Gombaud, cavaller de Méré. (Vegeu al costat una pàgina de la correspondència entre Pascal i Fermat sobre el problema dels punts.) Encara que se'ls considera com a fundadors del tractament de la probabilitat, mai no van publicar-ne els seus treballs, i no va ser fins Huygens que va aparèixer publicat un primer escrit sobre aquest tema.
+Encoratjat per Pascal, Christiaan Huygens va publicar De ratiociniis in ludo aleae (Sobre el raonament dels jocs d'atzar) el 1657. Aquest llibre va ser la primera obra important sobre probabilitat. Huygens defineix la noció d'esperança matemàtica i hi desenvolupa diversos problemes de repartiment de guanys en jocs o de llançaments d'objectes en urnes. També cal destacar dues obres més: Ars Conjectandi de Jakob Bernoulli (pòstuma, 1713), que defineix la noció de variable aleatòria i dona la primera versió de la llei dels grans nombres, i Théorie de la probabilité d'Abraham de Moivre (1718), que generalitza l'ús de la combinatòria.
+La teoria de l'error, que estudia la quantificació de la diferència entre la mesura que hom fa d'una variable i el seu valor real, i que és precursora del teorema del límit central, va sorgir amb l'Opera Miscellanea de Roger Cotes (pòstuma, 1722). Thomas Simpson va ser el primer a aplicar-la als errors sobre les observacions el 1755.
+Pierre-Simon Laplace va donar una primera versió del teorema del límit central el 1812, que es pot aplicar a una variable de dos estats, per exemple cara o creu, però no a un dau de sis cares.
+Sota l'impuls de Quételet, que va obrir el 1841 sota el guiatge de Quetelet, la primera oficina estadística (el Conseil Supérieur de Statistique), es desenvolupa l'estadística, que esdevé una branca distingida de les matemàtiques recolzada en la probabilitat, i no pas una part.
+
+
+=== Naixement de la teoria clàssica de la probabilitat ===
+La teoria de la probabilitat clàssica va créixer realment amb les nocions de mesura i conjunt mesurable, introduïdes per Émile Borel el 1897. Aquesta noció de mesura fou completada per Henri Léon Lebesgue i la seva teoria de la integració. La primera versió moderna del teorema del límit central va ser donada per Aleksandr Liapunov el 1901, i la primera demostració del teorema modern va ser donada per Paul Pierre Lévy el 1910. El 1902, Andrei Màrkov introdueix les cadenes de Màrkov per emprendre una generalització de la llei dels grans nombres per a una seqüència d'experiències dependents les unes de les altres. Aquestes cadenes de Màrkov tenen una àmplia utilitat, com per exemple la modelització del moviment brownià o la indexació de llocs d'internet per Google.
+Va ser necessari esperar fins al 1933 per tal que la teoria de la probabilitat deixés de ser merament una col·lecció de mètodes i exemples i esdevingués una teoria per si mateixa, axiomatitzada per Andrei Kolmogórov.
+Kiyoshi Ito formalitzà una teoria i un lema que porta el seu nom durant els anys 1940. Això va permetre connectar el càlcul estocàstic i les equacions en derivades parcials, establint així un lligam entre l'anàlisi matemàtica i la probabilitat. El matemàtic Wolfgang Döblin, per la seva banda, va esbossar una teoria similar abans de suïcidar-se per la derrota del seu batalló el juny de 1940. Els seus treballs van ser enviats a l'Académie des Sciences en un sobre tancat, que no va ser obert fins a l'any 2000.
+
+
+== Probabilitat de successos compostos ==
+Imaginem que ens demanem per la probabilitat d'un succés associat a un experiment aleatori, en el qual hi ha diferents possibilitats perquè pugui ocórrer. Per exemple: si disposem de dues urnes que contenen boles de color blanc i negre, quina és la probabilitat que en triar una urna a l'atzar i una bola, aquesta sigui de color blanc? En aquest cas, la probabilitat té dues opcions: elegir la primera o la segona urna.
+En casos com aquest, en els quals la probabilitat d'un succés té diferents opcions, es parla de probabilitat de successos compostos, i no s'hi pot aplicar directament la regla de Laplace.
+Si anomenam A i B dos successos, de tal manera que el succés pel qual ens demanem la probabilitat està compost per aquests dos, la probabilitat que pugui ocórrer A o B és:
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)-P(A\cap B)}
+  
+
+i és P(A) la probabilitat associada al succés A, P(B) la del succés B, i P(A ∩ B) la probabilitat que puguin succeir conjuntament (en el cas que no sigui possible, aquesta seria 0). És a dir, la probabilitat del succés A o B és la suma de la probabilitat de cadascun dels successos menys la probabilitat que succeeixin conjuntament, ja que aquesta darrera ja s'ha comptat dintre de cadascuna de les probabilitats de cada succés.
+Aquesta fórmula es pot estendre seguint el mateix raonament per a tres o més successos, per exemple:
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        ∪
+        C
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        +
+        P
+        (
+        C
+        )
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        C
+        )
+        −
+        P
+        (
+        B
+        ∩
+        C
+        )
+        +
+        P
+        (
+        A
+        ∩
+        B
+        ∩
+        C
+        )
+      
+    
+    {\displaystyle P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(A\cap B)-P(A\cap C)-P(B\cap C)+P(A\cap B\cap C)}
+  
+
+
+== Probabilitat condicionada ==
+Hi ha casos en els quals necessitem conèixer la probabilitat d'un succés sabent que prèviament n'ha ocorregut un altre. És el que es coneix com a probabilitat condicionada. Si B representa el succés que ha passat i A el succés pel qual ens demanen la probabilitat, la fórmula que ens permet calcular la probabilitat que ocorri el succés A sabent que ha ocorregut el B, és:
+
+  
+    
+      
+        P
+        (
+        A
+        
+          |
+        
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              B
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(A|B)={\frac {P(A\cap B)}{P(B)}}}
+  
+
+i és P(A∩B) la probabilitat que passin el successos A i B simultàniament, i P(B) la probabilitat associada al succés B.
+Podem generalitzar el resultat anterior: Sigui 
+  
+    
+      
+        
+          A
+          
+            1
+          
+        
+        ,
+        
+        
+          A
+          
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        .
+      
+    
+    {\displaystyle A_{1},\,A_{2},....}
+  
+ una partició finita o numerable de l'espai mostral, és a dir,
+
+els conjunts són disjunts dos a dos: si 
+  
+    
+      
+        i
+        ≠
+        j
+      
+    
+    {\displaystyle i\neq j}
+  
+, llavors 
+  
+    
+      
+        
+          A
+          
+            i
+          
+        
+        ∩
+        
+          A
+          
+            j
+          
+        
+        =
+        ∅
+      
+    
+    {\displaystyle A_{i}\cap A_{j}=\emptyset }
+  
+.
+La reunió de tots els esdeveniments és l'espai mostral: 
+  
+    
+      
+        
+          ⋃
+          
+            k
+          
+        
+        
+          A
+          
+            k
+          
+        
+        =
+        Ω
+      
+    
+    {\displaystyle \bigcup _{k}A_{k}=\Omega }
+  
+.
+Sigui B un succés qualsevol, llavors, la probabilitat que ocorri el succés 
+  
+    
+      
+        
+          A
+          
+            i
+          
+        
+      
+    
+    {\displaystyle A_{i}}
+  
+ sabent que prèviament ha ocorregut el B, és:
+
+  
+    
+      
+        P
+        (
+        
+          A
+          
+            i
+          
+        
+        
+          |
+        
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              
+                A
+                
+                  i
+                
+              
+              )
+              P
+              (
+              B
+              
+                |
+              
+              
+                A
+                
+                  i
+                
+              
+              )
+            
+            
+              
+                ∑
+                
+                  k
+                
+              
+              P
+              (
+              
+                A
+                
+                  k
+                
+              
+              )
+              P
+              (
+              B
+              
+                |
+              
+              
+                A
+                
+                  k
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle P(A_{i}|B)={\frac {P(A_{i})P(B|A_{i})}{\sum _{k}P(A_{k})P(B|A_{k})}}}
+  
+
+aquest resultat es coneix amb el nom de teorema de Bayes.
+
+
+== Tractament matemàtic ==
+
+Considerem un experiment que pot produir una sèrie de resultats. El conjunt de tots els resultats s'anomena espai mostral de l'experiment. El conjunt de les parts de l'espai mostral està format pel fet de considerar tots els conjunts diferents que es puguin considerar a partir dels resultats possibles. Per exemple, llançar un dau presenta sis possibles resultats. Un conjunt dels resultats possibles seria l'obtenció d'un nombre senar en el dau. Així doncs, el subconjunt 
+  
+    
+      
+        {
+        1
+        ,
+        3
+        ,
+        5
+        }
+      
+    
+    {\displaystyle \{1,3,5\}}
+  
+ és un element del conjunt de les parts de l'espai mostral de tirades. Aquests conjunts s'anomenen esdeveniments. En aquest cas, 
+  
+    
+      
+        {
+        1
+        ,
+        3
+        ,
+        5
+        }
+      
+    
+    {\displaystyle \{1,3,5\}}
+  
+ és l'esdeveniment en què el dau dona un nombre senar. Si els resultats que realment es produeixen pertanyen a un determinat esdeveniment, es diu que l'esdeveniment s'ha produït.
+La probabilitat és una manera d'assignar a cada esdeveniment un valor entre zero i un, amb el requisit que a l'esdeveniment compost de tots els resultats possibles (en l'exemple que es proposa, l'esdeveniment
+  
+    
+      
+        {
+        1
+        ,
+        2
+        ,
+        3
+        ,
+        4
+        ,
+        5
+        ,
+        6
+        }
+      
+    
+    {\displaystyle \{1,2,3,4,5,6\}}
+  
+) se li assigna un valor d'un. Per a qualificar com una probabilitat, l'assignació de valors han de complir el requisit que si ens fixem en un conjunt d'esdeveniments mútuament excloents (esdeveniments sense resultats comuns, per exemple, els esdeveniments {1,6}, {3} i {2,4} són mútuament excloents), la probabilitat que almenys un dels esdeveniments es produeixi es dona per la suma de les probabilitats de tots els esdeveniments individuals.
+La probabilitat d'un esdeveniment A s'escriu P(A), p(A) o Pr(A). Aquesta definició matemàtica de la probabilitat es pot estendre a infinits espais mostrals, i fins i tot a innombrables espais mostrals, utilitzant el concepte de mesura.
+El contrari o complement d'un esdeveniment A és l'esdeveniment [no A] (és a dir, el cas en què A no es produeixi); la seva probabilitat és donada per 
+  
+    
+      
+        P
+        (
+        n
+        o
+         
+        A
+        )
+        =
+        1
+        −
+        P
+        (
+        A
+        )
+      
+    
+    {\displaystyle P(no\ A)=1-P(A)}
+  
+. Com a exemple, la probabilitat de no treure un sis en un dau de sis cares és de 1 - (possibilitat de treure un sis) 
+  
+    
+      
+        =
+        1
+        −
+        
+          
+            
+              1
+              6
+            
+          
+        
+        =
+        
+          
+            
+              5
+              6
+            
+          
+        
+      
+    
+    {\displaystyle =1-{\tfrac {1}{6}}={\tfrac {5}{6}}}
+  
+
+La probabilitat que dos esdeveniments A i B es produeixin en una mateixa repetició d'un experiment s'anomena probabilitat d'intersecció o distribució conjunta d'A i B, notada com a 
+  
+    
+      
+        P
+        (
+        A
+        ∩
+        B
+        )
+      
+    
+    {\displaystyle P(A\cap B)}
+  
+.
+
+
+=== Esdeveniments independents ===
+Si dos esdeveniments A i B són independents, llavors la seva probabilitat conjunta és:
+
+  
+    
+      
+        P
+        (
+        A
+        
+          
+             i 
+          
+        
+        B
+        )
+        =
+        P
+        (
+        A
+        ∩
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+        ,
+        
+      
+    
+    {\displaystyle P(A{\mbox{ i }}B)=P(A\cap B)=P(A)P(B),\,}
+  
+
+Per exemple, si es llencen dues monedes, la probabilitat que les dues donin cara és 
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+        ×
+        
+          
+            
+              1
+              2
+            
+          
+        
+        =
+        
+          
+            
+              1
+              4
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\tfrac {1}{2}}\times {\tfrac {1}{2}}={\tfrac {1}{4}}.}
+  
+
+
+==== Esdeveniments mútuament excloents ====
+Donats dos esdeveniments 'A' i 'B', la possibilitat que es produeixin qualsevol o ambdós en una sola repetició d'un experiment s'anomena la unió dels esdeveniments A i B. La seva probabilitat es nota 
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+      
+    
+    {\displaystyle P(A\cup B)}
+  
+. Si dos esdeveniments són mútuament excloents, llavors la probabilitat de la seva unió és:
+
+  
+    
+      
+        P
+        (
+        A
+        
+          
+             o 
+          
+        
+        B
+        )
+        =
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        .
+      
+    
+    {\displaystyle P(A{\mbox{ o }}B)=P(A\cup B)=P(A)+P(B).}
+  
+
+Per exemple, la possibilitat de treure un 1 o un 2 en un dau de sis cares és 
+  
+    
+      
+        P
+        (
+        1
+        
+          
+             o 
+          
+        
+        2
+        )
+        =
+        P
+        (
+        1
+        )
+        +
+        P
+        (
+        2
+        )
+        =
+        
+          
+            
+              1
+              6
+            
+          
+        
+        +
+        
+          
+            
+              1
+              6
+            
+          
+        
+        =
+        
+          
+            
+              1
+              3
+            
+          
+        
+        .
+      
+    
+    {\displaystyle P(1{\mbox{ o }}2)=P(1)+P(2)={\tfrac {1}{6}}+{\tfrac {1}{6}}={\tfrac {1}{3}}.}
+  
+
+
+==== Esdeveniments no mútuament excloents ====
+Si els esdeveniments no són mútuament excloents, llavors:
+
+  
+    
+      
+        
+          P
+        
+        
+          (
+          
+            A
+            
+              
+                 o 
+              
+            
+            B
+          
+          )
+        
+        =
+        
+          P
+        
+        
+          (
+          A
+          )
+        
+        +
+        
+          P
+        
+        
+          (
+          B
+          )
+        
+        −
+        
+          P
+        
+        
+          (
+          
+            A
+            
+              
+                 i 
+              
+            
+            B
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \mathrm {P} \left(A{\hbox{ o }}B\right)=\mathrm {P} \left(A\right)+\mathrm {P} \left(B\right)-\mathrm {P} \left(A{\mbox{ i }}B\right).}
+  
+
+Per exemple, en treure una sola carta a l'atzar d'una baralla de cartes de pòquer, la probabilitat que surti un cor o una figura (J, Q, K) (o una figura de cors) és 
+  
+    
+      
+        
+          
+            
+              13
+              52
+            
+          
+        
+        +
+        
+          
+            
+              12
+              52
+            
+          
+        
+        −
+        
+          
+            
+              3
+              52
+            
+          
+        
+        =
+        
+          
+            
+              11
+              26
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {13}{52}}+{\tfrac {12}{52}}-{\tfrac {3}{52}}={\tfrac {11}{26}}}
+  
+, ja que de les 52 cartes d'una baralla, 13 són cors, 12 són figures i 3 són figures de cors. En aquest cas, cal tenir en compte que les possibilitats de les 3 figures de cors (
+  
+    
+      
+        
+          
+            
+              3
+              52
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {3}{52}}}
+  
+) ja s'inclouen en les dels 13 cors (
+  
+    
+      
+        
+          
+            
+              13
+              52
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {13}{52}}}
+  
+) i de les 12 figures (
+  
+    
+      
+        
+          
+            
+              12
+              52
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {12}{52}}}
+  
+), i doncs, cal restar-les per no comptar-les dues vegades.
+
+
+=== Probabilitat condicionada ===
+Probabilitat condicionada és la probabilitat d'un esdeveniment, donada l'ocurrència d'un altre esdeveniment B. S'escriu P(A|B), i es llegeix "la probabilitat de A, donat B". Es defineix per:
+
+  
+    
+      
+        P
+        (
+        A
+        ∣
+        B
+        )
+        =
+        
+          
+            
+              P
+              (
+              A
+              ∩
+              B
+              )
+            
+            
+              P
+              (
+              B
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle P(A\mid B)={\frac {P(A\cap B)}{P(B)}}.\,}
+  
+
+Si 
+  
+    
+      
+        P
+        (
+        B
+        )
+        =
+        0
+      
+    
+    {\displaystyle P(B)=0}
+  
+, llavors 
+  
+    
+      
+        P
+        (
+        A
+        ∣
+        B
+        )
+      
+    
+    {\displaystyle P(A\mid B)}
+  
+ no està definit. Tingueu en compte que en aquest cas A i B són independents.
+
+
+=== Taula resum ===
+
+
+=== Llei dels grans nombres ===
+
+En aquesta secció, presentem la llei dels grans nombres, però cal destacar que n'existeixen altres versions.
+Donada una successió de variables aleatòries independents i idènticament distribuïdes, i amb esperança finita, llavors la seva esperança existeix i també és finita:
+
+  
+    
+      
+        
+          
+            
+              
+                X
+                
+                  1
+                
+              
+              +
+              
+                X
+                
+                  2
+                
+              
+              +
+              .
+              .
+              .
+              +
+              
+                X
+                
+                  n
+                
+              
+            
+            n
+          
+        
+        
+          
+            ⟶
+            
+              n
+              →
+              ∞
+            
+          
+        
+        
+          E
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle {\frac {X_{1}+X_{2}+...+X_{n}}{n}}{\underset {n\rightarrow \infty }{\longrightarrow }}\mathbb {E} (X)}
+  
+
+Més concretament, aquesta llei diu que la mitjana aritmètica d'una variable tendeix cap a la seva esperança. Per exemple, si llancem repetidament un dau de 6 cares, la mitjana d'aquests llançaments tendeix cap a l'esperança 3,5.
+El terme tendir cap a s'ha de prendre en el sentit de convergència quasi segura, és a dir, que la probabilitat que la successió arribi al límit és igual a 1. Com s'indica en els principis fonamentals, pot donar-se el cas que, excepcionalment, aquesta mitjana no tendeixi cap a l'esperança. Podria succeir, per exemple, que obtinguéssim una seqüència de només 1 en llançar un dau, i llavors la mitjana seria també 1, i no s'arribaria al límit. Si continuem llançant el dau suficients vegades, veurem que anirem obtenint cadascuna de les 6 cares, i llavors veurem que la mitjana tendirà a l'esperança. Aquest teorema formalitza l'observació del sentit comú.
+
+
+=== Teorema del límit central ===
+
+Aquest teorema del límit central és útil per a conèixer com es comporta la relació entre la realització d'una variable i el seu valor mitjà. Mentre que la llei dels grans nombres afirma que la mitjana de les realitzacions tendeix cap a l'esperança, el teorema del límit central descriu com tendeix la mitjana cap a l'esperança. Una manera senzilla, encara que poc rigorosa, d'escriure aquest teorema ens permet comprendre millor la seva utilitat:
+
+  
+    
+      
+        
+          
+            
+              
+                ∑
+                
+                  k
+                  =
+                  0
+                
+                
+                  n
+                
+              
+              (
+              
+                X
+                
+                  k
+                
+              
+              −
+              
+                E
+              
+              (
+              X
+              )
+              )
+            
+            n
+          
+        
+        
+          
+            ≃
+            
+              n
+              →
+              ∞
+            
+          
+        
+        
+          
+            N
+          
+        
+        
+          (
+          
+            0
+            ,
+            
+              
+                σ
+                
+                  n
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\frac {\displaystyle \sum _{k=0}^{n}(X_{k}-\mathbb {E} (X))}{n}}{\underset {n\rightarrow \infty }{\simeq }}{\mathcal {N}}\left(0,{\frac {\sigma }{\sqrt {n}}}\right)}
+  
+
+en què 
+  
+    
+      
+        
+          
+            N
+          
+        
+        
+          (
+          
+            0
+            ,
+            
+              
+                σ
+                
+                  n
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle {\mathcal {N}}\left(0,{\frac {\sigma }{\sqrt {n}}}\right)}
+  
+ és la distribució normal de variància 
+  
+    
+      
+        
+          
+            
+              
+                σ
+                
+                  2
+                
+              
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle {\frac {\sigma ^{2}}{n}}}
+  
+, també coneguda com a gaussiana, i representada per la figura adjunta. Aquest teorema té una enorme utilitat, per exemple en física. Es pot interpretar com que «la mitjana dels errors observats tendeix cap a una distribució normal». La suma d'un gran nombre d'errors (per exemple, errors d'observació en una mesura) és gairebé gaussiana. Podríem tenir la certesa que és gaussiana si suméssim un nombre infinit d'errors, però en la pràctica això no és possible. La distribució gaussiana ens dona, llavors, una aproximació per a la distribució de l'error, que és més fàcil de conèixer que la distribució exacta de l'error, ja que aquesta última no sempre es coneix. Un gran nombre de fenòmens naturals són deguts a la superposició de diverses causes, independents en major o menor grau. D'aquest teorema es desprèn que la distribució normal representa aquestes causes d'una manera raonablement eficaç.
+Per a ser més formals, hem d'escriure el teorema del límit central de la manera següent:
+
+  
+    
+      
+        
+          
+            1
+            
+              σ
+              
+                
+                  n
+                
+              
+            
+          
+        
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            n
+          
+        
+        (
+        
+          X
+          
+            k
+          
+        
+        −
+        
+          E
+        
+        (
+        X
+        )
+        )
+        
+          
+            ⟶
+            
+              n
+              →
+              ∞
+            
+          
+        
+        
+          
+            N
+          
+        
+        (
+        0
+        ,
+        1
+        )
+      
+    
+    {\displaystyle {\frac {1}{\sigma {\sqrt {n}}}}\sum _{k=0}^{n}(X_{k}-\mathbb {E} (X)){\underset {n\rightarrow \infty }{\longrightarrow }}{\mathcal {N}}(0,1)}
+  
+
+en què hem d'interpretar el límit en el sentit de tendir en distribució o convergir com a variable aleatòria, és a dir, la distribució del membre esquerre de la igualtat tendeix cap a la distribució normal.
+Hom ha de tenir en compte que existeixen diverses generalitzacions d'aquest teorema, com per exemple en els casos en què les variables no són idènticament distribuïdes (condicions de Liapunov o condicions de Lindeberg), o els casos en què les variables tenen variància infinita (a causa de Gnedenko i Kolmogórov).
+
+
+== Bibliografia ==
+Kallenberg, O. (2005). Probabilistic Symmetries and Invariance Principles. Springer -Verlag, New York. 510 pp. ISBN 0-387-25115-4.
+Kallenberg, O. (2002). Foundations of Modern Probability, 2nd ed. Springer Series in Statistics. 650 pp. ISBN 0-387-95313-2.
+Olofsson, Peter (2005). Probability, Statistics, and Stochastic Processes, Wiley-Interscience. 504 pp ISBN 0-471-67969-0.
+
+
+== Notes ==
+
+
+== Referències ==
+
+
+== Vegeu també ==
+Anàlisi de relacions
+Teoria de la informació
+
+
+== Enllaços externs ==
+
+Fonaments bàsics de probabilitat adaptats al món del futbol  Matifutbol.com (català)

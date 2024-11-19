@@ -1,0 +1,1528 @@
+Rovnica je vzťah rovnosti medzi dvoma algebrickými výrazmi, ak sa na rozdiel od rovnosti (identity) dá dosadiť len niekoľko špecifických hodnôt. Napríklad vzťah rovnosti F (x) = f (x) medzi dvoma funkciami tej istej premennej sa označuje rovnica s jednou neznámou, ak je správny len pre určité hodnoty spomenutej premennej.
+Inak vyjadrené, ide o výrokovú funkciu, ktorá každému oboru definície pevne zvolených zobrazení F a f priraďuje výrok "hodnota zobrazenia F v bode x sa rovná hodnote zobrazenia f v bode x".
+Niektoré javy nemožno opísať iba pomocou jednej rovnice. Preto sa stretávame aj so sústavami rovníc.
+
+
+== Znak rovná sa ==
+Graficky sa rovnica vyjadruje znakom = medzi dvoma algebraickými výrazmi. Rovnice sa často používajú aj na to, aby sme niečo definovali. V takom prípade sa to, čo definujeme píše spravidla vľavo a znak = sa často nahradí znakom :=, alebo sa nad rovná sa napíše "def"; napríklad definícia derivácie funkcie je: 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        
+          x
+          
+            0
+          
+        
+        )
+        :=
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            
+              f
+              (
+              
+                x
+                
+                  0
+                
+              
+              +
+              h
+              )
+              −
+              f
+              (
+              
+                x
+                
+                  0
+                
+              
+              )
+            
+            h
+          
+        
+      
+    
+    {\displaystyle f'(x_{0}):=\lim _{h\to 0}{\frac {f(x_{0}+h)-f(x_{0})}{h}}}
+  
+
+Takisto sa niekedy rovnica používa na vyjadrenie, že sa niečo má niečomu rovnať (požiadavka), vtedy sa často nad rovná sa pripíše výkričník.
+
+
+== Základné definície ==
+Symbol x sa nazýva neznáma; ak má rovnica namiesto jednej neznámej x viacero neznámych x1, x2…xn (často označované ako x, y, z…), hovoríme, že je rovnicou o n neznámych
+Symbol a sa spravidla nazýva koeficient neznámej; pri rovniciach o n neznámych máme zároveň n koeficientov neznámych a0, a1…an (často označované ako a, b, c…)
+Koreň alebo riešenie rovnice je každý prvok oboru pravdivosti rovnice
+Obor pravdivosti rovnice (zjednodušene povedané množina riešení) je množina všetkých tých x z definičného oboru oboch zobrazení F a f (čiže oboru definície rovnice), pre ktoré je výrok F (x) = f (x) pravdivým výrokom
+Obor definície rovnice je množina, z ktorej možno dosadzovať prvky ako premenné, ktoré sú koreňmi rovnice.
+
+
+== Premenná, neznáma, parameter ==
+Pojem premenná je v zásade identický s pojmom neznáma, no pri rovniciach s jednou neznámou sa premenné delia na:
+
+neznáme = premenné, ktoré chceme z rovnice určiť
+parametre = ostatné premenné
+Ak rovnica neobsahuje premenné, napr. 3 + 1 = 4, tak čisto formálne hovoríme o výroku, inak o výrokovej forme.
+
+
+== Delenie podľa počtu neznámych ==
+rovnica s jednou neznámou
+rovnica s viacerými neznámymi
+
+
+== Delenie podľa riešiteľnosti ==
+všeobecne platná rovnica alebo identická rovnica je rovnica, ktorá je pravdivým výrokom po dosadení ktoréhokoľvek prvku oboru definície, teda má vždy riešenie (napr. x + y = y + x)
+riešiteľná rovnica alebo splniteľná rovnica je rovnica, ktorá je pravdivým výrokom po dosadení niektorých prvkov oboru definície, ale nepravdivým výrokom pre ostatné prvky oboru definície (napr. 2x + 4 = 2, kde riešením je len číslo –1 z oboru definície všetkých čísiel)
+neriešiteľná rovnica alebo nesplniteľná rovnica je rovnica, ktorej obor pravdivosti je prázdna množina, teda nemá riešenie (napr. x + 1 = x)
+Veľa rovníc je však neriešiteľných len pre obor definície z určitej množiny čísiel, napr. x2 = 2 je neriešiteľná pre racionálne čísla, ale riešiteľná pre reálne čísla.
+
+
+== Delenie podľa typu zobrazení F a f ==
+algebrická rovnica
+nealgebrická rovnica (transcendentná rovnica)
+
+
+== Vektorový a maticový zápis pre lineárne rovnice ==
+Keďže množinu riešení (koreňov) každej algebraickej rovnice môžeme chápať ako aritmetický vektor – tzv. vektor neznámych xT = (x1, x2…xn) a množinu koeficientov neznámych ako aritmetický vektor aT = (a0, a1…an), môžeme všeobecný vzorec pre lineárne rovnice s viacerými neznámymi a0x0 + a1x1 +…+ anxn = b, aby sme ušetrili miesto, alternatívne zapísať ako 
+aTx = b.
+Podobne môžeme množinu koeficientov neznámych každej sústavy lineárnych rovníc chápať ako maticu – tzv. maticu sústavy:
+A = 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  
+                    a
+                    
+                      0
+                      p
+                      r
+                      v
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      1
+                      p
+                      r
+                      v
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      2
+                      p
+                      r
+                      v
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                  .
+                  .
+                  .
+                
+              
+              
+                
+                  
+                    a
+                    
+                      0
+                      d
+                      r
+                      u
+                      h
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      1
+                      d
+                      r
+                      u
+                      h
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      2
+                      d
+                      r
+                      u
+                      h
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                  .
+                  .
+                  .
+                
+              
+              
+                
+                  .
+                  .
+                  .
+                
+              
+              
+                
+                  
+                    a
+                    
+                      0
+                      p
+                      o
+                      s
+                      l
+                      e
+                      d
+                      n
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      1
+                      p
+                      o
+                      s
+                      l
+                      e
+                      d
+                      n
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                
+                
+                  
+                    a
+                    
+                      2
+                      p
+                      o
+                      s
+                      l
+                      e
+                      d
+                      n
+                      e
+                      j
+                      r
+                      o
+                      v
+                      n
+                      i
+                      c
+                      e
+                    
+                  
+                  .
+                  .
+                  .
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}a_{0prvejrovnice}&a_{1prvejrovnice}&a_{2prvejrovnice}...\\a_{0druhejrovnice}&a_{1druhejrovnice}&a_{2druhejrovnice}...\\...\\a_{0poslednejrovnice}&a_{1poslednejrovnice}&a_{2poslednejrovnice}...\end{pmatrix}}}
+  
+
+a množinu riešení môžeme chápať tak ako hore, takže celkovo, aby sme ušetrili miesto, alternatívne môžeme sústavu lineárnych rovníc zapísať takto:
+Ax =b
+
+Vysvetlivky
+tučné písmo znamená, že ide o vektor alebo maticu
+T znamená transponovaný vektor, čiže vektor jednoducho píšeme do riadku (netransponovaný vektor teda píšeme do stĺpca)
+
+
+== Riešenie rovnice ==
+Na nájdenie riešení (koreňov) rovnice spravidla potrebujeme úpravy:
+
+Ekvivalentná úprava rovnice je taká úprava, ktorá nemení obor pravdivosti rovnice. Takýmito úpravami sú sčítanie a odčítanie algebraických výrazov, ako aj násobenie a delenie číslami nerovnými nule.
+Neekvivalentná úprava rovnice je každá iná úprava. Takýmito úpravami sú napríklad umocnenie a odmocňovanie – pri umocňovaní môžu vzniknúť nové korene, pri odmocňovaní zas korene odpadnúť.
+Pri sústavách rovníc sa navyše rozlišujú viaceré spôsoby zohľadnenia skutočnosti, že je rovníc viac ako jedna, a že spolu súvisia, pozri Riešenie sústavy rovníc.
+
+
+== Príklady počítania rovníc ==
+Príklad č.1:
+
+  
+    
+      
+        5
+        −
+        7
+        x
+        =
+        0
+      
+    
+    {\displaystyle 5-7x=0}
+  
+
+Postup:
+
+Prenesieme konštantu na pravú stranu a zmeníme jej znak: 
+  
+    
+      
+        5
+        −
+        7
+        x
+        =
+        0
+        →
+        −
+        7
+        x
+        =
+        −
+        5
+      
+    
+    {\displaystyle 5-7x=0\rightarrow -7x=-5}
+  
+
+Vydelíme obidve strany rovnice číslom -7: 
+  
+    
+      
+        −
+        7
+        x
+        =
+        −
+        5
+        →
+        x
+        =
+        
+          
+            5
+            7
+          
+        
+      
+    
+    {\displaystyle -7x=-5\rightarrow x={\frac {5}{7}}}
+  
+
+Konečné riešenie a výsledok rovnice je: 
+  
+    
+      
+        x
+        =
+        
+          
+            5
+            7
+          
+        
+        =
+        0
+        ,
+        7142857143
+      
+    
+    {\displaystyle x={\frac {5}{7}}=0,7142857143}
+  
+
+Príklad č.2:
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        3
+        y
+        +
+        x
+      
+    
+    {\displaystyle x^{2}=3y+x}
+  
+
+Postup:
+
+Prenesieme premennú na ľavú stranu a zmeníme jej znak: 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        3
+        y
+        +
+        x
+        →
+        
+          x
+          
+            2
+          
+        
+        −
+        3
+        y
+        =
+        x
+        →
+        −
+        3
+        y
+        =
+        x
+        −
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x^{2}=3y+x\rightarrow x^{2}-3y=x\rightarrow -3y=x-x^{2}}
+  
+
+Vydelíme obe strany rovnice číslom -3: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            1
+            3
+          
+        
+        x
+        +
+        
+          
+            1
+            3
+          
+        
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle y=-{\frac {1}{3}}x+{\frac {1}{3}}x^{2}}
+  
+
+Riešenie 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ zapíšeme v parametrickej forme: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            1
+            3
+          
+        
+        x
+        +
+        
+          
+            1
+            3
+          
+        
+        
+          x
+          
+            2
+          
+        
+        ,
+        x
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y=-{\frac {1}{3}}x+{\frac {1}{3}}x^{2},x\in \mathbb {R} }
+  
+
+Konečné riešenie a výsledok rovnice je: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            1
+            3
+          
+        
+        x
+        +
+        
+          
+            1
+            3
+          
+        
+        
+          x
+          
+            2
+          
+        
+        ,
+        x
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y=-{\frac {1}{3}}x+{\frac {1}{3}}x^{2},x\in \mathbb {R} }
+  
+
+Príklad č.3:
+
+  
+    
+      
+        (
+        x
+        +
+        y
+        
+          )
+          
+            2
+          
+        
+        =
+        ?
+      
+    
+    {\displaystyle (x+y)^{2}=?}
+  
+
+Postup:
+
+Do premenných 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ a 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ dosadíme ľubovoľné kladné čísla, v tomto prípade použijeme 
+  
+    
+      
+        x
+        =
+        2
+      
+    
+    {\displaystyle x=2}
+  
+ a 
+  
+    
+      
+        y
+        =
+        3
+      
+    
+    {\displaystyle y=3}
+  
+.
+Čísla si dosadíme do vzorca: 
+  
+    
+      
+        (
+        x
+        +
+        y
+        
+          )
+          
+            2
+          
+        
+        =
+        (
+        2
+        +
+        3
+        
+          )
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (x+y)^{2}=(2+3)^{2}}
+  
+ Ďalej: 
+  
+    
+      
+        (
+        2
+        +
+        3
+        
+          )
+          
+            2
+          
+        
+        =
+        
+          5
+          
+            2
+          
+        
+        =
+        25
+      
+    
+    {\displaystyle (2+3)^{2}=5^{2}=25}
+  
+
+Ďalej: 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        =
+        4
+      
+    
+    {\displaystyle x^{2}=4}
+  
+ a 
+  
+    
+      
+        
+          y
+          
+            2
+          
+        
+        =
+        9
+      
+    
+    {\displaystyle y^{2}=9}
+  
+.
+Číslo 25 zložíme následujcou rovnicou: 
+  
+    
+      
+        25
+        =
+        
+          2
+          
+            2
+          
+        
+        +
+        2
+        ⋅
+        2
+        ⋅
+        3
+        +
+        
+          3
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 25=2^{2}+2\cdot 2\cdot 3+3^{2}}
+  
+
+Konečné riešenie a výsledok rovnice je: 
+  
+    
+      
+        (
+        x
+        +
+        y
+        
+          )
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        2
+        x
+        y
+        +
+        
+          y
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (x+y)^{2}=x^{2}+2xy+y^{2}}
+  
+
+Príklad č.4:
+
+  
+    
+      
+        1116
+        =
+        94
+        y
+        +
+        38
+        n
+      
+    
+    {\displaystyle 1116=94y+38n}
+  
+
+Postup:
+
+Premennú prenesieme na ľavú stranu a zmeníme jej znak: 
+  
+    
+      
+        1116
+        =
+        94
+        y
+        +
+        38
+        n
+        →
+        1116
+        −
+        94
+        y
+        =
+        38
+        n
+      
+    
+    {\displaystyle 1116=94y+38n\rightarrow 1116-94y=38n}
+  
+
+Konštantu prenesieme na pravú stranu a zmeníme jej znak: 
+  
+    
+      
+        1116
+        =
+        94
+        y
+        +
+        38
+        n
+        →
+        −
+        94
+        y
+        =
+        38
+        n
+        −
+        1116
+      
+    
+    {\displaystyle 1116=94y+38n\rightarrow -94y=38n-1116}
+  
+
+Obe strany rovnice vydelíme číslom -94: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            19
+            47
+          
+        
+        n
+        +
+        
+          
+            558
+            47
+          
+        
+      
+    
+    {\displaystyle y=-{\frac {19}{47}}n+{\frac {558}{47}}}
+  
+
+Riešenie 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ zapíšeme v parametrickej forme: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            19
+            47
+          
+        
+        n
+        +
+        
+          
+            558
+            47
+          
+        
+        ,
+        n
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y=-{\frac {19}{47}}n+{\frac {558}{47}},n\in \mathbb {R} }
+  
+
+Konečné riešenie a výsledok rovnice je: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            19
+            47
+          
+        
+        n
+        +
+        
+          
+            558
+            47
+          
+        
+        ,
+        n
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y=-{\frac {19}{47}}n+{\frac {558}{47}},n\in \mathbb {R} }
+  
+
+Príklad č.6:
+
+  
+    
+      
+        
+          
+            
+              5
+              x
+              −
+              3
+            
+            4
+          
+        
+        =
+        
+          
+            
+              4
+              x
+              −
+              3
+            
+            3
+          
+        
+      
+    
+    {\displaystyle {\frac {5x-3}{4}}={\frac {4x-3}{3}}}
+  
+
+Postup:
+
+Rovnicu zjednodušíme násobením do kríža: 
+  
+    
+      
+        3
+        (
+        5
+        x
+        −
+        3
+        )
+        =
+        4
+        (
+        4
+        x
+        −
+        3
+        )
+      
+    
+    {\displaystyle 3(5x-3)=4(4x-3)}
+  
+
+Prvú zátvorku vynásobime číslom 3: 
+  
+    
+      
+        15
+        x
+        −
+        9
+        =
+        4
+        (
+        4
+        x
+        −
+        3
+        )
+      
+    
+    {\displaystyle 15x-9=4(4x-3)}
+  
+
+Druhú zátvorku vynásobime číslom 4: 
+  
+    
+      
+        15
+        x
+        −
+        9
+        =
+        16
+        x
+        −
+        12
+      
+    
+    {\displaystyle 15x-9=16x-12}
+  
+
+Premennnú prenesieme na ľavú stranu a zmeníme jej znak: 
+  
+    
+      
+        15
+        x
+        −
+        9
+        −
+        16
+        x
+        =
+        −
+        12
+      
+    
+    {\displaystyle 15x-9-16x=-12}
+  
+
+Konštantu prenesieme na pravú stranu a zmeníme jej znak: 
+  
+    
+      
+        15
+        x
+        −
+        16
+        x
+        =
+        −
+        12
+        +
+        9
+      
+    
+    {\displaystyle 15x-16x=-12+9}
+  
+
+Časť 
+  
+    
+      
+        15
+        x
+        −
+        16
+        x
+      
+    
+    {\displaystyle 15x-16x}
+  
+ zjednodušíme pomocou sčítania a odčítania členov s rovnakým základom mocnín: 
+  
+    
+      
+        −
+        x
+        =
+        −
+        12
+        +
+        9
+      
+    
+    {\displaystyle -x=-12+9}
+  
+
+Vypočítame súčet: 
+  
+    
+      
+        −
+        x
+        =
+        −
+        3
+      
+    
+    {\displaystyle -x=-3}
+  
+. Ďalej vynásobime obe strany rovnice číslom -1: 
+  
+    
+      
+        −
+        x
+        ⋅
+        −
+        1
+        =
+        −
+        3
+        ⋅
+        −
+        1
+        =
+        3
+      
+    
+    {\displaystyle -x\cdot -1=-3\cdot -1=3}
+  
+
+Konečné riešenie a výsledok rovnice je: 
+  
+    
+      
+        x
+        =
+        3
+      
+    
+    {\displaystyle x=3}
+  
+
+Príklad č.7:
+
+  
+    
+      
+        (
+        
+          x
+          
+            5
+          
+        
+        +
+        3
+        y
+        +
+        2
+        x
+        )
+        =
+        (
+        5
+        y
+        +
+        
+          x
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (x^{5}+3y+2x)=(5y+x^{3})}
+  
+
+Postup:
+
+Premennú prenesieme na ľavú stranu a zmeníme jej znak: 
+  
+    
+      
+        
+          x
+          
+            5
+          
+        
+        +
+        3
+        y
+        +
+        2
+        x
+        −
+        5
+        y
+        =
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle x^{5}+3y+2x-5y=x^{3}}
+  
+
+Premenné 
+  
+    
+      
+        
+          x
+          
+            5
+          
+        
+      
+    
+    {\displaystyle x^{5}}
+  
+ a 
+  
+    
+      
+        2
+        x
+      
+    
+    {\displaystyle 2x}
+  
+ prenesieme na pravú stranu a zmeníme ich znaky: 
+  
+    
+      
+        3
+        y
+        −
+        5
+        y
+        =
+        
+          x
+          
+            3
+          
+        
+        −
+        
+          x
+          
+            5
+          
+        
+        −
+        2
+        x
+      
+    
+    {\displaystyle 3y-5y=x^{3}-x^{5}-2x}
+  
+
+Časť 
+  
+    
+      
+        3
+        y
+        −
+        5
+        y
+      
+    
+    {\displaystyle 3y-5y}
+  
+ zjednodušíme pomocou sčítania a odčítania členov s rovnakým základom mocnín: 
+  
+    
+      
+        −
+        2
+        y
+        =
+        
+          x
+          
+            3
+          
+        
+        −
+        
+          x
+          
+            5
+          
+        
+        −
+        2
+        x
+      
+    
+    {\displaystyle -2y=x^{3}-x^{5}-2x}
+  
+
+Obe strany rovnice vydelíme číslom -2: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          x
+          
+            3
+          
+        
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          x
+          
+            5
+          
+        
+        +
+        x
+      
+    
+    {\displaystyle y=-{\frac {1}{2}}x^{3}+{\frac {1}{2}}x^{5}+x}
+  
+
+Riešenie 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ zapíšeme v parametrickej forme: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          x
+          
+            3
+          
+        
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          x
+          
+            5
+          
+        
+        +
+        x
+        ,
+        x
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y=-{\frac {1}{2}}x^{3}+{\frac {1}{2}}x^{5}+x,x\in \mathbb {R} }
+  
+
+Konečné riešenie a výsledok rovnice je: 
+  
+    
+      
+        y
+        =
+        −
+        
+          
+            1
+            2
+          
+        
+        
+          x
+          
+            3
+          
+        
+        +
+        
+          
+            1
+            2
+          
+        
+        
+          x
+          
+            5
+          
+        
+        +
+        x
+        ,
+        x
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle y=-{\frac {1}{2}}x^{3}+{\frac {1}{2}}x^{5}+x,x\in \mathbb {R} }

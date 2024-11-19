@@ -1,0 +1,27 @@
+Ein CPU (engelsk akronym for Central Processing Unit) er hovudrekne-/prosesseringseininga i ei datamaskin. Ho har normalt to logiske einingar: Éi eining for styring og éi eining for gjennomføring. Sidan midten på 1970-talet har dei fleste CPUar vore laga av integrert krets (éin eller fleire).
+Ein CPU som er bygd av éin enkelt integrert krets vert kalla ein mikroprosessor. Verdas første mikroprosessor var 4-bit-prosessoren Intel 4004, lansert hausten 1971. Det tok fleire år før generelle datamaskiner brukte ein mikroprosessor som CPU. Mikroprosessorar vart i byrjinga berre teke i bruk i spesialutstyr som til dømes avanserte måleinstrument og i ekstrautstyr til større datamaskiner, slik som skjerm- og tastaturterminalar. Frå midten av 70-talet kom enkle hobby-datamaskiner og videospelkonsollar med 8-bit mikroprosessor. Etter dette gjekk det slag i slag med heimedatamaskinar, PC'ar og etter kvart tenarmaskiner.
+
+
+== Verkemåte ==
+Den grunnleggande bruken av dei fleste CPUar, uavhengig av fysisk form, er å utføre en sekvens av lagra instruksjonar kalla eit program. Programmet er representert med ein serie tal som blir halde i ein form for datamaskin minne. Det er fire trinn som nesten alle CPUar nyttar i sin drift: hente, dekode, utføre, og writeback.
+Det første trinnet, hente, går på å hente ein instruksjon (som er representert av eit tal eller sekvens av tal) frå programminne. Plasseringa i programmet sitt minnet blir bestemte av ein program teljar(program counter), som lagrar eit nummer som identifiserer den aktuelle posisjonen i programmet. Etter at ein instruksjon blir henta, blir program teljar auka med lengda av instruksjonen ordna i form av minneeiningar. Ofte må den instruksjon som skal hentast hentast frå eit relativt tregt minne, slik at CPU stopper mens den venter på at data skal bli returnert. Dette problemet er i stor grad adressert i moderne prosessorer med cach og røyrleidningssystem arkitekturar.
+Instruksjonen som CPU hentar frå minnet nyttast til å bestemme kva CPU skal gjere. I dekode trinnet blir instruksjonane stykka opp i delar som har tyding for andre delar av CPU. Måten den numeriske instruksjonsverdien blir tolka er definert av CPU sin instruksjonssettsarkitektur (ISA).  Ei gruppe av tal i instruksjonen, ofte kalla opcode, indikerer kva operasjon som skal utførast. Dei resterande delane av nummeret gjev vanlegvis informasjon om korleis instruksjonen skal utførast, til dømes operatorar for legge saman to tal. Slike operatorar kan bli gjevne som ein konstant verdi (kalla ein umiddelbar verdi), eller som ein referanse til ein plass for å finne ein verdi: eit register eller ei minneadresse, avhengig av adresseringsmodus. I eldre CPU design var delane ansvarlege for instruksjons dekoding  uforanderlege maskinvareeiningar. Men i nyare og meir abstrakte og kompliserte prosessorar og ISA, blir eit microprogram ofte nytta til å hjelpe i å sette over instruksjonar til forskjellige konfigurasjonsignal for CPU. Dette microprogramet er nokre gonger overskrivbart slik at det kan endrast for å endre måten CPU dekodar instruksjonane sjølv etter at den er produsert.
+Etter hente og dekode trinn, er det tid for utføringstrinnet. I dette trinnet blir ulike delar av CPU kopla slik at dei kan utføre ynskt handling. Dersom til dømes ein addisjonsoperasjon er ynskt, vil den aritmetiske logiske eininga (ALE) kople til et sett med inngangar og et sett med utgangar. Inngangane gjer tala som skal leggast saman, og utgangane vil innehalde den endelege summen.  ALE inneheld kretsar for å utføre enkle aritmetiske og logiske operasjoner på inngangar (som addisjon og multiplikasjon). Dersom operasjonen gjer et resultat som er for stort til at CPU kan handtere det kan eit aritmetisk overflyt flagg bli sett i eit flagg register.
+
+
+== Kjende CPU-versjonar ==
+IBM System/360 – IBM sin stormaskin-familie frå 1964 og fram til i dag (via 370 og 390-familien)
+Digital PDP-11 – 16-bit minidatamaskin som vart brukt til å utvikle den første UNIX-versjonen skrive i C
+Nord-5 – Norsk Datas, og kanskje verdas første 32-bit minidatamaskin
+Digital VAX – utbreidd minidatamaskin-arkitektur frå 1970- og 80-talet
+MOS Technologies 6502 – brukt i mellom anna Apple II, Commodore VIC-20 og Commodore 64
+Zilog Z80 – brukt i bl.a. Osborne 1, Mycron 1000, Sinclair Spectrum, Amstrad CPC464, Tiki 100 og Nintendo Gameboy
+Intel x86 – brukt i mellom anna Mycron 2000 og alle IBM-kompatible PCar; både Pentium og AMD Athlon er x86'ar
+Motorola 68000 – brukt i mellom anna Apple Macintosh, Atari ST og Commodore Amiga
+PowerPC – brukt i alt frå moderne Macintosh'ar (PowerMac) til Nintendo Gamecube videospel-konsollar
+
+
+== Forvitnelege fakta ==
+I 1949 spådde bladet Popular Mechanics (heilt korrekt) at dataprosessorar i åra som kom, ville gjennomgå store forbetringar og bli stadig mindre. Dei skreiv:
+In the future computers will probably not weigh any more than 1.5 tons.
+(I framtida vil datamaskinar truleg ikkje vega meir enn 1,5 tonn.)

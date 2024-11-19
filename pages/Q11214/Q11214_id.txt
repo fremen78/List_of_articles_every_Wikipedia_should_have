@@ -1,0 +1,201 @@
+Persamaan diferensial adalah persamaan matematika untuk fungsi satu variabel atau lebih, yang menghubungkan nilai fungsi itu sendiri dan turunannya dalam berbagai orde. Persamaan diferensial memegang peranan penting dalam rekayasa, fisika, ilmu ekonomi dan berbagai macam disiplin ilmu lain.
+
+Persamaan diferensial muncul dalam berbagai bidang sains dan teknologi, bilamana hubungan deterministik yang melibatkan besaran yang berubah secara kontinu (dimodelkan oleh fungsi matematika) dan laju perubahannya (dinyatakan sebagai turunan) diketahui atau dipostulatkan. Ini terlihat misalnya pada mekanika klasik, di mana gerakan sebuah benda diperikan oleh posisi dan kecepatannya terhadap waktu. Hukum Newton memungkinkan kita mengetahui hubungan posisi, kecepatan, percepatan dan berbagai gaya yang bertindak terhadap benda tersebut, dan menyatakannya sebagai persamaan diferensial posisi sebagai fungsi waktu. Dalam banyak kasus, persamaan diferensial ini dapat dipecahkan secara eksplisit, dan menghasilkan hukum gerak.
+Contoh pemodelan masalah dunia nyata menggunakan persamaan diferensial adalah penentuan kecepatan bola yang jatuh bebas di udara, hanya dengan memperhitungkan gravitasi dan tahanan udara. Percepatan bola tersebut ke arah tanah adalah percepatan karena gravitasi dikurangi dengan perlambatan karena gesekan udara. Mencari kecepatan sebagai fungsi waktu mensyaratkan pemecahan sebuah persamaan diferensial. Contoh lain adalah untuk simulasi gerak dinamis atau simulasi dinamis.
+
+
+== Sejarah ==
+Persamaan diferensial pertama kali eksis dengan penemuan kalkulus oleh Newton dan Leibniz. Pada bab 2 hasil karyanya tahun 1671 berjudul "Methodus fluxionum et Serierum Infinitarum", Isaac Newton menuliskan 3 macam persamaan diferensial:
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle {\frac {dy}{dx}}=f(x)}
+  
+
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+        =
+        f
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle {\frac {dy}{dx}}=f(x,y)}
+  
+
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        
+          
+            
+              ∂
+              y
+            
+            
+              ∂
+              
+                x
+                
+                  1
+                
+              
+            
+          
+        
+        +
+        
+          x
+          
+            2
+          
+        
+        
+          
+            
+              ∂
+              y
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle x_{1}{\frac {\partial y}{\partial x_{1}}}+x_{2}{\frac {\partial y}{\partial x_{2}}}=y}
+  
+
+Jacob Bernoulli mengusulkan persamaan diferensial Bernoulli tahun 1695. Hasilnya berupa persamaan diferensial biasa dalam bentuk
+
+  
+    
+      
+        
+          y
+          ′
+        
+        +
+        P
+        (
+        x
+        )
+        y
+        =
+        Q
+        (
+        x
+        )
+        
+          y
+          
+            n
+          
+        
+        
+      
+    
+    {\displaystyle y'+P(x)y=Q(x)y^{n}\,}
+  
+
+dimana pada tahun berikutnya Leibniz mendapatkan penyelesaian dengan menyederhanakannya.
+Secara historis, masalah senar bergetar seperti instrumen musik dipelajari oleh Jean le Rond d'Alembert, Leonhard Euler, Daniel Bernoulli, dan Joseph-Louis Lagrange. Tahun 1746, d’Alembert menemukan persamaan gelombang satu dimensi, dan 10 tahun kemudian Euler menemukan persamaan gelombang 3 dimensi.
+Persamaan Euler–Lagrange dikembangkan tahun 1750-an oleh Euler dan Lagrange sehubungan dengan studi mereka mengenai masalah tautokron. masalah ini adalah menentukan kurva dimana partikel berbobot akan jatuh pada titik tertentu pada waktu tertentu, tidak tergantung dari titik awal. Lagrange menyelesaikan masalah ini tahun 1755 dan mengirim penyelesaiannya ke Euler. Keduanya kemudian mengembangkan metode Lagrange dan mengaplikasikannya ke mekanika, yang akhirnya membentuk perumusan mekanika Lagrangian.
+Fourier mempublikasikan kerjanya mengenai aliran panas dalam Théorie analytique de la chaleur (Teori Analisis Panas), yang dimana didasarkan pemikirannya pada hukum pendinginan Newton, yaitu aliran panas antara 2 molekul berdekatan berbanding lurus dengan perbedaan temperatur. Termasuk di dalam buku ini adalah proposal Fourier mengenai persamaan panas untuk difusi panas konduktif. Persamaan diferensial parsial ini sekarang dipelajari oleh siswa fisika matematika.
+
+
+== Penggolongan ==
+Teori persamaan diferensial sudah cukup berkembang, dan metode yang digunakan bervariasi sesuai jenis persamaan yaitu:
+
+Persamaan diferensial biasa (PDB) adalah persamaan diferensial di mana fungsi yang tidak diketahui (variabel terikat) adalah fungsi dari variabel bebas tunggal. Dalam bentuk paling sederhana fungsi yang tidak diketahui ini adalah fungsi riil atau fungsi kompleks, namun secara umum bisa juga berupa fungsi vektor maupun matriks. Lebih jauh lagi, persamaan diferensial biasa digolongkan berdasarkan orde tertinggi dari turunan terhadap variabel terikat yang muncul dalam persamaan tersebut.
+Persamaan diferensial parsial (PDP) adalah persamaan diferensial di mana fungsi yang tidak diketahui adalah fungsi dari banyak variabel bebas, dan persamaan tersebut juga melibatkan turunan parsial. Orde persamaan didefinisikan seperti pada persamaan diferensial biasa, namun klasifikasi lebih jauh ke dalam persamaan eliptik, hiperbolik, dan parabolik, terutama untuk persamaan diferensial linear orde dua, sangatlah penting. Beberapa pesamaan diferensial parsial tidak dapat digolongkan dalam kategori-kategori tadi, dan dinamakan sebagai jenis campuran.
+Baik persamaan diferensial biasa maupun parsial dapat digolongkan sebagai linier atau nonlinier. Sebuah persamaan diferensial disebut linier apabila fungsi yang tidak diketahui dan turunannya muncul dalam pangkat satu (hasil kali tidak dibolehkan). Bila tidak memenuhi syarat ini, persamaan tersebut adalah nonlinier.
+
+
+== Perangkat lunak ==
+Ada perangkat lunak yang dapat menyelesaikan persamaan diferensial:
+
+ExpressionsBar
+Maple: dsolve
+SageMath
+Xcas: desolve(y'=k*y,y)
+
+
+== Persamaan diferensial terkenal ==
+
+
+== Lihat pula ==
+Persamaan integral
+
+
+== Referensi ==
+
+D. Zwillinger, Handbook of Differential Equations (3rd edition), Academic Press, Boston, 1997.
+A. D. Polyanin and V. F. Zaitsev, Handbook of Exact Solutions for Ordinary Differential Equations (2nd edition), Chapman & Hall/CRC Press, Boca Raton, 2003. ISBN 1-58488-297-2.
+W. Johnson, A Treatise on Ordinary and Partial Differential Equations, John Wiley and Sons, 1913, in University of Michigan Historical Math Collection
+E.L. Ince, Ordinary Differential Equations, Dover Publications, 1956
+E.A. Coddington and N. Levinson, Theory of Ordinary Differential Equations, McGraw-Hill, 1955
+P. Blanchard, R.L. Devaney, G.R. Hall, Differential Equations, Thompson, 2006
+
+
+== Pranala luar ==
+Lectures on Differential Equations Diarsipkan 2009-09-17 di Wayback Machine. MIT Open CourseWare Video
+Online Notes / Differential Equations Paul Dawkins, Lamar University
+Differential Equations, S.O.S. Mathematics
+Introduction to modeling via differential equations Diarsipkan 2009-08-01 di Wayback Machine. Pengantar terhadap pemodelan menggunakan persamaan diferensial.
+Differential Equation Solver Diarsipkan 2016-09-27 di Wayback Machine. Applet Java untuk memecahkan persamaan diferensial.
+Mathematical Assistant on Web Symbolic ODE tool, using Maxima
+Exact Solutions of Ordinary Differential Equations
+A bibliography of books about differential equations, dari Mathematical Association of America
+Collection of ODE and DAE models of physical systems model MATLAB
+Notes on Diffy Qs: Differential Equations for Engineers Buku ajar pengantar persamaan diferensial oleh Jiri Lebl of UIUC

@@ -1,0 +1,170 @@
+Matematisk analyse (eller berre analyse) er eit av hovudområda i matematikken og omfattar i den vidaste forstanden heile den matematiske utviklinga som har utgangspunktet i oppdaginga til Isaac Newton og Gottfried Wilhelm Leibniz av differensial- og integralrekninga mot slutten av 1600-talet. Sidan den gong har det voks fram fleire meir eller mindre fråskilde felt innanfor matematisk analyse. Desse omfattar mellom andre uendelege rekkjer, variasjonsrekning, differensiallikningar, Fourieranalyse, kompleks analyse, vektor- og tensoranalyse, mål- og integrasjonsteori og funksjonalanalyse.
+
+
+== Historia til analysen ==
+Historikarar reknar med at matematisk analyse har røtene sine heilt tilbake til matematikarane i den greske antikken. Den hellenistiske matematikaren Eudoxos hadde blant anna ein metode for å rekne ut areal av flater og volum av lekamar, som blir rekna som ein tidleg forløpar for integrasjon. Arkimedes utvikla desse ideane vidare til ein heuristikk som minner om integralrekning. Etter Arkimedes skjedde ikkje noko viktig med utviklinga av analysen på nærare 500 år.
+I 499 brukte den indiske matematikaren og astronomen Aryabhata infinitesimalar, og han uttrykte òg eit astronomisk problem som ei differensiallikning. Denne differensiallikninga vart utvikla vidare i ein kommentar av Manjula på 900-talet, og til slutt leia denne differensiallikninga Bhaskara til å utvikle ei rekkje grunnleggjande idear i matematisk analyse på 1100-talet. Bhaskara var òg den første som definerte den deriverte som ein grenseverdi.
+Sjølv om den matematiske analysen altså har røtene sine heilt tilbake i oldtida, er det først på midten av 1600-talet at dei meir generelle teknikkane knytte til grenser og infinitesimalar dukkar opp. Då Fermat og Descartes grunnla den analytiske geometrien i 1637 fekk ein òg eit verktøy for å gjere meir omfattande utrekningar for generelle kurvar. Desse oppdagingane leia både Fermat og Descartes til å utvikle reknemetodar for å studere maksimalverdiar og tangentar.
+I åra etter var det fleire som jobba med problem knytte til tangentar, men fullstendige derivasjonsteoriar slik vi kjenner dei i dag vart først utvikla av Isaac Newton og Gottfried Wilhelm Leibniz. Dei to oppdaga òg samanhengen mellom integrasjon og derivasjon, og dei gjorde sine oppdaginga uavhengig av kvarandre og omtrent samstundes. Begge blir rekna som grunnleggjarar av den matematiske analysen.
+
+
+== Derivasjon ==
+
+Den deriverte gjev den momentane endringa til ein funksjon (f(x)) per endring av funksjonsargumentet (x). For reelle funksjonar av ein variabel blir kalla dette verdien for stigningstalet til funksjonen. Stigningstalet er definert som stigninga til tangenten til funksjonen i punktet og kan estimerast ved hjelp av sekantar. Ein viktig spurnad knytt til om ein funksjon er deriverbar eller ikkje er om han er kontinuerleg overalt. Ikkje alle funksjonar er deriverbare overalt. Til dømes kan ein funksjon vere diskontinuerleg eller ha ein loddrett tangent i eit punkt, og då vil den deriverte vere udefinert for dette punktet.
+Dersom vi har ein funksjon f som kan definerast i ein omegn omkring punktet x, seier vi at f er deriverbar i x dersom følgjande grenseverdi eksisterer:
+
+  
+    
+      
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              +
+              h
+              )
+              −
+              f
+              (
+              x
+              )
+            
+            h
+          
+        
+      
+    
+    {\displaystyle \lim _{h\rightarrow 0}{\frac {f(x+h)-f(x)}{h}}}
+  
+
+Her er h avstanden mellom punktet x og eit anna punkt som vi vil ha nærmast mogleg x,  ved å senke h mot 0. Vi skriv det slik:
+
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              +
+              h
+              )
+              −
+              f
+              (
+              x
+              )
+            
+            h
+          
+        
+      
+    
+    {\displaystyle f'(x)=\lim _{h\rightarrow 0}{\frac {f(x+h)-f(x)}{h}}}
+  
+
+og vi kallar denne storleiken for den deriverte til f i punktet x.
+Derivasjon er eit sentralt emne i matematisk analyse, og det blir mykje brukt i samband med kurvedrøfting. Ved hjelp av ulike teknikkar knytte til derivasjon, kan vi blant anna finne maksimums- og minimumspunkt for kurvar. Vi skil mellom globalt maksimum og minimum, som er absolutte maksimums- og minimumspunkt på ein kurve, og lokale maksimum og minimum. Andre eigenskapar ved kurvar som vi kan analysere ved hjelp av derivasjon er i kva grad ei kurve er konveks eller konkav innanfor eit bestemt intervall, og vi kan òg bruke derivasjon til å avgjere eventuelle asymptoter til ein kurve.
+
+
+== Integrasjon ==
+
+Heilt frå ganske tidleg i historia til menneskja har det knytte seg interesse i å finne storleiken til ulike geometriske objekt. Så lenge figurane har rette kantar og flatar kan slike problem løysast ganske lett, men når kantar og flater er krumme blir problema straks mykje vanskelegare. Integrasjon kan blant anna brukast til å gjere utrekningar av areal og volum.
+Prosessen for å finne integralet kallast integrasjon, og i den enklaste forma si dreier det seg om å derivere baklengs. Nokre funksjonar er så uregelmessige at det ikkje er mogleg å definere arealet under grafen ved hjelp av integrasjonsteknikkar, men det finst òg ulike tilnærmingsteknikkar for å finne integralet til slike funksjonar. Ei setning i analysen seier at kvar og ein monoton funksjon er integrerbar.
+
+
+=== Analysen sitt fundamentalteorem ===
+Den grunnleggjande oppdaginga til Newton og Leibniz var at integrasjon og derivasjon var omvende rekningsartar. Dermed kunne ein løyse integrasjonsoppgåver ved å finne den antideriverte, i staden for å bruke arbeidskrevjande summasjonar, slik ein hadde gjort tidlegare. Det teoretiske grunnlaget for denne metoden finn vi i det som blir kalla analysen sitt fundamentalteorem.
+Kort fortalt går dette teoremet ut på at dersom funksjonen 
+  
+    
+      
+        f
+        :
+        [
+        a
+        ,
+        b
+        ]
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle f:[a,b]\rightarrow \mathbb {R} }
+  
+ er kontinuerleg, så er f integrerbar på eit kvart intervall innanfor dette området (frå  og med a, til og med b). Då er følgjande funksjon deriverbar:
+
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            a
+          
+          
+            x
+          
+        
+        f
+        (
+        t
+        )
+        
+        d
+        t
+      
+    
+    {\displaystyle F(x)=\int _{a}^{x}f(t)\,dt}
+  
+
+Og den deriverte til funksjonen F(x) blir då lik f(x).
+
+
+== Kjelder ==
+
+
+== Bakgrunnsstoff ==
+Animasjonar knytte til derivasjon og integrasjon Arkivert 2006-12-15 ved Wayback Machine.
+Bruk av derivasjon
+Litt om numerisk integrasjon og derivasjon, av Knut Mørken (UiO)
+Bøker på nettet (engelsk)
+
+Calculus av Gilbert Strang. (Publisert i 1991 av Wellesley-Cambridge Press)
+Calculus (pdf) av Benjamin Crowell
+Understanding Calculus av Faraz Hussain

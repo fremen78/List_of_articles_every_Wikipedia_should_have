@@ -1,0 +1,640 @@
+Mekanika klasike (që zakonisht ngatërrohet me mekaniken Njutoniane, e cila është një nën-fushe e saj) është një term që përdoret për të përshkruar lëvizjen e objekteve makroskopike, që nga lëvizja e projektileve (ose lëvizja e predhave) deri të pjesët e makinerive, si dhe gjithashtu për përshkrimin e objekteve astronomike, si sondat kozmike, planetet, yjet, dhe galaktikat. Përvec faktit që ajo jep rezultate shumë të sakta në këto fusha, duhet theksuar se ajo është një nga degët më të lashta dhe më të mëdha në shkencë dhe teknologji.
+Brenda kësaj fushe shumë degë specializimi ekzistojnë të cilat merren me gazet, lëngjet, dhe trupat e ngurte. Mekanika klasike përforcohet nga teoria speciale e relativitetit për objekte që lëvizin me shpejtësi të madhe, që afrohet me shpejtësinë e dritës. Për më tepër, teoria e përgjithshme e relativitetit aplikohet në ato raste kur duhet një trajtim më rigoroz i gravitacionit në një shkallë më të rafinuar. Duhet theksuar se teoritë e relativitetit ndyshe nga perceptimi i zakonshëm janë teori klasike (pra nuk marrin parasysh efektet kuantike).
+Në fizikë, mekanika klasike është një nga dy nën-fushat kryesore në studimin e shkencës së mekanikës, e cila merret me bashkësinë e ligjeve fizike që përshkruajnë matematikisht lëvizjen e trupave dhe bashkësive të trupave. Dega tjetër është mekanika kuantike.
+
+Stadi fillestar i zhvillimit të mekanikës klasike njihet si Mekanika njutoniane, e cila lidhet me konceptet fizike dhe metodat matematike që u shpikën dhe u përdoren nga vetë Njutoni, si dhe paralelisht nga Lajbnici, dhe të tjerë. Kjo jepet më poshtë me më shumë detaje. Metodat më abstrakte dhe më të përgjithshme jepen nga mekanika e Lagranzhit dhe mekanika e Hamiltonit. Pothuajse shumica e materialeve të mekanikës klasike u formuan gjatë shekujve të XVIII dhe XIX, këto punime zgjerojnë (në veçanti persa i përket metodave analitike) punën e filluar nga Njutoni.
+
+
+== Përshkrimi i teorisë ==
+
+Seksioni i mposhtëm paraqet konceptet bazë në mekanikën klasike. Për thjeshtësi, objektet në realitet modelohen si pika lëndore, pra objekte me mase të neglizhueshme. Lëvizja e një pikë lëndore karakterizohet nga një numër i vogël parametrash: Pozicioni, masa, si dhe forca që aplikohet mbi të. Secila nga këto parametra do të diskutohet më poshtë.
+Në realitet, tipat e objekteve që diskutohen në mekanikën klasike gjithmonë kanë një mase jo-zero. (Fizika e thërrmijave shumë të vogla si elektroni, përshkruhet me sakte nga mekanika kuantike). Objektet që kanë masë sillën në një mënyre më të komplikuar se pikat lëndore hipotetike, sepse përveç gradave të lirisë— për shembull, një top bejsbolli mund të rrotullohet gjate kohës që ai lëviz. Megjithatë, rezultatet për pikat lëndore mund të përdoren për studimin e objekteve duke i trajtuar këta të fundit si trupa të përbërë, të formuar nga një numër i madh pikash lëndore. Qendra e masës e një objekti të përbërë sillet si një pikë lëndore.
+
+
+=== Zhvendosja dhe derivatet e saj ===
+
+Zhvendosja, ose pozicioni, i një pike lëndore përcaktohen në lidhje me një pike reference të fiksuar, O, e cila ndodhet në hapësire, dhe zakonisht është e shoqëruar nga një sistem koordinativ, me pikën e referencës të lokalizuar në qendër të sistemit koordinativ. Ajo përcaktohet si vektori r nga O tek pika lëndore. Në përgjithësi, pika lëndore mund të mos jetë në prehje në lidhje me O, kështu që r është një funksion i t, kohës që ka kaluar që nga një moment fillestar arbitrar. Në relativitetin para Ajnshtajnit (të njohur si Relativiteti i Galileut), koha konsiderohet absolute, pra, intervali kohor midis dy ngjarjeve është i njëjtë për të gjithë vëzhguesit. Përveç faktit që mekanika klasike mbështetet në konceptin e kohës absolute, ajo gjithashtu hipotezon se struktura e hapësirë-kohës ka një gjeometri Euklidiane.
+
+
+==== Shpejtësia vektoriale dhe shpejtësia ====
+Shpejtësia, ose shpejtësia e ndryshimit të pozicionit me kohën, përcaktohet si derivati i pozicionit në lidhje me kohën ose
+
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        
+          
+            
+              
+                d
+              
+              
+                
+                  
+                    r
+                    →
+                  
+                
+              
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {v}}={\mathrm {d} {\vec {r}} \over \mathrm {d} t}\,\!}
+  
+.
+Në mekanikën klasike, shpejtësitë mund të mblidhen ose zbriten direkt. Për shembull, nëse një makine udhëton drejt lindjes me 60 km/h duke kaluar një makine që udhëton po drejt lindjes me 50 km/h, atëherë nga perspektiva e makinës më të ngadalshme, makina më e shpejte lëviz drejt lindjes me 60 − 50 = 10 km/h. Kurse nga perspektive e makinës më të shpejte, makina më e ngadalshme lëviz 10 km/h drejt perëndimit. Shpejtësitë mund të mblidhen direkte sipas rregullave të mbledhjes së vektorëve; ato analizohen në baze të analizës vektoriale.
+Matematikisht, nëse shpejtësia e objektit të parë në diskutimin e më sipërm jepet nga një vektor 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        =
+        u
+        
+          
+            
+              d
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {u}}=u{\vec {d}}}
+  
+ dhe ajo e objektit të dyte nga një vektor 
+  
+    
+      
+        
+          
+            
+              v
+              →
+            
+          
+        
+        =
+        v
+        
+          
+            
+              e
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {v}}=v{\vec {e}}}
+  
+ ku 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  
+ është shpejtësia skalare e objektit të parë, 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+ është shpejtësia skalare e objektit të dytë, dhe 
+  
+    
+      
+        
+          
+            
+              d
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {d}}}
+  
+ dhe 
+  
+    
+      
+        
+          
+            
+              e
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {e}}}
+  
+ janë vektoret njesi në drejtimin e lëvizjes të çdo grimce respektivisht. Atëherë, shpejtësi e objektit të parë siç shikohet nga i dyti është:
+
+  
+    
+      
+        
+          
+            
+              
+                u
+                ′
+              
+              →
+            
+          
+        
+        =
+        
+          
+            
+              u
+              →
+            
+          
+        
+        −
+        
+          
+            
+              v
+              →
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {u'}}={\vec {u}}-{\vec {v}}\,\!}
+  
+
+Në mënyre të njëjte:
+
+  
+    
+      
+        
+          
+            
+              
+                v
+                ′
+              
+              →
+            
+          
+        
+        =
+        
+          
+            
+              v
+              →
+            
+          
+        
+        −
+        
+          
+            
+              u
+              →
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {v'}}={\vec {v}}-{\vec {u}}\,\!}
+  
+
+Kur të dyja objektet lëvizin në drejtim të njëjtë, ekuacioni thjeshtohet në:
+
+  
+    
+      
+        
+          
+            
+              
+                u
+                ′
+              
+              →
+            
+          
+        
+        =
+        (
+        u
+        −
+        v
+        )
+        
+          
+            
+              d
+              →
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\vec {u'}}=(u-v){\vec {d}}\,\!}
+  
+
+Ose, duke duke mos e marrë parasysh drejtimin, diferenca mund të jepet vetëm në terma të shpejtësisë skalare :
+
+  
+    
+      
+        
+          u
+          ′
+        
+        =
+        u
+        −
+        v
+        
+        
+      
+    
+    {\displaystyle u'=u-v\,\!}
+  
+
+
+==== Nxitimi ====
+Lëvizjet njëtrajtësisht të ndryshueshme karakterizohen me ndryshimin e njëtrajtshëm të shpejtësisë në intervale të njëjta kohore. Madhësia e këtillë quhet nxitim ose akceleracion dhe shënohet me simbolin a. Nxitimi i lëvizjes njëtrajtësisht të ndryshuar matet me ndryshimin e shpejtësisë në intervale të caktuara kohore. Nga kjo rrjedhë se, nëse dihet ndryshimi i shpejtësisë te lëvizjet e ndryshueshme në intervale të caktuara kohore, mund të përcaktohet nxitimi.
+
+
+==== Këndet e referencës ====
+
+
+=== Forcat ===
+
+
+==== Ligji i dytë i Njutonit ====
+Nxitimi I nje trupi eshte ne perpjestim te zhdrejte me masen e tij , dhe ne perpjestim te drejte me rezultanten e forcave te jashtme qe veprojne mbi te . F=m*a
+
+
+=== Energjia ===
+
+
+=== Përtej ligjeve të Njutonit ===
+
+
+=== Transformimet klasike ===
+Merrni në konsiderate dy sisteme reference S dhe S. Për vëzhguesit në seicilen nga këto kënde referencash një ngjarje në hapësirë-kohë ka koordinata (x,y,z,t) në këndin S dhe (x,y,z,t) në këndin S'. Duke marre parasysh se koha matet në mënyre të njëjte në të dyja këndet e referencës, dhe neqoftese vendosim kushtin që x = x kur t = 0, atëherë lidhja mes koordinatave të hapësirë-kohës te një ngjarjeje të njëjte të vëzhguar nga këndi i referencës S dhe S, të cilat lëvizin me një shpejtësi relative u në drejtimin x është:
+
+x' = x - ut
+y' = y
+z' = z
+t' = t
+Kjo bashkësi relacionesh përcakton një grup transformimi që njihen si transformimet galeliane (në mënyre informale, transformimet e Galileit). Ky grup është rasti limit i grupit të Poinkares që përdoret në relativitetin special. Rasti limit zbatohet vetëm kur shpejtësitë u janë shumë të vogla në krahasim me shpejtësinë e dritës c.
+Për disa probleme, është më e natyrshme që të përdorim koordinata rrethore (kënde referencë). Në këtë rast duhet që të shtojmë një forcë fiktive centrifugale si dhe forcën e Koriolisit.
+
+
+== Limiti i aplikimit të mekanikës klasike ==
+ Shumë fusha të mekanikës klasike janë simplifikime ose thjeshtësime të teorive më komplekse; dy nga më të saktat janë relativiteti i përgjithshëm dhe statistika mekanike relativiste. Optika gjeometrike është një përafrim i teorisë kuantike të dritës, e cila nuk ka një formë "klasike".
+
+
+=== Përafrimi njutonian i relativitetit special ===
+Momenti njutonian, ose momenti klasik jo-relativist
+
+  
+    
+      
+        p
+        =
+        
+          m
+          
+            0
+          
+        
+        v
+      
+    
+    {\displaystyle p=m_{0}v}
+  
+
+është si rrjedhoje e një përafrimi Taylor të rendit të parë të formës relativiste: 
+
+  
+    
+      
+        p
+        =
+        
+          
+            
+              
+                m
+                
+                  0
+                
+              
+              v
+            
+            
+              1
+              −
+              
+                v
+                
+                  2
+                
+              
+              
+                /
+              
+              
+                c
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          m
+          
+            0
+          
+        
+        v
+        
+          (
+          
+            1
+            +
+            
+              
+                1
+                2
+              
+            
+            
+              
+                
+                  v
+                  
+                    2
+                  
+                
+                
+                  c
+                  
+                    2
+                  
+                
+              
+            
+            +
+            .
+            .
+            .
+          
+          )
+        
+      
+    
+    {\displaystyle p={\frac {m_{0}v}{\sqrt {1-v^{2}/c^{2}}}}=m_{0}v\left(1+{\frac {1}{2}}{\frac {v^{2}}{c^{2}}}+...\right)}
+  
+
+kur zgjerohet rreth
+
+  
+    
+      
+        
+          
+            v
+            c
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {v}{c}}=0}
+  
+
+kështu që ajo është e vlefshme vetëm kur shpejtësia është shumë më e vogël se shpejtësia e dritës. Nga pikëpamja kuantitative, ky përafrim është shumë i mirë deri kur kushti i mposhtem plotësohet 
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                v
+                c
+              
+            
+            )
+          
+          
+            2
+          
+        
+        <<
+        1
+      
+    
+    {\displaystyle \left({\frac {v}{c}}\right)^{2}<<1}
+  
+
+Për shembull, frekuenca relativiste e ciklotronit, xhirotronit, ose e një magnetroni me voltazh të larte jepet nga  
+  
+    
+      
+        f
+        =
+        
+          f
+          
+            c
+          
+        
+        
+          
+            
+              m
+              
+                0
+              
+            
+            
+              
+                m
+                
+                  0
+                
+              
+              +
+              T
+              
+                /
+              
+              
+                c
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle f=f_{c}{\frac {m_{0}}{m_{0}+T/c^{2}}}}
+  
+, ku
+
+  
+    
+      
+        
+          f
+          
+            c
+          
+        
+      
+    
+    {\displaystyle f_{c}}
+  
+ është frekuenca klasike e elektronit (ose e një thërrmije tjetër të ngarkuar) me energji kinetike 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+  
+ dhe mase (prehjeje) 
+  
+    
+      
+        
+          m
+          
+            0
+          
+        
+      
+    
+    {\displaystyle m_{0}}
+  
+ që sillet rreth nj fushe magnetike.  
+Masa e prejes e një elektroni është 511 keV.  
+Kështu që korrektimi i frekuencës është rreth 1 % për një tub magnetic vacuumi me një voltazh përshpejtues 5.11 kV nën një korrent direkt.
+
+
+=== Përafrimi klasik i mekanikës kuantike ===
+Përafrimi rrezor i mekanikës klasike nuk është më i vlefshëm kur gjatësia e valës së de Brojlit nuk është shumë më e vogël se dimensionet e tjera të sistemit. Për një thërrmije jo-relativiste, kjo gjatësi vale është
+
+  
+    
+      
+        λ
+        =
+        
+          
+            h
+            p
+          
+        
+      
+    
+    {\displaystyle \lambda ={\frac {h}{p}}}
+  
+
+ku h është konstantja e Plankut dhe p është momenti.
+Kjo ndodh edhe me elektronet para se të mdoshi me grimacat më të renda.  Për shembull, elektronet e përdorura nga Klinton Davison dhe Lester Germer në 1927, të përshpejtuara nga 54 volt, kishin një gjatësi vale prej 0.167 nm, e cila ishte mjaft e gjatë për të shfaqur difraksionin e një këndi të vetëm ku u u reflektua nga faqja e një kristali të nikelit me një hapësirë atomike prej 0.215 nm.
+Me një dhome vakumi më të madhe, do të ishte më e thjeshte të rritnim rezolucionin këndor nga një radian deri në një milliradian dhe të shikonim difraksionin kuantik në qarqet e integruara të memories së kompjuterit.
+Shembuj më praktike të dështimit të mekanikes klasike në shkallen inxhinierike janë përcjellja nga efekti tunel kuantik në diodat tunel dhe dyert e transistorit në qarqet e integruara.
+Mekanika klasike është i njëjti përafrim i frekuencave të larta si optika gjeometrike. Ajo jep rezultate të sakta sepse përshkruan thërrmija dhe trupa me mase prehjeje. Këto trupa kanë moment, dhe si rrjedhim një valë De Brojli shumë më të shkurtër se thërrmija pa mase prehjeje si drita, në të njëjtat shkallë të energjisë kinetike.
+
+
+== Referime ==
+
+
+== Bibliografia ==
+Feynman, Richard (1996). Six Easy Pieces. Perseus Publishing. ISBN 0-201-40825-2. {{cite book}}: Mungon ose është bosh parametri |language= (Ndihmë!)
+Feynman, Richard; Phillips, Richard (1998). Six Easy Pieces. Perseus Publishing. ISBN 0-201-32841-0. {{cite book}}: Mungon ose është bosh parametri |language= (Ndihmë!)Mirëmbajtja CS1: Emra të shumëfishtë: lista e autorëve (lidhja)
+Feynman, Richard (1999). Lectures on Physics. Perseus Publishing. ISBN 0-7382-0092-1. {{cite book}}: Mungon ose është bosh parametri |language= (Ndihmë!)
+Landau, L. D.; Lifshitz, E. M. (1972). Mechanics  Course of Theoretical Physics , Vol. 1. Franklin Book Company, Inc. ISBN 0-08-016739-X. {{cite book}}: Mungon ose është bosh parametri |language= (Ndihmë!)Mirëmbajtja CS1: Emra të shumëfishtë: lista e autorëve (lidhja)
+Kleppner, D. and Kolenkow, R. J., An Introduction to Mechanics, McGraw-Hill (1973). ISBN 0-07-035048-5
+Gerald Jay Sussman dhe Jack Wisdom, Structure and Interpretation of Classical Mechanics, MIT Press (2001). ISBN 0-262-19455-4}
+Herbert Goldstein, Charles P. Poole, John L. Safko, Classical Mechanics (3rd Edition), Addison Wesley; ISBN 0-201-65702-3
+Robert Martin Eisberg, Fundamentals of Modern Physics, John Wiley and Sons, 1961
+M. Alonso, J. Finn, "Fundamental university physics", Addison-Wesley
+
+
+== Shikoni gjithashtu ==
+Ligjet e Njutonit
+Teorema e Helmholcit
+Teoria speciale e relativitetit
+
+
+=== Degët ===
+
+
+== Lidhje të jashtme ==
+Binney, James. Classical Mechanics (Lagrangian and Hamiltonian formalisms)
+Crowell, Benjamin. Newtonian Physics Arkivuar 25 prill 2011 tek Wayback Machine (an introductory text, uses algebra with optional sections involving calculus)
+Fitzpatrick, Richard. Classical Mechanics (uses calculus)
+Hoiland, Paul (2004). Preferred Frames of Reference & Relativity
+Horbatsch, Marko, "Classical Mechanics Course Notes".
+Rosu, Haret C., "Classical Mechanics". Physics Education. 1999. [arxiv.org : physics/9909035]
+Schiller, Christoph. Motion Mountain (an introductory text, uses some calculus; see also Motion Mountain)
+Sussman, Gerald Jay & Wisdom, Jack & Mayer,Meinhard E. (2001). Structure and Interpretation of Classical Mechanics
+Tong, David. Classical Dynamics (Cambridge lecture notes on Lagrangian and Hamiltonian formalism)

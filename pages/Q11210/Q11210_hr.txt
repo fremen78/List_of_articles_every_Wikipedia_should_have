@@ -1,0 +1,429 @@
+Koordinatni sustav je sustav koji omogućuje da se točke na krivulji, pravcu, plohi, u ravnini ili prostoru opišu s pomoću brojeva, takozvanim koordinatama. U matematici i drugim područjima postoji više različitih koordinatnih sustava:
+
+brojevni pravac,
+Kartezijev ili pravokutni koordinatni sustav,
+polarni koordinatni sustav,
+cilindrični koordinatni sustav,
+sferni koordinatni sustav,
+zemljopisne koordinate,
+nebeski koordinatni sustavi.
+
+
+== Povijest ==
+Određivanje položaja s pomoću koordinata bilo je poznato već staroegipatskim graditeljima i babilonskim astronomima. Kartezijev koordinatni sustav uveo je René Descartes (latinizirano Renatus Cartesius). Descartesovo otkriće omogućilo je da se mnoga geometrijska tijela sustavno proučavaju znatno jačim metodama analitičke geometrije, algebre i analize; tako se na primjer krivulje proučavaju s pomoću jednadžbi koje zadovoljavaju koordinate njihovih točaka. Još je značajnije to što je u novije doba veza geometrije, algebre i analize omogućila da geometrijski zor, a time i mnogo plodnija intuicija, budu iskorišteni u rješavanju problema algebre i analize. Zato je Kartezijev koordinatni sustav temelj razvoja i uspjeha moderne linearne algebre (vektorski prostor), a zatim i mnogih njezinih nadgradnja (funkcionalne analize, diferencijalne geometrije, algebarske geometrije).
+
+
+== Podjela ==
+
+
+=== Brojevni pravac ===
+
+Brojevni pravac je pravac na kojem je svakomu realnom broju (realni brojevi obuhvaćaju i racionalne i iracionalne broje) pridružena jedna jedina točka. Brojevni pravac služi za predočivanje brojeva i grafičko računanje njima. Na pravcu se najprije odabere točka O (lat. origo: ishodište), koja predočuje nulu, a zatim jedinična točka 1. Dužina od O do 1 predočuje jediničnu duljinu. Točkama na desnoj strani od O odgovaraju pozitivni realni brojevi, a na lijevoj strani negativni. Bilo kojemu realnom broju x odgovara točka x, tako da je dužina Ox (mjerena jediničnom duljinom) jednaka x jediničnih duljina. Između bilo koja dva realna broja postoji beskonačno mnogo racionalnih brojeva i iracionalnih brojeva.
+
+
+=== Kartezijev koordinatni sustav ===
+
+U ravnini je pravokutni Kartezijev koordinatni sustav određen s dva međusobno okomita pravca x i y na kojima su zadani Kartezijevi koordinatni sustavi, ishodišta kojih su u točki presjecišta pravaca x i y. Točki T ravnine pridružuju se dvije koordinate, apscisa i ordinata. Apscisa točke T koordinata je okomite projekcije te točke na pravac x, a ordinata je koordinata okomite projekcije te točke na pravac y. Na taj način svakoj je točki pridružen uređen par realnih brojeva (x, y). Pravci x i y nazivaju se koordinatne osi, a pravci njima paralelni koordinatne linije.
+
+
+==== Pravokutni koordinatni sustav ====
+Pravokutni koordinatni sustav ili pravokutni Kartezijev koordinatni sustav u prostoru određen je trima međusobno okomitim pravcima x, y, z, koji se sijeku u ishodištu O, i s Kartezijevim koordinatnim sustavima na njima. Koordinate se tada zovu apscisa (na osi x), ordinata (na osi y) i aplikata (na osi z). Na taj način svakoj su točki u prostoru pridružena 3 realna broja (x, y, z).
+
+
+==== Kosokutni koordinatni sustav ====
+Kosokutni koordinatni sustav ili kosokutni Kartezijev koordinatni sustav određen je pravcima koji nisu međusobno okomiti, kojemu koordinatne osi nisu međusobno okomite, a umjesto okomitih projekcija pojavljuju se kose projekcije. Katkad ga je prikladno koristiti umjesto pravokutnoga, na primjer u teoriji kristala.
+
+
+=== Polarni koordinatni sustav ===
+Polarni koordinatni sustav je koordinatni sustav u ravnini i određen je ishodištem O i zrakom p s početkom u ishodištu (polarna os) i jediničnom točkom E. Točki T ravnine pripadaju tada njezine polarne koordinate: jedna je radijalna koordinata r = OT, a druga je amplituda φ, koja je mjerni broj kuta što ga zatvara zraka p sa zrakom kojoj je početak u ishodištu i koja prolazi kroz T. 
+Prijelaz iz Kartezijevih koordinata u ravnini u polarne koordinate u ravnini računa se prema jednadžbama: 
+
+  
+    
+      
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle r={\sqrt {x^{2}+y^{2}}}\quad }
+  
+
+  
+    
+      
+        φ
+        =
+        arctan
+        ⁡
+        
+          (
+          
+            
+              y
+              x
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi =\arctan \left({\frac {y}{x}}\right)}
+  
+
+a prijelaz iz polarnih u Kartezijeve koordinate prema jednadžbama: 
+
+  
+    
+      
+        x
+        =
+        r
+        ⋅
+        cos
+        ⁡
+        φ
+      
+    
+    {\displaystyle x=r\cdot \cos \varphi }
+  
+
+  
+    
+      
+        y
+        =
+        r
+        ⋅
+        sin
+        ⁡
+        φ
+      
+    
+    {\displaystyle y=r\cdot \sin \varphi }
+  
+
+Bipolarni koordinatni sustav u ravnini sadrži dva pola.
+
+
+=== Cilindrični koordinatni sustav ===
+Cilindrični koordinatni sustav je koordinatni sustav u prostoru i određen je ishodištem O, zrakom p s početkom u ishodištu i pravcem z koji je okomit na zraku p i prolazi kroz ishodište. Nekoj točki P pridružuju se koordinate (ρ, φ, z) gdje je ρ udaljenost okomita na pravac z od točke P do ishodišta, φ je kut koji projekcija vektora OP zatvara na ravninu u kojoj se nalazi zraka p sa zrakom p, a z udaljenost paralelna na os z od točke P do ishodišta.
+Prijelaz iz Kartezijevih u cilindrične koordinate u prostoru računa se prema jednadžbama: 
+
+  
+    
+      
+        ρ
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle \rho ={\sqrt {x^{2}+y^{2}}}\quad }
+  
+
+  
+    
+      
+        φ
+        =
+        arctan
+        ⁡
+        
+          (
+          
+            
+              y
+              x
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi =\arctan \left({\frac {y}{x}}\right)}
+  
+
+  
+    
+      
+        z
+        =
+        z
+      
+    
+    {\displaystyle z=z}
+  
+
+a prijelaz iz cilindričnih u Kartezijeve koordinate prema jednadžbama: 
+
+  
+    
+      
+        x
+        =
+        ρ
+        ⋅
+        cos
+        ⁡
+        φ
+      
+    
+    {\displaystyle x=\rho \cdot \cos \varphi }
+  
+
+  
+    
+      
+        y
+        =
+        ρ
+        ⋅
+        sin
+        ⁡
+        φ
+      
+    
+    {\displaystyle y=\rho \cdot \sin \varphi }
+  
+
+  
+    
+      
+        z
+        =
+        z
+      
+    
+    {\displaystyle z=z}
+  
+
+
+=== Sferni koordinatni sustav ===
+Sferni koordinatni sustav određen je ishodištem O i međusobno okomitim polupravcima p i z. Nekoj točki P pridružuju se koordinate (r, φ, θ) gdje je r koordinata jednaka udaljenosti od ishodišta do točke P, koordinata φ kut je od projekcije vektora OP na ravninu okomitu na poluos z i koordinatu θ, θ je kut koji vektor OP zatvara s poluosi z. Sve su točke prostora jednoznačno određene kad su vrijednosti sfernih koordinata ograničene: 0 < ρ < ∞, –π < φ < π, 0 < θ < π.
+Prijelaz iz Kartezijevih u sferne koordinate u prostoru računa se prema jednadžbama: 
+
+  
+    
+      
+        
+          
+            
+              
+                r
+              
+              
+                
+                =
+                
+                  
+                    
+                      x
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      y
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      z
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            
+              
+                θ
+              
+              
+                
+                =
+                arccos
+                ⁡
+                
+                  
+                    z
+                    
+                      
+                        x
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        y
+                        
+                          2
+                        
+                      
+                      +
+                      
+                        z
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                =
+                arccos
+                ⁡
+                
+                  
+                    z
+                    r
+                  
+                
+              
+            
+            
+              
+                φ
+              
+              
+                
+                =
+                arctan
+                ⁡
+                
+                  
+                    y
+                    x
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}r&={\sqrt {x^{2}+y^{2}+z^{2}}}\\\theta &=\arccos {\frac {z}{\sqrt {x^{2}+y^{2}+z^{2}}}}=\arccos {\frac {z}{r}}\\\varphi &=\arctan {\frac {y}{x}}\end{aligned}}}
+  
+
+a prijelaz iz sfernih u Kartezijeve koordinate prema jednadžbama: 
+
+  
+    
+      
+        
+          
+            
+              
+                x
+              
+              
+                
+                =
+                r
+                ⋅
+                sin
+                ⁡
+                θ
+                ⋅
+                cos
+                ⁡
+                φ
+              
+            
+            
+              
+                y
+              
+              
+                
+                =
+                r
+                ⋅
+                sin
+                ⁡
+                θ
+                ⋅
+                sin
+                ⁡
+                φ
+              
+            
+            
+              
+                z
+              
+              
+                
+                =
+                r
+                ⋅
+                cos
+                ⁡
+                θ
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}x&=r\cdot \sin \theta \cdot \cos \varphi \\y&=r\cdot \sin \theta \cdot \sin \varphi \\z&=r\cdot \cos \theta \end{aligned}}}
+  
+
+
+== Zemljopisne koordinate ==
+
+U geodeziji i kartografiji položaj točke na Zemljinoj plohi često se određuje zemljopisnim koordinatama. Za istu se namjenu katkad koristi i pravokutni koordinatni sustav na sferi, u kojem se za apscisu, umjesto pravca, najčešće uzima meridijan promatranoga područja. Za ishodište koordinatnoga sustava odabire se točka na meridijanu, obično u središtu promatranoga područja. Apscisa neke točke udaljenost je mjerena uzduž meridijana, od ishodišta do presjeka s velikom kružnicom (presjecište kugline plohe s ravninom koja prolazi njezinim središtem) koja prolazi danom točkom i okomita je na meridijan. Duljina luka te okomice ujedno je i ordinata točke.
+
+
+== Nebeski koordinatni sustavi ==
+
+Nebeski koordinatni sustavi su sferni koordinatni sustavi u kojem je položaj nebeskog tijela određen dvjema koordinatama definiranog sfernog koordinatnog sustava. U astronomiji razlikujemo 5 nebeskih koordinatnih sustava:
+
+horizontski (azimutski) koordinatni sustav
+mjesni ekvatorski koordinatni sustav
+nebeski ekvatorski koordinatni sustav
+ekliptički koordinatni sustav
+galaktički koordinatni sustav
+
+
+== Izvori ==

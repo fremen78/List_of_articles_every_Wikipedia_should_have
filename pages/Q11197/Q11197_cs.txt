@@ -1,0 +1,1782 @@
+Logaritmus kladného reálného čísla 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ při základu 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ (
+  
+    
+      
+        a
+        ∈
+        
+          
+            R
+          
+          
+            +
+          
+        
+        ∖
+        {
+        1
+        }
+      
+    
+    {\displaystyle a\in \mathbb {R} ^{+}\setminus \{1\}}
+  
+) je takové reálné číslo
+
+  
+    
+      
+        y
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle y=\log _{a}x}
+  
+, pro které platí 
+  
+    
+      
+        
+          a
+          
+            y
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle a^{y}=x}
+  
+.
+V tomto vztahu se číslo a označuje jako základ logaritmu (báze), logaritmované číslo x se někdy označuje jako argument či numerus, y je pak logaritmem čísla x při základu a. Pro každé kladné číslo a kladný základ různý od jedné existuje právě jeden logaritmus, což je důsledkem vlastností exponenciální funkce-monotonie, spojitosti a oboru hodnot 
+  
+    
+      
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{+}}
+  
+. Logaritmická funkce 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle f(x)=\log _{a}x}
+  
+ je funkce, která je inverzní k exponenciální funkci. Zvláštní význam mají logaritmy o základu 10 (dekadický logaritmus, zkráceně log nebo lg) a o základu e (Eulerovo číslo, přirozený logaritmus, zkráceně ln).
+
+
+== Původ ==
+Označení logaritmus pochází ze staré řečtiny, λόγος je zákon a ἀριθμός číslo.
+Počátkem novověku, s rozvojem astronomie a geodézie a s potřebami námořní navigace, nesmírně vzrostla potřeba složitých výpočtů, zejména trigonometrických, a to na velký počet platných číslic. O myšlence nahradit násobení sčítáním se poprvé zmiňuje korespondence švýcarského matematika a hodináře Josta Bürgiho v roce 1588. Ten skutečně sestavil tabulky funkce sinus a brzy po roce 1600 i tabulky jejích logaritmů, které však publikoval až roku 1620 v Praze. O šest let dříve publikoval metodu logaritmů skotský matematik John Napier, který tak platí za jejich objevitele, a roku 1617 publikoval první tabulky desítkových ("briggsových") logaritmů Angličan Henry Briggs.
+Logaritmy se tak staly základem pro ekonomické výpočty (úlohy na úročení, složené úročení, inflaci). Do 2. poloviny 20. století se proto používaly logaritmická pravítka a logaritmické tabulky, které byly nezbytnou pomůckou inženýrů, ekonomů, astronomů, geodetů, ale i námořních kapitánů a studentů, protože umožňovaly nahradit násobení a dělení prostým sčítáním a odčítáním. Každý středoškolák se učil zacházet se školními, pěti- nebo sedmimístnými tabulkami (k dispozici byly i tabulky s přesností na 10 a 14 platných číslic). Pro přibližné technické výpočty (na 3-4 platná místa) se od poloviny 19. století rozšířilo logaritmické pravítko, jehož používání bylo vyučováno ve školách. Teprve s příchodem sálových počítačů v 60. letech 20. století, kalkulaček v 80. letech 20. století a tabulkových procesorů na osobních počítačích v 90. letech 20. století vymizela potřeba usnadňovat (ruční) výpočty pomocí logaritmů (tabulky, logaritmické pravítko).
+
+
+== Intuitivní odvození ==
+Myšlenka logaritmu vznikla jako rozšíření myšlenky exponentu. Že 2 × 2 = 4 můžeme zapsat také jako 21 × 21 = 22 a místo 4 × 8 = 32 můžeme napsat 22 × 23 = 25. Exponent součinu je tedy součet exponentů obou součinitelů, takže při zvoleném základu (2) můžeme násobení převést na sčítání exponentů, zatím jen pro celé exponenty. Podobně můžeme zapsat i dělení: 32:4 = 25: 22 = 23, čili 8. Stejně 1/2 = 1:2 = 20:21 = 2−1 čili 0,5. Místo dělení stačí odečítat exponenty.
+Číslo 2 jsme zvolili jako základ a místo „exponentu dvou“ můžeme psát log2. Můžeme tedy napsat, že log2 32 = 5, log2 8 = 3, log2 4 = 2, log2 1 = 0 a log2 0,5 = −1. Pro každé číslo x (kromě nuly) platí, že log2 2x = (log2 x) + 1, log2 4x = (log2 x) + 2.
+Protože 8 = 23, můžeme také psát 8 = 21 × 21 × 21 = 2(1+1+1) a 8 = 2(3x1), takže místo umocňování stačí exponent násobit a místo odmocnění exponent dělit.
+Kdybychom místo dvojky zvolili základ 10 (desítkový logaritmus), můžeme psát log10 0,1 = −1, log10 1 = 0 (to platí pro každý základ), log10 100 = 2 atd. I tady bude platit, že log1010x = (log10 x) + 1, log10 100x = (log10 x) + 2.
+Dokud jsme mluvili o exponentech, mělo to smysl jen pro celá čísla. Když jsme ale zmínili, že místo odmocňování stačí exponent dělit, může vyjít i necelé číslo: druhou odmocninu z deseti bychom mohli zapsat jako 10(0,5). To je právě to, co dělá logaritmická funkce: pokud různé hodnoty výrazu zx vyneseme do grafu (viz obrázek), můžeme jimi proložit spojitou křivku – logaritmickou funkci, která má hodnotu pro všechna reálná x>0. Logaritmus čísla 3 bude někde mezi log101 a log1010, tedy reálné číslo někde mezi nulou a jedničkou. Z logaritmické tabulky můžeme zjistit, že log10 3 = 0,47712125472, takže číslo 3 můžeme zapsat jako 100,47712125472. I zde bude platit, že log10 10x = (log10 x) + 1, log10 0,1x = ( log10 x) - 1, že logaritmus součinu se rovná součtu logaritmů obou činitelů a logaritmus podílu se rovná rozdílu logaritmus dělence minus logaritmus dělitele. Logaritmus mocniny je násobek exponentu a logaritmu mocněnce. Logaritmus odmocniny je podíl logaritmu odmocněnce a odmocnitele.
+
+
+== Vlastnosti logaritmů ==
+
+  
+    
+      
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            x
+          
+        
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        
+          
+            a
+            
+              x
+            
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle a^{\log _{a}x}=\log _{a}{a^{x}}=x}
+  
+ (Logaritmus je inverzní funkcí k exponenciální funkci o stejném základu. Speciálně: 
+  
+    
+      
+        ln
+        ⁡
+        exp
+        ⁡
+        x
+        =
+        exp
+        ⁡
+        ln
+        ⁡
+        x
+        =
+        x
+      
+    
+    {\displaystyle \ln \exp x=\exp \ln x=x}
+  
+)
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        a
+        c
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        c
+      
+    
+    {\displaystyle \log _{b}(ac)=\log _{b}a+\log _{b}c}
+  
+ (Logaritmus součinu je součet logaritmů jednotlivých činitelů.)
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          
+            a
+            c
+          
+        
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        −
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        c
+      
+    
+    {\displaystyle \log _{b}{\frac {a}{c}}=\log _{b}a-\log _{b}c}
+  
+ (Logaritmus podílu je rozdíl logaritmů čitatele a jmenovatele.)
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          a
+          
+            r
+          
+        
+        =
+        r
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+      
+    
+    {\displaystyle \log _{b}a^{r}=r\log _{b}a}
+  
+ (tzn. 
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          
+            a
+            
+              n
+            
+          
+        
+        =
+        
+          
+            1
+            n
+          
+        
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+      
+    
+    {\displaystyle \log _{b}{\sqrt[{n}]{a}}={\frac {1}{n}}\log _{b}a}
+  
+; logaritmus mocniny je roven exponent krát logaritmus základu.)
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        b
+        =
+        1
+      
+    
+    {\displaystyle \log _{b}b=1}
+  
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        1
+        =
+        0
+      
+    
+    {\displaystyle \log _{b}1=0}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              x
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              a
+            
+          
+        
+        =
+        
+          
+            log
+            
+              a
+            
+          
+          ⁡
+          b
+        
+        
+        
+          
+            log
+            
+              b
+            
+          
+          ⁡
+          x
+        
+      
+    
+    {\displaystyle \log _{a}x={\frac {\log _{b}x}{\log _{b}a}}={\log _{a}b}\;{\log _{b}x}}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        b
+        =
+        
+          
+            1
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}b={\frac {1}{\log _{b}a}}}
+  
+
+  
+    
+      
+        
+          a
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            x
+          
+        
+        =
+        
+          x
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            a
+          
+        
+      
+    
+    {\displaystyle a^{\log _{b}x}=x^{\log _{b}a}}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            
+              log
+              ⁡
+              x
+            
+            
+              log
+              ⁡
+              a
+            
+          
+        
+        =
+        
+          
+            
+              ln
+              ⁡
+              x
+            
+            
+              ln
+              ⁡
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}x={\frac {\log x}{\log a}}={\frac {\ln x}{\ln a}}}
+  
+ (Formule umožňující vyčíslit logaritmus libovolného základu pomocí kalkulačky, případně logaritmických tabulek.)
+
+
+=== Vlastnosti logaritmických funkcí ===
+Pro každou logaritmickou funkci 
+  
+    
+      
+        y
+        =
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle y=\log _{a}x}
+  
+ platí:
+
+je monotónní, spojitá a má derivace všech řádů;
+pro a > 1 je rostoucí a ryze konkávní, pro a ∈ (0; 1) je klesající a ryze konvexní;
+
+  
+    
+      
+        f
+        (
+        1
+        )
+        =
+        0
+      
+    
+    {\displaystyle f(1)=0}
+  
+ (graf funkce prochází bodem [1;0]);
+osa y je asymptotou grafu.
+
+
+== Funkcionální rovnice ==
+Logaritmické funkce jsou právě ta spojitá (a nenulová) řešení funkcionální rovnice
+
+  
+    
+      
+        f
+        (
+        x
+        y
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        f
+        (
+        y
+        )
+      
+    
+    {\displaystyle f(xy)=f(x)+f(y)}
+  
+,
+která je tedy definuje.
+Tato vlastnost byla základem použití logaritmů pro zjednodušení numerických výpočtů a vyjadřuje izomorfismus aditivní grupy reálných čísel a multiplikativní grupy kladných reálných čísel.
+
+
+== Logaritmus komplexního čísla ==
+Často je potřeba vypočítat přirozený logaritmus komplexního čísla. Platí:
+
+  
+    
+      
+        ln
+        ⁡
+        z
+        =
+        ln
+        ⁡
+        
+          (
+          
+            x
+            +
+            
+              i
+            
+            y
+          
+          )
+        
+        =
+        ln
+        ⁡
+        (
+        r
+        
+          
+            e
+          
+          
+            
+              i
+            
+            ϕ
+          
+        
+        )
+        =
+        ln
+        ⁡
+        r
+        +
+        
+          i
+        
+        ϕ
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        
+          i
+        
+        ⋅
+        
+          A
+          r
+          g
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle \ln z=\ln \left(x+\mathrm {i} y\right)=\ln(r\mathrm {e} ^{\mathrm {i} \phi })=\ln r+\mathrm {i} \phi =\ln |z|+\mathrm {i} \cdot \mathrm {Arg} (z)}
+  
+
+Byl zde použit exponenciální tvar komplexního čísla. Proměnná 
+  
+    
+      
+        r
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+      
+    
+    {\displaystyle r=|z|}
+  
+ udává absolutní hodnotu hodnotu komplexního čísla a 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ udává argument (polární úhel goniometrického tvaru) komplexního čísla.
+Máme-li tedy komplexní číslo, pak reálná část jeho logaritmu je rovna logaritmu absolutní hodnoty, zatímco imaginární udává argument. Je nutno uvést, že argument komplexního čísla není definován jednoznačně, může se lišit o celé násobky 
+  
+    
+      
+        2
+        π
+      
+    
+    {\displaystyle 2\pi }
+  
+. Proto se někdy zavádí tzv. hlavní hodnota logaritmu 
+  
+    
+      
+        
+          L
+          n
+        
+      
+    
+    {\displaystyle \mathrm {Ln} }
+  
+, u které se většinou uvažují úhly z intervalu 
+  
+    
+      
+        (
+        −
+        π
+        ,
+        π
+        ⟩
+      
+    
+    {\displaystyle (-\pi ,\pi \rangle }
+  
+.
+Pokud z definičního oboru odstraníme nekladnou reálnou poloosu, tak je logaritmus holomorfní funkce s derivací rovnou 
+  
+    
+      
+        
+          
+            1
+            z
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{z}}}
+  
+.
+
+
+== Využití ==
+Logaritmus je inverzní funkce k exponenciální funkci.
+
+
+=== Neznámá v exponentu mocniny ===
+Logaritmování umožňuje najít neznámý exponent mocniny u úloh využívajících exponenciální funkci (např. složené úročení, radiokarbonová metoda datování) a řešit takové rovnice.
+Příklad řešení rovnice 
+  
+    
+      
+        1000
+        =
+        
+          2
+          
+            x
+          
+        
+      
+    
+    {\displaystyle 1000=2^{x}}
+  
+
+obě strany rovnice můžeme zlogaritmovat: 
+  
+    
+      
+        log
+        ⁡
+        
+          (
+          1000
+          )
+        
+        =
+        log
+        ⁡
+        
+          (
+          
+            2
+            
+              x
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \log {(1000)}=\log {(2^{x})}}
+  
+
+využijeme pravidlo pro práci s logaritmy: 
+  
+    
+      
+        log
+        ⁡
+        
+          1000
+        
+        =
+        x
+        ⋅
+        log
+        ⁡
+        
+          2
+        
+      
+    
+    {\displaystyle \log {1000}=x\cdot \log {2}}
+  
+
+vyčíslíme výsledek: 
+  
+    
+      
+        x
+        =
+        
+          
+            
+              log
+              ⁡
+              
+                1000
+              
+            
+            
+              log
+              ⁡
+              
+                2
+              
+            
+          
+        
+        
+          
+            
+              =
+              ˙
+            
+          
+        
+        9
+        ,
+        966
+      
+    
+    {\displaystyle x={\frac {\log {1000}}{\log {2}}}{\dot {=}}9,966}
+  
+
+
+=== Desítková soustava a logaritmus ===
+Kolik číslic bude mít mocnina daného čísla. Protože je naše číselná soustava desítková, vypočteme dekadický logaritmus zadané mocniny (z výsledku vyplývá, že číslo 
+  
+    
+      
+        
+          2
+          
+            100
+          
+        
+      
+    
+    {\displaystyle 2^{100}}
+  
+ má celkem 31 cifer): 
+  
+    
+      
+        log
+        ⁡
+        
+          2
+          
+            100
+          
+        
+        =
+        100
+        ⋅
+        log
+        ⁡
+        2
+        =
+        30
+        ,
+        10299957
+      
+    
+    {\displaystyle \log 2^{100}=100\cdot \log 2=30,10299957}
+  
+
+
+=== Zjednodušení výpočtů ===
+Pomocí výše uvedených rovností lze složitější operace převádět na jednodušší (násobení a dělení na sčítání a odčítání, mocnění a odmocniny na násobení a dělení), což se zvláště před rozšířením elektronických kalkulaček a počítačů využívalo při složitějších výpočtech prováděných ručně nebo mechanickými kalkulátory (které obvykle uměly jen sčítat). Pro usnadnění přepočtů existovaly logaritmické tabulky s předem vypočítanými hodnotami logaritmů, případně logaritmické pravítko, mechanická pomůcka pro výpočty pomocí logaritmů. Dnes patří tyto postupy do historie, ale jsou dobré cvičení pro pochopení toho, jak logaritmy fungují.
+Příkladem využití logaritmů je výpočet 
+  
+    
+      
+        x
+        =
+        17300
+        ⋅
+        
+          
+            15478
+          
+        
+      
+    
+    {\displaystyle x=17300\cdot {\sqrt {15478}}}
+  
+ pomocí logaritmických tabulek:
+
+Nejprve se výraz zlogaritmuje: 
+  
+    
+      
+        log
+        ⁡
+        x
+        =
+        log
+        ⁡
+        (
+        17300
+        ⋅
+        
+          
+            15478
+          
+        
+        )
+        =
+        log
+        ⁡
+        17300
+        +
+        
+          
+            1
+            2
+          
+        
+        log
+        ⁡
+        15478
+      
+    
+    {\displaystyle \log x=\log(17300\cdot {\sqrt {15478}})=\log 17300+{\frac {1}{2}}\log 15478}
+  
+
+Logaritmovaná čísla se upraví na semilogaritmický tvar (abychom hledali jen logaritmy čísel mezi 1 a 10, obsažené v tabulkách): 
+  
+    
+      
+        log
+        ⁡
+        17300
+        =
+        log
+        ⁡
+        (
+        1,730
+        0
+        ⋅
+        
+          10
+          
+            4
+          
+        
+        )
+        =
+        4
+        +
+        log
+        ⁡
+        1,730
+        0
+      
+    
+    {\displaystyle \log 17300=\log(1{,}7300\cdot 10^{4})=4+\log 1{,}7300}
+  
+ atd.
+V tabulkách se vyhledají příslušné logaritmy (tabulky ovšem obsahují hodnoty jen na několik platných číslic):
+log 17300 ≅ 4,2380
+log 15478 ≅ 4,1897
+Vypočte se výsledný logaritmus: log x = 4,2380 + 2,0949 = 6,3329 = 6 + 0,3329
+Výsledek se odlogaritmuje, v tabulkách najdeme, že 0,3329 je log 2,1522, takže 
+  
+    
+      
+        x
+        =
+        
+          10
+          
+            6
+            +
+            0.3329
+          
+        
+        =
+        2,152
+        2
+        ⋅
+        
+          10
+          
+            6
+          
+        
+        =
+        2
+         
+        152
+         
+        200
+      
+    
+    {\displaystyle x=10^{6+0.3329}=2{,}1522\cdot 10^{6}=2~152~200}
+  
+.
+Přesnější výsledek spočtený na běžné kalkulačce je 2 152 303, tzn. relativní chyba výsledku je asi 0,005 %).
+
+
+==== Logaritmické pravítko ====
+Pro složitější výpočty bylo dříve místo kalkulaček používáno logaritmické pravítko (zhruba do 70. let 20. století), kde byla stupnice logaritmická, a tak bylo možné dvěma posuvnými stupnicemi snadno zjistit výsledek násobení (nahrazení součinu součtem). Logaritmické pravítko bylo tehdy používáno pro technické výpočty (např. v Programu Apollo pro první lety na Měsíc), pro geodetické výpočty, atd.
+
+
+=== Logaritmická stupnice grafu ===
+Logaritmická stupnice je používána v grafech pro zdůraznění malých hodnot a zároveň potlačení příliš velkých hodnot. Graf poté také ukazuje procentuální změny (místo absolutní změny).
+
+
+==== Odlišení mocninné a exponenciální funkce ====
+Pokud použijeme na svislou osu y logaritmické měřítko, lze jedním pohledem zjistit, zda zobrazená křivka představuje mocninnou nebo exponenciální funkci. Pokud se po zlogaritmování svislé osy stane z křivky přímka, šlo o exponenciální funkci. Bude-li nutné pro dosažení přímky zlogaritmovat i vodorovnou osu x, jde o mocninnou funkci. Z nutného postupu pro logaritmickou transformaci obou os (x a y) pro dosažení přímky lze odvodit předpis pro zobrazenou funkci.
+
+
+==== Koncentrace roztoků ====
+Některé veličiny nabývají výrazného rozpětí hodnot, až několika řádů. Příkladem může být koncentrace kationtů H3O+ v roztoku:
+
+Je zřejmé, že při zobrazení těchto hodnot na číselné ose bude pivo přibližně 43× blíže k nule než ocet (0,0013/0,00003), mléko bude 100× blíže k nule než pivo (0,00003/0,0000003) a ostatní hodnoty také budou „namačkány“ v těsné blízkosti nuly. Přestože například koncentrace H3O+ v mléku je stále 100000× (o pět dekadických řádů) vyšší než ve čpavku.
+V takovém případě je výhodnější místo samotné koncentrace zobrazovat její logaritmus, tedy volně řečeno „řád koncentrace“. Tabulka po zlogaritmování bude vypadat následovně.
+
+Je vidět, že takto upravené hodnoty jsou celkem rozumně rozloženy mezi −11,5 a nulou. Na závěr dodejme, že pH je definováno přibližně takto, pouze logaritmus koncentrace je uváděn bez znaménka. (Koncentrace je vždy menší nebo rovna 1, proto logaritmus koncentrace bude vždy menší nebo roven 0.)
+
+
+=== Další využití logaritmů ===
+Logaritmy se objevují také v mnoha vědeckých oborech pro vyjádření závislosti na exponentu. Příkladem jsou jednotky decibel a neper, v chemii vyjadřování kyselosti roztoků pomocí pH a další. V případě lidského vnímání jde o aplikaci Weberova–Fechnerova zákona, který popisuje závislost lidské odezvy na fyzikální stimuly, tedy mění-li se fyzikální podněty působící na naše smysly řadou geometrickou, vnímáme jejich změnu řadou aritmetickou.
+
+
+==== Hvězdná velikost ====
+Při vyjadřování hvězdné velikosti (magnitudo) je využívána logaritmická stupnice, která umožňuje zachovat subjektivně stanovené třídy jasnosti hvězd, jak je ve starověku definoval Hipparchos (2. století př. n. l.).
+
+
+==== Zemětřesení ====
+Logaritmickou stupnici používají jednotky magnitudo pro měření míry zemětřesení (Richterova stupnice).
+
+
+== Speciální základy ==
+
+
+=== Desítkový logaritmus ===
+U logaritmu o základu 10 (nazývaného desítkový či dekadický logaritmus, příp. Briggsův podle Henryho Briggse) se ve značení vynechává základ a píše se jen prostě log x, někdy se používá také speciální značení lg x. Je třeba si však dát pozor: použité značení se může v různých odborných literaturách lišit. lg x se běžně využívá ve významu 
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{2}x}
+  
+ a ne 
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{10}x}
+  
+.
+
+
+=== Přirozený logaritmus ===
+Logaritmus o základu e (
+  
+    
+      
+        
+          log
+          
+            e
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \log _{e}x}
+  
+) se označuje jako přirozený logaritmus (někdy také Napierův podle Johna Napiera) a značí se 
+  
+    
+      
+        ln
+        ⁡
+        x
+      
+    
+    {\displaystyle \ln x}
+  
+ (logaritmus naturalis, latinsky přirozený logaritmus). Vznikl tak, že se hledal základ exponenciální funkce tak, aby tečnou této exponenciály v bodě A=(0,1) byla přímka 
+  
+    
+      
+        y
+        =
+        x
+        +
+        1
+      
+    
+    {\displaystyle y=x+1}
+  
+. Odpovídající základ byl označen písmenem e a pojmenován Eulerovo číslo (podle Leonharda Eulera, který se podílel na objevu tohoto čísla).
+Přirozený logaritmus - pravidlo výchozího stavu a změny (změna nemůže být menší než nula - logaritmus 1 je nula, z čehož plyne přirozený logaritmus o základně Eulerovy konstanty vymezuje právě takový průběh funkce (přesněji inverzní exponenciální funkce - obecně nazývané jako funkce logaritmická), kdy nemůže dojít k nižší hodnotě než výchozí stav.
+Exponent této funkce při znázornění v kartézských souřadnicí je vlastně tečnou této funkce přirozeného logaritmu na základě Eulerovy konstanty - a tato tečna je vlastně další funkcí - funkcí nižšího řádu která již není exponenciální. 
+V rovnici by zápis tečny funkce přirozeného logaritmu (a současně exponent přirozeného logaritmu) 
+y = x + 1 (což je vlastně další, již neexponenciální funkce),
+zatímco výchozí funkce pro přirozený logaritmus by měla v rovnici znít
+y = e (exponent/argument x + 1).
+
+
+=== Binární logaritmus ===
+Hlavně v informatice se objevuje logaritmus o základu dva (binární logaritmus), který je v příslušném kontextu někdy značen 
+  
+    
+      
+        lg
+        ⁡
+        x
+      
+    
+    {\displaystyle \lg x}
+  
+, případně 
+  
+    
+      
+        lb
+        ⁡
+        x
+      
+    
+    {\displaystyle \operatorname {lb} x}
+  
+.
+Platí: 
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        n
+        =
+        
+          
+            
+              ln
+              ⁡
+              n
+            
+            
+              ln
+              ⁡
+              2
+            
+          
+        
+        =
+        
+          
+            
+              log
+              ⁡
+              n
+            
+            
+              log
+              ⁡
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \log _{2}n={\frac {\ln n}{\ln 2}}={\frac {\log n}{\log 2}}}
+  
+
+Např. při binárním vyhledávání v setříděném seznamu, který má n položek, je potřeba maximálně 
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        n
+        )
+      
+    
+    {\displaystyle \log _{2}(n)}
+  
+ kroků k nalezení hledané hodnoty. Tato technika je totiž založena na půlení intervalů.
+
+
+== Iracionalita ==
+Dekadický logaritmus je racionální číslo právě pro racionální mocniny čísla 10, např.
+
+  
+    
+      
+        log
+        ⁡
+        
+          
+            10
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \log {\sqrt {10}}={\frac {1}{2}}.}
+  
+
+Desítkové logaritmy přirozených čísel kromě mocnin 10, např.
+
+  
+    
+      
+        log
+        ⁡
+        2
+        =
+        0
+        ,
+        301...
+      
+    
+    {\displaystyle \log 2=0,301...}
+  
+
+jsou iracionální čísla, což je důsledkem základní věty aritmetiky.
+Přirozené logaritmy všech přirozených čísel kromě 0 a 1, např.
+
+  
+    
+      
+        ln
+        ⁡
+        2
+        =
+        0
+        ,
+        69...
+      
+    
+    {\displaystyle \ln 2=0,69...}
+  
+
+jsou vesměs iracionální, což plyne z transcendence čísla e.
+
+
+== Taylorova řada pro logaritmus ==
+Pomocí vztahu pro Taylorův rozvoj, případně zintegrováním geometrické řady
+
+  
+    
+      
+        
+          
+            1
+            
+              1
+              +
+              x
+            
+          
+        
+        =
+        1
+        −
+        x
+        +
+        
+          x
+          
+            2
+          
+        
+        −
+        
+          x
+          
+            3
+          
+        
+        +
+        
+          x
+          
+            4
+          
+        
+        −
+        ⋯
+      
+    
+    {\displaystyle {\frac {1}{1+x}}=1-x+x^{2}-x^{3}+x^{4}-\cdots }
+  
+
+(člen po členu) lze obdržet (Maclaurinův) rozvoj logaritmu do řady kolem bodu 1:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        x
+        )
+        =
+        x
+        −
+        
+          
+            
+              x
+              
+                2
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              x
+              
+                3
+              
+            
+            3
+          
+        
+        −
+        
+          
+            
+              x
+              
+                4
+              
+            
+            4
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \ln(1+x)=x-{\frac {x^{2}}{2}}+{\frac {x^{3}}{3}}-{\frac {x^{4}}{4}}+\cdots }
+  
+
+Tato řada má poloměr konvergence 1, navíc konverguje i pro krajní bod 
+  
+    
+      
+        x
+        =
+        1
+      
+    
+    {\displaystyle x=1}
+  
+, kde obdržíme známou Leibnizovu řadu pro 
+  
+    
+      
+        ln
+        ⁡
+        2
+      
+    
+    {\displaystyle \ln 2}
+  
+ (konverguje však velmi pomalu):
+
+  
+    
+      
+        ln
+        ⁡
+        2
+        =
+        1
+        −
+        
+          
+            1
+            2
+          
+        
+        +
+        
+          
+            1
+            3
+          
+        
+        −
+        
+          
+            1
+            4
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \ln 2=1-{\frac {1}{2}}+{\frac {1}{3}}-{\frac {1}{4}}+\cdots }
+  
+
+Řadu pro logaritmus je možné vyčíslit i pro ryze imaginární číslo 
+  
+    
+      
+        z
+        =
+        
+          i
+        
+        y
+      
+    
+    {\displaystyle z=\mathrm {i} y}
+  
+. Pak z předchozího vyplývá, že platí:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        
+          i
+        
+        y
+        )
+        =
+        ln
+        ⁡
+        
+          
+            1
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        +
+        
+          i
+        
+        ⋅
+        
+          a
+          r
+          c
+          t
+          g
+        
+        
+        y
+      
+    
+    {\displaystyle \ln(1+\mathrm {i} y)=\ln {\sqrt {1+y^{2}}}+\mathrm {i} \cdot \mathrm {arctg} \,y}
+  
+
+Stejně tak lze tento výraz vyjádřit pomocí řady:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        
+          i
+        
+        y
+        )
+        =
+        
+          i
+        
+        y
+        +
+        
+          
+            
+              y
+              
+                2
+              
+            
+            2
+          
+        
+        −
+        
+          
+            
+              
+                i
+              
+              
+                y
+                
+                  3
+                
+              
+            
+            3
+          
+        
+        −
+        
+          
+            
+              y
+              
+                4
+              
+            
+            4
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \ln(1+\mathrm {i} y)=\mathrm {i} y+{\frac {y^{2}}{2}}-{\frac {\mathrm {i} y^{3}}{3}}-{\frac {y^{4}}{4}}+\cdots }
+  
+
+Porovnáním imaginárních částí vznikne řada pro 
+  
+    
+      
+        
+          a
+          r
+          c
+          t
+          g
+        
+      
+    
+    {\displaystyle \mathrm {arctg} }
+  
+:
+
+  
+    
+      
+        
+          a
+          r
+          c
+          t
+          g
+        
+        
+        y
+        =
+        y
+        −
+        
+          
+            
+              y
+              
+                3
+              
+            
+            3
+          
+        
+        +
+        
+          
+            
+              y
+              
+                5
+              
+            
+            5
+          
+        
+        −
+        ⋯
+      
+    
+    {\displaystyle \mathrm {arctg} \,y=y-{\frac {y^{3}}{3}}+{\frac {y^{5}}{5}}-\cdots }
+  
+
+Dosazením 
+  
+    
+      
+        y
+        =
+        1
+      
+    
+    {\displaystyle y=1}
+  
+ vyjde řada pro Ludolfovo číslo:
+
+  
+    
+      
+        
+          
+            π
+            4
+          
+        
+        =
+        1
+        −
+        
+          
+            1
+            3
+          
+        
+        +
+        
+          
+            1
+            5
+          
+        
+        −
+        
+          
+            1
+            7
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle {\frac {\pi }{4}}=1-{\frac {1}{3}}+{\frac {1}{5}}-{\frac {1}{7}}+\cdots }
+  
+
+Tato řada však bohužel také konverguje velmi pomalu.
+
+
+== Odkazy ==
+
+
+=== Související články ===
+Diskrétní logaritmus
+Exponenciální funkce
+Logistická funkce
+
+
+=== Externí odkazy ===
+ Obrázky, zvuky či videa k tématu logaritmus na Wikimedia Commons 
+ Slovníkové heslo logaritmus ve Wikislovníku
+WEISSTEIN, Eric W. Logarithm. mathworld.wolfram.com [online]. Dostupné online. (anglicky) 
+Logaritmické tabulky čísel od 1 000 000 do 9 999 999

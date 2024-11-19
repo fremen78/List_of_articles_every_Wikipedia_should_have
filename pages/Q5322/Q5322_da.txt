@@ -1,0 +1,1305 @@
+For alternative betydninger, se kondensator.
+
+En elektrisk kondensator (også kaldet en kapacitor) er en elektronisk komponent, der er indrettet til at have en vis elektrisk kapacitet (fysisk størrelse som måles i farad) – en evne til (på kort sigt) at opbevare en vis mængde elektrisk energi.
+Groft sagt kan en kondensator sammenlignes med et opladeligt "batteri" (element) – en kondensator op- og aflades blot meget hurtigere og indeholder blot en forsvindende brøkdel af den elektriske energi der kan opbevares i et opladeligt element af tilsvarende rumlig størrelse.
+
+
+== Sådan virker en kondensator ==
+
+
+=== Opbygning ===
+Figuren til højre viser hvordan en kondensator principielt er opbygget:
+
+(1) To elektrisk ledende plader er anbragt parallelt og ganske tæt på hinanden, dog adskilt af et dielektrikum.
+(2) Dielektrikummet er enten et vakuum eller et lag af et elektrisk isolerende stof.
+(3) Kondensatoren har to tilledninger, som er forbundet til hver sin elektrisk ledende plade.
+I praktiske kondensatorer er dette arrangement bygget eller støbt ind i en "indpakning" af plast, aluminium eller keramik, så blot de to tilledninger "stikker ud" af komponenten.
+
+
+=== Kondensatoren og DC-kilder(jævnspænding) ===
+Hvis man forbinder kondensatorens to tilledninger med en jævnspændingskilde, vil spændingkildens positive pol trække de frie elektroner ud af den ene plade, og fylde elektroner på den plade der er forbundet til kildens negative pol; der går altså en strøm i kredsløbet. Denne proces varer i praksis ganske kort; strømstyrken i kredsløbet falder eksponentielt mod noget nær nul.
+Den plade, der er tilsluttet den positive pol, har nu et underskud af frie elektroner, hvilket medfører en positiv elektrisk ladning. Denne positive ladning udøver en elektrisk tiltrækningskraft på det overskud af frie elektroner, som den anden (nu negativt ladede) plade har modtaget fra strømkildens negative pol.
+Afbrydes forbindelsen mellem kondensatoren og strømkilden, vil de elektriske kræfter holde de frie elektroner fast i den negativt ladede plade, og derfor ligger der over kondensatorens tilledninger en spændingsforskel meget nær ved strømkildens polspænding.
+I kondensatorer med kapaciteter under ca. 1 mikrofarad (1 μF = 10-6 farad) "siver" denne opbevarede ladning dog hurtigt, bl.a på grund af en indre, elektrisk "utæthed" (kaldet tabsmodstand) i kondensatoren. Med en kondensator på et par mF og en lille lommelygte-pære kan man demonstrere den oplagrede elektriske energi ved at koble en opladt kondensator til pæren, hvilket resulterer i, at lommelygten lyser op et kort øjeblik; i løbet af det øjeblik "undslipper" elektronerne i den negativt ladede plade ud gennem pærens glødetråd og ind i den positivt ladede plade, og derved udligner forskellen i antallet af frie elektroner i de to plader. For en kort stund tjener kondensatoren altså som en strømkilde, der trækker en jævnstrøm igennem pæren.
+
+
+=== Kondensatoren og vekselstrømme ===
+
+Strømmen fra en vekselstrømskilde skifter retning med en vis frekvens (regelmæssig hyppighed), så hvis man kobler en kondensator til vekselstrømskilden, vil strømkilden pumpe frie elektroner først fra den ene plade til den anden, og øjeblikket efter i den modsatte retning. Så i modsætning til situationen med jævnstrømskilden, bliver en vekselstrømskilde aldrig færdig med at fylde den ene og tømme den anden plade i kondensatoren for frie elektroner – selv om der hele tiden løber en vekselstrøm i kredsløbet.
+Det viser sig at kondensatoren – overfor en vekselstrømskilde – udøver en slags modstand. Til højre er givet den formelle sammenhæng; reaktansen 
+  
+    
+      
+        
+          X
+          
+            C
+          
+        
+      
+    
+    {\displaystyle X_{C}}
+  
+ afhænger af to ting:
+
+Kondensatorens elektriske kapacitet 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+
+Vekselstrømmens frekvens 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+ (det antal gange strømmen skifter retning pr. tidsenhed)
+Denne egenskab anvendes i analoge kredsløb til at filtrere og sortere et signal efter frekvenser. Et eksempel er et stereoanlægs knapper for bas og diskant; her anvendes en variabel modstand (knappen) sammen med en kondensator til at forstærke eller dæmpe enten dybe eller høje toner (hhv. lave og høje frekvenser) mere eller mindre end andre toner/frekvenser.
+
+
+== Mål og egenskaber for kondensatorer ==
+Den elektriske kapacitet for en given kondensator bestemmes af tre faktorer:
+
+Arealet af de to ledende plader; jo større areal, desto større elektrisk kapacitet.
+Afstanden mellem de ledende plader; jo mindre afstand, desto større elektrisk kapacitet
+En egenskab kaldet dielektricitetskonstanten, for det vakuum eller isolerende stof, der adskiller de ledende plader.
+For at begrænse materialeforbruget søger fabrikanter af kondensatorer bl.a. at gøre afstanden mellem de ledende plader mindst mulig, men et meget tyndt isolerende lag mellem pladerne sætter en grænse for hvor store elektriske spændinger (potentialforskelle) der kan være mellem de to plader. Overskrides denne grænse, ioniseres det ellers isolerende materiale, og der opstår en kortslutning mellem de to plader; en genvej som den oplagrede elektriske energi straks benytter til at udligne ladningsforskellen. Derved udvikles varme, som kan sammensvejse de to ledende plader så der opstår en permanent kortslutning i komponenten.
+Kondensatorer leveres i praksis med oplysninger (som evt. kan være påtrykt komponenten, eller angivet ved en farvekode på komponentens ydre) om både kondensatorens elektriske kapacitet, og den maksimale spændingsforskel der må være over tilledningerne – det sidste for at undgå ionisering i, og kortslutninger igennem det isolerende dielektrikum.
+
+
+=== Afladning af en kondensator ===
+Når en kondensator er fuldt opladt har den en ladning 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+, der egentlig er ladningen på kondensatorens positive leder; samlet set er kondensatoren jo neutral. Når kondensatoren tilsluttes et kredsløb med resistansen eller modstanden 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+, vil der ske et fald i ladningen eller, sagt på en anden måde, en negativ ændring 
+  
+    
+      
+        −
+        
+          d
+        
+        Q
+      
+    
+    {\displaystyle -{\text{d}}Q}
+  
+. Denne ændring sker over en given tid 
+  
+    
+      
+        
+          d
+        
+        t
+      
+    
+    {\displaystyle {\text{d}}t}
+  
+, så ændring pr. tidsenhed bliver altså 
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              Q
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {{\text{d}}Q}{{\text{d}}t}}}
+  
+. Ændring i ladning pr. tidsenhed er definitionen på strømstyrke 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+, så formlen lyder 
+  
+    
+      
+        I
+        =
+        
+          
+            
+              −
+              
+                d
+              
+              Q
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle I={\frac {-{\text{d}}Q}{{\text{d}}t}}}
+  
+. Dette er strømstyrken i kredsløbet og ikke bare i kondensatoren, da en elektrisk strøm skal løbe for, at man kan tale om strømstyrke. Ved at lave lidt om på formlen, får man 
+  
+    
+      
+        −
+        I
+        =
+        
+          
+            
+              
+                d
+              
+              Q
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle -I={\frac {{\text{d}}Q}{{\text{d}}t}}}
+  
+.
+Udover denne udvikling i elektrisk ladning er der også noget, der hedder kapacitor-ligningen ifølge hvilken, der gælder, at ladningen 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ er lig kapacitansen 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ gange spændingen 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ eller 
+  
+    
+      
+        Q
+        =
+        C
+        U
+      
+    
+    {\displaystyle Q=CU}
+  
+. Dette kombineres med Ohms lov 
+  
+    
+      
+        U
+        =
+        R
+        I
+      
+    
+    {\displaystyle U=RI}
+  
+, så:
+
+  
+    
+      
+        Q
+        =
+        C
+        R
+        I
+      
+    
+    {\displaystyle Q=CRI}
+  
+
+Dette udtryk for ladningen differentieres; både 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ og 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ antages at være konstante i et givent kredsløb, så kun 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+ og 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ differentieres, hvilket giver:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              Q
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        C
+        R
+        
+          
+            
+              
+                d
+              
+              I
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {{\text{d}}Q}{{\text{d}}t}}=CR{\frac {{\text{d}}I}{{\text{d}}t}}}
+  
+
+Man indsætter nu førfundne udtryk for differentialet af 
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+:
+
+  
+    
+      
+        −
+        I
+        =
+        C
+        R
+        
+          
+            
+              
+                d
+              
+              I
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle -I=CR{\frac {{\text{d}}I}{{\text{d}}t}}}
+  
+
+Man dividerer så med 
+  
+    
+      
+        C
+        R
+      
+    
+    {\displaystyle CR}
+  
+ på begge sider:
+
+  
+    
+      
+        −
+        
+          
+            1
+            
+              C
+              R
+            
+          
+        
+        I
+        =
+        
+          
+            
+              
+                d
+              
+              I
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle -{\frac {1}{CR}}I={\frac {{\text{d}}I}{{\text{d}}t}}}
+  
+
+For at finde en funktionsforskrift for 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ skal man bemærke, at den fundne formel har formen:
+
+  
+    
+      
+        k
+        y
+        =
+        
+          
+            
+              
+                d
+              
+              y
+            
+            
+              
+                d
+              
+              x
+            
+          
+        
+      
+    
+    {\displaystyle ky={\frac {{\text{d}}y}{{\text{d}}x}}}
+  
+
+Ifølge separation af de variable er løsningen på en sådan differentialligning:
+
+  
+    
+      
+        y
+        =
+        c
+        
+          
+            e
+          
+          
+            k
+            x
+          
+        
+      
+    
+    {\displaystyle y=c{\text{e}}^{kx}}
+  
+.
+Her er 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ skæringen med y-aksen, mens 
+  
+    
+      
+        
+          e
+        
+      
+    
+    {\displaystyle {\text{e}}}
+  
+ er Eulers tal, der er en matematisk konstant.
+Bruges denne løsning til at finde et udtryk for strømstyrken, fås:
+
+  
+    
+      
+        I
+        (
+        t
+        )
+        =
+        c
+        
+          
+            e
+          
+          
+            −
+            
+              
+                1
+                
+                  C
+                  R
+                
+              
+            
+            t
+          
+        
+      
+    
+    {\displaystyle I(t)=c{\text{e}}^{-{\frac {1}{CR}}t}}
+  
+
+Skæringen med y-aksen 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ er nu strømstyrken ved tiden 0, og det vil sige strømstyrken lige, når kondensatoren tilsluttes et kredsløb. Denne værdi kan noteres 
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+      
+    
+    {\displaystyle I_{0}}
+  
+. Man får da funktionsforskriften:
+
+Når en kondensator aflades, er strømstyrken i kredsløbet altså eksponentiel faldende efter ovenstående matematiske model.
+Med tanke på Ohms lov kan man gange med 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  
+ på begge sider, så man derved får:
+
+  
+    
+      
+        I
+        (
+        t
+        )
+        R
+        =
+        
+          I
+          
+            0
+          
+        
+        R
+        
+          
+            e
+          
+          
+            −
+            
+              
+                t
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle I(t)R=I_{0}R{\text{e}}^{-{\frac {t}{CR}}}}
+  
+
+Man har da en funktionsforskrift for spændingen 
+  
+    
+      
+        U
+      
+    
+    {\displaystyle U}
+  
+ i kondensatoren som funktion af tiden:
+
+  
+    
+      
+        U
+        (
+        t
+        )
+        =
+        
+          I
+          
+            0
+          
+        
+        R
+        
+          
+            e
+          
+          
+            −
+            
+              
+                t
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle U(t)=I_{0}R{\text{e}}^{-{\frac {t}{CR}}}}
+  
+
+Det ses, at også spændingen er eksponentielt aftagende.
+Ud fra førfundne funktionsforskrift kan man også finde den gennemstrømmende energi pr. tidsenhed eller, med andre ord, effekten 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+. Nu skal man bruge en formel, der siger, at effekten er lig resistansen gange kvadratet af strømstyrken, eller 
+  
+    
+      
+        P
+        =
+        R
+        
+          I
+          
+            2
+          
+        
+      
+    
+    {\displaystyle P=RI^{2}}
+  
+. Dette kombineres med med funktionsforskriften for strømstyrke:
+
+  
+    
+      
+        P
+        (
+        t
+        )
+        =
+        R
+        (
+        I
+        (
+        t
+        )
+        
+          )
+          
+            2
+          
+        
+        =
+        R
+        (
+        
+          I
+          
+            0
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                t
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+        
+          )
+          
+            2
+          
+        
+        =
+        R
+        
+          I
+          
+            0
+          
+          
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle P(t)=R(I(t))^{2}=R(I_{0}{\text{e}}^{-{\frac {t}{CR}}})^{2}=RI_{0}^{2}{\text{e}}^{-{\frac {2t}{CR}}}}
+  
+.
+Dette er altså et udtryk for effekten, der er positiv. Noget, der ikke er positivt, er energiændringen i kondensatoren, som må være faldende eller negativ for at kunne give en effekt. Differentialet af energien i kondensatoren som funktion af tiden er altså effektens negative modstykke. Dvs:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              E
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        −
+        P
+      
+    
+    {\displaystyle {\frac {{\text{d}}E}{{\text{d}}t}}=-P}
+  
+
+Funktionsforskriften for effekten sættes ind i dette udtryk:
+
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              E
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        −
+        R
+        
+          I
+          
+            0
+          
+          
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {{\text{d}}E}{{\text{d}}t}}=-RI_{0}^{2}{\text{e}}^{-{\frac {2t}{CR}}}}
+  
+
+Hvis man vil lave differentialet af energien om til energien, må ligningen integreres:
+
+  
+    
+      
+        ∫
+        
+          
+            
+              
+                d
+              
+              E
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        d
+        t
+        =
+        ∫
+        −
+        R
+        
+          I
+          
+            0
+          
+          
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+        d
+        t
+      
+    
+    {\displaystyle \int {\frac {{\text{d}}E}{{\text{d}}t}}dt=\int -RI_{0}^{2}{\text{e}}^{-{\frac {2t}{CR}}}dt}
+  
+
+Dette giver:
+
+  
+    
+      
+        E
+        (
+        t
+        )
+        =
+        R
+        ⋅
+        
+          I
+          
+            0
+          
+          
+            2
+          
+        
+        
+          e
+        
+        
+          
+            
+              C
+              R
+            
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+        +
+        k
+        =
+        (
+        R
+        
+          I
+          
+            0
+          
+        
+        
+          )
+          
+            2
+          
+        
+        C
+        
+          
+            1
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+        +
+        k
+        =
+        
+          U
+          
+            0
+          
+          
+            2
+          
+        
+        C
+        
+          
+            1
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+        +
+        k
+      
+    
+    {\displaystyle E(t)=R\cdot I_{0}^{2}{\text{e}}{\frac {CR}{2}}{\text{e}}^{-{\frac {2t}{CR}}}+k=(RI_{0})^{2}C{\frac {1}{2}}{\text{e}}^{-{\frac {2t}{CR}}}+k=U_{0}^{2}C{\frac {1}{2}}{\text{e}}^{-{\frac {2t}{CR}}}+k}
+  
+
+Da energien nødvendigvis må gå mod nul, bliver konstanten k nødt til at være nul:
+
+  
+    
+      
+        E
+        (
+        t
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          U
+          
+            0
+          
+          
+            2
+          
+        
+        
+          e
+          
+            −
+            
+              
+                
+                  2
+                  t
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle E(t)={\frac {1}{2}}CU_{0}^{2}e^{-{\frac {2t}{CR}}}}
+  
+.
+
+
+=== Energien i en kondensator ===
+Dette udtryk kan så igen bruges til at få et udtryk for den elektriske potentielle energi i kondensatoren. Da dette er energien, før kondensatoren får mulighed for at afgive noget af den, skal man bruge funktionsforskriften for energi og sætte tiden til nul:
+
+  
+    
+      
+        E
+        (
+        0
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          U
+          
+            0
+          
+          
+            2
+          
+        
+        
+          
+            e
+          
+          
+            −
+            
+              
+                
+                  2
+                  ⋅
+                  0
+                
+                
+                  C
+                  R
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          U
+          
+            0
+          
+          
+            2
+          
+        
+        
+          
+            e
+          
+          
+            0
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          U
+          
+            0
+          
+          
+            2
+          
+        
+        ⋅
+        1
+      
+    
+    {\displaystyle E(0)={\frac {1}{2}}CU_{0}^{2}{\text{e}}^{-{\frac {2\cdot 0}{CR}}}={\frac {1}{2}}CU_{0}^{2}{\text{e}}^{0}={\frac {1}{2}}CU_{0}^{2}\cdot 1}
+  
+
+Udtrykket for energien i en opladet kondensator er altså:
+
+Der findes mange hjælpermidler på internettet til at lave disse energiberegninger.
+
+
+== Forskellige typer kondensatorer ==
+Kondensatorer bruges i elektroniske kredsløb til en lang række forskelligartede formål, i kapaciteter fra omkring en pikofarad (1 pF = 10-12 farad) og op til nogle tiendedele farad, og med forskellige spændingsgrænser.
+
+
+=== Keramiske kondensatorer ===
+
+Keramiske kondensatorer har typisk kapaciteter fra 1 picofarad til omkring 100 nanofarad (1 nF = 10-9 farad), og består af to metalskiver forsynet med hver sin tilledning. Disse er adskilt og omgivet af et keramisk materiale, som derved tjener både som det isolerende dielektrikum og som "indpakning" af hensyn til komponentens mekaniske stabilitet.
+Da det anvendte keramiske materiale har en høj dielektricitetkonstant, kan denne type kondensator fremstilles med kapaciteter (og spændingsmæssige begrænsning) der er store set i forhold til komponentens rumlige dimensioner og simple konstruktion. Til gengæld varierer det keramiske materiales dielektricitetskonstant (og dermed også kondensatorens elektriske kapacitet) med spændingsforskellen mellem de to ledende plader, hvilket gør keramiske kondensatorer uegnede til visse anvendelser.
+
+
+=== Blokkondensatorer ===
+I denne type kondensatorer anvendes strimler af metal- og plastikfolier (to af hver slags, og med metalfolierne forbunder til hver sin tilledning), som er lagt sammen, og derefter viklet eller foldet sammen til en (som regel) firkantet blok, som rumligt fylder lidt i forhold til sin elektriske kapacitet og spændingsgrænse.
+Kondensatorer af denne slags har typisk kapaciteter fra ca. en nanofarad og op til cirka en mikrofarad (1 μF = 10-6 farad).
+
+
+=== Elektrolytkondensatorer ===
+
+Disse kondensatorer leveres typisk med kapaciteter fra lidt under en mikrofarad, og op til nogle tiendedele farad. Her udgøres den ene ledende plade af et stykke sammenrullet folie af aluminium, hvis overflade er blevet ætset ru – dette giver foliet et meget stort overfladeareal. Den ætsede overflade er blevet behandlet med ilt, så de yderste aluminiumatomer i foliet er gået i kemisk forbindelse med ilten og derved danner et isolerende og mikrometertyndt lag af aluminiumilte.
+Den anden plade udgøres af en elektrisk ledende pasta, som omgiver det sammenrullede folie og trænger ned i alle de ætsede fordybninger og ujævnheder i foliet, og derved danner en elektrisk leder med omtrent samme (store) areal som foliets.
+Pasta og folie er i praksis emballeret i en lille cylindrisk beholder af aluminium, som samtidig udgør den ene af kondensatorens to tilledninger.
+Det store areal og det mikrometer-tynde dielektrikum af aluminiumilte giver elektrolytkondensatoren en meget stor elektrisk kapacitet i forhold til det rumfang komponenten optager. Til gengæld er der også nogle ulemper ved elektrolytkondensatorer:
+
+Det meget tynde dielektrikum (laget af aluminiumilte) gør, at elektrolykondensatorer højest kan indrettes til at tåle nogle få hundrede volt, mens andre kondensatortyper kan laves til at klare adskillige tusinde volt.
+Spændingen over kondensatoren skal altid være polariseret sådan, at det ætsede folie er positivt ladet i forhold til den ydre aluminiumsbeholder og den mellemliggende, ledende pasta. Ved modsat polarisering ødelægges det tynde lag af aluminiumilte ad galvanisk vej, indtil der opstår en kortslutning mellem pastaen og aluminiumsfolien. Og da elektrolytkondensatorer netop har relativt store elektriske kapaciteter, er det betydelige mængder af elektrisk energi der "slipper igennem" en sådan kortslutning. Derved omsættes den evt. lagrede elektriske energi til varme, som kan få trykket i pastaen til at sprænge komponentens ydre indpakning.
+Da foliet er viklet sammen, fungerer det i sig selv (utilsigtet) som en spole, om end en spole med meget lille selvinduktion. Så længe kondensatoren bruges til at behandle enten jævnstrøm eller vekselstrøm med lave frekvenser er dette ikke noget problem, men ved frekvenser over nogle hundrede kilohertz begynder virkningen af denne spole at vise sig som en "dårlig forbindelse" til anode-foliet.
+I dag 2005 er det mange steder muligt at købe elektrolytkondensatorer der har lav spolevirkning. De hedder lav-ESR (ESR – Equivalent Series Resistance). Disse kondensatorer anvendes i højkvalitets-hifi-forstærkere og SMPS.
+
+
+=== Tantal-elektrolytkondensatorer ===
+
+Tantal-elektrolytkondensatorer benytter en teknik svarende til de "almindelige" elektrolytkondensatorer nævnt ovenfor, blot baseret på grundstoffet tantal. Med denne teknik kan man have samme elektriske kapacitet og spændingsgrænse indenfor mindre rumlige dimensioner. Desuden begynder problemerne som følge af selvinduktion først at vise sig ved højere frekvenser end for de almindelige elektrolytkondensatorer.
+
+
+=== Drejekondensator ===
+
+Drejekondensatoren er en pladekondensator, der består af en fast stator og en bevægelig rotor. Ved at variere den del af rotoren, der er drejet ind i statoren, kan drejekondensatorens kapacitet ændres. Stator og rotor kan yderligere være isoleret af et fast dielektrikum. En drejekondensator bruges til at indstille frekvensen for en svingningskreds, f.eks. til at indstille en radio.
+En særlig form for drejekondensator er trimmekondensatoren, der indstilles med en nøgle eller skruetrækker og derefter ikke indstilles (før svingningskredsen evt. skal justeres).
+
+
+== Kondensator opmærkning og koder ==
+De fleste producenter af kondensatorer følger Electronic Industries Alliance (EIA) standarderne for navngivning af kondensatorers spænding, kaapcitet og tolerance. Den findes i dag som internal standard IEC 60062.
+DC spændingstabel:
+
+AC spændingstabel:
+
+En kondensator med koden 474J skal læses som 47 ganget med 3. tals værdi i tabellen herunder. I dette tilfælde er det så 47 * 10000 = 470000 pF = 470 nF = 0.47 uF med J som betyder 5% tolerance.
+Kapacitetskoder
+
+
+== Fodnoter ==
+
+
+== Se også ==
+Ultrakondensator
+Elektronik
+Elektroniske komponenter
+Elektrisk spole
+Elektrisk svingningskreds
+Kapacitetsdiode

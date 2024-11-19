@@ -1,0 +1,106 @@
+Dioda je nelinearni poluvodički elektronski element (ili, rjeđe, elektronska cijev) s dva priključka koji posjeduje ispravljačka osobine. Poluvodičke diode se izvode se temelju pn-spoja ili, rjeđe, na temelju spoja metal-poluvodič. Diode se mogu razvrstati po materijalu na kojemu su rađene (silicij, germanij, galij arsenid, silicij karbid) i po tipu (ispravljačke, svijetleće, foto-diode, Zener diode, Schottky diode, tunel-diode itd.).
+
+
+== Fizikalne osnove rada ==
+Osnova rada većine današnjih dioda se temelji na strukturi koja se naziva pn-spoj. Kod pn dioda (spojnih) u ovisnosti o narinutom naponu, teče struja. Uz narinuti napon priključen tako da je negativan pol izvora na katodi a pozitivan na anodi, dioda je propusno polazirana i vodi stuju. Uz suprotan polaritet narinutog napona dioda neće voditi, tačnije kroz diodu će teći mala reverzna struja zasićenja. Drugi tip dioda su Schottky diode, koje svoj rad temelje na spoju metal-poluvodič.
+
+
+=== Strujno-naponska karakteristika ===
+
+Ovisnost stuje diode o priključenom naponu, odnosno strujno-naponsku karakteristiku (U-I karakteristiku), opisuje Shocklyeyeva jednačina:
+
+  
+    
+      
+        I
+        =
+        
+          I
+          
+            s
+          
+        
+        (
+        
+          e
+          
+            
+              U
+              
+                U
+                
+                  T
+                
+              
+            
+          
+        
+        −
+        1
+        )
+      
+    
+    {\displaystyle I=I_{s}(e^{U \over U_{T}}-1)}
+  
+
+Na U-I karakteristici postoje tri područja: područje zapiranja, područje vođenja i područje proboja. Napon koljena, koji se nekada naziva i napon uključenja diode, je onaj napon u području vođenja u kojem dioda naglo počinje voditi struju. Napon koljena ovisi o materijalu izrade, te iznosi 0.7V za silicij, 0.3V za germanijum, 1V za galijum-arsenid i 0.2V za spoj metal-poluvodič.
+
+
+== Tipovi dioda ==
+
+Postoje različiti tipovi dioda, a klasifikacija se radi po funkciji koju dioda obavlja:
+
+
+=== Ispravljačke (signalne) diode ===
+Ispravljačke diode su diode koje se koriste za ispravljanje izmjeničnih veličina u istosmjerne. Njihov rad je već opisan u uvodu: diode vode struju kada su propusno polarizirane, a ne vode kada su nepropusno. Zovu se još i signalne jer se koriste u demodulaciji radio signala. Ispravljačke diode su bile osnovni elementi jednih od prvih elektroničkih logičkih vrata (DTL - Diode Transistor Logic).
+
+
+=== Zener dioda ===
+Zener diode su diode koje se uglavnom koriste kao refentni izvori napona. Izraženo područje proboja kod tzv. Zenerovog napona se koristi za dobijanje stabilnog refentnog napona.
+
+
+=== Svijetleća dioda (LED) ===
+Svijetleće diode emitiraju svjetlost kada su propusno polarizirane. Boja svjetlosti zavisi od primjesa u poluvodiču, a mogu varirati od ultraljubičaste od infracrvene. Koriste se za prijenos signala (infracrvene) i signalizaciju. Koriste se i prilikom galvanskog odvajanja električnih krugova, najčešće u optokaplerima.
+
+
+=== Schottky dioda ===
+Schottkyeva dioda temelji svoj rad na ispravljačkom spoju metal-poluvodič. Osnovna karakteristika ove diode je mali napon koljena (0.2 V) i brzo vrijeme oporavka, pa se često koriste u impulsnim sklopovima ili kao zaštitni elementi.
+
+
+=== Tunel (Esakijeva) dioda ===
+Kod tunelskih dioda dolazi na uskom zapornom sloju do efekta tuneliranja kod čega slobodni elektroni i šupljine prelaze s jedne na drugu stranu PN-spoja kod malih napona.
+Tunelske diode se koriste u oscilatorima velikih frekvencija do 10 GHz. Odonos između struje Ip i Iv iznosi Ip/Iv=(5 do 10).
+
+
+=== Varikap dioda ===
+Varikap (varaktor, kapacitivna dioda) je dioda s naponski upravljanim kapacitetom. Kapacitet je posljedica osiromašenog sloja u pn-spoju. Upotrebljava se u modulatorima. Najčešće radi u nepopropusnom području.
+Kapacitet se kreće između 10 i 200pF, a probojni naponi su oko 40V. Kapacitivne diode se koriste za ugađanje tirajnih krugova i za automatsku regulaciju frekvencije u radiotehnici.
+
+
+== Poluvodički elementi sa sličnim radom kao dioda ==
+Tiristor
+Dijak
+Trijak
+
+
+== Primjene ==
+
+
+=== Ispravljanje izmjenične struje ===
+Ispravljanje izmjenične struje se temelji na osnovnome principu rada diode: vođenje struje kada je propusno polarizirana. Na taj način se iz izmjenične struje može dobiti istosmjerna struja.
+
+
+=== Modulacija i demodulacija signala ===
+Diode se upotrebljavaju u dva tipa AM modulatora (prekidački modulator i balansirani prstenasti modulator) te za FM modulator (modulator s kapacitivnom diodom).
+Diode se, kod demodulacije, najčešće koriste u sklopovima za demodulaciju amplitudno moduliranog signala (AM) u sklopu koji se naziva detektor envelope (eng. peak detector).
+
+
+=== Stabilizacija napona ===
+Stabilizacija napona podrazumjeva osiguravanje konstantnog istosmjernog napona s malom valovitošću (ukoliko se radi o dobijanju istosmjernog napona iz ispravljača) i malom (ili nikakvom) ovisnosti izlaznog napona o opterćenju. Kao stabilizator napona često se koristi Zener dioda.
+
+
+=== Zaštita od prenapona ===
+
+
+=== Indikatori ===
+Za ovu svrhu se koriste LE diode, najčešće ugrađene u alfanumeričke pokaznike poznatiji kao LED displeji. LE displeji mogu biti segmentni i matrični. LE diode se mogu koristiti i samostalno, kao indikacija neke veličine ili stanja (npr. uključen uređaj, punjenje baterije itd.).

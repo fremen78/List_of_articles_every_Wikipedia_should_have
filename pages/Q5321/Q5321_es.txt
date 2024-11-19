@@ -1,0 +1,235 @@
+Se denomina resistencia  o resistor  al componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico. En otros casos, como en las planchas, calentadores, etc., se emplean resistencias para producir calor aprovechando el efecto Joule. Se trata de un material formado por carbón y otros elementos resistivos para disminuir la corriente que lo atraviesa, oponiéndose al paso de la corriente.
+La corriente máxima y diferencia de potencial máxima en una resistencia viene condicionada por la máxima potencia que pueda disipar su cuerpo. Esta potencia se puede identificar visualmente a partir del diámetro, sin que sea necesaria otra indicación. Los valores más comunes son 0.25 W, 0.5 W y 1 W.
+Existen resistores cuyo valor puede ser ajustado manualmente llamados potenciómetros, reostatos o simplemente resistencias variables. También se producen dispositivos cuya resistencia varía en función de parámetros externos, como los termistores, que son resistores que varían con la temperatura; los varistores que dependen de la tensión a la que son sometidos, o las fotorresistencias que actúan de acuerdo a la luz recibida.
+La función eléctrica de una resistencia se especifica por su resistencia: las resistencias comerciales comunes se fabrican en un rango de más de nueve órdenes de magnitud. El valor nominal de la resistencia se encuentra dentro de la tolerancia de fabricación indicada en el componente.
+
+
+== Comportamiento en un circuito ==
+
+Los resistores se utilizan en los circuitos para limitar el valor de la corriente o para fijar el valor de la tensión, según la Ley de Ohm. A diferencia de otros componentes electrónicos, los resistores no tienen polaridad definida.
+
+
+== Sistemas de Codificación ==
+
+
+=== Código de colores ===
+
+Para caracterizar un resistor hacen falta tres valores: resistencia eléctrica, disipación máxima y precisión o tolerancia. Estos valores se indican normalmente en el encapsulado dependiendo del tipo de este; para el tipo de encapsulado axial, el que se observa en las fotografías, dichos valores van rotulados con un código de franjas de colores. 
+Estos valores se indican con un conjunto de rayas de colores sobre el cuerpo del elemento. Son tres, cuatro o cinco rayas; dejando la raya de tolerancia (normalmente plateada o dorada) a la derecha, se leen de izquierda a derecha. La última raya indica la tolerancia (precisión). De las restantes, la última es el multiplicador y las otras indican las cifras significativas del valor de la resistencia.  
+El valor de la resistencia eléctrica se obtiene leyendo las cifras como un número de una, dos o tres cifras; se multiplica por el multiplicador y se obtiene el resultado en ohmios (Ω). El coeficiente de temperatura únicamente se aplica en resistencias de alta precisión o tolerancia menor del 1 %.
+
+
+==== Cómo leer el valor de una resistencia ====
+En una resistencia tenemos generalmente cuatro líneas de colores, aunque podemos encontrar algunas que contengan cinco líneas (4 de colores y 1 que indica tolerancia).
+Vamos a tomar como ejemplo la más general, la de cuatro líneas. Con la banda correspondiente a la tolerancia a la derecha, leemos las bandas restantes de izquierda a derecha, como sigue:
+Las primeras dos bandas conforman un número entero de dos cifras:[cita requerida]
+
+La primera línea representa el dígito de las decenas.
+La segunda línea representa el dígito de las unidades.
+Luego:
+
+La tercera línea representa la potencia de 10 por la cual se multiplica el número.
+El resultado numérico se expresa en ohmios.
+Por ejemplo:
+
+Observamos la primera línea: verde = 5
+Observamos la segunda línea: amarillo = 4
+Observamos la tercera línea: rojo = 100
+Unimos los valores de las primeras dos líneas y multiplicamos por el valor de la tercera
+54 X 102 = 5400 Ω o 5,4 kΩ y este es el valor de la resistencia expresada en ohmios
+
+
+==== Ejemplos ====
+
+La caracterización de una resistencia de 2.700.000 Ω (2,7 MΩ), con una tolerancia de ±10 %, sería la representada en la figura 3:
+1.ª cifra:       rojo (2)
+2.ª cifra:       violeta (7)
+Multiplicador:  verde (100000)
+Tolerancia:     plateado (±10 %)
+
+El valor de la resistencia de la figura 4 es de 75 Ω y tolerancia de ±2 % dado que:
+1.ª cifra:        violeta (7)
+2.ª cifra:        verde (5)
+3.ª cifra:        negro (0)
+Multiplicador:   dorado (10-1)
+Tolerancia:      rojo (±2 %)
+
+
+=== Codificación de los resistores de montaje superficial ===
+
+A los resistores, cuando se encuentran en circuitos con tecnología de montaje de superficie, se les imprimen valores numéricos en un código similar al usado en los resistores axiales. 
+Los resistores de tolerancia estándar en estos tipos de montajes (Standard-tolerance Surface Mount Technology) son marcados con un código de tres dígitos, en el cual los primeros dos dígitos representan los primeros dos dígitos significativos y el tercer dígito representa una potencia de diez (el número de ceros). 
+
+
+=== Codificación en Resistencias SMD ===
+En las resistencias SMD o de montaje en superficie su codificación más
+usual es:
+
+Por ejemplo:
+
+Los resistores de menos de 100 Ω se escriben: 100, 220, 470, etc. El número cero final representa diez a la potencia de cero, lo cual es 1. 
+
+Por ejemplo:
+
+Algunas veces estos valores se marcan como "10" o "22" para prevenir errores.
+Los resistores menores de 10 Ω tienen una 'R' para indicar la posición del punto decimal. 
+
+Por ejemplo:
+
+Los resistores de precisión son marcados con códigos de cuatro dígitos, en los cuales los primeros tres dígitos son los números significativos y el cuarto es la potencia de diez.
+
+Por ejemplo:
+
+Los valores "000" y "0000" aparecen en algunas ocasiones en los enlaces de montajes de superficie, debido a que tienen una resistencia aproximada a cero.
+
+
+=== Codificación para uso Industrial ===
+Formato: XX 99999 ó XX 9999X
+[dos letras]<espacio>[valor del resistor (tres/cuatro dígitos)]<sinespacio>[código de tolerancia(numérico/alfanumérico - un dígito/una letra)]
+
+El rango de la temperatura operacional distingue los tipos comercial, industrial y militar de los componentes.
+
+Tipo Comercial : 0 °C a 70 °C
+Tipo Industrial : −40 °C a 85 °C (en ocasiones −25 °C a 85 °C)
+Tipo Militar : −55 °C a 125 °C (en ocasiones -65 °C   a 275 °C)
+Tipo Estándar: -5 °C a 60 °C
+
+
+== Resistencias fijas ==
+
+
+=== Disposición de los cables ===
+
+Los componentes  Through-hole suelen tener "cables" que salen del cuerpo "axialmente", es decir, en una línea paralela al eje más largo de la pieza. Otros tienen cables que salen de su cuerpo "radialmente" en su lugar. Otros componentes pueden ser de SMT (tecnología de montaje en superficie), mientras que las resistencias de alta potencia pueden tener uno de sus cables diseñado en el disipador de calor.
+
+
+=== Composición de carbono ===
+
+Las resistencias de composición de carbono (RCC) consisten en un elemento resistivo cilíndrico sólido con cables incrustados o tapas metálicas en las que se fijan los cables. El cuerpo de la resistencia está protegido con pintura o plástico. Las resistencias de composición de carbono de principios del siglo XX tenían cuerpos sin aislar; los cables de plomo se enrollaban alrededor de los extremos de la varilla del elemento de resistencia y se soldaban. La resistencia terminada se pintaba según el código de colores de su valor.[1]​
+Las resistencias de composición de carbono siguen estando disponibles, pero son relativamente caras. Los valores varían desde fracciones de un ohmio hasta 22 megaohmios. Debido a su elevado precio, estas resistencias ya no se utilizan en la mayoría de las aplicaciones. Sin embargo se utilizan en fuentes de alimentación y controles de soldadura.[2]​ También se demandan para la reparación de equipos electrónicos antiguos en los que la autenticidad es un factor importante.[3]​[2]​
+Hay resistencias de carbono muy antiguas, cuyo código de colores hay que leerlo así: Color del extremo, que indica la primera cifra, color del cuerpo, que indica la segunda cifra, y color de un punto marcado en el cuerpo, que indica el nº de ceros a añadir
+
+
+=== Pila de carbono ===
+Una resistencia de pila de carbono está formada por una pila de discos de carbono comprimidos entre dos placas metálicas de contacto. El ajuste de la presión de apriete modifica la resistencia entre las placas. Estas resistencias se utilizan cuando se requiere una carga ajustable, por ejemplo, en las pruebas de baterías de automóviles o transmisores de radio. Una resistencia de pila de carbono también puede utilizarse como control de velocidad para pequeños motores de electrodomésticos (máquinas de coser, batidoras de mano) con potencias de hasta unos cientos de vatios.[4]​ Una resistencia de pila de carbono puede incorporarse en reguladores de tensión automáticos para generadores, donde la pila de carbono controla la corriente de campo para mantener una tensión relativamente constante.[5]​ El principio también se aplica en el  micrófono de carbono.
+
+
+=== Película de carbono ===
+
+Se deposita una película de carbono sobre un sustrato aislante y se corta en ella una  hélice para crear un camino resistivo largo y estrecho. La variación de las formas, unida a la resistividad del carbono amorfo (que oscila entre 500 y 800 μΩ m), puede proporcionar una amplia gama de valores de resistencia. En comparación con la composición del carbono, se caracterizan por su bajo nivel de ruido, debido a la distribución precisa del grafito puro sin aglutinante.[6]​ Las resistencias de película de carbono presentan un rango de potencia de 0,125 W a 5 W a 70 °C. Las resistencias disponibles van desde 1 ohm hasta 10 megaohmios. La resistencia de película de carbono tiene un rango de temperatura de funcionamiento de -55 °C a 155 °C. Tiene un rango de tensión máxima de trabajo de 200 a 600 voltios.  Las resistencias de película de carbono especiales se utilizan en aplicaciones que requieren una alta estabilidad de impulsos.[2]​
+
+
+=== Resistencias de carbono impresas ===
+
+Las resistencias de composición de carbono pueden imprimirse directamente en placa de circuito impreso (PCB) como parte del proceso de fabricación de PCB. Aunque esta técnica es más común en los módulos de PCB híbridos, también puede utilizarse en PCB de fibra de vidrio estándar. Las tolerancias suelen ser bastante grandes y pueden ser del orden del 30%. Una aplicación típica sería la de las  resistencias de pull-up no críticas.
+
+
+=== Película gruesa y fina ===
+Las resistencias de película gruesa se popularizaron durante la década de 1970, y la mayoría de las SMD (dispositivo de montaje superficial) hoy en día son de este tipo. El elemento resistivo de las películas gruesas es 1000 veces más grueso que el de las películas finas,[7]​ pero la principal diferencia es cómo se aplica la película al cilindro (resistencias axiales) o a la superficie (resistencias SMD).
+Las resistencias de película fina se fabrican por sputtering, o pulverización catódica, al material resistivo sobre un sustrato aislante.  A continuación la película se graba de forma similar al antiguo proceso (sustractivo) de fabricación de placas de circuitos impresos; es decir, la superficie se recubre con un material fotorresistente, luego se cubre con una película patrón, se irradia con luz ultravioleta y, a continuación, se revela la capa fotosensible expuesta y se graba la película fina subyacente.
+Las resistencias de película gruesa se fabrican mediante procesos de serigrafía y estarcido.[2]​
+
+
+=== Película metálica ===
+Un tipo común de resistencias con plomo axial hoy en día es la resistencia de película metálica. Las resistencias de electrodo metálico sin plomo suelen utilizar la misma tecnología.
+Las resistencias de película metálica suelen estar recubiertas de níquel-cromo (NiCr), pero pueden estar recubiertas de cualquiera de los materiales cermet mencionados anteriormente para las resistencias de película fina. A diferencia de las resistencias de película fina, el material puede aplicarse mediante técnicas diferentes a la de sputtering (aunque ésta es una de las técnicas).  Además, a diferencia de las resistencias de película fina, el valor de la resistencia se determina cortando una hélice a través del revestimiento en lugar de grabarlo. Esto es similar a la forma en que se fabrican las resistencias de carbono. El resultado es una tolerancia razonable (0,5 %, 1 % o 2 %) y un coeficiente de temperatura que suele estar entre 50 y 100 ppm/K.[8]​ Las resistencias de película metálica poseen buenas características de ruido y baja no linealidad debido a un bajo coeficiente de tensión.  También son beneficiosas su estrecha tolerancia, su bajo coeficiente de temperatura y su estabilidad a largo plazo.[2]​
+
+
+=== Película de óxido metálico ===
+Las resistencias de película de óxido metálico están hechas de óxidos metálicos, lo que da lugar a una mayor temperatura de funcionamiento y a una mayor estabilidad y fiabilidad que las de película metálica. Se utilizan en aplicaciones con altas exigencias de resistencia.
+
+
+=== Devanado de cables ===
+
+Las resistencias bobinadas se fabrican comúnmente enrollando un hilo metálico, normalmente nicromo, alrededor de un núcleo de cerámica, plástico o fibra de vidrio. Los extremos del cable se sueldan a dos tapas o anillos, unidos a los extremos del núcleo. El conjunto está protegido con una capa de pintura, plástico moldeado o un esmalte horneado a alta temperatura. Estas resistencias están diseñadas para soportar temperaturas inusualmente altas, de hasta 450 °C.[2]​ Los cables de las resistencias wirewound de baja potencia suelen tener entre 0,6 y 0,8 mm de diámetro y están estañados para facilitar la soldadura. Para las resistencias bobinadas de mayor potencia, se utiliza una carcasa exterior de cerámica o de aluminio sobre una capa aislante; si la carcasa exterior es de cerámica, estas resistencias se describen a veces como resistencias de "cemento", aunque en realidad no contienen ningún cemento Portland tradicional. Las resistencias con carcasa de aluminio están diseñadas para ser conectadas a un disipador de calor para disipar el calor; la potencia nominal depende de su uso con un disipador de calor adecuado, por ejemplo, una resistencia de 50 W de potencia nominal se sobrecalienta a una fracción de la potencia disipada si no se utiliza con un disipador de calor. Las grandes resistencias bobinadas pueden tener una potencia nominal de 1000 vatios o más.
+Debido a que las resistencias bobinadas son electromagnéticas tienen más inductancia indeseable que otros tipos de resistencias, aunque enrollar el cable en secciones con dirección alterna puede minimizar la inductancia. Otras técnicas emplean el bobinado bifilar, o un formador plano y fino (para reducir el área de la sección transversal de la bobina). Para los circuitos más exigentes, se utilizan resistencias con bobinado de Ayrton-Perry.
+Las aplicaciones de las resistencias bobinadas son similares a las de las resistencias de composición, con la excepción de la alta frecuencia.  La respuesta en alta frecuencia de las resistencias wirewound es sustancialmente peor que la de una resistencia de composición.[2]​
+
+
+=== Resistencia de lámina metálica ===
+
+En 1960 Felix Zandman y Sidney J. Stein[9]​ presentaron un desarrollo de resistencia de lámina de muy alta estabilidad.
+El elemento de resistencia primario de una resistencia de lámina es una lámina de aleación de cromo y níquel de varias micras de espesor.  Las aleaciones de cromo-níquel se caracterizan por tener una gran resistencia eléctrica (unas 58 veces la del cobre), un pequeño coeficiente de temperatura y una gran resistencia a la oxidación. Algunos ejemplos son el Chromel A y el Nicromo V, cuya composición típica es de 80 Ni y 20 Cr, con un punto de fusión de 1420 °C. Cuando se añade hierro, la aleación de cromo-níquel se vuelve más dúctil. El Nicromo y el Chromel C son ejemplos de una aleación que contiene hierro. La composición típica del Nicromo es de 60 Ni, 12 Cr, 26 Fe, 2 Mn y la del Chromel C, 64 Ni, 11 Cr, Fe 25. La temperatura de fusión de estas aleaciones es de 1350° y 1390 °C, respectivamente.[10]​
+Desde su introducción en la década de 1960, las resistencias de lámina han tenido la mejor precisión y estabilidad de cualquier resistencia disponible. Uno de los parámetros importantes de la estabilidad es el coeficiente de temperatura de la resistencia (CTR). El CTR de las resistencias de lámina es extremadamente bajo, y se ha ido mejorando a lo largo de los años. Una gama de resistencias de lámina de ultraprecisión ofrece un TCR de 0,14 ppm/°C, tolerancia ±0,005 %, estabilidad a largo plazo (1 año) 25 ppm, (3 años) 50 ppm (mejorada 5 veces por el sellado hermético), estabilidad bajo carga (2000 horas) 0.03 %, EMF térmica 0,1 μV/°C, ruido -42 dB, coeficiente de tensión 0,1 ppm/V, inductancia 0,08 μH, capacitancia 0,5 pF.[11]​
+La estabilidad térmica de este tipo de resistencias también tiene que ver con los efectos opuestos de la resistencia eléctrica del metal que aumenta con la temperatura, y que se reduce por la expansión térmica que conduce a un aumento del grosor de la lámina, cuyas otras dimensiones están limitadas por un sustrato cerámico.[12]​
+
+
+=== Elementos de medición ===
+Un shunt o derivador amperimétrico es un tipo especial de resistencia de detección de corriente, que tiene cuatro terminales y un valor en miliohmios o incluso micro-ohmios. Los instrumentos de medición de corriente, por sí mismos, suelen aceptar sólo corrientes limitadas. Para medir corrientes elevadas, la corriente pasa por el shunt a través del cual se mide la caída de tensión y se interpreta como corriente. Un shunt típico consiste en dos bloques metálicos sólidos, a veces de latón, montados sobre una base aislante. Entre los bloques, y soldados a ellos, hay una o más tiras de aleación de manganina con bajo coeficiente de temperatura de resistencia. Unos grandes tornillos roscados en los bloques realizan las conexiones de corriente, mientras que unos tornillos mucho más pequeños proporcionan las conexiones del voltímetro. Los shunts están clasificados por la corriente a escala completa, y a menudo tienen una caída de tensión de 50 mV a la corriente nominal. Estos medidores se adaptan a la corriente nominal de la derivación utilizando una esfera marcada adecuadamente; no es necesario realizar ningún cambio en las demás partes del medidor.
+
+
+=== Resistencia de red ===
+En las aplicaciones industriales de alta corriente, una resistencia de rejilla es un gran entramado refrigerado por convección de tiras de aleación metálica estampadas conectadas en filas entre dos electrodos. Estas resistencias de grado industrial pueden ser tan grandes como un refrigerador; algunos diseños pueden manejar más de 500 amperios de corriente, con un rango de resistencias que se extiende por debajo de 0,04 ohmios. Se utilizan en aplicaciones como el frenado dinámico y el banco de carga para locomotoras y tranvías, la puesta a tierra del neutro para la distribución industrial de CA, las cargas de control para grúas y equipos pesados, la prueba de carga de generadores y el filtrado de armónicos para subestaciones eléctricas.[13]​
+El término resistencia de rejilla se utiliza a veces para describir una resistencia de cualquier tipo conectada a la rejilla de control de un  tubo de vacío. No se trata de una tecnología de resistencias; es una topología de circuito electrónico.
+
+
+== Resistencias variables ==
+
+
+=== Resistencias ajustables ===
+Una resistencia puede tener uno o más puntos de derivación fijos para que la resistencia se pueda cambiar moviendo los cables de conexión a diferentes terminales. Algunas resistencias de potencia bobinadas tienen un punto de conexión que puede deslizarse a lo largo del elemento de resistencia, lo que permite utilizar una parte más grande o más pequeña de la resistencia.
+Cuando se requiera un ajuste continuo del valor de resistencia durante el funcionamiento del equipo, el grifo de resistencia deslizante se puede conectar a una perilla accesible para un operador. Tal dispositivo se llama reostato y tiene dos terminales.
+
+
+=== Potenciómetros ===
+
+Un potenciómetro (coloquialmente, pot ) es una resistencia de tres terminales con un punto de roscado continuamente ajustable controlado por la rotación de un eje o perilla o por un deslizador lineal.[14]​ El nombre potenciómetro proviene de su función como divisor de voltaje ajustable para proporcionar un potencial variable en el terminal conectado al punto de toma. El control de volumen en un dispositivo de audio es una aplicación común de un potenciómetro. Un potenciómetro típico de baja potencia (ver dibujo) está construido con un elemento de resistencia plano (B) de composición de carbono, película metálica o plástico conductor, con un bronce fosforoso elástico (C) que se mueve a lo largo de la superficie. Una construcción alternativa es el alambre de resistencia enrollado en una forma, con el limpiaparabrisas deslizándose axialmente a lo largo de la bobina.[14]​ Estos tienen menor resolución, ya que a medida que el limpiaparabrisas se mueve, la resistencia cambia en pasos iguales a la resistencia de un solo giro.[14]​
+Los potenciómetros multivuelta de alta resolución se utilizan en aplicaciones de precisión. Estos tienen elementos de resistencia enrollados de alambre típicamente enrollados en un mandril helicoidal, con el limpiaparabrisas moviéndose sobre una pista helicoidal cuando se gira el control, haciendo contacto continuo con el alambre. Algunos incluyen un revestimiento de resistencia de plástico conductor sobre el cable para mejorar la resolución. Estos suelen ofrecer diez vueltas de sus ejes para cubrir su rango completo. Por lo general, se configuran con diales que incluyen un contador de vueltas simple y un cuadrante graduado, y generalmente pueden lograr una resolución de tres dígitos. Las computadoras analógicas electrónicas los usaron en cantidad para establecer coeficientes, y los osciloscopios de barrido retardado de las últimas décadas incluyeron uno en sus paneles.
+
+
+=== Caja de décadas ===
+
+Una caja de décadas de resistencias o caja de sustitución de resistencias es una unidad que contiene resistencias de muchos valores, con uno o más interruptores mecánicos que permiten marcar cualquiera de las diversas resistencias discretas que ofrece la caja. Por lo general, la resistencia tiene una gran precisión, que va desde una precisión de laboratorio/calibración de 20 partes por millón, hasta una precisión de campo del 1 %. También existen cajas económicas con menor precisión. Todos los tipos ofrecen una forma cómoda de seleccionar y cambiar rápidamente una resistencia en los trabajos de laboratorio, experimentación y desarrollo, sin necesidad de colocar las resistencias una a una, ni de almacenar cada valor. La gama de resistencias proporcionada, la resolución máxima y la precisión caracterizan la caja. Por ejemplo, una caja ofrece resistencias de 0 a 100 megaohmios, resolución máxima de 0,1 ohmios, precisión de 0,1 %.[15]​
+
+
+=== Dispositivos especiales ===
+Existen varios dispositivos cuya resistencia cambia con diversas magnitudes. La resistencia de los termistores NTC presenta un fuerte coeficiente de temperatura negativo, lo que los hace útiles para medir temperaturas. Dado que su resistencia puede ser grande hasta que se les permite calentarse debido al paso de la corriente, también se utilizan comúnmente para evitar el exceso de subidas de corriente cuando se encienden los equipos. Del mismo modo, la resistencia de un humistor varía con la humedad. Un tipo de fotodetector, la fotorresistencia, tiene una resistencia que varía con la iluminación.
+La galga extensométrica, inventada por Edward E. Simmons y Arthur C. Ruge en 1938, es un tipo de resistencia que cambia de valor con la tensión aplicada. Se puede utilizar una sola resistencia, o un par (medio puente), o cuatro resistencias conectadas en una configuración de puente de Wheatstone. La resistencia extensométrica se une con adhesivo a un objeto que se somete a la deformación mecánica. Con la galga extensométrica y un filtro, un amplificador y un convertidor analógico/digital, se puede medir la deformación de un objeto.
+Un invento relacionado, pero más reciente, utiliza un compuesto de tunelización cuántica para detectar la tensión mecánica. Pasa una corriente cuya magnitud puede variar en un factor de 1012 en respuesta a los cambios en la presión aplicada.
+
+
+=== Variedades especiales ===
+Cermet
+Fenólica
+Tantalio
+Resistencia de agua
+
+
+== Resistencias de precisión ==
+Las resistencias de precisión o de hojas metálicas, conocidas también por su nombre en inglés foil resistors, son aquellas cuyo valor se ajusta con errores de 100 partes por millón o menos y tienen además una variación muy pequeña con la temperatura, del orden de 10 partes por millón entre 25 y 125 grados Celsius. Este componente tiene una utilización muy especial en circuitos analógicos, con ajustes muy estrechos de las especificaciones.
+La resistencia logra una precisión tan alta en su valor, como en su especificación de temperatura, debido a que la misma debe ser considerada como un sistema, donde los materiales que la conforman interactúan para lograr su estabilidad.
+Una hoja de metal muy fino se pega a un aislador como el vidrio o cerámica, al aumentar la temperatura, la expansión térmica del metal es mayor que la del vidrio o cerámica y al estar pegado al aislador, produce en el metal una fuerza que lo comprime reduciendo su resistencia eléctrica, como el coeficiente de variación de resistencia del metal con la temperatura es casi siempre positivo, la suma casi lineal de estos factores hace que la resistencia no varíe o que lo haga mínimamente.[16]​
+Este componente tuvo su origen en varios países y en diferentes tiempos.
+Por los años 50, algunas empresas y centros académicos de tecnología, en especial en los Estados Unidos, comenzaron a investigar nuevas técnicas de componentes que se adaptaran a la industria naciente de los semiconductores.
+Los nuevos sistemas electrónicos debían ser más estables y más compactos y la industria de ese tiempo puso más énfasis en la precisión y en la estabilidad del comportamiento con los cambios de temperatura. En la tecnología de resistencias había dos tipos emergentes, las hechas con películas metálicas muy finas, depositadas en substratos aislantes, como el vidrio o la cerámica, y cuyo depósito se realizaba con técnicas de evaporación metálicas. Luego estaban las resistencias hechas con hojas metálicas, cuyos espesores eran mayores que los realizados con películas metálicas. Las hojas metálicas se pegaban a substratos aislante, como el vidrio o la cerámica.
+Investigando el origen de esta última tecnología llegamos a Duncan y John Cox, los cuales patentaron en 1951, un resistor para uso de calefacción.[17]​ Si bien el objeto de este componente era de ser usado como elemento de calefacción, la novedad del mismo residía en su construcción geométrica, la forma de las líneas resistivas fueron adoptadas por empresas dedicadas a la fabricación de resistencias de hojas metálicas realizada en 1979 por Benjamín Solow,[18]​ o en su versión mejorada de 1983 realizada por Josph Szware,[19]​
+La  realización de una resistencia de película metálica delgada, requiere experiencia avanzada en múltiples disciplinas como el dibujo vectorial, la metalurgia, adhesivos de alta temperatura, fotolitografía de líneas muy finas, grabado fino y pasivación química, que lo enmascara en contra de la acción de agentes externos, como una reacción química o electroquímica, la que reduce o es completamente impedida, diseño de la forma de los conductores para minimizar la inductancia, capacitancia, exceso de ruido y puntos calientes (puntos de alta densidad de corriente), análisis de tensiones mecánicas y sus componentes térmicos, encapsulamiento que reduzcan la tensión mecánica y las operaciones de fabricación  en proceso y posteriores a la mejora de la fiabilidad. 
+Las resistencias de películas metálicas delgadas se usan en áreas de ambientes hostiles como las que ocurre en el espacio.  Las demandas de la industria aeroespacial difieren de los requisitos comerciales en un área importante: la confiabilidad debe continuar. En algunos casos, solo hay una oportunidad para completar la misión y el sistema no puede ser devuelto al taller para reparaciones. Algunos sistemas deben transitar el espacio profundo durante 10 años o más antes de activarse. con una gran confiabilidad a largo plazo.
+Un ejemplo simple es su utilización en amplificadores operacionales, la ganancia se establece por la relación de la resistencia de realimentación a la resistencia de entrada. Con amplificadores diferenciales, la relación se basa de un conjunto de cuatro resistencias. En ambos casos, cualquier cambio en las relaciones de estas resistencias afecta directamente la función del circuito. Estas pueden cambiar debido a diferentes coeficientes de temperatura que experimentan un calentamiento, ya sea interno o externo, por lo tanto,  es común que muchos circuitos dependan de muchas características de estabilidad relacionadas con la aplicación, todo al mismo tiempo en los mismos dispositivos.
+
+
+=== Efecto piezorresistivo ===
+Como se indicó inicialmente, hay un efecto de interacción de fuerzas entre la hoja metálica y el substrato; la hoja metálica se comporta como una galga extensométrica, que es un sensor basado en el efecto piezorresistivo, un esfuerzo que deforma a la galga producirá una variación en su resistencia eléctrica.
+Este sensor, en su forma básica fue usado por primera vez en 1936. El descubrimiento del principio fue realizado en 1856 por Lord Kelvin, el cual cargo alambres de cobre y de hierro, produciendo en los mismos una tensión mecánica y registrando un incremento de la resistencia eléctrica con la deformación unitaria por tracción (strain) del alambre, observó que el alambre de hierro tiene un incremento de la resistencia mayor que el alambre de cobre, cuando son sometidos a la misma deformación unitaria.
+De los experimentos realizados por Lord Kelvin en 1856 resulta que cuando se somete un metal a una fuerza mecánica, se produce un cambio en su resistencia eléctrica. Así, sometiendo al metal a una fuerza que lo estire se produce un aumento de su resistencia, y si le aplicamos una compresión, su resistencia eléctrica disminuye. Este efecto, con el tiempo abrió un nuevo campo de las mediciones.
+Un aumento de la temperatura en un metal produce dos efectos, una dilatación y un aumento de su resistencia eléctrica.
+En 1959, William T. Bean, introduce una galga extensométrica, o también llamada en inglés strain gauge de tipo de hoja metálica,[20]​ con una geometría Cox utilizada para medir la deformación unitaria, de materiales sometidos a fuerzas mecánicas, varios puntos hay que resaltar de este desarrollo: 1) utiliza una hoja metálica con geometría Cox, 2) utiliza metales como constantan o nicromo y 3) la utilización de un método fotográfico y luego el uso de una erosión química para realizar el modelo resistivo.
+Estudiando este desarrollo, se puede especular que los técnicos que utilizaban las galga extensométrica, midiento las propiedades mecánicas de los vidrios y cerámicas, encontraron una variación muy chica de la resistencia con la temperatura, debido precisamente al efecto citado inicialmente.
+La primera descripción de este sistema, utilizando las propiedades geométricas, físicas y químicas, como la geometría Cox, el efecto Kelvin y el uso de la aleación níquel-cromo, fueron integradas todas ellas en un componente, fue realizada por Zandman en 1970.[21]​
+
+
+== Referencias ==
+
+
+== Véase también ==
+Efecto Joule
+Ley de Ohm
+Potencia que disipa una resistencia
+
+
+== Enlaces externos ==
+Calculador de resistencias Programa para calcular el valor de una resistencia.
+Código de colores de resistencias eléctricas Aplicación web para el cálculo del código de colores de resistencias eléctricas.
+Lectura del código de las resistencias SMD
+Calculador del valor estándar Aplicación web que calcula el valor estándar E24 y E96 para un valor de resistencia determinado.
+Resistencias de películas metálicas delgadas

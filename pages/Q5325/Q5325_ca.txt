@@ -1,0 +1,1966 @@
+Un inductor és un component electrònic passiu dels circuits elèctrics que, a causa del fenomen de l'autoinducció, emmagatzema energia en forma de camp magnètic creat pel pas del corrent elèctric. Aquest component també acostuma a rebre els noms de bobina o inductància. La capacitat d'un inductor d'emmagatzemar energia es mesura per la seva inductància que s'expressa en henrys (simbolitzat H), una unitat derivada del Sistema Internacional d'unitats.
+
+A la teoria de circuits un inductor ideal tindria inductància però no presentaria resistència ni capacitància, per això no dissiparia energia. En aquest component ideal tota l'energia elèctrica absorbida seria emmagatzemada en forma de camp magnètic. Però els inductors reals, que són fabricats amb un enrotllament de fil conductor, són equivalents a una combinació d'inductància, certa resistència deguda a la resistivitat del fil, i certa capacitància. A algunes freqüències, un inductor real es comporta com un circuit ressonant a causa de la capacitància paràsita. A més de dissipar energia per la resistència elèctrica del fil conductor, el nucli dels inductors també la poden dissipar a causa de la histèresi i a grans corrents també es poden produir pèrdues d'energia a causa de la no linealitat dels circuits.
+
+
+== El dipol bobina ==
+Amb els termes inductor i bobina es designa un dipol format per una multitud d'espires de fil de coure al voltant d'un nucli. Aquest nucli pot ser buit o fet d'un material que afavoreixi la inducció electromagnètica (un material ferromagnètic per tal d'augmentar el valor de la inductància).
+En el cas d'una bobina amb un nucli magnètic no s'ha de sobrepassar mai en valor instantani el valor màxim de la intensitat prescrita pel fabricant. En cas de sobrepassar aquest límit, ni que sigui per un temps breu, hi ha risc de “saturar” el circuit magnètic i això provocaria una disminució del valor de la inductància que podria provocar una sobreintensitat.
+Un inductor és un dipol elèctric autoinductiu més o menys lineal que es caracteritza per la seva inductància, però també per una resistència (la del fil elèctric utilitzat), en principi feble, però que és la responsable principal de les pèrdues.
+
+
+=== Models de l'inductor real ===
+El model de l'inductor ideal és una autoinductància, simbolitzada habitualment com L. Però un inductor real, particularment si està bobinat al voltant d'un nucli de material ferromagnètic, és un dipol complex que posseeix un gran nombre de paràmetres i també un component al que es produeixen una sèrie de fenòmens físics alguns dels quals originen la no linealitat, com per exemple el fenomen de la histèresi.
+
+
+==== Models de dipols ====
+Els models més simples i més habitualment utilitzats són els que corresponen a l'associació entre una inductància i una resistència elèctrica:
+
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+===== Model en sèrie =====
+El model en sèrie format per una resistència i una inductància tindria una equació com aquesta:
+
+  
+    
+      
+        u
+        =
+        
+          L
+          
+            s
+          
+        
+        ⋅
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        +
+        
+          r
+          
+            s
+          
+        
+        ⋅
+        i
+        
+      
+    
+    {\displaystyle u=L_{s}\cdot {\frac {di}{dt}}+r_{s}\cdot i\,}
+  
+
+
+===== Model en paral·lel =====
+El model en paral·lel format per una resistència i una inductància tindria una equació com aquesta:
+
+  
+    
+      
+        i
+        =
+        
+          
+            1
+            
+              L
+              
+                p
+              
+            
+          
+        
+        ⋅
+        
+          ∫
+          
+            t
+          
+        
+        u
+        d
+        t
+        +
+        
+          
+            u
+            
+              r
+              
+                p
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle i={\frac {1}{L_{p}}}\cdot \int _{t}udt+{\frac {u}{r_{p}}}\,}
+  
+
+
+===== Equivalència entre els dos models =====
+En un règim sinusoidal de freqüència f i de pulsació ω, els dos models anteriors són equivalents i intercanviables a condició de posar:
+
+  
+    
+      
+        
+          r
+          
+            p
+          
+        
+        =
+        
+          r
+          
+            s
+          
+        
+        
+          (
+          
+            1
+            +
+            
+              Q
+              
+                2
+              
+            
+          
+          )
+        
+        
+      
+    
+    {\displaystyle r_{p}=r_{s}\left(1+Q^{2}\right)\,}
+  
+
+  
+    
+      
+        
+          L
+          
+            p
+          
+        
+        ω
+        =
+        
+          L
+          
+            s
+          
+        
+        ω
+        
+          (
+          
+            
+              
+                1
+                +
+                
+                  Q
+                  
+                    2
+                  
+                
+              
+              
+                Q
+                
+                  2
+                
+              
+            
+          
+          )
+        
+        
+      
+    
+    {\displaystyle L_{p}\omega =L_{s}\omega \left({\frac {1+Q^{2}}{Q^{2}}}\right)\,}
+  
+ o bé : 
+  
+    
+      
+        
+          L
+          
+            s
+          
+        
+        ω
+        =
+        
+          L
+          
+            p
+          
+        
+        ω
+        
+          (
+          
+            1
+            +
+            
+              Q
+              
+                2
+              
+            
+          
+          )
+        
+        
+      
+    
+    {\displaystyle L_{s}\omega =L_{p}\omega \left(1+Q^{2}\right)\,}
+  
+
+On 
+  
+    
+      
+        Q
+        =
+        
+          
+            
+              
+                L
+                
+                  s
+                
+              
+              ω
+            
+            
+              r
+              
+                s
+              
+            
+          
+        
+        =
+        
+          
+            
+              r
+              
+                p
+              
+            
+            
+              
+                L
+                
+                  p
+                
+              
+              ω
+            
+          
+        
+        
+      
+    
+    {\displaystyle Q={\frac {L_{s}\omega }{r_{s}}}={\frac {r_{p}}{L_{p}\omega }}\,}
+  
+ és el factor de qualitat de la bobina.
+
+
+==== Models amb tres dipols ====
+Als models precedents de vegades cal afegir un condensador en paral·lel amb el conjunt per tenir en compte dels efectes capacitius que apareixen entre les espires. Aquest valor de capacitància és molt feble però esdevé predominant a altes freqüències
+
+		
+			
+			
+		
+
+
+== Construcció ==
+Un inductor està constituït usualment per una bobina de material conductor, típicament cable de coure. Existeixen inductors amb nucli d'aire o amb nucli d'un material ferrós, per incrementar la seva inductància. Les bobines típiques estan formades per espires, fetes de fil esmaltat, i solen envoltar un nucli de material ferromagnètic. Als motors elèctrics van col·locades a dintre les ranures.
+Els inductors poden estar també construïts en circuits integrats, usant el mateix procés utilitzat per realitzar microprocessadors. En aquests casos s'usa, comunament, l'alumini com a material conductor. Tanmateix, és rar que es construeixin inductors dins dels circuits integrats; és molt més pràctic usar un circuit dit "girador" que, mitjançant un amplificador operacional, fa que un condensador es comporti com si fos un inductor.
+Petits inductors usats per a freqüències molt altes, poden ser realitzats de vegades amb un conductor passant a través d'un cilindre de ferrita o granulat.
+
+
+== Relació entre la tensió i el corrent ==
+
+La diferència de potencial 
+  
+    
+      
+        
+          u
+          
+            
+              B
+            
+          
+        
+      
+    
+    {\displaystyle u_{\mathrm {B} }}
+  
+ als borns de l'inductor i la intensitat del corrent elèctric 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ es relacionen per mitjà de l'equació diferencial:
+
+  
+    
+      
+        
+          u
+          
+            
+              B
+            
+          
+        
+        =
+        L
+        
+          
+            
+              
+                d
+              
+              i
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        +
+        r
+        i
+      
+    
+    {\displaystyle u_{\mathrm {B} }=L{\frac {\mathrm {d} i}{\mathrm {d} t}}+ri}
+  
+
+on 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+ és la inductància de la bobina i 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ la seva resistència elèctrica neta (en el cas d'una bobina ideal, 
+  
+    
+      
+        r
+        =
+        0
+      
+    
+    {\displaystyle r=0}
+  
+).
+
+
+=== Comportament d'un inductor sotmès a una tensió ===
+Quan l'inductor és sotmès sobtadament a una tensió constant E amb una resistència 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ en sèrie, l'equació diferencial tindria com a solució:
+
+  
+    
+      
+        i
+        =
+        
+          
+            E
+            r
+          
+        
+        
+          (
+          
+            1
+            −
+            
+              
+                e
+              
+              
+                −
+                
+                  
+                    t
+                    τ
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle i={\frac {E}{r}}\left(1-\mathrm {e} ^{-{\frac {t}{\tau }}}\right)}
+  
+,
+on 
+  
+    
+      
+        τ
+        =
+        
+          
+            L
+            r
+          
+        
+      
+    
+    {\displaystyle \tau ={\frac {L}{r}}}
+  
+ és la constant de temps de la bobina.
+
+
+==== Demostració matemàtica ====
+Si suposem que les solucions de l'equació diferencial tenen la forma
+
+  
+    
+      
+        i
+        =
+        A
+        +
+        B
+        
+          
+            e
+          
+          
+            C
+            t
+          
+        
+      
+    
+    {\displaystyle i=A+B\mathrm {e} ^{Ct}}
+  
+ on 
+  
+    
+      
+        A
+        ,
+        B
+        ,
+        C
+      
+    
+    {\displaystyle A,B,C}
+  
+ són constants i 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ el temps transcorregut, llavors 
+
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              i
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        =
+        B
+        C
+        
+          
+            e
+          
+          
+            C
+            t
+          
+        
+      
+    
+    {\displaystyle {\frac {\mathrm {d} i}{\mathrm {d} t}}=BC\mathrm {e} ^{Ct}}
+  
+
+i l'equació esdevé :
+
+  
+    
+      
+        E
+        =
+        L
+        B
+        C
+        
+          
+            e
+          
+          
+            C
+            t
+          
+        
+        +
+        r
+        A
+        +
+        r
+        B
+        
+          
+            e
+          
+          
+            C
+            t
+          
+        
+      
+    
+    {\displaystyle E=LBC\mathrm {e} ^{Ct}+rA+rB\mathrm {e} ^{Ct}}
+  
+
+llavors :
+
+  
+    
+      
+        B
+        
+          
+            e
+          
+          
+            C
+            t
+          
+        
+        (
+        L
+        C
+        +
+        r
+        )
+        =
+        E
+        −
+        r
+        A
+      
+    
+    {\displaystyle B\mathrm {e} ^{Ct}(LC+r)=E-rA}
+  
+.
+Per verificar aquesta equació cal que 
+  
+    
+      
+        L
+        C
+        +
+        r
+        =
+        0
+      
+    
+    {\displaystyle LC+r=0}
+  
+ i 
+  
+    
+      
+        E
+        =
+        r
+        A
+      
+    
+    {\displaystyle E=rA}
+  
+ atès que 
+  
+    
+      
+        
+          
+            e
+          
+          
+            C
+            t
+          
+        
+      
+    
+    {\displaystyle \mathrm {e} ^{Ct}}
+  
+ varia en funció del temps.
+Llavors obtenim :
+
+  
+    
+      
+        C
+        =
+        −
+        
+          
+            r
+            L
+          
+        
+      
+    
+    {\displaystyle C=-{\frac {r}{L}}}
+  
+
+i :
+
+  
+    
+      
+        A
+        =
+        
+          
+            E
+            r
+          
+        
+      
+    
+    {\displaystyle A={\frac {E}{r}}}
+  
+
+llavors 
+  
+    
+      
+        B
+      
+    
+    {\displaystyle B}
+  
+ pot prendre una infinitat de valors. Així, si la bobina es carrega, 
+  
+    
+      
+        
+          i
+          
+            t
+            =
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle i_{t=0}=0}
+  
+ d'on 
+  
+    
+      
+        A
+        +
+        B
+        =
+        0
+      
+    
+    {\displaystyle A+B=0}
+  
+ i :
+
+  
+    
+      
+        B
+        =
+        −
+        
+          
+            E
+            r
+          
+        
+      
+    
+    {\displaystyle B=-{\frac {E}{r}}}
+  
+,
+el que permet trobar una solució de l'equació diferencial per 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+.
+
+
+==== Demostració habitual ====
+La solució de l'equació diferencial 
+  
+    
+      
+        
+          u
+          
+            B
+          
+        
+        =
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        +
+        r
+        i
+      
+    
+    {\displaystyle u_{B}=L{\frac {di}{dt}}+ri}
+  
+ és la suma de dos termes:
+
+  
+    
+      
+        
+          i
+          
+            l
+          
+        
+        
+      
+    
+    {\displaystyle i_{l}\,}
+  
+, la solució en règim lliure corresponent a l'equació sense el segon membre 
+  
+    
+      
+        0
+        =
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        +
+        r
+        i
+      
+    
+    {\displaystyle 0=L{\frac {di}{dt}}+ri}
+  
+
+  
+    
+      
+        
+          i
+          
+            f
+          
+        
+        
+      
+    
+    {\displaystyle i_{f}\,}
+  
+, la solució en règim forçat corresponent al règim establert quan totes les derivades són nul·les i, per tant, la solució de 
+  
+    
+      
+        
+          u
+          
+            B
+          
+        
+        =
+        r
+        i
+        
+      
+    
+    {\displaystyle u_{B}=ri\,}
+  
+.
+
+
+===== Solució en règim lliure =====
+
+  
+    
+      
+        0
+        =
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        +
+        r
+        i
+      
+    
+    {\displaystyle 0=L{\frac {di}{dt}}+ri}
+  
+
+Separació de les variables :
+
+  
+    
+      
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        r
+        i
+        ⇒
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        −
+        
+          
+            r
+            L
+          
+        
+        .
+        i
+        ⇒
+        
+          
+            
+              d
+              i
+            
+            i
+          
+        
+        =
+        −
+        
+          
+            r
+            L
+          
+        
+        .
+        d
+        t
+      
+    
+    {\displaystyle L{\frac {di}{dt}}=-ri\Rightarrow {\frac {di}{dt}}=-{\frac {r}{L}}.i\Rightarrow {\frac {di}{i}}=-{\frac {r}{L}}.dt}
+  
+
+Integrem els dos membres
+
+  
+    
+      
+        
+          L
+          o
+          g
+        
+        i
+        =
+        −
+        
+          
+            r
+            L
+          
+        
+        .
+        t
+        +
+        C
+        t
+        e
+      
+    
+    {\displaystyle \mathrm {Log} i=-{\frac {r}{L}}.t+Cte}
+  
+
+Si x = y llavors 
+  
+    
+      
+        
+          
+            e
+          
+          
+            x
+          
+        
+        =
+        
+          
+            e
+          
+          
+            y
+          
+        
+        
+      
+    
+    {\displaystyle \mathrm {e} ^{x}=\mathrm {e} ^{y}\,}
+  
+ per tant 
+
+  
+    
+      
+        
+          i
+          
+            l
+          
+        
+        =
+        
+          
+            e
+          
+          
+            −
+            
+              
+                r
+                L
+              
+            
+            .
+            t
+            +
+            C
+            t
+            e
+          
+        
+        ⇒
+        
+          i
+          
+            l
+          
+        
+        =
+        K
+        .
+        
+          
+            e
+          
+          
+            −
+            
+              
+                r
+                L
+              
+            
+            .
+            t
+          
+        
+      
+    
+    {\displaystyle i_{l}=\mathrm {e} ^{-{\frac {r}{L}}.t+Cte}\Rightarrow i_{l}=K.\mathrm {e} ^{-{\frac {r}{L}}.t}}
+  
+
+
+===== Solució en règim forçat =====
+Quan la bobina és sotmesa a una tensió 
+  
+    
+      
+        E
+        
+      
+    
+    {\displaystyle E\,}
+  
+, la solució en règim forçat és:
+
+  
+    
+      
+        
+          i
+          
+            f
+          
+        
+        =
+        
+          
+            E
+            r
+          
+        
+      
+    
+    {\displaystyle i_{f}={\frac {E}{r}}}
+  
+.
+
+
+===== Solució de l'equació =====
+
+  
+    
+      
+        i
+        =
+        K
+        .
+        
+          
+            e
+          
+          
+            −
+            
+              
+                r
+                L
+              
+            
+            .
+            t
+          
+        
+        +
+        
+          
+            E
+            r
+          
+        
+      
+    
+    {\displaystyle i=K.\mathrm {e} ^{-{\frac {r}{L}}.t}+{\frac {E}{r}}}
+  
+.
+La determinació de la constant 
+  
+    
+      
+        K
+        
+      
+    
+    {\displaystyle K\,}
+  
+ es fa gràcies a la següent condició física: El corrent que passa a través d'una inductància no pot tenir mai una discontinuïtat.
+A l'instant 
+  
+    
+      
+        t
+        =
+        0
+        
+      
+    
+    {\displaystyle t=0\,}
+  
+, el corrent val 
+  
+    
+      
+        
+          I
+          
+            i
+          
+        
+        =
+        
+          I
+          
+            i
+            n
+            i
+            t
+            i
+            a
+            l
+          
+        
+        
+      
+    
+    {\displaystyle I_{i}=I_{initial}\,}
+  
+. I se n'obté l'equació:
+
+  
+    
+      
+        
+          I
+          
+            i
+          
+        
+        =
+        K
+        +
+        
+          
+            E
+            r
+          
+        
+        ⇒
+        K
+        =
+        
+          I
+          
+            i
+          
+        
+        −
+        
+          
+            E
+            r
+          
+        
+      
+    
+    {\displaystyle I_{i}=K+{\frac {E}{r}}\Rightarrow K=I_{i}-{\frac {E}{r}}}
+  
+ per tant
+
+  
+    
+      
+        i
+        =
+        (
+        
+          I
+          
+            i
+          
+        
+        −
+        
+          
+            E
+            r
+          
+        
+        )
+        .
+        
+          
+            e
+          
+          
+            −
+            
+              
+                r
+                L
+              
+            
+            .
+            t
+          
+        
+        +
+        
+          
+            E
+            r
+          
+        
+      
+    
+    {\displaystyle i=(I_{i}-{\frac {E}{r}}).\mathrm {e} ^{-{\frac {r}{L}}.t}+{\frac {E}{r}}}
+  
+.
+Sovint, en els casos típics, el corrent inicial és nul. Llavors s'obté:
+
+  
+    
+      
+        i
+        =
+        
+          
+            E
+            r
+          
+        
+        
+          (
+          
+            1
+            −
+            
+              
+                e
+              
+              
+                −
+                
+                  
+                    t
+                    τ
+                  
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle i={\frac {E}{r}}\left(1-\mathrm {e} ^{-{\frac {t}{\tau }}}\right)}
+  
+
+
+=== Comportament en règim sinusoidal ===
+Per obtenir les equacions que descriuen el comportament d'una bobina real en règim sinusoidal, és necessari utilitzar un dels models descrits més amunt i calcular la impedància de l'inductor utilitzant una representació de Fresnel, o mitjançant l'ús d'una transformació complexa.
+Amb el model en sèrie, la impedància de la bobina es pot descriure:
+
+  
+    
+      
+        
+          
+            Z
+            _
+          
+        
+        =
+        
+          r
+          
+            s
+          
+        
+        +
+        j
+        .
+        
+          L
+          
+            s
+          
+        
+        ω
+        
+      
+    
+    {\displaystyle {\underline {Z}}=r_{s}+j.L_{s}\omega \,}
+  
+
+tenint com a mòdul : 
+  
+    
+      
+        Z
+        =
+        
+          
+            
+              r
+              
+                s
+              
+              
+                2
+              
+            
+            +
+            (
+            
+              L
+              
+                s
+              
+            
+            ω
+            
+              )
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle Z={\sqrt {r_{s}^{2}+(L_{s}\omega )^{2}}}}
+  
+ i per argument: 
+  
+    
+      
+        φ
+        =
+        arctan
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  L
+                  
+                    s
+                  
+                
+                ω
+              
+              
+                r
+                
+                  s
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \varphi =\arctan \left({\frac {L_{s}\omega }{r_{s}}}\right)}
+  
+
+A causa del seu caràcter inductiu, la intensitat del corrent sinusoidal que travessa una bobina sotmesa a una tensió sinusoidal té un retard de fase 
+  
+    
+      
+        φ
+        
+      
+    
+    {\displaystyle \varphi \,}
+  
+ respecte de la tensió. Aquesta demora és d'entre 0 i 90 ° (o 0 i π / 2 radians). Es diu que el corrent està desfasat respecte de la tensió.
+Quan la bobina es construeix al voltant d'un nucli ferromagnètic, sense ranura, els fenòmens de saturació magnètica i histèresi comporten algunes no linealitats en el comportament de la bobina: quan la sotmetem a una tensió sinusoidal, la intensitat del correntque passa per ella no és purament sinusoidal. Aquestes característiques no lineals són molt difícils de tenir en compte i sovint són negligides en una primera aproximació en els càlculs tradicionals.
+
+
+== L'inductor als circuits elèctrics ==
+Els inductors s'oposen als canvis al corrent elèctric, un inductor ideal no oposaria cap resistència a un corrent continu constant, tanmateix només els inductors superconductors tindrien realment una resistència nul·la.
+En general, la relació entre la variació del voltatge en el temps v(t) a través d'un inductor amb una inductància L i una variació del corrent que hi passa al llarg del temps i(t) es descriu per mitjà d'una equació diferencial:
+
+  
+    
+      
+        v
+        (
+        t
+        )
+        =
+        L
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle v(t)=L{\frac {di(t)}{dt}}}
+  
+
+on
+v és el voltatge,di(t)/dt és la derivada del corrent i L és la inductància mesurada en henrys.
+Quan un corrent altern, per tant sinusoidal, passa a través d'un inductor s'indueix un voltatge sinusoidal. L'amplitud del voltatge és proporcional al producte de l'amplitud del corrent (
+  
+    
+      
+        
+          I
+          
+            P
+          
+        
+      
+    
+    {\displaystyle I_{P}}
+  
+) amb la freqüència ( f ) del corrent.
+
+  
+    
+      
+        i
+        (
+        t
+        )
+        =
+        
+          I
+          
+            P
+          
+        
+        sin
+        ⁡
+        (
+        2
+        π
+        f
+        t
+        )
+        
+      
+    
+    {\displaystyle i(t)=I_{P}\sin(2\pi ft)\,}
+  
+
+  
+    
+      
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        2
+        π
+        f
+        
+          I
+          
+            P
+          
+        
+        cos
+        ⁡
+        (
+        2
+        π
+        f
+        t
+        )
+      
+    
+    {\displaystyle {\frac {di(t)}{dt}}=2\pi fI_{P}\cos(2\pi ft)}
+  
+
+  
+    
+      
+        v
+        (
+        t
+        )
+        =
+        2
+        π
+        f
+        L
+        
+          I
+          
+            P
+          
+        
+        cos
+        ⁡
+        (
+        2
+        π
+        f
+        t
+        )
+        
+      
+    
+    {\displaystyle v(t)=2\pi fLI_{P}\cos(2\pi ft)\,}
+  
+
+En aquesta situació, la fase del corrent està desplaçada 90 graus respecte a la del voltatge.
+Si connectem un inductor a una font de corrent continu, amb un vaor I a través d'una resistència, R, i llavors curtcircuitem la font de corrent, la relació diferencial de més amunt mostra que el corrent de l'inductor es descarregarà seguint un decreixement exponencial:
+
+  
+    
+      
+         
+        i
+        (
+        t
+        )
+        =
+        I
+        (
+        
+          e
+          
+            
+              
+                −
+                t
+                R
+              
+              L
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \ i(t)=I(e^{\frac {-tR}{L}})}
+  
+
+
+=== Anàlisi de Laplace d'un circuit ===
+Quan s'utilitza la transformada de Laplace a l'anàlisi de circuits, la transferència de la impedància d'un inductor ideal sense corrent inicial es representa al domini s per:
+
+  
+    
+      
+        Z
+        (
+        s
+        )
+        =
+        L
+        s
+        
+      
+    
+    {\displaystyle Z(s)=Ls\,}
+  
+
+where
+L és la inductància, i
+s és la freqüència complexa
+Si l'inductor té un corrent inicial pot ser representat:
+
+afegint una font de voltatge en sèrie amb l'inductor, tenint el valor
+
+  
+    
+      
+        L
+        
+          I
+          
+            0
+          
+        
+        
+      
+    
+    {\displaystyle LI_{0}\,}
+  
+
+(Noteu que la font de corrent ha de tenir una polaritat que s'ha d'alinear amb la del corrent inicial)
+
+o afegint una font de corrent en paral·lel amb l'inductor, tenint el valor:
+
+  
+    
+      
+        
+          
+            
+              I
+              
+                0
+              
+            
+            L
+          
+        
+      
+    
+    {\displaystyle {\frac {I_{0}}{L}}}
+  
+
+on
+L és la inductància, i
+
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+      
+    
+    {\displaystyle I_{0}}
+  
+ és el corrent inicial a l'inductor.
+
+
+=== Circuits amb inductors ===
+
+Els inductors posats en paral·lel tenen la mateixa diferència de potencial (voltatge). Podem trobar la seva inductància total equivalent (Leq):
+
+  
+    
+      
+        
+          
+            1
+            
+              L
+              
+                
+                  e
+                  q
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              L
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              L
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              L
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{L_{\mathrm {eq} }}}={\frac {1}{L_{1}}}+{\frac {1}{L_{2}}}+\cdots +{\frac {1}{L_{n}}}}
+  
+
+El corrent és el mateix als inductors en sèrie però el voltatge pot ser diferent a cadascun dels inductors. La suma dels voltatges és igual al voltatge total. Podem trobar la seva inductància total:
+
+  
+    
+      
+        
+          L
+          
+            
+              e
+              q
+            
+          
+        
+        =
+        
+          L
+          
+            1
+          
+        
+        +
+        
+          L
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          L
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle L_{\mathrm {eq} }=L_{1}+L_{2}+\cdots +L_{n}\,\!}
+  
+
+Aquesta relació només és certa quan no hi ha acoblament dels camps magnètics individuals de cada inductor amb el dels altres.
+
+
+== Aplicacions ==
+Els inductors són molt utilitzats als circuits analògics i en el processament de senyals. En combinació amb els condensadors i d'altres components formen circuits que poden potenciar o filtrar un senyal d'unes freqüències específiques. Les aplicacions van des dels grans inductors que s'utilitzen a les fonts d'alimentació en combinació amb filtres de condensadors per eliminar les oscil·lacions audibles habituals al corrent altern a 50 o 60 Hz, o altres tipus de fluctuacions, fins als petits inductors de ferrita o toroïdals instal·lats al voltant d'un cable per evitar que les interferències electromagnètiques es transmetin al cable. També s'utilitzen combinacions de petits inductors i condensadors per construir circuits ressonants de sintonització de radiodifusió.
+Els inductors també s'utilitzen als sistemes de transmissió per disminuir els voltatges procedents de les descàrregues dels llamps o per a limitar els corrents de fuita. En el camp d'aquesta darrera aplicació són coneguts com a reactors (inductors amb reactància).
+Les bobines a les màquines elèctriques poden anar tant en el rotor com en l'estator i conformen el circuit elèctric de la màquina. Segons com es vulgui que treballi el motor, les bobines es poden col·locar de dues maneres: Als pols (sortida amb sortida, entrada amb entrada, sortida amb sortida…) o al pols conseqüents (sortida amb entrada, sortida amb entrada, sortida amb entrada …). També es poden fer en sèries paral·leles en les quals hem de mantenir les espires connectades a la xarxa elèctrica.
+
+
+== Tipus d'inductor ==
+
+
+=== Bobines amb una inductància fixa ===
+Les bobines d'inductància fixa poden ser construïdes sobre un nucli d'aire, habitualment utilitzades en freqüències altes, o també sobre nuclis sòlids (habitualment de material ferromagnètic), aquests inductors tindran inductàncies superiors a les de nucli d'aire a causa del seu elevat nivell de Permeabilitat permeabilitat magnètica
+Aquest tipus de bobines són presents, entre altres aplicacions, en els transformadors, els electroimants, les Bomba dosificadora bombes dosificadores, els Relé, els contactors, en els altaveus electrodinàmics i electromagnètics, en els Micròfon#Tipus de micròfons|micròfons dinàmics (bobina mòbil), als Transformador de corrent|transformadors de corrent, a les bobines de desviació dels Tub de raigs catòdics|tubs de raigs catòdics dels televisors, en els galvanòmetres, Motor elèctric|motors elèctrics, Bobina d'encesa|bobines d'encesa i en els Rellotge de quars|rellotges de quars analògics. En els circuits electrònics, entre altres coses, s'utilitzen amb una determinada freqüència com els cas de les bobines de xoc que fan de filtre d'una determinada freqüència.
+Les bobines amb nucli Tor (figura geomètrica)|toroïdal es caracteritzen pel fet que la seva forma crea un flux magnètic tancat i això fa que el flux no es dispersi cap a l'exterior, això fa que aquest tipus d'inductor tingui un gran rendiment i precisió.
+Les aplicacions de fil conductor enrotllat l'espiral que es troba en alguns tipus de Resistència elèctrica (component)|resistor, les Antena helicoidal|antenes helicoidals, els Tub d'ones progressives|tubs d'ones progressives o els filaments de les Bombeta elèctrica|bombetes no són considerats bobines.
+
+
+==== Bobina d'encesa ====
+
+La bobina d'encesa és un quadripol que aprofita el fenomen de la inducció electromagnètica per generar un corrent elèctric a molt alta tensió. Aquest tipus de bobina són una part indispensable dels Motor de gasolina|motors de gasolina atès que en són les encarregades d'arrencar-los.
+Es tracta d'un sistema d'alimentació commutat de tipus convertidor Flyback|Flyback, format per un parell de circuits magnètics acoblats. El primer, el bobinat de baixa tensió és format per poques espires i està connectat a l'alimentació mentre que el segon, el bobinat d'alta tensió, és format per moltes més espires i es connecta al dispositiu que cal accionar.
+El funcionament presenta dues etapes:
+
+Fase d'acumulació: En un primenr moment l'energia magnètica s'acumula al bobinat de baixa tensió fins al moment en què la seva quantitat assoleix un valor òptim que dependrà del nombre d'espires del circuit magnètic.
+Fase de restitució: Quan el ruptor obre el circuit l'energia acumulada provoca l'aparició d'un corrent al segon bobinat d'una tensió igual al producte de la tensió primària pel nombre d'espires.
+
+
+=== Inductors variables ===
+.
+Els inductors variables permeten variar la inductància per diferents mecanismes com el desplaçament del nucli magnètic (la inductància està relacionada amb la permeabilitat magnètica del nucli) o disposant de diferents contactes que permeten seleccionar el nombre d'espires de la bobina.
+El variòmetre va ser un tipus d'inductor variable de gran importància històrica, va ser àmpliament utilitzat als primers receptors de ràdio. Un variòmetre consta de dues bobines connectades en sèrie, una d'elles és mòbil i pot girar sobre l'altra per tal de variar la inductància mútua.
+
+
+==== Amplificador magnètic ====
+Els amplificadors magnètics, un tipus de transductor, permeten amplificar els senyals elèctrics. Bàsicament hi ha de dos tipus, els d'inductància saturable i els d'autosaturació. En el primer cas s'utilitza un inductor variable en sèrie amb un circuit de potència, la variació de la seva inductància es provoquen amb un corrent continu de control sobre un enrotllament sobre el mateix nucli de l'amplificador que fa variar el nivell de saturació del nucli. En el segon cas s'utilitza un nucli ferromagnètic amb una histèresi rectangular de manera que la variació de la inductància és sobtada, actuant com un interruptor
+
+
+== Fórmules de la inductància ==
+La següent taula presenta un llista de fórmules habituals per a calcular la inductància teòrica de diversos tipus d'inductor.
+
+
+== Codis de color dels inductors ==
+Per indicar el valor de la inductància d'una bobina s'utilitza un codi de colors normalitzat
+
+Per exemple, 472 significa:
+
+47 µH x 100 = 4700 µH = 4,7 mH
+
+
+== Bobines en un automòbil ==
+En un automòbil actual hi ha moltes bobines elèctriques. Una petita mostra s'ofereix a continuació.
+
+Clau de contacte per comandament a distància.
+Sistema de tancar/obrir portes centralitzat (cada fiador -que tanca mecànicament- és accionat per una solenoide).
+Motor d'arrancada. Es tracta d'un motor elèctric amb els bobinats corresponents.
+Sistema d'encesa. L'alta tensió necessària a les bugies s'obté a partir de la tensió de les bateries (12V) mitjançant alguna mena de transformador (amb bobines).
+Alternador. L'alternador permet carregar la bateria, entre altres funcions. Un alternador disposa dels bobinats corresponents.
+Fre de mà. Generalment és mecànic, però molts automòbils disposen d'un fre d'estacionament accionat elèctricament. Aquest actuador elèctric es basa en un bobinat.
+Direcció assistida. Generalment és elèctrica i disposa d'un servomotor elèctric lineal amb un bobinat específic.
+Dispositiu ABS dels frens.
+Panell d'instruments. Molts dels instruments clàssics es basaven en l'acció d'una bobina mòbil.
+Vidres accionats elèctricament. Cada vidre es mou per un motor elèctric, amb el seu bobinat.
+Neteja parabrisa. El braç o braços es mouen accionats amb un (o més d'un) motor elèctric, amb el seu bobinat.
+
+
+== Invents relacionats amb les bobines ==
+
+Entre les moltes innovacions i aparells basats en les bobines n'hi ha alguns que mereixen ser esmentats per la seva singularitat.
+
+
+=== La bobina Tesla ===
+Es tracta d'un dispositiu, una mena de transformador ressonant, que permet obtenir tensions molt elevades a freqüències molt altes. A efectes de demostració les “bobines Tesla” són adequades per exhibicions científiques espectaculars.
+
+
+=== Bobines bifilars de Tesla ===
+
+
+=== Clemente Figuera ===
+Enginyer forestal nascut a Canàries va patentar un generador elèctric que, suposadament, permetia obtenir energia de manera molt econòmica. Es conserva alguna carta de Tesla adreçada a Clemente Figuera.
+
+
+== Referències ==
+
+
+== Vegeu també ==
+
+
+== Enllaços externs ==
+
+(en anglès) Calculadora d'inductància en línia. Permet calcular la inductància de bobines convencionals i toroïdals.
+(en anglès) Circuits de corrent altern
+(en anglès) Entenent bobines i transformadors

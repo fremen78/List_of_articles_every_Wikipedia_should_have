@@ -1,0 +1,245 @@
+Sistema eragile bat (SE laburtuta eta OS Operating System ingelesez) konputagailu baten software nagusia da. Software honek konputagailuko hardware baliabideak kudeatzen ditu eta beste software aplikazioei oinarrizko zerbitzuak eskaintzen dizkie. Gainera, beste softwareak ez bezala, modu pribilegiatuan exekutatzen da, horrela, programek sistemaren baliabideak erabili ahal dituzte nahi dituztenean, modu hori beharko dutenez SE erabili beharko dute.
+Jende askok pentsatzen du sistema eragilearen tresna guztien multzo guztia sistema eragilea dela, baina hori akatsa da. Leiho sistema, web nabigatzaile eta horrelako oinarrizko lanabesak ez dira sistema eragilearen parte. Desberdintasun hau azaltzeko ondoko adibidea dugu, Amiga plataforma da. Plataforma horretan erabiltzailearen ingurune grafikoa bananduta dago sistematik (gaur egungo sistema gehienetan bezala). Horrela, ingurune grafikoa beste batez ordezka daiteke, Opus direktorioa jarriz esaterako. GNU/Linux eta Unix ere horrela daude egituratuta, funtsezkoena nukleoan kokatuta eta bestelako elementuak nukleotik kanpo ordezkatu ahal izateko. Horrela, Linux izenak nukleoa izendatzen du eta GNU/Linux sistema osoa. Ildo beretik estu askotan sistema eragilea nukleoarekin identifikatzen da, baina beti ez da horrela. Sistema eragilearen arkitekturaren arabera da hori, baina nukleoa monolitikoa ez bada, nukleoari sistema eragile deitzea akats handia da, gauza desberdinak dira eta.
+Kernela (nukleoa) oinarri duen sistema eragilearen helburuetako bat hardwarearen atzipena babestean, eta baliabideak (prozesadorea, memoria, disko gogorra, komunikazioak eta Internet...) erabiltzaile eta prozesuen artean modu egokian kudeatzean datza. Honek programatzaileak laguntzen ditu, zeren eta honi esker ez dira arazo horietaz arduratu behar. Ondo funtzionatzeko konputagailu eta programagarri diren gailu guztiek sistema eragile bat daukate (telefono adimendunak, DVD eta CD unitateak, PCak, routerrak, tabletak eta abar). Interfazeari begira, erabilpen pertsonalerako dispositiboetan interfaze grafikoa baten bidez kudeatzen dira. Zerbitzarietan eta bideratzaileetan (routerrak) komando interpretatzailea (komandoen bidez) edo web nabigatzaile bat erabiltzen da.
+
+PCetako sistema eragile erabiliena Microsoft Windows da, munduko merkatuan nagusitasun handiarekin (%82,74), gero Apple-ko macOS (13,23%), eta oso atzean GNU/Linux (1,57%). Mugikorretan (telefono adimentsuak eta tabletak) Googleko Android nagusia da alde handiz. 2016ko datuen arabera Androiden merkatu-kuota %87,5 da eta gora doa, eta Appleko iOS %12,1 beherako joerarekin. Linux banaketak nagusi dira zerbitzari eta superkonputagailuen. Badaude hain ezezagunak ez diren segmentuak, sistema txertatuena edo denbora errealekoena batez ere.                                                                                                                                          
+
+
+== Historia ==
+XX. eta XXI. mendean izugarrizko aurrerapenak eman dira informatikaren munduak, eta ildo horretatik doaz sistema eragileen sorrera eta garapena; eta, ondorioz, historia.
+
+
+=== 1940ko hamarkada ===
+1940. hamarkadaren bukaeran, munduko lehen konputagailu belaunaldiaren aurkikuntzarekin batera, programak konputagailuaren memorian sartzea ahalbidetzen zuten mikro - etengailuetara lotzen ziren konputagailuen kontsolara sartzea lortu zen. Momentu honetan ez zegoen sistema eragilerik, baina lehen aldiz programatzaileak zuzenean lan egiten hasi ziren konputagailuaren hardwarearekin.
+
+
+=== 1950ko hamarkada (Batch Sistema) ===
+1950. hamarkadaren hasieran, pertsona eta konputagailuen arteko elkarrekintza hobetzeko asmotan, sistema eragileek lehen agerpen xume eta sinple bat egiten dute, egoiliar monitore, Batch prozesu edo aldi baterako biltegiratzea bezalako kontzeptuen bidez.
+Erabiltzaileak ez zuen konputagailua zuzenean atzitzeko modurik. Horren ordez, hurrengo puntuan azaltzen den moduan, erabiltzaileak txartel baten bidez bidaltzen zion informazioa operadore informatikoari. Honek, sekuentziak multzokatu eta batch bakoitza osorik jartzen zuen sarrerako gailu batean. Prozesua amaitzerakoan programa bakoitza monitorera itzuli eta hurrengo programa kargatzen zen automatikoki.
+
+
+==== Egoiliar monitorea ====
+Bere funtzionamendua nahiko sinplea zen, zulatutako txartel batetik edo askotatik memoriako programak irakurri eta hauek exekutatzea baitzen bere lana. Arazoa, ordea, lan baten ateratzetik hurrengo lanaren hasiera arte igarotako denbora optimizatzeko era aurkitzea zen.
+IBM 704 ordenagailu baterako sortutako historiako lehen sistema eragilea 1956. urtean sortu zen, eta egiten bere funtzioa programa baten exekuzioa hastea zen aurreko bukatzen zenean.
+
+
+==== Aldi baterako biltegiratzea ====
+Bere helburua programen kargatze - denbora murriztea zen, programa baten kargatzea edo datu - irteera hurrengoaren exekuzioarekin aldiberekoa izanik. Horretarako bi teknika erabiltzen ziren: "bufferinga" eta "spoolinga".
+
+
+=== 1960ko hamarkada ===
+1960. hamarkadan informatikaren hainbat ataletan aldaketa garrantzi batzuk izan ziren, ordenagailuen potentziala handitzeko asmoz sortu ziren zirkuitu integratuen lehen agerpenekin.
+
+
+==== Multiprogramazioa ====
+Sistema multiprogramatu batean memoria nagusiak erabiltzaile programa bat baino gehiago du bere baitan. CPUak programa baten aginduak exekutatzen ditu, exekutatzen ari den programak S/I-n eragiketa bat burutzen duenean; hau da, S/I-ko eragiketa bukatu arte itxoin beharrean, beste programa bat exekutatzeari ekiten zaio. Modu berean, azken hau S/I-ko beste eragiketa bat egiten hasten bada, agindu egokiak bidaltzen zaizkio kontrolatzaileari, eta beste programa bat exekutatzen hasten da. Modu honetan, posible da erabilgarri dauden baliabideak optimizatzea, momenturo eginbehar multzo egokia bilteragiratuta edukiz. Modu honetan, memoria zabalduta, hiru, lau edo programa egon daitezke haien artean txandakatuz.
+
+
+==== Partekatutako denbora ====
+
+Momentu honetan erabilgarri dagoen elektronikaren erabilpen ona egiten duen sistema bat daukagu, baina elkarrekintza falta dugu arazo; hori gainditzeko, erabiltzaile anitzeko sistema batean bihurtu behar da, bertan hainbat erabiltzaile online egonda terminal berean, partekatutako denboraren operazio modua erabiliaz. Sistema hauek multiprogramazioaren antzera jokatzen dute; baina, azken hauek ez bezala, programa bat denbora jakin bat doanean exekuzioan sistema eragileak geratu egiten du beste aplikazio bat exekutatzeko. Honela, n erabiltzaile baditugu aldi berean aktiboki zerbitzu eske, erabiltzaile bakoitzak batez beste konputagailuaren benetako gaitasunaren 1/n baino ez du ikusiko, sistema eragilearen gainkarga alde batera utzita.
+
+
+==== Denbora erreala ====
+Sistema hauek ordenagailuz kanpoko gertakari kopuru handi bat denbora oso murriztuan onartu eta prozesatu behar direnean erabiltzen dira. Sistemak emandako denboran prozesuaren emaitzak lortu edo bukatzerik ez badu, huts egin duela esan daiteke.
+Erantzun - denborak, gainera, arazo edo gertakariari erantzuna eman behar dio. Fitxategien prozesamendua era jarraitu batean egiten da, uneko fitxategia hurrengo sartu baino lehen prozesatzen baita. Horretaz gain, sistema honen lehen eta egunarteko erabilerak telekomunikazioaren munduan izan direla esan behar da.
+
+
+==== Multiprozesagailuetarako sistemak ====
+Ordenagailu monoprozesadoreetan ez dagoen diseinua da. Bi programa aldi berean exekutatzearen ondorioz datoz arazo hauek, eta, ondorioz, beren artean oztopatzearen ondorioz. Zehazki, memoria irakurketa eta idazketetan sortzen da arazo hau. Bi arkitektura mota daude arazo hau ebazten dutenak:
+
+NUMA arkitektura, non prozesagailu bakoitzak memoria zati baten sarrera eta kontrol guztia duen.
+SMP arkitektura, non prozesagailu guztiek memoria osoa partekatzen duten. Azken honek cache koherentziaren arazoarekin egin behar du lan. Mikroprozesagailu bakoitzak barne cache memoria bat dauka; honela, mikroprozesadore batek memorian helbide bat idazten duenean, bere barneko cache memorian idazten du. Beste mikroprozesagailu batek helbide bera badu jasota bere cache memorian, biltegiratutako datuaren zaharkitutako kopia batekin egingo du lan.
+Egungo sistema eragile gehienak SMP arkitekturara egokituta daude.
+
+
+=== 1970ko hamarkada ===
+
+
+==== Sistema eragileen arazo edo eragozpenak ====
+Sistema eragileak handiak (erlatiboki), konplexuak eta garestiak ziren, ez baitzen lehenago antzeko ezer eraiki eta ordura arte eraiki ziren proiektuak espero zena baino askoz garestiagoak izan ziren; gainera, hauek eraikitzeko denbora ere oso handia izan zen. Horretaz gain, hardwarearen eta erabiltzailearen artean maila bat jartzen saiatu baziren ere, azken honek ezagupen handiak behar zituen programazio-lengoaiaren inguruan sistema erabili ahal izateko. Beste eragozpen handi bat baliabideen gehiegizko erabilpena zen, memoria nagusia eta bigarren mailako memoriak betetzen baitzituzten; hori gutxi balitz, prozesatze-denbora ikaragarri handia zen. Multiprogramazio eta partekatutako denbora teknikak hobetzeko arrazoiak hauek izan ziren, batik bat.
+
+
+==== Garatutako sistema eragileak ====
+Unix izan da hamarkada horretako sistema aipagarriena, bere ondorengoak oraindik martxan baitaude gaur egun. Atlas Supervisor eta OS/360 sistema eragileak ere aipa daitezke. 1960ko hamarkadaren erdialdean Multics azaltzen da, AT&T eta Unixko Bell laborategiek aurrera eramandako sistema eragilea, erabiltzaile eta ataza anitzekoa, maila altuko lengoaia batean idatzitako gutxietakoa izanik. Bertan garatu ziren kontzeptu asko mantendu dira eta eragina izan dute gaur egungo SE guztietan. Gainera, Unix izan zen TCP/IP protokoloa inplementatu zuen lehen sistema.
+CP/M: (Control Program for Microcomputers) Intel 8080 mikroprozesagailuarentzat Gary Kildallek garatutako sistema eragilea izan zen. 1970. hamarkadako sistema eragile famatuenetakoa izan zen konputagailu pertsonalen arloan. Nahiz eta IBM PCn exekutatzeko eraldatua izan zen, IBMk MS-DOS aukeratu izanak Digital Researchekin porroto izan eta gero, CP/Mren erabilera ikaragarri jaistea egin zuen, desagerrarazi arte. CP/M Control Program/Monitor zeritzon hasiera batean; aurrerago, Control Program for Microcomputers izena hartu zuen. Garai hartan, zeharkako barrak (/) "-rentzako diseinatua" esan nahi zuen, nahiz eta aurrerago Gary Kildallek hura birdifinitu zuen. Momentu hartatik aurrera, CP/M lehen mikro - ordenagailuen industriako estandar bilakatu zen. Urte batzuk geroago, IBMk MS-DOS aukeratu izana bere ordenagailuetarako haren porrot handiena eragin zuen, azkenean desagertu egin zen arte.
+
+
+=== 1980ko hamarkada ===
+Hamarkada honetan, hardwarea merketzea eta mikroprozesadoreen agerpenarekin batera, erabiltziale bakar bati dedikatutako sistemak sortzen dira (PC-ak). LSI (integrazioa eskala handian) zirkuituen sorrerarekin, siliziozko zentimetro karratu batean milaka trantsistore zituzten txipak, ordenagailu pertsonalen gorakada hasi zen. Hauekin, hein batean alde batera utzi zen errendimendua eta gehiago landu zen sistema eragile erabilterrazago bat lortzeko asmoa, menuak eta interfaze grafikoak sortuaz. Honek aplikazioen abiadura murrizten zuen, baina erabiltzaileentzako praktikoago eta sinpleagoak izatea lortu zen. Garai hartan, jada sortutako programazio - lengoaiak erabiltzen jarraitu zen, Smalltalk edo C bezalakoak adibidez; baina, horiez gain, beste batzuk ere sortu ziren: C++ eta Eiffel bezalakoak objektuei orientatutako programazioaren atalean, edo Haskell eta Miranda programazio deklaratiboaren munduan.
+1980. hamarkadako aurrerapen garrantzitsuenetako bat sareko eta banatutako sistema eragileetan zebiltzan konputagailu sare pertsonalen garapena izan zen, elkarren artean komunikatzen eta Interneteko esparruan hedatzen hasiz.
+Agertoki honetan, bi ziren sistema eragile nagusiak: MS-DOS (Micro Soft Disk Operating System), IBM PCrentzat Microsoftek idatzia eta beste konputagailu batzuk Intel 8088 CPUa eta bere ondorengoak erabiltzen zituztenak; eta UNIX, Motorola 68000 erabiltzen zuten ordenagailu pertsonaletan nagusitu zena.
+Honetaz gain, hamarkadaren bukaeran, hardwarearen txikitzea baliatuz, lehen eramangarriak sortzen hasi ziren, sistema hauen gailuetara egokituz sistema eragileak. Gainera, aurrerago, edozein tokitatik sarera konektatzea lortuko zuten eta beste adimen maila bat sortu ere bai: nonahiko sistemak.
+
+
+==== Garatutako sistema eragileak ====
+Hamarkada honetako hiru sistema izan ziren funtsezkoak: MS-DOS izan zuen hedapenarengatik, Macintosh zabaldu zuen interfaze grafikoarengatik eta SunOS lan-estazioetan izan zuen eraginarengatik. Beste ezagun batzuk ere garaiotan sortu ziren: OS/", Amiga...
+
+MS-DOS. 1981ean, Microsoftek QDOS izeneko sistema eragile bat erosi zuen, hainbat aldaketaren ondoren MS-DOSen (Micro Soft Disk Operating System) lehen bertsioa bilakatu zena. Handik aurrera, hainbat aldaketa burutu ziren 7.1 bertsiora ailegatu arte, 8. bertsioa Windows Mileniumen, eta handik aurrera MS-DOSek sistema eragilearen osagaia izateari utzi zion.
+1983an, MSX ordenagailuen agerpenarekin, Z-80 prozesagailuak erabiltzen zuen egokitzapen bat sortu zen sistema honentzat, MSX-DOS izenekoa. MS-DOS 1.25 eta CP/Mren arteko nahaste bat zen. 1988an, Microsoft proiektutik bereizi zenean, MSX-DOS garatu zuen ASCII korporazioak, beste hainbat erabilpenen artean, direktorien erabileraren aintzindari izan zena.
+
+Macintosh ordenagailuaren merkaturatze ofiziala 1984ko urtarrilean izan zen, US $1,995-ko prezioan (ondoren $2,495 dolarretara aldatu zen). Mac OS sistema eragilearen ezaugarri nagusiak Interfaze grafikoa (GUI, Graphic User Interface) eta sagua izan ziren, eta horri eutsi ahal izateko multiataza izatea.
+SunOS Unix eta BSDtik eratorritako sistema eragilearen bertsioa zen, Sun Microsystemsek garatutakoa 1990ko hamarkada hasiera arte bere lantegi eta zerbitzarientzako. UNIX BSDn oinarrituta zegoen, nahiz eta ondorengo bertsioetan System V UNIXen hainbat gehigarri eduki. 1985ean sortu zen SunOS 2.0 fitxategi sistema birtual (VFS) eta NFS protokoloaren zituen.
+AmigaOS, Commodore Amiga sistema eragilea zuten ordenagailu pertsonaletan zeuden lehio - kudeatzaile eta ROM multzoari eman zitzaion izena zen. Commodore Internatiolek garatu zuen 1985 urtean.
+OS/2 IBMren sistema eragile bat da, ordenagailu pertsonaletan DOS ordezteko merkaturatu zena. Hasieran, Microsoft eta IBMren artean garatua izan zen, baina Microsoftel proiektua utzi eta IBMren esku soilik geratu zen. OS/2 jada IBMk ez du merkaturatzen, eta 2006 urteaz geroztik bertan behera utzi zuten OS/2ren euskarri estandarra.
+
+
+=== 1990eko hamarkada ===
+Mikrokernelen garapena bultzada handia izan zuen hamarkada horretan, baina ez da heldu sistema komertzialetara. Horrela Mach 3 mikrokernelak interes handia piztu zuen, eta eragin handia izan zuen GNU Hurd eta Appleko sistemetan (MacOS eta iOS).
+
+
+==== Garatutako sistema eragileak ====
+Hamarkada honetan Microsoftek aurrerapen handia egin zuen leihotan oinarritutako interfazeak hedatzean eta zerbitzarien alorrean egindako aurrerapenengatik. Edozein kasutan zerbitzarietan lidergoa Unixek eta bertatik eratorritako sistemek (Linux, Solaris, FreeBSD) zuten hainbat arrazoirengatik: sendotasuna, Internet euskarria, lankidetzarako aukerak. Gainera, Unix hasierako garaiko ideia garatuz, Software librearen eztanda etorri zen GNU/Linux aldetik.
+
+GNU/Linux Unixen bertsio libre eta hein batean hobetua da, POSIXen estandarrean oinarritutakoa, hasiera batean komando moduan lan egiten zuena. Gaur egun, leihoekin lan egiteko gai da, zerbitzari grafiko eta leiho - kudeatzaile batzuei (KDE, GNOME) esker. Berriki, GNU/Linuxek aplikazio bat garatu du lehioak 3D ingurune batean bihurtzen dituena, Beryl eta Compiz izanik adibideak.
+GNU/Linuxen banaketa asko existitzen dira (Debian, Fedora, Ubuntu, Slackware...), denak Linux nukleo bera izanik. GNU/Linuxen ezaugarrien barruan garrantzitsuena web - nabegazioan birusak ezin erasotzea da; hau, sistemak inplementatua duen baimen - sistema baten ondorioz lor daiteke.
+
+'''Microsoft Windows''' MS-DOSen oinarritutako Microsoftek garatu eta saldutako sistema eragileen familia bat da. Windows ez zen inoiz izan ingurune grafikoko sistema eragile bat izan Windows 95 arte. Windows 95 16 eta 32 bit arteko interfaze grafikoko sistema eragile bat da. 1995. urtean merkaturatu zen eta ikaragarrizko salmenta izan zuen. Windowsen serie hau Windows Me sistemarekin amaitu zen.
+
+'''Windows NT''' Microsoftek produzitutako sistema eragile familia ba da, lehen bertsioa 1993.an sortua izan zena. Aurretik, Microsofek enpresatara eta sare-zerbitzarietara orientatutako sistema eragile multzo bat sortua zuen. Interfaze grafiko propio, egonkor eta UNIX sare-sistemaren ezaugarri antzekoko sistema eragilea zen.
+NT ez zen egonkorra zerbitzarientzat leihoen sistemaren gainean zegoelako pentsatuta, eta ahulezia horrekin jarraitu zuen Windows2000 etorri zen arte.
+
+Solaris Unix motako sistema eragile bat da, 1992an Sun Microsystemsek sortua SunOSen ondorengo bezala. Zerbitzarietan eta lan-estazioetan dabil, SPARC eta x86 arkitekturetan.
+
+FreeBSD erabiltzaile anizkoitzeko sistema eragile bat da, prozesadore askoko plataformetan ataza eta prozesu anizkoitzeko ekintzak garatzeko gai dena. Nahiz eta FreeBSD ezin den zuzenki UNIX deitu, ez duelako The Open Group lizentziarik, POSIXekin bateragarria izateko gai da.
+FreeBSD sistemak nukleo bat dakarki, sistemako fitxategi estruktura, C programazio lengoaiako parte den APIko liburutegiak, eta beste hainbat erabilpen. 6.1  bertsioak hobekuntza garrantzitsuak ekarri zituen soinu - eta sare - txartelentzako kontrolatzaileetan eta Bluetooth gailuetan, besteak beste. Banapen garrantzitsu eta famatuena PC-BSD da.
+Beos 1990ean Be Incorporatedek garatutako sistema eragile bat da, multimedia aplikazioetan errendimendu handia lortzeko helbuarekin sortua.
+Hasieran (1995-1996) sistema eragileak bere hardware propioa zuen, BeBox bezala ezagututakoa. Beranduago, 1987an, PowerPC plataformara hedatu zen eta, azkenean, 1998an x86 prozesagailuekin konpatible izatea lortu zen.
+ReactOS (React Operating System) Microsoft Windows NT sistementzako egindako kode irekiko sistema eragile bat zen, software aplikazio eta dispositibo kontrolatzaileen artean bateragarritasun bitarra lortzea helburu zuena.
+FreeDOS sistema eragile libre bat lortzea helburu zuen proiektu bat zen, MS-DOSeko aplikazio eta kontrolagailuekin guztik bateragarria izango zena.
+Programak heldutasun maila handi bat du jada eta MS-DOSen ez zeuden hainbat ezaugarri ditu. FreeDoseko hainbat komando MS-DOSekoen berdinak edo hobeak dira, baina bertsio originaleko batzuk falta dira oraindik.
+
+
+=== 2000ko hamarkada ===
+Mugikorretarako sistemak izan dira hamarkada honetako berrikuntza nagusia: Android eta iOS izan dira eztanda horretatik abiatutako lehiako garaile argiak. Bestelakoetan ez zen berrikuntza handiegirik gertatu. Microsoft eta Apple enpresen eboluzioa izan zen zerbitzariei begira eta Unix/GNU/Linux sistemen sendotasuna eta prestazioak lortu nahian dira aldaketa aipagarrienak. Aldi berean GNU/Linux hedatzen hasi da PCetan, arrakasta gehiegirik gabe, eta GNU mikronukleoa ez da heldu nahiz eta Richard Stallman-ek 2002rako agindu GNU Hurd mikronukleoa.
+
+
+==== Garatutako sistema eragileak ====
+
+Mac OS, lehenago MAC OS X deitua zena, Unixen oinarritutako sistema eragile bat da, Apple Inc-ek garatu, merkaturatu eta saldutakoa. Zerbitzarientzako aldaera, Mac OS X Server, mahaigainarentzako bertsioaren bera da, nahiz eta lan - taldeak administratu eta sare - zerbitzuetarako sarrera hornitzen duen ere. Herraminta hauek, korreo zerbitzari bat, Samba zerbitzari bat, LDAP zerbitzari bat eta domeinu - zerbitzari bat dute beren barnean, besteak beste
+Darwin Mac OS X-en azpian dagoen sistema da, lehen bertsioa 2001ean izan zuena Macintosh konputagailuentzat. Darwinek Mac OS X-ri prestazio modernoak ekarri dizkio, babestutako memoria, Multiataza izatea, memoriaren kudeaketa aurreratua edo prozesu anitz simetrikoa eramatea.
+OpenSolaris 2005 urtean merkaturatutako sistema eragile libre bat da, Sun Microsystemsen Solaris hasierako bertsiotik eratorria.
+SymbOS Amstrad CPC ordenagailuentzako 2001 urtean sortu zen sistema eragile bat da. Sistema eragile grafiko bat da, Windows 95en oso estetika eta interfaze antzekoak dituena. Ordenagailu hauek oso potentzia baxukoak izanda, erabiltzen duen hardwarekiko optimizatu egiten da sistema, eta lortutako errendimendua ona dela esan daiteke. Horrek sistema eragile modernoen aitzindari gisa kokatu du. Sistema zaharkitu baten itxura eduki arren, komunitate zabala lortu du. Programatzaile originalak sistema eguneratzen jarraitzen dute gaur egun.
+MorphOS Power PC (PPC) prozesagailua duten ordenagailuentzako sortua. Sistema eragile jabeduna da, baina bere liburutegi eta osagaietako asko kode irekikoak dira. Sistema hau Quark mikronukleoan oinarrituta dago.
+Haiku kode irekiko sistema eragile bat da, informazio pertsonal eta multimediaren garapenean oinarritzen dena. BeOS (Be Operating System) sistemak iradokia, Haiku sistema azkar, eraginkor, erabilterraz eta ikasterraza bihurtu nahi da, edozein mailako erabiltzaileentzako potentzia kontuan hartzeari utzi gabe.
+
+
+=== 2010ko hamarkada ===
+Sistemen segurtasunak garrantzi handia hartu du. Mugikorretan saiakera egon dira eredu libreak arrakasta izan zezan, Mozilla OS sistemarekin esaterako, baina Android eta iOS sistemek nagusitasuna areagotu zuten. Gauzen Internet (IoT) ere hamarkada honetako berrikuntza da.
+
+
+==== Gauzen Internet (IoT, Internet of Things) ====
+egunero erabiltzen diren tresnak interkonexio digitalaren bidez Internetekin konektatzen dituen kontzeptua da. Honen bidez, Internetera pertsona baino objektu gehiago konektatzea lortzen da. Sistema txertatuak, denbora errealeko sistemak... era askotako beharrak sortzen dira Interneti lotuta gaur egungo gizarte honetan, eta, horregatik, sistema eragilek etengabe egokitzen joan behar dira. Horren adierazle dugu Gauzen Internet egunero erabiltzen diren tresnak interkonexio digitalaren bidez Internetekin konektatzen dituen kontzeptua.
+
+
+== Kernela ==
+Sistema eragilearen kernela, sistema eragile guztiek erabiltzen duten software garrantzitsuena da. Kernela sistema eragilearen bihoztzat hartzen da, hardwarea eta softwarea elkarlotzen dituelako. Elkarlotze honek konputagailu edo ordenagailu batek modu eraginkor batean lan egitea ahalbidetzen du. Sistema eragilearen barruan, modu pribilegiatuan exekutatzen da, horrela, programek hardwarea modu seguruan atzitu ahal izango dute. Hau dena gauzatu ahal izateko, sistema-deiak (system calls) erabiltzen ditu. Kernelak, erabiltzaile arruntari makinaren erabilpena errazteko erabiltzen da.
+Konputagailua pizten dugun bakoitzean, kernela, ordenagailuko RAM memorian kargatzen da eta bertan dirau ordenagailua itzali arte.
+Nahiz eta aurretik esan sistema eragile orok erabiltzen duela kernela, benetan, hardwarearen abstrakzioa (hardware abstraction) lortu nahi ez badugu ez dugu kernelik behar. Abstrakzioa (hardware abstraction) lortzea, programatzaileak hardwareari buruzko detaileak jakin gabe, hau atzitzeko aukera izateari deritzo.
+
+
+=== Funtzioak ===
+Kernelak konputagailuari baliabideak eskaini eta kudeatzen dizkio, beste programei exekuzioa eta baliabide horiek erabiltzea baimenduz. Kernelak gainera memoriako helbide espazioa ezartzen du aplikazioetarako, memorian aplikazioen kodea duen fitxategiak kargatzen ditu eta programentzako edota programen barnean kokapen bereziak dituzten adarrentzako exekuzio pila ezartzen du.
+Kernela hauen arduradun da:
+1. Periferikoei edo makinara konektatzen diren gailuei sarbidea baimentzen die, erabiltzaileak erabili ditzan.
+2. Makinaren zerbitzuak eta programak modu eraginkor batean exekuta daitezen memoria kudeatzen du.
+3. Prozesu eta programa ezberdinek prozesatzeko behar duten denbora kudeatzen du.
+
+
+=== Kernel motak ===
+Hasiera batean, konputagailuak, nukleorik gabe funtzionatzen zuten, baina, programa ezberdinak erabili ahal izateko, makinak berrabiarazi eta birkonfiguratu behar ziren. Horregatik, programa laguntzaileak memorian gordetzen hasi ziren. Programa hauek garatzen joan ziren eta gaur egun nukleo edo kernel izenarekin ezagutzen direnen oinarri izan ziren.
+Egun, lau kernel mota daude indarrean:
+1. Nukleo monolitikoak (Monolithic kernel): hauek hardwarearen abstrakzioa errazten dute. Ez dute modulurik erabiltzen, hau da, kernela programatua dago dena kapa batean garatzeko. Honek azkarragoa egiten du, baina segurtasun aldetik galerak sortzen dira eta gainera prozesua konplexuagoa da. Adibidez, Linux edo Unix sistema eragileek honako nukleoak erabiltzen dituzte.
+2. Mikronukleoak (Microkernel): funtzionalitatea hobetzeko, hardwareari abstrakzio bakunak eskaini eta zerbitzari aplikazioak erabiltzen dituzte. Sistema hau, aurrekoa baina seguruagoa da, baina motelagoa ere eta askotan erantzuna jasotzeko denbora dezente itxaron behar da. Adibidez, MAC OS X sistema eragileak , Mach mikronukleoa erabiltzen du.
+3. Nukleo hibridoak (Hybrid kernel): mikronukleoen parekoak dira, baina kernela azkarragoa izan dadin, kernelaren espazioan kode gehigarria eskaintzen dute. Windowsek esaterako, Windows NT kernela erabiltzen du, mota honetakoa dena.
+4. Exonukleoak (Exokernel): hardwarea zuzenean atzitzeko liburutegiak eskaintzen dituzte. Gaur egun Nemesis sistema eragileak honelako kernel mota erabiltzen du, hala ere, Nemesis ez da oso ezaguna.
+
+
+== Moduak ==
+Gaur egungo mikroprozesadoreak (PUZ edo MPU) operazio modu anizkoitzak onartzen dituzte. PUZek kapazitate honekin bi modu eskaintzen ditu: erabiltzaile modua eta gainbegirale modua. Orokorrean, gainbegirale moduko funtzionamenduak baldintza gabeko sarrera baimentzen du makinaren baliabide guztietan, baita MPU aginduetan. Erabiltzaile moduan berriz, aginduen erabileran mugak ezartzen ditu, eta orokorrean, ez du baimentzen makina baliabideetarako zuzeneko atzipena.
+Pizterakoan edo berrabiarazterakoan, gainbegirale moduan hasten da sistema. Kargatzen denean edo sistema eragilearen kernela hasten denean, erabiltzailearen modua eta gainbegirale moduaren muga ezar daiteke ( kernel modua bezala ezagutua).
+Kernelak gainbegirale modua erabiltzen du behe-mailako lanetan, hardwarean murrizketarik gabeko kontrola behar duenean. Adibidez, memoriaren eta gailuen arteko komunikazioak (disko unitateak eta bideo dispositiboak erabiltzeko esaterako). Erabiltzaile modua, berriz, beste guztirako erabiltzen da. Aplikazio programak, testu prozesadoreak eta datu baseen administratzaileak esaterako, erabiltzaile moduan lan egiten dute eta kernelaren funtzioetara jotzen dute makinaren baliabideak atzitzeko, honek gainbegirale moduan eragiketak buru ditzan. Orokorrean, nukleo modura pasatzen da software etenaldia sortzen duen makina mailako agindu baten bitartez. Horrela erabiltzaile modutik gainbegirale modura igaro eta sistemaren kodea exekutatzen hasten da kontrola nukleoari emanez.
+
+
+== Fitxategi-sistema ==
+Gaur egungo sistema eragileetan fitxategiak byte sekuentzia batean daude antolatuta. Fitxategi baten formatua bere edukiak definitzen du, nahiz eta sistema eragile batzuetan formatua fitxategi-luzapenaren arabera adierazten den. Adibidez, testu fitxategi baten byteak ASCII edo UTF-8-rekin daude lotuta, irudi, bideo edo audio baten byteak, ordea, beste modu batera interpretatzen dira. Fitxategiekin batera sistema eragileak metadatuak biltegiratzen ditu, fitxategiarekin lotutako hainbat informazio gordetzeko: izena, mota, tamaina, babeserako informaziorako, sortutako eta atzitutako datak...
+
+
+=== Fitxategi bereziak ===
+Sistema eragilearentzat fitxategia termino abstraktu bat da, gehienetan diskoan gordetako fitxategiak izan arren. Fitxategi bereziak ere badira, tartean dispositiboak edo gailuen deskribatzen dituzten fitxategiak (karakterekoan edo blokekoak), katalogoak edo direktorioak, komunikaziorakoak (pipeak eta socketak)...
+
+
+=== Datuen egituraketa fitxategietan eta katalogoetan ===
+Fitxategi baten informazioa pakete txikiagoz egon ohi da osatuta (normalean erregistroak edo lerroak) indibidualki baina sistemarako byte segidak dira. desberdinak direnak, baina ezaugarri komunak dituztenak.
+Bestalde fitxategiak diskoan egitura logikoetan antolatzen dira (katalogoak) eta horretan sistema eragileak ere laguntzen du. Sistemak katalogo bakoitzaren fitxategien eta azpikatalogoen informazioa biltegiratzen ditu, estekak gordez fitxategi-sistemaren zuhaitz edo sare egitura islatu ahal izateko.
+Datuak biltegiratzean sistema eragileak bilatu behar du oreka abiaduraren eta espazioaren optimizazioaren artean. Hori lortzeko, diskoetan karaktereak banan banan idatzi beharrean, jarraitutako karaktereak bloketan biltzen ditu, eta diskoa atzitzen denean bloke oso bat irakurtzen edo idazten da.
+
+
+=== Eragiketak ===
+Hauek dira programa batek fitxategi baten egin ditzakeen eragiketak, fitxategien gaineko sistema-deiekin bat datozenak:
+
+Fitxategi berri bat sortu
+Fitxategien baimenak eta atributuak aldatu
+Fitxategi bat ireki, bere edukiak programarentzako ikusgarri egiteko
+Fitxategi batetik datuak irakurri
+Fitxategi baten datuak idatzi
+Fitxategi bat itxi
+Ordenagailu batean fitxategiak sortu, mugitu, aldatu, handitu, murriztu eta ezabatu daitezke. Kasu gehienetan konputagailuan exekutatzen diren programek egiten dituzte eragiketa hauek, baina erabiltzaile batek ere egin ditzake beharrezkoa balitz.
+UNIX-moduko sistema eragileetan, erabiltzaile espazioko programek ez dute zuzenean fitxategiekin behe mailan lan egiten. Bakarrik kernel-ak egiten du lan fitxategiekin eta erabiltzailearekiko modu garden batean maneiatzen ditu eragiketa hauek. Sistema eragileak abstrakzio maila bat eskaintzen du, erabiltzaileak fitxategi bat bere izenaren arabera atzitu dezake, deskriptorea erabili gabe. Adibidez rm fitxategia aginduak ez du fitxategia bera ezabatuko, baizik eta fitxategi horren erreferentzia. Fitxategi batentzat hainbat erreferentzia egon daitezke, baina guztiak ezabatzen direnean, kernelak fitxategi horrek hartzen zuen lekua libre bezala tratatuko du gainetik beste edozer datu berridazteko. Datu hondar hau segurtasun arazo bezala kontsideratzen da, datuak ez baitira ezabatu eta ondorioz, berreskuratzeko aukera existitzen delako. Edozein ezabapen-seguru egiten duen programak sistema-deiak erabiliko ditu fitxategiaren datuak guztiz ezabatzeko.
+
+
+== Babesa ==
+Sistema eragile modernoek fitxategiak nahigabe edo nahita sortutako kalteaz babesteko hainbat aukera eskaintzen dituzte. Hainbat erabiltzaile izan ditzaketen konputagailuek fitxategi-baimenak inplementatzen dituzte, fitxategiak edo karpetak nork aldatu, ezabatu edo sortu ditzakeen kontrolatzeko. Adibidez, erabiltzaile konkretu batek fitxategi edo karpeta bat irakurtzeko baimena soilik izan dezake, baina ez aldatu edo ezabatzekoa; edo beharbada irakurri eta aldatzeko baimena izan dezake, baina ez exekutatzekoa. Baimenak, fitxategi baten edukia erabiltzaile konkretu batek (edo gehiagok) bakarrik izan dezan erabili ahal dira.
+Hainbat sistema eragilek inplementatzen duten beste babes mekanismo bat irakurtzeko-soilik flag-a da. Fitxategi baten hau aktibatuta badago (erabiltzaile edo programa batek hala nahi izan duelako), fitxategia arakatua izan daiteke, baina ezin daiteke bere edukia aldatu. Flag hau oso erabilgarria da aldatua edo ezabatua izan ez daitekeen informazio kritikoa gordetzeko, sistema eragileak bakarrik erabiltzen dituen fitxategi berezientzako, adibidez. Sistema batzuetan fitxategi ezkutuak ere inplementatzen dira, fitxategiak erabiltzailearentzako ikusezin bihurtzeko.
+
+
+== S/Iko kanalak ==
+Edozein programa Unix edo Linux plataformetan Sarrera/irteera kanalak daude informazioa garraiatzeko. Sistema eragileek programatzaileari eskaintzen dizkion hiru kanal estandar daude; Sarrera Estandarra, Irteera Estandarra, printf -k egiten du, eta Errore estandarra, hemen idazten duguna zuzenean pantailara doa.
+Prozesu batek ezaz bere sarrera sarrera estanderretik hartzen du, bere irteeera irteera estandarretik bidaltzen du eta errore mezuak errore estandar irteeratik.
+
+
+=== Nola adierazten dira kanal hauek? ===
+Liburutegi-errutinekin ari bagara; Stdin(Sarrera Estandarra), Stdout(Irteera Estandarra) eta Stderr(Errore estandarra). Sistema-deiekin ari bagara; 0(Sarrera Estandarra), 1(Irteera Estandarra) eta 2(Errore estandarra).
+
+
+== Interfazeak ==
+Edozein ordenagailuk, pertsona batek erabiliko badu, erabiltzailearen interfazea behar du. Izan ere, sistema eragilearen zerbitzuetara sarrera ematen dio erabiltzaileari. Shell deitu ohi zaio (oskola, ingelesez), sistema eragilearen nukleoaren inguruko geruzetako kanpokoena delako.  Direktorio-egitura ikusten du eta zerbitzuak eskatzen dizkio sistema eragileari sarrerako gailuetatik (esaterako, teklatu, sagu edo kreditu-txartel irakurgailuetatik) datuak lortzeko eta irteerako gailuetan (esaterako, monitore edo inprimagailuetan) gonbitak, egoera-mezuak eta halakoak bistaratzeko.
+Historikoki, erabiltzaile-interfazeen bi forma arruntenak hauek izan dira: komando-lerro interfazea (CLI, command-line interface), non komandoak lerroz lerro idazten diren, eta erabiltzaile-interfaze grafikoa (GUI, graphical user interface), non ingurune bisual bat dagoen, gehienetan WIMP erakoa ("windows, icons, menus, pointer", hau da, "leihoak, ikonoak, menuak, kurtsorea"). Ohikoak ez badira ere, badaude beste aukera batzuk, tartean ahots bidezko interfazeak eta CLI kategorian sartzen ez diren beste testu-interfaze batzuk.
+Interfaze grafikoak hasiera batean erosoagoak badira ere, komando-lerroen potentzialtasuna azpimarratzekoa da, batez ere sistemen administratzaileentzat, lan errepikakorrak automatizatzeko duten ahalmena, ataza bat ehun edo mila aldiz egin behar denean, banan banan egin beharrean, komando-fitxategi (script) bat presta daiteke automatikoki egin dadin. Are gehiago, ondo dokumentatu eta gordez gero, egoera berean behin eta berriro erabil daiteke. Bestalde, interfaze grafikoek baliabide asko behar ditzute (memoria, CPU...) eta horregatik zerbitzarietan ez erabiltzeko gomendatzen da.
+
+
+=== Komando-lerro interfazeak ===
+Komando-lerro interfazeak teklatu baten bidez idatzitako alfazenbakizko karaktereak erabiltzen ditu sistema eragileari aginduak eta datuak emateko. Komando interpretatzaileak karaktere-sekuentzia bat analizatu eta errore-mezu batekin erantzungo du ulertzen ez badu, edo beste ekintzaren bat hasiko du (programa bat kargatzea, fitxategiak zerrendatzea, erabiltzaile baten saioa hastea edo beste hainbat). Sistema eragile batzuek, UNIX-modukoek esaterako, askotariko shell programak dituzte, komando, sintaxi eta gaitasun desberdinekin.
+
+CLI askok komando-sekuentziak gordetzeko aukera ematen dute, berrerabili ahal izateko. Sekuentziak datu-fitxategi batean gordetzen dira, eta CLIak erabiltzailea haiek tekleatzen arituko balitz bezalaxe jarraituko ditu. Batch fitxategi edo shell script horiek (sistema eragilearen arabera) behin eta berriro erabili ahal izango dira ohiko eragiketak automatizatzeko, adibidez, sistema bat berrabiatzean programa multzo bat hasieratzeko. Script modu hauetan egiturak, baldintzak, aldagaiak eta programazio-lengoaietako bestelako elementuak erabili ohi dira. Batzuetan, script lengoaia hauek aipatutako funtzioa betetzeko beharrezkoa dena besterik ez dute eskaintzen; beste batzuk, berriz, programazio-lengoaia sofistikatuak dira berez.
+Ohikoa den beste ezaugarri bat komando-lerroen osaketa da, hau da, interpretatzaileak komandoak osatzea erabiltzaileak sartutako karaktere gutxi batzuetatik abiatuta. Historia funtzioa ere eskaini ohi da, erabiltzaileak aurretik idatzi dituen komandoak errepikatzeko, beharrezko aldaketak egiteko aukerarekin.
+Sistema eragileari komando guztiak erabiltzaileak tekleatu behar zizkionez, ohikoena komando-izen motzak eta programen aukerak adierazteko sistema konpaktuak ziren. Izen horiek erabiltzaileek gogoratzeko zailak izan zitezkeen, eta hasierako sistemek ez zeukaten nahikoa biltegiratze-ahalmen gidaliburu zehaztuak emateko.
+
+
+=== Interfaze grafikoak ===
+Egungo sistema eragile gehienek interfaze grafikoak onartzen dituzte, eta askotan batekin datoz. Interfaze grafikoa nukleoan integratuta dago batzuetan, adibidez, Mac OSren lehen bertsioetan. Berez erabiltzaile-interfaze grafikoa sistema eragilearen zerbitzu bat ez bada ere, nukleoa horretarako prest egoteak erantzun-denborak hobetu ditzake, interfazearen irteera-funtzioek testuinguru aldaketa gutxiago beharko baitituzte. Beste sistema eragile batzuk modularrak dira; horietan, azpisistema grafikoa eta nukleoa bananduta daude.
+Interfaze grafikoek lana errazten diete erabiltzaile hasiberriei, erabiltzeko errazak izatea baitute ezaugarri. Hala ere, zenbait desabaintaila dituztenez, GUI bat duten sistema eragile gehienek CLI bat ere eskaintzen dute.
+
+
+== Sistema eragile erabilienak ==
+Hirurogei sistema eragile baino gehiago zerrendatu dira ingelesezko Wikipedian. Erabilienak Unix, Windows eta macOS dira ordenagailuetan eta Android eta iOS telefonoetan eta tabletatan.  Linux, FreeBSD eta  OpenBSD dira Unixen oinarritutako SE libreak, oso erabiliak direnak zerbitzarietan eta superkonputagailuetan. Historikoki beste sistema batzuk aipa daitezke: CP/M, MS-DOS, VMS (eta OpenVMS), Multics eta Solaris esaterako.
+
+
+=== Euskaraz ===
+Sistema eragile libreak, Linux banaketa gehienak esaterako, euskaraz egoten dira, eta banaketaren bat euskaraz ez badago  hizkuntza paketea euskaraz lokalizatzeko erraztasun guztiak eskaintzen dira.
+Software pribatiboetan, Androidek eta Windowsek eskaintzen dituzte euskarazko bertsioak. Chrome OS, ordea, Hego Euskal Herriko Hezkuntza sistemetan hain erabiliak diren Chromebook-ek dakarten sistema eragilea, ez du euskal bertsiorik eskaintzen.
+
+
+== Erreferentziak ==
+
+
+== Ikus, gainera ==
+Sistema eragileen erabilera
+
+
+== Kanpo estekak ==
+https://zientzia.eus/artikuluak/sistema-eragileak-ms-dosetik-harantzago/
+http://www.masadelante.com/faqs/sistema-operativo
+http://www.areatecnologia.com/sistemas-operativos.htm
+https://es.slideshare.net/rodrivilla/sistema-eragileak
+https://web.archive.org/web/20181214214019/http://www.imh.eus/eu/komunikazioa/dokumentazio-irekia/manualak/oinarrizko-segurtasuna-interneten/sistema-eragileak/zer-da-sistema-eragilea

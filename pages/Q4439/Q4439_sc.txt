@@ -1,0 +1,78 @@
+Su discu fissu (o discu cídrinu/tèteru), in informàtica, est unu dispositivu de memòria de massa ca impreat unus discus magnèticus po arreguai datus e aplicatzionis.
+
+
+== Istòria ==
+Su discu fissu dd'at imbentau s'IBM in su 1956 cun su 350 Disk Storage Unit. Su primu protòtipu fiat fatu de 50 discus cun su diàmetru de 24" (circa 60cm) e podiat tenni 5MB de datus. Fiat mannu cummenti unu frigorìferu e pesàt prus de 1t. In printzìpiu, su nòmini prus impreau fiat discu fissu. Is fueddus "discu cìdrinu" (hard disk) funt nàscius a pustis, po contraposizioni cun is discheddus (in ingresu floppy disk, discus moddis).
+
+
+== Descritzioni ==
+Su discu fissu est costituiu cun unus pratus a arrodiamentu lestu, fatus de imbìdriu o allumìniu, cobertu de materiali ferromagnèticu e de duas concheddas de ligidura po dogna ladu de dogna discu ca "bobant" a pagus nanòmetrus de sa superfici de su discu, ligendi o scriendi is datus. Sa conchedda est pesada de s'ària mòvia de s'arrodiamentu de is discus. Sa velocidadi de arrodiamentu est de sòlitu 5.400, 7.200. 10.800 o 15.000 girus po minudu.
+
+
+=== Organizatzioni fìsica de is datus ===
+Is datus funt de sòlitu memorizaus asuba a su discu sighendi unu schema de alocatzioni fìsica beni definiu. Su prus impreau est su Tzilindru, conchedda, setori o TCS (connotu cummenti CHS, de s'ìngresu Cylinder/Head/Sector). In custa strutura, is datus funt scritus a manera de teni un indiritzu cun unu nùmeru po cadauna de is sighentis entidadis fìsicas:
+
+Pratu
+
+Su discu est fatu de unus pratus postus unu parallelu a s'atru. Dogna ladu tenit unu nùmeru unìvocu.
+
+Conchedda
+
+Asuba a dogna ladu de su pratu ddoi at una conchedda de scritura/ligidura de is datus. Is concheddas si podint movi sceti totas in pari. Duncas, sa positzioni de dogna conchedda asuba a su pratu est sa pròpria de totu is atras.
+
+Rasta
+
+Dogna pratu est dividiu in prus aneddus concèntricus, ca ddi nant rastas e funt numeraus.
+
+Cluster
+
+Grupu de setoris de rastas làcana a pari.
+
+Tzilìndru
+
+Su grupu de rastas cun sa pròpriu distàntzia de su centru de totu is pratus. Funt totu is rastas cun su matessi nùmeru, ma pratu diferenti.
+
+Blocu
+
+Su grupu de setoris in sa pròpriu positzioni in totus is pratus.
+Custa strutura introdusit una geometria fìsica de su discu ca cunsistit in una sèrie de cordinadas TCS ca permitint de indiritzai a manera unìvoca dogna blocu de datus in su discu.
+
+
+==== Strutura de su setori ====
+Su setori est s'unidadi prus pitica de sa formatatzioni de livellu bàsciu de su discu fissu (innoi seus chistionendi de formatatzioni fìsica e no de sa formatatzioni lògica ca pertocat sa creatzioni de tabellas de alocatzioni de is archìvius, ca dipendit de su sistema operativu e de su sistema de is archìvius impreau). Su setori no est unu logu buidu asuba a su discu, ma tenit una strutura ca assimbilat a custa:
+<SIS><SIN><INTESTATZIONI><DATUS><CONTROLLU>
+SIS est su Spàtziu Intra is Setoris, una parti smagnetizada ca serbit a signai s'inghitzu (o sa fini) de unu setori. SIN est unu preàmbulu ca serbit a sa sincronizatzioni de unu relògiu de sistema. S'intestatzioni cuntenit in informatzionis ca serbint a identificai su setori. A pustis, benint is datus e su CONTROLLU, ca cuntenit s'arresurtau de una funtzioni matemàtica carculada asuba a su blocu DATUS e serbit po controllai ca custus siant lìgius chena faddinas.
+
+
+==== Setori de aviu de su SO ====
+Candu asuba a su discu est installau unu sistema operativu, su primu setori est su setori de aviu principali (connotu puru cummenti Master Boot Record o MBR). Custu cuntenit is istrutzionis de aviu de su sistema operativu.
+
+
+== Interfàtzias ==
+Ddoi at prus interfàtzias ca unu discu podit impreai po essi cullegau a s'elaboradori. Una de is primas a essi impreadas me is elaboradoris personalis est sa Seagate ST-506 de su 1980 ca impreàt duus cavus, teniat una velocidadi de 5 Mbit/s e fiat basada asuba a sa Shugart Associates SA1000 e assimbillàt a sa de s'unidadi po is dischetus. A pustis ndi funt stètias indrodusias, prus lestas.
+
+
+==== (P)ATA/(E)IDE ====
+S'interfàtzia ATA (Advanced Technology Attachment, cullegamentu a tecnologia avantzada) est stètia sa prus comuna fintzas a sa prima metadi de is annus 2000. Custa est connota puru cummenti una de is versionis de su standard, IDE (Integrated Drive Electronics, eletrònica de discus integrada) o sa versioni a pustis, EIDE (Enhanced IDE, IDE ammellorau). A pustis de s'introdutzioni de un'interfàtzia noa, sa SATA (Serial ATA), a s'ATA ddi nant puru PATA (Parallel ATA).
+Su cavu de connessioni intra su discu e su controllori tenit 40 cuntatus e 40-80 condutoris, est de sòlitu de cabori murru e forma prana e podit teni unu connetori in prus po giai sa possibbilidadi de collegai duas unidadis cun su pròpriu cavu. Candu si fait custu, is duas unidadis depint essi cunfiguradas, una cummenti master (meri) e s'atra cummenti slave (scrau). Sa cunfiguratzioni si fait de sòlitu a manu, cun s'impreu de unu pontixeddu (jumper), o in automàticu cun s'impreu de sa modalidadi cable select.
+Sa velocidadi màssima de su standard PATA est de 133 MB/s.
+
+
+==== Serial ATA ====
+Evolutzioni de su standard PATA, est stètia introdùsia in su 2002 cun una velocidadi de 1,5 GB/s e at lòmpiu is 6 GB/s cun sa versioni 3.0.
+Impreat unu cavu prus piticu cun sceti 7 cuntatus, de sòlitu de cabori arrùbiu. Una novidadi de custu standard est ca permitit su "collegamentu callenti" de is dispositivus. Custu bolit nai ca unu dispositivu podit essi collegau o scollegau candu su sistema est giai traballendi, cosa ca no est permìtia cun is interfàtzias prus bècias.
+
+
+==== SCSI ====
+Su SCSI (Small Computer System Interface, Interfàtzia pitica po sistemas de carculu) est stètiu po meda tempus s'interfàtzia prus comuna po is discus de is elaboradoris prus mannus po impreu professionali e podiat essi impreada puru po atrus dispositivus, cummenti scanner. Custa interfàtzia permit de lompi a una velocidadi prus manna, fintzas a 640 MB/s e de collegai prus dispositivus in pari.
+
+
+==== SAS ====
+Serial Attached SCSI (SCSI cun cullegamentu seriali), est un'evolutzioni de su SCSI, cun velocidadi fintzas a 12 GB/s. Sa diferèntzia prus manna cun su SCSI clàssicu est ca est un'interfàtzia puntu-puntu. Duncas, sceti unu dispositivu podit essi collegau a su pròpriu cavu.
+
+
+== Bibliografia ==
+Andrew S. Tanenbaum, Todd Austin - Architettura dei calcolatori, un approccio strutturale, 6a ed. - ISBN 9788871929620
+
+
+== Notas ==

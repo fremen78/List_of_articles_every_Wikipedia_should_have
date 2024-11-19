@@ -1,0 +1,95 @@
+Unikod (енгл. Unicode, engl. izgovor: /ˈjunəˌkoʊd/ ili /ˈjuːnɪkəʊd/) industrijski je standard za dosledno enkodovanje, prikaz i rukovanje tekstom iz većine svetskih pisama.
+
+
+== Razvoj elektronskog zapisa teksta ==
+Prvi računari su bili pravljeni pretežno za englesko govorno područje i imali su podršku samo za engleski alfabet, za brojeve, zagrade i još poneki kontrolni znak, što je činilo ukupno 128 mogućih slova (u 7 bita). To je bio tzv. ASCII ili US-ASCII (američki) standard.
+Kasnije je skup znakova proširen na 256 (8 bita), a „gornjih“ 128 znakova je bilo korišćeno za dodatne znakove. Iz neke navike je i ovaj prošireni ASCII nazivan ASCII, tako da tu često dolazi do zabune. Da bi postojala podrška za više jezika, smišljane su tzv. kodne strane (Code Page) koje definišu ponašanje tog dodatnog skupa slova. Osnovna kodna strana na personalnim računarima (PC437) u tom gornjem skupu definiše razne grafičke znakove za crtanje tekstualnih prozora i slično. Kasnije je razvijeno još puno kodnih strana koje podržavaju određene jezike. Tako postoje Latin1 (ISO-8859-1) za latinična pisma Zapadne Evrope (Francuska, Njemačka, Španija, ...), Latin2 (ISO-8859-2) i Windows-1250 za latinična pisma Istočne Evrope (naša latinica i sl.), ISO-8859-5, KOI8-R i Windows-1251 za ćirilicu... Osnovni problem sa kodnim stranama je to što se međusobno isključuju, tj. cijeli dokument mora da bude napisan istim pismom. To uglavnom nije problem realizovati, ali ako bi bilo potrebno pomiješati dva pisma, kao na primer u nekom turističkom vodiču gde zajedno postoji i tekst na srpskom, na engleskom i na francuskom, nailazi se na problem. Zbog toga se došlo do ideje da se napravi jedinstveni zapis za sve jezike - Unikod.
+
+
+== Pregled postojećih verzija Unikoda ==
+Postoji više verzija Unikoda. Osnovna verzija je dvobajtni format zapisa do 216 = 65536 znakova. Njen naziv je UCS-2 zato što koristi dva okteta, odnosno dva bajta. Sa tih 65536 znakova riješen je problem zapisa skoro svih postojećih pisama (uključujući čak i neka izmišljena, kao na primer klingonsko pismo). Ovaj tip Unikoda se naziva Plain UCS-2 ili UTF-16.
+Sada se javlja problem alokacije (dodele) prostora za Unikod-kodiranu poruku na medijumu koji se koristi. Ako je reč o nekom dokumentu na disku, on će da zauzima duplo više prostora nego konvencionalan dokument jer će se svaki znak zapisivati sa dva bajta umesto samo sa jednim. Ako je riječ o prenosu podataka preko računarske mreže, biće potrebno prenijeti duplo više podataka, pa će samim tim i prenos da traje duplo više (odnosno da košta duplo više). Postavlja se pitanje da li je to suviše velika cijena za univerzalno pismo i da li postoji neki način da se taj problem prevaziđe i izbjegne. Kao rješenje uvijek stoji mogućnost da se zapisuje nekom odgovarajućom kodnom stranicom i troši bajt po znaku, ako nije neophodno korišćenje više pisama u istom dokumentu (što se rijetko dešava). Drugo rješenje je korišćenje tzv. transformacionih šema za pogodniji zapis i prenos podataka korišćenjem Unikoda.
+Prvo je razvijena Unikod transformaciona šema sa osnovnom jedinicom od 8 bita (UTF-8). Pomoću nje se znak zapisuje u jednom, dva ili tri bajta, u zavisnosti od toga o kom je znaku reč. Ova transformaciona šema je prevashodno zgodna za upotrebu u jezicima koji koriste latinicu. O UTF-8 će biti više reči u poglavlju Ukratko o UTF-8.
+Jedan dio Mail Transfer Agent-a, kao i zvanični standard za elektronsku poštu (IETF: STD 11, RFC 822) podržava samo 7-bitne mail poruke. MIME standardi (RFC 2045, RFC 2046, RFC 2047, RFC 2048 i RFC 2049) omogućavaju prenos višebitnih riječi preko Internet mail-a, koristeći Base64 i Quoted Printable načine kodiranja, međutim, oni nisu pravljeni za prenos Unikoda nego za prenos bilo kakvih datoteka i nisu bili optimalna rješenja. Zbog toga je kasnije razvijena 7-bitna transformaciona šema UTF-7. Tu se znak zapisuje u jednom ili u nekoliko bajtova, slično kao i u UTF-8. Osnovna razlika je u tome što UTF-7 koristi samo Base64 kodirane znakove koji bez problema (uvek mogu da se pravilno odštampaju) mogu da se prenose putem elektronske pošte. Za takvu namenu se pokazalo da je UTF-7 bolji zapis nego UTF-8 kada se kodira sa Base64 ili sa Quoted Printable algoritmima.
+Postoji i noviji Unikod standard pod nazivom UCS-4 koji koristi 4 bajta za zapis 231 = 2147483648 znakova podijeljenih u tzv. ravni. Prva dva bajta definišu ravan, tako da ima 215 = 32768 ravni. Druga dva bajta definišu znak unutar ravni, tako da ima 216 = 65536 znakova po ravni. Taj noviji format je više napravljen kao plan za budućnost nego kao realna opcija, pošto još uvijek nijedan znak nije alociran u novodobijeni prostor, odnosno svi za sada definisani znakovi (cijeli UCS-2) se nalaze u ravni 0 ili osnovnoj višejezičnoj ravni (Basic Multilingual Plane, BMP). Međutim, pošto je UCS-4 novi standard za Unikod, treba i njega imati u vidu. Da bi se UCS-4 transparentno uveo u upotrebu redefinisani su formati zapisa UTF-7, UTF-8, UTF-16 i UTF-32. To je učinjeno tako da svaki znak iz UCS-2 ima istu reprezentaciju u UTF-7 i UTF-8 kao i ranije. UTF-16 je u neku ruku sinonim za UCS-2 i sadrži više od dva bajta samo u slučaju da se kodira neki znak van „Osnovne jezičke ravni“ (BMP), koji za sada ne postoje. Za više informacija, pogledajte tabelu Šema kodiranja UCS-4 u UTF-8. UTF-32 je u stvari način zapisa UCS-4 u kome se koriste sva četiri bajta. Zbog toga što viši i niži bajt (ili dva bajta) mogu da se zapišu u memoriju na dva načina, postoje još po dvije podvarijante UTF-16 i UTF-32 koje se razlikuju po redosledu bajtova. To su UTF-16BE (big endian) i UTF-16LE (little endian) i UTF-32BE i UTF-32LE. Ovo nije uvedeno da bi se uvela dodatna zabuna i zbrka, nego zato što različite arhitekture računara različito čuvaju podatke.
+Postoje dvije organizacije koje definišu dva standarda za Unikod. Jedan format je razvijen od strane tzv. The Unicode Consortium pod nazivom The Unicode Standard. Drugi standard je razvila Međunarodna organizacija za standardizaciju - International Organization for Standardization, pod nazivom ISO/IEC 10646. Ta dva standarda su skoro identična i razlikuju se po pitanju tzv. Han unifikacije (predstavljanje japanskih, kineskih i korejskih znakova jednim jedinstvenim skupom znakova), oko dodatnih znakova za definisanje akcenata, a od skoro i u tome što Unicode Consortium nije još podržao standard UCS-4. Međutim, za našu upotrebu slobodno možemo da smatramo da su potpuno identični. Međunarodna organizacija koja definiše standarde za Internet - Internet Engineering Task Force, IETF je u svojim standardima, tzv. „zahtjevima za komentarima“ (Request for Comments, RFC), u kojima je definisano sve što postoji na Internetu, prihvatila UTF-7 (RFC 1642 i RFC 2152), UTF-8 (RFC 2044 i RFC 2279) i UTF-16 (RFC 2781), čime su oni i „zvanično“ ušli u upotrebu na Internetu, tj. svuda. U najnovijim standardima IETF je izostavio Unicode Consortium i koristi samo verziju ISO 10646, što znači da je zvanično priznata verzija ISO 10646.
+U HTML jeziku za opis veb stranica se javljaju još dva načina za kodiranje Unikod znakova. Ovi načini troše mnogo više prostora nego originalni Unikod zapis i namijenjeni su za korišćenje unutar neke od kodnih stranica za ubacivanje ponekog znakova iz neke druge kodne stranice. Jedan način je zapis oktalnih vrednosti UTF-8 bajtova. Zapisuje se tako što se prvo zapiše znak &92;, pa onda oktalna vrijednost bajta. Ako taj znak u UTF-8 kodiranju sadrži više bajtova, svaki bajt se zapisuje na isti način. Tako, na primjer, znak &1060; čiji je UCS-2 kod U+0424 (U+ označava da je riječ o Unikod znaku), a UTF-8 zapis 0xD0 0xA4 ima svoj HTML oktalni zapis kao \320\244, pošto je 0xD0 = 0320(oktalni) = 208(decimalni) i 0xA4 = 0244 = 164.
+Drugi način zapisa Unikod znakova u HTML-u je putem decimalne vrijednosti njihovog UCS-2 koda. Zapisuje se tako što se prvo zapišu znakovi &#, pa onda decimalna vrijednost UCS-2 koda i na kraju znak ;. Tako bi se, na primjer, gore pomenuti znak &1060; sa UCS-2 kodom U+0424 zapisao u HTML decimalnom zapisu kao &#1060;, pošto je 0x0424 = 02044 = 1060.
+
+
+=== Uređivač teksta Kate ===
+Neki tekstualni uređivači takođe imaju opciju da sačuvaju tekst na više načina kodiranja. Jedan od takvih je Kate koji je sastavni deo grafičkog okruženja KDE pod operativnim sistemom Linuks. On takođe može da sačuva tekst i u čistom formatu UCS-2 ili u UTF-16 (kao delu UCS-4). Za nas je bitan samo format UTF-8. Jednostavno se iz menija Prikaz izabere podmeni Podesi kodiranje i tu se izabere željeno kodiranje, odnosno UTF-8.
+
+
+=== Iconv - pretvarač kodiranja ===
+Na UNIX operativnim sistemima postoji biblioteka iconv koja vrši konverziju iz jednog u drugi način kodiranja na veoma jednostavan način. Postoji i ekvivalentan komandno-linijski (command line) program koji pretvara datoteke iz i u sve moguće načine kodiranja. Lista kodova iz kojih i u koje ova biblioteka/program može da konvertuje zauzima više od 3 pune strane i može se reći da podržava sve moguće načine kodiranja.
+
+
+=== Fontovi koji podržavaju Unikod ===
+Da bi se koristio Unikod u pripremi dokumenata, potrebno je imati odgovarajuće fontove koji ga (barem djelimično) podržavaju. Od fontova dostupnih na Windows-u, Unikod sigurno podržavaju Arial, Times New Roman, Helvetica, Verdana i Courier New, a takođe su instalirani na svim Windows platformama, tako da bi generalno trebalo da se koristi neki od tih fontova. Fontovi tipa TimesCirilica ili YULTimes mogu da prikažu naše znakove, ali su daleko od Unikoda i u prenosu datoteke sa jednog na drugi računar u elektronskom obliku postoji velika šansa da ta datoteka neće biti lepo čitljiva na drugom računaru, tako da bi trebalo da se takvi nestandardni fontovi izbegavaju koliko god je to moguće.
+Na Linuksu i ostalim UNIX-ima se u samom nazivu fonta vidi da li podržava Unikod ili ne, pošto poslednji deo naziva fonta predstavlja character set (skup znakova) fonta. Ako tu piše iso10646, to znači da je font kompatibilan sa Unikodom. Međutim, i ovde bih radi prenosivosti dokumenata, preporučio da se koriste standardni (Adobe-jevi) fontovi, kao što su Times (-adobe-times-*-iso10646-1), Utopia (-adobe-utopia-*-iso10646-1), Helvetica (-adobe-helvetica-*-iso10646-1), Courier (-adobe-courier-*-iso10646-1).
+
+
+== Unikod, baze podataka i XML ==
+Svjetski trendovi razvoja baza podataka idu ka uvođenju Unikoda, kao standardni način zapisa podataka i XML-a, kao standardni jezik za prenos i prezentaciju tih podataka.
+Većina baza podataka već duže vreme podržava Unikod. Dobar deo aplikacija za rad sa bazama koriste XML za prezentovanje i prenos podataka, zato što se pokazalo da je XML jednostavan jezik za programiranje, za koji već postoji puno raščlanjivača i zato što se pokazalo da je XML dovoljno fleksibilan da može da prenese bilo kakav tip podataka na sličan način. Da bi se programi međusobno „razumjeli“, razvijeni su razni standardi za opis podataka koristeći XML (kao što je, na primjer, Encoded Archival Description standard).
+To uvođenje XML-a kao glavnog jezika za podršku bazama podataka je još više učvrstilo poziciju Unikoda, pošto se XML datoteke standardno pišu u UTF-8 ili UTF-16. Zanimljiva je i ta činjenica da je Majkrosoft, koji se uglavnom protivi svim standardima i trudi se da definiše svoje, prihvatio XML i koristi ga gdje god može. Cela .NET tehnologija je zasnovana na XML-u. Zbog toga može da se očekuje da će u budućnosti biti samo više XML-a i više Unikoda i da je bitno što ranije se orijentisati ka njima.
+
+
+== Tabela kodova za naša slova ==
+U tabeli 2 su izlistani skoro svi znakovi koji se kod nas (u Srbiji i na prostoru bivše Jugoslavije) koriste, sa svojim UCS-2 kodom, UTF-8 zapisom i sa HTML oktalnim i decimalnim zapisima (za više informacija pogledajte poglavlje 2).
+
+
+== Problemi sa Unikodom ==
+
+U Unikodu srpski i makedonski jezik, odnosno njihova ćirilička pisma, nisu tzv. „građani prvog reda”, kao što se može videti na slici desno. Pri dizajnu Unikoda početkom 1990-ih godina, nije uzeto u obzir da se ćirilička pisma manje-više razlikuju u dizajnu pojedinih slova. To se ispoljava u kurzivu (iskošeno ili polupisano), ali, kao što se vidi na slici, i sa malim slovom б u osnovnom režimu. U ruskoj verziji ono veoma nalikuje broju 6, dok u srpskoj verziji to nije slučaj, osim u izuzetno malim veličinama.
+Zbog veličine tržišta (Ruska Federacija i okolne zemlje iz bivšeg Sovjetskog Saveza, kao i Bugarska), većina fontova koja sadrže ćirilicu, preferira rusku ćirilicu na standardnim mestima Unikoda, odnosno ruski dizajn grafije, pa srpski i makedonski jezik najviše trpe zbog ovoga. Iako su velika preduzeća kao što su Adobi sistems (Adobe Systems) i Majkrosoft (Microsoft) upoznata sa ovim problemom, još uvek se ne zna da li će i kada i ovi jezici postati „građani prvog reda” u sistemu Unikod.
+U međuvremenu, rešenje može pružiti tehnologija kao što je Opentajp (OpenType, naročito njeno svojstvo locl (locale)), softver koji je podržava i moderni fontovi koji sadrže ispravna srpska/makedonska slova. Dobri primeri su operativni sistem GNU/Linuks (GNU/Linux), kancelarijski paket Libreofis (LibreOffice) pod Linuksom i veb-čitač Mozila Fajrfoks (Mozilla Firefox).
+Evo primera za „privremeno” rešenje u veb tehnologijama. U osnovnoj verziji:
+
+<span lang="sr">бгдпт</span> daje бгдпт
+<span lang="ru">бгдпт</span> daje бгдпт
+a polupisano ili iskošeno:
+
+<span lang="sr" style="font-style: italic">бгдпт</span> daje бгдпт
+<span lang="ru" style="font-style: italic">бгдпт</span> daje бгдпт.
+Dakle, mora se koristiti atribut lang="sr", i svaka veb prezentacija na srpskom jeziku treba da ima <html lang="sr"> ili <html lang="sr-RS">. Analogno ovome, i u XML i sličnim tehnologijama. Sve druge oznake, ili neoznačavanje uopšte, čini prikaz srpske ćirilice uglavnom neispravnim. Takođe, počevši od CSS-a 3, veb autori mogu da koriste font-feature-settings: 'locl';.
+Naravno, moderne porodice fontova kao sto su GNU FreeFont, DejaVu, Liberation, Ubuntu ili Majkrosoftovi „C*” fontovi (Calibri, Cambria, Candara, Consolas, Constantia, Corbel) od Viste pa na dalje moraju se koristiti (takođe i Sitka od Windows-a 8.1). Od Adobija dobri primeri su Arno Pro, Baskerville Cyrillic LT Std, Excelsior LT Std, Garamond Premier Pro, Sava Pro, Times Ten LT Std i Warnock Pro. Važno je ovde napomenuti da i kad imaju srpska/makedonska slova, neki fontovi ne podržavaju makedonski jezik samo zato što im nedostaje određena Opentajp naredba za to, koja mora da bude prisutna u samom fontu. (Dakle, makedonski jezik je još više ugrožen.)
+Pored primera sa slovima б, г, д, п, т, rusko veliko polupisano Д identično je latiničkom slovu D, što je takođe neprihvatljivo za srpski i makedonski jezik, a pomalo se razlikuje i dizajn velikih polupisanih slova Б i Н.
+
+Naposletku, otežano je i unošenje akcentovanih ćiriličkih slova, a u postojećoj bazi znakova u Unikodu nema dovoljno unapred definisanih ćiriličkih za ovu svrhu.
+
+
+== Vidi još ==
+UTF-1
+UTF-7
+UTF-8
+UTF-16
+UTF-32
+
+
+== Bibliografija ==
+Filip Brčić. Ukratko o xml-u, Januar 2003. http://brcha.free.fr/documents/XMLtut/xmltut.pdf.
+The Unicode Consortium. The Unicode Standard - Version 3.0. Addison-Wesley, http://www.unicode.org, 2000.
+World Wide Web Consortium. Extensible markup language (xml) 1.1. Candidate recommendation, https://web.archive.org/web/20031224032806/http://www.w3c.org/TR/xml11/, 2002.
+M. Davis D. Goldsmith. Utf-7 - a mail-safe transformation format of unicode. Experimental 1642, Internet Engineering Task Force, https://web.archive.org/web/20090816034224/http://www.ietf.org/rfc/rfc1642.txt, 1994.
+M. Davis D. Goldsmith. Utf-7 - a mail-safe transformation format of unicode. Informational 2152, Internet Engineering Task Force, https://web.archive.org/web/20090424211936/http://www.ietf.org/rfc/rfc2152.txt, 1997.
+Ulrich Drepper. MANPAGE: Iconv(3) 2.2.5 - Perform character set conversion. Free Software Foundation, Inc., 2002.
+Bojan Marinković <mr99007@alas.matf.bg.ac.yu>. Encoded archival description document type definition. 2003.
+K. Moore. Multipurpose internet mail extensions (mime) part three: Message header extensions for non-ascii text. Standards Track 2047, Internet Engineering Task Force, https://web.archive.org/web/20090403034557/http://www.ietf.org/rfc/rfc2047.txt, 1996.
+J. Postel N. Freed, J. Klensin. Multipurpose internet mail extensions (mime) part four: Registration procedures. Standards Track 2048, Internet Engineering Task Force, https://web.archive.org/web/20090327075149/http://www.ietf.org/rfc/rfc2048.txt, 1996.
+N. Borenstein N. Freed. Multipurpose internet mail extensions (mime) part five: Conformance criteria and examples. Standards Track 2049, Internet Engineering Task Force, https://web.archive.org/web/20090513033429/http://www.ietf.org/rfc/rfc2049.txt, 1996.
+N. Borenstein N. Freed. Multipurpose internet mail extensions (mime) part one: Format of internet message bodies. Standards Track 2045, Internet Engineering Task Force, https://web.archive.org/web/20090409233528/http://www.ietf.org/rfc/rfc2045.txt, 1996.
+N. Borenstein N. Freed. Multipurpose internet mail extensions (mime) part two: Media types. Standards Track 2046, Internet Engineering Task Force, https://web.archive.org/web/20100724211854/http://www.ietf.org/rfc/rfc2046.txt, 1996.
+F. Yergeau P. Hoffman. Utf-16, an encoding of iso 10646. Informational 2781, Internet Engineering Task Force, https://web.archive.org/web/20090428074712/http://www.ietf.org/rfc/rfc2781.txt, 2000.
+F. Yergeau. Utf-8, a trensformation format of unicode and iso 10646. Informational 2044, Internet Engineering Task Force, https://web.archive.org/web/20090419220823/http://www.ietf.org/rfc/rfc2044.txt, 1996.
+F. Yergeau. Utf-8, a transformation format of iso 10646. Standards Track 2279, Internet Engineering Task Force, https://web.archive.org/web/20090327062821/http://www.ietf.org/rfc/rfc2279.txt, 1998.
+
+
+== Izvori ==
+DecodeUnicode - Unicode WIKI, 50.000 gifs
+
+
+== Spoljašnje veze ==
+
+Tipometar — ćirilice na poklon

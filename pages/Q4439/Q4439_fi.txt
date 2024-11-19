@@ -1,0 +1,116 @@
+Kiintolevy, varsin usein puhekielessä myös kovalevy (vanhentuneesti myös umpilevy, joka tarkkaan ottaen viittaa tietyn tyyppiseen kiintolevyteknologiaan), on tietokoneeseen asennettu levymuisti, jota käytetään massamuistina. Siihen tallennetaan ohjelmat ja muut tiedostot. Se tallentaa tiedon yhden tai useamman pyörivän metalli- tai lasikiekon pinnalla olevaan magneettiseen materiaaliin. Tiedot säilyvät kiintolevyllä myös ilman tehonsyöttöä. Levyperustaisen kiintolevyn korvaavaksi massamuistiksi on yleistymässä SSD-puolijohdelevy, erityisesti sulautetuissa järjestelmissä.
+Vaihtolevy on levy, jonka levypakan eli levykön voi vaihtaa; kiintolevyn pakkaa ei voi vaihtaa, se on kiinteä. Umpilevyn (eli winchester-levyn, winsun) kiekot ja lukupäät ovat pölytiiviissä kotelossa. 
+Ulkoinen kiintolevy on tavallinen kiintolevy, mutta helposti kuljetettavissa paikasta toiseen, sillä sitä ei tarvitse asentaa tietokoneen sisälle ja siinä on tyypillisesti kuljetusta varten kotelo. Ulkoisia kiintolevyjä on valmistettu muun muassa SCSI-liitännällä.
+Nykyään ulkoinen kiintolevy toimii yleensä eSATA- tai USB-liitännällä. Applen laitteissa on mahdollista kytkeä ulkoinen kiintolevy Thunderbolt-liitännällä.
+
+
+== Historia ==
+Ensimmäinen kiintolevy oli IBM 350, joka esiteltiin vuonna 1956.
+Kiintolevy esiteltiin IBM 305 RAMAC -tietokoneen yhteydessä, joka oli viimeisiä elektroniputkiin perustuvia malleja IBM:ltä.
+350:ssä oli 50 magneettista levyä, joissa oli 50 000 sektoria, joista jokainen sisälsi 100 alfanumeerista merkkiä 5 miljoonan merkin yhteiskapasiteetilla.
+Vuonna 1973 IBM esitteli IBM 3340 levy-yksikön (umpilevyn), jonka tekniikka tunnettiin nimellä "Winchester". Tekniikkaan kuului halvempi lukupäärakenne, joka mahdollisti kahden lukupään käyttöä levypintaa kohden. 3340 saavutti 25 millisekunnin hakuajat. 3340-levyä voitiin käyttää IBM S/370 tietokoneen kanssa. IBM 3340 sai lempinimensä Winchester siitä, että se suunniteltiin käyttämään kahta 30 megatavun levypakkaa ("30-30") ja eräs Winchester-kiväärien malli on 30-30. Winchester-tekniikassa levyt, laakerit, lukupäät ja lukupäitä liikuttavat varret olivat kaikki irrotettavan moduulin sisällä.
+Control Data Corporation (CDC) aloitti oman kehitystyön vuonna 1972 kuultuaan (silloin tulevasta) Winchester-järjestelmästä. CDC kehitti Storage Module Drive (SMD) -liitännän kiintolevyille ja yhtiöstä tuli vuonna 1981 maailman suurin kiintolevyjen OEM-valmistaja. Kun SMD hyväksyttiin ANSI-standardiksi yli 20 valmistajaa tarjosi yhteensopivia tuotteita.
+Helmikuussa 2020 ilmoitettiin 20 teratavun HAMR-tekniikkaan perustuvien kiintolevyjen toimitusten alkamisesta saman vuoden aikana.
+Kiintolevyjen levyjä valmistava Showa Denko on kertonut kehitysaskeleesta HAMR-tekniikassa joka mahdollista 80 teratavun kiintolevyt. Showa Denko käyttää Fe-Pt seosta magneettisena kalvona.
+
+
+== Toimintaperiaate ==
+
+Tieto tallennetaan kiintolevyn kiekoille magneettisesti. Tieto kirjoitetaan bitti kerrallaan jonoiksi ympyränmuotoisille raidoille eli urille, jotka jakautuvat tasakokoisiin tallennusyksiköihin eli sektoreihin. Magneettikenttiin tallennettu data saadaan muutettua sähköiseksi, kun lukupään ohi liikkuva magneettinen varaus indusoi lukupäähän heikon sähkövirran. Virran muutokset tulkataan signaaleiksi, jotka muutetaan ohjauselektroniikan avulla käyttökelpoiseen muotoon.
+Levyn tallennuskapasiteetti ilmoitetaan nykyisin gigatavuina (lyhenne Gt tai GB, 1 000 000 000 tavua) tai joskus megatavuina (lyhenne Mt tai MB, 1 000 000). On syytä huomata, että käyttöjärjestelmät esittävät levyn kapasiteetin edelleen gibitavuina, (lyhenne GiB) kahden potensseina, eli gigatavu on 230 eli 1 073 741 824 tavua. Muita valmistajien ilmoittamia ominaisuuksia ovat
+
+pyörimisnopeus (rpm)
+saantiaika, keskimääräinen lukupään siirtämiseen ja pyydetyn sektorin saataville tulemiseen kuluva aika (ms)
+tiedonsiirtonopeus, keskimääräinen jatkuva kirjoitus- tai lukunopeus kiintolevyn ja keskusmuistin välillä (Mt/s).
+puskurimuistin koko (Mt tai MiB).
+äänenvoimakkuus (dB (A))
+tehonkulutus (W)
+keskimääräinen vikaantumisväli (engl. MTBF: Mean Time Between Failure)
+iskunkestävyys (G)
+Yleisimmät henkilökohtaisiin tietokoneisiin tai työasemiin tarkoitetut levyasemat ovat nykyään kooltaan 3,5 tuumaa. Tuumakoko tarkoittaa levyaseman sisällä olevan kiekon halkaisijaa. Tosin samankokoisissa koteloissa voi olla myös pienempiä levyjä jolloin haetaan parempaa suorityskykyä nostamalla pyörintänopeutta. Tällaisia 10 000:n tai 15 000:n kierrosnopeuden levyjä käytetään yleensä vain järeämmissä levyjärjestelmissä.lähde? Levyn pyörimisnopeus 5 400–15 000 kierrosta minuutissa. On olemassa myös 2,5, 1,8 ja jopa 1 tuuman kokoisia kiintolevyjä, jotka ovat tyypillisesti kapasiteetiltaan pienempiä (≤ 1 teratavu). Niiden pyörimisnopeus on myös useimmiten  pienempi, 5400–7200 kierrosta minuutissa. 5,25 tuuman levyt, joiden pyörimisnopeus oli tyypillisesti 3 600 rpm, ovat jo poistuneet markkinoilta.
+Siirtonopeus (luku- ja kirjoitusnopeudet) vaihtelevat muun muassa käytetyn liitäntäväylän mukaan sekä muun muassa hakuaikojen vaikutuksesta ja talletetaanko tieto levyn sisäiseen välimuistiin (haihtuvaan muistiin) vai itse levylle säilyvään muistiin.
+
+
+== Rakenne ==
+
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+		
+			
+			
+		
+
+
+== Liitännät ==
+
+Yleisimmät levyjen liitäntätavat ovat SATA, SCSI ja SAS. Nykyaikainen emolevy on yleensä varustettu neljällä tai useammalla SATA-liittimellä. Vanhempia IDE-liittimiä on tarjolla useimmiten ainakin yksi.
+IDE-liitäntä on pääsääntöisesti väistynyt uudemman SATA-liitännän tieltä. Liitäntä tunnetaan myös nimillä ATA ja P-ATA (parallel ATA). IDE-väylässä tiedonsiirto on rinnakkaista. Yhteen IDE-liittimeen voidaan kytkeä kaksi kiintolevyä.
+SCSI-väylä on palvelimissa ja ammattilaislaitteissa suosittu liitäntätyyppi, joka vaatii yleensä erillisen sovitin- tai ohjainkortin. Oman ohjaimen ansiosta SCSI-kiintolevyt eivät kuormita koneen suoritinta niin kuin erillisohjaimettomat levyt. Yhteen SCSI-liitäntään voidaan standardista riippuen liittää enimmillään 8–16 laitetta.
+SATA (serial ATA) on uusin liitäntätyyppi, jossa tiedonsiirto on sarjamuotoista ATA:ssa käytetyn rinnakkaisuuden sijaan. Sarjaliitännän nopeus korvaa rinnakkaisten linjojen määrän. SATA-liitännän etuja IDE:en nähden ovat myös kapeammat kaapelit ja pienemmät liittimet, jotka vievät vähemmän tilaa tietokoneen kotelossa ja emolevyllä.
+
+Kuluttajakäyttöön löytyy myös ulkoisia kiintolevyjä. Ulkoinen kiintolevy on yleensä tavanomaisen levyn sekä sen tarvitseman ohjaimen sisältävä ulkoinen kotelo. Kotelossa on lisäksi kaapelointi, jonka avulla sen voi kytkeä tietokoneen ulkoiseen liitäntään, kuten USB-, FireWire- tai eSATA-väylään. Näin ulkoisiin liittymiin voidaan kytkeä massatuotettuja, huokeita levyjä, jolloin myös vara- ja päivitysosien saanti on taltioiden osalta helpompaa. Ulkoisissa koteloissa voi myös olla RAID-ohjaimia, vaihtokehyksiä ja muita lisäominaisuuksia.
+Palvelinkäytössä käytetään fyysisisiä ja sähköisiä liitäntöjä, joiden avulla kiintolevy voidaan nopeasti vaihtaa ilman palvelimen alasajoa (hot swap).
+On myös olemassa ensisijaisesti palvelinkäyttöön tarkoitettuja Fibre Channel -kiintolevyjä.
+Vanhentuneisiin ja käytöstä poistuneisiin ratkaisuihin kuuluvat muun muassa ST-506 ja ESDI.
+
+
+== Luotettavuus ==
+Kiintolevyjen vikaantumisaste vaihtelee laajasti. Vuosittaiseksi vikaantumisarvioksi (MTTF) sanotaan 0,88 prosenttia, mutta eri käyttökohteissa korvaamistarve vaihtelee yhdestä prosentista 13 prosenttiin tyypillisen määrän ollessa 2-4 prosenttia. Kiintolevyrikon riski kasvaa levyn ikääntymisen myötä, mutta vikaantumistahti ei ole vakio iän mukaan.
+Valmistajan ilmoittama MTBF ei takaa yksittäisen levyn kestävyyttä. Käyttöolosuhteet ovat varsin erilaiset kuin MTTF:n mittaamat. Tutkimuksessa havaittiin, että kun valmistajat ilmoittivat MTTF-lukuja, jotka tarkoittaisivat enintään 0,88 % levyistä joutuvan vaihdettaviksi, käytännössä levyistä vaihdettiin 1–13 %. Siten todellinen MTBF ”miljoonan käyttötunnin” levylle on 300 000 tunnin tienoilla. Tämäkin luku tarkoittaisi noin 30 vuoden yhtäjaksoista käyttöaikaa, kun tyypillisesti kiintolevyjä käytetään vain muutamia vuosia. Tyypillinen käyttöikä on 3–5 vuotta, mutta kiintolevy voi kestää yli kymmenenkin vuotta.
+On havaittu, että SCSI-, FC- ja SATA-levyjä joudutaan vaihtamaan yhtä usein. Täten on päätelty, että käyttöolosuhteet voivat vaikuttaa vaihtotarpeeseen enemmän kuin komponenttien ominaisuudet. Eräässä tapauksessa kokonainen valmistuserä on hylätty virhemäärän vuoksi. Googlen tekemässä luotettavuuskartoituksessa puolestaan selvisi, että lämpötila ja kova käyttö olivat luultua vähemmän yhteydessä kiintolevyn vikaantumiseen. Koska tietty levytyyppi ei takaa kiintolevyn luotettavuutta, joissakin tapauksissa on esitetty olevan perusteltua käyttää kuluttajahintaisia kiintolevyjä myös datakeskuksissa.
+S.M.A.R.T. on epävarma tapa ennustaa tietyn levyn vikaantumista. S.M.A.R.T. keskittyy mekaanisiin vikoihin, mutta sähköiset viat jäävät siltä huomaamatta. S.M.A.R.T. ennustaa joidenkin vikojen ilmaantumista, mutta levy voi vikaantua S.M.A.R.T.:n sitä havaitsematta.
+Tavallisia kiintolevyjä ei ole suunniteltu pitkäaikaiseen arkistointikäyttöön ja magneettista levyä ei voi käsitellä erillään siihen liitetystä lukuosasta. Tämä tuottaa ongelmia tietojen palauttamisessa eräissä tapauksissa, jossa kiintolevyillä on korvattu magneettinauhojen käyttöä. Myös muissa tallennusmedioissa on ongelmia pitkäaikaissäilytyksen kanssa ja siksi tietoja tarvitsee kopioida uusiin.
+
+
+== Tilastoa ==
+
+Ensimmäinen kiintolevy IBM 350 sisälsi 50 kappaletta halkaisijaltaan 24-tuumaista eli noin 61-senttimetristä kiekkoa. Koko kiintolevyyn pystyi tallentamaan 5 miljoonaa merkkiä eli alle 5 megatavua tietoa eli yhden kiekon kapasiteetti oli alle 100 kilotavua.
+Kapasiteetiltaan suurimmat kiintolevyt ovat 2010-luvulla 3,5 tuuman kokoluokassa. Niihin voidaan tallentaa mallista riippuen jopa 10 teratavua eli 10 000 gigatavua tietoa. Tällainen kiintolevy on kapasiteetiltaan jopa yli 2 000 000 kertaa suurempi kuin vuoden 1956 ensimmäinen kiintolevy, ja silti sen kiekot ovat halkaisijaltaan yli 20 tuumaa pienempiä ja niitä on lukumääräisesti vain noin kymmenesosa vuoden 1956 kiintolevyn kiekoista.
+Japanilainen Toshiba esitteli maailman pienimmän sarjavalmisteisen kiintolevyn, jonka halkaisija on 0,85 tuumaa, vuonna 2004. Sen tilavimmassa mallissa oli kapasiteettia 8 gigatavua. Malli suunniteltiin MP3-soittimiin, digitaalikameroihin ja vastaaviin kannettaviin laitteisiin, mutta muistikorttien kehityksen vuoksi niiden valmistus on lopetettu.
+Vuonna 2002 maailman uudesta tallennetusta tiedosta 92 prosenttia oli magneettisessa muodossa, siis lähinnä tietokoneiden kiintolevyillä ja varmistusnauhoilla.
+
+
+== SSD-puolijohdelevy ==
+
+Alun perin 1970-luvulla kehitettyä SSD-muistia voidaan käyttää kiintolevyn korvaajana. SSD-levy tallentaa tiedot magneettisen materiaalin sijasta puolijohteisiin perustuville flash-muistia käyttäville muistipiireille. Näin ollen SSD-levy ei sisällä kiintolevyn kaltaista mekaanista koneistoa.
+Laitteen virrankulutus on kiintolevyä pienempi, hakuaika nopeampi ja se on äänetön. Laitteen iskunkestävyys on myös paljon suurempi kuin kiintolevyllä, mikä on tärkeää esimerkiksi kannettavissa tietokoneissa. Laitteen liitäntä tietokoneisiin tapahtuu samoilla liitäntätavoilla kuin kiintolevynkin.
+2010-luvulla SSD-muisti on tullut yhä yleisemmäksi.
+
+
+== Valmistajat ==
+Kiintolevyjen valmistus on keskittynyt viidelle suurelle valmistajallelähde?. Historian aikana valmistajia on ollut kymmeniä, mutta pienempien valmistajien vetäytyessä markkinoilta sekä syntyneiden yritysostojen ja fuusioiden myötä jäljelle ovat jääneet vain suurimmat. Vuonna 2009 kiintolevyjä valmistavat: Seagate, Western Digital, Hitachi, Samsung ja Toshiba. Puolijohdelevyjen valmistajia on puolestaan runsaasti. Niiden markkinoita jakavat perinteiset kiintolevyvihin ja flash-muisteihin erikoistuneet valmistajat.
+
+
+== Katso myös ==
+Kiintolevyn osiointi
+Gibitavu
+Levyke
+
+
+== Lähteet ==
+
+
+== Kirjallisuutta ==
+Lähteinen, Olavi & Pietikäinen, Ville & Kosonen, Harri: Uusi PC-tekniikan käsikirja, s. 341–376.  (6. painos)  Helsinki Media Erikoislehdet, 2000 (1997).    
+
+
+== Aiheesta muualla ==
+ Kuvia tai muita tiedostoja aiheesta Kiintolevy Wikimedia Commonsissa

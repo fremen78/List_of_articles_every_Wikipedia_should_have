@@ -1,0 +1,681 @@
+Kondenzator je elektrotehniški element, ki lahko shranjuje
+energijo v obliki električnega polja. Količino shranjene energije imenujemo kapacitivnost, kjer so enote Faradi.
+
+
+== Idealen kondenzator v električnih vezjih ==
+Napetost na idealnem kondenzatorju s kapacitivnostjo C, skozi katerega
+teče električni tok i(t), je enaka:
+
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        
+          
+            1
+            C
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            t
+          
+        
+        i
+        (
+        t
+        )
+        
+        d
+        t
+        .
+      
+    
+    {\displaystyle u(t)={\frac {1}{C}}\int _{-\infty }^{t}i(t)\;dt.}
+  
+
+Minus neskončno v spodnji meji določenega integrala pomeni,
+da je kondenzator neke vrste preprost pomnilnik in da je njegova napetost odvisna
+tudi od dogajanja pred časom začetka opazovanja t = 0. Obratna zveza je enaka
+
+  
+    
+      
+        i
+        (
+        t
+        )
+        =
+        C
+        
+          
+            
+              d
+              
+              u
+              (
+              t
+              )
+            
+            
+              d
+              
+              t
+            
+          
+        
+        .
+      
+    
+    {\displaystyle i(t)=C{\frac {d\;u(t)}{d\;t}}.}
+  
+
+Kadar kondenzator priključimo na izmenično napetost 
+  
+    
+      
+        u
+        (
+        t
+        )
+        =
+        U
+        cos
+        ⁡
+        (
+        ω
+        t
+        )
+      
+    
+    {\displaystyle u(t)=U\cos(\omega t)}
+  
+,
+skladno z zgornjo zvezo teče skozenj izmenični tok
+
+  
+    
+      
+        i
+        (
+        t
+        )
+        =
+        −
+        ω
+        C
+        U
+        sin
+        ⁡
+        (
+        ω
+        t
+        )
+        ,
+      
+    
+    {\displaystyle i(t)=-\omega CU\sin(\omega t),}
+  
+ (U je temenska vrednost napetosti), kar je prikazano na spodnji sliki:
+
+Opazimo lahko, da el. tok prehiteva napetost za četrtino periode, oz. izraženo v
+deležu polnega kota, za 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+  
+.
+Pri preučevanju razmer v izmeničnem tokokrogu si računanje poenostavimo s
+transformacijo v kompleksni prostor, impedanca
+kondenzatorja pri tem postane
+
+  
+    
+      
+        Z
+        (
+        ω
+        )
+        =
+        
+          
+            1
+            
+              j
+              ω
+              C
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle Z(\omega )={\frac {1}{j\omega C}},}
+  
+
+kjer j, kot je običajno v elektrotehniki, pomeni
+imaginarno enoto, 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ pa je krožna frekvenca,
+ki je s frekvenco povezana v naslednjem razmerju:
+
+  
+    
+      
+        ω
+        =
+        2
+        π
+        f
+        .
+      
+    
+    {\displaystyle \omega =2\pi f.}
+  
+
+Pri obravnavi prehodnih pojavov v vezju se reševanju diferencialnih enačb poskušamo izogniti s pretvorbo iz časovnega v kompleksni frekvenčni prostor spremenljivke s z Laplacovo transformacijo. Impedanca kondenzatorja je v tem primeru enaka
+
+  
+    
+      
+        Z
+        (
+        s
+        )
+        =
+        
+          
+            1
+            
+              s
+              C
+            
+          
+        
+        .
+      
+    
+    {\displaystyle Z(s)={\frac {1}{sC}}.}
+  
+
+Ekvivalentna kapacitivnost več vzporedno vezanih idealnih kondenzatorjev je enaka vsoti kapacitivnosti teh kondenzatorjev:
+
+  
+    
+      
+        C
+        =
+        
+          C
+          
+            1
+          
+        
+        +
+        
+          C
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          C
+          
+            N
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          C
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle C=C_{1}+C_{2}+\cdots +C_{N}=\sum _{i=1}^{N}C_{i}.}
+  
+
+Pri zaporedni vezavi idealnih kondenzatorjev je obratna vrednost ekvivalentne kapacitivnosti enaka vsoti obratnih vrednosti kapacitivnosti posameznih kondenzatorjev:
+
+  
+    
+      
+        
+          
+            1
+            C
+          
+        
+        =
+        
+          
+            1
+            
+              C
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              C
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              C
+              
+                N
+              
+            
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            N
+          
+        
+        
+          
+            1
+            
+              C
+              
+                i
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{C}}={\frac {1}{C_{1}}}+{\frac {1}{C_{2}}}+\cdots +{\frac {1}{C_{N}}}=\sum _{i=1}^{N}{\frac {1}{C_{i}}}.}
+  
+
+
+== Vpliv temperature ==
+Podana kapacitivnost velja le pri neki določeni temperaturi, običajno pri 
+  
+    
+      
+        
+          ϑ
+          
+            0
+          
+        
+        =
+        
+          25
+          
+            o
+          
+        
+        C
+      
+    
+    {\displaystyle \vartheta _{0}=25^{o}C}
+  
+. Odvisnost kapacitivnosti pri drugih temperaturah je po navadi linearna in podana s temperaturnim koeficientom 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  
+, ki je odvisen od dielektrika:
+
+  
+    
+      
+        C
+        =
+        
+          C
+          
+            0
+          
+        
+        (
+        1
+        +
+        α
+        (
+        ϑ
+        −
+        
+          ϑ
+          
+            0
+          
+        
+        )
+        )
+        .
+      
+    
+    {\displaystyle C=C_{0}(1+\alpha (\vartheta -\vartheta _{0})).}
+  
+
+Poleg tega moramo upoštevati, da z naraščanjem temperature pada dovoljena delovna napetost.
+
+
+== Dejanski kondenzator ==
+Pri idealnih kondenzatorjih smo predpostavili, da je dielektrik popolni izolator in da je upornost priključkov zanemarljiva. V praksi največkrat ne drži povsem ne eno ne drugo.
+
+
+=== Kvaliteta kondenzatorja ===
+Napolnjen kondenzator, ki ga pustimo nepriključenega se prazni čez dielektrik in po morebitnih drugih poteh, npr. čez ohišje. Predstavljamo si lahko, da je vzporedno h kondenzatorju s kapacitivnostjo C vezan upor z upornostjo R. Kvaliteto kondenzatorja vrednotimo s časovno konstanto 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+, ki je enaka produktu 
+  
+    
+      
+        τ
+        =
+        C
+        R
+      
+    
+    {\displaystyle \tau =CR}
+  
+ in je pri kvalitetnem kondenzatorju velika.
+
+ Časovno konstanto lahko tudi izmerimo, če merimo napetost na tako praznečem se kondenzatorju. Če v katerikoli točki na krivulji potegnemo tangento na to krivuljo, bo tangenta sekala asimptoto (v tem primeru abscisno os) v času, ki je ravno za časovno konstanto 
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+ večji od časa točke, v kateri smo potegnili tangento.
+
+
+=== Faktor izgub ===
+Ob priključitvi na izmenično napetost se na idealnem kondenzatorju ne troši delovna moč. V dejanskem kondenzatorju temu ni tako, ker nekaterih ohmskih upornosti ne moremo zanemariti in se zato nekaj delovne moči kljub vsemu porablja Izgube vrednotimo s kotom 
+  
+    
+      
+        δ
+      
+    
+    {\displaystyle \delta }
+  
+, ki pove za koliko se fazni kot med kazalcema napetosti in toka razlikuje od 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+  
+, kolikor znaša pri idealnem kondenzatorju.
+Pri visokih frekvencah pride do izraza upornost dovodov 
+  
+    
+      
+        
+          R
+          
+            1
+          
+        
+      
+    
+    {\displaystyle R_{1}}
+  
+, ki je v nadomestnem vezju vezana zaporedno h kondenzatorju.
+
+Nadomestno vezje dejanskega kondenzatorja pri visokih frekvencah
+
+ 
+Kazalčni diagram je tedaj takšen:
+
+Kazalčni diagram dejanskega kondenzatorja pri visokih frekvencah
+
+ 
+Faktor izgub pri visokih frekvencah je enak
+
+  
+    
+      
+        tan
+        ⁡
+        δ
+        =
+        
+          
+            
+              I
+              
+                R
+                
+                  1
+                
+              
+            
+            
+              U
+              
+                C
+              
+            
+          
+        
+        =
+        ω
+        
+          R
+          
+            1
+          
+        
+        C
+        .
+      
+    
+    {\displaystyle \tan \delta ={\frac {IR_{1}}{U_{C}}}=\omega R_{1}C.}
+  
+
+Pri nizkih frekvencah je impedanca kondenzatorja po
+absolutni vrednosti zelo velika, vpliv upornosti dovodov je
+tako zanemarljiv, zato pa pride do izraza izolacijska upornost dielektrika, ki je v
+nadomestnem vezju na spodnji sliki označena z 
+  
+    
+      
+        
+          R
+          
+            2
+          
+        
+      
+    
+    {\displaystyle R_{2}}
+  
+ in vezana vzporedno
+h kondenzatorju.
+
+Nadomestno vezje dejanskega kondenzatorja pri nizkih frekvencah
+
+ 
+Kazalčni diagram je v tem primeru takšen:
+
+Kazalčni diagram dejanskega kondenzatorja pri nizkih frekvencah
+
+Faktor izgub pri nizkih frekvencah pa je enak
+
+  
+    
+      
+        tan
+        ⁡
+        δ
+        =
+        
+          
+            
+              U
+              
+                /
+              
+              R
+              
+                2
+              
+            
+            
+              I
+              
+                C
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              ω
+              
+                R
+                
+                  2
+                
+              
+              C
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \tan \delta ={\frac {U/R{2}}{I_{C}}}={\frac {1}{\omega R_{2}C}}.}
+  
+
+
+== Uporaba ==
+Predloga:Stub-sect
+Kondenzator je tako rekoč nepogrešljiv element pri načrtovanju električnih vezij. Natančni kondenzatorji z majhno toleranco kapacitivnosti se uporabljajo predvsem v radijski tehniki kot del nihajnega kroga, filtra, frekvenčne kretnice, integratorja in diferenciatorja. Na kondenzatorjih temeljijo tudi nekatera pomnilniška vezja. Kondenzatorji z večjo toleranco se uporabljajo za glajenje nihanj okoli enosmerne napetosti, za proizvajanje napetostnih ali tokovnih sunkov, v množilnikih napetosti, za generiranje jalove moči, zagon z enofazno napetostjo napajanih asinhronskih motorjev itd. Kondenzatorje z veliko kapacitivnostjo uporabljamo za shranjevanje energije za napajanje nekaterih delov vezja v primeru kratkotrajnega izpada zunanjega vira električne energije.
+Spremenljive kondenzatorje uporabljamo tudi za merjenje kratkih premikov (ki ga
+izračunamo iz izmerjene spremembe kapacitivnosti), medtem ko lahko s kondenzatorji s poroznimi dielektriki merimo vlažnost zraka.
+
+
+== Izvedbe kondenzatorjev ==
+Predloga:Ref-sect
+Predloga:Wikify-sect
+Kondenzator sestavljata dve elektrodi, največkrat ploščati ali valjasti, med
+katerima se nahaja dielektrik. Kondenzatorji se po navadi poimenujemo po materialu, iz katerega je dielektrik:
+
+zrak - kondenzatorji, pri katerem sta dve(ali več) plošč, med katerimi je kot dielektrik uporabljen zrak ali vakum se imenujejo zračni ali tudi vakumski kondenzatorji. Uporabljajo se predvsem v visokofrekvenčnih radijskih oddajnikih, oz.povsod tam kjer je potrebna nizka in nastavljiva kapacitivnost.
+papir - So  kondenzatorji starejšega tipa. Primerni so za velike delovne napetosti (tudi do več sto kilovoltov), velika izolacijska upornost in velika toleranca.
+kovinopapir - na papir je naparjena kovina in vse skupaj zavito v kolobar. Velika kapacitivnost na prostorninsko enoto, majhen faktor izgub, kovina se v točki morebitnega preboja raztali in tako se kondenzator sam »popravi«
+stirofleks - majhne izgube in majhen temperaturni koeficient
+kovinopolikarbonat in kovinopoliester - na folijo iz polikarbonata ali poliestra je naparjena kovina. Možnost regeneriranja ob preboju (podobno kot kovinopapirni kond.), velika izolacijska upornost in velika časovna konstanta
+sljuda (mineral kalijevega aluminosilikata) - majhen faktor izgub, zlasti pri visokih frekvencah, zelo velika izolacijska upornost, dovoljene velike delovne napetosti (do več kilovoltov)
+mica (aluminijev silikat) - So kondenzatorji starejšega tipa. Majhna toleranca, velike delovne napetosti in majhen faktor izgub so lastnosti, ki odlikujejo ta tip kondenzatorjev.
+keramika - po lastnostih podobni sljudnim in mica kondenzatorjem. Imajo veliko frekvenčno področje, majhen faktor izgub, zelo velika kapacitivnost na prostorninsko enoto, velik temperaturni koeficient.
+Pri polariziranih kondenzatorjih nastane dielektrik šele ob priključitvi na
+el. napetost in jih moramo pravilno priključiti na
+enosmerno napetost. Nekaj trenutkov po priključitvi teče skoznje velik prečni tok.
+Zato se uporabljajo za glajenje nihajočih enosmernih napetosti, ki ne menja
+predznaka (v žargonu: blokado), včasih tudi kot vezni kondenzatorji izmeničnih
+tokokrogov. Dve najpogostejši izvedbi polariziranih kondenzatorjev sta:
+
+elektrolitski kondenzator - Med elektrodama se nahaja papirna gaza z raztopino boraksa, fosfata ali karbonata. Ob priključitvi na enosmerno napetost se ob pozitivni elektrodi nabere plast aluminijevega oksida, ki deluje kot dielektrik. Velika kapacitivnost na prostorninsko enoto in velika nenatančnost kapacitivnosti.
+tantalov kondenzator - elektrolit je trden tantalov pentoksid, majhne delovne napetosti (redko nad 100 V), velika toleranca, dokaj velik faktor izgub, velika kapacitivnost na prostorninsko enot; pogosti v integriranih elektronskih vezjih
+superkondenzator (angl.supercap) je nov tip kondenzatorjev. Imajo izredno veliko enoto kapacitivnosti glede na prostornino(reda nekaj dest, sto ali celo tistoč Faradov), ki se celo približa baterijam, tako da se uporabljajo lahko tudi za napajanje(ure, budilke).. Imajo razmeroma počasen rang polnenja in praznenja glede na ostale kondenzatorje, vendar v primerjavi z baterijami neprimerljiv. Uporabni predvsem v industriji, kjer je potrebno hitro polnenje in/ali praznenje, tak da uporaba navadnih baterij ni možna. Kot primer je pri električnem avtomobolskem motorju, ki pri zaviranju napolnijo kondenzator tega tipa in še dosti ostalih vrst uporabe.
+
+
+== Glej tudi ==
+Barvna koda elektronskih elementov
+kondenzatorski mikrofon
+
+
+== Viri ==
+Šuhel, Peter; Kralj, Alojz (1994). Sistemi industrijske elektronike - gradniki in sestavi. Ljubljana: Založba FER. COBISS 4934194. ISBN 86-7739-019-7.
+
+
+== Zunanje povezave ==
+
+Caltech: Practical capacitor properties Arhivirano 2006-07-14 na Wayback Machine.
+FaradNet: The Capacitor Resource

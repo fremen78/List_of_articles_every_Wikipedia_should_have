@@ -1,0 +1,539 @@
+Matemaattinen todistus tarkoittaa muodollista todistusta, joka täyttää seuraavat ehdot:
+
+väite on muotoiltu siten, että se voidaan kirjoittaa täsmällisen yksikäsitteisesti käyttäen tyypillisesti matemaattisia symboleita: relaatioita, vertailuoperaattoreita ja absoluuttisia lukuarvoja, ja
+väite todistetaan käyttäen pelkästään sovittuja matemaattisia ja loogisia lainalaisuuksia sekä aksioomia. 
+Matemaattisessa todistuksessa on kolme osaa:
+
+ongelmaa rajaavat ja määrittävät oletukset
+todistusta vaativa väite
+varsinainen todistus, jossa oletuksien nojalla näytetään väite todeksi.
+Oletukset mainitaan usein väitteen yhteydessä, jolloin matemaattisen todistuksen osia ovat vain väite ja todistus. Todistus ei saa sisältää väitettä oletuksena missään muodossa, koska silloin kyseessä on kehäpäätelmä. Todistettaessa voidaan oletusten lisäksi käyttää hyväksi toisia jo aiemmin todistettuja lauseita. Usein matemaattisen todistuksen loppuun merkitään QED latinankielisistä sanoista quod erat demonstrandum ("mikä oli todistettava, MOT") tai piirretään pieni neliö (
+  
+    
+      
+        ◻
+      
+    
+    {\displaystyle \square }
+  
+).
+Kaikkia yksinkertaisiakaan väitteitä ei ole helppo todistaa matemaattisesti. Esimerkiksi Pierre de Fermat'n mukaan nimetty Fermat'n suuri lause säilyi todistamattomana yli 300 vuotta, kunnes 1990-luvulla englantilainen matemaatikko Andrew Wiles löysi todistuksen yli 10 vuoden työn tuloksena. Vaikka todistettava väite on erittäin yksinkertainen, niin vain harvat matemaatikot kykenevät ymmärtämään monimutkaisen todistuksen.
+Matemaattisia todistuksia käytetään laajalti muun muassa tietojenkäsittelytieteissä, kun halutaan todistaa jokin algoritmi oikeaksi. Periaatteessa myös kokonaisia tietokoneohjelmia voidaan todistaa oikeiksi, mutta ohjelmien todistaminen on kuitenkin osoittautunut sen verran työlääksi, että käytännössä vain pieniä, kriittisiä osia todistetaan tarvittaessa.
+
+
+== Todistusmenetelmiä ==
+Yleisiä todistustekniikoita ovat esimerkiksi
+
+Suora todistus: väite todistetaan oletuksia, aksioomia, määritelmiä ja aiemmin todistettuja lauseita hyödyntämällä
+Epäsuora todistus: tehdään vastaoletus ja näytetään, että siitä seuraa looginen ristiriita, jolloin alkuperäinen väite on tosi
+Induktiotodistus: osoitetaan väite todeksi ensimmäisellä mahdollisella arvolla (induktion pohja), oletetaan sen pätevän mielivaltaisella arvolla ja todistetaan väitteen pätevän mielivaltaista arvoa seuraavallakin arvolla
+Rakenteinen todistus: konstruoidaan esimerkki, joka osoittaa väitteen paikkansapitävyyden (käytetään usein, kun halutaan osoittaa jokin epätodeksi)
+
+
+== Esimerkkejä ==
+
+
+=== Suora todistus ===
+Osoitetaan esimerkkinä suorasta todistuksesta, että kahden parittoman luvun tulo on pariton.
+Oletukset: osittelulaki, pariteetti, kokonaisluku, peruslaskutoimitukset, rengas
+Väite: Kahden parittoman kokonaisluvun tulo on pariton.
+Todistus:
+Olkoot luvut 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ ja 
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  
+ ovat parittomia, jolloin on olemassa sellaiset luvut 
+  
+    
+      
+        p
+        ,
+        q
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle p,q\in \mathbb {Z} }
+  
+, että 
+  
+    
+      
+        n
+        =
+        2
+        p
+        −
+        1
+        ,
+         
+        m
+        =
+        2
+        q
+        −
+        1
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle n=2p-1,\ m=2q-1\in \mathbb {Z} }
+  
+. Nyt näiden lukujen tulo voidaan kirjoittaa muodossa
+
+  
+    
+      
+        n
+        m
+        =
+        (
+        2
+        p
+        −
+        1
+        )
+        (
+        2
+        q
+        −
+        1
+        )
+        =
+        4
+        p
+        q
+        −
+        2
+        p
+        −
+        2
+        q
+        +
+        1
+        =
+        2
+        (
+        2
+        p
+        q
+        −
+        p
+        −
+        q
+        )
+        +
+        1.
+      
+    
+    {\displaystyle nm=(2p-1)(2q-1)=4pq-2p-2q+1=2(2pq-p-q)+1.}
+  
+
+Tässä 
+  
+    
+      
+        2
+        p
+        q
+        −
+        p
+        −
+        q
+      
+    
+    {\displaystyle 2pq-p-q}
+  
+ on kokonaisluku, koska 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ ja 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ ovat kokonaislukuja. Koska lauseke on muotoa 
+  
+    
+      
+        2
+        k
+        +
+        1
+      
+    
+    {\displaystyle 2k+1}
+  
+, niin on osoitettu, että tulo 
+  
+    
+      
+        m
+        n
+      
+    
+    {\displaystyle mn}
+  
+ on pariton. 
+  
+    
+      
+        ◻
+      
+    
+    {\displaystyle \square }
+  
+
+Matemaattisen induktion ja yllä olevan todistuksen avulla voitaisiin edelleen todistaa, että mielivaltaisen monen parittoman kokonaisluvun tulo on pariton.
+
+
+=== Epäsuora todistus ===
+Epäsuorassa todistuksessa oletetaan, että väite ei olekaan voimassa ja osoitetaan, että tästä "vastaoletuksesta" seuraa jokin ristiriita joko oletuksen, aksiooman tai jonkin aikaisemmin todistetun lauseen kanssa.
+Väite: 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ on irrationaaliluku. (Oletetaan, että aiemmin on jo todistettu luvun 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ olemassaolo.)
+Todistus:
+Tehdään vastaoletus, että 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ on rationaaliluku. Silloin on olemassa kokonaisluvut 
+  
+    
+      
+        a
+        ,
+        b
+        ∈
+        
+          
+            Z
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle a,b\in \mathbb {Z} _{+}}
+  
+, joille 
+  
+    
+      
+        
+          
+            2
+          
+        
+        =
+        a
+        
+          /
+        
+        b
+      
+    
+    {\displaystyle {\sqrt {2}}=a/b}
+  
+ ja murtoluku 
+  
+    
+      
+        a
+        
+          /
+        
+        b
+      
+    
+    {\displaystyle a/b}
+  
+ on supistettu mahdollisimman yksinkertaiseen muotoon. Korottamalla molemmat puolet toiseen potenssiin saadaan 
+  
+    
+      
+        2
+        =
+        
+          a
+          
+            2
+          
+        
+        
+          /
+        
+        
+          b
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2=a^{2}/b^{2}}
+  
+, eli 
+  
+    
+      
+        2
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2b^{2}=a^{2}}
+  
+. Lukuteoriasta tiedetään, että jos kokonaisluvun neliö on parillinen, niin itse lukukin on parillinen. Koska luvun 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ neliö on edellä saadun nojalla parillinen, niin on siis olemassa luku 
+  
+    
+      
+        c
+        ∈
+        
+          Z
+        
+      
+    
+    {\displaystyle c\in \mathbb {Z} }
+  
+, jolle on voimassa 
+  
+    
+      
+        a
+        =
+        2
+        c
+      
+    
+    {\displaystyle a=2c}
+  
+. Sijoittamalla tämä luvun 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ paikalle saadaan 
+  
+    
+      
+        2
+        
+          b
+          
+            2
+          
+        
+        =
+        (
+        2
+        c
+        
+          )
+          
+            2
+          
+        
+        =
+        4
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2b^{2}=(2c)^{2}=4c^{2}}
+  
+ eli 
+  
+    
+      
+        
+          b
+          
+            2
+          
+        
+        =
+        2
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle b^{2}=2c^{2}}
+  
+. Nyt luvun 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ lisäksi myös 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ on parillinen, joten murtoluvussa 
+  
+    
+      
+        a
+        
+          /
+        
+        b
+      
+    
+    {\displaystyle a/b}
+  
+ voidaan jakaa sekä osoittaja että nimittäjä luvulla 
+  
+    
+      
+        2
+      
+    
+    {\displaystyle 2}
+  
+. Tämä on ristiriita, sillä alussa oletettiin, että luku 
+  
+    
+      
+        a
+        
+          /
+        
+        b
+      
+    
+    {\displaystyle a/b}
+  
+ oli jo supistettu mahdollisimman yksinkertaiseen muotoon. Tämä ristiriita osoittaa, että vastaoletus on väärin ja alkuperäinen väite oikein. Siispä 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ on irrationaaliluku. 
+  
+    
+      
+        ◻
+      
+    
+    {\displaystyle \square }
+  
+
+
+== Katso myös ==
+Ohjelman oikeaksi todistaminen
+
+
+== Lähteet ==

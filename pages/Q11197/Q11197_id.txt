@@ -1,0 +1,3217 @@
+Dalam matematika, logaritma adalah fungsi invers dari eksponensiasi. Dengan kata lain, logaritma dari x adalah eksponen dengan bilangan pokok b yang dipangkatkan dengan bilangan konstan lain agar memperoleh nilai x. Kasus sederhana dalam logaritma adalah menghitung jumlah munculnya faktor yang sama dalam perkalian berulang. Sebagai contoh, 1000 = 10 × 10 × 10 = 103 dibaca, "logaritma 1000 dengan bilangan pokok 10 sama dengan 3" atau dinotasikan sebagai 10log (1000) = 3. Logaritma dari x dengan bilangan pokok b dilambangkan blog x. Terkadang logaritma dilambangkan sebagai logb (x) atau tanpa menggunakan tanda kurung, logb x, atau bahkan tanpa menggunakan bilangan pokok khusus, log x.
+Ada tiga bilangan pokok logaritma yang umum beserta kegunaannya. Logaritma dengan bilangan pokok 10 (b = 10) disebut sebagai logaritma umum, yang biasanya dipakai dalam ilmu sains dan rekayasa. Logaritma dengan dengan bilangan pokok bilangan e (b ≈ 2.718) disebut sebagai logaritma alami, yang dipakai dengan luas dalam matematika dan fisika, karena dapat mempermudah perhitungan integral dan turunan. Logaritma dengan bilangan pokok 2 (b = 2) disebut sebagai logaritma biner, yang seringkali dipakai dalam ilmu komputer.
+Logaritma diperkenalkan oleh John Napier pada tahun 1614 sebagai alat yang menyederhanakan perhitungan. Logaritma dipakai lebih cepat dalam navigator, ilmu sains, rekayasa, ilmu ukur wilayah, dan bidang lainnya untuk lebih mempermudah perhitungan nilai yang sangat akurat. Dengan menggunakan tabel logaritma, cara yang membosankan seperti mengalikan digit yang banyak dapat digantikan dengan melihat tabel dan penjumlahan yang lebih mudah. Ini dapat dilakukan karena logaritma dari hasil kali bilangan merupakan logaritma dari jumlah faktor bilangan:
+
+  
+    
+      
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        x
+        +
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        y
+        ,
+      
+    
+    {\displaystyle ^{b}\!\log(xy)=\,^{b}\!\log x+\,^{b}\!\log y,}
+  
+
+asalkan bahwa b, x dan y bilangan positif dan b ≠ 1. Mistar hitung yang juga berasal dari logaritma dapat mempermudah perhitungan tanpa menggunakan tabel, namun perhitungannya kurang akurat. Leonhard Euler mengaitkan gagasan logaritma saat ini dengan fungsi eksponensial pada abad ke-18, dan juga memperkenalkan huruf e sebagai bilangan pokok dari logaritma alami.
+Penerapan skala logaritmik dipakai dalam mengurangi kuantitas yang sangat besar menjadi lebih kecil. Sebagai contoh, desibel (dB) adalah satuan yang digunakan untuk menyatakan rasio sebagai logaritma, sebagian besar untuk kekuatan sinyal dan amplitudo (contoh umumnya pada tekanan suara). Dalam kimia, pH mengukur keasaman dari larutan berair melalui logaritma. Logaritma umumnya dipakai dalam rumus ilmiah, dalam pengukuran kompleksitas algoritma dan objek geometris yang disebut sebagai fraktal. Logaritma juga membantu untuk menjelaskan frekuensi rasio interval musik, ditemukan di rumus yang menghitung bilangan prima atau hampiran faktorial, memberikan gambaran dalam psikofisika, dan dapat membantu perhitungan akuntansi forensik.
+Konsep logaritma sebagai invers dari eksponensiasi juga memperluas ke struktur matematika lain. Namun pada umumnya, logaritma cenderung merupakan fungsi bernilai banyak. Sebagai contoh, logaritma kompleks merupakan invers dari fungsi eksponensial pada bilangan kompleks. Mirip dengan contoh sebelumnya, logaritma diskret dalam grup hingga, merupakan invers fungsi eksponensial bernilai banyak yang memiliki kegunaan dalam kriptografi kunci publik.
+
+
+== Alasan ==
+
+Operasi aritmetika yang paling dasar adalah penambahan, perkalian, dan eksponen. Kebalikan dari penambahan adalah pengurangan, dan kebalikan dari perkalian adalah pembagian. Mirip dengan contoh sebelumnya, logaritma merupakan kebalikan (atau invers) dari operasi eksponensiasi. Eksponensiasi adalah bilangan bilangan pokok b yang ketika dipangkatkan dengan y memberikan nilai x. Ini dirumuskan sebagai
+
+  
+    
+      
+        
+          b
+          
+            y
+          
+        
+        =
+        x
+        .
+      
+    
+    {\displaystyle b^{y}=x.}
+  
+
+Sebagai contoh, 2 pangkat 3 memberikan nilai 8. Secara matematis, 
+  
+    
+      
+        
+          2
+          
+            3
+          
+        
+        =
+        8
+      
+    
+    {\displaystyle 2^{3}=8}
+  
+.
+Logaritma dengan bilangan pokok b adalah operasi invers yang menyediakan nilai keluaran y dari nilai masukan x. Hal ini mengartikan bahwa y = blog x ekuivalen dengan x = by, jika b bilangan real positif. (Jika b bukanlah bilangan real positif, eksponensiasi dan logaritma dapat terdefinisi tetapi membutuhkan beberapa nilai, sehingga definisi darinya semakin rumit.)
+Salah satu alasan bersejarah utamanya dalam memperkenalkan logaritma adalah rumus
+
+  
+    
+      
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        x
+        +
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        y
+        ,
+      
+    
+    {\displaystyle ^{b}\!\log(xy)=\,^{b}\!\log x+\,^{b}\!\log y,}
+  
+
+yang dapat mempermudah perhitungan nilai perkalian dan pembagian dengan penjumlahan, pengurangan, dan melihat tabel logaritma. Perhitungan ini dipakai sebelum komputer ditemukan.
+
+
+== Definisi ==
+Diberikan bilangan real positif b sehingga b ≠ 1, maka logaritma dari bilangan real positif x terhadap bilangan pokok b adalah eksponen dengan bilangan pokok b yang dipangkatkan bilangan agar memperoleh nilai x. Dengan kata lain, logaritma bilangan pokok b dari x adalah bilangan real y sehingga by = x. Logaritma dilambangkan sebagai blog x (dibaca "logaritma x dengan bilangan pokok b"). Terdapat definisi yang mirip dan lebih ringkas mengatakan bahwa fungsi blog invers dengan fungsi x ↦ bx.
+Sebagai contoh, 2log 16 = 4, karena 24 = 2 × 2 × 2 × 2 = 16. Logaritma juga dapat bernilai negatif, contohnya 2log 12 = –1, karena 2–1 = 121 = 12. Logaritma juga berupa nilai desimal, sebagai contoh 10log 150 kira-kira sama dengan 2,176 karena terletak di antara 2 dan 3, dan begitupula 150 terletak antara 102 = 100 dan 103 = 1000. Adapun sifat logaritma bahwa untuk setiap b, blog b = 1 karena b1 = b, dan blog 1 = 0 karena b0 = 1.
+
+
+== Identitas logaritma ==
+
+Ada beberapa rumus penting yang mengaitkan logaritma dengan yang lainnya.
+
+
+=== Hasil kali, hasil bagi, pangkat, dan akar ===
+Logaritma dari hasil kali merupakan jumlah logaritma dari bilangan yang dikalikan, dan logaritma dari hasil bagi dari dua bilangan merupakan selisih logaritma. Logaritma dari bilangan pangkat ke-p sama dengan p dikali logaritma dari bilangan tersendiri, dan logaritma bilangan akar ke-p sama dengan logaritma dibagi dengan p. Tabel berikut memuat daftar sifat-sifat logaritma tersebut beserta contohnya. Masing-masing identitas ini diperoleh dari hasil substitusi dari definisi logaritma 
+  
+    
+      
+        x
+        =
+        
+          b
+          
+            
+              
+              
+                b
+              
+            
+            
+            log
+            ⁡
+            x
+          
+        
+      
+    
+    {\displaystyle x=b^{\,^{b}\!\log x}}
+  
+ atau 
+  
+    
+      
+        y
+        =
+        
+          b
+          
+            
+              
+              
+                b
+              
+            
+            
+            log
+            ⁡
+            y
+          
+        
+      
+    
+    {\displaystyle y=b^{\,^{b}\!\log y}}
+  
+ pada ruas kiri persamaan.
+
+
+=== Mengubah bilangan pokok ===
+Logaritma blog x dapat dihitung sebagai hasil bagi logaritma x dengan logaritma b terhadap bilangan pokok sembarang k. Secara matematis dirumuskan sebagai:
+
+  
+    
+      
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                
+                
+                  k
+                
+              
+              
+              log
+              ⁡
+              x
+            
+            
+              
+                
+                
+                  k
+                
+              
+              
+              log
+              ⁡
+              b
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle ^{b}\!\log x={\frac {^{k}\!\log x}{^{k}\!\log b}}.\,}
+  
+
+Kalkulator ilmiah merupakan alat yang menghitung logaritma dengan bilangan pokok 10 dan e. Logaritma terhadap setiap bilangan pokok b dapat ditentukan menggunakan kedua logaritma tersebut melalui rumus sebelumnya:
+
+  
+    
+      
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        x
+        =
+        
+          
+            
+              
+                
+                
+                  10
+                
+              
+              
+              log
+              ⁡
+              x
+            
+            
+              
+                
+                
+                  10
+                
+              
+              
+              log
+              ⁡
+              b
+            
+          
+        
+        =
+        
+          
+            
+              
+                
+                
+                  e
+                
+              
+              
+              log
+              ⁡
+              x
+            
+            
+              
+                
+                
+                  e
+                
+              
+              
+              log
+              ⁡
+              b
+            
+          
+        
+        .
+      
+    
+    {\displaystyle ^{b}\!\log x={\frac {^{10}\!\log x}{^{10}\!\log b}}={\frac {^{e}\!\log x}{^{e}\!\log b}}.}
+  
+
+Diberikan suatu bilangan x dan logaritma  y = blog x, dengan b adalah bilangan pokok yang tidak diketahui. Bilangan pokok tersebut dapat dinyatakan dengan
+
+  
+    
+      
+        b
+        =
+        
+          x
+          
+            
+              1
+              y
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle b=x^{\frac {1}{y}},}
+  
+
+Rumus ini dapat diperlihatkan dengan mengambil persamaan yang mendefinisikan x = bblog x = by, lalu dipangkatkan dengan 1y.
+
+
+== Bilangan pokok khusus ==
+
+Secara khusus, terdapat tiga bilangan pokok yang umum di antara semua pilihan bilangan pokok pada logaritma. Ketiga bilangan pokok tersebut adalah b = 10, b = e (konstanta bilangan irasional yang kira-kira sama dengan 2,71828), dan b = 2 (logaritma biner). Dalam analisis matematika, logaritma dengan bilangan pokok e tersebar karena sifat analitik yang dijelaskan di bawah. Di sisi lain, logaritma dengan bilangan pokok 10 mudah dipakai dalam perhitungan manual dalam sistem bilangan desimal:
+
+  
+    
+      
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        (
+        10
+        x
+        )
+        =
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        10
+        +
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        x
+        =
+        1
+        +
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        x
+        .
+         
+      
+    
+    {\displaystyle ^{10}\!\log(10x)=\,^{10}\!\log 10+\,^{10}\!\log x=1+\,^{10}\!\log x.\ }
+  
+
+Jadi, 10log x berkaitan dengan jumlah digit desimal dari bilangan bulat positif x: jumlah digitnya merupakan bilangan bulat terkecil yang lebih besar dari 10log x. Sebagai contoh, 10log 1430 kira-kira sama dengan 3,15. Bilangan berikutnya merupakan jumlah digit dari 1430, yaitu 4. Dalam teori informasi, logaritma alami dipakai dalam nat dan logaritma dengan bilangan pokok 2 dipakai dalam bit sebagai satuan dasar informasi. Logaritma biner juga dipakai dalam ilmu komputer, dengan sistem biner ditemukan dimana-mana. Dalam teori musik, rasio tinggi nada kedua (yaitu oktaf) ditemukan dimana-mana dan jumlah sen antara setiap dua tinggi nada dirumuskan sebagai konstanta 1200 dikali logaritma dari rasio (yaitu, 100 sen per setengah nada dengan temperamen sama). Dalam fotografi, logaritma dengan bilangan pokok dua dipakai untuk mengukur nilai pajanan, tingkatan cahaya, waktu eksposur, tingkap, dan kecepatan film dalam "stop".
+Tabel berikut memuat notasi-notasi umum mengenai bilangan pokok beserta bidang yang dipakai. Selain blog x, adapula notasi logaritma lain yang ditulis sebagai logb x, dan juga seperti log x. Pada kolom "Notasi ISO" memuat penamaan yang disarankan Organisasi Standardisasi Internasional, yakni ISO 80000-2. Karena notasi log x telah dipakai untuk ketiga bilangan pokok di atas (atau ketika bilangan pokok belum ditentukan), bilangan pokok yang dimaksud harus sering diduga tergantung konteks atau bidangnya. Sebagai contoh, log biasanya mengacu pada 2log dalam ilmu komputer, dan log mengacu pada elog. Dalam konteks lainnya, log seringkali mengacu pada 10log.
+
+
+== Sejarah ==
+
+Sejarah logaritma yang dimulai dari Eropa pada abad ketujuh belas merupakan penemuan fungsi terbaru yang memperluas dunia analisis di luar keterbatasan metode aljabar. Metode logaritma dikemukakan secara terbuka oleh John Napier pada tahun 1614, dalam bukunya yang berjudul Mirifici Logarithmorum Canonis Descriptio. Namun, teknik-teknik lain sebelum penemuan Napier sudah ada dengan keterbatasan metode yang serupa, contohnya seperti prosthafaeresis atau penggunaan tabel barisan, yang dikembangkan dengan luas oleh Jost Bürgi sekitar tahun 1600. Napier menciptakan istilah untuk logaritma dalam bahasa Latin Tengah, “logaritmus”, yang berasal dari gabungan dua kata Yunani, logos “proporsi, rasio, kata” + arithmos “bilangan”. Secara harfiah, "logaritmus" berarti “bilangan rasio”.
+Logaritma umum dari bilangan adalah indeks dari perpangkatan sepuluh yang sama dengan bilangan tersebut. Bilangan yang sangat membutuhkan banyak angka merupakan kiasan kasar untuk logaritma umum, dan Archimedes menyebutnya sebagai “orde bilangan”. Logaritma real pertama adalah metode heuristik yang mengubah perkalian menjadi penjumlahan, sehingga memudahkan perhitungan yang cepat. Ada beberapa metode yang menggunakan tabel yang diperoleh dari identitas trigonometri, dan metode tersebut dinamakan prosthafaeresis.
+Penemuan fungsi yang dikenal saat ini sebagai logaritma alami, berawal dari saat Grégoire de Saint-Vincent mencoba menggambarkan kuadratur hiperbola persegi panjang. Archimedes menulis risalah yang berjudul The Quadrature of the Parabola pada abad ke-3 SM, tetapi kuadratur hiperbola menghindari semua upayanya hingga Saint-Vincent menerbitkan hasilnya pada tahun 1647. Logaritma yang mengaitkan barisan dan deret geometri dalam argumen dan nilai barisan dan deret aritmetika, meminta Antonio de Sarasa untuk mengaitkan kuadratur Saint-Vincent dan tradisi logaritma dalam prosthafaeresis sehingga mengarah ke sebuah persamaan kata untuk logaritma alami, yaitu "logaritma hiperbolik". Christiaan Huygens dan James Gregory mulai mengenali fungsi baru tersebut. Leibniz memakai notasi Log y pada tahun 1675, dan tahun berikutnya ia mengaitkannya dengan integral
+
+  
+    
+      
+        ∫
+        
+          
+            
+              d
+              y
+            
+            y
+          
+        
+        .
+      
+    
+    {\displaystyle \int {\frac {dy}{y}}.}
+  
+
+Sebelum Euler mengembangkan konsep modernnya tentang logaritma alami kompleks, Roger Cotes memperlihatkan hasil yang hampir sama pada tahun 1714 bahwa
+
+  
+    
+      
+        log
+        ⁡
+        (
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        )
+        =
+        i
+        θ
+      
+    
+    {\displaystyle \log(\cos \theta +i\sin \theta )=i\theta }
+  
+.
+
+
+== Tabel logaritma, mistar hitung, dan penerapan bersejarah ==
+
+Dengan menyederhanakan perhitungan yang rumit sebelum adanya mesin hitung komputer, logaritma berkontribusi pada kemajuan pengetahuan, khususnya astronomi. Logaritma sangat penting terhadap kemajuan dalam survei, navigasi benda langit, dan cabang lainnya. Pierre-Simon Laplace menyebut logaritma sebagai
+
+"...kecerdasan yang mengagumkan, [sebuah alat] yang mengurangi pekerjaan berbulan-bulan menjadi beberapa hari, menggandakan kehidupan astronom, dan menghindarinya dari kesalahan dan rasa jijik yang tak terpisahkan dari perhitungan yang panjang."
+Karena fungsi f(x) = bx adalah fungsi invers dari blog x, maka fungsi tersebut disebut sebagai antilogaritma. Saat ini, antilogaritma lebih sering disebut fungsi eksponensial.
+
+
+=== Tabel logaritma ===
+Sebuah alat penting yang memungkinkan penggunaan logaritma adalah tabel logaritma. Tabel logaritma pertama kali disusun oleh Henry Briggs pada tahun 1617 setelah penemuan Napier, tetapi penemuannya menggunakan 10 sebagai bilangan pokok. Tabel pertamanya memuat logaritma umum dari semua bilangan bulat yang berkisar antara 1 dengan 1000, dengan ketepatan yang dimiliki 14 digit, dan kemudian ia membuat tabel dengan kisaran yang besar. Tabel tersebut mencantumkan nilai 
+  
+    
+      
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        x
+      
+    
+    {\displaystyle ^{10}\!\log x}
+  
+ untuk setiap bilangan 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ dalam kisaran dan ketepatan tertentu. Karena bilangan yang berbeda dengan faktor 10 memiliki logaritma yang berbeda dengan bilangan bulat, logaritma dengan bilangan pokok 10 digunakan secara universal untuk perhitungan, sehingga disebut logaritma umum. Logaritma umum dari 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ dipisahkan menjadi bagian bilangan bulat yang dikenal sebagai karakteristik, dan bagian pecahan (bahasa Inggris: fractional part) yang dikenal sebagai mantissa. Tabel logaritma hanya perlu menyertakan mantissa, karena karakteristik logaritma umum dapat dengan mudah ditentukan dengan menghitung angka dari titik desimal. Karakteristik logaritma umum dari 
+  
+    
+      
+        10
+        ⋅
+        x
+      
+    
+    {\displaystyle 10\cdot x}
+  
+ sama dengan satu ditambah karakteristik 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+, dan mantissanya sama. Dengan menggunakan tabel logartima dengan tiga digit, nilai logaritma dari 3542 kira-kira sama dengan
+
+  
+    
+      
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3542
+        =
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        (
+        1000
+        ⋅
+        3
+        ,
+        542
+        )
+        =
+        3
+        +
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3
+        ,
+        542
+        ≈
+        3
+        +
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3
+        ,
+        54
+      
+    
+    {\displaystyle ^{10}\!\log 3542=\,^{10}\!\log(1000\cdot 3,542)=3+\,^{10}\!\log 3,542\approx 3+\,^{10}\!\log 3,54}
+  
+
+Nilainya dengan ketepatan yang sangat tinggi dapat diperoleh melalui interpolasi:
+
+  
+    
+      
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3542
+        ≈
+        3
+        
+          +
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3
+        ,
+        54
+        +
+        0
+        ,
+        2
+        ⋅
+        (
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3
+        ,
+        55
+        −
+        
+          
+          
+            10
+          
+        
+        
+        log
+        ⁡
+        3
+        ,
+        54
+        )
+      
+    
+    {\displaystyle ^{10}\!\log 3542\approx 3+^{10}\!\log 3,54+0,2\cdot (\,^{10}\!\log 3,55-\,^{10}\!\log 3,54)}
+  
+
+Nilai 
+  
+    
+      
+        
+          10
+          
+            x
+          
+        
+      
+    
+    {\displaystyle 10^{x}}
+  
+ dapat ditentukan dengan pencarian terbalik pada tabel yang sama, karena logaritma merupakan fungsi monoton.
+
+
+=== Perhitungan ===
+Hasil kali atau hasil bagi dari dua bilangan positif c dan d biasanya dihitung sebagai penambahan dan pengurangan logaritma. Hasil kali cd berasal dari antilogaritma dari penambahan dan hasil bagi cd berasal dari antilogaritma dari pengurangan, melalui tabel yang sama:
+
+  
+    
+      
+        c
+        d
+        =
+        
+          10
+          
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            c
+          
+        
+        
+        
+          10
+          
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            d
+          
+        
+        =
+        
+          10
+          
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            c
+            
+            +
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            d
+          
+        
+      
+    
+    {\displaystyle cd=10^{\,^{10}\!\log c}\,10^{\,^{10}\!\log d}=10^{\,^{10}\!\log c\,+\,^{10}\!\log d}}
+  
+
+dan
+
+  
+    
+      
+        
+          
+            c
+            d
+          
+        
+        =
+        c
+        
+          d
+          
+            −
+            1
+          
+        
+        =
+        
+          10
+          
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            c
+            
+            −
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            d
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {c}{d}}=cd^{-1}=10^{\,^{10}\!\log c\,-\,^{10}\!\log d}.}
+  
+
+Untuk perhitungan manual yang meminta ketelitian yang cukup besar, melakukan pencarian kedua logaritma, menghitung jumlah atau selisihnya, dan mencari antilogaritma jauh lebih cepat daripada menghitung perkalian dengan metode sebelumnya seperti prosthafaeresis, yang mengandalkan identitas trigonometri.
+Perhitungan pangkat direduksi menjadi perkalian, dan sedangkan perhitungan akar direduksi menjadi pembagian. Pernyataan ini dapat dilihat sebagai
+
+  
+    
+      
+        
+          c
+          
+            d
+          
+        
+        =
+        
+          
+            (
+            
+              10
+              
+                
+                  
+                  
+                    10
+                  
+                
+                
+                log
+                ⁡
+                c
+              
+            
+            )
+          
+          
+            d
+          
+        
+        =
+        
+          10
+          
+            
+            d
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            c
+          
+        
+      
+    
+    {\displaystyle c^{d}=\left(10^{\,^{10}\!\log c}\right)^{d}=10^{\,d\,^{10}\!\log c}}
+  
+
+dan
+
+  
+    
+      
+        
+          
+            c
+            
+              d
+            
+          
+        
+        =
+        
+          c
+          
+            
+              1
+              d
+            
+          
+        
+        =
+        
+          10
+          
+            
+              
+                1
+                d
+              
+            
+            
+              
+              
+                10
+              
+            
+            
+            log
+            ⁡
+            c
+          
+        
+        .
+      
+    
+    {\displaystyle {\sqrt[{d}]{c}}=c^{\frac {1}{d}}=10^{{\frac {1}{d}}\,^{10}\!\log c}.}
+  
+
+Perhitungan trigonometri dilengkapi dengan tabel-tabel yang memuat logaritma umum dari fungsi trigonometri.
+
+
+=== Mistar hitung ===
+Penerapan penting lainnya adalah mistar hitung, sepasang skala yang dibagi secara logaritmik yang digunakan dalam perhitungan. Adapun skala logaritmik yang tidak memiliki sorong, mistar Gunter, ditemukan tak lama setelah penemuan Napier dan disempurnakan oleh William Oughtred untuk menciptakan sepasang skala logaritmik yang dapat dipindahkan terhadap satu sama lain, yaitu mistar hitung. Angka yang ditempatkan pada skala hitung pada jarak sebanding dengan selisih antara logaritmanya. Menggeser skala atas dengan tepat berarti menambahkan logaritma secara mekanis, seperti yang diilustrasikan berikut ini:
+
+Sebagai contoh, dengan menambahkan jarak dari 1 ke 2 pada skala di bagian bawah ke jarak dari 1 ke 3 pada skala di bagian atas menghasilkan hasil kali 6, yang dibacakan di bagian bawah. Mistar hitung adalah sebuah alat menghitung yang penting bagi para insinyur dan ilmuwan hingga tahun 1970-an, karena dengan mengorbankan ketepatan nilai memungkinkan perhitungan yang jauh lebih cepat daripada teknik berdasarkan tabel.
+
+
+== Sifat analitik ==
+Kajian yang lebih dalam mengenai logaritma memerlukan sebuah konsep yang disebut fungsi. Fungsi merupakan sebuah kaidah yang dipetakan suatu bilangan akan menghasilkan bilangan lain. Contohnya seperti fungsi yang menghasilkan bilangan konstan b, yang dipangkatkan setiap bilangan real x. Fungsi ini secara matematis ditulis sebagai f(x) = b x. Ketika b positif dan tak sama dengan 1, maka f adalah fungsi terbalikkan ketika dianggap sebagai fungsi dengan interval dari bilangan real ke bilangan real positif.
+
+
+=== Keberadaan ===
+Misalkan b adalah bilangan real positif yang tidak sama dengan 1 dan misalkan f(x) = b x. Pernyataan yang diikuti dari teorema nilai antara ini, merupakan hasil standar dalam analisis real yang mengatakan bahwa setiap fungsi monoton sempurna dan kontinu merupakan fungsi bijektif antara ranah (bahasa Inggris: domain) dan kisarannya (bahasa Inggris: range). Pernyataan saat ini mengatakan bahwa f yang menaik sempurna (untuk b > 1), atau menurun sempurna (untuk 0 < b < 1) merupakan fungsi kontinu, memiliki ranah 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ dan memiliki kisaran 
+  
+    
+      
+        
+          
+            R
+          
+          
+            >
+            0
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} _{>0}}
+  
+. Oleh karena itu, f adalah fungsi bijeksi dari 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  
+ ke 
+  
+    
+      
+        
+          
+            R
+          
+          
+            >
+            0
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} _{>0}}
+  
+. Dengan kata lain, untuk setiap bilangan real positif y, terdapat setidaknya satu bilangan real x sehingga 
+  
+    
+      
+        
+          b
+          
+            x
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle b^{x}=y}
+  
+.
+Misalkan 
+  
+    
+      
+        
+          
+          
+            b
+          
+        
+        
+        log
+        :
+        
+          
+            R
+          
+          
+            >
+            0
+          
+        
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle ^{b}\!\log \colon \mathbb {R} _{>0}\to \mathbb {R} }
+  
+ yang menyatakan invers dari fungsi f. Dalam artian, blog y adalah bilangan real tunggal x sehingga 
+  
+    
+      
+        
+          b
+          
+            x
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle b^{x}=y}
+  
+. Fungsi ini disebut fungsi logaritma dengan bilangan pokok-b atau fungsi logaritmik (atau logaritma saja).
+
+
+=== Karakterisasi melalui rumus hasil kali ===
+Pada dasarnya, fungsi blog x juga dapat dikarakterisasikan melalui rumus hasil kali
+
+  
+    
+      
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        x
+        +
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        y
+        .
+      
+    
+    {\displaystyle ^{b}\!\log(xy)=\,^{b}\!\log x+\,^{b}\!\log y.}
+  
+
+Lebih tepatnya, logaritma untuk setiap bilangan pokok b > 1 yang hanya merupakan fungsi f naik dari bilangan real positif ke bilangan real memenuhi sifat bahwa f(b) = 1 dan
+
+  
+    
+      
+        f
+        (
+        x
+        y
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        f
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle f(xy)=f(x)+f(y).}
+  
+
+
+=== Grafik fungsi logaritma ===
+
+Seperti yang dibahas sebelumnya, fungsi blog invers terhadap fungsi eksponensial 
+  
+    
+      
+        x
+        ↦
+        
+          b
+          
+            x
+          
+        
+      
+    
+    {\displaystyle x\mapsto b^{x}}
+  
+. Karena itu, grafiknya berkorespondensi dengan satu sama lain saat menukar koordinat-x dan koordinat-y (atau saat melakukan pencerminan di garis diagonal x = y), seperti yang diperlihatkan sebagai berikut: sebuah titik (t, u = bt) pada grafik dari f menghasilkan sebuah titik (u, t = blog u) pada grafik logaritma dan sebaliknya. Akibatnya, blog (x) divergen menuju takhingga (dalam artian semakin besar dari setiap bilangan yang diberikan) jika x naik menuju takhingga, asalkan b lebih besar dari satu. Pada kasus tersebut, blog(x)  merupakan fungsi menaik. Sedangkan untuk kasus b < 1, blog (x) cenderung menuju ke negatif takhingga. Ketika x mendekati nol, blog x menuju ke negatif takhingga untuk b > 1 dan menuju ke plus takhingga untuk b < 1.
+
+
+=== Turunan dan antiturunan ===
+
+Sifat analitik tentang fungsi adalah melalui fungsi inversnya. Jadi, ketika f(x) = bx adalah fungsi kontinu dan terdiferensialkan, maka blog y fungsi kontinu dan terdiferensialkan juga. Penjelasan kasarnya, sebuah fungsi kontinu adalah terdiferensialkan jika grafiknya tidak mempunyai "ujung" yang tajam. Lebih lanjut, ketika turunan dari f(x) menghitung nilai ln(b) bx melalui sifat-sifat fungsi eksponensial, aturan rantai menyiratkan bahwa turunan dari blog x dirumuskan sebagai 
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          
+          
+            b
+          
+        
+        
+        log
+        ⁡
+        x
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              b
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dx}}\,^{b}\!\log x={\frac {1}{x\ln b}}.}
+  
+
+Artinya, kemiringan dari garis singgung yang menyinggung grafik logaritma dengan bilangan pokok b di titik (x, blog (x)) sama dengan 1x ln(b).
+Turunan dari ln(x) adalah 1x, yang berarti ini menyiratkan bahwa ln(x) adalah integral tunggal dari 1x yang mempunyai nilai 0 untuk x = 1. Hal ini merupakan rumus paling sederhana yang mendorong sifat "alami" pada logaritma alami, dan hal ini juga merupakan salah satu alasan pentingnya konstanta e.
+Turunan dengan argumen fungsional rampat f(x) dirumuskan sebagai
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        f
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                f
+                ′
+              
+              (
+              x
+              )
+            
+            
+              f
+              (
+              x
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dx}}\ln f(x)={\frac {f'(x)}{f(x)}}.}
+  
+
+Hasil bagi pada ruas kanan disebut turunan logaritmik dari f dan menghitung f'(x) melalui turunan dari ln(f(x)) dikenal sebagai pendiferensialan logaritmik. Antiturunan dari logaritma alami ln(x) dirumuskan sebagai:
+
+  
+    
+      
+        ∫
+        ln
+        ⁡
+        (
+        x
+        )
+        
+        d
+        x
+        =
+        x
+        ln
+        ⁡
+        (
+        x
+        )
+        −
+        x
+        +
+        C
+        .
+      
+    
+    {\displaystyle \int \ln(x)\,dx=x\ln(x)-x+C.}
+  
+
+Terdapat rumus yang berkaitan, seperti antiturunan dari logaritma dengan bilangan pokok lainnya dapat diperoleh dari persamaan ini dengan mengubah bilangan pokoknya.
+
+
+=== Representasi integral mengenai fungsi logaritma ===
+
+Logaritma alami dari t dapat didefinisikan sebagai integral tentu:
+
+  
+    
+      
+        ln
+        ⁡
+        t
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle \ln t=\int _{1}^{t}{\frac {1}{x}}\,dx.}
+  
+
+Definisi ini menguntungkan karena tidak bergantung pada fungsi eksponensial atau fungsi trigonometri apapun, dan definisi ini merupakan sebuah integral dari fungsi timbal balik sederhana. Penjelasan dalam integral, ln(t) sama dengan luas antara sumbu-x dan grafik fungsi 1x, yang berkisar dari x = 1 ke x = t. Penjelasan ini juga merupakan akibat dari teorema dasar kalkulus, dan bahkan turunan dari ln(x) sama dengan 1x. Rumus logaritma hasil kali dan pangkat dapat diperoleh melalui definisi ini. Sebagai contoh, rumus hasil kali ln(tu) = ln(t) + ln(u) dapat disimpulkan sebagai:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        t
+        u
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+            u
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+         
+        
+          
+            
+              
+                =
+              
+              
+                (
+                1
+                )
+              
+            
+          
+        
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+        +
+        
+          ∫
+          
+            t
+          
+          
+            t
+            u
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+         
+        
+          
+            
+              
+                =
+              
+              
+                (
+                2
+                )
+              
+            
+          
+        
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        
+          ∫
+          
+            1
+          
+          
+            u
+          
+        
+        
+          
+            1
+            w
+          
+        
+        
+        d
+        w
+        =
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        ln
+        ⁡
+        (
+        u
+        )
+        .
+      
+    
+    {\displaystyle \ln(tu)=\int _{1}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(1)}{=}}\int _{1}^{t}{\frac {1}{x}}\,dx+\int _{t}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(2)}{=}}\ln(t)+\int _{1}^{u}{\frac {1}{w}}\,dw=\ln(t)+\ln(u).}
+  
+
+Persamaan (1) membagi integral menjadi dua bagian, sementara (2) mengubah variabel w menjadi xt. Pada ilustrasi dibawah, pembagian integral tersebut dapat disamakan dengan pembagian luasnya menjadi bagian berwarna kuning dan biru. Dengan mengukur luas berwarna biru kembali secara vertikal melalui faktor t dan menyusutnya melalui faktor yang sama secara horizontal tidak mengubah ukuran luasnya. Dengan memindahkan daerah biru ke daerah kuning, luasnya menyesuaikan grafik fungsi f(x) = 1x lagi. Oleh karena itu, luas biru di sebelah kiri, yang merupakan integral dari fungsi f(x) dengan interval dari t hingga tu sama dengan integral dari fungsi yang sama dengan interval 1 hingga u. Hal ini membenarkan persamaan  (2) melalui bukti geometri lainnya.
+
+Rumus pangkat ln(tr) = r ln(t) dapat real dalam cara yang serupa:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        
+          t
+          
+            r
+          
+        
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            
+              t
+              
+                r
+              
+            
+          
+        
+        
+          
+            1
+            x
+          
+        
+        d
+        x
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            
+              w
+              
+                r
+              
+            
+          
+        
+        
+          (
+          
+            r
+            
+              w
+              
+                r
+                −
+                1
+              
+            
+            
+            d
+            w
+          
+          )
+        
+        =
+        r
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            w
+          
+        
+        
+        d
+        w
+        =
+        r
+        ln
+        ⁡
+        (
+        t
+        )
+        .
+      
+    
+    {\displaystyle \ln(t^{r})=\int _{1}^{t^{r}}{\frac {1}{x}}dx=\int _{1}^{t}{\frac {1}{w^{r}}}\left(rw^{r-1}\,dw\right)=r\int _{1}^{t}{\frac {1}{w}}\,dw=r\ln(t).}
+  
+
+Persamaan kedua menggunakan perubahan variabel w = x1r melalui integral substitusi.
+Jumlah keseluruhan timbal balik dari bilangan asli yang dirumuskan
+
+  
+    
+      
+        1
+        +
+        
+          
+            1
+            2
+          
+        
+        +
+        
+          
+            1
+            3
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            n
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle 1+{\frac {1}{2}}+{\frac {1}{3}}+\cdots +{\frac {1}{n}}=\sum _{k=1}^{n}{\frac {1}{k}},}
+  
+
+disebut deret harmonik. Deret ini sangat terkait erat dengan logaritma alami, yang dinyatakan melalui pernyataan berikut: ketika n cenderung menuju takhingga, selisih dari
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            k
+          
+        
+        −
+        ln
+        ⁡
+        (
+        n
+        )
+        ,
+      
+    
+    {\displaystyle \sum _{k=1}^{n}{\frac {1}{k}}-\ln(n),}
+  
+
+konvergen (yakni mendekati dengan sembarang) ke sebuah bilangan yang dikenal sebagai konstanta Euler–Mascheroni γ = 0,5772.... Kaitan antara deret harmonik dan logaritma natural membantu dalam menganalisis kinerja algoritma seperti quicksort.
+
+
+=== Transendensi logaritma ===
+Bilangan real yang bukan merupakan bilangan aljabar disebut bilangan transendental. Sebagai contoh, π dan e adalah bilangan transendental, sedangkan 
+  
+    
+      
+        
+          
+            2
+            −
+            
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2-{\sqrt {3}}}}}
+  
+ bukan. Hampir semua bilangan real adalah transendental. Logaritma merupakan sebuah contoh fungsi transendental. Teorema Gelfond–Schneider mengatakan bahwa logaritma biasanya memberikan nilai transendental.
+
+
+== Perhitungan ==
+
+Logaritma merupakan alat hitung yang mudah pada beberapa kasus, seperti 10log 1000 = 3. Logaritma pada umumnya dapat dihitung melalui deret kuasa atau rata-rata aritmetika–geometrik, atau didapatkan kembali dari tabel logaritma (sebelum adanya perhitungan logaritma) yang menyediakan ketepatan nilai konstan. Metode Newton, sebuah metode berulang yang menyelesaikan persamaan melalui hampiran, juga dapat dipakai untuk menghitung logaritma, karena fungsi inversnya (yaitu fungsi eksponensial), dapat dihitung dengan cepat. Dengan melihat tabel logaritma, metode yang mirip dengan CORDIC dapat dipakai untuk menghitung logaritma hanya dengan menggunakan operasi penambahan dan geseran bit. Terlebih lagi, algoritma dari logaritma biner menghitung lb(x) secara berulang berdasarkan penguadratan x yang berulang dan menggunakan ekspresi
+
+  
+    
+      
+        
+          
+          
+            2
+          
+        
+        
+        log
+        ⁡
+        
+          (
+          
+            x
+            
+              2
+            
+          
+          )
+        
+        =
+        2
+        ⋅
+        
+          
+          
+            2
+          
+        
+        
+        log
+        ⁡
+        
+          |
+        
+        x
+        
+          |
+        
+        .
+      
+    
+    {\displaystyle ^{2}\!\log \left(x^{2}\right)=2\cdot \,^{2}\!\log |x|.}
+  
+
+
+=== Deret pangkat ===
+
+
+==== Deret Taylor ====
+
+Untuk setiap bilangan z yang memenuhi sifat 0 < z ≤ 2, maka berlaku rumus:
+
+  
+    
+      
+        
+          
+            
+              
+                ln
+                ⁡
+                (
+                z
+                )
+              
+              
+                
+                =
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          1
+                        
+                      
+                    
+                    1
+                  
+                
+                −
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+                +
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          3
+                        
+                      
+                    
+                    3
+                  
+                
+                −
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          4
+                        
+                      
+                    
+                    4
+                  
+                
+                +
+                ⋯
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    ∞
+                  
+                
+                (
+                −
+                1
+                
+                  )
+                  
+                    k
+                    +
+                    1
+                  
+                
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          k
+                        
+                      
+                    
+                    k
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\ln(z)&={\frac {(z-1)^{1}}{1}}-{\frac {(z-1)^{2}}{2}}+{\frac {(z-1)^{3}}{3}}-{\frac {(z-1)^{4}}{4}}+\cdots \\&=\sum _{k=1}^{\infty }(-1)^{k+1}{\frac {(z-1)^{k}}{k}}\end{aligned}}}
+  
+
+Pernyataan di atas merupakan tulisan singkat untuk mengatakan bahwa ln(z) dapat diaproksimasi sebagai bilangan yang lebih-lebih akurat lagi melalui ekspresi berikut:
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+              
+            
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+                −
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+              
+              
+            
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+                −
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          3
+                        
+                      
+                    
+                    3
+                  
+                
+              
+            
+            
+              
+                ⋮
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lllll}(z-1)&&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&+&{\frac {(z-1)^{3}}{3}}\\\vdots &\end{array}}}
+  
+
+Sebagai contoh, pendekatan ketiga saat z = 1,5 memberikan nilai 0,4167. Nilai tersebut kira-kira 0,011 lebih besar dari ln(1,5) = 0,405465. Deret ini yang mengaproksimasi ln(z) dengan ketepatan nilai sembarang, menyediakan jumlah dari nilai yang dijumlahkan cukup besar. Dalam kalkulus elementer, ln(z) adalah limit dari deret ini dan juga merupakan deret Taylor dari logaritma alami di z = 1. Deret Taylor dari ln(z) khususnya menyediakan alat yang berguna untuk mengaproksimasi ln(1 + z) ketika z bernilai kecil, |z| < 1:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        z
+        )
+        =
+        z
+        −
+        
+          
+            
+              z
+              
+                2
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              z
+              
+                3
+              
+            
+            3
+          
+        
+        ⋯
+        ≈
+        z
+        .
+      
+    
+    {\displaystyle \ln(1+z)=z-{\frac {z^{2}}{2}}+{\frac {z^{3}}{3}}\cdots \approx z.}
+  
+
+Sebagai contoh, hampiran orde pertama memberikan nilai hampiran ln(1,1) ≈ 0,1 ketika z = 0,1, yang galatnya 5% lebih kecil dari nilai eksak 0,0953.
+
+
+==== Deret lebih efisien ====
+Deret lainnya berasal dari fungsi tangen hiperbolik invers:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        ⋅
+        artanh
+        
+        
+          
+            
+              z
+              −
+              1
+            
+            
+              z
+              +
+              1
+            
+          
+        
+        =
+        2
+        
+          (
+          
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            +
+            
+              
+                1
+                3
+              
+            
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        z
+                        −
+                        1
+                      
+                      
+                        z
+                        +
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+              
+                3
+              
+            
+            +
+            
+              
+                1
+                5
+              
+            
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        z
+                        −
+                        1
+                      
+                      
+                        z
+                        +
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+              
+                5
+              
+            
+            +
+            ⋯
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \ln(z)=2\cdot \operatorname {artanh} \,{\frac {z-1}{z+1}}=2\left({\frac {z-1}{z+1}}+{\frac {1}{3}}{\left({\frac {z-1}{z+1}}\right)}^{3}+{\frac {1}{5}}{\left({\frac {z-1}{z+1}}\right)}^{5}+\cdots \right),}
+  
+
+untuk setiap bilangan real z > 0. Dengan menggunakan notasi Sigma, ruas kanan pada rumus di atas juga dapat ditulis sebagai
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              2
+              k
+              +
+              1
+            
+          
+        
+        
+          
+            (
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+            k
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(z)=2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {z-1}{z+1}}\right)^{2k+1}.}
+  
+
+Deret ini dapat diturunkan dari deret Taylor di atas, yang konvergen lebih cepat daripada deret Taylor, khususnya jika z mendekati 1. Sebagai contoh, untuk z = 1,5, tiga suku pertama dari deret kedua memberikan nilai hampiran ln(1,5) dengan galatnya sekitar 3×10−6. Kekonvergenan cepat untuk z yang mendekati 1 dapat dimanfaatkan sebagai berikut: diberikan sebuah hampiran dengan tingkat akurat yang rendah y ≈ ln(z) dan memasukkan ke rumus
+
+  
+    
+      
+        A
+        =
+        
+          
+            z
+            
+              exp
+              ⁡
+              (
+              y
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle A={\frac {z}{\exp(y)}},}
+  
+
+maka logaritma dari z dirumuskan:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        y
+        +
+        ln
+        ⁡
+        (
+        A
+        )
+        .
+      
+    
+    {\displaystyle \ln(z)=y+\ln(A).}
+  
+
+Hampiran awalan y yang lebih baik adalah dengan membuat nilai A mendekati ke 1, sehingga nilai logaritma dapat dihitung lebih efisien. Nilai A dapat dihitung melalui deret eksponensial sehingga nilainya konvergen dengan cepat, asalkan nilai y tidak terlalu besar. Dengan menghitung logaritma dari z yang lebih besar dapat direduksi menjadi nilai z yang lebih kecil dengan menulis z = a · 10b, sehingga ln(z) = ln(a) + b · ln(10).
+Terdapat metode yang sangat berkaitan dengannya dapat dipakai untuk menghitung logaritma dari bilangan bulat. Dengan memasukkan 
+  
+    
+      
+        
+          z
+          =
+          
+            
+              
+                n
+                +
+                1
+              
+              n
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle z={\frac {n+1}{n}}}
+  
+ pada deret di atas, maka deret tersebut dapat ditulis sebagai berikut:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        n
+        +
+        1
+        )
+        =
+        ln
+        ⁡
+        (
+        n
+        )
+        +
+        2
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              2
+              k
+              +
+              1
+            
+          
+        
+        
+          
+            (
+            
+              
+                1
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+            k
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(n+1)=\ln(n)+2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {1}{2n+1}}\right)^{2k+1}.}
+  
+
+Jika diketahui logaritma dari suatu bilangan bulat  n yang lebih besar, maka deret tersebut menghasilkan sebauah deret yang konvergen dengan cepat untuk log(n+1), dengan laju konvergensi dari 
+  
+    
+      
+        
+          
+            (
+            
+              
+                1
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\textstyle \left({\frac {1}{2n+1}}\right)^{2}}
+  
+.
+
+
+=== Hampiran purata aritmetika-geometrik ===
+Purata aritmetika–geometrik atau rata-rata aritmetika–geometrik menghasilkan hampiran dari logaritma natural dengan tingkatan ketepatan yang tinggi. Pada tahun 1982, Sasaki dan Kanada memperlihatkan bahwa purata ini sangat cepat untuk ketepatan di antara 400 dan 1000 letak desimal, sementara metode deret Taylor biasanya lebih cepat ketika membutuhkan nilai yang kurang akurat. Dalam karyanya, ln(x) kira-kira sama dengan ketepatan dari 2−p (atau p bit yang tepat) melalui rumus berikut (karena Carl Friedrich Gauss):
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        ≈
+        
+          
+            π
+            
+              2
+              
+              
+                M
+              
+              
+              
+                (
+                
+                  1
+                  ,
+                  
+                    2
+                    
+                      2
+                      −
+                      m
+                    
+                  
+                  
+                    /
+                  
+                  x
+                
+                )
+              
+            
+          
+        
+        −
+        m
+        ln
+        ⁡
+        (
+        2
+        )
+        .
+      
+    
+    {\displaystyle \ln(x)\approx {\frac {\pi }{2\,\mathrm {M} \!\left(1,2^{2-m}/x\right)}}-m\ln(2).}
+  
+
+Notasi M(x, y) menyatakan rata-rata aritmetika–geometrik dari x dan y. Purata ini didapatkan dengan menghitung rerata (x + y)/2 (purata aritmetika) dan 
+  
+    
+      
+        
+          
+            x
+            y
+          
+        
+      
+    
+    {\textstyle {\sqrt {xy}}}
+  
+ (purata geometrik) dari x dan y secara berulang, lalu misalkan kedua bilangan tersebut merupakan bilangan x dan y selanjutnya. Kedua bilangan tersebut konvergen dengan cepat menuju ke limit yang sama, yaitu M(x, y). Agar pasti bahwa nilai yang diperlukan tepat, maka pilih m sehingga
+
+  
+    
+      
+        x
+        
+        
+          2
+          
+            m
+          
+        
+        >
+        
+          2
+          
+            p
+            
+              /
+            
+            2
+          
+        
+        .
+        
+      
+    
+    {\displaystyle x\,2^{m}>2^{p/2}.\,}
+  
+
+Bilangan m yang lebih besar membuat perhitungan M(x, y), dengan nilai awal x dan y yang merupakan nilai yang sangat jauh, mengambil langkah lebih lanjut agar nilainya konvergen, tetapi memberikan nilai yang lebih tepat. Konstanta seperti π dan ln(2) dapat dihitung melalui deret yang konvergen dengan cepat.
+
+
+=== Algoritma Feynman ===
+Richard Feynman, yang mengerjakan proyek Manhattan di Los Alamos National Laboratory, mengembangkan sebuah algoritma pengolahan bit untuk menghitung nilai logaritma. Algoritma tersebut menyerupai pembagian panjang, dan kemudian dipakai dalam sebuah anggota dari rangkaian subkomputer, Connection Machine. Bahkan bahwa setiap bilangan real 1 < x < 2 yang dapat direpresentasikan sebagai hasil kali dari faktor yang berbeda dari bentuk 1 + 2−k, dipakai dalam algoritma ini. Algoritma ini dibangun secara berurutan bahwa hasil kali P, yang dimulai dengan P = 1 dan k = 1, mengatakan bahwa jika P · (1 + 2−k) < x, maka P berubah menjadi P · (1 + 2−k), sehingga membuat nilai 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+ menaik. Algoritma tersebut berhenti ketika k cukup besar memberikan nilai akurat yang diinginkan. Karena log(x) adalah jumlah dari suku berbentuk log(1 + 2−k) yang berpadanan dengan nilai k dan faktor 1 + 2−k adalah hasil kali dari  P, maka log(x) dapat dihitung melalui operasi penambahan yang sederhana, yaitu menggunakan tabel dari log(1 + 2−k) untuk semua k. Setiap bilangan pokok dapat dipakai untuk tabel logaritma.
+
+
+== Penerapan ==
+
+Logaritma memiliki banyak penerapan di dalam maupun di luar matematika. Ada beberapa kejadian penerapan logaritma yang berkaitan dengan gagasan kekararan skala. Sebagai contoh, setiap ruangan yang terdapat di dalam sebuah cangkang nautilus memiliki kira-kira sama dengan jumlah salinan dari ruang selanjutnya, yang ditimbang melalui faktor konstanta. Contoh tersebut menyerupai bentuk spiral logaritmik. Hukum Benford mengenai distribusi dari angka yang ditunjuk juga dapat dijelaskan melalui kekeraran skala. Logaritma juga berkaitan dengan benda yang memiliki kemiripan terhadap diri sendiri. Sebagai contoh, logaritma muncul dalam analisis tentang algoritma yang menyelesaikan masalah dengan membaginya menjadi dua masalah lebih kecil yang serupa dan memotong kecil penyelesaiannya. Dimensi dari bentuk geometrik menyerupai diri sendiri, dalam artian bahwa bentuk yang bagiannya menyerupai gambarnya secara keseluruhan juga dirumuskan melalui logaritma. Skala logaritmik berguna untuk mengukur perubahan relatif nilai daripada selisih mutlaknya. Terlebih lagi, karena fungsi logaritmik log(x) menaik sangat lambat untuk nilai besarx, skala logaritmik biasanya menekan data ilmiah yang berskala besar. Logaritma juga muncul dalam rumus ilmiah numerik, seperti persamaan roket Tsiolkovsky, persamaan Fenske, atau persamaan Nernst.
+
+
+=== Penerapannya dalam skala logaritmik ===
+
+Satuan kuantitas dalam ilmiah seringkali dinyatakan sebagai logaritma dari kuantitas lain, dengan menggunakan skala logaritmik. Sebagai contoh, desibel merupakan satuan pengukuran yang dikaitkan dengan perhitungan dari kuantitas skala logaritmik. Penguat desibel memberikan 10 kalinya logaritma biasa dari rasio daya atau 20 kalinya logaritma biasa dari rasio tegangan. Satuan inilah yang dipakai untuk mengukur rugi tingkatan ketegangan saat mentransmisi sinyal elektrik, yang bertujuan untuk menjelaskan tingkatan kekuatan aras daya suara dalam akustik, serta mengukur penyerapan cahaya dalam bidang spektrometri dan optika. Selain itu, desibel juga dipakai dalam nisbah sinyal-derau yang menjelaskan seberapa banyak derau dibandingkan dengan sinyal yang berguna. Mirip dengan tadi, nisbah puncak sinyal-derau biasanya dipakai menilai kualitas suara dan metode pemampatan citra melalui logaritma.
+Kekuatan gempa bumi diukur dengan mengambil logaritma umum dari energi yang dipancarkan saat terjadinya gempa dalam satuan skala magnitudo momen atau skala magnitudo Ritcher. Sebagai contoh, gempa berkekuatan 5,0 melepaskan 32 kali (101,5) dan gempa berkekuatan 6,0 melepaskan 1000 kali(103) energi berkekuatan 4,0. Skala logaritmik juga dipakai dalam magnitudo kentara untuk mengukur kecerahan bintang. Dalam kimia, negatif dari logaritma desimal, yang disebut sebagai kologaritma desimal, ditunjukkan dengan huruf "p". Sebagai contoh, pH merupakan kologaritma desimal dari keaktifan dari ion berbentuk hidrogen H+ yang terbentuk dari air, hidronium. Keaktifan dari ion hidronium dalam air yang netral bernilai 10−7 mol·L−1, sehingga nilai pH adalah 7. Contoh lainnya, nilai pH dari asam cuka biasanya sekitar 3. Perbedaan nilai sebesar 4 sesuai dengan rasio 104 berdasarkan aktivitasnya, yaitu nilai dari aktivitas ion hidronium cuka sekitar 10−3 mol·L−1.
+Konsep skala logaritmik dapat dipakai dalam grafik (log-linear) semilog bertujuan untuk memberikan visual terkait satu sumbu, yang biasanya berupa sumbu vertikal, diukur menggunakan perhitungan logaritma. Contohnya seperti grafik disamping menjelaskan nilai yang menaik dengan tajam dari 1 juta hingga 1 triliun ke dalam ruang yang sama (pada sumbu vertikal) saat grafiknya menaik dari 1 hingga 1 juta. Pada grafik tersebut, fungsi eksponensial f(x) = a · bx muncul sebagai garis lurus dengan kemiringan yang sama dengan logaritma dari b. Selain itu, skala logaritma yang dapat dipakai dalam grafik log-log untuk mengukur sumbu vertikal dan horizontal, sehingga menyebabkan fungsi f(x) = a · xk digambarkan sebagai garis lurus yang mempunyai kemiringan yang sama dengan bilangan yang dipangkat dengan k, diterapkan pada saat memberikan visual dan menganalisis hukum pangkat.
+
+
+=== Penerapannya dalam psikologi ===
+Penerapan logaritma juga terdapat dalam beberapa hukum yang menjelaskan tentang persepsi manusia. Sebagai contoh, hukum Hick menjelaskan kaitan logaritmik antara waktu saat orang mengambil keputusan beserta jumlah keputusan yang dimiliki. Hukum lainnya adalah hukum Fitts, yang memprediksi bahwa waktu yang diperlukan saat bergerak ke daerah target dengan cepat sama dengan fungsi logaritmik dari jarak dan ukuran target. Dalam psikofisika, hukum Weber–Fechner mengatakan kaitan logaritmik dengan stimulus dan sensasi yang dirasakan, contohnya seperti saat orang sedang membawa berat benda yang sesungguhnya dengan yang dirasakan. (Namun, "hukum" ini kurang realistis dengan model belakangan ini, seperti hukum perpangkatan Stevens.)
+Studi psikologi menemukan bahwa orang yang sedikit mempunyai pemahaman matematika cenderung mengestimasi nilai kuantitas dengan logaritma, atau dengan kata lain, bilangannya ditempatkan pada garis yang tidak ditandai berdasarkan perhitungan logaritma, sehingga 10 yang ditempatkan mendekati 100 dianggap sebagai 100 yang ditempatkan mendekati 1000. Orang yang memiliki pemahaman yang lebih tinggi memandang hal tersebut sebagai linear yang mengestimasi (letak angka 1000 yang berjarak 10 kali lebih jauh) pada beberapa kasus, namun logaritma dipakai pada saat memplot bilangan-bilangan yang sulit untuk diplotkan secara linear.
+
+
+=== Penerapannya dalam teori peluang dan statistika ===
+
+Dalam teori probabilitas, hukum bilangan besar mengatakan bahwa, untuk sebuah mata uang seimbang, ketika jumlah pelemparan koin naik menuju takhingga, maka kesebandingan dari gambar kepala (atau ekor) yang diamati mendekati satu setengah. Fluktuasi dari nilai kesebandingan yang bernilai satu setengah dijelaskan melalui hukum yang menggunakan logaritma, yaitu hukum logaritma teriterasi.
+Logaritma muncul pula dalam sebaran log-normal. Ketika logaritma dari variabel acak mempunyai sebaran normal, maka variabel dikatakan mempunyai sebaran log-normal. Sebaran log-normal ditemukan dalam banyak bidang, dengan suatu variabel dibentuk sebagai hasil kali dari banyaknya variabel acak indenpenden bernilai positif. Contohnya seperti dalam mempelajari turbulensi.
+Logaritma dipakai untuk menghitung estimasi kemungkinan maksimum dari model statistika parametrik. Fungsi kemungkinan pada model tersebut bergantung setidaknya satu parameter yang harus diestimasi. Nilai maksimum dari fungsi kemungkinan muncul di nilai parameter yang sama sebagai nilai maksimum logaritma kemungkinan (atau disebut log likelihood), karena logaritma merupakan fungsi menaik. Log-likelihood adalah teknik yang memaksimumkan fungsi dengan mudah, khususnya untuk kemungkinan yang dikali mengenai variabel acak independen.
+Hukum Benford menjelaskan kemungkinan digit dalam himpunan data yang banyak, contohnya seperti tinggi bangunan. Menurut hukum Benford, kemungkinan bahwa digit desimal pertama suatu item dalam sampel data adalah d (yang berkisar dari 1 hingga 9) sama dengan 10log (d + 1) − 10log (d), tanpa memperhatikan satuan pengukuran. Jadi, sekitar 30% data dapat diduga mempunyai 1 sebagai digit pertama, 18% dimulai dengan 2, dst. Penyimpangan dari hukum Benford dihitung oleh para akuntan untuk membantu mendeteksi penipuan data akuntansi.
+
+
+=== Penerapannya dalam kompleksitas perhitungan ===
+Cabang dalam ilmu komputer yang mempelajari performa dari suatu algoritma dalam menyelesaikan persoalan atau masalah tertentu disebut analisis algoritma. Logaritma sangat penting dalam menjelaskan algoritma tersebut dengan membagi suatu masalah menjadi lebih kecil, serta menghubungkan penyelesaian dari submasalah.
+Sebagai contoh, cara algoritma pencarian biner (bahasa Inggris: binary searching algorithm) dalam mencari bilangan dalam daftar yang tersortir adalah dengan memeriksa entri tengah dan meneruskannya di sebagian sebelum atau sesudah entri tengah jika tidak ditemukan bilangannya. Umumnya, algoritma ini memerlukan perbandingan 2log (N), dengan N adalah panjang daftar. Mirip dengan sebelumnya, algoritma urut gabungan menyortir daftar yang belum tersortir dengan membagi daftar menjadi setengah bagian dan mengurutkan daftar-daftar tersebut dahulu sebelum menggabungkan hasilnya. Algoritma urut gabungan biasanya memerlukan waktu yang kira-kira sebanding dengan N · log(N). Bilangan pokok logaritma tidak dijelaskan secara spesifik, karena hasilnya hanya berubah oleh faktor konstanta saat ada bilangan pokok lain yang sedang dipakai. Faktor konstanta biasanya diabaikan dalam analisis algoritma dalam model biaya seragam (bahasa Inggris: uniform cost model) yang standar.
+Suatu fungsi f(x) dikatakan bertumbuh secara logaritmik jika f(x) (setidaknya atau kira-kira) sebanding dengan logaritma dari x, namun istilah ini dipakai sebagai fungsi eksponensial dalam menjelaskan pertumbuhan organisme secara biologis. Sebagai contoh, setiap bilangan asli N dapat direpresentasikan dalam bentuk bilangan biner yang tidak lebih dari 2log N + 1 bit. Dengan kata lain, jumlah memori diperlukan untuk menyimpan N pertumbuhan secara logaritmik dengan N.
+
+
+=== Penerapannya dalam entropi dan ketidakteraturan ===
+
+Entropi secara umum adalah ukuran dari ketidakteraturan dari suatu sistem. Dalam termodinamika statistik, sebuah entropi, disimbolkan dengan S, dari sebuah sistem, didefinisikan dengan:
+
+  
+    
+      
+        S
+        =
+        −
+        k
+        
+          ∑
+          
+            i
+          
+        
+        
+          p
+          
+            i
+          
+        
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i
+          
+        
+        )
+        .
+        
+      
+    
+    {\displaystyle S=-k\sum _{i}p_{i}\ln(p_{i}).\,}
+  
+
+Hasilnya adalah seluruh kondisi i yang mungkin dari sistem yang dimaksud, contoh posisi dari partikel gas di dalam sebuah tangki. Lebih lanjut lagi, pi adalah kemungkinan bahwa kondisi i telah tercapai dan k adalah konstanta Boltzmann. Sama halnya dengan entropi dalam teori informasi yang mengukur kuantitas dari informasi. Jika penerima pesan mengharapkan sejumlah N pesan yang mungkin diterima dengan besar kemungkinan masing-masing yang setara, maka sejumlah informasi yang tersampaikan oleh pesan tersebut dapat dikuantifikasi dengan bit 2log N.
+Eksponen Lyapunov menggunakan logaritma untuk mengukur derajat ketidakteraturan dari sistem yang dinamis. Contoh partikel yang bergerak di meja biliar oval, di mana bahkan perubahan sekecil apapun dari kondisi awal dapat memberikan hasil, yaitu jalur yang dilalui, yang sangat berbeda. Sistem yang dimaksud disebut dengan kekacauan di dalam sistem deterministik karena galat yang kecil namun terukur dari kondisi awal dapat diprediksi akan memberikan hasil akhir yang sangat berbeda. Setidaknya satu eksponen Lyapunov dari sistem kekacauan yang deterministik akan bernilai positif.
+
+
+=== Penerapannya dalam bangunan fraktal ===
+
+Logaritma muncul dalam definiisi dimensi fraktal. Fraktal merupakan benda-benda geometri yang menyerupai dirinya, dalam artian bahwa benda geometri tersebut mereproduksi dirinya lebih kecil, penjelasan kasarnya, di seluruh strukturnya. Contohnya seperti segitiga Sierpiński, dengan dimensi Hausdorffnya adalah ln(3)ln(2) ≈ 1,58, dapat diliputi dengan tiga salinan dirinya, masing-masing sisinya dibagi menjadi setengah dari panjang awalnya. Adapula gagasan dimensi fraktal berdasarkan logaritma lainnya diperoleh dengan menghitung jumlah kotak yang diperlukan untuk meliputi frakal dalam himpunan.
+
+
+=== Penerapannya dalam musik ===
+
+Logaritma berkaitan dengan bunyi nada dan interval dalam musik. Dalam temperamen sama, perbandingan frekuensi bergantung pada interval di antara dua nada saja, bukan pada frekuensi yang spesifik atau tinggi dari nada tunggal. Sebagai contoh, nada A mempunyai frekuensi 440 Hz dan B-flat mempunyai frekuensi 466 Hz. Interval antara nada A dengan B-flat ini digolongkan sebagai semi-nada, karena intervalnya berada di antara B-flat dan B (yang mempunyai frekuensi 493 Hz). Maka, perbandingan frekuensinya adalah:
+
+  
+    
+      
+        
+          
+            466
+            440
+          
+        
+        ≈
+        
+          
+            493
+            466
+          
+        
+        ≈
+        1
+        ,
+        059
+        ≈
+        
+          
+            2
+            
+              12
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {466}{440}}\approx {\frac {493}{466}}\approx 1,059\approx {\sqrt[{12}]{2}}.}
+  
+
+Peran logaritma dalam musik dapat dipakai untuk menjelaskan interval berikut: suatu interval diukur dalam semi-nada dengan mengambil logaritma dengan bilangan pokok-21/12 dari perbandingan frekuensi, sedangkan logaritma dengan bilangan pokok-21/1200 dari perbandingan frekuensi menyatakan interval dalam sen, ratusan semi-nada. Logaritma yang terakhir dipakai untuk pengodean yang lebih halus, karena diperlukan untuk temperamen tak sama.
+
+
+=== Penerapannya dalam teori bilangan ===
+Logaritma alami sangat berkaitan dengan salah satu topik dalam teori bilangan, yaitu menghitung bilangan prima. Untuk setiap bilangan bulat x, jumlah bilangan prima kurang dari sama dengan x dinyatakan sebagai π(x). Teorema bilangan prima mengatakan bahwa π(x) kira-kira sama dengan
+
+  
+    
+      
+        
+          
+            x
+            
+              ln
+              ⁡
+              (
+              x
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {x}{\ln(x)}},}
+  
+
+yang berarti bahwa fungsi pencacahan bilangan prima kira-kira sama dengan perbandingan dari π(x) dan pecahan yang mendekati 1 ketika x menuju ke takhingga. Akibatnya, peluang dari bilangan yang dipilih secara acak di antara 1 dan x adalah bilangan prima berbanding terbalik dengan jumlah digit desimal x. Pendekatan π(x) yang lebih baik merupakan fungsi integral Euler Li(x), yang didefinisikan sebagai
+
+  
+    
+      
+        
+          L
+          i
+        
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            2
+          
+          
+            x
+          
+        
+        
+          
+            1
+            
+              ln
+              ⁡
+              (
+              t
+              )
+            
+          
+        
+        
+        d
+        t
+        .
+      
+    
+    {\displaystyle \mathrm {Li} (x)=\int _{2}^{x}{\frac {1}{\ln(t)}}\,dt.}
+  
+
+Hipotesis Riemann, yang merupakan salah satu konjektur matemtika terbuka yang paling terlama, dapat dinyatakan dalam bentuk perbandingan π(x) dan Li(x). Teorema Erdős–Kac mengatakan bahwa jumlah faktor bilangan prima yang berbeda juga melibatkan logaritma alami.
+Logaritma dari n faktorial, n! = 1 · 2 · ... · n, dirumuskan sebagai
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        n
+        !
+        )
+        =
+        ln
+        ⁡
+        (
+        1
+        )
+        +
+        ln
+        ⁡
+        (
+        2
+        )
+        +
+        ⋯
+        +
+        ln
+        ⁡
+        (
+        n
+        )
+        .
+      
+    
+    {\displaystyle \ln(n!)=\ln(1)+\ln(2)+\cdots +\ln(n).}
+  
+
+Rumus di atas dapat dipakai utnuk memperoleh sebuah hampiran dari n! untuk setiap bilangan n yang lebih besar, yaitu rumus Stirling.
+
+
+== Perumuman ==
+
+
+=== Logaritma kompleks ===
+
+Semua bilangan kompleks a yang menyelesaikan persamaan
+
+  
+    
+      
+        
+          e
+          
+            a
+          
+        
+        =
+        z
+      
+    
+    {\displaystyle e^{a}=z}
+  
+
+disebut logaritma kompleks dari z, ketika z (dianggap sebagai) bilangan kompleks. Bilangan kompleks biasanya dinyatakan sebagai z = x + iy, dengan x dan y adalah bilangan real dan i adalah satuan imajiner (satuan yang dikuadratkan memberikan nilai −1). Bilangan kompleks dapat divisualisasikan melalui sebuah titik dalam bidang kompleks, seperti yang diperlihatkan pada gambar berikut. Bentuk polar menulis bilangan kompleks tak-nol z melalui titik nilai mutlak, yang berarti jarak yang berupa bilangan bernilai real dan positif r sama dengan titik z ke titik asalnya. Bentuk polar juga menulis sebuah sudut antara bilangan real pada sumbu-Re (yakni sumbu-x)  Re dan garis yang melalui titik asal dan titik z. Sudut tersebut disebut sebagai argumen dari z.Nilai mutlak r dari z dinyatakan sebagai
+
+  
+    
+      
+        
+          r
+          =
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              +
+              
+                y
+                
+                  2
+                
+              
+            
+          
+          .
+        
+      
+    
+    {\displaystyle \textstyle r={\sqrt {x^{2}+y^{2}}}.}
+  
+
+Dengan menggunakan pandangan geometris pada fungsi sinus dan kosinus beserta periodisitasnya dalam 2π, setiap bilangan kompleks z dapat dinyatakan sebagai
+
+  
+    
+      
+        z
+        =
+        x
+        +
+        i
+        y
+        =
+        r
+        (
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        )
+        =
+        r
+        (
+        cos
+        ⁡
+        (
+        φ
+        +
+        2
+        k
+        π
+        )
+        +
+        i
+        sin
+        ⁡
+        (
+        φ
+        +
+        2
+        k
+        π
+        )
+        )
+        ,
+      
+    
+    {\displaystyle z=x+iy=r(\cos \varphi +i\sin \varphi )=r(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )),}
+  
+
+untuk setiap bilangan bulat k. Nyatanya, argumen dari z tidak dijelaskan secara unik, yakni: bilangan φ dan φ' = φ + 2kπ adalah argumen valid dari z untuk semua bilangan bulat k, karena menambahkan 2kπ radian atau k⋅360° ke bilangan φ berpadanan dengan "lilitan" di sekitar titik asal yang berputar berlawanan arah jarum jam sebanyak k putaran. Hasil bilangan kompleks selalu z, seperti yang diilustrasikan pada gambar untuk k = 1. Setidaknya ada salah satu dari argumen z yang mungkin disebut sebagai argumen prinsip, yang dilambangkan Arg(z), dipilih dengan memerlukan putaran φ di selang (−π, π] atau [0, 2π). Daerah-daerah tersebut, dengan argumen z ditentukan sekali disebut cabang dari fungsi argumen.
+Rumus Euler mengaitkan fungsi trigonometri sinus dan kosinus dengan eksponensial kompleks:
+
+  
+    
+      
+        
+          e
+          
+            i
+            φ
+          
+        
+        =
+        cos
+        ⁡
+        φ
+        +
+        i
+        sin
+        ⁡
+        φ
+        .
+      
+    
+    {\displaystyle e^{i\varphi }=\cos \varphi +i\sin \varphi .}
+  
+
+Dengan menggunakan rumus di atas, dan periodisitasnya lagi, maka berlaku identitas berikut:
+
+  
+    
+      
+        
+          
+            
+              
+                z
+              
+              
+                =
+              
+              
+                r
+                
+                  (
+                  
+                    cos
+                    ⁡
+                    φ
+                    +
+                    i
+                    sin
+                    ⁡
+                    φ
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                r
+                
+                  (
+                  
+                    cos
+                    ⁡
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                    +
+                    i
+                    sin
+                    ⁡
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                r
+                
+                  e
+                  
+                    i
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                
+                  e
+                  
+                    ln
+                    ⁡
+                    (
+                    r
+                    )
+                  
+                
+                
+                  e
+                  
+                    i
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                
+                  e
+                  
+                    ln
+                    ⁡
+                    (
+                    r
+                    )
+                    +
+                    i
+                    (
+                    φ
+                    +
+                    2
+                    k
+                    π
+                    )
+                  
+                
+                =
+                
+                  e
+                  
+                    
+                      a
+                      
+                        k
+                      
+                    
+                  
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lll}z&=&r\left(\cos \varphi +i\sin \varphi \right)\\&=&r\left(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )\right)\\&=&re^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)}e^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)+i(\varphi +2k\pi )}=e^{a_{k}},\end{array}}}
+  
+
+dengan ln(r) adalah fungsi logaritma real tunggal, ak menyatakan logaritma kompleks dari z, dan k bilangan bulat sembarang. Karena itu, logaritma kompleks dari z, yang semua bilangan kompleks ak untuk e pangkat ak sama dengan z, mempunyai tak berhingga banyaknya nilai
+
+  
+    
+      
+        
+          a
+          
+            k
+          
+        
+        =
+        ln
+        ⁡
+        (
+        r
+        )
+        +
+        i
+        (
+        φ
+        +
+        2
+        k
+        π
+        )
+        ,
+        
+      
+    
+    {\displaystyle a_{k}=\ln(r)+i(\varphi +2k\pi ),\quad }
+  
+ untuk bilangan bulat sembarang k.
+
+Dengan mengambil k sehingga φ + 2kπ ada di dalam selang yang ditentukan untuk argumen prinsip, maka ak disebut nilai prinsip dari logaritma, dinotasikan sebagai Log(z). Argumen prinsip setiap bilangan real positif  x bernilai 0, jadi Log(x) adalah sebuah bilangan real yang sama dengan logaritma (alami). Akan tetapi, rumus logaritma tentang darab dan perpangkatan bilangan di atas tidak memberikan perumuman terkait nilai prinsip dari logaritma kompleks.
+Ilustrasi tersebut menggambarkan Log(z), membatasi argumen  z dengan interval (−π, π]. Cara memadankan cabang dari logaritma kompleks mempunyai ketakkontinuan di sepanjang sumbu-x real negatif, seperti yang dapat dilihat pada lompatan hue di gambar. Saat melintasi batas, ketakkontinuan tersebut dimulai dari lompatan hingga batas lain yang ada di cabang yang sama, dalam artian bahwa tiada perubahan dengan nilai-k dari cabang tetangga kontinu yang berpadanan. Lokus tersebut dinamakan potongan cabang. Dengan menghapus perbatasan argumen, maka relasi "argumen dari z" dan "logaritma dari z" menjadi fungsi bernilai banyak.
+
+
+=== Kebalikan dari fungsi eksponensial lainnya ===
+Eksponensiasi muncul dalam cabang matematika dan fungsi inversnya seringkali mengacu pada logaritma. Sebagai contoh, logaritma matriks merupakan fungsi invers (bernilai banyak) dari eksponensial matriks. Contohnya lain seperti fungsi logaritma p-adic, fungsi invers dari fungsi eksponensial p-adic. Kedua fungsi tersebut didefinisikan melalui deret Taylor yang analog dengan kasus bilangan real. Dalam konteks geometri diferensial, peta eksponensial memetakan ruang garis singgung di sebuah titik lipatan ke lingkungan titik tersebut. Kebalikannya juga disebut peta logaritma.
+Dalam konteks grup hingga, eksponensiasi dinyatakan dengan mengalikan satu anggota grup b dengan dirinya secara berulang. Logaritma diskret merupakan bilangan bulat n yang menyelesaikan persamaan
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        x
+        ,
+      
+    
+    {\displaystyle b^{n}=x,}
+  
+
+dengan x adalah anggota dari grup. Mengerjakan solusi eksponensiasi dapat dilakukan dengan efisien, namun logaritma diskret dipercayai bahwa sangat sulit untuk menghitungnya dalam beberapa grup. Asimetri dari grup tersebut mempunyai penerapan penting dalam kriptografi kunci publik, contohnya seperti pertukaran kunci Diffie–Hellman, sebuah pertukaran kunci sehari-hari yang memungkinkan pertukaran kunci kriptografi terhadap saluran informasi yang tidak diamankan. Logaritma Zech berkaitan dengan logaritma diskret dalam grup perkalian anggota taknol dari medan hingga.
+Adapun fungsi invers berupa logaritma lainnya. Fungsi tersebut di antaranya: logaritma ganda ln(ln(x)) yang merupakan kebalikan dari fungsi eksponensial ganda, superlogaritma yang merupakan kebalikan dari tetrasi, fungsi Lambert W yang merupakan kebalikan dari fungsi f(w) = wew, dan logit yang merupakan kebalikan dari fungsi logistik.
+
+
+=== Konsep yang berkaitan ===
+Berdasarkan sudut pandang teori grup, identitas log(cd) = log(c) + log(d) menyatakan isomorfisme grup antara bilangan riil positif terhadap perkalian bilangan riil positif terhadap penambahan. Fungsi logaritmik hanya isomorfisme kontinu antara grup. Berdasarkan pengertian isomorfisme tersebut, ukuran Haar (ukuran Lebesgue) dx pada riil berpadanan dengan ukuran Haar dxx pada bilangan real positif. Bilangan riil taknegatif tidak hanya terhadap operasi perkalian, namun juga terhadap operasi penambahan, dan bilangan riil taknegatif membentuk semigelanggang, yang disebut sebagai semigelanggang probabilitas, bahkan membentuk semigelanggang. Maka logaritma yang mengambil perkalian dengan penambahan (perkalian logaritma), dan mengambil penambahan dengan penambahan logaritma, memberikan isomorfisme semigelanggang di antara semigelanggang probabilitas dan semigelanggang logaritma.
+Konsep ini juga terdapat di dalam analisis kompleks dan geometri aljabar, yang logaritmik satu bentuk df/f adalah bentuk diferensial dengan pole logaritmik.
+Selain itu, terdapat polilogaritma, sebuah fungsi yang didefinisikan sebagai
+
+  
+    
+      
+        
+          Li
+          
+            s
+          
+        
+        ⁡
+        (
+        z
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              z
+              
+                k
+              
+            
+            
+              k
+              
+                s
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {Li} _{s}(z)=\sum _{k=1}^{\infty }{z^{k} \over k^{s}}.}
+  
+
+Fungsi ini mempunyai kaitan dengan logaritma alami dengan Li1 (z) = −ln(1 − z). Terlebih lagi, ketika z = 1, nilai dari Lis (1) sama dengan fungsi zeta Riemann, yang dinyatakan sebagai ζ(s).
+
+
+== Lihat pula ==
+Eksponen desimal (dex)
+Fungsi eksponensial
+Indeks artikel logaritma
+Notasi logaritmik
+
+
+== Catatan ==
+
+
+== Referensi ==
+
+
+== Pranala luar ==
+ Media tentang Logarithm di Wikimedia Commons
+ Definisi kamus logaritma di Wikikamus
+ A lesson on logarithms can be found on Wikiversity
+(Inggris) Weisstein, Eric W., "Logarithm", MathWorld 
+Khan Academy: Logarithms, free online micro lectures
+Hazewinkel, Michiel, ed. (2001) [1994], "Logarithmic function", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4 
+Colin Byfleet, Educational video on logarithms, diakses tanggal 12 October 2010 
+Edward Wright, Translation of Napier's work on logarithms, diarsipkan dari versi asli tanggal 3 December 2002, diakses tanggal 12 October 2010  
+ Glaisher, James Whitbread Lee (1911), "Logarithm",  dalam Chisholm, Hugh, Encyclopædia Britannica, 16 (edisi ke-11), Cambridge University Press, hlm. 868–77

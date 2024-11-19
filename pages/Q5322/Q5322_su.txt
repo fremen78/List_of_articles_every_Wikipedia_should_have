@@ -1,0 +1,617 @@
+Tempo Kapasitor (komponén) pikeun bahasan tipe husus.
+
+Kapasitor nyaéta parangkat listrik nu bisa nyimpen énérgi dina médan listrik antara sapasang konduktor nu jarakna deukeut (disebut 'pelat'). Nalika voltase diterapkeun kana kapasitor, muatan listrik kalayan gedé nu sarua, tapi polaritas atawa kutubna béda bakal diwangun dina unggal pelat.
+Kapasitor digunakeun dina sirkuit listrik minangka alat panyimpen énérgi. Bisa ogé digunakeun keur misahkeun sinyal frékuénsi luhur jeung frékuénsi handap sarta ngajadikeunnana bisa dipigunakeun dina filter éléktronik.
+Kapasitor kadang-kadang disebut kondénsator. Istilah ieu dianggep istilah baheula.
+
+
+== Fisik ==
+
+
+=== Sawangan ===
+Kapasitor diwangun ku dua éléktroda, atawa pelat konduktif, nu dipisahkeun ku isolator
+
+
+=== Kapasitansi kapasitor ===
+Kapasitansi kapasitor (C) nyaéta ukuran muatan (Q) nu kasimpen dina unggal pelat pikeun hiji béda poténsial atawa tegangan (V) nu mucunghul antara pelat-pelat éta:
+
+  
+    
+      
+        C
+        =
+        
+          
+            Q
+            V
+          
+        
+      
+    
+    {\displaystyle C={Q \over V}}
+  
+
+Dina hijian SI, kapasitor mibanda kapasitansi safarad lamun sacoulomb muatan nyababkeun béda poténsial savolt pikeun sakabéh pelat. ku sabab farad téh nyaéta hijian nu kacida gedéna, ajén kapasitor biasana diungkabkeun dina microfarad (µF), nanofarad (nF) atawa picofarad (pF).
+
+The capacitance is proportional to the surface aréa of the conducting plate and inversely proportional to the distance between the plates. It is also proportional to the permittivity of the dielectric (that is, non-conducting) substance that separates the plates.
+The capacitance of a parallel-plate capacitor is given by:
+
+  
+    
+      
+        C
+        ≈
+        
+          
+            
+              ϵ
+              A
+            
+            d
+          
+        
+        ;
+        A
+        ≫
+        
+          d
+          
+            2
+          
+        
+      
+    
+    {\displaystyle C\approx {\frac {\epsilon A}{d}};A\gg d^{2}}
+  
+ [1] Archived 2006-08-28 di Wayback Machine
+where ε is the permittivity of the dielectric, A is the aréa of the plates and d is the spacing between them.
+In the diagram, the rotated molecules créate an opposing electric field that partially cancels the field créated by the plates, a process called dielectric polarization.
+
+
+=== Enérgi nu kasimpen ===
+As opposite charges accumulate on the plates of a capacitor due to the separation of charge, a voltage develops across the capacitor owing to the electric field of these charges. Ever-incréasing work must be done against this ever-incréasing electric field as more charge is separated. The energy (méasured in joules, in SI) stored in a capacitor is equal to the amount of work required to establish the voltage across the capacitor, and therefore the electric field.
+The energy stored is given by:
+
+  
+    
+      
+        
+          E
+          
+            
+              s
+              t
+              o
+              r
+              e
+              d
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          V
+          
+            2
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          
+            
+              Q
+              
+                2
+              
+            
+            C
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          V
+          Q
+        
+      
+    
+    {\displaystyle E_{\mathrm {stored} }={1 \over 2}CV^{2}={1 \over 2}{Q^{2} \over C}={1 \over 2}{VQ}}
+  
+
+where V is the voltage across the capacitor.
+The maximum energy that can be (safely) stored in a particular capacitor is limited by the maximum electric field that the dielectric can withstand before it bréaks down.
+Therefore, all capacitors made with the same dielectric have about the same maximum energy density (Joules of energy per cubic méter).
+
+
+=== Modél hidrolis ===
+
+As electrical circuitry can be modéled by fluid flow, a capacitor can be modéled as a chamber with a flexible diaphragm separating the input from the output. As can be determined intuitively as well as mathematically, this provides the correct characteristics
+
+The pressure across the unit is proportional to the integral of the current
+A steady state current cannot pass through it but a pulse or alternating current can be transmitted
+the capacitance of units connected in parallel is equivalent to the sum of their individual capacitances
+applying too much pressure, above the maximum bréakdown pressure, will destroy it.
+
+
+== Kapasitor dina sirkuit listrik ==
+
+
+=== Sirkuit kalayan sumber DC ===
+Electrons cannot éasily pass directly across the dielectric from one plate of the capacitor to the other as the dielectric is carefully chosen so that it is a good insulator. When there is a current through a capacitor, electrons accumulate on one plate and electrons are removed from the other plate. This process is commonly called 'charging' the capacitor—even though the capacitor is at all times electrically neutral. In fact, the current through the capacitor results in the separation of electric charge, rather than the accumulation of electric charge. This separation of charge causes an electric field to develop between the plates of the capacitor giving rise to voltage across the plates. This voltage V is directly proportional to the amount of charge separated Q. Since the current I through the capacitor is the rate at which charge Q is forced through the capacitor (dQ/dt), this can be expressed mathematically as:
+
+For circuits with a constant (DC) voltage source, the voltage across the capacitor cannot exceed the voltage of the source. (Unless the circuit includes a switch and an inductor, as in SMPS, or a switch and some diodes, as in a charge pump). Thus, an equilibrium is réached where the voltage across the capacitor is constant and the current through the capacitor is zero. For this réason, it is commonly said that capacitors block DC current.
+
+
+=== Sirkuit kalayan sumber AC ===
+The capacitor current due to an AC voltage or current source reverses direction periodically. That is, the AC current alternately charges the plates in one direction and then the other. With the exception of the instant that the current changes direction, the capacitor current is non-zero at all times during a cycle. For this réason, it is commonly said that capacitors 'pass' AC current. However, at no time do electrons actually cross between the plates, unless the dielectric bréaks down or becomes excessively 'léaky'. In this case it would probably overhéat, malfunction, burn out, or even fail catastrophically possibly léading to an explosion.
+Since the voltage across a capacitor is the integral of the current, as shown above, with sine waves in AC or signal circuits this results in a phase difference of 90 degrees, the current léading the voltage phase angle. It can be shown that the AC voltage across the capacitor is in quadrature with the AC current through the capacitor. That is, the voltage and current are 'out-of-phase' by a quarter cycle. The amplitude of the voltage depends on the amplitude of the current divided by the product of the frequency of the current with the capacitance, C.
+
+
+==== Impedansi ====
+The ratio of the phasor voltage to the phasor current is called the impedance of a capacitor and is given by:
+
+  
+    
+      
+        
+          Z
+          
+            C
+          
+        
+        =
+        
+          
+            
+              −
+              j
+            
+            
+              2
+              π
+              f
+              C
+            
+          
+        
+        =
+        −
+        j
+        
+          X
+          
+            C
+          
+        
+      
+    
+    {\displaystyle Z_{C}={\frac {-j}{2\pi fC}}=-jX_{C}}
+  
+
+where:
+
+  
+    
+      
+        
+          X
+          
+            C
+          
+        
+        =
+        
+          
+            1
+            
+              ω
+              C
+            
+          
+        
+      
+    
+    {\displaystyle X_{C}={\frac {1}{\omega C}}}
+  
+ is the capacitive reactance,
+
+  
+    
+      
+        ω
+        =
+        2
+        π
+        f
+        
+      
+    
+    {\displaystyle \omega =2\pi f\,}
+  
+ is the angular frequency,
+f = input frequency,
+C = capacitance in farads, and
+
+  
+    
+      
+        j
+        =
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle j={\sqrt {-1}}}
+  
+ is the imaginary unit.
+While this relation (between the frequency domain voltage and current associated with a capacitor) is always true, the ratio of the time domain voltage and current amplitudes is equal to 
+  
+    
+      
+        
+          X
+          
+            C
+          
+        
+      
+    
+    {\displaystyle X_{C}}
+  
+ only for sinusoidal (AC) circuits in stéady state.
+See derivation Deriving capacitor impedance.
+Hence, capacitive réactance is the negative imaginary component of impedance. The negative sign indicates that the current léads the voltage by 90° for a sinusoidal signal, as opposed to the inductor, where the current lags the voltage by 90°.
+The impedance is analogous to the resistance of a resistor. The impedance of a capacitor is inversely proportional to the frequency—that is, for very high-frequency alternating currents the réactance approaches zero—so that a capacitor is néarly a short circuit to a very high frequency AC source. Conversely, for very low frequency alternating currents, the réactance incréases without bound so that a capacitor is néarly an open circuit to a very low frequency AC source. This frequency dependent behaviour accounts for most uses of the capacitor (see "Applications", below).
+réactance is so called because the capacitor doesn't dissipate power, but merely stores energy. In electrical circuits, as in mechanics, there are two types of load, resistive and réactive. Resistive loads (analogous to an object sliding on a rough surface) dissipate the energy delivered by the circuit, ultimately by electromagnetic emission (see Black body radiation), while réactive loads (analogous to a spring or frictionless moving object) store this energy, ultimately delivering the energy back to the circuit.
+Also significant is that the impedance is inversely proportional to the capacitance, unlike resistors and inductors for which impedances are linéarly proportional to resistance and inductance respectively. This is why the series and shunt impedance formulae (given below) are the inverse of the resistive case. In series, impedances sum. In parallel, conductances sum.
+
+
+==== Persamaan Laplace (widang s) ====
+When using the Laplace transform in circuit analysis, the capacitive impedance is represented in the s domain by:
+
+  
+    
+      
+        Z
+        (
+        s
+        )
+        =
+        
+          
+            1
+            
+              s
+              C
+            
+          
+        
+      
+    
+    {\displaystyle Z(s)={\frac {1}{sC}}}
+  
+
+where C is the capacitance, and s (= σ+jω) is the complex frequency.
+
+
+=== Kapasitor jeung arus nu pindah ===
+The physicist James Clerk Maxwell invented the concept of displacement current, dD/dt, to maké Ampere's law consistent with conservation of charge in cases where charge is accumulating as in a capacitor. He interpreted this as a réal motion of charges, even in vacuum, where he supposed that it corresponded to motion of dipole charges in the ether. Although this interpretation has been abandoned, Maxwell's correction to Ampere's law remains valid.
+
+
+=== Jaringan kapasitor ===
+
+
+==== Susunan séri jeung paralél ====
+
+Capacitors in a parallel configuration éach have the same potential difference (voltage). Their total capacitance (Ceq) is given by:
+
+  
+    
+      
+        
+          C
+          
+            e
+            q
+          
+        
+        =
+        
+          C
+          
+            1
+          
+        
+        +
+        
+          C
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          C
+          
+            n
+          
+        
+        
+      
+    
+    {\displaystyle C_{eq}=C_{1}+C_{2}+\cdots +C_{n}\,}
+  
+
+The réason for putting capacitors in parallel is to incréase the total amount of charge stored. In other words, incréasing the capacitance also incréases the amount of energy that can be stored. Its expression is:
+
+  
+    
+      
+        
+          E
+          
+            
+              s
+              t
+              o
+              r
+              e
+              d
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        C
+        
+          V
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle E_{\mathrm {stored} }={1 \over 2}CV^{2}.}
+  
+
+The current through capacitors in series stays the same, but the voltage across éach capacitor can be different. The sum of the potential differences (voltage) is equal to the total voltage. Their total capacitance is given by:
+
+  
+    
+      
+        
+          
+            1
+            
+              C
+              
+                e
+                q
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              C
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              C
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              C
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{C_{eq}}}={\frac {1}{C_{1}}}+{\frac {1}{C_{2}}}+\cdots +{\frac {1}{C_{n}}}}
+  
+
+In parallel the effective aréa of the combined capacitor has incréased, incréasing the overall capacitance. While in series, the distance between the plates has effectively been incréased, reducing the overall capacitance.
+In practice capacitors will be placed in series as a méans of economically obtaining very high voltage capacitors, for example for smoothing ripples in a high voltage power supply. Three "600 volt maximum" capacitors in series, will incréase their overall working voltage to 1800 volts. This is of course offset by the capacitance obtained being only one third of the value of the capacitors used. This can be countered by connecting 3 of these series set-ups in parallel, resulting in a 3x3 matrix of capacitors with the same overall capacitance as an individual capacitor but operable under three times the voltage. In this application, a large resistor would be connected across éach capacitor to ensure that the total voltage is divided equally across éach capacitor and also to discharge the capacitors for safety when the equipment is not in use.
+Another application is for use of polarized capacitors in alternating current circuits; the capacitors are connected in series, in reverse polarity, so that at any given time one of the capacitors is not conducting.
+
+
+=== Dualitas kapasitor/induktor ===
+In mathematical terms, the idéal capacitor can be considered as an inverse of the idéal inductor, because the voltage-current equations of the two devices can be transformed into one another by exchanging the voltage and current terms. Just as two or more inductors can be magnetically coupled to maké a transformer, two or more charged conductors can be electrostatically coupled to maké a capacitor. The mutual capacitance of two conductors is defined as the current that flows in one when the voltage across the other changes by unit voltage in unit time.
+
+
+== Panerapan ==
+
+Capacitors have various uses in electronic and electrical systems.
+
+
+=== Panyimpenan énérgi ===
+A capacitor can store electric energy when disconnected from its charging circuit, so it can be used like a temporary battery. Capacitors are commonly used in electronic devices  to maintain power supply while batteries are being changed. (This prevents  loss of information in volatile memory.)
+Capacitors are used in power supplies where they smooth the output of a full or half wave rectifier. They can also be used in charge pump circuits as the energy storage element in the generation of higher voltages than the input voltage.
+Capacitors are connected in parallel with the power circuits of most electronic devices and larger systems (such as factories) to shunt away and concéal current fluctuations from the primary power source to provide a "clean" power supply for signal or control circuits. Audio equipment, for example, uses several capacitors in this way, to shunt away power line hum before it gets into the signal circuitry. The capacitors act as a local reserve for the DC power source, and bypass AC currents from the power supply. This is used in car audio applications, when a stiffening capacitor compensates for the inductance and resistance of the léads to the lead-acid car battery.
+
+
+==== Koréksi faktor daya ====
+Capacitors are used in power factor correction. Such capacitors often come as three capacitors connected as a three phase load. Usually, the values of these capacitors are given not in farads but rather as a reactive power in volt-amperes réactive (VAr). The purpose is to counteract inductive loading from electric motors and fluorescent lighting in order to maké the load appéar to be mostly resistive.
+
+
+=== Filter ===
+
+
+==== Kopling sinyal ====
+Because capacitors pass AC but block DC signals (when charged up to the applied dc voltage), they are often used to separate the AC and DC components of a signal. This method is known as AC coupling. (Sometimes transformers are used for the same effect.) Here, a large value of capacitance, whose value need not be accurately controlled, but whose reactance is small at the signal frequency, is employed. Capacitors for this purpose designed to be fitted through a metal panel are called feed-through capacitors, and have a slightly different schematic symbol.
+
+
+==== Filter noise, motor starter, jeung snubber ====
+When an inductive circuit is opened, the current through the inductance collapses quickly, créating a large voltage across the open circuit of the switch or relay. If the inductance is large enough, the energy will generate a spark, causing the contact points to oxidize, deteriorate, or sometimes weld together, or destroying a solid-state switch. A snubber capacitor across the newly opened circuit créates a path for this impulse to bypass the contact points, thereby preserving their life; these were commonly found in contact breaker ignition systems, for instance. Similarly, in smaller scale circuits, the spark may not be enough to damage the switch but will still radiate undesirable radio frequency interference (RFI), which a filter capacitor absorbs. Snubber capacitors are usually employed with a low-value resistor in series, to dissipate energy and minimize RFI. Such resistor-capacitor combinations are available in a single package.
+In an inverse fashion, to initiate current quickly through an inductive circuit requires a gréater voltage than required to maintain it; in uses such as large motors, this can cause undesirable startup characteristics, and a motor starting capacitor is used to store enough energy to give the current the initial push required to start the motor up.
+Capacitors are also used in parallel to interrupt units of a high-voltage circuit breaker in order to equally distribute the voltage between these units. In this case they are called grading capacitors.
+In schematic diagrams, a capacitor used primarily for DC charge storage is often drawn vertically in circuit diagrams with the lower, more negative, plate drawn as an arc. The straight plate indicates the positive terminal of the device, if it is polarized (see electrolytic capacitor).
+
+
+=== Pamrosésan sinyal ===
+The energy stored in a capacitor can be used to represent information, either in binary form, as in DRAMs, or in analogue form, as in analog sampled filters and CCDs. Capacitors can be used in analog circuits as components of integrators or more complex filters and in negative feedback loop stabilization. Signal processing circuits also use capacitors to integrate a current signal.
+
+
+==== Sirkuit tala ====
+Capacitors and inductors are applied together in tuned circuits to select information in particular frequency bands. For example, radio receivers rely on variable capacitors to tune the station frequency. Spéakers use passive analog crossovers, and analog equalizers use capacitors to select different audio bands.
+In a tuned circuit such as a radio receiver, the frequency selected is a function of the inductance (L) and the capacitance (C) in series, and is given by:
+
+  
+    
+      
+        f
+        =
+        
+          
+            1
+            
+              2
+              π
+              
+                
+                  L
+                  C
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle f={\frac {1}{2\pi {\sqrt {LC}}}}}
+  
+
+This is the frequency at which resonance occurs in an RLC series circuit.
+
+
+=== Panerapan séjén ===
+
+
+==== Panerapan sénsor ====
+Most capacitors are designed to maintain a fixed physical structure.
+However, various things can change the structure of the capacitor—the resulting change in capacitance can be used to sense those things.
+Changing the dielectric:
+the effects of varying the physical and/or electrical characteristics of the dielectric can also be of use. Capacitors with an exposed and porous dielectric can be used to méasure humidity in air.
+Changing the distance between the plates:
+Capacitors are used to accurately méasure the fuel level in airplanes. Capacitors with a flexible plate can be used to méasure strain or pressure. Capacitors are used as the sensor in condenser microphones, where one plate is moved by air pressure, relative to the fixed position of the other plate.
+Some accelerometers use MEMS capacitors etched on a chip to méasure the magnitude and direction of the acceleration vector. They are used to detect changes in acceleration, eg. as tilt sensors or to detect free fall, as sensors triggering airbag deployment, and in many other applications.
+Also some fingerprint sensors.
+Changing the effective aréa of the plates:
+capacitive touch switches
+[2]
+[3] Archived 2007-08-10 di Wayback Machine
+[4].
+
+
+==== Pulsed power and weapons applications ====
+Groups of large, specially constructed, low-inductance high-voltage capacitors (capacitor banks) are used to supply huge pulses of current for many pulsed power applications. These include electromagnetic forming, Marx generator , pulsed lasers (especially TEA lasers), pulse forming networks, radar, fusion research, and particle accelerators.
+Large capacitor banks are used as energy sources for the exploding-bridgewire detonators or slapper detonators in nuclear weapons and other speciality wéapons. Experimental work is under way using banks of capacitors as power sources for electromagnetic armour and electromagnetic railguns or coilguns.
+Tempo ogé Explosively pumped flux compression generator.
+
+
+== Bahaya jeung kaamanan kapasitor ==
+Capacitors may retain a charge long after power is removed from a circuit; this charge can cause shocks (sometimes fatal) or damage to connected equipment. For example, even a seemingly innocuous device such as a disposable camera flash unit powered by a 1.5 volt AA battery contains a capacitor which may be charged to over 300 volts. This is éasily capable of delivering an extremely painful, and possibly lethal shock.
+Many capacitors have low equivalent series resistance (ESR), so can deliver large currents into short circuits, and this can be dangerous. Care must be taken to ensure that any large or high-voltage capacitor is properly discharged before servicing the containing equipment. For safety purposes, all large capacitors should be discharged before handling. For board-level capacitors, this is done by placing a bleeder resistor across the terminals, whose resistance is large enough that the léakage current will not affect the circuit, but small enough to discharge the capacitor shortly after power is removed. High-voltage capacitors should be stored with the terminals shorted, since temporarily discharged capacitors can develop potentially dangerous voltages when the terminals are left open-circuited.
+Large oil-filled old capacitors must be disposed of properly as some contain polychlorinated biphenyls (PCBs). It is known that waste PCBs can léak into groundwater under landfills. If consumed by drinking contaminated water, PCBs are carcinogenic, even in very tiny amounts. If the capacitor is physically large it is more likely to be dangerous and may require precautions in addition to those described above. New electrical components are no longer produced with PCBs. ("PCB" in electronics usually méans printed circuit board, but the above usage is an exception.) Capacitors containing PCB were labelled as containing "Askarel" and several other trade names.
+
+
+=== Bahya alatan kapasitor tegangan luhur ===
+Above and beyond usual hazards associated with working with high voltage, high energy circuits, there are a number of  dangers that are specific to high voltage capacitors. High voltage capacitors may catastrophically fail when subjected to voltages or currents beyond their rating, or as they réach their normal end of life. Dielectric or metal interconnection failures may créate arcing within oil-filled units that vaporizes dielectric fluid, resulting in case bulging, rupture, or even an explosion that disperses flammable oil, starts fires, and damages néarby equipment. Rigid cased cylindrical glass or plastic cases are more prone to explosive rupture than rectangular cases due to an inability to éasily expand under pressure. Capacitors used in RF or sustained high current applications can overhéat, especially in the center of the capacitor rolls. The trapped héat may cause rapid interior héating and destruction, even though the outer case remains relatively cool. Capacitors used within high energy capacitor banks can violently explode when a fault in one capacitor causes sudden dumping of energy stored in the rest of the bank into the failing unit. And, high voltage vacuum capacitors can generate soft X-rays even during normal operation. Proper containment, fusing, and preventative maintenance can help to minimize these hazards.
+
+
+== Sajarah ==
+
+In October 1745, Ewald Georg von Kleist of Pomerania invented the first recorded capacitor: a glass jar coated inside and out with metal. The inner coating was connected to a rod that passed through the lid and ended in a metal sphere. By having this thin layer of glass insulation (a dielectric) between two large, closely spaced plates, von Kleist found the energy density could be incréased dramatically compared with the situation with no insulator.
+In January 1746, before Kleist's discovery became widely known, a Dutch physicist Pieter van Musschenbroek independently invented a very similar capacitor. It was named the Leyden jar, after the University of Leyden where van Musschenbroek worked. Daniel Gralath was the first to combine several jars in parallel into a "battery" to incréase the total possible stored charge.
+The éarliest unit of capacitance was the 'jar', equivalent to about 1 nF.
+éarly capacitors were also known as condensers, a term that is still occasionally used today. It was coined by Volta in 1782 (derived from the Italian condensatore), with reference to the device's ability to store a higher density of electric charge than a normal isolated conductor. Most non-English languages still use a word derived from "condensatore", like the French "condensateur", the German or Polish "Kondensator", or the Spanish "condensador".
+
+
+== Tempo ogé ==
+
+Kapasitansi
+Kapasitor plague: gagalna kapasitor dina motherboard komputer
+Rancangan sirkuit
+Kalistrikan
+Kapasitor éléktrolit
+Éléktromagnétisme
+Éléktronika
+Leyden jar
+Stiffening capacitor
+Superkapasitor
+Electric displacement field
+
+
+== Référénsi ==
+
+
+== Tumbu luar ==
+Wonko Labs - High Voltage Capacitor Bank Archived 2007-03-01 di Wayback Machine
+Practical Capacitors and other Electronics for Robotics
+Capacitance and Inductance Archived 2007-03-07 di Wayback Machine - a chapter from an online textbook
+Caltech: Practical capacitor properties Archived 2006-07-14 di Wayback Machine
+FaradNet: The Capacitor Resource Archived 2006-07-01 di Wayback Machine
+BadCaps.net: how shoddily-made capacitors cause computer faults
+MAXFARAD Capacitors Archived 2006-05-03 di Wayback Machine
+NessCap, maker of 5000 farad capacitors
+General Atomics Electronic Systems, inc. High Voltage Pulsed Power Capacitors and Systems. Archived 2006-07-06 di Wayback Machine
+Skeleton NanoLab, Research & Development of advanced capacitors Archived 2017-07-10 di Wayback Machine
+Howstuffworks.com: How Capacitors Work
+CapSite 2006: Introduction to Capacitors Archived 2010-02-04 di Wayback Machine
+AC circuits
+Capacitor Tutorial Archived 2006-06-18 di Wayback Machine - Includes how to réad capacitor temperature codes
+Trade names for PCB in electrical equipment

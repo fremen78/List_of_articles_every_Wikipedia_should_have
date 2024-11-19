@@ -1,0 +1,774 @@
+Rezistor je pasivní elektrotechnická součástka projevující se v elektrickém obvodu v ideálním případě jedinou vlastností – elektrickým odporem (jednotka Ohm, značka Ω). Důvodem pro zařazení rezistoru do obvodu je obvykle snížení velikosti elektrického proudu nebo získání určitého úbytku napětí. Rezistory se také mohou používat jako topné články, testovací zátěže pro generátory apod. Rezistory rozdělujeme na pevné a proměnné. Pevné rezistory mají pevně danou hodnotu odporu, která se mírně mění pouze v závislosti na teplotě, procházejícím proudem a životnosti rezistoru. U proměnných rezistorů můžeme měnit jeho fyzikální veličinu (odpor) v určitém rozsahu, ty se používají k plynulému upravení činnosti dalších částí obvodu – potenciometr nebo odporový trimr (např. nastavení hlasitosti, stmívání svítidel, nastavení teploty apod.), nebo jako senzory teploty (termistor), napětí (varistor), světla (fotorezistor), síly nebo chemických procesů.
+Tato součástka bývá často nesprávně označována jako odpor, což ale může vést k nejednoznačnostem kvůli možné záměně se stejnojmennou veličinou (tj. s elektrickým odporem). Pro odlišení se začal používat pojem odporník (dnes velmi zastaralý) a později rezistor. Dnes se pojem odporník používá pro název elektrického přístroje v silové a výkonové elektrotechnice (např. „rozjezdový odporník“ u vozidel elektrické trakce), obvykle se jedná o konstrukční celky poměrně velkých ztrátových výkonů (až megawatty).
+
+
+== Elektrotechnická značka a notace ==
+
+Schematická značka rezistoru není celosvětově sjednocena. Dnes se používají dva standardy značení a to IEC 60617 a ANSI Y32/ IEEE 315 (používá se hlavně v USA a Japonsku). Dříve se používaly také standardy DIN 40900 (v Německu) a AS 1102 (v Austrálii).
+
+
+=== Notace ===
+Každý rezistor má specifickou hodnotu odporu vyjádřenou v ohmech (Ω). Tuto hodnotu lze zapsat dvěma způsoby a to evropskou notací a americkou notací. Občas se také používá notace pro zápis tolerance a teplotního koeficientu rezistorů.
+
+V americké notaci se píše hodnota odporu se znakem ohmu (Ω) na konci. Také se používají předpony, takže 1 000 Ω se zapisuje jako 1 kΩ, atd. (viz tabulka). Všimněte si, že desetinná čárka se zde píše jako tečka, nikoliv čárka. U ohmů se používají standardizované SI předpony. V tabulce jsou předpony, které se většinou používají (normálně nikdy nenarazíte na odpor větší než v TΩ a menší než v nΩ, a třeba deciohmy se nepoužívají).
+V Evropě se používá standard IEC 60062. Jeho předchůdce je britský standard BS 1852. Tento standard určuje nejenom způsob, jakým zapisovat hodnoty rezistorů. Určuje i zápis jejich tolerance. Místo desetinné čárky se zde používá písmeno, které zároveň určuje násobek čísla. Například 6k8 je 6.8 kΩ (6 800 Ω). Viz tabulka níže:
+
+Z tabulky lze zjistit, že až na R se všechny náhrady desetinných čárek shodují se značkou násobku u SI prefixů. Samozřejmě je možné použít i ostatní předpony pro extrémní hodnoty (např. 3G3 – 3.3 GΩ). Dříve se tento standard používal hlavně proto, že tečka oddělující desetinná místa měla tendenci zmizet při kopírování schémat elektrických obvodů
+Žádný rezistor není ideální a nemá přesný odpor, proto norma BS1852 zahrnuje také písmena označující toleranci odporu. Takže např. 10K odpor s tolerancí 10 % může mít hodnotu odporu někde mezi 9 a 11kΩ. Nicméně toto dodatečné označení se příliš nepoužívá. Písmena používaná pro zápis tolerance naleznete níže v tabulce:
+
+Poznámka: V době rozšíření drátových rezistorů s tolerancí 5 % se rozšířilo i použití J jako desetinného symbolu. Na starším rezistoru s tolerancí 10 % bylo napsáno např. 2,7/K, na novějším pak 2J7. Mnoho lidí ale tento způsob zápisu používá dodnes, místo R. V návodech se pak lze setkat i s "perlami", jako 4J7/1%.
+
+
+== Ideální a reálný rezistor ==
+Ideální rezistor má jediný parametr, tedy svůj odpor, a tento parametr není závislý na jakýchkoliv vnějších vlivech. Podle Ohmova zákona se tedy proud protékající rezistorem s odporem R a přiloženým napětím U rovná:
+
+  
+    
+      
+        I
+        =
+        
+          
+            U
+            R
+          
+        
+      
+    
+    {\displaystyle I={\frac {U}{R}}}
+  
+
+nebo naopak napěťový úbytek vzniklý na témže rezistoru, kterým protéká proud I:
+
+  
+    
+      
+        U
+        =
+        
+          I
+        
+        ⋅
+        
+          R
+        
+      
+    
+    {\displaystyle U={I}\cdot {R}}
+  
+
+Výkon daný vztahem:
+
+  
+    
+      
+        P
+        =
+        
+          U
+        
+        ⋅
+        
+          I
+        
+        =
+        
+          
+            I
+          
+          
+            2
+          
+        
+        ⋅
+        
+          R
+        
+        =
+        
+          
+            
+              U
+              
+                2
+              
+            
+            R
+          
+        
+      
+    
+    {\displaystyle P={U}\cdot {I}={I}^{2}\cdot {R}={\frac {U^{2}}{R}}}
+  
+
+rezistor promění v teplo, to znamená, že se procházejícím proudem ohřívá. Není-li rezistor používán jako topné odporové těleso, jedná se o ztrátové teplo.
+
+Reálný rezistor je ovšem vyroben z reálného materiálu vykazujícího elektrický odpor a má určitou geometrii. Z toho vyplývá:
+Hodnota jeho odporu je závislá na teplotě.
+Dokáže v teplo proměnit jen určitý výkon, při větším zatížení, než na které je určen, se zničí přehřátím.
+Hodnota bývá odlišná od jmenovité, uvedené na pouzdře (při výrobě dochází k nepřesnosti a rozptylu parametrů)
+Má omezenou elektrickou pevnost, při aplikaci vyššího napětí může dojít k průrazu nebo poškození.
+Mimo reálný odpor vykazuje také sériovou indukčnost a paralelní kapacitu (viz náhradní schéma). Tyto parazitní veličiny se znatelně projevují až při vyšších frekvencích procházejícího proudu.
+Při velmi vysokých frekvencích na něm navíc dochází k tzv. skin efektu.
+Rezistor vykazuje elektrický šum.
+Podle materiálu použitého k výrobě je hodnota odporu závislá i na přiloženém napětí
+
+
+=== Parametry udávané u rezistorů ===
+odpor v ohmech. Hodnoty běžně vyráběných rezistorů jsou odvozeny z řad vyvolených čísel E12, E24 nebo E96. Ty se násobí mocninami desítky (... 0,1; 1; 10; 100; ...). Nejpoužívanější je řada E24, která obsahuje následujících 24 hodnot:
+1,0; 1,1; 1,2; 1,3; 1,5; 1,6; 1,8; 2,0; 2,2; 2,4; 2,7; 3,0; 3,3; 3,6; 3,9; 4,3; 4,7; 5,1; 5,6; 6,2; 6,8; 7,5; 8,2; 9,1
+Běžné hodnoty se pohybují od 1 Ω do 10 MΩ, neobvyklé ale nejsou ani desetiny a setiny ohmu.
+Tolerance hodnoty odporu v procentech
+Typické hodnoty: 5 %, 1 % a 0,1 %. Ostatní tolerance se již téměř nevyrábějí.
+Jmenovitý výkon (power rating) – maximální elektrický příkon, který může rezistor trvale spotřebovávat (měnit na tepelný výkon).
+Nejčastější hodnota u vývodového rezistoru: 0,6 W
+Typický rozsah u SMD rezistorů: 30–125 mW
+Výrobci mívají v katalogových listech graf poklesu výkonu podle okolní teploty (power derating curve)
+Teplotní koeficient odporu, také teplotní součinitel elektrického odporu (temperature coefficient of resistance; TCR) – Výrobcem garantovaná maximální závislost odporu na teplotě
+Přesné rezistory mívají ±10 až 50 ppm/K, dají se sehnat i 2 a méně.
+Běžně používané rezistory mívají ±50 ppm/K
+Výkonové a nejlevnější běžná provedení mají i nad ±200 ppm/K
+ppm jsou "milionová procenta" ppm/K = ppm/°C
+jmenovité napětí (rated voltage) – maximální napětí ve voltech
+Maximální napětí mezi vývody, na které je dané provedení rezistoru konstruováno. Ve stejném provedení ale mohou být rezistory od nulového, až po megaohmy. Toto napětí je použitelné jen pro rezistory, které mají dostatečně velký odpor na to, aby při něm nebyly výkonově, nebo proudově přetížené.
+Toto napětí bývá zároveň i izolační napětí vůči okolí.
+Typické hodnoty: 150 a 300 V. Malá SMD pouzdra mají méně, nejmenší pod 30 V.
+Další hodnoty, které nebývají uvedeny u všech rezistorů:
+střední doba bezporuchového chodu (mean time before failure; MTBF) – také střední doba mezi poruchami (mean time between failures), parazitní indukčnost, parazitní kapacita, proudový šum, graf impulzní zatížitelnosti, graf statistického rozložení hodnot a další grafy. Katalogové údaje mohou mít jednu, nebo i několik desítek stránek.
+
+
+=== Šum rezistorů ===
+
+Rezistory, jako všechny součástky, produkují šum. Hlavní vlastností šumu je náhodnost a z ní plynoucí široké kmitočtové spektrum. Proto se úroveň šumu obvykle uvádí formou spektrální hustoty. Rezistor produkuje šumový výkon, ale ve většině aplikací potřebujeme proud, nebo napětí. Protože ve vzorci pro výkon tyto veličiny vystupují ve 2. mocnině, je napětí, nebo proud, úměrný odmocnině výkonu. Výsledkem jsou tyto obvyklé jednotky spektrální hustoty (spectral density) šumu:
+Efektivní šumové napětí na odmocninu z Hz: 
+  
+    
+      
+        n
+        V
+        
+          /
+        
+        
+          
+            
+              H
+              z
+            
+          
+        
+      
+    
+    {\displaystyle nV/{\sqrt {\mathrm {Hz} }}}
+  
+
+Efektivní šumový proud na odmocninu z Hz: 
+  
+    
+      
+        p
+        A
+        
+          /
+        
+        
+          
+            
+              H
+              z
+            
+          
+        
+      
+    
+    {\displaystyle pA/{\sqrt {\mathrm {Hz} }}}
+  
+
+Některé šumy jsou úměrné procházejícímu proudu a tedy i napětí na rezistoru. Jejich úroveň se obvykle vyjadřuje jako poměr šumu vůči užitečné veličině. Obvyklé jednotky:
+nV/V, nebo výkonové dB, tedy 
+  
+    
+      
+        20
+        ∗
+        log
+        ⁡
+        
+          
+            
+              U
+              n
+            
+            U
+          
+        
+      
+    
+    {\displaystyle 20*\log {\frac {Un}{U}}}
+  
+, kde 0 dB = 1 µV/V
+Základní druhy šumů produkovaných rezistory jsou tyto:
+
+Tepelný šum (Johnsonův, Johnsonův–Nyquistův, Nyquistův) – tepelný šum je způsobovaný stochastickým charakterem pohybu elektronů. Tomuto šumu se nelze nijak vyhnout, lze ho pouze minimalizovat vhodnou volbou hodnoty. Závisí na velikosti odporu a teplotě:
+
+  
+    
+      
+        
+          
+            
+              
+                U
+                
+                  n
+                
+                
+                  2
+                
+              
+              ¯
+            
+          
+        
+        =
+        
+          
+            4
+            
+              k
+              
+                B
+              
+            
+            T
+            R
+          
+        
+      
+    
+    {\displaystyle {\sqrt {\overline {U_{n}^{2}}}}={\sqrt {4k_{\text{B}}TR}}}
+  
+
+Kde kB je Boltzmanova konstanta v J/K, T je absolutní teplota v K a R je odpor v Ω.
+Například rezistor 1 kΩ při teplotě 300 K (cca 27 °C) produkuje šum:
+
+  
+    
+      
+        
+          
+            
+              
+                U
+                
+                  n
+                
+                
+                  2
+                
+              
+              ¯
+            
+          
+        
+        =
+        
+          
+            4
+            ⋅
+            1.38
+            ⋅
+            
+              10
+              
+                −
+                23
+              
+            
+             
+            
+              J
+            
+            
+              /
+            
+            
+              K
+            
+            ⋅
+            300
+             
+            
+              K
+            
+            ⋅
+            1
+             
+            
+              k
+            
+            Ω
+          
+        
+        =
+        4.07
+         
+        
+          n
+          V
+        
+        
+          /
+        
+        
+          
+            
+              H
+              z
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\sqrt {\overline {U_{n}^{2}}}}={\sqrt {4\cdot 1.38\cdot 10^{-23}~\mathrm {J} /\mathrm {K} \cdot 300~\mathrm {K} \cdot 1~\mathrm {k} \Omega }}=4.07~\mathrm {nV} /{\sqrt {\mathrm {Hz} }}.}
+  
+
+Při šířce pásma 10 kHz tak dostaneme 400 nV RMS, případně po zvětšení odporu na 100 kΩ vyjdou 4 µV.
+Proudový šum (current noise) – šum produkovaný elektrony v souvislosti s procházejícím proudem. Jeho hodnota závisí na proudu a liší se u různých typů rezistorů.
+Pokud máme např. odporový dělič ze stejných rezistorů, majících 1 µV/V, který je napájen napětím 10 V, na jeho výstupu dostaneme šumové napětí 5 µV.
+Impulzní šum (anglicky burst noise, také impulse noise, bi-stable noise, random telegraph noise RTN, random telegraph signal RTS nebo popcorn noise) – šum produkovaný náhodným spojováním a rozpojováním zrn odporového materiálu. Má přibližně obdélníkový, nebo schodovitý průběh a může připomínat zvuk výroby popcornu. Charakteristický pro uhlíkové rezistory, v menší míře produkován i metaloxidovými.
+
+
+=== Konstrukce rezistoru ===
+
+Rezistory mohou být konstruovány různým způsobem:
+
+Drátové – nejstarší typ, jehož základem je vodič s požadovanou hodnotou odporu, které lze dosáhnout použitím látky s určitou rezistivitou, určitou délkou a průřezem vodiče. Kvůli úspoře místa se dlouhý drát obvykle navíjí kolem izolačního tělíska, zpravidla keramického. Touto technologií se již vyrábí zanedbatelné procento rezistorů, zpravidla malé hodnoty a velké výkony.
+Vrstvové – Vyrábí se nanesením vodivé vrstvy na izolační tělísko a vyfrézováním drážky pro zvýšení odporu. Tato technologie je v současnosti nejpoužívanější. Dále je dělíme dle použité vodivé hmoty:
+Uhlíkové – Nejstarší typ. Vrstva je uhlíková. Snadno se dosahuje vysokých hodnot, špatně nízkých. Vysoký šum, špatná dlouhodobá stabilita, nízká pracovní teplota. Dnes se obvykle považují za zastaralé.
+Metalizované – Vrstva je vytvořena vakuovým napařením kovu. Mnohem lepší parametry než uhlíkové.
+Metaloxidové – Vrstva je vytvořena z oxidu kovu. Vyšší stabilita, tepelná odolnost a impulzní zatížitelnost než metalizované. Možnost dosažení velmi vysokých hodnot (desítky GΩ v pouzdře 0805).
+Hmotové – Celé těleso rezistoru je z odporového materiálu. Nejvyšší impulzní zatížitelnost. Vysoká cena, speciální aplikace, např. marxův generátor. Speciálním případem hmotových rezistorů jsou vodní. Mezi hmotové rezistory patří i termistory a varistory.
+Pro velké výkony existují speciální typy rezistorů, které mají často velké a účinné chladiče, aby dokázaly velký tepelný výkon odvést do okolního prostředí. Takové rezistory se používají například u elektrických lokomotiv při brzdění vlaku. Jeho kinetická energie se tak promění v teplo.
+Jiným příkladem jsou tzv. vodní odpory, které jsou k vidění například u kolotočů, kterým zajišťují plynulý rozjezd. U těchto rezistorů proud prochází vodou s přídavkem malého množství kyseliny nebo soli. Hodnota odporu se mění velikostí zasunutí kovových desek do lázně.
+Průřez vodiče je závislý na předpokládaném zatížení, aby teplo vznikající v rezistoru průchodem elektrického proudu nezpůsobilo roztavení vodiče. Za materiál rezistoru je vhodné vzít látku s nízkým teplotním součinitelem odporu, aby odpor rezistoru nezáležel příliš na teplotě (manganin, konstantan). U některých typů odporů se ale naopak jejich teplotní závislosti využívá (tzv. termistory).
+
+
+=== Druhy rezistorů ===
+
+Rezistory se rozlišují podle konstrukce, podle velikosti odporu a dovoleného zatížení. Rezistory, jejichž odpor lze měnit, se nazývají reostaty, potenciometry nebo trimry.
+Pro povrchovou montáž se vyrábí rezistory v miniaturním provedení ve tvaru hranolku bez vývodů označované jako SMD.
+
+
+=== Využití rezistorů ===
+Rezistory jsou nejpoužívanějšími slaboproudými elektronickými součástkami, jejich základní funkcí je omezení protékajícího proudu nebo získání napěťového úbytku.
+Pro měření proudu (bočník)
+Do série zapojený malý odpor může sloužit i jako ochrana proti zkratu v obvodech s vysokou impedancí (například při přenosu signálu po sériové lince)
+Pro vytápění (topná tělesa)
+Měření výkonu u elektrodynamických brzd
+Pro regulaci výkonu (viz odporová regulace výkonu a rozjezdový odporník)
+Pro tlumení kmitavých obvodů
+Jako nabíjecí odpor (pro omezení proudového nárazu při nabíjení nebo vybíjení kondenzátorů)
+Zatížení signálových linek pro zvýšení odolnosti proti rušení
+Zakončení signálových linek proti odrazům
+
+
+== Preferované hodnoty ==
+Vzhledem k obrovskému rozsahu používaných hodnot (jednotky mΩ až stovky GΩ) je nepraktické vyrábět všechny hodnoty. Všechny rezistory se vyrábí s určitou tolerancí a využívá se tzv. vyvolených čísel. Existuje několik řad, které odpovídají dané toleranci:
+
+V tabulce uvedené kombinace řad a tolerancí byly takto původně navrženy, ale v současné době se nejvíce vyrábějí hodnoty v E24 s tolerancí 1 a 5 %. Ve vyšších řadách se obvykle vyrábějí rezistory s tolerancí 0,1 %, ale jsou mnohem dražší. Ostatní tolerance jsou velmi málo dostupné.
+Potenciometry a rezistory s hodnotou nad 100 MΩ se zpravidla vyrábějí v řadách 1-2-5.
+Více informací a konkrétní hodnoty naleznete v článku Vyvolené číslo.
+
+
+== Značení rezistorů ==
+
+Hodnota vývodových rezistorů se dnes často označuje barevným proužkovým kódem, který je na miniaturních součástkách lépe čitelný, než nápis. U SMD rezistorů ale proužkový kód použít nelze a proto se používá číselné značení. Zpočátku se používaly i na SMD pouzdrech MELF a MINIMELF, ale čitelnost na MINIMELF byla velmi špatná. Tato pouzdra se již téměř nepoužívají. Momentálně se u rezistorů nejvíce používají tři následující systémy značení.
+
+
+=== Barevný proužkový kód ===
+Většina dnešních rezistorů má čtyři nebo pět pruhů (vyrábějí se ale i rezistory s 6. pruhy). Kód se čte zleva doprava a na levé straně jsou soustředěny první tři nebo čtyři proužky. První cifra není nikdy nula.
+pruh A je první platná číslice hodnoty odporu v ohmech
+pruh B je druhá platná číslice hodnoty odporu
+pruh C desítkový násobitel
+pruh D pokud je uveden, znamená toleranci (pokud chybí, je tolerance 20%)
+Nejběžnější rezistory mají pět proužků, první tři proužky určují hodnotu, čtvrtý pruh se používá pro násobitel a pátý pro toleranci. U některých odporů může být zcela vpravo ještě šestý pruh definující tepelný koeficient odporu, tento pruh je výrazně širší. Poslední pruh bývá dále od ostatních.
+V USA se může používat ještě jiný způsob podle vojenské normy MIL-STD-199. V tomto případě se pátý pruh používá pro spolehlivost (procento selhání).
+
+Příklad: žlutá fialová červená hnědá znamená 4 700 ohmů, 1% tolerance.
+
+Rezistory s nulovým odporem, které se používají hlavně v automatizované výrobě, se značí jediným černým pruhem, který je uprostřed.
+Podobný kód se používá i pro NTC termistory, jejichž pouzdro je ploché s vývody na jednu stranu. První pruh je nejblíž k vývodům.
+Mnemotechnická pomůcka pro zapamatování pořadí barev: Čenda Honí Rychlou Oteklou Žížalu Za Malou Farmou Špatným Bičem Zlomenou Stranou – Žabař
+
+
+=== Tří-číselný a čtyř-číselný systém ===
+
+Tří-číslicový systém je velmi jednoduchý: První dvě čísla označují základní hodnotu odporu a třetí číslo udává počet nul. Čtyř-číslicový je velmi podobný: Základní hodnotu udávají tři čísla a poslední opět říká kolik nul musíme k základní hodnotě přidat, viz obrázky.
+Původně se 3 čísla používaly pro toleranci 10 a 5 % a 4 čísla pro 1 %. V současné době tento zvyk není 100% dodržován. Většina SMD rezistorů má nezávisle na počtu čísel 1 % a hodnotu z E24. Nejlevnější 5% rezistory jsou často neoznačené, mají tedy jen černou plošku.
+Hodnota prvních dvou SMD rezistorů vpravo na obrázku je 220 Ω. Samozřejmě existují i speciální případy kdy si  nevystačíme pouze s čísly. Viz níže v tabulce:
+
+Z tabulky je patrné, že písmeno R zastává desetinnou čárku a 0Ω se píše jednoduše jako 0.
+
+
+==== Další používané znaky ====
+SMD rezistory s velmi malým odporem mohou být podtrženy čárou. Takže rezistor označený 475 bude mít odpor 0,475 Ω a rezistor označený 033 odpor 0,033 Ω neboli 33 mΩ (miliohmů). Toto podtržení se používá v případech, kdy není místo na znak R který značí desetinnou čárku (R033 = 033).
+Při extrémně malých odporech se používá místo R písmeno M a značí nejen desetinnou čárku, ale také to že hodnota je uvedena v mΩ. Například 4M7 se rovná 4,7 mΩ.
+
+
+=== Systém EIA-96 ===
+S nástupem menších a přesnějších rezistorů bylo potřeba vytvořit kompaktnější značení rezistorů a proto vznikl systém EIA-96. Je založený na řadě E-96 a proto takto označené rezistory mají přesnost odporu 1 % nebo lepší. Skládá se ze tří znaků. První dva jsou čísla představují zakódovanou číselnou hodnotu, nikoliv číslo samotné. Poslední znak je vždy písmeno a představuje násobitele daného čísla (nikoliv však prvních dvou čísel). Dle tabulek níže obrázek napravo označuje rezistor s odporem 133Ω (nikoliv 13Ω). Tabulkami níže se řídí většina společností používající systém EIA-96, avšak je zde spousta společností které používají mírně odlišný systém značení (odlišná písmena, apod.), anebo kompletně odlišný a proto je třeba se ve většině případů řídit dle katalogového listu dané součástky.
+
+
+== Rozměry rezistorů ==
+
+Rezistory jsou nabízeny v mnoha rozlišných variantách, a proto bylo potřeba standardizovat i jejich značení. Dnes se používá několik standardů, které jsou používané.
+
+
+=== SMD rezistory ===
+V současnosti se nejčastěji používá standard JEDEC. Viz tabulka níže:
+
+
+== Charakteristické vlastnosti rezistorů ==
+Jmenovitý odpor rezistoru – předpokládaný odpor součástky v ohmech.
+Tolerance jmenovitého odporu rezistoru – Označuje se jí dovolená odchylka od jmenovité hodnoty.
+Jmenovité zatížení rezistoru – Výkon, který se smí za určitých normou stanovených podmínek přeměnit v teplo, aniž by teplota jeho povrchu překročila přípustnou velikost.
+Provozní zatížení rezistorů – Největší přípustné provozní zatížení rezistoru, které je určeno nejvyšší teplotou součástky, při které ještě nenastávají trvalé změny jejího odporu ani podstatné zkracování doby její životnosti.
+Největší dovolené napětí – Největší dovolené napětí mezi vývody součástky, při jehož překročení by mohlo dojít k jejímu poškození.
+Teplotní součinitel odporu rezistoru – Určuje změnu odporu rezistoru způsobenou změnou jeho teploty. Udává největší poměrnou změnu odporu součástky odpovídající vzrůstu o 1 °C v rozsahu teplot, ve kterých je změna odporu vratná.
+Šumové napětí – Vzniká vlivem nerovnoměrného pohybu elektronů uvnitř materiálu součástky. Projevuje se malými, časově nepravidelnými změnami potenciálu. Příčinou šumu je šumové napětí, které má dvě hlavní složky:
+tepelné šumové napětí – je závislé na teplotě a šířce kmitočtového pásma, ve kterém je rezistor používán. Vytváří tzv. Johnsonův šum.
+povrchové šumové napětí – závisí na velikosti stejnosměrného napětí U přiloženého na rezistor.
+
+
+== Sériové a paralelní řazení rezistorů ==
+Rezistory je možné spojovat (neboli řadit) sériově (za sebou) nebo paralelně (vedle sebe).
+
+
+=== Paralelní řazení rezistorů ===
+Při paralelním řazení je na všech rezistorech stejné napětí U a proud se dělí podle Ohmova zákona. Celkový odpor Rc je dán součtem vodivosti (admitance) tedy převrácených hodnot jednotlivých odporů (1/R).
+
+  
+    
+      
+        
+          
+            1
+            
+              R
+              
+                
+                  c
+                
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              R
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              R
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              R
+              
+                n
+              
+            
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            
+              R
+              
+                i
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{R_{\mathrm {c} }}}={\frac {1}{R_{1}}}+{\frac {1}{R_{2}}}+\cdots +{\frac {1}{R_{n}}}=\sum _{i=1}^{n}{\frac {1}{R_{i}}}}
+  
+
+Jako symbol paralelního spojení rezistorů se používají dvě čárky „||“. Pro dva rezistory spojené paralelně lze použít zjednodušený vztah:
+
+  
+    
+      
+        
+          R
+          
+            
+              c
+            
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        ‖
+        
+          R
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+            
+              
+                R
+                
+                  1
+                
+              
+              +
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {c} }=R_{1}\|R_{2}={R_{1}R_{2} \over R_{1}+R_{2}}}
+  
+
+
+=== Sériové řazení rezistorů ===
+Při sériovém řazení teče všemi rezistory stejný proud a napětí se rozloží na každý rezistor podle Ohmova zákona. Celkový odpor Rc je tady dán součtem jednotlivých odporů.
+
+  
+    
+      
+        
+          R
+          
+            
+              c
+            
+          
+        
+        =
+        
+          R
+          
+            1
+          
+        
+        +
+        
+          R
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          R
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          R
+          
+            i
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {c} }=R_{1}+R_{2}+\cdots +R_{n}=\sum _{i=1}^{n}R_{i}}
+  
+
+
+=== Sériově-paralelní spojení rezistorů ===
+Pro výpočet kombinace sériového a paralelního řazení použijeme oba předchozí vztahy. Například celkový odpor Rc tohoto zapojení je dán:
+
+  
+    
+      
+        
+          R
+          
+            
+              c
+            
+          
+        
+        =
+        
+          (
+          
+            
+              R
+              
+                1
+              
+            
+            ‖
+            
+              R
+              
+                2
+              
+            
+          
+          )
+        
+        +
+        
+          R
+          
+            3
+          
+        
+        =
+        
+          
+            
+              
+                R
+                
+                  1
+                
+              
+              
+                R
+                
+                  2
+                
+              
+            
+            
+              
+                R
+                
+                  1
+                
+              
+              +
+              
+                R
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          R
+          
+            3
+          
+        
+      
+    
+    {\displaystyle R_{\mathrm {c} }=\left(R_{1}\|R_{2}\right)+R_{3}={R_{1}R_{2} \over R_{1}+R_{2}}+R_{3}}
+  
+
+
+== Odkazy ==
+
+
+=== Reference ===
+
+
+=== Literatura ===
+LÁNÍČEK, Robert. ELEKTRONIKA - obvody, součástky, děje. Praha: BEN - technická literatura, 1998. ISBN 80-86056-25-2. Kapitola 2.5, s. 76–79. 
+MYSLÍK, Jiří. Elektrotechnika jinak aneb další hlavolamy z elektrotechniky. Praha: BEN - technická literatura, 1998. ISBN 80-86056-46-5. 
+VLČEK, Jiří. Základy elektrotechniky. Praha: BEN - technická literatura, 2006. ISBN 999-00-001-7426-3. 
+
+
+=== Související články ===
+Ohmův zákon
+Elektřina
+Varistor
+Termistor
+Elektrický odpor
+Barevné značení elektronických součástek
+
+
+=== Externí odkazy ===
+ Obrázky, zvuky či videa k tématu rezistor na Wikimedia Commons 
+ Kniha Praktická elektronika ve Wikiknihách
+Bližší informace o skinnefektu

@@ -1,0 +1,179 @@
+Programazio-lengoaiak ordenagailuaren portaera kontrolatzeko erabil daitezkeen hizkuntza artifizialak dira.
+
+Bi atal definitu behar dira programazio-lengoaia bat definitzeko:
+
+Programak osatzeko erabil daitezkeen aginduak (adib.: datu bat irakurri, datu bat inprimatu, kalkulatu eragiketa bat...)
+Datuak errepresentatzeko erabil daitezkeen datu-motak (adib.: zenbakia osoa, zenbaki erreala, karakterea...)
+Programa bateko aginduak idazteko orduan, lengoaiak horrelako aginduak definitu ahal izateko dituen arau sintaktiko eta semantikoak errespetatu behar dira. Arau sintaktikoak BNF gramatika batekin edo sintaxi-diagramen bidez definitzen dira gehienetan.
+
+
+== Definizioak ==
+Programazio-lengoaia zer den definitzerakoan kontu asko daude.
+
+
+=== Informatika-lengoaiak vs programazio-lengoaiak ===
+Ordenagailu-lengoaia terminoa, batzuetan, programazio-lengoaiaz bereizi gabe erabiltzen da. Hala ere, bi terminoen erabilera aldatu egiten da egileen artean, bakoitzaren esparru zehatza barne. Erabilera batek ordenagailu-lengoaien azpimultzo gisa deskribatzen ditu programazio-lengoaiak. Era berean, informatikan erabiltzen diren programa informatikoak adierazteko, helburu ezberdina duten hizkuntzak modu orokorrean izendatzen diren informatika-lengoaiak dira. Esate baterako, markatze-lengoaiak, batzuetan, ordenagailu-lengoaia gisa izendatzen dira programaziorako ez direla erabili behar azpimarratzeko. Informatika-lengoaiak sailkatzeko modu bat, konputazioaren teoriak deskribatzen duen moduan, adierazteko gai diren konputazioen araberakoa da. Programazio-lengoaia praktiko gehienak Turing osoa dira, eta Turing lengoaia oso guztiek algoritmo-multzo bera inplementa dezakete. ANSI/ISO SQL-92 eta Charity lengoaiak Turing osoa ez diren adibideak dira, baina, askotan, programazio-lengoaia deitzen zaie. Hala ere, egile batzuek programazio-lengoaia terminoa Turing lengoaia osoetara soilik mugatzen dute.
+Beste erabilera batek programazio-lengoaiak makina abstraktuak programatzeko eraikuntza teorikotzat hartzen ditu, eta ordenagailu-lengoaiak, horien azpimultzotzat, ordenagailu fisikoetan exekutatzen direnak eta hardware-baliabide finituak dituztenak. John C. Reynoldsek zehaztapen formalen lengoaiak exekutatzeko pentsatutako lengoaiak bezain programazio-lengoaiak direla azpimarratu du. Ordenagailuaren portaeran eragina duten testu eta are grafikoen sarrera-formatuak ere, programazio-lengoaiak direla dio, nahiz eta normalean Turing-osoak ez diren, eta ohartarazi du programazio-lengoaiaren kontzeptuak ez jakitea dela sarrera formatuen akats askoren arrazoia.
+
+
+=== Menderatze eta helburua ===
+Testuinguru praktiko gehienetan, programazio-lengoaia batek ordenagailua tartean sartzen du; ondorioz, programazio-lengoaiak, normalean, horrela definitu eta aztertzen dira. Programazio lengoaiak hizkuntza naturaletatik desberdintzen dira hizkuntza naturalak pertsonen arteko elkarrekintzarako soilik erabiltzen direlako; programazio lengoaiek, berriz, gizakiei makinei argibideak komunikatzeko aukera ematen dute.
+lengoaiaren menderatzea ere kontuan hartzekoa da. Datu egituratuak definitzen dituzten markaketa-lengoaiak, hala nola XML, HTML edo troff, ez dira, normalean, programazio-lengoaiatzat hartzen. Programazio-lengoaiek, ordea, sintaxia markatzeko lengoaiekin partekatu dezakete semantika konputazionala definitzen bada. XSLT, adibidez, XML sintaxia erabiltzen duen Turing lengoaia osoa da. Gainera, dokumentuak egituratzeko, gehienbat erabiltzen den LaTeX-ek Turing-en azpimultzo osoa ere badu.
+
+
+=== Abstrakzioak ===
+Programazio-lengoaiek abstrakzioak izaten dituzte datu-egiturak definitzeko eta manipulatzeko edo exekuzio-fluxua kontrolatzeko. Programazio-lengoaia batek abstrakzio egokiei eusteko behar praktikoa abstrakzio-printzipioaren bidez adierazten da. Printzipio hori, batzuetan, programatzaileari abstrakzio horiek behar bezala erabiltzeko gomendio gisa formulatzen da.
+
+
+== Historia ==
+
+
+=== Hasierako garapenak ===
+Ordenagailu oso goiztiarrak, Colossus kasu, programa baten laguntzarik gabe programatu ziren, zirkuitua aldatuz edo kontrol fisikoen bankuak ezarriz.
+Apur bat geroago, programak makina-lengoaian idatz zitezkeen, non programatzaileak agindu bakoitza zenbakizko eran idazten duen hardwareak zuzenean exekutatu ahal izateko. Adibidez, bi memoria-lokaletan balioa gehitzeko instrukzioa 3 zenbakiz osatuta egon liteke: operazio kode bat, zeinak gehitu eragiketa eta bi memoria-kokapen hautatzen duen. Programak, hamartar edo bitar moduan, txartel zulatu, paperezko zinta, zinta magnetiko edo ordenagailuaren aurreko paneleko etengailuetan sartuta irakurtzen ziren. Geroago, makina-lengoaiei lehen belaunaldiko programazio-lengoaiak (1GL) deitu zitzaien.
+Hurrengo urratsa bigarren belaunaldiko programazio-lengoaiak (2GL) edo mihiztadura-lengoaiak garatzea izan zen, ordenagailu espezifikoaren irakaskuntza-multzoari estuki lotuta zeudenak. Horiek programa askoz ere irakurterrazagoa egiteko balio izan zuten, eta programatzaileari helbideratze kalkulu aspergarri eta okerrak arindu zizkioten.
+Goi mailako lehen programazio lengoaiak, edo hirugarren belaunaldiko programazio lengoaiak (3GL), 50eko hamarkadan idatzi ziren. Ordenagailu baterako diseinatu zen goi mailako programazio lengoaia bat Plankalkül izan zen, Konrad Zusek, 1943 eta 1945 artean, Z3 alemaniarrarentzat garatua. Hala ere, 1998 eta 2000 artean ez zen inplementatu.
+John Mauchly-k, 1949an, Short Code edo Lengoaia Laburra proposatu zuen, ordenagailu elektroniko baterako garatu den goi mailako lehen hizkuntzetako bat. Makina-lengoaiak ez bezala, Lengoaia Laburraren adierazpenek modu ulergarrian adierazten zituzten  adierazpen matematikoak. Hala ere, programa makina-kodera itzuli behar zen exekutatzen zen bakoitzean; beraz, prozesua motelago bihurtzen zen makinaren kode baliokidea egikarituta baino.
+Manchesterreko Unibertsitatean, Alick Glenniek Autokodea garatu zuen 50eko hamarkadaren hasieran. Programazio-lengoaia gisa, konpiladore bat erabili zuen lengoaia makina-lengoaia bihurtzeko. Lehen lengoaia eta konpiladorea 1952an garatu zen Manchester Mark1 ordenagailuarentzat, eta, goi mailako lehen programazio-lengoaia konpilatua kontsideratzen da.
+Bigarren autokodea R. A. Brookerrek garatu zuen 1954an, Mark 1 ordenagailuarentzat, eta Mark1 autokode izena eman zioten. Brookerrek Ferranti Merkuryrentzako ere autokode bat garatu zuen 1950eko hamarkadan, Manchesterreko Unibertsitatearekin batera. EDSAC 2rako bertsioa Cambridgeko Unibertsitateko Hartley jaunak asmatu zuen 1961ean. EDSAC 2 Autocode izenarekin ere ezaguna, Mercury Autokoderen garapen zuzena izan zen, tokian tokiko egoeretara egokitua, eta bere objektu-lengoaia eta iturri-lengoaiagatik nabarmendu zen, garai hartarako aurreratuak. Garapen hari garaikide bat baina banandua, Atlas Autocode, Manchesterreko Unibertsitateko Atlas 1 ordenagailuarentzako garatu zen.
+1954an, John Backusek FORTRAN asmatu zuen IBMn. Paperean egindako diseinu baten aldean, aplikazio funtzional bat zuen erabilera handiko lehen programazio-lengoaia orokorra zen. Oraindik, goi errendimenduko konputaziorako lengoaia ezaguna da, eta munduko superkonputagailurik azkarrenak erlazionatzen eta sailkatzen dituzten programetarako erabiltzen da.
+Beste programazio-lengoaia goiztiar bat Grace Hopperrek asmatu zuen AEBn, FLOW-MATIC izenekoa. UNIVAC I.arentzat garatu zen Remington Rand-en, 1955etik 1959ra bitartean. Hopperrek ikusi zuen negozioetako datuak prozesatzeko bezeroak deseroso zeudela notazio matematikoarekin, eta 1955eko hasieran, berak eta bere taldeak ingeleseko programazio-lengoaia baterako espezifikazio bat idatzi, eta prototipo bat ezarri zuten. FLOW-MATIC konpiladorea 1958ko hasieran jarri zen jendaurrean, eta 1959an osatu zen. FLOW-MATICek eragin handia izan zuen COBOLen diseinuan, bera eta bere ondorengo zuzena Aimaco bakarrik baitzeuden garai hartan erabilgarri.
+
+
+=== Fintasuna ===
+Goi mailako lengoaiak gero eta gehiago erabiltzeak maila baxuko programazio-lengoaiak edo sistemaren programazio-lengoaiak eskatzen zituen. Hizkuntza horiek, maila ezberdinetan, erraztasunak ematen dituzte mihiztatze-hizkuntzen eta goi mailako hizkuntzen artean. Hardware-instalazioetara zuzenean sartzea eskatzen duten lanak egiteko erabil daitezke, baina, hala ere, maila handiagoko kontrol-egiturak eta erroreak egiaztatzeko egiturak eskaintzen dituzte.
+1960ko hamarkadatik 1970eko hamarkadaren amaierara arteko epeak gaur egun erabiltzen diren lengoaia-paradigma nagusien garapena ekarri zuen:
+
+APL-k matrize-programazioa sartu, eta programazio funtzionalean eragin zuen.
+ALGOL-ek prozedura-programazio egituratua eta hizkuntza-espezifikazioaren diziplina findu zituen; «Algoritmo-lengoaiari buruzko ALGOL 60 txosten berrikusia» eredu bihurtu zen geroago hizkuntza-espezifikazioak idazteko.
+Lisp, 1958an inplementatua, programazio funtzionaleko lehen lengoaia dinamikoa izan zen.
+60ko hamarkadan, Simula objektuetara bideratutako programazioari eusteko lehen lengoaia izan zen; 70eko hamarkadaren erdialdean, Smalltalk lehen hizkuntza zuzenean objektuetara bideratua izaten jarraitu zuen.
+C sistema programatzeko lengoaia gisa garatu zen 1969 eta 1973 artean Unix sistema eragilearentzat, eta oraindik ere ezaguna da.
+Prolog, 1972an diseinatua, programazio logikoaren lehen lengoaia izan zen.
+1978an, MLk sistema polimorfiko bat eraiki zuen Lisp programaren gainean, programazio-lengoaia funtzional estatikoen aitzindaria.
+Lengoaia horietako bakoitzak ondorengoak sortu zituen, eta programazio-lengoaia moderno gehienek gutxienez bat kontatzen dute beren arbasoen artean.
+1960ko eta 1970eko hamarkadetan, gainera, eztabaida handia sortu zen programazio egituratuaren merezimenduei buruz, eta programazio-lengoaiak programazio horri eusteko diseinatu behar ote ziren. Edsger Dijkstrak, ACMren Komunikazioetan 1968an argitaratutako gutun ospetsu batean, Goto adierazpenak "goi mailako" programazio lengoaia guztietatik ezabatu behar zirela defendatzen zuen.
+
+
+=== Finkatze eta hazkundea ===
+
+1980ko hamarkada nolabaiteko sendotze-urteak izan ziren. C++ objektuei eta sistemei zuzendutako programazioa konbinatzen du. Estatu Batuetako gobernuak Ada lengoaia estandarizatu zuen, sistemak programatzeko lengoaia, Pascaletik eratorria eta defentsa kontratistek erabiltzekoa. Japonian eta beste leku batzuetan, dirutza handiak gastatu ziren bosgarren belaunaldiko lengoaiak ikertzen, zeinak logikaren programazioak eraikitzen dituzten. ML eta Lisp Lengoaia funtzionalak estandarizatu ziren. Paradigma berriak asmatu baino gehiago, aurreko hamarkadetan asmatutako ideietan sakondu zuten mugimendu horiek guztiek.
+1980ko hamarkadan, eskala handiko sistemak programatzeko lengoaia-diseinuaren joera garrantzitsu bat izan zen kodeko moduluen edo eskala handiko antolamendu-unitateen erabileran arreta handiagoa jartzea. Modula-2, Ada eta ML moduluek modulu-sistema bikainak garatu zituzten 1980ko hamarkadan, eta, askotan, programazio-eraikin generikoekin ezkontzen ziren.
+Internetek 90eko hamarkadaren erdialdean izan zuen hazkunde azkarrak lengoaia berriak sortzeko aukerak sortu zituen. Perl, hasiera batean Unix Scripting tresna, 1987an estreinakoz argitaratua, ohikoa bihurtu zen webgune dinamikoetan. Java server-side programaziorako erabilia izan zen, eta bytecode makina birtualak, berriz ere, ezagun egin ziren ingurune komertzialetan Idatzi behin, egikaritu edonon promesarekin (UCSD Pascal ezaguna zen 1980ko hamarkadaren hasieran). Garapen horiek, funtsean, ez ziren berriak; aitzitik, egungo lengoaia eta paradigma askoren finketak ziren (nahiz eta sintaxia, askotan, programazio-lengoaien C familian oinarritzen zen).
+Programazio-lengoaiaren eboluzioak aurrera jarraitzen du, bai industrian, bai ikerketan. Gaur egungo norabideen artean, segurtasuna eta fidagarritasuna egiaztatzea daude, baita modularitate mota berriak (mixinak, delegatuak, alderdiak) eta datu-baseetan integratzea ere, Microsoften LINQa kasu.
+Laugarren belaunaldiko programazio-lengoaiak (4GL) ordenagailuen programazio-lengoaiak dira, eta ordenagailuaren barne-hardwarearen xehetasunen abstrakzio-maila 3GLena baino handiagoa izatea dute helburu. Bosgarren belaunaldiko programazio-lengoaiak (5GL) programazio-lengoaiak dira, programatzaile batek idatzitako algoritmo bat erabili beharrean programazioari emandako mugak erabiliz problemak ebaztean oinarritzen direnak.
+
+
+== Sailkapena ==
+
+
+=== Behe-mailako programazio-lengoaiak ===
+Berez, konputagailuak lengoaia bakar bat ulertzen du: makina-lengoaia. Konputagailuko zirkuitu elektrikoek agindu xehe batzuk bakarrik egiten dituzte, eta horietan datuak kode bitarrean adierazi behar dira. Baina gizakiontzat makina lengoaian programatzea erokeria da:
+
+Ulertezina da (dena kode bitarrean adierazita dago)
+Aginduak sinpleegiak dira.
+Konputagailu mota bakoitzak bere makina-lengoaia dauka eta batean dabilen programa bestean ez dabil.
+Mihiztadura-lengoaia makina-lengoaiatik oso gertu dago, baina programak gizakiok hobeto uler ditzagun:
+
+agindu bitarrak karaktere alfanumerikoekin adierazten dira
+datuak atzitzeko helbide sinbolikoak erabiltzen dira, helbide bitarren ordez
+oharrak txertatu daitezke programetan
+
+
+=== Goi-mailako programazio-lengoaiak ===
+Goi-mailako programazio lengoaiak egokiagoak dira programatzeko:
+
+Datuak eta aginduak karaktere alfanumerikoen bidez aipa daitezke (ez kode bitarrean)
+Datuak hartzeko aldagaiak defini ditzakegu
+Agindu eta datu potenteagoak, landuagoak, erabil daitezke (ez eragiketa sinpleak soilik)
+Hainbat konputagailu mota desberdinetan erabili ahal izango dira.
+Zuzentzeko eta gaurkotzeko errazagoak dira, honela denbora aurrezten digu beste lengoaiekiko.
+Oharrak txerta daitezke programa hobetu ulertzearren.
+Beraz, goi-mailako programazio-lengoaia batean programatzea askoz errazagoa da.
+
+
+=== Erdi-mailako programazio-lengoaiak ===
+C programazio-lengoaia. Goi-mailako lengoaien abantaila gehienak ditu, baina aldi berean behe-mailakoen funtzionalitatea ere erabil daiteke. Horrela programa azkarrak lortu daitezke eta memoriako espazioa hobeto kudeatzen dutenak.
+
+
+== Elementuak ==
+
+
+=== Aldagaiak eta bektoreak ===
+Datu espezifikoak gordetzeko memoria guneak aldagaiekin izendatzen dira. Datu egiturak dira eta, horregatik, gorde ahal dituzten datu motaren arabera sailkatzen dira. Programazio-lengoaia gehienetan datu espezifikoak gordetzeko, datu mota zehaztu behar da lehendabizi. Adibidez, Java-n, testu-katea gorde nahi izanez gero, datua String motakoa izango dela zehaztu behar da. Beste aldetik, PHP edo JavaScript bezalako lengoaietan horrelako espezifikazioak ez dira beharrezkoak. Horretaz gain, bektore izeneko aldagai konposatuak daude. Bektoreak memorian ondoz ondoko byte multzoak besterik ez dira, eta, era berean, aldagai batean gordetzen dira. Jarraian, aldagai eta bektore mota ohikoenen zerrenda aurkezten da:
+
+
+=== Baldintzazko adierazpenak ===
+Baldintzapeko adierazpenak kode-egiturak dira eta, programaren zati bat exekutatzeko, baldintza batzuk bete behar direla adierazte dute. Adibidez: bi aldagai berdinak izatea, balio bat beste bat baino handiagoa izatea... Baldintzatzaile horiek normalean behin bakarrik exekutatzen dira programan: Hauek dira baldintzatzaile ezagunenak:
+
+If: If-aren ondoren dagoen programaren zatia exekutatzeko, if-aren barruan dagoen baldintza bete behar da.
+Else if: "If" baten ondoren jartzen, ezin da inoiz bakarrik agertu, eta programaren zati bat exekutatzeko baldintza bat jartzen da bere barruan, beti ere aurreko if baldintza betetzen ez bada eta "else if" baldintza betetzen bada.
+Else: "if" baten ondoren doa beti, eta batzuetan "else if" baten ondoren ere. Programa exekutatuko da aurreko baldintzak betetzen ez badira.
+
+
+=== Begiztak ===
+Baldintzazko adierazpenen antzekoak dira, baina kode zati bat etengabe exekutatzen dute zenbait baldintza betetzen diren bitartean. Ohikoenak hauek dira:
+
+For: Kode zati bat exekutatzen du aldagai bat bi balio zehatzen artean dagoen bitartean.
+While: Kode zati bat exekutatzen du baldintza betetzen den bitartean.
+Nahiz eta begizta mota desberdinak egon, denak dira funtzio berdinak egiteko gai. Programatzailearen beharraren araberakoa da zein erabiliko duen erabakitzea.
+
+
+=== Funtzioak ===
+Funtzioak erabiltzen dira kode-zatiak etengabe ez errepikatzeko. Funtzio batek bere barnean kodea duen aldagaia izan daiteke. Beraz, aldagai hori (funtzioa) atzitzen dugunean, aurretik definitutako kodea exekutatzeko programari deitzen ari gara.
+Programazio-lengoaia guztiek jatorrizko prestakuntza-elementuak dituzte datuak eta horiei aplikatutako prozesu eta transformazioak deskribatzeko. Elementu primitibo hauek arau sintaktiko eta semantikoak zehazten dituzte, hurrenez hurren, haien egitura eta esanahia deskribatzen dituztenak.
+
+
+== Inplementazioa ==
+Lengoaia baten inplementazioa, software eta hardware konbinazio jakin baterako, programa exekutatzeko modu bat da. Bi oinarrizko era daude lengoaia bat inplementatzeko: konpilazioa eta interpretazioa.
+
+Konpilazioa: Lengoaia jakin batean idatzitako programa bat beste lengoaia batera itzultzeko prozesua da, makinak interpretatu dezakeen programa baliokidea sortuz. Eragiketa hau burutu dezaketen itzultzaileak konpiladoreak deitzen dira. Hauek, programa mihiztatzaile aurreratuak bezala, iturburu programaren proposamen bakoitzeko kode lerro asko sor ditzakete.
+Interpretazioa: Interpretatzaileak, lengoaia formalean ondo sortuta dauden formulak interpretatu egiten ditu, eta horiei esanahi bat ematen die. Lengoaia formalek termino sintaktikoetan soilik definitu ahal direnez, haien formulak esanahirik gabeko sinbolo kateak izan daitezke.
+Goi mailako lengoaiak itzultzeko beste aukera bat ere erabili daiteke. Iturburu-programa itzuli eta era iraunkorrean konpilazioan sortzen den objektu-kodea grabatu beharrean, programatzaileak soilik iturburu programa eta prozesatuko diren datuak soilik kargatzen ditu konputagailuan. Ondoren, programa interpretatzaileak, diskoaren sistema eragilean biltegiratuta edo makinan era iraunkorrean sartuta, iturburu programaren proposizio bakoitza makina-lengoaia bihurtzen du datuen prozesamenduan zehar beharrezkoa den heinean. Ez da objektu-kodea grabatzen geroago erabiltzeko.
+Agindu bat erabiltzen den bakoitzean, berriro interpretatu beharko da eta makina-lengoaiara itzuli. Adibidez, ziklo edo begizta baten pausoen prozesamendu errepikakorrean zehar, begiztaren agindu bakoitza berriro interpretatu beharko da exekuzio bakoitzean. Horrek exekuzio denboran programa moteldu egiten du, baina diseinu denbora azkartu ere. Programaren aldaketa baten ondoren, funtzioak gehitzean edo erroreak zuzentzean, Interpretatzaileak konpilazioaren beharra ezabatzen du; baina argi dago aurretik konpilatuta dagoen programa bat askoz azkarrago exekutatuko dela bere agindu guztiak exekuzioan zehar interpretatu behar dituen programa bat baino.
+Goi mailako lengoaia gehienek erabilera anitzeko programazioa ahalbidetzen dute, nahiz eta horietako asko erabilera bakarrerako diseinatuta egon, Pascal matematikarako izan zen bezala. Argibide sinple batzuk erabiliz, haurrentzako legoaiak ere inplementatu dira, adibidez, Logo. Gaur egun, oso ezagunak dira web aplikazioentzat erabiltzen diren lengoaiak: Perl, PHP, Ruby, Python edo JavaScript.
+
+
+== Zenbait programazio-lengoaia: ==
+
+
+== Erreferentziak ==
+
+
+== Bibliografia ==
+Bauer, F. L. & Wössner, H.. Algorithmische Sprache und Programmentwicklung.  Berlín: Springer, ¹1981, ²1984. 3-540-12962-6.
+Raphael Finkel: Advanced Programming Language Design, Addison Wesley 1995.
+Daniel P. Friedman, Mitchell Wand, Christopher T. Haynes: Essentials of Programming Languages, The MIT Press 2001.
+Maurizio Gabbrielli and Simone Martini: "Programming Languages: Principles and Paradigms", Springer, 2010.
+David Gelernter, Suresh Jagannathan: Programming Linguistics, The MIT Press 1990.
+Henning, P. A. & Vogelsang, H.. Handbuch Programmiersprachen. Softwareentwicklung zum Lernen und Nachschlagen. Munic: Hanser, 2007. 3-446-40558-5, 978-3-446-40558-5.
+Ellis Horowitz (ed.): Programming Languages, a Grand Tour (3rd ed.), 1987.
+Ellis Horowitz: Fundamentals of Programming Languages, 1989.
+Shriram Krishnamurthi: Programming Languages: Application and Interpretation, online publication.
+Bruce J. MacLennan: Principles of Programming Languages: Design, Evaluation, and Implementation, Oxford University Press 1999.
+John C. Mitchell: Concepts in Programming Languages, Cambridge University Press 2002.
+Organick, E. I.; Forsythe, A. I.; Plummer, R. P.. Programming Language Structures.  Nova York: Academic Press, 1978, p. 659. ISBN 0-12-528260-5.
+Benjamin C. Pierce: Types and Programming Languages, The MIT Press 2002.
+Terrence W. Pratt and Marvin Victor Zelkowitz: Programming Languages: Design and Implementation (4th ed.), Prentice Hall 2000.
+Peter H. Salus. Handbook of Programming Languages (4 vols.). Macmillan 1998.
+Ravi Sethi: Programming Languages: Concepts and Constructs, 2nd ed., Addison-Wesley 1996.
+Michael L. Scott: Programming Language Pragmatics, Morgan Kaufmann Publishers 2005.
+Robert W. Sebesta: Concepts of Programming Languages, 9th ed., Addison Wesley 2009.
+Franklyn Turbak and David Gifford with Mark Sheldon: Design Concepts in Programming Languages, The MIT Press 2009.
+Peter Van Roy and Seif Haridi. Concepts, Techniques, and Models of Computer Programming, The MIT Press 2004.
+David A. Watt. Programming Language Concepts and Paradigms. Prentice Hall 1990.
+David A. Watt and Muffy Thomas. Programming Language Syntax and Semantics. Prentice Hall 1991.
+David A. Watt. Programming Language Processors. Prentice Hall 1993.
+David A. Watt. Programming Language Design Concepts. John Wiley & Sons 2004.
+Wexelblat, Richard L.. History of Programming Languages. Nova York: Academic Press, 1981, p. 758. ISBN 0-12-745040-8.
+
+
+== Ikus, gainera ==
+Zerrenda:Programazio-lengoaiak
+Programazio-lengoaien arteko konparazioa
+
+
+== Kanpo estekak ==
+Mihiztadura-lengoaia eta goimailako lengoaiak: noiz eta zergatik; Zientzia.net atarian
+Programazio-lengoaia gehienen bilakaera grafiko batean
+(Ingelesez) Programazio-lengoaia gehienen bilakaera

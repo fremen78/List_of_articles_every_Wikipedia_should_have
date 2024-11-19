@@ -1,0 +1,4178 @@
+En matemàtiques, un nombre complex és un nombre, 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+, que es pot expressar en la forma
+
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+        
+      
+    
+    {\displaystyle z=a+bi\,}
+  
+,
+on 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ són nombres reals, i 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ és la unitat imaginària, que satisfà la propietat fonamental
+
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+        
+      
+    
+    {\displaystyle i^{2}=-1\,}
+  
+.
+En l'expressió donada, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ s'anomea la part real del nombre complex, 
+  
+    
+      
+        a
+        =
+        Re
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle a=\operatorname {Re} \,(z)}
+  
+, i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ la part imaginària, 
+  
+    
+      
+        b
+        =
+        Im
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle b=\operatorname {Im} \,(z)}
+  
+ 
+El conjunt dels nombres complexos es representa per C, o per 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+. Com que cada nombre complex ve determinat per les seves parts real i imaginària, geomètricament es pot identificar C amb els punts d'un pla, el pla complex, o pla d'Argand.
+En aquest pla, l'eix d'abscisses correspon als complexos amb part imaginària nul·la, que es poden identificar amb els nombres reals; així, el pla complex conté la recta numèrica. En el mateix pla, l'eix d'ordenades correspon als complexos amb part real nul·la, anomenats imaginaris purs; són els complexos de la forma 
+  
+    
+      
+        b
+        i
+      
+    
+    {\displaystyle bi}
+  
+, amb 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ real.
+A banda de la seva importància en àlgebra, els nombres complexos són una eina fonamental en pràcticament totes les branques de les matemàtiques. Igual com amb funcions de variable real, es pot fer anàlisi matemàtica amb funcions de variable complexa; la teoria corresponent s'anomena anàlisi complexa, i té característiques que la fan molt diferent de l'anàlisi real.
+Més enllà de les matemàtiques, els nombres complexos tenen aplicacions en la major part de les ciències i la tecnologia. Moltes d'aquestes aplicacions són simplement una conseqüència dels avantatges de treballar amb nombres complexos en lloc de reals, però en alguns camps específics, com ara la mecànica quàntica o la teoria quàntica de camps, l'ús de la variable complexa en la descripció de les entitats físiques és essencial.
+
+
+== Sumari ==
+
+
+=== Motivació ===
+Els nombres complexos permeten obtenir solucions per algunes equacions que no tenen solució en els nombres reals. Per exemple, l'equació
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        9
+        =
+        0
+        
+      
+    
+    {\displaystyle x^{2}+9=0\,}
+  
+,
+no té solució real, ja que el quadrat d'un nombre real no pot ser negatiu. Els nombres complexos aporten una solució aquesta equació utilitzant la unitat imaginaria 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+, que satisfà la propietat 
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle i^{2}=-1}
+  
+. Aleshores, podem provar que tant 
+  
+    
+      
+        x
+        =
+        3
+        i
+      
+    
+    {\displaystyle x=3i}
+  
+ i 
+  
+    
+      
+        x
+        =
+        −
+        3
+        i
+      
+    
+    {\displaystyle x=-3i}
+  
+ són solucions de l'equació anterior
+
+  
+    
+      
+        (
+        3
+        i
+        
+          )
+          
+            2
+          
+        
+        +
+        9
+        =
+        
+          3
+          
+            2
+          
+        
+        
+          i
+          
+            2
+          
+        
+        +
+        9
+        =
+        9
+        (
+        −
+        1
+        )
+        +
+        9
+        =
+        −
+        9
+        +
+        9
+        =
+        0
+      
+    
+    {\displaystyle (3i)^{2}+9=3^{2}i^{2}+9=9(-1)+9=-9+9=0}
+  
+,
+
+  
+    
+      
+        (
+        −
+        3
+        i
+        
+          )
+          
+            2
+          
+        
+        +
+        9
+        =
+        (
+        −
+        3
+        
+          )
+          
+            2
+          
+        
+        
+          i
+          
+            2
+          
+        
+        +
+        9
+        =
+        9
+        (
+        −
+        1
+        )
+        +
+        9
+        =
+        −
+        9
+        +
+        9
+        =
+        0
+      
+    
+    {\displaystyle (-3i)^{2}+9=(-3)^{2}i^{2}+9=9(-1)+9=-9+9=0}
+  
+.
+Segons el teorema fonamental de l'àlgebra, qualsevol equació polinòmica amb coeficients reals o complexos en una sola variable té solució en els nombres complexos.
+
+
+=== Definició ===
+Un nombre complex és un nombre 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ que es pot expressar en la forma
+
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+,
+on 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ són nombres reals, i 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+ és la unitat imaginària, que satisfà la propietat fonamental
+
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        −
+        1
+        
+      
+    
+    {\displaystyle i^{2}=-1\,}
+  
+.
+Per exemple el nombre 
+  
+    
+      
+        3
+        +
+        4
+        i
+      
+    
+    {\displaystyle 3+4i}
+  
+ és un nombre complex. En l'expressió donada, 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ s'anomena la part real del nombre complex i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ la part imaginaria i es nota com
+
+  
+    
+      
+        a
+        =
+        Re
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle a=\operatorname {Re} \,(z)}
+  
+, 
+  
+    
+      
+        b
+        =
+        Im
+        
+        (
+        z
+        )
+      
+    
+    {\displaystyle b=\operatorname {Im} \,(z)}
+  
+.
+Per exemple, en l'exemple anterior, les parts real i imaginaries correspondrien a
+
+  
+    
+      
+        Re
+        ⁡
+        (
+        3
+        +
+        4
+        i
+        )
+        =
+        3
+      
+    
+    {\displaystyle \operatorname {Re} (3+4i)=3}
+  
+, 
+  
+    
+      
+        Im
+        ⁡
+        (
+        3
+        +
+        4
+        i
+        )
+        =
+        4
+      
+    
+    {\displaystyle \operatorname {Im} (3+4i)=4}
+  
+.
+Per tant, en termes de la seva part real i imaginària un nombre complex 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+ es pot escriure com
+
+  
+    
+      
+        z
+        =
+        Re
+        ⁡
+        (
+        z
+        )
+        +
+        Im
+        ⁡
+        (
+        z
+        )
+        i
+      
+    
+    {\displaystyle z=\operatorname {Re} (z)+\operatorname {Im} (z)i}
+  
+.
+Aquesta notació es coneix habitualment com a notació cartesiana.
+Un nombre real 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ pot ser considerat com un nombre complex de la forma 
+  
+    
+      
+        a
+        +
+        0
+        ⋅
+        i
+      
+    
+    {\displaystyle a+0\cdot i}
+  
+ amb part imaginària nul·la. Un nombre complex 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ és anomenat nombre imaginari si és de la forma 
+  
+    
+      
+        0
+        +
+        b
+        i
+      
+    
+    {\displaystyle 0+bi}
+  
+ amb part real nul·la.
+El conjunt dels nombres complexos es representa per C, o per 
+  
+    
+      
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {C} }
+  
+.
+
+
+=== Pla complex o Diagrama d'Argand ===
+
+Per a visualitzar geomètricament els nombres complexos es poden representar en un pla com un punt o un vector. Habitualment es representen gràficament utilitzant la part real com la component horitzontal i la part imaginària com a component vertical (vegeu Figura 1). Aquest pla s'anomena pla complex o diagrama d'Argand anomenat així per Jean-Robert Argand.
+Per tant, tenim una bijecció 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ≃
+        
+          C
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{2}\simeq \mathbb {C} }
+  
+ que identifica el nombre 
+  
+    
+      
+        a
+        +
+        b
+        ⋅
+        i
+        ∈
+        
+          C
+        
+      
+    
+    {\displaystyle a+b\cdot i\in \mathbb {C} }
+  
+ amb el vector 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+        ∈
+        
+          
+            R
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (a,b)\in \mathbb {R} ^{2}}
+  
+. D'aquesta manera podem visualitzar el conjunt dels nombres complexos com un pla.
+El concepte de pla complex permet interpretar geomètricament els nombres complexos. La suma de nombres complexos es pot relacionar amb la suma amb vectors, i la multiplicació de nombres complexos pot expressar-se simplement utilitzant coordenades polars, on la magnitud del producte es el producte de les magnituds dels termes, i l'angle comptat des de l'eix real del producte és la suma dels angles dels termes.
+Els diagrames d'Argand s'utilitzen freqüentment per a mostrar les posicions dels pols i els zeros d'una funció en el pla complex.
+
+
+== Notació ==
+Els nombres complexos es poden representar de dues maneres, com a suma de les components real i imaginària (representació cartesiana), o bé com a mòdul amb angle (representació polar).
+
+
+=== Notació cartesiana ===
+En la seva representació cartesiana, un complex pren la forma 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ on 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ és la component real, i 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ és la component imaginària. Per exemple: 
+  
+    
+      
+        4
+      
+    
+    {\displaystyle 4}
+  
+,
+  
+    
+      
+        3
+        +
+        5
+        i
+      
+    
+    {\displaystyle 3+5i}
+  
+, 
+  
+    
+      
+        57
+        −
+        3
+        i
+      
+    
+    {\displaystyle 57-3i}
+  
+ o 
+  
+    
+      
+        10
+        i
+      
+    
+    {\displaystyle 10i}
+  
+ són nombres complexos.
+Aquesta notació es pot representar gràficament en el pla complex identificant el nombre complex 
+  
+    
+      
+        z
+        =
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle z=a+bi}
+  
+ amb el vector 
+  
+    
+      
+        (
+        a
+        ,
+        b
+        )
+      
+    
+    {\displaystyle (a,b)}
+  
+, (vegeu Figura 1).
+
+
+=== Notació polar ===
+Un nombre complex es pot representar també en forma polar, això és: 
+  
+    
+      
+        
+          
+            r
+            
+              ϕ
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {r_{\phi }} }
+  
+, on 
+  
+    
+      
+        
+          r
+        
+      
+    
+    {\displaystyle \mathbf {r} }
+  
+ és el mòdul del nombre complex, i 
+  
+    
+      
+        
+          ϕ
+        
+      
+    
+    {\displaystyle \mathbf {\phi } }
+  
+ és l'angle del complex, interpretant el nombre en el diagrama d'Argand.
+Però, és necessari destacar, que la notació polar habitual segueix la fórmula d'Euler on 
+  
+    
+      
+        
+          
+            r
+            
+              ϕ
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {r_{\phi }} }
+  
+ es representa com 
+  
+    
+      
+        
+          
+            r
+          
+        
+        
+        
+          
+            e
+          
+          
+            i
+            
+            
+              ϕ
+            
+          
+        
+      
+    
+    {\displaystyle {\mathbf {r} }\,\mathrm {e} ^{i\,\mathbf {\phi } }}
+  
+ on 
+  
+    
+      
+        
+          
+            e
+          
+          
+            i
+            
+            
+              ϕ
+            
+          
+        
+        =
+        cos
+        ⁡
+        ϕ
+        +
+        i
+        sin
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle \mathrm {e} ^{i\,\mathbf {\phi } }=\cos \phi +i\sin \phi }
+  
+.
+
+
+=== Equivalències entre notació cartesiana i notació polar ===
+
+Per passar d'un tipus de notació a una altra s'utilitzen les següents expressions:
+
+Pas de cartesiana a polar (part real no negativa):
+A partir del Teorema de Pitàgores (i entenent el nombre complex com un vector amb dues coordenades, (a, b)), podem dir:
+
+  
+    
+      
+        
+          r
+        
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {r} ={\sqrt {a^{2}+b^{2}}}}
+  
+
+I sabent que el quocient entre el catet oposat i el catet contigu d'un angle 
+  
+    
+      
+        
+          
+            ϕ
+          
+        
+      
+    
+    {\displaystyle {\mathbf {\phi } }}
+  
+ és la tangent d'aquest angle, tenim:
+
+  
+    
+      
+        tan
+        ⁡
+        
+          
+            ϕ
+          
+        
+        =
+        
+          
+            
+              b
+            
+            
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \tan {\mathbf {\phi } }={\frac {\mathbf {b} }{\mathbf {a} }}}
+  
+
+L'arctangent retorna angles entre −π i π, per tant per a complexos amb part real positiva l'angle es calcula com:
+
+  
+    
+      
+        
+          ϕ
+        
+        =
+        arctan
+        ⁡
+        
+          
+            
+              b
+            
+            
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\phi } =\arctan {\frac {\mathbf {b} }{\mathbf {a} }}}
+  
+
+Si el complex té part real negativa es transforma en un complex de part real positiva prenent −1 = 1π com a factor comú. 
+  
+    
+      
+        
+          a
+        
+        +
+        
+          b
+        
+        ⋅
+        i
+        =
+        −
+        1
+        ⋅
+        (
+        −
+        
+          a
+        
+        −
+        
+          b
+        
+        ⋅
+        i
+        )
+      
+    
+    {\displaystyle \mathbf {a} +\mathbf {b} \cdot i=-1\cdot (-\mathbf {a} -\mathbf {b} \cdot i)}
+  
+. L'angle s'obté com:
+
+  
+    
+      
+        
+          ϕ
+        
+        =
+        π
+        +
+        arctan
+        ⁡
+        
+          
+            
+              −
+              
+                b
+              
+            
+            
+              −
+              
+                a
+              
+            
+          
+        
+        =
+        π
+        +
+        arctan
+        ⁡
+        
+          
+            
+              b
+            
+            
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\phi } =\pi +\arctan {\frac {-\mathbf {b} }{-\mathbf {a} }}=\pi +\arctan {\frac {\mathbf {b} }{\mathbf {a} }}}
+  
+
+Pas de polar a cartesiana
+
+  
+    
+      
+        
+          a
+        
+        =
+        
+          r
+        
+        ⋅
+        cos
+        ⁡
+        
+          ϕ
+        
+      
+    
+    {\displaystyle \mathbf {a} =\mathbf {r} \cdot \cos \mathbf {\phi } }
+  
+
+  
+    
+      
+        
+          b
+        
+        =
+        
+          r
+        
+        ⋅
+        sin
+        ⁡
+        
+          ϕ
+        
+      
+    
+    {\displaystyle \mathbf {b} =\mathbf {r} \cdot \sin \mathbf {\phi } }
+  
+
+
+== Operacions ==
+Les operacions amb nombres complexos demanaran una notació cartesiana o polar, depenent de l'operació que es faci. Per això, és important saber passar d'un tipus de notació a una altra per poder operar amb nombres complexos.
+
+
+=== Suma i resta ===
+Per sumar dos nombres complexos s'ha d'utilitzar la notació cartesiana.
+
+Notació cartesiana:
+Es sumen les components reals dels sumands i les components imaginàries per separat:
+
+  
+    
+      
+        a
+        +
+        b
+        i
+        +
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        i
+        =
+        (
+        a
+        +
+        
+          a
+          ′
+        
+        )
+        +
+        (
+        b
+        +
+        
+          b
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle a+bi+a'+b'i=(a+a')+(b+b')i\,}
+  
+
+Exemple: 
+
+  
+    
+      
+        2
+        +
+        3
+        i
+        +
+        (
+        3
+        −
+        5
+        i
+        )
+        =
+        5
+        −
+        2
+        i
+        
+      
+    
+    {\displaystyle 2+3i+(3-5i)=5-2i\,}
+  
+
+Per restar es fa de manera semblant:
+
+  
+    
+      
+        a
+        +
+        b
+        i
+        −
+        (
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        i
+        )
+        =
+        a
+        +
+        b
+        i
+        +
+        (
+        −
+        
+          a
+          ′
+        
+        )
+        +
+        (
+        −
+        
+          b
+          ′
+        
+        )
+        i
+        =
+        (
+        a
+        −
+        
+          a
+          ′
+        
+        )
+        +
+        (
+        b
+        −
+        
+          b
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle a+bi-(a'+b'i)=a+bi+(-a')+(-b')i=(a-a')+(b-b')i\,}
+  
+
+Exemple: 
+
+  
+    
+      
+        2
+        −
+        4
+        i
+        −
+        (
+        3
+        −
+        5
+        i
+        )
+        =
+        (
+        2
+        −
+        3
+        )
+        +
+        (
+        −
+        4
+        +
+        5
+        )
+        i
+        =
+        −
+        1
+        +
+        1
+        i
+        
+      
+    
+    {\displaystyle 2-4i-(3-5i)=(2-3)+(-4+5)i=-1+1i\,}
+  
+
+
+=== Multiplicació ===
+Per multiplicar dos nombres complexos es pot utilitzar qualsevol de les dues notacions:
+
+Notació cartesiana:
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        )
+        ⋅
+        (
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        i
+        )
+        =
+        a
+        ⋅
+        
+          a
+          ′
+        
+        +
+        a
+        ⋅
+        
+          b
+          ′
+        
+        i
+        +
+        b
+        i
+        ⋅
+        
+          a
+          ′
+        
+        +
+        b
+        i
+        ⋅
+        
+          b
+          ′
+        
+        i
+        
+      
+    
+    {\displaystyle (a+bi)\cdot (a'+b'i)=a\cdot a'+a\cdot b'i+bi\cdot a'+bi\cdot b'i\,}
+  
+
+Com que 
+  
+    
+      
+        i
+        ⋅
+        i
+        =
+        −
+        1
+      
+    
+    {\displaystyle i\cdot i=-1}
+  
+ i agrupant els sumands resulta que:
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        )
+        ⋅
+        (
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        i
+        )
+        =
+        (
+        a
+        ⋅
+        
+          a
+          ′
+        
+        −
+        b
+        .
+        
+          b
+          ′
+        
+        )
+        +
+        (
+        a
+        ⋅
+        
+          b
+          ′
+        
+        +
+        b
+        ⋅
+        
+          a
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle (a+bi)\cdot (a'+b'i)=(a\cdot a'-b.b')+(a\cdot b'+b\cdot a')i\,}
+  
+
+Exemple: 
+
+  
+    
+      
+        (
+        2
+        −
+        4
+        i
+        )
+        ⋅
+        (
+        3
+        +
+        5
+        i
+        )
+        =
+        (
+        2
+        ⋅
+        3
+        −
+        (
+        −
+        4
+        )
+        ⋅
+        5
+        )
+        +
+        (
+        2
+        ⋅
+        5
+        +
+        (
+        −
+        4
+        )
+        ⋅
+        3
+        )
+        =
+        26
+        −
+        2
+        i
+        
+      
+    
+    {\displaystyle (2-4i)\cdot (3+5i)=(2\cdot 3-(-4)\cdot 5)+(2\cdot 5+(-4)\cdot 3)=26-2i\,}
+  
+
+Notació polar
+
+  
+    
+      
+        
+          r
+          
+            ϕ
+          
+        
+        ⋅
+        
+          r
+          
+            
+              ϕ
+              ′
+            
+          
+          ′
+        
+        =
+        r
+        ⋅
+        
+          r
+          
+            ϕ
+            +
+            
+              ϕ
+              ′
+            
+          
+          ′
+        
+        
+      
+    
+    {\displaystyle r_{\phi }\cdot r'_{\phi '}=r\cdot r'_{\phi +\phi '}\,}
+  
+
+Exemple:
+
+  
+    
+      
+        
+          10
+          
+            30
+          
+        
+        ⋅
+        
+          5
+          
+            10
+          
+        
+        =
+        10
+        ⋅
+        
+          5
+          
+            30
+            +
+            10
+          
+        
+        =
+        
+          50
+          
+            40
+          
+        
+        
+      
+    
+    {\displaystyle 10_{30}\cdot 5_{10}=10\cdot 5_{30+10}=50_{40}\,}
+  
+
+
+==== Demostració ====
+Passant de notació cartesiana a polar s'obté:
+
+  
+    
+      
+        
+          r
+          
+            ϕ
+          
+        
+        ⋅
+        
+          
+            r
+          
+          
+            
+              
+                ϕ
+              
+              ′
+            
+          
+          ′
+        
+        =
+        
+          [
+          
+            r
+            cos
+            ⁡
+            
+              (
+              ϕ
+              )
+            
+            +
+            i
+            r
+            sin
+            ⁡
+            
+              (
+              ϕ
+              )
+            
+          
+          ]
+        
+        ⋅
+        
+          [
+          
+            
+              
+                r
+              
+              ′
+            
+            cos
+            ⁡
+            
+              (
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+              )
+            
+            +
+            i
+            
+              
+                r
+              
+              ′
+            
+            sin
+            ⁡
+            
+              (
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+              )
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle r_{\phi }\cdot {r}'_{{\phi }'}=\left[r\cos \left(\phi \right)+ir\sin \left(\phi \right)\right]\cdot \left[{r}'\cos \left({{\phi }'}\right)+i{r}'\sin \left({{\phi }'}\right)\right]}
+  
+
+Operant resulta:
+
+  
+    
+      
+        
+          r
+          
+            ϕ
+          
+        
+        ⋅
+        
+          
+            r
+          
+          
+            
+              
+                ϕ
+              
+              ′
+            
+          
+          ′
+        
+        =
+        r
+        
+          
+            r
+          
+          ′
+        
+        
+          [
+          
+            cos
+            ⁡
+            
+              (
+              ϕ
+              )
+            
+            cos
+            ⁡
+            
+              (
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+              )
+            
+            −
+            sin
+            ⁡
+            
+              (
+              ϕ
+              )
+            
+            sin
+            ⁡
+            
+              (
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+              )
+            
+          
+          ]
+        
+        +
+        r
+        
+          
+            r
+          
+          ′
+        
+        i
+        
+          [
+          
+            cos
+            ⁡
+            
+              (
+              ϕ
+              )
+            
+            sin
+            ⁡
+            
+              (
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+              )
+            
+            +
+            sin
+            ⁡
+            
+              (
+              ϕ
+              )
+            
+            cos
+            ⁡
+            
+              (
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+              )
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle r_{\phi }\cdot {r}'_{{\phi }'}=r{r}'\left[\cos \left(\phi \right)\cos \left({{\phi }'}\right)-\sin \left(\phi \right)\sin \left({{\phi }'}\right)\right]+r{r}'i\left[\cos \left(\phi \right)\sin \left({{\phi }'}\right)+\sin \left(\phi \right)\cos \left({{\phi }'}\right)\right]}
+  
+
+Que tenint en compte les identitats trigonomètriques del sinus i el cosinus de la suma d'angles i tornant a passar a notació polar s'obté:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  r
+                  
+                    ϕ
+                  
+                
+                ⋅
+                
+                  
+                    r
+                  
+                  
+                    
+                      
+                        ϕ
+                      
+                      ′
+                    
+                  
+                  ′
+                
+              
+              
+                
+                =
+                r
+                
+                  
+                    r
+                  
+                  ′
+                
+                cos
+                ⁡
+                
+                  (
+                  
+                    ϕ
+                    +
+                    
+                      
+                        ϕ
+                      
+                      ′
+                    
+                  
+                  )
+                
+                +
+                r
+                
+                  
+                    r
+                  
+                  ′
+                
+                i
+                sin
+                ⁡
+                
+                  (
+                  
+                    ϕ
+                    +
+                    
+                      
+                        ϕ
+                      
+                      ′
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    (
+                    
+                      r
+                      ⋅
+                      
+                        
+                          r
+                        
+                        ′
+                      
+                    
+                    )
+                  
+                  
+                    ϕ
+                    +
+                    
+                      
+                        ϕ
+                      
+                      ′
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}r_{\phi }\cdot {r}'_{{\phi }'}&=r{r}'\cos \left(\phi +{\phi }'\right)+r{r}'i\sin \left(\phi +{\phi }'\right)\\&=\left(r\cdot {r}'\right)_{\phi +{\phi }'}\end{aligned}}}
+  
+
+
+=== Divisió ===
+Per dividir dos nombres complexos s'utilitza normalment la notació polar, per ser la forma més fàcil. Tot i així també es pot operar amb la notació cartesiana.
+
+Notació polar
+Com que per multiplicar es multipliquen els mòduls i se sumen els angles, per trobar un nombre que multiplicat pel divisor doni el dividend (és a dir per a dividir el dividend entre el divisor i trobar el quocient) caldrà trobar un nombre que multiplicat pel mòdul del divisor doni el mòdul del dividend (és a dir caldrà dividir el mòdul del dividend entre el mòdul del divisor) i caldrà trobar un argument que sumat a l'argument del divisor doni l'argument del dividend (és a dir caldrà restar de l'argument del dividend l'argument del divisor).
+
+  
+    
+      
+        
+          
+            
+              r
+              
+                ϕ
+              
+            
+            
+              r
+              
+                
+                  
+                    ϕ
+                  
+                  ′
+                
+              
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                r
+                
+                  
+                    r
+                  
+                  ′
+                
+              
+            
+            )
+          
+          
+            ϕ
+            −
+            
+              
+                ϕ
+              
+              ′
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {r_{\phi }}{r_{{\phi }'}}}=\left({\frac {r}{{r}'}}\right)_{\phi -{\phi }'}}
+  
+
+Exemple:
+
+  
+    
+      
+        
+          
+            
+              10
+              
+                30
+              
+            
+            
+              5
+              
+                10
+              
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                10
+                5
+              
+            
+            )
+          
+          
+            30
+            −
+            10
+          
+        
+        =
+        
+          2
+          
+            20
+          
+        
+      
+    
+    {\displaystyle {\frac {10_{30}}{5_{10}}}=\left({\frac {10}{5}}\right)_{30-10}=2_{20}}
+  
+
+Notació cartesiana
+En notació cartesiana, multiplicant el numerador i el denominador pel conjugat del denominador queda en el denominador un nombre real que es pot dividir per separat de la part real i de la part imaginària.
+
+  
+    
+      
+        
+          
+            
+              a
+              +
+              b
+              
+                i
+              
+            
+            
+              
+                a
+                ′
+              
+              +
+              
+                b
+                ′
+              
+              
+                i
+              
+            
+          
+        
+        =
+        
+          
+            
+              (
+              a
+              +
+              b
+              
+                i
+              
+              )
+              ⋅
+              (
+              
+                a
+                ′
+              
+              −
+              
+                b
+                ′
+              
+              
+                i
+              
+              )
+            
+            
+              (
+              
+                a
+                ′
+              
+              +
+              
+                b
+                ′
+              
+              
+                i
+              
+              )
+              ⋅
+              (
+              
+                a
+                ′
+              
+              −
+              
+                b
+                ′
+              
+              
+                i
+              
+              )
+            
+          
+        
+        =
+        
+          
+            
+              a
+              ⋅
+              
+                a
+                ′
+              
+              −
+              a
+              ⋅
+              
+                b
+                ′
+              
+              
+                i
+              
+              +
+              b
+              
+                i
+              
+              ⋅
+              
+                a
+                ′
+              
+              −
+              b
+              
+                i
+              
+              ⋅
+              
+                b
+                ′
+              
+              
+                i
+              
+            
+            
+              
+                a
+                
+                  ′
+                  
+                    2
+                  
+                
+              
+              −
+              (
+              
+                b
+                ′
+              
+              
+                i
+              
+              
+                )
+                
+                  2
+                
+              
+            
+          
+        
+        =
+      
+    
+    {\displaystyle {\frac {a+b\mathbf {i} }{a'+b'\mathbf {i} }}={\frac {(a+b\mathbf {i} )\cdot (a'-b'\mathbf {i} )}{(a'+b'\mathbf {i} )\cdot (a'-b'\mathbf {i} )}}={\frac {a\cdot a'-a\cdot b'\mathbf {i} +b\mathbf {i} \cdot a'-b\mathbf {i} \cdot b'\mathbf {i} }{a'^{2}-(b'\mathbf {i} )^{2}}}=}
+  
+
+  
+    
+      
+        =
+        
+          
+            
+              (
+              a
+              ⋅
+              
+                a
+                ′
+              
+              +
+              b
+              ⋅
+              
+                b
+                ′
+              
+              )
+              +
+              (
+              b
+              ⋅
+              
+                a
+                ′
+              
+              −
+              a
+              ⋅
+              
+                b
+                ′
+              
+              )
+              
+                i
+              
+            
+            
+              
+                a
+                
+                  ′
+                  
+                    2
+                  
+                
+              
+              +
+              
+                b
+                
+                  ′
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle ={\frac {(a\cdot a'+b\cdot b')+(b\cdot a'-a\cdot b')\mathbf {i} }{a'^{2}+b'^{2}}}}
+  
+
+
+=== Potència ===
+El quadrat d'un nombre complex és tal com segueix:
+
+En notació cartesiana, cal emprar el Binomi de Newton; en concret, el quadrat (en potència de 2) és:
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        
+          i
+        
+        
+          )
+          
+            2
+          
+        
+        =
+        (
+        a
+        +
+        b
+        
+          i
+        
+        )
+        ⋅
+        (
+        a
+        +
+        b
+        
+          i
+        
+        )
+        =
+        (
+        a
+        ⋅
+        a
+        −
+        b
+        ⋅
+        b
+        )
+        +
+        (
+        a
+        ⋅
+        b
+        +
+        b
+        ⋅
+        a
+        )
+        
+          i
+        
+        =
+        (
+        
+          a
+          
+            2
+          
+        
+        −
+        
+          b
+          
+            2
+          
+        
+        )
+        +
+        (
+        2
+        a
+        b
+        )
+        
+          i
+        
+      
+    
+    {\displaystyle (a+b\mathbf {i} )^{2}=(a+b\mathbf {i} )\cdot (a+b\mathbf {i} )=(a\cdot a-b\cdot b)+(a\cdot b+b\cdot a)\mathbf {i} =(a^{2}-b^{2})+(2ab)\mathbf {i} }
+  
+
+Aquest procediment és feixuc i llarg (especialment en potències de graus superiors a 2 o 3). En canvi, en notació polar és força més senzill:
+
+En notació polar i generalitzant (on n=exponent):
+
+  
+    
+      
+        (
+        
+          r
+          
+            ϕ
+          
+        
+        
+          )
+          
+            n
+          
+        
+        =
+        
+          r
+          
+            ϕ
+            ⋅
+            n
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle (r_{\phi })^{n}=r_{\phi \cdot n}^{n}}
+  
+
+
+=== Arrels ===
+L'arrel quadrada de a + bi (amb b ≠ 0) és 
+  
+    
+      
+        ±
+        (
+        γ
+        +
+        δ
+        i
+        )
+      
+    
+    {\displaystyle \pm (\gamma +\delta i)}
+  
+, on
+
+  
+    
+      
+        γ
+        =
+        
+          
+            
+              
+                a
+                +
+                
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      b
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \gamma ={\sqrt {\frac {a+{\sqrt {a^{2}+b^{2}}}}{2}}}}
+  
+
+i
+
+  
+    
+      
+        δ
+        =
+        sgn
+        ⁡
+        (
+        b
+        )
+        
+          
+            
+              
+                −
+                a
+                +
+                
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                    +
+                    
+                      b
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \delta =\operatorname {sgn}(b){\sqrt {\frac {-a+{\sqrt {a^{2}+b^{2}}}}{2}}}}
+  
+
+
+=== Conjugat ===
+
+El conjugat complex del nombre complex z = x + yi es defineix com a x − yi. Es denota com 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ o 
+  
+    
+      
+        
+          z
+          
+            ∗
+          
+        
+        
+      
+    
+    {\displaystyle z^{*}\,}
+  
+. Geomètricament, 
+  
+    
+      
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {z}}}
+  
+ és la reflexió de z sobre l'eix real. En particular, si conjuguem dos cops el nombre complex original: 
+  
+    
+      
+        
+          
+            
+              
+                
+                  z
+                  ¯
+                
+              
+              ¯
+            
+          
+        
+        =
+        z
+      
+    
+    {\displaystyle {\bar {\bar {z}}}=z}
+  
+.
+Les parts reals i imaginàries d'un nombre complex poden ser extretes usant el conjugat:
+
+  
+    
+      
+        Re
+        
+        (
+        z
+        )
+        =
+        
+          
+            
+              1
+              2
+            
+          
+        
+        (
+        z
+        +
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+        ,
+        
+      
+    
+    {\displaystyle \operatorname {Re} \,(z)={\tfrac {1}{2}}(z+{\bar {z}}),\,}
+  
+
+  
+    
+      
+        Im
+        
+        (
+        z
+        )
+        =
+        
+          
+            
+              1
+              
+                2
+                i
+              
+            
+          
+        
+        (
+        z
+        −
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        )
+        .
+        
+      
+    
+    {\displaystyle \operatorname {Im} \,(z)={\tfrac {1}{2i}}(z-{\bar {z}}).\,}
+  
+
+A més, un nombre complex és real si, i només si, el seu conjugat és igual a ell.
+La conjugació compleix la propietat distributiva sobre les operacions aritmètiques estàndard:
+
+  
+    
+      
+        
+          
+            
+              z
+              +
+              w
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        +
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle {\overline {z+w}}={\bar {z}}+{\bar {w}},\,}
+  
+
+  
+    
+      
+        
+          
+            
+              z
+              w
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle {\overline {zw}}={\bar {z}}{\bar {w}},\,}
+  
+
+  
+    
+      
+        
+          
+            
+              (
+              z
+              
+                /
+              
+              w
+              )
+            
+            ¯
+          
+        
+        =
+        
+          
+            
+              z
+              ¯
+            
+          
+        
+        
+          /
+        
+        
+          
+            
+              w
+              ¯
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\overline {(z/w)}}={\bar {z}}/{\bar {w}}\,}
+  
+ si w és no nul
+L'invers d'un nombre complex diferent de zero z = x + yi és donat per:
+
+  
+    
+      
+        
+          
+            1
+            z
+          
+        
+        =
+        
+          
+            
+              
+                z
+                ¯
+              
+            
+            
+              z
+              
+                
+                  
+                    z
+                    ¯
+                  
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                z
+                ¯
+              
+            
+            
+              
+                x
+                
+                  2
+                
+              
+              +
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{z}}={\frac {\bar {z}}{z{\bar {z}}}}={\frac {\bar {z}}{x^{2}+y^{2}}}.}
+  
+
+Aquesta fórmula es pot fer servir per calcular l'invers d'un nombre complex si ve donat en notació cartesiana.
+
+
+== Caracteritzacions i representacions dels nombres complexos ==
+Tot i que normalment no són útils, les representacions alternatives dels nombres complexos poden donar una visió una mica més profunda sobre la seva naturalesa.
+
+
+=== Representació matricial dels nombres complexos ===
+Una representació particularment elegant, representa els nombres complexos com a matrius 2×2 amb coeficients reals que corresponen a aplicacions que dilaten i giren els punts del pla. Cada una d'aquestes matrius té la forma
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  
+                  
+                  a
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}a&-b\\b&\;\;a\end{pmatrix}}}
+  
+
+on a i b són nombres real. La suma i el producte de dues matrius d'aquest tipus és una matriu que també té la mateixa forma, i l'operació producte de matrius d'aquesta forma és commutatiu (fixeu-vos que el producte de matrius en general no ho és). Tota matriu d'aquesta forma diferent de zero és invertible, i la seva inversa és també de la mateixa forma. Per tant, les matrius d'aquesta forma són un cos isomorf al cos dels nombres complexos. Cada una d'aquestes matrius es pot escriure com
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  
+                  
+                  a
+                
+              
+            
+            )
+          
+        
+        =
+        a
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                  
+                  1
+                
+              
+            
+            )
+          
+        
+        +
+        b
+        
+          
+            (
+            
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}a&-b\\b&\;\;a\end{pmatrix}}=a{\begin{pmatrix}1&\;\;0\\0&\;\;1\end{pmatrix}}+b{\begin{pmatrix}0&-1\\1&\;\;0\end{pmatrix}}}
+  
+
+El que suggereix que s'hauria d'identificar el nombre real 1 amb la matriu identitat
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                  
+                  1
+                
+              
+            
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{pmatrix}1&\;\;0\\0&\;\;1\end{pmatrix}},}
+  
+
+I la unitat imaginària i amb
+
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  0
+                
+                
+                  −
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  
+                  
+                  0
+                
+              
+            
+            )
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{pmatrix}0&-1\\1&\;\;0\end{pmatrix}},}
+  
+
+Una rotació en sentit contrari a les agulles del rellotge de 90 graus. Fixeu-vos que el quadrat d'aquesta última matriu és igual a la matriu 2×2 que representa −1.
+El quadrat del valor absolut d'un nombre complex expressat com una matriu és igual al determinant de la matriu.
+
+  
+    
+      
+        
+          |
+        
+        z
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          
+            |
+            
+              
+                
+                  a
+                
+                
+                  −
+                  b
+                
+              
+              
+                
+                  b
+                
+                
+                  a
+                
+              
+            
+            |
+          
+        
+        =
+        (
+        
+          a
+          
+            2
+          
+        
+        )
+        −
+        (
+        (
+        −
+        b
+        )
+        (
+        b
+        )
+        )
+        =
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle |z|^{2}={\begin{vmatrix}a&-b\\b&a\end{vmatrix}}=(a^{2})-((-b)(b))=a^{2}+b^{2}.}
+  
+
+Si la matriu es veu com una transformació del pla, llavors la transformació gira els punts un angle igual a l'argument del nombre complex i li aplica un factor d'escala igual al valor absolut del nombre complex. El conjugat del nombre complex z correspon a la transformació que gira el mateix angle que z però en sentit oposat i aplica el mateix factor d'escala que z; això es pot representar per la transposada de la matriu corresponent a z.
+Si els elements de les matrius són ells mateixos nombres complexos, llavors l'àlgebra que resulta és la dels quaternions. En altres paraules, la representació matricial és una forma d'expressar la construcció de Cayley-Dickson d'àlgebres.
+També s'ha de destacar que els dos vectors propis de la matriu 2x2 que representa un nombre complex són el mateix nombre complex i el seu conjugat.
+Mentre que l'anterior és una representació de C en les matrius reals (2 x 2), no és l'única. Qualsevol matriu
+
+  
+    
+      
+        M
+        =
+        
+          
+            (
+            
+              
+                
+                  p
+                
+                
+                  q
+                
+              
+              
+                
+                  r
+                
+                
+                  −
+                  p
+                
+              
+            
+            )
+          
+        
+        ,
+        
+        
+          p
+          
+            2
+          
+        
+        +
+        q
+        r
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle M={\begin{pmatrix}p&q\\r&-p\end{pmatrix}},\quad p^{2}+qr+1=0}
+  
+
+té la propietat que el seu quadrat és la matriu identitat multiplicada per -1.
+Llavors 
+  
+    
+      
+        {
+        z
+        =
+        a
+        I
+        +
+        b
+        M
+        :
+        a
+        ,
+        b
+        ∈
+        R
+        }
+      
+    
+    {\displaystyle \{z=aI+bM:a,b\in R\}}
+  
+ també és isomorf al cos C.
+
+
+=== Espai vectorial real ===
+C és un espai vectorial real de dimensió dos.
+A diferència dels reals, el conjunt dels nombres complexos no pot ser totalment ordenat de cap manera que sigui compatible amb les seves operacions aritmètiques: C no es pot transformar en un cos ordenat. De forma més general, cap cos que contingui una arrel quadrada de −1 pot ser ordenat.
+Les aplicacions lineals C → C tenen la forma general
+
+  
+    
+      
+        f
+        (
+        z
+        )
+        =
+        a
+        z
+        +
+        b
+        
+          
+            z
+            ¯
+          
+        
+      
+    
+    {\displaystyle f(z)=az+b{\overline {z}}}
+  
+
+Amb coeficients complexos a i b. Només el primer terme és C-lineal, en altres paraules, només el primer terme és holomorfic; el segon terme és real-differenciable, però si b ≠ 0, no satisfà les equacions de Cauchy-Riemann.
+La funció
+
+  
+    
+      
+        f
+        (
+        z
+        )
+        =
+        a
+        z
+        
+      
+    
+    {\displaystyle f(z)=az\,}
+  
+
+es correspon amb rotacions combinades amb escalats, mentre que la funció
+
+  
+    
+      
+        f
+        (
+        z
+        )
+        =
+        b
+        
+          
+            z
+            ¯
+          
+        
+      
+    
+    {\displaystyle f(z)=b{\overline {z}}}
+  
+
+es correspon amb reflexions combinades amb escalats.
+
+
+=== Solucions d'equacions polinòmiques ===
+Una arrel del polinomi p és un nombre complex z tal que p(z) = 0. Un resultat sorprenent en anàlisi complexa és que tots els polinomis de grau n amb coeficients reals o complexos tenen exactament n arrels complexes (contant les arrels múltiples d'acord amb la seva multiplicitat). Això es coneix com el teorema fonamental de l'àlgebra, i expressa que els nombres complexos són un cos algebraicament tancat. Per tant, els nombres complexos són la clausura algebraica dels nombres reals, tal com es descriu més avall.
+
+
+=== Construcció i caracterització algebraica ===
+Una construcció de C és com una extensió de cos del cos R dels nombres reals, en el qual s'hi afegeix una arrel de x²+1. Per construir aquesta extensió, es comença amb l'anell dels polinomis R[x] de coeficients reals amb la variable x. Com que el polinomi x²+1 és irreductible sobre R, l'anell quocient R[x]/(x²+1) serà un cos. Aquesta extensió contindrà dues arrels quadrades de -1; se'n tria una i es denota i. El conjunt {1, i} formarà una base per l'extensió del cos sobre els reals, això vol dir que cada element del cos estès es pot escriure de la forma a+ b•i. De forma equivalent, els elements del cos estes es poden escriure com a parelles ordenades de nombres reals (a,b).
+Tot i que només s'han afegit explícitament les arrels de x²+1 el cos complex que resulta és de fet algebraicament tancat – cada polinomi amb coeficients a C es descompon en factors que són polinomis lineals amb coeficients a C. Com que cada cos només té una clausura algebraica (tret d'isomorfismes), els nombres complexos es poden caracteritzar com la clausura algebraica dels nombres reals.
+L'extensió de cos dona el ben conegut pla complex, però només el caracteritza algebraicament. El cos C es caracteritza (tret d'isomorfismes de cos) per les següents tres propietats:
+
+té característica 0
+el seu grau de transcendència sobre el cos primer és la cardinalitat del continu
+és algebraicament tancat
+Una conseqüència d'aquesta caracterització és que C conté molts subcossos propis que són isomorfs amb C (el mateix és cert de R, que conté molts subcossos propis isomorfs amb si mateix). Tal com es descriu més avall, calen consideracions topològiques per distingir aquests subcossos dels propis cossos C i R.
+
+
+=== Caracterització com a cos topològic ===
+Des del punt de vista algebraic, el conjunt dels nombres complexos és un cos. Per tant, hi ha operacions d'addició i multiplicació. Aquestes operacions amb nombres complexos s'efectuen de la mateixa manera que si fossin polinomis en la "variable" i, però tenint en compte que i²=-1. Així doncs,
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        )
+        +
+        (
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        i
+        )
+        =
+        (
+        a
+        +
+        
+          a
+          ′
+        
+        )
+        +
+        (
+        b
+        +
+        
+          b
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle (a+bi)+(a'+b'i)=(a+a')+(b+b')i\,}
+  
+,
+
+  
+    
+      
+        (
+        a
+        +
+        b
+        i
+        )
+        ⋅
+        (
+        
+          a
+          ′
+        
+        +
+        
+          b
+          ′
+        
+        i
+        )
+        =
+        (
+        a
+        
+          a
+          ′
+        
+        −
+        b
+        
+          b
+          ′
+        
+        )
+        +
+        (
+        a
+        
+          b
+          ′
+        
+        +
+        b
+        
+          a
+          ′
+        
+        )
+        i
+        
+      
+    
+    {\displaystyle (a+bi)\cdot (a'+b'i)=(aa'-bb')+(ab'+ba')i\,}
+  
+.
+Formalment, el cos C es pot definir com l'extensió R[i] del cos dels nombres reals.
+La importància fonamental d'aquesta extensió es deu al fet que dintre dels complexos es poden resoldre equacions algebraiques que dintre dels reals no tenen solució. Per exemple, l'equació x²=-1 no té cap solució real (ja que el quadrat d'un nombre real sempre és més gran o igual que zero), mentre que dins del complexos té dues solucions, i i el seu oposat, -i.
+Aquest és un fet més general: segons el teorema fonamental de l'àlgebra, dins de C qualsevol equació algebraica de grau n té n solucions (comptades amb la seva multiplicitat); això també s'expresssa dient que C és un cos algebraicament tancat.
+Des del punt de vista històric, aquest va ser l'origen dels nombre complexos, que van ser introduïts per Cardano i Bombelli al s. XVI com a eina per a resoldre l'equació de tercer grau.
+Tal com s'ha explicat, la caracterització algebraica de C no permet considerar algunes de les seves propietats topològiques més importants. Aquestes propietats són claus per a l'estudi de l'anàlisi complexa, on els nombres complexos s'estudien com cossos topològics.
+Les següents propietats caracteritzen C com un cos topològic: 
+
+C és un cos.
+C conté un subconjunt P d'elements diferents de zero que compleix:
+P és tancat respecte de la suma, la multiplicació i el càlcul d'¡inverses multiplicatives.
+Si x i y són elements diferents de P, llavors o bé x-y o y-x són a P
+Si S és un subconjunt no buit de P, llavors S+P=x+P per algun x de C.
+C té un automorfisme involutiu no trivial x→x* , que fixa P i és tal que xx*  és de P per qualsevol x de C diferent de zero.
+Donat un conjunt amb aquestes propietats, es pot definir una topologia a base d'agafar els conjunts
+
+  
+    
+      
+        B
+        (
+        x
+        ,
+        p
+        )
+        =
+        {
+        y
+        
+          |
+        
+        p
+        −
+        (
+        y
+        −
+        x
+        )
+        (
+        y
+        −
+        x
+        
+          )
+          
+            ∗
+          
+        
+        ∈
+        P
+        }
+      
+    
+    {\displaystyle B(x,p)=\{y|p-(y-x)(y-x)^{*}\in P\}}
+  
+
+com a base, on x varia sobre el cos i p varia sobre P.
+Per veure que aquestes propietats caracteritzen C com un cos topològic, s'observa que P ∪ {0} ∪ -P és un cos ordenat Dedekind-complet i per tant es pot identificar amb els nombres reals R per mitjà d'un únic isomorfisme de cossos. es veu fàcilment que l'última propietat implica que el grup de Galois sobre els nombres reals és d'ordre dos, el que completa la caracterització.
+Pontryagin va demostrar que els únics cossos topològics connexos localment compactes són R i C. Això dona una altra caracterització de C com a cos topològic, ja que C es pot distingir de R observant que el conjunt de nombres complexos diferents de zero és connex, mentre que el conjunt dels nombres reals diferents de zero no hi és.
+
+
+== Història ==
+La primera referència coneguda d'arrels quadrades de nombres negatius prové del treball dels matemàtics grecs, com Heró d'Alexandria al segle I abans de Crist, com a resultat d'una impossible secció d'una piràmide. Tot i això, no es va acceptar la seva existència fins molts anys després, ja que els antics grecs refusaven tot nombre que no tingués una relació amb la geometria. Per ells, tot nombre representava la longitud d'un segment o l'àrea d'una figura plana. Consideraven que la geometria era el cor de les matemàtiques, el que va retardar considerablement el desenvolupament dels sistemes numèrics.
+Els nombres complexos obtingueren més importància al segle xvi, quan matemàtics italians com Tartaglia o Cardano van trobar fórmules que donaven les arrels exactes dels polinomis de segon i tercer grau. Encara que només estaven interessats en les arrels reals d'aquest tipus d'equacions, es trobaven amb la necessitat d'enfrontar-se amb arrels de nombres negatius.
+Per exemple, la fórmula per resoldre l'equació de tercer grau de Tartaglia dona la solució següent a l'equació x³ − x = 0:
+
+  
+    
+      
+        
+          
+            1
+            
+              3
+            
+          
+        
+        
+          (
+          
+            
+              
+                
+                  −
+                  1
+                
+              
+              
+                1
+                
+                  /
+                
+                3
+              
+            
+            +
+            
+              
+                1
+                
+                  
+                    
+                      −
+                      1
+                    
+                  
+                  
+                    1
+                    
+                      /
+                    
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle {\frac {1}{\sqrt {3}}}\left({\sqrt {-1}}^{1/3}+{\frac {1}{{\sqrt {-1}}^{1/3}}}\right).}
+  
+
+A primera vista això sembla no tenir sentit. Tanmateix els càlculs formals amb nombres complexos mostren que l'equació z3 = i té solucions -i, 
+  
+    
+      
+        
+          
+            
+              
+                
+                  3
+                
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                1
+                2
+              
+            
+          
+        
+        i
+      
+    
+    {\displaystyle {\scriptstyle {\frac {\sqrt {3}}{2}}}+{\scriptstyle {\frac {1}{2}}}i}
+  
+ i 
+  
+    
+      
+        
+          
+            
+              
+                
+                  −
+                  
+                    
+                      3
+                    
+                  
+                
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                1
+                2
+              
+            
+          
+        
+        i
+      
+    
+    {\displaystyle {\scriptstyle {\frac {-{\sqrt {3}}}{2}}}+{\scriptstyle {\frac {1}{2}}}i}
+  
+. Substituint-los en lloc de 
+  
+    
+      
+        
+          
+            
+              
+                
+                  −
+                  1
+                
+              
+              
+                1
+                
+                  /
+                
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\scriptstyle {\sqrt {-1}}^{1/3}}}
+  
+ en la fórmula de Tartaglia i simplificant, s'obté 0, 1 i −1 com les solucions de x3 – x = 0. Rafael Bombelli va ser el primer a explorar explícitament aquestes aparentment paradoxals solucions d'equacions cúbiques i va desenvolupar les regles de l'aritmètica dels nombres complexos per resoldre aquests assumptes.
+Això era doblement pertorbador atès que a l'època ni tan sols es considerava que els nombres negatius estiguessin ben fonamentats.
+El terme imaginari per aquestes quantitats el va encunyar Descartes al segle xvii.
+Una altra font de confusió va ser que l'equació 
+  
+    
+      
+        
+          
+            
+              −
+              1
+            
+          
+          
+            2
+          
+        
+        =
+        
+          
+            −
+            1
+          
+        
+        
+          
+            −
+            1
+          
+        
+        =
+        −
+        1
+      
+    
+    {\displaystyle {\sqrt {-1}}^{2}={\sqrt {-1}}{\sqrt {-1}}=-1}
+  
+ semblava ser capriciosament incoherent amb la identitat algebraica 
+  
+    
+      
+        
+          
+            a
+          
+        
+        
+          
+            b
+          
+        
+        =
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\displaystyle {\sqrt {a}}{\sqrt {b}}={\sqrt {ab}}}
+  
+, que és vàlida per a nombres reals positius a i b, i que també es feia servir en càlculs amb nombres complexos amb un dels a i b positiu i l'altre negatiu. L'ús incorrecte d'aquesta identitat (i la identitat relacionada 
+  
+    
+      
+        
+          1
+          
+            /
+          
+          
+            
+              a
+            
+          
+          =
+          
+            
+              1
+              
+                /
+              
+              a
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle 1/{\sqrt {a}}={\sqrt {1/a}}}
+  
+) en el cas que els dos a i b són negatius va captivar fins i tot a Euler. Aquesta dificultat finalment va conduir a la convenció d'utilitzar el símbol i en lloc de 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}}
+  
+ per guardar-se'n d'aquesta equivocació.
+Al segle xviii els nombres complexos van guanyar un ús més ample, a mesura que s'adonaven que la manipulació formal d'expressions complexes es podria fer servir per simplificar càlculs que impliquen funcions trigonomètriques. Per exemple, el 1730 Abraham de Moivre es va fixar que les complicades identitats, que relacionen funcions trigonomètriques d'un múltiple enter d'un angle amb potències de funcions trigonomètriques d'aquell angle, es podrien expressar simplement per la ben coneguda fórmula que avui porta el seu nom, la fórmula de De Moivre:
+
+  
+    
+      
+        (
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        
+          )
+          
+            n
+          
+        
+        =
+        cos
+        ⁡
+        n
+        θ
+        +
+        i
+        sin
+        ⁡
+        n
+        θ
+        
+      
+    
+    {\displaystyle (\cos \theta +i\sin \theta )^{n}=\cos n\theta +i\sin n\theta \,}
+  
+
+El 1748 Leonhard Euler anava més enllà i obtenia la fórmula d'Euler de l'anàlisi complexa:
+
+  
+    
+      
+        cos
+        ⁡
+        θ
+        +
+        i
+        sin
+        ⁡
+        θ
+        =
+        
+          e
+          
+            i
+            θ
+          
+        
+        
+      
+    
+    {\displaystyle \cos \theta +i\sin \theta =e^{i\theta }\,}
+  
+
+a base de manipular formalment la sèrie de potències complexa i observant que aquesta fórmula es podria fer servir per reduir qualsevol identitat trigonomètrica a identitats exponencials molt més simples.
+L'existència de nombres complexos no fou completament acceptada fins a la seva interpretació geomètrica que fou descrita per Wessel el 1799, redescoberta uns anys més tard i popularitzada per Gauss.
+La memòria de Wessel apareixia en els Proceedings de l'Acadèmia de Copenhaguen del 1799, i és extremadament clara i completa, fins i tot en comparació amb treballs moderns. També estudia l'esfera, i dona una teoria de quaternions a partir de la qual desenvolupa una trigonometria esfèrica completa. El 1804 l'Abbé Buée independentment arribava a la mateixa idea que havia suggerit Wallis, que 
+  
+    
+      
+        ±
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle \pm {\sqrt {-1}}}
+  
+ hauria de representar una recta de longitud unitat, i la seva negativa, perpendicular a l'eix real. L'article de Buée no es va publicar fins a 1806, any en què Jean-Robert Argand també publicava un pamflet sobre el mateix tema. És a l'assaig d'Argand al que generalment s'atribueix avui la fonamentació científica per la representació gràfica dels nombres complexos. No obstant això, el 1831 Gauss va trobar la teoria bastant desconeguda, i el 1832 va publicar la seva memòria principal sobre el tema, portant-lo així de forma prominent davant del món matemàtic. També s'hauria de fer de menció un excel·lent petit tractat de Mourey (1828), en el qual s'estableixen científicament els fonaments per la teoria de nombres direccionals. L'acceptació general de la teoria és deguda, en no poca mesura, a causa dels treballs d'Augustin Louis Cauchy i Niels Henrik Abel, i especialment l'últim, que va ser el primer a fer servir de forma atrevida els nombres complexos amb un èxit ben conegut.
+Els termes comuns utilitzats en la teoria es deuen principalment als fundadors. Argand anomenava 
+  
+    
+      
+        cos
+        ⁡
+        ϕ
+        +
+        i
+        sin
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle \cos \phi +i\sin \phi }
+  
+ el factor de direcció, i 
+  
+    
+      
+        r
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle r={\sqrt {a^{2}+b^{2}}}}
+  
+ el mòdul; Cauchy (1828) anomenava 
+  
+    
+      
+        cos
+        ⁡
+        ϕ
+        +
+        i
+        sin
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle \cos \phi +i\sin \phi }
+  
+ la forma reduïda (l'expression réduite); Gauss feia servir i per 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}}
+  
+, va introduir el terme nombre complex per 
+  
+    
+      
+        a
+        +
+        b
+        i
+      
+    
+    {\displaystyle a+bi}
+  
+, i anomenava 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}+b^{2}}
+  
+ la norma.
+L'expressió coeficient de direcció, sovint utilitzat per a 
+  
+    
+      
+        cos
+        ⁡
+        ϕ
+        +
+        i
+        sin
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle \cos \phi +i\sin \phi }
+  
+, és degut a Hankel (1867), i valor absolut, per a mòdul, és degut a Weierstrass.
+Seguint a Cauchy i Gauss hi ha hagut un cert nombre de contribuents de primera fila, dels quals els següents s'han d'esmentar especialment: Kummer (1844), Leopold Kronecker (1845), Scheffler (1845, 1851, 1880), Bellavitis (1835, 1852), Peacock (1845), i De Morgan (1849). Möbius també s'ha d'esmentar per les seves nombroses memòries sobre les aplicacions geomètriques dels nombres complexos, i Dirichlet per l'expansió de la teoria per incloure-hi els primers, les congruències, la reciprocitat, etc., com en el cas dels nombres reals.
+Un anell (matemàtiques) o un cos complex és un conjunt de nombres complexos que és tancat respecte a l'addició, la subtracció, i la multiplicació. Gauss va estudiar els nombres complexos de la forma a + bi, on a' i b són enters, o racionals (i i és una de les dues arrels de 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{2}+1=0}
+  
+). El seu alumne, Ferdinand Eisenstein, va estudiar el tipus 
+  
+    
+      
+        a
+        +
+        b
+        ω
+      
+    
+    {\displaystyle a+b\omega }
+  
+, on 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+  
+ és una arrel complexa de 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+        −
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{3}-1=0}
+  
+. Altres classes d'aquest tipus (anomenades cossos ciclotòmics) de nombres complexos s'obtenen a partir de les arrels de la unitat 
+  
+    
+      
+        
+          x
+          
+            k
+          
+        
+        −
+        1
+        =
+        0
+      
+    
+    {\displaystyle x^{k}-1=0}
+  
+ per a valors més alts de k. Aquesta generalització és en gran part deguda a Kummer, que també va inventar els nombres ideals, que van ser expressats com entitats geomètriques per Felix Klein el 1893. La teoria general de cossos va ser creada per Évariste Galois, que estudiava els cossos generats per les arrels de qualsevol equació polinòmica d'una variable.
+Els últims autors (des de 1884) sobre la teoria general inclouen Weierstrass, Schwarz, Richard Dedekind, Otto Hölder, Henri Poincaré, Eduard Study, i Alexander MacFarlane.
+
+
+== Aplicacions ==
+Les paraules "real" i "imaginari" eren significatives quan els nombres complexos es feien servir principalment com a ajut per manipular nombres "reals", amb només la part "real" emprada directament per descriure el món. Aplicacions posteriors, i especialment el descobriment de la mecànica quàntica, mostra que la natura no té cap preferència pels nombres "reals" i les seves descripcions més reals sovint exigeixen nombres complexos, en els que els seves parts "imaginaries" són exactament tan físiques com les seves parts "reals".
+
+
+=== Teoria del control ===
+En teoria de control, els sistemes es transformen sovint des del domini temporal al domini freqüèncial fent servir la transformada de Laplace. Llavors s'analitzen els pols i els zeros del sistema al pla complex. Les tècniques del lloc de les arrels, el diagrama de Nyquist, i el diagrama de Nichols fan servir totes el pla complex.
+En el mètode del lloc de les arrels, és especialment important si els pols i els zeros estan als semiplans de l'esquerra o de la dreta, és a dir, tenen la part real més gan o més petita que zero. Si un sistema té pols que són
+
+en el semiplà de la dreta, serà inestable,
+tots en el semiplà de l'esquerra, serà estable,
+a l'eix imaginari, tindrà estabilitat marginal.
+Si un sistema té zeros en el semiplà de la dreta, és un sistema de fase no mínima.
+
+
+=== Anàlisi del senyal ===
+Els nombres complexos es fan servir en anàlisi del senyal i en altres camps, per obtenir una descripció adequada de senyals que varien periòdicament. Per funcions reals donades que representen quantitats físiques, sovint en termes de sinus i cosinus, es fan servir les funcions complexes corresponents de les que es prenen les parts reals, de forma que representen les quantitats originals. Per a una ona de sinusoidal d'una freqüència donada, el valor absolut |z| del corresponent z és l'amplitud i l'argument arg(z) la fase.
+Si es fa servir l'anàlisi de Fourier per escriure un senyal donat amb valors reals com a suma de funcions periòdiques, aquestes funcions periòdiques s'escriuen sovint com funcions amb valors complexos de la forma
+
+  
+    
+      
+        f
+        (
+        t
+        )
+        =
+        z
+        
+          e
+          
+            i
+            ω
+            t
+          
+        
+        
+      
+    
+    {\displaystyle f(t)=ze^{i\omega t}\,}
+  
+
+on ω representa la freqüència angular i el nombre complex z codifica la fase i l'amplitud tal com s'ha explicat abans.
+En enginyeria elèctrica, la transformada de Fourier es fa servir per analitzar voltatges i corrents variables. Llavors es pot unificar el tractament de resistències, condensadors, i inductàncies introduint resistències imaginàries, que depenen de la freqüència pels dos últims components i que combinant les tres en un nombre complex senzill s'anomena la impedància. (Els enginyers elèctrics i alguns físics fan servir la lletra j per representar la unitat imaginària, ja que i es reserva típicament per a corrents i pot crear confusió.) Aquest enfocament s'anomena càlcul emprant Fasors. Aquesta aplicació també s'estén al processament digital del senyal i al processament digital de la imatge, per fer-ho s'utilitzen versions digitals d'anàlisi de Fourier (i anàlisi de wavelet) per transmetre, comprimir, restaurar, i en resum, processar senyals d'àudio digitals, imatges, fitxers, i senyals de vídeo.
+
+
+=== Integrals impròpies ===
+En matemàtiques aplicades, els nombres complexos sovint es fan servir per calcular certes integrals impròpies amb valors reals, per mitjà de funcions amb valors complexos. Hi ha uns quants mètodes per fer-ho; vegeu mètodes d'integració de contorn.
+
+
+=== Mecànica quàntica ===
+El cos dels nombres complexos és rellevant en la formulació matemàtica de la mecànica quàntica on els espais de Hilbert complexos proporcionen el context per a una formulació adequada i potser la més estàndard. Les fórmules fonamentals originals de la mecànica quàntica (l'equació de Schrödinger i la mecànica matricial de Heisenberg) fan servir els nombres complexos.
+
+
+=== Relativitat ===
+En relativitat especial i general, algunes fórmules sobre la mètrica en l'espaitemps es tornen més simples si es considera que la variable temps és imaginària. (Això ja no és habitual en relativitat clàssica, però es fa servir essencialment en teoria quàntica de camps.) Els nombres complexos són essencials pels espinors, que són una generalització dels tensors utilitzats en relativitat.
+
+
+=== Matemàtiques aplicades ===
+En equacions diferencials, és habitual trobar primer totes les arrels complexes r de l'equació característica d'una equació diferencial lineal i llavors intentar resoldre el sistema en termes de funcions base de la forma f(t) = ert.
+
+
+=== Dinàmica de fluids ===
+En dinàmica de fluids, les funcions complexes es fan servir per descriure el flux potencial en dues dimensions.
+
+
+=== Fractals ===
+Certs fractals es dibuixen al pla complex, per exemple el conjunt de Mandelbrot i els conjunts de Julia.
+
+
+== Curiositats ==
+
+
+=== Els nombres complexos i els polígons regulars ===
+Donada una potència d'un nombre complex d'exponent 1/n (arrel n, on n ∈ ℝ), les seves n solucions en l'espai complex donen lloc a n vectors que són, alhora, vectors posició dels vèrtexs d'un polígon regular de n vèrtexs i centre a l'origen de coordenades.
+
+
+== Vegeu també ==
+Residu (anàlisi complexa).
+Mòdul d'un nombre complex.
+
+
+== Referències ==

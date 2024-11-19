@@ -1,0 +1,271 @@
+Lineaire algebra is een deelgebied van de wiskunde, dat zich bezighoudt met de studie van vectoren, vectorruimten en lineaire transformaties, functies die vectoren volgens bepaalde regels op andere vectoren afbeelden. De lineaire algebra en de wiskunde van stelsels van lineaire vergelijkingen zijn nauw met elkaar verbonden.
+De lineaire algebra staat centraal in de moderne wiskunde en haar toepassingen. Een elementaire toepassing van de lineaire algebra is het oplossen van stelsels van lineaire vergelijkingen in meerdere onbekenden. Meer geavanceerde toepassingen zijn alomtegenwoordig in zo uiteenlopende gebieden als de abstracte algebra en de functionaalanalyse. Het kent een concrete representatie in de analytische meetkunde en wordt algemeen gemaakt in de operatorentheorie. De lineaire algebra wordt zowel in de natuurwetenschappen als in de sociale wetenschappen veel gebruikt. Niet-lineaire wiskundige modellen worden vaak benaderd door lineaire modellen.
+Een lijn in de euclidische ruimte 
+  
+    
+      
+        
+          R
+          
+            3
+          
+        
+      
+    
+    {\displaystyle R^{3}}
+  
+, maar ook vlakken, die door de oorsprong gaan, zijn een lineaire deelruimte van de 
+  
+    
+      
+        
+          R
+          
+            3
+          
+        
+      
+    
+    {\displaystyle R^{3}}
+  
+.
+
+
+== Geschiedenis ==
+Veel van de basisinstrumenten van de lineaire algebra, in het bijzonder die met betrekking tot de oplossing van stelsels lineaire vergelijkingen, werden al in de klassieke oudheid gebruikt. Maar de studie van vectoren en vectorruimten begint pas in de jaren 1600. De ontwikkeling van het gebruik van determinanten speelde daarbij een belangrijke rol.
+Het onderwerp begon haar moderne vorm aan te nemen in het midden van de 19e eeuw, toen veel ideeën en methoden uit vorige eeuwen werden veralgemeend in de abstracte algebra. Matrices en tensoren werden aan het begin van de 20e eeuw  geïntroduceerd. Het gebruik van deze objecten in de speciale relativiteitstheorie, statistiek en kwantummechanica zorgde ervoor dat de ideeën van de lineaire algebra zich buiten de zuivere wiskunde hebben verspreid.
+
+
+== Structuren ==
+De belangrijkste structuren van de lineaire algebra zijn vectorruimten en de lineaire afbeeldingen tussen deze vectorruimten. Een vectorruimte is een verzameling, waarvan de elementen bij elkaar op kunnen worden geteld en met scalairen of getallen kunnen worden vermenigvuldigd. In veel natuurlijke toepassingen zijn deze scalairen reële getallen, R. Meer in het algemeen kunnen de scalairen een lichaam (Ned) / veld (Be), f vormen - men kan dus vectorruimten over het veld Q van rationale getallen, het veld C van complexe getallen of een eindig veld Fq beschouwen. Deze twee operaties moeten zich op dezelfde manier gedragen als optelling en vermenigvuldiging van getallen: optelling is commutatief en associatief, de vermenigvuldiging is distributief over optelling, en zo verder. Om precies te zijn moeten de twee operaties voldoen aan een lijst van axioma's, die is gekozen om eigenschappen van optelling en scalaire vermenigvuldiging van euclidische vectoren te emuleren in de van coördinaten voorziene n-ruimte Rn. Een van de axioma's schrijft het bestaan van de nulvector voor. De nulvector gedraagt zich met betrekking tot optelling analoog aan het getal nul. Elementen van een algemene vectorruimte V kunnen objecten van verschillende aard zijn, bijvoorbeeld functies of polynomen. Gezien als elementen van V worden zij vaak als vectoren aangeduid.
+Gegeven twee vectorruimten V en W over een veld F, is een lineaire transformatie een afbeelding
+
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\to W}
+  
+
+die compatibel is met optelling en scalaire vermenigvuldiging:
+
+  
+    
+      
+        T
+        (
+        u
+        +
+        v
+        )
+        =
+        T
+        (
+        u
+        )
+        +
+        T
+        (
+        v
+        )
+        ,
+        
+        T
+        (
+        r
+        v
+        )
+        =
+        r
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(u+v)=T(u)+T(v),\quad T(rv)=rT(v)}
+  
+
+voor willekeurige vectoren u,v ∈ V en een scalair r ∈ F.
+Een fundamentele rol in de lineaire algebra wordt gespeeld door de noties van lineaire combinatie, lineair omhulsel en lineaire onafhankelijkheid van vectoren en de basis en dimensie van een vectorruimte. Gegeven een vectorruimte V over een veld F, een uitdrukking van de vorm 
+
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          r
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        …
+        +
+        
+          r
+          
+            k
+          
+        
+        
+          v
+          
+            k
+          
+        
+      
+    
+    {\displaystyle r_{1}v_{1}+r_{2}v_{2}+\ldots +r_{k}v_{k}}
+  
+,
+waar v1, v2, …, vk vectoren en r1, r2, …, rk scalairen zijn, wordt de lineaire combinatie van de vectoren v1, v2, …, vk met coëfficiënten r1, r2, …, rk genoemd. De verzameling van alle lineaire combinaties van vectoren v1, v2, …, vk wordt hun omhulsel genoemd. Een lineaire combinatie van een systeem van vectoren met allemaal nul-coëfficiënten is de nulvector van V. Als dit de enige manier is om de nulvector als een lineaire combinatie van v1, v2, …, vk uit te drukken dan zijn deze vectoren lineair onafhankelijk. Een lineaire onafhankelijke verzameling van vectoren, die een vectorruimte V omhult, is een basis van V. Als een vectorruimte een eindige basis toelaat dan hebben twee willekeurige basissen hetzelfde aantal elementen (die de dimensie van V wordt genoemd) en is V een eindig-dimensionale vectorruimte. Deze theorie kan worden uitgebreid tot oneindig-dimensionale ruimten.
+Er bestaat een belangrijk verschil tussen een van coördinaten voorziene n-ruimte Rn
+en een algemene eindig-dimensionale vectorruimte V. Terwijl Rn een standaardbasis {e1, e2, …, en} heeft, is een vectorruimte V typisch niet uitgerust met een basis. Ook bestaan er vele verschillende basissen (alhoewel zij allen hetzelfde, aan de dimensie van V gelijk zijnde aantal elementen hebben). Het hebben van een specifieke basis {v1, v2, …, vn} van V maakt de constructie van een coördinatensysteem in V mogelijk: de vector met coördinaten (r1, r2, …, rn) is de lineaire combinatie
+
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          r
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        …
+        +
+        
+          r
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+      
+    
+    {\displaystyle r_{1}v_{1}+r_{2}v_{2}+\ldots +r_{n}v_{n}}
+  
+.
+De voorwaarde dat v1, v2, …, vn V omspant, garandeert dat aan elke vector v coördinaten kunnen worden toegewezen, terwijl de lineaire onafhankelijkheid van v1, v2, …, vn verder verzekert dat deze coördinaten op een unieke manier worden bepaald (dat wil zeggen dat er slechts een lineaire combinatie van de basisvectoren is, die gelijk is aan v). Wanneer op deze manier eenmaal een basis van een vectorruimte V over F is gekozen, kan V worden geïdentificeerd met de van coördinaten voorziene n-ruimte Fn. Onder deze identificatie corresponderen optelling en scalaire vermenigvuldiging van vectoren in V met optelling en scalaire vermenigvuldiging van hun coördinatenvectoren in Fn. Als bovendien V en W respectievelijk een n-dimensionale en m-dimensionale vectorruimte over F zijn, en er voor zowel V als W een basis is vastgesteld, dan kan elke lineaire transformatie T: V → W worden weergegeven als een m × n matrix A met elementen in het veld F. Deze matrix noemt men de matrix van T met betrekking tot deze basissen. In grote lijnen hierom kan men de studie van axiomatisch gedefinieerde, lineaire transformaties vervangen door de studie van concrete matrices. Dit is een belangrijke techniek in de lineaire algebra.
+
+
+== Stellingen ==
+Elke vectorruimte heeft een basis.
+Twee verschiilende bases van dezelfde vectorruimte hebben dezelfde kardinaliteit, anders gezegd is de dimensie van een vectorruimte eenduidig bepaald.
+Een vierkante matrix kan dan en slechts dan worden geïnverteerd als de determinant ervan geen nul is.
+Een matrix kan dan en slechts dan worden geïnverteerd als de lineaire afbeelding die wordt weergegeven door de matrix een isomorfisme is.
+Als een vierkante matrix een linker- of rechter inverse matrix heeft dan is deze matrix inverteerbaar .
+Een matrix is dan en slechts dan positief definiet als elk van de eigenwaarden groter dan of gelijk aan nul is.
+Een matrix is dan en slechts dan positief definiet als alle eigenwaarden ervan groter dan nul zijn.
+Een 
+  
+    
+      
+        n
+        ×
+        n
+      
+    
+    {\displaystyle n\times n}
+  
+-matrix is dan en slechts dan diagonaliseerbaar, dat wil zeggen dat er een inverteerbare matrix 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ en een diagonaalmatrix 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  
+ bestaan, zodanig dat 
+  
+    
+      
+        A
+        =
+        P
+        D
+        
+          P
+          
+            −
+            1
+          
+        
+      
+    
+    {\displaystyle A=PDP^{-1}}
+  
+ als deze matrix 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ lineair onafhankelijke eigenvectoren heeft.
+De spectraalstelling beweert dat een matrix dan en slechts dan orthogonaal diagonaliseerbaar is als deze matrix symmetrisch is.
+
+
+== Websites ==
+G Strang. Linear Algebra. lezingen op video, beschikbaar als OpenCourseWare

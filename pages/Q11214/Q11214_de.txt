@@ -1,0 +1,668 @@
+Eine Differentialgleichung (auch Differenzialgleichung, oft durch DGL, DG, DGl. oder Dgl. abgekürzt) ist eine mathematische Gleichung für eine gesuchte Funktion von einer oder mehreren Variablen, in der auch Ableitungen dieser Funktion vorkommen. Viele Naturgesetze können mittels Differentialgleichungen formuliert werden. Differentialgleichungen sind daher ein wesentliches Werkzeug der mathematischen Modellierung. Dabei beschreibt eine Differentialgleichung das Änderungsverhalten dieser Größen zueinander. Differentialgleichungen sind ein wichtiger Untersuchungsgegenstand der Analysis, die deren Lösungstheorie untersucht. Nicht nur weil für viele Differentialgleichungen keine explizite Lösungsdarstellung möglich ist, spielt die näherungsweise Lösung mittels numerischer Verfahren eine wesentliche Rolle. Eine Differentialgleichung kann durch ein Richtungsfeld veranschaulicht werden.
+
+
+== Typen von Differentialgleichungen ==
+Man unterscheidet verschiedene Typen von Differentialgleichungen. Ganz grob unterteilen sie sich in die folgenden Teilgebiete. Alle der folgenden Typen können im Wesentlichen unabhängig und gleichzeitig nebeneinander auftreten.
+
+
+=== Gewöhnliche Differentialgleichungen ===
+
+Hängt die gesuchte Funktion lediglich von einer Variablen ab, so spricht man von einer gewöhnlichen Differentialgleichung. Es kommen lediglich gewöhnliche Ableitungen nach der einen Veränderlichen vor.
+Beispiele:
+
+  
+    
+      
+        
+          y
+          ′
+        
+        (
+        x
+        )
+        =
+        −
+        2
+        ⋅
+        y
+        (
+        x
+        )
+        +
+        5
+        ,
+        
+        
+          
+            
+              z
+              ¨
+            
+          
+        
+        (
+        t
+        )
+        +
+        4
+        ⋅
+        z
+        (
+        t
+        )
+        =
+        sin
+        ⁡
+        (
+        3
+        ⋅
+        t
+        )
+      
+    
+    {\displaystyle y'(x)=-2\cdot y(x)+5,\qquad {\ddot {z}}(t)+4\cdot z(t)=\sin(3\cdot t)}
+  
+
+Schreibt sich die gewöhnliche Differentialgleichung für die gesuchte Funktion 
+  
+    
+      
+        y
+        (
+        x
+        )
+      
+    
+    {\displaystyle y(x)}
+  
+ in der Form
+
+  
+    
+      
+        F
+        
+          (
+          
+            x
+            ,
+            y
+            (
+            x
+            )
+            ,
+            
+              y
+              ′
+            
+            (
+            x
+            )
+            ,
+            …
+            ,
+            
+              y
+              
+                (
+                n
+                )
+              
+            
+            (
+            x
+            )
+          
+          )
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle F\left(x,y(x),y'(x),\ldots ,y^{(n)}(x)\right)=0,}
+  
+
+so heißt die gewöhnliche Differentialgleichung implizit.
+Ist die Differentialgleichung nach der höchsten Ableitung aufgelöst, d. h., es gilt
+
+  
+    
+      
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        =
+        f
+        
+          (
+          
+            x
+            ,
+            y
+            (
+            x
+            )
+            ,
+            
+              y
+              ′
+            
+            (
+            x
+            )
+            ,
+            …
+            ,
+            
+              y
+              
+                (
+                n
+                −
+                1
+                )
+              
+            
+            (
+            x
+            )
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle y^{(n)}(x)=f\left(x,y(x),y'(x),\ldots ,y^{(n-1)}(x)\right),}
+  
+
+so nennt man die gewöhnliche Differentialgleichung explizit. Nicht jede Differentialgleichung, die in impliziter Form vorliegt, kann auf eine explizite Form gebracht werden. In den Anwendungen sind explizite gewöhnliche Differentialgleichungen mathematisch einfacher zu verarbeiten. Die höchste vorkommende Ableitungsordnung 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+ wird Ordnung der Differentialgleichung genannt. Beispielsweise hat eine explizite gewöhnliche Differentialgleichung 1. Ordnung die Gestalt
+
+  
+    
+      
+        
+          y
+          ′
+        
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        ,
+        y
+        (
+        x
+        )
+        )
+        
+        .
+      
+    
+    {\displaystyle y'(x)=f(x,y(x))\,.}
+  
+
+Es gibt eine abgeschlossene Lösungstheorie expliziter gewöhnlicher Differentialgleichungen.
+Eine gewöhnliche Differentialgleichung ist linear, falls sie linear in der Funktion und ihren Ableitungen ist: 
+
+  
+    
+      
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        x
+        )
+        +
+        ⋯
+        +
+        
+          a
+          
+            0
+          
+        
+        (
+        x
+        )
+        
+        y
+        (
+        x
+        )
+        =
+        b
+        (
+        x
+        )
+      
+    
+    {\displaystyle y^{(n)}(x)+a_{n-1}(x)\,y^{(n-1)}(x)+\cdots +a_{0}(x)\,y(x)=b(x)}
+  
+
+Sie ist semilinear, falls sie zwar in den Ableitungen und der Funktion auf der linken Seite linear ist, die Funktion 
+  
+    
+      
+        b
+        (
+        x
+        )
+      
+    
+    {\displaystyle b(x)}
+  
+ aber auch von der Funktion 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ und ihren Ableitungen abhängen kann, außer der höchsten Ableitung:
+
+  
+    
+      
+        
+          y
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        +
+        
+          a
+          
+            n
+            −
+            1
+          
+        
+        (
+        x
+        )
+        
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        x
+        )
+        +
+        ⋯
+        +
+        
+          a
+          
+            0
+          
+        
+        (
+        x
+        )
+        
+        y
+        (
+        x
+        )
+        =
+        b
+        (
+        x
+        ,
+        y
+        (
+        x
+        )
+        ,
+        
+          y
+          ′
+        
+        (
+        x
+        )
+        ,
+        ⋯
+        ,
+        
+          y
+          
+            (
+            n
+            −
+            1
+            )
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle y^{(n)}(x)+a_{n-1}(x)\,y^{(n-1)}(x)+\cdots +a_{0}(x)\,y(x)=b(x,y(x),y'(x),\cdots ,y^{(n-1)}(x))}
+  
+
+
+=== Partielle Differentialgleichung ===
+
+Hängt die gesuchte Funktion von mehreren Variablen ab und treten in der Gleichung partielle Ableitungen nach mehr als einer Variable auf, so spricht man von einer partiellen Differentialgleichung. Partielle Differentialgleichungen sind ein großes Feld und die Theorie ist mathematisch nicht abgeschlossen, sondern Gegenstand der aktuellen Forschung in mehreren Gebieten.
+Ein Beispiel ist die sog. Wärmeleitungsgleichung für eine Funktion 
+  
+    
+      
+        u
+        (
+        t
+        ,
+        x
+        )
+      
+    
+    {\displaystyle u(t,x)}
+  
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                ∂
+                t
+              
+            
+          
+        
+        u
+        (
+        t
+        ,
+        x
+        )
+        =
+        a
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              
+                ∂
+                
+                  x
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+        u
+        (
+        t
+        ,
+        x
+        )
+      
+    
+    {\displaystyle {\tfrac {\partial }{\partial t}}u(t,x)=a{\tfrac {\partial ^{2}}{\partial x^{2}}}u(t,x)}
+  
+
+Man unterscheidet verschiedene Typen partieller Differentialgleichungen. Zunächst gibt es lineare partielle Differentialgleichungen. Dabei gehen die gesuchte Funktion und ihre Ableitungen linear in die Gleichung ein. Die Abhängigkeit bezüglich der unabhängigen Variablen kann dabei durchaus nichtlinear sein. Die Theorie linearer partieller Differentialgleichungen ist am weitesten fortgeschritten, jedoch weit davon entfernt, abgeschlossen zu sein.
+Man spricht von einer quasilinearen Gleichung, falls alle Ableitungen von höchster Ordnung linear auftreten, dies aber nicht mehr für die Funktion und Ableitungen niedrigerer Ordnung gilt. Eine quasilineare Gleichung ist schon schwieriger zu behandeln. Eine quasilineare partielle Differentialgleichung ist semilinear, falls die Koeffizientenfunktion vor den höchsten Ableitungen nicht von niedrigeren Ableitungen und der unbekannten Funktion abhängt. Gerade im Gebiet der quasi- und semilinearen Gleichungen werden zurzeit die meisten Resultate erzielt.
+Kann man schließlich auch keine lineare Abhängigkeit bezüglich der höchsten Ableitungen feststellen, nennt man die Gleichung eine nichtlineare partielle Differentialgleichung oder eine vollständig-nichtlineare partielle Differentialgleichung.
+Besonders interessant in dem Gebiet partieller Differentialgleichungen sind die Gleichungen zweiter Ordnung. In diesen Spezialfällen gibt es noch weitere Klassifikationsmöglichkeiten.
+
+
+=== Weitere Typen ===
+Beim Typus der stochastischen Differentialgleichungen treten in der Gleichung stochastische Prozesse auf. Eigentlich sind stochastische Differentialgleichungen keine Differentialgleichungen im obigen Sinne, sondern lediglich gewisse Differentialrelationen, welche als Differentialgleichung interpretiert werden können.
+Der Typus der Algebro-Differentialgleichungen zeichnet sich dadurch aus, dass zusätzlich zur Differentialgleichung auch noch algebraische Relationen als Nebenbedingungen gegeben sind.
+Weiter gibt es noch sogenannte retardierte Differentialgleichungen. Hier treten neben einer Funktion und ihren Ableitungen zu einem Zeitpunkt 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+ auch noch Funktionswerte bzw. Ableitungen aus der Vergangenheit auf.
+Unter einer Integro-Differentialgleichung versteht man eine Gleichung, in der nicht nur die Funktion und deren Ableitungen, sondern auch noch Integrationen der Funktion auftauchen. Ein wichtiges Beispiel dazu ist die Schrödingergleichung in der Impulsdarstellung (Fredholm'sche Integralgleichung).
+Je nach Anwendungsgebiet und Methodik gibt es noch weitere Typen von Differentialgleichungen.
+
+
+=== Systeme von Differentialgleichungen ===
+Man spricht von einem System von Differentialgleichungen, wenn 
+  
+    
+      
+        y
+        =
+        (
+        
+          y
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          
+            k
+          
+        
+        )
+      
+    
+    {\displaystyle y=(y_{1},\ldots ,y_{k})}
+  
+ eine vektorwertige Abbildung ist und mehrere Gleichungen
+
+  
+    
+      
+        
+          F
+          
+            l
+          
+        
+        
+          (
+          
+            x
+            ,
+            y
+            ,
+            D
+            y
+            ,
+            …
+            ,
+            
+              D
+              
+                n
+              
+            
+            y
+          
+          )
+        
+        =
+        0
+        ,
+        
+        l
+        =
+        1
+        ,
+        …
+        ,
+        k
+        .
+      
+    
+    {\displaystyle F_{l}\left(x,y,Dy,\ldots ,D^{n}y\right)=0,\qquad l=1,\ldots ,k.}
+  
+
+gleichzeitig zu erfüllen sind. Lässt sich dieses implizite Differentialgleichungssystem nicht überall lokal in ein explizites System umwandeln, so handelt es sich um eine Algebro-Differentialgleichung.
+
+
+== Problemstellungen ==
+Differentialgleichungen sind im Allgemeinen nicht eindeutig lösbar, sondern benötigen dazu Anfangs- oder Randwerte. Im Bereich der partiellen Differentialgleichungen können auch sogenannte Anfangsrandwertprobleme auftreten.
+Grundsätzlich wird bei Anfangs- oder Anfangsrandwertproblemen eine der Veränderlichen als Zeit interpretiert. Bei diesen Problemen werden gewisse Daten zu einem gewissen Zeitpunkt, nämlich dem Anfangszeitpunkt, vorgeschrieben.
+Bei den Randwert- oder Anfangsrandwertproblemen wird eine Lösung der Differentialgleichung in einem beschränkten oder unbeschränkten Gebiet gesucht und wir stellen als Daten sogenannte Randwerte, welche eben auf dem Rand des Gebietes gegeben sind. Je nach Art der Randbedingungen unterscheidet man weitere Typen von Differentialgleichungen, etwa Dirichlet-Probleme oder Neumann-Probleme.
+
+
+== Lösungsmethoden ==
+Auf Grund der Vielfältigkeiten sowohl bei den eigentlichen Differentialgleichungen als auch bei den Problemstellungen ist es nicht möglich, eine allgemein gültige Lösungsmethodik anzugeben. Lediglich explizite gewöhnliche Differentialgleichungen können mit einer geschlossenen Theorie gelöst werden. Eine Differentialgleichung nennt man integrabel, wenn es möglich ist, sie analytisch zu lösen, also eine Lösungsfunktion (das Integral) anzugeben. Sehr viele mathematische Probleme, insbesondere nichtlineare und partielle Differentialgleichungen, sind nicht integrabel, darunter schon ganz einfach erscheinende wie die des Dreikörperproblems, des Doppelpendels oder der meisten Kreiseltypen.
+
+
+=== Lie-Theorie ===
+
+Ein strukturierter allgemeiner Ansatz zur Lösung von Differentialgleichungen wird über die Symmetrie und die kontinuierliche Gruppentheorie verfolgt.
+1870 stellte Sophus Lie in seiner Arbeit die Theorie der Differentialgleichungen mit der Lie-Theorie auf eine allgemeingültige Grundlage.
+Er zeigte, dass die älteren mathematischen Theorien zur Lösung von Differentialgleichungen durch die Einführung von sogenannten Lie-Gruppen zusammengefasst werden können.
+Ein allgemeiner Ansatz zur Lösung von Differentialgleichungen nutzt die Symmetrie-Eigenschaft der Differentialgleichungen aus. Dabei werden kontinuierliche infinitesimale Transformationen angewendet, die Lösungen auf (andere) Lösungen der Differentialgleichung abbilden. Kontinuierliche Gruppentheorie, Lie-Algebren und Differentialgeometrie werden verwendet, um die tiefere Struktur der linearen und nichtlinearen (partiellen) Differentialgleichungen zu erfassen und die Zusammenhänge abzubilden, die schließlich zu den exakten analytischen Lösungen einer Differentialgleichung führen.
+Symmetriemethoden werden benutzt, um Differentialgleichungen exakt zu lösen.
+
+
+=== Existenz und Eindeutigkeit ===
+Die Fragen der Existenz, Eindeutigkeit, Darstellung und numerischen Berechnung von Lösungen sind somit je nach Gleichung vollständig bis gar nicht gelöst. Aufgrund der Bedeutung von Differentialgleichungen in der Praxis ist hierbei die Anwendung der numerischen Lösungsverfahren besonders bei partiellen Differentialgleichungen weiter fortgeschritten als deren theoretische Untermauerung.
+Eines der Millennium-Probleme ist der Existenzbeweis einer regulären Lösung für die Navier-Stokes-Gleichungen. Diese Gleichungen treten beispielsweise in der Strömungsmechanik auf.
+
+
+=== Approximative Methoden ===
+Differentialgleichungen haben als Lösung Funktionen, die Bedingungen an ihre Ableitungen erfüllen. Eine Approximation geschieht meist, indem Raum und Zeit durch ein Rechengitter in endlich viele Teile zerlegt werden (Diskretisierung). Die Ableitungen werden dann nicht mehr durch einen Grenzwert dargestellt, sondern durch Differenzen approximiert. In der numerischen Mathematik wird der dadurch entstandene Fehler analysiert und möglichst gut abgeschätzt.
+Ein frühes Verfahren, das Euler 1768 in seinem Buch Institutiones Calculi Integralis vorstellte, ist das Eulerverfahren.
+Je nach Art der Gleichung werden unterschiedliche Diskretisierungsansätze gewählt, bei partiellen Differentialgleichungen etwa Finite-Differenzen-Verfahren, Finite-Volumen-Verfahren oder Finite-Elemente-Verfahren.
+Die diskretisierte Differentialgleichung enthält keine Ableitungen mehr, sondern nur noch rein algebraische Ausdrücke. Damit ergibt sich entweder eine direkte Lösungsvorschrift oder ein lineares oder nichtlineares Gleichungssystem, welches dann mittels numerischer Verfahren gelöst werden kann.
+
+
+== Auftreten und Anwendungen ==
+Eine Vielzahl von Phänomenen in Natur und Technik kann durch Differentialgleichungen und darauf aufbauende mathematische Modelle beschrieben werden. Einige typische Beispiele sind:
+
+Vielen physikalischen Theorien liegen Differentialgleichungen zu Grunde: Bewegungsgleichungen oder Schwingungen in der newtonschen Mechanik, das Belastungsverhalten von Bauteilen, die Elektrodynamik wird von den Maxwell-Gleichungen, die Quantenmechanik von der Schrödingergleichung beherrscht,
+in der Astronomie die Bahnen der Himmelskörper und die Turbulenzen im Innern der Sonne,
+in der Biologie etwa Prozesse bei Wachstum, bei Strömungen oder in Muskeln, oder in der Evolutionstheorie,
+in der Chemie die Kinetik von Reaktionen,
+in der Elektrotechnik das Verhalten von Netzwerken mit energiespeichernden Elementen,
+in der Differentialgeometrie das Verhalten von Flächen,
+in der Strömungsmechanik das Verhalten ebendieser Strömungen,
+in der Ökonomie die Analyse von wirtschaftlichen Wachstumsprozessen (Wachstumstheorie),
+in der Informatik beispielsweise das Image-Inpainting (das Herausrechnen von Schrift oder Logos aus Bildern).
+Das Feld der Differentialgleichungen hat der Mathematik entscheidende Impulse verliehen. Viele Teile der aktuellen Mathematik forschen an der Existenz-, Eindeutigkeits- und Stabilitätstheorie verschiedener Typen von Differentialgleichungen.
+
+
+== Höhere Abstraktionsebenen ==
+Differentialgleichungen oder Differentialgleichungssysteme setzen voraus, dass ein System in algebraischer Form beschrieben und quantifiziert werden kann. Weiterhin, dass die beschreibenden Funktionen zumindest in den interessierenden Bereichen differenzierbar sind. Im naturwissenschaftlich-technischen Umfeld sind diese Voraussetzungen zwar häufig gegeben, in vielen Fällen sind sie aber nicht erfüllt. Dann kann die Struktur eines Systems nur auf einer höheren Abstraktions-Ebene beschrieben werden. Siehe hierzu in der Reihenfolge ansteigender Abstraktion:
+
+Systemtheorie
+Ontologie (Informatik)
+Ontologie (Philosophie)
+Formale Begriffsanalyse (Mathematik)
+Ordnungsrelation (Mathematik)
+
+
+== Siehe auch ==
+Integralgleichung
+
+
+== Literatur ==
+G. H. Golub, J. M. Ortega: Wissenschaftliches Rechnen und Differentialgleichungen. Eine Einführung in die Numerische Mathematik. Heldermann Verlag, Lemgo 1995, ISBN 3-88538-106-0.
+G. Oberholz: Differentialgleichungen für technische Berufe. 4. Auflage. Verlag Anita Oberholz, Gelsenkirchen 1995, ISBN 3-9801902-4-2.
+P.J. Olver: Equivalence, Invariants and Symmetry. Cambridge Press, 1995.
+L. Papula: Mathematik für Ingenieure und Naturwissenschaftler Band 2. Viewegs Fachbücher der Technik, Wiesbaden 2001, ISBN 3-528-94237-1
+H. Stephani: Differential Equations: Their Solution Using Symmetries. Edited by M. MacCallum. Cambridge University Press, 1989.
+H. Benker: Differentialgleichungen mit MATHCAD und MATLAB. Springer-Verlag, Berlin / Heidelberg / New York 2005.
+
+
+== Weblinks ==
+
+Matroids Matheplanet: Differentialgleichungen. Anleitungen zum Lösen diverser Differentialgleichungen mit Beispielen
+Mathematik-Online Kurs zum Thema Differentialgleichung der Uni Stuttgart
+Dörte Haftendorn: Differentialgleichungen: Numerik, Beispiele, Isoklinen, … Uni Lüneburg
+Arthur Mattuck: Differential Equations. Academic Earth – MIT
+
+
+== Einzelnachweise ==

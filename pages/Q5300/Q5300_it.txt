@@ -1,0 +1,156 @@
+L'unità di elaborazione centrale (in acronimo CPU, dall'inglese Central Processing Unit), colloquialmente nota semplicemente come processore, nelle architetture degli elaboratori è il sottosistema che implementa la maggioranza delle funzionalità fondamentali dell'elaboratore e che in generale coordina l'esecuzione delle operazioni tra gli eventuali sottosistemi periferici.
+La maggioranza delle CPU contemporanee è realizzata sotto forma di microprocessore digitale ed utilizza un'architettura a registri generali.
+
+
+== Storia ==
+Le prime CPU vennero progettate quando iniziarono ad esser sviluppati i primi computer dove riuniti all'interno dello stesso cabinet vi erano due processori che precedentemente erano sempre stati contenuti in cabinet diversi o comunque costituivano blocchi distinti: l'ALU e l'unità di controllo. La prima CPU commercializzata della storia fu l'IBM 709, basata su valvole termoioniche e disponibile sul computer omonimo IBM 709, commercializzato dall'IBM a partire dal 1958. Quando i transistor disponibili su un solo chip erano pochi e i calcolatori venivano spesso programmati in linguaggio assembly, per sfruttarli in modo tale da avere CPU con istruzioni potenti, evolute e complesse: più queste erano vicine alle istruzioni dei linguaggi di programmazione ad alto livello più il computer sarebbe stato facile da programmare, e i programmi avrebbero occupato poco spazio in memoria. Tuttavia grazie all'avvento prima del transistor e poi della microelettronica, è stato possibile contenere la CPU prima in una scheda elettronica e successivamente in un circuito integrato, quindi nello spazio di pochi centimetri quadrati. In particolare la prima CPU, anche se limitata perché solo a 4 bit cioè solo numerica, commercializzata e interamente contenuta in un circuito integrato è il microprocessore Intel 4004, commercializzato a partire dal 1971, la cui implementazione si deve all'italiano Federico Faggin.
+A cavallo fra gli anni '70 e gli '80 la situazione però cambiò rapidamente: la RAM divenne più economica e comparvero i primi compilatori moderni, ottimizzanti, in grado di generare linguaggio macchina molto efficiente: per questo si iniziò a pensare ad un nuovo modo di progettare le CPU, prendendo in esame la possibilità di usare i transistor disponibili per avere invece molti registri e un set di istruzioni elementare, molto ridotto, che delegasse al compilatore il lavoro di tradurre le istruzioni complesse in serie di istruzioni più semplici, permettendo così di avere unità di controllo particolarmente semplici e veloci. Attualmente la distinzione fra queste due classi di architetture è venuta in gran parte meno: il numero di transistor disponibili su un solo chip è aumentato tanto da poter gestire molti registri ed anche set di istruzioni complesse.
+
+
+== Descrizione ==
+
+
+=== Funzioni ===
+Una CPU ha il compito di eseguire le istruzioni di un programma presente nella ROM in fase di boot, nella memoria centrale (o primaria, es. RAM) dopo averlo prelevato dalla memoria secondaria (o di massa) o da altri dispositivi: durante l'esecuzione del programma l'unità legge o scrive dati direttamente da o nella memoria centrale; il risultato dell'esecuzione finale dipende dal dato su cui si opera e dallo stato interno in cui la CPU stessa si trova e può mantenere la traccia delle istruzioni eseguite e dei dati letti (vedi cache).
+
+
+=== Struttura ===
+
+Una generica CPU contiene:
+
+Unità di controllo (control unit o CU): preleva istruzioni e dati dalla memoria centrale, decodifica le istruzioni e le invia ad un'unità aritmetica e logica per poi comandarne l'esecuzione. Una volta finita l'esecuzione di una istruzione e solo allora, la CU ha il compito di prelevare una nuova istruzione e gli eventuali dati. La CU ha inoltre il compito di inviare i dati relativi ai risultati delle elaborazioni. Infine, nei computer moderni, la CU ha il compito di organizzare il lavoro delle altre unità di elaborazione;
+un'unità aritmetica e logica (Arithmetic Logic Unit o ALU): si occupa di eseguire le operazioni logiche ed aritmetiche;
+uno shifter, direttamente collegato alla ALU, che si occupa dello spostamento verso sinistra o verso destra dei bit del risultato dell'unità aritmetico logica, eseguendo rispettivamente la moltiplicazione e la divisione per potenze di due;
+alcuni registri interni alla CPU che hanno un tempo di accesso nettamente inferiore a quello della memoria centrale: il valore complessivo di tutti i registri della CPU costituisce lo stato in cui essa si trova in un dato istante. Due registri sempre presenti sono:
+il registro IP (Instruction Pointer) o PC (Program Counter), che contiene l'indirizzo della prossima istruzione da eseguire. È il registro grazie al quale la CU sa quale istruzione prelevare. È la CPU stessa ad aggiornare il contatore;
+il registro dei flag (registro di stato, Condition Code Register o CCR), che contiene informazioni particolari, detti appunto flag che segnalano determinati stati dell'insieme delle unità di calcolo e alcune informazioni sul risultato dell'ultima operazione eseguita. I flag più importanti sono:
+Flag di stato:
+Overflow: indica se il risultato dell'operazione precedente era troppo grande e non può quindi essere valutato correttamente: 0 assenza di overflow, 1 presenza di overflow
+Zero: Segnala se il risultato dell'operazione è o no zero.
+Carry: (riporto) vale 1 se l'ultima operazione ha ecceduto la capacità del registro che contiene il risultato, altrimenti vale 0 (esempio: in un registro a 8 bit, che può rappresentare solo numeri da 0 a 255, la somma 178+250 darebbe come risultato 172, cioè 428-256, e il carry verrebbe posto a 1 insieme al flag di overflow). Nelle operazioni di sottrazione, ottenuta come somma del complemento, ha invece esattamente il significato opposto.
+Segno: indica il segno del risultato dell'operazione precedente: 0 risultato positivo, 1 risultato negativo. In realtà non esiste uno specifico flag di segno, ma questo è direttamente derivato dai flag zero e carry. Nelle operazioni di sottrazione con flag zero=0 e carry=1 si ha segno positivo, con carry=0 segno negativo.
+Flag di controllo:
+Interruzione (interrupt) : se a questo flag viene assegnato valore 1, la CPU smette di rispondere alle richieste di servizio esterne delle periferiche (i segnali delle linee IRQ) finché non viene ripristinato al valore 0 o finché non arriva dall'esterno un segnale di RESET.
+Una generica CPU deve eseguire i suoi compiti sincronizzandoli con il resto del sistema perciò è dotata, oltre a quanto sopra elencato, anche di uno o più BUS interni che si occupano di collegare registri, ALU, unità di controllo e memoria: inoltre all'unità di controllo interna della CPU fanno capo una serie di segnali elettrici esterni che si occupano di tenere la CPU al corrente dello stato del resto del sistema e di agire su di esso. Il tipo e il numero di segnali esterni gestiti possono variare ma alcuni, come il RESET, le linee di IRQ e il CLOCK sono sempre presenti.
+Per quanto riguarda i registri, le CPU possono gestirli in molti modi: i più comuni sono registri nominativi (CPU CISC classiche), file di registri (RISC) e stack di registri (Transputer e simili).
+
+Stack di registri: i registri sono organizzati in una struttura a stack (pila); questa architettura ha il vantaggio di non dover specificare su quale registro interno operare (è sempre quello in cima allo stack) ottenendo istruzioni più corte e più semplici da decodificare. Il rovescio della medaglia è che nel caso sia necessario un dato "sepolto" in fondo allo stack, il suo recupero è un'operazione molto lenta.
+Registri nominativi: ogni registro è identificato singolarmente e le istruzioni che usano registri specificano di volta in volta quale registro devono usare. Spesso alcuni registri sono dedicati a scopi particolari (registri indice, accumulatori, registri di segmento ecc.) imponendo la non ortogonalità del set di istruzioni (vedi oltre). La gran maggioranza delle CPU generiche degli anni '70 e '80 è di questo tipo.
+File di registri: I registri sono organizzati come una memoria interna della CPU e indicizzati: la CPU "alloca" un certo numero di registri per ogni processo e/o subroutine in esecuzione, eliminando la necessità di accedere alla RAM per salvare gli stack di chiamata delle funzioni e i dati di task switching nei sistemi multitask.
+Una CPU è un circuito digitale sincrono: vale a dire che il suo stato cambia ogni volta che riceve un impulso da un segnale di sincronismo detto clock, che ne determina di conseguenza la velocità operativa, detta velocità di clock: quindi il tempo di esecuzione di un'istruzione si misura in cicli di clock, cioè in quanti impulsi di clock sono necessari perché la CPU la completi. In effetti, una parte importante e delicata di ogni CPU è il sistema di distribuzione che porta il segnale di clock alle varie unità e sottounità di cui è composta, per fare in modo che siano sempre in sincronia: questo sistema si dirama in una struttura ad albero con divisori e ripetitori che giunge ovunque nella CPU.
+Nei processori più moderni (Pentium, Athlon, PowerPC) questa "catena di ingranaggi" elettronica arriva ad impiegare circa il 30% di tutti i transistor disponibili. La velocità di questa distribuzione determina in maniera diretta la massima frequenza operativa di una CPU: nessuna CPU può essere più veloce del suo critical path, cioè del tempo che impiega il clock per percorrere il tratto più lungo in tutto l'albero di distribuzione del clock. Per esempio, se il segnale di clock di una data CPU impiega un nanosecondo per attraversare tutto il chip ed arrivare fino all'ultima sottounità, questa CPU potrà operare a non più di 1 GHz, perché altrimenti le sue componenti interne perderebbero la sincronizzazione, con risultati imprevedibili. Per avere un margine di sicurezza, il limite pratico è ben minore di 1 GHz.
+La massima frequenza di clock ha evidentemente un impatto importante sulle prestazioni della CPU. Tuttavia, questo parametro da solo consente solo di valutare quanto velocemente la CPU è in grado di espletare uno step elementare del ciclo di esecuzione. Le prestazioni di un processore dipendono in realtà da diversi parametri architetturali, come il numero di step elementari richiesti per eseguire una data istruzione e il numero di istruzioni richieste per eseguire un dato programma. La valutazione delle prestazioni va fatta perciò misurando il tempo di cui ha bisogno la CPU per eseguire un intero programma. I programmi utilizzati a questo scopo sono in genere standardizzati e noti come benchmark.
+
+
+=== Unità ausiliarie ===
+Possono affiancare la CPU le seguenti unità ausiliarie:
+
+una FPU (Floating Point Unit), che si occupa di eseguire calcoli in virgola mobile;
+una MMU (Memory Management Unit), che si occupa di tradurre gli indirizzi di memoria logici in indirizzi fisici, supportando la protezione della memoria e/o uno o più meccanismi di memoria virtuale.
+
+
+=== Istruzioni macchina ===
+
+Le istruzioni di una CPU appaiono, in linea di base, indistinguibili da un dato in quanto sono anch'essi codici binari. A distinguere un codice operativo da un dato è il modo in cui viene gestito: innanzitutto si segue un principio fondamentale secondo il quale le istruzioni devono sempre occupare porzioni separate di memoria rispetto ai dati, poi varia il modo in cui vengono utilizzati. Almeno in linea teorica, per un errore di programmazione si può scrivere un dato come istruzione e viceversa, con risultati disastrosi sull'esecuzione di un programma. In base al valore dell'opcode l'unità di controllo intraprende delle azioni predefinite, come per esempio leggere la successiva locazione di memoria segnalata dal program counter per caricare un dato, oppure attivare la ALU per eseguire un calcolo, oppure scrivere il contenuto di un registro in una certa locazione di memoria o in un altro registro, oppure una combinazione di queste.
+Scrivere un programma utilizzando direttamente i codici operativi è un'operazione particolarmente faticosa. Per questo motivo si utilizza l'assembly, che altro non è che una "traduzione" diretta del set di codici operativi che associa parole ad ogni istruzione della CPU e introduce una sintassi che permette di esprimere i vari metodi di indirizzamento in modo più intuitivo. Sebbene l'utilizzo di assembly sia senza alcun dubbio conveniente rispetto a scrivere sequenze di bit, va comunque menzionato il fatto che assembly non è un linguaggio di programmazione univoco. Potenzialmente ogni modello di CPU può avere un assembly diverso perché nulla obbliga ad avere un certo set di istruzioni piuttosto che un altro. Nella realtà comunque si verifica che conviene mantenere la varietà di set di istruzioni più ristretta possibile, così da non ritrovarsi costretti a dover programmare da zero tutti i programmi fondamentali per il funzionamento di un computer quando non è strettamente necessario. 
+Una caratteristica importante dell'insieme (set) delle istruzioni di una CPU è la sua ortogonalità: vale a dire, il fatto che ogni istruzione che usi i registri possa usarli tutti indifferentemente (tranne quelli "speciali" come l'IP) e che nessun registro sia in qualche modo privilegiato rispetto agli altri perché su di esso si possono compiere operazioni particolari: è stato dimostrato che un set di istruzioni ortogonali, a parità di tempo di esecuzione delle istruzioni e di numero dei registri, è più efficiente di uno non ortogonale.
+
+
+=== Ciclo del processore ===
+
+Tipicamente la CPU è l'Interprete del linguaggio macchina. Come tutti gli interpreti, si basa sul seguente ciclo:
+
+Acquisizione dell'istruzione (Instruction Fetch): il processore preleva l'istruzione dalla memoria, presente nell'indirizzo (tipicamente logico) specificato da un registro "specifico" ("specifico" opposto di "generico"), il PC
+Decodifica (Operand Assembly): una volta che la word è stata prelevata, viene determinata quale operazione debba essere eseguita e come ottenere gli operandi, in base ad una funzione il cui dominio è costituito dai codici operativi (tipicamente i bit alti delle word) ed il codominio consiste nei brani di microprogramma da eseguire
+Esecuzione (Execute): viene eseguita la computazione desiderata. Nell'ultimo passo dell'esecuzione viene incrementato il PC: tipicamente di uno se l'istruzione non era un salto condizionale, altrimenti l'incremento dipende dall'istruzione e dall'esito di questa
+Questo ciclo elementare può essere migliorato in vari modi: per esempio, la decodifica di un'istruzione può essere fatta contemporaneamente all'esecuzione della precedente e alla lettura dalla memoria della prossima (instruction prefetch) e lo stesso può essere fatto con i dati che si prevede saranno necessari alle istruzioni (data prefetch). La stessa esecuzione delle istruzioni può essere suddivisa in passi più semplici, da eseguire in stadi successivi, organizzando la unità di controllo e la ALU in stadi consecutivi, come delle catene di montaggio (pipeline''): in questo modo più istruzioni possono essere eseguite "quasi contemporaneamente", ciascuna occupando ad un certo istante uno stadio diverso della pipeline.
+Il problema di questo approccio sono le istruzioni di salto condizionato: la CPU non può sapere a priori se dovrà eseguire o no il salto prima di aver eseguito quelle precedenti, così deve decidere se impostare la pipeline tenendo conto del salto o no: e in caso di previsione errata la pipeline va svuotata completamente e le istruzioni in corso di decodifica rilette da capo, perdendo un numero di cicli di clock direttamente proporzionale al numero di stadi della pipeline. Per evitare questo i processori moderni hanno unità interne (“Branch prediction unit”) il cui scopo è tentare di prevedere se, data un'istruzione di salto condizionato e quelle eseguite in precedenza, il salto dovrà essere eseguito o no.
+Inoltre i processori possono implementare al loro interno più unità di esecuzione per eseguire più operazioni contemporaneamente. Questo approccio incrementa le prestazioni delle CPU ma ne complica notevolmente l'esecuzione, dato che per poter eseguire in modo efficiente più operazioni in parallelo la CPU deve poter organizzare le istruzioni in modo diverso da come sono organizzate dal programmatore (esecuzione fuori ordine). Un'ulteriore evoluzione di questo concetto è stata implementata nei processori multicore Itanium, che implementano delle istruzioni predicative che possono o meno essere eseguite a seconda del risultato di altre, eseguite in precedenza o contemporaneamente.
+
+
+== Nell'architettura di Von Neumann ==
+Nell'architettura di Von Neumann la Cpu è formata da un'unità di controllo che decide dove devono essere inviati gli input/output in entrata/uscita dal processore e dal processore stesso.
+
+
+== Classificazione ==
+
+In base all'organizzazione della memoria si possono distinguere due principali famiglie di CPU:
+
+con architettura di von Neumann, in cui i dati e le istruzioni risiedono nella stessa memoria (è dunque possibile avere codice automodificante). Questa architettura è la più comune, perché è molto semplice e flessibile.
+con architettura Harvard, in cui i dati e le istruzioni risiedono in due memorie separate. Questa architettura può garantire prestazioni migliori poiché le due memorie possono lavorare in parallelo riducendo le alee strutturali, ma è ovviamente molto più complessa da gestire. È tipicamente utilizzata nei DSP.
+Entrambe le architetture sono architetture basate sui registri generali.
+
+
+=== Architettura CISC ===
+
+CISC è l'acronimo di complex instruction set computer: tipicamente un processore di questo tipo implementa un numero relativamente scarso (una decina) di registri di uso generale, e ha un'unità di controllo microprogrammata: la logica del programma è memorizzata in una memoria veloce situata nella parte di controllo, invece di essere espressa tramite una rete combinatoria.
+Il set di istruzioni associato a CPU di tipo CISC è molto esteso e composto in genere di alcune centinaia di codici operativi diversi che svolgono funzioni anche molto complesse, fra cui sono caratteristici i trasferimenti memoria-memoria, assenti nei RISC; le istruzioni hanno lunghezza variabile e possono presentarsi in formati diversi, e sono necessari due o più (a volte molti di più) cicli di clock per completare un'istruzione; è possibile specificare la posizione dei dati necessari alle istruzioni usando molti metodi di indirizzamento diversi. Il ridotto numero di registri interni obbliga questi processori a scrivere in memoria ogni volta che si verifica una chiamata di funzione, che si verifica una commutazione di contesto o che viene salvato un registro nella pila delle chiamate.
+Programmare in Assembly una CPU CISC è un compito (relativamente) facile, perché le istruzioni presenti sono più vicine a quelle dei linguaggi ad alto livello.
+
+
+=== Architettura RISC ===
+
+RISC è l'acronimo di reduced instruction set computer. Il tipico set di istruzioni RISC è molto piccolo, circa sessanta o settanta istruzioni molto elementari (logiche, aritmetiche e istruzioni di trasferimento memoria-registro e registro-registro): hanno tutte lo stesso formato e la stessa lunghezza, e molte vengono eseguite in un solo ciclo di clock. La diretta conseguenza di questa scelta progettuale è che i processori RISC posseggono un'unità di controllo semplice e a bassa latenza, riservando invece molto spazio per i registri interni: una CPU RISC ha di solito da un minimo di un centinaio ad alcune migliaia di registri interni generici, organizzati in un file di registri. Il fatto di avere un formato unico di istruzione permette di strutturare l'unità di controllo come una pipeline, cioè una catena di montaggio a più stadi: questa innovazione ha il notevole vantaggio di ridurre il critical path interno alla CPU e consente ai RISC di raggiungere frequenze di clock più alte rispetto agli analoghi CISC.
+Nel caso di commutazione di contesto o di chiamata a funzione o comunque di uso della pila delle chiamate i RISC spesso invece di accedere alla memoria di sistema usano un meccanismo chiamato register renaming, che consiste nel rinominare i registri in modo da usare per la nuova esecuzione una diversa zona del file di registri, senza dover accedere alla memoria ogni volta.
+
+
+=== Architettura RISC MISC ===
+
+La Minimal instruction set computer è un'architettura per microprocessori basata su un numero minimale di istruzioni.
+
+
+== Confronto tra architettura RISC e CISC ==
+La semplicità dei RISC si traduce in una minore espressività del linguaggio assembly: il numero di word necessarie per esprimere una computazione in una macchina RISC è maggiore/uguale alla controparte CISC: questo si traduce in programmi più grossi, penalità molto alta in altre epoche, in cui la RAM era una componente costosa e di bassa capacità. L'architettura CISC dipende dal compilatore più di quanto non dipenda il RISC: dato che le istruzioni prevedono più metodi di indirizzamento, e che son presenti istruzioni dalla semantica complessa, al compilatore viene prospettato un ampio ventaglio di scelte per quanto concerne la traduzione di un'istruzione, e non sempre la scelta migliore è banale. Come spesso accade nei problemi di ottimizzazione, la scelta della configurazione migliore è un compito NP-completo, e non è pensabile utilizzare un compilatore che, per ogni istruzione, valuti la scelta migliore in base al contesto. Si conoscono solo delle buone euristiche, ma il problema dell'ottimizzazione è un problema di ricerca aperto. La stessa macchina CISC può essere dunque più o meno veloce rispetto a una macchina comparabile RISC in base al compilatore utilizzato.
+
+
+== Temperature d'esercizio ==
+La temperatura d'esercizio della CPU varia molto da modello a modello; generalmente quelli destinati ai dispositivi portatili hanno un range di funzionamento maggiore e allo stesso modo consumi ridotti rispetto ai modelli destinati alle postazioni fisse.
+Le temperature possono essere controllate in vario modo; in alcuni modelli non è necessario il raffreddamento, ovvero non attuabile in modo congeniale per via delle caratteristiche delle macchine che lo devono accogliere o per il fatto che non se ne presenta la necessità come i processori precedenti al 486 (quest'ultimo può funzionare senza dissipatore, ma a frequenze inferiori a 33 MHz).
+I modelli successivi necessitano di un dissipatore passivo, e nella fattispecie i processori Pentium necessitano anche di una ventola in modo da poter dissipare maggiormente il calore prodotto.
+Con l'aumentare delle prestazioni, e quindi delle frequenze di esercizio, la AMD ha implementato la funzione Cool'n'Quiet (attivabile dal BIOS) che, in assenza di pesanti elaborazioni della CPU, ne riduce la frequenza di lavoro:
+I processori possono essere affetti da bug, ovvero comportamenti inattesi; tali difetti possono richiedere la sostituzione del componente o l'aggiornamento del microcodice del processore o la modifica del BIOS o UEFI.
+Uno dei primi bug della storia è stato il Pentium FDIV bug e il Halt and Catch Fire, mentre allo stato attuale hanno suscitato molto clamore i bug Meltdown e Spectre che hanno colpito quasi trasversalmente tutte le CPU recenti.
+
+
+== Note ==
+
+
+== Bibliografia ==
+ Andrew Stuart Tanenbaum, Processori, in Architettura dei calcolatori. Un approccio strutturale, Milano, Pearson Education, 2006,  pp. 49-65, ISBN 978-88-7192-271-3.
+
+
+== Voci correlate ==
+Advanced Configuration and Power Interface
+Architettura dei calcolatori
+Computer
+Circuito integrato
+CPUID
+CPU cache
+Clock
+Instruction set
+Microprocessore
+Multiprocessore
+Microcontrollore
+Overclocking
+Transistor
+Underclocking
+
+
+== Altri progetti ==
+
+ Wikizionario contiene il lemma di dizionario «CPU»
+ Wikiversità contiene risorse sulla CPU
+ Wikimedia Commons contiene immagini o altri file sulla CPU
+
+
+== Collegamenti esterni ==
+
+ CPU, su Treccani.it – Enciclopedie on line, Istituto dell'Enciclopedia Italiana. 
+ CPU, su sapere.it, De Agostini. 
+(EN) central processing unit, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Opere riguardanti cpu, su Open Library, Internet Archive. 
+(EN) Denis Howe, CPU, in Free On-line Dictionary of Computing. Disponibile con licenza GFDL
+ Articolo illustrato sulla fabbricazione di una CPU (in breve), su tomshw.it. URL consultato il 3 novembre 2009 (archiviato dall'url originale il 4 novembre 2009).
+ Articolo illustrato sulla fabbricazione di una CPU (più in dettaglio), su tomshw.it. URL consultato il 3 novembre 2009 (archiviato dall'url originale l'11 giugno 2007).
+(EN) JOHNNY Emulatore macchina di von Neumann particolarmente per l'insegnamento (Open Source)
+(EN) The Surprising Story of the First Microprocessors, su spectrum.ieee.org.

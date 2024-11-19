@@ -1,0 +1,1343 @@
+Un inductor, bobina o reactor ye un componente pasivu d'un circuitu llétricu que, debíu al fenómenu de l'autoinducción, almacena enerxía en forma de campu magnéticu. 
+
+
+== Construcción ==
+Un inductor ta constituyíu de normal por una bobina de conductor, típicamente alambre o filo de cobre esmaltáu. Esisten inductores con nucleu d'aire o con nucleu fechu de material ferroso (por casu, aceru magnético), p'amontar la so capacidá de magnetismu.
+Los inductores tamién pueden tar construyíos en circuitos integraos, usando'l mesmu procesu utilizáu pa realizar microprocesadores. Nestos casos úsase, comúnmente, el aluminiu como material conductor. Sicasí, ye raru que se construyan inductores dientro de los circuitos integraos; ye muncho más práuticu usar un circuitu llamáu "xirador" que, por aciu un amplificador operacional, fai qu'un condensador pórtese como si fora un inductor.
+El inductor consta de les siguientes partes:
+
+Enduvelláu inductor: Ye'l conxuntu d'espires destináu a producir el fluxu magnético, al ser percorríu pola corriente llétrica.
+Culata: Ye una pieza de sustancia ferromagnética, non arrodiada por enduvellaos, y destinada a xunir los polos de la máquina.
+Pieza polar: Ye la parte del circuitu magnéticu asitiada ente la culata y el entrefierro, incluyendo'l nucleu y la espansión polar.
+Nucleu: Ye la parte del circuitu magnéticu arrodiada pol enduvelláu inductor.
+Espansión polar: Ye la parte de la pieza polar próxima al inducíu y que bordia al entrefierro.
+Polu auxiliar o de conmutación: Ye un polu magnéticu suplementariu, provistu o non, d'enduvellaos y destináu a ameyorar la conmutación. Suelen emplegase nes máquines de mediana y gran potencia.
+Tamién pueden fabricase pequeños inductores, que s'usen para frecuencies bien altes, con un conductor pasando al traviés d'un cilindru de ferrita o granosu.
+
+
+== Funcionamientu d'una bobina ==
+Sía una bobina o solenoide de llargor l, seición S y de un númberu de espiras N, pol que circula una corriente llétrica i(t).
+Aplicando la Llei de Biot-Savart que rellaciona la inducción magnética, B(t), cola causa que la produz, esto ye, la corriente i(t) que circula pol solenoide, llógrase que'l fluxu magnético Φ(t) que toma ye igual a: 
+
+  
+    
+      
+        
+          ϕ
+          (
+          t
+          )
+        
+        =
+        
+          B
+          (
+          t
+          )
+        
+        ⋅
+        
+          S
+        
+        =
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              N
+            
+            
+              ℓ
+            
+          
+        
+        ⋅
+        
+          i
+          (
+          t
+          )
+        
+        ⋅
+        
+          S
+        
+        =
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              
+                N
+              
+              
+                S
+              
+            
+            
+              ℓ
+            
+          
+        
+        ⋅
+        
+          i
+          (
+          t
+          )
+        
+        
+      
+    
+    {\displaystyle {\phi (t)}={B(t)}\cdot {S}={\mu _{o}}\cdot {{N} \over {\ell }}\cdot {i(t)}\cdot {S}={\mu _{o}}\cdot {{N}{S} \over {\ell }}\cdot {i(t)}\,}
+  
+
+Si'l fluxu magnético ye variable nel tiempu, xenerar en cada espira, según la Llei de Faraday, una fuercia electromotriz (f.y.m.) de autoinducción que, según la Llei de Lenz, tiende a oponese a la causa que la produz, esto ye, a la variación de la corriente llétrica que xenera dichu fluxu magnético. Por esta razón suel llamase fuercia contraelectromotriz. Ésta tien el valor:
+
+  
+    
+      
+        
+          y
+          (
+          t
+          )
+        
+        =
+        
+          −
+          N
+        
+        
+          
+            
+              
+                d
+              
+              
+                ϕ
+                (
+                t
+                )
+              
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          −
+        
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              
+                
+                  N
+                  
+                    2
+                  
+                
+              
+              
+                S
+              
+            
+            
+              ℓ
+            
+          
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {y(t)}={-N}{{d}{\phi (t)} \over {dt}}={-}{\mu _{o}}\cdot {{N^{2}}{S} \over {\ell }}\cdot {{di(t)} \over {dt}}}
+  
+
+A la espresión 
+  
+    
+      
+        
+          
+            μ
+            
+              o
+            
+          
+        
+        ⋅
+        
+          
+            
+              
+                
+                  N
+                  
+                    2
+                  
+                
+              
+              
+                S
+              
+            
+            
+              ℓ
+            
+          
+        
+        
+        
+        
+      
+    
+    {\displaystyle {\mu _{o}}\cdot {{N^{2}}{S} \over {\ell }}\,\!\quad }
+  
+ denominar Coeficiente d'autoinducción, L, el cuál rellaciona la variación de corriente cola f.y.m. inducida y, como puede vese, depende de la xeometría de la bobina y del nucleu na que ta enduvellada. Midir en Henrios.
+
+
+=== Enerxía almacenada ===
+La bobina almacena enerxía llétrica en forma de campu magnéticu cuando aumenta la intensidá de corriente, devolviéndola cuando ésta mengua. Matemáticamente puédese demostrar Archiváu 2004-08-30 en Wayback Machine que la enerxía 
+  
+    
+      
+        
+          
+            O
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\mathcal {O}}\,\!}
+  
+, almacenada por una bobina con inductancia 
+  
+    
+      
+        L
+        
+        
+      
+    
+    {\displaystyle L\,\!}
+  
+, que ye percorrida por una corriente d'intensidá 
+  
+    
+      
+        I
+        
+        
+      
+    
+    {\displaystyle I\,\!}
+  
+, vien dada por:
+
+  
+    
+      
+        
+          
+            O
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        L
+        
+          I
+          
+            2
+          
+        
+        
+        
+      
+    
+    {\displaystyle {\mathcal {O}}={1 \over 2}LI^{2}\,\!}
+  
+
+
+=== En circuitos ===
+
+De la formulación física de la bobina estrayer la espresión:
+
+  
+    
+      
+        
+          y
+          (
+          t
+          )
+        
+        =
+        
+          −
+          L
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {y(t)}={-L}\cdot {{di(t)} \over {dt}}}
+  
+
+Suponiendo una bobina ideal, (figura 1), ensin perdes de carga, aplicando la segunda Llei de Kirchhoff, tiense que:
+
+  
+    
+      
+        
+          v
+          (
+          t
+          )
+        
+        +
+        
+          y
+          (
+          t
+          )
+        
+        =
+        
+          0
+        
+        
+        
+      
+    
+    {\displaystyle {v(t)}+{y(t)}={0}\,\!}
+  
+
+Esto ye, en toa bobina llétrica dientro d'un circuitu produzse nella una cayida de tensión:
+
+  
+    
+      
+        
+          
+            v
+            
+              L
+            
+          
+          (
+          t
+          )
+        
+        =
+        
+          v
+          (
+          t
+          )
+        
+        =
+        
+          −
+          y
+          (
+          t
+          )
+        
+        =
+        
+          L
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {v_{L}(t)}={v(t)}={-y(t)}={L}\cdot {{di(t)} \over {dt}}}
+  
+
+Estenando la intensidá:
+
+  
+    
+      
+        
+          i
+          (
+          t
+          )
+        
+        =
+        
+          i
+          (
+          0
+          )
+        
+        +
+        
+          
+            
+              1
+            
+            
+              L
+            
+          
+        
+        ⋅
+        
+          
+            ∫
+            
+              0
+            
+            
+              t
+            
+          
+          v
+          (
+          t
+          )
+          
+          d
+          t
+        
+        
+        
+      
+    
+    {\displaystyle {i(t)}={i(0)}+{{1} \over {L}}\cdot {\int _{0}^{t}v(t)\,dt}\,\!}
+  
+
+Si nel intre t = 0, la bobina ta cargada con una corriente I, ésta puédese sustituise por una bobina descargada y una fonte d'intensidá de valor i(0) = I en paralelu.
+La corriente pola bobina y por tanto'l fluxu nun pueden variar de sópitu yá que si non la tensión 
+  
+    
+      
+        
+          
+            v
+            
+              L
+            
+          
+          (
+          t
+          )
+        
+      
+    
+    {\displaystyle {v_{L}(t)}}
+  
+ tendría de faese infinita. Por eso al abrir un circuitu onde se tope coneutada una bobina, siempres va saltar un arcu de corriente ente los bornes del interruptor que da salida a la corriente que descarga la bobina.
+Cuando'l inductor nun ye ideal porque tien una resistencia interna en serie, la tensión aplicao ye igual a la suma de la cayida de tensión sobre la resistencia interna más la fuercia contra-electromotriz autoinducida.
+
+
+=== En corriente alterna ===
+En corriente alterna, una bobina ideal ufierta una resistencia al pasu de la corriente llétrica que recibe'l nome de reactancia inductiva, 
+  
+    
+      
+        
+          
+            X
+            
+              L
+            
+          
+        
+      
+    
+    {\displaystyle {X_{L}}}
+  
+, que'l so valor vien dau pol productu de la pulsación (
+  
+    
+      
+        
+        ω
+        =
+        2
+        π
+        f
+        
+        
+      
+    
+    {\displaystyle \quad \omega =2\pi f\,\!}
+  
+) pola inductancia, L:
+
+  
+    
+      
+        
+        
+          X
+          
+            L
+          
+        
+        =
+        j
+        ω
+        L
+        
+        
+      
+    
+    {\displaystyle \quad X_{L}=j\omega L\,\!}
+  
+
+Si la pulsación ta en radianes per segundu (rad/s) y la inductancia en henrios (H) la reactancia va resultar n'ohmios.
+Acordies cola llei d'Ohm va circular una corriente alterna que se va ver retrasada 90º (
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+  
+) al respective de la tensión aplicao.
+
+
+=== Asociaciones comunes ===
+
+Al igual que les resistencies, les bobines pueden acomuñar en serie (figura 2), paralelu (figura 3) o de forma mista. Nestos casos, y siempres que nun esista acoplamientu magnéticu, la inductancia equivalente pa l'asociación en serie va venir dada por:
+
+  
+    
+      
+        
+          L
+          
+            A
+            B
+          
+        
+        =
+        
+          L
+          
+            1
+          
+        
+        +
+        
+          L
+          
+            2
+          
+        
+        +
+        .
+        .
+        .
+        +
+        
+          L
+          
+            n
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          L
+          
+            k
+          
+        
+      
+    
+    {\displaystyle L_{AB}=L_{1}+L_{2}+...+L_{n}=\sum _{k=1}^{n}L_{k}}
+  
+
+Pa l'asociación en paralelu tenemos:
+
+  
+    
+      
+        
+          L
+          
+            A
+            B
+          
+        
+        =
+        
+          
+            1
+            
+              
+                ∑
+                
+                  k
+                  =
+                  1
+                
+                
+                  n
+                
+              
+              
+                
+                  1
+                  
+                    L
+                    
+                      k
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle L_{AB}={1 \over \sum _{k=1}^{n}{1 \over L_{k}}}}
+  
+
+Pa l'asociación mista va venir# de forma análoga que coles resistencies.
+Si ríquese una mayor comprensión del comportamientu reactivu d'un inductor, ye conveniente entós 
+analizar refechamente la "Llei de Lenz" y comprobar d'esta forma cómo s'anicia una reactancia de tipu inductiva, que naz por cuenta de una oposición que-y presenta'l inductor o bobina a la variación de fluxu magnético.
+
+
+== Comportamientos ideal y real ==
+
+
+=== En corriente continua ===
+Una bobina ideal en corriente continua pórtase como un cortucircuitu (conductor ideal), yá que al ser i(t) constante, esto ye, nun varia col tiempu, nun hai autoinducción de nenguna f.y.m.
+
+  
+    
+      
+        
+          
+            v
+            
+              L
+            
+          
+          (
+          t
+          )
+        
+        =
+        
+          L
+        
+        ⋅
+        
+          
+            
+              d
+              i
+              (
+              t
+              )
+            
+            
+              d
+              t
+            
+          
+        
+        =
+        
+          0
+        
+        
+        
+      
+    
+    {\displaystyle {v_{L}(t)}={L}\cdot {{di(t)} \over {dt}}={0}\,\!}
+  
+
+Una bobina real en réxime permanente pórtase como una resistencia que'l so valor 
+  
+    
+      
+        
+          
+            R
+            
+              L
+            
+          
+        
+      
+    
+    {\displaystyle {R_{L}}}
+  
+ (figura 6a) va ser el del so enduvelláu.
+En réxime transitoriu, esto ye, al coneutar o desconectar un circuitu con bobina, asoceden fenómenos electromagnéticos qu'inciden sobre la corriente (ver circuitos serie RL y RC).
+
+
+=== En corriente alterna ===
+
+Al coneutar una CA senoidal v(t) a una bobina va apaecer una corriente i(t), tamién senoidal, esto ye, variable, polo que, como se comentó más arriba, va apaecer una fuercia contraelectromotriz, -y(t), que'l so valor absolutu puede demostrara que ye igual al de v(t). Por tanto, cuando la corriente i(t) aumenta, y (t) mengua pa enzancar dichu aumentu; análogamente, cuando i(t) mengua, y(t) aumenta pa oponese a dicha amenorgamientu. Esto puede apreciase na diagrama de la figura 4. Ente 0º y 90º la curva i(t) ye negativa, menguando dende'l so valor máximu negativu hasta cero, reparándose que y(t) va aumentando hasta algamar el so máximu negativu. Ente 90º y 180°, la corriente aumenta dende cero hasta'l so valor máximu positivu, mientres y(t) mengua hasta ser cero. Dende 180° hasta los 360° el razonamientu ye similar al anterior.
+
+Puesto que la tensión aplicao, v(t) ye igual a -y(t), o lo que ye lo mesmo, ta desfasada 180° respectu de y(t), resulta que la corriente i(t) queda retrasada 90º respectu de la tensión aplicao. Consideremos poro, una bobina L, como la de la figura 1, a la que s'aplica una tensión alterno de valor:
+
+  
+    
+      
+        o
+        (
+        t
+        )
+        =
+        
+          V
+          
+            0
+          
+        
+        ⋅
+        sin
+        ⁡
+        (
+        ω
+        t
+        +
+        β
+        )
+        ,
+      
+    
+    {\displaystyle o(t)=V_{0}\cdot \sin(\omega t+\beta ),}
+  
+
+Acordies cola llei d'Ohm va circular una corriente alterna, retrasada 90º (
+  
+    
+      
+        π
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \pi /2}
+  
+) al respective de la tensión aplicao (figura 5), de valor:
+
+  
+    
+      
+        i
+        (
+        t
+        )
+        =
+        
+          
+            
+              o
+              (
+              t
+              )
+            
+            R
+          
+        
+        =
+        
+          I
+          
+            0
+          
+        
+        ⋅
+        sin
+        ⁡
+        (
+        ω
+        t
+        +
+        β
+        −
+        
+          90
+          
+            ∘
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle i(t)={o(t) \over R}=I_{0}\cdot \sin(\omega t+\beta -90^{\circ }),}
+  
+
+onde 
+  
+    
+      
+        
+          I
+          
+            0
+          
+        
+        =
+        
+          
+            
+              V
+              
+                0
+              
+            
+            
+              X
+              
+                L
+              
+            
+          
+        
+      
+    
+    {\displaystyle I_{0}={V_{0} \over X_{L}}}
+  
+. Si representa'l valor eficaz de la corriente llograda en forma polar:
+
+  
+    
+      
+        
+          
+            
+              I
+              →
+            
+          
+        
+        =
+        
+          I
+          
+            
+              /
+            
+            
+            
+            
+            
+              
+                
+                   
+                  β
+                  −
+                  
+                    90
+                    
+                      ∘
+                    
+                  
+                
+                _
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {I}}=I_{/\!\!\!{\underline {\ \beta -90^{\circ }}}}}
+  
+
+Y operando matemáticamente:
+
+  
+    
+      
+        
+          
+            
+              I
+              →
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                V
+                
+                  X
+                  
+                    L
+                  
+                
+              
+            
+            )
+          
+          
+            
+              /
+            
+            
+            
+            
+            
+              
+                
+                   
+                  β
+                  −
+                  
+                    90
+                    
+                      ∘
+                    
+                  
+                
+                _
+              
+            
+          
+        
+        =
+        
+          
+            
+              V
+              
+                
+                  /
+                
+                
+                
+                
+                
+                  
+                    
+                       
+                      β
+                    
+                    _
+                  
+                
+              
+            
+            
+              
+                
+                  X
+                  
+                    L
+                  
+                
+              
+              
+                
+                  /
+                
+                
+                
+                
+                
+                  
+                    
+                       
+                      
+                        90
+                        
+                          ∘
+                        
+                      
+                    
+                    _
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {I}}=\left({V \over X_{L}}\right)_{/\!\!\!{\underline {\ \beta -90^{\circ }}}}={V_{/\!\!\!{\underline {\ \beta }}} \over {X_{L}}_{/\!\!\!{\underline {\ 90^{\circ }}}}}}
+  
+
+Poro, nos circuitos de CA, una bobina ideal puede asimilase a una magnitú complexa ensin parte real y parte imaxinaria positiva:
+
+  
+    
+      
+        
+          
+            
+              
+                X
+                
+                  L
+                
+              
+              →
+            
+          
+        
+        =
+        0
+        +
+        j
+        
+          X
+          
+            L
+          
+        
+        =
+        
+          
+            
+              X
+              
+                L
+              
+            
+          
+          
+            
+              /
+            
+            
+            
+            
+            
+              
+                
+                   
+                  
+                    90
+                    
+                      ∘
+                    
+                  
+                
+                _
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {X_{L}}}=0+jX_{L}={X_{L}}_{/\!\!\!{\underline {\ 90^{\circ }}}}}
+  
+
+Na bobina real, va haber que tener en cuenta la resistencia de la so bobinado, RL, pudiendo ser el so circuitu equivalente o modelu, el qu'apaez na figura 6b) o 6c) dependiendo del tipu de bobina o frecuencia de funcionamientu, anque p'analises más precisos pueden utilizase modelos más complexos que los anteriores.
+
+
+== Comportamientu a la interrupción del circuitu ==
+
+Esaminemos el comportamientu práuticu d'un inductor cuando s'ataya'l circuitu que lu alimenta. Nel dibuxu de derecha apaez un inductor que se carga al traviés una resistencia y un interruptor. El condensador dibuxáu en puntiáu representa les capacitancias parásites del inductor. Ta dibuxáu separáu del inductor, pero en realidá forma parte d'él, porque representa les capacidaes parásites de les vueltes del enduvelláu ente elles mesmes. Tou inductor tien capacidaes parásites, inclusive los enduvellaos especialmente concebíos pa embriviles como l'enduvelláu en "nial d'abeyes".
+
+A un ciertu momentu 
+  
+    
+      
+        
+          
+            
+              t
+              
+                ∘
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {t_{\circ }}}
+  
+ el interruptor ábrese. Si miramos la definición de inductancia:
+
+  
+    
+      
+        V
+        =
+        L
+        
+          
+            
+              d
+              i
+            
+            
+              d
+              t
+            
+          
+        
+      
+    
+    {\displaystyle V=L{di \over dt}}
+  
+
+vemos que, por que la corriente que traviesa'l inductor deténgase instantáneamente, seria necesariu l'apaición d'una tensión infinito, y eso nun puede asoceder. Por esa razon la corriente sigue circulando al traviés de les capacidaes parásites de la bobina. De primeres, l'únicu camín que tien ye al traviés les capacidaes parásites. La corriente sigue circulando al traviés la capacidá parásita, cargando negativamente el puntu altu del condensador nel dibuxu. 
+Atopamos con un circuitu LC que va bazcuyar a una pulsación:
+
+  
+    
+      
+        
+          
+            ω
+            =
+            
+              
+                1
+                
+                  
+                    L
+                    C
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \textstyle {\omega ={1 \over {\sqrt {LC}}}}}
+  
+
+onde 
+  
+    
+      
+        
+          
+            C
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {C}}
+  
+ ye'l valor equivalente de les capacidaes parásites. Si los aislamientos del enduvelláu son abondo resistentes a les altes tensiones, y si el interruptor ataya bien el circuitu, la oscilación va siguir con una amplitú que se amortiguará por cuenta de les perdes dieléctriques y resistivas de les capacidaes parásites y del conductor del inductor. Si amás, el inductor tien un nucleu ferromagnético, va haber tamién perdes nel nucleu.
+Hai que ver que la tensión máximo (conocida como "sobretensión") de la oscilación puede ser bien grande, una y bones el máximu de la tensión correspuende al momentu nel cual tola enerxía almacenada na bobina 
+  
+    
+      
+        
+          
+            
+              
+                1
+                2
+              
+            
+            L
+            
+              I
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {{1 \over 2}LI^{2}}}
+  
+ pasaría a les capacidaes parásites 
+  
+    
+      
+        
+          
+            
+              
+                1
+                2
+              
+            
+            C
+            
+              V
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {{1 \over 2}CV^{2}}}
+  
+. Si estes son pequeñes, la tensión puede ser bien grande y pueden producise arcos llétricos ente vueltes de la bobina o ente los contactos abiertos del interruptor. 
+Anque los arcos llétricos seyan frecuentemente gafíos y peligrosos, otres vegaes son útiles y deseyaos. Ye'l casu de la soldadura al arcu, llámpares a arcu, altu fornu llétricu y fornos a arcu. Nel casu de la soldadura al arcu, el interruptor del nuesu diagrama ye'l contautu ente'l metal a soldar y l'electrodu.
+
+Lo qu'asocede cuando l'arcu apaez depende de les carauterístiques llétriques del arcu. Y les carauterístiques d'un arcu dependen de la corriente que la traviesa. Cuando la corriente ye grande (decenes d'amperios), l'arcu ta formáu per un camín trupu de molécules y átomos ionizados que presenten poca resistencia llétrica y una inercia térmica que la fai durar. L'arcu estena centenes de vatios y puede fundir metales y crear quemes. Si l'arcu producir ente los contactos del interruptor, el circuitu nun va tar verdaderamente abiertu y la corriente va siguir circulando.
+Los arcos ensin deseyar constitúin un problema serio y difícil de resolver cuando s'utilicen altes tensiones y grandes potencies. 
+
+Cuando les corrientes son pequeñes, l'arcu esfrezse rápido y dexa de conducir la lletricidá.
+Nel dibuxu de la derecha ilustremos un casu particular que puede producise, pero que solo ye unu de los casos posibles. Ampliemos la escala del tiempu alredor de l'apertura del interruptor y de la formación del arcu.
+Dempués de l'apertura del interruptor, la tensión a los bornes de la inductancia aumenta (con signu contrariu). Nel intre 
+  
+    
+      
+        
+          
+            
+              t
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {t_{1}}}
+  
+, la tensión ye abonda pa crear un arcu ente dos vueltes de la bobina. L'arcu presenta poca resistencia llétrica y descarga rápido les capacidaes parásites. La corriente, en llugar de siguir cargando les capacidaes parásites, empieza a pasar pol arcu. Dibuxemos el casu nel cual la tensión del arcu ye relativamente constante. La corriente del inductor mengua hasta que al intre 
+  
+    
+      
+        
+          
+            
+              t
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle \scriptstyle {t_{2}}}
+  
+ seya demasiáu pequeña pa caltener l'arcu y esti apágase y dexa de conducir. La corriente vuelve pasar poles capacidaes parásites y esta vegada la oscilación sigue amortiguándose y ensin crear nuevos arcos, una y bones esta vegada la tensión nun va algamar valores demasiáu grandes. Recordemos qu'esti ye solamente un casu posible.
+Puede esplicase por qué una persona puede recibir una pequeña descarga llétrica al midir la resistencia d'un bobinado con un simple óhmetro que solo puede alimentar unos miliamperios y unos pocos voltios. La razón ye que pa midir la resistencia del bobinado, fai-y circular unos miliamperios. Si, cuando se desconecten los cables del óhmetro, sigue tocándose colos deos los bornes de la bobina, los miliamperios que circulaben nella van siguir faciéndolo, pero pasando polos deos. 
+
+
+=== Analís de transitorios ===
+
+La regla ye que, pa evitar los arcos o les sobretensiones, hai que protexer los circuitos previendo un pasaxe pa la corriente del inductor cuando'l circuitu atáyase. Na diagrama de la derecha hai un exemplu d'un transistor que controla la corriente nuna bobina (la d'un relé, por casu). Cuando'l transistor blóquiase, la corriente que circula na bobina carga les capacidaes parásites y la tensión del colector aumenta y puede devasar fácilmente la tensión máximo de la unión colector-base y destruyir el transistor. Asitiando un diodu como na diagrama, la corriente atopa un camín nel diodu y la tensión del colector va tar llindada a la tensión d'alimentación más los 0,6 V del diodu. El preciu funcional d'esta proteición ye que la corriente de la bobina tardienta más en menguar y eso, en dellos casos, pue ser un inconveniente. Puede menguase el tiempu si, en llugar d'un diodu rectificador, asítiase un diodu zener o Transil. Nun hai qu'escaecer que'l dispositivu de proteición tendrá de ser capaz d'absorber casi tola enerxía almacenada nel inductor.
+
+
+== Ver tamién ==
+Solenoide
+Bobina de Rogowski
+
+
+== Referencies ==
+
+
+=== Bibliografía ===
+Gómez Campumanes, José. Circuitos Llétricos. Serviciu de Publicaciones de la Universidá d'Uviéu. ISBN 84-7468-288-6.
+
+
+== Enllaces esternos ==
+ Wikimedia Commons acueye conteníu multimedia sobre Inductores.
+Midida de Resistencia de Bobinados en Tresformadores Archiváu 2016-03-05 en Wayback Machine (artículu/manual)
+Símbolos de Bobines llétriques / Inductores (enllaz rotu disponible n'Internet Archive; ver l'historial y la última versión).
+Diseñu de la bobina de nucleu d'aire d'una capa calculadora en llinia

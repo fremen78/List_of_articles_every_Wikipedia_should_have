@@ -1,0 +1,128 @@
+Transformator je pasivna komponenta koja prenosi električnu energiju iz jednog električnog kola na drugo ili više njih. Promjenjiva struja u bilo kojem namotaju transformatora proizvodi promjenjivi magnetni tok u jezgri transformatora, koji inducira promjenjivu elektromotornu silu na bilo koji drugi namotaj oko istog jezgra. Električna energija se može prenositi između odvojenih namotaja bez metalne (provodljive) veze između dva kola. Faradayev zakon elektromagnetne indukcije, otkriven 1831, opisuje efekat indukovanog napona u bilo kojem namotaju zbog promjenjivog magnetnkog toka okruženog namotajem.
+Transformatori se koriste za promjenu nivoa napona naizmjenične struje, te postoje oni koji ga povećavaju ("step-up") i oni koji smanjuju nivo napona ("step-down"). Transformatori se također mogu koristiti za obezbjeđivanje galvanske izolacije između kola, kao i za spajanje dijelova kola za obradu signala. Od izuma prvog transformatora s konstantnim potencijalom u 1885, transformatori su postali neizostavni u prijenosu, distribuciji i korištenju električne energije naizmjenične struje. Moguće je pronaći širok spektar različitih dizajna transformatora koji se koriste u elektronici i elektroenergetskim aplikacijama. Veličina transformatora se kreće od ispod kubnog centimetra (RF transformatori) do jedinica teških stotine tona koji se koriste za međusobno povezivanje elektroenergetske mreže.
+
+
+== Načela ==
+
+
+=== Idealan transformator ===
+Idealan transformator je linearan, bez gubitaka i savršeno spojen. Savršeno spajanje podrazumijeva beskonačno visoku magnetnu permeabilnost jezgra i beskonačnu induktivnost namotaja, te ukupnu magnetomotornu silu jednaku nuli (npr. ipnp − isns = 0).
+
+Promjenjiva struja u primarnom namotaju transformatora stvara promjenjivi magnetni fluks u jezgru transformatora, koje je također okruženo sekundarnim namotajem. Ovaj promjenjivi fluks na sekundarnom namotaju indukuje promjenjivu elektromotornu silu ili napon u sekundarnom namotaju. Ovaj fenomen elektromagnetne indukcije je osnova djelovanja transformatora i, u skladu s Lenzovim zakonom, tako proizvedena sekundarna struja stvara fluks jednak i suprotan fluksu koji proizvodi primarni namotaj.
+Namotaji su namotani oko jezgra beskonačno visoke magnetne permeabilnosti tako da sav magnetni fluks prolazi i kroz primarni i kroz sekundarni namotaj. S izvorom napona spojenim na primarni namotaj i opterećenjem spojenim na sekundarni namotaj, struje transformatora teku u naznačenim smjerovima i magnetomotorna sila jezgra se poništava.
+Prema Faradayevom zakonu, budući da isti magnetni sluks prolazi kroz primarni i sekundarni namotaj idealnog transformatora, napon se indukuje u svakom namotaju proporcionalno broju njegovih zavoja. Odnos napona namotaja transformatora jednak je omjeru zavoja namotaja.
+Idealan transformator je razumna aproksimacija za tipičan komercijalni transformator, s omjerom napona i omjerom zavoja namotaja obrnuto proporcionalnim odgovarajućem omjeru struje.
+Impedansa opterećenja koja se odnosi na primarno kolo jednaka je omjeru zavoja pomnoženom s impedansom opterećenja sekundarnog kola.
+
+
+=== Realan transformator ===
+
+
+==== Odstupanja od idealnog transformatora ====
+Model idealnog transformatora zanemaruje mnoge osnovne linearne aspekte realnih transformatora, uključujući neizbježne gubitke i neučinkovitost.
+(a) Gubici u jezgru, zajednički nazvani gubici struje magnetizacije, koji se sastoje od
+
+histereznih gubitaka zbog nelinearnih magnetnih efekata u jezgru transformatora, i
+gubitaka kroz vrtložne struje zbog zagrijavanja u jezgru koje su proporcionalne kvadratu napona dovedenog na transformator.
+(b) Za razliku od idealnog modela, namotaji u ralnom transformatoru posjeduju otpore i induktivnosti različite od nule povezane s:
+
+Jouleovim gubicima zbog otpora u primarnom i sekundarnom namotaju
+fluksom curenja koji izlazi iz jezgra i prolazi samo kroz jedan namotaj što se ogleda u primarnoj i sekundarnoj reaktivnoj impedansi.
+(c) Slično kao kod zavojnice, parazitski kapacitet i fenomen vlastite rezonance zbog distribucije električnog polja. Obično se razmatraju tri vrste parazitskih kapaciteta i daju se jednačine zatvorenog kola.
+
+Kapacitet između susjednih zavoja u bilo kojem sloju;
+Kapacitet između susjednih slojeva;
+Kapacitet između jezgra i slojeva uz jezgro;
+Uključivanje kapaciteta u model transformatora je komplikovano i rijetko se pokušava; najčešće ekvivalentno kolo modela "realnog" transformatora ne uključuje parazitne kapacitete. Međutim, učinak kapaciteta može se izmjeriti poređenjem induktiviteta otvorenog kola, tj. induktiviteta primarnog namotaja kada je sekundarno kolo otvoreno, s induktivitetom kratkog spoja kada je sekundarni namotaj kratko spojen.
+
+
+==== Fluks curenja ====
+
+Idealni model transformatora pretpostavlja da sav fluks kojeg generiše primarni namotaj povezuje sve zavoje svakog namotaja, uključujući i njega samog. U praksi, dio fluksa ide putevima koji ga vode izvan namotaja. Takav fluks se naziva fluks curenja i njegov rezultat je induktivnost curenja povezana serijiski s međusobno povezanim namotajima transformatora. Fluks curenja dovodi do toga da se energija naizmjenično skladišti i ispušta iz magnetnih polja sa svakim ciklusom napajanja. To ne predstavlja direktan gubitak snage, već se rezultat ogleda u inferiornijoj regulaciji napona, uzrokujući tako da sekundarni napon nije direktno proporcionalan primarnom naponu, posebno pod velikim opterećenjem. Transformatori su zato obično dizajnirani da imaju vrlo nisku induktivnost curenja.
+U nekim primjenama poželjno je imati povećano curenje, a dugi magnetni putevi, zračne praznine ili magnetni premosnici mogu se namjerno uvesti u dizajn transformatora kako bi se ograničila struja kratkog spoja koju će isporučiti. Transformatori koji "cure" mogu se koristiti za napajanje opterećenja koja pokazuju negativan otpor, kao što su električni lukovi, živine i natrijeve sijalice i neonske cijevi ili za bezbjedno rukovanje opterećenjima koja povremeno dolaze u kratki spoj, kao što su elektrolučni zavarivači.
+Zračne praznine se također koriste da bi spriječili zasićenje transformatora, posebno u slučaju audio-frekvencijskih transformatora u kolima koja imaju jednosjmernu (DC) komponentu koja teče u namotajima. Zasićeni reaktor koristi zasićenje jezgra za kontrolu naizmjenične struje.
+Poznavanje induktivnosti curenja je također korisno kada transformatori rade paralelno. Može se pokazati da kada bi postotak impedanse  i pripadajući omjer reaktanse curenja namotaja i otpora (X/R) dva transformatora bili isti, transformatori bi dijelili snagu opterećenja proporcionalno svojim odgovarajućim naznačenim ocjenama. Međutim, tolerancije impedanse komercijalnih transformatora su značajne. Također, impedansa i odnos X/R transformatora različitih kapaciteta imaju tendenciju da variraju.
+
+
+==== Ekvivalentno kolo ====
+Pozivajući se na dijagram, fizikalno ponašanje praktičnog transformatora može biti predstavljeno modelom ekvivalentnog kola, koji može uključivati idealan transformator.
+Jouleovi gubici u namotajima i reaktansa curenja predstavljeni su sljedećim serijski povezanim impedansama modela:
+
+Primarni namotaj: RP, XP
+Sekundarni namotaj: RS, XS.
+U normalnom toku transformacije u ekvivalentno kolo, RS i XS se u praksi obično odnose na primarnu stranu množenjem ovih impedansi s omjerom zavoja na kvadrat, (NP/NS) 2 = a2.
+
+Gubitak jezgra i reaktansa predstavljeni su sljedećim impedansama u modelu:
+
+Gubici u jezgru ili željezu: RC
+Reaktansa magnetizacije: XM.
+RC i XM se zajednički nazivaju granom magnetizacije modela.
+Gubici u jezgru su uzrokovani uglavnom histerezom i efektima vrtložnih struja u jezgru i proporcionalni su kvadratu fluksa jezgre za rad na datoj frekvenciji.  Jezgro konačne permeabilnosti zahtijeva struju magnetizacije IM za održavanje međusobnog fluksa u jezgru. Struja magnetizacije je u fazi s fluksom, a odnos između njih je nelinearan zbog efekata zasićenja. Međutim, sve impedanse prikazanog ekvivalentnog kola su po definiciji linearne i takvi efekti nelinearnosti se obično ne odražavaju u ekvivalentnim kolima transformatora. Sa sinusoidnim napajanjem, fluks jezgra zaostaje za indukovanom elektromotornom silom (EMF) za 90°. S otvorenim sekundarnim namotajem, struja grane magnetizacije I0 jednaka je struji praznog hoda transformatora.
+
+Rezultirajući model, iako se ponekad naziva "egzaktnim" ekvivalentnim kolom zasnovanim na pretpostavkama linearnosti, zadržava brojne aproksimacije. Analiza se može pojednostaviti pretpostavkom da je impedansa grane magnetizacije relativno visoka i premještanjem grane lijevo od primarnih impedansi. Ovo unosi grešku, ali omogućava kombinaciju primarnog i referentnog sekundarnog otpora i reaktanse jednostavnim sabiranjem kao dvije serijski povezane impedanse.
+Parametri impedanse ekvivalentnog kola transformatora i omjera transformatora mogu se izvesti iz sljedećih testova: test otvorenog kola, test kratkog spoja, test otpora namotaja i test omjera transformatora.
+
+
+=== Jednačina elektromotorne sile (EMF) tranformatora ===
+
+Ako je fluks u jezgru čista sinusoida, odnos za bilo koji namotaj između njegovog efektivnog (rms) napona Erms namotaja i frekvencije napajanja f, broja zavoja N, površine poprečnog presjeka jezgre A u m2 i maksimalne gustine magnetnog fluksa Bvrh u Wb/m2 ili T (tesla) predstavljen je univerzalnom jednačinom elektromotorne sile (EMF):
+
+  
+    
+      
+        
+          E
+          
+            rms
+          
+        
+        =
+        
+          
+            
+              2
+              π
+              f
+              N
+              A
+              
+                B
+                
+                  vrh
+                
+              
+            
+            
+              2
+            
+          
+        
+        ≈
+        4.44
+        f
+        N
+        A
+        
+          B
+          
+            vrh
+          
+        
+      
+    
+    {\displaystyle E_{\text{rms}}={\frac {2\pi fNAB_{\text{vrh}}}{\sqrt {2}}}\approx 4.44fNAB_{\text{vrh}}}
+  
+
+
+== Također pogledajte ==
+Magnetizacija
+Zavojnica
+
+
+== Bilješke ==
+
+
+== Reference ==
+
+
+== Vanjski linkovi ==

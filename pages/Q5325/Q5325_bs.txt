@@ -1,0 +1,199 @@
+Zavojnica je elektronski element koji ima određen induktivitet (L). Induktivitet se izražava u henrijima (H), nazvanim po američkom fizičaru Josephu Henryu, a najčešće se upotrebljava jedinica milihenri (mH). Zavojnica se redovito sastoji od žice koja je namotana jednostavno ili unakrsno u jednom ili više slojeva. Nosač ili tijelo zavojnice izrađuje se od impregniranog papira, drveta, sintetičkog ili sličnog materijala. Najčešće ima oblik šupljeg valjka.
+Vodič od kojega je napravljena zavojnica najčešće je bakreni, izoliran lakom, rjeđe pamukom ili svilom. Kod zavojnica, predviđenih za vrlo visoke frekvencije upotrebljava se posrebrena bakrena žica ili cijev. Samo specijalne zavojnice za ultrakratke valove su bez tijela. Vodič tada mora biti mehanički dovoljno krut da zadrži svoj oblik. Za razliku od otpornika i kondenzatora zavojnice se veoma teško nalaze kao već gotov proizvod u trgovinama, jer svojstva zavojnice ovise o konkretnoj primjeni.
+
+
+== Upotreba i vrste zavojnica ==
+U titrajnim krugovima najčešće se upotrebljavaju valjčaste jednoslojne zavojnice. Karakteristike zavojnica ovise o sljedećim parametrima, to su: D - srednji promjer zavojnice, l - dužina zavojnice, d - debljina žice, N - broj namotaja žice, te a - razmak između svakog namotaja. Svi ti spomenuti parametri utiču na veličinu induktiviteta L. Zavojnice možemo podijeliti na one namijenjene za niskofrekventne (NF) i visokofrekventne (VF) strujne krugove. Dok ih s obzirom na izvedbu dijelimo na: zavojnice s jezgrom i zavojnice bez jezgre.
+Kao jezgra za NF zavojnice upotrebljavaju se međusobno izolirani transformatorski limovi. Dok se za VF zavojnice upotrebljavaju posebne VF jezgre. Postoje razne vrste materijala za izradu takvih jezgri. Dobivaju se sintetički, a nose nazive "siferit", "feroskuba", itd... Zavojnice se također mogu međusobno spajati, no s time da veza između njih mora biti ostvarena pomoću vodiča, ali i pomoću njihova induktiviteta. Krajnji induktivitet spoja ovisan je o induktivitetu pojedinih zavojnica i o njihovoj međusobnoj vezi. Tačan proračun se može dobiti za sasvim jednostavne slučajeve, kada zavojnice ne djeluju jedna na drugu, bilo da su dovoljno daleko ili oklopljene metalnim oklopom.
+
+
+== Spojevi zavojnica ==
+Zavojnice se mogu spajati serijski i paralelno. Kod serijskog spoja zavojnica ukupan induktivitet jednak je zbiru svih induktiviteta pojedinih zavojnica:
+
+  
+    
+      
+        
+          L
+          
+            u
+          
+        
+        =
+        
+          L
+          
+            1
+          
+        
+        +
+        
+          L
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          L
+          
+            n
+          
+        
+      
+    
+    {\displaystyle L_{u}=L_{1}+L_{2}+\cdots +L_{n}}
+  
+
+Kod paralelnog spoja induktiviteta odnosno zavojnica, ukupni induktivitet jednak je recipročnoj vrijednosti zbira recipročnih vrijednosti induktiviteta pojedinih zavojnica:
+
+  
+    
+      
+        
+          
+            1
+            
+              L
+              
+                u
+              
+            
+          
+        
+        =
+        
+          
+            1
+            
+              L
+              
+                1
+              
+            
+          
+        
+        +
+        
+          
+            1
+            
+              L
+              
+                2
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            
+              L
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{L_{u}}}={\frac {1}{L_{1}}}+{\frac {1}{L_{2}}}+\cdots +{\frac {1}{L_{n}}}}
+  
+
+Za složenije slučajeve spajanja zavojnica u praksi je najjednostavnije izmjeriti zajednički induktivitet kombinacije zavojnica.
+
+
+== Proračun jednoslojne, valjkaste zavojnice ==
+Ovo je vrsta zavojnica koja se najčešće upotrebljava u elektrotehnici. Već smo rekli da nekoliko parametara utiče na karakteristike zavojnice: broj zavoja (namotaja), promjer zavojnice, dužina zavojnice, ali ovisi i o omjeru dužine i promjera zavojnice. Taj omjer se zove "K faktor". Induktivitet se jednostavno može izračunati iz matematičke relacije:
+
+  
+    
+      
+        L
+        =
+        K
+        ∗
+        D
+        ∗
+        
+          N
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L=K*D*N^{2}}
+  
+
+U toj formuli L je induktivitet zavojnice izražen u mikrohenrijima, D - promjer zavojnice u centimetrima, N - broj zavoja (namota) i K - faktor koji ovisi o omjeru dužine i promjera zavojnice.
+
+
+== Određivanje induktivnog otpora zavojnice ==
+Posmatrajući električno kolo sa idealnom zavojnicom zaključujemo: napon izvora u kolu i napon samoindukcije jednaki su po intenzitetu, ali su suprotnog smjera djelovanja:
+
+  
+    
+      
+        U
+        =
+        −
+        U
+        s
+      
+    
+    {\displaystyle U=-Us}
+  
+
+Zato za napon U možemo pisati da je:
+
+  
+    
+      
+        U
+        =
+        ω
+        L
+        ⋅
+        I
+      
+    
+    {\displaystyle U=\omega L\centerdot I}
+  
+
+Iz navedene formule dolazimo do Ohmovog zakona za kolo sa čisto induktivnim otporom.
+Reaktivni induktivni otpor koji se suprotstavlja izmjeničnoj struji označava se sa Xʟ, a on je proporcionalan frekvenciji izmjenične struje i induktivitetu zavojnice kroz koju ona protiče:
+
+  
+    
+      
+        
+          X
+          
+            L
+          
+        
+        =
+        ω
+        
+        L
+        =
+        2
+        π
+        
+        f
+        
+        L
+      
+    
+    {\displaystyle X_{L}=\omega \,L=2\pi \,f\,L}
+  
+
+
+== Reference ==

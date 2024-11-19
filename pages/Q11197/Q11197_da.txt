@@ -1,0 +1,569 @@
+Logaritmer er en klasse af matematiske funktioner 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+      
+    
+    {\displaystyle \log _{a}}
+  
+, der opfylder
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        
+          a
+          
+            x
+          
+        
+        )
+        =
+        x
+        
+      
+    
+    {\displaystyle \log _{a}(a^{x})=x\,}
+  
+
+for alle 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+. 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ kaldes for logaritmens grundtal. 
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \log _{a}(y)}
+  
+ er altså det tal (den potens), som 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ skal opløftes i, for at få 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+, og er derfor den inverse funktion til eksponentialfunktionen 
+  
+    
+      
+        
+          a
+          
+            x
+          
+        
+      
+    
+    {\displaystyle a^{x}}
+  
+.
+
+
+== Eksempel ==
+Tager man for eksempel 
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        100
+        )
+      
+    
+    {\displaystyle \log _{10}(100)}
+  
+ er resultatet 2, fordi 
+  
+    
+      
+        
+          10
+          
+            2
+          
+        
+        =
+        100
+      
+    
+    {\displaystyle 10^{2}=100}
+  
+.
+
+
+== Logaritmetabeller ==
+Før regnemaskinerne blev udbredt, brugte man i stor stil logaritmetabeller med "færdigberegnede" logaritmer til en masse tal, til at lette regnearbejdet med. Eksempel: Skulle man gange to tal med hinanden, slog man tallenes logaritme op i tabellerne, lagde tallenes logaritmer sammen, hvorefter man fandt gangeresultatet ved at tage summens antilogaritme i en anden tabel. De to mest anvendte logaritmer er 10-talslogaritmen med grundtal 10 og den naturlige logaritme med grundtallet e (2,71828...). Brugen af logaritmetabeller er nu stort set blevet erstattet af lommeregnere og computerprogrammer.
+
+
+== Naturlige logaritme ==
+Den naturlige logaritme er defineret som
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            1
+            y
+          
+        
+        
+        
+          d
+        
+        y
+      
+    
+    {\displaystyle \ln(x)=\int _{1}^{x}{\frac {1}{y}}\,\mathrm {d} y}
+  
+
+De øvrige logaritmefunktioner kan defineres ud fra den naturlige logaritme ved
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              ln
+              ⁡
+              (
+              x
+              )
+            
+            
+              ln
+              ⁡
+              (
+              a
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \log _{a}(x)={\frac {\ln(x)}{\ln(a)}}.}
+  
+
+Matematikere kalder ofte den naturlige logaritme for blot logaritmen (log), mens de pointerer 10-tallet i 10-talslogaritmen (log10).
+Omvendt er ingeniørerens logaritme (log) den med grundtallet 10, og den naturlige logaritme betegnes ln.
+Da ingeniørerne var dem, der konstruerede lommeregneren, har deres betegnelser vundet indpas på dette hjælpemiddel.
+
+
+== Anvendelse ==
+
+Logaritmer bruges bl.a. i udregning af visse enheder og værdier, ligesom logaritmiske skalaer ofte ses i koordinatsystemerne til visse grafer.
+
+
+== Regneregler ==
+Logaritmerne spiller en central rolle i matematikken, hvilket skyldes følgende regneregler, som kan benyttes til at omdanne vanskelige multiplikationer eller divisioner til mere simple additioner eller subtraktioner. For positive reelle tal 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ og 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ og et reelt tal x, gælder der, at
+
+  
+    
+      
+        log
+        ⁡
+        (
+        a
+        ⋅
+        b
+        )
+        =
+        log
+        ⁡
+        (
+        a
+        )
+        +
+        log
+        ⁡
+        (
+        b
+        )
+      
+    
+    {\displaystyle \log(a\cdot b)=\log(a)+\log(b)}
+  
+
+  
+    
+      
+        log
+        ⁡
+        (
+        
+          
+            
+              a
+              b
+            
+          
+        
+        )
+        =
+        log
+        ⁡
+        (
+        a
+        )
+        −
+        log
+        ⁡
+        (
+        b
+        )
+      
+    
+    {\displaystyle \log({\tfrac {a}{b}})=\log(a)-\log(b)}
+  
+
+  
+    
+      
+        log
+        ⁡
+        (
+        
+          a
+          
+            x
+          
+        
+        )
+        =
+        x
+        log
+        ⁡
+        (
+        a
+        )
+        
+      
+    
+    {\displaystyle \log(a^{x})=x\log(a)\,}
+  
+.
+Regnereglerne gælder generelt for alle logaritmer af vilkårlige base, inklusiv den naturlige logaritme.
+
+
+== Omregning til andre baser ==
+En logaritme kan omregnes fra en base til en anden med følgende formel:
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              a
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}(x)={\frac {\log _{b}(x)}{\log _{b}(a)}}}
+  
+
+Denne formel kan udledes på følgende måde:
+
+  
+    
+      
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+        =
+        x
+      
+    
+    {\displaystyle a^{\log _{a}(x)}=x}
+  
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        
+          a
+          
+            
+              log
+              
+                a
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{b}(a^{\log _{a}(x)})=\log _{b}(x)}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        ⋅
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        a
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log _{a}(x)\cdot \log _{b}(a)=\log _{b}(x)}
+  
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  b
+                
+              
+              ⁡
+              (
+              a
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \log _{a}(x)={\frac {\log _{b}(x)}{\log _{b}(a)}}}
+  
+
+
+== Referencer ==
+
+
+== Se også ==
+Regnestok, Decibel, Eksponentialfunktion
+
+
+== Bøger ==
+Holth, Klaus m.fl. (1987): Matematik Grundbog 1. Forlaget Trip, Vejle. ISBN 87-88049-18-3
+Hebsgaard, Thomas m.fl. (1989): Matematik Grundbog 2. Forlaget Trip, Vejle. ISBN 87-88049-13-2

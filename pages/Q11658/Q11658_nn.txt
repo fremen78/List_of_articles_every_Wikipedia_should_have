@@ -1,0 +1,706 @@
+Transformator er ein elektomagnetisk komponent som vert nytta for impedansetransformasjon, som tilsvarar at spenninga eller straumen vert transformert opp eller ned. Om spenninga vert transformert opp vert straumen transformert ned, eller motsett. 
+
+
+== Grunnleggande oppbygging og verkemåte ==
+
+Transformatorar er bygd opp med to galvanisk isolerte krinsar som er kopla saman med ein magnetisk fluks. Dei to krinsane, som vert kalla primærkrins og sekundærkrins, har kvar sin spole som er vikla rundt eit materiale med liten reluktans (kalla transformatorkjernen), som den magnetiske fluksen fylgjer, Fig. 2. 
+Fluksen i den magnetiske krinsen
+
+  
+    
+      
+        ϕ
+        =
+        
+          
+            
+              
+                N
+                
+                  1
+                
+              
+              i
+            
+            
+              R
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \phi ={\frac {N_{1}i}{\mathfrak {R}}},}
+  
+
+der N1 er vinningstalet i primærspolen, i er straumen i primærspolen og 
+  
+    
+      
+        
+          
+            R
+          
+        
+      
+    
+    {\displaystyle {\mathfrak {R}}}
+  
+ er reluktansen til transformatorkjernen. Fluksen fylgjer den magnetiske leiaren (transformatorkjernen), slik at same fluksen går gjennom begge spolane. I sekundærkrinsen induserer fluksen (i fylgje Faradys lov) ei spenning
+
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+        =
+        
+          N
+          
+            2
+          
+        
+        
+          
+            
+              
+                d
+              
+              Φ
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle v_{2}=N_{2}{\frac {\mathrm {d} \Phi }{\mathrm {d} t}},}
+  
+
+der N2 er vinningstalet i sekundærviklinga og 
+  
+    
+      
+        
+          
+            
+              
+                d
+              
+              Φ
+            
+            
+              
+                d
+              
+              t
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\mathrm {d} \Phi }{\mathrm {d} t}}}
+  
+ er den tidsderiverte av fluksen. Forholdet mellom spenningane i sekundær- og primærkrinsen kan difor uttrykkast 
+
+  
+    
+      
+        
+          
+            
+              v
+              
+                2
+              
+            
+            
+              v
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                2
+              
+            
+            
+              N
+              
+                1
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {v_{2}}{v_{1}}}={\frac {N_{2}}{N_{1}}}.}
+  
+
+
+=== Ideell transformator ===
+Ein ideell transformator er ein forenkla modell av ein transformator som ikkje har tap. Fig. 3 syner ein ideell transformator med ein lastimpedans 
+  
+    
+      
+        
+          Z
+          
+            L
+          
+        
+      
+    
+    {\displaystyle Z_{L}}
+  
+ i sekundærkrinsen. Straumen i lastmotstanden 
+
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        =
+        
+          
+            
+              V
+              
+                2
+              
+            
+            
+              Z
+              
+                L
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle i_{2}={\frac {V_{2}}{Z_{L}}}.}
+  
+
+Ein ideell transformator har ikkje tap, så effekten i sekundærkrinsen må vera lik effekten i primærkrinsen:
+
+  
+    
+      
+        
+          P
+          
+            1
+          
+        
+        =
+        
+          P
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle P_{1}=P_{2},}
+  
+
+som er det same som at 
+
+  
+    
+      
+        
+          v
+          
+            1
+          
+        
+        
+          i
+          
+            1
+          
+        
+        =
+        
+          v
+          
+            2
+          
+        
+        
+          i
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle v_{1}i_{1}=v_{2}i_{2}.}
+  
+
+Ved å kombinera likningane kjem ein fram til fylgjande samanhengar for ein ideell transformator:
+
+  
+    
+      
+        
+          
+            
+              v
+              
+                2
+              
+            
+            
+              v
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            
+              i
+              
+                1
+              
+            
+            
+              i
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              N
+              
+                2
+              
+            
+            
+              N
+              
+                1
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {v_{2}}{v_{1}}}={\frac {i_{1}}{i_{2}}}={\frac {N_{2}}{N_{1}}}.}
+  
+
+Om 
+  
+    
+      
+        
+          N
+          
+            2
+          
+        
+        >
+        
+          N
+          
+            1
+          
+        
+      
+    
+    {\displaystyle N_{2}>N_{1}}
+  
+ vert spenninga transformert opp (
+  
+    
+      
+        
+          v
+          
+            2
+          
+        
+        >
+        
+          v
+          
+            1
+          
+        
+      
+    
+    {\displaystyle v_{2}>v_{1}}
+  
+) og straumen vert transformert ned (
+  
+    
+      
+        
+          i
+          
+            2
+          
+        
+        >
+        
+          i
+          
+            1
+          
+        
+      
+    
+    {\displaystyle i_{2}>i_{1}}
+  
+). 
+Lastimpedansen sett frå primærsida kan uttrykkast
+
+  
+    
+      
+        
+          Z
+          
+            L
+          
+        
+        
+          
+            
+            ′
+          
+        
+        =
+        
+          
+            
+              v
+              
+                1
+              
+            
+            
+              i
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            
+              
+                v
+                
+                  2
+                
+              
+              
+                
+                  (
+                  
+                    
+                    
+                      
+                        
+                          N
+                          
+                            1
+                          
+                        
+                        
+                          N
+                          
+                            2
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+                
+                  i
+                  
+                    2
+                  
+                
+              
+              
+                
+                  (
+                  
+                    
+                    
+                      
+                        
+                          N
+                          
+                            2
+                          
+                        
+                        
+                          N
+                          
+                            1
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+              
+            
+          
+        
+        =
+        
+          (
+          
+            
+            
+              
+                
+                  v
+                  
+                    2
+                  
+                
+                
+                  i
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        
+        
+          
+            
+              (
+              
+                
+                
+                  
+                    
+                      N
+                      
+                        1
+                      
+                    
+                    
+                      N
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              )
+            
+            
+              2
+            
+          
+        
+        =
+        
+          Z
+          
+            L
+          
+        
+        
+        
+          
+            
+              (
+              
+                
+                
+                  
+                    
+                      N
+                      
+                        1
+                      
+                    
+                    
+                      N
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              )
+            
+            
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle Z_{L}{'}={\frac {v_{1}}{i_{1}}}={\frac {v_{2}{\left(\!{\frac {N_{1}}{N_{2}}}\right)}}{{i_{2}}{\left(\!{\frac {N_{2}}{N_{1}}}\right)}}}=\left(\!{\frac {v_{2}}{i_{2}}}\right)\!{\left(\!{\frac {N_{1}}{N_{2}}}\right)^{2}}=Z_{L}\!{\left(\!{\frac {N_{1}}{N_{2}}}\right)^{2}}.}
+  
+
+På same måte kan kildeimpedanse 
+  
+    
+      
+        
+          Z
+          
+            k
+          
+        
+      
+    
+    {\displaystyle Z_{k}}
+  
+ sett frå sekundærsida uttrykkast
+
+  
+    
+      
+        
+          Z
+          
+            k
+          
+          
+            
+              
+              ′
+            
+          
+        
+        =
+        
+          Z
+          
+            k
+          
+        
+        
+        
+          
+            
+              (
+              
+                
+                
+                  
+                    
+                      N
+                      
+                        2
+                      
+                    
+                    
+                      N
+                      
+                        1
+                      
+                    
+                  
+                
+              
+              )
+            
+            
+              2
+            
+          
+        
+        .
+      
+    
+    {\displaystyle Z_{k}^{'}=Z_{k}\!{\left(\!{\frac {N_{2}}{N_{1}}}\right)^{2}}.}
+  
+
+Ein ser at spenningar og straumar vert transformerte med omsettingsforholdet 
+  
+    
+      
+        
+          
+            
+              N
+              
+                2
+              
+            
+            
+              N
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {N_{2}}{N_{1}}}}
+  
+, medan impedansar vert transformerte med kvadratet av omsetningsforholdet.
+
+
+== Ulike typar transfomatorar ==
+
+
+=== Effekttransformatorar ===
+
+
+=== Signaltransformatorar ===

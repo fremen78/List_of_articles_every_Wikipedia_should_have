@@ -1,0 +1,464 @@
+Ein Festplattenlaufwerk (englisch hard disk drive, Abkürzung HDD), früher auch Festplatten-Speichersystem oder Festplatten-System, oft auch als Festplatte oder Hard Disk (abgekürzt HD) bezeichnet, ist ein magnetisches Speichermedium der Computertechnik, bei welchem Daten auf die Oberfläche rotierender Scheiben (auch englisch „Platter“ genannt) geschrieben werden. Zum Schreiben wird die hartmagnetische Beschichtung der Scheibenoberfläche entsprechend der aufzuzeichnenden Information berührungslos magnetisiert. Durch die Remanenz (verbleibende Magnetisierung) erfolgt das Speichern der Information. Das Lesen der Information erfolgt durch berührungsloses Abtasten der Magnetisierung der Plattenoberfläche.
+Im Unterschied zu sequentiell adressierten Speichermedien wie Magnetband oder Lochstreifen werden Festplatten den direktadressierbaren Speichermedien (englisch direct access storage devices, DASD) zugerechnet, da kein linearer Durchlauf erforderlich ist, um zu einer bestimmten Speicherstelle zu gelangen. Vor der Nutzung im PC-Bereich ab den 1980er Jahren wurden Festplatten vor allem im Mainframe-Bereich genutzt. Die Daten können in unterschiedlichen Organisationsformen auf den Festplatten gespeichert sein. CKD (count key data) organisierte Festplatten enthalten je nach Satzformat unterschiedlich lange Datenblöcke. FBA (fix block architecture) organisierte Festplatten enthalten gleich lange Datenblöcke, die üblicherweise 512 oder 4096 Byte groß sind. Ein Zugriff muss immer eine ganze Zahl von Blöcken umfassen.
+Seit dem Jahr 2007 werden auch im Endkundenmarkt Flash-Speicher (sogenannte Solid-State-Drives, abgekürzt SSD) und Hybridspeicher (Kombinationen aus SSD und konventionellen Festplatten) angeboten, die über die gleichen Schnittstellen (Spezifikation nach SATA usw.) angesprochen und vereinfacht ebenfalls als „Festplatten“ bezeichnet werden.
+Am 19. November 2023 lagen gemäß geizhals.de die jeweils günstigste SSD und Festplatte bis ein TByte bei 35 Euro auf dem gleichen Preisniveau. Bei acht TByte lag die günstigste SSD mit rund 300 Euro auf dem doppelten Niveau der Festplatte. Die SSD erreicht erheblich geringere Zugriffszeiten sowie höhere Schreib- und Lesegeschwindigkeiten. In neuen Consumer Notebooks und Desktop-PCs kommen im dort üblichen Massenspeicher bis zu zwei TByte nahezu ausschließlich nur noch SSDs zur Anwendung. Festplatten werden weiterhin bei größerem Speicherbedarf wie NAS zur Medienspeicherung im privaten Rahmen oder in Rechenzentren benötigt.
+Die Bezeichnung „Festplatte“ beschreibt zum einen, dass die Magnetplatte im Gegensatz zur „Wechselplatte“ fest mit dem Laufwerk beziehungsweise dem Computer verbunden ist. Zum anderen entspricht sie der englischen Bezeichnung „Hard Disk“, die im Gegensatz zu flexiblen (englisch floppy) Scheiben in Disketten aus starrem Material besteht. Dementsprechend war bis in die 1990er Jahre auch rigid disk gebräuchlich.
+
+
+== Allgemeine technische Daten ==
+Festplatten werden durch (sogenannte „Low-Level“-)Formatierung mit einer Zugriffsstruktur versehen.
+Seit Anfang der 1990er Jahre mit Aufkommen von IDE-Festplatten erfolgt dies beim Hersteller und kann auch nur noch durch den Hersteller durchgeführt werden. Der Begriff „Formatieren“ wird auch für das Anlegen eines Dateisystems verwendet („High-Level-Formatierung“).
+Bei der Low-Level-Formatierung werden verschiedene Markierungen und die Sektor-Header geschrieben, die Spur- und Sektornummern zur Navigation enthalten. Die bei aktuellen Festplatten mit Linearmotoren notwendigen Servoinformationen können nicht durch den Benutzer geschrieben werden. Servoinformationen sind notwendig damit der Kopf der „Spur“ zuverlässig folgen kann. Eine rein mechanische Führung ist bei höherer Spurdichte nicht mehr möglich und zu ungenau – bei einer Spurdichte von 5,3 Spuren/µm ist eine Spur nur 190 nm breit.
+
+
+=== Speicherkapazität ===
+
+Die Speicherkapazität einer Festplatte berechnet sich aus der Größe eines Datenblocks (256, 512, 2048 oder 4096 Byte) multipliziert mit der Anzahl der verfügbaren Blöcke. Die Größe der ersten Festplatten wurde in Megabyte angegeben, ab etwa 1997 in Gigabyte, seit etwa 2008 gibt es Platten im Terabyte-Bereich.
+War die Art und Weise der Speicherung der Daten der ersten Platten noch „von außen sichtbar“ (dem Festplattencontroller, der Firmware wie etwa beim IBM-PC-kompatiblen Computer das BIOS, und dem Betriebssystem mussten die Sektoren pro Spur, Anzahl der Spuren, Anzahl der Köpfe, MFM- oder RLL-Modulation bekannt sein), so änderte sich dies mit Einführung der IDE-Platten Anfang der 1990er-Jahre. Es war immer weniger zu sehen, wie die Daten intern gespeichert werden; das Ansprechen der Platte erfolgt über eine Schnittstelle, die Interna nach außen verbirgt.
+Mitunter meldete die Festplatte „falsche“ Informationen für die Anzahl an Spuren, Sektoren und Köpfen, um Systembegrenzungen zu umgehen: Firmware und Betriebssystem arbeiteten auf Basis dieser „falschen“ Werte, die Festplattenlogik rechnete sie dann in interne, der eigenen Geometrie tatsächlich entsprechende Werte um.
+Die zeitliche Entwicklung der maximalen Festplattenkapazität zeigt einen annähernd exponentiellen Verlauf, vergleichbar mit der Entwicklung der Rechenleistung nach dem Mooreschen Gesetz. Die Kapazität hat sich bei leicht sinkenden Preisen etwa alle 16 Monate verdoppelt, wobei sich der Kapazitätszuwachs seit etwa 2005 verringerte (Januar 2007: 1 Terabyte, September 2011: 4 Terabyte, Dezember 2019: 16 Terabyte).
+Die Hersteller von Festplatten verwenden bei Speicherkapazitäten Präfixe in ihrer SI-konformen dezimalen Bedeutung. Eine Kapazitätsangabe von einem Terabyte bezeichnet hiernach eine Kapazität von 1012 Byte. Das Microsoft-Betriebssystem Windows und einige andere ältere Betriebssysteme verwenden bei der Kapazitätsangabe von Festplatten zwar die gleichen Präfixe, allerdings – historischem Usus folgend, jedoch entgegen seit 1998 geltender IEC-Normierung – in ihrer binären Bedeutung. Dies führt zu einem scheinbaren Widerspruch zwischen der Größenangabe des Herstellers und der des Betriebssystems. Beispielsweise gibt das Betriebssystem bei einer Festplatte mit einer vom Hersteller angegebenen Kapazität von einem Terabyte als Kapazität nur 931 „Gigabyte“ an, da ein „Terabyte“ dort 240 Byte bezeichnet (die IEC-konforme Bezeichnung für 240 Byte ist Tebibyte). Unter den IEC-konformen Systemen OS X (ab Version 10.6) und Unix bzw. den meisten Unix-artigen Betriebssystemen tritt dieser Effekt nicht auf.
+
+
+=== Baugrößen (mechanisch) ===
+
+Die Abmessungen von Festplatten werden traditionell in Zoll angegeben. Dabei handelt es sich um keine exakten Größenangaben, sondern um einen Formfaktor. Übliche Formfaktoren für die Breite sind 5,25″, 3,5″, 2,5″ und 1,8″, für die Höhe zum Beispiel 1″, 1⁄2″ und 3⁄8″. Die Zollangaben entsprechen meist in etwa dem Durchmesser der Platter, nicht der Breite des Laufwerkgehäuses. Teilweise werden jedoch kleinere Platter verwendet, um höhere Drehzahlen zu ermöglichen.
+Im Zuge der technischen Weiterentwicklung wurden immer wieder Baugrößen zugunsten kleinerer eingestellt, da diese neben dem geringeren Platzbedarf weniger anfällig gegen Erschütterungen sind und eine geringere Leistungsaufnahme aufweisen. Zwar bedeutet weniger Platz zunächst, dass ein Laufwerk kleinere Platter hat und damit weniger Speicherplatz zur Verfügung stellt. Die schnelle Technologieentwicklung in Richtung höherer Datendichten kompensiert diese Einschränkung jedoch erfahrungsgemäß kurzfristig.
+Das erste Festplattenlaufwerk IBM 350 von 1956 war ein Schrank mit einem 24″-Plattenstapel. Mitte der 1970er Jahre kamen Modelle mit einer Größe von 8″ auf, die relativ schnell durch wesentlich handlichere und vor allem leichtere 5,25″-Festplattenlaufwerke abgelöst wurden. Zwischenzeitlich gab es noch Größen von 14″ und 9″.
+5,25″-Festplatten wurden 1980 von (Shugart Technology) Seagate eingeführt, ihre Scheiben sind in etwa so groß wie eine CD/DVD/Blu-Ray. Seit 1997 wird diese Größe nicht mehr hergestellt. Einige SCSI-Server-Laufwerke sowie das LowCost-ATA-Laufwerk BigFoot von Quantum sind die letzten Vertreter dieses Formats.
+Die Baugröße dieser Laufwerke orientiert sich an der von 5,25″-Diskettenlaufwerken: Die Breite dieser Laufwerke beträgt 5 3⁄4″ (146 mm), die Höhe bei Laufwerken mit voller Höhe 3 1⁄4″ (82,6 mm), bei Laufwerken mit halber Höhe 1 5⁄8″ (41,3 mm). Es gab Modelle mit noch geringerer Bauhöhe: die Modelle der BigFoot-Serie hatten eine Bauhöhe von 3⁄4″ (19 mm) und 1″ (25,4 mm). Die Tiefe von 5,25″-Festplatten ist nicht festgelegt, sollte aber nicht wesentlich oberhalb von 200 mm liegen.
+3,5″-Festplatten wurden 1987 von IBM mit der Baureihe PS/2 eingeführt und waren lange Zeit Standard in Desktop-Computern. Die Baugröße dieser Laufwerke orientiert sich an der von 3,5″-Diskettenlaufwerken: Die Breite dieser Laufwerke beträgt 4″ (101,6 mm), die Höhe meist 1″ (25,4 mm). Seagate brachte mit der ST1181677 eine Festplatte mit zwölf Scheiben und 1,6″ (40,64 mm) Höhe heraus; auch Fujitsu bot Laufwerke dieser Höhe an. Die Tiefe von 3,5″-Festplatten beträgt 5¾″ (146 mm).
+In vielen Bereichen wurden 3,5″-Festplatten zum großen Teil durch 2,5″-Modelle oder SSDs abgelöst. 
+2,5″-Festplatten wurden ursprünglich für Notebooks entwickelt, fanden dann vor allem in Servern und Spezialgeräten (Multimedia-Playern, USB-Festplatten) Verwendung; mittlerweile sind sie weit verbreitet.
+Die Breite beträgt 70 mm, die Tiefe 100 mm. Die traditionelle Bauhöhe war 1⁄2″ (12,7 mm); mittlerweile gibt es Bauhöhen zwischen 5 mm und 15 mm, verbreitet sind 5 mm, 7 mm und 9,5 mm. Die erlaubte Bauhöhe hängt vom Gerät ab, in das die Festplatte eingebaut werden soll. Der Interface-Anschluss ist gegenüber den größeren Bauformen modifiziert; bei ATA ist der Abstand der Pins von 2,54 mm auf 2 mm verringert. Es kommen weiterhin vier Pins dazu (insgesamt 43 Pins), die den separaten Stromversorgungsstecker der größeren Modelle ersetzen. 2,5″-Festplatten benötigen nur eine Betriebsspannung von 5 V; die bei größeren Platten notwendige zweite Betriebsspannung von 12 V entfällt.
+2,5″-SATA-Festplatten haben die gleichen Anschlüsse wie die 3,5″-Laufwerke, nur die 5 mm hohen Laufwerke haben wegen der geringen zur Verfügung stehenden Höhe teilweise einen speziellen SFF-8784-Anschluss.
+Seit 2006 bieten Seagate, Toshiba, Hitachi und Fujitsu 2,5″-Festplattenlaufwerke für den Einsatz in Servern an. Seit April 2008 wird von Western Digital mit der Velociraptor ein 2,5″-Festplattenlaufwerk (mit 15 mm Bauhöhe) mit 3,5″-Einbaurahmen als Desktop-Festplattenlaufwerk vermarktet. Mit der zunehmenden Verbreitung von SSDs in Notebooks und Servern verliert diese Bauform stark an Bedeutung.
+
+1,8″-Festplatten werden seit 2003 bei Subnotebooks, diversen Industrieanwendungen sowie in großen MP3-Playern verwendet. Die Breite beträgt 54 mm, die Tiefe zwischen 71 und 78,5 mm, die Höhe 8 mm.
+Noch kleinere Baugrößen mit 1,3″, 1″ und 0,85″ spielen kaum eine Rolle. Eine Ausnahme waren Microdrives in der Anfangszeit der digitalen Fotografie – sie ermöglichten mit einer Baugröße von 1″ vergleichsweise hochkapazitive und günstige Speicherkarten im CompactFlash-Typ-II-Format für Digitalkameras, wurden aber inzwischen durch Flash-Speicher verdrängt. 2005 gab es von Toshiba Festplattenlaufwerke mit einer Baugröße von 0,85″ und einer Kapazität von 4 Gigabyte für Anwendungen wie MP3-Player.
+
+
+== Aufbau und Funktion ==
+
+
+=== Physischer Aufbau der Einheit ===
+
+Eine Festplatte besteht aus folgenden Baugruppen:
+
+eine oder mehrere rotierbar befestigte Scheiben (englisch: Platter, plural: Platters),
+einer Achse, auch Spindel genannt, auf der die Scheiben übereinander montiert sind,
+einem Elektromotor als Antrieb für die Spindel (und somit die Scheibe(n)),
+beweglichen Schreib-Lese-Köpfen (Heads),
+jeweils einem Lager für die Spindel (meistens hydrodynamische Gleitlager) sowie für die Aktorachse (und somit die Schreib-Lese-Köpfe) (auch Magnetlager),
+einem Antrieb für die Aktorachse (und somit für die Schreib-Lese-Köpfe) (englisch: Actuator, deutsch: Aktor),
+der Steuerelektronik für Motor- und Kopfsteuerung,
+einem DSP für Verwaltung, Bedienung des Interfaces, Steuerung der Schreib/Leseköpfe. Modulation und Demodulation der Signale der Schreiblese-Köpfe erfolgt dabei durch integrierte Spezialhardware und wird nicht direkt vom DSP durchgeführt. Die benötigte Verarbeitungsleistung der Demodulation liegt im Bereich ~107 MIPS.
+(Flash-)ROM und DDR-RAM für Firmware, temporäre Daten und Festplattencache. Üblich sind derzeit 2 bis 64 MiB.
+der Schnittstelle zum Ansprechen der Festplatte von außen und
+einem stabilen Gehäuse.
+
+
+==== Technischer Aufbau und Material der Datenscheiben ====
+Da die magnetisierbare Schicht besonders dünn sein soll, bestehen die Scheiben aus einem nicht-magnetisierbaren Grundmaterial mit einer dünnen magnetisierbaren Deckschicht. Als Grundmaterial werden häufig oberflächenbehandelte Aluminium-Legierungen verwendet. Bei Scheiben mit hoher Datendichte wird aber vorrangig auf Magnesium-Legierungen, Glas oder Glasverbundstoffe zurückgegriffen, da diese Materialien weniger Diffusion aufweisen. Sie müssen möglichst formstabil (sowohl unter mechanischer als auch thermischer Belastung) sein und eine geringe elektrische Leitfähigkeit aufweisen, um die Größe der Wirbelströme gering zu halten.
+Auf die Scheiben wird eine Eisenoxid- oder Kobalt-Deckschicht von ungefähr einem Mikrometer Dicke aufgetragen. Heutige Festplatten werden durch Sputtern von sogenannten „high storage density media“ (dt. etwa „Materialien für hohe Speicherdichte“) wie CoCrPt hergestellt. Die magnetische Schicht wird zusätzlich mit einer Schutzschicht aus diamantähnlichem Kohlenstoff versehen (englisch „carbon overcoat“), um mechanische Beschädigungen zu vermeiden. Darüber befindet sich noch eine 0,5–1,5 nm dicke Gleitschicht. Die zukünftige Verkleinerung der magnetischen „Bits“ erfordert sowohl die Erforschung von „ultra high storage density media“ als auch von alternativen Konzepten, da man sich langsam dem superparamagnetischen Limit nähert. Zusätzlich wurde eine Steigerung der Datendichte durch besseres Trägermaterial sowie durch die Optimierung der Schreibverfahren erreicht.
+In Desktop-Festplatten der Jahre 2000 bis 2002 von IBM (Deskstar 75GXP/40GV DTLA-30xxxx, Deskstar 60GXP/120GXP IC35Lxxxx) kam Glas als Material für die Scheiben zum Einsatz. Neuere Modelle der Festplattensparte von IBM (2003 übernommen durch Hitachi) verwenden jedoch mit Ausnahme von Server-Festplatten wieder Aluminium. In dem Festplattengehäuse befinden sich eine oder mehrere übereinander liegende rotierende Scheiben. Gebaut wurden bisher Festplatten mit bis zu zwölf Scheiben, üblich sind derzeit ein bis vier. Energieverbrauch und Geräuschentwicklung innerhalb einer Festplattenfamilie steigen mit der Scheibenanzahl. Üblich ist es, alle Oberflächen der Platter zu nutzen (n Scheiben, 2n Oberflächen sowie Schreibleseköpfe). Einige Laufwerksgrößen (zum Beispiel 320-GB-Laufwerk bei 250 GB/Scheibe) kommen mit einer ungeraden Anzahl von Schreib-Lese-Köpfen (hier: 3) aus und benutzen eine Oberfläche nicht.
+
+	Defekte Festplatten
+		
+			
+			
+		
+		
+			
+			
+		
+
+Mit der Ablösung des Longitudinal Magnetic Recording durch Perpendicular Magnetic Recording (PMR) – einem seit den 1970er Jahren bekannten, aber damals nicht beherrschten Speicherprinzip – gelang es durch intensive Forschung seit 2000, die Datendichte weiter zu steigern. Die erste Festplatte mit dieser Speichertechnik kam 2005 von Hitachi: eine 1,8″-Festplatte mit 60 Gigabyte. Seit 2008 verwenden die meisten Festplatten diese Technologie (ab 200 GB/Scheibe bei 3,5″). Etwa seit 2014 verwenden manche Laufwerke „Shingled Magnetic Recording“ (SMR), bei dem eine Datenspur in ihre beiden Nachbarspuren hineinreicht; hierbei müssen ggf. mehrere parallele Spuren gemeinsam geschrieben werden oder Nachbarspuren müssen nach einem Schreiben repariert werden, was zu einer niedrigeren effektiven Schreibdatenrate führt. Hiermit sind 3,5″-Festplatten mit über 12 TB Kapazität möglich (Stand: 12/2017). Durch Einsatz von „Two-Dimensional Magnetic Recording“ (TDMR) kann die Datendichte nochmals um ca. 10 % gesteigert werden, das setzt aber mehrere Leseköpfe pro Seite und eine aufwändigere Elektronik voraus, weswegen der Einsatz teuren Laufwerken mit sehr großer Kapazität vorbehalten ist.
+
+
+==== Achsen-Lagerung und Drehzahlen ====
+In Arbeitsplatzrechnern oder Privat-PCs verwendete Festplatten – momentan zum größten Teil Platten mit ATA-, SATA-, SCSI oder SAS-Schnittstelle – rotieren mit Geschwindigkeiten von 5400 bis 10.000 min−1. Im Bereich der Hochleistungsrechner und Server werden überwiegend Festplatten eingesetzt, die 10.000 oder 15.000 min−1 erreichen. Bei den 2,5-Zoll-Festplatten für mobile Geräte liegen die Spindelgeschwindigkeiten im Bereich von 5400 bis 7200 min−1, wobei 5400 min−1 sehr verbreitet ist. Die Drehzahl muss hochpräzise eingehalten werden, da sie die zeitliche Länge eines Bit bestimmt; wie bei der Kopfpositionierung wird auch hier ein Regelkreis (englisch Servo) verwendet.
+Die Achsen der Scheiben früherer Festplatten (bis 2000) waren kugelgelagert; in neuerer Zeit werden überwiegend hydrodynamische Gleitlager (englisch „fluid dynamic bearing“ – FDB) verwendet. Diese zeichnen sich durch eine höhere Lebensdauer, geringere Geräuschentwicklung und geringere Herstellungskosten aus.
+
+
+==== Die Schreib-Lese-Kopf-Einheit ====
+Der Schreib-Lese-Kopf (Magnetkopf) des Schreibfingers, im Prinzip ein winziger Elektromagnet, magnetisiert winzige Bereiche der Scheibenoberfläche unterschiedlich und schreibt somit die Daten auf die Festplatte. Aufgrund eines Luftpolsters, das durch die Reibung der Luft an der rotierenden Scheibenoberfläche erzeugt wird, schweben die Schreib-Lese-Köpfe (vgl. Bodeneffekt). Die Schwebehöhe lag 2000 im Bereich von etwa 20 nm. Aufgrund dieser geringen Distanz darf die Luft innerhalb des Festplattengehäuses keinerlei Verunreinigungen enthalten. Bei neueren Festplatten mit Perpendicular-Recording-Technik schrumpft dieser Abstand auf 5 bis 6 nm. Aktuell angekündigte Platten (2011) mit 1 Terabyte/Scheibe erlauben noch Flughöhen von maximal 3 nm, damit das Signal durch Abstandsverluste nicht zu stark geschwächt wird. Die Herstellung von Festplatten erfolgt deshalb wie die von Halbleitern in Reinräumen. Der Bodeneffekt ist in diesem Zusammenhang sehr nützlich zur Einhaltung der richtigen Flughöhe des Schreib-Lese-Kopfes über der rotierenden Scheibe.
+Die Daten wurden bis etwa 1994 durch die Induktionswirkung des Magnetfeldes der magnetisierten Fläche der Datenträgeroberfläche in der Spule des Schreib-Lese-Kopfes ausgelesen. Über die Jahre wurden jedoch aufgrund der steigenden Datendichte die Flächen, auf denen einzelne Bits gespeichert werden, immer kleiner. Um diese Daten auszulesen, wurden kleinere und empfindlichere Leseköpfe benötigt. Diese wurden nach 1994 entwickelt: MR-Leseköpfe sowie einige Jahre später GMR-Leseköpfe (Riesenmagnetowiderstand). Der GMR-Lesekopf ist eine Anwendung der Spintronik.
+
+
+==== Kopfpositionierung ====
+In der Anfangszeit der Festplatten wurden die Schreib-Lese-Köpfe wie bei Diskettenlaufwerken mit Schrittmotoren angesteuert, die Spurabstände waren noch groß (siehe auch bei Aktor). Eine größere Positionierungsgenauigkeit und damit eine höhere Spurdichte erreichten Tauchspulsysteme, die über magnetische Informationen auf einer dedizierten Plattenoberfläche in einem Regelkreis gesteuert wurden (dedicated servo), aber wie Schrittmotorsysteme empfindlich auf unterschiedliche thermische Ausdehnungen und mechanische Ungenauigkeiten reagierten.
+Spätere und heute noch übliche Systeme verwenden magnetische Positionsinformationen, die in regelmäßigen Abständen zwischen den Datensektoren auf jeder der Oberflächen eingebettet sind (embedded servo). Diese Methode ist elektronisch aufwendiger, aber mechanisch einfacher und sehr unempfindlich gegen störende Einflüsse. Vor der Servoinformation liegt üblicherweise eine spezielle Markierung, die das Kopfsignal vom Datenmodus in den Servomodus schaltet, die Information liest, an die Positionierung weitergibt und mit einer abschließenden Markierung wieder in den Datenmodus zurückschaltet. Die dadurch erreichte Positionierungsgenauigkeit liegt weiter unterhalb 1 µm. Bei der Hitachi Deskstar 7K500 aus dem Jahr 2005 beträgt die Spurdichte 5,3 Spuren/µm, die Bitdichte 34,3 Bit/µm. Das sind 182 Bit/µm².
+Einteilige Kopfträgersysteme sind in der Präzision durch die Trägheit des Kopfarms beschränkt. Eine mehrstufige Positionierung (zum Beispiel „Triple Stage Actuator“ bei Western Digital) ermöglicht eine höhere Genauigkeit und damit eine höhere Datendichte.
+
+
+==== Parken der Köpfe ====
+
+Zum Schutz der Scheiben-Oberflächen vor dem Aufsetzen der Schreib-Lese-Köpfe (dem sogenannten Head-Crash) fahren diese, noch bevor sich beim Ausschalten der Festplatte die Umdrehungsgeschwindigkeit merklich verringert hat, in die Landezone (englisch „landing zone“), in der sie fixiert werden. Beim plötzlichen Wegfall der Versorgungsspannung wird der Antrieb als Generator geschaltet und mit der so gewonnenen Energie ein Schwenkimpuls für den Kopfarm erzeugt. Dieses Parken erhöht die Stoßfestigkeit der Festplatten für einen Transport oder Umbau. Die Parkposition kann sich außerhalb der Scheiben oder im Innenbereich der Platten befinden. Dabei setzt der Schreib-Lese-Kopf auf einem vordefinierten Bereich der Festplatte auf, der keine Daten enthält. Die Oberfläche dieses Bereichs ist besonders vorbehandelt, um ein Festkleben des Kopfes zu vermeiden, und so einen späteren Wiederanlauf der Festplatte zu ermöglichen. Die Fixierung geschieht beispielsweise über einen Magneten, der den Lesekopf festhält.
+
+Bei älteren Festplatten wurden die Schreib-Lese-Köpfe bei fast allen Modellen aus dem Plattenstapel herausgefahren. Später (1990er, 2000er) wurde zunehmend eine Parkposition im Innenbereich bevorzugt. 2008 kommen beide Varianten vor. Bei Notebook-Platten bietet die Parkposition außerhalb des Plattenstapels zusätzlichen Schutz vor Beschädigung der Oberflächen der Scheiben bei Transport (Erschütterung) der Festplatte.
+Bei älteren Festplatten mussten die Köpfe vor dem Ausschalten explizit per Befehl vom Betriebssystem geparkt werden – Schrittmotoren benötigten viele koordinierte Impulse zum Parken, die sich nach einem Wegfall der Versorgungsspannung nur sehr schwer oder gar nicht generieren ließen. Auch die Köpfe moderner Festplatten können explizit geparkt werden, da der beschriebene automatische Parkmechanismus nach dem Wegfall der Versorgungsspannung zu einem erhöhten Verschleiß führen kann. Der Parkbefehl wird heute automatisch beim Herunterfahren des Systems vom Gerätetreiber abgesetzt.
+Bei modernen Laptops sorgt ein Beschleunigungssensor für das Parken des Festplattenfingers noch während eines eventuellen freien Falls, um so den Schaden beim Sturz eines Rechners zu begrenzen.
+
+
+==== Festplatten-Gehäuse ====
+
+Das Gehäuse einer Festplatte ist sehr massiv. Meist ist es ein aus einer Aluminiumlegierung bestehendes Gussteil und mit einem Edelstahl-Blechdeckel versehen. Wird eine Festplatte in normaler, nicht gereinigter Luft geöffnet, können bereits kleinste Staub- bzw. Rauchpartikel, Fingerabdrücke usw. zu irreparablen Beschädigungen der Plattenoberflächen und der Schreib-Lese-Köpfe führen.
+Das Gehäuse ist staubdicht, aber bei luftgefüllten Laufwerken üblicherweise nicht luftdicht abgeschlossen. Durch eine mit einem Filter versehene kleine Öffnung kann bei Luftdruckschwankungen (wie sie etwa bei Temperaturänderungen oder Änderungen des atmosphärischen Luftdrucks auftreten) Luft ein- oder austreten, um so die Druckunterschiede auszugleichen. Diese Öffnung – siehe nebenstehende Abbildung – darf nicht verschlossen werden. Da der Luftdruck im Gehäuse mit zunehmender Höhe über dem Meeresspiegel abnimmt, zum Betrieb aber ein Mindestdruck erforderlich ist, dürfen diese Festplatten nur bis zu einer bestimmten maximalen Meereshöhe betrieben werden. Diese ist in der Regel im zugehörigen Datenblatt vermerkt. Die Luft ist erforderlich, um die direkte Berührung von Schreib-Lese-Kopf und Datenträgeroberfläche (Head-Crash) zu verhindern; siehe auch Abschnitt Die Schreib-Lese-Kopf-Einheit weiter oben. Bei neueren Laufwerken wird statt des Filters eine elastische Membran eingesetzt, die das System durch Aufwölben in die eine oder andere Richtung an wechselnde Druckverhältnisse anpassen kann.
+Einige Festplattenmodelle sind mit Helium gefüllt und im Gegensatz zu den luftgefüllten Laufwerken hermetisch verschlossen. Helium verfügt im Vergleich zu Luft über eine geringere Dichte und eine höhere Wärmeleitfähigkeit. Durch die geringere Dichte von Helium entstehen geringere störende Strömungseffekte, die zu reduzierten Kräften führen, die auf den Motor wirken. Auch Vibrationen, die durch die Positionierung der Trägerarme entstehen, werden verringert. Dadurch können die Abstände zwischen den einzelnen Scheiben verkleinert und mehr davon bei gleicher Bauhöhe integriert werden, was zu einer höheren Speicherdichte dieser Plattenlaufwerke führt.
+
+
+==== Einbau ====
+Bis etwa in die 1990er Jahre war für Festplatten eine definierte Einbaulage erforderlich und in der Regel nur waagerechter Betrieb (aber nicht „über Kopf“) oder aber senkrechte Lage („auf der Kante“) erlaubt. Dies ist für heutige Laufwerke nicht mehr erforderlich und nicht mehr spezifiziert; sie können in jeder Lage betrieben werden. Alle Festplatten sind im Betrieb gegen Vibration empfindlich, da dadurch die Positionierung der Köpfe gestört werden kann. Wird eine Festplatte elastisch gelagert, ist dieser Punkt besonders zu berücksichtigen.
+
+
+=== Speichern und Lesen von Bits ===
+
+Die Scheibe mit der Magnetschicht, in der die Informationen gespeichert sind, rotiert an den Schreib-Lese-Köpfen (s. o.) vorbei. Beim Lesen verursachen dabei Änderungen in der Magnetisierung der Oberfläche durch elektromagnetische Induktion einen Spannungsimpuls im Lesekopf. Bis zum Anfang des 21. Jahrhunderts wurde dabei fast ausschließlich die longitudinale Aufzeichnung verwendet, erst dann wurde auch die senkrechte Aufzeichnung eingeführt, die wesentlich höhere Schreibdichten erlaubt, aber kleinere Signale beim Lesen bewirkt, wodurch sie schwieriger zu beherrschen ist. Beim Schreiben dient derselbe Kopf zum Einschreiben der Information in die Magnetschicht. Zum Lesen sollte ein Magnetkopf anders ausgelegt sein als zum Schreiben, beispielsweise was die Breite des Magnetspalts betrifft; wird er für beides verwendet, müssen Kompromisse eingegangen werden, die die Leistung wieder begrenzen. Es gibt dazu neuere Ansätze durch spezielle Geometrien und Spulenwicklungen, diese Kompromisse effizienter zu gestalten.
+Ein Leseimpuls entsteht also nur bei einer Änderung der Magnetisierung (mathematisch: Der Lesekopf „sieht“ sozusagen nur die Ableitung der Magnetisierung nach der Ortskoordinate). Diese Impulse bilden einen seriellen Datenstrom, der wie bei einer seriellen Schnittstelle von der Leseelektronik ausgewertet wird. Wenn beispielsweise Daten vorliegen, die zufällig über lange Strecken nur den logischen Pegel „0“ aufweisen, tritt solange keinerlei Änderung auf, also auch kein Signal am Lesekopf. Dann kann die Leseelektronik aus dem Takt kommen und falsche Werte lesen. Zur Abhilfe werden verschiedene Verfahren eingesetzt, die zusätzliche umgekehrt gepolte Bits in den Datenstrom einfügen, um eine zu lange Strecke einheitlicher Magnetisierung zu vermeiden. Beispiele dieser Verfahren sind MFM und RLL, die allgemeine Technik wird unter Leitungscode erläutert.
+Beim Schreibvorgang wird je nach Logikpegel des Bits ein Strom unterschiedlicher Polung in die Magnetspule des Schreibkopfs gespeist (gegensätzliche Polung, jedoch gleiche Stärke). Der Strom bewirkt ein Magnetfeld, das Feld wird vom Magnetkern des Kopfs gebündelt und geführt. Im Spalt des Schreibkopfs treten die Magnetfeldlinien dann in die Oberfläche der Festplatte über und magnetisieren sie dabei in die gewünschte Richtung.
+
+
+=== Speichern und Lesen von Byte-organisierten Daten ===
+Heutige magnetische Festplatten organisieren ihre Daten – im Gegensatz zu Direktzugriffsspeichern (der sie in Bytes oder in kleinen Gruppen von 2 bis 8 Byte anordnet) – in Datenblöcken (wie zum Beispiel 512, 2048 oder 4096 Byte), weshalb dieses Verfahren blockbasierte Adressierung genannt wird. Dabei können seitens der Schnittstelle immer nur ganze Datenblöcke oder Sektoren gelesen und geschrieben werden. (Bei früheren SCSI-Festplatten ermöglichte die Laufwerkselektronik einen byteweisen Zugriff.)
+Das Lesen von Blöcken erfolgt durch Angabe der linearen Sektornummer.
+Die Festplatte „weiß“, wo sich dieser Block befindet, und liest beziehungsweise schreibt ihn auf Anforderung.
+Beim Schreiben von Blöcken:
+
+werden diese zuerst mit Fehlerkorrekturinformationen (Vorwärtsfehlerkorrektur) versehen,
+werden sie einer Modulation unterzogen: Früher waren GCR, MFM, RLL üblich, heutzutage haben PRML und neuerdings EPRML diese abgelöst, dann
+wird der Schreib-Lese-Kopf-Träger in die Nähe der Spur gefahren, die beschrieben werden soll,
+liest der Schreib-Lese-Kopf, welcher der informationtragenden Oberfläche zugeordnet ist, das Spursignal und führt die Feinpositionierung durch. Dazu gehört zum einen, die richtige Spur zu finden, zum anderen diese Spur auch genau mittig zu treffen.
+Ist der Schreiblesekopf stabil auf der Spur und befindet sich der richtige Sektor unter dem Schreiblesekopf, wird die Blockmodulation geschrieben.
+Bei vermuteter Fehlposition ist der Schreibvorgang sofort abzubrechen, damit keine Nachbarspuren (teilweise irreparabel) zerstört werden.
+Beim Lesen werden diese Schritte umgekehrt ausgeführt:
+
+Schreib-Lese-Kopf-Träger in die Nähe der Spur fahren, die gelesen werden soll.
+der Schreib-Lese-Kopf, welcher der informationstragenden Oberfläche zugeordnet ist, liest das Spursignal und führt die Feinpositionierung durch.
+Nun wird die Spur so lange (oder etwas länger) gelesen, bis der gewünschte Sektor erfolgreich gefunden wurde.
+Bei diesem Vorgang gefundene Sektoren werden zuerst demoduliert und dann mittels der beim Schreiben erzeugten Vorwärtsfehlerkorrekturinformationen einer Fehlerkorrektur unterzogen.
+Üblicherweise werden meist weitaus mehr Sektoren als der angeforderte Sektor gelesen. Diese landen normalerweise im Festplattencache (wenn nicht schon vorhanden), da die Wahrscheinlichkeit groß ist, dass sie in Kürze noch benötigt werden.
+War ein Sektor schlecht lesbar (mehrere Leseversuche notwendig, Fehlerkorrektur zeigte etliche korrigierbare Fehler auf), wird er üblicherweise neu zugeordnet, d. h. an einer anderen Stelle gespeichert.
+War der Sektor nicht mehr lesbar, wird ein sogenannter CRC-Fehler gemeldet.
+
+
+==== Logische Struktur der Scheiben ====
+
+Die Magnetisierung der Beschichtung der Scheiben ist der eigentliche Informationsträger. Sie wird vom Schreib-Lese-Kopf auf kreisförmigen, konzentrischen Spuren erzeugt, während die Scheibe rotiert. Eine Scheibe enthält typischerweise einige tausend solcher Spuren, meist auf beiden Seiten. Die Gesamtheit aller gleichen, d. h. übereinander befindlichen Spuren der einzelnen Platten(oberflächen) nennt man Zylinder. Jede Spur ist in kleine logische Einheiten unterteilt, die man Blöcke nennt. Ein Block enthält traditionell 512 Byte an Nutzdaten. Jeder Block verfügt dabei über Kontrollinformationen (Prüfsummen), über die sichergestellt wird, dass die Information korrekt geschrieben oder gelesen wurde. Die Gesamtheit aller Blöcke, welche die gleichen Winkelkoordinaten auf den Platten haben, nannte man Sektor (bei MFM). Der Aufbau eines speziellen Festplattentyps, d. h. die Anzahl der Zylinder (Spuren je Oberfläche), Köpfe (Oberflächen) und Sektoren, wird als Festplattengeometrie bezeichnet.
+Bei der Einteilung in Sektoren steht für deren innere Blöcke nur wenig Magnetschicht-Fläche zur Verfügung, die jedoch zum Speichern eines Datenblocks ausreicht. Die äußeren Blöcke sind jedoch viel größer, und verbrauchen viel mehr Magnetschicht-Fläche als notwendig wäre. Seit RLL wird dieser Platz im Außenbereich nicht mehr verschwendet, die Daten werden dort ebenso dicht geschrieben wie im Innenbereich – eine Spur im Außenbereich beinhaltet nun mehr Blöcke als im Innenbereich, eine Sektoreinteilung ist daher nicht mehr möglich. Bei konstanter Rotationsgeschwindigkeit kann und muss die Festplattenelektronik im Außenbereich schneller lesen und schreiben als im Innenbereich. Durch diese Entwicklung verlor der Begriff Sektor seine ursprüngliche Wichtigkeit und wird heute vielfach (entgegen seiner eigentlichen Bedeutung) synonym für Block verwendet.
+Da – als die Nummerierung der Blöcke bei steigenden Festplattenkapazitäten die Wortgrenze (16 Bit) überstieg – manche Betriebssysteme zu früh an Grenzen stießen, wurden Cluster eingeführt. Das sind Gruppen von jeweils einer festen Anzahl an Blöcken (zum Beispiel 32), die sinnvollerweise physisch benachbart sind. Das Betriebssystem spricht dann nicht mehr einzelne Blöcke an, sondern verwendet auf seiner (höheren) Ebene als kleinste Zuordnungseinheit diese Cluster. Erst auf Hardwaretreiber-Ebene wird dieser Zusammenhang aufgelöst.
+Bei modernen Festplatten ist normalerweise die wahre Geometrie, also die Anzahl an Sektoren, Köpfen und Zylindern, die vom Festplatten-Controller verwaltet werden, nach außen (d. h. für den Computer bzw. den Festplattentreiber) nicht sichtbar.
+Früher wurde dem Computer dann eine virtuelle Festplatte vorgespielt, die völlig andere Geometriedaten aufwies, um Begrenzungen der PC-kompatiblen Hardware zu überwinden. Zum Beispiel konnte eine Festplatte, die real nur vier Köpfe aufwies, vom Computer mit 255 Köpfen gesehen werden.
+Heute meldet eine Festplatte meist einfach die Anzahl ihrer Blöcke im LBA-Modus.
+Heute übliche Festplatten teilen intern die Zylinder radial in Zonen ein, wobei die Zahl der Blöcke pro Spur innerhalb einer Zone gleich ist, beim Wechsel der Zone von innen nach außen aber zunimmt (Zone Bit Recording). Die innerste Zone hat die wenigsten Blöcke pro Spur, die äußerste Zone die meisten, weshalb die kontinuierliche Übertragungsrate beim Zonenwechsel von außen nach innen abnimmt.
+Der Festplatten-Controller kann defekte Blöcke in die sogenannte Hot-Fix-Area ausblenden, um dann einen Block aus einem Reserve-Bereich einzublenden. Für den Computer scheint es dann immer so, als wären alle Blöcke defektfrei und nutzbar. Dieser Vorgang lässt sich jedoch per S.M.A.R.T. über den Parameter Reallocated Sector Count nachvollziehen. Eine Festplatte, deren RSC-Wert in kurzer Zeit merklich ansteigt, wird in Kürze ausfallen.
+
+
+==== Advanced Format ====
+Festplattenmodelle verwenden seit 2010 zunehmend ein Sektorierungsschema mit größeren Sektoren mit fast ausschließlich 4096 Bytes („4K“). Die größeren Datenblöcke ermöglichen eine größere Redundanz und damit eine niedrigere Block-Fehlerrate (BER) und/oder geringeren Gesamtoverhead im Verhältnis zur Nutzdatenmenge. Um nach einer jahrzehntelangen, (fast) ausschließlichen Verwendung von Blöcken mit 512 Byte Kompatibilitätsprobleme zu vermeiden, emulieren die meisten Laufwerke an ihrer Schnittstelle eine Blockgröße von 512 Byte („512e“). Ein physischer Block von 4096 Byte wird als acht logische Blöcke von 512 Byte emuliert – die Laufwerksfirmware nimmt die zusätzlich notwendigen Schreib- und Leseoperationen dann selbstständig vor. Dadurch wird grundsätzlich eine Verwendung mit bestehenden Betriebssystemen und Treibern sichergestellt.
+Die 512e-Emulation stellt sicher, dass Advanced-Format-Laufwerke mit vorhandenen Betriebssystemen kompatibel sind – es kann zu Leistungseinbußen kommen, wenn physische Blöcke nur teilweise beschrieben werden sollen (die Firmware muss dann den physischen Block lesen, verändern und wieder zurückschreiben). Solange die Organisationseinheiten (Cluster) des Dateisystems sich mit den physischen Sektoren genau decken, ist dies kein Problem, wohl aber, wenn die Strukturen zueinander versetzt sind. Bei aktuellen Linux-Versionen, bei Windows ab Vista SP1 und macOS ab Snow Leopard werden neue Partitionen so angelegt, wie es für Advanced-Format-Laufwerke sinnvoll ist; beim bis nach Supportende 2014 noch relativ weit verbreiteten Windows XP jedoch nicht. So lassen sich bei Windows XP auf „4K“ ausgerichtete Partitionen mit verschiedenen Zusatztools anlegen; in der Regel werden solche Programme vom Laufwerkshersteller zur Verfügung gestellt.
+Obwohl durch 48-Bit-LBA Festplatten bis zu 128 PiB unter Verwendung von 512-Byte-Sektoren angesprochen werden können, gibt es bei Verwendung des MBR als Partitionstabelle bereits bei Festplatten mit mehr als 2 TiB Einschränkungen. Aufgrund seiner nur 32 Bit großen Felder ist die maximale Partitionsgröße auf 2 TiB beschränkt (232 = 4.294.967.296 Sektoren bei einer Block-/Sektorgröße von 512 Byte); ferner muss ihr erster Block in den ersten 2 TiB liegen, was somit die maximal verwendbare Festplattengröße auf 4 TiB beschränkt. Für die uneingeschränkte Nutzung von Festplatten > 2 TiB ist ein Betriebssystem nötig, welches die GPT unterstützt. Das Booten von Festplatten mit GPT unterliegt je nach Betriebssystem und System-Firmware (BIOS, EFI, EFI+CSM) weiteren Einschränkungen.
+Eine Emulation ist zunehmend nicht mehr notwendig („4K native“ bzw. „4Kn“). Beispielsweise unterliegen externe Festplatten (wie zum Beispiel die Elements-Baureihe von Western Digital) keinen Einschränkungen durch eventuell inkompatible Laufwerkscontroller. Aufgrund der nativen Adressierung können diese Platten auch mit einer MBR-Partitionstabelle jenseits der 4-TiB-Grenze verwendet werden. Das Booten von solchen Datenträgern wird von Windows ab Windows 8/Windows Server 2012 unterstützt, wobei nach der Ablöse des BIOS durch das Unified Extensible Firmware Interface (UEFI bzw. zuvor EFI) in den 2010er-Jahren ohnehin die GUID-Partitionstabelle (GPT) die vorher genutzten meist auf 32-Bit beschränkten Partitionstabellen (MBR, APM), nicht nur auf IBM-PC-kompatiblen Computern, abgelöst hat.
+
+
+==== Geschwindigkeit ====
+Die Festplatte gehört mit zu den langsamsten Teilen eines PC-Kernsystems. Deshalb sind die Geschwindigkeiten einzelner Festplattenfunktionen von besonderer Bedeutung. Die wichtigsten technischen Parameter sind die kontinuierliche Übertragungsrate (sustained data rate) und die mittlere Zugriffszeit (data access time). Die Werte kann man den Datenblättern der Hersteller entnehmen.
+Die kontinuierliche Übertragungsrate ist jene Datenmenge pro Sekunde, welche die Festplatte beim Lesen aufeinander folgender Blöcke im Mittel überträgt. Die Werte beim Schreiben sind meist ähnlich und werden deshalb üblicherweise nicht angegeben.
+
+Bei früheren Festplatten benötigte die Laufwerkselektronik mehr Zeit zur Verarbeitung eines Blocks als die reine Hardware-Lesezeit. Daher wurden „logisch aufeinanderfolgende“ Blöcke nicht physisch aufeinanderfolgend auf dem Platter gespeichert, sondern mit einem oder zwei Blöcken Versatz. Um alle Blocks einer Spur „aufeinanderfolgend“ zu lesen, musste der Platter folglich zwei oder drei Mal rotieren (Interleave-Faktor 2 oder 3). Heutige Festplatten besitzen ausreichend schnelle Elektronik und speichern logisch aufeinanderfolgende Blöcke auch physisch aufeinanderfolgend.
+Sowohl beim Schreiben als auch beim Lesen muss vor dem Zugriff auf einen bestimmten Block der Schreib-Lese-Kopf der Platte zur gewünschten Spur bewegt und anschließend abgewartet werden, bis durch die Rotation der Platte der richtige Block unter dem Kopf vorbeigeführt wird. Diese mechanisch bedingten Verzögerungen liegen Stand 2009 bei etwa 6–20 ms, was nach Maßstäben anderer Computerhardware eine kleine Ewigkeit ist. Daraus ergibt sich die extrem hohe Latenzzeit von Festplatten im Vergleich zu RAM, die noch auf der Ebene der Softwareentwicklung und der Algorithmik berücksichtigt werden muss.
+Die Zugriffszeit setzt sich aus mehreren Anteilen zusammen:
+
+der Spurwechselzeit (seek time),
+der Latenzzeit (latency) und
+die Kommando-Latenz (controller overhead).
+Die Spurwechselzeit wird von der Stärke des Antriebs für den Schreib-Lese-Kopf (Servo) bestimmt. Abhängig davon, welche Strecke der Kopf zurücklegen muss, ergeben sich unterschiedliche Zeiten. Angegeben wird normalerweise nur der Mittelwert beim Wechsel von einer zufälligen zu einer anderen zufälligen Spur (gewichtet nach der Zahl der Blöcke auf den Spuren).
+Die Latenzzeit ist eine unmittelbare Folge der Umdrehungsgeschwindigkeit. Im Mittel dauert es eine halbe Umdrehung, bis ein bestimmter Sektor unter dem Kopf vorbeikommt. Daraus ergibt sich der feste Zusammenhang:
+
+  
+    
+      
+        
+          mittlere Latenzzeit
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        ⋅
+        
+          
+            1
+            Drehzahl
+          
+        
+      
+    
+    {\displaystyle {\text{mittlere Latenzzeit}}={\frac {1}{2}}\cdot {\frac {1}{\text{Drehzahl}}}}
+  
+
+bzw. als zugeschnitte Größengleichung für die Latenzzeit in Millisekunden und die Drehzahl pro Minute:
+
+  
+    
+      
+        
+          
+            mittlere Latenzzeit
+            
+              m
+              s
+            
+          
+        
+        =
+        
+          
+            30000
+            
+              
+                Drehzahl
+              
+              
+                /
+              
+              
+                m
+                i
+                
+                  n
+                  
+                    −
+                    1
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\text{mittlere Latenzzeit}}{\mathrm {ms} }}={\frac {30000}{{\text{Drehzahl}}/\mathrm {min^{-1}} }}}
+  
+
+Die Kommandolatenz ist die Zeit, die der Festplattencontroller damit verbringt, das Kommando zu interpretieren und die erforderlichen Aktionen zu koordinieren. Diese Zeit ist heutzutage vernachlässigbar.
+Die Aussagekraft dieser technischen Parameter für die Systemgeschwindigkeit ist begrenzt. Deshalb wird im professionellen Bereich eine andere Kennzahl, nämlich Input/Output operations Per Second (IOPS) verwendet. Diese wird bei kleinen Blockgrößen hauptsächlich von der Zugriffszeit dominiert. Aus der Definition wird klar, dass zwei halb so große Platten gleicher Geschwindigkeit dieselbe Datenmenge mit der doppelten IOPS-Zahl bereitstellen.
+
+Die Entwicklung der Festplattenzugriffszeit kann mit der anderer PC-Komponenten wie CPU, RAM oder Grafikkarte nicht mehr Schritt halten, weshalb sie zum Flaschenhals geworden ist.
+Um eine hohe Leistung zu erreichen, muss eine Festplatte deshalb, soweit möglich, immer große Mengen von Daten in aufeinander folgenden Blöcken lesen oder schreiben, weil dabei der Schreib-Lese-Kopf nicht neu positioniert werden muss.
+Das wird unter anderem dadurch erreicht, dass möglichst viele Operationen im RAM durchgeführt und auf der Platte die Positionierung der Daten auf die Zugriffsmuster abgestimmt werden. Dazu dient vor allem ein großer Cache im Arbeitsspeicher des Computers, der von allen modernen Betriebssystemen zur Verfügung gestellt wird. Zusätzlich hat die Festplattenelektronik einen Cache (Stand 2012 für Platten von 1 bis 2 TB zumeist 32 oder 64 MiB), der vor allem zur Entkopplung der Interface-Transferrate von der unveränderlichen Transferrate des Schreib-Lese-Kopfes dient.
+Neben der Verwendung eines Caches gibt es weitere Software-Strategien zur Performance-Steigerung. Sie werden vor allem in Multitasking-Systemen wirksam, wo das Festplattensystem mit mehreren beziehungsweise vielen Lese- und Schreibanforderungen gleichzeitig konfrontiert wird. Es ist dann meist effizienter, diese Anforderungen in eine sinnvolle neue Reihenfolge zu bringen. Die Steuerung erfolgt durch einen Festplatten-Scheduler, häufig in Verbindung mit Native Command Queuing (NCQ) oder Tagged Command Queuing (TCQ). Das einfachste Prinzip verfolgt dabei dieselbe Strategie wie eine Aufzugssteuerung: Die Spuren werden zunächst in einer Richtung angefahren und die Anforderungen beispielsweise nach monoton steigenden Spurnummern abgearbeitet. Erst wenn diese alle abgearbeitet sind, kehrt die Bewegung um und arbeitet dann in Richtung monoton fallender Spurnummern usw.
+Bis etwa 1990 besaßen Festplatten meist so wenig Cache (0,5 bis maximal 8 KiB), dass sie keine komplette Spur (damals 8,5 KiB oder 13 KiB) zwischenspeichern konnten. Daher musste der Datenzugriff durch Interleaving gebremst beziehungsweise optimiert werden. Nicht notwendig war dies bei Platten mit hochwertigem SCSI- oder ESDI-Controller beziehungsweise bei den damals aufkommenden IDE-Platten.
+Die seit etwa 2008 verwendeten SSD („Solid-State Disks“; sie arbeiten mit Halbleitertechnik, einem Teilgebiet der Festkörperphysik (englisch Solid-state physics)) weisen prinzipbedingt wesentlich kürzere Zugriffszeiten auf. Seit 2011 gibt es auch kombinierte Laufwerke, die – für den Computer transparent – einen Teil der Kapazität als SSD realisieren, die als Puffer der konventionellen Platte dient.
+Einen anderen Ansatz verfolgt Western Digital seit dem Jahr 2021 mit seiner OptiNAND-Technologie. Dabei werden die Verwaltungsinformationen der Festplatte in einem Flash-Speicher abgelegt. Diese Daten sind zu groß, um sie komplett im regulären Cache der Festplatte abzulegen, durch die Auslagerung in Flash müssen diese im Betrieb nicht in Konkurrenz zu Nutzdaten vom magnetischen Medium gelesen werden. Zusätzlich dient Flash bei einem Stromausfall als Speicher für den Inhalt des DRAM-Schreibchaches.
+Während die Kapazität der Festplatten in 3,5″-Baugröße weiter ansteigt, wächst die Transferrate weniger stark, und die IOPS stagnieren. Dadurch erreichen Festplatten in gewissen Anwendungen nicht mehr eine ausreichende Leistung pro TB Speicherkapazität. Seagate hat ab dem Jahr 2020 als erster Hersteller Laufwerke entwickelt, welche den Arm mit den Schreib/Leseköpfen horizontal getrennt in zwei separat operierende Einheiten aufteilt. Damit kann der Durchsatz und die IOPS bei gleichem Bauraum unter idealen Bedingungen verdoppelt werden. Primärer Nutzer sind Betreiber von Cloud-Dienstleistungen.
+
+
+==== Partitionen ====
+Aus Sicht des Betriebssystems können Festplatten durch Partitionierung in mehrere Bereiche unterteilt werden. Das sind keine echten Laufwerke, sondern sie werden nur vom Betriebssystem als solche dargestellt. Man kann sie sich als virtuelle Festplatten vorstellen, die durch den Festplattentreiber dem Betriebssystem gegenüber als getrennte Geräte dargestellt werden. Die Festplatte selbst „kennt“ diese Partitionen nicht, es ist eine Sache des übergeordneten Betriebssystems.
+Jede Partition wird vom Betriebssystem gewöhnlich mit einem Dateisystem formatiert. Unter Umständen werden, je nach benutztem Dateisystem, mehrere Blöcke zu Clustern zusammengefasst, die dann die kleinste logische Einheit für Daten sind, die auf die Platte geschrieben werden. Das Dateisystem sorgt dafür, dass Daten in Form von Dateien auf die Platte abgelegt werden können. Ein Inhaltsverzeichnis im Dateisystem sorgt dafür, dass Dateien wiedergefunden werden und hierarchisch organisiert abgelegt werden können. Der Dateisystem-Treiber verwaltet die belegten, verfügbaren und defekten Cluster. Bekannte Beispiele für Dateisysteme sind FAT (plattformübergreifend), NTFS (Windows), APFS und HFS+ (Mac OS), UFS und ZFS (BSD-Unix) sowie extfs und btrfs (Linux).
+
+
+==== Verbünde ====
+Sollen größere Datenmengen oder große Datenmengen statt auf einer einzelnen großen, teuren Platte auf günstigeren, kleinen und langzeiterprobten Platten gespeichert werden, kann man sie mit einem Logical Volume Manager als JBOD zusammenfassen oder mit RAIDs zusätzlich gegen Ausfälle vorbeugen und sie in Disk-Arrays zusammenfassen. Dies kann in einem Server oder einem Network Attached Storage geschehen, welcher von mehreren genutzt werden kann, oder man baut überhaupt ein eigenes Storage Area Network auf. Man kann auch (meist externes) Cloud Computing nutzen, welches die bisher angesprochenen Techniken nutzt.
+
+
+==== Geräuschvermeidung ====
+Um die Lautstärke der Laufwerke beim Zugriff auf Daten zu verringern, unterstützen die meisten für den Desktop-Einsatz gedachten ATA- und SATA-Festplatten seit circa 2003 Automatic Acoustic Management (AAM), das heißt, sie bieten die Möglichkeit, per Konfiguration die Zugriffszeit zugunsten geringerer Geräuschentwicklung zu verlängern. Wird die Festplatte in einem leisen Modus betrieben, werden die Schreib/Leseköpfe weniger stark beschleunigt, so dass die Zugriffe leiser sind. Das Laufgeräusch des Plattenstapels sowie die Daten-Transferrate werden davon nicht verändert, jedoch verlängert sich die Zugriffszeit. Dem gleichen Zweck dienen als „Entkopplung“ oder „Entkoppler“ bezeichnete Aufhängungen mit elastischen Elementen, die eine Übertragung der Vibrationen der Festplatte auf Gehäusebauteile verhindern sollen.
+Eine ursprünglich in einem Forum veröffentlichte Entkopplungs-Lösung für Wasserpumpen im PC wird heute nach ihrem Poster als Shoggy-Sandwich benannt und unter dieser Bezeichnung im kommerziellen Computer-Fachhandel vertrieben. Zuvor ging sie in Bastlerkreisen auch als Lösung für Festplatten viral. Sie nutzt zwei verschiedene, ursprünglich im Baumarkt zu erwerbende Beläge für Reibebretter. Die eigentliche Entkopplung wird durch eine Schwammgummi-Platte sichergestellt, die wegen ihrer Weichheit und Porösität keine direkte Befestigung von Schrauben zulässt. Daher ist sie wie bei einem Sandwich zwischen zwei vergleichsweise festeren Zellgummi-Platten eingebettet, die an Festplatte und PC-Gehäuse adaptieren, indem Schrauben durchgesteckt werden.
+
+
+== Schnittstellen, Bussystem und Jumper ==
+
+Ursprünglich (bis 1990/91) befand sich das, was heute als Schnittstelle zur Festplatte verstanden wird, bei Consumer-Platten nicht auf der Festplatte. Dafür war ein Controller in Form einer ISA-Steckkarte notwendig. Dieser Controller sprach die Platte unter anderem über eine ST506-Schnittstelle an (mit den Modulationsstandards MFM, RLL oder ARLL). Die Kapazität der Platte war mit vom Controller abhängig, gleiches galt für die Datenzuverlässigkeit. Eine 20-MB-MFM-Platte konnte an einem RLL-Controller 30 MB speichern, aber ggf. mit einer höheren Fehlerrate.
+Bedingt durch die Trennung von Controller und Medium musste letzteres vor dem Gebrauch low-level-formatiert werden (Sektorierung). Im Gegensatz zu diesen früheren Festplatten mit Schrittmotoren sind modernere Festplatten mit Linearmotoren ausgestattet, die eine Sektorierung und vor allem das Schreiben der Servoinformationen während der Herstellung erforderlich machen und ansonsten nicht mehr low-level-formatiert werden können.
+
+Mit ESDI wurde ein Teil des Controllers ins Laufwerk integriert, um Geschwindigkeit und Zuverlässigkeit zu steigern. Mit SCSI- und IDE-Platten endete dann die Trennung von Controller und Speichergerät. Sie setzen statt der früheren Controller Host-Bus-Adapter ein, die eine wesentlich universellere Schnittstelle zur Verfügung stellen. HBAs existieren als eigene Steckkarten als auch auf Hauptplatinen oder in Chipsätze integriert und werden häufig immer noch als „Controller“ bezeichnet.
+Als Schnittstellen für interne Festplatten werden im Desktop-Bereich heute fast ausschließlich Serial-ATA-Schnittstellen eingesetzt. Bis in die 2000er Jahre hinein waren hier noch parallele ATA- (oder IDE, EIDE)-Schnittstellen üblich.
+Bei Servern und Workstations hat sich neben SATA im Wesentlichen SAS und Fibre-Channel etabliert. Die Mainboards waren lange Zeit mit meist zwei ATA-Schnittstellen versehen (für max. 4 Laufwerke), inzwischen wurden diese annähernd vollständig durch (bis zu 10) SATA-Schnittstellen ersetzt.
+Ein prinzipielles Problem bei parallelen Übertragungen ist, dass es mit zunehmender Geschwindigkeit immer schwieriger wird, unterschiedliche Laufzeiten der einzelnen Bits durch das Kabel sowie Übersprechen zu beherrschen. Daher stießen die parallelen Schnittstellen mehr und mehr an ihre Grenzen. Serielle Leitungen, insbesondere in Verbindung mit differentiellen Leitungspaaren erlauben inzwischen deutlich höhere Übertragungsraten.
+
+
+=== ATA (IDE) ===
+
+Bei einer ATA-Festplatte wird durch Jumper festgelegt, ob sie das Laufwerk mit Adresse 0 oder 1 der ATA-Schnittstelle ist (Device 0 beziehungsweise 1, oft mit Master beziehungsweise Slave bezeichnet). Manche Modelle erlauben eine Beschränkung der an das Betriebssystem beziehungsweise BIOS gemeldeten Kapazität des Laufwerks, wodurch die Festplatte im Falle von Inkompatibilitäten dennoch in Betrieb genommen werden kann; allerdings wird dabei der nicht gemeldete Plattenplatz verschenkt.
+Durch die Festlegung der ATA-Bus-Adresse können zwei Festplatten an einer ATA-Schnittstelle des Mainboards angeschlossen werden. Die meisten Mainboards haben zwei ATA-Schnittstellen, genannt primary ATA und secondary ATA, also „erste“ und „zweite ATA-Schnittstelle“. Daher können insgesamt bis zu vier Festplatten an beide ATA-Schnittstellen der Hauptplatine angeschlossen werden. Ältere BIOS von Hauptplatinen erlauben es nur, den Computer von der ersten ATA-Schnittstelle zu starten, und auch nur, wenn die Festplatte als Master gejumpert ist.
+Die ATA-Schnittstellen werden jedoch nicht nur von Festplatten, sondern auch von CD-ROM- und DVD-Laufwerken genutzt. Somit ist (ohne Zusatzkarte) die Gesamtzahl von Festplatten plus ladbaren Laufwerken (CD-ROM, DVD) auf vier begrenzt (Diskettenlaufwerke haben eine andere Schnittstelle). CompactFlash-Karten können per Adapter angeschlossen und wie eine Festplatte verwendet werden.
+Bei Erweiterungen sind einige Dinge zu beachten:
+
+Das erste Laufwerk ist als „Master“ zu jumpern – in der Regel die Voreinstellung von Laufwerken; erst ein eventuell zweites Laufwerk an einem Kabel wird auf „Slave“ gejumpert. Einige Laufwerke haben noch die dritte Option „Single Drive“. Diese wird dann benutzt, wenn das Laufwerk alleine am Kabel hängt; kommt ein „Slave“-Laufwerk dazu, muss man das erste als „Master“ jumpern. Diese Option heißt dann zur Erläuterung oftmals „Master with Slave present“.
+Wo Master oder Slave sitzen (am Ende des Kabels oder „mittendrin“), spielt keine Rolle (außer, beide Laufwerke sind auf Cable Select gejumpert). „Slave allein“ funktioniert zwar meistens, gilt aber nicht als sauber konfiguriert und ist oft störanfällig. Ausnahme: Bei den neueren 80-poligen Kabeln sollte der Slave in der Mitte angeschlossen werden; die Stecker sind dementsprechend beschriftet.
+Die ideale Verteilung der Laufwerke auf die einzelnen Anschlüsse ist disputabel. Zu beachten ist, dass sich traditionell zwei Geräte am selben Kabel die Geschwindigkeit teilen und dass das langsamere Gerät den Bus länger belegt und somit das schnellere bremsen kann. Bei der gängigen Konfiguration mit einer Festplatte und einem CD/DVD-Laufwerk ist es daher von Vorteil, jedes dieser beiden Geräte mit einem eigenen Kabel zu einer Schnittstelle auf der Hauptplatine zu verwenden. Neben den Jumpern existiert ein automatischer Modus für die Bestimmung der Adressen („Cable-Select“), der jedoch geeignete Anschlusskabel erfordert, die früher wenig verbreitet waren, aber seit ATA-5 (80-polige Kabel) Standard sind.
+Die parallele ATA-Schnittstelle wurde ab Anfang der 2000er Jahre sukzessive durch SATA und andere Schnittstellen ersetzt.
+
+
+=== ESDI ===
+
+
+=== Parallel SCSI ===
+
+Die Adresse von Parallel-SCSI-Festplatten kann nicht wie IDE-Festplatten nur zwischen zwei, sondern je nach verwendetem Controller zwischen 7 bzw. 15 Adressen ausgewählt werden. Dafür befinden sich an älteren SCSI-Laufwerken drei bzw. vier Jumper zur Festlegung der Adresse – SCSI-ID-Nummer genannt –, die es erlauben, bis 7 bzw. 15 Geräte pro SCSI-Bus einzeln zu adressieren.
+Die Anzahl der maximal möglichen Geräte ergibt sich aus der Anzahl der ID-Bits (drei bei SCSI bzw. vier bei Wide-SCSI) unter Berücksichtigung der vom Controller selbst belegten Adresse #0. Neben Jumpern fand man selten die Adresseinstellung auch durch einen kleinen Drehschalter. Bei modernen Systemen werden die IDs automatisch vergeben (nach der Reihenfolge am Kabel), und die Jumper sind nur noch relevant, wenn diese Vergabe beeinflusst werden soll.
+Dazu kommen noch andere Jumper wie der (optionale) Schreibschutzjumper, der es erlaubt, eine Festplatte gegen Beschreiben zu sperren. Weiterhin können je nach Modell Einschaltverzögerungen oder das Startverhalten beeinflusst werden.
+Parallel SCSI wurde ab ca. 2005 durch Serial Attached SCSI ersetzt.
+
+
+=== SATA ===
+
+Seit 2002 werden Festplatten mit Serial ATA (S-ATA oder SATA)-Schnittstelle angeboten. Die Vorteile gegenüber ATA sind der höhere mögliche Datendurchsatz und die vereinfachte Kabelführung. Erweiterte Versionen von SATA verfügen über weitere, vor allem für professionelle Anwendungen relevante, Funktionen, wie etwa die Fähigkeit zum Austausch von Datenträgern im laufenden Betrieb (Hot-Plug). Inzwischen hat sich SATA praktisch durchgesetzt, die neuesten Festplatten werden nicht mehr als IDE-Versionen angeboten, seit die bei IDE theoretisch möglichen Transferraten nahezu erreicht sind.
+Im Jahr 2005 wurden erste Festplatten mit Serial Attached SCSI (SAS) als potentieller Nachfolger von SCSI für den Server- und Storagebereich vorgestellt. Dieser Standard ist teilweise zu SATA abwärtskompatibel.
+
+
+=== Serial Attached SCSI (SAS) ===
+
+Die SAS-Technik basiert auf der etablierten SCSI-Technik, sendet die Daten jedoch seriell und verbindet die Geräte nicht über einen gemeinsamen Bus, sondern einzeln über dedizierte Ports (oder Port Multiplier). Neben der höheren Geschwindigkeit im Vergleich zu herkömmlicher SCSI-Technik können theoretisch über 16.000 Geräte in einem Verbund angesprochen werden.
+Ein weiterer Vorteil ist die maximale Kabellänge von 10 Metern.
+Die Steckverbindungen von SATA sind zu SAS kompatibel, ebenso SATA-Festplatten; SAS-Festplatten benötigen jedoch einen SAS-Controller.
+
+
+=== Fibre-Channel-Interface ===
+
+Die Kommunikation via Fibre-Channel-Interface ist noch leistungsfähiger und ursprünglich vor allem für die Verwendung in Speichersubsystemen entwickelt. Die Festplatten werden, wie bei USB, nicht direkt angesprochen, sondern über einen FC-Controller, FC-HUBs oder FC-Switches.
+
+
+=== Queueing im SCSI-, SATA oder SAS-Datentransfer ===
+Vor allem bei SCSI-Platten und bei neueren SATA-Festplatten werden sogenannte Queues (Warteschlangen) eingesetzt. Das sind Software-Verfahren als Teil der Firmware, die die Daten zwischen dem Anfordern von Computerseite und physikalischem Zugriff auf die Speicherscheibe verwalten und ggf. zwischenspeichern. Beim Queuing reihen sie die Anfragen an den Datenträger in eine Liste und sortieren sie entsprechend der physikalischen Position auf der Scheibe und der aktuellen Position der Schreibköpfe, um so möglichst viele Daten mit möglichst wenigen Umdrehungen und Kopfpositionierungen zu lesen. Der festplatteneigene Cache spielt hier eine große Rolle, da die Queues in diesem abgelegt werden (siehe auch: Tagged Command Queuing, Native Command Queuing).
+
+
+=== Vorläufer der seriellen High-Speed-Schnittstellen ===
+Die ersten verbreiteten seriellen Schnittstellen für Festplatten waren SSA (Serial Storage Architecture, von IBM entwickelt) und Fibre Channel in der Variante FC-AL (Fibre Channel-Arbitrated Loop). SSA-Festplatten werden heute praktisch nicht mehr hergestellt, aber Fibre-Channel-Festplatten werden weiterhin für den Einsatz in großen Speichersystemen gebaut. Fibre Channel bezeichnet dabei das verwendete Protokoll, nicht das Übertragungsmedium. Deshalb haben diese Festplatten trotz ihres Namens keine optische, sondern eine elektrische Schnittstelle.
+
+
+== Externe Festplatten ==
+
+Externe Festplatten gibt es als lokale Massenspeicher (Block-Geräte) oder als Netzwerk-Massenspeicher (NAS). Im ersten Fall ist die Festplatte über Hardware-Schnittstellen-Adapter als lokales Laufwerk angeschlossen; im zweiten Fall ist das Laufwerk eine Remote-Ressource, die das NAS (ein über ein Netzwerk angebundener Computer) anbietet.
+Für den Anschluss von externen Festplatten werden universelle Schnittstellen wie FireWire, USB oder eSATA verwendet. Zwischen der Festplatte und der Schnittstelle befindet sich hierzu eine Bridge, die an einer Seite einen PATA- oder SATA-Anschluss besitzt zum Anschluss der eigentlichen Festplatte, und an der anderen Seite einen USB-, Firewire-, eSATA-Anschluss oder mehrere dieser Anschlüsse zum Anschluss an den Computer. Bei derartigen externen Festplatten sind teilweise zwei Festplatten in einem Gehäuse verbaut, die gegenüber dem Computer jedoch nur als ein Laufwerk auftreten (RAID-System).
+Bei NAS-Systemen ist ein Netzwerkanschluss vorhanden.
+
+
+== Datenschutz und Datensicherheit ==
+Besonders für Behörden und Unternehmen sind Datenschutz und Datensicherheit äußerst sensible Themen. Vor allem im Bereich der externen Festplatten, die als mobile Datenspeicher eingesetzt werden, müssen Behörden und Unternehmen Sicherheitsstandards anwenden. Gelangen sensible Daten in unbefugte Hände, entsteht meist ein irreparabler Schaden. Um dies zu verhindern und höchste Datensicherheit für den mobilen Datentransport zu gewährleisten, müssen folgende Hauptkriterien beachtet werden:
+
+Verschlüsselung,
+Zugriffskontrolle und die
+Verwaltung des kryptographischen Schlüssels.
+
+
+=== Verschlüsselung ===
+Daten können seitens des Betriebssystems verschlüsselt werden oder direkt durch das Laufwerk (Microsoft eDrive, Self-Encrypting Drive). Typische Speicherorte des Kryptoschlüssels sind USB-Stick oder Smartcard. Bei Speicherung innerhalb des Computersystems (auf der Festplatte, im Plattencontroller, in einem Trusted Platform Module) wird der eigentliche Zugriffsschlüssel erst durch Kombination mit einem einzugebenden Passwort oder Ähnlichem (Passphrase) generiert.
+Schadprogramme (Viren) können dem Benutzer durch Verschlüsselung bzw. Setzen des Hardware-Passworts auf einen unbekannten Wert massiv schaden. Es besteht dann für den Benutzer keine Möglichkeit mehr, auf den Inhalt der Festplatte zuzugreifen, ohne das Passwort zu kennen – für dessen (vermeintliche) Übermittlung wird meist Lösegeld gefordert (Ransomware).
+
+
+=== Zugriffskontrolle ===
+Verschiedene Festplatten bieten die Möglichkeit an, den kompletten Festplatteninhalt per Passwort direkt auf Hardwareebene zu schützen. Diese im Grunde nützliche Eigenschaft ist jedoch kaum bekannt. Für den Zugriff auf eine Festplatte kann ein ATA-Passwort vergeben werden.
+
+
+=== Ausfallursachen und Lebensdauer ===
+
+Zu den typischen Ausfallursachen gehören:
+
+Die Anfälligkeit von Festplatten ist besonders bei den neuen, sehr schnell drehenden Systemen vorwiegend auf thermische Probleme zurückzuführen.
+Beim mechanischen Aufsetzen des Schreib-Lese-Kopfes kann die Festplatte beschädigt werden (Head-Crash). Der Kopf schwebt im Betrieb auf einem Luftpolster über der Platte und wird nur durch dieses Polster daran gehindert, aufzusetzen. Im laufenden Betrieb sollte die Festplatte daher möglichst nicht bewegt werden und keinen Erschütterungen ausgesetzt sein.
+
+Äußere Magnetfelder können die Sektorierung der Festplatte beeinträchtigen und sogar zerstören.
+Fehler in der Steuerelektronik oder Verschleiß der Mechanik führen zu Ausfällen.
+Umgekehrt kann auch längerer Stillstand dazu führen, dass die Mechanik in Schmierstoffen stecken bleibt und die Platte gar nicht erst anläuft (sticky disk).
+Die durchschnittliche Zahl an Betriebsstunden, bevor eine Festplatte ausfällt, wird bei irreparablen Platten als MTTF (Mean Time To Failure, Mittlere Betriebsdauer bis zum Ausfall) bezeichnet. Bei Festplatten, die repariert werden können, wird ein MTBF-Wert (Mean Time Between Failures) angegeben. Alle Angaben zur Haltbarkeit sind ausschließlich statistische Werte. Die Lebensdauer einer Festplatte kann daher nicht im Einzelfall vorhergesagt werden, denn sie hängt von vielen Faktoren ab:
+
+Vibrationen und Stöße: Starke Erschütterungen können zu einem vorzeitigen (Lager-)Verschleiß führen und sollten daher vermieden werden.
+Unterschiede zwischen verschiedenen Modellreihen eines Herstellers: Abhängig vom jeweiligen Modell lassen sich bestimmte Baureihen ausmachen, die als besonders zuverlässig oder fehleranfällig gelten. Um statistisch genau Angaben zu der Zuverlässigkeit machen zu können, sind eine große Anzahl von baugleichen Platten notwendig, die unter ähnlichen Bedingungen betrieben werden. Systemadministratoren, die viele Systeme betreuen, können so im Laufe der Jahre durchaus einige Erfahrungen sammeln, welche Festplatten eher zu auffälligem Verhalten und damit vorzeitigem Ausfall neigen.
+Anzahl der Zugriffe (Lesekopfbewegungen): Durch häufige Zugriffe verschleißt die Mechanik schneller, als wenn die Platte nicht genutzt wird und sich nur der Plattenstapel dreht. Dieser Einfluss ist jedoch nur gering.
+Wenn die Festplatte über der vom Hersteller genannten Betriebstemperatur, meist 40–55 °C, betrieben wird, leidet die Lebensdauer. Nach einer Studie des Unternehmens Google Inc. (welches interne Festplattenausfälle analysierte) gibt es am oberen Ende des zulässigen Bereiches keine vermehrten Ausfälle.
+Allgemein sind schnelldrehende Server-Festplatten für eine höhere MTTF ausgelegt als typische Desktop-Festplatten, so dass sie theoretisch eine höhere Lebensdauer erwarten lassen. Dauerbetrieb und häufige Zugriffe können jedoch dazu führen, dass sich das relativiert und die Festplatten nach wenigen Jahren ausgetauscht werden müssen.
+Notebook-Festplatten werden durch die häufigen Transporte besonders beansprucht und sind dementsprechend trotz robusterer Bauart mit einer kleineren MTTF als Desktop-Festplatten spezifiziert.
+Eine genaue Haltbarkeit der gespeicherten Daten wird von den Herstellern nicht angegeben. Lediglich magneto-optische Verfahren erreichen eine Persistenz von 50 Jahren und mehr.
+
+
+=== Vorbeugende Maßnahmen gegen Datenverlust ===
+Als vorbeugende Maßnahmen gegen Datenverlust werden daher häufig folgende Maßnahmen ergriffen:
+
+Von wichtigen Daten sollte immer eine Sicherungskopie (Backup) auf einem anderen Datenträger (beachte den Hinweis zum Ausfall oben unter Partitionierung) existieren.
+Systeme, die zwingend hochverfügbar sein müssen und bei denen ein Festplattenfehler keine Betriebsunterbrechung und Datenverlust verursachen darf, verfügen meistens über RAID. Eine Konfiguration ist zum Beispiel das Mirrorset (RAID 1), bei dem die Daten auf zwei Festplatten gespiegelt werden und sich somit die Ausfallsicherheit erhöht. Effizientere Konfigurationen sind RAID 5 und höher. Ein Stripeset (RAID 0) aus zwei Festplatten erhöht zwar die Geschwindigkeit, jedoch steigt das Ausfallrisiko. RAID 0 ist deshalb keine Maßnahme, um Datenverlust zu verhindern oder die Verfügbarkeit des Systems zu erhöhen.
+ATA-Festplatten verfügen seit circa Ende der 1990er-Jahre über S.M.A.R.T., eine interne Überwachung der Festplatte auf Zuverlässigkeit. Der Status kann von außen abgefragt werden. Ein Nachteil ist, dass S.M.A.R.T. kein Standard ist. Jeder Hersteller definiert seine Fehlertoleranz selbst, d. h. S.M.A.R.T. ist nur als allgemeines Richtmittel anzusehen. Außerdem gibt es Festplatten, deren S.M.A.R.T.-Funktion selbst dann noch nicht vor Problemen warnt, wenn diese sich bereits im Betrieb durch nicht mehr lesbare Blöcke bemerkbar gemacht haben.
+Die meisten Festplatten können in beliebiger Lage montiert werden, im Zweifelsfall sollte die Spezifikation des Herstellers beachtet werden. Des Weiteren ist die Festplatte fest zu verschrauben, um Eigenschwingung zu unterbinden.
+Während des Einbaus sollten Maßnahmen zum Schutz vor ESD getroffen werden.
+
+
+=== Zuverlässiges Löschen ===
+
+Unabhängig vom verwendeten Speichermedium (in diesem Fall eine Festplatte) wird beim Löschen einer Datei zumeist lediglich im Dateisystem vermerkt, dass der entsprechende Datenbereich nun frei ist. Die Daten selbst verbleiben jedoch physisch auf der Festplatte, bis der entsprechende Bereich mit neuen Daten überschrieben wird. Mit Datenrettungsprogrammen können gelöschte Daten daher oft zumindest zum Teil wiederhergestellt werden. Das wird häufig in der Beweissicherung zum Beispiel bei den Ermittlungsbehörden (Polizei usw.) eingesetzt.
+Beim Partitionieren oder (Schnell-)Formatieren wird der Datenbereich nicht überschrieben, sondern lediglich die Partitionstabelle oder die Beschreibungsstruktur des Dateisystems. Formatierungstools bieten im Allgemeinen zusätzlich an, den Datenträger komplett zu überschreiben.
+Um ein sicheres Löschen von sensiblen Daten zu garantieren, bieten verschiedene Hersteller Software an, sogenannte Eraser, die beim Löschen den Datenbereich mehrfach überschreiben kann. Bereits das einmalige Überschreiben hinterlässt jedoch keine verwertbaren Informationen. Alternativ kann auf eine der zahlreichen, direkt von CD startbaren kostenlosen Unix-Distributionen zurückgegriffen werden (zum Beispiel Knoppix). Es gibt für diesen Zweck neben universellen Programmen wie dd und shred speziell für das Löschen verschiedene Open-Source-Programme, beispielsweise Darik’s Boot and Nuke (DBAN). In Apples MacOS sind entsprechende Funktionen („Papierkorb sicher löschen“ und „Volume mit Nullen überschreiben“) bereits enthalten. Es kann auch der komplette freie Speicher der Festplatte überschrieben werden, um so zu verhindern, dass gelöschte, aber nicht überschriebene Daten (oder Fragmente oder Kopien davon) wiederhergestellt werden können. Um zu verhindern, dass sich Daten mit Spezialhardware zum Beispiel von Datenwiederherstellungsunternehmen oder Behörden wiederherstellen lassen, wurde 1996 ein Verfahren vorgestellt (die „Gutmann-Methode“), um ein sicheres Löschen der Daten durch mehrmaliges Überschreiben zu garantieren. Jedoch genügt bei heutigen Festplatten bereits das einmalige Überschreiben.
+Alternativ bietet sich bei der Verschrottung des Computers die mechanische Vernichtung der Festplatte beziehungsweise der Scheiben an, eine Methode, die das Bundesamt für Sicherheit in der Informationstechnik empfiehlt. Deshalb werden in manchen Unternehmen beim Umstieg auf eine neue Computergeneration alle Festplatten in einem Schredder in kleine Teile zermahlen und die Daten so vernichtet.
+Ist die gesamte Festplatte wirksam verschlüsselt, so ist das wirksame Verwerfen des Zugriffsschlüssels einer Löschung weitgehend gleichzusetzen.
+
+
+=== Langzeitarchivierung ===
+
+
+== Geschichte ==
+
+Vorläufer der Festplatte war die Magnettrommel ab 1932. Außerhalb von Universitäten und Forschungseinrichtungen kam dieser Speicher ab 1958 als „Hauptspeicher“ mit 8192 Worten à 32 Bit in der Zuse Z22 zum Einsatz. Erfahrungen bzgl. magnetischer Beschichtungen lieferten Bandgeräte. Die erste kommerziell erhältliche Festplatte, die IBM 350, wurde von IBM 1956 als Teil des IBM-305-RAMAC-Rechners („Random Access Method of Accounting and Control“) angekündigt.
+
+
+=== Chronologische Übersicht ===
+September 1956: IBM stellt das erste magnetische Festplattenlaufwerk mit der Bezeichnung „IBM 350“ vor (5 MB (1 Byte umfasst hier 6 bit, das Laufwerk mithin insgesamt 30 MBit), 24 Zoll, 600 ms Zugriffszeit, 1200 min−1, 500 kg, 10 kW). Die Schreib-Lese-Köpfe wurden elektronisch-pneumatisch gesteuert, weshalb die schrankgroße Einheit einen Druckluft-Kompressor enthielt. Das Laufwerk wurde nicht verkauft, sondern für 650 US-Dollar pro Monat vermietet. Ein Exemplar der IBM350 befindet sich im Museum des IBM-Clubs in Sindelfingen. An der Entwicklung wesentlich beteiligt am Forschungszentrum in San José (Leitung Reynold B. Johnson) waren Louis Stevens, William A. Goddard, John Lynott.
+ 1973: IBM startet das „Winchester“-Projekt, das sich damit befasste, einen rotierenden Speicher mit einem fest montierten Medium zu entwickeln (IBM 3340, 30 MB Speicherkapazität, 30 ms Zugriffszeit). Beim Starten und Stoppen des Mediums sollten die Köpfe auf dem Medium aufliegen, was einen Lademechanismus überflüssig machte. Namensgeber war das Winchester-Gewehr. Diese Technik setzte sich in den folgenden Jahren durch. Bis in die 1990er-Jahre wurde deshalb für Festplatten gelegentlich die Bezeichnung Winchester-Laufwerk verwendet.
+1979: Vorstellung der ersten 8″-Winchester-Laufwerke. Diese waren jedoch sehr schwer und teuer; trotzdem stieg der Absatz kontinuierlich.
+1980: Verkauf der ersten 5,25″-Winchester-Laufwerke durch das Unternehmen Seagate Technology („ST506“, 6 MB, 3600 min−1, Verkaufspreis etwa 1000 US-Dollar). Diese Modellbezeichnung (ST506) wurde über viele Jahre hinaus der Name für diese neue angewendete Schnittstelle, die alle anderen Unternehmen als neuen Standard im PC-Bereich übernommen hatten. Zur gleichen Zeit kam neben den bereits bestehenden Apple-Microcomputern der erste PC von IBM auf den Markt, dadurch stieg die Nachfrage nach diesen – im Vergleich zu den Winchester-Laufwerken kompakten – Festplatten rasant an.
+1986: Spezifikation von SCSI, eines der ersten standardisierten Protokolle für eine Festplattenschnittstelle.
+1989: Standardisierung von IDE, auch bekannt als AT-Bus.
+1991: erste 2,5-Zoll-Festplatte mit 100 MB Speicherkapazität
+1997: Erster Einsatz des Riesen-Magnetowiderstands (englisch Giant Magnetoresistive Effect (GMR)) bei Festplatten, dadurch konnte die Speicherkapazität erheblich gesteigert werden. Eine der ersten Festplatten mit GMR-Leseköpfen brachte IBM im November 1997 heraus (IBM Deskstar 16GP DTTA-351680, 3,5″, 16,8 GB, 0,93 kg, 9,5 ms, 5400 min−1).
+2004: Erste SATA-Festplatten mit Native Command Queuing von Seagate.
+2005: Prototyp einer 2,5-Zoll-Hybrid-Festplatte (Kurzbezeichnung H-HDD), die aus einem magnetisch-mechanischen Teil und einem zusätzlichen NAND-Flash-Speicher aufgebaut ist, der als Puffer für die Daten dient. Erst wenn der Puffer voll ist, werden die Daten aus dem Puffer auf das Magnetmedium der Festplatte geschrieben.
+2006: Erste 2,5-Zoll-Notebook-Festplatte (Momentus 5400.3, 2,5″, 160 GB, 0,1 kg, 5,6 ms, 5400 min−1, 2 Watt) von Seagate mit senkrechter Aufzeichnungstechnik (Perpendicular Recording). 3,5-Zoll-Festplatten erreichen mit derselben Aufzeichnungstechnik im April eine Kapazität von 750 GB.
+2007: Die erste Terabyte-Festplatte von Hitachi. (3,5″, 1 TB, 0,7 kg, 8,5 ms, 7200 min−1, 11 Watt)
+2009: Erste 2-TB-Festplatte von Western Digital (Caviar Green, 5400 min−1)
+2010: Erste 3-TB-Festplatte von Western Digital (Caviar Green). Systeme ohne UEFI können diese Festplatte nicht ansprechen. WD liefert eine spezielle Controllerkarte mit, mit welcher die 2,5 TB und 3 TB großen Festplatten von PCs mit älterem BIOS als sekundäre Platten voll angesprochen werden können. Seagate umgeht dieses Problem durch den Einsatz größerer Sektoren (Advanced Format).
+2011: Überschwemmungen zerstörten etliche Fabriken in Thailand und machten die weltweiten Abhängigkeiten unter anderem der Festplattenindustrie deutlich: Lieferausfälle führten zur Knappheit von Bauelementen und die Preise für Festplatten auf dem Endverbrauchermarkt in Deutschland schnellten auf ein Mehrfaches in die Höhe. Hitachi GST beziehungsweise Western Digital liefert in kleinen Stückzahlen die ersten 4-TB-3,5″-Festplatten Deskstar 5K4000 (intern) beziehungsweise Touro Desk (externe USB-Variante) mit 1 TB pro Platter aus. Auch Samsung kündigt entsprechende Modelle mit einer Kapazität von 1 TB pro Platter an. Erste Modelle sollen die Spinpoint F6 mit 2 TB und 4 TB sein.
+2014: Erste 6- und 8-TB-Festplatten mit Heliumfüllung von HGST.
+2015: Erste 10-TB-Festplatte mit Heliumfüllung und Shingled Magnetic Recording von HGST.
+
+
+=== Entwicklung der Speicherkapazitäten der verschiedenen Baugrößen ===
+
+Anmerkungen:
+
+Die Kapazitätsangaben beziehen sich immer auf das im jeweiligen Jahr größte käuflich erhältliche Festplattenlaufwerk, unabhängig von seiner Drehzahl oder Schnittstelle.
+Die Hersteller von Festplatten verwenden bei Speicherkapazitäten SI-Präfixe (1000 B = 1 kB usw.). Das entspricht der Empfehlung der International Electrotechnical Commission (IEC), steht aber im Gegensatz zu mancher Software, wodurch es u. U. zu scheinbaren Größenunterschieden kommt. Für Details siehe Abschnitt Speicherkapazität.
+†: Baugröße veraltet; nicht mehr in Gebrauch
+*: unter Verwendung von Perpendicular Recording
+**: unter Verwendung von Shingled Magnetic Recording
+
+
+== Hersteller ==
+
+Im zweiten Quartal 2013 wurden weltweit 133 Millionen Festplattenlaufwerke mit einer Gesamtkapazität von 108 Exabyte (108 Millionen Terabyte) abgesetzt.
+Im Jahr 2014 wurden weltweit 564 Millionen Festplattenlaufwerke mit einer Gesamtkapazität von 529 Exabyte produziert. 87,7 Millionen Festplattenlaufwerke wurden weltweit im vierten Quartal 2018 abgesetzt.
+
+Ehemalige Hersteller:
+
+Conner Peripherals wurde 1996 von Seagate übernommen.
+Quantum wurde 2000 von Maxtor und Maxtor 2005 von Seagate übernommen.
+IBMs Festplattensparte wurde 2002 von Hitachi übernommen.
+Fujitsus Festplattensparte wurde 2010 von Toshiba übernommen.
+ExcelStor produzierte für IBM bzw. später für HGST/Hitachi einige Modelle.
+Samsungs Festplatten-Sparte wurde im Oktober 2011 von Seagate übernommen.
+HGST (Hitachi) wurde im März 2012 von Western Digital übernommen, wobei WD auf Druck der Kartellbehörden einen Teil der 3,5″-Produktionseinrichtungen an Toshiba abgeben musste.
+Siehe auch Kategorie:Ehemaliger Festplatten-Hersteller
+
+
+== Weblinks ==
+
+50 Jahre Festplatte. tecchannel.de, 13. September 2006
+HDD from inside: Main parts – Fotoserie mit Beschreibung anhand einer 3,5″-SATA-Festplatte (englisch)
+Festplattenschnittstellen im Überblick
+A brief History of Areal Density
+Technische Daten einer Kino-Festplatte beim Filmblog Kinogucker
+
+
+== Einzelnachweise ==

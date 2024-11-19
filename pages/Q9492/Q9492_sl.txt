@@ -1,0 +1,395 @@
+Verjétnost je število, ki pove, kolikšna je možnost, da se zgodi nek dogodek. Verjetnost je temeljni pojem matematične panoge, ki se imenuje verjetnostni račun.
+Verjetnost dogodka A se označi s P(A). Črka P izvira iz latinščine probabilitas – verjetnost.
+
+
+== Definicija verjetnosti ==
+Obstaja več matematičnih definicij verjetnosti. 
+
+
+=== Klasična definicija ===
+Naj je verjetnostni poskus, ki ima n med seboj enakovrednih izidov (enakovrednost izidov pomeni, da se vsi izidi pojavijo približno enako pogosto, če se poskus ponovi večkrat). Opazuje se dogodek A, za katerega je ugodnih m izidov. Po klasični definiciji je verjetnost dogodka A razmerje med številom ugodnih izidov in številom vseh možnih izidov:
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            m
+            n
+          
+        
+        =
+        
+          
+            
+              
+                
+                  
+                    s
+                    ˇ
+                  
+                
+              
+              t
+              e
+              v
+              i
+              l
+              o
+               
+              u
+              g
+              o
+              d
+              n
+              i
+              h
+               
+              i
+              z
+              i
+              d
+              o
+              v
+            
+            
+              
+                
+                  
+                    s
+                    ˇ
+                  
+                
+              
+              t
+              e
+              v
+              i
+              l
+              o
+               
+              v
+              s
+              e
+              h
+               
+              i
+              z
+              i
+              d
+              o
+              v
+            
+          
+        
+        
+        
+        .
+      
+    
+    {\displaystyle P(A)={\frac {m}{n}}={\frac {\rm {{\check {s}}tevilo~ugodnih~izidov}}{\rm {{\check {s}}tevilo~vseh~izidov}}}\!\,.}
+  
+
+Zgled: 
+v nekem mestu živi 6850 prebivalcev. Trenutno je v tem mestu 822 prebivalcev okuženih z virusom gripe. Kolikšna je verjetnost, da je na slepo izbrani prebivalec tega mesta okužen z virusom gripe?
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            822
+            6850
+          
+        
+        
+        
+        .
+      
+    
+    {\displaystyle P(A)={\frac {822}{6850}}\!\,.}
+  
+
+Rezultat se po navadi še okrajša, ali pa se ga zapiše v decimalni obliki ali v obliki procentov:
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            822
+            6850
+          
+        
+        =
+        
+          
+            3
+            25
+          
+        
+        =
+        0
+        ,
+        12
+        =
+        12
+         
+        %
+        
+        
+        .
+      
+    
+    {\displaystyle P(A)={\frac {822}{6850}}={\frac {3}{25}}=0,12=12\ \%\!\,.}
+  
+
+
+=== Definicija s teorijo mere ===
+V danem verjetnostnem poskusu naj je definirana mera, s katero se meri obsežnost dogodkov. Verjetnost dogodka A je potem razmerje med mero dogodka A in mero celotne množice vseh možnih izidov. 
+To definicijo se uporablja zlasti, kadar se ima opravka z dogodki, ki imajo neskončno mnogo izidov, in zato računanje verjetnosti po klasični definiciji ni možno.
+Zgled:
+
+Poskus naj bo izbiranje naključnega realnega števila z intervala [10,20]
+A je dogodek, da je izbrano število večje od 17.5.
+Za mero se seveda vzame kar širino intervala.
+Verjetnost dogodka A je potem enaka:
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        =
+        
+          
+            
+              2
+              ,
+              5
+            
+            10
+          
+        
+        =
+        
+          
+            1
+            4
+          
+        
+        =
+        25
+         
+        %
+        
+        
+        .
+      
+    
+    {\displaystyle P(A)={\frac {2,5}{10}}={\frac {1}{4}}=25\ \%\!\,.}
+  
+
+
+=== Statistična definicija ===
+Za statistično obdelavo je treba poskus ponoviti zelo velikokrat. Pri tem se računa kolikokrat se dogodek A zgodi (to je frekvenca dogodka A). Verjetnost dogodka A je število, h kateremu konvergira relativna frekvenca dogodka A, ko se število ponovitev poskusa veča proti neskončno. 
+
+
+== Značilnosti verjetnosti ==
+Za dodatno razlago glej tudi: dogodek.
+Verjetnost poljubnega dogodka je vedno večja ali enaka 0 in vedno manjša ali enaka 1:
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        ∈
+        [
+        0
+        ,
+        1
+        ]
+        
+        
+        .
+      
+    
+    {\displaystyle P(A)\in [0,1]\!\,.}
+  
+
+Verjetnost dogodka A in verjetnost nasprotnega dogodka A' imata vsoto 1:
+
+  
+    
+      
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        
+          A
+          ′
+        
+        )
+        =
+        1
+        
+        
+        .
+      
+    
+    {\displaystyle P(A)+P(A')=1\!\,.}
+  
+
+Verjetnost unije nezdružljivih dogodkov je enaka vsoti obeh verjetnosti:
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        
+        
+        .
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)\!\,.}
+  
+
+Verjetnost unije dveh poljubnih dogodkov se lahko izračuna po formuli:
+
+  
+    
+      
+        P
+        (
+        A
+        ∪
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        +
+        P
+        (
+        B
+        )
+        −
+        P
+        (
+        A
+        ∩
+        B
+        )
+        
+        
+        .
+      
+    
+    {\displaystyle P(A\cup B)=P(A)+P(B)-P(A\cap B)\!\,.}
+  
+
+Verjetnost preseka (produkta) neodvisnih dogodkov je enaka produktu obeh verjetnosti:
+
+  
+    
+      
+        P
+        (
+        A
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        )
+        
+        
+        .
+      
+    
+    {\displaystyle P(AB)=P(A)P(B)\!\,.}
+  
+
+Verjetnost preseka (produkta) odvisnih dogodkov se lahko izračuna po formuli:
+
+  
+    
+      
+        P
+        (
+        A
+        B
+        )
+        =
+        P
+        (
+        A
+        )
+        P
+        (
+        B
+        
+          /
+        
+        A
+        )
+        
+        
+        .
+      
+    
+    {\displaystyle P(AB)=P(A)P(B/A)\!\,.}
+  
+
+V zadnji formuli P(B/A) pomeni pogojno verjetnost za dogodek B pri pogoju, da se je pred tem že zgodil dogodek A. Dogodka sta odvisna, če dejstvo, da se je dogodek A že zgodil, vpliva na verjetnost dogodka B. Če dogodek A ne vpliva na dogodek B, potem sta neodvisna.
+
+
+== Glej tudi ==
+verjetnostni račun
+dogodek

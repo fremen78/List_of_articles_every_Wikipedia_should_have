@@ -1,0 +1,114 @@
+Un linguage de programmation es un technica de communication standardisate pro exprimer instructiones a un computator. Illo es un collection de regulas syntactic e semantic usate pro definir programmas de computatores. Un linguage permitte que le programmator specifica con precision super qual typos de dato un computator operara, e que actiones exequer sub varie circumstantias.
+
+
+== Introduction ==
+Le proposito principal del linguages de programmation es permitter que le programmatores exprime lor intento a un computator de un maniera plus facile que per medio de un linguage de basse nivello o codice de machina. Pro iste ration, le linguages de programmation generalmente es designate pro usar syntaxe de alte nivello, que pote esser facilemente communicate o comprendite per programmatores human. Le linguages de programmation es instrumentos importante pro adjutar ingenieros de software a scriber programmas melior plus rapido.
+Comprender linguages de programmation es crucial pro le personas ingagiate in informatica proque hodie tote le typos de computation es realisate con linguages de computator.
+Durante le ultime decades, un grande numero de linguages de computator ha essite create, ha substituite le unes le alteres, e ha essite modificate/combinate.
+Ben que il ha habite plure tentativas de facer un linguage de computator universal que servi a tote le propositos, tote illos ha fallite. Le necessitate de un gamma significative de linguages de computator es causate per le facto que le proposito del linguages de programmation varia desde le disveloppamento de software commercial al uso scientific o como hobby; le discrepantia de competentia inter novicios e expertos es immense, e alcun linguages es excessivemente difficile pro novicios; le programmatores ha preferentias differente; e finalmente, le costo acceptabile de tempore de execution pote esser multo differente pro programmas executante in un microcontrolator e programmas executante in un supercomputator.
+Il ha multe linguages de proposito special, pro uso in situationes special: PHP es un linguage de programmation de scripts specialmente apte pro disveloppamento pro le Web; Perl es convenibile pro manipulation de textos; le linguage C ha essite amplemente usate pro le disveloppamento de systemas de operation e compilatores (le assi-nominate programmation de systemas).
+Le linguages de programmation rende le programmas de computatores minus dependente de machinas e ambientes particular. Isto occurre proque le linguages de programmation es convertite in codice de machina specific pro un machina particular in vice de esser executate directemente per le machina. Un objectivo ambitiose de FORTRAN, un del prime linguages de programmation, era iste independentia de machina.
+Le majoritate del linguages pote esser e compilate e interpretate, mais le majoritate functiona melior con o le un o le altere methodo. In alcun systemas de programmation, le programmas es compilate in multiple stadios, in un varietate de representationes intermediari. Typicamente, le stadios posterior del compilation es plus proxime al codice de machina que le stadios initial. Un variation commun de iste strategia de implementation, usate le prime vice per BCPL in fines del decade de 1960, era compilar programmas in un representation intermediari appellate "O-code" pro un machina virtual, que era posteriormente compilate pro le machina real. Iste strategia successose era usate posteriormente per Pascal con le P-code e per Smalltalk con le byte code, ben que in multe casos le codice intermediari era interpretate in vice de esser compilate.
+Si le mechanismo de traduction usate traduce le texto del programma como un toto e alora executa le formato interne, iste mechanismo se denomina compilation. Consequentemente , le compilator es un programma que recipe le texto del programma legibile per humanos (denominate codice fonte) como dato de entrata e produce codice objecto como exita. Le codice objecto resultante pote esser un codice de machina que essera executate directemente per le UCP del computator, o illo pote esser un codice conforme al specification de un machina virtual.
+Si le codice del programma es traducite in tempore de execution, con cata passo traducite essente executate immediatemente, le mechanismo de traduction es denominate interpretation. Le programmas interpretate usualmente executa plus lentemente que le programmas compilate, mais illos ha plus flexibilitate proque illos es capace de interager con le ambiente de execution. Vide linguage interpretate pro detalios. Ben que le definition non es identic, istes typicamente cade in le categoria de linguages de programmation de scripts.
+
+
+== Characteristicas de un linguage de programmation ==
+Cata linguage de programmation pote esser imaginate como un collection de specificationes formal referente a syntaxe, vocabulario e significato.
+Usualmente iste specificationes include:
+
+Datos e structuras de datos
+Instructiones e fluxo de controlo
+Mechanismos de referentia e reuso
+Philosophia de designo
+Le majoritate del linguages que es amplemente usate, o ha essite usate per un considerabile periodo de tempore, ha organos de standardisation que se reuni regularmente pro crear e publicar definitiones formal del linguage, e discuter le extension o supplementation del definitiones ja existente.
+
+
+=== Datos e structuras de datos ===
+Internemente, tote le datos in un computator digital moderne es immagazinate simplemente como statos active-inactive (binari). Typicamente le datos representa informationes del mundo real, tales como nomines, contos bancari e mesuras, e assi le datos binari de basse nivello es organisate per le linguages de programmation in iste conceptos de alte nivello.
+Le systema particular per le qual le datos es organisate in un programma es le systema de typos del linguage de programmation; le designo e le studio del systemas de typos es denominate theoria del typos. Le linguages pote esser classificate como de typage static o de typage dynamic. Linguages de typage dynamic pote esser ulteriormente subdividite in linguages que manifesta typos, ubi cata declaration de variabile e function ha su typo declarate explicitemente, e linguages de typo inferite. Es possibile realisar un inferentia de typos in programmas scribite in un linguage de typage dynamic, mais es equalmente possibile scriber programmas in iste linguages que rende le inferentia de typos impracticabile. A vices le linguages de typo inferite e de typage dynamic es denominate de typage latente.
+Con linguages de typage static usualmente il ha typos predefinite pro elementos de datos individual (tales como numeros intra un certe intervallo, catenas de litteras, etc.), e le valores nominate programmaticamente (variabiles) pote haber un sol typo fixe, e permitter certe operationes: numeros non pote devenir nomines e vice versa. Exemplos de tal linguages es: C, C++ e Java.
+Le linguages de typage dynamic tracta tote le positiones de datos intercambiabilemente, de maniera que operationes improprie (como summar nomines o ordinar numeros alphabeticamente) non causara errores usque al tempore de execution. Exemplos de tal linguages es: Lisp, JavaScript, Tcl e Prolog.
+Le linguages de typo inferite superficialmente tracta tote le datos como si illos non ha un typo, mais de facto illo face un analyse sophisticate del maniera como le programa usa le datos pro determinar que operationes elementar es effectuate super le datos, e finalmente deduce que typo le variabiles ha in tempore de compilation. Le linguages de typo inferite pote esser plus flexibile a usar, durante que illos crea programmas plus efficiente; totevia, iste capacitate es difficile de includer in le implementation de un linguage de programmation, assi illo es relativemente rar. Exemplos de tal linguages es: MUMPS e ML.
+A vices le linguages de typage static es denominate [type-safe] o fortemente typate, e le linguages de typage dynamic es denominate [untyped] o debilemente typate; confundentemente, le mesme terminos tamben es usate pro referer se al distinction inter le linguages in le quales es impossibile usar un valor como un valor de altere typo e possibilemente corrumper datos de un altere parte del programma o inducer le systema al collapso, e le linguages in le quales es possibile facer lo. Exemplos de linguages fortemente typate es: Eiffel, Oberon, Lisp, Scheme, linguage de assemblage, C++ e le majoritate del implementationes de Pascal.
+Le majoritate del linguages tamben provide manieras de construer structuras de datos complexe desde typos elementar e associar nomines a iste nove typos combinate (usante arrangiamentos, listas, pilas, files).
+Le linguages orientate a objectos permitte que le programmator defini typos de datos denominate "objectos" que ha lor proprie functiones e variabiles intrinsec (respectivemente denominate "methodos" e "attributos"). Un programma que contine objectos permitte que le objectos opera como subprogrammas indepentente mais interagente: iste interaction pote esser designate in tempore de codification pro modelar o simular objectos interagente del mundo real. Iste es un functionalitate multo utile e intuitive. Linguages tal como Python e Ruby se ha disveloppate como linguages OO (orientate a objectos). Illos es relativemente facile de apprender e usar, e gania popularitate in le circulos de programmation professional, essente equalmente accessibile a non professionales. Iste linguages plus intuitive ha augmentate le disponibilitate public e le poter del applicationes de computator personalisate.
+A parte de quando e como le correspondentia inter expressiones e typos es determinate, il ha tamben le question crucial de que typos le linguage defini del toto, e que typos illo permitte como valores de expressiones (valores expresse) e como valores nominate (valores denotate). Linguages de basse nivello como C typicamente permitte que le programmas nomina positiones de memoria, regiones de memoria, e constantes de tempore de compilation, durante que illo permitte que le expressiones retorna valores capace de conformar se intra le registros del machina; le C de ANSI extendeva isto, permittente que le expressiones retornava valores struct tamben. Le linguages functional frequentemente permitte que le variabiles nomina valores computate in tempore de execution directemente in vice de nominar positiones de memoria ubi valores pote esser immagazinate. Le linguages que usa collecta de immunditias es libere pro permitter structuras de datos arbitrarimente complexe e como valores expresse e como valores denotate.
+
+Finalmente, in alcun linguages, proceduras es permittite solo como valores denotate (illos non pote esser retornate per expressiones o ligate a nove nomines); in alteres, illos pote esser passate como parametros a subroutines, mais non pote alteremente esser ligate a nove nomines); in alteres, illos es liberemente usate como qualcunque valor expresse, mais nove proceduras non pote esser create in tempore de execution; e in ancora alteres, illos es valores de prime classe que pote esser create in tempore de execution.
+
+
+=== Instruction e fluxo de controlo ===
+Post que le datos ha essite specificate, le machina debe esser instruite a proposito de como effectuar operationes super le datos. Declarationes elementari pote esser specificate per medio de parolas clave o esser indicate per medio de un structura grammatical ben definite. Cata linguage prende unitates de iste declarationes ben comportate e los combina per medio de un systema de ordination. Dependente del linguage, existe methodos differente de aggruppar iste declarationes elementari. Isto permitte scriber programmas que es capace de coperir un grande varietate de datos de entrata, in vice de esser limitate a un micre numero de casos. Additionalmente, ultra le instructiones de manipulation de datos, altere instructiones typic de un linguage es illes usate pro controlar le processamento (ramificationes, definitiones per casos, ciclos, backtracking, composition functional).
+
+
+=== Mechanismos de referentia e reuso ===
+Le nucleo del idea de referentia es que il debe haber un methodo de designar spatios de immagazinage indirectemente. Le methodo le plus commun es per medio de variabiles nominate. Dependente del linguage, un indirection ulterior pote includer referentias que es punctatores a un altere spatio de immagazinage immagazinate in tal variabiles o gruppos de variabiles. Similar a iste methodo de nominar spatios de immagazinage es le methodo de nominar gruppos de instructiones. Le majoritate del linguages de programmation usa invocationes de macros, invocationes de proceduras o invocationes de functiones como le declarationes que usa iste nomines. Usar nomines symbolic de iste maniera permitte que un programma acquire un flexibilitate significative, assi como un alte grado de reusabilitate. Referentias indirecte a programmas disponibile o divisiones de datos predefinite permitte que multe linguages orientate a applicationes integra operationes typic como si le linguage de programmation los includeva como instructiones de alte nivello.
+
+
+=== Philosophias de designo ===
+Pro le propositos mentionate previemente, cata linguage ha essite disveloppate usante un designo o philosophia special. Un o altere aspecto es particularmente accentuate per le maniera como le linguage usa le structuras de datos, o per le qual su notation special incoragia certe manieras de resolver problemas o exprimer lor structura.
+Proque le linguages de programmation es linguages artificial, illos require un alte grado de disciplina pro specificar con precision qual operationes es desirate. Le linguages de programmation non es tolerante a errores; totevia, le onere de recognoscer e usar le vocabulario special es reducite per messages de adjuta generate per le implementation del linguage de programmation. Il ha alcun linguages que offere un alte grado de libertate in permitter automodification, in le qual un programma rescribe partes de se mesme pro tractar nove casos. Typicamente, solo le linguage de machina e membros del familia Lisp (Common Lisp, Scheme) provide iste capacitate. Alcun linguages tal como MUMPS e Perl permitte le modification de structuras de datos que contine fragmentos de programma, e provide methodos pro transferer le controlo del programma a iste structura de datos; linguages que supporta ligation e carga dynamic tal como C, C++, e linguage Java pote emular automodification per incorporar un micre compilator o invocar un compilator externe e ligar le codice objecto resultante. Le interpretation de codice per medio del recompilation in tempore real es denominate recompilation dynamic; emulatores e altere machinas virtual exploita iste technica pro attinger un melior rendimento.
+Il ha varie manieras de classificar linguages de programmation. Le distinctiones non es precise; un linguage particular pote esser implementate in multiple classificationes. Per exemplo, un linguage pote haber implementationes e compilate e interpretate.
+
+
+== Historia del linguages de programmation ==
+Frequentemente Charles Babbage recipe le credito pro designar le prime machinas similar a computatores, que habeva varie programmas scribite pro illos (in le equivalente de un linguage de montage) per Ada Lovelace.
+Alan Turing usava le concepto theoric de un machina de Turing que se comportava in principio sub tote le aspectos relevante como le computatores moderne, conforme al programma de basse nivello que es introducite.
+In le decade de 1940 quando le prime computatores era create, le programmatores debeva operar le machinas a mano. Avantiamentos in le technologia electronica in le initio del seculo 20 duceva al construction de computatores electronic practic. In ille tempore, le computatores era extrememente grande e dispendiose. Solo Konrad Zuse imaginava le uso de un linguage de programmation (finalmente disveloppate como Plankalkül) como illos de hodie pro resolver problemas.
+Disveloppamentos subsequente in le technologia electronic (transistores, circuitos integrate e microchips) propelleva le disveloppamento de computatores plus digne de confidentia e usabile, con varie linguages de programmation standardisate pro executar super illos. Isto duceva al disveloppamento exponential massive que resultava in le Internet, le ubiquitate del computatores personal, e le accessibilitate augmentate de linguages de programmation de computatores tal como Python, Visual Basic, etc.
+A mesura que le costo del computatores ha cadite significativemente e le complexitate del programmas de computator ha augmentate dramaticamente, ha devenite evidente que le tempore de disveloppamento es plus valorose que le tempore de computation.
+Nove ambientes de disveloppamento visual e integrate ha apportate un clar progresso. Illos ha reducite le dispensa de tempore, moneta (e nervos). Frequentemente le regiones del schermo que controla le programma pote esser arrangiate interactivemente. Fragmentos de codice pote esser invocate simplemente per cliccar super un controlo. Le labor tamben es facilitate per componentes prefabricate e bibliothecas de software con codice reusabile.
+Linguages recente emphatisa nova functionalitates, como {mix-ins}, delegation, e aspectos.
+Le methodologia orientate a objectos pote reducer substantialmente le complexitate del programmas.
+
+
+== Paradigmas de programmation ==
+Un paradigma de programmation es un paradigma usate pro programmar programma de computator o plus generalmente software o systemas de software. Illo da le vision que le programmator ha del execution del programma: por exemplo, in le caso del programmation orientate a objectos, le programmator vide le execution del programma como un collection de objectos dialogante.
+Frequentemente un paradigma de programmation es intimemente connectite a un certe schola de architectura de software, ingenieria de software, o similar.
+Frequentemente un paradigma de programmation es associate a un certe familia de linguages de programmation. Le majoritate del linguages supporta un sol paradigma, mais alcun linguages es capace de supportar plure.
+
+Programmation structurate
+Programmation imperative
+Programmation procedural
+Programmation functional
+Programmation orientate a objectos
+Programmation orientate a componentes
+Patrono:Constraint programming (Programmation logic)
+Programmation orientate a aspectos
+
+
+== Linguages ==
+Le linguages sequente es linguages major usate per varie centos de milles a varie milliones de programmatores in tote le mundo:
+
+Ada
+BASIC
+QBASIC
+Visual Basic
+COBOL
+C
+C++
+C#
+Java
+JavaScript
+FORTRAN
+Delphi
+Perl
+PHP
+Postscript, que se derivava de Forth
+Python
+Ruby
+Scheme – un variante de Lisp
+Smalltalk
+
+
+== Vide etiam ==
+Appendice:Lista de linguages de programmation
+Typos de linguages de programmation
+Linguage de programmation dynamic
+Compilator
+Ligation
+Hello World, exemplos de un programma simple in varie linguages de programmation
+
+
+== Referentias ==

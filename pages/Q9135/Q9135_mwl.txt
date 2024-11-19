@@ -1,0 +1,218 @@
+Un sistema ouperatibo ó inda software de sistema ye un porgrama ó un cunjunto de porgramas cuja funçon ye gerenciar ls recursos de l sistema (defenir qual porgrama recibe atençon de l processador, gerenciar mimória, criar un sistema d'arquibos, etc.), fornecendo ua anterface antre l cumputador i l usuairo. Ambora puoda ser eisecutado eimediatamente passado la máquina ser ligada, la maiorie de ls cumputadores pessonales d'hoije l'eisecuta atrabeç d'outro porgrama armazenado nua mimória nó-bolátil ROM chamado BIOS nun porcesso chamado "botstrapping", cunceito an anglés ousado para chamar porcessos outo-sustentables, ó seia, capazes de prosseguiren sin ajuda sterna. Passado eisecutar testes i ampeçar ls cumponentes de la máquina (monitores, çcos, etc), l BIOS percura pul sistema ouperacional an algua ounidade d'armazenamiento, giralmente l Çco Rígido, i a partir dende, l sistema ouperacional "toma" l cuntrole de la máquina. L sistema ouperacional rebeza sue eisecuçon cula d'outros porgramas, cumo se stubisse bigiando, cuntrolando i orquestrando to l porcesso cumputacional.
+Segundo alguns outores (Silberschatç eit al, 2005; Stallings, 2004; Tanenbaun, 1999), eisisten dous modos çtintos de cunceituar un sistema ouperacional:
+
+bison top-down pula perspetiba de l'usuairo ó porgramador: ye ua abstraçon de l hardware, fazendo l papel d'antermediairo antre l software (porgramas) i ls cumponentes físicos de l cumputador, l (hardware); ó
+nua bison botton-up, de baixo para cima: ye un gerenciador de recursos, i.i., que cuntrola quales aplicaçones (porcessos) puoden ser eisecutadas, quando dében ser eisecutadas i quales recursos (mimória, çco, periféricos) puoden ser outelizados.
+La sigla usual para chamar esta classe de porgramas ye SO (de l pertués, Sistema Ouperacional ó Ouperatibo) ó OS (de l'anglés Ouperating Systen).
+
+
+== Stória ==
+
+Na purmeira geraçon (aprossimadamente 1945-1955), ls cumputadores éran tan grandes qu'acupában salas eimensas. Fúrun basicamente custruídos cun bálbulas i painéis, i ls sistemas ouperacionales "nun eisistian". Ls porgramadores, que tamien éran ls ouperadores, cuntrolában l cumputador por meio de chabes, filos i luzes d'abiso.
+Nomes cumo Howard Aiken (Harbard), John bon Neumann (Anstituto de Studos Abançados de Princeton), John Adan Presper Eckert Jr i William Mauchley (Ounibersidade de la Pennsylbania) i Konrad Zuse (Almanha) formórun, cun sues cuntribuiçones, la base houmana pa l sucesso na custruçon de ls cumputadores primitibos. Na geraçon seguinte (aprossimadamente 1955-1965), fúrun criados ls sistemas an lote (batch systems), que permitiran melhor uso de ls recursos cumputacionales. La base de l sistema ouperacional era un porgrama monitor, ousado para anfileirar tarefas (jobs). L'usuairo fui afastado de l cumputador; cada porgrama era scrito an cartones perfurados, que por sue beç éran carregados, juntamente cul respetibo cumpilador (normalmente Fortran ó Cobol), por un ouperador, que por sue beç usaba ua lenguaige de cuntrole chamada JCL (job cuntrol language).
+Ne l'ampeço de la cumputaçon ls purmeiros sistemas ouperacionales éran únicos, pus cada mainframe bendido necessitaba dun sistema ouperacional specífico. Esse porblema era resultado d'arquiteturas defrentes i de la lenguaige que cada máquina outelizaba. Passado essa fase, ampeçou-se la pesquisa de sistemas ouperacionales qu'outomatizassen la troca de tarefas (jobs), pus ls sistemas éran monousuairos i tenien cartones perfurados cumo antrada (eliminando, assi, l trabalho de pessonas que éran cuntratadas solo para trocar ls cartones perfurados).
+Diç-se que Alan Turing era un mestre ne ls purmeiros Manchester Mark I, i el yá staba deribando la cuncepçon primitiba dun sistema ouperacional a partir de ls percípios de la máquina de Turing ounibersal.
+Un de ls purmeiros sistemas ouperacionales de propósito giral fui l CTSS, zambolbido ne l MIT. Passado l CTSS, l MIT, ls laboratórios Bell de la AT&T i la General Eiletric zambolbírun l Multics, cujo oubjetibo era suportar cientos d'usuairos. Anque de l fracasso comercial, l Multics serbiu cumo base pa l studo i zambolbimiento de sistemas ouperacionales. Un de ls zambolbedores de l Multics, que trabalhaba pa la Bell, Ken Thompson, ampeçou a rescrebir l Multics nun cunceito menos ambicioso, criando l Unics (an 1969), que mais tarde passou a chamar-se Unix. Ls sistemas ouperacionales éran giralmente porgramandos an assembly, até mesmo l Unix an sou ampeço. Anton, Dennis Ritchie (tamien de la Bell) criou la lenguaige C a partir de la lenguaige B, qu'habie sido criada por Thompson. Finalmente, Thompson i Ritchie rescrebírun l Unix an C. L Unix criou un ecossistema de bersones, adonde çtacan-se: Systen B i deribados (HP-UX, AIX); família BSD (FreBSD, NetBSD, OupenBSD, etc.), Linux i até l Mac OS X (que deriba de l Mach i FreBSD).
+Na década de 1970, quando ampeçórun a aparecer ls cumputadores pessonales, houbo la necidade dun sistema ouperacional d'outelizaçon mais fácele. An 1980, William (Bill) Gates i sou colega de faculdade, Paul Allen, fundadores de la Microsoft, cumpran l sistema QDOS ("Quick and Dirty Ouperating Systen") de Tin Paterson por $50.000, batizan nel de DOS (Çk Ouperating Systen) i benden licenças a la IBM. L DOS bendiu muitas cópias, cumo l sistema ouperacional padron pa ls cumputadores pessonales zambolbidos pula IBM. IBM i Microsoft fazerien, inda, ua parcerie pa l zambolbimiento dun sistema ouperacional multitarefa chamado OS/2. Passado la fin de la brebe parcerie la IBM seguiu solica ne l zambolbimiento de l OS/2.
+Ne l'ampeço de la década de 1990, un studante de cumputaçon finlandés postou un comentairo nua lista de çcusson de la Usenet dezindo que staba zambolbendo un núcleo de sistema ouperacional i preguntou se alguien gustarie d'auxeliá-lo na tarefa. Este studante chamaba-se Linus Torbalds i l purmeiro passo an direçon al tan coincido Linux fui dado naquel momiento.
+
+
+== Ls sistemas ouperacionales mais outelizados ne l Mundo ==
+
+
+== Outros sistemas ouperacionales libres ==
+
+
+== Bison giral ==
+Eesisten bários sistemas ouperatibos; antre eilhes, ls mais outelizados ne l die la die, normalmente outelizados an cumputadores domésticos, son l Windows, Linux i Mac OS X. 
+
+Un cumputador cul sistema ouperatibo anstalado poderá nun dar acesso a to l sou cuntenido dependendo de l'outelizador. Cun un sistema ouperatibo, podemos stablecer permissones a bários outelizadores que trabalhan cun este. Eesisten dous tipos de cuntas que puoden ser criadas nun sistema ouperatibo, las cuntas de Admenistrador i las cuntas lemitadas.
+La cunta Admenistrador ye ua cunta qu'ouferece to l'acesso a la máquina, zde la geston de pastas, fexeiros i software de trabalho ó antretenimiento al cuntrole de to l sou Hardware anstalado. 
+La cunta Lemitada ye ua cunta que nun ten permissones para aceder l'alguas pastas ó anstalar software que seia anstalado na raiç de l sistema ó anton que tenga ligaçon cun algun Hardware qu'altare l sou funcionamiento normal ó personalizado pul Admenistrador. Para qu'este tipo de cunta puoda tener acesso a outros cuntenidos de l çco ó de software, l'admenistrador poderá personalizar la cunta ouferecendo permissones l'alguas funçones de l sistema cumo tamien poderá retirar acessos la ciertas árias de l sistema.
+L sistema ouperatibo funciona cula ampeçaçon de porcessos qu'este eirá percisar para funcionar corretamente. Esses porcessos poderán ser fexeiros que necessitan de ser frequentemente atualizados, ó fexeiros que processan dados úteles pa l sistema.
+Poderemos tener acesso a bários porcessos de l sistema ouperatibo a partir de l gestor de tarefas, adonde se ancontran todos ls porcessos que stan an funcionamiento zde l'arranque de l sistema ouperatibo até la sue outelizaçon atual. Puode-se tamien bisualizar l'outelizaçon de a mimória por cada porcesso, ne l causo de l sistema ouperatibo ampeçar a amostrar erros ó falhas d'acesso la porgramas tornando-se lento, puode-se berificar ne l gestor de tarefas qual de ls porcessos stará bloqueado ó cun eilebado númaro de processamiento que stá a afetar l funcionamiento normal de a mimória.
+
+
+== Sistemas Ouperacionales Modernos ==
+Un sistema cumputacional moderno cunsiste nun ó mais processadores, mimória percipal, çcos, ampressoras, botoneira, mouse, monitor, anterfaces de rede i outros çpositibos d'antrada i salida. Anfin, ye un sistema cumplexo.
+Un de ls cunceitos mais fundamentales de ls Sistemas Ouperacionales Modernos ye la çtinçon antre l porgrama i l'atebidade d'eisecutá-lo. L porgrama ye solo un cunjunto stático de diretrizes i sue eisecuçon ye ua atebidade dinámica
+Outra de las defrenças que podemos ouserbar antre un sistema ouperacional i aplicaçones cumbencionales ye la forma cun que sues rotinas son processadas an funçon de l tiempo. Un sistema ouperacional nun ye eisecutado de forma struturada. Sues rotinas son eisecutadas cuncorrentemente an funçon d'eibentos assíncronos. An outras palabras, eibentos que puoden ocorrer la qualquiera momiento.
+
+
+== Funcionamiento ==
+Un sistema ouperacional ten las seguintes funçones: 
+
+gerenciamiento de porcessos;
+gerenciamiento de mimória;
+sistema d'arquibos;
+antrada i salida de dados.
+
+
+=== Gerenciamiento de porcessos ===
+L sistema ouperacional multitarefa ye preparado para dar al usuairo l'eiluson que l númaro de porcessos an eisecuçon simultánea ne l cumputador ye maior que l númaro de processadores anstalados. Cada porcesso recibe ua fatie de l tiempo i l'altarnáncia antre bários porcessos ye tan rápida que l'usuairo pensa que sue eisecuçon ye simultánea. 
+San outelizados algoritmos para detreminar qual porcesso será eisecutado an detreminado momiento i por quanto tiempo. 
+Ls porcessos puoden quemunicar-se, esto ye coincido cumo IPC (Anter-Process Communication). Ls macanismos giralmente outelizados son:
+
+senhales;
+pipes;
+named pipes;
+mimória cumpartilhada;
+soquetes (sockets);
+trocas de mensaiges.
+L sistema ouperacional, normalmente, debe possibelitar l multiprocessamiento (SMP ó NUMA). Neste causo, porcessos defrentes i threads puoden ser eisecutados an defrentes processadores. Para essa tarefa, el debe ser rentrante i anterrompible, l que senefica que puode ser anterrompido ne l meio de l'eisecuçon dua tarefa.
+
+
+=== Gerenciamiento de mimória ===
+
+L sistema ouperacional ten acesso cumpleto a a mimória de l sistema i debe permitir que ls porcessos de ls usuairos téngan acesso siguro a a mimória quando l requesitan. 
+
+Bários sistemas ouperacionales úsan mimória birtual, que ten 3 funçones básicas: 
+
+assegurar que cada porcesso tenga sou própio spácio d'andereçamiento, ampeçando an zero, para eibitar ó resulber l porblema de relocaçon (Tanenbaun, 1999);
+prober proteçon de a mimória para ampedir qu'un porcesso outelize un andereço de mimória que nun le pertença;
+possibelitar qu'ua aplicaçon outelize mais mimória de l que la fesicamente eisistente.
+
+
+==== Swapping ====
+Drento de gerenciamiento de mimória, puode nun ser possible manter todos ls porcessos an mimória, muitas bezes por nun eisistir mimória suficiente para alocar aquel porcesso. Para solucionar esse porblema eisiste un macanismo chamado swapping, adonde la geréncia de mimória reserba ua ária de l çco pa l sou uso an detreminadas situaçones, i un porcesso ye cumpletamente copiado de a mimória pa l çco; este porcesso ye retirado de la fila de l processador i mais tarde será outra beç copiado pa a mimória; Anton, l porcesso quedará atibo na fila outra beç. L resultado desse rebezamiento ne l çco ye que l sistema ouperacional cunsegue eisecutar mais porcessos de l que caberie nun mesmo anstante na mimória. Swapping ampone als porgramas un grande custo an tenermos de tiempo d'eisecuçon, pus ye necessairo copiar to l porcesso pa l çco i mais tarde copiar outra beç to l porcesso pa a mimória. An sistemas adonde l'usuairo anterage cul porgrama durante sue eisecuçon, l macanismo de swapping ye outelizado an radadeiro causo, quando nun se ye possible manter todos ls porcessos na mimória, bisto que la queda ne l zampenho de l sistema ye eimediatamente sentida pul usuairo.
+
+
+=== Sistema d'arquibos ===
+La mimória percipal de l cumputador ye bolátil, i sou tamanho ye lemitado pul custo de l hardware. Assi, ls usuairos necessitan d'algun método para armazenar i recuperar anformaçones de modo permanente.
+Un arquibo ye un cunjunto de bytes, normalmente armazenado nun çpositibo periférico nun bolátil (p.s., çco), que puode ser lido i grabado por un ó mais porcessos.
+
+
+== Tipos de Sistemas ==
+
+
+=== Sistemas multi-processadores ===
+Ls sistemas multi-processadores – dous ó mais processadores trabalhando juntos – puoden ser debedidos an dues partes:
+
+Sistemas fuortemente acoplados;
+Sistemas fracamente acoplados.
+Drento de sistemas fuortemente acoplados – mimória única cumpartilhada por dous ó mais processadores, tenendo un mesmo sistema ouperacional gerenciando todos ls processadores –, ancontramos mais dues debisones:
+
+Sistemas simétricos – adonde ls processadores ténen la mesma funçon;
+Sistemas assimétricos – adonde un processador (mestre) puode eisecutar serbícios de l sistema ouperacional.
+Drento de sistemas fracamente acoplados – mais de dous sistemas ouperacionales que son ligados por canhal de quemunicaçon, tenendo hardware i sistemas ouperacionales andependientes –, eisisten mais dues debisones:  
+
+Sistemas ouperacionales de rede – cada sistema, tamien chamado host ó nuolo, ten sous própios recursos d'hardware, cumo processadores, mimória i çpositibos d'antrada i salida. Ls nós son totalmente andependientes de ls treminales, sendo anterconetados por ua rede de quemunicaçon de dados, formando ua rede de cumputadores.
+Ls sistemas ouperacionales de rede son outelizados tanto an redes locales (Local Area Network - LAN), cumo an redes çtribuídas (Wide Area Network - WAN). La ligaçon antre ls dibersos nós ye feita por ua anterface de rede que permite l'acesso als demales cumponentes de la rede. Nun eisiste un lemite mássimo pa l númaro de nós que puoden fazer parte dua rede de cumputadores.
+Cada nuolo ye totalmente andependiente de ls demales, tenndo sou própio sistema ouperacional i spácio d'andereçamiento. Ls sistemas ouperacionales puoden ser heiterogéneos. Na Anterneta, cada host puode star processando un sistema ouperacional defrente, mas todos stan se quemunicando atrabeç de l mesmo protocolo de rede, ne l causo, ls protocolos de la família TCP/IP (Trasmission Cuntrol Protocol/Anterneta Protocol).
+
+Sistemas ouperacionales çtribuídos – cumputadores andependientes que parécen un único cumputador als uolhos de l'usuairo; Trata-se dun cunjunto de porcessos que son eisecutados de forma cuncorrente, cada un de ls quales acessando un subconjunto de recursos de l sistema. I essa quemunicaçon ye feita an forma d'ambio de mensaiges.
+
+
+== Anterface d'uso ==
+Ls sistemas ouperacionales fornecen abstraçon de hardware para que sous recursos puodan ser ousados de maneira correta i padronizada, mas para ser possible ouperar un cumputador, ye necessairo fornecer tamien ua anterface para que l'usuairo puoda çfrutar de ls recursos de l sistema. Atualmente las percipales anterfaces d'uso son las seguintes:
+
+
+=== Anterface de treminal ===
+La anterface de treminal, tamien chamada "CLI" (Command Line Anterface) funciona sclusibamente cun botoneira i mouse. Ls comandos son digitados a partir dun promt i son anterpretados por un anterpretador de comandos, coincidos tamien por shells, bastante quemuns an sistemas padron POSIX. Un eisemplo d'anterpretador de comandos serie l Bash.
+Ousada giralmente por usuairos abançados i an atebidades specíficas, cumo gerenciamiento remoto, outeliza poucos recursos de hardware an cumparaçon l'anterface gráfica.
+
+
+=== Anterface textual ===
+
+Assi cumo l'anterface de treminal, l'anterface textual tamien ye baseada an testo, mas tamien ten a la çposiçon un ambiente de trabalho cumpuosto por menus, jinelas i botones. Esse tipo d'anterface tenie un uso difundido an aplicaçones baseadas ne l MS-DOS, que, anclusibe, nas bersones mais recentes cuntaba cun un gerenciador de porgramas i arquibos baseados nesse tipo d'anterface (l DOS Shell). Atualmente essa anterface ye mui rala, praticamente restrita la sistemas amplementados na década de 1980 i ampeço de la década de 1990. Esse ambiente inda prescinde de l'uso mouse, ambora seia possible usá-lo atrabeç de l'uso de la biblioteca ncurses ne l zambolbimiento de ls softwares.
+
+
+=== Anterface gráfica ===
+Nesse tipo de anterface, tamien chamada GUI (Graphic User Anterface) para alhá de menus, jinelas i botones tamien eisisten figuras, tanto betoriales quanto retratos. L'usuairo anterage cun esse tipo de anterface usando l mouse, podendo tamien ousar l botoneira i botones d'atalho, ó anton usando toques i géstios an touchscrenes. Ye possible fazer to tipo de tarefa usando anterface gráfica, cumo eidiçon de bídeos i eimaiges, sendo solamente alguns tipos mui specíficos de tarefas que se saen melhor an linha de comando. Acrecentar facelidade d'uso i agelidade ye l'oubjetibo de l'anterface gráfica, tenendo la zbantaige de cunsumir mui mais mimória qu'anterfaces de linha de comando. Al cuntrairo de las anterfaces textuales i de treminal, las anterfaces gráficas dependen dun serbidor gráfico para funcionar i se quemunicar cul sistema, i ne l causo de ls sistemas para çktops i latops, anclui un gerenciador de jinelas an muitos causos, para que seia possible ousar mais dun aplicatibo na mesma tela. An sistemas padron POSIX ye quemun eisistir mais dun ambiente gráfico pa l mesmo sistema, podendo ser scolhido la critério de l'usuairo. 
+
+
+=== Anterface de boç ===
+Anterfaces de boç, ó BUI (Boice User Anterface), son aqueilhas an que l'usuairo anterage cul sistema por meio de comandos sonoros. Sendo de zambolbimiento relatibamente recente, ten sue aplicaçon an çpositibos adatados para ciegos i ténen aparecido tamien an smartphones i tablets recentemente.
+
+
+== Classeficaçones ==
+
+An relaçon al sou porjeto (arquitetura), segundo Tanenbaun (1999):
+
+Núcleo monolítico ó monobloco: l núcleo cunsiste nun único porcesso eisecutando nua mimória protegida (spácio de núcleo) eisecutando las percipales funçones. S.: MAC OS X, OS/2, Windows, Linux, FreBSD.
+Micronúcleo ó modelo cliente-serbidor: l núcleo cunsiste de funçones mínimas (quemunicaçon i gerenciamiento de porcessos), i outras funçones, cumo sistemas d'arquibos i gerenciamiento de mimória, son eisecutadas ne l spácio de l'usuairo cumo serbícios; las aplicaçones (porgramas) son ls clientes. S.: GNU Hurd, Mach.
+Sistema an camadas: funçones de l núcleo eiran eisecutar an camadas çtintas, d'acuordo cun sou nible de prebilégio. S.: Multics.
+Monitor de máquinas birtuales: fornece ua abstraçon de l'hardware para bários sistemas ouperacionales. S.: BM/370, BMware, Xen.
+Quanto al gerenciamiento de porcessos, puode-se ousar la seguinte classeficaçon:
+
+Monotarefa: puode-se eisecutar solo un porcesso de cada beç S.: MS-DOS.
+Multitarefa: para alhá de l própio SO, bários porcessos d'outelizador (tarefas) stan carregados an mimória, sendo qu'un puode star acupando l processador i outros quedan anfileirados, aguardando la sue beç. L cumpartilhamiento de tiempo ne l processador ye feito de modo que l'usuairo tenga l'ampresson que bários porcessos stan sendo eisecutados a la par. Cada porcesso recibe un tiempo para ser eisecutado. Al final desse tiempo, outro porcesso ye eisecutado. Essa altarnáncia de porcessos chama-se cuncorréncia.
+Multitarefa coperatiba: Eisecuta dous ó mais porgramas an simultáneo mas l porgrama que stá an purmeiro praino ten cuntrolo subre l processador. Neste causo se este porgrama falhar bloqueia l cumputador i ten que ser reniciado. Eisempo de SO: Windows 3.x i bersones anteriores al Mac OS 8.
+Multitarefa prempetiba: Ye l processador que cuntrola l'eisecuçon de ls porgramas, desta forma permite al sistema ouperatibo recuperar l cuntrolo causo un porgrama bloqueie. L'outelizador perde ls trabalhos de l porgrama que falhou mas ls restantes porgramas cuntinan a trabalhar. Eisemplo de SO: Unix; Linux; Windows 95 i superiores; MAC OS 8 i superiores; etc.
+Eilemiento de lista cun marcas:
+S: OS/2, Windows, Linux, FreBSD i l Mac OS X. Cabe çtacar que porcessos solo puoden star eisecutando a la par causo l sistema seia multiprocessado, yá que, an que cada anstante de tiempo, solo un porcesso stá an eisecuçon nun processador ó núcleo de processamiento (core).
+
+Multiprocessamiento: l SO çtribui las tarefas antre dous ó mais processadores. Se ls processadores stiben na mesma máquina física, l sistema ye chamado de Sistema Multiprocessado Fuortemente Acoplado. Causo steia an máquinas defrentes, trata-se dun Sistema Multiprocessado Fracamente Acoplado.
+Quanto a la cantidade d'usuairos que puoden outelizar l sistema cuncorrentemente:
+
+Monousuário: solo un usuairo por beç (anque poder suportar recursos cumo troca d'usuairo). S.: Windows. Esse tamien puode ser besitado por treminales i conexon remota.
+Multiusuário: bários usuairos úsan l cumputador al mesmo tiempo, seia por dibersos treminales, seia por conexon remota cumo l SSH. S.: Linux, Unix.
+
+
+== Eisemplos de sistemas ouperacionales atibos ==
+
+
+=== Para çktop/serbidores ===
+
+
+=== Para çpositibos mobles (tablets i smartphones) ===
+Android
+Bada
+Blackberry OS
+Firefox OS
+iOS
+Maemo
+Tizen
+Ubuntu Touch
+WebOS
+Windows Phone
+Symbian OS
+RedHat
+
+
+== Unix fui l purmeiro sistema ouperacional moderno ==
+Bisando l porblema de l'ancumpatibelidade de SOs de máquinas çtintas, un grupo de zambolbedores de la AT&T criórun l Unix an 1969, sendo l purmeiro sistema ouperacional moderno de la cumputaçon. 
+Sue purmeira berson fui scrita an lenguaige Assembly, sendo mais tarde rescrita an C ne l'anho de 1973, lenguaige que ye outelizada até ls dies d'hoije. Este sistema antroduziu cunceitos mui amportantes pa la cumputaçon: portabelidade, multi-usuairo, multi-tarefas i cumpartilhamiento de tarefas.
+Durante la década de 70, l Unix fui çtribuído gratuitamente (ancluindo sou código fuonte) para ounibersidades i uorgones gobernamentales norte-amaricanos, l que cunferiu muita popularidade l'este sistema. Sue anterface era totalmente an modo testo sin anterface gráfica.
+An 1977 fui lançado l BSD, sistema ouperacional fuortemente baseado ne l Unix, focado percipalmente pa l'eisecuçon an máquinas specíficas d'alto zampenho, cumo l famoso cumputador BAX, l qual fui ua refréncia d'hardware na época.
+Atualmente, la grande maiorie de ls sistemas ouperacionales son baseados ne l Unix, tanto an çktops quanto an serbidores i an çpositibos mobles, sendo l Windows - líder absoluto ne l mercado de çktops - la mais notable sceçon.
+
+
+== Eisemplos de sistemas ouperacionales amportantes que fúrun çcuntinuados ==
+
+
+=== Para çktops ===
+MS-DOS
+OS/2
+BeOS
+NeXTStep
+CP/M
+Mac OS
+
+
+=== Para çpositibos mobles ===
+MeGo
+Symbian
+Windows Mobile
+
+
+== Refréncias ==
+
+
+== Refréncias bibliográficas ==
+BACH, Maurice J. The zeign of the Unix ouperating systen. Upper Saddle Riber: Prentice Preça de casa. 1990.
+BOBET Daniel P.; CESATI, Marco. Understanding de Linux kernel. 3.ed. Sebastopol: L'Reilly. 2005.
+MCKUSICK, Marshall K.; NEBILLE-NEIL, George B. The zeign and amplementation of the FreBSD ouperating systen. Upper Saddle Riber: Addison-Wesley. 2004.
+RUSSINOBITCH, Mark I.; SOLOMON, David La. Microsoft Windows anternals. 4.ed. Redmond: Microsoft Press. 2005.
+SILBERSCHATZ, Abi; GALBIN, Peter B.; GAGNE, Grieg. Ouperating systen cuncets. 7.ed. Hobooken: Wiley. 2005.
+STALLINGS, William. Ouperating systems: anternals and zeign principles. 5.ed. Upper Saddle Riber: Pearson Prentice Preça de casa. 2004.
+TANENBAUM, Andrew. Sistemas ouperacionales modernos. Riu de Janeiro: LTC. 1999.
+
+
+== Ber tamien ==
+Pseudossistema ouperacional
+Sistema çtribuído
+Lista de sistemas ouperatibos
+Anter-Process Communication
+Sistemas ouperacionales on-line
+Sistema ouperacional an çco

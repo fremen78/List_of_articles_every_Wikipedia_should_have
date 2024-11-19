@@ -1,0 +1,63 @@
+Die numerische Mathematik, auch kurz Numerik genannt, beschäftigt sich als Teilgebiet der Mathematik mit der Konstruktion und Analyse von Algorithmen für kontinuierliche mathematische Probleme. Hauptanwendung ist dabei das näherungsweise Berechnen von Lösungen durch Approximationsalgorithmen mit Hilfe von Computern.
+
+
+== Überblick ==
+Interesse an solchen Algorithmen besteht meist aus einem der folgenden Gründe:
+
+Es gibt zu dem Problem keine explizite Lösungsdarstellung (so zum Beispiel bei den Navier-Stokes-Gleichungen oder dem Dreikörperproblem) oder
+die Lösungsdarstellung existiert, ist jedoch nicht geeignet, die Lösung schnell zu berechnen, oder liegt in einer Form vor, in der Rechenfehler sich stark bemerkbar machen (zum Beispiel bei vielen Potenzreihen).
+Unterschieden werden zwei Typen von Verfahren: Einmal direkte, die nach endlich vielen exakten Rechenschritten die exakte Lösung eines Problems liefern, und auf der anderen Seite Näherungsverfahren, die nur Approximationen liefern. Ein direktes Verfahren ist beispielsweise das gaußsche Eliminationsverfahren, welches die Lösung eines linearen Gleichungssystems liefert. Näherungsverfahren sind unter anderem Quadraturformeln, die den Wert eines Integrals näherungsweise berechnen, oder auch das Newton-Verfahren, das iterativ bessere Approximationen an eine Nullstelle einer Funktion liefert.
+Da in Anwendungen die Lösungen nur auf endliche Genauigkeit benötigt werden, kann ein iteratives Verfahren auch bei der Existenz eines direkten Verfahrens sinnvoller sein, wenn es in kürzerer Zeit eine hinreichende Genauigkeit liefert.
+Unterschiedliche Verfahren werden nach Laufzeit, Stabilität und Robustheit verglichen. Gelegentlich existieren jedoch auch (abweichend von rein numerischen Verfahren) seminumerische Verfahren, die zur Lösung bestimmter Problemklassen besser geeignet sind als unspezialisierte numerische Lösungen.
+
+
+== Geschichte ==
+Der Wunsch, mathematische Gleichungen zahlenmäßig (auch näherungsweise) lösen zu können, besteht seit der Antike. Die alten Griechen kannten bereits Probleme, die sie nur näherungsweise lösen konnten, wie die Berechnung von Flächen (Integralrechnung) oder der Kreiszahl 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+. In diesem Sinne kann Archimedes, der für beide Probleme Algorithmen lieferte, als der erste bedeutende Numeriker bezeichnet werden.
+Die Namen klassischer Verfahren zeigen deutlich, dass der algorithmische und approximative Zugang zu mathematischen Problemen immer wichtig war, um rein theoretische Aussagen fruchtbar nutzen zu können. Konzepte wie Konvergenzgeschwindigkeit oder Stabilität waren auch beim Rechnen per Hand sehr wichtig. So lässt beispielsweise eine hohe Konvergenzgeschwindigkeit darauf hoffen, schnell mit der Berechnung fertig zu werden. Und schon Gauß bemerkte, dass sich seine Rechenfehler beim gaußschen Eliminationsverfahren manchmal desaströs auf die Lösung auswirkten und sie so komplett unbrauchbar machten. Er zog deswegen das Gauß-Seidel-Verfahren vor, bei dem man Fehler durch das Ausführen eines weiteren Iterationsschrittes leicht ausgleichen konnte.
+Um das monotone Durchführen von Algorithmen zu erleichtern, wurden im 19. Jahrhundert mechanische Rechenmaschinen entwickelt und schließlich in den 1930er-Jahren der erste Computer von Konrad Zuse. Der Zweite Weltkrieg beschleunigte die Entwicklung dramatisch und insbesondere John von Neumann trieb im Rahmen des Manhattan-Projekts sowohl mathematisch als auch technisch die Numerik voran. Die Zeit des Kalten Krieges war vor allem von militärischen Anwendungen wie Wiedereintrittsproblemen geprägt, doch die Steigerung der Rechnerleistung seit den 1980er-Jahren hat zivile Anwendungen in den Vordergrund treten lassen. Ferner hat sich der Bedarf nach schnellen Algorithmen mit dem Geschwindigkeitszuwachs entsprechend verstärkt. Für viele Probleme hat die Forschung dies leisten können, und so hat sich die Geschwindigkeit der Algorithmen seit Mitte der 1980er-Jahre um etwa dieselbe Größenordnung verbessert wie die CPU-Leistungen. Heutzutage sind numerische Verfahren, zum Beispiel die Finite-Elemente-Methode, in jedem technischen oder wissenschaftlichen Bereich präsent und Alltagswerkzeug.
+
+
+== Fehleranalyse ==
+Ein Aspekt bei der Analyse der Algorithmen in der Numerik ist die Fehleranalyse. Bei einer numerischen Berechnung kommen verschiedene Typen von Fehlern zum Tragen: Beim Rechnen mit Gleitkommazahlen treten unvermeidlich Rundungsfehler auf. Diese Fehler lassen sich zwar zum Beispiel durch eine Erhöhung der Stellenzahl verkleinern, ganz beseitigen kann man sie aber nicht, da jeder Computer prinzipiell nur mit endlich vielen Stellen rechnen kann.
+Wie das Problem auf Störungen in den Anfangsdaten reagiert, wird mit der Kondition gemessen. Hat ein Problem eine große Kondition, so hängt die Lösung des Problems empfindlich von den Anfangsdaten ab, was eine numerische Lösung erschwert, insbesondere da Rundungsfehler als Störung der Anfangsdaten aufgefasst werden können.
+Das numerische Verfahren ersetzt ferner das kontinuierliche mathematische Problem durch ein diskretes, also endliches Problem. Dabei tritt bereits der sogenannte Diskretisierungsfehler auf, der im Rahmen der Konsistenzanalyse abgeschätzt und bewertet wird. Dies ist notwendig, da ein numerisches Verfahren im Regelfall nicht die exakte Lösung liefert.
+Wie sich solche Fehler beim Weiterrechnen vergrößern, wird mit Hilfe der Stabilitätsanalyse bewertet.
+Konsistenz und Stabilität des Algorithmus führen im Regelfall zu Konvergenz (siehe dazu: Grenzwert (Funktion)).
+
+
+== Numerische Verfahren ==
+Für viele mathematische Probleme, wie zum Beispiel die Optimierung oder das Lösen von partiellen Differentialgleichungen, existieren eine Vielzahl numerischer Verfahren und Algorithmen.
+Eine kommentierte Zusammenstellung von ausgewählten numerischen Verfahren findet man unter Liste numerischer Verfahren.
+
+
+== Literatur ==
+Wolfgang Dahmen, Arnold Reusken: Numerik für Ingenieure und Naturwissenschaftler. Springer, Berlin u. a. 2006, ISBN 3-540-25544-3.
+Peter Deuflhard, Andreas Hohmann: Numerische Mathematik. Band 1: Eine algorithmisch orientierte Einführung. 3., überarbeitete und erweiterte Auflage. de Gruyter, Berlin u. a. 2002, ISBN 3-11-017182-1.
+Gene H. Golub, James M. Ortega: Wissenschaftliches Rechnen und Differentialgleichungen. Eine Einführung in die Numerische Mathematik (= Berliner Studienreihe zur Mathematik. Band 6). Heldermann, Berlin 1995, ISBN 3-88538-106-0.
+Martin Hanke-Bourgeois: Grundlagen der Numerischen Mathematik und des wissenschaftlichen Rechnens. Teubner, Stuttgart u. a, 2002, ISBN 3-519-00356-2.
+Martin Hermann: Numerische Mathematik. Band 1: Algebraische Probleme. 4., überarbeitete und erweiterte Auflage. Walter de Gruyter Verlag Berlin, Boston, 2020, ISBN 978-3-11-065665-7.
+Martin Hermann: Numerische Mathematik. Band 2: Analytische Probleme. 4., überarbeitete und erweiterte Auflage. Walter de Gruyter Verlag Berlin, Boston, 2020, ISBN 978-3-11-065765-4.
+Thomas Huckle, Stefan Schneider: Numerik für Informatiker. Springer, Berlin u. a. 2002, ISBN 3-540-42387-7.
+Ernst Kausen: Numerische Mathematik mit TURBO-PASCAL. Hüthig, Heidelberg 1989, ISBN 3-7785-1477-6.
+Reinhard Mennicken: Numerische Mathematik. 3 Bände. 1976–1981.
+Gerhard Opfer: Numerische Mathematik für Anfänger. Eine Einführung für Mathematiker, Ingenieure und Informatiker. 5., überarbeitete und erweiterte Auflage. Vieweg + Teubner, Wiesbaden 2008, ISBN 978-3-8348-0413-6.
+Robert Plato: Numerische Mathematik kompakt. Grundlagenwissen für Studium und Praxis. Vieweg, Braunschweig u. a. 2000, ISBN 3-528-03153-0.
+Hans R. Schwarz, Norbert Köckler: Numerische Mathematik. 8. Auflage. Teubner, Stuttgart 2011, ISBN 978-3-8348-1551-4.
+
+
+== Weblinks ==
+
+Gert Lube: Numerische Mathematik I und Numerische Mathematik II (Skript, Georg-August-Universität Göttingen)
+L. Trefethen: Numerical analysis
+
+
+== Einzelnachweise ==

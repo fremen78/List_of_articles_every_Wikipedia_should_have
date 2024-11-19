@@ -1,0 +1,388 @@
+L'intelligenza artificiale (in sigla italiana: IA o in inglese AI, dall'acronimo di Artificial Intelligence), nel suo significato più ampio, è la capacità o il tentativo di un sistema artificiale (tipicamente un sistema informatico) di simulare l'intelligenza umana attraverso l'ottimizzazione di funzioni matematiche. 
+L'etica dell'intelligenza artificiale è una disciplina dibattuta tra scienziati e filosofi che manifesta numerosi aspetti sia teorici sia pratici. Stephen Hawking nel 2014 ha messo in guardia riguardo ai pericoli dell'intelligenza artificiale, considerandola una minaccia per la sopravvivenza dell'umanità.
+
+
+== Definizione ==
+La norma ISO/IEC 42001:2023 Information technology - Artificial intelligence Management System (AIMS) definisce l'intelligenza artificiale come la capacità di un sistema di mostrare capacità umane quali il ragionamento, l'apprendimento, la pianificazione e  la creatività. 
+
+
+== Storia ==
+
+
+=== Tradizione di ricerca ===
+Molteplici furono i passi che portarono alla nascita di questa disciplina. Il primo, sia a livello di importanza sia di ordine cronologico, è l'avvento dei calcolatori e il continuo interesse rivolto a essi. Già nel 1623, grazie a Wilhelm Schickard, si arrivò a creare macchine in grado di effettuare calcoli matematici con numeri fino a sei cifre, anche se non in maniera autonoma. Nel 1642 Blaise Pascal costruì una macchina in grado di fare operazioni utilizzando il riporto automatico, mentre nel 1674 Gottfried Wilhelm von Leibniz creò una macchina in grado di effettuare la somma, la differenza e la moltiplicazione in maniera ricorsiva. Tra il 1834 e il 1837 Charles Babbage lavorò al modello di una macchina chiamata macchina analitica, le cui caratteristiche anticiparono in parte quelle dei moderni calcolatori. Nel ventesimo secolo l'attenzione sui computer ritornò ad accendersi: nel 1937, ad esempio, Claude Shannon, all'università di Yale, mostrò come l'algebra booleana e le operazioni binarie potessero rappresentare il cambiamento circuitale e l'inizio dell'innovazione digitale nelle reti di telecomunicazione.
+Un ulteriore passo importante fu l'articolo di Alan Turing redatto nel 1936, On Computable Numbers, With An Application To The Entscheidungsproblem, che pone le basi per concetti quali calcolabilità, computabilità, macchina di Turing, definizioni cardine per i calcolatori sino ai giorni nostri. In seguito, nel 1943 McCulloch e Pitts crearono ciò che viene ritenuto il primo lavoro inerente all'intelligenza artificiale. Tale sistema impiega un modello di neuroni artificiali nel quale lo stato di tali neuroni può essere “acceso” o “spento,” con un passaggio ad “acceso” in presenza di stimoli causati da un numero sufficiente di neuroni circostanti.
+McCulloch e Pitts arrivarono quindi a mostrare, ad esempio, che qualsiasi funzione computabile può essere rappresentata da qualche rete di neuroni, e che tutti i connettivi logici (“e”, “o”, ...) possono essere implementati da una semplice struttura neurale.
+Sette anni più tardi, nel 1950, due studenti dell'università di Harvard, Marvin Minsky e Dean Edmonds, crearono quella che viene riconosciuta come la prima rete neurale artificiale, conosciuta con il nome di SNARC.
+
+
+=== La nascita effettiva della disciplina (1956) ===
+Nel 1956, nel New Hampshire, al Dartmouth College, si tenne un convegno al quale presero parte alcune delle figure di spicco del nascente campo della computazione dedicata allo sviluppo di sistemi intelligenti: John McCarthy, Marvin Minsky, Claude Shannon e Nathaniel Rochester. Su iniziativa di McCarthy, un team di dieci persone avrebbe dovuto creare in due mesi una macchina in grado di simulare ogni aspetto dell'apprendimento e dell'intelligenza umana. Ad aderire a tale iniziativa furono alcuni ricercatori, tra cui anche Trenchard More di Princeton, Arthur Samuel di IBM, e Ray Solomonoff e Oliver Selfridge del MIT. Nello stesso convegno, un'altra iniziativa catalizzò l'attenzione oltre al progetto di McCarthy: il programma di Allen Newell e Herbert Simon. Questi due ricercatori, a differenza di McCarthy, avevano già un programma capace di qualche forma di ragionamento, conosciuto con il nome di Logic Theorist, o LP, in grado di dimostrare teoremi partendo dai principi della matematica. Sempre nello stesso convegno, McCarthy introdusse l'espressione intelligenza artificiale, che segnò, in maniera indelebile, la nascita effettiva di tale disciplina, conferendole una natura propria.
+
+
+=== Prime grandi aspettative (1950-1965) ===
+Il programma creato da Newell e Simon permise loro di progredire e creare un programma chiamato General Problem Solver, o GPS. A differenza del LP, il GPS fu ideato con lo scopo di imitare i processi di risoluzione dei problemi utilizzati dagli esseri umani (nello specifico la cosiddetta "euristica mezzi-fini"). Nei ristretti casi nel quale il programma poteva operare, si notò che l'approccio con il quale il programma considerava gli obiettivi e le azioni era assimilabile a un umano. Negli stessi anni, presso l'IBM, Rochester con dei suoi colleghi cominciò a sviluppare altri programmi capaci di ragionamento.
+Nel 1959, Herbert Gelemter creò il Geometry Theorem Prover, un programma in grado di dimostrare teoremi di geometria complessi.
+L'anno precedente, presso il MIT, McCarthy diede un altro contributo al campo dell'intelligenza artificiale definendo quello che per trent'anni fu riconosciuto come il linguaggio di programmazione dominante per la realizzazione dei sistemi di intelligenza artificiale: il Lisp. Oltre a ciò, McCarthy scrisse un documento intitolato Programs with Common Sense, nel quale descrive un programma ideale, chiamato Advice Taker, che può essere visto come il primo sistema intelligente completo. 
+Minsky, durante il suo periodo al MIT, coordinò la creazione di programmi per affrontare quelli che vengono chiamati micro mondi, ovvero problemi limitati e descritti da asserzioni che richiedevano l'utilizzo di ragionamento per essere risolti. Tra questi, il programma di James Slagle del 1963, SAINT, era in grado di risolvere problemi riguardo al calcolo integrale in forma chiusa, tipici del primo anno del college.
+
+
+=== Prime difficoltà (1966-1969) ===
+Tra le varie aspirazioni da parte dei ricercatori vi era principalmente quella di creare macchine in grado di esibire capacità di ragionamento simili a quelle umane. Ad esempio, Herbert Simon, nel 1957, stimò che nel giro di dieci anni ci sarebbero state macchine in grado di competere con i campioni di scacchi (previsione che si avvererà, ma dopo quarant'anni). Queste aspirazioni, però, dovettero scontrarsi con alcune difficoltà: prime fra tutte, l’assoluta mancanza di conoscenza semantica relativa ai domini trattati dalle macchine, in quanto la loro capacità di ragionamento si limitava a una vera manipolazione sintattica. A causa di questa difficoltà, nel 1966 il governo degli Stati Uniti d'America interruppe i fondi per lo sviluppo delle macchine traduttrici. Un ulteriore problema fu l'impossibilità del trattare molti problemi che l'intelligenza artificiale si era proposta. Questo perché si riteneva che “scalare” le dimensioni di un problema fosse solo una questione di hardware e memoria.
+Questo tipo di ottimismo fu presto spento quando i ricercatori fallirono nel dimostrare teoremi a partire da più di una dozzina di assiomi. Si capì quindi che il fatto di disporre di un algoritmo che, a livello teorico, fosse in grado di trovare una soluzione a un problema non significava che un corrispondente programma fosse in grado di calcolarla effettivamente a livello pratico. Un terzo tipo di difficoltà furono le limitazioni alla base della logica, nel senso di ragionamento, dei calcolatori. Nel documento di Minsky e Papert, intitolato Perceptrons (1969), si mostrò che, nonostante un percettrone (una semplice forma di rete neurale) fosse in grado di apprendere qualsiasi funzione potesse rappresentare, un percettrone con due input non era in grado di rappresentare una funzione che riconoscesse quando i due input sono diversi.
+
+
+=== Sistemi basati sulla conoscenza (1969-1979) ===
+Queste difficoltà portarono a definire gli approcci adottati dalle macchine come approcci deboli, che necessitavano quindi di una conoscenza maggiore inerente al campo di applicazione. Nel 1969, grazie a Ed Feigenbaum (studente di Herbert Simon), Bruce Buchanam e Joshua Lederberg, venne creato il programma DENDRAL. Tale programma era in grado, a partire dalle informazioni sulla massa molecolare ricavate da uno spettrometro, di ricostruire la struttura di una molecola. 
+Questo programma fu quindi il primo dei sistemi basati su un uso intensivo della conoscenza, che arrivarono più tardi a inglobare tutti i concetti teorizzati da McCarthy per l'Advice Taker. Successivamente, Feigenbaum cominciò insieme con altri ricercatori di Stanford l'Heuristic Program Project (HPP), al fine di estendere gli scenari applicativi di questi sistemi, cominciando con il sistema MYCIN nell'ambito delle diagnosi delle infezioni sanguigne. Si cominciò quindi a teorizzare dei sistemi conosciuti come sistemi esperti, ovvero in grado di possedere una conoscenza esperta in un determinato scenario di applicazione. Si trattava di sistemi in cui l’uomo trasferiva direttamente la propria conoscenza alla macchina, stabilendo mediante regole logiche quali fossero le scelte da prendere in determinati contesti.
+
+
+=== Dall'ambiente accademico all'industria (1980-1985) ===
+Il primo sistema di intelligenza artificiale utilizzato in ambito commerciale fu R1, utilizzato dalla Digital Equipment nel 1982. Lo scopo del programma era quello di aiutare a configurare gli ordini per nuovi computer. Nel 1986, fu in grado di far risparmiare alla compagnia 40 milioni di dollari all'anno. Anche la DuPont utilizzò sistemi simili, risparmiando circa dieci milioni di dollari all'anno. Negli anni '80 dello scorso secolo, quasi ogni grande azienda americana aveva un proprio sistema esperto in operazione e stava studiando sistemi più avanzati.
+Nel 1981 in Giappone venne annunciato il progetto Fifth Generation, un piano di dieci anni con l'intento di costruire sistemi intelligenti basati su Prolog. In risposta, gli Stati Uniti d'America crearono la Microelectronics and Computer Technology Corporation (MCC), come consorzio di ricerca al fine di garantire la competitività a livello nazionale. In Inghilterra, il rapporto Alvey recuperò i fondi tagliati dal rapporto Lighthill, che nel 1973 portò il governo britannico alla decisione di interrompere il supporto verso la ricerca nell'ambito dell'intelligenza artificiale. Questi progetti però non raggiunsero gli scopi previsti.
+L'industria dell'intelligenza artificiale raggiunse nel 1988 una cifra dell'ordine di miliardi di dollari, includendo centinaia di aziende che stavano creando sistemi esperti, robot e software e hardware specializzati in questi settori.
+
+
+=== Il ritorno delle reti neurali (1986-) ===
+A metà degli anni ottanta dello scorso secolo fu reinventato l'algoritmo di apprendimento per reti neurali chiamato back-propagation, inizialmente ideato nel 1969 da Bryson e Ho. L'algoritmo fu applicato a molti problemi relativi all'apprendimento, inerenti sia al lato dell'informatica sia a quello della psicologia. 
+I cosiddetti modelli "connessionisti" per la realizzazione di sistemi intelligenti furono visti come alternative ai modelli simbolici ideati da Newell e Simon, da McCarthy e dai loro collaboratori.
+Tali modelli cercarono di dare risposta a quelle domande alle quali i precedenti modelli non erano riusciti, ma in parte fallirono anch'essi. Di conseguenza, i modelli basati sull'approccio simbolico e quelli con un approccio connessionista furono visti come complementari.
+
+
+=== L'intelligenza artificiale moderna (1986-) ===
+Oggigiorno i sistemi intelligenti sono presenti in ogni campo, anche nelle attività quotidiane e primeggiano nei giochi, come teorizzato anni prima dagli esponenti dell'intelligenza artificiale.
+Vi sono programmi che sono stati in grado di confrontarsi con campioni di scacchi, quali Deep Blue; altri che sono stati impiegati nelle missioni spaziali, come nel 1998 quando la NASA utilizzò un programma chiamato Remote Agent in grado di gestire le attività relative a un sistema spaziale; alcune auto sono oggi dotate di un sistema in grado di guidarle senza l'uso di un conducente umano, quindi in maniera del tutto autonoma. 
+Nell'ambito di scenari più quotidiani si pensi, invece, ai termostati per il riscaldamento e l'aria condizionata in grado di anticipare il cambio di temperatura, gestire i bisogni degli abitanti e di interagire con altri dispositivi. In campo economico, particolarmente sensibile al cambiamento è il tasso di occupazione in generale, come nella tecnofinanza dove avviene la più profonda rivoluzione.
+
+
+=== Utilizzo di Python ===
+Il linguaggio di programmazione più diffuso nell'ambito della ricerca e dello sviluppo di sistemi di intelligenza artificiale è Python. Grazie alla sua semplice sintassi, questo linguaggio consente una rapida prototipazione delle reti neurali, facendo così risparmiare tempo ai ricercatori. Questo è un aspetto molto importante perché tipicamente le reti neurali richiedono molto tempo per essere allenate (da qualche ora, fino a qualche giorno o settimana). 
+Originariamente Python non è stato progettato per essere efficiente, ma grazie a Cython è stato possibile implementare librerie in grado di eseguire codice direttamente in C. Siccome le operazioni svolte tra i dati in input ai modelli di intelligenza artificiale, e i relativi parametri, sono spesso delle operazioni tra tensori (ad esempio prodotti tra tensori), è emerso che l'impiego di GPU per l'allenamento di questi modelli è molto vantaggioso, e di conseguenza sono nati frameworks come PyTorch o Tensorflow. Questi frameworks, importati in Python come librerie, consentono la realizzazione, l'allenamento e l'inferenza di modelli di intelligenza artificiale, fornendo la possibilità di eseguire tali modelli su CPU, GPU, o eventualmente anche TPU.
+
+
+=== Principi di Asilomar ===
+Nel 2017 a seguito del convegno di esperti mondiali di intelligenza artificiale Conferenza di Asilomar sulla Intelligenza Artificiale Benefica, promosso dal Future of Life Institute, è stato redatto con amplissimo consenso un vademecum con 23 principi per affrontare le problematiche etiche, sociali, culturali e militari dell'AI. Il documento è stato sottoscritto subito da oltre 800 esperti e in seguito da altre migliaia.
+
+
+==== Algoretica ====
+Le tre principali religioni abramitiche, Microsoft e IBM, all'inizio del 2023 si sono incontrati in Vaticano alla Rome Call, per la richiesta congiunta di un'algoretica (la riflessione etica sull’uso degli algoritmi) che guidi la progettazione dell'Intelligenza Artificiale. L'etica sull'uso degli algoritmi si basa su sei principi:
+
+Trasparenza
+Inclusione
+Responsabilità
+Imparzialità
+Affidabilità
+Sicurezza e privacy
+A luglio 2023 è previsto un nuovo evento in cui ci prenderanno parte in Giappone anche i massimi esponenti delle religioni orientali.
+
+
+== Ricerca ==
+Il problema complesso dello sviluppare sistemi che esibiscono comportamenti intelligenti è stato affrontato operando una scomposizione in sotto-problemi, ognuno con uno specifico ambito di ricerca. Ogni sotto-problema consiste nello studiare particolari abilità e proprietà che caratterizzano il sistema intelligente.
+Relativamente all'ambito di applicazione di un determinato sistema intelligente questo presenterà soluzioni più o meno evolute per ogni sotto-problema.
+
+
+=== Intelligenza artificiale forte e debole ===
+Una primaria distinzione in seno alla ricerca nel campo dell'intelligenza artificiale è quella di intelligenza artificiale debole e intelligenza artificiale forte a secondo che vengano riprodotte solo alcune o tutte le funzionalità della mente umana.
+
+
+=== Deduzione, ragionamento e problem solving ===
+Inizialmente i ricercatori si concentrarono sullo sviluppo di algoritmi che imitassero fedelmente i ragionamenti impiegati dagli esseri umani per risolvere giochi o realizzare deduzioni logiche in modo da poterli integrare all'interno dei sistemi intelligenti. 
+Tali algoritmi solitamente si basano su una rappresentazione simbolica dello stato del mondo e cercano sequenze di azioni che raggiungano uno stato desiderato. Evoluzioni di questi algoritmi vennero realizzati tenendo in considerazione aspetti più complessi come l'incertezza o l'incompletezza delle informazioni, includendo concetti provenienti dalla probabilità, dalla statistica e dall'economia.
+Per difficoltà legate alla complessità intrinseca dei problemi in esame, gli algoritmi per la loro risoluzione possono a volte richiedere enormi risorse computazionali. L'ottimizzazione degli algoritmi ricopre una priorità assoluta all'interno della ricerca in questo ambito.
+
+
+=== Rappresentazione della conoscenza ===
+
+La rappresentazione della conoscenza e l'ingegneria della conoscenza costituiscono contributi centrali per la ricerca nell'ambito dell'intelligenza artificiale.
+In particolare, queste discipline si focalizzano su quale tipo di conoscenza è necessario o opportuno integrare all'interno di un sistema intelligente, e sul come rappresentare i diversi tipi di informazione. Fra le cose che un sistema intelligente ha la necessità di rappresentare troviamo frequentemente oggetti, proprietà, categorie e relazioni fra oggetti, situazioni, eventi, stati, tempo, cause ed effetti, conoscenza posseduta da altri. La rappresentazione e l'ingegneria della conoscenza vengono spesso associate alla disciplina filosofica dell'ontologia.
+La conoscenza e la sua rappresentazione sono cruciali soprattutto per quella categoria di sistemi intelligenti che basano il loro comportamento su una estensiva rappresentazione esplicita della conoscenza dell'ambiente in cui operano.
+
+
+=== Pianificazione ===
+
+Per permettere ai sistemi intelligenti di prevedere e rappresentare stati del mondo futuri e per prendere decisioni al fine di raggiungere tali stati massimizzando il valore atteso delle azioni, essi devono essere in grado di definire degli obiettivi e di perseguirli.
+Nei problemi classici di pianificazione, un sistema intelligente può assumere di essere l'unica entità a operare nell'ambiente e può essere assolutamente sicuro delle conseguenze di ogni azione compiuta. Se non è l'unico attore nell'ambiente o se l'ambiente non è deterministico un sistema intelligente deve costantemente monitorare il risultato delle proprie azioni e aggiornare le predizioni future e i propri piani.
+
+
+=== Apprendimento ===
+
+L'apprendimento automatico è la disciplina che studia algoritmi capaci di migliorare automaticamente le proprie prestazioni attraverso l'esperienza.
+È stato un ambito di ricerca cruciale all'interno dell'intelligenza artificiale sin dalla sua nascita.
+L'apprendimento automatico è particolarmente importante per lo sviluppo di sistemi intelligenti principalmente per tre motivi:
+
+Gli sviluppatori di un sistema intelligente difficilmente possono prevedere tutte le possibili situazioni in cui il sistema stesso si può trovare a operare, eccetto per contesti estremamente semplici.
+Gli sviluppatori di un sistema intelligente difficilmente possono prevedere tutti i possibili cambiamenti dell'ambiente nel tempo.
+Un'ampia categoria di problemi può essere risolta più efficacemente ricorrendo a soluzioni che coinvolgono l'apprendimento automatico. Questa categoria di problemi include, ad esempio, il gioco degli scacchi e il riconoscimento degli oggetti.
+
+
+=== Elaborazione del linguaggio naturale ===
+
+La capacità di elaborare il linguaggio naturale fornisce ai modelli di intelligenza artificiale di stimare con ottime probabilità la parola o la frase che segue il testo fornito in input, e di estrarne il contesto. Questa tecnica consente di ottenere risultati migliori rispetto a tecniche tradizionali quando si tratta di svolgere ricerca di informazioni, ottenere risposta a domande,tradurre o analizzare testi. L'architettura tipicamente impiegata per questo compito è il Transformer, che grazie al meccanismo dell'attenzione è in grado di catturare appieno il contesto del testo fornito in input.
+La difficoltà principale di questo processo è l'intrinseca ambiguità che caratterizza i linguaggi naturali, per questo motivo le soluzioni richiedono un'estesa conoscenza del mondo e una notevole abilità nel manipolarlo.
+
+
+=== Movimento e manipolazione ===
+
+La robotica è una disciplina strettamente correlata con l'intelligenza artificiale.
+I robot possono essere considerati sistemi intelligenti per tutti quei compiti che richiedono capacità di livello cognitivo per la manipolazione o lo spostamento di oggetti e per la locomozione, con i sotto-problemi della localizzazione (determinare la propria posizione e quella di altre entità nello spazio), della costruzione di mappe (apprendere le caratteristiche dello spazio circostante), e della pianificazione ed esecuzione dei movimenti.
+
+
+=== Intelligenza artificiale quantistica ===
+
+Un filone di ricerca promettente tenta di applicare l'intelligenza artificiale alla potenza di calcolo dei computer e degli algoritmi quantistici.
+
+
+== Metodi ==
+
+
+=== Agente intelligente ===
+
+Il concetto di agente intelligente (o agente razionale) è centrale in molti degli approcci più comuni all'intelligenza artificiale.
+Un agente è un'entità in grado di percepire l'ambiente attraverso l'utilizzo di sensori e in grado di agire sull'ambiente attraverso l'utilizzo di attuatori. Ogni agente è quindi associato a una sequenza di percezioni, intesa come la cronologia completa di tutti i rilevamenti effettuati da ciascun sensore, e a una funzione agente, che specifica il comportamento dell'agente associando a ogni sequenza di percezioni un'azione da compiere.
+Definita misura della performance una funzione che associa a ogni stato (o sequenza di stati) dell'ambiente un valore di utilità, un agente è intelligente (o razionale) se per ogni possibile sequenza di percezioni la sua funzione agente lo porta a compiere sempre l'azione che massimizza il valore atteso della misura della performance, data la sua conoscenza definita dalla sequenza di percezioni stessa e dalla conoscenza integrata nell'agente.
+Esistono metodologie differenti per l'implementazione concreta della funzione agente, ciascuna più o meno adatta al tipo di ambiente in cui è posto l'agente.
+
+
+==== Agenti reattivi semplici ====
+Questa categoria di agenti seleziona l'azione da compiere sulla base della percezione corrente, ignorando completamente la cronologia delle percezioni.
+
+
+==== Agenti basati su modello ====
+Questa categoria di agenti è caratterizzata dal mantenere uno stato interno che dipende dalla cronologia delle percezioni e contemporaneamente riflette alcuni degli aspetti dell'ambiente non osservati.
+L'aggiornamento dello stato richiede due tipi di conoscenza:
+
+dei modelli che descrivono l'evoluzione dell'ambiente indipendentemente dalle azioni compiute dall'agente,
+dei modelli che descrivono l'effetto delle azioni dell'agente sull'ambiente.
+
+
+==== Agenti basati su obiettivi ====
+In molte applicazioni, tenere traccia dello stato attuale dell'ambiente non è sufficiente per determinare le azioni da compiere, ma l'agente necessita di informazioni che rappresentano situazioni desiderabili, che prendono il nome di obiettivi, o goal. Questo tipo di agenti intelligenti è quello in cui maggiormente vengono impiegati i concetti di pianificazione e ricerca per problem solving.
+
+
+==== Agenti basati su utilità ====
+Il concetto di goal da solo non è sufficiente per ottenere dei comportamenti qualitativamente elevati in molte applicazioni, poiché l'informazione contenuta può essere utilizzata esclusivamente per distinguere gli stati desiderabili dagli stati non desiderabili. Attraverso il concetto di utilità è invece possibile caratterizzare in maniera precisa ogni stato, determinando quanto ogni stato è utile al fine del buon comportamento dell’agente.
+
+
+== Applicazioni ==
+L'intelligenza artificiale è stata impiegata in un'ampia varietà di campi e applicazioni come la medicina, il mercato azionario, la robotica, la legge, la ricerca scientifica, l'analisi dei dati, i giocattoli e perfino lo sviluppo di nuovi robot usando la potenza di calcolo di un personal computer. In alcune applicazioni, l'intelligenza artificiale si è radicata a tal punto all'interno della società o dell'industria da non essere più percepita come intelligenza artificiale. Essa trova applicazione anche nelle città intelligenti: gestione dei flussi (veicolari o turistici), operatività delle reti (telecomunicazioni ed energia), acquisti online e telelavoro. Inoltre, trova applicazione nell'e-procurement, ad esempio nella ricerca e selezione di nuovi fornitori.
+Anche nel campo dell'informatica stessa, molte soluzioni sviluppate originariamente per rispondere a problemi o necessità dell'intelligenza artificiale sono state adottate da altre discipline e non vengono più considerate parte dell'intelligenza artificiale. In particolare il time-sharing, l'interprete (informatica), l'interfaccia grafica, il mouse, la struttura dati lista concatenata, la programmazione funzionale, la programmazione simbolica, la programmazione dinamica e la programmazione orientata agli oggetti.
+Il primo utilizzo dell'intelligenza artificiale nelle banche è datato 1987 quando la Security Pacific National Bank negli USA organizzò una task force per la prevenzione delle frodi legate all'utilizzo non autorizzato delle carte di credito. Attualmente, e non solo in ambito bancario, le reti neurali vengono utilizzate per identificare fenomeni non riconducibili a un comportamento nominale e che richiedono un intervento umano.
+Le reti neurali sono anche largamente impiegate in medicina, e molte altre applicazioni sono attualmente in sviluppo, come ad esempio:
+
+Interpretazione delle immagini mediche: ad esempio, valutazione della posizione, estensione e gravità di un ictus cerebrale; analisi dell'elettrocardiogramma per la valutazione del rischio di infarto miocardico acuto; analisi dell'angiografia e dell'imaging intravascolare per la prevenzione della malattia aterosclerotica coronarica
+Analisi del suono del cuore, previsione di eventi cardiaci avversi nelle due settimane successive a un impianto di stent
+monitoraggio della terapia intensiva e riduzione del rischio di morte
+Diagnosi del cancro e delle malattie in genere mediante un'analisi multimodale dei sintomi
+Diagnosi della leucemia
+gestione dell'ematologia
+medicina del sonno, diagnosi del disturbo unipolare e bipolare, depressione, psicoradiologia, progressione della malattia di Parkinson
+Creazione di medicine
+Robot di accompagnamento per gli anziani, cura della persona e assistenza quotidiana: monitoraggio dei parametri vitali, monitoraggio dell'assunzione quotidiana dei farmaci prescritti, azioni tese a rimanere connessi col mondo esterno e in contatto con parenti amici e a svolgere una vita attiva, anche attraverso l'uso di app di videochiamata e di messaggistica istantanea, assistenza cognitiva e inclusione digitale, rilevazione delle cadute
+La spesa per l'intelligenza artificiale in ambito sanitario è raddoppiata nel 2020 fino a quota 4.8 miliardi di dollari, e, nuovamente nel 2021, a 10 miliardi di dollari.
+L'intelligenza artificiale è largamente utilizzata per la realizzazione di assistenti automatici online principalmente dalle compagnie telefoniche e di telecomunicazione, con l'intento di ridurre i costi di assunzione e formazione del personale.
+Anche nell'ambito dei trasporti l'utilizzo dell'intelligenza artificiale sta aumentando rapidamente. Applicazioni della logica fuzzy sono state impiegate nella realizzazione di cambi di velocità per le automobili. Le automobili a guida autonoma sviluppate da Google e Tesla fanno largamente uso di tecniche di intelligenza artificiale.
+L’intelligenza artificiale viene anche impiegata nel campo della videosorveglianza. Gli algoritmi consentono il riconoscimento degli oggetti presenti nella scena al fine di generare allarmi.
+In ambito videogame l'applicazione dell'intelligenza artificiale sta facendo sempre più breccia, per migliorare i strumenti di sviluppo dei videogiochi, andando a impattare su ricambio del personale, con un maggiore impatto su artisti concettuali, i desainer grafici, gli artisti dedicati al gioco finito e gli illustratori, in quanto l'intelligenza artificiale viene utilizzata per compiti come la generazione di storyboard, aspetto dei personaggi, rendering e animazioni e potrebbe contribuire fino al 50% dello sviluppo dei videogiochi entro il 2030-2035, inoltre a seconda dell'azienda si potrebbero usare soluzioni di intelligenza artificiale pubbliche o interne.
+Ultimo, ma non per importanza, è l'applicazione di reti neurali complesse nella generazione di testi, o meglio, nella trasformazione di un input generalmente testuale in un output anch'esso espresso in caratteri. In particolar modo negli ultimi anni, OpenAI ha rilasciato numerose versioni del suo "modello" denominato GPT, il quale ha riscontrato notevole successo e scalpore. Attraverso questo modello basato su una particolare rete neurale, è stato possibile generare dei racconti, riassumere automaticamente dei testi, tradurre in maniera sempre più precisa da una lingua all'altra. Attraverso questa disciplina le applicazioni sono le più disparate, tra cui, degno di nota e a forte impatto sociale, quello riguardo al binomio giornalismo e scrittura. Il Washington Post ad esempio, gìà nel 2017 dichiarò di aver pubblicato in un anno 850 news elaborate da un'intelligenza artificiale. Il giornale canadese The Globe and Mail invece è interamente diretto da una intelligenza artificiale. Un altro utilizzo di questo modello trova riscontro nei tool di assistenza alla scrittura e generazione automatica di testi.
+A questo riguardo è nata a febbraio 2023 la prima collana di libri scritta interamente da un'AI. La tecnologia è stata anche utilizzata per generare intere sceneggiature cinematografiche come per Il diario di Sisifo.
+
+
+== Il mercato dell'intelligenza artificiale ==
+
+Nel 2023 l'Unione Europea investe nell'intelligenza artificiale una cifra che è 10 volte inferiore a quella degli Stati Uniti e pari alla metà di quella della Cina.
+Secondo l’Artificial Intelligence Index Report 2024 della Stanford University, nel 2023 il settore dell'AI ha generato investimenti pari a 25,2 miliardi di dollari, quasi 9 volte superiori al 2022 e circa 30 rispetto al 2019. 
+
+
+=== In Italia ===
+Il mercato italiano dell'intelligenza artificiale si presenta ancora agli albori, ma le prospettive per il futuro sono positive: nel 2018 ha raggiunto un valore di 85 milioni di euro, una cifra che fa riferimento agli investimenti nello sviluppo e nell'implementazione di progetti come:
+
+sviluppo di algoritmi di Intelligenza Artificiale;
+hardware per l'immagazzinamento e l'elaborazione di dati;
+software per la gestione dei dati;
+servizi di integrazione e personalizzazione.
+Per capire il valore dell'intelligenza artificiale nel contesto tecnologico italiano, è sufficiente notare come si intreccia con altre tendenze digitali come la Cloud Transformation e l'Internet delle cose. Il primo rende scalabile l'infrastruttura necessaria alla raccolta ed elaborazione dei dati, mentre il secondo crea dispositivi e sensori utili non solo per la raccolta dati ma anche per veicolare servizi basati sull'AI.
+
+
+=== Il significato per le aziende italiane ===
+I media e le aziende stanno rivolgendo sempre più l'attenzione verso il tema dell'intelligenza artificiale, in quanto questa si sta dimostrando impattante in termini di efficientamento e automazione di software gestionali, processi industriali, e così via. Tecniche come l'anomaly detection consentono ad esempio di riconoscere, attraverso dati provenienti da sensori, oggetti che presentano dei difetti già in fase di produzione. Reti neurali in grado di stimare la postura umana sono uno strumento che può diventare fondamentale per salvaguardare, ad esempio, la corretta postura del corpo umano durante le ore lavorative, andando a migliorare la sicurezza sul lavoro. I large language model, come ad esempio GPT-3, si stanno rivelando essere strumenti fondamentali per abbattere i tempi di sviluppo software, o ricevere risposte a domande su ostacoli incontrati nei processi lavorativi.
+
+
+=== Il futuro dell'intelligenza artificiale in Italia ===
+Benché le aziende italiane nel complesso non abbiano ancora una visione omogenea sul tema, si individuano già aree di sviluppo particolarmente interessanti:
+
+Smart home speaker
+Si tratta di assistenti vocali intelligenti in grado di gestire oggetti intelligenti presenti in casa. Sono stati introdotti di recente, ma il loro mercato in Italia vale già 60 milioni di euro e il valore sembra destinato a crescere: in un futuro non troppo lontano, questi assistenti potrebbero fungere da canale con cui veicolare servizi e applicazioni legate al mondo dell'AI, creando nuove opportunità di sviluppo per le aziende del settore.
+
+Robot intelligenti
+A questa categoria appartengono i collaborative robot e gli AGV (Automated Guided Vehicle). I primi collaborano con un operatore umano e sono in grado di adattare il proprio comportamento agli stimoli esterni, mentre i secondi si adattano all'ambiente esterno muovendosi in autonomia, senza il supporto di guide fisiche o percorsi predeterminati.
+
+Tutor Intelligenti
+A questa categoria appartengono gli avatar degli Edugames oppure dei robot che all'interno dei musei, e altri luoghi dell'apprendimento, guidano i discenti-visitatori e fungere dai docenti-educatori artificiali.
+
+
+== AI for Good ==
+AI for Good è la piattaforma informatica dell'ONU che ha l'obiettivo di promuovere il dialogo nella comunità scientifica finalizzato allo sviluppo di progetti concreti nell'ambito dell'intelligenza artificiale, mediante un uso etico e orientato al bene comune di questa famiglia di tecnologie.
+A partire dal 2017, AI for Good organizza ogni anno un evento globale, la cui quarta edizione è stata fatta il 21 settembre 2020 a Ginevra, in Svizzera. L'iniziativa operando in relazione a obiettivi di respiro globale, in particolare riguardo allo sviluppo sostenibile, e si propone di ottenere risultati più immediati e concreti rispetto ai documenti programmatici e di indirizzo generalmente prodotti dai meeting dell'ONU.
+Le applicazioni di intelligenza artificiale sono state classificate in tre macrocategorie: intelligenza artificiale per la Terra (AI for Earth), AI per fini umanitari (Humanitarian AI) e AI per l'assistenza sanitaria (AI for Healthcare).
+Il primo AI for Good Global Summit si è tenuto dal 7 al 9 giugno 2017 a Ginevra è stata la creazione di un focus group dell'ITU-T in tema di apprendimento automatico per la tecnologia di connessione 5G.
+Il secondo AI for Good Global Summit si è svolto dal 15 al 17 maggio 2018 presso la sede dell'ITU a Ginevra, e ha prodotto un totale di 35 progetti, anche in collaborazione con l'OMS per la categoria AI 4 Health (FG-AI4H).Fra i relatori erano presenti Roger Penrose e Samantha Cristoforetti. In tale occasione, è stato attivato un repository dei progetti di AI for Goods e dei relativi esempi finalizzato agli obbiettivi dello sviluppo sostenibile, mentre l'ITU ha lanciato la rivista ICT Discoveries, la cui prima edizione straordinaria è stata dedicata all'intelligenza artificiale.
+Il terzo AI for Good Global Summit ha avuto luogo dal 28 maggio al 31 maggio 2019, sempre nella città svizzera che è sede dell'ONU, relativamente alle applicazioni civili e militari dell'AI nello spazio, quali ad esempio le previsioni meteorologiche affidabili entro un orizzonte temporale di 2 settimane, la previsione di asteroidi e corpi celesti in rotta di collisione con la Terra, il monitoraggio delle migrazioni animali di balene o specie in via di estinzione, la gestione satellitare di servizi basati sulla geolocalizzazione (come il controllo automatico di autoveicoli privi di guidatore).
+
+
+== Critiche e controversie ==
+Una maggiore attenzione è rivolta alle implicazioni etiche, ambientali e sociali dell'intelligenza artificiale e alla necessità di aumentare la trasparenza e la responsabilità delle grandi aziende tecnologiche per i loro algoritmi. Le principali critiche si riferiscono a:
+
+Pregiudizio algoritmico
+La mancanza di responsabilità per i risultati generati dagli algoritmi "black-box”
+Approvvigionamento non etico di minerali rari utilizzati nei dispositivi alimentati dall'AI
+Impronta ambientale dei datacenter, il loro utilizzo di energia e acqua
+Sfruttamento del lavoro digitale "clickwork" coinvolto nell'etichettatura dei dati per allenamento di intelligenza artificiale e nella moderazione dei contenuti
+Manipolazione algoritmica delle preferenze di consumo e di voto degli utenti
+
+
+=== Trasparenza algoritmica e segreto industriale ===
+Negli ultimi anni, a causa della crescente presenza di intelligenza artificiale nella società, ci sono stati dei tentativi di normare e integrare l'utilizzo delle intelligenze artificiali all'interno del quadro normativo europeo, con particolare attenzione al principio di trasparenza algoritmica, che può essere definito come "l'obbligo, gravante sui soggetti che adottano decisioni con l'ausilio di sistemi automatizzati di trattamento dei dati, di fornire ai destinatari una spiegazione comprensibile delle procedure utilizzate e di motivare sotto questo profilo le decisioni assunte". Il mancato rispetto della trasparenza violerebbe espressamente l'art. 111 Cost. e il diritto alla difesa ex art. 24 Cost. Inoltre, è stata ribadita nel 2017, dalla Dichiarazione di Asilomar, l'esigenza di garantire la massima trasparenza in ambito di decisioni giudiziarie, in caso di coinvolgimento di sistemi autonomi.
+
+
+=== Disoccupazione ===
+Secondo il report intitolato The Potentially Large Effects of Artificial Intelligence on Economic Growth, pubblicato da Goldman Sachs nel marzo 2023, l'intelligenza artificiale in particolare la sua capacità di generare contenuti senza l'intervento umano potranno garantire una crescita del 7% del PIL globale nei prossimi 10 anni. Tuttavia, essa è anche la causa prevedibile della perdita di 300 milioni di posti di lavoro nei settori amministrativo, legale, finanziario e bancario.
+Secondo un rapporto del World Economic Forum del 2023, nei successivi 5 anni il 23% dei posti di lavoro a livello mondiale subirà dei mutamenti a causa dell'intelligenza artificiale. L'automazione sostituirà l'81% delle attività lavorative di intermediari di prestito, supervisori e impiegati d’ufficio.
+Tuttavia, storicamente non sempre l'automazione è sinonimo di disoccupazione. Un precedente storico è rappresentato dall'introduzione del telaio meccanico che nel 1800 moltiplicò per 50 volte la produttività del lavoro, riducendo negli Stati Uniti il fabbisogno di manodopera del 98%. Eppure il crollo dei costi causò un'inaspettata esplosione della domanda, generando una quantità e varietà di posti di lavoro fino ad allora impensabile.
+
+
+== Regolamentazione ==
+
+
+=== Unione europea ===
+
+
+==== Codice etico UE per l'intelligenza artificiale ====
+
+Partendo dalla premessa per cui i governi devono garantire l'impiego dell'intelligenza artificiale nel massimo rispetto dell'etica, nell'aprile del 2019, l'Unione Europea ha elaborato il suo codice etico, che contiene le linee guida su utilizzo e sviluppo di sistemi di intelligenza artificiale. Il documento, che è stato predisposto da un gruppo di 52 esperti, rappresentati da informatici, ingegneri ma anche giuristi, filosofi, industriali, matematici, ha avuto un iter lungo e varie fasi di approfondimento.
+Il punto di partenza dell'intero documento, e di tutti i principi giuridici che ne sono scaturiti, è che l'intelligenza artificiale deve avere l'uomo al centro e deve essere al servizio del bene comune per migliorare il benessere e garantire la libertà. Per prima cosa, il gruppo di esperti ha identificato le fondamenta giuridiche sulle quali il codice dovesse poggiare ricercandole nei Trattati UE, nella Carta dei Diritti e nella legge internazionale dei Diritti Umani. Da questa analisi sono stati individuati quei diritti inderogabili che, nell'Unione Europea, devono essere rispettati per l'intelligenza artificiale, vale a dire:
+
+Rispetto per la dignità dell'uomo
+Libertà dell'individuo
+Rispetto per la democrazia e per la giustizia
+Eguaglianza e non discriminazione
+Diritti dei cittadini
+A questo punto è stato possibile dare indicazioni su quali fossero i principi etici da seguire nell'Unione per garantire che i sistemi di intelligenza artificiale siano sfruttati in modo affidabile, ovvero rispetto per l'autonomia dell'uomo, prevenzione del danno, equità e correttezza.
+L'ultima fase di lavoro del gruppo di esperti è stata quella di redigere le linee guida UE del codice etico cui aziende, ricercatori e le comunità in generale dovranno attenersi e che rappresentano la traduzione operativa e la sintesi dei diritti fondamentali e dei principi sopra elencati.
+
+
+===== Linee guida =====
+Supervisione umana: l'intelligenza artificiale deve essere al servizio dell'uomo e non deve invece ridurne, limitarne o fuorviarne l'autonomia; inoltre, non devono essere sviluppati sistemi che mettano a rischio i diritti fondamentali dell'uomo. La persona deve restare autonoma e in grado di supervisionare il sistema stesso.
+Solidità tecnica e sicurezza: gli algoritmi devono essere affidabili e sviluppati in modo tale che la sicurezza non venga messa in pericolo durante l'intero ciclo di vita del sistema.
+Privacy e governance dei dati: i cittadini devono sempre essere informati dell'utilizzo dei propri dati personali nel massimo rispetto della normativa UE sulla privacy per l'intero ciclo di vita del sistema che fa uso dell'intelligenza artificiale.
+Trasparenza: significa tracciabilità dei sistemi di intelligenza artificiale. Tutti i dati utilizzati, inclusi gli algoritmi, vanno documentati; solo così si potranno capire i motivi per cui, ad esempio, una decisione basata sull'intelligenza artificiale è stata presa in modo errato.
+Diversità, assenza di discriminazione, correttezza: i sistemi di intelligenza artificiale devono prendere in considerazione tutte le capacità e le abilità umane, garantendo l'accessibilità a tutti.
+Benessere sociale e ambientale: i sistemi di intelligenza artificiale devono essere utilizzati per sostenere cambiamenti ambientali positivi e perseguire obiettivi di sviluppo sostenibile.
+Responsabilità: devono essere adottati meccanismi di responsabilità nel riportare i dati e gli algoritmi utilizzati nei sistemi di intelligenza artificiale. Questo processo di valutazione consente di minimizzare eventuali impatti negativi.
+
+
+==== Artificial Intelligence Act ====
+
+Il  21 maggio 2024 il Consiglio dell'Unione europea ha approvato un apposito regolamento noto anche come  Legge sull'intelligenza artificiale, che mira ad introdurre un quadro normativo e giuridico comune. classificando e regolamentando le applicazioni dell'intelligenza artificiale in base al rischio di causare danni ai cittadini. Questa classificazione rientra principalmente in tre categorie: pratiche vietate, sistemi ad alto rischio e altri sistemi.
+Le pratiche vietate sono quelle che impiegano l'intelligenza artificiale per provocare manipolazioni subliminali o sfruttare le vulnerabilità delle persone che possono provocare danni fisici o psicologici, per fare un uso indiscriminato dell'identificazione biometrica remota in tempo reale negli spazi pubblici ad opera delle forze dell'ordine o per utilizzare "punteggi sociali" derivati dall'intelligenza artificiale da parte delle autorità per colpire ingiustamente individui o gruppi. Il regolamento vieterebbe completamente questi ultimi, mentre per i primi tre viene proposto un regime di autorizzazione.
+I sistemi ad alto rischio, secondo il regolamento proposto, sono quelli che pongono minacce significative alla salute, alla sicurezza o ai diritti fondamentali delle persone. Richiedono una valutazione di conformità obbligatoria, intrapresa come autovalutazione da parte del fornitore, prima di essere immessi sul mercato. Applicazioni particolarmente critiche, come quelle per i dispositivi medici, richiedono che l'autovalutazione del fornitore ai sensi del regolamento sull'intelligenza artificiale venga presa in considerazione dall'organismo notificato che conduce la valutazione ai sensi delle normative dell'Unione Europea esistenti, come il regolamento sui dispositivi medici.
+La legge propone inoltre l'introduzione di un Comitato Europeo per l'Intelligenza Artificiale per promuovere la cooperazione internazionale e garantire il rispetto del regolamento.
+
+
+=== In Italia ===
+Nel 2023, l'Autorità garante per la protezione dei dati personali ha approvato un regolamento che prevede tre principi per le decisioni terapeutiche assunte da sistemi automatizzati: trasparenza dei processi decisionali, supervisione umane delle decisioni automatizzate e non discriminazione algoritmica.
+
+
+=== G7 ===
+Il 30 ottobre 2023 i membri del G7 sottoscrivono undici principi guida per la progettazione, produzione e implementazione di sistemi di intelligenza artificiale avanzati, oltre ad un codice di condotta volontario per gli sviluppatori dell'intelligenza artificiale nel contesto del Processo di Hiroshima.
+L'intesa riceve il plauso di Ursula von der Leyen che vi ritrova i principi della Direttiva Intelligenza Artificiale, in via di finalizzazione.
+
+
+=== Stati Uniti d'America ===
+
+
+==== 2023 ====
+Nel marzo 2023 Google ha proposto un'agenda digitale per la definizione di un'intelligenza responsabile, che prevede fra l'altro il rispetto delle normative vigenti in tema di privacy e sicurezza informatica.
+Nel maggio 2023 il vice presidente di Microsoft Brad Smith ha chiesto di firmare un ordine esecutivo che obblighi tutte le società informatiche statunitensi ad adottare gli standard del National Institute of Standards and Technology (NIST), che è incaricato di analizzare i loro rapporti annuali. La regolamentazione prevede l'obbligo di arrestare l'intelligenza artificiale nei casi di emergenza.
+Nel luglio 2023 l'amministrazione di Joe Biden e le maggiori aziende informatiche del settore (tra cui Alphabet, Microsoft, Meta, Anthropic e OpenAI) raggiungono un accordo che prevede una serie di regole alle quali single operatori sono liberi da aderire su base volontaria, in attesa dell'approvazione di una regolamentazione vincolante da parte del Congresso USA.
+Uno dei primi punti che le aziende di settore si sono dette pronte a introdurre è quello relativo alle filigrane che dovrebbero identificare inequivocabilmente testo, video, audio e immagini generate dall'Intelligenza Artificiale.
+Nel luglio 2023 Anthropic, Google, Microsoft e OpenAI hanno dato vita al Frontier Model Forum. A partire dal 2024 lo sviluppo della Intelligenza artificiale è stato indirizzato alla mitigazione e all’adattamento ai cambiamenti climatici, alla diagnosi precoce e la prevenzione del cancro. Secondo il presidente di Microsoft Brad Smith, le aziende produttrici di modelli di frontiera hanno il compito di garantire che questa tecnologia "sia sicura, protetta e rimanga sotto il controllo umano".
+Il 30 ottobre 2023 il presidente Biden firma un ordine esecutivo che obbliga gli sviluppatori dell'intelligenza artificiale a condividere i propri test di sicurezza con il governo prima di rendere pubblici i loro software.
+Il National Institute of Standards and Technology stabilisce lo standard per lo svolgimento di questi test di sicurezza. il dipartimento per il commercio sviluppa le linee guida e la filigrana per l'autenticazione dei contenuti generati con l'Intelligenza Artificiale che trova impiego "nelle sentenze, nella libertà condizionale e nella libertà vigilata, nella scarcerazione e nella detenzione preventiva, nelle valutazioni dei rischi, nella sorveglianza, nella previsione del crimine e nella polizia predittiva e nell'analisi forense".
+
+
+=== Svizzera ===
+Nel 2023 l'incaricato federale della protezione dei dati e della trasparenza (IFPDT) ha  ribadito in forma scritta che la legge sulla protezione dei dati si applica anche all'intelligenza artificiale.
+
+
+== Dibattito filosofico ==
+
+Rispondere alla domanda “Può una macchina pensare?” "la macchina è inanimata?" è dibattito tuttora aperto a causa di argomentazioni a favore (Daniel Dennett, Hilary Putnam, Roger Penrose) e contro (Hubert Dreyfus, John Searle, Gerald Edelman, Jerry Fodor).
+Esistono due correnti filosofiche diverse che cercano di definire una macchina intelligente come prodotto della:
+
+Intelligenza artificiale debole (weak AI): alla base di questo pensiero sta la convinzione che una macchina possa essere programmata con delle regole ben definite, in modo da comportarsi in modo intelligente.
+Intelligenza artificiale forte (strong AI): alla base di questo pensiero sta il fatto che una macchina agisca in modo intelligente implica che essa sia anche cosciente di come realmente si comporta.
+Nel 1950 Alan Turing, nel suo articolo “Computing Machinery and Intelligence”, porta il dibattito filosofico a un livello più pragmatico, dando una definizione operativa di intelligenza basata su un test comportamentale inventato da lui stesso, chiamato "The Imitation Game" e ricordato anche come "Test di Turing".
+Il test si basa sull'esistenza di tre stanze allineate in cui nella prima c'è un uomo e nell'ultima una donna; in quella centrale invece risiede l'interrogante. L'uomo e la donna possono comunicare messaggi di testo solamente con l'interrogatore scrivendo tramite una tastiera e leggendo tramite uno schermo. L'obiettivo della donna è quello di farsi identificare come donna, mentre quello dell'uomo è quello di trarre in inganno l'interrogante, facendogli credere di essere una donna. 
+Il gioco è ripetuto una seconda volta, scambiando l'uomo con una macchina.
+La macchina è definita come intelligente se la frequenza con cui l'interrogante individua correttamente l'uomo e la donna è almeno la stessa con cui individua correttamente la macchina e la donna.
+Una macchina può quindi ritenersi intelligente se e solo se si comporta come un essere umano, quindi solo se riesce a ingannare l'interrogante come farebbe un uomo.
+In seguito, John Searle descrive nell'articolo "Minds, Brains and Programs" un esperimento mentale contro l'intelligenza artificiale forte, chiamato “la stanza cinese”. Egli vuole dimostrare che una macchina in grado di superare il test di Turing, non è capace di capire cosa succede al suo interno; non è, quindi, cosciente di come agisce. L'esperimento consiste in una persona che conosce solo l’inglese, munita di un libro di grammatica cinese scritto in inglese e vari fogli, alcuni bianchi e alcuni con dei simboli. La persona è dentro alla stanza con una piccola finestra verso l'esterno. Attraverso la finestra appaiono simboli indecifrabili. 
+La persona trova delle corrispondenze con i simboli del libro delle regole e segue le istruzioni. Le istruzioni possono includere scrivere simboli su un nuovo foglio, trovare nuovi simboli, ecc. Infine, questi fogli scritti verranno passati al mondo esterno, attraverso la finestra. Per un osservatore esterno, la macchina sta ricevendo simboli cinesi, li sta elaborando e sta rispondendo con altri simboli, esattamente come farebbe un uomo cosciente. In questo senso, secondo il test di Turing dovrebbe essere ritenuta intelligente. Il problema, che sottolinea Searle, è che in realtà al suo interno, niente della macchina conosce effettivamente il cinese, per cui non è cosciente di quello che sta effettivamente facendo. Secondo Searle essa sta semplicemente seguendo un insieme di regole descritte nel libro. Secondo Daniel Dennett il dibattito rimane però aperto in quanto Searle non riesce a dimostrare pragmaticamente la sua tesi, dovendo far così ricorso alla intuizione.
+
+
+== Fantascienza ==
+
+Nelle opere di fantascienza l'intelligenza artificiale è un tema ricorrente, come semplice elemento narrativo o come argomento centrale della storia. Generalmente è presentata sotto forma di computer avanzati, robot o androidi. Il tema è spesso legato a quello classico della ribellione della macchina, in cui un computer (nella maggior parte dei casi senziente) si rivolta contro gli esseri umani che l'avevano costruito.
+Tra i computer senzienti rientrano ad esempio Multivac, presente in alcuni racconti di Isaac Asimov, paragonabile ai moderni sistemi di grid computing, e HAL 9000 del film 2001: Odissea nello spazio (1968) di Stanley Kubrick. Invece Pensiero Profondo, nella Guida galattica per autostoppisti, è un'intelligenza artificiale capace di fornire la risposta alla "domanda fondamentale sulla vita, l'universo e tutto quanto". Nella serie cinematografica di Terminator, il supercomputer Skynet è presentato come un evolutissimo insieme di network che, costruiti dal Dipartimento della difesa degli Stati Uniti verso la fine della guerra fredda, finiranno per divenire un insieme autocosciente e intraprendere, al comando di un esercito di robot e cyborg, una spietata guerra per lo sterminio della specie umana. Nel film Matrix le macchine intelligenti tengono in schiavitù miliardi di esseri umani, per trarre da essi energia elettrica.
+Oltre a quello del cinema e della televisione, anche il mondo dei cartoni animati e dei videogiochi ha sfruttato il tema dell'intelligenza artificiale. Un esempio è Cortana, l'intelligenza artificiale presente nella saga di Halo (nome affidato da Microsoft anche alla propria assistente virtuale: Cortana su Windows 10).
+I robot o androidi senzienti sono anch'essi un classico. Nell'ipotesi che le macchine possano man mano diventare più simili agli esseri umani, gli autori hanno ipotizzato macchine con enorme capacità di calcolo e dotate di personalità. I "robot positronici" come il robot R. Daneel Olivaw del romanzo Fondazione, Marvin l'androide paranoico, R2-D2 e C-3PO di Guerre stellari, Data di Star Trek: The Next Generation e Chappie di Humandroid sono solo alcuni esempi tra i più noti. Queste macchine si distinguono dai semplici robot per una personalità spiccata e "umanizzata", resa possibile da un'intelligenza artificiale estremamente evoluta.
+Anche in Italia, il tema negli anni ha dato vita a opere letterarie, teatrali e musicali. In ambito letterario, spicca "Il grande ritratto" di Dino Buzzati, considerato il primo, vero romanzo di fantascienza italiano, in cui si immagina un'intelligenza artificiale grande come una città e in grado di manipolare gli uomini. In ambito musicale, band italiane come i Calibro 35 e gli Eterea Post Bong Band hanno creato dischi concept sul tema, facendo rappare un'intelligenza artificiale o parlando dell'evoluzione del rapporto uomo-macchina.
+
+
+== Note ==
+Annotazioni
+
+Fonti
+
+
+== Bibliografia ==
+ Jean-Gabriel Ganascia, L'intelligenza artificiale, Milano, Il Saggiatore, 1997, ISBN 88-428-0439-8.
+ Diego Gosmar, Machine Learning. Il sesto chakra dell'intelligenza artificiale, 2020, ISBN 979-8644551132.
+ Enrico Prati, Mente artificiale, Milano, EGEA, 2017, ISBN 978-88-238-7997-3.
+ Somalvico Marco, Amigoni Francesco e Schiaffonati Viola, Intelligenza Artificiale, in Petruccioli Sandro (a cura di), Storia della scienza vol. IX, Roma, Istituto della Enciclopedia Italiana, 2003,  pp. 615-624.
+ Marcus Hutter, Universal Artificial Intelligence, Berlin, Springer, 2005, ISBN 978-3-540-22139-5.
+ George Luger e William Stubblefield, Artificial Intelligence: Structures and Strategies for Complex Problem Solving, quinta edizione, Benjamin/Cummings, 2004, ISBN 0-8053-4780-1.
+ Stuart Russell e Peter Norvig, Artificial Intelligence: A Modern Approach, seconda edizione, Pearson Education Limited, 2003, ISBN 978-0-13-790395-5.
+ Stuart Russell e Peter Norvig, Artificial Intelligence: A Modern Approach, terza edizione, Pearson Education Limited, 2009, ISBN 978-0-13-604259-4.
+ Nils J. Nilsson, The Quest For Artificial Intelligence, A History of Ideas And achievements, Web Version, Stanford University, 2010.
+ Antonio Lieto, Cognitive Design for Artificial Minds, London (UK), Routledge, Taylor & Francis, 2021, ISBN 978-1-138-20792-9.
+Gardner A., An Artificial Intelligence Approach to Legal Reasoning, 0262071045, 9780262071048	MIT	1987.
+ Nick Bostrom, Superintelligenza, Bollati Boringhieri, 2018, ISBN 9788833929019.
+ Maciej Komosinski e Andrew Adamatzky, Artificial Life Models in Software, Poznan (PL), Springer, 2009, DOI:10.1007/978-1-84882-285-6, ISBN 9781848822849.
+
+
+== Voci correlate ==
+
+
+== Altri progetti ==
+
+ Wikiquote contiene citazioni sull'intelligenza artificiale
+ Wikibooks contiene testi o manuali sull'intelligenza artificiale
+ Wikizionario contiene il lemma di dizionario «intelligenza artificiale»
+ Wikiversità contiene risorse sull'intelligenza artificiale
+ Wikimedia Commons contiene immagini o altri file sull'intelligenza artificiale
+
+
+== Collegamenti esterni ==
+
+ intelligènza artificiale, su Treccani.it – Enciclopedie on line, Istituto dell'Enciclopedia Italiana. 
+ Francesco Amigoni, Viola Schiaffonati e Marco Somalvico, Intelligenza artificiale, in Enciclopedia della scienza e della tecnica, Istituto dell'Enciclopedia Italiana, 2007-2008. 
+ intelligènza artificiale, su sapere.it, De Agostini. 
+(EN) B.J. Copeland, artificial intelligence, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Artificial Intelligence, su Internet Encyclopedia of Philosophy. 
+(EN) Selmer Bringsjord e Naveen Sundar Govindarajulu, Artificial Intelligence, su Stanford Encyclopedia of Philosophy. 
+(EN) Opere riguardanti Intelligenza artificiale, su Open Library, Internet Archive. 
+(EN) Denis Howe, artificial intelligence, in Free On-line Dictionary of Computing. Disponibile con licenza GFDL
+ Elements of AI, primi passi verso l’Intelligenza artificiale, su innovazione.gov.it.
+ Orizzonte Insegnanti, su orizzonteinsegnanti.it. Intelligenza Artificiale al servizio dell’Istruzione.
+ Intelligenza artificiale nel mondo reale: casi d’uso e applicazioni pratiche, su SPIN - Ricerca Innovazione e Trasferimento Tecnologico. URL consultato l'11 aprile 2024 (archiviato il 30 ottobre 2023).

@@ -1,0 +1,1696 @@
+Na análise estatística de séries temporais, modelos auto-regressivos de médias móveis (autoregressive-moving-average ou ARMA, na sigla em inglês) oferecem uma descrição parcimoniosa de um processo estocástico fracamente estacionário em termos de dois polinômios, um para a auto-regressão e outro para a média móvel. O modelo ARMA geral foi descrito pelo matemático neo-zelandês Peter Whittle em sua tese de 1951, Hypothesis testing in time series analysis, e popularizado pelos estatísticos britânicos George E. P. Box e Gwilym Jenkins em seu livro de 1970.
+Dada uma série temporal de dados 
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+      
+    
+    {\displaystyle X_{t}}
+  
+, o modelo ARMA é uma ferramenta para entender e, talvez, prever valores futuros nesta série. O modelo consiste em duas partes, uma parte auto-regressiva (AR) ou uma parte de média móvel (MA). A parte AR envolve regressar a variável em seus próprios valores defasados, isto é, passados. A parte MA envolve modelar o termo de erro como uma combinação linear de termos de erro que ocorrem contemporaneamente e em vários momentos no passado.
+O modelo é geralmente referido como o modelo ARMA(
+  
+    
+      
+        p
+        ,
+        q
+      
+    
+    {\displaystyle p,q}
+  
+), em que 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ é a ordem da parte auto-regressiva e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ é a ordem da parte de média móvel.
+Modelos ARMA podem ser estimados seguindo a abordagem de Box–Jenkins.
+
+
+== Modelo auto-regressivo ==
+A notação AR(
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+) se refere ao modelo auto-regressivo de ordem 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+. O modelo AR(
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+) é escrito como:
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+        =
+        c
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            p
+          
+        
+        
+          φ
+          
+            i
+          
+        
+        
+          X
+          
+            t
+            −
+            i
+          
+        
+        +
+        
+          ε
+          
+            t
+          
+        
+        ,
+      
+    
+    {\displaystyle X_{t}=c+\sum _{i=1}^{p}\varphi _{i}X_{t-i}+\varepsilon _{t},}
+  
+em que 
+  
+    
+      
+        
+          φ
+          
+            1
+          
+        
+        .
+        .
+        .
+        
+          φ
+          
+            p
+          
+        
+      
+    
+    {\displaystyle \varphi _{1}...\varphi _{p}}
+  
+ são os parâmetros, 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ é uma constante e a variável aleatória 
+  
+    
+      
+        
+          ε
+          
+            t
+          
+        
+      
+    
+    {\displaystyle \varepsilon _{t}}
+  
+ é ruído branco.
+Algumas restrições são necessárias sobre os valores dos parâmetros a fim de que o modelo permaneça estacionário. Por exemplo, processos no modelo AR(1) com 
+  
+    
+      
+        
+          |
+        
+        
+          φ
+          
+            1
+          
+        
+        
+          |
+        
+        ≥
+        1
+      
+    
+    {\displaystyle |\varphi _{1}|\geq 1}
+  
+ não são estacionários.
+
+
+== Modelo de média móvel ==
+A notação MA(
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+) se refere ao modelo de média móvel de ordem 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+:
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+        =
+        μ
+        +
+        
+          ε
+          
+            t
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            q
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          ε
+          
+            t
+            −
+            i
+          
+        
+        ,
+      
+    
+    {\displaystyle X_{t}=\mu +\varepsilon _{t}+\sum _{i=1}^{q}\theta _{i}\varepsilon _{t-i},}
+  
+em que 
+  
+    
+      
+        
+          θ
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          θ
+          
+            q
+          
+        
+      
+    
+    {\displaystyle \theta _{1},...,\theta _{q}}
+  
+ são os parâmetros do modelo, 
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+ é o valor esperado de 
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+      
+    
+    {\displaystyle X_{t}}
+  
+ (frequentemente assumido como igual a zero) e 
+  
+    
+      
+        
+          ϵ
+          
+            t
+          
+        
+        ,
+        
+          ϵ
+          
+            t
+            −
+            1
+          
+        
+        ,
+        .
+        .
+        .
+      
+    
+    {\displaystyle \epsilon _{t},\epsilon _{t-1},...}
+  
+ são novamente os termos de erro de ruído branco.
+
+
+== Modelo ARMA ==
+A notação ARMA(
+  
+    
+      
+        p
+        ,
+        q
+      
+    
+    {\displaystyle p,q}
+  
+) se refere ao modelo com termos auto-regressivos 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e termos de média móvel 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+. Este modelo contém os modelos AR(
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+) e MA(
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+):
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+        =
+        c
+        +
+        
+          ε
+          
+            t
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            p
+          
+        
+        
+          φ
+          
+            i
+          
+        
+        
+          X
+          
+            t
+            −
+            i
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            q
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          ε
+          
+            t
+            −
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle X_{t}=c+\varepsilon _{t}+\sum _{i=1}^{p}\varphi _{i}X_{t-i}+\sum _{i=1}^{q}\theta _{i}\varepsilon _{t-i}.}
+  
+O modelo ARMA geral foi descrito por Peter Whittle em sua tese de 1951, em que usou análise matemática (séries de Laurent e análise de Fourier) e inferência estatística. Modelos ARMA foram popularizados por George E. P. Box e Gwilym Jenkins em um livro de 1970, em que expuseram um método iterativo (Box–Jenkins) para escolher e estimar estes modelos. Este método foi útil para polinômios de ordem baixa (grau três ou menos).
+
+
+== Termos de erro ==
+Os termos de erro 
+  
+    
+      
+        
+          ϵ
+          
+            t
+          
+        
+      
+    
+    {\displaystyle \epsilon _{t}}
+  
+ são geralmente assumidos como variáveis aleatórias independentes e identicamente distribuídas amostradas a partir de uma distribuição normal com média zero, 
+  
+    
+      
+        
+          ϵ
+          
+            t
+          
+        
+        ∼
+        N
+        (
+        0
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \epsilon _{t}\sim N(0,\sigma ^{2})}
+  
+, em que 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+  
+ é a variância. Estes pressupostos podem ser enfraquecidos, mas com isto as propriedades do modelo são alteradas. Em particular, uma mudança no pressuposto da independência e da distribuição idêntica faz uma diferença bastante fundamental.
+
+
+== Especificação em termos de operador de defasagem ==
+Em alguns textos, os modelos serão especificados em termos do operador de defasagem 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+  
+. Nestes termos, o modelo AR(
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+) é dado por:
+  
+    
+      
+        
+          ε
+          
+            t
+          
+        
+        =
+        
+          (
+          
+            1
+            −
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                p
+              
+            
+            
+              φ
+              
+                i
+              
+            
+            
+              L
+              
+                i
+              
+            
+          
+          )
+        
+        
+          X
+          
+            t
+          
+        
+        =
+        φ
+        (
+        L
+        )
+        
+          X
+          
+            t
+          
+        
+        ,
+      
+    
+    {\displaystyle \varepsilon _{t}=\left(1-\sum _{i=1}^{p}\varphi _{i}L^{i}\right)X_{t}=\varphi (L)X_{t},}
+  
+em que 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ representa o polinômio:
+  
+    
+      
+        φ
+        (
+        L
+        )
+        =
+        1
+        −
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            p
+          
+        
+        
+          φ
+          
+            i
+          
+        
+        
+          L
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle \varphi (L)=1-\sum _{i=1}^{p}\varphi _{i}L^{i}.}
+  
+O modelo MA(
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+) é dado por:
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+        =
+        
+          (
+          
+            1
+            +
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                q
+              
+            
+            
+              θ
+              
+                i
+              
+            
+            
+              L
+              
+                i
+              
+            
+          
+          )
+        
+        
+          ε
+          
+            t
+          
+        
+        =
+        θ
+        (
+        L
+        )
+        
+          ε
+          
+            t
+          
+        
+        ,
+      
+    
+    {\displaystyle X_{t}=\left(1+\sum _{i=1}^{q}\theta _{i}L^{i}\right)\varepsilon _{t}=\theta (L)\varepsilon _{t},}
+  
+em que 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ representa o polinômio:
+  
+    
+      
+        θ
+        (
+        L
+        )
+        =
+        1
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            q
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          L
+          
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle \theta (L)=1+\sum _{i=1}^{q}\theta _{i}L^{i}.}
+  
+Finalmente, o modelo combinado ARMA(
+  
+    
+      
+        p
+        ,
+        q
+      
+    
+    {\displaystyle p,q}
+  
+) é dado por
+  
+    
+      
+        
+          (
+          
+            1
+            −
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                p
+              
+            
+            
+              φ
+              
+                i
+              
+            
+            
+              L
+              
+                i
+              
+            
+          
+          )
+        
+        
+          X
+          
+            t
+          
+        
+        =
+        
+          (
+          
+            1
+            +
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                q
+              
+            
+            
+              θ
+              
+                i
+              
+            
+            
+              L
+              
+                i
+              
+            
+          
+          )
+        
+        
+          ε
+          
+            t
+          
+        
+        ,
+      
+    
+    {\displaystyle \left(1-\sum _{i=1}^{p}\varphi _{i}L^{i}\right)X_{t}=\left(1+\sum _{i=1}^{q}\theta _{i}L^{i}\right)\varepsilon _{t},}
+  
+ou, de forma mais concisa,
+  
+    
+      
+        φ
+        (
+        L
+        )
+        
+          X
+          
+            t
+          
+        
+        =
+        θ
+        (
+        L
+        )
+        
+          ε
+          
+            t
+          
+        
+        ,
+      
+    
+    {\displaystyle \varphi (L)X_{t}=\theta (L)\varepsilon _{t},}
+  
+ou
+  
+    
+      
+        
+          
+            
+              φ
+              (
+              L
+              )
+            
+            
+              θ
+              (
+              L
+              )
+            
+          
+        
+        
+          X
+          
+            t
+          
+        
+        =
+        
+          ε
+          
+            t
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {\varphi (L)}{\theta (L)}}X_{t}=\varepsilon _{t}.}
+  
+
+
+=== Notação alternativa ===
+Alguns autores, incluindo George E. P. Box, Gwilym M. Jenkins e Gregory C. Reinsel, usam uma convenção diferente para os coeficientes de auto-regressão. Isto permite a todos os polinômios que envolvem o operador de defasagem aparecer de forma semelhante por toda a parte. Assim, o modelo ARMA é escrito como:
+  
+    
+      
+        
+          (
+          
+            1
+            −
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                p
+              
+            
+            
+              ϕ
+              
+                i
+              
+            
+            
+              L
+              
+                i
+              
+            
+          
+          )
+        
+        
+          X
+          
+            t
+          
+        
+        =
+        
+          (
+          
+            1
+            +
+            
+              ∑
+              
+                i
+                =
+                1
+              
+              
+                q
+              
+            
+            
+              θ
+              
+                i
+              
+            
+            
+              L
+              
+                i
+              
+            
+          
+          )
+        
+        
+          ε
+          
+            t
+          
+        
+        .
+      
+    
+    {\displaystyle \left(1-\sum _{i=1}^{p}\phi _{i}L^{i}\right)X_{t}=\left(1+\sum _{i=1}^{q}\theta _{i}L^{i}\right)\varepsilon _{t}.}
+  
+Além disso, se configurarmos 
+  
+    
+      
+        
+          ϕ
+          
+            0
+          
+        
+        =
+        
+          θ
+          
+            0
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle \phi _{0}=\theta _{0}=1}
+  
+, então, obtemos uma formulação ainda mais sofisticada:
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            p
+          
+        
+        
+          ϕ
+          
+            i
+          
+        
+        
+          L
+          
+            i
+          
+        
+        
+          X
+          
+            t
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            q
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          L
+          
+            i
+          
+        
+        
+          ε
+          
+            t
+          
+        
+        .
+      
+    
+    {\displaystyle \sum _{i=0}^{p}\phi _{i}L^{i}X_{t}=\sum _{i=0}^{q}\theta _{i}L^{i}\varepsilon _{t}.}
+  
+
+
+== Modelos de ajuste ==
+
+
+=== Escolha de ===
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+
+A descoberta dos valores apropriados de 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ no modelo ARMA(
+  
+    
+      
+        p
+        ,
+        q
+      
+    
+    {\displaystyle p,q}
+  
+) pode ser facilitada ao mapear as funções de autocorrelação parcial para um valor estimado de 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e, da mesma forma, usar as funções de autocorrelação para um valor estimado de 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+. Mais informações podem ser obtidas considerando as mesmas funções para os resíduos de um modelo ajustado com uma seleção inicial de 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+.
+Peter J. Brockwell e Richard A. Davis recomendaram o uso do critério de informação de Akaike para encontrar 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+.
+
+
+=== Estimação dos coeficientes ===
+Em geral, modelos ARMA não podem ser, depois de escolher 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+, ajustados por regressão de mínimos quadrados para encontrar os valores dos parâmetros que minimizam o termo de erro. Geralmente, considera-se uma boa prática encontrar os menores valores de 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ e 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ que oferecem um ajuste aceitável para os dados. Para um modelo AR puro, as equações de Yule–Walker podem ser usadas para oferecer um ajuste.
+
+
+== Aplicações ==
+O modelo ARMA é apropriado quando um sistema é uma função de uma série de choques não observados (a parte da média móvel ou MA), assim como seu comportamento. Por exemplo, preços de ações podem ser chocados por informação fundamental, assim como pela exibição de tendências técnicas e efeitos de reversão à média devido aos participantes do mercado.
+
+
+== Generalizações ==
+A dependência de 
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+      
+    
+    {\displaystyle X_{t}}
+  
+ de valores passados e os termos de erro 
+  
+    
+      
+        
+          ε
+          
+            t
+          
+        
+      
+    
+    {\displaystyle \varepsilon _{t}}
+  
+ são assumidos como lineares, a não ser quando especificado o contrário. Se a dependência for não linear, o modelo é especificamente chamado de modelo de médias móveis não lineares (NMA), modelo auto-regressivo não linear (NAR) ou modelo auto-regressivo de médias móveis não lineares (NARMA).
+Os modelos auto-regressivos de médias móveis podem ser generalizados de outras formas. Se séries temporais múltiplas devem ser ajustadas, um vetor ARIMA (ou VARIMA) pode ser ajustado. Se a série temporal em questão exibe memória longa, então, a modelagem ARIMA fracionária (FARIMA ou ARFIMA) pode ser apropriada. Se os dados contêm efeitos sazonais, pode ser modelada por um modelo ARIMA sazonal (SARIMA) ou um modelo ARIMA periódico.
+Outra generalização é o modelo auto-regressivo multiescalar (MAR). Um modelo MAR é indexado pelos nós de uma árvore, enquanto um modelo auto-regressivo padrão (de tempo discreto) é indexado por números inteiros.
+Perceba que o modelo ARMA é um modelo univariado. Extensões para o caso multivariado são a auto-regressão vetorial (VAR) e a auto-regressão vetorial de médias móveis (VARMA).
+
+
+=== Modelo auto-regressivo de médias móveis com modelo de inputs exógenos (ARMAX) ===
+A notação ARMAX(
+  
+    
+      
+        p
+        ,
+        q
+        ,
+        b
+      
+    
+    {\displaystyle p,q,b}
+  
+) se refere ao modelo com 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+ termos auto-regressivos, 
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+ termos de média móvel e 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ termos de input exógeno. Este modelo contém os modelos AR(
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+) e MA(
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+) e uma combinação linear dos últimos 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ termos de uma série temporal conhecida e externa 
+  
+    
+      
+        
+          d
+          
+            t
+          
+        
+      
+    
+    {\displaystyle d_{t}}
+  
+. É dado por:
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+        =
+        
+          ε
+          
+            t
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            p
+          
+        
+        
+          φ
+          
+            i
+          
+        
+        
+          X
+          
+            t
+            −
+            i
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            q
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          ε
+          
+            t
+            −
+            i
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            b
+          
+        
+        
+          η
+          
+            i
+          
+        
+        
+          d
+          
+            t
+            −
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle X_{t}=\varepsilon _{t}+\sum _{i=1}^{p}\varphi _{i}X_{t-i}+\sum _{i=1}^{q}\theta _{i}\varepsilon _{t-i}+\sum _{i=1}^{b}\eta _{i}d_{t-i}.}
+  
+em que 
+  
+    
+      
+        
+          η
+          
+            1
+          
+        
+        ,
+        .
+        .
+        .
+        ,
+        
+          η
+          
+            b
+          
+        
+      
+    
+    {\displaystyle \eta _{1},...,\eta _{b}}
+  
+ são os parâmetros do input exógeno 
+  
+    
+      
+        
+          d
+          
+            t
+          
+        
+      
+    
+    {\displaystyle d_{t}}
+  
+.
+Algumas variantes não lineares de modelos com variáveis exógenas foram definidas.
+
+Pacotes estatísticos implementam o modelo ARMAX por meio do uso de variáveis "exógenas" ou "independentes". Deve-se tomar cuidado ao interpretar o output daqueles pacotes, porque os parâmetros estimados geralmente se referem à regressão:
+  
+    
+      
+        
+          X
+          
+            t
+          
+        
+        −
+        
+          m
+          
+            t
+          
+        
+        =
+        
+          ε
+          
+            t
+          
+        
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            p
+          
+        
+        
+          φ
+          
+            i
+          
+        
+        (
+        
+          X
+          
+            t
+            −
+            i
+          
+        
+        −
+        
+          m
+          
+            t
+            −
+            i
+          
+        
+        )
+        +
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            q
+          
+        
+        
+          θ
+          
+            i
+          
+        
+        
+          ε
+          
+            t
+            −
+            i
+          
+        
+        ,
+      
+    
+    {\displaystyle X_{t}-m_{t}=\varepsilon _{t}+\sum _{i=1}^{p}\varphi _{i}(X_{t-i}-m_{t-i})+\sum _{i=1}^{q}\theta _{i}\varepsilon _{t-i},}
+  
+em que 
+  
+    
+      
+        
+          m
+          
+            t
+          
+        
+      
+    
+    {\displaystyle m_{t}}
+  
+ incorpora todas as variáveis exógenas (ou independentes):
+  
+    
+      
+        
+          m
+          
+            t
+          
+        
+        =
+        c
+        +
+        
+          ∑
+          
+            i
+            =
+            0
+          
+          
+            b
+          
+        
+        
+          η
+          
+            i
+          
+        
+        
+          d
+          
+            t
+            −
+            i
+          
+        
+        .
+      
+    
+    {\displaystyle m_{t}=c+\sum _{i=0}^{b}\eta _{i}d_{t-i}.}
+  
+
+
+== Ver também ==
+Modelos ARCH
+ARIMA
+Série temporal
+
+
+== Referências ==

@@ -1,0 +1,396 @@
+Numerisk analyse er en gren av matematikk der en studerer metoder og algoritmer for å 
+utføre beregninger med tall. Algoritmene er ofte konstruert for å finne tilnærmede løsninger på matematiske problemstillinger som vanskelig lar seg løse eksakt. Utføring av beregninger på datamaskiner med aritmetikk basert på flyttall er også et viktig studieområde. 
+Fagfeltet numerisk analyse er svært viktig i mange praktiske anvendelser av matematikk, for eksempel i økonomi, fysikk, kjemi, meteorologi og ingeniørfag. Metoder som utvikles blir kalt numeriske metoder. Fagfeltet omtales også som numerikk og numerisk matematikk.  En person som arbeider med fagfeltet kalles en numeriker.  
+
+
+== Introduksjon ==
+Anvendt matematikk har tradisjonelt arbeidet med å gi fysiske problemstillinger en matematisk formulering, og så forsøkt å uttrykke løsninger  i form av kjente funksjoner. For praktiske problemstillinger laget en enkle beregningsmetoder som var mulig å utføre for hånd. Omfanget av problem som lot seg behandle på denne måten var imidlertid svært begrenset.
+Utvikling av datamaskiner har gjort det mulig å gjennomføre et stort antall beregninger på kort tid, samtidig som moderne teknologi og ingeniørkunst har stilt nye og større krav til matematikken. Parallelt med framveksten av datamaskiner har det derfor utviklet seg et stort behov for avanserte beregningsmetoder. Numerisk analyse er utviklet for å dekke dette behovet.
+
+
+=== Eksempel:  Polynomberegning ===
+En grunnleggende problemstilling i numerisk analyse er å finne effektive metode for beregning av funksjoner. Anta at en i en datamaskin - eller for hånd - har behov for å utføre beregning av polynomet
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          x
+          
+            3
+          
+        
+        +
+        3
+        
+          x
+          
+            2
+          
+        
+        +
+        6
+        x
+        +
+        2
+        
+      
+    
+    {\displaystyle f(x)=x^{3}+3x^{2}+6x+2\,}
+  
+
+Med argumentet x=2,1 vil polynomverdien rett fram kunne regnes ut som
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        2
+        ,
+        1
+        ×
+        2
+        ,
+        1
+        ×
+        2
+        ,
+        1
+        +
+        3
+        ×
+        2
+        ,
+        1
+        ×
+        2
+        ,
+        1
+        +
+        6
+        ×
+        2
+        ,
+        1
+        +
+        2
+        
+      
+    
+    {\displaystyle f(x)=2,1\times 2,1\times 2,1+3\times 2,1\times 2,1+6\times 2,1+2\,}
+  
+
+Denne beregningsmåten krever at en må en utføre tre addisjoner og fem multiplikasjoner. Alternativt kan en bruke den følgende funksjonsformen:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        (
+        (
+        x
+        +
+        3
+        )
+        x
+        +
+        6
+        )
+        x
+        +
+        2
+        
+      
+    
+    {\displaystyle f(x)=((x+3)x+6)x+2\,}
+  
+
+Selv om dette uttrykket er matematisk ekvivalent med det første, vil det ikke være det numerisk.   Utregning av funksjonen basert på det alternative uttrykket krever færre operasjoner: tre addisjoner og to multiplikasjoner.
+Den siste beregningsformen er basert på den såkalte Horners metode, en effektiv algoritme for beregning av polynom. Metoden er oppkalt etter den britiske matematikeren William Georg Horner. Horners metode er optimal i den forstand at enhver beregning av et polynom må bruke minst like mange operasjoner som denne metoden.
+
+
+== Tilnærmede løsninger ==
+Mange matematiske problem kan være vanskelige å løse eksakt, men det kan likevel være viktig å ha en løsning som er «nesten» riktig, kanskje god nok til praktisk bruk. Et viktig mål i numerisk analyse er å utvikle og studere løsningsmetoder som kan gi slike løsninger. Hva som skal til for å karakterisere løsningen som «nesten rett»  vil avhenge av både problemstilling og bruk.
+
+
+=== Eksempel: Tilnærming til tallet pi ===
+Forholdet mellom omkretsen og diameteren i en sirkel er lik tallet pi eller π. For mange praktiske formål er tilnærmingen 3,14 eller kanskje også 22/7 eller 355/113 nøyaktig nok med mange nok desimaler. Disse tilnærmingene er en aproksimativ løsning til problemstillingen å finne forholdet mellom omkretsen og diameteren i en sirkel. Gjennom historien har man funnet stadig bedre tilnærminger til pi med stadig flere desimaler.
+
+
+== Direkte og iterative metoder ==
+Direkte metoder finner løsningen på et problem i et endelig antall steg. Løsningen av en andregradsligning kan for eksempel uttrykkes i ett enkelt steg, fordi vi kjenner den analytiske formen til løsningen. I motsetning til direkte metoder, vil iterative metoder forsøke å finne en tilnærming til løsningen ved å gjenta en likeartet utregning igjen og igjen, inntil løsningen er god nok. En hver gjentaking av utregningen kalles en iterasjon. En velegnet metode vil gi en bedre tilnærming i hver iterasjon. 
+En iterasjon kan uttrykkes som en følge  {xn} der hvert ledd er definert som en funksjon av de foregående leddene i følgen, dvs 
+
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        =
+        f
+        (
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        ,
+        
+          x
+          
+            n
+            −
+            2
+          
+        
+        ,
+        .
+        .
+        .
+        .
+        ,
+        
+          x
+          
+            0
+          
+        
+        )
+        
+      
+    
+    {\displaystyle x_{n}=f(x_{n-1},x_{n-2},....,x_{0})\,}
+  
+
+Iterative metoder vil kreve en eller flere startverdier, for å sette iterasjonene i gang. Som regel inngår en gjetning på løsningsverdien blant startverdiene.  
+En iterativ metode kan være konvergent eller divergent, tilsvarende som for generelle følger.
+
+
+=== Eksempel: Fikspunktiterasjon ===
+Fikspunktiterasjon kan brukes til å finne en rot i en ligning x = f(x). Metoden er basert på den enkle rekursjonsregelen
+
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        =
+        f
+        (
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        )
+        
+      
+    
+    {\displaystyle x_{n}=f(x_{n-1})\,}
+  
+
+.Metoden kan for eksempel brukes til å løse den følgende andregradsligningen
+
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+        −
+        2
+        x
+        +
+        0
+        ,
+        75
+        =
+        0
+        
+      
+    
+    {\displaystyle x^{2}-2x+0,75=0\,}
+  
+
+I dette enkle tilfellet er de løsningene kjent, fra teorien for andregradsligninger, nemmelig x = 0,5 og x=1,5. Dersom vi ønsket å bruke fikspunktiterasjon til å løse ligningen, så kunne rekursjonsformelen skrives på formen 
+
+  
+    
+      
+        2
+        
+          x
+          
+            n
+          
+        
+        =
+        
+          x
+          
+            n
+            −
+            1
+          
+          
+            2
+          
+        
+        +
+        0
+        ,
+        75
+        
+        n
+        =
+        1
+        ,
+        2
+        ,
+        .
+        .
+        .
+        .
+      
+    
+    {\displaystyle 2x_{n}=x_{n-1}^{2}+0,75\quad n=1,2,....}
+  
+
+Bruker vi startverdien x0 = 0,1 finner vi tilnærmingene
+
+Med startverdien x0 = 1,6 vil metoden divergere.
+Selv om fikspunktiterasjon kan vises å konvergere for svært mange funksjoner f(x), så vil den vanligvis være en lite effektiv metode.  Det eksisterer mange mer effektive iterative metoder for å finne røtter i ligninger. En viktig metode er Newtons metode.
+
+
+== Nøyaktighet ==
+Numeriske beregninger vil være påvirket av en rekke feilkilder, og kartlegging av disse er viktig for å kunne kontrollere nøyaktigheten i resultatet. 
+
+Avrundingsfeil er feil som skyldes at datamaskinen ikke kan operere med flere enn et gitt antall siffer i beregningene. IEEE 754 er en teknisk standard for beregninger med flyttalsaritmetikk.
+Trunkeringsfeil er feil som skyldes at en uendelig prosess er blitt representert i algoritmen med et endelig antall steg.
+Diskretiseringsfeil  er feil som skyldes at en kontinuerlig funksjon av en kontinuerlig variabel er blitt tilnærmet med et endelig antall funksjonsberegninger.
+Modellfeil er idealiseringer og forenklinger i den matematiske modellen, slik at denne ikke eksakt representerer fenomenet som studeres.
+
+
+== Numerisk stabilitet ==
+Skal en numerisk algoritme være velegnet til praktisk bruk, så må den være numerisk stabil. Dette vil den være dersom små feil som kan opptre underveis ikke påvirker sluttresultatet i nevneverdig grad.  I en numerisk ustabil metode vil beregningsfeil eller feil i inngangsdata vokse over tid, og til slutt ødelegge sluttresultatet fullstendig. En slik ustabil metode sies også å være dårlig kondisjonert. 
+Både den problemformuleringen og løsningsalgoritmen kan hver for seg være dårlig kondisjonerte. Med en dårligkondisjonert problemstilling vil enhver algoritme feile. 
+I feilanalyse vil en studere hvordan feil som opptrer underveis kan forplante seg i en beregningsfølge. Feilanalyse er en viktig del av vurderingen av en hver numerisk algoritme.  
+
+
+== Underkategorier av numerisk analyse ==
+Numerisk analyse kan deles opp i en lang rekke underkategorier. I studiet av numeriske algoritmer inngår
+
+Numerisk approksimasjonsteori
+Interpolasjon
+Numerisk lineær algebra
+Numerisk løsning av ikke-lineære ligninger
+Numerisk løsning av differensialligninger
+Numerisk integrasjon
+Numerisk optimering
+
+
+== Historie ==
+
+Referanser til beregninger med tall finnes i mange av de eldste spor  av menneskelig sivilisasjon. 
+En babylonsk leirtavle gir en tilnærming til kvadrattroten av to, lengden av en diagonal i en likesidet trekant med side lik 1. Babylonerne brukte et seksagesimalt tallsystem, det vil si et tallsystem basert på grunntallet 60. Tilnærmingen til kvadratroten av to er gitt som en sum av fire ledd:
+
+  
+    
+      
+        1
+        +
+        (
+        24
+        
+          /
+        
+        60
+        )
+        +
+        (
+        51
+        
+          /
+        
+        60
+        
+          )
+          
+            2
+          
+        
+        +
+        (
+        10
+        
+          /
+        
+        60
+        
+          )
+          
+            3
+          
+        
+        =
+        1
+        ,
+        41421296...
+      
+    
+    {\displaystyle 1+(24/60)+(51/60)^{2}+(10/60)^{3}=1,41421296...}
+  
+
+Dette er korrekt med omtrent seks siffer i vårt titallssystem. Tavlen er tidfestet til 1800-1600 f.Kr, og den befinner seg i dag i Yale Babylon Collection.
+
+Den persiske matematikeren Muhammad ibn Mūsā al-Khwārizmī, født omkring 780 i dagens Usbekistan, ga mange bidrag til utvikling av matematikk. Et av læreverkene hans, i aritmetikk, bidro vesentlig til innføring av arabiske tall i Europa. Fra den latiniserte formen av navnet hans stammer ordet algoritme - brukt for å betegne en steg for steg prosedyre for å løse et matematisk problem. 
+Abakusen (kuleramma) var lenge et viktig hjelpemiddel for å utføre praktiske beregninger. Ved innføring av desimalsystemet ble behovet for dette hjelpemiddelet redusert. I Europa  skjedde innføring av dette systemet gradvis fra 1300-tallet til slutten av 1600-tallet. 
+Logaritmer ble utviklet av den skotske matematikeren John Napier (1550-1617), for å lette utføring av multiplikasjon, divisjon, potens og rot. Dette førte til at man trykte bøker med logaritmetabeller til hjelp i beregninger. Bøkene hadde gjerne også tabeller for trigonometriske funksjoner og annet. Regnestaven er basert på bruk av logaritmer, og denne var i allmenn bruk blant ingeniører og vitenskapsmenn fram til 1970-tallet da digitale elektroniske verktøy som kalkulatorer og datamaskiner ble billige nok til allmenn bruk.
+Isaac Newton (1643-1727) la grunnlaget for moderne matematikk og utviklet også mange metoder for tallberegninger. Hans beskrev metoden for å finne tilnærmede røtter i ligninger i verket De analysi per aequationes numero terminorum infinitas fra 1669. Metoden går blir i dag ofte referert til som Newton-Raphsons metode, også oppkalt etter den engelske matematikeren Joseph Raphson  (1648?-1715?).
+Etter Newton bidro en rekke av de store matematikeren til utviklingen av numeriske metoder, med viktige bidrag av Leonhard Euler (1707-1783), Joseph Louis Lagrange (1736-1813) og Carl Friedrich Gauss (1777-1855). Gausseliminasjon er en viktig numerisk metode for løsning av lineære ligningssystem. Denne metoden er en direkte metode som finner løsningen i et endelig antall steg, mens Gauss-Seidel-metoden er en alternativ iterativ metode.  Gauss deler æren for den iterative metoden sammen med den tyske matematikeren Philipp Ludwig von Seidel (1821-1896).
+
+På 1700-tallet ble det utviklet flere mekaniske regnemaskiner, blant annet av Wilhelm Schickard (1592-1635), Blaise Pascal (1623-1662) og Gottfried Leibniz (1646-1716). Den engelske matematikeren Charles Babbage (1791-1871) er berømt for sine skisser av programmerbare regnemaskiner,  og han kan regnes som «far» til dagens datamaskiner. Formålet med Babbages maskiner var å automatisere generering av logaritmetabeller, for å unngå de mange feilene som fulgte manuelle beregninger. 
+Etter Gauss var det liten utvikling innenfor numeriske metoder, helt fram til andre verdenskrig. Få matematikere var numerisk orientert, og numerisk analyse hadde et heller dårlig omdømme.  Ved behov for regnekraft under den andre verdenskrigen brukte en fremdeles grupper av mennesker som sammen gjennomførte kompliserte beregninger, ved hjelp av papir og blyant, tabeller, regnestaver og mekaniske kalkulatorer. Det engelske ordet «computer» ble brukt for å omtale en person, og ikke en maskin. 
+
+Under andre verdenskrigen var kryptografi  naturlig nok et viktige fagområde. Den engelske matematikeren og kryptografen Alan Turing (1912-1954) ledet en periode arbeidet med å knekke tyske kodesystem, og som ledd i dette arbeidet bidro han vesentlig til utvikling av automatiske regnemaskiner. En turingmaskin er en idealisert og formell beskrivelse av en datamaskin, samt hvilke beregninger eller oppgaver maskinen kan utføre.
+Parallelt med framveksten av teknologi for programmerbare regnemaskiner økte også innsatsen innenfor numerisk analyse. Artikkelen «Numerical inverting of matrices of high order» av John von Neumann (1903-1957) og Herman Goldstine (1913-2004), publisert i 1947,  kan regnes som den første moderne publikasjon innenfor fagfeltet.   Hovedemnet for artikkelen var Gausseliminasjon. Spesielt ble von Neumann en viktig pådriver for utvikling av numerisk analyse. 
+James H. Wilkinson (1919-1986) ga viktige bidrag til feilanalyse.
+Moderne datateknologi har vært pådriver for en eksplosiv utvikling av numerisk analyse. Fagfeltet danner grunnlaget for numerisk modellering, også kalt beregningsvitenskap. I dette fagfeltet studerer en hvordan en gitt problemstilling, i naturvitenskap, teknologi eller økonomi, kan bli gitt en matematisk formulering - som igjen kan danne grunnlaget for en numerisk beskrivelse av fenomenene.
+
+
+== Referanser ==
+
+
+== Litteratur ==
+Germund Dahlquist, Åke Björck (1974). Numerical methods. New Jersey: Prentice-Hall Inc. ISBN 0-13-627315-7. 
+Michael L. Overton (2001). Numerical computing with IEEE floating point arithmetic. Philadelphia: Society of Industrial and Applied Mathematics. ISBN 0-89871-571-7.

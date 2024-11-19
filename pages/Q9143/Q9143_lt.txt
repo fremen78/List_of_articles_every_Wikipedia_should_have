@@ -1,0 +1,73 @@
+Programavimo kalba – dirbtinė kalba, skirta programoms užrašyti. Programavimo kalbų pagalba sukurtos programos valdo elektroninių įrenginių, o ypač kompiuterių veikimą.
+Programavimo kalbos aprašymas susideda iš sintaksinių bei semantinių taisyklių, kurios, atitinkamai, nusako jos struktūrą ir prasmę. Daugumos programavimo kalbų sintaksinės ir semantinės taisyklės yra tam tikra forma aprašomos jų specifikacijose, kai kurių iš jų yra oficialiai paskelbtos – įgyvendintos (pvz., priimtais ISO standartais), tuo tarpu kitos yra įgyvendintos dominuojančiais sertifikatais (pvz., Perl).
+
+
+== Apibrėžtis ==
+Savybės, kurios paprastai yra keliamos kuriamoms programavimo kalboms:
+
+Funkcionalumas: Programavimo kalba yra kalba, skirta užrašyti programas kompiuteriui, kurios leistų panaudoti kompiuterio resursus, atliekant tam tikrus skaičiavimus arba algoritmus ir leistų valdyti išorinius įrenginius, pvz., spausdintuvus, robotus ir panašiai.
+Paskirtis: Skirtingai nuo natūraliųjų kalbų, kurios paprastai yra naudojamos tik žmonių tarpusavio bendravimui, programavimo kalbos komandų pagalba leidžia žmonėms bendrauti su kompiuteriais ar kitais elektroniniais įtaisais. Kai kurios programavimo kalbos yra naudojamos bendraujant vienam įrenginiui su kitu. Pavyzdžiui, PostScript programos paprastai yra sukuriamos kitų programų, kad valdyti spausdintuvus arba displėjus.
+Specialūs konstruktai: Programavimo kalbos gali turėti specialius konstruktus, skirtus apibrėžti ir manipuliuoti tam tikromis duomenų struktūromis arba kontroliuoti duomenų srautus.
+Panaudojimo galimybės: Skaičiavimų teorija klasifikuoja programavimo kalbas pagal skaičiavimus, kuriuos galima atlikti naudojant šias programavimo kalbas. Visomis pilnai Tiuringo kalbomis galima sukurti tą pačią algoritmų aibę. Pavyzdžiui, SQL ir Charity yra nepilnai Tiuringo kalbos, nors taip pat yra vadinamos programavimo kalbomis.
+Kalbos, kurios nėra skirtos atlikti skaičiavimams, tokios kaip žymėjimų kalbos, pavyzdžiui, HTML, arba formalios gramatikos, pvz., BNF, paprastai nėra laikomos programavimo kalbomis. Programavimo kalbos (pilnos arba ne visai pilnos Tiuringo kalbos) gali būti integruotos į šias ne skaičiavimais atlikti skirtas kalbas.
+
+
+== Istorija ==
+Kai tik atsirado pirmi (primityvūs) kompiuteriai, jiems pradėtos rašyti programos kalbomis, atitinkančiomis asemblerio kalbą.
+
+1945 m. sukurta pirmoji žinoma kalba Plankalkül.
+XX a. 6-ajame dešimtmetyje susidarius palankioms sąlygoms, sukurta nemažai kalbų, tarp jų Fortran (1954), Algol 58 (1958), Lisp (1959).
+Vėliau sukurta daug įvairių tipų ir paskirčių kalbų; žinomesnės iš jų: Cobol (1960), Simula (1962), BASIC (1964), Logo (1967), Pascal (1971), C (1972), C++ (1983), Perl (1987), Java (1995), PHP (1997), C# (2000)
+Nuo XX a. 6-ojo dešimtmečio vidurio dauguma kalbų kurtos ne iš naujo, o tobulinant ir jungiant jau sukurtas kalbas.
+
+
+== Skirstymas ==
+Čia išvardinti keli programavimo kalbų klasifikavimo būdai.
+
+
+=== Pagal vykdymo tipą ===
+Vykdymo tipas – būdas, kaip programos kodas paverčiamas kompiuteriui suprantamomis instrukcijomis ir vykdomas.
+
+Teorinės kalbos – aprašytos, tačiau nevykdomos.
+Kompiliuojamos kalbos – kompiliatorius iš pradinio teksto sukuria vykdomą programą. (pvz., C, Pascal)
+Interpretuojamos kalbos – jų išeities tekstas analizuojamas vykdant. (pvz., BASIC, PHP, Perl, Python, Ruby)
+Mišrios kalbos – naudojamas ir kompiliatorius, ir interpretatorius (pvz., Java; taip pat žr. JIT)
+
+
+=== Pagal abstrakcijos lygį ===
+Kuo kalba abstraktesnė, tuo ji yra aukštesnio lygio.
+
+Mašininis kodas
+Žemo lygio kalbos (pvz., Asembleris)
+Sisteminės kalbos (pvz., C)
+Objektinės kalbos (pvz., SmallTalk)
+
+
+=== Pagal vyraujančia paradigmą ===
+Funkcinės kalbos (pvz., Lisp, ML)
+Procedūrinės kalbos (pvz., C, Pascal)
+Objektinės kalbos (pvz., SmallTalk, Java, Ruby)
+Loginės kalbos (pvz., Prolog)
+Daugaparadigmės kalbos (pvz., Python (nors dažniausiai naudojama objektinė paradigma)
+
+
+=== Pagal paskirtį ===
+Kai kurios kalbos dažniau sutinkamos tam tikrose, joms būdingose, nišose. Vienos kalbos buvo sukurtos specialiai tam tikros srities problemoms spręsti, kitos išpopuliarėjo savo srityje dėl istorinių aplinkybių.
+Keletas išskirtinių sričių su joms būdingomis kalbomis:[reikalingas šaltinis]
+
+Sisteminis programavimas (operacinių sistemų, kompiliatorių) – C, C++;
+Interneto svetainių programavimas – PHP, Perl, Python, Adobe ColdFusion;
+Matematiniai skaičiavimai – PROLOG, Fortran, MATLAB, MAPLE;
+Mokymas – Pascal, Logo.
+
+
+== Šaltiniai ==
+
+
+== Nuorodos ==
+
+Programavimo kalbos (angl.) Apžvalgos ir palyginmai
+99 Buteliai alaus (angl.) Archyvuota kopija 2010-02-09 iš Wayback Machine projekto. Daugelio programavimo kalbų pavyzdžių kolekcija
+„Labas, Pasauli“ programos skirtingomis kalbomis
+sourceforge.net naudojamų kalbų populiarumo palyginimas
+TIOBE programavimo kalbų populiarumo indeksas Archyvuota kopija 2007-11-29 iš Wayback Machine projekto.

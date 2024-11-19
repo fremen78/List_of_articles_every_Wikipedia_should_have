@@ -1,0 +1,309 @@
+Ett bevis eller mer generellt en härledning, är en följd av slutledningar, vilka från bestämda axiom och givna premisser leder fram till en slutsats. 
+I matematiken kallas ett påstående som formellt kan bevisas, för ett teorem eller en sats. 
+Ett påstående, som är obevisat, kallas för en förmodan. Hjälpsatser, som används vid bevisföringen kallas för lemman. I praktiken är bevisföring en kompromiss mellan stringens och enkelhet. Det har i matematikhistorien vid flera tillfällen hänt, att fel upptäckts i publicerade bevisförsök för satser, som tidigare betraktats som giltiga. Beviset för fyrfärgssatsen var under en period kontroversiellt eftersom det innehöll för tiden nya (datorberoende) kontrollmetoder, men numera accepteras dessa.
+Ett matematiskt bevis  kan inte jämföras med bevis i andra vetenskaper, vars grundsatser kan förändras.
+
+
+== Härledningar ==
+
+I logiken studeras bevis ingående. Matematiska bevis kan formaliseras till en följd av små argumentationssteg. Inom ramen för första ordningens logik kan man definiera dessa exakt och få vad man kallar ett härledningssystem. Ett sådant system har ett antal slutledningsregler, som motsvarar vart och ett av argumentationsstegen. En härledning i denna mening består av en ändlig följd av formler F0, F1, F2, ... , Fn, där dessa är axiom, premisser och slutledningar. För varje slutledning i härledningen, preciseras från vilka formler den följer. Den sista formeln Fn är härledningens slutsats (konklusion). 
+Exempel på en härledning:
+
+F0: Varje primtal är udda. (Detta är inte sant; det finns ett jämnt primtal, nämligen 2.)
+F1: p är ett primtal.
+F2: p är udda.
+F0 och F1 är härledningens premisser, dvs de påståenden som argumentationen utgår ifrån. F2 är härledningens konklusion. Att F2 följer ur F0 och F1 borde vara klart för alla som betraktar härledningen. Den härledningsregel som tillåter oss dra slutsatsen F2 ur F0 och F1 kallas universell specifikation. Observera att F0 är falsk, eftersom det jämna talet 2 är ett primtal. Detta faktum hindrar dock inte härledningen från att vara korrekt. Minns att en härledning är en argumentationskedja som garanterar att slutsatsen håller, förutsatt vissa premisser. Alltså är det sant att säga att p verkligen är udda under de givna antagandena. Om premissernas sanningshalt är oviss kallas konklusionen petitio principii, vilket är ett materiellt bevisfel och leder till att beviset inte är bindande.
+Observera även att man behöver inte alls förstå betydelsen av begreppen "primtal" och "udda" för att inse att härledningen är korrekt. Man hade likaväl kunna byta ut dessa termer mot några mer generella:
+
+F3: Varje X är Y.
+F4: p är X.
+F5: p är Y.
+Detta är en korrekt härledning av vilken den tidigare är ett specialfall. Det som spelar roll för om en härledning är korrekt eller ej är alltså härledningens form, och inte betydelsen av de ingående termerna.
+
+
+== Bevismetoder ==
+Nedan tas några vanliga metoder för att bevisa satser upp.
+
+
+=== Direkt bevis ===
+
+I ett direkt bevis används axiom, definitioner och tidigare kända satser för att bevisa den eftersökta satsen.
+Exempelvis kan man bevisa att summan av två jämna heltal alltid är jämnt:
+
+För alla två jämna heltal x och y gäller det att 
+  
+    
+      
+        x
+        =
+        2
+        n
+      
+    
+    {\displaystyle x=2n}
+  
+ och 
+  
+    
+      
+        y
+        =
+        2
+        m
+      
+    
+    {\displaystyle y=2m}
+  
+ för några heltal n och m, eftersom x och y är jämna. Men då är 
+  
+    
+      
+        x
+        +
+        y
+        =
+        2
+        n
+        +
+        2
+        m
+        =
+        2
+        (
+        n
+        +
+        m
+        )
+      
+    
+    {\displaystyle x+y=2n+2m=2(n+m)}
+  
+ och alltså är summan jämn.
+
+
+=== Indirekt eller kontrapositivt bevis ===
+I ett indirekt eller kontrapositivt bevis bevisar man ett påstående på formen "om p så q" genom att använda kontraposition och bevisa det ekvivalenta påståendet "om icke-q så icke-p". Det är ett slags motsägelsebevis.
+
+
+=== Motsägelsebevis ===
+
+I ett motsägelsebevis antar man motsatsen till vad man vill bevisa och visar att detta leder till en motsägelse, alltså måste påståendet man började med vara sant. Ett känt exempel är beviset till att kvadratroten ur 2 är irrationellt:
+
+Anta att 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ är rationellt, dvs 
+  
+    
+      
+        
+          
+            2
+          
+        
+        =
+        
+          
+            a
+            b
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}={\frac {a}{b}}}
+  
+, där a och b är nollskilda heltal utan gemensamma delare. Detta ger 
+  
+    
+      
+        
+          
+            2
+          
+        
+        b
+        =
+        a
+      
+    
+    {\displaystyle {\sqrt {2}}b=a}
+  
+. Kvadrering av båda sidor ger 
+  
+    
+      
+        2
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2b^{2}=a^{2}}
+  
+. Eftersom 2 delar vänsterledet måste 2 vara en faktor i 
+  
+    
+      
+        
+          a
+          
+            2
+          
+        
+      
+    
+    {\displaystyle a^{2}}
+  
+. Alltså måste 2 vara en faktor även i a och vi kan skriva 
+  
+    
+      
+        a
+        =
+        2
+        c
+      
+    
+    {\displaystyle a=2c}
+  
+ för något heltal c. Den ursprungliga ekvationen ger nu 
+  
+    
+      
+        2
+        
+          b
+          
+            2
+          
+        
+        =
+        4
+        
+          c
+          
+            2
+          
+        
+        ⇒
+        
+          b
+          
+            2
+          
+        
+        =
+        2
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 2b^{2}=4c^{2}\Rightarrow b^{2}=2c^{2}}
+  
+ och alltså måste även b ha 2 som faktor. Men vi antog i början att a och b saknade gemensamma delare, så detta ger en motsägelse. Alltså är 
+  
+    
+      
+        
+          
+            2
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2}}}
+  
+ inte rationellt.
+
+
+=== Matematisk induktion ===
+
+Vid ett induktionsbevis bevisas påståendet först för ett grundfall. Sedan används en induktionsregel för att bevisa att ett stort antal (ofta oändligt) fall är giltiga. Ofta används induktion över de positiva eller de naturliga talen, då man har ett påstående 
+  
+    
+      
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)}
+  
+ för varje naturligt tal n. I ett induktionsbevis över de naturliga talen behöver man då visa två saker:
+
+P(0) är sant.
+P(n) är sant implicerar att P(n+1) är sant.
+då man kan dra slutsatsen att 
+  
+    
+      
+        P
+        (
+        n
+        )
+      
+    
+    {\displaystyle P(n)}
+  
+ är sant för varje naturligt tal n. Ett exempel på felaktigt användande av induktion är paradoxen alla hästar har samma färg.
+
+
+=== Existensbevis eller icke-konstruktivt bevis ===
+Ett existensbevis eller ett icke-konstruktivt bevis slår fast att det existerar objekt med en viss egenskap utan att visa hur dessa objekt kan konstrueras. Icke-konstruktiva bevis är ofta motsägelsebevis där icke-existensen av något objekt visas vara omöjligt.  
+
+
+=== Konstruktivt bevis ===
+Ett konstruktivt bevis visar en metod att hitta objekten i fråga.
+
+
+=== Elementärt bevis ===
+I ett elementärt bevis används endast grundläggande begrepp och används speciellt inom talteori för bevis som inte använder komplexanalytiska metoder. Vissa resultat, som primtalssatsen, bevisades först med hjälp av icke-elementära metoder för att senare få ett elementärt bevis.
+
+
+== Oavgörbara påståenden ==
+Ibland går det att bevisa att ett påstående INTE går att bevisa eller motbevisa utgående från de givna premisserna, se till exempel kontinuumhypotesen. I alla logiska system som innefattar de naturliga talen går det att formulera påståenden som kräver lika många argumentationssteg som de naturliga talen för att bevisas eller motbevisas. Då antalet argumentationssteg är oändligt blir påståendet i praktiken obevisbart.
+
+
+== Se även ==
+Bevisbörda
+Deduktionsteoremet
+Teorem
+Satslogik
+Quod erat demonstrandum
+
+
+== Referenser ==
+
+
+=== Noter ===
+
+
+=== Källor ===
+Eriksson, Kimmo; Hillevi Gavel (2002). Diskret matematik och diskreta modeller. Lund: Studentlitteratur. ISBN 91-44-02465-7 
+Metalogic. An Introduction to the Metatheory of Standard First-Order Logic, Geoffrey Hunter, MACMILLAN 1971.
+Velleman, Daniel (2006). How To Prove It. Cambridge University Press. ISBN 0-521-67599-5

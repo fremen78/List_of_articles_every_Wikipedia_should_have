@@ -1,0 +1,161 @@
+Algorytm – skończony ciąg jasno zdefiniowanych czynności koniecznych do wykonania pewnego rodzaju zadań, sposób postępowania prowadzący do rozwiązania problemu. Można go przedstawić na schemacie blokowym.
+Słowo „algorytm” pochodzi od łacińskiego słowa algorithmus, oznaczającego wykonywanie działań przy pomocy liczb arabskich (w odróżnieniu od abacism – przy pomocy abakusa), które z kolei wzięło się od nazwy „Algoritmi”, zlatynizowanej wersji nazwiska „al-Chwarizmi” Abu Abdullaha Muhammada ibn Musy al-Chuwarizmiego, matematyka perskiego z IX wieku.
+Zadaniem algorytmu jest przeprowadzenie systemu z pewnego stanu początkowego do pożądanego stanu końcowego. Badaniem algorytmów zajmuje się algorytmika. Algorytm może zostać zaimplementowany w postaci programu komputerowego.
+Jako przykład stosowanego w życiu codziennym algorytmu podaje się często przepis kulinarny. Dla przykładu, aby ugotować bigos, należy w określonej kolejności oraz odstępach czasowych (imperatyw czasowy) dodawać właściwe rodzaje kapusty i innych składników. Może istnieć kilka różnych przepisów dających na końcu bardzo podobną potrawę. Przykład ten ma wyłącznie charakter poglądowy, ponieważ język przepisów kulinarnych nie został jasno zdefiniowany. Algorytmy zwykle formułowane są w sposób ścisły w oparciu o język matematyki.
+W niektórych krajach (między innymi Stanach Zjednoczonych) algorytmy mogą zostać opatentowane, jeżeli zostaną zaimplementowane w jakimś praktycznym celu. Przeciwnicy tego podejścia twierdzą, że patentowanie algorytmów spowalnia rozwój informatyki, bo jeden producent może uzyskać monopol na pisanie oprogramowania tworzącego pewne typy plików (jak było to w przypadku GIF). Wiele koncernów komputerowych prowadzi między sobą spory prawne dotyczące praw własności do niektórych patentów. Kontrargumentem zwolenników patentów na oprogramowanie jest prawo własności intelektualnej (którą jest na przykład utwór muzyczny, będący wytworem intelektu i pracy muzyka), zakładające, że program jest intelektualną własnością twórcy.
+
+
+== Definicja klasyczna ==
+Algorytm – jednoznaczny przepis obliczenia w skończonym czasie pewnych danych wejściowych do pewnych danych wynikowych.
+Zazwyczaj przy analizowaniu bądź projektowaniu algorytmu zakłada się, że dostarczane dane wejściowe są poprawne, czasem istotną częścią algorytmu jest nie tylko przetwarzanie, ale i weryfikacja danych.
+Zgodnie z założeniem o jednoznaczności – dla identycznego zestawu danych początkowych, algorytm zdefiniowany klasycznie zawsze zwróci identyczny wynik.
+
+
+=== Przykład ===
+Znalezienie największej wśród niepustej, nieposortowanej listy przypadkowych liczb można przeprowadzić na wiele sposobów; jednym z najszybszych jest przedstawiony poniżej. Niech indeks wskazuje aktualnie badany element listy (jeśli jest ona numerowana, może on oznaczać np. jej numer), a maksimum oznacza największą dotychczas znalezioną wartość.
+
+Niech indeks wskazuje na pierwszy element (początek) listy.
+Niech maksimum zawiera wartość elementu listy wskazywanego przez indeks (tzn. pierwszego).
+Jeżeli zawartość elementu listy wskazywanego przez indeks jest większa od zawartości maksimum, to przypisz maksimum wartość elementu wskazywanego przez indeks.
+Niech indeks wskazuje kolejny element listy; jeśli to niemożliwe (tzn. indeks wskazuje ostatni element listy, czyli jej koniec), przejdź do punktu 6.
+Wróć do punktu 3.
+Koniec.
+Wykonanie tego algorytmu spowoduje, że największa liczba na wspomnianej liście będzie wartością maksimum. Dodatkowym atutem jest fakt, iż algorytm ten działa dla list dowolnej długości, ponieważ nie wykorzystuje on liczby elementów listy, lecz tylko tzw. operację następnika elementu danej listy, tzn. przejścia do następnego jej elementu. Niemożność wskazania kolejnego elementu jest wtedy równoważna temu, iż dany element jest ostatni na liście.
+
+
+=== Inne przykłady ===
+algorytm Euklidesa
+algorytm Fermata
+algorytm Luhna
+algorytm mrówkowy
+algorytmy kompresji
+algorytmy kryptograficzne
+algorytmy przeszukiwania drzew: min-max i alpha-beta
+algorytmy sortowania
+algorytm unifikacji
+
+
+== Klasyfikacja algorytmów ==
+Istnieje wiele różnych sposobów podziału algorytmów na grupy, jednak problem ten wzbudza kontrowersje.
+Podstawowe paradygmaty tworzenia algorytmów komputerowych:
+
+dziel i zwyciężaj – dzielimy problem na kilka mniejszych, a te znowu dzielimy, aż ich rozwiązania staną się oczywiste
+programowanie dynamiczne – problem dzielony jest na kilka, ważność każdego z nich jest oceniana i po pewnym wnioskowaniu wyniki analizy niektórych prostszych zagadnień wykorzystuje się do rozwiązania głównego problemu
+metoda zachłanna – nie analizujemy podproblemów dokładnie, tylko wybieramy najbardziej obiecującą w danym momencie drogę rozwiązania
+programowanie liniowe – oceniamy rozwiązanie problemu przez pewną funkcję jakości i szukamy jej minimum
+wyszukiwanie wyczerpujące – przeszukujemy zbiór danych, aż do odnalezienia rozwiązania
+heurystyka – człowiek na podstawie swojego doświadczenia tworzy algorytm, który działa w najbardziej prawdopodobnych warunkach; rozwiązanie zawsze jest przybliżone.
+Najważniejsze techniki implementacji algorytmów komputerowych to:
+
+proceduralność – algorytm dzieli się na szereg podstawowych procedur. Wiele algorytmów ma wspólne biblioteki standardowych procedur, z których są one wywoływane w razie potrzeby.
+praca sekwencyjna – wykonywanie poszczególnych procedur algorytmu, według kolejności ich wywołań; naraz pracuje tylko jedna procedura
+praca wielowątkowa – procedury wykonywane są sekwencyjnie, lecz kolejność ich wykonania jest trudna do przewidzenia dla programisty
+praca równoległa – wiele procedur wykonywanych jest w tym samym czasie, wymieniają się one danymi
+rekurencja – procedura lub funkcja wywołuje sama siebie, aż do uzyskania wyniku lub błędu
+obiektowość – procedury i dane łączy się w pewne klasy reprezentujące najważniejsze elementy algorytmu oraz stan wewnętrzny wykonującego je systemu
+algorytm probabilistyczny – działa poprawnie z bardzo wysokim prawdopodobieństwem, ale wynik nie jest pewny.
+
+
+=== Algorytmy równoległe ===
+
+Jednym ze sposobów rozwiązywania złożonych problemów jest zastosowanie algorytmów równoległych. Oznacza to, że program nie jest wykonywany tylko jeden raz na jednym procesorze, ale wielokrotnie równolegle na wielu różnych maszynach. Podejście takie jest stosowane od lat w superkomputerach, jednak w takiej realizacji jest ono bardzo kosztowne. Nowym pomysłem jest tutaj zastosowanie sieci zwykłych komputerów tworzących klaster. Całe zadanie jest wtedy rozdzielane na wiele maszyn i obliczane równolegle przy pomocy tysięcy procesorów. Czasami taką potężną sieć rozproszoną nazywa się grid. Przykładem jej zastosowania może być program SETI@home, gdzie dane z nasłuchu kosmosu analizują dziesiątki tysięcy komputerów należących do zwykłych użytkowników. Maszyny są podłączone do Internetu, przez który przesyłają wyniki pracy uruchomionych na nich aplikacji. Rozwinięciem tego rozwiązania jest projekt parasolowy BOINC@home, który obejmuje kilkadziesiąt tego typu projektów co SETI@home, zajmujących się zagadnieniami z wielu dziedzin nauki, nie tylko ścisłych.
+Obecnie algorytmy równoległe mogą być wykorzystywane na zwykłych domowych komputerach, ponieważ ogromna większość z nich posiada procesory wielordzeniowe, które w uproszczeniu są połączeniem kilku procesorów w jeden. Po roku 2010 rozpowszechniło się nowe podejście do obliczeń równoległych polegające na wykorzystywaniu w tym celu kart graficznych; nosi ono nazwę GPGPU. Kilka projektów z BOINC@home oraz projekt z zakresu biologii molekularnej Folding@home pozwala na zastosowanie karty graficznej, a nawet kilku zamontowanych w jednym komputerze, do realizacji obliczeń rozproszonych. Umożliwia to wykorzystanie ogromnej liczby (do kilku tysięcy) procesorów karty graficznej działających równolegle.
+Nowym pomysłem na implementację algorytmów równoległych jest wykorzystanie do tego celu DNA. W jednej kropli wody znajdują się miliony cząstek tego kwasu. Jeżeli zsyntetyzujemy je tak, aby wykonywały pewien algorytm, to w ułamku sekundy potrzebnym na reakcje chemiczne komputer oparty na DNA znajdzie rozwiązanie bardzo złożonego problemu. Przykładem są tutaj bakterie, które zaprogramowano, aby rytmicznie emitowały światło. Dziedziną nauki zajmującą się algorytmami w połączeniu z biologią jest bioinformatyka.
+
+
+=== Algorytmy sztucznej inteligencji ===
+Wiele problemów związanych z codziennym życiem to problemy NP-trudne. Przykładami ich mogą być znajdowanie najkrótszej trasy łączącej pewną liczbę miast lub optymalne pakowanie plecaka. Oznacza to, że algorytmy mogą radzić sobie z takimi problemami tylko w przybliżeniu lub w bardzo szczególnej sytuacji. Sterowany algorytmem niedeterministycznym (przybliżonym) robot nie potrafi odnaleźć najkrótszej drogi w bardzo złożonym środowisku, mimo że dla człowieka może być ona oczywista.
+Inżynierowie próbują rozwiązywać problemy NP-trudne przez naśladowanie żywych organizmów. Jeżeli nie udaje się sformułować jasnego algorytmu rozwiązującego dany problem, można maszynę wyposażyć w zdolność do samodzielnego uczenia się. Zagadnieniem tym zajmuje się dział określany jako sztuczna inteligencja. Tego podejścia nie należy mylić z ludzką inteligencją. Maszyny naśladują tylko pewne cechy istot żywych, ale na razie nie są w stanie im dorównać na wielu polach.
+
+
+=== Algorytmy genetyczne ===
+
+Jest to cała grupa algorytmów służąca do poszukiwania najlepszych rozwiązań danego problemu. Zasada ich działania opiera się na obserwacji praw natury oraz przeniesieniu ich na grunt matematyki i informatyki. U podstaw algorytmów genetycznych znajduje się dobór naturalny oraz dziedziczność. Najlepiej przystosowane jednostki (niosące rozwiązania zbliżone do właściwego) są powielane oraz krzyżowane z sobą w celu powielenia informacji. Bardzo wiele rzeczywistych problemów można rozwiązać w ten sposób.
+
+
+=== Algorytmy kwantowe ===
+
+Niektóre algorytmy szyfrowania (np. RSA) opierają się na trudności rozkładu liczby na czynniki pierwsze (faktoryzacja). Dla tego problemu nie jest znany algorytm wielomianowy, którego można by użyć na klasycznym komputerze, czyli opartym o elementy półprzewodnikowe. Natomiast algorytmy zaimplementowane na komputerach kwantowych, w odróżnieniu od komputerów elektronicznych opartych na bitach, mogą posługiwać się qubitami oraz zjawiskiem splątania. Na tego typu komputerach możliwy jest rozkład liczby na czynniki pierwsze w czasie wielomianowym np. za pomocą algorytmu Shora.
+Należy jednak mieć na uwadze, że dużym problemem komputerów kwantowych jest dekoherencja ich stanów – w ten sposób bardzo łatwo może dojść do utraty danych. Rozwiązaniem może być tutaj wykorzystanie splątania do teleportacji stanu kwantowego na kolejne cząstki elementarne. W związku z tym wielu naukowców pracuje już dziś nad implementacją algorytmów kryptografii kwantowej. Przykładem tego jest szyfrowanie danych z wykorzystaniem splątanych fotonów. Obecnie kierunki prac nad komputerami kwantowymi to:
+
+fotonika – komputery oparte na fotonach,
+spinotronika – komputery operujące spinem elektronów zamiast napięciem.
+
+
+== Ograniczenia algorytmów ==
+Prawidłowy algorytm komputerowy musi kiedyś zakończyć swoją pracę. Oznacza to, że problem musi być rozwiązany z wykorzystaniem dostępnych zasobów obliczeniowych, w skończonym czasie. Jeżeli czas obliczeń algorytmu, dla coraz większego zbioru danych, rośnie szybciej niż dowolna funkcja wielomianowa, to mówi się, że nie jest praktycznie obliczalny. Jedną z klas problemów, dla których nie znamy wielomianowych rozwiązań, są problemy NP-trudne. Jeśli znamy wielomianowy algorytm weryfikujący poprawność rozwiązania problemu NP-trudnego, to problem ten nazywamy NP-zupełnym. Pytanie, czy P=NP, czyli czy istnieją szybkie algorytmy rozwiązujące problemy NP-zupełne, jest jednym z najbardziej palących pytań we współczesnej informatyce. Ponadto istnieją problemy nierozwiązywalne za pomocą żadnego algorytmu.
+
+
+== Implementacja algorytmów ==
+
+
+=== Algorytmy komputerowe ===
+Komputery przetwarzają przekazywane im informacje z wykorzystaniem algorytmów. Program jest algorytmem zapisanym w języku zrozumiałym dla maszyny (kodzie maszynowym). Każdy poprawny kod maszynowy da się przełożyć na zestaw instrukcji dla teoretycznego modelu komputera – maszyny Turinga.
+Zwykle algorytmy pracują na danych wejściowych i uzyskują z nich dane wyjściowe. Informacje zapisane w pamięci maszyny traktuje się jako jej stan wewnętrzny. Niektóre algorytmy mają za zadanie wyłącznie przeprowadzanie komputera z jednego stanu wewnętrznego do innego.
+Każdy algorytm komputerowy musi być wprowadzony do komputera w bardzo rygorystycznie zdefiniowanym języku. Ludzie często komunikując się, przesyłają między sobą informacje wieloznaczne. Komputery mogą reagować tylko na całkowicie jednoznaczne instrukcje. Jeżeli dany algorytm da się wykonać na maszynie o dostępnej mocy obliczeniowej i pamięci oraz w akceptowalnym czasie, to mówi się, że jest obliczalny.
+Poprawne działanie większości algorytmów implementowanych w komputerach opiera się na kolejnej realizacji pewnego zestawu warunków. Jeżeli któryś z nich nie zostanie spełniony, to program kończy się komunikatem o błędzie. Czasami podczas implementacji algorytmu nawet istotny warunek może zostać pominięty. Przykładowo, w programie dzielącym przez siebie dwie liczby użytkownik poleca wykonać dzielenie przez zero. Działanie aplikacji, która nie sprawdzi warunku „czy dzielnik nierówny zero”, zostanie przerwane przez system operacyjny komputera.
+
+
+=== Algorytmy poza komputerami ===
+Implementacja algorytmu w ogólności oznacza występowanie pewnego podobieństwa algorytmu opisanego w ludzkim języku do fizycznego zjawiska lub procesu. Czasami algorytm może być podstawą budowanego przez ludzi urządzenia, jak np. komputer. Jednak o implementacji możemy mówić również wtedy, kiedy pewien system zachowuje się podobnie do algorytmu. Dla przykładu mózg ptaka implementuje arytmetykę w postaci sieci neuronowej, dzięki temu zwierzę jest w stanie porównywać pewne odstępy czasu. W przypadku maszyn algorytm może zostać zaimplementowany jako pewna sieć połączeń elektrycznych, pneumatycznych bądź mechanicznych. Przykładem może być tutaj analogowy regulator obrotów z pierwszych silników parowych, realizujący algorytm P (proporcjonalny). Przy takim podejściu sukces nie oznacza zatrzymania się algorytmu, lecz utrzymywanie pewnego stanu systemu. Możemy np. powiedzieć, że algorytm utrzymywania życia działa poprawnie, aż do śmierci organizmu. Poprawny algorytm ma utrzymywać pewne parametry żywej istoty (np. temperaturę) w optymalnym zakresie.
+
+
+=== Algorytm a opisujący go język ===
+Należy zdawać sobie sprawę z różnicy między algorytmem, będącym niezależnym od jego implementacji przepisem, a programem, który może zostać zinterpretowany i wykonany przez komputer. Poniższe fragmenty programów są realizacją tego samego algorytmu sumującego trzy trójki:
+Dodawanie w języku C:
+
+Ten sam język, ale z zastosowaniem pętli:
+
+Język C, zapis proceduralny z zastosowaniem rekurencji:
+
+Asembler x86:
+
+Powyższe programy napisane są w różnych językach programowania, używających różnych poziomów abstrakcji, przy czym zapis w asemblerze jest na najniższym poziomie abstrakcji, to znaczy jest najbliżej „prawdziwego”, wykonywanego bezpośrednio przez procesor komputera, kodu.
+
+
+=== Błędy w implementacji ===
+Wciąż rozwijana inżynieria oprogramowania pozwala na tworzenie aplikacji, których kod źródłowy ma setki tysięcy linii, przy równoczesnym zachowaniu kontroli nad całością projektu, co pozwala zminimalizować ilość błędów podczas implementacji algorytmów.
+
+
+== Historia algorytmów ==
+
+
+=== Początki ===
+Słowo algorytm pochodzi od nazwiska arabskiego matematyka z IX wieku, Muhammada ibn Musa al-Chuwarizmiego. Początkowo słowem algorism nazywano czynności konieczne do wykonywania obliczeń z użyciem dziesiętnego systemu liczbowego. Obecne znaczenie słowa algorytm, jako zestawu ścisłych reguł, powstało wraz z rozwojem matematyki i techniki. Wynalezienie zbiorów zasad pozwalających na obliczanie parametrów konstruowanych maszyn, stało się podstawą rewolucji przemysłowej zapoczątkowanej w końcu XVIII stulecia. Jednak dopiero zbudowanie maszyn, które same mogły realizować pewne proste algorytmy, stało się przełomem. Początkowo miały one postać układów mechanicznych mogących realizować proste obliczenia.
+Ogromnego postępu dokonał w tej dziedzinie w 1842 roku Charles Babbage, który na podstawie swoich doświadczeń sformułował ideę maszyny analitycznej zdolnej do realizacji złożonych algorytmów matematycznych. W pracy Babbage wspierała Ada Lovelace, która przetłumaczyła dla niego prace włoskiego matematyka dotyczące algorytmu obliczania liczb Bernoulliego. Prace Lovelace dotyczące implementacji tego algorytmu na maszynę różnicową zawierały opis swoistego języka programowania. Niestety, Babbage nigdy nie zbudował swojego mechanicznego komputera. Programy napisane przez Lovelace zostały przetestowane na modelu maszyny różnicowej wykonanym w XX wieku i okazały się poprawne.
+
+
+=== Rozwój maszyn liczących ===
+Wraz z wynalezieniem pod koniec XIX wieku kart perforowanych elektro-mechaniczne maszyny osiągnęły zdolność realizacji algorytmów przetwarzających ogromne zbiory danych. Karty perforowane stały się wejściem, z którego dane przetwarzały proste algorytmy sumujące, a jako wyjście służyły odpowiednie zegary. Ogromny postęp w tej dziedzinie zawdzięczamy firmie będącej protoplastą IBM, która zbudowała tego typu urządzenia, aby zrealizować spis ludności w Stanach Zjednoczonych.
+W XX wieku postęp elektroniki pozwolił na budowę maszyn analogowych potrafiących w swoim wnętrzu odtwarzać pewne algorytmy matematyczne. Mogły one dokonywać operacji arytmetycznych oraz różniczkować i całkować.
+
+
+=== Komputery ===
+Zanim zbudowano pierwsze komputery, istniały już solidne podstawy informatyki teoretycznej. Algorytm wyrażony w najprostszym z możliwych języków okazał się dla urządzeń najlepszy. Na początku lat 30. XX wieku pojawiło się kilka niezależnie opracowanych matematycznych modeli wykonywania algorytmów. Najsłynniejszym została maszyna Turinga zaproponowana w pracy On Computable Numbers autorstwa Alana Turinga, brytyjskiego matematyka uznawanego za ojca informatyki. Jednocześnie okazało się, że wszystkie modele są sobie równoważne, tj. każdym z nich można wyrazić dowolny algorytm oraz zasymulować działanie jednego modelu na innym (patrz: kompletność Turinga). Okazało się, że nawet najbardziej złożone algorytmy można wyrazić za pomocą prostego matematycznego opisu i kilku elementarnych operacji. Maszyna Turinga miała składać się z głowicy czytająco-piszącej przesuwającej się po nieskończonej taśmie. W każdym kroku mogła zmienić wartość danej komórki taśmy, przesunąć się w lewo lub prawo oraz zmienić swój stan.
+Pierwszy mechaniczny komputer zdolny, jak się później okazało, do wykonywania wszystkich algorytmów, powstał już w 1936 roku w Niemczech. Nazywał się Z1, a jego twórcą był niemiecki inżynier Konrad Zuse, który zaprojektował swoją maszynę zupełnie niezależnie od prac brytyjskich i angielskich matematyków. Z powodu ogromnej zawodności w 1941 roku ukończył jej kopię bazującą na układach przekaźnikowych, czyli Z3, która znalazła zastosowanie przy projektowaniu skrzydeł samolotów. Z3 miał wiele cech współczesnego komputera; wszystkie liczby reprezentowane były w systemie binarnym, programy wprowadzano na kartach perforowanych, a do wprowadzania danych służyła klawiatura. W Wielkiej Brytanii oraz Stanach Zjednoczonych pierwsze komputery, zbudowane na początku lat 40, miały ściśle określone zadanie łamania niemieckich szyfrów oraz wykonywania obliczeń na potrzeby wojska. Dopiero w 1944 roku skonstruowano tam programowalną maszynę zdolną do wykonywania dowolnych algorytmów, ENIAC. Pracowała ona w systemie dziesiętnym, a programowania dokonywano poprzez przełączanie odpowiednich kabli.
+W ostatnich trzydziestu latach, dzięki upowszechnieniu komputerów osobistych, informatyka stała się bardzo ważną gałęzią gospodarki. Na świecie pracują miliony programistów, zajmujących się tworzeniem oraz doskonaleniem oprogramowania lub poszukiwaniem nowych, efektywniejszych algorytmów. Wraz z oparciem na komputerach funkcjonowania całego społeczeństwa coraz większą wagę przykłada się do wyszukiwania błędów w implementacjach lub założeniach algorytmów, co jest procesem trudno poddającym się automatyzacji i wymagającym żmudnej pracy całych zespołów programistów i hakerów.
+
+
+== Zobacz też ==
+
+dowód poprawności algorytmu
+struktura danych
+
+
+== Przypisy ==
+
+
+== Bibliografia ==
+Donald E. Knuth: Sztuka programowania. Grzegorz Jakacki (tłum.). T. 1. Warszawa: Wydawnictwa Naukowo-Techniczne, 2002. ISBN 83-204-2540-9. OCLC 749477969.
+
+
+== Linki zewnętrzne ==
+
+Polskojęzyczne
+ Algorytmy i struktury danych, algorytm.org [dostęp 2024-05-08].
+Kody źródłowe wielu algorytmów w C. algorytmy.info. [zarchiwizowane z tego adresu (2013-05-21)].
+ Piotr Kulicki, Algorytm, Powszechna Encyklopedia Filozofii, Polskie Towarzystwo Tomasza z Akwinu, ptta.pl [dostęp 2024-05-05].
+Anglojęzyczne
+Inna strona z kodami źródłowymi
+Słownik algorytmów i struktur danych
+Algorytmy numeryczne. nr.com. [zarchiwizowane z tego adresu (2018-08-25)].

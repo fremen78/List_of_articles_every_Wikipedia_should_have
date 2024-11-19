@@ -1,0 +1,895 @@
+Ein Koordinatensystem dient dazu, Punkte mit Hilfe von Zahlen, den Koordinaten, in eindeutiger Weise zu beschreiben. Die einfachsten Beispiele sind ein Zahlenstrahl und kartesische Koordinaten in der Ebene. Im ersten Fall wird einem Punkt einer Gerade eine reelle Zahl zugeordnet. Im zweiten Fall wird ein Punkt in der Ebene durch zwei reelle Zahlen beschrieben.
+Bei räumlichen Gebilden sind drei Koordinaten erforderlich, bei raum-zeitlichen Gebilden vier.
+Die Position eines Punktes im Raum kann in verschiedenen Koordinatensystemen dargestellt werden. Dabei wird die Position durch Koordinaten ausgedrückt. Je nach verwendetem Koordinatensystem hat derselbe Punkt unterschiedliche Koordinatenwerte.
+Der Begriff Koordinate – in der Bedeutung „Lageangabe“ – wurde im 18. Jahrhundert aus dem Wort Ordinate (Senkrechte) gebildet.
+Koordinaten werden in verschiedenen Bereichen der Mathematik und Physik unterschiedlich bezeichnet. So heißen die Koordinaten eines Elements (Vektors) eines endlichdimensionalen Vektorraums seine Komponenten, die Koordinaten in einem Produkt von Mengen sind die Projektionen auf einen der Faktoren.
+Oft gibt es zahlreiche Möglichkeiten, ein Koordinatensystem einzuführen. Beim Beispiel des Zahlenstrahls hat man beliebig viele Möglichkeiten einen Punkt auszuwählen, dem die Koordinate 0 zugeordnet werden soll. In der Ebene ist die Situation sogar noch komplizierter. Selbst nach Wahl eines Punktes, der die Koordinate 
+  
+    
+      
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,0)}
+  
+ erhält, lässt sich jedes (verschiedene) Paar von Zahlenstrahlen durch diesen Punkt als Koordinatenachsen wählen.
+Je nach Beschaffenheit der Menge, auf der man ein Koordinatensystem wählen möchte, benötigt man auch mehr als ein oder zwei Koordinaten. Die geordnete Menge der Koordinaten wird meist als ein n-Tupel bezeichnet. Der Punkt des Zahlenstrahls mit der Koordinate 0 und der Punkt der Ebene mit den Koordinaten 
+  
+    
+      
+        (
+        0
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (0,0)}
+  
+ beziehungsweise der ausgezeichnete Punkt einer Menge, dessen Koordinaten alle 0 sind, wird als Koordinatenursprung (kurz: Ursprung) bezeichnet.
+Neben den weit verbreiteten kartesischen (rechtwinkligen) Koordinaten gibt es auch andere Arten, Koordinatensysteme zu definieren. Möchte man beispielsweise auf der Kreisfläche Koordinaten einführen, so würden sich Polarkoordinaten anbieten. Der Kreismittelpunkt wäre dann der Ursprung und jeder Punkt der Kreisfläche würde durch Angabe der Entfernung vom Mittelpunkt und eines Winkels eindeutig beschrieben. In diesem Fall lässt sich im Vergleich zu den kartesischen Koordinaten nur eine der beiden Koordinaten als Länge interpretieren.
+Ein anderes Beispiel ist das eines Schachbrettes. Hier wird eine Kombination aus Buchstaben und natürlichen Zahlen genutzt, um die Felder des Brettes zu benennen.
+In vielen Situationen ist es unmöglich, hinreichend sinnvolle und bequeme globale Koordinaten auf der gesamten Menge einzuführen. Zum Beispiel können die Punkte einer Kugeloberfläche, anders als die einer Ebene, nicht in eine kontinuierliche Eins-zu-Eins-Korrespondenz mit Zahlenpaaren gebracht werden. Daher wurde das Konzept der lokalen Koordinaten eingeführt. Dies ist zum Beispiel die Situation in der Theorie der Mannigfaltigkeiten.
+
+
+== Gebräuchliche Koordinatensysteme ==
+
+
+=== Zahlengerade ===
+
+Das einfachste Beispiel eines Koordinatensystems ist die Identifikation von Punkten auf einer Gerade mit der reellen Zahlengerade. In diesem System wird ein beliebiger Punkt O (der Ursprung) auf einer gegebenen Geraden gewählt. Die Koordinate eines Punktes P ist definiert als der vorzeichenbehaftete Abstand von O zu P, wobei der vorzeichenbehaftete Abstand als positiv oder negativ angenommen wird, je nachdem, auf welcher Seite der Linie P liegt. Jeder Punkt erhält eine eindeutige Koordinate und jede reelle Zahl ist die Koordinate eines eindeutigen Punktes.
+
+
+=== Kartesisches Koordinatensystem ===
+
+Eines der bekanntesten Beispiele für ein Koordinatensystem ist das kartesische Koordinatensystem. In der Ebene werden zwei Senkrechte gewählt und die Koordinaten eines Punktes als die vorzeichenbehafteten Abstände zu den Geraden aufgefasst. In drei Dimensionen wählt man drei zueinander orthogonale Ebenen und die drei Koordinaten eines Punktes sind die vorzeichenbehafteten Abstände zu jeder der Ebenen. Dies kann verallgemeinert werden, um n-Koordinaten für jeden Punkt im n-dimensionalen euklidischen Raum zu erzeugen.
+Es ist nach dem latinisierten Namen Cartesius des französischen Mathematikers René Descartes benannt, der das Konzept der „kartesischen Koordinaten“ bekannt gemacht hat. Je nach Anordnung der Koordinatenachsen kann das dreidimensionale Koordinatensystem ein Rechts- oder ein Linkssystem sein.
+
+
+=== Affines Koordinatensystem ===
+
+Wählt man in der euklidischen Ebene drei nicht auf einer Gerade liegende Punkte 
+  
+    
+      
+        
+          P
+          
+            0
+          
+        
+        ,
+        
+          P
+          
+            1
+          
+        
+        ,
+        
+          P
+          
+            2
+          
+        
+      
+    
+    {\displaystyle P_{0},P_{1},P_{2}}
+  
+ aus, so sind die beiden Vektoren 
+  
+    
+      
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              
+                P
+                
+                  1
+                
+              
+            
+            →
+          
+        
+        ,
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              
+                P
+                
+                  2
+                
+              
+            
+            →
+          
+        
+      
+    
+    {\displaystyle {\overrightarrow {P_{0}P_{1}}},{\overrightarrow {P_{0}P_{2}}}}
+  
+ linear unabhängig. Mit dem Punkt 
+  
+    
+      
+        
+          P
+          
+            0
+          
+        
+      
+    
+    {\displaystyle P_{0}}
+  
+ als Ursprung lässt sich der Ortsvektor 
+  
+    
+      
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              P
+            
+            →
+          
+        
+      
+    
+    {\displaystyle {\overrightarrow {P_{0}P}}}
+  
+ eines beliebigen Punktes 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ so schreiben:
+
+  
+    
+      
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              P
+            
+            →
+          
+        
+        =
+        u
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              
+                P
+                
+                  1
+                
+              
+            
+            →
+          
+        
+        +
+        v
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              
+                P
+                
+                  2
+                
+              
+            
+            →
+          
+        
+      
+    
+    {\displaystyle {\overrightarrow {P_{0}P}}=u{\overrightarrow {P_{0}P_{1}}}+v{\overrightarrow {P_{0}P_{2}}}}
+  
+
+und dem Punkt 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  
+ das Zahlenpaar 
+  
+    
+      
+        (
+        u
+        ,
+        v
+        
+          )
+          
+            a
+          
+        
+      
+    
+    {\displaystyle (u,v)_{a}}
+  
+
+als affine Koordinaten bezüglich den Basispunkten 
+  
+    
+      
+        
+          P
+          
+            0
+          
+        
+        ,
+        
+          P
+          
+            1
+          
+        
+        ,
+        
+          P
+          
+            2
+          
+        
+      
+    
+    {\displaystyle P_{0},P_{1},P_{2}}
+  
+ zuordnen.
+Bilden die Vektoren 
+  
+    
+      
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              
+                P
+                
+                  1
+                
+              
+            
+            →
+          
+        
+        ,
+        
+          
+            
+              
+                P
+                
+                  0
+                
+              
+              
+                P
+                
+                  2
+                
+              
+            
+            →
+          
+        
+      
+    
+    {\displaystyle {\overrightarrow {P_{0}P_{1}}},{\overrightarrow {P_{0}P_{2}}}}
+  
+ eine Orthonormalbasis, so ergeben sich die zuvor genannten kartesischen Koordinaten. In diesem Fall sind für einen Punkt 
+  
+    
+      
+        (
+        
+          u
+          
+            0
+          
+        
+        ,
+        
+          v
+          
+            0
+          
+        
+        
+          )
+          
+            a
+          
+        
+      
+    
+    {\displaystyle (u_{0},v_{0})_{a}}
+  
+ die Punktmengen 
+  
+    
+      
+        u
+        =
+        
+          u
+          
+            0
+          
+        
+      
+    
+    {\displaystyle u=u_{0}}
+  
+ und 
+  
+    
+      
+        v
+        =
+        
+          v
+          
+            0
+          
+        
+      
+    
+    {\displaystyle v=v_{0}}
+  
+ Geraden, die sich orthogonal schneiden. Sind die Basisvektoren nicht orthogonal (siehe Bild), spricht man von schiefwinkligen Koordinaten.
+Entsprechend sind affine Koordinaten für höhere Dimensionen erklärt. Koordinaten auf diese Weise zu definieren ist für jeden n-dimensionalen affinen Raum über einem Körper möglich, ist also nicht auf einen euklidischen Raum beschränkt.
+
+
+=== Polarkoordinaten ===
+
+Ein weiteres häufig genutztes Koordinatensystem ist das der Polarkoordinaten. Dieses kann nur in der Ebene eingeführt werden. Für den dreidimensionalen Raum gibt es mit den Kugel- und den Zylinderkoordinaten zwei unterschiedliche Verallgemeinerungen. Im Gegensatz zu den zuvor genannten Systemen sind dieses Koordinatensystem und seine zwei Verallgemeinerungen keine Spezialfälle affiner Koordinatensysteme.
+Für die Definition dieses Koordinatensystems wird ein Punkt als Pol und ein Strahl von diesem Punkt als Polachse gewählt. Für einen gegebenen Winkel 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ gibt es eine einzige Linie durch den Pol, deren Winkel mit der Polachse 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ ist (gemessen gegen den Uhrzeigersinn von der Achse zur Linie). Dann gibt es einen einzigen Punkt auf dieser Linie, dessen Abstand vom Ursprung den Wert 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+  
+ ist. Für ein gegebenes Koordinatenpaar 
+  
+    
+      
+        (
+        r
+        ,
+        ϕ
+        )
+      
+    
+    {\displaystyle (r,\phi )}
+  
+ gibt es einen einzigen Punkt, aber jeder Punkt wird durch viele Koordinatenpaare dargestellt. Zum Beispiel sind 
+  
+    
+      
+        (
+        r
+        ,
+        ϕ
+        )
+      
+    
+    {\displaystyle (r,\phi )}
+  
+ und 
+  
+    
+      
+        (
+        r
+        ,
+        ϕ
+        +
+        2
+        π
+        )
+      
+    
+    {\displaystyle (r,\phi +2\pi )}
+  
+ Polarkoordinaten für denselben Punkt. Der Pol wird durch 
+  
+    
+      
+        (
+        0
+        ,
+        ϕ
+        )
+      
+    
+    {\displaystyle (0,\phi )}
+  
+ für einen beliebigen Wert von 
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+ dargestellt.
+
+
+=== Kugel- und Zylinderkoordinaten ===
+
+Es gibt zwei übliche Methoden zur Erweiterung der Polarkoordinaten für den dreidimensionalen Raum.
+Bei zylindrischen Koordinatensystem wird eine z-Koordinate mit der gleichen Bedeutung wie bei kartesischen Koordinaten zu den Polarkoordinaten 
+  
+    
+      
+        (
+        r
+        ,
+        ϕ
+        )
+      
+    
+    {\displaystyle (r,\phi )}
+  
+ hinzugefügt, was ein Tripel 
+  
+    
+      
+        (
+        r
+        ,
+        ϕ
+        ,
+        z
+        )
+      
+    
+    {\displaystyle (r,\phi ,z)}
+  
+ ergibt.
+Bei Kugelkoordinaten oder räumlichen Polarkoordinaten wird ein Punkt im dreidimensionalen Raum durch seinen Abstand vom Ursprung und durch zwei Winkel angegeben. Ein bekanntes Beispiel eines Kugelkoordinatensystems ist das System der Geographischen Koordinaten mit deren Hilfe die Erde in Längen- und Breitengrade unterteilt wird. Die dritte Koordinate also der Abstand vom Erdmittelpunkt ist bei diesem System nicht relevant.
+
+
+=== Elliptische Koordinaten ===
+
+Elliptische Koordinaten verwenden sich senkrecht schneidende Systeme von konfokalen Ellipsen und Hyperbeln. Diese Koordinaten sind für die Brennpunkte und die Punkte dazwischen nicht definiert.
+Den (ebenen) elliptischen Koordinaten entsprechen die Ellipsoid-Koordinaten. Das hier verwendete orthogonale Flächensystem besteht aus konfokalen Ellipsoiden, einschaligen und zweischaligen Hyperboloiden.
+Weiterhin gibt es noch die ellipsoidische Koordinaten, die zur Beschreibung von Punkten eines Rotations-Ellipsoids (Erde) verwendet werden.
+
+
+== Parameterdarstellung ==
+
+Parameterdarstellungen von Flächen kann man als Koordinatensysteme dieser Flächen ansehen. Z. B. die Parameterdarstellung einer Ebene, die übliche Parameterdarstellung einer Kugeloberfläche mit geographischer Länge und Breite oder die Paramerdarstellung eines Ellipsoids.
+
+
+== Lokales Koordinatensystem ==
+
+Ein lokales Koordinatensystem oder auch (Koordinaten-)Karte ist ein Koordinatensystem für eine Teilmenge eines geometrischen Objekts.
+Das Konzept der Koordinatenkarten ist zentral für die Theorie der Mannigfaltigkeiten. Eine Mannigfaltigkeit ist ein geometrisches Objekt, so dass für jeden Punkt ein lokales Koordinatensystem existiert, das mit den benachbarten Koordinatensystemen verträglich ist. Genauer gesagt ist eine Koordinatenkarte ein Homöomorphismus von einer offenen Teilmenge eines Raumes zu einer offenen Teilmenge von 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  
+. Oft ist es nicht möglich, ein einziges konsistentes Koordinatensystem für einen ganzen Raum bereitzustellen. In diesem Fall wird eine Sammlung von Koordinatenkarten zu einem Atlas zusammengesetzt, der den ganzen Raum abdeckt.
+Um die lokalen Basisvektoren zu bestimmen, geht man von den Koordinatenlinien aus. Dabei handelt es sich um Kurven, die entstehen, wenn an einem Punkt alle Koordinaten bis auf jeweils eine konstant sind. Die lokalen Basisvektoren an einem Punkt sind dann die Tangentenvektoren an diese Koordinatenlinien und können durch Ableitung nach dem Kurvenparameter berechnet werden (siehe Berechnung für Kugelkoordinaten).
+Für Kugelkoordinaten mit den Koordinaten 
+  
+    
+      
+        (
+        r
+        ,
+        θ
+        ,
+        φ
+        )
+      
+    
+    {\displaystyle (r,\theta ,\varphi )}
+  
+ sind die Koordinatenlinien
+
+Halbgeraden, die im Koordinatenursprung beginnen (Kurvenparameter r)
+Halbkreise („Meridiane“) mit dem Koordinatenursprung als Mittelpunkt (Kurvenparameter 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+)
+Kreise („Breitenkreise“) senkrecht zur z-Achse (Kurvenparameter 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+).
+Durch Normierung der Tangentenvektoren erhält man die Einheitsvektoren 
+  
+    
+      
+        
+          
+            
+              
+                e
+                →
+              
+            
+          
+          
+            r
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                →
+              
+            
+          
+          
+            θ
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                →
+              
+            
+          
+          
+            φ
+          
+        
+      
+    
+    {\displaystyle {\vec {e}}_{r},{\vec {e}}_{\theta },{\vec {e}}_{\varphi }}
+  
+. Diese stehen paarweise senkrecht aufeinander, die Kugelkoordinaten sind somit ein orthogonales Koordinatensystem.
+
+
+== Koordinatentransformationen ==
+
+Für das Umrechnen von Koordinaten eines Systems in die Koordinaten eines anderen Systems gibt es die Koordinatentransformationen.
+
+
+== Homogene Koordinaten in der Ebene ==
+Die euklidische Ebene lässt sich auch mit homogenen Koordinaten beschreiben. Dabei werden einem Punkt 
+  
+    
+      
+        P
+        =
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle P=(x,y)}
+  
+ drei homogene Koordinaten 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        :
+        
+          x
+          
+            2
+          
+        
+        :
+        
+          x
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1}:x_{2}:x_{3})}
+  
+ so zugeordnet, dass auch 
+  
+    
+      
+        P
+        =
+        (
+        c
+        
+          x
+          
+            1
+          
+        
+        :
+        c
+        
+          x
+          
+            2
+          
+        
+        :
+        c
+        
+          x
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle P=(cx_{1}:cx_{2}:cx_{3})}
+  
+ für alle 
+  
+    
+      
+        c
+        ≠
+        0
+      
+    
+    {\displaystyle c\neq 0}
+  
+ gilt. Eine Standardzuordnung ist 
+  
+    
+      
+        P
+        =
+        (
+        x
+        :
+        y
+        :
+        1
+        )
+      
+    
+    {\displaystyle P=(x:y:1)}
+  
+. Setzt man 
+  
+    
+      
+        P
+        =
+        (
+        x
+        :
+        y
+        :
+        1
+        −
+        x
+        −
+        y
+        )
+      
+    
+    {\displaystyle P=(x:y:1-x-y)}
+  
+ erhält man baryzentrische Koordinaten. Der große Vorteil homogener Koordinaten ist, dass Punkte der Ferngerade einfach zu beschreiben sind: Im Standardfall durch die Gleichung 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle x_{3}=0}
+  
+, im baryzentrischen Fall durch die Gleichung 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+        +
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          x
+          
+            3
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle x_{1}+x_{2}+x_{3}=0}
+  
+. Die bei affinen Koordinaten nötigen Grenzwert-Überlegungen werden im Standardfall zum einfachen Setzen von 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle x_{3}=0}
+  
+.
+In der Dreiecksgeometrie werden auch trilineare Koordinaten verwendet.
+
+
+== Weitere Koordinatensysteme ==
+Einige nur in Fachgebieten (z. B. Geodäsie, Kartografie, Geographie, Fernerkundung, Astronomie, Amateurfunk) gebräuchliche Koordinatensysteme sind:
+
+Inertialsystem
+Geographisches Koordinatensystem
+Geodätische Gitter:
+Soldner-Koordinatensystem
+Gauß-Krüger-Koordinatensystem
+UTM-Koordinatensystem
+UTM-Referenzsystem auch MGRS
+Astronomische Koordinatensysteme wie das ekliptikale oder galaktische
+Parallele Koordinaten
+Bewegte Koordinatensysteme
+Rotierende Koordinatensysteme
+Fahrzeugkoordinatensystem
+Weltkoordinatensystem
+QTH-Locator (Amateurfunk)
+Marinequadrate und Gradnetze (aus dem Zweiten Weltkrieg)
+
+
+== Literatur ==
+W. Werner: Vektoren und Tensoren als universelle Sprache in Physik und Technik. Band 1. Springer Vieweg, ISBN 978-3-658-25271-7. 
+
+
+== Weblinks ==
+
+Einfache und verständliche Erklärung (hpts. durch Abbildungen)
+Eric W. Weisstein: Coordinate System. In: MathWorld (englisch).
+
+
+== Einzelnachweise ==

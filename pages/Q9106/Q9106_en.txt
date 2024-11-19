@@ -1,0 +1,1207 @@
+The Rijndael S-box is a substitution box (lookup table) used in the Rijndael cipher, on which the Advanced Encryption Standard (AES) cryptographic algorithm is based.
+
+
+== Forward S-box ==
+
+The S-box maps an 8-bit input, c, to an 8-bit output, s = S(c). Both the input and output are interpreted as polynomials over GF(2). First, the input is mapped to its multiplicative inverse in GF(28) = GF(2) [x]/(x8 + x4 + x3 + x + 1), Rijndael's finite field. Zero, as the identity, is mapped to itself. This transformation is known as the Nyberg S-box after its inventor Kaisa Nyberg.  The multiplicative inverse is then transformed using the following affine transformation:
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    s
+                    
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      3
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      4
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      5
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      6
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      7
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    b
+                    
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      3
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      4
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      5
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      6
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      7
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        +
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}s_{0}\\s_{1}\\s_{2}\\s_{3}\\s_{4}\\s_{5}\\s_{6}\\s_{7}\end{bmatrix}}={\begin{bmatrix}1&0&0&0&1&1&1&1\\1&1&0&0&0&1&1&1\\1&1&1&0&0&0&1&1\\1&1&1&1&0&0&0&1\\1&1&1&1&1&0&0&0\\0&1&1&1&1&1&0&0\\0&0&1&1&1&1&1&0\\0&0&0&1&1&1&1&1\end{bmatrix}}{\begin{bmatrix}b_{0}\\b_{1}\\b_{2}\\b_{3}\\b_{4}\\b_{5}\\b_{6}\\b_{7}\end{bmatrix}}+{\begin{bmatrix}1\\1\\0\\0\\0\\1\\1\\0\end{bmatrix}}}
+  
+
+where [s7, ..., s0] is the S-box output and [b7, ..., b0] is the multiplicative inverse as a vector.
+This affine transformation is the sum of multiple rotations of the byte as a vector, where addition is the XOR operation:
+
+  
+    
+      
+        s
+        =
+        b
+        ⊕
+        (
+        b
+        ⋘
+        1
+        )
+        ⊕
+        (
+        b
+        ⋘
+        2
+        )
+        ⊕
+        (
+        b
+        ⋘
+        3
+        )
+        ⊕
+        (
+        b
+        ⋘
+        4
+        )
+        ⊕
+        
+          63
+          
+            16
+          
+        
+      
+    
+    {\displaystyle s=b\oplus (b\lll 1)\oplus (b\lll 2)\oplus (b\lll 3)\oplus (b\lll 4)\oplus 63_{16}}
+  
+
+where b represents the multiplicative inverse, 
+  
+    
+      
+        ⊕
+      
+    
+    {\displaystyle \oplus }
+  
+ is the bitwise XOR operator, 
+  
+    
+      
+        ⋘
+      
+    
+    {\displaystyle \lll }
+  
+ is a left bitwise circular shift, and the constant 6316 = 011000112 is given in hexadecimal.
+An equivalent formulation of the affine transformation is
+
+  
+    
+      
+        
+          s
+          
+            i
+          
+        
+        =
+        
+          b
+          
+            i
+          
+        
+        ⊕
+        
+          b
+          
+            (
+            i
+            +
+            4
+            )
+            mod
+            ⁡
+            8
+          
+        
+        ⊕
+        
+          b
+          
+            (
+            i
+            +
+            5
+            )
+            mod
+            ⁡
+            8
+          
+        
+        ⊕
+        
+          b
+          
+            (
+            i
+            +
+            6
+            )
+            mod
+            ⁡
+            8
+          
+        
+        ⊕
+        
+          b
+          
+            (
+            i
+            +
+            7
+            )
+            mod
+            ⁡
+            8
+          
+        
+        ⊕
+        
+          c
+          
+            i
+          
+        
+      
+    
+    {\displaystyle s_{i}=b_{i}\oplus b_{(i+4)\operatorname {mod} 8}\oplus b_{(i+5)\operatorname {mod} 8}\oplus b_{(i+6)\operatorname {mod} 8}\oplus b_{(i+7)\operatorname {mod} 8}\oplus c_{i}}
+  
+
+where s, b, and c are 8 bit arrays, c is 011000112, and subscripts indicate a reference to the indexed bit.
+Another equivalent is:
+
+  
+    
+      
+        s
+        =
+        
+          (
+          
+            b
+            ×
+            
+              31
+              
+                10
+              
+            
+            
+            mod
+            
+            
+            
+              257
+              
+                10
+              
+            
+          
+          )
+        
+        ⊕
+        
+          99
+          
+            10
+          
+        
+      
+    
+    {\displaystyle s=\left(b\times 31_{10}\mod {257_{10}}\right)\oplus 99_{10}}
+  
+
+where 
+  
+    
+      
+        ×
+      
+    
+    {\displaystyle \times }
+  
+ is polynomial multiplication of 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+ and 
+  
+    
+      
+        
+          31
+          
+            10
+          
+        
+      
+    
+    {\displaystyle 31_{10}}
+  
+ taken as bit arrays. 
+
+
+== Inverse S-box ==
+
+The inverse S-box is simply the S-box run in reverse.  For example, the inverse S-box of b816 is 9a16. It is calculated by first calculating the inverse affine transformation of the input value, followed by the multiplicative inverse. The inverse affine transformation is as follows:
+
+  
+    
+      
+        
+          
+            [
+            
+              
+                
+                  
+                    b
+                    
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      3
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      4
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      5
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      6
+                    
+                  
+                
+              
+              
+                
+                  
+                    b
+                    
+                      7
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+              
+              
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+                
+                  1
+                
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        
+          
+            [
+            
+              
+                
+                  
+                    s
+                    
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      3
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      4
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      5
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      6
+                    
+                  
+                
+              
+              
+                
+                  
+                    s
+                    
+                      7
+                    
+                  
+                
+              
+            
+            ]
+          
+        
+        +
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle {\begin{bmatrix}b_{0}\\b_{1}\\b_{2}\\b_{3}\\b_{4}\\b_{5}\\b_{6}\\b_{7}\end{bmatrix}}={\begin{bmatrix}0&0&1&0&0&1&0&1\\1&0&0&1&0&0&1&0\\0&1&0&0&1&0&0&1\\1&0&1&0&0&1&0&0\\0&1&0&1&0&0&1&0\\0&0&1&0&1&0&0&1\\1&0&0&1&0&1&0&0\\0&1&0&0&1&0&1&0\end{bmatrix}}{\begin{bmatrix}s_{0}\\s_{1}\\s_{2}\\s_{3}\\s_{4}\\s_{5}\\s_{6}\\s_{7}\end{bmatrix}}+{\begin{bmatrix}1\\0\\1\\0\\0\\0\\0\\0\end{bmatrix}}}
+  
+
+The inverse affine transformation also represents the sum of multiple rotations of the byte as a vector, where addition is the XOR operation:
+
+  
+    
+      
+        b
+        =
+        (
+        s
+        ⋘
+        1
+        )
+        ⊕
+        (
+        s
+        ⋘
+        3
+        )
+        ⊕
+        (
+        s
+        ⋘
+        6
+        )
+        ⊕
+        
+          5
+          
+            16
+          
+        
+      
+    
+    {\displaystyle b=(s\lll 1)\oplus (s\lll 3)\oplus (s\lll 6)\oplus 5_{16}}
+  
+
+where 
+  
+    
+      
+        ⊕
+      
+    
+    {\displaystyle \oplus }
+  
+ is the bitwise XOR operator, 
+  
+    
+      
+        ⋘
+      
+    
+    {\displaystyle \lll }
+  
+ is a left bitwise circular shift, and the constant 516 = 000001012 is given in hexadecimal.
+
+
+== Design criteria ==
+The Rijndael S-box was specifically designed to be resistant to linear and differential cryptanalysis. This was done by minimizing the correlation between linear transformations of input/output bits, and at the same time minimizing the difference propagation probability.
+The Rijndael S-box can be replaced in the Rijndael cipher, which defeats the suspicion of a backdoor built into the cipher that exploits a static S-box. The authors claim that the Rijndael cipher structure is likely to provide enough resistance against differential and linear cryptanalysis even if an S-box with "average" correlation / difference propagation properties is used (cf. the  "optimal" properties of the Rijndael S-box).
+
+
+== Example implementation in C language ==
+The following C code calculates the S-box:
+
+
+== References ==

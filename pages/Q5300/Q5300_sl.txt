@@ -1,0 +1,84 @@
+Centralni procesor ali osrédnja/centrálno procésna enôta (CPE; angleško Central processing unit - CPU), pogovorno kar procesor, je osrednji del računalnika, ki skrbi za izračunavanje in obdelavo (procesiranje) podatkov (dvojiških števil) ter nadzor in upravljanje drugih enot. Procesorji so narejeni iz silicija, ovoji pa so se skozi zgodovino zelo spreminjali (keramika, aluminij).
+Procesorji se načeloma delijo po številu tranzistorjev (transistor), jeder (core), niti (thread), podnožju (socket) in velikosti pomnilnika. Jedro je računski del procesorja, narejen iz silicija. Je glavni krivec za proizvodnjo toplote (poleg tranzistorjev). Nekateri procesorji imajo poleg procesorskega jedra še grafično, ki je namenjeno računanju grafike. Nit je proces, ki ga procesor opravlja, če je procesor večniten, to pomeni da lahko opravlja več procesov naenkrat in je s tem hitrejši. Na primer, če je procesor 2 niten, bi moral v teoriji biti 1-krat hitrejši. V praksi pa ni tako: imata lahko različni jedri (Prescott, Silverthrone), različna delovna takta, proizvajalca, FSB … Podnožje je tip povezave z matično ploščo v obliki nožic (med glavnimi so LGA 775, LGA 1156, LGA 1366, AM2+, AM3). Pomnilnik v procesorju je namenjen začasnem shranjevanju podatkov, torej večja kot je njegova kapaciteta, bolje je.
+
+
+== Zgodovina ==
+
+Prvi komercialni procesor je bil 4-bitni Intel 4004, izdelan leta 1971. Istočasno pa so inženirji podjetja Texas Instruments razvijali procesor TMS 1000. To podjetje je leta 1973 tudi patentiralo mikroprocesor na enem čipu.
+Intel je kasneje razvil prvi 8-bitni procesor, 8008 in naslednika Intel 8080 ter Zilog Z80. Podjetje Motorola (danes Freescale) je v tem času razvilo procesor 6800 in kasneje 6502. Ti procesorji so v 80. letih povzročili »revolucijo« hišnih računalnikov, ki so bili dostopni že za manj kot 100 dolarjev.
+
+
+=== Večjedrna arhitektura ===
+V novejšem času pa so začeli vgrajevati več jeder v en procesor. Večjedrne procesorje so razvili, da je možno opravljati več opravil (niti) naenkrat brez težav (zmrzovanja, zakasnitve, ponovni zagoni,...), kar omogoča pravo paralelno procesiranje. Pri tem obstaja problem, kako posamezna opravila čim bolj učinkovito razdeliti na paralelne procese, da bo celoten sistem veliko hitrejši, kot pri uporabi enojedrnega procesorja (teoretično naj bi bil večjedrni sistem od enojedrnega hitrejši za faktor, enak številu procesorskih jeder). Obstajajo že 32-jedrni procesorji, vendar so še redki zaradi cene. Trenutno (leto 2019) so najbolj prodajani štirijedrni procesorji.
+Večprocesorski sistemi so se najprej uveljavili na posebnih področjih, kjer je bila zahtevana zmogljivost, kot so strežniki, zmogljivi računalniki in delovne postaje, so se pa tudi že uveljavili v običajnih namiznih in prenosnih računalnikih.
+
+
+== Delovanje ==
+Osnovno delovanje večine CPU-jev je, ne glede na svojo fizično obliko, izvajanje zaporedja shranjenih ukazov imenovanih program. Ukazi so shranjeni v računalniškem spominu. Obstajajo štirje koraki, ki jih v svojem delovanju uporabljajo skoraj vsi CPU-ji: prevzem ukazov, dekodiranje, izvajanje in zapis rezultatov.
+
+Glede na strojno implementacijo, procesorje v grobem delimo na dve kategoriji: RISC (Reduced Instruction Set Computer) in CISC (Complex Instruction Set Computer). 
+
+Procesorji tipa RISC imajo veliko število preprostih in pogosto uporabljenih ukazov, ki se izvršujejo približno v istem času. Z uporabo preprostejših ukazov je možno realizirati tudi zahtevnejše funkcije. Najbolj znani RISC procesorji so Alpha, ARM, MIPS, PIC in SPARC.
+Procesorji tipa CISC imajo nabor zapletenih ukazov, ki naredijo več operacij v enem ciklu (primer so sploh posebni ukazi MMX, 3D NOW!). Znana proizvajalca CISC procesorjev sta AMD in Intel, a se na trg počasi uveljavlja tudi Qualcomm.
+
+
+== Zasnova in izvedba ==
+Osnovni koncept CPU je sledeč:
+V CPU zasnovi je vgrajen seznam osnovnih operacij, ki jih lahko izvaja, tj. nabor ukazov (instruction set). Te operacije lahko vključujejo seštevanje in odštevanje dveh števil, primerjavo števil ali skočne ukaze na različne dele programov. Vsaka izmed teh osnovnih operacij je predstavljena z določenim zaporedjem bitov; to zaporedje se imenuje opcode (operacijska koda) za to določeno operacijo. Pošiljanje določene operacijske kode v CPU bo povzročilo izvajanje operacije, ki jo ta operacijska koda predstavlja. Za izvajanje inštrukcij v računalniškem programu CPU uporablja operacijsko kodo za to inštrukcijo kot tudi njene argumente (npr. dve števili, ki jih je treba sešteti - v primeru operacije seštevanja). Računalniški program je zatorej zaporedje inštrukcij, v vsaki inštrukciji je vključena operacijska koda in argumenti te operacije.
+Dejanska matematična operacija za vsako inštrukcijo je izvajana s strani podenote CPU, ki je poznana kot aritmetično logična enota (ALU - arithmetic logic unit). Poleg uporabljanja svoje aritmetično logične enote za izvajanje operacij, je CPU odgovoren tudi za branje naslednje inštrukcije iz spomina, za branje podatkov določenih v argumentih iz spomina in za zapis rezultatov v spomin.
+V več CPU zasnovah se nabor ukazov očitno razlikuje od operacij za nalaganje podatkov iz spomina in tistimi za izvajanje matematike. V tem primeru so podatki naloženi iz spomina shranjeni v register, in matematična operacija nima argumentov ampak preprosto le izvaja matematiko nad podatki v registrih in jih zapiše v nov register, katerih vrednost v spomin zapiše druga operacija.
+Tri glavne značilnosti procesorja so:
+
+Frekvenca ali delovni takt - število ciklov procesorja na sekundo. Giblje se od nekaj deset kHz pri procesorjih za posebne namene do nekaj GHz v procesorjih v osebnih računalnikih. Število operacij v enem ciklu je lahko tudi večje ali manjše, odvisno od zapletenosti operacije.
+Širina podatkovnega vodila, merjena v bitih, ki jih procesor obdela v eni operaciji je navadno 64 bitov, počasi se premika proti 128. Starejše generacije so imele vodilo širine 32 ali 16 bitov.
+Širina naslovnega vodila, merjena v bitih, da največji možen naslovni prostor procesorja, navadno merjen v megabajtih ali gigabajtih. Seveda pa je najvišji razpoložljivi fizični naslov odvisen od količine fizičnega pomnilnika, ki je procesorju na razpolago. Trenutno je naslovno vodilo običajno enako široko kot podatkovno, v preteklosti, pa ni bilo vedno tako.
+Naslovno vodilo je možno še dodatno razširiti z zunanjo logiko za pomnilnik, vendar navadno ne več kot za (izvirna_širina-1+n), pri čemer je n običajno širina podatkovnega vodila v bitih.
+Število elementov (tranzistorjev) v procesorju je lahko več sto milijonov.
+
+
+=== Krmilna enota ===
+Krmilna enota CPU-ja vsebuje vezje, ki uporablja električne signale za usmerjanje celotnega sistema računalnika za izvajanje shranjenih programskih inštrukcij. Skrbi za pretok podatkov in ukazov iz pomnilnika v procesor in obratno. Bere ukaz za ukazom v strojni obliki, jih dekodira ter krmili njihovo izvajanje preko krmilnih signalov. Krmilna enota ne izvaja programskih inštrukcij; preusmerja jih v druge dele sistema kjer se ukazi izvedejo. Krmilna enota mora znati komunicirati z aritmetično-logično enoto in spominom.
+
+
+=== Obseg celih števil ===
+
+Način kako CPU predstavlja števila je izbira zasnove, ki vpliva na način kako procesor operira z elementarnimi funkcijami. Nekateri zgodnji digitalni računalniki so za notranje predstavljanje števil uporabljali električni model desetiškega (osnova deset) številskega sistema. Nekateri drugi računalniki so uporabljali bolj eksotične številske sisteme kot je ternarni (osnova tri). Skoraj vsi moderni CPU-ji predstavljajo števila v dvojiški obliki, kjer je vsaka cifra predstavljena z eno izmed dveh veličin kot sta »visoka« ali »nizka« napetost.
+Povezano s predstavitvijo števil je natančnost števil, ki jih lahko CPU predstavi. V primeru binarnega (dvojiškega) CPU. Število bitov, ki jih CPU uporablja za tako predstavljanje, pogosto imenujemo kot »dolžina besede« ali pa »natančnost celih števil«, ko imamo striktno opravka s celimi števili (za razliko od plavajoče vejice). To število se med arhitekturami razlikuje, in pogosto se razlikuje tudi med posameznimi deli iste CPU. Na primer, 8-bitni modeli CPU nudijo obseg števil, ki se jih lahko predstavi z osmimi dvojiškimi ciframi (vsaka cifra ima le dve možni vednosti), tj. 28 oziroma  256 diskretnih števil.
+
+
+=== Frekvenca ali delovni takt ===
+Delovni takt ali takt ure je hitrost s katero mikroprocesor izvaja ukaze. Vsak računalnik vsebuje notranjo uro, ki regulira hitrost s katero se ukazi izvajajo in sinhronizira vse različne komponente računalnika. Hitrejša kot je ura, več ukazov lahko CPU izvede na sekundo.
+
+
+== Glej tudi ==
+
+koprocesor
+fizikalni procesor (PPU)
+grafični procesor (GPU)
+signalni procesor (DSP)
+matična plošča
+
+
+== Sklici in opombe ==
+
+
+=== Opombe ===
+
+
+=== Sklici ===
+
+
+== Zunanje povezave ==
+Proizvajalci procesorjev:
+
+AMD Advanced Micro Devices
+Intel Semiconductor
+IBM Microelectronics
+Freescale (bivša Motorola)
+ARM
+MIPS Technologies
+TI Semiconductors
+Ostalo:
+
+Processor Design
+How Microprocessors Work

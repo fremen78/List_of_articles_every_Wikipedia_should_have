@@ -1,0 +1,158 @@
+Elektronická pošta, zkráceně e-mail [ímejl] nebo jen mail, je způsob odesílání, doručování a přijímání zpráv přes elektronické komunikační systémy. E-mailové služby se poprvé rozšířily mezi veřejnost až díky vzniku jedné z prvních volných e-mailových služeb Hotmail v roce 1996. Tu po jejím celosvětovém úspěchu zakoupila firma Microsoft a později vznikly i další nyní známé služby.
+Termín e-mail se používá jak pro internetový systém elektronické pošty založený na protokolu SMTP (Simple Mail Transfer Protocol), tak i pro intranetové systémy, které dovolují posílat si vzájemně zprávy uživatelům uvnitř jedné společnosti nebo organizace (tyto systémy často používají nestandardní protokoly, mívají ovšem bránu, která jim dovoluje posílat a přijímat e-maily z internetu). K širokému rozšíření e-mailu přispěl zejména internet.
+
+
+== Historie ==
+
+
+=== Počátky ===
+E-mail (resp. textová komunikace mezi uživateli) je ve skutečnosti starší než Internet. E-mail v Internetu (tak jak ho známe dnes) má počátek v roce 1971 (zavedení znaku @) a ve standardu RFC 821 pro přenos elektronické pošty protokolem SMTP, který byl vydán v roce 1982.
+První elektronická komunikace vznikla už v roce 1965 jako způsob posílání textových zpráv mezi uživateli mainframového počítače se sdílením času (tj. pouze mezi uživateli vzdáleně připojenými ke stejnému počítači). Přesná historie je nejasná, ale mezi prvními systémy s touto schopností byly Q32 od SDC a CTSS z MIT. E-mail se záhy stal síťovým, což umožňovalo uživatelem posílání zpráv mezi různými počítači. Síťové počátky jsou také nejasné; systémy AUTODIN mohly být první, které umožňovaly přenos elektronických textových zpráv mezi různými počítači (1966), ale je možné, že něco podobného uměl už systém SAGE.
+V dalším vývoji měla hlavní slovo počítačová síť ARPANET. Existuje zpráva, která poukazuje na experimenty s přenosem e-mailů mezi systémy krátce po vzniku ARPANETu v roce 1969. Ray Tomlinson začal v roce 1971 používat znak @ na oddělení jména uživatele od názvu stroje. Všeobecný názor, že byl původcem elektronické pošty, je přehnaný, přesto jeho programy SNDMSG a READMAIL byly v jeho vývoji velmi důležité. ARPANET významně zvýšil popularitu e-mailu, a ten se zároveň stal trhákem jako aplikace v rámci ARPANETu.
+Jak se elektronická pošta stávala všeobecně známou, zvyšovala se její popularita, což vedlo i k rozšíření mezi lidi, kteří neměli přístup k ARPANETu. Bylo vyvinuto několik protokolů na doručování pošty mezi skupinami počítačů se sdíleným časem pomocí alternativních přenosových systémů jako UUCP a e-mailový systém VNET od IBM.
+
+
+=== Adresy s cestou ===
+Tehdy nebyly všechny počítače nebo sítě navzájem síťově propojené, e-mailové adresy musely obsahovat „cestu“ pro zprávu, tj. trasu mezi počítačem odesílatele a příjemce. Tímto způsobem bylo možné posílat e-maily mezi více sítěmi.
+Cestu specifikovala tzv. „bang path“ adresa, která již specifikovala skoky (hops) mezi lokacemi, které byly považované za dostupné adresátovi. Nazývala se tak, protože obsahovala pro každý skok znak „bang“, tj. „!“. Takže například cesta …!bigsite!foovax!barbox!ja oznamuje, že pošta se má směrovat stroji bigsite (předpokládaná dobře známá lokace přístupná každému) a odtud přes stroj foovax uživatelskému účtu na stroji barbox.
+Předtím než se běžně začaly používat mailové programy s automatickým směrováním, lidé často uveřejňovali složené bang adresy s použitím { } konvence (viz Glob), přičemž mezi složenými závorkami byly uvedené cesty některých velkých strojů v naději, že potenciální odesílatel bude schopný spolehlivě doručit poštu na jeden z nich (například …!{seismo, ut-sally, ihnp4}!rice!beta!gamma!ja). Bang cesty s 8 až 10 skoky nebyly v roce 1981 ničím výjimečným. Vytáčená UUCP spojení pracující v nočních hodinách způsobovala týden dlouhé přenosy. Bang cesty se volily často podle času přenosu a spolehlivosti, takže se zprávy často ztrácely.
+
+
+== Technické principy ==
+
+
+=== Komunikační protokoly ===
+Mezi počítači na internetu se vyměňují zprávy pomocí Simple Mail Transfer Protocol a softwaru typu MTA jako např. Sendmail.
+Uživatelé mívají na svém počítači nainstalován program, který se nazývá e-mailový klient. Ten stahuje zprávy z poštovního serveru použitím protokolů POP nebo IMAP, avšak v prostředí velkých společností se stále vyskytuje použití některého komerčního protokolu jako např. Lotus Notes nebo Microsoft Exchange Server.
+Je možné ukládat e-maily buď na straně serveru, nebo na straně klienta. Standardní formáty pro mailové schránky jsou např. Maildir a mbox. Několik e-mailových klientů používá vlastní formát a na konverzi mezi těmito formáty je potřebný speciální program.
+Někteří uživatelé nepoužívají e-mailového klienta, ale přistupují ke zprávám umístěným na poštovním serveru přes webové rozhraní. Tento postup se často používá zejména u freemailových (bezplatných) služeb.
+
+
+=== Doručování ===
+Při posílání pošty přes internet má být zaručen spolehlivý přenos zprávy i v případě dočasného výpadku cílového serveru.
+Zpráva se obvykle píše v prostředí programu typu e-mailového klienta nebo v obdobném formuláři webového rozhraní. Klient pomocí Simple Mail Transfer Protocol (SMTP) pošle zprávu programu Mail Transfer Agent (MTA), například smtp.a.org, který může běžet buď na samostatném smtp poštovním serveru, nebo i přímo na počítači odesílatele.
+Program MTA zjistí z uvedených cílových adres název domény (část adresy za zavináčem) a tyto domény vyhledá v Domain Name System (DNS), aby zjistil mail exchange servery přijímající poštu pro danou doménu.
+DNS server domény b.org, tedy ns.b.org, odpoví MX záznamem, kde uvede mail exchange server pro danou doménu.
+MTA server (např. smtp.a.org) odešle zprávu na mail exchange server (např. mx.b.org) pomocí protokolu SMTP. Domény obvykle mají záložní (backup) mail exchange server, takže mohou pokračovat v přijímaní pošty, i když je právě nedostupný hlavní mail exchange server. Když není možné zprávu doručit, MTA příjemce o tom musí odeslat zpět odesílateli zprávu (bounce message), ve které ukazuje na problém.
+Mail exchange server zprávu doručí do schránky adresáta.
+Ze schránky adresáta si zprávu stáhne pomocí protokolu POP (POP3) nebo IMAP nebo ji adresátovi umožní prohlédnout poštovní klient příjemce nebo webová služba.
+Bývalo zvykem, že kterýkoliv MTA přijímal zprávy pro kteréhokoli uživatele na internetu a udělal, co se dalo, aby zprávu doručil. Takové MTA se nazývají open mail relays. To bylo důležité v začátcích internetu, když byla síťová spojení nespolehlivá a nepermanentní. Když MTA nemohl doručit zprávu do cíle, mohl ji alespoň poslat agentovi bližšímu k cíli. Ten by měl větší šanci ji doručit. Ukázalo se však, že tento mechanizmus byl zneužitelný lidmi posílající nevyžádanou hromadnou poštu (spam), a proto velmi málo ze současných MTA jsou open mail relays (tj. přijímají poštu pro známé uživatele resp. domény). Prakticky všechny open relays jsou rychle odhalené a zneužité spammery, kteří neustále prohledávají (skenují) IP rozsahy celého internetu.
+
+
+=== Kódování obsahu e-mailu ===
+Pro e-mail je definován přenos 7bitové ASCII informace. Přesto je většina e-mailových přenosů 8bitových, kde ale nelze zaručit bezproblémovost. Z toho důvodu byla elektronická pošta rozšířena o standard MIME, aby bylo umožněno kódování vkládaných HTML a binárních příloh, obrázků, zvuků a videí.
+
+
+== Používání e-mailu ==
+
+
+=== Postup při posílání a přijímání ===
+Typický sled událostí, který se uskuteční, když Jana napíše e-mail Petrovi:
+
+Jana napíše zprávu pomocí svého e-mailového klienta nebo ve formuláři webového rozhraní. Přitom také napíše nebo zvolí z adresáře e-mailovou adresu svého adresáta. Potom klikne na tlačítko „Odeslat“.
+Programy poštovní klient, MTA server s pomocí informace od DNS serveru a mail exchange server a poštovní klient na straně adresáta se postarají o doručení zprávy adresátovi, popřípadě odesílateli (Janě) zašlou chybovou, varovnou nebo potvrzující zprávu.
+Petr klikne na tlačítko „zkontrolovat novou poštu“ ve svém e-mailovém klientu (popřípadě má poštovní klient nastavený tak, že program v určitých časových intervalech poštu stahuje sám) a ten vyzvedne poštu pomocí protokolu POP (POP3). Popřípadě může Petr pomocí webové služby nebo příslušně nastaveného poštovního klienta prohlížet doručené e-maily přímo ve schránce na mail exchange serveru.
+
+
+=== Obsah e-mailové zprávy ===
+Internetové e-mailové zprávy se skládají ze dvou hlavních částí:
+
+Hlavička – předmět zprávy, odesílatel, příjemce a jiné informace o e-mailu
+Tělo – Samotná zpráva, obyčejně obsahuje na konci blok s podpisem. Tělo e-mailu začíná zpravidla pozdravem.
+K e-mailu je možné přikládat jako přílohy i obrázky a jiné soubory. Bez problémů bývá doručování menších souborů typu dokumentu. Pokud však je ke zprávě přiložen velký soubor nebo příliš mnoho souborů nebo soubor typu programu, který by mohl být infikován virem nebo červem, mnohdy taková zpráva neprojde ochrannými filtry na doručovací cestě.
+
+
+==== Hlavička ====
+Hlavičky obvykle obsahují alespoň 4 pole:
+
+Od (From): e-mailová adresa (popř. i jméno) odesílatele zprávy (zpravidla vyplňuje program automaticky)
+Komu (To): e-mailová adresa (popř. i jméno) příjemce zprávy, adresátů může být více současně (vyplňuje odesílatel)
+Předmět (Subject): stručný popis obsahu zprávy (vyplňuje odesílatel, nepovinně)
+Datum (Date): místní datum a čas odeslání zprávy (vyplňuje program automaticky)
+Informace v hlavičce na počítači příjemce je podobná záhlaví na konvenčním dopisu – skutečná informace o tom, komu byla zpráva adresována, je odstraněná mailovým serverem potom, co je přiřazená správné mailové schránce. Pole „Od“ nemusí obsahovat adresu skutečného odesílatele. Je velmi jednoduché to zfalšovat a zpráva potom vypadá, že přišla z uvedené adresy. Je možné e-mail digitálně podepsat, aby bylo jisté, od koho zpráva pochází.
+Další běžné součásti hlavičky:
+
+Kopie (Cc): carbon copy – kopie (carbon proto, že psací stroje používají „kopírák“ (carbon paper) k vytvoření kopií dopisů) (vyplňuje odesílatel, nepovinná položka)
+Slepá čili skrytá kopie (Bcc): blind carbon copy – neviditelná kopie (adresát bude vidět osoby uvedené v poli „Komu“ a „Cc“, ale ne adresy v „Bcc“) (vyplňuje odesílatel, nepovinná položka)
+Received: přijato – trasové informace vytvořené servery, kterými zpráva prošla (automatické zápisy serverů)
+Content-type: druh obsahu – informace o tom, jak má být zpráva zobrazena, obvykle MIME typ (automatický zápis)
+
+
+=== E-mailová adresa ===
+
+Každý uživatel musí mít pro příjem zpráv svoji e-mailovou adresu, která identifikuje jeho elektronickou poštovní schránku. Ta je fyzicky umístěna na nějakém internetovém serveru, populární jsou zejména servery, které nabízejí e-mailovou schránku zdarma a s webovým rozhraním (např. Centrum.cz, GMail, Seznam.cz).
+Pro odesílání zpráv není vlastní e-mailová adresa nutná, typickým příkladem jsou elektronické pohlednice, bez vlastní e-mailové adresy lze přes webové rozhraní zasílat také klasické e-mailové zprávy i s přílohou.
+
+
+=== E-mailové konference ===
+Populární jsou diskuzní skupiny zvané e-mailové konference (mailinglisty), ve kterých probíhá hromadná výměna e-mailů mezi všemi účastníky.
+
+
+=== Elektronický podpis ===
+
+Nejjednodušší formou elektronického podpisu je prosté uvedení jména a dalších identifikačních a kontaktních údajů na konci těla zprávy.
+Obvykle se však pojmem elektronický podpis míní sofistikovanější nástroj, kdy pomocí speciálního kódu připojeného ke zprávě je možné ověřit jednak to, kdo zprávu skutečně odeslal (samotný údaj v položce From totiž není spolehlivý) a zpravidla i to, že obsah zprávy (tělo zprávy a přílohy) nebyl mezi odesláním a přijetím zprávy změněn. Jinak řečeno – jedná se o prostředek, který umožní ověřit, že elektronický dokument skutečně podepsala daná osoba a že v dokumentu nedošlo k žádným dodatečným změnám.
+
+
+=== Soukromí a šifrování ===
+
+Bez osobních bezpečnostních opatření e-mail nezaručuje soukromí, protože
+
+e-mailové zprávy všeobecně nejsou šifrované;
+e-mailové zprávy musí projít cizími počítači v síti předtím, než dosáhnou cílový počítač, což znamená, že je relativně jednoduché je cestou zachytit a přečíst si cizí zprávu;
+většina poskytovatelů internetového připojení (Internet service provider) ukládá na své servery kopie vašich e-mailových zpráv předtím, než je doručí. Tyto zálohy mohou zůstat na serveru až několik měsíců, a to i v případě, že si je ve své schránce vymažete.
+Existují kryptografické (šifrovací) aplikace, které mohou tyto nedostatky řešit, jako např. virtuální privátní sítě, šifrování zpráv pomocí PGP nebo GNU Privacy Guard, šifrovaná komunikace s e-mailovým serverem pomocí Transport Layer Security a Secure Sockets Layer a šifrované autentifikační schéma jako Simple Authentication and Security Layer.
+Šifrovací aplikace bývají obvykle funkčně propojené s aplikacemi vytvářejícími elektronický podpis.
+
+
+== Nežádoucí zprávy ==
+
+Užitečnost a použitelnost elektronické pošty ohrožují dva fenomény: spam a e-mailoví červi.
+
+
+=== Spam a hoaxy ===
+Velkým problémem se naopak stává nevyžádaná obtěžující pošta zvaná spam (týká se především různých služeb, inzerátů, formulářů, atd.), kvůli kterému je vhodné být opatrný při zveřejňování e-mailové adresy na internetu. Když už vaši adresu zveřejnit chcete je dobré nahradit „zavináč – @“ například – (at).
+Spam je nevyžádaná reklamní pošta. Nízké náklady na odeslání zprávy umožňují spammerům odeslat stovky miliónů elektronických zpráv denně pomocí laciného internetového připojení. Stovky aktivních spammerů způsobují přetížení počítačů v internetu, které takto dostávají desítky či stovky nevyžádaných e-mailů denně.
+Dalším typem e-mailových zpráv jsou takzvané hoaxy. Tak se nazývají bludné a zplanělé zprávy kolující po internetu.
+
+
+=== E-mailoví červi ===
+E-mailoví červi a viry používají elektronickou poštu k tomu, aby se mohli šířit do ostatních zranitelných počítačů. Přestože první e-mailový červ (Morris worm) infikoval UNIXové počítače, tento problém se v současnosti týká především Microsoft Windows.
+
+
+=== Obrana před nežádoucími zprávami ===
+Vliv těchto dvou faktorů způsobuje, že uživatelé dostávají více nevyžádané pošty, což snižuje použitelnost e-mailu.
+Množství technologických iniciativ (Stopping e-mail abuse) se snaží zmírnit dopad spamových útoků. V USA byl Kongresem schválen zákon na regulaci takového e-mailu (Can Spam Act of 2003).
+Jiný způsob obrany před spamem je obrana technologická. Jedním ze zdrojů e-mailových adres je web a určitým specializovaným programem je možné hromadně extrahovat elektronické adresy vyskytující se v textu webových stránek. K zabránění těmto automatizovaným útokům se používá e-mailová adresa ve formě pochopitelné člověku, avšak nepochopitelné stroji. Například adresa „eva@domena.cz“ se zapíše jako „eva zavináč doména tečka cz“ (v angličtině se často používá „eva AT doména DOT cz“) a nebo se vygeneruje obrázek obsahující e-mailovou adresu a ten se uvede namísto textu.
+V současné době existuje také mnoho programů (ať jsou to samostatné aplikace, součásti e-mailových klientů, nebo programy na serverech), které jsou schopny na bázi různých kritérií alespoň část spamu odfiltrovat.
+Existují programy pro bezpečnou e-mailovou komunikaci:
+Enigmail – velice rozšířený. Jedná se o doplněk, který do poštovního klienta Thunderbirdu přidá podporu pro práci s šifrovanou poštou. Můžete posílat poštu v šifrované podobě, což zajistí, že si vaše zprávu přečtou pouze prověřené osoby.
+Safetica Free – dříve pod názvem DisCryptor, je bezplatný bezpečnostní nástroj pro ochranu počítačového soukromí. Dokáže zašifrovat soubory, složky a přílohy e-mailů. Obsahuje řadu pokročilých funkcí, jako např. datová skartovačka pro bezpečné odstranění dat. Software je vyvíjen českou společností Safetica Technologies.
+Vigenèrova šifra – program zašifruje i dešifruje text, který napíšete. Hodí se k nejjednoduššímu způsobu šifrování e-mailové komunikace. Musíme mít ale na paměti, že tato šifra je mezi námi už několik staletí a není tak nerozbitným kódem jako nejmodernější algoritmy. Je zdarma.
+Tor – jedná se o projekt, který si klade za cíl ochránit soukromí a bezpečnost uživatelů e-mailů. Snaží se zabránit sledování komunikace probíhající skrze protokol TCP. Tor rozebere internetové připojení uživatele na malé části. Vše je anonymní. Program lze také využít i k zabezpečení přístupu k freemailovým službám skrze jejich zranitelné webové rozhraní. Je zdarma.
+
+
+== Nejpoužívanější freemaily v Česku ==
+Seznam Email (Seznam.cz)
+Gmail (Google)
+Centrum.cz mail (Centrum.cz)
+Outlook.com (Microsoft)
+
+
+== Odkazy ==
+
+
+=== Reference ===
+
+
+=== Související články ===
+Internet
+Simple Mail Transfer Protocol (SMTP)
+Post Office Protocol (POP3)
+Internet Message Access Protocol (IMAP)
+
+
+=== Externí odkazy ===
+ Obrázky, zvuky či videa k tématu e-mail na Wikimedia Commons 
+ Slovníkové heslo e-mail ve Wikislovníku
+E-mail v České terminologické databázi knihovnictví a informační vědy (TDKIV)

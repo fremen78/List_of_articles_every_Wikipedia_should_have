@@ -1,0 +1,214 @@
+Algebra linear ialah satu cabang ilmu matematik yang mengkaji ruang vektor (juga dikenali dengan nama "ruang linear"), bersama dengan fungsi-fungsi yang memberi input pada satu vektor dan output pada vektor yang lain. Fungsi-fungsi ini dipanggil peta linear (atau transformasi linear, atau pengoperasi linear) yang boleh dinyatakan dengan matriks jika asas diberi. Teori matriks sering dianggap sebagai sebahagian dari subjek algebra linear. Algebra linear biasanya dihadkan pada kes ruang vektor dimensi yang terhingga, sementara kes-kes khas dimensi tak terhingga biasanya dikaji dalam analisis fungsi linear.
+Algebra linear merupakan antara subjek utama dalam matematik moden dan aplikasinya. Aplikasi asas algebra linear ialah untuk mencari penyelesaian sistem persamaan linear dalam beberapa anu. Aplikasi peringkat lebih tinggi banyak wujud dalam pelbagai jenis bidang seperti algebra abstrak dan analisis fungsi. Algebra linear mempunyai perwakilan konkrit dalam geometri analisis dan diitlak dalam teori pengoperasi dan teori modul. Ia diaplikasikan dengan meluas dalam kejuruteraan, fizik, sains semula jadi, sains komputer dan sains sosial. Model matematik yang bukan linear boleh juga dianggarkan menggunakan model linear.
+
+
+== Sejarah ==
+Bentuk moden subjek ini pertama kali muncul pada permulaan kurun ke-20. Pada masa itu, banyak idea dan kaedah dari kurun sebelumnya diitlakkan sebagai algebra abstrak. Matriks dan tensor diperkenalkan pada penghujung kurun ke-19. Penggunaan objek-objek ini dalam mekanik kuantum, kerelatifan khas dan statistik telah meluaskan lagi skop aplikasi algebra linear dari ruang lingkup matematik tulen.
+
+
+== Struktur utama ==
+Struktur utama algebra linear ialah ruang vektor dan peta linear di antaranya. Ruang vektor ialah satu set yang elemen-elemennya boleh ditambah bersama dan didarab dengan skalar atau nombor. Dalam kebanyakan aplikasi fizikal, skalar adalah nombor nyata, R. Secara lebih umum, skalar boleh membentuk sebarang medan F- jadi, ruang vektor dianggap melalui medan nombor rasional Q, medan nombor kompleks C, atau medan terhingga Fq. Kedua-dua operasi ini mesti bertindak serupa dengan penambahan dan pendaraban nombor biasa: penambahan adalah kalis tukar tertib dan kalis sekutuan, pendaraban adalah kalis agihan ke atas penambahan, dan seterusnya. Dalam erti kata lain, kedua-dua operasi mesti memenuhi senarai aksiom yang dipilih untuk menyamai sifat penambahan dan pendaraban skalar vektor Euclid dalam koordinat ruang-n Rn. Salah satu aksiom tersebut menentukan kewujudan vektor sifar, yang bertindak sama seperti nombor sifar dalam penambahan. Elemen-elemen ruang vektor umum V boleh menjadi sebarang bentuk objek, contohnya fungsi atau polinomial, tetapi apabila ia dilihat sebagai elemen dalam V, ia sering dipanggil vektor.
+Diberi dua ruang vektor V dan W di medan F, transformasi linear ialah satu peta
+
+  
+    
+      
+        T
+        :
+        V
+        →
+        W
+      
+    
+    {\displaystyle T:V\to W}
+  
+
+yang serasi dengan penambahan dan pendaraban skalar:
+
+  
+    
+      
+        T
+        (
+        u
+        +
+        v
+        )
+        =
+        T
+        (
+        u
+        )
+        +
+        T
+        (
+        v
+        )
+        ,
+        
+        T
+        (
+        r
+        v
+        )
+        =
+        r
+        T
+        (
+        v
+        )
+      
+    
+    {\displaystyle T(u+v)=T(u)+T(v),\quad T(rv)=rT(v)}
+  
+
+untuk sebarang vektor u,v ∈ V dan skalar r ∈ F.
+Peranan asas dalam algebra linear dimainkan oleh tanggapan kombinasi linear, rentangan, ketakbersandaran linear vektor serta asas dan dimesi ruang vektor. Diberi ruang vektor V di medan F, satu ungkapan untuk bentuk
+
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          r
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          r
+          
+            k
+          
+        
+        
+          v
+          
+            k
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle r_{1}v_{1}+r_{2}v_{2}+\cdots +r_{k}v_{k},\,}
+  
+
+di mana v1, v2, …, vk adalah vektor dan
+r1, r2, …, rk adalah skalar, dikenali sebagai kombinasi linear vektor-vektor v1, v2, …, vk dengan pekali r1, r2, …, rk. Set untuk semua kombinasi linear vektor-vektor v1, v2, …, vk dipanggil sebagai rentangannya. Kombinasi linear bagi sebarang sistem vektor dengan semua pekali sifar ialah vektor sifar V. Jika ini adalah satu-satunya cara untuk mengungkap vektor sifar sebagai kombinasi linear v1, v2, …, vk, maka vektor-vektor ini adalah tak bersandaran secara linear. Set vektor yang tak bersandaran secara linear yang merangkumi satu ruang vektor V ialah asas bagi V. Jika satu ruang vektor menyetujui asas terhingga maka sebarang dua asas memiliki jumlah elemen yang sama (dipanggil dimensi V) dan V ialah satu ruang vektor dimensi terhingga. Teori ini dapat juga diaplikasi pada ruang dimensi tak terhingga.
+Terdapat perbezaan penting di antara koordinat ruang-n Rn dengan ruang vektor dimensi terhingga V. Sementara Rn memiliki satu asas piawai {e1, e2, …, en}, satu ruang vektor V secara tipikalnya tidak dilengkapi dengan asas dan banyak asas yang berbeza wujud (walaupun kesemuanya mengandungi jumlah elemen yang sama dengan dimensi V). Dengan memiliki asas tertentu {v1, v2, …, vn} untuk V, sistem koordinat boleh dibina dalam V: vektor dengan koordinat (r1, r2, …, rn) ialah kombinasi linear
+
+  
+    
+      
+        
+          r
+          
+            1
+          
+        
+        
+          v
+          
+            1
+          
+        
+        +
+        
+          r
+          
+            2
+          
+        
+        
+          v
+          
+            2
+          
+        
+        +
+        …
+        +
+        
+          r
+          
+            n
+          
+        
+        
+          v
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle r_{1}v_{1}+r_{2}v_{2}+\ldots +r_{n}v_{n}.}
+  
+
+Keadaan yang v1, v2, …, vn merentangi V menjamin yang setiap vektor v boleh diberi koordinat, sementara ketakbersandaran linear v1, v2, …, vn menjamin yang koordinat-koordinat ini ditentukan dengan cara yang unik (i.e. terdapat hanya satu kombinasi linear bagi vektor asas yang sama dengan v). Dengan cara ini, apabila satu asas ruang vektor V pada F telah dipilih, V mungkin boleh ditentukan dengan koordinat ruang-n-space Fn. Di bawah penentuan ini, penambahan dan pendaraban skalar vektor-vektor dalam V adalah berpadanan dengan penambahan dan pendaraban skalar vektor koordinatnya dalam Fn. Selain itu, jika V dan W adalah ruang vektor n-dimensi dan m-dimensi pada F, dan asas bagi V dan asas bagi W telah ditetapkan, maka sebarang transformasi linear T: V → W boleh dikodkan oleh m × n matriks A dengan kemasukan dalam medan F, dipanggil matriks T berdasarkan asas-asas ini. Kesimpulannya, kajian transformasi linear yang ditakrifkan secara aksiomatik, boleh digantikan dengan kajian matriks, yang merupakan objek yang konkrit. Ini merupakan antara teknik utama dalam algebra linear.
+
+
+== Beberapa teorem berguna yang utama ==
+(AC) Setiap ruang vektor memiliki asas.
+(AC) Sebarang dua asas ruang vektor yang sama akan mempunyai kekardinalan yang sama. Begitu juga, dimensi bagi ruang vektor adalah tertakrif rapi.
+Satu matriks adalah boleh songsang, atau tidak singular, jika dan hanya jika peta linear yang diwakili oleh matriks adalah satu isomorfisme.
+Sebarang ruang vektor pada satu medan F di dimensi n adalah isomorfik dengan Fn sebagai satu ruang vektor pada F.
+Korolari: Sebarang dua ruang vektor pada F dalam dimensi terhingga yang sama adalah isomorfik di antara satu sama lain.
+
+
+== Pengitlakan dan topik berkaitan ==
+Oleh kerana algebra linear adalah teori yang berjaya, kaedahnya telah dibangunkan dalam bahagian lain matematik. Dalam teori modul, medan skalar digantikan dengan satu gelanggang. Dalam algebra multilinear, transformasi linear multipembolehubah ada digunakan, iaitu, pemetaan yang linear dalam setiap jumlah pemboleh ubah yang berbeza. Garis persoalan ini biasanya membawa kepada idea hasil darab tensor. Analisis fungsi juga ada mencampurkan kaedah algebra linear dengan analisis matematik.
+
+
+== Bacaan lanjut ==
+
+
+== Pautan luar ==
+
+International Linear Algebra Society Diarkibkan 2008-07-24 di Wayback Machine
+MIT Professor Gilbert Strang's Linear Algebra Course Homepage : MIT Course Website
+MIT Linear Algebra Lectures: free videos from MIT OpenCourseWare
+Linear Algebra Toolkit.
+Linear Algebra on MathWorld.
+Linear Algebra overview and notation summary on PlanetMath.
+Matrix and Linear Algebra Terms on Earliest Known Uses of Some of the Words of Mathematics
+Earliest Uses of Symbols for Matrices and Vectors on Earliest Uses of Various Mathematical Symbols
+Linear Algebra by Elmer G. Wiens. Interactive web pages for vectors, matrices, linear equations, etc.
+Linear Algebra Solved Problems: Interactive forums for discussion of linear algebra problems, from the lowest up to the hardest level (Putnam).
+Linear Algebra for Informatics. José Figueroa-O'Farrill, University of Edinburgh
+Online Notes / Linear Algebra Paul Dawkins, Lamar University
+Elementary Linear Algebra textbook with solutions
+Linear Algebra Wiki
+Linear algebra (math 21b) homework and exercises
+
+
+=== Buku atas talian ===
+Beezer, Rob, A First Course in Linear Algebra
+Connell, Edwin H., Elements of Abstract and Linear Algebra
+Hefferon, Jim, Linear Algebra
+Matthews, Keith, Elementary Linear Algebra
+Sharipov, Ruslan, Course of linear algebra and multidimensional geometry
+Treil, Sergei, Linear Algebra Done Wrong

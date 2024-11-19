@@ -1,0 +1,174 @@
+Mel elektronik (singkatan e-mel [imél], bahasa Inggeris: e-mailcode: en is deprecated ), surat elektronik atau mel komputer ialah satu kaedah mengarang, menghantar, menyimpan dan menerima mesej melalui sistem komunikasi elektronik. Istirah "e-mel" (sebagai satu kata nama atau kata kerja) membawa maksud sistem e-mel Internet berasaskan Protokol Pemindahan Mel Mudah (Simple Mail Transfer Protocol, SMTP) dan juga sistem-sistem X.400, serta sistem-sitem intranet yang membolehkan para pengguna dalam satu organisasi mengirim e-mel sesama sendiri. Selalunya, organisasi kerjasama kumpulan kerja sebegini boleh menggunakan protokol Internet atau 400 untuk perkhidmatan e-mel dalaman. E-mel sering digunakan untuk mengirim mesej secara besar-besaran tanpa diminta yang dipanggil "spam", namun adanya program penapis untuk memadamnya, bergantung kepada situasi.
+
+
+== Asal-usul ==
+E-mel direka terlebih dahulu sebelum kewujudan Internet, dan sebenarnya merupakan alat yang penting dalam penciptaan Internet. Pada tahun 1961, MIT mula-mula mendemonstrasi Sistem Pengongsian Masa Serasi (Compatible Time-Sharing System, CTSS) yang membolehkan ramai pengguna melog masuk ke dalam IBM 7094 dari terminal dailan jarak jauh, serta menyimpan fail-fail atas talian ke dalam cakera. Kebolehan baru ini menggalakkan para pengguna berkongsi maklumat dengan cara-cara baru. E-mel dimulakan pada tahun 1965 sebagai satu kaedah untuk ramai pengguna komputer kerangka utama berkongsi masa untuk berkomunikasi sesama sendiri. Sungguhpun sejarah tepatnya tidak jelas, namun antara sistem-sistem terawal yang memiliki kemudahan sebegini ialah Q32 oleh SDCdan CTSS oleh MIT.
+E-mel dengan begitu pantas berkembang menjadi e-mel rangkaian yang membolehkan pengguna mengirim mesej di antara komputer-komputer berlainan seawal-awalnya pada tahun 1966 (ada kemungkinan bahawa sistem SAGE agak serupa dengan ini berapa ketika sebelumnya).
+Rangkaian komputer ARPANET memberi sumbangan besar kepada perkembangan e-mel. Terdapat satu laporan yang menandakan pemindahan e-mel antara sistem percubaan padanya tidak lama selepas penciptaanya pada tahun 1969. Ray Tomlinson memulakan penggunaan lambang @ untuk memisahkan nama pengguna dan nama mesin pada tahun 1971. ARPANET banyak meningkatkan populariti e-mel, maka e-mel menjadi aplikasi pembubuh bagi ARPANET.
+
+== Fungsi ==
+
+
+=== Contoh ===
+
+Diagram di atas menunjukkan susunan yang lazim bagi peristiwa-peristiwa yang berlaku apabila Alice mengarang satu mesej dengan menggunakan agen pengguna melnya (mail user agent, MUA). Dia menaip masuk, atau memilih dari buku alamatnya, alamat e-mel penerimanya. Dia menekan butang "hantar".
+
+MUA-nya memformatkan mesej dalam suatu format e-mel Internet dan menggunakan Protokol Pemindahan Mel Mudah (SMTP) untuk menghantar mesej berkenaan ke agen pemindahan mel (mail transfer agent, MTA) tempatan, iaitu smtp.a.org yang dikendali Penyedia Perkhidmatan Internet (ISP) langganan Alice.
+MTA memeriksa alamat destinasi yang diberi dalam protokol SMTP (bukan dari pengepala mesej), iaitu bob@b.org. Alamat e-mel Internet address ialah serangkai bentuk localpart@exampledomain.com, yang dikenal pasti sebagai satu Alamat Domain Layak Sepenuhnya (Fully Qualified Domain Address, FQDA). Bahagian sebelum lambang @ ialah bahagian tempatan alamat, iaitu lazimnya nama pengguna penerima, manakala bahagian selepas lambang @ ialah nama domain. MTA mencari nama domain ini dalam Sistem Nama Domain untuk mencari pelayan pertukaran mel yang menerima mesej dari domain itu.
+Pelayan DNS untuk domain b.org, ns.b.org, membalas dengan rekod MX menyenaraikan pelayan pertukaran mel untuk domain berkenaan, iaitu mx.b.org, satu pelayan yang dikendali ISP Bob.
+smtp.a.org menghantar mesej berkenaan ke mx.b.org dengan menggunakan SMTP yang mengirimnya ke dalam peti surat pengguna bernama bob.
+Bob menekan butang "dapatkan mel" dalam MUAnya, yang memungut mesej berkenaan menggunakan Protokol Pejabat Pos (Post Office Protocol, POP3).
+Diingatkan bahawa pihak-pihak, alamat-alamat e-mel dan nama-nama domain dalam penjelasan ini adalah tidak wujud semata-mata.
+
+
+=== Format ===
+Format mesej e-mel Internet didefinasikan dalam RFC 2822 dan satu siri RFC, dari RFC 2045 hingga RFC 2049, secara kolektifnya dipanggil Sambungan Mel Internet Pelbagai Guna (Multipurpose Internet Mail Extensions, MIME). Meskipun pada 13 Julai 2005 (lihat [1]) Secara teknikal, RFC 2822 ialah satu piawaian IETF yang dicadangkan dan MIME RFC pula piawaian IETF rangka sahja, dokumen-dokumen ini ialah piawaian de facto untuk pemformatan e-mel Internet. Sebelum pengenalan RFC 2822 pada tahun 2001, format yang dihuraikan RFC 822 merupakan piawaian de facto untuk e-mel Internet selama hampir dua dekad; RFC 822 masihlah piawaian IETF rasmi. IETF menyimpan monbor-nombor 2821 dan 2822 untuk versi-versi kemaskini RFC 821 (SMTP) dan RFC 822, maka memperakui kepentingan besar kedua-dua RFC ini. RFC 822 diterbitkan pada tahun 1982 berasaskan RFC 733 sebelumnya.
+Mesej-mesej e-mel Internet terdiri daripada dua bahagian utama:
+
+Pengepala — Distrukturkan kepada ruang-ruang seperti ringkasan, pengirim, penerima, dan maklumat lain mengenai e-mel
+Isi — Mesej itu sendiri sebagai teks yang tidak berstruktur; kadang-kala disertakan ruang tandatangan pada penghujungnya
+Pengepala dipisahkan daripada isi dengan sebatang garis kosong.
+
+
+==== Pengepala ====
+Pengepala mesej terdiri daripada ruangan-ruangan seperti yang berikut:
+
+Dari: Alamat e-mel dan juga nama pengirim mesej
+Ke: Alamat e-mel dan juga nama penerima mesej
+Subjek: Ringkasan kandungan mesej (seperti tajuk)
+Tarikh: Tarikh dan waktu tempatan mesej dikarang
+Ruang-ruang pengepala lain juga termasuk (lihat RFC 4021 atau RFC 2076 untuk maklumat selanjutnya):
+
+Cc: Salinan karbon (Carbon copy)
+Bcc: Salinan karbon buta (Blind carbon copy)
+Diterima: Malumat penjejakan yang dijana pelayan mel yang sebelumnya menangani sesuatu mesej
+Content-Type: Maklumat mengenai bagaimana mesej perlu dipapar, biasanya sejenis MIME
+Reply-To: Alamat yang patut digunakan untuk membalas pengirim.
+References: Message-ID untuk mesej bahawa ini ialah maklumbalas, dan message-id mesej ini, dsb.
+In-Reply-To: Message-ID bagi mesej bahawa ini ialah maklumbalas.
+X-Face: Ikon kecil.
+Kebanyakan klien e-mel menyediakan "Bcc" (Salinan karbon buta, para penerima yang tidak dilihat dalam ruangan "To") sebagai ruangan pengepala. Protokol berbeza-beza digunakan untuk menangani ruangan "Bcc"; ada kalanya seluruh ruangan itu digugurkan, pada masa-masa lain ruangan itu dikekalkan tetapi alamat-alamat dalamnya digugurkan. Alamat-alamat yang dimasukkan dalam "Bcc" hanya dimasukkan dalam senarai pengiriman SMTP, dan tidak termasuk dalam data mesej.
+IANA menetapkan satu senarai piawaian ruangan-ruangan pengepala.
+
+
+== Pelayan dan aplikasi klien ==
+Mesej-mesej ditukarkan antara hos-hos melalui penggunaan Protokol Pemindahan Mel Mudah dengan program-program perisian yang dipanggil agen pengangkutan mel. Pengguna boleh memuat turun mesej-mesejnya dari pelayan-pelayan dengan protokol-protokol piawaian seperti POP atau IMAP, atau, bagi persekitaran korporat yang besar, dengan protokol proprietari yang dikhususkan untuk Lotus Notes atau Microsoft Exchange Server.
+Mwl boleh disimpan sama ada pada klien, pada pihak pelayan, atau kedua-duanya. Fromat-format piawaian untuk peti surat termasuk Maildir dan mbox. Beberapa kilen e-mel yang terpenting menggunakan format hakmilik tersendiri dan memerlukan perisian penukaran untuk mengalihkan e-mel antara satu sama lain.
+Apabila sesuatu mesej tidak dapat dikirim, MTA penerima perlu menghantar mesej lambung balik kepada pengirim untuk menyatakan masalahnya.
+
+
+=== Sambungan nama fail ===
+Kebanyakan, tetapi bukan semua, klien-klien e-mel menyimpan setiap satu mesej sebagai fail berasingan, atau membolehkan pengguna berbuat demikian. Aplikasi yang berbeza menyimpan fail e-mel dengan sambungan nama fail yang berlainan.
+
+.eml
+Inilah sambungan e-mel asalan untuk Mozilla Thunderbird dan Windows Mail dan juga digunakan dalam Microsoft Outlook Express.
+.emlx
+Digunakan dalam Apple Mail.
+.msg
+Digunakan dalam Microsoft Office Outlook.
+
+
+== Kegunaan ==
+
+
+=== Dalam masyarakat ===
+
+
+==== Flaming ====
+Ramai pemerhati mengeluh meningkatnya amalan flaming dalam komunikasi bertulis. Flaming berlaku apabila seseorang menghantar mesej yang bernada marah dan/atau hasad. Tindakan ini dianggap makin menjadi-jadi hari ini kerana kemudahan dan sifat tidak insani komunikasi e-mel: pertelingkahan antara muka atau melalui telefon memerlukan interaksi secara terus, sedangkan norma-norma sosial menggalakkan ketertiban, manakala menaip mesej ke orang lain merupakan interaksi tidak langsung, maka ketertiban boleh diabaikan.
+
+
+=== Dalam perniagaan ===
+E-mel diterima secara meluas oleh komuniti niaga sebagai perantara komunikasi elektronik luas yang terulung dan merupakan ‘e-revolusi’ pertama dalam komunikasi niaga. E-mel amat mudah difahami dan sepertilah pos, e-mel menyelesaikan dua masalah asas komunikasi. E-mel berasaskan LAN juga makin banyak digunakan dalam perniagaan. E-mel berasaskan LAN ini bukan sahaja membolehkan pengguna perniagaan untuk memuat turun mel ketika offline, malah juga menyediakan ID e-mel ramai pengguna kepada pengguna perniagaan kecil dengan cuma satu sambungan e-mel.
+
+
+==== Kelebihan ====
+Masalah logistikKebanyakan dunia perniagaan bergantung kepada komunikasi antara individu-individu yang berjauhan dari satu sama lain secara fizikal; penyusunan dan penyertaan dalam mesyuarat antaramuka boleh membazir masa dan menjadi mahal. E-mel menyediakan pertukaran maklumat hampir serta-merta pada kos yang rendah. Telepersidangan mengatasi jarak fizikal, namun logistik menghimpunkan orang ramai pada masa yang sama kekal.
+Masalah penyegerakan
+Bagi komunikasi masa nyata, para peserta biasanya perlu bekerja dalam jadual yang sama. Mereka perlu berada di tempat yang sama pada masa yang sama dan menumpukan jumlah masa yang sama pada maklumat yang sama. E-mel membolehkan setiap peserta menentukan bila dan bagaimana mereka akan memproseskan maklumat.
+
+
+==== Kelemahan ====
+Kebanyakan golongan profesional niaga hari ini menghabiskan antara 20% dan 50% waktu bekerja mereka dengan penggunaan e-mel : membaca, menempah, menyusun, ‘mengkontekskan semula’ cebis-cebisan maklumat dan seudah tentunya menulis e-mel. Kegunaan e-mel makin meningkat dalam arus globalisasi ini—pengagihan bahagian pertubuhan, penyumberan, dan sebagainya. E-mel boleh membawa kepada beberapa masalah:
+
+Kehilangan konteks: Maklumat dalam konteks (seperti dalam akhbar) lebih mudah dan cepat difahami berbanding cebis-cebisan yang tidak disusun. Communicating in context is faster and more efficient.
+Spam: E-mail ialah perantara tolak-sahaja: kawalan terhadap siapa yang menerima maklumat terletak terutamanya di tangan pengirim. Ini boleh menyebabkan sarat maklumat yang tidak dikehendaki atau tidak relevan.
+Ketidaksejajaran: E-mel boleh menyalin maklumat. Ini boleh menjadi masalah apabila satu pasukan sedang bekerjasama dalam mengerjakan dokumen.
+Sungguhpun begitu, dan walaupun adanya alatan-alatan lain, komunikasi berasaskan e-mel masih adalah medium bertulus yang paling laris digunakan dalam perniagaan.
+
+
+== Cabaran ==
+
+
+=== Spam dan virus komputer ===
+Keberkesanan e-mel sedang diancam oleh tiga fenomena, iaitu: spam, phishing dan cecacing.
+Spam ialah e-mel komersial yang tidak diminta pengguna. Oleh sebab kos penghantaran e-mel yang amat rendah, penghantar spam (spammer) boleh menghantar beratus-ratus juta mesej e-mel setiap hari melalui sambungan Internet yang murah. Ratusan spammer aktif yang menghantar bilangan mel sebegini mengakibatkan sarat maklumat dialami ramai pengguna komputer yang menerima berpuluh-puluh ataupun beratus-ratus mesej remeh setiap hari.
+Cecacing e-mel menggunakan e-mel sebagai satu cara mereplikakan dirinya ke dalam komputer yang terdedah. Meskipun [[Cecacing Morris|cecacing e-mel pertama] menyerang komputer UNIX, namun masalah ini lebih nyata berlaku dalam sistem pengendalian Microsoft Windows yang lebih popular.
+Gabungan program-program spam dan cecacing mengakibatkan pengguna selalu dibanjiri e-mel remeh, lalu mengurangkan kegunaan e-mel sebagai alatan yang berguna.
+Terdapat sebilangan teknik anti-spam yang mampu mengurangkan impak spam. Di Amerika Syarikat, Kongres telah juga meluluskan satu rang undang-undang, iaitu Can Spam Act of 2003 yang cuba mengawal e-mel sedemikian. Australia juga menguatkuasa undang-undang spam yang amat tegas untuk menyekat pengiriman spam dari ISP Australia (http://www.aph.gov.au/library/pubs/bd/2003-04/04bd045.pdf https 
+Diarkibkan 2003-12-02 di Wayback Machine), namun impaknya tidak banyak menunjukkan kesan kerana kebanyakan spam berasal dari rejim-rejim yang kelihatan enggan menyekat pengiriman spam.
+
+
+=== Kebimbangan privasi ===
+
+Privasi e-mel boleh dicabuli jika langkah berjaga-jaga tidak diambil kerana:
+
+mesej e-mel biasanya tidak disulitkan;
+mesej e-mel perlu melalui komputer perantaraan sebelum sampai di destinasi, maka adalah agak senang untuk orang lain menyekat dan membaca mesej tersebut;
+kebanyakan Penyedia Perkhidmatan Internet menyimpan salinan mesej e-mel anda dalam pelayan mel mereka sebelum pengiriman. Salinan sandarnya mampu bertahan selama berbulan-bulan dalam pelayan itu, sungguhpun anda telah memadamnya dalam peti surat anda;
+Pengepala Received: dan maklumat lain dalam e-mail biasanya boleh mengenal pasti identiti pengirim, maka menghalang komunikasi tidak bernama.
+Terdapat aplikasi kriptografi yang boleh berfungsi sebagai penawar kepada sesetengah masalah yang tersebut tadi. Contohnya, Rangkaian Persendirian Maya atau rangkaian ketanpanamaan Tor boleh digunakan untuk menyulitkan trafik dari mesin pengguna kepada rangkaian yang lebih selamat sementara GPG, PGP atau S/MIME boleh digunakan untuk penyulitan mesej hujung ke hujung, manakala SMTP STARTTLS atau SMTP atas Sekuriti Lapisan Pengangkutan/Lapisan Soket Selamat (Transport Layer Securtiy/Secure Socket Layers) boleh digunakan untuk menyulitkan komunikasi untuk satu lompatan mel tunggal antara klien SMTP dan pelayan SMTP.
+Tambahan pula, kebanyakan agen pengguna mel tidak melindungi log masuk dan kata laluan, maka memudahkannya dipintas penyerang. Skim-skim pengesahan sulit seperti SASL boleh mencegahnya.
+Akhir sekali, fail-fail lampiran mengalami kebanyakan bahaya yang juga dihadapi perkongsian fail P2P. Fail-fail lampiran ini mungkin mengandungi kuda trojan atau virus.
+
+
+=== Penjejakan mel yang dihantar ===
+E-mel pokoknya tidak menyediakan apa-apa mekanisme untuk menjejak mesej yang dikirim. Sistem yang terlibat biasanya akan berusaha sama ada untuk mengirim mel berkenaan atau menghantar balik notis kegagalan ("mesej lambung"), namun tiada jaminan bahawa mesej itu betul-betul akan disampaikan, mahupun dibaca penerima.
+Berbeza pula dengan sistem pos yang menawarkan pos berdaftar atau bentuk-bentuk penjejakan dan penyurihan yng lain.
+Sebagai penawar, wujudnya mekanisme seperti Pemberitahuan Status Penghantaran (Delivery Service Notification, DSN) dan resit pergi balik.
+
+
+== Lihat juga ==
+
+
+=== Peningkatan mutu ===
+BlackBerry
+Penyulitan e-mel
+E-mel HTML
+Faks Internet
+L-mel
+E-mel tolak
+
+
+=== Isu sosial ===
+
+
+=== Klien dan pelayan ===
+
+
+=== Senarai mel ===
+Senarai mel elektronik
+Arkib senarai mel
+Penjejakan e-mel
+Penyulitan e-mel
+
+
+=== Protokol ===
+SMTP
+X400
+
+
+== Rujukan ==
+
+
+=== Nota ===
+
+
+=== Bibliografi ===
+Free On-line Dictionary of Computing
+Microsoft Manual of Style for Technical Publications Version 3.0
+
+
+== Pautan luar ==
+The History of Electronic Mail is a personal memoir by the implementer of one of the first e-mail systems
+IANA's list of standard header fields

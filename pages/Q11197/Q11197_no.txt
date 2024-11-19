@@ -1,0 +1,1776 @@
+Logaritmen med grunntall b  til et tall a er den eksponenten c som grunntallet må opphøyes i for å gi tallet:
+
+  
+    
+      
+        
+          b
+          
+            c
+          
+        
+        =
+        a
+         
+        
+        ⟺
+        
+         
+        c
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        
+      
+    
+    {\displaystyle b^{c}=a\ \iff \ c=\log _{b}a\,}
+  
+
+Grunntallet kalles også basis for logaritmen.  Tallet a er antilogaritmen.  Logaritmer med grunntall lik Eulers tall e  kalles naturlige logaritmer, mens briggske logaritmer bruker grunntallet 10.  Også grunntallet 2 er vanlig brukt og gir opphav til binære logaritmer..
+Desimaltallene i en logaritme blir betegnet mantissen, mens heltalsverdien kalles karakteristikken.  For en logaritmeverdi lik 3,2727 er karakteristikken lik 3 og mantissen er 0,2727.
+For et fast grunntall kan logaritmen betraktes som en funksjon av argumentet x og kalles da for logaritmefunksjonen:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        
+      
+    
+    {\displaystyle f(x)=\log _{b}x\,}
+  
+.
+
+
+== Bruk av logaritmer ==
+Logaritmefunksjonen er en av de såkalte elementære grunnfunksjonene og har stort bruksområde i mange deler av matematikk og fysikk.  For reelle positive verdier defineres logaritmefunksjonen som den inverse funksjonen til eksponensialfunksjonen. I det briggske logaritmesystem er således logaritmen til en million lik 6 fordi 106 = 1 000 000. Definisjonen av funksjonen kan utvides slik at den gjelder også for komplekse verdier av argumentet.
+Før innføring av lommekalkulatoren var logaritmer viktige for å forenkle mange praktiske regnestykker:  Beregningsuttrykk som bare inneholder multiplikasjon og divisjon kan ved hjelp av logaritmer forenkles til uttrykk som bare inneholder addisjon og subtraksjon.  Trykte logaritmetabeller var i mange år et viktig hjelpemiddel for komplekse beregninger.  Charles Babbage utviklet forløperen til dagens regnemaskiner nettopp for å kunne generere logaritmetabeller.  Også regnestaven er basert på bruk av logaritmer.
+Logaritmer er også praktisk fordi mange fysiske størrelser varierer innen svært vide grenser. Eksempler:
+
+Et supervulkanutbrudd med en kan være en million ganger kraftigere enn et lite utbrudd. Derfor kan vi si at de to utbruddene har en vulkansk eksplosivitetsindeks (VEI) på henholdsvis 8 og 2.
+Øredøvende larm på f.eks. et diskotek eller en konsert eller ved en sandblåsemaskin kan være en billion (en million millioner, eller 1012) ganger så sterk som den svakeste lyd et menneske kan høre. Derfor har vi definert at den siste har et lydtrykk på 0 Bel, og den øredøvende larmen 12 Bel. Istedenfor bel har en så innført desibel (dB) og lagt til en A for en skala som er veid etter de frekvensene vi hører best, slik at den svakeste lyden og den øredøvende larmen er på henholdsvis 0 og 120 dBA.
+Adjektivet logaritmisk brukes for å beskrive en tilknytning til logaritmer, for eksempel at det som omtales har en egenskap som varierer logaritmisk.  I en  logaritmisk skala er et avstand langs skalaen mellom tallet 1 og et tall a proporsjonal med logaritmen til a.  En logaritmisk spiral er en kurve der vinkelen til et punkt er proporsjonal med logaritmen til radien til punktet.
+
+
+== Notasjon ==
+Logaritmen med grunntall b  til et tall a skrives normalt logb a, men dersom grunntallet er underforstått kan dette forenkles til log a.  Standarden ISO 31-11 anbefaler følgende notasjon:
+For logaritmer med grunntall 2:
+
+  
+    
+      
+        lb
+        ⁡
+        a
+        =
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        a
+        
+      
+    
+    {\displaystyle \operatorname {lb} a=\log _{2}a\,}
+  
+
+For briggske logaritmer:
+
+  
+    
+      
+        lg
+        ⁡
+        a
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        a
+        
+      
+    
+    {\displaystyle \lg a=\log _{10}a\,}
+  
+
+For naturlige logaritmer:
+
+  
+    
+      
+        ln
+        ⁡
+        a
+        =
+        
+          log
+          
+            e
+          
+        
+        ⁡
+        a
+        
+      
+    
+    {\displaystyle \ln a=\log _{e}a\,}
+  
+
+Logaritmen skrives som regel uten parentes rundt argumentet a, som vist i eksemplene over.  Hvis a = bc, er a antilogaritmen og skrives som
+
+  
+    
+      
+        a
+        =
+        
+          antilog
+          
+            b
+          
+        
+        ⁡
+        c
+        
+      
+    
+    {\displaystyle a=\operatorname {antilog} _{b}c\,}
+  
+
+
+== Definisjon av logaritmefunksjonen for reelle tall ==
+Eksponensialfunksjonen er generelt definert ved
+
+  
+    
+      
+        g
+        (
+        y
+        )
+        =
+        
+          b
+          
+            y
+          
+        
+        
+      
+    
+    {\displaystyle g(y)=b^{y}\,}
+  
+
+der grunntallet b er et positivt reelt tall.  Verdimengden til denne funksjonen er lik mengden av positive reelle tall.  Siden funksjonen er injektiv har den definert en invers funksjon som har definisjonsmengde lik mengden av positive reelle tall og som blir betegnet logaritmefunksjonen:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          g
+          
+            −
+            1
+          
+        
+        (
+        x
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        
+      
+    
+    {\displaystyle f(x)=g^{-1}(x)=\log _{b}x\,}
+  
+.
+Fra definisjonen følger identiten
+
+  
+    
+      
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            x
+          
+        
+        =
+        x
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        
+          b
+          
+            x
+          
+        
+        )
+        
+      
+    
+    {\displaystyle b^{\log _{b}x}=x=\log _{b}(b^{x})\,}
+  
+.
+Den naturlige logaritmen kan også defineres ved det følgende bestemte integralet:
+
+  
+    
+      
+        ln
+        ⁡
+        x
+        =
+        
+          ∫
+          
+            1
+          
+          
+            x
+          
+        
+        
+          
+            
+              d
+              t
+            
+            t
+          
+        
+        
+        x
+        >
+        0
+        
+      
+    
+    {\displaystyle \ln x=\int \limits _{1}^{x}{\frac {dt}{t}}\quad x>0\,}
+  
+
+Et annet alternativ er bruk av grenseverdien
+
+  
+    
+      
+        ln
+        ⁡
+        x
+        =
+        
+          lim
+          
+            ϵ
+            →
+            0
+          
+        
+        
+          
+            
+              
+                x
+                
+                  ϵ
+                
+              
+              −
+              1
+            
+            ϵ
+          
+        
+        
+        x
+        >
+        0
+        
+      
+    
+    {\displaystyle \ln x=\lim _{\epsilon \to 0}{\frac {x^{\epsilon }-1}{\epsilon }}\quad x>0\,}
+  
+
+
+== Egenskaper og regler for logaritmer ==
+Utdypende artikkel Liste over logaritmeidentiteter
+De følgende identitetene gjelder for logaritmer med et vilkårlig grunntall.  For å forenkle notasjonen er derfor grunntallet b utelatt der det ikke er strengt nødvendig.
+
+
+=== Grunnleggende egenskaper ===
+For alle grunntall gjelder det at logaritmen til tallet 1 er lik null:
+
+  
+    
+      
+        log
+        ⁡
+        1
+        =
+        0
+        
+      
+    
+    {\displaystyle \log 1=0\,}
+  
+
+Logaritmen til grunntallet er lik 1:
+
+  
+    
+      
+        log
+        ⁡
+        b
+        =
+        1
+        
+      
+    
+    {\displaystyle \log b=1\,}
+  
+
+Logaritmefunksjonen er strengt voksende for grunntall større enn 1 og strengt minkende for grunntall mindre enn 1.
+
+
+=== Første logaritmesetning ===
+
+  
+    
+      
+        log
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        log
+        ⁡
+        x
+        +
+        log
+        ⁡
+        y
+        
+      
+    
+    {\displaystyle \log(xy)=\log x+\log y\,}
+  
+
+Logaritmen til et produkt er lik summen av logaritmene til faktorene.
+Beviset bygger på den følgende identiteten for eksponensialfunksjonen:
+
+  
+    
+      
+        
+          b
+          
+            u
+          
+        
+        ⋅
+        
+          b
+          
+            v
+          
+        
+        =
+        
+          b
+          
+            (
+            u
+            +
+            v
+            )
+          
+        
+        
+      
+    
+    {\displaystyle b^{u}\cdot b^{v}=b^{(u+v)}\,}
+  
+
+Her er u og v vilkårlige tall, så ved å definere
+
+  
+    
+      
+        u
+        =
+        log
+        ⁡
+        x
+        
+      
+    
+    {\displaystyle u=\log x\,}
+  
+
+  
+    
+      
+        v
+        =
+        log
+        ⁡
+        y
+        
+      
+    
+    {\displaystyle v=\log y\,}
+  
+
+og sette inn i identiten over, så er
+
+  
+    
+      
+        
+          b
+          
+            log
+            ⁡
+            x
+          
+        
+        ⋅
+        
+          b
+          
+            log
+            ⁡
+            y
+          
+        
+        =
+        
+          b
+          
+            (
+            log
+            ⁡
+            x
+            +
+            log
+            ⁡
+            y
+            )
+          
+        
+        
+      
+    
+    {\displaystyle b^{\log x}\cdot b^{\log y}=b^{(\log x+\log y)}\,}
+  
+
+Fra definisjonen av logaritmen er
+
+  
+    
+      
+        
+          b
+          
+            log
+            ⁡
+            x
+          
+        
+        ⋅
+        
+          b
+          
+            log
+            ⁡
+            y
+          
+        
+        =
+        x
+        y
+        =
+        
+          b
+          
+            log
+            ⁡
+            (
+            x
+            y
+            )
+          
+        
+        
+      
+    
+    {\displaystyle b^{\log x}\cdot b^{\log y}=xy=b^{\log(xy)}\,}
+  
+
+Tilsammen gir dette
+
+  
+    
+      
+        x
+        y
+        =
+        
+          b
+          
+            log
+            ⁡
+            (
+            x
+            y
+            )
+          
+        
+        =
+        
+          b
+          
+            (
+            log
+            ⁡
+            x
+            +
+            log
+            ⁡
+            y
+            )
+          
+        
+        
+      
+    
+    {\displaystyle xy=b^{\log(xy)}=b^{(\log x+\log y)}\,}
+  
+
+
+=== Andre logaritmesetning ===
+
+  
+    
+      
+        log
+        ⁡
+        
+          (
+          
+            
+              a
+              b
+            
+          
+          )
+        
+        =
+        log
+        ⁡
+        a
+        −
+        log
+        ⁡
+        b
+        
+      
+    
+    {\displaystyle \log \left({\frac {a}{b}}\right)=\log a-\log b\,}
+  
+
+Logaritmen til en brøk er lik logaritmen til telleren minus logaritmen til nevneren.
+Beviset følger samme form som for første logartimesetning, ved hjelp av identiteten
+
+  
+    
+      
+        
+          
+            
+              b
+              
+                u
+              
+            
+            
+              b
+              
+                v
+              
+            
+          
+        
+        =
+        
+          b
+          
+            (
+            u
+            −
+            v
+            )
+          
+        
+        
+      
+    
+    {\displaystyle {\frac {b^{u}}{b^{v}}}=b^{(u-v)}\,}
+  
+
+
+=== Tredje logaritmesetning ===
+
+  
+    
+      
+        log
+        ⁡
+        (
+        
+          a
+          
+            x
+          
+        
+        )
+        =
+        x
+        log
+        ⁡
+        a
+        
+      
+    
+    {\displaystyle \log(a^{x})=x\log a\,}
+  
+
+Logaritmen til en potens er lik eksponenten ganger logaritmen til grunntallet.
+
+
+=== Relasjon mellom logaritmer med ulike grunntall ===
+Sammenhengen mellom to logaritmer med grunntall henholdsvis lik a og b   er gitt ved
+
+  
+    
+      
+        
+          log
+          
+            a
+          
+        
+        ⁡
+        x
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        a
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        
+      
+    
+    {\displaystyle \log _{a}x\log _{b}a=\log _{b}x\,}
+  
+
+
+=== Derivasjon av logaritmefunksjonen ===
+Den deriverte av den naturlige logaritmen er gitt ved
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        x
+        =
+        
+          
+            1
+            x
+          
+        
+        
+      
+    
+    {\displaystyle {\frac {d}{dx}}\ln x={\frac {1}{x}}\,}
+  
+
+For logaritmen med generelt grunntall b gjelder derivasjonsregelen
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              b
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\frac {d}{dx}}\log _{b}x={\frac {1}{x\ln b}}\,}
+  
+
+
+=== Logaritmisk derivasjon ===
+Såkalt logaritmisk derivasjon utnyttest ofte for funksjoner som består av kompliserte produkt:
+
+  
+    
+      
+        
+          f
+          
+            ′
+          
+        
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        f
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle f^{\prime }(x)=f(x){\frac {d}{dx}}\ln f(x)\,}
+  
+
+Denne regelen følger av kjerneregelen for derivasjon brukt på funksjonen 
+  
+    
+      
+        ln
+      
+    
+    {\displaystyle \ln }
+  
+ 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  
+.
+
+
+=== Antiderivert ===
+Den antideriverte til den naturlige logaritmen er gitt ved uttrykket
+
+  
+    
+      
+        ∫
+        ln
+        ⁡
+        x
+        
+        d
+        x
+        =
+        x
+        ln
+        ⁡
+        x
+        −
+        x
+        +
+        C
+        .
+        
+      
+    
+    {\displaystyle \int \ln x\,dx=x\ln x-x+C.\,}
+  
+
+For logaritmer med andre baser gjelder
+
+  
+    
+      
+        ∫
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        
+        d
+        x
+        =
+        x
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        x
+        −
+        
+          
+            x
+            
+              ln
+              ⁡
+              b
+            
+          
+        
+        +
+        C
+        =
+        x
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          (
+          
+            
+              x
+              e
+            
+          
+          )
+        
+        +
+        C
+        .
+      
+    
+    {\displaystyle \int \log _{b}x\,dx=x\log _{b}x-{\frac {x}{\ln b}}+C=x\log _{b}\left({\frac {x}{e}}\right)+C.}
+  
+
+
+== Eksempel på bruk av logaritmer ==
+
+Anta at en trenger å beregene det følgende talluttrykket for x, og bare har en logaritmetabell til hjelp:
+
+  
+    
+      
+        x
+        =
+        
+          
+            
+              
+                60
+                ,
+                27
+                ⋅
+                70
+                ,
+                34
+              
+              
+                0
+                ,
+                27
+              
+            
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle x={\sqrt[{3}]{\frac {60,27\cdot 70,34}{0,27}}}}
+  
+
+Siden en logaritmetabell typisk tabulerer logaritmene for tallverdiene mellom 1 og 10, kan en først utføre en liten omskriving av uttrykket:
+
+  
+    
+      
+        x
+        =
+        
+          
+            [
+            
+              
+                
+                  (
+                  6
+                  ,
+                  027
+                  ⋅
+                  10
+                  )
+                  ⋅
+                  (
+                  7
+                  ,
+                  034
+                  ⋅
+                  10
+                  )
+                
+                
+                  2
+                  ,
+                  7
+                  ⋅
+                  0
+                  ,
+                  1
+                
+              
+            
+            ]
+          
+          
+            
+              1
+              3
+            
+          
+        
+      
+    
+    {\displaystyle x=\left[{\frac {(6,027\cdot 10)\cdot (7,034\cdot 10)}{2,7\cdot 0,1}}\right]^{\frac {1}{3}}}
+  
+
+Fra dette følger det ved hjelp av regneregler for briggske logaritmer
+
+  
+    
+      
+        lg
+        ⁡
+        x
+        =
+        
+          
+            1
+            3
+          
+        
+        
+          [
+          
+            (
+            lg
+            ⁡
+            6
+            ,
+            027
+            +
+            1
+            )
+            +
+            (
+            lg
+            ⁡
+            7
+            ,
+            034
+            +
+            1
+            )
+            −
+            (
+            lg
+            ⁡
+            2
+            ,
+            7
+            −
+            1
+            )
+          
+          ]
+        
+      
+    
+    {\displaystyle \lg x={\frac {1}{3}}\left[(\lg 6,027+1)+(\lg 7,034+1)-(\lg 2,7-1)\right]}
+  
+
+Fra en logaritmetabell kan en finne verdiene
+
+  
+    
+      
+        
+          
+            
+              
+                lg
+                ⁡
+                6
+                ,
+                027
+              
+              
+                
+                =
+                0
+                ,
+                780101
+                …
+              
+            
+            
+              
+                lg
+                ⁡
+                7
+                ,
+                034
+              
+              
+                
+                =
+                0
+                ,
+                847202
+                …
+              
+            
+            
+              
+                lg
+                ⁡
+                2
+                ,
+                700
+              
+              
+                
+                =
+                0
+                ,
+                431363
+                …
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{2}\lg 6,027&=0,780101\dots \\\lg 7,034&=0,847202\dots \\\lg 2,700&=0,431363\dots \\\end{alignedat}}}
+  
+
+Ved å utføre addisjonene og subtraksjonen i uttrykket over finner en
+
+  
+    
+      
+        lg
+        ⁡
+        x
+        =
+        1
+        ,
+        398647
+        …
+        
+      
+    
+    {\displaystyle \lg x=1,398647\dots \,}
+  
+
+Fra en tabell over antilogaritmer finner en for mantissen
+
+  
+    
+      
+        
+          antilog
+          
+            10
+          
+        
+        ⁡
+        0
+        ,
+        398647
+        =
+        2
+        ,
+        504071
+        
+      
+    
+    {\displaystyle \operatorname {antilog} _{10}0,398647=2,504071\,}
+  
+
+Tilsammen gir dette
+
+  
+    
+      
+        x
+        =
+        (
+        
+          antilog
+          
+            10
+          
+        
+        ⁡
+        0
+        ,
+        398647
+        )
+        ⋅
+        10
+        =
+        25
+        ,
+        04071
+        
+      
+    
+    {\displaystyle x=(\operatorname {antilog} _{10}0,398647)\cdot 10=25,04071\,}
+  
+
+
+== Rekkeutviklinger for logaritmefunksjonen ==
+Det eksisterer mange kjente rekkeutviklinger som involverer naturlige logaritmer:
+
+  
+    
+      
+        
+          
+            
+              
+                ln
+                ⁡
+                x
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    ∞
+                  
+                
+                (
+                −
+                1
+                
+                  )
+                  
+                    n
+                    +
+                    1
+                  
+                
+                
+                  
+                    
+                      (
+                      x
+                      −
+                      1
+                      
+                        )
+                        
+                          n
+                        
+                      
+                    
+                    n
+                  
+                
+              
+              
+                0
+                <
+                x
+                ≤
+                2
+              
+            
+            
+              
+                ln
+                ⁡
+                x
+              
+              
+                
+                =
+                2
+                
+                  ∑
+                  
+                    i
+                    =
+                    1
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    1
+                    
+                      2
+                      n
+                      −
+                      1
+                    
+                  
+                
+                
+                  
+                    (
+                    
+                      
+                        
+                          x
+                          −
+                          1
+                        
+                        
+                          x
+                          +
+                          1
+                        
+                      
+                    
+                    )
+                  
+                  
+                    2
+                    n
+                    −
+                    1
+                  
+                
+              
+              
+                x
+                >
+                0
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{alignedat}{3}\ln x&=\sum _{i=1}^{\infty }(-1)^{n+1}{\frac {(x-1)^{n}}{n}}&0<x\leq 2\\\ln x&=2\sum _{i=1}^{\infty }{\frac {1}{2n-1}}\left({\frac {x-1}{x+1}}\right)^{2n-1}&x>0\\\end{alignedat}}}
+  
+
+Den første rekka er taylorrekka til logaritmefunksjonen, og denne rekka kalles også Mercator-rekka eller Newton-Mercator-rekka, etter Nicholas Mercator og Isaac Newton.
+
+
+== Logaritmer med komplekse argument ==
+Logaritmefunksjonen kan utvides til å være definert for komplekse verdier av argumentet z, gjennom definisjonen
+
+  
+    
+      
+        log
+        ⁡
+        z
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        i
+        arg
+        ⁡
+        (
+        z
+        )
+        
+      
+    
+    {\displaystyle \log z=\ln |z|+i\arg(z)\,}
+  
+
+Her er z er komplekst tall, og logaritmen er også et komplekst tall.  Funksjonen 
+  
+    
+      
+        arg
+      
+    
+    {\displaystyle \arg }
+  
+ er argumentet til det komplekse tallet, og i er den imaginære enheten.
+For komplekse argument er logaritmefunksjonen ikke entydig, fordi argumentet kan inneholde et vilkårlig multiplum av 
+  
+    
+      
+        2
+        π
+      
+    
+    {\displaystyle 2\pi }
+  
+.  Skriver en det komplekse tallet på polarformen
+
+  
+    
+      
+        z
+        =
+        
+          |
+        
+        z
+        
+          |
+        
+        
+          e
+          
+            i
+            ϕ
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle z=|z|e^{i\phi },\,}
+  
+
+så kan den komplekse logaritmen skrives som
+
+  
+    
+      
+        log
+        ⁡
+        z
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        i
+        
+          (
+          
+            ϕ
+            +
+            2
+            k
+            π
+          
+          )
+        
+        
+      
+    
+    {\displaystyle \log z=\ln |z|+i\left(\phi +2k\pi \right)\,}
+  
+
+Her er k et vilkårlig heltall.  Den såkalte prinsipalverdien av logaritmefunksjonen er gitt for k = 0, når
+
+  
+    
+      
+        
+          Log
+        
+        z
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        i
+        Arg
+        ⁡
+        (
+        z
+        )
+        =
+        ln
+        ⁡
+        
+          |
+        
+        z
+        
+          |
+        
+        +
+        i
+        ϕ
+        
+        
+          der
+        
+        
+        ϕ
+        ∈
+        (
+        −
+        π
+        ,
+         
+        π
+        ]
+        
+      
+    
+    {\displaystyle {\text{Log}}z=\ln |z|+i\operatorname {Arg} (z)=\ln |z|+i\phi \quad {\text{der}}\quad \phi \in (-\pi ,\ \pi ]\,}
+  
+
+For relle positive argument er den komplekse logaritmen lik den naturlige logaritmen.
+Den komplekse logaritmen oppfyller første og andre logaritmesetning, men ikke den tredje.
+
+
+== Numeriske beregninger ==
+Det finnes i dag mange raske metoder for numerisk beregning av logaritmer på datamaskiner. Noen av disse kan føres tilbake til Henry Briggs som kom frem til dem da han  for første gang konstruerte logaritmetabeller med grunntall eller radix lik med 10. I sitt store verk Arithmetica Logarithmica fra 1624 viste han at disse kunne finnes ved å ta mange påfølgende kvadratrøtter av tallet han ønsket å finne logaritmen til. Resultatet nærmer seg da raskt 1 etter mange nok slike operasjoner. Avviket fra denne asymptotiske verdien vil da være et uttrykk for logaritmen for tallet. Dette er en av de første algoritmer i historien om logaritmer.
+
+
+=== Radix-metoden ===
+Briggs foreslo også en alternativ måte som er raskere og kan lett automatiseres. Den kalles i dag for «radix-metoden» og baserer seg på det enkle faktum at å multiplisere eller dividere med grunntallet eller radix for logaritmen man vil beregne, kun betyr en flytting av desimaltegnet hvis radix er 10 som for briggske logaritmer. På samme, enkle måte gjøres det med et annet grunntall som for eksempel 2 for binære logaritmer. Denne algoritmen er basert på å splitte opp det aktuelle tallet i et visst antall faktorer som alle er nær 1. Avhengig av hvor mange slike faktorer man benytter, kan dette gjøres med så god nøyaktighet som man måtte ønske.
+For briggeske logaritmer velges disse faktorene å være av formen 1 + 1/10n  hvor et n er positivt heltall. Man behøver i utgangspunktet kun logaritmene for tall x mellom 1 og 10. Logaritmene for andre tall kan derav beregnes ved de vanlige reglene. Man kan også for å lette beregningen dele ut fra x en potens av 2 slik at resten er nærmest mulig 1. Med n + 1 slike faktorer har man dermed
+
+  
+    
+      
+        x
+        =
+        
+          2
+          
+            
+              k
+              
+                0
+              
+            
+          
+        
+        ⋅
+        
+          1.1
+          
+            
+              k
+              
+                1
+              
+            
+          
+        
+        ⋅
+        
+          1.01
+          
+            
+              k
+              
+                2
+              
+            
+          
+        
+        ⋅
+        
+          1.001
+          
+            
+              k
+              
+                3
+              
+            
+          
+        
+        ⋯
+        (
+        1
+        +
+        
+          10
+          
+            −
+            n
+          
+        
+        
+          )
+          
+            
+              k
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle x=2^{k_{0}}\cdot 1.1^{k_{1}}\cdot 1.01^{k_{2}}\cdot 1.001^{k_{3}}\cdots (1+10^{-n})^{k_{n}}}
+  
+
+hvor 0 ≤ ki ≤ 9 er positive heltall. De bestemmes ut fra kravet
+
+  
+    
+      
+        
+          x
+          
+            k
+          
+        
+        ≤
+        x
+        ≤
+        
+          x
+          
+            k
+          
+        
+        ⋅
+        (
+        1
+        +
+        
+          10
+          
+            −
+            k
+          
+        
+        )
+      
+    
+    {\displaystyle x_{k}\leq x\leq x_{k}\cdot (1+10^{-k})}
+  
+
+som må oppfylles for k = 0, 1, 2, 3 og så videre. Logaritmen til x  vil nå være en sum av lg 2 og forskjellige lg(1 + 1/10n) som lett kan regnes ut på forhånd fra Mercators rekke. De kan så benyttes for alle andre tall.
+Det behøves ikke mange slike oppsplittinger for å få god nøyaktighet. For eksempel, hvis man betrakter tallet x = 7, må man først dele ut en faktor 22 = 4 da 23 = 8 > 7. Dermed har man k0 = 2. Videre finner man lett k1 = 5, k2 = 8 og k3 = 3 hvis man velger å stoppe der. Det betyr at man tilnærmet har
+
+  
+    
+      
+        7
+        =
+        
+          2
+          
+            2
+          
+        
+        ⋅
+        
+          1.1
+          
+            5
+          
+        
+        ⋅
+        
+          1.01
+          
+            8
+          
+        
+        ⋅
+        
+          1.001
+          
+            3
+          
+        
+      
+    
+    {\displaystyle 7=2^{2}\cdot 1.1^{5}\cdot 1.01^{8}\cdot 1.001^{3}}
+  
+
+som gir lg 7 = 0.8449. Den korrekte verdien er 0.8451 som kan nås ved å ta med en faktor til.
+I datamaskiner  benyttes binære tall som tilsvarer radix lik med 2. Det betyr at oppsplittingen da må gjøres med faktorer av formen 1 + 1/2n. Da Richard Feynman var involvert i konstruksjonen av en superdatamaskin på begynnelsen av 1980-årene, benyttet han denne algoritmen for beregning av binære logaritmer.
+
+
+== Historie ==
+
+Begrepet logaritme ble innført av John Napier i arbeidet Mirifici Logarithmorum Canonis Descriptio (Beskrivelse av reglene for fantastiske logaritmer) som ble trykt i 1614. Napier var en skotsk landadelsmann med spesiell interesse for tallberegninger og trigonometri. Ifølge eget utsagn hadde han arbeidet med logaritmene i over tjue år før han publiserte resultatene. Han ønsket å redusere arbeidet med multiplikasjon og divisjon av store tall som man benyttet innen navigasjon og astronomi.
+En forbedret system med logaritmer basert på grunntallet 10 ble publisert av Henry Briggs i 1617 i verket Logarithmorum chilias prima (De tusen første logaritmer) med dette nye grunntallet i 1617. De har fordelene at lg 1 = 0 og lg 10 = 1 slik at de egner seg spesielt for desimaltall. Dette er de samme briggske logaritmer som brukes i dag.
+I de følgende årene ble det utarbeidet stadig nye og mer nøyaktige tabeller med logaritmer og deres verdier for trigonometriske funksjoner. Noen tiår senere ble det klart at en bedre forståelse av denne beregningsmetoden kunne fås fra en kontinuerlig logaritmefunksjon basert på arealet under en hyperbel. På midten av 1700-tallet viste Leonhard Euler at den hyperbolske logaritmefunksjonen ikke var noe annet enn den inverse av eksponentialfunksjonen med Eulers tall e som grunntall.
+De hyperbolske logaritmene ble derfor i ettertid omtalt som naturlige logaritmer. Dette gjorde det mulig til å beregne logaritmen til komplekse tall og derfor også for negative tall. Mest kjent er prinsipalverdien ln(-1) = iπ  som er ekvivalent med Eulers likhet eiπ = - 1. Generelt er den komplekse logaritmefunksjonen mangetydig, men kan formuleres som en entydig funksjon ved en analytisk fortsettelse.
+
+
+== Se også ==
+Napiers logaritme
+Briggs-logaritmer
+Logaritmers historie
+
+
+== Referanser ==
+
+
+== Litteratur ==
+O.F.Olden, S.K.Østratt:  Matematiske og fysiske tabeller, Aschehoug, 1970.
+M.Abramowitz, I.Stegun (1964). Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables. Dover Publications. ISBN 0-486-61272-4. 
+C.B.Boyer (1968). A history of mathematics. Princton, USA: John Wiley & Sons, Inc. ISBN 0-691-02391-3. 
+
+
+== Eksterne lenker ==
+S.O.S. Mathematics, Briggs-logaritmer for 1000 decimaltall mellom 1 og 10.

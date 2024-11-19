@@ -1,0 +1,2964 @@
+În matematică, logaritmul este operația inversă a ridicării la putere. Aceasta înseamnă că logaritmul unui număr este exponentul la care un alt număr fix, baza⁠(d), trebuie să fie ridicat pentru a produce acel număr. În cazul cel mai simplu al exponentului natural, logaritmul exprimă numărul de factori din înmulțirile repetate. De exemplu, logaritm în bază 10 din 1000 este 3, pentru că 10 la puterea 3 este 1000 (1000 = 10 × 10 × 10 = 103); înmulțirea se repetă de trei ori. Acesta este un exemplu de logaritmi cu valori discrete. Trecerea la un exponent fracționar face ca valorile logaritmilor să fie continue. Exponentul fracționar fiind asociat unui radical de ordin oarecare dintr-un număr logaritmul permite determinarea valorilor radicalilor de orice ordin.
+Mai general, exponențierea permite ridicarea oricărui număr real pozitiv la orice putere reală, producând întotdeauna un rezultat pozitiv, deci logaritmul poate fi calculat pentru orice două numere reale pozitive b și x unde b este diferit de 1. Logaritmul lui x în baza b, notat cu logb(x), este numărul real y unic cu proprietatea că
+
+by = x.
+De exemplu, întrucât 64 = 26, atunci:
+
+log2(64) = 6
+Logaritmul în bază 10 (unde b = 10) se numește logaritm zecimal și are multe aplicații în știință și inginerie. Logaritmul natural are drept bază numărul e (≈ 2.718); utilizarea sa este larg răspândită în matematică și fizică, pentru că derivata sa e mai simplă. Logaritmul binar⁠(d) folosește baza 2 (adică b = 2) și este frecvent utilizat în informatică.
+Logaritmii au fost introduși de către John Napier în secolul al XVII-lea ca mijloc de simplificare a calculelor. Ei au fost rapid adoptați de către navigatori, oameni de știință, ingineri, și alții pentru a efectua calcule mai ușor, folosind rigle și tabele de logaritmi. Calculele greoaie cu multe cifre puteau fi înlocuite cu căutări în tabele și simple adunări, datorită faptului — important în sine — că logaritmul unui produs⁠(d) este suma logaritmilor factorilor:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        ,
+        
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y),\,}
+  
+
+cu condiția ca b, x și y să fie toate pozitive și b ≠ 1.
+Noțiunea actuală de logaritm provine de la Leonhard Euler, care a legat-o de funcția exponențială în secolul al XVIII-lea.
+Scara logaritmică restrânge variația unor mărimi cu interval larg de valori. De exemplu, decibelul este o unitate care cuantifică logaritmul unor rapoarte de energie și de amplitudine a unui semnal (de exemplu, presiunea acustică⁠(d)). În chimie, pH-ul este o măsură logaritmică a acidității unei soluții apoase. Logaritmii sunt frecvenți în formulele științifice și în măsurătorile complexității algoritmilor și ale obiectelor geometrice numite fractali. Ele descriu intervale muzicale, apar în formulele de numărare a numerelor prime, oferă informația de bază unor modele din psihofizică, economie și pot fi de ajutor în contabilitatea legală⁠(d).
+În același mod în care logaritmul inversează ridicarea la putere, logaritmul complex⁠(d) este funcția inversă a exponențialei aplicate numerelor complexe. Logaritmul discret modular este o altă variantă, cu utilizări în criptografia cu chei publice.
+
+
+== Motivația și definiția ==
+Ideea logaritmilor este de a inversa funcționarea ridicării la putere. De exemplu, cea de-a treia putere (sau cubul) a lui 2 este 8, pentru că 8 este produsul a trei factori cu valoarea 2:
+
+  
+    
+      
+        
+          2
+          
+            3
+          
+        
+        =
+        2
+        ×
+        2
+        ×
+        2
+        =
+        8.
+        
+      
+    
+    {\displaystyle 2^{3}=2\times 2\times 2=8.\,}
+  
+
+Rezultă că logaritmul lui 8 în baza 2 este 3, deci log2 8 = 3.
+
+
+=== Ridicarea la putere ===
+Puterea a treia a unui număr b este produsul a trei factori cu valoarea b. Mai general, ridicarea lui b la puterea a n-a, când n este un număr natural, se face prin înmulțirea a n factori cu valoarea b. Puterea a n-a a lui b este scrisă bn, astfel încât
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        
+          
+            
+              
+                b
+                ×
+                b
+                ×
+                ⋯
+                ×
+                b
+              
+              ⏟
+            
+          
+          
+            n
+            
+               factori
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factori}}}.}
+  
+
+Ridicarea la putere poate fi extinsă la by, unde b este un număr pozitiv și exponentul y este orice număr real. De exemplu, b-1 este inversul⁠(d) lui b. Ridicarea lui b la puterea 1/2 este  rădăcină pătrată a lui b.
+Mai general, ridicarea lui b la o putere cu exponent număr rațional p/q, unde p, q sunt numere intregi, e dată de
+
+  
+    
+      
+        
+          b
+          
+            p
+            
+              /
+            
+            q
+          
+        
+        =
+        
+          
+            
+              b
+              
+                p
+              
+            
+            
+              q
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle b^{p/q}={\sqrt[{q}]{b^{p}}},}
+  
+
+al q-lea radical din 
+  
+    
+      
+        
+          b
+          
+            p
+          
+        
+        
+        
+      
+    
+    {\displaystyle b^{p}\!\!}
+  
+. 
+Generalizarea merge mai departe, orice număr irațional y poate fi aproximat cu precizie arbitrară de numere raționale, proprietate care se poate folosi pentru calculul puterii a y-a a lui b: de exemplu 
+  
+    
+      
+        
+          
+            2
+          
+        
+        ≈
+        1.414...
+      
+    
+    {\displaystyle {\sqrt {2}}\approx 1.414...}
+  
+ și 
+  
+    
+      
+        
+          b
+          
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle b^{\sqrt {2}}}
+  
+ e tot mai corespunzător aproximat de 
+  
+    
+      
+        
+          b
+          
+            1
+          
+        
+        ,
+        
+          b
+          
+            1.4
+          
+        
+        ,
+        
+          b
+          
+            1.41
+          
+        
+        ,
+        
+          b
+          
+            1.414
+          
+        
+        ,
+        .
+        .
+        .
+      
+    
+    {\displaystyle b^{1},b^{1.4},b^{1.41},b^{1.414},...}
+  
+.
+Pentru mai multe detalii, inclusiv formula bm + n = bm · bn, a se vedea articolul despre putere.
+
+
+=== Definiție ===
+Logaritmul unui număr real pozitiv x în baza b, un număr real pozitiv diferit de 1, este exponentul la care b trebuie să fie ridicat pentru a da x. Cu alte cuvinte, logaritmul lui x în baza b este soluția y a ecuației
+
+  
+    
+      
+        
+          b
+          
+            y
+          
+        
+        =
+        x
+        .
+        
+      
+    
+    {\displaystyle b^{y}=x.\,}
+  
+
+Logaritmul se notează cu „logb(x)” (citit „logaritm în bază b din x” sau „logaritmul în bază b al lui x”). În ecuația y = logb(x), valoarea y este răspunsul la întrebarea „la ce putere trebuie să fie ridicat b, pentru a obține x?”. Această întrebare poate fi abordată (cu un răspuns mai bogat) și pentru numere complexe, ceea ce se face în secțiunea „Logaritmul complex”, și acest răspuns este mult mai intens investigat în pagina logaritmului complex⁠(d).
+
+
+=== Exemple ===
+De exemplu, log2(16) = 4, deoarece 24 = 2 ×2 × 2 × 2 = 16. Logaritmii pot fi și negativi:
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        
+        
+          (
+          
+            
+              1
+              2
+            
+          
+          )
+        
+        =
+        −
+        1
+        ,
+        
+      
+    
+    {\displaystyle \log _{2}\!\left({\frac {1}{2}}\right)=-1,\,}
+  
+
+pentru că
+
+  
+    
+      
+        
+          2
+          
+            −
+            1
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              
+                1
+              
+            
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.}
+  
+
+Un al treilea exemplu: log10(150) este aproximativ 2.176, care se află între 2 și 3, așa cum 150 se află între 102 = 100 și 103 = 1000. În cele din urmă, pentru orice bază b, logb(b) = 1 și logb(1) = 0, deoarece b1 = b și, respectiv, b0 = 1.
+
+
+== Identități logaritmice ==
+Mai multe formule importante, uneori numite identități logaritmice sau legi logaritmice, dau relații între logaritmi.
+
+
+=== Produsul, împărțirea, puterea și rădăcina ===
+Logaritmul unui produs este suma logaritmilor factorilor; logaritmul raportului a două numere este diferența logaritmilor. Logaritmul celei de a p-a puteri a unui număr este de p ori logaritmul numărului în sine; logaritmul radicalului de ordinul al p-th este logaritmul numărului împărțit la p. Următorul tabel listează aceste identități cu exemple. Fiecare dintre identități pot fi calculate prin înlocuirea definiției logaritmului 
+  
+    
+      
+        x
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            x
+            )
+          
+        
+      
+    
+    {\displaystyle x=b^{\log _{b}(x)}}
+  
+ sau 
+  
+    
+      
+        y
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            y
+            )
+          
+        
+      
+    
+    {\displaystyle y=b^{\log _{b}(y)}}
+  
+ în partea stângă.
+
+
+=== Schimbarea bazei ===
+Logaritmul logb(x) poate fi calculat din logaritmii lui x și b într-o bază arbitrară k, utilizând următoarea formulă:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  k
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{k}(x)}{\log _{k}(b)}}.\,}
+  
+
+Calculatoarele științifice calculează logaritmii pentru în bazele 10 și e. Logaritmi în orice altă bază b pot fi determinați folosind oricare dintre acești doi logaritmi prin formula precedentă:
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  10
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        =
+        
+          
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              x
+              )
+            
+            
+              
+                log
+                
+                  e
+                
+              
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle \log _{b}(x)={\frac {\log _{10}(x)}{\log _{10}(b)}}={\frac {\log _{e}(x)}{\log _{e}(b)}}.\,}
+  
+
+Dat fiind un număr x și logaritmul său logb(x) într-o bază necunoscută b, bază este dată de relația:
+
+  
+    
+      
+        b
+        =
+        
+          x
+          
+            
+              1
+              
+                
+                  log
+                  
+                    b
+                  
+                
+                ⁡
+                (
+                x
+                )
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle b=x^{\frac {1}{\log _{b}(x)}}.}
+  
+
+
+== Baze particulare ==
+Dintre toate bazele ce pot fi alese, trei sunt deosebit de frecvente. Acestea sunt b = 10, b = e (constantă matematică irațională ≈ 2.71828), și b = 2. În analiza matematică, logaritmul cu baza e este larg răspândit din cauza proprietăților sale analitice speciale explicate mai jos. Pe de altă parte, logaritmii în bază 10 sunt ușor de utilizat pentru calcule manuale în sistemul de numerație zecimal:
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        x
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        )
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        x
+        )
+        .
+         
+      
+    
+    {\displaystyle \log _{10}(10x)=\log _{10}(10)+\log _{10}(x)=1+\log _{10}(x).\ }
+  
+
+Astfel, log10(x) este legat de numărul de cifre zecimale ale unui număr întreg pozitiv x: numărul de cifre este cel mai mic număr întreg strict mai mare decât log10(x). De exemplu, log10(1430) este de aproximativ 3.15. Următorul număr întreg este 4, adică numărul de cifre al lui 1430. Atât logaritmul natural, cât și logaritmul în bază doi sunt utilizate în teoria informației, corespunzând utilizării naților sau, respectiv, biților ca unități fundamentale pentru informație. Logaritmii binari sunt și ei utilizați în informatică, acolo unde sistemul binar este omniprezent, în teoria muzicii, unde raportul înălțimilor unor sunete egal cu 2 (octava) este omniprezent și centul este logaritmul binar (scalat cu 1200) al raportului între două înălțimi adiacente egal temperate, iar în fotografie măsoară indicele de expunere⁠(d).
+Următorul tabel listează notațiile comune pentru logaritmii în aceste baze și domeniile în care acestea sunt utilizate. În multe discipline se scrie log(x) în loc de logb(x), atunci când baza poate fi determinată din context. Mai apare și notația blog(x). Coloana „notație ISO” listează notații propuse de Organizația Internațională pentru Standardizare (ISO 31-11⁠(d)) pentru diverse baze.
+
+
+== Istoria ==
+Istoria logaritmilor în Europa secolului al XVII-lea este descoperirea unei noi funcții, care extindea domeniul de analiză dincolo de domeniul de aplicare a metodelor algebrice. Metoda logaritmilor a fost formulată public de către John Napier în 1614, într-o carte intitulată Mirifici Logarithmorum Canonis Descriptio (Descrierea Minunatului Canon al Logaritmilor). Înainte de inventarea lor de către Napier, au existat și alte tehnici similare, cum ar fi prostafareza sau utilizarea de tabele de progresii, dezvoltată pe larg de către Jost Bürgi în jurul anului 1600.
+Logaritmul zecimal al unui număr este indicele acelei puteri a lui zece care este egală cu numărul. A vorbi despre un număr ca necesitând atât de multe cifre este o aluzie aproximativă la logaritmul zecimal, și problema a fost menționată de către Arhimede ca „ordinul unui număr”. Primii logaritmi adevărăți erau metode euristice de a transforma înmulțirea în adunare, facilitând astfel calculul mai rapid. Unele dintre aceste metode foloseau tabele calculate din identități trigonometrice.
+Astfel de metode sunt numite prostafareză⁠(d).
+Inventarea funcției cunoscute astăzi sub numele de logaritm natural a început ca o încercare de a efectua o cvadratură a unei hiperbole  dreptunghiulare de către Gregoire de Saint Vincent, un belgian iezuit ce locuia la Praga. Arhimede scrisese Cvadratura parabolei în secolul al III-lea î.Hr., dar o cvadratură a hiperbolei nu putuse fi realizată până la publicarea de către Saint-Vincent a rezultatelor sale în 1647. Relația pe care o oferă logaritmul între o progresie geometrică primită ca argument și o progresie aritmetică a valorilor lui, l-a determinat pe Alphonse Antonio de Sarasa⁠(d) să facă legătura între cvadratura lui Saint-Vincent și tradiția logaritmilor din prostaferesis⁠(en)[traduceți], ceea ce duce la termenul de „logaritm hiperbolic”, sinonim pentru logaritmul natural. În curând, noua funcție a fost apreciată de către Christiaan Huygens, Patavii, și James Gregory. Notația Log y a fost adoptată de către Leibniz în 1675, și în anul următor el a legat-o de integrala 
+  
+    
+      
+        ∫
+        
+          
+            
+              d
+              y
+            
+            y
+          
+        
+        .
+      
+    
+    {\displaystyle \int {\frac {dy}{y}}.}
+  
+
+
+== Tabele de logaritmi, rigle de calcul și aplicații istorice ==
+
+Prin simplificarea calculelor dificile, logaritmii au contribuit la progresul științei, mai ales în astronomie. Au fost o dezvoltare critică pentru progrese din topografie⁠(d), navigația astronomică⁠(d), și alte domenii. Pierre-Simon Laplace numea logaritmii
+
+„...admirabil artificiu care, prin reducerea câtorva luni de muncă la câteva zile, dublează viața astronomului, și îl cruță de erorile și dezgustul inseparabile de calculele îndelungate.”
+Un instrument-cheie care a permis utilizarea practică a logaritmilor înaintea calculatoarelor de birou și a computerelor au fost tabelele de logaritmi. Primul astfel de tabel a fost întocmit de către Henry Briggs în 1617, imediat după invenția lui Napier. Ulterior s-au scris și tabele cu sferă mai largă. Aceste tabele enumerau valorile pentru logb(x) și bx pentru orice număr x într-un anumit interval, cu o anumită precizie, pentru o anumită bază b. De exemplu, primul tabel al lui Briggs conține logaritmii zecimali ai tuturor numerelor întregi din intervalul 1-1000, cu o precizie de 14 cifre. Întrucât funcția f(x) = bx este inversa lui logb(x), ea fost numită antilogaritm. Produsul și câtul a două numere pozitive c și d au început să fie frecvent calculate ca sumă și diferență a logaritmilor lor. Produsul cd sau câtul c/d venea din căutarea antilogaritmului sumei sau diferenței prin aceleași tabele:
+
+  
+    
+      
+        c
+        d
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            +
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        
+      
+    
+    {\displaystyle cd=b^{\log _{b}(c)}\,b^{\log _{b}(d)}=b^{\log _{b}(c)+\log _{b}(d)}\,}
+  
+
+și
+
+  
+    
+      
+        
+          
+            c
+            d
+          
+        
+        =
+        c
+        
+          d
+          
+            −
+            1
+          
+        
+        =
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+            −
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            d
+            )
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\frac {c}{d}}=cd^{-1}=b^{\log _{b}(c)-\log _{b}(d)}.\,}
+  
+
+Pentru calculele manuale care impuneau precizie apreciabilă, căutarea celor doi logaritmi, calculul sumei sau diferenței lor, și apoi căutarea antilogaritmului era mult mai rapidă decât efectuarea înmulțirii prin metodele anterioare, cum ar fi prostafareza⁠(d), care se baza pe identități trigonometrice. Calculele de puteri și radicali erau reduse la înmulțiri sau împărțiri și căutări prin
+
+  
+    
+      
+        
+          c
+          
+            d
+          
+        
+        =
+        (
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+          )
+          
+            d
+          
+        
+        =
+        
+          b
+          
+            d
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        
+      
+    
+    {\displaystyle c^{d}=(b^{\log _{b}(c)})^{d}=b^{d\log _{b}(c)}\,}
+  
+
+și
+
+  
+    
+      
+        
+          
+            c
+            
+              d
+            
+          
+        
+        =
+        
+          c
+          
+            
+              1
+              d
+            
+          
+        
+        =
+        
+          b
+          
+            
+              
+                1
+                d
+              
+            
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            c
+            )
+          
+        
+        .
+        
+      
+    
+    {\displaystyle {\sqrt[{d}]{c}}=c^{\frac {1}{d}}=b^{{\frac {1}{d}}\log _{b}(c)}.\,}
+  
+
+Multe tabele de logaritmi dau logaritmii furnizând separat de caracteristica și mantisa lui x, adică partea întreagă și partea fracționară⁠(d) din log10(x). Caracteristica lui 10 · x este unu plus caracteristica lui x, iar mantisa era aceeași. Aceasta extinde domeniul de aplicare a tabelelor de logaritmi: dat fiind un tabel care listează log10(x) pentru orice număr întreg x de la 1 la 1000, logaritmul lui 3542 este aproximat prin
+
+  
+    
+      
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        3542
+        )
+        =
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        10
+        ⋅
+        354.2
+        )
+        =
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        354.2
+        )
+        ≈
+        1
+        +
+        
+          log
+          
+            10
+          
+        
+        ⁡
+        (
+        354
+        )
+        .
+        
+      
+    
+    {\displaystyle \log _{10}(3542)=\log _{10}(10\cdot 354.2)=1+\log _{10}(354.2)\approx 1+\log _{10}(354).\,}
+  
+ Rezultate de precizie sporită pot fi obținute prin interpolare⁠(d).
+O altă aplicație critică a fost rigla de calcul, o pereche de scale logaritmice folosite pentru calcul, după cum se ilustrează aici:
+
+Scara logaritmică neglisantă, rigla lui Gunter, a fost inventată la scurt timp după invenția lui Napier. William Oughtred a îmbunătățit-o pentru a creaa rigla de calcul—o pereche de scale logaritmice mobile una față de alta. Numerele sunt plasate pe rigla de calcul la distanțe proporționale cu diferențele între logaritmii lor. Glisarea scării de sus în mod corespunzător este echivalentă cu o adunare mecanică de logaritmi. De exemplu, adăugarea distanței de la 1 la 2 pe scară de jos la distanța de la 1 la 3 pe scara de sus dă un produs de 6, care este citit de pe partea inferioară. Rigla a fost un instrument esențial de calcul pentru ingineri și oameni de știință până în anii 1970, deoarece el permite, în detrimentul preciziei, calcul mult mai rapid decât tehnicile bazate pe tabele.
+
+
+== Proprietăți analitice ==
+Un studiu mai profund al logaritmilor necesită conceptul de funcție. O funcție este o regulă prin care un număr este transformat într-un alt număr. Un exemplu este funcția ce produce puterea a x-a a lui b din orice număr real x, în cazul în care baza b este un număr fix. Această funcție este scrisă
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          b
+          
+            x
+          
+        
+        .
+        
+      
+    
+    {\displaystyle f(x)=b^{x}.\,}
+  
+
+
+=== Funcția logaritmică ===
+Pentru a justifica definiția logaritmilor, este necesar să se arate că ecuația
+
+  
+    
+      
+        
+          b
+          
+            x
+          
+        
+        =
+        y
+        
+      
+    
+    {\displaystyle b^{x}=y\,}
+  
+
+are o soluție x și că această soluție este unică, cu condiția ca y să fie pozitiv și ca b este pozitiv și diferit de 1. Demonstrarea acestui fapt necesită teorema valorii intermediare⁠(d) din analiza matematică. Această teoremă afirmă că o funcție continuă care produce două valori m și n produce, de asemenea, orice valoare care se situează între m și n. O funcție este continuă dacă ea nu „sare”, adică dacă graficul ei poate fi trasat fără a ridica instrumentul de scris de pe hârtie.
+Se poate arăta că această proprietate este valabilă pentru funcția f(x) = b x. Deoarece f ia valori pozitive arbitrar de mari și arbitrar de mici, orice număr y > 0 se află între f(x0) și f(x1) pentru x0 și x1. Prin urmare, teorema valorii intermediare asigură că ecuația f(x) = y are o soluție. Mai mult decât atât, există doar o singură soluție la această ecuație, pentru că funcția f este strict crescătoare (pentru b > 1), sau strict descrescătoare (pentru 0 < b < 1).
+Soluția unică x este logaritm din y în baza b, logb y. Funcția care îi atribuie lui y logaritmul său se numește funcția logaritm sau funcția logaritmică (sau doar logaritmul).
+Funcția logb x este, în esență, caracterizată prin formula produsului de mai sus
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        y
+        )
+        =
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        +
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle \log _{b}(xy)=\log _{b}(x)+\log _{b}(y).}
+  
+
+Mai precis, logaritmul în orice bază b > 1 este singura funcție crescătoare f definită pe mulțimea numerelor reale pozitive cu valori în mulțimea numerelor reale care satisface relațiile f(b) = 1 și 
+
+  
+    
+      
+        f
+        (
+        x
+        y
+        )
+        =
+        f
+        (
+        x
+        )
+        +
+        f
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle f(xy)=f(x)+f(y).}
+  
+
+
+=== Funcția inversă ===
+
+Formula pentru logaritmul unei puteri spune, în special, că pentru orice număr x,
+
+  
+    
+      
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        
+          (
+          
+            b
+            
+              x
+            
+          
+          )
+        
+        =
+        x
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        b
+        )
+        =
+        x
+        .
+      
+    
+    {\displaystyle \log _{b}\left(b^{x}\right)=x\log _{b}(b)=x.}
+  
+
+În limbaj natural, luând puterea a x-a a lui b și apoi calculându-i logaritmul în bază bbase-b se obține x. Invers, având în vedere un număr pozitiv y, formula
+
+  
+    
+      
+        
+          b
+          
+            
+              log
+              
+                b
+              
+            
+            ⁡
+            (
+            y
+            )
+          
+        
+        =
+        y
+      
+    
+    {\displaystyle b^{\log _{b}(y)}=y}
+  
+
+spune că dacă întâi se extrage logaritmul și apoi se ridică baza la puterea lui, se obține y. Astfel, cele două moduri posibile de combinare (sau compunere⁠(d)) a logaritmilor cu exponențiala dă numărul inițial. Prin urmare, logaritmul cu baza b este funcția inversă a lui f(x) = bx.
+Funcțiile Inverse sunt strâns legate de funcțiile originare. Graficele lor corespund reciproc prin schimbarea axelor x și y între ele (sau la reflecție, față de diagonala x = y), așa cum se arată la dreapta: un punct (t, u = bt) de pe graficul lui f dă un punct (u, t = logbu) pe graficul logaritmului și vice-versa. Ca o consecință, logb(x) tinde la infinit (devine mai mare decât orice număr dat) dacă x crește la infinit, cu condiția ca b să fie mai mare decât unu. În acest caz, logb(x) este funcție crescătoare. Pentru b < 1, logb(x) tinde la minus infinit. Atunci când x se apropie de zero, logb(x) tinde la minus infinit pentru b > 1 (respectiv, plus infinit pentru b < 1).
+
+
+=== Derivata și primitiva ===
+
+Proprietățile analitice ale funcțiilor se extind și asupra inverselor lor. Astfel, întrucât este o funcție continuă și derivabilă, la fel este și logb(y). Intuitiv, o funcție continuă este derivabilă dacă graficul ei nu are „colțuri” ascuțite. Mai mult decât atât, întrucât derivata lui f(x) este ln(b)bx din proprietățile funcției exponențiale, formula de derivare a funcțiilor compuse⁠(d) implică faptul că derivata lui logb(x) este dată de
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        
+          log
+          
+            b
+          
+        
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              x
+              ln
+              ⁡
+              (
+              b
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dx}}\log _{b}(x)={\frac {1}{x\ln(b)}}.}
+  
+
+Adică panta tangentei la graficul logaritmului în baza b în punctul (x, logb(x)) este egală cu 1/(x ln(b)).
+Derivata lui ln(x) este 
+  
+    
+      
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{x}}}
+  
+; aceasta implică faptul că ln(x) este singura primitivă a lui 
+  
+    
+      
+        
+          
+            1
+            x
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{x}}}
+  
+ care are valoarea 0 pentru x = 1. Aceasta este o formulă foarte simplă care a motivat calificarea logaritmului în bază e drept „natural”; totodată, acest aspect este unul dintre principalele motive pentru importanța constantei e.
+Derivata cu un argument funcțional generalizat f(x) este
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              x
+            
+          
+        
+        ln
+        ⁡
+        (
+        f
+        (
+        x
+        )
+        )
+        =
+        
+          
+            
+              
+                f
+                ′
+              
+              (
+              x
+              )
+            
+            
+              f
+              (
+              x
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {d}{dx}}\ln(f(x))={\frac {f'(x)}{f(x)}}.}
+  
+
+Fracția din partea dreaptă se numește derivata logaritmică⁠(d) a lui f. Calculul lui f'(x) prin intermediul derivatei lui ln(f(x)) este cunoscut ca derivare logaritmică⁠(d). Primitiva logaritmului natural ln(x) este:
+
+  
+    
+      
+        ∫
+        ln
+        ⁡
+        (
+        x
+        )
+        
+        d
+        x
+        =
+        x
+        ln
+        ⁡
+        (
+        x
+        )
+        −
+        x
+        +
+        C
+        .
+      
+    
+    {\displaystyle \int \ln(x)\,dx=x\ln(x)-x+C.}
+  
+
+Formule legate, cum ar fi primitivele logaritmilor în alte baze pot fi derivate din această ecuație folosind schimbarea de bază.
+
+
+=== Reprezentarea integrală a logaritmului natural ===
+
+Logaritmul natural din t este egal cu integrală din 1/x dx de la 1 la t:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        t
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle \ln(t)=\int _{1}^{t}{\frac {1}{x}}\,dx.}
+  
+
+Cu alte cuvinte, ln(t) este egală cu aria dintre abscisă și de graficul funcției 1/x, de la x = 1 până la x = t (figura din dreapta). Aceasta este o consecință a teoremei fundamentale a calculului integral și faptul că derivata lui ln(x) este 1/x. Partea dreaptă a acestei ecuații poate servi ca o definiție a logaritmului natural. Formulele logaritmului produsului și puterii pot fi derivate din această definiție. De exemplu, formula produsului ln(tu) = ln(t) + ln(u) se deduce ca:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        t
+        u
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+            u
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+         
+        
+          
+            
+              
+                =
+              
+              
+                (
+                1
+                )
+              
+            
+          
+        
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+        +
+        
+          ∫
+          
+            t
+          
+          
+            t
+            u
+          
+        
+        
+          
+            1
+            x
+          
+        
+        
+        d
+        x
+         
+        
+          
+            
+              
+                =
+              
+              
+                (
+                2
+                )
+              
+            
+          
+        
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        
+          ∫
+          
+            1
+          
+          
+            u
+          
+        
+        
+          
+            1
+            w
+          
+        
+        
+        d
+        w
+        =
+        ln
+        ⁡
+        (
+        t
+        )
+        +
+        ln
+        ⁡
+        (
+        u
+        )
+        .
+      
+    
+    {\displaystyle \ln(tu)=\int _{1}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(1)}{=}}\int _{1}^{t}{\frac {1}{x}}\,dx+\int _{t}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(2)}{=}}\ln(t)+\int _{1}^{u}{\frac {1}{w}}\,dw=\ln(t)+\ln(u).}
+  
+
+Egalitatea (1) se desparte integral în două părți, în timp ce egalitatea (2) este o schimbare de variabilă (w = x/t). În ilustrația de mai jos, divizarea corespunde împărțirii zonei în părți galbene și albastre. Rescalarea verticală a zonei albastre din stânga cu factorul t și reducerea ei cu același factor orizontal nu-i schimbă dimensiunea. Mutând-o corespunzător, zona se potrivește graficului funcției f(x) = 1/x din nou. Prin urmare, zona albastră din stânga, care este integrală din f(x) de la t la tu este aceeași ca integrala de la 1 la u. Acest lucru justifică egalitatea (2) cu o demonstrație mai geometrică.
+
+Formula puterii ln(tr) = r ln(t) poate fi calculată într-un mod similar:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        
+          t
+          
+            r
+          
+        
+        )
+        =
+        
+          ∫
+          
+            1
+          
+          
+            
+              t
+              
+                r
+              
+            
+          
+        
+        
+          
+            1
+            x
+          
+        
+        d
+        x
+        =
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            
+              w
+              
+                r
+              
+            
+          
+        
+        
+          (
+          
+            r
+            
+              w
+              
+                r
+                −
+                1
+              
+            
+            
+            d
+            w
+          
+          )
+        
+        =
+        r
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        
+          
+            1
+            w
+          
+        
+        
+        d
+        w
+        =
+        r
+        ln
+        ⁡
+        (
+        t
+        )
+        .
+      
+    
+    {\displaystyle \ln(t^{r})=\int _{1}^{t^{r}}{\frac {1}{x}}dx=\int _{1}^{t}{\frac {1}{w^{r}}}\left(rw^{r-1}\,dw\right)=r\int _{1}^{t}{\frac {1}{w}}\,dw=r\ln(t).}
+  
+
+Cea de-a doua egalitate folosește o schimbare de variabilă (integrarea prin substituție), w = x1/r.
+Suma peste inversele numerelor naturale,
+
+  
+    
+      
+        1
+        +
+        
+          
+            1
+            2
+          
+        
+        +
+        
+          
+            1
+            3
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            1
+            n
+          
+        
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            k
+          
+        
+        ,
+      
+    
+    {\displaystyle 1+{\frac {1}{2}}+{\frac {1}{3}}+\cdots +{\frac {1}{n}}=\sum _{k=1}^{n}{\frac {1}{k}},}
+  
+
+se numește seria armonică⁠(d). Acesta este strâns legată de logaritmul natural: când n tinde la infinit, diferența
+
+  
+    
+      
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          
+            1
+            k
+          
+        
+        −
+        ln
+        ⁡
+        (
+        n
+        )
+        ,
+      
+    
+    {\displaystyle \sum _{k=1}^{n}{\frac {1}{k}}-\ln(n),}
+  
+
+converge (de exemplu, devine arbitrar de aproape de) la un număr cunoscut sub numele de constanta Euler–Mascheroni. Această relație ajută la analiza performanțelor algoritmilor, cum ar fi quicksort.
+Există și o altă reprezentare integrală a logaritmului, care este utilă în unele situații.
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        =
+        −
+        
+          lim
+          
+            ϵ
+            →
+            0
+          
+        
+        
+          ∫
+          
+            ϵ
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              d
+              t
+            
+            t
+          
+        
+        
+          (
+          
+            
+              e
+              
+                −
+                x
+                t
+              
+            
+            −
+            
+              e
+              
+                −
+                t
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \ln(x)=-\lim _{\epsilon \to 0}\int _{\epsilon }^{\infty }{\frac {dt}{t}}\left(e^{-xt}-e^{-t}\right)}
+  
+
+Acest lucru poate fi verificat, arătând că aceasta are aceeași valoare la x = 1, și aceeași derivată.
+
+
+=== Transcendența logaritmului ===
+Numere reale care nu sunt algebrice se numesc transcendente; de exemplu, π și e sunt astfel de numere, dar 
+  
+    
+      
+        
+          
+            2
+            −
+            
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {2-{\sqrt {3}}}}}
+  
+ nu este. Aproape toate⁠(d) numerele reale sunt transcendente. Logaritmul este un exemplu de funcție transcendentă. Teorema Gelfond–Schneider⁠(d) afirmă că logaritmii de obicei iau valori transcendente, adică „dificile”.
+
+
+== Calculul ==
+
+Logaritmii sunt ușor de calculat, în unele cazuri, cum ar fi . În general, logaritmi pot fi calculați folosind serii de puteri sau media aritmetico–geometrică⁠(d), sau să fie preluate dintr-un tabel de logaritmi precalculat, care oferă precizie fixă.
+Metoda lui Newton, o metodă iterativă de rezolvare cu aproximație a ecuațiilor, poate fi și ea utilizată pentru a calcula logaritmul, pentru că funcția inversă, funcția exponențială, poate fi calculată în mod eficient. Folosind tabele de căutare, metode de tip CORDIC⁠(d) pot fi utilizate pentru a calcula logaritmi dacă singurele operațiile disponibile sunt adunarea și deplasarea pe biți. Mai mult, algoritmul logaritmului binar⁠(d) calculează lb(x) recursiv pe baza calculului repetat al radicalului din x, profitând de relația
+
+  
+    
+      
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        
+          x
+          
+            2
+          
+        
+        )
+        =
+        2
+        
+          log
+          
+            2
+          
+        
+        ⁡
+        (
+        x
+        )
+        .
+        
+      
+    
+    {\displaystyle \log _{2}(x^{2})=2\log _{2}(x).\,}
+  
+
+
+=== Serii de puteri ===
+Serii Taylor
+
+Pentru orice număr real z care satisface 0 < z < 2, este valabilă următoarea formulă:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  1
+                
+              
+            
+            1
+          
+        
+        −
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  2
+                
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  3
+                
+              
+            
+            3
+          
+        
+        −
+        
+          
+            
+              (
+              z
+              −
+              1
+              
+                )
+                
+                  4
+                
+              
+            
+            4
+          
+        
+        +
+        ⋯
+      
+    
+    {\displaystyle \ln(z)={\frac {(z-1)^{1}}{1}}-{\frac {(z-1)^{2}}{2}}+{\frac {(z-1)^{3}}{3}}-{\frac {(z-1)^{4}}{4}}+\cdots }
+  
+
+Aceasta este o prescurtare pentru a spune că ln(z) poate fi aproximată cu o valoare din ce în ce mai precisă de următoarele expresii:
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+              
+            
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+                −
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+              
+              
+            
+            
+              
+                (
+                z
+                −
+                1
+                )
+              
+              
+                −
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          2
+                        
+                      
+                    
+                    2
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  
+                    
+                      (
+                      z
+                      −
+                      1
+                      
+                        )
+                        
+                          3
+                        
+                      
+                    
+                    3
+                  
+                
+              
+            
+            
+              
+                ⋮
+              
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lllll}(z-1)&&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&+&{\frac {(z-1)^{3}}{3}}\\\vdots &\end{array}}}
+  
+
+De exemplu, cu z = 1.5, a treia aproximare dă 0,4167, care este de aproximativ 0,011 mai mare decât ln(1,5)=0,405465. Această serie aproximează ln(z) cu precizie arbitrară, cu condiția ca numărul de termeni să fie suficient de mare. În analiza matematică elementară, ln(z) este, prin urmare, limita acestei serii. Ea este seria Taylor a logaritmului natural. Seria Taylor a lui ln z oferă o aproximare deosebit de utilă pentru ln(1+z) când z este mic, |z| < 1, pentru că atunci
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        1
+        +
+        z
+        )
+        =
+        z
+        −
+        
+          
+            
+              z
+              
+                2
+              
+            
+            2
+          
+        
+        +
+        
+          
+            
+              z
+              
+                3
+              
+            
+            3
+          
+        
+        ⋯
+        ≈
+        z
+        .
+      
+    
+    {\displaystyle \ln(1+z)=z-{\frac {z^{2}}{2}}+{\frac {z^{3}}{3}}\cdots \approx z.}
+  
+
+De exemplu, cu z = 0,1 aproximarea de ordinul întâi dă ln(1.1) ≈ 0.1, care are o eroare de mai puțin de 5% față de valoarea corectă 0,0953.
+
+Serii mai eficiente
+O altă serie se bazează pe funcția arctangentă hiperbolică⁠(d) funcția:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        ⋅
+        artanh
+        
+        
+          
+            
+              z
+              −
+              1
+            
+            
+              z
+              +
+              1
+            
+          
+        
+        =
+        2
+        
+          (
+          
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            +
+            
+              
+                1
+                3
+              
+            
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        z
+                        −
+                        1
+                      
+                      
+                        z
+                        +
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+              
+                3
+              
+            
+            +
+            
+              
+                1
+                5
+              
+            
+            
+              
+                
+                  (
+                  
+                    
+                      
+                        z
+                        −
+                        1
+                      
+                      
+                        z
+                        +
+                        1
+                      
+                    
+                  
+                  )
+                
+              
+              
+                5
+              
+            
+            +
+            ⋯
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle \ln(z)=2\cdot \operatorname {artanh} \,{\frac {z-1}{z+1}}=2\left({\frac {z-1}{z+1}}+{\frac {1}{3}}{\left({\frac {z-1}{z+1}}\right)}^{3}+{\frac {1}{5}}{\left({\frac {z-1}{z+1}}\right)}^{5}+\cdots \right),}
+  
+
+pentru orice număr real z > 0. Folosind notația Sigma, acest lucru se poate scrie și ca
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        2
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              2
+              n
+              +
+              1
+            
+          
+        
+        
+          
+            (
+            
+              
+                
+                  z
+                  −
+                  1
+                
+                
+                  z
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+            n
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(z)=2\sum _{n=0}^{\infty }{\frac {1}{2n+1}}\left({\frac {z-1}{z+1}}\right)^{2n+1}.}
+  
+
+Această serie poate fi derivată din seria Taylor de mai sus. Converge mai repede decât seria Taylor, în special dacă z este aproape de 1. De exemplu, primii trei termeni din seria a doua aproximează valoarea lui ln(1,5) cu o eroare de circa 3×10−6. Se poate profita de rapida convergență pentru z apropiat de 1 în felul următor: dat fiind o aproximație de joasă precizie a lui y ≈ ln(z) și punând
+
+  
+    
+      
+        A
+        =
+        
+          
+            z
+            
+              exp
+              ⁡
+              (
+              y
+              )
+            
+          
+        
+        ,
+        
+      
+    
+    {\displaystyle A={\frac {z}{\exp(y)}},\,}
+  
+
+logaritmul lui z este:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        z
+        )
+        =
+        y
+        +
+        ln
+        ⁡
+        (
+        A
+        )
+        .
+        
+      
+    
+    {\displaystyle \ln(z)=y+\ln(A).\,}
+  
+
+Cu cât este mai bună aproximarea inițială y, cu atât este mai aproape A de 1, deci logaritmul poate fi calculat eficient. A poate fi calculată folosind seria exponențială, care converge rapid dacă y nu este prea mare. Calculul logaritmulilor unor valori z mai mari se poate reduce la cel al unor valori mai mici ale lui z scriind z = a · 10b, astfel încât ln(z) = ln(a) + b · ln(10).
+O metodă similară poate fi utilizată pentru a calcula logaritmul numerelor întregi. Din seria de mai sus, rezultă că:
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        n
+        +
+        1
+        )
+        =
+        ln
+        ⁡
+        (
+        n
+        )
+        +
+        2
+        
+          ∑
+          
+            k
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              2
+              k
+              +
+              1
+            
+          
+        
+        
+          
+            (
+            
+              
+                1
+                
+                  2
+                  n
+                  +
+                  1
+                
+              
+            
+            )
+          
+          
+            2
+            k
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \ln(n+1)=\ln(n)+2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {1}{2n+1}}\right)^{2k+1}.}
+  
+
+Dacă este cunoscut logaritmul unui întreg n mare, atunci această serie produce o serie rapid convergentă pentru log(n+1).
+
+
+=== Aproximarea cu media aritmetico–geometrică ===
+Media aritmetico–geometrică⁠(d) produce aproximări precise ale logaritmului natural. Sasaki și Kanada au arătat în 1982 că este deosebit de rapidă pentru precizii între 400 și 1000 de zecimale exacte, în timp ce metodele bazate pe seriile Taylor sunt de obicei mai rapide când este necesară o precizie mai mică. În lucrarea lor, ln(x) este aproximat cu o precizie de 2−p (sau cu precizie de p biți) prin următoarea formulă (datorată lui Carl Friedrich Gauss):
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        x
+        )
+        ≈
+        
+          
+            π
+            
+              2
+              M
+              (
+              1
+              ,
+              
+                2
+                
+                  2
+                  −
+                  m
+                
+              
+              
+                /
+              
+              x
+              )
+            
+          
+        
+        −
+        m
+        ln
+        ⁡
+        (
+        2
+        )
+        .
+      
+    
+    {\displaystyle \ln(x)\approx {\frac {\pi }{2M(1,2^{2-m}/x)}}-m\ln(2).}
+  
+
+Aici cu M(x,y) s-a notat media aritmetico–geometrică⁠(d) dintre x și y. Acesta este obținută calculând repetat mediile (x+y)/2 (media aritmetică) și sqrt(x*y) (geometric) ale lui x și y, și apoi înlocuind x și y cu valorile obținute. Cele două numere converg rapid spre o limită comună care este valoarea lui M(x,y). m este ales astfel încât
+
+  
+    
+      
+        x
+        
+        
+          2
+          
+            m
+          
+        
+        >
+        
+          2
+          
+            p
+            
+              /
+            
+            2
+          
+        
+        .
+        
+      
+    
+    {\displaystyle x\,2^{m}>2^{p/2}.\,}
+  
+
+pentru a asigura precizia necesară. Un m mai mare face calculul lui M(x,y) să ia mai mulți pași (valorile inițiale  x și y sunt mai depărtate, astfel încât este nevoie de mai mulți pași pentru a converge), dar oferă mai multă precizie. Constantele π și ln(2) pot fi calculate cu serii rapid convergente.
+
+
+== Aplicații ==
+
+Logaritmii au multe aplicații în interiorul și în afara matematicii. Unele dintre aceste evenimente sunt legate de noțiunea de invarianță de scară⁠(d). Logaritmii sunt legați și de conceptul de autosimilitudine⁠(d). De exempluu, logaritmii apar în analiza algoritmilor care rezolvă o problemă împărțind-o în mai multe probleme similare mai mici și apoi combinând soluțiile acestora. 
+Dimensiunile formelor geometrice autosimilare, adică a formelor ale căror părți se aseamănă cu imaginea de ansamblu sunt, de asemenea, bazate pe logaritmi.
+Scările logaritmice sunt utile pentru cuantificarea schimbării relative ale unei valori în locul diferenței absolute. Mai mult decât atât, pentru că funcția logaritmică log(x) crește foarte încet pentru a x mari, scările logaritmice sunt folosite pentru a comprima date științifice cu game mari de variație. Logaritmii apar și în numeroase formule științifice, cum ar fi ecuația rachetei a lui Țiolkovski⁠(d), ecuația Fenske⁠(d), sau ecuația lui Nernst.
+
+
+=== Scară logaritmică ===
+
+Cantitățile științifice sunt adesea exprimate în logaritmi ai altor cantități, folosind o scară logaritmică. De exemplu, decibelul este o unitate de măsură asociate cu o scară logaritmică a valorilor unui raport. Ea se bazează pe logaritmul zecimal al raportului: de 10 ori logaritmul zecimal al unui raport de puteri sau de 20 de ori logaritmul zecimal al raportului unor tensiuni. Acesta este utilizat pentru a cuantifica pierderea nivelului de tensiune la transmiterea semnalelor electrice, pentru a descrie nivelurile de putere a sunetului în acustică, și absorbanța luminii în domeniul spectrometriei și opticii. Raportul semnal-zgomot care descrie cantitatea de zgomot⁠(d) nedorit în raport cu un semnal se măsoară tot în decibeli. Similar, raportul semnal-zgomot de peak⁠(d) este de obicei folosit pentru a evalua calitatea de sunet și metodele de compresie a imaginilor folosind logaritmul.
+Puterea unui cutremur este măsurată prin calculul logaritmului zecimal al energiei emise de cutremur. Acest lucru este folosit la scara magnitudinii de moment sau, în trecut, la scara Richter. De exemplu, un cutremur de 5 grade eliberează de 32 de ori (101,5), iar unul de 6 grade eliberează de 1000 de ori (103) energia unuia de 4.0. O altă scară logaritmică este magnitudinea aparentă. Acesta măsoară logaritmic luminozitatea stelelor. Un alt exemplu este pH-ul din chimie; pH-ul este logaritmul zecimal cu semn schimbat al activității ionilor de hidroniu ioni (forma pe care o iau ionii de hidrogen H+ în apă). Activitatea ionilor de hidroniu în apa neutră este de 10-7 mol·L-1, prin urmare, un pH de 7. Oțetul are de obicei un pH de aproximativ 3. Diferența de 4 corespunde la un raport al activității de 104, adică activitatea ionilor de hidroniu din oțet este de aproximativ 10-3 mol·L-1.
+Graficele semilogaritmice (logaritmic-liniare) utilizează conceptul de scară logaritmică doar pentru vizualizare: una din axe, de obicei, cea verticală, este scalată logaritmic. De exemplu, graficul din dreapta comprimă creșterea abruptă de la un milion la un milion de milioane în același spațiu (pe axa verticală), ca și majorarea de la 1 la 1 milion. În astfel de grafice, funcții exponențiale apar ca linii drepte cu panta egală cu logaritmul lui b. Graficele logaritmice scalează logaritmic ambele axe, ceea ce face ca funcțiile să fie reprezentate ca linii drepte cu panta egală cu exponentul k. Aceasta are aplicații în vizualizarea și analiza legilor de putere⁠(d).
+
+
+=== Psihologie ===
+Logaritmii apar și în unele legi care descriu percepția umană:
+legea lui Hick⁠(d) propune o relație logaritmică între timpul cât durează ca o persoană să aleagă o alternativă și numărul de opțiuni pe care le au. Legea lui Fitts⁠(d) prezice că timpul necesar pentru a trece rapid la o zonă-țintă este o funcție logaritmică de distanța și dimensiunea țintei. În psihofizică, legea Weber–Fechner⁠(d) propune o relație logaritmică între stimul⁠(d) și senzație, cum ar fi greutatea reală vs. cea percepută de o persoană care o transportă. (Această „lege”, cu toate acestea, este mai puțin precisă decât unele modele mai recente, cum ar fi legea puterii a lui Stevens⁠(d).)
+Studiile psihologice au constatat că persoanele cu puțină educație în matematică tind să estimeze cantitățile logaritmic, adică ele pun un număr pe o linie în funcție de logaritmul lui, astfel că 10 este poziționat la fel de aproape de 100 ca și 100 de 1000. Creșterea educației schimbă această estimare cu una liniară (poziționarea lui 1000 de 10x mai departe), în anumite circumstanțe, în timp ce logaritmii sunt utilizați atunci atunci când numerele de reprezentat sunt dificil de marcat liniar.
+
+
+=== Teoria probabilităților și statistică ===
+
+Logaritmii apar în teoria probabilităților: legea numerelor mari dictează că, pentru o aruncare a monedei, când numărul de aruncări tinde la infinit, proporția observată a apariției unei fețe tinde la jumătate. Fluctuațiile acestei proporții în jurul jumătății sunt descrise de legea logaritmului iterat⁠(d).
+Logaritmii apar și în distribuțiile log-normale⁠(d). Când logaritmul unei variabile aleatoare are o distribuție normală, se spune că variabila are distribuție log-normală. Distribuții log-normale se întâlnesc în multe domenii, ori de câte ori o variabilă se formează ca produs de multe variabile aleatoare independente pozitive, de exemplu în studiul turbulențelor.
+Logaritmii sunt folosiți pentru estimarea verosimilității maxime⁠(d) a modelelor statistice⁠(d) parametrice. Pentru un astfel de model, funcția de verosimilitate⁠(d) depinde de cel puțin un parametru⁠(d) care trebuie să fie estimat. Un maxim al funcției de verosimilitate are loc la același parametru-valoare ca și maximul logaritmului verosimilității, deoarece logaritmul este o funcție crescătoare. Această log-verosimilitate este mai ușor de maximizat, în special pentru verosimilitățile multiplicate pentru variabile aleatoare independente⁠(d).
+Legea lui Benford⁠(d) descrie apariția unor cifre în multe seturi de date, cum ar fi înălțimea clădirilor. În conformitate cu legea lui Benford, probabilitatea ca prima cifră zecimală a unui element din eșantionul de date să fie d (de la 1 la 9) este egală cu log10(d + 1) − log10(d), indiferent de unitatea de măsură. Astfel, aproximativ 30% din date este de așteptat să aibă 1 ca prima cifră, 18% începe cu 2, etc. Auditorii au examinat abaterile de la legea lui Benford pentru a detecta frauda de contabilitate.
+
+
+=== Complexitatea computațională ===
+Analiza algoritmilor⁠(d) este o ramură a informaticii care studiază performanța algoritmilor (programe de calculator care rezolvă o anumită problemă). Logaritmii sunt valoroși pentru că descriu algoritmi care împart o problemă în altele mai mici, după care alătură soluțiile subproblemelor.
+De exemplu, pentru a găsi un număr într-o listă sortată, algoritmul de căutare binară verifică elementul median și continuă cu jumătatea dinainte sau de după elementul din mijloc în cazul în care numărul nu este încă găsit. Acest algoritm necesită, în medie, log2(N) comparații, unde N este lungimea listei. Similar, algoritmul merge-sort sortează o listă nesortată prin împărțirea listei în jumătăți și sortarea acestora mai întâi, înainte de a comasa rezultatele. Algoritmii merge-sort necesită de obicei un timp aproximativ proporțional cu N · log(N). Baza logaritmului nu este specificată aici, pentru că schimbarea bazei ar modifica rezultatul s-numai printr-un factor constant, evoluția dependenței fiind cea de interes. Un factor constant este de obicei luată în considerare în analiza algoritmilor în modelul cost uniform standard. 
+Se spune despre o funcție f(x) că crește logaritmic⁠(d) dacă f(x) este (exact sau aproximativ) proporțional cu logaritmul lui x. (Descrierile biologice ale organismelor în creștere utilizează însă acest termen pentru o funcție exponențială.) De exemplu, orice număr natural N poate fi reprezentată în formă binară, pe cel puțin log2(N) + 1 biți. Cu alte cuvinte, cantitatea de memorie necesară pentru a stoca numărul N crește logaritmic cu N.
+
+
+=== Entropie și haos ===
+
+Entropia este, în general, o măsură a dezordinii unui sistem oarecare. În termodinamica statistică, entropia S a unui sistem fizic este definită ca
+
+  
+    
+      
+        S
+        =
+        −
+        k
+        
+          ∑
+          
+            i
+          
+        
+        
+          p
+          
+            i
+          
+        
+        ln
+        ⁡
+        (
+        
+          p
+          
+            i
+          
+        
+        )
+        .
+        
+      
+    
+    {\displaystyle S=-k\sum _{i}p_{i}\ln(p_{i}).\,}
+  
+
+Suma este peste toate stările posibile i ale sistemului în cauză, cum ar fi pozițiile particulelor de gaz într-un recipient. Mai mult decât atât, pi este probabilitatea că starea să nu fie atinsă și k este constanta Boltzmann. În mod similar, entropia în teoria informației măsoară cantitatea de informație. Dacă destinatarul unui mesaj poate aștepta oricare din N mesaje posibile, cu egală probabilitate, atunci cantitatea de informație transmisă printr-un singur astfel de mesaj este cuantificată ca log2(N) biți.
+Exponenții Leapunov⁠(d) folosesc logaritmii pentru a evalua gradul de haoticitate a unui sistem dinamic. De exemplu, pentru o particulă care se deplasează pe o masă de biliard ovală, chiar și mici modificări ale condițiilor inițiale duc la căi foarte diferite a particulei. Astfel de sisteme sunt haotice într-un fel determinist⁠(d), pentru că erorile mici de măsurare a stării inițiale conduc la stări finare foarte diferite. Cel puțin un exponent Leapunov al unui sistem haotic determinist este pozitiv.
+
+
+=== Fractalii ===
+
+Logaritmii apar în definițiile dimensiunilor⁠(d) fractalilor. Fractalii sunt obiecte geometrice autosimilare⁠(d): părțile de mici dimensiuni reproduc, cel puțin aproximativ, întreaga structură globală. Triunghiul Sierpinski⁠(d) (foto) poate fi acoperit cu trei copii ale sale, fiecare având laturile jumătate lungimea inițială. Acest lucru face ca dimensiunea Hausdorff a acestei structuri să fie . O altă noțiune pe bază de logaritmi este obținută prin numărarea numărul de cutii⁠(d) necesare pentru a acoperi fractalul în cauză.
+
+
+=== Muzică ===
+Logaritmii sunt legați de tonurile și intervalele  muzicale. În temperarea egală⁠(d), raportul frecvențelor depinde numai de intervalul dintre două tonuri, nu și de o anumită frecvență (sau înălțime), a tonurilor individuale. De exemplu, nota La⁠(d) are o frecvență de 440 Hz și Si bemol⁠(d) are o frecvență de 466 Hz. Intervalul între La și Si bemol este un semiton, cum este și cel între Si bemol și Si (frecvența 493 Hz). În consecință, rapoartele frecvențelor sunt aceleași:
+
+  
+    
+      
+        
+          
+            466
+            440
+          
+        
+        ≈
+        
+          
+            493
+            466
+          
+        
+        ≈
+        1.059
+        ≈
+        
+          
+            2
+            
+              12
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {466}{440}}\approx {\frac {493}{466}}\approx 1.059\approx {\sqrt[{12}]{2}}.}
+  
+
+Prin urmare, logaritmii pot fi folosiți pentru a descrie intervale: un interval este măsurat în semitonuri luând logaritmul în bază 21/12 al raportului frecvențelor, în timp ce logaritmul în bază 21/1200 al raportului frecvențelor exprimă intervalul în centisunete, adică sutimi de semiton. Acesta din urmă este utilizat pentru o mai bună codificare, după cum este necesar pentru temperări inegale.
+
+
+=== Teoria numerelor ===
+Logaritmii naturali sunt strâns legați de numărarea numerelor prime⁠(d) (2, 3, 5, 7, 11, ...), un subiect important în teoria numerelor. Pentru orice număr întreg x, numărul de numere prime mai mici sau egale cu x se notează cu π(x). Teorema numerelor prime afirmă că π(x) este de aproximativ dat de
+
+  
+    
+      
+        
+          
+            x
+            
+              ln
+              ⁡
+              (
+              x
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\frac {x}{\ln(x)}},}
+  
+
+în sensul că raportul între π(x) și acea fracție tinde la 1, atunci când x tinde la infinit. în consecință, probabilitatea ca un număr ales aleatoriu între 1 și x să fie prim este invers proporțională cu numărul de cifre zecimale al lui x. O mult mai bună estimare a π(x) este dată de funcția logaritm integral⁠(d) Li(x), definită prin
+
+  
+    
+      
+        
+          L
+          i
+        
+        (
+        x
+        )
+        =
+        
+          ∫
+          
+            2
+          
+          
+            x
+          
+        
+        
+          
+            1
+            
+              ln
+              ⁡
+              (
+              t
+              )
+            
+          
+        
+        
+        d
+        t
+        .
+      
+    
+    {\displaystyle \mathrm {Li} (x)=\int _{2}^{x}{\frac {1}{\ln(t)}}\,dt.}
+  
+
+Ipoteza Riemann, una dintre cele mai vechi conjecturi⁠(d) matematice, poate fi formulată în termeni de comparare a lui π(x) cu Li(x). Teorema Erdős–Kac⁠(d), care descrie numărul de factori primi⁠(d) distincți implică și ea logaritmul natural.
+Logaritmul lui n factorial, , este dat de
+
+  
+    
+      
+        ln
+        ⁡
+        (
+        n
+        !
+        )
+        =
+        ln
+        ⁡
+        (
+        1
+        )
+        +
+        ln
+        ⁡
+        (
+        2
+        )
+        +
+        ⋯
+        +
+        ln
+        ⁡
+        (
+        n
+        )
+        .
+        
+      
+    
+    {\displaystyle \ln(n!)=\ln(1)+\ln(2)+\cdots +\ln(n).\,}
+  
+
+Acest lucru poate fi folosit pentru a obține formula lui Stirling, o aproximare a lui n! pentru n mare.
+
+
+== Generalizări ==
+
+
+=== Logaritmul complex ===
+
+Numerele complexe a care rezolvă ecuația
+
+  
+    
+      
+        
+          e
+          
+            a
+          
+        
+        =
+        z
+        .
+        
+      
+    
+    {\displaystyle e^{a}=z.\,}
+  
+
+se numesc logaritmi complecși. Aici, z este un număr complex. Un număr complex este de obicei reprezentat ca z = x + iy, unde x și y sunt numere reale și i este unitatea imaginară. Un astfel de număr poate fi vizualizat ca un punct în planul complex, așa cum se arată la dreapta. Forma polară codifică număr complex nenul z prin valoarea sa absolută, care este distanța r de la origine, și printr-un unghi între axa x și dreapta care trece prin origine și z. Acest unghi se numește argumentul⁠(d) lui z. Valoarea absolută a lui r din z este
+
+  
+    
+      
+        r
+        =
+        
+          
+            
+              x
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        .
+        
+      
+    
+    {\displaystyle r={\sqrt {x^{2}+y^{2}}}.\,}
+  
+
+Argumentul nu este unic specificat de z: atât φ și φ' = φ + 2π sunt argumente ale lui z deoarece adunarea a 2π radiani sau a 360 de grade la φ corespunde cu „o tură” în jurul originii efectuată în sens trigonometric. Numărul complex rezultat este tot z, așa cum este ilustrat în dreapta. Cu toate acestea, exact un argument φ satisface −π < φ și φ ≤ π. El este numit argumentul principal, notat Arg(z). (O normalizare alternativ este 0 ≤ Arg(z) < 2π.)
+
+Folosind funcțiile trigonometrice sinus și cosinus, sau respectiv exponențiala complexă, r și φ sunt de așa natură încât sunt valabile următoarele identități:
+
+  
+    
+      
+        
+          
+            
+              
+                z
+              
+              
+                =
+              
+              
+                r
+                
+                  (
+                  
+                    cos
+                    ⁡
+                    φ
+                    +
+                    i
+                    sin
+                    ⁡
+                    φ
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                =
+              
+              
+                r
+                
+                  e
+                  
+                    i
+                    φ
+                  
+                
+                .
+              
+            
+          
+        
+        
+      
+    
+    {\displaystyle {\begin{array}{lll}z&=&r\left(\cos \varphi +i\sin \varphi \right)\\&=&re^{i\varphi }.\end{array}}\,}
+  
+
+Acest lucru implică faptul că puterea a a lui e este egală cu z, unde
+
+  
+    
+      
+        a
+        =
+        ln
+        ⁡
+        (
+        r
+        )
+        +
+        i
+        (
+        φ
+        +
+        2
+        n
+        π
+        )
+        ,
+        
+      
+    
+    {\displaystyle a=\ln(r)+i(\varphi +2n\pi ),\,}
+  
+
+φ este argumentul principal Arg(z) și n este un număr întreg arbitrar. Orice astfel de a se numesc logaritmi complecși ai lui z. Există infinit de multe astfel de numere, spre deosebire de cele definite în mod unic în logaritmul real. Dacă , a se numește valoarea principală a logaritmului, notată Log(z). Argumentul principal al oricărui număr real pozitiv x este 0; prin urmare, Log(x) este un număr real și egal cu logaritmul (natural) real. Cu toate acestea, formulele de mai sus pentru logaritmii produselor și al puterilor nu se generalizează la valoarea principală a logaritmului complex.
+Ilustrația din dreapta descrie Log(z). Discontinuitatea, adică saltul de nuanță în partea negativă a abscisei (sau a axei reale), este cauzată de saltul de argument principal de acolo. Acest loc se numește punct de ramificare⁠(d). Acest comportament poate fi eludat prin renunțarea la restricția privind gama lui φ. Atunci argumentul z și, în consecință, logaritmul său devin funcții multivaluate⁠(d).
+
+
+=== Inversele altor funcții exponențiale ===
+Exponențierea apare în multe domenii ale matematicii și funcția ei inversă este adesea denumită logaritm. De exemplu, logaritmul unei matrice⁠(d) este funcția inversă multivaluată a exponențierii matricelor⁠(d). Un alt exemplu este logaritmul p-adic⁠(d), funcția inversă a exponențialei p-adice⁠(d). Ambele sunt definite prin serie Taylor analog cu cazul real. În context de geometrie diferențială, o aplicație exponențială⁠(d) aplică spațiul tangent⁠(d) într-un punct al unui varietăți⁠(d) la o vecinătate a acelui punct. Inversa sa se numește și ea aplicație logaritmică.
+În contextul grupurilor finite, exponențiala este dată prin înmulțirea repetată a unui element b al grupului cu el însuși. Logaritmul discret sau modular este numărul întreg n care rezolvă ecuația
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        x
+        ,
+        
+      
+    
+    {\displaystyle b^{n}=x,\,}
+  
+
+unde x este un element din grup. Efectuarea exponențierii se poate realiza în mod eficient, dar logaritmul modular este considerat a fi foarte greu de calculat în unele grupuri. Această asimetrie are aplicații importante în criptografia cu chei publice, cum ar fi, de exemplu, în schimbul de chei Diffie–Hellman⁠(d), o rutină care permite schimburi securizate de chei criptografice prin canale de informare nesigure. Logaritmul lui Zech⁠(d) se leagă de logaritmul discret în grupul multiplicativ al elementelor nenule ale unui corp finit.
+Alte funcții inverse logaritmice sunt dublul logaritm ln(ln(x)), super- sau hiper-4-logaritmul⁠(d) (o ușoară variație a ceea ce se numește în informatică logaritm iterat), funcția Lambert W⁠(d), și logitul⁠(d). Acestea sunt funcțiile inverse ale dublei exponențiale⁠(d), tetrațiunii, f(w) = wew, și, respectiv, a funcției logistice⁠(d).
+
+
+=== Concepte conexe ===
+Din perspectiva teoriei grupurilor, identitatea log(cd) = log(c) + log(d) exprimă izomorfism de grup între realii pozitivi cu înmulțirea și și realii cu adunarea. Functiile logaritmice sunt singurele izomorfisme continue între aceste grupuri. Prin aceste izomorfisme, măsura Haar⁠(d) (măsura Lebesgue) dx asupra realilor corespunde măsurii Haar dx/x asupra realilor pozitiv. În analiza complexă și în geometria algebrică, formele diferențiale⁠(d) sunt cunoscute ca forme cu poli logaritmici.
+Polilogaritmul⁠(d) este funcția definită prin
+
+  
+    
+      
+        
+          Li
+          
+            s
+          
+        
+        ⁡
+        (
+        z
+        )
+        =
+        
+          ∑
+          
+            k
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              z
+              
+                k
+              
+            
+            
+              k
+              
+                s
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \operatorname {Li} _{s}(z)=\sum _{k=1}^{\infty }{z^{k} \over k^{s}}.}
+  
+
+El este legat de logaritmul natural . Mai mult decât atât, Lis(1) este egal cu funcția zeta Riemann ζ(s).
+
+
+== Note explicative ==
+
+
+== Note bibliografice ==
+
+
+== Legături externe ==
+
+  Materiale media legate de logaritm la Wikimedia Commons
+Khan Academy: Logaritmi, gratuit on-line micro prelegeri
+Hazewinkel, Michiel, ed. (2001), „Logarithmic function”, Encyclopaedia of Mathematics, Kluwer Academic Publishers, ISBN 978-1556080104 
+Colin Byfleet. „Film educativ despre logaritmi”. Accesat în 12 octombrie 2010. 
+Edward Wright. „Traducere a lucrării lui Napier despre logaritmi”. Arhivat din original la 3 decembrie 2002. Accesat în 12 octombrie 2010.
